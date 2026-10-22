@@ -5,11 +5,11 @@ Price comparison for Australia, starting with mobile phones. Live at compareempi
 ## How it works
 
 1. `npm run scrape` — reads the public phone listings of JB Hi-Fi, Harvey Norman,
-   The Good Guys and Mobileciti (`scripts/scrapers/`) into `data/raw/<retailer>.json`.
+   The Good Guys and Mobileciti (`scripts/scrapers/`) into `data/phones/raw/<retailer>.json`.
    A retailer that fails keeps yesterday's file.
 2. `npm run build:catalog` — matches listings to phones by brand + model + storage
    (`src/lib/normalize.ts`), drops refurbished/carrier-locked/outlier listings, writes
-   `data/catalog.json`, today's snapshot to `data/history/<date>.json` and the chart
+   `data/catalog.json`, today's snapshot to `data/phones/history/<date>.json` and the chart
    series to `data/series.json`.
 3. `next build` — prerenders every phone, brand and listing page from those files.
    No database.

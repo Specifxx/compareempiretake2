@@ -2,6 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { storageLabel } from "@/lib/normalize";
+import { MARKETPLACES } from "@/lib/marketplaces";
 import { RETAILERS } from "@/lib/retailers";
 import type { Offer, Phone, RetailerId } from "@/lib/types";
 import { CheckIcon, ExternalIcon, ShareIcon } from "./icons";
@@ -165,6 +166,21 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
               </li>
             ))}
           </ol>
+          <div className="mt-4 rounded-2xl border border-dashed border-line p-4">
+            <div className="text-sm font-semibold">Also check the marketplaces</div>
+            <p className="mt-0.5 text-xs text-ink-mute">Sometimes cheaper, but listings mix sellers and warranties, so we link to a search rather than rank them.</p>
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              {MARKETPLACES.map((m) => (
+                <a key={m.id} href={m.url(`${phone.name} ${storageLabel(variant.storageGb)}`)} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+                  <span>
+                    <span className="font-semibold">Search {m.name}</span>
+                    <span className="block text-[11px] text-ink-mute">{m.note}</span>
+                  </span>
+                  <ExternalIcon className="h-4 w-4 text-ink-mute" />
+                </a>
+              ))}
+            </div>
+          </div>
           <p className="mt-3 text-xs text-ink-mute">
             Prices include GST and are checked daily. Delivery and in-store availability vary — confirm on the retailer&apos;s site.
           </p>

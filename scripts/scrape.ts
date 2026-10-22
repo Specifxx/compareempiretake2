@@ -1,5 +1,5 @@
 /**
- * Scrapes every retailer and writes data/raw/<retailer>.json.
+ * Scrapes every retailer and writes data/phones/raw/<retailer>.json.
  * A retailer that fails keeps yesterday's file, so one broken site never
  * empties the catalogue.
  */
@@ -27,7 +27,7 @@ async function main() {
       const offers = await fn();
       if (offers.length < 10) throw new Error(`only ${offers.length} offers — refusing to overwrite`);
       offers.sort((a, b) => a.title.localeCompare(b.title));
-      writeFileSync(`data/raw/${id}.json`, JSON.stringify({ scrapedAt: new Date().toISOString(), offers }, null, 1) + "\n");
+      writeFileSync(`data/phones/raw/${id}.json`, JSON.stringify({ scrapedAt: new Date().toISOString(), offers }, null, 1) + "\n");
       console.log(`${id}: ${offers.length} offers in ${((Date.now() - t) / 1000).toFixed(0)}s`);
     } catch (e) {
       failed++;

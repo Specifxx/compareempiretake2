@@ -18,7 +18,7 @@ export function Footer() {
             {new Date(updatedAt).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })} AEST
           </p>
         </div>
-        <FooterCol title="Shop" links={[["All phones", "/phones"], ["Today's deals", "/deals"], ["Brands", "/brands"], ["Compare", "/compare"], ["Saved", "/saved"]]} />
+        <FooterCol title="Shop" links={[["All phones", "/phones"], ["Today's deals", "/deals"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"]]} />
         <FooterCol title="Popular" links={[["iPhones", "/brands/apple"], ["Samsung Galaxy", "/brands/samsung"], ["Google Pixel", "/brands/google"], ["Under $500", "/phones?max=500"], ["Foldables", "/phones?fold=1"]]} />
         <FooterCol title="Compare Empire" links={[["About & how it works", "/about"], ["Retailers we check", "/about#retailers"], ["Suggest a store", "/about#feedback"]]} />
       </div>

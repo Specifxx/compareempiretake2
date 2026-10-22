@@ -5,8 +5,9 @@ import { Suspense } from "react";
 import { PhoneCard } from "@/components/PhoneCard";
 import { PhoneOffers } from "@/components/PhoneOffers";
 import { PriceChart } from "@/components/PriceChart";
-import { getCatalog, getPhone, getPhones, getSeries, similarPhones, summarise } from "@/lib/catalog";
+import { getCatalog, getPhone, getPhones, getSeries, getVsPairs, similarPhones, summarise } from "@/lib/catalog";
 import { storageLabel } from "@/lib/normalize";
+import { RETAILERS } from "@/lib/retailers";
 import { SITE } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -17,7 +18,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const p = getPhone((await params).slug);
   if (!p) return {};
-  const title = `${p.name} price — compare ${p.retailerCount} Australian stores`;
+  const cheapest = p.variants.flatMap((v) => v.offers).filter((o) => o.inStock && o.price === p.bestPrice)[0];
+  const store = cheapest ? ` at ${RETAILERS[cheapest.retailer].name}` : "";
+  const title = `${p.name} price in Australia — from $${p.bestPrice.toLocaleString("en-AU")}${store}`;
   const description = `${p.name} from $${p.bestPrice.toLocaleString("en-AU")}. Compare ${p.offerCount} live prices across ${p.retailerCount} retailers in ${p.variants.map((v) => storageLabel(v.storageGb)).join(", ")}, with price history.`;
   return {
     title,
@@ -33,6 +36,7 @@ export default async function PhonePage({ params }: { params: Promise<{ slug: st
   const series = getSeries(phone.slug);
   const chart = Object.fromEntries(phone.variants.map((v) => [v.id, <PriceChart key={v.id} points={series[v.id] ?? []} />]));
   const similar = similarPhones(phone).map(summarise);
+  const vs = getVsPairs().filter((v) => v.a.slug === phone.slug || v.b.slug === phone.slug);
   const { updatedAt } = getCatalog();
   const s = phone.specs;
   const specs: [string, string | undefined][] = [
@@ -105,6 +109,18 @@ export default async function PhonePage({ params }: { params: Promise<{ slug: st
           </div>
         </div>
       </section>
+
+      {vs.length > 0 && (
+        <section className="mt-16">
+          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">Compare the {phone.model}</h2>
+          <div className="flex flex-wrap gap-2">
+            {vs.map((v) => {
+              const other = v.a.slug === phone.slug ? v.b : v.a;
+              return <Link key={v.slug} href={`/compare/${v.slug}`} className="chip">vs {other.name}</Link>;
+            })}
+          </div>
+        </section>
+      )}
 
       {similar.length > 0 && (
         <section className="mt-16">

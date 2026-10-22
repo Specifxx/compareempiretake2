@@ -1,32 +1,19 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useRef, useState } from "react";
-import { search } from "@/lib/search";
+import { useEffect, useRef, useState } from "react";
 import { SearchIcon } from "./icons";
-
-export interface SearchItem {
-  slug: string;
-  name: string;
-  brand: string;
-  image?: string;
-  bestPrice: number;
-  retailerCount: number;
-}
+import { useResults, type SearchEntry } from "./SearchBox";
 
 const SUGGESTIONS = ["iPhone 17 Pro", "Galaxy S26 Ultra", "Pixel 10a", "under $500", "Foldables"];
 
-export function SearchPalette({ open, onClose, items }: { open: boolean; onClose: () => void; items: SearchItem[] }) {
+export function SearchPalette({ open, onClose, items }: { open: boolean; onClose: () => void; items: SearchEntry[] }) {
   const [q, setQ] = useState("");
   const [active, setActive] = useState(0);
   const input = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
-  const results = useMemo(() => {
-    const under = q.match(/under\s*\$?(\d+)/i);
-    if (under) return items.filter((i) => i.bestPrice <= Number(under[1])).sort((a, b) => b.retailerCount - a.retailerCount).slice(0, 8);
-    if (/^fold/i.test(q.trim())) return items.filter((i) => /fold|flip|razr|magic v/i.test(i.name)).slice(0, 8);
-    return q.trim() ? search(items, q, 8) : items.slice(0, 6);
-  }, [q, items]);
+  const { phones, other } = useResults(items, q);
+  const results = [...phones, ...other];
 
   useEffect(() => {
     if (open) {
@@ -38,9 +25,9 @@ export function SearchPalette({ open, onClose, items }: { open: boolean; onClose
   useEffect(() => setActive(0), [q]);
 
   if (!open) return null;
-  const go = (slug?: string) => {
+  const go = (href?: string) => {
     onClose();
-    if (slug) router.push(`/phones/${slug}`);
+    if (href) router.push(href);
     else if (q.trim()) router.push(`/phones?q=${encodeURIComponent(q.trim())}`);
   };
 
@@ -57,7 +44,7 @@ export function SearchPalette({ open, onClose, items }: { open: boolean; onClose
               if (e.key === "Escape") onClose();
               if (e.key === "ArrowDown") { e.preventDefault(); setActive((a) => Math.min(a + 1, results.length - 1)); }
               if (e.key === "ArrowUp") { e.preventDefault(); setActive((a) => Math.max(a - 1, 0)); }
-              if (e.key === "Enter") go(results[active]?.slug);
+              if (e.key === "Enter") go(results[active]?.href);
             }}
             placeholder="Search 'iphone 17 pro', 's26u', 'under $500'…"
             className="h-14 w-full bg-transparent text-base outline-none placeholder:text-ink-mute"
@@ -75,23 +62,25 @@ export function SearchPalette({ open, onClose, items }: { open: boolean; onClose
         <ul className="max-h-[55vh] overflow-y-auto p-2">
           {results.length === 0 && <li className="px-3 py-8 text-center text-sm text-ink-mute">No phones match “{q}”. Try a brand or model number.</li>}
           {results.map((r, i) => (
-            <li key={r.slug}>
+            <li key={r.href}>
               <button
                 onMouseEnter={() => setActive(i)}
-                onClick={() => go(r.slug)}
+                onClick={() => go(r.href)}
                 className={`flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left ${i === active ? "bg-bg-sunk" : ""}`}
               >
                 <div className="img-tile grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-lg">
-                  {r.image && <img src={r.image} alt="" className="product-img h-11 w-11 object-contain" loading="lazy" />}
+                  {r.image ? <img src={r.image} alt="" className="product-img h-11 w-11 object-contain" loading="lazy" /> : <span className="text-xs font-bold text-brand">{r.kind === "vs" ? "VS" : "📖"}</span>}
                 </div>
                 <div className="min-w-0 flex-1">
                   <div className="truncate font-medium">{r.name}</div>
-                  <div className="text-xs text-ink-mute">{r.retailerCount} {r.retailerCount === 1 ? "store" : "stores"}</div>
+                  <div className="text-xs text-ink-mute">{r.kind === "phone" ? `${r.stores} ${r.stores === 1 ? "store" : "stores"}` : r.kind === "vs" ? "Comparison" : "Guide"}</div>
                 </div>
-                <div className="text-right">
-                  <div className="text-[11px] text-ink-mute">from</div>
-                  <div className="price">${r.bestPrice.toLocaleString("en-AU")}</div>
-                </div>
+                {r.price !== undefined && (
+                  <div className="text-right">
+                    <div className="text-[11px] text-ink-mute">from</div>
+                    <div className="price">${r.price.toLocaleString("en-AU")}</div>
+                  </div>
+                )}
               </button>
             </li>
           ))}

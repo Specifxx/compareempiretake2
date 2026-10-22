@@ -1,6 +1,6 @@
 import "server-only";
-import catalogJson from "../../data/catalog.json";
-import seriesJson from "../../data/series.json";
+import catalogJson from "../../data/phones/catalog.json";
+import seriesJson from "../../data/phones/series.json";
 import { storageLabel } from "./normalize";
 import type { Catalog, Offer, Phone, RetailerId, Variant } from "./types";
 
@@ -78,9 +78,15 @@ export function variantDeal(v: Variant): { saving: number; reference: number; ki
   if (v.previousBest && v.previousBest > offer.price) {
     best = { saving: v.previousBest - offer.price, reference: v.previousBest, kind: "drop", offer };
   }
+  // A "was" price only counts as far as another store backs it up — today's
+  // price elsewhere or that store's own "was" — so one inflated RRP can't headline.
   for (const o of pool) {
-    if (o.wasPrice && o.wasPrice - o.price > best.saving && o.price <= offer.price * 1.02) {
-      best = { saving: o.wasPrice - o.price, reference: o.wasPrice, kind: "rrp", offer: o };
+    if (!o.wasPrice) continue;
+    const others = v.offers.filter((x) => x.retailer !== o.retailer);
+    if (!others.length) continue;
+    const backed = Math.min(o.wasPrice, Math.max(...others.map((x) => Math.max(x.price, x.wasPrice ?? 0))));
+    if (backed - o.price > best.saving && o.price <= offer.price * 1.02) {
+      best = { saving: backed - o.price, reference: backed, kind: "rrp", offer: o };
     }
   }
   const retailers = new Set(pool.map((o) => o.retailer));
@@ -154,3 +160,26 @@ export function storageRange(p: { storages: number[] } | Phone): string {
 }
 
 export const retailerIds = (): RetailerId[] => catalog.retailers.map((r) => r.id);
+
+/**
+ * Head-to-head pages worth having: each well-stocked phone against its two
+ * closest rivals by price from other brands and its nearest sibling. Slugs are
+ * ordered alphabetically so each pair has one URL.
+ */
+export function getVsPairs(): { slug: string; a: Phone; b: Phone }[] {
+  const pool = catalog.phones.filter((p) => p.retailerCount >= 3 && p.image);
+  const pairs = new Map<string, { slug: string; a: Phone; b: Phone }>();
+  const add = (x: Phone, y: Phone) => {
+    const [a, b] = [x, y].sort((m, n) => m.slug.localeCompare(n.slug));
+    const slug = `${a.slug}-vs-${b.slug}`;
+    if (!pairs.has(slug)) pairs.set(slug, { slug, a, b });
+  };
+  for (const p of pool) {
+    const near = (q: Phone) => Math.abs(Math.log(q.bestPrice / p.bestPrice));
+    const others = pool.filter((q) => q.slug !== p.slug);
+    others.filter((q) => q.brand !== p.brand).sort((a, b) => near(a) - near(b)).slice(0, 2).forEach((q) => add(p, q));
+    const sib = others.filter((q) => q.brand === p.brand).sort((a, b) => near(a) - near(b))[0];
+    if (sib) add(p, sib);
+  }
+  return [...pairs.values()];
+}

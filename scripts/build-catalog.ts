@@ -1,7 +1,7 @@
 /**
- * Joins data/raw/*.json into data/catalog.json (one entry per phone model,
+ * Joins data/phones/raw/*.json into data/phones/catalog.json (one entry per phone model,
  * variants by storage, offers by retailer), records today's best prices in
- * data/history/<date>.json, and writes data/series.json for the price charts.
+ * data/phones/history/<date>.json, and writes data/phones/series.json for the price charts.
  */
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { parseTitle, slugify, storageLabel } from "../src/lib/normalize";
@@ -68,7 +68,7 @@ function main() {
   const groups = new Map<string, Group>();
   const scrapedAt: string[] = [];
   for (const id of Object.keys(RETAILERS) as RetailerId[]) {
-    const f = `data/raw/${id}.json`;
+    const f = `data/phones/raw/${id}.json`;
     if (!existsSync(f)) continue;
     const { offers, scrapedAt: at } = JSON.parse(readFileSync(f, "utf8")) as { offers: RawOffer[]; scrapedAt: string };
     scrapedAt.push(at);
@@ -144,15 +144,15 @@ function main() {
     });
   }
 
-  writeFileSync(`data/history/${day}.json`, JSON.stringify(todayHistory) + "\n");
+  writeFileSync(`data/phones/history/${day}.json`, JSON.stringify(todayHistory) + "\n");
 
   // Fold every history day into per-variant series.
-  const days = readdirSync("data/history").filter((f) => f.endsWith(".json")).sort();
+  const days = readdirSync("data/phones/history").filter((f) => f.endsWith(".json")).sort();
   const series: Record<string, Record<string, [string, number][]>> = {};
   const firstSeen: Record<string, string> = {};
   for (const f of days) {
     const date = f.replace(".json", "");
-    const h = JSON.parse(readFileSync(`data/history/${f}`, "utf8")) as HistoryDay;
+    const h = JSON.parse(readFileSync(`data/phones/history/${f}`, "utf8")) as HistoryDay;
     for (const [slug, vs] of Object.entries(h)) {
       firstSeen[slug] ??= date;
       for (const [vid, prices] of Object.entries(vs)) {
@@ -179,8 +179,8 @@ function main() {
     retailers: Object.values(RETAILERS),
     phones,
   };
-  writeFileSync("data/catalog.json", JSON.stringify(catalog) + "\n");
-  writeFileSync("data/series.json", JSON.stringify(series) + "\n");
+  writeFileSync("data/phones/catalog.json", JSON.stringify(catalog) + "\n");
+  writeFileSync("data/phones/series.json", JSON.stringify(series) + "\n");
   const offers = phones.reduce((n, p) => n + p.offerCount, 0);
   console.log(`catalog: ${phones.length} phones, ${offers} offers, ${days.length} history days`);
 }

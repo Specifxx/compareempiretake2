@@ -3,7 +3,9 @@ import { DealCard } from "@/components/DealCard";
 import { ArrowRight } from "@/components/icons";
 import { PhoneCard } from "@/components/PhoneCard";
 import { RetailerDot } from "@/components/RetailerChip";
-import { SearchHero } from "@/components/SearchHero";
+import { SearchBox } from "@/components/SearchBox";
+import { getGuides } from "@/lib/guides";
+import { getSearchIndex } from "@/lib/search-index";
 import { getBrands, getCatalog, getDeals, getSummaries } from "@/lib/catalog";
 
 export default function Home() {
@@ -18,8 +20,8 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative overflow-hidden">
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+      <section className="relative z-20">
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
           <div className="absolute -top-40 left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-brand/15 blur-3xl" />
           <div className="absolute -right-40 top-20 h-72 w-72 rounded-full bg-save/10 blur-3xl" />
         </div>
@@ -38,7 +40,7 @@ export default function Home() {
               {phones.length} phones, {offers.toLocaleString()} live prices from {retailers.length} Australian retailers — side by side, cheapest first.
             </p>
             <div className="mx-auto mt-8 max-w-2xl">
-              <SearchHero />
+              <SearchBox items={getSearchIndex()} size="lg" />
             </div>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-ink-mute">
               {retailers.map((r) => (
@@ -78,15 +80,20 @@ export default function Home() {
       </section>
 
       <section className="container-x mt-16">
-        <div className="card grid gap-8 overflow-hidden p-6 sm:p-10 md:grid-cols-3">
+        <div className="mb-6 max-w-2xl">
+          <div className="eyebrow">Why not just Google it?</div>
+          <h2 className="mt-2 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">Google shows you ads. We show you the price.</h2>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["Cheapest first. Always.", "No retailer pays to rank. The lowest in-stock price sits on top, full stop."],
-            ["Every storage, every colour.", "We split prices by storage size — the trick shops use to make a phone look cheap."],
-            ["Checked every day.", "Our scrapers visit every store each morning and keep the price history, so you can see a fake sale."],
-          ].map(([t, s]) => (
-            <div key={t}>
-              <div className="font-display text-lg font-bold">{t}</div>
-              <p className="mt-1.5 text-sm text-ink-soft">{s}</p>
+            ["Nobody buys the top spot", "Shopping results put paid listings first. Ours are cheapest in-stock first — no retailer can pay to move up."],
+            ["The exact phone, not a lookalike", "We split every phone by storage and leave out refurbs, grey imports and carrier-locked stock, so the cheapest price is for the phone you actually want."],
+            ["We call out fake sales", "We record every price, every day. If a “was $1,999” never cost $1,999, our history shows it."],
+            ["Real Aussie stores, in stock", "Only Australian retailers with local warranty, and we tell you who actually has it in stock today."],
+          ].map(([t, d]) => (
+            <div key={t} className="card p-5">
+              <div className="font-display text-lg font-bold leading-snug">{t}</div>
+              <p className="mt-2 text-sm text-ink-soft">{d}</p>
             </div>
           ))}
         </div>
@@ -100,6 +107,19 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      <section className="container-x mt-16">
+        <SectionHead title="Buying guides" sub="Advice with live prices — every number on these pages updates daily." href="/guides" cta="All guides" />
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {getGuides().slice(0, 6).map((g) => (
+            <Link key={g.slug} href={`/guides/${g.slug}`} className="card p-5 transition hover:shadow-lift">
+              <div className="eyebrow">{g.tags[0] ?? "Guide"}</div>
+              <div className="mt-1.5 font-display text-lg font-bold leading-snug">{g.title}</div>
+              <div className="mt-2 text-xs text-ink-mute">{g.readingMinutes} min read</div>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       <section className="container-x mt-16">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#2A1A8C] via-brand to-[#9B4DFF] p-8 text-white sm:p-12">

@@ -3,7 +3,7 @@ import { Bricolage_Grotesque, Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
-import { getSummaries } from "@/lib/catalog";
+import { getSearchIndex } from "@/lib/search-index";
 import { SITE } from "@/lib/site";
 import "./globals.css";
 
@@ -31,7 +31,7 @@ export const viewport: Viewport = {
 const themeScript = `try{var t=localStorage.getItem('ce-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const index = getSummaries().map((p) => ({ slug: p.slug, name: p.name, brand: p.brand, image: p.image, bestPrice: p.bestPrice, retailerCount: p.retailerCount }));
+  const index = getSearchIndex();
   return (
     <html lang="en-AU" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
       <head>

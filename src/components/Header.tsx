@@ -4,7 +4,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 import { HeartIcon, MenuIcon, MoonIcon, SearchIcon, SunIcon, CloseIcon } from "./icons";
-import { SearchPalette, type SearchItem } from "./SearchPalette";
+import { SearchPalette } from "./SearchPalette";
+import { SearchBox, type SearchEntry } from "./SearchBox";
 import { saved } from "@/lib/store";
 
 const NAV = [
@@ -12,9 +13,10 @@ const NAV = [
   { href: "/deals", label: "Deals" },
   { href: "/brands", label: "Brands" },
   { href: "/compare", label: "Compare" },
+  { href: "/guides", label: "Guides" },
 ];
 
-export function Header({ index }: { index: SearchItem[] }) {
+export function Header({ index }: { index: SearchEntry[] }) {
   const [open, setOpen] = useState(false);
   const [menu, setMenu] = useState(false);
   const path = usePathname();
@@ -25,7 +27,9 @@ export function Header({ index }: { index: SearchItem[] }) {
       const typing = /input|textarea|select/i.test((e.target as HTMLElement)?.tagName);
       if ((e.key === "k" && (e.metaKey || e.ctrlKey)) || (e.key === "/" && !typing)) {
         e.preventDefault();
-        setOpen(true);
+        // Desktop has the inline box; small screens use the full-screen palette.
+        if (window.matchMedia("(min-width: 768px)").matches) window.dispatchEvent(new Event("ce:focus-search"));
+        else setOpen(true);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -43,7 +47,7 @@ export function Header({ index }: { index: SearchItem[] }) {
       <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/80 backdrop-blur-xl">
         <div className="container-x flex h-16 items-center gap-4">
           <Logo />
-          <nav className="ml-4 hidden items-center gap-1 md:flex">
+          <nav className="ml-4 hidden items-center gap-1 lg:flex">
             {NAV.map((n) => (
               <Link
                 key={n.href}
@@ -54,14 +58,11 @@ export function Header({ index }: { index: SearchItem[] }) {
               </Link>
             ))}
           </nav>
-          <button
-            onClick={() => setOpen(true)}
-            className="ml-auto flex h-10 flex-1 items-center gap-2 rounded-xl border border-line bg-bg-card px-3 text-sm text-ink-mute shadow-sm transition hover:border-ink/20 sm:max-w-xs md:max-w-sm"
-            aria-label="Search phones"
-          >
-            <SearchIcon className="h-4 w-4" />
-            <span className="truncate">Search phones…</span>
-            <kbd className="ml-auto hidden rounded-md border border-line px-1.5 py-0.5 font-sans text-[11px] text-ink-mute sm:block">⌘K</kbd>
+          <div className="ml-auto hidden max-w-sm flex-1 md:block">
+            <SearchBox items={index} />
+          </div>
+          <button onClick={() => setOpen(true)} className="ml-auto flex h-10 flex-1 items-center gap-2 rounded-xl border border-line bg-bg-card px-3 text-sm text-ink-mute shadow-sm md:hidden" aria-label="Search">
+            <SearchIcon className="h-4 w-4" /> <span className="truncate">Search phones…</span>
           </button>
           <Link href="/saved" className="relative grid h-10 w-10 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk hover:text-ink" aria-label="Saved phones">
             <HeartIcon />
@@ -70,12 +71,12 @@ export function Header({ index }: { index: SearchItem[] }) {
             )}
           </Link>
           <ThemeToggle />
-          <button className="grid h-10 w-10 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu">
+          <button className="grid h-10 w-10 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk lg:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu">
             {menu ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
         {menu && (
-          <nav className="container-x grid gap-1 pb-4 md:hidden">
+          <nav className="container-x grid gap-1 pb-4 lg:hidden">
             {NAV.map((n) => (
               <Link key={n.href} href={n.href} className="rounded-lg px-3 py-3 text-base font-medium hover:bg-bg-sunk">
                 {n.label}

@@ -58,3 +58,17 @@ body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11";
 
 .scrollbar-none::-webkit-scrollbar { display: none; }
 .scrollbar-none { scrollbar-width: none; }
+
+/* Guide typography (no plugin: a few rules cover what the guides use). */
+.prose-ce { @apply text-[1.05rem] leading-[1.75] text-ink-soft; }
+.prose-ce > * + * { @apply mt-5; }
+.prose-ce h2 { @apply mt-12 font-display text-2xl font-extrabold tracking-tight text-ink; }
+.prose-ce h3 { @apply mt-8 font-display text-xl font-bold text-ink; }
+.prose-ce a { @apply font-medium text-brand underline decoration-brand/30 underline-offset-2 hover:decoration-brand; }
+.prose-ce strong { @apply font-semibold text-ink; }
+.prose-ce ul { @apply list-disc space-y-2 pl-6; }
+.prose-ce ol { @apply list-decimal space-y-2 pl-6; }
+.prose-ce blockquote { @apply rounded-r-xl border-l-4 border-brand bg-brand-soft px-5 py-4 text-ink; }
+.prose-ce table { @apply w-full text-sm; }
+.prose-ce th, .prose-ce td { @apply border-b border-line px-3 py-2 text-left; }
+.prose-ce > :first-child { @apply mt-0; }
