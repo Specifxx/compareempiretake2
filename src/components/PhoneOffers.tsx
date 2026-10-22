@@ -1,0 +1,192 @@
+"use client";
+import { useSearchParams } from "next/navigation";
+import { useMemo, useState } from "react";
+import { storageLabel } from "@/lib/normalize";
+import { RETAILERS } from "@/lib/retailers";
+import type { Offer, Phone, RetailerId } from "@/lib/types";
+import { CheckIcon, ExternalIcon, ShareIcon } from "./icons";
+import { RetailerDot } from "./RetailerChip";
+import { SaveButton } from "./SaveButton";
+import { CompareToggle } from "./CompareToggle";
+
+/** Gallery + storage picker + the retailer price table for one phone. */
+export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<string, React.ReactNode> }) {
+  const params = useSearchParams();
+  const initial = phone.variants.find((v) => v.id === params.get("v")) ?? defaultVariant(phone);
+  const [vid, setVid] = useState(initial.id);
+  const [colour, setColour] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
+  const variant = phone.variants.find((v) => v.id === vid) ?? initial;
+
+  const colours = useMemo(() => [...new Set(variant.offers.map((o) => o.colour).filter(Boolean))].sort(), [variant]);
+  const shown = colour && colours.includes(colour) ? variant.offers.filter((o) => o.colour === colour) : variant.offers;
+
+  // One row per retailer: its cheapest listing, with the colours it has at that price.
+  const rows = useMemo(() => {
+    const m = new Map<RetailerId, { best: Offer; colours: Set<string>; all: Offer[] }>();
+    for (const o of shown) {
+      const r = m.get(o.retailer);
+      if (!r) m.set(o.retailer, { best: o, colours: new Set([o.colour]), all: [o] });
+      else {
+        r.all.push(o);
+        const better = (o.inStock && !r.best.inStock) || (o.inStock === r.best.inStock && o.price < r.best.price);
+        if (better) r.best = o;
+        r.colours.add(o.colour);
+      }
+    }
+    return [...m.values()].sort((a, b) => Number(b.best.inStock) - Number(a.best.inStock) || a.best.price - b.best.price);
+  }, [shown]);
+
+  const [img, setImg] = useState(0);
+  const images = useMemo(() => {
+    const fromColour = colour ? shown.map((o) => o.image).filter(Boolean) as string[] : [];
+    return [...new Set([...fromColour, ...phone.images])].slice(0, 6);
+  }, [colour, shown, phone.images]);
+  const best = rows[0]?.best;
+  const top = rows.length > 1 ? Math.max(...rows.map((r) => r.best.price)) : undefined;
+
+  const share = async () => {
+    const url = `${location.origin}/phones/${phone.slug}?v=${variant.id}`;
+    const text = `${phone.name} ${storageLabel(variant.storageGb)} from $${variant.bestPrice} — compared across ${phone.retailerCount} Aussie stores`;
+    try {
+      if (navigator.share) await navigator.share({ title: phone.name, text, url });
+      else {
+        await navigator.clipboard.writeText(url);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }
+    } catch {}
+  };
+
+  return (
+    <div className="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12">
+      <div className="lg:sticky lg:top-24 lg:self-start">
+        <div className="img-tile relative aspect-square overflow-hidden rounded-3xl border border-line">
+          {images[img] && <img src={images[img]} alt={phone.name} className="product-img absolute inset-0 h-full w-full object-contain p-10" />}
+          <SaveButton slug={phone.slug} className="absolute right-4 top-4" />
+        </div>
+        {images.length > 1 && (
+          <div className="mt-3 flex gap-2 overflow-x-auto scrollbar-none">
+            {images.map((src, i) => (
+              <button key={src} onClick={() => setImg(i)} className={`img-tile h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 ${i === img ? "border-brand" : "border-transparent"}`}>
+                <img src={src} alt="" className="product-img h-full w-full object-contain p-1.5" loading="lazy" />
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div className="min-w-0">
+        <div className="text-sm font-semibold text-brand">{phone.brand}</div>
+        <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{phone.model}</h1>
+        <div className="mt-4 flex flex-wrap items-end gap-x-4 gap-y-2">
+          <div>
+            <div className="text-xs text-ink-mute">Best price · {storageLabel(variant.storageGb)}</div>
+            <div className="price text-4xl">${variant.bestPrice.toLocaleString("en-AU")}</div>
+          </div>
+          {top && top > variant.bestPrice && (
+            <div className="mb-1.5 rounded-lg bg-save-soft px-2.5 py-1 text-sm font-semibold text-save">
+              Save ${(top - variant.bestPrice).toLocaleString("en-AU")} vs dearest store
+            </div>
+          )}
+          {variant.lowestEver !== undefined && variant.previousBest !== undefined && variant.bestPrice <= variant.lowestEver && (
+            <div className="mb-1.5 rounded-lg bg-hot/10 px-2.5 py-1 text-sm font-semibold text-hot">Lowest we&apos;ve seen</div>
+          )}
+        </div>
+
+        <div className="mt-6">
+          <div className="eyebrow mb-2">Storage</div>
+          <div className="flex flex-wrap gap-2">
+            {phone.variants.map((v) => (
+              <button
+                key={v.id}
+                onClick={() => {
+                  setVid(v.id);
+                  setImg(0);
+                  history.replaceState(null, "", `?v=${v.id}`);
+                }}
+                className={`rounded-xl border px-4 py-2.5 text-left transition ${v.id === variant.id ? "border-brand bg-brand-soft" : "border-line bg-bg-card hover:border-ink/25"}`}
+              >
+                <div className={`text-sm font-semibold ${v.id === variant.id ? "text-brand" : ""}`}>{storageLabel(v.storageGb)}</div>
+                <div className="text-xs text-ink-mute">from ${v.bestPrice.toLocaleString("en-AU")}</div>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {colours.length > 1 && (
+          <div className="mt-5">
+            <div className="eyebrow mb-2">Colour</div>
+            <div className="flex flex-wrap gap-2">
+              <button className={`chip text-xs ${!colour ? "chip-on" : ""}`} onClick={() => { setColour(null); setImg(0); }}>Any colour</button>
+              {colours.map((c) => (
+                <button key={c} className={`chip text-xs ${colour === c ? "chip-on" : ""}`} onClick={() => { setColour(c); setImg(0); }}>{c}</button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="mt-8">
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="font-display text-xl font-bold">Compare {rows.length} {rows.length === 1 ? "store" : "stores"}</h2>
+            <span className="text-xs text-ink-mute">Cheapest in-stock first</span>
+          </div>
+          <ol className="space-y-2.5">
+            {rows.map(({ best: o, colours: cs }, i) => (
+              <li key={o.retailer}>
+                <a
+                  href={o.url}
+                  target="_blank"
+                  rel="noopener nofollow"
+                  className={`card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4 ${i === 0 && o.inStock ? "ring-2 ring-save/60" : ""}`}
+                >
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
+                      {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Cheapest</span>}
+                    </div>
+                    <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-mute">
+                      <span className={o.inStock ? "inline-flex items-center gap-1 text-save" : "text-hot"}>
+                        {o.inStock ? <><CheckIcon className="h-3.5 w-3.5" /> In stock</> : "Out of stock / pre-order"}
+                      </span>
+                      <span className="truncate">{[...cs].filter(Boolean).slice(0, 4).join(", ")}{cs.size > 4 ? ` +${cs.size - 4}` : ""}</span>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="price text-xl sm:text-2xl">${o.price.toLocaleString("en-AU")}</div>
+                    {o.wasPrice && <div className="text-xs text-ink-mute line-through">${o.wasPrice.toLocaleString("en-AU")}</div>}
+                    {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">+${(o.price - best.price).toLocaleString("en-AU")}</div>}
+                  </div>
+                  <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
+                    Go to store <ExternalIcon className="h-3.5 w-3.5" />
+                  </span>
+                  <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
+                </a>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-3 text-xs text-ink-mute">
+            Prices include GST and are checked daily. Delivery and in-store availability vary — confirm on the retailer&apos;s site.
+          </p>
+        </div>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          <CompareToggle slug={phone.slug} block />
+          <button onClick={share} className="btn-ghost"><ShareIcon /> {copied ? "Link copied" : "Share"}</button>
+        </div>
+
+        <div className="mt-10">
+          <h2 className="mb-3 font-display text-xl font-bold">Price history · {storageLabel(variant.storageGb)}</h2>
+          <div className="card p-5">{chart[variant.id]}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/** The variant most stores carry, cheapest among ties: what most buyers mean by "the" phone. */
+function defaultVariant(p: Phone) {
+  return [...p.variants].sort(
+    (a, b) => new Set(b.offers.map((o) => o.retailer)).size - new Set(a.offers.map((o) => o.retailer)).size || a.storageGb - b.storageGb,
+  )[0];
+}

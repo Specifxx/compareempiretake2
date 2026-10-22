@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 248 248 251;
+  --card: 255 255 255;
+  --sunk: 241 241 246;
+  --ink: 17 17 26;
+  --ink-soft: 64 64 82;
+  --ink-mute: 112 112 132;
+  --line: 228 228 236;
+  --brand: 91 61 245;
+  --brand-soft: 238 234 255;
+  --brand-ink: 255 255 255;
+  --save: 6 148 98;
+  --save-soft: 222 247 236;
+  --hot: 240 82 52;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: 11 11 16;
+  --card: 20 20 28;
+  --sunk: 15 15 21;
+  --ink: 240 240 247;
+  --ink-soft: 196 196 210;
+  --ink-mute: 140 140 158;
+  --line: 40 40 54;
+  --brand: 139 116 255;
+  --brand-soft: 37 31 70;
+  --brand-ink: 255 255 255;
+  --save: 52 211 153;
+  --save-soft: 14 48 38;
+  --hot: 255 112 84;
+  color-scheme: dark;
+}
+
+html { -webkit-tap-highlight-color: transparent; }
+body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11"; }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+  .card { @apply rounded-2xl border border-line bg-bg-card shadow-card; }
+  .chip { @apply inline-flex items-center gap-1.5 rounded-full border border-line bg-bg-card px-3 py-1.5 text-sm font-medium text-ink-soft transition hover:border-ink/20 hover:text-ink; }
+  .chip-on { @apply border-brand bg-brand-soft text-brand; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[.98]; }
+  .btn-primary { @apply btn bg-brand text-brand-ink hover:brightness-110 shadow-sm; }
+  .btn-ghost { @apply btn border border-line bg-bg-card text-ink hover:border-ink/25; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.14em] text-ink-mute; }
+  .price { @apply font-display font-bold tabular-nums tracking-tight; }
+  .product-img { @apply mix-blend-multiply dark:mix-blend-normal; }
+}
+
+/* White product shots sit on a soft tile in both themes. */
+.img-tile { background: radial-gradient(120% 90% at 50% 20%, #ffffff 0%, #f3f3f8 100%); }
+.dark .img-tile { background: radial-gradient(120% 90% at 50% 20%, #f7f7fb 0%, #dcdce6 100%); }
+
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { scrollbar-width: none; }
