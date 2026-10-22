@@ -1,0 +1,50 @@
+/**
+ * Runs every category scraper in scripts/scrapers/categories/ and writes
+ * data/<category>/raw/<retailer>.json. A store/category that fails keeps
+ * yesterday's file.
+ *
+ *   npx tsx scripts/scrape-categories.ts                 # everything
+ *   npx tsx scripts/scrape-categories.ts jbhifi umart    # some stores
+ *   npx tsx scripts/scrape-categories.ts --cat tvs       # one category
+ */
+import { mkdirSync, readdirSync, writeFileSync } from "node:fs";
+import path from "node:path";
+import { pathToFileURL } from "node:url";
+import type { CategoryId, RawOffer } from "../src/lib/types";
+
+type Scrapers = Partial<Record<CategoryId, () => Promise<RawOffer[]>>>;
+
+async function main() {
+  const args = process.argv.slice(2);
+  const ci = args.indexOf("--cat");
+  const onlyCat = ci >= 0 ? (args.splice(ci, 2)[1] as CategoryId) : undefined;
+  const onlyStores = args;
+  const dir = path.join(process.cwd(), "scripts/scrapers/categories");
+  const files = readdirSync(dir).filter((f) => f.endsWith(".ts"));
+  let ok = 0, failed = 0;
+  for (const f of files) {
+    const retailer = f.replace(/\.ts$/, "");
+    if (onlyStores.length && !onlyStores.includes(retailer)) continue;
+    const mod = (await import(pathToFileURL(path.join(dir, f)).href)) as { scrapers?: Scrapers };
+    for (const [cat, fn] of Object.entries(mod.scrapers ?? {}) as [CategoryId, () => Promise<RawOffer[]>][]) {
+      if (onlyCat && cat !== onlyCat) continue;
+      const t = Date.now();
+      try {
+        const offers = await fn();
+        if (offers.length < 3) throw new Error(`only ${offers.length} offers — refusing to overwrite`);
+        offers.sort((a, b) => a.title.localeCompare(b.title));
+        mkdirSync(`data/${cat}/raw`, { recursive: true });
+        writeFileSync(`data/${cat}/raw/${retailer}.json`, JSON.stringify({ scrapedAt: new Date().toISOString(), offers }, null, 1) + "\n");
+        console.log(`${cat}/${retailer}: ${offers.length} offers in ${((Date.now() - t) / 1000).toFixed(0)}s`);
+        ok++;
+      } catch (e) {
+        failed++;
+        console.error(`${cat}/${retailer}: FAILED — ${(e as Error).message}`);
+      }
+    }
+  }
+  console.log(`done: ${ok} ok, ${failed} failed`);
+  if (failed && !ok) process.exit(1);
+}
+
+main();
