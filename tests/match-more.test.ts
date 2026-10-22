@@ -63,3 +63,16 @@ test("soundbars and printers use model codes", () => {
 test("cameras: body and kits stay apart", () => {
   assert.notEqual(key("Sony Alpha a7 IV Mirrorless Camera Body", "cameras"), key("Sony Alpha a7 IV Mirrorless Camera with 28-70mm Lens", "cameras"));
 });
+
+test("pack counts and component codes don't merge different products", () => {
+  assert.notEqual(key("TP-Link Deco BE85 BE22000 Mesh Wi-Fi 7 System - 2 Pack", "routers"), key("TP-Link Deco BE85 BE22000 Mesh Wi-Fi 7 System - 3 Pack", "routers"));
+  assert.notEqual(
+    key("G9 Ryzen 7 9800X3D GeForce RTX 5080 Gaming PC 61075", "desktops", { mpn: "9800X3D" }),
+    key("G7 Ryzen 7 9800X3D GeForce RTX 5070 Ti Gaming PC 61022", "desktops", { mpn: "9800X3D" }),
+  );
+  assert.doesNotMatch(p("Samsung T7 Portable SSD 4TB", "ssds")!.model, /4TB/);
+});
+
+test("wired and wireless headsets are different products", () => {
+  assert.notEqual(key("HyperX Cloud Alpha Gaming Headset", "headphones"), key("HyperX Cloud Alpha Wireless Gaming Headset", "headphones"));
+});

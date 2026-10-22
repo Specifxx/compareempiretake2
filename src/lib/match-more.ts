@@ -22,7 +22,8 @@ const COMMON_NOISE = "new genuine au aus australian stock version model with and
 
 /** Words that describe a product type rather than which product it is. */
 const NOISE: Partial<Record<CategoryId, string[]>> = {
-  headphones: "wireless bluetooth noise cancelling canceling cancellation anc headphones headphone headset earbuds earbud earphones earphone in-ear over-ear on-ear true tws hi-res audio sound premium".split(" "),
+  // "wireless"/"wired" stay: a gaming headset comes in both, at different prices.
+  headphones: "bluetooth noise cancelling canceling cancellation anc headphones headphone headset earbuds earbud earphones earphone in-ear over-ear on-ear true tws hi-res audio sound premium".split(" "),
   speakers: "portable bluetooth wireless speaker speakers smart waterproof party outdoor home audio sound".split(" "),
   soundbars: "soundbar sound bar dolby atmos wireless home theatre theater system audio smart".split(" "),
   consoles: "console gaming handheld system video game games".split(" "),
@@ -155,13 +156,24 @@ function variantFor(category: CategoryId, t: string): { id: string; label: strin
   return { ...STD, drop: [] };
 }
 
+/** A CPU or GPU model number is not a product code ("9800X3D", "RTX5080"). */
+const COMPONENT_CODE = /^(\d{4,5}(X3D|XT|X|K|KF|F|G|GT|HX|H|U|S)?|RTX-?\d{4}\w*|GTX-?\d{4}\w*|RX-?\d{4}\w*|I[3579]-?\d{4,5}\w*)$/i;
+
+/** "2 Pack", "(3-pack)", "Twin Pack", "x2": a 2-pack is a different product from a single. */
+function packCount(t: string): string {
+  const m = t.match(/\b(\d)\s?-?\s?(?:pack|pk)\b|\(\s*(\d)\s?-?\s?pack\s*\)|\b(twin|triple)[- ]pack\b|\bx\s?(\d)\b/i);
+  if (!m) return "";
+  const n = m[1] ?? m[2] ?? m[4] ?? (/twin/i.test(m[3] ?? "") ? "2" : "3");
+  return n === "1" ? "" : `pack${n}`;
+}
+
 /** Categories where a printed model code identifies the product on its own. */
 const CODE_FIRST: Partial<Record<CategoryId, true>> = { printers: true, routers: true, desktops: true, soundbars: true };
 const strongCode = (t: string) =>
   t
     .split(/[\s(),/[\]]+/)
     .map((w) => w.replace(/^[-–.]+|[-–.:;]+$/g, "").toUpperCase())
-    .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !/^\d+(GB|TB|MHZ|HZ|MM|W|MAH|P)$/.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d)/.test(w))
+    .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !/^\d+(GB|TB|MHZ|HZ|MM|W|MAH|P)$/.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d)/.test(w) && !COMPONENT_CODE.test(w) && !/^(BE|AXE?|AC)\d{3,5}$/.test(w))
     .sort((a, b) => b.length - a.length)[0];
 
 export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOffer, t: string) => string | undefined): Parsed | null {
@@ -177,13 +189,22 @@ export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOff
     return { brand, model: display(rest, brand), key: keyOf(brand, code ?? sig), variant: STD, colour, discriminator: sig ?? "" };
   }
   const v = variantFor(category, rest);
-  const code = CODE_FIRST[category] ? (o.mpn && o.mpn.length >= 5 ? o.mpn.toUpperCase() : strongCode(rest)) : undefined;
+  const stated = o.mpn && o.mpn.length >= 5 && !COMPONENT_CODE.test(o.mpn.replace(/\s+/g, "")) ? o.mpn.toUpperCase() : undefined;
+  const code = CODE_FIRST[category] ? stated ?? strongCode(rest) : undefined;
+  const pack = packCount(rest);
   const words = identity(rest, brand, category, v.drop);
   if (!code && !words.length) return null;
   return {
     brand,
-    model: display(category === "smartwatches" ? rest.replace(/\b\d{2}\s?mm\b.*$/i, "").trim() || rest : rest, brand),
-    key: code ? keyOf(brand, code.replace(/[^A-Z0-9]/g, "")) : keyOf(brand, ...words),
+    model: display(
+      category === "smartwatches"
+        ? rest.replace(/\b\d{2}\s?mm\b.*$/i, "").trim() || rest
+        : v.storageGb
+          ? rest.replace(/\s*\b\d+(?:\.\d+)?\s?(GB|TB)\b/gi, "").replace(/\s{2,}/g, " ").trim()
+          : rest,
+      brand,
+    ),
+    key: code ? keyOf(brand, code.replace(/[^A-Z0-9]/g, ""), pack) : keyOf(brand, ...words, pack),
     variant: { id: v.id, label: v.label, storageGb: v.storageGb },
     colour,
     code,

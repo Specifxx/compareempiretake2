@@ -177,7 +177,8 @@ function build(category: CategoryId) {
       const outright = raw.filter((o) => o.kind !== "plan");
       const plans = raw.filter((o) => o.kind === "plan").sort((a, b) => a.price - b.price);
       const med = outright.length ? median(outright.map((o) => o.price)) : 0;
-      const kept = (outright.length >= 3 ? outright.filter((o) => o.price >= med * 0.55) : outright).sort((a, b) => a.price - b.price);
+      // ...and far above: a marketplace seller's bundle, or a listing for a bigger model under the same code.
+      const kept = (outright.length >= 3 ? outright.filter((o) => o.price >= med * 0.55 && o.price <= med * 2.2) : outright).sort((a, b) => a.price - b.price);
       const offers = [...kept, ...plans];
       if (!offers.length) continue;
       const pool = kept.length ? kept : plans;
