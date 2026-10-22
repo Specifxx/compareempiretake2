@@ -56,12 +56,12 @@ const CATS: Record<string, { paths: string[]; keep: (t: string) => boolean }> = 
   ssds: { paths: ["828/hard-drives-ssds/m2-ssd", "355/hard-drives-ssds/25-ssd", "1025/hard-drives-ssds-external/external-portable-ssd"], keep: KEEP.ssds! },
   ram: { paths: ["728/memory-ram/desktop-memory", "729/memory-ram/notebook-memory"], keep: KEEP.ram! },
   motherboards: { paths: ["302/motherboards"], keep: KEEP.motherboards! },
-  desktops: { paths: ["411/desktop-computers"], keep: (t) => KEEP.desktops!(t) && !/barebone|developer kit|dev kit|notebook|laptop/i.test(t) },
+  // desktops: PLE's prebuilt range is configure-to-order (category lists render empty) plus a handful of house builds; skipped.
   routers: { paths: ["624/networking/routers", "511/networking/adslvdsl-modem-routers", "307/networking/modems", "944/networking/4g5g"], keep: KEEP.routers! },
   printers: { paths: ["339/printers-consumables"], keep: KEEP.printers! },
   headphones: { paths: ["930/headphones-microphones/headphones", "568/headphones-microphones/headset", "569/headphones-microphones/earphones"], keep: KEEP.headphones! },
-  speakers: { paths: ["380/speakers"], keep: (t) => KEEP.speakers!(t) && !/soundbar|sound bar/i.test(t) },
-  soundbars: { paths: ["1310/speakers/soundbar"], keep: (t) => /soundbar|sound bar/i.test(t) && !/mount|bracket|cable|remote/i.test(t) },
+  speakers: { paths: ["380/speakers"], keep: KEEP.speakers! },
+  soundbars: { paths: ["1310/speakers/soundbar"], keep: KEEP.soundbars! },
 };
 
 async function scrape(cat: string): Promise<RawOffer[]> {

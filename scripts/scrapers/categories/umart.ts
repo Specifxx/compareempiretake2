@@ -22,8 +22,9 @@ export const CATEGORY_PATHS: Partial<Record<Cat, string[]>> = {
   printers: ["/pc-parts/printers-scanners/inkjet-printers-134", "/pc-parts/printers-scanners/laser-printers-135", "/pc-parts/printers-scanners/multifunction-printers-136"],
   headphones: ["/mobile-phones-digital/sound-audio-equipment/headphones-1379", "/pc-parts/peripherals/headphones-147"],
   speakers: ["/pc-parts/computer-parts/speakers/speakers-audio-systems-43", "/pc-parts/computer-parts/speakers/smart-speakers-1318"],
+  soundbars: ["/pc-parts/computer-parts/speakers/speakers-audio-systems-43"],
   consoles: ["/laptops-computers/gaming/video-games-consoles-567"],
-  smartwatches: ["/mobile-phones-digital/smart-devices/smart-watches-988"],
+  // smartwatches: Umart/MSY "smart-watches-988" is generic unbranded watches only (no Apple/Garmin/Samsung); skipped.
   drones: ["/mobile-phones-digital/smart-devices/drones-527"],
   "robot-vacuums": ["/household-appliances/cleaning-appliances/robotic-vacuum-cleaner-1341"],
 };
@@ -44,15 +45,20 @@ export const KEEP: Partial<Record<Cat, (t: string) => boolean>> = {
   cpus: (t) => /\b(ryzen|core|xeon|threadripper|athlon|pentium|celeron|epyc|processor|cpu)\b/i.test(t) && !/cooler|cooling|heatsink|\bfan\b|thermal|paste|aio|liquid|bracket|delid|contact frame|motherboard|bundle/i.test(t),
   ssds: (t) => /ssd|nvme|m\.2|solid state/i.test(t) && /\d+\s?(gb|tb)/i.test(t) && !/enclosure|heatsink|heat sink|adapter|caddy|bracket|dock|cable|\bcase\b|converter|screw/i.test(t),
   ram: (t) => /ddr\d/i.test(t) && /\d+\s?gb/i.test(t) && !RAM_ACC.test(t),
-  motherboards: (t) => !/i\/?o shield|cable|bracket|antenna|\bcpu\b.*bundle|header|adapter|riser|heatsink|cooler|\bfan\b|wifi card/i.test(t),
+  motherboards: (t) => !/\btpm\b|module|\bcard\b|i\/?o shield|cable|bracket|antenna|\bcpu\b.*bundle|header|adapter|riser|heatsink|cooler|\bfan\b|wifi card/i.test(t),
   desktops: (t) => /\bpc\b|desktop|computer|workstation|mini|nuc|tower|imac|mac (mini|studio)|all[- ]in[- ]one|\baio\b|ryzen|core|gaming/i.test(t) && !/case\b|chassis|monitor\b(?!.*pc)|keyboard|mouse|warranty|upgrade|barebone|vesa|mount|bracket/i.test(t),
   routers: (t) => /router|mesh|modem|wi-?fi\s?\d|\bdeco\b|orbi|velop|eero|gateway|ax\d{3,4}|be\d{4,5}/i.test(t) && !/antenna|cable|switch\b|adapter|extender|access point|usb|pcie|card|mount|bracket|power supply|license|licence/i.test(t),
-  printers: (t) => /printer|mfc|multifunction|all[- ]in[- ]one|laserjet|officejet|deskjet|ecotank|pixma|maxify|workforce|imageclass|\bmfp\b/i.test(t) && !/ink|toner|cartridge|paper|drum|ribbon|label|tape|maintenance|fuser|tray|cable|warranty|bottle|refill/i.test(t),
-  headphones: (t) => /headphone|headset|earbud|earphone|\bbuds\b|airpods|in-ear|over-ear|on-ear|\btws\b/i.test(t) && !/stand\b|hanger|holder|\bcase\b|cover|ear ?pads?|cushion|cable|adapter|replacement|tips\b|splitter|amp\b|dac\b/i.test(t),
-  speakers: (t) => /speaker|soundbar|sound bar|subwoofer|\becho\b|homepod|nest audio|boombox|party/i.test(t) && !/stand\b|mount|bracket|cable|cover|\bcase\b|grille|wire/i.test(t),
-  consoles: (t) => /playstation|ps5|ps4|xbox|nintendo|switch|steam deck|rog ally|legion go|console|msi claw/i.test(t) && !/controller|gamepad|joy-?con|headset|charging|charger|\bcase\b|cover|skin|stand\b|cable|game card|\bgame\b(?!.*console)|membership|subscription|gift|wheel|remote|camera|grip|protector|bag|dock|edition game|vr2?\b|portal/i.test(t),
-  smartwatches: (t) => /watch|band|fit\b|fitbit|garmin|amazfit|tracker/i.test(t) && !/strap|charger|cable|protector|\bcase\b|cover|stand\b|dock|kids/i.test(t),
-  drones: (t) => /drone|dji|mavic|mini \d|avata|neo|flip|air \d/i.test(t) && !/battery|propeller|charger|hub|bag|\bcase\b|filter|controller|landing|guard|cable|lanyard|strap|sd card|care/i.test(t),
+  printers: (t) => /printer|mfc|multifunction|all[- ]in[- ]one|laserjet|officejet|deskjet|ecotank|pixma|maxify|workforce|imageclass|\bmfp\b/i.test(t) && !/\bink\b|toner|cartridge|\bpaper\b|drum|ribbon|label|tape|maintenance|fuser|tray|cable|warranty|bottle|refill/i.test(t),
+  headphones: (t) => /headphone|headset|earbud|earphone|\bbuds\b|airpods|in-ear|over-ear|on-ear|\btws\b/i.test(t) && !/stand\b|hanger|holder|\bcase\b|cover|ear ?pads?|cushion|hard ?case|pouch|cable|adapter|replacement|tips\b|splitter|amp\b|dac\b/i.test(t),
+  soundbars: (t) => /soundbar|sound bar/i.test(t) && !/mount|bracket|cable|remote|stand\b/i.test(t),
+  speakers: (t) => !/soundbar|sound bar/i.test(t) && /speaker|subwoofer|\becho\b|homepod|nest audio|boombox|party/i.test(t) && !/stand\b|mount|bracket|cable|cover|\bcase\b|grille|wire/i.test(t),
+  consoles: (t) =>
+    /playstation|\bps5\b|xbox series|nintendo switch|switch (2|oled|lite)|steam deck|rog ally|rog xbox ally|legion go|msi claw|\bclaw (a?\d)/i.test(t) &&
+    !/controller|gamepad|joy-?con|headset|charging|charger|\bfan\b|\bcase\b|cover|skin|stand\b|cable|game card|membership|subscription|gift|wheel|remote|camera|grip|protector|\bbag\b|dock\b|vr2?\b|portal|tetris|retro/i.test(t),
+  smartwatches: (t) =>
+    /apple watch|galaxy watch|pixel watch|garmin|fitbit|amazfit|huawei watch|redmi watch|xiaomi (smart )?watch|suunto|coros|polar\b|withings|ticwatch|oppo watch|oneplus watch/i.test(t) &&
+    !/strap|band only|charger|cable|protector|\bcase\b|cover|stand\b|dock|kids/i.test(t),
+  drones: (t) => /drone|dji|mavic|mini \d|avata|neo|flip|air \d/i.test(t) && !/battery|propeller|charger|hub|bag|\bcase\b|filter|controller|landing|guard|cable|lanyard|strap|sd card|care|backpack|handle|osmo/i.test(t),
   "robot-vacuums": (t) => /robot|robotic|roomba|roborock|deebot|vacuum/i.test(t) && !/filter|brush|mop pad|bag\b|replacement|accessor|kit\b|cloth|battery|dust ?bag/i.test(t),
 };
 
@@ -71,7 +77,7 @@ const SPEC_TOKEN = /^(\d+(\.\d+)?(gb|tb|mb|mhz|ghz|hz|mb\/s|gb\/s|w|mm|mah|in|cm
 export function guessMpn(title: string): string | undefined {
   const toks = title.split(/[\s,()]+/).map((t) => t.replace(/^[-–]+|[-–.]+$/g, ""));
   const c = toks.filter(
-    (t) => t.length >= 7 && /\d/.test(t) && /[A-Za-z]/.test(t) && /^[A-Za-z0-9][A-Za-z0-9\-\/.#+]+$/.test(t) && !SPEC_TOKEN.test(t) && t.replace(/[^0-9]/g, "").length >= 2 && !/^[a-z]/.test(t),
+    (t) => t.length >= 7 && /\d/.test(t) && /[A-Za-z]/.test(t) && /^[A-Za-z0-9][A-Za-z0-9\-\/.#+]+$/.test(t) && !SPEC_TOKEN.test(t) && t.replace(/[^0-9]/g, "").length >= 2 && !/^[a-z]/.test(t) && t.toLowerCase() !== toks[0].toLowerCase(),
   );
   return c.sort((a, b) => b.length - a.length)[0];
 }
@@ -107,7 +113,10 @@ export async function scrapeUmartLike(retailer: RetailerId, BASE: string, cat: C
         if (!price) continue;
         const split = splitMpn(decodeEntities(link[2]));
         const title = split.title;
-        const mpn = split.mpn ?? (LEGACY.includes(cat) ? undefined : guessMpn(title));
+        const legacy = LEGACY.includes(cat);
+        // Trailing "(2-Pack)" / "(rev. 1.2)" are not part numbers.
+        const splitMpnOk = split.mpn && (legacy || !/pack\b|^rev\b|^ver\b|mt\/s|mhz/i.test(split.mpn));
+        const mpn = splitMpnOk ? split.mpn : legacy ? undefined : guessMpn(title);
         if (out.has(link[1]) || NOT_NEW.test(title) || !(KEEP[cat]?.(title) ?? true)) continue;
         const img = [...before.matchAll(/<img[^>]*src="([^"]+)"/g)].at(-1)?.[1];
         const dataBrand = sec.match(/itemprop="brand">([^<]+)</)?.[1]?.trim();
