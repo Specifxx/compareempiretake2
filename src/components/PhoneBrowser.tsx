@@ -2,6 +2,7 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import type { PhoneSummary } from "@/lib/catalog";
+import { categoryById } from "@/lib/categories";
 import { search } from "@/lib/search";
 import { CloseIcon, FilterIcon, SearchIcon } from "./icons";
 import { PhoneCard } from "./PhoneCard";
@@ -15,16 +16,76 @@ const SORTS = {
 } as const;
 type Sort = keyof typeof SORTS;
 
-const PRICE_BANDS: [string, number | undefined, number | undefined][] = [
-  ["Under $300", undefined, 300],
-  ["$300 – $700", 300, 700],
-  ["$700 – $1,200", 700, 1200],
-  ["$1,200 – $2,000", 1200, 2000],
-  ["$2,000+", 2000, undefined],
-];
+type Band = [string, number | undefined, number | undefined];
+const PRICE_BANDS: Record<string, Band[]> = {
+  default: [
+    ["Under $300", undefined, 300],
+    ["$300 – $700", 300, 700],
+    ["$700 – $1,200", 700, 1200],
+    ["$1,200 – $2,000", 1200, 2000],
+    ["$2,000+", 2000, undefined],
+  ],
+  tvs: [
+    ["Under $800", undefined, 800],
+    ["$800 – $1,500", 800, 1500],
+    ["$1,500 – $3,000", 1500, 3000],
+    ["$3,000 – $5,000", 3000, 5000],
+    ["$5,000+", 5000, undefined],
+  ],
+  monitors: [
+    ["Under $250", undefined, 250],
+    ["$250 – $500", 250, 500],
+    ["$500 – $1,000", 500, 1000],
+    ["$1,000+", 1000, undefined],
+  ],
+  "graphics-cards": [
+    ["Under $500", undefined, 500],
+    ["$500 – $1,000", 500, 1000],
+    ["$1,000 – $2,000", 1000, 2000],
+    ["$2,000+", 2000, undefined],
+  ],
+  laptops: [
+    ["Under $800", undefined, 800],
+    ["$800 – $1,500", 800, 1500],
+    ["$1,500 – $2,500", 1500, 2500],
+    ["$2,500+", 2500, undefined],
+  ],
+};
 const STORAGE = [128, 256, 512, 1024];
 
-export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; fixedBrand?: string }) {
+/** Spec filters per category: which facet to offer, and how to bucket its values. */
+const FACETS: Record<string, { key: string; label: string; bucket?: (v: string) => string }[]> = {
+  tvs: [
+    { key: "Screen size", label: "Size", bucket: (v) => sizeBucket(parseFloat(v), [43, 50, 55, 65, 75, 85]) },
+    { key: "Panel", label: "Panel" },
+    { key: "Resolution", label: "Resolution" },
+  ],
+  monitors: [
+    { key: "Screen size", label: "Size", bucket: (v) => sizeBucket(parseFloat(v), [24, 27, 32, 34, 49]) },
+    { key: "Resolution", label: "Resolution" },
+    { key: "Refresh rate", label: "Refresh rate", bucket: (v) => (parseInt(v) >= 240 ? "240Hz+" : parseInt(v) >= 144 ? "144Hz+" : "Under 144Hz") },
+    { key: "Panel", label: "Panel" },
+  ],
+  "graphics-cards": [
+    { key: "GPU", label: "GPU" },
+    { key: "Memory", label: "Memory" },
+  ],
+  laptops: [
+    { key: "Memory", label: "Memory" },
+    { key: "Storage", label: "Storage" },
+    { key: "Graphics", label: "Dedicated graphics" },
+  ],
+  tablets: [{ key: "Chip", label: "Chip" }],
+};
+
+function sizeBucket(n: number, steps: number[]): string {
+  if (!n) return "";
+  // Nearest listed size class, e.g. 64.5" → 65".
+  const near = steps.reduce((a, b) => (Math.abs(b - n) < Math.abs(a - n) ? b : a));
+  return Math.abs(near - n) <= 3 ? `${near}"` : `${Math.round(n)}"`;
+}
+
+export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCategory }: { phones: PhoneSummary[]; fixedBrand?: string; category?: string; showCategory?: boolean }) {
   const params = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -40,7 +101,33 @@ export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; f
   const only5g = params.get("5g") === "1";
   const stock = params.get("stock") === "1";
   const multi = params.get("multi") === "1";
+  const catParam = params.get("cat") ?? "";
   const sort = (params.get("sort") as Sort) || (q ? "relevance" : "popular");
+  const facetDefs = FACETS[category] ?? [];
+  const facetValue = (p: PhoneSummary, f: (typeof facetDefs)[number]) => {
+    const v = p.facets[f.key];
+    return v ? (f.bucket ? f.bucket(v) : v) : "";
+  };
+  const facetParam = (key: string) => `f.${key.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+  const facetSel = useMemo(
+    () => Object.fromEntries(facetDefs.map((f) => [f.key, params.get(facetParam(f.key))?.split("|").filter(Boolean) ?? []])),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [params, category],
+  );
+  const facetOptions = useMemo(
+    () =>
+      facetDefs.map((f) => {
+        const m = new Map<string, number>();
+        phones.forEach((p) => {
+          const v = facetValue(p, f);
+          if (v) m.set(v, (m.get(v) ?? 0) + 1);
+        });
+        const opts = [...m].sort((a, b) => (parseFloat(a[0]) && parseFloat(b[0]) ? parseFloat(a[0]) - parseFloat(b[0]) : b[1] - a[1]));
+        return { f, opts };
+      }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [phones, category],
+  );
 
   const set = (patch: Record<string, string | undefined>) => {
     const next = new URLSearchParams(params.toString());
@@ -65,7 +152,9 @@ export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; f
         (!fold || p.foldable) &&
         (!only5g || p.network === "5G") &&
         (!stock || p.inStock) &&
-        (!multi || p.retailerCount >= 2),
+        (!multi || p.retailerCount >= 2) &&
+        (!catParam || p.category === catParam) &&
+        facetDefs.every((f) => !facetSel[f.key]?.length || facetSel[f.key].includes(facetValue(p, f))),
     );
     const by: Record<string, (a: PhoneSummary, b: PhoneSummary) => number> = {
       popular: (a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice,
@@ -75,13 +164,36 @@ export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; f
       newest: (a, b) => b.generation - a.generation || b.bestPrice - a.bestPrice,
     };
     return by[sort] ? [...r].sort(by[sort]) : r;
-  }, [phones, q, brands, min, max, storage, fold, only5g, stock, multi, sort]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phones, q, brands, min, max, storage, fold, only5g, stock, multi, sort, facetSel, catParam]);
 
   const active =
-    brands.length + (min !== undefined || max !== undefined ? 1 : 0) + (storage ? 1 : 0) + [fold, only5g, stock, multi].filter(Boolean).length;
+    brands.length +
+    (min !== undefined || max !== undefined ? 1 : 0) +
+    (catParam ? 1 : 0) +
+    (storage ? 1 : 0) +
+    [fold, only5g, stock, multi].filter(Boolean).length +
+    Object.values(facetSel).reduce((n, v) => n + v.length, 0);
+  const isPhone = category === "phones";
 
+  const cats = useMemo(() => {
+    const m = new Map<string, number>();
+    phones.forEach((p) => m.set(p.category, (m.get(p.category) ?? 0) + 1));
+    return [...m];
+  }, [phones]);
   const filters = (
     <div className="space-y-7">
+      {showCategory && cats.length > 1 && (
+        <Group title="Category">
+          <div className="flex flex-wrap gap-2">
+            {cats.map(([c, n]) => (
+              <button key={c} className={`chip text-xs ${catParam === c ? "chip-on" : ""}`} onClick={() => set({ cat: catParam === c ? undefined : c })}>
+                {categoryById(c)?.name ?? c} <span className="opacity-60">{n}</span>
+              </button>
+            ))}
+          </div>
+        </Group>
+      )}
       {!fixedBrand && (
         <Group title="Brand">
           <div className="flex flex-wrap gap-2">
@@ -98,7 +210,7 @@ export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; f
       )}
       <Group title="Price">
         <div className="flex flex-wrap gap-2">
-          {PRICE_BANDS.map(([label, lo, hi]) => {
+          {(PRICE_BANDS[category] ?? PRICE_BANDS.default).map(([label, lo, hi]) => {
             const on = min === lo && max === hi;
             return (
               <button key={label} className={`chip text-xs ${on ? "chip-on" : ""}`} onClick={() => set(on ? { min: undefined, max: undefined } : { min: lo?.toString(), max: hi?.toString() })}>
@@ -108,6 +220,22 @@ export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; f
           })}
         </div>
       </Group>
+      {facetOptions.filter(({ opts }) => opts.length > 1).map(({ f, opts }) => (
+        <Group key={f.key} title={f.label}>
+          <div className="flex flex-wrap gap-2">
+            {opts.slice(0, 18).map(([v, n]) => {
+              const sel = facetSel[f.key] ?? [];
+              const on = sel.includes(v);
+              return (
+                <button key={v} className={`chip text-xs ${on ? "chip-on" : ""}`} onClick={() => set({ [facetParam(f.key)]: (on ? sel.filter((x) => x !== v) : [...sel, v]).join("|") || undefined })}>
+                  {v} <span className="opacity-60">{n}</span>
+                </button>
+              );
+            })}
+          </div>
+        </Group>
+      ))}
+      {(isPhone || category === "tablets") && (
       <Group title="Storage">
         <div className="flex flex-wrap gap-2">
           {STORAGE.map((s) => (
@@ -117,12 +245,13 @@ export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; f
           ))}
         </div>
       </Group>
+      )}
       <Group title="Features">
         <div className="space-y-2.5">
           <Toggle label="In stock somewhere" on={stock} onChange={(v) => set({ stock: v ? "1" : undefined })} />
           <Toggle label="Sold by 2+ stores" on={multi} onChange={(v) => set({ multi: v ? "1" : undefined })} />
-          <Toggle label="5G only" on={only5g} onChange={(v) => set({ "5g": v ? "1" : undefined })} />
-          <Toggle label="Foldables & flips" on={fold} onChange={(v) => set({ fold: v ? "1" : undefined })} />
+          {isPhone && <Toggle label="5G only" on={only5g} onChange={(v) => set({ "5g": v ? "1" : undefined })} />}
+          {isPhone && <Toggle label="Foldables & flips" on={fold} onChange={(v) => set({ fold: v ? "1" : undefined })} />}
         </div>
       </Group>
       {active > 0 && (
@@ -145,7 +274,7 @@ export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; f
             <input
               value={q}
               onChange={(e) => set({ q: e.target.value || undefined })}
-              placeholder={fixedBrand ? `Search ${fixedBrand} phones…` : "Filter by name…"}
+              placeholder={fixedBrand ? `Search ${fixedBrand}…` : "Filter by name or model…"}
               className="w-full bg-transparent text-sm outline-none placeholder:text-ink-mute"
             />
             {q && (
@@ -167,16 +296,16 @@ export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; f
           </div>
         </div>
         <div className="mb-4 text-sm text-ink-mute">
-          {results.length} {results.length === 1 ? "phone" : "phones"}
+          {results.length} {results.length === 1 ? "product" : "products"}
           {q && <> matching “<span className="text-ink">{q}</span>”</>}
         </div>
         {results.length ? (
           <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
-            {results.map((p, i) => <PhoneCard key={p.slug} p={p} priority={i < 4} />)}
+            {results.map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} showCategory={showCategory} />)}
           </div>
         ) : (
           <div className="card grid place-items-center gap-2 px-6 py-16 text-center">
-            <div className="font-display text-xl font-bold">No phones match</div>
+            <div className="font-display text-xl font-bold">Nothing matches</div>
             <p className="text-sm text-ink-mute">Try fewer filters or a different search.</p>
           </div>
         )}
@@ -190,7 +319,7 @@ export function PhoneBrowser({ phones, fixedBrand }: { phones: PhoneSummary[]; f
               <button onClick={() => setPanel(false)} aria-label="Close"><CloseIcon /></button>
             </div>
             {filters}
-            <button className="btn-primary mt-8 w-full" onClick={() => setPanel(false)}>Show {results.length} phones</button>
+            <button className="btn-primary mt-8 w-full" onClick={() => setPanel(false)}>Show {results.length} results</button>
           </div>
         </div>
       )}

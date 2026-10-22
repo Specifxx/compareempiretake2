@@ -51,7 +51,7 @@ export default async function VsPage({ params }: { params: Promise<{ pair: strin
 
       <div className="mt-8 grid grid-cols-2 gap-4">
         {[a, b].map((x) => (
-          <Link key={x.slug} href={`/phones/${x.slug}`} className="card group overflow-hidden text-center transition hover:shadow-lift">
+          <Link key={x.slug} href={`/${x.category}/${x.slug}`} className="card group overflow-hidden text-center transition hover:shadow-lift">
             <div className="img-tile aspect-square">{x.image && <img src={x.image} alt={x.name} className="product-img h-full w-full object-contain p-6" />}</div>
             <div className="p-4">
               <div className="text-xs text-ink-mute">{x.brand}</div>

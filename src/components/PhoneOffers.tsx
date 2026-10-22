@@ -1,7 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
-import { storageLabel } from "@/lib/normalize";
 import { MARKETPLACES } from "@/lib/marketplaces";
 import { RETAILERS } from "@/lib/retailers";
 import type { Offer, Phone, RetailerId } from "@/lib/types";
@@ -28,6 +27,8 @@ export function PhoneOffers({
   const [colour, setColour] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   const variant = phone.variants.find((v) => v.id === vid) ?? initial;
+  const href = `/${phone.category}/${phone.slug}`;
+  const vLabel = phone.variants.length > 1 || variant.storageGb ? variant.label : "";
 
   const colours = useMemo(() => [...new Set(variant.offers.map((o) => o.colour).filter(Boolean))].sort(), [variant]);
   const shown = colour && colours.includes(colour) ? variant.offers.filter((o) => o.colour === colour) : variant.offers;
@@ -61,8 +62,8 @@ export function PhoneOffers({
   const top = rows.length > 1 ? Math.max(...rows.map((r) => r.best.price)) : undefined;
 
   const share = async () => {
-    const url = `${location.origin}/phones/${phone.slug}?v=${variant.id}`;
-    const text = `${phone.name} ${storageLabel(variant.storageGb)} from $${variant.bestPrice} — compared across ${phone.retailerCount} Aussie stores`;
+    const url = `${location.origin}${href}?v=${variant.id}`;
+    const text = `${phone.name}${vLabel ? ` ${vLabel}` : ""} from $${variant.bestPrice} — compared across ${phone.retailerCount} Aussie stores`;
     try {
       if (navigator.share) await navigator.share({ title: phone.name, text, url });
       else {
@@ -78,7 +79,7 @@ export function PhoneOffers({
       <div className="lg:sticky lg:top-24 lg:self-start">
         <div className="img-tile relative aspect-square overflow-hidden rounded-3xl border border-line">
           {images[img] && <img src={images[img]} alt={phone.name} className="product-img absolute inset-0 h-full w-full object-contain p-10" />}
-          <SaveButton slug={phone.slug} className="absolute right-4 top-4" />
+          <SaveButton slug={href} className="absolute right-4 top-4" />
         </div>
         {images.length > 1 && (
           <div className="mt-3 flex gap-2 overflow-x-auto scrollbar-none">
@@ -96,7 +97,7 @@ export function PhoneOffers({
         <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{phone.model}</h1>
         <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
           <div className="shrink-0">
-            <div className="text-xs text-ink-mute">Best price · {storageLabel(variant.storageGb)}</div>
+            <div className="text-xs text-ink-mute">Best price{vLabel ? ` · ${vLabel}` : ""}</div>
             <div className="price text-4xl">${variant.bestPrice.toLocaleString("en-AU")}</div>
             {top && top > variant.bestPrice && (
               <div className="mt-1 text-xs font-semibold text-save">Save ${(top - variant.bestPrice).toLocaleString("en-AU")} vs dearest store</div>
@@ -107,8 +108,9 @@ export function PhoneOffers({
           )}
         </div>
 
+        {phone.variants.length > 1 && (
         <div className="mt-6">
-          <div className="eyebrow mb-2">Storage</div>
+          <div className="eyebrow mb-2">{phone.category === "tablets" ? "Storage & connectivity" : phone.category === "phones" ? "Storage" : "Options"}</div>
           <div className="flex flex-wrap gap-2">
             {phone.variants.map((v) => (
               <button
@@ -120,12 +122,13 @@ export function PhoneOffers({
                 }}
                 className={`rounded-xl border px-4 py-2.5 text-left transition ${v.id === variant.id ? "border-brand bg-brand-soft" : "border-line bg-bg-card hover:border-ink/25"}`}
               >
-                <div className={`text-sm font-semibold ${v.id === variant.id ? "text-brand" : ""}`}>{storageLabel(v.storageGb)}</div>
+                <div className={`text-sm font-semibold ${v.id === variant.id ? "text-brand" : ""}`}>{v.label}</div>
                 <div className="text-xs text-ink-mute">from ${v.bestPrice.toLocaleString("en-AU")}</div>
               </button>
             ))}
           </div>
         </div>
+        )}
 
         {colours.length > 1 && (
           <div className="mt-5">
@@ -141,6 +144,7 @@ export function PhoneOffers({
 
         <div className="mt-8">
           <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+            {planRows.length > 0 ? (
             <div className="inline-flex rounded-xl border border-line bg-bg-sunk p-1" role="tablist">
               {([
                 ["outright", `Buy outright`, rows.length],
@@ -158,6 +162,9 @@ export function PhoneOffers({
                 </button>
               ))}
             </div>
+            ) : (
+              <h2 className="font-display text-xl font-bold">Compare {rows.length} {rows.length === 1 ? "store" : "stores"}</h2>
+            )}
             <span className="text-xs text-ink-mute">{tab === "outright" ? "Cheapest in-stock first" : "Lowest monthly repayment first"}</span>
           </div>
           {tab === "outright" ? (
@@ -247,7 +254,7 @@ export function PhoneOffers({
             <p className="mt-0.5 text-xs text-ink-mute">Sometimes cheaper, but listings mix sellers and warranties, so we link to a search rather than rank them.</p>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
               {MARKETPLACES.map((m) => (
-                <a key={m.id} href={m.url(`${phone.name} ${storageLabel(variant.storageGb)}`)} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+                <a key={m.id} href={m.url(`${phone.name}${variant.storageGb ? ` ${variant.label.split(" ·")[0]}` : ""}`)} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
                   <span>
                     <span className="font-semibold">Search {m.name}</span>
                     <span className="block text-[11px] text-ink-mute">{m.note}</span>
@@ -263,12 +270,12 @@ export function PhoneOffers({
         </div>
 
         <div className="mt-6 flex flex-wrap gap-2">
-          <CompareToggle slug={phone.slug} block />
+          <CompareToggle slug={href} block />
           <button onClick={share} className="btn-ghost"><ShareIcon /> {copied ? "Link copied" : "Share"}</button>
         </div>
 
         <div className="mt-10 scroll-mt-24" id="history">
-          <h2 className="mb-3 font-display text-xl font-bold">Price history · {storageLabel(variant.storageGb)}</h2>
+          <h2 className="mb-3 font-display text-xl font-bold">Price history{vLabel ? ` · ${vLabel}` : ""}</h2>
           <div className="card p-5">{chart[variant.id]}</div>
         </div>
       </div>

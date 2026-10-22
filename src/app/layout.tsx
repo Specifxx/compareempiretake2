@@ -5,6 +5,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
 import { getSearchIndex } from "@/lib/search-index";
+import { activeCategories, getBrands } from "@/lib/catalog";
+import { DEPARTMENTS } from "@/lib/categories";
+import type { NavDepartment } from "@/components/Header";
+import type { CategoryId } from "@/lib/types";
 import { SITE } from "@/lib/site";
 import "./globals.css";
 
@@ -33,13 +37,29 @@ const themeScript = `try{var t=localStorage.getItem('ce-theme');if(t==='dark'||(
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const index = getSearchIndex();
+  const live = activeCategories();
+  const departments: NavDepartment[] = DEPARTMENTS.map((d) => ({
+    name: d.name,
+    categories: live
+      .filter((c) => c.department === d.id)
+      .map((c) => {
+        const brands = getBrands(c.id as CategoryId);
+        return {
+          name: c.name,
+          href: c.href,
+          emoji: c.emoji,
+          count: brands.reduce((n, b) => n + b.count, 0),
+          brands: brands.slice(0, 6).map((b) => ({ name: b.brand, href: `/brands/${b.slug}?cat=${c.id}` })),
+        };
+      }),
+  })).filter((d) => d.categories.length);
   return (
     <html lang="en-AU" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-screen font-sans">
-        <Header index={index} />
+        <Header index={index} departments={departments} />
         <main>{children}</main>
         <Footer />
         <CompareTray />

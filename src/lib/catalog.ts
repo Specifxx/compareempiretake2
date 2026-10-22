@@ -1,30 +1,59 @@
 import "server-only";
-import catalogJson from "../../data/phones/catalog.json";
-import seriesJson from "../../data/phones/series.json";
-import storeSeriesJson from "../../data/phones/store-series.json";
+import { existsSync, readFileSync } from "node:fs";
+import path from "node:path";
+import { CATEGORIES } from "./categories";
 import { storageLabel } from "./normalize";
 import { priceCheck, wasCheck, type PriceCheck, type WasCheck } from "./price-check";
 import { RETAILERS } from "./retailers";
-import type { Catalog, Offer, Phone, RetailerId, StoreSeries, Variant } from "./types";
+import type { Catalog, CategoryId, Offer, Phone, Retailer, RetailerId, StoreSeries, Variant } from "./types";
 
-const catalog = catalogJson as unknown as Catalog;
-const series = seriesJson as unknown as Record<string, Record<string, [string, number][]>>;
+/**
+ * Every live category's data/<id>/*.json, read once at build time. Pages are
+ * prerendered, so nothing here runs per request.
+ */
+type Series = Record<string, Record<string, [string, number][]>>;
+interface Loaded { catalog: Catalog; series: Series; stores: StoreSeries }
+const read = <T,>(file: string, fallback: T): T => (existsSync(file) ? (JSON.parse(readFileSync(file, "utf8")) as T) : fallback);
+const loaded = new Map<CategoryId, Loaded>();
+for (const c of CATEGORIES) {
+  const dir = path.join(process.cwd(), "data", c.id);
+  if (!c.live || !existsSync(path.join(dir, "catalog.json"))) continue;
+  const catalog = read<Catalog>(path.join(dir, "catalog.json"), { category: c.id as CategoryId, updatedAt: "", retailers: [], phones: [] });
+  for (const p of catalog.phones) p.category ??= c.id as CategoryId;
+  loaded.set(c.id as CategoryId, { catalog, series: read(path.join(dir, "series.json"), {}), stores: read(path.join(dir, "store-series.json"), {}) });
+}
+const ALL: Phone[] = [...loaded.values()].flatMap((l) => l.catalog.phones);
+const BY_SLUG = new Map(ALL.map((p) => [`${p.category}/${p.slug}`, p]));
+const UPDATED = [...loaded.values()].map((l) => l.catalog.updatedAt).sort().at(-1) ?? new Date().toISOString();
 
-export const getCatalog = () => catalog;
-export const getPhones = () => catalog.phones;
-export const getPhone = (slug: string) => catalog.phones.find((p) => p.slug === slug);
-export const getSeries = (slug: string) => series[slug] ?? {};
-const storeSeries = storeSeriesJson as unknown as StoreSeries;
-export const getStoreSeries = (slug: string) => storeSeries[slug] ?? {};
+/** Categories that actually have products today. */
+export const activeCategories = () => CATEGORIES.filter((c) => loaded.has(c.id as CategoryId) && loaded.get(c.id as CategoryId)!.catalog.phones.length > 0);
+
+/** Retailers with at least one listing in any category. */
+export function activeRetailers(category?: CategoryId): Retailer[] {
+  const ids = new Set((category ? getProducts(category) : ALL).flatMap((p) => p.variants.flatMap((v) => v.offers.map((o) => o.retailer))));
+  return Object.values(RETAILERS).filter((r) => ids.has(r.id));
+}
+
+/** The combined catalogue (all categories), or one category's. */
+export const getCatalog = (category?: CategoryId): Catalog =>
+  category ? loaded.get(category)?.catalog ?? { category, updatedAt: UPDATED, retailers: [], phones: [] } : { category: "phones", updatedAt: UPDATED, retailers: activeRetailers(), phones: ALL };
+export const getProducts = (category?: CategoryId) => (category ? loaded.get(category)?.catalog.phones ?? [] : ALL);
+export const getProduct = (category: CategoryId, slug: string) => BY_SLUG.get(`${category}/${slug}`);
+export const getPhones = () => getProducts("phones");
+export const getPhone = (slug: string) => getProduct("phones", slug);
+export const getSeries = (p: Phone) => loaded.get(p.category)?.series[p.slug] ?? {};
+export const getStoreSeries = (p: Phone) => loaded.get(p.category)?.stores[p.slug] ?? {};
+export const productHref = (p: { category: CategoryId; slug: string }) => `/${p.category}/${p.slug}`;
 
 /** Today's date in Sydney, from the last import (not the build clock). */
-export const catalogDay = () => new Date(catalog.updatedAt).toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+export const catalogDay = () => new Date(UPDATED).toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
 
 export function checkVariant(p: Phone, v: Variant): { check: PriceCheck; was: Partial<Record<RetailerId, WasCheck>> } {
   const outright = v.offers.filter((o) => o.kind !== "plan");
   const cheapest = (outright.find((o) => o.inStock && o.price === v.bestPrice) ?? outright[0])?.retailer;
-  const stores = getStoreSeries(p.slug)[v.id] ?? {};
-  const check = priceCheck({ price: v.bestPrice, best: getSeries(p.slug)[v.id] ?? [], stores, cheapest, storeName: (r) => RETAILERS[r].name, today: catalogDay() });
+  const stores = getStoreSeries(p)[v.id] ?? {};
+  const check = priceCheck({ price: v.bestPrice, best: getSeries(p)[v.id] ?? [], stores, cheapest, storeName: (r) => RETAILERS[r].name, today: catalogDay() });
   const was: Partial<Record<RetailerId, WasCheck>> = {};
   for (const o of outright) {
     const w = wasCheck(o, stores[o.retailer], RETAILERS[o.retailer].name, catalogDay());
@@ -36,6 +65,12 @@ export function checkVariant(p: Phone, v: Variant): { check: PriceCheck; was: Pa
 /** What the browser needs to list, filter and search phones. */
 export interface PhoneSummary {
   slug: string;
+  category: CategoryId;
+  href: string;
+  /** Card subtitle: "128GB – 512GB", '65" · 4K UHD · OLED', "RTX 5070 Ti · 16GB". */
+  subtitle: string;
+  /** Category specs for filters, e.g. { GPU: "RTX 5070 Ti", "Screen size": '65"' }. */
+  facets: Record<string, string>;
   name: string;
   brand: string;
   model: string;
@@ -45,8 +80,8 @@ export interface PhoneSummary {
   storages: number[];
   retailerCount: number;
   offerCount: number;
-  network: "5G" | "4G";
-  foldable: boolean;
+  network?: "5G" | "4G";
+  foldable?: boolean;
   generation: number;
   /** Biggest saving on any variant vs the dearest retailer or the RRP. */
   saving: number;
@@ -56,8 +91,17 @@ export interface PhoneSummary {
 
 export function summarise(p: Phone): PhoneSummary {
   const deals = p.variants.map(variantDeal);
+  const facets = Object.fromEntries(p.specs.extra ?? []);
+  const subtitle =
+    p.category === "phones" || p.category === "tablets"
+      ? storageRange(p) + (p.category === "tablets" && p.variants.some((v) => v.id.endsWith("cellular")) ? " · Cellular option" : "")
+      : (p.specs.extra ?? []).filter(([k]) => ["Screen size", "Resolution", "Panel", "GPU", "Memory", "Processor", "Storage", "Refresh rate"].includes(k)).slice(0, 3).map(([, v]) => v).join(" · ");
   return {
     slug: p.slug,
+    category: p.category,
+    href: productHref(p),
+    subtitle,
+    facets,
     name: p.name,
     brand: p.brand,
     model: p.model,
@@ -76,7 +120,7 @@ export function summarise(p: Phone): PhoneSummary {
   };
 }
 
-export const getSummaries = () => catalog.phones.map(summarise);
+export const getSummaries = (category?: CategoryId) => getProducts(category).map(summarise);
 
 export interface Deal {
   phone: Phone;
@@ -122,9 +166,9 @@ export function variantDeal(v: Variant): { saving: number; reference: number; ki
   return best;
 }
 
-export function getDeals(limit = 60): Deal[] {
+export function getDeals(limit = 60, category?: CategoryId): Deal[] {
   const out: Deal[] = [];
-  for (const phone of catalog.phones) {
+  for (const phone of getProducts(category)) {
     // A single store's "RRP" on an old phone is not a deal anyone can check.
     if (phone.retailerCount < 2) continue;
     for (const variant of phone.variants) {
@@ -143,7 +187,7 @@ export function getDeals(limit = 60): Deal[] {
   }
   // One deal per phone: its best variant.
   const byPhone = new Map<string, Deal>();
-  for (const d of out.sort((a, b) => score(b) - score(a))) if (!byPhone.has(d.phone.slug)) byPhone.set(d.phone.slug, d);
+  for (const d of out.sort((a, b) => score(b) - score(a))) if (!byPhone.has(productHref(d.phone))) byPhone.set(productHref(d.phone), d);
   return [...byPhone.values()].slice(0, limit);
 }
 
@@ -152,9 +196,10 @@ function score(d: Deal) {
   return d.percent * 2 + Math.sqrt(d.saving) * 3 + (d.kind === "drop" ? 15 : 0) + d.phone.retailerCount * 2;
 }
 
-export function getBrands(): { brand: string; slug: string; count: number; from: number; image?: string }[] {
+export interface BrandInfo { brand: string; slug: string; count: number; from: number; image?: string; categories: CategoryId[] }
+export function getBrands(category?: CategoryId): BrandInfo[] {
   const m = new Map<string, Phone[]>();
-  for (const p of catalog.phones) m.set(p.brand, [...(m.get(p.brand) ?? []), p]);
+  for (const p of getProducts(category)) m.set(p.brand, [...(m.get(p.brand) ?? []), p]);
   return [...m]
     .map(([brand, ps]) => ({
       brand,
@@ -162,13 +207,14 @@ export function getBrands(): { brand: string; slug: string; count: number; from:
       count: ps.length,
       from: Math.min(...ps.map((p) => p.bestPrice)),
       image: ps.find((p) => p.image)?.image,
+      categories: [...new Set(ps.map((p) => p.category))],
     }))
     .sort((a, b) => b.count - a.count);
 }
 
 export function similarPhones(p: Phone, n = 4): Phone[] {
-  return catalog.phones
-    .filter((q) => q.slug !== p.slug)
+  return getProducts(p.category)
+    .filter((q) => q.slug !== p.slug && q.image)
     .map((q) => ({ q, d: Math.abs(Math.log(q.bestPrice / p.bestPrice)) - (q.brand === p.brand ? 0.15 : 0) - q.retailerCount * 0.02 }))
     .sort((a, b) => a.d - b.d)
     .slice(0, n)
@@ -190,7 +236,7 @@ export function storageRange(p: { storages: number[] } | Phone): string {
   return s.length > 1 ? `${storageLabel(s[0])} – ${storageLabel(s[s.length - 1])}` : storageLabel(s[0]);
 }
 
-export const retailerIds = (): RetailerId[] => catalog.retailers.map((r) => r.id);
+export const retailerIds = (): RetailerId[] => activeRetailers().map((r) => r.id);
 
 /**
  * Head-to-head pages worth having: each well-stocked phone against its two
@@ -198,7 +244,8 @@ export const retailerIds = (): RetailerId[] => catalog.retailers.map((r) => r.id
  * ordered alphabetically so each pair has one URL.
  */
 export function getVsPairs(): { slug: string; a: Phone; b: Phone }[] {
-  const pool = catalog.phones.filter((p) => p.retailerCount >= 3 && p.image);
+  // Phones only for now: other categories' head-to-heads need richer specs to say anything useful.
+  const pool = getPhones().filter((p) => p.retailerCount >= 3 && p.image);
   const pairs = new Map<string, { slug: string; a: Phone; b: Phone }>();
   const add = (x: Phone, y: Phone) => {
     const [a, b] = [x, y].sort((m, n) => m.slug.localeCompare(n.slug));

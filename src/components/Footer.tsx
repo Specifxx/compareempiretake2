@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getCatalog } from "@/lib/catalog";
+import { activeCategories, getCatalog } from "@/lib/catalog";
 import { Logo } from "./Logo";
 
 export function Footer() {
@@ -14,12 +14,12 @@ export function Footer() {
             No retailer pays to rank higher — the cheapest price is always first.
           </p>
           <p className="text-xs text-ink-mute">
-            {phones.length} phones tracked · prices last checked{" "}
+            {phones.length.toLocaleString()} products tracked · prices last checked{" "}
             {new Date(updatedAt).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })} AEST
           </p>
         </div>
         <FooterCol title="Shop" links={[["All phones", "/phones"], ["Today's deals", "/deals"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"]]} />
-        <FooterCol title="Popular" links={[["iPhones", "/brands/apple"], ["Samsung Galaxy", "/brands/samsung"], ["Google Pixel", "/brands/google"], ["Under $500", "/phones?max=500"], ["Foldables", "/phones?fold=1"]]} />
+        <FooterCol title="Categories" links={activeCategories().map((c) => [c.name, c.href] as [string, string])} />
         <FooterCol title="Compare Empire" links={[["About & how it works", "/about"], ["Retailers we check", "/about#retailers"], ["Suggest a store", "/about#feedback"]]} />
       </div>
       <div className="border-t border-line">

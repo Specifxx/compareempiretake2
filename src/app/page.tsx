@@ -6,15 +6,19 @@ import { RetailerDot } from "@/components/RetailerChip";
 import { SearchBox } from "@/components/SearchBox";
 import { getGuides } from "@/lib/guides";
 import { getSearchIndex } from "@/lib/search-index";
-import { checkVariant, getBrands, getCatalog, getDeals, getPhones, getSummaries } from "@/lib/catalog";
+import { activeCategories, checkVariant, getCatalog, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
+import type { CategoryId } from "@/lib/types";
 import { storageLabel } from "@/lib/normalize";
 import { PriceCheckCard } from "@/components/PriceCheckCard";
 
 export default function Home() {
   const { retailers, updatedAt, phones } = getCatalog();
-  const summaries = getSummaries();
+  const summaries = getSummaries("phones");
   const deals = getDeals(6);
-  const brands = getBrands().slice(0, 10);
+  const cats = activeCategories().map((c) => {
+    const items = getSummaries(c.id as CategoryId);
+    return { c, count: items.length, from: Math.min(...items.map((p) => p.bestPrice)), image: popularOf(items, 1)[0]?.image, popular: popularOf(items, 4) };
+  });
   const offers = phones.reduce((n, p) => n + p.offerCount, 0);
   const popular = summaries.filter((p) => p.retailerCount >= 3 && p.image).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice).slice(0, 8);
   const budget = summaries.filter((p) => p.bestPrice <= 500 && p.retailerCount >= 2 && p.image && p.inStock).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation).slice(0, 4);
@@ -35,15 +39,15 @@ export default function Home() {
               Prices checked {updated}
             </div>
             <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-              Is that phone sale
+              Is that sale
               <br />
               <span className="bg-gradient-to-r from-brand to-[#B04BFF] bg-clip-text text-transparent">actually real?</span>
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-lg text-ink-soft">
-              We save the price of every phone at {retailers.length} Australian stores, every day. So when a store says &ldquo;was $1,499&rdquo;, you can see if it ever was.
+              We save the price of everything we compare at {retailers.length} Australian stores, every day. So when a store says &ldquo;was $1,499&rdquo;, you can see if it ever was.
             </p>
             <p className="mx-auto mt-2 max-w-xl text-sm text-ink-mute">
-              {phones.length} phones · {offers.toLocaleString()} live prices · cheapest in-stock first · no paid rankings
+              {phones.length.toLocaleString()} products · {offers.toLocaleString()} live prices · cheapest in-stock first · no paid rankings
             </p>
             <div className="mx-auto mt-8 max-w-2xl">
               <SearchBox items={getSearchIndex()} size="lg" />
@@ -59,7 +63,7 @@ export default function Home() {
 
       {example && (
         <section className="container-x -mt-4 mb-10">
-          <Link href={`/phones/${example.phone.slug}?v=${example.variant.id}`} className="mx-auto flex max-w-3xl flex-col items-stretch gap-4 rounded-3xl border border-line bg-bg-card p-4 shadow-card transition hover:shadow-lift sm:flex-row sm:items-center">
+          <Link href={`/${example.phone.category}/${example.phone.slug}?v=${example.variant.id}`} className="mx-auto flex max-w-3xl flex-col items-stretch gap-4 rounded-3xl border border-line bg-bg-card p-4 shadow-card transition hover:shadow-lift sm:flex-row sm:items-center">
             <div className="flex items-center gap-4">
               <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-2xl">
                 {example.phone.image && <img src={example.phone.image} alt="" className="product-img h-full w-full object-contain p-2" />}
@@ -76,14 +80,19 @@ export default function Home() {
       )}
 
       <section className="container-x">
-        <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none">
-          {brands.map((b) => (
-            <Link key={b.slug} href={`/brands/${b.slug}`} className="chip shrink-0">
-              {b.brand} <span className="text-ink-mute">{b.count}</span>
+        <h2 className="mb-4 font-display text-xl font-extrabold tracking-tight">Shop by category</h2>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {cats.map(({ c, count, from, image }) => (
+            <Link key={c.id} href={c.href} className="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift">
+              <div className="img-tile relative aspect-[4/3]">
+                {image && <img src={image} alt="" loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-4 transition group-hover:scale-105" />}
+              </div>
+              <div className="p-3">
+                <div className="font-semibold">{c.emoji} {c.name}</div>
+                <div className="text-xs text-ink-mute">{count.toLocaleString()} products · from ${Math.round(from).toLocaleString("en-AU")}</div>
+              </div>
             </Link>
           ))}
-          <Link href="/phones?fold=1" className="chip shrink-0">Foldables</Link>
-          <Link href="/phones?max=500" className="chip shrink-0">Under $500</Link>
         </div>
       </section>
 
@@ -91,17 +100,26 @@ export default function Home() {
         <section className="container-x mt-12">
           <SectionHead title="Today's best deals" sub="Real savings right now — against what other stores charge, a backed-up RRP, or last week's price." href="/deals" cta="All deals" />
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-            {deals.map((d, i) => <DealCard key={d.phone.slug} d={d} rank={i} />)}
+            {deals.map((d, i) => <DealCard key={`${d.phone.category}/${d.phone.slug}`} d={d} rank={i} />)}
           </div>
         </section>
       )}
 
       <section className="container-x mt-16">
-        <SectionHead title="Most compared" sub="Stocked by the most retailers, so the price gap is real." href="/phones" cta="All phones" />
+        <SectionHead title="Most compared phones" sub="Stocked by the most retailers, so the price gap is real." href="/phones" cta="All phones" />
         <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
-          {popular.map((p, i) => <PhoneCard key={p.slug} p={p} priority={i < 4} />)}
+          {popular.map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} />)}
         </div>
       </section>
+
+      {cats.filter(({ c, popular }) => c.id !== "phones" && popular.length >= 4).map(({ c, popular }) => (
+        <section key={c.id} className="container-x mt-16">
+          <SectionHead title={`Popular ${c.name.toLowerCase().replace("tvs", "TVs")}`} sub={c.blurb} href={c.href} cta={`All ${c.name.toLowerCase().replace("tvs", "TVs")}`} />
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
+            {popular.map((p) => <PhoneCard key={p.href} p={p} />)}
+          </div>
+        </section>
+      ))}
 
       <section className="container-x mt-16">
         <div className="mb-6 max-w-2xl">
@@ -127,7 +145,7 @@ export default function Home() {
         <section className="container-x mt-16">
           <SectionHead title="Great phones under $500" sub="In stock now, compared across stores." href="/phones?max=500" cta="See all under $500" />
           <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
-            {budget.map((p) => <PhoneCard key={p.slug} p={p} />)}
+            {budget.map((p) => <PhoneCard key={p.href} p={p} />)}
           </div>
         </section>
       )}
@@ -190,4 +208,12 @@ function pickExample() {
     })
     .sort((a, b) => rank[a.check.verdict] - rank[b.check.verdict] || b.check.points.length - a.check.points.length);
   return candidates[0];
+}
+
+/** Stocked by the most stores first: that's where the price gap means something. */
+function popularOf(items: PhoneSummary[], n: number) {
+  return items
+    .filter((p) => p.image && p.inStock)
+    .sort((a, b) => b.retailerCount - a.retailerCount || b.offerCount - a.offerCount || b.generation - a.generation)
+    .slice(0, n);
 }

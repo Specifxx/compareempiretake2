@@ -36,7 +36,7 @@ function inline(md: string): string {
       return `$${(v?.bestPrice ?? p.bestPrice).toLocaleString("en-AU")}`;
     }
     if (kind === "stores") return String(p.retailerCount);
-    if (kind === "link") return `[${p.name}](/phones/${p.slug})`;
+    if (kind === "link") return `[${p.name}](/${p.category}/${p.slug})`;
     return p.name;
   });
 }
@@ -80,11 +80,11 @@ function Pick({ p, note }: { p: Phone; note?: string }) {
   const best = v.offers.find((o) => o.inStock && o.price === v.bestPrice) ?? v.offers[0];
   return (
     <div className="card my-6 flex flex-col gap-4 p-4 sm:flex-row sm:items-center">
-      <Link href={`/phones/${p.slug}`} className="img-tile grid h-32 w-full shrink-0 place-items-center overflow-hidden rounded-xl sm:h-28 sm:w-28">
+      <Link href={`/${p.category}/${p.slug}`} className="img-tile grid h-32 w-full shrink-0 place-items-center overflow-hidden rounded-xl sm:h-28 sm:w-28">
         {p.image && <img src={p.image} alt={p.name} loading="lazy" className="product-img h-full object-contain p-2" />}
       </Link>
       <div className="min-w-0 flex-1">
-        <Link href={`/phones/${p.slug}`} className="font-display text-lg font-bold hover:text-brand">{p.name}</Link>
+        <Link href={`/${p.category}/${p.slug}`} className="font-display text-lg font-bold hover:text-brand">{p.name}</Link>
         {note && <p className="mt-1 text-sm text-ink-soft">{note.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")}</p>}
         <div className="mt-2 text-xs text-ink-mute">
           {p.variants.map((x) => storageLabel(x.storageGb)).join(" · ")} · sold by {p.retailerCount} {p.retailerCount === 1 ? "store" : "stores"}
@@ -94,7 +94,7 @@ function Pick({ p, note }: { p: Phone; note?: string }) {
         <div className="text-xs text-ink-mute">today from</div>
         <div className="price text-2xl">${p.bestPrice.toLocaleString("en-AU")}</div>
         <div className="flex items-center gap-1.5 text-xs text-ink-mute"><RetailerDot id={best.retailer} className="h-2 w-2" /> {RETAILERS[best.retailer].name}</div>
-        <Link href={`/phones/${p.slug}`} className="btn-primary ml-auto py-2 text-xs sm:ml-0 sm:mt-1">Compare prices</Link>
+        <Link href={`/${p.category}/${p.slug}`} className="btn-primary ml-auto py-2 text-xs sm:ml-0 sm:mt-1">Compare prices</Link>
       </div>
     </div>
   );
@@ -111,7 +111,7 @@ function StoreTable({ phones }: { phones: Phone[] }) {
           <tr className="border-b border-line text-left">
             <th className="px-4 py-3 font-medium text-ink-mute">Store</th>
             {phones.map((p) => (
-              <th key={p.slug} className="px-4 py-3 font-semibold"><Link href={`/phones/${p.slug}`} className="hover:text-brand">{p.name}</Link></th>
+              <th key={p.slug} className="px-4 py-3 font-semibold"><Link href={`/${p.category}/${p.slug}`} className="hover:text-brand">{p.name}</Link></th>
             ))}
           </tr>
         </thead>

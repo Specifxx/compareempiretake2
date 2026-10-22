@@ -5,6 +5,10 @@ name: Backfill price history from the Internet Archive
 on:
   workflow_dispatch:
     inputs:
+      category:
+        description: "Category (phones, tablets, laptops, monitors, graphics-cards, tvs)"
+        required: false
+        default: "phones"
       retailers:
         description: "Stores to backfill (space separated, blank = all supported)"
         required: false
@@ -27,7 +31,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Backfill
-        run: npx tsx scripts/backfill-archive.ts ${{ inputs.retailers }}
+        run: npx tsx scripts/backfill-archive.ts --cat "${{ inputs.category }}" ${{ inputs.retailers }}
       - name: Rebuild catalogue
         if: always()
         run: npm run build:catalog

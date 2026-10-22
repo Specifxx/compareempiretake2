@@ -40,7 +40,12 @@ const median = (xs: number[]) => {
   return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
 };
 const money = (n: number) => `$${Math.round(n).toLocaleString("en-AU")}`;
-export const shortDate = (d: string) => new Date(d + "T00:00:00").toLocaleDateString("en-AU", { day: "numeric", month: "short" });
+/** "29 Oct", or "29 Oct 2025" when it isn't this year — history now spans years. */
+export const shortDate = (d: string) => {
+  const date = new Date(d + "T00:00:00");
+  const thisYear = new Date().getFullYear();
+  return date.toLocaleDateString("en-AU", { day: "numeric", month: "short", ...(date.getFullYear() !== thisYear ? { year: "numeric" } : {}) });
+};
 
 export function priceCheck(opts: {
   price: number;

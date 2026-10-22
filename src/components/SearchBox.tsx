@@ -6,7 +6,9 @@ import { search } from "@/lib/search";
 import { SearchIcon } from "./icons";
 
 export interface SearchEntry {
-  kind: "phone" | "guide" | "vs";
+  kind: "phone" | "guide" | "vs" | "category";
+  /** Category name for products ("TVs"), shown beside the result. */
+  category?: string;
   href: string;
   name: string;
   sub?: string;
@@ -30,7 +32,11 @@ export function useResults(items: SearchEntry[], q: string) {
     if (/^fold|^flip/i.test(t)) return { phones: phones.filter((i) => /fold|flip|razr|magic v/i.test(i.name)).slice(0, 8), other: [] };
     return {
       phones: search(phones, t, 6),
-      other: [...search(items.filter((i) => i.kind === "vs"), t, 3), ...search(items.filter((i) => i.kind === "guide"), t, 3)],
+      other: [
+        ...search(items.filter((i) => i.kind === "category"), t, 2),
+        ...search(items.filter((i) => i.kind === "vs"), t, 3),
+        ...search(items.filter((i) => i.kind === "guide"), t, 3),
+      ],
     };
   }, [items, q]);
 }
@@ -87,7 +93,7 @@ export function SearchBox({ items, size = "md", autoFocus }: { items: SearchEntr
             if (e.key === "ArrowUp") { e.preventDefault(); setActive((a) => Math.max(a - 1, 0)); }
             if (e.key === "Enter" && (flat[active] || q.trim())) go(flat[active]?.href);
           }}
-          placeholder={lg ? "Search any phone — try “s26u” or “iphone under $1500”" : "Search phones, guides…"}
+          placeholder={lg ? "Search phones, TVs, laptops, graphics cards…" : "Search products…"}
           className={`w-full min-w-0 bg-transparent outline-none placeholder:text-ink-mute ${lg ? "text-lg" : "text-sm"}`}
           aria-label="Search"
           role="combobox"
@@ -115,7 +121,7 @@ export function SearchBox({ items, size = "md", autoFocus }: { items: SearchEntr
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm font-medium"><Highlight text={r.name} q={q} /></span>
-                    <span className="block text-xs text-ink-mute">{r.stores} {r.stores === 1 ? "store" : "stores"} compared</span>
+                    <span className="block text-xs text-ink-mute">{r.category ? `${r.category} · ` : ""}{r.stores} {r.stores === 1 ? "store" : "stores"} compared</span>
                   </span>
                   {r.price !== undefined && (
                     <span className="text-right">
@@ -126,13 +132,13 @@ export function SearchBox({ items, size = "md", autoFocus }: { items: SearchEntr
                 </Link>
               </li>
             ))}
-            {other.length > 0 && <li className="eyebrow px-2.5 pb-1 pt-3">Comparisons & guides</li>}
+            {other.length > 0 && <li className="eyebrow px-2.5 pb-1 pt-3">Categories, comparisons & guides</li>}
             {other.map((r, j) => {
               const i = phones.length + j;
               return (
                 <li key={r.href}>
                   <Link href={r.href} onClick={() => setOpen(false)} onMouseEnter={() => setActive(i)} className={`flex items-center gap-3 rounded-xl px-2.5 py-2 text-sm ${i === active ? "bg-bg-sunk" : ""}`}>
-                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-soft text-xs font-bold text-brand">{r.kind === "vs" ? "VS" : "📖"}</span>
+                    <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-soft text-xs font-bold text-brand">{r.kind === "vs" ? "VS" : r.kind === "category" ? "▦" : "📖"}</span>
                     <span className="min-w-0 flex-1 truncate">{r.name}</span>
                   </Link>
                 </li>

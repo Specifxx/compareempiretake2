@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "scrape": "tsx scripts/scrape.ts",
     "build:catalog": "tsx scripts/build-catalog.ts",
-    "refresh": "tsx scripts/scrape.ts && tsx scripts/build-catalog.ts",
+    "scrape:categories": "tsx scripts/scrape-categories.ts",
+    "refresh": "tsx scripts/scrape.ts && tsx scripts/scrape-categories.ts && tsx scripts/build-catalog.ts",
     "test": "node --import tsx --test tests/*.test.ts"
   },
   "dependencies": {

@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ brand: st
   const brand = getBrands().find((x) => x.slug === slug);
   if (!brand) return {};
   return {
-    title: `${brand.brand} phone prices in Australia`,
-    description: `Compare prices on ${brand.count} ${brand.brand} phones across Australian retailers, from $${brand.from.toLocaleString("en-AU")}.`,
+    title: `${brand.brand} prices in Australia`,
+    description: `Compare prices on ${brand.count} ${brand.brand} products across Australian retailers, from $${brand.from.toLocaleString("en-AU")}.`,
     alternates: { canonical: `/brands/${brand.slug}` },
   };
 }
@@ -28,11 +28,11 @@ export default async function BrandPage({ params }: { params: Promise<{ brand: s
   return (
     <div className="container-x pt-10">
       <div className="eyebrow">Brand</div>
-      <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{brand.brand} phones</h1>
-      <p className="mt-2 text-ink-mute">{phones.length} {brand.brand} phones, from ${brand.from.toLocaleString("en-AU")}.</p>
+      <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{brand.brand}</h1>
+      <p className="mt-2 text-ink-mute">{phones.length} {brand.brand} products across {brand.categories.length} {brand.categories.length === 1 ? "category" : "categories"}, from ${brand.from.toLocaleString("en-AU")}.</p>
       <div className="mt-8">
         <Suspense>
-          <PhoneBrowser phones={phones} fixedBrand={brand.brand} />
+          <PhoneBrowser phones={phones} fixedBrand={brand.brand} category="all" showCategory />
         </Suspense>
       </div>
     </div>

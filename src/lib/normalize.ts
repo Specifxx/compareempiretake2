@@ -61,10 +61,15 @@ const BRANDS: Record<string, string> = {
   cubot: "Cubot",
   unihertz: "Unihertz",
   "hmd global": "HMD",
+  lenovo: "Lenovo",
+  microsoft: "Microsoft",
+  amazon: "Amazon",
 };
 
 const IMPLIED: [RegExp, string][] = [
   [/^iphone\b/i, "Apple"],
+  [/^ipad\b/i, "Apple"],
+  [/^surface\b/i, "Microsoft"],
   [/^galaxy\b/i, "Samsung"],
   [/^pixel\b/i, "Google"],
   [/^(moto|razr)\b/i, "Motorola"],

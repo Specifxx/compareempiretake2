@@ -3,9 +3,9 @@
  * snapshots of the same product pages we scrape today. These are real prices
  * the store showed on the archived date — nothing is estimated.
  *
- *   npx tsx scripts/backfill-archive.ts [retailer ...]
+ *   npx tsx scripts/backfill-archive.ts [--cat tvs] [retailer ...]
  *
- * Writes data/phones/archive/<retailer>.json: { "<product url>": [[date, price], ...] }.
+ * Writes data/<category>/archive/<retailer>.json (category defaults to phones): { "<product url>": [[date, price], ...] }.
  * URLs already in the file are skipped, so reruns pick up where they left off.
  * Runs in GitHub Actions (web.archive.org is reachable there).
  */
@@ -14,7 +14,7 @@ import type { RawOffer, RetailerId } from "../src/lib/types";
 import { pool, sleep } from "./lib/http";
 
 // Stores whose product URL is one storage + colour, so a snapshot's price is that listing's.
-const SUPPORTED: RetailerId[] = ["jbhifi", "harveynorman", "thegoodguys", "mobileciti", "umart", "msy", "costco"];
+const SUPPORTED: RetailerId[] = ["jbhifi", "harveynorman", "thegoodguys", "mobileciti", "umart", "msy", "costco", "betta", "mwave", "centrecom", "ple"];
 const SINCE = "20250101";
 const MAX_SNAPSHOTS = 24;
 const UA = "CompareEmpireBackfill/1.0 (+https://compareempire.com/about)";
@@ -72,15 +72,15 @@ async function snapshots(url: string): Promise<{ ts: string; original: string }[
   }
 }
 
-async function backfill(retailer: RetailerId) {
-  const raw = `data/phones/raw/${retailer}.json`;
+async function backfill(category: string, retailer: RetailerId) {
+  const raw = `data/${category}/raw/${retailer}.json`;
   if (!existsSync(raw)) return;
   const offers = (JSON.parse(readFileSync(raw, "utf8")) as { offers: RawOffer[] }).offers.filter((o) => o.kind !== "plan");
-  mkdirSync("data/phones/archive", { recursive: true });
-  const out = `data/phones/archive/${retailer}.json`;
+  mkdirSync(`data/${category}/archive`, { recursive: true });
+  const out = `data/${category}/archive/${retailer}.json`;
   const done: Record<string, [string, number][]> = existsSync(out) ? JSON.parse(readFileSync(out, "utf8")) : {};
   const todo = offers.filter((o) => !(o.url in done));
-  console.log(`${retailer}: ${todo.length} product pages to check (${Object.keys(done).length} done before)`);
+  console.log(`${category}/${retailer}: ${todo.length} product pages to check (${Object.keys(done).length} done before)`);
   let found = 0;
   let n = 0;
   await pool(todo, 3, async (o) => {
@@ -107,8 +107,11 @@ async function backfill(retailer: RetailerId) {
 }
 
 async function main() {
-  const only = process.argv.slice(2) as RetailerId[];
-  for (const r of SUPPORTED) if (!only.length || only.includes(r)) await backfill(r);
+  const args = process.argv.slice(2);
+  const ci = args.indexOf("--cat");
+  const category = ci >= 0 ? args.splice(ci, 2)[1] : "phones";
+  const only = args as RetailerId[];
+  for (const r of SUPPORTED) if (!only.length || only.includes(r)) await backfill(category, r);
 }
 
 if (process.argv[1]?.endsWith("backfill-archive.ts")) main();

@@ -5,7 +5,9 @@ import { CheckIcon, CompareIcon } from "./icons";
 export function CompareToggle({ slug, block }: { slug: string; block?: boolean }) {
   const list = compare.use();
   const on = list.includes(slug);
-  const full = !on && list.length >= compare.max;
+  const catOf = (x: string) => (x.startsWith("/") ? x.split("/")[1] : "phones");
+  const otherCategory = !on && list.length > 0 && catOf(list[0]) !== catOf(slug);
+  const full = (!on && list.length >= compare.max) || otherCategory;
   return (
     <button
       onClick={(e) => {
@@ -14,7 +16,7 @@ export function CompareToggle({ slug, block }: { slug: string; block?: boolean }
         if (!full) compare.toggle(slug);
       }}
       disabled={full}
-      title={full ? `Compare up to ${compare.max} phones` : undefined}
+      title={otherCategory ? "Your compare list has a different category — clear it first" : full ? `Compare up to ${compare.max} products` : undefined}
       className={
         block
           ? `btn-ghost ${on ? "!border-brand text-brand" : ""}`

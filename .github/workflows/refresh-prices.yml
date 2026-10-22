@@ -15,7 +15,7 @@ concurrency: refresh-prices
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -23,9 +23,13 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Scrape retailers
+      - name: Scrape phones
         run: npm run scrape
-      - name: Build catalogue
+      - name: Scrape tablets, laptops, monitors, graphics cards and TVs
+        # One broken store must not stop the others or the phone update.
+        continue-on-error: true
+        run: npx tsx scripts/scrape-categories.ts
+      - name: Build catalogues
         run: npm run build:catalog
       - name: Commit data
         run: |

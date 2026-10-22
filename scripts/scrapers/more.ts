@@ -199,8 +199,9 @@ async function scrapeUmartLike(retailer: "umart" | "msy", BASE: string): Promise
     for (const tile of html.split('class="goods_name"').slice(1)) {
       const t = tile.slice(0, 5000);
       const link = t.match(/<a href="([^"]+)" title="([^"]+)"/);
-      const price = num(t.match(/itemprop="price" content="([^"]+)"/)?.[1]);
-      if (!link || !price) continue;
+      // Member-deal carousels can carry a masked price ("XX.60") before the real one.
+      const price = num(t.match(/goods_price_section[\s\S]*?itemprop="price" content="([^"]+)"/)?.[1] ?? t.match(/itemprop="price" content="([^"]+)"/)?.[1]);
+      if (!link || !price || price < 20) continue;
       const title = decodeEntities(link[2]).replace(/\s*\([A-Z0-9/-]{5,}\)\s*$/, "");
       if (out.has(link[1]) || !looksLikePhone(title)) continue;
       const before = html.slice(Math.max(0, html.indexOf(tile) - 2500), html.indexOf(tile));

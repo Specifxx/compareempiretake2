@@ -1,22 +1,41 @@
 /**
- * Joins data/phones/raw/*.json into data/phones/catalog.json (one entry per phone model,
- * variants by storage, offers by retailer), records today's best prices in
- * data/phones/history/<date>.json, and writes data/phones/series.json for the price charts.
+ * For each category, joins data/<category>/raw/*.json into data/<category>/catalog.json
+ * (one entry per product, variants by storage/size/connectivity, offers by retailer),
+ * records today's best prices in data/<category>/history/<date>.json, and writes the
+ * price-chart series.
+ *
+ *   npx tsx scripts/build-catalog.ts            # every category with raw data
+ *   npx tsx scripts/build-catalog.ts tvs        # one category
  */
-import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { CATEGORIES } from "../src/lib/categories";
+import { categorySpecs, conflicts, mergeTarget, parseProduct, type Parsed } from "../src/lib/match";
 import { parseTitle, slugify, storageLabel } from "../src/lib/normalize";
 import { RETAILERS } from "../src/lib/retailers";
-import type { Catalog, HistoryDay, StoreSeries, Offer, Phone, RawOffer, RetailerId, Specs, Variant } from "../src/lib/types";
+import type { Catalog, CategoryId, HistoryDay, StoreSeries, Offer, Phone, RawOffer, RetailerId, Specs, Variant } from "../src/lib/types";
 
 /** Shopify CDN images first: clean white backgrounds and resizable. */
-const IMAGE_PREFERENCE: RetailerId[] = ["jbhifi", "thegoodguys", "harveynorman", "mobileciti"];
+const IMAGE_PREFERENCE: RetailerId[] = ["jbhifi", "thegoodguys", "harveynorman", "digidirect", "betta", "mwave", "apple", "samsung", "dell", "costco", "ple", "mobileciti", "umart", "msy"];
+const imageRank = (r: RetailerId) => (IMAGE_PREFERENCE.indexOf(r) + 100) % 100;
 
 interface Group {
   key: string;
   brand: string;
   models: string[];
   raws: RawOffer[];
-  byStorage: Map<number, Offer[]>;
+  byVariant: Map<string, { label: string; storageGb: number; offers: Offer[] }>;
+  code?: string;
+  size?: number;
+  disc?: string[];
+}
+
+/** Phones keep their original parser; every other category uses src/lib/match.ts. */
+function parse(o: RawOffer, category: CategoryId): Parsed | null {
+  if (category !== "phones") return parseProduct(o, category);
+  const p = parseTitle(o.title, { allowNoStorage: o.fromPrice });
+  if (!p) return null;
+  const label = storageLabel(p.storageGb);
+  return { brand: p.brand, model: p.model, key: p.key, colour: p.colour, variant: { id: p.storageGb ? label.toLowerCase() : "", label, storageGb: p.storageGb } };
 }
 
 function median(xs: number[]): number {
@@ -64,7 +83,8 @@ function today(): string {
   return new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
 }
 
-function main() {
+function build(category: CategoryId) {
+  const dir = `data/${category}`;
   const groups = new Map<string, Group>();
   const scrapedAt: string[] = [];
   const baseOnly: { o: RawOffer; key: string; colour: string }[] = [];
@@ -82,25 +102,31 @@ function main() {
     monthly: o.monthly,
     months: o.months,
   });
-  for (const id of Object.keys(RETAILERS) as RetailerId[]) {
-    const f = `data/phones/raw/${id}.json`;
-    if (!existsSync(f)) continue;
-    const { offers, scrapedAt: at } = JSON.parse(readFileSync(f, "utf8")) as { offers: RawOffer[]; scrapedAt: string };
+  for (const f of readdirSync(`${dir}/raw`).filter((x) => x.endsWith(".json"))) {
+    const id = f.replace(/\.json$/, "") as RetailerId;
+    if (!RETAILERS[id]) continue;
+    const { offers, scrapedAt: at } = JSON.parse(readFileSync(`${dir}/raw/${f}`, "utf8")) as { offers: RawOffer[]; scrapedAt: string };
     scrapedAt.push(at);
     for (const o of offers) {
-      const p = parseTitle(o.title, { allowNoStorage: o.fromPrice });
+      const p = parse(o, category);
       if (!p) continue;
-      if (p.storageGb === 0) {
+      if (category === "phones" && p.variant.storageGb === 0) {
         baseOnly.push({ o, key: p.key, colour: p.colour });
         continue;
       }
-      let g = groups.get(p.key);
-      if (!g) groups.set(p.key, (g = { key: p.key, brand: p.brand, models: [], raws: [], byStorage: new Map() }));
+      // A listing that contradicts its group's stated specs starts a sibling group.
+      let key = p.key;
+      if (p.discriminator) {
+        for (let n = 2; groups.has(key) && (groups.get(key)!.disc ?? []).some((d) => conflicts(d, p.discriminator!)); n++) key = `${p.key}~${n}`;
+      }
+      let g = groups.get(key);
+      if (!g) groups.set(key, (g = { key, brand: p.brand, models: [], raws: [], byVariant: new Map(), code: p.code, size: p.size, disc: [] }));
+      if (p.discriminator) g.disc!.push(p.discriminator);
       g.models.push(p.model);
       g.raws.push(o);
-      const list = g.byStorage.get(p.storageGb) ?? [];
-      list.push(toOffer(o, p.colour));
-      g.byStorage.set(p.storageGb, list);
+      const v = g.byVariant.get(p.variant.id) ?? { label: p.variant.label, storageGb: p.variant.storageGb, offers: [] };
+      v.offers.push(toOffer(o, p.colour));
+      g.byVariant.set(p.variant.id, v);
     }
   }
   // A "from" price with no storage is the base model's: pin it to the smallest
@@ -108,21 +134,45 @@ function main() {
   for (const { o, key, colour } of baseOnly) {
     const g = groups.get(key);
     if (!g) continue;
-    const base = Math.min(...g.byStorage.keys());
+    const base = [...g.byVariant.values()].sort((x, y) => x.storageGb - y.storageGb)[0];
     g.raws.push(o);
-    g.byStorage.get(base)!.push(toOffer(o, colour));
+    base.offers.push(toOffer(o, colour));
+  }
+  // TVs: a store that only gives the full part number (QA65QN90FAWXXY)
+  // joins the group with the series code it contains (QN90F), same brand and size.
+  if (category === "tvs") {
+    const all = [...groups.values()];
+    for (const g of all) {
+      if (!g.code || !groups.has(g.key)) continue;
+      const peers = all.filter((x) => x !== g && x.brand === g.brand && x.size === g.size && x.code && groups.has(x.key)).map((x) => ({ key: x.key, code: x.code! }));
+      const target = mergeTarget(g.code, peers);
+      if (!target) continue;
+      const t = groups.get(target)!;
+      t.models.push(...g.models);
+      t.raws.push(...g.raws);
+      for (const [vid, v] of g.byVariant) {
+        const tv = t.byVariant.get(vid);
+        if (tv) tv.offers.push(...v.offers);
+        else t.byVariant.set(vid, v);
+      }
+      groups.delete(g.key);
+    }
   }
 
   // History: today's best price per retailer for every variant.
   const day = today();
   const todayHistory: HistoryDay = {};
   const phones: Phone[] = [];
+  const usedSlugs = new Set<string>();
   for (const g of groups.values()) {
     const model = mostCommon(g.models);
     const name = `${g.brand} ${model}`;
-    const slug = slugify(name);
+    let slug = slugify(name);
+    // Two listings with the same display name but different keys (codes) must not share a URL.
+    while (usedSlugs.has(slug)) slug = `${slugify(name)}-${slugify(g.code ?? String(usedSlugs.size))}`;
+    usedSlugs.add(slug);
     const variants: Variant[] = [];
-    for (const [storageGb, raw] of [...g.byStorage].sort((a, b) => a[0] - b[0])) {
+    for (const [vid, { label, storageGb, offers: raw }] of [...g.byVariant].sort((a, b) => a[1].storageGb - b[1].storageGb || a[0].localeCompare(b[0]))) {
       // Drop listings far below the others: bundles, trade-in prices, mis-tagged refurbs.
       const outright = raw.filter((o) => o.kind !== "plan");
       const plans = raw.filter((o) => o.kind === "plan").sort((a, b) => a.price - b.price);
@@ -133,8 +183,8 @@ function main() {
       const pool = kept.length ? kept : plans;
       const inStock = pool.filter((o) => o.inStock);
       const bestPrice = (inStock.length ? inStock : pool)[0].price;
-      const id = storageLabel(storageGb).toLowerCase();
-      variants.push({ id, storageGb, offers, bestPrice });
+      const id = vid;
+      variants.push({ id, label, storageGb, offers, bestPrice });
       const perRetailer: Partial<Record<RetailerId, number>> = {};
       for (const o of inStock.length ? inStock : pool) perRetailer[o.retailer] = Math.min(perRetailer[o.retailer] ?? Infinity, o.price);
       (todayHistory[slug] ??= {})[id] = perRetailer;
@@ -142,13 +192,14 @@ function main() {
     if (!variants.length) continue;
     const offersAll = variants.flatMap((v) => v.offers);
     const byPref = [...offersAll].filter((o) => o.image).sort(
-      (a, b) => IMAGE_PREFERENCE.indexOf(a.retailer) - IMAGE_PREFERENCE.indexOf(b.retailer),
+      (a, b) => imageRank(a.retailer) - imageRank(b.retailer),
     );
     const images = [...new Set(byPref.map((o) => o.image!))].slice(0, 8);
     const colours = [...new Set(offersAll.map((o) => o.colour).filter(Boolean))].sort();
     const blurb = g.raws.find((r) => r.blurb)?.blurb;
     phones.push({
       slug,
+      category,
       brand: g.brand,
       model,
       name,
@@ -160,16 +211,17 @@ function main() {
       retailerCount: new Set(offersAll.map((o) => o.retailer)).size,
       offerCount: offersAll.length,
       blurb: blurb ? blurb.replace(/\s\d{1,2}\s+(?=[,.;])/g, "").replace(/(?<=[.!])\s\d{1,2}(?=\s[A-Z])/g, "").replace(/\s+([,.])/g, "$1").split(/(?<=\.)\s/).slice(0, 3).join(" ").slice(0, 320) : undefined,
-      specs: extractSpecs(model, [...g.raws.map((r) => r.title), ...(blurb ? [blurb] : [])]),
+      specs: category === "phones" ? extractSpecs(model, [...g.raws.map((r) => r.title), ...(blurb ? [blurb] : [])]) : categorySpecs(category, g.raws.map((r) => r.title)),
       generation: generation(g.brand, model),
       firstSeen: day,
     });
   }
 
-  writeFileSync(`data/phones/history/${day}.json`, JSON.stringify(todayHistory) + "\n");
+  mkdirSync(`${dir}/history`, { recursive: true });
+  writeFileSync(`${dir}/history/${day}.json`, JSON.stringify(todayHistory) + "\n");
 
   // Fold every history day into per-variant series: the best price, and each store's own.
-  const days = readdirSync("data/phones/history").filter((f) => f.endsWith(".json")).sort();
+  const days = readdirSync(`${dir}/history`).filter((f) => f.endsWith(".json")).sort();
   const series: Record<string, Record<string, [string, number][]>> = {};
   const storeSeries: StoreSeries = {};
   const firstSeen: Record<string, string> = {};
@@ -181,7 +233,7 @@ function main() {
   };
   for (const f of days) {
     const date = f.replace(".json", "");
-    const h = JSON.parse(readFileSync(`data/phones/history/${f}`, "utf8")) as HistoryDay;
+    const h = JSON.parse(readFileSync(`${dir}/history/${f}`, "utf8")) as HistoryDay;
     for (const [slug, vs] of Object.entries(h)) {
       firstSeen[slug] ??= date;
       for (const [vid, prices] of Object.entries(vs)) {
@@ -197,9 +249,9 @@ function main() {
   const byUrl = new Map<string, { slug: string; vid: string; r: RetailerId }>();
   for (const p of phones) for (const v of p.variants) for (const o of v.offers) if (o.kind !== "plan") byUrl.set(o.url, { slug: p.slug, vid: v.id, r: o.retailer });
   let archived = 0;
-  if (existsSync("data/phones/archive")) {
-    for (const f of readdirSync("data/phones/archive").filter((x) => x.endsWith(".json"))) {
-      const points = JSON.parse(readFileSync(`data/phones/archive/${f}`, "utf8")) as Record<string, [string, number][]>;
+  if (existsSync(`${dir}/archive`)) {
+    for (const f of readdirSync(`${dir}/archive`).filter((x) => x.endsWith(".json"))) {
+      const points = JSON.parse(readFileSync(`${dir}/archive/${f}`, "utf8")) as Record<string, [string, number][]>;
       for (const [url, pts] of Object.entries(points)) {
         const hit = byUrl.get(url);
         if (!hit) continue;
@@ -226,15 +278,20 @@ function main() {
 
   phones.sort((a, b) => b.retailerCount - a.retailerCount || b.bestPrice - a.bestPrice);
   const catalog: Catalog = {
+    category,
     updatedAt: scrapedAt.sort().at(-1) ?? new Date().toISOString(),
     retailers: Object.values(RETAILERS),
     phones,
   };
-  writeFileSync("data/phones/catalog.json", JSON.stringify(catalog) + "\n");
-  writeFileSync("data/phones/series.json", JSON.stringify(series) + "\n");
-  writeFileSync("data/phones/store-series.json", JSON.stringify(storeSeries) + "\n");
+  writeFileSync(`${dir}/catalog.json`, JSON.stringify(catalog) + "\n");
+  writeFileSync(`${dir}/series.json`, JSON.stringify(series) + "\n");
+  writeFileSync(`${dir}/store-series.json`, JSON.stringify(storeSeries) + "\n");
   const offers = phones.reduce((n, p) => n + p.offerCount, 0);
-  console.log(`catalog: ${phones.length} phones, ${offers} offers, ${days.length} history days, ${archived} archived store prices`);
+  console.log(`${category}: ${phones.length} products, ${offers} offers, ${days.length} history days, ${archived} archived store prices`);
 }
 
-main();
+const asked = process.argv.slice(2) as CategoryId[];
+for (const c of CATEGORIES.map((x) => x.id as CategoryId)) {
+  if (asked.length ? !asked.includes(c) : !existsSync(`data/${c}/raw`)) continue;
+  build(c);
+}

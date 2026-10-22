@@ -82,8 +82,11 @@ export interface Offer {
 }
 
 export interface Variant {
-  /** e.g. "256gb" */
+  /** e.g. "256gb", "256gb-cellular", "std" */
   id: string;
+  /** What shoppers pick between: "256GB", "256GB · Cellular", "Standard". */
+  label: string;
+  /** 0 when storage isn't how this product varies (TVs, monitors, graphics cards). */
   storageGb: number;
   offers: Offer[];
   /** Lowest in-stock price across retailers (falls back to any offer). */
@@ -94,8 +97,10 @@ export interface Variant {
   previousBest?: number;
 }
 
+/** A product in any category. ("Phone" is kept as the historical name.) */
 export interface Phone {
   slug: string;
+  category: CategoryId;
   brand: string;
   /** Model name without the brand, e.g. "iPhone 17 Pro". */
   model: string;
@@ -119,12 +124,16 @@ export interface Specs {
   chip?: string;
   mainCameraMp?: number;
   batteryMah?: number;
-  network: "5G" | "4G";
-  foldable: boolean;
+  network?: "5G" | "4G";
+  foldable?: boolean;
   esimOnly?: boolean;
+  /** Category-specific key specs shown as label/value rows: ["Resolution", "4K"], ["VRAM", "16GB"]. */
+  extra?: [string, string][];
 }
+export type Product = Phone;
 
 export interface Catalog {
+  category: CategoryId;
   updatedAt: string;
   retailers: Retailer[];
   phones: Phone[];

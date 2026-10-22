@@ -12,7 +12,7 @@ export function CompareTray() {
     <div className="fixed inset-x-0 bottom-4 z-40 flex justify-center px-4 animate-fade-up">
       <div className="card flex items-center gap-3 py-2 pl-4 pr-2 shadow-lift">
         <span className="text-sm font-medium">
-          {list.length} {list.length === 1 ? "phone" : "phones"} to compare
+          {list.length} to compare
         </span>
         <button onClick={compare.clear} className="grid h-8 w-8 place-items-center rounded-lg text-ink-mute hover:bg-bg-sunk" aria-label="Clear compare">
           <CloseIcon className="h-4 w-4" />

@@ -19,8 +19,8 @@ export default function AboutPage() {
       <div className="eyebrow">About</div>
       <h1 className="mt-2 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">One price comparison site, done properly.</h1>
       <p className="mt-5 text-lg text-ink-soft">
-        Buying a phone in Australia means opening five tabs, decoding five naming schemes and still wondering if you missed a sale. Compare Empire does that
-        legwork every day and puts the answer on one page. We&apos;re starting with phones and growing from there.
+        Buying anything in Australia means opening five tabs, decoding five naming schemes and still wondering if you missed a sale. Compare Empire does that
+        legwork every day and puts the answer on one page — phones, tablets, laptops, monitors, graphics cards and TVs so far, with more to come.
       </p>
 
       <Section title="Our promises">
@@ -29,7 +29,7 @@ export default function AboutPage() {
             ["The cheapest price is first", "Rankings are by price and stock. No retailer can pay to move up."],
             ["Real prices only", "Every price comes from the retailer's own website, checked daily. If we can't see it, we don't show it."],
             ["Like-for-like", "We match the exact model and storage size, so a 128GB price never hides behind a 512GB one."],
-            ["No dark patterns", "No pop-ups, no sign-up walls, no fake countdowns. Saved phones stay in your browser."],
+            ["No dark patterns", "No pop-ups, no sign-up walls, no fake countdowns. Saved items stay in your browser."],
           ].map(([t, s]) => (
             <li key={t} className="card p-5">
               <div className="font-semibold">{t}</div>
@@ -41,9 +41,9 @@ export default function AboutPage() {
 
       <Section title="How it works" id="how">
         <ol className="space-y-4 text-ink-soft">
-          <li><b className="text-ink">1. We visit every store.</b> Each morning our scrapers read the public phone listings of every retailer below.</li>
-          <li><b className="text-ink">2. We match the phones.</b> “Apple iPhone 17 Pro 256GB (Deep Blue)” at one shop and “iPhone 17 Pro 256GB - Deep Blue” at another are the same phone — we line them up by brand, model and storage.</li>
-          <li><b className="text-ink">3. We drop the noise.</b> Refurbished, carrier-locked and bundle listings are left out so you&apos;re comparing new, unlocked phones.</li>
+          <li><b className="text-ink">1. We visit every store.</b> Each morning our scrapers read the public listings of every retailer below.</li>
+          <li><b className="text-ink">2. We match the products.</b> “Apple iPhone 17 Pro 256GB (Deep Blue)” at one shop and “iPhone 17 Pro 256GB - Deep Blue” at another are the same phone — we line them up by brand, model and storage. TVs match on brand, size and series (65&quot; QN90F); monitors, laptops and graphics cards on model codes. When we&apos;re not sure two listings are the same thing, we keep them apart: showing a product twice beats showing you the wrong one&apos;s price.</li>
+          <li><b className="text-ink">3. We drop the noise.</b> Refurbished, open-box, carrier-locked and accessory listings are left out, so you&apos;re comparing new products.</li>
           <li><b className="text-ink">4. We keep the history.</b> Every day&apos;s best price is stored, so a “sale” that&apos;s really last month&apos;s price shows up for what it is.</li>
         </ol>
       </Section>
@@ -71,7 +71,7 @@ export default function AboutPage() {
 
       <Section title="Help us build it" id="feedback">
         <p className="text-ink-soft">
-          Missing a store? Spotted a wrong price or a phone we&apos;ve mismatched? Want a category after phones? We read everything.
+          Missing a store? Spotted a wrong price or a product we&apos;ve mismatched? Want another category? We read everything.
         </p>
         <a className="btn-primary mt-5" href={`mailto:${CONTACT}?subject=Compare%20Empire%20feedback`}>Email {CONTACT}</a>
       </Section>

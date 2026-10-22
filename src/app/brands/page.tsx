@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getBrands } from "@/lib/catalog";
+import { categoryById } from "@/lib/categories";
 import { MARKETPLACES } from "@/lib/marketplaces";
 
 /** Brands Australians search for that no store we check sells new and local-warranty. */
@@ -15,7 +16,7 @@ const NOT_STOCKED = [
 
 export const metadata: Metadata = {
   title: "Phone brands",
-  description: "Compare phone prices by brand: Apple iPhone, Samsung Galaxy, Google Pixel, OPPO, Motorola and more across Australian retailers.",
+  description: "Compare prices by brand — Apple, Samsung, LG, Sony, ASUS, Dell and more — across phones, TVs, laptops, monitors and graphics cards.",
   alternates: { canonical: "/brands" },
 };
 
@@ -24,7 +25,7 @@ export default function BrandsPage() {
   return (
     <div className="container-x pt-10">
       <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Brands</h1>
-      <p className="mt-2 text-ink-mute">{brands.length} phone brands sold new in Australia.</p>
+      <p className="mt-2 text-ink-mute">{brands.length} brands sold new in Australia.</p>
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         {brands.map((b) => (
           <Link key={b.slug} href={`/brands/${b.slug}`} className="card group flex items-center gap-4 p-4 transition hover:shadow-lift">
@@ -33,14 +34,15 @@ export default function BrandsPage() {
             </div>
             <div className="min-w-0">
               <div className="font-display text-lg font-bold">{b.brand}</div>
-              <div className="text-xs text-ink-mute">{b.count} {b.count === 1 ? "phone" : "phones"} · from ${b.from.toLocaleString("en-AU")}</div>
+              <div className="text-xs text-ink-mute">{b.count} {b.count === 1 ? "product" : "products"} · from ${b.from.toLocaleString("en-AU")}</div>
+              <div className="mt-0.5 line-clamp-1 text-[11px] text-ink-mute/80">{b.categories.map((c) => categoryById(c)?.name).join(" · ")}</div>
             </div>
           </Link>
         ))}
       </div>
 
       <section className="mt-14">
-        <h2 className="font-display text-2xl font-extrabold tracking-tight">Can&apos;t find a brand?</h2>
+        <h2 className="font-display text-2xl font-extrabold tracking-tight">Can&apos;t find a phone brand?</h2>
         <p className="mt-2 max-w-2xl text-sm text-ink-mute">
           These brands aren&apos;t sold new with an Australian warranty by any store we check, so there&apos;s nothing for us to compare yet. You can still find them as grey imports on the marketplaces — check the seller, warranty and 4G/5G bands for Australian networks. If a local store starts stocking one, it shows up here automatically.
         </p>
