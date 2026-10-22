@@ -3,10 +3,13 @@ import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { SearchIcon } from "./icons";
 import { useResults, type SearchEntry } from "./SearchBox";
+import { useSearchIndex } from "@/lib/use-search-index";
 
-const SUGGESTIONS = ["iPhone 17 Pro", "Galaxy S26 Ultra", "Pixel 10a", "under $500", "Foldables"];
+const NONE: SearchEntry[] = [];
+const SUGGESTIONS = ["iPhone 17 Pro", "RTX 5070 Ti", '65" OLED', "AirPods", "PS5", "under $500"];
 
-export function SearchPalette({ open, onClose, items }: { open: boolean; onClose: () => void; items: SearchEntry[] }) {
+export function SearchPalette({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const items = useSearchIndex(open) ?? NONE;
   const [q, setQ] = useState("");
   const [active, setActive] = useState(0);
   const input = useRef<HTMLInputElement>(null);

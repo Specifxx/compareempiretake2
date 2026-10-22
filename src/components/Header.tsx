@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 import { HeartIcon, MenuIcon, MoonIcon, SearchIcon, SunIcon, CloseIcon } from "./icons";
 import { SearchPalette } from "./SearchPalette";
-import { SearchBox, type SearchEntry } from "./SearchBox";
+import { SearchBox } from "./SearchBox";
 import { saved } from "@/lib/store";
 
 const NAV = [
@@ -17,10 +17,10 @@ const NAV = [
 
 export interface NavDepartment {
   name: string;
-  categories: { name: string; href: string; emoji: string; count: number; brands: { name: string; href: string }[] }[];
+  categories: { name: string; href: string; emoji: string; count: number; featured: boolean; brands: { name: string; href: string }[] }[];
 }
 
-export function Header({ index, departments }: { index: SearchEntry[]; departments: NavDepartment[] }) {
+export function Header({ departments }: { departments: NavDepartment[] }) {
   const [open, setOpen] = useState(false);
   const [menu, setMenu] = useState(false);
   const [mega, setMega] = useState(false);
@@ -75,7 +75,7 @@ export function Header({ index, departments }: { index: SearchEntry[]; departmen
             ))}
           </nav>
           <div className="ml-auto hidden max-w-sm flex-1 md:block">
-            <SearchBox items={index} />
+            <SearchBox />
           </div>
           <button onClick={() => setOpen(true)} className="ml-auto flex h-10 flex-1 items-center gap-2 rounded-xl border border-line bg-bg-card px-3 text-sm text-ink-mute shadow-sm md:hidden" aria-label="Search">
             <SearchIcon className="h-4 w-4" /> <span className="truncate">Search products…</span>
@@ -94,7 +94,7 @@ export function Header({ index, departments }: { index: SearchEntry[]; departmen
         {/* Category bar: every live category one click away, like a department store's aisles. */}
         <div className="hidden border-t border-line/60 md:block">
           <nav className="container-x flex h-11 items-center gap-1 overflow-x-auto text-sm scrollbar-none" aria-label="Categories">
-            {flat.map((c) => (
+            {flat.filter((c) => c.featured).map((c) => (
               <Link
                 key={c.href}
                 href={c.href}
@@ -104,6 +104,11 @@ export function Header({ index, departments }: { index: SearchEntry[]; departmen
                 {c.name}
               </Link>
             ))}
+            {flat.some((c) => !c.featured) && (
+              <button onClick={() => setMega((m) => !m)} className="shrink-0 rounded-lg px-3 py-1.5 font-medium text-ink-soft transition hover:bg-bg-sunk hover:text-ink">
+                More ▾
+              </button>
+            )}
             <span className="mx-2 h-5 w-px shrink-0 bg-line" />
             <Link href="/deals" className={`shrink-0 rounded-lg px-3 py-1.5 font-semibold transition ${path.startsWith("/deals") ? "bg-hot/10 text-hot" : "text-hot hover:bg-hot/10"}`}>🔥 Deals</Link>
             {NAV.slice(1).map((n) => (
@@ -114,11 +119,11 @@ export function Header({ index, departments }: { index: SearchEntry[]; departmen
         {mega && (
           <div className="absolute inset-x-0 top-full hidden md:block" onMouseLeave={() => setMega(false)}>
             <div className="container-x">
-              <div className="card mt-2 grid gap-8 p-6 shadow-lift animate-fade-up md:grid-cols-3">
+              <div className="card mt-2 grid max-h-[75vh] gap-x-8 gap-y-6 overflow-y-auto p-6 shadow-lift animate-fade-up md:grid-cols-3 lg:grid-cols-4">
                 {departments.map((d) => (
                   <div key={d.name}>
                     <div className="eyebrow mb-3">{d.name}</div>
-                    <ul className="space-y-4">
+                    <ul className="space-y-3">
                       {d.categories.map((c) => (
                         <li key={c.href}>
                           <Link href={c.href} className="group flex items-center gap-2 font-semibold hover:text-brand">
@@ -127,7 +132,7 @@ export function Header({ index, departments }: { index: SearchEntry[]; departmen
                           </Link>
                           {c.brands.length > 0 && (
                             <div className="mt-1.5 flex flex-wrap gap-x-3 gap-y-1 pl-7 text-xs text-ink-mute">
-                              {c.brands.map((b) => (
+                              {c.brands.slice(0, 4).map((b) => (
                                 <Link key={b.href} href={b.href} className="hover:text-brand">{b.name}</Link>
                               ))}
                             </div>
@@ -162,7 +167,7 @@ export function Header({ index, departments }: { index: SearchEntry[]; departmen
           </nav>
         )}
       </header>
-      <SearchPalette open={open} onClose={() => setOpen(false)} items={index} />
+      <SearchPalette open={open} onClose={() => setOpen(false)} />
     </>
   );
 }

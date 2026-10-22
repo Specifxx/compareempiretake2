@@ -6,7 +6,48 @@ const BASE = "https://www.costco.com.au";
 const JUNK = /refurb|renewed|open[- ]?box|ex[- ]?demo|pre[- ]?owned|b[- ]grade|second[- ]hand/i;
 const SIZE = /\d{2}(?:\.\d)?(?:"|''|-inch| ?inch)/i; // Costco writes "65 Inch"
 
-const CATS: Record<Exclude<CategoryId, "phones" | "graphics-cards">, { paths: string[]; keep: (t: string) => boolean }> = {
+
+// --- Keep-tests for the newer categories (same in every store file) ---
+const ACC = /screen protector|\bcharger\b|charging (cable|dock|stand|hub|station)\b|\bcable\b|\bcover\b|\bskin\b|\bsleeve\b|\bmount\b|\bbracket\b|gift card/i;
+const KEEP = {
+  smartwatches: (t: string) =>
+    /\d{2}(?:\.\d)?\s?mm\b/i.test(t) &&
+    /watch|fenix|f[eē]nix|forerunner|venu|instinct|vivoactive|epix|enduro|approach|descent|tactix|quatix|amazfit|fitbit|suunto|polar|coros/i.test(t) &&
+    !/(?<!charging )\bcase\b(?! with|,)|\bbumper\b|\bband\b(?!.*\b(watch|fenix|forerunner|venu)\b.*\d+\s?mm)|replacement|\bstraps? only|kids/i.test(t) &&
+    !/^(?!.*(apple watch|galaxy watch|pixel watch|garmin|fitbit|amazfit|huawei watch|oppo watch|xiaomi watch)).*\b(band|strap|loop)\b/i.test(t) &&
+    !ACC.test(t),
+  desktops: (t: string) =>
+    !/monitor(?! included)\b|keyboard$|mouse$|\bstand\b|\bdock\b|\bmemory\b|webcam|speaker|headset|\bcase\b(?!.*(pc|desktop))|\bram\b$/i.test(t) && !ACC.test(t),
+  printers: (t: string) =>
+    /printer|\bmfc|all[- ]in[- ]one|multifunction|ecotank|laserjet|officejet|pixma|deskjet|scanner(?!.*only)/i.test(t) &&
+    !/cartridge|toner(?! printer| tank)|\bink (bottle|pack|refill|cartridge)|\bpaper\b|filament|\b3d\b|label|\bdrum\b|ribbon|photo printer paper|\bfilm\b|instax|zink|pocket printer|scanner$|\bscanner\b(?!.*printer)/i.test(t) &&
+    !ACC.test(t),
+  routers: (t: string) =>
+    /router|\bmesh\b|modem|wi-?fi \d (system|pack)|deco|orbi|eero|nighthawk|access point/i.test(t) &&
+    !/extender|repeater|powerline|usb (wi-?fi )?adapter|\badapter\b|antenna|\bswitch\b|range ext|\bcable\b/i.test(t),
+  soundbars: (t: string) =>
+    /sound ?bar|home theatre (system|in a box)/i.test(t) &&
+    !/\bmount\b|bracket|\bcable\b|\bremote\b|\bcover\b|wall ?mount|^(?!.*sound ?bar.*(with|&|\+)).*(rear speakers?|surround speakers?|subwoofer)\b(?!.*sound ?bar)/i.test(t),
+  headphones: (t: string) =>
+    !/ear ?tips|(?<!charging )\bcase\b(?! with)|\bcable\b|adapter|cushions?|ear ?pads|replacement|\bstand\b|ear ?hooks?|\bcharger\b|\bcover\b|\bskin\b|\bstrap\b|\bsleeve\b|amplifier|\bdac\b|transmitter|hearing aid|microphone$/i.test(t),
+  speakers: (t: string) =>
+    !/\bstand\b|\bmount\b|bracket|\bcable\b|\bcover\b|\bcase\b|\bbattery\b|\bremote\b|subwoofer|sound ?bar|wall plate|microphone$|charging (dock|base)|\bbag\b|ceiling|in-wall|turntable|receiver|amplifier/i.test(t),
+  consoles: (t: string) =>
+    /console|playstation ?5|\bps5\b|xbox series|nintendo switch|switch 2|switch oled|steam deck|rog (xbox )?ally|legion go|msi claw|handheld/i.test(t) &&
+    !/controller|dualsense|joy-?con|\bgame\b(?! console)|\bheadset\b|charg|\bcase\b|\bcover\b|\bstand\b|\bskin\b|protector|\bgrip\b|membership|subscription|gift card|\bcable\b|\bcamera\b|\bvr\b|portal|\bremote\b|storage|\bssd\b|expansion|amiibo|\bbag\b|\bpouch\b|\bmount\b|faceplate|cover plate|disc drive|vertical|cooling|\bfan\b|\bkit\b|\bdock\b(?! set)|steering|wheel|arcade/i.test(t),
+  cameras: (t: string) =>
+    !/^(?!.*(camera|\bkit\b|body|gopro|hero ?\d|osmo|insta360|pocket ?\d|eos|lumix|alpha|x100|zv-)).*$/i.test(t) &&
+    !/\blens\b(?!.*(kit|camera|with))|memory card|\bsd card|\bbattery\b(?! grip kit)|\bbag\b|tripod|\bstrap\b|\bmount\b|\bcase\b|charger|\bfilter\b|\bgrip\b(?!.*camera)|housing|microphone|dash ?cam|security|doorbell|webcam|\bflash\b|speedlite|selfie stick|gimbal(?!.*camera)|film\b(?! camera)|printer|kids|toy/i.test(t),
+  drones: (t: string) =>
+    /drone|dji (mini|air|mavic|avata|neo|flip|lito)|fly more|potensic|holy ?stone/i.test(t) &&
+    !/battery|propellers?|charging (hub|station)|\bbag\b|\bcase\b|filters?|guards?|landing|goggles(?!.*combo)|^(?!.*(combo|drone)).*\b(controller|rc)\b|care refresh|\bstrap\b|\bmount\b|\bdisplay\b|\bcable\b|\bcharger\b|motion controller$|remote controller$|\btoy\b(?!.*drone)/i.test(t),
+  "robot-vacuums": (t: string) =>
+    /robot|robotic|roomba|deebot|roborock|dreame|\bmop\b|vacuum/i.test(t) &&
+    !/\bbags?\b|\bfilters?\b|\bbrush(es)?\b(?! ?roll)|mop pads?|\bpads?\b|replacement|accessor(y|ies)|solution|detergent|\bbattery\b|\bkit\b|lawn|mower|window|pool|\bcloth/i.test(t),
+};
+
+type Cat = { paths: string[]; keep: (t: string) => boolean };
+const CATS: Partial<Record<Exclude<CategoryId, "phones">, Cat>> = {
   tvs: {
     paths: ["/Electronics/TVs-Projectors/TVs/c/cos_21.1.2"],
     keep: (t) => /tv\b|television/i.test(t) && SIZE.test(t) && !/bezel|soundbar|projector|mount|bracket|\bstand\b|remote|antenna|cable/i.test(t),
@@ -27,6 +68,50 @@ const CATS: Record<Exclude<CategoryId, "phones" | "graphics-cards">, { paths: st
       /\d+\s?(gb|tb)/i.test(t) &&
       !/^(?!.*tablet).*\bcase\b|cover\b|folio|keyboard|pencil|stylus|protector|kindle|kobo|ereader|charger|sleeve|\bstand\b/i.test(t),
   },
+  "smartwatches": {
+    paths: ["/Electronics/Smart-Watches/c/cos_22.13"],
+    keep: KEEP["smartwatches"],
+  },
+  "desktops": {
+    paths: ["/Computers/PCs-iMac/c/cos_22.2"],
+    keep: KEEP["desktops"],
+  },
+  "printers": {
+    paths: ["/Computers/Printers-Scanners/c/cos_22.6"],
+    keep: KEEP["printers"],
+  },
+  "routers": {
+    paths: ["/Computers/Networking-Routers/c/cos_22.8"],
+    keep: KEEP["routers"],
+  },
+  "soundbars": {
+    paths: ["/Electronics/Audio/Home-Theatre-Soundbars/c/cos_21.5.1"],
+    keep: KEEP["soundbars"],
+  },
+  "headphones": {
+    paths: ["/Electronics/Audio/Headphones/c/cos_21.9.6", "/Electronics/Audio/AirPods/c/cos_21.9.9", "/Electronics/Audio/Samsung-Galaxy-Buds/c/cos_21.9.8"],
+    keep: KEEP["headphones"],
+  },
+  "speakers": {
+    paths: ["/Electronics/Audio/Speakers/c/cos_21.5.2"],
+    keep: KEEP["speakers"],
+  },
+  "consoles": {
+    paths: ["/Computers/Gaming/Gaming-Consoles/c/cos_22.15.1"],
+    keep: KEEP["consoles"],
+  },
+  "cameras": {
+    paths: ["/Electronics/Cameras/c/cos_21.8"],
+    keep: KEEP["cameras"],
+  },
+  "drones": {
+    paths: ["/Electronics/Cameras/c/cos_21.8"],
+    keep: KEEP["drones"],
+  },
+  "robot-vacuums": {
+    paths: ["/Appliances/Vacuums-Floorcare/Robot-Vacuums/c/cos_2.7.3"],
+    keep: KEEP["robot-vacuums"],
+  },
 };
 
 const num = (s?: string) => (s ? Number(s.replace(/,/g, "")) : 0);
@@ -41,8 +126,8 @@ function mpnOf(title: string): string | undefined {
     : undefined;
 }
 
-async function scrapeCategory(cat: keyof typeof CATS): Promise<RawOffer[]> {
-  const { paths, keep } = CATS[cat];
+async function scrapeCategory(cat: Exclude<CategoryId, "phones">): Promise<RawOffer[]> {
+  const { paths, keep } = CATS[cat]!;
   const out = new Map<string, RawOffer>();
   for (const p of paths) {
     for (let page = 0; page < 15; page++) {
@@ -87,9 +172,6 @@ async function scrapeCategory(cat: keyof typeof CATS): Promise<RawOffer[]> {
 }
 
 // Costco AU does not sell graphics cards.
-export const scrapers: Partial<Record<Exclude<CategoryId, "phones">, () => Promise<RawOffer[]>>> = {
-  tvs: () => scrapeCategory("tvs"),
-  monitors: () => scrapeCategory("monitors"),
-  laptops: () => scrapeCategory("laptops"),
-  tablets: () => scrapeCategory("tablets"),
-};
+export const scrapers: Partial<Record<Exclude<CategoryId, "phones">, () => Promise<RawOffer[]>>> = Object.fromEntries(
+  (Object.keys(CATS) as Exclude<CategoryId, "phones">[]).map((c) => [c, () => scrapeCategory(c)]),
+);

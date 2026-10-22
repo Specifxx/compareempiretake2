@@ -1,7 +1,7 @@
 import type { CategoryId, RawOffer, RetailerId } from "../../../src/lib/types";
 import { decodeEntities, get, getJson, pool, sleep } from "../../lib/http";
 
-type Cat = Exclude<CategoryId, "phones">;
+type Cat = Extract<CategoryId, "tvs" | "monitors" | "graphics-cards" | "laptops" | "tablets">;
 
 // ---------- shared filters (also used by mwave / digidirect / betta) ----------
 

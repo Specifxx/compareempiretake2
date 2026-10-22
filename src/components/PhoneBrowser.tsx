@@ -44,6 +44,13 @@ const PRICE_BANDS: Record<string, Band[]> = {
     ["$1,000 – $2,000", 1000, 2000],
     ["$2,000+", 2000, undefined],
   ],
+  small: [
+    ["Under $100", undefined, 100],
+    ["$100 – $250", 100, 250],
+    ["$250 – $500", 250, 500],
+    ["$500 – $1,000", 500, 1000],
+    ["$1,000+", 1000, undefined],
+  ],
   laptops: [
     ["Under $800", undefined, 800],
     ["$800 – $1,500", 800, 1500],
@@ -52,6 +59,8 @@ const PRICE_BANDS: Record<string, Band[]> = {
   ],
 };
 const STORAGE = [128, 256, 512, 1024];
+/** Categories where most products cost under $500, so price bands start lower. */
+const SMALL_TICKET = new Set(["headphones", "speakers", "ssds", "ram", "routers", "printers", "cpus", "motherboards", "smartwatches", "soundbars"]);
 
 /** Spec filters per category: which facet to offer, and how to bucket its values. */
 const FACETS: Record<string, { key: string; label: string; bucket?: (v: string) => string }[]> = {
@@ -76,6 +85,56 @@ const FACETS: Record<string, { key: string; label: string; bucket?: (v: string) 
     { key: "Graphics", label: "Dedicated graphics" },
   ],
   tablets: [{ key: "Chip", label: "Chip" }],
+  cpus: [
+    { key: "Family", label: "Family" },
+    { key: "Socket", label: "Socket" },
+  ],
+  ssds: [
+    { key: "Interface", label: "Interface" },
+    { key: "PCIe", label: "PCIe" },
+  ],
+  ram: [
+    { key: "Type", label: "Type" },
+    { key: "Capacity", label: "Capacity" },
+    { key: "Speed", label: "Speed" },
+  ],
+  motherboards: [
+    { key: "Socket", label: "Socket" },
+    { key: "Chipset", label: "Chipset" },
+    { key: "Form factor", label: "Form factor" },
+    { key: "Wi-Fi", label: "Wi-Fi" },
+  ],
+  headphones: [
+    { key: "Type", label: "Type" },
+    { key: "Noise cancelling", label: "Noise cancelling" },
+  ],
+  smartwatches: [{ key: "Connectivity", label: "Connectivity" }],
+  consoles: [{ key: "Platform", label: "Platform" }],
+  cameras: [
+    { key: "Type", label: "Type" },
+    { key: "Kit", label: "Lens" },
+  ],
+  soundbars: [
+    { key: "Channels", label: "Channels" },
+    { key: "Dolby Atmos", label: "Dolby Atmos" },
+  ],
+  speakers: [{ key: "Type", label: "Type" }],
+  routers: [
+    { key: "Wi-Fi", label: "Wi-Fi standard" },
+    { key: "Mesh", label: "Mesh" },
+  ],
+  printers: [
+    { key: "Type", label: "Type" },
+    { key: "Colour", label: "Colour" },
+  ],
+  "robot-vacuums": [
+    { key: "Mops", label: "Mops" },
+    { key: "Base station", label: "Base station" },
+  ],
+  desktops: [
+    { key: "Memory", label: "Memory" },
+    { key: "Storage", label: "Storage" },
+  ],
 };
 
 function sizeBucket(n: number, steps: number[]): string {
@@ -90,6 +149,8 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
   const router = useRouter();
   const pathname = usePathname();
   const [panel, setPanel] = useState(false);
+  // Big categories have thousands of products: render a page at a time.
+  const [limit, setLimit] = useState(48);
 
   const q = params.get("q") ?? "";
   const brandParam = params.get("brand") ?? "";
@@ -210,7 +271,7 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
       )}
       <Group title="Price">
         <div className="flex flex-wrap gap-2">
-          {(PRICE_BANDS[category] ?? PRICE_BANDS.default).map(([label, lo, hi]) => {
+          {(PRICE_BANDS[category] ?? (SMALL_TICKET.has(category) ? PRICE_BANDS.small : PRICE_BANDS.default)).map(([label, lo, hi]) => {
             const on = min === lo && max === hi;
             return (
               <button key={label} className={`chip text-xs ${on ? "chip-on" : ""}`} onClick={() => set(on ? { min: undefined, max: undefined } : { min: lo?.toString(), max: hi?.toString() })}>
@@ -235,7 +296,7 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
           </div>
         </Group>
       ))}
-      {(isPhone || category === "tablets") && (
+      {(isPhone || category === "tablets" || category === "ssds") && (
       <Group title="Storage">
         <div className="flex flex-wrap gap-2">
           {STORAGE.map((s) => (
@@ -300,9 +361,18 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
           {q && <> matching “<span className="text-ink">{q}</span>”</>}
         </div>
         {results.length ? (
+          <>
           <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
-            {results.map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} showCategory={showCategory} />)}
+            {results.slice(0, limit).map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} showCategory={showCategory} />)}
           </div>
+          {results.length > limit && (
+            <div className="mt-8 text-center">
+              <button className="btn-ghost" onClick={() => setLimit((l) => l + 48)}>
+                Show more <span className="text-ink-mute">({(results.length - limit).toLocaleString()} left)</span>
+              </button>
+            </div>
+          )}
+          </>
         ) : (
           <div className="card grid place-items-center gap-2 px-6 py-16 text-center">
             <div className="font-display text-xl font-bold">Nothing matches</div>

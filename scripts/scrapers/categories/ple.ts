@@ -5,6 +5,7 @@
  */
 import type { CategoryId, RawOffer } from "../../../src/lib/types";
 import { get, sleep } from "../../lib/http";
+import { KEEP } from "./umart";
 
 type Cat = Exclude<CategoryId, "phones">;
 const BASE = "https://www.ple.com.au";
@@ -50,6 +51,17 @@ const CATS: Record<string, { paths: string[]; keep: (t: string) => boolean }> = 
     paths: ["312/notebooks-portable", "409/notebooks-portable/2-in-1-tablets"],
     keep: (t) => TABLET.test(t) && !ACCESSORY.test(t),
   },
+  // Newer categories reuse the Umart/MSY title filters (same PC-specialist naming conventions).
+  cpus: { paths: ["235/cpus"], keep: KEEP.cpus! },
+  ssds: { paths: ["828/hard-drives-ssds/m2-ssd", "355/hard-drives-ssds/25-ssd", "1025/hard-drives-ssds-external/external-portable-ssd"], keep: KEEP.ssds! },
+  ram: { paths: ["728/memory-ram/desktop-memory", "729/memory-ram/notebook-memory"], keep: KEEP.ram! },
+  motherboards: { paths: ["302/motherboards"], keep: KEEP.motherboards! },
+  desktops: { paths: ["411/desktop-computers"], keep: (t) => KEEP.desktops!(t) && !/barebone|developer kit|dev kit|notebook|laptop/i.test(t) },
+  routers: { paths: ["624/networking/routers", "511/networking/adslvdsl-modem-routers", "307/networking/modems", "944/networking/4g5g"], keep: KEEP.routers! },
+  printers: { paths: ["339/printers-consumables"], keep: KEEP.printers! },
+  headphones: { paths: ["930/headphones-microphones/headphones", "568/headphones-microphones/headset", "569/headphones-microphones/earphones"], keep: KEEP.headphones! },
+  speakers: { paths: ["380/speakers"], keep: (t) => KEEP.speakers!(t) && !/soundbar|sound bar/i.test(t) },
+  soundbars: { paths: ["1310/speakers/soundbar"], keep: (t) => /soundbar|sound bar/i.test(t) && !/mount|bracket|cable|remote/i.test(t) },
 };
 
 async function scrape(cat: string): Promise<RawOffer[]> {
@@ -87,9 +99,6 @@ async function scrape(cat: string): Promise<RawOffer[]> {
   return [...out.values()];
 }
 
-export const scrapers: Partial<Record<Cat, () => Promise<RawOffer[]>>> = {
-  "graphics-cards": () => scrape("graphics-cards"),
-  monitors: () => scrape("monitors"),
-  laptops: () => scrape("laptops"),
-  tablets: () => scrape("tablets"),
-};
+export const scrapers: Partial<Record<Cat, () => Promise<RawOffer[]>>> = Object.fromEntries(
+  Object.keys(CATS).map((c) => [c, () => scrape(c)]),
+);

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { search } from "@/lib/search";
+import { useSearchIndex } from "@/lib/use-search-index";
 import { SearchIcon } from "./icons";
 
 export interface SearchEntry {
@@ -16,6 +17,8 @@ export interface SearchEntry {
   price?: number;
   stores?: number;
 }
+
+const EMPTY: SearchEntry[] = [];
 
 /** Live results under the box as you type: phones first, then comparisons and guides. */
 export function useResults(items: SearchEntry[], q: string) {
@@ -41,9 +44,11 @@ export function useResults(items: SearchEntry[], q: string) {
   }, [items, q]);
 }
 
-export function SearchBox({ items, size = "md", autoFocus }: { items: SearchEntry[]; size?: "md" | "lg"; autoFocus?: boolean }) {
+export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; autoFocus?: boolean }) {
   const [q, setQ] = useState("");
   const [open, setOpen] = useState(false);
+  const loaded = useSearchIndex(open);
+  const items = loaded ?? EMPTY;
   const [active, setActive] = useState(0);
   const box = useRef<HTMLDivElement>(null);
   const input = useRef<HTMLInputElement>(null);
@@ -106,7 +111,8 @@ export function SearchBox({ items, size = "md", autoFocus }: { items: SearchEntr
       {open && (
         <div id="search-results" role="listbox" className={`card absolute inset-x-0 z-50 mt-2 overflow-hidden text-left shadow-lift animate-fade-up ${lg ? "" : "min-w-[22rem]"}`}>
           {!q.trim() && <div className="px-4 pb-1 pt-3 eyebrow">Popular right now</div>}
-          {flat.length === 0 && <div className="px-4 py-6 text-center text-sm text-ink-mute">No matches for “{q}”. Try a brand or model number.</div>}
+          {!loaded && <div className="px-4 py-6 text-center text-sm text-ink-mute">Loading…</div>}
+          {loaded && flat.length === 0 && <div className="px-4 py-6 text-center text-sm text-ink-mute">No matches for “{q}”. Try a brand or model number.</div>}
           <ul className="max-h-[60vh] overflow-y-auto p-1.5">
             {phones.map((r, i) => (
               <li key={r.href}>

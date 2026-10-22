@@ -26,7 +26,28 @@ export interface RawOffer {
 }
 
 /** Product categories with their own scrapers and data/<id>/ directory. */
-export type CategoryId = "phones" | "tablets" | "laptops" | "tvs" | "monitors" | "graphics-cards";
+export type CategoryId =
+  | "phones"
+  | "tablets"
+  | "smartwatches"
+  | "laptops"
+  | "desktops"
+  | "monitors"
+  | "printers"
+  | "routers"
+  | "graphics-cards"
+  | "cpus"
+  | "ssds"
+  | "ram"
+  | "motherboards"
+  | "tvs"
+  | "soundbars"
+  | "headphones"
+  | "speakers"
+  | "consoles"
+  | "cameras"
+  | "drones"
+  | "robot-vacuums";
 
 export type RetailerId =
   | "jbhifi"

@@ -4,9 +4,8 @@ import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
-import { getSearchIndex } from "@/lib/search-index";
 import { activeCategories, getBrands } from "@/lib/catalog";
-import { DEPARTMENTS } from "@/lib/categories";
+import { DEPARTMENTS, FEATURED } from "@/lib/categories";
 import type { NavDepartment } from "@/components/Header";
 import type { CategoryId } from "@/lib/types";
 import { SITE } from "@/lib/site";
@@ -36,7 +35,6 @@ export const viewport: Viewport = {
 const themeScript = `try{var t=localStorage.getItem('ce-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const index = getSearchIndex();
   const live = activeCategories();
   const departments: NavDepartment[] = DEPARTMENTS.map((d) => ({
     name: d.name,
@@ -48,6 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           name: c.name,
           href: c.href,
           emoji: c.emoji,
+          featured: FEATURED.includes(c.id),
           count: brands.reduce((n, b) => n + b.count, 0),
           brands: brands.slice(0, 6).map((b) => ({ name: b.brand, href: `/brands/${b.slug}?cat=${c.id}` })),
         };
@@ -59,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-screen font-sans">
-        <Header index={index} departments={departments} />
+        <Header departments={departments} />
         <main>{children}</main>
         <Footer />
         <CompareTray />

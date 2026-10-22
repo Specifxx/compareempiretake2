@@ -8,6 +8,7 @@
  * comparison sites get wrong and lose trust over.
  */
 import { parseTitle, storageLabel } from "./normalize";
+import { isMoreAccessory, MORE_CATEGORIES, moreSpecs, parseMore } from "./match-more";
 import type { CategoryId, RawOffer, Specs } from "./types";
 
 export interface Parsed {
@@ -37,10 +38,22 @@ const BRANDS: Record<string, string> = Object.fromEntries(
     "Palit", "Gainward", "PNY", "Inno3D", "ASRock", "Galax", "Colorful", "Intel", "NVIDIA", "AMD", "OPPO", "OnePlus",
     "Google", "Amazon", "Alcatel", "Nokia", "Infinix", "Framework", "Chuwi", "Gigabyte", "Iiyama", "Eizo", "InnoCN",
     "Viewsonic", "Kensington", "Metz", "Bauhn", "Linsar", "JVC", "Hitachi", "Westinghouse", "Polaroid", "Teac", "Cello",
+    // Audio, wearables, gaming, cameras, PC parts, networking, printers, home
+    "Bose", "JBL", "Sonos", "Beats", "Sennheiser", "Jabra", "Marshall", "Ultimate Ears", "Bang & Olufsen", "Audio-Technica",
+    "Skullcandy", "Nothing", "Garmin", "Fitbit", "Polar", "Suunto", "Coros", "Amazfit", "Nintendo", "Valve", "Canon", "Nikon",
+    "Fujifilm", "OM System", "Olympus", "GoPro", "Insta360", "DJI", "Roborock", "Dreame", "Ecovacs", "iRobot", "Eufy", "Narwal",
+    "Epson", "Brother", "TP-Link", "Netgear", "Linksys", "Eero", "Ubiquiti", "D-Link", "Crucial", "Kingston", "WD",
+    "Western Digital", "Seagate", "SanDisk", "Lexar", "TeamGroup", "Team", "G.Skill", "ADATA", "XPG", "Patriot", "Klevv",
+    "Yamaha", "Denon", "Polk", "Klipsch", "Harman Kardon", "Soundcore", "Anker", "Logitech", "Shokz", "Bowers & Wilkins",
+    "Edifier", "Creative", "SteelSeries", "HyperX", "Turtle Beach", "Fiio", "Moondrop", "Withings", "Oura", "Whoop",
   ].map((b) => [b.toLowerCase(), b]),
 );
 BRANDS.viewsonic = "ViewSonic";
 BRANDS.aorus = "Gigabyte";
+BRANDS["western digital"] = "WD";
+BRANDS.wd_black = "WD";
+BRANDS.team = "TeamGroup";
+BRANDS.olympus = "OM System";
 
 /** Sub-brands that imply the maker. */
 const IMPLIED: [RegExp, string][] = [
@@ -54,6 +67,25 @@ const IMPLIED: [RegExp, string][] = [
   [/\b(xps|inspiron|latitude|vostro)\b/i, "Dell"],
   [/\b(bravia)\b/i, "Sony"],
   [/\b(redmi pad|xiaomi pad)\b/i, "Xiaomi"],
+  [/\b(airpods|homepod|apple watch|mac mini|mac studio)\b/i, "Apple"],
+  [/\b(galaxy (watch|buds|ring))\b/i, "Samsung"],
+  [/\b(pixel (watch|buds))\b/i, "Google"],
+  [/\b(playstation|ps5|dualsense)\b/i, "Sony"],
+  [/\b(xbox)\b/i, "Microsoft"],
+  [/\b(switch 2|nintendo switch)\b/i, "Nintendo"],
+  [/\b(steam deck)\b/i, "Valve"],
+  [/\b(ecotank|workforce)\b/i, "Epson"],
+  [/\b(pixma|eos|powershot)\b/i, "Canon"],
+  [/\b(wd_?black|wd blue|wd red)\b/i, "WD"],
+  [/\b(trident z|ripjaws)\b/i, "G.Skill"],
+  [/\b(vengeance|dominator)\b/i, "Corsair"],
+  [/\b(fury beast|fury renegade)\b/i, "Kingston"],
+  [/\b(ryzen|athlon|threadripper)\b/i, "AMD"],
+  [/\b(core ultra|core i[3579])\b/i, "Intel"],
+  [/\b(roomba)\b/i, "iRobot"],
+  [/\b(deebot)\b/i, "Ecovacs"],
+  [/\b(gopro|hero1\d)\b/i, "GoPro"],
+  [/\b(osmo|mavic|avata)\b/i, "DJI"],
 ];
 
 const ACCESSORY =
@@ -285,6 +317,11 @@ function bag(t: string, brand: string): string[] {
 }
 
 export function parseProduct(o: RawOffer, category: CategoryId): Parsed | null {
+  if (MORE_CATEGORIES.includes(category)) {
+    // These categories legitimately contain words the first set treats as accessories ("Case", "Dock", "Soundbar").
+    if (SECOND_HAND.test(o.title) || isMoreAccessory(category, o.title)) return null;
+    return parseMore(o, category, brandOf);
+  }
   if (!isProduct(o.title)) return null;
   switch (category) {
     case "tablets":
@@ -319,6 +356,7 @@ export function mergeTarget(code: string, candidates: { key: string; code: strin
 
 /** Key specs per category, read from every store's title for the product. */
 export function categorySpecs(category: CategoryId, titles: string[]): Specs {
+  if (MORE_CATEGORIES.includes(category)) return { extra: moreSpecs(category, titles), foldable: false };
   const all = titles.join(" \n ");
   const extra: [string, string][] = [];
   const first = (re: RegExp) => all.match(re)?.[1];

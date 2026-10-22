@@ -5,9 +5,9 @@ import { PhoneCard } from "@/components/PhoneCard";
 import { RetailerDot } from "@/components/RetailerChip";
 import { SearchBox } from "@/components/SearchBox";
 import { getGuides } from "@/lib/guides";
-import { getSearchIndex } from "@/lib/search-index";
 import { activeCategories, checkVariant, getCatalog, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import type { CategoryId } from "@/lib/types";
+import { FEATURED } from "@/lib/categories";
 import { storageLabel } from "@/lib/normalize";
 import { PriceCheckCard } from "@/components/PriceCheckCard";
 
@@ -50,7 +50,7 @@ export default function Home() {
               {phones.length.toLocaleString()} products · {offers.toLocaleString()} live prices · cheapest in-stock first · no paid rankings
             </p>
             <div className="mx-auto mt-8 max-w-2xl">
-              <SearchBox items={getSearchIndex()} size="lg" />
+              <SearchBox size="lg" />
             </div>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-ink-mute">
               {retailers.map((r) => (
@@ -81,10 +81,10 @@ export default function Home() {
 
       <section className="container-x">
         <h2 className="mb-4 font-display text-xl font-extrabold tracking-tight">Shop by category</h2>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
           {cats.map(({ c, count, from, image }) => (
             <Link key={c.id} href={c.href} className="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift">
-              <div className="img-tile relative aspect-[4/3]">
+              <div className="img-tile relative aspect-square">
                 {image && <img src={image} alt="" loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-4 transition group-hover:scale-105" />}
               </div>
               <div className="p-3">
@@ -112,9 +112,9 @@ export default function Home() {
         </div>
       </section>
 
-      {cats.filter(({ c, popular }) => c.id !== "phones" && popular.length >= 4).map(({ c, popular }) => (
+      {cats.filter(({ c, popular }) => c.id !== "phones" && FEATURED.slice(0, 7).includes(c.id) && popular.length >= 4).map(({ c, popular }) => (
         <section key={c.id} className="container-x mt-16">
-          <SectionHead title={`Popular ${c.name.toLowerCase().replace("tvs", "TVs")}`} sub={c.blurb} href={c.href} cta={`All ${c.name.toLowerCase().replace("tvs", "TVs")}`} />
+          <SectionHead title={`Popular ${c.name}`} sub={c.blurb} href={c.href} cta={`All ${c.name}`} />
           <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
             {popular.map((p) => <PhoneCard key={p.href} p={p} />)}
           </div>
