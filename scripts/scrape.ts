@@ -11,7 +11,7 @@ import { scrapeJbHifi } from "./scrapers/jbhifi";
 import { scrapeMobileciti } from "./scrapers/mobileciti";
 import * as more from "./scrapers/more";
 
-const SCRAPERS: Record<RetailerId, () => Promise<RawOffer[]>> = {
+const SCRAPERS: Partial<Record<RetailerId, () => Promise<RawOffer[]>>> = {
   jbhifi: scrapeJbHifi,
   harveynorman: scrapeHarveyNorman,
   thegoodguys: scrapeGoodGuys,

@@ -19,7 +19,14 @@ export interface RawOffer {
   months?: number;
   /** Title has no storage; the price is the store's "from" price for the base model. */
   fromPrice?: boolean;
+  /** Manufacturer part number / model code when the store shows one (e.g. QA65QN90FAWXXY, U2724D). */
+  mpn?: string;
+  /** Brand as the store records it, when separate from the title. */
+  brand?: string;
 }
+
+/** Product categories with their own scrapers and data/<id>/ directory. */
+export type CategoryId = "phones" | "tablets" | "laptops" | "tvs" | "monitors" | "graphics-cards";
 
 export type RetailerId =
   | "jbhifi"
@@ -38,7 +45,17 @@ export type RetailerId =
   | "msy"
   | "digidirect"
   | "betta"
-  | "mwave";
+  | "mwave"
+  | "centrecom"
+  | "ple"
+  | "scorptec"
+  | "pccg"
+  | "computeralliance"
+  | "dell"
+  | "lenovo"
+  | "hp"
+  | "microsoft"
+  | "appliancesonline";
 
 export interface Retailer {
   id: RetailerId;
