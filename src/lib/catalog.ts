@@ -71,8 +71,9 @@ export interface Deal {
 
 /** Best real saving on a variant: a price drop, a retailer's own sale, or the gap to the dearest shop. */
 export function variantDeal(v: Variant): { saving: number; reference: number; kind: Deal["kind"]; offer: Offer } {
-  const live = v.offers.filter((o) => o.inStock);
-  const pool = live.length ? live : v.offers;
+  const outright = v.offers.filter((o) => o.kind !== "plan");
+  const live = outright.filter((o) => o.inStock);
+  const pool = live.length ? live : outright.length ? outright : v.offers;
   const offer = pool[0];
   let best = { saving: 0, reference: offer.price, kind: "spread" as Deal["kind"], offer };
   if (v.previousBest && v.previousBest > offer.price) {
@@ -82,17 +83,20 @@ export function variantDeal(v: Variant): { saving: number; reference: number; ki
   // price elsewhere or that store's own "was" — so one inflated RRP can't headline.
   for (const o of pool) {
     if (!o.wasPrice) continue;
-    const others = v.offers.filter((x) => x.retailer !== o.retailer);
+    const others = outright.filter((x) => x.retailer !== o.retailer);
     if (!others.length) continue;
     const backed = Math.min(o.wasPrice, Math.max(...others.map((x) => Math.max(x.price, x.wasPrice ?? 0))));
     if (backed - o.price > best.saving && o.price <= offer.price * 1.02) {
       best = { saving: backed - o.price, reference: backed, kind: "rrp", offer: o };
     }
   }
-  const retailers = new Set(pool.map((o) => o.retailer));
-  if (retailers.size > 1) {
-    const dearest = Math.max(...pool.map((o) => o.price));
-    if (dearest - offer.price > best.saving) best = { saving: dearest - offer.price, reference: dearest, kind: "spread", offer };
+  // Store gap: against what the other stores typically charge, not the single
+  // dearest one (a stale listing would make every gap look huge).
+  const perStore = new Map<string, number>();
+  for (const o of pool) if (o.retailer !== offer.retailer) perStore.set(o.retailer, Math.min(perStore.get(o.retailer) ?? Infinity, o.price));
+  if (perStore.size >= 2) {
+    const typical = Math.round(median([...perStore.values()]));
+    if (typical - offer.price > best.saving) best = { saving: typical - offer.price, reference: typical, kind: "spread", offer };
   }
   return best;
 }
@@ -112,7 +116,7 @@ export function getDeals(limit = 60): Deal[] {
           ? `Down $${fmt(d.saving)} this week`
           : d.kind === "rrp"
             ? `$${fmt(d.saving)} off RRP`
-            : `$${fmt(d.saving)} less than other stores`;
+            : `$${fmt(d.saving)} below the typical store price`;
       out.push({ phone, variant, offer: d.offer, saving: d.saving, percent, reference: d.reference, kind: d.kind, label });
     }
   }
@@ -148,6 +152,12 @@ export function similarPhones(p: Phone, n = 4): Phone[] {
     .sort((a, b) => a.d - b.d)
     .slice(0, n)
     .map((x) => x.q);
+}
+
+function median(xs: number[]): number {
+  const s = [...xs].sort((a, b) => a - b);
+  const m = s.length >> 1;
+  return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
 }
 
 export function fmt(n: number): string {

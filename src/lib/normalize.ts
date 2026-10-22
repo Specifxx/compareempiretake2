@@ -55,12 +55,19 @@ const IMPLIED: [RegExp, string][] = [
   [/^(moto|razr)\b/i, "Motorola"],
 ];
 
-export function parseTitle(raw: string): ParsedTitle | null {
+/**
+ * With allowNoStorage, a title without a GB/TB figure parses with storageGb 0:
+ * the store's "from" price, which the catalogue pins to the base model.
+ */
+export function parseTitle(raw: string, opts: { allowNoStorage?: boolean } = {}): ParsedTitle | null {
   let t = raw
     .replace(/[  ]/g, " ")
     .replace(/[’‘`]/g, "'")
     .replace(/''|"|”|“/g, '"')
     .replace(/\[[^\]]*\]/g, " ")
+    // Screen sizes and panel types some stores put in the name: 6.7", 6.6in, 6.5-inch, FHD AMOLED.
+    .replace(/(^|\s)\d{1,2}\.\d{1,2}\s?(?:''|"|”|’’|in\b|-?\s?inch(?:es)?\b)/gi, " ")
+    .replace(/\b(?:FHD\+?|HD\+?|AMOLED|OLED|LCD)\b/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 
@@ -70,11 +77,13 @@ export function parseTitle(raw: string): ParsedTitle | null {
     const gb = Number(m[1]) * (m[2].toUpperCase() === "TB" ? 1024 : 1);
     if (gb > storageGb) storageGb = gb;
   }
-  if (storageGb < 8) return null;
+  if (storageGb < 8 && !(opts.allowNoStorage && storageGb === 0)) return null;
+  // "Samsung Google Pixel 10" — a store prefixed the wrong maker.
+  t = t.replace(/^(\w+)\s+(?=(Apple|Samsung|Google|OPPO|Motorola|HONOR|Xiaomi|Nokia|TCL|Nothing)\b)/i, (m, w) => (BRANDS[w.toLowerCase()] ? "" : m));
 
   // Colour: after " - ", else a trailing "(Colour)", else whatever follows the storage.
   let colour = "";
-  const dash = t.match(/\s[-–]\s([^()]+)$/);
+  const dash = t.match(/\s[-–]\s([^()\-–]+)$/);
   if (dash) {
     colour = dash[1];
     t = t.slice(0, dash.index);
@@ -115,7 +124,7 @@ export function parseTitle(raw: string): ParsedTitle | null {
   // Motorola names its range "moto g56" in some shops and "g56" in others.
   if (brand === "Motorola") model = model.replace(/^moto\s+(?=[a-z]\d)/i, "moto ").replace(/^(?=[gebs]\d{2}\b)/i, "moto ");
   if (brand === "HONOR") model = model.replace(/^Magic\s+(\d)/i, "Magic$1").replace(/^(Magic V\d+) Fold$/i, "$1");
-  if (brand === "Samsung" && !/^Galaxy\b/i.test(model)) model = `Galaxy ${model}`;
+  if (brand === "Samsung") model = model.replace(/^(Galaxy\s+)+/i, "").replace(/\bGalaxy\s+/gi, "").replace(/^/, "Galaxy ");
   if (brand === "Google" && !/^Pixel\b/i.test(model)) model = `Pixel ${model}`;
 
   colour = tidyColour(colour);

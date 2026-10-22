@@ -77,7 +77,7 @@ function Block({ kind, arg }: { kind: string; arg: string }) {
 
 function Pick({ p, note }: { p: Phone; note?: string }) {
   const v = p.variants.reduce((a, b) => (a.bestPrice <= b.bestPrice ? a : b));
-  const best = v.offers.find((o) => o.inStock) ?? v.offers[0];
+  const best = v.offers.find((o) => o.inStock && o.price === v.bestPrice) ?? v.offers[0];
   return (
     <div className="card my-6 flex flex-col gap-4 p-4 sm:flex-row sm:items-center">
       <Link href={`/phones/${p.slug}`} className="img-tile grid h-32 w-full shrink-0 place-items-center overflow-hidden rounded-xl sm:h-28 sm:w-28">
@@ -101,9 +101,9 @@ function Pick({ p, note }: { p: Phone; note?: string }) {
 }
 
 function StoreTable({ phones }: { phones: Phone[] }) {
-  const ids = Object.keys(RETAILERS) as RetailerId[];
   const cheapest = (p: Phone, r: RetailerId) =>
-    p.variants.flatMap((v) => v.offers.filter((o) => o.retailer === r).map((o) => ({ price: o.price, gb: v.storageGb }))).sort((a, b) => a.price - b.price)[0];
+    p.variants.flatMap((v) => v.offers.filter((o) => o.retailer === r && o.kind !== "plan").map((o) => ({ price: o.price, gb: v.storageGb }))).sort((a, b) => a.price - b.price)[0];
+  const ids = (Object.keys(RETAILERS) as RetailerId[]).filter((r) => phones.some((p) => cheapest(p, r)));
   return (
     <div className="card my-6 overflow-x-auto">
       <table className="w-full min-w-[520px] text-sm">

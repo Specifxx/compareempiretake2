@@ -65,7 +65,7 @@ export default function Home() {
 
       {deals.length > 0 && (
         <section className="container-x mt-12">
-          <SectionHead title="Today's best deals" sub="Real savings right now — against other stores, the retailer's own RRP, or last week's price." href="/deals" cta="All deals" />
+          <SectionHead title="Today's best deals" sub="Real savings right now — against what other stores charge, a backed-up RRP, or last week's price." href="/deals" cta="All deals" />
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {deals.map((d, i) => <DealCard key={d.phone.slug} d={d} rank={i} />)}
           </div>

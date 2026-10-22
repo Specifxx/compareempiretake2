@@ -13,9 +13,32 @@ export interface RawOffer {
   inStock: boolean;
   /** Short marketing blurb when the retailer gives one (JB Hi-Fi). */
   blurb?: string;
+  /** "plan": the phone is paid off monthly with a carrier plan (price = device total). */
+  kind?: "outright" | "plan";
+  monthly?: number;
+  months?: number;
+  /** Title has no storage; the price is the store's "from" price for the base model. */
+  fromPrice?: boolean;
 }
 
-export type RetailerId = "jbhifi" | "harveynorman" | "thegoodguys" | "mobileciti";
+export type RetailerId =
+  | "jbhifi"
+  | "harveynorman"
+  | "thegoodguys"
+  | "mobileciti"
+  | "apple"
+  | "samsung"
+  | "telstra"
+  | "optus"
+  | "vodafone"
+  | "amaysim"
+  | "telechoice"
+  | "costco"
+  | "umart"
+  | "msy"
+  | "digidirect"
+  | "betta"
+  | "mwave";
 
 export interface Retailer {
   id: RetailerId;
@@ -23,6 +46,7 @@ export interface Retailer {
   site: string;
   /** Brand colour used for the retailer chip. */
   color: string;
+  type: "retailer" | "official" | "carrier";
 }
 
 export interface Offer {
@@ -35,6 +59,9 @@ export interface Offer {
   colour: string;
   inStock: boolean;
   image?: string;
+  kind?: "outright" | "plan";
+  monthly?: number;
+  months?: number;
 }
 
 export interface Variant {

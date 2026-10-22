@@ -1,12 +1,12 @@
 ---
 title: Where to buy the cheapest iPhone in Australia right now
-description: Today's lowest prices on every current iPhone across JB Hi-Fi, Harvey Norman, The Good Guys and Mobileciti — and which model is the best value.
+description: Today's lowest prices on every current iPhone across every major Australian store, Apple included — and which model is the best value.
 date: 2026-10-22
 tags: Apple, Prices
 hero: apple-iphone-17
 ---
 
-Apple sets one price for its own store, but Australian retailers don't have to follow it — and they don't. On the same day the same iPhone can be a couple of hundred dollars apart. Here's where each one is cheapest **today**.
+Apple sets one price for its own store (it is in the tables below), but Australian retailers don't have to follow it — and they don't. On the same day the same iPhone can be a couple of hundred dollars apart. Here's where each one is cheapest **today**.
 
 ## Today's lowest iPhone prices
 

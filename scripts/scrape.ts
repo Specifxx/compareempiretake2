@@ -9,12 +9,26 @@ import { scrapeGoodGuys } from "./scrapers/goodguys";
 import { scrapeHarveyNorman } from "./scrapers/harveynorman";
 import { scrapeJbHifi } from "./scrapers/jbhifi";
 import { scrapeMobileciti } from "./scrapers/mobileciti";
+import * as more from "./scrapers/more";
 
 const SCRAPERS: Record<RetailerId, () => Promise<RawOffer[]>> = {
   jbhifi: scrapeJbHifi,
   harveynorman: scrapeHarveyNorman,
   thegoodguys: scrapeGoodGuys,
   mobileciti: scrapeMobileciti,
+  apple: more.scrapeApple,
+  samsung: more.scrapeSamsung,
+  telstra: more.scrapeTelstra,
+  optus: more.scrapeOptus,
+  vodafone: more.scrapeVodafone,
+  amaysim: more.scrapeAmaysim,
+  telechoice: more.scrapeTeleChoice,
+  costco: more.scrapeCostco,
+  umart: more.scrapeUmart,
+  msy: more.scrapeMsy,
+  digidirect: more.scrapeDigiDirect,
+  betta: more.scrapeBetta,
+  mwave: more.scrapeMwave,
 };
 
 async function main() {
@@ -25,7 +39,7 @@ async function main() {
     const t = Date.now();
     try {
       const offers = await fn();
-      if (offers.length < 10) throw new Error(`only ${offers.length} offers — refusing to overwrite`);
+      if (offers.length < 3) throw new Error(`only ${offers.length} offers — refusing to overwrite`);
       offers.sort((a, b) => a.title.localeCompare(b.title));
       writeFileSync(`data/phones/raw/${id}.json`, JSON.stringify({ scrapedAt: new Date().toISOString(), offers }, null, 1) + "\n");
       console.log(`${id}: ${offers.length} offers in ${((Date.now() - t) / 1000).toFixed(0)}s`);
@@ -34,7 +48,7 @@ async function main() {
       console.error(`${id}: FAILED — ${(e as Error).message}`);
     }
   }
-  if (failed === Object.keys(SCRAPERS).length) process.exit(1);
+  if (failed && failed >= Object.keys(SCRAPERS).length / 2) process.exit(1);
 }
 
 main();

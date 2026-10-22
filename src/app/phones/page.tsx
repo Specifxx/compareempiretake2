@@ -5,7 +5,7 @@ import { getCatalog, getSummaries } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "All mobile phones — compare prices in Australia",
-  description: "Browse and filter every new phone sold by JB Hi-Fi, Harvey Norman, The Good Guys and Mobileciti. Sort by price, saving or brand.",
+  description: "Browse and filter every new phone sold by JB Hi-Fi, Harvey Norman, The Good Guys, Apple, Samsung, Telstra, Optus and more. Sort by price, saving or brand.",
   alternates: { canonical: "/phones" },
 };
 

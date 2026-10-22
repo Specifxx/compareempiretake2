@@ -4,9 +4,13 @@ Price comparison for Australia, starting with mobile phones. Live at compareempi
 
 ## How it works
 
-1. `npm run scrape` — reads the public phone listings of JB Hi-Fi, Harvey Norman,
-   The Good Guys and Mobileciti (`scripts/scrapers/`) into `data/phones/raw/<retailer>.json`.
-   A retailer that fails keeps yesterday's file.
+1. `npm run scrape` — reads the public phone listings of 17 stores (`scripts/scrapers/`)
+   into `data/phones/raw/<retailer>.json`: JB Hi-Fi, Harvey Norman, The Good Guys,
+   Mobileciti, Apple, Samsung, Telstra, Optus, Vodafone, amaysim, TeleChoice, Costco,
+   Umart, MSY, digiDirect, Betta and Mwave. A store that fails keeps yesterday's file.
+   Carrier listings are `kind: "plan"` (device repayments) and never mix into the
+   outright ranking. `docs/stores/survey.md` lists the 80+ stores checked and why the
+   others (Amazon, eBay, Kogan, Big W, Officeworks…) aren't scraped.
 2. `npm run build:catalog` — matches listings to phones by brand + model + storage
    (`src/lib/normalize.ts`), drops refurbished/carrier-locked/outlier listings, writes
    `data/catalog.json`, today's snapshot to `data/phones/history/<date>.json` and the chart

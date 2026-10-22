@@ -48,3 +48,20 @@ test("terabytes and 4G LTE", () => {
 test("RAM/storage pairs are not part of the model", () => {
   assert.equal(parseTitle("Nokia C02 2/32GB Charcoal")!.model, "C02");
 });
+
+test("titles without storage parse only when allowed", () => {
+  assert.equal(parseTitle("Samsung Galaxy S26 Plus"), null);
+  const p = parseTitle("Samsung Galaxy S26 Plus", { allowNoStorage: true })!;
+  assert.equal(p.key, "samsunggalaxys26plus");
+  assert.equal(p.storageGb, 0);
+  assert.equal(parseTitle("Samsung Google Pixel 10 Pro XL", { allowNoStorage: true })!.key, "googlepixel10proxl");
+  assert.equal(parseTitle("Apple iPhone 17 Pro", { allowNoStorage: true })!.model, "iPhone 17 Pro");
+});
+
+test("screen sizes in names don't split a phone", () => {
+  const k = parseTitle("Samsung Galaxy S26 Ultra 256GB Black")!.key;
+  assert.equal(parseTitle('Samsung Galaxy 6.9" Galaxy S26 Ultra 256GB Black')!.key, k);
+  assert.equal(parseTitle("Samsung Galaxy S25 Ultra 6.9in 256GB")!.key, parseTitle("Samsung Galaxy S25 Ultra 256GB")!.key);
+  assert.equal(parseTitle('OPPO 6.32" Reno16 Pro 512GB')!.key, "opporeno16pro");
+  assert.equal(parseTitle("Samsung Galaxy A16 6.7in FHD AMOLED 128GB")!.model, "Galaxy A16");
+});

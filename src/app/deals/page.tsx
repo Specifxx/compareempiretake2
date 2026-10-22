@@ -26,7 +26,7 @@ export default function DealsPage() {
       <div className="mt-6 flex flex-wrap gap-3 text-xs text-ink-soft">
         <Legend color="bg-hot" label="Price drop — cheaper than our check a week ago" />
         <Legend color="bg-save" label="Off RRP — the retailer's own sale price" />
-        <Legend color="bg-brand" label="Store gap — vs the dearest store selling it" />
+        <Legend color="bg-brand" label="Store gap — vs what other stores typically charge" />
       </div>
       {drops.length > 0 && (
         <section className="mt-10">

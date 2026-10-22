@@ -23,9 +23,9 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
   const shown = colour && colours.includes(colour) ? variant.offers.filter((o) => o.colour === colour) : variant.offers;
 
   // One row per retailer: its cheapest listing, with the colours it has at that price.
-  const rows = useMemo(() => {
+  const group = (list: Offer[]) => {
     const m = new Map<RetailerId, { best: Offer; colours: Set<string>; all: Offer[] }>();
-    for (const o of shown) {
+    for (const o of list) {
       const r = m.get(o.retailer);
       if (!r) m.set(o.retailer, { best: o, colours: new Set([o.colour]), all: [o] });
       else {
@@ -36,7 +36,11 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
       }
     }
     return [...m.values()].sort((a, b) => Number(b.best.inStock) - Number(a.best.inStock) || a.best.price - b.best.price);
-  }, [shown]);
+  };
+  const rows = useMemo(() => group(shown.filter((o) => o.kind !== "plan")), [shown]);
+  const planRows = useMemo(() => group(shown.filter((o) => o.kind === "plan")), [shown]);
+  const [tabPick, setTab] = useState<"outright" | "plan" | null>(null);
+  const tab = tabPick ?? (rows.length ? "outright" : "plan");
 
   const [img, setImg] = useState(0);
   const images = useMemo(() => {
@@ -128,10 +132,27 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
         )}
 
         <div className="mt-8">
-          <div className="mb-3 flex items-center justify-between">
-            <h2 className="font-display text-xl font-bold">Compare {rows.length} {rows.length === 1 ? "store" : "stores"}</h2>
-            <span className="text-xs text-ink-mute">Cheapest in-stock first</span>
+          <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+            <div className="inline-flex rounded-xl border border-line bg-bg-sunk p-1" role="tablist">
+              {([
+                ["outright", `Buy outright`, rows.length],
+                ["plan", `On a plan`, planRows.length],
+              ] as const).map(([id, label, n]) => (
+                <button
+                  key={id}
+                  role="tab"
+                  aria-selected={tab === id}
+                  disabled={!n}
+                  onClick={() => setTab(id)}
+                  className={`rounded-lg px-3.5 py-2 text-sm font-semibold transition disabled:opacity-40 ${tab === id ? "bg-bg-card text-ink shadow-sm" : "text-ink-mute hover:text-ink"}`}
+                >
+                  {label} <span className="font-normal text-ink-mute">{n}</span>
+                </button>
+              ))}
+            </div>
+            <span className="text-xs text-ink-mute">{tab === "outright" ? "Cheapest in-stock first" : "Lowest monthly repayment first"}</span>
           </div>
+          {tab === "outright" ? (
           <ol className="space-y-2.5">
             {rows.map(({ best: o, colours: cs }, i) => (
               <li key={o.retailer}>
@@ -144,6 +165,7 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
+                      {RETAILERS[o.retailer].type === "official" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Official store</span>}
                       {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Cheapest</span>}
                     </div>
                     <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-mute">
@@ -166,6 +188,34 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
               </li>
             ))}
           </ol>
+          ) : (
+          <>
+          <ol className="space-y-2.5">
+            {[...planRows].sort((a, b) => (a.best.monthly ?? 0) - (b.best.monthly ?? 0)).map(({ best: o }) => (
+              <li key={o.retailer}>
+                <a href={o.url} target="_blank" rel="noopener nofollow" className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
+                  <div className="min-w-0 flex-1">
+                    <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
+                    <div className="mt-1 text-xs text-ink-mute">
+                      Phone repayments over {o.months ?? 36} months · ${o.price.toLocaleString("en-AU")} total for the phone
+                      {best && o.price > best.price && <span className="text-hot"> (+${Math.round(o.price - best.price).toLocaleString("en-AU")} vs cheapest outright)</span>}
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="price text-xl sm:text-2xl">${(o.monthly ?? 0).toFixed(2)}<span className="text-sm font-medium text-ink-mute">/mth</span></div>
+                    <div className="text-[11px] text-ink-mute">+ plan</div>
+                  </div>
+                  <ExternalIcon className="h-4 w-4 text-ink-mute" />
+                </a>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-3 text-xs text-ink-mute">
+            Repayments are for the phone only; you also pay for a mobile plan from that carrier. Leaving early usually means paying off the rest of the phone.
+            {rows.length > 0 && best && <> Buying outright from {RETAILERS[best.retailer].name} at ${best.price.toLocaleString("en-AU")} and adding any SIM-only plan is often cheaper.</>}
+          </p>
+          </>
+          )}
           <div className="mt-4 rounded-2xl border border-dashed border-line p-4">
             <div className="text-sm font-semibold">Also check the marketplaces</div>
             <p className="mt-0.5 text-xs text-ink-mute">Sometimes cheaper, but listings mix sellers and warranties, so we link to a search rather than rank them.</p>

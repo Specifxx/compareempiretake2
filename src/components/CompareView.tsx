@@ -34,7 +34,8 @@ export function CompareView({ phones }: { phones: Phone[] }) {
   };
 
   const options = useMemo(() => (q ? search(phones, q, 6) : []).filter((p) => !slugs.includes(p.slug)), [q, phones, slugs]);
-  const retailers = Object.keys(RETAILERS) as RetailerId[];
+  const sells = (p: Phone, r: RetailerId) => p.variants.some((v) => v.offers.some((o) => o.retailer === r && o.kind !== "plan"));
+  const retailers = (Object.keys(RETAILERS) as RetailerId[]).filter((r) => chosen.some((p) => sells(p, r)));
   const cheapest = chosen.length > 1 ? Math.min(...chosen.map((p) => p.bestPrice)) : undefined;
 
   const rows: [string, (p: Phone) => React.ReactNode][] = [
@@ -52,7 +53,7 @@ export function CompareView({ phones }: { phones: Phone[] }) {
         [
           RETAILERS[r].name,
           (p: Phone) => {
-            const o = p.variants.flatMap((v) => v.offers.filter((x) => x.retailer === r).map((x) => ({ ...x, gb: v.storageGb }))).sort((a, b) => a.price - b.price)[0];
+            const o = p.variants.flatMap((v) => v.offers.filter((x) => x.retailer === r && x.kind !== "plan").map((x) => ({ ...x, gb: v.storageGb }))).sort((a, b) => a.price - b.price)[0];
             return o ? (
               <a href={o.url} target="_blank" rel="noopener nofollow" className="hover:text-brand">
                 <span className="font-semibold">${o.price.toLocaleString("en-AU")}</span> <span className="text-xs text-ink-mute">{storageLabel(o.gb)}</span>

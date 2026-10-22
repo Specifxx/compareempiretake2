@@ -67,32 +67,50 @@ function today(): string {
 function main() {
   const groups = new Map<string, Group>();
   const scrapedAt: string[] = [];
+  const baseOnly: { o: RawOffer; key: string; colour: string }[] = [];
+  const toOffer = (o: RawOffer, colour: string): Offer => ({
+    retailer: o.retailer,
+    sku: o.sku,
+    title: o.title,
+    url: o.url,
+    price: o.price,
+    wasPrice: o.wasPrice,
+    colour,
+    inStock: o.inStock,
+    image: o.image,
+    kind: o.kind ?? "outright",
+    monthly: o.monthly,
+    months: o.months,
+  });
   for (const id of Object.keys(RETAILERS) as RetailerId[]) {
     const f = `data/phones/raw/${id}.json`;
     if (!existsSync(f)) continue;
     const { offers, scrapedAt: at } = JSON.parse(readFileSync(f, "utf8")) as { offers: RawOffer[]; scrapedAt: string };
     scrapedAt.push(at);
     for (const o of offers) {
-      const p = parseTitle(o.title);
+      const p = parseTitle(o.title, { allowNoStorage: o.fromPrice });
       if (!p) continue;
+      if (p.storageGb === 0) {
+        baseOnly.push({ o, key: p.key, colour: p.colour });
+        continue;
+      }
       let g = groups.get(p.key);
       if (!g) groups.set(p.key, (g = { key: p.key, brand: p.brand, models: [], raws: [], byStorage: new Map() }));
       g.models.push(p.model);
       g.raws.push(o);
       const list = g.byStorage.get(p.storageGb) ?? [];
-      list.push({
-        retailer: o.retailer,
-        sku: o.sku,
-        title: o.title,
-        url: o.url,
-        price: o.price,
-        wasPrice: o.wasPrice,
-        colour: p.colour,
-        inStock: o.inStock,
-        image: o.image,
-      });
+      list.push(toOffer(o, p.colour));
       g.byStorage.set(p.storageGb, list);
     }
+  }
+  // A "from" price with no storage is the base model's: pin it to the smallest
+  // storage other stores sell. A model nobody else lists is skipped.
+  for (const { o, key, colour } of baseOnly) {
+    const g = groups.get(key);
+    if (!g) continue;
+    const base = Math.min(...g.byStorage.keys());
+    g.raws.push(o);
+    g.byStorage.get(base)!.push(toOffer(o, colour));
   }
 
   // History: today's best price per retailer for every variant.
@@ -106,15 +124,19 @@ function main() {
     const variants: Variant[] = [];
     for (const [storageGb, raw] of [...g.byStorage].sort((a, b) => a[0] - b[0])) {
       // Drop listings far below the others: bundles, trade-in prices, mis-tagged refurbs.
-      const med = median(raw.map((o) => o.price));
-      const offers = (raw.length >= 3 ? raw.filter((o) => o.price >= med * 0.55) : raw).sort((a, b) => a.price - b.price);
+      const outright = raw.filter((o) => o.kind !== "plan");
+      const plans = raw.filter((o) => o.kind === "plan").sort((a, b) => a.price - b.price);
+      const med = outright.length ? median(outright.map((o) => o.price)) : 0;
+      const kept = (outright.length >= 3 ? outright.filter((o) => o.price >= med * 0.55) : outright).sort((a, b) => a.price - b.price);
+      const offers = [...kept, ...plans];
       if (!offers.length) continue;
-      const inStock = offers.filter((o) => o.inStock);
-      const bestPrice = (inStock.length ? inStock : offers)[0].price;
+      const pool = kept.length ? kept : plans;
+      const inStock = pool.filter((o) => o.inStock);
+      const bestPrice = (inStock.length ? inStock : pool)[0].price;
       const id = storageLabel(storageGb).toLowerCase();
       variants.push({ id, storageGb, offers, bestPrice });
       const perRetailer: Partial<Record<RetailerId, number>> = {};
-      for (const o of inStock.length ? inStock : offers) perRetailer[o.retailer] = Math.min(perRetailer[o.retailer] ?? Infinity, o.price);
+      for (const o of inStock.length ? inStock : pool) perRetailer[o.retailer] = Math.min(perRetailer[o.retailer] ?? Infinity, o.price);
       (todayHistory[slug] ??= {})[id] = perRetailer;
     }
     if (!variants.length) continue;
