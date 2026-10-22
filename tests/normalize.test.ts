@@ -65,3 +65,9 @@ test("screen sizes in names don't split a phone", () => {
   assert.equal(parseTitle('OPPO 6.32" Reno16 Pro 512GB')!.key, "opporeno16pro");
   assert.equal(parseTitle("Samsung Galaxy A16 6.7in FHD AMOLED 128GB")!.model, "Galaxy A16");
 });
+
+test("less common brands parse", () => {
+  assert.equal(parseTitle("Ruio Titan 128GB Smart Phone - Black")!.brand, "RUIO");
+  assert.equal(parseTitle("HUAWEI Pura 80 Pro 512GB - Black")!.brand, "Huawei");
+  assert.equal(parseTitle("Meizu 22 256GB Grey")!.brand, "Meizu");
+});

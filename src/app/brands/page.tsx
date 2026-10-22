@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getBrands } from "@/lib/catalog";
+import { MARKETPLACES } from "@/lib/marketplaces";
+
+/** Brands Australians search for that no store we check sells new and local-warranty. */
+const NOT_STOCKED = [
+  ["Huawei", "Huawei stopped selling phones through Australian retailers; its phones also lack Google apps."],
+  ["OnePlus", "No official Australian distribution; sold as grey imports."],
+  ["vivo", "Left the Australian market; grey imports only."],
+  ["Meizu", "Never officially sold in Australia."],
+  ["Sony Xperia", "Sony stopped selling Xperia phones in Australia."],
+  ["ASUS ROG / Zenfone", "Occasional grey imports only."],
+] as const;
 
 export const metadata: Metadata = {
   title: "Phone brands",
@@ -27,6 +38,26 @@ export default function BrandsPage() {
           </Link>
         ))}
       </div>
+
+      <section className="mt-14">
+        <h2 className="font-display text-2xl font-extrabold tracking-tight">Can&apos;t find a brand?</h2>
+        <p className="mt-2 max-w-2xl text-sm text-ink-mute">
+          These brands aren&apos;t sold new with an Australian warranty by any store we check, so there&apos;s nothing for us to compare yet. You can still find them as grey imports on the marketplaces — check the seller, warranty and 4G/5G bands for Australian networks. If a local store starts stocking one, it shows up here automatically.
+        </p>
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {NOT_STOCKED.map(([brand, why]) => (
+            <div key={brand} className="card p-4">
+              <div className="font-semibold">{brand}</div>
+              <p className="mt-1 text-xs text-ink-mute">{why}</p>
+              <div className="mt-3 flex gap-2">
+                {MARKETPLACES.map((m) => (
+                  <a key={m.id} href={m.url(`${brand} phone`)} target="_blank" rel="noopener nofollow sponsored" className="chip text-xs">Search {m.name}</a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

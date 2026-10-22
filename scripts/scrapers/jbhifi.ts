@@ -4,7 +4,7 @@ import { looksLikePhone } from "./filter";
 
 const BASE = "https://www.jbhifi.com.au";
 const HANDLE =
-  /\/products\/(apple-iphone|samsung-galaxy-(s|z|a)\d|google-pixel-\d|oppo-|motorola-|nothing-phone|cmf-phone|honor-|xiaomi-|redmi-|poco-|vivo-|tcl-|nokia-|hmd-|asus-|sony-xperia|realme-|zte-|alcatel-|fairphone)/i;
+  /\/products\/(apple-iphone|samsung-galaxy-(s|z|a)\d|google-pixel-\d|oppo-|motorola-|nothing-phone|cmf-phone|honor-|xiaomi-|redmi-|poco-|vivo-|tcl-|nokia-|hmd-|asus-|sony-xperia|realme-|zte-|alcatel-|fairphone|nubia-|huawei-(pura|mate|nova|p\d)|meizu-|oneplus-|vivo-|blackview-|cat-s\d|ulefone-|doogee-|infinix-|tecno-|ruio-)/i;
 
 interface ShopifyProduct {
   title: string;

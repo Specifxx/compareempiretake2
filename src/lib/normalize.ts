@@ -46,6 +46,21 @@ const BRANDS: Record<string, string> = {
   aspera: "Aspera",
   uniden: "Uniden",
   blackview: "Blackview",
+  huawei: "Huawei",
+  meizu: "Meizu",
+  infinix: "Infinix",
+  tecno: "TECNO",
+  ulefone: "Ulefone",
+  doogee: "Doogee",
+  oukitel: "Oukitel",
+  cat: "CAT",
+  kyocera: "Kyocera",
+  iqoo: "iQOO",
+  ruio: "RUIO",
+  iqu: "IQU",
+  cubot: "Cubot",
+  unihertz: "Unihertz",
+  "hmd global": "HMD",
 };
 
 const IMPLIED: [RegExp, string][] = [
