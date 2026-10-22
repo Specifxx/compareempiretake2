@@ -36,10 +36,15 @@ async function crawl(paths: string[], keep: (name: string) => boolean): Promise<
     }
     await sleep(900);
   }
-  const res = await pool([...urls], 2, async (url) => {
+  const doneMaster = new Set<string>();
+  const master = (u: string) => u.split("/").pop()!.replace(/\.html$/, "").replace(/-[A-Z]+-WW$/, "");
+  // Visit master pages first so colour-specific duplicates are skipped.
+  const ordered = [...urls].sort((a, b) => Number(/-[A-Z]+-WW\.html$/.test(a)) - Number(/-[A-Z]+-WW\.html$/.test(b)));
+  const res = await pool(ordered, 2, async (url) => {
     const out: RawOffer[] = [];
     try {
-      const html = await get(url);
+      if (doneMaster.has(master(url))) return out;
+      const html = await get(url, 2);
       await sleep(700);
       let grouped = false;
       for (const g of ld(html)) {
@@ -58,14 +63,16 @@ async function crawl(paths: string[], keep: (name: string) => boolean): Promise<
       }
       if (grouped) return out;
       const first = viewItem(html);
-      if (!first || JUNK.test(first.item_name) || !keep(first.item_name)) return out;
+      if (!first || JUNK.test(first.item_name) || !keep(first.item_name) || doneMaster.has(first.item_id)) return out;
+      doneMaster.add(first.item_id);
       const colours = new Set([...html.matchAll(new RegExp(`dwvar_${first.item_id}_color=([A-Z0-9%]+)`, "g"))].map((m) => m[1]));
       const items = [{ it: first, url }];
       for (const c of colours) {
         if (decodeURIComponent(c) === first.item_variant) continue;
-        const u = `${url}?dwvar_${first.item_id}_color=${c}`;
+        // Colour-specific listing URLs (…/QC2G-HEADPHONEARN-HZNTPE-WW.html) answer 500 with dwvar; use the master page.
+        const u = `${url.replace(/[^/]+\.html$/, "")}${first.item_id}.html?dwvar_${first.item_id}_color=${c}`;
         try {
-          const it = viewItem(await get(u));
+          const it = viewItem(await get(u, 2));
           if (it) items.push({ it, url: u });
         } catch {}
         await sleep(600);

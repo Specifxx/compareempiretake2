@@ -28,4 +28,10 @@ export const RETAILERS: Record<RetailerId, Retailer> = {
   hp: { id: "hp", name: "HP Store", site: "hp.com/au-en", color: "#0096D6", type: "official" },
   microsoft: { id: "microsoft", name: "Microsoft Store", site: "microsoft.com/en-au", color: "#737373", type: "official" },
   appliancesonline: { id: "appliancesonline", name: "Appliances Online", site: "appliancesonline.com.au", color: "#F26722", type: "retailer" },
+  dji: { id: "dji", name: "DJI Store", site: "store.dji.com", color: "#1A1A1A", type: "official" },
+  sonos: { id: "sonos", name: "Sonos", site: "sonos.com/en-au", color: "#000000", type: "official" },
+  bose: { id: "bose", name: "Bose", site: "bose.com.au", color: "#2D2D2D", type: "official" },
+  garmin: { id: "garmin", name: "Garmin", site: "garmin.com/en-AU", color: "#007CC3", type: "official" },
+  ecovacs: { id: "ecovacs", name: "ECOVACS", site: "ecovacs.com/au", color: "#1E4B9B", type: "official" },
+  dreame: { id: "dreame", name: "Dreame", site: "dreame.com.au", color: "#B8956A", type: "official" },
 };

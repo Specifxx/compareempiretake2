@@ -76,7 +76,13 @@ export type RetailerId =
   | "lenovo"
   | "hp"
   | "microsoft"
-  | "appliancesonline";
+  | "appliancesonline"
+  | "dji"
+  | "sonos"
+  | "bose"
+  | "garmin"
+  | "ecovacs"
+  | "dreame";
 
 export interface Retailer {
   id: RetailerId;
