@@ -9,9 +9,19 @@ import { CheckIcon, ExternalIcon, ShareIcon } from "./icons";
 import { RetailerDot } from "./RetailerChip";
 import { SaveButton } from "./SaveButton";
 import { CompareToggle } from "./CompareToggle";
+import { PriceCheckCard } from "./PriceCheckCard";
+import type { PriceCheck, WasCheck } from "@/lib/price-check";
 
 /** Gallery + storage picker + the retailer price table for one phone. */
-export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<string, React.ReactNode> }) {
+export function PhoneOffers({
+  phone,
+  chart,
+  checks,
+}: {
+  phone: Phone;
+  chart: Record<string, React.ReactNode>;
+  checks: Record<string, { check: PriceCheck; was: Partial<Record<RetailerId, WasCheck>> }>;
+}) {
   const params = useSearchParams();
   const initial = phone.variants.find((v) => v.id === params.get("v")) ?? defaultVariant(phone);
   const [vid, setVid] = useState(initial.id);
@@ -84,18 +94,16 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
       <div className="min-w-0">
         <div className="text-sm font-semibold text-brand">{phone.brand}</div>
         <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{phone.model}</h1>
-        <div className="mt-4 flex flex-wrap items-end gap-x-4 gap-y-2">
-          <div>
+        <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
+          <div className="shrink-0">
             <div className="text-xs text-ink-mute">Best price · {storageLabel(variant.storageGb)}</div>
             <div className="price text-4xl">${variant.bestPrice.toLocaleString("en-AU")}</div>
+            {top && top > variant.bestPrice && (
+              <div className="mt-1 text-xs font-semibold text-save">Save ${(top - variant.bestPrice).toLocaleString("en-AU")} vs dearest store</div>
+            )}
           </div>
-          {top && top > variant.bestPrice && (
-            <div className="mb-1.5 rounded-lg bg-save-soft px-2.5 py-1 text-sm font-semibold text-save">
-              Save ${(top - variant.bestPrice).toLocaleString("en-AU")} vs dearest store
-            </div>
-          )}
-          {variant.lowestEver !== undefined && variant.previousBest !== undefined && variant.bestPrice <= variant.lowestEver && (
-            <div className="mb-1.5 rounded-lg bg-hot/10 px-2.5 py-1 text-sm font-semibold text-hot">Lowest we&apos;ve seen</div>
+          {checks[variant.id] && (
+            <PriceCheckCard check={checks[variant.id].check} onOpenHistory={() => document.getElementById("history")?.scrollIntoView({ behavior: "smooth", block: "center" })} />
           )}
         </div>
 
@@ -153,6 +161,7 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
             <span className="text-xs text-ink-mute">{tab === "outright" ? "Cheapest in-stock first" : "Lowest monthly repayment first"}</span>
           </div>
           {tab === "outright" ? (
+          <>
           <ol className="space-y-2.5">
             {rows.map(({ best: o, colours: cs }, i) => (
               <li key={o.retailer}>
@@ -178,6 +187,9 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
                   <div className="text-right">
                     <div className="price text-xl sm:text-2xl">${o.price.toLocaleString("en-AU")}</div>
                     {o.wasPrice && <div className="text-xs text-ink-mute line-through">${o.wasPrice.toLocaleString("en-AU")}</div>}
+                    {o.wasPrice && checks[variant.id]?.was[o.retailer] && (
+                      <WasNote w={checks[variant.id].was[o.retailer]!} />
+                    )}
                     {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">+${(o.price - best.price).toLocaleString("en-AU")}</div>}
                   </div>
                   <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
@@ -188,6 +200,20 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
               </li>
             ))}
           </ol>
+          {Object.values(checks[variant.id]?.was ?? {}).length > 0 && (
+            <div className="mt-4 rounded-2xl bg-bg-sunk p-4">
+              <div className="text-sm font-semibold">Are these &ldquo;was&rdquo; prices real?</div>
+              <ul className="mt-2 space-y-1.5 text-xs text-ink-soft">
+                {Object.values(checks[variant.id].was).map((w) => (
+                  <li key={w!.retailer} className="flex gap-2">
+                    <span className={w!.status === "backed" ? "text-save" : w!.status === "never" ? "text-hot" : "text-ink-mute"}>{w!.status === "backed" ? "✓" : w!.status === "never" ? "⚠" : "•"}</span>
+                    <span><b className="text-ink">{RETAILERS[w!.retailer].name} says was ${w!.was.toLocaleString("en-AU")}.</b> {w!.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          </>
           ) : (
           <>
           <ol className="space-y-2.5">
@@ -241,11 +267,22 @@ export function PhoneOffers({ phone, chart }: { phone: Phone; chart: Record<stri
           <button onClick={share} className="btn-ghost"><ShareIcon /> {copied ? "Link copied" : "Share"}</button>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 scroll-mt-24" id="history">
           <h2 className="mb-3 font-display text-xl font-bold">Price history · {storageLabel(variant.storageGb)}</h2>
           <div className="card p-5">{chart[variant.id]}</div>
         </div>
       </div>
+    </div>
+  );
+}
+
+/** Our verdict on a store's own "was" price, from what we've recorded there. */
+function WasNote({ w }: { w: WasCheck }) {
+  const style = w.status === "backed" ? "text-save" : w.status === "never" ? "text-hot font-semibold" : "text-ink-mute";
+  const label = w.status === "backed" ? "✓ Was price checks out" : w.status === "never" ? "⚠ Was price not seen" : "Was price: too new to check";
+  return (
+    <div className={`mt-0.5 max-w-[12rem] text-[10px] leading-tight ${style}`} title={w.text}>
+      {label}
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { PhoneCard } from "@/components/PhoneCard";
 import { PhoneOffers } from "@/components/PhoneOffers";
 import { PriceChart } from "@/components/PriceChart";
-import { getCatalog, getPhone, getPhones, getSeries, getVsPairs, similarPhones, summarise } from "@/lib/catalog";
+import { checkVariant, getCatalog, getPhone, getPhones, getVsPairs, similarPhones, summarise } from "@/lib/catalog";
 import { storageLabel } from "@/lib/normalize";
 import { RETAILERS } from "@/lib/retailers";
 import { SITE } from "@/lib/site";
@@ -33,8 +33,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function PhonePage({ params }: { params: Promise<{ slug: string }> }) {
   const phone = getPhone((await params).slug);
   if (!phone) notFound();
-  const series = getSeries(phone.slug);
-  const chart = Object.fromEntries(phone.variants.map((v) => [v.id, <PriceChart key={v.id} points={series[v.id] ?? []} />]));
+  const checks = Object.fromEntries(phone.variants.map((v) => [v.id, checkVariant(phone, v)]));
+  const chart = Object.fromEntries(
+    phone.variants.map((v) => [
+      v.id,
+      <div key={v.id}>
+        <div className="mb-3 text-xs font-medium text-ink-mute">{checks[v.id].check.chartLabel}</div>
+        <PriceChart points={checks[v.id].check.points} />
+      </div>,
+    ]),
+  );
   const similar = similarPhones(phone).map(summarise);
   const vs = getVsPairs().filter((v) => v.a.slug === phone.slug || v.b.slug === phone.slug);
   const { updatedAt } = getCatalog();
@@ -81,7 +89,7 @@ export default async function PhonePage({ params }: { params: Promise<{ slug: st
       </nav>
 
       <Suspense>
-        <PhoneOffers phone={phone} chart={chart} />
+        <PhoneOffers phone={phone} chart={chart} checks={checks} />
       </Suspense>
 
       <section className="mt-16 grid gap-8 lg:grid-cols-2">

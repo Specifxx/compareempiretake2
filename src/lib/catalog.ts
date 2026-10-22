@@ -1,8 +1,11 @@
 import "server-only";
 import catalogJson from "../../data/phones/catalog.json";
 import seriesJson from "../../data/phones/series.json";
+import storeSeriesJson from "../../data/phones/store-series.json";
 import { storageLabel } from "./normalize";
-import type { Catalog, Offer, Phone, RetailerId, Variant } from "./types";
+import { priceCheck, wasCheck, type PriceCheck, type WasCheck } from "./price-check";
+import { RETAILERS } from "./retailers";
+import type { Catalog, Offer, Phone, RetailerId, StoreSeries, Variant } from "./types";
 
 const catalog = catalogJson as unknown as Catalog;
 const series = seriesJson as unknown as Record<string, Record<string, [string, number][]>>;
@@ -11,6 +14,24 @@ export const getCatalog = () => catalog;
 export const getPhones = () => catalog.phones;
 export const getPhone = (slug: string) => catalog.phones.find((p) => p.slug === slug);
 export const getSeries = (slug: string) => series[slug] ?? {};
+const storeSeries = storeSeriesJson as unknown as StoreSeries;
+export const getStoreSeries = (slug: string) => storeSeries[slug] ?? {};
+
+/** Today's date in Sydney, from the last import (not the build clock). */
+export const catalogDay = () => new Date(catalog.updatedAt).toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+
+export function checkVariant(p: Phone, v: Variant): { check: PriceCheck; was: Partial<Record<RetailerId, WasCheck>> } {
+  const outright = v.offers.filter((o) => o.kind !== "plan");
+  const cheapest = (outright.find((o) => o.inStock && o.price === v.bestPrice) ?? outright[0])?.retailer;
+  const stores = getStoreSeries(p.slug)[v.id] ?? {};
+  const check = priceCheck({ price: v.bestPrice, best: getSeries(p.slug)[v.id] ?? [], stores, cheapest, storeName: (r) => RETAILERS[r].name, today: catalogDay() });
+  const was: Partial<Record<RetailerId, WasCheck>> = {};
+  for (const o of outright) {
+    const w = wasCheck(o, stores[o.retailer], RETAILERS[o.retailer].name, catalogDay());
+    if (w && (!was[o.retailer] || o.price < (outright.find((x) => x.retailer === o.retailer && x.wasPrice === was[o.retailer]!.was)?.price ?? Infinity))) was[o.retailer] = w;
+  }
+  return { check, was };
+}
 
 /** What the browser needs to list, filter and search phones. */
 export interface PhoneSummary {

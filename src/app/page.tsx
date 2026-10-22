@@ -6,7 +6,9 @@ import { RetailerDot } from "@/components/RetailerChip";
 import { SearchBox } from "@/components/SearchBox";
 import { getGuides } from "@/lib/guides";
 import { getSearchIndex } from "@/lib/search-index";
-import { getBrands, getCatalog, getDeals, getSummaries } from "@/lib/catalog";
+import { checkVariant, getBrands, getCatalog, getDeals, getPhones, getSummaries } from "@/lib/catalog";
+import { storageLabel } from "@/lib/normalize";
+import { PriceCheckCard } from "@/components/PriceCheckCard";
 
 export default function Home() {
   const { retailers, updatedAt, phones } = getCatalog();
@@ -16,6 +18,7 @@ export default function Home() {
   const offers = phones.reduce((n, p) => n + p.offerCount, 0);
   const popular = summaries.filter((p) => p.retailerCount >= 3 && p.image).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice).slice(0, 8);
   const budget = summaries.filter((p) => p.bestPrice <= 500 && p.retailerCount >= 2 && p.image && p.inStock).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation).slice(0, 4);
+  const example = pickExample();
   const updated = new Date(updatedAt).toLocaleString("en-AU", { timeZone: "Australia/Sydney", weekday: "long", hour: "numeric", minute: "2-digit" });
 
   return (
@@ -32,12 +35,15 @@ export default function Home() {
               Prices checked {updated}
             </div>
             <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-              Stop overpaying
+              Is that phone sale
               <br />
-              for your <span className="bg-gradient-to-r from-brand to-[#B04BFF] bg-clip-text text-transparent">next phone.</span>
+              <span className="bg-gradient-to-r from-brand to-[#B04BFF] bg-clip-text text-transparent">actually real?</span>
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-lg text-ink-soft">
-              {phones.length} phones, {offers.toLocaleString()} live prices from {retailers.length} Australian retailers — side by side, cheapest first.
+              We save the price of every phone at {retailers.length} Australian stores, every day. So when a store says &ldquo;was $1,499&rdquo;, you can see if it ever was.
+            </p>
+            <p className="mx-auto mt-2 max-w-xl text-sm text-ink-mute">
+              {phones.length} phones · {offers.toLocaleString()} live prices · cheapest in-stock first · no paid rankings
             </p>
             <div className="mx-auto mt-8 max-w-2xl">
               <SearchBox items={getSearchIndex()} size="lg" />
@@ -50,6 +56,24 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {example && (
+        <section className="container-x -mt-4 mb-10">
+          <Link href={`/phones/${example.phone.slug}?v=${example.variant.id}`} className="mx-auto flex max-w-3xl flex-col items-stretch gap-4 rounded-3xl border border-line bg-bg-card p-4 shadow-card transition hover:shadow-lift sm:flex-row sm:items-center">
+            <div className="flex items-center gap-4">
+              <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-2xl">
+                {example.phone.image && <img src={example.phone.image} alt="" className="product-img h-full w-full object-contain p-2" />}
+              </div>
+              <div>
+                <div className="eyebrow">Live example</div>
+                <div className="font-semibold">{example.phone.name} {storageLabel(example.variant.storageGb)}</div>
+                <div className="price text-2xl">${example.variant.bestPrice.toLocaleString("en-AU")}</div>
+              </div>
+            </div>
+            <PriceCheckCard check={example.check} />
+          </Link>
+        </section>
+      )}
 
       <section className="container-x">
         <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-none">
@@ -86,9 +110,9 @@ export default function Home() {
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
+            ["We call out fake sales", "We record every price, every day. If a “was $1,999” never cost $1,999, the price check next to it says so."],
             ["Nobody buys the top spot", "Shopping results put paid listings first. Ours are cheapest in-stock first — no retailer can pay to move up."],
             ["The exact phone, not a lookalike", "We split every phone by storage and leave out refurbs, grey imports and carrier-locked stock, so the cheapest price is for the phone you actually want."],
-            ["We call out fake sales", "We record every price, every day. If a “was $1,999” never cost $1,999, our history shows it."],
             ["Real Aussie stores, in stock", "Only Australian retailers with local warranty, and we tell you who actually has it in stock today."],
           ].map(([t, d]) => (
             <div key={t} className="card p-5">
@@ -152,4 +176,18 @@ function SectionHead({ title, sub, href, cta }: { title: string; sub: string; hr
       </Link>
     </div>
   );
+}
+
+/** The home page's proof: a popular phone whose history best shows the price check working. */
+function pickExample() {
+  const rank = { lowest: 0, below: 1, above: 2, usual: 3, new: 4 } as const;
+  const candidates = getPhones()
+    .filter((p) => p.retailerCount >= 6 && p.image)
+    .slice(0, 30)
+    .map((phone) => {
+      const variant = phone.variants.reduce((a, b) => (new Set(b.offers.map((o) => o.retailer)).size > new Set(a.offers.map((o) => o.retailer)).size ? b : a));
+      return { phone, variant, check: checkVariant(phone, variant).check };
+    })
+    .sort((a, b) => rank[a.check.verdict] - rank[b.check.verdict] || b.check.points.length - a.check.points.length);
+  return candidates[0];
 }

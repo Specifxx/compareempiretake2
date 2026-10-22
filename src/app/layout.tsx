@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: { default: "Compare Empire — Compare mobile phone prices across Australia", template: "%s · Compare Empire" },
   description:
-    "Every new phone, every major Australian retailer, one page. Compare live prices from JB Hi-Fi, Harvey Norman, Apple, Samsung, Telstra, Optus and more — outright or on a plan, updated daily.",
+    "Is that phone sale real? We record every phone price at 17 Australian stores every day — JB Hi-Fi, Harvey Norman, Apple, Samsung, Telstra, Optus and more — so you can see the real price history before you buy.",
   openGraph: { type: "website", siteName: "Compare Empire", locale: "en_AU" },
   twitter: { card: "summary_large_image" },
   icons: { icon: "/icon.svg" },

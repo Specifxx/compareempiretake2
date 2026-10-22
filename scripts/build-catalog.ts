@@ -6,7 +6,7 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { parseTitle, slugify, storageLabel } from "../src/lib/normalize";
 import { RETAILERS } from "../src/lib/retailers";
-import type { Catalog, HistoryDay, Offer, Phone, RawOffer, RetailerId, Specs, Variant } from "../src/lib/types";
+import type { Catalog, HistoryDay, StoreSeries, Offer, Phone, RawOffer, RetailerId, Specs, Variant } from "../src/lib/types";
 
 /** Shopify CDN images first: clean white backgrounds and resizable. */
 const IMAGE_PREFERENCE: RetailerId[] = ["jbhifi", "thegoodguys", "harveynorman", "mobileciti"];
@@ -168,10 +168,17 @@ function main() {
 
   writeFileSync(`data/phones/history/${day}.json`, JSON.stringify(todayHistory) + "\n");
 
-  // Fold every history day into per-variant series.
+  // Fold every history day into per-variant series: the best price, and each store's own.
   const days = readdirSync("data/phones/history").filter((f) => f.endsWith(".json")).sort();
   const series: Record<string, Record<string, [string, number][]>> = {};
+  const storeSeries: StoreSeries = {};
   const firstSeen: Record<string, string> = {};
+  const addStore = (slug: string, vid: string, r: RetailerId, date: string, price: number) => {
+    const list = (((storeSeries[slug] ??= {})[vid] ??= {})[r] ??= []);
+    const same = list.find(([d]) => d === date);
+    if (same) same[1] = Math.min(same[1], price);
+    else list.push([date, price]);
+  };
   for (const f of days) {
     const date = f.replace(".json", "");
     const h = JSON.parse(readFileSync(`data/phones/history/${f}`, "utf8")) as HistoryDay;
@@ -180,9 +187,31 @@ function main() {
       for (const [vid, prices] of Object.entries(vs)) {
         const best = Math.min(...(Object.values(prices) as number[]));
         if (Number.isFinite(best)) ((series[slug] ??= {})[vid] ??= []).push([date, best]);
+        for (const [r, price] of Object.entries(prices)) addStore(slug, vid, r as RetailerId, date, price as number);
       }
     }
   }
+  // Older prices from Internet Archive snapshots of the same product pages
+  // (scripts/backfill-archive.ts). They are per store and sparse, so they feed
+  // each store's own history, never the "best price" line.
+  const byUrl = new Map<string, { slug: string; vid: string; r: RetailerId }>();
+  for (const p of phones) for (const v of p.variants) for (const o of v.offers) if (o.kind !== "plan") byUrl.set(o.url, { slug: p.slug, vid: v.id, r: o.retailer });
+  let archived = 0;
+  if (existsSync("data/phones/archive")) {
+    for (const f of readdirSync("data/phones/archive").filter((x) => x.endsWith(".json"))) {
+      const points = JSON.parse(readFileSync(`data/phones/archive/${f}`, "utf8")) as Record<string, [string, number][]>;
+      for (const [url, pts] of Object.entries(points)) {
+        const hit = byUrl.get(url);
+        if (!hit) continue;
+        for (const [d, price] of pts) if (d < day) {
+          addStore(hit.slug, hit.vid, hit.r, d, price);
+          archived++;
+          if (!firstSeen[hit.slug] || d < firstSeen[hit.slug]) firstSeen[hit.slug] = d;
+        }
+      }
+    }
+  }
+  for (const vs of Object.values(storeSeries)) for (const rs of Object.values(vs)) for (const list of Object.values(rs)) list!.sort((a, b) => a[0].localeCompare(b[0]));
   const weekAgo = new Date(Date.parse(day) - 7 * 864e5).toISOString().slice(0, 10);
   for (const p of phones) {
     p.firstSeen = firstSeen[p.slug] ?? day;
@@ -203,8 +232,9 @@ function main() {
   };
   writeFileSync("data/phones/catalog.json", JSON.stringify(catalog) + "\n");
   writeFileSync("data/phones/series.json", JSON.stringify(series) + "\n");
+  writeFileSync("data/phones/store-series.json", JSON.stringify(storeSeries) + "\n");
   const offers = phones.reduce((n, p) => n + p.offerCount, 0);
-  console.log(`catalog: ${phones.length} phones, ${offers} offers, ${days.length} history days`);
+  console.log(`catalog: ${phones.length} phones, ${offers} offers, ${days.length} history days, ${archived} archived store prices`);
 }
 
 main();

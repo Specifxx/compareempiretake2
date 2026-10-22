@@ -115,3 +115,6 @@ export interface Catalog {
 
 /** One day of best prices: phone slug -> variant id -> retailer -> price. */
 export type HistoryDay = Record<string, Record<string, Partial<Record<RetailerId, number>>>>;
+
+/** Each store's own price history: phone slug -> variant id -> retailer -> [date, price][]. */
+export type StoreSeries = Record<string, Record<string, Partial<Record<RetailerId, [string, number][]>>>>;
