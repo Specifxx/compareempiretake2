@@ -1,5 +1,5 @@
 /**
- * Dell AU: laptops and monitors from the server-rendered listing pages (?page=N).
+ * Dell AU: laptops, desktops (same card layout as laptops) and monitors from the server-rendered listing pages (?page=N).
  * Each page carries `Dell.ProductStack.GlobalSetting.ProductsDetailInfo = JSON.parse("…")` (title, dellPrice,
  * marketPrice, pdUrl per card) plus the card HTML. Laptop "variant-stack" cards are model families priced
  * "from"; "stack-system" cards are fixed configurations whose hero specs (CPU, RAM, SSD, screen) we put in the title.
@@ -63,8 +63,8 @@ async function crawl(listing: string) {
 
 const BAD = /refurb|renewed|open.?box|keyboard|mouse|dock|stand|mount|bag|backpack|adapter|cable|speakerphone|headset/i;
 
-async function laptops(): Promise<RawOffer[]> {
-  const { details, cards } = await crawl("https://www.dell.com/en-au/shop/laptops/scr/laptop");
+async function laptops(listing = "https://www.dell.com/en-au/shop/laptops/scr/laptop"): Promise<RawOffer[]> {
+  const { details, cards } = await crawl(listing);
   const out: RawOffer[] = [];
   for (const c of cards.values()) {
     const d = details.get(c.id);
@@ -77,13 +77,14 @@ async function laptops(): Promise<RawOffer[]> {
     const ram = c.specs.find((s) => /^\d+ ?GB\b(?!.*SSD)/i.test(s));
     const ssd = c.specs.find((s) => /SSD/i.test(s))?.replace(/,.*$/, "");
     const screen = c.specs.find((s) => /^\d+(\.\d+)?"/.test(s));
+    if (/monitor/i.test(name) && !/all-in-one|desktop|tower/i.test(name)) continue;
     const title = fixed ? `${brandName} - ${[cpu, ram, ssd, screen].filter(Boolean).join(", ")}` : brandName;
     out.push({
       retailer: "dell",
       sku: c.id,
       brand: /alienware/i.test(name) ? "Alienware" : "Dell",
       title,
-      url: c.url ?? d?.pdUrl ?? "https://www.dell.com/en-au/shop/laptops/scr/laptop",
+      url: c.url ?? d?.pdUrl ?? listing,
       price,
       wasPrice: c.was && c.was > price ? c.was : money(d?.marketPrice),
       image: c.image ?? d?.image,
@@ -123,4 +124,8 @@ async function monitors(): Promise<RawOffer[]> {
   return out;
 }
 
-export const scrapers: Partial<Record<Exclude<CategoryId, "phones">, () => Promise<RawOffer[]>>> = { laptops, monitors };
+export const scrapers: Partial<Record<Exclude<CategoryId, "phones">, () => Promise<RawOffer[]>>> = {
+  laptops: () => laptops(),
+  desktops: () => laptops("https://www.dell.com/en-au/shop/desktop-computers/scr/desktop"),
+  monitors,
+};

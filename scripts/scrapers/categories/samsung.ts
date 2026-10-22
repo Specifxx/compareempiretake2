@@ -2,6 +2,10 @@
  * Samsung AU: TVs, monitors and Galaxy Tab tablets from the JSON-LD on server-rendered listing pages.
  * A listing page only carries its first ~24-36 cards, so we union the size and type sub-listings.
  * Each card is one variant whose model code sits at the end of its URL (…-qa65qn90fawxxy/).
+ * Watches, Galaxy Buds, soundbars/speakers and SSDs come from the product-finder JSON the listing pages load
+ * anonymously (searchapi.samsung.com/v6/front/b2c/product/finder/global?type=<category code>&siteCode=au):
+ * every family lists its colour/capacity models with modelCode, price (RRP) and promotionPrice (today's price).
+ * A model without a price is not sold online and is skipped. Samsung AU lists no robot vacuums (stick vacuums only).
  */
 import type { CategoryId, RawOffer } from "../../../src/lib/types";
 import { decodeEntities, get, sleep } from "../../lib/http";
@@ -119,4 +123,119 @@ async function tablets(): Promise<RawOffer[]> {
   return out;
 }
 
-export const scrapers: Partial<Record<Exclude<CategoryId, "phones">, () => Promise<RawOffer[]>>> = { tvs, monitors, tablets };
+type FinderModel = {
+  modelCode: string;
+  displayName?: string;
+  price?: string | null;
+  promotionPrice?: string | null;
+  stockStatusText?: string | null;
+  pdpUrl?: string;
+  thumbUrl?: string;
+  fmyChipList?: { fmyChipType?: string; fmyChipName?: string; fmyChipLocalName?: string }[];
+};
+type FinderFamily = { fmyMarketingName: string; categorySubTypeEngName?: string; modelList: FinderModel[] };
+
+async function finder(type: string): Promise<FinderFamily[]> {
+  const out: FinderFamily[] = [];
+  for (let start = 1; start < 500; start += 100) {
+    const url = `https://searchapi.samsung.com/v6/front/b2c/product/finder/global?type=${type}&siteCode=au&start=${start}&num=100&sort=newest&onlyFilterInfoYN=N&keySummaryYN=Y&shopSiteCode=au`;
+    const d = JSON.parse(await get(url)) as { response: { resultData: { common: { totalRecord: string }; productList: FinderFamily[] } } };
+    const r = d.response.resultData;
+    out.push(...r.productList);
+    await sleep(900);
+    if (start + 100 > Number(r.common.totalRecord)) break;
+  }
+  return out;
+}
+
+function finderOffer(m: FinderModel, title: string): RawOffer | undefined {
+  const rrp = Number(m.price) || 0;
+  const now = Number(m.promotionPrice) || rrp;
+  if (!now || !m.pdpUrl) return undefined;
+  const thumb = m.thumbUrl?.startsWith("//") ? `https:${m.thumbUrl}` : m.thumbUrl;
+  return {
+    retailer: "samsung",
+    sku: m.modelCode,
+    mpn: m.modelCode,
+    brand: "Samsung",
+    title: title.replace(/[™®]/g, "").replace(/\s+/g, " ").trim(),
+    url: `${BASE}${m.pdpUrl}`,
+    price: now,
+    wasPrice: rrp > now ? rrp : undefined,
+    image: thumb,
+    inStock: !/outOfStock|soldOut/i.test(String(m.stockStatusText ?? "")),
+  };
+}
+
+const chip = (m: FinderModel, type: string) => m.fmyChipList?.find((c) => c.fmyChipType === type)?.fmyChipLocalName ?? m.fmyChipList?.find((c) => c.fmyChipType === type)?.fmyChipName;
+
+async function smartwatches(): Promise<RawOffer[]> {
+  const out: RawOffer[] = [];
+  for (const f of await finder("01030000")) {
+    if (!/watch/i.test(f.fmyMarketingName)) continue; // Galaxy Fit bands
+    for (const m of f.modelList) {
+      const n = decodeEntities(m.displayName ?? f.fmyMarketingName);
+      const slug = m.pdpUrl ?? "";
+      const size = n.match(/(\d+) ?mm/)?.[1] ?? slug.match(/-(\d+)mm-/)?.[1] ?? (/ultra/i.test(n) ? "47" : undefined);
+      const lte = /\bLTE\b/i.test(n) || /-lte-/.test(slug) || /ultra/i.test(n);
+      const model = n.replace(/\s*\((?:Bluetooth|LTE)[^)]*\)/i, "").trim();
+      const colour = chip(m, "COLOR");
+      const title = `Samsung ${model} ${size ? `${size}mm ` : ""}${lte ? "GPS + Cellular (LTE)" : "GPS (Bluetooth)"}${colour ? ` - ${colour}` : ""}`;
+      const o = finderOffer(m, title);
+      if (o) out.push(o);
+    }
+  }
+  return out;
+}
+
+async function headphones(): Promise<RawOffer[]> {
+  const out: RawOffer[] = [];
+  for (const f of await finder("01040000"))
+    for (const m of f.modelList) {
+      const n = decodeEntities(m.displayName ?? f.fmyMarketingName);
+      if (ACCESSORY.test(n.replace(/\bcase\b/i, ""))) continue;
+      const colour = chip(m, "COLOR");
+      const o = finderOffer(m, `Samsung ${n}${colour ? ` - ${colour}` : ""}`);
+      if (o) out.push(o);
+    }
+  return out;
+}
+
+async function audioDevices(kind: "soundbars" | "speakers"): Promise<RawOffer[]> {
+  const out: RawOffer[] = [];
+  for (const f of await finder("05010000"))
+    for (const m of f.modelList) {
+      const n = decodeEntities(m.displayName ?? f.fmyMarketingName);
+      const bar = /soundbar/i.test(n) || f.categorySubTypeEngName === "Soundbar";
+      if ((kind === "soundbars") !== bar || /mount|bracket|cable|remote|stand\b/i.test(n)) continue;
+      const o = finderOffer(m, `Samsung ${n}`);
+      if (o) out.push(o);
+    }
+  return out;
+}
+
+async function ssds(): Promise<RawOffer[]> {
+  const out: RawOffer[] = [];
+  for (const f of await finder("09010000")) {
+    if (!/SSD/i.test(f.categorySubTypeEngName ?? "")) continue; // memory cards, USB flash drives
+    for (const m of f.modelList) {
+      let n = decodeEntities(m.displayName ?? f.fmyMarketingName);
+      const cap = chip(m, "CAPACITY") ?? m.fmyChipList?.find((c) => /^\d+ ?(GB|TB)$/i.test(c.fmyChipName ?? ""))?.fmyChipName;
+      if (cap && !/\d+ ?(GB|TB)\b/i.test(n)) n = `${n} ${cap.replace(/ /g, "")}`;
+      const o = finderOffer(m, `Samsung ${n}`);
+      if (o) out.push(o);
+    }
+  }
+  return out;
+}
+
+export const scrapers: Partial<Record<Exclude<CategoryId, "phones">, () => Promise<RawOffer[]>>> = {
+  tvs,
+  monitors,
+  tablets,
+  smartwatches,
+  headphones,
+  soundbars: () => audioDevices("soundbars"),
+  speakers: () => audioDevices("speakers"),
+  ssds,
+};

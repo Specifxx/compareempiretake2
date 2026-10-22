@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T20:40:15.100Z",
+ "scrapedAt": "2026-10-22T23:01:45.284Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -51,17 +51,6 @@
    "price": 2199,
    "wasPrice": 2549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/511616-Product-0-I-639081644406925281.jpg?v=1790763065",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "748037",
-   "title": "Apple MacBook Air 13-inch with M5 Chip, 1TB/16GB (Silver)",
-   "url": "https://www.jbhifi.com.au/products/apple-macbook-air-13-inch-with-m5-chip-1tb-16gb-silver",
-   "price": 2199,
-   "wasPrice": 2549,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748037-Product-0-I-639081644408456741.jpg?v=1790763187",
    "inStock": true,
    "brand": "Apple"
   },
@@ -271,7 +260,7 @@
    "price": 2049,
    "wasPrice": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/673385-Product-0-I-639081655206441193.jpg?v=1790762986",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1900,6 +1889,7 @@
    "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907074-Product-0-I-639216516004957785.jpg?v=1786054865",
    "inStock": true,
+   "mpn": "MTK-540",
    "brand": "Lenovo"
   },
   {
@@ -1910,6 +1900,7 @@
    "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907073-Product-0-I-639216505207169223.jpg?v=1786053787",
    "inStock": true,
+   "mpn": "MTK-540",
    "brand": "Lenovo"
   },
   {

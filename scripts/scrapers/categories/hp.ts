@@ -1,5 +1,5 @@
 /**
- * HP AU store (Magento): laptops and monitors from JSON-LD Products on listing pages (?p=N).
+ * HP AU store (Magento): laptops, monitors, desktops and printers from JSON-LD Products on listing pages (?p=N).
  * Each Product carries sku = mpn = HP's product number (e.g. C0DE0PA); refurbished units end in "R" and say so.
  */
 import type { CategoryId, RawOffer } from "../../../src/lib/types";
@@ -65,5 +65,9 @@ const ACCESSORY = /\b(bag|backpack|sleeve|case|mouse|keyboard|dock|adapter|charg
 export const scrapers: Partial<Record<Exclude<CategoryId, "phones">, () => Promise<RawOffer[]>>> = {
   laptops: () =>
     crawl("https://www.hp.com/au-en/shop/laptops-tablets.html", (n) => /laptop|chromebook|notebook|omnibook|omnipad|elitebook|probook|zbook|omen|victus|spectre|envy|pavilion|detachable/i.test(n) && !ACCESSORY.test(n)),
+  desktops: () =>
+    crawl("https://www.hp.com/au-en/shop/desktops.html", (n) => /desktop|all-in-one|\baio\b|tower|mini|omen|envy|pavilion|elitedesk|prodesk|z2|z4|z6|z8|elite|pro\b/i.test(n) && !ACCESSORY.test(n) && !/\bmonitor\b(?!.*(desktop|all-in-one))/i.test(n)),
+  printers: () =>
+    crawl("https://www.hp.com/au-en/shop/printers.html", (n) => /printer|laserjet|deskjet|officejet|envy|smart tank|designjet|sprocket|scanjet|scanner/i.test(n) && !/\b(ink|toner|cartridge|paper|drum|tray|bottle|maintenance|fuser|carepack|care pack)\b/i.test(n)),
   monitors: () => crawl("https://www.hp.com/au-en/shop/monitors.html", (n) => /monitor|display/i.test(n) && !/\b(arm|mount|stand|cable|adapter|speaker|webcam)\b/i.test(n.replace(/monitor arm/i, "arm"))),
 };
