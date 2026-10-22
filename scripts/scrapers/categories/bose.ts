@@ -72,7 +72,7 @@ async function crawl(paths: string[], keep: (name: string) => boolean): Promise<
       }
       for (const { it, url: u } of items)
         if (it.price) out.push(offer(it.item_name, it.item_variant, it.item_variant_id, u, it.price, it.image_url, it.in_stock !== false));
-    } catch {}
+    } catch (e) { if (process.env.DEBUG) console.error(url, (e as Error).message); }
     return out;
   });
   // One offer per product+colour: regional/legacy SKUs repeat a colour; prefer the in-stock one.
