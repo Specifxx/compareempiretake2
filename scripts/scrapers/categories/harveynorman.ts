@@ -33,14 +33,17 @@ const KEEP = {
   smartwatches: (t: string) =>
     /\d{2}(?:\.\d)?\s?mm\b/i.test(t) &&
     /watch|fenix|f[eē]nix|forerunner|venu|instinct|vivoactive|epix|enduro|approach|descent|tactix|quatix|amazfit|fitbit|suunto|polar|coros/i.test(t) &&
-    !/(?<!charging )\bcase\b(?! with|,)|\bbumper\b|\bband\b(?!.*\b(watch|fenix|forerunner|venu)\b.*\d+\s?mm)|replacement|\bstraps? only|kids/i.test(t) &&
+    !/(?<!(?:charging|aluminium|titanium|steel|ceramic|resin|plastic|fibre-reinforced polymer) )\bcase\b(?! with|,)|\bbumper\b|replacement|\bstraps? only|kids|\bframe\b|\b(band|strap|loop|charger|case|protector)s? for\b|\bfor (apple|samsung|galaxy|garmin|google|pixel)\b|^(3sixt|cygnett|otterbox|spigen|belkin|uniq|mbeat|efm|zagg|incipio|tech21|casetify)\b/i.test(t) &&
     !/^(?!.*(apple watch|galaxy watch|pixel watch|garmin|fitbit|amazfit|huawei watch|oppo watch|xiaomi watch)).*\b(band|strap|loop)\b/i.test(t) &&
-    !ACC.test(t),
+    !ACC.test(t) &&
+    // Apple Watch titles always say "... Case with ... Band"; anything else naming a band is a band.
+    !(/apple watch/i.test(t) && !/\bcase\b/i.test(t)) &&
+    !(/\b(bands?|straps?|brand)\b/i.test(t) && !/case with|watch ?(\d|ultra|classic|se\b|fe\b)|fenix|forerunner|venu|instinct|epix/i.test(t)),
   desktops: (t: string) =>
-    !/monitor(?! included)\b|keyboard$|mouse$|\bstand\b|\bdock\b|\bmemory\b|webcam|speaker|headset|\bcase\b(?!.*(pc|desktop))|\bram\b$/i.test(t) && !ACC.test(t),
+    !/laptop|notebook|cooler|\bfans?\b|monitor(?! included)\b|keyboard$|mouse$|\bstand\b|\bdock\b|\bmemory\b|webcam|speaker|headset|holder|\bcase\b(?!.*(pc|desktop))|\bram\b$/i.test(t) && !ACC.test(t),
   printers: (t: string) =>
-    /printer|\bmfc|all[- ]in[- ]one|multifunction|ecotank|laserjet|officejet|pixma|deskjet|scanner(?!.*only)/i.test(t) &&
-    !/cartridge|toner(?! printer| tank)|\bink (bottle|pack|refill|cartridge)|\bpaper\b|filament|\b3d\b|label|\bdrum\b|ribbon|photo printer paper|\bfilm\b|instax|zink|pocket printer|scanner$|\bscanner\b(?!.*printer)/i.test(t) &&
+    /printer|maxify|megatank|ink ?tank|imageclass|workforce|\bmfc|all[- ]in[- ]one|multifunction|ecotank|laserjet|officejet|pixma|deskjet|scanner(?!.*only)/i.test(t) &&
+    !/cartridge|toner(?! printer| tank)|\bink (bottle|pack|refill|cartridge)|\bpaper\b|filament|\b3d\b|label|\bdrum\b|ribbon|photo printer paper|\bfilm\b|instax|zink|thermal|pocket (photo )?printer|instant digital printer|hi-print|scanner$|\bscanner\b(?!.*printer)/i.test(t) &&
     !ACC.test(t),
   routers: (t: string) =>
     /router|\bmesh\b|modem|wi-?fi \d (system|pack)|deco|orbi|eero|nighthawk|access point/i.test(t) &&
@@ -54,10 +57,10 @@ const KEEP = {
     !/\bstand\b|\bmount\b|bracket|\bcable\b|\bcover\b|\bcase\b|\bbattery\b|\bremote\b|subwoofer|sound ?bar|wall plate|microphone$|charging (dock|base)|\bbag\b|ceiling|in-wall|turntable|receiver|amplifier/i.test(t),
   consoles: (t: string) =>
     /console|playstation ?5|\bps5\b|xbox series|nintendo switch|switch 2|switch oled|steam deck|rog (xbox )?ally|legion go|msi claw|handheld/i.test(t) &&
-    !/controller|dualsense|joy-?con|\bgame\b(?! console)|\bheadset\b|charg|\bcase\b|\bcover\b|\bstand\b|\bskin\b|protector|\bgrip\b|membership|subscription|gift card|\bcable\b|\bcamera\b|\bvr\b|portal|\bremote\b|storage|\bssd\b|expansion|amiibo|\bbag\b|\bpouch\b|\bmount\b|faceplate|cover plate|disc drive|vertical|cooling|\bfan\b|\bkit\b|\bdock\b(?! set)|steering|wheel|arcade/i.test(t),
+    !/controller|dualsense|joy-?con|\bgame\b(?! console)|\bheadset\b|charg|\bcase\b|\bcover\b|\bstand\b|\bskin\b|protector|\bgrip\b|membership|subscription|gift card|\bcable\b|\bcamera\b|\bvr\b|portal|\bremote\b|storage|\bssd\b|expansion|amiibo|\bbag\b|\bpouch\b|\bmount\b|faceplate|cover plate|disc drive|vertical|cooling|\bfan\b|\bkit\b|\bdock\b(?! set)|steering|wheel|arcade|^(?!.*(console|handheld)).*\b(ps5|ps4|switch 2|xbox)$/i.test(t),
   cameras: (t: string) =>
     !/^(?!.*(camera|\bkit\b|body|gopro|hero ?\d|osmo|insta360|pocket ?\d|eos|lumix|alpha|x100|zv-)).*$/i.test(t) &&
-    !/\blens\b(?!.*(kit|camera|with))|memory card|\bsd card|\bbattery\b(?! grip kit)|\bbag\b|tripod|\bstrap\b|\bmount\b|\bcase\b|charger|\bfilter\b|\bgrip\b(?!.*camera)|housing|microphone|dash ?cam|security|doorbell|webcam|\bflash\b|speedlite|selfie stick|gimbal(?!.*camera)|film\b(?! camera)|printer|kids|toy/i.test(t),
+    !/\blens\b(?!.*(kit|camera|with))|memory card|\bsd card|\bbattery\b(?! grip kit)|\bbag\b|tripod|\bstrap\b|\bmount\b|\bcase\b|charger|\bfilter\b|\bgrip\b(?!.*camera)|housing|microphone|dash ?cam|security|doorbell|webcam|\bflash\b|speedlite|selfie stick|osmo mobile|instax|polaroid|instant camera|gimbal(?!.*camera)|film\b(?! camera)|printer|kids|toy/i.test(t),
   drones: (t: string) =>
     /drone|dji (mini|air|mavic|avata|neo|flip|lito)|fly more|potensic|holy ?stone/i.test(t) &&
     !/battery|propellers?|charging (hub|station)|\bbag\b|\bcase\b|filters?|guards?|landing|goggles(?!.*combo)|^(?!.*(combo|drone)).*\b(controller|rc)\b|care refresh|\bstrap\b|\bmount\b|\bdisplay\b|\bcable\b|\bcharger\b|motion controller$|remote controller$|\btoy\b(?!.*drone)/i.test(t),
