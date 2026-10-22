@@ -72,12 +72,16 @@ export function priceCheck(opts: {
       since: points[0][0],
     };
   }
-  const window = points.filter(([d]) => Date.parse(today) - Date.parse(d) <= 180 * DAY);
+  const recent = points.filter(([d]) => Date.parse(today) - Date.parse(d) <= 365 * DAY);
+  if (span(recent) < 7) {
+    return { verdict: "new", headline: "Tracking this price", detail: `We have no recent history for this price yet. Every daily check adds to the chart.`, points, chartLabel, since: points[0][0] };
+  }
+  const window = recent;
   const prices = window.map(([, p]) => p);
   const low = Math.min(...prices), high = Math.max(...prices), typical = median(prices);
   const since = window[0][0];
   const base = { points, chartLabel, since, low, high, typical };
-  if (price <= low) return { ...base, verdict: "lowest", headline: "Lowest price we've recorded", detail: `Nothing cheaper since ${shortDate(since)}. Usual price ${money(typical)}.` };
+  if (price <= low && price < typical * 0.99) return { ...base, verdict: "lowest", headline: "Lowest price we've recorded", detail: `Nothing cheaper since ${shortDate(since)}. Usual price ${money(typical)}.` };
   if (price <= typical * 0.97) return { ...base, verdict: "below", headline: `${money(typical - price)} below its usual price`, detail: `Usually ${money(typical)}. Lowest we've seen: ${money(low)}.` };
   if (price <= typical * 1.03) return { ...base, verdict: "usual", headline: "About its usual price", detail: `It's been around ${money(typical)} since ${shortDate(since)}. Lowest we've seen: ${money(low)}.` };
   return { ...base, verdict: "above", headline: "Above its usual price", detail: `Usually ${money(typical)}, and it's been as low as ${money(low)}. Worth waiting.` };

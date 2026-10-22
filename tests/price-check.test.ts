@@ -17,7 +17,8 @@ test("lowest, usual and above against the recorded range", () => {
   const today = best.at(-1)![0];
   assert.equal(priceCheck({ price: 1799, best, stores: {}, storeName: name, today }).verdict, "lowest");
   assert.equal(priceCheck({ price: 1999, best: [...best.slice(0, 10), ...days(20, () => 1899).map(([d], i) => [best[10 + i][0], 1899] as [string, number])], stores: {}, storeName: name, today }).verdict, "above");
-  assert.equal(priceCheck({ price: 1999, best, stores: {}, storeName: name, today }).verdict, "lowest");
+  // A price that never moved is its usual price, not a record low.
+  assert.equal(priceCheck({ price: 1999, best, stores: {}, storeName: name, today }).verdict, "usual");
 });
 
 test("falls back to the cheapest store's archived history", () => {
@@ -35,4 +36,9 @@ test("a 'was' price nobody ever charged is called out", () => {
   assert.equal(wasCheck(o, days(3, () => 1599), "JB Hi-Fi", today)!.status, "unknown");
   // Today's price can't vouch for today's "was" claim.
   assert.equal(wasCheck(o, [[today, 1999]], "JB Hi-Fi", today)!.status, "unknown");
+});
+
+test("old history with nothing recent is not a verdict", () => {
+  const c = priceCheck({ price: 1799, best: [["2026-10-22", 1799]], stores: { jbhifi: [["2024-01-01", 1999], ["2024-03-01", 1999]] }, cheapest: "jbhifi", storeName: name, today: "2026-10-22" });
+  assert.equal(c.verdict, "new");
 });
