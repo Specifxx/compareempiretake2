@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...["", ...activeCategories().map((c) => c.href), "/deals", "/brands", "/compare", "/guides", "/categories", "/about"].map((p) => ({ url: `${SITE}${p}`, lastModified, changeFrequency: "daily" as const, priority: p ? 0.8 : 1 })),
     ...getBrands().map((b) => ({ url: `${SITE}/brands/${b.slug}`, lastModified, changeFrequency: "daily" as const, priority: 0.7 })),
+    ...activeCategories().map((c) => ({ url: `${SITE}/deals/${c.id}`, lastModified, changeFrequency: "daily" as const, priority: 0.7 })),
     ...getGuides().map((g) => ({ url: `${SITE}/guides/${g.slug}`, lastModified, changeFrequency: "weekly" as const, priority: 0.8 })),
     ...getVsPairs().map((v) => ({ url: `${SITE}/compare/${v.slug}`, lastModified, changeFrequency: "daily" as const, priority: 0.6 })),
     ...phones.map((p) => ({ url: `${SITE}/${p.category}/${p.slug}`, lastModified, changeFrequency: "daily" as const, priority: 0.9 })),

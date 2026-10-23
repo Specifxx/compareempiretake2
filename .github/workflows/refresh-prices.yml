@@ -40,3 +40,7 @@ jobs:
           git commit -m "data: daily prices $(TZ=Australia/Sydney date +%F)"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
+      - name: Tell search engines what changed (IndexNow)
+        continue-on-error: true
+        # Give Vercel a few minutes to deploy the commit first.
+        run: sleep 300 && npx tsx scripts/indexnow.ts

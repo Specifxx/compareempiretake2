@@ -8,6 +8,7 @@ import { getGuides } from "@/lib/guides";
 import { activeCategories, checkVariant, getCatalog, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import type { CategoryId } from "@/lib/types";
 import { FEATURED } from "@/lib/categories";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { storageLabel } from "@/lib/normalize";
 import { PriceCheckCard } from "@/components/PriceCheckCard";
 
@@ -149,6 +150,10 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      <section className="container-x mt-16">
+        <NewsletterSignup />
+      </section>
 
       <section className="container-x mt-16">
         <SectionHead title="Buying guides" sub="Advice with live prices — every number on these pages updates daily." href="/guides" cta="All guides" />

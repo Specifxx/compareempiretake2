@@ -6,6 +6,7 @@ import { PhoneBrowser } from "@/components/PhoneBrowser";
 import { activeCategories, activeRetailers, getSummaries } from "@/lib/catalog";
 import { categoryById, CATEGORIES, DEPARTMENTS } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
+import { ogImage } from "@/lib/og";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => activeCategories().map((c) => ({ category: c.id }));
@@ -18,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
     title: `${c.name} — compare prices in Australia`,
     description: `Compare ${c.noun} prices across ${stores.length} Australian stores including ${stores.slice(0, 4).map((r) => r.name).join(", ")}. ${c.blurb} Price history on every product.`,
     alternates: { canonical: `/${c.id}` },
+    openGraph: { images: [{ url: ogImage({ title: `Compare ${c.name.toLowerCase()} prices in Australia`, stores: stores.length, category: c.name }), width: 1200, height: 630 }] },
   };
 }
 
@@ -46,6 +48,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         </div>
         {siblings.length > 0 && (
           <div className="flex flex-wrap gap-2">
+            <Link href={`/deals/${c.id}`} className="chip text-xs font-semibold text-hot">🔥 {c.name} deals</Link>
             {siblings.map((s) => (
               <Link key={s.id} href={s.href} className="chip text-xs">{s.emoji} {s.name}</Link>
             ))}

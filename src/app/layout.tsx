@@ -19,9 +19,14 @@ export const metadata: Metadata = {
   title: { default: "Compare Empire — Compare mobile phone prices across Australia", template: "%s · Compare Empire" },
   description:
     "Is that phone sale real? We record every phone price at 17 Australian stores every day — JB Hi-Fi, Harvey Norman, Apple, Samsung, Telstra, Optus and more — so you can see the real price history before you buy.",
-  openGraph: { type: "website", siteName: "Compare Empire", locale: "en_AU" },
+  openGraph: { type: "website", siteName: "Compare Empire", locale: "en_AU", images: [{ url: "/og?t=Is+that+sale+actually+real%3F", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" },
   icons: { icon: "/icon.svg" },
+  // Search Console / Bing Webmaster ownership tags, set as Vercel variables.
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION } : undefined,
+  },
 };
 
 export const viewport: Viewport = {

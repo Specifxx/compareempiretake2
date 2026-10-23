@@ -11,6 +11,8 @@ import type { CategoryId } from "@/lib/types";
 import { storageLabel } from "@/lib/normalize";
 import { RETAILERS } from "@/lib/retailers";
 import { SITE } from "@/lib/site";
+import { ogImage } from "@/lib/og";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -34,8 +36,22 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     title,
     description,
     alternates: { canonical: `/${p.category}/${p.slug}` },
-    openGraph: { title, description, images: p.image ? [{ url: p.image }] : undefined },
+    openGraph: { title, description, images: [{ url: shareCard(p), width: 1200, height: 630 }] },
+    twitter: { card: "summary_large_image", title, description, images: [shareCard(p)] },
   };
+}
+
+function shareCard(p: NonNullable<Awaited<ReturnType<typeof load>>>) {
+  const v = p.variants.reduce((a, b) => (a.bestPrice <= b.bestPrice ? a : b));
+  const check = checkVariant(p, v).check;
+  return ogImage({
+    title: p.name,
+    price: p.bestPrice,
+    stores: p.retailerCount,
+    verdict: check.verdict === "new" ? undefined : check.headline,
+    image: p.image,
+    category: categoryById(p.category)?.name,
+  });
 }
 
 export default async function ProductPage({ params }: { params: Params }) {
@@ -136,6 +152,8 @@ export default async function ProductPage({ params }: { params: Params }) {
           </div>
         </div>
       </section>
+
+      <div className="mt-16"><NewsletterSignup compact /></div>
 
       {vs.length > 0 && (
         <section className="mt-16">
