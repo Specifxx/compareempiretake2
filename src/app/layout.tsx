@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
+import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { activeCategories, getBrands } from "@/lib/catalog";
 import { DEPARTMENTS, FEATURED } from "@/lib/categories";
 import type { NavDepartment } from "@/components/Header";
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <CompareTray />
+        <FeedbackWidget />
         <Analytics />
       </body>
     </html>

@@ -9,6 +9,7 @@ import { RetailerDot } from "./RetailerChip";
 import { SaveButton } from "./SaveButton";
 import { CompareToggle } from "./CompareToggle";
 import { PriceCheckCard } from "./PriceCheckCard";
+import { PriceAlertButton } from "./PriceAlertButton";
 import type { PriceCheck, WasCheck } from "@/lib/price-check";
 
 /** Gallery + storage picker + the retailer price table for one phone. */
@@ -270,6 +271,7 @@ export function PhoneOffers({
         </div>
 
         <div className="mt-6 flex flex-wrap gap-2">
+          <PriceAlertButton key={variant.id} product={href} productName={phone.name} variant={variant.id} variantLabel={vLabel || undefined} price={variant.bestPrice} />
           <CompareToggle slug={href} block />
           <button onClick={share} className="btn-ghost"><ShareIcon /> {copied ? "Link copied" : "Share"}</button>
         </div>

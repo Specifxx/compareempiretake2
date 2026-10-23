@@ -296,3 +296,15 @@ for (const c of CATEGORIES.map((x) => x.id as CategoryId)) {
   if (asked.length ? !asked.includes(c) : !existsSync(`data/${c}/raw`)) continue;
   build(c);
 }
+
+// Scraper health for /admin: when each store/category was last scraped and how many listings it gave.
+const status: { category: string; retailer: string; offers: number; scrapedAt: string }[] = [];
+for (const c of CATEGORIES) {
+  const dir = `data/${c.id}/raw`;
+  if (!existsSync(dir)) continue;
+  for (const f of readdirSync(dir).filter((x) => x.endsWith(".json"))) {
+    const raw = JSON.parse(readFileSync(`${dir}/${f}`, "utf8")) as { scrapedAt: string; offers: unknown[] };
+    status.push({ category: c.id, retailer: f.replace(/\.json$/, ""), offers: raw.offers.length, scrapedAt: raw.scrapedAt });
+  }
+}
+writeFileSync("data/status.json", JSON.stringify({ builtAt: new Date().toISOString(), scrapes: status }) + "\n");

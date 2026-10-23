@@ -20,7 +20,7 @@ export function Footer() {
         </div>
         <FooterCol title="Shop" links={[["All phones", "/phones"], ["Today's deals", "/deals"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"]]} />
         <FooterCol title="Categories" links={activeCategories().map((c) => [c.name, c.href] as [string, string])} />
-        <FooterCol title="Compare Empire" links={[["About & how it works", "/about"], ["Retailers we check", "/about#retailers"], ["Suggest a store", "/about#feedback"]]} />
+        <FooterCol title="Compare Empire" links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Retailers we check", "/about#retailers"], ["Price alerts", "/alerts"], ["Privacy", "/privacy"]]} />
       </div>
       <div className="border-t border-line">
         <div className="container-x flex flex-col gap-2 py-5 text-xs text-ink-mute sm:flex-row sm:justify-between">

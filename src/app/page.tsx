@@ -9,6 +9,7 @@ import { activeCategories, checkVariant, getCatalog, getDeals, getPhones, getSum
 import type { CategoryId } from "@/lib/types";
 import { FEATURED } from "@/lib/categories";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { ReviewsSection } from "@/components/ReviewsSection";
 import { storageLabel } from "@/lib/normalize";
 import { PriceCheckCard } from "@/components/PriceCheckCard";
 
@@ -95,6 +96,10 @@ export default function Home() {
             </Link>
           ))}
         </div>
+      </section>
+
+      <section className="container-x mt-12">
+        <ReviewsSection limit={3} />
       </section>
 
       {deals.length > 0 && (

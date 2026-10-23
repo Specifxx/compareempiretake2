@@ -13,6 +13,7 @@ const NAV = [
   { href: "/brands", label: "Brands" },
   { href: "/compare", label: "Compare" },
   { href: "/guides", label: "Guides" },
+  { href: "/reviews", label: "Reviews" },
 ];
 
 export interface NavDepartment {

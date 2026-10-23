@@ -40,6 +40,13 @@ jobs:
           git commit -m "data: daily prices $(TZ=Australia/Sydney date +%F)"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
+      - name: Email price-drop alerts
+        continue-on-error: true
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: npx tsx scripts/send-alerts.ts
       - name: Tell search engines what changed (IndexNow)
         continue-on-error: true
         # Give Vercel a few minutes to deploy the commit first.
