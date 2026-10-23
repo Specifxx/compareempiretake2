@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: { type: "website", siteName: "Compare Empire", locale: "en_AU", images: [{ url: "/og?t=Is+that+sale+actually+real%3F", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" },
   icons: { icon: "/icon.svg" },
-  // Search Console / Bing Webmaster ownership tags, set as Vercel variables.
+  // Search Console / Bing Webmaster ownership tags (Google hard coded; a Vercel variable overrides it).
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "AzWwvsCoV2fKvjAspJUFFd77HqxcG_7Eb_4P7cTDOHk",
     other: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ? { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION } : undefined,
   },
 };
