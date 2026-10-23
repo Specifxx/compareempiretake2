@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { EbayStrip } from "@/components/EbayStrip";
 import { DealsView } from "@/components/DealsView";
 import { ogImage } from "@/lib/og";
 
@@ -10,5 +11,12 @@ export const metadata: Metadata = {
 };
 
 export default function DealsPage() {
-  return <DealsView />;
+  return (
+    <>
+      <DealsView />
+      <div className="container-x pb-4">
+        <EbayStrip query="electronics" label="tech" customid="deals-all" />
+      </div>
+    </>
+  );
 }

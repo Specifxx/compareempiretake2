@@ -1,3 +1,4 @@
+import { EbayStrip } from "@/components/EbayStrip";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DealsView } from "@/components/DealsView";
@@ -24,5 +25,12 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
 export default async function CategoryDealsPage({ params }: { params: Promise<{ category: string }> }) {
   const c = categoryById((await params).category);
   if (!c) notFound();
-  return <DealsView category={c.id as CategoryId} />;
+  return (
+    <>
+      <DealsView category={c.id as CategoryId} />
+      <div className="container-x pb-4">
+        <EbayStrip query={c.noun} label={c.name.toLowerCase()} customid={`deals-${c.id}`} phones={c.id === "phones"} />
+      </div>
+    </>
+  );
 }

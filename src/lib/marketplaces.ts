@@ -4,17 +4,18 @@
  * Affiliate IDs are optional env vars — set them in Vercel once approved and
  * every link picks them up; nothing else changes.
  *   NEXT_PUBLIC_AMAZON_TAG       Amazon Associates AU tracking id (e.g. compareempire-22)
- *   NEXT_PUBLIC_EBAY_CAMPAIGN_ID eBay Partner Network campaign id
+ * eBay links carry our EPN campaign id (see lib/ebay.ts).
  */
+import { ebaySearch } from "./ebay";
+
 export interface Marketplace {
   id: "ebay" | "amazon";
   name: string;
-  url: (query: string) => string;
+  url: (query: string, customid?: string, phones?: boolean) => string;
   note: string;
 }
 
 const amazonTag = process.env.NEXT_PUBLIC_AMAZON_TAG;
-const ebayCampaign = process.env.NEXT_PUBLIC_EBAY_CAMPAIGN_ID;
 
 export const MARKETPLACES: Marketplace[] = [
   {
@@ -27,9 +28,6 @@ export const MARKETPLACES: Marketplace[] = [
     id: "ebay",
     name: "eBay AU",
     note: "New listings only — check the seller and warranty",
-    url: (q) =>
-      `https://www.ebay.com.au/sch/i.html?_nkw=${encodeURIComponent(q)}&_sacat=9355&LH_ItemCondition=1000&LH_PrefLoc=1${
-        ebayCampaign ? `&mkcid=1&mkrid=705-53470-19255-0&campid=${ebayCampaign}&toolid=10001&mkevt=1` : ""
-      }`,
+    url: (q, customid, phones) => ebaySearch(q, { condition: "new", customid, phones }),
   },
 ];

@@ -1,7 +1,9 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { MARKETPLACES } from "@/lib/marketplaces";
+import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
 import type { Offer, Phone, RetailerId } from "@/lib/types";
 import { CheckIcon, ExternalIcon, ShareIcon } from "./icons";
@@ -29,6 +31,7 @@ export function PhoneOffers({
   const [copied, setCopied] = useState(false);
   const variant = phone.variants.find((v) => v.id === vid) ?? initial;
   const href = `/${phone.category}/${phone.slug}`;
+  const mq = `${phone.name}${variant.storageGb ? ` ${variant.label.split(" ·")[0]}` : ""}`;
   const vLabel = phone.variants.length > 1 || variant.storageGb ? variant.label : "";
 
   const colours = useMemo(() => [...new Set(variant.offers.map((o) => o.colour).filter(Boolean))].sort(), [variant]);
@@ -255,7 +258,7 @@ export function PhoneOffers({
             <p className="mt-0.5 text-xs text-ink-mute">Sometimes cheaper, but listings mix sellers and warranties, so we link to a search rather than rank them.</p>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
               {MARKETPLACES.map((m) => (
-                <a key={m.id} href={m.url(`${phone.name}${variant.storageGb ? ` ${variant.label.split(" ·")[0]}` : ""}`)} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+                <a key={m.id} href={m.url(mq, `p-${phone.category}-${phone.slug}`, phone.category === "phones")} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
                   <span>
                     <span className="font-semibold">Search {m.name}</span>
                     <span className="block text-[11px] text-ink-mute">{m.note}</span>
@@ -263,7 +266,22 @@ export function PhoneOffers({
                   <ExternalIcon className="h-4 w-4 text-ink-mute" />
                 </a>
               ))}
+              <a href={ebaySearch(mq, { condition: "refurbished", customid: `p-${phone.category}-${phone.slug}-refurb`, phones: phone.category === "phones" })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+                <span>
+                  <span className="font-semibold">Refurbished on eBay</span>
+                  <span className="block text-[11px] text-ink-mute">Often far cheaper; check the warranty</span>
+                </span>
+                <ExternalIcon className="h-4 w-4 text-ink-mute" />
+              </a>
+              <a href={ebaySearch(mq, { condition: "used", customid: `p-${phone.category}-${phone.slug}-used`, phones: phone.category === "phones" })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+                <span>
+                  <span className="font-semibold">Used on eBay</span>
+                  <span className="block text-[11px] text-ink-mute">The cheapest way in, from Australian sellers</span>
+                </span>
+                <ExternalIcon className="h-4 w-4 text-ink-mute" />
+              </a>
             </div>
+            <p className="mt-2 text-[11px] text-ink-mute">Marketplace links are affiliate links: we may earn a commission, and it never changes the store rankings above. <Link href="/disclosure" className="underline">Learn more</Link></p>
           </div>
           <p className="mt-3 text-xs text-ink-mute">
             Prices include GST and are checked daily. Delivery and in-store availability vary — confirm on the retailer&apos;s site.

@@ -7,6 +7,7 @@ import { activeCategories, activeRetailers, getSummaries } from "@/lib/catalog";
 import { categoryById, CATEGORIES, DEPARTMENTS } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
 import { ogImage } from "@/lib/og";
+import { EbayStrip } from "@/components/EbayStrip";
 
 export const dynamicParams = false;
 export const generateStaticParams = () => activeCategories().map((c) => ({ category: c.id }));
@@ -60,6 +61,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
           <PhoneBrowser phones={products} category={id} />
         </Suspense>
       </div>
+      <EbayStrip query={c.noun} label={c.name.toLowerCase()} customid={`cat-${c.id}`} phones={c.id === "phones"} />
     </div>
   );
 }

@@ -21,11 +21,11 @@ export function Footer() {
         </div>
         <FooterCol title="Shop" links={[["All phones", "/phones"], ["Today's deals", "/deals"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"]]} />
         <FooterCol title="Categories" links={activeCategories().map((c) => [c.name, c.href] as [string, string])} />
-        <FooterCol title="Compare Empire" links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Retailers we check", "/about#retailers"], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["Privacy", "/privacy"]]} />
+        <FooterCol title="Compare Empire" links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Retailers we check", "/about#retailers"], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["How we make money", "/disclosure"], ["Privacy", "/privacy"]]} />
       </div>
       <div className="border-t border-line">
         <div className="container-x flex flex-col gap-2 py-5 text-xs text-ink-mute sm:flex-row sm:justify-between">
-          <span>© {new Date().getFullYear()} Compare Empire. Prices in AUD incl. GST; check the retailer for the final price.</span>
+          <span>© {new Date().getFullYear()} Compare Empire. Prices in AUD incl. GST; check the retailer for the final price. eBay links are affiliate links; we may earn a commission.</span>
           <span>
             <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-ink">{CONTACT_EMAIL}</a> · Made in Australia 🇦🇺
           </span>
