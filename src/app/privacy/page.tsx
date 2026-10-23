@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy — Compare Empire",
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/privacy" },
 };
 
-const CONTACT = "hello@compareempire.com";
+const CONTACT = CONTACT_EMAIL;
 
 export default function PrivacyPage() {
   return (

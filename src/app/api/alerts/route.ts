@@ -1,5 +1,5 @@
 import { ensureSchema } from "@/lib/db";
-import { escapeHtml, sendEmail } from "@/lib/email";
+import { emailConfigured, escapeHtml, sendEmail } from "@/lib/email";
 import { clip, ipHash, isEmail, json, token } from "@/lib/server-utils";
 import { SITE } from "@/lib/site";
 
@@ -13,7 +13,7 @@ export const dynamic = "force-dynamic";
 export async function POST(req: Request) {
   const sql = await ensureSchema();
   if (!sql) return json({ ok: false, error: "Price alerts aren't switched on yet." }, 503);
-  if (!process.env.RESEND_API_KEY) return json({ ok: false, error: "Price alerts aren't switched on yet." }, 503);
+  if (!emailConfigured()) return json({ ok: false, error: "Price alerts aren't switched on yet." }, 503);
   const body = await req.json().catch(() => ({}));
   if (body.website) return json({ ok: true });
   if (!isEmail(body.email)) return json({ ok: false, error: "That email doesn't look right." }, 400);

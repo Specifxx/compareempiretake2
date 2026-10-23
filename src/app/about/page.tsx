@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CONTACT_EMAIL } from "@/lib/site";
 import { RetailerDot } from "@/components/RetailerChip";
 import { getCatalog } from "@/lib/catalog";
 
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about" },
 };
 
-const CONTACT = "hello@compareempire.com";
+const CONTACT = CONTACT_EMAIL;
 
 export default function AboutPage() {
   const { retailers, phones, updatedAt } = getCatalog();

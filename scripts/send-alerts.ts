@@ -2,16 +2,15 @@
  * Emails price-drop alerts after the daily catalogue build. For each confirmed,
  * active alert it looks up today's best price; if that is at or under the
  * target and lower than the last price we emailed about, it sends one email.
- * Needs DATABASE_URL, RESEND_API_KEY and EMAIL_FROM; exits quietly without them.
+ * Needs DATABASE_URL, BREVO_API_KEY (or RESEND_API_KEY) and EMAIL_FROM; exits quietly without them.
  */
 import { readFileSync, existsSync } from "node:fs";
 import { neon } from "@neondatabase/serverless";
 import type { Phone } from "../src/lib/types";
+import { emailConfigured, sendMail } from "../src/lib/mailer";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.compareempire.com";
 const url = process.env.DATABASE_URL;
-const key = process.env.RESEND_API_KEY;
-const from = process.env.EMAIL_FROM;
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 const aud = (n: number) => `$${n.toLocaleString("en-AU", { maximumFractionDigits: 2 })}`;
@@ -31,18 +30,11 @@ function catalog(cat: string) {
   return catalogs.get(cat)!;
 }
 
-async function send(to: string, subject: string, html: string, text: string, unsub: string) {
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: { authorization: `Bearer ${key}`, "content-type": "application/json" },
-    body: JSON.stringify({ from, to, subject, html, text, headers: { "List-Unsubscribe": `<${unsub}>`, "List-Unsubscribe-Post": "List-Unsubscribe=One-Click" } }),
-  });
-  if (!res.ok) console.error(`email to alert failed: ${res.status} ${await res.text()}`);
-  return res.ok;
-}
+const send = (to: string, subject: string, html: string, text: string, unsub: string) =>
+  sendMail({ to, subject, html, text, headers: { "List-Unsubscribe": `<${unsub}>`, "List-Unsubscribe-Post": "List-Unsubscribe=One-Click" } });
 
 async function main() {
-  if (!url || !key || !from) { console.log("Alerts not configured; skipping."); return; }
+  if (!url || !emailConfigured()) { console.log("Alerts not configured; skipping."); return; }
   const sql = neon(url);
   const rows = (await sql`SELECT id, email, product, product_name, variant, variant_label, target::float8 AS target,
       last_notified_price::float8 AS last_notified_price, token

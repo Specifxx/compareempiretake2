@@ -9,7 +9,7 @@ import { activeCategories, getBrands } from "@/lib/catalog";
 import { DEPARTMENTS, FEATURED } from "@/lib/categories";
 import type { NavDepartment } from "@/components/Header";
 import type { CategoryId } from "@/lib/types";
-import { SITE } from "@/lib/site";
+import { CONTACT_EMAIL, SITE } from "@/lib/site";
 import "./globals.css";
 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
@@ -64,6 +64,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-screen font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Compare Empire",
+              url: SITE,
+              email: CONTACT_EMAIL,
+              contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: CONTACT_EMAIL, areaServed: "AU", availableLanguage: "en" },
+            }),
+          }}
+        />
         <Header departments={departments} />
         <main>{children}</main>
         <Footer />

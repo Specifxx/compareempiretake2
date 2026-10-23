@@ -1,4 +1,5 @@
 "use client";
+import { CONTACT_EMAIL } from "@/lib/site";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { CloseIcon } from "./icons";
@@ -13,6 +14,11 @@ const KINDS = [
 ] as const;
 
 /** Floating "Feedback" button on every page: send feedback or write a review of the site. */
+/** A button anywhere on the site that opens the feedback panel. */
+export function OpenFeedbackButton({ className, children }: { className?: string; children: React.ReactNode }) {
+  return <button type="button" className={className} onClick={() => window.dispatchEvent(new CustomEvent("ce:feedback", { detail: "feedback" }))}>{children}</button>;
+}
+
 export function FeedbackWidget() {
   const [open, setOpen] = useState(false);
   const [tab, setTab] = useState<Tab>("feedback");
@@ -91,6 +97,7 @@ function FeedbackForm({ page }: { page: string }) {
       <input value={hp} onChange={(e) => setHp(e.target.value)} tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
       {state.s === "error" && <p className="text-sm text-hot">{state.msg}</p>}
       <button className="btn-primary w-full" disabled={state.s === "busy"}>{state.s === "busy" ? "Sending…" : "Send feedback"}</button>
+      <p className="text-center text-xs text-ink-mute">Prefer email? <a className="underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p>
     </form>
   );
 }
