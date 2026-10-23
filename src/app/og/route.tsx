@@ -51,7 +51,7 @@ export function GET(req: Request) {
         </div>
         {safeImage && (
           <div style={{ display: "flex", width: 500, alignItems: "center", justifyContent: "center", padding: 40 }}>
-            <img src={safeImage} width={420} height={420} style={{ objectFit: "contain" }} />
+            <img src={safeImage} alt="" width={420} height={420} style={{ objectFit: "contain" }} />
           </div>
         )}
       </div>
