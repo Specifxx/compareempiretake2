@@ -19,3 +19,11 @@ SEO-tool and bulk crawlers (Ahrefs, Semrush, MJ12, DotBot, Petal, Bytespider, Da
 barkrowler, Seekport) send no visitors. They are disallowed; search engines are not. `/admin` and
 `/api/` are disallowed for everyone. robots.txt is advisory, so the Vercel Firewall's bot rules do the
 enforcing (see COST.md).
+
+## 2026-10-24: One "buy_click" event per store click
+
+Every outbound store or marketplace link carries `data-buy="<retailer>"` (plus product, price, kind and
+rank where known). One capturing listener in `SiteAnalytics.tsx` sends a Vercel Analytics custom event
+`buy_click` with those properties, so Analytics → Events shows which retailers people click through to.
+It uses the same real-visitor filter as pageviews, and middle-clicks count too. One listener rather than
+an onClick per link keeps server components (EbayStrip, brands page) server-only.

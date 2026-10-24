@@ -70,7 +70,7 @@ export function CompareView({ phones }: { phones: Phone[] }) {
           (p: Phone) => {
             const o = p.variants.flatMap((v) => v.offers.filter((x) => x.retailer === r && x.kind !== "plan").map((x) => ({ ...x, gb: v.storageGb }))).sort((a, b) => a.price - b.price)[0];
             return o ? (
-              <a href={o.url} target="_blank" rel="noopener nofollow" className="hover:text-brand">
+              <a href={o.url} target="_blank" rel="noopener nofollow" data-buy={r} data-buy-product={`/${p.category}/${p.slug}`} data-buy-price={o.price} data-buy-kind="compare" className="hover:text-brand">
                 <span className="font-semibold">${o.price.toLocaleString("en-AU")}</span> <span className="text-xs text-ink-mute">{storageLabel(o.gb)}</span>
               </a>
             ) : (

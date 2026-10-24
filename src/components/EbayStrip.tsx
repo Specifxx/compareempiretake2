@@ -17,7 +17,7 @@ export function EbayStrip({ query, label, customid, phones }: { query: string; l
       </div>
       <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
         {links.map(([t, d, href]) => (
-          <a key={t} href={href} target="_blank" rel={SPONSORED_REL} className="rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+          <a key={t} data-buy="ebay" data-buy-product={customid} data-buy-kind={`strip-${t.split(" ")[0].toLowerCase()}`} href={href} target="_blank" rel={SPONSORED_REL} className="rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
             <span className="font-semibold">{t} ↗</span>
             <span className="block text-[11px] text-ink-mute">{d}</span>
           </a>

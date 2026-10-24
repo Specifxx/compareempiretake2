@@ -180,6 +180,11 @@ export function PhoneOffers({
                   href={o.url}
                   target="_blank"
                   rel="noopener nofollow"
+                  data-buy={o.retailer}
+                  data-buy-product={href}
+                  data-buy-price={o.price}
+                  data-buy-rank={i + 1}
+                  data-buy-kind="outright"
                   className={`card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4 ${i === 0 && o.inStock ? "ring-2 ring-save/60" : ""}`}
                 >
                   <div className="min-w-0 flex-1">
@@ -230,7 +235,7 @@ export function PhoneOffers({
           <ol className="space-y-2.5">
             {[...planRows].sort((a, b) => (a.best.monthly ?? 0) - (b.best.monthly ?? 0)).map(({ best: o }) => (
               <li key={o.retailer}>
-                <a href={o.url} target="_blank" rel="noopener nofollow" className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
+                <a href={o.url} target="_blank" rel="noopener nofollow" data-buy={o.retailer} data-buy-product={href} data-buy-price={o.monthly} data-buy-kind="plan" className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
                   <div className="min-w-0 flex-1">
                     <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
                     <div className="mt-1 text-xs text-ink-mute">
@@ -258,7 +263,7 @@ export function PhoneOffers({
             <p className="mt-0.5 text-xs text-ink-mute">Sometimes cheaper, but listings mix sellers and warranties, so we link to a search rather than rank them.</p>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
               {MARKETPLACES.map((m) => (
-                <a key={m.id} href={m.url(mq, `p-${phone.category}-${phone.slug}`, phone.category === "phones")} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+                <a key={m.id} data-buy={m.id} data-buy-product={href} data-buy-kind="marketplace-new" href={m.url(mq, `p-${phone.category}-${phone.slug}`, phone.category === "phones")} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
                   <span>
                     <span className="font-semibold">Search {m.name}</span>
                     <span className="block text-[11px] text-ink-mute">{m.note}</span>
@@ -266,14 +271,14 @@ export function PhoneOffers({
                   <ExternalIcon className="h-4 w-4 text-ink-mute" />
                 </a>
               ))}
-              <a href={ebaySearch(mq, { condition: "refurbished", customid: `p-${phone.category}-${phone.slug}-refurb`, phones: phone.category === "phones" })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+              <a data-buy="ebay" data-buy-product={href} data-buy-kind="marketplace-refurbished" href={ebaySearch(mq, { condition: "refurbished", customid: `p-${phone.category}-${phone.slug}-refurb`, phones: phone.category === "phones" })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
                 <span>
                   <span className="font-semibold">Refurbished on eBay</span>
                   <span className="block text-[11px] text-ink-mute">Often far cheaper; check the warranty</span>
                 </span>
                 <ExternalIcon className="h-4 w-4 text-ink-mute" />
               </a>
-              <a href={ebaySearch(mq, { condition: "used", customid: `p-${phone.category}-${phone.slug}-used`, phones: phone.category === "phones" })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+              <a data-buy="ebay" data-buy-product={href} data-buy-kind="marketplace-used" href={ebaySearch(mq, { condition: "used", customid: `p-${phone.category}-${phone.slug}-used`, phones: phone.category === "phones" })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
                 <span>
                   <span className="font-semibold">Used on eBay</span>
                   <span className="block text-[11px] text-ink-mute">The cheapest way in, from Australian sellers</span>

@@ -53,7 +53,7 @@ export default function BrandsPage() {
               <p className="mt-1 text-xs text-ink-mute">{why}</p>
               <div className="mt-3 flex gap-2">
                 {MARKETPLACES.map((m) => (
-                  <a key={m.id} href={m.url(`${brand} phone`, `brand-${brand}`, true)} target="_blank" rel="noopener nofollow sponsored" className="chip text-xs">Search {m.name}</a>
+                  <a key={m.id} data-buy={m.id} data-buy-product={`brand-${brand}`} data-buy-kind="marketplace-new" href={m.url(`${brand} phone`, `brand-${brand}`, true)} target="_blank" rel="noopener nofollow sponsored" className="chip text-xs">Search {m.name}</a>
                 ))}
               </div>
             </div>
