@@ -4,7 +4,7 @@
  * ("Snapdragon X2 Plus (6 Core), Black, 16 GB RAM, 256 GB UFS"). Surface Laptop -> laptops, Surface Pro -> tablets.
  */
 import type { CategoryId, RawOffer } from "../../../../src/lib/types";
-import { decodeEntities, get, sleep } from "../../../lib/http";
+import { decodeEntities, get, pool, sleep } from "../../../lib/http";
 
 function jsonLd(html: string): Record<string, unknown>[] {
   const out: Record<string, unknown>[] = [];
@@ -26,14 +26,15 @@ async function all() {
     for (const li of (n.itemListElement as { name: string; url: string }[]) ?? []) items.set(li.url, li.name);
   }
   const out: { kind: "laptops" | "tablets"; offer: RawOffer }[] = [];
-  for (const [url, listName] of items) {
+  // UK product pages are slow (10-30 s each), so fetch three at a time.
+  await pool([...items], 3, async ([url, listName]) => {
     const kind = /surface laptop/i.test(listName) ? "laptops" : /surface pro|surface go/i.test(listName) ? "tablets" : undefined;
-    if (!kind || /keyboard|pen|mouse|dock|case|charger|adapter|refurb/i.test(listName)) continue;
+    if (!kind || /keyboard|pen|mouse|dock|case|charger|adapter|refurb/i.test(listName)) return;
     let html: string;
     try {
-      html = await get(url);
+      html = await get(url, 2);
     } catch {
-      continue;
+      return;
     }
     const p = jsonLd(html).find((n) => n["@type"] === "Product");
     const agg = p?.offers as { offers?: { price?: number; disambiguatingDescription?: string; availability?: string }[] } | undefined;
@@ -56,7 +57,7 @@ async function all() {
       });
     }
     await sleep(1000);
-  }
+  });
   return out;
 }
 

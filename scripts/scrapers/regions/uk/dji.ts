@@ -1,7 +1,7 @@
 /**
  * DJI Store UK (store.dji.com/uk): drones and action/360/pocket cameras.
  * The home page (?set_region=GB) server-renders `window.__PRELOADED_STATE__`, whose product cards carry
- * title, slug, price/originalPrice (AUD) and status. DJI shows no part number on the store, so mpn stays empty;
+ * title, slug, price/originalPrice (GBP) and status. DJI shows no part number on the store, so mpn stays empty;
  * the bundle ("Fly More Combo (DJI RC 2)", "Standard Combo") is part of the title and identifies the SKU.
  */
 import type { CategoryId, RawOffer, RetailerId } from "../../../../src/lib/types";

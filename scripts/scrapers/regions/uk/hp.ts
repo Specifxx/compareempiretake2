@@ -1,73 +1,66 @@
 /**
- * HP AU store (Magento): laptops, monitors, desktops and printers from JSON-LD Products on listing pages (?p=N).
- * Each Product carries sku = mpn = HP's product number (e.g. C0DE0PA); refurbished units end in "R" and say so.
+ * HP UK store (hp.com/gb-en/shop, Magento PWA): laptops, desktops, monitors and printers.
+ * The storefront's own public GraphQL endpoint (GET /gb-en/shop/graphql, no key) lists each top-level category
+ * (Laptops "Mw==", Desktops "NA==", Monitors "Ng==", Printers "Nw==") with sku = HP product number (e.g. D37HYEA#ABU),
+ * name, url_key, stock_status and price_range (GBP; final_price is the "Incl. VAT" price the product page shows).
+ * Refurbished units, accessories and care packs are dropped by name.
  */
 import type { CategoryId, RawOffer } from "../../../../src/lib/types";
 import { decodeEntities, get, sleep } from "../../../lib/http";
 
-function* walk(o: unknown): Generator<Record<string, unknown>> {
-  if (Array.isArray(o)) for (const x of o) yield* walk(x);
-  else if (o && typeof o === "object") {
-    yield o as Record<string, unknown>;
-    for (const v of Object.values(o)) yield* walk(v);
+const GQL = "https://www.hp.com/gb-en/shop/graphql";
+
+type Item = {
+  sku: string;
+  name: string;
+  url_key: string;
+  stock_status?: string;
+  small_image?: { url?: string };
+  price_range?: { minimum_price?: { final_price?: { value?: number }; regular_price?: { value?: number } } };
+};
+
+async function category(uid: string): Promise<Item[]> {
+  const out: Item[] = [];
+  for (let page = 1; page <= 20; page++) {
+    const q = `{products(filter:{category_uid:{eq:"${uid}"}},pageSize:100,currentPage:${page}){total_count items{sku name url_key stock_status small_image{url} price_range{minimum_price{final_price{value} regular_price{value}}}}}}`;
+    const d = JSON.parse(await get(`${GQL}?query=${encodeURIComponent(q)}`)) as { data?: { products?: { total_count: number; items: Item[] } } };
+    const p = d.data?.products;
+    if (!p) throw new Error("HP GraphQL: no products");
+    out.push(...p.items);
+    if (page * 100 >= p.total_count || !p.items.length) break;
+    await sleep(1000);
   }
+  return out;
 }
 
-async function crawl(listing: string, keep: (name: string) => boolean): Promise<RawOffer[]> {
+const ACCESSORY = /\b(bag|backpack|sleeve|case|mouse|keyboard|dock|adapter|charger|pen|stand|arm|mount|cable|headset|speaker|care ?pack|warranty|ink|toner|cartridge|paper)\b/i;
+
+async function scrape(uid: string, keep: (n: string) => boolean): Promise<RawOffer[]> {
   const out = new Map<string, RawOffer>();
-  for (let page = 1; page <= 30; page++) {
-    let html: string;
-    try {
-      html = await get(`${listing}?p=${page}&product_list_limit=36`);
-    } catch (e) {
-      if (page === 1) throw e;
-      break;
-    }
-    const before = out.size;
-    for (const [, body] of html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)) {
-      let d: unknown;
-      try {
-        d = JSON.parse(body);
-      } catch {
-        continue;
-      }
-      for (const n of walk(d)) {
-        if (n["@type"] !== "Product" || !n.sku) continue;
-        const sku = String(n.sku);
-        const name = decodeEntities(String(n.name ?? "")).replace(/\s+/g, " ").trim();
-        const offer = n.offers as Record<string, unknown> | undefined;
-        const price = Number(offer?.price);
-        if (!name || !price || out.has(sku)) continue;
-        if (/refurb|renewed|open.?box/i.test(name) || /\dR$|-/.test(sku) || / \+ /.test(name) || !keep(name)) continue;
-        const href = html.match(new RegExp(`href="(https://www\\.hp\\.com/au-en/shop/[a-z0-9-]*${sku.toLowerCase()}[a-z0-9-]*\\.html)"`))?.[1];
-        const img = Array.isArray(n.image) ? (n.image.flat() as string[])[0] : (n.image as string | undefined);
-        out.set(sku, {
-          retailer: "uk-hp",
-          sku,
-          mpn: String(n.mpn ?? sku),
-          brand: "HP",
-          title: name,
-          url: href ?? listing,
-          price,
-          image: img,
-          inStock: !/OutOfStock|SoldOut/i.test(String(offer?.availability ?? "")),
-        });
-      }
-    }
-    if (out.size === before && page > 1) break;
-    await sleep(1200);
+  for (const it of await category(uid)) {
+    const name = decodeEntities(it.name ?? "").replace(/[™®]/g, "").replace(/\s+/g, " ").replace(/ ,/g, ",").trim();
+    const price = it.price_range?.minimum_price?.final_price?.value;
+    const was = it.price_range?.minimum_price?.regular_price?.value;
+    if (!name || !price || out.has(it.sku) || /refurb|renewed|open.?box/i.test(name) || /R(#|$)/.test(it.sku) || !keep(name)) continue;
+    out.set(it.sku, {
+      retailer: "uk-hp",
+      sku: it.sku,
+      mpn: it.sku,
+      brand: "HP",
+      title: name,
+      url: `https://www.hp.com/gb-en/shop/${it.url_key}`,
+      price,
+      wasPrice: was && was > price ? was : undefined,
+      image: it.small_image?.url,
+      inStock: it.stock_status === "IN_STOCK",
+    });
   }
   return [...out.values()];
 }
 
-const ACCESSORY = /\b(bag|backpack|sleeve|case|mouse|keyboard|dock|adapter|charger|pen|stand|arm|mount|cable|headset|speaker)\b/i;
-
 export const scrapers: Partial<Record<CategoryId, () => Promise<RawOffer[]>>> = {
-  laptops: () =>
-    crawl("https://www.hp.com/au-en/shop/laptops-tablets.html", (n) => /laptop|chromebook|notebook|omnibook|omnipad|elitebook|probook|zbook|omen|victus|spectre|envy|pavilion|detachable/i.test(n) && !ACCESSORY.test(n)),
-  desktops: () =>
-    crawl("https://www.hp.com/au-en/shop/desktops.html", (n) => /desktop|all-in-one|\baio\b|tower|mini|omen|envy|pavilion|elitedesk|prodesk|z2|z4|z6|z8|elite|pro\b/i.test(n) && !ACCESSORY.test(n) && !/\bmonitor\b(?!.*(desktop|all-in-one))/i.test(n)),
-  printers: () =>
-    crawl("https://www.hp.com/au-en/shop/printers.html", (n) => /printer|laserjet|deskjet|officejet|envy|smart tank|designjet|sprocket|scanjet|scanner/i.test(n) && !/\b(ink|toner|cartridge|paper|drum|tray|bottle|maintenance|fuser|carepack|care pack)\b/i.test(n)),
-  monitors: () => crawl("https://www.hp.com/au-en/shop/monitors.html", (n) => /monitor|display/i.test(n) && !/\b(arm|mount|stand|cable|adapter|speaker|webcam)\b/i.test(n.replace(/monitor arm/i, "arm"))),
+  laptops: () => scrape("Mw==", (n) => /laptop|chromebook|notebook|omnibook|elitebook|probook|zbook|omen|victus|spectre|envy|pavilion|2-in-1/i.test(n) && !ACCESSORY.test(n)),
+  desktops: () => scrape("NA==", (n) => !ACCESSORY.test(n) && !/\bmonitor\b(?!.*(desktop|all-in-one))/i.test(n)),
+  monitors: () => scrape("Ng==", (n) => /monitor|display/i.test(n) && !/\b(arm|mount|stand|cable|adapter|speaker|webcam)\b/i.test(n.replace(/height.adjustable stand|stand-?alone/gi, ""))),
+  printers: () => scrape("Nw==", (n) => /printer|laserjet|deskjet|officejet|envy|smart tank|designjet|scanjet|scanner|all-in-one/i.test(n) && !ACCESSORY.test(n)),
 };

@@ -165,7 +165,7 @@ async function smartwatches(): Promise<RawOffer[]> {
     const model = clean(String(jsonLd(html).find((n) => n["@type"] === "Product")?.name ?? "Apple Watch"));
     const image = html.match(/<meta property="og:image" content="([^"]+)"/)?.[1];
     const price = new Map<string, number>();
-    for (const [, k, v] of html.matchAll(/"(watch_cases-[a-z0-9-]+)":\{"fullPrice-short":"A\$([0-9,.]+)"/g))
+    for (const [, k, v] of html.matchAll(/"(watch_cases-[a-z0-9-]+)":\{[^{}]*?"amount":([0-9.]+)/g)) // UK: {"comparativeDisplayPrice":…,"amount":519.00,…}
       price.set(k, Number(v.replace(/,/g, "")));
     const colour = new Map<string, string>();
     for (const [, k, v] of html.matchAll(/"dimensionValue":"([a-z0-9_]+)"[^{}]*?"text":"([^"]+)"/g)) if (!colour.has(k)) colour.set(k, decodeEntities(v));

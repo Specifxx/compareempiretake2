@@ -174,9 +174,14 @@ function build(category: CategoryId) {
   for (const g of groups.values()) {
     const model = mostCommon(g.models);
     const name = `${g.brand} ${model}`;
-    let slug = slugify(name);
+    // File names can't exceed 255 bytes; Australia's longest slug is 162, so 170 changes no existing URL.
+    const cap = (x: string) => (x.length <= 170 ? x : x.slice(0, 170).replace(/-[^-]*$/, ""));
+    let slug = cap(slugify(name));
     // Two listings with the same display name but different keys (codes) must not share a URL.
-    while (usedSlugs.has(slug)) slug = `${slugify(name)}-${slugify(g.code ?? String(usedSlugs.size))}`;
+    for (let n = 2; usedSlugs.has(slug); n++) {
+      const suffix = slugify(g.code ?? String(usedSlugs.size)) + (n > 2 ? `-${n}` : "");
+      slug = `${cap(slugify(name)).slice(0, 168 - suffix.length)}-${suffix}`;
+    }
     usedSlugs.add(slug);
     const variants: Variant[] = [];
     for (const [vid, { label, storageGb, offers: raw }] of [...g.byVariant].sort((a, b) => a[1].storageGb - b[1].storageGb || a[0].localeCompare(b[0]))) {
