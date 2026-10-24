@@ -39,7 +39,10 @@ const median = (xs: number[]) => {
   const m = s.length >> 1;
   return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
 };
-const money = (n: number) => `$${Math.round(n).toLocaleString("en-AU")}`;
+// UK stores' ids start with "uk-" and price in pounds; AU and US both use "$".
+let sym = "$";
+const money = (n: number) => `${sym}${Math.round(n).toLocaleString("en-AU")}`;
+const setSymbolFor = (r?: RetailerId) => (sym = r?.startsWith("uk-") ? "£" : "$");
 /** "29 Oct", or "29 Oct 2025" when it isn't this year — history now spans years. */
 export const shortDate = (d: string) => {
   const date = new Date(d + "T00:00:00");
@@ -56,6 +59,7 @@ export function priceCheck(opts: {
   today: string;
 }): PriceCheck {
   const { price, best, stores, cheapest, storeName, today } = opts;
+  setSymbolFor(cheapest ?? (Object.keys(stores)[0] as RetailerId | undefined));
   // Prefer the complete daily line; until it covers a week, use the cheapest
   // store's own (longer, archived) history.
   let points = best;
@@ -95,6 +99,7 @@ export function priceCheck(opts: {
 /** Does the store's own "was" price match anything we've recorded at that store? */
 export function wasCheck(o: Offer, history: Point[] | undefined, storeName: string, today: string): WasCheck | undefined {
   if (!o.wasPrice) return undefined;
+  setSymbolFor(o.retailer);
   const pts = history ?? [];
   // Only an earlier day can back a "was" price — today's own price never does.
   const seen = pts.filter(([d, p]) => d < today && p >= o.wasPrice! * 0.98);

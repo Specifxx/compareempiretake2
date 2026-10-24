@@ -2,6 +2,7 @@ import { ensureSchema } from "@/lib/db";
 import { emailConfigured, escapeHtml, sendEmail } from "@/lib/email";
 import { clip, ipHash, isEmail, json, token } from "@/lib/server-utils";
 import { SITE } from "@/lib/site";
+import { money, regionOf } from "@/lib/region";
 
 export const dynamic = "force-dynamic";
 
@@ -19,8 +20,9 @@ export async function POST(req: Request) {
   if (!isEmail(body.email)) return json({ ok: false, error: "That email doesn't look right." }, 400);
   const email = body.email.toLowerCase();
   const product = clip(body.product, 200);
-  if (!/^\/[a-z-]+\/[a-z0-9-]+$/.test(product)) return json({ ok: false, error: "Unknown product." }, 400);
+  if (!/^(\/(us|uk))?\/[a-z-]+\/[a-z0-9-]+$/.test(product)) return json({ ok: false, error: "Unknown product." }, 400);
   const productName = clip(body.productName, 160) || product;
+  const alertRegion = regionOf(product);
   const variant = clip(body.variant, 60);
   const variantLabel = clip(body.variantLabel, 80) || null;
   const price = Number(body.price);
@@ -48,11 +50,11 @@ export async function POST(req: Request) {
     email,
     `Confirm your price alert: ${productName}`,
     `<div style="font:15px/1.6 -apple-system,Segoe UI,sans-serif;color:#11111a;max-width:520px">
-      <p>Hi! Please confirm you'd like an email when <b>${escapeHtml(what)}</b> drops to <b>$${target.toLocaleString("en-AU")}</b> or less at any Australian store we check.</p>
+      <p>Hi! Please confirm you'd like an email when <b>${escapeHtml(what)}</b> drops to <b>${money(target, alertRegion)}</b> or less at any Australian store we check.</p>
       <p><a href="${confirm}" style="display:inline-block;background:#5B3DF5;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600">Confirm my alert</a></p>
       <p style="color:#707084;font-size:13px">Didn't ask for this? Ignore this email and nothing happens. <a href="${unsub}" style="color:#707084">Never email me</a>.</p>
       <p style="color:#707084;font-size:13px">Compare Empire · compareempire.com</p></div>`,
-    `Confirm your Compare Empire price alert for ${what} at $${target}: ${confirm}\n\nDidn't ask for this? Ignore this email. Unsubscribe: ${unsub}`,
+    `Confirm your Compare Empire price alert for ${what} at ${money(target, alertRegion)}: ${confirm}\n\nDidn't ask for this? Ignore this email. Unsubscribe: ${unsub}`,
   );
   if (!sent) return json({ ok: false, error: "We couldn't send the confirmation email. Please try again later." }, 502);
   return json({ ok: true, confirm: true });

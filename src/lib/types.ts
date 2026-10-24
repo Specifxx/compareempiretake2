@@ -49,7 +49,10 @@ export type CategoryId =
   | "drones"
   | "robot-vacuums";
 
+/** AU stores keep bare ids; US and UK stores are prefixed with their region ("us-bestbuy", "uk-currys"). */
 export type RetailerId =
+  | `us-${string}`
+  | `uk-${string}`
   | "jbhifi"
   | "harveynorman"
   | "thegoodguys"
@@ -144,6 +147,8 @@ export interface Phone {
   /** Release-ish ordering: higher is newer, derived from model numbers. */
   generation: number;
   firstSeen: string;
+  /** Set when the catalogue is loaded (not stored): the country this product's prices are from. */
+  region?: import("./region").RegionId;
 }
 
 export interface Specs {

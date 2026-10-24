@@ -6,8 +6,9 @@
  *   npx tsx scripts/scrape-categories.ts                 # everything
  *   npx tsx scripts/scrape-categories.ts jbhifi umart    # some stores
  *   npx tsx scripts/scrape-categories.ts --cat tvs       # one category
+ *   npx tsx scripts/scrape-categories.ts --region us     # US stores (scripts/scrapers/regions/us/<store>.ts → data/us/<cat>/raw/us-<store>.json)
  */
-import { mkdirSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import type { CategoryId, RawOffer } from "../src/lib/types";
@@ -18,13 +19,19 @@ async function main() {
   const args = process.argv.slice(2);
   const ci = args.indexOf("--cat");
   const onlyCat = ci >= 0 ? (args.splice(ci, 2)[1] as CategoryId) : undefined;
+  const ri = args.indexOf("--region");
+  const region = ri >= 0 ? args.splice(ri, 2)[1] : "au";
+  if (!/^(au|us|uk)$/.test(region)) throw new Error(`unknown region ${region}`);
   const onlyStores = args;
-  const dir = path.join(process.cwd(), "scripts/scrapers/categories");
-  const files = readdirSync(dir).filter((f) => f.endsWith(".ts"));
+  const dir = path.join(process.cwd(), region === "au" ? "scripts/scrapers/categories" : `scripts/scrapers/regions/${region}`);
+  const root = region === "au" ? "data" : `data/${region}`;
+  const prefix = region === "au" ? "" : `${region}-`;
+  const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith(".ts")) : [];
   let ok = 0, failed = 0;
   for (const f of files) {
-    const retailer = f.replace(/\.ts$/, "");
-    if (onlyStores.length && !onlyStores.includes(retailer)) continue;
+    const store = f.replace(/\.ts$/, "");
+    const retailer = prefix + store;
+    if (onlyStores.length && !onlyStores.includes(store) && !onlyStores.includes(retailer)) continue;
     const mod = (await import(pathToFileURL(path.join(dir, f)).href)) as { scrapers?: Scrapers };
     for (const [cat, fn] of Object.entries(mod.scrapers ?? {}) as [CategoryId, () => Promise<RawOffer[]>][]) {
       if (onlyCat && cat !== onlyCat) continue;
@@ -33,8 +40,8 @@ async function main() {
         const offers = await fn();
         if (offers.length < 3) throw new Error(`only ${offers.length} offers — refusing to overwrite`);
         offers.sort((a, b) => a.title.localeCompare(b.title));
-        mkdirSync(`data/${cat}/raw`, { recursive: true });
-        writeFileSync(`data/${cat}/raw/${retailer}.json`, JSON.stringify({ scrapedAt: new Date().toISOString(), offers }, null, 1) + "\n");
+        mkdirSync(`${root}/${cat}/raw`, { recursive: true });
+        writeFileSync(`${root}/${cat}/raw/${retailer}.json`, JSON.stringify({ scrapedAt: new Date().toISOString(), offers }, null, 1) + "\n");
         console.log(`${cat}/${retailer}: ${offers.length} offers in ${((Date.now() - t) / 1000).toFixed(0)}s`);
         ok++;
       } catch (e) {

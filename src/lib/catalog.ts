@@ -5,58 +5,80 @@ import { CATEGORIES } from "./categories";
 import { storageLabel } from "./normalize";
 import { priceCheck, wasCheck, type PriceCheck, type WasCheck } from "./price-check";
 import { RETAILERS } from "./retailers";
+import { dataPath, money, REGION_IDS, REGIONS, withRegion, type RegionId } from "./region";
 import type { Catalog, CategoryId, Offer, Phone, Retailer, RetailerId, StoreSeries, Variant } from "./types";
 
 /**
- * Every live category's data/<id>/*.json, read once at build time. Pages are
- * prerendered, so nothing here runs per request.
+ * Every live category's data/<id>/*.json (data/<region>/<id> outside Australia), read once per
+ * region at build time. Pages are prerendered, so nothing here runs per request. Each product
+ * carries its region, so product-level helpers (href, series, price check) need no extra argument.
  */
 type Series = Record<string, Record<string, [string, number][]>>;
 interface Loaded { catalog: Catalog; series: Series; stores: StoreSeries }
+interface RegionData { loaded: Map<CategoryId, Loaded>; all: Phone[]; bySlug: Map<string, Phone>; updated: string }
 const read = <T,>(file: string, fallback: T): T => (existsSync(file) ? (JSON.parse(readFileSync(file, "utf8")) as T) : fallback);
-const loaded = new Map<CategoryId, Loaded>();
-for (const c of CATEGORIES) {
-  const dir = path.join(process.cwd(), "data", c.id);
-  if (!c.live || !existsSync(path.join(dir, "catalog.json"))) continue;
-  const catalog = read<Catalog>(path.join(dir, "catalog.json"), { category: c.id as CategoryId, updatedAt: "", retailers: [], phones: [] });
-  for (const p of catalog.phones) p.category ??= c.id as CategoryId;
-  loaded.set(c.id as CategoryId, { catalog, series: read(path.join(dir, "series.json"), {}), stores: read(path.join(dir, "store-series.json"), {}) });
+const regions = new Map<RegionId, RegionData>();
+function data(region: RegionId): RegionData {
+  let d = regions.get(region);
+  if (d) return d;
+  const loaded = new Map<CategoryId, Loaded>();
+  for (const c of CATEGORIES) {
+    const dir = path.join(process.cwd(), dataPath(region, c.id));
+    if (!c.live || !existsSync(path.join(dir, "catalog.json"))) continue;
+    const catalog = read<Catalog>(path.join(dir, "catalog.json"), { category: c.id as CategoryId, updatedAt: "", retailers: [], phones: [] });
+    for (const p of catalog.phones) {
+      p.category ??= c.id as CategoryId;
+      p.region = region;
+    }
+    loaded.set(c.id as CategoryId, { catalog, series: read(path.join(dir, "series.json"), {}), stores: read(path.join(dir, "store-series.json"), {}) });
+  }
+  const all = [...loaded.values()].flatMap((l) => l.catalog.phones);
+  d = { loaded, all, bySlug: new Map(all.map((p) => [`${p.category}/${p.slug}`, p])), updated: [...loaded.values()].map((l) => l.catalog.updatedAt).sort().at(-1) ?? new Date().toISOString() };
+  regions.set(region, d);
+  return d;
 }
-const ALL: Phone[] = [...loaded.values()].flatMap((l) => l.catalog.phones);
-const BY_SLUG = new Map(ALL.map((p) => [`${p.category}/${p.slug}`, p]));
-const UPDATED = [...loaded.values()].map((l) => l.catalog.updatedAt).sort().at(-1) ?? new Date().toISOString();
+const regionOfProduct = (p: Phone): RegionId => p.region ?? "au";
 
 /** Categories that actually have products today. */
-export const activeCategories = () => CATEGORIES.filter((c) => loaded.has(c.id as CategoryId) && loaded.get(c.id as CategoryId)!.catalog.phones.length > 0);
+export const activeCategories = (region: RegionId = "au") => CATEGORIES.filter((c) => (data(region).loaded.get(c.id as CategoryId)?.catalog.phones.length ?? 0) > 0);
+
+/** Regions with at least one product. */
+export const liveRegions = (): RegionId[] => REGION_IDS.filter((r) => data(r).all.length > 0);
 
 /** Retailers with at least one listing in any category. */
-export function activeRetailers(category?: CategoryId): Retailer[] {
-  const ids = new Set((category ? getProducts(category) : ALL).flatMap((p) => p.variants.flatMap((v) => v.offers.map((o) => o.retailer))));
+export function activeRetailers(category?: CategoryId, region: RegionId = "au"): Retailer[] {
+  const ids = new Set(getProducts(category, region).flatMap((p) => p.variants.flatMap((v) => v.offers.map((o) => o.retailer))));
   return Object.values(RETAILERS).filter((r) => ids.has(r.id));
 }
 
 /** The combined catalogue (all categories), or one category's. */
-export const getCatalog = (category?: CategoryId): Catalog =>
-  category ? loaded.get(category)?.catalog ?? { category, updatedAt: UPDATED, retailers: [], phones: [] } : { category: "phones", updatedAt: UPDATED, retailers: activeRetailers(), phones: ALL };
-export const getProducts = (category?: CategoryId) => (category ? loaded.get(category)?.catalog.phones ?? [] : ALL);
-export const getProduct = (category: CategoryId, slug: string) => BY_SLUG.get(`${category}/${slug}`);
-export const getPhones = () => getProducts("phones");
+export function getCatalog(category?: CategoryId, region: RegionId = "au"): Catalog {
+  const d = data(region);
+  return category
+    ? d.loaded.get(category)?.catalog ?? { category, updatedAt: d.updated, retailers: [], phones: [] }
+    : { category: "phones", updatedAt: d.updated, retailers: activeRetailers(undefined, region), phones: d.all };
+}
+export const getProducts = (category?: CategoryId, region: RegionId = "au") => (category ? data(region).loaded.get(category)?.catalog.phones ?? [] : data(region).all);
+export const getProduct = (category: CategoryId, slug: string, region: RegionId = "au") => data(region).bySlug.get(`${category}/${slug}`);
+export const getPhones = (region: RegionId = "au") => getProducts("phones", region);
 export const getPhone = (slug: string) => getProduct("phones", slug);
-export const getSeries = (p: Phone) => loaded.get(p.category)?.series[p.slug] ?? {};
-export const getStoreSeries = (p: Phone) => loaded.get(p.category)?.stores[p.slug] ?? {};
-export const productHref = (p: { category: CategoryId; slug: string }) => `/${p.category}/${p.slug}`;
+export const getSeries = (p: Phone) => data(regionOfProduct(p)).loaded.get(p.category)?.series[p.slug] ?? {};
+export const getStoreSeries = (p: Phone) => data(regionOfProduct(p)).loaded.get(p.category)?.stores[p.slug] ?? {};
+export const productHref = (p: { category: CategoryId; slug: string; region?: RegionId }) => withRegion(`/${p.category}/${p.slug}`, p.region ?? "au");
+/** Category page link in a region: "/tvs", "/us/tvs". */
+export const categoryHref = (category: string, region: RegionId = "au") => withRegion(`/${category}`, region);
 
-/** Today's date in Sydney, from the last import (not the build clock). */
-export const catalogDay = () => new Date(UPDATED).toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+/** Today's date in the region, from the last import (not the build clock). */
+export const catalogDay = (region: RegionId = "au") => new Date(data(region).updated).toLocaleDateString("en-CA", { timeZone: REGIONS[region].timeZone });
 
 export function checkVariant(p: Phone, v: Variant): { check: PriceCheck; was: Partial<Record<RetailerId, WasCheck>> } {
   const outright = v.offers.filter((o) => o.kind !== "plan");
   const cheapest = (outright.find((o) => o.inStock && o.price === v.bestPrice) ?? outright[0])?.retailer;
   const stores = getStoreSeries(p)[v.id] ?? {};
-  const check = priceCheck({ price: v.bestPrice, best: getSeries(p)[v.id] ?? [], stores, cheapest, storeName: (r) => RETAILERS[r].name, today: catalogDay() });
+  const check = priceCheck({ price: v.bestPrice, best: getSeries(p)[v.id] ?? [], stores, cheapest, storeName: (r) => RETAILERS[r].name, today: catalogDay(regionOfProduct(p)) });
   const was: Partial<Record<RetailerId, WasCheck>> = {};
   for (const o of outright) {
-    const w = wasCheck(o, stores[o.retailer], RETAILERS[o.retailer].name, catalogDay());
+    const w = wasCheck(o, stores[o.retailer], RETAILERS[o.retailer].name, catalogDay(regionOfProduct(p)));
     if (w && (!was[o.retailer] || o.price < (outright.find((x) => x.retailer === o.retailer && x.wasPrice === was[o.retailer]!.was)?.price ?? Infinity))) was[o.retailer] = w;
   }
   return { check, was };
@@ -87,6 +109,7 @@ export interface PhoneSummary {
   saving: number;
   inStock: boolean;
   atLowest: boolean;
+  region?: RegionId;
 }
 
 export function summarise(p: Phone): PhoneSummary {
@@ -116,11 +139,12 @@ export function summarise(p: Phone): PhoneSummary {
     generation: p.generation,
     saving: Math.max(0, ...deals.map((d) => d.saving)),
     inStock: p.variants.some((v) => v.offers.some((o) => o.inStock)),
+    region: p.region,
     atLowest: p.variants.some((v) => v.previousBest !== undefined && v.bestPrice <= (v.lowestEver ?? Infinity) && v.bestPrice < v.previousBest),
   };
 }
 
-export const getSummaries = (category?: CategoryId) => getProducts(category).map(summarise);
+export const getSummaries = (category?: CategoryId, region: RegionId = "au") => getProducts(category, region).map(summarise);
 
 export interface Deal {
   phone: Phone;
@@ -166,9 +190,10 @@ export function variantDeal(v: Variant): { saving: number; reference: number; ki
   return best;
 }
 
-export function getDeals(limit = 60, category?: CategoryId): Deal[] {
+export function getDeals(limit = 60, category?: CategoryId, region: RegionId = "au"): Deal[] {
   const out: Deal[] = [];
-  for (const phone of getProducts(category)) {
+  const $ = (n: number) => money(n, region);
+  for (const phone of getProducts(category, region)) {
     // A single store's "RRP" on an old phone is not a deal anyone can check.
     if (phone.retailerCount < 2) continue;
     for (const variant of phone.variants) {
@@ -178,10 +203,10 @@ export function getDeals(limit = 60, category?: CategoryId): Deal[] {
       if (percent < 4) continue;
       const label =
         d.kind === "drop"
-          ? `Down $${fmt(d.saving)} this week`
+          ? `Down ${$(d.saving)} this week`
           : d.kind === "rrp"
-            ? `$${fmt(d.saving)} off RRP`
-            : `$${fmt(d.saving)} below the typical store price`;
+            ? `${$(d.saving)} off RRP`
+            : `${$(d.saving)} below the typical store price`;
       out.push({ phone, variant, offer: d.offer, saving: d.saving, percent, reference: d.reference, kind: d.kind, label });
     }
   }
@@ -197,9 +222,9 @@ function score(d: Deal) {
 }
 
 export interface BrandInfo { brand: string; slug: string; count: number; from: number; image?: string; categories: CategoryId[] }
-export function getBrands(category?: CategoryId): BrandInfo[] {
+export function getBrands(category?: CategoryId, region: RegionId = "au"): BrandInfo[] {
   const m = new Map<string, Phone[]>();
-  for (const p of getProducts(category)) m.set(p.brand, [...(m.get(p.brand) ?? []), p]);
+  for (const p of getProducts(category, region)) m.set(p.brand, [...(m.get(p.brand) ?? []), p]);
   return [...m]
     .map(([brand, ps]) => ({
       brand,
@@ -213,7 +238,7 @@ export function getBrands(category?: CategoryId): BrandInfo[] {
 }
 
 export function similarPhones(p: Phone, n = 4): Phone[] {
-  return getProducts(p.category)
+  return getProducts(p.category, regionOfProduct(p))
     .filter((q) => q.slug !== p.slug && q.image)
     .map((q) => ({ q, d: Math.abs(Math.log(q.bestPrice / p.bestPrice)) - (q.brand === p.brand ? 0.15 : 0) - q.retailerCount * 0.02 }))
     .sort((a, b) => a.d - b.d)
@@ -236,7 +261,7 @@ export function storageRange(p: { storages: number[] } | Phone): string {
   return s.length > 1 ? `${storageLabel(s[0])} – ${storageLabel(s[s.length - 1])}` : storageLabel(s[0]);
 }
 
-export const retailerIds = (): RetailerId[] => activeRetailers().map((r) => r.id);
+export const retailerIds = (region: RegionId = "au"): RetailerId[] => activeRetailers(undefined, region).map((r) => r.id);
 
 /**
  * Head-to-head pages worth having: each well-stocked phone against its two

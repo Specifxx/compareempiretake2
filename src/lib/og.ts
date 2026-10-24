@@ -1,5 +1,5 @@
 /** URL of the share card for a page (see src/app/og/route.tsx). */
-export function ogImage(o: { title: string; price?: number; stores?: number; verdict?: string; image?: string; category?: string }): string {
+export function ogImage(o: { title: string; price?: number; stores?: number; verdict?: string; image?: string; category?: string; region?: "au" | "us" | "uk" }): string {
   const q = new URLSearchParams();
   q.set("t", o.title);
   if (o.price) q.set("p", String(Math.round(o.price)));
@@ -7,5 +7,6 @@ export function ogImage(o: { title: string; price?: number; stores?: number; ver
   if (o.verdict) q.set("v", o.verdict);
   if (o.image?.startsWith("https://")) q.set("i", o.image);
   if (o.category) q.set("c", o.category);
+  if (o.region && o.region !== "au") q.set("r", o.region);
   return `/og?${q}`;
 }

@@ -7,21 +7,28 @@ import { HeartIcon, MenuIcon, MoonIcon, SearchIcon, SunIcon, CloseIcon } from ".
 import { SearchPalette } from "./SearchPalette";
 import { SearchBox } from "./SearchBox";
 import { saved } from "@/lib/store";
+import { REGIONS, withRegion, type RegionId } from "@/lib/region";
+import { useRegion } from "@/lib/use-region";
 
-const NAV = [
+const AU_NAV = [
   { href: "/deals", label: "Deals" },
   { href: "/brands", label: "Brands" },
   { href: "/compare", label: "Compare" },
   { href: "/guides", label: "Guides" },
   { href: "/reviews", label: "Reviews" },
 ];
+const navFor = (region: RegionId) =>
+  region === "au" ? AU_NAV : [{ href: withRegion("/deals", region), label: "Deals" }, { href: withRegion("/stores", region), label: "Stores" }, { href: "/reviews", label: "Reviews" }];
 
 export interface NavDepartment {
   name: string;
   categories: { name: string; href: string; emoji: string; count: number; featured: boolean; brands: { name: string; href: string }[] }[];
 }
 
-export function Header({ departments }: { departments: NavDepartment[] }) {
+export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepartment[]>>; regions: RegionId[] }) {
+  const region = useRegion();
+  const departments = nav[region] ?? nav.au ?? [];
+  const NAV = navFor(region);
   const [open, setOpen] = useState(false);
   const [menu, setMenu] = useState(false);
   const [mega, setMega] = useState(false);
@@ -87,6 +94,7 @@ export function Header({ departments }: { departments: NavDepartment[] }) {
               <span className="absolute right-1 top-1 grid h-4 min-w-4 place-items-center rounded-full bg-hot px-1 text-[10px] font-bold text-white">{savedList.length}</span>
             )}
           </Link>
+          {regions.length > 1 && <RegionSwitcher regions={regions} nav={nav} />}
           <ThemeToggle />
           <button className="grid h-10 w-10 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu">
             {menu ? <CloseIcon /> : <MenuIcon />}
@@ -111,7 +119,7 @@ export function Header({ departments }: { departments: NavDepartment[] }) {
               </button>
             )}
             <span className="mx-2 h-5 w-px shrink-0 bg-line" />
-            <Link href="/deals" className={`shrink-0 rounded-lg px-3 py-1.5 font-semibold transition ${path.startsWith("/deals") ? "bg-hot/10 text-hot" : "text-hot hover:bg-hot/10"}`}>🔥 Deals</Link>
+            <Link href={NAV[0].href} className={`shrink-0 rounded-lg px-3 py-1.5 font-semibold transition ${path.startsWith(NAV[0].href) ? "bg-hot/10 text-hot" : "text-hot hover:bg-hot/10"}`}>🔥 Deals</Link>
             {NAV.slice(1).map((n) => (
               <Link key={n.href} href={n.href} className="shrink-0 rounded-lg px-3 py-1.5 font-medium text-ink-soft transition hover:bg-bg-sunk hover:text-ink xl:hidden">{n.label}</Link>
             ))}
@@ -188,5 +196,44 @@ function ThemeToggle() {
     <button onClick={flip} className="hidden h-10 w-10 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk hover:text-ink sm:grid" aria-label="Toggle dark mode">
       {dark ? <SunIcon /> : <MoonIcon />}
     </button>
+  );
+}
+
+/** Flag button that switches country, staying on the same category when the other country has it. */
+function RegionSwitcher({ regions, nav }: { regions: RegionId[]; nav: Partial<Record<RegionId, NavDepartment[]>> }) {
+  const region = useRegion();
+  const path = usePathname() ?? "/";
+  const [open, setOpen] = useState(false);
+  useEffect(() => setOpen(false), [path]);
+  const target = (to: RegionId) => {
+    const rest = region === "au" ? path : path.slice(REGIONS[region].prefix.length) || "/";
+    const cat = rest.split("/")[1];
+    const has = (nav[to] ?? []).some((d) => d.categories.some((c) => c.href === withRegion(`/${cat}`, to)));
+    if (cat === "deals") return withRegion("/deals", to);
+    return has ? withRegion(`/${cat}`, to) : withRegion("/", to);
+  };
+  const remember = (r: RegionId) => {
+    try {
+      localStorage.setItem("ce-region", r);
+    } catch {}
+  };
+  return (
+    <div className="relative">
+      <button onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-label={`Country: ${REGIONS[region].name}`} className="flex h-10 items-center gap-1.5 rounded-xl px-2.5 text-sm font-semibold text-ink-soft hover:bg-bg-sunk hover:text-ink">
+        <span className="text-lg leading-none">{REGIONS[region].flag}</span>
+        <span className="hidden sm:inline">{region.toUpperCase()}</span>
+      </button>
+      {open && (
+        <div className="card absolute right-0 top-full z-50 mt-2 w-56 p-1.5 shadow-lift animate-fade-up">
+          {regions.map((r) => (
+            <Link key={r} href={target(r)} onClick={() => remember(r)} className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm hover:bg-bg-sunk ${r === region ? "font-semibold text-brand" : ""}`}>
+              <span className="text-lg leading-none">{REGIONS[r].flag}</span>
+              <span>{REGIONS[r].name}</span>
+              <span className="ml-auto text-xs text-ink-mute">{REGIONS[r].currency}</span>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

@@ -4,11 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import { SearchIcon } from "./icons";
 import { useResults, type SearchEntry } from "./SearchBox";
 import { useSearchIndex } from "@/lib/use-search-index";
+import { useRegionKit } from "@/lib/use-region";
 
 const NONE: SearchEntry[] = [];
 const SUGGESTIONS = ["iPhone 17 Pro", "RTX 5070 Ti", '65" OLED', "AirPods", "PS5", "under $500"];
 
 export function SearchPalette({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const { $ } = useRegionKit();
   const items = useSearchIndex(open) ?? NONE;
   const [q, setQ] = useState("");
   const [active, setActive] = useState(0);
@@ -81,7 +83,7 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
                 {r.price !== undefined && (
                   <div className="text-right">
                     <div className="text-[11px] text-ink-mute">from</div>
-                    <div className="price">${r.price.toLocaleString("en-AU")}</div>
+                    <div className="price">{$(r.price)}</div>
                   </div>
                 )}
               </button>

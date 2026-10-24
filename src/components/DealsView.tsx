@@ -2,31 +2,33 @@ import Link from "next/link";
 import { activeCategories, getCatalog, getDeals } from "@/lib/catalog";
 import { categoryById } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
+import { REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { DealCard } from "./DealCard";
 import { NewsletterSignup } from "./NewsletterSignup";
 
 /** The deals list for every category, or one. */
-export function DealsView({ category }: { category?: CategoryId }) {
-  const deals = getDeals(category ? 60 : 90, category);
-  const { updatedAt } = getCatalog();
+export function DealsView({ category, region = "au" }: { category?: CategoryId; region?: RegionId }) {
+  const deals = getDeals(category ? 60 : 90, category, region);
+  const { updatedAt } = getCatalog(undefined, region);
+  const R = REGIONS[region];
   const drops = deals.filter((d) => d.kind === "drop");
   const rest = deals.filter((d) => d.kind !== "drop");
   const c = category ? categoryById(category) : undefined;
-  const tabs = activeCategories().filter((x) => getDeals(1, x.id).length > 0);
+  const tabs = activeCategories(region).filter((x) => getDeals(1, x.id, region).length > 0);
   return (
     <div className="container-x pt-10">
       <div className="max-w-2xl">
         <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{c ? `${c.name} deals` : "Today's deals"}</h1>
         <p className="mt-2 text-ink-mute">
           Every deal here is worked out from real prices we checked on{" "}
-          {new Date(updatedAt).toLocaleDateString("en-AU", { timeZone: "Australia/Sydney", weekday: "long", day: "numeric", month: "long" })} — no sponsored spots, no
+          {new Date(updatedAt).toLocaleDateString(R.locale, { timeZone: R.timeZone, weekday: "long", day: "numeric", month: "long" })} — no sponsored spots, no
           &ldquo;was&rdquo; prices we can&apos;t back up.
         </p>
       </div>
       <nav className="mt-6 flex gap-2 overflow-x-auto pb-1 scrollbar-none" aria-label="Deal categories">
-        <Link href="/deals" className={`chip shrink-0 text-xs ${!category ? "chip-on" : ""}`}>All</Link>
+        <Link href={withRegion("/deals", region)} className={`chip shrink-0 text-xs ${!category ? "chip-on" : ""}`}>All</Link>
         {tabs.map((t) => (
-          <Link key={t.id} href={`/deals/${t.id}`} className={`chip shrink-0 text-xs ${category === t.id ? "chip-on" : ""}`}>
+          <Link key={t.id} href={withRegion(`/deals/${t.id}`, region)} className={`chip shrink-0 text-xs ${category === t.id ? "chip-on" : ""}`}>
             {t.emoji} {t.name}
           </Link>
         ))}

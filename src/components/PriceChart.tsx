@@ -1,10 +1,12 @@
+import { money, type RegionId } from "@/lib/region";
 /** A compact best-price line for one variant. Server-rendered SVG, no chart library. */
-export function PriceChart({ points }: { points: [string, number][] }) {
+export function PriceChart({ points, region = "au" }: { points: [string, number][]; region?: RegionId }) {
+  const $ = (n: number) => money(n, region);
   if (points.length < 2) {
     return (
       <div className="rounded-xl border border-dashed border-line p-5 text-sm text-ink-mute">
         {points.length === 1 ? (
-          <>We started tracking this price on <b className="text-ink">{fmtDate(points[0][0])}</b> at <b className="text-ink">${points[0][1].toLocaleString("en-AU")}</b>. The history chart fills in as we check it each day.</>
+          <>We started tracking this price on <b className="text-ink">{fmtDate(points[0][0])}</b> at <b className="text-ink">{$(points[0][1])}</b>. The history chart fills in as we check it each day.</>
         ) : (
           "No price history yet."
         )}
@@ -27,7 +29,7 @@ export function PriceChart({ points }: { points: [string, number][] }) {
   const minI = ys.indexOf(lo);
   return (
     <figure>
-      <svg viewBox={`0 0 ${W} ${H}`} className="h-40 w-full overflow-visible" role="img" aria-label={`Best price from ${fmtDate(points[0][0])} to ${fmtDate(points.at(-1)![0])}, lowest $${lo}`}>
+      <svg viewBox={`0 0 ${W} ${H}`} className="h-40 w-full overflow-visible" role="img" aria-label={`Best price from ${fmtDate(points[0][0])} to ${fmtDate(points.at(-1)![0])}, lowest ${$(lo)}`}>
         <defs>
           <linearGradient id="pc-fill" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stopColor="rgb(var(--brand))" stopOpacity=".22" />
@@ -41,7 +43,7 @@ export function PriceChart({ points }: { points: [string, number][] }) {
       </svg>
       <figcaption className="mt-2 flex justify-between text-xs text-ink-mute">
         <span>{fmtDate(points[0][0])}</span>
-        <span>Lowest <b className="text-save">${lo.toLocaleString("en-AU")}</b> · Highest ${hi.toLocaleString("en-AU")}</span>
+        <span>Lowest <b className="text-save">{$(lo)}</b> · Highest {$(hi)}</span>
         <span>{fmtDate(points.at(-1)![0])}</span>
       </figcaption>
     </figure>

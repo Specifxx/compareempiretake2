@@ -1,6 +1,8 @@
 import type { Retailer, RetailerId } from "./types";
+import { US_RETAILERS } from "./retailers-us";
+import { UK_RETAILERS } from "./retailers-uk";
 
-export const RETAILERS: Record<RetailerId, Retailer> = {
+const AU_RETAILERS = {
   jbhifi: { id: "jbhifi", name: "JB Hi-Fi", site: "jbhifi.com.au", color: "#FFD600", type: "retailer" },
   harveynorman: { id: "harveynorman", name: "Harvey Norman", site: "harveynorman.com.au", color: "#005B9C", type: "retailer" },
   thegoodguys: { id: "thegoodguys", name: "The Good Guys", site: "thegoodguys.com.au", color: "#E4002B", type: "retailer" },
@@ -35,3 +37,9 @@ export const RETAILERS: Record<RetailerId, Retailer> = {
   ecovacs: { id: "ecovacs", name: "ECOVACS", site: "ecovacs.com/au", color: "#1E4B9B", type: "official" },
   dreame: { id: "dreame", name: "Dreame", site: "dreame.com.au", color: "#B8956A", type: "official" },
 };
+
+export const RETAILERS = {
+  ...AU_RETAILERS,
+  ...Object.fromEntries(US_RETAILERS.map((r) => [r.id, r])),
+  ...Object.fromEntries(UK_RETAILERS.map((r) => [r.id, r])),
+} as Record<RetailerId, Retailer>;

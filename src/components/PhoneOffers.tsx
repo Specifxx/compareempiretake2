@@ -2,7 +2,8 @@
 import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { MARKETPLACES } from "@/lib/marketplaces";
+import { marketplacesFor } from "@/lib/marketplaces";
+import { withRegion } from "@/lib/region";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
 import type { Offer, Phone, RetailerId } from "@/lib/types";
@@ -13,6 +14,7 @@ import { CompareToggle } from "./CompareToggle";
 import { PriceCheckCard } from "./PriceCheckCard";
 import { PriceAlertButton } from "./PriceAlertButton";
 import type { PriceCheck, WasCheck } from "@/lib/price-check";
+import { useRegionKit } from "@/lib/use-region";
 
 /** Gallery + storage picker + the retailer price table for one phone. */
 export function PhoneOffers({
@@ -30,7 +32,8 @@ export function PhoneOffers({
   const [colour, setColour] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   const variant = phone.variants.find((v) => v.id === vid) ?? initial;
-  const href = `/${phone.category}/${phone.slug}`;
+  const { $, R, region } = useRegionKit();
+  const href = withRegion(`/${phone.category}/${phone.slug}`, region);
   const mq = `${phone.name}${variant.storageGb ? ` ${variant.label.split(" ·")[0]}` : ""}`;
   const vLabel = phone.variants.length > 1 || variant.storageGb ? variant.label : "";
 
@@ -67,7 +70,7 @@ export function PhoneOffers({
 
   const share = async () => {
     const url = `${location.origin}${href}?v=${variant.id}`;
-    const text = `${phone.name}${vLabel ? ` ${vLabel}` : ""} from $${variant.bestPrice} — compared across ${phone.retailerCount} Aussie stores`;
+    const text = `${phone.name}${vLabel ? ` ${vLabel}` : ""} from ${$(variant.bestPrice)} — compared across ${phone.retailerCount} ${R.adjective} stores`;
     try {
       if (navigator.share) await navigator.share({ title: phone.name, text, url });
       else {
@@ -102,9 +105,9 @@ export function PhoneOffers({
         <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
           <div className="shrink-0">
             <div className="text-xs text-ink-mute">Best price{vLabel ? ` · ${vLabel}` : ""}</div>
-            <div className="price text-4xl">${variant.bestPrice.toLocaleString("en-AU")}</div>
+            <div className="price text-4xl">{$(variant.bestPrice)}</div>
             {top && top > variant.bestPrice && (
-              <div className="mt-1 text-xs font-semibold text-save">Save ${(top - variant.bestPrice).toLocaleString("en-AU")} vs dearest store</div>
+              <div className="mt-1 text-xs font-semibold text-save">Save {$((top - variant.bestPrice))} vs dearest store</div>
             )}
           </div>
           {checks[variant.id] && (
@@ -127,7 +130,7 @@ export function PhoneOffers({
                 className={`rounded-xl border px-4 py-2.5 text-left transition ${v.id === variant.id ? "border-brand bg-brand-soft" : "border-line bg-bg-card hover:border-ink/25"}`}
               >
                 <div className={`text-sm font-semibold ${v.id === variant.id ? "text-brand" : ""}`}>{v.label}</div>
-                <div className="text-xs text-ink-mute">from ${v.bestPrice.toLocaleString("en-AU")}</div>
+                <div className="text-xs text-ink-mute">from {$(v.bestPrice)}</div>
               </button>
             ))}
           </div>
@@ -201,12 +204,12 @@ export function PhoneOffers({
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="price text-xl sm:text-2xl">${o.price.toLocaleString("en-AU")}</div>
-                    {o.wasPrice && <div className="text-xs text-ink-mute line-through">${o.wasPrice.toLocaleString("en-AU")}</div>}
+                    <div className="price text-xl sm:text-2xl">{$(o.price)}</div>
+                    {o.wasPrice && <div className="text-xs text-ink-mute line-through">{$(o.wasPrice)}</div>}
                     {o.wasPrice && checks[variant.id]?.was[o.retailer] && (
                       <WasNote w={checks[variant.id].was[o.retailer]!} />
                     )}
-                    {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">+${(o.price - best.price).toLocaleString("en-AU")}</div>}
+                    {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">+{$((o.price - best.price))}</div>}
                   </div>
                   <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
                     Go to store <ExternalIcon className="h-3.5 w-3.5" />
@@ -223,7 +226,7 @@ export function PhoneOffers({
                 {Object.values(checks[variant.id].was).map((w) => (
                   <li key={w!.retailer} className="flex gap-2">
                     <span className={w!.status === "backed" ? "text-save" : w!.status === "never" ? "text-hot" : "text-ink-mute"}>{w!.status === "backed" ? "✓" : w!.status === "never" ? "⚠" : "•"}</span>
-                    <span><b className="text-ink">{RETAILERS[w!.retailer].name} says was ${w!.was.toLocaleString("en-AU")}.</b> {w!.text}</span>
+                    <span><b className="text-ink">{RETAILERS[w!.retailer].name} says was {$(w!.was)}.</b> {w!.text}</span>
                   </li>
                 ))}
               </ul>
@@ -239,8 +242,8 @@ export function PhoneOffers({
                   <div className="min-w-0 flex-1">
                     <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
                     <div className="mt-1 text-xs text-ink-mute">
-                      Phone repayments over {o.months ?? 36} months · ${o.price.toLocaleString("en-AU")} total for the phone
-                      {best && o.price > best.price && <span className="text-hot"> (+${Math.round(o.price - best.price).toLocaleString("en-AU")} vs cheapest outright)</span>}
+                      Phone repayments over {o.months ?? 36} months · {$(o.price)} total for the phone
+                      {best && o.price > best.price && <span className="text-hot"> (+{$(Math.round(o.price - best.price))} vs cheapest outright)</span>}
                     </div>
                   </div>
                   <div className="text-right">
@@ -254,7 +257,7 @@ export function PhoneOffers({
           </ol>
           <p className="mt-3 text-xs text-ink-mute">
             Repayments are for the phone only; you also pay for a mobile plan from that carrier. Leaving early usually means paying off the rest of the phone.
-            {rows.length > 0 && best && <> Buying outright from {RETAILERS[best.retailer].name} at ${best.price.toLocaleString("en-AU")} and adding any SIM-only plan is often cheaper.</>}
+            {rows.length > 0 && best && <> Buying outright from {RETAILERS[best.retailer].name} at {$(best.price)} and adding any SIM-only plan is often cheaper.</>}
           </p>
           </>
           )}
@@ -262,7 +265,7 @@ export function PhoneOffers({
             <div className="text-sm font-semibold">Also check the marketplaces</div>
             <p className="mt-0.5 text-xs text-ink-mute">Sometimes cheaper, but listings mix sellers and warranties, so we link to a search rather than rank them.</p>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
-              {MARKETPLACES.map((m) => (
+              {marketplacesFor(region).map((m) => (
                 <a key={m.id} data-buy={m.id} data-buy-product={href} data-buy-kind="marketplace-new" href={m.url(mq, `p-${phone.category}-${phone.slug}`, phone.category === "phones")} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
                   <span>
                     <span className="font-semibold">Search {m.name}</span>
@@ -271,17 +274,17 @@ export function PhoneOffers({
                   <ExternalIcon className="h-4 w-4 text-ink-mute" />
                 </a>
               ))}
-              <a data-buy="ebay" data-buy-product={href} data-buy-kind="marketplace-refurbished" href={ebaySearch(mq, { condition: "refurbished", customid: `p-${phone.category}-${phone.slug}-refurb`, phones: phone.category === "phones" })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+              <a data-buy="ebay" data-buy-product={href} data-buy-kind="marketplace-refurbished" href={ebaySearch(mq, { condition: "refurbished", customid: `p-${phone.category}-${phone.slug}-refurb`, phones: phone.category === "phones", region })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
                 <span>
                   <span className="font-semibold">Refurbished on eBay</span>
                   <span className="block text-[11px] text-ink-mute">Often far cheaper; check the warranty</span>
                 </span>
                 <ExternalIcon className="h-4 w-4 text-ink-mute" />
               </a>
-              <a data-buy="ebay" data-buy-product={href} data-buy-kind="marketplace-used" href={ebaySearch(mq, { condition: "used", customid: `p-${phone.category}-${phone.slug}-used`, phones: phone.category === "phones" })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
+              <a data-buy="ebay" data-buy-product={href} data-buy-kind="marketplace-used" href={ebaySearch(mq, { condition: "used", customid: `p-${phone.category}-${phone.slug}-used`, phones: phone.category === "phones", region })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
                 <span>
                   <span className="font-semibold">Used on eBay</span>
-                  <span className="block text-[11px] text-ink-mute">The cheapest way in, from Australian sellers</span>
+                  <span className="block text-[11px] text-ink-mute">The cheapest way in, from {R.adjective} sellers</span>
                 </span>
                 <ExternalIcon className="h-4 w-4 text-ink-mute" />
               </a>

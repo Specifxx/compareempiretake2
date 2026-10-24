@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { useRegionKit } from "@/lib/use-region";
 
 /** "Alert me when it drops": email + target price, confirmed by email before it goes live. */
 export function PriceAlertButton({ product, productName, variant, variantLabel, price }: { product: string; productName: string; variant: string; variantLabel?: string; price: number }) {
+  const { $ } = useRegionKit();
   const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [target, setTarget] = useState(() => String(Math.floor((price * 0.95) / 10) * 10 || Math.floor(price)));
@@ -32,7 +34,7 @@ export function PriceAlertButton({ product, productName, variant, variantLabel, 
   return (
     <form onSubmit={submit} className="card w-full p-4 animate-fade-up">
       <div className="font-semibold">Email me when {productName}{variantLabel ? ` (${variantLabel})` : ""} drops</div>
-      <p className="mt-0.5 text-xs text-ink-mute">Today&apos;s best price is ${price.toLocaleString("en-AU")}. We check every store each morning and email you once it hits your price.</p>
+      <p className="mt-0.5 text-xs text-ink-mute">Today&apos;s best price is {$(price)}. We check every store each morning and email you once it hits your price.</p>
       {state.kind === "ok" ? (
         <p className="mt-3 rounded-xl bg-save-soft px-3 py-2 text-sm font-medium text-save">{state.msg}</p>
       ) : (

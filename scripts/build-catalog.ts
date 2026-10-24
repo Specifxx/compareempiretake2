@@ -7,6 +7,7 @@
  *   npx tsx scripts/build-catalog.ts            # every category with raw data
  *   npx tsx scripts/build-catalog.ts tvs        # one category
  */
+import { dataPath, REGIONS, type RegionId } from "../src/lib/region";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
 import { categorySpecs, conflicts, mergeTarget, parseProduct, type Parsed } from "../src/lib/match";
@@ -79,12 +80,18 @@ function generation(brand: string, model: string): number {
   return n;
 }
 
+// --region us|uk builds data/<region>/<category>; the default is Australia (data/<category>).
+const regionArg = process.argv.indexOf("--region");
+const REGION = (regionArg >= 0 ? process.argv.splice(regionArg, 2)[1] : "au") as RegionId;
+if (!REGIONS[REGION]) throw new Error(`unknown region ${REGION}`);
+const ROOT = dataPath(REGION);
+
 function today(): string {
-  return new Date().toLocaleDateString("en-CA", { timeZone: "Australia/Sydney" });
+  return new Date().toLocaleDateString("en-CA", { timeZone: REGIONS[REGION].timeZone });
 }
 
 function build(category: CategoryId) {
-  const dir = `data/${category}`;
+  const dir = `${ROOT}/${category}`;
   const groups = new Map<string, Group>();
   const scrapedAt: string[] = [];
   const baseOnly: { o: RawOffer; key: string; colour: string }[] = [];
@@ -293,18 +300,18 @@ function build(category: CategoryId) {
 
 const asked = process.argv.slice(2) as CategoryId[];
 for (const c of CATEGORIES.map((x) => x.id as CategoryId)) {
-  if (asked.length ? !asked.includes(c) : !existsSync(`data/${c}/raw`)) continue;
+  if (asked.length ? !asked.includes(c) : !existsSync(`${ROOT}/${c}/raw`)) continue;
   build(c);
 }
 
 // Scraper health for /admin: when each store/category was last scraped and how many listings it gave.
 const status: { category: string; retailer: string; offers: number; scrapedAt: string }[] = [];
 for (const c of CATEGORIES) {
-  const dir = `data/${c.id}/raw`;
+  const dir = `${ROOT}/${c.id}/raw`;
   if (!existsSync(dir)) continue;
   for (const f of readdirSync(dir).filter((x) => x.endsWith(".json"))) {
     const raw = JSON.parse(readFileSync(`${dir}/${f}`, "utf8")) as { scrapedAt: string; offers: unknown[] };
     status.push({ category: c.id, retailer: f.replace(/\.json$/, ""), offers: raw.offers.length, scrapedAt: raw.scrapedAt });
   }
 }
-writeFileSync("data/status.json", JSON.stringify({ builtAt: new Date().toISOString(), scrapes: status }) + "\n");
+writeFileSync(`${ROOT}/status.json`, JSON.stringify({ builtAt: new Date().toISOString(), scrapes: status }) + "\n");

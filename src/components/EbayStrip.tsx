@@ -1,13 +1,14 @@
 import Link from "next/link";
+import { REGIONS, type RegionId } from "@/lib/region";
 import { ebayDeals, ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 
 /** A clearly labelled eBay box: new, used and refurbished searches plus eBay's tech deals. */
-export function EbayStrip({ query, label, customid, phones }: { query: string; label: string; customid: string; phones?: boolean }) {
+export function EbayStrip({ query, label, customid, phones, region = "au" }: { query: string; label: string; customid: string; phones?: boolean; region?: RegionId }) {
   const links: [string, string, string][] = [
-    ["New on eBay", "Brand-new listings from Australian sellers", ebaySearch(query, { condition: "new", customid, phones })],
-    ["Refurbished on eBay", "Seller and eBay-certified refurbished", ebaySearch(query, { condition: "refurbished", customid, phones })],
-    ["Used on eBay", "Often the cheapest way in", ebaySearch(query, { condition: "used", customid, phones })],
-    ["eBay tech deals", "eBay's own daily tech deals", ebayDeals(customid)],
+    ["New on eBay", `Brand-new listings from ${REGIONS[region].adjective} sellers`, ebaySearch(query, { condition: "new", customid, phones, region })],
+    ["Refurbished on eBay", "Seller and eBay-certified refurbished", ebaySearch(query, { condition: "refurbished", customid, phones, region })],
+    ["Used on eBay", "Often the cheapest way in", ebaySearch(query, { condition: "used", customid, phones, region })],
+    ["eBay tech deals", "eBay's own daily tech deals", ebayDeals(customid, region)],
   ];
   return (
     <section className="mt-10 rounded-2xl border border-line bg-bg-card p-5" aria-label="eBay">

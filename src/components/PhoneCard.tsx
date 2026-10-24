@@ -3,6 +3,7 @@ import type { PhoneSummary } from "@/lib/catalog";
 import { categoryById } from "@/lib/categories";
 import { CompareToggle } from "./CompareToggle";
 import { SaveButton } from "./SaveButton";
+import { money } from "@/lib/region";
 
 export function PhoneCard({ p, priority, showCategory }: { p: PhoneSummary; priority?: boolean; showCategory?: boolean }) {
   const pct = p.saving > 0 ? Math.round((p.saving / (p.bestPrice + p.saving)) * 100) : 0;
@@ -39,7 +40,7 @@ export function PhoneCard({ p, priority, showCategory }: { p: PhoneSummary; prio
         <div className="mt-auto flex items-end justify-between pt-3">
           <div>
             <div className="text-[11px] text-ink-mute">from</div>
-            <div className="price text-xl">${p.bestPrice.toLocaleString("en-AU")}</div>
+            <div className="price text-xl">{money(p.bestPrice, p.region)}</div>
           </div>
           <div className="text-right text-xs text-ink-mute">
             <span className="font-semibold text-ink">{p.retailerCount}</span> {p.retailerCount === 1 ? "store" : "stores"}

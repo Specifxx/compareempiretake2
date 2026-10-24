@@ -1,0 +1,61 @@
+"use client";
+import Link from "next/link";
+import { Logo } from "./Logo";
+import { CONTACT_EMAIL } from "@/lib/site";
+import { REGIONS, type RegionId } from "@/lib/region";
+import { useRegion } from "@/lib/use-region";
+
+export interface FooterData { stores: number; products: number; checked: string; shop: string[][]; categories: string[][] }
+
+const WHO: Record<RegionId, string> = { au: "Australians", us: "shoppers in the US", uk: "shoppers in the UK" };
+
+export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData>> }) {
+  const region = useRegion();
+  const d = data[region] ?? data.au!;
+  const R = REGIONS[region];
+  return (
+    <footer className="mt-24 border-t border-line bg-bg-card">
+      <div className="container-x grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="space-y-4">
+          <Logo />
+          <p className="max-w-sm text-sm text-ink-soft">
+            Independent price comparison for {WHO[region]}. We check {d.stores} retailers every day so you don&apos;t have to open {d.stores} tabs.
+            No retailer pays to rank higher — the cheapest price is always first.
+          </p>
+          <p className="text-xs text-ink-mute">
+            {d.products.toLocaleString()} products tracked · prices last checked {d.checked}
+          </p>
+        </div>
+        <FooterCol title="Shop" links={d.shop} />
+        <FooterCol title="Categories" links={d.categories} />
+        <FooterCol
+          title="Compare Empire"
+          links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Retailers we check", region === "au" ? "/about#retailers" : `${R.prefix}/stores`], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["How we make money", "/disclosure"], ["Privacy", "/privacy"]]}
+        />
+      </div>
+      <div className="border-t border-line">
+        <div className="container-x flex flex-col gap-2 py-5 text-xs text-ink-mute sm:flex-row sm:justify-between">
+          <span>© {new Date().getFullYear()} Compare Empire. {R.taxNote}; check the retailer for the final price. eBay links are affiliate links; we may earn a commission.</span>
+          <span>
+            <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-ink">{CONTACT_EMAIL}</a> · Made in Australia 🇦🇺
+          </span>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+function FooterCol({ title, links }: { title: string; links: string[][] }) {
+  return (
+    <div>
+      <div className="eyebrow mb-3">{title}</div>
+      <ul className="space-y-2 text-sm">
+        {links.map(([l, h]) => (
+          <li key={h}>
+            <Link href={h} className="text-ink-soft hover:text-ink">{l}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}

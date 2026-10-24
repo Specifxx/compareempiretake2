@@ -1,51 +1,28 @@
-import Link from "next/link";
-import { activeCategories, getCatalog } from "@/lib/catalog";
-import { Logo } from "./Logo";
-import { CONTACT_EMAIL } from "@/lib/site";
+import { activeCategories, categoryHref, getCatalog, liveRegions } from "@/lib/catalog";
+import { REGIONS, withRegion, type RegionId } from "@/lib/region";
+import { FooterBody, type FooterData } from "./FooterBody";
 
+/** Footer copy and links for every live region; the client half picks the one being viewed. */
 export function Footer() {
-  const { retailers, updatedAt, phones } = getCatalog();
-  return (
-    <footer className="mt-24 border-t border-line bg-bg-card">
-      <div className="container-x grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-        <div className="space-y-4">
-          <Logo />
-          <p className="max-w-sm text-sm text-ink-soft">
-            Independent price comparison for Australians. We check {retailers.length} retailers every day so you don&apos;t have to open {retailers.length} tabs.
-            No retailer pays to rank higher — the cheapest price is always first.
-          </p>
-          <p className="text-xs text-ink-mute">
-            {phones.length.toLocaleString()} products tracked · prices last checked{" "}
-            {new Date(updatedAt).toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" })} AEST
-          </p>
-        </div>
-        <FooterCol title="Shop" links={[["All phones", "/phones"], ["Today's deals", "/deals"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"]]} />
-        <FooterCol title="Categories" links={activeCategories().map((c) => [c.name, c.href] as [string, string])} />
-        <FooterCol title="Compare Empire" links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Retailers we check", "/about#retailers"], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["How we make money", "/disclosure"], ["Privacy", "/privacy"]]} />
-      </div>
-      <div className="border-t border-line">
-        <div className="container-x flex flex-col gap-2 py-5 text-xs text-ink-mute sm:flex-row sm:justify-between">
-          <span>© {new Date().getFullYear()} Compare Empire. Prices in AUD incl. GST; check the retailer for the final price. eBay links are affiliate links; we may earn a commission.</span>
-          <span>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-ink">{CONTACT_EMAIL}</a> · Made in Australia 🇦🇺
-          </span>
-        </div>
-      </div>
-    </footer>
+  const data = Object.fromEntries(
+    liveRegions().map((region): [RegionId, FooterData] => {
+      const { retailers, updatedAt, phones } = getCatalog(undefined, region);
+      const R = REGIONS[region];
+      const to = (h: string) => withRegion(h, region);
+      return [
+        region,
+        {
+          stores: retailers.length,
+          products: phones.length,
+          checked: `${new Date(updatedAt).toLocaleString(R.locale, { timeZone: R.timeZone, day: "numeric", month: "short", year: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" })}`,
+          shop:
+            region === "au"
+              ? [["All phones", "/phones"], ["Today's deals", "/deals"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"]]
+              : [["All phones", to("/phones")], ["Today's deals", to("/deals")], ["Stores we check", to("/stores")]],
+          categories: activeCategories(region).map((c) => [c.name, categoryHref(c.id, region)]),
+        },
+      ];
+    }),
   );
-}
-
-function FooterCol({ title, links }: { title: string; links: [string, string][] }) {
-  return (
-    <div>
-      <div className="eyebrow mb-3">{title}</div>
-      <ul className="space-y-2 text-sm">
-        {links.map(([l, h]) => (
-          <li key={h}>
-            <Link href={h} className="text-ink-soft hover:text-ink">{l}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+  return <FooterBody data={data} />;
 }

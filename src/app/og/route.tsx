@@ -1,3 +1,4 @@
+import { money, REGIONS } from "@/lib/region";
 import { ImageResponse } from "next/og";
 
 /**
@@ -13,6 +14,8 @@ export function GET(req: Request) {
   const title = (q.get("t") ?? "Compare Empire").slice(0, 90);
   const price = q.get("p");
   const stores = q.get("s");
+  const r = q.get("r") === "us" ? "us" : q.get("r") === "uk" ? "uk" : "au";
+  const R = REGIONS[r];
   const verdict = q.get("v")?.slice(0, 60);
   const category = q.get("c")?.slice(0, 30);
   const image = q.get("i");
@@ -38,7 +41,7 @@ export function GET(req: Request) {
             {price && (
               <div style={{ display: "flex", alignItems: "baseline", gap: 18 }}>
                 <div style={{ fontSize: 26, color: "#707084" }}>from</div>
-                <div style={{ display: "flex", fontSize: 84, fontWeight: 800, color: "#11111a" }}>{`$${Number(price).toLocaleString("en-AU")}`}</div>
+                <div style={{ display: "flex", fontSize: 84, fontWeight: 800, color: "#11111a" }}>{money(Number(price), r)}</div>
               </div>
             )}
             {verdict && (
@@ -46,7 +49,7 @@ export function GET(req: Request) {
             )}
           </div>
           <div style={{ display: "flex", fontSize: 26, color: "#404052" }}>
-            {stores ? `Compared across ${stores} Australian stores · price history included` : "Every price, every store, every day — with the history to spot fake sales"}
+            {stores ? `Compared across ${stores} ${R.adjective} stores · price history included` : "Every price, every store, every day — with the history to spot fake sales"}
           </div>
         </div>
         {safeImage && (

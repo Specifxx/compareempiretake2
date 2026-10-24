@@ -5,7 +5,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
-import { activeCategories, getBrands } from "@/lib/catalog";
+import { activeCategories, categoryHref, getBrands, liveRegions } from "@/lib/catalog";
+import type { RegionId } from "@/lib/region";
 import { DEPARTMENTS, FEATURED } from "@/lib/categories";
 import type { NavDepartment } from "@/components/Header";
 import type { CategoryId } from "@/lib/types";
@@ -40,24 +41,30 @@ export const viewport: Viewport = {
 // Sets the theme before first paint so there is no light flash in dark mode.
 const themeScript = `try{var t=localStorage.getItem('ce-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}`;
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const live = activeCategories();
-  const departments: NavDepartment[] = DEPARTMENTS.map((d) => ({
+function navDepartments(region: RegionId): NavDepartment[] {
+  const live = activeCategories(region);
+  return DEPARTMENTS.map((d) => ({
     name: d.name,
     categories: live
       .filter((c) => c.department === d.id)
       .map((c) => {
-        const brands = getBrands(c.id as CategoryId);
+        const brands = getBrands(c.id as CategoryId, region);
         return {
           name: c.name,
-          href: c.href,
+          href: categoryHref(c.id, region),
           emoji: c.emoji,
           featured: FEATURED.includes(c.id),
           count: brands.reduce((n, b) => n + b.count, 0),
-          brands: brands.slice(0, 6).map((b) => ({ name: b.brand, href: `/brands/${b.slug}?cat=${c.id}` })),
+          // Brand pages exist for Australia only so far.
+          brands: region === "au" ? brands.slice(0, 6).map((b) => ({ name: b.brand, href: `/brands/${b.slug}?cat=${c.id}` })) : [],
         };
       }),
   })).filter((d) => d.categories.length);
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const regions = liveRegions();
+  const nav = Object.fromEntries(regions.map((region) => [region, navDepartments(region)]));
   return (
     <html lang="en-AU" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
       <head>
@@ -77,7 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
-        <Header departments={departments} />
+        <Header nav={nav} regions={regions} />
         <main>{children}</main>
         <Footer />
         <CompareTray />

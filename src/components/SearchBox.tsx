@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { search } from "@/lib/search";
 import { useSearchIndex } from "@/lib/use-search-index";
 import { SearchIcon } from "./icons";
+import { useRegionKit } from "@/lib/use-region";
 
 export interface SearchEntry {
   kind: "phone" | "guide" | "vs" | "category";
@@ -45,6 +46,7 @@ export function useResults(items: SearchEntry[], q: string) {
 }
 
 export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; autoFocus?: boolean }) {
+  const { $ } = useRegionKit();
   const [q, setQ] = useState("");
   const [open, setOpen] = useState(false);
   const loaded = useSearchIndex(open);
@@ -132,7 +134,7 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
                   {r.price !== undefined && (
                     <span className="text-right">
                       <span className="block text-[10px] text-ink-mute">from</span>
-                      <span className="price text-sm">${r.price.toLocaleString("en-AU")}</span>
+                      <span className="price text-sm">{$(r.price)}</span>
                     </span>
                   )}
                 </Link>

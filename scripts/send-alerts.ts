@@ -7,27 +7,28 @@
 import { readFileSync, existsSync } from "node:fs";
 import { neon } from "@neondatabase/serverless";
 import type { Phone } from "../src/lib/types";
+import { dataPath, money, type RegionId } from "../src/lib/region";
 import { emailConfigured, sendMail } from "../src/lib/mailer";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.compareempire.com";
 const url = process.env.DATABASE_URL;
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
-const aud = (n: number) => `$${n.toLocaleString("en-AU", { maximumFractionDigits: 2 })}`;
 
 type Row = { id: number; email: string; product: string; product_name: string; variant: string | null; variant_label: string | null; target: number; last_notified_price: number | null; token: string };
 
 const catalogs = new Map<string, { retailers: { id: string; name: string }[]; products: Map<string, Phone> } | null>();
-function catalog(cat: string) {
-  if (!catalogs.has(cat)) {
-    const f = `data/${cat}/catalog.json`;
-    if (!/^[a-z-]+$/.test(cat) || !existsSync(f)) catalogs.set(cat, null);
+function catalog(region: RegionId, cat: string) {
+  const k = `${region}/${cat}`;
+  if (!catalogs.has(k)) {
+    const f = `${dataPath(region, cat)}/catalog.json`;
+    if (!/^[a-z-]+$/.test(cat) || !existsSync(f)) catalogs.set(k, null);
     else {
       const c = JSON.parse(readFileSync(f, "utf8"));
-      catalogs.set(cat, { retailers: c.retailers, products: new Map((c.phones as Phone[]).map((p) => [p.slug, p])) });
+      catalogs.set(k, { retailers: c.retailers, products: new Map((c.phones as Phone[]).map((p) => [p.slug, p])) });
     }
   }
-  return catalogs.get(cat)!;
+  return catalogs.get(k)!;
 }
 
 const send = (to: string, subject: string, html: string, text: string, unsub: string) =>
@@ -41,8 +42,11 @@ async function main() {
     FROM alerts WHERE confirmed_at IS NOT NULL AND unsubscribed_at IS NULL`) as Row[];
   let sent = 0;
   for (const a of rows) {
-    const [, cat, slug] = a.product.split("/");
-    const c = catalog(cat);
+    const parts = a.product.split("/").filter(Boolean);
+    const region: RegionId = parts[0] === "us" || parts[0] === "uk" ? (parts.shift() as RegionId) : "au";
+    const [cat, slug] = parts;
+    const c = catalog(region, cat);
+    const aud = (n: number) => money(n, region);
     const p = c?.products.get(slug);
     if (!c || !p) continue;
     const v = (a.variant && p.variants.find((x) => x.id === a.variant)) || p.variants[0];

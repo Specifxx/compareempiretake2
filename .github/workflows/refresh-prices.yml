@@ -15,7 +15,7 @@ concurrency: refresh-prices
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -29,8 +29,17 @@ jobs:
         # One broken store must not stop the others or the phone update.
         continue-on-error: true
         run: npx tsx scripts/scrape-categories.ts
+      - name: Scrape US stores
+        continue-on-error: true
+        run: npx tsx scripts/scrape-categories.ts --region us
+      - name: Scrape UK stores
+        continue-on-error: true
+        run: npx tsx scripts/scrape-categories.ts --region uk
       - name: Build catalogues
-        run: npm run build:catalog
+        run: |
+          npm run build:catalog
+          npx tsx scripts/build-catalog.ts --region us
+          npx tsx scripts/build-catalog.ts --region uk
       - name: Commit data
         run: |
           git config user.name "compare-empire-bot"
