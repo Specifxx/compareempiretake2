@@ -72,7 +72,7 @@ export const scrapers: Partial<Record<CategoryId, () => Promise<RawOffer[]>>> = 
   smartwatches: () => crawl("/Smartwatches/c/2211.html", ok),
   cameras: () => crawl("/Digital-Cameras/c/20.html", (t) => ok(t) && !/\blens\b(?!.*kit)/i.test(t)),
   drones: () => crawl("/Drones/c/2359.html", (t) => !/\b(battery|propeller|case|bag|charger|controller|filter)\b/i.test(t)),
-  consoles: () => crawl("/Gaming-Consoles/c/945.html", (t) => ok(t) && !/controller|headset/i.test(t)),
+  consoles: () => crawl("/Gaming-Consoles/c/945.html", (t) => ok(t) && !/controller|headset|disc drive|faceplate|console cover/i.test(t)),
   "robot-vacuums": () => crawl("/Robotic-Vacuums/c/2049.html", (t) => !/\b(filter|brush|bag|mop pad|accessor|replacement)\b/i.test(t)),
   phones: () => crawl("/Unlocked-Cell-Phones/c/2475.html", (t) => !/\b(case|cover|charger|protector)\b/i.test(t)),
 };

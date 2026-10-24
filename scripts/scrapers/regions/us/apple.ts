@@ -28,7 +28,7 @@ function jsonLd(html: string): Record<string, unknown>[] {
 const clean = (s: string) =>
   decodeEntities(s)
     .replace(/[ ‑‐]/g, (c) => (c === " " ? " " : "-"))
-    .replace(/Space Gray/g, "Space Grey")
+    /* US spelling kept ("Space Gray") */
     .replace(/\s+/g, " ")
     .trim();
 
@@ -147,9 +147,9 @@ async function desktops(): Promise<RawOffer[]> {
 
 const WATCH_COLOUR: Record<string, string> = {
   nightblue: "Night Blue", pearlwhite: "Pearl White", lightgold: "Light Gold", radiantgold: "Radiant Gold", darkbronze: "Dark Bronze",
-  jetblack: "Jet Black", rosegold: "Rose Gold", spacegray: "Space Grey", slategray: "Slate", spaceblack: "Space Black",
+  jetblack: "Jet Black", rosegold: "Rose Gold", spacegray: "Space Gray", slategray: "Slate", spaceblack: "Space Black",
 };
-const WATCH_MATERIAL: Record<string, string> = { aluminum: "aluminium", titanium: "titanium", ceramic: "ceramic" };
+const WATCH_MATERIAL: Record<string, string> = { aluminum: "aluminum", titanium: "titanium", ceramic: "ceramic" };
 
 async function smartwatches(): Promise<RawOffer[]> {
   const index = await get(`${BASE}/shop/buy-watch`);
@@ -165,7 +165,7 @@ async function smartwatches(): Promise<RawOffer[]> {
     const model = clean(String(jsonLd(html).find((n) => n["@type"] === "Product")?.name ?? "Apple Watch"));
     const image = html.match(/<meta property="og:image" content="([^"]+)"/)?.[1];
     const price = new Map<string, number>();
-    for (const [, k, v] of html.matchAll(/"(watch_cases-[a-z0-9-]+)":\{"fullPrice-short":"A\$([0-9,.]+)"/g))
+    for (const [, k, v] of html.matchAll(/"(watch_cases-[a-z0-9-]+)":\{"amount":([0-9,.]+)/g))
       price.set(k, Number(v.replace(/,/g, "")));
     const colour = new Map<string, string>();
     for (const [, k, v] of html.matchAll(/"dimensionValue":"([a-z0-9_]+)"[^{}]*?"text":"([^"]+)"/g)) if (!colour.has(k)) colour.set(k, decodeEntities(v));
@@ -187,7 +187,7 @@ async function smartwatches(): Promise<RawOffer[]> {
       if (!p || seen.has(part)) continue;
       seen.add(part);
       const material = (WATCH_MATERIAL[mat] ?? mat).replace(/^./, (c) => c.toUpperCase());
-      const colourName = (colour.get(col) ?? WATCH_COLOUR[col] ?? col.replace(/_/g, " ").replace(/\b./g, (c) => c.toUpperCase())).replace(/Space Gray/, "Space Grey");
+      const colourName = (colour.get(col) ?? WATCH_COLOUR[col] ?? col.replace(/_/g, " ").replace(/\b./g, (c) => c.toUpperCase()));
       out.push({
         retailer: "us-apple",
         sku: part,
