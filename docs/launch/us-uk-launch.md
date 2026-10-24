@@ -102,9 +102,20 @@ very long laptop slug). Link at the end.
 
 ```
 You are helping me finish the US and UK launch of https://www.compareempire.com (new sections /us and /uk).
-Use the business accounts on compareempire@outlook.com. Do the tasks in order. Before each, CHECK if it's already done; if so, say "already done" and move on.
-If a step needs me (sign-in, code, CAPTCHA), leave the tab open on that screen, tell me in one line what to do, and continue with the next task in a new tab.
-Never pay for anything. Finish with a table: task, status, what I need to do.
+Use the business accounts on compareempire@outlook.com.
+
+RULES — follow these exactly:
+1. Never stop and wait for me. Every task gets its OWN new tab.
+2. Before each task, CHECK whether it's already done. If it is, note "already done" and move on.
+3. If any step needs me (sign-in, password, 2FA/email code, CAPTCHA, "verify you're human", a permission prompt, anything you can't or shouldn't do), STOP that task right there: leave its tab open on that exact screen, fill in everything else you can on that page first, note exactly what I need to do, then IMMEDIATELY go to the next task in a new tab. Do not retry or wait.
+4. If a later task depends on a blocked one, do every part you can, leave that tab open too, and note the dependency.
+5. Never pay for anything, never post or publish anything, never change passwords or account emails.
+6. When every task has been attempted, finish with:
+   A) A results table: task | done / already done / waiting on me / failed | one-line note.
+   B) "MY MANUAL STEPS": a numbered checklist, in the order I should do them, one line each:
+      tab title or URL → exactly what to click/type → what to tell you afterwards (if anything).
+      Keep the tabs in the same order as this list.
+I'll do the manual steps and run this prompt again; on the re-run, skip everything already done and pick up where I left off.
 
 TASK 1. Google Search Console
 Open https://search.google.com/search-console and pick the property https://www.compareempire.com/.
