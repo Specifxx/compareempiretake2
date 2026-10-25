@@ -12,6 +12,7 @@ import { existsSync, mkdirSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 import type { CategoryId, RawOffer } from "../src/lib/types";
+import { pool } from "./lib/http";
 
 type Scrapers = Partial<Record<CategoryId, () => Promise<RawOffer[]>>>;
 
@@ -28,10 +29,12 @@ async function main() {
   const prefix = region === "au" ? "" : `${region}-`;
   const files = existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith(".ts")) : [];
   let ok = 0, failed = 0;
-  for (const f of files) {
+  // Stores run four at a time (different sites, so no store sees more traffic); each store's
+  // categories still run one after another.
+  await pool(files, Number(process.env.SCRAPE_STORES_AT_ONCE || 4), async (f) => {
     const store = f.replace(/\.ts$/, "");
     const retailer = prefix + store;
-    if (onlyStores.length && !onlyStores.includes(store) && !onlyStores.includes(retailer)) continue;
+    if (onlyStores.length && !onlyStores.includes(store) && !onlyStores.includes(retailer)) return;
     const mod = (await import(pathToFileURL(path.join(dir, f)).href)) as { scrapers?: Scrapers };
     for (const [cat, fn] of Object.entries(mod.scrapers ?? {}) as [CategoryId, () => Promise<RawOffer[]>][]) {
       if (onlyCat && cat !== onlyCat) continue;
@@ -49,7 +52,7 @@ async function main() {
         console.error(`${cat}/${retailer}: FAILED — ${(e as Error).message}`);
       }
     }
-  }
+  });
   console.log(`done: ${ok} ok, ${failed} failed`);
   if (failed && !ok) process.exit(1);
 }

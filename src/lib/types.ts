@@ -147,6 +147,8 @@ export interface Phone {
   /** Release-ish ordering: higher is newer, derived from model numbers. */
   generation: number;
   firstSeen: string;
+  /** Today's cheapest matching new eBay listing (data/<region>/ebay.json), attached at load. */
+  ebay?: { price: number; shipping?: number; title: string; url: string; seller?: string; feedback?: number; checkedAt: string };
   /** Set when the catalogue is loaded (not stored): the country this product's prices are from. */
   region?: import("./region").RegionId;
 }

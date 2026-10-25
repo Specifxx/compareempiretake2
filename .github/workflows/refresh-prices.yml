@@ -40,6 +40,12 @@ jobs:
           npm run build:catalog
           npx tsx scripts/build-catalog.ts --region us
           npx tsx scripts/build-catalog.ts --region uk
+      - name: eBay prices (Browse API, up to 4,950 calls)
+        continue-on-error: true
+        env:
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+        run: npx tsx scripts/ebay-prices.ts
       - name: Commit data
         run: |
           git config user.name "compare-empire-bot"

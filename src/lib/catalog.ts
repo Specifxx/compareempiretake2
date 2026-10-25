@@ -32,6 +32,9 @@ function data(region: RegionId): RegionData {
     }
     loaded.set(c.id as CategoryId, { catalog, series: read(path.join(dir, "series.json"), {}), stores: read(path.join(dir, "store-series.json"), {}) });
   }
+  // eBay listings from the daily Browse API job (scripts/ebay-prices.ts), keyed "<category>/<slug>".
+  const ebay = read<{ listings: Record<string, NonNullable<Phone["ebay"]>> }>(path.join(process.cwd(), dataPath(region), "ebay.json"), { listings: {} }).listings;
+  for (const l of loaded.values()) for (const p of l.catalog.phones) p.ebay = ebay[`${p.category}/${p.slug}`];
   const all = [...loaded.values()].flatMap((l) => l.catalog.phones);
   d = { loaded, all, bySlug: new Map(all.map((p) => [`${p.category}/${p.slug}`, p])), updated: [...loaded.values()].map((l) => l.catalog.updatedAt).sort().at(-1) ?? new Date().toISOString() };
   regions.set(region, d);
@@ -110,6 +113,8 @@ export interface PhoneSummary {
   inStock: boolean;
   atLowest: boolean;
   region?: RegionId;
+  /** Today's cheapest new eBay listing, when the daily eBay job found one. */
+  ebayPrice?: number;
 }
 
 export function summarise(p: Phone): PhoneSummary {
@@ -140,6 +145,7 @@ export function summarise(p: Phone): PhoneSummary {
     saving: Math.max(0, ...deals.map((d) => d.saving)),
     inStock: p.variants.some((v) => v.offers.some((o) => o.inStock)),
     region: p.region,
+    ebayPrice: p.ebay?.price,
     atLowest: p.variants.some((v) => v.previousBest !== undefined && v.bestPrice <= (v.lowestEver ?? Infinity) && v.bestPrice < v.previousBest),
   };
 }

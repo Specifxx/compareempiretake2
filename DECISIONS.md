@@ -42,3 +42,28 @@ the search box, and "Top picks on Amazon AU" on the home page and eight top cate
 carries Amazon's required sentence on every page, `/affiliate-disclosure` explains it, and the first
 Amazon link on a page has the short disclosure beside it. Clicks send `buy_click` (Vercel) and, once
 `NEXT_PUBLIC_GA_ID` is set, a GA4 `amazon_click` event with product, placement and page.
+
+## 2026-10-25: eBay prices: spend 5,000 calls on the products people click
+
+The eBay Browse API (5,000 calls a day) runs once a day in the price job (`scripts/ebay-prices.ts`),
+never from a page. Keys live only in GitHub secrets (`EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`). It
+spends 4,950 searches, one per product, on products with a best price of at least 10 in their currency.
+About 28,700 products qualify across AU, US and UK, so it ranks them by demand (stores stocking it,
+newness, category weight, price, and a US boost), checks the top quarter of the budget every day and
+rotates the rest stalest-first. Each search is new, Buy It Now, in-country, priced within 45–135% of
+our best store price, and the listing title must contain the product's identifying words, so cases and
+parts don't match. The cheapest passing listing, with eBay's affiliate URL for campaign 5339155912, goes
+to `data/<region>/ebay.json`. Listings older than five days are dropped. Product pages show it as a
+labelled "eBay · Ad · New" row beside, never among, the store rows, and cards show "eBay $X".
+
+eBay requires a Marketplace Account Deletion endpoint for production keys:
+`/api/ebay/account-deletion` answers the challenge with sha256(code + EBAY_VERIFICATION_TOKEN +
+endpoint) and acknowledges deletion notices. We store no eBay user data, so there is nothing to delete.
+
+## 2026-10-25: The daily job finishes: stores in parallel, JB Hi-Fi on a time budget
+
+Runs on 23 and 24 Oct were cancelled at the time limit inside the AU category scrape: JB Hi-Fi's
+scraper fetched thousands of product JSON files and retried every 429 with backoff. JB now pauses
+all its workers together on a 429, stops after 40 minutes (`JB_BUDGET_MIN`), keeps yesterday's file for
+any category it couldn't finish, and starts at a different category each day. The runner scrapes
+four stores at once.

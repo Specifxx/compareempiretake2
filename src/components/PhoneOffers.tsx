@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { marketplacesFor } from "@/lib/marketplaces";
 import { AmazonRow } from "./AmazonLink";
+import { EbayListingRow } from "./EbayListingRow";
 import { withRegion } from "@/lib/region";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
@@ -220,6 +221,11 @@ export function PhoneOffers({
               </li>
             ))}
           </ol>
+          {phone.ebay && (
+            <div className="mt-2.5">
+              <EbayListingRow listing={phone.ebay} product={href} money={$} cheapest={best?.price} locale={R.locale} />
+            </div>
+          )}
           {region === "au" && (
             <div className="mt-2.5">
               <AmazonRow query={mq} product={href} placement="product" />

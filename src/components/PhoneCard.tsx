@@ -44,6 +44,7 @@ export function PhoneCard({ p, priority, showCategory }: { p: PhoneSummary; prio
           </div>
           <div className="text-right text-xs text-ink-mute">
             <span className="font-semibold text-ink">{p.retailerCount}</span> {p.retailerCount === 1 ? "store" : "stores"}
+            {p.ebayPrice !== undefined && <div className={p.ebayPrice < p.bestPrice ? "font-semibold text-save" : ""}>eBay {money(p.ebayPrice, p.region)}</div>}
           </div>
         </div>
         <div className="-mx-2 -mb-2 mt-1 flex justify-start">

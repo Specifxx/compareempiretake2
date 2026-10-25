@@ -342,6 +342,26 @@ function isMarketplace(p: ShopifyProduct): boolean {
   return /^100\d{5}$/.test(v?.sku ?? "") || (v?.title !== "Default Title" && p.product_type === "IT");
 }
 
+// JB rate-limits product JSON (429). One shared pause for every worker beats each one retrying
+// with backoff, and a total time budget keeps one slow store from holding up the daily job
+// (runs on 23–24 Oct were cancelled after 2.5 hours in here). Past the budget we keep what we have.
+const JB_DEADLINE = Date.now() + Number(process.env.JB_BUDGET_MIN || 40) * 60_000;
+let pausedUntil = 0;
+async function jbJson<T>(url: string): Promise<T> {
+  for (let i = 0; i < 3; i++) {
+    const wait = pausedUntil - Date.now();
+    if (wait > 0) await sleep(wait);
+    const res = await fetch(url, { headers: { "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36", accept: "application/json" }, signal: AbortSignal.timeout(20_000) });
+    if (res.status === 429) {
+      pausedUntil = Math.max(pausedUntil, Date.now() + 20_000 * (i + 1));
+      continue;
+    }
+    if (!res.ok) throw new Error(`${res.status} ${url}`);
+    return (await res.json()) as T;
+  }
+  throw new Error(`429 ${url}`);
+}
+
 async function jbCategory(cat: Cat): Promise<RawOffer[]> {
   const urls = (await productUrls()).filter((u) => {
     const h = u.slice(u.lastIndexOf("/") + 1).toLowerCase();
@@ -351,9 +371,14 @@ async function jbCategory(cat: Cat): Promise<RawOffer[]> {
   });
   console.log(`  jbhifi ${cat}: ${urls.length} candidate products`);
   const offers: RawOffer[] = [];
-  await pool(urls, 4, async (url) => {
+  let late = 0;
+  await pool(urls, 3, async (url) => {
+    if (Date.now() > JB_DEADLINE) {
+      late++;
+      return;
+    }
     try {
-      const { product: p } = await getJson<{ product: ShopifyProduct }>(`${url}.json`);
+      const { product: p } = await jbJson<{ product: ShopifyProduct }>(`${url}.json`);
       const title = decodeEntities(p.title).trim();
       if (!TYPES[cat].test(p.product_type) || junk(cat, title) || !IS[cat](title)) return;
       if (isMarketplace(p) && !MARKETPLACE_OK.has(cat)) return;
@@ -383,11 +408,16 @@ async function jbCategory(cat: Cat): Promise<RawOffer[]> {
     } catch (e) {
       console.warn(`  jbhifi: skip ${url}: ${(e as Error).message}`);
     }
-    await sleep(150);
+    await sleep(250);
   });
+  // A half-checked category would drop products: keep yesterday's file instead.
+  if (late) throw new Error(`time budget reached with ${late} of ${urls.length} products unchecked; keeping yesterday's prices`);
   return offers;
 }
 
+// Start at a different category each day, so the time budget never starves the same ones.
+const CATS = Object.keys(HANDLES) as Cat[];
+const start = Math.floor(Date.now() / 86_400_000) % CATS.length;
 export const scrapers: Partial<Record<Cat, () => Promise<RawOffer[]>>> = Object.fromEntries(
-  (Object.keys(HANDLES) as Cat[]).map((c) => [c, () => jbCategory(c)]),
+  [...CATS.slice(start), ...CATS.slice(0, start)].map((c) => [c, () => jbCategory(c)]),
 );
