@@ -3,10 +3,11 @@
  * their listings mix new, used and grey imports, so a single "price" would mislead.
  * Affiliate IDs are optional env vars — set them in Vercel once approved and
  * every link picks them up; nothing else changes.
- *   NEXT_PUBLIC_AMAZON_TAG       Amazon Associates AU tracking id (e.g. compareempire-22)
+ * Amazon AU links use our Associates tag (lib/amazon.ts, AMAZON_AU_TAG).
  * eBay links carry our EPN campaign id (see lib/ebay.ts).
  */
 import { ebaySearch } from "./ebay";
+import { amazonAuLink } from "./amazon";
 import type { RegionId } from "./region";
 
 export interface Marketplace {
@@ -16,7 +17,6 @@ export interface Marketplace {
   note: string;
 }
 
-const amazonTag = process.env.NEXT_PUBLIC_AMAZON_TAG;
 
 const AMAZON = {
   au: { host: "www.amazon.com.au", name: "Amazon AU", cat: "&i=electronics" },
@@ -33,23 +33,10 @@ export function marketplacesFor(region: RegionId = "au"): Marketplace[] {
       id: "amazon",
       name: a.name,
       note: "New, sold by Amazon & marketplace sellers",
-      url: (q) => `https://${a.host}/s?k=${encodeURIComponent(q)}${a.cat}${amazonTag && region === "au" ? `&tag=${amazonTag}` : ""}`,
+      url: (q) => (region === "au" ? amazonAuLink(q) : `https://${a.host}/s?k=${encodeURIComponent(q)}${a.cat}`),
     },
     { id: "ebay", name: EBAY_NAME[region], note: "New listings only — check the seller and warranty", url: (q, customid, phones) => ebaySearch(q, { condition: "new", customid, phones, region }) },
   ];
 }
 
-export const MARKETPLACES: Marketplace[] = [
-  {
-    id: "amazon",
-    name: "Amazon AU",
-    note: "New, sold by Amazon & marketplace sellers",
-    url: (q) => `https://www.amazon.com.au/s?k=${encodeURIComponent(q)}&i=electronics${amazonTag ? `&tag=${amazonTag}` : ""}`,
-  },
-  {
-    id: "ebay",
-    name: "eBay AU",
-    note: "New listings only — check the seller and warranty",
-    url: (q, customid, phones) => ebaySearch(q, { condition: "new", customid, phones }),
-  },
-];
+export const MARKETPLACES: Marketplace[] = marketplacesFor("au");

@@ -29,7 +29,8 @@ export default function PrivacyPage() {
         <h2>What else we keep</h2>
         <p>
           To stop spam we keep a one-way hash of your IP address with each submission, not the address itself. Visitor numbers come from Vercel Web Analytics,
-          which uses no cookies and doesn&apos;t identify you.
+          which uses no cookies and doesn&apos;t identify you, and from Google Analytics, which uses cookies to count visits and which
+          store links people click. Neither is used for advertising.
         </p>
         <h2>Who handles it</h2>
         <p>The site runs on Vercel; submissions are stored with Neon (Postgres); emails are sent through Resend. We never sell or share your details.</p>

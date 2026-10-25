@@ -3,6 +3,7 @@ import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { marketplacesFor } from "@/lib/marketplaces";
+import { AmazonRow } from "./AmazonLink";
 import { withRegion } from "@/lib/region";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
@@ -219,6 +220,11 @@ export function PhoneOffers({
               </li>
             ))}
           </ol>
+          {region === "au" && (
+            <div className="mt-2.5">
+              <AmazonRow query={mq} product={href} placement="product" />
+            </div>
+          )}
           {Object.values(checks[variant.id]?.was ?? {}).length > 0 && (
             <div className="mt-4 rounded-2xl bg-bg-sunk p-4">
               <div className="text-sm font-semibold">Are these &ldquo;was&rdquo; prices real?</div>
@@ -265,7 +271,7 @@ export function PhoneOffers({
             <div className="text-sm font-semibold">Also check the marketplaces</div>
             <p className="mt-0.5 text-xs text-ink-mute">Sometimes cheaper, but listings mix sellers and warranties, so we link to a search rather than rank them.</p>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
-              {marketplacesFor(region).map((m) => (
+              {marketplacesFor(region).filter((m) => !(region === "au" && m.id === "amazon")).map((m) => (
                 <a key={m.id} data-buy={m.id} data-buy-product={href} data-buy-kind="marketplace-new" href={m.url(mq, `p-${phone.category}-${phone.slug}`, phone.category === "phones")} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
                   <span>
                     <span className="font-semibold">Search {m.name}</span>

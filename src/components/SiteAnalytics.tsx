@@ -1,7 +1,17 @@
 "use client";
 import { Analytics, type BeforeSendEvent } from "@vercel/analytics/next";
 import { track } from "@vercel/analytics";
-import { useEffect } from "react";
+import Script from "next/script";
+import { useEffect, useState } from "react";
+
+/** GA4 measurement id (G-XXXX). GA4 loads only when it is set, and only for real visitors. */
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
+  }
+}
 
 const BOT = /bot|crawl|spider|slurp|headless|lighthouse|pagespeed|preview|facebookexternalhit|embedly|python|curl|wget|httpclient|phantom|puppeteer|playwright/i;
 const KEY = "va-disable";
@@ -45,6 +55,15 @@ export function SiteAnalytics() {
       if (d.buyPrice && !Number.isNaN(Number(d.buyPrice))) props.price = Math.round(Number(d.buyPrice));
       if (d.buyRank) props.rank = Number(d.buyRank);
       track("buy_click", props);
+      // Amazon Associates: a GA4 event per outbound Amazon click, to see which products and placements convert.
+      if (d.buy === "amazon")
+        window.gtag?.("event", "amazon_click", {
+          product: d.buyProduct ?? "",
+          placement: d.amazon ?? d.buyKind ?? "",
+          page_path: location.pathname,
+          link_url: a.href,
+          transport_type: "beacon",
+        });
     };
     document.addEventListener("click", onClick, true);
     document.addEventListener("auxclick", onClick, true);
@@ -53,5 +72,19 @@ export function SiteAnalytics() {
       document.removeEventListener("auxclick", onClick, true);
     };
   }, []);
-  return <Analytics beforeSend={beforeSend} />;
+  const [ga, setGa] = useState(false);
+  useEffect(() => setGa(Boolean(GA_ID) && countable()), []);
+  return (
+    <>
+      <Analytics beforeSend={beforeSend} />
+      {ga && (
+        <>
+          <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+          <Script id="ga4" strategy="afterInteractive">
+            {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_ID}');`}
+          </Script>
+        </>
+      )}
+    </>
+  );
 }

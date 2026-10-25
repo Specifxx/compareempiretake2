@@ -12,6 +12,7 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { storageLabel } from "@/lib/normalize";
 import { PriceCheckCard } from "@/components/PriceCheckCard";
+import { AmazonPicks } from "@/components/AmazonPicks";
 
 export function HomeView({ region }: { region: RegionId }) {
   const R = REGIONS[region];
@@ -108,6 +109,12 @@ export function HomeView({ region }: { region: RegionId }) {
       <section className="container-x mt-12">
         <ReviewsSection limit={3} />
       </section>
+
+      {region === "au" && (
+        <div className="container-x">
+          <AmazonPicks />
+        </div>
+      )}
 
       {deals.length > 0 && (
         <section className="container-x mt-12">

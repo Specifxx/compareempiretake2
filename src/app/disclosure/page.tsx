@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CONTACT_EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -17,8 +18,8 @@ export default function DisclosurePage() {
         <h2>Which links</h2>
         <p>
           Links to eBay are part of the eBay Partner Network. If you click one and buy something on eBay, eBay may pay us a small commission. You pay exactly
-          the same price. These links are marked &quot;Ad&quot;, &quot;affiliate link&quot; or sit in an eBay or marketplace box. We may add other store
-          programs later; when we do, they will be listed here.
+          the same price. These links are marked &quot;Ad&quot;, &quot;affiliate link&quot; or sit in an eBay or marketplace box. As an Amazon Associate we also earn from qualifying purchases on amazon.com.au (see the{" "}
+          <Link className="underline" href="/affiliate-disclosure">affiliate disclosure</Link>). Other programs will be listed here.
         </p>
         <h2>What it never changes</h2>
         <p>

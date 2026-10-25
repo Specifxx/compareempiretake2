@@ -6,6 +6,7 @@ import { search } from "@/lib/search";
 import { useSearchIndex } from "@/lib/use-search-index";
 import { SearchIcon } from "./icons";
 import { useRegionKit } from "@/lib/use-region";
+import { AMAZON_REL, amazonAuLink } from "@/lib/amazon";
 
 export interface SearchEntry {
   kind: "phone" | "guide" | "vs" | "category";
@@ -46,7 +47,7 @@ export function useResults(items: SearchEntry[], q: string) {
 }
 
 export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; autoFocus?: boolean }) {
-  const { $ } = useRegionKit();
+  const { $, region } = useRegionKit();
   const [q, setQ] = useState("");
   const [open, setOpen] = useState(false);
   const loaded = useSearchIndex(open);
@@ -157,6 +158,21 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
             <button onClick={() => go()} className="w-full border-t border-line px-4 py-2.5 text-left text-sm font-medium text-brand hover:bg-bg-sunk">
               See all results for “{q.trim()}” →
             </button>
+          )}
+          {q.trim() && region === "au" && (
+            <a
+              href={amazonAuLink(q.trim())}
+              target="_blank"
+              rel={AMAZON_REL}
+              data-buy="amazon"
+              data-buy-kind="amazon-search"
+              data-amazon="search"
+              data-buy-product={q.trim()}
+              className="flex items-center justify-between gap-3 border-t border-line px-4 py-2.5 text-sm hover:bg-bg-sunk"
+            >
+              <span>Check price on Amazon for “{q.trim()}” ↗</span>
+              <span className="text-[10px] text-ink-mute">Ad · affiliate link</span>
+            </a>
           )}
         </div>
       )}

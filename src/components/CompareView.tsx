@@ -9,6 +9,7 @@ import { compare } from "@/lib/store";
 import type { Phone, RetailerId } from "@/lib/types";
 import { CloseIcon, SearchIcon } from "./icons";
 import { RetailerDot } from "./RetailerChip";
+import { AmazonButton, AmazonNote } from "./AmazonLink";
 
 export function CompareView({ phones }: { phones: Phone[] }) {
   const params = useSearchParams();
@@ -79,6 +80,7 @@ export function CompareView({ phones }: { phones: Phone[] }) {
           },
         ] as [string, (p: Phone) => React.ReactNode],
     ),
+    ["Amazon AU", (p) => <AmazonButton query={p.name} product={`/${p.category}/${p.slug}`} placement="compare" />],
   ];
 
   return (
@@ -146,6 +148,7 @@ export function CompareView({ phones }: { phones: Phone[] }) {
               ))}
             </tbody>
           </table>
+          <AmazonNote className="mt-3 px-1" />
         </div>
       )}
     </div>

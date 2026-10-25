@@ -27,3 +27,18 @@ rank where known). One capturing listener in `SiteAnalytics.tsx` sends a Vercel 
 `buy_click` with those properties, so Analytics → Events shows which retailers people click through to.
 It uses the same real-visitor filter as pageviews, and middle-clicks count too. One listener rather than
 an onClick per link keeps server components (EbayStrip, brands page) server-only.
+
+## 2026-10-25: Amazon Associates (AU) links, without Amazon prices
+
+To earn the three qualifying sales Amazon requires before approving the Associates account
+(tag `compareempire-22`, overridable with `AMAZON_AU_TAG`), every Amazon AU link is built by
+`amazonAuLink()` in `src/lib/amazon.ts`: `/dp/<ASIN>` when we know one, otherwise an amazon.com.au
+search, always straight to Amazon with our tag (no shortener or redirect) and
+`rel="sponsored nofollow noopener"`. Our data has no ASINs yet, so links are searches for the
+product name. We show no Amazon price, rating or stock (that needs the Product Advertising API, which
+comes after approval); buttons say "Check price on Amazon". Placements, all Australia only: a labelled
+"Amazon AU" row under the store list on product pages, a row in the compare table, a search link in
+the search box, and "Top picks on Amazon AU" on the home page and eight top categories. The footer
+carries Amazon's required sentence on every page, `/affiliate-disclosure` explains it, and the first
+Amazon link on a page has the short disclosure beside it. Clicks send `buy_click` (Vercel) and, once
+`NEXT_PUBLIC_GA_ID` is set, a GA4 `amazon_click` event with product, placement and page.
