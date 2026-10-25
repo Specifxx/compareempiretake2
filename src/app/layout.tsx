@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Bricolage_Grotesque, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -13,8 +13,9 @@ import type { CategoryId } from "@/lib/types";
 import { CONTACT_EMAIL, SITE } from "@/lib/site";
 import "./globals.css";
 
-const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
-const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display", display: "swap", weight: ["500", "600", "700", "800"] });
+// Self-hosted (OFL, from Fontsource) so builds never depend on fetching Google Fonts.
+const sans = localFont({ src: "./fonts/inter-latin-wght-normal.woff2", variable: "--font-sans", display: "swap", weight: "100 900" });
+const display = localFont({ src: "./fonts/bricolage-grotesque-latin-wght-normal.woff2", variable: "--font-display", display: "swap", weight: "200 800" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
