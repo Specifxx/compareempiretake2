@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T23:26:00.022Z",
+ "scrapedAt": "2026-10-25T22:15:40.476Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -55,7 +55,7 @@
    "url": "https://www.mwave.com.au/products/asus-ascent-gx10-ai-nvdia-gb10-128gb-ram-1tb-supercomputer-mini-pc-nvidia-dgx-os-ac92418",
    "price": 8999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_ascent_gx10_ai_nvdia_gb10_128gb_ram_1tb_supercomputer_mini_pc_nvidia_dgx_os_ac92418_54995.jpg?v=1787795357",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -923,7 +923,7 @@
    "url": "https://www.mwave.com.au/products/hp-eliteone-840-g9-238-allinone-pc-i714700-16g-512gb-wifibt-w11p-ac76131",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hp_eliteone_840_g9_allinone_pc_i714700_16g_512gb_wifibt_w11p_ac76131_38542.jpg?v=1787785629",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hp"
   },
   {
@@ -1788,16 +1788,6 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC89594",
-   "title": "MSI EdgeXpert AI Supercomputer - Cortex-X925/Cortex-A725 128GB",
-   "url": "https://www.mwave.com.au/products/msi-edgexpert-ai-supercomputer-cortexx925cortexa725-128gb-ddr5-4tb-ssd-blackwell-dgx-spark-gb10-ac89594",
-   "price": 8888,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_edgexpert_ai_supercomputer_cortexx925cortexa725_128gb_ddr5_4tb_ssd_blackwell_dgx_ac89594_10876.jpg?v=1787797739",
-   "inStock": true,
-   "brand": "MSI"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC97020",
    "title": "MSI MAG Infinite E1 Gaming Desktop - Intel Core i5, 16GB, 1TB, RTX 5060, W11 Home",
    "url": "https://www.mwave.com.au/products/msi-mag-infinite-e1-gaming-desktop-intel-core-i5-16gb-1tb-rtx-5060-w11-home-refurbished-ac97020",
@@ -1961,7 +1951,7 @@
    "sku": "AC99422",
    "title": "MWave WORKFORCE PRO PC - Intel Ultra 9 285K & NVIDIA RTX PRO 4000 Blackwell",
    "url": "https://www.mwave.com.au/products/mwave-workforce-pro-pc-intel-ultra-9-285k-nvidia-rtx-pro-4000-blackwell-ac99422",
-   "price": 7499,
+   "price": 6999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mwave_workforce_pro_pc_intel_ultra_9_285k_nvidia_rtx_pro_4000_blackwell_ac99422_90976.jpg?v=1789706506",
    "inStock": true,
    "brand": "MWAVE"
@@ -2001,7 +1991,7 @@
    "sku": "182392",
    "title": "Mwave x Thermaltake CAPO X Ice Gaming PC - Ryzen 7 7800X3D / RX 9070 XT / Snow",
    "url": "https://www.mwave.com.au/products/mwave-x-thermaltake-capo-x-ice-gaming-pc-ryzen-7-7800x3d-rx-9070-xt-snow",
-   "price": 8799,
+   "price": 9699,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/Mwave-PAX26_Capo-X_Snow_Cutout_Side.jpg?v=1791414720",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2011,7 +2001,7 @@
    "sku": "182391",
    "title": "Mwave x Thermaltake CAPO X Onyx Gaming PC - Ryzen 7 7800X3D / RX 9070 XT / Black",
    "url": "https://www.mwave.com.au/products/mwave-x-thermaltake-capo-x-onyx-gaming-pc-ryzen-7-7800x3d-rx-9070-xt-black",
-   "price": 8699,
+   "price": 9599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/1ed94a95-79cb-4f7a-94ad-d0f859abfe46.jpg?v=1791420439",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2021,7 +2011,7 @@
    "sku": "182394",
    "title": "Mwave x Thermaltake Retro Core Gaming PC - Ryzen 5 9600X / RX 9070",
    "url": "https://www.mwave.com.au/products/mwave-x-thermaltake-retro-core-gaming-pc-ryzen-5-9600x-rx-9070",
-   "price": 3299,
+   "price": 3659,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/Mwave-PAX26_Retro-260_Cutout_Angled-right.jpg?v=1791415371",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2031,7 +2021,7 @@
    "sku": "182390",
    "title": "Mwave x Thermaltake Retro Elite Gaming PC - Ryzen 5 9600X / RX 9070 XT",
    "url": "https://www.mwave.com.au/products/mwave-x-thermaltake-retro-elite-gaming-pc-ryzen-5-9600x-rx-9070-xt",
-   "price": 3549,
+   "price": 3899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/PAX26_Retro-360_Cutout_Angled-right.jpg?v=1791416005",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2041,7 +2031,7 @@
    "sku": "182393",
    "title": "Mwave x Thermaltake Tower Dusk Gaming PC - Ryzen 5 9600X / RX 9070 XT",
    "url": "https://www.mwave.com.au/products/mwave-x-thermaltake-tower-dusk-gaming-pc-ryzen-5-9600x-rx-9070-xt",
-   "price": 3799,
+   "price": 4199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/Mwave-PAX26_Tower-600_Future-dusk_Cutout_Angled-left.jpg?v=1791419425",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2051,9 +2041,9 @@
    "sku": "182389",
    "title": "Mwave x Thermaltake View Dusk Gaming PC - Ryzen 5 9600X / RX 9070 / Future Dusk",
    "url": "https://www.mwave.com.au/products/mwave-x-thermaltake-view-dusk-gaming-pc-ryzen-5-9600x-rx-9070-future-dusk",
-   "price": 3549,
+   "price": 3899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/PAX26_View-390_Future-Dusk_Cutout_Angled-right.jpg?v=1791418644",
-   "inStock": true,
+   "inStock": false,
    "brand": "Thermaltake"
   },
   {
@@ -2061,7 +2051,7 @@
    "sku": "182387",
    "title": "Mwave x Thermaltake View Ice Gaming PC - Ryzen 5 9600X / RX 9070 XT / Snow",
    "url": "https://www.mwave.com.au/products/mwave-x-thermaltake-view-ice-gaming-pc-ryzen-5-9600x-rx-9070-xt-snow",
-   "price": 4199,
+   "price": 4699,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/182387_12.png?v=1791416646",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2209,7 +2199,7 @@
    "sku": "AD00768",
    "title": "RESPAWN NINJA PRM TAIPAN Gaming PC - Intel Ultra 7 270K Plus & GeForce RTX 5070",
    "url": "https://www.mwave.com.au/products/respawn-ninja-prm-taipan-gaming-pc-intel-ultra-7-270k-plus-geforce-rtx-5070-ti-ad00768",
-   "price": 4499,
+   "price": 3999,
    "inStock": true,
    "brand": "MWAVE"
   },
@@ -2324,7 +2314,7 @@
    "sku": "AD00650",
    "title": "RESPAWN NINJA ULT WOLF Gaming PC - AMD Ryzen 7 9800X3D & Gigabyte GeForce RTX 5080",
    "url": "https://www.mwave.com.au/products/respawn-ninja-ult-wolf-gaming-pc-amd-ryzen-7-9800x3d-gigabyte-geforce-rtx-5080-ad00650",
-   "price": 5499,
+   "price": 4999,
    "inStock": true,
    "brand": "MWAVE"
   },
@@ -2675,7 +2665,7 @@
    "url": "https://www.mwave.com.au/products/thermaltake-infinity-xtreme-v7-desktop-pc-intel-core-i714700f-32gb-ram-rtx-5080-w11-black-ac99619",
    "price": 3999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_infinity_xtreme_v7_desktop_pc_intel_core_i714700f_32gb_ram_rtx_5080_w11_black_ac99619_35126.jpg?v=1787799187",
-   "inStock": false,
+   "inStock": true,
    "brand": "Thermaltake"
   },
   {
@@ -2705,7 +2695,7 @@
    "url": "https://www.mwave.com.au/products/thermaltake-nomad-pro-desktop-gaming-pc-i514600kf-32gb-1tb-rtx5070-w11h-bubble-pink-edition-ac93120",
    "price": 3099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_nomad_pro_desktop_gaming_pc_i5_14600kf_32gb_1tb_rtx5070_w11h_bubble_pink_edition_ac93120_90769.jpg?v=1787799194",
-   "inStock": true,
+   "inStock": false,
    "brand": "Thermaltake"
   },
   {

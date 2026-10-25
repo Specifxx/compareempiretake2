@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T22:47:01.089Z",
+ "scrapedAt": "2026-10-25T22:18:03.501Z",
  "offers": [
   {
    "retailer": "thegoodguys",
@@ -186,6 +186,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094149_947714.png?v=1776232844&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "MD3Y4XA",
+   "brand": "Apple"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "apple-ipad-11-inches-a16-wi-fi-128gb-yellow-md4d4xa",
+   "title": "Apple iPad 11\" (A16) Wi-Fi 128GB - Yellow",
+   "url": "https://www.thegoodguys.com.au/apple-ipad-11-inches-a16-wi-fi-128gb-yellow-md4d4xa",
+   "price": 747,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094110_947678.png?v=1776233364&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "MD4D4XA",
    "brand": "Apple"
   },
   {
@@ -1719,17 +1730,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "lenovo-idea-tab-11-inches-25k-6gb-128gb-paper-like-tablet-zafr1155au",
-   "title": "Lenovo Idea Tab 11\" 2.5K 6GB 128GB Paper Like Tablet",
-   "url": "https://www.thegoodguys.com.au/lenovo-idea-tab-11-inches-25k-6gb-128gb-paper-like-tablet-zafr1155au",
-   "price": 499,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100714_1092457.png?v=1790741172&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "ZAFR1155AU",
-   "brand": "Lenovo"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "lenovo-tab-10-inches-4gb-64gb-tablet-zaeh0206au",
    "title": "Lenovo Tab 10\" 4GB 64GB Tablet",
    "url": "https://www.thegoodguys.com.au/lenovo-tab-10-inches-4gb-64gb-tablet-zaeh0206au",
@@ -1866,16 +1866,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "microsoft-surface-pro-12-inches-snapdragon-x2-plus-6-core-16gb-256gb-violet-ep2-83536",
-   "title": "Microsoft Surface Pro 12\" Snapdragon X2 Plus 6 Core 16GB 256GB - Violet",
-   "url": "https://www.thegoodguys.com.au/microsoft-surface-pro-12-inches-snapdragon-x2-plus-6-core-16gb-256gb-violet-ep2-83536",
-   "price": 1999,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50101090_1097193.png?v=1790550483&width=284&height=284&quality=88",
-   "inStock": true,
-   "brand": "Microsoft"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "microsoft-surface-pro-12-inches-snapdragon-x2-plus-6-core-16gb-512gb-graphite-ep2-75505",
    "title": "Microsoft Surface Pro 12\" Snapdragon X2 Plus 6 Core 16GB 512GB - Graphite",
    "url": "https://www.thegoodguys.com.au/microsoft-surface-pro-12-inches-snapdragon-x2-plus-6-core-16gb-512gb-graphite-ep2-75505",
@@ -1896,6 +1886,16 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "microsoft-surface-pro-12-inches-x2-plus-8-core-8gb-256gb-12th-edition-platinum-ep2-82120",
+   "title": "Microsoft Surface Pro 12\" X2 Plus 8 Core 8GB 256GB 12th Edition - Platinum",
+   "url": "https://www.thegoodguys.com.au/microsoft-surface-pro-12-inches-x2-plus-8-core-8gb-256gb-12th-edition-platinum-ep2-82120",
+   "price": 1499,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100021_1093630.png?v=1789004048&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "microsoft-surface-pro-13-inches-oled-snapdragon-x2-elite-12-core-16gb-ram-1tb-ssd-12th-edition-black-ep2-65027",
    "title": "Microsoft Surface Pro 13\" OLED Snapdragon X2 Elite 12 Core 16GB 1TB 12th Edition - Black",
    "url": "https://www.thegoodguys.com.au/microsoft-surface-pro-13-inches-oled-snapdragon-x2-elite-12-core-16gb-ram-1tb-ssd-12th-edition-black-ep2-65027",
@@ -1911,6 +1911,16 @@
    "url": "https://www.thegoodguys.com.au/microsoft-surface-pro-13-inches-oled-snapdragon-x2-elite-12-core-16gb-ram-512gb-ssd-12th-edition-black-ep2-65145",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099278_1074015.png?v=1781658201&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "microsoft-surface-pro-13-inches-snapdragon-x2-plus-10-core-16gb-ram-256gb-ssd-12th-edition-platinum-ep2-73228",
+   "title": "Microsoft Surface Pro 13\" Snapdragon X2 Plus 10 Core 16GB 256GB 12th Edition - Platinum",
+   "url": "https://www.thegoodguys.com.au/microsoft-surface-pro-13-inches-snapdragon-x2-plus-10-core-16gb-ram-256gb-ssd-12th-edition-platinum-ep2-73228",
+   "price": 2699,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099276_1074028.png?v=1781658185&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Microsoft"
   },
@@ -2148,6 +2158,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50101154_1098181.png?v=1791378997&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "X946BZAIATS",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "samsung-galaxy-tab-s12-ultra-wi-fi-12gb-256gb-grey-sm-x940nzaaxsa",
+   "title": "Samsung Galaxy Tab S12 Ultra Wi-Fi 12GB 256GB - Grey",
+   "url": "https://www.thegoodguys.com.au/samsung-galaxy-tab-s12-ultra-wi-fi-12gb-256gb-grey-sm-x940nzaaxsa",
+   "price": 2299,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50101147_1098181.png?v=1791378997&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "X940NZAAXSA",
    "brand": "Samsung"
   },
   {

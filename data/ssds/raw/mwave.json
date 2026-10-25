@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T23:18:50.974Z",
+ "scrapedAt": "2026-10-25T22:15:44.422Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -475,7 +475,7 @@
    "url": "https://www.mwave.com.au/products/crucial-e100-2tb-pcie-gen4-nvme-m2-ssd-ac87831",
    "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_e100_2tb_pcie_gen4_nvme_m2_ssd_ac87831_18874.jpg?v=1787796118",
-   "inStock": false,
+   "inStock": true,
    "brand": "Crucial"
   },
   {
@@ -529,7 +529,7 @@
    "url": "https://www.mwave.com.au/products/crucial-p310-2tb-pcie-40-nvme-m2-2280-ssd-w-heatsink-ct2000p310ssd5-ac86523",
    "price": 436,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_p310_2tb_pcie_40_nvme_m2_2280_ssd_w_heatsink_ct2000p310ssd5_ac86523_95621.jpg?v=1787796120",
-   "inStock": false,
+   "inStock": true,
    "mpn": "CT2000P310SSD5",
    "brand": "Crucial"
   },
@@ -595,7 +595,7 @@
    "url": "https://www.mwave.com.au/products/crucial-p510-2tb-pcie-50-nvme-m2-2280-ssd-ct2000p510ssd8-ac88496",
    "price": 466,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_p510_2tb_pcie_50_nvme_m2_2280_ssd_ct2000p510ssd8_ac88496_13660.jpg?v=1787796128",
-   "inStock": false,
+   "inStock": true,
    "mpn": "CT2000P510SSD8",
    "brand": "Crucial"
   },
@@ -1739,7 +1739,7 @@
    "url": "https://www.mwave.com.au/products/samsung-9100-pro-8tb-pcie-50-m2-nvme-2280-ssd-ac90895",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_9100_pro_8tb_pcie_50_m2_nvme_2280_ssd_ac90895_738.jpg?v=1787798265",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {
@@ -1749,7 +1749,7 @@
    "url": "https://www.mwave.com.au/products/samsung-9100-pro-8tb-pcie-50-m2-nvme-2280-ssd-with-heatsink-ac90896",
    "price": 2699,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_9100_pro_8tb_pcie_50_m2_nvme_2280_ssd_with_heatsink_ac90896_87469.jpg?v=1787798264",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {
@@ -2325,7 +2325,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-ace-a58-2tb-25-sata-iii-3d-nand-ssd-ac92560",
    "price": 378,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ace_a58_128gb_25_sata_iii_3d_nand_ssd_ac92560_92250.jpg?v=1789457426",
-   "inStock": false,
+   "inStock": true,
    "brand": "Silicon Power"
   },
   {
@@ -2345,7 +2345,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-ace-a58-512gb-25-sata-iii-3d-nand-ssd-ac92558",
    "price": 114,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ace_a58_128gb_25_sata_iii_3d_nand_ssd_ac92558_92250.jpg?v=1789457425",
-   "inStock": true,
+   "inStock": false,
    "brand": "Silicon Power"
   },
   {
@@ -2405,7 +2405,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-128gb-pcie-30-nvme-m2-ssd-sz128gbp34a60m28au-ac93695",
    "price": 58,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_128gb_pcie_30_m2_nvme_ssd_ac93695_63954.jpg?v=1789457433",
-   "inStock": true,
+   "inStock": false,
    "mpn": "SZ128GBP34A60M28AU",
    "brand": "Silicon Power"
   },
@@ -2425,7 +2425,7 @@
    "sku": "AC93696",
    "title": "Silicon Power P34A60 256GB PCIe 3.0 NVMe M.2 SSD - SZ256GBP34A60M28AU",
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-256gb-pcie-30-nvme-m2-ssd-sz256gbp34a60m28au-ac93696",
-   "price": 94,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_256gb_pcie_30_m2_nvme_ssd_ac93696_13312.jpg?v=1789457428",
    "inStock": true,
    "mpn": "SZ256GBP34A60M28AU",
@@ -2438,7 +2438,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-2tb-pcie-30-nvme-m2-ssd-sz002tbp34a60m28au-ac93699",
    "price": 384,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_2tb_pcie_30_m2_nvme_ssd_ac93699_31107.jpg?v=1789457427",
-   "inStock": true,
+   "inStock": false,
    "mpn": "SZ002TBP34A60M28AU",
    "brand": "Silicon Power"
   },
@@ -2447,7 +2447,7 @@
    "sku": "AC93697",
    "title": "Silicon Power P34A60 512GB PCIe 3.0 NVMe M.2 SSD - SZ512GBP34A60M28AU",
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-512gb-pcie-30-nvme-m2-ssd-sz512gbp34a60m28au-ac93697",
-   "price": 144,
+   "price": 138,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_512gb_pcie_30_m2_nvme_ssd_ac93697_45315.jpg?v=1789457427",
    "inStock": true,
    "mpn": "SZ512GBP34A60M28AU",
@@ -2640,7 +2640,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-1tb-pcie-40-nvme-m2-2230-ssd-ac93745",
    "price": 258,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_1tb_pcie_40_nvme_m2_2230_ssd_ac93745_1998.jpg?v=1789457432",
-   "inStock": false,
+   "inStock": true,
    "brand": "Silicon Power"
   },
   {
@@ -2650,7 +2650,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-1tb-pcie-40-nvme-m2-ssd-sz01kgbp44ud9005au-ac93701",
    "price": 248,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_1tb_pcie_40_nvme_m2_ssd_sz01kgbp44ud9005au_ac93701_45920.jpg?v=1789457436",
-   "inStock": false,
+   "inStock": true,
    "mpn": "SZ01KGBP44UD9005AU",
    "brand": "Silicon Power"
   },
@@ -2758,7 +2758,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-xs75-1tb-pcie-40-nvme-m2-ssd-w-heatsink-sz01kgbp44xs75s5au-ac93705",
    "price": 298,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_xs75_1tb_pcie_40_nvme_m2_ssd_w_heatsink_ps5_compatible_ac93705_83815.jpg?v=1789457450",
-   "inStock": false,
+   "inStock": true,
    "mpn": "SZ01KGBP44XS75S5AU",
    "brand": "Silicon Power"
   },
@@ -2769,7 +2769,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-xs75-2tb-pcie-40-nvme-m2-ssd-w-heatsink-sz02kgbp44xs75s5au-ac93706",
    "price": 504,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_xs75_2tb_pcie_40_nvme_m2_ssd_w_heatsink_ps5_compatible_ac93706_26429.jpg?v=1789457458",
-   "inStock": false,
+   "inStock": true,
    "mpn": "SZ02KGBP44XS75S5AU",
    "brand": "Silicon Power"
   },

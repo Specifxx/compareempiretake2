@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T23:21:49.169Z",
+ "scrapedAt": "2026-10-25T22:11:56.076Z",
  "offers": [
   {
    "retailer": "bose",
@@ -21,7 +21,7 @@
    "url": "https://www.bose.com.au/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html",
    "price": 169.95,
    "image": "https://assets.bosecreative.com/transform/7cd72a47-a802-45a3-9144-2981411cdcb0/FY27_NCWELE27-DewMint_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "bose",
@@ -32,7 +32,7 @@
    "url": "https://www.bose.com.au/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html?dwvar_NCWEARB-HEADPHONEIN_color=WHITE%20SMOKE",
    "price": 169.95,
    "image": "https://assets.bosecreative.com/transform/061cd6a5-2543-4d04-adb4-2a2940f9b046/FY27_NCWE27-WhtSmk_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "bose",
@@ -278,16 +278,6 @@
   },
   {
    "retailer": "bose",
-   "sku": "884367-1900",
-   "mpn": "884367-1900",
-   "brand": "Bose",
-   "title": "Bose QuietComfort SC Headphones",
-   "url": "https://www.bose.com.au/p/headphones/bose-quietcomfort-sc-headphones/QCSC-HEADPHONEARN.html",
-   "price": 399.95,
-   "inStock": false
-  },
-  {
-   "retailer": "bose",
    "sku": "884367-0900",
    "mpn": "884367-0900",
    "brand": "Bose",
@@ -295,6 +285,16 @@
    "url": "https://www.bose.com.au/p/headphones/bose-quietcomfort-sc-headphones/QCSC-HEADPHONEARN.html?dwvar_QCSC-HEADPHONEARN_color=BLACK",
    "price": 399.95,
    "inStock": true
+  },
+  {
+   "retailer": "bose",
+   "sku": "884367-1900",
+   "mpn": "884367-1900",
+   "brand": "Bose",
+   "title": "Bose QuietComfort SC Headphones - White Smoke",
+   "url": "https://www.bose.com.au/p/headphones/bose-quietcomfort-sc-headphones/QCSC-HEADPHONEARN.html?dwvar_QCSC-HEADPHONEARN_color=WHITE%20SMOKE",
+   "price": 399.95,
+   "inStock": false
   },
   {
    "retailer": "bose",
@@ -578,6 +578,26 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Driftwood Sand",
    "url": "https://www.bose.com.au/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=DRIFTWOOD%20SAND",
+   "price": 449.95,
+   "inStock": false
+  },
+  {
+   "retailer": "bose",
+   "sku": "900159-0010",
+   "mpn": "900159-0010",
+   "brand": "Bose",
+   "title": "Bose Ultra Open Earbuds - Gold Filigree",
+   "url": "https://www.bose.com.au/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=GOLD%20FILIGREE",
+   "price": 449.95,
+   "inStock": false
+  },
+  {
+   "retailer": "bose",
+   "sku": "900159-0030",
+   "mpn": "900159-0030",
+   "brand": "Bose",
+   "title": "Bose Ultra Open Earbuds - Ivory Mother Of Pearl",
+   "url": "https://www.bose.com.au/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=IVORY%20MOTHER%20OF%20PEARL",
    "price": 449.95,
    "inStock": false
   },

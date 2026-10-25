@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-24T13:13:19.519Z",
+ "scrapedAt": "2026-10-25T22:57:31.485Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -9,6 +9,16 @@
    "url": "https://www.overclockers.co.uk/adata-lancer-blade-expo-xmp-8gb-1x8gb-ddr5-c46-5600mhz-single-channel-kit-black/MEM-ADA-08329.html",
    "price": 119.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa6f00f20/images/data/product/2b/4ce442/d4401121b881d91344d39088f86d3a3c9a54783d.png?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-ADA-07175",
+   "brand": "ADATA",
+   "title": "ADATA XPG ARMAX EXPO/XMP 32GB (2x16GB) DDR5 C30 6000MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/adata-xpg-armax-expo-xmp-32gb-2x16gb-ddr5-c30-6000mhz-dual-channel-kit-black/MEM-ADA-07175.html",
+   "price": 449.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc338c2ce/images/data/product/61/fd0fa3/5ba76fe63dc8a7427130ef16bd3c25e6483884e9.png?sw=500",
    "inStock": true
   },
   {
@@ -39,6 +49,16 @@
    "url": "https://www.overclockers.co.uk/adata-xpg-gammix-d35-16gb-2x8gb-ddr4-c16-3200mhz-dual-channel-kit-black/MEM-ADA-08408.html",
    "price": 99.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw60767928/images/data/product/0f/1763a2/117558111e2e79e8d87a055e60c617ad35e65947.png?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-ADA-08407",
+   "brand": "ADATA",
+   "title": "ADATA XPG GAMMIX D35 32GB (2x16GB) DDR4 C16 3200MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/adata-xpg-gammix-d35-32gb-2x16gb-ddr4-c16-3200mhz-dual-channel-kit-black/MEM-ADA-08407.html",
+   "price": 259.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb92e2bdc/images/data/product/cf/65f6f2/cf7b7518f8fb06afe2b3de2ea04d55f8c52025b9.jpg?sw=500",
    "inStock": true
   },
   {
@@ -463,12 +483,42 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-05113",
+   "brand": "Corsair",
+   "title": "Corsair Dominator Titanium EXPO/XMP RGB 32GB (2X16GB) DDR5 C30 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-dominator-titanium-expo-xmp-rgb-32gb-2x16gb-ddr5-c30-6000mhz-dual-channel-kit/MEM-CRS-05113.html",
+   "price": 899.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw45010852/images/data/product/8e/66c518/71dc27123abfb4b596689519159b184ee25425e2.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-05106",
+   "brand": "Corsair",
+   "title": "Corsair Dominator Titanium RGB EXPO/XMP 64GB (2X32GB) DDR5 C30 6000MHz Dual Channel",
+   "url": "https://www.overclockers.co.uk/corsair-dominator-titanium-rgb-expo-xmp-64gb-2x32gb-ddr5-c30-6000mhz-dual-channel/MEM-CRS-05106.html",
+   "price": 799.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe51921e1/images/data/product/7e/a6940f/26c1a91d213a600ac30cf7e442a598d2fd3d4950.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-CRS-05109",
    "brand": "Corsair",
    "title": "Corsair Dominator Titanium RGB XMP 32GB (2X16GB) DDR5 C32 6400MHz Dual Channel Kit",
    "url": "https://www.overclockers.co.uk/corsair-dominator-titanium-rgb-xmp-32gb-2x16gb-ddr5-c32-6400mhz-dual-channel-kit/MEM-CRS-05109.html",
    "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw777c6b04/images/data/product/c5/1a7b8d/82127edd297ddd391830b41e64378970dbece72a.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-01178",
+   "brand": "Corsair",
+   "title": "Corsair Dominator Titanium RGB XMP 32GB (2x16GB) DDR5 PC5-57600C34 7200MHz Dual Kit",
+   "url": "https://www.overclockers.co.uk/corsair-dominator-titanium-rgb-xmp-32gb-2x16gb-ddr5-pc5-57600c34-7200mhz-dual-kit/MEM-CRS-01178.html",
+   "price": 499.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw1923ea13/images/data/product/5a/c4ed79/f87188b503ee061d5d48d97c1127d6efe43c5fbb.jpg?sw=500",
    "inStock": false
   },
   {
@@ -493,12 +543,41 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-03249",
+   "brand": "Corsair",
+   "title": "Corsair Dominator Titanium XMP 48GB (2X24GB) DDR5 PC5-44800C38 8000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-dominator-titanium-xmp-48gb-2x24gb-ddr5-pc5-44800c38-8000mhz-dual-channel-kit/MEM-CRS-03249.html",
+   "price": 799.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw060769a5/images/data/product/ac/d79489/325d5fc2af184d4a2d70e45899631f5e2457b471.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-05115",
+   "brand": "Corsair",
+   "title": "Corsair Dominator Titanium XMP 64GB (2X32GB) DDR5 C30 6000MHz Dual Channel Kit - White",
+   "url": "https://www.overclockers.co.uk/corsair-dominator-titanium-xmp-64gb-2x32gb-ddr5-c30-6000mhz-dual-channel-kit-white/MEM-CRS-05115.html",
+   "price": 799.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5c1b7d51/images/data/product/9a/b6420f/433188542c7dec78f0f7a259b8687361e6537cad.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MY-4D5-CS",
    "title": "Corsair Vengeance 32GB (2X16GB) DDR5 PC5-38400C40 4800MHZ Dual Channel Kit - Bla",
    "url": "https://www.overclockers.co.uk/MY-4D5-CS.html",
    "price": 399.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/Sites-Overclockers-UK-Site/-/default/dw061febf0/images/no-image-available.png?sw=500",
    "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MY-4D9-CS",
+   "title": "Corsair Vengeance 32GB (2X16GB) DDR5 PC5-41600C40 5200MHz Dual Channel Kit - Bla",
+   "url": "https://www.overclockers.co.uk/MY-4D9-CS.html",
+   "price": 439.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/Sites-Overclockers-UK-Site/-/default/dw061febf0/images/no-image-available.png?sw=500",
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -569,6 +648,16 @@
    "price": 559.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwd2132ebf/images/data/product/5d/0c9171/c775a249e0520e02df98e50dab846a1bdd8e25ad.jpg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-03744",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance EXPO/XMP 32GB (2X16GB) DDR5 PC5-48000C32 6400MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-expo-xmp-32gb-2x16gb-ddr5-pc5-48000c32-6400mhz-dual-channel-kit/MEM-CRS-03744.html",
+   "price": 499.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw79d8baaf/images/data/product/ce/a318ea/8a4f80476e3f4bb7b3156fb78f6ede08d2e4b0e8.png?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -682,6 +771,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-03748",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance EXPO/XMP RGB 48GB (2X24GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-expo-xmp-rgb-48gb-2x24gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit/MEM-CRS-03748.html",
+   "price": 599.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe0a38b2a/images/data/product/e0/779376/1431c87535d517cebba2f9098216d91d3d9e346b.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-CRS-08410",
    "brand": "Corsair",
    "title": "Corsair Vengeance LPX 16GB (2x8GB) DDR4 C16 3200MHz Dual Channel Kit - Black",
@@ -750,6 +849,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-01177",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance LPX XMP 32GB (2x16GB) DDR5 PC5-51200C32 6400MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-lpx-xmp-32gb-2x16gb-ddr5-pc5-51200c32-6400mhz-dual-channel-kit/MEM-CRS-01177.html",
+   "price": 499.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8a2124ab/images/data/product/ac/243db6/3d2a87fb3c3516a9f05cb31d304dd6ea00875401.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-CRS-01222",
    "brand": "Corsair",
    "title": "Corsair Vengeance LPX XMP 32GB (2x16GB) DDR5 PC5-57600C34 7200MHz Dual Channel Kit",
@@ -786,6 +895,26 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-32gb-2x16gb-ddr5-pc5-52000c32-6600mhz-dual-channel-kit-black-cmh32gx5m2x6600c32/MY-4DW-CS.html",
    "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw601e73d6/images/data/product/bd/99d7ae/98b8f13d56fd2f5b06d43af216526f58d2385fb2.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-05812",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance RGB 32GB XMP (2X16GB) DDR5 PC5-48000C40 6000MHz Dual Channel Kit - White",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-32gb-xmp-2x16gb-ddr5-pc5-48000c40-6000mhz-dual-channel-kit-white/MEM-CRS-05812.html",
+   "price": 499.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc5101ec8/images/data/product/7e/59092d/99b69a5fd6fe8407a921deba09423d92efd0ab82.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-05814",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance RGB 32GB XMP (2X16GB) DDR5 PC5-4800C40 5600MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-32gb-xmp-2x16gb-ddr5-pc5-4800c40-5600mhz-dual-channel-kit-black/MEM-CRS-05814.html",
+   "price": 419.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw42fc9235/images/data/product/8b/10533c/d31cc184550d9f21dfa059fcfa0b2ed797a56e37.jpg?sw=500",
    "inStock": false
   },
   {
@@ -930,6 +1059,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-05108",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance RGB EXPO/XMP 64GB (2X32GB) DDR5 C40 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-expo-xmp-64gb-2x32gb-ddr5-c40-6000mhz-dual-channel-kit/MEM-CRS-05108.html",
+   "price": 599.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwecfcb080/images/data/product/7b/dfbbf7/8315f648653cb0d11fd74c4660204dcd5e6f230d.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MY-4DR-CS",
    "brand": "Corsair",
    "title": "Corsair Vengeance RGB EXPO/XMP 64GB (2X32GB) DDR5 PC5-41600C40 5200MHz Dual Channel Kit - Black (CMH64GX5M2B5200Z40K)",
@@ -989,6 +1128,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-06837",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance RGB XMP 16GB (2X8GB) DDR5 C40 5200MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-16gb-2x8gb-ddr5-c40-5200mhz-dual-channel-kit/MEM-CRS-06837.html",
+   "price": 248.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwec13b63c/images/data/product/a7/8d51b4/30e0465f132233cb557aab9f0483ee5adce505c7.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-CRS-05107",
    "brand": "Corsair",
    "title": "Corsair Vengeance RGB XMP 32GB (2X16GB) DDR5 C30 6000MHz Dual Channel Kit - White",
@@ -1015,6 +1164,26 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-32gb-2x16gb-ddr5-pc5-41600c40-5200mhz-dual-channel-white/MEM-CRS-02837.html",
    "price": 359.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwaca23a56/images/data/product/6c/dabcbb/bb8cff55bda022e658ceb9ceb902d729724b9d3a.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-02839",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance RGB XMP 32GB (2X16GB) DDR5 PC5-44800C36 5600MHz Dual Channel",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-32gb-2x16gb-ddr5-pc5-44800c36-5600mhz-dual-channel/MEM-CRS-02839.html",
+   "price": 419.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwac0e7f3f/images/data/product/97/60d497/bb93ec9b22aa319787978dc3da88bf949a648ac6.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-03245",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance RGB XMP 32GB (2X16GB) DDR5 PC5-44800C36 8000MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-32gb-2x16gb-ddr5-pc5-44800c36-8000mhz-dual-channel-kit-black/MEM-CRS-03245.html",
+   "price": 599.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw714a3e76/images/data/product/fe/fd7ae4/a4adc3d95049c0e457826ed4acc952e4ed524faf.png?sw=500",
    "inStock": false
   },
   {
@@ -1119,6 +1288,26 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-03241",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance RGB XMP 96GB (2X48GB) DDR5 PC5-44800C32 6400MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-96gb-2x48gb-ddr5-pc5-44800c32-6400mhz-dual-channel-kit-black/MEM-CRS-03241.html",
+   "price": 1499.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw52eaf217/images/data/product/08/a536cf/a4adc3d95049c0e457826ed4acc952e4ed524faf.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-05111",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance RGB XMP 96GB (2X48GB) DDR5 PC5-48000C40 5600MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-96gb-2x48gb-ddr5-pc5-48000c40-5600mhz-dual-channel-kit/MEM-CRS-05111.html",
+   "price": 1799.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3a9e2649/images/data/product/35/487c82/af9d83410bf258b6ff1ca8fb82b6bff1728a0f91.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-CRS-03884",
    "brand": "Corsair",
    "title": "Corsair Vengeance RGB XMP CUDIMM 48GB (2 x 24GB) DDR5 8000MHz C38 Dual Channel Kit - Silver",
@@ -1129,12 +1318,32 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-03883",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance RGB XMP CUDIMM 48GB (2 x 24GB) DDR5 8200MHz C40 Dual Channel Kit - Silver",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-cudimm-48gb-2-x-24gb-ddr5-8200mhz-c40-dual-channel-kit-silver/MEM-CRS-03883.html",
+   "price": 899.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw82b90548/images/data/product/94/48f653/ba32023a89a4548993ff05f25efd2bf760735b99.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-CRS-03882",
    "brand": "Corsair",
    "title": "Corsair Vengeance RGB XMP DDR5 CUDIMM 48GB (2 x 24GB) DDR5 8400MHz C40 Dual Channel Kit - Silver",
    "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-ddr5-cudimm-48gb-2-x-24gb-ddr5-8400mhz-c40-dual-channel-kit-silver/MEM-CRS-03882.html",
    "price": 599.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa9cff1b5/images/data/product/50/7bd0af/8938801a3b27e8dc62d548123ea1727aa6c35edc.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-05348",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance XMP 128GB (2X64GB) XMP DDR5 PC5-44800C42 6400MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-xmp-128gb-2x64gb-xmp-ddr5-pc5-44800c42-6400mhz-dual-channel-kit/MEM-CRS-05348.html",
+   "price": 2999.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3da7c846/images/data/product/ac/d3929b/029224e1d902eb01f3fda6d4dcbf2e6d90554742.png?sw=500",
    "inStock": false
   },
   {
@@ -1195,6 +1404,16 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-xmp-48gb-2x24gb-ddr5-pc5-44800c40-5600mhz-dual-channel/MEM-CRS-02840.html",
    "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb9bb0f24/images/data/product/5f/191be8/9507eb079cd152547e5a17649cfbb21b18c479b8.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-07679",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance XMP 64GB (2x32GB) DDR5 C40 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-xmp-64gb-2x32gb-ddr5-c40-6000mhz-dual-channel-kit/MEM-CRS-07679.html",
+   "price": 698.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw4e3d9c05/images/data/product/4f/bbbd13/3510157d79f1183dd0536c3c6cf372b9496ced05.png?sw=500",
    "inStock": false
   },
   {
@@ -1269,6 +1488,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRS-03887",
+   "brand": "Corsair",
+   "title": "Corsair Vengeance XMP CUDIMM 48GB (2 x 24GB) DDR5 8000MHz C38 Dual Channel Kit - Silver",
+   "url": "https://www.overclockers.co.uk/corsair-vengeance-xmp-cudimm-48gb-2-x-24gb-ddr5-8000mhz-c38-dual-channel-kit-silver/MEM-CRS-03887.html",
+   "price": 899.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe5418823/images/data/product/2c/905307/07edb6a289c141ccdb42145e2759d4d39b96d23a.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-CRS-03886",
    "brand": "Corsair",
    "title": "Corsair Vengeance XMP CUDIMM 48GB (2 x 24GB) DDR5 8200MHz C40 Dual Channel Kit - Silver",
@@ -1315,6 +1544,16 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-xmp-expo-rgb-32gb-2x16gb-ddr5-pc5-48000c28-6000mhz-dual-channel-kit-grey/MEM-CRS-04234.html",
    "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwf5fc1922/images/data/product/c5/2166b7/442b333d14640cc317fe535f96c84f43290ae039.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRU-01083",
+   "brand": "Crucial",
+   "title": "Crucial Pro 32GB XMP/EXPO (2x16GB) DDR5 PC5-44800C45 5600MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/crucial-pro-32gb-xmp-expo-2x16gb-ddr5-pc5-44800c45-5600mhz-dual-channel-kit/MEM-CRU-01083.html",
+   "price": 419.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw0f1ef8dd/images/data/product/6d/136217/17405e89c63294be0ca73e9b30a591707817b255.jpg?sw=500",
    "inStock": false
   },
   {
@@ -1379,6 +1618,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-CRU-06423",
+   "brand": "Crucial",
+   "title": "Crucial Pro OC EXPO/XMP 32GB (2x16GB) DDR5 PC5-48000C32 6400MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/crucial-pro-oc-expo-xmp-32gb-2x16gb-ddr5-pc5-48000c32-6400mhz-dual-channel-kit-black/MEM-CRU-06423.html",
+   "price": 1199.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw73a3a97c/images/data/product/c8/99500b/2cd4abbd766eea4d79c43decc643fc7c5c66d29c.jpeg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-CRU-06424",
    "brand": "Crucial",
    "title": "Crucial Pro OC EXPO/XMP 32GB (2x16GB) DDR5 PC5-48000C32 6400MHz Dual Channel Kit - White",
@@ -1386,6 +1635,16 @@
    "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwdfca08eb/images/data/product/10/986b22/eba063947e3b21b7b118c60f5466e2615a1fe970.jpeg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-CRU-02219",
+   "brand": "Crucial",
+   "title": "Crucial Pro OC EXPO/XMP 32GB (2x16GB) DDR5 PC5-48000C36 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/crucial-pro-oc-expo-xmp-32gb-2x16gb-ddr5-pc5-48000c36-6000mhz-dual-channel-kit/MEM-CRU-02219.html",
+   "price": 449.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa6d92f88/images/data/product/1e/e83041/6305697911a0d15a0de1ecd3551fe4b7fa599606.jpg?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -1519,6 +1778,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-GSK-05028",
+   "brand": "G.Skill",
+   "title": "G.Skill Royal RGB EXPO 64GB (2x32GB) DDR5 PC5-48000C26 6000MHz Dual Channel Kit - Gold",
+   "url": "https://www.overclockers.co.uk/g.skill-royal-rgb-expo-64gb-2x32gb-ddr5-pc5-48000c26-6000mhz-dual-channel-kit-gold/MEM-GSK-05028.html",
+   "price": 2299.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwd9ae4651/images/data/product/93/390f4b/f13de9b1692f5ff6708ceb12782462e2d523d2fd.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-GSK-05026",
    "brand": "G.Skill",
    "title": "G.Skill Royal RGB EXPO 64GB (2x32GB) DDR5 PC5-48000C26 6000MHz Dual Channel Kit - Silver",
@@ -1605,6 +1874,16 @@
    "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-rgb-32gb-2x16gb-ddr5-pc5-48000c26-6000mhz-dual-channel-kit/MEM-GSK-04752.html",
    "price": 799.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw6d183bef/images/data/product/55/e87b62/69d67825d12622167e875af770077ee1291b617a.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-GSK-05022",
+   "brand": "G.Skill",
+   "title": "G.Skill Trident Z5 Neo EXPO RGB 32GB (2x16GB) DDR5 PC5-48000C26 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-rgb-32gb-2x16gb-ddr5-pc5-48000c26-6000mhz-dual-channel-kit/MEM-GSK-05022.html",
+   "price": 1199.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw2fc5e4b8/images/data/product/db/cd3db4/1f759f665966ef3969db70a7d83aaabd75b78de9.png?sw=500",
    "inStock": false
   },
   {
@@ -2459,6 +2738,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-KNG-06123",
+   "brand": "Kingston",
+   "title": "Kingston FURY Renegade Pro EXPO/XMP 128GB (8x16GB) DDR5 6000MHz C32 Octa Channel Kit",
+   "url": "https://www.overclockers.co.uk/kingston-fury-renegade-pro-expo-xmp-128gb-8x16gb-ddr5-6000mhz-c32-octa-channel-kit/MEM-KNG-06123.html",
+   "price": 1199.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb0b66364/images/data/product/aa/5dfecf/5263ee3cab078af119ee20ba03ed3037a9525075.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-KNG-05539",
    "brand": "Kingston",
    "title": "Kingston Fury Renegade RGB 16GB (2x8GB) DDR4 C16 3600MHz Dual Channel Kit",
@@ -2739,6 +3028,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-KLV-07028",
+   "brand": "KLEVV",
+   "title": "KLEVV CRAS V RGB EXPO/XMP 32GB (2x16GB) 6000MHz C30 DDR5 Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/klevv-cras-v-rgb-expo-xmp-32gb-2x16gb-6000mhz-c30-ddr5-dual-channel-kit-black/MEM-KLV-07028.html",
+   "price": 419.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw19d1b593/images/data/product/c8/861e6d/bb293cbabb35f88416d7969210e985e23017652d.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-KLV-07027",
    "brand": "KLEVV",
    "title": "KLEVV CRAS V RGB EXPO/XMP 32GB (2x16GB) 6000MHz C30 DDR5 Dual Channel Kit - White",
@@ -2866,6 +3165,16 @@
    "price": 999.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5e8eaa52/images/data/product/25/298e9c/f5ca4884b042a9d89c9b9123ffaf8624ddf113fb.jpg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-KLV-07026",
+   "brand": "KLEVV",
+   "title": "KLEVV CRAS V RGB EXPO/XMP 64GB (2x32GB) 6400MHz C32 DDR5 Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/klevv-cras-v-rgb-expo-xmp-64gb-2x32gb-6400mhz-c32-ddr5-dual-channel-kit-black/MEM-KLV-07026.html",
+   "price": 999.95,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw2a316b5a/images/data/product/6d/ddcb44/7a172af068655f00e3e814c56f083c2c19fb3670.jpg?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -3149,6 +3458,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-PAT-06960",
+   "brand": "Patriot",
+   "title": "Patriot Viper RGB Elite 5 Ultra EXPO/XMP 48GB (2x24GB) DDR5 C28 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/patriot-viper-rgb-elite-5-ultra-expo-xmp-48gb-2x24gb-ddr5-c28-6000mhz-dual-channel-kit/MEM-PAT-06960.html",
+   "price": 599.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc8a1f837/images/data/product/94/ec6a2c/a3f4f742814f6a9315439c07410df11efbfddeac.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-PAT-06974",
    "brand": "Patriot",
    "title": "Patriot Viper RGB Venom EXPO/XMP 32GB (2x16GB) DDR5 C30 6000MHz Dual Channel Kit",
@@ -3205,6 +3524,16 @@
    "url": "https://www.overclockers.co.uk/patriot-viper-rgb-xtreme-5-mpower-expo-xmp-32gb-2x16gb-ddr5-c30-6000mhz-dual-channel-kit/MEM-PAT-06958.html",
    "price": 449.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw827ed036/images/data/product/7d/d02aca/08290cb2c97c6072c955080c724844a44e07cd2b.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-PAT-06957",
+   "brand": "Patriot",
+   "title": "Patriot Viper RGB XTREME 5 MPOWER EXPO/XMP 48GB (2x24GB) DDR5 C30 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/patriot-viper-rgb-xtreme-5-mpower-expo-xmp-48gb-2x24gb-ddr5-c30-6000mhz-dual-channel-kit/MEM-PAT-06957.html",
+   "price": 539.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb78caae2/images/data/product/49/0b83fd/08290cb2c97c6072c955080c724844a44e07cd2b.jpg?sw=500",
    "inStock": false
   },
   {
@@ -3288,6 +3617,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-PAT-08417",
+   "brand": "Patriot",
+   "title": "Patriot Viper Steel RGB 16GB (2x8GB) DDR4 C16 3200MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/patriot-viper-steel-rgb-16gb-2x8gb-ddr4-c16-3200mhz-dual-channel-kit-black/MEM-PAT-08417.html",
+   "price": 158.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwca1cd6ff/images/data/product/d8/54d34e/534e9e398b39e8d9651d5902e97cde6638ea0f8f.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-PAT-08418",
    "brand": "Patriot",
    "title": "Patriot Viper Steel RGB 32GB (2x16GB) DDR4 C16 3200MHz Dual Channel Kit - Black",
@@ -3335,6 +3674,16 @@
    "price": 428.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw7fe8a0be/images/data/product/9e/4403be/a52b58689fc4d0f2ed0979a47278497645a6b58d.jpg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-PAT-06981",
+   "brand": "Patriot",
+   "title": "Patriot Viper Venom EXPO/XMP 32GB (2x16GB) DDR5 C36 5600MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/patriot-viper-venom-expo-xmp-32gb-2x16gb-ddr5-c36-5600mhz-dual-channel-kit/MEM-PAT-06981.html",
+   "price": 419.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw76a4ba1c/images/data/product/f3/6fecac/77b9cc6253aef739f778547e43f3db459941a46f.jpg?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -3395,6 +3744,16 @@
    "price": 219.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw647522e1/images/data/product/1d/b48eff/ed35aae19a0e38780f4e98e2545842291a53309f.jpg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-PAT-06982",
+   "brand": "Patriot",
+   "title": "Patriot Viper Venom XMP 16GB (2x8GB) DDR5 C40 5600MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/patriot-viper-venom-xmp-16gb-2x8gb-ddr5-c40-5600mhz-dual-channel-kit/MEM-PAT-06982.html",
+   "price": 229.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw1a09375f/images/data/product/04/f0d049/77b9cc6253aef739f778547e43f3db459941a46f.jpg?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -3614,6 +3973,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-TMG-03146",
+   "brand": "Team Group",
+   "title": "TeamGroup Vulcan EXPO/XMP 64GB (2X32GB) DDR5 PC5-51200C40 6400MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/teamgroup-vulcan-expo-xmp-64gb-2x32gb-ddr5-pc5-51200c40-6400mhz-dual-channel-kit-black/MEM-TMG-03146.html",
+   "price": 449.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3c5a71cb/images/data/product/07/b10f4d/1dcf8d0030b1651773110e68b36ec09eb7313618.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MY-0B3-TG",
    "brand": "Team Group",
    "title": "TeamGroup Vulcanα EXPO 32GB (2X16GB) DDR5 PC5-44800C40 5600MHz Dual Channel Kit - Black (FLABD532G5600HC40BDC01)",
@@ -3684,6 +4053,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-TMG-05465",
+   "brand": "Team Group",
+   "title": "TeamGroup Xtreem ARGB EXPO/XMP 48GB (2X24GB) DDR5 C34 7200MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/teamgroup-xtreem-argb-expo-xmp-48gb-2x24gb-ddr5-c34-7200mhz-dual-channel-kit-black/MEM-TMG-05465.html",
+   "price": 799.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwae5d1dbe/images/data/product/b5/efbe64/dccd6e739289fb033d556c251aa1a725c94130e2.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-TMG-05466",
    "brand": "Team Group",
    "title": "TeamGroup Xtreem ARGB EXPO/XMP 48GB (2X24GB) DDR5 C34 7200MHz Dual Channel Kit - White",
@@ -3714,12 +4093,32 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-TMG-05457",
+   "brand": "Team Group",
+   "title": "TeamGroup Xtreem ARGB EXPO/XMP 48GB (2X24GB) DDR5 C38 8000MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/teamgroup-xtreem-argb-expo-xmp-48gb-2x24gb-ddr5-c38-8000mhz-dual-channel-kit-black/MEM-TMG-05457.html",
+   "price": 799.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwaa30774e/images/data/product/a7/c8df58/1309aea9e206d6e9356bc2f2831e6bf2214b5bd0.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-TMG-05459",
    "brand": "Team Group",
    "title": "TeamGroup Xtreem ARGB EXPO/XMP 48GB (2X24GB) DDR5 C38 8000MHz Dual Channel Kit - White",
    "url": "https://www.overclockers.co.uk/teamgroup-xtreem-argb-expo-xmp-48gb-2x24gb-ddr5-c38-8000mhz-dual-channel-kit-white/MEM-TMG-05459.html",
    "price": 659.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb429b0a6/images/data/product/07/f914bc/6d9b596ab6e9c7aa195103f93aa916ad858dca26.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-TMG-05233",
+   "brand": "Team Group",
+   "title": "TeamGroup Xtreem CKD XMP 48GB (2X24GB) DDR5 PC5-67200C42 8400MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/teamgroup-xtreem-ckd-xmp-48gb-2x24gb-ddr5-pc5-67200c42-8400mhz-dual-channel-kit/MEM-TMG-05233.html",
+   "price": 599.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3da04ef9/images/data/product/58/e81069/ec03b263686d8f8934f25fdfe2e3714c704be82c.jpg?sw=500",
    "inStock": false
   },
   {
@@ -3764,6 +4163,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-TMG-03144",
+   "brand": "Team Group",
+   "title": "TeamGroup Xtreem EXPO/XMP 32GB (2X16GB) DDR5 PC5-60800C36 7600MHz Dual Channel Kit - Pink",
+   "url": "https://www.overclockers.co.uk/teamgroup-xtreem-expo-xmp-32gb-2x16gb-ddr5-pc5-60800c36-7600mhz-dual-channel-kit-pink/MEM-TMG-03144.html",
+   "price": 499.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw52d5f399/images/data/product/6e/c9598a/20e35b7e97b4a1b1d534b01de63fdf9f83554310.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-TMG-03136",
    "brand": "Team Group",
    "title": "TeamGroup Xtreem EXPO/XMP 48GB (2X24GB) DDR5 PC5-44800C38 7200MHz Dual Channel Kit - Black",
@@ -3800,6 +4209,16 @@
    "url": "https://www.overclockers.co.uk/teamgroup-xtreem-expo-xmp-48gb-2x24gb-ddr5-pc5-60800c36-7600mhz-dual-channel-kit-white/MEM-TMG-03141.html",
    "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwbfb65f40/images/data/product/f3/f8f8e1/82ac72c94b951d19c1ddba2f929f07ac51e9ec60.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-TMG-03134",
+   "brand": "Team Group",
+   "title": "TeamGroup Xtreem XMP 48GB (2X24GB) DDR5 PC5-44800C38 8200MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/teamgroup-xtreem-xmp-48gb-2x24gb-ddr5-pc5-44800c38-8200mhz-dual-channel-kit-black/MEM-TMG-03134.html",
+   "price": 599.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw807f48db/images/data/product/4e/2af098/042acdb662d6ed5bb292f6631d40f13954c23f4c.jpg?sw=500",
    "inStock": false
   },
   {

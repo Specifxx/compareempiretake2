@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T22:54:36.204Z",
+ "scrapedAt": "2026-10-25T22:16:43.682Z",
  "offers": [
   {
    "retailer": "msy",
@@ -241,6 +241,17 @@
    "url": "https://www.msy.com.au/product/aoc-21-5in-fhd-va-120hz-adaptive-sync-monitor-22b40hm-94936",
    "price": 89,
    "image": "https://assets.msy.com.au/newsite/images/202607/thumb_img/Monitors-AOC-21-5in-FHD-VA-120Hz-Adaptive-Sync-Monitor-22B40HM-8.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
+   "sku": "85606",
+   "title": "AOC 23.8in FHD 120Hz AdaptiveSync IPS Monitor",
+   "brand": "AOC",
+   "mpn": "24B3HA3",
+   "url": "https://www.msy.com.au/product/aoc-23-8in-fhd-120hz-adaptivesync-ips-monitor-24b3ha3-85606",
+   "price": 135,
+   "image": "https://assets.msy.com.au/newsite/images/202509/thumb_img/Monitors-AOC-23-8in-FHD-120Hz-AdaptiveSync-IPS-Monitor-24B3HA3-10.jpg",
    "inStock": true
   },
   {
@@ -766,7 +777,7 @@
    "brand": "Asus",
    "mpn": "VZ249HG",
    "url": "https://www.msy.com.au/product/asus-24in-fhd-ips-120hz-adaptive-sync-eye-care-gaming-monitor-vz249hg-92886",
-   "price": 99,
+   "price": 119,
    "image": "https://assets.msy.com.au/newsite/images/202602/thumb_img/Monitors-Asus-24in-FHD-IPS-120Hz-Adaptive-Sync-Eye-Care-Gaming-Monitor-VZ249HG-8.jpg",
    "inStock": true
   },
@@ -788,7 +799,7 @@
    "brand": "Asus",
    "mpn": "VZ279HG",
    "url": "https://www.msy.com.au/product/asus-27in-fhd-ips-120hz-adaptive-sync-monitor-vz279hg-93445",
-   "price": 125,
+   "price": 148,
    "image": "https://assets.msy.com.au/newsite/images/202604/thumb_img/Monitors-Asus-27in-FHD-IPS-120Hz-Adaptive-Sync-Monitor-VZ279HG-7.jpg",
    "inStock": true
   },
@@ -942,7 +953,7 @@
    "brand": "Asus",
    "mpn": "XG27ACMES",
    "url": "https://www.msy.com.au/product/asus-rog-strix-27in-wqhd-hdr-fast-ips-255hz-elmb-freesync-premium-gaming-monitor-black-xg27acmes-92850",
-   "price": 349,
+   "price": 399,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-Asus-ROG-Strix-27in-WQHD-HDR-Fast-IPS-255Hz-ELMB-FreeSync-Premium-Gaming-Monitor-Black-XG27ACMES-5.jpg",
    "inStock": true
   },
@@ -964,7 +975,7 @@
    "brand": "Asus",
    "mpn": "XG34WCDMS",
    "url": "https://www.msy.com.au/product/asus-rog-strix-34in-qd-oled-280hz-rgb-curved-gaming-monitor-xg34wcdms-95625",
-   "price": 1399,
+   "price": 1499,
    "image": "https://assets.msy.com.au/newsite/images/202608/thumb_img/Monitors-Asus-ROG-Strix-34in-QD-OLED-280Hz-RGB-Curved-Gaming-Monitor-XG34WCDMS-4.jpg",
    "inStock": true
   },
@@ -997,7 +1008,7 @@
    "brand": "Asus",
    "mpn": "XG27AQNGV",
    "url": "https://www.msy.com.au/product/asus-rog-strix-pulsar-27in-qhd-ultrafast-ips-360hz-g-sync-gaming-monitor-xg27aqngv-93328",
-   "price": 849,
+   "price": 1099,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-Asus-ROG-Strix-Pulsar-27in-QHD-Ultrafast-IPS-360Hz-G-SYNC-Gaming-Monitor-XG27AQNGV-7.jpg",
    "inStock": true
   },
@@ -1047,17 +1058,6 @@
   },
   {
    "retailer": "msy",
-   "sku": "85609",
-   "title": "ASUS TUF 27in QHD 210Hz Fast IPS Gaming Monitor",
-   "brand": "Asus",
-   "mpn": "VG27AQ5A",
-   "url": "https://www.msy.com.au/product/asus-tuf-27in-qhd-210hz-fast-ips-gaming-monitor-vg27aq5a-85609",
-   "price": 249,
-   "image": "https://assets.msy.com.au/newsite/images/202508/thumb_img/Monitors-ASUS-TUF-27in-QHD-210Hz-Fast-IPS-Gaming-Monitor-VG27AQ5A-6.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
    "sku": "95633",
    "title": "Asus TUF 27in QHD 320Hz Fast IPS Gaming Monitor",
    "brand": "Asus",
@@ -1096,7 +1096,7 @@
    "brand": "Asus",
    "mpn": "VG279QM5A",
    "url": "https://www.msy.com.au/product/asus-tuf-gaming-27in-fhd-fast-ips-240hz-freesync-premium-gaming-monitor-vg279qm5a-90453",
-   "price": 189,
+   "price": 249,
    "image": "https://assets.msy.com.au/newsite/images/202510/thumb_img/Monitors-Asus-TUF-Gaming-27in-FHD-Fast-IPS-240Hz-FreeSync-Premium-Gaming-Monitor-VG279QM5A-7.jpg",
    "inStock": true
   },
@@ -1118,7 +1118,7 @@
    "brand": "Asus",
    "mpn": "VG27AQL5A",
    "url": "https://www.msy.com.au/product/asus-tuf-gaming-27in-qhd-fast-ips-210hz-elmb-sync-gaming-monitor-black-vg27aql5a-90450",
-   "price": 299,
+   "price": 379,
    "image": "https://assets.msy.com.au/newsite/images/202510/thumb_img/Monitors-Asus-TUF-Gaming-27in-QHD-Fast-IPS-210Hz-ELMB-Sync-Gaming-Monitor-VG27AQL5A-5.jpg",
    "inStock": true
   },
@@ -1129,7 +1129,7 @@
    "brand": "Asus",
    "mpn": "VG27AQM5A",
    "url": "https://www.msy.com.au/product/asus-tuf-gaming-27in-qhd-fast-ips-300hz-elmb-sync-gaming-monitor-vg27aqm5a-90449",
-   "price": 319,
+   "price": 499,
    "image": "https://assets.msy.com.au/newsite/images/202510/thumb_img/Monitors-Asus-TUF-Gaming-27in-QHD-Fast-IPS-300Hz-ELMB-Sync-Gaming-Monitor-VG27AQM5A-6.jpg",
    "inStock": true
   },
@@ -1151,7 +1151,7 @@
    "brand": "Asus",
    "mpn": "VG34WQ5A",
    "url": "https://www.msy.com.au/product/asus-tuf-gaming-34in-dual-mode-wqhd-200hz-hd-400hz-fast-va-elmb-sync-curved-gaming-monitor-vg34wq5a-93738",
-   "price": 399,
+   "price": 449,
    "image": "https://assets.msy.com.au/newsite/images/202604/thumb_img/Monitors-Asus-TUF-Gaming-34in-Dual-Mode-WQHD-200Hz-HD-400Hz-Fast-VA-ELMB-Sync-Curved-Gaming-Monitor-VG34WQ5A-8.jpg",
    "inStock": true
   },
@@ -1505,6 +1505,17 @@
    "url": "https://www.msy.com.au/product/dell-ultrasharp-34-14in-uwqhd-ips-120hz-curved-monitor-u3425we-92366",
    "price": 1239,
    "image": "https://assets.msy.com.au/newsite/images/202602/thumb_img/Monitors-Dell-UltraSharp-34-14in-UWQHD-IPS-120Hz-Curved-Monitor-U3425WE-7.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
+   "sku": "77984",
+   "title": "Dell UltraSharp 40in WUHD 5K 120Hz IPS Curved with Speakers Monitor",
+   "brand": "Dell",
+   "mpn": "U4025QW",
+   "url": "https://www.msy.com.au/product/dell-ultrasharp-40in-wuhd-5k-120hz-ips-curved-with-speakers-monitor-u4025qw-77984",
+   "price": 2099,
+   "image": "https://assets.msy.com.au/newsite/images/202406/thumb_img/Monitors-Dell-UltraSharp-40in-WUHD-5K-120Hz-IPS-Curved-with-Speakers-Monitor-U4025QW-6.jpg",
    "inStock": true
   },
   {
@@ -1888,7 +1899,7 @@
    "brand": "Lenovo",
    "mpn": "64AEGAR1AU",
    "url": "https://www.msy.com.au/product/lenovo-thinkvision-34in-wqhd-120hz-va-monitor-64aegar1au-85611",
-   "price": 599,
+   "price": 559,
    "image": "https://assets.msy.com.au/newsite/images/202508/thumb_img/Monitors-Lenovo-ThinkVision-34in-WQHD-120Hz-VA-Monitor-64AEGAR1AU-5.jpg",
    "inStock": true
   },
@@ -2152,7 +2163,7 @@
    "brand": "LG",
    "mpn": "34U530A-W",
    "url": "https://www.msy.com.au/product/lg-34in-ultrawide-fhd-100hz-ips-monitor-34u530a-w-92580",
-   "price": 329,
+   "price": 349,
    "image": "https://assets.msy.com.au/newsite/images/202602/thumb_img/Monitors-LG-34in-Ultrawide-FHD-100Hz-IPS-Monitor-34U530A-W-10.jpg",
    "inStock": true
   },
@@ -2361,7 +2372,7 @@
    "brand": "MSI",
    "mpn": "PRO MP165 E6",
    "url": "https://www.msy.com.au/product/msi-15-6in-fhd-ips-portable-monitor-pro-mp165-e6-86989",
-   "price": 139,
+   "price": 249,
    "image": "https://assets.msy.com.au/newsite/images/202509/thumb_img/Monitors-MSI-15-6in-FHD-IPS-Portable-Monitor-PRO-MP165-E6-9.jpg",
    "inStock": true
   },
@@ -2460,7 +2471,7 @@
    "brand": "MSI",
    "mpn": "PRO MP341CQ",
    "url": "https://www.msy.com.au/product/msi-34in-uwqhd-va-100hz-freesync-curved-business-monitor-black-pro-mp341cq-77156",
-   "price": 299,
+   "price": 599,
    "image": "https://assets.msy.com.au/newsite/images/202404/thumb_img/Monitors-MSI-34in-UWQHD-VA-100Hz-FreeSync-Curved-Business-Monitor-Black-PRO-MP341CQ-6.jpg",
    "inStock": true
   },
@@ -2471,7 +2482,7 @@
    "brand": "MSI",
    "mpn": "PRO MP341CQW",
    "url": "https://www.msy.com.au/product/msi-34in-uwqhd-va-100hz-freesync-curved-business-monitor-white-pro-mp341cqw-77157",
-   "price": 295,
+   "price": 599,
    "image": "https://assets.msy.com.au/newsite/images/202404/thumb_img/Monitors-MSI-34in-UWQHD-VA-100Hz-FreeSync-Curved-Business-Monitor-White-PRO-MP341CQW-6.jpg",
    "inStock": true
   },
@@ -2504,7 +2515,7 @@
    "brand": "MSI",
    "mpn": "MAG 255F X24",
    "url": "https://www.msy.com.au/product/msi-mag-25in-fhd-rapid-ips-240hz-adaptive-sync-gaming-monitor-mag-255f-x24-93298",
-   "price": 139,
+   "price": 169,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-MAG-25in-FHD-Rapid-IPS-240Hz-Adaptive-Sync-Gaming-Monitor-MAG-255F-X24-7.jpg",
    "inStock": true
   },
@@ -2548,7 +2559,7 @@
    "brand": "MSI",
    "mpn": "MAG 275F E20",
    "url": "https://www.msy.com.au/product/msi-mag-27in-fhd-rapid-ips-200hz-adaptive-sync-gaming-monitor-mag-275f-e20-93297",
-   "price": 149,
+   "price": 189,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-MAG-27in-FHD-Rapid-IPS-200Hz-Adaptive-Sync-Gaming-Monitor-MAG-275F-E20-7.jpg",
    "inStock": true
   },
@@ -2559,7 +2570,7 @@
    "brand": "MSI",
    "mpn": "MAG 275CF X24",
    "url": "https://www.msy.com.au/product/msi-mag-27in-fhd-rapid-va-240hz-adaptive-sync-curved-gaming-monitor-mag-275cf-x24-93337",
-   "price": 177,
+   "price": 209,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-MAG-27in-FHD-Rapid-VA-240Hz-Adaptive-Sync-Curved-Gaming-Monitor-MAG-275CF-X24-7.jpg",
    "inStock": true
   },
@@ -2570,7 +2581,7 @@
    "brand": "MSI",
    "mpn": "MAG 274QPF E20",
    "url": "https://www.msy.com.au/product/msi-mag-27in-wqhd-200hz-rapid-ips-adaptive-sync-gaming-monitor-mag-274qpf-e20-86976",
-   "price": 279,
+   "price": 299,
    "image": "https://assets.msy.com.au/newsite/images/202509/thumb_img/Monitors-MSI-MAG-27in-WQHD-200Hz-Rapid-IPS-Adaptive-Sync-Gaming-Monitor-MAG-274QPF-E20-6.jpg",
    "inStock": true
   },
@@ -2592,7 +2603,7 @@
    "brand": "MSI",
    "mpn": "MAG 274QP QD-OLED X24",
    "url": "https://www.msy.com.au/product/msi-mag-27in-wqhd-qd-oled-240hz-freesync-premium-gaming-monitor-mag-274qp-qd-oled-x24-93294",
-   "price": 585,
+   "price": 649,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-MAG-27in-WQHD-QD-OLED-240Hz-FreeSync-Premium-Gaming-Monitor-MAG-274QP-QD-OLED-X24-7.jpg",
    "inStock": true
   },
@@ -2603,7 +2614,7 @@
    "brand": "MSI",
    "mpn": "MAG 275QF E20",
    "url": "https://www.msy.com.au/product/msi-mag-27in-wqhd-rapid-ips-200hz-freesync-premium-gaming-monitor-mag-275qf-e20-93296",
-   "price": 197,
+   "price": 249,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-MAG-27in-WQHD-Rapid-IPS-200Hz-FreeSync-Premium-Gaming-Monitor-MAG-275QF-E20-7.jpg",
    "inStock": true
   },
@@ -2614,7 +2625,7 @@
    "brand": "MSI",
    "mpn": "MAG 274QPF X32",
    "url": "https://www.msy.com.au/product/msi-mag-27in-wqhd-rapid-ips-320hz-adaptive-sync-gaming-monitor-mag-274qpf-x32-93335",
-   "price": 349,
+   "price": 399,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-MAG-27in-WQHD-Rapid-IPS-320Hz-Adaptive-Sync-Gaming-Monitor-MAG-274QPF-X32-7.jpg",
    "inStock": true
   },
@@ -2647,7 +2658,7 @@
    "brand": "MSI",
    "mpn": "MAG 325QF E18V",
    "url": "https://www.msy.com.au/product/msi-mag-31-5in-wqhd-180hz-rapid-va-adaptive-sync-gaming-monitor-mag-325qf-e18v-86974",
-   "price": 299,
+   "price": 329,
    "image": "https://assets.msy.com.au/newsite/images/202509/thumb_img/Monitors-MSI-MAG-31-5in-WQHD-180Hz-Rapid-VA-Adaptive-Sync-Gaming-Monitor-MAG-325QF-E18V-6.jpg",
    "inStock": true
   },
@@ -2680,7 +2691,7 @@
    "brand": "MSI",
    "mpn": "MAG 342CQRF E20",
    "url": "https://www.msy.com.au/product/msi-mag-34in-uwqhd-rapid-va-200hz-adaptive-sync-curved-gaming-monitor-mag-342cqrf-e20-93295",
-   "price": 389,
+   "price": 429,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-MAG-34in-UWQHD-Rapid-VA-200Hz-Adaptive-Sync-Curved-Gaming-Monitor-MAG-342CQRF-E20-7.jpg",
    "inStock": true
   },
@@ -2724,7 +2735,7 @@
    "brand": "MSI",
    "mpn": "MAG 274QRFW X32",
    "url": "https://www.msy.com.au/product/msi-mag-x32-27in-wqhd-rapid-ips-320hz-freesync-premium-gaming-monitor-mag-274qrfw-x32-93334",
-   "price": 349,
+   "price": 399,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-MAG-X32-27in-WQHD-Rapid-IPS-320Hz-FreeSync-Premium-Gaming-Monitor-MAG-274QRFW-X32-6.jpg",
    "inStock": true
   },
@@ -2812,7 +2823,7 @@
    "brand": "MSI",
    "mpn": "PRO MP242 E14A",
    "url": "https://www.msy.com.au/product/msi-pro-23-8in-fhd-ips-144hz-adaptive-sync-monitor-pro-mp242-e14a-93009",
-   "price": 109,
+   "price": 199,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-PRO-23-8in-FHD-IPS-144Hz-Adaptive-Sync-Monitor-PRO-MP242-E14A-9.jpg",
    "inStock": true
   },
@@ -2834,7 +2845,7 @@
    "brand": "MSI",
    "mpn": "PRO MP271 E14A",
    "url": "https://www.msy.com.au/product/msi-pro-27in-fhd-ips-144hz-freesync-monitor-pro-mp271-e14a-93008",
-   "price": 139,
+   "price": 239,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-PRO-27in-FHD-IPS-144Hz-FreeSync-Monitor-PRO-MP271-E14A-9.jpg",
    "inStock": true
   },
@@ -2845,7 +2856,7 @@
    "brand": "MSI",
    "mpn": "PRO MP273U",
    "url": "https://www.msy.com.au/product/msi-pro-27in-uhd-ips-business-and-productivity-monitor-pro-mp273u-78818",
-   "price": 235,
+   "price": 399,
    "image": "https://assets.msy.com.au/newsite/images/202408/thumb_img/Monitors-MSI-Pro-27in-UHD-IPS-Business-and-Productivity-Monitor-PRO-MP273U-7.jpg",
    "inStock": true
   },
@@ -2867,7 +2878,7 @@
    "brand": "MSI",
    "mpn": "PRO MP273Q E7",
    "url": "https://www.msy.com.au/product/msi-pro-27in-wqhd-ips-75hz-adaptive-sync-monitor-pro-mp273q-e7-93007",
-   "price": 145,
+   "price": 279,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-PRO-27in-WQHD-IPS-75Hz-Adaptive-Sync-Monitor-PRO-MP273Q-E7-9.jpg",
    "inStock": true
   },
@@ -2880,6 +2891,17 @@
    "url": "https://www.msy.com.au/product/philips-1000-series-23-8in-fhd-100hz-ips-monitor-white-24e1n1100aw-79190",
    "price": 109,
    "image": "https://assets.msy.com.au/newsite/images/202409/thumb_img/Monitors-Philips-1000-Series-23-8in-FHD-100Hz-IPS-Monitor-White-24E1N1100AW-6.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
+   "sku": "79189",
+   "title": "Philips 1000 Series 31.5 4K UHD VA Monitor",
+   "brand": "Philips",
+   "mpn": "32E1N1800LA",
+   "url": "https://www.msy.com.au/product/philips-1000-series-31-5-4k-uhd-va-monitor-32e1n1800la-79189",
+   "price": 429,
+   "image": "https://assets.msy.com.au/newsite/images/202409/thumb_img/Monitors-Philips-1000-Series-31-5-4K-UHD-VA-Monitor-32E1N1800LA-5.jpg",
    "inStock": true
   },
   {
@@ -3043,7 +3065,7 @@
    "brand": "Philips",
    "mpn": "27E1N1800A/75",
    "url": "https://www.msy.com.au/product/philips-27in-4k-uhd-ips-w-led-monitor-27e1n1800a-75-84460",
-   "price": 229,
+   "price": 299,
    "image": "https://assets.msy.com.au/newsite/images/202507/thumb_img/Monitors-Philips-27in-4K-UHD-IPS-W-LED-Monitor-27E1N1800A-75-5.jpg",
    "inStock": true
   },
@@ -3126,6 +3148,17 @@
   },
   {
    "retailer": "msy",
+   "sku": "91382",
+   "title": "Philips 27in QHD 120Hz IPS Monitor",
+   "brand": "Philips",
+   "mpn": "27B2N3500J",
+   "url": "https://www.msy.com.au/product/philips-27in-qhd-120hz-ips-monitor-27b2n3500j-91382",
+   "price": 249,
+   "image": "https://assets.msy.com.au/newsite/images/202512/thumb_img/Monitors-Philips-27in-QHD-120Hz-IPS-Monitor-27B2N3500J-7.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
    "sku": "84806",
    "title": "Philips 27in QHD IPS 120Hz Adaptive Sync USB-C Monitor",
    "brand": "Philips",
@@ -3133,17 +3166,6 @@
    "url": "https://www.msy.com.au/product/philips-27in-qhd-ips-120hz-adaptive-sync-usb-c-monitor-27e1n2600a-84806",
    "price": 199,
    "image": "https://assets.msy.com.au/newsite/images/202507/thumb_img/Monitors-Philips-27in-QHD-IPS-120Hz-Adaptive-Sync-USB-C-Monitor-27E1N2600A-5.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
-   "sku": "94202",
-   "title": "Philips 27in QHD IPS 120Hz Business Monitor with 5MP Webcam",
-   "brand": "Philips",
-   "mpn": "27B2U3601H",
-   "url": "https://www.msy.com.au/product/philips-27in-qhd-ips-120hz-business-monitor-with-5mp-webcam-27b2u3601h-94202",
-   "price": 469,
-   "image": "https://assets.msy.com.au/newsite/images/202605/thumb_img/Monitors-Philips-27in-QHD-IPS-120Hz-Business-Monitor-with-5MP-Webcam-27B2U3601H-7.jpg",
    "inStock": true
   },
   {
@@ -3373,7 +3395,7 @@
    "brand": "Philips",
    "mpn": "27M2N5800P",
    "url": "https://www.msy.com.au/product/philips-evnia-27in-4k-240hz-fhd-480hz-dual-mode-fast-ips-gaming-monitor-27m2n5800p-90668",
-   "price": 699,
+   "price": 999,
    "image": "https://assets.msy.com.au/newsite/images/202511/thumb_img/Monitors-Philips-Evnia-27in-4K-240Hz-FHD-480Hz-Dual-Mode-Fast-IPS-Gaming-Monitor-27M2N5800P-8.jpg",
    "inStock": true
   },
@@ -3384,7 +3406,7 @@
    "brand": "Philips",
    "mpn": "27M2N3800F",
    "url": "https://www.msy.com.au/product/philips-evnia-27in-4k-uhd-ips-160hz-adaptive-sync-gaming-monitor-27m2n3800f-84803",
-   "price": 389,
+   "price": 349,
    "image": "https://assets.msy.com.au/newsite/images/202507/thumb_img/Monitors-Philips-Evnia-27in-4K-UHD-IPS-160Hz-Adaptive-Sync-Gaming-Monitor-27M2N3800F-6.jpg",
    "inStock": true
   },
@@ -3428,7 +3450,7 @@
    "brand": "Philips",
    "mpn": "27M2N3500PF",
    "url": "https://www.msy.com.au/product/philips-evnia-27in-qhd-fast-ips-260hz-adaptive-sync-gaming-monitor-27m2n3500pf-90666",
-   "price": 316,
+   "price": 399,
    "image": "https://assets.msy.com.au/newsite/images/202511/thumb_img/Monitors-Philips-Evnia-27in-QHD-Fast-IPS-260Hz-Adaptive-Sync-Gaming-Monitor-27M2N3500PF-7.jpg",
    "inStock": true
   },
@@ -3505,7 +3527,7 @@
    "brand": "Philips",
    "mpn": "34M2C3500L",
    "url": "https://www.msy.com.au/product/philips-evnia-34in-wqhd-180hz-fast-va-gaming-monitor-34m2c3500l-79085",
-   "price": 429,
+   "price": 299,
    "image": "https://assets.msy.com.au/newsite/images/202409/thumb_img/Monitors-Philips-Evnia-34in-WQHD-180Hz-Fast-VA-Gaming-Monitor-34M2C3500L-5.jpg",
    "inStock": true
   },
@@ -3516,7 +3538,7 @@
    "brand": "Philips",
    "mpn": "49M2C8900",
    "url": "https://www.msy.com.au/product/philips-evnia-49in-dqhd-qd-oled-240hz-curved-gaming-monitor-49m2c8900-80064",
-   "price": 1799,
+   "price": 1399,
    "image": "https://assets.msy.com.au/newsite/images/202410/thumb_img/Monitors-Philips-Evnia-49in-DQHD-QD-OLED-240Hz-Curved-Gaming-Monitor-49M2C8900-5.jpg",
    "inStock": true
   },
@@ -3852,17 +3874,6 @@
   },
   {
    "retailer": "msy",
-   "sku": "86351",
-   "title": "Samsung Odyssey G7 G75F 40in WUHD 180Hz AMD FreeSync Premium Pro Curved VA Gaming Monitor",
-   "brand": "Samsung",
-   "mpn": "LS40FG752EEXXY",
-   "url": "https://www.msy.com.au/product/samsung-odyssey-g7-g75f-40in-wuhd-180hz-amd-freesync-premium-pro-curved-va-gaming-monitor-ls40fg752eexxy-86351",
-   "price": 1479,
-   "image": "https://assets.msy.com.au/newsite/images/202508/thumb_img/Monitors-Samsung-Odyssey-G7-G75F-40in-WUHD-180Hz-AMD-FreeSync-Premium-Pro-Curved-VA-Gaming-Monitor-LS40FG752EEXXY-6.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
    "sku": "95594",
    "title": "Samsung Odyssey G8 G80HF 27in 5K 180 Hz / QHD 360 Hz Dual Mode Gaming Monitor",
    "brand": "Samsung",
@@ -4182,17 +4193,6 @@
   },
   {
    "retailer": "msy",
-   "sku": "85008",
-   "title": "Samsung ViewFinity S80PB 27in 4K UHD IPS HDR400 Monitor",
-   "brand": "Samsung",
-   "mpn": "LS27B800PEEXXY",
-   "url": "https://www.msy.com.au/product/samsung-viewfinity-s80pb-27in-4k-uhd-ips-hdr400-monitor-ls27b800peexxy-85008",
-   "price": 599,
-   "image": "https://assets.msy.com.au/newsite/images/202510/thumb_img/Monitors-Samsung-ViewFinity-S80PB-27in-4K-UHD-IPS-HDR400-Monitor-LS27B800PEEXXY-8.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
    "sku": "69371",
    "title": "Samsung ViewFinity S80PB 32in UHD HDR IPS Business Monitor",
    "brand": "Samsung",
@@ -4336,17 +4336,6 @@
   },
   {
    "retailer": "msy",
-   "sku": "85358",
-   "title": "ViewSonic 27in QHD 75Hz SuperClear IPS Ergonomic Monitor with USB-C and Dual Speakers",
-   "brand": "Viewsonic",
-   "mpn": "VG2708U-2K",
-   "url": "https://www.msy.com.au/product/viewsonic-27in-qhd-75hz-superclear-ips-ergonomic-monitor-with-usb-c-and-dual-speakers-vg2708u-2k-85358",
-   "price": 369,
-   "image": "https://assets.msy.com.au/newsite/images/202507/thumb_img/Monitors-ViewSonic-27in-QHD-75Hz-SuperClear-IPS-Ergonomic-Monitor-with-USB-C-and-Dual-Speakers-VG2708U-2K-6.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
    "sku": "71974",
    "title": "ViewSonic 27in QHD IPS WebCam Docking Monitor",
    "brand": "Viewsonic",
@@ -4354,17 +4343,6 @@
    "url": "https://www.msy.com.au/product/viewsonic-27in-qhd-ips-webcam-docking-monitor-vg2756v-2k-71974",
    "price": 699,
    "image": "https://assets.msy.com.au/newsite/images/202308/thumb_img/Monitors-ViewSonic-27in-QHD-IPS-WebCam-Docking-Monitor-VG2756V-2K-4.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
-   "sku": "85598",
-   "title": "ViewSonic 32in 4K UHD VA Ergonomic Monitor with USB-C and Built-in Speakers",
-   "brand": "Viewsonic",
-   "mpn": "VG3208U-4K",
-   "url": "https://www.msy.com.au/product/viewsonic-32in-4k-uhd-va-ergonomic-monitor-with-usb-c-and-built-in-speakers-vg3208u-4k-85598",
-   "price": 599,
-   "image": "https://assets.msy.com.au/newsite/images/202508/thumb_img/Monitors-ViewSonic-32in-4K-UHD-VA-Ergonomic-Monitor-with-USB-C-and-Built-in-Speakers-VG3208U-4K-7.jpg",
    "inStock": true
   }
  ]

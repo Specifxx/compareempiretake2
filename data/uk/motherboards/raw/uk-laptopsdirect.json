@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-24T13:18:46.120Z",
+ "scrapedAt": "2026-10-25T22:58:42.794Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -107,7 +107,7 @@
    "title": "ASUS TUF Gaming B650-PLUS Wi-Fi AMD B650 AM5 DDR5 ATX Motherboard",
    "url": "https://www.laptopsdirect.co.uk/asus-tuf-gaming-b650-plus-amd-b650-am5-ddr5-wi-fi-atx-motherboard-90mb1bz0-m0eay0/version.asp",
    "price": 133.97,
-   "wasPrice": 151.19,
+   "wasPrice": 154.79,
    "image": "https://www.laptopsdirect.co.uk/Images/90MB1BZ0-M0EAY0_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -207,6 +207,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1512712",
+   "mpn": "A520M-A PRO",
+   "title": "MSI A520M-A PRO AMD A520 DDR4 Micro ATX Motherboard",
+   "url": "https://www.laptopsdirect.co.uk/msi-a520m-a-pro-amd-a520-am4-ddr4-micro-atx-motherboard-a520m-a-pro/version.asp",
+   "price": 60.97,
+   "wasPrice": 70,
+   "image": "https://www.laptopsdirect.co.uk/Images/A520M-A%20PRO_1_Classic.jpg?v=12",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1505881",
    "mpn": "B550-A PRO",
    "title": "MSI B550-A PRO AMD B550 AM4 DDR4 ATX Motherboard",
@@ -218,12 +229,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1814033",
-   "mpn": "PRO B760-P WIFI DDR4",
-   "title": "MSI PRO B760-P WIFI Intel B760 1700 DDR4 ATX Motherboard",
-   "url": "https://www.laptopsdirect.co.uk/msi-pro-b760-p-wifi-intel-b760-lga-1700-ddr4-atx-motherboard-pro-b760-p-wifi-ddr4/version.asp",
-   "price": 139.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/PRO%20B760-P%20WIFI%20DDR4_1_Classic.jpg?v=5",
+   "sku": "1733949",
+   "mpn": "PRO H610M-G DDR4",
+   "title": "MSI PRO H610M-G Intel H610 1700 DDR4 Micro ATX Motherboard",
+   "url": "https://www.laptopsdirect.co.uk/msi-pro-h610m-g-ddr4-intel-h610-lga-1700-ddr4-micro-atx-motherboard-pro-h610m-g-ddr4/version.asp",
+   "price": 61.97,
+   "wasPrice": 70,
+   "image": "https://www.laptopsdirect.co.uk/Images/PRO%20H610M-G%20DDR4_1_Classic.png?v=5",
    "inStock": true
   }
  ]

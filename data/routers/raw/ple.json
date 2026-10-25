@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T22:49:17.891Z",
+ "scrapedAt": "2026-10-25T22:16:24.123Z",
  "offers": [
   {
    "retailer": "ple",
@@ -388,7 +388,7 @@
    "brand": "TP-Link",
    "mpn": "Archer AX1800",
    "url": "https://www.ple.com.au/products/661573/tp-link-archer-ax1800-dual-band-wi-fi-6-router",
-   "price": 109,
+   "price": 69,
    "wasPrice": 169,
    "image": "https://plecom.imgix.net/iil-350348-661573.jpg?w=600&h=600",
    "inStock": false
@@ -427,18 +427,6 @@
    "price": 249,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-260914-647156.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "660633",
-   "title": "TP-Link Archer AX72 Pro - AX5400 Wi-Fi 6 Router",
-   "brand": "TP-Link",
-   "mpn": "Archer AX72 Pro",
-   "url": "https://www.ple.com.au/products/660633/tp-link-archer-ax72-pro-ax5400-wi-fi-6-router",
-   "price": 229,
-   "wasPrice": 399,
-   "image": "https://plecom.imgix.net/iil-344351-660633.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -553,7 +541,8 @@
    "brand": "TP-Link",
    "mpn": "Archer GE550",
    "url": "https://www.ple.com.au/products/687538/tp-link-archer-ge550-wi-fi-7-gaming-router",
-   "price": 649,
+   "price": 599,
+   "wasPrice": 649,
    "image": "https://plecom.imgix.net/iil-483783-687538.jpg?w=600&h=600",
    "inStock": true
   },
@@ -602,7 +591,7 @@
    "price": 99,
    "wasPrice": 199,
    "image": "https://plecom.imgix.net/iil-446954-678964.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1221,7 +1210,8 @@
    "brand": "Ubiquiti",
    "mpn": "UCG-Ultra",
    "url": "https://www.ple.com.au/products/665881/ubiquiti-unifi-cloud-gateway-ultra-router",
-   "price": 222,
+   "price": 209,
+   "wasPrice": 222,
    "image": "https://plecom.imgix.net/iil-380693-665881.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1256,7 +1246,7 @@
    "brand": "Ubiquiti",
    "mpn": "UDR7",
    "url": "https://www.ple.com.au/products/674101/ubiquiti-unifi-dream-router-7",
-   "price": 599,
+   "price": 589,
    "wasPrice": 629,
    "image": "https://plecom.imgix.net/iil-422682-674101.jpg?w=600&h=600",
    "inStock": true

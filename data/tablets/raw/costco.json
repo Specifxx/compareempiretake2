@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T22:46:18.253Z",
+ "scrapedAt": "2026-10-25T22:12:12.178Z",
  "offers": [
   {
    "retailer": "costco",
@@ -88,16 +88,6 @@
    "url": "https://www.costco.com.au/Computers/iPads-Tablets/iPads/Apple-iPad-Pro-11-Inch-Wi-Fi-2TB-Standard-Glass-M4/p/194233",
    "price": 3249.99,
    "image": "https://www.costco.com.au/medias/sys_master/images/hba/h13/238914856288286.jpg",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "costco",
-   "sku": "244777",
-   "title": "Apple iPad Pro 11 Inch Wi‑Fi + Cellular 256GB With Standard Glass M5",
-   "url": "https://www.costco.com.au/c/Apple-iPad-Pro-11-Inch-WiFi-Cellular-256GB-With-Standard-Glass-M5/p/244777",
-   "price": 2199.99,
-   "image": "https://www.costco.com.au/medias/sys_master/images/heb/h4f/386140267773982.jpg",
    "inStock": true,
    "brand": "Apple"
   },
@@ -221,17 +211,6 @@
    "image": "https://www.costco.com.au/medias/sys_master/images/h04/h6f/434809327321118.jpg",
    "inStock": true,
    "mpn": "SM-X236BZAAATS",
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "costco",
-   "sku": "250395",
-   "title": "Samsung Galaxy Tab A11+ Wi-Fi 128GB Grey SM-X230NZAAXSA",
-   "url": "https://www.costco.com.au/Computers/iPads-Tablets/Tablets/Samsung-Galaxy-Tablets/Samsung-Galaxy-Tab-A11-Wi-Fi-128GB-Grey-SM-X230NZAAXSA/p/250395",
-   "price": 449.99,
-   "image": "https://www.costco.com.au/medias/sys_master/images/h37/h1a/434809329909790.jpg",
-   "inStock": true,
-   "mpn": "SM-X230NZAAXSA",
    "brand": "Samsung"
   },
   {
@@ -403,6 +382,105 @@
    "price": 1899.99,
    "image": "https://www.costco.com.au/medias/sys_master/images/h74/hb7/380728931024926.jpg",
    "inStock": true,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "costco",
+   "sku": "287516",
+   "title": "Samsung Galaxy Tab S12 Ultra 5G 1TB Grey SM-X946BZAIATS",
+   "url": "https://www.costco.com.au/c/Samsung-Galaxy-Tab-S12-Ultra-5G-1TB-Grey-SM-X946BZAIATS/p/287516",
+   "price": 3199.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/h2e/hcc/520672778551326.jpg",
+   "inStock": true,
+   "mpn": "SM-X946BZAIATS",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "costco",
+   "sku": "287509",
+   "title": "Samsung Galaxy Tab S12 Ultra 5G 256GB Grey SM-X946BZAAATS",
+   "url": "https://www.costco.com.au/c/Samsung-Galaxy-Tab-S12-Ultra-5G-256GB-Grey-SM-X946BZAAATS/p/287509",
+   "price": 2399.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/h2e/hcc/520672778551326.jpg",
+   "inStock": true,
+   "mpn": "SM-X946BZAAATS",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "costco",
+   "sku": "287513",
+   "title": "Samsung Galaxy Tab S12 Ultra 5G 512GB Grey SM-X946BZAEATS",
+   "url": "https://www.costco.com.au/c/Samsung-Galaxy-Tab-S12-Ultra-5G-512GB-Grey-SM-X946BZAEATS/p/287513",
+   "price": 2649.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/h2e/hcc/520672778551326.jpg",
+   "inStock": true,
+   "mpn": "SM-X946BZAEATS",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "costco",
+   "sku": "287501",
+   "title": "Samsung Galaxy Tab S12 Ultra Wi-Fi 1TB Grey SM-X940NZAIXSA",
+   "url": "https://www.costco.com.au/c/Samsung-Galaxy-Tab-S12-Ultra-Wi-Fi-1TB-Grey-SM-X940NZAIXSA/p/287501",
+   "price": 2999.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/h3b/he4/520672778223646.jpg",
+   "inStock": true,
+   "mpn": "SM-X940NZAIXSA",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "costco",
+   "sku": "287493",
+   "title": "Samsung Galaxy Tab S12 Ultra Wi-Fi 512GB Grey SM-X940NZAEXSA",
+   "url": "https://www.costco.com.au/c/Samsung-Galaxy-Tab-S12-Ultra-Wi-Fi-512GB-Grey-SM-X940NZAEXSA/p/287493",
+   "price": 2399.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/hf3/h76/520672777043998.jpg",
+   "inStock": true,
+   "mpn": "SM-X940NZAEXSA",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "costco",
+   "sku": "287481",
+   "title": "Samsung Galaxy Tab S12+ 5G 256GB Grey SM-X846BZAAATS",
+   "url": "https://www.costco.com.au/c/Samsung-Galaxy-Tab-S12-5G-256GB-Grey-SM-X846BZAAATS/p/287481",
+   "price": 2099.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/h96/h54/520672772194334.jpg",
+   "inStock": true,
+   "mpn": "SM-X846BZAAATS",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "costco",
+   "sku": "287488",
+   "title": "Samsung Galaxy Tab S12+ 5G 512GB Grey SM-X846BZAEATS",
+   "url": "https://www.costco.com.au/c/Samsung-Galaxy-Tab-S12-5G-512GB-Grey-SM-X846BZAEATS/p/287488",
+   "price": 2349.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/h96/h54/520672772194334.jpg",
+   "inStock": true,
+   "mpn": "SM-X846BZAEATS",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "costco",
+   "sku": "287477",
+   "title": "Samsung Galaxy Tab S12+ Wi-Fi 256GB Grey SM-X840NZAAXSA",
+   "url": "https://www.costco.com.au/c/Samsung-Galaxy-Tab-S12-Wi-Fi-256GB-Grey-SM-X840NZAAXSA/p/287477",
+   "price": 1849.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/ha8/h3f/520672767279134.jpg",
+   "inStock": true,
+   "mpn": "SM-X840NZAAXSA",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "costco",
+   "sku": "287480",
+   "title": "Samsung Galaxy Tab S12+ Wi-Fi 512GB Grey SM-X840NZAEXSA",
+   "url": "https://www.costco.com.au/c/Samsung-Galaxy-Tab-S12-Wi-Fi-512GB-Grey-SM-X840NZAEXSA/p/287480",
+   "price": 2149.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/ha8/h3f/520672767279134.jpg",
+   "inStock": true,
+   "mpn": "SM-X840NZAEXSA",
    "brand": "Samsung"
   },
   {

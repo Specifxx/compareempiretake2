@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T23:00:00.748Z",
+ "scrapedAt": "2026-10-25T22:16:17.101Z",
  "offers": [
   {
    "retailer": "ple",
@@ -650,7 +650,7 @@
    "price": 549,
    "wasPrice": 619,
    "image": "https://plecom.imgix.net/iil-440815-677750.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -685,7 +685,7 @@
    "url": "https://www.ple.com.au/products/688752/gigabyte-aorus-x870-infinity-am5-atx-desktop-motherboard",
    "price": 1199,
    "image": "https://plecom.imgix.net/iil-487616-688752.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -743,7 +743,7 @@
    "url": "https://www.ple.com.au/products/688751/gigabyte-b650e-ealge-ax-am5-atx-desktop-motherboard",
    "price": 249,
    "image": "https://plecom.imgix.net/iil-487615-688751.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -754,7 +754,7 @@
    "url": "https://www.ple.com.au/products/686482/gigabyte-b650em-force-wifi6e-am5-matx-desktop-motherboard",
    "price": 159,
    "image": "https://plecom.imgix.net/iil-477245-686482.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -790,7 +790,7 @@
    "price": 209,
    "wasPrice": 239,
    "image": "https://plecom.imgix.net/iil-434288-676682.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -837,7 +837,7 @@
    "price": 129,
    "wasPrice": 169,
    "image": "https://plecom.imgix.net/iil-342473-660348.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -872,7 +872,7 @@
    "price": 329,
    "wasPrice": 449,
    "image": "https://plecom.imgix.net/iil-410622-671611.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -931,7 +931,7 @@
    "price": 279,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-436139-677098.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1109,7 +1109,7 @@
    "price": 269,
    "wasPrice": 359,
    "image": "https://plecom.imgix.net/iil-411952-671914.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1204,7 +1204,7 @@
    "price": 1799,
    "wasPrice": 1999,
    "image": "https://plecom.imgix.net/iil-388599-667102.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1250,7 +1250,7 @@
    "url": "https://www.ple.com.au/products/688753/gigabyte-x870-eagle-wifi-7-am5-atx-desktop-motherboard",
    "price": 429,
    "image": "https://plecom.imgix.net/iil-487625-688753.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1357,7 +1357,7 @@
    "price": 749,
    "wasPrice": 799,
    "image": "https://plecom.imgix.net/iil-458642-681780.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1486,7 +1486,7 @@
    "price": 279,
    "wasPrice": 459,
    "image": "https://plecom.imgix.net/iil-405599-669357.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1567,18 +1567,6 @@
    "price": 239,
    "wasPrice": 289,
    "image": "https://plecom.imgix.net/iil-413097-672079.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "679546",
-   "title": "MSI B840M Gaming Plus WiFi6E AM5 mATX Desktop Motherboard",
-   "brand": "MSI",
-   "mpn": "B840M GAMING PLUS WIFI6E",
-   "url": "https://www.ple.com.au/products/679546/msi-b840m-gaming-plus-wifi6e-am5-matx-desktop-motherboard",
-   "price": 179,
-   "wasPrice": 259,
-   "image": "https://plecom.imgix.net/iil-449354-679546.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -1849,18 +1837,6 @@
    "price": 259,
    "wasPrice": 275,
    "image": "https://plecom.imgix.net/iil-458742-681892.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "676569",
-   "title": "MSI PRO B850M-A WiFi AM5 mATX Desktop Motherboard",
-   "brand": "MSI",
-   "mpn": "PRO B850M-A WIFI",
-   "url": "https://www.ple.com.au/products/676569/msi-pro-b850m-a-wifi-am5-matx-desktop-motherboard",
-   "price": 249,
-   "wasPrice": 309,
-   "image": "https://plecom.imgix.net/iil-436496-676569.jpg?w=600&h=600",
    "inStock": true
   },
   {

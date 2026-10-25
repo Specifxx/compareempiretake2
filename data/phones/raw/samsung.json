@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T20:41:30.534Z",
+ "scrapedAt": "2026-10-25T22:10:49.447Z",
  "offers": [
   {
    "retailer": "samsung",
@@ -68,7 +68,7 @@
    "url": "https://www.samsung.com/au/smartphones/galaxy-s25-ultra/buy/?modelCode=SM-S938BAKAATS",
    "price": 1999,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/2501/gallery/au-galaxy-s25-s938-sm-s938bakaats-thumb-544697617",
-   "inStock": true,
+   "inStock": false,
    "fromPrice": true
   },
   {
@@ -158,16 +158,6 @@
    "url": "https://www.samsung.com/au/smartphones/galaxy-s26/buy/?modelCode=SM-S947BZWEATS",
    "price": 2249,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/s2602/gallery/au-galaxy-s26-s947-sm-s947bzweats-thumb-550875307",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "samsung",
-   "sku": "Galaxy XCover7",
-   "title": "Samsung Galaxy XCover7",
-   "url": "https://www.samsung.com/au/smartphones/others/galaxy-xcover7-black-128gb-sm-g556bzkdsts/",
-   "price": 599,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/sm-g556bzkdsts/gallery/au-galaxy-xcover7-sm-g556b-sm-g556bzkdsts-thumb-540500647",
    "inStock": true,
    "fromPrice": true
   },

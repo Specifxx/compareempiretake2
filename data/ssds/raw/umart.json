@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T22:56:13.296Z",
+ "scrapedAt": "2026-10-25T22:21:40.050Z",
  "offers": [
   {
    "retailer": "umart",
@@ -8,7 +8,7 @@
    "brand": "ADATA",
    "mpn": "ASU650SS-1TT-R",
    "url": "https://www.umart.com.au/product/adata-1tb-asu650ss-1tt-r-su650-2-5in-sata-iii-ssd-asu650ss-1tt-r-94594",
-   "price": 199,
+   "price": 189,
    "image": "https://assets.umart.com.au/newsite/images/202606/thumb_img/SSD-Hard-Drives-ADATA-1TB-ASU650SS-1TT-R-SU650-2-5in-SAT-III-SSD-ASU650SS-1TT-R-6.jpg",
    "inStock": true
   },
@@ -63,7 +63,7 @@
    "brand": "ADATA",
    "mpn": "ASU650SS-256GT-R",
    "url": "https://www.umart.com.au/product/adata-256gb-asu650ss-256gt-r-su650-2-5in-sata-iii-ssd-asu650ss-256gt-r-94592",
-   "price": 64,
+   "price": 67,
    "image": "https://assets.umart.com.au/newsite/images/202606/thumb_img/SSD-Hard-Drives-ADATA-256GB-ASU650SS-256GT-R-SU650-2-5in-SATA-III-SSD-ASU650SS-256GT-R-6.jpg",
    "inStock": true
   },
@@ -272,7 +272,7 @@
    "brand": "Crucial",
    "mpn": "CT480E100SSD8",
    "url": "https://www.umart.com.au/product/crucial-e100-480gb-ct480e100ssd8-gen4-m-2-2280-nvme-ssd-83186",
-   "price": 139,
+   "price": 149,
    "image": "https://assets.umart.com.au/newsite/images/202505/thumb_img/SSD-Hard-Drives-Crucial-E100-480GB-CT480E100SSD8-Gen4-M-2-2280-NVMe-SSD-1.jpg",
    "inStock": true
   },
@@ -283,7 +283,7 @@
    "brand": "Crucial",
    "mpn": "CT1000P310SSD2",
    "url": "https://www.umart.com.au/product/crucial-p310-1tb-pcie-4-0-m-2-2230-nvme-ssd-ct1000p310ssd2-84979",
-   "price": 299,
+   "price": 319,
    "image": "https://assets.umart.com.au/newsite/images/202507/thumb_img/SSD-Hard-Drives-Crucial-P310-1TB-PCIe-4-0-M-2-2230-NVMe-SSD-CT1000P310SSD2-3.jpg",
    "inStock": true
   },
@@ -393,7 +393,7 @@
    "brand": "Gigabyte",
    "mpn": "G440E1TB",
    "url": "https://www.umart.com.au/product/gigabyte-1tb-g440e1tb-pcie-gen4-nvme-m-2-2280-ssd-84129",
-   "price": 249,
+   "price": 259,
    "image": "https://assets.umart.com.au/newsite/images/202506/thumb_img/SSD-Hard-Drives-Gigabyte-1TB-G440E1TB-PCIe-Gen4-NVMe-M-2-2280-SSD-6.jpg",
    "inStock": true
   },
@@ -574,6 +574,17 @@
   },
   {
    "retailer": "umart",
+   "sku": "90307",
+   "title": "Lacie 1TB Rugged SSD Pro USB-C Thunderbolt 3 External SSD",
+   "brand": "Lacie",
+   "mpn": "STHZ1000800",
+   "url": "https://www.umart.com.au/product/lacie-1tb-rugged-ssd-pro-usb-c-thunderbolt-3-external-ssd-sthz1000800-90307",
+   "price": 499,
+   "image": "https://assets.umart.com.au/newsite/images/202510/thumb_img/External-SSD-Hard-Drives-Lacie-1TB-Rugged-SSD-Pro-USB-C-Thunderbolt-3-External-SSD-STHZ1000800-5.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "umart",
    "sku": "91449",
    "title": "LaCie 2TB Mobile SSD Secure External SSD",
    "brand": "Lacie",
@@ -645,7 +656,7 @@
    "brand": "PNY",
    "mpn": "M280CS2241-2TB-CL",
    "url": "https://www.umart.com.au/product/pny-cs2241-2tb-pcie-gen4-m-2-nvme-ssd-m280cs2241-2tb-cl-71993",
-   "price": 379,
+   "price": 389,
    "image": "https://assets.umart.com.au/newsite/images/202308/thumb_img/SSD-Hard-Drives-PNY-2TB-CS2241-M-2-NVMe-PCIe-Gen4-SSD-2.jpg",
    "inStock": true
   },
@@ -656,7 +667,7 @@
    "brand": "PNY",
    "mpn": "SSD7CS900-1TB-RB",
    "url": "https://www.umart.com.au/product/pny-cs900-1tb-ssd7cs900-1tb-rb-7mm-2-5-inch-sata-iii-ssd-95187",
-   "price": 179,
+   "price": 199,
    "image": "https://assets.umart.com.au/newsite/images/202607/thumb_img/SSD-Hard-Drives-PNY-CS900-1TB-SSD7CS900-1TB-RB-7mm-2-5-inch-SATA-III-SSD-3.jpg",
    "inStock": true
   },
@@ -699,7 +710,7 @@
    "title": "Samsung 1TB T7 USB 3.2 Portable SSD - Grey",
    "brand": "Samsung",
    "url": "https://www.umart.com.au/product/samsung-1tb-t7-usb-3-2-portable-ssd-grey-70139",
-   "price": 329,
+   "price": 339,
    "image": "https://assets.umart.com.au/newsite/images/202305/thumb_img/External-SSD-Hard-Drives-Samsung-1TB-T7-USB-3-2-Portable-SSD-Gray-4.jpg",
    "inStock": true
   },
@@ -745,17 +756,6 @@
    "url": "https://www.umart.com.au/product/samsung-2tb-t9-usb-c-portable-external-ssd-black-mu-pg2t0b-ww-86132",
    "price": 669,
    "image": "https://assets.umart.com.au/newsite/images/202509/thumb_img/External-SSD-Hard-Drives-Samsung-2TB-T9-USB-C-Portable-External-SSD-Black-MU-PG2T0B-WW-9.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "umart",
-   "sku": "82153",
-   "title": "Samsung 4TB 9100 Pro MZ-VAP4T0BW PCIe 5.0 NVMe M.2 Gen 5 SSD",
-   "brand": "Samsung",
-   "mpn": "MZ-VAP4T0BW",
-   "url": "https://www.umart.com.au/product/samsung-4tb-9100-pro-mz-vap4t0bw-pcie-5-0-nvme-m-2-gen-5-ssd-82153",
-   "price": 1499,
-   "image": "https://assets.umart.com.au/newsite/images/202503/thumb_img/SSD-Hard-Drives-Samsung-4TB-9100-Pro-MZ-VAP4T0BW-PCIe-5-0-NVMe-M-2-SSD-2.jpg",
    "inStock": true
   },
   {
@@ -1108,6 +1108,17 @@
    "url": "https://www.umart.com.au/product/silicon-power-px10-1tb-usb-3-2-gen-2-external-portable-ssd-pink-sz010tbpsdpx10cpau-83570",
    "price": 259,
    "image": "https://assets.umart.com.au/newsite/images/202505/thumb_img/External-SSD-Hard-Drives-Silicon-Power-PX10-1TB-USB-3-2-Gen-2-External-Portable-SSD-Pink-SZ010TBPSDPX10CPAU-1.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "umart",
+   "sku": "83567",
+   "title": "Silicon Power PX10 2TB USB 3.2 Gen 2 External Portable SSD - Black, SZ020TBPSDPX10CKAU",
+   "brand": "Silicon Power",
+   "mpn": "SZ020TBPSDPX10CKAU",
+   "url": "https://www.umart.com.au/product/silicon-power-px10-2tb-usb-3-2-gen-2-external-portable-ssd-black-sz020tbpsdpx10ckau-83567",
+   "price": 449,
+   "image": "https://assets.umart.com.au/newsite/images/202505/thumb_img/External-SSD-Hard-Drives-Silicon-Power-PX10-2TB-USB-3-2-Gen-2-External-Portable-SSD-Black-SZ020TBPSDPX10CKAU-1.jpg",
    "inStock": true
   },
   {
@@ -1512,7 +1523,7 @@
    "brand": "Team",
    "mpn": "T253X6001T0C101",
    "url": "https://www.umart.com.au/product/team-1tb-cx2-2-5in-sata-iii-ssd-t253x6001t0c101-92438",
-   "price": 179,
+   "price": 199,
    "image": "https://assets.umart.com.au/newsite/images/202602/thumb_img/SSD-Hard-Drives-Team-1TB-CX2-2-5in-SATA-III-SSD-T253X6001T0C101-4.jpg",
    "inStock": true
   },
@@ -1534,7 +1545,7 @@
    "brand": "Team",
    "mpn": "T253X6512G0C101",
    "url": "https://www.umart.com.au/product/team-512gb-cx2-2-5in-sata-iii-ssd-t253x6512g0c101-92437",
-   "price": 109,
+   "price": 119,
    "image": "https://assets.umart.com.au/newsite/images/202602/thumb_img/SSD-Hard-Drives-Team-512GB-CX2-2-5in-SATA-III-SSD-T253X6512G0C101-4.jpg",
    "inStock": true
   },
@@ -1589,7 +1600,7 @@
    "brand": "Western Digital",
    "mpn": "WDS100T5B0E-00CPE0",
    "url": "https://www.umart.com.au/product/western-digital-1tb-blue-sn5100-pcie-gen4-m-2-2280-nvme-ssd-wds100t5b0e-00cpe0-94133",
-   "price": 249,
+   "price": 279,
    "image": "https://assets.umart.com.au/newsite/images/202605/thumb_img/SSD-Hard-Drives-Western-Digital-1TB-Blue-SN5100-PCIe-Gen4-M-2-2280-NVMe-SSD-WDS100T5B0E-00CPE0-1.jpg",
    "inStock": true
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-24T13:18:38.600Z",
+ "scrapedAt": "2026-10-25T22:58:34.141Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -10,6 +10,17 @@
    "price": 59.97,
    "wasPrice": 109.97,
    "image": "https://www.laptopsdirect.co.uk/Images/UM.QX2EE.G02_1_Classic.jpg?v=17",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2047644",
+   "mpn": "UM.HX2EE.605",
+   "title": "Acer KA272 P6 27\" IPS Full HD 144Hz Monitor",
+   "url": "https://www.laptopsdirect.co.uk/acer-ka272-p6-27-ips-full-hd-144hz-monitor-um.hx2ee.605/version.asp",
+   "price": 76.97,
+   "wasPrice": 98.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/UM.HX2EE.605_1_Classic.jpg?v=23",
    "inStock": true
   },
   {
@@ -45,6 +56,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2066547",
+   "mpn": "UM.ZP1EE.011",
+   "title": "Acer PM161QT 15.6\" IPS Full HD USB-C 10-Point Touch Portable Monitor",
+   "url": "https://www.laptopsdirect.co.uk/acer-pm161qt-15.6-ips-full-hd-usb-c-10-point-touch-portable-monitor-um.zp1ee.011/version.asp",
+   "price": 104.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/UM.ZP1EE.011_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2716536",
    "mpn": "UM.JX3EE.404",
    "title": "Acer Predator XB323QKV4 32\" IPS Dual Mode 4K UHD 160Hz Full HD 320Hz 0.5ms Gaming Monitor",
@@ -55,24 +76,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2008348",
-   "mpn": "GAME-AW2524HF",
-   "title": "Alienware AW2524HF 25\" IPS Full HD 500Hz 1ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/dell-alienware-aw2524hf-25-ips-full-hd-500hz-1ms-gaming-monitor-game-aw2524hf/version.asp",
-   "price": 379.97,
-   "wasPrice": 439.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/AW2524HF_1_Classic.png?v=11",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2007401",
-   "mpn": "GAME-AW2724DM",
-   "title": "Alienware AW2724DM 27\" IPS QHD 165Hz 1ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/dell-alienware-aw2724dm-27-ips-qhd-165hz-1ms-gaming-monitor-game-aw2724dm/version.asp",
-   "price": 299.97,
-   "wasPrice": 315.58,
-   "image": "https://www.laptopsdirect.co.uk/Images/AW2724DM_1_Classic.png?v=5",
+   "sku": "2038366",
+   "mpn": "GAME-AW2725D",
+   "title": "Alienware AW2725D 27\" QD-OLED QHD 280Hz 0.03ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/alienware-aw2725d-27-qd-oled-qhd-280hz-0.03ms-gaming-monitor-game-aw2725d/version.asp",
+   "price": 389.97,
+   "wasPrice": 469.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GAME-AW2725D_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -88,6 +98,28 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2014651",
+   "mpn": "GAME-AW2725DM",
+   "title": "Alienware AW2725DM 27\" IPS QHD 180Hz Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/alienware-aw2725dm-27-ips-qhd-180hz-gaming-monitor-game-aw2725dm/version.asp",
+   "price": 199.97,
+   "wasPrice": 219.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/A2GAME-AW2725DM_1_Classic.jpg?v=15",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2012440",
+   "mpn": "GAME-AW2725Q",
+   "title": "Alienware AW2725Q 27\" QD-OLED 4K UHD 240Hz 0.03ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/alienware-aw2725q-26.7-tft-4k-240hz-0.03ms-gaming-monitor-game-aw2725q/version.asp",
+   "price": 518.97,
+   "wasPrice": 614.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/GAME-AW2725Q_1_16128779_Classic.png?v=8",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2008347",
    "mpn": "GAME-AW2725QF",
    "title": "Alienware AW2725QF 27\" IPS 4K UHD 180Hz 1ms USB-C Gaming Monitor",
@@ -96,16 +128,6 @@
    "wasPrice": 409.97,
    "image": "https://www.laptopsdirect.co.uk/Images/AW2725QF_1_Classic.jpg?v=5",
    "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2007402",
-   "mpn": "GAME-AW3225DM",
-   "title": "Alienware AW3225DM 32\" VA QHD 180Hz 1ms Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/dell-alienware-aw3225dm-32-va-qhd-180hz-1ms-gaming-monitor-game-aw3225dm/version.asp",
-   "price": 274.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/AW3225DM_1_Classic.png?v=5",
-   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -171,16 +193,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2038548",
-   "mpn": "27B36X",
-   "title": "AOC 27B36X 27\" IPS Full HD 144Hz 0.5ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-27b36x-27-ips-full-hd-144hz-0.5ms-gaming-monitor-27b36x/version.asp",
-   "price": 79.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/27B36X_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1924751",
    "mpn": "27B3HA2",
    "title": "AOC 27B3HA2 27\" IPS Full HD 120Hz 1ms Monitor",
@@ -221,23 +233,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2045940",
-   "mpn": "AG276QKD2",
-   "title": "AOC AGON PRO 27\" QD-OLED QHD 500Hz 0.03ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-agon-pro-27-qd-oled-qhd-500hz-0.03ms-gaming-monitor-ag276qkd2/version.asp",
-   "price": 569.98,
-   "wasPrice": 716.21,
-   "image": "https://www.laptopsdirect.co.uk/Images/AG276QKD2_1_Classic.jpg?v=3",
+   "sku": "1970576",
+   "mpn": "AG276QZD2",
+   "title": "AOC AGON AG276QZD2 27\" QHD QD-OLED 240Hz 0.03ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-agon-ag276qzd2-27-qhd-qd-oled-240hz-0.03ms-gaming-monitor-ag276qzd2/version.asp",
+   "price": 469.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/AG276QZD2_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2048632",
-   "mpn": "AG246FK6",
-   "title": "AOC AGON PRO AG246FK6 24\" Ultra-Fast TN Full HD 610Hz 0.5ms eSports Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-agon-pro-ag246fk6-24-ultra-fast-tn-full-hd-610hz-0.5ms-esports-gaming-ag246fk6/version.asp",
-   "price": 498.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/AG246FK6_1_Classic.jpg?v=3",
+   "sku": "1949840",
+   "mpn": "C27G4ZXE",
+   "title": "AOC AGON C27G4ZXE 27\" VA Full HD 280Hz 0.3ms Curved Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-agon-c27g4zxe-27-va-full-hd-280hz-0.3ms-curved-gaming-monitor-c27g4zxe/version.asp",
+   "price": 99.97,
+   "wasPrice": 179.47,
+   "image": "https://www.laptopsdirect.co.uk/Images/C27G4ZXE_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -262,34 +274,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2032905",
-   "mpn": "CS24A",
-   "title": "AOC AGON PRO CS24A 24\" TN Full HD 610Hz 0.3ms Counter-Strike 2 Edition Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-cs24a-24-tn-full-hd-610hz-0.3ms-counter-strike-2-edition-gaming-monito-cs24a/version.asp",
-   "price": 399.97,
-   "wasPrice": 599,
-   "image": "https://www.laptopsdirect.co.uk/Images/A1CS24A_1_Classic.png?v=19",
+   "sku": "2086021",
+   "mpn": "AG326UZD2",
+   "title": "AOC AGON PRO AG326UZD2 31.5\" OLED 4K UHD 240Hz 0.03ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-agon-pro-ag326uzd2-31.5-oled-4k-uhd-240hz-0.03ms-gaming-monitor-ag326uzd2/version.asp",
+   "price": 798.97,
+   "wasPrice": 869.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/AG326UZD2_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2053354",
-   "mpn": "Q27G41ZDF",
-   "title": "AOC AGON Q27G41ZDF 27\" QD-OLED QHD 240Hz 0.03ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-agon-q27g41zdf-27-qd-oled-qhd-240hz-0.03ms-gaming-monitor-q27g41zdf/version.asp",
-   "price": 369.97,
-   "wasPrice": 400,
-   "image": "https://www.laptopsdirect.co.uk/Images/Q27G41ZDF_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2053356",
-   "mpn": "Q27G4SDR",
-   "title": "AOC AGON Q27G4SDR 27\" QD-OLED QHD 360Hz 0.03ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-agon-q27g4sdr-27-qd-oled-qhd-360hz-0.03ms-gaming-monitor-q27g4sdr/version.asp",
-   "price": 468.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/Q27G4SDR_1_Classic.png?v=5",
+   "sku": "2086020",
+   "mpn": "AGP277QKDC",
+   "title": "AOC AGON PRO AGP277QKDC 26.5\" OLED Dual-Mode QHD 540Hz Full HD 720Hz 0.03ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-agon-pro-agp277qkdc-26.5-oled-dual-mode-qhd-540hz-full-hd-720hz-0.03ms-agp277qkdc/version.asp",
+   "price": 699.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/AGP277QKDC_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -304,13 +305,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2008762",
-   "mpn": "U27G4R",
-   "title": "AOC AGON U27G4R 27\" IPS Dual Mode 4K UHD 160Hz Full HD 320Hz Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-agon-u27g4r-27-ips-uhd-4k-160hz-full-hd-320hz-dual-frame-gaming-monito-u27g4r/version.asp",
-   "price": 248.97,
-   "wasPrice": 299.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/U27G4R_1_Classic.jpg?v=5",
+   "sku": "2056911",
+   "mpn": "U27G4XM",
+   "title": "AOC AGON U27G4XM 27\" Fast IPS Dual Mode 4K UHD 160Hz Full HD 320Hz 1ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-agon-u27g4xm-27-fast-ips-dual-4k-uhd-160hz-full-hd-320hz-1ms-gaming-mo-u27g4xm/version.asp",
+   "price": 318.97,
+   "wasPrice": 348.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/U27G4XM_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -335,12 +336,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2726711",
-   "mpn": "CU34G4P",
-   "title": "AOC CU34G4P 34\" Fast VA WQHD 180Hz 1ms Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-cu34g4p-34-fast-va-uwqhd-180hz-1ms-curved-gaming-monitor-cu34g4p/version.asp",
-   "price": 248.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/CU34G4P_1_Classic.png?v=3",
+   "sku": "1490740",
+   "mpn": "C32G2ZE/BK",
+   "title": "AOC C32G2ZE 31.5\" VA Full HD 240Hz 0.5ms Curved Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-c32g2ze-bk-31.5-full-hd-240hz-curved-monitor-c32g2ze-bk/version.asp",
+   "price": 148.97,
+   "wasPrice": 209,
+   "image": "https://www.laptopsdirect.co.uk/Images/C32G2ZEBK_1_13782257_Classic.png?v=10",
    "inStock": true
   },
   {
@@ -365,12 +367,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2713966",
-   "mpn": "CQ27G4Z2",
-   "title": "AOC G4 27\" Fast VA QHD 260Hz 0.3ms Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-g4-27-fast-va-qhd-260hz-0.3ms-curved-gaming-monitor-cq27g4z2/version.asp",
-   "price": 179.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/CQ27G4Z2_1_Classic.png?v=5",
+   "sku": "2014645",
+   "mpn": "25G4SRE",
+   "title": "AOC G4 25G4SRE 24.5\" IPS Full HD 310Hz 0.3ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-g4-25g4sre-25-ips-full-hd-310hz-0.3ms-gaming-monitor-25g4sre/version.asp",
+   "price": 109.97,
+   "wasPrice": 146.92,
+   "image": "https://www.laptopsdirect.co.uk/Images/25G4SRE_1_Classic.jpg?v=6",
    "inStock": true
   },
   {
@@ -382,6 +385,17 @@
    "price": 99.97,
    "wasPrice": 118.97,
    "image": "https://www.laptopsdirect.co.uk/Images/C27G42FE_1_Classic.jpg?v=11",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2713967",
+   "mpn": "CU34G4CA",
+   "title": "AOC G4 34\" Fast VA WQHD 180Hz 0.5ms Curved Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-g4-34-fast-va-wqhd-180hz-0.5ms-curved-gaming-monitor-cu34g4ca/version.asp",
+   "price": 228.97,
+   "wasPrice": 288.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/CU34G4CA_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -414,6 +428,16 @@
    "price": 178.97,
    "wasPrice": 189,
    "image": "https://www.laptopsdirect.co.uk/Images/C32G4Z_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2026405",
+   "mpn": "Q25G4SR",
+   "title": "AOC G4 Q25G4SR 25\" Fast IPS QHD 300Hz 0.3ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-g4-q25g4sr-25-fast-ips-qhd-300hz-0.3ms-gaming-monitor-q25g4sr/version.asp",
+   "price": 208.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/Q25G4SR_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -472,12 +496,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2728390",
-   "mpn": "Q27G4ZRP",
-   "title": "AOC Q27G4ZRP 27\" Fast IPS QHD 260Hz 1ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-q27g4zrp-27-fast-ips-qhd-260hz-1ms-gaming-monitor-q27g4zrp/version.asp",
-   "price": 198.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/Q27G4ZRP_1_Classic.png?v=3",
+   "sku": "2065738",
+   "mpn": "Q27G4ZD",
+   "title": "AOC Q27G4ZD 27\" QHD OLED 280Hz 0.3ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-q27g4zd-27-qhd-oled-280hz-0.3ms-gaming-monitor-q27g4zd/version.asp",
+   "price": 349.97,
+   "wasPrice": 444.78,
+   "image": "https://www.laptopsdirect.co.uk/Images/Q27G4ZD_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -493,16 +518,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1954677",
-   "mpn": "U27B3A",
-   "title": "AOC U27B3A 27\" IPS 4K UHD Monitor",
-   "url": "https://www.laptopsdirect.co.uk/aoc-u27b3a-27-ips-uhd-4k-monitor-u27b3a/version.asp",
-   "price": 189.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/U27B3A_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1954678",
    "mpn": "U27B3M",
    "title": "AOC U27B3M 27\" VA 4K UHD Monitor",
@@ -510,6 +525,17 @@
    "price": 179.97,
    "wasPrice": 229.97,
    "image": "https://www.laptopsdirect.co.uk/Images/U27B3M_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1803557",
+   "mpn": "U34E2M",
+   "title": "AOC U34E2M 34\" VA WQHD 100Hz UltraWide Monitor",
+   "url": "https://www.laptopsdirect.co.uk/aoc-u34e2m-34-qhd-monitor-u34e2m/version.asp",
+   "price": 198.97,
+   "wasPrice": 239.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/U34E2M_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -544,6 +570,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2066183",
+   "mpn": "XG27AQDNG",
+   "title": "ASUS ROG Strix XG27AQDNG 27\" OLED QHD 360Hz 0.03ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/asus-rog-strix-xg27aqdng-27-qhd-oled-360hz-0.03ms-gaming-monitor-xg27aqdng/version.asp",
+   "price": 608.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/XG27AQDNG_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1925224",
    "mpn": "XG27UCS",
    "title": "ASUS ROG Strix XG27UCS 27\" IPS 4K UHD 160Hz 1ms Gaming Monitor",
@@ -551,6 +587,17 @@
    "price": 329.97,
    "wasPrice": 439.97,
    "image": "https://www.laptopsdirect.co.uk/Images/XG27UCS_1_14416540_Classic.png?v=9",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1952434",
+   "mpn": "9H.LMMLB.QBE",
+   "title": "BenQ BL2486TC 23.8\" IPS Full HD 100Hz USB-C Business Monitor",
+   "url": "https://www.laptopsdirect.co.uk/benq-bl2486tc-23.8-ips-full-hd-100hz-usb-c-business-monitor-9h.lmmlb.qbe/version.asp",
+   "price": 144.97,
+   "wasPrice": 152.39,
+   "image": "https://www.laptopsdirect.co.uk/Images/9H.LMMLB.QBE_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -650,17 +697,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1989998",
-   "mpn": "9H.LN3LJ.LBE",
-   "title": "BenQ EW2790U 27\" IPS 4K UHD Premium Monitor",
-   "url": "https://www.laptopsdirect.co.uk/benq-ew2790u-27-ips-4k-uhd-premium-monitor-9h.ln3lj.lbe/version.asp",
-   "price": 308.97,
-   "wasPrice": 329.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/9H.LN3LJ.LBE_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1989999",
    "mpn": "9H.LN4LJ.LBE",
    "title": "BenQ EW3290U 32\" IPS 4K UHD Premium USB-C Monitor",
@@ -693,34 +729,35 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2063899",
-   "mpn": "9H.LP2LA.TBE",
-   "title": "BenQ MOBIUZ EX271UZ 27\" 4K UHD OLED 240Hz 0.03ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/benq-mobiuz-ex271uz-27-4k-uhd-oled-240hz-0.03ms-gaming-monitor-9h.lp2la.tbe/version.asp",
-   "price": 769.97,
-   "wasPrice": 877.66,
-   "image": "https://www.laptopsdirect.co.uk/Images/9H.LP2LA.TBE_1_Classic.jpg?v=1",
+   "sku": "2101025",
+   "mpn": "9H.LNMLA.TBE",
+   "title": "BenQ GW2490TC 24\" IPS Full HD USB-C 144Hz Height-Adjustable Eye-Care Monitor",
+   "url": "https://www.laptopsdirect.co.uk/benq-gw2490tc-24-ips-full-hd-usb-c-144hz-height-adjustable-eye-care-monito-9h.lnmla.tbe/version.asp",
+   "price": 119.97,
+   "wasPrice": 127.19,
+   "image": "https://www.laptopsdirect.co.uk/Images/9H.LNMLA.TBE_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1939763",
-   "mpn": "9H.LLXLA.TBE",
-   "title": "BenQ RD240Q WQXGA 24.1\" IPS QHD Programming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/benq-rd240q-wqxga-24.1-ips-qhd-programming-monitor-9h.llxla.tbe/version.asp",
-   "price": 328.97,
-   "wasPrice": 349.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/9H.LLXLA.TBE_1_Classic.jpg?v=5",
+   "sku": "1985468",
+   "mpn": "9H.LNELJ.LBE",
+   "title": "BenQ GW2491 24\" IPS Full HD 100Hz Eye Care Monitor",
+   "url": "https://www.laptopsdirect.co.uk/benq-gw2491-24-ips-full-hd-100hz-eye-care-monitor-9h.lnelj.lbe/version.asp",
+   "price": 74.97,
+   "wasPrice": 79.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/9H.LNELJ.LBE_1_Classic.png?v=13",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2092637",
-   "mpn": "9H.LPCLM.MBE",
-   "title": "BenQ RD270Q 27\" IPS QHD 144Hz Programming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/benq-rd270q-27-ips-qhd-144hz-programming-monitor-9h.lpclm.mbe/version.asp",
-   "price": 268.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/9H.LPCLM.MBE_1_Classic.png?v=5",
+   "sku": "1985469",
+   "mpn": "9H.LNFLJ.LBE",
+   "title": "BenQ GW2791 27\" IPS Full HD 100Hz Eye Care Monitor",
+   "url": "https://www.laptopsdirect.co.uk/benq-gw2791-27-ips-full-hd-100hz-eye-care-monitor-9h.lnflj.lbe/version.asp",
+   "price": 94.97,
+   "wasPrice": 99.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/9H.LNFLJ.LBE_1_Classic.png?v=14",
    "inStock": true
   },
   {
@@ -746,6 +783,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1925189",
+   "mpn": "DELL-P2425H",
+   "title": "Dell P2425H 24\" IPS Full HD USB-C Monitor",
+   "url": "https://www.laptopsdirect.co.uk/dell-p2425h-24-ips-full-hd-monitor-dell-p2425h/version.asp",
+   "price": 124.97,
+   "wasPrice": 149.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/DELL-P2425H_1_15827225_Classic.jpg?v=13",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1925986",
    "mpn": "DELL-P2425HE",
    "title": "Dell P2425HE 24\" IPS Full HD USB-C Monitor",
@@ -767,13 +815,33 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2037976",
-   "mpn": "DELL-S2725QS",
-   "title": "Dell Plus S2725QS 27\" IPS 4K UHD 120Hz Monitor",
-   "url": "https://www.laptopsdirect.co.uk/dell-plus-s2725qs-27-ips-4k-uhd-120hz-monitor-dell-s2725qs/version.asp",
-   "price": 259.97,
-   "wasPrice": 289.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DELL-S2725QS_1_Classic.png?v=5",
+   "sku": "2039641",
+   "mpn": "DELL-S3225QC",
+   "title": "Dell Plus S3225QC 32\" QD-OLED 4K UHD 120Hz 0.03ms Monitor",
+   "url": "https://www.laptopsdirect.co.uk/dell-plus-s3225qc-32-qd-oled-4k-uhd-120hz-0.03ms-monitor-dell-s3225qc/version.asp",
+   "price": 469.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DELL-S3225QC_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2037978",
+   "mpn": "DELL-S3225QS",
+   "title": "Dell Plus S3225QS 31.5\" VA 4K UHD 120Hz Monitor",
+   "url": "https://www.laptopsdirect.co.uk/dell-plus-31.5-va-4k-uhd-120hz-monitor-dell-s3225qs/version.asp",
+   "price": 324.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DELL-S3225QS_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2040064",
+   "mpn": "DELL-S3425DW",
+   "title": "Dell Plus S3425DW 34\" VA UWQHD 120Hz UltraWide Curved Monitor",
+   "url": "https://www.laptopsdirect.co.uk/dell-plus-s3425dw-34-va-uwqhd-120hz-ultrawide-monitor-dell-s3425dw/version.asp",
+   "price": 319.97,
+   "wasPrice": 350.38,
+   "image": "https://www.laptopsdirect.co.uk/Images/DELL-S3425DW_1_Classic.jpg?v=13",
    "inStock": true
   },
   {
@@ -789,13 +857,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2003162",
-   "mpn": "DELL-E2425HM",
-   "title": "Dell Pro E2425HM 24\" IPS Full HD 100Hz Monitor",
-   "url": "https://www.laptopsdirect.co.uk/dell-pro-e2425hm-24-ips-full-hd-100hz-monitor-dell-e2425hm/version.asp",
-   "price": 79.97,
-   "wasPrice": 88.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DELL-E2425HM_1_Classic.png?v=5",
+   "sku": "2069314",
+   "mpn": "DELL-E2726DS",
+   "title": "Dell Pro E Series E2726DS 27\" IPS QHD 100Hz Monitor",
+   "url": "https://www.laptopsdirect.co.uk/dell-pro-e-series-e2726ds-27-ips-qhd-100hz-monitor-dell-e2726ds/version.asp",
+   "price": 159.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DELL-E2726DS_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -807,6 +874,17 @@
    "price": 154.97,
    "wasPrice": 169.99,
    "image": "https://www.laptopsdirect.co.uk/Images/DELL-P2726H_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2076113",
+   "mpn": "DELL-P2426H",
+   "title": "Dell Pro P P2426H 24\" IPS Full HD 120Hz Monitor",
+   "url": "https://www.laptopsdirect.co.uk/dell-pro-p-p2426h-24-ips-full-hd-120hz-monitor-dell-p2426h/version.asp",
+   "price": 139.97,
+   "wasPrice": 151.18,
+   "image": "https://www.laptopsdirect.co.uk/Images/DELL-P2426H_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -850,6 +928,16 @@
    "price": 349.97,
    "wasPrice": 369.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DELL-P2726DEB_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2075125",
+   "mpn": "DELL-P2726DEV",
+   "title": "Dell Pro P P2726DEV 27\" IPS QHD 100Hz Monitor",
+   "url": "https://www.laptopsdirect.co.uk/dell-pro-p-p2726dev-27-ips-qhd-100hz-monitor-dell-p2726dev/version.asp",
+   "price": 319.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DELL-P2726DEV_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -918,6 +1006,27 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2085972",
+   "mpn": "DELL-SE2726D",
+   "title": "Dell SE2726D 27\" IPS QHD 144Hz Monitor",
+   "url": "https://www.laptopsdirect.co.uk/dell-se2726d-27-ips-qhd-144hz-monitor-dell-se2726d/version.asp",
+   "price": 129.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DELL-SE2726D_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2075133",
+   "mpn": "DELL-SE2726H",
+   "title": "Dell SE2726H 27\" IPS Full HD Monitor",
+   "url": "https://www.laptopsdirect.co.uk/dell-se2726h-27-ips-full-hd-monitor-dell-se2726h/version.asp",
+   "price": 89.97,
+   "wasPrice": 94.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DELL-SE2726H_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1889144",
    "mpn": "DELL-U2724D",
    "title": "Dell UltraSharp U2724D 27\" IPS QHD Monitor",
@@ -946,17 +1055,6 @@
    "price": 516.97,
    "wasPrice": 581.4,
    "image": "https://www.laptopsdirect.co.uk/Images/DELL-U2725QE_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1997727",
-   "mpn": "DELL-U3225QE",
-   "title": "Dell UltraSharp U3225QE 32\" IPS 4K UHD Thunderbolt 4 USB-C Monitor",
-   "url": "https://www.laptopsdirect.co.uk/dell-ultrasharp-u3225qe-32-ips-black-4k-uhd-thunderbolt-hub-monitor-dell-u3225qe/version.asp",
-   "price": 769.97,
-   "wasPrice": 842.38,
-   "image": "https://www.laptopsdirect.co.uk/Images/DELL-U3225QE_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -1005,28 +1103,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1831047",
-   "mpn": "DELL-U4323QE",
-   "title": "Dell UltraSharp U4323QE 43\" IPS 4K UHD USB-C Monitor",
-   "url": "https://www.laptopsdirect.co.uk/dell-u4323qe-43-ips-4k-uhd-usb-c-monitor-dell-u4323qe/version.asp",
-   "price": 769.97,
-   "wasPrice": 878.38,
-   "image": "https://www.laptopsdirect.co.uk/Images/DELL-U4323QE_1_16034186_Classic.jpg?v=7",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1835900",
-   "mpn": "DELL-U4924DW",
-   "title": "Dell UltraSharp U4924DW 49\" IPS 5K Dual QHD UltraWide Curved USB-C Monitor",
-   "url": "https://www.laptopsdirect.co.uk/dell-ultrasharp-u4924dw-49-5k-dual-qhd-curved-monitor-dell-u4924dw/version.asp",
-   "price": 999.97,
-   "wasPrice": 1059.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DELL-U4924DW_1_15230286_Classic.jpg?v=17",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2063504",
    "mpn": "DELL-U5226KW",
    "title": "Dell UltraSharp U5226KW 52\" IPS 6K 120Hz Thunderbolt 4 Hub USB-C Curved Monitor",
@@ -1064,7 +1140,7 @@
    "title": "electriQ 27\" Fast IPS Dual Mode 4K UHD 160Hz Full HD 320Hz 0.5ms Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/electriq-27-uhd160fhd320i-27-ips-uhd-160hz-full-hd320hz-dual-code-1ms-gami-eiq-27uhd160fhd320i/version.asp",
    "price": 179.97,
-   "wasPrice": 194.98,
+   "wasPrice": 199.97,
    "image": "https://www.laptopsdirect.co.uk/Images/EIQ-27UHD160FHD320I_1_Classic.png?v=3",
    "inStock": true
   },
@@ -1102,6 +1178,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2072219",
+   "mpn": "BUN/eiq-49CVDQHD240VAPDKVM/99234",
+   "title": "electriQ 49'' VA Dual QHD 240Hz KVM UltraWide Curved USB-C Hub Monitor",
+   "url": "https://www.laptopsdirect.co.uk/bundle-of-electriq-49-va-dual-qhd-240hz-usb-c-kvm-ultrawide-monitor-bun-eiq-49cvdqhd240vapdk/version.asp",
+   "price": 599.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/BUNeiq-49CVDQHD240VAPDKVM99234_1_Classic.png?v=29",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2093004",
    "mpn": "eiq-495KCSUW65W165VAH",
    "title": "electriQ 49\" VA Dual QHD 165Hz UltraWide Curved USB-C Monitor",
@@ -1109,16 +1195,6 @@
    "price": 449.97,
    "wasPrice": 489.97,
    "image": "https://www.laptopsdirect.co.uk/Images/EIQ-495KCSUW65W165VAH_11_Classic.png?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2005024",
-   "mpn": "AORUS CO49DQ-EK",
-   "title": "GIGABYTE AORUS CO49DQ 49\" OLED DQHD 144Hz 0.03ms Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/gigabyte-aorus-co49dq-49-oled-dqhd-144hz-0.03ms-curved-gaming-monitor-aorus-co49dq-ek/version.asp",
-   "price": 859.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/AORUS%20CO49DQ-EK_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -1144,12 +1220,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2005023",
-   "mpn": "GS27FA-EK",
-   "title": "GIGABYTE GS27FA 27\" SS IPS Full HD 180Hz 1ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/gigabyte-gs27fa-27-ss-ips-full-hd-180hz-1ms-gaming-monitor-gs27fa-ek/version.asp",
-   "price": 109.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/GS27FA-EK_1_Classic.png?v=5",
+   "sku": "2070048",
+   "mpn": "GS27F2-EK",
+   "title": "GIGABYTE GS27F2 27\" SS IPS Full HD 240Hz 1ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-gs27f2-27-ss-ips-full-hd-240hz-1ms-gaming-monitor-gs27f2-ek/version.asp",
+   "price": 139.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GS27F2-EK_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2070063",
+   "mpn": "M27Q2 QD-EK",
+   "title": "GIGABYTE M27Q2 QD 27\" SS IPS QHD 200Hz 1ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-m27q2-qd-27-ss-ips-qhd-200hz-1ms-gaming-monitor-m27q2-qd-ek/version.asp",
+   "price": 229.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/M27Q2%20QD-EK_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -1170,6 +1256,36 @@
    "url": "https://www.laptopsdirect.co.uk/hannspree-hc271pfb-27-ips-full-hd-100hz-monitor-hc271pfb/version.asp",
    "price": 99.97,
    "image": "https://www.laptopsdirect.co.uk/Images/HC271PFB_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1176282",
+   "mpn": "HT161HNB",
+   "title": "HANNspree HT161HNB 15.6\" TFT HD Touchscreen Monitor",
+   "url": "https://www.laptopsdirect.co.uk/hannspree-15.6-hd-monitor-ht161hnb/version.asp",
+   "price": 169.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/HT161HNB_1_Classic.jpg?v=9",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1124308",
+   "mpn": "HT225HPB",
+   "title": "HANNspree HT225HPB 22\" IPS Full HD 10-Point Touchscreen Monitor",
+   "url": "https://www.laptopsdirect.co.uk/hannspree-ht225hpb-hdmi-vga-displayport-21.5-touch-monitor-ht225hpb/version.asp",
+   "price": 199.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/A2HT225HPB_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2057139",
+   "mpn": "HT249PPB",
+   "title": "HANNspree HT249PPB 24\" Full HD 10-point P-Cap Touch Monitor",
+   "url": "https://www.laptopsdirect.co.uk/hannspree-ht249ppb-24-full-hd-10-point-p-cap-touch-monitor-ht249ppb/version.asp",
+   "price": 219.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/HT249PPB_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -1260,12 +1376,24 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1966170",
-   "mpn": "GB2795HSU-B1",
-   "title": "iiyama G-MASTER GB2795HSU 27\" VA Full HD 280Hz 0.2ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/iiyama-g-master-gb2795hsu-27-va-full-hd-280hz-0.2ms-gaming-monitor-gb2795hsu-b1/version.asp",
-   "price": 159.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/GB2795HSU-B1_1_Classic.jpg?v=5",
+   "sku": "2047858",
+   "mpn": "GB2771QSU-B1",
+   "title": "iiyama G-MASTER GB2771QSU 27\" IPS WQHD 200Hz 0.5ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-g-master-gb2771qsu-27-ips-wqhd-200hz-0.5ms-gaming-monitor-gb2771qsu-b1/version.asp",
+   "price": 149.97,
+   "wasPrice": 181.18,
+   "image": "https://www.laptopsdirect.co.uk/Images/GB2771QSU-B1_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2085044",
+   "mpn": "GB2771UHSUB1",
+   "title": "iiyama G-Master GB2771UHSU 27\" IPS Dual Mode 4K UHD 144Hz Full HD 288Hz 0.8ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-g-master-gb2771uhsu-b1-27-ips-dual-mode-4k-uhd-144hz-full-hd-288hz-gb2771uhsub1/version.asp",
+   "price": 229.97,
+   "wasPrice": 259.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GB2771UHSUB1_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1275,8 +1403,18 @@
    "title": "iiyama G-Master GB3261UHSCP 32\" VA 4K UHD 144Hz 0.6ms USB-C KVM Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/iiyama-g-master-gb3261uhscp-b1-32-va-4k-uhd-144hz-0.6ms-usb-c-kvm-gaming-m-gb3261uhscpb1/version.asp",
    "price": 248.97,
-   "wasPrice": 263.99,
    "image": "https://www.laptopsdirect.co.uk/Images/GB3261UHSCPB1_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2079968",
+   "mpn": "GB3272QSUB1",
+   "title": "iiyama G-Master GB3272QSU 32\" Fast IPS QHD 180Hz 0.5ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-g-master-gb3272qsu-b1-32-fast-ips-qhd-180hz-0.5ms-gaming-monitor-gb3272qsub1/version.asp",
+   "price": 199.97,
+   "wasPrice": 223.18,
+   "image": "https://www.laptopsdirect.co.uk/Images/GB3272QSUB1_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -1308,8 +1446,19 @@
    "title": "iiyama G-MASTER GOB2701QSC 27\" OLED WQHD 280Hz 0.03ms Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/iiyama-g-master-gob2701qsc-27-oled-wqhd-280hz-0.03ms-gaming-monitor-gob2701qscb1/version.asp",
    "price": 399.97,
-   "wasPrice": 445.19,
+   "wasPrice": 445.18,
    "image": "https://www.laptopsdirect.co.uk/Images/GOB2701QSC-B1_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1866432",
+   "mpn": "T2252MSC-B2",
+   "title": "iiyama ProLite T2252MSC-B2 21.5\" IPS Full HD Touchscreen Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-t2252msc-b2-21.5-full-hd-touchscreen-ips-monitor-t2252msc-b2/version.asp",
+   "price": 209.97,
+   "wasPrice": 224.38,
+   "image": "https://www.laptopsdirect.co.uk/Images/T2252MSC-B2_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1324,12 +1473,66 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2064119",
+   "mpn": "X2493HSU-B1",
+   "title": "iiyama ProLite X2493HSU 24\" IPS Full HD 120Hz 1ms Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-x2493hsu-24-ips-full-hd-120hz-1ms-monitor-x2493hsu-b1/version.asp",
+   "price": 89.97,
+   "wasPrice": 99.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/X2493HSU-B1_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2066152",
    "mpn": "X2793HSUB1",
    "title": "iiyama ProLite X2793HSU 27\" IPS Full HD 120Hz Monitor",
    "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-x2793hsu-27-ips-full-hd-120hz-monitor-x2793hsub1/version.asp",
    "price": 119.97,
    "image": "https://www.laptopsdirect.co.uk/Images/X2793HSUB1_1_Classic.png?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2064135",
+   "mpn": "X4373UHSU-B2",
+   "title": "iiyama ProLite X4373UHSU 43\" VA 4K UHD USB-C KVM Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-x4373uhsu-43-va-4k-uhd-usb-c-kvm-monitor-x4373uhsu-b2/version.asp",
+   "price": 449.97,
+   "wasPrice": 477.58,
+   "image": "https://www.laptopsdirect.co.uk/Images/X4373UHSU-B2_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2066580",
+   "mpn": "XB2493HSUB1",
+   "title": "iiyama ProLite XB2493HSU 24\" IPS Full HD 120Hz 1ms Ergonomic Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-xb2493hsu-24-ips-full-hd-120hz-1ms-ergonomic-monitor-xb2493hsub1/version.asp",
+   "price": 119.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/XB2493HSU-B1_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2064120",
+   "mpn": "XB2493HSU-B1",
+   "title": "iiyama ProLite XB2493HSU 24\" IPS Full HD 120Hz 1ms Ergonomic Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-xb2493hsu-24-ips-full-hd-120hz-1ms-ergonomic-monitor-xb2493hsu-b1/version.asp",
+   "price": 104.97,
+   "wasPrice": 144.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/XB2493HSU-B1_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2077154",
+   "mpn": "XB2497HSNB1",
+   "title": "iiyama ProLite XB2497HSN 24\" IPS Full HD 100Hz Height Adjustable Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-xb2497hsn-24-ips-full-hd-100hz-monitor-xb2497hsnb1/version.asp",
+   "price": 139.97,
+   "wasPrice": 159.59,
+   "image": "https://www.laptopsdirect.co.uk/Images/XB2497HSNB1_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1349,7 +1552,8 @@
    "mpn": "XB2497HSU-W1",
    "title": "iiyama ProLite XB2497HSU 24\" IPS Full HD 120Hz 4ms Ergonomic Monitor",
    "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-xb2497hsu-24-ips-full-hd-120hz-4ms-ergonomic-monitor-xb2497hsu-w1/version.asp",
-   "price": 154.97,
+   "price": 124.97,
+   "wasPrice": 154.97,
    "image": "https://www.laptopsdirect.co.uk/Images/XB2497HSU-W1_1_Classic.png?v=5",
    "inStock": true
   },
@@ -1387,6 +1591,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2002114",
+   "mpn": "XCB3497WQSNPB1",
+   "title": "iiyama ProLite XCB3497WQSNP 34\" VA UltraWide QHD USB-C KVM Height-Adjustable Curved Monitor",
+   "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-xcb3497wqsnp-b1-34-va-ultrawide-qhd-usb-c-kvm-height-adjust-xcb3497wqsnpb1/version.asp",
+   "price": 299.97,
+   "wasPrice": 319.18,
+   "image": "https://www.laptopsdirect.co.uk/Images/XCB3497WQSNPB1_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2010667",
    "mpn": "XCB3497WQSNPHB1",
    "title": "iiyama ProLite XCB3497WQSNPH 34\" VA UltraWide Quad HD USB-C KVM Height-Adjustable Curved Monitor",
@@ -1405,16 +1620,6 @@
    "price": 484.97,
    "wasPrice": 604.97,
    "image": "https://www.laptopsdirect.co.uk/Images/XCB4594DQSNB1_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1946198",
-   "mpn": "XU2293HS-B6",
-   "title": "iiyama ProLite XU2293HS 21.5\" IPS Full HD Monitor",
-   "url": "https://www.laptopsdirect.co.uk/iiyama-prolite-xu2293hs-21.5-ips-full-hd-3-side-borderless-monitor-xu2293hs-b6/version.asp",
-   "price": 78.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/XU2293HS-B6_1_15845160_Classic.jpg?v=7",
    "inStock": true
   },
   {
@@ -1451,12 +1656,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2047650",
-   "mpn": "64BCMAT4UK",
-   "title": "Lenovo ThinkVision E27-40 27\" IPS Full HD 100Hz Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkvision-e27-40-27-ips-full-hd-100hz-monitor-64bcmat4uk/version.asp",
-   "price": 159.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/A164BCMAT4UK_1_Classic.png?v=12",
+   "sku": "2048979",
+   "mpn": "64BAMAT1UK",
+   "title": "Lenovo ThinkVision E24-40 23.8\" IPS Full HD 100Hz Height Adjustable Monitor",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkvision-e24-40-23.8-ips-full-hd-100hz-monitor-64bamat1uk/version.asp",
+   "price": 129.97,
+   "wasPrice": 136.78,
+   "image": "https://www.laptopsdirect.co.uk/Images/64BAMAT1UK_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2048104",
+   "mpn": "64CBKAT6UK",
+   "title": "Lenovo ThinkVision S22-4e 22\" IPS Full HD Monitor",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkvision-s22-4e-led-monitor-1920-x-1080-full-hd-1080p--100-64cbkat6uk/version.asp",
+   "price": 69.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/64CBKAT6UK_1_Classic.png?v=27",
    "inStock": true
   },
   {
@@ -1559,55 +1775,11 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2097602",
-   "mpn": "27U411B-B.AEK",
-   "title": "LG 27U411B-B 27\" IPS Full HD 144Hz Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-27u411b-b-27-ips-full-hd-144hz-monitor-27u411b-b.aek/version.asp",
-   "price": 89.98,
-   "wasPrice": 111.92,
-   "image": "https://www.laptopsdirect.co.uk/Images/27U411B-B.AEK_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2010197",
-   "mpn": "27U511SA-W.AEK",
-   "title": "LG 27U511SA 27\" IPS Full HD Smart webOS Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-27u511sa-27-ips-full-hd-smart-webos-monitor-27u511sa-w.aek/version.asp",
-   "price": 179.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/27U511SA-W.AEK_1_Classic.jpg?v=5",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1991087",
-   "mpn": "27U631A-B.AEKQ",
-   "title": "LG 27U631A 27\" IPS QHD 100Hz USB-C Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-27u631a-27-ips-qhd-100hz-usb-c-monitor-27u631a-b.aekq/version.asp",
-   "price": 139.97,
-   "wasPrice": 168.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/27U631A-B.AEKQ_1_Classic.jpg?v=9",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1991095",
-   "mpn": "27UP650K-W.AEK",
-   "title": "LG 27UP650K 27\" IPS 4K UHD Height-Adjustable Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-27up650k-27-ips-uhd-4k-height-adjustable-monitor-27up650k-w.aek/version.asp",
-   "price": 219.97,
-   "wasPrice": 275.47,
-   "image": "https://www.laptopsdirect.co.uk/Images/27UP650K-W.AEK_1_Classic.jpg?v=7",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1987120",
    "mpn": "27UP850K-W.AEK",
    "title": "LG 27UP850K 27\" IPS 4K UHD USB-C Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-27up850k-27-ips-4k-uhd-monitor-27up850k-w.aek/version.asp",
    "price": 299.98,
-   "wasPrice": 322.79,
    "image": "https://www.laptopsdirect.co.uk/Images/27UP850K-W.AEK_1_Classic.jpg?v=19",
    "inStock": true
   },
@@ -1667,6 +1839,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2047231",
+   "mpn": "32U889SA-W.AEK",
+   "title": "LG 32U889SA-W 32\" IPS UHD 4K Touch Swing Smart Monitor",
+   "url": "https://www.laptopsdirect.co.uk/lg-32u889sa-w-32-ips-uhd-4k-touch-swing-smart-monitor-32u889sa-w.aek/version.asp",
+   "price": 699.97,
+   "wasPrice": 877.19,
+   "image": "https://www.laptopsdirect.co.uk/Images/32U889SA-W.AEK_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1991867",
    "mpn": "34BA75QE-B.AEK",
    "title": "LG 34BA75QE 34\" IPS QHD UltraWide Curved USB-C Monitor",
@@ -1682,7 +1865,6 @@
    "title": "LG 34BA85QE 34\" IPS QHD USB-C Webcam UltraWide Curved Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-34ba85qe-34-ips-qhd-usb-c-webcam-ultrawide-curved-monitor-34ba85qe-b.aek/version.asp",
    "price": 429.97,
-   "wasPrice": 464.39,
    "image": "https://www.laptopsdirect.co.uk/Images/34BA85QE-B.AEK_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -1743,46 +1925,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2047215",
-   "mpn": "32U990A-S.AEK",
-   "title": "LG UltraFine 32U990A-S 32\" IPS 6K USB-C Thunderbolt 5 Professional Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-32u990a-s-32-ips-6k-usb-c-thunderbolt-5-professional-monitor-32u990a-s.aek/version.asp",
-   "price": 1399.97,
-   "wasPrice": 1738.79,
-   "image": "https://www.laptopsdirect.co.uk/Images/32U990A-S.AEK_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1959698",
-   "mpn": "32UN880K-B.AEK",
-   "title": "LG UltraFine 32UN880K 32\" IPS 4K UHD Height-Adjustable USB-C Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-32un880k-32-ips-uhd-4k-usb-c-height-adjust-monitor-32un880k-b.aek/version.asp",
-   "price": 399.97,
-   "wasPrice": 454.79,
-   "image": "https://www.laptopsdirect.co.uk/Images/32UN880K-B.AEK_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2057410",
    "mpn": "32UR500K-B.AEK",
    "title": "LG UltraFine 32UR500K 32\" VA 4K UHD Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultrafine-32ur500k-32-va-4k-uhd-monitor-32ur500k-b.aek/version.asp",
    "price": 219.97,
-   "wasPrice": 290.39,
+   "wasPrice": 249.97,
    "image": "https://www.laptopsdirect.co.uk/Images/32UR500K-B.AEK_1_Classic.png?v=5",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2045918",
-   "mpn": "40U990A-W.AEK",
-   "title": "LG UltraFine 40U990A-W 40\" IPS 5K2K 120Hz Thunderbolt 5 UltraWide Curved Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-ultrafine-40u990a-w-40-ips-5k2k-120hz-thunderbolt-5-ultrawide-curved-mo-40u990a-w.aek/version.asp",
-   "price": 1199.98,
-   "wasPrice": 1352.39,
-   "image": "https://www.laptopsdirect.co.uk/Images/40U990A-W.AEK_1_Classic.png?v=5",
+   "sku": "2097946",
+   "mpn": "32U700B-B.AEKQ",
+   "title": "LG UltraFine U7 32\" VA 4K UHD Height-Adjustable Monitor",
+   "url": "https://www.laptopsdirect.co.uk/lg-ultrafine-u7-32-va-4k-uhd-height-adjustable-monitor-32u700b-b.aekq/version.asp",
+   "price": 289.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/32U700B-B.AEKQ_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1803,7 +1962,7 @@
    "title": "LG UltraGear 25G523B G5 25\" IPS Full HD 200Hz 1ms Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-g5-25-ips-full-hd-200hz-1ms-gaming-monitor-25g523b-b.aek/version.asp",
    "price": 99.97,
-   "wasPrice": 135.59,
+   "wasPrice": 139,
    "image": "https://www.laptopsdirect.co.uk/Images/25G523B-B.AEK_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1814,7 +1973,6 @@
    "title": "LG UltraGear 27G411A-B 27\" IPS Full HD 144Hz 1ms Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-27g411a-b-27-ips-full-hd-144hz-1ms-gaming-monitor-27g411a-b.aek/version.asp",
    "price": 114.97,
-   "wasPrice": 154.79,
    "image": "https://www.laptopsdirect.co.uk/Images/27G411A-B.AEK_1_Classic.png?v=5",
    "inStock": true
   },
@@ -1825,7 +1983,7 @@
    "title": "LG UltraGear 27G523B G5 27\" IPS Full HD 200Hz 1ms Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-g5-27-ips-full-hd-200hz-1ms-gaming-monitor-27g523b-b.aek/version.asp",
    "price": 119.98,
-   "wasPrice": 145.19,
+   "wasPrice": 149,
    "image": "https://www.laptopsdirect.co.uk/Images/27G523B-B.AEK_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -1836,7 +1994,7 @@
    "title": "LG UltraGear 27G550B 27\" IPS Full HD 300Hz 1ms Height-Adjustable Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-27-ips-full-hd-300hz-1ms-height-adjustable-gaming-monitor-27g550b-b.aek/version.asp",
    "price": 179.98,
-   "wasPrice": 199.97,
+   "wasPrice": 209,
    "image": "https://www.laptopsdirect.co.uk/Images/27G550B-B.AEK_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -1847,7 +2005,7 @@
    "title": "LG UltraGear 27G610A-B 27\" IPS QHD 200Hz 1ms Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-27g610a-b-27-ips-qhd-200hz-1ms-gaming-monitor-27g610a-b.aekq/version.asp",
    "price": 169.97,
-   "wasPrice": 193.19,
+   "wasPrice": 179.98,
    "image": "https://www.laptopsdirect.co.uk/Images/27G610A-B.AEKQ_1_Classic.png?v=5",
    "inStock": true
   },
@@ -1858,7 +2016,7 @@
    "title": "LG UltraGear 27G810A-B 27\" IPS Dual Mode 4K UHD 180Hz Full HD 360Hz 1ms Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-27g810a-b-27-ips-dual-mode-4k-uhd-180hz-full-hd-360hz-1ms-gam-27g810a-b.aek/version.asp",
    "price": 359.98,
-   "wasPrice": 406.79,
+   "wasPrice": 399,
    "image": "https://www.laptopsdirect.co.uk/Images/27G810A-B.AEK_1_Classic.png?v=5",
    "inStock": true
   },
@@ -1869,7 +2027,6 @@
    "title": "LG UltraGear 27GS60F 27\" IPS Full HD 180Hz 1ms Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-27gs60f-27-full-hd-ips-180hz-gaming-monitor-27gs60f-b.aek/version.asp",
    "price": 99.97,
-   "wasPrice": 109.97,
    "image": "https://www.laptopsdirect.co.uk/Images/27GS60F-B.AEK_1_Classic.jpg?v=50",
    "inStock": true
   },
@@ -1893,17 +2050,6 @@
    "price": 399.97,
    "wasPrice": 561.58,
    "image": "https://www.laptopsdirect.co.uk/Images/27GX704A-B.AEK_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1991094",
-   "mpn": "27GX790A-B.AEK",
-   "title": "LG UltraGear 27GX790A 27\" OLED QHD 480Hz 0.03ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-ultragear-27gx790a-27-oled-qhd-480hz-0.03ms-gaming-monitor-27gx790a-b.aek/version.asp",
-   "price": 589.97,
-   "wasPrice": 849.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/27GX790A-B.AEK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1955,7 +2101,6 @@
    "title": "LG UltraGear 34\" VA WQHD 160Hz 1ms Curved Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-34-va-wqhd-160hz-1ms-curved-gaming-monitor-34g600a-b.aek/version.asp",
    "price": 249.97,
-   "wasPrice": 338.39,
    "image": "https://www.laptopsdirect.co.uk/Images/34G600A-B.AEK_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1968,17 +2113,6 @@
    "price": 329.98,
    "wasPrice": 349.97,
    "image": "https://www.laptopsdirect.co.uk/Images/34G630A-B.AEKQ_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2047227",
-   "mpn": "34GX900A-B.AEK",
-   "title": "LG UltraGear 34GX900A-B 34\" OLED WQHD 240Hz 0.03ms USB-C UltraWide Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-ultragear-gx9-34gx900a-b-34-oled-wqhd-240hz-0.03ms-usb-c-ultrawide-curv-34gx900a-b.aek/version.asp",
-   "price": 679.97,
-   "wasPrice": 1019.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/34GX900A-B.AEK_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -2004,13 +2138,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2002372",
-   "mpn": "45GX950A-B.AEK",
-   "title": "LG UltraGear 45GX950A 45\" 5K2K OLED Dual Mode 5K2K 165Hz WFHD 330Hz 0.03ms UltraWide Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-ultragear-45gx950a-45-oled-dual-mode-5k2k-165hz-330hz-0.03ms-gaming-mon-45gx950a-b.aek/version.asp",
-   "price": 1479.97,
-   "wasPrice": 1823.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/45GX950A-B.AEK_1_Classic.jpg?v=25",
+   "sku": "2097949",
+   "mpn": "32GX870B-B.AEK",
+   "title": "LG UltraGear evo 32\" OLED Dual Mode 4K UHD 240Hz Full HD 480Hz 0.03ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/lg-ultragear-evo-32-oled-dual-mode-4k-uhd-240hz-full-hd-480hz-0.03ms-gamin-32gx870b-b.aek/version.asp",
+   "price": 999.97,
+   "wasPrice": 1099.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/32GX870B-B.AEK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -2020,8 +2154,19 @@
    "title": "LG UltraGear evo G9 52\" VA 5K2K 240Hz Curved Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-evo-g9-52-va-5k2k-240hz-curved-gaming-monitor-52g930b-b.aek/version.asp",
    "price": 1399.98,
-   "wasPrice": 1545.59,
+   "wasPrice": 1499.99,
    "image": "https://www.laptopsdirect.co.uk/Images/52G930B-B.AEK_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2097603",
+   "mpn": "27GM950B-B.AEK",
+   "title": "LG UltraGear evo GM9 27\" IPS Hyper Mini LED Dual Mode 5K 165Hz QHD 330Hz Gaming AI Monitor",
+   "url": "https://www.laptopsdirect.co.uk/lg-ultragear-evo-gm9-27-ips-hyper-mini-led-dual-mode-5k-165hz-qhd-330hz-ga-27gm950b-b.aek/version.asp",
+   "price": 999.97,
+   "wasPrice": 1199.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/27GM950B-B.AEK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -2042,7 +2187,7 @@
    "title": "LG UltraGear G6 32G600A 32\" VA QHD 180Hz 1ms Curved Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-g6-32g600a-32-va-qhd-180hz-1ms-curved-gaming-monitor-32g600a-b.aekq/version.asp",
    "price": 189.97,
-   "wasPrice": 224.39,
+   "wasPrice": 199.97,
    "image": "https://www.laptopsdirect.co.uk/Images/32G600A-B.AEKQ_1_Classic.png?v=5",
    "inStock": true
   },
@@ -2053,7 +2198,7 @@
    "title": "LG UltraGear G8 37G800A 37\" VA 4K UHD 165Hz 1ms Curved Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultragear-g8-37g800a-37-va-4k-uhd-165hz-1ms-curved-gaming-monitor-37g800a-b.aekq/version.asp",
    "price": 549.97,
-   "wasPrice": 628.79,
+   "wasPrice": 599.98,
    "image": "https://www.laptopsdirect.co.uk/Images/37G800A-B.AEKQ_1_Classic.png?v=5",
    "inStock": true
   },
@@ -2070,34 +2215,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2047228",
-   "mpn": "39GX900A-B.AEK",
-   "title": "LG UltraGear GX9 39GX900A-B 39\" OLED WQHD 240Hz 0.03ms USB-C Ultrawide Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-ultragear-gx9-39gx900a-b-39-oled-wqhd-240hz-0.03ms-usb-c-ultrawide-curv-39gx900a-b.aek/version.asp",
-   "price": 899.98,
-   "wasPrice": 1223.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/39GX900A-B.AEK_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2047057",
-   "mpn": "45GX900A-B.AEK",
-   "title": "LG UltraGear GX9 45GX900A-B 45\" OLED WQHD 240Hz 0.03ms USB-C UltraWide Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/lg-ultragear-gx9-45gx900a-b-45-oled-wqhd-240hz-0.03ms-usb-c-ultrawide-curv-45gx900a-b.aek/version.asp",
-   "price": 1049.98,
-   "wasPrice": 1427.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/45GX900A-B.AEK_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2084726",
    "mpn": "34U640B-B.AEK",
    "title": "LG UltraWide 34\" VA QHD 144Hz USB-C Height-Adjustable Curved Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultrawide-34-va-qhd-144hz-usb-c-height-adjustable-curved-monitor-34u640b-b.aek/version.asp",
    "price": 279.97,
-   "wasPrice": 338.39,
+   "wasPrice": 299.98,
    "image": "https://www.laptopsdirect.co.uk/Images/34U640B-B.AEK_1_Classic.png?v=5",
    "inStock": true
   },
@@ -2108,7 +2231,7 @@
    "title": "LG UltraWide 34U601B U6 34\" VA QHD 120Hz Curved Monitor",
    "url": "https://www.laptopsdirect.co.uk/lg-ultrawide-u6-34-va-qhd-120hz-curved-monitor-34u601b-b.aekq/version.asp",
    "price": 229.97,
-   "wasPrice": 278.98,
+   "wasPrice": 279,
    "image": "https://www.laptopsdirect.co.uk/Images/34U601B-B.AEKQ_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -2208,17 +2331,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2066275",
-   "mpn": "9S6-3CFA9T-003",
-   "title": "MSI MAG 274QP X24 24\" OLED WQHD 240Hz 0.03ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/msi-mag-274qp-x24-24-oled-wqhd-240hz-0.03ms-gaming-monitor-9s6-3cfa9t-003/version.asp",
-   "price": 348.97,
-   "wasPrice": 398.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3CFA9T-003_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2066278",
    "mpn": "9S6-3CF99T-003",
    "title": "MSI MAG 274QRFW E20 27\" IPS WQHD 200Hz 0.5ms White Gaming Monitor",
@@ -2241,17 +2353,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2028402",
-   "mpn": "9S6-3CE89M-017",
-   "title": "MSI MAG 275UPD E14 27\" IPS Dual Mode 4K UHD 144Hz Full HD 288Hz 1ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/msi-mag-275upd-e14-27-ips-uhd-144hz-full-hd-288hz-1ms-gaming-monitor-9s6-3ce89m-017/version.asp",
-   "price": 228.97,
-   "wasPrice": 248.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3CE89M-017_1_16759553_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1952429",
    "mpn": "9S6-3CD91M-003",
    "title": "MSI MAG 27CQ6F 27\" VA WQHD 180Hz 0.5ms Curved Gaming Monitor",
@@ -2259,27 +2360,6 @@
    "price": 148.97,
    "wasPrice": 173.16,
    "image": "https://www.laptopsdirect.co.uk/Images/9S6-3CD91M-003_1_Classic.png?v=18",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2028397",
-   "mpn": "9S6-3DE04T-003",
-   "title": "MSI MAG 321CQF E18 32\" VA WQHD 180Hz 0.5ms Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/msi-mag-321cqf-e18-32-va-wqhd-180hz-0.5ms-curved-gaming-monitor-9s6-3de04t-003/version.asp",
-   "price": 208.97,
-   "wasPrice": 247.62,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3DE04T-003_1_Classic.png?v=7",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2028400",
-   "mpn": "9S6-3DD89T-003",
-   "title": "MSI MAG 322URDF E16 32\" IPS Dual Mode 4K UHD 160Hz Full HD 320Hz 0.5ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/msi-mag-322urdf-e16-32-ips-uhd-160hz-full-hd320hz-0.5ms-gaming-monitor-9s6-3dd89t-003/version.asp",
-   "price": 448.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3DD89T-003_3_Classic.png?v=49",
    "inStock": true
   },
   {
@@ -2357,23 +2437,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2066274",
-   "mpn": "9S6-3DE29A-003",
-   "title": "MSI MPG 341CQR X36 34\" OLED UltraWide QHD 360Hz 0.03ms Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/msi-mpg-341cqr-x36-34-oled-ultrawide-qhd-360hz-0.03ms-curved-gaming-monito-9s6-3de29a-003/version.asp",
+   "sku": "2028393",
+   "mpn": "9S6-3FA84T-030",
+   "title": "MSI MPG 491CQPX 49\" OLED DQHD 240Hz 0.03ms Curved USB-C Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/msi-mpg-491cqpx-49-oled-dqhd-240hz-0.03ms-curved-monitor-9s6-3fa84t-030/version.asp",
    "price": 998.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3DE29A-003_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2028398",
-   "mpn": "9S6-3DD94M-003",
-   "title": "MSI MPG 346CQRF X24 34\" VA UWQHD 240Hz 0.5ms UltraWide Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/msi-mpg-346cqrf-x24-34-va-uwqhd-240hz-0.5ms-ultrawide-curved-gaming-monito-9s6-3dd94m-003/version.asp",
-   "price": 308.98,
-   "wasPrice": 348.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3DD94M-003_1_Classic.png?v=5",
+   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3FA84T-030_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -2385,6 +2454,27 @@
    "price": 148.97,
    "wasPrice": 179,
    "image": "https://www.laptopsdirect.co.uk/Images/9S6-3PF44H-003_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2092926",
+   "mpn": "9S6-3PF54H-003",
+   "title": "MSI PRO MAX 271PHW E14 27\" IPS Full HD 144Hz 1ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/msi-pro-max-271phw-e14-27-ips-full-hd-144hz-1ms-gaming-monitor-9s6-3pf54h-003/version.asp",
+   "price": 178.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3PF54H-003_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2092928",
+   "mpn": "9S6-3PF54H-010",
+   "title": "MSI PRO MAX 271QPHW E14 27\" IPS WQHD 144Hz 1ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/msi-pro-max-271qphw-e14-27-ips-wqhd-144hz-1ms-gaming-monitor-9s6-3pf54h-010/version.asp",
+   "price": 168.97,
+   "wasPrice": 198.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3PF54H-010_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -2407,6 +2497,17 @@
    "price": 58.97,
    "wasPrice": 69.44,
    "image": "https://www.laptopsdirect.co.uk/Images/PRO%20MP223%20E2_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2066285",
+   "mpn": "9S6-3PD1CT-013",
+   "title": "MSI PRO MP242 E14A 24\" IPS Full HD 144Hz 1ms Monitor",
+   "url": "https://www.laptopsdirect.co.uk/msi-pro-mp242-e14a-24-ips-full-hd-144hz-1ms-business-monitor-9s6-3pd1ct-013/version.asp",
+   "price": 78.97,
+   "wasPrice": 88.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3PD1CT-013_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -2442,6 +2543,27 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1980976",
+   "mpn": "9S6-3PD4CM-002",
+   "title": "MSI PRO MP251W E2 25\" IPS Full HD 120Hz Monitor",
+   "url": "https://www.laptopsdirect.co.uk/msi-pro-mp251w-e2-25-full-hd-ips-120hz-monitor-9s6-3pd4cm-002/version.asp",
+   "price": 78.97,
+   "wasPrice": 98.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3PD4CM-002_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2066319",
+   "mpn": "9S6-3PE9CM-003",
+   "title": "MSI PRO MP271 E14A 27\" IPS Full HD 144Hz 1ms Monitor",
+   "url": "https://www.laptopsdirect.co.uk/msi-pro-mp271-e14a-27-ips-full-hd-144hz-1ms-business-monitor-9s6-3pe9cm-003/version.asp",
+   "price": 98.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S6-3PE9CM-003_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2066288",
    "mpn": "9S6-3PE2CH-017",
    "title": "MSI PRO MP273Q E14 27\" IPS WQHD 144Hz 1ms Monitor",
@@ -2460,6 +2582,17 @@
    "price": 118.97,
    "wasPrice": 138.97,
    "image": "https://www.laptopsdirect.co.uk/Images/9S6-3PE2CH-023_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1952431",
+   "mpn": "PRO MP273U",
+   "title": "MSI PRO MP273U 27\" IPS 4K UHD Monitor",
+   "url": "https://www.laptopsdirect.co.uk/msi-pro-mp273u-27-ips-4k-uhd-monitor-pro-mp273u/version.asp",
+   "price": 148.97,
+   "wasPrice": 178.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/PRO%20MP273U_1_15660357_Classic.png?v=7",
    "inStock": true
   },
   {
@@ -2521,7 +2654,7 @@
    "title": "Philips 1000 Series 27E1N1800AE 27\" IPS 4K UHD Height-Adjustable Monitor",
    "url": "https://www.laptopsdirect.co.uk/philips-1000-series-27e1n1800ae-27-ips-4k-uhd-height-adjustable-monitor-27e1n1800ae-00/version.asp",
    "price": 168.97,
-   "wasPrice": 190.79,
+   "wasPrice": 184.97,
    "image": "https://www.laptopsdirect.co.uk/Images/27E1N1800AE00_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -2537,23 +2670,43 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1945048",
+   "mpn": "32E1N1800LA/00",
+   "title": "Philips 1000 Series 32E1N1800LA 32\" VA 4K UHD Monitor",
+   "url": "https://www.laptopsdirect.co.uk/philips-1000-series-32e1n1800la-31.5-va-4k-uhd-60hz-4ms-monitor-32e1n1800la-00/version.asp",
+   "price": 208.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/32E1N1800LA00_1_Classic.jpg?v=32",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2045269",
+   "mpn": "34B2U3600CH/00",
+   "title": "Philips 3000 Series 34B2U3600CH 34\" VA WQHD 120Hz USB-C KVM Curved Monitor",
+   "url": "https://www.laptopsdirect.co.uk/philips-3000-series-34b2u3600ch-34-va-wqhd-120hz-usb-c-kvm-curved-monitor-34b2u3600ch-00/version.asp",
+   "price": 399.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/34B2U3600CH00_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2002136",
    "mpn": "27B2G5601/00",
    "title": "Philips 5000 Series 27B2G5601 27\" IPS QHD 100Hz RJ45 Efficiency Business Monitor",
    "url": "https://www.laptopsdirect.co.uk/philips-5000-series-27b2g5601-27-ips-qhd-100hz-rj45-efficiency-business-mo-27b2g5601-00/version.asp",
    "price": 229.97,
-   "wasPrice": 274.79,
+   "wasPrice": 273.94,
    "image": "https://www.laptopsdirect.co.uk/Images/27B2G560100_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1759029",
-   "mpn": "34E1C5600HE/00",
-   "title": "Philips 5000 Series 34E1C5600HE 34\" VA WQHD USB-C UltraWide Curved Monitor",
-   "url": "https://www.laptopsdirect.co.uk/philips-34e1c5600he-34-wqhd-va-usb-c-curved-monitor-34e1c5600he-00/version.asp",
-   "price": 319.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/34E1C5600HE00_1_Classic.jpg?v=17",
+   "sku": "1806318",
+   "mpn": "34B1U5600CH/00",
+   "title": "Philips 5000 Series 34B1U5600CH 34\" VA WQHD 120Hz UltraWide Curved USB-C Monitor",
+   "url": "https://www.laptopsdirect.co.uk/philips-5000-series-34b1u5600ch-34-va-wqhd-120hz-usb-c-docking-curved-moni-34b1u5600ch-00/version.asp",
+   "price": 529.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/34B1U5600CH00_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -2564,6 +2717,16 @@
    "url": "https://www.laptopsdirect.co.uk/philips-5000-series-40b1u5601h-40-ips-wqhd-120hz-usb-c-docking-monitor-40b1u5601h-00/version.asp",
    "price": 578.97,
    "image": "https://www.laptopsdirect.co.uk/Images/40B1U5601H00_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1971278",
+   "mpn": "34B2U5600C/00",
+   "title": "Philips 6000 Series 34B2U5600C 34\" VA WQHD 120Hz UltraWide Curved USB-C Monitor",
+   "url": "https://www.laptopsdirect.co.uk/philips-6000-series-34b2u5600c-34-va-wqhd-120hz-usb-c-curved-monitor-34b2u5600c-00/version.asp",
+   "price": 439.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/34B2U5600C00_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -2608,16 +2771,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1422901",
-   "mpn": "322E1C/00",
-   "title": "Philips E-Line 322E1C 32\" VA Full HD Curved Monitor",
-   "url": "https://www.laptopsdirect.co.uk/philips-e-line-322e1c-32-full-hd-curved-monitor-322e1c-00/version.asp",
-   "price": 169.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/A2322E1C00_1_Classic.jpg?v=14",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1430480",
    "mpn": "325E1C/00",
    "title": "Philips E-Line 325E1C 32\" VA QHD Curved Monitor",
@@ -2635,16 +2788,6 @@
    "price": 89.98,
    "wasPrice": 109.97,
    "image": "https://www.laptopsdirect.co.uk/Images/24M2N3201PL00_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2028454",
-   "mpn": "24M2N3200NF/00",
-   "title": "Philips Evnia 3000 24M2N3200NF 24\" IPS Full HD 144Hz 4ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/philips-24m2n3200nf-24-ips-full-hd-144hz-4ms-gaming-monitor-24m2n3200nf-00/version.asp",
-   "price": 88.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/24M2N3200NF00_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -2680,6 +2823,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2063905",
+   "mpn": "27M2N3500NF/00",
+   "title": "Philips Evnia 3000 27\" IPS QHD 144Hz 0.5ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/philips-evnia-3000-27-ips-qhd-144hz-0.5ms-gaming-monitor-27m2n3500nf-00/version.asp",
+   "price": 128.97,
+   "wasPrice": 144,
+   "image": "https://www.laptopsdirect.co.uk/Images/27M2N3500NF00_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2027061",
    "mpn": "27M2N3200NF/00",
    "title": "Philips Evnia 3000 27M2N3200NF 27\" IPS Full HD 144Hz 0.5ms Gaming Monitor",
@@ -2700,22 +2854,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1955872",
-   "mpn": "34M2C3500L/00",
-   "title": "Philips Evnia 3000 34M2C3500L 34\" VA WQHD 180Hz 1ms UltraWide Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/philips-evnia-3000-34m2c3500l-34-wqhd-180hz-1ms-curved-gaming-monitor-34m2c3500l-00/version.asp",
-   "price": 248.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/34M2C3500L00_1_Classic.jpg?v=6",
+   "sku": "1968572",
+   "mpn": "27M2C5201L/00",
+   "title": "Philips Evnia 5000 27M2C5201L 27\" VA Full HD 180Hz 1ms White Curved Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/philips-evnia-5000-27m2c5201l-27-va-full-hd-180hz-1ms-white-curved-gaming-27m2c5201l-00/version.asp",
+   "price": 109.97,
+   "wasPrice": 140.3,
+   "image": "https://www.laptopsdirect.co.uk/Images/27M2C5201L00_1_Classic.png?v=19",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1968573",
-   "mpn": "27M2C5501/00",
-   "title": "Philips Evnia 5000 27M2C5501 27\" VA QHD 180Hz 1ms White Curved Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/philips-evnia-5000-27m2c5501-27-va-qhd-180hz-1ms-white-curved-gaming-monit-27m2c5501-00/version.asp",
-   "price": 169.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/27M2C550100_1_Classic.png?v=5",
+   "sku": "2086017",
+   "mpn": "27M2N5201P/00",
+   "title": "Philips Evnia 5000 27M2N5201P 27\" Fast IPS Full HD 260Hz 0.3ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/philips-evnia-5000-27m2n5201p-27-fast-ips-full-hd-260hz-0.3ms-gaming-monit-27m2n5201p-00/version.asp",
+   "price": 159.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/27M2N5201P00_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2730,12 +2885,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2053352",
-   "mpn": "27M2N6501L/00",
-   "title": "Philips Evnia 6000 27M2N6501L 27\" QD OLED QHD 240Hz 0.03ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/philips-evnia-6000-27m2n6501l-27-qd-oled-qhd-240hz-0.03ms-gaming-monitor-27m2n6501l-00/version.asp",
-   "price": 399.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/27M2N6501L00_1_Classic.png?v=5",
+   "sku": "1979768",
+   "mpn": "34M2C5501A/00",
+   "title": "Philips Evnia 5000 34M2C5501A 34\" VA WQHD 180Hz 1ms UltraWide Curved Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/philips-evnia-34m2c5501a-34-va-wqhd-180hz-curved-gaming-monitor-34m2c5501a-00/version.asp",
+   "price": 238.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/34M2C5501A00_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2072500",
+   "mpn": "32M2N8900P/00",
+   "title": "Philips Evnia 8000 32M2N8900P 32\" QD OLED 4K UHD 240Hz 0.03ms Gaming Monitor",
+   "url": "https://www.laptopsdirect.co.uk/philips-evnia-8000-32m2n8900p-32-qd-oled-4k-uhd-240hz-0.03ms-gaming-monito-32m2n8900p-00/version.asp",
+   "price": 849.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/32M2N8900P00_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2755,7 +2920,7 @@
    "title": "Philips Evnia 8000 49M2C8900L 49\" QD-OLED DQHD 144Hz 0.03ms UltraWide Curved USB-C Gaming Monitor",
    "url": "https://www.laptopsdirect.co.uk/philips-evnia-49m2c8900l-49-qd-oled-dqhd-144hz-gaming-monitor-49m2c8900l-00/version.asp",
    "price": 699.97,
-   "wasPrice": 815.99,
+   "wasPrice": 811.78,
    "image": "https://www.laptopsdirect.co.uk/Images/49M2C8900L00_1_Classic.jpg?v=7",
    "inStock": true
   },
@@ -2835,12 +3000,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2062787",
-   "mpn": "LS27D396GAUXXU",
-   "title": "Samsung S39GD 27\" VA Full HD 100Hz Curved Monitor",
-   "url": "https://www.laptopsdirect.co.uk/samsung-s39gd-27-va-full-hd-100hz-curved-monitor-ls27d396gauxxu/version.asp",
-   "price": 134.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/LS27D396GAUXXU_1_Classic.jpg?v=1",
+   "sku": "1989895",
+   "mpn": "LS24D400GAUXXU",
+   "title": "Samsung S40GD 24\" IPS Full HD 100Hz Height-Adjustable Monitor",
+   "url": "https://www.laptopsdirect.co.uk/samsung-s40gd-24-ips-full-hd-100hz-height-adjustable-monitor-ls24d400gauxxu/version.asp",
+   "price": 99.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/LS24D400GAUXXU_1_Classic.jpg?v=41",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1868098",
+   "mpn": "LS34C652UAUXXU",
+   "title": "Samsung ViewFinity S6 34\" VA WQHD UltraWide Curved USB-C Monitor",
+   "url": "https://www.laptopsdirect.co.uk/samsung-viewfinity-s6-34-wqhd-curved-monitor-ls34c652uauxxu/version.asp",
+   "price": 379.97,
+   "wasPrice": 407.24,
+   "image": "https://www.laptopsdirect.co.uk/Images/LS34C652UAUXXU_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -2898,6 +3074,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1922616",
+   "mpn": "VA2708-HDJ",
+   "title": "ViewSonic VA2708-HDJ 27\" IPS Full HD 100Hz Ergonomic Monitor",
+   "url": "https://www.laptopsdirect.co.uk/viewsonic-va2708-hdj-27-ips-full-hd-100hz-ergonomic-monitor-va2708-hdj/version.asp",
+   "price": 109.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/VA2708-HDJ_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1796855",
    "mpn": "VA3209-2K-MHD",
    "title": "ViewSonic VA3209-2K-MHD 32\" IPS QHD Monitor",
@@ -2914,6 +3100,16 @@
    "url": "https://www.laptopsdirect.co.uk/-va3209-mh/version.asp",
    "price": 119.97,
    "image": "https://www.laptopsdirect.co.uk/Images/VA3209-MH_1_12670437_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2008963",
+   "mpn": "VA3820C",
+   "title": "ViewSonic VA3820C 38\" IPS WQHD Curved USB-C Monitor",
+   "url": "https://www.laptopsdirect.co.uk/viewsonic-va3820c-38-ips-75hz-4ms-gaming-monitor-va3820c/version.asp",
+   "price": 449.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/VA3820C_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -2947,17 +3143,6 @@
    "price": 72.97,
    "wasPrice": 94.97,
    "image": "https://www.laptopsdirect.co.uk/Images/XG24G1_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2008997",
-   "mpn": "XG27G1",
-   "title": "ViewSonic XG27G1 27\" IPS Full HD 180Hz 1ms Gaming Monitor",
-   "url": "https://www.laptopsdirect.co.uk/viewsonic-xg27g1-27-ips-180hz-1ms-gaming-monitor-xg27g1/version.asp",
-   "price": 79.97,
-   "wasPrice": 89.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/XG27G1_1_Classic.jpg?v=5",
    "inStock": true
   }
  ]

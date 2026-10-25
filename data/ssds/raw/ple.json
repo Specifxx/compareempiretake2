@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T22:49:02.314Z",
+ "scrapedAt": "2026-10-25T22:16:12.015Z",
  "offers": [
   {
    "retailer": "ple",
@@ -134,7 +134,7 @@
    "url": "https://www.ple.com.au/products/686169/adata-legend-900-pro-pcie-gen4-nvme-m2-ssd-4tb",
    "price": 969,
    "image": "https://plecom.imgix.net/iil-475628-686169.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -459,7 +459,7 @@
    "brand": "Kingston",
    "mpn": "IKVP80ES/960G",
    "url": "https://www.ple.com.au/products/684073/kingston-ironkey-vault-privacy-80-portable-ssd-960gb",
-   "price": 1099,
+   "price": 1164,
    "image": "https://plecom.imgix.net/iil-467145-684073.jpg?w=600&h=600",
    "inStock": false
   },
@@ -753,17 +753,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "673588",
-   "title": "Lexar NQ790 PCIe Gen4 NVMe M.2 SSD - 1TB",
-   "brand": "Lexar",
-   "mpn": "LNQ790X001T-RNNNG",
-   "url": "https://www.ple.com.au/products/673588/lexar-nq790-pcie-gen4-nvme-m2-ssd-1tb",
-   "price": 299,
-   "image": "https://plecom.imgix.net/iil-420181-673588.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "686933",
    "title": "Lexar NQ790 PCIe Gen4 NVMe M.2 SSD - 512GB",
    "brand": "Lexar",
@@ -985,14 +974,13 @@
   },
   {
    "retailer": "ple",
-   "sku": "682969",
-   "title": "PNY CS900 SATA III 2.5\" SSD - 1TB",
+   "sku": "669689",
+   "title": "PNY CS2241 PCIe Gen4 NVMe M.2 SSD - 1TB",
    "brand": "PNY",
-   "mpn": "SSD7CS900-1TB-RB",
-   "url": "https://www.ple.com.au/products/682969/pny-cs900-sata-iii-25-ssd-1tb",
-   "price": 199,
-   "wasPrice": 259,
-   "image": "https://plecom.imgix.net/iil-483149-682969.jpg?w=600&h=600",
+   "mpn": "M280CS2241-1TB-CL",
+   "url": "https://www.ple.com.au/products/669689/pny-cs2241-pcie-gen4-nvme-m2-ssd-1tb",
+   "price": 279,
+   "image": "https://plecom.imgix.net/iil-401762-669689.jpg?w=600&h=600",
    "inStock": true
   },
   {

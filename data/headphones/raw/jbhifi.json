@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T23:21:30.182Z",
+ "scrapedAt": "2026-10-25T22:46:09.680Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -328,7 +328,7 @@
    "url": "https://www.jbhifi.com.au/products/audio-technica-ath-cks330nc-usb-c-wired-noise-cancelling-in-ear-headphones-black",
    "price": 69,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807361-Product-0-I-639213300602595978.jpg?v=1785733335",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audio Technica"
   },
   {
@@ -1954,7 +1954,7 @@
    "url": "https://www.jbhifi.com.au/products/corsair-void-wireless-v2-gaming-headset-white",
    "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/808618-Product-0-I-638833182611518013.jpg?v=1747721531",
-   "inStock": false,
+   "inStock": true,
    "brand": "Corsair"
   },
   {
@@ -2783,17 +2783,6 @@
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897334-Product-0-I-639143106602522703.jpg?v=1778713925",
    "inStock": false,
-   "brand": "Jbl"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "751964",
-   "title": "JBL Live Beam 3 TWS Noise Cancelling In-Ear Headphones (Black)",
-   "url": "https://www.jbhifi.com.au/products/jbl-live-beam-3-tws-noise-cancelling-in-ear-headphones-black",
-   "price": 99,
-   "wasPrice": 249,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/751964-Product-0-I-638527086605636814_b82bcd73-59ab-41f1-8f24-4dc45d620a38.jpg?v=1717113498",
-   "inStock": true,
    "brand": "Jbl"
   },
   {
@@ -6136,7 +6125,7 @@
    "url": "https://www.jbhifi.com.au/products/sennheiser-hd-660-s2-open-back-wired-over-ear-headphones",
    "price": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/664105-Product-0-I-638378511607536216.jpg?v=1702254432",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sennheiser"
   },
   {
@@ -6236,6 +6225,16 @@
    "url": "https://www.jbhifi.com.au/products/sennheiser-momentum-5-over-ear-anc-wireless-headphones-white",
    "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899243-Product-0-I-639159864602439103.jpg?v=1780455666",
+   "inStock": true,
+   "brand": "Sennheiser"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "589527",
+   "title": "Sennheiser MOMENTUM True Wireless 3 ANC In-Ear Headphones (Graphite)",
+   "url": "https://www.jbhifi.com.au/products/sennheiser-momentum-true-wireless-3-anc-in-ear-headphones-graphite",
+   "price": 199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/589527-Product-0-I-637868379777518886.jpg?v=1790977558",
    "inStock": true,
    "brand": "Sennheiser"
   },
@@ -6641,11 +6640,31 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "585821",
+   "title": "Shokz OpenRun Wireless Open-Ear Headphones (Blue)",
+   "url": "https://www.jbhifi.com.au/products/shokz-openrun-wireless-open-ear-headphones-blue",
+   "price": 219,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/585821-Product-0-I-637852913577256088_b5259cbf-3052-48f5-9c55-4eaae01bbf41.jpg?v=1649658627",
+   "inStock": true,
+   "brand": "Shokz"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "585823",
    "title": "Shokz OpenRun Wireless Open-Ear Headphones (Grey)",
    "url": "https://www.jbhifi.com.au/products/shokz-openrun-wireless-open-ear-headphones-grey",
    "price": 219,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/585823-Product-0-I-637852936977092661.jpg?v=1649660972",
+   "inStock": true,
+   "brand": "Shokz"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "585822",
+   "title": "Shokz OpenRun Wireless Open-Ear Headphones (Red)",
+   "url": "https://www.jbhifi.com.au/products/shokz-openrun-wireless-open-ear-headphones-red",
+   "price": 219,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/585822-Product-0-I-637852912377200058.jpg?v=1649658507",
    "inStock": true,
    "brand": "Shokz"
   },
@@ -7228,17 +7247,6 @@
    "price": 89,
    "wasPrice": 149,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829215-Product-0-I-638910780003475015.jpg?v=1755481269",
-   "inStock": true,
-   "brand": "Sony Audio"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "661242",
-   "title": "Sony INZONE H5 Wireless Gaming Headset (White)",
-   "url": "https://www.jbhifi.com.au/products/sony-inzone-h5-wireless-gaming-headset-white",
-   "price": 179,
-   "wasPrice": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/661242-Product-0-I-638313827465024552.jpg?v=1695786010",
    "inStock": true,
    "brand": "Sony Audio"
   },
@@ -8289,7 +8297,8 @@
    "sku": "659282",
    "title": "Technics AZ80 Premium True Wireless Noise Cancelling In-Ear Headphones (Black)",
    "url": "https://www.jbhifi.com.au/products/technics-az80-premium-true-wireless-noise-cancelling-in-ear-headphones-black",
-   "price": 449,
+   "price": 224,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/659282-Product-0-I-638267037007613302.jpg?v=1691107218",
    "inStock": true,
    "brand": "Technics"
@@ -8299,7 +8308,8 @@
    "sku": "790315",
    "title": "Technics AZ80 Premium True Wireless Noise Cancelling In-Ear Headphones (Blue)",
    "url": "https://www.jbhifi.com.au/products/technics-az80-premium-true-wireless-noise-cancelling-in-ear-headphones-blue",
-   "price": 449,
+   "price": 224,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/790315-Product-0-I-638644597805915503.jpg?v=1728863054",
    "inStock": true,
    "brand": "Technics"
@@ -8309,7 +8319,8 @@
    "sku": "659283",
    "title": "Technics AZ80 Premium True Wireless Noise Cancelling In-Ear Headphones (Silver)",
    "url": "https://www.jbhifi.com.au/products/technics-az80-premium-true-wireless-noise-cancelling-in-ear-headphones-silver",
-   "price": 449,
+   "price": 224,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/659283-Product-0-I-638267038807130102.jpg?v=1691108894",
    "inStock": true,
    "brand": "Technics"
@@ -8591,7 +8602,7 @@
    "url": "https://www.jbhifi.com.au/products/turtle-beach-stealth-600-wireless-gaming-headset-for-playstation-white",
    "price": 179,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/746011-Product-0-I-638759580630505880.jpg?v=1790891182",
-   "inStock": false,
+   "inStock": true,
    "brand": "Turtle Beach"
   },
   {
@@ -8626,21 +8637,21 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "784085",
-   "title": "Turtle Beach Stealth 700 Wireless Multiplatform Amplified Gaming Headset for Xbox Series X|S, Xbox One, PC, PS5, PS4, & Mobile",
-   "url": "https://www.jbhifi.com.au/products/turtle-beach-stealth-700-wireless-multiplatform-amplified-gaming-headset-for-xbox-series-xs-xbox-one-pc-ps5-ps4-mobile-1",
-   "price": 399,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784085-Product-0-I-638598953406570931.jpg?v=1775015270",
-   "inStock": true,
-   "brand": "Turtle Beach"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "784084",
    "title": "Turtle Beach Stealth 700 Wireless Multiplatform Amplified Gaming Headset for Xbox Series X|S, Xbox One, PC, PS5, PS4, & Mobile",
    "url": "https://www.jbhifi.com.au/products/turtle-beach-stealth-700-wireless-multiplatform-amplified-gaming-headset-for-xbox-series-xs-xbox-one-pc-ps5-ps4-mobile",
    "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784084-Product-0-I-638598951650565471.jpg?v=1774409226",
+   "inStock": true,
+   "brand": "Turtle Beach"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "784085",
+   "title": "Turtle Beach Stealth 700 Wireless Multiplatform Amplified Gaming Headset for Xbox Series X|S, Xbox One, PC, PS5, PS4, & Mobile",
+   "url": "https://www.jbhifi.com.au/products/turtle-beach-stealth-700-wireless-multiplatform-amplified-gaming-headset-for-xbox-series-xs-xbox-one-pc-ps5-ps4-mobile-1",
+   "price": 399,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784085-Product-0-I-638598953406570931.jpg?v=1775015270",
    "inStock": true,
    "brand": "Turtle Beach"
   },
@@ -8743,6 +8754,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896366-Product-0-I-639123406205347280.jpg?v=1791256814",
    "inStock": true,
    "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "659918",
+   "title": "XCD Headset with Boom Mic (Black)",
+   "url": "https://www.jbhifi.com.au/products/xcd-headset-with-boom-mic-black",
+   "price": 10,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/659918-Product-0-I-638302471203876114.jpg?v=1694650399",
+   "inStock": true,
+   "brand": "Xcd"
   },
   {
    "retailer": "jbhifi",
