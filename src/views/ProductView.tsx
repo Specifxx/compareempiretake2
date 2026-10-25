@@ -9,10 +9,11 @@ import { checkVariant, getCatalog, getProduct, getProducts, getVsPairs, similarP
 import { money, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById } from "@/lib/categories";
 import type { CategoryId, Phone } from "@/lib/types";
-import { storageLabel } from "@/lib/normalize";
+import { slugify, storageLabel } from "@/lib/normalize";
 import { RETAILERS } from "@/lib/retailers";
 import { SITE } from "@/lib/site";
 import { ogImage } from "@/lib/og";
+import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 
 /** Every product page in a region, for generateStaticParams. */
@@ -34,6 +35,21 @@ function alternates(p: Phone) {
   return { canonical: productHref(p), ...(Object.keys(langs).length > 1 ? { languages: langs } : {}) };
 }
 
+/** Product names that occur more than once in a region (same model, different codes): their titles get the code. */
+const dupNames = new Map<RegionId, Set<string>>();
+function nameFor(p: Phone, region: RegionId): string {
+  if (!dupNames.has(region)) {
+    const seen = new Set<string>(), dup = new Set<string>();
+    for (const q of getProducts(undefined, region)) (seen.has(q.name.toLowerCase()) ? dup : seen).add(q.name.toLowerCase());
+    dupNames.set(region, dup);
+  }
+  if (!dupNames.get(region)!.has(p.name.toLowerCase())) return p.name;
+  const base = slugify(p.name);
+  const extra = p.slug.startsWith(base) ? p.slug.slice(base.length).replace(/^-/, "") : "";
+  const tag = extra ? extra.toUpperCase() : [p.variants[0]?.label, p.specs.extra?.[0]?.[1]].filter(Boolean).join(" ");
+  return tag ? `${p.name} (${tag})` : p.name;
+}
+
 export async function productMetadata(params: ProductParams, region: RegionId): Promise<Metadata> {
   const p = await load(params, region);
   if (!p) return {};
@@ -41,13 +57,13 @@ export async function productMetadata(params: ProductParams, region: RegionId): 
   const $ = (n: number) => money(n, region);
   const cheapest = p.variants.flatMap((v) => v.offers).filter((o) => o.inStock && o.price === p.bestPrice)[0];
   const store = cheapest ? ` at ${RETAILERS[cheapest.retailer].name}` : "";
-  const title = `${p.name} price in ${region === "au" ? "Australia" : region === "us" ? "the US" : "the UK"} — from ${$(p.bestPrice)}${store}`;
-  const description = `${p.name} from ${$(p.bestPrice)}. Compare ${p.offerCount} live prices across ${p.retailerCount} retailers in ${p.variants.length > 1 ? `${p.variants.map((v) => v.label).join(", ")}, ` : ""}with price history.`;
+  const title = `${nameFor(p, region)} price in ${region === "au" ? "Australia" : region === "us" ? "the US" : "the UK"} — from ${$(p.bestPrice)}${store}`;
+  const description = `${nameFor(p, region)} from ${$(p.bestPrice)}. Compare ${p.offerCount} live prices across ${p.retailerCount} retailers in ${p.variants.length > 1 ? `${p.variants.map((v) => v.label).join(", ")}, ` : ""}with price history.`;
   return {
     title,
     description,
     alternates: alternates(p),
-    openGraph: { title, description, images: [{ url: shareCard(p), width: 1200, height: 630 }] },
+    openGraph: { title, description, url: productHref(p), images: [{ url: shareCard(p), width: 1200, height: 630 }] },
     twitter: { card: "summary_large_image", title, description, images: [shareCard(p)] },
   };
 }
@@ -124,10 +140,45 @@ export async function ProductView({ params, region }: { params: ProductParams; r
     },
   };
 
+  // Facts for the price summary and FAQ, all from today's prices and our history.
+  const $ = (n: number) => money(n, region);
+  const outright = phone.variants.flatMap((v) => v.offers.filter((o) => o.kind !== "plan").map((o) => ({ ...o, v })));
+  const inStock = outright.filter((o) => o.inStock);
+  const pool = inStock.length ? inStock : outright;
+  const cheapest = pool.reduce((a, b) => (b.price < a.price ? b : a), pool[0]);
+  const dearest = pool.reduce((a, b) => (b.price > a.price ? b : a), pool[0]);
+  const lowestEver = Math.min(...phone.variants.map((v) => v.lowestEver ?? v.bestPrice));
+  const stores = [...new Set(outright.map((o) => RETAILERS[o.retailer].name))];
+  const mainCheck = checks[cheapest?.v.id ?? phone.variants[0].id]?.check;
+  const guide = CATEGORY_GUIDES[phone.category];
+  const faq: [string, string][] = cheapest
+    ? [
+        [
+          `What is the cheapest price for the ${phone.name}?`,
+          `${$(cheapest.price)} at ${RETAILERS[cheapest.retailer].name}${cheapest.v.label && phone.variants.length > 1 ? ` (${cheapest.v.label})` : ""}, the lowest ${cheapest.inStock ? "in-stock " : ""}price across the ${phone.retailerCount} ${R.adjective} ${phone.retailerCount === 1 ? "store" : "stores"} we checked on ${new Date(updatedAt).toLocaleDateString(R.locale, { timeZone: R.timeZone, day: "numeric", month: "long", year: "numeric" })}.`,
+        ],
+        [`Which stores sell the ${phone.name}?`, `${stores.slice(0, 8).join(", ")}${stores.length > 8 ? ` and ${stores.length - 8} more` : ""}.`],
+        ...(mainCheck && mainCheck.verdict !== "new" ? ([[`Is now a good time to buy the ${phone.name}?`, `${mainCheck.headline}. ${mainCheck.detail}`]] as [string, string][]) : []),
+        ...(lowestEver < cheapest.price ? ([[`What is the lowest price the ${phone.name} has been?`, `The lowest price we've recorded is ${$(lowestEver)}.`]] as [string, string][]) : []),
+      ]
+    : [];
+  const crumbs = [
+    { name: "Home", url: `${SITE}${REGIONS[region].prefix}` || SITE },
+    { name: cat.name, url: `${SITE}${categoryHref(cat.id, region)}` },
+    { name: phone.name, url: `${SITE}${productHref(phone)}` },
+  ];
+  const ld = [
+    jsonLd,
+    { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: crumbs.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, item: c.url })) },
+    ...(faq.length ? [{ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }] : []),
+  ];
+
   return (
     <div className="container-x pt-6">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <nav className="mb-6 flex items-center gap-2 text-sm text-ink-mute" aria-label="Breadcrumb">
+        <Link href={REGIONS[region].prefix || "/"} className="hover:text-ink">Home</Link>
+        <span>/</span>
         <Link href={categoryHref(cat.id, region)} className="hover:text-ink">{cat.name}</Link>
         <span>/</span>
         {region === "au" ? (
@@ -169,6 +220,50 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           </div>
         </div>
       </section>
+
+      {cheapest && (
+        <section className="mt-16 grid gap-8 lg:grid-cols-2">
+          <div>
+            <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">{phone.model} price summary</h2>
+            <dl className="card divide-y divide-line">
+              {([
+                ["Cheapest today", `${$(cheapest.price)} at ${RETAILERS[cheapest.retailer].name}`],
+                ...(dearest && dearest.price > cheapest.price ? ([["Price range across stores", `${$(cheapest.price)} to ${$(dearest.price)}`]] as [string, string][]) : []),
+                ...(phone.variants.length > 1 ? ([["Options", phone.variants.map((v) => `${v.label} from ${$(v.bestPrice)}`).join(" · ")]] as [string, string][]) : []),
+                ["Lowest we've recorded", $(lowestEver)],
+                ["Stores with it in stock", `${new Set(inStock.map((o) => o.retailer)).size} of ${phone.retailerCount}`],
+              ] as [string, string][]).map(([k, v]) => (
+                <div key={k} className="flex gap-4 px-5 py-3.5 text-sm">
+                  <dt className="w-44 shrink-0 text-ink-mute">{k}</dt>
+                  <dd className="font-medium">{v}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+          {guide && (
+            <div>
+              <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">Before you buy</h2>
+              <ul className="card space-y-3 p-5 text-sm leading-relaxed text-ink-soft">
+                {guide.tips.map((t) => <li key={t} className="flex gap-2"><span className="text-brand">✓</span><span>{t}</span></li>)}
+              </ul>
+            </div>
+          )}
+        </section>
+      )}
+
+      {faq.length > 0 && (
+        <section className="mt-16 max-w-3xl">
+          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">{phone.model} FAQ</h2>
+          <div className="card divide-y divide-line">
+            {faq.map(([q, a]) => (
+              <details key={q} className="group px-5 py-4" open>
+                <summary className="cursor-pointer list-none font-semibold">{q}</summary>
+                <p className="mt-2 text-sm text-ink-soft">{a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="mt-16"><NewsletterSignup compact /></div>
 

@@ -90,7 +90,10 @@ export function HomeView({ region }: { region: RegionId }) {
       )}
 
       <section className="container-x">
-        <h2 className="mb-4 font-display text-xl font-extrabold tracking-tight">Shop by category</h2>
+        <div className="mb-4 flex items-end justify-between gap-4">
+          <h2 className="font-display text-xl font-extrabold tracking-tight">Shop by category</h2>
+          <Link href={to("/browse")} className="text-sm font-semibold text-brand hover:underline">Browse all products →</Link>
+        </div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
           {cats.map(({ c, count, from, image }) => (
             <Link key={c.id} href={to(c.href)} className="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift">

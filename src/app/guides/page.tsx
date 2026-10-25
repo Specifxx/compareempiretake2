@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getPhone } from "@/lib/catalog";
+import { getPhone, getProduct } from "@/lib/catalog";
+import type { CategoryId } from "@/lib/types";
 import { getGuides } from "@/lib/guides";
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function GuidesPage() {
       <p className="mt-2 max-w-xl text-ink-mute">Buying advice where every price is live — pulled from today&apos;s check of every store, not typed in months ago.</p>
       <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {guides.map((g, i) => {
-          const hero = g.hero ? getPhone(g.hero) : undefined;
+          const hero = g.hero ? (g.hero.includes("/") ? getProduct(g.hero.split("/")[0] as CategoryId, g.hero.split("/")[1]) : getPhone(g.hero)) : undefined;
           return (
             <Link key={g.slug} href={`/guides/${g.slug}`} className={`card group flex flex-col overflow-hidden transition hover:shadow-lift ${i === 0 ? "md:col-span-2 lg:col-span-2" : ""}`}>
               <div className={`img-tile relative ${i === 0 ? "aspect-[2/1]" : "aspect-[16/9]"}`}>

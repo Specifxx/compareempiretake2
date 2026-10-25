@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { marked } from "marked";
-import { getPhone, getPhones, summarise } from "@/lib/catalog";
+import { getPhone, getPhones, getProduct, getProducts, summarise } from "@/lib/catalog";
+import type { CategoryId } from "@/lib/types";
+
+/** A phone slug ("apple-iphone-17"), or any product as "category/slug" ("tvs/lg-oled-evo-c5-65"). */
+const find = (ref: string) => (ref.includes("/") ? getProduct(ref.split("/")[0] as CategoryId, ref.split("/")[1]) : getPhone(ref));
 import { storageLabel } from "@/lib/normalize";
 import { RETAILERS } from "@/lib/retailers";
 import type { Phone, RetailerId } from "@/lib/types";
@@ -28,8 +32,8 @@ export function GuideBody({ body }: { body: string }) {
 }
 
 function inline(md: string): string {
-  return md.replace(/\{\{(price|stores|name|link):([a-z0-9-]+)(?::([a-z0-9]+))?\}\}/g, (all, kind, slug, vid) => {
-    const p = getPhone(slug);
+  return md.replace(/\{\{(price|stores|name|link):([a-z0-9/-]+)(?::([a-z0-9]+))?\}\}/g, (all, kind, slug, vid) => {
+    const p = find(slug);
     if (!p) return kind === "name" || kind === "link" ? slug : "—";
     if (kind === "price") {
       const v = vid ? p.variants.find((x) => x.id === vid) : undefined;
@@ -44,16 +48,16 @@ function inline(md: string): string {
 function Block({ kind, arg }: { kind: string; arg: string }) {
   if (kind === "phone") {
     const [slug, note] = arg.split("|");
-    const p = getPhone(slug.trim());
+    const p = find(slug.trim());
     return p ? <Pick p={p} note={note?.trim()} /> : null;
   }
   if (kind === "compare") {
-    const phones = arg.split(",").map((s) => getPhone(s.trim())).filter(Boolean) as Phone[];
+    const phones = arg.split(",").map((s) => find(s.trim())).filter(Boolean) as Phone[];
     return phones.length ? <StoreTable phones={phones} /> : null;
   }
   if (kind === "list") {
     const o = Object.fromEntries(arg.split(",").map((kv) => kv.split("=").map((s) => s.trim())));
-    const list = getPhones()
+    const list = (o.cat ? getProducts(o.cat as CategoryId) : getPhones())
       .filter(
         (p) =>
           (!o.max || p.bestPrice <= Number(o.max)) &&

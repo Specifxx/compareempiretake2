@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GuideBody } from "@/components/GuideBody";
-import { getCatalog, getPhone } from "@/lib/catalog";
+import { getCatalog, getPhone, getProduct } from "@/lib/catalog";
+import type { CategoryId } from "@/lib/types";
 import { getGuide, getGuides } from "@/lib/guides";
 import { SITE } from "@/lib/site";
 
@@ -12,7 +13,7 @@ export const generateStaticParams = () => getGuides().map((g) => ({ slug: g.slug
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const g = getGuide((await params).slug);
   if (!g) return {};
-  const img = g.hero ? getPhone(g.hero)?.image : undefined;
+  const img = g.hero ? (g.hero.includes("/") ? getProduct(g.hero.split("/")[0] as CategoryId, g.hero.split("/")[1]) : getPhone(g.hero))?.image : undefined;
   return {
     title: g.title,
     description: g.description,

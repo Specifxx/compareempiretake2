@@ -67,3 +67,22 @@ scraper fetched thousands of product JSON files and retried every 429 with backo
 all its workers together on a 429, stops after 40 minutes (`JB_BUDGET_MIN`), keeps yesterday's file for
 any category it couldn't finish, and starts at a different category each day. The runner scrapes
 four stores at once.
+
+## 2026-10-25: Indexing: one www host, a tiered sitemap index, and crawlable browse pages
+
+`compareempire.com` already 308-redirects to `www`, but canonicals, OG URLs and the robots.txt
+Sitemap line used the bare domain, so every canonical pointed at a redirect. `SITE` now always resolves
+to `https://www.compareempire.com` (a bare-domain `NEXT_PUBLIC_SITE_URL` is upgraded).
+
+85% of the ~28K product pages are sold by one store: thin for a brand-new site. `/sitemap.xml` is now
+a sitemap index of sections (`/sitemaps/<section>.xml`, `src/lib/seo.ts`). `SITEMAP_TIER` (Vercel env,
+default 1) decides what's submitted: tier 1 is hubs, categories, guides and products at 3+ stores
+(about 1,470 URLs), tier 2 adds 2-store products, brands, category deals and comparisons, and tier 3
+is everything. Raise it once Search Console shows the tier indexed. Pages outside the sitemap stay
+live and indexable, and every one is linked from the A-to-Z `/browse/<category>` pages (200 a page,
+in every region), because category grids load most products in the browser.
+
+Product pages gained a price summary (cheapest, range, options, lowest recorded, stores in stock),
+category "Before you buy" tips, a data-driven FAQ, and BreadcrumbList and FAQPage JSON-LD; product
+names that repeat in a region get their model code in the title. Category pages gained a buying guide,
+price range, top brands and an FAQ. No ratings or reviews are marked up: we have none of our own.

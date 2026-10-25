@@ -19,9 +19,9 @@ const display = localFont({ src: "./fonts/bricolage-grotesque-latin-wght-normal.
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: { default: "Compare Empire — Compare mobile phone prices across Australia", template: "%s · Compare Empire" },
+  title: { default: "Compare Empire — Compare tech prices across Australian stores", template: "%s · Compare Empire" },
   description:
-    "Is that phone sale real? We record every phone price at 17 Australian stores every day — JB Hi-Fi, Harvey Norman, Apple, Samsung, Telstra, Optus and more — so you can see the real price history before you buy.",
+    "Is that sale real? We check prices on phones, TVs, laptops, headphones and more at 30+ Australian stores every day, including JB Hi-Fi, Harvey Norman and The Good Guys, and keep the price history so you can see a real deal.",
   openGraph: { type: "website", siteName: "Compare Empire", locale: "en_AU", images: [{ url: "/og?t=Is+that+sale+actually+real%3F", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" },
   icons: { icon: "/icon.svg" },
