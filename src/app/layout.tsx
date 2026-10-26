@@ -39,8 +39,13 @@ export const viewport: Viewport = {
   ],
 };
 
-// Sets the theme before first paint so there is no light flash in dark mode.
-const themeScript = `try{var t=localStorage.getItem('ce-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}`;
+// Sets the theme before first paint so there is no light flash in dark mode. Then marks a URL that
+// filters or sorts a product grid (PhoneBrowser's query keys, "?sort=popular" being the default), so
+// the grid's prerendered, unfiltered first page shows as a skeleton until the browser filters it
+// (globals.css, [data-grid-fallback]). Crawlers and visitors without JavaScript never get the class.
+const themeScript =
+  `try{var t=localStorage.getItem('ce-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}` +
+  `try{if(/[?&](?:q|brand|min|max|storage|fold|5g|stock|multi|cat|f\\.[a-z0-9-]+)=[^&]|[?&]sort=(?!popular(?:&|$))[^&]/.test(location.search))document.documentElement.classList.add('gq')}catch(e){}`;
 
 function navDepartments(region: RegionId): NavDepartment[] {
   const live = activeCategories(region);

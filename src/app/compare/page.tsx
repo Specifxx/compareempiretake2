@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { CompareView } from "@/components/CompareView";
-import { getProducts } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "Compare products side by side",
@@ -15,7 +14,8 @@ export default function ComparePage() {
       <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Compare</h1>
       <p className="mt-2 mb-8 text-ink-mute">Side by side: price at every store, and the specs that matter.</p>
       <Suspense>
-        <CompareView phones={getProducts()} />
+        {/* No catalogue in the page: CompareView fetches the chosen products and searches the search index. */}
+        <CompareView />
       </Suspense>
     </div>
   );

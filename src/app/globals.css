@@ -72,3 +72,11 @@ body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11";
 .prose-ce table { @apply w-full text-sm; }
 .prose-ce th, .prose-ce td { @apply border-b border-line px-3 py-2 text-left; }
 .prose-ce > :first-child { @apply mt-0; }
+
+/* A product grid's prerendered first page is its unfiltered view (PhoneBrowser's Suspense fallback).
+   On a URL that filters or sorts it (html.gq, set by the root layout's head script) the fallback shows
+   a skeleton instead of the wrong products until the browser renders the filtered grid. */
+[data-grid-fallback] [data-filtered-only],
+html.gq [data-grid-fallback] [data-unfiltered] { display: none; }
+html.gq [data-grid-fallback] div[data-filtered-only] { display: block; }
+html.gq [data-grid-fallback] span[data-filtered-only] { display: inline; }

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import { PhoneBrowser } from "@/components/PhoneBrowser";
-import { activeCategories, activeRetailers, categoryHref, getSummaries, type PhoneSummary } from "@/lib/catalog";
+import { gridProps, gridSrc } from "@/lib/browse";
+import { activeCategories, activeRetailers, categoryHref, getSummaries, gridVersion, type PhoneSummary } from "@/lib/catalog";
 import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { SITE } from "@/lib/site";
 import { money, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
@@ -69,9 +69,8 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
         )}
       </div>
       <div className="mt-8">
-        <Suspense>
-          <PhoneBrowser phones={products} category={id} />
-        </Suspense>
+        {/* The first page only; the full list is a static file the browser loads (lib/browse.ts). */}
+        <PhoneBrowser key={`${region}/${id}`} {...gridProps(products, id, { brands: true, cats: false, src: gridSrc.category(region, id), version: gridVersion(region) })} category={id} />
       </div>
       <CategoryGuideSection id={id} name={c.name} region={region} products={products} />
       {region === "au" && AMAZON_PICK_CATEGORIES.includes(id) && <AmazonPicks category={id} title={`Top ${c.name.toLowerCase()} picks on Amazon AU`} />}

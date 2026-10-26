@@ -1,20 +1,11 @@
 "use client";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useMemo, useState } from "react";
-import type { PhoneSummary } from "@/lib/catalog";
+import { Suspense, useEffect, useMemo, useState } from "react";
+import { facetDefs, facetValue, isSort, PAGE_SIZE, SORT_FNS, SORTS, unpackGrid, type GridFile, type GridItem, type GridProps } from "@/lib/browse";
 import { categoryById } from "@/lib/categories";
 import { search } from "@/lib/search";
 import { CloseIcon, FilterIcon, SearchIcon } from "./icons";
 import { PhoneCard } from "./PhoneCard";
-
-const SORTS = {
-  popular: "Most compared",
-  "price-asc": "Price: low to high",
-  "price-desc": "Price: high to low",
-  saving: "Biggest saving",
-  newest: "Newest models",
-} as const;
-type Sort = keyof typeof SORTS;
 
 type Band = [string, number | undefined, number | undefined];
 const PRICE_BANDS: Record<string, Band[]> = {
@@ -62,95 +53,71 @@ const STORAGE = [128, 256, 512, 1024];
 /** Categories where most products cost under $500, so price bands start lower. */
 const SMALL_TICKET = new Set(["headphones", "speakers", "ssds", "ram", "routers", "printers", "cpus", "motherboards", "smartwatches", "soundbars"]);
 
-/** Spec filters per category: which facet to offer, and how to bucket its values. */
-const FACETS: Record<string, { key: string; label: string; bucket?: (v: string) => string }[]> = {
-  tvs: [
-    { key: "Screen size", label: "Size", bucket: (v) => sizeBucket(parseFloat(v), [43, 50, 55, 65, 75, 85]) },
-    { key: "Panel", label: "Panel" },
-    { key: "Resolution", label: "Resolution" },
-  ],
-  monitors: [
-    { key: "Screen size", label: "Size", bucket: (v) => sizeBucket(parseFloat(v), [24, 27, 32, 34, 49]) },
-    { key: "Resolution", label: "Resolution" },
-    { key: "Refresh rate", label: "Refresh rate", bucket: (v) => (parseInt(v) >= 240 ? "240Hz+" : parseInt(v) >= 144 ? "144Hz+" : "Under 144Hz") },
-    { key: "Panel", label: "Panel" },
-  ],
-  "graphics-cards": [
-    { key: "GPU", label: "GPU" },
-    { key: "Memory", label: "Memory" },
-  ],
-  laptops: [
-    { key: "Memory", label: "Memory" },
-    { key: "Storage", label: "Storage" },
-    { key: "Graphics", label: "Dedicated graphics" },
-  ],
-  tablets: [{ key: "Chip", label: "Chip" }],
-  cpus: [
-    { key: "Family", label: "Family" },
-    { key: "Socket", label: "Socket" },
-  ],
-  ssds: [
-    { key: "Interface", label: "Interface" },
-    { key: "PCIe", label: "PCIe" },
-  ],
-  ram: [
-    { key: "Type", label: "Type" },
-    { key: "Capacity", label: "Capacity" },
-    { key: "Speed", label: "Speed" },
-  ],
-  motherboards: [
-    { key: "Socket", label: "Socket" },
-    { key: "Chipset", label: "Chipset" },
-    { key: "Form factor", label: "Form factor" },
-    { key: "Wi-Fi", label: "Wi-Fi" },
-  ],
-  headphones: [
-    { key: "Type", label: "Type" },
-    { key: "Noise cancelling", label: "Noise cancelling" },
-  ],
-  smartwatches: [{ key: "Connectivity", label: "Connectivity" }],
-  consoles: [{ key: "Platform", label: "Platform" }],
-  cameras: [
-    { key: "Type", label: "Type" },
-    { key: "Kit", label: "Lens" },
-  ],
-  soundbars: [
-    { key: "Channels", label: "Channels" },
-    { key: "Dolby Atmos", label: "Dolby Atmos" },
-  ],
-  speakers: [{ key: "Type", label: "Type" }],
-  routers: [
-    { key: "Wi-Fi", label: "Wi-Fi standard" },
-    { key: "Mesh", label: "Mesh" },
-  ],
-  printers: [
-    { key: "Type", label: "Type" },
-    { key: "Colour", label: "Colour" },
-  ],
-  "robot-vacuums": [
-    { key: "Mops", label: "Mops" },
-    { key: "Base station", label: "Base station" },
-  ],
-  desktops: [
-    { key: "Memory", label: "Memory" },
-    { key: "Storage", label: "Storage" },
-  ],
-};
-
-function sizeBucket(n: number, steps: number[]): string {
-  if (!n) return "";
-  // Nearest listed size class, e.g. 64.5" → 65".
-  const near = steps.reduce((a, b) => (Math.abs(b - n) < Math.abs(a - n) ? b : a));
-  return Math.abs(near - n) <= 3 ? `${near}"` : `${Math.round(n)}"`;
+/**
+ * Full lists by URL, kept for the visit. `lists` is read during render, so a grid that mounts
+ * again (back to a category already seen) has its list at once instead of flashing a skeleton.
+ */
+const lists = new Map<string, GridItem[]>();
+const loading = new Map<string, Promise<GridItem[]>>();
+function loadList(src: string): Promise<GridItem[]> {
+  let p = loading.get(src);
+  if (!p) {
+    p = fetch(src)
+      .then((r) => {
+        if (!r.ok) throw new Error(`${src}: ${r.status}`);
+        return r.json() as Promise<GridFile>;
+      })
+      .then((file) => {
+        const items = unpackGrid(file);
+        lists.set(src, items);
+        return items;
+      })
+      .catch((e) => {
+        loading.delete(src);
+        throw e;
+      });
+    loading.set(src, p);
+  }
+  return p;
 }
 
-export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCategory }: { phones: PhoneSummary[]; fixedBrand?: string; category?: string; showCategory?: boolean }) {
+type Params = Pick<URLSearchParams, "get" | "toString">;
+const NO_PARAMS: Params = new URLSearchParams();
+type Props = GridProps & { fixedBrand?: string; category?: string; showCategory?: boolean };
+
+/**
+ * The product grid with its filters. A prerendered page can't know its query string, so
+ * useSearchParams() sends the server to the Suspense fallback: the same grid in its default view
+ * (first page, most compared first), which is what crawlers and the first paint get. The browser
+ * then renders it with the real query string. On a filtered deep link (/phones?max=500) the root
+ * layout's head script marks <html class="gq"> before first paint, and globals.css shows the
+ * fallback's skeleton instead of its unfiltered cards, so nobody sees the wrong products first.
+ */
+export function PhoneBrowser(props: Props) {
+  return (
+    <Suspense fallback={<Browser {...props} params={NO_PARAMS} fallback />}>
+      <WithParams {...props} />
+    </Suspense>
+  );
+}
+
+function WithParams(props: Props) {
   const params = useSearchParams();
+  return <Browser {...props} params={params} />;
+}
+
+function Browser({ initial, total, options, src, fixedBrand, category = "phones", showCategory, params, fallback }: Props & { params: Params; fallback?: boolean }) {
   const router = useRouter();
   const pathname = usePathname();
   const [panel, setPanel] = useState(false);
   // Big categories have thousands of products: render a page at a time.
-  const [limit, setLimit] = useState(48);
+  const [limit, setLimit] = useState(PAGE_SIZE);
+  const [, setLoadedCount] = useState(0);
+  const [failed, setFailed] = useState<string | null>(null);
+
+  const full = src ? lists.get(src) : undefined;
+  const phones = full ?? initial;
+  const complete = !!full || !src || initial.length >= total;
 
   const q = params.get("q") ?? "";
   const brandParam = params.get("brand") ?? "";
@@ -163,31 +130,15 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
   const stock = params.get("stock") === "1";
   const multi = params.get("multi") === "1";
   const catParam = params.get("cat") ?? "";
-  const sort = (params.get("sort") as Sort) || (q ? "relevance" : "popular");
-  const facetDefs = FACETS[category] ?? [];
-  const facetValue = (p: PhoneSummary, f: (typeof facetDefs)[number]) => {
-    const v = p.facets[f.key];
-    return v ? (f.bucket ? f.bucket(v) : v) : "";
-  };
+  const sortParam = params.get("sort") ?? "";
+  // Only a sort we offer; anything else (?sort=valueOf included) is the default for the view.
+  const sort = isSort(sortParam) ? sortParam : q ? "relevance" : "popular";
+  const defs = facetDefs(category);
   const facetParam = (key: string) => `f.${key.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
   const facetSel = useMemo(
-    () => Object.fromEntries(facetDefs.map((f) => [f.key, params.get(facetParam(f.key))?.split("|").filter(Boolean) ?? []])),
+    () => Object.fromEntries(defs.map((f) => [f.key, params.get(facetParam(f.key))?.split("|").filter(Boolean) ?? []])),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [params, category],
-  );
-  const facetOptions = useMemo(
-    () =>
-      facetDefs.map((f) => {
-        const m = new Map<string, number>();
-        phones.forEach((p) => {
-          const v = facetValue(p, f);
-          if (v) m.set(v, (m.get(v) ?? 0) + 1);
-        });
-        const opts = [...m].sort((a, b) => (parseFloat(a[0]) && parseFloat(b[0]) ? parseFloat(a[0]) - parseFloat(b[0]) : b[1] - a[1]));
-        return { f, opts };
-      }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [phones, category],
   );
 
   const set = (patch: Record<string, string | undefined>) => {
@@ -195,12 +146,6 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
     for (const [k, v] of Object.entries(patch)) v ? next.set(k, v) : next.delete(k);
     router.replace(`${pathname}${next.size ? `?${next}` : ""}`, { scroll: false });
   };
-
-  const allBrands = useMemo(() => {
-    const m = new Map<string, number>();
-    phones.forEach((p) => m.set(p.brand, (m.get(p.brand) ?? 0) + 1));
-    return [...m].sort((a, b) => b[1] - a[1]);
-  }, [phones]);
 
   const results = useMemo(() => {
     let r = q ? search(phones, q, 500) : phones;
@@ -215,16 +160,9 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
         (!stock || p.inStock) &&
         (!multi || p.retailerCount >= 2) &&
         (!catParam || p.category === catParam) &&
-        facetDefs.every((f) => !facetSel[f.key]?.length || facetSel[f.key].includes(facetValue(p, f))),
+        defs.every((f) => !facetSel[f.key]?.length || facetSel[f.key].includes(facetValue(p, f))),
     );
-    const by: Record<string, (a: PhoneSummary, b: PhoneSummary) => number> = {
-      popular: (a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice,
-      "price-asc": (a, b) => a.bestPrice - b.bestPrice,
-      "price-desc": (a, b) => b.bestPrice - a.bestPrice,
-      saving: (a, b) => b.saving - a.saving,
-      newest: (a, b) => b.generation - a.generation || b.bestPrice - a.bestPrice,
-    };
-    return by[sort] ? [...r].sort(by[sort]) : r;
+    return sort === "relevance" ? r : [...r].sort(SORT_FNS[sort]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phones, q, brands, min, max, storage, fold, only5g, stock, multi, sort, facetSel, catParam]);
 
@@ -237,17 +175,47 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
     Object.values(facetSel).reduce((n, v) => n + v.length, 0);
   const isPhone = category === "phones";
 
-  const cats = useMemo(() => {
-    const m = new Map<string, number>();
-    phones.forEach((p) => m.set(p.category, (m.get(p.category) ?? 0) + 1));
-    return [...m];
-  }, [phones]);
+  // The first page of the default view is `initial` itself; anything else needs the full list.
+  const isDefault = !q && !active && sort === "popular";
+  const needAll = !complete && (!isDefault || limit > initial.length);
+  const attempt = `${src}|${needAll}`;
+  useEffect(() => {
+    if (complete || !src || failed === attempt) return;
+    let live = true;
+    const go = () => loadList(src).then(
+      (items) => live && setLoadedCount(items.length),
+      () => live && setFailed(attempt),
+    );
+    if (needAll) {
+      go();
+      return () => {
+        live = false;
+      };
+    }
+    // Otherwise as soon as the page is idle, so the next filter, sort or "Show more" is instant.
+    // (Safari has no requestIdleCallback.)
+    const idle = typeof window.requestIdleCallback === "function";
+    const id = idle ? window.requestIdleCallback(go, { timeout: 4000 }) : window.setTimeout(go, 1500);
+    return () => {
+      live = false;
+      if (idle) window.cancelIdleCallback(id);
+      else window.clearTimeout(id);
+    };
+  }, [src, complete, needAll, failed, attempt]);
+  // A filtered or sorted view shows nothing until the list arrives, so ask while rendering rather
+  // than after the first commit. loadList is idempotent; the effect above takes the answer.
+  if (needAll && src && failed !== attempt && typeof window !== "undefined") loadList(src).catch(() => {});
+  const waiting = needAll && failed !== attempt;
+  const gaveUp = needAll && failed === attempt;
+  /** How many products the view holds, when it's known: the full count for the default view before the list arrives. */
+  const count = complete || gaveUp ? results.length : isDefault ? total : undefined;
+
   const filters = (
     <div className="space-y-7">
-      {showCategory && cats.length > 1 && (
+      {showCategory && options.cats && options.cats.length > 1 && (
         <Group title="Category">
           <div className="flex flex-wrap gap-2">
-            {cats.map(([c, n]) => (
+            {options.cats.map(([c, n]) => (
               <button key={c} className={`chip text-xs ${catParam === c ? "chip-on" : ""}`} onClick={() => set({ cat: catParam === c ? undefined : c })}>
                 {categoryById(c)?.name ?? c} <span className="opacity-60">{n}</span>
               </button>
@@ -258,7 +226,7 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
       {!fixedBrand && (
         <Group title="Brand">
           <div className="flex flex-wrap gap-2">
-            {allBrands.map(([b, n]) => {
+            {(options.brands ?? []).map(([b, n]) => {
               const on = brands.includes(b);
               return (
                 <button key={b} className={`chip text-xs ${on ? "chip-on" : ""}`} onClick={() => set({ brand: (on ? brands.filter((x) => x !== b) : [...brands, b]).join(",") || undefined })}>
@@ -281,10 +249,10 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
           })}
         </div>
       </Group>
-      {facetOptions.filter(({ opts }) => opts.length > 1).map(({ f, opts }) => (
+      {options.facets.map((f) => (
         <Group key={f.key} title={f.label}>
           <div className="flex flex-wrap gap-2">
-            {opts.slice(0, 18).map(([v, n]) => {
+            {f.opts.map(([v, n]) => {
               const sel = facetSel[f.key] ?? [];
               const on = sel.includes(v);
               return (
@@ -323,8 +291,35 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
     </div>
   );
 
+  const grid =
+    waiting && !isDefault ? (
+      <Skeleton />
+    ) : results.length ? (
+      <>
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
+          {results.slice(0, limit).map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} showCategory={showCategory} />)}
+        </div>
+        {(count ?? 0) > limit && (
+          <div className="mt-8 text-center">
+            {waiting ? (
+              <button className="btn-ghost" disabled aria-busy>Loading more…</button>
+            ) : (
+              <button className="btn-ghost" onClick={() => setLimit((l) => l + PAGE_SIZE)}>
+                Show more <span className="text-ink-mute">({((count ?? 0) - limit).toLocaleString()} left)</span>
+              </button>
+            )}
+          </div>
+        )}
+      </>
+    ) : (
+      <div className="card grid place-items-center gap-2 px-6 py-16 text-center">
+        <div className="font-display text-xl font-bold">Nothing matches</div>
+        <p className="text-sm text-ink-mute">Try fewer filters or a different search.</p>
+      </div>
+    );
+
   return (
-    <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
+    <div className="grid gap-8 lg:grid-cols-[260px_1fr]" data-grid-fallback={fallback ? "" : undefined}>
       <aside className="hidden lg:block">
         <div className="sticky top-24">{filters}</div>
       </aside>
@@ -347,7 +342,7 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
               <FilterIcon /> Filters {active > 0 && <span className="rounded-full bg-brand px-1.5 text-[11px] text-white">{active}</span>}
             </button>
             <select
-              value={sort in SORTS ? sort : "popular"}
+              value={sort === "relevance" ? "popular" : sort}
               onChange={(e) => set({ sort: e.target.value === "popular" ? undefined : e.target.value })}
               className="h-11 rounded-xl border border-line bg-bg-card px-3 text-sm font-medium shadow-sm"
               aria-label="Sort"
@@ -356,28 +351,36 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
             </select>
           </div>
         </div>
-        <div className="mb-4 text-sm text-ink-mute">
-          {results.length} {results.length === 1 ? "product" : "products"}
-          {q && <> matching “<span className="text-ink">{q}</span>”</>}
-        </div>
-        {results.length ? (
-          <>
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
-            {results.slice(0, limit).map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} showCategory={showCategory} />)}
-          </div>
-          {results.length > limit && (
-            <div className="mt-8 text-center">
-              <button className="btn-ghost" onClick={() => setLimit((l) => l + 48)}>
-                Show more <span className="text-ink-mute">({(results.length - limit).toLocaleString()} left)</span>
-              </button>
-            </div>
+        <div className="mb-4 text-sm text-ink-mute" role="status">
+          {count === undefined ? (
+            <>Loading all {total} products…</>
+          ) : fallback ? (
+            <>
+              <span data-unfiltered>{count} {count === 1 ? "product" : "products"}</span>
+              <span data-filtered-only>Loading products…</span>
+            </>
+          ) : (
+            <>
+              {count} {count === 1 ? "product" : "products"}
+              {q && <> matching “<span className="text-ink">{q}</span>”</>}
+            </>
           )}
+        </div>
+        {gaveUp && (
+          <div className="card mb-4 flex flex-wrap items-center justify-between gap-3 px-4 py-3 text-sm">
+            <span className="text-ink-soft">Couldn&apos;t load all {total} products, so this only covers the first {initial.length}.</span>
+            <button className="font-semibold text-brand hover:underline" onClick={() => setFailed(null)}>Try again</button>
+          </div>
+        )}
+        {fallback ? (
+          <>
+            <div data-unfiltered>{grid}</div>
+            <div data-filtered-only>
+              <Skeleton />
+            </div>
           </>
         ) : (
-          <div className="card grid place-items-center gap-2 px-6 py-16 text-center">
-            <div className="font-display text-xl font-bold">Nothing matches</div>
-            <p className="text-sm text-ink-mute">Try fewer filters or a different search.</p>
-          </div>
+          grid
         )}
       </div>
 
@@ -389,10 +392,29 @@ export function PhoneBrowser({ phones, fixedBrand, category = "phones", showCate
               <button onClick={() => setPanel(false)} aria-label="Close"><CloseIcon /></button>
             </div>
             {filters}
-            <button className="btn-primary mt-8 w-full" onClick={() => setPanel(false)}>Show {results.length} results</button>
+            <button className="btn-primary mt-8 w-full" onClick={() => setPanel(false)}>{count === undefined ? "Show results" : `Show ${count} results`}</button>
           </div>
         </div>
       )}
+    </div>
+  );
+}
+
+/** Stands in for the grid while a filtered or sorted view waits for the full list. */
+function Skeleton() {
+  return (
+    <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4" aria-hidden>
+      {Array.from({ length: 8 }, (_, i) => (
+        <div key={i} className="card overflow-hidden">
+          <div className="img-tile aspect-square animate-pulse" />
+          <div className="space-y-2 p-4">
+            <div className="h-3 w-1/3 animate-pulse rounded bg-bg-sunk" />
+            <div className="h-4 w-2/3 animate-pulse rounded bg-bg-sunk" />
+            <div className="h-3 w-1/2 animate-pulse rounded bg-bg-sunk" />
+            <div className="h-6 w-2/5 animate-pulse rounded bg-bg-sunk pt-3" />
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

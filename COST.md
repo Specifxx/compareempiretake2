@@ -71,3 +71,15 @@ each renders on its first request and Vercel's CDN keeps it for a day, reset by 
   well above this, shrink the crawl surface (`SITEMAP_TIER`, IndexNow) before anything else.
 - **Each deploy empties the CDN**, and every crawled product then renders once more per CDN region.
   Cheap builds make extra pushes tempting: keep pushes to the production branch batched.
+
+## 2026-10-26: grids, compare and saved load their data separately
+
+`/compare` (19.6 MB) and `/saved` (8.2 MB) no longer embed the catalogue, and category and brand grids send
+one page of 48 (DECISIONS 2026-10-26, "No prerendered page carries a catalogue").
+
+- **`/api/grid/…`** (89 static JSON files, largest 1.84 MB / 264 KB gzipped) are prerendered with the
+  deploy: CDN hits, no function. A category visitor downloads its file once the page is idle, so per-visit
+  transfer is about what the inlined list used to be, but the HTML is 5–15x smaller.
+- **`/api/products`** is a new function: one invocation per distinct query per CDN region per deploy
+  (`Vercel-CDN-Cache-Control: s-maxage=86400`). Only `/compare` and `/saved` call it, and `robots.txt`
+  disallows `/api/`. If it ever shows up as a real share of invocations, look at the query mix first.

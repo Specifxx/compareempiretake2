@@ -194,3 +194,94 @@ instead of all three (~15 KB a page); trimmed `PhoneOffers` props; `preferredReg
 time to first byte on CDN misses; plain `<a>` product links if client-side navigations (whose `_rsc`
 key changes with the page they start from, so they mostly miss the CDN) show up as a large share of
 invocations.
+
+## 2026-10-26: No prerendered page carries a catalogue; grids send one page, the rest is a static file
+
+Vercel refused the production deploy: "ISR page compare is 20.11 MB, over the 20 MB limit"
+(`FALLBACK_BODY_TOO_LARGE`). `/compare` passed every Australian product, whole, to `CompareView`
+(19.55 MB of HTML), `/saved` every summary to `SavedList` (8.2 MB), and every category and brand page its
+whole list to `PhoneBrowser` (`uk/laptops` 3.6 MB, `us/headphones` 2.3 MB, `brands/hp` 785 KB). The
+grids also bailed out to client rendering (`useSearchParams`), so their HTML had no product cards at all.
+
+- **Category and brand grids** (`src/lib/browse.ts`, `PhoneBrowser`): the page sends the first 48
+  products in the default order ("Most compared"), the total, and the filter chips with their counts
+  (computed on the server over the whole list; they never depend on the active filters). The whole list
+  is a static file per region and category, or per brand, with more than 48 products
+  (`/api/grid/<region>/<category>`, `/api/grid/brands/<brand>`: `force-static`, `dynamicParams = false`,
+  89 files, the largest `uk/laptops` at 1.84 MB, 264 KB gzipped). `PhoneBrowser` loads it on
+  `requestIdleCallback` (a timeout in Safari), or at once when someone filters, sorts, searches or presses
+  "Show more"; until then a filtered view shows a skeleton and "Loading all N products…", and if the file
+  can't be loaded it says so, filters what it has, and offers "Try again". URL filters and deep links
+  (`/phones?max=500`, `/brands/hp?cat=laptops`) work as before. The file is trimmed to what the grid
+  reads (no slug, offer count or top price, only the category's own filter facets, false flags left out),
+  with `category`, `region` and the brand-plus-model `name` sent once (`packGrid`/`unpackGrid`, about a
+  quarter smaller). Its URL carries `?v=<GRID_FORMAT>.<import time>.<commit>`, so a browser never mixes a
+  cached list with newer data or code; bump `GRID_FORMAT` when the file's shape changes.
+- **The first page is in the HTML now.** `PhoneBrowser` wraps the `useSearchParams()` half in Suspense
+  with the same grid, unfiltered, as its fallback, so the static HTML carries the toolbar, the filters and
+  48 product cards with their links, for crawlers and for the first paint; the browser then renders the
+  real thing over it. Layout shift on category and brand pages fell from 0.56–0.62 to 0 (local Chromium),
+  and the compressed `/laptops` document from 164 KB to 28.5 KB. Small grids (48 or fewer) have no file.
+  `robots.txt` already disallows `/api/`, so crawlers that obey it never fetch the lists; they see the same
+  48 cards a visitor's first screen shows.
+- **`/compare` and `/saved` pass nothing.** `CompareView` fetches the chosen products from
+  `/api/products?p=<path>,<path>` and searches the region's `/search-index.json` (loaded on focus, as the
+  header search does) to add one. `SavedList` asks for `&view=summary`, in requests of at most 50 paths and
+  6,000 characters (the list holds 100). `/compare/[pair]` pages were already server components with their
+  two products. Both also work for US and UK products now: before, a `/us/…` path in the tray or saved list
+  matched nothing on these Australian-only pages.
+- **`/api/products` is a function, cached like a product page**: `force-dynamic`, `Cache-Control: public,
+  max-age=300`, `Vercel-CDN-Cache-Control: public, s-maxage=86400, stale-while-revalidate=86400`, so each
+  distinct query is rendered once per CDN region per deploy. Input is checked strictly
+  (`src/lib/product-refs.ts`): each path must match `^(/(us|uk))?/<category id>/[a-z0-9-]+$`, at most 50 and
+  6,000 characters; anything else is a 400 with `no-store` and one of four fixed messages, never the input.
+  Unknown paths are left out of the answer. The browser sorts and deduplicates the paths so one set is one
+  CDN key. It throws (a 500, never cached) if a region it was asked about has no catalogue, like
+  ProductView. It traces the catalogues (`outputFileTracingIncludes`), and `tests/routes.test.ts` now
+  expects exactly the product routes, `/api/products` and `/admin` to.
+- **`/brands`** (674 KB, of which 404 KB was the RSC copy of every card's element tree) draws its cards
+  in a small client component, `BrandList`, given one row per brand: identical markup, 394 KB.
+- **A filtered deep link never paints the wrong products.** The prerendered fallback is the unfiltered
+  first page, so `/phones?max=500` used to show 210 products and $2,000 phones until hydration. The root
+  layout's head script (beside the theme one) adds `html.gq` when `location.search` carries a grid key
+  (`q`, `brand`, `min`, `max`, `storage`, `fold`, `5g`, `stock`, `multi`, `cat`, `f.*`, or a `sort` other
+  than `popular`), and `globals.css` then shows the fallback's skeleton and "Loading products…" in place of
+  its cards and count (`[data-grid-fallback]`, `[data-unfiltered]`, `[data-filtered-only]`). Crawlers and
+  visitors without JavaScript never get the class, so they still see the 48 cards; a test checks the
+  script's keys against every `params.get()` in `PhoneBrowser`. A view that needs the whole list also asks
+  for it while rendering rather than after the first commit. With a 4x slower CPU, `/phones?max=500` now goes
+  skeleton → "87 products" with layout shift 0.0008.
+- **The compare tray keeps one region and one category** (`compareGroup` in `product-refs.ts`: `"us/tvs"`).
+  The old guard split the path on "/", so every US or UK product counted as the category "us" or "uk", and
+  a US TV could join US headphones once `/compare` rendered US products. `CompareView` also keeps only the
+  first product's region and category from a hand-made or old link (its rows, currency and search are that
+  product's) and keys columns by path, since a slug can exist in two regions.
+- **Smaller fixes from review.** `?sort=` takes only the sorts we offer (`isSort`, own keys only):
+  `?sort=valueOf` used a built-in as the comparator and crashed the grid. `/saved` says "Couldn't load N
+  saved products. Try again" when one of a big list's requests fails, rather than quietly showing the rest.
+  A failed product fetch is retried when its page mounts again; before, it stayed failed for the visit.
+- **The build checks its own output** (`scripts/check-prerender-size.mjs`, run by `npm run build` after
+  `next build`, and `npm run check:size`): it lists the 15 largest `.html`, `.rsc` and `.body` files in
+  `.next/server/app`, warns over 1 MB of HTML or 2 MB of anything else, and fails over 15 MB, a quarter under
+  Vercel's limit (Vercel counted `/compare` as 20.11 MB against a 19.55 MB file). A failed build leaves the
+  last deploy live, as Vercel's refusal does, but says which file and why. It fails only near the limit,
+  not at the warning sizes, because a failed daily build also holds back that day's prices.
+
+Measured locally (`next build`, about 40 s): 846 HTML pages, the largest now `/brands` (394 KB), then
+`/uk/deals` and `/deals` (~355 KB); category pages 83–254 KB (median 211 KB), none over 300 KB; nothing
+over 600 KB. Before, 17 were over 600 KB and 10 over 1 MB. Total prerendered HTML 139.6 → 102.3 MB.
+`/compare` 19.55 MB → 45 KB, `/saved` 8.2 MB → 47 KB, `uk/laptops` 3.6 MB → 223 KB, `brands/hp` 785 KB → 185
+KB. Small grids grew (`brands/hyperx` 81 → 181 KB) because their cards are now in the HTML. Every
+prerendered page's title, meta tags, canonical, hreflang, JSON-LD and h1 are byte-identical to the
+previous build. `tests/client-data.test.ts` pins the endpoint's input rules and answers (run against the
+real route with today's data), the list files, the first page matching the default order, and that no
+server component passes a loader's product list to a client component except through `gridProps`.
+
+Follow-ups: the search index is the next file to watch, a single prerendered body like these
+(`uk/search-index.json` 4.8 MB, AU 3.4 MB) that grows with the catalogue toward the same 20 MB limit (the
+build's size check warns about both today); split it per category or trim its entries before uk passes
+about 10 MB. Brand pages key on a lower-cased slug while `getBrands()` groups by the raw name, so 20
+brands that differ only in case (BlueAnt/Blueant/BLUEANT) share one URL that shows only the largest
+variant; group by slug, or normalise brand case at import. The root layout still sends the nav and
+footer for all three regions (~15 KB a page); one region's would need region layouts or route groups,
+not worth the restructure on its own.

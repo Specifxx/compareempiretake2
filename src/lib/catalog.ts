@@ -1,6 +1,7 @@
 import "server-only";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
+import { dataVersion } from "./browse";
 import { CATEGORIES } from "./categories";
 import { storageLabel } from "./normalize";
 import { priceCheck, wasCheck, type PriceCheck, type WasCheck } from "./price-check";
@@ -45,6 +46,12 @@ const regionOfProduct = (p: Phone): RegionId => p.region ?? "au";
 
 /** When the region's prices were last imported: the same value as getCatalog(undefined, region).updatedAt, without scanning every offer. */
 export const regionUpdatedAt = (region: RegionId = "au") => data(region).updated;
+
+/**
+ * Stamps a grid list's URL (gridProps in lib/browse.ts): the region's import time and the deploy's
+ * commit, so a browser never reuses a cached list across a data or a code change.
+ */
+export const gridVersion = (region: RegionId = "au") => [dataVersion(data(region).updated), process.env.VERCEL_GIT_COMMIT_SHA?.slice(0, 7)].filter(Boolean).join(".");
 
 /** Categories that actually have products today. */
 export const activeCategories = (region: RegionId = "au") => CATEGORIES.filter((c) => (data(region).loaded.get(c.id as CategoryId)?.catalog.phones.length ?? 0) > 0);

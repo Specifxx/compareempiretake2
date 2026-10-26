@@ -1,12 +1,16 @@
 "use client";
+import { compareGroup } from "@/lib/product-refs";
 import { compare } from "@/lib/store";
 import { CheckIcon, CompareIcon } from "./icons";
 
 export function CompareToggle({ slug, block }: { slug: string; block?: boolean }) {
   const list = compare.use();
   const on = list.includes(slug);
-  const catOf = (x: string) => (x.startsWith("/") ? x.split("/")[1] : "phones");
-  const otherCategory = !on && list.length > 0 && catOf(list[0]) !== catOf(slug);
+  // One region and category at a time ("us/tvs"): the compare table's rows and prices are its first product's.
+  const first = list.map(compareGroup).find((g): g is string => !!g);
+  const mine = compareGroup(slug);
+  const otherCategory = !on && !!first && first !== mine;
+  const otherRegion = otherCategory && first?.split("/")[0] !== mine?.split("/")[0];
   const full = (!on && list.length >= compare.max) || otherCategory;
   return (
     <button
@@ -16,7 +20,15 @@ export function CompareToggle({ slug, block }: { slug: string; block?: boolean }
         if (!full) compare.toggle(slug);
       }}
       disabled={full}
-      title={otherCategory ? "Your compare list has a different category — clear it first" : full ? `Compare up to ${compare.max} products` : undefined}
+      title={
+        otherRegion
+          ? "Your compare list has products from another country — clear it first"
+          : otherCategory
+            ? "Your compare list has a different category — clear it first"
+            : full
+              ? `Compare up to ${compare.max} products`
+              : undefined
+      }
       className={
         block
           ? `btn-ghost ${on ? "!border-brand text-brand" : ""}`

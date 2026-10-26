@@ -84,7 +84,8 @@ test("routes rendered on request trace the catalogues, never raw, history or arc
   const traced = (route: string, map: Record<string, string[]>) =>
     Object.entries(map).flatMap(([glob, files]) => (picomatch(glob, { dot: true, contains: true })(route) ? files : []));
   const entries = walk(APP).filter((f) => /\/(page|route)\.(tsx?|jsx?)$/.test(f)).map((f) => rel(f).replace(/^src\//, "").replace(/\.[jt]sx?$/, ""));
-  const runtime = [...PRODUCT_PAGES.map((f) => f.replace(/^src\//, "").replace(/\.tsx$/, "")), "app/admin/page"];
+  // /api/products is a function too (the compare table and saved list); the /api/grid lists are static and trace nothing.
+  const runtime = [...PRODUCT_PAGES.map((f) => f.replace(/^src\//, "").replace(/\.tsx$/, "")), "app/api/products/route", "app/admin/page"];
   for (const e of runtime) assert.ok(entries.includes(e), `${e} exists`);
   const DATA = ["catalog.json", "series.json", "store-series.json", "ebay.json"].map((f) => `./data/**/${f}`);
   const EXCLUDED = ["./data/**/archive/**", "./data/**/history/**", "./data/**/raw/**"];
@@ -102,7 +103,8 @@ test("routes rendered on request trace the catalogues, never raw, history or arc
 });
 
 test("nothing a cached page renders reads the request", () => {
-  const starts = ["src/app/layout.tsx", "src/views/ProductView.tsx", ...PRODUCT_PAGES];
+  // /api/products is CDN-cached by its URL, so it may read the query string and nothing else.
+  const starts = ["src/app/layout.tsx", "src/views/ProductView.tsx", ...PRODUCT_PAGES, "src/app/api/products/route.ts"];
   const seen = new Set<string>();
   const resolve = (from: string, spec: string): string | undefined => {
     const base = spec.startsWith("@/") ? path.join(SRC, spec.slice(2)) : path.resolve(path.dirname(from), spec);
@@ -129,16 +131,20 @@ test("every link to a product page has prefetch={false}", () => {
   // A prefetched product link is a function invocation each time it scrolls into view.
   const files = sourceFiles.filter((f) => /^src\/(components|views|app)\//.test(rel(f)) && f.endsWith(".tsx"));
   let n = 0;
+  const seen = new Set<string>();
   for (const f of files) {
     const s = readFileSync(f, "utf8");
     // The whole opening tag, which may span lines; "=>" inside handlers doesn't close it.
     for (const m of s.matchAll(/<Link\b(?:=>|[^>])*>/g)) {
-      if (!/\.category\}\/\$\{|\b[pr]\.href\b/.test(m[0])) continue;
+      if (!/\.category\}\/\$\{|\b[pr]\.href\b|\b(?:hrefOf|productHref)\(/.test(m[0])) continue;
       n++;
+      seen.add(rel(f));
       assert.match(m[0], /prefetch=\{false\}/, `${rel(f)}: ${m[0].slice(0, 120)}`);
     }
   }
   assert.ok(n >= 10, `found ${n} product links`);
+  // The compare table builds its links with hrefOf(p) (region prefix included).
+  assert.ok(seen.has("src/components/CompareView.tsx"), "CompareView's product links are checked");
 });
 
 test("a product route that cannot read its data fails with a 500, not a cached 404", () => {

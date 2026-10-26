@@ -1,14 +1,15 @@
 "use client";
 import { useEffect, useState } from "react";
 import type { SearchEntry } from "@/components/SearchBox";
-import { withRegion } from "./region";
+import { withRegion, type RegionId } from "./region";
 import { useRegion } from "./use-region";
 
 const caches = new Map<string, Promise<SearchEntry[]>>();
 
-/** The search index, loaded once per visit when a search box first needs it. */
-export function useSearchIndex(active: boolean): SearchEntry[] | null {
-  const region = useRegion();
+/** The search index, loaded once per visit when a search box first needs it: the page's region's, or `of`'s. */
+export function useSearchIndex(active: boolean, of?: RegionId): SearchEntry[] | null {
+  const here = useRegion();
+  const region = of ?? here;
   const [loaded, setLoaded] = useState<{ region: string; items: SearchEntry[] } | null>(null);
   const items = loaded?.region === region ? loaded.items : null;
   useEffect(() => {

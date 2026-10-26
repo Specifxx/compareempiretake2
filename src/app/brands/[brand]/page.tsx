@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import { PhoneBrowser } from "@/components/PhoneBrowser";
-import { getBrands, getSummaries } from "@/lib/catalog";
+import { gridProps, gridSrc } from "@/lib/browse";
+import { getBrands, getSummaries, gridVersion } from "@/lib/catalog";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -31,9 +31,8 @@ export default async function BrandPage({ params }: { params: Promise<{ brand: s
       <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{brand.brand}</h1>
       <p className="mt-2 text-ink-mute">{phones.length} {brand.brand} products across {brand.categories.length} {brand.categories.length === 1 ? "category" : "categories"}, from ${brand.from.toLocaleString("en-AU")}.</p>
       <div className="mt-8">
-        <Suspense>
-          <PhoneBrowser phones={phones} fixedBrand={brand.brand} category="all" showCategory />
-        </Suspense>
+        {/* The first page only; the full list is a static file the browser loads (lib/browse.ts). */}
+        <PhoneBrowser key={brand.slug} {...gridProps(phones, "all", { brands: false, cats: true, src: gridSrc.brand(brand.slug), version: gridVersion() })} fixedBrand={brand.brand} category="all" showCategory />
       </div>
     </div>
   );

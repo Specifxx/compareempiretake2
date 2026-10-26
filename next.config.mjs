@@ -10,8 +10,8 @@ const HAS_UA = [{ type: "header", key: "user-agent", value: ".+" }];
 // if a CDN ever keyed one under the page's URL, every visitor would get raw flight data instead of the page.
 // Those requests mostly miss anyway, because their `_rsc` key changes with the page they start from.
 const NOT_RSC = [{ type: "header", key: "rsc" }];
-// What the routes that render on request (product pages and /admin, through the root layout) read at runtime
-// (src/lib/catalog.ts). Never the scrape inputs, history or archive.
+// What the routes that render on request (product pages, /api/products and /admin, through the root layout) read at
+// runtime (src/lib/catalog.ts). Never the scrape inputs, history or archive.
 const RUNTIME_DATA = ["./data/**/catalog.json", "./data/**/series.json", "./data/**/store-series.json", "./data/**/ebay.json"];
 
 /** @type {import('next').NextConfig} */
@@ -28,7 +28,8 @@ const nextConfig = {
   htmlLimitedBots: /./,
   // Keys are picomatch globs over route names (brackets escaped) that also match inside a name: the first covers
   // /[category]/[slug], /us/[category]/[slug] and /uk/[category]/[slug]; "/admin" also catches the small /api/admin routes.
-  outputFileTracingIncludes: { "/\\[category\\]/\\[slug\\]": RUNTIME_DATA, "/admin": RUNTIME_DATA },
+  // The /api/grid lists are prerendered with the deploy and served as files, so they trace nothing.
+  outputFileTracingIncludes: { "/\\[category\\]/\\[slug\\]": RUNTIME_DATA, "/api/products": RUNTIME_DATA, "/admin": RUNTIME_DATA },
   outputFileTracingExcludes: { "/**": ["./data/**/raw/**", "./data/**/history/**", "./data/**/archive/**"] },
   async headers() {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.
