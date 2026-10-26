@@ -73,7 +73,7 @@ export function HomeView({ region }: { region: RegionId }) {
 
       {example && (
         <section className="container-x -mt-4 mb-10">
-          <Link href={`${to(`/${example.phone.category}/${example.phone.slug}`)}?v=${example.variant.id}`} className="mx-auto flex max-w-3xl flex-col items-stretch gap-4 rounded-3xl border border-line bg-bg-card p-4 shadow-card transition hover:shadow-lift sm:flex-row sm:items-center">
+          <Link href={`${to(`/${example.phone.category}/${example.phone.slug}`)}?v=${example.variant.id}`} prefetch={false} className="mx-auto flex max-w-3xl flex-col items-stretch gap-4 rounded-3xl border border-line bg-bg-card p-4 shadow-card transition hover:shadow-lift sm:flex-row sm:items-center">
             <div className="flex items-center gap-4">
               <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-2xl">
                 {example.phone.image && <img src={example.phone.image} alt="" className="product-img h-full w-full object-contain p-2" />}

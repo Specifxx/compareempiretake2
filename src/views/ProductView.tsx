@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { PhoneCard } from "@/components/PhoneCard";
 import { PhoneOffers } from "@/components/PhoneOffers";
 import { PriceChart } from "@/components/PriceChart";
-import { checkVariant, getCatalog, getProduct, getProducts, getVsPairs, similarPhones, summarise, activeCategories, productHref, categoryHref } from "@/lib/catalog";
+import { checkVariant, getProduct, getProducts, getVsPairs, regionUpdatedAt, similarPhones, summarise, productHref, categoryHref } from "@/lib/catalog";
 import { money, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById } from "@/lib/categories";
 import type { CategoryId, Phone } from "@/lib/types";
@@ -15,11 +15,6 @@ import { SITE } from "@/lib/site";
 import { ogImage } from "@/lib/og";
 import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
-
-/** Every product page in a region, for generateStaticParams. */
-export function productParams(region: RegionId) {
-  return activeCategories(region).flatMap((c) => getProducts(c.id as CategoryId, region).map((p) => ({ category: c.id, slug: p.slug })));
-}
 
 export type ProductParams = Promise<{ category: string; slug: string }>;
 const load = async (params: ProductParams, region: RegionId) => {
@@ -84,7 +79,13 @@ function shareCard(p: Phone) {
 
 export async function ProductView({ params, region }: { params: ProductParams; region: RegionId }) {
   const phone = await load(params, region);
-  if (!phone) notFound();
+  if (!phone) {
+    // No products at all in the region means this function could not read its data files (tracing in
+    // next.config.mjs, or the working directory), not an unknown slug. Fail with a 500, which the CDN
+    // doesn't keep, rather than a 404 it would keep for a day on all ~28,000 product URLs.
+    if (!getProducts(undefined, region).length) throw new Error(`No ${region} catalogue at runtime: data/ was not read`);
+    notFound();
+  }
   const checks = Object.fromEntries(phone.variants.map((v) => [v.id, checkVariant(phone, v)]));
   const chart = Object.fromEntries(
     phone.variants.map((v) => [
@@ -98,7 +99,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
   const similar = similarPhones(phone).map(summarise);
   const vs = phone.category === "phones" && region === "au" ? getVsPairs().filter((v) => v.a.slug === phone.slug || v.b.slug === phone.slug) : [];
   const cat = categoryById(phone.category)!;
-  const { updatedAt } = getCatalog(undefined, region);
+  const updatedAt = regionUpdatedAt(region);
   const R = REGIONS[region];
   const s = phone.specs;
   const specs: [string, string | undefined][] =

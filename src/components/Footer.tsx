@@ -2,9 +2,12 @@ import { activeCategories, categoryHref, getCatalog, liveRegions } from "@/lib/c
 import { REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { FooterBody, type FooterData } from "./FooterBody";
 
+// Computed once per server process: the data only changes with a deploy.
+let cached: Partial<Record<RegionId, FooterData>> | undefined;
+
 /** Footer copy and links for every live region; the client half picks the one being viewed. */
 export function Footer() {
-  const data = Object.fromEntries(
+  const data = (cached ??= Object.fromEntries(
     liveRegions().map((region): [RegionId, FooterData] => {
       const { retailers, updatedAt, phones } = getCatalog(undefined, region);
       const R = REGIONS[region];
@@ -15,6 +18,7 @@ export function Footer() {
           stores: retailers.length,
           products: phones.length,
           checked: `${new Date(updatedAt).toLocaleString(R.locale, { timeZone: R.timeZone, day: "numeric", month: "short", year: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" })}`,
+          year: Number(new Date(updatedAt).toLocaleDateString("en-CA", { timeZone: R.timeZone }).slice(0, 4)),
           shop:
             region === "au"
               ? [["All phones", "/phones"], ["Today's deals", "/deals"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"], ["Browse all products", "/browse"]]
@@ -23,6 +27,6 @@ export function Footer() {
         },
       ];
     }),
-  );
+  ));
   return <FooterBody data={data} />;
 }

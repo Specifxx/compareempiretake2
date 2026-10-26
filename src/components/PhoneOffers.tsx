@@ -223,7 +223,7 @@ export function PhoneOffers({
           </ol>
           {phone.ebay && (
             <div className="mt-2.5">
-              <EbayListingRow listing={phone.ebay} product={href} money={$} cheapest={best?.price} locale={R.locale} />
+              <EbayListingRow listing={phone.ebay} product={href} money={$} cheapest={best?.price} locale={R.locale} timeZone={R.timeZone} />
             </div>
           )}
           {region === "au" && (

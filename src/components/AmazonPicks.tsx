@@ -24,10 +24,10 @@ export function AmazonPicks({ category, limit = 8, title }: { category?: Categor
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         {picks.map((p) => (
           <div key={p.href} className="card flex flex-col p-3">
-            <Link href={p.href} className="img-tile grid aspect-square place-items-center overflow-hidden rounded-xl">
+            <Link href={p.href} prefetch={false} className="img-tile grid aspect-square place-items-center overflow-hidden rounded-xl">
               {p.image && <img src={p.image} alt="" loading="lazy" className="product-img h-full w-full object-contain p-3" />}
             </Link>
-            <Link href={p.href} className="mt-2 line-clamp-2 text-sm font-semibold leading-snug hover:text-brand">{p.name}</Link>
+            <Link href={p.href} prefetch={false} className="mt-2 line-clamp-2 text-sm font-semibold leading-snug hover:text-brand">{p.name}</Link>
             <div className="mt-1 text-xs text-ink-mute">
               Best elsewhere: <b className="text-ink">${Math.round(p.bestPrice).toLocaleString("en-AU")}</b> at {p.retailerCount} stores
             </div>

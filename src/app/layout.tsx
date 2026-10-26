@@ -63,9 +63,17 @@ function navDepartments(region: RegionId): NavDepartment[] {
   })).filter((d) => d.categories.length);
 }
 
+// Computed once per server process: the data only changes with a deploy. Every page, including
+// the product pages rendered on request, would otherwise rebuild the nav for every region.
+let chrome: { regions: RegionId[]; nav: Record<string, NavDepartment[]> } | undefined;
+const getChrome = () =>
+  (chrome ??= (() => {
+    const regions = liveRegions();
+    return { regions, nav: Object.fromEntries(regions.map((region) => [region, navDepartments(region)])) };
+  })());
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const regions = liveRegions();
-  const nav = Object.fromEntries(regions.map((region) => [region, navDepartments(region)]));
+  const { regions, nav } = getChrome();
   return (
     <html lang="en-AU" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
       <head>

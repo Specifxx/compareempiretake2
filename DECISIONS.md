@@ -86,3 +86,111 @@ Product pages gained a price summary (cheapest, range, options, lowest recorded,
 category "Before you buy" tips, a data-driven FAQ, and BreadcrumbList and FAQPage JSON-LD; product
 names that repeat in a region get their model code in the title. Category pages gained a buying guide,
 price range, top brands and an FAQ. No ratings or reviews are marked up: we have none of our own.
+
+## 2026-10-26: Product pages render on request, held by Vercel's CDN; the build prerenders hubs only
+
+Deploys took 13–17 minutes and grew with the catalogue (1m10s at 3.9k products on 22 Oct, about
+4 min at 10k). `next build` prerendered 29,065 pages; 28,204 were product pages (97%), holding 3.5 of
+the 3.94 GB of output, and Vercel then uploaded about 87,000 files. About half of each page's render
+was the root layout and Footer rebuilding the nav and footer data for all three regions.
+
+The three product routes (`src/app/[category]/[slug]`, `us/…`, `uk/…`) are now `force-dynamic`: a
+product page renders on its first request and Vercel's CDN keeps that copy for a day
+(`Vercel-CDN-Cache-Control: public, s-maxage=86400, stale-while-revalidate=86400`, from
+`next.config.mjs`; browsers still get `private, no-store`). Every deploy starts a fresh CDN cache, so a
+copy never outlives the data it was rendered from: Vercel's cache key includes the unique deployment
+URL (Vercel docs, "Purging Vercel CDN Cache", Cache keys), which also means a cached page only ever
+references its own deployment's `/_next/static` chunks. Every other page is prerendered exactly as before,
+with `dynamicParams = false`. Measured locally (4 vCPU, cold): 861 pages instead of 29,065,
+`.next/server/app` 0.25 GB instead of 3.94 GB (2,738 files instead of 87,350), `next build` 1m08s
+instead of 9m14s. Vercel deploys should take about 2–3 min; confirm it from the first one.
+
+The rule: product pages are functions cached at the CDN, and nothing is ISR. No `revalidate`, no
+`generateStaticParams` on the product routes, no `unstable_cache`, no middleware, and no data or
+workflow change. Not ISR because on-demand ISR would write every crawled product page, and every 404
+probe, into the ISR cache once per deploy, and ISR writes were the largest Vercel line on the owner's
+other sites. `tests/routes.test.ts` pins it: product routes force-dynamic, every other `[param]` route
+`dynamicParams = false`, no `revalidate` or `unstable_cache` in `src/`, the exact header rules and
+tracing, nothing in the cached tree reading the request, and `prefetch={false}` on product links.
+
+- **Header sources** are `/:category(<CATEGORY_IDS>)/:slug` and `/:region(us|uk)/:category(<CATEGORY_IDS>)/:slug`,
+  never a bare `/:a/:b`, which would CDN-cache `GET /api/reviews`, `/api/alerts` and the other API
+  routes. A new category must be added to `CATEGORY_IDS`; the test fails until it is. A bogus slug in a
+  real category is a cached 404; other two-segment junk (`/wp-admin/x.php`) is an uncached function 404.
+  The rules also need the request to have no `RSC` header (`missing: rsc`): only the HTML document is
+  cached, never an RSC payload. Vercel's key already honours Next's `Vary: rsc, …`, so this is a
+  backstop against one flight payload being served for a product URL for a day. Client navigations
+  lose little by it, since their `_rsc` key changes with the page they start from.
+- **These 404s have an empty body without JavaScript.** A `notFound()` in a page rendered on request
+  escapes React's server shell, so Next sends its error shell (`<html id="__next_error__">`): status
+  404 and the not-found head (title, `noindex`), but the header, "We couldn't find that page" and the
+  footer are drawn in the browser from the inlined RSC data. Before, unknown product URLs got the
+  prerendered `_not-found` page (about 13 KB of markup). This covers product URLs that drop out of the
+  daily data and every unknown two-segment path. Accepted: status and `noindex` are right, so search
+  is unaffected, and visitors with JavaScript see the full page. Not a `loading.tsx` or Suspense above
+  `notFound()`, which would make these soft 200s, nor a redirect to the category page; a 404 that works
+  without JavaScript would need an edge check before the function, which isn't worth an invocation on
+  every request.
+- **Missing data fails as a 500, never a cached 404.** `catalog.ts` treats a missing catalogue as an
+  empty category, so a function bundle without its traced data would 404 every product URL, and the CDN
+  would keep those for a day while the build stays green. ProductView throws instead when the region
+  has no products at all; Vercel's CDN caches only 200, 404, 410 and redirects, never a 500. (Next's
+  own trace of `catalog.ts` already lists the catalogues for every page that imports it, product routes
+  included; `outputFileTracingIncludes` adds them to `/admin`, which reads them only through the root
+  layout, and makes the product routes independent of that.)
+- **`htmlLimitedBots: /./`** makes metadata block, in `<head>`, for every user agent, so the one cached
+  copy suits every crawler. With no user agent at all Next streams the metadata into `<body>` anyway,
+  so the CDN header is only added when the request has one (`has: user-agent .+`): that render is
+  served but never cached.
+- **`prefetch={false}`** on every `<Link>` to a product page (cards, deal cards, Amazon picks, compare,
+  guides, browse, home, search results, the alert page): a prefetched product link is a function
+  invocation each time it scrolls into view, 48 per grid and 200 per browse page. The `<a>` markup is
+  unchanged; hub pages differ from before only by `"prefetch":false` in their RSC payload.
+- **The offer table now renders on the server.** `PhoneOffers` (`useSearchParams` inside Suspense)
+  bailed out to client rendering in the static HTML; product HTML now carries the h1, store rows and
+  price check (iPhone 17 Pro: 104 KB → 136 KB). The eBay row's "checked" date formats in the region's
+  time zone, so the server (UTC) and the visitor's browser agree, and `shortDate` (price check card and
+  texts) takes its "this year" from the catalogue's day, not the clock, so a copy cached over New Year
+  hydrates without a mismatch.
+- **In-process memo.** The root layout's nav, the Footer's data and `getVsPairs()` are computed once
+  per server process (the data only changes with a deploy), and ProductView reads `regionUpdatedAt()`
+  instead of `getCatalog(undefined, region)`, which scanned every offer. Warm product renders take about
+  14 ms; a cold instance first parses about 53 MB of JSON (0.55 s locally, ~300 MB RSS).
+- **Tracing.** `outputFileTracingIncludes` lists the catalogues for the product routes and `/admin`,
+  whose root layout read them but traced none; `raw/`, `history/` and `archive/` are excluded
+  everywhere. The test matches the keys exactly as `collect-build-traces` does, against
+  `normalizeAppPath(entryName)` (`/app/[category]/[slug]`, `/app/admin`; the root is `/app`).
+  `scripts/vercel-ignore-build.sh` now also skips pushes that touch only those folders (backfills), and
+  judges everything since the last successful deploy (`VERCEL_GIT_PREVIOUS_SHA`, falling back to
+  `HEAD^`), so a docs commit on top of a code commit no longer skips the code
+  (`tests/vercel-ignore-build.test.ts`); `tests/` and `scripts/` still build, because `next build`
+  typechecks them.
+- **A product render bug is now a runtime 500, not a failed build.** After any change to ProductView
+  or what it renders, crawl every product URL against `next start` and compare heads with the
+  prerendered pages. For this change all 28,204 returned 200 with title, meta, canonical, hreflang and
+  JSON-LD identical to the prerendered ones, Googlebot and Bingbot got them in `<head>`, and UTC and
+  Sydney servers returned byte-identical product HTML.
+
+Check after the first deploy, and again after the next daily data deploy (none can be run locally):
+
+- `curl -sI` one AU, one US and one UK product twice: `x-vercel-cache` MISS then HIT, `age` counting
+  up. After the next data deploy the same URLs must be MISS again with `age` reset. Vercel documents
+  this (the deployment is part of the cache key); if a copy ever survived a deploy, visitors would get
+  yesterday's prices and chunk hashes the new deployment no longer serves: turn on Skew Protection and
+  lower `s-maxage`, or purge the CDN from `refresh-prices.yml` after the deploy.
+- `curl -sI -H 'RSC: 1'` a product twice, then the same URL without it: the last must be `text/html`.
+- Usage → Functions (invocations, Active CPU) and Fast Origin Transfer a week in (COST.md). Confirm the
+  plan: on Hobby (1M invocations, 4 h Active CPU, 10 GB Fast Origin Transfer a month) a daily crawl of
+  ~24,000 long-tail product URLs is close to the limits. If so, shrink the crawl surface (sitemap tier,
+  IndexNow) or the cold start; don't reintroduce ISR.
+
+Rollback: `git revert` the commit; full prerendering returns with no data or URL change.
+
+Follow-ups, none of which moves deploy time: a `data/summary.json` plus per-category lazy loading in
+`catalog.ts` to cut the cold-start parse from 53 MB to about 2.5 MB (needs an equality test for
+`updatedAt`, region-wide duplicate names and brand order); slimmer `/compare` (19.6 MB HTML), `/saved`
+(8.2 MB) and category grid payloads; one region's nav and footer per page, or a lazily loaded nav,
+instead of all three (~15 KB a page); trimmed `PhoneOffers` props; `preferredRegion` for Australian
+time to first byte on CDN misses; plain `<a>` product links if client-side navigations (whose `_rsc`
+key changes with the page they start from, so they mostly miss the CDN) show up as a large share of
+invocations.

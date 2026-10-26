@@ -29,7 +29,8 @@ export function PriceCheckCard({ check, onOpenHistory }: { check: PriceCheck; on
       <div className="w-24 shrink-0 sm:w-28">
         <Sparkline points={check.points} tone={t.tone} className="h-12 w-full" />
         <div className="mt-1 flex justify-between text-[9px] text-ink-mute">
-          <span>{shortDate(check.points[0][0])}</span>
+          {/* The last point is always the catalogue's day (priceCheck), so the year doesn't depend on the clock. */}
+          <span>{shortDate(check.points[0][0], check.points.at(-1)![0])}</span>
           <span>today</span>
         </div>
       </div>

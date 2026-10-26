@@ -8,7 +8,7 @@ import { money, withRegion } from "@/lib/region";
 
 export function DealCard({ d, rank }: { d: Deal; rank?: number }) {
   return (
-    <Link href={`${withRegion(`/${d.phone.category}/${d.phone.slug}`, d.phone.region ?? "au")}?v=${d.variant.id}`} className="card group flex gap-4 p-3 transition hover:shadow-lift sm:p-4">
+    <Link href={`${withRegion(`/${d.phone.category}/${d.phone.slug}`, d.phone.region ?? "au")}?v=${d.variant.id}`} prefetch={false} className="card group flex gap-4 p-3 transition hover:shadow-lift sm:p-4">
       <div className="img-tile relative grid h-24 w-24 shrink-0 place-items-center overflow-hidden rounded-xl sm:h-28 sm:w-28">
         {d.offer.image || d.phone.image ? (
           <img src={d.offer.image ?? d.phone.image} alt={d.phone.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />

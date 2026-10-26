@@ -15,7 +15,8 @@ Price comparison for Australia, starting with mobile phones. Live at compareempi
    (`src/lib/normalize.ts`), drops refurbished/carrier-locked/outlier listings, writes
    `data/catalog.json`, today's snapshot to `data/phones/history/<date>.json` and the chart
    series to `data/series.json`.
-3. `next build` — prerenders every phone, brand and listing page from those files.
+3. `next build` prerenders the home, category, brand, deal, browse, compare and guide pages;
+   product pages render on their first request and Vercel's CDN keeps them until the next deploy.
    No database.
 
 `.github/workflows/refresh-prices.yml` runs steps 1–2 every morning and commits the

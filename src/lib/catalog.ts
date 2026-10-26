@@ -10,8 +10,9 @@ import type { Catalog, CategoryId, Offer, Phone, Retailer, RetailerId, StoreSeri
 
 /**
  * Every live category's data/<id>/*.json (data/<region>/<id> outside Australia), read once per
- * region at build time. Pages are prerendered, so nothing here runs per request. Each product
- * carries its region, so product-level helpers (href, series, price check) need no extra argument.
+ * server process: at build time for prerendered pages, and on the first request for product pages,
+ * which render on demand. Each product carries its region, so product-level helpers (href, series,
+ * price check) need no extra argument.
  */
 type Series = Record<string, Record<string, [string, number][]>>;
 interface Loaded { catalog: Catalog; series: Series; stores: StoreSeries }
@@ -41,6 +42,9 @@ function data(region: RegionId): RegionData {
   return d;
 }
 const regionOfProduct = (p: Phone): RegionId => p.region ?? "au";
+
+/** When the region's prices were last imported: the same value as getCatalog(undefined, region).updatedAt, without scanning every offer. */
+export const regionUpdatedAt = (region: RegionId = "au") => data(region).updated;
 
 /** Categories that actually have products today. */
 export const activeCategories = (region: RegionId = "au") => CATEGORIES.filter((c) => (data(region).loaded.get(c.id as CategoryId)?.catalog.phones.length ?? 0) > 0);
@@ -272,9 +276,12 @@ export const retailerIds = (region: RegionId = "au"): RetailerId[] => activeReta
 /**
  * Head-to-head pages worth having: each well-stocked phone against its two
  * closest rivals by price from other brands and its nearest sibling. Slugs are
- * ordered alphabetically so each pair has one URL.
+ * ordered alphabetically so each pair has one URL. Computed once per process (the data only changes
+ * with a deploy); callers only filter, find, map or slice the result, never mutate it.
  */
-export function getVsPairs(): { slug: string; a: Phone; b: Phone }[] {
+let vsPairs: ReturnType<typeof computeVsPairs> | undefined;
+export const getVsPairs = () => (vsPairs ??= computeVsPairs());
+function computeVsPairs(): { slug: string; a: Phone; b: Phone }[] {
   // Phones only for now: other categories' head-to-heads need richer specs to say anything useful.
   const pool = getPhones().filter((p) => p.retailerCount >= 3 && p.image);
   const pairs = new Map<string, { slug: string; a: Phone; b: Phone }>();

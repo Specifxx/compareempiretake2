@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { priceCheck, wasCheck } from "../src/lib/price-check";
+import { priceCheck, shortDate, wasCheck } from "../src/lib/price-check";
 import type { Offer } from "../src/lib/types";
 
 const days = (n: number, price: (i: number) => number) =>
@@ -41,4 +41,14 @@ test("a 'was' price nobody ever charged is called out", () => {
 test("old history with nothing recent is not a verdict", () => {
   const c = priceCheck({ price: 1799, best: [["2026-10-22", 1799]], stores: { jbhifi: [["2024-01-01", 1999], ["2024-03-01", 1999]] }, cheapest: "jbhifi", storeName: name, today: "2026-10-22" });
   assert.equal(c.verdict, "new");
+});
+
+test("dates show the year from the catalogue's day, never the clock", () => {
+  // Product pages are rendered on a UTC server, cached and hydrated in the visitor's browser: at New Year the
+  // two clocks disagree, so the year must come from the data both sides see.
+  assert.equal(shortDate("2026-03-12", "2026-12-31"), "12 Mar");
+  assert.equal(shortDate("2026-03-12", "2027-01-01"), "12 Mar 2026");
+  const c = priceCheck({ price: 1799, best: [["2026-12-31", 1799]], stores: {}, storeName: name, today: "2027-01-01" });
+  assert.equal(c.points.at(-1)![0], "2027-01-01", "the last point is the catalogue's day, which PriceCheckCard uses");
+  assert.match(c.detail, /31 Dec 2026/);
 });

@@ -6,7 +6,7 @@ import { ExternalIcon } from "./icons";
  * Today's cheapest matching new eBay listing for a product, from the eBay Browse API (checked daily
  * by scripts/ebay-prices.ts). Shown apart from the store rows, labelled as an ad, never ranked among them.
  */
-export function EbayListingRow({ listing, product, money, cheapest, locale }: { listing: NonNullable<Phone["ebay"]>; product: string; money: (n: number) => string; cheapest?: number; locale: string }) {
+export function EbayListingRow({ listing, product, money, cheapest, locale, timeZone }: { listing: NonNullable<Phone["ebay"]>; product: string; money: (n: number) => string; cheapest?: number; locale: string; timeZone: string }) {
   const total = listing.price + (listing.shipping ?? 0);
   const below = cheapest !== undefined && total < cheapest;
   return (
@@ -28,7 +28,7 @@ export function EbayListingRow({ listing, product, money, cheapest, locale }: { 
         </div>
         <div className="mt-1 truncate text-xs text-ink-mute" title={listing.title}>
           {listing.seller ? `${listing.seller}${listing.feedback ? ` · ${listing.feedback}% positive` : ""} · ` : ""}
-          checked {new Date(listing.checkedAt).toLocaleDateString(locale, { day: "numeric", month: "short" })}
+          checked {new Date(listing.checkedAt).toLocaleDateString(locale, { day: "numeric", month: "short", timeZone })}
         </div>
       </div>
       <div className="text-right">

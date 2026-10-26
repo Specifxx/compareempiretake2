@@ -121,6 +121,7 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
               <li key={r.href}>
                 <Link
                   href={r.href}
+                  prefetch={false}
                   onClick={() => setOpen(false)}
                   onMouseEnter={() => setActive(i)}
                   className={`flex items-center gap-3 rounded-xl px-2.5 py-2 ${i === active ? "bg-bg-sunk" : ""}`}
@@ -146,7 +147,7 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
               const i = phones.length + j;
               return (
                 <li key={r.href}>
-                  <Link href={r.href} onClick={() => setOpen(false)} onMouseEnter={() => setActive(i)} className={`flex items-center gap-3 rounded-xl px-2.5 py-2 text-sm ${i === active ? "bg-bg-sunk" : ""}`}>
+                  <Link href={r.href} prefetch={false} onClick={() => setOpen(false)} onMouseEnter={() => setActive(i)} className={`flex items-center gap-3 rounded-xl px-2.5 py-2 text-sm ${i === active ? "bg-bg-sunk" : ""}`}>
                     <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-brand-soft text-xs font-bold text-brand">{r.kind === "vs" ? "VS" : r.kind === "category" ? "▦" : "📖"}</span>
                     <span className="min-w-0 flex-1 truncate">{r.name}</span>
                   </Link>

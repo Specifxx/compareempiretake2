@@ -25,7 +25,7 @@ export function AlertStatus() {
       return (
         <Box title="Your price alert is on 🔔">
           We&apos;ll email you when <b>{done.name}</b> is <b>${done.target.toLocaleString("en-AU")}</b> or less at any store we check. Prices are checked every morning.
-          <div className="mt-6"><Link href={done.product} className="btn-primary">Back to {done.name}</Link></div>
+          <div className="mt-6"><Link href={done.product} prefetch={false} className="btn-primary">Back to {done.name}</Link></div>
         </Box>
       );
     return (

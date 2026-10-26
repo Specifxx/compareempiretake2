@@ -6,7 +6,8 @@ import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import { REGIONS, type RegionId } from "@/lib/region";
 import { useRegion } from "@/lib/use-region";
 
-export interface FooterData { stores: number; products: number; checked: string; shop: string[][]; categories: string[][] }
+/** `year` is the import's year in the region (Footer.tsx), not the clock: a page cached over New Year still hydrates. */
+export interface FooterData { stores: number; products: number; checked: string; year: number; shop: string[][]; categories: string[][] }
 
 const WHO: Record<RegionId, string> = { au: "Australians", us: "shoppers in the US", uk: "shoppers in the UK" };
 
@@ -36,7 +37,7 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
       </div>
       <div className="border-t border-line">
         <div className="container-x flex flex-col gap-2 py-5 text-xs text-ink-mute sm:flex-row sm:justify-between">
-          <span>© {new Date().getFullYear()} Compare Empire. {R.taxNote}; check the retailer for the final price. eBay links are affiliate links; we may earn a commission. {AMAZON_DISCLOSURE}</span>
+          <span>© {d.year} Compare Empire. {R.taxNote}; check the retailer for the final price. eBay links are affiliate links; we may earn a commission. {AMAZON_DISCLOSURE}</span>
           <span>
             <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-ink">{CONTACT_EMAIL}</a> · Made in Australia 🇦🇺
           </span>

@@ -43,11 +43,14 @@ const median = (xs: number[]) => {
 let sym = "$";
 const money = (n: number) => `${sym}${Math.round(n).toLocaleString("en-AU")}`;
 const setSymbolFor = (r?: RetailerId) => (sym = r?.startsWith("uk-") ? "£" : "$");
-/** "29 Oct", or "29 Oct 2025" when it isn't this year — history now spans years. */
-export const shortDate = (d: string) => {
+/**
+ * "29 Oct", or "29 Oct 2025" when it isn't in the same year as `today` (YYYY-MM-DD, the catalogue's day)
+ * — history now spans years. The year comes from the data, not the clock: product pages render on a UTC
+ * server, are cached for a day and hydrate in the visitor's browser, which would disagree at New Year.
+ */
+export const shortDate = (d: string, today: string) => {
   const date = new Date(d + "T00:00:00");
-  const thisYear = new Date().getFullYear();
-  return date.toLocaleDateString("en-AU", { day: "numeric", month: "short", ...(date.getFullYear() !== thisYear ? { year: "numeric" } : {}) });
+  return date.toLocaleDateString("en-AU", { day: "numeric", month: "short", ...(d.slice(0, 4) !== today.slice(0, 4) ? { year: "numeric" } : {}) });
 };
 
 export function priceCheck(opts: {
@@ -75,7 +78,7 @@ export function priceCheck(opts: {
     return {
       verdict: "new",
       headline: "Tracking this price",
-      detail: `We started recording this price on ${shortDate(points[0][0])}. Check back: every day adds to the chart, so you'll see if a "sale" is real.`,
+      detail: `We started recording this price on ${shortDate(points[0][0], today)}. Check back: every day adds to the chart, so you'll see if a "sale" is real.`,
       points,
       chartLabel,
       since: points[0][0],
@@ -90,9 +93,9 @@ export function priceCheck(opts: {
   const low = Math.min(...prices), high = Math.max(...prices), typical = median(prices);
   const since = window[0][0];
   const base = { points, chartLabel, since, low, high, typical };
-  if (price <= low && price < typical * 0.99) return { ...base, verdict: "lowest", headline: "Lowest price we've recorded", detail: `Nothing cheaper since ${shortDate(since)}. Usual price ${money(typical)}.` };
+  if (price <= low && price < typical * 0.99) return { ...base, verdict: "lowest", headline: "Lowest price we've recorded", detail: `Nothing cheaper since ${shortDate(since, today)}. Usual price ${money(typical)}.` };
   if (price <= typical * 0.97) return { ...base, verdict: "below", headline: `${money(typical - price)} below its usual price`, detail: `Usually ${money(typical)}. Lowest we've seen: ${money(low)}.` };
-  if (price <= typical * 1.03) return { ...base, verdict: "usual", headline: "About its usual price", detail: `It's been around ${money(typical)} since ${shortDate(since)}. Lowest we've seen: ${money(low)}.` };
+  if (price <= typical * 1.03) return { ...base, verdict: "usual", headline: "About its usual price", detail: `It's been around ${money(typical)} since ${shortDate(since, today)}. Lowest we've seen: ${money(low)}.` };
   return { ...base, verdict: "above", headline: "Above its usual price", detail: `Usually ${money(typical)}, and it's been as low as ${money(low)}. Worth waiting.` };
 }
 
@@ -104,7 +107,7 @@ export function wasCheck(o: Offer, history: Point[] | undefined, storeName: stri
   // Only an earlier day can back a "was" price — today's own price never does.
   const seen = pts.filter(([d, p]) => d < today && p >= o.wasPrice! * 0.98);
   if (seen.length) {
-    return { retailer: o.retailer, was: o.wasPrice, status: "backed", text: `Checks out: ${storeName} charged ${money(seen.at(-1)![1])} on ${shortDate(seen.at(-1)![0])}.` };
+    return { retailer: o.retailer, was: o.wasPrice, status: "backed", text: `Checks out: ${storeName} charged ${money(seen.at(-1)![1])} on ${shortDate(seen.at(-1)![0], today)}.` };
   }
   if (span(pts) >= 14) {
     const max = Math.max(...pts.map(([, p]) => p));
@@ -112,8 +115,8 @@ export function wasCheck(o: Offer, history: Point[] | undefined, storeName: stri
       retailer: o.retailer,
       was: o.wasPrice,
       status: "never",
-      text: `We've never seen ${storeName} charge ${money(o.wasPrice)}. Highest we've recorded there since ${shortDate(pts[0][0])}: ${money(max)}.`,
+      text: `We've never seen ${storeName} charge ${money(o.wasPrice)}. Highest we've recorded there since ${shortDate(pts[0][0], today)}: ${money(max)}.`,
     };
   }
-  return { retailer: o.retailer, was: o.wasPrice, status: "unknown", text: `Too new to check: we've only been recording ${storeName}'s price since ${pts[0] ? shortDate(pts[0][0]) : "today"}.` };
+  return { retailer: o.retailer, was: o.wasPrice, status: "unknown", text: `Too new to check: we've only been recording ${storeName}'s price since ${pts[0] ? shortDate(pts[0][0], today) : "today"}.` };
 }

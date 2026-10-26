@@ -87,7 +87,7 @@ export async function BrowseCategory({ params, region }: { params: Params; regio
       <ul className="mt-6 divide-y divide-line rounded-2xl border border-line bg-bg-card">
         {items.map((p) => (
           <li key={p.slug}>
-            <Link href={withRegion(`/${p.category}/${p.slug}`, region)} className="flex items-center justify-between gap-4 px-4 py-2.5 text-sm hover:bg-bg-sunk">
+            <Link href={withRegion(`/${p.category}/${p.slug}`, region)} prefetch={false} className="flex items-center justify-between gap-4 px-4 py-2.5 text-sm hover:bg-bg-sunk">
               <span className="min-w-0 truncate">{p.name}</span>
               <span className="shrink-0 text-ink-mute">{money(p.bestPrice, region)} · {p.retailerCount} {p.retailerCount === 1 ? "store" : "stores"}</span>
             </Link>

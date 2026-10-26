@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { ProductView, productMetadata, productParams, type ProductParams } from "@/views/ProductView";
+import { ProductView, productMetadata, type ProductParams } from "@/views/ProductView";
 
-export const dynamicParams = false;
-export const generateStaticParams = () => productParams("us");
+export const dynamic = "force-dynamic"; // rendered on request, held by Vercel's CDN (next.config.mjs). Never ISR: see DECISIONS 2026-10-26.
 export const generateMetadata = ({ params }: { params: ProductParams }): Promise<Metadata> => productMetadata(params, "us");
 
 export default function ProductPage({ params }: { params: ProductParams }) {

@@ -125,7 +125,7 @@ export function CompareView({ phones }: { phones: Phone[] }) {
                       <button onClick={() => setList(chosen.filter((c) => c !== p).map((c) => `/${c.category}/${c.slug}`))} className="absolute right-0 top-0 z-10 grid h-7 w-7 place-items-center rounded-full bg-bg-card shadow" aria-label={`Remove ${p.name}`}>
                         <CloseIcon className="h-3.5 w-3.5" />
                       </button>
-                      <Link href={`/${p.category}/${p.slug}`} className="block">
+                      <Link href={`/${p.category}/${p.slug}`} prefetch={false} className="block">
                         <div className="img-tile mb-3 aspect-square overflow-hidden rounded-2xl">{p.image && <img src={p.image} alt={p.name} className="product-img h-full w-full object-contain p-5" />}</div>
                         <div className="text-xs text-ink-mute">{p.brand}</div>
                         <div className="font-semibold">{p.model}</div>
