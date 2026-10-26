@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   openGraph: { type: "website", siteName: "Compare Empire", locale: "en_AU", images: [{ url: "/og?t=Is+that+sale+actually+real%3F", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" },
   icons: { icon: "/icon.svg" },
+  // Large image previews and full snippets in Google (Search, Discover, Images), as RiftCompare does.
+  // A page that sets its own `robots` (noindex) replaces this whole object.
+  robots: { googleBot: { "max-image-preview": "large", "max-snippet": -1 } },
   // Search Console / Bing Webmaster ownership tags (hard coded; a Vercel variable overrides it).
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "AzWwvsCoV2fKvjAspJUFFd77HqxcG_7Eb_4P7cTDOHk",
