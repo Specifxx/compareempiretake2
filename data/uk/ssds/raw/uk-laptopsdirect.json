@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-10-25T22:58:46.826Z",
+ "scrapedAt": "2026-10-26T00:39:47.536Z",
  "offers": [
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2067524",
+   "mpn": "A1/SNV3S/2000G",
+   "title": "Box Opened Kingston NV3 2TB M.2 2280 Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/grade-a1-kingston-nv3-2tb-m.2-2280-internal-ssd-a1-snv3s-2000g/version.asp",
+   "price": 247.13,
+   "wasPrice": 304.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/SNV3S2000G_1_Classic.jpg?v=5",
+   "inStock": true
+  },
   {
    "retailer": "uk-laptopsdirect",
    "sku": "2047412",
@@ -10,16 +21,6 @@
    "price": 194.97,
    "wasPrice": 232.97,
    "image": "https://www.laptopsdirect.co.uk/Images/CT1000T710SSD5_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2008988",
-   "mpn": "406L7AA",
-   "title": "HP 1TB 2280 PCI-e 4x4 NVMe M.2 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/hp-1tb-2280-pci-e-4x4-nvme-m.2-406l7aa/version.asp",
-   "price": 2463.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/406L7AA_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -63,16 +64,6 @@
    "url": "https://www.laptopsdirect.co.uk/kingston-ironkey-1.9tb-2.5-m.2-ssd-ikvp80es-1920g/version.asp",
    "price": 553.97,
    "image": "https://www.laptopsdirect.co.uk/Images/IKVP80ES1920G_1_Classic.jpg?v=16",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1668420",
-   "mpn": "SKC3000D/2048G",
-   "title": "Kingston KC3000 2048GB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/kingston-kc3000-2048gb-m.2-ssd-skc3000d-2048g/version.asp",
-   "price": 346.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/SKC3000D2048G_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -126,16 +117,6 @@
    "url": "https://www.laptopsdirect.co.uk/kingston-nv3-2tb-m.2-2280-internal-ssd-snv3s-2000g/version.asp",
    "price": 304.97,
    "image": "https://www.laptopsdirect.co.uk/Images/SNV3S2000G_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1966232",
-   "mpn": "SNV3S/4000G",
-   "title": "Kingston NV3 4TB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/kingston-nv3-4tb-m.2-2280-internal-ssd-snv3s-4000g/version.asp",
-   "price": 569.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/SNV3S4000G_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -266,56 +247,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2000077",
-   "mpn": "MZ-VAP1T0BW",
-   "title": "Samsung 9100 PRO 1TB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/samsung-9100-pro-1tb-m.2-2280-internal-ssd-mz-vap1t0bw/version.asp",
-   "price": 245.97,
-   "wasPrice": 289.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/MZ-VAP1T0BW_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2000078",
-   "mpn": "MZ-VAP2T0BW",
-   "title": "Samsung 9100 PRO 2TB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/samsung-9100-pro-2tb-m.2-2280-internal-ssd-mz-vap2t0bw/version.asp",
-   "price": 476.97,
-   "wasPrice": 560.39,
-   "image": "https://www.laptopsdirect.co.uk/Images/MZ-VAP2T0BW_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2000079",
-   "mpn": "MZ-VAP4T0BW",
-   "title": "Samsung 9100 PRO 4TB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/samsung-9100-pro-4tb-m.2-2280-internal-ssd-mz-vap4t0bw/version.asp",
-   "price": 1070.97,
-   "wasPrice": 1294.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/MZ-VAP4T0BW_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1564355",
    "mpn": "MZ-V8V1T0BW",
    "title": "Samsung 980 1TB M.2 2280 Internal SSD",
    "url": "https://www.laptopsdirect.co.uk/samsung-980-evo-1tb-m.2-nvme-ssd-mz-v8v1t0bw/version.asp",
    "price": 370.97,
    "image": "https://www.laptopsdirect.co.uk/Images/MZ-V8V1T0BW_1_Classic.jpg?v=26",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2713384",
-   "mpn": "MZ-V9V1T0BW",
-   "title": "Samsung 990 1TB PCIe 4.0x4 NVMe M.2 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/samsung-990-1tb-pcie-4.0x4-nvme-m.2-internal-ssd-mz-v9v1t0bw/version.asp",
-   "price": 179.97,
-   "wasPrice": 228.06,
-   "image": "https://www.laptopsdirect.co.uk/Images/MZ-V9V1T0BW_1_Classic.png?v=9",
    "inStock": true
   },
   {
