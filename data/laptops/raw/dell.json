@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-25T22:12:28.880Z",
+ "scrapedAt": "2026-10-25T23:54:24.135Z",
  "offers": [
   {
    "retailer": "dell",
@@ -9,6 +9,28 @@
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/alienware15da15260",
    "price": 2564.25,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/da15260/media-gallery/notebook-alienware-15-da15260-mb3-intel-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1108&qlt=100,0&resMode=sharp2&size=1108,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "alienware15da15265",
+   "brand": "Alienware",
+   "title": "Alienware 15 Gaming Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/alienware15da15265",
+   "price": 2026.35,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/da15265/media-gallery/laptop-alienware-15-da15265-laptop-mb2-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1108&qlt=100,0&resMode=sharp2&size=1108,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "alienware16area51aa16250",
+   "brand": "Alienware",
+   "title": "Alienware 16 Area-51 Gaming Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/alienware16area51aa16250",
+   "price": 6795.8,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/aa16250/media-gallery/mb2/laptop-alienware-aa16250nt-mb2-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1102&qlt=100,0&resMode=sharp2&size=1102,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -29,8 +51,41 @@
    "brand": "Alienware",
    "title": "Alienware 16X Aurora Gaming Laptop",
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/alienware16xauroraac16251",
-   "price": 5050.25,
+   "price": 4408.95,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/ac16251/media-gallery/laptop-alienware-ac16251-blue-ff-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=973&qlt=100,0&resMode=sharp2&size=973,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "alienware18area51aa18250",
+   "brand": "Alienware",
+   "title": "Alienware 18 Area-51 Gaming Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/alienware18area51aa18250",
+   "price": 6319.5,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/aa18250/media-gallery/mb2/laptop-alienware-aa18250nt-mb2-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=930&qlt=100,0&resMode=sharp2&size=930,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellplus14laptopdb04255",
+   "brand": "Dell",
+   "title": "Dell 14 Plus 2-in-1 Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dellplus14laptopdb04255",
+   "price": 1708.3,
+   "image": "https://i.dell.com/assetlink/img/en/laptop-dell-plus-db04255t-ice-bl-gallery-1-dl1fj3h-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1147&qlt=100,0&resMode=sharp2&size=1147,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellplus14laptopdb14255",
+   "brand": "Dell",
+   "title": "Dell 14 Plus Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dellplus14laptopdb14255",
+   "price": 1915.1,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-db14255t-bl-fpr-gallery-1-dl1fis0-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1018&qlt=100,0&resMode=sharp2&size=1018,804",
    "inStock": true,
    "fromPrice": true
   },
