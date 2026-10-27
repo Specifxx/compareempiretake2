@@ -291,3 +291,25 @@ not worth the restructure on its own.
 The owner, across the sites: "stop sending me emails for every single feedback … and every single
 rating … I can check in the admin dashboard." `/api/feedback` and `/api/reviews` no longer call
 `notifyOwner`. Both wait in `/admin`, whose overview counts unresolved feedback and reviews to approve.
+
+## 2026-10-27: Compare Empire family links
+
+The owner, once YGO Compare existed: "our website should all have all of our
+compare websites now in the suite of websites … just try to backlink all of
+it." Every site's footer now links the other eight: RiftCompare, OP Compare,
+DexCompare, MTG Compare, Gundam Compare, Lorcana Compare, YGO Compare
+(ygocompare.com), CamCompare (www.camcompare.app) and Compare Empire
+(www.compareempire.com, Australian tech prices), each on the host it already
+uses (no apex or www change). Plain followed links, never sponsored: they are
+our own sites. The link text says what each compares ("Yu-Gi-Oh! card prices",
+"Camera and lens prices"), with the site's name after it, rather than the
+brand alone. MTG Compare is sealed-only since 2026-10-21, so its anchor now
+says "Magic: The Gathering sealed prices" everywhere.
+
+Footer only. In-page blocks ("Compare other TCGs" on card and product pages,
+the article blocks) keep to card games, and the two sites that are not card
+games are labelled as the wider family, so nine look-alike sites linked from
+every page body never read as a link network.
+
+`FAMILY_SITES` in `src/lib/site.ts`, drawn as one row above the footer's
+legal line (`tests/family-sites.test.ts`).

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { CONTACT_EMAIL } from "@/lib/site";
+import { CONTACT_EMAIL, FAMILY_SITES } from "@/lib/site";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import { REGIONS, type RegionId } from "@/lib/region";
 import { useRegion } from "@/lib/use-region";
@@ -35,6 +35,21 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
           links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Retailers we check", region === "au" ? "/about#retailers" : `${R.prefix}/stores`], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["How we make money", "/disclosure"], ["Affiliate disclosure", "/affiliate-disclosure"], ["Privacy", "/privacy"]]}
         />
       </div>
+      <nav aria-label="The Compare Empire family" className="border-t border-line">
+        <div className="container-x py-5 text-xs text-ink-mute">
+          <div className="eyebrow mb-2">More price comparison from Compare Empire</div>
+          <ul className="flex flex-wrap gap-x-5 gap-y-1">
+            {FAMILY_SITES.map((s) => (
+              <li key={s.url}>
+                <a href={s.url} target="_blank" rel="noopener" className="font-semibold text-ink-soft hover:text-ink">
+                  {s.anchor}
+                </a>{" "}
+                on {s.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
       <div className="border-t border-line">
         <div className="container-x flex flex-col gap-2 py-5 text-xs text-ink-mute sm:flex-row sm:justify-between">
           <span>© {d.year} Compare Empire. {R.taxNote}; check the retailer for the final price. eBay links are affiliate links; we may earn a commission. {AMAZON_DISCLOSURE}</span>
