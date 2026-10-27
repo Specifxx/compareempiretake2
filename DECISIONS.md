@@ -314,7 +314,7 @@ every page body never read as a link network.
 `FAMILY_SITES` in `src/lib/site.ts`, drawn as one row above the footer's
 legal line (`tests/family-sites.test.ts`).
 
-## The apex is the canonical host again (2026-10-27)
+## 2026-10-27: The apex is the canonical host again
 
 `www.compareempire.com` has had no DNS record since the 2026-10-26 outage
 (checked from GitHub's runners against 8.8.8.8 and 1.1.1.1), while
