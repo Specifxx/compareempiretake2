@@ -10,7 +10,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
 import { dataPath, REGION_IDS, withRegion } from "../src/lib/region";
 
-const HOST = "www.compareempire.com";
+const HOST = "compareempire.com";
 const key = readdirSync("public").find((f) => /^[0-9a-f]{32}\.txt$/.test(f))?.replace(".txt", "");
 if (!key) throw new Error("no IndexNow key file in public/");
 

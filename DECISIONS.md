@@ -313,3 +313,16 @@ every page body never read as a link network.
 
 `FAMILY_SITES` in `src/lib/site.ts`, drawn as one row above the footer's
 legal line (`tests/family-sites.test.ts`).
+
+## 2026-10-27: The apex is the canonical host again
+
+`www.compareempire.com` has had no DNS record since the 2026-10-26 outage
+(checked from GitHub's runners against 8.8.8.8 and 1.1.1.1), while
+`compareempire.com` serves every page. Every canonical, sitemap and robots URL
+still said www, so Google could crawl none of them. `SITE` is now the apex and
+moves a www `NEXT_PUBLIC_SITE_URL` to it; IndexNow and alert emails follow.
+The eBay account-deletion endpoint keeps its www default because eBay signs
+its challenge with the registered URL; it is overridable with
+`EBAY_DELETION_ENDPOINT`. Moving back to www means restoring its DNS, waiting
+for Vercel to show both domains Valid, then changing `SITE` and the redirect
+together.
