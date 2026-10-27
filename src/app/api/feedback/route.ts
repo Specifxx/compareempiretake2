@@ -1,4 +1,3 @@
-import { notifyOwner } from "@/lib/email";
 import { ensureSchema } from "@/lib/db";
 import { clip, ipHash, isEmail, json } from "@/lib/server-utils";
 
@@ -19,6 +18,7 @@ export async function POST(req: Request) {
   const [{ n }] = (await sql`SELECT count(*)::int AS n FROM feedback WHERE ip_hash = ${ip} AND created_at > now() - interval '1 hour'`) as { n: number }[];
   if (n >= 10) return json({ ok: false, error: "That's a lot of feedback — please try again in a bit." }, 429);
   await sql`INSERT INTO feedback (kind, message, email, page, ip_hash) VALUES (${kind}, ${message}, ${email}, ${page}, ${ip})`;
-  await notifyOwner(`New feedback (${kind})`, `${message}\n\nFrom: ${email ?? "anonymous"}\nPage: ${page ?? "-"}`);
+  // No email per item (owner, 2026-10-27: "stop sending me emails for every single
+  // feedback … and every single rating"). It waits in /admin, which counts what is open.
   return json({ ok: true });
 }

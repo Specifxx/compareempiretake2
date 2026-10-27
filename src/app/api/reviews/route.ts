@@ -1,4 +1,3 @@
-import { notifyOwner } from "@/lib/email";
 import { ensureSchema } from "@/lib/db";
 import { clip, ipHash, isEmail, json } from "@/lib/server-utils";
 
@@ -39,6 +38,7 @@ export async function POST(req: Request) {
   const [{ n }] = (await sql`SELECT count(*)::int AS n FROM reviews WHERE ip_hash = ${ip} AND created_at > now() - interval '1 day'`) as { n: number }[];
   if (n >= 3) return json({ ok: false, error: "You've already left a review today — thank you!" }, 429);
   await sql`INSERT INTO reviews (name, rating, body, email, ip_hash) VALUES (${name}, ${rating}, ${text}, ${email}, ${ip})`;
-  await notifyOwner(`New review to approve (${rating}★)`, `${name}: ${text}`);
+  // No email per item (owner, 2026-10-27: "stop sending me emails for every single
+  // feedback … and every single rating"). It waits in /admin, which counts what is open.
   return json({ ok: true });
 }
