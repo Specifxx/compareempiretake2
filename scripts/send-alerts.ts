@@ -9,8 +9,8 @@ import { neon } from "@neondatabase/serverless";
 import type { Phone } from "../src/lib/types";
 import { dataPath, money, type RegionId } from "../src/lib/region";
 import { emailConfigured, sendMail } from "../src/lib/mailer";
+import { SITE } from "../src/lib/site";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.compareempire.com";
 const url = process.env.DATABASE_URL;
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
