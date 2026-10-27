@@ -285,3 +285,9 @@ brands that differ only in case (BlueAnt/Blueant/BLUEANT) share one URL that sho
 variant; group by slug, or normalise brand case at import. The root layout still sends the nav and
 footer for all three regions (~15 KB a page); one region's would need region layouts or route groups,
 not worth the restructure on its own.
+
+## 2026-10-27: No email per feedback or review
+
+The owner, across the sites: "stop sending me emails for every single feedback … and every single
+rating … I can check in the admin dashboard." `/api/feedback` and `/api/reviews` no longer call
+`notifyOwner`. Both wait in `/admin`, whose overview counts unresolved feedback and reviews to approve.
