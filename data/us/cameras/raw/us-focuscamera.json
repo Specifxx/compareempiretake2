@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T00:34:43.574Z",
+ "scrapedAt": "2026-10-26T23:52:41.159Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -212,7 +212,7 @@
    "price": 4099,
    "wasPrice": 4399,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3406483.jpg?v=1751940934",
-   "inStock": true,
+   "inStock": false,
    "brand": "CANON USA, INC.",
    "mpn": "6536C002"
   },
@@ -344,7 +344,7 @@
    "price": 799,
    "wasPrice": 949,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3489649.jpg?v=1751594984",
-   "inStock": true,
+   "inStock": false,
    "brand": "CANON USA, INC.",
    "mpn": "6895C012"
   },
@@ -1999,7 +1999,7 @@
    "price": 109.99,
    "wasPrice": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3670907.jpg?v=1789565311",
-   "inStock": false,
+   "inStock": true,
    "brand": "JK Imaging, LTD",
    "mpn": "FZ45BL"
   },
@@ -2023,7 +2023,7 @@
    "price": 109.99,
    "wasPrice": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/6f3529af0b90116914e887d827806ca3a5eb2f1e7ca34e4c048cbda2c38aece2-d131f79c6d6600fa.jpg?v=1772477033",
-   "inStock": true,
+   "inStock": false,
    "brand": "JK Imaging, LTD",
    "mpn": "FZ45RD"
   },
@@ -3492,7 +3492,7 @@
    "sku": "43031880040496",
    "title": "Panasonic LUMIX L10 Premium Point and Shoot Digital Camera with 24-75mm F1.7-2.8 Zoom Lens (Black)",
    "url": "https://www.focuscamera.com/products/panasonic-dc-l10k-cameras-point-shoot-cameras",
-   "price": 1497.99,
+   "price": 1499.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3628787.jpg?v=1778612506",
    "inStock": false,
    "brand": "PANASONIC CORPORATION OF N.A.",
@@ -3503,7 +3503,7 @@
    "sku": "43031879942192",
    "title": "Panasonic LUMIX L10 Premium Point and Shoot Digital Camera with 24-75mm F1.7-2.8 Zoom Lens (Silver)",
    "url": "https://www.focuscamera.com/products/panasonic-dc-l10s-cameras-point-shoot-cameras",
-   "price": 1497.99,
+   "price": 1499.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3628796.jpg?v=1778612504",
    "inStock": true,
    "brand": "PANASONIC CORPORATION OF N.A.",
@@ -3615,7 +3615,7 @@
    "url": "https://www.focuscamera.com/products/panasonic-dc-s5m2kk-cameras-mirrorless-cameras",
    "price": 2297.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3098350.jpg?v=1751612546",
-   "inStock": false,
+   "inStock": true,
    "brand": "PANASONIC CORPORATION OF N.A.",
    "mpn": "DC-S5M2KK"
   },
@@ -3968,7 +3968,7 @@
    "url": "https://www.focuscamera.com/products/sigma-c47900-sigma-cameras-mirrorless-cameras",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3477330.jpg?v=1751608963",
-   "inStock": true,
+   "inStock": false,
    "brand": "SIGMA CORPORATION OF AMERICA",
    "mpn": "C47900-SIGMA"
   },
@@ -4105,7 +4105,7 @@
    "price": 2198,
    "wasPrice": 2698,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3587321.jpg?v=1769199224",
-   "inStock": true,
+   "inStock": false,
    "brand": "TD Synnex - Sony",
    "mpn": "ILCE7M4MB"
   },
@@ -4533,6 +4533,17 @@
    "inStock": true,
    "brand": "TD Synnex - Sony",
    "mpn": "ZV1FW"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "50892849840176",
+   "title": "Sony ZV-E10 Mirrorless Camera (Black) with 16-50mm f/3.5-5.6 II Lens, Mini Flash and Accessories",
+   "url": "https://www.focuscamera.com/products/sony-zve10kb-it20-cameras-mirrorless-cameras",
+   "price": 898,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/262dc52dfacee292a0c7a36a6cbdb328ebf7e408dc7edf2bda48e90fb34e1bbb-79daa8c6ac5c74f5.jpg?v=1793034527",
+   "inStock": true,
+   "brand": "TD Synnex - Sony",
+   "mpn": "ZVE10KB-IT20"
   },
   {
    "retailer": "us-focuscamera",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-25T23:57:49.908Z",
+ "scrapedAt": "2026-10-26T23:15:48.535Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -258,7 +258,7 @@
    "url": "https://www.mwave.com.au/products/arktek-16gb-1x-16gb-ddr5-5600mhz-memory-ac97889",
    "price": 349,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/arktek_16gb_1x_16gb_ddr5_5600mhz_memory_ac97889_16237.jpg?v=1787795318",
-   "inStock": true,
+   "inStock": false,
    "brand": "Arktek"
   },
   {
@@ -328,7 +328,7 @@
    "url": "https://www.mwave.com.au/products/corsair-vengeance-rgb-32gb-2x16gb-ddr5-6000mhz-cl36-desktop-memory-white-ac94766",
    "price": 729,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/corsair_vengeance_rgb_32gb_2x16gb_ddr5_6000mhz_cl36_desktop_memory_white_ac94766_35311.jpg?v=1787796096",
-   "inStock": false,
+   "inStock": true,
    "brand": "Corsair"
   },
   {
@@ -1605,9 +1605,9 @@
    "sku": "AC94130",
    "title": "KingBank KRRB RGB 32GB (2x16GB) DDR5 6000MHz CL36 Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/kingbank-krrb-rgb-32gb-2x16gb-ddr5-6000mhz-cl36-desktop-memory-black-ac94130",
-   "price": 650,
+   "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingbank_krrb_ddr5_6000mhz_32gb_216gb_cl36_rgb_cxmt_black_ac94130_57226.jpg?v=1787785981",
-   "inStock": true,
+   "inStock": false,
    "brand": "KingBank"
   },
   {
@@ -1845,7 +1845,7 @@
    "sku": "AC80432",
    "title": "Kingston FURY Beast RGB 16GB (2x 8GB) DDR5 6000MHz CL36 AMD Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/kingston-fury-beast-rgb-16gb-2x-8gb-ddr5-6000mhz-cl36-amd-desktop-memory-black-ac80432",
-   "price": 389,
+   "price": 369,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingston_fury_beast_rgb_16gb_2x_8gb_ddr5_6000mts_cl36_amd_desktop_memory_black_ac80432_62058.jpg?v=1787797219",
    "inStock": true,
    "brand": "Kingston"
@@ -2795,6 +2795,16 @@
    "url": "https://www.mwave.com.au/products/silicon-power-xpower-zenith-rgb-16gb-2x-8gb-ddr4-3600mhz-desktop-memory-ac48653",
    "price": 204,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_xpower_zenith_rgb_16gb_2x_8gb_ddr4_3600mhz_udimm_memory_ac48653.jpg?v=1789457450",
+   "inStock": true,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC60664",
+   "title": "Silicon Power XPOWER Zenith RGB 32GB (2x16GB) DDR5 5600MHz Desktop Memory Black",
+   "url": "https://www.mwave.com.au/products/silicon-power-xpower-zenith-rgb-32gb-2x16gb-ddr5-5600mhz-desktop-memory-black-ac60664",
+   "price": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_xpower_zenith_rgb_32gb_2x16gb_ddr5_5600mhz_desktop_memory_black_ac60664_88791.jpg?v=1789457449",
    "inStock": true,
    "brand": "Silicon Power"
   },

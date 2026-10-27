@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-25T23:57:57.976Z",
+ "scrapedAt": "2026-10-26T23:15:55.784Z",
  "offers": [
   {
    "retailer": "ple",
@@ -177,6 +177,17 @@
    "wasPrice": 864,
    "image": "https://plecom.imgix.net/iil-427725-674699.jpg?w=600&h=600",
    "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "674805",
+   "title": "ASUS GeForce RTX 5060 Ti Prime OC 16GB GDDR7",
+   "brand": "ASUS",
+   "mpn": "PRIME-RTX5060TI-O16G",
+   "url": "https://www.ple.com.au/products/674805/asus-geforce-rtx-5060-ti-prime-oc-16gb-gddr7",
+   "price": 1399,
+   "image": "https://plecom.imgix.net/iil-427730-674805.jpg?w=600&h=600",
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -508,6 +519,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "688734",
+   "title": "Gigabyte GeForce RTX 5060 Gaming OC V2 8GB GDDR7",
+   "brand": "Gigabyte",
+   "mpn": "GV-N5060GAMING OCV2-8GD",
+   "url": "https://www.ple.com.au/products/688734/gigabyte-geforce-rtx-5060-gaming-oc-v2-8gb-gddr7",
+   "price": 749,
+   "image": "https://plecom.imgix.net/iil-487646-688734.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "675227",
    "title": "Gigabyte GeForce RTX 5060 Ti AERO OC 16GB GDDR7 (White)",
    "brand": "Gigabyte",
@@ -732,30 +754,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "686207",
-   "title": "Gigabyte GeForce RTX 5080 AORUS Infinity 16GB GDDR7",
-   "brand": "Gigabyte",
-   "mpn": "GV-N5080AORUS IF-16GD",
-   "url": "https://www.ple.com.au/products/686207/gigabyte-geforce-rtx-5080-aorus-infinity-16gb-gddr7",
-   "price": 3499,
-   "wasPrice": 3799,
-   "image": "https://plecom.imgix.net/iil-475428-686207.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "686221",
-   "title": "Gigabyte GeForce RTX 5080 AORUS Infinity 16GB GDDR7 - Wood",
-   "brand": "Gigabyte",
-   "mpn": "GV-N5080AORUSIF WD-16GD",
-   "url": "https://www.ple.com.au/products/686221/gigabyte-geforce-rtx-5080-aorus-infinity-16gb-gddr7-wood",
-   "price": 3299,
-   "wasPrice": 3909,
-   "image": "https://plecom.imgix.net/iil-475440-686221.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "672365",
    "title": "Gigabyte GeForce RTX 5080 AORUS MASTER ICE 16GB GDDR7 (White)",
    "brand": "Gigabyte",
@@ -807,6 +805,18 @@
    "url": "https://www.ple.com.au/products/680222/gigabyte-radeon-r9700-ai-top-32gb-gddr6",
    "price": 2899,
    "image": "https://plecom.imgix.net/iil-451625-680222.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "672552",
+   "title": "Gigabyte Radeon RX 9070 Gaming OC 16GB GDDR6",
+   "brand": "Gigabyte",
+   "mpn": "GV-R9070GAMING OC-16GD",
+   "url": "https://www.ple.com.au/products/672552/gigabyte-radeon-rx-9070-gaming-oc-16gb-gddr6",
+   "price": 1099,
+   "wasPrice": 1409,
+   "image": "https://plecom.imgix.net/iil-422695-672552.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -1135,7 +1145,7 @@
    "url": "https://www.ple.com.au/products/676396/nvidia-rtx-pro-6000-96gb-gddr7-blackwell-server-edition-oem-packaging",
    "price": 39999,
    "image": "https://plecom.imgix.net/iil-433064-676396.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1292,7 +1302,7 @@
    "price": 2999,
    "wasPrice": 9999,
    "image": "https://plecom.imgix.net/iil-466928-683757.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1659,7 +1669,7 @@
    "url": "https://www.ple.com.au/products/674634/zotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-gddr7",
    "price": 2999,
    "image": "https://plecom.imgix.net/iil-425581-674634.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

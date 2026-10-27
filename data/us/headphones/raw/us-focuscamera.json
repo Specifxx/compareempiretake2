@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T00:34:48.414Z",
+ "scrapedAt": "2026-10-26T23:52:44.416Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -658,7 +658,7 @@
    "url": "https://www.focuscamera.com/products/bose-896637-0040-audio-electronics-headphones-earbuds",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3650825.jpg?v=1784901580",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "896637-0040"
   },
@@ -680,7 +680,7 @@
    "url": "https://www.focuscamera.com/products/bose-896637-0030-audio-electronics-headphones-earbuds",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3650676.jpg?v=1784901578",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "896637-0030"
   },
@@ -691,7 +691,7 @@
    "url": "https://www.focuscamera.com/products/bose-896637-0020-audio-electronics-headphones-earbuds",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3651597.jpg?v=1785245327",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose",
    "mpn": "896637-0020"
   },
@@ -790,7 +790,7 @@
    "url": "https://www.focuscamera.com/products/bose-884367-0200-audio-electronics-headphones-earbuds",
    "price": 359,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3378949.jpg?v=1785160096",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "884367-0200"
   },
@@ -928,6 +928,39 @@
   },
   {
    "retailer": "us-focuscamera",
+   "sku": "50864007577648",
+   "title": "Bose Ultra 2nd Gen Open-Ear Wireless Earbuds (Black) with Fast Wireless Charging Pad",
+   "url": "https://www.focuscamera.com/products/bose-8978060010-wirp-audio-electronics-headphones-earbuds",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3682399.jpg?v=1792686514",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "8978060010-WIRP"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "50864021471280",
+   "title": "Bose Ultra 2nd Gen Open-Ear Wireless Earbuds (Cherry Chocolate) with Fast Wireless Charging Pad",
+   "url": "https://www.focuscamera.com/products/bose-8978060030-wirp-audio-electronics-headphones-earbuds",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3682535.jpg?v=1792686566",
+   "inStock": false,
+   "brand": "Bose",
+   "mpn": "8978060030-WIRP"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "50864021438512",
+   "title": "Bose Ultra 2nd Gen Open-Ear Wireless Earbuds (Cherry Chocolate) with USB-C Cable and Accessory",
+   "url": "https://www.focuscamera.com/products/bose-8978060030-usbc-audio-electronics-headphones-earbuds",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3682661.jpg?v=1792686566",
+   "inStock": false,
+   "brand": "Bose",
+   "mpn": "8978060030-USBC"
+  },
+  {
+   "retailer": "us-focuscamera",
    "sku": "50848017711152",
    "title": "Bose Ultra 2nd Gen Open-Ear Wireless Earbuds (Olive Green) with Fast Wireless Charging Pad",
    "url": "https://www.focuscamera.com/products/bose-8978060040-wirp-audio-electronics-headphones-earbuds",
@@ -936,6 +969,17 @@
    "inStock": true,
    "brand": "Bose",
    "mpn": "8978060040-WIRP"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "50864007708720",
+   "title": "Bose Ultra 2nd Gen Open-Ear Wireless Earbuds (White) with Fast Wireless Charging Pad",
+   "url": "https://www.focuscamera.com/products/bose-8978060020-wirp-audio-electronics-headphones-earbuds",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3682525.jpg?v=1792686516",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "8978060020-WIRP"
   },
   {
    "retailer": "us-focuscamera",
@@ -2729,7 +2773,8 @@
    "sku": "50839984013360",
    "title": "Sony MDR-MV1 Open-Back Reference Monitor Headphones",
    "url": "https://www.focuscamera.com/products/sony-mdrmv1-audio-electronics-headphones-earbuds",
-   "price": 418,
+   "price": 338,
+   "wasPrice": 418,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3154293.jpg?v=1792420785",
    "inStock": true,
    "brand": "TD Synnex - Sony",
@@ -2941,7 +2986,7 @@
    "url": "https://www.focuscamera.com/products/sony-wfc700nb-audio-electronics-headphones-earbuds",
    "price": 118,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3150613.jpg?v=1788383869",
-   "inStock": false,
+   "inStock": true,
    "brand": "TD Synnex - Sony",
    "mpn": "WFC700NB"
   },
@@ -2974,7 +3019,7 @@
    "url": "https://www.focuscamera.com/products/sony-wh1000xm4b-ca1w-audio-electronics-headphones-earbuds",
    "price": 369.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3520263.jpg?v=1788384285",
-   "inStock": false,
+   "inStock": true,
    "brand": "TD Synnex - Sony",
    "mpn": "WH1000XM4B-CA1W"
   },
@@ -3108,7 +3153,7 @@
    "price": 298,
    "wasPrice": 398,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3011300.jpg?v=1770312255",
-   "inStock": false,
+   "inStock": true,
    "brand": "TD Synnex - Sony",
    "mpn": "WH1000XM5S"
   },
@@ -3162,7 +3207,8 @@
    "sku": "43589028741168",
    "title": "Sony WH-CH530 Wireless On-Ear Bluetooth Headphones with Microphone (Black)",
    "url": "https://www.focuscamera.com/products/sony-whch530b-audio-electronics-headphones-earbuds",
-   "price": 68,
+   "price": 48,
+   "wasPrice": 68,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3668594.jpg?v=1788872234",
    "inStock": true,
    "brand": "TD Synnex - Sony",
@@ -3184,7 +3230,8 @@
    "sku": "43589028708400",
    "title": "Sony WH-CH730N Wireless Noise Cancelling Headphones, Foldable Design (Black)",
    "url": "https://www.focuscamera.com/products/sony-whch730nb-audio-electronics-headphones-earbuds",
-   "price": 178,
+   "price": 128,
+   "wasPrice": 178,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3668602.jpg?v=1788872234",
    "inStock": true,
    "brand": "TD Synnex - Sony",
@@ -3376,7 +3423,7 @@
    "url": "https://www.focuscamera.com/products/gsm-outdoors-gwp-rstr-bt-audio-electronics-headphones-earbuds",
    "price": 143.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3507146.jpg?v=1758291025",
-   "inStock": false,
+   "inStock": true,
    "brand": "GSM Outdoors",
    "mpn": "GWP-RSTR-BT"
   },

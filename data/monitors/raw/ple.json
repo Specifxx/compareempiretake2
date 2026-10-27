@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-25T23:58:00.395Z",
+ "scrapedAt": "2026-10-26T23:15:58.117Z",
  "offers": [
   {
    "retailer": "ple",
@@ -140,7 +140,7 @@
    "url": "https://www.ple.com.au/products/685476/aoc-22b40hm-22-1080p-120hz-va-monitor",
    "price": 95,
    "image": "https://plecom.imgix.net/iil-474496-685476.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -164,7 +164,7 @@
    "price": 149,
    "wasPrice": 159,
    "image": "https://plecom.imgix.net/iil-462122-682761.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -482,7 +482,7 @@
    "price": 219,
    "wasPrice": 249,
    "image": "https://plecom.imgix.net/iil-441315-677962.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -538,20 +538,9 @@
    "brand": "AOC",
    "mpn": "C32G42ZE",
    "url": "https://www.ple.com.au/products/682758/aoc-gaming-c32g42ze-315-curved-1080p-260hz-03ms-va-monitor",
-   "price": 369,
+   "price": 359,
+   "wasPrice": 369,
    "image": "https://plecom.imgix.net/iil-463394-682758.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "682430",
-   "title": "AOC Gaming CS25G - 25\" 1080p 310Hz Fast IPS Monitor - Counter Strike 2 Edition",
-   "brand": "AOC",
-   "mpn": "CS25G",
-   "url": "https://www.ple.com.au/products/682430/aoc-gaming-cs25g-25-1080p-310hz-fast-ips-monitor-counter-strike-2-edition",
-   "price": 251,
-   "wasPrice": 349,
-   "image": "https://plecom.imgix.net/iil-459712-682430.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -803,18 +792,6 @@
    "wasPrice": 369,
    "image": "https://plecom.imgix.net/iil-396554-668472.jpg?w=600&h=600",
    "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "678952",
-   "title": "AOC U32V11N - 32\" 4K 2160p 60Hz VA Monitor",
-   "brand": "AOC",
-   "mpn": "U32V11N",
-   "url": "https://www.ple.com.au/products/678952/aoc-u32v11n-32-4k-2160p-60hz-va-monitor",
-   "price": 339,
-   "wasPrice": 369,
-   "image": "https://plecom.imgix.net/iil-445526-678952.jpg?w=600&h=600",
-   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2109,7 +2086,7 @@
    "price": 699,
    "wasPrice": 799,
    "image": "https://plecom.imgix.net/iil-475009-685746.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -3141,18 +3118,6 @@
    "price": 208,
    "wasPrice": 259,
    "image": "https://plecom.imgix.net/iil-455632-681158.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "678148",
-   "title": "Philips 27E2N1500L - 27\" QHD 1440p 60Hz IPS Monitor",
-   "brand": "Philips",
-   "mpn": "27E2N1500L",
-   "url": "https://www.ple.com.au/products/678148/philips-27e2n1500l-27-qhd-1440p-60hz-ips-monitor",
-   "price": 199,
-   "wasPrice": 249,
-   "image": "https://plecom.imgix.net/iil-441904-678148.jpg?w=600&h=600",
    "inStock": true
   },
   {

@@ -1,6 +1,16 @@
 {
- "scrapedAt": "2026-10-26T00:36:47.852Z",
+ "scrapedAt": "2026-10-26T23:55:00.006Z",
  "offers": [
+  {
+   "retailer": "uk-dell",
+   "sku": "act1250_reg_01",
+   "brand": "Alienware",
+   "title": "Alienware Aurora Gaming Desktop - Intel Core Ultra 7 265F, 16 GB DDR5, 1 TB SSD",
+   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/alienwareauroraact1250/act1250_reg_01",
+   "price": 32437.09,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-aurora-r16-arl/media-gallery/240mm/desktop-alienware-act1250-240mm-bk-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=855&qlt=100,0&resMode=sharp2&size=855,804",
+   "inStock": true
+  },
   {
    "retailer": "uk-dell",
    "sku": "dell24allinoneec24250",
@@ -31,72 +41,6 @@
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dell27allinoneec27260",
    "price": 1294.49,
    "image": "https://i.dell.com/assetlink/img/en/aio-dell-27-ec27260t-gy-gallery-1-dl1f7d9-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1000&qlt=100,0&resMode=sharp2&size=1000,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellpro24allinone35wqc24251",
-   "brand": "Dell",
-   "title": "Dell Pro 24 All-in-One 35W Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellpro24allinone35wqc24251",
-   "price": 1496.09,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qc24251/media-gallery/desktop-aio-dell-pro-qc24251-fixst-cam-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=967&qlt=100,0&resMode=sharp2&size=967,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellpro24allinone65wqc24250",
-   "brand": "Dell",
-   "title": "Dell Pro 24 All-in-One 65W Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellpro24allinone65wqc24250",
-   "price": 1598.39,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qc24250/media-gallery/desktop-aio-dell-pro-qc24250-fixst-cam-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=961&qlt=100,0&resMode=sharp2&size=961,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellpro24allinoneplusqb24250",
-   "brand": "Dell",
-   "title": "Dell Pro 24 All-in-One Plus Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellpro24allinoneplusqb24250",
-   "price": 1763.99,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qb24250/media-gallery/desktop-aio-dell-pro-qb24250-gy-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=945&qlt=100,0&resMode=sharp2&size=945,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellproessentialmicropvm1265",
-   "brand": "Dell",
-   "title": "Dell Pro Essential Micro Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproessentialmicropvm1265",
-   "price": 734.68,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-essential/pvm1265/media-gallery/desktop-pvm1265-pro-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=413&qlt=100,0&resMode=sharp2&size=413,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellpromaxmicrofcm2250",
-   "brand": "Dell",
-   "title": "Dell Pro Max Micro Desktop",
-   "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellpromaxmicrofcm2250",
-   "price": 1277.08,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcm2250/media-gallery/desktop-dell-pro-max-fcm2250-micro-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=507&qlt=100,0&resMode=sharp2&size=507,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellpromaxslimfcs1250",
-   "brand": "Dell",
-   "title": "Dell Pro Max Slim Desktop",
-   "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellpromaxslimfcs1250",
-   "price": 1284.28,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcs1250/media-gallery/odd/desktop-dell-pro-max-fcs1250-slim-odd-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=480&qlt=100,0&resMode=sharp2&size=480,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -135,56 +79,12 @@
   },
   {
    "retailer": "uk-dell",
-   "sku": "dellpromicroq9m1260tc",
-   "brand": "Dell",
-   "title": "Dell Pro Micro Thin Client",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellpromicroq9m1260tc",
-   "price": 685.19,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/q9m1260/media-gallery/desktop-q9m1260-pro-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=440&qlt=100,0&resMode=sharp2&size=440,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
    "sku": "dellproprecision7t1pw7t1260",
    "brand": "Dell",
    "title": "Dell Pro Precision 7 T1 Desktop",
    "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision7t1pw7t1260",
    "price": 1193.08,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-7-t1-pw7t1260/media-gallery/desktop-precision-pw7t1260-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=508&qlt=100,0&resMode=sharp2&size=508,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellproslimqcs1250",
-   "brand": "Dell",
-   "title": "Dell Pro Slim Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproslimqcs1250",
-   "price": 1083.59,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/images/products/desktops-and-all-in-ones/dell-pro-desktop/qcs1250/dell-pro-qcs1250-small-desktop-c-00115rf000-bk-nonodd.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=639&qlt=100,0&resMode=sharp2&size=639,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellproessentialslimqvs1260",
-   "brand": "Dell",
-   "title": "Dell Pro Slim Essential Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproessentialslimqvs1260",
-   "price": 727.19,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qvs1260/media-gallery/with-reader/desktop-qvs1260-slim-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=485&qlt=100,0&resMode=sharp2&size=485,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellproslimplusqbs1250",
-   "brand": "Dell",
-   "title": "Dell Pro Slim Plus Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproslimplusqbs1250",
-   "price": 1533.49,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qbs1250/media-gallery/odd/desktop-dell-pro-qbs1250-slim-plus-odd-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=639&qlt=100,0&resMode=sharp2&size=639,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -211,34 +111,12 @@
   },
   {
    "retailer": "uk-dell",
-   "sku": "dellprotowerplusqbt1250",
-   "brand": "Dell",
-   "title": "Dell Pro Tower Plus Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellprotowerplusqbt1250",
-   "price": 1529.99,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qbt1250/media-gallery/odd/desktop-pro-qbt1250-tower-odd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=486&qlt=100,0&resMode=sharp2&size=486,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
    "sku": "dellslimecs1250",
    "brand": "Dell",
    "title": "Dell Slim Desktop",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellslimecs1250",
    "price": 640.49,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ecs1250/media-gallery/with-reader/desktop-ecs1250-slim-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=485&qlt=100,0&resMode=sharp2&size=485,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellslimds1265",
-   "brand": "Dell",
-   "title": "Dell Slim Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellslimds1265",
-   "price": 667.09,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ds1265/media-gallery/desktop-ds1265-slim-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=461&qlt=100,0&resMode=sharp2&size=461,804",
    "inStock": true,
    "fromPrice": true
   },

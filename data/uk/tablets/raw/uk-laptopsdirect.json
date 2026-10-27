@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T00:40:16.538Z",
+ "scrapedAt": "2026-10-27T00:00:41.982Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -19,6 +19,17 @@
    "title": "Apple iPad 2025 11\" Blue 256GB Cellular Tablet",
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-blue-256gb-cellular-tablet-md7l4kn-a/version.asp",
    "price": 649.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/MD4A4KNA_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1996690",
+   "mpn": "MD4H4KN/A",
+   "title": "Apple iPad 2025 11\" Blue 256GB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-blue-256gb-wi-fi-tablet-md4h4kn-a/version.asp",
+   "price": 499.97,
+   "wasPrice": 608,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4A4KNA_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -78,13 +89,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1996693",
-   "mpn": "MD4J4KN/A",
-   "title": "Apple iPad 2025 11\" Yellow 256GB Wi-Fi Tablet",
-   "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-yellow-256gb-wi-fi-tablet-md4j4kn-a/version.asp",
-   "price": 499.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/MD4D4KNA_1_Classic.jpg?v=5",
-   "inStock": false
+   "sku": "1932910",
+   "mpn": "MV2J3NF/A",
+   "title": "Apple iPad Air 2024 13\" Space Grey 512GB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/apple-ipad-air-2024-13-space-grey-512gb-wi-fi-tablet-mv2j3nf-a/version.asp",
+   "price": 1026.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/MV2J3NFA_1_Classic.jpg?v=5",
+   "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -191,11 +202,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1994543",
+   "mpn": "ZAEK0012GB",
+   "title": "Lenovo Tab 10.1\" Luna Gray 128GB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-tab-10.1-luna-gray-128gb-wi-fi-tablet-zaek0012gb/version.asp",
+   "price": 175.97,
+   "wasPrice": 199,
+   "image": "https://www.laptopsdirect.co.uk/Images/ZAEK0012GB_1_Classic.jpg?v=21",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1996991",
    "mpn": "ZAEL0024GB",
    "title": "Lenovo Tab 10.1\" Luna Grey 64GB 4G Tablet",
    "url": "https://www.laptopsdirect.co.uk/lenovo-tab-10.1-luna-grey-64gb-4g-tablet-zael0024gb/version.asp",
    "price": 189.97,
+   "wasPrice": 199.97,
    "image": "https://www.laptopsdirect.co.uk/Images/ZAEK0012GB_1_Classic.jpg?v=21",
    "inStock": true
   },

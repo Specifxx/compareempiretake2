@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T00:37:45.891Z",
+ "scrapedAt": "2026-10-26T23:55:46.214Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -161,7 +161,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-6-g1i-16-inch-notebook-ai-pc-wolf-pro-security-edition-d4gh2ea-abu",
    "price": 1891.6,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-6-g1i-16-wafer16-frontopen_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -239,7 +239,7 @@
    "price": 1983.77,
    "wasPrice": 2033.1,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/r/gruyere_14_naturalsilver_wwan_t_ircam_fpr_catalog_front_6479459_cus_5.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -496,7 +496,7 @@
    "price": 1404.49,
    "wasPrice": 1685.4,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/o/gouda_16g2_naturalsilver_wlan_t_ircam_fpr_catalog_front_6478212_cus_4.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -626,7 +626,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-640-14-inch-g11-notebook-pc-wolf-pro-security-edition-d4gg9ea-abu",
    "price": 1777.27,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_elitebook_640_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1583434_cus_12.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -672,7 +672,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-flip-g2i-13-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dm4x3ea-abu",
    "price": 2105.39,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/m/e/merino13x_hp_elitebook_8_flip_g2i_flip_g2i_glaciersilver_wlan_nonfpr_catalog_tent_6476762_cus_5.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -763,7 +763,7 @@
    "price": 1991.99,
    "wasPrice": 2007.59,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_elitebook_8_14_g1_machu14_lapaz14_front_cus_18.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1107,6 +1107,17 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "E7BK6EA#ABU",
+   "mpn": "E7BK6EA#ABU",
+   "brand": "HP",
+   "title": "HP EliteBook 8 G2i 16\" Business Laptop Next Gen AI PC, Intel Core Ultra 7, 16GB, 1TB",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g2i-16-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-e7bk6ea-abu",
+   "price": 2181.08,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/b/ab85d1e4-64be-4585-8700-21eda208fb35.png?store=gb-en&image-type=small_image",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "DM3Y1EA#ABU",
    "mpn": "DM3Y1EA#ABU",
    "brand": "HP",
@@ -1116,17 +1127,6 @@
    "wasPrice": 2666.18,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/b/ab85d1e4-64be-4585-8700-21eda208fb35.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E7BK6EA#ABU",
-   "mpn": "E7BK6EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G2i 16\" Business Laptop Next Gen AI PC, Intel Core Ultra 7, 16GB, 1TB, with HP Sure View Screen Protection",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g2i-16-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-e7bk6ea-abu",
-   "price": 2181.08,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/b/ab85d1e4-64be-4585-8700-21eda208fb35.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1390,7 +1390,7 @@
    "price": 2831.99,
    "wasPrice": 4028.75,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-x-g2i-14-inch-notebook-next-gen-ai-pc-cashmerei-atmospheric-blue-front_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2039,7 +2039,7 @@
    "price": 449,
    "wasPrice": 550,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08515077_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -3414,7 +3414,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-x-laptop-next-gen-ai-17-de0004nax-dq9h8ea-abu",
    "price": 1499,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-x-17.3-inch-laptop-next-gen-ai-pc-viktor-glacier-silver-front_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -4770,7 +4770,7 @@
    "price": 2903.99,
    "wasPrice": 3525.76,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/8/c8e182e3-5857-4920-a91d-e70f935e1862.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -4958,7 +4958,7 @@
    "price": 7391.99,
    "wasPrice": 7751.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-zbook-fury-g1i-18-inch-mobile-workstation-gemtree18-frontopen_1__cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -5378,7 +5378,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/omen-transcend-laptop-14-fb0009na-9s190ea-abu",
    "price": 1999.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/f/bf36aadc-2563-4be3-aa4e-0e1a65823c66.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   }
  ]
 }

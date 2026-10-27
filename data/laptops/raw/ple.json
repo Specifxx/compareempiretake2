@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-25T23:58:02.269Z",
+ "scrapedAt": "2026-10-26T23:15:59.799Z",
  "offers": [
   {
    "retailer": "ple",
@@ -90,6 +90,17 @@
    "price": 4549,
    "wasPrice": 6699,
    "image": "https://plecom.imgix.net/iil-473009-684781.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "687495",
+   "title": "ASUS Gaming V16 (V3607) - 16\" 144Hz, Core 7 240H, RTX 5050, 32GB/1TB - Win 11 Notebook",
+   "brand": "ASUS",
+   "mpn": "V3607VH-RP001W",
+   "url": "https://www.ple.com.au/products/687495/asus-gaming-v16-v3607-16-144hz-core-7-240h-rtx-5050-32gb1tb-win-11-notebook",
+   "price": 2799,
+   "image": "https://plecom.imgix.net/iil-482218-687495.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -980,7 +991,7 @@
    "url": "https://www.ple.com.au/products/688175/msi-cyborg-15-c13w-156-144hz-i5-13420h-rtx-5050-16gb512gb-win-11-gaming-notebook",
    "price": 2199,
    "image": "https://plecom.imgix.net/iil-487180-688175.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1002,7 +1013,7 @@
    "url": "https://www.ple.com.au/products/688179/msi-cyborg-15-black-edition-a13veo-156-144hz-i7-13620h-rtx-4050-16gb512gb-win-11-gaming-notebook",
    "price": 1999,
    "image": "https://plecom.imgix.net/iil-487185-688179.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1178,7 +1189,7 @@
    "url": "https://www.ple.com.au/products/688181/msi-raider-16-max-hx-b2wh-16-oled-240hz-ultra-9-290hx-plus-rtx-5070-ti-16gb1tb-win-11-gaming-notebook",
    "price": 4899,
    "image": "https://plecom.imgix.net/iil-487203-688181.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1189,7 +1200,7 @@
    "url": "https://www.ple.com.au/products/688180/msi-raider-16-max-hx-b2wi-16-oled-240hz-ultra-9-290hx-plus-rtx-5080-32gb2tb-win-11-gaming-notebook",
    "price": 6599,
    "image": "https://plecom.imgix.net/iil-487207-688180.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1200,7 +1211,7 @@
    "url": "https://www.ple.com.au/products/688182/msi-raider-16-max-hx-b2wj-16-oled-240hz-ultra-9-290hx-plus-rtx-5090-32gb2tb-win-11-gaming-notebook",
    "price": 7599,
    "image": "https://plecom.imgix.net/iil-487212-688182.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",

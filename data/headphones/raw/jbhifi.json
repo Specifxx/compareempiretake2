@@ -1,16 +1,6 @@
 {
- "scrapedAt": "2026-10-26T00:24:30.764Z",
+ "scrapedAt": "2026-10-26T23:41:33.799Z",
  "offers": [
-  {
-   "retailer": "jbhifi",
-   "sku": "754744",
-   "title": "Apple AirPods 4",
-   "url": "https://www.jbhifi.com.au/products/apple-airpods-4",
-   "price": 169,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754744-Product-0-I-638616085203652649.jpg?v=1726011853",
-   "inStock": true,
-   "brand": "Apple"
-  },
   {
    "retailer": "jbhifi",
    "sku": "911473",
@@ -1299,6 +1289,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "918055",
+   "title": "Bose QuietComfort Headphones Gen 2 (Sky Pink)",
+   "url": "https://www.jbhifi.com.au/products/bose-quietcomfort-headphones-gen-2-sky-pink",
+   "price": 549,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918055-Product-0-I-639276376812196399.jpg?v=1792041195",
+   "inStock": true,
+   "brand": "Bose"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "906867",
    "title": "Bose QuietComfort Headphones Gen 2 (White Smoke)",
    "url": "https://www.jbhifi.com.au/products/bose-quietcomfort-headphones-gen-2-white-smoke",
@@ -1339,6 +1339,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "814714",
+   "title": "Bose QuietComfort Ultra Earbuds 2nd Gen (Deep Plum)",
+   "url": "https://www.jbhifi.com.au/products/bose-quietcomfort-ultra-earbuds-2nd-gen-deep-plum",
+   "price": 449,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/814714-Product-0-I-638857105807538154.jpg?v=1750113852",
+   "inStock": true,
+   "brand": "Bose"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "839778",
    "title": "Bose QuietComfort Ultra Earbuds 2nd Gen (Midnight Violet)",
    "url": "https://www.jbhifi.com.au/products/bose-quietcomfort-ultra-earbuds-2nd-gen-midnight-violet",
@@ -1374,6 +1384,16 @@
    "url": "https://www.jbhifi.com.au/products/bose-quietcomfort-ultra-noise-cancelling-headphones-gen-2-cherry-chocolate",
    "price": 698,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/911467-Product-0-I-639255538204962252.jpg?v=1789957086",
+   "inStock": true,
+   "brand": "Bose"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "833202",
+   "title": "Bose QuietComfort Ultra Noise Cancelling Headphones Gen 2 (Desert Gold)",
+   "url": "https://www.jbhifi.com.au/products/bose-quietcomfort-ultra-noise-cancelling-headphones-gen-2-desert-gold",
+   "price": 698,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/833202-Product-0-I-638923861803903720.jpg?v=1756789447",
    "inStock": true,
    "brand": "Bose"
   },
@@ -3957,7 +3977,7 @@
    "url": "https://www.jbhifi.com.au/products/logitech-g-pro-x3-lightspeed-gaming-headset-magenta",
    "price": 449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906309-Product-0-I-639239229607970202.jpg?v=1788326226",
-   "inStock": true,
+   "inStock": false,
    "brand": "Logitech-G"
   },
   {
@@ -4572,6 +4592,56 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "10100294",
+   "title": "MOONDROP ARIA2 Dynamic Driver Wired IEM In-Ear Monitor Ceramic-coated Headphones",
+   "url": "https://www.jbhifi.com.au/products/moondrop-aria2-dynamic-driver-wired-iem-in-ear-monitor-ceramic-coated-headphones",
+   "price": 149,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/e2ba2508380848bb903fb68538dd2556.png?v=1792993846",
+   "inStock": true,
+   "brand": "Moondrop"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10100286",
+   "title": "MOONDROP BLESSING 3 2DD + 4BA Hybrid Wired IEM In-Ear Monitor Headphones",
+   "url": "https://www.jbhifi.com.au/products/moondrop-blessing-3-2dd-4ba-hybrid-wired-iem-in-ear-monitor-headphones",
+   "price": 559,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/ad0a4cc161304cc689657ebe54699d24.png?v=1792994129",
+   "inStock": true,
+   "brand": "Moondrop"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10100321",
+   "title": "MOONDROP KADENZ USB-C Dynamic Driver Wired IEM In-Ear Monitor Headphones",
+   "url": "https://www.jbhifi.com.au/products/moondrop-kadenz-usb-c-dynamic-driver-wired-iem-in-ear-monitor-headphones",
+   "price": 349,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/c18a287c70a94ee5a4776522ed07e82f.png?v=1792994128",
+   "inStock": true,
+   "brand": "Moondrop"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10100313",
+   "title": "MOONDROP Space Travel 2 TWS HiFi ANC Noise-Canceling Low-Latency Gaming Wireless Earphone (Green)",
+   "url": "https://www.jbhifi.com.au/products/moondrop-space-travel-2-tws-hifi-anc-noise-canceling-low-latency-gaming-wireless-earphone-green",
+   "price": 49,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/b08b5d9bfcb2490390b72dac79470db3.jpg?v=1792994128",
+   "inStock": true,
+   "brand": "Moondrop"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10100320",
+   "title": "MOONDROP Space Travel 2 TWS HiFi ANC Noise-Canceling Low-Latency Gaming Wireless Earphone (Orange)",
+   "url": "https://www.jbhifi.com.au/products/moondrop-space-travel-2-tws-hifi-anc-noise-canceling-low-latency-gaming-wireless-earphone-orange",
+   "price": 49,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/dc81e9fe26434d36823ec5c3229daee0.jpg?v=1792994127",
+   "inStock": true,
+   "brand": "Moondrop"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "894861",
    "title": "moto Buds 2 (Carbon)",
    "url": "https://www.jbhifi.com.au/products/moto-buds-2-carbon",
@@ -4799,16 +4869,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/892034-Product-0-I-639082882801986972.jpg?v=1772750527",
    "inStock": true,
    "brand": "Nothing"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "782513",
-   "title": "Pantone True Wireless ANC In-Ear Headphones (2380C - Navy)",
-   "url": "https://www.jbhifi.com.au/products/pantone-true-wireless-anc-in-ear-headphones-2380c-navy",
-   "price": 49.95,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/782513-Product-0-I-638622358805721777.jpg?v=1726639189",
-   "inStock": true,
-   "brand": "Pantone"
   },
   {
    "retailer": "jbhifi",
@@ -5709,6 +5769,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/814284-Product-0-I-638886742202169638.jpg?v=1753143068",
    "inStock": true,
    "brand": "Razer"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "587809",
+   "title": "RIG 300 Pro HC Dolby ATMOS Gaming Headset for PC (Black)",
+   "url": "https://www.jbhifi.com.au/products/rig-300-pro-hc-dolby-atmos-gaming-headset-for-pc-black",
+   "price": 64,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/587809-Product-0-I-637852624381345453.jpg?v=1649631585",
+   "inStock": true,
+   "brand": "Rig"
   },
   {
    "retailer": "jbhifi",
@@ -7205,7 +7275,7 @@
    "url": "https://www.jbhifi.com.au/products/sony-ier-m500-in-ear-stage-monitor-earphones-red-blue",
    "price": 159,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913071-Product-0-I-639256296603283117.jpg?v=1790032925",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony"
   },
   {
@@ -7416,7 +7486,7 @@
    "sku": "676949",
    "title": "Sony ULT WEAR Noise Cancelling Over-Ear Headphones (Black)",
    "url": "https://www.jbhifi.com.au/products/sony-ult-wear-noise-cancelling-over-ear-headphones-black",
-   "price": 279,
+   "price": 349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/676949-Product-0-I-639101574605418608.jpg?v=1774560729",
    "inStock": true,
    "brand": "Sony"
@@ -7426,7 +7496,7 @@
    "sku": "676951",
    "title": "Sony ULT WEAR Noise Cancelling Over-Ear Headphones (Forest Grey)",
    "url": "https://www.jbhifi.com.au/products/sony-ult-wear-noise-cancelling-over-ear-headphones-forest-grey",
-   "price": 279,
+   "price": 349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/676951-Product-0-I-639101576404979719.jpg?v=1774560906",
    "inStock": true,
    "brand": "Sony"
@@ -7436,7 +7506,7 @@
    "sku": "676950",
    "title": "Sony ULT WEAR Noise Cancelling Over-Ear Headphones (Off White)",
    "url": "https://www.jbhifi.com.au/products/sony-ult-wear-noise-cancelling-over-ear-headphones-off-white",
-   "price": 279,
+   "price": 349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/676950-Product-0-I-639101575803303124.jpg?v=1774560847",
    "inStock": true,
    "brand": "Sony"
@@ -7466,7 +7536,7 @@
    "sku": "640818",
    "title": "Sony WF-1000XM5 True Wireless Noise Cancelling Earbuds (Black)",
    "url": "https://www.jbhifi.com.au/products/sony-wf-1000xm5-true-wireless-noise-cancelling-earbuds-black",
-   "price": 329,
+   "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/640818-Product-0-I-638254149607488168_d4d0a968-9628-4d24-92f4-8fad808edddc.jpg?v=1774562838",
    "inStock": true,
    "brand": "Sony"
@@ -7476,7 +7546,7 @@
    "sku": "640819",
    "title": "Sony WF-1000XM5 True Wireless Noise Cancelling Earbuds (Platinum Silver)",
    "url": "https://www.jbhifi.com.au/products/sony-wf-1000xm5-true-wireless-noise-cancelling-earbuds-platinum-silver",
-   "price": 329,
+   "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/640819-Product-0-I-638254149607194747.jpg?v=1774562840",
    "inStock": true,
    "brand": "Sony"
@@ -7486,7 +7556,7 @@
    "sku": "788395",
    "title": "Sony WF-1000XM5 True Wireless Noise Cancelling Earbuds (Smoky Pink)",
    "url": "https://www.jbhifi.com.au/products/sony-wf-1000xm5-true-wireless-noise-cancelling-earbuds-smoky-pink",
-   "price": 329,
+   "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/788395-Product-0-I-638622293402546411.jpg?v=1774562829",
    "inStock": true,
    "brand": "Sony"
@@ -7496,7 +7566,7 @@
    "sku": "754720",
    "title": "Sony WF-C510 Ultra Compact Truly Wireless In-Ear Headphones (Black)",
    "url": "https://www.jbhifi.com.au/products/sony-wf-c510-ultra-compact-truly-wireless-in-ear-headphones-black",
-   "price": 79,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754720-Product-0-I-638603307003408073.jpg?v=1774562829",
    "inStock": true,
    "brand": "Sony"
@@ -7506,7 +7576,7 @@
    "sku": "754722",
    "title": "Sony WF-C510 Ultra Compact Truly Wireless In-Ear Headphones (Blue)",
    "url": "https://www.jbhifi.com.au/products/sony-wf-c510-ultra-compact-truly-wireless-in-ear-headphones-blue",
-   "price": 79,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754722-Product-0-I-638603307604264630.jpg?v=1774562829",
    "inStock": true,
    "brand": "Sony"
@@ -7516,7 +7586,7 @@
    "sku": "754721",
    "title": "Sony WF-C510 Ultra Compact Truly Wireless In-Ear Headphones (White)",
    "url": "https://www.jbhifi.com.au/products/sony-wf-c510-ultra-compact-truly-wireless-in-ear-headphones-white",
-   "price": 79,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754721-Product-0-I-638603308203219853.jpg?v=1774562829",
    "inStock": true,
    "brand": "Sony"
@@ -7526,7 +7596,7 @@
    "sku": "754723",
    "title": "Sony WF-C510 Ultra Compact Truly Wireless In-Ear Headphones (Yellow)",
    "url": "https://www.jbhifi.com.au/products/sony-wf-c510-ultra-compact-truly-wireless-in-ear-headphones-yellow",
-   "price": 79,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754723-Product-0-I-638603308203879105_80e76897-1b6b-4830-ae44-39264f17b42f.jpg?v=1774562828",
    "inStock": true,
    "brand": "Sony"
@@ -8744,16 +8814,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896366-Product-0-I-639123406205347280.jpg?v=1791256814",
    "inStock": true,
    "brand": "Microsoft"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "659918",
-   "title": "XCD Headset with Boom Mic (Black)",
-   "url": "https://www.jbhifi.com.au/products/xcd-headset-with-boom-mic-black",
-   "price": 10,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/659918-Product-0-I-638302471203876114.jpg?v=1694650399",
-   "inStock": true,
-   "brand": "Xcd"
   },
   {
    "retailer": "jbhifi",
