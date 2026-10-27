@@ -158,6 +158,8 @@ function displayName(title: string, brand: string): string {
 
 // ---- Tablets: like phones (storage variants) plus connectivity and chip ----
 
+const IPAD_MINI_CHIP: Record<string, string> = { "6": "A15", "7": "A17 Pro" };
+
 function parseTablet(o: RawOffer): Parsed | null {
   const t0 = clean(o.title);
   const cellular = /\b(cellular|5g|lte|4g)\b/i.test(t0);
@@ -169,17 +171,25 @@ function parseTablet(o: RawOffer): Parsed | null {
   const t = (isApple ? t0.replace(/\(?\b(M\d(?: (?:Pro|Max))?|A\d{2}(?: Pro)?)\b(?: chip)?\)?/, " ") : t0)
     .replace(/\(?\d{1,2}(?:st|nd|rd|th) gen(?:eration)?\)?/i, " ")
     .replace(/\d{1,2}(?:\.\d)?[- ]?(?:-inch|inch|in\b|"|”)/i, " ")
-    .replace(/\b(wi-?fi(?: \+ cellular)?|cellular|5g|lte|4g)\b/gi, " ")
+    .replace(/\b(wi-?fi(?:\s*\+\s*cellular)?|cellular|5g|lte|4g)\b/gi, " ")
     .replace(/\(\s*\)/g, " ");
-  const p = parseTitle(t);
+  const isMini = isApple && /\bipad mini\b/i.test(t0);
+  const p = parseTitle(isMini ? t.replace(/\b8\.3\b/, " ") : t);
   if (!p) return null;
   const brand = brandOf(o, t0) ?? p.brand;
-  const model = [p.model, size ? `${size}"` : "", chip ? `(${chip})` : gen ? `(${gen}th gen)` : ""].filter(Boolean).join(" ");
+  // iPad mini is 8.3" in every generation stores sell, and stores name one model by generation or by chip, so
+  // size and naming split it into several pages that compete for "ipad mini" (Search Console, 2026-10-27). One
+  // model, one page: no size, and the generation as Apple's chip (6th gen A15, 7th gen A17 Pro).
+  const mini = isMini;
+  const sz = mini ? undefined : size;
+  const ch = chip ?? (mini && gen ? IPAD_MINI_CHIP[gen] : undefined);
+  const base = p.model.replace(/(?:\s+with)?[\s-]+$|\s+with$/i, "");
+  const model = [base, sz ? `${sz}"` : "", ch ? `(${ch})` : gen ? `(${gen}th gen)` : ""].filter(Boolean).join(" ");
   const conn = cellular ? "cellular" : "wifi";
   return {
     brand,
     model,
-    key: keyOf(brand, p.model, size, chip ?? (gen ? `gen${gen}` : "")),
+    key: keyOf(brand, base, sz, ch ?? (gen ? `gen${gen}` : "")),
     variant: { id: `${storageLabel(p.storageGb).toLowerCase()}-${conn}`, label: `${storageLabel(p.storageGb)} · ${cellular ? "Wi-Fi + Cellular" : "Wi-Fi"}`, storageGb: p.storageGb },
     colour: p.colour,
   };

@@ -92,3 +92,18 @@ test("CPU model numbers are not laptop part numbers", () => {
     key('HP EliteBook X G2i 14" WUXGA AI Laptop - Core Ultra X7-358H 32GB 1TB LTE 5G W11P', "laptops"),
   );
 });
+
+test("one iPad mini page per model: size, generation-or-chip naming and 'with' never split it", () => {
+  const key = (t: string) => parseProduct(o(t), "tablets")!.key;
+  const a17 = key("Apple iPad mini (A17 Pro) Wi-Fi 128GB - Blue");
+  for (const t of [
+    'Apple iPad Mini 8.3" (7th Gen) Wi-Fi 128GB (Blue)',
+    "Apple iPad mini (7th Generation) 128GB Wi-Fi in Blue - MXN73LL/A",
+    "Apple 8.3-Inch iPad mini with A17 Pro chip, 512GB, Wi-Fi Only, 12MP (Space Gray)",
+    "Apple iPad mini 7th Gen 8.3in Wi-Fi+Cellular 128GB - Blue",
+  ])
+    assert.equal(key(t), a17, t);
+  assert.equal(parseProduct(o("Apple iPad mini 7th Gen 8.3in Wi-Fi+Cellular 128GB - Blue"), "tablets")!.variant.id, "128gb-cellular");
+  assert.notEqual(key("Apple iPad mini (A20 Pro) Wi-Fi + Cellular 128GB Standard Glass - Midnight"), a17);
+  assert.equal(key("Apple 8.3 inch iPad Mini - WiFi 64GB - Space Grey"), key("Apple iPad Mini Wi-Fi 128GB - Space Grey"));
+});

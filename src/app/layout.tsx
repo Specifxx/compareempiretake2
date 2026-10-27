@@ -86,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en-AU" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <link rel="alternate" type="application/rss+xml" title="Compare Empire guides" href="/feed.xml" />
       </head>
       <body className="min-h-screen font-sans">
         <script

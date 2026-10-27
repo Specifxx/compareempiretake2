@@ -31,6 +31,25 @@ const nextConfig = {
   // The /api/grid lists are prerendered with the deploy and served as files, so they trace nothing.
   outputFileTracingIncludes: { "/\\[category\\]/\\[slug\\]": RUNTIME_DATA, "/api/products": RUNTIME_DATA, "/admin": RUNTIME_DATA },
   outputFileTracingExcludes: { "/**": ["./data/**/raw/**", "./data/**/history/**", "./data/**/archive/**"] },
+  // One model, one page (Search Console, 2026-10-27): the iPad mini and Surface Go 3 pages the catalog split by
+  // size, generation-vs-chip naming or a stray "with" (src/lib/match.ts parseTablet) now redirect to the merged page.
+  async redirects() {
+    const merged = [
+      ["/tablets/apple-ipad-mini-6th-gen", "/tablets/apple-ipad-mini-a15"],
+      ["/tablets/apple-ipad-mini-8-3", "/tablets/apple-ipad-mini"],
+      ["/tablets/apple-ipad-mini-8-3-7th-gen", "/tablets/apple-ipad-mini-a17-pro"],
+      ["/tablets/apple-ipad-mini-8-3-a17-pro", "/tablets/apple-ipad-mini-a17-pro"],
+      ["/uk/tablets/apple-ipad-mini-8-3", "/uk/tablets/apple-ipad-mini"],
+      ["/uk/tablets/apple-ipad-mini-8-3-6th-gen", "/uk/tablets/apple-ipad-mini-a15"],
+      ["/uk/tablets/apple-ipad-mini-8-3-7th-gen", "/uk/tablets/apple-ipad-mini-a17-pro"],
+      ["/uk/tablets/apple-ipad-mini-plus-8-3-7th-gen", "/uk/tablets/apple-ipad-mini-a17-pro"],
+      ["/us/tablets/apple-ipad-mini-7th-gen", "/us/tablets/apple-ipad-mini-a17-pro"],
+      ["/us/tablets/apple-ipad-mini-8-3-a17-pro", "/us/tablets/apple-ipad-mini-a17-pro"],
+      ["/us/tablets/apple-ipad-mini-with-8-3-a17-pro", "/us/tablets/apple-ipad-mini-a17-pro"],
+      ["/us/tablets/microsoft-surface-go-3-tablet-intel-core-i3-10100y-with", "/us/tablets/microsoft-surface-go-3-tablet-intel-core-i3-10100y"],
+    ];
+    return merged.map(([source, destination]) => ({ source, destination, permanent: true }));
+  },
   async headers() {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.
     return [
