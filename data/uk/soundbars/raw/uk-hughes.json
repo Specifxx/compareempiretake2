@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:56:42.075Z",
+ "scrapedAt": "2026-10-27T23:46:06.087Z",
  "offers": [
   {
    "retailer": "uk-hughes",
@@ -73,6 +73,16 @@
   },
   {
    "retailer": "uk-hughes",
+   "sku": "bar800problkuk",
+   "brand": "Jbl",
+   "title": "JBL BAR 800 5.1ch Soundbar - Black",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/jbl/bar800problkuk",
+   "price": 649,
+   "image": "https://cdn6.hughes.co.uk/media/11/95/da/1695049222/JBL-BAR800PROBLKUKb.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
    "sku": "sqm1",
    "brand": "Lg",
    "title": "LG SQM1 2.0 Compact Sound Bar",
@@ -109,16 +119,6 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/lg/usc9s",
    "price": 269.97,
    "image": "https://cdn6.hughes.co.uk/media/35/8f/a0/1680095730/lg-usc9sa.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "1000003084",
-   "brand": "Majority",
-   "title": "Majority Bowfell Axis 2.1 Soundbar with Dolby Atmos",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/majority/1000003084",
-   "price": 129.99,
-   "image": "https://cdn6.hughes.co.uk/media/ca/38/ea/1789479633/MAJ-AXISBLK-1.jpg",
    "inStock": true
   },
   {
@@ -187,7 +187,7 @@
    "brand": "Samsung",
    "title": "Samsung HW-Q990H Q-Series 11.1.4 Channel Soundbar with Subwoofer & Rear Speaker",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/samsung/hw-q990h",
-   "price": 1286,
+   "price": 1299,
    "image": "https://cdn6.hughes.co.uk/media/6e/8e/90/1779792073/SAM-HW-Q990H-A.jpg",
    "inStock": true
   },
@@ -197,7 +197,7 @@
    "brand": "Samsung",
    "title": "Samsung HW-S60D Q-Symphony Soundbar - Black",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/samsung/hws60d",
-   "price": 299,
+   "price": 399,
    "image": "https://cdn6.hughes.co.uk/media/ce/1a/cc/1712741585/SAM-HWS60D-A.jpg",
    "inStock": true
   },

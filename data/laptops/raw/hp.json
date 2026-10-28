@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:14:42.589Z",
+ "scrapedAt": "2026-10-27T23:03:48.369Z",
  "offers": [
   {
    "retailer": "hp",
@@ -8,7 +8,7 @@
    "brand": "HP",
    "title": "HP 15.6 inch Laptop 15-fc0786AU, Black",
    "url": "https://www.hp.com/au-en/shop/hp-laptop-15-fc0786au-d3xj8pa.html",
-   "price": 599,
+   "price": 799,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08434622_7.png",
    "inStock": true
   },
@@ -21,7 +21,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-laptop-15-fc0822au-d6my6pa.html",
    "price": 999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08434622_8.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -69,17 +69,6 @@
   },
   {
    "retailer": "hp",
-   "sku": "D6MY7PA",
-   "mpn": "D6MY7PA",
-   "brand": "HP",
-   "title": "HP 15.6 inch Laptop 15-fd1264TU, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-laptop-15-fd1264tu-d6my7pa.html",
-   "price": 899,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08510542_1_5.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
    "sku": "D41R7PA",
    "mpn": "D41R7PA",
    "brand": "HP",
@@ -109,7 +98,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-chromebook-14a-ne1001tu-c0de0pa.html",
    "price": 299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-chromebook-14a-moderngrey-front.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -118,7 +107,7 @@
    "brand": "HP",
    "title": "HP Chromebook 14 inch 14a-nf0005TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-chromebook-14a-nf0005tu-a1nf6pa.html",
-   "price": 369,
+   "price": 599,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c0889776-touch.png",
    "inStock": false
   },
@@ -285,7 +274,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-elitebook-8-g1i-14-inch-notebook-next-gen-ai-pc-c86mkpa.html",
    "price": 3999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp_elitebook_8_14_inch_g1i_ai_machu14n_front_1.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -648,7 +637,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-3-laptop-ai-16-ct0035qu-e6dq8pa.html",
    "price": 799,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-3-16-inch-laptop-pc-bantiea-glacier-silver-front_2.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -789,7 +778,7 @@
    "brand": "HP",
    "title": "HP OmniBook 5 16 inch Laptop AI 16-af1001TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-5-laptopai-16-af1001tu-d81ylpa.html",
-   "price": 1299,
+   "price": 2499,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omn_3_10_12.png",
    "inStock": true
   },
@@ -866,7 +855,7 @@
    "brand": "HP",
    "title": "HP OmniBook 7 14 inch Laptop Next Gen AI 14-hg0047TU, Pink",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-7-laptop-next-gen-ai-14-hg0047tu-dd6l0pa.html",
-   "price": 2999,
+   "price": 4999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-7-14-inch-laptop-ngai-pc-agusta-powderpink-front.png",
    "inStock": false
   },
@@ -877,7 +866,7 @@
    "brand": "HP",
    "title": "HP OmniBook 7 14 inch Laptop Next Gen AI 14-hg0048TU, Meteor Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-7-laptop-next-gen-ai-14-hg0048tu-dd6l1pa.html",
-   "price": 2999,
+   "price": 4999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-7-14-inch-laptop-ngai-pc-agusta-meteorsilver-front.png",
    "inStock": false
   },
@@ -890,7 +879,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-7-laptop-next-gen-ai-14-hg0049tu-dd6l2pa.html",
    "price": 2999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-7-14-inch-laptop-ngai-pc-agusta-glaciersilver-front.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -965,7 +954,7 @@
    "brand": "HP",
    "title": "HP OmniBook 7 Aero 13.3 inch Laptop Next Gen AI 13-bg1041AU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-7-aero-laptop-next-gen-ai-13-bg1041au-cj1b8pa.html",
-   "price": 2999,
+   "price": 1799,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omn_2_14.png",
    "inStock": false
   },
@@ -1196,7 +1185,7 @@
    "brand": "HP",
    "title": "HP OmniBook X 14 inch Laptop Next Gen AI 14-kr1000QU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-laptop-next-gen-ai-14-kr1000qu-d8qf4pa.html",
-   "price": 2299,
+   "price": 3499,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-x-14-inch-laptop-next-gen-ai-pc-quadrox-meteor-silver-front-touchicon.png",
    "inStock": false
   },
@@ -1207,7 +1196,7 @@
    "brand": "HP",
    "title": "HP OmniBook X 16 inch Laptop Next Gen AI 16-cp1000QU, Brown",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-laptop-next-gen-ai-16-cp1000qu-d8cu5pa.html",
-   "price": 2299,
+   "price": 3599,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-x-16-inch-laptop-next-gen-ai-pc-codax-deep-espresso-front-touchicon.png",
    "inStock": false
   },
@@ -1363,7 +1352,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-probook-4-g1ah-16-inch-notebook-pc-c86mcpa.html",
    "price": 1899,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-probook-4-g1a-16-naturalsilver-frontopen.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -1374,7 +1363,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-probook-4-g1i-14-inch-notebook-ai-pc-c86m2pa.html",
    "price": 2399,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp_probook_4_14_inch_g1i_rainbowcake14_front_2.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -1510,17 +1499,6 @@
   },
   {
    "retailer": "hp",
-   "sku": "D38GCPT",
-   "mpn": "D38GCPT",
-   "brand": "HP",
-   "title": "HP ZBook 8 G1i 14 inch Mobile Workstation PC, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-zbook-8-g1i-14-inch-mobile-workstation-pc-d38gcpt.html",
-   "price": 2999,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbo_1_3_17.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
    "sku": "BV8B6PT",
    "mpn": "BV8B6PT",
    "brand": "HP",
@@ -1528,17 +1506,6 @@
    "url": "https://www.hp.com/au-en/shop/hp-zbook-8-g1i-14-inch-mobile-workstation-pc-bv8b6pt.html",
    "price": 3199,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbo_1_4_3.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "D38G7PT",
-   "mpn": "D38G7PT",
-   "brand": "HP",
-   "title": "HP ZBook 8 G1i 14 inch Mobile Workstation PC, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-zbook-8-g1i-14-inch-mobile-workstation-pc-d38g7pt.html",
-   "price": 3299,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbo_1_3_18.png",
    "inStock": true
   },
   {
@@ -1561,17 +1528,6 @@
    "url": "https://www.hp.com/au-en/shop/hp-zbook-8-g1i-14-inch-mobile-workstation-pc-bv5l4pt.html",
    "price": 3899,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbo_1_3_20.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "D38GBPT",
-   "mpn": "D38GBPT",
-   "brand": "HP",
-   "title": "HP ZBook 8 G1i 14 inch Mobile Workstation PC, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-zbook-8-g1i-14-inch-mobile-workstation-pc-d38gbpt.html",
-   "price": 3999,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbo_1_2_29.png",
    "inStock": true
   },
   {
@@ -1638,17 +1594,6 @@
    "url": "https://www.hp.com/au-en/shop/hp-zbook-8-g1i-16-inch-mobile-workstation-pc-bv5k9pt.html",
    "price": 3199,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbook-8-g1i-16-inch-mobile-workstation-machuw16-front-touchicon_1.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "D38GDPT",
-   "mpn": "D38GDPT",
-   "brand": "HP",
-   "title": "HP ZBook 8 G1i 16 inch Mobile Workstation PC, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-zbook-8-g1i-16-inch-mobile-workstation-pc-d38gdpt.html",
-   "price": 4096,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbook-8-g1i-16-inch-mobile-workstation-machuw16-front-touchicon_3.png",
    "inStock": true
   },
   {
@@ -1723,7 +1668,7 @@
    "mpn": "C2EP3PT",
    "brand": "HP",
    "title": "HP ZBook Fury G1i 18 inch Mobile Workstation PC, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-zbook-fury-g1i-18-inch-mobile-workstation-pc-c2ep3pt.html",
+   "url": "https://www.hp.com/au-en/shop/hp-zbook-fury-g1i-18-inch-mobile-workstation-pc-c2ep3pt-3.html",
    "price": 10264,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbook-fury-g1i-18-inch-mobile-workstation-gemtree18-frontopen_3.png",
    "inStock": false
@@ -1845,7 +1790,7 @@
    "brand": "HP",
    "title": "HyperX OMEN 15 inch Gaming Laptop PC 15-gb0079AX, Black",
    "url": "https://www.hp.com/au-en/shop/hyperx-omen-15-inch-gaming-laptop-pc-15-gb0079ax-d84vnpa.html",
-   "price": 3099,
+   "price": 2999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/D/8/D84VNPA-1_T1772434884.png",
    "inStock": true
   },
@@ -1867,7 +1812,7 @@
    "brand": "HP",
    "title": "HyperX OMEN 16 \" VALORANT Edition Gaming Laptop - NVIDIA® GeForce RTX™ 5060",
    "url": "https://www.hp.com/au-en/shop/hyperx-omen-16-inch-gaming-laptop-pc-16-ap1049ax-df6k5pa.html",
-   "price": 2998,
+   "price": 4999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/k/h/khalilahhx-1.png",
    "inStock": true
   },
@@ -1878,7 +1823,7 @@
    "brand": "HP",
    "title": "HyperX OMEN 16 \" VALORANT Edition Gaming Laptop - NVIDIA® GeForce RTX™ 5070",
    "url": "https://www.hp.com/au-en/shop/hyperx-omen-16-inch-gaming-laptop-pc-16-ap1065ax-df6k6pa.html",
-   "price": 3299,
+   "price": 3199,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/k/h/khalilahhx-1_1.png",
    "inStock": true
   },
@@ -1911,7 +1856,7 @@
    "brand": "HP",
    "title": "HyperX OMEN MAX 16 inch Gaming Laptop PC 16-ah1014TX, Black",
    "url": "https://www.hp.com/au-en/shop/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ah1014tx-d91k1pa.html",
-   "price": 8999,
+   "price": 5299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/x/hx_omen_max16_dojo_shadblack_oled_ir_rgbpkey_coreset_front_2.png",
    "inStock": true
   },
@@ -1933,7 +1878,7 @@
    "brand": "HP",
    "title": "HyperX OMEN MAX 16 inch Gaming Laptop PC 16-ak1000AX",
    "url": "https://www.hp.com/au-en/shop/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ak1000ax-d91k4pa.html",
-   "price": 5199,
+   "price": 8799,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/x/hx_omen_max_16_vibrance_shadowblack_oled_ir_rgbpkey_coreset_front.png",
    "inStock": true
   },
@@ -1944,7 +1889,7 @@
    "brand": "HP",
    "title": "HyperX OMEN MAX 16 inch Gaming Laptop PC 16-ak1001AX",
    "url": "https://www.hp.com/au-en/shop/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ak1001ax-d91k5pa.html",
-   "price": 4199,
+   "price": 7799,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/x/hx_omen_max_16_vibrance_shadowblack_oled_ir_rgbpkey_coreset_front_1.png",
    "inStock": true
   },
@@ -1988,7 +1933,7 @@
    "brand": "HP",
    "title": "OMEN Transcend 14 inch Gaming Laptop 14-fb1041TX, Black",
    "url": "https://www.hp.com/au-en/shop/omen-transcend-laptop-14-fb1041tx-c81rqpa.html",
-   "price": 4998,
+   "price": 4699,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/v/o/voco-black-1.png",
    "inStock": true
   },

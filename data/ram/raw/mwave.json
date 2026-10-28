@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:15:48.535Z",
+ "scrapedAt": "2026-10-27T23:04:51.116Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -198,7 +198,7 @@
    "url": "https://www.mwave.com.au/products/adata-xpg-lancer-rgb-64gb-2x32gb-ddr5-6000mhz-cl30-amd-desktop-memory-black-ac61075",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/adata_xpg_lancer_rgb_64gb_2_x_32gb_ddr5_6000mhz_memory_black_ac61075_45786.jpg?v=1787744427",
-   "inStock": true,
+   "inStock": false,
    "brand": "ADATA"
   },
   {
@@ -448,7 +448,7 @@
    "url": "https://www.mwave.com.au/products/crucial-32gb-1x-32gb-ddr5-5600mhz-desktop-memory-ac60065",
    "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_32gb_1x_32gb_ddr5_5600mhz_memory_ac60065_15493.jpg?v=1787796117",
-   "inStock": true,
+   "inStock": false,
    "brand": "Crucial"
   },
   {
@@ -458,7 +458,7 @@
    "url": "https://www.mwave.com.au/products/crucial-32gb-2x-16gb-ddr5-5600mhz-sodimm-laptop-memory-ac60070",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ct2k16g56c46s5_ac60070_91529.jpg?v=1787796110",
-   "inStock": true,
+   "inStock": false,
    "brand": "Crucial"
   },
   {
@@ -1443,7 +1443,7 @@
   {
    "retailer": "mwave",
    "sku": "AC78820",
-   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 6400MHz CL30 AMD EXPO Ready",
+   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 6400MHz CL30 AMD EXPO Ready Desktop Memory - Silver",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-royal-neo-rgb-32gb-2x-16gb-ddr5-6400mhz-cl30-amd-expo-ready-desktop-memory-silver-ac78820",
    "price": 2491.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_royal_neo_rgb_32gb_2x_16gb_ddr5_6400mhz_cl30_amd_desktop_memory_silver_ac78820_94442.jpg?v=1787796734",
@@ -1903,7 +1903,7 @@
   {
    "retailer": "mwave",
    "sku": "AC87758",
-   "title": "Kingston FURY Beast RGB 64GB (2x 32GB) DDR5 6000MHz CL36 Intel XMP & AMD EXPO READY",
+   "title": "Kingston FURY Beast RGB 64GB (2x 32GB) DDR5 6000MHz CL36 Intel XMP & AMD EXPO READY Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/kingston-fury-beast-rgb-64gb-2x-32gb-ddr5-6000mhz-cl36-intel-xmp-amd-expo-ready-desktop-memory-black-ac87758",
    "price": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingston_fury_beast_rgb_64gb_2x_32gb_ddr5_6000mhz_cl36_desktop_memory_black_ac87758_98985.jpg?v=1787786002",
@@ -1913,7 +1913,7 @@
   {
    "retailer": "mwave",
    "sku": "AC72247",
-   "title": "Kingston FURY Beast RGB 64GB (2x 32GB) DDR5 6000MHz INTEL XMP & AMD EXPO READY Desktop",
+   "title": "Kingston FURY Beast RGB 64GB (2x 32GB) DDR5 6000MHz INTEL XMP & AMD EXPO READY Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/kingston-fury-beast-rgb-64gb-2x-32gb-ddr5-6000mhz-intel-xmp-amd-expo-ready-desktop-memory-black-ac72247",
    "price": 2734.59,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kf560c36bbeak264_ac72247_52919.jpg?v=1787797216",
@@ -2298,7 +2298,7 @@
    "url": "https://www.mwave.com.au/products/lexar-ares-rgb-16gb-2x8gb-kit-ddr4-3600-mts-udimm-desktop-memory-black-ac99792",
    "price": 259,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_16gb_2x8gb_kit_ddr4_3600_mts_udimm_desktop_memory_black_ac99792_52115.jpg?v=1787797404",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lexar"
   },
   {
@@ -2935,7 +2935,7 @@
    "url": "https://www.mwave.com.au/products/transcend-jetram-16gb-ddr5-5600mhz-laptop-memory-ac73569",
    "price": 666.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/transcend_jetram_16gb_ddr5_5600mhz_laptop_memory_ac73569_68803.jpg?v=1787799432",
-   "inStock": false,
+   "inStock": true,
    "brand": "Transcend"
   },
   {

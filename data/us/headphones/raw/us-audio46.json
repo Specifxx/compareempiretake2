@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:52:15.072Z",
+ "scrapedAt": "2026-10-27T23:41:30.319Z",
  "offers": [
   {
    "retailer": "us-audio46",
@@ -151,7 +151,7 @@
    "url": "https://www.audio46.com/products/64-audio-nio-universal-fit-iem",
    "price": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/nio-universal-in-ear-monitors_01.jpg?v=1762457701",
-   "inStock": false,
+   "inStock": true,
    "brand": "64 Audio",
    "mpn": "Nio"
   },
@@ -169,7 +169,7 @@
   {
    "retailer": "us-audio46",
    "sku": "47790500905193",
-   "title": "64 Audio Solo Universal Planar Magnetic In-Ear Monitor (Ships on October 27)",
+   "title": "64 Audio Solo Universal Planar Magnetic In-Ear Monitor",
    "url": "https://www.audio46.com/products/64-audio-solo-universal-in-ear-monitor",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/64-audio-solo-3.png?v=1762467463",
@@ -213,7 +213,7 @@
   {
    "retailer": "us-audio46",
    "sku": "48165856608489",
-   "title": "64 Audio U12t (Latest Revision) Universal In-Ear Monitor (Ships October 27)",
+   "title": "64 Audio U12t (Latest Revision) Universal In-Ear Monitor",
    "url": "https://www.audio46.com/products/64-audio-u12t-universal-in-ear-monitor-2nd-gen",
    "price": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/U12t_Universal_In-Ear_Monitors_UIEM_64_Audio_2048x_6e725819-ebc8-4403-9802-8f4fe9eb9c21.jpg?v=1762468489",
@@ -269,7 +269,7 @@
   {
    "retailer": "us-audio46",
    "sku": "44490569154793",
-   "title": "64 Audio U4s Universal In-Ear Monitor (Ships on October 27)",
+   "title": "64 Audio U4s Universal In-Ear Monitor",
    "url": "https://www.audio46.com/products/64-audio-u4s-universal-in-ear-monitor",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/U4s-PLP-HiRscopy.jpg?v=1762464170",
@@ -284,14 +284,14 @@
    "url": "https://www.audio46.com/products/64-audio-u6t-universal-fit-earphones",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/U6t-Landing-Page.jpg?v=1762458309",
-   "inStock": false,
+   "inStock": true,
    "brand": "64 Audio",
    "mpn": "U6t"
   },
   {
    "retailer": "us-audio46",
    "sku": "45592427135209",
-   "title": "64 Audio Volür Universal In-Ear Monitor (Includes m12 Apex Module) (Ships on October 27)",
+   "title": "64 Audio Volür Universal In-Ear Monitor (Includes m12 Apex Module)",
    "url": "https://www.audio46.com/products/64-audio-volur-universal-in-ear-monitor",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Volur-PLPcopy.jpg?v=1762465653",
@@ -5152,7 +5152,7 @@
    "sku": "50561295188201",
    "title": "Beyerdynamic DJ 300 PRO X CLUB Professional 2-in-1 DJ Headphones",
    "url": "https://www.audio46.com/products/beyerdynamic-dj-300-pro-x-club-professional-2-in-1-dj-headphones",
-   "price": 179.99,
+   "price": 159.99,
    "wasPrice": 279.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Image4_6418797e-171b-4287-8544-11368f1a15e0.jpg?v=1772141447",
    "inStock": true,
@@ -5539,6 +5539,26 @@
    "url": "https://www.audio46.com/products/beyerdynamic-mmx-100-wireless-gaming-headset?variant=51698833686761",
    "price": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Image_16_fe2495ad-18af-44dd-9ae8-5627f4e71237.jpg?v=1787238630",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-audio46",
+   "sku": "67783583891689",
+   "title": "Beyerdynamic MMX 130 Wireless Open-Back Gaming Headsets (Pre-Order) Arctic White",
+   "url": "https://www.audio46.com/products/beyerdynamic-mmx-130-wireless-gaming-headphones?variant=67783583891689",
+   "price": 179.99,
+   "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Image_f4118b23-f750-418b-9d7f-3397f5e0e941.jpg?v=1793106783",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-audio46",
+   "sku": "67783583924457",
+   "title": "Beyerdynamic MMX 130 Wireless Open-Back Gaming Headsets (Pre-Order) Black",
+   "url": "https://www.audio46.com/products/beyerdynamic-mmx-130-wireless-gaming-headphones?variant=67783583924457",
+   "price": 179.99,
+   "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Image_4_3c37f7a8-8212-47e1-abce-6832e6e790c0.jpg?v=1793106799",
    "inStock": true,
    "brand": "Beyerdynamic"
   },
@@ -9776,7 +9796,7 @@
    "url": "https://www.audio46.com/products/focal-bathys-mgs?variant=51162932740329",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Bathys_MG_34_Pack_A.jpg?v=1762468684",
-   "inStock": true,
+   "inStock": false,
    "brand": "Focal",
    "mpn": "FOAHALNOMBMH000"
   },
@@ -11024,7 +11044,7 @@
    "url": "https://www.audio46.com/products/hifiman-he1000-planar-magnetic-headphones",
    "price": 949,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/20230128092852_19511.jpg?v=1762457435",
-   "inStock": true,
+   "inStock": false,
    "brand": "HIFIMAN",
    "mpn": "HE1000 Stealth V4"
   },
@@ -11400,7 +11420,7 @@
    "url": "https://www.audio46.com/products/fiio-jt7-open-back-planar-headphones",
    "price": 119.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/1_11572426.png?v=1770069444",
-   "inStock": true,
+   "inStock": false,
    "brand": "FiiO",
    "mpn": "JT7"
   },
@@ -12665,7 +12685,7 @@
    "url": "https://www.audio46.com/products/jvc-true-wireless-fitness-series-earphones?variant=51142527582441",
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/jvc-haec25t-clip-true-wireless-for-sport-haec25tw-240979.png?v=1780412480",
-   "inStock": true,
+   "inStock": false,
    "brand": "JVC",
    "mpn": "HA-EC25T-W-U"
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:51:56.576Z",
+ "scrapedAt": "2026-10-27T23:41:12.560Z",
  "offers": [
   {
    "retailer": "us-abt",
@@ -193,7 +193,7 @@
    "sku": "219762",
    "title": "LG OLED evo AI C5 4K 77-Inch Smart TV - OLED77C5PUA",
    "url": "https://www.abt.com/LG-OLED-evo-AI-C5-4K-77-Inch-Smart-TV-OLED77C5PUA/p/219762.html",
-   "price": 2199.99,
+   "price": 1997.99,
    "image": "https://content.abt.com/image.php/e32acef8d27bbbaa9c40a408f3966f24?image=/images/products/BDP_Images/lg-oled-4k-smart-tv-OLED77C5PUA-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "LG",
@@ -270,7 +270,7 @@
    "sku": "240652",
    "title": "LG OLED evo AI G6 4K 55-Inch Smart TV - OLED55G6WUA",
    "url": "https://www.abt.com/LG-OLED-evo-AI-G6-4K-55-Inch-Smart-TV-OLED55G6WUA/p/240652.html",
-   "price": 2099.99,
+   "price": 1999.99,
    "image": "https://content.abt.com/image.php/572768b8e68e86bbf77bc121934460e3?image=/images/products/BDP_Images/LG-tv-OLED55G6WUA.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "LG",
@@ -630,6 +630,17 @@
   },
   {
    "retailer": "us-abt",
+   "sku": "253072",
+   "title": "Samsung Crystal UHD U7900F 55-Inch 4K Smart TV in Black - UN55U7900FDXZA",
+   "url": "https://www.abt.com/Samsung-Crystal-UHD-U7900F-55-Inch-4K-Smart-TV-in-Black-UN55U7900FDXZA/p/253072.html",
+   "price": 377.99,
+   "image": "https://content.abt.com/image.php/7f8f254295925dfef63b5fd228927937?image=/images/products/BDP_Images/samsung-4k-uhd-tv-UN55U7900FFXZA.jpg&ck=2&width=165&height=150&canvas",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "UN55U7900FDXZA"
+  },
+  {
+   "retailer": "us-abt",
    "sku": "248681",
    "title": "Samsung Crystal UHD U7900H 75-Inch 4K Smart TV in Black - UN75U7900HFXZA",
    "url": "https://www.abt.com/Samsung-Crystal-UHD-U7900H-75-Inch-4K-Smart-TV-in-Black-UN75U7900HFXZA/p/248681.html",
@@ -798,9 +809,9 @@
    "sku": "248109",
    "title": "Samsung Crystal UHD U8000H 70-Inch 4K Smart TV in Black - UN70U8000HFXZA",
    "url": "https://www.abt.com/Samsung-Crystal-UHD-U8000H-70-Inch-4K-Smart-TV-in-Black-UN70U8000HFXZA/p/248109.html",
-   "price": 397.99,
+   "price": 387.62,
    "image": "https://content.abt.com/image.php/3be2c814a6ae74a86f96f813d251ba34?image=/images/products/BDP_Images/samsung-4k-smart-tv-UN65U8000HFXZA-front.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung",
    "mpn": "UN70U8000HFXZA"
   },
@@ -1202,17 +1213,6 @@
   },
   {
    "retailer": "us-abt",
-   "sku": "243710",
-   "title": "Samsung QN90F Neo 75-Inch QLED 4K Smart TV in Titan Black - QN75QN90FDFXZA",
-   "url": "https://www.abt.com/Samsung-QN90F-Neo-75-Inch-QLED-4K-Smart-TV-in-Titan-Black-QN75QN90FDFXZA/p/243710.html",
-   "price": 1997.99,
-   "image": "https://content.abt.com/image.php/dcd9043012b2a46a6b7d66b3f3761870?image=/images/products/BDP_Images/samsung-tv-QN75QN90FAFXZA-front-view.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
-   "brand": "Samsung",
-   "mpn": "QN75QN90FDFXZA"
-  },
-  {
-   "retailer": "us-abt",
    "sku": "240865",
    "title": "Samsung R85H Series 55-Inch Micro RGB 4K UHD Smart Tizen TV with Samsung Vision AI - MRN55R85HAFXZA",
    "url": "https://www.abt.com/Samsung-R85H-Series-55-Inch-Micro-RGB-4K-UHD-Smart-Tizen-TV-with-Samsung-Vision-AI-MRN55R85HAFXZA/p/240865.html",
@@ -1298,6 +1298,17 @@
    "inStock": true,
    "brand": "Samsung",
    "mpn": "MRN85R95HAFXZA"
+  },
+  {
+   "retailer": "us-abt",
+   "sku": "253070",
+   "title": "Samsung S84F OLED TV 77-Inch 4K Smart with Vision AI in Graphite Black - QN77S84FDEXZA",
+   "url": "https://www.abt.com/Samsung-S84F-OLED-TV-77-Inch-4K-Smart-with-Vision-AI-in-Graphite-Black-QN77S84FDEXZA/p/253070.html",
+   "price": 1397.99,
+   "image": "https://content.abt.com/image.php/be47f5c25194d9982b44d16af2bbe76e?image=/images/products/BDP_Images/samsung-tv-S85F-front-view.jpg&ck=2&width=165&height=150&canvas",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "QN77S84FDEXZA"
   },
   {
    "retailer": "us-abt",
@@ -1738,17 +1749,6 @@
    "inStock": false,
    "brand": "Samsung",
    "mpn": "MNA114MS1CCXZA"
-  },
-  {
-   "retailer": "us-abt",
-   "sku": "243368",
-   "title": "Samsung U8000F 55-Inch Class Crystal UHD 4K Smart TV - UN55U8000FDXZA",
-   "url": "https://www.abt.com/Samsung-U8000F-55-Inch-Class-Crystal-UHD-4K-Smart-TV-UN55U8000FDXZA/p/243368.html",
-   "price": 347.99,
-   "image": "https://content.abt.com/image.php/d5ed5cb2679c2c5ad5aaa65bc8dec07e?image=/images/products/BDP_Images/samsung-tv-UN55U8000FD.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
-   "brand": "Samsung",
-   "mpn": "UN55U8000FDXZA"
   },
   {
    "retailer": "us-abt",
@@ -2365,6 +2365,17 @@
    "inStock": true,
    "brand": "Sylvox",
    "mpn": "KT16A0KGGA"
+  },
+  {
+   "retailer": "us-abt",
+   "sku": "252911",
+   "title": "TCL M9 Series 98-Inch QD-Mini LED 4K UHD Smart Fire TV - 98M9LF",
+   "url": "https://www.abt.com/TCL-M9-Series-98-Inch-QD-Mini-LED-4K-UHD-Smart-Fire-TV-98M9LF/p/252911.html",
+   "price": 1999.99,
+   "image": "https://content.abt.com/image.php/2ca8eac2faf34ece057d2dbc431eaf24?image=/images/products/BDP_Images/tcl-led-tv-98M9LF-front.jpg&ck=2&width=165&height=150&canvas",
+   "inStock": true,
+   "brand": "TCL",
+   "mpn": "98M9LF"
   },
   {
    "retailer": "us-abt",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:11:56.736Z",
+ "scrapedAt": "2026-10-27T23:01:11.414Z",
  "offers": [
   {
    "retailer": "costco",
@@ -10,6 +10,17 @@
    "image": "https://www.costco.com.au/medias/sys_master/images/h52/hb0/489095971471390.jpg",
    "inStock": true,
    "mpn": "100Q7SAU",
+   "brand": "Hisense"
+  },
+  {
+   "retailer": "costco",
+   "sku": "2026068",
+   "title": "Hisense 100 Inch U6S Hi-QLED Mini LED 4K Smart TV 100U6SAU",
+   "url": "https://www.costco.com.au/Electronics/TVs-Projectors/TVs/Hisense-100-Inch-U6S-Hi-QLED-Mini-LED-4K-Smart-TV-100U6SAU/p/2026068",
+   "price": 5499.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/ha5/h92/489095573733406.jpg",
+   "inStock": true,
+   "mpn": "100U6SAU",
    "brand": "Hisense"
   },
   {
@@ -54,17 +65,6 @@
    "image": "https://www.costco.com.au/medias/sys_master/images/hfe/hb9/474018626142238.jpg",
    "inStock": true,
    "mpn": "55U6SAU",
-   "brand": "Hisense"
-  },
-  {
-   "retailer": "costco",
-   "sku": "2026058",
-   "title": "Hisense 55 inch U7SAU ULED Mini LED 4K Smart TV 55U7SAU",
-   "url": "https://www.costco.com.au/c/Hisense-55-inch-U7SAU-ULED-Mini-LED-4K-Smart-TV-55U7SAU/p/2026058",
-   "price": 1199.99,
-   "image": "https://www.costco.com.au/medias/sys_master/images/hf1/h34/473783752491038.jpg",
-   "inStock": true,
-   "mpn": "55U7SAU",
    "brand": "Hisense"
   },
   {
@@ -179,13 +179,13 @@
   },
   {
    "retailer": "costco",
-   "sku": "2026153",
-   "title": "LG 55 Inch OLED AI B6 4K Smart TV OLED55B6PSA",
-   "url": "https://www.costco.com.au/c/LG-55-Inch-OLED-AI-B6-4K-Smart-TV-OLED55B6PSA/p/2026153",
-   "price": 2299.99,
-   "image": "https://www.costco.com.au/medias/sys_master/images/h50/hde/473783797055518.jpg",
+   "sku": "2026167",
+   "title": "LG 55 Inch QNED86B EVO AI Mini LED 4K Smart TV 55QNED86BSA",
+   "url": "https://www.costco.com.au/Electronics/TVs-Projectors/TVs/LG-55-Inch-QNED86B-EVO-AI-Mini-LED-4K-Smart-TV-55QNED86BSA/p/2026167",
+   "price": 1499.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/ha3/h54/504734931779614.jpg",
    "inStock": true,
-   "mpn": "OLED55B6PSA",
+   "mpn": "55QNED86BSA",
    "brand": "LG"
   },
   {
@@ -234,28 +234,6 @@
   },
   {
    "retailer": "costco",
-   "sku": "2026001",
-   "title": "Samsung 43 Inch M70H Mini LED 4K Vision AI Smart TV UA43M70HAWXXY",
-   "url": "https://www.costco.com.au/c/Samsung-43-Inch-M70H-Mini-LED-4K-Vision-AI-Smart-TV-UA43M70HAWXXY/p/2026001",
-   "price": 699.99,
-   "image": "https://www.costco.com.au/medias/sys_master/images/h20/he4/473783739252766.jpg",
-   "inStock": true,
-   "mpn": "UA43M70HAWXXY",
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "costco",
-   "sku": "2026002",
-   "title": "Samsung 55 Inch M70H Mini LED 4K Vision AI Smart TV UA55M70HAWXXY",
-   "url": "https://www.costco.com.au/c/Samsung-55-Inch-M70H-Mini-LED-4K-Vision-AI-Smart-TV-UA55M70HAWXXY/p/2026002",
-   "price": 899.99,
-   "image": "https://www.costco.com.au/medias/sys_master/images/hc1/h02/473783741808670.jpg",
-   "inStock": true,
-   "mpn": "UA55M70HAWXXY",
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "costco",
    "sku": "2026212",
    "title": "Sony 100 Inch BRAVIA 3 II 4K AI 4K Google TV K100XR30M2",
    "url": "https://www.costco.com.au/c/Sony-100-Inch-BRAVIA-3-II-4K-AI-4K-Google-TV-K100XR30M2/p/2026212",
@@ -278,6 +256,17 @@
   },
   {
    "retailer": "costco",
+   "sku": "2026213",
+   "title": "Sony 43 Inch BRAVIA 2 II 4K AI Google TV K43S20M2",
+   "url": "https://www.costco.com.au/Electronics/TVs-Projectors/TVs/Sony-43-Inch-BRAVIA-2-II-4K-AI-Google-TV-K43S20M2/p/2026213",
+   "price": 1099.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/h31/h9e/502583927799838.jpg",
+   "inStock": true,
+   "mpn": "K43S20M2",
+   "brand": "Sony"
+  },
+  {
+   "retailer": "costco",
    "sku": "195150",
    "title": "Sony 43 Inch BRAVIA 3 4K HDR Google TV K43S30",
    "url": "https://www.costco.com.au/Electronics/TVs-Projectors/TVs/Sony-43-Inch-BRAVIA-3-4K-HDR-Google-TV-K43S30/p/195150",
@@ -296,6 +285,28 @@
    "image": "https://www.costco.com.au/medias/sys_master/images/h5e/h07/502583923441694.jpg",
    "inStock": true,
    "mpn": "K55XR30M2",
+   "brand": "Sony"
+  },
+  {
+   "retailer": "costco",
+   "sku": "241348",
+   "title": "Sony 55 Inch BRAVIA 5 4K HDR Mini LED TV K55XR50",
+   "url": "https://www.costco.com.au/c/Sony-55-Inch-BRAVIA-5-4K-HDR-Mini-LED-TV-K55XR50/p/241348",
+   "price": 2199.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/h9d/hbe/485075672530974.jpg",
+   "inStock": true,
+   "mpn": "K55XR50",
+   "brand": "Sony"
+  },
+  {
+   "retailer": "costco",
+   "sku": "2026202",
+   "title": "Sony 65 inch BRAVIA 2 II 4K HDR Google TV K65S20M2",
+   "url": "https://www.costco.com.au/Electronics/TVs-Projectors/TVs/Sony-65-inch-BRAVIA-2-II-4K-HDR-Google-TV-K65S20M2/p/2026202",
+   "price": 1399.99,
+   "image": "https://www.costco.com.au/medias/sys_master/images/ha2/h02/502583570399262.jpg",
+   "inStock": true,
+   "mpn": "K65S20M2",
    "brand": "Sony"
   },
   {
@@ -394,17 +405,6 @@
    "image": "https://www.costco.com.au/medias/sys_master/images/h3b/heb/473783759208478.jpg",
    "inStock": true,
    "mpn": "50P7LS",
-   "brand": "TCL"
-  },
-  {
-   "retailer": "costco",
-   "sku": "229421",
-   "title": "TCL 55 Inch C6K QD-Mini LED Google TV 55C6K",
-   "url": "https://www.costco.com.au/Electronics/TVs-Projectors/TVs/TCL-55-Inch-C6K-QD-Mini-LED-Google-TV-55C6K/p/229421",
-   "price": 1239.99,
-   "image": "https://www.costco.com.au/medias/sys_master/images/h5f/hc1/473783825235998.jpg",
-   "inStock": true,
-   "mpn": "55C6K",
    "brand": "TCL"
   },
   {

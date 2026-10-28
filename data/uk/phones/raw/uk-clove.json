@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:55:31.077Z",
+ "scrapedAt": "2026-10-27T23:44:41.973Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -576,7 +576,7 @@
    "sku": "98954365",
    "title": "Doro Aurora A10 - 64GB + 4GB - Graphite",
    "url": "https://www.clove.co.uk/products/doro-aurora-a10-64gb-4gb-graphite",
-   "price": 189.57,
+   "price": 205.46,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ac18009f-5682-4474-8599-9c669dde3f1b.jpg?v=1760000120",
    "inStock": true,
    "brand": "Doro"
@@ -596,7 +596,7 @@
    "sku": "98982948",
    "title": "Doro Aurora A20 - 64GB + 4GB - Graphite",
    "url": "https://www.clove.co.uk/products/doro-aurora-a20-64gb-4gb-graphite",
-   "price": 215.25,
+   "price": 213.94,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/af877a1f-630e-4443-82ae-fdf9de74fefe.jpg?v=1760000117",
    "inStock": true,
    "brand": "Doro"
@@ -606,7 +606,7 @@
    "sku": "99004550",
    "title": "Doro Aurora A30 - 128GB + 6GB - Black / White",
    "url": "https://www.clove.co.uk/products/doro-aurora-a30-128gb-6gb-black-white",
-   "price": 249.48,
+   "price": 248.17,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3c3866e8-bc28-4af6-94f4-548b1a97210c.jpg?v=1760000092",
    "inStock": true,
    "brand": "Doro"
@@ -733,53 +733,243 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "FAIRP-P5128BLK",
-   "title": "Fairphone 5 (5G) Dual SIM Matte Black 128GB + 6GB RAM",
-   "url": "https://www.clove.co.uk/products/fairphone-5-5g?variant=41183843057707",
-   "price": 419,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/KeyVisual_AllColors_V1_Commercial_NoShadows_BRANDREFRESH-FINAL-DEC2024.jpg?v=1739533969",
-   "inStock": false,
-   "brand": "Fairphone"
+   "sku": "GOOG-P10128WHI",
+   "title": "Google Pixel 10 (5G) Dual SIM Frost 128GB + 12GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-5g?variant=43120100737067",
+   "price": 650,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10Obsidian.png?v=1793114568",
+   "inStock": true,
+   "brand": "Google"
   },
   {
    "retailer": "uk-clove",
-   "sku": "FAIRP-P5256BLK",
-   "title": "Fairphone 5 (5G) Dual SIM Matte Black 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/fairphone-5-5g?variant=40876570050603",
-   "price": 479,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/KeyVisual_AllColors_V1_Commercial_NoShadows_BRANDREFRESH-FINAL-DEC2024.jpg?v=1739533969",
-   "inStock": false,
-   "brand": "Fairphone"
+   "sku": "GOOG-P10256WHI",
+   "title": "Google Pixel 10 (5G) Dual SIM Frost 256GB + 12GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-5g?variant=43120100638763",
+   "price": 720,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10Obsidian.png?v=1793114568",
+   "inStock": true,
+   "brand": "Google"
   },
   {
    "retailer": "uk-clove",
-   "sku": "FAIRP-P5128GRN",
-   "title": "Fairphone 5 (5G) Dual SIM Moss Green 128GB + 6GB RAM",
-   "url": "https://www.clove.co.uk/products/fairphone-5-5g?variant=41183843123243",
-   "price": 419,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/KeyVisual_AllColors_V1_Commercial_NoShadows_BRANDREFRESH-FINAL-DEC2024.jpg?v=1739533969",
-   "inStock": false,
-   "brand": "Fairphone"
+   "sku": "GOOG-P10128BLU",
+   "title": "Google Pixel 10 (5G) Dual SIM Indigo 128GB + 12GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-5g?variant=43120100835371",
+   "price": 650,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10Obsidian.png?v=1793114568",
+   "inStock": true,
+   "brand": "Google"
   },
   {
    "retailer": "uk-clove",
-   "sku": "FAIRP-P5256BLU",
-   "title": "Fairphone 5 (5G) Dual SIM Sky Blue 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/fairphone-5-5g?variant=40876570083371",
-   "price": 479,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/KeyVisual_AllColors_V1_Commercial_NoShadows_BRANDREFRESH-FINAL-DEC2024.jpg?v=1739533969",
-   "inStock": false,
-   "brand": "Fairphone"
+   "sku": "GOOG-P10256BLU",
+   "title": "Google Pixel 10 (5G) Dual SIM Indigo 256GB + 12GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-5g?variant=43120100704299",
+   "price": 720,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10Obsidian.png?v=1793114568",
+   "inStock": true,
+   "brand": "Google"
   },
   {
    "retailer": "uk-clove",
-   "sku": "FAIRP-P5256CLE",
-   "title": "Fairphone 5 (5G) Dual SIM Transparent Edition 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/fairphone-5-5g?variant=40876570017835",
-   "price": 479,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/KeyVisual_AllColors_V1_Commercial_NoShadows_BRANDREFRESH-FINAL-DEC2024.jpg?v=1739533969",
-   "inStock": false,
-   "brand": "Fairphone"
+   "sku": "GOOG-P10128YEL",
+   "title": "Google Pixel 10 (5G) Dual SIM Lemongrass 128GB + 12GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-5g?variant=43120100671531",
+   "price": 650,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10Obsidian.png?v=1793114568",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10256YEL",
+   "title": "Google Pixel 10 (5G) Dual SIM Lemongrass 256GB + 12GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-5g?variant=43120100868139",
+   "price": 720,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10Obsidian.png?v=1793114568",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10128BLK",
+   "title": "Google Pixel 10 (5G) Dual SIM Obsidian 128GB + 12GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-5g?variant=43120100769835",
+   "price": 650,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10Obsidian.png?v=1793114568",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10256BLK",
+   "title": "Google Pixel 10 (5G) Dual SIM Obsidian 256GB + 12GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-5g?variant=43120100802603",
+   "price": 720,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10Obsidian.png?v=1793114568",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO128GRN",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Jade 128GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091688491",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO1TBGRN",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Jade 1TB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091754027",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO256GRN",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Jade 256GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091819563",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO512GRN",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Jade 512GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091557419",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO128GRY",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Moonstone 128GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091786795",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO1TBGRY",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Moonstone 1TB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091885099",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO256GRY",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Moonstone 256GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091983403",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO512GRY",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Moonstone 512GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091917867",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO128BLK",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Obsidian 128GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091590187",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO1TBBLK",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Obsidian 1TB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091655723",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO256BLK",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Obsidian 256GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693092048939",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO512BLK",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Obsidian 512GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091622955",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO128WHI",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Porcelain 128GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091721259",
+   "price": 649,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO1TBWHI",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Porcelain 1TB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091950635",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO256WHI",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Porcelain 256GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693091852331",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PRO512WHI",
+   "title": "Google Pixel 10 Pro (5G) Dual SIM Porcelain 512GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-5g?variant=42693092016171",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian_7e47ad7f-2cab-4d57-a223-3a4ff7d50680.png?v=1793114764",
+   "inStock": true,
+   "brand": "Google"
   },
   {
    "retailer": "uk-clove",
@@ -788,6 +978,16 @@
    "url": "https://www.clove.co.uk/products/google-pixel-10-pro-fold-5g?variant=43120450142251",
    "price": 1084.99,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1-google-pixel-10-fold-moonstone-front-back.png?v=1782491082",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "GOOG-P10PROXL256BLK",
+   "title": "Google Pixel 10 Pro XL (5G) Dual SIM Obsidian 256GB + 16GB RAM",
+   "url": "https://www.clove.co.uk/products/google-pixel-10-pro-xl-5g?variant=42693093326891",
+   "price": 799,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel10ProObsidian.png?v=1793114757",
    "inStock": true,
    "brand": "Google"
   },
@@ -1066,335 +1266,10 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "GOGP-P6PROWHI",
-   "title": "Google Pixel 6 Pro (5G) UK Model - Dual SIM (single nano-sim and eSIM) Cloudy White 128GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-6-pro?variant=39581950836779",
-   "price": 899.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/products/google-pixel-6-pro-stormy-black-front.png?v=1665058279",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P6PROSUN",
-   "title": "Google Pixel 6 Pro (5G) UK Model - Dual SIM (single nano-sim and eSIM) Sorta Sunny 128GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-6-pro?variant=39631494905899",
-   "price": 899.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/products/google-pixel-6-pro-stormy-black-front.png?v=1665058279",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P6PROBLK",
-   "title": "Google Pixel 6 Pro (5G) UK Model - Dual SIM (single nano-sim and eSIM) Stormy Black 128GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-6-pro?variant=39651811819563",
-   "price": 899,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/products/google-pixel-6-pro-stormy-black-front.png?v=1665058279",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P6PRO256BLK",
-   "title": "Google Pixel 6 Pro (5G) UK Model - Dual SIM (single nano-sim and eSIM) Stormy Black 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-6-pro?variant=39662563688491",
-   "price": 1002.27,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/products/google-pixel-6-pro-stormy-black-front.png?v=1665058279",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8PRO128BLU",
-   "title": "Google Pixel 8 Pro UK Model Bay 128GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8-pro?variant=40909469122603",
-   "price": 1109,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-pro-obsidian-front.jpg?v=1696438469",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8PRO256BLU",
-   "title": "Google Pixel 8 Pro UK Model Bay 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8-pro?variant=40909469089835",
-   "price": 947,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-pro-obsidian-front.jpg?v=1696438469",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8PRO512BLU",
-   "title": "Google Pixel 8 Pro UK Model Bay 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8-pro?variant=40909469220907",
-   "price": 1309,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-pro-obsidian-front.jpg?v=1696438469",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8PRO128BLK",
-   "title": "Google Pixel 8 Pro UK Model Obsidian 128GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8-pro?variant=40909469253675",
-   "price": 449,
-   "wasPrice": 999.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-pro-obsidian-front.jpg?v=1696438469",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8PRO256BLK",
-   "title": "Google Pixel 8 Pro UK Model Obsidian 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8-pro?variant=40909469188139",
-   "price": 947,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-pro-obsidian-front.jpg?v=1696438469",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8PRO512BLK",
-   "title": "Google Pixel 8 Pro UK Model Obsidian 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8-pro?variant=40909468991531",
-   "price": 1309,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-pro-obsidian-front.jpg?v=1696438469",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8PRO128WHI",
-   "title": "Google Pixel 8 Pro UK Model Porcelain 128GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8-pro?variant=40909469155371",
-   "price": 1109,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-pro-obsidian-front.jpg?v=1696438469",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8PRO256WHI",
-   "title": "Google Pixel 8 Pro UK Model Porcelain 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8-pro?variant=40909469024299",
-   "price": 1174,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-pro-obsidian-front.jpg?v=1696438469",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8PRO512WHI",
-   "title": "Google Pixel 8 Pro UK Model Porcelain 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8-pro?variant=40909469057067",
-   "price": 1309,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-pro-obsidian-front.jpg?v=1696438469",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8128GRY",
-   "title": "Google Pixel 8 UK Model Hazel 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8?variant=40909464698923",
-   "price": 554.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-obsidian-front.jpg?v=1696437840",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8256GRY",
-   "title": "Google Pixel 8 UK Model Hazel 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8?variant=40909464764459",
-   "price": 654.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-obsidian-front.jpg?v=1696437840",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8128BLK",
-   "title": "Google Pixel 8 UK Model Obsidian 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8?variant=40909464731691",
-   "price": 591.43,
-   "wasPrice": 599.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-obsidian-front.jpg?v=1696437840",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8256BLK",
-   "title": "Google Pixel 8 UK Model Obsidian 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8?variant=40909464797227",
-   "price": 839,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-obsidian-front.jpg?v=1696437840",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8128RGLD",
-   "title": "Google Pixel 8 UK Model Rose 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8?variant=40909464666155",
-   "price": 554.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-obsidian-front.jpg?v=1696437840",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8256RGLD",
-   "title": "Google Pixel 8 UK Model Rose 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8?variant=40909464829995",
-   "price": 654.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/google-pixel-8-obsidian-front.jpg?v=1696437840",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8A128GRN",
-   "title": "Google Pixel 8a Dual SIM Aloe 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8a?variant=41088166199339",
-   "price": 579.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel8a-Porcelain_Hero.jpg?v=1715165754",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8A128BLU",
-   "title": "Google Pixel 8a Dual SIM Bay 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8a?variant=41088166166571",
-   "price": 579.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel8a-Porcelain_Hero.jpg?v=1715165754",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8A128BLK",
-   "title": "Google Pixel 8a Dual SIM Obsidian 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8a?variant=41088166133803",
-   "price": 579.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel8a-Porcelain_Hero.jpg?v=1715165754",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8A256BLK",
-   "title": "Google Pixel 8a Dual SIM Obsidian 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8a?variant=41088166101035",
-   "price": 639.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel8a-Porcelain_Hero.jpg?v=1715165754",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOGP-P8A128WHI",
-   "title": "Google Pixel 8a Dual SIM Porcelain 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-8a?variant=41088166068267",
-   "price": 579.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Pixel8a-Porcelain_Hero.jpg?v=1715165754",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOOG-P9A128BLU",
-   "title": "Google Pixel 9a (5G) Dual SIM Iris 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-9a-5g?variant=41453772144683",
-   "price": 405,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/P9A128BLK_Hero.webp?v=1746098905",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOOG-P9A256BLU",
-   "title": "Google Pixel 9a (5G) Dual SIM Iris 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-9a-5g?variant=41453772079147",
-   "price": 500,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/P9A128BLK_Hero.webp?v=1746098905",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOOG-P9A128BLK",
-   "title": "Google Pixel 9a (5G) Dual SIM Obsidian 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-9a-5g?variant=41453772177451",
-   "price": 304.99,
-   "wasPrice": 389.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/P9A128BLK_Hero.webp?v=1746098905",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOOG-P9A256BLK",
-   "title": "Google Pixel 9a (5G) Dual SIM Obsidian 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-9a-5g?variant=41453771980843",
-   "price": 489.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/P9A128BLK_Hero.webp?v=1746098905",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOOG-P9A128PNK",
-   "title": "Google Pixel 9a (5G) Dual SIM Peony 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-9a-5g?variant=41453772046379",
-   "price": 329.99,
-   "wasPrice": 389.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/P9A128BLK_Hero.webp?v=1746098905",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOOG-P9A256PNK",
-   "title": "Google Pixel 9a (5G) Dual SIM Peony 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-9a-5g?variant=41453772013611",
-   "price": 500,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/P9A128BLK_Hero.webp?v=1746098905",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOOG-P9A128CRM",
-   "title": "Google Pixel 9a (5G) Dual SIM Porcelain 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-9a-5g?variant=41453772210219",
-   "price": 329.99,
-   "wasPrice": 389.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/P9A128BLK_Hero.webp?v=1746098905",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "GOOG-P9A256CRM",
-   "title": "Google Pixel 9a (5G) Dual SIM Porcelain 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/google-pixel-9a-5g?variant=41453772111915",
-   "price": 500,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/P9A128BLK_Hero.webp?v=1746098905",
-   "inStock": false,
-   "brand": "Google"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "HAMP-6LTE128BLK",
    "title": "Hammer 6 LTE Dual SIM Orange 128 GB + 48 MB RAM",
    "url": "https://www.clove.co.uk/products/hammer-6-lte",
-   "price": 90,
+   "price": 79.99,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f22123e3-f57b-473d-9238-3fc8eff10ccc.jpg?v=1727689034",
    "inStock": true,
    "brand": "Hammer"
@@ -1773,7 +1648,7 @@
    "url": "https://www.clove.co.uk/products/motorola-moto-g75-5g?variant=41217986625579",
    "price": 359.98,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/MotoG75_1.png?v=1731930885",
-   "inStock": false,
+   "inStock": true,
    "brand": "Motorola"
   },
   {
@@ -1783,7 +1658,7 @@
    "url": "https://www.clove.co.uk/products/motorola-moto-g75-5g?variant=41217986560043",
    "price": 359.98,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/MotoG75_1.png?v=1731930885",
-   "inStock": true,
+   "inStock": false,
    "brand": "Motorola"
   },
   {
@@ -1821,7 +1696,7 @@
    "sku": "99923310",
    "title": "Nothing Phone (3) - 256GB + 12GB - Black",
    "url": "https://www.clove.co.uk/products/nothing-phone-3-256gb-12gb-black",
-   "price": 541.53,
+   "price": 708.55,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/61YbN9tT88L._AC_SL1010.jpg?v=1760024580",
    "inStock": false,
    "brand": "Nothing"
@@ -1963,6 +1838,86 @@
    "url": "https://www.clove.co.uk/products/samsung-galaxy-a17-5g?variant=42044466200619",
    "price": 156,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMA175G1.2.responsive-lg.centre.webp?v=1755598352",
+   "inStock": false,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "SAMP-A26128BLK",
+   "title": "Samsung Galaxy A26 Dual SIM Black 128GB + 6GB RAM",
+   "url": "https://www.clove.co.uk/products/samsung-galaxy-a26?variant=41452260032555",
+   "price": 227.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e29eb21-c888-4b67-8ef0-35c10ab57c78.jpg?v=1746004159",
+   "inStock": true,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "SAMP-A26256BLK",
+   "title": "Samsung Galaxy A26 Dual SIM Black 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/samsung-galaxy-a26?variant=41452259934251",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e29eb21-c888-4b67-8ef0-35c10ab57c78.jpg?v=1746004159",
+   "inStock": false,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "SAMP-A26128GRN",
+   "title": "Samsung Galaxy A26 Dual SIM Mint 128GB + 6GB RAM",
+   "url": "https://www.clove.co.uk/products/samsung-galaxy-a26?variant=41452260065323",
+   "price": 227.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e29eb21-c888-4b67-8ef0-35c10ab57c78.jpg?v=1746004159",
+   "inStock": true,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "SAMP-A26256GRN",
+   "title": "Samsung Galaxy A26 Dual SIM Mint 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/samsung-galaxy-a26?variant=41452259868715",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e29eb21-c888-4b67-8ef0-35c10ab57c78.jpg?v=1746004159",
+   "inStock": false,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "SAMP-A26128PNK",
+   "title": "Samsung Galaxy A26 Dual SIM Peach Pink 128GB + 6GB RAM",
+   "url": "https://www.clove.co.uk/products/samsung-galaxy-a26?variant=41452259999787",
+   "price": 227.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e29eb21-c888-4b67-8ef0-35c10ab57c78.jpg?v=1746004159",
+   "inStock": false,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "SAMP-A26256PNK",
+   "title": "Samsung Galaxy A26 Dual SIM Peach Pink 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/samsung-galaxy-a26?variant=41452259967019",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e29eb21-c888-4b67-8ef0-35c10ab57c78.jpg?v=1746004159",
+   "inStock": false,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "SAMP-A26128WHI",
+   "title": "Samsung Galaxy A26 Dual SIM White 128GB + 6GB RAM",
+   "url": "https://www.clove.co.uk/products/samsung-galaxy-a26?variant=41452260098091",
+   "price": 227.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e29eb21-c888-4b67-8ef0-35c10ab57c78.jpg?v=1746004159",
+   "inStock": true,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "SAMP-A26256WHI",
+   "title": "Samsung Galaxy A26 Dual SIM White 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/samsung-galaxy-a26?variant=41452259901483",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e29eb21-c888-4b67-8ef0-35c10ab57c78.jpg?v=1746004159",
    "inStock": false,
    "brand": "Samsung"
   },
@@ -2184,90 +2139,6 @@
    "price": 519.99,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0ddf63ec-7b15-4c0e-901a-2e9e5dc09150.jpg?v=1793016608",
    "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-A56128GRY",
-   "title": "Samsung Galaxy A56 (5G) Dual SIM Awesome Graphite 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-a56-5g?variant=41398602399787",
-   "price": 295,
-   "wasPrice": 303.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e20bcb1-9468-41a5-a568-a88a72b11e40.jpg?v=1742919907",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-A56256GRY",
-   "title": "Samsung Galaxy A56 (5G) Dual SIM Awesome Graphite 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-a56-5g?variant=41398602268715",
-   "price": 347,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e20bcb1-9468-41a5-a568-a88a72b11e40.jpg?v=1742919907",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-A56128SIL",
-   "title": "Samsung Galaxy A56 (5G) Dual SIM Awesome Lightgrey 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-a56-5g?variant=41398602334251",
-   "price": 295,
-   "wasPrice": 303.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e20bcb1-9468-41a5-a568-a88a72b11e40.jpg?v=1742919907",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-A56256SIL",
-   "title": "Samsung Galaxy A56 (5G) Dual SIM Awesome Lightgrey 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-a56-5g?variant=41398602301483",
-   "price": 347,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e20bcb1-9468-41a5-a568-a88a72b11e40.jpg?v=1742919907",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-A56128GRN",
-   "title": "Samsung Galaxy A56 (5G) Dual SIM Awesome Olive 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-a56-5g?variant=41398602367019",
-   "price": 295,
-   "wasPrice": 303.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e20bcb1-9468-41a5-a568-a88a72b11e40.jpg?v=1742919907",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-A56256GRN",
-   "title": "Samsung Galaxy A56 (5G) Dual SIM Awesome Olive 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-a56-5g?variant=41398602498091",
-   "price": 347,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e20bcb1-9468-41a5-a568-a88a72b11e40.jpg?v=1742919907",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-A56128PK",
-   "title": "Samsung Galaxy A56 (5G) Dual SIM Awesome Pink 128GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-a56-5g?variant=41398602465323",
-   "price": 295,
-   "wasPrice": 303.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e20bcb1-9468-41a5-a568-a88a72b11e40.jpg?v=1742919907",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-A56256PK",
-   "title": "Samsung Galaxy A56 (5G) Dual SIM Awesome Pink 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-a56-5g?variant=41398602432555",
-   "price": 347,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e20bcb1-9468-41a5-a568-a88a72b11e40.jpg?v=1742919907",
-   "inStock": false,
    "brand": "Samsung"
   },
   {
@@ -2572,216 +2443,6 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "SAMP-S25U1TBBLK",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium Black 1TB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309623851",
-   "price": 1375,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U256BLK",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium Black 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309689387",
-   "price": 932,
-   "wasPrice": 950,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U512BLK",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium Black 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309656619",
-   "price": 1021,
-   "wasPrice": 1100,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U1TBGRY",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium Gray 1TB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309591083",
-   "price": 1375,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U256GRY",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium Gray 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309525547",
-   "price": 932,
-   "wasPrice": 950,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U512GRY",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium Gray 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309558315",
-   "price": 1021,
-   "wasPrice": 1100,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U1TBBLU",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium Silver Blue 1TB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309853227",
-   "price": 1375,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U256BLU",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium Silver Blue 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309820459",
-   "price": 932,
-   "wasPrice": 950,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U512BLU",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium Silver Blue 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309885995",
-   "price": 1021,
-   "wasPrice": 1100,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U1TBWHI",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium White Silver 1TB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309787691",
-   "price": 1375,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U256WHI",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium White Silver 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309754923",
-   "price": 932,
-   "wasPrice": 950,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25U512WHI",
-   "title": "Samsung Galaxy S25 Ultra Dual SIM Titanium White Silver 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-ultra?variant=41306309722155",
-   "price": 1021,
-   "wasPrice": 1100,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25UGRY_Hero.jpg?v=1737978626",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25P256BLU",
-   "title": "Samsung Galaxy S25+ Dual SIM Icy Blue 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-plus?variant=41306275938347",
-   "price": 735,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25PNVY_Hero.jpg?v=1737977551",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25P512BLU",
-   "title": "Samsung Galaxy S25+ Dual SIM Icy Blue 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-plus?variant=41306275807275",
-   "price": 816,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25PNVY_Hero.jpg?v=1737977551",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25P256MNT",
-   "title": "Samsung Galaxy S25+ Dual SIM Mint 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-plus?variant=41306275774507",
-   "price": 735,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25PNVY_Hero.jpg?v=1737977551",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25P512MNT",
-   "title": "Samsung Galaxy S25+ Dual SIM Mint 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-plus?variant=41306275840043",
-   "price": 816,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25PNVY_Hero.jpg?v=1737977551",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25P256NVY",
-   "title": "Samsung Galaxy S25+ Dual SIM Navy 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-plus?variant=41306275905579",
-   "price": 735,
-   "wasPrice": 820,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25PNVY_Hero.jpg?v=1737977551",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25P512NVY",
-   "title": "Samsung Galaxy S25+ Dual SIM Navy 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-plus?variant=41306275741739",
-   "price": 816,
-   "wasPrice": 925,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25PNVY_Hero.jpg?v=1737977551",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25P256SIL",
-   "title": "Samsung Galaxy S25+ Dual SIM Silver Shadow 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-plus?variant=41306275872811",
-   "price": 735,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25PNVY_Hero.jpg?v=1737977551",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-S25P512SIL",
-   "title": "Samsung Galaxy S25+ Dual SIM Silver Shadow 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-s25-plus?variant=41306275971115",
-   "price": 816,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/SAMP-S25PNVY_Hero.jpg?v=1737977551",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "SAMP-S26256BLK",
    "title": "Samsung Galaxy S26 Dual SIM Black 256GB + 12GB RAM",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-s26-1?variant=43104881246251",
@@ -3072,185 +2733,12 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "SAMP-ZFLIP6256BLU",
-   "title": "Samsung Galaxy Z Flip6 (5G) Dual SIM Blue 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-flip6-5g?variant=41133340753963",
-   "price": 721.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFlip6-Blue_Hero.jpg?v=1744197851",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFLIP6512BLU",
-   "title": "Samsung Galaxy Z Flip6 (5G) Dual SIM Blue 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-flip6-5g?variant=41133340524587",
-   "price": 792,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFlip6-Blue_Hero.jpg?v=1744197851",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFLIP6256GRN",
-   "title": "Samsung Galaxy Z Flip6 (5G) Dual SIM Mint 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-flip6-5g?variant=41133340622891",
-   "price": 721.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFlip6-Blue_Hero.jpg?v=1744197851",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFLIP6512GRN",
-   "title": "Samsung Galaxy Z Flip6 (5G) Dual SIM Mint 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-flip6-5g?variant=41133340655659",
-   "price": 792,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFlip6-Blue_Hero.jpg?v=1744197851",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFLIP6256SIL",
-   "title": "Samsung Galaxy Z Flip6 (5G) Dual SIM Silver Shadow 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-flip6-5g?variant=41133340721195",
-   "price": 708,
-   "wasPrice": 721.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFlip6-Blue_Hero.jpg?v=1744197851",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFLIP6512SIL",
-   "title": "Samsung Galaxy Z Flip6 (5G) Dual SIM Silver Shadow 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-flip6-5g?variant=41133340557355",
-   "price": 781,
-   "wasPrice": 792,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFlip6-Blue_Hero.jpg?v=1744197851",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFLIP6256YEL",
-   "title": "Samsung Galaxy Z Flip6 (5G) Dual SIM Yellow 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-flip6-5g?variant=41133340688427",
-   "price": 721.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFlip6-Blue_Hero.jpg?v=1744197851",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFLIP6512YEL",
-   "title": "Samsung Galaxy Z Flip6 (5G) Dual SIM Yellow 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-flip6-5g?variant=41133340590123",
-   "price": 792,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFlip6-Blue_Hero.jpg?v=1744197851",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "SAMS-ZFLIP8256BLK",
    "title": "Samsung Galaxy Z Flip8 Dual SIM Graphite 256GB + 12GB RAM",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-z-flip8?variant=44468366639147",
    "price": 1139,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/011-galaxy-zflip8-graphite-table-top-left-30-back_1100.png?v=1784814959",
    "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFOLD61TBBLU",
-   "title": "Samsung Galaxy Z Fold6 (5G) Dual SIM Navy 1TB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-fold6-5g?variant=41133335740459",
-   "price": 2684.45,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFold6-SilverShadow_Hero.jpg?v=1720697528",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFOLD6256BLU",
-   "title": "Samsung Galaxy Z Fold6 (5G) Dual SIM Navy 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-fold6-5g?variant=41133335904299",
-   "price": 813,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFold6-SilverShadow_Hero.jpg?v=1720697528",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFOLD6512BLU",
-   "title": "Samsung Galaxy Z Fold6 (5G) Dual SIM Navy 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-fold6-5g?variant=41133335707691",
-   "price": 867.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFold6-SilverShadow_Hero.jpg?v=1720697528",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFOLD61TBPNK",
-   "title": "Samsung Galaxy Z Fold6 (5G) Dual SIM Pink 1TB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-fold6-5g?variant=41133335805995",
-   "price": 2684.45,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFold6-SilverShadow_Hero.jpg?v=1720697528",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFOLD6256PNK",
-   "title": "Samsung Galaxy Z Fold6 (5G) Dual SIM Pink 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-fold6-5g?variant=41133335674923",
-   "price": 813,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFold6-SilverShadow_Hero.jpg?v=1720697528",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFOLD6512PNK",
-   "title": "Samsung Galaxy Z Fold6 (5G) Dual SIM Pink 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-fold6-5g?variant=41133335773227",
-   "price": 867.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFold6-SilverShadow_Hero.jpg?v=1720697528",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFOLD61TBSIL",
-   "title": "Samsung Galaxy Z Fold6 (5G) Dual SIM Silver Shadow 1TB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-fold6-5g?variant=41133335937067",
-   "price": 2684.45,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFold6-SilverShadow_Hero.jpg?v=1720697528",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFOLD6256SIL",
-   "title": "Samsung Galaxy Z Fold6 (5G) Dual SIM Silver Shadow 256GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-fold6-5g?variant=41133335871531",
-   "price": 813,
-   "wasPrice": 1271,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFold6-SilverShadow_Hero.jpg?v=1720697528",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "SAMP-ZFOLD6512SIL",
-   "title": "Samsung Galaxy Z Fold6 (5G) Dual SIM Silver Shadow 512GB + 12GB RAM",
-   "url": "https://www.clove.co.uk/products/samsung-galaxy-z-fold6-5g?variant=41133335838763",
-   "price": 867.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/GalaxyZFold6-SilverShadow_Hero.jpg?v=1720697528",
-   "inStock": false,
    "brand": "Samsung"
   },
   {
@@ -3464,7 +2952,7 @@
    "sku": "97115198",
    "title": "TCL 50 Pro NXTPAPER (5G) - 512GB + 8GB - Grey",
    "url": "https://www.clove.co.uk/products/tcl-50-pro-nxtpaper-5g-512gb-8gb-grey",
-   "price": 203.05,
+   "price": 196.5,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1f519ba9-6ebc-4722-a4f1-c414d3007c56.jpg?v=1760959599",
    "inStock": false
   },

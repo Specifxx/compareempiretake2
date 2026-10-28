@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:58:31.104Z",
+ "scrapedAt": "2026-10-27T23:47:54.253Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -389,7 +389,7 @@
    "url": "https://www.overclockers.co.uk/asus-vivobook-s16-32gb-16-wuxga-oled-1tb-amd-ryzen-ai-7-445-laptop/LAP-ASU-09480.html",
    "price": 1399.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw08010e40/images/data/product/30/c363fd/1b55e776d00e93ab2b9dd4537c007e6e842747e3.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -493,16 +493,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "LAP-LNV-06493",
-   "brand": "Lenovo",
-   "title": "Lenovo LOQ NVIDIA RTX 5060 16GB 15.6 FHD 144Hz Intel i7-13700HX Gaming Laptop",
-   "url": "https://www.overclockers.co.uk/lenovo-loq-nvidia-rtx-5060-16gb-15.6-fhd-144hz-intel-i7-13700hx-gaming-laptop/LAP-LNV-06493.html",
-   "price": 1399.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwcc830a73/images/data/product/48/06a1c4/dfc3d0cf72ebc00f48037ec3f5a34f119ce88ee0.jpg?sw=500",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "LAP-MDN-03821",
    "brand": "Medion",
    "title": "Medion Akoya E15443 16GB 15.6\" FHD 512GB Intel Core Ultra 5 125H Laptop",
@@ -517,7 +507,7 @@
    "brand": "Medion",
    "title": "Medion Erazer Beast 16 X1 NVIDIA RTX 5070Ti 32GB 16 QHD+ 300Hz AMD Ryzen 9-8940HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/medion-erazer-beast-16-x1-nvidia-rtx-5070ti-32gb-16-qhd-300hz-amd-ryzen-9-8940hx-gaming-laptop/LAP-MDN-07990.html",
-   "price": 2299.99,
+   "price": 2399.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwec7a64ce/images/data/product/8c/0a23c2/25736be6ea3b7d30c3b6277e55d3db3528d4a258.jpg?sw=500",
    "inStock": true
   },
@@ -527,7 +517,7 @@
    "brand": "Medion",
    "title": "Medion Erazer Beast 16 X1 NVIDIA RTX 5070Ti 32GB 16 QHD+ 300Hz Intel Core Ultra 9 290HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/medion-erazer-beast-16-x1-nvidia-rtx-5070ti-32gb-16-qhd-300hz-intel-core-ultra-9-290hx-gaming-laptop/LAP-MDN-07989.html",
-   "price": 2699.99,
+   "price": 2399.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwf987bc70/images/data/product/8c/04bfe2/aaab76475fb9088916edd1e2f4e72cdb2026a8d0.jpg?sw=500",
    "inStock": true
   },
@@ -537,7 +527,7 @@
    "brand": "Medion",
    "title": "Medion Erazer Beast 16 X1 NVIDIA RTX 5080 32GB 16 QHD+ 300Hz AMD Ryzen 9-9955HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/medion-erazer-beast-16-x1-nvidia-rtx-5080-32gb-16-qhd-300hz-amd-ryzen-9-9955hx-gaming-laptop/LAP-MDN-07992.html",
-   "price": 2799.95,
+   "price": 2899.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwcfd94d91/images/data/product/c9/0b4ae0/d38ae5a8304dc40c678304f9f9220fe1524f2678.jpg?sw=500",
    "inStock": true
   },
@@ -547,7 +537,7 @@
    "brand": "Medion",
    "title": "Medion Erazer Beast 16 X1 NVIDIA RTX 5080 32GB 16 QHD+ 300Hz Intel Core Ultra 9 290HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/medion-erazer-beast-16-x1-nvidia-rtx-5080-32gb-16-qhd-300hz-intel-core-ultra-9-290hx-gaming-laptop/LAP-MDN-07991.html",
-   "price": 3299.99,
+   "price": 2999.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe3c7246b/images/data/product/38/7a21b6/0b2533503cc4cab3d80e46fb39fef9d6ec6543f9.jpg?sw=500",
    "inStock": true
   },
@@ -567,7 +557,7 @@
    "brand": "Medion",
    "title": "Medion Erazer Beast 16 X1 NVIDIA RTX 5090 64GB 16 QHD+ MiniLED 300Hz Intel Core Ultra 9 290HX Plus Gaming Laptop",
    "url": "https://www.overclockers.co.uk/medion-erazer-beast-16-x1-nvidia-rtx-5090-64gb-16-qhd-miniled-300hz-intel-core-ultra-9-290hx-plus-gaming-laptop/LAP-MDN-07993.html",
-   "price": 3999.95,
+   "price": 4299.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8f42626f/images/data/product/5f/0526b8/aba04be735b9ed4edea037d3ab657659b8adec61.jpg?sw=500",
    "inStock": false
   },
@@ -577,7 +567,7 @@
    "brand": "Medion",
    "title": "Medion Erazer Defender 17 P10 NVIDIA RTX 5070 16GB 17.3 FHD 144Hz Intel Core i9-14900HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/medion-erazer-defender-17-p10-nvidia-rtx-5070-16gb-17.3-fhd-144hz-intel-core-i9-14900hx-gaming-laptop/LAP-MDN-08813.html",
-   "price": 1549.99,
+   "price": 1579.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwabe3b347/images/data/product/f4/945d4c/5b358a941835d93e20b864436ac030f838e5d3a5.jpg?sw=500",
    "inStock": true
   },
@@ -617,7 +607,7 @@
    "brand": "Medion",
    "title": "Medion Erazer Scout E17 NVIDIA RTX 5050 16GB 17.3 FHD 144Hz Intel Core 5 210H Gaming Laptop",
    "url": "https://www.overclockers.co.uk/medion-erazer-scout-e17-nvidia-rtx-5050-16gb-17.3-fhd-144hz-intel-core-5-210h-gaming-laptop/LAP-MDN-05729.html",
-   "price": 1099.99,
+   "price": 1049.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwf3d02598/images/data/product/c7/520cc2/6bd1f8fc08d1526d0452331bb8ca524349c1bddc.png?sw=500",
    "inStock": true
   },
@@ -927,7 +917,7 @@
    "brand": "MSI",
    "title": "MSI Raider 16 MAX HX NVIDIA RTX 5090 32GB 16 QHD+ OLED 240Hz Intel Core Ultra 9 290HX Plus Gaming Laptop",
    "url": "https://www.overclockers.co.uk/msi-raider-16-max-hx-nvidia-rtx-5090-32gb-16-qhd-oled-240hz-intel-core-ultra-9-290hx-plus-gaming-laptop/LAP-MSI-08088.html",
-   "price": 3799.99,
+   "price": 3849.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw065f43c1/images/data/product/f7/2e2512/57bacec44fe961045b5bd80333534f7ccb1b4312.jpg?sw=500",
    "inStock": false
   },
@@ -987,7 +977,7 @@
    "brand": "MSI",
    "title": "MSI Raider 18 HX NVIDIA RTX 5080 64GB 18 UHD+ MiniLED 120Hz AMD Ryzen 9 9955HX3D Gaming Laptop",
    "url": "https://www.overclockers.co.uk/msi-raider-18-hx-nvidia-rtx-5080-64gb-18-uhd-miniled-120hz-amd-ryzen-9-9955hx3d-gaming-laptop/LAP-MSI-03961.html",
-   "price": 3699.95,
+   "price": 3799.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw0fe90cc5/images/data/product/16/a74ba5/aadad3c161af9b6c7c569a90251817dcfe2e24fc.jpg?sw=500",
    "inStock": false
   },
@@ -1057,7 +1047,7 @@
    "brand": "MSI",
    "title": "MSI Vector 17 HX AI NVIDIA RTX 5090 32GB 17 QHD+ 240Hz Intel Core Ultra 9 275HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/msi-vector-17-hx-ai-nvidia-rtx-5090-32gb-17-qhd-240hz-intel-core-ultra-9-275hx-gaming-laptop/LAP-MSI-06266.html",
-   "price": 3299.99,
+   "price": 3349.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw0c4c1596/images/data/product/4e/8ddf9e/a20359f4c0f38af9809b5467c11be5ea79c011b8.jpg?sw=500",
    "inStock": true
   },

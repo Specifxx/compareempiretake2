@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T00:00:01.147Z",
+ "scrapedAt": "2026-10-27T23:49:34.670Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -7,9 +7,9 @@
    "mpn": "A1/CMK5X16G1B56C40A2",
    "title": "Box Opened Corsair Vengeance 16GB 1x16GB DIMM 5600MHz DDR5 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/grade-a1-corsair-vengeance-16gb-1x16gb-dimm-5600mhz-ddr5-desktop-memory-a1-cmk5x16g1b56c40a2/version.asp",
-   "price": 171.08,
+   "price": 166.81,
    "image": "https://www.laptopsdirect.co.uk/Images/CMK5X16G1B56C40A2_1_Classic.png?v=9",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -38,7 +38,8 @@
    "mpn": "CT16G56C46S5",
    "title": "Crucial 16GB (1x16GB) SO-DIMM 5600MHz DDR5 Laptop Memory",
    "url": "https://www.laptopsdirect.co.uk/crucial-16gb-1x16gb-so-dimm-ddr5-5600-desktop-memory-ct16g56c46s5/version.asp",
-   "price": 219.97,
+   "price": 201.97,
+   "wasPrice": 219.97,
    "image": "https://www.laptopsdirect.co.uk/Images/CT16G56C46S5_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -59,7 +60,7 @@
    "title": "Crucial CT8G4SFRA32AT 8GB 1x8GB SO-DIMM 3200MHz DDR4 Laptop Memory",
    "url": "https://www.laptopsdirect.co.uk/crucial-ct8g4sfra32at-8gb-1x8gb-so-dimm-3200-mhz-ddr4-laptop-memory-ct8g4sfra32at/version.asp",
    "price": 54.97,
-   "wasPrice": 59.98,
+   "wasPrice": 69.97,
    "image": "https://www.laptopsdirect.co.uk/Images/CT8G4SFRA32AT_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -90,7 +91,7 @@
    "mpn": "KCP432NS8/16",
    "title": "Kingston 16GB (1x16GB) DIMM 3200MHz DDR4 Module Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-kcp-16gb-ddr4-3200-module-sr-kcp432ns8-16/version.asp",
-   "price": 221.97,
+   "price": 223.97,
    "image": "https://www.laptopsdirect.co.uk/Images/A1KCP432NS816_1_Classic.png?v=6",
    "inStock": true
   },
@@ -100,7 +101,7 @@
    "mpn": "KCP556US8-16",
    "title": "Kingston 16GB (1x16GB) DIMM 5600MHz DDR5 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-16gb-2x8gb-dimm-5600mhz-ddr3-desktop-memory-kcp556us8-16/version.asp",
-   "price": 266.97,
+   "price": 294.97,
    "wasPrice": 365.99,
    "image": "https://www.laptopsdirect.co.uk/Images/KCP556US8-16_1_Classic.jpg?v=5",
    "inStock": true
@@ -122,7 +123,7 @@
    "mpn": "KCP556SS8-16",
    "title": "Kingston 16GB (1x16GB) SO-DIMM 5600MHz DDR5 Laptop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-16gb-1x16gb-so-dimm-5600mhz-ddr5-laptop-memory-kcp556ss8-16/version.asp",
-   "price": 297.97,
+   "price": 292.97,
    "wasPrice": 375.59,
    "image": "https://www.laptopsdirect.co.uk/Images/KCP556SS8-16_1_Classic.jpg?v=5",
    "inStock": true
@@ -243,9 +244,8 @@
    "title": "Kingston FURY Beast 16GB (2x8GB) DIMM 3600MHz DDR4 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-16gb-2x8gb-dimm-3600mhz-ddr4-desktop-memory-kf436c17bbk2-16/version.asp",
    "price": 238.97,
-   "wasPrice": 328.99,
    "image": "https://www.laptopsdirect.co.uk/Images/KF436C17BBK216_1_Classic.jpg?v=3",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -275,7 +275,6 @@
    "title": "Kingston FURY Beast 32GB (2x16GB) DIMM 3200MHz DDR4 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-32gb-2x16gb-dimm-3200mhz-ddr4-desktop-memory-kf432c16bbk2-32/version.asp",
    "price": 445.97,
-   "wasPrice": 469.18,
    "image": "https://www.laptopsdirect.co.uk/Images/KF432C16BBK232_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -333,16 +332,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1820815",
-   "mpn": "KF560C36BBEAK2-64",
-   "title": "Kingston FURY Beast RGB 64GB (2x32GB) DIMM 6000MT/s DDR5 Desktop Memory",
-   "url": "https://www.laptopsdirect.co.uk/kfb-64gb-ddr5-6000-dimm-k2-rgb-kf560c36bbeak2-64/version.asp",
-   "price": 1432.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/KF560C36BBEAK2-64_1_Classic.jpg?v=9",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1701243",
    "mpn": "KF432S20IB/16",
    "title": "Kingston FURY Impact 16GB (1x16GB) SO-DIMM 3200MHz DDR4 Laptop Memory",
@@ -381,7 +370,7 @@
    "title": "Kingston FURY Impact 8GB (1x8GB) SO-DIMM DDR4 3200MHz Laptop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-fury-impact-8gb-1x8gb-so-dimm-ddr4-3200mhz-laptop-memory-kf432s20ib-8/version.asp",
    "price": 91.97,
-   "wasPrice": 104.39,
+   "wasPrice": 107.99,
    "image": "https://www.laptopsdirect.co.uk/Images/KF432S20IB8_1_Classic.jpg?v=1",
    "inStock": true
   },

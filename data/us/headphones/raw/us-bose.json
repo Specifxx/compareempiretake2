@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:52:12.916Z",
+ "scrapedAt": "2026-10-27T23:41:27.888Z",
  "offers": [
   {
    "retailer": "us-bose",
@@ -7,7 +7,7 @@
    "mpn": "NCWEARB-HEADPHONEIN-BLK-WW",
    "brand": "Bose",
    "title": "Bose Noise Cancelling Wired Earbuds - Black",
-   "url": "https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html",
+   "url": "https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html?dwvar_NCWEARB-HEADPHONEIN_color=BLACK",
    "price": 99,
    "image": "https://assets.bosecreative.com/transform/66a721ef-9a18-4e4d-bc5a-c3f4c6aa61e0/FY27_NCWE27-Blk_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
    "inStock": false
@@ -18,7 +18,7 @@
    "mpn": "NCWEARB-HEADPHONEIN-DDPMNT-WW",
    "brand": "Bose",
    "title": "Bose Noise Cancelling Wired Earbuds - Dewdrop Mint",
-   "url": "https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html?dwvar_NCWEARB-HEADPHONEIN_color=DEWDROP%20MINT",
+   "url": "https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html",
    "price": 99,
    "image": "https://assets.bosecreative.com/transform/7cd72a47-a802-45a3-9144-2981411cdcb0/FY27_NCWELE27-DewMint_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
    "inStock": false
@@ -329,7 +329,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html?dwvar_QCUE2-HEADPHONEIN_color=DESERT%20GOLD",
    "price": 299,
    "image": "https://assets.bosecreative.com/transform/3bc18454-9326-4878-b4f4-c090f3fe0157/QCUEBIILE26-DesertGold_SF_PDP_E-Comm-Gallery_1_1632x1224?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -340,7 +340,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html?dwvar_QCUE2-HEADPHONEIN_color=MIDNIGHT%20VIOLET",
    "price": 299,
    "image": "https://assets.bosecreative.com/transform/99fc09f0-c8e6-4b88-ba28-6eafe31e151b/QCUEBIILE26-MidnightViolet_SF_E-Comm_Gallery_1_1632x1224?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -450,7 +450,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-open-earbuds/SPORTOPN26-HEADPHONEOPN.html",
    "price": 199,
    "image": "https://assets.bosecreative.com/transform/03a2b5cd-f5ff-42e8-a757-957205e928b9/FY27_OELE27-EucaGrn_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-bose",
@@ -472,7 +472,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-ultra-open-earbuds-2nd-gen/ULT2-HEADPHONEOPN.html?dwvar_ULT2-HEADPHONEOPN_color=BLACK",
    "price": 299,
    "image": "https://assets.bosecreative.com/transform/83cea5c8-af27-4e09-986e-41e160bcfa80/FY27_UOEBII27-Blk_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:18:59.829Z",
+ "scrapedAt": "2026-10-27T23:08:21.129Z",
  "offers": [
   {
    "retailer": "thegoodguys",
@@ -223,6 +223,16 @@
    "url": "https://www.thegoodguys.com.au/bose-quietcomfort-earbuds-white-smoke-888507-0200",
    "price": 289,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50091732_928669.png?v=1776226815&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Bose"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "bose-quietcomfort-headphones-884367-0100",
+   "title": "Bose QuietComfort Headphones",
+   "url": "https://www.thegoodguys.com.au/bose-quietcomfort-headphones-884367-0100",
+   "price": 449,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50087509_876022.png?v=1776228875&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Bose"
   },
@@ -608,11 +618,21 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "jbl-live-780nc-wireless-over-ear-noise-cancelling-headphones-champagne-6779636",
-   "title": "JBL Live 780NC Wireless Over-Ear Noise Cancelling Headphones - Champagne",
-   "url": "https://www.thegoodguys.com.au/jbl-live-780nc-wireless-over-ear-noise-cancelling-headphones-champagne-6779636",
+   "sku": "jbl-jr320-kids-on-ear-headphones-purple-6224880",
+   "title": "JBL JR320 Kids On Ear Headphones - Purple",
+   "url": "https://www.thegoodguys.com.au/jbl-jr320-kids-on-ear-headphones-purple-6224880",
+   "price": 39,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50093789_944264.png?v=1776231390&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "jbl-live-780nc-wireless-over-ear-noise-cancelling-headphones-black-6779635",
+   "title": "JBL Live 780NC Wireless Over-Ear Noise Cancelling Headphones - Black",
+   "url": "https://www.thegoodguys.com.au/jbl-live-780nc-wireless-over-ear-noise-cancelling-headphones-black-6779635",
    "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099842_1080265.png?v=1784261239&width=284&height=284&quality=88",
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099841_1080266.png?v=1784261641&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "JBL"
   },
@@ -683,16 +703,6 @@
    "url": "https://www.thegoodguys.com.au/jbl-soundgear-frame-square-onyx-6077088",
    "price": 169,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097714_1043279.png?v=1776230478&width=284&height=284&quality=88",
-   "inStock": true,
-   "brand": "JBL"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "jbl-tour-one-m2-5692360",
-   "title": "JBL Tour One M2",
-   "url": "https://www.thegoodguys.com.au/jbl-tour-one-m2-5692360",
-   "price": 295,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50084758_848671.png?v=1776229836&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "JBL"
   },
@@ -1332,6 +1342,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "sony-linkbuds-clip-earbuds-beige-wflc900c",
+   "title": "Sony LinkBuds Clip Earbuds - Greige",
+   "url": "https://www.thegoodguys.com.au/sony-linkbuds-clip-earbuds-beige-wflc900c",
+   "price": 245,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097668_1042794.png?v=1776230811&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WFLC900C",
+   "brand": "Sony"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "sony-in-ear-mdre9lpb-black-headphones-mdre9lpb",
    "title": "Sony MDR-E9LP Black Headphones",
    "url": "https://www.thegoodguys.com.au/sony-in-ear-mdre9lpb-black-headphones-mdre9lpb",
@@ -1383,6 +1404,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50029354_116689.png?v=1776228934&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "MDRZX110NC",
+   "brand": "Sony"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "sony-ult-wear-wireless-headphones-whult900nb",
+   "title": "Sony Ult Wear Noise Cancelling Headphones",
+   "url": "https://www.thegoodguys.com.au/sony-ult-wear-wireless-headphones-whult900nb",
+   "price": 349,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50089689_901948.png?v=1776745742&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WHULT900NB",
    "brand": "Sony"
   },
   {
@@ -1464,39 +1496,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "sony-wf-c710n-noise-cancelling-earbuds-black-wfc710nb",
-   "title": "Sony WF-C710N Noise Cancelling Earbuds - Black",
-   "url": "https://www.thegoodguys.com.au/sony-wf-c710n-noise-cancelling-earbuds-black-wfc710nb",
-   "price": 149,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094428_950954.png?v=1776232329&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WFC710NB",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "sony-wf-c710n-noise-cancelling-earbuds-blue-wfc710nl",
-   "title": "Sony WF-C710N Noise Cancelling Earbuds - Blue",
-   "url": "https://www.thegoodguys.com.au/sony-wf-c710n-noise-cancelling-earbuds-blue-wfc710nl",
-   "price": 149,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094430_950950.png?v=1776233262&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WFC710NL",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "sony-wf-c710n-noise-cancelling-earbuds-white-wfc710nw",
-   "title": "Sony WF-C710N Noise Cancelling Earbuds - White",
-   "url": "https://www.thegoodguys.com.au/sony-wf-c710n-noise-cancelling-earbuds-white-wfc710nw",
-   "price": 149,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094429_950949.png?v=1776231670&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WFC710NW",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "sony-wh1000xm4c-noise-cancelling-wireless-headphones-wh1000xm4cb",
    "title": "Sony WH-1000XM4C Noise Cancelling Wireless Headphones - Black",
    "url": "https://www.thegoodguys.com.au/sony-wh1000xm4c-noise-cancelling-wireless-headphones-wh1000xm4cb",
@@ -1548,39 +1547,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50081253_816497.png?v=1776235939&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "WH1000XM5S",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "sony-premium-noise-cancelling-headphones-wh1000xm6b",
-   "title": "Sony WH-1000XM6 Premium Noise Cancelling Headphones",
-   "url": "https://www.thegoodguys.com.au/sony-premium-noise-cancelling-headphones-wh1000xm6b",
-   "price": 577,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095165_958951.png?v=1776230289&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WH1000XM6B",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "sony-premium-noise-cancelling-headphones-sandstone-wh1000xm6t",
-   "title": "Sony WH-1000XM6 Premium Noise Cancelling Headphones - Sandstone",
-   "url": "https://www.thegoodguys.com.au/sony-premium-noise-cancelling-headphones-sandstone-wh1000xm6t",
-   "price": 577,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099705_1078862.png?v=1784013312&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WH1000XM6T",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "sony-premium-noise-cancelling-headphones-silver-wh1000xm6s",
-   "title": "Sony WH-1000XM6 Premium Noise Cancelling Headphones - Silver",
-   "url": "https://www.thegoodguys.com.au/sony-premium-noise-cancelling-headphones-silver-wh1000xm6s",
-   "price": 577,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095171_958966.png?v=1776232249&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WH1000XM6S",
    "brand": "Sony"
   },
   {
@@ -1640,17 +1606,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "sony-wh-ch730n-wireless-nc-headphones-beige-whch730nc",
-   "title": "Sony WH-CH730N Wireless NC Headphones - Beige",
-   "url": "https://www.thegoodguys.com.au/sony-wh-ch730n-wireless-nc-headphones-beige-whch730nc",
-   "price": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100620_1092312.png?v=1788825756&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WHCH730NC",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "sony-wh-ch730n-wireless-nc-headphones-black-whch730nb",
    "title": "Sony WH-CH730N Wireless NC Headphones - Black",
    "url": "https://www.thegoodguys.com.au/sony-wh-ch730n-wireless-nc-headphones-black-whch730nb",
@@ -1658,39 +1613,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100615_1092298.png?v=1788825706&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "WHCH730NB",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "sony-wh-ch730n-wireless-nc-headphones-blue-whch730nl",
-   "title": "Sony WH-CH730N Wireless NC Headphones - Blue",
-   "url": "https://www.thegoodguys.com.au/sony-wh-ch730n-wireless-nc-headphones-blue-whch730nl",
-   "price": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100618_1092297.png?v=1788826227&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WHCH730NL",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "sony-wh-ch730n-wireless-nc-headphones-pink-whch730np",
-   "title": "Sony WH-CH730N Wireless NC Headphones - Pink",
-   "url": "https://www.thegoodguys.com.au/sony-wh-ch730n-wireless-nc-headphones-pink-whch730np",
-   "price": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100619_1092323.png?v=1788825945&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WHCH730NP",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "sony-wh-ch730n-wireless-nc-headphones-white-whch730nw",
-   "title": "Sony WH-CH730N Wireless NC Headphones - White",
-   "url": "https://www.thegoodguys.com.au/sony-wh-ch730n-wireless-nc-headphones-white-whch730nw",
-   "price": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100617_1092290.png?v=1788826126&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WHCH730NW",
    "brand": "Sony"
   },
   {

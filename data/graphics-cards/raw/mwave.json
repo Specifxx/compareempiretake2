@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-26T23:15:42.355Z",
+ "scrapedAt": "2026-10-27T23:04:44.584Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -148,7 +148,7 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060-ti-prime-oc-16gb-video-card-ac88014",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060_ti_prime_oc_16gb_video_card_ac88014_4667.jpg?v=1787795378",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -186,7 +186,7 @@
    "sku": "AC99119",
    "title": "ASUS GeForce RTX 5060Ti T1 Series OC 8GB Video Card",
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060ti-t1-series-oc-8gb-video-card-ac99119",
-   "price": 999,
+   "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060ti_t1_series_oc_8gb_video_card_ac99119_86562.jpg?v=1787795385",
    "inStock": true,
    "brand": "Asus"
@@ -468,7 +468,7 @@
    "url": "https://www.mwave.com.au/products/asus-rog-strix-geforce-rtx-5070-ti-16gb-gddr7-oc-edition-video-card-ac81841",
    "price": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_geforce_rtx_5070_ti_16gb_gddr7_oc_edition_video_card_ac81841_17710.jpg?v=1787784050",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -618,7 +618,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-amd-radeon-ai-pro-r9700-ai-top-32g-gddr6-video-card-ac88000",
    "price": 3199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_amd_radeon_ai_pro_r9700_ai_top_32g_gddr6_video_card_ac88000_66390.jpg?v=1787796611",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gigabyte"
   },
   {
@@ -1038,7 +1038,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5070-windforce-oc-12gb-video-card-ac82984",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5070_windforce_oc_sff_12gb_video_card_ac82984_59894.jpg?v=1787796653",
-   "inStock": false,
+   "inStock": true,
    "brand": "Gigabyte"
   },
   {
@@ -1166,7 +1166,7 @@
    "sku": "AC62807",
    "title": "Gigabyte Radeon RX 7600 GAMING OC 8GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-radeon-rx-7600-gaming-oc-8gb-video-card",
-   "price": 479,
+   "price": 379,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/670.jpg?v=1790144493",
    "inStock": true,
    "brand": "Gigabyte"
@@ -1358,7 +1358,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5070-twin-x2-12gb-gddr7-video-card-ac83004",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5070_twin_x2_12gb_gddr7_video_card_ac83004_64565.jpg?v=1787797061",
-   "inStock": true,
+   "inStock": false,
    "brand": "Inno3D"
   },
   {
@@ -1566,7 +1566,7 @@
    "sku": "AC87148",
    "title": "MSI GeForce RTX 5060 SHADOW 2X OC 8GB Video Card",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5060-shadow-2x-oc-8gb-video-card-ac87148",
-   "price": 749,
+   "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5060_shadow_2x_oc_8gb_video_card_ac87148_71193.jpg?v=1787797743",
    "inStock": true,
    "brand": "MSI"
@@ -1628,7 +1628,7 @@
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5060-ti-shadow-2x-oc-plus-16gb-video-card-ac87143",
    "price": 1269,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5060_ti_shadow_2x_oc_plus_16gb_video_card_ac87143_72177.jpg?v=1787797745",
-   "inStock": true,
+   "inStock": false,
    "brand": "MSI"
   },
   {
@@ -1868,7 +1868,7 @@
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5080-gaming-trio-oc-16gb-video-card-ac81846",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5080_gaming_trio_oc_16gb_video_card_ac81846_37597.jpg?v=1787797753",
-   "inStock": false,
+   "inStock": true,
    "brand": "MSI"
   },
   {
@@ -2006,7 +2006,7 @@
    "sku": "AC84825",
    "title": "Palit GeForce  RTX 5060 Ti Dual 8GB GDDR7 Video Card",
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5060-ti-dual-8gb-gddr7-video-card-ac84825",
-   "price": 749,
+   "price": 629,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_rtx5060ti_dual_8g_gddr7_128bit_3dp_hdmi_ac84825_73058.jpg?v=1787798045",
    "inStock": true,
    "brand": "Palit"
@@ -2036,7 +2036,7 @@
    "sku": "AC91329",
    "title": "Palit GeForce RTX 5060 Infinity 2 OC 8GB Video Card",
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5060-infinity-2-oc-8gb-video-card-ac91329",
-   "price": 699,
+   "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5060_infinity_2_oc_8gb_video_card_ac91329_71081.jpg?v=1787798049",
    "inStock": true,
    "brand": "Palit"
@@ -2078,7 +2078,7 @@
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5070-infinity-3-12gb-gddr7-video-card-ac82998",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5070_infinity_3_12gb_gddr7_video_card_ac82998_4678.jpg?v=1787747035",
-   "inStock": true,
+   "inStock": false,
    "brand": "Palit"
   },
   {
@@ -2086,7 +2086,7 @@
    "sku": "AC88912",
    "title": "Palit GeForce RTX 5070 Ti GamingPro-S 16GB Video Card",
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5070-ti-gamingpros-16gb-video-card-ac88912",
-   "price": 1899,
+   "price": 1649,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5070_ti_gamingpros_16gb_video_card_ac88912_93702.jpg?v=1787798042",
    "inStock": true,
    "brand": "Palit"
@@ -2118,7 +2118,7 @@
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5080-infinity-3-16gb-video-card-ac98937",
    "price": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5080_infinity_3_16gb_video_card_ac98937_47714.jpg?v=1787798052",
-   "inStock": false,
+   "inStock": true,
    "brand": "Palit"
   },
   {
