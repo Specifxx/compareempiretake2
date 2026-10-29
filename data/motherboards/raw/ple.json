@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:05:17.576Z",
+ "scrapedAt": "2026-10-28T23:21:45.655Z",
  "offers": [
   {
    "retailer": "ple",
@@ -31,7 +31,7 @@
    "brand": "ASUS",
    "mpn": "B860M AYW GAMING WIFI",
    "url": "https://www.ple.com.au/products/676574/asus-b860m-ayw-gaming-wifi-lga1851-matx-desktop-motherboard",
-   "price": 169,
+   "price": 199,
    "wasPrice": 239,
    "image": "https://plecom.imgix.net/iil-435494-676574.jpg?w=600&h=600",
    "inStock": true
@@ -484,7 +484,7 @@
    "price": 969,
    "wasPrice": 1059,
    "image": "https://plecom.imgix.net/iil-400522-668588.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1841,6 +1841,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "676569",
+   "title": "MSI PRO B850M-A WiFi AM5 mATX Desktop Motherboard",
+   "brand": "MSI",
+   "mpn": "PRO B850M-A WIFI",
+   "url": "https://www.ple.com.au/products/676569/msi-pro-b850m-a-wifi-am5-matx-desktop-motherboard",
+   "price": 249,
+   "wasPrice": 309,
+   "image": "https://plecom.imgix.net/iil-436496-676569.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "676570",
    "title": "MSI PRO B850M-P WiFi AM5 mATX Desktop Motherboard",
    "brand": "MSI",
@@ -1905,7 +1917,7 @@
    "brand": "MSI",
    "mpn": "PRO X870E-P WIFI",
    "url": "https://www.ple.com.au/products/681515/msi-pro-x870e-p-wifi-am5-atx-desktop-motherboard",
-   "price": 359,
+   "price": 399,
    "wasPrice": 439,
    "image": "https://plecom.imgix.net/iil-457043-681515.jpg?w=600&h=600",
    "inStock": true

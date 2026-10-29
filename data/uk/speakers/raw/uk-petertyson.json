@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:48:40.378Z",
+ "scrapedAt": "2026-10-29T00:03:43.542Z",
  "offers": [
   {
    "retailer": "uk-petertyson",
@@ -259,7 +259,7 @@
    "sku": "57836",
    "title": "Bluesound PULSE FLEX (P130) Wireless All-In-One Music Streaming Speaker",
    "url": "https://petertyson.co.uk/bluesound-pulse-flex-p130",
-   "price": 299,
+   "price": 279,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/p/u/pulseflexblk_peter_tyson_av_main.webp",
    "inStock": false
   },
@@ -378,7 +378,8 @@
    "sku": "54930",
    "title": "Harman Kardon Aura Studio 5 Bluetooth Home Speaker - Black",
    "url": "https://petertyson.co.uk/harman-kardon-aura-studio-5",
-   "price": 299,
+   "price": 219,
+   "wasPrice": 299,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/k/hkauras5blk_2026_1.webp",
    "inStock": true
   },
@@ -387,7 +388,8 @@
    "sku": "54931",
    "title": "Harman Kardon Aura Studio 5 Wi-Fi Home Speaker",
    "url": "https://petertyson.co.uk/harman-kardon-aura-studio-5-wifi",
-   "price": 419,
+   "price": 299,
+   "wasPrice": 419,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/k/hkauras5wifi_2026_1.webp",
    "inStock": true
   },
@@ -405,7 +407,7 @@
    "sku": "55590",
    "title": "Harman Kardon Luna Portable Bluetooth Speaker",
    "url": "https://petertyson.co.uk/harman-kardon-luna",
-   "price": 129,
+   "price": 99,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/k/hkluna2mit_peter_tyson_main.webp",
    "inStock": true
   },
@@ -414,7 +416,8 @@
    "sku": "54965",
    "title": "Harman Kardon SoundSticks 5 Wi-Fi Speaker - White",
    "url": "https://petertyson.co.uk/harman-kardon-soundsticks-5-wi-fi-white",
-   "price": 449,
+   "price": 329,
+   "wasPrice": 449,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/k/hksoundwifiw_2026_1.webp",
    "inStock": true
   },
@@ -461,7 +464,7 @@
    "sku": "54927",
    "title": "JBL Boombox 4 Portable Bluetooth Speaker",
    "url": "https://petertyson.co.uk/jbl-boombox-4",
-   "price": 429,
+   "price": 349,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/b/o/boombox4blk_2026_1.webp",
    "inStock": true
   },
@@ -470,7 +473,7 @@
    "sku": "49560",
    "title": "JBL Charge 6 Portable Bluetooth Speaker",
    "url": "https://petertyson.co.uk/jbl-charge-6-portable-bluetooth-speaker",
-   "price": 149,
+   "price": 129,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/j/b/jbl_charge_6_red_hero_070_x1_1.webp",
    "inStock": true
   },
@@ -506,7 +509,7 @@
    "sku": "49553",
    "title": "JBL Flip 7 Portable Bluetooth Speaker",
    "url": "https://petertyson.co.uk/jbl-flip-7-wireless-portable-speaker",
-   "price": 115,
+   "price": 99,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/f/l/flip7pink_peter_tyson_main_1.webp",
    "inStock": true
   },
@@ -515,7 +518,7 @@
    "sku": "57477",
    "title": "JBL PartyBox 130",
    "url": "https://petertyson.co.uk/jbl-partybox-130",
-   "price": 399,
+   "price": 319,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/p/a/partybox130w_peter_tyson_main.webp",
    "inStock": true
   },
@@ -524,7 +527,7 @@
    "sku": "57692",
    "title": "JBL PartyBox 330",
    "url": "https://petertyson.co.uk/jbl-partybox-330",
-   "price": 579,
+   "price": 499,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/p/a/partybox330w_peter_tyson_main.webp",
    "inStock": true
   },
@@ -802,9 +805,27 @@
    "sku": "56200",
    "title": "Samsung LS70H Music Studio 7 Multi-Directional WiFi / Bluetooth Wireless Speaker",
    "url": "https://petertyson.co.uk/samsung-ls70h-music-studio-7",
-   "price": 449,
+   "price": 399,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/w/hwls70h_peter_tyson_main_1.webp",
    "inStock": true
+  },
+  {
+   "retailer": "uk-petertyson",
+   "sku": "59913",
+   "title": "Sonoro Vibes L Outdoor Bluetooth Speaker",
+   "url": "https://petertyson.co.uk/sonoro-vibes-l",
+   "price": 599,
+   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/v/i/vibeslblk_peter_tyson_av_category.webp",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-petertyson",
+   "sku": "59908",
+   "title": "Sonoro Vibes XL Outdoor Bluetooth Speaker",
+   "url": "https://petertyson.co.uk/sonoro-vibes-xl",
+   "price": 849,
+   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/v/i/vibesxlblk_peter_tyson_av_category.webp",
+   "inStock": false
   },
   {
    "retailer": "uk-petertyson",

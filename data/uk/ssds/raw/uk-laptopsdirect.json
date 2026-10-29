@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-10-27T23:49:36.762Z",
+ "scrapedAt": "2026-10-29T00:04:34.302Z",
  "offers": [
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2067524",
+   "mpn": "A1/SNV3S/2000G",
+   "title": "Box Opened Kingston NV3 2TB M.2 2280 Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/grade-a1-kingston-nv3-2tb-m.2-2280-internal-ssd-a1-snv3s-2000g/version.asp",
+   "price": 240.96,
+   "wasPrice": 304.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/SNV3S2000G_1_Classic.jpg?v=5",
+   "inStock": true
+  },
   {
    "retailer": "uk-laptopsdirect",
    "sku": "2047412",
@@ -73,6 +84,28 @@
    "url": "https://www.laptopsdirect.co.uk/kingston-kc3000-2048gb-m.2-ssd-skc3000d-2048g/version.asp",
    "price": 346.97,
    "image": "https://www.laptopsdirect.co.uk/Images/SKC3000D2048G_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1448671",
+   "mpn": "SKC600/256G",
+   "title": "Kingston KC600 256GB 2.5 Inch SATA Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/kingston-kc600-256gb-2.5-inch-sata-internal-ssd-skc600-256g/version.asp",
+   "price": 81.97,
+   "wasPrice": 94.79,
+   "image": "https://www.laptopsdirect.co.uk/Images/SKC600256G_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1838480",
+   "mpn": "SEDC600M/1920G",
+   "title": "Kingston KTC DC600M 1920GB 2.5 Inch SATA Enterprise SSD",
+   "url": "https://www.laptopsdirect.co.uk/kingston-ktc-dc600m-1920gb-2.5-sata-enterprise-ssd-sedc600m-1920g/version.asp",
+   "price": 1000,
+   "wasPrice": 1518.8,
+   "image": "https://www.laptopsdirect.co.uk/Images/SEDC600M1920G_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -165,7 +198,7 @@
    "title": "Kingston XS1000 2TB USB 3.2 Gen 2 Portable External SSD - Red",
    "url": "https://www.laptopsdirect.co.uk/kingston-xs1000-2tb-usb-3.2-gen-2-portable-external-ssd-red-sxs1000r-2000g/version.asp",
    "price": 320.97,
-   "wasPrice": 400.79,
+   "wasPrice": 401.99,
    "image": "https://www.laptopsdirect.co.uk/Images/SXS1000R2000G_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -186,10 +219,20 @@
    "mpn": "STMF4000400",
    "title": "Lacie 4TB External SSD Grey, Orange",
    "url": "https://www.laptopsdirect.co.uk/seagate-lacie-rugged-mini-ssd-4tb-usb-c-3.2-gen-2-external-ssd-stmf4000400/version.asp",
-   "price": 1289.97,
+   "price": 1290.97,
    "wasPrice": 1457.99,
    "image": "https://www.laptopsdirect.co.uk/Images/STMF4000400_1_Classic.jpg?v=5",
    "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1942551",
+   "mpn": "LNM790X002T-RNNNG",
+   "title": "Lexar NM790 SSD 2TB PCIe Gen4 NVMe M.2 2280",
+   "url": "https://www.laptopsdirect.co.uk/lexar-nm790-ssd-2tb-pcie-gen4-nvme-m.2-2280-lnm790x002t-rnnng/version.asp",
+   "price": 367.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/LNM790X002T-RNNNG_1_Classic.jpg?v=5",
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -210,6 +253,16 @@
    "url": "https://www.laptopsdirect.co.uk/samsung-ssd-int-1tb-870-evo-sata-2.5-inch-mz-77e1t0b-eu/version.asp",
    "price": 249.97,
    "image": "https://www.laptopsdirect.co.uk/Images/A1MZ-77E1T0BEU_7_Classic.jpg?v=24",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1555745",
+   "mpn": "MZ-77E2T0B/EU",
+   "title": "Samsung 870 EVO 2TB 2.5 Inch SATA III Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/samsung-870-evo-2tb-sata-2.5-inch-ssd-mz-77e2t0b-eu/version.asp",
+   "price": 540.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/MZ-77E2T0BEU_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -345,7 +398,7 @@
    "title": "Samsung 990 PRO 4TB M.2 2280 Internal SSD",
    "url": "https://www.laptopsdirect.co.uk/samsung-990-pro-pcie-4tb-nvme-m.2-internal-ssd-mz-v9p4t0bw/version.asp",
    "price": 765.97,
-   "wasPrice": 910.79,
+   "wasPrice": 902.39,
    "image": "https://www.laptopsdirect.co.uk/Images/MZ-V9P4T0BW_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -362,11 +415,31 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1720160",
+   "mpn": "MU-PE1T0S/EU",
+   "title": "Samsung T7 Shield 1TB USB 3.2 Gen 2 External SSD",
+   "url": "https://www.laptopsdirect.co.uk/samsung-t7-shield-1tb-usb-3.2-portable-ssd-black-mu-pe1t0s-eu/version.asp",
+   "price": 239.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/MU-PE1T0SEU_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1720167",
+   "mpn": "MU-PE2T0S/EU",
+   "title": "Samsung T7 Shield 2TB USB 3.2 Gen 2 External SSD",
+   "url": "https://www.laptopsdirect.co.uk/samsung-t7-shield-2tb-usb-3.2-portable-ssd-black-mu-pe2t0s-eu/version.asp",
+   "price": 383.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/MU-PE2T0SEU_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1818858",
    "mpn": "MU-PE4T0S/EU",
    "title": "Samsung T7 Shield 4TB USB 3.2 Gen 2 External SSD",
    "url": "https://www.laptopsdirect.co.uk/samsung-portable-t7-4tb-2.5-inch-external-ssd-mu-pe4t0s-eu/version.asp",
-   "price": 776.97,
+   "price": 888.97,
    "image": "https://www.laptopsdirect.co.uk/Images/MU-PE4T0SEU_1_Classic.png?v=22",
    "inStock": true
   },
@@ -379,6 +452,16 @@
    "price": 133.97,
    "wasPrice": 142.79,
    "image": "https://www.laptopsdirect.co.uk/Images/STLP2000400_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1738770",
+   "mpn": "WDS500G3B0A",
+   "title": "Western Digital SA510 500GB 2.5 Inch SATA Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/western-digital-sa510-500gb-2.5-sata-ssd-wds500g3b0a/version.asp",
+   "price": 134.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/WDS500G3B0A_1_Classic.jpg?v=5",
    "inStock": true
   }
  ]

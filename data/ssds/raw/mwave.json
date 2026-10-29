@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:04:49.784Z",
+ "scrapedAt": "2026-10-28T23:21:21.643Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -703,7 +703,7 @@
    "url": "https://www.mwave.com.au/products/crucial-t710-4tb-pcie-gen5-nvme-2280-m2-ssd-with-heatsink-ac90602",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_t710_4tb_pcie_gen5_nvme_2280_m2_ssd_with_heatsink_ac90602_62409.jpg?v=1787796127",
-   "inStock": true,
+   "inStock": false,
    "brand": "Crucial"
   },
   {
@@ -764,7 +764,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-gen3-2500e-500gb-pcie-30-nvme-m2-2280-ssd-g325e500g-ac58117",
    "price": 164.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_gen3_2500e_500gb_pcie_nvme_30_m2_2280_ssd_g325e500g_ac58117.jpg?v=1787796649",
-   "inStock": false,
+   "inStock": true,
    "mpn": "G325E500G",
    "brand": "Gigabyte"
   },
@@ -2263,7 +2263,7 @@
    "sku": "AC57887",
    "title": "Silicon Power A55 1TB SATA III M.2 2280 SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-a55-1tb-sata-iii-m2-2280-ssd-ac57887",
-   "price": 194.5,
+   "price": 188.5,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ss3a55m28_1tb_sata_iii_m2_2280_sp001tbss3a55m28_ac57887.jpg?v=1787798413",
    "inStock": false,
    "brand": "Silicon Power"
@@ -2303,7 +2303,7 @@
    "sku": "AC92559",
    "title": "Silicon Power Ace A58 1TB 2.5\" SATA III 3D NAND SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-ace-a58-1tb-25-sata-iii-3d-nand-ssd-ac92559",
-   "price": 194,
+   "price": 188,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ace_a58_128gb_25_sata_iii_3d_nand_ssd_ac92559_92250.jpg?v=1789457425",
    "inStock": false,
    "brand": "Silicon Power"
@@ -2353,7 +2353,7 @@
    "sku": "AC93725",
    "title": "Silicon Power B75 Pro 1TB USB-C 3.2 Gen 2 Portable SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-b75-pro-1tb-usbc-32-gen-2-portable-ssd-ac93725",
-   "price": 214,
+   "price": 208,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_b75_pro_1tb_usbc_32_gen_2_portable_ssd_ac93725_9007.jpg?v=1789457428",
    "inStock": false,
    "brand": "Silicon Power"
@@ -2425,7 +2425,7 @@
    "sku": "AC93696",
    "title": "Silicon Power P34A60 256GB PCIe 3.0 NVMe M.2 SSD - SZ256GBP34A60M28AU",
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-256gb-pcie-30-nvme-m2-ssd-sz256gbp34a60m28au-ac93696",
-   "price": 99,
+   "price": 104,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_256gb_pcie_30_m2_nvme_ssd_ac93696_13312.jpg?v=1789457428",
    "inStock": true,
    "mpn": "SZ256GBP34A60M28AU",
@@ -2438,7 +2438,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-2tb-pcie-30-nvme-m2-ssd-sz002tbp34a60m28au-ac93699",
    "price": 384,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_2tb_pcie_30_m2_nvme_ssd_ac93699_31107.jpg?v=1789457427",
-   "inStock": true,
+   "inStock": false,
    "mpn": "SZ002TBP34A60M28AU",
    "brand": "Silicon Power"
   },
@@ -2458,7 +2458,7 @@
    "sku": "AC93720",
    "title": "Silicon Power PC60 1TB USB-C 3.2 Gen 2 Portable SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-pc60-1tb-usbc-32-gen-2-portable-ssd-ac93720",
-   "price": 213,
+   "price": 207,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_pc60_1tb_usbc_32_gen_2_portable_ssd_ac93720_16625.jpg?v=1789457435",
    "inStock": false,
    "brand": "Silicon Power"

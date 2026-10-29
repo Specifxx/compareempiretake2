@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:41:27.888Z",
+ "scrapedAt": "2026-10-28T23:56:42.807Z",
  "offers": [
   {
    "retailer": "us-bose",
@@ -76,7 +76,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-quietcomfort-headphones/QCEARB24-HEADPHONEIN.html?dwvar_QCEARB24-HEADPHONEIN_color=ICE%20BLUE",
    "price": 179,
    "image": "https://assets.bosecreative.com/transform/064a6387-0f34-4cde-a6c0-8b4130ee02a7/QCEBLE26-IceBlue_SF_PDP_E-Comm-Gallery_1632x1224_1?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -362,7 +362,7 @@
    "url": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html?dwvar_QCUH2-HEADPHONEARN_color=BLACK",
    "price": 449,
    "image": "https://assets.bosecreative.com/transform/dbd0f72b-d68f-4bef-9d38-88132ffa0048/QCUHII26-BoseBlack_SF_PDP_E-Comm_Gallery_1_1500x1120?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -494,7 +494,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-ultra-open-earbuds-2nd-gen/ULT2-HEADPHONEOPN.html?dwvar_ULT2-HEADPHONEOPN_color=OLIVE%20GREEN",
    "price": 299,
    "image": "https://assets.bosecreative.com/transform/8e914ae5-1f7a-4cf3-98b0-3647199d31ed/FY27_UOEBIILE27-OlvGrn_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-bose",
@@ -505,7 +505,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-ultra-open-earbuds-2nd-gen/ULT2-HEADPHONEOPN.html",
    "price": 299,
    "image": "https://assets.bosecreative.com/transform/43cde3fb-63f7-4681-b051-7ef0bdd6fdba/FY27_UOEBIILE27-SkyPnk_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -516,7 +516,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-ultra-open-earbuds-2nd-gen/ULT2-HEADPHONEOPN.html?dwvar_ULT2-HEADPHONEOPN_color=WHITE",
    "price": 299,
    "image": "https://assets.bosecreative.com/transform/21629d63-1654-445b-93b6-9ef6cdfaaf16/FY27_UOEBII27-WhtSmk_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -526,7 +526,7 @@
    "title": "Bose X Thom Browne Quietcomfort Ultra Headphones (2Nd Gen) - Smoked Pearl",
    "url": "https://www.bose.com/p/headphones/QCUH2-HEADPHONEARN-TMBN.html?dwvar_QCUH2-HEADPHONEARN-TMBN_color=SMOKED%20PEARL",
    "price": 950,
-   "inStock": true
+   "inStock": false
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:04:46.572Z",
+ "scrapedAt": "2026-10-28T23:21:18.134Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -27,6 +27,7 @@
    "title": "Apple Mac Mini M6 Chip, 24GB, 256GB SSD - 2.5 Gbps",
    "url": "https://www.mwave.com.au/products/apple-mac-mini-m6-chip-24gb-256gb-ssd-25-gbps-ad00703",
    "price": 1776.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/MACMINIM6_ce7e22ed-5319-4990-8acc-8421950f34cb.jpg?v=1793224087",
    "inStock": false,
    "brand": "Apple"
   },
@@ -36,6 +37,7 @@
    "title": "Apple Mac Mini M6 Chip, 32GB, 1TB SSD - 2.5 Gbps",
    "url": "https://www.mwave.com.au/products/apple-mac-mini-m6-chip-32gb-1tb-ssd-25-gbps-ad00705",
    "price": 2843.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/MACMINIM6_69e4a9a6-e7a0-4107-aa2e-31614ceb3c56.jpg?v=1793224170",
    "inStock": false,
    "brand": "Apple"
   },
@@ -45,6 +47,7 @@
    "title": "Apple Mac Mini M6 Chip, 32GB, 512GB SSD - 2.5 Gbps",
    "url": "https://www.mwave.com.au/products/apple-mac-mini-m6-chip-32gb-512gb-ssd-25-gbps-ad00704",
    "price": 2385.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/MACMINIM6_10c7d50d-b676-41c9-b8d1-90b4167dc432.jpg?v=1793224125",
    "inStock": false,
    "brand": "Apple"
   },
@@ -1933,7 +1936,27 @@
    "url": "https://www.mwave.com.au/products/mwave-x-loserfruit-gaming-pc-amd-ryzen-7-geforce-rtx-5070",
    "price": 3099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/0T4A3387_e2591be7-d71c-42e4-b26f-9cf73f86128c.jpg?v=1793077067",
-   "inStock": false,
+   "inStock": true,
+   "brand": "MWAVE"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183044",
+   "title": "MWAVE x PIKAU Gaming PC - Intel Core Ultra 7 Plus + Radeon RX 9070 XT",
+   "url": "https://www.mwave.com.au/products/mwave-x-pikau-gaming-pc-intel-core-ultra-7-plus-radeon-rx-9070-xt",
+   "price": 3599,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/0T4A3320_dfe72b7d-af30-48f4-812f-62d40bd81bbc.jpg?v=1793077360",
+   "inStock": true,
+   "brand": "MWAVE"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183045",
+   "title": "MWAVE x PLAYITSHADY Gaming PC - AMD Ryzen 7 X3D + ROG ASUS GeForce RTX 5080",
+   "url": "https://www.mwave.com.au/products/mwave-x-playitshady-gaming-pc-amd-ryzen-7-x3d-rog-asus-geforce-rtx-5080",
+   "price": 6499,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/0T4A3464-g-fb_f5d8fb6c-f99d-4098-a779-15824f9266d6.jpg?v=1793076937",
+   "inStock": true,
    "brand": "MWAVE"
   },
   {
@@ -1953,7 +1976,27 @@
    "url": "https://www.mwave.com.au/products/mwave-x-sharkie-gaming-pc-amd-ryzen-7-x3d-geforce-rtx-5070",
    "price": 4499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/0T4A3356-g-fb_03ba83cc-054c-4232-a96a-fc8e1c02bee1.jpg?v=1793077503",
-   "inStock": false,
+   "inStock": true,
+   "brand": "MWAVE"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183046",
+   "title": "MWAVE x SHIVJAM Gaming PC - AMD Ryzen 7 X3D + GeForce RTX 5070 Ti",
+   "url": "https://www.mwave.com.au/products/mwave-x-shivjam-gaming-pc-amd-ryzen-7-x3d-geforce-rtx-5070-ti",
+   "price": 4799,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/0T4A3350-g-fb_c9b4d956-d095-4ddd-8e8e-3257a5a83e5d.jpg?v=1793077201",
+   "inStock": true,
+   "brand": "MWAVE"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183047",
+   "title": "MWAVE x TAHLIAJ Gaming PC - AMD Ryzen 7 X3D + GeForce RTX 5070",
+   "url": "https://www.mwave.com.au/products/mwave-x-tahliaj-gaming-pc-amd-ryzen-7-x3d-geforce-rtx-5070",
+   "price": 3799,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/0T4A3385-g-fb_8633a1ae-ae56-4454-91a8-b60d0f6b861c.jpg?v=1793077274",
+   "inStock": true,
    "brand": "MWAVE"
   },
   {
@@ -2043,7 +2086,7 @@
    "url": "https://www.mwave.com.au/products/mwave-x-vindooly-gaming-pc-intel-ultra-5-plus-geforce-rtx-5070",
    "price": 3199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/0T4A3427-g-fb_a6057050-7c1c-4c0b-b667-5f1af585130d.jpg?v=1793077135",
-   "inStock": false,
+   "inStock": true,
    "brand": "MWAVE"
   },
   {
@@ -2210,7 +2253,7 @@
    "url": "https://www.mwave.com.au/products/respawn-ninja-pro-katana-gaming-pc-amd-ryzen-5-7500f-palit-geforce-rtx-5060-ti-16g-ac99391",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/respawn_ninja_pro_katana_gaming_pc_amd_ryzen_5_7500f_palit_geforce_rtx_5060_ti_16g_ac99391_13591.jpg?v=1789706527",
-   "inStock": false,
+   "inStock": true,
    "brand": "MWAVE"
   },
   {
@@ -2303,7 +2346,7 @@
    "sku": "AC99621",
    "title": "Thermaltake Citadel 300 Pro Desktop PC AMD Ryzen 5 7600 32GB RAM RTX 5070 W11H - Black",
    "url": "https://www.mwave.com.au/products/thermaltake-citadel-300-pro-desktop-pc-amd-ryzen-5-7600-32gb-ram-rtx-5070-w11h-black-ac99621",
-   "price": 3299,
+   "price": 3399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_citadel_300_pro_desktop_pc_amd_ryzen_5_7600_32gb_ram_rtx_5070_w11h_black_ac99621_34370.jpg?v=1787787880",
    "inStock": false,
    "brand": "Thermaltake"
@@ -2315,7 +2358,7 @@
    "url": "https://www.mwave.com.au/products/thermaltake-citadel-300-pro-desktop-pc-intel-core-i514600kf-32gb-ram-rtx-5070-w11h-black-ac99622",
    "price": 3399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_citadel_300_pro_desktop_pc_intel_core_i514600kf_32gb_ram_rtx_5070_w11h_black_ac99622_64313.jpg?v=1787799145",
-   "inStock": true,
+   "inStock": false,
    "brand": "Thermaltake"
   },
   {
@@ -2323,7 +2366,7 @@
    "sku": "AC99623",
    "title": "Thermaltake Citadel 300 Xtreme Desktop PC AMD Ryzen 7 7800X3D 32GB RAM RTX 5080",
    "url": "https://www.mwave.com.au/products/thermaltake-citadel-300-xtreme-desktop-pc-amd-ryzen-7-7800x3d-32gb-ram-rtx-5080-w11h-black-ac99623",
-   "price": 4899,
+   "price": 5099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_citadel_300_xtreme_desktop_pc_amd_ryzen_7_7800x3d_32gb_ram_rtx_5080_w11h_black_ac99623_99559.jpg?v=1787799149",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2333,7 +2376,7 @@
    "sku": "AC99624",
    "title": "Thermaltake Citadel 300 Xtreme Desktop PC Intel Core i7-14700F 32GB RAM RTX 5080",
    "url": "https://www.mwave.com.au/products/thermaltake-citadel-300-xtreme-desktop-pc-intel-core-i714700f-32gb-ram-rtx-5080-w11h-black-ac99624",
-   "price": 4799,
+   "price": 4999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_citadel_300_xtreme_desktop_pc_intel_core_i714700f_32gb_ram_rtx_5080_w11h_black_ac99624_39583.jpg?v=1787799150",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2353,7 +2396,7 @@
    "sku": "AC99626",
    "title": "Thermaltake Citadel 600 Pro Desktop PC Intel Core i5-14600KF 32GB RAM RTX 5070",
    "url": "https://www.mwave.com.au/products/thermaltake-citadel-600-pro-desktop-pc-intel-core-i514600kf-32gb-ram-rtx-5070-w11h-future-dusk-ac99626",
-   "price": 3299,
+   "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_citadel_600_pro_desktop_pc_intel_core_i514600kf_32gb_ram_rtx_5070_w11h_future_dusk_ac99626_49052.jpg?v=1787747907",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2373,7 +2416,7 @@
    "sku": "AC99628",
    "title": "Thermaltake Citadel 600 Xtreme Desktop PC Intel Core i7-14700F 32GB RAM RTX 5080",
    "url": "https://www.mwave.com.au/products/thermaltake-citadel-600-xtreme-desktop-pc-intel-core-i714700f-32gb-ram-rtx-5080-w11h-future-dusk-ac99628",
-   "price": 4999,
+   "price": 5099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_citadel_600_xtreme_desktop_pc_intel_core_i714700f_32gb_ram_rtx_5080_w11h_future_dusk_ac99628_90777.jpg?v=1787747905",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2413,7 +2456,7 @@
    "sku": "AC87859",
    "title": "Thermaltake Genesis Ultimate V5 Desktop Gaming PC R5 5600XT 16GB 1TB RTX5060 W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-genesis-ultimate-v5-desktop-gaming-pc-r5-5600xt-16gb-1tb-rtx5060-w11h-snow-edition-ac87859",
-   "price": 1799,
+   "price": 1859,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_genesis_ultimate_v5_desktop_gaming_pc_r5_5600xt_16gb_1tb_rtx5060_w11h_snow_edition_ac87859_63332.jpg?v=1787799176",
    "inStock": false,
    "brand": "Thermaltake"
@@ -2433,7 +2476,7 @@
    "sku": "AC96260",
    "title": "Thermaltake Genesis V5 Gaming PC - Ryzen 5 5500 16GB 1TB RTX3050 W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-genesis-v5-gaming-pc-ryzen-5-5500-16gb-1tb-rtx3050-w11h-ac96260",
-   "price": 1499,
+   "price": 1549,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_genesis_v5_gaming_pc_ryzen_5_5500_16gb_1tb_rtx3050_w11h_ac96260_48921.jpg?v=1787799177",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2473,7 +2516,7 @@
    "sku": "AC88943",
    "title": "Thermaltake Horizon PRO V2 Gaming PC - Intel i5-14600KF 32GB RTX 5070 W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-horizon-pro-v2-gaming-pc-intel-i514600kf-32gb-rtx-5070-w11h-ac88943",
-   "price": 3199,
+   "price": 3359,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_horizon_pro_v2_gaming_pc_intel_14600kf_32gb_rtx_5070_w11h_ac88943_97637.jpg?v=1787787871",
    "inStock": false,
    "brand": "Thermaltake"
@@ -2513,7 +2556,7 @@
    "sku": "AC85335",
    "title": "Thermaltake Horizon PRO V2 TI Gaming PC Intel i7-14700F 32GB 2TB RTX5070Ti W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-horizon-pro-v2-ti-gaming-pc-intel-i714700f-32gb-2tb-rtx5070ti-w11h-ac85335",
-   "price": 4099,
+   "price": 4299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_horizon_pro_v2_ti_gaming_pc_intel_i714700f_32gb_2tb_rtx5070ti_w11h_ac85335_68357.jpg?v=1787799176",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2523,7 +2566,7 @@
    "sku": "AC85334",
    "title": "Thermaltake Horizon PRO V2 TI Gaming PC Ryzen 7 7800X3D 32GB 2TB RTX5070Ti W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-horizon-pro-v2-ti-gaming-pc-ryzen-7-7800x3d-32gb-2tb-rtx5070ti-w11h-ac85334",
-   "price": 4199,
+   "price": 4399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_horizon_pro_v2_ti_gaming_pc_amd_7800x3d_32gb_2tb_rtx5070ti_w11h_ac85334_23864.jpg?v=1787787879",
    "inStock": false,
    "brand": "Thermaltake"
@@ -2533,7 +2576,7 @@
    "sku": "AC88948",
    "title": "Thermaltake Horizon V2 Gaming PC - Ryzen 5 7500F 32GB RTX 5060 W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-horizon-v2-gaming-pc-ryzen-5-7500f-32gb-rtx-5060-w11h-ac88948",
-   "price": 2299,
+   "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/x_ac88948_58989.jpg?v=1787799179",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2543,7 +2586,7 @@
    "sku": "AC88949",
    "title": "Thermaltake Horizon V2 Snow Gaming PC - Ryzen 5 7500F 32GB RTX 5060 W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-horizon-v2-snow-gaming-pc-ryzen-5-7500f-32gb-rtx-5060-w11h-ac88949",
-   "price": 2299,
+   "price": 2459,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/x_ac88949_92500.jpg?v=1787799181",
    "inStock": false,
    "brand": "Thermaltake"
@@ -2563,9 +2606,9 @@
    "sku": "AC88941",
    "title": "Thermaltake Horizon Xtreme V2 SNOW Gaming PC - Ryzen 7 7800X3D 32GB RTX 5080 W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-horizon-xtreme-v2-snow-gaming-pc-ryzen-7-7800x3d-32gb-rtx-5080-w11h-ac88941",
-   "price": 4999,
+   "price": 5299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_horizon_xtreme_v2_snow_gaming_pc_amd_7800x3d_32gb_rtx_5080_w11h_ac88941_72334.jpg?v=1787799181",
-   "inStock": true,
+   "inStock": false,
    "brand": "Thermaltake"
   },
   {
@@ -2603,7 +2646,7 @@
    "sku": "AC99617",
    "title": "Thermaltake Infinity PRO V7 Desktop PC AMD Ryzen 5 7500F 32GB RAM RTX 5070 W11 - Snow",
    "url": "https://www.mwave.com.au/products/thermaltake-infinity-pro-v7-desktop-pc-amd-ryzen-5-7500f-32gb-ram-rtx-5070-w11-snow-edition-ac99617",
-   "price": 2999,
+   "price": 3199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_infinity_pro_v7_desktop_pc_amd_ryzen_5_7500f_32gb_ram_rtx_5070_w11_snow_edition_ac99617_2384.jpg?v=1787787896",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2645,7 +2688,7 @@
    "url": "https://www.mwave.com.au/products/thermaltake-infinity-xtreme-v7-desktop-pc-intel-core-i714700f-32gb-ram-rtx-5080-w11-black-ac99619",
    "price": 3999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_infinity_xtreme_v7_desktop_pc_intel_core_i714700f_32gb_ram_rtx_5080_w11_black_ac99619_35126.jpg?v=1787799187",
-   "inStock": true,
+   "inStock": false,
    "brand": "Thermaltake"
   },
   {
@@ -2723,7 +2766,7 @@
    "sku": "AC97755",
    "title": "Thermaltake Retro Desktop PC Intel i5-14400F 32GB 1TB RTX5060 W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-retro-desktop-pc-intel-i514400f-32gb-1tb-rtx5060-w11h-ac97755",
-   "price": 2359,
+   "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_retro_desktop_pc_intel_i514400f_32gb_1tb_rtx5060_w11h_ac97755_58396.jpg?v=1787799224",
    "inStock": true,
    "brand": "Thermaltake"
@@ -2753,7 +2796,7 @@
    "sku": "AC97760",
    "title": "Thermaltake Retro Xtreme Desktop PC AMD Ryzen 7 7800X3D 32GB 2TB RTX5080 W11H",
    "url": "https://www.mwave.com.au/products/thermaltake-retro-xtreme-desktop-pc-amd-ryzen-7-7800x3d-32gb-2tb-rtx5080-w11h-ac97760",
-   "price": 4899,
+   "price": 5099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_retro_xtreme_desktop_pc_amd_ryzen_7_7800x3d_32gb_2tb_rtx5080_w11h_ac97760_16450.jpg?v=1787747962",
    "inStock": false,
    "brand": "Thermaltake"

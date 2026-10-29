@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T23:13:17.435Z",
+ "scrapedAt": "2026-10-28T23:52:59.772Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -69,7 +69,8 @@
    "sku": "840341",
    "title": "Dreame Aqua10 Ultra Roller Robot Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/dreame-aqua10-ultra-roller-robot-vacuum-cleaner",
-   "price": 1994,
+   "price": 1694,
+   "wasPrice": 1788,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840341-Product-0-I-638973746407014577.jpg?v=1761777910",
    "inStock": true,
    "brand": "Dreame"
@@ -79,7 +80,8 @@
    "sku": "840342",
    "title": "Dreame Aqua10 Ultra Track S Robot Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/dreame-aqua10-ultra-track-s-robot-vacuum-cleaner",
-   "price": 2999,
+   "price": 1699,
+   "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840342-Product-0-I-638968680006990236.jpg?v=1761271267",
    "inStock": false,
    "brand": "Dreame"
@@ -148,16 +150,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "840343",
-   "title": "Dreame L50 Ultra Robot Vacuum Cleaner",
-   "url": "https://www.jbhifi.com.au/products/dreame-l50-ultra-robot-vacuum-cleaner",
-   "price": 997,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840343-Product-0-I-638968706410945022.jpg?v=1761273911",
-   "inStock": true,
-   "brand": "Dreame"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "894716",
    "title": "Dreame L50s Pro Ultra Robot Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/dreame-l50s-pro-ultra-robot-vacuum-cleaner",
@@ -172,9 +164,18 @@
    "sku": "840339",
    "title": "Dreame Matrix10 Ultra Robot Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/dreame-matrix10-ultra-robot-vacuum-cleaner",
-   "price": 2294,
-   "wasPrice": 2994,
+   "price": 2994,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840339-Product-0-I-638968605607709346.jpg?v=1761263826",
+   "inStock": true,
+   "brand": "Dreame"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "802806",
+   "title": "Dreame X50 Ultra Robot Vacuum with Auto Mop Cleaning and Self-Emptying Base Station",
+   "url": "https://www.jbhifi.com.au/products/dreame-x50-ultra-robot-vacuum-with-auto-mop-cleaning-and-self-emptying-base-station",
+   "price": 1795,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/802806-Product-0-I-638761397403684612.jpg?v=1742269816",
    "inStock": true,
    "brand": "Dreame"
   },
@@ -183,8 +184,7 @@
    "sku": "894715",
    "title": "Dreame X60 Ultra Robot Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/dreame-x60-ultra-robot-vacuum-cleaner",
-   "price": 1799,
-   "wasPrice": 1996,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894715-Product-0-I-639098371210012423.jpg?v=1774240386",
    "inStock": true,
    "brand": "Dreame"
@@ -205,7 +205,7 @@
    "title": "Dyson Nurovi™ Dry Robot Vacuum",
    "url": "https://www.jbhifi.com.au/products/dyson-nurovi-dry-robot-vacuum",
    "price": 949,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906957-Product-0-I-639249628204354633.jpg?v=1789366085",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906957-Product-0-I-639249628204354633.jpg?v=1792710965",
    "inStock": true,
    "brand": "Dyson"
   },
@@ -215,7 +215,7 @@
    "title": "Dyson R2 Nurovi Wash+Dry Robot Vacuum",
    "url": "https://www.jbhifi.com.au/products/dyson-r2-nurovi-washdry-robot-vacuum",
    "price": 1449,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906956-Product-0-I-639249580807648474.jpg?v=1789361346",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906956-Product-0-I-639249580807648474.jpg?v=1792788396",
    "inStock": true,
    "brand": "Dyson"
   },
@@ -225,7 +225,7 @@
    "title": "Dyson Spot+Scrub™Ai Wet and Dry Robot Vacuum",
    "url": "https://www.jbhifi.com.au/products/dyson-spotscrubai-wet-and-dry-robot-vacuum",
    "price": 1999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/883629-Product-0-I-639040428008511882.jpg?v=1768446065",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/883629-Product-0-I-639040428008511882.jpg?v=1792971425",
    "inStock": true,
    "brand": "Dyson"
   },
@@ -242,16 +242,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "629061",
-   "title": "ECOVACS DEEBOT N10 Plus Robot Vacuum",
-   "url": "https://www.jbhifi.com.au/products/ecovacs-deebot-n10-plus-robot-vacuum",
-   "price": 497,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/629061-Product-0-I-638184935461566260_4530c8db-5c58-4d77-a9e8-a0cd33309e83.jpg?v=1682896939",
-   "inStock": true,
-   "brand": "Ecovacs"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "779912",
    "title": "ECOVACS Deebot N20 Pro Plus Robotic Vacuum",
    "url": "https://www.jbhifi.com.au/products/ecovacs-deebot-n20-pro-plus-robotic-vacuum",
@@ -259,6 +249,16 @@
    "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/779912-Product-0-I-638574727208501934.jpg?v=1721875996",
    "inStock": false,
+   "brand": "Ecovacs"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "782448",
+   "title": "ECOVACS DEEBOT N30 Pro Omni Robotic Vac (White)",
+   "url": "https://www.jbhifi.com.au/products/ecovacs-deebot-n30-pro-omni-robotic-vac-white",
+   "price": 494,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/782448-Product-0-I-638640556806932348.jpg?v=1728458953",
+   "inStock": true,
    "brand": "Ecovacs"
   },
   {
@@ -283,6 +283,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "779913",
+   "title": "ECOVACS DEEBOT T30S Combo Robotic Vacuum",
+   "url": "https://www.jbhifi.com.au/products/ecovacs-deebot-t30s-combo-robotic-vacuum",
+   "price": 898,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/779913-Product-0-I-638575651904182101.jpg?v=1721968455",
+   "inStock": true,
+   "brand": "Ecovacs"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "797061",
    "title": "ECOVACS DEEBOT T50 Max Pro Omni Robotic Vac (White)",
    "url": "https://www.jbhifi.com.au/products/ecovacs-deebot-t50-max-pro-omni-robotic-vac-white",
@@ -299,6 +309,16 @@
    "price": 749,
    "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/797062-Product-0-I-638766397806065950.jpg?v=1741043057",
+   "inStock": true,
+   "brand": "Ecovacs"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "517038",
+   "title": "ECOVACS Deebot T9+ Robot Vacuum",
+   "url": "https://www.jbhifi.com.au/products/ecovacs-deebot-t9-robot-vacuum",
+   "price": 448,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/517038-Product-0-I-637830293577319026.jpg?v=1647393037",
    "inStock": true,
    "brand": "Ecovacs"
   },
@@ -397,6 +417,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "664215",
+   "title": "iRobot Roomba Combo J5+ Robot Vacuum & Mop",
+   "url": "https://www.jbhifi.com.au/products/irobot-roomba-combo-j5-robot-vacuum-mop",
+   "price": 538,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/664215-Product-0-I-638530527086338852.jpg?v=1717456215",
+   "inStock": true,
+   "brand": "Irobot"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "829965",
    "title": "iRobot Roomba® 105 Combo Robot Vacuum",
    "url": "https://www.jbhifi.com.au/products/irobot-roomba-105-combo-robot-vacuum",
@@ -461,7 +491,8 @@
    "sku": "812502",
    "title": "Narwal Freo X Ultra Robotic Vacuum and Mop Cleaner",
    "url": "https://www.jbhifi.com.au/products/narwal-freo-x-ultra-robotic-vacuum-and-mop-cleaner",
-   "price": 1499,
+   "price": 999,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/812502-Product-0-I-638827788019724144.jpg?v=1747182070",
    "inStock": false,
    "brand": "Narwal"
@@ -481,7 +512,8 @@
    "sku": "812501",
    "title": "Narwal Freo Z10 Robot Vacuum and Mop Cleaner",
    "url": "https://www.jbhifi.com.au/products/narwal-freo-z10-robot-vacuum-and-mop-cleaner",
-   "price": 1999,
+   "price": 1299,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/812501-Product-0-I-638827780803523743.jpg?v=1747181350",
    "inStock": false,
    "brand": "Narwal"
@@ -501,7 +533,7 @@
    "sku": "888297",
    "title": "Roborock Edge 2 Pro Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/roborock-edge-2-pro-vacuum-cleaner",
-   "price": 2399,
+   "price": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/888297-Product-0-I-639068982602521321.jpg?v=1771301526",
    "inStock": true,
    "brand": "Roborock"
@@ -521,7 +553,7 @@
    "sku": "906969",
    "title": "Roborock F25 Ultra Wet & Dry Vac (Black)",
    "url": "https://www.jbhifi.com.au/products/roborock-f25-ultra-wet-dry-vac-black",
-   "price": 1499,
+   "price": 794,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906969-Product-0-I-639220104608905034.jpg?v=1786413726",
    "inStock": true,
    "brand": "Roborock"
@@ -551,8 +583,18 @@
    "sku": "817543",
    "title": "Roborock Q7B+ Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/roborock-q7b-vacuum-cleaner",
-   "price": 349,
+   "price": 394,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817543-Product-0-I-638908159838924509.jpg?v=1755219250",
+   "inStock": true,
+   "brand": "Roborock"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "918252",
+   "title": "Roborock Qrevo 2 Breeze Vacuum Cleaner",
+   "url": "https://www.jbhifi.com.au/products/roborock-qrevo-2-breeze-vacuum-cleaner",
+   "price": 1199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918252-Product-0-I-639283029003932928.jpg?v=1792706166",
    "inStock": true,
    "brand": "Roborock"
   },
@@ -581,8 +623,7 @@
    "sku": "914317",
    "title": "Roborock Qrevo Edge 2 Flow Robot Vacuum",
    "url": "https://www.jbhifi.com.au/products/roborock-qrevo-edge-2-flow-robot-vacuum",
-   "price": 1699,
-   "wasPrice": 1999,
+   "price": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914317-Product-0-I-639256443603875098.jpg?v=1790048881",
    "inStock": true,
    "brand": "Roborock"
@@ -622,7 +663,7 @@
    "sku": "890015",
    "title": "Roborock Saros 10R Robotic Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/roborock-saros-10r-robotic-vacuum-cleaner",
-   "price": 1699,
+   "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890015-Product-0-I-639069615005139038.jpg?v=1771364828",
    "inStock": true,
    "brand": "Roborock"

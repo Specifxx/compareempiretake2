@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-10-27T23:44:36.769Z",
+ "scrapedAt": "2026-10-28T23:59:50.576Z",
  "offers": [
+  {
+   "retailer": "uk-ecovacs",
+   "sku": "6943757614394",
+   "mpn": "N8+",
+   "brand": "ECOVACS",
+   "title": "ECOVACS DEEBOT N8+ Auto-Empty Robot Vacuum and Mop (Mapping, Filtration, App Control)",
+   "url": "https://www.ecovacs.com/uk/shop/deebot-robotic-vacuum-cleaner/n8-plus",
+   "price": 469,
+   "image": "https://site-static.ecovacs.com/upload/uk/image/product/2023/12/23/035811_2313-034733_5696-DEEBOT-N8WHITE-1280x1280.jpg",
+   "inStock": false
+  },
   {
    "retailer": "uk-ecovacs",
    "sku": "6979463773162",
@@ -58,28 +69,6 @@
    "wasPrice": 1399,
    "image": "https://site-static.ecovacs.com/upload/uk/image/product/2026/09/20/101343_2534$deebot-x12s-omnicyclone-2-920x920.png",
    "inStock": true
-  },
-  {
-   "retailer": "uk-ecovacs",
-   "sku": "6943757616817",
-   "mpn": "X1e OMNI",
-   "brand": "ECOVACS",
-   "title": "ECOVACS DEEBOT X1e OMNI Robot Vacuum and Mop with AI (Smart-Navigation, Mapping, Strong Suction)",
-   "url": "https://www.ecovacs.com/uk/shop/deebot-robotic-vacuum-cleaner/deebot-x1e-omni",
-   "price": 1199,
-   "image": "https://site-static.ecovacs.com/upload/uk/image/product/2024/01/15/022347_6214-DEEBOT-X1eOMNI-1280x1280.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-ecovacs",
-   "sku": "6943757618330",
-   "mpn": "DEEBOT X2 OMNI White",
-   "brand": "ECOVACS",
-   "title": "ECOVACS DEEBOT X2 OMNI White Square Robot Vacuum With Mop (LiDAR, Auto-Empty, Mapping)",
-   "url": "https://www.ecovacs.com/uk/shop/deebot-robotic-vacuum-cleaner/deebot-x2-omni-white",
-   "price": 1299,
-   "image": "https://site-static.ecovacs.com/upload/uk/image/product/2023/11/17/011845_3005-055933_1502-DEEBOT-X2OMNIWHITE-1280x1280-2.jpg",
-   "inStock": false
   }
  ]
 }

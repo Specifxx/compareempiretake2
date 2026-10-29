@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-22T23:12:57.197Z",
+ "scrapedAt": "2026-10-28T23:50:48.768Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -106,7 +106,8 @@
    "sku": "652310",
    "title": "Canon EOS R100 Mirrorless Camera with RF-S 18-45mm Lens",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r100-mirrorless-camera-with-rf-s-18-45mm-lens",
-   "price": 1099,
+   "price": 929,
+   "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/652310-Product-0-I-638204870412595312.jpg?v=1791256264",
    "inStock": true,
    "brand": "Canon"
@@ -156,7 +157,8 @@
    "sku": "809136",
    "title": "Canon EOS R50 V Mirrorless Vlog Camera with RF-S 14-30mm f/4-6.3 IS STM PZ Lens",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r50-v-mirrorless-vlog-camera-with-rf-s-14-30mm-f-4-6-3-is-stm-pz-lens",
-   "price": 1327,
+   "price": 1194,
+   "wasPrice": 1327,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/809136-Product-0-I-638786265007716027.jpg?v=1743381315",
    "inStock": true,
    "brand": "Canon"
@@ -206,7 +208,8 @@
    "sku": "593527",
    "title": "Canon EOS R7 Mirrorless Camera with RFS 18-150STM Lens",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r7-mirrorless-camera-with-rfs-18-150stm-lens",
-   "price": 2699,
+   "price": 2347,
+   "wasPrice": 2699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/593527-Product-0-I-638538331805464563.jpg?v=1791256115",
    "inStock": true,
    "brand": "Canon"
@@ -776,16 +779,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "831416",
-   "title": "Fujifilm X-E5 Mirrorless Camera with XF23mm Lens (Black)",
-   "url": "https://www.jbhifi.com.au/products/fujifilm-x-e5-mirrorless-camera-with-xf23mm-lens-black",
-   "price": 3099,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/831416-Product-0-I-638917786853647068.jpg?v=1756181945",
-   "inStock": false,
-   "brand": "Fujifilm"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "831417",
    "title": "Fujifilm X-E5 Mirrorless Camera with XF23mm Lens (Silver)",
    "url": "https://www.jbhifi.com.au/products/fujifilm-x-e5-mirrorless-camera-with-xf23mm-lens-silver",
@@ -836,6 +829,26 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "677017",
+   "title": "Fujifilm X100VI Compact Camera (Black)",
+   "url": "https://www.jbhifi.com.au/products/fujifilm-x100vi-compact-camera-black",
+   "price": 3199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/677017-Product-0-I-638439871209301709.jpg?v=1708390457",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "677018",
+   "title": "Fujifilm X100VI Compact Camera (Silver)",
+   "url": "https://www.jbhifi.com.au/products/fujifilm-x100vi-compact-camera-silver",
+   "price": 3199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/677018-Product-0-I-638439871210448754.jpg?v=1708390399",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "783942",
    "title": "GoPro Hero 4K Action Cam",
    "url": "https://www.jbhifi.com.au/products/gopro-hero-4k-action-cam",
@@ -861,16 +874,6 @@
    "url": "https://www.jbhifi.com.au/products/gopro-hero13-black-5-3k-hypersmooth-6-0-action-cam",
    "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/783940-Product-0-I-638609148605229588_16cdd37c-4d5a-4860-9856-c90cc105603a.jpg?v=1728960077",
-   "inStock": true,
-   "brand": "Gopro"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "831244",
-   "title": "GoPro Hero13 Black 5.3K HyperSmooth 6.0 Action Cam (Forest Green Ltd. Ed.)",
-   "url": "https://www.jbhifi.com.au/products/gopro-hero13-black-5-3k-hypersmooth-6-0-action-cam-forest-green-ltd-ed",
-   "price": 649,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/831244-Product-0-I-638898864060337192.jpg?v=1754289669",
    "inStock": true,
    "brand": "Gopro"
   },
@@ -1491,7 +1494,7 @@
    "url": "https://www.jbhifi.com.au/products/nikon-z50ii-mirrorless-camera-with-nikkor-z-dx-16-50mm-50-250mm-kit",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815534-Product-0-I-638856426609277989.jpg?v=1750045931",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon"
   },
   {
@@ -2101,7 +2104,7 @@
    "url": "https://www.jbhifi.com.au/products/sony-fx30-cinema-line-mirrorless-camera-body-only",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803357-Product-0-I-638767210204327315_30494968-068b-4982-b532-e7a373a09755.jpg?v=1742939414",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony"
   },
   {

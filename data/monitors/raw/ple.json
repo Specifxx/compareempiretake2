@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:05:00.978Z",
+ "scrapedAt": "2026-10-28T23:21:26.069Z",
  "offers": [
   {
    "retailer": "ple",
@@ -326,8 +326,7 @@
    "brand": "AOC",
    "mpn": "AGP346UCSD",
    "url": "https://www.ple.com.au/products/685910/aoc-agon-agp346ucsd-qd-oled-34-curved-1440p-360hz-003ms-gaming-monitor",
-   "price": 1699,
-   "wasPrice": 1899,
+   "price": 1899,
    "image": "https://plecom.imgix.net/iil-474520-685910.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1050,7 +1049,7 @@
    "url": "https://www.ple.com.au/products/670028/asus-rog-strix-oled-xg27acdng-27-1440p-360hz-003ms-gaming-monitor",
    "price": 1299,
    "image": "https://plecom.imgix.net/iil-403622-670028.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1631,6 +1630,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "688909",
+   "title": "BenQ MA270S 27\" 5K 70Hz 5ms IPS Nano Gloss Monitor for MacBook",
+   "brand": "BenQ",
+   "mpn": "MA270S",
+   "url": "https://www.ple.com.au/products/688909/benq-ma270s-27-5k-70hz-5ms-ips-nano-gloss-monitor-for-macbook",
+   "price": 1499,
+   "image": "https://plecom.imgix.net/iil-488489-688909.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
    "sku": "682988",
    "title": "BenQ MA270U - 27\" 4K 2160p 60Hz IPS Monitor for Mac",
    "brand": "BenQ",
@@ -2014,7 +2024,7 @@
    "price": 339,
    "wasPrice": 449,
    "image": "https://plecom.imgix.net/iil-466487-679661.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2428,7 +2438,7 @@
    "price": 399,
    "wasPrice": 899,
    "image": "https://plecom.imgix.net/iil-471154-685005.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2620,7 +2630,7 @@
    "price": 2099,
    "wasPrice": 2299,
    "image": "https://plecom.imgix.net/iil-471120-685004.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2902,7 +2912,7 @@
    "url": "https://www.ple.com.au/products/681567/msi-mpg-322ur-qd-oled-x24-32-4k-2160p-240hz-003ms-gaming-monitor",
    "price": 1799,
    "image": "https://plecom.imgix.net/iil-473833-681567.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -3022,7 +3032,7 @@
    "price": 229,
    "wasPrice": 329,
    "image": "https://plecom.imgix.net/iil-464289-683337.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -3426,18 +3436,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "674960",
-   "title": "Samsung Odyssey OLED G8 - 27\" 4K 2160p 240Hz 0.03ms Gaming Monitor",
-   "brand": "Samsung",
-   "mpn": "LS27FG812SEXXY",
-   "url": "https://www.ple.com.au/products/674960/samsung-odyssey-oled-g8-27-4k-2160p-240hz-003ms-gaming-monitor",
-   "price": 1659,
-   "wasPrice": 1799,
-   "image": "https://plecom.imgix.net/iil-426690-674960.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "668738",
    "title": "Samsung Odyssey OLED G8 - 34\" Curved 1440p 175Hz Gaming Monitor",
    "brand": "Samsung",
@@ -3455,7 +3453,7 @@
    "brand": "Samsung",
    "mpn": "LS49DG930SEXXY",
    "url": "https://www.ple.com.au/products/668739/samsung-odyssey-oled-g9-49-curved-1440p-240hz-gaming-monitor",
-   "price": 1699,
+   "price": 1599,
    "wasPrice": 2299,
    "image": "https://plecom.imgix.net/iil-409767-668739.jpg?w=600&h=600",
    "inStock": true

@@ -1,15 +1,27 @@
 {
- "scrapedAt": "2026-10-27T23:49:34.670Z",
+ "scrapedAt": "2026-10-29T00:04:31.906Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2096547",
-   "mpn": "A1/CMK5X16G1B56C40A2",
-   "title": "Box Opened Corsair Vengeance 16GB 1x16GB DIMM 5600MHz DDR5 Desktop Memory",
-   "url": "https://www.laptopsdirect.co.uk/grade-a1-corsair-vengeance-16gb-1x16gb-dimm-5600mhz-ddr5-desktop-memory-a1-cmk5x16g1b56c40a2/version.asp",
-   "price": 166.81,
-   "image": "https://www.laptopsdirect.co.uk/Images/CMK5X16G1B56C40A2_1_Classic.png?v=9",
-   "inStock": false
+   "sku": "1918214",
+   "mpn": "A1/KCP432SD8/16",
+   "title": "Box Opened Kingston 16GB 1x16GB SO-DIMM 3200MHz DDR4 Laptop Memory",
+   "url": "https://www.laptopsdirect.co.uk/grade-a1-kingston-16gb-1x16gb-so-dimm-3200mhz-ddr4-laptop-memory-a1-kcp432sd8-16/version.asp",
+   "price": 110.11,
+   "wasPrice": 149.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/KCP432SD816_1_17126532_classic.jpg?v=9",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2711091",
+   "mpn": "A1/KCP432SD8/32",
+   "title": "Box Opened Kingston 32GB 1x32GB SO-DIMM 3200MHz DDR4 Laptop Memory",
+   "url": "https://www.laptopsdirect.co.uk/box-opened-kingston-32gb-1x32gb-so-dimm-3200mhz-ddr4-laptop-memory-a1-kcp432sd8-32/version.asp",
+   "price": 321.72,
+   "wasPrice": 412.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/KCP432SD832_1_Classic.png?v=5",
+   "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -28,7 +40,6 @@
    "title": "Crucial 16GB (1x16GB) DIMM 3200MHz DDR4 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/crucial-16gb-ddr4-3200-cl22-non-ecc-ct16g4dfra32a/version.asp",
    "price": 182.97,
-   "wasPrice": 271.99,
    "image": "https://www.laptopsdirect.co.uk/Images/CT16G4DFRA32A_1_Classic.jpg?v=3",
    "inStock": true
   },
@@ -38,7 +49,7 @@
    "mpn": "CT16G56C46S5",
    "title": "Crucial 16GB (1x16GB) SO-DIMM 5600MHz DDR5 Laptop Memory",
    "url": "https://www.laptopsdirect.co.uk/crucial-16gb-1x16gb-so-dimm-ddr5-5600-desktop-memory-ct16g56c46s5/version.asp",
-   "price": 201.97,
+   "price": 203.97,
    "wasPrice": 219.97,
    "image": "https://www.laptopsdirect.co.uk/Images/CT16G56C46S5_1_Classic.jpg?v=5",
    "inStock": true
@@ -49,7 +60,8 @@
    "mpn": "CT8G4DFRA32A",
    "title": "Crucial CL22 8GB (1x8GB) DIMM 3200MHz DDR4 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/crucial-8gb-ddr4-3200-cl22-non-ecc-ct8g4dfra32a/version.asp",
-   "price": 86.97,
+   "price": 87.97,
+   "wasPrice": 92.98,
    "image": "https://www.laptopsdirect.co.uk/Images/CT8G4DFRA32A_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -123,8 +135,8 @@
    "mpn": "KCP556SS8-16",
    "title": "Kingston 16GB (1x16GB) SO-DIMM 5600MHz DDR5 Laptop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-16gb-1x16gb-so-dimm-5600mhz-ddr5-laptop-memory-kcp556ss8-16/version.asp",
-   "price": 292.97,
-   "wasPrice": 375.59,
+   "price": 274.97,
+   "wasPrice": 359.99,
    "image": "https://www.laptopsdirect.co.uk/Images/KCP556SS8-16_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -146,7 +158,7 @@
    "title": "Kingston 32GB (2x16GB) DIMM 6400MHz DDR5 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kfr-32gb-ddr5-6400-dimm-slv-kf564c32rsk2-32/version.asp",
    "price": 636.97,
-   "wasPrice": 851.99,
+   "wasPrice": 853.19,
    "image": "https://www.laptopsdirect.co.uk/Images/KF564C32RSK2-32_1_Classic.png?v=5",
    "inStock": true
   },
@@ -157,7 +169,7 @@
    "title": "Kingston 32GB 1x32GB DIMM 5600Mhz DDR5 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-32gb-2x16gb-dimm-5600mhz-ddr5-desktop-memory-kcp556ud8-32/version.asp",
    "price": 420.97,
-   "wasPrice": 758.39,
+   "wasPrice": 725.99,
    "image": "https://www.laptopsdirect.co.uk/Images/KCP556UD8-32_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -178,7 +190,7 @@
    "title": "Kingston 64GB (2x32GB) DIMM 3200MHz DDR4 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kfb-64gb-ddr4-3200-dimm-k2-blk-kf432c16bbk2-64/version.asp",
    "price": 884.97,
-   "wasPrice": 1041.59,
+   "wasPrice": 1058.39,
    "image": "https://www.laptopsdirect.co.uk/Images/KF432C16BBK264_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -239,22 +251,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1603500",
-   "mpn": "KF436C17BBK2/16",
-   "title": "Kingston FURY Beast 16GB (2x8GB) DIMM 3600MHz DDR4 Desktop Memory",
-   "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-16gb-2x8gb-dimm-3600mhz-ddr4-desktop-memory-kf436c17bbk2-16/version.asp",
-   "price": 238.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/KF436C17BBK216_1_Classic.jpg?v=3",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1701244",
    "mpn": "KF552C40BB-16",
    "title": "Kingston FURY Beast 16GB 1x16GB DDR5 5200MHz DIMM Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-black-16gb-ddr5-5200mhz-dimm-desktop-memory-kf552c40bb-16/version.asp",
    "price": 214.97,
-   "wasPrice": 362.39,
+   "wasPrice": 368.39,
    "image": "https://www.laptopsdirect.co.uk/Images/KF552C40BB-16_1_Classic.png?v=5",
    "inStock": true
   },
@@ -270,12 +272,32 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2008616",
+   "mpn": "KF556C40BB2-32",
+   "title": "Kingston FURY Beast 32GB (1x32GB) DIMM 5600MT/s DDR5 Desktop Memory",
+   "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-32gb-1x32gb-dimm-5600mt-s-ddr5-desktop-memory-kf556c40bb2-32/version.asp",
+   "price": 549.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/KF556C40BB2-32_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1678308",
    "mpn": "KF432C16BBK2/32",
    "title": "Kingston FURY Beast 32GB (2x16GB) DIMM 3200MHz DDR4 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-32gb-2x16gb-dimm-3200mhz-ddr4-desktop-memory-kf432c16bbk2-32/version.asp",
    "price": 445.97,
    "image": "https://www.laptopsdirect.co.uk/Images/KF432C16BBK232_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2008614",
+   "mpn": "KF556C36BBE-64",
+   "title": "Kingston FURY Beast 64GB (1x64GB) DIMM 5600MT/s DDR5 Desktop Memory",
+   "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-64gb-1x64gb-dimm-5600mt-s-ddr5-desktop-memory-kf556c36bbe-64/version.asp",
+   "price": 1236.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/KF556C36BBE-64_1_Classic.png?v=7",
    "inStock": true
   },
   {
@@ -305,7 +327,7 @@
    "title": "Kingston FURY Beast Black 32GB 1x32GB DDR4 3200MHz DIMM Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-black-kf432c16bb-32-32gb-ddr4-3200mt-s-memory-dimm-kf432c16bb-32/version.asp",
    "price": 441.97,
-   "wasPrice": 501.59,
+   "wasPrice": 502.79,
    "image": "https://www.laptopsdirect.co.uk/Images/KF432C16BB32_1_Classic.png?v=5",
    "inStock": true
   },
@@ -391,7 +413,7 @@
    "title": "Kingston ValueRAM 16GB 1x16GB SODIMM DDR4 3200MHz Laptop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-valueram-16gb-1x16gb-so-dimm-3200mhz-ddr4-laptop-memory-kvr32s22s8-16/version.asp",
    "price": 194.97,
-   "wasPrice": 212.39,
+   "wasPrice": 211.19,
    "image": "https://www.laptopsdirect.co.uk/Images/KVR32S22S816_1_8440426_classic.jpg?v=5",
    "inStock": true
   },
@@ -402,7 +424,7 @@
    "title": "Kingston ValueRAM 32GB 1x32GB DIMM 3200MHz DDR4 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-valueram-32gb-1x32gb-dimm-3200mhz-ddr4-desktop-memory-kvr32n22d8-32/version.asp",
    "price": 234.97,
-   "wasPrice": 502.79,
+   "wasPrice": 505.19,
    "image": "https://www.laptopsdirect.co.uk/Images/KVR32N22D832_1_Classic.jpg?v=3",
    "inStock": true
   },

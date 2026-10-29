@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:05:02.795Z",
+ "scrapedAt": "2026-10-28T23:21:28.064Z",
  "offers": [
   {
    "retailer": "ple",
@@ -413,7 +413,7 @@
    "price": 1399,
    "wasPrice": 2199,
    "image": "https://plecom.imgix.net/iil-479427-686986.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -963,6 +963,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "678882",
+   "title": "MSI Claw A8 (BZ2EM) - 8\" 120Hz, Ryzen Z2 Extreme, 24GB/1TB - Win 11 Gaming Handheld (Polar Tempest)",
+   "brand": "MSI",
+   "mpn": "Claw A8 BZ2EM-010AU",
+   "url": "https://www.ple.com.au/products/678882/msi-claw-a8-bz2em-8-120hz-ryzen-z2-extreme-24gb1tb-win-11-gaming-handheld-polar-tempest",
+   "price": 1431,
+   "wasPrice": 1749,
+   "image": "https://plecom.imgix.net/iil-445948-678882.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "688185",
    "title": "MSI Crosshair 16 MAX HX (E2WGXK) - 16\" 165Hz OLED, Ultra 9 275HX, RTX 5070, 16GB/1TB - Win 11 Gaming Notebook",
    "brand": "MSI",
@@ -1168,7 +1180,7 @@
    "url": "https://www.ple.com.au/products/688622/msi-prestige-n16-flip-ai-c1xmt-16-28k-oled-120hz-touch-rtx-spark-n1x-20-core-cpu-32gb1tb-win-11-pro-notebook",
    "price": 6599,
    "image": "https://plecom.imgix.net/iil-487122-688622.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

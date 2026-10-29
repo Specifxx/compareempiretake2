@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:01:44.254Z",
+ "scrapedAt": "2026-10-28T23:16:48.179Z",
  "offers": [
   {
    "retailer": "dell",
@@ -9,6 +9,28 @@
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/alienware15da15260",
    "price": 2564.25,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/da15260/media-gallery/notebook-alienware-15-da15260-mb3-intel-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1108&qlt=100,0&resMode=sharp2&size=1108,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "alienware15da15265",
+   "brand": "Alienware",
+   "title": "Alienware 15 Gaming Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/alienware15da15265",
+   "price": 2026.35,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/da15265/media-gallery/laptop-alienware-15-da15265-laptop-mb2-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1108&qlt=100,0&resMode=sharp2&size=1108,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "alienware16area51aa16250",
+   "brand": "Alienware",
+   "title": "Alienware 16 Area-51 Gaming Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/alienware16area51aa16250",
+   "price": 6795.8,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/aa16250/media-gallery/mb2/laptop-alienware-aa16250nt-mb2-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1102&qlt=100,0&resMode=sharp2&size=1102,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -53,6 +75,39 @@
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dellplus14laptopdb04255",
    "price": 1708.3,
    "image": "https://i.dell.com/assetlink/img/en/laptop-dell-plus-db04255t-ice-bl-gallery-1-dl1fj3h-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1147&qlt=100,0&resMode=sharp2&size=1147,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellplus14laptopdb14255",
+   "brand": "Dell",
+   "title": "Dell 14 Plus Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dellplus14laptopdb14255",
+   "price": 1915.1,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-db14255t-bl-fpr-gallery-1-dl1fis0-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1018&qlt=100,0&resMode=sharp2&size=1018,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dell14sds14270",
+   "brand": "Dell",
+   "title": "Dell 14S Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell14sds14270",
+   "price": 1271.6,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-dell-ds14270-row-beige-gallery-1-dl11i20g-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1063&qlt=100,0&resMode=sharp2&size=1063,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dell14sds14265",
+   "brand": "Dell",
+   "title": "Dell 14S Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell14sds14265",
+   "price": 2037.2,
+   "image": "https://i.dell.com/assetlink/img/en/laptop-ds14265nt-fhd-oled-blue-gallery-1-dl113l1t-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1006&qlt=100,0&resMode=sharp2&size=1006,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -162,6 +217,38 @@
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-dx13260/media-gallery/sky/laptop-xps-13-sky-dx13260-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1043&qlt=100,0&resMode=sharp2&size=1043,804",
    "inStock": true,
    "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "xps14da14260",
+   "brand": "Dell",
+   "title": "Dell XPS 14 Laptop (2026)",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/xps14da14260",
+   "price": 4174.65,
+   "image": "https://i.dell.com/assetlink/img/en/laptop-dell-da14260t-gy-oled-gallery-1-dl1fj2l-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1075&qlt=100,0&resMode=sharp2&size=1075,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "xps16da16260",
+   "brand": "Dell",
+   "title": "Dell XPS 16 Laptop (2026)",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/xps16da16260",
+   "price": 4291.25,
+   "image": "https://i.dell.com/assetlink/img/global/notebook-da16260-t-gray-mg-1-dl12pds3-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1054&qlt=100,0&resMode=sharp2&size=1054,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "da16260_reg_01",
+   "brand": "Dell",
+   "title": "Dell XPS 16 Laptop (2026) - Intel Core Ultra 7 355, 16 GB LPDDR5X, 512 GB SSD, 16\" Non Touch FHD+ (1920x1200)",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/xps16da16260/da16260_reg_01",
+   "price": 4291.25,
+   "image": "https://i.dell.com/assetlink/img/global/notebook-da16260-t-gray-mg-1-dl12pds3-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1054&qlt=100,0&resMode=sharp2&size=1054,804",
+   "inStock": true
   }
  ]
 }

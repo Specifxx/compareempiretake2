@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:43:55.281Z",
+ "scrapedAt": "2026-10-28T23:59:07.990Z",
  "offers": [
   {
    "retailer": "uk-dell",
@@ -147,10 +147,20 @@
    "brand": "Dell",
    "title": "Dell XPS 13 Laptop",
    "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/xps13dx13260",
-   "price": 921.05,
+   "price": 886.25,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-dx13260/media-gallery/sky/laptop-xps-13-sky-dx13260-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1043&qlt=100,0&resMode=sharp2&size=1043,804",
    "inStock": true,
    "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "dx13260_reg_03",
+   "brand": "Dell",
+   "title": "Dell XPS 13 Laptop - Intel Core 5 320, 8 GB LPDDR5X, 13.4\" Touch QHD+ (2560x1600)",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/xps13dx13260/dx13260_reg_03",
+   "price": 3886.25,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-dx13260/media-gallery/sky/laptop-xps-13-sky-dx13260-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1043&qlt=100,0&resMode=sharp2&size=1043,804",
+   "inStock": true
   },
   {
    "retailer": "uk-dell",
@@ -159,7 +169,7 @@
    "title": "Dell XPS 14 Laptop",
    "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/xps14da14260",
    "price": 2038.25,
-   "image": "https://i.dell.com/assetlink/img/en/laptop-dell-da14260t-gy-oled-gallery-1-dl1fj2l-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1075&qlt=100,0&resMode=sharp2&size=1075,804",
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/images/products/laptops-and-2-in-1s/xps/14-da14260-touch/dell-da14260t-laptop-c-15000ff100-gy-oled.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1076&qlt=100,0&resMode=sharp2&size=1076,804",
    "inStock": true,
    "fromPrice": true
   }

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:05:30.533Z",
+ "scrapedAt": "2026-10-28T23:21:59.828Z",
  "offers": [
   {
    "retailer": "ple",
@@ -149,7 +149,7 @@
    "price": 148,
    "wasPrice": 199,
    "image": "https://plecom.imgix.net/iil-473690-685447.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -185,7 +185,7 @@
    "price": 279,
    "wasPrice": 319,
    "image": "https://plecom.imgix.net/iil-474083-685448.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -220,7 +220,7 @@
    "url": "https://www.ple.com.au/products/685451/beyerdynamic-dt880-pro-semi-open-studio-headphones-250ohms",
    "price": 349,
    "image": "https://plecom.imgix.net/iil-474087-685451.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -610,7 +610,8 @@
    "brand": "HyperX",
    "mpn": "727A9AA",
    "url": "https://www.ple.com.au/products/658760/hyperx-cloud-iii-wired-gaming-headset-red",
-   "price": 159,
+   "price": 149,
+   "wasPrice": 159,
    "image": "https://plecom.imgix.net/iil-343881-658760.jpg?w=600&h=600",
    "inStock": false
   },

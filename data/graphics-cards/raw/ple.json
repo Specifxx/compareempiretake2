@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-27T23:04:58.742Z",
+ "scrapedAt": "2026-10-28T23:21:23.220Z",
  "offers": [
   {
    "retailer": "ple",
@@ -196,8 +196,7 @@
    "brand": "ASUS",
    "mpn": "PRIME-RTX5060TI-O8G",
    "url": "https://www.ple.com.au/products/674700/asus-geforce-rtx-5060-ti-prime-oc-8gb-gddr7",
-   "price": 949,
-   "wasPrice": 1029,
+   "price": 1029,
    "image": "https://plecom.imgix.net/iil-427734-674700.jpg?w=600&h=600",
    "inStock": true
   },
@@ -289,17 +288,6 @@
    "url": "https://www.ple.com.au/products/672025/asus-geforce-rtx-5080-prime-oc-16gb-gddr7",
    "price": 3199,
    "image": "https://plecom.imgix.net/iil-417470-672025.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "678460",
-   "title": "ASUS GeForce RTX 5080 ProArt OC 16GB GDDR7",
-   "brand": "ASUS",
-   "mpn": "PROART-RTX5080-O16G",
-   "url": "https://www.ple.com.au/products/678460/asus-geforce-rtx-5080-proart-oc-16gb-gddr7",
-   "price": 3499,
-   "image": "https://plecom.imgix.net/iil-446826-678460.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -524,7 +512,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-N506TEAGLE OC-8GD",
    "url": "https://www.ple.com.au/products/675236/gigabyte-geforce-rtx-5060-ti-eagle-oc-8gb-gddr7",
-   "price": 749,
+   "price": 899,
    "wasPrice": 949,
    "image": "https://plecom.imgix.net/iil-427636-675236.jpg?w=600&h=600",
    "inStock": true
@@ -536,8 +524,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-N506TEAGLEOC ICE-8GD",
    "url": "https://www.ple.com.au/products/675235/gigabyte-geforce-rtx-5060-ti-eagle-oc-ice-8gb-gddr7-white-",
-   "price": 849,
-   "wasPrice": 949,
+   "price": 949,
    "image": "https://plecom.imgix.net/iil-427624-675235.jpg?w=600&h=600",
    "inStock": false
   },
@@ -560,7 +547,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-N506TWF2-8GD",
    "url": "https://www.ple.com.au/products/675238/gigabyte-geforce-rtx-5060-ti-windforce-8gb-gddr7",
-   "price": 699,
+   "price": 739,
    "wasPrice": 794,
    "image": "https://plecom.imgix.net/iil-427655-675238.jpg?w=600&h=600",
    "inStock": true
@@ -686,9 +673,20 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5070WF3OC-12GD",
    "url": "https://www.ple.com.au/products/672387/gigabyte-geforce-rtx-5070-windforce-oc-sff-12gb-gddr7",
-   "price": 1349,
-   "wasPrice": 1399,
+   "price": 1399,
    "image": "https://plecom.imgix.net/iil-418426-672387.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "686221",
+   "title": "Gigabyte GeForce RTX 5080 AORUS Infinity 16GB GDDR7 - Wood",
+   "brand": "Gigabyte",
+   "mpn": "GV-N5080AORUSIF WD-16GD",
+   "url": "https://www.ple.com.au/products/686221/gigabyte-geforce-rtx-5080-aorus-infinity-16gb-gddr7-wood",
+   "price": 3599,
+   "wasPrice": 3909,
+   "image": "https://plecom.imgix.net/iil-475440-686221.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -711,7 +709,7 @@
    "url": "https://www.ple.com.au/products/672372/gigabyte-geforce-rtx-5080-gaming-oc-16gb-gddr7",
    "price": 3599,
    "image": "https://plecom.imgix.net/iil-416525-672372.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -723,17 +721,6 @@
    "price": 3599,
    "image": "https://plecom.imgix.net/iil-416526-672384.jpg?w=600&h=600",
    "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "687479",
-   "title": "Gigabyte GeForce RTX 5080 Windforce OC V2 SFF 16GB GDDR7",
-   "brand": "Gigabyte",
-   "mpn": "GV-N5080WF3OCV2-16GD",
-   "url": "https://www.ple.com.au/products/687479/gigabyte-geforce-rtx-5080-windforce-oc-v2-sff-16gb-gddr7",
-   "price": 3499,
-   "image": "https://plecom.imgix.net/iil-481729-687479.jpg?w=600&h=600",
-   "inStock": false
   },
   {
    "retailer": "ple",
@@ -981,7 +968,7 @@
    "url": "https://www.ple.com.au/products/688712/msi-geforce-rtx-5080-oc-16gb-gddr7-call-of-duty-modern-warfare-4-edition",
    "price": 3499,
    "image": "https://plecom.imgix.net/iil-487409-688712.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1070,8 +1057,7 @@
    "brand": "NVIDIA",
    "mpn": "900-5G147-2550-000",
    "url": "https://www.ple.com.au/products/679162/nvidia-rtx-pro-4500-blackwell-32gb-gddr7",
-   "price": 6999,
-   "wasPrice": 7599,
+   "price": 7599,
    "image": "https://plecom.imgix.net/iil-460284-679162.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1118,7 +1104,18 @@
    "url": "https://www.ple.com.au/products/672832/palit-geforce-rtx-3050-stormx-6gb-gddr6",
    "price": 399,
    "image": "https://plecom.imgix.net/iil-416465-672832.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "688803",
+   "title": "Palit GeForce RTX 3060 Infinity 2 OC 12GB GDDR6",
+   "brand": "Palit",
+   "mpn": "NE63060U19K9-PG190L",
+   "url": "https://www.ple.com.au/products/688803/palit-geforce-rtx-3060-infinity-2-oc-12gb-gddr6",
+   "price": 689,
+   "image": "https://plecom.imgix.net/iil-488339-688803.jpg?w=600&h=600",
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1127,7 +1124,7 @@
    "brand": "Palit",
    "mpn": "NE7506T019P1-GB2062D",
    "url": "https://www.ple.com.au/products/674495/palit-geforce-rtx-5060-ti-dual-8gb-gddr7",
-   "price": 689,
+   "price": 749,
    "wasPrice": 809,
    "image": "https://plecom.imgix.net/iil-428052-674495.jpg?w=600&h=600",
    "inStock": true
@@ -1161,7 +1158,7 @@
    "brand": "PNY",
    "mpn": "VCG50608DFXPB1-O",
    "url": "https://www.ple.com.au/products/682830/pny-geforce-rtx-5060-dual-fan-oc-8gb-gddr7",
-   "price": 669,
+   "price": 769,
    "image": "https://plecom.imgix.net/iil-462857-682830.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1172,7 +1169,7 @@
    "brand": "PNY",
    "mpn": "VCG5060T8DFXPB1-O",
    "url": "https://www.ple.com.au/products/676639/pny-geforce-rtx-5060-ti-dual-fan-oc-8gb-gddr7",
-   "price": 789,
+   "price": 839,
    "image": "https://plecom.imgix.net/iil-434626-676639.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1183,7 +1180,7 @@
    "brand": "PNY",
    "mpn": "VCG507012TFXXPB1-O",
    "url": "https://www.ple.com.au/products/676644/pny-geforce-rtx-5070-argb-oc-triple-fan-12gb-gddr7",
-   "price": 1389,
+   "price": 1599,
    "image": "https://plecom.imgix.net/iil-434775-676644.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1194,7 +1191,7 @@
    "brand": "PNY",
    "mpn": "VCG5070T16TFXXPB1-O",
    "url": "https://www.ple.com.au/products/672777/pny-geforce-rtx-5070-ti-argb-oc-16gb",
-   "price": 1999,
+   "price": 2229,
    "image": "https://plecom.imgix.net/iil-418381-672777.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1205,7 +1202,7 @@
    "brand": "PNY",
    "mpn": "VCG507012TFXPB1-O",
    "url": "https://www.ple.com.au/products/676643/pny-geforce-rtx-5070-triple-fan-oc-12gb-gddr7",
-   "price": 1399,
+   "price": 1569,
    "image": "https://plecom.imgix.net/iil-434808-676643.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1216,21 +1213,9 @@
    "brand": "PNY",
    "mpn": "VCG508016TFXXPB1-O",
    "url": "https://www.ple.com.au/products/672773/pny-geforce-rtx-5080-argb-epic-x-rgb-oc-16gb",
-   "price": 3399,
+   "price": 3409,
    "image": "https://plecom.imgix.net/iil-415708-672773.jpg?w=600&h=600",
    "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "683757",
-   "title": "PNY GeForce RTX 5080 Dual Fan Slim OC 16GB GDDR7",
-   "brand": "PNY",
-   "mpn": "VCG508016DFSXPB1-O",
-   "url": "https://www.ple.com.au/products/683757/pny-geforce-rtx-5080-dual-fan-slim-oc-16gb-gddr7",
-   "price": 3499,
-   "wasPrice": 9999,
-   "image": "https://plecom.imgix.net/iil-466928-683757.jpg?w=600&h=600",
-   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1239,7 +1224,7 @@
    "brand": "PNY",
    "mpn": "VCG508016TFXPB1",
    "url": "https://www.ple.com.au/products/672776/pny-geforce-rtx-5080-triple-fan-16gb-gddr7",
-   "price": 3099,
+   "price": 3379,
    "image": "https://plecom.imgix.net/iil-415699-672776.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1384,7 +1369,7 @@
    "brand": "XFX",
    "mpn": "RX-76PSWFTFY",
    "url": "https://www.ple.com.au/products/660329/xfx-speedster-swft-210-radeon-rx-7600-core-edition-8gb-gddr6-",
-   "price": 419,
+   "price": 479,
    "wasPrice": 489,
    "image": "https://plecom.imgix.net/iil-373245-660329.jpg?w=600&h=600",
    "inStock": true
