@@ -1,6 +1,7 @@
 ---
 title: The best phones under $500 in Australia (updated daily)
 description: The phones worth buying for under $500, with today's cheapest price at every major Australian store.
+section: best
 date: 2026-10-22
 tags: Best picks, Budget
 hero: samsung-galaxy-a27

@@ -1,6 +1,7 @@
 ---
 title: The best phones you can buy in Australia right now
 description: Our picks for the best phone at every budget, from under $300 to no-limit flagships — with today's cheapest price at Australian stores.
+section: best
 date: 2026-10-22
 tags: Best picks
 hero: samsung-galaxy-s26-ultra

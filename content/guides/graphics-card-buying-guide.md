@@ -1,6 +1,8 @@
 ---
 title: Graphics card buying guide: which GPU for 1080p, 1440p and 4K
 description: How to pick a graphics card — the chip, video memory, power and size — and why the brand on the box matters less than you think. Live Australian prices.
+category: graphics-cards
+section: how-to
 date: 2026-10-25
 tags: Buying guide, PC parts
 hero: graphics-cards/msi-geforce-rtx-5070-ti-16g-ventus-3x-oc-graphics-card

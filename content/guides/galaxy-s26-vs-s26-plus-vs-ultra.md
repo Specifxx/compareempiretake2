@@ -1,6 +1,7 @@
 ---
 title: "Galaxy S26 vs S26+ vs S26 Ultra: which should you buy in Australia?"
 description: Real Australian prices for all three Galaxy S26 models side by side, what you get for the extra money, and which one is the best value today.
+section: compare
 date: 2026-10-22
 tags: Comparison, Samsung
 hero: samsung-galaxy-s26-ultra

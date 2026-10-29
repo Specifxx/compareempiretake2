@@ -3,8 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PhoneBrowser } from "@/components/PhoneBrowser";
 import { gridProps, gridSrc } from "@/lib/browse";
-import { activeCategories, activeRetailers, categoryHref, getSummaries, gridVersion, type PhoneSummary } from "@/lib/catalog";
+import { activeCategories, activeRetailers, categoryHref, getProducts, getSummaries, gridVersion, type PhoneSummary } from "@/lib/catalog";
 import { CATEGORY_GUIDES } from "@/lib/category-guides";
+import { GuideCard } from "@/components/GuideCard";
+import { guidesForCategory } from "@/lib/guides";
 import { SITE } from "@/lib/site";
 import { money, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById, CATEGORIES, DEPARTMENTS } from "@/lib/categories";
@@ -19,6 +21,9 @@ const AMAZON_PICK_CATEGORIES: CategoryId[] = ["phones", "tvs", "laptops", "headp
 export type CategoryParams = Promise<{ category: string }>;
 export const categoryParams = (region: RegionId) => activeCategories(region).map((c) => ({ category: c.id }));
 const inRegion = (region: RegionId) => (region === "au" ? "Australia" : region === "us" ? "the US" : "the UK");
+/** Search Console (2026-10-29): category pages rank for "<category> price comparison" (US robot vacuums: 7,600
+ *  impressions at position 6, no clicks) under a title that never said it. */
+const placeName = (region: RegionId) => (region === "au" ? "Australia" : region === "us" ? "US" : "UK");
 
 export async function categoryMetadata(params: CategoryParams, region: RegionId): Promise<Metadata> {
   const c = categoryById((await params).category);
@@ -27,8 +32,8 @@ export async function categoryMetadata(params: CategoryParams, region: RegionId)
   const R = REGIONS[region];
   const langs = Object.fromEntries(REGION_IDS.filter((r) => activeCategories(r).some((x) => x.id === c.id)).map((r) => [REGIONS[r].hreflang, categoryHref(c.id, r)]));
   return {
-    title: `${c.name} — compare prices in ${inRegion(region)}`,
-    description: `Compare ${c.noun} prices across ${stores.length} ${R.adjective} stores including ${stores.slice(0, 4).map((r) => r.name).join(", ")}. ${c.blurb} Price history on every product.`,
+    title: `${c.name} Price Comparison ${placeName(region)}`,
+    description: `Compare ${getProducts(c.id as CategoryId, region).length.toLocaleString("en-AU")} ${c.name.toLowerCase()} across ${stores.length} ${R.adjective} stores including ${stores.slice(0, 4).map((r) => r.name).join(", ")}. ${c.blurb} Price history on every product.`,
     alternates: { canonical: categoryHref(c.id, region), ...(Object.keys(langs).length > 1 ? { languages: langs } : {}) },
     openGraph: { url: categoryHref(c.id, region), images: [{ url: ogImage({ title: `Compare ${c.name.toLowerCase()} prices in ${inRegion(region)}`, stores: stores.length, category: c.name, region }), width: 1200, height: 630 }] },
   };
@@ -53,7 +58,7 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
         <div>
           <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
             <span className="mr-2">{c.emoji}</span>
-            {c.name}
+            {c.name} <span className="text-ink-mute">price comparison</span>
           </h1>
           <p className="mt-2 max-w-2xl text-ink-mute">
             {products.length.toLocaleString()} products across {stores.length} {REGIONS[region].adjective} stores. {c.blurb}
@@ -73,9 +78,30 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
         <PhoneBrowser key={`${region}/${id}`} {...gridProps(products, id, { brands: true, cats: false, src: gridSrc.category(region, id), version: gridVersion(region) })} category={id} />
       </div>
       <CategoryGuideSection id={id} name={c.name} region={region} products={products} />
+      {region === "au" && <CategoryGuides id={id} name={c.name} />}
       {region === "au" && AMAZON_PICK_CATEGORIES.includes(id) && <AmazonPicks category={id} title={`Top ${c.name.toLowerCase()} picks on Amazon AU`} />}
       <EbayStrip query={c.noun} label={c.name.toLowerCase()} customid={`${region === "au" ? "" : `${region}-`}cat-${c.id}`} phones={c.id === "phones"} region={region} />
     </div>
+  );
+}
+
+/** The guides written for this category, so every category page links its articles (and they get crawled). */
+function CategoryGuides({ id, name }: { id: CategoryId; name: string }) {
+  const list = guidesForCategory(id, 6);
+  if (!list.length) return null;
+  return (
+    <section className="mt-16">
+      <div className="mb-5 flex items-end justify-between gap-4">
+        <div>
+          <h2 className="font-display text-2xl font-extrabold tracking-tight">{name} guides</h2>
+          <p className="mt-1 text-sm text-ink-mute">Best picks, comparisons and where to buy, with today&apos;s prices.</p>
+        </div>
+        <Link href="/guides" className="hidden shrink-0 text-sm font-semibold text-brand hover:underline sm:inline">All guides →</Link>
+      </div>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {list.map((g) => <GuideCard key={g.slug} g={g} />)}
+      </div>
+    </section>
   );
 }
 

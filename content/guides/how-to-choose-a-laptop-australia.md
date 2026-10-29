@@ -1,6 +1,8 @@
 ---
 title: How to choose a laptop: the specs that matter (and the ones that don't)
 description: Processor, memory, storage, screen and battery explained in plain English, with today's prices on the laptops Australian stores stock most.
+category: laptops
+section: how-to
 date: 2026-10-25
 tags: Buying guide, Laptops
 hero: laptops/apple-macbook-pro-14-m5-16gb-ram-1tb

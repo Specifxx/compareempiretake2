@@ -1,6 +1,7 @@
 ---
 title: "Pixel 10a vs Galaxy A57: the best mid-range phone in Australia"
 description: Google's and Samsung's mid-range phones compared on real Australian prices, storage, screen and software support.
+section: compare
 date: 2026-10-22
 tags: Comparison, Mid-range
 hero: google-pixel-10a
