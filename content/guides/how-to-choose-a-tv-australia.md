@@ -1,6 +1,8 @@
 ---
 title: How to choose a TV in Australia: OLED vs Mini LED, size and gaming
 description: A plain guide to buying a TV — panel types, the right size for your room, what gamers need and when prices drop — with live prices from Australian stores.
+category: tvs
+section: how-to
 date: 2026-10-25
 tags: Buying guide, TVs
 hero: tvs/samsung-77-inch-s85h-ai-4k-oled-smart-tv

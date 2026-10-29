@@ -62,7 +62,7 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
   return (
     <>
       <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/80 backdrop-blur-xl">
-        <div className="container-x flex h-16 items-center gap-4">
+        <div className="container-x flex h-16 items-center gap-1.5 sm:gap-4">
           <Logo />
           <button
             onClick={() => setMega((m) => !m)}
@@ -85,10 +85,10 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
           <div className="ml-auto hidden max-w-sm flex-1 md:block">
             <SearchBox />
           </div>
-          <button onClick={() => setOpen(true)} className="ml-auto flex h-10 flex-1 items-center gap-2 rounded-xl border border-line bg-bg-card px-3 text-sm text-ink-mute shadow-sm md:hidden" aria-label="Search">
-            <SearchIcon className="h-4 w-4" /> <span className="truncate">Search products…</span>
+          <button onClick={() => setOpen(true)} className="ml-auto grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-line bg-bg-card text-sm text-ink-mute shadow-sm sm:flex sm:w-auto sm:min-w-0 sm:flex-1 sm:items-center sm:gap-2 sm:px-3 md:hidden" aria-label="Search">
+            <SearchIcon className="h-4 w-4 shrink-0" /> <span className="hidden truncate sm:inline">Search products…</span>
           </button>
-          <Link href="/saved" className="relative grid h-10 w-10 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk hover:text-ink" aria-label="Saved">
+          <Link href="/saved" className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk hover:text-ink" aria-label="Saved">
             <HeartIcon />
             {savedList.length > 0 && (
               <span className="absolute right-1 top-1 grid h-4 min-w-4 place-items-center rounded-full bg-hot px-1 text-[10px] font-bold text-white">{savedList.length}</span>
@@ -96,7 +96,7 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
           </Link>
           {regions.length > 1 && <RegionSwitcher regions={regions} nav={nav} />}
           <ThemeToggle />
-          <button className="grid h-10 w-10 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu">
+          <button className="grid h-10 w-10 shrink-0 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu">
             {menu ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>

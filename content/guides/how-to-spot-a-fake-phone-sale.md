@@ -1,6 +1,7 @@
 ---
 title: How to spot a fake phone sale (and what a real deal looks like)
 description: "Was $1,999, now $1,699" doesn't always mean you're saving $300. How Australian shoppers can check if a phone sale is real.
+section: save
 date: 2026-10-22
 tags: Buying advice
 hero: samsung-galaxy-s26

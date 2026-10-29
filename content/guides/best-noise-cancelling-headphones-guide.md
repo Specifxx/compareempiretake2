@@ -1,6 +1,8 @@
 ---
 title: Noise-cancelling headphones and earbuds: how to choose
 description: Over-ear vs earbuds, how good noise cancelling really is, codecs, comfort and when prices drop — with live prices from Australian stores.
+category: headphones
+section: how-to
 date: 2026-10-25
 tags: Buying guide, Headphones
 hero: headphones/apple-airpods-pro-3

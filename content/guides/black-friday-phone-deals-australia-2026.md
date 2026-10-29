@@ -1,6 +1,7 @@
 ---
 title: Black Friday 2026 phone deals in Australia — checked against real prices
 description: Our live tracker for Black Friday phone deals in Australia. Every deal is checked against what the phone cost at every store before the sale.
+section: save
 date: 2026-10-22
 tags: Sales, Black Friday
 hero: apple-iphone-17-pro

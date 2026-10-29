@@ -1,6 +1,7 @@
 ---
 title: Where to buy the cheapest iPhone in Australia right now
 description: Today's lowest prices on every current iPhone across every major Australian store, Apple included — and which model is the best value.
+section: stores
 date: 2026-10-22
 tags: Apple, Prices
 hero: apple-iphone-17

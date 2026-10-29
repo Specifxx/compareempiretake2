@@ -326,3 +326,27 @@ its challenge with the registered URL; it is overridable with
 `EBAY_DELETION_ENDPOINT`. Moving back to www means restoring its DNS, waiting
 for Vercel to show both domains Valid, then changing `SITE` and the redirect
 together.
+
+## 2026-10-29: Guides carry live store data, and category titles say "price comparison"
+
+Search Console (90 days to 2026-10-28) showed the site barely visible: 43
+clicks, while `/us/robot-vacuums` had 7,609 impressions for "robot vacuum
+price comparison" at position ~6 and no clicks, and the few guides there were
+already earned impressions. Two changes follow.
+
+Category pages are titled "<Category> Price Comparison <Australia|US|UK>" and
+their h1 says "price comparison", because that is the phrase people search.
+
+The guides grew from 11 to 52, each aimed at one search intent (best picks,
+head-to-head, where to buy, buying guides, shopping smarter) so they don't
+split a query between themselves. No guide types a price: every number comes
+from the catalogue at build time through shortcodes in `GuideBody`
+(`[[top:]]`, `[[stores:]]`, `[[by:]]`, `[[deals:]]`, `[[plans:]]`,
+`[[build:]]`, `{{count:}}`, `{{storecount:}}`; pure logic in
+`src/lib/guide-data.ts`). Store claims in prose are dated ("when we wrote
+this, October 2026"); the "who is cheapest" tables recompute daily. MSY and
+Umart share one price list, so they count as one store (`PRICE_TWINS`).
+`npx tsx scripts/check-guides.ts` warns when a block would render empty;
+`tests/guides.test.ts` pins front matter and internal links. Guides are in the
+sitemap through the existing guides section. Re-check Search Console around
+2026-11-17.

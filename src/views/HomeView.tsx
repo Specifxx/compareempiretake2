@@ -4,6 +4,7 @@ import { ArrowRight } from "@/components/icons";
 import { PhoneCard } from "@/components/PhoneCard";
 import { SearchBox } from "@/components/SearchBox";
 import { getGuides } from "@/lib/guides";
+import { GuideCard } from "@/components/GuideCard";
 import { activeCategories, checkVariant, getCatalog, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import type { CategoryId } from "@/lib/types";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
@@ -173,22 +174,20 @@ export function HomeView({ region }: { region: RegionId }) {
         </section>
       )}
 
+      {region === "au" && (
+        <section className="container-x mt-16">
+          <SectionHead title="Guides with live prices" sub="Best picks, head-to-heads and which store is really cheapest. Every number updates each morning." href="/guides" cta="All guides" />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {getGuides().slice(0, 6).map((g) => <GuideCard key={g.slug} g={g} />)}
+          </div>
+        </section>
+      )}
+
       <section className="container-x mt-16">
         <NewsletterSignup />
       </section>
 
-      {region === "au" && <section className="container-x mt-16">
-        <SectionHead title="Buying guides" sub="Advice with live prices — every number on these pages updates daily." href="/guides" cta="All guides" />
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {getGuides().slice(0, 6).map((g) => (
-            <Link key={g.slug} href={`/guides/${g.slug}`} className="card p-5 transition hover:shadow-lift">
-              <div className="eyebrow">{g.tags[0] ?? "Guide"}</div>
-              <div className="mt-1.5 font-display text-lg font-bold leading-snug">{g.title}</div>
-              <div className="mt-2 text-xs text-ink-mute">{g.readingMinutes} min read</div>
-            </Link>
-          ))}
-        </div>
-      </section>}
+
 
       <section className="container-x mt-16">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#2A1A8C] via-brand to-[#9B4DFF] p-8 text-white sm:p-12">
