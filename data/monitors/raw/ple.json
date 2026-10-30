@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:21:26.069Z",
+ "scrapedAt": "2026-10-29T23:25:29.284Z",
  "offers": [
   {
    "retailer": "ple",
@@ -552,7 +552,7 @@
    "price": 299,
    "wasPrice": 469,
    "image": "https://plecom.imgix.net/iil-433694-676550.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1521,7 +1521,7 @@
    "price": 499,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-393164-667915.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2522,7 +2522,7 @@
    "price": 599,
    "wasPrice": 749,
    "image": "https://plecom.imgix.net/iil-466892-683913.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -3048,6 +3048,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "666102",
+   "title": "MSI PRO MP341CQW - 34\" Curved 1440p 100Hz VA Monitor (White)",
+   "brand": "MSI",
+   "mpn": "PRO MP341CQW",
+   "url": "https://www.ple.com.au/products/666102/msi-pro-mp341cqw-34-curved-1440p-100hz-va-monitor-white",
+   "price": 299,
+   "wasPrice": 599,
+   "image": "https://plecom.imgix.net/iil-382245-666102.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "652107",
    "title": "Philips 242B9T - 24\" 1080p 75Hz IPS Touch Monitor",
    "brand": "Philips",
@@ -3113,7 +3125,7 @@
    "brand": "Philips",
    "mpn": "27E1N1800A",
    "url": "https://www.ple.com.au/products/678162/philips-27e1n1800a-27-4k-2160p-60hz-ips-monitor",
-   "price": 249,
+   "price": 237,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-441914-678162.jpg?w=600&h=600",
    "inStock": true

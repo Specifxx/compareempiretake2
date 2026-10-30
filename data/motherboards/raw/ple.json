@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:21:45.655Z",
+ "scrapedAt": "2026-10-29T23:25:47.164Z",
  "offers": [
   {
    "retailer": "ple",
@@ -552,7 +552,7 @@
    "brand": "ASUS",
    "mpn": "TUF GAMING B850-E WIFI",
    "url": "https://www.ple.com.au/products/676582/asus-tuf-gaming-b850-e-wifi-am5-atx-desktop-motherboard",
-   "price": 339,
+   "price": 369,
    "wasPrice": 379,
    "image": "https://plecom.imgix.net/iil-439220-676582.jpg?w=600&h=600",
    "inStock": false
@@ -1037,7 +1037,7 @@
    "price": 269,
    "wasPrice": 309,
    "image": "https://plecom.imgix.net/iil-453285-680623.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1900,6 +1900,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "680622",
+   "title": "MSI PRO H810M-Gaming WiFi6E LGA1851 mATX Desktop Motherboard",
+   "brand": "MSI",
+   "mpn": "PRO H810M-GAMING WIFI6E ",
+   "url": "https://www.ple.com.au/products/680622/msi-pro-h810m-gaming-wifi6e-lga1851-matx-desktop-motherboard",
+   "price": 165,
+   "image": "https://plecom.imgix.net/iil-454834-680622.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "681715",
    "title": "MSI PRO H810M‑B WiFi6E LGA1851 mATX Desktop Motherboard",
    "brand": "MSI",
@@ -1931,7 +1942,7 @@
    "url": "https://www.ple.com.au/products/688009/msi-pro-z890-p-wifi6e-lga1851-atx-desktop-motherboard",
    "price": 354,
    "image": "https://plecom.imgix.net/iil-486949-688009.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",

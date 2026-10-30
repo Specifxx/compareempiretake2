@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:56:25.478Z",
+ "scrapedAt": "2026-10-30T00:00:23.664Z",
  "offers": [
   {
    "retailer": "us-abt",
@@ -61,7 +61,7 @@
    "sku": "214358",
    "title": "Apple 24-Inch iMac M4 8-Core 16GB RAM 256GB SSD, 8-Core GPU Retina 4.5K Desktop Computer in Pink (Late 2024) - MWUG3LL/A",
    "url": "https://www.abt.com/Apple-24-Inch-iMac-M4-8-Core-16GB-RAM-256GB-SSD-8-Core-GPU-Retina-4.5K-Desktop-Computer-in-Pink-Late-2024-MWUG3LLA/p/214358.html",
-   "price": 1485.21,
+   "price": 1499,
    "image": "https://content.abt.com/image.php/255e53dd299e0bb42dd78637b77bf1db?image=/images/products/BDP_Images/apple-computer-MWUG3LLA-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Apple",
@@ -525,7 +525,7 @@
    "url": "https://www.abt.com/Apple-Mac-Studio-Desktop-Apple-M5-Max-128GB-Unified-Memory-2TB-SSD-in-Silver-Z1U4000F2/p/248641.html",
    "price": 5899,
    "image": "https://content.abt.com/image.php/c99e4f137b2ee0729f3cca48f9130ff2?image=/images/products/BDP_Images/apple-desktop-computers-Z1U4000F2-front.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "Z1U4000F2"
   },
@@ -602,7 +602,7 @@
    "url": "https://www.abt.com/Apple-Mac-Studio-Desktop-M5-Max-64GB-Unified-Memory-1TB-SSD-in-Silver-Z1U4000JJ/p/248642.html",
    "price": 3799,
    "image": "https://content.abt.com/image.php/4619c9f882b29eb17489d200b411466a?image=/images/products/BDP_Images/apple-desktop-computers-Z1U4000JJ-angle-2.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "Z1U4000JJ"
   },
@@ -613,7 +613,7 @@
    "url": "https://www.abt.com/Apple-Mac-Studio-Desktop-M5-Max-64GB-Unified-Memory-2TB-SSD-in-Silver-Z1U4000EM/p/252238.html",
    "price": 4299,
    "image": "https://content.abt.com/image.php/ea23a192b498931af4a72a65b28136aa?image=/images/products/BDP_Images/apple-desktop-computers-Z1U4000EM-front.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "Z1U4000EM"
   },
@@ -792,6 +792,17 @@
    "inStock": true,
    "brand": "HP",
    "mpn": "M02-0310"
+  },
+  {
+   "retailer": "us-abt",
+   "sku": "253127",
+   "title": "HP OmniDesk Desktop Intel Core i3-14100 8GB RAM 512GB SSD in Meteor Silverg - M02-0010",
+   "url": "https://www.abt.com/HP-OmniDesk-Desktop-Intel-Core-i3-14100-8GB-RAM-512GB-SSD-in-Meteor-Silverg-M020010/p/253127.html",
+   "price": 839.99,
+   "image": "https://content.abt.com/image.php/27cdef72d4833bf6026042c5218acdce?image=/images/products/BDP_Images/hp-desktop-M02-0110-dynamic-view.jpg&ck=2&width=165&height=150&canvas",
+   "inStock": true,
+   "brand": "HP",
+   "mpn": "M02-0010"
   },
   {
    "retailer": "us-abt",

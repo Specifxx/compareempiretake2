@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:21:14.873Z",
+ "scrapedAt": "2026-10-29T23:25:10.184Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -70,7 +70,7 @@
   {
    "retailer": "mwave",
    "sku": "AC92440",
-   "title": "Acer Nitro KG241YP6 23.8\" 144Hz FHD 1ms FreeSync HDR10 IPS Gaming Monitor - Eco",
+   "title": "Acer Nitro KG241YP6 23.8\" 144Hz FHD 1ms FreeSync HDR10 IPS Gaming Monitor - Eco Packaging",
    "url": "https://www.mwave.com.au/products/acer-nitro-kg241yp6-238-144hz-fhd-1ms-freesync-hdr10-ips-gaming-monitor-eco-packaging-ac92440",
    "price": 129,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/acer_nitro_kg241yp6_238_144hz_fhd_1ms_freesync_hdr10_ips_gaming_monitor_eco_packaging_ac92440_44446.jpg?v=1787744437",
@@ -346,7 +346,7 @@
    "url": "https://www.mwave.com.au/products/asus-eye-care-vz249hg-238-120hz-fhd-ips-gaming-monitor-ac94828",
    "price": 119,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_eye_care_vz249hg_238_120hz_fhd_ips_gaming_monitor_ac94828_21710.jpg?v=1787795372",
-   "inStock": false,
+   "inStock": true,
    "mpn": "VZ249HG",
    "brand": "Asus"
   },
@@ -381,6 +381,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_oled_xg32ucwg_32_165hz_4k330hz_full_hd_003ms_gsync_compatible_usbc_gaming_monitor_ac91919_70398.jpg?v=1787795459",
    "inStock": false,
    "mpn": "XG32UCWG",
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC96620",
+   "title": "ASUS ROG Strix Pulsar XG27AQNGV 27\" 360Hz QHD G-Sync 1ms Ultrafast IPS Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/asus-rog-strix-pulsar-xg27aqngv-27-360hz-qhd-gsync-1ms-ultrafast-ips-gaming-monitor-ac96620",
+   "price": 1099,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_pulsar_xg27aqngv_27_360hz_qhd_gsync_1ms_ultrafast_ips_gaming_monitor_ac96620_78612.jpg?v=1787795459",
+   "inStock": true,
+   "mpn": "XG27AQNGV",
    "brand": "Asus"
   },
   {
@@ -456,7 +467,7 @@
    "url": "https://www.mwave.com.au/products/asus-rog-strix-xg27acsrw-27-220hz-qhd-03ms-usbc-fast-ips-gaming-monitor-white-ac99910",
    "price": 349,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_xg27acsrw_27_220hz_qhd_03ms_usbc_fast_ips_gaming_monitor_white_ac99910_37083.jpg?v=1787744858",
-   "inStock": false,
+   "inStock": true,
    "mpn": "XG27ACSR-W",
    "brand": "Asus"
   },
@@ -474,7 +485,7 @@
   {
    "retailer": "mwave",
    "sku": "AC94823",
-   "title": "ASUS ROG Strix XG27AQWMG 27\" 280Hz QHD USB-A Hub WOLED Gaming Monitor",
+   "title": "ASUS ROG Strix XG27AQWMG 27\" 280Hz QHD 0.03ms Tandem WOLED 99% DCI-P3 Gaming Monitor",
    "url": "https://www.mwave.com.au/products/asus-rog-strix-xg27aqwmg-27-280hz-qhd-usba-hub-woled-gaming-monitor-ac94823",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_xg27aqwmg_27_280hz_qhd_usbc_hub_woled_gaming_monitor_ac94823_54579.jpg?v=1787795463",
@@ -517,6 +528,17 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC99908",
+   "title": "ASUS ROG Strix XG27UCSR 27\" Dual Mode 160Hz 4K/324Hz FHD 0.3ms USB-C Fast IPS Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/asus-rog-strix-xg27ucsr-27-dual-mode-160hz-4k324hz-fhd-03ms-usbc-fast-ips-gaming-monitor-ac99908",
+   "price": 499,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_xg27ucsr_27_dual_mode_160hz_4k324hz_fhd_03ms_usbc_fast_ips_gaming_monitor_ac99908_15129.jpg?v=1787784084",
+   "inStock": false,
+   "mpn": "XG27UCSR",
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC91360",
    "title": "ASUS ROG Strix XG32UCG 31.5\" Dual Mode 160hz 4K/320Hz FHD 0.3ms G-Sync Compatible Fast IPS Gaming Monitor",
    "url": "https://www.mwave.com.au/products/asus-rog-strix-xg32ucg-315-dual-mode-160hz-4k320hz-fhd-03ms-gsync-compatible-fast-ips-gaming-monitor-ac91360",
@@ -540,12 +562,23 @@
   {
    "retailer": "mwave",
    "sku": "AD00144",
-   "title": "ASUS ROG Swift PG27AQWP-G 27\" Dual Mode 540Hz QHD/720Hz HD HDR10 OLED Gaming Monitor",
+   "title": "ASUS ROG Swift PG27AQWP-G  27\" Dual Mode 540Hz QHD/720Hz HD HDR10 OLED Gaming Monitor - EDITION 20",
    "url": "https://www.mwave.com.au/products/asus-rog-swift-pg27aqwpg-27-dual-mode-540hz-qhd720hz-hd-hdr10-oled-gaming-monitor-edition-20-ad00144",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_swift_pg27aqwpg_27_dual_mode_540hz_qhd720hz_hd_hdr10_oled_gaming_monitor_edition_20_ad00144_64904.jpg?v=1790126438",
    "inStock": true,
    "mpn": "PG27AQWP-G",
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC91923",
+   "title": "ASUS ROG Swift PG27AQWP-W 27\" Dual Mode 540Hz QHD/720Hz HD TrueBlack Glossy OLED Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/asus-rog-swift-pg27aqwpw-27-dual-mode-540hz-qhd720hz-hd-trueblack-glossy-oled-gaming-monitor-ac91923",
+   "price": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_swift_pg27aqwpw_27_dual_mode_qhd_540hz_fhd_720hz_trueblack_glossy_oled_gaming_monitor_ac91923_20982.jpg?v=1787795467",
+   "inStock": false,
+   "mpn": "PG27AQWP-W",
    "brand": "Asus"
   },
   {
@@ -562,7 +595,7 @@
   {
    "retailer": "mwave",
    "sku": "AC96622",
-   "title": "ASUS ROG Swift PG32UCDM3 Gen3 32\" 240Hz 4K G-SYNC 0.03ms QD-OLED Gaming Monitor w/ 90W",
+   "title": "ASUS ROG Swift PG32UCDM3 Gen3 32\" 240Hz 4K G-SYNC 0.03ms QD-OLED Gaming Monitor w/ 90W USB-C",
    "url": "https://www.mwave.com.au/products/asus-rog-swift-pg32ucdm3-gen3-32-240hz-4k-gsync-003ms-qdoled-gaming-monitor-w-90w-usbc-ac96622",
    "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_swift_pg32ucdm3_gen3_32_240hz_4k_gsync_003ms_qdoled_gaming_monitor_w_90w_usbc_ac96622_99263.jpg?v=1787784072",
@@ -584,7 +617,7 @@
   {
    "retailer": "mwave",
    "sku": "AC96619",
-   "title": "ASUS ROG Swift PG34WCDN 34\" 360Hz 3440x1440 0.03ms QD-OLED Gaming Monitor w/ 90W",
+   "title": "ASUS ROG Swift PG34WCDN 34\" 360Hz 3440x1440 0.03ms QD-OLED Gaming Monitor w/ 90W USB-C",
    "url": "https://www.mwave.com.au/products/asus-rog-swift-pg34wcdn-34-360hz-3440x1440-003ms-qdoled-gaming-monitor-w-90w-usbc-ac96619",
    "price": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_swift_pg34wcdn_34_360hz_3440x1440_003ms_qdoled_gaming_monitor_w_90w_usbc_ac96619_51863.jpg?v=1787744861",
@@ -615,11 +648,52 @@
   {
    "retailer": "mwave",
    "sku": "AC91364",
-   "title": "ASUS TUF Gaming Series 5 27\" 210Hz QHD FreeSync Premium 0.3ms Fast IPS Gaming Monitor",
+   "title": "ASUS TUF Gaming Series 5 27\" 210Hz QHD FreeSync Premium 0.3ms Fast IPS Gaming Monitor - White",
    "url": "https://www.mwave.com.au/products/asus-tuf-gaming-series-5-27-210hz-qhd-freesync-premium-03ms-fast-ips-gaming-monitor-white-ac91364",
    "price": 387.89,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_tuf_gaming_series_5_27_210hz_qhd_freesync_premium_03ms_fast_ips_gaming_monitor_white_ac91364_11273.jpg?v=1787795486",
    "inStock": false,
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC91366",
+   "title": "ASUS TUF Gaming Series 5 27\" 240Hz Full HD 0.3ms G-Sync Compatible Fast IPS Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/asus-tuf-gaming-series-5-27-240hz-full-hd-03ms-gsync-compatible-fast-ips-gaming-monitor-ac91366",
+   "price": 199.17,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_tuf_gaming_series_5_27_240hz_full_hd_03ms_gsync_compatible_fast_ips_gaming_monitor_ac91366_54633.jpg?v=1787795485",
+   "inStock": true,
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC91365",
+   "title": "ASUS TUF Gaming Series 5 31.5\" Full HD 250Hz 0.5ms FreeSync Premium Curved Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/asus-tuf-gaming-series-5-315-full-hd-250hz-05ms-freesync-premium-curved-gaming-monitor-ac91365",
+   "price": 283.34,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_tuf_gaming_series_5_315_250hz_05ms_freesync_premium_curved_gaming_monitor_ac91365_97892.jpg?v=1787795482",
+   "inStock": false,
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC91361",
+   "title": "ASUS TUF Gaming Series 5 34\" WQHD 250Hz 0.5ms FreeSync Premium HDR400 Curved Gaming VA Monitor",
+   "url": "https://www.mwave.com.au/products/asus-tuf-gaming-series-5-34-wqhd-250hz-05ms-freesync-premium-hdr400-curved-gaming-va-monitor-ac91361",
+   "price": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/x_ac91361_17117.jpg?v=1787784082",
+   "inStock": false,
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC97724",
+   "title": "ASUS TUF Gaming Series 5 VG259Q5A 24.5\" 200Hz FHD 0.3ms AdaptiveSync IPS Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/asus-tuf-gaming-series-5-vg259q5a-245-200hz-fhd-03ms-adaptivesync-ips-gaming-monitor-ac97724",
+   "price": 189,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_tuf_gaming_series_5_vg259q5a_245_200hz_fhd_03ms_adaptivesync_ips_gaming_monitor_ac97724_10191.jpg?v=1787795487",
+   "inStock": true,
+   "mpn": "VG259Q5A",
    "brand": "Asus"
   },
   {
@@ -800,17 +874,6 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC96460",
-   "title": "Dell Pro E2726DS Monitor 27\" 100Hz QHD IPS Business Monitor w/ Height-Adjustable",
-   "url": "https://www.mwave.com.au/products/dell-pro-e2726ds-monitor-27-100hz-qhd-ips-business-monitor-w-heightadjustable-stand-ac96460",
-   "price": 245,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/dell_pro_e2726ds_monitor_27_100hz_qhd_ips_business_monitor_w_heightadjustable_stand_ac96460_86675.jpg?v=1787796222",
-   "inStock": true,
-   "mpn": "E2726DS",
-   "brand": "Dell"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AD00583",
    "title": "Dell Pro E2726H 27\" 120Hz FHD IPS Business Monitor",
    "url": "https://www.mwave.com.au/products/dell-pro-e2726h-27-120hz-fhd-ips-business-monitor-ad00583",
@@ -818,17 +881,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/AD00583-06.jpg?v=1791516747",
    "inStock": true,
    "mpn": "E2726H",
-   "brand": "Dell"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC96459",
-   "title": "Dell Pro E2726HS Monitor 27\" 100Hz Full HD IPS Business Monitor w/ Height-Adjustable",
-   "url": "https://www.mwave.com.au/products/dell-pro-e2726hs-monitor-27-100hz-full-hd-ips-business-monitor-w-heightadjustable-stand-ac96459",
-   "price": 179,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/dell_pro_e2726hs_monitor_27_100hz_full_hd_ips_business_monitor_w_heightadjustable_stand_ac96459_1701.jpg?v=1787745487",
-   "inStock": true,
-   "mpn": "E2726HS",
    "brand": "Dell"
   },
   {
@@ -986,6 +1038,17 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC88938",
+   "title": "Gigabyte G34WQC2 34\" 200Hz Ultra-Wide QHD HDR400 FreeSync Curved VA Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/gigabyte-g34wqc2-34-200hz-ultrawide-qhd-hdr400-freesync-curved-va-gaming-monitor-ac88938",
+   "price": 399,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_g34wqc2_34_200hz_ultrawide_qhd_hdr400_freesync_curved_va_gaming_monitor_ac88938_20310.jpg?v=1787796624",
+   "inStock": false,
+   "mpn": "G34WQC2",
+   "brand": "Gigabyte"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC94803",
    "title": "Gigabyte GO27Q24 - 27\" 1440p 240Hz 0.03ms QD-OLED Gaming Monitor",
    "url": "https://www.mwave.com.au/products/gigabyte-go27q24-27-1440p-240hz-003ms-qdoled-gaming-monitor-ac94803",
@@ -1013,7 +1076,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-go27q24g-27-240hz-qhd-003ms-usbc-woled-gaming-monitor-ac97034",
    "price": 569,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_go27q24g_27_240hz_qhd_003ms_usbc_woled_gaming_monitor_ac97034_77051.jpg?v=1787796657",
-   "inStock": false,
+   "inStock": true,
    "mpn": "GO27Q24G",
    "brand": "Gigabyte"
   },
@@ -1293,7 +1356,7 @@
    "sku": "AC88504",
    "title": "HP Series 3 Pro 324PH 23.8\" 100Hz Full HD IPS Monitor",
    "url": "https://www.mwave.com.au/products/hp-series-3-pro-324ph-238-100hz-full-hd-ips-monitor-ac88504",
-   "price": 179,
+   "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hp_series_3_pro_324ph_238_100hz_full_hd_ips_monitor_ac88504_16106.jpg?v=1787796962",
    "inStock": true,
    "mpn": "324PH",
@@ -1716,7 +1779,7 @@
   {
    "retailer": "mwave",
    "sku": "AC88483",
-   "title": "Lenovo ThinkVision P34WD-40 34\" 120Hz WQHD Anti-Glare IPS Curved Business Monitor (140W",
+   "title": "Lenovo ThinkVision P34WD-40 34\" 120Hz WQHD Anti-Glare IPS Curved Business Monitor (140W USB-C)",
    "url": "https://www.mwave.com.au/products/lenovo-thinkvision-p34wd40-34-120hz-wqhd-antiglare-ips-curved-business-monitor-140w-usbc-ac88483",
    "price": 1126.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lenovo_thinkvision_p34wd40_34_120hz_wqhd_antiglare_ips_curved_business_monitor_140w_usbc_ac88483_49596.jpg?v=1787786191",
@@ -1779,7 +1842,7 @@
   {
    "retailer": "mwave",
    "sku": "AC88485",
-   "title": "Lenovo ThinkVision T34WD-40 34\" 120Hz WQHD Anti-Glare VA Curved Business Monitor (75W",
+   "title": "Lenovo ThinkVision T34WD-40 34\" 120Hz WQHD Anti-Glare VA Curved Business Monitor (75W USB-C)",
    "url": "https://www.mwave.com.au/products/lenovo-thinkvision-t34wd40-34-120hz-wqhd-antiglare-va-curved-business-monitor-75w-usbc-ac88485",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lenovo_thinkvision_t34wd40_34_120hz_wqhd_antiglare_va_curved_business_monitor_75w_usbc_ac88485_68310.jpg?v=1787746536",
@@ -1933,7 +1996,7 @@
   {
    "retailer": "mwave",
    "sku": "AC92162",
-   "title": "LG 29U531A-W 29\" 21:9 UltraWide WFHD 100Hz IPS Display Monitor - sRGB 99%",
+   "title": "LG 29U531A-W 29\" 21:9 UltraWide WFHD 100Hz IPS Display Monitor - sRGB 99% Colour Calibrated",
    "url": "https://www.mwave.com.au/products/lg-29u531aw-29-219-ultrawide-wfhd-100hz-ips-display-monitor-srgb-99-colour-calibrated-ac92162",
    "price": 289,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lg_29u531aw_29_ultrawide_219_wfhd_ips_display_monitor_ac92162_73511.jpg?v=1787797475",
@@ -2169,6 +2232,17 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC98945",
+   "title": "LG UltraGear 27GX790B-B 27\" Dual Mode 720Hz HD/540Hz QHD 0.02ms G-Sync OLED Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/lg-ultragear-27gx790bb-27-dual-mode-720hz-hd540hz-qhd-002ms-gsync-oled-gaming-monitor-ac98945",
+   "price": 1299,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lg_ultragear_27gx790bb_27_dual_mode_720hz_hd540hz_qhd_002ms_gsync_oled_gaming_monitor_ac98945_14085.jpg?v=1787797495",
+   "inStock": true,
+   "mpn": "27GX790B-B",
+   "brand": "LG"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC98370",
    "title": "LG UltraGear 32\" 180Hz  QHD 1ms FreeSync Compatible HDR10 Curved VA Gaming Monitor",
    "url": "https://www.mwave.com.au/products/lg-ultragear-32-180hz-qhd-1ms-freesync-compatible-hdr10-curved-va-gaming-monitor-ac98370",
@@ -2191,7 +2265,7 @@
   {
    "retailer": "mwave",
    "sku": "AC85617",
-   "title": "LG UltraGear 39GX90SA-W 39\" 240Hz WQHD 0.03ms HDR400 Curved OLED Gaming Monitor w/",
+   "title": "LG UltraGear 39GX90SA-W 39\" 240Hz WQHD 0.03ms HDR400 Curved OLED Gaming Monitor w/ Smart WebOS",
    "url": "https://www.mwave.com.au/products/lg-ultragear-39gx90saw-39-240hz-wqhd-003ms-hdr400-curved-oled-gaming-monitor-w-smart-webos-ac85617",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lg_ultragear_39gx90saw_39_240hz_wqhd_003ms_hdr400_curved_oled_gaming_monitor_w_smart_webos_ac85617_54004.jpg?v=1787797484",
@@ -2219,6 +2293,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lg_ultragear_45gx950ab_445_5k2k_wfhd_330hzwuhd_165hz_dual_mode_003ms_hdr400_curved_oled_gaming_monitor_ac88116_10621.jpg?v=1787797490",
    "inStock": false,
    "mpn": "45GX950A-B",
+   "brand": "LG"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC93633",
+   "title": "LG UltraGear 49\" 32:9  Dual QHD 240Hz 1ms HDR1000 FreeSync Premium Pro Curved Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/lg-ultragear-49-329-dual-qhd-240hz-1ms-hdr1000-freesync-premium-pro-curved-gaming-monitor-ac93633",
+   "price": 1699,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lg_ultragear_49_1ms_240hz_curved_gaming_monitor_ac93633_96362.jpg?v=1787797484",
+   "inStock": false,
    "brand": "LG"
   },
   {
@@ -2275,6 +2359,16 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC91760",
+   "title": "LG UltraGear GX8 31.5\" Dual Mode 165Hz 4K UHD/330Hz FHD 0.03ms FreeSync Premium OLED Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/lg-ultragear-gx8-315-dual-mode-165hz-4k-uhd330hz-fhd-003ms-freesync-premium-oled-gaming-monitor-ac91760",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lg_ultragear_gx8_315_165hz_4k330hz_full_hd_dualmode_003ms_freesync_premium_oled_gaming_monitor_ac91760_24513.jpg?v=1787797485",
+   "inStock": true,
+   "brand": "LG"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC96830",
    "title": "LG UltraWide 34BA75QE-B 34\" UWQHD Curved 5ms IPS Monitor",
    "url": "https://www.mwave.com.au/products/lg-ultrawide-34ba75qeb-34-uwqhd-curved-5ms-ips-monitor-ac96830",
@@ -2307,6 +2401,17 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AD00711",
+   "title": "MSI MAG 271KPD7 27\" Dual Mode 5K 75Hz / WQHD 300Hz 0.5ms HDR G-SYNC Rapid IPS Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/msi-mag-271kpd7-27-dual-mode-5k-75hz-wqhd-300hz-05ms-hdr-gsync-rapid-ips-gaming-monitor-ad00711",
+   "price": 899,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_mag_271kpd7_27_dual_mode_5k_75hz_wqhd_300hz_05ms_hdr_gsync_rapid_ips_gaming_monitor_ad00711_97669.jpg?v=1790126481",
+   "inStock": true,
+   "mpn": "271KPD7",
+   "brand": "MSI"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC99902",
    "title": "MSI MAG 274CQPDF X32 27\" Dual Mode 320Hz WQHD/400Hz HD 0.5ms Rapid VA FreeSync Premium Gaming Monitor",
    "url": "https://www.mwave.com.au/products/msi-mag-274cqpdf-x32-27-dual-mode-320hz-wqhd400hz-hd-05ms-rapid-va-freesync-premium-gaming-monitor-ac99902",
@@ -2319,7 +2424,7 @@
   {
    "retailer": "mwave",
    "sku": "AC95886",
-   "title": "MSI MAG 274QPF X32 27\" 320Hz WQHD 0.5ms HDR Adaptive-Sync Rapid IPS Gaming Monitor -",
+   "title": "MSI MAG 274QPF X32 27\" 320Hz WQHD 0.5ms HDR Adaptive-Sync Rapid IPS Gaming Monitor - Black",
    "url": "https://www.mwave.com.au/products/msi-mag-274qpf-x32-27-320hz-wqhd-05ms-hdr-adaptivesync-rapid-ips-gaming-monitor-black-ac95886",
    "price": 349,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_mag_274qpf_x32_27_320hz_wqhd_05ms_hdr_adaptivesync_rapid_ips_gaming_monitor_black_ac95886_43575.jpg?v=1787797754",
@@ -2341,7 +2446,7 @@
   {
    "retailer": "mwave",
    "sku": "AD00009",
-   "title": "MSI MAG 321UPD E14 32\" Dual Mode 144Hz UHD/288Hz FHD 1ms IPS Gaming Monitor",
+   "title": "MSI MAG 321UPD E14 31.5\" Dual Mode 144Hz UHD/288Hz FHD 1ms IPS FreeSync Premium IPS Gaming Monitor",
    "url": "https://www.mwave.com.au/products/msi-mag-321upd-e14-315-dual-mode-144hz-uhd288hz-fhd-1ms-ips-freesync-premium-ips-gaming-monitor-ad00009",
    "price": 505,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_mag_321upd_e14_315_dual_mode_144hz_uhd288hz_fhd_1ms_ips_freesync_premium_ips_gaming_monitor_ad00009_91860.jpg?v=1789706516",
@@ -2610,7 +2715,7 @@
   {
    "retailer": "mwave",
    "sku": "AC92262",
-   "title": "Philips Evnia 26.5\" 280Hz QHD 0.03ms FreeSync HDR400 QD-OLED Gaming Monitor with",
+   "title": "Philips Evnia 26.5\" 280Hz QHD 0.03ms FreeSync HDR400 QD-OLED Gaming Monitor with AmbiGlow",
    "url": "https://www.mwave.com.au/products/philips-evnia-265-280hz-qhd-003ms-freesync-hdr400-qdoled-gaming-monitor-with-ambiglow-ac92262",
    "price": 597,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/philips_evnia_265_280hz_qhd_003ms_freesync_hdr400_qdoled_gaming_monitor_with_ambiglow_ac92262_52904.jpg?v=1787798072",
@@ -2620,7 +2725,7 @@
   {
    "retailer": "mwave",
    "sku": "AC88923",
-   "title": "Philips Evnia 26.5\" 500Hz QHD 0.03ms G-Sync Compatible HDR400 QD-OLED Gaming Monitor",
+   "title": "Philips Evnia 26.5\" 500Hz QHD 0.03ms G-Sync Compatible HDR400 QD-OLED Gaming Monitor with AmbiGlow",
    "url": "https://www.mwave.com.au/products/philips-evnia-265-500hz-qhd-003ms-gsync-compatible-hdr400-qdoled-gaming-monitor-with-ambiglow-ac88923",
    "price": 859,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/philips_evnia_265_500hz_qhd_003ms_gsync_compatible_hdr400_qdoled_gaming_monitor_with_ambiglow_ac88923_50850.jpg?v=1787798070",
@@ -2630,7 +2735,7 @@
   {
    "retailer": "mwave",
    "sku": "AC88921",
-   "title": "Philips Evnia 27\" 240Hz 4K UHD 0.03ms G-Sync Compatible HDR400 QD-OLED Gaming Monitor",
+   "title": "Philips Evnia 27\" 240Hz 4K UHD 0.03ms G-Sync Compatible HDR400 QD-OLED Gaming Monitor with AmbiGlow",
    "url": "https://www.mwave.com.au/products/philips-evnia-27-240hz-4k-uhd-003ms-gsync-compatible-hdr400-qdoled-gaming-monitor-with-ambiglow-ac88921",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/philips_evnia_265_240hz_4k_uhd_gsync_hdr400_qdoled_gaming_monitor_with_ambiglow_ac88921_55289.jpg?v=1787798071",
@@ -2680,7 +2785,7 @@
   {
    "retailer": "mwave",
    "sku": "AC88922",
-   "title": "Philips Evnia 27\" 360Hz QHD 0.03ms G-Sync Compatible HDR400 QD-OLED Gaming Monitor",
+   "title": "Philips Evnia 27\" 360Hz QHD 0.03ms G-Sync Compatible HDR400 QD-OLED Gaming Monitor with AmbiGlow",
    "url": "https://www.mwave.com.au/products/philips-evnia-27-360hz-qhd-003ms-gsync-compatible-hdr400-qdoled-gaming-monitor-with-ambiglow-ac88922",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/philips_evnia_265_360hz_qhd_003ms_gsync_compatible_hdr400_qdoled_gaming_monitor_with_ambiglow_ac88922_71791.jpg?v=1787798075",
@@ -2710,8 +2815,19 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC87878",
+   "title": "Philips Evnia 3000 27M2N3800F 27\" 160Hz UHD 0.3ms HDR400 Adaptive Sync IPS Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/philips-evnia-3000-27m2n3800f-27-160hz-uhd-03ms-hdr400-adaptive-sync-ips-gaming-monitor-ac87878",
+   "price": 298,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/philips_evnia_3000_27m2n3800f_27_160hz_uhd_03ms_hdr400_adaptive_sync_ips_gaming_monitor_ac87878_4926.jpg?v=1787798076",
+   "inStock": true,
+   "mpn": "27M2N3800F",
+   "brand": "Philips"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC92116",
-   "title": "Philips Evnia 31.5\" 240Hz 4K UHD HDR400 G-Sync Compatible QD OLED Gaming Monitor with",
+   "title": "Philips Evnia 31.5\" 240Hz 4K UHD HDR400 G-Sync Compatible QD OLED Gaming Monitor with Ambiglow",
    "url": "https://www.mwave.com.au/products/philips-evnia-315-240hz-4k-uhd-hdr400-gsync-compatible-qd-oled-gaming-monitor-with-ambiglow-ac92116",
    "price": 1736.84,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/philips_evnia_315_240hz_4k_uhd_hdr400_gsync_compatible_qd_oled_gaming_monitor_with_ambiglow_ac92116_3510.jpg?v=1787798070",
@@ -2872,6 +2988,17 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC77043",
+   "title": "QSM Q49CHB 49\" DQHD Ultra-Wide 240Hz 0.03ms HDR400 QD-OLED Curved Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/qsm-q49chb-49-dqhd-ultrawide-240hz-003ms-hdr400-qdoled-curved-gaming-monitor-ac77043",
+   "price": 1749,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/qsm_q49chb_49_240hz_dqhd_ultrawide_003ms_hdr400_qdoled_curved_gaming_monitor_ac77043_1053.jpg?v=1787798183",
+   "inStock": true,
+   "mpn": "Q49CHB",
+   "brand": "QSM"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC98362",
    "title": "QSM Q49CHQB 49\" 120Hz 5K DQHD Ultra-Wide FreeSync Curved VA Gaming Monitor",
    "url": "https://www.mwave.com.au/products/qsm-q49chqb-49-120hz-5k-dqhd-ultrawide-freesync-curved-va-gaming-monitor-ac98362",
@@ -2884,7 +3011,7 @@
   {
    "retailer": "mwave",
    "sku": "AC91772",
-   "title": "Samsung 27\" Odyssey G7 G70F 4K 180Hz / FHD 360Hz 1ms IPS Gaming Monitor - G-Sync",
+   "title": "Samsung 27\" Odyssey G7 G70F 4K 180Hz / FHD 360Hz 1ms IPS Gaming Monitor - G-Sync Compatible",
    "url": "https://www.mwave.com.au/products/samsung-27-odyssey-g7-g70f-4k-180hz-fhd-360hz-1ms-ips-gaming-monitor-gsync-compatible-ac91772",
    "price": 574,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ls27fg702eexxy_ac91772_53420.jpg?v=1787798264",
@@ -3080,6 +3207,17 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC84587",
+   "title": "Samsung Odyssey G8 G81SF 27\" 4K 240Hz 0.03ms FreeSync Premium Pro QD-OLED Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/samsung-odyssey-g8-g81sf-27-4k-240hz-003ms-freesync-premium-pro-qdoled-gaming-monitor-ac84587",
+   "price": 1742.17,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_odyssey_g8_g81sf_27_4k_240hz_003ms_freesync_qdoled_gaming_monitor_ac84587_69971.jpg?v=1787798292",
+   "inStock": true,
+   "mpn": "G81SF",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC77550",
    "title": "Samsung Odyssey OLED G8 34\" 175Hz UWQHD 0.03ms Ultra-Wide Curved Gaming Monitor",
    "url": "https://www.mwave.com.au/products/samsung-odyssey-oled-g8-34-175hz-uwqhd-003ms-ultrawide-curved-gaming-monitor-ac77550",
@@ -3177,7 +3315,7 @@
   {
    "retailer": "mwave",
    "sku": "AC87111",
-   "title": "Samsung ViewFinity S65UC 34\" 100Hz Ultra-Wide QHD Curved VA Business Monitor w/ 90W",
+   "title": "Samsung ViewFinity S65UC 34\" 100Hz Ultra-Wide QHD Curved VA Business Monitor w/ 90W USB-C",
    "url": "https://www.mwave.com.au/products/samsung-viewfinity-s65uc-34-100hz-ultrawide-qhd-curved-va-business-monitor-w-90w-usbc-ac87111",
    "price": 693.58,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_viewfinity_s65uc_34_100hz_ultrawide_qhd_curved_usbc_va_monitor_ac87111_81204.jpg?v=1787787052",
@@ -3357,6 +3495,28 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/vx3276mhd3_ac61601_43732.jpg?v=1787799737",
    "inStock": true,
    "mpn": "VX3276-MHD-3",
+   "brand": "Viewsonic"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC86871",
+   "title": "ViewSonic VX3418C-2K 34\" 180Hz 2K UWQHD 1ms HDR10 Adaptive Sync VA Curved Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/viewsonic-vx3418c2k-34-180hz-2k-uwqhd-1ms-hdr10-adaptive-sync-va-curved-gaming-monitor-ac86871",
+   "price": 538.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/viewsonic_vx3418c2k_34_180hz_2k_uwqhd_1ms_hdr10_adaptive_sync_va_curved_gaming_monitor_ac86871_70694.jpg?v=1787799736",
+   "inStock": true,
+   "mpn": "VX3418C-2K",
+   "brand": "Viewsonic"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC78990",
+   "title": "ViewSonic VX3480-2K-PRO 34\" 165Hz UWQHD 1ms FreeSync HDR10 Ultra-Wide Gaming Monitor",
+   "url": "https://www.mwave.com.au/products/viewsonic-vx34802kpro-34-165hz-uwqhd-1ms-freesync-hdr10-ultrawide-gaming-monitor-ac78990",
+   "price": 469,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/viewsonic_vx34802kpro_34_165hz_uwqhd_1ms_freesync_hdr10_ultrawide_gaming_monitor_ac78990_1824.jpg?v=1787799731",
+   "inStock": false,
+   "mpn": "VX3480-2K-PRO",
    "brand": "Viewsonic"
   }
  ]

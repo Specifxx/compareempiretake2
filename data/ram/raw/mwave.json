@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:21:23.387Z",
+ "scrapedAt": "2026-10-29T23:25:19.030Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -294,7 +294,7 @@
   {
    "retailer": "mwave",
    "sku": "AC96729",
-   "title": "Corsair Vengeance RGB 16GB (2 x 8GB) DDR5 5200MHz CL40 INTEL XMP & AMD EXPO Desktop",
+   "title": "Corsair Vengeance RGB 16GB (2 x 8GB) DDR5 5200MHz CL40 INTEL XMP & AMD EXPO Desktop Memory",
    "url": "https://www.mwave.com.au/products/corsair-vengeance-rgb-16gb-2-x-8gb-ddr5-5200mhz-cl40-intel-xmp-amd-expo-desktop-memory-ac96729",
    "price": 369,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/corsair_vengeance_rgb_16gb_2_x_8gb_ddr5_5200mhz_cl40_desktop_memory_ac96729_31011.jpg?v=1787783510",
@@ -354,7 +354,7 @@
   {
    "retailer": "mwave",
    "sku": "AC99426",
-   "title": "Corsair Vengeance RGB 64GB (2x32GB) DDR5 5600MHz AMD EXPO & Intel XMP CL40 Desktop",
+   "title": "Corsair Vengeance RGB 64GB (2x32GB) DDR5 5600MHz AMD EXPO & Intel XMP CL40 Desktop Memory - Grey",
    "url": "https://www.mwave.com.au/products/corsair-vengeance-rgb-64gb-2x32gb-ddr5-5600mhz-amd-expo-intel-xmp-cl40-desktop-memory-grey-ac99426",
    "price": 1259,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/corsair_vengeance_rgb_64gb_2x32gb_ddr5_5600mhz_amd_expo_intel_xmp_cl40_desktop_memory_grey_ac99426_54604.jpg?v=1787796102",
@@ -364,7 +364,7 @@
   {
    "retailer": "mwave",
    "sku": "AC99879",
-   "title": "Corsair Vengeance RGB 64GB (2x32GB) DDR5 5600MHz AMD EXPO & Intel XMP CL40 Desktop",
+   "title": "Corsair Vengeance RGB 64GB (2x32GB) DDR5 5600MHz AMD EXPO & Intel XMP CL40 Desktop Memory - Grey",
    "url": "https://www.mwave.com.au/products/corsair-vengeance-rgb-64gb-2x32gb-ddr5-5600mhz-amd-expo-intel-xmp-cl40-desktop-memory-grey-ac99879",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/corsair_vengeance_rgb_64gb_2x32gb_ddr5_5600mhz_amd_expo_intel_xmp_cl40_desktop_memory_grey_ac99879_29610.jpg?v=1787796108",
@@ -374,7 +374,7 @@
   {
    "retailer": "mwave",
    "sku": "AC89535",
-   "title": "Corsair Vengeance RGB 96GB (2x 48GB) DDR5 6000MHz CL36 AMD EXPO & Intel XMP Desktop",
+   "title": "Corsair Vengeance RGB 96GB (2x 48GB) DDR5 6000MHz CL36 AMD EXPO & Intel XMP Desktop Memory - Grey",
    "url": "https://www.mwave.com.au/products/corsair-vengeance-rgb-96gb-2x-48gb-ddr5-6000mhz-cl36-amd-expo-intel-xmp-desktop-memory-grey-ac89535",
    "price": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/corsair_vengeance_rgb_96gb_2x_48gb_ddr5_6000mhz_cl36_desktop_memory_grey_ac89535_25440.jpg?v=1787784754",
@@ -458,7 +458,7 @@
    "url": "https://www.mwave.com.au/products/crucial-32gb-2x-16gb-ddr5-5600mhz-sodimm-laptop-memory-ac60070",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ct2k16g56c46s5_ac60070_91529.jpg?v=1787796110",
-   "inStock": false,
+   "inStock": true,
    "brand": "Crucial"
   },
   {
@@ -469,6 +469,17 @@
    "price": 129,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_8gb_1x_8gb_ddr4_3200mhz_udimm_memory_ac48032.jpg?v=1787796113",
    "inStock": false,
+   "brand": "Crucial"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC93062",
+   "title": "Crucial Pro OC CP2K16G64C32U5B 32GB (2x16GB) 6400MHz CL32 Intel XMP & AMD EXPO DDR5 - Black",
+   "url": "https://www.mwave.com.au/products/crucial-pro-oc-cp2k16g64c32u5b-32gb-2x16gb-6400mhz-cl32-intel-xmp-amd-expo-ddr5-black-ac93062",
+   "price": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/cp2k16g64c32u5b_ac93062_189.jpg?v=1787784774",
+   "inStock": false,
+   "mpn": "CP2K16G64C32U5B",
    "brand": "Crucial"
   },
   {
@@ -544,7 +555,7 @@
   {
    "retailer": "mwave",
    "sku": "AC84576",
-   "title": "G.Skill Aegis 5 64GB (2x 32GB) DDR5 6000MHz Intel XMP & AMD EXPO Ready Desktop",
+   "title": "G.Skill Aegis 5 64GB (2x 32GB) DDR5 6000MHz Intel XMP & AMD EXPO Ready Desktop Memory",
    "url": "https://www.mwave.com.au/products/gskill-aegis-5-64gb-2x-32gb-ddr5-6000mhz-intel-xmp-amd-expo-ready-desktop-memory-ac84576",
    "price": 2809.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_aegis_5_64gb_2x_32gb_ddr5_6000mhz_cl36_desktop_memory_ac84576_72279.jpg?v=1787796706",
@@ -684,7 +695,7 @@
   {
    "retailer": "mwave",
    "sku": "AC80938",
-   "title": "G.Skill Ripjaws M5 Neo RGB 64GB (2x 32GB) DDR5 6000MHz CL36 AMD Desktop Memory -",
+   "title": "G.Skill Ripjaws M5 Neo RGB 64GB (2x 32GB) DDR5 6000MHz CL36 AMD Desktop Memory - White",
    "url": "https://www.mwave.com.au/products/gskill-ripjaws-m5-neo-rgb-64gb-2x-32gb-ddr5-6000mhz-cl36-amd-desktop-memory-white-ac80938",
    "price": 2722.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_ripjaws_m5_neo_rgb_64gb_2x_32gb_ddr5_6000mhz_cl36_amd_desktop_memory_white_ac80938_62401.jpg?v=1787796712",
@@ -1144,7 +1155,7 @@
   {
    "retailer": "mwave",
    "sku": "AC80870",
-   "title": "G.Skill Trident Z5 Neo RGB 64GB (2x 32GB) DDR5 6000MHz AMD & Intel Ready Memory -",
+   "title": "G.Skill Trident Z5 Neo RGB 64GB (2x 32GB) DDR5 6000MHz AMD & Intel Ready Memory - White",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neo-rgb-64gb-2x-32gb-ddr5-6000mhz-amd-intel-ready-memory-white-ac80870",
    "price": 2923.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_neo_rgb_64gb_2x_32gb_ddr5_6000mhz_cl36_amd_desktop_memory_white_ac80870_8866.jpg?v=1787796728",
@@ -1173,18 +1184,8 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC99953",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL26 AMD EXPO Desktop Memory",
-   "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl26-amd-expo-desktop-memory-white-ac99953",
-   "price": 2066,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/178305864312.jpg?v=1790136375",
-   "inStock": true,
-   "brand": "G.Skill"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC99954",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL26 AMD EXPO Desktop Memory",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL26 AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl26-amd-expo-desktop-memory-black-ac99954",
    "price": 1979,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/178305795010.jpg?v=1790139821",
@@ -1194,7 +1195,7 @@
   {
    "retailer": "mwave",
    "sku": "AC99952",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL26 AMD EXPO Desktop Memory",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL26 AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl26-amd-expo-desktop-memory-black-ac99952",
    "price": 1979,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/178305796710.jpg?v=1790140990",
@@ -1203,8 +1204,18 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC99953",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL26 AMD EXPO Desktop Memory - White",
+   "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl26-amd-expo-desktop-memory-white-ac99953",
+   "price": 2066,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/178305864312.jpg?v=1790136375",
+   "inStock": true,
+   "brand": "G.Skill"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC99949",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL28 AMD EXPO Desktop Memory",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL28 AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl28-amd-expo-desktop-memory-black-ac99949",
    "price": 1777,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/178305810210.jpg?v=1790139081",
@@ -1213,18 +1224,8 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC99950",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL28 AMD EXPO Desktop Memory",
-   "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl28-amd-expo-desktop-memory-white-ac99950",
-   "price": 1777,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/F5-6000A2836G16GX2-TZ5NXRW.jpg?v=1790143295",
-   "inStock": true,
-   "brand": "G.Skill"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC99951",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL28 AMD EXPO Desktop Memory",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL28 AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl28-amd-expo-desktop-memory-black-ac99951",
    "price": 1777,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/178305844811.jpg?v=1790140317",
@@ -1233,8 +1234,27 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC99950",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL28 AMD EXPO Desktop Memory - White",
+   "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl28-amd-expo-desktop-memory-white-ac99950",
+   "price": 1777,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/F5-6000A2836G16GX2-TZ5NXRW.jpg?v=1790143295",
+   "inStock": true,
+   "brand": "G.Skill"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC99947",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL30 AMD EXPO Desktop Memory - Black",
+   "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl30-amd-expo-desktop-memory-black-ac99947",
+   "price": 1134,
+   "inStock": false,
+   "brand": "G.Skill"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC99948",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL30 AMD EXPO Desktop Memory",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL30 AMD EXPO Desktop Memory - White",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl30-amd-expo-desktop-memory-white-ac99948",
    "price": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/178305877510.jpg?v=1790137491",
@@ -1243,17 +1263,8 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC99947",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL30 AMD EXPO Desktop Memory",
-   "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl30-amd-expo-desktop-memory-black-ac99947",
-   "price": 1134,
-   "inStock": false,
-   "brand": "G.Skill"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC99944",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL36 AMD EXPO Desktop Memory",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL36 AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl36-amd-expo-desktop-memory-black-ac99944",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_neox_rgb_32gb_2x_16gb_ddr5_6000mhz_cl36_amd_expo_desktop_memory_black_ac99944_90392.jpg?v=1787796724",
@@ -1263,7 +1274,7 @@
   {
    "retailer": "mwave",
    "sku": "AC99946",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL36 AMD EXPO Desktop Memory",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL36 AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl36-amd-expo-desktop-memory-black-ac99946",
    "price": 943,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_neox_rgb_32gb_2x_16gb_ddr5_6000mhz_cl36_amd_expo_desktop_memory_black_ac99946_20436.jpg?v=1787796724",
@@ -1273,7 +1284,7 @@
   {
    "retailer": "mwave",
    "sku": "AC99945",
-   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL36 AMD EXPO Desktop Memory",
+   "title": "G.Skill Trident Z5 NeoX RGB 32GB (2x 16GB) DDR5 6000MHz CL36 AMD EXPO Desktop Memory - White",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl36-amd-expo-desktop-memory-white-ac99945",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_neox_rgb_32gb_2x_16gb_ddr5_6000mhz_cl36_amd_expo_desktop_memory_white_ac99945_87836.jpg?v=1787796729",
@@ -1423,7 +1434,7 @@
   {
    "retailer": "mwave",
    "sku": "AC78818",
-   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 6000MHz CL28 AMD Desktop",
+   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 6000MHz CL28 AMD Desktop Memory - Silver",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-royal-neo-rgb-32gb-2x-16gb-ddr5-6000mhz-cl28-amd-desktop-memory-silver-ac78818",
    "price": 2934.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_royal_neo_rgb_32gb_2x_16gb_ddr5_6000mhz_cl28_amd_desktop_memory_silver_ac78818_23577.jpg?v=1787796728",
@@ -1433,7 +1444,7 @@
   {
    "retailer": "mwave",
    "sku": "AC78829",
-   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 6400MHz CL30 AMD Desktop",
+   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 6400MHz CL30 AMD Desktop Memory - Gold",
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-royal-neo-rgb-32gb-2x-16gb-ddr5-6400mhz-cl30-amd-desktop-memory-gold-ac78829",
    "price": 2650.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_royal_neo_rgb_32gb_2x_16gb_ddr5_6400mhz_cl30_amd_desktop_memory_gold_ac78829_4410.jpg?v=1787796737",
@@ -1452,21 +1463,21 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC78819",
-   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 8000MHz CL38 AMD Desktop",
-   "url": "https://www.mwave.com.au/products/gskill-trident-z5-royal-neo-rgb-32gb-2x-16gb-ddr5-8000mhz-cl38-amd-desktop-memory-silver-ac78819",
-   "price": 2622.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_royal_neo_rgb_32gb_2x_16gb_ddr5_8000mhz_cl38_amd_desktop_memory_silver_ac78819_25629.jpg?v=1787796731",
+   "sku": "AC78831",
+   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 8000MHz CL38 AMD Desktop Memory - Gold",
+   "url": "https://www.mwave.com.au/products/gskill-trident-z5-royal-neo-rgb-32gb-2x-16gb-ddr5-8000mhz-cl38-amd-desktop-memory-gold-ac78831",
+   "price": 2707.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_royal_neo_rgb_32gb_2x_16gb_ddr5_8000mhz_cl38_amd_desktop_memory_gold_ac78831_3318.jpg?v=1787796733",
    "inStock": false,
    "brand": "G.Skill"
   },
   {
    "retailer": "mwave",
-   "sku": "AC78831",
-   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 8000MHz CL38 AMD Desktop",
-   "url": "https://www.mwave.com.au/products/gskill-trident-z5-royal-neo-rgb-32gb-2x-16gb-ddr5-8000mhz-cl38-amd-desktop-memory-gold-ac78831",
-   "price": 2707.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_royal_neo_rgb_32gb_2x_16gb_ddr5_8000mhz_cl38_amd_desktop_memory_gold_ac78831_3318.jpg?v=1787796733",
+   "sku": "AC78819",
+   "title": "G.Skill Trident Z5 Royal Neo RGB 32GB (2x 16GB) DDR5 8000MHz CL38 AMD Desktop Memory - Silver",
+   "url": "https://www.mwave.com.au/products/gskill-trident-z5-royal-neo-rgb-32gb-2x-16gb-ddr5-8000mhz-cl38-amd-desktop-memory-silver-ac78819",
+   "price": 2622.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z5_royal_neo_rgb_32gb_2x_16gb_ddr5_8000mhz_cl38_amd_desktop_memory_silver_ac78819_25629.jpg?v=1787796731",
    "inStock": false,
    "brand": "G.Skill"
   },
@@ -1607,7 +1618,7 @@
    "url": "https://www.mwave.com.au/products/kingbank-krrb-rgb-32gb-2x16gb-ddr5-6000mhz-cl36-desktop-memory-black-ac94130",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingbank_krrb_ddr5_6000mhz_32gb_216gb_cl36_rgb_cxmt_black_ac94130_57226.jpg?v=1787785981",
-   "inStock": false,
+   "inStock": true,
    "brand": "KingBank"
   },
   {
@@ -1773,7 +1784,7 @@
   {
    "retailer": "mwave",
    "sku": "AC72248",
-   "title": "Kingston FURY Beast 64GB (2x 32GB) DDR5 6000MHz Intel & AMD Ready Desktop Memory -",
+   "title": "Kingston FURY Beast 64GB (2x 32GB) DDR5 6000MHz Intel & AMD Ready Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/kingston-fury-beast-64gb-2x-32gb-ddr5-6000mhz-intel-amd-ready-desktop-memory-black-ac72248",
    "price": 2051.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kf560c36bbek264_ac72248_30000.jpg?v=1787797212",
@@ -1783,7 +1794,7 @@
   {
    "retailer": "mwave",
    "sku": "AC72249",
-   "title": "Kingston FURY Beast 64GB (2x 32GB) DDR5 6000MHz Intel & AMD Ready Desktop Memory -",
+   "title": "Kingston FURY Beast 64GB (2x 32GB) DDR5 6000MHz Intel & AMD Ready Desktop Memory - White",
    "url": "https://www.mwave.com.au/products/kingston-fury-beast-64gb-2x-32gb-ddr5-6000mhz-intel-amd-ready-desktop-memory-white-ac72249",
    "price": 3008.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kf560c36bwek264_ac72249_99697.jpg?v=1787797210",
@@ -2074,7 +2085,7 @@
   {
    "retailer": "mwave",
    "sku": "AC78805",
-   "title": "KLEVV CRAS V RGB 32GB (2x 16GB) DDR5 6000MHz CL30 Intel XMP & AMD EXPO Desktop Memory",
+   "title": "KLEVV CRAS V RGB 32GB (2x 16GB) DDR5 6000MHz CL30 Intel XMP & AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/klevv-cras-v-rgb-32gb-2x-16gb-ddr5-6000mhz-cl30-intel-xmp-amd-expo-desktop-memory-black-ac78805",
    "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/klevv_cras_v_rgb_32gb_2x_16gb_ddr5_6000mhz_c30_desktop_memory_black_ac78805_12168.jpg?v=1787786039",
@@ -2084,7 +2095,7 @@
   {
    "retailer": "mwave",
    "sku": "AC78809",
-   "title": "KLEVV CRAS V RGB 32GB (2x 16GB) DDR5 6000MHz CL30 Intel XMP & AMD EXPO Desktop Memory",
+   "title": "KLEVV CRAS V RGB 32GB (2x 16GB) DDR5 6000MHz CL30 Intel XMP & AMD EXPO Desktop Memory - White",
    "url": "https://www.mwave.com.au/products/klevv-cras-v-rgb-32gb-2x-16gb-ddr5-6000mhz-cl30-intel-xmp-amd-expo-desktop-memory-white-ac78809",
    "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/klevv_cras_v_rgb_32gb_2x_16gb_ddr5_6000mhz_c30_desktop_memory_white_ac78809_4259.jpg?v=1787797244",
@@ -2096,7 +2107,7 @@
    "sku": "AC78807",
    "title": "KLEVV CRAS V RGB 64GB (2x 32GB) DDR5 6000MHz CL30 Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/klevv-cras-v-rgb-64gb-2x-32gb-ddr5-6000mhz-cl30-desktop-memory-black-ac78807",
-   "price": 1499,
+   "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/klevv_cras_v_rgb_64gb_2x_32gb_ddr5_6000mhz_c30_desktop_memory_black_ac78807_77990.jpg?v=1787797249",
    "inStock": true,
    "brand": "KLEVV"
@@ -2138,7 +2149,7 @@
    "url": "https://www.mwave.com.au/products/klevv-fit-v-32gb-2x-16gb-ddr5-6000mhz-c30-desktop-memory-white-ac94088",
    "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/klevv_fit_v_32gb_2x_16gb_ddr5_6000mhz_c30_desktop_memory_white_ac94088_72007.jpg?v=1787797248",
-   "inStock": true,
+   "inStock": false,
    "brand": "KLEVV"
   },
   {
@@ -2148,7 +2159,7 @@
    "url": "https://www.mwave.com.au/products/klevv-fit-v-32gb-2x-16gb-ddr5-6000mhz-cl28-desktop-memory-black-ac87786",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/klevv_fit_v_32gb_2x_16gb_ddr5_6000mhz_c28_desktop_memory_black_ac87786_43370.jpg?v=1787797252",
-   "inStock": true,
+   "inStock": false,
    "brand": "KLEVV"
   },
   {
@@ -2304,7 +2315,7 @@
   {
    "retailer": "mwave",
    "sku": "AC69038",
-   "title": "Lexar ARES RGB 32GB (2x 16GB) DDR5 6400MHz CL32 Intel XMP AMD EXPO Desktop Memory -",
+   "title": "Lexar ARES RGB 32GB (2x 16GB) DDR5 6400MHz CL32 Intel XMP AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/lexar-ares-rgb-32gb-2x-16gb-ddr5-6400mhz-cl32-intel-xmp-amd-expo-desktop-memory-black-ac69038",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_ares_rgb_32gb_2x_16gb_ddr5_6400mhz_desktop_memory_black_ac69038_31365.jpg?v=1787797406",
@@ -2338,7 +2349,7 @@
    "url": "https://www.mwave.com.au/products/lexar-ld5s-standard-32gb-1x32gb-ddr5-5600mhz-laptop-memory-ac99279",
    "price": 579,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_ld5s_standard_32gb_1x32gb_ddr5_5600mhz_laptop_memory_ac99279_94642.jpg?v=1787797406",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lexar"
   },
   {
@@ -2364,7 +2375,7 @@
   {
    "retailer": "mwave",
    "sku": "AC98447",
-   "title": "Lexar THOR 2nd Gen 32GB (2 x 16GB) DDR5 6000MHz CL38 INTEL XMP & AMD EXPO Desktop Memory",
+   "title": "Lexar THOR 2nd Gen 32GB (2 x 16GB) DDR5 6000MHz CL38 INTEL XMP & AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/lexar-thor-2nd-gen-32gb-2-x-16gb-ddr5-6000mhz-cl38-intel-xmp-amd-expo-desktop-memory-black-ac98447",
    "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_thor_2nd_gen_32gb_2_x_16gb_ddr5_6000mhz_cl38_intel_xmp_amd_expo_desktop_memory_black_ac98447_82323.jpg?v=1787797412",
@@ -2394,7 +2405,7 @@
   {
    "retailer": "mwave",
    "sku": "AC99804",
-   "title": "Lexar THOR G2 16GB (2x 8GB) DDR5 6000MHz CL38 INTEL XMP & AMD EXPO Desktop Memory -",
+   "title": "Lexar THOR G2 16GB (2x 8GB) DDR5 6000MHz CL38 INTEL XMP & AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/lexar-thor-g2-16gb-2x-8gb-ddr5-6000mhz-cl38-intel-xmp-amd-expo-desktop-memory-black-ac99804",
    "price": 359,
    "inStock": true,
@@ -2421,31 +2432,31 @@
   {
    "retailer": "mwave",
    "sku": "AC99585",
-   "title": "Lexar Thor G2 RGB 32GB (2x 16GB) DDR5 6000MHz CL36 INTEL XMP & AMD EXPO Desktop Memory",
+   "title": "Lexar Thor G2 RGB 32GB (2x 16GB) DDR5 6000MHz CL36 INTEL XMP & AMD EXPO Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/lexar-thor-g2-rgb-32gb-2x-16gb-ddr5-6000mhz-cl36-intel-xmp-amd-expo-desktop-memory-black-ac99585",
    "price": 619,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_thor_g2_rgb_32gb_2x_16gb_ddr5_6000mhz_cl36_intel_xmp_amd_expo_desktop_memory_black_ac99585_79493.jpg?v=1787797416",
-   "inStock": true,
-   "brand": "Lexar"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC99800",
-   "title": "Lexar THOR G2 RGB 64GB (2x 32GB) DDR5 6000MHz CL40 INTEL XMP & AMD EXPO Desktop Memory",
-   "url": "https://www.mwave.com.au/products/lexar-thor-g2-rgb-64gb-2x-32gb-ddr5-6000mhz-cl40-intel-xmp-amd-expo-desktop-memory-black-ac99800",
-   "price": 1199,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_thor_g2_rgb_64gb_2x_32gb_ddr5_6000mhz_cl40_intel_xmp_amd_expo_desktop_memory_black_ac99800_755.jpg?v=1787797412",
    "inStock": false,
    "brand": "Lexar"
   },
   {
    "retailer": "mwave",
    "sku": "AC98919",
-   "title": "Lexar THOR RGB 2nd Gen 32GB (2 x 16GB) DDR5 6000MHz CL38 INTEL XMP & AMD EXPO Desktop",
+   "title": "Lexar THOR RGB 2nd Gen 32GB (2 x 16GB) DDR5 6000MHz CL38 INTEL XMP & AMD EXPO Desktop Memory",
    "url": "https://www.mwave.com.au/products/lexar-thor-rgb-2nd-gen-32gb-2-x-16gb-ddr5-6000mhz-cl38-intel-xmp-amd-expo-desktop-memory-ac98919",
    "price": 669,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_thor_rgb_2nd_gen_32gb_2_x_16gb_ddr5_6000mhz_cl38_intel_xmp_amd_expo_desktop_memory_ac98919_59167.jpg?v=1787786218",
    "inStock": true,
+   "brand": "Lexar"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC99800",
+   "title": "Lexar THOR RGB G2 64GB (2x 32GB) DDR5 6000MHz CL40 INTEL XMP & AMD EXPO Desktop Memory",
+   "url": "https://www.mwave.com.au/products/lexar-thor-g2-rgb-64gb-2x-32gb-ddr5-6000mhz-cl40-intel-xmp-amd-expo-desktop-memory-black-ac99800",
+   "price": 1199,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_thor_g2_rgb_64gb_2x_32gb_ddr5_6000mhz_cl40_intel_xmp_amd_expo_desktop_memory_black_ac99800_755.jpg?v=1787797412",
+   "inStock": false,
    "brand": "Lexar"
   },
   {
@@ -2701,7 +2712,7 @@
   {
    "retailer": "mwave",
    "sku": "AD00151",
-   "title": "Silicon Power XPOWER Storm RGB 16GB (2x8GB) DDR5 6000MT/s CL36 Desktop Memory",
+   "title": "Silicon Power XPOWER Storm RGB 16GB (2x8GB) DDR5 6000MT/s CL36 Desktop Memory - Grey",
    "url": "https://www.mwave.com.au/products/silicon-power-xpower-storm-rgb-16gb-2x8gb-ddr5-6000mts-cl36-desktop-memory-grey-ad00151",
    "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_xpower_storm_rgb_16gb_2x8gb_ddr5_6000mts_cl36_desktop_memory_grey_ad00151_92874.jpg?v=1790126530",
@@ -2711,7 +2722,7 @@
   {
    "retailer": "mwave",
    "sku": "AC93716",
-   "title": "Silicon Power XPOWER Storm RGB 32GB (2x 16GB) DDR5 6000MHz CL36 Desktop Memory -",
+   "title": "Silicon Power XPOWER Storm RGB 32GB (2x 16GB) DDR5 6000MHz CL36 Desktop Memory - White",
    "url": "https://www.mwave.com.au/products/silicon-power-xpower-storm-rgb-32gb-2x-16gb-ddr5-6000mhz-cl36-desktop-memory-white-ac93716",
    "price": 748,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_xpower_storm_rgb_32gb_2x_16gb_ddr5_6000mhz_cl36_desktop_memory_white_ac93716_31034.jpg?v=1789457442",
@@ -2731,7 +2742,7 @@
   {
    "retailer": "mwave",
    "sku": "AD00152",
-   "title": "Silicon Power XPOWER Storm RGB 32GB (2x16GB) DDR5 6000MT/s CL36 Desktop Memory",
+   "title": "Silicon Power XPOWER Storm RGB 32GB (2x16GB) DDR5 6000MT/s CL36 Desktop Memory - Grey",
    "url": "https://www.mwave.com.au/products/silicon-power-xpower-storm-rgb-32gb-2x16gb-ddr5-6000mts-cl36-desktop-memory-grey-ad00152",
    "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_xpower_storm_rgb_32gb_2x16gb_ddr5_6000mts_cl36_desktop_memory_grey_ad00152_7962.jpg?v=1790126532",
@@ -2881,7 +2892,7 @@
   {
    "retailer": "mwave",
    "sku": "AC51425",
-   "title": "Team T-Force Vulcan 32GB (2x 16GB) 5200MHz Intel XMP & AMD EXPO DDR5 Desktop Memory -",
+   "title": "Team T-Force Vulcan 32GB (2x 16GB) 5200MHz Intel XMP & AMD EXPO DDR5 Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/team-tforce-vulcan-32gb-2x-16gb-5200mhz-intel-xmp-amd-expo-ddr5-desktop-memory-black-ac51425",
    "price": 719.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/team_tforce_vulcan_32gb_2x_16gb_ddr5_5200mhz_udimm_memory_black_ac51425_1.jpg?v=1787799083",

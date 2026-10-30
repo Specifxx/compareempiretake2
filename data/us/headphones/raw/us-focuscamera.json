@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:57:21.518Z",
+ "scrapedAt": "2026-10-30T00:01:15.368Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -174,7 +174,7 @@
    "price": 129.99,
    "wasPrice": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3633288.jpg?v=1780503218",
-   "inStock": true,
+   "inStock": false,
    "brand": "BEYER DYNAMICS",
    "mpn": "DT270PRO"
   },
@@ -207,7 +207,7 @@
    "url": "https://www.focuscamera.com/products/beyer-dynamics-459046-dt770pro-audio-electronics-headphones-earbuds",
    "price": 199.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3211073.jpg?v=1770307355",
-   "inStock": true,
+   "inStock": false,
    "brand": "BEYER DYNAMICS",
    "mpn": "459046-DT770PRO"
   },
@@ -331,6 +331,39 @@
    "inStock": true,
    "brand": "BEYER DYNAMICS",
    "mpn": "T5-3GEN"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "50904412127280",
+   "title": "Bose Noise Cancelling Wired Earbuds (Black)",
+   "url": "https://www.focuscamera.com/products/bose-906940-0010-audio-electronics-headphones-earbuds",
+   "price": 99,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3684325.jpg?v=1793195033",
+   "inStock": false,
+   "brand": "Bose",
+   "mpn": "906940-0010"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "50904417534000",
+   "title": "Bose Noise Cancelling Wired Earbuds (Dewdrop Mint)",
+   "url": "https://www.focuscamera.com/products/bose-906940-0030-audio-electronics-headphones-earbuds",
+   "price": 99,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3684333.jpg?v=1793195083",
+   "inStock": false,
+   "brand": "Bose",
+   "mpn": "906940-0030"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "50904416452656",
+   "title": "Bose Noise Cancelling Wired Earbuds (White)",
+   "url": "https://www.focuscamera.com/products/bose-906940-0020-audio-electronics-headphones-earbuds",
+   "price": 99,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3684310.jpg?v=1793195070",
+   "inStock": false,
+   "brand": "Bose",
+   "mpn": "906940-0020"
   },
   {
    "retailer": "us-focuscamera",
@@ -592,7 +625,7 @@
    "url": "https://www.focuscamera.com/products/bose-8901010100-gan-audio-electronics-headphones-earbuds",
    "price": 455,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/cc3b1683d6223d39b93ac56c0d3649ce213c32486671d670d69971cc656213d4-fe690a6647fa57c4.jpg?v=1789739204",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "8901010100-GAN"
   },
@@ -658,9 +691,20 @@
    "url": "https://www.focuscamera.com/products/bose-896637-0040-audio-electronics-headphones-earbuds",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3650825.jpg?v=1784901580",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "896637-0040"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "50904413765680",
+   "title": "Bose QuietComfort Ultra True Wireless Noise-Canceling Earbuds 2nd Gen (Midnight Violet)",
+   "url": "https://www.focuscamera.com/products/bose-896637-0050-audio-electronics-headphones-earbuds",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3684276.jpg?v=1793195039",
+   "inStock": false,
+   "brand": "Bose",
+   "mpn": "896637-0050"
   },
   {
    "retailer": "us-focuscamera",
@@ -669,7 +713,7 @@
    "url": "https://www.focuscamera.com/products/bose-896637-0010-audio-electronics-headphones-earbuds",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3651593.jpg?v=1785245327",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "896637-0010"
   },
@@ -735,7 +779,7 @@
    "url": "https://www.focuscamera.com/products/bose-890101-0100-audio-electronics-headphones-earbuds",
    "price": 449,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3651166.jpg?v=1785245081",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "890101-0100"
   },
@@ -944,7 +988,7 @@
    "url": "https://www.focuscamera.com/products/bose-8978060030-wirp-audio-electronics-headphones-earbuds",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3682535.jpg?v=1792686566",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "8978060030-WIRP"
   },
@@ -955,7 +999,7 @@
    "url": "https://www.focuscamera.com/products/bose-8978060030-usbc-audio-electronics-headphones-earbuds",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3682661.jpg?v=1792686566",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "8978060030-USBC"
   },
@@ -2564,7 +2608,7 @@
    "url": "https://www.focuscamera.com/products/sony-ierm500z-audio-electronics-headphones-earbuds",
    "price": 118,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3662575.jpg?v=1787077441",
-   "inStock": false,
+   "inStock": true,
    "brand": "TD Synnex - Sony",
    "mpn": "IERM500Z"
   },
@@ -3198,7 +3242,7 @@
    "price": 38,
    "wasPrice": 68,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3140328.jpg?v=1751635393",
-   "inStock": true,
+   "inStock": false,
    "brand": "TD Synnex - Sony",
    "mpn": "WHCH520B"
   },

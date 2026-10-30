@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-29T00:05:23.894Z",
+ "scrapedAt": "2026-10-30T00:10:56.632Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -7,8 +7,19 @@
    "mpn": "MD4A4KN/A",
    "title": "Apple iPad 2025 11\" Blue 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-blue-128gb-wi-fi-tablet-md4a4kn-a/version.asp",
-   "price": 414.97,
+   "price": 409.97,
    "wasPrice": 508,
+   "image": "https://www.laptopsdirect.co.uk/Images/MD4A4KNA_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1996690",
+   "mpn": "MD4H4KN/A",
+   "title": "Apple iPad 2025 11\" Blue 256GB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-blue-256gb-wi-fi-tablet-md4h4kn-a/version.asp",
+   "price": 499.97,
+   "wasPrice": 529,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4A4KNA_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -18,7 +29,7 @@
    "mpn": "MD4E4KN/A",
    "title": "Apple iPad 2025 11\" Pink 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-pink-128gb-wi-fi-tablet-md4e4kn-a/version.asp",
-   "price": 404.97,
+   "price": 409.97,
    "wasPrice": 508,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4E4KNA_1_Classic.jpg?v=5",
    "inStock": true
@@ -36,22 +47,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1996692",
+   "mpn": "MD4G4KN/A",
+   "title": "Apple iPad 2025 11\" Silver 256GB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-silver-256gb-wi-fi-tablet-md4g4kn-a/version.asp",
+   "price": 529,
+   "wasPrice": 608,
+   "image": "https://www.laptopsdirect.co.uk/Images/MD4G4KNA_1_Classic.jpg?v=9",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1996689",
    "mpn": "MD4D4KN/A",
    "title": "Apple iPad 2025 11\" Yellow 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-yellow-128gb-wi-fi-tablet-md4d4kn-a/version.asp",
    "price": 429,
-   "image": "https://www.laptopsdirect.co.uk/Images/MD4D4KNA_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1996693",
-   "mpn": "MD4J4KN/A",
-   "title": "Apple iPad 2025 11\" Yellow 256GB Wi-Fi Tablet",
-   "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-yellow-256gb-wi-fi-tablet-md4j4kn-a/version.asp",
-   "price": 499.97,
-   "wasPrice": 529,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4D4KNA_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -190,16 +201,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2044738",
-   "mpn": "SM-X135FZAEEUB",
-   "title": "Samsung Galaxy Tab A11 8.7\" Grey 128GB 4G Tablet",
-   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-a11-8.7-grey-128gb-4g-tablet-sm-x135fzaeeub/version.asp",
-   "price": 269.96,
-   "image": "https://www.laptopsdirect.co.uk/Images/SM-X130NZAAEUB_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2044734",
    "mpn": "SM-X130NZAEEUB",
    "title": "Samsung Galaxy Tab A11 8.7\" Grey 128GB Wi-Fi Tablet",
@@ -243,6 +244,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2044735",
+   "mpn": "SM-X130NZSAEUB",
+   "title": "Samsung Galaxy Tab A11 8.7\" Silver 64GB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-a11-8.7-silver-64gb-wi-fi-tablet-sm-x130nzsaeub/version.asp",
+   "price": 149.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/SM-X130NZSAEUB_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2044729",
    "mpn": "SM-X236BZAREUB",
    "title": "Samsung Galaxy Tab A11+ 11\" Grey 128GB 5G Tablet",
@@ -270,7 +281,7 @@
    "title": "Samsung Galaxy Tab A11+ 11\" Silver 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-a11-11-silver-128gb-wi-fi-tablet-sm-x230nzsreub/version.asp",
    "price": 197.97,
-   "wasPrice": 295.19,
+   "wasPrice": 294.97,
    "image": "https://www.laptopsdirect.co.uk/Images/SM-X230NZSPEUB_1_Classic.jpg?v=6",
    "inStock": true
   },

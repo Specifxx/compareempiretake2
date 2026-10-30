@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:21:23.220Z",
+ "scrapedAt": "2026-10-29T23:25:26.955Z",
  "offers": [
   {
    "retailer": "ple",
@@ -299,28 +299,6 @@
    "url": "https://www.ple.com.au/products/678578/asus-geforce-rtx-5080-rog-astral-16gb-gddr7",
    "price": 3499,
    "image": "https://plecom.imgix.net/iil-444161-678578.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "687931",
-   "title": "ASUS GeForce RTX 5080 ROG Astral 16GB GDDR7 (White)",
-   "brand": "ASUS",
-   "mpn": "ROG-ASTRAL-RTX5080-16G-WHITE",
-   "url": "https://www.ple.com.au/products/687931/asus-geforce-rtx-5080-rog-astral-16gb-gddr7-white",
-   "price": 3499,
-   "image": "https://plecom.imgix.net/iil-484292-687931.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "679086",
-   "title": "ASUS GeForce RTX 5080 ROG Astral Gaming OC 16GB GDDR7 (White)",
-   "brand": "ASUS",
-   "mpn": "ROG-ASTRAL-RTX5080-O16G-WHITE",
-   "url": "https://www.ple.com.au/products/679086/asus-geforce-rtx-5080-rog-astral-gaming-oc-16gb-gddr7-white",
-   "price": 3499,
-   "image": "https://plecom.imgix.net/iil-446801-679086.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -950,6 +928,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "673860",
+   "title": "MSI GeForce RTX 5070 12GB GDDR7 VENTUS 2X OC",
+   "brand": "MSI",
+   "mpn": "GeForce RTX 5070 12G VENTUS 2X OC",
+   "url": "https://www.ple.com.au/products/673860/msi-geforce-rtx-5070-12gb-gddr7-ventus-2x-oc",
+   "price": 1499,
+   "image": "https://plecom.imgix.net/iil-421963-673860.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "672336",
    "title": "MSI GeForce RTX 5080 16GB GDDR7 VENTUS 3X OC",
    "brand": "MSI",
@@ -1208,17 +1197,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "672773",
-   "title": "PNY GeForce RTX 5080 ARGB EPIC-X RGB OC 16GB",
-   "brand": "PNY",
-   "mpn": "VCG508016TFXXPB1-O",
-   "url": "https://www.ple.com.au/products/672773/pny-geforce-rtx-5080-argb-epic-x-rgb-oc-16gb",
-   "price": 3409,
-   "image": "https://plecom.imgix.net/iil-415708-672773.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "672776",
    "title": "PNY GeForce RTX 5080 Triple Fan 16GB GDDR7",
    "brand": "PNY",
@@ -1314,7 +1292,7 @@
    "brand": "XFX",
    "mpn": "RX-97TRGBBB9",
    "url": "https://www.ple.com.au/products/683076/xfx-mercury-radeon-rx-9070-xt-oc-gaming-edition-16gb-gddr6",
-   "price": 1439,
+   "price": 1639,
    "image": "https://plecom.imgix.net/iil-466220-683076.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1325,7 +1303,7 @@
    "brand": "XFX",
    "mpn": "RX-97TRGBBW9",
    "url": "https://www.ple.com.au/products/687037/xfx-mercury-radeon-rx-9070-xt-oc-gaming-edition-rgb-16gb-gddr6-white",
-   "price": 1449,
+   "price": 1649,
    "image": "https://plecom.imgix.net/iil-488304-687037.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1336,7 +1314,7 @@
    "brand": "XFX",
    "mpn": "RX-97TMARGB9",
    "url": "https://www.ple.com.au/products/678052/xfx-mercury-radeon-rx-9070-xt-oc-magnetic-air-edition-16gb-gddr6",
-   "price": 1459,
+   "price": 1649,
    "image": "https://plecom.imgix.net/iil-441694-678052.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1347,7 +1325,7 @@
    "brand": "XFX",
    "mpn": "RX-97TMARGW9",
    "url": "https://www.ple.com.au/products/678053/xfx-mercury-radeon-rx-9070-xt-oc-magnetic-air-edition-16gb-gddr6-white",
-   "price": 1469,
+   "price": 1659,
    "image": "https://plecom.imgix.net/iil-441698-678053.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1369,8 +1347,7 @@
    "brand": "XFX",
    "mpn": "RX-76PSWFTFY",
    "url": "https://www.ple.com.au/products/660329/xfx-speedster-swft-210-radeon-rx-7600-core-edition-8gb-gddr6-",
-   "price": 479,
-   "wasPrice": 489,
+   "price": 509,
    "image": "https://plecom.imgix.net/iil-373245-660329.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1381,7 +1358,7 @@
    "brand": "XFX",
    "mpn": "RX-95SWFT8BE",
    "url": "https://www.ple.com.au/products/687911/xfx-swift-radeon-rx-9050-gaming-edition-8gb-gddr6",
-   "price": 439,
+   "price": 489,
    "image": "https://plecom.imgix.net/iil-484366-687911.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1392,7 +1369,7 @@
    "brand": "XFX",
    "mpn": "RX-96TSW16BQ",
    "url": "https://www.ple.com.au/products/678058/xfx-swift-radeon-rx-9060-xt-oc-gaming-edition-16gb-gddr6",
-   "price": 859,
+   "price": 909,
    "image": "https://plecom.imgix.net/iil-441509-678058.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1403,7 +1380,7 @@
    "brand": "XFX",
    "mpn": "RX-96TSW16WQ",
    "url": "https://www.ple.com.au/products/678059/xfx-swift-radeon-rx-9060-xt-oc-gaming-edition-16gb-gddr6-white",
-   "price": 899,
+   "price": 919,
    "image": "https://plecom.imgix.net/iil-441516-678059.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1414,7 +1391,7 @@
    "brand": "XFX",
    "mpn": "RX-96TS316B7",
    "url": "https://www.ple.com.au/products/678060/xfx-swift-radeon-rx-9060-xt-oc-triple-fan-16gb-gddr6",
-   "price": 919,
+   "price": 929,
    "image": "https://plecom.imgix.net/iil-441525-678060.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1425,7 +1402,7 @@
    "brand": "XFX",
    "mpn": "RX-96TS316W7",
    "url": "https://www.ple.com.au/products/678061/xfx-swift-radeon-rx-9060-xt-oc-triple-fan-16gb-gddr6-white",
-   "price": 929,
+   "price": 939,
    "image": "https://plecom.imgix.net/iil-441676-678061.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1436,7 +1413,7 @@
    "brand": "XFX",
    "mpn": "RX-97GRE29B7",
    "url": "https://www.ple.com.au/products/684913/xfx-swift-radeon-rx-9070-gre-12gb-gddr6",
-   "price": 899,
+   "price": 929,
    "image": "https://plecom.imgix.net/iil-471660-684913.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1447,8 +1424,7 @@
    "brand": "XFX",
    "mpn": "RX-97GRE29W7",
    "url": "https://www.ple.com.au/products/684914/xfx-swift-radeon-rx-9070-gre-12gb-gddr6-white",
-   "price": 899,
-   "wasPrice": 919,
+   "price": 939,
    "image": "https://plecom.imgix.net/iil-471666-684914.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1459,19 +1435,8 @@
    "brand": "XFX",
    "mpn": "RX-97TSWF3B9",
    "url": "https://www.ple.com.au/products/678054/xfx-swift-radeon-rx-9070-xt-triple-fan-gaming-edition-16gb-gddr6-",
-   "price": 1399,
+   "price": 1479,
    "image": "https://plecom.imgix.net/iil-441703-678054.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "682817",
-   "title": "ZOTAC Gaming GeForce RTX 3050 Twin Edge OC 6GB GDDR6",
-   "brand": "Zotac",
-   "mpn": "ZT-A30510H-10L",
-   "url": "https://www.ple.com.au/products/682817/zotac-gaming-geforce-rtx-3050-twin-edge-oc-6gb-gddr6",
-   "price": 419,
-   "image": "https://plecom.imgix.net/iil-462081-682817.jpg?w=600&h=600",
    "inStock": true
   },
   {

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:57:56.320Z",
+ "scrapedAt": "2026-10-30T00:01:42.155Z",
  "offers": [
   {
    "retailer": "us-lg",
@@ -824,7 +824,7 @@
    "url": "https://www.lg.com/us/monitors/lg-32ur500k-b-uhd-monitor",
    "price": 279.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/8af4c228-07fe-4ccd-af1d-bae7b372b412/Monitor_32UR500K-B_Gallery_01_5000x5000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -1092,17 +1092,6 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "34G63DA-B",
-   "mpn": "34G63DA-B",
-   "brand": "LG",
-   "title": "34 Inch UltraGear™ WQHD 1440p 240Hz 1ms AMD FreeSync™ Premium Curved Gaming Monitor with USB Type-C PD 15W",
-   "url": "https://www.lg.com/us/monitors/lg-34g63da-b-gaming-monitor",
-   "price": 449.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/7bda4a18-281a-4a68-9ee8-72974c3ed7ca/Monitors-34G63DA-B-Gallery-02_v2_5000x5000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
    "sku": "34G630A-B",
    "mpn": "34G630A-B",
    "brand": "LG",
@@ -1110,6 +1099,17 @@
    "url": "https://www.lg.com/us/monitors/lg-34g630a-b-gaming-monitor",
    "price": 399.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/5e523333-9a63-44c3-9b54-125f0ec7a110/Monitor-34G630A-B-gallery-02-new_5000x5000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "34G63DA-B",
+   "mpn": "34G63DA-B",
+   "brand": "LG",
+   "title": "34 Inch UltraGear™ WQHD 1440p 240Hz 1ms AMD FreeSync™ Premium Curved Gaming Monitor with USB Type-C PD 15W",
+   "url": "https://www.lg.com/us/monitors/lg-34g63da-b-gaming-monitor",
+   "price": 449.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/7bda4a18-281a-4a68-9ee8-72974c3ed7ca/Monitors-34G63DA-B-Gallery-02_v2_5000x5000",
    "inStock": true
   },
   {
@@ -1352,7 +1352,7 @@
    "url": "https://www.lg.com/us/monitors/lg-39gx90sa-w-gaming-monitor",
    "price": 1599.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/13c33702-de0e-4b1a-8294-5a9bd00fbf4b/Monitor-39GX90SA-W-OLED-Gallery_3000x3000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",

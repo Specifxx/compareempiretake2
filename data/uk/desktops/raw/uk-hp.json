@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-29T00:00:20.761Z",
+ "scrapedAt": "2026-10-30T00:05:05.108Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -302,7 +302,7 @@
    "price": 1271.99,
    "wasPrice": 1827.84,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/d/5/d5fadc1e-91d1-4aad-87fb-3980247e9b54.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -326,7 +326,7 @@
    "price": 1559.99,
    "wasPrice": 2493.67,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/0/2026_movies_matineer_ai_mini_dt_jetblack_nonodd_horizontal_nonvented_catalog_transperant_front_5518916_cus_1_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -362,7 +362,7 @@
    "price": 1979.99,
    "wasPrice": 3140.06,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/0/2026_movies_matineer_ai_mini_dt_jetblack_nonodd_horizontal_nonvented_catalog_transperant_front_5518916_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -397,7 +397,7 @@
    "price": 1871.99,
    "wasPrice": 2736.68,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/0/2026_movies_moomin_ai_mini_dt_jetblack_nonodd_nonvent_horizontal_catalog_whitebg_front_5520117_cus_5.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -408,7 +408,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-elitedesk-8-mini-g2i-desktop-next-gen-ai-pc-wolf-pro-security-edition-dk4b0at-abu",
    "price": 2495.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/0/2026_movies_moomin_ai_mini_dt_jetblack_nonodd_nonvent_horizontal_catalog_whitebg_front_5520117_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -733,6 +733,17 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "E41TJEA#ABU",
+   "mpn": "E41TJEA#ABU",
+   "brand": "HP",
+   "title": "HP OMEN 16L Gaming Desktop, Intel Core i7, 16GB, 1TB, NVIDIA GeForce RTX 5060 Ti 8GB, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-16l-gaming-desktop-pc-tg03-1402na-pc-e41tjea-abu",
+   "price": 1900,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/5/25c1_omen_16l_n1_mentaliraptorl_shadbl_coreset_frontright_6516601_cus_6.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "BT8E9EA#ABU",
    "mpn": "BT8E9EA#ABU",
    "brand": "HP",
@@ -753,17 +764,6 @@
    "price": 1849.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/5/25c1_omen_16l_n1_mentaliraptorl_shadbl_coreset_frontright_6516601_cus_5.png?store=gb-en&image-type=small_image",
    "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E41TJEA#ABU",
-   "mpn": "E41TJEA#ABU",
-   "brand": "HP",
-   "title": "HP OMEN 16L Gaming Desktop, Intel Core i7, 16GB, 1TB, NVIDIA GeForce RTX 5060 Ti 8GB, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-16l-gaming-desktop-pc-tg03-1402na-pc-e41tjea-abu",
-   "price": 1900,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/5/25c1_omen_16l_n1_mentaliraptorl_shadbl_coreset_frontright_6516601_cus_6.png?store=gb-en&image-type=small_image",
-   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -1589,7 +1589,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-prodesk-4-mini-g1i-desktop-ai-pc-wolf-pro-security-edition-cw3b8ea-abu",
    "price": 1799.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/4/042dcfb9-a39e-41f7-895b-ccf2b6f3ac41.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -2018,17 +2018,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DD2Y8EA#ABU",
-   "mpn": "DD2Y8EA#ABU",
-   "brand": "HP",
-   "title": "HP Z2 Mini G1i Workstation Desktop PC, Intel Core Ultra 7, 64GB, 1TB, NVIDIA RTX PRO 2000 Blackwell 16GB",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z2-mini-g1i-workstation-desktop-pc-wolf-pro-security-edition-dd2y8ea-abu",
-   "price": 3899.99,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/7/070444f3-da6d-4f96-afcf-891d0dacab91.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "DD2Y9EA#ABU",
    "mpn": "DD2Y9EA#ABU",
    "brand": "HP",
@@ -2037,6 +2026,17 @@
    "price": 4067.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/7/070444f3-da6d-4f96-afcf-891d0dacab91.png?store=gb-en&image-type=small_image",
    "inStock": false
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "DD2Y8EA#ABU",
+   "mpn": "DD2Y8EA#ABU",
+   "brand": "HP",
+   "title": "HP Z2 Mini G1i Workstation Desktop PC, Intel Core Ultra 7, 64GB, 1TB, NVIDIA RTX PRO 2000 Blackwell 16GB",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z2-mini-g1i-workstation-desktop-pc-wolf-pro-security-edition-dd2y8ea-abu",
+   "price": 3899.99,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/7/070444f3-da6d-4f96-afcf-891d0dacab91.png?store=gb-en&image-type=small_image",
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -2498,6 +2498,18 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "5E8Q7EA#ABU",
+   "mpn": "5E8Q7EA#ABU",
+   "brand": "HP",
+   "title": "HP Z4 G5 Workstation Desktop PC, Intel Xeon w5, 32GB, 1TB",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z4-g5-workstation-pc-5e8q7ea-abu",
+   "price": 4367.99,
+   "wasPrice": 4607.99,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/a/cabefe0e-d874-4614-b325-a2eb7d41ce50.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "5E8Y7EA#ABU",
    "mpn": "5E8Y7EA#ABU",
    "brand": "HP",
@@ -2521,13 +2533,13 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "5E8Q7EA#ABU",
-   "mpn": "5E8Q7EA#ABU",
+   "sku": "5E8Q9EA#ABU",
+   "mpn": "5E8Q9EA#ABU",
    "brand": "HP",
-   "title": "HP Z4 G5 Workstation Desktop PC, Intel Xeon w5, 32GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z4-g5-workstation-pc-5e8q7ea-abu",
-   "price": 4367.99,
-   "wasPrice": 4607.99,
+   "title": "HP Z4 G5 Workstation Desktop PC, Intel Xeon w7, 32GB, 2TB",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z4-g5-workstation-pc-5e8q9ea-abu",
+   "price": 6359.99,
+   "wasPrice": 6551.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/a/cabefe0e-d874-4614-b325-a2eb7d41ce50.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -2540,18 +2552,6 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z4-g5-workstation-pc-wolf-pro-security-edition-5e8y8ea-abu",
    "price": 6239.99,
    "wasPrice": 6623.99,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/a/cabefe0e-d874-4614-b325-a2eb7d41ce50.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "5E8Q9EA#ABU",
-   "mpn": "5E8Q9EA#ABU",
-   "brand": "HP",
-   "title": "HP Z4 G5 Workstation Desktop PC, Intel Xeon w7, 32GB, 2TB",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z4-g5-workstation-pc-5e8q9ea-abu",
-   "price": 6359.99,
-   "wasPrice": 6551.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/a/cabefe0e-d874-4614-b325-a2eb7d41ce50.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -2576,7 +2576,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z4-g6i-workstation-desktop-pc-wolf-pro-security-edition-e53jfea-abu",
    "price": 11654.39,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/1/01_pagosa_z4_g6i_vertical_fio_entry_jackblack_catalog_front_6024306_cus_2.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2587,7 +2587,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z4-g6i-workstation-desktop-pc-wolf-pro-security-edition-e53jnea-abu",
    "price": 12823.19,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/3/03_pagosa_z4_g6i_vertical_fio_entry_jackblack_catalog_frontright_6024308_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2651,18 +2651,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "E1NT7EA#ABU",
-   "mpn": "E1NT7EA#ABU",
-   "brand": "HP",
-   "title": "HP Z6 G5 A Workstation Desktop PC, AMD Ryzen Threadripper PRO, 64GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z6-g5-a-workstation-wolf-pro-security-edition-e1nt7ea-abu",
-   "price": 8699.99,
-   "wasPrice": 15592.84,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/v/avalanche_z6_entryfrontio_sparklingblack_coreset_blackbg_frontright_m1657588_4470808_cus_9.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "E1NN5EA#ABU",
    "mpn": "E1NN5EA#ABU",
    "brand": "HP",
@@ -2683,6 +2671,18 @@
    "price": 5831.99,
    "wasPrice": 10637.7,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/v/avalanche_z6_entryfrontio_sparklingblack_coreset_blackbg_frontright_m1657588_4470808_cus_7.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E1NT7EA#ABU",
+   "mpn": "E1NT7EA#ABU",
+   "brand": "HP",
+   "title": "HP Z6 G5 A Workstation Desktop PC, AMD Ryzen Threadripper PRO, 64GB, 1TB",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z6-g5-a-workstation-wolf-pro-security-edition-e1nt7ea-abu",
+   "price": 8699.99,
+   "wasPrice": 15592.84,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/v/avalanche_z6_entryfrontio_sparklingblack_coreset_blackbg_frontright_m1657588_4470808_cus_9.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {

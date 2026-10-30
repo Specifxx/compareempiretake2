@@ -1,16 +1,6 @@
 {
- "scrapedAt": "2026-10-29T00:00:04.824Z",
+ "scrapedAt": "2026-10-30T00:04:20.460Z",
  "offers": [
-  {
-   "retailer": "uk-clove",
-   "sku": "71339982",
-   "title": "Alcatel 1 (2021) - 8GB + 1GB - Black",
-   "url": "https://www.clove.co.uk/products/alcatel-1-2021-8gb-1gb-black",
-   "price": 44.28,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/640f9c01-9d42-4069-9697-7dac9d83a114.jpg?v=1784727418",
-   "inStock": false,
-   "brand": "Alcatel"
-  },
   {
    "retailer": "uk-clove",
    "sku": "APPL-IP16-128-BLK",
@@ -543,13 +533,13 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "CATP-S42HPBLK",
-   "title": "CAT S42 H+ UK Model - Dual SIM Black 32GB + 3GB RAM",
-   "url": "https://www.clove.co.uk/products/cat-s42-h",
-   "price": 149.99,
-   "wasPrice": 193.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ad41a1ea-d4ea-4226-bd54-c231f8f77a9b.jpg?v=1738663958",
-   "inStock": false
+   "sku": "99397516",
+   "title": "Datalogic Memor K25 10.2 cm (4\") Single SIM Android 13 4G USB Type-C 4 GB 4850 mAh Black",
+   "url": "https://www.clove.co.uk/products/datalogic-memor-k25-10-2-cm-4-single-sim-android-13-4g-usb-type-c-4-gb-4850-mah-black",
+   "price": 450.31,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ce4aa11b-dac7-4795-be56-4396a2971408.jpg?v=1793287501",
+   "inStock": true,
+   "brand": "Datalogic"
   },
   {
    "retailer": "uk-clove",
@@ -566,7 +556,7 @@
    "sku": "98951018",
    "title": "Doro Aurora A10 - 64GB + 4GB - Black / White",
    "url": "https://www.clove.co.uk/products/doro-aurora-a10-64gb-4gb-black-white",
-   "price": 174.9,
+   "price": 108.08,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f4ec519d-8a17-4b77-90d7-6ba6f699e94e.jpg?v=1760000091",
    "inStock": true,
    "brand": "Doro"
@@ -586,7 +576,7 @@
    "sku": "98968548",
    "title": "Doro Aurora A20 - 64GB + 4GB - Black / White",
    "url": "https://www.clove.co.uk/products/doro-aurora-a20-64gb-4gb-black-white",
-   "price": 209.06,
+   "price": 140.83,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dc8688bb-b664-44b7-b19d-c3e524d4ddf5.jpg?v=1760000090",
    "inStock": true,
    "brand": "Doro"
@@ -616,9 +606,9 @@
    "sku": "98978858",
    "title": "Doro Aurora A30 - 128GB + 6GB - Graphite",
    "url": "https://www.clove.co.uk/products/doro-aurora-a30-128gb-6gb-graphite",
-   "price": 249.48,
+   "price": 248.26,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4b7269f8-6b34-48fa-b37a-f6d5e04a0672.jpg?v=1760000117",
-   "inStock": false,
+   "inStock": true,
    "brand": "Doro"
   },
   {
@@ -1064,6 +1054,15 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "93281988",
+   "title": "HMD Fusion Business Edition - 5G, 8GB/256GB, 6,56\", 108MP/50MP, 5.000 mAh, Noir",
+   "url": "https://www.clove.co.uk/products/hmd-fusion-business-edition-5g-8gb-256gb-6-56-108mp-50mp-5-000-mah-noir",
+   "price": 213.08,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/63be605a-5f01-437e-af47-cd520e5eaf8c.jpg?v=1793287488",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "HMD-KEYBLU",
    "title": "HMD Key Single SIM Icy Blue 32GB + 2GB RAM",
    "url": "https://www.clove.co.uk/products/hmd-key?variant=41320837578795",
@@ -1079,6 +1078,15 @@
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6826604_R_Z002A.webp?v=1738860755",
    "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "93282846",
+   "title": "HMD Skyline - 5G, 8GB/256GB, 6,55\" pOLED, 108MP/50MP, 4.600 mAh, Pink",
+   "url": "https://www.clove.co.uk/products/hmd-skyline-5g-8gb-256gb-6-55-poled-108mp-50mp-4-600-mah-pink",
+   "price": 193.62,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a1d22830-ac28-4739-9002-87801ce8dc0e.jpg?v=1793287494",
+   "inStock": true
   },
   {
    "retailer": "uk-clove",
@@ -1158,6 +1166,46 @@
    "price": 668.07,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/51mCHUys-ML._AC_SL1080.jpg?v=1760973352",
    "inStock": false,
+   "brand": "Honor"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104675817",
+   "title": "Honor 600 Lite 16.8 cm (6.6\") Dual SIM Android 16.0 5G USB Type-C 8 GB 256 GB 6520 mAh Green",
+   "url": "https://www.clove.co.uk/products/honor-600-lite-16-8-cm-6-6-dual-sim-android-16-0-5g-usb-type-c-8-gb-256-gb-6520-mah-green",
+   "price": 349.51,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/af93b464-320c-403c-9fc7-944071f1faa3.jpg?v=1793287475",
+   "inStock": true,
+   "brand": "Honor"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104478690",
+   "title": "Honor 600 Pro 16.7 cm (6.57\") Dual SIM Android 16.0 5G USB Type-C 12 GB 512 GB 6400 mAh Gold",
+   "url": "https://www.clove.co.uk/products/honor-600-pro-16-7-cm-6-57-dual-sim-android-16-0-5g-usb-type-c-12-gb-512-gb-6400-mah-gold",
+   "price": 850.19,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bfa6b97f-589d-474f-ad37-746b13702afe.jpg?v=1793287474",
+   "inStock": true,
+   "brand": "Honor"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103648180",
+   "title": "Honor Magic 8 Lite 17.2 cm (6.79\") Hybrid Dual SIM MagicOS 9.0 5G USB Type-C 8 GB 512 GB 7500 mAh Black",
+   "url": "https://www.clove.co.uk/products/honor-magic-8-lite-17-2-cm-6-79-hybrid-dual-sim-magicos-9-0-5g-usb-type-c-8-gb-512-gb-7500-mah-black",
+   "price": 472.32,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b39be149-48ab-4ba5-b650-cd8958f85ca8.jpg?v=1793287496",
+   "inStock": true,
+   "brand": "Honor"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103648419",
+   "title": "Honor Magic 8 Lite 17.2 cm (6.79\") Hybrid Dual SIM MagicOS 9.0 5G USB Type-C 8 GB 512 GB 7500 mAh Green",
+   "url": "https://www.clove.co.uk/products/honor-magic-8-lite-17-2-cm-6-79-hybrid-dual-sim-magicos-9-0-5g-usb-type-c-8-gb-512-gb-7500-mah-green",
+   "price": 472.32,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/42331304-f4fb-48f2-9382-3f976a5975a4.jpg?v=1793287497",
+   "inStock": true,
    "brand": "Honor"
   },
   {
@@ -1292,6 +1340,26 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "102933805",
+   "title": "Honor Magic8 Pro 17 cm (6.71\") Dual SIM Android 16.0 5G USB Type-C 12 GB 512 GB 6270 mAh Black",
+   "url": "https://www.clove.co.uk/products/honor-magic8-pro-17-cm-6-71-dual-sim-android-16-0-5g-usb-type-c-12-gb-512-gb-6270-mah-black",
+   "price": 1039.11,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d7f22744-be4e-4412-9a3f-1d80fef53fc0.jpg?v=1793287487",
+   "inStock": true,
+   "brand": "Honor"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "102934203",
+   "title": "Honor Magic8 Pro 17 cm (6.71\") Dual SIM Android 16.0 5G USB Type-C 12 GB 512 GB 6270 mAh Gold",
+   "url": "https://www.clove.co.uk/products/honor-magic8-pro-17-cm-6-71-dual-sim-android-16-0-5g-usb-type-c-12-gb-512-gb-6270-mah-gold",
+   "price": 1049.82,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8911930e-30bf-46c3-97cd-2323172203af.jpg?v=1793287494",
+   "inStock": true,
+   "brand": "Honor"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "100462888",
    "title": "Honor X5c Plus - 128GB + 4GB - Green",
    "url": "https://www.clove.co.uk/products/honor-x5c-plus-17-1-cm-6-74-magicos-9-0-4-gb-128-gb-5260-mah-green",
@@ -1319,26 +1387,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/073734d9-96b6-4b80-bfb6-1ab9f8c731d3.jpg?v=1760000115",
    "inStock": false,
    "brand": "Honor"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "INFXP-NOTE40256BLK",
-   "title": "Infinix Note 40 Dual SIM Obsidian Black 256 GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/infinix-note-40?variant=41061824790571",
-   "price": 229.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Note40-ObsidianBlack_Main.jpg?v=1712153697",
-   "inStock": true,
-   "brand": "Infinix"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "INFXP-NOTE40256GLD",
-   "title": "Infinix Note 40 Dual SIM Titan Gold 256 GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/infinix-note-40?variant=41061824823339",
-   "price": 229.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/Note40-ObsidianBlack_Main.jpg?v=1712153697",
-   "inStock": true,
-   "brand": "Infinix"
   },
   {
    "retailer": "uk-clove",
@@ -1481,12 +1529,82 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "103272117",
+   "title": "OnePlus 15 17.2 cm (6.78\") Dual SIM Android 16.0 5G USB Type-C 16 GB 512 GB 7300 mAh Black",
+   "url": "https://www.clove.co.uk/products/oneplus-15-17-2-cm-6-78-dual-sim-android-16-0-5g-usb-type-c-16-gb-512-gb-7300-mah-black",
+   "price": 1061.1,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5459190c-920c-49d8-be67-e19bf10677f0.jpg?v=1793287485",
+   "inStock": true,
+   "brand": "OnePlus"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103737905",
+   "title": "OnePlus 15R 17.4 cm (6.83\") Dual SIM Android 16.0 5G USB Type-C 12 GB 256 GB 7400 mAh Mint colour",
+   "url": "https://www.clove.co.uk/products/oneplus-15r-17-4-cm-6-83-dual-sim-android-16-0-5g-usb-type-c-12-gb-256-gb-7400-mah-mint-colour",
+   "price": 536.55,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5205b488-e850-4a47-9289-9702e3a72ff2.jpg?v=1793287486",
+   "inStock": true,
+   "brand": "OnePlus"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100420456",
+   "title": "OnePlus Nord 5 17.4 cm (6.83\") Dual SIM Android 15 5G USB Type-C 12 GB 512 GB 5200 mAh Blue",
+   "url": "https://www.clove.co.uk/products/oneplus-nord-5-17-4-cm-6-83-dual-sim-android-15-5g-usb-type-c-12-gb-512-gb-5200-mah-blue",
+   "price": 353.61,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c1893d88-ed25-4939-88f5-c856b48e19b7.jpg?v=1793287479",
+   "inStock": true,
+   "brand": "OnePlus"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100195076",
+   "title": "OnePlus Nord 5 17.4 cm (6.83\") Dual SIM Android 15 5G USB Type-C 12 GB 512 GB 5200 mAh Grey",
+   "url": "https://www.clove.co.uk/products/oneplus-nord-5-17-4-cm-6-83-dual-sim-android-15-5g-usb-type-c-12-gb-512-gb-5200-mah-grey",
+   "price": 353.61,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/42dcf281-8aab-4656-8b1d-190bb0fd8124.jpg?v=1793287480",
+   "inStock": true,
+   "brand": "OnePlus"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103101134",
+   "title": "OnePlus Nord 5 17.4 cm (6.83\") Dual SIM Android 15 5G USB Type-C 8 GB 256 GB 5200 mAh Marble colour",
+   "url": "https://www.clove.co.uk/products/oneplus-nord-5-17-4-cm-6-83-dual-sim-android-15-5g-usb-type-c-8-gb-256-gb-5200-mah-marble-colour",
+   "price": 350.5,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/38a8bb9b-4293-47b1-9b5c-a2d46fb82c60.jpg?v=1793287475",
+   "inStock": true,
+   "brand": "OnePlus"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "93167359",
    "title": "OnePlus Nord CE4 Lite (5G) - 256GB + 8GB - Blue",
    "url": "https://www.clove.co.uk/products/oneplus-nord-ce4-lite-5g-256gb-8gb-blue",
    "price": 241.85,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/63f10f4f-a2fc-4f8b-99ab-9c5e62c2ee59.jpg?v=1760959600",
    "inStock": false,
+   "brand": "OnePlus"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100355350",
+   "title": "OnePlus Nord CE5 17.2 cm (6.77\") Hybrid Dual SIM Android 15 5G USB Type-C 8 GB 128 GB 5200 mAh Black",
+   "url": "https://www.clove.co.uk/products/oneplus-nord-ce5-17-2-cm-6-77-hybrid-dual-sim-android-15-5g-usb-type-c-8-gb-128-gb-5200-mah-black",
+   "price": 213.48,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d9b2dbb1-266f-4473-b187-1391883bad49.jpg?v=1793287481",
+   "inStock": true,
+   "brand": "OnePlus"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100508035",
+   "title": "OnePlus Nord CE5 17.2 cm (6.77\") Hybrid Dual SIM Android 15 5G USB Type-C 8 GB 128 GB 5200 mAh Marble colour",
+   "url": "https://www.clove.co.uk/products/oneplus-nord-ce5-17-2-cm-6-77-hybrid-dual-sim-android-15-5g-usb-type-c-8-gb-128-gb-5200-mah-marble-colour",
+   "price": 213.48,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a48ea689-45d9-4be6-b2ef-41ad3c8b8274.jpg?v=1793287482",
+   "inStock": true,
    "brand": "OnePlus"
   },
   {
@@ -2571,6 +2689,16 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "102875184",
+   "title": "Sonim XP Pro Thermal 16.7 cm (6.58\") Dual SIM Android 14 5G USB Type-C 8 GB 256 GB 5000 mAh Black",
+   "url": "https://www.clove.co.uk/products/sonim-xp-pro-thermal-16-7-cm-6-58-dual-sim-android-14-5g-usb-type-c-8-gb-256-gb-5000-mah-black",
+   "price": 540.65,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/19c763b7-9e23-40fc-8699-197d1d9478aa.jpg?v=1793287502",
+   "inStock": true,
+   "brand": "Sonim"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "SONY-X1VIII256RED",
    "title": "Sony Xperia 1 VIII Dual SIM Garnet Red 256GB + 12GB RAM",
    "url": "https://www.clove.co.uk/products/sony-xperia-1-viii?variant=44079740813355",
@@ -2638,6 +2766,15 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/61o2oCFuqEL._AC_SL1500.jpg?v=1759827097",
    "inStock": false,
    "brand": "Sony"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "87922893",
+   "title": "TCL 40 NXTPAPER 5G 16.8 cm (6.6\") Hybrid Dual SIM Android 13 USB Type-C 6 GB 256 GB 5000 mAh Black",
+   "url": "https://www.clove.co.uk/products/tcl-40-nxtpaper-5g-16-8-cm-6-6-hybrid-dual-sim-android-13-usb-type-c-6-gb-256-gb-5000-mah-black",
+   "price": 170.3,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/15b359d2-8451-4364-a101-645587389f0b.jpg?v=1793287498",
+   "inStock": true
   },
   {
    "retailer": "uk-clove",
@@ -2759,6 +2896,33 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "105832656",
+   "title": "TCL K70 4G 17.3 cm (6.8\") Hybrid Dual SIM Android 16.0 USB Type-C 4 GB 128 GB 5200 mAh Grey",
+   "url": "https://www.clove.co.uk/products/tcl-k70-4g-17-3-cm-6-8-hybrid-dual-sim-android-16-0-usb-type-c-4-gb-128-gb-5200-mah-grey",
+   "price": 129.69,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/567c6673-5950-46ec-95e8-2b2567c86b0d.jpg?v=1793287477",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105347388",
+   "title": "TCL K70 Power 4G 17.3 cm (6.8\") Hybrid Dual SIM Android 16.0 USB Type-C 8 GB 256 GB 6500 mAh Grey",
+   "url": "https://www.clove.co.uk/products/tcl-k70-power-4g-17-3-cm-6-8-hybrid-dual-sim-android-16-0-usb-type-c-8-gb-256-gb-6500-mah-grey",
+   "price": 161.13,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/844de362-3017-4e5b-95f2-19535752e588.jpg?v=1793287478",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104129796",
+   "title": "TCL K70 SE 16.7 cm (6.56\") Dual SIM Android 16.0 4G USB Type-C 4 GB 64 GB 3000 mAh Black, Indigo",
+   "url": "https://www.clove.co.uk/products/tcl-k70-se-16-7-cm-6-56-dual-sim-android-16-0-4g-usb-type-c-4-gb-64-gb-3000-mah-black-indigo",
+   "price": 103.49,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d57dc6ab-a76b-466c-9ce8-d9f83246702a.jpg?v=1793287491",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "98990952",
    "title": "Xiaomi 12 - 256GB + 8GB - Grey",
    "url": "https://www.clove.co.uk/products/xiaomi-12-256gb-8gb-grey",
@@ -2805,6 +2969,16 @@
    "price": 79.7,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5d7e1edc-696f-4665-84ff-0e21e7b9c417.jpg?v=1760000082",
    "inStock": false,
+   "brand": "Xiaomi"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "98891104",
+   "title": "Xiaomi Redmi A5 17.5 cm (6.88\") Dual SIM Android 15 4G USB Type-C 3 GB 64 GB 5200 mAh Green",
+   "url": "https://www.clove.co.uk/products/xiaomi-redmi-a5-17-5-cm-6-88-dual-sim-android-15-4g-usb-type-c-3-gb-64-gb-5200-mah-green",
+   "price": 273.48,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/92791385-c2f5-476f-9fdb-608191dc498a.jpg?v=1793287500",
+   "inStock": true,
    "brand": "Xiaomi"
   },
   {

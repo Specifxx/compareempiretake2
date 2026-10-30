@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:21:43.261Z",
+ "scrapedAt": "2026-10-29T23:25:45.205Z",
  "offers": [
   {
    "retailer": "ple",
@@ -81,7 +81,7 @@
    "price": 779,
    "wasPrice": 781,
    "image": "https://plecom.imgix.net/iil-473445-685256.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -869,18 +869,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "680531",
-   "title": "GeIL 32GB Kit (2x16GB) DDR5-4800 C40 SO-DIMM (Bulk Packaging)",
-   "brand": "GeIL",
-   "mpn": "GS532GB4800C40D",
-   "url": "https://www.ple.com.au/products/680531/geil-32gb-kit-2x16gb-ddr5-4800-c40-so-dimm-bulk-packaging",
-   "price": 399,
-   "wasPrice": 699,
-   "image": "https://plecom.imgix.net/iil-477876-680531.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "684771",
    "title": "GeIL 32GB Single (1x32GB) DDR5-4800 C40 SO-DIMM",
    "brand": "GeIL",
@@ -1136,7 +1124,7 @@
    "brand": "Kingston",
    "mpn": "KF560C36BBEK2-16",
    "url": "https://www.ple.com.au/products/658161/kingston-fury-beast-16gb-kit-2x8gb-ddr5-6000-c36",
-   "price": 634,
+   "price": 689,
    "image": "https://plecom.imgix.net/iil-335137-658161.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1361,7 +1349,7 @@
    "brand": "Kingston",
    "mpn": "KF560C36BBE2AK2-64",
    "url": "https://www.ple.com.au/products/677941/kingston-fury-beast-rgb-64gb-kit-2x32gb-ddr5-6000-c36",
-   "price": 2369,
+   "price": 2399,
    "wasPrice": 2659,
    "image": "https://plecom.imgix.net/iil-449410-677941.jpg?w=600&h=600",
    "inStock": false
@@ -1373,7 +1361,8 @@
    "brand": "Kingston",
    "mpn": "KF560C36BWEAK2-64",
    "url": "https://www.ple.com.au/products/660312/kingston-fury-beast-rgb-64gb-kit-2x32gb-expo-ddr5-6000-c36-white",
-   "price": 2509,
+   "price": 2499,
+   "wasPrice": 2509,
    "image": "https://plecom.imgix.net/iil-348237-660312.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1408,7 +1397,7 @@
    "url": "https://www.ple.com.au/products/658170/kingston-fury-impact-32gb-single-1x32gb-ddr5-5600-c40-so-dimm",
    "price": 1244,
    "image": "https://plecom.imgix.net/iil-330588-658170.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

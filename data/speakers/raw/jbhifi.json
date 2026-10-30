@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:38:27.657Z",
+ "scrapedAt": "2026-10-29T23:34:35.940Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -37,7 +37,7 @@
    "title": "Amazon Echo Dot (Glacier White) [2026]",
    "url": "https://www.jbhifi.com.au/products/amazon-echo-dot-glacier-white-2026",
    "price": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/915001-Product-1-I-639287457006990565.jpg?v=1793149085",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/915001-Product-0-I-639287458803031923.jpg?v=1793255705",
    "inStock": true,
    "brand": "Amazon"
   },
@@ -308,7 +308,7 @@
    "url": "https://www.jbhifi.com.au/products/audioengine-hd6-wireless-speakers-black",
    "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/495791-Product-0-I-637686209885577268.jpg?v=1632988258",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audioengine"
   },
   {
@@ -478,6 +478,16 @@
    "url": "https://www.jbhifi.com.au/products/bose-soundlink-max-portable-speaker-citrus-yellow",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/833206-Product-0-I-638929708207173513.jpg?v=1757374085",
+   "inStock": true,
+   "brand": "Bose"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "584215",
+   "title": "Bose SoundLink Micro Bluetooth Speaker (Stone Blue)",
+   "url": "https://www.jbhifi.com.au/products/bose-soundlink-micro-bluetooth-speaker-stone-blue",
+   "price": 99,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/584215-Product-0-I-637831882377415784.jpg?v=1728616877",
    "inStock": true,
    "brand": "Bose"
   },
@@ -764,7 +774,7 @@
    "price": 151.2,
    "wasPrice": 189,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904521-Product-0-I-639184686602247845.jpg?v=1782874867",
-   "inStock": false,
+   "inStock": true,
    "brand": "Edifier"
   },
   {
@@ -775,7 +785,7 @@
    "price": 151.2,
    "wasPrice": 189,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904522-Product-0-I-639184687201964104.jpg?v=1782874957",
-   "inStock": true,
+   "inStock": false,
    "brand": "Edifier"
   },
   {
@@ -1702,7 +1712,7 @@
    "url": "https://www.jbhifi.com.au/products/marshall-stockwell-iii-portable-bluetooth-speaker-black-brass",
    "price": 379,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904819-Product-0-I-639189828634035518.jpg?v=1783386305",
-   "inStock": false,
+   "inStock": true,
    "brand": "Marshall"
   },
   {
@@ -2556,6 +2566,46 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/992666-Product-0-I-638543453422345465.jpg?v=1719185596",
    "inStock": true,
    "brand": "Ultimate Ears"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10100833",
+   "title": "Uniden Looop Ichi Portable Bluetooth Speaker with Magnetic Base",
+   "url": "https://www.jbhifi.com.au/products/uniden-looop-ichi-portable-bluetooth-speaker-with-magnetic-base",
+   "price": 49,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/b649322008de447680acae364bab545e.jpg?v=1793231486",
+   "inStock": true,
+   "brand": "Uniden"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10100816",
+   "title": "Uniden Looop Ni 30W Portable Bluetooth Speaker",
+   "url": "https://www.jbhifi.com.au/products/uniden-looop-ni-30w-portable-bluetooth-speaker",
+   "price": 99,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/0724657d85ad4b529ba3c0321e6a7b76.jpg?v=1793231488",
+   "inStock": true,
+   "brand": "Uniden"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10100796",
+   "title": "Uniden Looop San 50W Portable Bluetooth Speaker",
+   "url": "https://www.jbhifi.com.au/products/uniden-looop-san-50w-portable-bluetooth-speaker",
+   "price": 149,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/d40ebff74302407580e11c9c93e631e2.jpg?v=1793231486",
+   "inStock": true,
+   "brand": "Uniden"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10100819",
+   "title": "Uniden Looop Yon 100W Portable Bluetooth Speaker",
+   "url": "https://www.jbhifi.com.au/products/uniden-looop-yon-100w-portable-bluetooth-speaker",
+   "price": 199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/82e0aa8487064776a7ffb88642e18873.jpg?v=1793231486",
+   "inStock": true,
+   "brand": "Uniden"
   }
  ]
 }

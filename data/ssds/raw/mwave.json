@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:21:21.643Z",
+ "scrapedAt": "2026-10-29T23:25:17.561Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -350,7 +350,7 @@
    "url": "https://www.mwave.com.au/products/biwin-m100-1tb-25-sata-iii-6-gbs-ssd-550500mbs-ac82908",
    "price": 211.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/biwin_m100_1tb_25_sata_iii_6_gbs_ssd_bm100nn01tbrgx_ac82908_27071.jpg?v=1787745033",
-   "inStock": true,
+   "inStock": false,
    "brand": "Biwin"
   },
   {
@@ -360,7 +360,7 @@
    "url": "https://www.mwave.com.au/products/biwin-m100-512gb-25-sata-iii-6-gbs-ssd-bm100nn512grgx-ac82904",
    "price": 125.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/biwin_m100_512gb_25_sata_iii_6_gbs_ssd_bm100nn512grgx_ac82904_99804.jpg?v=1787795688",
-   "inStock": true,
+   "inStock": false,
    "mpn": "BM100NN512G-RGX",
    "brand": "Biwin"
   },
@@ -703,7 +703,7 @@
    "url": "https://www.mwave.com.au/products/crucial-t710-4tb-pcie-gen5-nvme-2280-m2-ssd-with-heatsink-ac90602",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_t710_4tb_pcie_gen5_nvme_2280_m2_ssd_with_heatsink_ac90602_62409.jpg?v=1787796127",
-   "inStock": false,
+   "inStock": true,
    "brand": "Crucial"
   },
   {
@@ -1630,7 +1630,7 @@
    "sku": "179079",
    "title": "Samsung 870 Evo 1TB 2.5\" SATA III 6GB/s V-NAND SSD MZ-77E1T0BW",
    "url": "https://www.mwave.com.au/products/samsung-870-evo-1tb-25-sata-iii-6gbs-vnand-ssd-mz77e1t0bw-ac41599",
-   "price": 399,
+   "price": 576,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/1tb_ac41599.jpg?v=1787800703",
    "inStock": true,
    "mpn": "MZ-77E1T0BW",
@@ -1652,7 +1652,7 @@
    "sku": "AC41598",
    "title": "Samsung 870 Evo 500GB 2.5\" SATA III 6GB/s V-NAND SSD MZ-77E500BW",
    "url": "https://www.mwave.com.au/products/samsung-870-evo-500gb-25-sata-iii-6gbs-vnand-ssd-mz77e500bw-ac41598",
-   "price": 269,
+   "price": 409,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/500_ac41598.jpg?v=1787787013",
    "inStock": true,
    "mpn": "MZ-77E500BW",
@@ -1992,6 +1992,72 @@
   },
   {
    "retailer": "mwave",
+   "sku": "166661",
+   "title": "SanDisk Extreme Portable 1TB USB-C 3.2 External SSD - SDSSDE61-1T00-G25B - Sky Blue",
+   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-1tb-usbc-32-external-ssd-sdssde611t00g25b-sky-blue-ac79197",
+   "price": 339,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_1tb_usbc_32_external_ssd_sdssde611t00g25b_ac79197_5401.jpg?v=1787800742",
+   "inStock": true,
+   "mpn": "SDSSDE61-1T00-G25B",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "166662",
+   "title": "SanDisk Extreme Portable 1TB USB-C 3.2 External SSD - SDSSDE61-1T00-G25M - Monterey",
+   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-1tb-usbc-32-external-ssd-sdssde611t00g25m-monterey-ac79198",
+   "price": 399,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_1tb_usbc_32_external_ssd_sdssde611t00g25m_ac79198_52844.jpg?v=1787800737",
+   "inStock": true,
+   "mpn": "SDSSDE61-1T00-G25M",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "166663",
+   "title": "SanDisk Extreme Portable 2TB USB-C 3.2 External SSD - SDSSDE61-2T00-G25B - Sky Blue",
+   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-2tb-usbc-32-external-ssd-sdssde612t00g25b-sky-blue-ac79199",
+   "price": 499,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_2tb_usbc_32_external_ssd_sdssde612t00g25b_ac79199_99889.jpg?v=1787800741",
+   "inStock": false,
+   "mpn": "SDSSDE61-2T00-G25B",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "166664",
+   "title": "SanDisk Extreme Portable 2TB USB-C 3.2 External SSD - SDSSDE61-2T00-G25M - Monterey",
+   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-2tb-usbc-32-external-ssd-sdssde612t00g25m-monterey-ac79200",
+   "price": 729,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_2tb_usbc_32_external_ssd_sdssde612t00g25m_ac79200_2016.jpg?v=1787800740",
+   "inStock": true,
+   "mpn": "SDSSDE61-2T00-G25M",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "166665",
+   "title": "SanDisk Extreme Portable 4TB USB-C 3.2 External SSD - SDSSDE61-4T00-G25B - Sky Blue",
+   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-4tb-usbc-32-external-ssd-sdssde614t00g25b-sky-blue-ac79201",
+   "price": 1699,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_4tb_usbc_32_external_ssd_sdssde614t00g25b_sky_blue_ac79201_37171.jpg?v=1787789161",
+   "inStock": true,
+   "mpn": "SDSSDE61-4T00-G25B",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "166666",
+   "title": "SanDisk Extreme Portable 4TB USB-C 3.2 External SSD - SDSSDE61-4T00-G25M - Monterey",
+   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-4tb-usbc-32-external-ssd-sdssde614t00g25m-monterey-ac79202",
+   "price": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_4tb_usbc_32_external_ssd_sdssde614t00g25m_monterey_ac79202_27314.jpg?v=1787800740",
+   "inStock": false,
+   "mpn": "SDSSDE61-4T00-G25M",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC91676",
    "title": "SanDisk Extreme Portable 8TB External SSD - SDSSDE61-8T00-G25",
    "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-8tb-external-ssd-sdssde618t00g25-ac91676",
@@ -1999,66 +2065,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_8tb_external_ssd_sdssde618t00g25_ac91676_52391.jpg?v=1787798330",
    "inStock": true,
    "mpn": "SDSSDE61-8T00-G25",
-   "brand": "Sandisk"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "166662",
-   "title": "SanDisk Extreme Portable SSD 1TB USB 3.2 Gen 2 - Monterey",
-   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-1tb-usbc-32-external-ssd-sdssde611t00g25m-monterey-ac79198",
-   "price": 399,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_1tb_usbc_32_external_ssd_sdssde611t00g25m_ac79198_52844.jpg?v=1787800737",
-   "inStock": true,
-   "brand": "Sandisk"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "166661",
-   "title": "SanDisk Extreme Portable SSD 1TB USB 3.2 Gen 2 - Sky Blue",
-   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-1tb-usbc-32-external-ssd-sdssde611t00g25b-sky-blue-ac79197",
-   "price": 339,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_1tb_usbc_32_external_ssd_sdssde611t00g25b_ac79197_5401.jpg?v=1787800742",
-   "inStock": true,
-   "brand": "Sandisk"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "166664",
-   "title": "SanDisk Extreme Portable SSD 2TB USB 3.2 Gen 2 - Monterey",
-   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-2tb-usbc-32-external-ssd-sdssde612t00g25m-monterey-ac79200",
-   "price": 729,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_2tb_usbc_32_external_ssd_sdssde612t00g25m_ac79200_2016.jpg?v=1787800740",
-   "inStock": true,
-   "brand": "Sandisk"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "166663",
-   "title": "SanDisk Extreme Portable SSD 2TB USB 3.2 Gen 2 - Sky Blue",
-   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-2tb-usbc-32-external-ssd-sdssde612t00g25b-sky-blue-ac79199",
-   "price": 499,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_2tb_usbc_32_external_ssd_sdssde612t00g25b_ac79199_99889.jpg?v=1787800741",
-   "inStock": false,
-   "brand": "Sandisk"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "166666",
-   "title": "SanDisk Extreme Portable SSD 4TB USB 3.2 Gen 2 - Monterey",
-   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-4tb-usbc-32-external-ssd-sdssde614t00g25m-monterey-ac79202",
-   "price": 1999,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_4tb_usbc_32_external_ssd_sdssde614t00g25m_monterey_ac79202_27314.jpg?v=1787800740",
-   "inStock": false,
-   "brand": "Sandisk"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "166665",
-   "title": "SanDisk Extreme Portable SSD 4TB USB 3.2 Gen 2 - Sky Blue",
-   "url": "https://www.mwave.com.au/products/sandisk-extreme-portable-4tb-usbc-32-external-ssd-sdssde614t00g25b-sky-blue-ac79201",
-   "price": 1699,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_extreme_portable_4tb_usbc_32_external_ssd_sdssde614t00g25b_sky_blue_ac79201_37171.jpg?v=1787789161",
-   "inStock": true,
    "brand": "Sandisk"
   },
   {
@@ -2145,7 +2151,7 @@
    "url": "https://www.mwave.com.au/products/sandisk-optimus-gx-7100-2tb-pcie-40-nvme-ssd-sdsp71200tan-ac98433",
    "price": 799.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sandisk_optimus_gx_7100_2tb_pcie_40_nvme_ssd_sdsp71200tan_ac98433_10874.jpg?v=1787798336",
-   "inStock": false,
+   "inStock": true,
    "mpn": "SDSP71200TAN",
    "brand": "Sandisk"
   },
@@ -2405,7 +2411,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-128gb-pcie-30-nvme-m2-ssd-sz128gbp34a60m28au-ac93695",
    "price": 58,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_128gb_pcie_30_m2_nvme_ssd_ac93695_63954.jpg?v=1789457433",
-   "inStock": true,
+   "inStock": false,
    "mpn": "SZ128GBP34A60M28AU",
    "brand": "Silicon Power"
   },
@@ -2704,7 +2710,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-500gb-pcie-40-nvme-m2-2230-ssd-ac93744",
    "price": 194,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_500gb_pcie_40_nvme_m2_2230_ssd_ac93744_81675.jpg?v=1789457436",
-   "inStock": true,
+   "inStock": false,
    "brand": "Silicon Power"
   },
   {
@@ -2758,7 +2764,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-xs75-1tb-pcie-40-nvme-m2-ssd-w-heatsink-sz01kgbp44xs75s5au-ac93705",
    "price": 298,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_xs75_1tb_pcie_40_nvme_m2_ssd_w_heatsink_ps5_compatible_ac93705_83815.jpg?v=1789457450",
-   "inStock": true,
+   "inStock": false,
    "mpn": "SZ01KGBP44XS75S5AU",
    "brand": "Silicon Power"
   },

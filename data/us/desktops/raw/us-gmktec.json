@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:57:30.506Z",
+ "scrapedAt": "2026-10-30T00:01:12.685Z",
  "offers": [
   {
    "retailer": "us-gmktec",
@@ -495,7 +495,7 @@
    "url": "https://www.gmktec.com/products/intel-twin-lake-n150-dual-system-4-bay-nas-mini-pc-nucbox-g9?variant=67939508748442",
    "price": 229.99,
    "image": "https://cdn.shopify.com/s/files/1/0715/1314/5498/files/8149ac6457e26732cae69312e3d702df.webp?v=1784801505",
-   "inStock": true,
+   "inStock": false,
    "brand": "GMKtec",
    "mpn": "G9-11-50S"
   },
@@ -687,7 +687,7 @@
    "price": 699.99,
    "wasPrice": 799.99,
    "image": "https://cdn.shopify.com/s/files/1/0715/1314/5498/files/ba5bb54c3f567be1fb779fca54612caf.webp?v=1784801637",
-   "inStock": true,
+   "inStock": false,
    "brand": "GMKtec",
    "mpn": "K7 PLUS-0-44S"
   },
@@ -720,7 +720,7 @@
    "sku": "67985058889882",
    "title": "GMKtec K9 Intel® Ultra 5 125H Mini PC 32GB RAM + 1TB SSD US",
    "url": "https://www.gmktec.com/products/intel-ultra-5-125h-mini-pc-nucbox-k9?variant=67985058889882",
-   "price": 1179.99,
+   "price": 1079.99,
    "image": "https://cdn.shopify.com/s/files/1/0715/1314/5498/files/e232db7ec67043bd08dad07fe146759b.webp?v=1784801642",
    "inStock": true,
    "brand": "GMKtec",
@@ -926,6 +926,28 @@
    "inStock": true,
    "brand": "GMKtec",
    "mpn": "M8-5-34S"
+  },
+  {
+   "retailer": "us-gmktec",
+   "sku": "67991330619546",
+   "title": "GMKtec NucBox 2 Mini PC Intel® Core™ i5 8279U 16GB RAM+ 512GB SSD US",
+   "url": "https://www.gmktec.com/products/gmktec-nucbox-2-mini-pc-intel®-core™-i5-8279u?variant=67991330619546",
+   "price": 509.99,
+   "image": "https://cdn.shopify.com/s/files/1/0715/1314/5498/files/1_afa68cf2-dd3e-435b-99ae-6cde7ac61aaf.avif?v=1784801216",
+   "inStock": true,
+   "brand": "GMKtec",
+   "mpn": "9KB-0021-33S"
+  },
+  {
+   "retailer": "us-gmktec",
+   "sku": "67991330586778",
+   "title": "GMKtec NucBox 2 Mini PC Intel® Core™ i5 8279U 8GB RAM+ 256GB SSD US",
+   "url": "https://www.gmktec.com/products/gmktec-nucbox-2-mini-pc-intel®-core™-i5-8279u?variant=67991330586778",
+   "price": 409.99,
+   "image": "https://cdn.shopify.com/s/files/1/0715/1314/5498/files/1_afa68cf2-dd3e-435b-99ae-6cde7ac61aaf.avif?v=1784801216",
+   "inStock": true,
+   "brand": "GMKtec",
+   "mpn": "9KB-0021-22S"
   },
   {
    "retailer": "us-gmktec",

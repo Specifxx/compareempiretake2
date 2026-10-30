@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:21:33.457Z",
+ "scrapedAt": "2026-10-29T23:25:36.348Z",
  "offers": [
   {
    "retailer": "ple",
@@ -446,6 +446,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "669025",
+   "title": "Intel Core Ultra 5 245KF Arrow Lake 14 Core 14 Thread Up To 5.2GHz LGA1851 - No HSF/No iGPU Retail Box",
+   "brand": "Intel",
+   "mpn": "BX80768245KF",
+   "url": "https://www.ple.com.au/products/669025/intel-core-ultra-5-245kf-arrow-lake-14-core-14-thread-up-to-52ghz-lga1851-no-hsfno-igpu-retail-box",
+   "price": 339,
+   "wasPrice": 499,
+   "image": "https://plecom.imgix.net/iil-403979-669025.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "682752",
    "title": "Intel Core Ultra 5 250K Plus Arrow Lake Refresh 18 Core 18 Thread Up To 5.3GHz LGA1851 CPU - No HSF Retail Box",
    "brand": "Intel",
@@ -499,7 +511,7 @@
    "brand": "Intel",
    "mpn": "BX80768270K",
    "url": "https://www.ple.com.au/products/682753/intel-core-ultra-7-270k-plus-arrow-lake-refresh-24-core-24-thread-up-to-55ghz-lga1851-cpu-no-hsf-retail-box",
-   "price": 539,
+   "price": 499,
    "wasPrice": 579,
    "image": "https://plecom.imgix.net/iil-464472-682753.jpg?w=600&h=600",
    "inStock": true
@@ -514,18 +526,6 @@
    "price": 949,
    "wasPrice": 1099,
    "image": "https://plecom.imgix.net/iil-415670-671869.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "669021",
-   "title": "Intel Core Ultra 9 285K Arrow Lake 24 Core 24 Thread Up To 5.7GHz LGA1851 - No HSF Retail Box",
-   "brand": "Intel",
-   "mpn": "BX80768285K",
-   "url": "https://www.ple.com.au/products/669021/intel-core-ultra-9-285k-arrow-lake-24-core-24-thread-up-to-57ghz-lga1851-no-hsf-retail-box",
-   "price": 1019,
-   "wasPrice": 1099,
-   "image": "https://plecom.imgix.net/iil-403982-669021.jpg?w=600&h=600",
    "inStock": true
   }
  ]

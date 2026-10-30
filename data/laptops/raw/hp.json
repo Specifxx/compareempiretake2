@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:19:48.036Z",
+ "scrapedAt": "2026-10-29T23:23:47.489Z",
  "offers": [
   {
    "retailer": "hp",
@@ -76,7 +76,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-laptop-17-cn4002tu-d41r7pa.html",
    "price": 2299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08505287_2_4.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -890,7 +890,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-7-laptop-next-gen-ai-14-kh0020au-d78gppa.html",
    "price": 3899,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omn_1_10_7.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -1022,7 +1022,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-ultra-laptop-next-gen-ai-14-kd0114tu-e12cspa.html",
    "price": 7999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-ultra-14-ngai-grahami-eclipse-gray-front-touchicon_4.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -1044,7 +1044,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-ultra-laptop-next-gen-ai-14-kd0116tu-e12cxpa.html",
    "price": 5999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-ultra-14-ngai-grahami-eclipse-gray-front-touchicon_3.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -1668,7 +1668,7 @@
    "mpn": "C2EP3PT",
    "brand": "HP",
    "title": "HP ZBook Fury G1i 18 inch Mobile Workstation PC, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-zbook-fury-g1i-18-inch-mobile-workstation-pc-c2ep3pt-3.html",
+   "url": "https://www.hp.com/au-en/shop/hp-zbook-fury-g1i-18-inch-mobile-workstation-pc-c2ep3pt.html",
    "price": 10264,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbook-fury-g1i-18-inch-mobile-workstation-gemtree18-frontopen_3.png",
    "inStock": false
@@ -1682,7 +1682,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-zbook-power-16-inch-g11-a-mobile-workstation-pc-d9cl5pt.html",
    "price": 2599,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/z/b/zbook_power_1_2.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -1774,17 +1774,6 @@
   },
   {
    "retailer": "hp",
-   "sku": "D2KR4PA",
-   "mpn": "D2KR4PA",
-   "brand": "HP",
-   "title": "HyperX OMEN 15 inch Gaming Laptop PC 15-ga0023TX, Black",
-   "url": "https://www.hp.com/au-en/shop/hyperx-omen-15-inch-gaming-laptop-pc-15-ga0023tx-d2kr4pa.html",
-   "price": 3899,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/p/o/pocari1.png",
-   "inStock": false
-  },
-  {
-   "retailer": "hp",
    "sku": "D84VNPA",
    "mpn": "D84VNPA",
    "brand": "HP",
@@ -1815,28 +1804,6 @@
    "price": 4999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/k/h/khalilahhx-1.png",
    "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "DF6K6PA",
-   "mpn": "DF6K6PA",
-   "brand": "HP",
-   "title": "HyperX OMEN 16 \" VALORANT Edition Gaming Laptop - NVIDIA® GeForce RTX™ 5070",
-   "url": "https://www.hp.com/au-en/shop/hyperx-omen-16-inch-gaming-laptop-pc-16-ap1065ax-df6k6pa.html",
-   "price": 3199,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/k/h/khalilahhx-1_1.png",
-   "inStock": false
-  },
-  {
-   "retailer": "hp",
-   "sku": "D94FJPA",
-   "mpn": "D94FJPA",
-   "brand": "HP",
-   "title": "HyperX OMEN 16 inch Gaming Laptop PC 16-am2060TX, Black",
-   "url": "https://www.hp.com/au-en/shop/hyperx-omen-16-inch-gaming-laptop-pc-16-am2060tx-d94fjpa.html",
-   "price": 5299,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/a/hannahx1.png",
-   "inStock": false
   },
   {
    "retailer": "hp",

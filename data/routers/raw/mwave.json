@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-28T23:21:20.552Z",
+ "scrapedAt": "2026-10-29T23:25:16.360Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -92,7 +92,7 @@
    "url": "https://www.mwave.com.au/products/asus-rtbe86u-wifi-7-dualband-extendable-gaming-router-ac99373",
    "price": 518.74,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rtbe86u_wifi_7_dualband_extendable_gaming_router_ac99373_82474.jpg?v=1787784076",
-   "inStock": false,
+   "inStock": true,
    "mpn": "RT-BE86U",
    "brand": "Asus"
   },
@@ -1002,7 +1002,7 @@
    "url": "https://www.mwave.com.au/products/teltonika-rutx12-cat-6-dual-sim-4g-lte-router-with-wifi-ac47423",
    "price": 784.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/teltonika_rutx12_cat_6_dual_sim_4g_lte_router_with_wifi_ac47423.jpg?v=1787799085",
-   "inStock": true,
+   "inStock": false,
    "brand": "Teltonika"
   },
   {
@@ -1310,7 +1310,7 @@
    "sku": "AC86212",
    "title": "TP-Link Archer AXE75 AXE5400 Tri-Band Gigabit Wi-Fi 6E Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-axe75-axe5400-triband-gigabit-wifi-6e-router-ac86212",
-   "price": 275.35,
+   "price": 275.33,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_axe75_axe5400_triband_gigabit_wifi_6e_router_ac86212_81578.jpg?v=1787799315",
    "inStock": true,
    "brand": "TP-Link"
@@ -1560,7 +1560,7 @@
    "sku": "AC87127",
    "title": "TP-Link Deco BE22 BE3600 Whole Home Mesh Wi-Fi 7 System - 3 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-be22-be3600-whole-home-mesh-wifi-7-system-3-pack-ac87127",
-   "price": 499,
+   "price": 579,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_be22_be3600_whole_home_mesh_wifi_7_system_3_pack_ac87127_69387.jpg?v=1787748041",
    "inStock": true,
    "brand": "TP-Link"
@@ -1652,7 +1652,7 @@
    "url": "https://www.mwave.com.au/products/tplink-deco-be68-be14000-triband-whole-home-mesh-wifi-7-system-3-pack-ac90575",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_be68_be14000_triband_whole_home_mesh_wifi_7_system_3_pack_ac90575_26428.jpg?v=1787748049",
-   "inStock": false,
+   "inStock": true,
    "brand": "TP-Link"
   },
   {
@@ -2034,7 +2034,7 @@
    "sku": "AC42139",
    "title": "Ubiquiti AFi-ALN-R Amplifi Alien Dual-Band Gigabit WiFi 6 Mesh Router",
    "url": "https://www.mwave.com.au/products/ubiquiti-afialnr-amplifi-alien-dualband-gigabit-wifi-6-mesh-router-ac42139",
-   "price": 364.74,
+   "price": 664.4,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_amplifi_alien_triband_gigabit_wifi_6_mesh_router_ac42139_1.jpg?v=1787799483",
    "inStock": true,
    "brand": "Ubiquiti Networks"
@@ -2044,7 +2044,7 @@
    "sku": "AC46139",
    "title": "Ubiquiti Amplifi Alien Dual-Band Gigabit WiFi 6 Mesh Router & Mesh Point",
    "url": "https://www.mwave.com.au/products/ubiquiti-amplifi-alien-dualband-gigabit-wifi-6-mesh-router-mesh-point-ac46139",
-   "price": 526.84,
+   "price": 1200.11,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_amplifi_alien_triband_gigabit_wifi_6_mesh_router_mesh_point_ac46139.jpg?v=1787799493",
    "inStock": true,
    "brand": "Ubiquiti Networks"
@@ -2054,7 +2054,7 @@
    "sku": "AC74543",
    "title": "Ubiquiti Cloud Gateway Ultra",
    "url": "https://www.mwave.com.au/products/ubiquiti-cloud-gateway-ultra-ac74543",
-   "price": 191.89,
+   "price": 189,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_cloud_gateway_ultra_ac74543_59186.jpg?v=1787748146",
    "inStock": true,
    "brand": "Ubiquiti Networks"
@@ -2064,7 +2064,7 @@
    "sku": "AC72023",
    "title": "Ubiquiti Gateway Lite",
    "url": "https://www.mwave.com.au/products/ubiquiti-gateway-lite-ac72023",
-   "price": 91.47,
+   "price": 86.91,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_gateway_lite_ac72023_15943.jpg?v=1787799501",
    "inStock": true,
    "brand": "Ubiquiti Networks"
@@ -2094,7 +2094,7 @@
    "sku": "AC81194",
    "title": "Ubiquiti Networks Ultra-Compact Managed LTE Mobile Router",
    "url": "https://www.mwave.com.au/products/ubiquiti-networks-ultracompact-managed-lte-mobile-router-ac81194",
-   "price": 173.68,
+   "price": 169,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_networks_ultracompact_managed_lte_mobile_router_ac81194_69417.jpg?v=1787748191",
    "inStock": true,
    "brand": "Ubiquiti Networks"
@@ -2116,7 +2116,7 @@
    "url": "https://www.mwave.com.au/products/ubiquiti-networks-uxgpro-nextgeneration-gateway-pro-1u-security-gateway-ac53841",
    "price": 909,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_networks_uxgpro_nextgeneration_gateway_pro_1u_security_gateway_ac53841.jpg?v=1787799572",
-   "inStock": false,
+   "inStock": true,
    "brand": "Ubiquiti Networks"
   },
   {
@@ -2144,7 +2144,7 @@
    "sku": "AC78004",
    "title": "Ubiquiti UniFi Cloud Gateway Max 2.5GbE 5-Port Gateway with On-board 512GB SSD",
    "url": "https://www.mwave.com.au/products/ubiquiti-unifi-cloud-gateway-max-25gbe-5port-gateway-with-onboard-512gb-ssd-ac78004",
-   "price": 518.16,
+   "price": 511.51,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_unifi_cloud_gateway_max_25gbe_5port_gateway_with_onboard_512gb_ssd_ac78004_15641.jpg?v=1787799584",
    "inStock": true,
    "brand": "Ubiquiti Networks"
@@ -2154,7 +2154,7 @@
    "sku": "AC98416",
    "title": "Ubiquiti UniFi Dream Machine Beast Hyperscale-class Cloud Gateway w/ 2 NVR Drive Bays",
    "url": "https://www.mwave.com.au/products/ubiquiti-unifi-dream-machine-beast-hyperscaleclass-cloud-gateway-w-2-nvr-drive-bays-ac98416",
-   "price": 3054.53,
+   "price": 2939,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_unifi_dream_machine_beast_hyperscaleclass_cloud_gateway_w_2_nvr_drive_bays_ac98416_69421.jpg?v=1787799591",
    "inStock": true,
    "brand": "Ubiquiti Networks"
@@ -2164,7 +2164,7 @@
    "sku": "AC74571",
    "title": "Ubiquiti UniFi Dream Machine Pro Max Cloud Gateway with 2x NVR Drive Bays",
    "url": "https://www.mwave.com.au/products/ubiquiti-unifi-dream-machine-pro-max-cloud-gateway-with-2x-nvr-drive-bays-ac74571",
-   "price": 1188.77,
+   "price": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_unifi_dream_machine_pro_max_cloud_gateway_with_2x_nvr_drive_bays_ac74571_87151.jpg?v=1787799590",
    "inStock": true,
    "brand": "Ubiquiti Networks"
@@ -2174,7 +2174,7 @@
    "sku": "AC96934",
    "title": "Ubiquiti UniFi Dream Router 5G Max",
    "url": "https://www.mwave.com.au/products/ubiquiti-unifi-dream-router-5g-max-ac96934",
-   "price": 983.05,
+   "price": 898,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_unifi_dream_router_5g_max_ac96934_15672.jpg?v=1787748224",
    "inStock": false,
    "brand": "Ubiquiti Networks"
@@ -2184,7 +2184,7 @@
    "sku": "AC82988",
    "title": "Ubiquiti UniFi Dream Router 7",
    "url": "https://www.mwave.com.au/products/ubiquiti-unifi-dream-router-7-ac82988",
-   "price": 539.92,
+   "price": 517,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_unifi_dream_router_7_ac82988_43431.jpg?v=1787799590",
    "inStock": true,
    "brand": "Ubiquiti Networks"
@@ -2194,7 +2194,7 @@
    "sku": "AC82989",
    "title": "Ubiquiti UniFi Gateway Fiber",
    "url": "https://www.mwave.com.au/products/ubiquiti-unifi-gateway-fiber-ac82989",
-   "price": 474.74,
+   "price": 459,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_unifi_gateway_fiber_ac82989_2973.jpg?v=1787748224",
    "inStock": true,
    "brand": "Ubiquiti Networks"
