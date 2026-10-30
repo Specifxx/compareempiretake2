@@ -10,7 +10,7 @@
  */
 import { CONTACT_EMAIL } from "./site";
 
-export interface Mail { to: string; subject: string; html: string; text: string; headers?: Record<string, string> }
+export interface Mail { to: string; subject: string; html: string; text: string; headers?: Record<string, string>; replyTo?: string }
 
 export const emailConfigured = () => Boolean((process.env.BREVO_API_KEY || process.env.RESEND_API_KEY) && process.env.EMAIL_FROM);
 
@@ -21,7 +21,7 @@ function parseFrom(from: string) {
 
 export async function sendMail(mail: Mail): Promise<boolean> {
   const from = process.env.EMAIL_FROM;
-  const replyTo = process.env.REPLY_TO_EMAIL || CONTACT_EMAIL;
+  const replyTo = mail.replyTo || process.env.REPLY_TO_EMAIL || CONTACT_EMAIL;
   if (!from) return false;
   try {
     let res: Response;
