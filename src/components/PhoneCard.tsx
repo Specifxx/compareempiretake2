@@ -8,7 +8,15 @@ import { money } from "@/lib/region";
 export function PhoneCard({ p, priority, showCategory }: { p: CardItem; priority?: boolean; showCategory?: boolean }) {
   const pct = p.saving > 0 ? Math.round((p.saving / (p.bestPrice + p.saving)) * 100) : 0;
   return (
-    <Link href={p.href} prefetch={false} className="card group relative flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift">
+    <Link
+      href={p.href}
+      prefetch={false}
+      // A plain click opens the quick view (QuickView.tsx); the link itself stays for crawlers and new tabs.
+      data-qv={p.href}
+      data-qv-name={p.model}
+      data-qv-brand={p.brand}
+      data-qv-img={p.image || undefined}
+      className="card group relative flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift">
       <div className="img-tile relative aspect-square">
         {p.image ? (
           <img
