@@ -3,7 +3,7 @@ import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { marketplacesFor } from "@/lib/marketplaces";
-import { AmazonRow } from "./AmazonLink";
+import { AmazonNote, AmazonRow } from "./AmazonLink";
 import { EbayListingRow, EbaySearchRow } from "./EbayListingRow";
 import { withRegion } from "@/lib/region";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
@@ -84,7 +84,7 @@ export function PhoneOffers({
   };
 
   return (
-    <div className="grid gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12">
       <div className="lg:sticky lg:top-24 lg:self-start">
         <div className="img-tile relative aspect-square overflow-hidden rounded-3xl border border-line">
           {images[img] && <img src={images[img]} alt={phone.name} className="product-img absolute inset-0 h-full w-full object-contain p-10" />}
@@ -189,16 +189,9 @@ export function PhoneOffers({
             )}
             <span className="text-xs text-ink-mute">{tab === "outright" ? "Cheapest in-stock first" : "Lowest monthly repayment first"}</span>
           </div>
+          <PinnedMarketplaces phone={phone} variantQuery={mq} product={href} cheapest={best?.price} />
           {tab === "outright" ? (
           <>
-          {/* eBay is pinned above the stores (owner, 2026-10-30), labelled as an ad; the stores below keep their price order and the Cheapest badge. */}
-          <div className="mb-2.5">
-            {phone.ebay ? (
-              <EbayListingRow listing={phone.ebay} product={href} money={$} cheapest={best?.price} locale={R.locale} timeZone={R.timeZone} />
-            ) : (
-              <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `p-${phone.category}-${phone.slug}-pinned`, phones: phone.category === "phones", region })} product={href} adjective={R.adjective} />
-            )}
-          </div>
           <ol className="space-y-2.5">
             {rows.map(({ best: o, colours: cs }, i) => (
               <li key={o.retailer}>
@@ -242,11 +235,6 @@ export function PhoneOffers({
               </li>
             ))}
           </ol>
-          {region === "au" && (
-            <div className="mt-2.5">
-              <AmazonRow query={mq} product={href} placement="product" />
-            </div>
-          )}
           {Object.values(checks[variant.id]?.was ?? {}).length > 0 && (
             <div className="mt-4 rounded-2xl bg-bg-sunk p-4">
               <div className="text-sm font-semibold">Are these &ldquo;was&rdquo; prices real?</div>
@@ -289,36 +277,6 @@ export function PhoneOffers({
           </p>
           </>
           )}
-          <div className="mt-4 rounded-2xl border border-dashed border-line p-4">
-            <div className="text-sm font-semibold">Also check the marketplaces</div>
-            <p className="mt-0.5 text-xs text-ink-mute">Sometimes cheaper, but listings mix sellers and warranties, so we link to a search rather than rank them.</p>
-            <div className="mt-3 grid gap-2 sm:grid-cols-2">
-              {marketplacesFor(region).filter((m) => !(region === "au" && m.id === "amazon")).map((m) => (
-                <a key={m.id} data-buy={m.id} data-buy-product={href} data-buy-kind="marketplace-new" href={m.url(mq, `p-${phone.category}-${phone.slug}`, phone.category === "phones")} target="_blank" rel="noopener nofollow sponsored" className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
-                  <span>
-                    <span className="font-semibold">Search {m.name}</span>
-                    <span className="block text-[11px] text-ink-mute">{m.note}</span>
-                  </span>
-                  <ExternalIcon className="h-4 w-4 text-ink-mute" />
-                </a>
-              ))}
-              <a data-buy="ebay" data-buy-product={href} data-buy-kind="marketplace-refurbished" href={ebaySearch(mq, { condition: "refurbished", customid: `p-${phone.category}-${phone.slug}-refurb`, phones: phone.category === "phones", region })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
-                <span>
-                  <span className="font-semibold">Refurbished on eBay</span>
-                  <span className="block text-[11px] text-ink-mute">Often far cheaper; check the warranty</span>
-                </span>
-                <ExternalIcon className="h-4 w-4 text-ink-mute" />
-              </a>
-              <a data-buy="ebay" data-buy-product={href} data-buy-kind="marketplace-used" href={ebaySearch(mq, { condition: "used", customid: `p-${phone.category}-${phone.slug}-used`, phones: phone.category === "phones", region })} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between rounded-xl bg-bg-sunk px-3 py-2.5 text-sm transition hover:bg-brand-soft">
-                <span>
-                  <span className="font-semibold">Used on eBay</span>
-                  <span className="block text-[11px] text-ink-mute">The cheapest way in, from {R.adjective} sellers</span>
-                </span>
-                <ExternalIcon className="h-4 w-4 text-ink-mute" />
-              </a>
-            </div>
-            <p className="mt-2 text-[11px] text-ink-mute">Marketplace links are affiliate links: we may earn a commission, and it never changes the store rankings above. <Link href="/disclosure" className="underline">Learn more</Link></p>
-          </div>
           <p className="mt-3 text-xs text-ink-mute">
             Prices include GST and are checked daily. Delivery and in-store availability vary — confirm on the retailer&apos;s site.
           </p>
@@ -334,6 +292,55 @@ export function PhoneOffers({
           <h2 className="mb-3 font-display text-xl font-bold">Price history{vLabel ? ` · ${vLabel}` : ""}</h2>
           <div className="card p-5">{chart[variant.id]}</div>
         </div>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Amazon and eBay, pinned above the store rows on every product page (owner, 2026-10-30: "the very, very
+ * top", always shown, bright, shaped like the price rows). Amazon takes the first position and eBay the
+ * second (today's cheapest listing when we have one, else a search); the marketplace searches follow.
+ * None is ranked among the stores, counted as one or given the "Cheapest" badge.
+ */
+function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest }: { phone: Phone; variantQuery: string; product: string; cheapest?: number }) {
+  const { $, R, region } = useRegionKit();
+  const markets = marketplacesFor(region);
+  const amazon = markets.find((m) => m.id === "amazon")!;
+  const ebay = markets.find((m) => m.id === "ebay")!;
+  const cid = `p-${phone.category}-${phone.slug}`;
+  const phones = phone.category === "phones";
+  const more = [
+    ...(phone.ebay ? [{ kind: "marketplace-new", href: ebay.url(mq, cid, phones), title: `New on ${ebay.name}`, note: "Every new listing, not just the cheapest" }] : []),
+    { kind: "marketplace-refurbished", href: ebaySearch(mq, { condition: "refurbished", customid: `${cid}-refurb`, phones, region }), title: "Refurbished on eBay", note: "Often far cheaper; check the warranty" },
+    { kind: "marketplace-used", href: ebaySearch(mq, { condition: "used", customid: `${cid}-used`, phones, region }), title: "Used on eBay", note: `The cheapest way in, from ${R.adjective} sellers` },
+  ];
+  return (
+    <div className="mb-2.5 space-y-2.5" aria-label="Amazon and eBay">
+      <AmazonRow query={mq} product={product} placement="product" href={region === "au" ? undefined : amazon.url(mq)} name={amazon.name} />
+      {phone.ebay ? (
+        <EbayListingRow listing={phone.ebay} product={product} money={$} cheapest={cheapest} locale={R.locale} timeZone={R.timeZone} />
+      ) : (
+        <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} adjective={R.adjective} />
+      )}
+      <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
+        <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
+        <div className="mt-2 grid gap-2 sm:grid-cols-3">
+          {more.map((m) => (
+            <a key={m.kind} data-buy="ebay" data-buy-product={product} data-buy-kind={m.kind} href={m.href} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between gap-2 rounded-xl border border-brand/30 bg-bg-card px-3 py-2.5 text-sm transition hover:border-brand">
+              <span className="min-w-0">
+                <span className="font-semibold text-brand">{m.title}</span>
+                <span className="block text-[11px] text-ink-soft">{m.note}</span>
+              </span>
+              <ExternalIcon className="h-4 w-4 shrink-0 text-brand" />
+            </a>
+          ))}
+        </div>
+        <p className="mt-2 text-[11px] text-ink-soft">
+          Amazon and eBay links are ads and affiliate links: we may earn a commission, and they never change the store rankings below.{" "}
+          <Link href="/disclosure" className="underline">Learn more</Link>
+        </p>
+        {region === "au" && <AmazonNote className="mt-1" />}
       </div>
     </div>
   );
