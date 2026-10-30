@@ -6,6 +6,7 @@ import { CATEGORIES } from "./categories";
 import { storageLabel } from "./normalize";
 import { priceCheck, wasCheck, type PriceCheck, type WasCheck } from "./price-check";
 import { RETAILERS } from "./retailers";
+import { ebayAffiliate } from "./ebay";
 import { dataPath, money, REGION_IDS, REGIONS, withRegion, type RegionId } from "./region";
 import type { Catalog, CategoryId, Offer, Phone, Retailer, RetailerId, StoreSeries, Variant } from "./types";
 
@@ -36,7 +37,12 @@ function data(region: RegionId): RegionData {
   }
   // eBay listings from the daily Browse API job (scripts/ebay-prices.ts), keyed "<category>/<slug>".
   const ebay = read<{ listings: Record<string, NonNullable<Phone["ebay"]>> }>(path.join(process.cwd(), dataPath(region), "ebay.json"), { listings: {} }).listings;
-  for (const l of loaded.values()) for (const p of l.catalog.phones) p.ebay = ebay[`${p.category}/${p.slug}`];
+  // Re-tagged here so a listing stored under an older campaign or customid still earns on today's (ce-…).
+  for (const l of loaded.values())
+    for (const p of l.catalog.phones) {
+      const e = ebay[`${p.category}/${p.slug}`];
+      p.ebay = e && { ...e, url: ebayAffiliate(e.url, `p-${p.category}-${p.slug}-listing`, region) };
+    }
   const all = [...loaded.values()].flatMap((l) => l.catalog.phones);
   d = { loaded, all, bySlug: new Map(all.map((p) => [`${p.category}/${p.slug}`, p])), updated: [...loaded.values()].map((l) => l.catalog.updatedAt).sort().at(-1) ?? new Date().toISOString() };
   regions.set(region, d);

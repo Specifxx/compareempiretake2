@@ -404,3 +404,13 @@ rather than black. So the price table now opens with, in this order and on both 
 
 They keep the store rows' card shape so the table reads as one list, and each is labelled "Ad". The stores
 below keep their price order, the "Cheapest" badge and the best price; nothing pinned is counted as a store.
+
+## 2026-10-30: One eBay campaign for every Compare site, hard-coded
+
+**Decided (owner).** Every Compare site now sends eBay clicks to ONE EPN campaign, 5339155912 (RiftCompare's,
+already set up), hard-coded in the code: no variable overrides it any more, so a forgotten secret or Vercel
+value can't split the sites again. The sites are told apart by the `customid` prefix alone, which comes first
+in every tag; this site's is `ce-`. Every Compare Empire customid now starts with `ce-` (`ebayCustomId`), stored listings are re-tagged on load, and the eBay job's reference id is `ce-<region>-<category>`. Reverses the move to 5339155911 earlier the same day.
+Replaced: 5339155911 (WargameCompare, FigureCompare, Compare Empire, K Young), 5339231473 (Lorcana),
+5339231474 (Gundam), 5339234013 (YGO). Old secrets/variables (`EBAY_AFFILIATE_CAMPAIGN`,
+`NEXT_PUBLIC_EBAY_CAMPAIGN_ID`, `EBAY_CAMPAIGN_ID`) are no longer read and can be deleted.
