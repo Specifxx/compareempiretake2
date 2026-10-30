@@ -19,17 +19,20 @@ export interface Guide {
   /** Which shelf of /guides it sits on (GUIDE_SECTIONS). */
   section: GuideSectionId;
   tags: string[];
+  /** Leads the home page and /guides among guides of the same date. */
+  featured?: boolean;
   /** Phone slug whose photo heads the guide. */
   hero?: string;
   readingMinutes: number;
   body: string;
 }
 
-export type GuideSectionId = "best" | "compare" | "stores" | "how-to" | "save";
+export type GuideSectionId = "best" | "opinion" | "compare" | "stores" | "how-to" | "save";
 
 /** The shelves of /guides, in order. Every guide names one in its front matter (`section:`). */
 export const GUIDE_SECTIONS: { id: GuideSectionId; name: string; blurb: string }[] = [
   { id: "best", name: "Best picks", blurb: "What to buy at every budget, ranked from today's prices." },
+  { id: "opinion", name: "Our take", blurb: "Opinion on the year's big launches, with the Australian prices that decide them." },
   { id: "compare", name: "Head to head", blurb: "Two or three products side by side, with each store's price." },
   { id: "stores", name: "Where to buy", blurb: "Which Australian stores are cheapest, worked out from every price we check." },
   { id: "how-to", name: "Buying guides", blurb: "The specs that matter, the ones that don't, and what to pay." },
@@ -91,6 +94,7 @@ function parse(file: string): Guide {
     section: meta.section,
     tags: meta.tags ? meta.tags.split(",").map((t) => t.trim()) : [],
     hero: meta.hero,
+    featured: meta.featured === "true",
     // Each live block (a table, a pick, a grid) reads like ~60 words.
     readingMinutes: Math.max(2, Math.round((body.replace(/^\[\[[^\]]+\]\]$/gm, "").split(/\s+/).length + 60 * (body.match(/^\[\[/gm)?.length ?? 0)) / 220)),
     body,
@@ -102,7 +106,8 @@ export function getGuides(): Guide[] {
   cache ??= readdirSync(DIR)
     .filter((f) => f.endsWith(".md"))
     .map(parse)
-    .sort((a, b) => b.date.localeCompare(a.date));
+    // Newest first; on the same day, a guide marked `featured: true` leads (the home page's big card).
+    .sort((a, b) => b.date.localeCompare(a.date) || Number(!!b.featured) - Number(!!a.featured));
   return cache;
 }
 

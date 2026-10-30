@@ -69,7 +69,7 @@ function extractSpecs(model: string, texts: string[]): Specs {
     mainCameraMp: camera && camera <= 200 ? camera : undefined,
     chip: chip?.replace(/[ ®]+/g, " ").trim(),
     network: has4g && !has5g ? "4G" : "5G",
-    foldable: /\b(fold|flip|razr|magic v)/i.test(model),
+    foldable: /\b(fold|flip|razr|magic v|iphone duo)/i.test(model),
     esimOnly: /esim only/i.test(all) || undefined,
   };
 }

@@ -15,7 +15,7 @@ const guides = files.map((f) => {
 });
 
 test("every guide has front matter, a known section and its own title", () => {
-  const sections = ["best", "compare", "stores", "how-to", "save"];
+  const sections = ["best", "opinion", "compare", "stores", "how-to", "save"];
   for (const g of guides) {
     for (const k of ["title", "description", "date", "section"]) assert.ok(g.meta[k], `${g.slug}: missing ${k}`);
     assert.ok(sections.includes(g.meta.section), `${g.slug}: section ${g.meta.section}`);
