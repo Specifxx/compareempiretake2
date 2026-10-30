@@ -76,3 +76,24 @@ test("pack counts and component codes don't merge different products", () => {
 test("wired and wireless headsets are different products", () => {
   assert.notEqual(key("HyperX Cloud Alpha Gaming Headset", "headphones"), key("HyperX Cloud Alpha Wireless Gaming Headset", "headphones"));
 });
+
+test("appliances match on the maker's model code, and each colour code is its own product", () => {
+  assert.equal(
+    key("Breville the Barista Express Espresso Machine BES870BSS", "coffee-machines"),
+    key("Breville Barista Express Coffee Machine - Brushed Stainless Steel", "coffee-machines", { mpn: "BES870BSS" }),
+  );
+  assert.notEqual(key("Breville the Barista Express BES870BSS", "coffee-machines"), key("Breville the Barista Express BES870BTR", "coffee-machines"));
+  assert.equal(key("LG 635L French Door Fridge GF-L700MBL", "fridges"), key("LG 635L French Door Refrigerator", "fridges", { mpn: "GFL700MBL" }));
+  assert.equal(key("Fisher & Paykel 9kg Front Load Washer WH9060P4", "washing-machines"), key("Fisher & Paykel WH9060P4 9kg Front Loader Washing Machine", "washing-machines"));
+  // Capacities and wattages are never the model code.
+  assert.equal(p("Ninja Foodi MAX Dual Zone Air Fryer 9.5L AF400", "air-fryers")?.code, "AF400");
+  assert.equal(p("Westinghouse 1800W 524L Bottom Mount Fridge WBE5304SC", "fridges")?.code, "WBE5304SC");
+});
+
+test("appliance accessories are not appliances", () => {
+  assert.equal(p("Nespresso Vertuo Capsules Variety Pack", "coffee-machines"), null);
+  assert.equal(p("Dishwasher Tablets 60 pack", "dishwashers"), null);
+  assert.equal(p("LG Washer Dryer Stacking Kit", "washing-machines"), null);
+  assert.equal(p("Samsung Fridge Water Filter HAF-QIN", "fridges"), null);
+  assert.ok(p("Dyson V15 Detect Absolute Cordless Vacuum", "vacuums"));
+});

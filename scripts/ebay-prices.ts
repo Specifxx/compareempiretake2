@@ -42,6 +42,8 @@ const CATEGORY_WEIGHT: Partial<Record<CategoryId, number>> = {
   phones: 1.6, consoles: 1.6, "graphics-cards": 1.5, headphones: 1.4, tablets: 1.3, smartwatches: 1.3, cameras: 1.3,
   drones: 1.3, laptops: 1.2, cpus: 1.2, ssds: 1.1, ram: 1.1, tvs: 1.0, monitors: 1.0, speakers: 1.0, soundbars: 0.9,
   "robot-vacuums": 0.9, motherboards: 0.9, routers: 0.8, desktops: 0.7, printers: 0.6,
+  // Appliances: eBay sells small ones new; big whitegoods are mostly pick-up or second-hand there.
+  vacuums: 1.0, "coffee-machines": 1.0, "air-fryers": 0.8, fridges: 0.3, "washing-machines": 0.3, dishwashers: 0.3,
 };
 const REGION_WEIGHT: Record<RegionId, number> = { au: 1.0, us: 1.25, uk: 0.9 };
 /** Words that mark a listing as something other than the product itself. */

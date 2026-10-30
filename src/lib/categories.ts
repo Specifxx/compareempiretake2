@@ -18,7 +18,7 @@ export interface Category {
   blurb: string;
 }
 
-export type DepartmentId = "phones-wearables" | "computers" | "pc-parts" | "tv-audio" | "gaming" | "cameras" | "home";
+export type DepartmentId = "phones-wearables" | "computers" | "pc-parts" | "tv-audio" | "gaming" | "cameras" | "home" | "kitchen" | "whitegoods";
 
 export const DEPARTMENTS: { id: DepartmentId; name: string }[] = [
   { id: "phones-wearables", name: "Phones & Wearables" },
@@ -27,7 +27,9 @@ export const DEPARTMENTS: { id: DepartmentId; name: string }[] = [
   { id: "tv-audio", name: "TV & Audio" },
   { id: "gaming", name: "Gaming" },
   { id: "cameras", name: "Cameras & Drones" },
-  { id: "home", name: "Smart Home" },
+  { id: "home", name: "Vacuums & Cleaning" },
+  { id: "kitchen", name: "Kitchen" },
+  { id: "whitegoods", name: "Fridges & Laundry" },
 ];
 
 const c = (id: CategoryId, name: string, noun: string, emoji: string, department: DepartmentId, blurb: string): Category => ({
@@ -63,6 +65,12 @@ export const CATEGORIES: Category[] = [
   c("cameras", "Cameras", "camera", "📷", "cameras", "Mirrorless, compact and action cameras — body only and kits kept apart."),
   c("drones", "Drones", "drone", "🚁", "cameras", "DJI and more, with combos and controllers kept apart."),
   c("robot-vacuums", "Robot Vacuums", "robot vacuum", "🤖", "home", "Robot vacuums and mops, matched by model."),
+  c("vacuums", "Stick & Cordless Vacuums", "vacuum", "🧹", "home", "Dyson, Shark, Samsung and more: stick, handheld and barrel vacuums, matched by model."),
+  c("air-fryers", "Air Fryers", "air fryer", "🍟", "kitchen", "Ninja, Philips, Breville and more, single and dual-zone, matched by model code."),
+  c("coffee-machines", "Coffee Machines", "coffee machine", "☕", "kitchen", "Espresso, bean-to-cup and pod machines, matched by model code so each colour is its own product."),
+  c("fridges", "Fridges & Freezers", "fridge", "🧊", "whitegoods", "French door, side by side, top and bottom mount fridges and freezers, matched by model code."),
+  c("washing-machines", "Washing Machines & Dryers", "washing machine", "🫧", "whitegoods", "Front and top loaders, dryers and washer-dryers, matched by model code."),
+  c("dishwashers", "Dishwashers", "dishwasher", "🍽️", "whitegoods", "Freestanding, built-in and integrated dishwashers, matched by model code."),
 ];
 
 /** Shown in the header's category bar; everything else is one click away in "All categories". */

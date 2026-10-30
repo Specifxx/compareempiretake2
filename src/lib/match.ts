@@ -46,6 +46,14 @@ const BRANDS: Record<string, string> = Object.fromEntries(
     "Western Digital", "Seagate", "SanDisk", "Lexar", "TeamGroup", "Team", "G.Skill", "ADATA", "XPG", "Patriot", "Klevv",
     "Yamaha", "Denon", "Polk", "Klipsch", "Harman Kardon", "Soundcore", "Anker", "Logitech", "Shokz", "Bowers & Wilkins",
     "Edifier", "Creative", "SteelSeries", "HyperX", "Turtle Beach", "Fiio", "Moondrop", "Withings", "Oura", "Whoop",
+    // Appliances
+    "Dyson", "Shark", "Ninja", "Breville", "De'Longhi", "Delonghi", "Nespresso", "Jura", "Sunbeam", "Kambrook", "Russell Hobbs",
+    "Tefal", "Kenwood", "KitchenAid", "Smeg", "Philips", "Instant", "Cuisinart", "Morphy Richards", "Tineco", "Vax", "Hoover",
+    "Bissell", "Miele", "Bosch", "Electrolux", "AEG", "Fisher & Paykel", "Haier", "Beko", "Midea", "Whirlpool", "Kelvinator",
+    "Simpson", "Chiq", "Euromaid", "Asko", "Westinghouse", "Mitsubishi Electric", "Hitachi", "Siemens", "Neff", "Liebherr",
+    "Gaggia", "Rancilio", "Lelit", "Sage", "Lavazza", "Melitta", "Krups", "Rommelsbacher", "Kogan", "Heller", "Devanti",
+    "Omega", "Inalto", "Artusi", "Solt", "Teka", "Stirling", "Vitamix", "Nutribullet", "Black+Decker", "Black & Decker", "Ryobi",
+    "Makita", "Karcher", "Kärcher", "Wertheim", "Swan", "Lenoxx", "Healthy Choice", "Salter", "Cosori", "Crofton", "Anko",
   ].map((b) => [b.toLowerCase(), b]),
 );
 BRANDS.viewsonic = "ViewSonic";
@@ -54,6 +62,12 @@ BRANDS["western digital"] = "WD";
 BRANDS.wd_black = "WD";
 BRANDS.team = "TeamGroup";
 BRANDS.olympus = "OM System";
+BRANDS.delonghi = "De'Longhi";
+BRANDS["de'longhi"] = "De'Longhi";
+BRANDS["fisher&paykel"] = "Fisher & Paykel";
+BRANDS["fisher and paykel"] = "Fisher & Paykel";
+BRANDS["black & decker"] = "Black+Decker";
+BRANDS.kärcher = "Karcher";
 
 /** Sub-brands that imply the maker. */
 const IMPLIED: [RegExp, string][] = [
@@ -100,7 +114,7 @@ function brandOf(o: RawOffer, title: string): string | undefined {
   const fromStore = o.brand?.trim().toLowerCase();
   if (fromStore && BRANDS[fromStore]) return BRANDS[fromStore];
   const words = title.toLowerCase().split(/\s+/);
-  for (const n of [2, 1]) {
+  for (const n of [3, 2, 1]) {
     const w = words.slice(0, n).join(" ");
     if (BRANDS[w]) return BRANDS[w];
   }
