@@ -1,8 +1,10 @@
 import { ensureSchema } from "@/lib/db";
+import { notifyInbox } from "@/lib/email";
 import { clip, ipHash, isEmail, json } from "@/lib/server-utils";
 
 export const dynamic = "force-dynamic";
 const KINDS = ["bug", "idea", "wrong-price", "store", "other"];
+const INBOX_EMAILS_PER_DAY = 25;
 
 export async function POST(req: Request) {
   const sql = await ensureSchema();
@@ -18,7 +20,17 @@ export async function POST(req: Request) {
   const [{ n }] = (await sql`SELECT count(*)::int AS n FROM feedback WHERE ip_hash = ${ip} AND created_at > now() - interval '1 hour'`) as { n: number }[];
   if (n >= 10) return json({ ok: false, error: "That's a lot of feedback — please try again in a bit." }, 429);
   await sql`INSERT INTO feedback (kind, message, email, page, ip_hash) VALUES (${kind}, ${message}, ${email}, ${page}, ${ip})`;
-  // No email per item (owner, 2026-10-27: "stop sending me emails for every single
-  // feedback … and every single rating"). It waits in /admin, which counts what is open.
+  // Emailed to the site inbox, Reply-To the visitor (owner, 2026-10-30: "any feedback
+  // feeds into the respective emails"); not to the owner's personal address, and
+  // ratings and reviews still send nothing. At most INBOX_EMAILS_PER_DAY a day, so a
+  // flood cannot spend the mail allowance; the rest wait in /admin. Never fails the save.
+  try {
+    const [{ today }] = (await sql`SELECT count(*)::int AS today FROM feedback WHERE created_at > now() - interval '1 day'`) as { today: number }[];
+    if (today <= INBOX_EMAILS_PER_DAY) {
+      await notifyInbox(`Feedback (${kind}): ${message.replace(/\s+/g, " ").slice(0, 80)}`, `${kind}${page ? ` · ${page}` : ""}\nFrom: ${email ?? "no email given"}\n\n${message}`, email);
+    }
+  } catch {
+    /* the message is saved; the email is a courtesy */
+  }
   return json({ ok: true });
 }

@@ -425,3 +425,11 @@ the product page's own pieces: the storage picker, `PinnedMarketplaces` (compact
 own buttons (save, compare) never open it. The card is still a real link, so crawlers, new tabs and modified clicks
 reach the product page, whose server HTML keeps every price. The two pinned rows swap, on the page too: eBay first,
 Amazon second, as on every sister site (owner, 2026-10-30).
+
+## Feedback emailed to the business inbox — 2026-10-30
+
+The owner: "make sure that contact information is really clear on all of our websites so that any feedback feeds
+into the respective emails". `/api/feedback` saved rows for `/admin` and emailed nobody. It now emails each saved
+message to the site inbox (`notifyInbox`: `INBOX_EMAIL`, else `CONTACT_EMAIL`, compareempire@outlook.com), Reply-To
+the visitor when they left an address, at most 25 a day (counted from the table). Reviews and ratings still send
+nothing. The footer and `/contact` already show the address.
