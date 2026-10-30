@@ -18,6 +18,22 @@ import { PriceAlertButton } from "./PriceAlertButton";
 import type { PriceCheck, WasCheck } from "@/lib/price-check";
 import { useRegionKit } from "@/lib/use-region";
 
+/** One row per retailer: its cheapest listing, with the colours it has at that price. */
+export function groupByRetailer(list: Offer[]) {
+  const m = new Map<RetailerId, { best: Offer; colours: Set<string>; all: Offer[] }>();
+  for (const o of list) {
+    const r = m.get(o.retailer);
+    if (!r) m.set(o.retailer, { best: o, colours: new Set([o.colour]), all: [o] });
+    else {
+      r.all.push(o);
+      const better = (o.inStock && !r.best.inStock) || (o.inStock === r.best.inStock && o.price < r.best.price);
+      if (better) r.best = o;
+      r.colours.add(o.colour);
+    }
+  }
+  return [...m.values()].sort((a, b) => Number(b.best.inStock) - Number(a.best.inStock) || a.best.price - b.best.price);
+}
+
 /** Gallery + storage picker + the retailer price table for one phone. */
 export function PhoneOffers({
   phone,
@@ -42,23 +58,8 @@ export function PhoneOffers({
   const colours = useMemo(() => [...new Set(variant.offers.map((o) => o.colour).filter(Boolean))].sort(), [variant]);
   const shown = colour && colours.includes(colour) ? variant.offers.filter((o) => o.colour === colour) : variant.offers;
 
-  // One row per retailer: its cheapest listing, with the colours it has at that price.
-  const group = (list: Offer[]) => {
-    const m = new Map<RetailerId, { best: Offer; colours: Set<string>; all: Offer[] }>();
-    for (const o of list) {
-      const r = m.get(o.retailer);
-      if (!r) m.set(o.retailer, { best: o, colours: new Set([o.colour]), all: [o] });
-      else {
-        r.all.push(o);
-        const better = (o.inStock && !r.best.inStock) || (o.inStock === r.best.inStock && o.price < r.best.price);
-        if (better) r.best = o;
-        r.colours.add(o.colour);
-      }
-    }
-    return [...m.values()].sort((a, b) => Number(b.best.inStock) - Number(a.best.inStock) || a.best.price - b.best.price);
-  };
-  const rows = useMemo(() => group(shown.filter((o) => o.kind !== "plan")), [shown]);
-  const planRows = useMemo(() => group(shown.filter((o) => o.kind === "plan")), [shown]);
+  const rows = useMemo(() => groupByRetailer(shown.filter((o) => o.kind !== "plan")), [shown]);
+  const planRows = useMemo(() => groupByRetailer(shown.filter((o) => o.kind === "plan")), [shown]);
   const [tabPick, setTab] = useState<"outright" | "plan" | null>(null);
   const tab = tabPick ?? (rows.length ? "outright" : "plan");
 
@@ -195,43 +196,7 @@ export function PhoneOffers({
           <ol className="space-y-2.5">
             {rows.map(({ best: o, colours: cs }, i) => (
               <li key={o.retailer}>
-                <a
-                  href={o.url}
-                  target="_blank"
-                  rel="noopener nofollow"
-                  data-buy={o.retailer}
-                  data-buy-product={href}
-                  data-buy-price={o.price}
-                  data-buy-rank={i + 1}
-                  data-buy-kind="outright"
-                  className={`card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4 ${i === 0 && o.inStock ? "ring-2 ring-save/60" : ""}`}
-                >
-                  <div className="min-w-0 flex-1">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
-                      {RETAILERS[o.retailer].type === "official" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Official store</span>}
-                      {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Cheapest</span>}
-                    </div>
-                    <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-mute">
-                      <span className={o.inStock ? "inline-flex items-center gap-1 text-save" : "text-hot"}>
-                        {o.inStock ? <><CheckIcon className="h-3.5 w-3.5" /> In stock</> : "Out of stock / pre-order"}
-                      </span>
-                      <span className="truncate">{[...cs].filter(Boolean).slice(0, 4).join(", ")}{cs.size > 4 ? ` +${cs.size - 4}` : ""}</span>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <div className="price text-xl sm:text-2xl">{$(o.price)}</div>
-                    {o.wasPrice && <div className="text-xs text-ink-mute line-through">{$(o.wasPrice)}</div>}
-                    {o.wasPrice && checks[variant.id]?.was[o.retailer] && (
-                      <WasNote w={checks[variant.id].was[o.retailer]!} />
-                    )}
-                    {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">+{$((o.price - best.price))}</div>}
-                  </div>
-                  <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
-                    Go to store <ExternalIcon className="h-3.5 w-3.5" />
-                  </span>
-                  <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
-                </a>
+                <OutrightRow o={o} colours={cs} rank={i} best={best} product={href} was={checks[variant.id]?.was[o.retailer]} />
               </li>
             ))}
           </ol>
@@ -299,11 +264,12 @@ export function PhoneOffers({
 
 /**
  * Amazon and eBay, pinned above the store rows on every product page (owner, 2026-10-30: "the very, very
- * top", always shown, bright, shaped like the price rows). Amazon takes the first position and eBay the
- * second (today's cheapest listing when we have one, else a search); the marketplace searches follow.
+ * top", always shown, bright, shaped like the price rows). eBay takes the first position (today's cheapest
+ * listing when we have one, else a search) and Amazon the second (owner, 2026-10-30: eBay first, Amazon
+ * second, as on every sister site); the marketplace searches follow, except in the quick view (`compact`).
  * None is ranked among the stores, counted as one or given the "Cheapest" badge.
  */
-function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest }: { phone: Phone; variantQuery: string; product: string; cheapest?: number }) {
+export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest, compact = false }: { phone: Phone; variantQuery: string; product: string; cheapest?: number; compact?: boolean }) {
   const { $, R, region } = useRegionKit();
   const markets = marketplacesFor(region);
   const amazon = markets.find((m) => m.id === "amazon")!;
@@ -317,12 +283,13 @@ function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest }: { ph
   ];
   return (
     <div className="mb-2.5 space-y-2.5" aria-label="Amazon and eBay">
-      <AmazonRow query={mq} product={product} placement="product" href={region === "au" ? undefined : amazon.url(mq)} name={amazon.name} />
       {phone.ebay ? (
         <EbayListingRow listing={phone.ebay} product={product} money={$} cheapest={cheapest} locale={R.locale} timeZone={R.timeZone} />
       ) : (
         <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} adjective={R.adjective} />
       )}
+      <AmazonRow query={mq} product={product} placement={compact ? "quickview" : "product"} href={region === "au" ? undefined : amazon.url(mq)} name={amazon.name} />
+      {compact ? null : (
       <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
         <div className="mt-2 grid gap-2 sm:grid-cols-3">
@@ -342,11 +309,54 @@ function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest }: { ph
         </p>
         {region === "au" && <AmazonNote className="mt-1" />}
       </div>
+      )}
     </div>
   );
 }
 
 /** Our verdict on a store's own "was" price, from what we've recorded there. */
+/** One store's outright row (its cheapest listing of the variant), on the product page and in the quick view. */
+export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was }: { o: Offer; colours: Set<string>; rank: number; best?: Offer; product: string; was?: WasCheck }) {
+  const { $ } = useRegionKit();
+  return (
+    <a
+      href={o.url}
+      target="_blank"
+      rel="noopener nofollow"
+      data-buy={o.retailer}
+      data-buy-product={href}
+      data-buy-price={o.price}
+      data-buy-rank={i + 1}
+      data-buy-kind="outright"
+      className={`card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4 ${i === 0 && o.inStock ? "ring-2 ring-save/60" : ""}`}
+    >
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
+          {RETAILERS[o.retailer].type === "official" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Official store</span>}
+          {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Cheapest</span>}
+        </div>
+        <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-mute">
+          <span className={o.inStock ? "inline-flex items-center gap-1 text-save" : "text-hot"}>
+            {o.inStock ? <><CheckIcon className="h-3.5 w-3.5" /> In stock</> : "Out of stock / pre-order"}
+          </span>
+          <span className="truncate">{[...cs].filter(Boolean).slice(0, 4).join(", ")}{cs.size > 4 ? ` +${cs.size - 4}` : ""}</span>
+        </div>
+      </div>
+      <div className="text-right">
+        <div className="price text-xl sm:text-2xl">{$(o.price)}</div>
+        {o.wasPrice && <div className="text-xs text-ink-mute line-through">{$(o.wasPrice)}</div>}
+        {o.wasPrice && was && <WasNote w={was} />}
+        {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">+{$((o.price - best.price))}</div>}
+      </div>
+      <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
+        Go to store <ExternalIcon className="h-3.5 w-3.5" />
+      </span>
+      <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
+    </a>
+  );
+}
+
 function WasNote({ w }: { w: WasCheck }) {
   const style = w.status === "backed" ? "text-save" : w.status === "never" ? "text-hot font-semibold" : "text-ink-mute";
   const label = w.status === "backed" ? "✓ Was price checks out" : w.status === "never" ? "⚠ Was price not seen" : "Was price: too new to check";
@@ -358,7 +368,7 @@ function WasNote({ w }: { w: WasCheck }) {
 }
 
 /** The variant most stores carry, cheapest among ties: what most buyers mean by "the" phone. */
-function defaultVariant(p: Phone) {
+export function defaultVariant(p: Phone) {
   return [...p.variants].sort(
     (a, b) => new Set(b.offers.map((o) => o.retailer)).size - new Set(a.offers.map((o) => o.retailer)).size || a.storageGb - b.storageGb,
   )[0];

@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
+import { QuickView } from "@/components/QuickView";
 import { activeCategories, categoryHref, getBrands, liveRegions } from "@/lib/catalog";
 import type { RegionId } from "@/lib/region";
 import { DEPARTMENTS, FEATURED } from "@/lib/categories";
@@ -106,6 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <CompareTray />
+        <QuickView />
         <FeedbackWidget />
         <SiteAnalytics />
       </body>

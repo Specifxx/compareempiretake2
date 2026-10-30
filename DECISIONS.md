@@ -414,3 +414,14 @@ in every tag; this site's is `ce-`. Every Compare Empire customid now starts wit
 Replaced: 5339155911 (WargameCompare, FigureCompare, Compare Empire, K Young), 5339231473 (Lorcana),
 5339231474 (Gundam), 5339234013 (YGO). Old secrets/variables (`EBAY_AFFILIATE_CAMPAIGN`,
 `NEXT_PUBLIC_EBAY_CAMPAIGN_ID`, `EBAY_CAMPAIGN_ID`) are no longer read and can be deleted.
+
+## 2026-10-30: quick view on every product card (from K Young); eBay pinned first, Amazon second
+
+Owner: "I really like the kaeyoung quick view pop ups, can we do that for … all the other sites". A plain click on a
+product card now opens K Young's quick view at once with what the card shows (photo, brand, model), then reads the
+product from `/api/products` (the compare table's own endpoint, CDN-cached for a day, so no new function) and draws
+the product page's own pieces: the storage picker, `PinnedMarketplaces` (compact: no marketplace-search box) and
+`OutrightRow` for every store, cheapest in stock first; carrier plans are left to the full page. Clicks on a card's
+own buttons (save, compare) never open it. The card is still a real link, so crawlers, new tabs and modified clicks
+reach the product page, whose server HTML keeps every price. The two pinned rows swap, on the page too: eBay first,
+Amazon second, as on every sister site (owner, 2026-10-30).
