@@ -1,0 +1,19 @@
+name: Appliance store probe (temporary)
+on:
+  push:
+    branches: [claude/project-thread-ss5ocm]
+    paths: [scripts/probe/**, .github/workflows/appliance-probe.yml]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/probe/appliances.ts
