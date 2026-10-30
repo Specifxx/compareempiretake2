@@ -14,6 +14,7 @@ import { ReviewsSection } from "@/components/ReviewsSection";
 import { storageLabel } from "@/lib/normalize";
 import { PriceCheckCard } from "@/components/PriceCheckCard";
 import { AmazonPicks } from "@/components/AmazonPicks";
+import { EbayStrip } from "@/components/EbayStrip";
 
 export function HomeView({ region }: { region: RegionId }) {
   const R = REGIONS[region];
@@ -136,6 +137,10 @@ export function HomeView({ region }: { region: RegionId }) {
           <AmazonPicks />
         </div>
       )}
+
+      <div className="container-x">
+        <EbayStrip query="unlocked smartphone" label="phones and tech" phones customid={`${region === "au" ? "" : `${region}-`}home`} region={region} />
+      </div>
 
       {deals.length > 0 && (
         <section className="container-x mt-12">

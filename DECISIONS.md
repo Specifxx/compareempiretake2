@@ -364,3 +364,28 @@ prices always come from the catalogue.
 
 The phone parser now treats "iPhone Duo" as a foldable (`scripts/build-catalog.ts`), so the Duo joins
 foldable filters from the next daily import.
+
+## 2026-10-30: eBay is pinned above the stores on product pages, and links use campaign 5339155911
+
+The eBay Browse job (2026-10-25 entry) was live and finding a new listing for about 1,400 products a
+day, but the row sat under every store row, so on a phone with a dozen stores almost nobody saw it. The
+owner wants eBay to earn, and the sister sites already pin it first (WargameCompare, 2026-10-28). So on
+product pages:
+
+- the eBay listing row now sits ABOVE the store rows, labelled "Ad · New · Shown first". When the job has
+  no listing for a product, a labelled "Search eBay" row (new, Buy It Now, in-country, cheapest first) takes
+  its place, so every product page has an eBay link above the fold;
+- an "eBay $X" (or "Check eBay") button labelled "Ad" sits beside the best price.
+
+The store rows keep their price order, and the cheapest store keeps the "Cheapest" badge and the best price:
+eBay is never counted as a store, never the best price and never a deal. The home page gets the same labelled
+eBay box the category pages have. Each placement has its own `customid` (`p-<cat>-<slug>-pinned`, `-top`,
+`home`) so EPN reports show which one earns.
+
+The daily call budget is now the repository variable `EBAY_DAILY_CALLS` (code default 4,950 while the
+current keyset is ours alone); set it to 2500 when the job moves to the owner's new shared keyset (owner,
+2026-10-30: 2,500 a day for Compare Empire).
+
+The EPN campaign moves from 5339155912 (CamCompare's) to 5339155911, the family campaign WargameCompare,
+FigureCompare and K Young use, so CamCompare's report is its own. Listings already in `ebay.json` carry the
+old campaign until the job re-checks them (at most five days); both campaigns pay the same account.

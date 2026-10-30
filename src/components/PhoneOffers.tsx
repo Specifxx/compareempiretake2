@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { marketplacesFor } from "@/lib/marketplaces";
 import { AmazonRow } from "./AmazonLink";
-import { EbayListingRow } from "./EbayListingRow";
+import { EbayListingRow, EbaySearchRow } from "./EbayListingRow";
 import { withRegion } from "@/lib/region";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
@@ -112,6 +112,19 @@ export function PhoneOffers({
               <div className="mt-1 text-xs font-semibold text-save">Save {$((top - variant.bestPrice))} vs dearest store</div>
             )}
           </div>
+          <a
+            href={phone.ebay?.url ?? ebaySearch(mq, { condition: "new", customid: `p-${phone.category}-${phone.slug}-top`, phones: phone.category === "phones", region })}
+            target="_blank"
+            rel={SPONSORED_REL}
+            data-buy="ebay"
+            data-buy-product={href}
+            data-buy-kind="ebay-top"
+            className="inline-flex shrink-0 items-center gap-2 self-start rounded-xl border border-line bg-bg-card px-3 py-2 text-sm font-semibold transition hover:border-brand/40 sm:self-center"
+          >
+            <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#E53238] ring-1 ring-black/10" />
+            {phone.ebay ? <>eBay {$(phone.ebay.price)}</> : "Check eBay"}
+            <span className="rounded-full bg-bg-sunk px-1.5 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
+          </a>
           {checks[variant.id] && (
             <PriceCheckCard check={checks[variant.id].check} onOpenHistory={() => document.getElementById("history")?.scrollIntoView({ behavior: "smooth", block: "center" })} />
           )}
@@ -178,6 +191,14 @@ export function PhoneOffers({
           </div>
           {tab === "outright" ? (
           <>
+          {/* eBay is pinned above the stores (owner, 2026-10-30), labelled as an ad; the stores below keep their price order and the Cheapest badge. */}
+          <div className="mb-2.5">
+            {phone.ebay ? (
+              <EbayListingRow listing={phone.ebay} product={href} money={$} cheapest={best?.price} locale={R.locale} timeZone={R.timeZone} />
+            ) : (
+              <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `p-${phone.category}-${phone.slug}-pinned`, phones: phone.category === "phones", region })} product={href} adjective={R.adjective} />
+            )}
+          </div>
           <ol className="space-y-2.5">
             {rows.map(({ best: o, colours: cs }, i) => (
               <li key={o.retailer}>
@@ -221,11 +242,6 @@ export function PhoneOffers({
               </li>
             ))}
           </ol>
-          {phone.ebay && (
-            <div className="mt-2.5">
-              <EbayListingRow listing={phone.ebay} product={href} money={$} cheapest={best?.price} locale={R.locale} timeZone={R.timeZone} />
-            </div>
-          )}
           {region === "au" && (
             <div className="mt-2.5">
               <AmazonRow query={mq} product={href} placement="product" />

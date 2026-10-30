@@ -4,7 +4,7 @@
  * visitor buys within 24 hours of clicking (and for new eBay sign-ups).
  * customid tells us in EPN reports which page sent the click.
  */
-export const EBAY_CAMPAIGN_ID = "5339155912";
+export const EBAY_CAMPAIGN_ID = "5339155911";
 /** eBay site per region: EPN rotation id and site id. */
 export const EBAY_SITES = {
   au: { host: "www.ebay.com.au", rotation: "705-53470-19255-0", siteid: "15", phonesCat: "9355" },
