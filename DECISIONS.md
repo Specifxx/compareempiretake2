@@ -350,3 +350,17 @@ Umart share one price list, so they count as one store (`PRICE_TWINS`).
 `tests/guides.test.ts` pins front matter and internal links. Guides are in the
 sitemap through the existing guides section. Re-check Search Console around
 2026-11-17.
+
+## 2026-10-30: The blog leads the home page, and an "Our take" shelf for opinion
+
+The owner asked for many more posts, including opinion on the year's big launches (the iPhone Duo, Samsung's
+foldables), and for them to be featured on the home page so they are highly indexable. Eight guides were
+added, all with live prices through the existing shortcodes. Opinion pieces get their own section, `opinion`
+("Our take"), so they don't crowd "Best picks". The home page's guide block moved from near the bottom to
+just under the categories: six cards (the newest, with a `featured: true` guide leading its day) and the
+next twelve as plain links. Facts about products that are new or not widely reviewed are attributed to the
+maker's announcement ("according to Apple's announcement"), and launch RRPs are labelled as RRPs; live store
+prices always come from the catalogue.
+
+The phone parser now treats "iPhone Duo" as a foldable (`scripts/build-catalog.ts`), so the Duo joins
+foldable filters from the next daily import.
