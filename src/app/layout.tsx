@@ -32,7 +32,11 @@ export const metadata: Metadata = {
   // Search Console / Bing Webmaster ownership tags (hard coded; a Vercel variable overrides it).
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "AzWwvsCoV2fKvjAspJUFFd77HqxcG_7Eb_4P7cTDOHk",
-    other: { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? "04270C74F268EA0135FD19602057D497" },
+    other: {
+      "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? "04270C74F268EA0135FD19602057D497",
+      // Commission Factory site ownership (affiliate network).
+      "commission-factory-verification": "7d3167b7f3264490902052134cfafc08",
+    },
   },
 };
 
