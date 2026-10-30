@@ -23,7 +23,7 @@ export function EbayListingRow({ listing, product, money, cheapest, locale, time
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2 font-semibold">
           <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-[#E53238] ring-1 ring-black/10" /> eBay
-          <span className="rounded-full bg-[#0064D2] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Ad · New · Shown first</span>
+          <span className="rounded-full bg-[#0064D2] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Ad · New</span>
           {below && <span className="rounded-full bg-save/15 px-2 py-0.5 text-[10px] font-bold text-save">Below the stores</span>}
         </div>
         <div className="mt-1 truncate text-xs text-ink-soft" title={listing.title}>
@@ -49,7 +49,7 @@ export function EbaySearchRow({ href, product, adjective }: { href: string; prod
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2 font-semibold">
           <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-[#E53238] ring-1 ring-black/10" /> eBay
-          <span className="rounded-full bg-[#0064D2] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Ad · Shown first</span>
+          <span className="rounded-full bg-[#0064D2] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Ad</span>
         </div>
         <div className="mt-1 text-xs text-ink-soft">New, Buy It Now listings from {adjective} sellers, cheapest first</div>
       </div>
