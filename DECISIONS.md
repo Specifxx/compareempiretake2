@@ -389,3 +389,18 @@ current keyset is ours alone); set it to 2500 when the job moves to the owner's 
 The EPN campaign moves from 5339155912 (CamCompare's) to 5339155911, the family campaign WargameCompare,
 FigureCompare and K Young use, so CamCompare's report is its own. Listings already in `ebay.json` carry the
 old campaign until the job re-checks them (at most five days); both campaigns pay the same account.
+
+## 2026-10-30: Amazon first, eBay second, the marketplaces box above the stores, in colour
+
+The owner asked for every paid row on a product page at "the very, very top", always shown and bright
+rather than black. So the price table now opens with, in this order and on both the "Buy outright" and
+"On a plan" tabs:
+
+1. the Amazon row, in every region (Amazon AU carries our tag; US and UK link as before), tinted Amazon
+   orange with an orange "Check price on Amazon" button;
+2. the eBay row from the entry above, tinted eBay blue;
+3. "Also check the marketplaces" (new, refurbished and used eBay searches), in a brand-tinted box with a
+   purple heading, where it used to sit in grey under everything.
+
+They keep the store rows' card shape so the table reads as one list, and each is labelled "Ad". The stores
+below keep their price order, the "Cheapest" badge and the best price; nothing pinned is counted as a store.
