@@ -6,6 +6,7 @@ import { GuideCard } from "@/components/GuideCard";
 import { getCatalog, getProducts } from "@/lib/catalog";
 import { categoryById } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
+import { ogImage } from "@/lib/og";
 import { getGuide, getGuides, GUIDE_SECTIONS, guideHero, guideToc, relatedGuides } from "@/lib/guides";
 import { SITE } from "@/lib/site";
 
@@ -16,11 +17,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const g = getGuide((await params).slug);
   if (!g) return {};
   const img = guideHero(g)?.image;
+  // A branded share card (title, section and the hero's photo), like product pages', rather than the bare photo.
+  const card = ogImage({ title: g.title, image: img, category: GUIDE_SECTIONS.find((s) => s.id === g.section)?.name });
   return {
     title: g.title,
     description: g.description,
     alternates: { canonical: `/guides/${g.slug}` },
-    openGraph: { type: "article", title: g.title, description: g.description, images: img ? [{ url: img }] : undefined },
+    openGraph: { type: "article", title: g.title, description: g.description, images: [{ url: card, width: 1200, height: 630 }] },
   };
 }
 

@@ -118,3 +118,16 @@ export function guideHero(g: Guide) {
   if (!g.hero) return undefined;
   return g.hero.includes("/") ? getProduct(g.hero.split("/")[0] as CategoryId, g.hero.split("/")[1]) : getPhone(g.hero);
 }
+
+/** Up to `n` photographed products a guide is about: its hero, then the products its blocks name. For its thumbnail. */
+export function guideImages(g: Guide, n = 3): string[] {
+  const refs = [g.hero ?? "", ...[...g.body.matchAll(/^\[\[(?:phone|compare|build):([^\]]+)\]\]$/gm)].flatMap((m) => m[1].split(",").map((x) => x.split("|")[0].trim()))];
+  const out: string[] = [];
+  for (const ref of refs) {
+    if (!ref) continue;
+    const p = ref.includes("/") ? getProduct(ref.split("/")[0] as CategoryId, ref.split("/")[1]) : getPhone(ref);
+    if (p?.image && !out.includes(p.image)) out.push(p.image);
+    if (out.length >= n) break;
+  }
+  return out;
+}
