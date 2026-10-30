@@ -2,9 +2,16 @@
  * eBay Partner Network (EPN) links. Every eBay link on the site goes through
  * here so it carries our campaign id. eBay pays a share of the sale when a
  * visitor buys within 24 hours of clicking (and for new eBay sign-ups).
- * customid tells us in EPN reports which page sent the click.
+ * customid tells us in EPN reports which page sent the click, and its `ce-`
+ * prefix which site: every Compare site uses this one campaign, hard-coded
+ * (owner, 2026-10-30), and only the prefix tells them apart.
  */
-export const EBAY_CAMPAIGN_ID = "5339155911";
+export const EBAY_CAMPAIGN_ID = "5339155912";
+const SITE_TAG = "ce";
+
+/** `ce-<page…>`: the site tag first, so EPN's customid report groups by site. */
+export const ebayCustomId = (customid?: string) =>
+  !customid ? SITE_TAG : customid.startsWith(`${SITE_TAG}-`) ? customid : `${SITE_TAG}-${customid}`;
 /** eBay site per region: EPN rotation id and site id. */
 export const EBAY_SITES = {
   au: { host: "www.ebay.com.au", rotation: "705-53470-19255-0", siteid: "15", phonesCat: "9355" },
@@ -22,7 +29,7 @@ export function ebayAffiliate(url: string, customid?: string, region: EbayRegion
   u.searchParams.set("campid", EBAY_CAMPAIGN_ID);
   u.searchParams.set("toolid", "10001");
   u.searchParams.set("mkevt", "1");
-  if (customid) u.searchParams.set("customid", customid.slice(0, 256));
+  u.searchParams.set("customid", ebayCustomId(customid).slice(0, 256));
   return u.toString();
 }
 

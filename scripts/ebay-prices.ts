@@ -134,7 +134,7 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
         authorization: `Bearer ${tok}`,
         "X-EBAY-C-MARKETPLACE-ID": m.id,
         // Makes eBay return itemAffiliateWebUrl tracked to our EPN campaign.
-        "X-EBAY-C-ENDUSERCTX": `affiliateCampaignId=${EBAY_CAMPAIGN_ID},affiliateReferenceId=${c.region}-${c.p.category}`,
+        "X-EBAY-C-ENDUSERCTX": `affiliateCampaignId=${EBAY_CAMPAIGN_ID},affiliateReferenceId=ce-${c.region}-${c.p.category}`,
       },
       signal: AbortSignal.timeout(20_000),
     }).catch(() => null);
