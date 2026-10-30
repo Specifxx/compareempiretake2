@@ -17,7 +17,7 @@ export const FAMILY_SITES = [
   { name: "CamCompare", url: "https://www.camcompare.app", anchor: "Camera and lens prices" },
   { name: "RiftCompare", url: "https://riftcompare.com", anchor: "Riftbound card prices" },
   { name: "OP Compare", url: "https://opcompare.app", anchor: "One Piece card prices" },
-  { name: "DexCompare", url: "https://www.dexcompare.app", anchor: "Pokémon sealed prices" },
+  { name: "DexCompare", url: "https://dexcompare.app", anchor: "Pokémon sealed prices" },
   { name: "MTG Compare", url: "https://mtgcompare.app", anchor: "Magic: The Gathering sealed prices" },
   { name: "Gundam Compare", url: "https://gundamcompare.com", anchor: "Gundam Card Game prices" },
   { name: "Lorcana Compare", url: "https://lorcanacompare.com", anchor: "Disney Lorcana card prices" },
