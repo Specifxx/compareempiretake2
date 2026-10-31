@@ -161,7 +161,7 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
               <div key={d.name} className="border-t border-line py-3 first:border-0">
                 <div className="eyebrow mb-1 px-3">{d.name}</div>
                 {d.categories.map((c) => (
-                  <Link key={c.href} href={c.href} className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">
+                  <Link key={c.href} href={c.href} onClick={() => setMenu(false)} className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">
                     <span>{c.emoji}</span> {c.name} <span className="ml-auto text-xs text-ink-mute">{c.count}</span>
                   </Link>
                 ))}
@@ -169,9 +169,9 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
             ))}
             <div className="border-t border-line pt-3">
               {NAV.map((n) => (
-                <Link key={n.href} href={n.href} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">{n.label}</Link>
+                <Link key={n.href} href={n.href} onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">{n.label}</Link>
               ))}
-              <Link href="/about" className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">About</Link>
+              <Link href="/about" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">About</Link>
             </div>
           </nav>
         )}

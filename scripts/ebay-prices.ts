@@ -32,10 +32,12 @@ const ID = process.env.EBAY_CLIENT_ID;
 const SECRET = process.env.EBAY_CLIENT_SECRET;
 const BUDGET = Number(process.env.EBAY_DAILY_CALLS || 4950);
 const MIN_PRICE = 10;
-const MARKET: Record<RegionId, { id: string; currency: string; country: string }> = {
-  au: { id: "EBAY_AU", currency: "AUD", country: "AU" },
-  us: { id: "EBAY_US", currency: "USD", country: "US" },
-  uk: { id: "EBAY_GB", currency: "GBP", country: "GB" },
+// `zip`: a central postcode, sent as the buyer's location so eBay quotes real postage there (visitor feedback on
+// WargameCompare, 2026-10-31: postage the row did not show made eBay rows "a lot of wasted clicks").
+const MARKET: Record<RegionId, { id: string; currency: string; country: string; zip: string }> = {
+  au: { id: "EBAY_AU", currency: "AUD", country: "AU", zip: "2000" },
+  us: { id: "EBAY_US", currency: "USD", country: "US", zip: "64101" },
+  uk: { id: "EBAY_GB", currency: "GBP", country: "GB", zip: "B1 1AA" },
 };
 /** How much eBay demand each category tends to have (1 = typical). */
 const CATEGORY_WEIGHT: Partial<Record<CategoryId, number>> = {
@@ -110,7 +112,7 @@ async function token(): Promise<string> {
 type Summary = {
   title: string;
   price?: { value: string; currency: string };
-  shippingOptions?: { shippingCost?: { value: string } }[];
+  shippingOptions?: { shippingCost?: { value: string; currency?: string } }[];
   itemAffiliateWebUrl?: string;
   itemWebUrl: string;
   image?: { imageUrl: string };
@@ -128,7 +130,7 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
   const lo = Math.max(MIN_PRICE, Math.floor(c.p.bestPrice * 0.45));
   const hi = Math.ceil(c.p.bestPrice * 1.35);
   const q = `${c.p.brand} ${c.p.model}`.slice(0, 100);
-  const filter = [`conditionIds:{1000}`, `buyingOptions:{FIXED_PRICE}`, `itemLocationCountry:${m.country}`, `price:[${lo}..${hi}]`, `priceCurrency:${m.currency}`].join(",");
+  const filter = [`conditionIds:{1000}`, `buyingOptions:{FIXED_PRICE}`, `itemLocationCountry:${m.country}`, `deliveryCountry:${m.country}`, `price:[${lo}..${hi}]`, `priceCurrency:${m.currency}`].join(",");
   const url = `https://api.ebay.com/buy/browse/v1/item_summary/search?q=${encodeURIComponent(q)}&filter=${encodeURIComponent(filter)}&sort=price&limit=25`;
   for (let attempt = 0; attempt < 3; attempt++) {
     const res = await fetch(url, {
@@ -136,7 +138,7 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
         authorization: `Bearer ${tok}`,
         "X-EBAY-C-MARKETPLACE-ID": m.id,
         // Makes eBay return itemAffiliateWebUrl tracked to our EPN campaign.
-        "X-EBAY-C-ENDUSERCTX": `affiliateCampaignId=${EBAY_CAMPAIGN_ID},affiliateReferenceId=ce-${c.region}-${c.p.category}`,
+        "X-EBAY-C-ENDUSERCTX": `affiliateCampaignId=${EBAY_CAMPAIGN_ID},affiliateReferenceId=ce-${c.region}-${c.p.category},contextualLocation=${encodeURIComponent(`country=${m.country},zip=${m.zip}`)}`,
       },
       signal: AbortSignal.timeout(20_000),
     }).catch(() => null);
@@ -152,16 +154,22 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
     if (!res.ok) return null;
     const body = (await res.json()) as { itemSummaries?: Summary[] };
     const need = mustHave(c.p);
+    // Only a listing whose postage eBay states, in the region's currency; the cheapest delivered (item + postage) wins.
+    const postage = (s: Summary): number | null => {
+      const c = s.shippingOptions?.[0]?.shippingCost;
+      if (!c || c.value == null || (c.currency && c.currency !== m.currency)) return null;
+      const n = Number(c.value);
+      return Number.isFinite(n) && n >= 0 ? n : null;
+    };
     const ok = (body.itemSummaries ?? []).filter((s) => {
       const t = norm(s.title);
-      return s.price && !NOT_THE_PRODUCT.test(s.title) && need.every((w) => t.includes(w));
+      return s.price && postage(s) != null && !NOT_THE_PRODUCT.test(s.title) && need.every((w) => t.includes(w));
     });
-    const best = ok.sort((a, b) => Number(a.price!.value) - Number(b.price!.value))[0];
+    const best = ok.sort((a, b) => Number(a.price!.value) + postage(a)! - (Number(b.price!.value) + postage(b)!))[0];
     if (!best) return null;
-    const ship = best.shippingOptions?.[0]?.shippingCost?.value;
     return {
       price: Number(best.price!.value),
-      shipping: ship !== undefined ? Number(ship) : undefined,
+      shipping: postage(best)!,
       title: best.title,
       url: best.itemAffiliateWebUrl ?? best.itemWebUrl,
       image: best.image?.imageUrl,

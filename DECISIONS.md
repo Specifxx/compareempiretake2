@@ -523,3 +523,13 @@ page. `QuickView.tsx` now opens for any plain click on a link whose path `parseH
 with the link's own photo and text until `/api/products` brings the product's brand, model and photo. A card's own
 buttons, links inside the quick view and on the product's own page, and modified, middle and new-tab clicks navigate
 as before.
+
+## eBay rows only with stated postage; the phone menu closes on a tap (2026-10-31)
+
+A WargameCompare visitor's feedback (the owner passed it on for every sister site): eBay rows whose postage was overseas
+or unknown made "a lot of wasted clicks". Compare Empire's search already asked for local sellers
+(`itemLocationCountry`). It now also asks for delivery to the region (`deliveryCountry`) and sends the buyer's country
+and a central postcode as `contextualLocation`, so eBay quotes real postage; a listing whose postage eBay does not state
+is never kept, and the cheapest delivered (item + postage) wins. Stored rows without postage (317 AU, 279 US, 40 UK on
+the day) are hidden (`catalog.ts`) and age out within five days. The phone menu closed on a route change but stayed open
+after tapping the page already shown, so every link in it now closes it too.
