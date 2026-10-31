@@ -39,7 +39,7 @@ const NOISE: Partial<Record<CategoryId, string[]>> = {
   "robot-vacuums": "robot robotic vacuum cleaner mop mopping and self-emptying self emptying station".split(" "),
   vacuums: "vacuum vac cleaner cordless stick handstick handheld bagless corded cyclonic upright barrel canister lightweight powerful".split(" "),
   "air-fryers": "air fryer airfryer digital oven multi cooker".split(" "),
-  "coffee-machines": "coffee machine maker espresso automatic fully semi manual bean to cup pod capsule".split(" "),
+  "coffee-machines": "coffee machine maker espresso automatic fully semi manual pump bean to cup pod capsule".split(" "),
   fridges: "fridge refrigerator freezer door mount".split(" "),
   "washing-machines": "washing machine washer dryer load".split(" "),
   dishwashers: "dishwasher freestanding built-in built under".split(" "),
@@ -186,9 +186,19 @@ const strongCode = (t: string) =>
     .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !/^\d+(\.\d+)?(GB|TB|MHZ|HZ|MM|W|MAH|P|L|KG|LITRES?|RPM|BAR|PSI|STAR)$/.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d)/.test(w) && !COMPONENT_CODE.test(w) && !/^(BE|AXE?|AC)\d{3,5}$/.test(w))
     .sort((a, b) => b.length - a.length)[0];
 
+const APPLIANCES = new Set<CategoryId>(["vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers"]);
+
+/** Breville's Australian stock suffix ("BES870BTR4IAN1", "BCA800BSS0ZAN1") is not part of the model code. */
+function stripRegionSuffix(code: string | undefined): string | undefined {
+  if (!code) return code;
+  const bare = code.replace(/\d[A-Z]AN\d$/, "");
+  return bare.length >= 5 ? bare : code;
+}
+
 export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOffer, t: string) => string | undefined): Parsed | null {
   if (category === "cpus") return parseCpu(o);
-  const t0 = clean(o.title);
+  // Appliance titles drop trademark signs ("Barista Express®") so the same words match across stores.
+  const t0 = clean(APPLIANCES.has(category) ? o.title.replace(/[®™©]/g, "") : o.title);
   const brand = brandOf(o, t0) ?? (category === "consoles" ? consoleMaker(t0) : undefined);
   if (!brand) return null;
   const { rest, colour } = splitColour(t0);
@@ -200,7 +210,7 @@ export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOff
   }
   const v = variantFor(category, rest);
   const stated = o.mpn && o.mpn.length >= 5 && !COMPONENT_CODE.test(o.mpn.replace(/\s+/g, "")) ? o.mpn.toUpperCase() : undefined;
-  const code = CODE_FIRST[category] ? stated ?? strongCode(rest) : undefined;
+  const code = CODE_FIRST[category] ? stripRegionSuffix(stated ?? strongCode(rest)) : undefined;
   const pack = packCount(rest);
   const words = identity(rest, brand, category, v.drop);
   if (!code && !words.length) return null;
@@ -213,8 +223,10 @@ export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOff
           ? rest.replace(/\s*\b\d+(?:\.\d+)?\s?(GB|TB)\b/gi, "").replace(/\s{2,}/g, " ").trim()
           : rest,
       brand,
+      APPLIANCES.has(category),
     ),
     key: code ? keyOf(brand, code.replace(/[^A-Z0-9]/g, ""), pack) : keyOf(brand, ...words, pack),
+    alias: APPLIANCES.has(category) && words.length ? keyOf(brand, ...words, pack) : undefined,
     variant: { id: v.id, label: v.label, storageGb: v.storageGb },
     colour,
     code,
@@ -229,9 +241,14 @@ function consoleMaker(t: string): string | undefined {
   return undefined;
 }
 
-function display(t: string, brand: string): string {
+function display(t: string, brand: string, anySpelling = false): string {
+  // Appliances: "De'Longhi", "DeLonghi", "Fisher & Paykel", the brand however the store spells it. Older
+  // categories keep the original rule, so no existing product's name or URL changes.
+  const re = anySpelling
+    ? new RegExp(`^${brand.replace(/[^A-Za-z0-9]/g, "").split("").join("[^A-Za-z0-9]{0,3}")}\\s+`, "i")
+    : new RegExp(`^${brand.replace(/[^A-Za-z0-9 ]/g, "")}\\s+`, "i");
   return t
-    .replace(new RegExp(`^${brand.replace(/[^A-Za-z0-9 ]/g, "")}\\s+`, "i"), "")
+    .replace(re, "")
     .replace(/\s*[\[(][A-Z0-9/\-.]{6,}[\])]\s*$/i, "")
     .trim();
 }

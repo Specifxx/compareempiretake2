@@ -20,6 +20,11 @@ export interface Parsed {
   colour: string;
   /** Model code used for the key, kept so near-identical codes can be merged later. */
   code?: string;
+  /**
+   * The listing's identity words as a key, kept for code-first categories: a store that prints no model
+   * code joins the one coded group whose listings describe the product in exactly the same words.
+   */
+  alias?: string;
   /** Size, for TVs/monitors, so codes only merge within one size. */
   size?: number;
   /**
@@ -50,7 +55,7 @@ const BRANDS: Record<string, string> = Object.fromEntries(
     "Dyson", "Shark", "Ninja", "Breville", "De'Longhi", "Delonghi", "Nespresso", "Jura", "Sunbeam", "Kambrook", "Russell Hobbs",
     "Tefal", "Kenwood", "KitchenAid", "Smeg", "Philips", "Instant", "Cuisinart", "Morphy Richards", "Tineco", "Vax", "Hoover",
     "Bissell", "Miele", "Bosch", "Electrolux", "AEG", "Fisher & Paykel", "Haier", "Beko", "Midea", "Whirlpool", "Kelvinator",
-    "Simpson", "Chiq", "Euromaid", "Asko", "Westinghouse", "Mitsubishi Electric", "Hitachi", "Siemens", "Neff", "Liebherr",
+    "Simpson", "CHiQ", "Euromaid", "ASKO", "Westinghouse", "Mitsubishi Electric", "Hitachi", "Siemens", "Neff", "Liebherr",
     "Gaggia", "Rancilio", "Lelit", "Sage", "Lavazza", "Melitta", "Krups", "Rommelsbacher", "Kogan", "Heller", "Devanti",
     "Omega", "Inalto", "Artusi", "Solt", "Teka", "Stirling", "Vitamix", "Nutribullet", "Black+Decker", "Black & Decker", "Ryobi",
     "Makita", "Karcher", "Kärcher", "Wertheim", "Swan", "Lenoxx", "Healthy Choice", "Salter", "Cosori", "Crofton", "Anko",

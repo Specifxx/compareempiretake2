@@ -433,3 +433,38 @@ into the respective emails". `/api/feedback` saved rows for `/admin` and emailed
 message to the site inbox (`notifyInbox`: `INBOX_EMAIL`, else `CONTACT_EMAIL`, compareempire@outlook.com), Reply-To
 the visitor when they left an address, at most 25 a day (counted from the table). Reviews and ratings still send
 nothing. The footer and `/contact` already show the address.
+
+## 2026-10-31: Home appliances: six new categories
+
+The owner asked to expand past tech into "popular things people are always buying", appliances and the like.
+Ranked by Australian search demand, how many stores we can already read, and affiliate reach, six categories
+went in first, in three new departments:
+
+- **Vacuums & Cleaning:** stick, handheld, barrel and upright vacuums (`vacuums`; robots stay in `robot-vacuums`).
+- **Kitchen:** air fryers and coffee machines.
+- **Fridges & Laundry:** fridges and freezers, washing machines and dryers, dishwashers.
+
+Why these: they are the appliances Australians search by model and buy online, the price differences between
+stores are large (whitegoods especially, where a few hundred dollars is normal), and every store we already
+read for tech sells them. Kettles, toasters, blenders and fans were left out: cheap, bought on impulse, and
+mostly no model code to match on. Ovens, cooktops and air conditioners were left out for now: they need
+installation, so the shelf price isn't what the buyer pays.
+
+Stores, from a probe run in GitHub Actions on 2026-10-30: The Good Guys, JB Hi-Fi, Betta and Costco list all
+six; SharkNinja (Shark vacuums, Ninja air fryers and coffee machines), Tefal (air fryers) and BISSELL
+(vacuums) sell direct on Shopify and were added as official stores. Harvey Norman has served GitHub's runners
+a bot page since 2026-10-22 (its files for every category are from that day), so it isn't scraped for these.
+Not readable: Appliances Online (client-side), Bing Lee, Kmart, Kogan, Retravision, Kitchen Warehouse and
+Dyson (403), Big W (times out). Godfreys sells mostly its own brands; the coffee specialists (Di Pacci,
+Coffee Machine Warehouse, Alternative Brewing) are mostly commercial machines, used stock and grinder
+bundles; both were left out.
+
+Matching: every appliance is matched by the maker's model code (`CODE_FIRST`), which every store prints
+(Good Guys in the URL, Betta on the page, Costco and Tefal in the title, the brand stores as the SKU). Colours
+have their own codes (Breville BES870BSS and BES870BTR), so each colour is its own product, which is what the
+stores price separately anyway. Dyson's part numbers are all digits ("626439-01") and are read where a store
+prints them. Accessories, consumables, spare parts, damaged-carton and refurbished stock are refused by the
+shared title checks in `scripts/scrapers/appliances.ts`, plus a minimum price per category.
+
+eBay gets a small share of the daily budget for whitegoods (weight 0.3: most eBay fridges are pick-up or
+second-hand) and a normal share for vacuums and coffee machines.
