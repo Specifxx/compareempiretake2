@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CONTACT_EMAIL } from "@/lib/site";
 import { OpenFeedbackButton } from "@/components/FeedbackWidget";
+import { SuggestStore } from "@/components/ReportForms";
+import { REGION_IDS, REGIONS } from "@/lib/region";
 
 export const metadata: Metadata = {
   title: "Contact Compare Empire",
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const TOPICS: [string, string][] = [
-  ["A price looks wrong", "Send the product link and what the store shows. We fix matching errors fast."],
+  ["A price looks wrong", "Use \u201cReport a wrong price\u201d under any product\u2019s prices, or send the product link and what the store shows. We fix matching errors fast."],
   ["Add a store", "Tell us which Australian store you'd like us to check."],
   ["Retailers and partners", "Listing questions, corrections to your prices, or affiliate and partnership enquiries."],
   ["Your data", "Ask us to delete your alerts, feedback or reviews (see the privacy page)."],
@@ -35,6 +37,11 @@ export default function ContactPage() {
           </li>
         ))}
       </ul>
+      <section id="suggest" className="mt-10 scroll-mt-24">
+        <h2 className="font-display text-2xl font-extrabold tracking-tight">Suggest a store</h2>
+        <p className="mt-2 text-ink-soft">A store we don&apos;t check yet? We look at every suggestion and add it if we can read its prices.</p>
+        <SuggestStore regions={REGION_IDS.map((r) => [r.toUpperCase(), REGIONS[r].name])} what="products" buttonClassName="btn-primary" />
+      </section>
       <p className="mt-8 text-sm text-ink-mute">
         Want to stop price-alert emails? Use the link at the bottom of any alert email, or see <Link className="underline" href="/alerts">price alerts</Link>.
       </p>
