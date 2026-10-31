@@ -32,7 +32,7 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
         <FooterCol title="Categories" links={d.categories} />
         <FooterCol
           title="Compare Empire"
-          links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Retailers we check", region === "au" ? "/about#retailers" : `${R.prefix}/stores`], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["How we make money", "/disclosure"], ["Affiliate disclosure", "/affiliate-disclosure"], ["Privacy", "/privacy"]]}
+          links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Retailers we check", region === "au" ? "/about#retailers" : `${R.prefix}/stores`], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["Suggest a store", "/contact#suggest"], ["How we make money", "/disclosure"], ["Affiliate disclosure", "/affiliate-disclosure"], ["Privacy", "/privacy"]]}
         />
       </div>
       <nav aria-label="The Compare Empire family" className="border-t border-line">

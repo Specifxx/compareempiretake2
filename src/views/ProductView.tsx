@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { PhoneCard } from "@/components/PhoneCard";
 import { PhoneOffers } from "@/components/PhoneOffers";
+import { ReportPrice } from "@/components/ReportForms";
 import { PriceChart } from "@/components/PriceChart";
 import { checkVariant, getProduct, getProducts, getVsPairs, regionUpdatedAt, similarPhones, summarise, productHref, categoryHref } from "@/lib/catalog";
 import { money, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
@@ -194,6 +195,12 @@ export async function ProductView({ params, region }: { params: ProductParams; r
       <Suspense>
         <PhoneOffers phone={phone} chart={chart} checks={checks} />
       </Suspense>
+      <ReportPrice
+        product={`${phone.brand} ${phone.model}`}
+        region={region.toUpperCase()}
+        buttonClassName="btn-ghost"
+        stores={outright.map((o) => ({ name: `${RETAILERS[o.retailer].name}${o.v.label && phone.variants.length > 1 ? ` · ${o.v.label}` : ""}`, price: $(o.price) }))}
+      />
 
       <section className="mt-16 grid gap-8 lg:grid-cols-2">
         <div>

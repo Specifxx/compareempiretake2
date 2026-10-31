@@ -1,6 +1,7 @@
 import { ensureSchema } from "@/lib/db";
 import { notifyInbox } from "@/lib/email";
 import { clip, ipHash, isEmail, json } from "@/lib/server-utils";
+import { cleanReport, saveReport } from "@/lib/reports-github";
 
 export const dynamic = "force-dynamic";
 const KINDS = ["bug", "idea", "wrong-price", "store", "other"];
@@ -20,6 +21,13 @@ export async function POST(req: Request) {
   const [{ n }] = (await sql`SELECT count(*)::int AS n FROM feedback WHERE ip_hash = ${ip} AND created_at > now() - interval '1 hour'`) as { n: number }[];
   if (n >= 10) return json({ ok: false, error: "That's a lot of feedback — please try again in a bit." }, 429);
   await sql`INSERT INTO feedback (kind, message, email, page, ip_hash) VALUES (${kind}, ${message}, ${email}, ${page}, ${ip})`;
+  // A wrong price or a store sent through the general feedback box also goes to the
+  // private reports repo the daily triage reads (lib/reports-github.ts), without the
+  // email or the IP hash; emails and phone numbers in the text are blanked there.
+  if (kind === "wrong-price" || kind === "store") {
+    const r = cleanReport({ kind: "other", issue: kind, note: message, page }, "compareempire");
+    if (r.ok) await saveReport(r.report);
+  }
   // Emailed to the site inbox, Reply-To the visitor (owner, 2026-10-30: "any feedback
   // feeds into the respective emails"); not to the owner's personal address, and
   // ratings and reviews still send nothing. At most INBOX_EMAILS_PER_DAY a day, so a
