@@ -37,6 +37,12 @@ const NOISE: Partial<Record<CategoryId, string[]>> = {
   routers: "router wireless dual-band tri-band quad-band gigabit system mesh wifi wi-fi".split(" "),
   desktops: "desktop pc computer gaming tower windows home pro 11".split(" "),
   "robot-vacuums": "robot robotic vacuum cleaner mop mopping and self-emptying self emptying station".split(" "),
+  vacuums: "vacuum vac cleaner cordless stick handstick handheld bagless corded cyclonic upright barrel canister lightweight powerful".split(" "),
+  "air-fryers": "air fryer airfryer digital oven multi cooker".split(" "),
+  "coffee-machines": "coffee machine maker espresso automatic fully semi manual pump bean to cup pod capsule".split(" "),
+  fridges: "fridge refrigerator freezer door mount".split(" "),
+  "washing-machines": "washing machine washer dryer load".split(" "),
+  dishwashers: "dishwasher freestanding built-in built under".split(" "),
 };
 
 const clean = (s: string) =>
@@ -168,17 +174,31 @@ function packCount(t: string): string {
 }
 
 /** Categories where a printed model code identifies the product on its own. */
-const CODE_FIRST: Partial<Record<CategoryId, true>> = { printers: true, routers: true, desktops: true, soundbars: true };
+const CODE_FIRST: Partial<Record<CategoryId, true>> = {
+  printers: true, routers: true, desktops: true, soundbars: true,
+  // Appliances: every store prints the maker's model code, and colours have codes of their own (BES870BSS / BES870BTR).
+  "air-fryers": true, "coffee-machines": true, fridges: true, "washing-machines": true, dishwashers: true, vacuums: true,
+};
 const strongCode = (t: string) =>
   t
     .split(/[\s(),/[\]]+/)
     .map((w) => w.replace(/^[-–.]+|[-–.:;]+$/g, "").toUpperCase())
-    .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !/^\d+(GB|TB|MHZ|HZ|MM|W|MAH|P)$/.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d)/.test(w) && !COMPONENT_CODE.test(w) && !/^(BE|AXE?|AC)\d{3,5}$/.test(w))
+    .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !/^\d+(\.\d+)?(GB|TB|MHZ|HZ|MM|W|MAH|P|L|KG|LITRES?|RPM|BAR|PSI|STAR)$/.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d)/.test(w) && !COMPONENT_CODE.test(w) && !/^(BE|AXE?|AC)\d{3,5}$/.test(w))
     .sort((a, b) => b.length - a.length)[0];
+
+const APPLIANCES = new Set<CategoryId>(["vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers"]);
+
+/** Breville's Australian stock suffix ("BES870BTR4IAN1", "BCA800BSS0ZAN1") is not part of the model code. */
+function stripRegionSuffix(code: string | undefined): string | undefined {
+  if (!code) return code;
+  const bare = code.replace(/\d[A-Z]AN\d$/, "");
+  return bare.length >= 5 ? bare : code;
+}
 
 export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOffer, t: string) => string | undefined): Parsed | null {
   if (category === "cpus") return parseCpu(o);
-  const t0 = clean(o.title);
+  // Appliance titles drop trademark signs ("Barista Express®") so the same words match across stores.
+  const t0 = clean(APPLIANCES.has(category) ? o.title.replace(/[®™©]/g, "") : o.title);
   const brand = brandOf(o, t0) ?? (category === "consoles" ? consoleMaker(t0) : undefined);
   if (!brand) return null;
   const { rest, colour } = splitColour(t0);
@@ -190,7 +210,7 @@ export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOff
   }
   const v = variantFor(category, rest);
   const stated = o.mpn && o.mpn.length >= 5 && !COMPONENT_CODE.test(o.mpn.replace(/\s+/g, "")) ? o.mpn.toUpperCase() : undefined;
-  const code = CODE_FIRST[category] ? stated ?? strongCode(rest) : undefined;
+  const code = CODE_FIRST[category] ? stripRegionSuffix(stated ?? strongCode(rest)) : undefined;
   const pack = packCount(rest);
   const words = identity(rest, brand, category, v.drop);
   if (!code && !words.length) return null;
@@ -203,8 +223,10 @@ export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOff
           ? rest.replace(/\s*\b\d+(?:\.\d+)?\s?(GB|TB)\b/gi, "").replace(/\s{2,}/g, " ").trim()
           : rest,
       brand,
+      APPLIANCES.has(category),
     ),
     key: code ? keyOf(brand, code.replace(/[^A-Z0-9]/g, ""), pack) : keyOf(brand, ...words, pack),
+    alias: APPLIANCES.has(category) && words.length ? keyOf(brand, ...words, pack) : undefined,
     variant: { id: v.id, label: v.label, storageGb: v.storageGb },
     colour,
     code,
@@ -219,9 +241,14 @@ function consoleMaker(t: string): string | undefined {
   return undefined;
 }
 
-function display(t: string, brand: string): string {
+function display(t: string, brand: string, anySpelling = false): string {
+  // Appliances: "De'Longhi", "DeLonghi", "Fisher & Paykel", the brand however the store spells it. Older
+  // categories keep the original rule, so no existing product's name or URL changes.
+  const re = anySpelling
+    ? new RegExp(`^${brand.replace(/[^A-Za-z0-9]/g, "").split("").join("[^A-Za-z0-9]{0,3}")}\\s+`, "i")
+    : new RegExp(`^${brand.replace(/[^A-Za-z0-9 ]/g, "")}\\s+`, "i");
   return t
-    .replace(new RegExp(`^${brand.replace(/[^A-Za-z0-9 ]/g, "")}\\s+`, "i"), "")
+    .replace(re, "")
     .replace(/\s*[\[(][A-Z0-9/\-.]{6,}[\])]\s*$/i, "")
     .trim();
 }
@@ -314,6 +341,72 @@ export function moreSpecs(category: CategoryId, titles: string[]): [string, stri
       if (has(/\bmop/i)) out.push(["Mops", "Yes"]);
       if (has(/\b(self-?empt\w*|auto-?empty|clean base|station|dock)\b/i)) out.push(["Base station", "Yes"]);
       break;
+    case "vacuums":
+      out.push(["Type", has(/\b(handheld|hand vac|car vac)\b/i) && !has(/\bstick\b/i) ? "Handheld" : has(/\b(barrel|canister|bagged|cylinder)\b/i) ? "Barrel" : has(/\bupright\b/i) && !has(/\b(cordless|stick)\b/i) ? "Upright" : "Stick"]);
+      out.push(["Power", has(/\b(corded|mains)\b/i) && !has(/\bcordless\b/i) ? "Corded" : "Cordless"]);
+      if (has(/\b(wet\s?(and|&|\/)\s?dry|wet dry|hard floor cleaner|vacuum (and|&) mop)\b/i)) out.push(["Wet & dry", "Yes"]);
+      if (has(/\b(self[- ]?empty|auto[- ]?empty|clean ?station|empty base)\b/i)) out.push(["Self-empty base", "Yes"]);
+      break;
+    case "air-fryers": {
+      const l = litres(all, 1.5, 20);
+      if (l) out.push(["Capacity", `${l}L`]);
+      out.push(["Baskets", has(/\b(dual|double|twin|2)[- ]?(zone|basket|drawer)s?\b|\bflexdrawer\b|\bdual\b/i) ? "Dual zone" : has(/\b(oven|rotisserie)\b/i) ? "Oven style" : "Single"]);
+      break;
+    }
+    case "coffee-machines":
+      out.push([
+        "Type",
+        has(/\b(nespresso|vertuo|pod|capsule|dolce gusto|k-?cup|caffitaly|lavazza a modo)\b/i)
+          ? "Pod / capsule"
+          : has(/\b(fully automatic|bean[- ]to[- ]cup|super[- ]automatic|automatic coffee|magnifica|dinamica|eletta|rivelia|primadonna|jura|oracle)\b/i)
+            ? "Fully automatic"
+            : has(/\b(drip|filter coffee|pour[- ]over|cold brew)\b/i)
+              ? "Drip / filter"
+              : "Manual espresso",
+      ]);
+      if (has(/\b(grinder|grind|barista express|barista pro|barista touch|bean[- ]to[- ]cup)\b/i) && !has(/\b(nespresso|pod|capsule)\b/i)) out.push(["Built-in grinder", "Yes"]);
+      if (has(/\b(milk frother|aeroccino|milk system|lattissima|lattego|milk wand|steam wand|latte|cappuccino)\b/i)) out.push(["Milk", "Yes"]);
+      break;
+    case "fridges": {
+      const l = litres(all, 30, 1200);
+      if (l) out.push(["Capacity", `${l}L`]);
+      const type = has(/\bquad\b|\b4[- ]door\b/i)
+        ? "Quad door"
+        : has(/\bfrench door\b/i)
+          ? "French door"
+          : has(/\bside[- ]by[- ]side\b/i)
+            ? "Side by side"
+            : has(/\bbottom[- ]mount\b/i)
+              ? "Bottom mount"
+              : has(/\btop[- ]mount\b/i)
+                ? "Top mount"
+                : has(/\bchest freezer\b/i)
+                  ? "Chest freezer"
+                  : has(/\b(upright|vertical) freezer\b|\bfreezer\b(?!.*\bfridge\b)/i)
+                    ? "Upright freezer"
+                    : has(/\b(bar fridge|beverage|wine)\b/i)
+                      ? "Bar & wine"
+                      : has(/\b(single door|all fridge|upright fridge|vertical fridge)\b/i)
+                        ? "Upright fridge"
+                        : undefined;
+      if (type) out.push(["Type", type]);
+      if (has(/\b(plumbed|water dispenser|ice (and|&) water|ice maker|non-plumbed)\b/i)) out.push(["Ice & water", "Yes"]);
+      break;
+    }
+    case "washing-machines": {
+      const kgs = [...all.matchAll(/\b(\d{1,2}(?:\.\d)?)\s?kg\b/gi)].map((m) => Number(m[1])).filter((n) => n >= 3 && n <= 25);
+      if (kgs.length) out.push(["Capacity", `${Math.max(...kgs)}kg`]);
+      const combo = has(/\b(washer[- ]dryer|washer \/ dryer|wash(er)? (and|&) dry|combo)\b/i);
+      const dryer = !combo && has(/\b(dryer|heat pump|vented|condenser)\b/i) && !has(/\b(washing machine|washer)\b/i);
+      out.push(["Type", combo ? "Washer-dryer" : dryer ? "Dryer" : has(/\btop[- ]load/i) ? "Top load washer" : "Front load washer"]);
+      break;
+    }
+    case "dishwashers": {
+      const place = first(/\b(\d{1,2})\s?(?:place settings?|place|ps)\b/i);
+      if (place) out.push(["Place settings", place]);
+      out.push(["Install", has(/\b(fully integrated|integrated)\b/i) ? "Integrated" : has(/\b(built[- ]?in|built[- ]?under|under[- ]?bench|semi[- ]integrated)\b/i) ? "Built-in" : has(/\b(benchtop|countertop|compact|portable)\b/i) ? "Benchtop" : "Freestanding"]);
+      break;
+    }
     case "desktops": {
       const gbs = [...all.matchAll(/(\d+)\s?(GB|TB)\b/gi)].map((m) => Number(m[1]) * (m[2].toUpperCase() === "TB" ? 1024 : 1));
       const ram = gbs.filter((g) => g >= 4 && g <= 256).sort((a, b) => a - b)[0];
@@ -326,8 +419,15 @@ export function moreSpecs(category: CategoryId, titles: string[]): [string, stri
   return out;
 }
 
+/** The largest litre figure in range: "11L Dual Zone" → 11, "635L French Door" → 635. */
+function litres(all: string, min: number, max: number): number | undefined {
+  const ls = [...all.matchAll(/\b(\d{1,4}(?:\.\d)?)\s?(?:L|litres?|liters?|ltr)\b/gi)].map((m) => Number(m[1])).filter((n) => n >= min && n <= max);
+  return ls.length ? Math.max(...ls) : undefined;
+}
+
 export const MORE_CATEGORIES: CategoryId[] = [
   "smartwatches", "desktops", "printers", "routers", "cpus", "ssds", "ram", "motherboards", "soundbars", "headphones", "speakers", "consoles", "cameras", "drones", "robot-vacuums",
+  "vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers",
 ];
 
 /** Accessories that slip into these categories' listings. */
@@ -342,6 +442,12 @@ const MORE_ACCESSORY: Partial<Record<CategoryId, RegExp>> = {
   ssds: /\b(enclosure|heatsink only|adapter|caddy)\b/i,
   motherboards: /\b(i\/o shield|cable|bracket)\b/i,
   routers: /\b(antenna|cable|power supply)\b/i,
+  vacuums: /\b(replacement|spare|filters?|bags?|battery|batteries|brush ?(bar|roll|head)?|attachments?|accessor(y|ies)|tool kit|charging dock|wall (mount|bracket)|hose|nozzle|belt|wand)\b(?!.*\bvacuum\b)/i,
+  "air-fryers": /\b(liners?|paper|rack|skewers?|accessor(y|ies)|silicone|tray|basket insert|cookbook|mitts?)\b(?!.*\bair ?fryer\b.*\b(fryer|oven)\b)/i,
+  "coffee-machines": /\b(capsules?|pods?|beans|descal\w*|cleaning|tablets|tamper|milk jug|pitcher|knock box|portafilter|basket|filter|water filter|cups?|mugs?|grinder only|service kit|gasket)\b(?!.*\b(machine|maker)\b)/i,
+  fridges: /\b(water filter|filter|replacement|shelf|drawer|door seal|gasket|ice tray|stand|plinth|hinge|reversal kit|cover)\b(?!.*\b(fridge|refrigerator|freezer)\b.*\d{2,4}\s?L\b)/i,
+  "washing-machines": /\b(stacking kit|stack kit|pedestal|drawer|hose|tap|lint filter|cleaner|detergent|cover|shock|anti-?vibration|replacement)\b(?!.*\b\d{1,2}(\.\d)?\s?kg\b)/i,
+  dishwashers: /\b(tablets|detergent|rinse aid|salt|cleaner|basket|rack|door panel|kickboard|plinth|hose|replacement)\b(?!.*\bplace settings?\b)/i,
 };
 export const isMoreAccessory = (category: CategoryId, t: string) => MORE_ACCESSORY[category]?.test(t) ?? false;
 

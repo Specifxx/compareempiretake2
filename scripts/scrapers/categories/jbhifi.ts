@@ -1,5 +1,6 @@
 import type { CategoryId, RawOffer, RetailerId } from "../../../src/lib/types";
 import { decodeEntities, get, getJson, pool, sleep } from "../../lib/http";
+import { APPLIANCE_IS, APPLIANCE_MIN_PRICE, isAppliance, isApplianceCat } from "../appliances";
 
 type Cat = Exclude<CategoryId, "phones">;
 
@@ -18,11 +19,13 @@ export const COND =
 /** Categories that predate the expansion keep the broad accessory filter JUNK; newer ones use COND + their own IS check. */
 const OLD = new Set<Cat>(["tvs", "monitors", "graphics-cards", "laptops", "tablets"]);
 export function junk(cat: Cat, title: string): boolean {
+  if (isApplianceCat(cat)) return !isAppliance(cat, title);
   return OLD.has(cat) ? JUNK.test(title) : COND.test(title);
 }
 
 /** Below these a listing is a placeholder or an accessory; 9999 is a "price on request" placeholder (Mwave). */
 const MIN_PRICE: Partial<Record<Cat, number>> = {
+  ...APPLIANCE_MIN_PRICE,
   printers: 50, desktops: 200, cpus: 50, motherboards: 60, consoles: 150, cameras: 60, drones: 60, "robot-vacuums": 100, smartwatches: 25, routers: 25,
 };
 export function badPrice(cat: Cat, price: number): boolean {
@@ -129,6 +132,7 @@ export const IS: Record<Cat, (t: string) => boolean> = {
   "robot-vacuums": (t) =>
     /robot(ic)? (vacuum|vac|mop|cleaner)|roomba|roborock|deebot|braava|robovac|robot\b.*vacuum|vacuum.*robot|robot.*(mop|vac)/i.test(t) &&
     !/\bbags?\b|\bfilters?\b|\bbrush(es)?\b(?!.*robot)|mop pads?|\bpads?\b|replacement|\bkit\b|accessor(y|ies)|\bcloths?\b|solution|detergent|\bbattery\b|charger|\bwheels?\b|\bparts?\b|\bspare\b|\btank\b(?!.*robot)|\bholder\b|\bfor (roomba|irobot|ecovacs|roborock|dreame|deebot|eufy|xiaomi|neato|shark|samsung|tp-link|tapo)|compatible|window|\bpool\b|\blawn\b|mower|\btoy\b|\bkids\b|gutter|\bramp\b|\bbarrier\b|virtual wall|\bmat\b|\bdock only\b|station only|\bbase only\b/i.test(t),
+  ...APPLIANCE_IS,
 };
 
 /** A Shopify SKU that looks like a manufacturer code (letters and digits), not an internal number. */
@@ -264,6 +268,12 @@ const HANDLES: Record<Cat, RegExp> = {
   cameras: /(camera|mirrorless|dslr|-body|powershot|cyber-shot|lumix|gopro|hero-?\d|insta360|osmo-(action|pocket|360)|x100|instax|zv-|eos-r)/,
   drones: /(drone|dji-(mini|air|mavic|avata|neo|flip|lito)|fly-more|potensic)/,
   "robot-vacuums": /(robot|roomba|roborock|deebot|braava|robovac)/,
+  vacuums: /(stick-vac|vacuum|handstick|dyson-(v\d|gen5|outsize|digital)|shark-|tineco|wet-dry|wet-and-dry)/,
+  "air-fryers": /(air-?fryer|air-fry|dual-zone|flexdrawer|foodi)/,
+  "coffee-machines": /(coffee-machine|coffee-maker|espresso|nespresso|vertuo|barista|bambino|oracle|dolce-gusto|bean-to-cup|magnifica|dinamica|eletta|rivelia|jura-|lattissima|essenza|citiz|creatista)/,
+  fridges: /(fridge|refrigerator|freezer)/,
+  "washing-machines": /(washing-machine|washer|dryer|front-load|top-load)/,
+  dishwashers: /dishwasher/,
 };
 const HANDLE_JUNK =
   /refurb|renewed|open-box|ex-display|ex-demo|pre-owned|-case|-cover|folio|sleeve|-bag|backpack|-stand|-mount|bracket|cable|keyboard|protector|stylus|-pen-|pencil|charger|adapter|-dock|-arm|holder|-skin|riser|-strap|-mouse/;
@@ -278,6 +288,12 @@ const HANDLE_ACC: Partial<Record<Cat, RegExp>> = {
   cameras: /lens-cap|lens-hood|filter|battery|batteries|charger|memory-card|sd-card|-bag|-case|strap|tripod|-cage|cable|adapter|security|cctv|doorbell|dash-?cam|webcam|baby|pet-|trail|indoor|outdoor|spy|kids|toy|drone|telescope|binocular|selfie|backpack|sling|pouch|harness|clamp|-film-|disposable/,
   drones: /batter|propeller|charg|-for-|-bag|-case|filter|landing|guard|cable|stick|replacement|spare|-toy|puzzle|lego|dvd|wooden/,
   "robot-vacuums": /bags|filter|brush|pads|replacement|kit|accessor|cloth|solution|detergent|battery|-for-|window|pool|lawn|mower|toy/,
+  vacuums: /robot|roomba|deebot|bags|filter|replacement|accessor|battery|-for-|window|pool|toy|steam-mop|hair-dryer|hairdryer/,
+  "air-fryers": /liner|paper|rack|skewer|accessor|cookbook|-for-/,
+  "coffee-machines": /capsule|pods|beans|descal|cleaning|tamper|jug|pitcher|knock-box|cups|mug|-for-|accessor|replacement|grinder$/,
+  fridges: /filter|car-fridge|portable|12v|camping|-for-|replacement/,
+  "washing-machines": /hair-?dryer|hand-dryer|stack|pedestal|hose|-for-|detergent|dishwasher|airer|shoe|salad/,
+  dishwashers: /tablet|detergent|rinse|cleaner|-for-|salt/,
   routers: /extender|repeater|usb|pcie|antenna|access-point|switch|powerline|camera|cable|mount|bracket|adapter/,
   ssds: /enclosure|adapter|caddy|-dock|bracket|cable|reader|laptop|notebook|desktop|gaming-pc|macbook|imac|refurb/,
   ram: /laptop-.*-(i[3579]|ryzen)|gaming-pc|desktop-pc|gddr|graphics|motherboard/,
@@ -308,12 +324,18 @@ const TYPES: Record<Cat, RegExp> = {
   cameras: /^CAMERAS$/,
   drones: /^CAMERAS$/,
   "robot-vacuums": /^(SMALL APPLIANCES|APPLIANCES|HOME APPLIANCES)$/i,
+  vacuums: /APPLIANCE|FLOORCARE|CLEANING/i,
+  "air-fryers": /APPLIANCE|KITCHEN|COOKING/i,
+  "coffee-machines": /APPLIANCE|KITCHEN|COFFEE/i,
+  fridges: /APPLIANCE|WHITEGOOD|REFRIG|KITCHEN/i,
+  "washing-machines": /APPLIANCE|WHITEGOOD|LAUNDRY/i,
+  dishwashers: /APPLIANCE|WHITEGOOD|KITCHEN/i,
 };
 
 /** Marketplace sellers on JB for these are PC stores selling new stock; elsewhere marketplace is mostly refurbished. */
 const MARKETPLACE_OK = new Set<Cat>(["graphics-cards", "cpus", "ssds", "ram", "motherboards", "routers", "printers", "desktops"]);
 /** Where a title-borne manufacturer code is worth taking. */
-const TITLE_CODE_LOOSE = new Set<Cat>(["ssds", "ram", "printers", "routers"]);
+const TITLE_CODE_LOOSE = new Set<Cat>(["ssds", "ram", "printers", "routers", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers"]);
 
 let sitemap: Promise<string[]> | undefined;
 /** All product URLs from JB's product sitemaps, fetched once per run. */

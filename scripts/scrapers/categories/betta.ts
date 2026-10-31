@@ -45,4 +45,10 @@ export const scrapers: Partial<Record<Cat, () => Promise<RawOffer[]>>> = {
   cameras: b("cameras", ["cameras", "digital-cameras", "drones"]),
   drones: b("drones", ["drones"]),
   "robot-vacuums": b("robot-vacuums", ["robotic-vacuums", "irobot"]),
+  vacuums: b("vacuums", ["handstick-vacuums", "handheld-vacuums", "barrel-vacuums", "upright-vacuums"]),
+  "air-fryers": b("air-fryers", ["air-fryers"]),
+  "coffee-machines": b("coffee-machines", ["all-coffee-machines"]),
+  fridges: b("fridges", ["fridges-freezers"]),
+  "washing-machines": b("washing-machines", ["washing-machines", "clothes-dryers", "washer-dryer-combos"]),
+  dishwashers: b("dishwashers", ["dishwashers"]),
 };

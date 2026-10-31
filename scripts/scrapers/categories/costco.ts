@@ -1,4 +1,5 @@
 import type { CategoryId, RawOffer } from "../../../src/lib/types";
+import { isAppliance } from "../appliances";
 import { decodeEntities, get, sleep } from "../../lib/http";
 
 const BASE = "https://www.costco.com.au";
@@ -115,12 +116,39 @@ const CATS: Partial<Record<Exclude<CategoryId, "phones">, Cat>> = {
     paths: ["/Appliances/Vacuums-Floorcare/Robot-Vacuums/c/cos_2.7.3"],
     keep: KEEP["robot-vacuums"],
   },
+  vacuums: {
+    paths: ["/Appliances/Vacuums-Floorcare/Stick-Hand-Held-Vacuums/c/cos_2.7.2", "/Appliances/Vacuums-Floorcare/Vacuum-Cleaners/c/cos_2.7.1"],
+    keep: (t) => isAppliance("vacuums", t),
+  },
+  "air-fryers": {
+    paths: ["/Appliances/Kitchen-Appliances/Air-Fryers-Deep-Fryers/c/cos_2.3.5"],
+    keep: (t) => isAppliance("air-fryers", t),
+  },
+  "coffee-machines": {
+    paths: ["/Appliances/Coffee-Drink-Makers/Coffee-Espresso-Machines/c/cos_2.4.4"],
+    keep: (t) => isAppliance("coffee-machines", t),
+  },
+  fridges: {
+    paths: ["/Appliances/Fridges-Freezers/c/cos_2.1"],
+    keep: (t) => isAppliance("fridges", t),
+  },
+  "washing-machines": {
+    paths: ["/Appliances/Washers-Dryers/c/cos_2.6"],
+    keep: (t) => isAppliance("washing-machines", t),
+  },
+  dishwashers: {
+    paths: ["/Appliances/Dishwashers/c/cos_2.2"],
+    keep: (t) => isAppliance("dishwashers", t),
+  },
 };
 
 const num = (s?: string) => (s ? Number(s.replace(/,/g, "")) : 0);
 
 /** Costco titles usually end with the model code, e.g. "... 4K Smart TV 65QNED86BSA". */
 function mpnOf(title: string): string | undefined {
+  // Dyson's part numbers are all digits: "Dyson V15 Detect Absolute Vacuum 626408-01".
+  const dyson = title.match(/\b(\d{6}-\d{2})\s*$/)?.[1];
+  if (dyson) return dyson;
   const last = title.trim().split(/\s+/).pop() ?? "";
   const mid = title.match(/\b[A-Z0-9]{3,}-[A-Z0-9]{3,}(?:AU)?\b/)?.[0];
   if (mid && /\d/.test(mid) && /[A-Z]/.test(mid) && !/^(SM|USB)-?$/.test(mid)) return mid;

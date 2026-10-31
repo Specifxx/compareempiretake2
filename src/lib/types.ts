@@ -47,7 +47,13 @@ export type CategoryId =
   | "consoles"
   | "cameras"
   | "drones"
-  | "robot-vacuums";
+  | "robot-vacuums"
+  | "vacuums"
+  | "air-fryers"
+  | "coffee-machines"
+  | "fridges"
+  | "washing-machines"
+  | "dishwashers";
 
 /** AU stores keep bare ids; US and UK stores are prefixed with their region ("us-bestbuy", "uk-currys"). */
 export type RetailerId =
@@ -85,7 +91,10 @@ export type RetailerId =
   | "bose"
   | "garmin"
   | "ecovacs"
-  | "dreame";
+  | "dreame"
+  | "sharkninja"
+  | "tefal"
+  | "bissell";
 
 export interface Retailer {
   id: RetailerId;

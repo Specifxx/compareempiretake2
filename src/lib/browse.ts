@@ -152,7 +152,40 @@ export const FACETS: Record<string, FacetDef[]> = {
     { key: "Memory", label: "Memory" },
     { key: "Storage", label: "Storage" },
   ],
+  vacuums: [
+    { key: "Type", label: "Type" },
+    { key: "Power", label: "Power" },
+    { key: "Wet & dry", label: "Wet & dry" },
+  ],
+  "air-fryers": [
+    { key: "Baskets", label: "Baskets" },
+    { key: "Capacity", label: "Capacity", bucket: (v) => bucketNum(v, [[0, 4, "Under 4L"], [4, 7, "4–6.9L"], [7, 10, "7–9.9L"], [10, 99, "10L+"]]) },
+  ],
+  "coffee-machines": [
+    { key: "Type", label: "Type" },
+    { key: "Built-in grinder", label: "Grinder" },
+    { key: "Milk", label: "Milk" },
+  ],
+  fridges: [
+    { key: "Type", label: "Type" },
+    { key: "Capacity", label: "Capacity", bucket: (v) => bucketNum(v, [[0, 300, "Under 300L"], [300, 450, "300–449L"], [450, 600, "450–599L"], [600, 9999, "600L+"]]) },
+    { key: "Ice & water", label: "Ice & water" },
+  ],
+  "washing-machines": [
+    { key: "Type", label: "Type" },
+    { key: "Capacity", label: "Capacity", bucket: (v) => bucketNum(v, [[0, 8, "Under 8kg"], [8, 10, "8–9.5kg"], [10, 12, "10–11.5kg"], [12, 99, "12kg+"]]) },
+  ],
+  dishwashers: [
+    { key: "Install", label: "Install" },
+    { key: "Place settings", label: "Place settings" },
+  ],
 };
+
+/** "635L" → "450–599L"-style bucket labels, by the first number in the value. */
+function bucketNum(v: string, ranges: [number, number, string][]): string {
+  const n = Number(v.match(/[\d.]+/)?.[0]);
+  return ranges.find(([lo, hi]) => n >= lo && n < hi)?.[2] ?? v;
+}
 
 export const facetDefs = (category: string): FacetDef[] => FACETS[category] ?? [];
 

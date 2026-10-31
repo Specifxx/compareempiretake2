@@ -129,6 +129,60 @@ export const CATEGORY_GUIDES: Partial<Record<CategoryId, CategoryGuide>> = {
     tips: ["Self-emptying docks save the most effort; mopping docks that wash and dry the pads are worth it if you have hard floors.", "LiDAR navigation maps the home more reliably than camera-only models, especially in low light."],
     faq: [["Do robot vacuums work on carpet?", "Yes, on low and medium pile. Look for strong suction and automatic carpet boost; mops should lift on carpet."]],
   },
+  vacuums: {
+    tips: [
+      "Run time claims are on the lowest power setting; on carpet boost most cordless sticks last 10 to 20 minutes, so a model with a swappable battery suits larger homes.",
+      "Many models come in several bundles (extra tools, a second battery, a self-empty base) under one name: compare the exact model code, not just the series.",
+    ],
+    faq: [
+      ["Cordless stick or barrel vacuum?", "A cordless stick is easier for quick, daily cleans and stairs. A corded barrel still wins on suction, run time and price for big homes with lots of carpet."],
+      ["Is a Dyson worth it over Shark or Samsung?", "Not automatically. Compare suction, run time and the battery's replacement cost; older Dyson models often drop to well under the newest Shark's price."],
+    ],
+  },
+  "air-fryers": {
+    tips: [
+      "Size it to your household: about 3–4L cooks for one or two, 5–7L for a family, and a dual-zone model cooks a main and a side at the same time.",
+      "Basket air fryers crisp faster; oven-style models fit more and can rotisserie, but take more bench space.",
+    ],
+    faq: [["Do air fryers use less power than an oven?", "Usually, for small loads: they heat a much smaller space and cook faster. For a full tray of food an oven can be just as efficient."]],
+  },
+  "coffee-machines": {
+    tips: [
+      "Decide how hands-on you want to be: pod machines are fastest, fully automatic machines grind and froth at a button, and manual espresso machines give the best coffee for the price if you'll learn the steps.",
+      "A built-in grinder saves buying one separately (budget A$150 or more for a decent standalone grinder).",
+      "The same machine often has a different model code per colour, and stores discount colours differently: check every colour's price.",
+    ],
+    faq: [
+      ["Are pod machines cheaper?", "Cheaper to buy, dearer to run: pods cost far more per cup than beans. Over a few years a bean machine usually costs less in total."],
+      ["When do coffee machines go on sale?", "Often around Black Friday, Christmas and end-of-financial-year sales. The price history on each machine's page shows whether today's price is really low."],
+    ],
+  },
+  fridges: {
+    tips: [
+      "Measure the space, then leave the gap the manual asks for at the sides and top: a fridge without air around it works harder and costs more to run.",
+      "Compare the energy star rating and the kWh per year on the label; over ten years running costs can exceed the price difference between two fridges.",
+      "Plumbed ice and water needs a water tap behind the fridge; non-plumbed models have a tank you refill.",
+    ],
+    faq: [
+      ["What size fridge do I need?", "As a rough guide, about 100L per person plus 100L: 300–400L suits a couple, 450–600L a family of four or five."],
+      ["Does delivery and removal cost extra?", "It depends on the store and your postcode. Check delivery, installation and old-fridge removal at checkout before comparing two prices."],
+    ],
+  },
+  "washing-machines": {
+    tips: [
+      "Front loaders use less water and power and are gentler on clothes; top loaders wash faster and are easier on the back.",
+      "Pick the capacity for your biggest regular load: 7.5–8kg suits most couples, 9–10kg a family, and bigger drums wash doonas at home.",
+      "A heat pump dryer costs more up front but uses far less power than a vented dryer; it pays off if you dry often.",
+    ],
+    faq: [["Is a washer-dryer combo a good idea?", "It saves space, but dries only about half a wash load at a time and slowly. If you have room, a separate washer and dryer is more flexible."]],
+  },
+  dishwashers: {
+    tips: [
+      "Standard dishwashers are 60cm wide; check whether you need freestanding, built-under or fully integrated (a cabinet door covers the front) before you compare.",
+      "Look at noise (dB) if your kitchen is open-plan, and at the water star rating for running costs.",
+    ],
+    faq: [["How many place settings do I need?", "12 to 15 place settings suits most families. A 45cm slimline or benchtop model fits small kitchens and one or two people."]],
+  },
   routers: {
     tips: ["Mesh systems beat a single powerful router in larger or multi-storey homes.", "Wi-Fi 7 helps only if your devices support it; Wi-Fi 6E or 6 is still excellent value for most homes."],
     faq: [["Do I need a new modem too?", "It depends on your connection type. Many providers supply a modem; a new router or mesh can connect to it."]],

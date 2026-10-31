@@ -28,6 +28,7 @@ interface Group {
   code?: string;
   size?: number;
   disc?: string[];
+  aliases?: Set<string>;
 }
 
 /** Phones keep their original parser; every other category uses src/lib/match.ts. */
@@ -129,6 +130,7 @@ function build(category: CategoryId) {
       let g = groups.get(key);
       if (!g) groups.set(key, (g = { key, brand: p.brand, models: [], raws: [], byVariant: new Map(), code: p.code, size: p.size, disc: [] }));
       if (p.discriminator) g.disc!.push(p.discriminator);
+      if (p.alias) (g.aliases ??= new Set()).add(p.alias);
       g.models.push(p.model);
       g.raws.push(o);
       const v = g.byVariant.get(p.variant.id) ?? { label: p.variant.label, storageGb: p.variant.storageGb, offers: [] };
@@ -155,6 +157,26 @@ function build(category: CategoryId) {
       const target = mergeTarget(g.code, peers);
       if (!target) continue;
       const t = groups.get(target)!;
+      t.models.push(...g.models);
+      t.raws.push(...g.raws);
+      for (const [vid, v] of g.byVariant) {
+        const tv = t.byVariant.get(vid);
+        if (tv) tv.offers.push(...v.offers);
+        else t.byVariant.set(vid, v);
+      }
+      groups.delete(g.key);
+    }
+  }
+
+  // Code-first categories: a group with no model code (a store that prints none) joins the one coded
+  // group of the same brand whose listings use exactly its words. Two or more candidates: left alone.
+  {
+    const all = [...groups.values()];
+    for (const g of all) {
+      if (g.code || !g.aliases?.size) continue;
+      const targets = all.filter((x) => x.code && x.brand === g.brand && groups.has(x.key) && [...g.aliases!].some((a) => x.aliases?.has(a)));
+      if (targets.length !== 1) continue;
+      const t = targets[0];
       t.models.push(...g.models);
       t.raws.push(...g.raws);
       for (const [vid, v] of g.byVariant) {

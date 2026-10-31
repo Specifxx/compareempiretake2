@@ -1,6 +1,7 @@
 # Compare Empire
 
-Price comparison for Australia, starting with mobile phones. Live at compareempire.com.
+Price comparison for Australia: phones, computers, TV and audio, and home appliances (vacuums, air fryers,
+coffee machines, fridges, washing machines and dishwashers). Live at compareempire.com.
 
 ## How it works
 
