@@ -91,7 +91,10 @@ export type RetailerId =
   | "bose"
   | "garmin"
   | "ecovacs"
-  | "dreame";
+  | "dreame"
+  | "sharkninja"
+  | "tefal"
+  | "bissell";
 
 export interface Retailer {
   id: RetailerId;

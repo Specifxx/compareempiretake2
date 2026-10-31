@@ -9,10 +9,10 @@ export type ApplianceCat = Extract<CategoryId, "vacuums" | "air-fryers" | "coffe
 export const APPLIANCE_CATS: ApplianceCat[] = ["vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers"];
 
 /** Listings that are never a new appliance, in any category. */
-const NOT_NEW = /refurb|renewed|open[- ]?box|ex[- ]?(display|demo)|b[- ]grade|pre[- ]?owned|second[- ]?hand|\bused\b|seconds stock|factory second|carton damaged|damaged box|scratch (and|&) dent|warranty|care\+|protection plan|installation\b(?! included)|gift card/i;
+const NOT_NEW = /refurb|renewed|open[- ]?box|ex[- ]?(display|demo)|b[- ]grade|pre[- ]?owned|second[- ]?hand|\bused\b|seconds stock|factory second|carton damaged|damaged (box|carton)|scratch (and|&) dent|warranty|care\+|protection plan|installation\b(?! included)|gift card/i;
 
 /** Parts and consumables shared by every category. */
-const PARTS = /replacement|\bspares?\b|\bspare parts?\b|accessor(y|ies) (only|pack|set)|cleaning (tablets|solution|kit)|descal|\bdetergent\b|\bcable\b|\badapter\b|\bcharger\b|\bholder\b|\bstorage (rack|bag)\b/i;
+const PARTS = /replacement|\bspares?\b|\bspare parts?\b|accessor(y|ies) (only|pack|set)|cleaning (tablets|solution)|descal|\bdetergent\b|\bcable\b|\badapter\b|\bcharger\b|\bholder\b|\bstorage (rack|bag)\b/i;
 
 export const APPLIANCE_IS: Record<ApplianceCat, (t: string) => boolean> = {
   vacuums: (t) =>
@@ -23,7 +23,7 @@ export const APPLIANCE_IS: Record<ApplianceCat, (t: string) => boolean> = {
     !/\bliners?\b|\bparchment\b|\bpaper\b|\bsilicone\b|\brack\b|\bskewers?\b|\btray\b(?!.*fryer)|\binsert\b|\bcookbook\b|\bbook\b|\bmitts?\b|\bgloves?\b|\bsprayer\b|\boil spray\b|\btongs?\b|\bpan\b(?!.*fryer)|\blid\b(?!.*fryer)|accessor(y|ies)|replacement|\bbasket\b(?!.*(fryer|dual|zone|xl|\d\s?l\b))|\bfor\b.*air ?fryer|\bdeep fryer\b|\bmicrowave\b|\bkettle\b|\btoaster\b/i.test(t),
   "coffee-machines": (t) =>
     /coffee (machine|maker)|espresso|nespresso|vertuo|lattissima|essenza|citiz|inissia|creatista|barista|bambino|oracle|dolce gusto|k-?cup|caffitaly|bean[- ]to[- ]cup|magnifica|dinamica|eletta|rivelia|primadonna|jura|\bgaggia\b|\blelit\b|\brancilio\b|cold brew maker|drip (coffee|filter)|filter coffee/i.test(t) &&
-    !/\bcapsules?\b|\bpods?\b(?!.*machine)|\bbeans\b|\bground coffee\b|\bdescal\w*|\bcleaning\b|\btablets\b|\btamper\b|\bmilk (jug|pitcher)\b|\bpitcher\b|\bknock ?box\b|\bportafilter\b(?!.*machine)|\bbasket\b|\bwater filter\b|\bfilter (papers?|cartridge)\b|\bcups?\b(?!.*(machine|maker))|\bmugs?\b|\bgrinder\b(?!.*(machine|espresso|built|with|integrated))|\bservice kit\b|\bgasket\b|\bshower screen\b|\bsteam wand\b(?!.*machine)|\bfrother\b(?!.*(machine|maker|bundle))|\baeroccino\b(?!.*(machine|bundle|vertuo|essenza|citiz|inissia))|\bscales?\b|\bkettle\b|\bplunger\b|\bfrench press\b|\bmoka\b|\bstovetop\b|\bpour[- ]over\b(?!.*machine)|accessor(y|ies)|replacement|\bspares?\b|\bcover\b|\bstand\b|\bdrawer\b|\bcanister\b|\bsyrup\b|\bgift\b/i.test(t),
+    !/\bcapsules?\b(?!.*(machine|maker))|\bpods?\b(?!.*machine)|\bbeans\b|\bground coffee\b|\bdescal\w*|\bcleaning\b|\btablets\b|\btamper\b|\bmilk (jug|pitcher)\b|\bpitcher\b|\bknock ?box\b|\bportafilter\b(?!.*machine)|\bbasket\b|\bwater filter\b|\bfilter (papers?|cartridge)\b|\bcups?\b(?!.*(machine|maker))|\bmugs?\b|\bgrinder\b(?!.*(machine|espresso|built|with|integrated))|\bservice kit\b|\bgasket\b|\bshower screen\b|^(?!.*\b(machine|maker|bundle)\b).*\b(steam wand|frother)\b|\baeroccino\b(?!.*(machine|bundle|vertuo|essenza|citiz|inissia))|\bscales?\b|\bkettle\b|\bplunger\b|\bfrench press\b|\bmoka\b|\bstovetop\b|\bpour[- ]over\b(?!.*machine)|accessor(y|ies)|replacement|\bspares?\b|\bcover\b|\bstand\b|\bdrawer\b|\bcanister\b|\bsyrup\b|\bgift\b/i.test(t),
   fridges: (t) =>
     /fridge|refrigerator|freezer/i.test(t) &&
     /\b\d{2,4}\s?(L|litres?|ltr)\b|\b[A-Z]{1,5}-?\d{3,5}[A-Z0-9-]*\b/i.test(t) &&

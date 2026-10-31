@@ -36,6 +36,9 @@ const AU_RETAILERS = {
   garmin: { id: "garmin", name: "Garmin", site: "garmin.com/en-AU", color: "#007CC3", type: "official" },
   ecovacs: { id: "ecovacs", name: "ECOVACS", site: "ecovacs.com/au", color: "#1E4B9B", type: "official" },
   dreame: { id: "dreame", name: "Dreame", site: "dreame.com.au", color: "#B8956A", type: "official" },
+  sharkninja: { id: "sharkninja", name: "SharkNinja", site: "sharkninja.com.au", color: "#1C1C1C", type: "official" },
+  tefal: { id: "tefal", name: "Tefal", site: "tefal.com.au", color: "#D2232A", type: "official" },
+  bissell: { id: "bissell", name: "BISSELL", site: "bissell.com.au", color: "#0057A8", type: "official" },
 };
 
 export const RETAILERS = {

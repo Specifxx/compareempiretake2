@@ -177,7 +177,7 @@ function packCount(t: string): string {
 const CODE_FIRST: Partial<Record<CategoryId, true>> = {
   printers: true, routers: true, desktops: true, soundbars: true,
   // Appliances: every store prints the maker's model code, and colours have codes of their own (BES870BSS / BES870BTR).
-  "air-fryers": true, "coffee-machines": true, fridges: true, "washing-machines": true, dishwashers: true,
+  "air-fryers": true, "coffee-machines": true, fridges: true, "washing-machines": true, dishwashers: true, vacuums: true,
 };
 const strongCode = (t: string) =>
   t

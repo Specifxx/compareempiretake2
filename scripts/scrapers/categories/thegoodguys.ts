@@ -1,5 +1,6 @@
 import type { CategoryId, RawOffer } from "../../../src/lib/types";
 import { decodeEntities, get, sleep } from "../../lib/http";
+import { isAppliance } from "../appliances";
 
 const BASE = "https://www.thegoodguys.com.au";
 
@@ -123,6 +124,36 @@ const CATS: Partial<Record<Exclude<CategoryId, "phones">, Cat>> = {
     paths: ["/vacuums-and-cleaners/vacuum-cleaners/robot-vacuums", "/vacuums-and-cleaners/vacuum-cleaners/robot-mops"],
     keep: KEEP["robot-vacuums"],
   },
+  vacuums: {
+    paths: ["/vacuums-and-cleaners/vacuum-cleaners/stick-vacuums", "/vacuums-and-cleaners/vacuum-cleaners/handheld-vacuums", "/vacuums-and-cleaners/vacuum-cleaners/barrel-vacuums", "/vacuums-and-cleaners/vacuum-cleaners/upright-vacuums"],
+    keep: (t) => isAppliance("vacuums", t),
+  },
+  "air-fryers": {
+    paths: ["/small-kitchen-appliances/benchtop-cooking/air-fryers"],
+    keep: (t) => isAppliance("air-fryers", t),
+  },
+  "coffee-machines": {
+    paths: [
+      "/small-kitchen-appliances/coffee-machines-and-beverages/coffee-machines",
+      "/small-kitchen-appliances/coffee-machines-and-beverages/automatic-coffee-machines",
+      "/small-kitchen-appliances/coffee-machines-and-beverages/manual-coffee-machines",
+      "/small-kitchen-appliances/coffee-machines-and-beverages/capsule-coffee-machines",
+      "/small-kitchen-appliances/coffee-machines-and-beverages/drip-filter-coffee-machines",
+    ],
+    keep: (t) => isAppliance("coffee-machines", t),
+  },
+  fridges: {
+    paths: ["/fridges-and-freezers/refrigerators", "/fridges-and-freezers/freezers"],
+    keep: (t) => isAppliance("fridges", t),
+  },
+  "washing-machines": {
+    paths: ["/laundry/washing-machines", "/laundry/dryers"],
+    keep: (t) => isAppliance("washing-machines", t),
+  },
+  dishwashers: {
+    paths: ["/cooking-and-dishwashers/dishwashers"],
+    keep: (t) => isAppliance("dishwashers", t),
+  },
 };
 
 async function scrapeCategory(cat: Exclude<CategoryId, "phones">): Promise<RawOffer[]> {
@@ -156,7 +187,9 @@ async function scrapeCategory(cat: Exclude<CategoryId, "phones">): Promise<RawOf
         const was = Number(body.match(/(?:was|Was|RRP)[^$]{0,80}\$\s?([\d,]+(?:\.\d\d)?)/)?.[1]?.replace(/,/g, ""));
         // The URL slug ends with the model code, e.g. "...-smart-ai-tv-2026-75u85au".
         const code = href.split("-").pop()!.toUpperCase();
-        const mpn = /\d/.test(code) && /[A-Z]/.test(code) && code.length >= 5 ? code : undefined;
+        // Dyson's part numbers are all digits: "...-cordless-vacuum-626439-01".
+        const dyson = href.match(/-(\d{6}-\d{2})$/)?.[1];
+        const mpn = dyson ?? (/\d/.test(code) && /[A-Z]/.test(code) && code.length >= 5 ? code : undefined);
         offers.set(href, {
           retailer: "thegoodguys",
           sku: href.slice(1),
