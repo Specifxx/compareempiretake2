@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T00:01:49.687Z",
+ "scrapedAt": "2026-10-30T23:43:47.772Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -48,7 +48,7 @@
    "url": "https://www.worldwidestereo.com/products/bluesound-pulse-flex-all-in-one-wireless-streaming-speaker-white-pebble-grey",
    "price": 379,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bluesound-Pulse-Flex-Wireless-All-in-One-Speaker-White-Pebble-Grey-Image-02.jpg?v=1769097132",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bluesound"
   },
   {
@@ -306,7 +306,8 @@
    "sku": "50727977091383",
    "title": "Bose SoundLink Plus Portable Bluetooth Speaker (Black)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-plus-portable-bluetooth-speaker-black",
-   "price": 269,
+   "price": 214,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-SoundLink-Plus-Portable-Bluetooth-Speaker-Black-Image-01.jpg?v=1776789337",
    "inStock": false,
    "brand": "Bose"
@@ -316,7 +317,8 @@
    "sku": "50727977124151",
    "title": "Bose SoundLink Plus Portable Bluetooth Speaker (Blue Dusk)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-plus-portable-bluetooth-speaker-blue-dusk",
-   "price": 269,
+   "price": 214,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-SoundLink-Plus-Portable-Bluetooth-Speaker-Blue-Dusk-Image-01.jpg?v=1776789338",
    "inStock": false,
    "brand": "Bose"
@@ -336,7 +338,8 @@
    "sku": "51929566544183",
    "title": "Bose SoundLink Plus Portable Speaker (Sunset Peach)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-plus-portable-speaker-sunset-peach",
-   "price": 269,
+   "price": 179,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-SoundLink-Plus-Portable-Speaker-Sunset-Peach-Image-08.jpg?v=1776789338",
    "inStock": false,
    "brand": "Bose"
@@ -438,7 +441,7 @@
    "url": "https://www.worldwidestereo.com/products/denon-home-600-wireless-smart-speaker-stone",
    "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Denon-Home-600-Wireless-Smart-Speaker-Stone-Image-05.jpg?v=1774352297",
-   "inStock": false,
+   "inStock": true,
    "brand": "Denon"
   },
   {
@@ -1055,17 +1058,6 @@
   },
   {
    "retailer": "us-worldwidestereo",
-   "sku": "49662874091831",
-   "title": "JBL PartyBox Club 120 Portable Party Speaker (White)",
-   "url": "https://www.worldwidestereo.com/products/jbl-partybox-club-120-portable-party-speaker-white",
-   "price": 399.95,
-   "wasPrice": 550,
-   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/5_3419f694-4c0e-4ced-82fd-f4bf9c1b7e09.jpg?v=1762447811",
-   "inStock": false,
-   "brand": "JBL"
-  },
-  {
-   "retailer": "us-worldwidestereo",
    "sku": "50648933826871",
    "title": "JBL PartyBox Encore Essential 2 Portable Party Speaker",
    "url": "https://www.worldwidestereo.com/products/jbl-party-box-encore-essential-2-portable-party-speaker",
@@ -1193,7 +1185,7 @@
    "price": 385,
    "wasPrice": 540,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBLPro-IRX108BT-8-Inch-Powered-Portable-PA-Speaker-with-Bluetooth-Image-01.jpg?v=1778772464",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL Professional"
   },
   {
@@ -1825,7 +1817,7 @@
    "url": "https://www.worldwidestereo.com/products/tivoli-audio-pal-bt-bluetooth-fm-portable-radio-and-speaker-gen-3-red",
    "price": 219.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/TivoliAudio-PAL-BT-Gen-3-Bluetooth-AM-FM-Portable-Radio-Speaker-Red-Image-03.jpg?v=1760970134",
-   "inStock": true,
+   "inStock": false,
    "brand": "Tivoli Audio"
   },
   {

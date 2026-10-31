@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T00:07:27.510Z",
+ "scrapedAt": "2026-10-30T23:49:02.911Z",
  "offers": [
   {
    "retailer": "uk-microsoft",
@@ -69,7 +69,7 @@
    "url": "https://www.microsoft.com/en-gb/d/surface-pro-for-business-13-inch-11th-edition-snapdragon/8nl1w61jw8zm",
    "price": 1385.1,
    "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/SPX2B-BB-00",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-microsoft",
@@ -367,7 +367,7 @@
    "brand": "Microsoft",
    "title": "Microsoft Surface Pro, 12-inch (1st Edition) - Snapdragon X Plus (8 Core), Platinum, WiFi, 16GB RAM, 1TB SSD",
    "url": "https://www.microsoft.com/en-gb/d/surface-pro-12-inch-1st-edition/8mzbmmcjzqv2",
-   "price": 1234.9,
+   "price": 1399,
    "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-12-inch-1Ed-Rational-Violet-Top-Horizontal",
    "inStock": true
   },
@@ -377,7 +377,7 @@
    "brand": "Microsoft",
    "title": "Microsoft Surface Pro, 12-inch (1st Edition) - Snapdragon X Plus (8 Core), Platinum, WiFi, 16GB RAM, 256GB SSD",
    "url": "https://www.microsoft.com/en-gb/d/surface-pro-12-inch-1st-edition/8mzbmmcjzqv2",
-   "price": 897.02,
+   "price": 899,
    "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-12-inch-1Ed-Rational-Violet-Top-Horizontal",
    "inStock": true
   },
@@ -387,7 +387,7 @@
    "brand": "Microsoft",
    "title": "Microsoft Surface Pro, 12-inch (1st Edition) - Snapdragon X Plus (8 Core), Platinum, WiFi, 16GB RAM, 512GB SSD",
    "url": "https://www.microsoft.com/en-gb/d/surface-pro-12-inch-1st-edition/8mzbmmcjzqv2",
-   "price": 970.11,
+   "price": 1051.27,
    "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-12-inch-1Ed-Rational-Violet-Top-Horizontal",
    "inStock": true
   },
@@ -719,6 +719,186 @@
    "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-11th-edition-essentials-bundle/8mzbmmcjzp88",
    "price": 1259,
    "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/SPX2C-2000x1500-BB-A-00",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Black, 16 GB RAM, 1 TB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Black, 16 GB RAM, 1 TB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1949,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Black, 16 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Black, 16 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1549,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Black, 24 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Black, 24 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1780,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Dune, 16 GB RAM, 1 TB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Dune, 16 GB RAM, 1 TB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1949,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Dune, 16 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Dune, 16 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1549,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Dune, 24 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Dune, 24 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1780,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 16 GB RAM, 1 TB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 16 GB RAM, 1 TB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1949,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 16 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 16 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1549,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 24 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 24 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1780,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 32 GB RAM, 1 TB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 32 GB RAM, 1 TB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 2035,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 64 GB RAM, 1 TB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Elite (12 Core) with OLED display, Platinum, 64 GB RAM, 1 TB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 2875,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Plus (10 Core) with LCD display, Black, 16 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Plus (10 Core) with LCD display, Black, 16 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1349,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Plus (10 Core) with LCD display, Black, 24 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Plus (10 Core) with LCD display, Black, 24 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1849,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Plus (10 Core) with LCD display, Dune, 16 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Plus (10 Core) with LCD display, Dune, 16 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1349,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Plus (10 Core) with LCD display, Dune, 24 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Plus (10 Core) with LCD display, Dune, 24 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1849,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Plus (10 Core) with LCD display, Platinum, 16 GB RAM, 256 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Plus (10 Core) with LCD display, Platinum, 16 GB RAM, 256 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1299,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Plus (10 Core) with LCD display, Platinum, 16 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Plus (10 Core) with LCD display, Platinum, 16 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1270.15,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-microsoft",
+   "sku": "8mzbmmcjzpmr:Snapdragon X2 Plus (10 Core) with LCD display, Platinum, 24 GB RAM, 512 GB SSD",
+   "brand": "Microsoft",
+   "title": "Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Plus (10 Core) with LCD display, Platinum, 24 GB RAM, 512 GB SSD",
+   "url": "https://www.microsoft.com/en-gb/d/surface-pro-13-inch-12th-edition/8mzbmmcjzpmr",
+   "price": 1849,
+   "image": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/b00-Surface-Pro-Snapdragon-12Ed-MB-Front",
    "inStock": true
   },
   {

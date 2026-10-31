@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T00:00:52.275Z",
+ "scrapedAt": "2026-10-30T23:42:44.841Z",
  "offers": [
   {
    "retailer": "us-bose",
@@ -51,8 +51,8 @@
    "brand": "Bose",
    "title": "Bose Portable Smart Speaker - Luxe Silver",
    "url": "https://www.bose.com/p/speakers/bose-portable-smart-speaker/PORTSS-SPEAKERWIRELESS.html?dwvar_PORTSS-SPEAKERWIRELESS_color=LUXE%20SILVER",
-   "price": 349,
-   "inStock": true
+   "price": 249,
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -71,7 +71,7 @@
    "brand": "Bose",
    "title": "Bose Portable Smart Speaker - Triple Black",
    "url": "https://www.bose.com/p/speakers/bose-portable-smart-speaker/PORTSS-SPEAKERWIRELESS.html?dwvar_PORTSS-SPEAKERWIRELESS_color=TRIPLE%20BLACK",
-   "price": 349,
+   "price": 249,
    "inStock": true
   },
   {
@@ -274,6 +274,17 @@
   },
   {
    "retailer": "us-bose",
+   "sku": "SLMC2-SPEAKERWIRELESS-TWBL-WW",
+   "mpn": "SLMC2-SPEAKERWIRELESS-TWBL-WW",
+   "brand": "Bose",
+   "title": "Bose SoundLink Micro Portable Speaker (2nd Gen) - Twilight Blue",
+   "url": "https://www.bose.com/p/speakers/bose-soundlink-micro-portable-speaker-2nd-gen/SLMC2-SPEAKERWIRELESS.html?dwvar_SLMC2-SPEAKERWIRELESS_color=TWILIGHT%20BLUE",
+   "price": 129,
+   "image": "https://assets.bosecreative.com/transform/767cfc70-a8b7-44be-9450-748213a6d321/SLMIILE_TwilightBlue_PDP-SF-Silo1_1500x1120?format=avif&quality=95",
+   "inStock": true
+  },
+  {
+   "retailer": "us-bose",
    "sku": "SLP-SPEAKERWIRELESS-BLK-WW",
    "mpn": "SLP-SPEAKERWIRELESS-BLK-WW",
    "brand": "Bose",
@@ -321,18 +332,8 @@
    "sku": "858365-5110",
    "mpn": "858365-5110",
    "brand": "Bose",
-   "title": "Bose SoundLink Revolve II Bluetooth Speaker - Black",
-   "url": "https://www.bose.com/p/speakers/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS.html?dwvar_SLRVII-SPEAKERWIRELESS_color=BLACK",
-   "price": 219,
-   "inStock": false
-  },
-  {
-   "retailer": "us-bose",
-   "sku": "858365-5330",
-   "mpn": "858365-5330",
-   "brand": "Bose",
-   "title": "Bose SoundLink Revolve II Bluetooth Speaker - Gray",
-   "url": "https://www.bose.com/p/speakers/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS.html?dwvar_SLRVII-SPEAKERWIRELESS_color=GRAY",
+   "title": "Bose SoundLink Revolve II Bluetooth Speaker",
+   "url": "https://www.bose.com/p/speakers/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS.html",
    "price": 219,
    "inStock": false
   },

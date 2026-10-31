@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-29T23:25:16.651Z",
+ "scrapedAt": "2026-10-30T23:05:55.489Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -88,7 +88,7 @@
    "url": "https://www.mwave.com.au/products/amd-ryzen-5-9500f-6-core-12-threads-am5-up-to-5ghz-unlocked-cpu-processor-wraith-stealth-ac97418",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/amd_ryzen_5_9500f_6_core_12_threads_am5_up_to_5ghz_unlocked_cpu_processor_ac97418_66706.jpg?v=1787795177",
-   "inStock": true,
+   "inStock": false,
    "brand": "AMD"
   },
   {
@@ -238,7 +238,7 @@
    "url": "https://www.mwave.com.au/products/amd-ryzen-9-9950x-16-core-32-threads-up-to-57ghz-am5-unlocked-cpu-processor-ac76670",
    "price": 888,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/amd_ryzen_9_9950x_16core_am5_43_ghz_unlocked_cpu_processor_ac76670_90884.jpg?v=1787795183",
-   "inStock": false,
+   "inStock": true,
    "brand": "AMD"
   },
   {
@@ -269,6 +269,16 @@
    "price": 2013.76,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/amd_ryzen_threadripper_7960x_24core_str5_unlocked_cpu_processor_ac71111_16340.jpg?v=1787795179",
    "inStock": true,
+   "brand": "AMD"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC71110",
+   "title": "AMD Ryzen Threadripper 7970X 32 Core 64 Thread up to 5.3GHz  sTR5 Unlocked CPU Processor",
+   "url": "https://www.mwave.com.au/products/amd-ryzen-threadripper-7970x-32-core-64-thread-up-to-53ghz-str5-unlocked-cpu-processor-ac71110",
+   "price": 3499,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/amd_ryzen_threadripper_7970x_32core_str5_unlocked_cpu_processor_ac71110_65206.jpg?v=1787795184",
+   "inStock": false,
    "brand": "AMD"
   },
   {
