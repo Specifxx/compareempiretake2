@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-29T23:25:11.729Z",
+ "scrapedAt": "2026-10-30T23:05:50.984Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -128,7 +128,7 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060-ti-prime-16gb-gddr7-video-card-ac83891",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060_ti_prime_16gb_video_card_ac83891_73903.jpg?v=1787784016",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -186,7 +186,7 @@
    "sku": "AC99119",
    "title": "ASUS GeForce RTX 5060Ti T1 Series OC 8GB Video Card",
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060ti-t1-series-oc-8gb-video-card-ac99119",
-   "price": 899,
+   "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060ti_t1_series_oc_8gb_video_card_ac99119_86562.jpg?v=1787795385",
    "inStock": true,
    "brand": "Asus"
@@ -798,7 +798,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5060-ti-eagle-oc-ice-8gb-video-card-ac84808",
    "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5060_ti_eagle_oc_ice_8gb_video_card_ac84808_61463.jpg?v=1787796639",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gigabyte"
   },
   {
@@ -888,7 +888,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5060-windforce-oc-8gb-video-card-ac86088",
    "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5060_windforce_oc_8gb_video_card_ac86088_34670.jpg?v=1787796645",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gigabyte"
   },
   {
@@ -1166,7 +1166,7 @@
    "sku": "AC62807",
    "title": "Gigabyte Radeon RX 7600 GAMING OC 8GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-radeon-rx-7600-gaming-oc-8gb-video-card",
-   "price": 379,
+   "price": 479,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/670.jpg?v=1790144493",
    "inStock": true,
    "brand": "Gigabyte"
@@ -1278,7 +1278,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5060-ti-twin-x2-16gb-video-card-ac84868",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5060_ti_twin_x2_16gb_video_card_ac84868_32483.jpg?v=1787797062",
-   "inStock": true,
+   "inStock": false,
    "brand": "Inno3D"
   },
   {
@@ -1328,7 +1328,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5060-twin-x2-8gb-video-card-ac86241",
    "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5060_twin_x2_8gb_video_card_ac86241_56692.jpg?v=1787746240",
-   "inStock": true,
+   "inStock": false,
    "brand": "Inno3D"
   },
   {
@@ -1676,7 +1676,7 @@
    "sku": "AC86250",
    "title": "MSI GeForce RTX 5060 Ti VENTUS 2X PLUS 8GB Video Card",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5060-ti-ventus-2x-plus-8gb-video-card-ac86250",
-   "price": 659,
+   "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5060_ti_ventus_2x_plus_8gb_video_card_ac86250_86116.jpg?v=1787797750",
    "inStock": false,
    "brand": "MSI"
@@ -1988,7 +1988,7 @@
    "url": "https://www.mwave.com.au/products/nvidia-rtx-pro-5000-blackwell-48gb-professional-video-card-ac86470",
    "price": 12999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/nvidia_rtx_pro_5000_blackwell_48gb_professional_video_card_ac86470_87795.jpg?v=1787746934",
-   "inStock": false,
+   "inStock": true,
    "brand": "Nvidia"
   },
   {
@@ -2008,7 +2008,7 @@
    "url": "https://www.mwave.com.au/products/nvidia-rtx-pro-6000-blackwell-maxq-96gb-professional-video-card-ac86471",
    "price": 29999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/nvidia_rtx_pro_6000_blackwell_maxq_96gb_professional_video_card_ac86471_49229.jpg?v=1787797931",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nvidia"
   },
   {
@@ -2016,7 +2016,7 @@
    "sku": "AC84825",
    "title": "Palit GeForce  RTX 5060 Ti Dual 8GB GDDR7 Video Card",
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5060-ti-dual-8gb-gddr7-video-card-ac84825",
-   "price": 629,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_rtx5060ti_dual_8g_gddr7_128bit_3dp_hdmi_ac84825_73058.jpg?v=1787798045",
    "inStock": true,
    "brand": "Palit"
@@ -2098,7 +2098,7 @@
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5070-ti-gamingpros-16gb-video-card-ac88912",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5070_ti_gamingpros_16gb_video_card_ac88912_93702.jpg?v=1787798042",
-   "inStock": false,
+   "inStock": true,
    "brand": "Palit"
   },
   {
@@ -2136,9 +2136,9 @@
    "sku": "AC86219",
    "title": "Palit GeForce RTX 5090 GameRock OC 32GB Video Card",
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5090-gamerock-oc-32gb-video-card-ac86219",
-   "price": 10999,
+   "price": 11499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5090_gamerock_oc_32gb_video_card_ac86219_9743.jpg?v=1787798045",
-   "inStock": false,
+   "inStock": true,
    "brand": "Palit"
   },
   {
@@ -2228,7 +2228,7 @@
    "url": "https://www.mwave.com.au/products/sapphire-radeon-rx-9070-xt-nitro-16gb-video-card-ac82920",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sapphire_radeon_rx_9070_xt_nitro_16gb_video_card_ac82920_8903.jpg?v=1787798357",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sapphire"
   },
   {

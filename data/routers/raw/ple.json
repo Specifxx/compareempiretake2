@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-29T23:25:53.809Z",
+ "scrapedAt": "2026-10-30T23:06:35.924Z",
  "offers": [
   {
    "retailer": "ple",
@@ -269,7 +269,7 @@
    "brand": "Teltonika",
    "mpn": "RUT951",
    "url": "https://www.ple.com.au/products/685105/teltonika-rut951-industrial-cellular-router",
-   "price": 399,
+   "price": 329,
    "wasPrice": 539,
    "image": "https://plecom.imgix.net/iil-473272-685105.jpg?w=600&h=600",
    "inStock": true
@@ -341,7 +341,7 @@
    "brand": "Teltonika",
    "mpn": "RUTX50",
    "url": "https://www.ple.com.au/products/668880/teltonika-rutx50-industrial-5g-router",
-   "price": 997,
+   "price": 777,
    "wasPrice": 1298,
    "image": "https://plecom.imgix.net/iil-398487-668880.jpg?w=600&h=600",
    "inStock": true
@@ -367,7 +367,7 @@
    "url": "https://www.ple.com.au/products/637331/tp-link-archer-ax10-wireless-ax1500-wifi-6-dual-band-gigabit-router",
    "price": 119,
    "image": "https://plecom.imgix.net/iil-195057-637331.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -649,7 +649,7 @@
    "url": "https://www.ple.com.au/products/668392/tp-link-archer-vx1800v-ax1800-dual-band-vdsladsl-wi-fi-6-modem-router",
    "price": 229,
    "image": "https://plecom.imgix.net/iil-394977-668392.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -977,7 +977,7 @@
    "brand": "TP-Link",
    "mpn": "M7000",
    "url": "https://www.ple.com.au/products/642253/tp-link-m7000-4g-lte-mobile-wi-fi-router",
-   "price": 82,
+   "price": 78,
    "wasPrice": 129,
    "image": "https://plecom.imgix.net/iil-231635-642253.jpg?w=600&h=600",
    "inStock": true
@@ -1211,7 +1211,7 @@
    "brand": "Ubiquiti",
    "mpn": "UDM-Beast",
    "url": "https://www.ple.com.au/products/684438/ubiquiti-unifi-dream-machine-beast-hyperscale-class-cloud-gateway",
-   "price": 3199,
+   "price": 2816,
    "wasPrice": 3499,
    "image": "https://plecom.imgix.net/iil-468470-684438.jpg?w=600&h=600",
    "inStock": true
@@ -1223,7 +1223,7 @@
    "brand": "Ubiquiti",
    "mpn": "UDR-5G-Max",
    "url": "https://www.ple.com.au/products/685376/ubiquiti-unifi-dream-router-5g-max",
-   "price": 1029,
+   "price": 908,
    "wasPrice": 1099,
    "image": "https://plecom.imgix.net/iil-472290-685376.jpg?w=600&h=600",
    "inStock": true
@@ -1247,7 +1247,7 @@
    "brand": "Ubiquiti",
    "mpn": "UXG-Fiber",
    "url": "https://www.ple.com.au/products/674102/ubiquiti-unifi-gateway-fiber-10gbe-router",
-   "price": 549,
+   "price": 557,
    "wasPrice": 589,
    "image": "https://plecom.imgix.net/iil-422747-674102.jpg?w=600&h=600",
    "inStock": true
@@ -1259,8 +1259,7 @@
    "brand": "Ubiquiti",
    "mpn": "UXG-Lite",
    "url": "https://www.ple.com.au/products/664078/ubiquiti-unifi-gateway-lite-router",
-   "price": 103,
-   "wasPrice": 129,
+   "price": 179,
    "image": "https://plecom.imgix.net/iil-367147-664078.jpg?w=600&h=600",
    "inStock": true
   },

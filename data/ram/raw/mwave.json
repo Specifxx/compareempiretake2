@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-29T23:25:19.030Z",
+ "scrapedAt": "2026-10-30T23:05:58.088Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -8,6 +8,16 @@
    "url": "https://www.mwave.com.au/products/adata-16gb-1x-16gb-ddr4-3200mhz-sodimm-laptop-memory-ac87489",
    "price": 219,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/adata_8gb_1x_8gb_ddr4_3200mhz_sodimm_laptop_memory_ac87489_61950.jpg?v=1787744425",
+   "inStock": true,
+   "brand": "ADATA"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC50727",
+   "title": "ADATA 16GB (1x 16GB) DDR5 4800MHz UDIMM Memory",
+   "url": "https://www.mwave.com.au/products/adata-16gb-1x-16gb-ddr5-4800mhz-udimm-memory-ac50727",
+   "price": 429,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/adata_16gb_1x_16gb_ddr5_4800mhz_udimm_memory_ac50727.jpg?v=1787744427",
    "inStock": true,
    "brand": "ADATA"
   },
@@ -138,6 +148,16 @@
    "url": "https://www.mwave.com.au/products/adata-premier-8gb-1x8gb-ddr4-3200mhz-desktop-memory-ac96651",
    "price": 136.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/adata_premier_8gb_1x8gb_ddr4_3200mhz_desktop_memory_ac96651_81116.jpg?v=1787744430",
+   "inStock": true,
+   "brand": "ADATA"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC98230",
+   "title": "ADATA Premier 8GB (1x8GB) DDR5 4800MHz Desktop Memory",
+   "url": "https://www.mwave.com.au/products/adata-premier-8gb-1x8gb-ddr5-4800mhz-desktop-memory-ac98230",
+   "price": 169,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/adata_premier_8gb_1x8gb_ddr5_4800mhz_desktop_memory_ac98230_9389.jpg?v=1787744429",
    "inStock": true,
    "brand": "ADATA"
   },
@@ -278,7 +298,7 @@
    "url": "https://www.mwave.com.au/products/corsair-vengeance-192gb-4x-48gb-ddr5-5200mhz-c38-memory-black-ac61651",
    "price": 4499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/corsair_vengeance_192gb_4x_48gb_ddr5_5200mhz_c38_memory_black_ac61651_52200.jpg?v=1787796083",
-   "inStock": true,
+   "inStock": false,
    "brand": "Corsair"
   },
   {
@@ -298,6 +318,16 @@
    "url": "https://www.mwave.com.au/products/corsair-vengeance-rgb-16gb-2-x-8gb-ddr5-5200mhz-cl40-intel-xmp-amd-expo-desktop-memory-ac96729",
    "price": 369,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/corsair_vengeance_rgb_16gb_2_x_8gb_ddr5_5200mhz_cl40_desktop_memory_ac96729_31011.jpg?v=1787783510",
+   "inStock": true,
+   "brand": "Corsair"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC99851",
+   "title": "Corsair Vengeance RGB 16GB (2 x 8GB) DDR5 5200MHz CL40 INTEL XMP & AMD EXPO Desktop Memory - White",
+   "url": "https://www.mwave.com.au/products/corsair-vengeance-rgb-16gb-2-x-8gb-ddr5-5200mhz-cl40-intel-xmp-amd-expo-desktop-memory-white-ac99851",
+   "price": 474.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/corsair_vengeance_rgb_16gb_2_x_8gb_ddr5_5200mhz_cl40_intel_xmp_amd_expo_desktop_memory_white_ac99851_93985.jpg?v=1787783512",
    "inStock": true,
    "brand": "Corsair"
   },
@@ -353,6 +383,16 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC91889",
+   "title": "Corsair Vengeance RGB 64GB (2x 32GB) DDR5 6000MHz Intel XMP & AMD EXPO  Desktop Memory",
+   "url": "https://www.mwave.com.au/products/corsair-vengeance-rgb-64gb-2x-32gb-ddr5-6000mhz-intel-xmp-amd-expo-desktop-memory-ac91889",
+   "price": 1499,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/corsair_vengeance_rgb_64gb_2x_32gb_ddr5_6000mhz_c40_desktop_memory_black_ac91889_18720.jpg?v=1787796096",
+   "inStock": true,
+   "brand": "Corsair"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC99426",
    "title": "Corsair Vengeance RGB 64GB (2x32GB) DDR5 5600MHz AMD EXPO & Intel XMP CL40 Desktop Memory - Grey",
    "url": "https://www.mwave.com.au/products/corsair-vengeance-rgb-64gb-2x32gb-ddr5-5600mhz-amd-expo-intel-xmp-cl40-desktop-memory-grey-ac99426",
@@ -399,6 +439,16 @@
    "price": 219,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_16gb_1x_16gb_ddr4_3200mhz_sodimm_memory_ac46303.jpg?v=1787796111",
    "inStock": false,
+   "brand": "Crucial"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC60064",
+   "title": "Crucial 16GB (1x 16GB) DDR5 5600MHz Desktop Memory",
+   "url": "https://www.mwave.com.au/products/crucial-16gb-1x-16gb-ddr5-5600mhz-desktop-memory-ac60064",
+   "price": 319,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_16gb_1x_16gb_ddr5_5600mhz_memory_ac60064_16468.jpg?v=1787796111",
+   "inStock": true,
    "brand": "Crucial"
   },
   {
@@ -473,6 +523,16 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC98763",
+   "title": "Crucial 8GB (1x 8GB) DDR5 5600MHz Desktop Memory",
+   "url": "https://www.mwave.com.au/products/crucial-8gb-1x-8gb-ddr5-5600mhz-desktop-memory-ac98763",
+   "price": 179,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_32gb_1x_32gb_ddr5_5600mhz_memory_ac98763_15493.jpg?v=1787796114",
+   "inStock": true,
+   "brand": "Crucial"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC93062",
    "title": "Crucial Pro OC CP2K16G64C32U5B 32GB (2x16GB) 6400MHz CL32 Intel XMP & AMD EXPO DDR5 - Black",
    "url": "https://www.mwave.com.au/products/crucial-pro-oc-cp2k16g64c32u5b-32gb-2x16gb-6400mhz-cl32-intel-xmp-amd-expo-ddr5-black-ac93062",
@@ -509,7 +569,7 @@
    "url": "https://www.mwave.com.au/products/gskill-aegis-16gb-1x-16gb-ddr4-2666mhz-udimm-memory-ac50099",
    "price": 159,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_aegis_16gb_1x_16gb_ddr4_2666mhz_udimm_memory_ac50099.jpg?v=1787796703",
-   "inStock": true,
+   "inStock": false,
    "brand": "G.Skill"
   },
   {
@@ -969,7 +1029,7 @@
    "url": "https://www.mwave.com.au/products/gskill-trident-z-rgb-16gb-2x-8gb-ddr4-3200mhz-desktop-memory-amd-ac16039",
    "price": 320.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/AC16039_1.jpg?v=1787796721",
-   "inStock": true,
+   "inStock": false,
    "brand": "G.Skill"
   },
   {
@@ -984,21 +1044,21 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC28599",
-   "title": "G.Skill Trident Z RGB 16GB (2x 8GB) DDR4 3600MHz Desktop Memory",
-   "url": "https://www.mwave.com.au/products/gskill-trident-z-rgb-16gb-2x-8gb-ddr4-3600mhz-desktop-memory-ac28599",
-   "price": 233.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z_rgb_16gb_2x_8gb_ddr4_3600mhz_memory_ac28599.jpg?v=1787796720",
-   "inStock": true,
-   "brand": "G.Skill"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC28605",
    "title": "G.Skill Trident Z RGB 16GB (2x 8GB) DDR4 3600MHz Desktop Memory",
    "url": "https://www.mwave.com.au/products/gskill-trident-z-rgb-16gb-2x-8gb-ddr4-3600mhz-desktop-memory-ac28605",
    "price": 239,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z_rgb_16gb_2x_8gb_ddr4_3600mhz_memory_ac28605.jpg?v=1787745915",
+   "inStock": true,
+   "brand": "G.Skill"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC28599",
+   "title": "G.Skill Trident Z RGB 16GB (2x 8GB) DDR4 3600MHz Desktop Memory",
+   "url": "https://www.mwave.com.au/products/gskill-trident-z-rgb-16gb-2x-8gb-ddr4-3600mhz-desktop-memory-ac28599",
+   "price": 233.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gskill_trident_z_rgb_16gb_2x_8gb_ddr4_3600mhz_memory_ac28599.jpg?v=1787796720",
    "inStock": true,
    "brand": "G.Skill"
   },
@@ -1258,7 +1318,7 @@
    "url": "https://www.mwave.com.au/products/gskill-trident-z5-neox-rgb-32gb-2x-16gb-ddr5-6000mhz-cl30-amd-expo-desktop-memory-white-ac99948",
    "price": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/178305877510.jpg?v=1790137491",
-   "inStock": false,
+   "inStock": true,
    "brand": "G.Skill"
   },
   {
@@ -1576,7 +1636,7 @@
    "sku": "AC92582",
    "title": "Kingbank 16GB (1x 16GB) DDR5 5600MHz SODIMM Laptop Memory",
    "url": "https://www.mwave.com.au/products/kingbank-16gb-1x-16gb-ddr5-5600mhz-sodimm-laptop-memory-ac92582",
-   "price": 329,
+   "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingbank_16gb_1x_16gb_ddr5_5600mhz_sodimm_laptop_memory_ac92582_50593.jpg?v=1787785977",
    "inStock": true,
    "brand": "KingBank"
@@ -1616,7 +1676,7 @@
    "sku": "AC94130",
    "title": "KingBank KRRB RGB 32GB (2x16GB) DDR5 6000MHz CL36 Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/kingbank-krrb-rgb-32gb-2x16gb-ddr5-6000mhz-cl36-desktop-memory-black-ac94130",
-   "price": 599,
+   "price": 650,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingbank_krrb_ddr5_6000mhz_32gb_216gb_cl36_rgb_cxmt_black_ac94130_57226.jpg?v=1787785981",
    "inStock": true,
    "brand": "KingBank"
@@ -1678,7 +1738,7 @@
    "url": "https://www.mwave.com.au/products/kingston-32gb-1x-32gb-ddr5-5600mhz-sodimm-laptop-memory-ac78087",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingston_32gb_1x_32gb_ddr5_5600mhz_sodimm_laptop_memory_ac78087_80704.jpg?v=1787797203",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kingston"
   },
   {
@@ -1689,6 +1749,16 @@
    "price": 320.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/AB53562_4.jpg?v=1787797206",
    "inStock": false,
+   "brand": "Kingston"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC94873",
+   "title": "Kingston FURY Beast 16GB (1x16GB) DDR5 5600MHz CL40 XMP Desktop Memory - Black",
+   "url": "https://www.mwave.com.au/products/kingston-fury-beast-16gb-1x16gb-ddr5-5600mhz-cl40-xmp-desktop-memory-black-ac94873",
+   "price": 399,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingston_fury_beast_16gb_1x16gb_ddr5_5600mhz_cl40_xmp_desktop_memory_black_ac94873_80231.jpg?v=1787797211",
+   "inStock": true,
    "brand": "Kingston"
   },
   {
@@ -1856,7 +1926,7 @@
    "sku": "AC80432",
    "title": "Kingston FURY Beast RGB 16GB (2x 8GB) DDR5 6000MHz CL36 AMD Desktop Memory - Black",
    "url": "https://www.mwave.com.au/products/kingston-fury-beast-rgb-16gb-2x-8gb-ddr5-6000mhz-cl36-amd-desktop-memory-black-ac80432",
-   "price": 369,
+   "price": 389,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingston_fury_beast_rgb_16gb_2x_8gb_ddr5_6000mts_cl36_amd_desktop_memory_black_ac80432_62058.jpg?v=1787797219",
    "inStock": true,
    "brand": "Kingston"
@@ -2117,7 +2187,7 @@
    "sku": "AC78811",
    "title": "KLEVV CRAS V RGB 64GB (2x 32GB) DDR5 6000MHz CL30 Desktop Memory - White",
    "url": "https://www.mwave.com.au/products/klevv-cras-v-rgb-64gb-2x-32gb-ddr5-6000mhz-cl30-desktop-memory-white-ac78811",
-   "price": 1499,
+   "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/klevv_cras_v_rgb_64gb_2x_32gb_ddr5_6000mhz_c30_desktop_memory_white_ac78811_35070.jpg?v=1787797250",
    "inStock": true,
    "brand": "KLEVV"
@@ -2149,7 +2219,7 @@
    "url": "https://www.mwave.com.au/products/klevv-fit-v-32gb-2x-16gb-ddr5-6000mhz-c30-desktop-memory-white-ac94088",
    "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/klevv_fit_v_32gb_2x_16gb_ddr5_6000mhz_c30_desktop_memory_white_ac94088_72007.jpg?v=1787797248",
-   "inStock": false,
+   "inStock": true,
    "brand": "KLEVV"
   },
   {
@@ -2249,7 +2319,7 @@
    "url": "https://www.mwave.com.au/products/lexar-16gb-1x16gb-ddr5-5600-mts-sodimm-laptop-memory-ac99793",
    "price": 359,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_16gb_1x16gb_ddr5_5600_mts_sodimm_laptop_memory_ac99793_57011.jpg?v=1787746534",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lexar"
   },
   {
@@ -2299,6 +2369,16 @@
    "url": "https://www.mwave.com.au/products/lexar-8gb-1x8gb-ddr5-4800-mts-sodimm-laptop-memory-blister-ac99794",
    "price": 179,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_8gb_1x8gb_ddr5_4800_mts_sodimm_laptop_memory_blister_ac99794_33533.jpg?v=1787786203",
+   "inStock": true,
+   "brand": "Lexar"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC99803",
+   "title": "Lexar 8GB (1x8GB) DDR5 5600 MT/s UDIMM Desktop Memory - Blister",
+   "url": "https://www.mwave.com.au/products/lexar-8gb-1x8gb-ddr5-5600-mts-udimm-desktop-memory-blister-ac99803",
+   "price": 229,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_8gb_1x8gb_ddr5_5600_mts_udimm_desktop_memory_blister_ac99803_93968.jpg?v=1787786206",
    "inStock": true,
    "brand": "Lexar"
   },
@@ -2976,7 +3056,7 @@
    "url": "https://www.mwave.com.au/products/vcolor-manta-xsky-rgb-32gb-2x-16gb-ddr5-6000mhz-cl36-desktop-memory-black-ac97268",
    "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/vcolor_manta_xsky_rgb_32gb_2x_16gb_ddr5_6000mhz_cl36_desktop_memory_black_ac97268_13793.jpg?v=1787799700",
-   "inStock": false,
+   "inStock": true,
    "brand": "V-Color"
   },
   {

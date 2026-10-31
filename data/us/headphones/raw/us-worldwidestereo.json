@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T00:01:46.861Z",
+ "scrapedAt": "2026-10-30T23:43:45.502Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -78,7 +78,7 @@
    "url": "https://www.worldwidestereo.com/products/audeze-lcd-x-planar-magnetic-over-ear-headphones-with-carrying-case-black-leather-free",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/2_32958ee9-788f-46cb-b912-0a7208ff4f08.jpg?v=1762447711",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audeze"
   },
   {
@@ -445,10 +445,528 @@
   },
   {
    "retailer": "us-worldwidestereo",
+   "sku": "53462663430455",
+   "title": "Beyerdynamic AMIRON 200 Open True Wireless Earphones (Black)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-amiron-200-open-true-wireless-earphones-black",
+   "price": 199.99,
+   "wasPrice": 299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-200-Open-True-Wireless-Earphones-Black-Image-08.jpg?v=1793374267",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462663856439",
+   "title": "Beyerdynamic AMIRON 200 Open True Wireless Earphones (Sport)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-amiron-200-open-true-wireless-earphones-sport",
+   "price": 199.99,
+   "wasPrice": 299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-200-Open-True-Wireless-Earphones-Sport-Image-01.jpg?v=1793374267",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462664741175",
+   "title": "Beyerdynamic AMIRON 200 Open True Wireless Earphones (White)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-amiron-200-open-true-wireless-earphones-white",
+   "price": 199.99,
+   "wasPrice": 299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-200-Open-True-Wireless-Earphones-White-Image-09.jpg?v=1793374268",
+   "inStock": false,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462665625911",
+   "title": "Beyerdynamic AMIRON 300 True Wireless Noise Cancelling Earbuds (Black)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-amiron-300-true-wireless-noise-cancelling-earbuds-black",
+   "price": 279.99,
+   "wasPrice": 349.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-300-True-Wireless-Noise-Cancelling-Earbuds-Black-Image-01.jpg?v=1793374268",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462666510647",
+   "title": "Beyerdynamic AMIRON 300 True Wireless Noise Cancelling Earbuds (Cream)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-amiron-300-true-wireless-noise-cancelling-earbuds-cream",
+   "price": 279.99,
+   "wasPrice": 349.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-300-True-Wireless-Noise-Cancelling-Earbuds-Cream-Image-01.jpg?v=1793374268",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462667690295",
+   "title": "Beyerdynamic AMIRON ZERO Open-Ear Clip-on Earbuds (Black)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-amiron-zero-open-ear-clip-on-earbuds-black",
+   "price": 179.99,
+   "wasPrice": 249.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-ZERO-Open-Ear-Clip-on-Earbuds-Black-Image-06.jpg?v=1793374269",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462668116279",
+   "title": "Beyerdynamic AMIRON ZERO Open-Ear Clip-on Earbuds (Sport)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-amiron-zero-open-ear-clip-on-earbuds-sport",
+   "price": 179.99,
+   "wasPrice": 249.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-ZERO-Open-Ear-Clip-on-Earbuds-Sport-Image-06.jpg?v=1793374269",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462668542263",
+   "title": "Beyerdynamic AMIRON ZERO Open-Ear Clip-on Earbuds (White)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-amiron-zero-open-ear-clip-on-earbuds-white",
+   "price": 179.99,
+   "wasPrice": 249.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-ZERO-Open-Ear-Clip-on-Earbuds-White-Image-05.jpg?v=1793374270",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462669164855",
+   "title": "Beyerdynamic AVENTHO 100 Wireless On-Ear Headphones with Active Noise Cancellation (Black)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-aventho-100-wireless-on-ear-headphones-with-active-noise-cancellation-black",
+   "price": 229.99,
+   "wasPrice": 299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AVENTHO-100-Wireless-On-Ear-Headphones-with-Active-Noise-Cancellation-Black-Image-01.jpg?v=1793374270",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462669394231",
+   "title": "Beyerdynamic AVENTHO 100 Wireless On-Ear Headphones with Active Noise Cancellation (Brown)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-aventho-100-wireless-on-ear-headphones-with-active-noise-cancellation-brown",
+   "price": 229.99,
+   "wasPrice": 299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AVENTHO-100-Wireless-On-Ear-Headphones-with-Active-Noise-Cancellation-Brown-Image-01.jpg?v=1793374270",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462906667319",
+   "title": "Beyerdynamic AVENTHO 100 Wireless On-Ear Headphones with Active Noise Cancellation (Cream)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-aventho-100-wireless-on-ear-headphones-with-active-noise-cancellation-cream",
+   "price": 229.99,
+   "wasPrice": 299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AVENTHO-100-Wireless-On-Ear-Headphones-with-Active-Noise-Cancellation-Cream-Image-01.jpg?v=1793374869",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462907224375",
+   "title": "Beyerdynamic AVENTHO 300 Wireless Over-Ear Headphones with Active Noise Cancellation (Black)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-aventho-300-wireless-over-ear-headphones-with-active-noise-cancellation-black",
+   "price": 399.99,
+   "wasPrice": 499.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AVENTHO-300-Wireless-Over-Ear-Headphones-with-Active-Noise-Cancellation-Black-Image-01.jpg?v=1793374870",
+   "inStock": false,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462907453751",
+   "title": "Beyerdynamic AVENTHO 300 Wireless Over-Ear Headphones with Active Noise Cancellation (Nordic Grey)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-aventho-300-wireless-over-ear-headphones-with-active-noise-cancellation-nordic-grey",
+   "price": 399.99,
+   "wasPrice": 499.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AVENTHO-300-Wireless-Over-Ear-Headphones-with-Active-Noise-Cancellation-Nordic-Grey-Image-01.jpg?v=1793374870",
+   "inStock": false,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462896738615",
+   "title": "Beyerdynamic DJ 300 PRO X Club Professional 2-in-1 DJ Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dj-300-pro-x-club-professional-2-in-1-dj-headphones",
+   "price": 279.99,
+   "wasPrice": 349.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DJ-300-PRO-X-Club-Professional-2-in-1-DJ-Headphones-Image-06.jpg?v=1793374859",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462896509239",
+   "title": "Beyerdynamic DJ 300 PRO X Professional 2-in-1 DJ Headphones (Black)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dj-300-pro-x-professional-2-in-1-dj-headphones-black",
+   "price": 279.99,
+   "wasPrice": 349.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DJ-300-PRO-X-Professional-2-in-1-DJ-Headphones-Black-Image-01.jpg?v=1793374859",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462897295671",
+   "title": "Beyerdynamic DT 100 Closed-Back Studio Headphones (400 Ohms)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-100-closed-back-studio-headphones-400-ohms",
+   "price": 329.99,
+   "wasPrice": 399.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-100-Closed-Back-Studio-Headphones-16-Ohms-Image-01.jpg?v=1793374860",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462897688887",
+   "title": "Beyerdynamic DT 150 Closed-Back Studio Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-150-closed-back-studio-headphones",
+   "price": 329.99,
+   "wasPrice": 399.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-150-Closed-Back-Studio-Headphones-Image-01.jpg?v=1793374860",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462898278711",
+   "title": "Beyerdynamic DT 1770 PRO MK II Tesla Studio Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-1770-pro-mk-ii-tesla-studio-headphones",
+   "price": 699.99,
+   "wasPrice": 799.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-1770-PRO-MK-II-Tesla-Studio-Headphones-Image-01.jpg?v=1793374860",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462898475319",
+   "title": "Beyerdynamic DT 1990 PRO MK II Open-Back Premium Tesla Studio Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-1990-pro-mk-ii-open-back-premium-tesla-studio-headphones",
+   "price": 699.99,
+   "wasPrice": 799.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-1990-PRO-MK-II-Open-Back-Premium-Tesla-Studio-Headphones-Image-01.jpg?v=1793374861",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462899065143",
+   "title": "Beyerdynamic DT 250 Closed-Back Studio Headphones (80 Ohms)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-250-closed-back-studio-headphones-80-ohms",
+   "price": 329.99,
+   "wasPrice": 399.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-250-Closed-Back-Studio-Headphones-80-Ohms-Image-01.jpg?v=1793374861",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462900048183",
+   "title": "Beyerdynamic DT 252 Closed-Back Single-Ear Studio Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-252-closed-back-single-ear-studio-headphones",
+   "price": 269.99,
+   "wasPrice": 329.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-252-Closed-Back-Single-Ear-Studio-Headphones-Image-01.jpg?v=1793374861",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462900244791",
+   "title": "Beyerdynamic DT 270 PRO Compact Over-Ear Studio Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-270-pro-compact-over-ear-studio-headphones",
+   "price": 129.99,
+   "wasPrice": 199.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-270-Compact-Over-Ear-Studio-Headphones-Image-01.jpg?v=1793374861",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462900474167",
+   "title": "Beyerdynamic DT 280 MK II Single-Ear Headset with Dynamic Hypercardioid Microphone - No Cable (80 Ohms)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-280-mk-ii-single-ear-headset-with-dynamic-hypercardioid-microphone-no-cable-80-ohms",
+   "price": 449.99,
+   "wasPrice": 549.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-280-MK-II-Single-Ear-Headset-with-Dynamic-Hypercardioid-Microphone-No-Cable-80-Ohms-Image-01.jpg?v=1793374862",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462900834615",
+   "title": "Beyerdynamic DT 290 MK II Headset with Hypercardioid Dynamic Microphone - No Cable (80 Ohms)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-290-mk-ii-headset-with-hypercardioid-dynamic-microphone-no-cable-80-ohms",
+   "price": 499.99,
+   "wasPrice": 599.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-290-MK-II-Headset-with-Hypercardioid-Dynamic-Microphone-No-Cable-80-Ohms-Image-01.jpg?v=1793374862",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462901326135",
+   "title": "Beyerdynamic DT 70 IE In-Ear Monitor for Mixing and Critical Listening",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-70-ie-in-ear-monitor-for-mixing-and-critical-listening",
+   "price": 579.99,
+   "wasPrice": 699.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-70-IE-In-Ear-Monitor-for-Mixing-and-Critical-Listening-Image-03.jpg?v=1793374863",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462900867383",
+   "title": "Beyerdynamic DT 700 PRO X Studio Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-700-pro-x-studio-headphones",
+   "price": 319.99,
+   "wasPrice": 379.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-700-PRO-X-Studio-Headphones-Image-01.jpg?v=1793374863",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462901555511",
+   "title": "Beyerdynamic DT 71 IE In-Ear Monitor for Drums and Bass Listening",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-71-ie-in-ear-monitor-for-drums-and-bass-listening",
+   "price": 579.99,
+   "wasPrice": 699.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-71-IE-In-Ear-Monitor-for-Drums-and-Bass-Listening-Image-03.jpg?v=1793374863",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462901621047",
+   "title": "Beyerdynamic DT 72 IE In-Ear Monitor for Guitar & Voice",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-72-ie-in-ear-monitor-for-guitar-voice",
+   "price": 579.99,
+   "wasPrice": 699.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-72-IE-In-Ear-Monitor-for-Guitar-Voice-Image-03.jpg?v=1793374864",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462902997303",
+   "title": "Beyerdynamic DT 73 IE In-Ear Monitor for Instruments & Keyboards",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-73-ie-in-ear-monitor-for-instruments-keyboards",
+   "price": 579.99,
+   "wasPrice": 699.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-73-IE-In-Ear-Monitor-for-Instruments-Keyboards-Image-03.jpg?v=1793374864",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462903062839",
+   "title": "Beyerdynamic DT 770 M Monitoring Headphones for Drummers",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-770-m-monitoring-headphones-for-drummers",
+   "price": 199.99,
+   "wasPrice": 249.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-770-M-Monitoring-Headphones-for-Drummers-Image-01.jpg?v=1793374864",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53464668406071",
+   "title": "Beyerdynamic DT 770 Pro 80 Ohm Over-Ear Headphones for Studio Usage (Black/Gray)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-770-pro-80-ohm-over-ear-headphones-for-studio-usage-black-gray",
+   "price": 179,
+   "wasPrice": 279,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/dt770pro_80_3c_01.jpg?v=1793390587",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462903095607",
+   "title": "Beyerdynamic DT 770 PRO Closed-Back Studio Headphones (250 Ohms)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-770-pro-closed-back-studio-headphones-250-ohms",
+   "price": 199.99,
+   "wasPrice": 249.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-770-PRO-Closed-Back-Studio-Headphones-250-Ohms-Image-01.jpg?v=1793374865",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53462903128375",
+   "title": "Beyerdynamic DT 770 PRO X Dynamic Studio Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-770-pro-x-dynamic-studio-headphones",
+   "price": 229.99,
+   "wasPrice": 299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-770-PRO-X-Dynamic-Studio-Headphones-Image-01.jpg?v=1793374865",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463038099767",
+   "title": "Beyerdynamic DT 797 PV Headset with Cardioid Condenser Microphone",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-797-pv-headset-with-cardioid-condenser-microphone",
+   "price": 569.99,
+   "wasPrice": 649.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-797-PV-Headset-with-Cardioid-Condenser-Microphone-Image-01.jpg?v=1793375273",
+   "inStock": false,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463038329143",
+   "title": "Beyerdynamic DT 880 Pro Studio Headphones (250 Ohms)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-880-pro-studio-headphones-250-ohms",
+   "price": 249.99,
+   "wasPrice": 349.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-880-Pro-Studio-Headphones-250-Ohms-Image-01.jpg?v=1793375274",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463038787895",
+   "title": "Beyerdynamic DT 900 PRO X Studio Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-900-pro-x-studio-headphones",
+   "price": 319.99,
+   "wasPrice": 379.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-900-PRO-X-Studio-Headphones-Image-01.jpg?v=1793375274",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463039050039",
+   "title": "Beyerdynamic DT 990 PRO Open-Back Studio Headphones (250 Ohms)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-990-pro-open-back-studio-headphones-250-ohms",
+   "price": 199.99,
+   "wasPrice": 249.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-990-PRO-Open-Back-Studio-Headphones-250-Ohms-Image-01.jpg?v=1793375275",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463039541559",
+   "title": "Beyerdynamic DT 990 PRO X Studio Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-990-pro-x-studio-headphones",
+   "price": 229.99,
+   "wasPrice": 299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-990-PRO-X-Studio-Headphones-Image-01.jpg?v=1793375275",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463048683831",
+   "title": "Beyerdynamic MMX 150 Wireless Gaming Headset (Arctic White)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-mmx-150-wireless-gaming-headset-arctic-white",
+   "price": 229.99,
+   "wasPrice": 279.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-150-Wireless-Gaming-Headset-Arctic-White-Image-01.jpg?v=1793375283",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463048454455",
+   "title": "Beyerdynamic MMX 150 Wireless Gaming Headset (Black)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-mmx-150-wireless-gaming-headset-black",
+   "price": 229.99,
+   "wasPrice": 279.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-150-Wireless-Gaming-Headset-Black-Image-01.jpg?v=1793375283",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463049503031",
+   "title": "Beyerdynamic MMX 230 Wireless Gaming Headset with Active Noise Cancellation (Artic White)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-mmx-230-wireless-gaming-headset-with-active-noise-cancellation-artic-white",
+   "price": 299.99,
+   "wasPrice": 399.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-230-Wireless-Gaming-Headset-with-Active-Noise-Cancellation-Artic-White-Image-01.jpg?v=1793375284",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463049175351",
+   "title": "Beyerdynamic MMX 230 Wireless Gaming Headset with Active Noise Cancellation (Black)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-mmx-230-wireless-gaming-headset-with-active-noise-cancellation-black",
+   "price": 299.99,
+   "wasPrice": 399.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-230-Wireless-Gaming-Headset-with-Active-Noise-Cancellation-Black-Image-01.jpg?v=1793375284",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463042490679",
+   "title": "Beyerdynamic MMX 300 Pro Closed-Back Wired Gaming Headset",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-mmx-300-pro-closed-back-wired-gaming-headset",
+   "price": 379.99,
+   "wasPrice": 499.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-300-Pro-Closed-Back-Wired-Gaming-Headset-Image-01.jpg?v=1793375278",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463042949431",
+   "title": "Beyerdynamic MMX 330 Pro Open-Back Wired Gaming Headset",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-mmx-330-pro-open-back-wired-gaming-headset",
+   "price": 379.99,
+   "wasPrice": 499.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-330-Pro-Open-Back-Wired-Gaming-Headset-Image-01.jpg?v=1793375278",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463043899703",
+   "title": "Beyerdynamic T1 Open-Back Stereo Headphones (3rd Gen)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-t1-open-back-stereo-headphones-3rd-gen",
+   "price": 999.99,
+   "wasPrice": 1299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-T1-Open-Back-Stereo-Headphones-3rd-Gen-Image-01.jpg?v=1793375279",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463044423991",
+   "title": "Beyerdynamic T5 Closed-Back Stereo Headphones (3rd Gen)",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-t5-closed-back-stereo-headphones-3rd-gen",
+   "price": 999.99,
+   "wasPrice": 1299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-T5-Closed-Back-Stereo-Headphones-3rd-Gen-Image-01.jpg?v=1793375279",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463132930359",
+   "title": "Beyerdynamic TYGR 300R Open-Back Gaming Headphones",
+   "url": "https://www.worldwidestereo.com/products/beyerdynamic-tygr-300r-open-back-gaming-headphones",
+   "price": 229.99,
+   "wasPrice": 299.99,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-TYGR-300R-Open-Back-Gaming-Headphones-Image-01.jpg?v=1793375678",
+   "inStock": true,
+   "brand": "Beyerdynamic"
+  },
+  {
+   "retailer": "us-worldwidestereo",
    "sku": "52741323063607",
    "title": "Bose QuietComfort Earbuds (Dewdrop Mint)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-earbuds-dewdrop-mint",
-   "price": 179,
+   "price": 129,
+   "wasPrice": 179,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Earbuds-Dewdrop-Mint-Image-01.jpg?v=1785416694",
    "inStock": false,
    "brand": "Bose"
@@ -458,7 +976,8 @@
    "sku": "52741323030839",
    "title": "Bose QuietComfort Earbuds (Rosewood Mauve)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-earbuds-rosewood-mauve",
-   "price": 179,
+   "price": 129,
+   "wasPrice": 179,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Earbuds-Rosewood-Mauve-Image-01.jpg?v=1785416694",
    "inStock": false,
    "brand": "Bose"
@@ -468,7 +987,8 @@
    "sku": "52829324509495",
    "title": "Bose QuietComfort Headphones (2nd Gen, Black)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-headphones-2nd-gen-black",
-   "price": 359,
+   "price": 254,
+   "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Headphones-2nd-Gen_-Black-Image-05.jpg?v=1786593797",
    "inStock": true,
    "brand": "Bose"
@@ -478,9 +998,10 @@
    "sku": "52829326016823",
    "title": "Bose QuietComfort Headphones (2nd Gen, Dewdrop Mint)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-headphones-2nd-gen-dewdrop-mint",
-   "price": 359,
+   "price": 234,
+   "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Headphones-2nd-Gen_-Dewdrop-Mint-Image-08.jpg?v=1786593797",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -488,7 +1009,8 @@
    "sku": "52829324804407",
    "title": "Bose QuietComfort Headphones (2nd Gen, Eucalyptus Green)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-headphones-2nd-gen-eucalyptus-green",
-   "price": 359,
+   "price": 234,
+   "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Headphones-2nd-Gen_-Eucalyptus-Green-Image-04.jpg?v=1786593797",
    "inStock": true,
    "brand": "Bose"
@@ -498,7 +1020,8 @@
    "sku": "52829325721911",
    "title": "Bose QuietComfort Headphones (2nd Gen, Rosewood Mauve)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-headphones-2nd-gen-rosewood-mauve",
-   "price": 359,
+   "price": 254,
+   "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Headphones-2nd-Gen_-Rosewood-Mauve-Image-03.jpg?v=1786593797",
    "inStock": true,
    "brand": "Bose"
@@ -508,9 +1031,10 @@
    "sku": "52829326147895",
    "title": "Bose QuietComfort Headphones (2nd Gen, White Smoke)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-headphones-2nd-gen-white-smoke",
-   "price": 359,
+   "price": 254,
+   "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Headphones-2nd-Gen_-White-Smoke-Image-05.jpg?v=1786593798",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -518,7 +1042,8 @@
    "sku": "49654475948343",
    "title": "Bose QuietComfort Noise Cancelling Earbuds (Black)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-noise-cancelling-earbuds-2024-black",
-   "price": 179,
+   "price": 144,
+   "wasPrice": 179,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/10_0e95d77b-9218-4ec7-a96b-e3bc5f7a1901.jpg?v=1767897388",
    "inStock": false,
    "brand": "Bose"
@@ -528,7 +1053,8 @@
    "sku": "49654476013879",
    "title": "Bose QuietComfort Noise Cancelling Earbuds (White Smoke)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-noise-cancelling-earbuds-2024-white-smoke",
-   "price": 179,
+   "price": 144,
+   "wasPrice": 179,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/9_f3964788-da61-4c66-ad27-5d115f872000.jpg?v=1767897388",
    "inStock": false,
    "brand": "Bose"
@@ -538,7 +1064,8 @@
    "sku": "51058953519415",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Earbuds (2nd Gen, Black)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-earbuds-2nd-gen-black",
-   "price": 299,
+   "price": 234,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Earbuds-2nd-Gen_-Black-Image-05.jpg?v=1771351133",
    "inStock": false,
    "brand": "Bose"
@@ -548,7 +1075,8 @@
    "sku": "51163936522551",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Earbuds (2nd Gen, Desert Gold)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-earbuds-2nd-gen-desert-gold",
-   "price": 299,
+   "price": 254,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Earbuds-2nd-Gen_-Desert-Gold-Image-01.jpg?v=1759501366",
    "inStock": false,
    "brand": "Bose"
@@ -558,7 +1086,8 @@
    "sku": "51058953584951",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Earbuds (2nd Gen, Midnight Violet)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-earbuds-2nd-gen-midnight-violet",
-   "price": 299,
+   "price": 254,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Earbuds-2nd-Gen_-Midnight-Violet-Image-05.jpg?v=1757478709",
    "inStock": false,
    "brand": "Bose"
@@ -568,7 +1097,8 @@
    "sku": "51164039708983",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Earbuds (2nd Gen, Plum)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-earbuds-2nd-gen-plum",
-   "price": 299,
+   "price": 229,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Earbuds-2nd-Gen_-Plum-Image-01.jpg?v=1759505984",
    "inStock": false,
    "brand": "Bose"
@@ -578,7 +1108,8 @@
    "sku": "51058953650487",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Earbuds (2nd Gen, White Smoke)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-earbuds-2nd-gen-white-smoke",
-   "price": 299,
+   "price": 234,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Earbuds-2nd-Gen_-White-Smoke-Image-05.jpg?v=1757478709",
    "inStock": false,
    "brand": "Bose"
@@ -598,7 +1129,8 @@
    "sku": "51088023224631",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Headphones (2nd Gen, Black)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-headphones-2nd-gen-black",
-   "price": 449,
+   "price": 379,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Headphones-2nd-Gen_-Black-Image-07.jpg?v=1759765274",
    "inStock": true,
    "brand": "Bose"
@@ -608,7 +1140,8 @@
    "sku": "51088023257399",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Headphones (2nd Gen, Driftwood Sand)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-headphones-2nd-gen-driftwood-sand",
-   "price": 449,
+   "price": 384,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Headphones-2nd-Gen_-Sand-Image-07.jpg?v=1759765274",
    "inStock": true,
    "brand": "Bose"
@@ -618,7 +1151,8 @@
    "sku": "51158417047863",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Headphones (2nd Gen, Gold)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-headphones-2nd-gen-gold",
-   "price": 449,
+   "price": 394,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Headphones-2nd-Gen_-Gold-Image-08.jpg?v=1762367152",
    "inStock": true,
    "brand": "Bose"
@@ -628,7 +1162,8 @@
    "sku": "51088023290167",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Headphones (2nd Gen, Violet)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-headphones-2nd-gen-violet",
-   "price": 449,
+   "price": 384,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Headphones-2nd-Gen_-Violet-Image-02.jpg?v=1759765274",
    "inStock": true,
    "brand": "Bose"
@@ -638,7 +1173,8 @@
    "sku": "51088023355703",
    "title": "Bose QuietComfort Ultra Wireless Noise Cancelling Headphones (2nd Gen, White)",
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-headphones-2nd-gen-white",
-   "price": 449,
+   "price": 384,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Headphones-2nd-Gen_-White-Image-07.jpg?v=1759765274",
    "inStock": true,
    "brand": "Bose"
@@ -1037,6 +1573,26 @@
    "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/176131_WWS1.jpg?v=1770048243",
    "inStock": true,
+   "brand": "Focal"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463402709303",
+   "title": "Focal Clear Mg Professional Open-Back Headphones",
+   "url": "https://www.worldwidestereo.com/products/focal-clear-mg-professional-open-back-headphones",
+   "price": 1499,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Focal-Clear-Mg-Professional-Open-Back-Headphones-Image-01.jpg?v=1793379278",
+   "inStock": false,
+   "brand": "Focal"
+  },
+  {
+   "retailer": "us-worldwidestereo",
+   "sku": "53463852319031",
+   "title": "Focal Lensys Professional Closed-Back Headphones",
+   "url": "https://www.worldwidestereo.com/products/focal-lensys-professional-closed-back-headphones",
+   "price": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Focal-Lensys-Professional-Closed-Back-Headphones-Image-01.jpg?v=1793390194",
+   "inStock": false,
    "brand": "Focal"
   },
   {
@@ -1694,7 +2250,7 @@
    "price": 64.95,
    "wasPrice": 108,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Tune-730NCBT-Over-Ear-Bluetooth-Headphones-Black-Image-10_525c8f59-39d2-4296-8750-5cce2b5601f5.jpg?v=1781409928",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL"
   },
   {
@@ -1943,16 +2499,6 @@
    "url": "https://www.worldwidestereo.com/products/meze-audio-empyrean-ii-over-ear-headphones",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/13_14880ebb-fc38-4c6e-9e50-5e3b85a35431.jpg?v=1762964453",
-   "inStock": false,
-   "brand": "Meze Audio"
-  },
-  {
-   "retailer": "us-worldwidestereo",
-   "sku": "49940728676663",
-   "title": "Meze Audio Liric II Over-Ear Headphones",
-   "url": "https://www.worldwidestereo.com/products/meze-audio-liric-ii-over-ear-headphones",
-   "price": 2000,
-   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/2_87213148-d8fd-48eb-abc4-9150cc19ed37.jpg?v=1762447711",
    "inStock": false,
    "brand": "Meze Audio"
   },
@@ -2516,7 +3062,7 @@
    "url": "https://www.worldwidestereo.com/products/yamaha-yh-4000-open-back-wired-headphones",
    "price": 2499.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Yamaha-YH-4000BL-Image-01.jpg?v=1765906763",
-   "inStock": true,
+   "inStock": false,
    "brand": "Yamaha"
   },
   {

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-29T23:20:51.932Z",
+ "scrapedAt": "2026-10-30T23:02:49.339Z",
  "offers": [
   {
    "retailer": "dell",
@@ -29,7 +29,7 @@
    "brand": "Alienware",
    "title": "Alienware 16 Area-51 Gaming Laptop",
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/alienware16area51aa16250",
-   "price": 6795.8,
+   "price": 6374.5,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/aa16250/media-gallery/mb2/laptop-alienware-aa16250nt-mb2-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1102&qlt=100,0&resMode=sharp2&size=1102,804",
    "inStock": true,
    "fromPrice": true
@@ -119,6 +119,17 @@
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell15laptopdc15250",
    "price": 1124.2,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell/dell-15-intel-3530/media-gallery/laptop-dell-dc15250nt-sl-plastic-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1254&qlt=100,0&resMode=sharp2&size=1254,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dell15d15266",
+   "brand": "Dell",
+   "title": "Dell 15 Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell15d15266",
+   "price": 1648.9,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-dell-d15266-gh-hd-rgb-gallery-1-dl119nrw-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1049&qlt=100,0&resMode=sharp2&size=1049,804",
    "inStock": true,
    "fromPrice": true
   },

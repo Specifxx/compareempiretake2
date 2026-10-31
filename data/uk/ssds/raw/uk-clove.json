@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-10-30T00:04:20.684Z",
+ "scrapedAt": "2026-10-30T23:45:53.234Z",
  "offers": [
+  {
+   "retailer": "uk-clove",
+   "sku": "105979489",
+   "title": "ADATA ALEG-700-1TB M.2 PCI Express 3.0 NVMe 3D NAND",
+   "url": "https://www.clove.co.uk/products/adata-aleg-700-1tb-m-2-pci-express-3-0-nvme-3d-nand",
+   "price": 129,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ce89dcef-6778-4718-aaaa-00d290038e02.jpg?v=1793356363",
+   "inStock": true,
+   "mpn": "ALEG-700-1TB",
+   "brand": "ADATA"
+  },
   {
    "retailer": "uk-clove",
    "sku": "92816767",
@@ -97,7 +108,7 @@
    "sku": "90575304",
    "title": "ADATA LEGEND 900 - 3D NAND PCI Express 4.0 NVMe M.2 SSD - 1 TB",
    "url": "https://www.clove.co.uk/products/adata-legend-900-m-2-1-tb-pci-express-4-0-3d-nand-nvme",
-   "price": 153.99,
+   "price": 154,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/abd8cc47680abfb597a7d4b45e370538.jpg?v=1724922161",
    "inStock": false,
    "brand": "ADATA"
@@ -124,43 +135,10 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "63128922",
-   "title": "ADATA SE760 - USB Type-C External SSD in Titanium - 1 TB",
-   "url": "https://www.clove.co.uk/products/adata-se760-1000-gb-titanium",
-   "price": 93.53,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6f68124113f97882ad35c9d1a8e6f119.jpg?v=1717672559",
-   "inStock": false,
-   "mpn": "SE760",
-   "brand": "ADATA"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "67249100",
-   "title": "ADATA SE760 - USB Type-C External SSD in Titanium - 256 GB",
-   "url": "https://www.clove.co.uk/products/adata-se760-256-gb-grey-titanium",
-   "price": 62.24,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/677064fe0eaf77073d50ed90f30c7af1.jpg?v=1717672557",
-   "inStock": false,
-   "mpn": "SE760",
-   "brand": "ADATA"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "80775607",
-   "title": "ADATA SE880 - USB Type-C External SSD in Grey - 1 TB",
-   "url": "https://www.clove.co.uk/products/adata-se880-1-tb-grey",
-   "price": 137.84,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4c69929e6d159a02eef8ea5075e1dad9.jpg?v=1717672553",
-   "inStock": false,
-   "mpn": "SE880",
-   "brand": "ADATA"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "78993057",
    "title": "ADATA SE880 - USB Type-C External SSD in Grey - 500 GB",
    "url": "https://www.clove.co.uk/products/adata-se880-500-gb-wi-fi-grey",
-   "price": 99.98,
+   "price": 100,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/29bd50f640cd7ee76150f53ec613053c.jpg?v=1717672599",
    "inStock": true,
    "mpn": "SE880",
@@ -171,7 +149,7 @@
    "sku": "92458007",
    "title": "ADATA SE880 - USB-C External SSD in Blue - 4 TB",
    "url": "https://www.clove.co.uk/products/adata-se880-4-tb-blue",
-   "price": 560.71,
+   "price": 561,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/745d710df91c9675fa7df32b013ebbe6.jpg?v=1721387719",
    "inStock": false,
    "mpn": "SE880",
@@ -245,7 +223,7 @@
    "sku": "49264476",
    "title": "ADATA Ultimate SU630 - Serial ATA 3D2 QLC 2.5\" SSD - 960 GB",
    "url": "https://www.clove.co.uk/products/adata-ultimate-su630-2-5-960-gb-serial-ata-3d2-qlc",
-   "price": 114.09,
+   "price": 115,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d2cb461c441b7554788f05a19c57fc93_55b1b706-885f-480a-8d42-8dd98e467762.jpg?v=1717672684",
    "inStock": false,
    "mpn": "SU630",
@@ -267,7 +245,7 @@
    "sku": "49264490",
    "title": "ADATA Ultimate SU630 - Serial ATA QLC 3D NAND 2.5\" SSD - 480 GB",
    "url": "https://www.clove.co.uk/products/adata-ultimate-su630-2-5-480-gb-serial-ata-qlc-3d-nand",
-   "price": 67.36,
+   "price": 68,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d2cb461c441b7554788f05a19c57fc93.jpg?v=1717672661",
    "inStock": false,
    "mpn": "SU630",
@@ -357,17 +335,6 @@
    "url": "https://www.clove.co.uk/products/corsair-ex100u-1-tb-black",
    "price": 195.73,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1e7b8d4e1dc6c2ea77732f47f115e763_66ef8390-06b0-4996-b01c-3063ef641b11.jpg?v=1718728514",
-   "inStock": false,
-   "mpn": "EX100U",
-   "brand": "Corsair"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "80859999",
-   "title": "Corsair EX100U - USB Type-C External SSD - 2 TB",
-   "url": "https://www.clove.co.uk/products/corsair-ex100u-2-tb-black",
-   "price": 215.25,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1e7b8d4e1dc6c2ea77732f47f115e763.jpg?v=1718728502",
    "inStock": false,
    "mpn": "EX100U",
    "brand": "Corsair"
@@ -762,7 +729,7 @@
    "sku": "92376588",
    "title": "Crucial BX500 - Serial ATA 3D NAND 2.5\" SSD - 4 TB",
    "url": "https://www.clove.co.uk/products/crucial-bx500-2-5-4-tb-serial-ata-3d-nand",
-   "price": 728.36,
+   "price": 729,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8c0e62588c543232a189a086e4332c89_3b657cac-76b0-48b4-85d1-fb82fd0444f6.jpg?v=1721387702",
    "inStock": false,
    "mpn": "BX500",
@@ -796,6 +763,16 @@
    "price": 532.03,
    "inStock": false,
    "mpn": "CT4000T705SSD3",
+   "brand": "Crucial"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104838513",
+   "title": "Crucial P3 Plus 500 GB M.2 PCI Express 4.0 NVMe 3D NAND",
+   "url": "https://www.clove.co.uk/products/crucial-p3-plus-500-gb-m-2-pci-express-4-0-nvme-3d-nand",
+   "price": 294.68,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e5d15780-f326-4f11-b9cc-3f57881e24df.jpg?v=1793356356",
+   "inStock": false,
    "brand": "Crucial"
   },
   {
@@ -921,7 +898,7 @@
    "sku": "85760941",
    "title": "Crucial T700 M.2 2 TB PCI Express 5.0 NVMe",
    "url": "https://www.clove.co.uk/products/crucial-t700-m-2-2-tb-pci-express-5-0-nvme-1",
-   "price": 512.21,
+   "price": 513,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/582a4cee-dcfb-4b59-9d14-6cafd66eabb6.jpg?v=1711654556",
    "inStock": true,
    "brand": "Crucial"
@@ -998,71 +975,21 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "86876669",
-   "title": "Crucial X10 Pro - External solid state drives - 1 TB",
-   "url": "https://www.clove.co.uk/products/crucial-x10-pro-1-tb-black",
-   "price": 184.55,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/fe1ede42a5797c17d717268fb23ad3ea.jpg?v=1711378961",
-   "inStock": false,
-   "brand": "Crucial"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "86877526",
-   "title": "Crucial X10 Pro External solid state drive - 2 TB",
-   "url": "https://www.clove.co.uk/products/crucial-x10-pro-2-tb-black",
-   "price": 341.75,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/fe1ede42a5797c17d717268fb23ad3ea_d443274c-d327-4473-8aff-878c86ff112c.jpg?v=1711378978",
-   "inStock": false,
-   "brand": "Crucial"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "86877527",
-   "title": "Crucial X10 Pro External solid state drive - 4 TB",
-   "url": "https://www.clove.co.uk/products/crucial-x10-pro-4-tb-black",
-   "price": 741.46,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/fe1ede42a5797c17d717268fb23ad3ea_e23e7655-ff0f-43e2-8d3e-52a73ac17ce4.jpg?v=1711378980",
+   "sku": "99990299",
+   "title": "Crucial T710 1 TB M.2 PCI Express 5.0 NVMe",
+   "url": "https://www.clove.co.uk/products/crucial-t710-1-tb-m-2-pci-express-5-0-nvme",
+   "price": 211,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/010e6788-7fe6-4005-b561-8c17bf06e1ef.jpg?v=1793355597",
    "inStock": true,
    "brand": "Crucial"
   },
   {
    "retailer": "uk-clove",
-   "sku": "87921806",
-   "title": "Crucial X9 - External solid state drive - 1 TB",
-   "url": "https://www.clove.co.uk/products/crucial-x9-1-tb-black",
-   "price": 182.09,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5bb4d31e55ddd1b5e82260db79b74e11_c4f699de-52fd-49da-ae60-53ceea72a78f.jpg?v=1711378953",
-   "inStock": false,
-   "brand": "Crucial"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "87921807",
-   "title": "Crucial X9 External solid state drive - 2 TB",
-   "url": "https://www.clove.co.uk/products/crucial-x9-2-tb-black",
-   "price": 313.09,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5bb4d31e55ddd1b5e82260db79b74e11.jpg?v=1711378947",
-   "inStock": true,
-   "brand": "Crucial"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "87922479",
-   "title": "Crucial X9 External solid state drive - 4 TB",
-   "url": "https://www.clove.co.uk/products/crucial-x9-4-tb-black",
-   "price": 476.77,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5bb4d31e55ddd1b5e82260db79b74e11_a4b3df46-148a-40b6-bea3-d6c5cfe9861e.jpg?v=1711378962",
-   "inStock": false,
-   "brand": "Crucial"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "86877525",
-   "title": "Crucial X9 Pro - External solid state drive - 1 TB",
-   "url": "https://www.clove.co.uk/products/crucial-x9-pro-1-tb-grey",
-   "price": 110.56,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bc1aa44340f93db0aad51d061586ce49_188f5cdd-743b-4faa-852e-78aae6a50f5e.jpg?v=1711378955",
+   "sku": "99989856",
+   "title": "Crucial T710 4 TB M.2 PCI Express 5.0 NVMe",
+   "url": "https://www.clove.co.uk/products/crucial-t710-4-tb-m-2-pci-express-5-0-nvme",
+   "price": 669.69,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/93ba8cbb-1380-430a-9798-823090384fc2.jpg?v=1793355616",
    "inStock": false,
    "brand": "Crucial"
   },
@@ -1073,26 +1000,6 @@
    "url": "https://www.clove.co.uk/products/crucial-x9-pro-1-tb-beige",
    "price": 119.58,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/eaddb0f215d045252d09162063ed4f3d.jpg?v=1711456186",
-   "inStock": false,
-   "brand": "Crucial"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "86880953",
-   "title": "Crucial X9 Pro External solid state drive - 2 TB",
-   "url": "https://www.clove.co.uk/products/crucial-x9-pro-2-tb-grey",
-   "price": 280.27,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bc1aa44340f93db0aad51d061586ce49_bb520093-28ac-42f2-89ac-c911908da823.jpg?v=1711378971",
-   "inStock": false,
-   "brand": "Crucial"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "86876413",
-   "title": "Crucial X9 Pro External solid state drive - 4 TB",
-   "url": "https://www.clove.co.uk/products/crucial-x9-pro-4-tb-grey",
-   "price": 379.98,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bc1aa44340f93db0aad51d061586ce49.jpg?v=1711378950",
    "inStock": false,
    "brand": "Crucial"
   },
@@ -1126,6 +1033,17 @@
    "price": 1082.51,
    "inStock": false,
    "mpn": "345-BBYU",
+   "brand": "DELL"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "27855277",
+   "title": "DELL 400-AHIG internal solid state drive 3.5\" 512 GB Serial ATA III",
+   "url": "https://www.clove.co.uk/products/dell-400-ahig-internal-solid-state-drive-3-5-512-gb-serial-ata-iii",
+   "price": 238,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/86b24440-5dc7-4bb0-b00a-e054b13d949b.jpg?v=1793356065",
+   "inStock": true,
+   "mpn": "400-AHIG",
    "brand": "DELL"
   },
   {
@@ -1181,6 +1099,93 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2fd8e2d3-95d9-4679-8cb4-2740e2b38fd0.jpg?v=1711654335",
    "inStock": false,
    "mpn": "400-BDWE",
+   "brand": "DELL"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "52253441",
+   "title": "DELL 9Y4V9 internal solid state drive 512 GB M.2 PCI Express 3.0 NVMe",
+   "url": "https://www.clove.co.uk/products/dell-9y4v9-internal-solid-state-drive-512-gb-m-2-pci-express-3-0-nvme",
+   "price": 202,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c2138d98-2edb-4bb9-bfbc-3e9fa7634716.jpg?v=1793355609",
+   "inStock": true,
+   "mpn": "9Y4V9",
+   "brand": "DELL"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103579320",
+   "title": "DELL A9794135 internal solid state drive 2.5\" 512 GB Serial ATA",
+   "url": "https://www.clove.co.uk/products/dell-a9794135-internal-solid-state-drive-2-5-512-gb-serial-ata",
+   "price": 227,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c43f3e0e-e820-4c4c-8b9d-c088d1ceb9a0.jpg?v=1793356110",
+   "inStock": true,
+   "mpn": "A9794135",
+   "brand": "DELL"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "52266626",
+   "title": "DELL AA615519 internal solid state drive M.2 256 GB PCI Express NVMe",
+   "url": "https://www.clove.co.uk/products/dell-aa615519-internal-solid-state-drive-m-2-256-gb-pci-express-nvme",
+   "price": 130,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/72045c25-f083-49d8-8c65-ec3c40efe099.jpg?v=1793356359",
+   "inStock": true,
+   "mpn": "AA615519",
+   "brand": "DELL"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "92081079",
+   "title": "DELL N7JKT internal solid state drive 512 GB M.2 PCI Express 3.0 NVMe",
+   "url": "https://www.clove.co.uk/products/dell-n7jkt-internal-solid-state-drive-512-gb-m-2-pci-express-3-0-nvme",
+   "price": 204,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5e5cd5dc-e168-47c9-893e-e3e17bc9b7a1.jpg?v=1793355607",
+   "inStock": true,
+   "mpn": "N7JKT",
+   "brand": "DELL"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "93239246",
+   "title": "DELL RM0C0 internal solid state drive 512 GB M.2 PCI Express 3.0 NVMe",
+   "url": "https://www.clove.co.uk/products/dell-rm0c0-internal-solid-state-drive-512-gb-m-2-pci-express-3-0-nvme",
+   "price": 204,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/debb8ba6-6f35-44ff-a4f3-dba9f5dd9fcd.jpg?v=1793355611",
+   "inStock": true,
+   "mpn": "RM0C0",
+   "brand": "DELL"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "61865860",
+   "title": "DELL SNP110S/512G internal solid state drive 512 GB Serial ATA",
+   "url": "https://www.clove.co.uk/products/dell-snp110s-512g-internal-solid-state-drive-512-gb-serial-ata",
+   "price": 193,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/11b6d754-f5c4-42f8-b1da-d2618527f01e.jpg?v=1793356113",
+   "inStock": true,
+   "brand": "DELL"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "67737500",
+   "title": "DELL WP18Y internal solid state drive 512 GB M.2 PCI Express 3.0 NVMe",
+   "url": "https://www.clove.co.uk/products/dell-wp18y-internal-solid-state-drive-512-gb-m-2-pci-express-3-0-nvme",
+   "price": 200,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c7fe07bd-f3fe-4921-b75c-f21ab525618f.jpg?v=1793355610",
+   "inStock": true,
+   "mpn": "WP18Y",
+   "brand": "DELL"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "89091317",
+   "title": "DELL Y5Y15 internal solid state drive 512 GB M.2 PCI Express NVMe",
+   "url": "https://www.clove.co.uk/products/dell-y5y15-internal-solid-state-drive-512-gb-m-2-pci-express-nvme",
+   "price": 200,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6db38559-24cb-4bea-a57e-7d1911e46879.jpg?v=1793355606",
+   "inStock": true,
+   "mpn": "Y5Y15",
    "brand": "DELL"
   },
   {
@@ -1361,8 +1366,17 @@
    "sku": "66600879",
    "title": "HP 1TB PCIe 4x4 NVMe TLC SSD M.2 PCI Express 4.0",
    "url": "https://www.clove.co.uk/products/hp-1tb-pcie-4x4-nvme-tlc-ssd-m-2-pci-express-4-0",
-   "price": 351.08,
+   "price": 352,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e94beca-c1cf-45c8-9f59-752563ad3833.jpg?v=1711654238",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "94355010",
+   "title": "HP 1TB PCIe-4x4 NVMe Solid State Drive",
+   "url": "https://www.clove.co.uk/products/hp-1tb-pcie-4x4-nvme-solid-state-drive",
+   "price": 586,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a84cb73c-1317-414a-bb78-ef536c02a0c3.jpg?v=1793355635",
    "inStock": true
   },
   {
@@ -1379,8 +1393,17 @@
    "sku": "66600880",
    "title": "HP 512GB PCIe 4x4 NVMe TLC SSD M.2 PCI Express 4.0",
    "url": "https://www.clove.co.uk/products/hp-512gb-pcie-4x4-nvme-tlc-ssd-m-2-pci-express-4-0",
-   "price": 282.96,
+   "price": 283,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3f58a2df-f5ea-4e75-a02d-5553fd537c8b.jpg?v=1711654516",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "94355662",
+   "title": "HP 512GB PCIe-4x4 NVMe Solid State Drive",
+   "url": "https://www.clove.co.uk/products/hp-512gb-pcie-4x4-nvme-solid-state-drive",
+   "price": 244.9,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/649a6aa1-56c8-44b3-a46b-cb19e6f7b126.jpg?v=1793355633",
    "inStock": false
   },
   {
@@ -1392,6 +1415,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e9a98d4c05bb6832266c11193e20da28.jpg?v=1721387683",
    "inStock": false,
    "mpn": "5R8Y0AA"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104509490",
+   "title": "HP 767904-B21 internal solid state drive 400 GB 2.5\" SAS",
+   "url": "https://www.clove.co.uk/products/hp-767904-b21-internal-solid-state-drive-400-gb-2-5-sas",
+   "price": 1015.25,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5145412d-ba2b-4094-ac07-2b11656c3520.jpg?v=1793356072",
+   "inStock": false,
+   "mpn": "767904-B21"
   },
   {
    "retailer": "uk-clove",
@@ -1441,6 +1474,16 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "86952397",
+   "title": "HP N45476-001 internal solid state drive 512 GB M.2 PCI Express NVMe",
+   "url": "https://www.clove.co.uk/products/hp-n45476-001-internal-solid-state-drive-512-gb-m-2-pci-express-nvme",
+   "price": 159.82,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/756f482d-ba35-4ae7-ac8c-a7115fdfcb5d.jpg?v=1793356092",
+   "inStock": false,
+   "mpn": "N45476-001"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "78906288",
    "title": "HP Z Turbo 2TB 2280 PCIe-4x4 TLC M.2 Z2 G9 Mini Kit SSD",
    "url": "https://www.clove.co.uk/products/hp-z-turbo-2tb-2280-pcie-4x4-tlc-m-2-z2-g9-mini-kit-ssd",
@@ -1452,7 +1495,7 @@
    "sku": "67584464",
    "title": "HP Z Turbo Drive 2TB TLC Z8 G4 SSD Kit",
    "url": "https://www.clove.co.uk/products/hp-z-turbo-drive-2tb-tlc-z8-g4-ssd-kit",
-   "price": 4201.38,
+   "price": 4202,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c958b3dd-7e40-4c2d-9beb-c798b5e32257.jpg?v=1711654545",
    "inStock": true
   },
@@ -2224,6 +2267,16 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "40179629",
+   "title": "Intenso Top 128 GB M.2 Serial ATA III",
+   "url": "https://www.clove.co.uk/products/intenso-top-128-gb-m-2-serial-ata-iii",
+   "price": 42,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6fb54aa7-237d-42c3-af46-0155bbfe7ac8.jpg?v=1793356047",
+   "inStock": true,
+   "brand": "Intenso"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "53481970",
    "title": "Intenso Top M.2 1000 GB Serial ATA III 3D NAND",
    "url": "https://www.clove.co.uk/products/intenso-top-m-2-1000-gb-serial-ata-iii-3d-nand",
@@ -2263,17 +2316,6 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "87023696",
-   "title": "Kingston Technology XS1000 External solid state drive - 1TB",
-   "url": "https://www.clove.co.uk/products/kingston-technology-1tb-xs1000-external-usb-3-2-gen-2-portable-solid-state-drive",
-   "price": 196.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2a205b4f216910293945fceb6dae8954.jpg?v=1711379002",
-   "inStock": true,
-   "mpn": "XS1000",
-   "brand": "Kingston Technology"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "84990108",
    "title": "Kioxia CD8-R 2.5\" 3.84 TB PCI Express 4.0 BiCS FLASH TLC NVMe",
    "url": "https://www.clove.co.uk/products/kioxia-cd8-r-2-5-3-84-tb-pci-express-4-0-bics-flash-tlc-nvme",
@@ -2281,6 +2323,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b7f48bb2-ba7d-413d-ac38-db8c7866bbff.jpg?v=1713970812",
    "inStock": false,
    "mpn": "CD8-R",
+   "brand": "KIOXIA"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "85002955",
+   "title": "Kioxia CM7-R 15.4 TB 2.5\" PCI Express 5.0 NVMe BiCS FLASH TLC",
+   "url": "https://www.clove.co.uk/products/kioxia-cm7-r-15-4-tb-2-5-pci-express-5-0-nvme-bics-flash-tlc",
+   "price": 8877.32,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/682f4831-f9e7-4920-b1aa-b09eaf0097fa.jpg?v=1793356100",
+   "inStock": false,
+   "mpn": "CM7-R",
    "brand": "KIOXIA"
   },
   {
@@ -2341,7 +2394,7 @@
    "sku": "92915974",
    "title": "LaCie Mobile SSD Secure - USB-C External SSD in Grey - 1 TB",
    "url": "https://www.clove.co.uk/products/lacie-mobile-ssd-secure-1-tb-grey",
-   "price": 336.54,
+   "price": 337,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/06f8aab7c30b5d06600edc33867173b0_3fc85051-42b2-4586-af1f-c53d4fa7cb64.jpg?v=1721387710",
    "inStock": false,
    "brand": "LaCie"
@@ -2382,7 +2435,7 @@
    "sku": "72574577",
    "title": "Lenovo 00JT050 internal solid state drive M.2 256 GB PCI Express 3.0",
    "url": "https://www.clove.co.uk/products/lenovo-00jt050-internal-solid-state-drive-m-2-256-gb-pci-express-3-0",
-   "price": 106.11,
+   "price": 107,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b51bfcd6-8ffc-4ea7-935b-5b719c30c431.jpg?v=1711654295",
    "inStock": true,
    "mpn": "00JT050",
@@ -2484,10 +2537,21 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "57998890",
+   "title": "Lenovo 00UP651 internal solid state drive 256 GB M.2 PCI Express 3.0",
+   "url": "https://www.clove.co.uk/products/lenovo-00up651-internal-solid-state-drive-256-gb-m-2-pci-express-3-0",
+   "price": 124.38,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/84970bb8-3e58-43ed-a432-a78fab1263d7.jpg?v=1793355600",
+   "inStock": false,
+   "mpn": "00UP651",
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "53958877",
    "title": "Lenovo 00UP734 internal solid state drive M.2 256 GB PCI Express NVMe",
    "url": "https://www.clove.co.uk/products/lenovo-00up734-internal-solid-state-drive-m-2-256-gb-pci-express-nvme",
-   "price": 103.49,
+   "price": 104,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/57913b01-5ad5-48a2-a2bc-7ca5c1d54ae9.jpg?v=1711654403",
    "inStock": true,
    "mpn": "00UP734",
@@ -2517,10 +2581,21 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "58843177",
+   "title": "Lenovo 00UP747 internal solid state drive 256 GB M.2 PCI Express 3.0 NVMe",
+   "url": "https://www.clove.co.uk/products/lenovo-00up747-internal-solid-state-drive-256-gb-m-2-pci-express-3-0-nvme",
+   "price": 125.69,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0e261c33-fa6d-4801-a66c-87210c741650.jpg?v=1793355598",
+   "inStock": false,
+   "mpn": "00UP747",
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "53958934",
    "title": "Lenovo 01LX200 internal solid state drive M.2 256 GB PCI Express 3.0 NVMe",
    "url": "https://www.clove.co.uk/products/lenovo-01lx200-internal-solid-state-drive-m-2-256-gb-pci-express-3-0-nvme",
-   "price": 103.49,
+   "price": 104,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/541e5381-a8d7-447e-a039-cba32d30b534.jpg?v=1711654293",
    "inStock": true,
    "mpn": "01LX200",
@@ -2614,7 +2689,7 @@
    "sku": "53968373",
    "title": "Lenovo 5SS0V26411 internal solid state drive M.2 256 GB PCI Express 3.0",
    "url": "https://www.clove.co.uk/products/lenovo-5ss0v26411-internal-solid-state-drive-m-2-256-gb-pci-express-3-0",
-   "price": 106.11,
+   "price": 107,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a3a7e769-6b15-4500-a039-713b79e0a0a9.jpg?v=1711654309",
    "inStock": true,
    "mpn": "5SS0V26411",
@@ -2636,7 +2711,7 @@
    "sku": "62037511",
    "title": "Lenovo 5SS0V26441 internal solid state drive M.2 256 GB PCI Express 3.0",
    "url": "https://www.clove.co.uk/products/lenovo-5ss0v26441-internal-solid-state-drive-m-2-256-gb-pci-express-3-0",
-   "price": 104.8,
+   "price": 105,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ab5ad136-9cfe-464a-abdb-2c5429e82e5a.jpg?v=1711654316",
    "inStock": true,
    "mpn": "5SS0V26441",
@@ -2677,6 +2752,17 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "76180644",
+   "title": "Lenovo 5SS0W79505 internal solid state drive 256 GB M.2 PCI Express 4.0",
+   "url": "https://www.clove.co.uk/products/lenovo-5ss0w79505-internal-solid-state-drive-256-gb-m-2-pci-express-4-0",
+   "price": 117,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/44c0a23f-85e9-47da-915d-323f0f11c4f3.jpg?v=1793355605",
+   "inStock": true,
+   "mpn": "5SS0W79505",
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "62738916",
    "title": "Lenovo 5SS1B60638 internal solid state drive M.2 128 GB PCI Express 3.0 NVMe",
    "url": "https://www.clove.co.uk/products/lenovo-5ss1b60638-internal-solid-state-drive-m-2-128-gb-pci-express-3-0-nvme",
@@ -2684,6 +2770,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4f3095b2-3c09-4143-9fed-fa4d83cbdfb2.jpg?v=1711654391",
    "inStock": false,
    "mpn": "5SS1B60638",
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104517981",
+   "title": "Lenovo FRU00UP437 internal solid state drive 512 GB M.2 PCI Express 3.0 NVMe",
+   "url": "https://www.clove.co.uk/products/lenovo-fru00up437-internal-solid-state-drive-512-gb-m-2-pci-express-3-0-nvme",
+   "price": 144.03,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a8a84465-4fe7-4edc-a19d-f43993743c6f.jpg?v=1793355614",
+   "inStock": false,
+   "mpn": "FRU00UP437",
    "brand": "Lenovo"
   },
   {
@@ -2696,6 +2793,17 @@
    "inStock": false,
    "mpn": "FRU00UP437",
    "brand": "Lenovo"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "64393951",
+   "title": "Lexar NM620 1 TB M.2 PCI Express 3.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/lexar-nm620-1-tb-m-2-pci-express-3-0-nvme-3d-tlc-nand",
+   "price": 137.52,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8e0279bc-0c0d-4d83-8d85-a2559d4517a5.jpg?v=1793356108",
+   "inStock": false,
+   "mpn": "NM620",
+   "brand": "Lexar"
   },
   {
    "retailer": "uk-clove",
@@ -2732,6 +2840,17 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "88283039",
+   "title": "Lexar NM790 2 TB M.2 PCI Express 4.0 NVMe",
+   "url": "https://www.clove.co.uk/products/lexar-nm790-2-tb-m-2-pci-express-4-0-nvme",
+   "price": 330,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8dd25701-c9a9-42e0-9be1-174c84322888.jpg?v=1793356078",
+   "inStock": true,
+   "mpn": "NM790",
+   "brand": "Lexar"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "85787735",
    "title": "Lexar NM790 M.2 1 TB PCI Express 4.0 SLC NVMe",
    "url": "https://www.clove.co.uk/products/lexar-nm790-m-2-1-tb-pci-express-4-0-slc-nvme",
@@ -2762,17 +2881,6 @@
    "inStock": false,
    "mpn": "NM790",
    "brand": "Lexar"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "60926288",
-   "title": "MediaRange MR1100 External solid state drive 120 GB",
-   "url": "https://www.clove.co.uk/products/mediarange-mr1100-external-solid-state-drive-120-gb-silver",
-   "price": 53.82,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ea5e85ab-4b8d-49a7-9a91-2df06f596848.jpg?v=1708512437",
-   "inStock": false,
-   "mpn": "MR1100",
-   "brand": "MediaRange"
   },
   {
    "retailer": "uk-clove",
@@ -2825,6 +2933,16 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "93078657",
+   "title": "MSI S78-440Q550-P83 internal solid state drive M.2 2 TB PCI Express 4.0 3D NAND NVMe",
+   "url": "https://www.clove.co.uk/products/msi-s78-440q550-p83-internal-solid-state-drive-m-2-2-tb-pci-express-4-0-3d-nand-nvme",
+   "price": 222.62,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e58cd40c-2ce5-43ab-8cae-6833037f264e.jpg?v=1793356352",
+   "inStock": false,
+   "mpn": "S78-440Q550-P83"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "74732880",
    "title": "MSI SPATIUM M390 - PCI Express 3D NAND NVMe M.2 SSD - 500 GB",
    "url": "https://www.clove.co.uk/products/msi-spatium-m390-nvme-m-2-500-gb-pci-express-3d-nand",
@@ -2843,11 +2961,29 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "99343537",
+   "title": "MSI Spatium M450 PCIe 4.0 NVMe M.2 500GB V1 PCI Express 4.0 3D NAND",
+   "url": "https://www.clove.co.uk/products/msi-spatium-m450-pcie-4-0-nvme-m-2-500gb-v1-pci-express-4-0-3d-nand",
+   "price": 88.7,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a6279209-7321-4659-abc5-7ad555ca12ea.jpg?v=1793355586",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "75235771",
    "title": "MSI SPATIUM M470 - PCIe 4.0 NVMe M.2 SSD - 1 TB",
    "url": "https://www.clove.co.uk/products/msi-spatium-m470-pcie-4-0-nvme-m-2-1000-gb-pci-express-4-0-3d-nand",
    "price": 127.92,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ff76d501e80c6540cedf31fcaf3aa5f2.jpg?v=1717429738",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103673641",
+   "title": "MSI SPATIUM M571 DLP PCIe 5.0 NVMe M.2 2TB PCI Express 5.0 3D NAND",
+   "url": "https://www.clove.co.uk/products/msi-spatium-m571-dlp-pcie-5-0-nvme-m-2-2tb-pci-express-5-0-3d-nand",
+   "price": 317.4,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/14a572e5-a7fa-4c29-a69e-f884a27ddfa8.jpg?v=1793355580",
    "inStock": false
   },
   {
@@ -2985,7 +3121,7 @@
    "sku": "71134342",
    "title": "Origin Storage Inception E840 Pro - USB C NVMe External SSD - 1TB",
    "url": "https://www.clove.co.uk/products/origin-storage-1tb-external-nvme-usb-c-ssd-with-c-c-c-a-cable",
-   "price": 169.78,
+   "price": 170,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/946746e9a3b4ad5a5ef33c5011270bdb.jpg?v=1717498763",
    "inStock": true,
    "brand": "Origin Storage"
@@ -3050,7 +3186,7 @@
    "sku": "65243429",
    "title": "Origin Storage Inception TLC830 Pro - 3D PCIe NVMe M.2 SSD - 256 GB",
    "url": "https://www.clove.co.uk/products/origin-storage-512gb-3d-pcie-m-2-nvme-ssd",
-   "price": 85.05,
+   "price": 86,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2709bbb3bb7c55db28eeb08081830253.jpg?v=1717498783",
    "inStock": true,
    "mpn": "TLC830",
@@ -3138,7 +3274,7 @@
    "sku": "40490300",
    "title": "Origin Storage Inception TLC830 Pro Series - PCIe 3.0 NVMe 3D TLC M.2 SSD - 256 GB",
    "url": "https://www.clove.co.uk/products/origin-storage-inception-tlc830-pro-series-256gb-pcie-3-0-nvme-m-2-80mm-3d-tlc",
-   "price": 73.58,
+   "price": 74,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2709bbb3bb7c55db28eeb08081830253_1ef3d1c8-287b-4987-8155-bf2043ffbd4a.jpg?v=1727778124",
    "inStock": true,
    "mpn": "TLC830",
@@ -3149,7 +3285,7 @@
    "sku": "40490298",
    "title": "Origin Storage Inception TLC830 Pro Series 1TB PCIe 3.0 NVMe M.2 80mm 3D TLC",
    "url": "https://www.clove.co.uk/products/origin-storage-inception-tlc830-pro-series-1tb-pcie-3-0-nvme-m-2-80mm-3d-tlc",
-   "price": 146.63,
+   "price": 147,
    "inStock": true,
    "mpn": "TLC830",
    "brand": "Origin Storage"
@@ -3352,6 +3488,16 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "72374011",
+   "title": "PNY CS1030 500 GB M.2 PCI Express 3.0 NVMe 3D NAND",
+   "url": "https://www.clove.co.uk/products/pny-cs1030-500-gb-m-2-pci-express-3-0-nvme-3d-nand",
+   "price": 107,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/eea7f055-dd4a-48b2-a5ab-934a2d949dfa.jpg?v=1793355600",
+   "inStock": true,
+   "mpn": "CS1030"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "73808220",
    "title": "PNY CS1030 M.2 1 TB PCI Express 3.0 3D NAND NVMe",
    "url": "https://www.clove.co.uk/products/pny-cs1030-m-2-1000-gb-pci-express-3-0-3d-nand-nvme",
@@ -3464,28 +3610,6 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "87791593",
-   "title": "Samsung MU-PG2T0B External solid state drive - 2 TB",
-   "url": "https://www.clove.co.uk/products/samsung-mu-pg2t0b-2-tb-black",
-   "price": 412.58,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3c40812633e52596577a4d921bb20d47.jpg?v=1711378960",
-   "inStock": true,
-   "mpn": "MU-PG2T0B",
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "87791730",
-   "title": "Samsung MU-PG4T0B External solid state drive - 4 TB",
-   "url": "https://www.clove.co.uk/products/samsung-mu-pg4t0b-4-tb-black",
-   "price": 949.78,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b8ead491a538197da4989ea2787537b8_70b24781-2e7b-4811-b325-52038953d049.jpg?v=1711378990",
-   "inStock": true,
-   "mpn": "MU-PG4T0B",
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "75266780",
    "title": "Samsung PM9A1 M.2 512 GB PCI Express 4.0 V-NAND NVMe",
    "url": "https://www.clove.co.uk/products/samsung-pm9a1-m-2-512-gb-pci-express-4-0-v-nand-nvme",
@@ -3518,53 +3642,13 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "90211613",
-   "title": "Samsung T5 EVO Portable SSD - 2 TB",
-   "url": "https://www.clove.co.uk/products/samsung-mu-ph2t0s-2-tb-black",
-   "price": 335.36,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d439ae224bc89ee6fc0e8f136a663a4b.jpg?v=1711378949",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "90211459",
-   "title": "Samsung T5 EVO Portable SSD - 4 TB",
-   "url": "https://www.clove.co.uk/products/samsung-mu-ph4t0s-4-tb-black",
-   "price": 602.6,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d439ae224bc89ee6fc0e8f136a663a4b_e1766ba3-114a-4c06-8a63-09d2a7d595b0.jpg?v=1711378975",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "90211623",
-   "title": "Samsung T5 EVO Portable SSD - 8 TB",
-   "url": "https://www.clove.co.uk/products/samsung-mu-ph8t0s-8-tb-black",
-   "price": 973.26,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ba188c9bc10961f9272313045baba34b.jpg?v=1711378947",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "92338353",
    "title": "Samsung T7 Portable - USB-C External SSD in Grey / Titanium - 4 TB",
    "url": "https://www.clove.co.uk/products/samsung-mu-pc4t0t-4-tb-grey-titanium",
-   "price": 782.07,
+   "price": 783,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8d2dca84d604a2a9cb89f03aa88bbadf.jpg?v=1721387720",
    "inStock": true,
    "brand": "Samsung"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "62232559",
-   "title": "SanDisk Extreme Portable External solid state drive - 4 TB",
-   "url": "https://www.clove.co.uk/products/sandisk-extreme-portable-4000-gb-blue",
-   "price": 969.3,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/66a5590e14727c24524a79628744db8d.jpg?v=1711378982",
-   "inStock": true,
-   "brand": "Sandisk"
   },
   {
    "retailer": "uk-clove",
@@ -3574,6 +3658,176 @@
    "price": 787.49,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5ad90f88d0fc5325293156344fa8da8b.jpg?v=1725467209",
    "inStock": false,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105535569",
+   "title": "SanDisk NAS 800 1.92 TB M.2 PCI Express 5.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-nas-800-1-92-tb-m-2-pci-express-5-0-nvme-3d-tlc-nand",
+   "price": 606,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/543f2d81-2045-4c1f-9cf8-d0da139393c8.jpg?v=1793356052",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105547909",
+   "title": "SanDisk NAS 800 3.84 TB M.2 PCI Express 5.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-nas-800-3-84-tb-m-2-pci-express-5-0-nvme-3d-tlc-nand",
+   "price": 1190,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1e9d7d55-e16f-4138-a1b6-4698e4ea20ec.jpg?v=1793356372",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105538618",
+   "title": "SanDisk NAS 800 960 GB M.2 PCI Express 5.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-nas-800-960-gb-m-2-pci-express-5-0-nvme-3d-tlc-nand",
+   "price": 335,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1925e0ee-0ad2-4b92-8889-9a7145f6e599.jpg?v=1793356056",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103673365",
+   "title": "SanDisk Optimus 5100 1 TB M.2 PCI Express 4.0 NVMe QLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-5100-1-tb-m-2-pci-express-4-0-nvme-qlc-3d-nand",
+   "price": 228,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a78625f3-0280-458d-8671-9e49ffe18577.jpg?v=1793356082",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103670437",
+   "title": "SanDisk Optimus 5100 2 TB M.2 PCI Express 4.0 NVMe QLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-5100-2-tb-m-2-pci-express-4-0-nvme-qlc-3d-nand",
+   "price": 379,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/611a7266-8cfe-42e6-aa00-59aa80a01dac.jpg?v=1793356087",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103675821",
+   "title": "SanDisk Optimus 5100 500 GB M.2 PCI Express 4.0 NVMe QLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-5100-500-gb-m-2-pci-express-4-0-nvme-qlc-3d-nand",
+   "price": 119,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0a836220-eceb-4fd9-8ad7-896c640343df.jpg?v=1793356087",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103675248",
+   "title": "SanDisk Optimus GX 7100 1 TB M.2 PCI Express 4.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-7100-1-tb-m-2-pci-express-4-0-nvme-tlc-3d-nand",
+   "price": 263,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4fee708e-5558-4814-a6bf-89105b45097a.jpg?v=1793356083",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103672840",
+   "title": "SanDisk Optimus GX 7100 2 TB M.2 PCI Express 4.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-7100-2-tb-m-2-pci-express-4-0-nvme-tlc-3d-nand",
+   "price": 516,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/48ffc4bd-089d-44cc-89f4-29be59891fdc.jpg?v=1793356085",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103672594",
+   "title": "SanDisk Optimus GX 7100 4 TB M.2 PCI Express 4.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-7100-4-tb-m-2-pci-express-4-0-nvme-tlc-3d-nand",
+   "price": 995,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b9f70600-8cee-4af7-b13c-0fef85b4ac21.jpg?v=1793356063",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103673753",
+   "title": "SanDisk Optimus GX 7100 500 GB M.2 PCI Express 4.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-7100-500-gb-m-2-pci-express-4-0-nvme-tlc-3d-nand",
+   "price": 135,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6fe3f6d0-fadf-4cc8-bf12-15c45104013e.jpg?v=1793356089",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104815096",
+   "title": "SanDisk Optimus GX PRO 4 TB M.2 PCI Express 4.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-pro-4-tb-m-2-pci-express-4-0-nvme-3d-tlc-nand",
+   "price": 1365,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f4a05ec1-7032-4a3f-9f1d-0f2eb08714b6.jpg?v=1793356059",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103670179",
+   "title": "SanDisk Optimus GX PRO 8100 1 TB M.2 PCI Express 5.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-pro-8100-1-tb-m-2-pci-express-5-0-nvme-tlc-3d-nand",
+   "price": 344,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ff252c1b-a4e5-4ee0-b817-3f176369adb4.jpg?v=1793355583",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103669829",
+   "title": "SanDisk Optimus GX PRO 8100 2 TB M.2 PCI Express 5.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-pro-8100-2-tb-m-2-pci-express-5-0-nvme-tlc-3d-nand",
+   "price": 629,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/492ef48b-1b35-4e7d-9594-79c8991754dc.jpg?v=1793355581",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103671552",
+   "title": "SanDisk Optimus GX PRO 8100 4 TB M.2 PCI Express 5.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-pro-8100-4-tb-m-2-pci-express-5-0-nvme-tlc-3d-nand",
+   "price": 1205.91,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8891f206-d23d-4301-a59e-3222f068ea64.jpg?v=1793355578",
+   "inStock": false,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103674379",
+   "title": "SanDisk Optimus GX PRO 850X 1 TB M.2 PCI Express 4.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-pro-850x-1-tb-m-2-pci-express-4-0-nvme-tlc-3d-nand",
+   "price": 310,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a6eb65c5-0da2-49cc-bf0d-db17a502bafb.jpg?v=1793356079",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103675791",
+   "title": "SanDisk Optimus GX PRO 850X 2 TB M.2 PCI Express 4.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-pro-850x-2-tb-m-2-pci-express-4-0-nvme-tlc-3d-nand",
+   "price": 607,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c569c4d2-d59a-4c49-9d64-cc5c83a4aacc.jpg?v=1793356084",
+   "inStock": true,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103671812",
+   "title": "SanDisk Optimus GX PRO 850X 4 TB M.2 PCI Express 4.0 NVMe TLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-optimus-gx-pro-850x-4-tb-m-2-pci-express-4-0-nvme-tlc-3d-nand",
+   "price": 1145,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/433b6d5b-388d-41db-b92f-7935e8c86738.jpg?v=1793356074",
+   "inStock": true,
    "brand": "Sandisk"
   },
   {
@@ -3588,13 +3842,46 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "86239223",
-   "title": "SanDisk SDSSDE30-1T00-G26 External solid state drive 1 TB",
-   "url": "https://www.clove.co.uk/products/sandisk-sdssde30-1t00-g26-external-solid-state-drive-1-tb-black",
-   "price": 192.57,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/baeff637-37e0-4ece-a8d2-76b514f0364b.jpg?v=1708512486",
+   "sku": "105316167",
+   "title": "SanDisk SDSS31100TBB-000G0 internal solid state drive 1 TB 2.5\" Serial ATA III 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-sdss31100tbb-000g0-internal-solid-state-drive-1-tb-2-5-serial-ata-iii-3d-nand",
+   "price": 195,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/876da80e-b7e5-4c9e-9767-9375189336f0.jpg?v=1793356068",
    "inStock": true,
-   "mpn": "SDSSDE30-1T00-G26",
+   "mpn": "SDSS31100TBB-000G0",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105316448",
+   "title": "SanDisk SDSS31200TBB-000G0 internal solid state drive 2 TB 2.5\" Serial ATA III 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-sdss31200tbb-000g0-internal-solid-state-drive-2-tb-2-5-serial-ata-iii-3d-nand",
+   "price": 358,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9cab75df-1b58-4797-a843-ce7ffabef569.jpg?v=1793356056",
+   "inStock": true,
+   "mpn": "SDSS31200TBB-000G0",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105315983",
+   "title": "SanDisk SDSS51100TAB-000G0 internal solid state drive 1 TB 2.5\" Serial ATA III 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-sdss51100tab-000g0-internal-solid-state-drive-1-tb-2-5-serial-ata-iii-3d-tlc-nand",
+   "price": 206,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5110d1cd-11b4-4351-9c4a-fe62617ffcec.jpg?v=1793356365",
+   "inStock": true,
+   "mpn": "SDSS51100TAB-000G0",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105315268",
+   "title": "SanDisk SDSS51200TAB-000G0 internal solid state drive 2 TB 2.5\" Serial ATA III 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-sdss51200tab-000g0-internal-solid-state-drive-2-tb-2-5-serial-ata-iii-3d-tlc-nand",
+   "price": 379,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a4f1e4c0-1c4f-4c02-9b05-6cf6a62f5857.jpg?v=1793356064",
+   "inStock": true,
+   "mpn": "SDSS51200TAB-000G0",
    "brand": "Sandisk"
   },
   {
@@ -3602,7 +3889,7 @@
    "sku": "86238944",
    "title": "SanDisk SDSSDE30-2T00-G26 external solid state drive 2 TB Black",
    "url": "https://www.clove.co.uk/products/sandisk-sdssde30-2t00-g26-external-solid-state-drive-2-tb-black",
-   "price": 277.72,
+   "price": 278,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/11e0fd55-8614-4c27-b9e4-c48065558da4.jpg?v=1709803895",
    "inStock": true,
    "mpn": "SDSSDE30-2T00-G26",
@@ -3626,6 +3913,17 @@
    "price": 1912.44,
    "inStock": false,
    "mpn": "SDSSDT40-8T00-EM25",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103677799",
+   "title": "SanDisk SN3000 500 GB M.2 PCI Express 4.0 NVMe QLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-sn3000-500-gb-m-2-pci-express-4-0-nvme-qlc-3d-nand",
+   "price": 109,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b068d567-5af2-4fd9-aec8-88f6d8e2c762.jpg?v=1793356105",
+   "inStock": true,
+   "mpn": "SN3000",
    "brand": "Sandisk"
   },
   {
@@ -3655,10 +3953,40 @@
    "sku": "86239449",
    "title": "SanDisk SN850P M.2 4 TB PCI Express 4.0 NVMe",
    "url": "https://www.clove.co.uk/products/sandisk-sn850p-m-2-4-tb-pci-express-4-0-nvme",
-   "price": 779.82,
+   "price": 779,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/237f7868-ed3b-430f-bcbc-d3978b167ef5.jpg?v=1711654620",
    "inStock": true,
    "mpn": "SN850P",
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "99312463",
+   "title": "SanDisk SSD Plus 1 TB 2.5\" Serial ATA III 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-ssd-plus-1-tb-2-5-serial-ata-iii-3d-nand",
+   "price": 323,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ff5d314c-35f8-493f-a7ef-61550365be81.jpg?v=1793356101",
+   "inStock": false,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "99300224",
+   "title": "SanDisk SSD Plus 250 GB 2.5\" Serial ATA III 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-ssd-plus-250-gb-2-5-serial-ata-iii-3d-nand",
+   "price": 90.65,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/df400f34-73dd-4ab8-bca7-0a4df27203f1.jpg?v=1793356359",
+   "inStock": false,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "99298267",
+   "title": "SanDisk SSD Plus 500 GB 2.5\" Serial ATA III 3D NAND",
+   "url": "https://www.clove.co.uk/products/sandisk-ssd-plus-500-gb-2-5-serial-ata-iii-3d-nand",
+   "price": 106.26,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dd672d17-2d38-4318-8c11-31284b2a2b05.jpg?v=1793356102",
+   "inStock": false,
    "brand": "Sandisk"
   },
   {
@@ -3753,6 +4081,28 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "102912596",
+   "title": "Seagate FireCuda X1070 1 TB M.2 PCI Express 4.0 NVMe",
+   "url": "https://www.clove.co.uk/products/seagate-firecuda-x1070-1-tb-m-2-pci-express-4-0-nvme",
+   "price": 346.93,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6134cc10-368c-4be9-a608-ea5f3452ce1e.jpg?v=1793356354",
+   "inStock": false,
+   "mpn": "X1070",
+   "brand": "Seagate"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "102889761",
+   "title": "Seagate FireCuda X1070 2 TB M.2 PCI Express 4.0 NVMe",
+   "url": "https://www.clove.co.uk/products/seagate-firecuda-x1070-2-tb-m-2-pci-express-4-0-nvme",
+   "price": 659.11,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/02fba4a4-5f8c-4bf9-959f-04a2fe92d0c7.jpg?v=1793356353",
+   "inStock": false,
+   "mpn": "X1070",
+   "brand": "Seagate"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "88279289",
    "title": "Seagate Game Drive PS5 - 3D TLC NVMe PCI Express 4.0 M.2 SSD - 1 TB",
    "url": "https://www.clove.co.uk/products/seagate-game-drive-ps5-nvme-m-2-1-tb-pci-express-4-0-3d-tlc",
@@ -3821,26 +4171,6 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "86239118",
-   "title": "Synology BeeDrive External solid state drive - 1TB",
-   "url": "https://www.clove.co.uk/products/synology-beedrive-1tb-black",
-   "price": 143.5,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/28a4556835cc98bd2e1bb1d2f1044c1e.jpg?v=1711378958",
-   "inStock": false,
-   "brand": "Synology"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "86240786",
-   "title": "Synology BeeDrive External solid state drive 2TB",
-   "url": "https://www.clove.co.uk/products/synology-beedrive-2tb-black",
-   "price": 302.3,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/59bd23b2-f5fb-4dd0-ab94-c8657e3b3677.jpg?v=1708512511",
-   "inStock": false,
-   "brand": "Synology"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "92464923",
    "title": "Synology Enterprise Series - Serial ATA III 2.5\" SSD - 1.92 TB",
    "url": "https://www.clove.co.uk/products/synology-enterprise-series-2-5-1-92-tb-serial-ata-iii",
@@ -3882,10 +4212,31 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "99265084",
+   "title": "Synology SNV5420-1600G internal solid state drive 1.6 TB M.2 PCI Express 4.0 NVMe",
+   "url": "https://www.clove.co.uk/products/synology-snv5420-1600g-internal-solid-state-drive-1-6-tb-m-2-pci-express-4-0-nvme",
+   "price": 1869,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/97bf9c12-31ec-4b77-9bbb-28edcd63d8cd.jpg?v=1793356054",
+   "inStock": true,
+   "mpn": "SNV5420-1600G",
+   "brand": "Synology"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "99733227",
+   "title": "Team Group G70 4 TB M.2 PCI Express 4.0 NVMe 3D NAND",
+   "url": "https://www.clove.co.uk/products/team-group-g70-4-tb-m-2-pci-express-4-0-nvme-3d-nand",
+   "price": 568,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a761e4b1-30ec-415e-be07-3d75fe154664.jpg?v=1793356071",
+   "inStock": true,
+   "brand": "Team Group"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "62918244",
    "title": "Team Group MP33 M.2 1 TB PCI Express 3.0 3D NAND NVMe",
    "url": "https://www.clove.co.uk/products/team-group-mp33-m-2-1-tb-pci-express-3-0-3d-nand-nvme",
-   "price": 155.59,
+   "price": 156,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c40f4ab0-55e0-494e-8dd0-322be3d1340c.jpg?v=1711650748",
    "inStock": false,
    "brand": "Team Group"
@@ -3895,7 +4246,7 @@
    "sku": "54862930",
    "title": "Team Group MP33 M.2 256 GB PCI Express 3.0 3D NAND NVMe",
    "url": "https://www.clove.co.uk/products/team-group-mp33-m-2-256-gb-pci-express-3-0-3d-nand-nvme",
-   "price": 58.78,
+   "price": 59,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/79513244-45be-4267-9cad-e396b76c5de2.jpg?v=1711650751",
    "inStock": false,
    "brand": "Team Group"
@@ -3947,7 +4298,7 @@
    "sku": "85762625",
    "title": "Team Group MP44L TM8FPK500G0C101 internal solid state drive M.2 500 GB PCI Express 4.0 SLC NVMe",
    "url": "https://www.clove.co.uk/products/team-group-mp44l-tm8fpk500g0c101-internal-solid-state-drive-m-2-500-gb-pci-express-4-0-slc-nvme",
-   "price": 91.18,
+   "price": 92,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/68284f2d-a14b-4407-9749-65e097e11cb5.jpg?v=1711650916",
    "inStock": false,
    "mpn": "MP44L",
@@ -3979,7 +4330,7 @@
    "sku": "45747495",
    "title": "Team Group MS30 M.2 512 GB Serial ATA III",
    "url": "https://www.clove.co.uk/products/team-group-ms30-m-2-512-gb-serial-ata-iii",
-   "price": 93.64,
+   "price": 94,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/585b930c-b961-41c6-9f6a-042e72b7ff36.jpg?v=1711650862",
    "inStock": false,
    "brand": "Team Group"
@@ -3995,10 +4346,21 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "104887539",
+   "title": "Team Group NV5000 500 GB M.2 PCI Express 4.0 NVMe 3D NAND",
+   "url": "https://www.clove.co.uk/products/team-group-nv5000-500-gb-m-2-pci-express-4-0-nvme-3d-nand",
+   "price": 92,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d9d3faad-8ae0-4d6f-917b-fe4d9180d0c5.jpg?v=1793356104",
+   "inStock": true,
+   "mpn": "NV5000",
+   "brand": "Team Group"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "92818102",
    "title": "Team Group QX T253X7512G0C101 internal solid state drive 2.5\" 512 GB Serial ATA III SLC",
    "url": "https://www.clove.co.uk/products/team-group-qx-t253x7512g0c101-internal-solid-state-drive-2-5-512-gb-serial-ata-iii-slc",
-   "price": 75.7,
+   "price": 76,
    "inStock": false,
    "mpn": "T253X7512G0C101",
    "brand": "Team Group"
@@ -4204,6 +4566,17 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "90659212",
+   "title": "Transcend E245S 250 GB M.2 PCI Express 4.0 NVMe 3D NAND",
+   "url": "https://www.clove.co.uk/products/transcend-e245s-250-gb-m-2-pci-express-4-0-nvme-3d-nand",
+   "price": 142.72,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0ef56916-3a23-493a-b821-2b64ac779fbc.jpg?v=1793356068",
+   "inStock": false,
+   "mpn": "E245S",
+   "brand": "Transcend"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "51120941",
    "title": "Transcend ESD240C Portable SSD 120GB",
    "url": "https://www.clove.co.uk/products/transcend-esd240c-portable-ssd-120gb",
@@ -4226,160 +4599,6 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "65203906",
-   "title": "Transcend ESD270C External solid state drive - 1 TB",
-   "url": "https://www.clove.co.uk/products/transcend-esd270c-1000-gb-black",
-   "price": 89.16,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b1b802814f575eef5e7c790a02d19828_2b9c2718-e754-4e13-a07d-561329c20c6c.jpg?v=1711378972",
-   "inStock": false,
-   "mpn": "ESD270C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "65586065",
-   "title": "Transcend ESD270C External solid state drive - 250 GB",
-   "url": "https://www.clove.co.uk/products/transcend-esd270c-250-gb-black",
-   "price": 17.89,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7b56ec76b36613ba7f54ee60631aaa9f.jpg?v=1711378959",
-   "inStock": false,
-   "mpn": "ESD270C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "87928258",
-   "title": "Transcend ESD300 External solid state drive 1 TB",
-   "url": "https://www.clove.co.uk/products/transcend-esd300-1-tb-silver",
-   "price": 108.84,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/931bab74-92d7-4af2-bd25-b12f49e13390.jpg?v=1708512463",
-   "inStock": false,
-   "mpn": "ESD300",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "87425988",
-   "title": "Transcend ESD300C External solid state drive - 1 TB",
-   "url": "https://www.clove.co.uk/products/transcend-esd300c-1-tb-blue",
-   "price": 122.65,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/74b5164275515add0b0052d1e7ead797.jpg?v=1711378966",
-   "inStock": false,
-   "mpn": "ESD300C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "87023922",
-   "title": "Transcend ESD310 External solid state drive - 2 TB",
-   "url": "https://www.clove.co.uk/products/transcend-esd310-2-tb-silver",
-   "price": 210.72,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/320e032dddd4f088e311b6f2a86085c3.jpg?v=1711378951",
-   "inStock": false,
-   "mpn": "ESD310",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "85221129",
-   "title": "Transcend ESD310C External solid state drive 1 TB",
-   "url": "https://www.clove.co.uk/products/transcend-esd310c-1-tb-black",
-   "price": 218.78,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/26b52261-b051-46e5-95de-d05c1c6c39ed.jpg?v=1708512504",
-   "inStock": false,
-   "mpn": "ESD310C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "85221113",
-   "title": "Transcend ESD310C External solid state drive 256 GB",
-   "url": "https://www.clove.co.uk/products/transcend-esd310c-256-gb-black",
-   "price": 65.75,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d5f25d5c-77ab-4c0d-8337-faab13c55bd9.jpg?v=1708512471",
-   "inStock": false,
-   "mpn": "ESD310C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "85220491",
-   "title": "Transcend ESD310C External solid state drive 512 GB",
-   "url": "https://www.clove.co.uk/products/transcend-esd310c-512-gb-black",
-   "price": 88.4,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0a9f7683-fdb5-46b3-85da-3b0cc2980730.jpg?v=1708512517",
-   "inStock": false,
-   "mpn": "ESD310C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "61950916",
-   "title": "Transcend ESD370C External solid state drive - 1 TB",
-   "url": "https://www.clove.co.uk/products/transcend-esd370c-1000-gb-black-blue",
-   "price": 135.91,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dc9402b72625ee658fa5a98b47780785.jpg?v=1711378965",
-   "inStock": false,
-   "mpn": "ESD370C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "62906617",
-   "title": "Transcend ESD370C External solid state drive 250 GB",
-   "url": "https://www.clove.co.uk/products/transcend-esd370c-250-gb-blue",
-   "price": 98.55,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/61b5d3d5-2265-40b8-a045-b5ba1c6982ac.jpg?v=1708512523",
-   "inStock": false,
-   "mpn": "ESD370C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "61950919",
-   "title": "Transcend ESD370C External solid state drive 500 GB",
-   "url": "https://www.clove.co.uk/products/transcend-esd370c-500-gb-black-blue",
-   "price": 96.14,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0be0a423-2f6c-4d99-a5dc-00671f1aed0e.jpg?v=1708512507",
-   "inStock": false,
-   "mpn": "ESD370C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "78253502",
-   "title": "Transcend ESD380C External solid state drive - 2 TB",
-   "url": "https://www.clove.co.uk/products/transcend-esd380c-2-tb-green",
-   "price": 514.83,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ef363feb01a66aee37e72ddd4c11ab45_b38d5c50-acf5-4f2a-b1a1-ab82f6db5774.jpg?v=1711378954",
-   "inStock": true,
-   "mpn": "ESD380C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "83673087",
-   "title": "Transcend ESD380C External solid state drive - 4 TB",
-   "url": "https://www.clove.co.uk/products/transcend-esd380c-4-tb-green",
-   "price": 406.77,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ef363feb01a66aee37e72ddd4c11ab45.jpg?v=1711378953",
-   "inStock": false,
-   "mpn": "ESD380C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "78253503",
-   "title": "Transcend ESD380C External solid state drive 1 TB",
-   "url": "https://www.clove.co.uk/products/transcend-esd380c-1-tb-green",
-   "price": 105.96,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a07c72dc-b932-4b8e-80d8-de6235bc2ba6.jpg?v=1708512493",
-   "inStock": false,
-   "mpn": "ESD380C",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "37615867",
    "title": "Transcend M.2 SSD 400S 128GB",
    "url": "https://www.clove.co.uk/products/transcend-m-2-ssd-400s-128gb",
@@ -4393,7 +4612,7 @@
    "sku": "38597476",
    "title": "Transcend M.2 SSD 420S 120GB",
    "url": "https://www.clove.co.uk/products/transcend-m-2-ssd-420s-120gb",
-   "price": 121.83,
+   "price": 122,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/30f4c7ae-cb87-422c-8c9b-f14a929a51d3.jpg?v=1711654255",
    "inStock": true,
    "brand": "Transcend"
@@ -4413,7 +4632,7 @@
    "sku": "48857638",
    "title": "Transcend M.2 SSD 430S 128GB",
    "url": "https://www.clove.co.uk/products/transcend-m-2-ssd-430s-128gb",
-   "price": 83.52,
+   "price": 84,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f0877c77-2c8a-48a6-8483-8da47e457bf3.jpg?v=1711654554",
    "inStock": true,
    "brand": "Transcend"
@@ -4463,7 +4682,7 @@
    "sku": "46286898",
    "title": "Transcend mSATA SSD 230S 128GB",
    "url": "https://www.clove.co.uk/products/transcend-msata-ssd-230s-128gb",
-   "price": 123.14,
+   "price": 124,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5f8050c6-a147-4030-8ef4-72c0dce33296.jpg?v=1711654383",
    "inStock": true,
    "brand": "Transcend"
@@ -4559,7 +4778,7 @@
    "sku": "50072936",
    "title": "Transcend PCIe SSD 220S 512GB",
    "url": "https://www.clove.co.uk/products/transcend-pcie-ssd-220s-512gb",
-   "price": 339.29,
+   "price": 340,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/90b0bd08-cc08-4e62-a7c6-4e6282dfc097.jpg?v=1711654604",
    "inStock": true,
    "brand": "Transcend"
@@ -4645,17 +4864,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dff2d3c5-c4b7-4e28-af0d-0cefb82861db.jpg?v=1709803957",
    "inStock": false,
    "mpn": "TS2TESD300P",
-   "brand": "Transcend"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "86392983",
-   "title": "Transcend TS2TESD310C External solid state drive 2 TB",
-   "url": "https://www.clove.co.uk/products/transcend-ts2tesd310c-external-solid-state-drive-2-tb-black",
-   "price": 202.83,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ef7f66a5-aa55-4dad-a159-7087e88a5d48.jpg?v=1708512469",
-   "inStock": false,
-   "mpn": "TS2TESD310C",
    "brand": "Transcend"
   },
   {
@@ -4837,6 +5045,123 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "49350293",
+   "title": "Verbatim Vi550 S3 SSD 512GB",
+   "url": "https://www.clove.co.uk/products/verbatim-vi550-s3-ssd-512gb",
+   "price": 87,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/89d5b6b0-5922-4310-b840-687dd4a1ce22.jpg?v=1793355641",
+   "inStock": true,
+   "brand": "Verbatim"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "56790004",
+   "title": "Verbatim Vi560 S3 M.2 SSD 1TB",
+   "url": "https://www.clove.co.uk/products/verbatim-vi560-s3-m-2-ssd-1tb",
+   "price": 192,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/966659dc-328c-47ed-84f7-37782012cf7f.jpg?v=1793356076",
+   "inStock": true,
+   "brand": "Verbatim"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "84709405",
+   "title": "Verbatim Vi7000G PCIe NVMe M.2 SSD 1TB The Ultimate Gaming Solution",
+   "url": "https://www.clove.co.uk/products/verbatim-vi7000g-pcie-nvme-m-2-ssd-1tb-the-ultimate-gaming-solution",
+   "price": 168.81,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/476fae9f-ce3a-475c-b777-33f2779f1c4f.jpg?v=1793356368",
+   "inStock": false,
+   "brand": "Verbatim"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "84710778",
+   "title": "Verbatim Vi7000G PCIe NVMe M.2 SSD 2TB The Ultimate Gaming Solution",
+   "url": "https://www.clove.co.uk/products/verbatim-vi7000g-pcie-nvme-m-2-ssd-2tb-the-ultimate-gaming-solution",
+   "price": 316,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8be265e7-ef06-416c-afb3-c90a822deb56.jpg?v=1793356048",
+   "inStock": true,
+   "brand": "Verbatim"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "98622276",
+   "title": "Western Digital Black SN7100 4 TB M.2 PCI Express 4.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-black-sn7100-4-tb-m-2-pci-express-4-0-nvme-3d-tlc-nand",
+   "price": 632,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/56611a09-0ad3-4b03-a1ae-f5227214a192.jpg?v=1793355624",
+   "inStock": true,
+   "mpn": "SN7100",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107782",
+   "title": "Western Digital Black WD_BLACK™ SN7100 NVMe™ SSD POWERED BY SANDISK 4 TB",
+   "url": "https://www.clove.co.uk/products/western-digital-black-wd_black™-sn7100-nvme™-ssd-powered-by-sandisk-4-tb",
+   "price": 631,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d0c263ad-d024-475f-9099-37eba60e69c0.jpg?v=1793355576",
+   "inStock": true,
+   "mpn": "SN7100",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107687",
+   "title": "Western Digital Black WD_BLACK™ SN7100 NVMe™ SSD POWERED BY SANDISK 500 GB",
+   "url": "https://www.clove.co.uk/products/western-digital-black-wd_black™-sn7100-nvme™-ssd-powered-by-sandisk-500-gb",
+   "price": 134.97,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6f17e18c-5392-4bda-bad6-293446644877.jpg?v=1793355640",
+   "inStock": false,
+   "mpn": "SN7100",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107700",
+   "title": "Western Digital Black WD_BLACK™ SN770M NVMe™ SSD POWERED BY SANDISK 2 TB",
+   "url": "https://www.clove.co.uk/products/western-digital-black-wd_black™-sn770m-nvme™-ssd-powered-by-sandisk-2-tb",
+   "price": 441,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f9f6c4da-0a92-4265-b639-4e1ba751ee25.jpg?v=1793356095",
+   "inStock": true,
+   "mpn": "SN770M",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104839305",
+   "title": "Western Digital Black WD_BLACK™ SN8100 NVMe™ SSD POWERED BY SANDISK 1 TB",
+   "url": "https://www.clove.co.uk/products/western-digital-black-wd_black™-sn8100-nvme™-ssd-powered-by-sandisk-1-tb-1",
+   "price": 315,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/72aa8f11-f846-4771-b06e-04c854a32fbe.jpg?v=1793356114",
+   "inStock": false,
+   "mpn": "SN8100",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104751791",
+   "title": "Western Digital Black WD_BLACK™ SN8100 NVMe™ SSD POWERED BY SANDISK 1 TB",
+   "url": "https://www.clove.co.uk/products/western-digital-black-wd_black™-sn8100-nvme™-ssd-powered-by-sandisk-1-tb",
+   "price": 362.77,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/33ee8fd6-0f74-4fd5-a9e7-88d04b42a431.jpg?v=1793355643",
+   "inStock": false,
+   "mpn": "SN8100",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "93304957",
+   "title": "Western Digital Black WDS800T2XHE internal solid state drive 8 TB M.2 PCI Express 4.0 NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-black-wds800t2xhe-internal-solid-state-drive-8-tb-m-2-pci-express-4-0-nvme",
+   "price": 2043,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dec93777-d686-46ee-a7d1-6f9e8961dcbf.jpg?v=1793356098",
+   "inStock": true,
+   "mpn": "WDS800T2XHE",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "99272637",
    "title": "Western Digital Blue SA510 - Serial ATA 2.5\" SSD - 4 TB",
    "url": "https://www.clove.co.uk/products/western-digital-blue-sa510-4-tb-2-5-serial-ata",
@@ -4855,6 +5180,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ccc1cc728a27d4d4ee3e78c063727939.jpg?v=1721387696",
    "inStock": false,
    "mpn": "SA510",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "93148977",
+   "title": "Western Digital Blue SN5000 4 TB M.2 PCI Express 4.0 NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-blue-sn5000-4-tb-m-2-pci-express-4-0-nvme",
+   "price": 566,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/71d31ab3-d999-4a98-9c25-c2ae0b80244b.jpg?v=1793356058",
+   "inStock": true,
+   "mpn": "SN5000",
    "brand": "Western Digital"
   },
   {
@@ -4913,10 +5249,43 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "104107840",
+   "title": "Western Digital Blue WD ™ SA510 SATA SSD M.2 2280 POWERED BY SANDISK 2 TB",
+   "url": "https://www.clove.co.uk/products/western-digital-blue-wd-™-sa510-sata-ssd-m-2-2280-powered-by-sandisk-2-tb",
+   "price": 300.91,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/31ead1bb-d348-44fd-abed-c0d970934396.jpg?v=1793355644",
+   "inStock": false,
+   "mpn": "SA510",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107784",
+   "title": "Western Digital Blue WD ™ SA510 SATA SSD M.2 2280 POWERED BY SANDISK 250 GB",
+   "url": "https://www.clove.co.uk/products/western-digital-blue-wd-™-sa510-sata-ssd-m-2-2280-powered-by-sandisk-250-gb",
+   "price": 159.75,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/abc3f8fa-2fe0-4528-8df8-99f4077007bc.jpg?v=1793355623",
+   "inStock": false,
+   "mpn": "SA510",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104115259",
+   "title": "Western Digital Blue WD ™ SA510 SATA SSD M.2 2280 POWERED BY SANDISK 500 GB",
+   "url": "https://www.clove.co.uk/products/western-digital-blue-wd-™-sa510-sata-ssd-m-2-2280-powered-by-sandisk-500-gb",
+   "price": 139.96,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/162ab35a-f21d-492f-9ff6-4c2e57d6e016.jpg?v=1793355618",
+   "inStock": false,
+   "mpn": "SA510",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "86070126",
    "title": "Western Digital External solid state drive in Black - 1 TB",
    "url": "https://www.clove.co.uk/products/western-digital-wdbayn0010bbk-wesn-external-solid-state-drive-1000-gb-black",
-   "price": 200.43,
+   "price": 201,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3562095a9c4f38edb866ebfa77be202f.jpg?v=1711456189",
    "inStock": true,
    "brand": "Western Digital"
@@ -4926,9 +5295,20 @@
    "sku": "30668334",
    "title": "Western Digital Green M.2 240 GB Serial ATA III",
    "url": "https://www.clove.co.uk/products/western-digital-green-m-2-240-gb-serial-ata-iii",
-   "price": 90.72,
+   "price": 91,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8af17b58-90b9-464f-b0ea-a938200b3f62.jpg?v=1711654304",
    "inStock": true,
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104302658",
+   "title": "Western Digital Green SN3000 1 TB M.2 PCI Express 4.0 NVMe QLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-green-sn3000-1-tb-m-2-pci-express-4-0-nvme-qlc-3d-nand",
+   "price": 246.62,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/661cfb2a-b3fd-4017-8e0d-4a2c2f9fd24a.jpg?v=1793355639",
+   "inStock": false,
+   "mpn": "SN3000",
    "brand": "Western Digital"
   },
   {
@@ -4955,12 +5335,120 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "104107800",
+   "title": "Western Digital Green WD ™ SATA SSD 2,5\"/7 mm POWERED BY SANDISK 250 GB",
+   "url": "https://www.clove.co.uk/products/western-digital-green-wd-™-sata-ssd-2-5-7-mm-powered-by-sandisk-250-gb",
+   "price": 154,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3a100dbc-6e97-4f68-9af5-540c7ee0f36a.jpg?v=1793356351",
+   "inStock": false,
+   "brand": "Sandisk"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104122947",
+   "title": "Western Digital Green WD ™ SATA SSD 2,5\"/7 mm POWERED BY SANDISK 500 GB",
+   "url": "https://www.clove.co.uk/products/western-digital-green-wd-™-sata-ssd-2-5-7-mm-powered-by-sandisk-500-gb",
+   "price": 230,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/81fc9e79-f4e0-436a-939e-2a0895fa8e9c.jpg?v=1793355591",
+   "inStock": true,
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107867",
+   "title": "Western Digital Green WD ™ SN3000 NVMe™ SSD POWERED BY SANDISK 1 TB",
+   "url": "https://www.clove.co.uk/products/western-digital-green-wd-™-sn3000-nvme™-ssd-powered-by-sandisk-1-tb",
+   "price": 192,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4ffa854b-438f-49af-8308-74412c43d0c0.jpg?v=1793355582",
+   "inStock": true,
+   "mpn": "SN3000",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107653",
+   "title": "Western Digital Green WD ™ SN3000 NVMe™ SSD POWERED BY SANDISK 2 TB",
+   "url": "https://www.clove.co.uk/products/western-digital-green-wd-™-sn3000-nvme™-ssd-powered-by-sandisk-2-tb",
+   "price": 252.59,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8c4ce431-fdfe-4f3b-b2df-5fa3c87176e0.jpg?v=1793355577",
+   "inStock": false,
+   "mpn": "SN3000",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107645",
+   "title": "Western Digital Green WD ™ SN3000 NVMe™ SSD POWERED BY SANDISK 500 GB",
+   "url": "https://www.clove.co.uk/products/western-digital-green-wd-™-sn3000-nvme™-ssd-powered-by-sandisk-500-gb",
+   "price": 101,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d282012c-5349-42cd-a73a-f203590e0253.jpg?v=1793355585",
+   "inStock": true,
+   "mpn": "SN3000",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "86070535",
    "title": "Western Digital My Passport - USB Type-C External SSD in Red - 2 TB",
    "url": "https://www.clove.co.uk/products/western-digital-my-passport-2-tb-red",
    "price": 156.91,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/250e4b76af08259bc59f67bc1fb5eb0d.jpg?v=1718884767",
    "inStock": false,
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103696011",
+   "title": "Western Digital Red WD ™ SA500 SATA SSD 2,5\"/7 mm POWERED BY SANDISK 2 TB",
+   "url": "https://www.clove.co.uk/products/western-digital-red-wd-™-sa500-sata-ssd-2-5-7-mm-powered-by-sandisk-2-tb",
+   "price": 536,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f71ce8fb-8a28-4412-8f28-8643433c632d.jpg?v=1793355590",
+   "inStock": true,
+   "mpn": "SA500",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107692",
+   "title": "Western Digital Red WD ™ SA500 SATA SSD M.2 2280 POWERED BY SANDISK 500 GB",
+   "url": "https://www.clove.co.uk/products/western-digital-red-wd-™-sa500-sata-ssd-m-2-2280-powered-by-sandisk-500-gb",
+   "price": 227.3,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7b26e2fc-4a52-4048-b86b-e4fc2d80e9a2.jpg?v=1793355631",
+   "inStock": false,
+   "mpn": "SA500",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107679",
+   "title": "Western Digital Red WD ™ SN700 NVMe™ POWERED BY SANDISK 4 TB",
+   "url": "https://www.clove.co.uk/products/western-digital-red-wd-™-sn700-nvme™-powered-by-sandisk-4-tb",
+   "price": 1182.43,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ac139ab9-60fd-4da6-84b2-a79ecc8e64ff.jpg?v=1793355595",
+   "inStock": false,
+   "mpn": "SN700",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107837",
+   "title": "Western Digital Red WD ™ SN700 NVMe™ POWERED BY SANDISK 500 GB",
+   "url": "https://www.clove.co.uk/products/western-digital-red-wd-™-sn700-nvme™-powered-by-sandisk-500-gb",
+   "price": 348.39,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ed806d39-ebf8-4cce-82dd-d2a9d089e473.jpg?v=1793355594",
+   "inStock": false,
+   "mpn": "SN700",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104302434",
+   "title": "Western Digital SN3000 1 TB M.2 PCI Express 4.0 NVMe QLC 3D NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-sn3000-1-tb-m-2-pci-express-4-0-nvme-qlc-3d-nand",
+   "price": 196,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/888684a0-189f-4a3b-b345-749446c1145b.jpg?v=1793356346",
+   "inStock": true,
+   "mpn": "SN3000",
    "brand": "Western Digital"
   },
   {
@@ -5000,7 +5488,7 @@
    "sku": "100492024",
    "title": "Western Digital WD Green - PCI Express QLC NVMe M.2 SSD - 2 TB",
    "url": "https://www.clove.co.uk/products/western-digital-green-wds200t3g0c-2-tb-m-2-pci-express-nvme-qlc",
-   "price": 254.66,
+   "price": 255,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f4e74101-cef2-4574-90ea-1ce0dec55f56.jpg?v=1766053300",
    "inStock": true,
    "brand": "Western Digital"
@@ -5061,6 +5549,127 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "100493304",
+   "title": "Western Digital WDS100T1R0C internal solid state drive 1 TB M.2 PCI Express NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-wds100t1r0c-internal-solid-state-drive-1-tb-m-2-pci-express-nvme",
+   "price": 1145,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ad332ba6-5654-43ca-9a8b-083d6e78c314.jpg?v=1793356118",
+   "inStock": true,
+   "mpn": "WDS100T1R0C",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "79072931",
+   "title": "Western Digital WDS100T2X0E internal solid state drive 1 TB M.2 PCI Express 4.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-wds100t2x0e-internal-solid-state-drive-1-tb-m-2-pci-express-4-0-nvme-3d-tlc-nand",
+   "price": 268,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5221a6bb-8299-4aa3-ab17-ce5461bc08f4.jpg?v=1793356115",
+   "inStock": true,
+   "mpn": "WDS100T2X0E",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100492454",
+   "title": "Western Digital WDS100T3X0G 2 TB M.2 PCI Express 4.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-wds100t3x0g-2-tb-m-2-pci-express-4-0-nvme-3d-tlc-nand",
+   "price": 442,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f1941de5-288c-402a-b5a7-eed5d2adfa3b.jpg?v=1793356062",
+   "inStock": true,
+   "mpn": "WDS100T3X0G",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "88283098",
+   "title": "Western Digital WDS100T3X0G internal solid state drive 1 TB M.2 PCI Express 4.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-wds100t3x0g-internal-solid-state-drive-1-tb-m-2-pci-express-4-0-nvme-3d-tlc-nand",
+   "price": 335.75,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0f860377-4bdd-4508-a060-13c25f70685f.jpg?v=1793356080",
+   "inStock": false,
+   "mpn": "WDS100T3X0G",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "86108287",
+   "title": "Western Digital WDS200T3B0A internal solid state drive 2 TB 2.5\" micro SATA NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-wds200t3b0a-internal-solid-state-drive-2-tb-2-5-micro-sata-nvme",
+   "price": 417.82,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/32baba59-3fe8-4535-82d7-3988b3d31001.jpg?v=1793355623",
+   "inStock": false,
+   "mpn": "WDS200T3B0A",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103748766",
+   "title": "Western Digital WDS200T3G0C internal solid state drive 1 TB M.2 PCI Express 3.0 NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-wds200t3g0c-internal-solid-state-drive-1-tb-m-2-pci-express-3-0-nvme",
+   "price": 311,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e155a00d-e6ae-4424-b549-0a3d526af01a.jpg?v=1793355592",
+   "inStock": true,
+   "mpn": "WDS200T3G0C",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100492917",
+   "title": "Western Digital WDS240G3G0B internal solid state drive 240 GB M.2 Serial ATA",
+   "url": "https://www.clove.co.uk/products/western-digital-wds240g3g0b-internal-solid-state-drive-240-gb-m-2-serial-ata",
+   "price": 101,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ce105ce9-40eb-4263-adc1-6c2a54a6ce57.jpg?v=1793355647",
+   "inStock": true,
+   "mpn": "WDS240G3G0B",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104107621",
+   "title": "Western Digital WDS250G1R0C internal solid state drive 250 GB M.2 PCI Express NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-wds250g1r0c-internal-solid-state-drive-250-gb-m-2-pci-express-nvme",
+   "price": 75.72,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1450b11a-b4b3-43ee-9710-07634b09e829.jpg?v=1793356349",
+   "inStock": false,
+   "mpn": "WDS250G1R0C",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100493482",
+   "title": "Western Digital WDS250G2G0C internal solid state drive 250 GB M.2 PCI Express 3.0 NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-wds250g2g0c-internal-solid-state-drive-250-gb-m-2-pci-express-3-0-nvme",
+   "price": 127,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a9f34d73-8858-489a-b7d4-c4d269a44d07.jpg?v=1793355627",
+   "inStock": false,
+   "mpn": "WDS250G2G0C",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "79069570",
+   "title": "Western Digital WDS400T2X0E internal solid state drive 4 TB M.2 PCI Express 4.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-wds400t2x0e-internal-solid-state-drive-4-tb-m-2-pci-express-4-0-nvme-3d-tlc-nand",
+   "price": 937,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/20a39579-0feb-42f3-952f-88a2dfc08227.jpg?v=1793356343",
+   "inStock": true,
+   "mpn": "WDS400T2X0E",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100492602",
+   "title": "Western Digital WDS400T3B0A internal solid state drive 4 TB 2.5\" micro SATA NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-wds400t3b0a-internal-solid-state-drive-4-tb-2-5-micro-sata-nvme",
+   "price": 712.57,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9101c162-ee3e-476c-a858-832d88faddeb.jpg?v=1793355645",
+   "inStock": false,
+   "mpn": "WDS400T3B0A",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "51869704",
    "title": "Western Digital WDS480G1G0A internal solid state drive 2.5\" 480 GB Serial ATA III",
    "url": "https://www.clove.co.uk/products/western-digital-wds480g1g0a-internal-solid-state-drive-2-5-480-gb-serial-ata-iii",
@@ -5069,6 +5678,101 @@
    "inStock": false,
    "mpn": "WDS480G1G0A",
    "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "55389395",
+   "title": "Western Digital WDS500G1R0A internal solid state drive 500 GB 2.5\" Serial ATA 3D NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-wds500g1r0a-internal-solid-state-drive-500-gb-2-5-serial-ata-3d-nand",
+   "price": 498.78,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/931c86e3-415d-4ea0-abd5-13977a15b907.jpg?v=1793356114",
+   "inStock": false,
+   "mpn": "WDS500G1R0A",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100493183",
+   "title": "Western Digital WDS500G1R0B internal solid state drive 500 GB M.2 Serial ATA 3D NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-wds500g1r0b-internal-solid-state-drive-500-gb-m-2-serial-ata-3d-nand",
+   "price": 227.3,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7bdc452b-f56a-45b5-a685-48aae98bedfa.jpg?v=1793355629",
+   "inStock": false,
+   "mpn": "WDS500G1R0B",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100493123",
+   "title": "Western Digital WDS500G1R0C internal solid state drive 500 GB M.2 PCI Express NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-wds500g1r0c-internal-solid-state-drive-500-gb-m-2-pci-express-nvme",
+   "price": 348.39,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/01354d49-61da-409b-b9bd-144112cb8a6f.jpg?v=1793356347",
+   "inStock": false,
+   "mpn": "WDS500G1R0C",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "77385376",
+   "title": "Western Digital WDS500G3B0A internal solid state drive 500 GB 2.5\" micro SATA NVMe",
+   "url": "https://www.clove.co.uk/products/western-digital-wds500g3b0a-internal-solid-state-drive-500-gb-2-5-micro-sata-nvme",
+   "price": 160,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/63dc4a51-f2d5-4efe-a5f8-2e94fd19b6f3.jpg?v=1793356345",
+   "inStock": true,
+   "mpn": "WDS500G3B0A",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "100493037",
+   "title": "Western Digital WDS800T2X0E internal solid state drive 8 TB M.2 PCI Express 4.0 NVMe 3D TLC NAND",
+   "url": "https://www.clove.co.uk/products/western-digital-wds800t2x0e-internal-solid-state-drive-8-tb-m-2-pci-express-4-0-nvme-3d-tlc-nand",
+   "price": 2043,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bf1af610-ea99-4235-bb0f-bb5c435f7403.jpg?v=1793356366",
+   "inStock": true,
+   "mpn": "WDS800T2X0E",
+   "brand": "Western Digital"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103779514",
+   "title": "XPG GAMMIX S60 512 GB M.2 PCI Express 4.0 NVMe 3D NAND",
+   "url": "https://www.clove.co.uk/products/xpg-gammix-s60-512-gb-m-2-pci-express-4-0-nvme-3d-nand",
+   "price": 101,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f79e5ab3-4d03-4a8b-94d0-9a66a301821f.jpg?v=1793356049",
+   "inStock": true,
+   "brand": "ADATA"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104704747",
+   "title": "XPG GAMMIX S70 Blade 1 TB M.2 PCI Express 4.0 NVMe 3D NAND",
+   "url": "https://www.clove.co.uk/products/xpg-gammix-s70-blade-1-tb-m-2-pci-express-4-0-nvme-3d-nand",
+   "price": 160,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/da4b00af-f8a0-410a-afc5-84371dfc2504.jpg?v=1793355650",
+   "inStock": true,
+   "brand": "ADATA"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105986014",
+   "title": "XPG GAMMIX S70 Blade 4 TB M.2 PCI Express 4.0 NVMe 3D NAND",
+   "url": "https://www.clove.co.uk/products/xpg-gammix-s70-blade-4-tb-m-2-pci-express-4-0-nvme-3d-nand",
+   "price": 642,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a36e19f3-1b94-42fa-8f04-6abf237dd32f.jpg?v=1793356364",
+   "inStock": true,
+   "brand": "ADATA"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "104707984",
+   "title": "XPG GAMMIX S70 Blade M.2 2000 GB PCI Express 4.0 3D NAND NVMe",
+   "url": "https://www.clove.co.uk/products/xpg-gammix-s70-blade-m-2-2000-gb-pci-express-4-0-3d-nand-nvme",
+   "price": 293,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d55c7e18-5efc-4e42-8730-846f9e0bf47a.jpg?v=1793355654",
+   "inStock": true,
+   "brand": "ADATA"
   },
   {
    "retailer": "uk-clove",

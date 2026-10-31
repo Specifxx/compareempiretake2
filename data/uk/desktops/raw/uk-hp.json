@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T00:05:05.108Z",
+ "scrapedAt": "2026-10-30T23:46:15.629Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -513,7 +513,7 @@
    "price": 2159.99,
    "wasPrice": 2279.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08545100_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -877,7 +877,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-1003na-pc-d01ljea-abu",
    "price": 2549,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/7/b714d6d9-98c0-486b-95dd-ef4e26de876a.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -900,7 +900,7 @@
    "price": 2699,
    "wasPrice": 2799,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/5/25c2_omen_snowball_stealth_35l_shadowblack_coreset_frontright_4385852_cus_5.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -911,7 +911,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-1001na-pc-d01lgea-abu",
    "price": 2799,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/7/b714d6d9-98c0-486b-95dd-ef4e26de876a.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -934,18 +934,6 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt17-0401na-pc-d01lnea-abu",
    "price": 3799,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/5/25c2_omen_snowball_stealth_35l_shadowblack_coreset_frontright_4385852_cus_4.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "C53CYEA#ABU",
-   "mpn": "C53CYEA#ABU",
-   "brand": "HP",
-   "title": "HP OMEN 35L Gaming Desktop, Intel Core i7, 32GB, 1TB, NVIDIA GeForce RTX 5060 8GB, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-0120na-pc-c53cyea-abu",
-   "price": 1849,
-   "wasPrice": 1899,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/7/e/7ee939c3-f2df-4dd9-baba-4408eb8cd32a.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -1037,7 +1025,30 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-0051na-pc-bt7w9ea-abu",
    "price": 2200,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/6/1/611faa42-37e2-4bfc-af33-68e5fd18b454.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "C53CYEA#ABU",
+   "mpn": "C53CYEA#ABU",
+   "brand": "HP",
+   "title": "HP OMEN 35L Limited Edition Valorant Gaming Desktop, Intel Core i7, 32GB, 1TB, NVIDIA GeForce RTX 5060 8GB, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-0120na-pc-c53cyea-abu",
+   "price": 1849,
+   "wasPrice": 1899,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/7/e/7ee939c3-f2df-4dd9-baba-4408eb8cd32a.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E47W0EA#ABU",
+   "mpn": "E47W0EA#ABU",
+   "brand": "HP",
+   "title": "HP Omen Max 45L Gaming Desktop, AMD Ryzen 7, 32GB, 2TB, NVIDIA GeForce RTX 5090 32GB, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-max-45l-gaming-dt-gt23-0405na-pc-e47w0ea-abu",
+   "price": 5500,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/9/3/9355b858-ac4c-41c8-bd7b-acc582eac954.png?store=gb-en&image-type=small_image",
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -1059,6 +1070,17 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-max-45l-gaming-dt-gt23-0406na-pc-e41thea-abu",
    "price": 4999.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/5/5/5530397c-9c65-4c17-a53a-5ad996e1ef23.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E47VTEA#ABU",
+   "mpn": "E47VTEA#ABU",
+   "brand": "HP",
+   "title": "HP Omen Max 45L Gaming Desktop, AMD Ryzen 9, 64GB, 2TB, NVIDIA GeForce RTX 5090 32GB, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-max-45l-gaming-dt-gt23-0404na-pc-e47vtea-abu",
+   "price": 6499.99,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/9/3/9355b858-ac4c-41c8-bd7b-acc582eac954.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -1228,6 +1250,17 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "D2GT9EA#ABU",
+   "mpn": "D2GT9EA#ABU",
+   "brand": "HP",
+   "title": "HP OmniStudio 24\" All-in-One Desktop, Intel Core 3, 8GB, 256GB",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-omnistudio-all-in-one-desktop-24-cu0006na-pc-d2gt9ea-abu",
+   "price": 550,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/0/00391cb5-cd9e-49ff-b8b6-debd14804d9b.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "D2GW8EA#ABU",
    "mpn": "D2GW8EA#ABU",
    "brand": "HP",
@@ -1287,6 +1320,17 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "D82L6EA#ABU",
+   "mpn": "D82L6EA#ABU",
+   "brand": "HP",
+   "title": "HP OmniStudio 27\" All-in-One Desktop, Intel Core 5, 8GB, 512GB",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-omnistudio-all-in-one-desktop-27-cu0010na-pc-d82l6ea-abu",
+   "price": 730,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/5/05730ef9-2729-41a3-b1d4-f6af52309112.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "DP2X4EA#ABU",
    "mpn": "DP2X4EA#ABU",
    "brand": "HP",
@@ -1306,6 +1350,17 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-omnistudio-all-in-one-desktop-27-cu0006na-pc-d18fcea-abu",
    "price": 1649,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/m/o/modric_27_ff_cps_elaine_kb_puddy_m_aio_mdc_cottonwhite_front_5765405_cus.jpg?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "D5WF4EA#ABU",
+   "mpn": "D5WF4EA#ABU",
+   "brand": "HP",
+   "title": "HP OmniStudio 27\" All-in-One Desktop, Intel Core 7, 8GB, 1TB",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-omnistudio-all-in-one-desktop-27-cu0000sa-pc-d5wf4ea-abu",
+   "price": 1119,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/d/9/d96c2d90-0f50-486a-9124-4fc46dfb3e2d.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -1633,7 +1688,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-prodesk-4-sff-g1i-desktop-ai-pc-wolf-pro-security-edition-882f5ea-abu",
    "price": 2099.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/4/d/4d1e5bef-a60a-484f-b0a4-5093310b9e06.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1839,7 +1894,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z1-tower-g1i-desktop-pc-wolf-pro-security-edition-d4pt0ea-abu",
    "price": 2399.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_z1_tower_g1i_spices_twr_desktop_jetblack_odd_whitebg_front_m2969458_cus_2.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -2153,7 +2208,7 @@
    "price": 1958.39,
    "wasPrice": 1958.93,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/1/7/17eeea0a-14cb-439a-8f6d-070d49063f81.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -2318,7 +2373,7 @@
    "price": 2195.99,
    "wasPrice": 2209.62,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/5/7/579cddad-110c-4f2a-a47a-7c29298444bb.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -2341,7 +2396,7 @@
    "price": 3599.99,
    "wasPrice": 3671.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/8/0/803429ab-b7f0-41fa-9376-466f06115f8c.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -2741,7 +2796,7 @@
    "price": 7199.99,
    "wasPrice": 7367.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/7/d/7df043d6-371b-4cd9-8caf-a5a1b01d3319.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2789,7 +2844,7 @@
    "price": 15335.99,
    "wasPrice": 15336.48,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/3/03_steamboat_z8_fury_g6i_vertical_premium_jackblack_catalog_frontright_5184603_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",

@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-10-30T00:01:28.499Z",
+ "scrapedAt": "2026-10-30T23:43:33.586Z",
  "offers": [
+  {
+   "retailer": "us-lg",
+   "sku": "100MRGB95BU",
+   "mpn": "100MRGB95BU",
+   "brand": "LG",
+   "title": "100 Inch Class LG Micro RGB evo AI MRGB95B 4K Smart TV 2026",
+   "url": "https://www.lg.com/us/tvs/lg-100mrgb95bu-mrgb-4k-tv",
+   "price": 6999.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/96c69afd-db95-49be-a156-7d8c2a37dc5d/TVs_100MRGB95BU-MRG-gallery-1_5000x5000",
+   "inStock": true
+  },
   {
    "retailer": "us-lg",
    "sku": "100QNED84BU",
@@ -58,17 +69,6 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "43UA7000PUB",
-   "mpn": "43UA7000PUB",
-   "brand": "LG",
-   "title": "43 Inch Class LG UHD AI UA7000 4K Smart TV 2025",
-   "url": "https://www.lg.com/us/tvs/lg-43ua7000pub-4k-uhd-tv",
-   "price": 229.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/58472db7-1d4b-41a5-9832-9e42d53fe2ab/TV-43UA7000PUB-gallery-01_3000x3000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
    "sku": "OLED48C6PUA",
    "mpn": "OLED48C6PUA",
    "brand": "LG",
@@ -102,6 +102,28 @@
   },
   {
    "retailer": "us-lg",
+   "sku": "50QNED85TUA",
+   "mpn": "50QNED85TUA",
+   "brand": "LG",
+   "title": "50 Inch Class QNED 4K LED QNED85T series TV with webOS 24",
+   "url": "https://www.lg.com/us/tvs/lg-50qned85tua-qned-4k-tv",
+   "price": 849.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/1bef6c40-190d-4aa4-9d3d-f1bf1765e2fb/Tv_50QNED85TUA_gallery-01_3000x3000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "OLED55B5PUA",
+   "mpn": "OLED55B5PUA",
+   "brand": "LG",
+   "title": "55 Inch Class LG OLED AI B5 4K Smart TV 2025",
+   "url": "https://www.lg.com/us/tvs/lg-oled55b5pua-oled-4k-tv",
+   "price": 1499.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/7ee016f7-6ea9-4b8b-b52b-f3ed447e79db/TVs-OLED55B5PUA-gallery-01_3000x3000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
    "sku": "OLED55B6EUA",
    "mpn": "OLED55B6EUA",
    "brand": "LG",
@@ -113,24 +135,24 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "55QNED70AUA",
-   "mpn": "55QNED70AUA",
+   "sku": "55QNED75BAA",
+   "mpn": "55QNED75BAA",
    "brand": "LG",
-   "title": "55 Inch Class LG QNED AI QNED70A 4K Smart TV 2025",
-   "url": "https://www.lg.com/us/tvs/lg-55qned70aua-qned-4k-tv",
-   "price": 479,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/3d503b80-8e67-4a88-9f61-a36a5750a995/TV-55QNED70AUA-gallery-01_3000x3000",
+   "title": "55 Inch Class LG QNED AI QNED75B Mini LED 4K Smart TV 2026",
+   "url": "https://www.lg.com/us/tvs/lg-55qned75baa-qned-4k-tv",
+   "price": 449.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/62cb1073-59ba-493a-b562-f94503e45598/TV-55QNED75BAA-gallery-1-new-5000x5000",
    "inStock": true
   },
   {
    "retailer": "us-lg",
-   "sku": "55QNED85AUA",
-   "mpn": "55QNED85AUA",
+   "sku": "55UA7000PUB",
+   "mpn": "55UA7000PUB",
    "brand": "LG",
-   "title": "55 Inch Class LG QNED evo AI QNED85A 4K Smart TV 2025",
-   "url": "https://www.lg.com/us/tvs/lg-55qned85aua-qned-4k-tv",
-   "price": 899,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/0ca9a739-ba31-4077-a659-c9e329775176/TV-55QNED85AUA-gallery-01_3000x3000",
+   "title": "55 Inch Class LG UHD AI UA7000 4K Smart TV 2025",
+   "url": "https://www.lg.com/us/tvs/lg-55ua7000pub-4k-uhd-tv",
+   "price": 328.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/0b8e6928-3f30-430e-859b-528774556442/TV-55UA7000PUB-gallery-01-3000x3000",
    "inStock": true
   },
   {
@@ -168,17 +190,6 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "65QNED7SBAA",
-   "mpn": "65QNED7SBAA",
-   "brand": "LG",
-   "title": "65 Inch Class LG QNED AI QNED7SB Mini LED 4K Smart TV 2026",
-   "url": "https://www.lg.com/us/tvs/lg-65qned7sbaa-qned-4k-tv",
-   "price": 479.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/9efd8b19-9177-4f77-96c0-9f9144271b13/TV-65QNED7SBAA-gallery-01_5000x5000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
    "sku": "65QNED85BUA",
    "mpn": "65QNED85BUA",
    "brand": "LG",
@@ -201,24 +212,13 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "65QNED92AUA",
-   "mpn": "65QNED92AUA",
+   "sku": "65QNED85AUA",
+   "mpn": "65QNED85AUA",
    "brand": "LG",
-   "title": "65 Inch Class LG QNED evo AI QNED92A Mini LED 4K Smart TV 2025",
-   "url": "https://www.lg.com/us/tvs/lg-65qned92aua-qned-4k-tv",
-   "price": 1799,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/a68d00a0-5f7d-4f39-bd40-9de001dffe06/TVs-65QNED92AUA-LG-QNED-gallery-01_3000x3000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "65UA7700PUB",
-   "mpn": "65UA7700PUB",
-   "brand": "LG",
-   "title": "65 Inch Class LG UHD AI UA77 4K Smart TV 2025",
-   "url": "https://www.lg.com/us/tvs/lg-65ua7700pub-4k-uhd-tv",
-   "price": 479.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/b60cb43e-8b7b-4ed4-8744-767e607c6ddd/TV_65UA7700PUB_gallery_01_3000x3000",
+   "title": "65 Inch Class LG QNED evo AI QNED85A 4K Smart TV 2025",
+   "url": "https://www.lg.com/us/tvs/lg-65qned85aua-qned-4k-tv",
+   "price": 1299,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/9cb1a0c3-b52b-42a3-81a4-55abd2020eb0/TV-65QNED85AUA-gallery-01_3000x3000",
    "inStock": true
   },
   {
@@ -234,6 +234,17 @@
   },
   {
    "retailer": "us-lg",
+   "sku": "75QNED7SBAA",
+   "mpn": "75QNED7SBAA",
+   "brand": "LG",
+   "title": "75 Inch Class LG QNED AI QNED7SB Mini LED 4K Smart TV 2026",
+   "url": "https://www.lg.com/us/tvs/lg-75qned7sbaa-qned-4k-tv",
+   "price": 679.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/90002297-8473-4b8a-b521-7bbeed95226b/TV-75QNED7SBAA-gallery-01_5000x5000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
    "sku": "75QNED82AUA",
    "mpn": "75QNED82AUA",
    "brand": "LG",
@@ -245,13 +256,13 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "75QNED99TUA",
-   "mpn": "75QNED99TUA",
+   "sku": "75QNED92AUA",
+   "mpn": "75QNED92AUA",
    "brand": "LG",
-   "title": "75 Inch Class QNED 8K MiniLED Smart TV 2024",
-   "url": "https://www.lg.com/us/tvs/lg-75qned99tua-qned-4k-tv",
-   "price": 3499.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/04835c27-68fa-4787-8a1d-4fd35526e36b/TV_75QNED99TUA_gallery_01_3000x3000",
+   "title": "75 Inch Class LG QNED evo AI QNED92A Mini LED 4K Smart TV 2025",
+   "url": "https://www.lg.com/us/tvs/lg-75qned92aua-qned-4k-tv",
+   "price": 2299,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/dec2bdff-e716-4333-bf6e-c9c559bcdf84/TVs-75QNED92AUA-LG-QNED-gallery-01_3000x3000",
    "inStock": true
   },
   {
@@ -267,6 +278,17 @@
   },
   {
    "retailer": "us-lg",
+   "sku": "OLED77B6AUA",
+   "mpn": "OLED77B6AUA",
+   "brand": "LG",
+   "title": "77 Inch Class LG OLED AI B6 4K Smart TV 2026",
+   "url": "https://www.lg.com/us/tvs/lg-oled77b6aua-oled-4k-tv",
+   "price": 2799.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/2318e421-7339-43a0-8964-036e06b679dc/TVs_OLED77B6AUA_gallery-new-1_5000x5000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
    "sku": "OLED77C5PUA",
    "mpn": "OLED77C5PUA",
    "brand": "LG",
@@ -274,17 +296,6 @@
    "url": "https://www.lg.com/us/tvs/lg-oled77c5pua-oled-4k-tv",
    "price": 2199.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/3b843531-9e92-4c82-a548-852e32f304ba/TV_OLED77C5PUA_gallery_01_3000x3000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "OLED77C6HUA",
-   "mpn": "OLED77C6HUA",
-   "brand": "LG",
-   "title": "77 Inch Class LG OLED evo AI C6H 4K Smart TV 2026",
-   "url": "https://www.lg.com/us/tvs/lg-oled77c6hua-oled-4k-tv",
-   "price": 3699.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/c1e4c3a6-d8c7-42a2-ac86-7c643471355c/TV-OLED77C6HUA-LG-OLED-EVO-AI-gallery_5000x5000",
    "inStock": true
   },
   {
@@ -322,17 +333,6 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "OLED83B6AUA",
-   "mpn": "OLED83B6AUA",
-   "brand": "LG",
-   "title": "83 Inch Class LG OLED AI B6 4K Smart TV 2026",
-   "url": "https://www.lg.com/us/tvs/lg-oled83b6aua-oled-4k-tv",
-   "price": 4299.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/3faac2f6-4800-42d8-a4b0-51699bc0a43f/TVs_OLED83B6AUA_gallery-new-1_5000x5000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
    "sku": "OLED83B4AUA",
    "mpn": "OLED83B4AUA",
    "brand": "LG",
@@ -340,6 +340,17 @@
    "url": "https://www.lg.com/us/tvs/lg-oled83b4aua-oled-4k-tv",
    "price": 3999.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/6d3dba52-b5c5-458b-a673-643c89f38366/TV_OLED83B4AUA_gallery_01_3000x3000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "OLED83C6HUA",
+   "mpn": "OLED83C6HUA",
+   "brand": "LG",
+   "title": "83 Inch Class LG OLED evo AI C6H 4K Smart TV 2026",
+   "url": "https://www.lg.com/us/tvs/lg-oled83c6hua-oled-4k-tv",
+   "price": 5299.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/2e1e4ddf-b87e-4e33-a0d4-b986c47354b0/TV-OLED83C6HUA-LG-OLED-EVO-AI-CNET-gallery_5000x5000",
    "inStock": true
   },
   {
@@ -355,35 +366,24 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "85QNED75BAA",
-   "mpn": "85QNED75BAA",
+   "sku": "86QNED70AUA",
+   "mpn": "86QNED70AUA",
    "brand": "LG",
-   "title": "85 Inch Class LG QNED AI QNED75B Mini LED 4K Smart TV 2026",
-   "url": "https://www.lg.com/us/tvs/lg-85qned75baa-qned-4k-tv",
-   "price": 1299.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/921030b8-10e4-4d43-8c9b-f0ff41654687/TV-85QNED75BAA-gallery-1-new-5000x5000",
+   "title": "86 Inch Class LG QNED AI QNED70A 4K Smart TV 2025",
+   "url": "https://www.lg.com/us/tvs/lg-86qned70aua-qned-4k-tv",
+   "price": 1299,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/6d81e4fb-c306-4b91-a48d-222b017f2ed3/TV-86QNED70AUA-gallery-01_3000x3000",
    "inStock": true
   },
   {
    "retailer": "us-lg",
-   "sku": "86MRGB95BUA",
-   "mpn": "86MRGB95BUA",
+   "sku": "86UA7700PUA",
+   "mpn": "86UA7700PUA",
    "brand": "LG",
-   "title": "86 Inch Class LG Micro RGB evo AI MRGB95B 4K Smart TV 2026",
-   "url": "https://www.lg.com/us/tvs/lg-86mrgb95bua-mrgb-4k-tv",
-   "price": 5299.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/f6366260-ac65-4ac6-add4-ecd4e097760e/TVs_86MRGB95BUA-MRG-gallery-1_5000x5000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "86QNED85TUA",
-   "mpn": "86QNED85TUA",
-   "brand": "LG",
-   "title": "86 Inch Class QNED 4K LED QNED85T series TV with webOS 24",
-   "url": "https://www.lg.com/us/tvs/lg-86qned85tua-qned-4k-tv",
-   "price": 2799.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/d3e71bcd-dc16-45f8-be95-61967659821b/Tv_86QNED85TUA_gallery-01_3000x3000",
+   "title": "86 Inch Class LG UHD AI UA77 4K Smart TV 2025",
+   "url": "https://www.lg.com/us/tvs/lg-86ua7700pua-4k-uhd-tv",
+   "price": 1099.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/ae258f00-2e11-461d-b9a5-f2f749958eea/TV_86UA7700PUA_gallery_01_3000x3000",
    "inStock": true
   },
   {
@@ -395,6 +395,17 @@
    "url": "https://www.lg.com/us/tvs/lg-86qned90tua-qned-4k-tv",
    "price": 3299.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/16ca9bd8-bd41-4c64-93f0-9dc6fa6fbf3c/TV_86QNED90TUA_gallery-01_3000x3000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "86QNED99TUA",
+   "mpn": "86QNED99TUA",
+   "brand": "LG",
+   "title": "86 Inch Class QNED MiniLED QNED99T 8K Smart TV 2024",
+   "url": "https://www.lg.com/us/tvs/lg-86qned99tua-qned-4k-tv",
+   "price": 5299.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/9e23d95b-36bd-44e9-a323-ab07b430d0de/TV-86QNED99TUA-gallery-01_3000x3000",
    "inStock": true
   },
   {
@@ -432,6 +443,17 @@
   },
   {
    "retailer": "us-lg",
+   "sku": "43QNED80TUC",
+   "mpn": "43QNED80TUC",
+   "brand": "LG",
+   "title": "LG 43 Inch Class QNED80T Series 4K QNED TV with webOS 24",
+   "url": "https://www.lg.com/us/tvs/lg-43qned80tuc-qned-4k-tv",
+   "price": 549.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/e0a70101-cdca-4f9b-ae1b-abc4904afd77/TV_43QNED80TUC_gallery-01_3000x3000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
    "sku": "50UQ7570PUJ",
    "mpn": "50UQ7570PUJ",
    "brand": "LG",
@@ -443,13 +465,35 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "55UT7000PUA",
-   "mpn": "55UT7000PUA",
+   "sku": "55QNED75URA",
+   "mpn": "55QNED75URA",
    "brand": "LG",
-   "title": "LG 55 Inch Class UHD Series 4K UHD TV with webOS 24",
-   "url": "https://www.lg.com/us/tvs/lg-55ut7000pua-4k-uhd-tv",
-   "price": 379.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/1327e01e-1ab6-485e-b42f-fa8eecbac8a7/TV_55UT7000PUA_gallery_01_3000x3000",
+   "title": "LG 55 Inch Class QNED75 series LED 4K UHD Smart webOS 23 w/ ThinQ AI TV",
+   "url": "https://www.lg.com/us/tvs/lg-55qned75ura-qned-4k-tv",
+   "price": 699.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/17813533-00af-4903-bbd3-923b95f6c835/75-50QNED75URA_thumbnail_350x350",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "55UR9000PUA",
+   "mpn": "55UR9000PUA",
+   "brand": "LG",
+   "title": "LG 55 Inch Class UR9000 series LED 4K UHD Smart webOS 23 w/ ThinQ AI TV",
+   "url": "https://www.lg.com/us/tvs/lg-55ur9000pua-4k-uhd-tv",
+   "price": 549,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/6943aac6-a5a5-4a53-bf5b-533201edbbfe/55UR9000PUA_thumbnail_350x350",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "OLED65B3PUA",
+   "mpn": "OLED65B3PUA",
+   "brand": "LG",
+   "title": "LG 65 Inch Class B3 series OLED 4K UHD Smart webOS 23 w/ ThinQ AI TV",
+   "url": "https://www.lg.com/us/tvs/lg-oled65b3pua-oled-4k-tv",
+   "price": 2399.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/527ae0a7-42fa-4e2d-99df-2850c4e8d1fc/TV-OLED65B3PUA-Lg-OLED-gallery-01_5000x5000",
    "inStock": true
   },
   {
@@ -476,28 +520,6 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "65UR9000PUA",
-   "mpn": "65UR9000PUA",
-   "brand": "LG",
-   "title": "LG 65 Inch Class UR9000 series LED 4K UHD Smart webOS 23 w/ ThinQ AI TV",
-   "url": "https://www.lg.com/us/tvs/lg-65ur9000pua-4k-uhd-tv",
-   "price": 629.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/1b81c515-31fc-4bdb-a010-2c36dd0ffd2b/65UR9000PUA_thumbnail_350x350",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "75QNED75URA",
-   "mpn": "75QNED75URA",
-   "brand": "LG",
-   "title": "LG 75 Inch Class QNED75 series LED 4K UHD Smart webOS 23 w/ ThinQ AI TV",
-   "url": "https://www.lg.com/us/tvs/lg-75qned75ura-qned-4k-tv",
-   "price": 1199.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/17813533-00af-4903-bbd3-923b95f6c835/75-50QNED75URA_thumbnail_350x350",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
    "sku": "75UT7590PUA",
    "mpn": "75UT7590PUA",
    "brand": "LG",
@@ -509,24 +531,13 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "OLED77B3PUA",
-   "mpn": "OLED77B3PUA",
+   "sku": "75UT7000PUA",
+   "mpn": "75UT7000PUA",
    "brand": "LG",
-   "title": "LG 77 Inch Class B3 series OLED 4K UHD Smart webOS 23 w/ ThinQ AI TV",
-   "url": "https://www.lg.com/us/tvs/lg-oled77b3pua-oled-4k-tv",
-   "price": 3299.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/2d45db52-11b6-4e40-b4a6-b4e5b25e81d9/TV-OLED77B3PUA-Lg-OLED-gallery-01_5000x5000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "86QNED80TUC",
-   "mpn": "86QNED80TUC",
-   "brand": "LG",
-   "title": "LG 86 Inch Class QNED80T Series 4K QNED TV with webOS 24",
-   "url": "https://www.lg.com/us/tvs/lg-86qned80tuc-qned-4k-tv",
-   "price": 2299.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/58a966f3-4ab1-4b6c-9630-2031a57f59d9/TV_86QNED80TUC_gallery-01_3000x3000",
+   "title": "LG 75 Inch Class UHD Series 4K UHD TV with webOS 24",
+   "url": "https://www.lg.com/us/tvs/lg-75ut7000pua-4k-uhd-tv",
+   "price": 649.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/1b0fff85-e365-4f50-9c70-f33112f7d9b8/TV_75UT7000PUA_gallery_01_3000x3000",
    "inStock": true
   },
   {
@@ -597,6 +608,17 @@
   },
   {
    "retailer": "us-lg",
+   "sku": "OLED83M3PUA",
+   "mpn": "OLED83M3PUA",
+   "brand": "LG",
+   "title": "LG OLED evo M Series 83 Inch Class 4K Smart TV with Wireless Video & Audio Transfer",
+   "url": "https://www.lg.com/us/tvs/lg-oled83m3pua-oled-4k-tv",
+   "price": 7999.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/8f0e1d0a-f32a-4d54-847b-5e10eaaeeff5/TV_OLED83M3PUA_gallery_01_5000x5000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
    "sku": "65QNED83UPA",
    "mpn": "65QNED83UPA",
    "brand": "LG",
@@ -604,17 +626,6 @@
    "url": "https://www.lg.com/us/tvs/lg-65qned83upa-mini-led-4k-tv",
    "price": 1299.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/4926a17e-6435-4ec8-a6da-07c9d872d7c8/md08000540-450-jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "OLED97M3PUA",
-   "mpn": "OLED97M3PUA",
-   "brand": "LG",
-   "title": "LG SIGNATURE OLED M 97 Inch Class 4K Smart TV with Wireless Video & Audio Transfer",
-   "url": "https://www.lg.com/us/tvs/lg-oled97m3pua-oled-4k-tv",
-   "price": 29999.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/cda83161-f920-4b5d-b03f-9781567673aa/TV_OLED97M3PUA_gallery_01_5000x5000",
    "inStock": true
   }
  ]

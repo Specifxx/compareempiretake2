@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-10-29T23:25:17.561Z",
+ "scrapedAt": "2026-10-30T23:05:56.348Z",
  "offers": [
   {
    "retailer": "mwave",
    "sku": "AC98975",
    "title": "Acer FA100 256GB PCIe 3.0 NVMe M.2 2280 SSD - 1950/1300MB/s",
    "url": "https://www.mwave.com.au/products/acer-fa100-256gb-pcie-30-nvme-m2-2280-ssd-19501300mbs-ac98975",
-   "price": 69,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/acer_fa100_256gb_pcie_30_nvme_m2_2280_ssd_up_to_1950_mbs_read_ac98975_41791.jpg?v=1787783550",
    "inStock": true,
    "brand": "Acer"
@@ -339,7 +339,7 @@
    "url": "https://www.mwave.com.au/products/biwin-black-opal-x570-pro-8tb-pcie-50-nvme-m2-ssd-bx570dn08tbrgx-ac98567",
    "price": 2443.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/biwin_black_opal_x570_pro_8tb_pcie_50_nvme_m2_ssd_bx570dn08tbrgx_ac98567_19747.jpg?v=1787795687",
-   "inStock": true,
+   "inStock": false,
    "mpn": "BX570DN08TB-RGX",
    "brand": "Biwin"
   },
@@ -350,7 +350,7 @@
    "url": "https://www.mwave.com.au/products/biwin-m100-1tb-25-sata-iii-6-gbs-ssd-550500mbs-ac82908",
    "price": 211.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/biwin_m100_1tb_25_sata_iii_6_gbs_ssd_bm100nn01tbrgx_ac82908_27071.jpg?v=1787745033",
-   "inStock": false,
+   "inStock": true,
    "brand": "Biwin"
   },
   {
@@ -360,7 +360,7 @@
    "url": "https://www.mwave.com.au/products/biwin-m100-512gb-25-sata-iii-6-gbs-ssd-bm100nn512grgx-ac82904",
    "price": 125.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/biwin_m100_512gb_25_sata_iii_6_gbs_ssd_bm100nn512grgx_ac82904_99804.jpg?v=1787795688",
-   "inStock": false,
+   "inStock": true,
    "mpn": "BM100NN512G-RGX",
    "brand": "Biwin"
   },
@@ -389,7 +389,7 @@
    "sku": "AC99281",
    "title": "Colorful CN700 PRO 1TB PCIe Gen 4 M.2 2280 NVMe SSD - CN700 PRO 1TB",
    "url": "https://www.mwave.com.au/products/colorful-cn700-pro-1tb-pcie-gen-4-m2-2280-nvme-ssd-cn700-pro-1tb-ac99281",
-   "price": 199,
+   "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/colorful_cn700_pro_1tb_pcie_gen_4_m2_2280_nvme_ssd_cn700_pro_1tb_ac99281_61619.jpg?v=1787795941",
    "inStock": true,
    "brand": "Colorful"
@@ -843,7 +843,7 @@
    "sku": "AC97478",
    "title": "Kingbank KP310 512GB  2.5\" SATA III SSD - 520/480MB",
    "url": "https://www.mwave.com.au/products/kingbank-kp310-512gb-25-sata-iii-ssd-520480mb-ac97478",
-   "price": 139,
+   "price": 179,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingbank_512gb_kp310_25_sata_iii_ssd_k502fsl1512403_ac97478_38045.jpg?v=1787785977",
    "inStock": true,
    "brand": "KingBank"
@@ -1129,7 +1129,7 @@
    "sku": "AC99228",
    "title": "Lenovo PS8S 1TB USB-C 3.2 Gen2 Portable SSD - Up to 1050MB/s Read, 1000MB/s Write",
    "url": "https://www.mwave.com.au/products/lenovo-ps8s-1tb-usbc-32-gen2-portable-ssd-up-to-1050mbs-read-1000mbs-write-ac99228",
-   "price": 179,
+   "price": 229,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lenovo_ps8s_1tb_usb_32_portable_ssd_10501000mb_ac99228_35587.jpg?v=1787746497",
    "inStock": true,
    "brand": "Lenovo"
@@ -1193,7 +1193,7 @@
    "url": "https://www.mwave.com.au/products/lexar-nm620-1tb-pcie-30-nvme-m2-2280-ssd-lnm620x001trnnng-ac72373",
    "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lnm620x001trnnng_ac72373_26322.jpg?v=1787797406",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LNM620X001T-RNNNG",
    "brand": "Lexar"
   },
@@ -1641,7 +1641,7 @@
    "sku": "174135",
    "title": "Samsung 870 Evo 2TB 2.5\" SATA III 6GB/s V-NAND SSD MZ-77E2T0BW",
    "url": "https://www.mwave.com.au/products/samsung-870-evo-2tb-25-sata-iii-6gbs-vnand-ssd-mz77e2t0bw-ac41600",
-   "price": 749,
+   "price": 1213,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/2tb_ac41600.jpg?v=1787789133",
    "inStock": true,
    "mpn": "MZ-77E2T0BW",
@@ -2656,7 +2656,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-1tb-pcie-40-nvme-m2-ssd-sz01kgbp44ud9005au-ac93701",
    "price": 248,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_1tb_pcie_40_nvme_m2_ssd_sz01kgbp44ud9005au_ac93701_45920.jpg?v=1789457436",
-   "inStock": true,
+   "inStock": false,
    "mpn": "SZ01KGBP44UD9005AU",
    "brand": "Silicon Power"
   },
@@ -2710,7 +2710,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-500gb-pcie-40-nvme-m2-2230-ssd-ac93744",
    "price": 194,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_500gb_pcie_40_nvme_m2_2230_ssd_ac93744_81675.jpg?v=1789457436",
-   "inStock": false,
+   "inStock": true,
    "brand": "Silicon Power"
   },
   {

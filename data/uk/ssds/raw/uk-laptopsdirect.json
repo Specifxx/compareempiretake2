@@ -1,14 +1,36 @@
 {
- "scrapedAt": "2026-10-30T00:09:57.511Z",
+ "scrapedAt": "2026-10-31T00:00:11.768Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2008988",
-   "mpn": "406L7AA",
-   "title": "HP 1TB 2280 PCI-e 4x4 NVMe M.2 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/hp-1tb-2280-pci-e-4x4-nvme-m.2-406l7aa/version.asp",
-   "price": 2463.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/406L7AA_1_Classic.jpg?v=1",
+   "sku": "1279280",
+   "mpn": "SSD7013A",
+   "title": "2-Power 500GB M.2 2280 Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/2-power-500gb-m.2-nvme-ssd-ssd7013a/version.asp",
+   "price": 81.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/SSD7013A_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2067524",
+   "mpn": "A1/SNV3S/2000G",
+   "title": "Box Opened Kingston NV3 2TB M.2 2280 Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/grade-a1-kingston-nv3-2tb-m.2-2280-internal-ssd-a1-snv3s-2000g/version.asp",
+   "price": 240.96,
+   "wasPrice": 304.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/SNV3S2000G_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2047412",
+   "mpn": "CT1000T710SSD5",
+   "title": "Crucial T710 1TB PCIe Gen5 NVMe 2280 M.2 SSD",
+   "url": "https://www.laptopsdirect.co.uk/crucial-t710-1tb-pcie-gen5-nvme-2280-m.2-ssd-ct1000t710ssd5/version.asp",
+   "price": 194.97,
+   "wasPrice": 232.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/CT1000T710SSD5_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -83,7 +105,7 @@
    "title": "Kingston KTC DC600M 960GB 2.5 Inch SATA Enterprise SSD",
    "url": "https://www.laptopsdirect.co.uk/kingston-ktc-dc600m-960gb-2.5-sata-enterprise-ssd-sedc600m-960g/version.asp",
    "price": 660,
-   "wasPrice": 779.9,
+   "wasPrice": 782.39,
    "image": "https://www.laptopsdirect.co.uk/Images/SEDC600M960G_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -105,6 +127,16 @@
    "url": "https://www.laptopsdirect.co.uk/kingston-nv3-2tb-m.2-2280-internal-ssd-snv3s-2000g/version.asp",
    "price": 304.97,
    "image": "https://www.laptopsdirect.co.uk/Images/SNV3S2000G_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1953073",
+   "mpn": "SNV3S/500G",
+   "title": "Kingston NV3 500GB M.2 2280 Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/kingston-nv3-500gb-m.2-2280-internal-ssd-snv3s-500g/version.asp",
+   "price": 99.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/SNV3S500G_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -146,7 +178,7 @@
    "title": "Kingston XS1000 2TB USB 3.2 Gen 2 Portable External SSD - Red",
    "url": "https://www.laptopsdirect.co.uk/kingston-xs1000-2tb-usb-3.2-gen-2-portable-external-ssd-red-sxs1000r-2000g/version.asp",
    "price": 320.97,
-   "wasPrice": 403.19,
+   "wasPrice": 400.79,
    "image": "https://www.laptopsdirect.co.uk/Images/SXS1000R2000G_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -156,8 +188,8 @@
    "mpn": "STMF2000400",
    "title": "Lacie 2TB External SSD Grey, Orange",
    "url": "https://www.laptopsdirect.co.uk/lacie-rugged-mini-2tb-usb-3.2-external-ssd-stmf2000400/version.asp",
-   "price": 666.97,
-   "wasPrice": 746.39,
+   "price": 667.97,
+   "wasPrice": 751.19,
    "image": "https://www.laptopsdirect.co.uk/Images/STMF4000400_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -168,7 +200,7 @@
    "title": "Lacie 4TB External SSD Grey, Orange",
    "url": "https://www.laptopsdirect.co.uk/seagate-lacie-rugged-mini-ssd-4tb-usb-c-3.2-gen-2-external-ssd-stmf4000400/version.asp",
    "price": 1295.97,
-   "wasPrice": 1457.99,
+   "wasPrice": 1467.59,
    "image": "https://www.laptopsdirect.co.uk/Images/STMF4000400_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -179,8 +211,19 @@
    "title": "Lexar NM790 SSD 2TB PCIe Gen4 NVMe M.2 2280",
    "url": "https://www.laptopsdirect.co.uk/lexar-nm790-ssd-2tb-pcie-gen4-nvme-m.2-2280-lnm790x002t-rnnng/version.asp",
    "price": 367.97,
-   "wasPrice": 445.97,
+   "wasPrice": 446.98,
    "image": "https://www.laptopsdirect.co.uk/Images/LNM790X002T-RNNNG_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2047774",
+   "mpn": "MTFDKBA480TFR-1BC15ABYYR",
+   "title": "Micron 7450 PRO 480GB M.2 PCI Express 4.0 SSD",
+   "url": "https://www.laptopsdirect.co.uk/micron-7450-pro-480gb-m.2-pci-express-4.0-ssd-mtfdkba480tfr-1bc15abyyr/version.asp",
+   "price": 420,
+   "wasPrice": 2048.39,
+   "image": "https://www.laptopsdirect.co.uk/Images/MTFDKBA480TFR-1BC15ABYYR_1_classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -211,39 +254,6 @@
    "url": "https://www.laptopsdirect.co.uk/samsung-870-evo-4tb-sata-2.5-inch-ssd-mz-77e4t0b-eu/version.asp",
    "price": 1264.97,
    "image": "https://www.laptopsdirect.co.uk/Images/MZ-77E4T0BEU_1_Classic.jpg?v=2",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2000077",
-   "mpn": "MZ-VAP1T0BW",
-   "title": "Samsung 9100 PRO 1TB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/samsung-9100-pro-1tb-m.2-2280-internal-ssd-mz-vap1t0bw/version.asp",
-   "price": 244.97,
-   "wasPrice": 289.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/MZ-VAP1T0BW_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2000078",
-   "mpn": "MZ-VAP2T0BW",
-   "title": "Samsung 9100 PRO 2TB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/samsung-9100-pro-2tb-m.2-2280-internal-ssd-mz-vap2t0bw/version.asp",
-   "price": 477.97,
-   "wasPrice": 560.39,
-   "image": "https://www.laptopsdirect.co.uk/Images/MZ-VAP2T0BW_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2000079",
-   "mpn": "MZ-VAP4T0BW",
-   "title": "Samsung 9100 PRO 4TB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/samsung-9100-pro-4tb-m.2-2280-internal-ssd-mz-vap4t0bw/version.asp",
-   "price": 1070.97,
-   "wasPrice": 1294.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/MZ-VAP4T0BW_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -295,28 +305,6 @@
    "url": "https://www.laptopsdirect.co.uk/samsung-990-evo-plus-4tb-m.2-2280-internal-ssd-mz-v9s4t0bw/version.asp",
    "price": 689.97,
    "image": "https://www.laptopsdirect.co.uk/Images/MZ-V9S4T0BW_1_Classic.jpg?v=6",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1800114",
-   "mpn": "MZ-V9P1T0BW",
-   "title": "Samsung 990 PRO 1TB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/samsung-990-pro-1tb-nvme-m.2-ssd-mz-v9p1t0bw/version.asp",
-   "price": 237.97,
-   "wasPrice": 265.19,
-   "image": "https://www.laptopsdirect.co.uk/Images/MZ-V9P1T0BW_1_Classic.jpg?v=19",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1800115",
-   "mpn": "MZ-V9P2T0BW",
-   "title": "Samsung 990 PRO 2TB M.2 2280 Internal SSD",
-   "url": "https://www.laptopsdirect.co.uk/samsung-990-pro-2tb-nvme-m.2-ssd-mz-v9p2t0bw/version.asp",
-   "price": 450.97,
-   "wasPrice": 530.39,
-   "image": "https://www.laptopsdirect.co.uk/Images/MZ-V9P2T0BW_1_Classic.jpg?v=40",
    "inStock": true
   },
   {
@@ -378,7 +366,7 @@
    "title": "Seagate Lacie Mobile Drive 2TB USB 3.0 External SSD",
    "url": "https://www.laptopsdirect.co.uk/lacie-mobile-drive-2tb-2.5-inch-usb-3.2-gen-1-external-hard-drive-stlp2000400/version.asp",
    "price": 133.97,
-   "wasPrice": 142.79,
+   "wasPrice": 143.99,
    "image": "https://www.laptopsdirect.co.uk/Images/STLP2000400_1_Classic.jpg?v=5",
    "inStock": true
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T00:01:04.076Z",
+ "scrapedAt": "2026-10-30T23:43:42.970Z",
  "offers": [
   {
    "retailer": "us-dell",
@@ -100,6 +100,17 @@
   },
   {
    "retailer": "us-dell",
+   "sku": "precision5860tower",
+   "brand": "Dell",
+   "title": "Dell Precision 5860 Tower",
+   "url": "https://www.dell.com/en-us/shop/workstation/spd/precision5860tower",
+   "price": 3948,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/precision-desktops/desktop-precision-5860/media-gallery/desktop-precision-5860-black-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=447&qlt=100,0&resMode=sharp2&size=447,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
    "sku": "precisiontower7875",
    "brand": "Dell",
    "title": "Dell Precision 7875 Tower Workstation",
@@ -111,11 +122,33 @@
   },
   {
    "retailer": "us-dell",
+   "sku": "dellpro24allinone35wqc24251",
+   "brand": "Dell",
+   "title": "Dell Pro 24 All-in-One 35W Desktop",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellpro24allinone35wqc24251",
+   "price": 1764,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qc24251/media-gallery/desktop-aio-dell-pro-qc24251-fixst-cam-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=967&qlt=100,0&resMode=sharp2&size=967,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellpro5microp5m1260",
+   "brand": "Dell",
+   "title": "Dell Pro 5 Micro Desktop",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellpro5microp5m1260",
+   "price": 1617,
+   "image": "https://i.dell.com/assetlink/img/global/dell-pro-p5m1260-micro-desktop-c-30030rf000-bk-dl169my-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=435&qlt=100,0&resMode=sharp2&size=435,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
    "sku": "dellproessentialmicropvm1265",
    "brand": "Dell",
    "title": "Dell Pro Essential Micro Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellproessentialmicropvm1265",
-   "price": 949,
+   "price": 1029,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-essential/pvm1265/media-gallery/desktop-pvm1265-pro-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=413&qlt=100,0&resMode=sharp2&size=413,804",
    "inStock": true,
    "fromPrice": true
@@ -126,8 +159,30 @@
    "brand": "Dell",
    "title": "Dell Pro Essential Slim Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellproessentialslimqvs1260",
-   "price": 811,
+   "price": 850,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qvs1260/media-gallery/with-reader/desktop-qvs1260-slim-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=485&qlt=100,0&resMode=sharp2&size=485,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellproessentialtowerqvt1260",
+   "brand": "Dell",
+   "title": "Dell Pro Essential Tower Desktop",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellproessentialtowerqvt1260",
+   "price": 900,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ect1250/media-gallery/with-reader/desktop-tower-ect1250-c-no-ssd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=560&qlt=100,0&resMode=sharp2&size=560,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellpromaxmicrofcm2250",
+   "brand": "Dell",
+   "title": "Dell Pro Max Micro Desktop",
+   "url": "https://www.dell.com/en-us/shop/workstation/spd/dellpromaxmicrofcm2250",
+   "price": 1449,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcm2250/media-gallery/desktop-dell-pro-max-fcm2250-micro-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=507&qlt=100,0&resMode=sharp2&size=507,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -197,12 +252,45 @@
   },
   {
    "retailer": "us-dell",
+   "sku": "dellpromicroq9m1260tc",
+   "brand": "Dell",
+   "title": "Dell Pro Micro Thin Client",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellpromicroq9m1260tc",
+   "price": 798,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/q9m1260/media-gallery/desktop-q9m1260-pro-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=440&qlt=100,0&resMode=sharp2&size=440,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
    "sku": "dellproprecision7t1pw7t1260",
    "brand": "Dell",
    "title": "Dell Pro Precision 7 T1 Desktop",
    "url": "https://www.dell.com/en-us/shop/workstation/spd/dellproprecision7t1pw7t1260",
    "price": 1330,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-7-t1-pw7t1260/media-gallery/desktop-precision-pw7t1260-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=508&qlt=100,0&resMode=sharp2&size=508,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellproprecision9t2pw9t2260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T2 Desktop",
+   "url": "https://www.dell.com/en-us/shop/workstation/spd/dellproprecision9t2pw9t2260",
+   "price": 3978,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t2-pw9t2260/media-gallery/desktop-precision-pw9t2260-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=553&qlt=100,0&resMode=sharp2&size=553,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellproprecision9t4pw9t4260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T4 Desktop",
+   "url": "https://www.dell.com/en-us/shop/workstation/spd/dellproprecision9t4pw9t4260",
+   "price": 5756,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t4-pw9t4260/media-gallery/desktop-dell-pro-precision-pw9t4260-premium-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=549&qlt=100,0&resMode=sharp2&size=549,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -230,12 +318,34 @@
   },
   {
    "retailer": "us-dell",
+   "sku": "dellpromaxwithgb300fct6263",
+   "brand": "Dell",
+   "title": "Dell Pro Precision with GB300",
+   "url": "https://www.dell.com/en-us/shop/workstation/spd/dellpromaxwithgb300fct6263",
+   "price": 159205,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fct6263/media-gallery/desktop-dell-pro-max-fct6263-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=566&qlt=100,0&resMode=sharp2&size=566,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
    "sku": "dellproslimqcs1250",
    "brand": "Dell",
    "title": "Dell Pro Slim Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellproslimqcs1250",
    "price": 1313,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/images/products/desktops-and-all-in-ones/dell-pro-desktop/qcs1250/dell-pro-qcs1250-small-desktop-c-00115rf000-bk-nonodd.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=639&qlt=100,0&resMode=sharp2&size=639,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellproslimqcs1255",
+   "brand": "Dell",
+   "title": "Dell Pro Slim Desktop",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellproslimqcs1255",
+   "price": 1429,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qcs1255/media-gallery/odd/desktop-pro-qcs1255-slim-amd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=414&qlt=100,0&resMode=sharp2&size=414,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -285,12 +395,34 @@
   },
   {
    "retailer": "us-dell",
+   "sku": "dellslimds1265",
+   "brand": "Dell",
+   "title": "Dell Slim Desktop",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellslimds1265",
+   "price": 829.99,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ds1265/media-gallery/desktop-ds1265-slim-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=461&qlt=100,0&resMode=sharp2&size=461,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
    "sku": "delltowerect1250",
    "brand": "Dell",
    "title": "Dell Tower Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/delltowerect1250",
    "price": 999.99,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ect1250/media-gallery/with-reader/desktop-tower-ect1250-c-no-ssd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=560&qlt=100,0&resMode=sharp2&size=560,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "delltowerdt1265",
+   "brand": "Dell",
+   "title": "Dell Tower Desktop",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/delltowerdt1265",
+   "price": 829.99,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-essential/pvt1265/media-gallery/desktop-pvt1265-pro-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=526&qlt=100,0&resMode=sharp2&size=526,804",
    "inStock": true,
    "fromPrice": true
   },

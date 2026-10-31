@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T00:04:20.460Z",
+ "scrapedAt": "2026-10-30T23:45:52.997Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -556,7 +556,7 @@
    "sku": "98951018",
    "title": "Doro Aurora A10 - 64GB + 4GB - Black / White",
    "url": "https://www.clove.co.uk/products/doro-aurora-a10-64gb-4gb-black-white",
-   "price": 108.08,
+   "price": 118,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f4ec519d-8a17-4b77-90d7-6ba6f699e94e.jpg?v=1760000091",
    "inStock": true,
    "brand": "Doro"
@@ -566,7 +566,7 @@
    "sku": "98954365",
    "title": "Doro Aurora A10 - 64GB + 4GB - Graphite",
    "url": "https://www.clove.co.uk/products/doro-aurora-a10-64gb-4gb-graphite",
-   "price": 205.46,
+   "price": 206,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ac18009f-5682-4474-8599-9c669dde3f1b.jpg?v=1760000120",
    "inStock": true,
    "brand": "Doro"
@@ -576,7 +576,7 @@
    "sku": "98968548",
    "title": "Doro Aurora A20 - 64GB + 4GB - Black / White",
    "url": "https://www.clove.co.uk/products/doro-aurora-a20-64gb-4gb-black-white",
-   "price": 140.83,
+   "price": 141,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dc8688bb-b664-44b7-b19d-c3e524d4ddf5.jpg?v=1760000090",
    "inStock": true,
    "brand": "Doro"
@@ -586,7 +586,7 @@
    "sku": "98982948",
    "title": "Doro Aurora A20 - 64GB + 4GB - Graphite",
    "url": "https://www.clove.co.uk/products/doro-aurora-a20-64gb-4gb-graphite",
-   "price": 214.01,
+   "price": 214,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/af877a1f-630e-4443-82ae-fdf9de74fefe.jpg?v=1760000117",
    "inStock": true,
    "brand": "Doro"
@@ -596,7 +596,7 @@
    "sku": "99004550",
    "title": "Doro Aurora A30 - 128GB + 6GB - Black / White",
    "url": "https://www.clove.co.uk/products/doro-aurora-a30-128gb-6gb-black-white",
-   "price": 248.26,
+   "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3c3866e8-bc28-4af6-94f4-548b1a97210c.jpg?v=1760000092",
    "inStock": true,
    "brand": "Doro"
@@ -606,7 +606,7 @@
    "sku": "98978858",
    "title": "Doro Aurora A30 - 128GB + 6GB - Graphite",
    "url": "https://www.clove.co.uk/products/doro-aurora-a30-128gb-6gb-graphite",
-   "price": 248.26,
+   "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4b7269f8-6b34-48fa-b37a-f6d5e04a0672.jpg?v=1760000117",
    "inStock": true,
    "brand": "Doro"
@@ -1004,16 +1004,6 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "HAMP-BLADV-BLK",
-   "title": "HAMMER Blade V (5G) Dual SIM Black 256GB + 8GB RAM",
-   "url": "https://www.clove.co.uk/products/hamp-blade-v-5g",
-   "price": 379.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/HAMMERBladeV.jpg?v=1708448085",
-   "inStock": true,
-   "brand": "Hammer"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "HAMP-BLADVA-BLK",
    "title": "Hammer Blade Va (5G) Dual SIM Black 128GB + 8GB RAM",
    "url": "https://www.clove.co.uk/products/hammer-blade-va-5g",
@@ -1050,6 +1040,76 @@
    "price": 535,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/HAMP-CON2T.jpg?v=1732032081",
    "inStock": false,
+   "brand": "Hammer"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "HAMP-ENERGYX2128BLK",
+   "title": "Hammer Energy X2 4G Dual SIM Black 128GB + 6GB RAM",
+   "url": "https://www.clove.co.uk/products/hammer-energy-x2-4g?variant=68087322443819",
+   "price": 199.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a8c8f136-8e25-4d10-91ad-d2ca5c126bcd.jpg?v=1793364834",
+   "inStock": true,
+   "brand": "Hammer"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "HAMP-ENERGYX2256BLK",
+   "title": "Hammer Energy X2 4G Dual SIM Black 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/hammer-energy-x2-4g?variant=68087322411051",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a8c8f136-8e25-4d10-91ad-d2ca5c126bcd.jpg?v=1793364834",
+   "inStock": true,
+   "brand": "Hammer"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "HAMP-IRONVI4G128BLK",
+   "title": "Hammer Iron 6 4G Dual SIM Black 128GB + 6GB RAM",
+   "url": "https://www.clove.co.uk/products/hammer-iron-6-4g?variant=68087322116139",
+   "price": 214.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3f312876-4ee8-48b3-a142-9eec90035f6d.jpg?v=1793364832",
+   "inStock": true,
+   "brand": "Hammer"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "HAMP-IRONVI4G256BLK",
+   "title": "Hammer Iron 6 4G Dual SIM Black 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/hammer-iron-6-4g?variant=68087322083371",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3f312876-4ee8-48b3-a142-9eec90035f6d.jpg?v=1793364832",
+   "inStock": true,
+   "brand": "Hammer"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "HAMP-IRONVI128BLK",
+   "title": "Hammer Iron 6 5G Dual SIM Black 128GB + 6GB RAM",
+   "url": "https://www.clove.co.uk/products/hammer-iron-6-5g?variant=68087321755691",
+   "price": 254.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/698ac0e7-8d75-46b3-852e-de7c7f3ede9e.jpg?v=1793364827",
+   "inStock": true,
+   "brand": "Hammer"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "HAMP-IRONVI256BLK",
+   "title": "Hammer Iron 6 5G Dual SIM Black 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/hammer-iron-6-5g?variant=68087321722923",
+   "price": 999.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/698ac0e7-8d75-46b3-852e-de7c7f3ede9e.jpg?v=1793364827",
+   "inStock": true,
+   "brand": "Hammer"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "HAMP-VENTUS256BLK",
+   "title": "Hammer Ventus 5G Dual SIM Black 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/hammer-ventus-5g",
+   "price": 349.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9ff3babd-5bbc-4578-b1ab-e8ff40c9c4be.jpg?v=1793364829",
+   "inStock": true,
    "brand": "Hammer"
   },
   {
@@ -1173,7 +1233,7 @@
    "sku": "104675817",
    "title": "Honor 600 Lite 16.8 cm (6.6\") Dual SIM Android 16.0 5G USB Type-C 8 GB 256 GB 6520 mAh Green",
    "url": "https://www.clove.co.uk/products/honor-600-lite-16-8-cm-6-6-dual-sim-android-16-0-5g-usb-type-c-8-gb-256-gb-6520-mah-green",
-   "price": 349.51,
+   "price": 350,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/af93b464-320c-403c-9fc7-944071f1faa3.jpg?v=1793287475",
    "inStock": true,
    "brand": "Honor"
@@ -1183,7 +1243,7 @@
    "sku": "104478690",
    "title": "Honor 600 Pro 16.7 cm (6.57\") Dual SIM Android 16.0 5G USB Type-C 12 GB 512 GB 6400 mAh Gold",
    "url": "https://www.clove.co.uk/products/honor-600-pro-16-7-cm-6-57-dual-sim-android-16-0-5g-usb-type-c-12-gb-512-gb-6400-mah-gold",
-   "price": 850.19,
+   "price": 851,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bfa6b97f-589d-474f-ad37-746b13702afe.jpg?v=1793287474",
    "inStock": true,
    "brand": "Honor"
@@ -1213,7 +1273,7 @@
    "sku": "100125251",
    "title": "Honor MAGIC V5 - 512GB + 16GB - Black",
    "url": "https://www.clove.co.uk/products/honor-magic-v5-512gb-16gb-black",
-   "price": 1090.09,
+   "price": 1091,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c45fea6a-2b92-440a-9ab4-b541fa3da80a.jpg?v=1760000089",
    "inStock": false,
    "brand": "Honor"
@@ -1223,7 +1283,7 @@
    "sku": "100125393",
    "title": "Honor MAGIC V5 - 512GB + 16GB - Gold",
    "url": "https://www.clove.co.uk/products/honor-magic-v5-512gb-16gb-gold",
-   "price": 1090.09,
+   "price": 1091,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2f75f4a6-b3ea-491f-8820-903b439ec358.jpg?v=1760000089",
    "inStock": false,
    "brand": "Honor"
@@ -1452,7 +1512,7 @@
    "sku": "99923310",
    "title": "Nothing Phone (3) - 256GB + 12GB - Black",
    "url": "https://www.clove.co.uk/products/nothing-phone-3-256gb-12gb-black",
-   "price": 708.55,
+   "price": 709,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/61YbN9tT88L._AC_SL1010.jpg?v=1760024580",
    "inStock": false,
    "brand": "Nothing"
@@ -2827,7 +2887,7 @@
    "sku": "97115198",
    "title": "TCL 50 Pro NXTPAPER (5G) - 512GB + 8GB - Grey",
    "url": "https://www.clove.co.uk/products/tcl-50-pro-nxtpaper-5g-512gb-8gb-grey",
-   "price": 196.5,
+   "price": 197,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1f519ba9-6ebc-4722-a4f1-c414d3007c56.jpg?v=1760959599",
    "inStock": false
   },
@@ -2899,7 +2959,7 @@
    "sku": "105832656",
    "title": "TCL K70 4G 17.3 cm (6.8\") Hybrid Dual SIM Android 16.0 USB Type-C 4 GB 128 GB 5200 mAh Grey",
    "url": "https://www.clove.co.uk/products/tcl-k70-4g-17-3-cm-6-8-hybrid-dual-sim-android-16-0-usb-type-c-4-gb-128-gb-5200-mah-grey",
-   "price": 129.69,
+   "price": 130,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/567c6673-5950-46ec-95e8-2b2567c86b0d.jpg?v=1793287477",
    "inStock": true
   },
@@ -2908,7 +2968,7 @@
    "sku": "105347388",
    "title": "TCL K70 Power 4G 17.3 cm (6.8\") Hybrid Dual SIM Android 16.0 USB Type-C 8 GB 256 GB 6500 mAh Grey",
    "url": "https://www.clove.co.uk/products/tcl-k70-power-4g-17-3-cm-6-8-hybrid-dual-sim-android-16-0-usb-type-c-8-gb-256-gb-6500-mah-grey",
-   "price": 161.13,
+   "price": 162,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/844de362-3017-4e5b-95f2-19535752e588.jpg?v=1793287478",
    "inStock": true
   },
