@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T23:09:24.890Z",
+ "scrapedAt": "2026-10-31T22:38:48.570Z",
  "offers": [
   {
    "retailer": "msy",
@@ -174,6 +174,17 @@
    "url": "https://www.msy.com.au/product/asus-rog-rapture-quad-band-wifi-8-gaming-router-gt-bn98-96296",
    "price": 1999,
    "image": "https://assets.msy.com.au/newsite/images/202609/thumb_img/Routers-Asus-ROG-Rapture-Quad-Band-WiFi-8-Gaming-Router-GT-BN98-11.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
+   "sku": "92736",
+   "title": "Asus ROG Rapture Tri-Band WiFi 7 AI Gaming Router",
+   "brand": "Asus",
+   "mpn": "GT-BE19000AI",
+   "url": "https://www.msy.com.au/product/asus-rog-rapture-tri-band-wifi-7-ai-gaming-router-gt-be19000ai-92736",
+   "price": 1249,
+   "image": "https://assets.msy.com.au/newsite/images/202602/thumb_img/Routers-Asus-ROG-Rapture-Tri-Band-WiFi-7-AI-Gaming-Router-GT-BE19000AI-10.jpg",
    "inStock": true
   },
   {
@@ -696,6 +707,17 @@
    "url": "https://www.msy.com.au/product/netgear-orbi-whole-home-ac1200-mesh-wifi-system-3-pack-rbk13-100aus-54110",
    "price": 199,
    "image": "https://assets.msy.com.au/newsite/images/202006/thumb_img/54110_thumb_G_1592975398611.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
+   "sku": "41284",
+   "title": "Netgear SRK60-100AUS Orbi High-performance AC3000 Tri-band WiFi System (Router & Satellite)",
+   "brand": "Netgear",
+   "mpn": "SRK60-100AUS",
+   "url": "https://www.msy.com.au/product/netgear-srk60-100aus-orbi-high-performance-ac3000-tri-band-wifi-system-router-satellite-41284",
+   "price": 469,
+   "image": "https://assets.msy.com.au/newsite/images/201801/thumb_img/41284_thumb_G_1515387305095.jpg",
    "inStock": true
   },
   {
@@ -1327,17 +1349,6 @@
    "url": "https://www.msy.com.au/product/tp-link-archer-5g-ax3000-wi-fi-6-outdoor-router-archer-nx500-outdoor-94145",
    "price": 899,
    "image": "https://assets.msy.com.au/newsite/images/202605/thumb_img/Routers-TP-Link-Archer-5G-AX3000-Wi-Fi-6-Outdoor-Router-Archer-NX500-Outdoor-10.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
-   "sku": "79093",
-   "title": "TP-Link Archer AXE5400 Tri-Band Wi-Fi 6E Gaming Router",
-   "brand": "TP-Link",
-   "mpn": "Archer GXE75",
-   "url": "https://www.msy.com.au/product/tp-link-archer-axe5400-tri-band-wi-fi-6e-gaming-router-archer-gxe75-79093",
-   "price": 219,
-   "image": "https://assets.msy.com.au/newsite/images/202409/thumb_img/Routers-TP-Link-Archer-AXE5400-Tri-Band-Wi-Fi-6E-Gaming-Router-Archer-GXE75-5.jpg",
    "inStock": true
   },
   {
@@ -2164,17 +2175,6 @@
   },
   {
    "retailer": "msy",
-   "sku": "22355",
-   "title": "TP-LINK Portable 3G/4G Wireless Router",
-   "brand": "TP-Link",
-   "mpn": "TL-MR3020",
-   "url": "https://www.msy.com.au/product/tp-link-portable-3g-4g-wireless-router-tl-mr3020-22355",
-   "price": 34,
-   "image": "https://assets.msy.com.au/newsite/images/201803/thumb_img/22355_thumb_G_1520985135422.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
    "sku": "59342",
    "title": "TP-Link SafeStream Gigabit Multi-WAN VPN Router",
    "brand": "TP-Link",
@@ -2300,16 +2300,6 @@
   },
   {
    "retailer": "msy",
-   "sku": "78634",
-   "title": "Ubiquiti Cloud Gateway Ultra (UCG-ULTRA)",
-   "brand": "Ubiquiti",
-   "url": "https://www.msy.com.au/product/ubiquiti-cloud-gateway-ultra-ucg-ultra-78634",
-   "price": 189,
-   "image": "https://assets.msy.com.au/newsite/images/202407/thumb_img/Routers-Ubiquiti-Cloud-Gateway-Ultra-UCG-ULTRA-5.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
    "sku": "94589",
    "title": "Ubiquiti Dream 5G Max WiFi 7 Router",
    "brand": "Ubiquiti",
@@ -2317,16 +2307,6 @@
    "url": "https://www.msy.com.au/product/ubiquiti-dream-5g-max-wifi-7-router-udr-5g-max-94589",
    "price": 915,
    "image": "https://assets.msy.com.au/newsite/images/202606/thumb_img/Routers-Ubiquiti-Dream-5G-Max-WiFi-7-Router-UDR-5G-MAX-6.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
-   "sku": "94717",
-   "title": "Ubiquiti Dream Machine Beast Hyperscale-class Cloud Gateway - Single Unit (UDM-BEAST)",
-   "brand": "Ubiquiti",
-   "url": "https://www.msy.com.au/product/ubiquiti-dream-machine-beast-hyperscale-class-cloud-gateway-single-unit-udm-beast-94717",
-   "price": 2939,
-   "image": "https://assets.msy.com.au/newsite/images/202606/thumb_img/Routers-Ubiquiti-Dream-Machine-Beast-Hyperscale-class-Cloud-Gateway-Single-Unit-UDM-BEAST-6.jpg",
    "inStock": true
   },
   {

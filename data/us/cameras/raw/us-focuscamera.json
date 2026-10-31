@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T23:43:00.652Z",
+ "scrapedAt": "2026-10-31T23:10:59.827Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -2963,7 +2963,7 @@
    "price": 2346.95,
    "wasPrice": 2796.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3550697.jpg?v=1757019238",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon Inc.",
    "mpn": "2016-NIKON"
   },
@@ -3307,7 +3307,7 @@
    "url": "https://www.focuscamera.com/products/om-system-v210081su000-cameras-mirrorless-cameras",
    "price": 1099.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/fe63dcad7c96f2627627a914bafc3f21fc1f3c81f4ee27fa89b37f9ca60b5f4f-bf22e62169a9598d.jpg?v=1791303126",
-   "inStock": true,
+   "inStock": false,
    "brand": "OM Digital Solutions Americas Inc.",
    "mpn": "V210081SU000"
   },
@@ -3329,7 +3329,7 @@
    "url": "https://www.focuscamera.com/products/om-system-ompen1442slv-cs-cameras-mirrorless-cameras",
    "price": 1099.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/856aae9b97bc9df78673542ac60707268f9a0e23c7b5c9b048df9106b5913b76-41f614dfbc7ac9cf.jpg?v=1791304719",
-   "inStock": true,
+   "inStock": false,
    "brand": "OM Digital Solutions Americas Inc.",
    "mpn": "OMPEN1442SLV-CS"
   },
@@ -3835,7 +3835,7 @@
    "url": "https://www.focuscamera.com/products/ricoh-01553-ricoh-cameras-point-shoot-cameras",
    "price": 1596.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3546528.jpg?v=1755719374",
-   "inStock": true,
+   "inStock": false,
    "brand": "RICOH IMAGING AMERICAS CORPORATION",
    "mpn": "01553-RICOH"
   },
@@ -4279,7 +4279,8 @@
    "sku": "50839651844144",
    "title": "Sony Alpha a6400 Mirrorless Digital Camera Body Kit with Shooting Grip and Mic",
    "url": "https://www.focuscamera.com/products/sony-ilce6400b-kt2-cameras-mirrorless-cameras",
-   "price": 1598,
+   "price": 1548,
+   "wasPrice": 1598,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/2458375.jpg?v=1792419015",
    "inStock": true,
    "brand": "TD Synnex - Sony",

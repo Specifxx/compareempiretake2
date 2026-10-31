@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-30T23:05:56.348Z",
+ "scrapedAt": "2026-10-31T22:36:07.769Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -595,7 +595,7 @@
    "url": "https://www.mwave.com.au/products/crucial-p510-2tb-pcie-50-nvme-m2-2280-ssd-ct2000p510ssd8-ac88496",
    "price": 466,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/crucial_p510_2tb_pcie_50_nvme_m2_2280_ssd_ct2000p510ssd8_ac88496_13660.jpg?v=1787796128",
-   "inStock": true,
+   "inStock": false,
    "mpn": "CT2000P510SSD8",
    "brand": "Crucial"
   },
@@ -1182,7 +1182,7 @@
    "url": "https://www.mwave.com.au/products/lexar-lns100-256gb-25-sata-iii-ssd-lns100256rb-ac99310",
    "price": 59,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_lns100_256gb_25_sata_iii_ssd_lns100256rb_ac99310_21788.jpg?v=1787797406",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LNS100-256RB",
    "brand": "Lexar"
   },
@@ -1421,7 +1421,7 @@
    "sku": "AC72378",
    "title": "Lexar NS100 512GB 2.5 SATA III (6Gb/s) SSD",
    "url": "https://www.mwave.com.au/products/lexar-ns100-512gb-25-sata-iii-6gbs-ssd-ac72378",
-   "price": 105,
+   "price": 109,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lns100512rb_ac72378_40573.jpg?v=1787797411",
    "inStock": true,
    "brand": "Lexar"
@@ -1674,7 +1674,7 @@
    "sku": "AC83570",
    "title": "Samsung 9100 PRO 1TB PCIe 5.0 M.2 NVMe 2280 SSD - MZ-VAP1T0BW",
    "url": "https://www.mwave.com.au/products/samsung-9100-pro-1tb-pcie-50-m2-nvme-2280-ssd-mzvap1t0bw-ac83570",
-   "price": 389,
+   "price": 435,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_9100_pro_1tb_pcie_50_m2_nvme_2280_ssd_mzvap1t0bw_ac83570_22799.jpg?v=1787798261",
    "inStock": true,
    "mpn": "MZ-VAP1T0BW",
@@ -1768,7 +1768,7 @@
    "sku": "AC98761",
    "title": "Samsung 990 1TB PCIe 4.0 NVMe M.2 SSD - MZ-V9V1T0BW",
    "url": "https://www.mwave.com.au/products/samsung-990-1tb-pcie-40-nvme-m2-ssd-mzv9v1t0bw-ac98761",
-   "price": 318,
+   "price": 339,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/au-990-nvme-m2-ssd-mz-v9v1t0bw-5_1.jpg?v=1790145553",
    "inStock": true,
    "mpn": "MZ-V9V1T0BW",
@@ -2678,7 +2678,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-2tb-pcie-40-nvme-m2-2230-ssd-ac93746",
    "price": 434,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_2tb_pcie_40_nvme_m2_2230_ssd_ac93746_61445.jpg?v=1789457432",
-   "inStock": true,
+   "inStock": false,
    "brand": "Silicon Power"
   },
   {
