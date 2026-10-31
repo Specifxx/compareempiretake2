@@ -8,6 +8,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { Phone } from "@/lib/types";
+import { parseHref } from "@/lib/product-refs";
 import { useRegionKit } from "@/lib/use-region";
 import { defaultVariant, groupByRetailer, OutrightRow, PinnedMarketplaces } from "./PhoneOffers";
 
@@ -31,11 +32,23 @@ function load(href: string): Promise<Phone | null> {
   }
   return p;
 }
-/** The card under a click or pointer, unless the target is one of its own buttons (save, compare). */
-function cardOf(e: Event): HTMLAnchorElement | null {
+/**
+ * What a click or pointer is on: a card's data-qv attributes, or any other link to a product page (owner, 2026-10-31:
+ * "whenever I click on any item … a quick view open like K Young"), its path checked by parseHref, with the link's own
+ * photo and text until /api/products brings the product's own. Never a card's own buttons (save, compare), a link in
+ * the quick view, or the product's own page.
+ */
+function headOf(e: Event): Head | null {
   const t = e.target as Element | null;
   if (!t?.closest || t.closest("button")) return null;
-  return t.closest("a[data-qv]") as HTMLAnchorElement | null;
+  const a = t.closest("a[href]") as HTMLAnchorElement | null;
+  if (!a || (a.target && a.target !== "_self") || a.hasAttribute("download") || a.closest("[role=dialog]")) return null;
+  if (a.dataset.qv) return { href: a.dataset.qv, name: a.dataset.qvName || "", brand: a.dataset.qvBrand || "", img: a.dataset.qvImg || null };
+  const href = a.getAttribute("href")!;
+  if (!parseHref(href) || window.location.pathname === href) return null;
+  const img = a.querySelector("img");
+  const text = (a.textContent || "").replace(/\s+/g, " ").trim();
+  return { href, name: img?.alt || (text.length <= 140 ? text : ""), brand: "", img: img?.currentSrc || img?.src || null };
 }
 
 export function QuickView() {
@@ -49,19 +62,18 @@ export function QuickView() {
     // Capture phase on the document: runs before Next's Link, which then sees the click already handled.
     function onClick(e: MouseEvent) {
       if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-      const a = cardOf(e);
-      if (!a) return;
+      const h = headOf(e);
+      if (!h) return;
       e.preventDefault();
-      const href = a.dataset.qv!;
-      setHead({ href, name: a.dataset.qvName || "", brand: a.dataset.qvBrand || "", img: a.dataset.qvImg || null });
+      setHead(h);
       setVid(null);
       setPhone("loading");
-      load(href).then((d) => setPhone((cur) => (cur === "loading" ? d : cur)));
+      load(h.href).then((d) => setPhone((cur) => (cur === "loading" ? d : cur)));
     }
     // Warm the answer when a mouse rests on a card, so most opens are instant.
     function onOver(e: PointerEvent) {
-      const a = cardOf(e);
-      if (a && e.pointerType === "mouse") load(a.dataset.qv!);
+      const h = e.pointerType === "mouse" ? headOf(e) : null;
+      if (h) load(h.href);
     }
     document.addEventListener("click", onClick, true);
     document.addEventListener("pointerover", onOver, { passive: true });
@@ -85,17 +97,21 @@ export function QuickView() {
   }, [head, close]);
 
   if (!head) return null;
+  const got = phone && phone !== "loading" ? phone : null;
+  const name = got?.model || head.name;
+  const brand = got?.brand || head.brand;
+  const img = head.img || got?.image || null;
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center sm:p-6" role="dialog" aria-modal="true" aria-label={head.name}>
+    <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center sm:p-6" role="dialog" aria-modal="true" aria-label={name}>
       <button type="button" aria-label="Close" tabIndex={-1} className="qv-backdrop absolute inset-0 bg-black/45 backdrop-blur-[2px]" onClick={close} />
       <div className="qv-panel relative flex max-h-[92vh] w-full max-w-2xl flex-col overflow-hidden rounded-t-3xl border border-line bg-bg-card shadow-2xl sm:rounded-3xl">
         <div className="flex items-start gap-4 border-b border-line p-4 sm:p-5">
           <div className="img-tile relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl">
-            {head.img ? <img src={head.img} alt="" className="product-img absolute inset-0 h-full w-full object-contain p-2" /> : <div className="grid h-full place-items-center text-xs text-ink-mute">No image</div>}
+            {img ? <img src={img} alt="" className="product-img absolute inset-0 h-full w-full object-contain p-2" /> : <div className="grid h-full place-items-center text-xs text-ink-mute">No image</div>}
           </div>
           <div className="min-w-0 flex-1">
-            {head.brand && <div className="text-sm font-semibold text-brand">{head.brand}</div>}
-            <h2 className="mt-0.5 font-display text-lg font-bold leading-snug">{head.name}</h2>
+            {brand && <div className="text-sm font-semibold text-brand">{brand}</div>}
+            <h2 className="mt-0.5 font-display text-lg font-bold leading-snug">{name || <span className="qv-shimmer inline-block h-5 w-48 rounded" />}</h2>
           </div>
           <button ref={closeRef} type="button" onClick={close} aria-label="Close" className="-mr-1 -mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full text-ink-mute hover:bg-bg-sunk hover:text-ink">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden>
