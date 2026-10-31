@@ -41,7 +41,9 @@ function data(region: RegionId): RegionData {
   for (const l of loaded.values())
     for (const p of l.catalog.phones) {
       const e = ebay[`${p.category}/${p.slug}`];
-      p.ebay = e && { ...e, url: ebayAffiliate(e.url, `p-${p.category}-${p.slug}-listing`, region) };
+      // A listing whose postage eBay did not state is not shown (visitor feedback, 2026-10-31: postage the row hides is a
+      // wasted click). Rows stored before then age out of the file within 5 days anyway.
+      p.ebay = e && e.shipping !== undefined ? { ...e, url: ebayAffiliate(e.url, `p-${p.category}-${p.slug}-listing`, region) } : undefined;
     }
   const all = [...loaded.values()].flatMap((l) => l.catalog.phones);
   d = { loaded, all, bySlug: new Map(all.map((p) => [`${p.category}/${p.slug}`, p])), updated: [...loaded.values()].map((l) => l.catalog.updatedAt).sort().at(-1) ?? new Date().toISOString() };
