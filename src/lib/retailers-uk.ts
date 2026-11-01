@@ -80,4 +80,9 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-referenceaudio", name: "Reference Audio", site: "referenceaudio.co.uk", color: "#37474F", type: "retailer" },
   { id: "uk-kissthehippo", name: "Kiss the Hippo", site: "kissthehippo.com", color: "#3E2723", type: "retailer" },
   { id: "uk-horshamcoffee", name: "Horsham Coffee Roaster", site: "horshamcoffeeroaster.co.uk", color: "#1B5E20", type: "retailer" },
+  { id: "uk-hifistereo", name: "Hi-Fi Stereo", site: "hifistereo.co.uk", color: "#263238", type: "retailer" },
+  { id: "uk-holburn", name: "Holburn", site: "holburnonline.co.uk", color: "#1A237E", type: "retailer" },
+  { id: "uk-fenwick", name: "Fenwick", site: "fenwick.co.uk", color: "#000000", type: "retailer" },
+  { id: "uk-coaltown", name: "Coaltown Coffee", site: "coaltowncoffee.co.uk", color: "#212121", type: "retailer" },
+  { id: "uk-cosori", name: "COSORI", site: "cosori.co.uk", color: "#D32F2F", type: "official" },
 ];

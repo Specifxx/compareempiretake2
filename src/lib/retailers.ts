@@ -101,6 +101,10 @@ const AU_RETAILERS = {
   toyworldwarrnambool: { id: "toyworldwarrnambool", name: "Toyworld Warrnambool", site: "toyworldwarrnambool.com.au", color: "#E30613", type: "retailer" },
   sydneyhifimonavale: { id: "sydneyhifimonavale", name: "Sydney Hi-Fi Mona Vale", site: "sydneyhifimonavale.com.au", color: "#1A1A1A", type: "retailer" },
   klappav: { id: "klappav", name: "Klapp AV", site: "klappav.com.au", color: "#0D47A1", type: "retailer" },
+  vinylrevival: { id: "vinylrevival", name: "Vinyl Revival", site: "vinylrevival.com.au", color: "#212121", type: "retailer" },
+  kitchenaidau: { id: "kitchenaidau", name: "KitchenAid", site: "kitchenaid.com.au", color: "#C8102E", type: "official" },
+  tefalau: { id: "tefalau", name: "Tefal", site: "tefal.com.au", color: "#E2001A", type: "official" },
+  industrybeans: { id: "industrybeans", name: "Industry Beans", site: "industrybeans.com", color: "#5D4037", type: "retailer" },
 };
 
 export const RETAILERS = {
