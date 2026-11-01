@@ -72,4 +72,10 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-homemedia", name: "Home Media", site: "homemedialimited.co.uk", color: "#263238", type: "retailer" },
   { id: "uk-assemblycoffee", name: "Assembly Coffee", site: "assemblycoffee.co.uk", color: "#212121", type: "retailer" },
   { id: "uk-origincoffee", name: "Origin Coffee", site: "origincoffee.co.uk", color: "#4E342E", type: "retailer" },
+  { id: "uk-climpson", name: "Climpson & Sons", site: "climpsonandsons.com", color: "#1A1A1A", type: "retailer" },
+  { id: "uk-haden", name: "Haden", site: "haden.com", color: "#2F4F4F", type: "official" },
+  { id: "uk-kronosav", name: "Kronos AV", site: "kronosav.com", color: "#0D47A1", type: "retailer" },
+  { id: "uk-nottinghamhifi", name: "Nottingham Hi-Fi", site: "nottinghamhifi.co.uk", color: "#B71C1C", type: "retailer" },
+  { id: "uk-northstar", name: "North Star Coffee", site: "northstarroast.com", color: "#263238", type: "retailer" },
+  { id: "uk-referenceaudio", name: "Reference Audio", site: "referenceaudio.co.uk", color: "#37474F", type: "retailer" },
 ];

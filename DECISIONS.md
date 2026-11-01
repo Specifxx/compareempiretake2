@@ -728,3 +728,12 @@ regional stores of brands already read. Independent LEGO shops turned out to be 
 3,100 sets), and roasters that sell home machines the richest Australian one. A lone minifigure ("NJO0366") carries
 digits that look like a set number, so the reader now refuses minifigure codes; coffee-machine servicing and
 "value"/"power" packs are refused too. The US reaches 100 stores with data.
+
+## 2026-11-01 — Store survey round 5: 17 more stores (UK 67→73, AU 74→85)
+
+161 candidates (`docs/stores/candidates6.txt`) came from more published lists: UK and Australian hi-fi dealer
+locators, specialty coffee roasters that sell home machines, independent LEGO shops and Toyworld franchise stores
+(toyworld<town>.com.au). Coffee roasters and hi-fi dealers gave most of the clean stores. Clumsy Goat, Rave Coffee and
+Lakeland show UK prices without VAT on their feeds, so they are left out: a price a buyer cannot pay is worse than
+no price. "+" bundles and loose motors are now refused in vacuums, and Haden is read only for the categories that held
+three real products (its dishwashers did not).
