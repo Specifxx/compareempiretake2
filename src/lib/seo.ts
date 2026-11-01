@@ -11,13 +11,13 @@ import type { Phone } from "./types";
  * product pages, most sold by one store, looks thin, so we submit in tiers and expand once Search
  * Console shows the earlier tier indexed:
  *
- *   1  hubs (home, categories, deals, stores, browse, guides) + products sold by 3+ stores  (default)
- *   2  + products at 2 stores, brand pages, category deals, head-to-head comparisons
+ *   1  hubs (home, categories, deals, stores, browse, guides) + products sold by 3+ stores
+ *   2  + products at 2 stores, brand pages, category deals, head-to-head comparisons  (default since 2026-11-01)
  *   3  + every product
  *
  * Raise it with the SITEMAP_TIER env var in Vercel (it's read at build), or change the default here.
  */
-export const SITEMAP_TIER = Math.min(3, Math.max(1, Number(process.env.SITEMAP_TIER || 1)));
+export const SITEMAP_TIER = Math.min(3, Math.max(1, Number(process.env.SITEMAP_TIER || 2)));
 
 /** Minimum stores a product needs to be in the sitemap at each tier. */
 const MIN_STORES: Record<number, number> = { 1: 3, 2: 2, 3: 1 };

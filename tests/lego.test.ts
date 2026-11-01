@@ -46,4 +46,5 @@ test("themes", () => {
   assert.equal(legoTheme("LEGO Creator 3in1 Space Astronaut 31152"), "Creator 3in1");
   assert.equal(legoTheme("LEGO Pokemon Pikachu 72152"), "Pokémon");
   assert.equal(legoTheme("LEGO Brick Bucket 10001"), undefined);
+  assert.equal(legoTheme("LEGO Icons Land Rover Classic Defender 90 10317"), "Icons");
 });

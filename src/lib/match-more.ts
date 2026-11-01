@@ -209,7 +209,13 @@ export const LEGO_THEMES = [
 const titleCase = (s: string) => s.replace(/\b([A-Z])([A-Z']+)\b/g, (_, a: string, b: string) => a + b.toLowerCase());
 
 export function legoTheme(t: string): string | undefined {
-  const hit = LEGO_THEMES.find((th) => new RegExp(`\\b${th.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i").test(t));
+  // The theme named first wins ("Icons Land Rover Classic Defender" is Icons, not Classic); at one spot the longer name.
+  let hit: string | undefined;
+  let at = Infinity;
+  for (const th of LEGO_THEMES) {
+    const i = t.search(new RegExp(`\\b${th.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i"));
+    if (i >= 0 && i < at) [hit, at] = [th, i];
+  }
   if (!hit) return undefined;
   return hit === "Pokemon" ? "Pokémon" : hit === "Botanical" ? "Botanicals" : hit === "Lord of the Rings" ? "The Lord of the Rings" : hit;
 }

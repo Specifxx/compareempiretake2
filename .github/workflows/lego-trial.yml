@@ -30,4 +30,6 @@ jobs:
           git config user.name "compare-empire-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/lego
-          git commit -m "data: first LEGO prices" && git pull --rebase origin "${GITHUB_REF_NAME}" && git push
+          git commit -m "data: first LEGO prices"
+          git checkout -- . && git clean -fdq data
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push
