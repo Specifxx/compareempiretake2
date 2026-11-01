@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-31T22:37:17.636Z",
+ "scrapedAt": "2026-11-01T02:51:12.601Z",
  "offers": [
   {
    "retailer": "samsung",
@@ -108,7 +108,7 @@
    "url": "https://www.samsung.com/au/tvs/mini-led-tv/m70h-43-inch-4k-vision-ai-smart-tv-ua43m70hawxxy/",
    "price": 749,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua43m70hawxxy/gallery/au-mini-led-m70h-ua43m70hawxxy-thumb-551453813",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "samsung",
@@ -409,6 +409,17 @@
   },
   {
    "retailer": "samsung",
+   "sku": "UA75U8000HWXXY",
+   "mpn": "UA75U8000HWXXY",
+   "brand": "Samsung",
+   "title": "Samsung 75\" Crystal UHD U8000H 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/uhd-4k-tv/u8000h-75-inch-crystal-uhd-4k-smart-tv-ua75u8000hwxxy/",
+   "price": 1699,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua75u8000hwxxy/gallery/au-uhd-4k-tv-ua75u8000hwxxy-----crystal-uhd-u----h--k-samsung-vision-ai-smart-tv--------titanium-gray-thumb-551519929",
+   "inStock": false
+  },
+  {
+   "retailer": "samsung",
    "sku": "MRA75R85HAWXXY",
    "mpn": "MRA75R85HAWXXY",
    "brand": "Samsung",
@@ -493,7 +504,18 @@
    "url": "https://www.samsung.com/au/tvs/oled-tv/s90h-77-inch-4k-smart-tv-qa77s90hawxxy/",
    "price": 5499,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa77s90hawxxy/gallery/au-oled-tv-qa77s90hawxxy------------------------------------oled-s--h--k-samsung-vision-ai-smart-tv--------graphite-thumb-551531388",
-   "inStock": true
+   "inStock": false
+  },
+  {
+   "retailer": "samsung",
+   "sku": "QA77S95FAWXXY",
+   "mpn": "QA77S95FAWXXY",
+   "brand": "Samsung",
+   "title": "Samsung 77\" OLED S95F 4K Samsung Vision AI Smart TV",
+   "url": "https://www.samsung.com/au/tvs/oled-tv/s95f-77-inch-oled-4k-vision-ai-smart-tv-qa77s95fawxxy/",
+   "price": 7999,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa77s95fawxxy/gallery/au-oled-s95f-540418-qa77s95fawxxy-thumb-545432214",
+   "inStock": false
   },
   {
    "retailer": "samsung",

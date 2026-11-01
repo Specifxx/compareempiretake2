@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-10-31T23:17:40.175Z",
+ "scrapedAt": "2026-11-01T03:32:08.377Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -10,6 +10,17 @@
    "price": 249.97,
    "wasPrice": 329.99,
    "image": "https://www.laptopsdirect.co.uk/Images/NX.W0MEK.002_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2015809",
+   "mpn": "NX.KBAEK.001",
+   "title": "Acer 315 Intel Celeron N 8GB RAM 128GB eMMC 15.6 Inch Touchscreen Chromebook",
+   "url": "https://www.laptopsdirect.co.uk/acer-315-intel-celeron-n-8gb-ram-128gb-emmc-15.6-inch-touchscreen-chromeboo-nx.kbaek.001/version.asp",
+   "price": 349.97,
+   "wasPrice": 398.62,
+   "image": "https://www.laptopsdirect.co.uk/Images/NX.KBAEK.001_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -45,22 +56,33 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2015800",
-   "mpn": "NX.J4GEK.005",
-   "title": "Acer Aspire Go 15 Intel Core i5 8GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-aspire-go-15-intel-core-i5-8gb-ram-512gb-ssd-15.6-inch-windows-11-lapt-nx.j4gek.005/version.asp",
-   "price": 629.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NX.J4GEK.005_1_Classic.png?v=9",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2015801",
    "mpn": "NX.J4GEK.00M",
    "title": "Acer Aspire Go 15 Intel Core i7 16GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/acer-aspire-go-15-intel-core-i7-16gb-ram-512gb-ssd-15.6-inch-windows-11-lap-nx.j4gek.00m/version.asp",
    "price": 729.97,
    "image": "https://www.laptopsdirect.co.uk/Images/NX.D1REK.002_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2726325",
+   "mpn": "NX.W3JEK.002",
+   "title": "Acer Aspire Go 15 Qualcomm Snapdragon 8GB RAM 128GB UFS 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/acer-aspire-go-15-qualcomm-snapdragon-8gb-ram-128gb-ufs-15.6-inch-windows-1-nx.w3jek.002/version.asp",
+   "price": 448.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/NX.W3JEK.002_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2015802",
+   "mpn": "NX.J4LEK.005",
+   "title": "Acer Aspire Go 17 Intel Core 3 8GB RAM 128GB UFS 17.3 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/acer-aspire-go-17-intel-core-3-8gb-ram-128gb-ssd-17.3-inch-windows-11-lapto-nx.j4lek.005/version.asp",
+   "price": 399.97,
+   "wasPrice": 453.73,
+   "image": "https://www.laptopsdirect.co.uk/Images/NX.J4LEK.005_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -76,55 +98,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2728423",
-   "mpn": "NX.X0SEK.002",
-   "title": "Acer Aspire Lite AMD Ryzen 5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-aspire-lite-amd-ryzen-5-8gb-ram-256gb-ssd-15.6-inch-windows-11-laptop-nx.x0sek.002/version.asp",
-   "price": 599,
-   "wasPrice": 649.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NX.X0SEK.002_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2728424",
    "mpn": "NX.DXJEK.004",
    "title": "Acer Aspire Lite Intel Core 3 8GB RAM 256GB SSD 17.3 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/acer-aspire-lite-intel-core-3-8gb-ram-256gb-ssd-17.3-inch-windows-11-laptop-nx.dxjek.004/version.asp",
    "price": 569.97,
    "image": "https://www.laptopsdirect.co.uk/Images/NX.DG3EK.003_1_Classic.jpg?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2728426",
-   "mpn": "NX.DG3EK.001",
-   "title": "Acer Aspire Lite Intel Core 5 8GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-aspire-lite-intel-core-5-8gb-ram-512gb-ssd-15.6-inch-windows-11-laptop-nx.dg3ek.001/version.asp",
-   "price": 634.97,
-   "wasPrice": 679.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NX.DG3EK.001_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2728427",
-   "mpn": "NX.DG3EK.003",
-   "title": "Acer Aspire Lite Intel Core i7 8GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-aspire-lite-intel-core-i7-8gb-ram-512gb-ssd-15.6-inch-windows-11-lapto-nx.dg3ek.003/version.asp",
-   "price": 649.97,
-   "wasPrice": 759.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NX.DG3EK.003_1_Classic.jpg?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2728428",
-   "mpn": "NX.DY6EK.001",
-   "title": "Acer Aspire Spin AMD Ryzen AI 5 16GB RAM 512GB SSD 14 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-aspire-spin-amd-ryzen-ai-5-16gb-ram-512gb-ssd-14-inch-windows-11-lapto-nx.dy6ek.001/version.asp",
-   "price": 873.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NX.DY6EK.001_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -139,23 +118,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1968514",
+   "mpn": "NX.J2AEK.006",
+   "title": "Acer Chromebook Plus Spin 514 Intel Core i5 8GB RAM 256GB eMMc 14 Inch Chromebook",
+   "url": "https://www.laptopsdirect.co.uk/acer-chromebook-plus-spin-514-intel-core-i5-8gb-ram-256gb-emmc-14-inch-chro-nx.j2aek.006/version.asp",
+   "price": 649.97,
+   "wasPrice": 693.58,
+   "image": "https://www.laptopsdirect.co.uk/Images/NX.J2AEK.006_1_Classic.jpg?v=28",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2722337",
    "mpn": "NX.KYHEK.006",
    "title": "Acer Chromebook Spin 314 Intel N100 4GB RAM 64GB eMMC 14 Inch Touchscreen Convertible Chromebook",
    "url": "https://www.laptopsdirect.co.uk/acer-chromebook-spin-314-intel-n100-4gb-ram-64gb-emmc-14-inch-touchscreen-c-nx.kyhek.006/version.asp",
    "price": 479.97,
    "image": "https://www.laptopsdirect.co.uk/Images/NX.KYHEK.006_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2726757",
-   "mpn": "NX.ELKEK.006",
-   "title": "Acer Extensa 15 AMD Ryzen 5 8GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-extensa-15-amd-ryzen-5-8gb-ram-512gb-ssd-15.6-inch-windows-11-laptop-nx.elkek.006/version.asp",
-   "price": 599.98,
-   "wasPrice": 699.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NX.ELKEK.005_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -171,44 +150,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2723541",
-   "mpn": "NX.EMAEK.002",
-   "title": "Acer Extensa 15 Intel Core Ultra 5 16GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-extensa-15-intel-core-ultra-5-16gb-ram-512gb-ssd-15.6-inch-windows-11-nx.emaek.002/version.asp",
-   "price": 699.97,
-   "wasPrice": 779.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/NX.EMAEK.002_1_Classic.jpg?v=1",
+   "sku": "2723539",
+   "mpn": "NX.EMHEK.002",
+   "title": "Acer Extensa 15 Intel Core Ultra 5 8GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/acer-extensa-15-intel-core-ultra-5-8gb-ram-512gb-ssd-15.6-inch-windows-11-l-nx.emhek.002/version.asp",
+   "price": 619.97,
+   "wasPrice": 749.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/NX.EMHEK.002_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2097641",
-   "mpn": "NH.U58EK.002",
-   "title": "Acer Nitro V 16 Intel Core 5 16GB RAM 512GB SSD GeForce RTX 5050 120Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-nitro-v-16-intel-core-5-16gb-ram-512gb-ssd-geforce-rtx-5050-120hz-16-i-nh.u58ek.002/version.asp",
-   "price": 1449,
-   "image": "https://www.laptopsdirect.co.uk/Images/NH.U58EK.002_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2097642",
-   "mpn": "NH.U59EK.008",
-   "title": "Acer Nitro V 16 Intel Core 7 16GB RAM 512GB SSD GeForce RTX 5060 120Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-nitro-v-16-intel-core-7-16gb-ram-512gb-ssd-geforce-rtx-5060-120hz-16-i-nh.u59ek.008/version.asp",
-   "price": 1599.97,
-   "wasPrice": 1830.31,
-   "image": "https://www.laptopsdirect.co.uk/Images/NH.U59EK.008_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2723187",
-   "mpn": "NH.QYUEK.006",
-   "title": "Acer Nitro V 17 AI AMD Ryzen 7 16GB RAM 512GB SSD NVIDIA 144Hz 17.3 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-nitro-v-17-ai-amd-ryzen-7-16gb-ram-512gb-ssd-nvidia-144hz-17.3-inch-wi-nh.qyuek.006/version.asp",
-   "price": 1599.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NH.QYUEK.006_1_Classic.jpg?v=5",
+   "sku": "2086005",
+   "mpn": "NH.QYWEK.003",
+   "title": "Acer Nitro V 16 AI V16 AI AMD Ryzen 7 16GB RAM 512GB SSD RTX 5050 180Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/acer-nitro-v-16-ai-v16-ai-amd-ryzen-7-16gb-ram-512gb-ssd-rtx-5050-180hz-16-nh.qywek.003/version.asp",
+   "price": 1649.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/NH.QYWEK.003_1_Classic.jpg?v=7",
    "inStock": true
   },
   {
@@ -234,55 +192,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2098916",
-   "mpn": "NH.U3PEK.00U",
-   "title": "Acer Nitro V AMD Ryzen 7 16GB RAM 512GB SSD RTX 5060 165Hz 15.6 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-nitro-v-amd-ryzen-7-16gb-ram-512gb-ssd-rtx-5060-165hz-15.6-inch-window-nh.u3pek.00u/version.asp",
-   "price": 1399.97,
-   "wasPrice": 1599,
-   "image": "https://www.laptopsdirect.co.uk/Images/NH.U3PEK.00U_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2094243",
-   "mpn": "NH.U3PEK.00M",
-   "title": "Acer Nitro V15 AMD Ryzen 5 16GB RAM 512GB SSD RTX 5060 15.6 Inch 165Hz Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-nitro-v15-anv15-a31-gaming-laptop-amd-ryzen-5-150-nvidia-rtx-5060-nh.u3pek.00m/version.asp",
-   "price": 1079.97,
-   "wasPrice": 1399.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/NH.U3PEK.00M_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2002422",
    "mpn": "NH.QZAEK.002",
    "title": "Acer Nitro V15 Intel Core i5 16GB RAM 1TB SSD RTX 5060 165Hz 15.6 Inch Windows 11 Gaming Laptop",
    "url": "https://www.laptopsdirect.co.uk/acer-nitro-v15-intel-core-i5-16gb-ram-1tb-ssd-rtx-5060-165hz-15.6-inch-wind-nh.qzaek.002/version.asp",
    "price": 1099.97,
    "image": "https://www.laptopsdirect.co.uk/Images/NH.QZAEK.002_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2062887",
-   "mpn": "NH.QYXEK.004",
-   "title": "Acer Nitro V16 Ai AMD Ryzen 5 16GB RAM 1TB SSD GeForce RTX 5060 180Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-nitro-v16-ai-amd-ryzen-5-16gb-ram-1tb-ssd-geforce-rtx-5060-180hz-16-in-nh.qyxek.004/version.asp",
-   "price": 1499.97,
-   "wasPrice": 1867.49,
-   "image": "https://www.laptopsdirect.co.uk/Images/NH.QYXEK.004_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2062886",
-   "mpn": "NH.QYXEK.006",
-   "title": "Acer Nitro V16 Ai AMD Ryzen 7 16GB RAM 1TB SSD GeForce RTX 5060 180Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-nitro-v16-ai-amd-ryzen-7-16gb-ram-1tb-ssd-geforce-rtx-5060-180hz-16-in-nh.qyxek.006/version.asp",
-   "price": 1119.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NH.QYXEK.006_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -394,16 +309,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2723185",
-   "mpn": "NH.U55EK.001",
-   "title": "Acer Predator Helios Neo 18 AI Predator Core Ultra 9 16GB RAM 1TB SSD NVIDIA 240Hz 18 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-predator-helios-neo-18-ai-predator-core-ultra-9-16gb-ram-1tb-ssd-nvidi-nh.u55ek.001/version.asp",
-   "price": 2999.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NH.U55EK.001_1_Classic.jpg?v=16",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1993221",
    "mpn": "NH.QVLEK.005",
    "title": "Acer Predator Helios NEO 18 Intel Core Ultra 9 32GB RAM 2TB SSD RTX 5070 Ti 250Hz 18 Inch Windows 11 Gaming Laptop",
@@ -430,7 +335,6 @@
    "title": "Acer Swift Lite Intel Core 3 8GB RAM 256GB SSD 16 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/acer-swift-lite-intel-core-3-8gb-ram-256gb-ssd-16-inch-windows-11-laptop-nx.dxnek.001/version.asp",
    "price": 554.97,
-   "wasPrice": 593.98,
    "image": "https://www.laptopsdirect.co.uk/Images/NX.DXNEK.001_1_Classic.jpg?v=3",
    "inStock": true
   },
@@ -488,28 +392,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2072980",
-   "mpn": "MDH94B/A",
-   "title": "Apple MacBook Air 13 Inch M5 24GB RAM 1TB SSD 2026 - Silver",
-   "url": "https://www.laptopsdirect.co.uk/macbook-air-13-inch-apple-m5-chip-10c-cpu-10c-gpu-24gb-um-1tb-ssd-si-mdh94b-a/version.asp",
-   "price": 1624.97,
-   "wasPrice": 1799,
-   "image": "https://www.laptopsdirect.co.uk/Images/MDH94BA_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2072981",
-   "mpn": "MDHK4B/A",
-   "title": "Apple MacBook Air 13 Inch M5 24GB RAM 1TB SSD 2026 - Sky Blue",
-   "url": "https://www.laptopsdirect.co.uk/new-apple-macbook-air-13-inch-m5-24gb-ram-1tb-ssd-2026-sky-blue-mdhk4b-a/version.asp",
-   "price": 1699,
-   "wasPrice": 1799,
-   "image": "https://www.laptopsdirect.co.uk/Images/MDHK4BA_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1528505",
    "mpn": "MGN63B/A",
    "title": "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD 2020 - Space Grey",
@@ -531,6 +413,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2072988",
+   "mpn": "MDVA4B/A",
+   "title": "Apple MacBook Air 15 Inch M5 16GB RAM 1TB SSD 2026 - Silver",
+   "url": "https://www.laptopsdirect.co.uk/macbook-air-15-inch-apple-m5-chip-10c-cpu-10c-gpu-16gb-um-1tb-ssd-si-mdva4b-a/version.asp",
+   "price": 1699,
+   "wasPrice": 1799,
+   "image": "https://www.laptopsdirect.co.uk/Images/MDVA4BA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2072989",
    "mpn": "MDVT4B/A",
    "title": "Apple MacBook Air 15 Inch M5 16GB RAM 1TB SSD 2026 - Sky Blue",
@@ -538,6 +431,17 @@
    "price": 1628.97,
    "wasPrice": 1799,
    "image": "https://www.laptopsdirect.co.uk/Images/MDVT4BA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2072990",
+   "mpn": "MDVE4B/A",
+   "title": "Apple MacBook Air 15 Inch M5 16GB RAM 1TB SSD 2026 - Starlight",
+   "url": "https://www.laptopsdirect.co.uk/macbook-air-15-inch-apple-m5-chip-10c-cpu-10c-gpu-16gb-um-1tb-ssd-st-mdve4b-a/version.asp",
+   "price": 1664.97,
+   "wasPrice": 1799,
+   "image": "https://www.laptopsdirect.co.uk/Images/MDVE4BA_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -564,22 +468,34 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2072985",
+   "mpn": "MDVQ4B/A",
+   "title": "Apple MacBook Air 15 Inch M5 16GB RAM 512GB SSD 2026 - Sky Blue",
+   "url": "https://www.laptopsdirect.co.uk/macbook-air-15-inch-apple-m5-chip-10c-cpu-8c-gpu-16gb-um-512gb-ssd-s-mdvq4b-a/version.asp",
+   "price": 1349.97,
+   "wasPrice": 1499,
+   "image": "https://www.laptopsdirect.co.uk/Images/MDVQ4BA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2072986",
+   "mpn": "MDVD4B/A",
+   "title": "Apple MacBook Air 15 Inch M5 16GB RAM 512GB SSD 2026 - Starlight",
+   "url": "https://www.laptopsdirect.co.uk/macbook-air-15-inch-apple-m5-chip-10c-cpu-8c-gpu-16gb-um-512gb-ssd-s-mdvd4b-a/version.asp",
+   "price": 1394.97,
+   "wasPrice": 1499,
+   "image": "https://www.laptopsdirect.co.uk/Images/MDVD4BA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2072964",
    "mpn": "MHFD4B/A",
    "title": "Apple MacBook Neo 13 Inch A18 Pro 8GB RAM 256GB SSD 2026 - Citrus",
    "url": "https://www.laptopsdirect.co.uk/macbook-neo-13-inch-apple-a18-pro-chip-6c-cpu-5c-gpu-8gb-um-256gb-ssd-mhfd4b-a/version.asp",
    "price": 649,
    "image": "https://www.laptopsdirect.co.uk/Images/MHFD4BA_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2072963",
-   "mpn": "MHFA4B/A",
-   "title": "Apple MacBook Neo 13 Inch A18 Pro 8GB RAM 256GB SSD 2026 - Silver",
-   "url": "https://www.laptopsdirect.co.uk/macbook-neo-13-inch-apple-a18-pro-chip-6c-cpu-5c-gpu-8gb-um-256gb-ssd-mhfa4b-a/version.asp",
-   "price": 609.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/MHFA4BA_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -594,12 +510,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2072968",
-   "mpn": "MHFE4B/A",
-   "title": "Apple MacBook Neo 13 Inch A18 Pro 8GB RAM 512GB SSD 2026 - Citrus",
-   "url": "https://www.laptopsdirect.co.uk/macbook-neo-13-inch-with-touch-id-apple-a18-pro-chip-6c-cpu-5c-gpu-8gb-mhfe4b-a/version.asp",
-   "price": 719.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/MHFE4BA_1_Classic.jpg?v=1",
+   "sku": "2072969",
+   "mpn": "MHFG4B/A",
+   "title": "Apple MacBook Neo 13 Inch A18 Pro 8GB RAM 512GB SSD 2026 - Indigo",
+   "url": "https://www.laptopsdirect.co.uk/macbook-neo-13-inch-with-touch-id-apple-a18-pro-chip-6c-cpu-5c-gpu-8gb-mhfg4b-a/version.asp",
+   "price": 749,
+   "image": "https://www.laptopsdirect.co.uk/Images/MHFG4BA_1_17552161_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -610,6 +526,17 @@
    "url": "https://www.laptopsdirect.co.uk/macbook-neo-13-inch-with-touch-id-apple-a18-pro-chip-6c-cpu-5c-gpu-8gb-mhfc4b-a/version.asp",
    "price": 799.97,
    "image": "https://www.laptopsdirect.co.uk/Images/MHFC4BA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2050852",
+   "mpn": "MDE14B/A",
+   "title": "Apple MacBook Pro 14 inch M5 16GB RAM 1TB SSD Space Black",
+   "url": "https://www.laptopsdirect.co.uk/apple-macbook-pro-14inch-m5-chip-with-10-core-cpu-and-10-core-gpu-16gb-ram-mde14b-a/version.asp",
+   "price": 1899.97,
+   "wasPrice": 1999,
+   "image": "https://www.laptopsdirect.co.uk/Images/MDE14BA_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -647,17 +574,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2073000",
-   "mpn": "MJLV4B/A",
-   "title": "Apple MacBook Pro 14 Inch M5 Pro 24GB RAM 2TB SSD 2026 - Silver",
-   "url": "https://www.laptopsdirect.co.uk/macbook-pro-14-inch-apple-m5-pro-chip-15c-cpu-16c-gpu-24gb-um-2tb-ssd-mjlv4b-a/version.asp",
-   "price": 2699.97,
-   "wasPrice": 2999.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/MJLV4BA_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2073001",
    "mpn": "MGDT4B/A",
    "title": "Apple MacBook Pro 14 Inch M5 Pro 24GB RAM 2TB SSD 2026 - Space Black",
@@ -669,13 +585,46 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2072999",
-   "mpn": "MJLW4B/A",
-   "title": "Apple MacBook Pro 14 Inch M5 Pro 24GB RAM 2TB SSD 2026 - Space Black",
-   "url": "https://www.laptopsdirect.co.uk/macbook-pro-14-inch-apple-m5-pro-chip-15c-cpu-16c-gpu-24gb-um-2tb-ssd-mjlw4b-a/version.asp",
-   "price": 2639.97,
-   "wasPrice": 2999.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/MJLW4BA_1_Classic.jpg?v=1",
+   "sku": "2073010",
+   "mpn": "MGE74B/A",
+   "title": "Apple MacBook Pro 16 Inch M5 Max 36GB RAM 2TB SSD 2026 - Silver",
+   "url": "https://www.laptopsdirect.co.uk/macbook-pro-16-inch-apple-m5-max-chip-18c-cpu-32c-gpu-36gb-um-2tb-ssd-mge74b-a/version.asp",
+   "price": 4014.97,
+   "wasPrice": 4399,
+   "image": "https://www.laptopsdirect.co.uk/Images/MGE74BA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2073009",
+   "mpn": "MGED4B/A",
+   "title": "Apple MacBook Pro 16 Inch M5 Max 36GB RAM 2TB SSD 2026 - Space Black",
+   "url": "https://www.laptopsdirect.co.uk/macbook-pro-16-inch-apple-m5-max-chip-18c-cpu-32c-gpu-36gb-um-2tb-ssd-mged4b-a/version.asp",
+   "price": 3999.97,
+   "wasPrice": 4399,
+   "image": "https://www.laptopsdirect.co.uk/Images/MGED4BA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2073012",
+   "mpn": "MGE94B/A",
+   "title": "Apple MacBook Pro 16 Inch M5 Max 4GB RAM 2TB SSD 2026 - Silver",
+   "url": "https://www.laptopsdirect.co.uk/macbook-pro-16-inch-apple-m5-max-chip-18c-cpu-40c-gpu-48gb-um-2tb-ssd-mge94b-a/version.asp",
+   "price": 4649.97,
+   "wasPrice": 4999,
+   "image": "https://www.laptopsdirect.co.uk/Images/MGE94BA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2073006",
+   "mpn": "MGE44B/A",
+   "title": "Apple MacBook Pro 16 Inch M5 Pro 24GB RAM 1TB SSD 2026 - Silver",
+   "url": "https://www.laptopsdirect.co.uk/macbook-pro-16-inch-apple-m5-pro-chip-18c-cpu-20c-gpu-24gb-um-1tb-ssd-mge44b-a/version.asp",
+   "price": 2649.97,
+   "wasPrice": 2999,
+   "image": "https://www.laptopsdirect.co.uk/Images/MGE44BA_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -691,17 +640,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2073008",
-   "mpn": "MGE64B/A",
-   "title": "Apple MacBook Pro 16 Inch M5 Pro 48GB RAM 1TB SSD 2026 - Silver",
-   "url": "https://www.laptopsdirect.co.uk/macbook-pro-16-inch-apple-m5-pro-chip-18c-cpu-20c-gpu-48gb-um-1tb-ssd-mge64b-a/version.asp",
-   "price": 3294.97,
-   "wasPrice": 3599,
-   "image": "https://www.laptopsdirect.co.uk/Images/MGE64BA_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2073007",
    "mpn": "MGEC4B/A",
    "title": "Apple MacBook Pro 16 Inch M5 Pro 48GB RAM 1TB SSD 2026 - Space Black",
@@ -709,16 +647,6 @@
    "price": 3349.97,
    "wasPrice": 3599,
    "image": "https://www.laptopsdirect.co.uk/Images/MGEC4BA_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2723186",
-   "mpn": "NH.U46EK.003",
-   "title": "ASUS Acer Predator Helios Neo 16 AI Intel Core Ultra 9 16GB RAM 1TB SSD NVIDIA rtx 5080 240Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/acer-predator-helios-neo-16-ai-intel-core-ultra-9-16gb-ram-1tb-ssd-nvidia-2-nh.u46ek.003/version.asp",
-   "price": 2899.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NH.U46EK.003_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -744,6 +672,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2089656",
+   "mpn": "BR12FT-CS81XA",
+   "title": "ASUS BR12FT-CS81XA Intel Core i3 8GB RAM 128 UFS 12.2 Inch Windows 11 Pro Education Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-br12ft-cs81xa-intel-core-i3-8gb-ram-128-ufs-12.2-inch-windows-11-pro-e-br12ft-cs81xa/version.asp",
+   "price": 429.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/BR12FT-CS81XA_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2097031",
    "mpn": "BR1402F-i3S81XA",
    "title": "ASUS BR1402F-i3S81XA Qualcomm Snapdragon X Plus 8GB RAM 128 UFS 14 Inch Windows 11 Pro Education Laptop",
@@ -765,6 +703,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2002930",
+   "mpn": "CZ1104FM2A-NS0146",
+   "title": "ASUS CZ11 Flip MediaTek 4GB RAM 64GB eMMc 11.6 Inch Chromebook",
+   "url": "https://www.laptopsdirect.co.uk/asus-cz11-flip-mediatek-4gb-ram-64gb-emmc-11.6-inch-chromebook-cz1104fm2a-ns0146/version.asp",
+   "price": 323.97,
+   "wasPrice": 344.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/CZ1104FM2A-NS0144_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2038661",
    "mpn": "B5405CC-LYU715X",
    "title": "ASUS ExpertBook B5 Intel Core Ultra 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
@@ -775,11 +724,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2729600",
-   "mpn": "B3402FV-EC582XA-16GB",
-   "title": "ASUS ExpertBook Flip Intel Core 5 16GB RAM 256GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-expertbook-flip-intel-core-5-16gb-ram-256gb-ssd-14-inch-windows-11-pro-b3402fv-ec582xa-16gb/version.asp",
-   "price": 649.97,
+   "sku": "2014056",
+   "mpn": "B3402FV-EC582XA",
+   "title": "ASUS ExpertBook Flip Intel Core 5 8GB RAM 256GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-expertbook-flip-intel-core-5-8gb-ram-256gb-ssd-14-inch-windows-11-pro-b3402fv-ec582xa/version.asp",
+   "price": 599.97,
+   "wasPrice": 712.79,
    "image": "https://www.laptopsdirect.co.uk/Images/B3402FVA-ECI582XA_1_Classic.png?v=5",
    "inStock": true
   },
@@ -795,6 +745,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2080312",
+   "mpn": "P1403CV-582X",
+   "title": "ASUS ExpertBook P1 P1403CV Intel Core 5 210H 8GB RAM 256GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/-p1403cv-582x/version.asp",
+   "price": 499.97,
+   "wasPrice": 601.19,
+   "image": "https://www.laptopsdirect.co.uk/Images/P1403CV-582X_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2080310",
    "mpn": "P1503CV-582X",
    "title": "ASUS ExpertBook P1 P1503CV-582X Intel Core 5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Pro Laptop",
@@ -806,33 +767,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1969710",
-   "mpn": "P5405CSA-U731X",
-   "title": "ASUS ExpertBook P5 Intel Core Ultra 7 32GB RAM 1TB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-expertbook-p5-intel-core-ultra-7-32gb-ram-1tb-ssd-14-inch-windows-11-p-p5405csa-u731x/version.asp",
-   "price": 1299,
-   "wasPrice": 1575.95,
-   "image": "https://www.laptopsdirect.co.uk/Images/P5405CSA-U731X_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2014201",
    "mpn": "CB3402CVA-MW0586",
    "title": "ASUS Plus CX34 Intel Core i3 8GB 256GB eMMc 14 Inch Chromebook",
    "url": "https://www.laptopsdirect.co.uk/asus-plus-cx34-intel-core-i3-8gb-256gb-emmc-14-inch-chromebook-cb3402cva-mw0586/version.asp",
    "price": 529.97,
    "image": "https://www.laptopsdirect.co.uk/Images/CB3402CVA-MW0586_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2724374",
-   "mpn": "H7607BA-SE350X",
-   "title": "ASUS ProArt NVIDIA RTX Spark 128GB RAM 2TB SSD 120Hz 16 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-proart-nvidia-rtx-spark-128gb-ram-2tb-ssd-120hz-16-inch-windows-11-lap-h7607ba-se350x/version.asp",
-   "price": 6199,
-   "image": "https://www.laptopsdirect.co.uk/Images/H7607BA-SE350X_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -879,12 +819,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2721453",
-   "mpn": "G614PW-RV181W",
-   "title": "ASUS ROG Strix G16 AMD Ryzen 9 16GB RAM 1TB SSD NVIDIA GeForce RTX 5080 165Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-rog-strix-g16-amd-ryzen-9-16gb-ram-1tb-ssd-nvidia-geforce-rtx-5080-165-g614pw-rv181w/version.asp",
-   "price": 2589.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/G614PW-RV181W_1_Classic.jpg?v=3",
+   "sku": "2009557",
+   "mpn": "G614PM-RV007W",
+   "title": "ASUS ROG Strix G16 AMD Ryzen 9 16GB RAM 1TB SSD RTX 5060 165Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-rog-strix-g16-amd-ryzen-9-16gb-ram-1tb-ssd-rtx-5060-165hz-16-inch-wind-g614pm-rv007w/version.asp",
+   "price": 2149.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/G614PM-RV007W_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -900,24 +840,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2721451",
-   "mpn": "G815LR-TT299W",
-   "title": "ASUS ROG Strix G18 Intel Core Ultra 9 16GB RAM 1TB SSD NVIDIA GeForce RTX 5070 Ti 300Hz 18 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-rog-strix-g18-intel-core-ultra-9-16gb-ram-1tb-ssd-nvidia-geforce-rtx-5-g815lr-tt299w/version.asp",
-   "price": 2919.97,
-   "wasPrice": 3299.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/G815LR-TT299W_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2721450",
-   "mpn": "G815LP-TT143W",
-   "title": "ASUS ROG Strix G18 Intel Core Ultra 9 32GB RAM 1TB SSD NVIDIA GeForce RTX 5070 300Hz 18 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-rog-strix-g18-intel-core-ultra-9-32gb-ram-1tb-ssd-nvidia-geforce-rtx-5-g815lp-tt143w/version.asp",
-   "price": 3019.97,
-   "wasPrice": 3199.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/G815LP-TT143W_1_Classic.jpg?v=3",
+   "sku": "2723159",
+   "mpn": "G615LW-TS262W",
+   "title": "ASUS ROG Strix G16 Intel Core Ultra 9 16GB RAM 1TB SSD NVIDIA GeForce RTX 5080 300Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-rog-strix-g16-intel-core-ultra-9-16gb-ram-1tb-ssd-nvidia-geforce-rtx-5-g615lw-ts262w/version.asp",
+   "price": 3279.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/G615LW-TS262W_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -932,16 +860,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2723161",
-   "mpn": "G835LXG-TQ564W",
-   "title": "ASUS ROG Strix SCAR 18 Intel Core Ultra 9 32GB RAM 2TB SSD NVIDIA GeForce RTX 5090 240Hz 18 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-rog-strix-scar-18-intel-core-ultra-9-32gb-ram-2tb-ssd-nvidia-geforce-r-g835lxg-tq564w/version.asp",
-   "price": 5499.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/G835LXG-TQ564W_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2723214",
    "mpn": "G835LWG-TQ386W",
    "title": "ASUS ROG Strix Scar 18 Intel Core Ultra 9 32GB RAM NVIDIA RTX 5080 240Hz 18 Inch windows 11 Gaming Laptop",
@@ -952,12 +870,53 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2093456",
-   "mpn": "G835LXG-TQ391W",
-   "title": "ASUS ROG Strix SCAR 18 Intel Core Ultra 9 64GB RAM 2TB SSD GeForce RTX 5090 240Hz 18 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-rog-strix-scar-18-intel-core-ultra-9-64gb-ram-2tb-ssd-geforce-rtx-5090-g835lxg-tq391w/version.asp",
-   "price": 5829.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/G835LXG-TQ391W_1_Classic.jpg?v=5",
+   "sku": "2085276",
+   "mpn": "GA403GM-SY118W",
+   "title": "ASUS ROG Zephyrus AMD Ryzen AI 9 16GB RAM 1TB SSD GeForce RTX 5060 120Hz 14 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-rog-zephyrus-amd-ryzen-ai-9-16gb-ram-1tb-ssd-geforce-rtx-5060-120hz-14-ga403gm-sy118w/version.asp",
+   "price": 2199.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GA403GM-SY118W_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2088328",
+   "mpn": "GU405AP-SY004W",
+   "title": "ASUS ROG Zephyrus G14 Intel Core Ultra 9 32GB RAM 1TB SSD GeForce RTX 5070 120Hz 14 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-rog-zephyrus-g14-intel-core-ultra-9-32gb-ram-1tb-ssd-geforce-rtx-5070-gu405ap-sy004w/version.asp",
+   "price": 2988.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GU405AP-SY004W_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2712893",
+   "mpn": "GU605CP-QR027W",
+   "title": "ASUS ROG Zephyrus G16 Intel Core Ultra 7 16GB RAM 1TB SSD NVIDIA RTX 5070 240Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-rog-zephyrus-g16-nvidia-rtx-5070-16gb-16.0-wqxga-oled-240hz-intel-ultr-gu605cp-qr027w/version.asp",
+   "price": 2699,
+   "image": "https://www.laptopsdirect.co.uk/Images/GU605CP-QR027W_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2088329",
+   "mpn": "GU606AP-TB002W",
+   "title": "ASUS ROG Zephyrus G16 Intel Core Ultra 9 32GB RAM 1TB SSD GeForce RTX 5070 240Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-rog-zephyrus-g16-intel-core-ultra-9-32gb-ram-1tb-ssd-geforce-rtx-5070-gu606ap-tb002w/version.asp",
+   "price": 3099.97,
+   "wasPrice": 3299.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/GU606AP-TB002W_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2093457",
+   "mpn": "GU606AW-TB007W",
+   "title": "ASUS ROG Zephyrus G16 Intel Core Ultra 9 32GB RAM 2TB SSD GeForce RTX 5080 240Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-rog-zephyrus-g16-intel-core-ultra-9-32gb-ram-2tb-ssd-geforce-rtx-5080-gu606aw-tb007w/version.asp",
+   "price": 3799.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GU606AW-TB007W_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -973,12 +932,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2721452",
-   "mpn": "GU606AX-TB099W",
-   "title": "ASUS ROG Zephyrus G16 Intel Core Ultra 9 64GB RAM 1TB SSD NVIDIA GeForce RTX 5090 240Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-rog-zephyrus-g16-intel-core-ultra-9-64gb-ram-1tb-ssd-nvidia-geforce-rt-gu606ax-tb099w/version.asp",
-   "price": 4999.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/GU606AX-TB099W_1_Classic.jpg?v=7",
+   "sku": "2001400",
+   "mpn": "G614PH-RV007W",
+   "title": "ASUS Strix G16 AMD Ryzen 9 16GB RAM 1TB SSD GeForce RTX 5050 165Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-strix-g16-amd-ryzen-9-16gb-ram-1tb-ssd-geforce-rtx-5050-165hz-16-inch-g614ph-rv007w/version.asp",
+   "price": 1369.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/A1G614PH-RV007W_3_Classic.jpg?v=9",
    "inStock": true
   },
   {
@@ -1004,17 +963,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2088325",
-   "mpn": "FA608UHI-TU127W",
-   "title": "ASUS TUF A16 AMD Ryzen 7 16GB RAM 1TB SSD GeForce RTX 5050 144Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-tuf-a16-amd-ryzen-7-16gb-ram-1tb-ssd-geforce-rtx-5050-144hz-16-inch-wi-fa608uhi-tu127w/version.asp",
-   "price": 1434.97,
-   "wasPrice": 1699.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/FA608UHI-TU127W_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2088326",
    "mpn": "FA608UMI-TU168W",
    "title": "ASUS TUF A16 AMD Ryzen 7 16GB RAM 1TB SSD GeForce RTX 5060 144Hz 16 Inch Windows 11 Gaming Laptop",
@@ -1025,12 +973,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2088324",
-   "mpn": "FA607NUQ-RL009W",
-   "title": "ASUS TUF A16 AMD Ryzen 7 16GB RAM 512GB SSD GeForce RTX 4050 144Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-tuf-a16-amd-ryzen-7-16gb-ram-512gb-ssd-geforce-rtx-4050-144hz-16-inch-fa607nuq-rl009w/version.asp",
-   "price": 999.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/FA607NUQ-RL009W_1_Classic.jpg?v=5",
+   "sku": "2712891",
+   "mpn": "FA608UP-TU131W",
+   "title": "ASUS TUF A16 AMD Ryzen 7 16GB RAM 1TB SSD NVIDIA GeForce RTX 5070 144Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-tuf-gaming-a16-fa608up-tu131w-amd-ryzen-7-260-laptop-40.6-cm-16-wu-fa608up-tu131w/version.asp",
+   "price": 1599,
+   "image": "https://www.laptopsdirect.co.uk/Images/FA608UP-TU131W_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1046,26 +994,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2093460",
-   "mpn": "FA608PP-TU094W",
-   "title": "ASUS TUF A16 AMD Ryzen 9 16GB RAM 1TB SSD GeForce RTX 5070 144Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-tuf-a16-amd-ryzen-9-16gb-ram-1tb-ssd-geforce-rtx-5070-144hz-16-inch-wi-fa608pp-tu094w/version.asp",
-   "price": 2117.96,
-   "image": "https://www.laptopsdirect.co.uk/Images/FA608PP-TU094W_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2009558",
-   "mpn": "FA608PM-RV009W",
-   "title": "ASUS TUF A16 AMD Ryzen 9 16GB RAM 1TB SSD RTX 5060 165Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-tuf-a16-amd-ryzen-9-16gb-ram-1tb-ssd-rtx-5060-165hz-16-inch-windows-11-fa608pm-rv009w/version.asp",
-   "price": 1749.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/FA608PM-RV009W_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2091818",
    "mpn": "FA808PP-S8003W",
    "title": "ASUS TUF Gaming A18 AMD Ryzen 9 16GB RAM 1TB SSD RTX 5070 240Hz 18 Inch Windows 11 Gaming Laptop",
@@ -1076,13 +1004,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2093455",
-   "mpn": "V3607VM-TK148W",
-   "title": "ASUS V16 Intel Core 7 16GB RAM 1TB SSD GeForce RTX 5060 144Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-v16-intel-240h-16gb-ram-1tb-ssd-geforce-rtx-5060-144hz-16-inch-windows-v3607vm-tk148w/version.asp",
-   "price": 1599.97,
-   "wasPrice": 1699.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/V3607VM-TK148W_1_Classic.jpg?v=5",
+   "sku": "2093458",
+   "mpn": "V3607VH-TK131W",
+   "title": "ASUS V16 Intel Core 5 16GB RAM 512GB SSD GeForce RTX 5050 144Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-v16-intel-core-5-16gb-ram-512gb-ssd-geforce-rtx-5050-144hz-16-inch-win-v3607vh-tk131w/version.asp",
+   "price": 1299.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/V3607VH-TK131W_1_Classic.jpg?v=6",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2084730",
+   "mpn": "X1407AA-LY001W",
+   "title": "ASUS Vivobook 14 Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-vivobook-14-intel-core-ultra-5-16gb-ram-512gb-ssd-14-inch-windows-11-l-x1407aa-ly001w/version.asp",
+   "price": 667.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/X1407AA-LY001W_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1108,11 +1045,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2066352",
-   "mpn": "X1504VA-BQ2890W",
-   "title": "ASUS Vivobook 15 Intel Core 5 8GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-vivobook-15-intel-core-5-8gb-ram-512gb-ssd-15.6-inch-windows-11-laptop-x1504va-bq2890w/version.asp",
-   "price": 549.97,
+   "sku": "2066358",
+   "mpn": "X1504VA-BQ2889W",
+   "title": "ASUS Vivobook 15 Intel Core 5 16GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-vivobook-15-intel-core-5-16gb-ram-512gb-ssd-15.6-inch-windows-11-lapto-x1504va-bq2889w/version.asp",
+   "price": 679.97,
+   "wasPrice": 735.28,
    "image": "https://www.laptopsdirect.co.uk/Images/A1X1504VA-BQ2890W_1_Classic.jpg?v=9",
    "inStock": true
   },
@@ -1154,30 +1092,40 @@
    "title": "ASUS VivoBook 16 Intel Core Ultra 7 240H 32GB RAM 1TB SSD RTX 5070 16 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/asus-vivobook-16-intel-core-ultra-7-240h-32gb-ram-1tb-ssd-rtx-5070-16-inch-k3607vp-tk129w/version.asp",
    "price": 2099.97,
-   "wasPrice": 2224.97,
+   "wasPrice": 2284.97,
    "image": "https://www.laptopsdirect.co.uk/Images/K3607VP-TK129W_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2010329",
-   "mpn": "X1607QA-MB005W",
-   "title": "ASUS VivoBook 16 Qualcomm Snapdragon X 16GB RAM 512GB SSD 16 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-vivobook-16-qualcomm-snapdragon-x-16gb-ram-512gb-ssd-16-inch-windows-1-x1607qa-mb005w/version.asp",
-   "price": 629.97,
-   "wasPrice": 712.79,
-   "image": "https://www.laptopsdirect.co.uk/Images/X1607QA-MB005W_1_Classic.jpg?v=5",
+   "sku": "2039436",
+   "mpn": "X1704VA-AU811W",
+   "title": "ASUS Vivobook 17 Intel Core 5 8GB RAM 512GB SSD 17.3 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-vivobook-17-intel-core-5-8gb-ram-512gb-ssd-17.3-inch-windows-11-laptop-x1704va-au811w/version.asp",
+   "price": 569.97,
+   "wasPrice": 659.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/X1504VA-BQ2889W_1_17366336_Classic.jpg?v=5",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2728383",
-   "mpn": "M1807GA-S8002W",
-   "title": "ASUS VivoBook 18 AMD Ryzen AI 5 16GB RAM 512GB SSD 144Hz 18 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-vivobook-18-amd-ryzen-ai-5-16gb-ram-512gb-ssd-144hz-18-inch-windows-11-m1807ga-s8002w/version.asp",
-   "price": 968.97,
-   "wasPrice": 1099.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/M1807GA-S8002W_1_Classic.jpg?v=3",
+   "sku": "2728380",
+   "mpn": "M1502XA-BQ003W",
+   "title": "ASUS VivoBook AMD Ryzen 7 7840HS 8GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-vivobook-amd-ryzen-7-7840hs-8gb-ram-512gb-ssd-15.6-inch-windows-11-lap-m1502xa-bq003w/version.asp",
+   "price": 737.97,
+   "wasPrice": 915.6,
+   "image": "https://www.laptopsdirect.co.uk/Images/M1502XA-BQ003W_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2728376",
+   "mpn": "E1504FA-BQ5732W",
+   "title": "ASUS VivoBook Go 15 AMD Ryzen 5 40 16GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-vivobook-go-15-amd-ryzen-5-40-16gb-ram-512gb-ssd-15.6-inch-windows-11-e1504fa-bq5732w/version.asp",
+   "price": 629.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/E1504FA-BQ5513W_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -1197,8 +1145,18 @@
    "mpn": "M3407GA-SF015W",
    "title": "ASUS Vivobook S14 AMD Ryzen 7 AI 445 16GB RAM 1TB SSD 14 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/asus-vivobook-s14-amd-ryzen-7-ai-445-16gb-ram-1tb-ssd-14-inch-windows-11-la-m3407ga-sf015w/version.asp",
-   "price": 919.97,
+   "price": 948.97,
    "image": "https://www.laptopsdirect.co.uk/Images/M3407GA-SF015W_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2099496",
+   "mpn": "M3607GA-SH004W",
+   "title": "ASUS VivoBook S16 AMD Ryzen AI 7 16GB RAM 1TB SSD 16 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-vivobook-s16-amd-ryzen-ai-7-16gb-ram-1tb-ssd-16-inch-windows-11-laptop-m3607ga-sh004w/version.asp",
+   "price": 1284.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/M3607GA-SH004W_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -1214,12 +1172,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2713083",
-   "mpn": "UM3406GA-QD034W",
-   "title": "ASUS ZenBook 14 AMD Ryzen AI 5 16GB RAM 1TB SSD 14 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-zenbook-14-amd-ryzen-ai-5-16gb-ram-1tb-ssd-14-inch-windows-11-laptop-um3406ga-qd034w/version.asp",
-   "price": 1204.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/UM3406GA-QD004W_1_Classic.jpg?v=5",
+   "sku": "1999661",
+   "mpn": "UX3405CA-QL241W",
+   "title": "ASUS Zenbook 14 Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Touchscreen Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-zenbook-14-intel-core-ultra-5-16gb-ram-512gb-ssd-14-inch-touchscreen-w-ux3405ca-ql241w/version.asp",
+   "price": 1139.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/UX3405CA-QL241W_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1228,9 +1186,20 @@
    "mpn": "UX3407NA-QD148W",
    "title": "ASUS Zenbook A14 Qualcomm Snapdragon X2 Elite 16GB RAM 1TB SSD 14 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/asus-zenbook-a14-qualcomm-snapdragon-x2-elite-16gb-ram-1tb-ssd-14-inch-wind-ux3407na-qd148w/version.asp",
-   "price": 1299.97,
+   "price": 1324.97,
    "wasPrice": 1799.99,
    "image": "https://www.laptopsdirect.co.uk/Images/UX3407NA-QD148W_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2084735",
+   "mpn": "UX3407NA-QD069W",
+   "title": "ASUS Zenbook A14 Qualcomm Snapdragon X2 Elite 16GB RAM 1TB SSD 14 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/asus-zenbook-a14-qualcomm-snapdragon-x2-elite-16gb-ram-1tb-ssd-14-inch-wind-ux3407na-qd069w/version.asp",
+   "price": 1426.97,
+   "wasPrice": 1769,
+   "image": "https://www.laptopsdirect.co.uk/Images/UX3407NA-QD069W_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1240,7 +1209,6 @@
    "title": "ASUS Zenbook A14 Qualcomm Snapdragon X2 Elite X2E-88-100 32GB RAM 1TB SSD 14 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/asus-zenbook-a14-qualcomm-snapdragon-x2-elite-x2e-88-100-32gb-ram-1tb-ssd-1-ux3407na-qd004w/version.asp",
    "price": 1839.97,
-   "wasPrice": 2099.98,
    "image": "https://www.laptopsdirect.co.uk/Images/UX3407NA-QD004W_1_Classic.jpg?v=3",
    "inStock": true
   },
@@ -1256,66 +1224,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2099449",
-   "mpn": "UM5606GA-SR040W",
-   "title": "ASUS ZenBook S16 90NB17H4-M00590 Ryzen AI 7 32GB RAM 1TB SSD 120Hz 16 Inch Touchscreen Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-zenbook-s16-90nb17h4-m00590-ryzen-ai-7-32gb-ram-1tb-ssd-120hz-16-inch-um5606ga-sr040w/version.asp",
-   "price": 1699.97,
-   "wasPrice": 1955.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/UM5606GA-SR040W_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2713084",
-   "mpn": "UM5606GA-SR238W",
-   "title": "ASUS Zenbook S16 AMD Ryzen AI 9 32GB RAM 1TB SSD 120Hz 16 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/asus-zenbook-s16-amd-ryzen-ai-9-32gb-ram-1tb-ssd-120hz-16-inch-windows-11-l-um5606ga-sr238w/version.asp",
-   "price": 1799,
-   "wasPrice": 1993.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/UM5606GA-SR238W_1_Classic.jpg?v=7",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2013127",
    "mpn": "9XTX5",
    "title": "Dell 13 Premium Intel Core Ultra 5 16GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/dell-13-premium-intel-core-ultra-5-16gb-ram-512gb-ssd-13.3-inch-windows-11-9xtx5/version.asp",
    "price": 1749.97,
    "image": "https://www.laptopsdirect.co.uk/Images/A19XTX5_1_Classic.jpg?v=22",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2015616",
-   "mpn": "0W78Y",
-   "title": "Dell 13 Premium Intel Core Ultra 7 16GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/dell-13-premium-intel-core-ultra-7-16gb-ram-512gb-ssd-13.3-inch-windows-11-0w78y/version.asp",
-   "price": 1799.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/0W78Y_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2015617",
-   "mpn": "G7TTC",
-   "title": "Dell 13 Premium Intel Core Ultra 7 32GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/dell-13-premium-intel-core-ultra-7-32gb-ram-512gb-ssd-13.3-inch-windows-11-g7ttc/version.asp",
-   "price": 2413.97,
-   "wasPrice": 2543.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/G7TTC_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2623243",
-   "mpn": "3120Chrome",
-   "title": "Dell Chromebook 3120 Intel N100 4GB RAM 64GB eMMc 11.6 Inch Chromebook",
-   "url": "https://www.laptopsdirect.co.uk/dell-chromebook-3120-intel-n100-4gb-ram-64gb-emmc-11.6-inch-chromebook-3120chrome/version.asp",
-   "price": 279.97,
-   "wasPrice": 349.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/3120Chrome_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -1330,24 +1244,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2075736",
-   "mpn": "2WPF7",
-   "title": "Dell Latitude 5455 Copilot+ PC Snapdragon X1P-42-100 16GB RAM 512GB SSD 14 Inch windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/dell-latitude-5455-copilot-pc-snapdragon-x1p-42-100-16gb-ram-512gb-ssd-14-2wpf7/version.asp",
-   "price": 1144.97,
-   "wasPrice": 1499.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/FNVDM_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2075734",
-   "mpn": "FNVDM",
-   "title": "DELL Latitude 5455 Copilot+ PC Snapdragon X1P-64-100 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/dell-latitude-5455-copilot-pc-snapdragon-x1p-64-100-16gb-ram-512gb-ssd-14-fnvdm/version.asp",
-   "price": 1187.97,
-   "wasPrice": 1571.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/FNVDM_1_Classic.jpg?v=5",
+   "sku": "2030715",
+   "mpn": "9JGMP",
+   "title": "Dell Pro 13 Plus Intel Core Ultra 7 16GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/dell-pro-13-plus-intel-core-ultra-7-16gb-ram-512gb-ssd-13.3-inch-windows-11-9jgmp/version.asp",
+   "price": 1499.97,
+   "wasPrice": 1824.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9JGMP_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -1357,7 +1260,7 @@
    "title": "Dell Pro 13 Plus PB13250 Copilot+ Intel Core Ultra 7 266V 16GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/dell-pro-13-plus-pb13250-copilot-intel-core-ultra-7-266v-16gb-ram-512gb-ss-1rg8h/version.asp",
    "price": 1884.97,
-   "wasPrice": 2303.98,
+   "wasPrice": 2251.97,
    "image": "https://www.laptopsdirect.co.uk/Images/1RG8H_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1368,7 +1271,7 @@
    "title": "Dell Pro 13 Plus PB13250 Intel Core Ultra 5 16GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-5-236v-8mb-cache-16gb-lpddr5x-sdram-512gb-ssd-13.3-qu-vr6jv/version.asp",
    "price": 1669.97,
-   "wasPrice": 1775.98,
+   "wasPrice": 1783.97,
    "image": "https://www.laptopsdirect.co.uk/Images/VR6JV_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1391,6 +1294,16 @@
    "price": 1864.97,
    "wasPrice": 1991.98,
    "image": "https://www.laptopsdirect.co.uk/Images/X94W4_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2083210",
+   "mpn": "WTFF4",
+   "title": "Dell Pro 13 Premium PA13250 Intel Core Ultra 5 32GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-5-238v-8mb-cache-32gb-lpddr5x-sdram-512gb-ssd-13.3-qu-wtff4/version.asp",
+   "price": 2579.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/WTFF4_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -1425,22 +1338,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2076780",
-   "mpn": "5D8JM",
-   "title": "Dell Pro 14 Essential PV14250 Intel Core 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/intel-core-5-120u-12mb-cache-16gb-ddr5-sdram-512gb-ssd-14-quot-full-h-5d8jm/version.asp",
-   "price": 964.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/5D8JM_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2088316",
    "mpn": "P1YYM",
    "title": "Dell Pro 14 Essential PV14255 AMD Ryzen 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/amd-ryzen-5-220-3.5ghz-16gb-ddr5-sdram-512gb-ssd-14-quot-full-hd-192-p1yym/version.asp",
    "price": 943.97,
-   "wasPrice": 1003.97,
+   "wasPrice": 1001.98,
    "image": "https://www.laptopsdirect.co.uk/Images/P1YYM_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1484,6 +1387,16 @@
    "price": 1149.97,
    "wasPrice": 1412.39,
    "image": "https://www.laptopsdirect.co.uk/Images/T1HG7_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2076111",
+   "mpn": "9FC1P",
+   "title": "Dell Pro 14 PC14250 Intel Core Ultra 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-7-255u-12mb-cache-16gb-ddr5-sdram-512gb-ssd-14-quot-9fc1p/version.asp",
+   "price": 1574.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9FC1P_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -1539,22 +1452,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2075731",
-   "mpn": "V0996",
-   "title": "Dell Pro 14 Plus PB14250 Intel Core Ultra 5 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-5-238v-8mb-cache-32gb-lpddr5x-sdram-512gb-ssd-14-quot-v0996/version.asp",
-   "price": 1889.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/V0996_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2076979",
    "mpn": "X337X",
    "title": "Dell Pro 14 Plus PB14250 Intel Core Ultra 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-7-266v-12mb-cache-16gb-lpddr5x-sdram-512gb-ssd-14-quo-x337x/version.asp",
    "price": 1757.97,
-   "wasPrice": 1943.98,
+   "wasPrice": 2090.98,
    "image": "https://www.laptopsdirect.co.uk/Images/X337X_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1581,17 +1484,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2075863",
-   "mpn": "99HWP",
-   "title": "Dell Pro 14 Premium PA14250 Intel Core Ultra 5 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-5-238v-8mb-cache-32gb-lpddr5x-sdram-512gb-ssd-14-quot-99hwp/version.asp",
-   "price": 2174.97,
-   "wasPrice": 2315.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/99HWP_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2075738",
    "mpn": "VPJ93",
    "title": "Dell Pro 14 Premium PA14250 Intel Core Ultra 7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Touchscreen Laptop",
@@ -1608,16 +1500,6 @@
    "url": "https://www.laptopsdirect.co.uk/dell-pro-15-essential-pv15250i3-1305u8gb512gb-ssd15.6-fhdintel-uhdfg-2pcwg/version.asp",
    "price": 649.97,
    "image": "https://www.laptopsdirect.co.uk/Images/2PCWG_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2051729",
-   "mpn": "T26H4",
-   "title": "Dell Pro 15 Essential Intel Core i5 16GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/dell-pro-15-essential-pv15250i5-1334u16gb512gb-ssd15.6-fhdintel-uhdf-t26h4/version.asp",
-   "price": 999.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/A2T26H4_1_Classic.jpg?v=9",
    "inStock": true
   },
   {
@@ -1671,7 +1553,7 @@
    "title": "Dell Pro 16 PC16255 AMD Ryzen 5 PRO 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/amd-ryzen-5-pro-230-3.5ghz-16gb-ddr5-sdram-512gb-ssd-16-quot-full-hd-fvgrr/version.asp",
    "price": 1144.97,
-   "wasPrice": 1247.98,
+   "wasPrice": 1257.97,
    "image": "https://www.laptopsdirect.co.uk/Images/FVGRR_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1687,17 +1569,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2076977",
-   "mpn": "6DH6J",
-   "title": "Dell Pro 16 Plus PB16250 Intel Core Ultra 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-5-236v-8mb-cache-16gb-lpddr5x-sdram-512gb-ssd-16-quot-6dh6j/version.asp",
-   "price": 1503.97,
-   "wasPrice": 1667.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/6DH6J_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2076981",
    "mpn": "52WV1",
    "title": "Dell Pro 16 Plus PB16250 Intel Core Ultra 7 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
@@ -1705,6 +1576,16 @@
    "price": 1779.97,
    "wasPrice": 1895.98,
    "image": "https://www.laptopsdirect.co.uk/Images/52WV1_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2076779",
+   "mpn": "TX50W",
+   "title": "Dell Pro 16 Plus PB16250 Intel Core Ultra 7 32GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-7-268v-12mb-cache-32gb-lpddr5x-sdram-512gb-ssd-16-quo-tx50w/version.asp",
+   "price": 2139.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/TX50W_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -1719,12 +1600,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2045012",
+   "mpn": "6VNWP",
+   "title": "Dell Pro Max 14 Intel Core Ultra 7 32GB RAM 1TB SSD RTX Pro 500 60 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/dell-pro-max-14-intel-core-ultra-7-32gb-ram-1tb-ssd-rtx-pro-500-60-14-inch-6vnwp/version.asp",
+   "price": 1899.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/6VNWP_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2077942",
    "mpn": "7JT1K",
    "title": "Dell Pro Max 14 MC14255 AMD Ryzen AI 7 PRO 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/amd-ryzen-ai-7-pro-350-2ghz-16gb-lpddr5x-sdram-512gb-ssd-14-quot-full-7jt1k/version.asp",
    "price": 1502.97,
-   "wasPrice": 1595.98,
+   "wasPrice": 1644.97,
    "image": "https://www.laptopsdirect.co.uk/Images/7JT1K_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1752,6 +1643,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2096619",
+   "mpn": "927JP-U7",
+   "title": "Dell Pro Max 16 Premium Intel Core Ultra 7 32GB RAM 1TB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/dell-pro-max-16-premium-intel-core-ultra-7-32gb-ram-1tb-ssd-16-inch-windows-927jp-u7/version.asp",
+   "price": 2499.97,
+   "wasPrice": 2699.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/927JP_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2051730",
    "mpn": "V0TN9",
    "title": "Dell Pro Max 18 Plus Intel Core Ultra 7 32GB RAM 1TB SSD RTX Pro 3000 120 18 Inch Windows 11 Pro Laptop",
@@ -1759,6 +1661,27 @@
    "price": 3263.97,
    "wasPrice": 3848.99,
    "image": "https://www.laptopsdirect.co.uk/Images/V0TN9_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2080331",
+   "mpn": "KYP4M",
+   "title": "Dell Pro Max 18 Plus MB18250 Intel Core Ultra 7 32GB RAM 1TB SSD 18 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-7-265hx-30mb-cache-32gb-ddr5-sdram-1000gb-ssd-18-quot-kyp4m/version.asp",
+   "price": 3699.97,
+   "wasPrice": 4036.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/KYP4M_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2079393",
+   "mpn": "PX91H",
+   "title": "Dell Pro Max 18 Plus MB18250 Intel Core Ultra 9 32GB RAM 1TB SSD 18 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-9-285hx-36mb-cache-32gb-ddr5-sdram-1000gb-ssd-18-quot-px91h/version.asp",
+   "price": 4314.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/PX91H_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -1804,6 +1727,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2091474",
+   "mpn": "C38LCAT",
+   "title": "Hewlett Packard HP 250RG9 Intel Core 5 16GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-250rg9-intel-core-5-16gb-ram-256gb-ssd-15.6-inch-windows-11-laptop-c38lcat/version.asp",
+   "price": 554.97,
+   "wasPrice": 879.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/C38LCAT_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2067475",
    "mpn": "D63JDET",
    "title": "Hewlett Packard HP EliteBook 8 G1i Next Gen AI Wolf Pro Security Edition Copilot+ Intel Core Ultra 7 256V 16GB RAM 14 Inch Windows 11 Pro Laptop",
@@ -1826,12 +1760,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2068691",
-   "mpn": "BM2V8EA",
-   "title": "HP 15 Intel Core i5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-15-fd0064na-intel-core-i5-8gb-ram-256gb-ssd-15.6-inch-windows-11-laptop-bm2v8ea/version.asp",
-   "price": 497.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/BM2V8EA_1_Classic.jpg?v=1",
+   "sku": "2030730",
+   "mpn": "B67DKEA",
+   "title": "HP 14s-dq0007na Intel Celeron 4GB RAM 64 GB eMMc 14 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-14s-dq0007na-intel-celeron-4gb-ram-64-gb-emmc-14-inch-windows-11-laptop-b67dkea/version.asp",
+   "price": 220,
+   "image": "https://www.laptopsdirect.co.uk/Images/B67DKEA_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -1847,6 +1781,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2066058",
+   "mpn": "BM2U1EA",
+   "title": "HP 15-fc0045na AMD Ryzen 3 7320U 8GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-15-fc0045na-amd-ryzen-3-7320u-8gb-ram-256gb-ssd-15.6-inch-windows-11-lap-bm2u1ea/version.asp",
+   "price": 399.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/BM2U1EA_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2050257",
    "mpn": "C1LL3EA",
    "title": "HP 17-cp2009na AMD Ryzen 3 8GB RAM 512GB SSD 17.3 Inch Windows 11 Laptop",
@@ -1858,11 +1802,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2726890",
+   "mpn": "E02F9ES",
+   "title": "HP 200 G2a 16 AMD Ryzen 7 217 16GB RAM 512GB SSD 16 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-200-g2a-16-amd-ryzen-7-217-16gb-ram-512gb-ssd-16-inch-windows-11-laptop-e02f9es/version.asp",
+   "price": 699,
+   "wasPrice": 799,
+   "image": "https://www.laptopsdirect.co.uk/Images/E02F9ES_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2100137",
    "mpn": "DZ5V1ET",
    "title": "HP 200 G2a AMD Ryzen 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-200-g2a-16-inch-laptop-dz5v1et/version.asp",
    "price": 789.97,
+   "wasPrice": 978.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DZ5V1ET_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1875,26 +1831,6 @@
    "price": 749.97,
    "wasPrice": 799.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DZ5V2ET_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2726891",
-   "mpn": "E02FBES",
-   "title": "HP 200 G2a16 AMD Ryzen 5 216 16GB RAM 512GB SSD 16 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-200-g2a16-amd-ryzen-5-216-16gb-512gb-ssd-16-inch-windows-11-home-laptop-e02fbes/version.asp",
-   "price": 599.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DZ5V1ET_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2721565",
-   "mpn": "E4VC1ET",
-   "title": "HP 200 G2i Intel Core 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-200-g2i-laptop-e4vc1et/version.asp",
-   "price": 739.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/E4VC1ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -1930,6 +1866,27 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2076527",
+   "mpn": "D06MXAT",
+   "title": "HP 250R G10 Intel Core 5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-250r-g10-intel-core-5-8gb-ram-256gb-ssd-15.6-inch-windows-11-laptop-d06mxat/version.asp",
+   "price": 519.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/D06MXAT_1_Classic.jpg?v=17",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2050833",
+   "mpn": "C38LJAT",
+   "title": "HP 250R G10 Intel Core 7 16GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-250r-g10-intel-core-ultra-7-16gb-ram-512gb-ssd-15.6-inch-windows-11-pro-c38ljat/version.asp",
+   "price": 849.97,
+   "wasPrice": 1093.18,
+   "image": "https://www.laptopsdirect.co.uk/Images/C38LJAT_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2067485",
    "mpn": "D2XR9AT",
    "title": "HP 250R G10 Intel Core 7 24GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
@@ -1940,12 +1897,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2051153",
-   "mpn": "C38LDAT",
-   "title": "HP 250R G9 Intel Core 5 16GB RAM 256GB SSD 15.6 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-250r-g9-intel-core-ultra-5-16gb-ram-256gb-ssd-15.6-inch-windows-11-pro-l-c38ldat/version.asp",
-   "price": 739.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/C6KL9AT_1_Classic.jpg?v=5",
+   "sku": "2063476",
+   "mpn": "D2XR8AT",
+   "title": "HP 250R G10 Intel Core 7 24GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-250r-g10-intel-core-7-24gb-ram-512gb-ssd-15.6-inch-windows-11-pro-laptop-d2xr8at/version.asp",
+   "price": 829.97,
+   "wasPrice": 1288.79,
+   "image": "https://www.laptopsdirect.co.uk/Images/D2XR8AT_1_Classic.jpg?v=46",
    "inStock": true
   },
   {
@@ -1961,16 +1919,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2055894",
-   "mpn": "C38LBAT",
-   "title": "HP 250R G9 Intel Core 5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-250r-g9-intel-core-ultra-5-8gb-ram-256gb-ssd-15.6-inch-windows-11-laptop-c38lbat/version.asp",
-   "price": 499.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/C38L9AT_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2085209",
    "mpn": "DF7W0ET",
    "title": "HP 250r G9 Intel Core 7 150U 16GB RAM 256GB SSD 15.6 Inch Windows 11 Pro Laptop",
@@ -1982,13 +1930,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2085634",
-   "mpn": "DF7X0ET",
-   "title": "HP 250R Intel Core 3 16GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-250r-g9-3-100u-15-16gb-256-laptop-df7x0et/version.asp",
-   "price": 519.97,
-   "wasPrice": 1063.78,
-   "image": "https://www.laptopsdirect.co.uk/Images/DF7X0ET_1_Classic.jpg?v=5",
+   "sku": "2013176",
+   "mpn": "AK9U8AT",
+   "title": "HP 255 G10 AMD Ryzen 5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-255-g10-notebook-amd-ryzen-5-8gb-ram-256gb-ssd-15.6-inch-windows-11-lapt-ak9u8at/version.asp",
+   "price": 419.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/AK9U8AT_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -2003,22 +1950,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2055895",
+   "mpn": "C38LKAT",
+   "title": "HP 255R G10 AMD Ryzen 5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-255r-g10-amd-ryzen-5-8gb-ram-256gb-ssd-15.6-inch-windows-11-laptop-c38lkat/version.asp",
+   "price": 499.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/C38LKAT_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2724417",
    "mpn": "E34TKET",
    "title": "HP E34TKET Intel Core 5 16GB RSM 512GB SSD 13.3 Inch Windows 11 Pro Touchscreen Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-e34tket-intel-core-5-16gb-rsm-512gb-ssd-13.3-inch-windows-11-pro-touchsc-e34tket/version.asp",
    "price": 1269.97,
+   "wasPrice": 1479.97,
    "image": "https://www.laptopsdirect.co.uk/Images/E34TKET_1_Classic.jpg?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2723088",
-   "mpn": "E4VC0ET",
-   "title": "HP E4VC0ET Intel Core 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-200-g2i-laptop-e4vc0et/version.asp",
-   "price": 848.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/E4VC0ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2028,6 +1976,7 @@
    "title": "HP E82H4ET Copilot+ PC 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-e82h4et-copilot-pc-16gb-ram-512gb-ssd-16-inch-windows-11-pro-laptop-e82h4et/version.asp",
    "price": 1544.97,
+   "wasPrice": 1660.97,
    "image": "https://www.laptopsdirect.co.uk/Images/E82H4ET_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -2044,13 +1993,45 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2068002",
-   "mpn": "C8KH1AT",
-   "title": "HP EliteBook 6 G1q Next Gen AI Qualcomm Snapdragon X 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-6-g1q-next-gen-ai-qualcomm-snapdragon-32gb-ram-512gb-ssd-14-in-c8kh1at/version.asp",
-   "price": 999.97,
-   "wasPrice": 1201.12,
-   "image": "https://www.laptopsdirect.co.uk/Images/C8KH1AT_1_Classic.jpg?v=1",
+   "sku": "2045805",
+   "mpn": "C68QXAT",
+   "title": "HP EliteBook 6 G1a AMD Ryzen 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-6-g1ah-16-inch-notebook-pc-16-quot-windows-11-pro-amd-ryzen-c68qxat/version.asp",
+   "price": 1399.97,
+   "wasPrice": 1499.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/C68QXAT_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2028610",
+   "mpn": "AD4X0ET",
+   "title": "HP EliteBook 6 G1a AMD Ryzen AI 5 24GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-6-g1a-14-inch-notebook-next-gen-ai-pc-14-quot-windows-11-pro-ad4x0et/version.asp",
+   "price": 1489.97,
+   "wasPrice": 2141.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/AD4X0ET_1_Classic.png?v=29",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2716642",
+   "mpn": "AD3L0ET",
+   "title": "HP EliteBook 6 G1i AI Intel Core Ultra 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-6-g1i-ai-intel-core-ultra-7-255u-laptop-ad3l0et/version.asp",
+   "price": 1698.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/AD3L0ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2068001",
+   "mpn": "C8KH3AT",
+   "title": "HP EliteBook 6 G1q Next Gen AI Qualcomm Snapdragon X 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Copilot+ Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-6-g1q-next-gen-ai-qualcomm-snapdragon-16gb-ram-512gb-ssd-14-in-c8kh3at/version.asp",
+   "price": 839.97,
+   "wasPrice": 1367.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/C8KH3AT_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2066,12 +2047,35 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2096221",
-   "mpn": "DG3P7ET",
-   "title": "HP EliteBook 6 G2a AMD Ryzen 7 PRO 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-6-g2a-laptop-dg3p7et/version.asp",
-   "price": 1733.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DG3P7ET_1_Classic.jpg?v=1",
+   "sku": "2716342",
+   "mpn": "DW2A2ET",
+   "title": "HP EliteBook 6 G2i Intel Core 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-6-g2i-14-inch-laptop-dw2a2et/version.asp",
+   "price": 1479.97,
+   "wasPrice": 2029.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DW2A2ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2715597",
+   "mpn": "DW2D2ET",
+   "title": "HP EliteBook 6 G2i Intel Core 7 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-6-g2i-16-ai-pc-intel-core-7-360-laptop-dw2d2et/version.asp",
+   "price": 1628.97,
+   "wasPrice": 2279.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/DW2D2ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2095697",
+   "mpn": "DQ0B5ET",
+   "title": "HP EliteBook 6 G2q Next Gen AI Copilot+ PC Snapdragon 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-6-g2q-14-inch-laptop-dq0b5et/version.asp",
+   "price": 1332.97,
+   "wasPrice": 2464.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DQ0B5ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2087,43 +2091,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2038153",
+   "mpn": "AD4M2ET",
+   "title": "HP EliteBook 6 Intel Core Ultra 5 16GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-6-g1i-13-inch-notebook-ai-pc-13.3-quot-windows-11-pro-intel-c-ad4m2et/version.asp",
+   "price": 1399.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/AD4M2ET_1_Classic.jpg?v=41",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2017900",
    "mpn": "AD4M4ET",
    "title": "HP EliteBook 6 Intel Core Ultra 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/hewlett-packard-hp-elitebook-6-g1i-notebook-ai-177-degree-hinge-design-ad4m4et/version.asp",
    "price": 1394.97,
    "image": "https://www.laptopsdirect.co.uk/Images/AD4M4ET_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2027050",
-   "mpn": "AD4M3ET",
-   "title": "HP EliteBook 6 Intel Core Ultra 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/elitebook-6-g1i-14-inch-notebook-ai-pc-14-quot-windows-11-pro-intel-cor-ad4m3et/version.asp",
-   "price": 1349,
-   "image": "https://www.laptopsdirect.co.uk/Images/AD4M3ET_1_Classic.jpg?v=42",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2061666",
-   "mpn": "CJ8Z9ET",
-   "title": "HP EliteBook 640 G11 Intel Core Ultra 5 24GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-640-g11-intel-core-ultra-5-24gb-ram-512gb-ssd-14-inch-windows-cj8z9et/version.asp",
-   "price": 1304.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/CJ8Z9ET_1_17378769_Classic.jpg?v=7",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2100318",
-   "mpn": "D82Y4ET",
-   "title": "HP EliteBook 660 16 inch G11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-660-16-inch-g11-laptop-d82y4et/version.asp",
-   "price": 1399.97,
-   "wasPrice": 1628.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/D82Y4ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2138,12 +2121,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2050377",
-   "mpn": "CK7Q9ET",
-   "title": "HP EliteBook 8 AMD Ryzen AI 7 24GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/elitebook-8-g1a-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-ck7q9et/version.asp",
-   "price": 1639.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/CK7Q9ET_1_Classic.jpg?v=38",
+   "sku": "1983796",
+   "mpn": "A37TNET",
+   "title": "HP EliteBook 660 Intel Core Ultra 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-660-16-inch-g11-notebook-pc-16-quot-windows-11-pro-intel-core-a37tnet/version.asp",
+   "price": 1284.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/A37TNET_1_Classic.jpg?v=20",
    "inStock": true
   },
   {
@@ -2158,66 +2141,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2091381",
+   "mpn": "A37KBET",
+   "title": "HP EliteBook 8 Flip G1i AI PC Intel Core Ultra 7 32GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-flip-g1i-ai-pc-intel-core-ultra-7-32gb-ram-512gb-ssd-13.3-in-a37kbet/version.asp",
+   "price": 2999.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/A37KBET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2038150",
    "mpn": "B2QP4ES",
    "title": "HP EliteBook 8 Flip G1i Intel Core Ultra 5 16GB RAM 256GB SSD 13 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-flip-g1i-intel-core-ultra-5-16gb-ram-256gb-ssd-13-inch-windo-b2qp4es/version.asp",
    "price": 1769.97,
    "image": "https://www.laptopsdirect.co.uk/Images/B2QP4ES_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2718185",
-   "mpn": "DE9H9ET",
-   "title": "HP EliteBook 8 Flip G2i Next Gen AI PC Copilot+ PC Intel Core Ultra 7 16GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Touchscreen Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-flip-g2i-laptop-de9h9et/version.asp",
-   "price": 2314.97,
-   "wasPrice": 2919.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DE9H9ET_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2721566",
-   "mpn": "E04GZET",
-   "title": "HP EliteBook 8 Flip G2i Next Gen AI PC Copilot+ PC Intel Core Ultra 7 16GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Touchscreen Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-flip-g2i-laptop-e04gzet/version.asp",
-   "price": 1852.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/E04GZET_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2061663",
-   "mpn": "CJ9J1ET",
-   "title": "HP EliteBook 8 G1i A Intel Core Ultra 7 24GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-g1i-a-intel-core-ultra-7-24gb-ram-512gb-ssd-16-inch-windows-cj9j1et/version.asp",
-   "price": 1597.97,
-   "wasPrice": 1925.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/CJ9J1ET_1_classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2017102",
-   "mpn": "AD4M0ET",
-   "title": "HP EliteBook 8 G1i Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-g1i-intel-core-ultra-5-16gb-ram-512gb-ssd-14-inch-windows-11-ad4m0et/version.asp",
-   "price": 1399.97,
-   "wasPrice": 1729.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/AD4M0ET_1_Classic.png?v=16",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2043869",
-   "mpn": "AD4L9ET",
-   "title": "HP EliteBook 8 G1i Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/elitebook-8-g1i-14-inch-notebook-ai-pc-wolf-pro-security-edition-14-quot-ad4l9et/version.asp",
-   "price": 1542.97,
-   "wasPrice": 1743.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/AD4L9ET_5_Classic.jpg?v=31",
    "inStock": true
   },
   {
@@ -2233,6 +2172,27 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2043869",
+   "mpn": "AD4L9ET",
+   "title": "HP EliteBook 8 G1i Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-8-g1i-14-inch-notebook-ai-pc-wolf-pro-security-edition-14-quot-ad4l9et/version.asp",
+   "price": 1542.97,
+   "wasPrice": 1858.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/AD4L9ET_5_Classic.jpg?v=31",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2077931",
+   "mpn": "D63JCET",
+   "title": "HP EliteBook 8 G1i Intel Core Ultra 5 226V 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-g1i-intel-core-ultra-5-226v-16gb-ram-512gb-ssd-14-inch-windo-d63jcet/version.asp",
+   "price": 1399,
+   "image": "https://www.laptopsdirect.co.uk/Images/D63JCET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2063138",
    "mpn": "CJ9J2ET",
    "title": "HP EliteBook 8 G1i Intel Core Ultra 7 24GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
@@ -2244,12 +2204,79 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2088619",
+   "mpn": "DF8E0ET",
+   "title": "HP EliteBook 8 G1i Intel Core Ultra 7 32GB RAM 256GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-g1i-intel-core-ultra-7-32gb-ram-256gb-ssd-14-inch-windows-11-df8e0et/version.asp",
+   "price": 1749.97,
+   "wasPrice": 2618.39,
+   "image": "https://www.laptopsdirect.co.uk/Images/DF8E0ET_3_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2091107",
+   "mpn": "DG0U7ET",
+   "title": "HP EliteBook 8 G2i Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-8-g2i-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dg0u7et/version.asp",
+   "price": 1593.97,
+   "wasPrice": 2552.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/DG0U7ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2084370",
+   "mpn": "DF8E1ET",
+   "title": "HP EliteBook 8 G2i Intel Core Ultra 5 325 32GB RAM 256GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-g2i-intel-core-ultra-5-325-32gb-ram-256gb-ssd-14-inch-window-df8e1et/version.asp",
+   "price": 1389.97,
+   "wasPrice": 1568.36,
+   "image": "https://www.laptopsdirect.co.uk/Images/DF8E1ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2091095",
+   "mpn": "DG0W8ET",
+   "title": "HP EliteBook 8 G2i Intel Core Ultra 5 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-8-g2i-14-inch-notebook-next-gen-ai-pc-14-quot-windows-11-pro-dg0w8et/version.asp",
+   "price": 1779.97,
+   "wasPrice": 3259.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DG0W8ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2088526",
    "mpn": "DG0W5ET",
    "title": "HP EliteBook 8 G2i Intel Core Ultra 5 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/elitebook-8-g2i-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dg0w5et/version.asp",
    "price": 1909.97,
+   "wasPrice": 3319.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DG0W5ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2088483",
+   "mpn": "DG1K6ET",
+   "title": "HP EliteBook 8 G2i Intel Core Ultra 5 32GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-8-g2i-16-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dg1k6et/version.asp",
+   "price": 1764.97,
+   "wasPrice": 2404.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DG1K6ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2088582",
+   "mpn": "DE9F4ET",
+   "title": "HP EliteBook 8 G2i Intel Core Ultra 7 32GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-8-g2i-16-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-de9f4et/version.asp",
+   "price": 1972.97,
+   "wasPrice": 3458.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/DE9F4ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2265,33 +2292,44 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2088582",
-   "mpn": "DE9F4ET",
-   "title": "HP EliteBook 8 G2i Intel Core Ultra 7 32GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/elitebook-8-g2i-16-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-de9f4et/version.asp",
-   "price": 1972.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DE9F4ET_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2724026",
    "mpn": "DE8X7ET",
    "title": "HP EliteBook 8 G2i Next Gen AI PC Intel Core Ultra 7 16GB RAM 512GB SSD 14 Inch windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-g2i-laptop-de8x7et/version.asp",
    "price": 1724.97,
+   "wasPrice": 1974.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DE8X7ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2720711",
-   "mpn": "DG0W6ET",
-   "title": "HP EliteBook 8 G2i Next Gen AI PC Intel Core Ultra 7 32GB RAM 512GB SSD 14 Inch windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-g2i-laptop-dg0w6et/version.asp",
-   "price": 2199.97,
-   "wasPrice": 2653.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DG0W6ET_1_Classic.jpg?v=1",
+   "sku": "2080449",
+   "mpn": "D89RTET",
+   "title": "HP EliteBook 8 Intel Core Ultra 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-intel-core-ultra-7-16gb-ram-512gb-ssd-14-inch-windows-11-pro-d89rtet/version.asp",
+   "price": 1579.97,
+   "wasPrice": 1907.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/D63XBET_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2060765",
+   "mpn": "CK7R0ET",
+   "title": "HP EliteBook 8 Intel Core Ultra 7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-8-intel-core-ultra-7-32gb-ram-512gb-ssd-14-inch-windows-11-pro-ck7r0et/version.asp",
+   "price": 1844.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/CK7R0ET_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2068211",
+   "mpn": "CP7Q4ET",
+   "title": "HP EliteBook X Flip 32GB RAM 2TB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/intel--u7-268v--32-gb--2-tb--14--windows-11-pro-cp7q4et/version.asp",
+   "price": 2934.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/CP7Q4ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2301,6 +2339,7 @@
    "title": "HP EliteBook X Flip G2i Copilot+ PC Intel Core Ultra 7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Convertible Touchscreen Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-elitebook-x-flip-g2i-14-inch-laptop-dj5p0et/version.asp",
    "price": 2659.97,
+   "wasPrice": 4969.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DJ5P0ET_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -2311,19 +2350,8 @@
    "title": "HP EliteBook X Flip G2i Copilot+ PC Intel Core Ultra X7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Convertible Touchscreen Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-elitebook-x-flip-g2i-copilot-pc-intel-core-ultra-x7-32gb-ram-512gb-ssd-d82phet/version.asp",
    "price": 2509.97,
-   "wasPrice": 4624.97,
+   "wasPrice": 3919.97,
    "image": "https://www.laptopsdirect.co.uk/Images/D82PHET_1_Classic.jpg?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2085827",
-   "mpn": "DG3Q2ET",
-   "title": "HP EliteBook X Flip G2i Intel Core Ultra 7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Touchscreen Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-x-flip-g2i-intel-core-ultra-7-32gb-ram-512gb-ssd-14-inch-windo-dg3q2et/version.asp",
-   "price": 2649.97,
-   "wasPrice": 5177.75,
-   "image": "https://www.laptopsdirect.co.uk/Images/DG3Q2ET_1_Classic_20900455.jpg?v=5",
    "inStock": true
   },
   {
@@ -2333,6 +2361,7 @@
    "title": "HP EliteBook X G1a Intel Core Ultra 7 32GB RAM 1TB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/elitebook-x-g1i-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-ck7q7et/version.asp",
    "price": 2257.97,
+   "wasPrice": 2899.97,
    "image": "https://www.laptopsdirect.co.uk/Images/CK7Q7ET_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -2349,6 +2378,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2047375",
+   "mpn": "CK7Q2ET",
+   "title": "HP EliteBook X G1i Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/elitebook-x-g1i-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-ck7q2et/version.asp",
+   "price": 1529.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/CK7Q2ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2726679",
    "mpn": "DE7T7ET",
    "title": "HP EliteBook X G2a Copilot+ PC AMD Ryzen AI 7 PRO 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
@@ -2359,23 +2398,24 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2724421",
-   "mpn": "DE7T2ET",
-   "title": "HP EliteBook X G2i Copilot+ PC Intel Core Ultra 5 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-x-g2i-copilot-pc-intel-core-ultra-5-32gb-ram-512gb-ssd-14-inc-de7t2et/version.asp",
-   "price": 4324.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DE7T2ET_1_Classic.jpg?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2100376",
    "mpn": "DE7T3ET",
    "title": "HP EliteBook X G2i Copilot+ PC Intel Core Ultra 7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-elitebook-x-g2i-14-inch-laptop-de7t3et/version.asp",
    "price": 2354.97,
-   "wasPrice": 2564.98,
+   "wasPrice": 2507.98,
    "image": "https://www.laptopsdirect.co.uk/Images/DE7T3ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2719429",
+   "mpn": "DV0G7ET",
+   "title": "HP EliteBook X G2q Copilot+ PC Qualcomm Snapdragon 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-elitebook-x-g2q-laptop-dv0g7et/version.asp",
+   "price": 2234.97,
+   "wasPrice": 3119.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/DV0G7ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2386,16 +2426,6 @@
    "url": "https://www.laptopsdirect.co.uk/elitebook-x-g1i-14-inch-notebook-next-gen-ai-pc-14-quot-windows-11-pro-b66tvat/version.asp",
    "price": 2617.97,
    "image": "https://www.laptopsdirect.co.uk/Images/B66TVAT_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1977987",
-   "mpn": "A2RZ8EA",
-   "title": "HP Envy Elite X360 AMD Ryzen 5 16GB RAM 512GB SSD 14 Inch Windows 11 Touchscreen Convertible Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-elite-amd-ryzen-5-16gb-ram-512gb-ssd-14-inch-windows-11-home-laptop-a2rz8ea/version.asp",
-   "price": 799.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/A2RZ8EA_1_Classic.jpg?v=23",
    "inStock": true
   },
   {
@@ -2433,6 +2463,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1996343",
+   "mpn": "5P9R7EA",
+   "title": "HP Fortis G1i 14 Intel N Series 4GB RAM 32GB eMMc 14 Inch Chromebook",
+   "url": "https://www.laptopsdirect.co.uk/hp-fortis-g1i-14-intel-n-series-4gb-ram-32gb-emmc-14-inch-chromebook-5p9r7ea/version.asp",
+   "price": 354.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/5P9R7EA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2001805",
    "mpn": "5P9R9EA",
    "title": "HP Fortis G1m MediaTek Kompanio 4GB RAM 32GB eMMc 11.6 Inch Chromebook",
@@ -2440,37 +2480,6 @@
    "price": 264.97,
    "wasPrice": 563.96,
    "image": "https://www.laptopsdirect.co.uk/Images/5P9R9EA_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1977978",
-   "mpn": "A2SA7EA",
-   "title": "HP Intel Core i3 4GB RAM 128GB SSD 14 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-intel-core-i3-4gb-ram-128gb-ssd-14-inch-windows-11-home-laptop-a2sa7ea/version.asp",
-   "price": 299.98,
-   "wasPrice": 335.4,
-   "image": "https://www.laptopsdirect.co.uk/Images/A2SA7EA_1_Classic.jpg?v=23",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2068694",
-   "mpn": "BG3G9EA",
-   "title": "HP OmniBook Intel Core Ultra 5 16GB RAM 1TB SSD 16 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-omnibook-intel-core-ultra-5-16gb-ram-1tb-ssd-16-inch-windows-11-laptop-bg3g9ea/version.asp",
-   "price": 939.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/BG3G9EA_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2068688",
-   "mpn": "BG3G7EA",
-   "title": "HP OmniBook Intel Core Ultra 5 16GB RAM 512GB SSD 16 Inch Touchscreen Convertible Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-omnibook-x-flipngai-16-as0004na-copilot-pc-intel-core-ultra-5-16gb-ram-bg3g7ea/version.asp",
-   "price": 1114.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/BG3G7EA_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2486,6 +2495,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2726737",
+   "mpn": "BL2A5EA",
+   "title": "HP Pavilion SE 14-ep0532sa Intel Core i7 8GB RAM 512GB SSD 14 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-pavilion-se-14-ep0532sa-intel-core-i7-8gb-ram-512gb-ssd-14-inch-windows-bl2a5ea/version.asp",
+   "price": 599.97,
+   "wasPrice": 649.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/BS8C0EA_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2067473",
    "mpn": "B9YU1ET",
    "title": "HP ProBook 4 AI AMD Ryzen 7 24GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
@@ -2497,6 +2517,26 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2046866",
+   "mpn": "C81RKES",
+   "title": "HP ProBook 4 AMD Ryzen 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-amd-ryzen-5-16gb-ram-512gb-ssd-16-inch-windows-11-pro-laptop-c81rkes/version.asp",
+   "price": 939.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/A23PTEA_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2046868",
+   "mpn": "C81SDES",
+   "title": "HP ProBook 4 AMD Ryzen 5 8GB RAM 256GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-amd-ryzen-5-8gb-ram-256gb-ssd-14-inch-windows-11-pro-laptop-c81sdes/version.asp",
+   "price": 832.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/C81R6ES_1_Classic.jpg?v=8",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2076531",
    "mpn": "A23PTEA",
    "title": "HP ProBook 4 AMD Ryzen 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
@@ -2504,17 +2544,6 @@
    "price": 1099.97,
    "wasPrice": 1205.99,
    "image": "https://www.laptopsdirect.co.uk/Images/A23PTEA_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2067996",
-   "mpn": "C81RLES",
-   "title": "HP ProBook 4 G1a AMD Ryzen 5 8GB RAM 256GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g1a-amd-ryzen-5-8gb-ram-256gb-ssd-16-inch-windows-11-pro-lapto-c81rles/version.asp",
-   "price": 698.97,
-   "wasPrice": 832.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/C81R6ES_1_Classic.jpg?v=8",
    "inStock": true
   },
   {
@@ -2540,23 +2569,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2089325",
-   "mpn": "D74S4ET",
-   "title": "HP ProBook 4 G1i AI PC Intel Core Ultra 5 16GB RAM 1TB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g1i-ai-pc-intel-core-ultra-5-16gb-ram-1tb-ssd-16-inch-windows-d74s4et/version.asp",
-   "price": 1358.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/D74S4ET_1_Classic.jpg?v=1",
+   "sku": "2057114",
+   "mpn": "CK8X1ET",
+   "title": "HP ProBook 4 G1i Intel Core Ultra 5 24GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g1i-laptop-ck8x1et/version.asp",
+   "price": 1409.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/CK8X1ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2089326",
-   "mpn": "D74TLEA",
-   "title": "HP ProBook 4 G1i AI PC Intel Core Ultra 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g1i-ai-pc-intel-core-ultra-5-16gb-ram-512gb-ssd-16-inch-window-d74tlea/version.asp",
-   "price": 1204.97,
-   "wasPrice": 1269.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/D74TLEA_1_Classic.jpg?v=1",
+   "sku": "2715712",
+   "mpn": "D3NL1EA",
+   "title": "HP ProBook 4 G1i Intel Core Ultra 5 32GB RAM 1TB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g1i-laptop-d3nl1ea/version.asp",
+   "price": 1933.97,
+   "wasPrice": 2047.19,
+   "image": "https://www.laptopsdirect.co.uk/Images/D3NL1EA_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2572,22 +2601,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2723695",
-   "mpn": "DW1Y9ET",
-   "title": "HP ProBook 4 G2i 14 AI PC Intel Core 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g2i-laptop-dw1y9et/version.asp",
-   "price": 1167.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DW1Y9ET_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2720709",
-   "mpn": "DW1Z2ET",
-   "title": "HP ProBook 4 G2i 14 AI PC Intel Core 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g2i-14-ai-pc-intel-core-7-350-laptop-dw1z2et/version.asp",
-   "price": 1279.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DW1Z2ET_1_Classic.jpg?v=1",
+   "sku": "2063139",
+   "mpn": "CJ9L4AT",
+   "title": "HP ProBook 4 G1iR Intel Core 5 24GB RAM 256GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g1ir-intel-core-5-24gb-ram-256gb-ssd-16-inch-windows-11-pro-la-cj9l4at/version.asp",
+   "price": 929.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/CJ9L4AT_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2597,6 +2616,7 @@
    "title": "HP ProBook 4 G2i 16 AI PC Intel Core 7 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g2i-laptop-dw1x9et/version.asp",
    "price": 1313.97,
+   "wasPrice": 1769.98,
    "image": "https://www.laptopsdirect.co.uk/Images/DW1X9ET_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -2643,16 +2663,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2051152",
-   "mpn": "B3AC6AT",
-   "title": "HP ProBook 4 Intel Core 5 8GB RAM 256GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-probook-4-g1ir-intel-core-5-120u-8gb-ram-256gb-ssd-14-inch-windows-11-pr-b3ac6at/version.asp",
-   "price": 752.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/B3AC6AT_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2046724",
    "mpn": "C81R8ES",
    "title": "HP ProBook 4 Intel Core 5 8GB RAM 256GB SSD 16 Inch Windows 11 Pro Laptop",
@@ -2674,16 +2684,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2012786",
-   "mpn": "B39W5AT",
-   "title": "HP ProBook 4 Qualcomm Snapdragon 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/probook-4-g1q-14-inch-notebook-next-gen-ai-pc-14-quot-windows-11-pro-qu-b39w5at/version.asp",
-   "price": 1199,
-   "image": "https://www.laptopsdirect.co.uk/Images/B39W5AT_1_Classic.jpg?v=28",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2016299",
    "mpn": "AL0A4AT",
    "title": "HP ProBook 445 G10 AMD Ryzen 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
@@ -2694,12 +2694,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2016048",
-   "mpn": "B2NB4ES",
-   "title": "HP ProBook 445 G10 AMD Ryzen 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-probook-445-g10-amd-ryzen-5-16gb-ram-512gb-ssd-14-inch-windows-11-pro-la-b2nb4es/version.asp",
-   "price": 712.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/B2NB4ES_1_Classic.jpg?v=1",
+   "sku": "1955421",
+   "mpn": "9Y6R9AT",
+   "title": "HP ProBook 455 G9 AMD Ryzen 5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-probook-455-amd-ryzen-5-8gb-ram-256gb-ssd-15.6-inch-windows-11-laptop-9y6r9at/version.asp",
+   "price": 599.97,
+   "wasPrice": 647.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/9Y6R9AT_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2091352",
+   "mpn": "CL8V6ET#RP-UK",
+   "title": "HP ProBook 460 Intel Core Ultra 7 48GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-probook-460-intel-core-ultra-7-48gb-ram-512gb-ssd-windows-11-pro-laptop-cl8v6et-rp-uk/version.asp",
+   "price": 1249.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/CL8V6ETRP-UK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -2709,6 +2720,7 @@
    "title": "HP Z8G2I14 U7-356H 14IN 32GB 1TB Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-z8g2i14-u7-356h-14in-32gb-1tb-laptop-dh8g5et/version.asp",
    "price": 2394.97,
+   "wasPrice": 2514.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DH8G5ET_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -2719,29 +2731,39 @@
    "title": "HP Z8G2I14 U9-386H 14IN 64GB 1TB Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-z8g2i14-u9-386h-14in-64gb-1tb-laptop-dh8g6et/version.asp",
    "price": 3309.97,
+   "wasPrice": 3504.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DH8G6ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2100433",
-   "mpn": "DM5T5ET",
-   "title": "HP ZBook 8 G2a AMD Ryzen AI 7 PRO 32GB RAM 1TB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-zbook-8-g2a-amd-ryzen-ai-7-pro-32gb-ram-1tb-ssd-14-inch-windows-11-pro-l-dm5t5et/version.asp",
-   "price": 1999.97,
-   "wasPrice": 4253.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/DM5T5ET_1_Classic.jpg?v=3",
+   "sku": "2716644",
+   "mpn": "DM5S9ET",
+   "title": "HP Z8G2I16 U7-356H 16IN 32GB 1TB Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-z8g2i16-u7-356h-16in-32gb-1tb-laptop-dm5s9et/version.asp",
+   "price": 2429.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DM5S9ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2100248",
-   "mpn": "DH8G8ET",
-   "title": "HP ZBook 8 G2i Intel Core Ultra 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-zbook-8-g2i-intel-core-ultra-7-16gb-ram-512gb-ssd-14-inch-windows-11-pro-dh8g8et/version.asp",
-   "price": 1954.97,
-   "wasPrice": 3392.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/DH8G8ET_1_Classic.jpg?v=1",
+   "sku": "2716646",
+   "mpn": "DM5T0ET",
+   "title": "HP Z8G2I16 U9-386H 16IN 64GB 1TB Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-z8g2i16-u9-386h-16in-64gb-1tb-laptop-dm5t0et/version.asp",
+   "price": 3323.97,
+   "wasPrice": 3518.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/DM5T0ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2714513",
+   "mpn": "DM5U8ET",
+   "title": "HP ZBook 8 G2i Intel Core Ultra 7 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/hp-zbook-8-g2i-intel-core-ultra-7-16gb-ram-512gb-ssd-16-inch-windows-11-pro-dm5u8et/version.asp",
+   "price": 4384.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DM5U8ET_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -2751,6 +2773,7 @@
    "title": "HP ZBook 8 G2i Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-zbook-8-g2i-laptop-ds3x4at/version.asp",
    "price": 2759.97,
+   "wasPrice": 4633.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DS3X4AT_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -2763,6 +2786,28 @@
    "price": 2033.97,
    "wasPrice": 2172.97,
    "image": "https://www.laptopsdirect.co.uk/Images/B72U3ET_1_Classic.jpg?v=22",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2038664",
+   "mpn": "98M23ET",
+   "title": "HP ZBook Intel Core Ultra 7 32GB RAM 1TB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/zbook-fury-g1i-16-inch-mobile-workstation-pc-data-science-16-quot-win-98m23et/version.asp",
+   "price": 3629.97,
+   "wasPrice": 5979.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/98M23ET_1_Classic.jpg?v=21",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2038671",
+   "mpn": "98M24ET",
+   "title": "HP ZBook Intel Core Ultra 7 32GB RAM 1TB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/zbook-fury-g1i-16-inch-mobile-workstation-pc-data-science-16-quot-win-98m24et/version.asp",
+   "price": 6189.97,
+   "wasPrice": 6599.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/98M24ET_1_Classic.jpg?v=27",
    "inStock": true
   },
   {
@@ -2800,12 +2845,34 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2017104",
-   "mpn": "A3ZH4ET",
-   "title": "HP ZBook Ultra AMD Ryzen AI Max Pro 128GB RAM 2TB SSD 14 Inch Touchscreen Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/zbook-ultra-14-inch-g1a-mobile-workstation-pc-wolf-pro-security-edition-a3zh4et/version.asp",
-   "price": 10574.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/A3ZH4ET_1_Classic.jpg?v=45",
+   "sku": "2046727",
+   "mpn": "98M31ET",
+   "title": "HP ZBook Intel Core Ultra 9 64GB RAM 1TB SSD RTX PRO 3000 Blackwell 60Hz 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/zbook-fury-g1i-16-inch-mobile-workstation-pc-data-science-16-quot-win-98m31et/version.asp",
+   "price": 5199.97,
+   "wasPrice": 6049.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/98M31ET_1_Classic.jpg?v=24",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1968345",
+   "mpn": "98L13ET",
+   "title": "HP ZBook Studio Intel Core Ultra 9 64GB RAM 1TB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/zbook-studio-16-inch-g11-mobile-workstation-pc-data-science-16-quot-w-98l13et/version.asp",
+   "price": 4908.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/98L12ET_1_Classic.jpg?v=38",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2017898",
+   "mpn": "9N840AT",
+   "title": "HP ZBook Ultra AMD Ryzen AI Max+ PRO 32GB RAM 1TB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/zbook-ultra-14-inch-g1a-mobile-workstation-pc-data-science-14-quot-wi-9n840at/version.asp",
+   "price": 1899.97,
+   "wasPrice": 5223.59,
+   "image": "https://www.laptopsdirect.co.uk/Images/A3ZH3ET_1_Classic.jpg?v=43",
    "inStock": true
   },
   {
@@ -2832,12 +2899,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2721345",
-   "mpn": "DM5Y7ET",
+   "sku": "2716641",
+   "mpn": "DM5Y5ET",
    "title": "HP ZBook X G2i Copilot+ PC Intel Core Ultra 9 32GB RAM 1TB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/hp-zbook-x-g2i-copilot-pc-intel-core-ultra-9-32gb-ram-1tb-ssd-16-inch-wind-dm5y7et/version.asp",
-   "price": 9098.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DM5Y7ET_1_Classic.jpg?v=1",
+   "url": "https://www.laptopsdirect.co.uk/hp-zbook-x-g2i-copilot-pc-intel-core-ultra-9-32gb-ram-1tb-ssd-16-inch-wind-dm5y5et/version.asp",
+   "price": 3958.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DM5Y5ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2847,18 +2914,8 @@
    "title": "HP ZBook X G2i Intel Core Ultra 7 356H 32GB RAM 1TB SSD NVIDIA RTX PRO 500 Blackwell 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/hp-zbxg2i16-u7-356h-16in-32gb-1tb-laptop-dm5y9et/version.asp",
    "price": 2429.97,
-   "wasPrice": 5159.98,
+   "wasPrice": 5479.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DM5Y9ET_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2060479",
-   "mpn": "82N40054UK",
-   "title": "Lenovo IdeaPad 3 Intel Pentium 8GB RAM 128GB eMMc 15.6 Inch Chromebook",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-ideapad-3-cb-15ijl6-82n4-intel-pentium-silver-n6000-up-to-3.3-82n40054uk/version.asp",
-   "price": 367.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/82N40054UK_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -2870,16 +2927,6 @@
    "price": 449.97,
    "wasPrice": 479.98,
    "image": "https://www.laptopsdirect.co.uk/Images/82XN00ERUK_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2041644",
-   "mpn": "83K0007KUK",
-   "title": "Lenovo IdeaPad Slim 3 Intel Core i5 8GB RAM 512GB SSD 14 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-83k0007kuk-for-gbp442.65exc-lenovo-ideapad-slim-3-14irh10-14-in-83k0007kuk/version.asp",
-   "price": 579.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/82XQ00QJUK_1_Classic.jpg?v=19",
    "inStock": true
   },
   {
@@ -2905,17 +2952,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1995346",
-   "mpn": "83JG0008UK",
-   "title": "Lenovo LOQ 15AHP10 AMD Ryzen 5 16GB RAM 512GB SSD GeForce RTX 5050 144Hz 15.6 Inch Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-loq-15ahp10-16gb-ram-512gb-ssd-geforce-rtx-5050-15.6-inch-gaming-lap-83jg0008uk/version.asp",
-   "price": 1069.97,
-   "wasPrice": 1209.89,
-   "image": "https://www.laptopsdirect.co.uk/Images/83JG0008UK_1_Classic.png?v=25",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1995347",
    "mpn": "83JE000CUK",
    "title": "Lenovo LOQ 15IRX10 Intel Core i5 16GB RAM 1TB SSD RTX 5050 15.6 Inch Windows 11 Home Gaming Laptop",
@@ -2927,12 +2963,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2050436",
-   "mpn": "83JG000BUK",
-   "title": "Lenovo LOQ AMD Ryzen 7 16GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-loq-amd-ryzen-7-16gbbram-512gb-ssd-15.6-inch-windows-11-laptop-83jg000buk/version.asp",
-   "price": 1694.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/83JG000BUK_1_Classic.jpg?v=5",
+   "sku": "2077429",
+   "mpn": "21MV00HAUK",
+   "title": "Lenovo ThinkBook 14 AMD Ryzen 5 8GB RAM 256GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-amd-ryzen-5-8gb-ram-256gb-ssd-14-inch-windows-11-pro-laptop-21mv00hauk/version.asp",
+   "price": 727,
+   "image": "https://www.laptopsdirect.co.uk/Images/21MV00HAUK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -2942,8 +2978,28 @@
    "title": "Lenovo ThinkBook 14 G7 AMD Ryzen 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/-21mv00hbuk/version.asp",
    "price": 999.97,
-   "wasPrice": 1074.97,
    "image": "https://www.laptopsdirect.co.uk/Images/21MV00HBUK_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2721253",
+   "mpn": "21MV00CQ-CTO-RP",
+   "title": "Lenovo ThinkBook 14 G7 ARP AMD Ryzen 7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkbook-14-g7-arp-amd-ryzen-7-32gb-ram-512gb-ssd-14-inch-windows-1-21mv00cq-cto-rp/version.asp",
+   "price": 1099.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21MV00CQ-CTO-RP_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2093325",
+   "mpn": "21UX004DUK",
+   "title": "Lenovo ThinkBook 14 G9 Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkbook-14-g9-intel-core-ultra-5-16gb-ram-512gb-ssd-14-inch-window-21ux004duk/version.asp",
+   "price": 969.97,
+   "wasPrice": 1145.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/21UX004DUK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -2989,6 +3045,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2077430",
+   "mpn": "21MW00D2UK",
+   "title": "Lenovo ThinkBook 16 AMD Ryzen 5 16GB RAM 256GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkbook-14-amd-ryzen-5-8gb-ram-512gb-ssd-14-inch-windows-11-pro-la-21mw00d2uk/version.asp",
+   "price": 749,
+   "wasPrice": 939.59,
+   "image": "https://www.laptopsdirect.co.uk/Images/21MW00D2UK_1_Classic.jpg?v=6",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2098349",
    "mpn": "21MW008C-RP-UK",
    "title": "Lenovo ThinkBook 16 G7 ARP AMD Ryzen 7 32GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
@@ -2999,11 +3066,33 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2721254",
+   "mpn": "21SK00K7-CTO-RP",
+   "title": "Lenovo ThinkBook 16 G8 IAL Intel Core Ultra 9 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkbook-16-g8-ial-intel-core-ultra-9-16gb-ram-512gb-ssd-16-inch-wi-21sk00k7-cto-rp/version.asp",
+   "price": 1149.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21SK00K7-CTO-RP_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2097612",
+   "mpn": "21SKS07U00",
+   "title": "Lenovo ThinkBook 16 G8 Intel Core Ultra 5 225U 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkbook-16-g8-intel-core-ultra-5-225u-16gb-ram-512gb-ssd-16-inch-w-21sks07u00/version.asp",
+   "price": 988.97,
+   "wasPrice": 1038.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21SKS07U00_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2719448",
    "mpn": "21UR001VUK",
    "title": "Lenovo ThinkBook 16 G9 Intel Core Ultra 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/-21ur001vuk/version.asp",
    "price": 1042.97,
+   "wasPrice": 1146.67,
    "image": "https://www.laptopsdirect.co.uk/Images/21UX004DUK_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -3041,13 +3130,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2077916",
-   "mpn": "21U2002SUK",
-   "title": "Lenovo ThinkPad E14 Gen 7 Copilot+ PC Intel Core Ultra 5 226V 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e14-gen-7-copilot-pc-intel-core-ultra-5-226v-16gb-ram-512g-21u2002suk/version.asp",
-   "price": 969.97,
-   "wasPrice": 1095.58,
-   "image": "https://www.laptopsdirect.co.uk/Images/21U2002SUK_1_Classic.jpg?v=3",
+   "sku": "2078373",
+   "mpn": "21T00066UK",
+   "title": "Lenovo ThinkPad E14 Gen 7 AMD Ryzen 5 16GB RAM 256GB SSD Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e14-gen-7-amd-ryzen-5-16gb-ram-256gb-ssd-windows-11-pro-lap-21t00066uk/version.asp",
+   "price": 979.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/A121T00066UK_1_Classic.jpg?v=4",
    "inStock": true
   },
   {
@@ -3068,17 +3156,19 @@
    "title": "Lenovo ThinkPad E14 Gen 8 Copilot+ PC Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e14-gen-8-copilot-pc-intel-core-ultra-5-16gb-ram-512gb-ssd-21y60044uk/version.asp",
    "price": 992.97,
+   "wasPrice": 1269.97,
    "image": "https://www.laptopsdirect.co.uk/Images/21Y60044UK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2097619",
-   "mpn": "21SUS3SG00",
-   "title": "Lenovo ThinkPad E16 AMD Ryzen 5 220 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e16-amd-ryzen-5-220-16gb-ram-512gb-ssd-16-inch-windows-11-p-21sus3sg00/version.asp",
-   "price": 992.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/21SUS3SG00_1_Classic.jpg?v=3",
+   "sku": "2093105",
+   "mpn": "21Y60043UK",
+   "title": "Lenovo ThinkPad E14 Gen 8 Copilot+ PC Intel Core Ultra 7 355 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e14-gen-8-copilot-pc-intel-core-ultra-7-355-16gb-ram-512gb-21y60043uk/version.asp",
+   "price": 1254.97,
+   "wasPrice": 1352.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/21Y60043UK_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -3088,7 +3178,7 @@
    "title": "Lenovo ThinkPad E16 Copilot+ PC Intel Core Ultra 5 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e16-copilot-pc-intel-core-ultra-5-16gb-ram-512gb-ssd-16-in-22ay0032uk/version.asp",
    "price": 969.97,
-   "wasPrice": 1144.79,
+   "wasPrice": 1200,
    "image": "https://www.laptopsdirect.co.uk/Images/22AY0032UK_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -3099,18 +3189,8 @@
    "title": "Lenovo ThinkPad E16 Gen 3 AMD Ryzen 7 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e16-gen-3-amd-ryzen-7-16gb-ram-512gb-ssd-16-inch-windows-11-21st0060uk/version.asp",
    "price": 1179.97,
-   "wasPrice": 1244.96,
+   "wasPrice": 1239.97,
    "image": "https://www.laptopsdirect.co.uk/Images/21ST0060UK_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2097623",
-   "mpn": "21SSS7HS00",
-   "title": "Lenovo ThinkPad E16 Gen 3 Intel Core Ultra 5 225U 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e16-gen-3-intel-core-ultra-5-225u-16gb-ram-512gb-ssd-16-inc-21sss7hs00/version.asp",
-   "price": 1039.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/21SSS7HS00_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -3126,23 +3206,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2084928",
-   "mpn": "22AY003DUK",
-   "title": "Lenovo ThinkPad E16 Intel Core Ultra 7 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e16-intel-core-ultra-7-16gb-ram-512gb-ssd-16-inch-windows-1-22ay003duk/version.asp",
-   "price": 1099.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/22AY003DUK_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2077436",
-   "mpn": "21LB0032UK",
-   "title": "Lenovo ThinkPad L13 G5 Intel Core Ultra 5 32GB RAM 256GB SSD 13.3 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-l13-gen-5-intel-intel-core-ultra-5-135u-laptop-33.8-cm-1-21lb0032uk/version.asp",
-   "price": 849.97,
-   "wasPrice": 899,
-   "image": "https://www.laptopsdirect.co.uk/Images/21LB0032UK_1_Classic.jpg?v=1",
+   "sku": "2092453",
+   "mpn": "21YC006LUK",
+   "title": "Lenovo ThinkPad E16 Gen 4 Copilot+ PC Intel Core Ultra 7 355 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-e16-gen-4-copilot-pc-intel-core-ultra-7-355-16gb-ram-512gb-21yc006luk/version.asp",
+   "price": 1369.97,
+   "wasPrice": 1465.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21YC006LUK_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -3158,11 +3228,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2714975",
-   "mpn": "21QT0070UK",
-   "title": "Lenovo ThinkPad P14s Gen 6 Intel Core Ultra 7 16GB RAM 512GB SSD NVIDIA RTX PRO 500 Blackwell 14.5 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-p14s-gen-6-intel-core-ultra-7-16gb-ram-512gb-ssd-nvidia-rtx-21qt0070uk/version.asp",
-   "price": 1782.97,
+   "sku": "2074491",
+   "mpn": "21QL006PUK",
+   "title": "Lenovo ThinkPad P14s Gen 6 AMD Ryzen AI 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-p14s-gen-6-amd-ryzen-ai-7-16gb-ram-512gb-ssd-14-inch-window-21ql006puk/version.asp",
+   "price": 1399.97,
+   "wasPrice": 1511.98,
    "image": "https://www.laptopsdirect.co.uk/Images/21QL006PUK_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -3183,7 +3254,7 @@
    "title": "Lenovo ThinkPad P14s Gen 7 Copilot+ PC Intel Core Ultra 7 32GB RAM 512GB SSD 14.5 Inch NVIDIA RTX PRO 500 Blackwell Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-p14s-gen-7-intel-reg-core-153-ultra-7-356h-e-cores-up-to-21xj002duk/version.asp",
    "price": 2489.97,
-   "wasPrice": 2644.97,
+   "wasPrice": 2932.97,
    "image": "https://www.laptopsdirect.co.uk/Images/21XJ002DUK_1_classic.jpg?v=3",
    "inStock": true
   },
@@ -3200,12 +3271,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2080676",
-   "mpn": "21FA006KUK",
+   "sku": "2080677",
+   "mpn": "21FA006JUK",
    "title": "Lenovo ThinkPad P16 Intel Core i7 32GB RAM 512GB SSD RTX 1000 16 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-p16-intel-core-i7-32gb-ram-512gb-ssd-rtx-1000-16-inch-windo-21fa006kuk/version.asp",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-p16-intel-core-i7-32gb-ram-512gb-ssd-16-inch-windows-11-pro-21fa006juk/version.asp",
    "price": 1999.97,
-   "wasPrice": 2099.98,
+   "wasPrice": 2199,
    "image": "https://www.laptopsdirect.co.uk/Images/21FA006KUK_1_Classic.jpg?v=10",
    "inStock": true
   },
@@ -3237,7 +3308,19 @@
    "title": "Lenovo ThinkPad P16s Gen 4 Intel Core Ultra 7 16GB RAM 512GB SSD NVIDIA RTX PRO 500 Blackwell 16 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-p16s-gen-4-intel-core-ultra-7-16gb-ram-512gb-ssd-nvidia-rtx-21qv006muk/version.asp",
    "price": 1783.97,
+   "wasPrice": 1899.97,
    "image": "https://www.laptopsdirect.co.uk/Images/21QR0057UK_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2094336",
+   "mpn": "21XE002YUK",
+   "title": "Lenovo ThinkPad P16s Gen 5 Intel Core Ultra 7 356H 64GB RAM 1TB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-tp-p16s-g5-u7-356h-rtx1000-64gb-1tb-w11p-21xe002yuk/version.asp",
+   "price": 3522.97,
+   "wasPrice": 4022.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/21XE002YUK_1_classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -3283,13 +3366,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2710521",
-   "mpn": "21WN006UUK",
-   "title": "Lenovo ThinkPad T14 Gen 7 Intel Core Ultra 5 325 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/-21wn006uuk/version.asp",
-   "price": 1699,
-   "wasPrice": 2000,
-   "image": "https://www.laptopsdirect.co.uk/Images/21WN006UUK_1_Classic.jpg?v=5",
+   "sku": "2720017",
+   "mpn": "21WN006WUK",
+   "title": "Lenovo ThinkPad T14 Gen 7 Intel Core Ultra 7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-t14-gen-7-intel-core-ultra-7-32gb-ram-512gb-ssd-14-inch-win-21wn006wuk/version.asp",
+   "price": 1938.97,
+   "wasPrice": 2111.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/21WN006WUK_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -3305,12 +3388,33 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2084975",
-   "mpn": "21F8007HUK",
+   "sku": "2080347",
+   "mpn": "21ML00EUUK",
+   "title": "Lenovo ThinkPad T14 Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-t14-intel-core-ultra-5-16gb-ram-512gb-ssd-14-inch-windows-1-21ml00euuk/version.asp",
+   "price": 999.97,
+   "wasPrice": 1299.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21ML00EUUK_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2081467",
+   "mpn": "21QG0078UK",
+   "title": "Lenovo ThinkPad T14 Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-t14-intel-core-ultra-5-16gb-ram-512gb-ssd-14-inch-windows-1-21qg0078uk/version.asp",
+   "price": 1319.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21QC0055UK_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2080349",
+   "mpn": "21F8007LUK",
    "title": "Lenovo ThinkPad T14s AMD Ryzen 5 PRO 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-t14s-amd-ryzen-5-pro-16gb-ram-512gb-ssd-14-inch-windows-11-21f8007huk/version.asp",
-   "price": 919.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/21F8007HUK_1_Classic.jpg?v=5",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-t14s-amd-ryzen-5-pro-16gb-ram-512gb-ssd-14-inch-windows-11-21f8007luk/version.asp",
+   "price": 899.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21R10043UK_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -3326,22 +3430,44 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2724096",
-   "mpn": "21F8007NUK",
-   "title": "Lenovo ThinkPad T14s Gen 4 AMD Ryzen 5 PRO 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-t14s-gen-4-amd-ryzen-5-pro-16gb-ram-512gb-ssd-14-inch-windo-21f8007nuk/version.asp",
-   "price": 799.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/21F8007MUK_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2724098",
    "mpn": "21F8007PUK",
    "title": "Lenovo ThinkPad T14s Gen 4 AMD Ryzen 5 PRO 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-t14s-gen-4-amd-ryzen-5-pro-16gb-ram-512gb-ssd-14-inch-windo-21f8007puk/version.asp",
    "price": 899.97,
    "image": "https://www.laptopsdirect.co.uk/Images/21F8007MUK_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2721757",
+   "mpn": "21F8007MUK",
+   "title": "Lenovo ThinkPad T14s Gen 4 AMD Ryzen 5 PRO 16GB RAM 512GB SSD Windows 11 Pro 14 Inch Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-t14s-gen-4-amd-ryzen-5-pro-16gb-ram-512gb-ssd-windows-11-pr-21f8007muk/version.asp",
+   "price": 849.97,
+   "wasPrice": 899.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/21F8007MUK_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2077920",
+   "mpn": "21QX00HLUK",
+   "title": "Lenovo ThinkPad T14s Gen 6 Copilot + PC Intel Core Ultra 7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-t14s-gen-6-21qx-copilot-pc-intel-core-ultra-7-258v-21qx00hluk/version.asp",
+   "price": 1899.97,
+   "wasPrice": 2105.59,
+   "image": "https://www.laptopsdirect.co.uk/Images/21QX00HLUK_1_Classic.jpg?v=12",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2038915",
+   "mpn": "21R3001BUK",
+   "title": "Lenovo ThinkPad T14s Intel Core Ultra 5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Convertible Touchscreen Laptop",
+   "url": "https://www.laptopsdirect.co.uk/tp-t14s-2in1-g1-ultra5-225u-21r3001buk/version.asp",
+   "price": 1744.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21R3001BUK_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -3366,12 +3492,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2077437",
-   "mpn": "21J3007XUK ",
-   "title": "Lenovo ThinkPad T40 AMD Ryzen 7 PRO 32GB RAM 512GB SSD 13.3 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-x13-gen-4-amd-amd-ryzen-7-7840u-laptop-33.8-cm-13.3-21j3007xuk-/version.asp",
-   "price": 1149.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/21J3007XUK%20_1_Classic.jpg?v=1",
+   "sku": "2089237",
+   "mpn": "21QE004QUK",
+   "title": "Lenovo ThinkPad T16 Intel Core Ultra 7 16GB RAM 512GB SSD 16 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/-21qe004quk/version.asp",
+   "price": 1454.97,
+   "wasPrice": 1643.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/21QE004QUK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -3396,33 +3523,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1942410",
-   "mpn": "21KC005LUK",
-   "title": "Lenovo ThinkPad X1 Carbon Intel Core Ultra 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-x1-carbon-intel-core-ultra-7-16gb-ram-512gb-ssd-14-inch-win-21kc005luk/version.asp",
-   "price": 1849.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/21NS0010UK_1_Classic.png?v=11",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2081466",
    "mpn": "21NS0077UK",
    "title": "Lenovo ThinkPad X1 Carbon Intel Core Ultra 7 32GB RAM 1GB SSD 14 Inch Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-x1-carbon-intel-core-ultra-7-32gb-ram-1gb-ssd-14-inch-windo-21ns0077uk/version.asp",
    "price": 2599.97,
    "image": "https://www.laptopsdirect.co.uk/Images/21NS0010UK_1_Classic.png?v=11",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2093172",
-   "mpn": "21V70021UK",
-   "title": "Lenovo ThinkPad X1 Carbon Intel Core Ultra 7 355 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-x1-carbon-intel-core-ultra-7-355-32gb-ram-512gb-ssd-14-inch-21v70021uk/version.asp",
-   "price": 2399.97,
-   "wasPrice": 3131.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/21V70021UK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -3438,44 +3544,42 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2016951",
+   "mpn": "21Q00057UK",
+   "title": "Lenovo ThinkPad X1 Intel Core Ultra 7 32GB RAM 1TB SSD 14 Inch Touchscreen Convertible Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-x1-intel-core-ultra-7-32gb-ram-1tb-ssd-14-inch-touchscreen-21q00057uk/version.asp",
+   "price": 2459.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21Q0004RUK_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2089239",
+   "mpn": "21NU004DUK",
+   "title": "Lenovo ThinkPad X1 Intel Core Ultra 7 32GB RAM 1TB SSD 14 Inch Windows 11 Pro Convertible Touchscreen Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkpad-x1-2-in-1-gen-10-21nu-copilot-pc-flip-design-intel-c-21nu004duk/version.asp",
+   "price": 2999.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/21NU004DUK_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2027373",
+   "mpn": "21RK004MUK",
+   "title": "Lenovo ThinkPad X13 Intel Core Ultra 5 16GB RAM 512GB SSD Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/-21rk004muk/version.asp",
+   "price": 1449,
+   "image": "https://www.laptopsdirect.co.uk/Images/21RK004MUK_1_Classic.jpg?v=22",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2031021",
    "mpn": "82YX004PUK",
    "title": "Lenovo V14 AMD Ryzen 5 8GB RAM 512GB SSD 14 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/lenovo-v14-g4-amd-ryzen-5-8gb-ram-512gb-ssd-14-inch-windows-11-laptop-82yx004puk/version.asp",
    "price": 489.97,
    "image": "https://www.laptopsdirect.co.uk/Images/82YX004PUK_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2077425",
-   "mpn": "82YT012XUK",
-   "title": "Lenovo V14 G4 AMD Ryzen 5 8GB RAM 256GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-yoga-amd-ryzen-5-8gb-ram-256gb-ssd-14-inch-windows-11-pro-laptop-82yt012xuk/version.asp",
-   "price": 529.97,
-   "wasPrice": 675.58,
-   "image": "https://www.laptopsdirect.co.uk/Images/82YT012XUK_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1953238",
-   "mpn": "83A0007LUK",
-   "title": "Lenovo V14 G4 Intel Core i5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-v14-g4-i5-13420h-16gb-512gb-ssd-14-inch-windows-11-pro-laptop-83a0007luk/version.asp",
-   "price": 809.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/83A0007LUK_1_Classic.jpg?v=6",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2077431",
-   "mpn": "83UT000HUK",
-   "title": "Lenovo V14 G6 AMD Ryzen 7 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkbook-16-amd-ryzen-7-16gb-ram-512gb-ssd-16-inch-windows-11-pro-l-83ut000huk/version.asp",
-   "price": 749.97,
-   "wasPrice": 893.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/83UT000HUK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -3523,6 +3627,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1835690",
+   "mpn": "82YU00HXUK",
+   "title": "Lenovo V15 G4 AMD Ryzen 5 16GB RAM 256GB SSD 15.6 inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-g4-amn-ryzen-5-7520u-16gb-ram-256gb-ssd-15.6-inch-82yu00hxuk/version.asp",
+   "price": 619.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/83A100AMUK_1_Classic.jpg?v=17",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1894511",
    "mpn": "82YU00JYUK",
    "title": "Lenovo V15 G4 AMD Ryzen 5 16GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
@@ -3566,12 +3680,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2041772",
-   "mpn": "83GW007PUK",
-   "title": "Lenovo V15 G5 Intel Core i5 16GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-g4-intel-core-i5-16gb-ram-512gb-ssd-15.6-inch-windows-11-pro-lap-83gw007puk/version.asp",
-   "price": 699.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/83A1009XUK_1_Classic.jpg?v=5",
+   "sku": "2041769",
+   "mpn": "83GW007NUK",
+   "title": "Lenovo V15 G5 Intel Core i5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-g4-intel-core-i5-8gb-ram-256gb-ssd-15.6-inch-windows-11-laptop-83gw007nuk/version.asp",
+   "price": 459.97,
+   "wasPrice": 490.79,
+   "image": "https://www.laptopsdirect.co.uk/Images/83A100AMUK_1_Classic.jpg?v=17",
    "inStock": true
   },
   {
@@ -3607,12 +3722,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2041770",
-   "mpn": "83GW007SUK",
-   "title": "Lenovo V15 Intel Core i5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-g4-intel-core-i5-8gb-ram-256gb-ssd-15.6-inch-windows-11-pro-lapt-83gw007suk/version.asp",
-   "price": 499.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/83A1008FUK_1_Classic.jpg?v=6",
+   "sku": "2077417",
+   "mpn": "83GW001PUK",
+   "title": "Lenovo V15 Intel Core 5 16GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-intel-core-5-16gb-ram-512gb-ssd-15.6-inch-windows-11-pro-laptop-83gw001puk/version.asp",
+   "price": 699,
+   "wasPrice": 766.78,
+   "image": "https://www.laptopsdirect.co.uk/Images/82YY0011UK_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2073340",
+   "mpn": "83GW000XUK",
+   "title": "Lenovo V15 Intel Core 5 8GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-g5-irl-83gw-intel-core-5-120u-up-to-5-ghz-win-11-pro-i-83gw000xuk/version.asp",
+   "price": 574.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/83GW000XUK_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -3628,6 +3754,37 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2041774",
+   "mpn": "83GW007EUK",
+   "title": "Lenovo V15 Intel Core i5 8GB RAM 512GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-g4-intel-core-i5-8gb-ram-512gb-ssd-15.6-inch-wndows-11-laptop-83gw007euk/version.asp",
+   "price": 519.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/83A100PNUK_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2077419",
+   "mpn": "83GW00J0UK",
+   "title": "Lenovo V15 Intel Core i5 8GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-intel-core-i5-8gb-ram-512gb-ssd-15.6-inch-windows-11-pro-laptop-83gw00j0uk/version.asp",
+   "price": 587.97,
+   "wasPrice": 765.59,
+   "image": "https://www.laptopsdirect.co.uk/Images/83GW00HWUK_1_Classic.jpg?v=10",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2041773",
+   "mpn": "83GW007FUK",
+   "title": "Lenovo V15 Intel Core i5 8GB RAM 512GB SSD 15.6 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-v15-g4-intel-core-i5-8gb-ram-512gb-ssd-15.6-inch-windows-11-pro-lapt-83gw007fuk/version.asp",
+   "price": 599.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/83a1008yuk_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1963640",
    "mpn": "21KS0006UK",
    "title": "Lenovo Workstation P16s Intel Core Ultra 7 16GB RAM 512GB SSD RTX 500 16 Inch Windows 11 Pro Laptop",
@@ -3638,23 +3795,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1956220",
-   "mpn": "30037979",
-   "title": "Medion AI SPRCHRGD S30 Qualcomm Snapdragon X Elite 16GB RAM 512GB SSD 14 Inch 2.8k Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/medion-ai-nb-s30-qualcomm-snapdragon-x-elite-16gb-ram-512gb-ssd-14-inch-win-30037979/version.asp",
-   "price": 699.97,
-   "wasPrice": 829.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/30038761_1_16825092_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2098306",
-   "mpn": "30042501",
-   "title": "Medion Erazer Beast 16 X1 AMD Ryzen 9 32GB RAM 1TB SSD GeForce RTX 5090 300Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/medion-erazer-beast-16-x1-amd-ryzen-9-32gb-ram-1tb-ssd-geforce-rtx-5090-300-30042501/version.asp",
-   "price": 3399.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/30042501_1_Classic.jpg?v=7",
+   "sku": "2080712",
+   "mpn": "30042529",
+   "title": "Medion ERAZER Beast 16 X1 AMD Ryzen 9 32GB RAM 1TB SSD RTX 5070 Ti 300Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-beast-16-x1-amd-ryzen-9-32gb-ram-1tb-ssd-rtx-5070-ti-300hz-16-30042529/version.asp",
+   "price": 2399.98,
+   "wasPrice": 2859.31,
+   "image": "https://www.laptopsdirect.co.uk/Images/30042529_1_Classic.png?v=10",
    "inStock": true
   },
   {
@@ -3669,31 +3816,61 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2080711",
-   "mpn": "30042487",
-   "title": "Medion ERAZER Beast 16 X1 Intel Core Ultra 9 32GB RAM 1TB SSD RTX 5070 Ti 300Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/medion-erazer-beast-16-x1-intel-core-ultra-9-32gb-ram-1tb-ssd-rtx-5070-ti-3-30042487/version.asp",
-   "price": 2399.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/30042487_1_Classic.png?v=65",
+   "sku": "2080715",
+   "mpn": "30042461",
+   "title": "Medion ERAZER Beast 16 X1 Intel Core Ultra 9 64GB RAM 2TB SSD RTX 5090 300Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-beast-16-x1-intel-core-ultra-9-64gb-ram-2tb-ssd-rtx-5090-300h-30042461/version.asp",
+   "price": 4499.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30042473_1_17762627_17762627_Classic.png?v=7",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2080713",
-   "mpn": "30042473",
-   "title": "Medion ERAZER Beast 16 X1 Intel Core Ultra 9 32GB RAM 1TB SSD RTX 5080 300Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/medion-erazer-beast-16-x1-intel-core-ultra-9-32gb-ram-1tb-ssd-rtx-5080-300h-30042473/version.asp",
-   "price": 2950.96,
-   "image": "https://www.laptopsdirect.co.uk/Images/30042473_1_Classic.png?v=8",
+   "sku": "1987709",
+   "mpn": "30039711",
+   "title": "Medion ERAZER Beast 18 Intel Core Ultra 9 32GB RAM 2TB SSD RTX 5090 240Hz 18 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-beast-18-intel-ultra-9-275hx-32gb-2tb-ssd-rtx-5090-18-inch-la-30039711/version.asp",
+   "price": 3199,
+   "image": "https://www.laptopsdirect.co.uk/Images/30039711_1_Classic.png?v=25",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2098303",
-   "mpn": "30042409",
-   "title": "Medion Erazer Defender 17 Intel Core i9 16GB RAM 1TB SSD GeForce RTX 5060 144Hz 17.3 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/medion-erazer-defender-17-intel-core-i9-16gb-ram-1tb-ssd-geforce-rtx-5060-1-30042409/version.asp",
-   "price": 1499.98,
+   "sku": "1963558",
+   "mpn": "30038285",
+   "title": "Medion ERAZER Crawler E30e Intel Core i5 16GB RAM 512GB SSD RTX 2050 60Hz 15.6 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-nb-crawler-e30e-core-i5-12450h-16gb-512gb-rtx-2050-15.6-fhd-30038285/version.asp",
+   "price": 699.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30038285_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1877770",
+   "mpn": "30036524",
+   "title": "Medion ERAZER Crawler E50 Intel Core i5 16GB RAM 512GB SSD RTX 4050 144Hz 15.6 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-nb-crawler-e50-intel-core-i5-16gb-512gb-rtx-4050-144hz-fhd-15-30036524/version.asp",
+   "price": 799.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30036524_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1956222",
+   "mpn": "30038629",
+   "title": "Medion ERAZER Crawler E50i Intel Core i7 16GB RAM 512GB SSD RTX 4050 144Hz 15.6 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-nb-crawler-e50i-intel-core-i7-16gb-512gb-rtx-4050-144hz-15.6-30038629/version.asp",
+   "price": 869.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30038629_1_Classic.png?v=13",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2098304",
+   "mpn": "30042541",
+   "title": "Medion Erazer Defender 17 Intel Core i9 16GB RAM 1TB SSD GeForce RTX 5070 144Hz 17.3 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-defender-17-intel-core-i9-16gb-ram-1tb-ssd-geforce-rtx-5070-1-30042541/version.asp",
+   "price": 1579.97,
    "image": "https://www.laptopsdirect.co.uk/Images/30042537_1_Classic.png?v=7",
    "inStock": true
   },
@@ -3709,12 +3886,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2098302",
-   "mpn": "30042929-NOS",
-   "title": "Medion Erazer Deputy 15 Intel Core 5 16GB RAM 1TB SSD GeForce RTX 5060 144Hz 15.6 Inch NO OS Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/medion-erazer-deputy-15-intel-core-5-16gb-ram-1tb-ssd-geforce-rtx-5060-144h-30042929-nos/version.asp",
-   "price": 999.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/30042971-NOS_1_Classic.png?v=11",
+   "sku": "2039569",
+   "mpn": "30041204",
+   "title": "Medion Erazer Defender 17 P1 Intel Core 7 32GB RAM 1TB SSD RTX 5070 144Hz 17.3 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-defender-17-p1-17.3-fhd-144hz-intel-core-7-240h-32-gb-1-tb-r-30041204/version.asp",
+   "price": 1449.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/BUN3004120498892_2_17455305_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2010553",
+   "mpn": "30039759",
+   "title": "Medion ERAZER Defender 17 P1 Intel Core 7 32GB RAM 2TB SSD RTX 5060 144Hz 17.3 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-defender-17-p1-intel-core-i7-32gb-ram-2tb-ssd-rtx-5060-144hz-30039759/version.asp",
+   "price": 1399.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30039759_1_17251302_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -3729,43 +3916,83 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2010550",
-   "mpn": "30039889",
-   "title": "Medion ERAZER Deputy 15 P1 Intel Core i7 16GB RAM 1TB SSD RTX 5060 144Hz 15.6 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/medion-erazer-deputy-15-p1-intel-core-i7-16gb-ram-1tb-ssd-rtx-5060-144hz-15-30039889/version.asp",
-   "price": 1299,
-   "image": "https://www.laptopsdirect.co.uk/Images/30041124_1_17251749_Classic.png?v=5",
+   "sku": "2010554",
+   "mpn": "30039895",
+   "title": "Medion ERAZER Deputy 15 P1 Intel Core 9 32GB RAM 2TB SSD RTX 5070 144Hz 15.6 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-deputy-15-p1-intel-core-i9-32gb-ram-2tb-ssd-rtx-5070-144hz-15-30039895/version.asp",
+   "price": 1667.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/A130039895_1_Classic.png?v=7",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2098301",
-   "mpn": "30042971-NOS",
-   "title": "Medion Erazer Scout Intel Core i5 16GB RAM 1TB SSD GeForce RTX 5050 144Hz 17.3 Inch No Operating System Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/medion-erazer-scout-intel-core-i5-16gb-ram-1tb-ssd-geforce-rtx-5050-144hz-1-30042971-nos/version.asp",
-   "price": 939.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/30042971-NOS_1_Classic.png?v=11",
+   "sku": "1963564",
+   "mpn": "30038641",
+   "title": "Medion ERAZER Deputy P60 Intel Core i7 16GB RAM 1TB SSD RTX 4070 144Hz 15.6 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-nb-deputy-p60-intel-core-i7-13620h-16-gb-1tb-rtx-4070-15.6-f-30038641/version.asp",
+   "price": 1182.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30038641_1_Classic.png?v=35",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2093696",
-   "mpn": "EP2-47719",
-   "title": "Microsoft EP2-47719 Intel Core Ultra 5 32GB RAM 256GB SSD 13.8 Inch Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-ep2-47719-intel-core-ultra-5-32gb-ram-256gb-ssd-13.8-inch-windows-ep2-47719/version.asp",
-   "price": 2654.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-47719_1_Classic.jpg?v=3",
+   "sku": "1956223",
+   "mpn": "30038681",
+   "title": "Medion ERAZER Deputy P60 Intel Core i9 16GB RAM 1TB SSD RTX 4070 144Hz 15.6 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-nb-deputy-p60-intel-core-i9-16gb-1tb-rtx-4070-144hz-15.6-inch-30038681/version.asp",
+   "price": 1269.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30038681_1_Classic.png?v=5",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1925173",
-   "mpn": "ZPX-00029",
-   "title": "Microsoft Surface 6 Intel Core Ultra 5 16GB RAM 512GB SSD 13.5 Inch Windows 11 Pro Touchscreen Laptop - Platinum",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-laptop-6-13-i5-16-512-uk-plat-zpx-00029/version.asp",
-   "price": 1099.97,
-   "wasPrice": 1232.69,
-   "image": "https://www.laptopsdirect.co.uk/Images/ZPX-00029_1_Classic.jpg?v=5",
+   "sku": "1976996",
+   "mpn": "30039065",
+   "title": "Medion ERAZER Major 15 Intel Core i9 32GB RAM 2TB SSD RTX 4070 240Hz 15.3 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-nb-major-15-intel-core-i9-32gb-ram-2tb-ssd-geforce-rtx-4070-2-30039065/version.asp",
+   "price": 1789.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30039067_1_Classic.png?v=29",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2039568",
+   "mpn": "30041431",
+   "title": "Medion Erazer Major 16X1 Intel Core Ultra 7 32GB RAM 2TB SSD 300Hz RTX 5070 Ti 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-major-16-x1-intel-core-ultra-7-32gb-ram-2tb-ssd-rtx-5070ti-30-30041431/version.asp",
+   "price": 1899.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30039637_1_17251181_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1827773",
+   "mpn": "30035515",
+   "title": "Medion ERAZER Major X20 Intel Core i9 32GB RAM 1TB SSD RTX 4070 240Hz 16 Inch QHD Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-nb-major-x20-16-qhd-240hz-intel-core-i9-13900hx-32-gb-1-tb-30035515/version.asp",
+   "price": 1850.36,
+   "image": "https://www.laptopsdirect.co.uk/Images/30035515_1_Classic.png?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2010548",
+   "mpn": "30039773",
+   "title": "Medion ERAZER Scout 15 Intel Core i5 16GB RAM 1TB SSD RTX 5050 144Hz 15.6 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-scout-15-intel-core-i5-16gb-ram-1tb-ssd-rtx-5050-144hz-15.6-i-30039773/version.asp",
+   "price": 964.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/30039773_1_Classic.png?v=26",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2010549",
+   "mpn": "30039747",
+   "title": "Medion ERAZER Scout 17 E1 Intel Core 5 16GB RAM 1TB SSD RTX 5050 144Hz 17.3 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-scout-17-e1-intel-core-i5-16gb-ram-1tb-ssd-rtx-5050-144hz-17.-30039747/version.asp",
+   "price": 1049.98,
+   "wasPrice": 1249.45,
+   "image": "https://www.laptopsdirect.co.uk/Images/BUN3003974798887_2_Classic.png?v=19",
    "inStock": true
   },
   {
@@ -3803,16 +4030,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2008698",
-   "mpn": "EP2-21358",
-   "title": "Microsoft Surface 7 Intel Core Ultra 5 32GB RAM 256GB SSD 15 Inch Touchscreen Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-7-intel-core-ultra-5-32gb-ram-256gb-ssd-15-inch-touchscre-ep2-21358/version.asp",
-   "price": 2189.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-21358_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2002350",
    "mpn": "EP2-22222",
    "title": "Microsoft Surface 7 Intel Core Ultra 5 32GB RAM 512GB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
@@ -3845,12 +4062,53 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2080472",
+   "mpn": "EP2-37383",
+   "title": "Microsoft Surface 7 Qualcomm Snapdragon 64GB RAM 1TB SSD 15 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-7-64gb-ram-1tb-ssd-15-inch-windows-11-laptop-ep2-37383/version.asp",
+   "price": 3099.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-37383_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1941682",
+   "mpn": "ZXY-00004",
+   "title": "Microsoft Surface 7 Snapdragon X Elite 16GB RAM 1TB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-7-snapdragon-x-elite-16gb-ram-1tb-ssd-13.8-inch-touchscr-zxy-00004/version.asp",
+   "price": 1999.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/ZGZ-00004_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2729102",
    "mpn": "EP2-31348",
    "title": "Microsoft Surface 7th Edition Qualcomm Snapdragon X Plus 24GB RAM 1 TB SSD 13 Inch Windows 11 Pro Touchscreen Laptop - Platinum",
    "url": "https://www.laptopsdirect.co.uk/microsoft-surface-7th-edition-qualcomm-snapdragon-x-plus-24gb-ram-1-tb-ssd-ep2-31348/version.asp",
    "price": 1779.97,
    "image": "https://www.laptopsdirect.co.uk/Images/EP2-68740_1_Classic.png?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2089645",
+   "mpn": "EP2-47644",
+   "title": "Microsoft Surface 8 Intel Core Ultra 5 16GB RAM 512GB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8-intel-core-ultra-5-16gb-ram-512gb-ssd-13.8-inch-touchsc-ep2-47644/version.asp",
+   "price": 2194.97,
+   "wasPrice": 2327.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-47644_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2089646",
+   "mpn": "EP2-50933",
+   "title": "Microsoft Surface 8 Intel Core Ultra 5 16GB RAM 512GB SSD 15 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8-intel-core-ultra-5-16gb-ram-512gb-ssd-15-inch-touchscre-ep2-50933/version.asp",
+   "price": 2384.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-50933_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -3865,13 +4123,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2720844",
-   "mpn": "EP2-47994",
-   "title": "Microsoft Surface 8 Intel Core Ultra 7 32GB RAM 512GB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8-intel-core-ultra-7-32gb-ram-512gb-ssd-13.8-inch-touchsc-ep2-47994/version.asp",
-   "price": 3208.97,
-   "wasPrice": 3395.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-47994_1_Classic.jpg?v=1",
+   "sku": "2714524",
+   "mpn": "EP2-50088",
+   "title": "Microsoft Surface 8 Intel Core Ultra X7 16GB RAM 256GB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8-intel-core-ultra-x7-16gb-ram-256gb-ssd-13.8-inch-touchs-ep2-50088/version.asp",
+   "price": 2707.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-50088_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -3881,7 +4138,7 @@
    "title": "Microsoft Surface 8 Intel Core Ultra X7 16GB RAM 256GB SSD 15 Inch Touchscreen Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8-intel-core-ultra-x7-16gb-ram-256gb-ssd-15-inch-touchscr-ep2-51083/version.asp",
    "price": 2654.97,
-   "wasPrice": 2807.98,
+   "wasPrice": 2825.98,
    "image": "https://www.laptopsdirect.co.uk/Images/EP2-51083_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -3903,66 +4160,6 @@
    "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8-qualcomm-snapdragon-32gb-ram-256gb-ssd-13.8-inch-touchs-ep2-59141/version.asp",
    "price": 2239.97,
    "image": "https://www.laptopsdirect.co.uk/Images/EP2-59141_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2723776",
-   "mpn": "EP2-47819",
-   "title": "Microsoft Surface 8th Edition Intel Core Ultra 7 16GB RAM 256GB SSD 13.8 Inch Windows 11 Pro Touchscreen Laptop - Platinum",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8th-edition-intel-core-ultra-7-16gb-ram-256gb-ssd-13.8-in-ep2-47819/version.asp",
-   "price": 2424.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-47819_1_Classic.png?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2723805",
-   "mpn": "EP2-50069",
-   "title": "Microsoft Surface 8th Edition Intel Core Ultra 7 32GB RAM 512GB SSD 13.8 Inch Windows 11 Pro Touchscreen Laptop - Platinum",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8th-edition-intel-core-ultra-7-32gb-ram-512gb-ssd-13.8-in-ep2-50069/version.asp",
-   "price": 3503.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-47819_1_Classic.png?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2723861",
-   "mpn": "EP2-51233",
-   "title": "Microsoft Surface 8th Edition Intel Core Ultra X7 32GB RAM 256GB SSD 15 Inch Windows 11 Pro Touchscreen Laptop - Black",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8th-edition-intel-core-ultra-x7-32gb-ram-256gb-ssd-15-inc-ep2-51233/version.asp",
-   "price": 3318.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-50833_1_Classic.png?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2723863",
-   "mpn": "EP2-53552",
-   "title": "Microsoft Surface 8th Edition Intel Core Ultra X7 32GB RAM 256GB SSD 15 Inch Windows 11 Pro Touchscreen Laptop - Black",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8th-edition-intel-core-ultra-x7-32gb-ram-256gb-ssd-15-inc-ep2-53552/version.asp",
-   "price": 3268.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-50833_1_Classic.png?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2723833",
-   "mpn": "EP2-60789",
-   "title": "Microsoft Surface 8th Edition Qualcomm Snapdragon X Elite 64GB RAM 1TB SSD 15 Inch Windows 11 Pro Touchscreen Laptop - Black",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8th-edition-qualcomm-snapdragon-x-elite-64gb-ram-1tb-ssd-ep2-60789/version.asp",
-   "price": 3434.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-50833_1_Classic.png?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2723832",
-   "mpn": "EP2-60814",
-   "title": "Microsoft Surface 8th Edition Qualcomm Snapdragon X Elite 64GB RAM 1TB SSD 15 Inch Windows 11 Pro Touchscreen Laptop - Platinum",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-8th-edition-qualcomm-snapdragon-x-elite-64gb-ram-1tb-ssd-ep2-60814/version.asp",
-   "price": 3509.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-50783_1_Classic.png?v=3",
    "inStock": true
   },
   {
@@ -3998,16 +4195,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2717152",
-   "mpn": "EP2-50808",
-   "title": "Microsoft Surface Intel Core Ultra 5 16GB RAM 256GB SSD 15 Inch Touchscreen Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-intel-core-ultra-5-16gb-ram-256gb-ssd-15-inch-touchscreen-ep2-50808/version.asp",
-   "price": 2287.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-50808_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2002344",
    "mpn": "EP2-22626",
    "title": "Microsoft Surface Intel Core Ultra 5 16GB RAM 256GB SSD 15 Inch Windows 11 Pro Laptop",
@@ -4019,13 +4206,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2095859",
-   "mpn": "EP2-68824",
-   "title": "Microsoft Surface Intel Core Ultra 5 16GB RAM 512GB SSD 13 Inch Touchscreen Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-intel-core-ultra-5-16gb-ram-512gb-ssd-13-inch-touchscreen-ep2-68824/version.asp",
-   "price": 1649.97,
-   "wasPrice": 1751.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-68824_1_Classic.jpg?v=1",
+   "sku": "1994838",
+   "mpn": "EP2-22247",
+   "title": "Microsoft Surface Laptop 7 Copilot+ PC Intel Core Ultra 7 16GB RAM 256GB SSD 13.8 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/srfc-lpt7-13.8-intelcu7-16-256-blck-ep2-22247/version.asp",
+   "price": 1794.97,
+   "wasPrice": 1919.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-22247_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -4056,7 +4243,7 @@
    "title": "Microsoft Surface Pro 11 Intel Core Ultra 7 16GB RAM 256GB SSD 13 Inch Touchscreen Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/microsoft-surface-pro-11-intel-core-ultra-7-16gb-ram-256gb-ssd-13-inch-touc-ep2-20212/version.asp",
    "price": 1719.97,
-   "wasPrice": 1968.97,
+   "wasPrice": 1967.99,
    "image": "https://www.laptopsdirect.co.uk/Images/EP2-20212_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -4073,22 +4260,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2010535",
-   "mpn": "ZEW-00003",
-   "title": "Microsoft Surface Pro 11 Qualcomm Snapdragon 16GB RAM 256GB SSD 13 Inch Touchscreen Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-pro-11-qualcomm-snapdragon-16gb-ram-256gb-ssd-13-inch-tou-zew-00003/version.asp",
-   "price": 1699.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/ZEW-00003_5_Classic.jpg?v=1",
+   "sku": "2032500",
+   "mpn": "EP2-27237",
+   "title": "Microsoft Surface Pro 12 Qualcomm Snapdragon 24GB RAM 1TB SSD 12 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-pro-12-qualcomm-snapdragon-24gb-ram-1tb-ssd-12-inch-touch-ep2-27237/version.asp",
+   "price": 1709.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-27237_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2724249",
-   "mpn": "EP2-55368",
-   "title": "Microsoft Surface Pro 12th Edition Intel Core Ultra 5 16GB RAM 256 GB SSD 13 Inch Windows 11 Pro Touchscreen Laptop - Platinum",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-pro-12th-edition-intel-core-ultra-5-16gb-ram-256-gb-ssd-1-ep2-55368/version.asp",
-   "price": 2034.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-63668_1_Classic.png?v=3",
+   "sku": "2729127",
+   "mpn": "EP2-48855",
+   "title": "Microsoft Surface Pro 12th Edition Intel Core Ultra 5 16GB RAM 512 GB SSD 13 Inch Windows 11 Pro Touchscreen Laptop - Black",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-pro-12th-edition-intel-core-ultra-5-16gb-ram-512-gb-ssd-1-ep2-48855/version.asp",
+   "price": 2242.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-73353_1_Classic.png?v=3",
    "inStock": true
   },
   {
@@ -4173,12 +4360,42 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2095860",
+   "mpn": "EP2-54682",
+   "title": "Microsoft Surface Pro 13 Intel Core Ultra 5 16GB RAM 256GB SSD 13 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-pro-13-intel-core-ultra-5-16gb-ram-256gb-ssd-13-inch-touc-ep2-54682/version.asp",
+   "price": 2094.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-54682_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2089647",
+   "mpn": "EP2-54698",
+   "title": "Microsoft Surface Pro 13 Intel Core Ultra 7 32GB RAM 512GB SSD 13 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-pro-13-intel-core-ultra-7-32gb-ram-512gb-ssd-13-inch-touc-ep2-54698/version.asp",
+   "price": 3364.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-54698_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2717156",
    "mpn": "EP2-55188",
    "title": "Microsoft Surface Pro Intel Core Ultra 5 32GB RAM 256GB SSD 13 Inch Touchscreen Windows 11 Pro Laptop",
    "url": "https://www.laptopsdirect.co.uk/microsoft-surface-pro-intel-core-ultra-5-32gb-ram-256gb-ssd-13-inch-touchsc-ep2-55188/version.asp",
    "price": 2744.97,
    "image": "https://www.laptopsdirect.co.uk/Images/EP2-55188_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2714525",
+   "mpn": "EP2-55285",
+   "title": "Microsoft Surface Pro Intel Core Ultra 7 16GB RAM 256GB SSD 13 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-pro-intel-core-ultra-7-16gb-ram-256gb-ssd-13-inch-touchsc-ep2-55285/version.asp",
+   "price": 2538.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-55285_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -4193,12 +4410,62 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2032495",
+   "mpn": "EP2-30989",
+   "title": "Microsoft Surface Qualcomm Snapdragon 16GB RAM 1TB SSD 13 Inch Touchscreen Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-qualcomm-snapdragon-16gb-ram-1tb-ssd-13-inch-touchscreen-ep2-30989/version.asp",
+   "price": 1579.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-30989_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2032496",
+   "mpn": "EP2-31214",
+   "title": "Microsoft Surface Qualcomm Snapdragon X 16GB RAM 256GB SSD 13 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-laptop-13in-sd-x-plus-ep2-31214/version.asp",
+   "price": 1159.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-31214_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1941685",
+   "mpn": "ZHP-00004",
+   "title": "Microsoft Surface Qualcomm Snapdragon X Elite 16GB RAM 256GB SSD 15 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-laptop-7-snapdragon-x-elite-16gb-ram-256gb-ssd-15-window-zhp-00004/version.asp",
+   "price": 1508.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/ZHP-00004_1_Classic.jpg?v=13",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2096554",
+   "mpn": "EP2-30276",
+   "title": "Microsoft Surface Qualcomm Snapdragon X Plus 16GB RAM 512GB SSD 13 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-qualcomm-snapdragon-x-plus-16gb-ram-512gb-ssd-13-inch-win-ep2-30276/version.asp",
+   "price": 1149.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-30276_1_18123249_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2096555",
    "mpn": "EP2-30703",
    "title": "Microsoft Surface Qualcomm Snapdragon X Plus 16GB RAM 512GB SSD 13 Inch Windows 11 Laptop",
    "url": "https://www.laptopsdirect.co.uk/microsoft-surface-qualcomm-snapdragon-x-plus-16gb-ram-512gb-ssd-13-inch-win-ep2-30703/version.asp",
    "price": 1149.97,
    "image": "https://www.laptopsdirect.co.uk/Images/EP2-30703_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2096567",
+   "mpn": "EP2-61423",
+   "title": "Microsoft Surface Qualcomm Snapdragon X2 Elite 16GB RAM 512GB SSD 13.8 Inch Touchscreen Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-qualcomm-snapdragon-x2-elite-16gb-ram-512gb-ssd-13.8-inch-ep2-61423/version.asp",
+   "price": 1499.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-60938_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -4213,16 +4480,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2096566",
-   "mpn": "EP2-61408",
-   "title": "Microsoft Surface Qualcomm Snapdragon X2 Elite 16GB RAM 512GB SSD 13.8 Inch Touchscreen Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-qualcomm-snapdragon-x2-elite-16gb-ram-512gb-ssd-13.8-inch-ep2-61408/version.asp",
-   "price": 1499.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-60911_1_Classic.jpg?v=7",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2096571",
    "mpn": "EP2-61210",
    "title": "Microsoft Surface Qualcomm Snapdragon X2 Elite 16GB RAM 512GB SSD 15 Inch Touchscreen Windows 11 Laptop",
@@ -4233,32 +4490,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2096563",
-   "mpn": "EP2-60938",
+   "sku": "2096564",
+   "mpn": "EP2-60945",
    "title": "Microsoft Surface Qualcomm Snapdragon X2 Plus 16GB RAM 512GB SSD 13.8 Inch Touchscreen Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-qualcomm-snapdragon-x2-plus-16gb-ram-512gb-ssd-13.8-inch-ep2-60938/version.asp",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-qualcomm-snapdragon-x2-plus-16gb-ram-512gb-ssd-13.8-inch-ep2-60945/version.asp",
    "price": 1449.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-60938_1_Classic.jpg?v=5",
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-60945_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2096562",
-   "mpn": "EP2-60925",
-   "title": "Microsoft Surface Qualcomm Snapdragon X2 Plus 16GB RAM 512GB SSD 13.8 Inch Touchscreen Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-qualcomm-snapdragon-x2-plus-16gb-ram-512gb-ssd-13.8-inch-ep2-60925/version.asp",
-   "price": 1449.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/EP2-60925_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2012203",
-   "mpn": "9S7-15P421-009",
-   "title": "MSI Crosshair 16 HX AI Intel Core Ultra 7 16GB RAM 1TB SSD RTX 5060 240Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/msi-crosshair-16-hx-ai-intel-core-ultra-7-16gb-ram-1tb-ssd-rtx-5060-240hz-1-9s7-15p421-009/version.asp",
-   "price": 1599.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S7-15P421-009_1_Classic.jpg?v=8",
+   "sku": "2096570",
+   "mpn": "EP2-61330",
+   "title": "Microsoft Surface Qualcomm Snapdragon X2 Plus 16GB RAM 512GB SSD 15 Inch Touchscreen Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/microsoft-surface-qualcomm-snapdragon-x2-plus-16gb-ram-512gb-ssd-15-inch-to-ep2-61330/version.asp",
+   "price": 1549.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/EP2-61330_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -4305,12 +4552,33 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2012204",
+   "mpn": "9S7-184111-005",
+   "title": "MSI Crosshair 18 HX AI Intel Core Ultra 9 16GB RAM 1TB SSD RTX 5060 240Hz 18 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-crosshair-18-hx-ai-intel-core-ultra-9-16gb-ram-1tb-ssd-rtx-5060-240hz-1-9s7-184111-005/version.asp",
+   "price": 1649.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-184111-005_1_Classic.jpg?v=6",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2728600",
    "mpn": "9S7-265L54-098",
    "title": "MSI Crosshair A16 HX MLG Edition E8WGK-098UKY AMD Ryzen 9 16GB RAM 1TB SSD NVIDIA GeForce RTX 5070 240Hz 16 Inch Windows 11 Gaming Laptop",
    "url": "https://www.laptopsdirect.co.uk/msi-crosshair-a16-hx-mlg-edition-e8wgk-098uky-amd-ryzen-9-16gb-ram-1tb-ssd-9s7-265l54-098/version.asp",
    "price": 2249.97,
    "image": "https://www.laptopsdirect.co.uk/Images/9S7-265L54-098_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1893579",
+   "mpn": "9S7-14P111-011",
+   "title": "MSI Cyborg 14 Intel Core i7 16GB RAM 512GB SSD RTX 4060 144Hz 14 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-cyborg-14-intel-core-i7-16gb-512gb-rtx-4060-144hz-fhd-14-inch-windows-1-9s7-14p111-011/version.asp",
+   "price": 1049.97,
+   "wasPrice": 1199,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-14P111-011_1_Classic.jpg?v=7",
    "inStock": true
   },
   {
@@ -4326,34 +4594,12 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1893578",
-   "mpn": "9S7-15K211-001",
-   "title": "MSI Cyborg 15 AI Intel Core Ultra 7 16GB RAM 512GB SSD RTX 4060 144Hz 15.6 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/msi-cyborg-15-ai-intel-core-ultra-7-16gb-512gb-rtx-4060-144hz-fhd-15.6-inch-9s7-15k211-001/version.asp",
-   "price": 1099,
-   "wasPrice": 1349.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S7-15K211-001_1_Classic.jpg?v=11",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2013988",
    "mpn": "9S7-15Q342-003",
    "title": "MSI Cyborg 15 B2RWEKG-003UK Intel Core 5 210H 16GB RAM 512GB SSD GeForce RTX 5050 144Hz 15.6 Inch Windows 11 Home Plus Gaming Laptop",
    "url": "https://www.laptopsdirect.co.uk/msi-cyborg-15-b2rwekg-003uk-intel-core-9-16gb-ram-512gb-ssd-geforce-rtx-505-9s7-15q342-003/version.asp",
    "price": 979.97,
    "image": "https://www.laptopsdirect.co.uk/Images/9S7-15Q342-002_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2728594",
-   "mpn": "9S7-15T111-489",
-   "title": "MSI Cyborg 15 Max C2WF-489UKYNN Intel Core 7 16GB RAM 1TB SSD NVIDIA GeForce RTX 5060 144Hz 15.6 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/msi-cyborg-15-max-c2wf-489ukynn-intel-core-7-16gb-ram-1tb-ssd-nvidia-geforc-9s7-15t111-489/version.asp",
-   "price": 1449.97,
-   "wasPrice": 1549.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S7-15T111-484_1_Classic.png?v=3",
    "inStock": true
   },
   {
@@ -4378,17 +4624,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2002427",
-   "mpn": "9S7-14JK12-407",
-   "title": "MSI Modern 14 AMD Ryzen 5 8GB RAM 512GB SSD 14 Inch Windows 11 Laptop",
-   "url": "https://www.laptopsdirect.co.uk/msi-modern-14-amd-ryzen-5-8gb-ram-512gb-ssd-14-inch-windows-11-home-laptop-9s7-14jk12-407/version.asp",
-   "price": 499.97,
-   "wasPrice": 649,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S7-14JK12-407_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2002432",
    "mpn": "9S7-14L112-298",
    "title": "MSI Modern 14 Intel Core 5 8GB RAM 512GB SSD 14 Inch Windows 11 Laptop",
@@ -4396,6 +4631,17 @@
    "price": 499.97,
    "wasPrice": 699.98,
    "image": "https://www.laptopsdirect.co.uk/Images/9S7-14L112-298_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2002426",
+   "mpn": "9S7-14S121-276",
+   "title": "MSI Modern 14 Intel Core i5 16GB RAM 512GB SSD 14 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-modern-14-intel-core-i5-8gb-ram-512gb-ssd-14-inch-windows-11-home-lapto-9s7-14s121-276/version.asp",
+   "price": 599.97,
+   "wasPrice": 649.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-14S121-276_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -4428,6 +4674,27 @@
    "price": 749.97,
    "wasPrice": 829.99,
    "image": "https://www.laptopsdirect.co.uk/Images/9S7-15H551-002_1_16002386_14949154_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2068249",
+   "mpn": "9S7-13Q425-027",
+   "title": "MSI Prestige 13 AI+ A3MG-027UK Intel Core Ultra 7 32GB RAM 1TB SSD 13.3 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-prestige-13-ai-a3mg-027uk-intel-core-ultra-7-32gb-ram-1tb-ssd-13.3-inc-9s7-13q425-027/version.asp",
+   "price": 1274.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-13Q425-027_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1894126",
+   "mpn": "9S7-14N111-003",
+   "title": "MSI Prestige 14 AI Intel Evo Core Ultra 5 8GB RAM 1TB SSD 14 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-prestige-14-ai-evo-intel-core-ultra-5-8gb-ram-1tb-ssd-14-inch-windows-1-9s7-14n111-003/version.asp",
+   "price": 949.97,
+   "wasPrice": 999.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-14N111-003_1_15654276_Classic.png?v=7",
    "inStock": true
   },
   {
@@ -4473,6 +4740,28 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1893573",
+   "mpn": "9S7-15P311-008",
+   "title": "MSI Pulse 16 AI Intel Core Ultra 9 16GB RAM 1TB SSD RTX 4060 240Hz QHD 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-pulse-16-ai-intel-core-ultra-9-16gb-1tb-rtx-4060-240hz-qhd-16-inch-wind-9s7-15p311-008/version.asp",
+   "price": 1649.97,
+   "wasPrice": 1799,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-15P311-008_1_Classic.jpg?v=6",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1893572",
+   "mpn": "9S7-17T311-002",
+   "title": "MSI Pulse 17 AI Intel Core Ultra 9 16GB RAM 1TB SSD RTX 4060 240Hz 17 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-pulse-17-ai-intel-core-ultra-9-16gb-1tb-rtx-4060-240hz-17-inch-windows-9s7-17t311-002/version.asp",
+   "price": 1599.97,
+   "wasPrice": 1799.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-17T311-002_1_Classic.jpg?v=8",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2068248",
    "mpn": "9S7-15PK11-002",
    "title": "MSI Pulse A16 AI+ C3XWFKG-002UK AMD Ryzen AI 9 8GB RAM 1TB SSD GeForce RTX 5060 240Hz 16 Inch Windows 11 Gaming Laptop",
@@ -4483,12 +4772,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2095396",
-   "mpn": "9S7-265122-073",
-   "title": "MSI Raider 16 Intel Core Ultra 7 16GB RAM 1TB SSD GeForce RTX 5070 Ti 240Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/msi-raider-16-intel-core-ultra-7-16gb-ram-1tb-ssd-geforce-rtx-5070-ti-240hz-9s7-265122-073/version.asp",
-   "price": 2499.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S7-265122-073_1_Classic.png?v=5",
+   "sku": "2728602",
+   "mpn": "9S7-265111-284",
+   "title": "MSI Raider 16 Max HX B2WH-284UKY Intel Core Ultra 9 32GB RAM 1TB SSD NVIDIA GeForce RTX 5070 Ti 240Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-raider-16-max-hx-b2wh-284uky-intel-core-ultra-9-32gb-ram-1tb-ssd-nvidia-9s7-265111-284/version.asp",
+   "price": 2599.97,
+   "wasPrice": 2749.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-265111-283_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -4504,11 +4794,11 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2084619",
-   "mpn": "9S7-265111-065",
-   "title": "MSI Raider 16 Max Intel Core Ultra 9 32GB RAM 2TB SSD GeForce RTX 5090 240Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/msi-raider-16-max-intel-core-ultra-9-32gb-ram-2tb-ssd-geforce-rtx-5090-240h-9s7-265111-065/version.asp",
-   "price": 4246.76,
+   "sku": "2084618",
+   "mpn": "9S7-265111-066",
+   "title": "MSI Raider 16 Max Intel Core Ultra 9 32GB RAM 1TB SSD GeForce RTX 5090 240Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-raider-16-max-intel-core-ultra-9-32gb-ram-1tb-ssd-geforce-rtx-5090-240h-9s7-265111-066/version.asp",
+   "price": 3599.97,
    "image": "https://www.laptopsdirect.co.uk/Images/9S7-265111-066_1_Classic.png?v=5",
    "inStock": true
   },
@@ -4534,22 +4824,11 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2721448",
-   "mpn": "9S7-263211-029",
-   "title": "MSI Stealth 16 AI+ B3WG-029UK Intel Core Ultra 9 16GB RAM 1TB SSD NVIDIA GeForce RTX 5070 240Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/msi-stealth-16-ai-b3wg-029uk-intel-core-ultra-9-16gb-ram-1tb-ssd-nvidia-ge-9s7-263211-029/version.asp",
-   "price": 2299.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S7-263211-029_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2084616",
-   "mpn": "9S7-263111-032",
-   "title": "MSI Stealth 18 AI+ Intel Core Ultra 9 32GB RAM 1TB SSD GeForce RTX 5070 Ti 240Hz 16 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/msi-stealth-18-ai-intel-core-ultra-9-32gb-ram-1tb-ssd-geforce-rtx-5070-ti-9s7-263111-032/version.asp",
-   "price": 2549.97,
-   "wasPrice": 2999.99,
+   "sku": "2084617",
+   "mpn": "9S7-263111-031",
+   "title": "MSI Stealth 18 AI+ Intel Core Ultra 9 32GB RAM 1TB SSD GeForce RTX 5080 240Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-stealth-18-ai-intel-core-ultra-9-32gb-ram-1tb-ssd-geforce-rtx-5080-240-9s7-263111-031/version.asp",
+   "price": 3249.97,
    "image": "https://www.laptopsdirect.co.uk/Images/9S7-263111-032_1_Classic.png?v=5",
    "inStock": true
   },
@@ -4566,12 +4845,33 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2002429",
-   "mpn": "9S7-13P411-069",
-   "title": "MSI Summit 13 Intel Core Ultra 7 32GB RAM 1TB SSD 13.3 Inch Windows 11 Touchscreen Laptop",
-   "url": "https://www.laptopsdirect.co.uk/msi-summit-13-intel-core-ultra-7-32gb-ram-1tb-ssd-13.3-inch-windows-11-pro-9s7-13p411-069/version.asp",
-   "price": 1299.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/9S7-13P411-069_1_Classic.png?v=5",
+   "sku": "1970435",
+   "mpn": "9S7-159K21-027",
+   "title": "MSI Summit AMD Ryzen 9 32GB RAM 1TB SSD 16 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-summit-amd-ryzen-9-32gb-ram-1tb-ssd-16-inch-windows-11-pro-laptop-9s7-159k21-027/version.asp",
+   "price": 1697.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-159K21-027_1_Classic.jpg?v=23",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1894099",
+   "mpn": "9S7-13P411-002",
+   "title": "MSI Summit E13 AI Intel Evo Core Ultra 7 32GB RAM 1TB SSD 13.3 Inch Windows 11 Pro Touchscreen Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-summit-e13-ai-evo-intel-core-ultra-7-32gb-ram-1tb-ssd-13.3-inch-windows-9s7-13p411-002/version.asp",
+   "price": 1199.98,
+   "wasPrice": 1299.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-159521-002_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2084620",
+   "mpn": "9S7-182411-1072",
+   "title": "MSI Titan Intel Core Ultra 9 64GB RAM 4TB SSD GeForce RTX 5090 240Hz 18 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/msi-titan-intel-core-ultra-9-64gb-ram-4tb-ssd-geforce-rtx-5090-240hz-18-inc-9s7-182411-1072/version.asp",
+   "price": 5499.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/9S7-182411-1072_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -4596,11 +4896,41 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1935787",
+   "mpn": "FZ-55G6601BE",
+   "title": "Panasonic Toughbook 55 Intel Core i5 16GB RAM 512GB SSD 14 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/panasonic-toughbook-55-rugged-intel-core-i5-1345u-up-to-4.7-ghz-w-fz-55g6601be/version.asp",
+   "price": 2498.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/FZ-55G6601BE_1_classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2081500",
+   "mpn": "RZ09-05818WN3-R3W1",
+   "title": "Razer Blade 16 Intel Core Ultra 9 32GB RAM 1TB SSD RTX 5080 240Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/razer-blade-16-intel-core-ultra-9-32gb-ram-1tb-ssd-rtx-5080-240hz-16-inch-w-rz09-05818wn3-r3w1/version.asp",
+   "price": 3749.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/RZ09-05818WN3-R3W1_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2081501",
    "mpn": "RZ09-05818WN4-R3W1",
    "title": "Razer Blade 16 Intel Core Ultra 9 64GB RAM 1TB SSD RTX 5080 240Hz 16 Inch Windows 11 Gaming Laptop",
    "url": "https://www.laptopsdirect.co.uk/razer-blade-16-intel-core-ultra-9-64gb-ram-1tb-ssd-rtx-5080-240hz-16-inch-w-rz09-05818wn4-r3w1/version.asp",
    "price": 4399.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/RZ09-05818WN3-R3W1_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2081503",
+   "mpn": "RZ09-05819WN9-R3W1",
+   "title": "Razer Blade 16 Intel Core Ultra 9 64GB RAM 2TB SSD RTX 5090 240Hz 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/razer-blade-16-intel-core-ultra-9-64gb-ram-2tb-ssd-rtx-5090-240hz-16-inch-w-rz09-05819wn9-r3w1/version.asp",
+   "price": 5299,
    "image": "https://www.laptopsdirect.co.uk/Images/RZ09-05818WN3-R3W1_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -4616,22 +4946,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2091766",
-   "mpn": "RZ09-05829WR4-R3W1",
-   "title": "Razer Blade 18 Intel Core Ultra 9 32GB RAM 2TB SSD GeForce RTX 5090 240Hz 18 Inch Windows 11 Gaming Laptop",
-   "url": "https://www.laptopsdirect.co.uk/razer-blade-18-intel-core-ultra-9-32gb-ram-2tb-ssd-geforce-rtx-5090-240hz-1-rz09-05829wr4-r3w1/version.asp",
-   "price": 4899,
-   "image": "https://www.laptopsdirect.co.uk/Images/RZ09-05828WR3-R3W1_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2091767",
    "mpn": "RZ09-0582DWR9-R3W1",
    "title": "Razer Blade 18 Intel Core Ultra 9 64GB RAM 2TB SSD GeForce RTX 5090 240Hz 18 Inch Windows 11 Gaming Laptop",
    "url": "https://www.laptopsdirect.co.uk/razer-blade-18-intel-core-ultra-9-64gb-ram-2tb-ssd-geforce-rtx-5090-240hz-1-rz09-0582dwr9-r3w1/version.asp",
    "price": 5599.97,
    "image": "https://www.laptopsdirect.co.uk/Images/RZ09-05828WR3-R3W1_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1990710",
+   "mpn": "NP964QHA-KA1UK",
+   "title": "Samsung Book 5 Pro 360 Intel Core Ultra 7 16GB RAM 512GB SSD 16 Inch Touchscreen Convertible Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/samsung-book5-pro-360-intel-core-ultra-7-16gb-ram-512gb-ssd-16-inch-touchs-np964qha-ka1uk/version.asp",
+   "price": 1809.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/NP964QHA-KA1UK_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -4668,27 +4998,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1912262",
-   "mpn": "NP964XGL-XG1UK",
-   "title": "Samsung Galaxy Book 4 Intel Core Ultra 7 32GB RAM 1TB SSD RTX 4050 16 Inch Windows 11 Pro Touchscreen Laptop",
-   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-book4-intel-core-ultra-7-32gb-ram-1tb-ssd-rtx-4050-16-inch-w-np964xgl-xg1uk/version.asp",
-   "price": 2199.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NP964XGL-XG1UK_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1910252",
-   "mpn": "NP944XGK-KG1UK",
-   "title": "Samsung Galaxy Book 4 Pro Intel Core Ultra 7 32GB RAM 512GB SSD 14 Inch Windows 11 Pro Touchscreen Laptop",
-   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-book4-pro-intel-core-ultra-7-14-inch-32gb-ram-512gb-ssd-wind-np944xgk-kg1uk/version.asp",
-   "price": 1299.97,
-   "wasPrice": 1921.19,
-   "image": "https://www.laptopsdirect.co.uk/Images/NP944XGK-KG1UK_1_Classic.jpg?v=6",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1990765",
    "mpn": "NP964XHA-KG1UK",
    "title": "Samsung Galaxy Book 5 Pro Intel Core Ultra 7 32GB RAM 512GB SSD 16 Inch Touchscreen Windows 11 Pro Laptop",
@@ -4721,16 +5030,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2074977",
-   "mpn": "NP964XJG-KA6UK",
-   "title": "Samsung Galaxy Book 6 Pro Intel Core Ultra 7 16GB RAM 512GB SSD 16 Inch Touchscreen Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-book-6-pro-intel-core-ultra-7-16gb-ram-512gb-ssd-16-inch-tou-np964xjg-ka6uk/version.asp",
-   "price": 2099.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NP944XJG-KA2UK_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2074978",
    "mpn": "NP964XJG-KA8UK",
    "title": "Samsung Galaxy Book 6 Pro Intel Core Ultra 7 32GB RAM 512GB SSD 16 Inch Touchscreen Windows 11 Pro Laptop",
@@ -4751,13 +5050,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2074979",
-   "mpn": "NP964UJH-KA4UK",
-   "title": "Samsung Galaxy Book Intel Core Ultra 7 32GB RAM 512GB SSD 16 Inch Touchscreen Windows 11 Pro Laptop",
-   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-book-intel-core-ultra-7-32gb-ram-512gb-ssd-16-inch-touchscre-np964ujh-ka4uk/version.asp",
-   "price": 3619.97,
-   "wasPrice": 3911.98,
-   "image": "https://www.laptopsdirect.co.uk/Images/NP944XJG-KA2UK_1_Classic.jpg?v=5",
+   "sku": "1832411",
+   "mpn": "NP641BEF-KA1UK",
+   "title": "Samsung Galaxy Book2 Intel Core i5 vPro 8GB RAM 256GB SSD 14inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-book2-intel-core-i5vpro-8gb-ram-256gb-ssd-14inch-windows-11-np641bef-ka1uk/version.asp",
+   "price": 1409.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/NP641BEF-KA1UK_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1931016",
+   "mpn": "NP750XGK-KG3UK",
+   "title": "Samsung Galaxy Book4 Intel Core 5 8GB RAM 256GB SSD 15.6 Inch Windows 11 Laptop",
+   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-book4-intel-core-5-8gb-ram-256gb-ssd-15.6-inch-windows-11-la-np750xgk-kg3uk/version.asp",
+   "price": 749.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/NP750XGK-KG3UK_1_Classic.jpg?v=7",
    "inStock": true
   },
   {
@@ -4769,6 +5077,16 @@
    "price": 799.97,
    "wasPrice": 905.87,
    "image": "https://www.laptopsdirect.co.uk/Images/NP754XGK-KG1UK_1_14228320_Classic.png?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2032851",
+   "mpn": "NP754XGJ-CG2UK",
+   "title": "Samsung Galaxy Book4 Intel Core i7 16GB RAM 256GB SSD 15.6 Inch Windows 11 Pro Laptop",
+   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-book4-intel-core-i5-16gb-ram-256gb-ssd-15.6-inch-windows-11-np754xgj-cg2uk/version.asp",
+   "price": 899.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/NP754XGJ-CG2UK_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -4804,16 +5122,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2721506",
-   "mpn": "XE310XDA-KA3UK",
-   "title": "Samsung Galaxy Go Intel Celeron N4500 4GB RAM 64GB eMMc 11.6 Inch Chromebook",
-   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-go-intel-celeron-n4500-4gb-ram-64gb-emmc-11.6-inch-chromeboo-xe310xda-ka3uk/version.asp",
-   "price": 249.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/XE310XDA-KA3UK_1_Classic.jpg?v=4",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2028590",
    "mpn": "XE340XDA-KA2UK",
    "title": "Samsung Galaxy Go Intel N Series 4GB RAM 64 eMMc 14 Inch Chromebook",
@@ -4821,6 +5129,27 @@
    "price": 229.97,
    "wasPrice": 299,
    "image": "https://www.laptopsdirect.co.uk/Images/XE340XDA-KA2UK_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1978235",
+   "mpn": "XE550XGA-KC2UK",
+   "title": "Samsung Galaxy Plus Intel Core i5 8GB RAM 256 eMMc 15.6 Inch Chromebook",
+   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-plus-intel-core-i5-8gb-ram-256-emmc-15.6-inch-chromebook-xe550xga-kc2uk/version.asp",
+   "price": 449.97,
+   "wasPrice": 751.18,
+   "image": "https://www.laptopsdirect.co.uk/Images/XE550XGA-KC2UK_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1999164",
+   "mpn": "7873-1604",
+   "title": "Stormforce ExoBook 16 Intel Core Ultra 9 32GB RAM 2TB SSD RTX 5090 16 Inch Windows 11 Gaming Laptop",
+   "url": "https://www.laptopsdirect.co.uk/stormforce-hydrabook-16-intel-core-ultra-9-32gb-ram-2tb-ssd-rtx-5090-16-inc-7873-1604/version.asp",
+   "price": 3049,
+   "image": "https://www.laptopsdirect.co.uk/Images/7873-1600_1_Classic.jpg?v=5",
    "inStock": true
   }
  ]
