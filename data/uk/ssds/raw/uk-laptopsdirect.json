@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T03:39:30.414Z",
+ "scrapedAt": "2026-11-01T09:32:49.295Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -9,6 +9,27 @@
    "url": "https://www.laptopsdirect.co.uk/2-power-500gb-m.2-nvme-ssd-ssd7013a/version.asp",
    "price": 81.97,
    "image": "https://www.laptopsdirect.co.uk/Images/SSD7013A_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2047412",
+   "mpn": "CT1000T710SSD5",
+   "title": "Crucial T710 1TB PCIe Gen5 NVMe 2280 M.2 SSD",
+   "url": "https://www.laptopsdirect.co.uk/crucial-t710-1tb-pcie-gen5-nvme-2280-m.2-ssd-ct1000t710ssd5/version.asp",
+   "price": 194.97,
+   "wasPrice": 232.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/CT1000T710SSD5_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2008988",
+   "mpn": "406L7AA",
+   "title": "HP 1TB 2280 PCI-e 4x4 NVMe M.2 Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/hp-1tb-2280-pci-e-4x4-nvme-m.2-406l7aa/version.asp",
+   "price": 2463.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/406L7AA_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -52,6 +73,28 @@
    "url": "https://www.laptopsdirect.co.uk/kingston-ironkey-1.9tb-2.5-m.2-ssd-ikvp80es-1920g/version.asp",
    "price": 555.97,
    "image": "https://www.laptopsdirect.co.uk/Images/IKVP80ES1920G_1_Classic.jpg?v=16",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1448671",
+   "mpn": "SKC600/256G",
+   "title": "Kingston KC600 256GB 2.5 Inch SATA Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/kingston-kc600-256gb-2.5-inch-sata-internal-ssd-skc600-256g/version.asp",
+   "price": 81.97,
+   "wasPrice": 94.79,
+   "image": "https://www.laptopsdirect.co.uk/Images/SKC600256G_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1838480",
+   "mpn": "SEDC600M/1920G",
+   "title": "Kingston KTC DC600M 1920GB 2.5 Inch SATA Enterprise SSD",
+   "url": "https://www.laptopsdirect.co.uk/kingston-ktc-dc600m-1920gb-2.5-sata-enterprise-ssd-sedc600m-1920g/version.asp",
+   "price": 1000,
+   "wasPrice": 1518.8,
+   "image": "https://www.laptopsdirect.co.uk/Images/SEDC600M1920G_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -172,12 +215,33 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2047774",
+   "mpn": "MTFDKBA480TFR-1BC15ABYYR",
+   "title": "Micron 7450 PRO 480GB M.2 PCI Express 4.0 SSD",
+   "url": "https://www.laptopsdirect.co.uk/micron-7450-pro-480gb-m.2-pci-express-4.0-ssd-mtfdkba480tfr-1bc15abyyr/version.asp",
+   "price": 420,
+   "wasPrice": 2048.39,
+   "image": "https://www.laptopsdirect.co.uk/Images/MTFDKBA480TFR-1BC15ABYYR_1_classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1549465",
    "mpn": "MZ-77E1T0B/EU",
    "title": "Samsung 870 EVO 1TB 2.5 Inch SATA III Internal SSD",
    "url": "https://www.laptopsdirect.co.uk/samsung-ssd-int-1tb-870-evo-sata-2.5-inch-mz-77e1t0b-eu/version.asp",
    "price": 249.97,
    "image": "https://www.laptopsdirect.co.uk/Images/A1MZ-77E1T0BEU_7_Classic.jpg?v=24",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1555745",
+   "mpn": "MZ-77E2T0B/EU",
+   "title": "Samsung 870 EVO 2TB 2.5 Inch SATA III Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/samsung-870-evo-2tb-sata-2.5-inch-ssd-mz-77e2t0b-eu/version.asp",
+   "price": 540.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/MZ-77E2T0BEU_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
