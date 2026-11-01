@@ -9,7 +9,14 @@ jobs:
     steps:
       - run: |
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
-          for b in https://store-us.gl-inet.com https://www.gl-inet.com https://shop.gl-inet.com https://store.gl-inet.com https://firewalla.com https://www.linksys.com https://store.amplifi.com https://us.cudy.com https://www.cudy.com https://motorolanetwork.com https://www.motorolanetwork.com https://www.wavlink.com https://shop.netgear.com https://www.netgear.com https://www.tp-link.com/us https://shop.asus.com/us https://store.ui.com https://www.peplink.com https://www.grandstream.com https://www.securifi.com https://www.eero.com https://www.minim.com https://www.zyxel.com/us https://www.tenda.com https://www.reyee.com https://www.mercku.com https://www.plumewifi.com https://www.wifiexpert.com https://www.netgate.com https://shop.netgate.com https://www.protectli.com https://eu.protectli.com https://www.mikrotik.com https://www.microcenter.com https://www.bhphotovideo.com https://www.adorama.com https://www.newegg.com https://www.crutchfield.com; do
-            c=$(curl -s -A "$UA" -m 20 -L -o /tmp/p.json -w '%{http_code}' "$b/products.json?limit=250" || true); n=$(python3 -c "import json;d=json.load(open('/tmp/p.json'));p=d['products'];print(len(p), '|', '; '.join(sorted({x.get('product_type','') for x in p})[:12]), '|', p[0]['variants'][0]['price'] if p else '')" 2>/dev/null || echo "not shopify")
-            echo "$b $c $n"
+          for b in https://www.gl-inet.com https://firewalla.com https://store.amplifi.com https://www.cudy.com; do
+            echo "== $b"; curl -s -A "$UA" -m 20 "$b/meta.json" | python3 -c "import json,sys;d=json.load(sys.stdin);print(d.get('currency'),d.get('country'),d.get('name'))" || true
+            curl -s -A "$UA" -m 20 "$b/products.json?limit=250" -o /tmp/p.json || true
+            python3 - <<'P' || true
+          import json
+          p=json.load(open('/tmp/p.json'))['products']
+          for x in p[:60]:
+              v=x['variants'][0]
+              print(f"  {x.get('product_type','')[:22]:22} | {x['title'][:70]:70} | {v['price']} | {v.get('sku')} | {v['available']} | {len(x['variants'])}v")
+          P
           done
