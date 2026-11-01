@@ -14,9 +14,6 @@ on:
       urls:
         description: "Candidate URLs to fetch (space separated)"
         default: ""
-  push:
-    branches: [claude/project-thread-pxhym8]
-    paths: [".github/workflows/probe-stores.yml", ".github/probe.env"]
 
 permissions:
   contents: read
@@ -34,8 +31,7 @@ jobs:
       - run: npm ci
       - name: Inputs
         run: |
-          if [ -f .github/probe.env ] && [ "${{ github.event_name }}" = "push" ]; then cat .github/probe.env >> "$GITHUB_ENV"; else
-            { echo "REGION=${{ inputs.region }}"; echo "STORES=${{ inputs.stores }}"; echo "URLS=${{ inputs.urls }}"; } >> "$GITHUB_ENV"; fi
+          { echo "REGION=${{ inputs.region }}"; echo "STORES=${{ inputs.stores }}"; echo "URLS=${{ inputs.urls }}"; } >> "$GITHUB_ENV"
       - name: Fetch candidate URLs
         if: env.URLS != ''
         run: |
