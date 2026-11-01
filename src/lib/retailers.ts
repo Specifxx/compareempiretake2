@@ -101,6 +101,14 @@ const AU_RETAILERS = {
   toyworldwarrnambool: { id: "toyworldwarrnambool", name: "Toyworld Warrnambool", site: "toyworldwarrnambool.com.au", color: "#E30613", type: "retailer" },
   sydneyhifimonavale: { id: "sydneyhifimonavale", name: "Sydney Hi-Fi Mona Vale", site: "sydneyhifimonavale.com.au", color: "#1A1A1A", type: "retailer" },
   klappav: { id: "klappav", name: "Klapp AV", site: "klappav.com.au", color: "#0D47A1", type: "retailer" },
+  vinylrevival: { id: "vinylrevival", name: "Vinyl Revival", site: "vinylrevival.com.au", color: "#212121", type: "retailer" },
+  kitchenaidau: { id: "kitchenaidau", name: "KitchenAid", site: "kitchenaid.com.au", color: "#C8102E", type: "official" },
+  tefalau: { id: "tefalau", name: "Tefal", site: "tefal.com.au", color: "#E2001A", type: "official" },
+  industrybeans: { id: "industrybeans", name: "Industry Beans", site: "industrybeans.com", color: "#5D4037", type: "retailer" },
+  eastwoodhifi: { id: "eastwoodhifi", name: "Eastwood Hi-Fi", site: "eastwoodhifi.com.au", color: "#B71C1C", type: "retailer" },
+  thehifishop: { id: "thehifishop", name: "The Hi-Fi Shop", site: "thehifishop.com.au", color: "#263238", type: "retailer" },
+  goldcoasthifi: { id: "goldcoasthifi", name: "Gold Coast Hi-Fi", site: "goldcoasthifi.com.au", color: "#F9A825", type: "retailer" },
+  cosmorex: { id: "cosmorex", name: "Cosmorex Coffee", site: "cosmorex.com.au", color: "#3E2723", type: "retailer" },
 };
 
 export const RETAILERS = {

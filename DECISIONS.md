@@ -746,3 +746,14 @@ out: Workshop Coffee (every machine is sold with its own coffee subscription, a 
 own appliances, which no other store sells), Audio Concept (custom-size soundbars), and roasters with one machine.
 The two AU hi-fi shops skip in-wall and in-ceiling speakers, single left or right earbuds, isolators, "packages"
 and speakers sold "(each)", which would compare one speaker with another store's pair.
+
+## 2026-11-01 — Store survey rounds 7–10: 22 more stores (UK 75→89, AU 87→95)
+
+Four more lists (`docs/stores/candidates8.txt` to `candidates11.txt`, 731 candidates) gave 22 stores that passed a
+test scrape: UK hi-fi dealers (Holburn, HiFi Lounge, Hi-Fi Stereo), coffee roasters that sell machines, Fenwick,
+Zatu Games and Appliance Superstore, brand stores (COSORI, Levoit, Audeze UK; KitchenAid and Tefal AU) and Australian
+hi-fi shops. Mirrors are read once: Bentalls is Fenwick's own stock, The Coffee Collective's products are The Espresso
+Shop's, Townsville Hi-Fi is Gold Coast Hi-Fi's, and Shark (sharkclean.com.au), Dreame and Narwal AU were already read
+under other ids. The candidate check now also skips every site in the retailer registries. Left out: Workshop
+Coffee-style machine + subscription bundles, a drone shop selling training courses, an espresso parts shop, a radio
+shop, a games shop whose "speakers" were Magic cards, and Appliance Superstore's vacuum drawers, hobs and hoods.

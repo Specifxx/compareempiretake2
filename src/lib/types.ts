@@ -152,7 +152,15 @@ export type RetailerId =
   | "toyworldfrankston"
   | "toyworldwarrnambool"
   | "sydneyhifimonavale"
-  | "klappav";
+  | "klappav"
+  | "vinylrevival"
+  | "kitchenaidau"
+  | "tefalau"
+  | "industrybeans"
+  | "eastwoodhifi"
+  | "thehifishop"
+  | "goldcoasthifi"
+  | "cosmorex";
 
 export interface Retailer {
   id: RetailerId;
