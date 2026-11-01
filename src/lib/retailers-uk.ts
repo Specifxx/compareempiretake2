@@ -95,4 +95,9 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-quarterhorse", name: "Quarter Horse Coffee", site: "quarterhorsecoffee.com", color: "#8D6E63", type: "retailer" },
   { id: "uk-artisanroast", name: "Artisan Roast", site: "artisanroast.co.uk", color: "#BF360C", type: "retailer" },
   { id: "uk-dougbrady", name: "Doug Brady Hi-Fi", site: "dougbradyhifi.com", color: "#0D47A1", type: "retailer" },
+  { id: "uk-ajtoys", name: "AJ Toys", site: "ajtoys.co.uk", color: "#D32F2F", type: "retailer" },
+  { id: "uk-atlanticelectrics", name: "Atlantic Electrics", site: "atlanticelectrics.co.uk", color: "#0D47A1", type: "retailer" },
+  { id: "uk-aolcookshop", name: "AOL Cookshop", site: "aolcookshop.co.uk", color: "#2E7D32", type: "retailer" },
+  { id: "uk-rdo", name: "RDO Kitchens & Appliances", site: "rdo.co.uk", color: "#C62828", type: "retailer" },
+  { id: "uk-stuartwestmoreland", name: "Stuart Westmoreland", site: "stuartwestmoreland.co.uk", color: "#1B5E20", type: "retailer" },
 ];

@@ -161,7 +161,10 @@ export type RetailerId =
   | "thehifishop"
   | "goldcoasthifi"
   | "cosmorex"
-  | "audioroom";
+  | "audioroom"
+  | "customht"
+  | "birite"
+  | "videoguys";
 
 export interface Retailer {
   id: RetailerId;
