@@ -701,3 +701,13 @@ After the first test scrape the reader also refuses store-made bundles in every 
 "Protection Pack", "2 Pack", "+ 3 Year"), graphics cards in cameras, microphones in headphones, and 100 V, pendant
 and wall-hanging speakers. Categories that held fewer than three real products at a store were dropped from it
 (Moon Audio and Upscale Audio soundbars, Len Wallis TVs, Home AV Direct speakers).
+
+## 2026-11-01 — Store survey round 2: 43 more stores (US 70→88, UK 36→48, AU 47→60)
+
+A second list of 457 candidates went through the same survey (`docs/stores/candidates3.txt`); 43 stores read cleanly
+and passed a test scrape. The samples showed new kinds of wrong product, so the shared guards now also refuse:
+furniture "consoles" (media and record storage, recliners), amplifiers, turntables, valve and guitar bodies and
+security cameras in cameras, microphones in washing machines, robot vacuums sold with a camera or scale, car vacuums,
+drone service plans, cases and lights, and anything sold "repackaged", "reconditioned" or as an international
+version. Left out: Leica Store Miami (mostly accessories), Di Bartoli (the store stopped answering mid-read), and
+6th Ave's own kits (only its plain cameras and watches are read).

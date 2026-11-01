@@ -112,7 +112,20 @@ export type RetailerId =
   | "edifierau"
   | "georges"
   | "lenwallis"
-  | "teds";
+  | "teds"
+  | "eufyau"
+  | "hyperxau"
+  | "soundcoreau"
+  | "audioconnection"
+  | "baristawarehouse"
+  | "billyhyde"
+  | "bissellau"
+  | "brickbuilder"
+  | "carltonav"
+  | "dronesdirectau"
+  | "hobbywarehouse"
+  | "hooverau"
+  | "westcoasthifi";
 
 export interface Retailer {
   id: RetailerId;

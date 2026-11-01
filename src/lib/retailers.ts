@@ -57,6 +57,20 @@ const AU_RETAILERS = {
   georges: { id: "georges", name: "Georges Cameras", site: "georges.com.au", color: "#E30613", type: "retailer" },
   lenwallis: { id: "lenwallis", name: "Len Wallis Audio", site: "lenwallisaudio.com", color: "#7A1F2B", type: "retailer" },
   teds: { id: "teds", name: "Ted's Cameras", site: "teds.com.au", color: "#E2001A", type: "retailer" },
+  // Store survey round 2, 2026-11-01
+  eufyau: { id: "eufyau", name: "eufy", site: "au.eufy.com", color: "#00A0E9", type: "official" },
+  hyperxau: { id: "hyperxau", name: "HyperX", site: "au.hyperx.com", color: "#E31837", type: "official" },
+  soundcoreau: { id: "soundcoreau", name: "soundcore", site: "au.soundcore.com", color: "#00A6E0", type: "official" },
+  audioconnection: { id: "audioconnection", name: "Audio Connection", site: "audioconnection.com.au", color: "#1B1B1B", type: "retailer" },
+  baristawarehouse: { id: "baristawarehouse", name: "Barista Warehouse", site: "baristawarehouse.com.au", color: "#3E2723", type: "retailer" },
+  billyhyde: { id: "billyhyde", name: "Billy Hyde Music", site: "billyhydemusic.com.au", color: "#D32F2F", type: "retailer" },
+  bissellau: { id: "bissellau", name: "BISSELL", site: "bissell.com.au", color: "#003DA5", type: "official" },
+  brickbuilder: { id: "brickbuilder", name: "Brick Builder", site: "brickbuilder.com.au", color: "#F7C600", type: "retailer" },
+  carltonav: { id: "carltonav", name: "Carlton Audio Visual", site: "carltonaudiovisual.com.au", color: "#14213D", type: "retailer" },
+  dronesdirectau: { id: "dronesdirectau", name: "Drones Direct", site: "dronesdirect.com.au", color: "#0072CE", type: "retailer" },
+  hobbywarehouse: { id: "hobbywarehouse", name: "Hobby Warehouse", site: "hobbywarehouse.com.au", color: "#E53935", type: "retailer" },
+  hooverau: { id: "hooverau", name: "Hoover", site: "hoover.com.au", color: "#C8102E", type: "official" },
+  westcoasthifi: { id: "westcoasthifi", name: "West Coast Hi-Fi", site: "westcoasthifi.com.au", color: "#0D47A1", type: "retailer" },
 };
 
 export const RETAILERS = {
