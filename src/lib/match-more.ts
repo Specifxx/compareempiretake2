@@ -195,8 +195,51 @@ function stripRegionSuffix(code: string | undefined): string | undefined {
   return bare.length >= 5 ? bare : code;
 }
 
+// ---- LEGO: the set number is the product ----
+
+/** LEGO's themes, longest first so "Creator 3in1" wins over "Creator". */
+export const LEGO_THEMES = [
+  "Star Wars", "Technic", "City", "Friends", "Ninjago", "Icons", "Creator 3in1", "Creator", "Harry Potter", "Marvel", "Super Heroes",
+  "DC", "Disney Princess", "Disney", "Duplo", "Speed Champions", "Minecraft", "Architecture", "Ideas", "Art", "Botanicals", "Botanical",
+  "Classic", "Jurassic World", "Super Mario", "Animal Crossing", "DREAMZzz", "Minifigures", "Editions", "Wednesday", "Sonic", "Fortnite",
+  "Pokémon", "Pokemon", "One Piece", "F1", "Gabby's Dollhouse", "Bluey", "Monkie Kid", "Indiana Jones", "Avatar", "Wicked",
+  "The Lord of the Rings", "Lord of the Rings", "Spidey", "Batman", "Avengers", "Spider-Man", "Mandalorian", "Brickheadz", "Dots", "Wednesday",
+].sort((a, b) => b.length - a.length);
+
+const titleCase = (s: string) => s.replace(/\b([A-Z])([A-Z']+)\b/g, (_, a: string, b: string) => a + b.toLowerCase());
+
+export function legoTheme(t: string): string | undefined {
+  // The theme named first wins ("Icons Land Rover Classic Defender" is Icons, not Classic); at one spot the longer name.
+  let hit: string | undefined;
+  let at = Infinity;
+  for (const th of LEGO_THEMES) {
+    const i = t.search(new RegExp(`\\b${th.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i"));
+    if (i >= 0 && i < at) [hit, at] = [th, i];
+  }
+  if (!hit) return undefined;
+  return hit === "Pokemon" ? "Pokémon" : hit === "Botanical" ? "Botanicals" : hit === "Lord of the Rings" ? "The Lord of the Rings" : hit;
+}
+
+function parseLego(o: RawOffer): Parsed | null {
+  const set = o.mpn && /^\d{4,6}$/.test(o.mpn) ? o.mpn : undefined;
+  if (!set) return null;
+  // "TECHNIC - Bugatti Chiron" → "Technic Bugatti Chiron"; the set number goes last.
+  // Hobbyco writes the theme in capitals first ("TECHNIC - Bugatti …"); only that prefix is re-cased.
+  const t0 = clean(o.title.replace(/[®™©]/g, "")).replace(/^([A-Z][A-Z0-9' ]+)(?=\s[-–:]\s)/, (m) => titleCase(m));
+  let name = t0
+    .replace(/\blego\b/gi, " ")
+    .replace(new RegExp(`\\b${set}\\b`, "g"), " ")
+    .replace(/\s[-–:|]\s/g, " ")
+    .replace(/^\s*[-–:|]\s*/, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  name = name.replace(/\bDreamzzz\b/i, "DREAMZzz").replace(/^Dc\b/, "DC");
+  return { brand: "LEGO", model: `${name} ${set}`.trim(), key: `lego${set}`, variant: STD, colour: "", code: set };
+}
+
 export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOffer, t: string) => string | undefined): Parsed | null {
   if (category === "cpus") return parseCpu(o);
+  if (category === "lego") return parseLego(o);
   // Appliance titles drop trademark signs ("Barista Express®") so the same words match across stores.
   const t0 = clean(APPLIANCES.has(category) ? o.title.replace(/[®™©]/g, "") : o.title);
   const brand = brandOf(o, t0) ?? (category === "consoles" ? consoleMaker(t0) : undefined);
@@ -407,6 +450,13 @@ export function moreSpecs(category: CategoryId, titles: string[]): [string, stri
       out.push(["Install", has(/\b(fully integrated|integrated)\b/i) ? "Integrated" : has(/\b(built[- ]?in|built[- ]?under|under[- ]?bench|semi[- ]integrated)\b/i) ? "Built-in" : has(/\b(benchtop|countertop|compact|portable)\b/i) ? "Benchtop" : "Freestanding"]);
       break;
     }
+    case "lego": {
+      const th = legoTheme(all);
+      if (th) out.push(["Theme", th]);
+      const pcs = first(/\b(\d[\d,]{1,5})\s?(?:pcs|pieces|piece)\b/i);
+      if (pcs) out.push(["Pieces", pcs.replace(/,/g, "")]);
+      break;
+    }
     case "desktops": {
       const gbs = [...all.matchAll(/(\d+)\s?(GB|TB)\b/gi)].map((m) => Number(m[1]) * (m[2].toUpperCase() === "TB" ? 1024 : 1));
       const ram = gbs.filter((g) => g >= 4 && g <= 256).sort((a, b) => a - b)[0];
@@ -427,7 +477,7 @@ function litres(all: string, min: number, max: number): number | undefined {
 
 export const MORE_CATEGORIES: CategoryId[] = [
   "smartwatches", "desktops", "printers", "routers", "cpus", "ssds", "ram", "motherboards", "soundbars", "headphones", "speakers", "consoles", "cameras", "drones", "robot-vacuums",
-  "vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers",
+  "vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers", "lego",
 ];
 
 /** Accessories that slip into these categories' listings. */

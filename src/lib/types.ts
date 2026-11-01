@@ -53,7 +53,8 @@ export type CategoryId =
   | "coffee-machines"
   | "fridges"
   | "washing-machines"
-  | "dishwashers";
+  | "dishwashers"
+  | "lego";
 
 /** AU stores keep bare ids; US and UK stores are prefixed with their region ("us-bestbuy", "uk-currys"). */
 export type RetailerId =
@@ -94,7 +95,11 @@ export type RetailerId =
   | "dreame"
   | "sharkninja"
   | "tefal"
-  | "bissell";
+  | "bissell"
+  | "toysrus"
+  | "toyworld"
+  | "kidstuff"
+  | "hobbyco";
 
 export interface Retailer {
   id: RetailerId;

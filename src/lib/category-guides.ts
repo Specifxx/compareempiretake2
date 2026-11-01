@@ -139,6 +139,17 @@ export const CATEGORY_GUIDES: Partial<Record<CategoryId, CategoryGuide>> = {
       ["Is a Dyson worth it over Shark or Samsung?", "Not automatically. Compare suction, run time and the battery's replacement cost; older Dyson models often drop to well under the newest Shark's price."],
     ],
   },
+  lego: {
+    tips: [
+      "Search by the set number on the box (five digits, like 75447): every store prints it, and it is how this page matches the same set across stores.",
+      "LEGO's own recommended price is the ceiling, not the norm: toy stores often run 20–40% off popular sets, and big sets drop most around Black Friday and Boxing Day.",
+      "Sets retire after two or three years and then rise in price, so a set you want that has been on shelves a while is worth buying before it goes.",
+    ],
+    faq: [
+      ["Is LEGO cheaper on eBay?", "Sometimes, for new sealed sets from Australian sellers, especially right after a sale ends. We only show new, Buy It Now listings from sellers in Australia, with postage included."],
+      ["Do Australian prices differ from overseas?", "Yes. Prices here are in Australian dollars from Australian stores; an overseas price usually adds postage and can add GST."],
+    ],
+  },
   "air-fryers": {
     tips: [
       "Size it to your household: about 3–4L cooks for one or two, 5–7L for a family, and a dual-zone model cooks a main and a side at the same time.",

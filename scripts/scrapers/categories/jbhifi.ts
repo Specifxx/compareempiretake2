@@ -133,6 +133,7 @@ export const IS: Record<Cat, (t: string) => boolean> = {
     /robot(ic)? (vacuum|vac|mop|cleaner)|roomba|roborock|deebot|braava|robovac|robot\b.*vacuum|vacuum.*robot|robot.*(mop|vac)/i.test(t) &&
     !/\bbags?\b|\bfilters?\b|\bbrush(es)?\b(?!.*robot)|mop pads?|\bpads?\b|replacement|\bkit\b|accessor(y|ies)|\bcloths?\b|solution|detergent|\bbattery\b|charger|\bwheels?\b|\bparts?\b|\bspare\b|\btank\b(?!.*robot)|\bholder\b|\bfor (roomba|irobot|ecovacs|roborock|dreame|deebot|eufy|xiaomi|neato|shark|samsung|tp-link|tapo)|compatible|window|\bpool\b|\blawn\b|mower|\btoy\b|\bkids\b|gutter|\bramp\b|\bbarrier\b|virtual wall|\bmat\b|\bdock only\b|station only|\bbase only\b/i.test(t),
   ...APPLIANCE_IS,
+  lego: () => false,
 };
 
 /** A Shopify SKU that looks like a manufacturer code (letters and digits), not an internal number. */
@@ -274,6 +275,7 @@ const HANDLES: Record<Cat, RegExp> = {
   fridges: /(fridge|refrigerator|freezer)/,
   "washing-machines": /(washing-machine|washer|dryer|front-load|top-load)/,
   dishwashers: /dishwasher/,
+  lego: /(?!)/,
 };
 const HANDLE_JUNK =
   /refurb|renewed|open-box|ex-display|ex-demo|pre-owned|-case|-cover|folio|sleeve|-bag|backpack|-stand|-mount|bracket|cable|keyboard|protector|stylus|-pen-|pencil|charger|adapter|-dock|-arm|holder|-skin|riser|-strap|-mouse/;
@@ -294,6 +296,7 @@ const HANDLE_ACC: Partial<Record<Cat, RegExp>> = {
   fridges: /filter|car-fridge|portable|12v|camping|-for-|replacement/,
   "washing-machines": /hair-?dryer|hand-dryer|stack|pedestal|hose|-for-|detergent|dishwasher|airer|shoe|salad/,
   dishwashers: /tablet|detergent|rinse|cleaner|-for-|salt/,
+  lego: /(?!)/,
   routers: /extender|repeater|usb|pcie|antenna|access-point|switch|powerline|camera|cable|mount|bracket|adapter/,
   ssds: /enclosure|adapter|caddy|-dock|bracket|cable|reader|laptop|notebook|desktop|gaming-pc|macbook|imac|refurb/,
   ram: /laptop-.*-(i[3579]|ryzen)|gaming-pc|desktop-pc|gddr|graphics|motherboard/,
@@ -330,6 +333,8 @@ const TYPES: Record<Cat, RegExp> = {
   fridges: /APPLIANCE|WHITEGOOD|REFRIG|KITCHEN/i,
   "washing-machines": /APPLIANCE|WHITEGOOD|LAUNDRY/i,
   dishwashers: /APPLIANCE|WHITEGOOD|KITCHEN/i,
+  // LEGO comes only from the toy stores (scripts/scrapers/lego.ts); JB is never read for it.
+  lego: /(?!)/,
 };
 
 /** Marketplace sellers on JB for these are PC stores selling new stock; elsewhere marketplace is mostly refurbished. */

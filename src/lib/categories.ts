@@ -32,9 +32,10 @@ const SEARCH_NAMES: Partial<Record<CategoryId, string>> = {
   "washing-machines": "Washing Machine",
   "robot-vacuums": "Robot Vacuum",
   "desktops": "Desktop PC",
+  lego: "LEGO",
 };
 
-export type DepartmentId = "phones-wearables" | "computers" | "pc-parts" | "tv-audio" | "gaming" | "cameras" | "home" | "kitchen" | "whitegoods";
+export type DepartmentId = "phones-wearables" | "computers" | "pc-parts" | "tv-audio" | "gaming" | "cameras" | "home" | "kitchen" | "whitegoods" | "toys";
 
 export const DEPARTMENTS: { id: DepartmentId; name: string }[] = [
   { id: "phones-wearables", name: "Phones & Wearables" },
@@ -46,6 +47,7 @@ export const DEPARTMENTS: { id: DepartmentId; name: string }[] = [
   { id: "home", name: "Vacuums & Cleaning" },
   { id: "kitchen", name: "Kitchen" },
   { id: "whitegoods", name: "Fridges & Laundry" },
+  { id: "toys", name: "Toys & LEGO" },
 ];
 
 const c = (id: CategoryId, name: string, noun: string, emoji: string, department: DepartmentId, blurb: string): Category => ({
@@ -88,10 +90,11 @@ export const CATEGORIES: Category[] = [
   c("fridges", "Fridges & Freezers", "fridge", "🧊", "whitegoods", "French door, side by side, top and bottom mount fridges and freezers, matched by model code."),
   c("washing-machines", "Washing Machines & Dryers", "washing machine", "🫧", "whitegoods", "Front and top loaders, dryers and washer-dryers, matched by model code."),
   c("dishwashers", "Dishwashers", "dishwasher", "🍽️", "whitegoods", "Freestanding, built-in and integrated dishwashers, matched by model code."),
+  c("lego", "LEGO", "LEGO set", "🧱", "toys", "Every LEGO set matched by its set number, across Australia's toy stores."),
 ];
 
 /** Shown in the header's category bar; everything else is one click away in "All categories". */
-export const FEATURED: CategoryId[] = ["phones", "laptops", "tvs", "headphones", "tablets", "monitors", "graphics-cards", "consoles", "fridges", "coffee-machines"];
+export const FEATURED: CategoryId[] = ["phones", "laptops", "tvs", "headphones", "tablets", "monitors", "graphics-cards", "consoles", "lego", "fridges", "coffee-machines"];
 
 export const liveCategories = () => CATEGORIES.filter((c) => c.live);
 export const categoryById = (id: string) => CATEGORIES.find((c) => c.id === id);

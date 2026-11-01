@@ -45,7 +45,11 @@ jobs:
         env:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
-        run: npx tsx scripts/ebay-prices.ts
+          # Search Console page demand, written daily to the `demand` branch by TCGEmpire's sister-demand job.
+          EBAY_DEMAND_FILE: ${{ runner.temp }}/gsc-pages.json
+        run: |
+          git fetch --depth=1 origin demand && git show FETCH_HEAD:gsc-pages.json > "$EBAY_DEMAND_FILE" || echo "No demand branch yet"
+          npx tsx scripts/ebay-prices.ts
       - name: Commit data
         run: |
           git config user.name "compare-empire-bot"

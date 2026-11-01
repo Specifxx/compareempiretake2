@@ -6,14 +6,20 @@
  *   EBAY_DAILY_CALLS                      Browse calls to spend (default 4950 of eBay's 5,000/day;
  *                                         the OAuth token call is a different API and doesn't count)
  *
- * Plan (see DECISIONS.md, "eBay prices: spend 5,000 calls on the products people click"):
- * 1. Candidates: every product in every live region whose best price is at least 10 in its currency.
- * 2. Score = demand × staleness. Demand: stores stocking it (the best popularity signal we have),
- *    newer models, a category weight (phones, consoles, GPUs, headphones… are where eBay is cheapest
- *    and most clicked), price (commission is a share of the sale) and a boost for the US, the market
- *    we're growing. Staleness: never checked first, then the longest since its last check.
- * 3. The top ~25% by demand are refreshed every day; the rest of the budget rotates through the tail,
- *    so every product over the floor gets a fresh price within a few days.
+ * Plan (see DECISIONS.md, "eBay prices: spend 5,000 calls on the products people click", and
+ * "eBay quota follows Google search demand", 2026-11-01):
+ * 1. Candidates: every product in every live region whose best price is at least 10 in its currency
+ *    (owner, 2026-11-01: nothing under $10 spends a call).
+ * 2. Demand: what people search for first. EBAY_DEMAND_FILE is Search Console's page clicks and
+ *    impressions for the last 56 days (TCGEmpire's sister-demand job writes it to this repo's `demand`
+ *    branch every day; the workflow fetches it). A product page with impressions, a compare page naming
+ *    it, and its category page's impressions all raise it. Then price (commission is a share of the
+ *    sale, so the square root of the price, not its log), stores stocking it, newer models, a category
+ *    weight and a US boost. Without the file the ranking falls back to the store-count signals alone.
+ * 3. The top ~35% by demand are refreshed every day; the rest of the budget rotates through the tail,
+ *    stalest first, so every product over the floor gets a fresh price within a few days.
+ * 4. One budget per eBay quota day (midnight to midnight Pacific): a second run on the same day spends
+ *    only what the first left, instead of running into eBay's limit.
  *
  * One search per product, in its own marketplace (EBAY_AU, EBAY_US, EBAY_GB): new, Buy It Now,
  * located in that country, priced within a band around our best store price, so accessories and
@@ -32,6 +38,10 @@ const ID = process.env.EBAY_CLIENT_ID;
 const SECRET = process.env.EBAY_CLIENT_SECRET;
 const BUDGET = Number(process.env.EBAY_DAILY_CALLS || 4950);
 const MIN_PRICE = 10;
+/** Above this a "price" is a store's placeholder (9999999.99) or a server rack, not something people buy on eBay. */
+const MAX_PRICE = 15_000;
+/** Price stops adding demand here: a A$12,000 camera is not clicked twelve times as often as a A$1,000 one. */
+const PRICE_CAP = 4_000;
 // `zip`: a central postcode, sent as the buyer's location so eBay quotes real postage there (visitor feedback on
 // WargameCompare, 2026-10-31: postage the row did not show made eBay rows "a lot of wasted clicks").
 const MARKET: Record<RegionId, { id: string; currency: string; country: string; zip: string }> = {
@@ -46,6 +56,8 @@ const CATEGORY_WEIGHT: Partial<Record<CategoryId, number>> = {
   "robot-vacuums": 0.9, motherboards: 0.9, routers: 0.8, desktops: 0.7, printers: 0.6,
   // Appliances: eBay sells small ones new; big whitegoods are mostly pick-up or second-hand there.
   vacuums: 1.0, "coffee-machines": 1.0, "air-fryers": 0.8, fridges: 0.3, "washing-machines": 0.3, dishwashers: 0.3,
+  // New sealed LEGO is one of eBay's biggest toy categories, and every listing names the set number.
+  lego: 1.4,
 };
 const REGION_WEIGHT: Record<RegionId, number> = { au: 1.0, us: 1.25, uk: 0.9 };
 /** Words that mark a listing as something other than the product itself. */
@@ -63,7 +75,47 @@ export interface EbayListing {
 }
 type EbayFile = { updatedAt: string; listings: Record<string, EbayListing>; checked: Record<string, string> };
 
-interface Candidate { region: RegionId; key: string; p: Phone; demand: number; last?: string }
+interface Candidate { region: RegionId; key: string; p: Phone; demand: number; searched: boolean; last?: string }
+
+/** Search Console page rows: path -> [clicks, impressions, position]. */
+type DemandFile = { updatedAt: string; days: number; pages: Record<string, [number, number, number]> };
+
+export interface SearchDemand {
+  /** "<region>:<category>/<slug>" -> clicks × 20 + impressions on the product's own page and its compare pages. */
+  product: Map<string, number>;
+  /** "<region>:<category>" -> the same for the category's own pages (category, browse, deals). */
+  category: Map<string, number>;
+}
+
+const REGION_PREFIX = /^\/(us|uk)(?=\/)/;
+/** Pages that are a category's own, under any region prefix. */
+const CATEGORY_PAGE = /^\/(?:browse\/|deals\/)?([a-z-]+)(?:\/\d+)?$/;
+
+/** Folds Search Console's page rows into product and category demand. Compare pages credit both products. */
+export function searchDemand(file: DemandFile | null, categories: Set<string>, slugsByRegion: Record<RegionId, Map<string, string[]>>): SearchDemand {
+  const product = new Map<string, number>();
+  const category = new Map<string, number>();
+  const add = (m: Map<string, number>, k: string, v: number) => m.set(k, (m.get(k) ?? 0) + v);
+  for (const [raw, [clicks, impr]] of Object.entries(file?.pages ?? {})) {
+    const score = clicks * 20 + impr;
+    if (!score) continue;
+    const region = (raw.match(REGION_PREFIX)?.[1] ?? "au") as RegionId;
+    const path = raw.replace(REGION_PREFIX, "");
+    const parts = path.split("/").filter(Boolean);
+    if (parts.length === 2 && categories.has(parts[0])) {
+      add(product, `${region}:${parts[0]}/${parts[1]}`, score);
+      continue;
+    }
+    if (parts[0] === "compare" && parts[1]?.includes("-vs-")) {
+      // Compare pages are global; they rank in Australia, so the AU products get the credit.
+      for (const slug of parts[1].split("-vs-")) for (const cat of slugsByRegion.au.get(slug) ?? []) add(product, `au:${cat}/${slug}`, score / 2);
+      continue;
+    }
+    const cat = path.match(CATEGORY_PAGE)?.[1];
+    if (cat && categories.has(cat)) add(category, `${region}:${cat}`, score);
+  }
+  return { product, category };
+}
 
 function loadCatalog(region: RegionId): Phone[] {
   return CATEGORIES.flatMap((c) => {
@@ -80,15 +132,53 @@ function loadFile(region: RegionId): EbayFile {
   return existsSync(f) ? (JSON.parse(readFileSync(f, "utf8")) as EbayFile) : { updatedAt: "", listings: {}, checked: {} };
 }
 
-function demand(p: Phone, region: RegionId): number {
+/**
+ * How many eBay clicks (and how much commission) a fresh price here is likely to earn. Searched pages
+ * dominate: a page Google showed 40 times outranks an unsearched one in nine stores. Price counts as its
+ * square root: a A$1,000 TV earns ten times the commission of a A$10 cable but is clicked less often.
+ */
+export function demand(p: Phone, region: RegionId, search?: SearchDemand): number {
   const stores = Math.log2(1 + p.retailerCount);
   const recency = 1 + Math.min(p.generation, 30) / 60;
-  const price = Math.log10(Math.max(p.bestPrice, MIN_PRICE));
-  return stores * recency * price * (CATEGORY_WEIGHT[p.category] ?? 1) * REGION_WEIGHT[region];
+  const price = Math.sqrt(Math.min(Math.max(p.bestPrice, MIN_PRICE), PRICE_CAP) / 100);
+  const page = search?.product.get(`${region}:${p.category}/${p.slug}`) ?? 0;
+  const cat = search?.category.get(`${region}:${p.category}`) ?? 0;
+  const searched = 1 + 2 * Math.log2(1 + page / 5) + 0.25 * Math.log2(1 + cat / 100);
+  return (1 + stores) * recency * price * searched * (CATEGORY_WEIGHT[p.category] ?? 1) * REGION_WEIGHT[region];
 }
 
-/** The words a listing title must contain: brand plus the model's distinctive tokens. */
-function mustHave(p: Phone): string[] {
+const pacificDay = (d = new Date()) => d.toLocaleDateString("en-CA", { timeZone: "America/Los_Angeles" });
+
+function loadDemand(): DemandFile | null {
+  const f = process.env.EBAY_DEMAND_FILE;
+  if (!f || !existsSync(f)) {
+    console.log("eBay: no Search Console demand file; ranking by store signals only");
+    return null;
+  }
+  try {
+    const d = JSON.parse(readFileSync(f, "utf8")) as DemandFile;
+    const ageDays = (Date.now() - Date.parse(d.updatedAt)) / 86_400_000;
+    console.log(`eBay: Search Console demand from ${d.updatedAt.slice(0, 10)} (${Object.keys(d.pages).length} pages, ${d.days} days)`);
+    if (!(ageDays < 14)) {
+      console.warn("eBay: the demand file is over two weeks old; ignoring it");
+      return null;
+    }
+    return d;
+  } catch (e) {
+    console.warn(`eBay: unreadable demand file: ${(e as Error).message}`);
+    return null;
+  }
+}
+
+/** A LEGO set's number ("75447"), from its URL. */
+const legoSet = (p: Phone) => (p.category === "lego" ? p.slug.match(/^lego-(\d{4,6})$/)?.[1] : undefined);
+/** LEGO listings that are not the sealed set: parts, instructions, figures out of it, knock-offs. */
+const NOT_THE_SET = /\b(instructions?( only)?|manual only|minifigs? only|minifigures? only|no minifig\w*|no box|without box|incomplete|bulk|pieces only|parts only|custom|moc|compatible|led light|light kit|lighting kit|display case|frame)\b/i;
+
+/** The words a listing title must contain: brand plus the model's distinctive tokens; for LEGO, the set number. */
+export function mustHave(p: Phone): string[] {
+  const set = legoSet(p);
+  if (set) return ["lego", set];
   const words = `${p.brand} ${p.model}`
     .toLowerCase()
     .replace(/[^a-z0-9.+ ]/g, " ")
@@ -122,14 +212,16 @@ type Summary = {
 
 let spent = 0;
 let stopped = false;
+let allowance = BUDGET;
 
 async function search(tok: string, c: Candidate): Promise<EbayListing | null | "skip"> {
-  if (stopped || spent >= BUDGET) return "skip";
+  if (stopped || spent >= allowance) return "skip";
   spent++;
   const m = MARKET[c.region];
   const lo = Math.max(MIN_PRICE, Math.floor(c.p.bestPrice * 0.45));
   const hi = Math.ceil(c.p.bestPrice * 1.35);
-  const q = `${c.p.brand} ${c.p.model}`.slice(0, 100);
+  const set = legoSet(c.p);
+  const q = set ? `LEGO ${set}` : `${c.p.brand} ${c.p.model}`.slice(0, 100);
   const filter = [`conditionIds:{1000}`, `buyingOptions:{FIXED_PRICE}`, `itemLocationCountry:${m.country}`, `deliveryCountry:${m.country}`, `price:[${lo}..${hi}]`, `priceCurrency:${m.currency}`].join(",");
   const url = `https://api.ebay.com/buy/browse/v1/item_summary/search?q=${encodeURIComponent(q)}&filter=${encodeURIComponent(filter)}&sort=price&limit=25`;
   for (let attempt = 0; attempt < 3; attempt++) {
@@ -163,6 +255,7 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
     };
     const ok = (body.itemSummaries ?? []).filter((s) => {
       const t = norm(s.title);
+      if (set && (NOT_THE_SET.test(s.title) || !new RegExp(`\\b${set}\\b`).test(s.title))) return false;
       return s.price && postage(s) != null && !NOT_THE_PRODUCT.test(s.title) && need.every((w) => t.includes(w));
     });
     const best = ok.sort((a, b) => Number(a.price!.value) + postage(a)! - (Number(b.price!.value) + postage(b)!))[0];
@@ -186,25 +279,49 @@ async function main() {
     console.log("EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set; skipping eBay prices.");
     return;
   }
+  // One budget per eBay quota day: a second run the same Pacific day spends only what is left.
+  const prev = existsSync("data/ebay-status.json") ? (JSON.parse(readFileSync("data/ebay-status.json", "utf8")) as { quotaDay?: string; quotaSpent?: number; rateLimited?: boolean }) : {};
+  const today = pacificDay();
+  const usedToday = prev.quotaDay === today ? (prev.quotaSpent ?? 0) : 0;
+  allowance = prev.quotaDay === today && prev.rateLimited ? 0 : Math.max(0, BUDGET - usedToday);
+  if (!allowance) {
+    console.log(`eBay: today's ${BUDGET} calls (eBay quota day ${today}, Pacific) are already spent; skipping.`);
+    return;
+  }
   const files = Object.fromEntries(REGION_IDS.map((r) => [r, loadFile(r)])) as Record<RegionId, EbayFile>;
+  const catalogs = Object.fromEntries(REGION_IDS.map((r) => [r, loadCatalog(r)])) as Record<RegionId, Phone[]>;
+  const slugsByRegion = Object.fromEntries(
+    REGION_IDS.map((r) => {
+      const m = new Map<string, string[]>();
+      for (const p of catalogs[r]) m.set(p.slug, [...(m.get(p.slug) ?? []), p.category]);
+      return [r, m];
+    }),
+  ) as Record<RegionId, Map<string, string[]>>;
+  const gsc = searchDemand(loadDemand(), new Set(CATEGORIES.map((c) => c.id)), slugsByRegion);
   const all: Candidate[] = REGION_IDS.flatMap((region) =>
-    loadCatalog(region)
-      .filter((p) => p.bestPrice >= MIN_PRICE)
+    catalogs[region]
+      .filter((p) => p.bestPrice >= MIN_PRICE && p.bestPrice <= MAX_PRICE)
       .map((p) => {
         const key = `${p.category}/${p.slug}`;
-        return { region, key, p, demand: demand(p, region), last: files[region].checked[key] };
+        const searched = gsc.product.has(`${region}:${key}`);
+        return { region, key, p, demand: demand(p, region, gsc), searched, last: files[region].checked[key] };
       }),
   );
-  // Tier 1: the most in-demand quarter of the budget, every day. Tier 2: the rest, stalest first.
+  // Tier 1: the most in-demand 35% of the budget, every day. Tier 2: the rest, stalest first.
   const byDemand = [...all].sort((a, b) => b.demand - a.demand);
-  const daily = byDemand.slice(0, Math.floor(BUDGET * 0.25));
+  const daily = byDemand.slice(0, Math.floor(allowance * 0.35));
   const dailyKeys = new Set(daily.map((c) => `${c.region}:${c.key}`));
   const age = (c: Candidate) => (c.last ? Date.now() - Date.parse(c.last) : Infinity);
   // Never-checked products first (most in demand first), then the largest demand × days since checked.
   const rank = (c: Candidate) => (c.last ? c.demand * age(c) : Number.MAX_VALUE / 2 + c.demand);
   const rest = byDemand.filter((c) => !dailyKeys.has(`${c.region}:${c.key}`)).sort((a, b) => rank(b) - rank(a));
-  const queue = [...daily, ...rest].slice(0, BUDGET);
-  console.log(`eBay: ${all.length} products ≥ ${MIN_PRICE}; checking ${queue.length} today (${daily.length} daily, ${queue.length - daily.length} rotating)`);
+  const queue = [...daily, ...rest].slice(0, allowance);
+  const searchedCount = all.filter((c) => c.searched).length;
+  const searchedInDaily = daily.filter((c) => c.searched).length;
+  console.log(
+    `eBay: ${all.length} products ≥ ${MIN_PRICE} (${searchedCount} with Google impressions); checking ${queue.length} today ` +
+      `(${daily.length} daily, ${searchedInDaily} of them searched; ${queue.length - daily.length} rotating)`,
+  );
 
   const tok = await token();
   let found = 0;
@@ -230,12 +347,23 @@ async function main() {
     mkdirSync(dataPath(region) || "data", { recursive: true });
     writeFileSync(fileOf(region), JSON.stringify(f) + "\n");
   }
-  const status = { ranAt: new Date().toISOString(), budget: BUDGET, spent, found, rateLimited: stopped, candidates: all.length };
+  const status = {
+    ranAt: new Date().toISOString(),
+    budget: BUDGET,
+    spent,
+    found,
+    rateLimited: stopped,
+    candidates: all.length,
+    searched: searchedCount,
+    quotaDay: today,
+    quotaSpent: usedToday + spent,
+  };
   writeFileSync("data/ebay-status.json", JSON.stringify(status, null, 1) + "\n");
   console.log(`eBay: spent ${spent} calls, found ${found} listings${stopped ? " (stopped at rate limit)" : ""}`);
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+if (process.argv[1]?.endsWith("ebay-prices.ts"))
+  main().catch((e) => {
+    console.error(e);
+    process.exit(1);
+  });

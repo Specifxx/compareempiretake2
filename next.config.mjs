@@ -1,5 +1,5 @@
 // Must equal the CATEGORIES ids in src/lib/categories.ts (tests/routes.test.ts).
-const CATEGORY_IDS = "phones|tablets|smartwatches|laptops|desktops|monitors|printers|routers|graphics-cards|cpus|ssds|ram|motherboards|tvs|soundbars|headphones|speakers|consoles|cameras|drones|robot-vacuums|vacuums|air-fryers|coffee-machines|fridges|washing-machines|dishwashers";
+const CATEGORY_IDS = "phones|tablets|smartwatches|laptops|desktops|monitors|printers|routers|graphics-cards|cpus|ssds|ram|motherboards|tvs|soundbars|headphones|speakers|consoles|cameras|drones|robot-vacuums|vacuums|air-fryers|coffee-machines|fridges|washing-machines|dishwashers|lego";
 // Product pages are functions. Vercel's CDN keeps each copy for a day and every deploy starts a fresh cache,
 // so a copy never outlives the data it was rendered from. The header is never forwarded to browsers, and no ISR entry is written.
 const PRODUCT_CDN = [{ key: "Vercel-CDN-Cache-Control", value: "public, s-maxage=86400, stale-while-revalidate=86400" }];

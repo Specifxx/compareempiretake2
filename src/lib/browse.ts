@@ -175,6 +175,10 @@ export const FACETS: Record<string, FacetDef[]> = {
     { key: "Type", label: "Type" },
     { key: "Capacity", label: "Capacity", bucket: (v) => bucketNum(v, [[0, 8, "Under 8kg"], [8, 10, "8–9.5kg"], [10, 12, "10–11.5kg"], [12, 99, "12kg+"]]) },
   ],
+  lego: [
+    { key: "Theme", label: "Theme" },
+    { key: "Pieces", label: "Pieces", bucket: (v) => bucketNum(v, [[0, 250, "Under 250"], [250, 750, "250–749"], [750, 2000, "750–1,999"], [2000, 99999, "2,000+"]]) },
+  ],
   dishwashers: [
     { key: "Install", label: "Install" },
     { key: "Place settings", label: "Place settings" },

@@ -3,7 +3,8 @@
   "git": {
     "deploymentEnabled": {
       "reports": false,
-      "forum": false
+      "forum": false,
+      "demand": false
     }
   },
   "ignoreCommand": "bash scripts/vercel-ignore-build.sh"
