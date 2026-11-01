@@ -87,4 +87,7 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-cosori", name: "COSORI", site: "cosori.co.uk", color: "#D32F2F", type: "official" },
   { id: "uk-hifilounge", name: "HiFi Lounge", site: "hifilounge.co.uk", color: "#212121", type: "retailer" },
   { id: "uk-levoit", name: "Levoit", site: "levoit.co.uk", color: "#00A19A", type: "official" },
+  { id: "uk-zatu", name: "Zatu Games", site: "zatu.com", color: "#E65100", type: "retailer" },
+  { id: "uk-appliancesuperstore", name: "Appliance Superstore", site: "appliancesuperstore.co.uk", color: "#00529B", type: "retailer" },
+  { id: "uk-audeze", name: "Audeze", site: "audeze.co.uk", color: "#1A1A1A", type: "official" },
 ];

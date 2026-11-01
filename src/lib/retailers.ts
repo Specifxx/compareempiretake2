@@ -106,6 +106,8 @@ const AU_RETAILERS = {
   tefalau: { id: "tefalau", name: "Tefal", site: "tefal.com.au", color: "#E2001A", type: "official" },
   industrybeans: { id: "industrybeans", name: "Industry Beans", site: "industrybeans.com", color: "#5D4037", type: "retailer" },
   eastwoodhifi: { id: "eastwoodhifi", name: "Eastwood Hi-Fi", site: "eastwoodhifi.com.au", color: "#B71C1C", type: "retailer" },
+  thehifishop: { id: "thehifishop", name: "The Hi-Fi Shop", site: "thehifishop.com.au", color: "#263238", type: "retailer" },
+  goldcoasthifi: { id: "goldcoasthifi", name: "Gold Coast Hi-Fi", site: "goldcoasthifi.com.au", color: "#F9A825", type: "retailer" },
 };
 
 export const RETAILERS = {
