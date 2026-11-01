@@ -157,9 +157,6 @@ export type RetailerId =
   | "kitchenaidau"
   | "tefalau"
   | "industrybeans"
-  | "sharkau"
-  | "dreameau"
-  | "narwalau"
   | "eastwoodhifi";
 
 export interface Retailer {

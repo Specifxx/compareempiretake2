@@ -105,9 +105,6 @@ const AU_RETAILERS = {
   kitchenaidau: { id: "kitchenaidau", name: "KitchenAid", site: "kitchenaid.com.au", color: "#C8102E", type: "official" },
   tefalau: { id: "tefalau", name: "Tefal", site: "tefal.com.au", color: "#E2001A", type: "official" },
   industrybeans: { id: "industrybeans", name: "Industry Beans", site: "industrybeans.com", color: "#5D4037", type: "retailer" },
-  sharkau: { id: "sharkau", name: "Shark Ninja", site: "sharkclean.com.au", color: "#1A1A1A", type: "official" },
-  dreameau: { id: "dreameau", name: "Dreame", site: "dreame.com.au", color: "#2B2B2B", type: "official" },
-  narwalau: { id: "narwalau", name: "Narwal", site: "narwal.com.au", color: "#0A6EBD", type: "official" },
   eastwoodhifi: { id: "eastwoodhifi", name: "Eastwood Hi-Fi", site: "eastwoodhifi.com.au", color: "#B71C1C", type: "retailer" },
 };
 
