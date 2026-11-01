@@ -737,3 +737,12 @@ locators, specialty coffee roasters that sell home machines, independent LEGO sh
 Lakeland show UK prices without VAT on their feeds, so they are left out: a price a buyer cannot pay is worse than
 no price. "+" bundles and loose motors are now refused in vacuums, and Haden is read only for the categories that held
 three real products (its dishwashers did not).
+
+## 2026-11-01 — Store survey round 6: 4 more stores (UK 73→75, AU 85→87)
+
+109 candidates (`docs/stores/candidates7.txt`) gave nine readable stores, and four passed: Kiss the Hippo and Horsham
+Coffee Roaster (UK coffee machines), Sydney Hi-Fi Mona Vale and Klapp AV (AU speakers, soundbars, headphones). Left
+out: Workshop Coffee (every machine is sold with its own coffee subscription, a store bundle), Willow (one brand's
+own appliances, which no other store sells), Audio Concept (custom-size soundbars), and roasters with one machine.
+The two AU hi-fi shops skip in-wall and in-ceiling speakers, single left or right earbuds, isolators, "packages"
+and speakers sold "(each)", which would compare one speaker with another store's pair.
