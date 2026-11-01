@@ -16,8 +16,10 @@
  *    it, and its category page's impressions all raise it. Then price (commission is a share of the
  *    sale, so the square root of the price, not its log), stores stocking it, newer models, a category
  *    weight and a US boost. Without the file the ranking falls back to the store-count signals alone.
- * 3. The top ~35% by demand are refreshed every day; the rest of the budget rotates through the tail,
- *    stalest first, so every product over the floor gets a fresh price within a few days.
+ * 3. Coverage first, the US first (owner, 2026-11-01; `plan`): every product never priced on eBay, then
+ *    every product due again (a week after its last check, three days when it has Google impressions),
+ *    each group US, then Australia, then the UK, by demand within a region. Nothing is searched twice
+ *    before every product over the floor has been searched once; spare calls go to the stalest.
  * 4. One budget per eBay quota day (midnight to midnight Pacific): a second run on the same day spends
  *    only what the first left, instead of running into eBay's limit.
  *
@@ -274,6 +276,31 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
   return null;
 }
 
+/** Days before a product is priced again (owner, 2026-11-01: coverage first, about once a week). */
+export const REFRESH_DAYS = 7;
+/** Products people already find on Google come round sooner. */
+export const SEARCHED_REFRESH_DAYS = 3;
+/** The order regions are served in (owner, 2026-11-01: the US first). */
+export const REGION_ORDER: RegionId[] = ["us", "au", "uk"];
+
+/**
+ * Today's queue, coverage first (owner, 2026-11-01): every product that has never had an eBay price, US
+ * first and most in demand first within a region; then every product whose last check is older than its
+ * round (a week, three days when it has Google impressions), the same order; only then, if calls remain,
+ * the rest by demand × days since checked, so the budget is never left unspent. No product is searched
+ * twice before every product over the floor has been searched once.
+ */
+export function plan<C extends { region: RegionId; demand: number; searched: boolean; last?: string }>(all: C[], allowance: number, now: number): C[] {
+  const days = (c: C) => (c.last ? (now - Date.parse(c.last)) / 86_400_000 : Infinity);
+  const regionRank = (c: C) => REGION_ORDER.indexOf(c.region);
+  const byRegionThenDemand = (a: C, b: C) => regionRank(a) - regionRank(b) || b.demand - a.demand;
+  const never = all.filter((c) => !c.last).sort(byRegionThenDemand);
+  const due = all.filter((c) => c.last && days(c) >= (c.searched ? SEARCHED_REFRESH_DAYS : REFRESH_DAYS)).sort(byRegionThenDemand);
+  const taken = new Set([...never, ...due]);
+  const rest = all.filter((c) => !taken.has(c)).sort((a, b) => b.demand * days(b) - a.demand * days(a));
+  return [...never, ...due, ...rest].slice(0, Math.max(0, allowance));
+}
+
 async function main() {
   if (!ID || !SECRET) {
     console.log("EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not set; skipping eBay prices.");
@@ -307,20 +334,13 @@ async function main() {
         return { region, key, p, demand: demand(p, region, gsc), searched, last: files[region].checked[key] };
       }),
   );
-  // Tier 1: the most in-demand 35% of the budget, every day. Tier 2: the rest, stalest first.
-  const byDemand = [...all].sort((a, b) => b.demand - a.demand);
-  const daily = byDemand.slice(0, Math.floor(allowance * 0.35));
-  const dailyKeys = new Set(daily.map((c) => `${c.region}:${c.key}`));
-  const age = (c: Candidate) => (c.last ? Date.now() - Date.parse(c.last) : Infinity);
-  // Never-checked products first (most in demand first), then the largest demand × days since checked.
-  const rank = (c: Candidate) => (c.last ? c.demand * age(c) : Number.MAX_VALUE / 2 + c.demand);
-  const rest = byDemand.filter((c) => !dailyKeys.has(`${c.region}:${c.key}`)).sort((a, b) => rank(b) - rank(a));
-  const queue = [...daily, ...rest].slice(0, allowance);
+  const queue = plan(all, allowance, Date.now());
   const searchedCount = all.filter((c) => c.searched).length;
-  const searchedInDaily = daily.filter((c) => c.searched).length;
+  const fresh = queue.filter((c) => !c.last).length;
+  const byRegion = REGION_IDS.map((r) => `${r} ${queue.filter((c) => c.region === r).length}`).join(", ");
   console.log(
-    `eBay: ${all.length} products ≥ ${MIN_PRICE} (${searchedCount} with Google impressions); checking ${queue.length} today ` +
-      `(${daily.length} daily, ${searchedInDaily} of them searched; ${queue.length - daily.length} rotating)`,
+    `eBay: ${all.length} products ≥ ${MIN_PRICE} (${searchedCount} with Google impressions, ` +
+      `${all.filter((c) => !c.last).length} never priced); checking ${queue.length} today (${fresh} for the first time; ${byRegion})`,
   );
 
   const tok = await token();
@@ -336,8 +356,9 @@ async function main() {
     } else delete f.listings[c.key];
   });
 
-  // Drop listings older than 5 days: an eBay price that old is likely gone.
-  const cutoff = Date.now() - 5 * 86_400_000;
+  // Drop listings older than the weekly round plus two days: by then the product was due again and
+  // its search failed or was skipped, so the listing is likely gone.
+  const cutoff = Date.now() - (REFRESH_DAYS + 2) * 86_400_000;
   for (const region of REGION_IDS) {
     const f = files[region];
     for (const [k, l] of Object.entries(f.listings)) if (Date.parse(l.checkedAt) < cutoff) delete f.listings[k];
