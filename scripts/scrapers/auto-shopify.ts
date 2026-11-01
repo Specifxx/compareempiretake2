@@ -19,7 +19,7 @@ type Cat = CategoryId;
 
 /** Never new stock, whatever the category. */
 const USED =
-  /refurb|renewed|re-newed|pre-?owned|open[- ]?box|ex[- ]?(display|demo)|b[- ]grade|b-?stock|\bused\b|second[- ]?hand|grade [abc]\b|\bpristine\b|\bexcellent condition\b|\bvery good\b|\bgood condition\b|\bdamaged\b|\bscratch(ed)?\b|\bdent(ed)?\b|gift ?card|e-?gift|protection plan|extended warranty|\bwarranty\b|trade-?in|mystery|\brental\b|\bdeposit\b|\bpre-?order deposit\b/i;
+  /refurb|renewed|re-newed|pre-?owned|open[- ]?box|ex[- ]?(display|demo)|b[- ]grade|b-?stock|\bused\b|second[- ]?hand|grade [abc]\b|\bpristine\b|\bexcellent condition\b|\bvery good\b|\bgood condition\b|\bdamaged\b|\bscratch(ed)?\b|\bdent(ed)?\b|gift ?card|e-?gift|protection plan|extended warranty|\bwarranty\b|trade-?in|mystery|\brental\b|\bdeposit\b|\bpre-?order deposit\b|bad box|\bdemo unit\b|\[demo|\(sold\)|discontinu|second hand|clearance|maintenance program|care refresh|months? protection|local pick-?up only|no shipping|\bparts? for\b|\bfor parts\b/i;
 
 /** A phone model name: `looksLikePhone` alone would take any title with "GB" in it. */
 const PHONE =
@@ -31,23 +31,24 @@ const NOT_PHONE = /\b(ssd|nvme|ram|ddr\d|memory card|micro ?sd|usb|flash drive|t
  * shops' "kits", power stations, toy laptops), so each category also needs its own word here and refuses these.
  */
 export const GUARD: Partial<Record<Cat, { need?: RegExp; not?: RegExp }>> = {
-  vacuums: { need: /vacuum( cleaner)?\b|stick ?vac|cordless vac|wet (and|&) dry/i, not: /\btubes?\b|canister|brewer|player|amplifier|\bdac\b|battery pack|\bpump\b|sealer|storage/i },
+  vacuums: { need: /vacuum( cleaner)?\b|stick ?vac|cordless vac|wet (and|&) dry/i, not: /central vacuum|attachment|combination|waste|\bbundle\b|purifier|\btubes?\b|canister|brewer|player|amplifier|\bdac\b|battery pack|\bpump\b|sealer|storage/i },
   cameras: {
     need: /camera|mirrorless|dslr|\bbody\b|instax|powershot|cyber-?shot|lumix|gopro|insta360|osmo|leica|hasselblad|ricoh gr|pentax|\bom-\d|x100|\bz ?\d{1,2}\b|\beos r|\ba7|\ba6\d{3}|\bzv-|x-[tseh]\d|gfx/i,
-    not: /power station|homepower|explorer|\bkwh\b|care\b|insurance|install|upgrade|knob|drawer|\bdac\b|\bamp\b|interface|circuits|airplane|\bmodel\b|\blego\b|brew|grinder|tamp|hose|watch party|stack kit|starter kit|basics kit|plus kit|security|doorbell|\bcam v\d|\bcam pan|\bcam og\b/i,
+    not: /\blens\b(?!.*(\bkit\b|with|\+|camera|body))|\d+mm f\/?\d|summicron|summilux|magnifier|leicavit|\bwcl-|\btcl-|head tracker|\bcart\b|core unit|stabili[sz]er|gimbal|\buav\b|thermal|bracket|\bpad\b|\btv\b|\bbundle\b|power station|homepower|explorer|\bkwh\b|care\b|insurance|install|upgrade|knob|drawer|\bdac\b|\bamp\b|interface|circuits|airplane|\bmodel\b|\blego\b|brew|grinder|tamp|hose|watch party|stack kit|starter kit|basics kit|plus kit|security|doorbell|\bcam v\d|\bcam pan|\bcam og\b/i,
   },
-  "coffee-machines": { need: /espresso machine|coffee (machine|maker)|super-?automatic|bean[- ]to[- ]cup|espresso maker|capsule machine|\bmachine\b/i, not: /grinder|\bburrs?\b|\bdemo\b|\bkit\b|\brack\b|\bshelf\b|\b\d group\b|commercial|\bparts?\b|\bmotor\b|\bboard\b/i },
+  "coffee-machines": { need: /espresso machine|coffee (machine|maker)|super-?automatic|bean[- ]to[- ]cup|espresso maker|capsule machine|\bmachine\b/i, not: /roast|\bbeans?\b|\bbundle\b|grinder|\bburrs?\b|\bdemo\b|\bkit\b|\brack\b|\bshelf\b|\b\d group\b|commercial|\bparts?\b|\bmotor\b|\bboard\b/i },
   "air-fryers": { need: /air ?fry/i },
   printers: { need: /printer/i, not: /3d|label|photo printer|docking|timer|remote|music system|module/i },
   routers: { need: /router|mesh (wi-?fi|system|router)/i, not: /\bmesh (black|white)\b|\bcase\b|chassis|\block\b|gateway|\bdac\b|\bamp\b|deco (silver|gold)/i },
-  speakers: { not: /earspeakers?|\bbundles?\b|\+|projector|4k\b|boox|hair ?dryer|spotlight|\bmodule\b|\bisolation\b|\bfeet\b|\b(each|pair)\b/i },
-  soundbars: { not: /\bbundle\b|\+/i },
+  speakers: { not: /cables?\b|wiring|jumpers?|connectors?|cabinet|\bpa\b|centre speaker|center speaker|in-?ceiling|in-?wall|install|for samsung|for sony|for lg|earspeakers?|\bbundles?\b|\+|projector|4k\b|boox|hair ?dryer|spotlight|\bmodule\b|\bisolation\b|\bfeet\b|\b(each|pair)\b/i },
+  soundbars: { not: /\bbundle\b|\+|\btv\b|oled|home theat(re|er) system|speaker package|system pack/i },
+  drones: { not: /maintenance|\bmodule\b|strobe|spot ?light|core unit|\bbag\b|\bcare\b|\brtk\b|\bpayload\b|\bbattery\b|\bpropellers?\b/i },
   consoles: { not: /music console|production console|rodecaster|mixer|\bdeck\b(?!.*steam)/i },
-  motherboards: { not: /audio player|\bplayer\b|laptop|supernote|core x\d|\bdap\b/i },
+  motherboards: { not: /\bcase\b|\btower\b|audio player|\bplayer\b|laptop|supernote|core x\d|\bdap\b/i },
   laptops: { not: /\bram\b|motherboard|companion|notebook set|portable monitor|\bmonitor\b|educational|barbie|notebooks|guide|\bkids?\b/i },
   desktops: { not: /\bdock\b|docking|processor|\bkit\b|\bcpu\b(?!.*(pc|desktop))/i },
-  monitors: { not: /t-?shirt|\bmount\b|\barm\b|\bstand\b/i },
-  headphones: { not: /\bbag\b|engraving|charging case|\bmodule\b|\bdac\b|\bamp(lifier)?\b|\bplayer\b|\bcables?\b|\btips\b|\bpads?\b/i },
+  monitors: { not: /in[- ]ear|\biems?\b|t-?shirt|\bmount\b|\barm\b|\bstand\b/i },
+  headphones: { not: /\bkit\b|\bbundle\b|plates?\b|hard ?case|accessory|\bbag\b|engraving|charging case|\bmodule\b|\bdac\b|\bamp(lifier)?\b|\bplayer\b|\bcables?\b|\btips\b|\bpads?\b/i },
   smartwatches: { not: /\bburrs?\b|\bbands?\b|\bstraps?\b/i },
   "graphics-cards": { not: /pre-?order|\bbackplate\b|\bbracket\b|\briser\b/i },
   tvs: { not: /\bmount\b|\bbracket\b|\bstand\b|projector/i },
@@ -169,10 +170,16 @@ export interface AutoStore {
 /** Every listed category's offers from one read of the store. */
 export async function readAuto(s: AutoStore): Promise<Map<Cat, RawOffer[]>> {
   const out = new Map<Cat, Map<string, RawOffer>>();
+  // The store's own name as "vendor" (Pauls TV, Mymemory) is no brand.
+  const stem = new URL(s.base).hostname.replace(/^(www|shop|store|us|uk|au)\./, "").split(".")[0].replace(/[^a-z]/g, "");
+  const ownName = (v: string) => {
+    const l = v.toLowerCase().replace(/[^a-z]/g, "");
+    return l.length > 2 && (stem.includes(l) || l.includes(stem));
+  };
   for (const p of await catalogue(s.base, 40, s.platform)) {
     const pt = decodeEntities(p.title).replace(/[®™]/g, "").replace(/\s+/g, " ").trim();
     const tags = Array.isArray(p.tags) ? p.tags.join(" ") : p.tags ?? "";
-    if (USED.test(pt) || USED.test(p.product_type ?? "") || /refurb|pre-?owned|\bused\b|open-?box/i.test(tags) || s.exclude?.test(pt)) continue;
+    if (USED.test(pt) || USED.test(p.product_type ?? "") || USED.test(p.vendor ?? "") || /refurb|pre-?owned|\bused\b|open-?box/i.test(tags) || s.exclude?.test(pt)) continue;
     for (const v of p.variants) {
       const vt0 = (v.title ?? "").trim();
       if (USED.test(vt0)) continue;
@@ -195,7 +202,7 @@ export async function readAuto(s: AutoStore): Promise<Map<Cat, RawOffer[]>> {
       const sku = (v.sku ?? "").trim();
       const vendor = p.vendor?.trim();
       // A vendor naming distributors ("ASI Computer Technologies Inc, PC Laptops") is no brand.
-      const brand = cat === "lego" ? "LEGO" : s.brand ?? (vendor && !/default|vendor|official|store|supplier|,|\binc\b|^[A-Z0-9]{2,3}$/i.test(vendor) ? vendor : undefined);
+      const brand = cat === "lego" ? "LEGO" : s.brand ?? (vendor && !ownName(vendor) && !/default|vendor|official|store|supplier|support|,|\binc\b|^[A-Z0-9]{2,3}$/i.test(vendor) ? vendor : undefined);
       const set = cat === "lego" ? setFromTitle(title) : undefined;
       const offer: RawOffer = {
         retailer: s.retailer,

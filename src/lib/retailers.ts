@@ -43,6 +43,20 @@ const AU_RETAILERS = {
   toyworld: { id: "toyworld", name: "Toyworld", site: "toyworld.com.au", color: "#E2001A", type: "retailer" },
   kidstuff: { id: "kidstuff", name: "Kidstuff", site: "kidstuff.com.au", color: "#00A3AD", type: "retailer" },
   hobbyco: { id: "hobbyco", name: "Hobbyco", site: "hobbyco.com.au", color: "#1D3C78", type: "retailer" },
+  // Store survey 2026-11-01 (auto-shopify.ts)
+  movaau: { id: "movaau", name: "MOVA", site: "au.mova-tech.com", color: "#1B1B1B", type: "official" },
+  narwalau: { id: "narwalau", name: "Narwal", site: "au.narwal.com", color: "#2A2A2A", type: "official" },
+  shokzau: { id: "shokzau", name: "Shokz", site: "au.shokz.com", color: "#F15A22", type: "official" },
+  addictedtoaudio: { id: "addictedtoaudio", name: "Addicted to Audio", site: "addictedtoaudio.com.au", color: "#E4002B", type: "retailer" },
+  alternativebrewing: { id: "alternativebrewing", name: "Alternative Brewing", site: "alternativebrewing.com.au", color: "#3B3B3B", type: "retailer" },
+  austin: { id: "austin", name: "Austin Computers", site: "austin.net.au", color: "#0050A0", type: "retailer" },
+  billyguyatts: { id: "billyguyatts", name: "Billy Guyatts", site: "billyguyatts.com.au", color: "#D6001C", type: "retailer" },
+  cameraelectronic: { id: "cameraelectronic", name: "Camera Electronic", site: "cameraelectronic.com.au", color: "#C8102E", type: "retailer" },
+  d1store: { id: "d1store", name: "D1 Store", site: "d1store.com.au", color: "#111111", type: "retailer" },
+  edifierau: { id: "edifierau", name: "Edifier", site: "edifier.com.au", color: "#1A1A1A", type: "official" },
+  georges: { id: "georges", name: "Georges Cameras", site: "georges.com.au", color: "#E30613", type: "retailer" },
+  lenwallis: { id: "lenwallis", name: "Len Wallis Audio", site: "lenwallisaudio.com", color: "#7A1F2B", type: "retailer" },
+  teds: { id: "teds", name: "Ted's Cameras", site: "teds.com.au", color: "#E2001A", type: "retailer" },
 };
 
 export const RETAILERS = {
