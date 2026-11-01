@@ -71,6 +71,14 @@ const AU_RETAILERS = {
   hobbywarehouse: { id: "hobbywarehouse", name: "Hobby Warehouse", site: "hobbywarehouse.com.au", color: "#E53935", type: "retailer" },
   hooverau: { id: "hooverau", name: "Hoover", site: "hoover.com.au", color: "#C8102E", type: "official" },
   westcoasthifi: { id: "westcoasthifi", name: "West Coast Hi-Fi", site: "westcoasthifi.com.au", color: "#0D47A1", type: "retailer" },
+  // Store survey round 3, 2026-11-01
+  absolutehifi: { id: "absolutehifi", name: "Absolute Hi-Fi", site: "absolutehifi.com.au", color: "#111111", type: "retailer" },
+  theaudiotailor: { id: "theaudiotailor", name: "The Audio Tailor", site: "theaudiotailor.com.au", color: "#2E2E2E", type: "retailer" },
+  brickville: { id: "brickville", name: "Brickville", site: "brickville.com.au", color: "#F7C600", type: "retailer" },
+  melbournehifi: { id: "melbournehifi", name: "Melbourne Hi-Fi", site: "melbournehifi.com.au", color: "#0D2C54", type: "retailer" },
+  theaudioexperts: { id: "theaudioexperts", name: "The Audio Experts", site: "theaudioexperts.com.au", color: "#C9A227", type: "retailer" },
+  thevacuumshop: { id: "thevacuumshop", name: "The Vacuum Shop", site: "thevacuumshop.com.au", color: "#1565C0", type: "retailer" },
+  toyworldbendigo: { id: "toyworldbendigo", name: "Toyworld Bendigo", site: "toyworldbendigo.com.au", color: "#E30613", type: "retailer" },
 };
 
 export const RETAILERS = {
