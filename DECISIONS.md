@@ -606,7 +606,9 @@ matters. Until now it ranked by stores stocking a product, newness, category and
   its category's page (much smaller weight) raise its demand. On 1 November 1,000 pages had impressions; the
   US robot vacuum page alone had 22,000.
 - **Price counts as its square root**, not its log: commission is a share of the sale, so a A$1,000 product is
-  worth about four times a A$60 one, not twice.
+  worth about four times a A$60 one, not twice. It stops adding at 4,000, and anything over 15,000 is skipped:
+  the first dry run put three US earbuds "priced" 9,999,999.99 (a store placeholder) and a A$160,000 Dell
+  server at the top of the queue.
 - **The daily tier grew from 25% to 35%** of the budget, so searched products are refreshed every day; the
   rest still rotates stalest first.
 - **One budget per eBay quota day (Pacific).** On 1 November a second run the same eBay day hit the rate
@@ -614,3 +616,28 @@ matters. Until now it ranked by stores stocking a product, newness, category and
   spends only what is left, or nothing after a 429.
 - Without the demand file (branch missing, file older than two weeks) the ranking falls back to the store
   signals, so a broken export costs precision, not prices.
+
+## 2026-11-01: LEGO, matched by set number, and the sitemap moves to tier 2
+
+The owner asked which big retail categories Compare Empire is missing, Walmart- and eBay-style. eBay's largest
+categories we don't cover are motor parts, fashion and collectibles (the card sites own those), toys, home and
+garden, and health and beauty. A probe from GitHub's runners on 1 November checked which Australian stores we
+can read for each:
+
+- **LEGO (added).** Toys R Us, Toyworld, Kidstuff and Hobbyco are on Shopify with full LEGO collections
+  (about 1,600 listings). Every box carries a set number and every store prints it (in the SKU, "LEG-42171",
+  or the title), so a set is matched by that number and nothing else (`scripts/scrapers/lego.ts`,
+  `parseLego` in `src/lib/match-more.ts`): no number, or two, and the listing is left out; keychains, lights,
+  display frames, storage, blind-bag boxes and other brands are refused. The URL is the number
+  (`/lego/lego-75447`) because stores word names differently. First scrape: 1,066 sets, 695 in two or more
+  stores, 466 in three. New sealed LEGO is one of eBay's biggest toy categories, so its eBay weight is 1.4 and
+  the eBay search is "LEGO <set number>" with the number required in the listing title. Big W, Target, Myer,
+  Mr Toys, Zing, EB Games and lego.com were not readable (403, time-out or no feed).
+- **Next, in order:** hair care (Betta's hair dryer, styler and shaver collections; JB's Dyson range), small
+  kitchen (microwaves, stand mixers, blenders) and air treatment (purifiers, heaters, fans) at Betta and The Good
+  Guys, and BBQs (The Good Guys, 259 listings with Weber model codes). Bunnings, Total Tools, Chemist Warehouse,
+  Shaver Shop, Kitchen Warehouse and My Haircare refuse the runners, which rules out tools and pharmacy for now.
+
+`SITEMAP_TIER` now defaults to 2: products at two or more stores (about 4,900 across the three regions),
+brand pages, category deal pages and comparisons. A week of tier 1 left over 5,400 pages with Search Console
+impressions, so Google is crawling past the sitemap anyway; the sitemap should say which pages matter.

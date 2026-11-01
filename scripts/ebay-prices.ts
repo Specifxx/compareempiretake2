@@ -38,6 +38,10 @@ const ID = process.env.EBAY_CLIENT_ID;
 const SECRET = process.env.EBAY_CLIENT_SECRET;
 const BUDGET = Number(process.env.EBAY_DAILY_CALLS || 4950);
 const MIN_PRICE = 10;
+/** Above this a "price" is a store's placeholder (9999999.99) or a server rack, not something people buy on eBay. */
+const MAX_PRICE = 15_000;
+/** Price stops adding demand here: a A$12,000 camera is not clicked twelve times as often as a A$1,000 one. */
+const PRICE_CAP = 4_000;
 // `zip`: a central postcode, sent as the buyer's location so eBay quotes real postage there (visitor feedback on
 // WargameCompare, 2026-10-31: postage the row did not show made eBay rows "a lot of wasted clicks").
 const MARKET: Record<RegionId, { id: string; currency: string; country: string; zip: string }> = {
@@ -136,7 +140,7 @@ function loadFile(region: RegionId): EbayFile {
 export function demand(p: Phone, region: RegionId, search?: SearchDemand): number {
   const stores = Math.log2(1 + p.retailerCount);
   const recency = 1 + Math.min(p.generation, 30) / 60;
-  const price = Math.sqrt(Math.max(p.bestPrice, MIN_PRICE) / 100);
+  const price = Math.sqrt(Math.min(Math.max(p.bestPrice, MIN_PRICE), PRICE_CAP) / 100);
   const page = search?.product.get(`${region}:${p.category}/${p.slug}`) ?? 0;
   const cat = search?.category.get(`${region}:${p.category}`) ?? 0;
   const searched = 1 + 2 * Math.log2(1 + page / 5) + 0.25 * Math.log2(1 + cat / 100);
@@ -296,7 +300,7 @@ async function main() {
   const gsc = searchDemand(loadDemand(), new Set(CATEGORIES.map((c) => c.id)), slugsByRegion);
   const all: Candidate[] = REGION_IDS.flatMap((region) =>
     catalogs[region]
-      .filter((p) => p.bestPrice >= MIN_PRICE)
+      .filter((p) => p.bestPrice >= MIN_PRICE && p.bestPrice <= MAX_PRICE)
       .map((p) => {
         const key = `${p.category}/${p.slug}`;
         const searched = gsc.product.has(`${region}:${key}`);

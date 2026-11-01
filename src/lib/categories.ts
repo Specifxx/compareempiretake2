@@ -94,7 +94,7 @@ export const CATEGORIES: Category[] = [
 ];
 
 /** Shown in the header's category bar; everything else is one click away in "All categories". */
-export const FEATURED: CategoryId[] = ["phones", "laptops", "tvs", "headphones", "tablets", "monitors", "graphics-cards", "consoles", "fridges", "coffee-machines"];
+export const FEATURED: CategoryId[] = ["phones", "laptops", "tvs", "headphones", "tablets", "monitors", "graphics-cards", "consoles", "lego", "fridges", "coffee-machines"];
 
 export const liveCategories = () => CATEGORIES.filter((c) => c.live);
 export const categoryById = (id: string) => CATEGORIES.find((c) => c.id === id);
