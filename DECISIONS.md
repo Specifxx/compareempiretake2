@@ -719,3 +719,12 @@ version. Left out: Leica Store Miami (mostly accessories), Di Bartoli (the store
 Tailor is read. "Floor stock", "pre-loved" and "ex-floor" now count as not new, and speaker "packages" (a pair plus
 an amplifier) are refused. Yield is falling (from 10% to 4%), so later rounds use brand dealer lists and
 regional brand stores rather than guessed domains.
+
+## 2026-11-01 — Store survey round 4: 28 more stores (US 92→100, UK 54→67, AU 67→74)
+
+Guessed domains had run dry, so this round's 173 candidates (`docs/stores/candidates5.txt`) came from published lists:
+Lelit's UK dealer list, a list of independent UK LEGO shops, La Marzocco Home's Australian roaster partners, and the
+regional stores of brands already read. Independent LEGO shops turned out to be the richest UK source (ten shops,
+3,100 sets), and roasters that sell home machines the richest Australian one. A lone minifigure ("NJO0366") carries
+digits that look like a set number, so the reader now refuses minifigure codes; coffee-machine servicing and
+"value"/"power" packs are refused too. The US reaches 100 stores with data.
