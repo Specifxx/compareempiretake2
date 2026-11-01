@@ -99,7 +99,20 @@ export type RetailerId =
   | "toysrus"
   | "toyworld"
   | "kidstuff"
-  | "hobbyco";
+  | "hobbyco"
+  | "movaau"
+  | "narwalau"
+  | "shokzau"
+  | "addictedtoaudio"
+  | "alternativebrewing"
+  | "austin"
+  | "billyguyatts"
+  | "cameraelectronic"
+  | "d1store"
+  | "edifierau"
+  | "georges"
+  | "lenwallis"
+  | "teds";
 
 export interface Retailer {
   id: RetailerId;
