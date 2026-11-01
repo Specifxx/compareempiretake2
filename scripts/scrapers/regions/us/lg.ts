@@ -74,10 +74,17 @@ async function listing(path: string, keep: (name: string) => boolean): Promise<R
 
 const NOT_ACC = (n: string) => !/\b(mount|bracket|stand|remote|cable|adapter|sleeve|case|bundle|kit)\b/i.test(n);
 
+const NOT_APPL_ACC = (n: string) => NOT_ACC(n) && !/\b(filter|pedestal|stacking|trim|panel|handle|hose|part|replacement|water line)\b/i.test(n);
+
 export const scrapers: Partial<Record<CategoryId, () => Promise<RawOffer[]>>> = {
   tvs: () => listing("/us/tvs", (n) => NOT_ACC(n) && /\btv\b/i.test(n) && !/projector/i.test(n)),
   monitors: () => listing("/us/monitors", (n) => NOT_ACC(n) && /monitor|ultra|display/i.test(n)),
   laptops: () => listing("/us/laptops", (n) => NOT_ACC(n) && /gram|laptop/i.test(n) && !/view|monitor/i.test(n)),
   soundbars: () => listing("/us/soundbars", (n) => NOT_ACC(n) && /sound ?bar/i.test(n) && !/subwoofer only|rear speaker kit/i.test(n)),
   speakers: () => listing("/us/speakers", (n) => NOT_ACC(n) && /speaker|xboom/i.test(n)),
+  // Appliances: LG sells whitegoods direct in the US (owner, 2026-11-01: more US coverage). Parts, filters and pedestals
+  // share the listings, so each keeps only the appliance itself.
+  fridges: () => listing("/us/refrigerators", (n) => NOT_APPL_ACC(n) && /refrigerator|freezer|fridge/i.test(n)),
+  "washing-machines": () => listing("/us/washers-dryers", (n) => NOT_APPL_ACC(n) && /washer|dryer|washtower|wash ?combo/i.test(n)),
+  dishwashers: () => listing("/us/dishwashers", (n) => NOT_APPL_ACC(n) && /dishwasher/i.test(n)),
 };
