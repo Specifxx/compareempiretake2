@@ -79,6 +79,14 @@ const AU_RETAILERS = {
   theaudioexperts: { id: "theaudioexperts", name: "The Audio Experts", site: "theaudioexperts.com.au", color: "#C9A227", type: "retailer" },
   thevacuumshop: { id: "thevacuumshop", name: "The Vacuum Shop", site: "thevacuumshop.com.au", color: "#1565C0", type: "retailer" },
   toyworldbendigo: { id: "toyworldbendigo", name: "Toyworld Bendigo", site: "toyworldbendigo.com.au", color: "#E30613", type: "retailer" },
+  // Store survey round 4, 2026-11-01
+  artisti: { id: "artisti", name: "Artisti Coffee Roasters", site: "artisti.com.au", color: "#3E2723", type: "retailer" },
+  blackboardcoffee: { id: "blackboardcoffee", name: "Blackboard Coffee", site: "blackboardcoffee.com.au", color: "#212121", type: "retailer" },
+  darkstarcoffee: { id: "darkstarcoffee", name: "Dark Star Coffee", site: "darkstarcoffee.com.au", color: "#1A1A1A", type: "retailer" },
+  dipacci: { id: "dipacci", name: "Dipacci", site: "dipacci.com.au", color: "#B71C1C", type: "retailer" },
+  marketlane: { id: "marketlane", name: "Market Lane Coffee", site: "marketlane.com.au", color: "#5D4037", type: "retailer" },
+  threebearscoffee: { id: "threebearscoffee", name: "Three Bears Coffee", site: "threebearscoffee.com.au", color: "#6D4C41", type: "retailer" },
+  singleo: { id: "singleo", name: "Single O", site: "singleo.com.au", color: "#FF7043", type: "retailer" },
 };
 
 export const RETAILERS = {

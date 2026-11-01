@@ -19,10 +19,13 @@ type Cat = CategoryId;
 
 /** Never new stock, whatever the category. */
 const USED =
-  /refurb|renewed|re-newed|pre-?owned|open[- ]?box|ex[- ]?(display|demo)|b[- ]grade|b-?stock|\bused\b|second[- ]?hand|grade [abc]\b|\bpristine\b|\bexcellent condition\b|\bvery good\b|\bgood condition\b|\bdamaged\b|\bscratch(ed)?\b|\bdent(ed)?\b|gift ?card|e-?gift|protection plan|extended warranty|\bwarranty\b|trade-?in|mystery|\brental\b|\bdeposit\b|\bpre-?order deposit\b|bad box|\bdemo unit\b|\[demo|\(sold\)|discontinu|second hand|clearance|maintenance program|care refresh|months? protection|local pick-?up only|no shipping|\bparts? for\b|\bfor parts\b|repackaged|recondition|\(intl\)|international version|pre-?order for|floor stock|pre-?loved|ex-?floor/i;
+  /refurb|renewed|re-newed|pre-?owned|open[- ]?box|ex[- ]?(display|demo)|b[- ]grade|b-?stock|\bused\b|second[- ]?hand|grade [abc]\b|\bpristine\b|\bexcellent condition\b|\bvery good\b|\bgood condition\b|\bdamaged\b|\bscratch(ed)?\b|\bdent(ed)?\b|gift ?card|e-?gift|protection plan|extended warranty|\bwarranty\b|trade-?in|mystery|\brental\b|\bdeposit\b|\bpre-?order deposit\b|bad box|\bdemo unit\b|\[demo|\(sold\)|discontinu|second hand|clearance|maintenance program|care refresh|months? protection|local pick-?up only|no shipping|\bparts? for\b|\bfor parts\b|repackaged|recondition|\(intl\)|international version|pre-?order for|floor stock|pre-?loved|ex-?floor|machine service|\bservicing\b/i;
 
 /** Store-made bundles and add-on packs: the price is not the product's own, whatever the category. */
-const STORE_BUNDLE = /\bbundles?\b|protection pack|\b\d[- ]?pack\b|\bw\/\s|\bwith (extended|accessor)|\+ ?\d[- ]?(year|yr)/i;
+const STORE_BUNDLE = /\bbundles?\b|protection pack|value pack|power pack|\b\d[- ]?pack\b|\bw\/\s|\bwith (extended|accessor)|\+ ?\d[- ]?(year|yr)/i;
+
+/** A minifigure sold alone ("NJO0366", "sw1234"): its code carries digits that look like a set number. */
+const MINIFIG = /\bminifig|\b[a-z]{2,5}\d{3,4}[a-z]?\b/i;
 
 /** A phone model name: `looksLikePhone` alone would take any title with "GB" in it. */
 const PHONE =
@@ -141,7 +144,7 @@ export function catalogue(base: string, maxPages = 40, platform?: "shopify" | "w
 export function classify(cats: readonly Cat[], title: string, price: number, vendor?: string): Cat | undefined {
   for (const cat of cats) {
     if (cat === "lego") {
-      if ((/^lego$/i.test(vendor?.trim() ?? "") || /^lego\b/i.test(title)) && !NOT_A_SET.test(title) && setFromTitle(title)) return cat;
+      if ((/^lego$/i.test(vendor?.trim() ?? "") || /^lego\b/i.test(title)) && !NOT_A_SET.test(title) && !MINIFIG.test(title) && setFromTitle(title)) return cat;
       continue;
     }
     if (cat === "phones") {
