@@ -78,4 +78,6 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-nottinghamhifi", name: "Nottingham Hi-Fi", site: "nottinghamhifi.co.uk", color: "#B71C1C", type: "retailer" },
   { id: "uk-northstar", name: "North Star Coffee", site: "northstarroast.com", color: "#263238", type: "retailer" },
   { id: "uk-referenceaudio", name: "Reference Audio", site: "referenceaudio.co.uk", color: "#37474F", type: "retailer" },
+  { id: "uk-kissthehippo", name: "Kiss the Hippo", site: "kissthehippo.com", color: "#3E2723", type: "retailer" },
+  { id: "uk-horshamcoffee", name: "Horsham Coffee Roaster", site: "horshamcoffeeroaster.co.uk", color: "#1B5E20", type: "retailer" },
 ];

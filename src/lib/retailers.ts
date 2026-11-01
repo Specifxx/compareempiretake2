@@ -99,6 +99,8 @@ const AU_RETAILERS = {
   toybricks: { id: "toybricks", name: "Toy Bricks", site: "toybricks.com.au", color: "#FBC02D", type: "retailer" },
   toyworldfrankston: { id: "toyworldfrankston", name: "Toyworld Frankston", site: "toyworldfrankston.com.au", color: "#E30613", type: "retailer" },
   toyworldwarrnambool: { id: "toyworldwarrnambool", name: "Toyworld Warrnambool", site: "toyworldwarrnambool.com.au", color: "#E30613", type: "retailer" },
+  sydneyhifimonavale: { id: "sydneyhifimonavale", name: "Sydney Hi-Fi Mona Vale", site: "sydneyhifimonavale.com.au", color: "#1A1A1A", type: "retailer" },
+  klappav: { id: "klappav", name: "Klapp AV", site: "klappav.com.au", color: "#0D47A1", type: "retailer" },
 };
 
 export const RETAILERS = {

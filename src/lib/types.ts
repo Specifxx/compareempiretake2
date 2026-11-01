@@ -150,7 +150,9 @@ export type RetailerId =
   | "toottoottoys"
   | "toybricks"
   | "toyworldfrankston"
-  | "toyworldwarrnambool";
+  | "toyworldwarrnambool"
+  | "sydneyhifimonavale"
+  | "klappav";
 
 export interface Retailer {
   id: RetailerId;
