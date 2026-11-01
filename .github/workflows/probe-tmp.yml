@@ -1,0 +1,15 @@
+name: Probe router stores (temporary)
+on:
+  push:
+    branches: [claude/project-thread-jzddps]
+    paths: [.github/workflows/probe-tmp.yml]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
+          for b in https://store.gl-inet.com https://firewalla.com https://www.linksys.com https://store.amplifi.com https://us.cudy.com https://www.cudy.com https://motorolanetwork.com https://www.motorolanetwork.com https://www.wavlink.com https://shop.netgear.com https://www.netgear.com https://www.tp-link.com/us https://shop.asus.com/us https://store.ui.com https://www.peplink.com https://www.grandstream.com https://www.securifi.com https://www.eero.com https://www.minim.com https://www.zyxel.com/us https://www.tenda.com https://www.reyee.com https://www.mercku.com https://www.plumewifi.com; do
+            c=$(curl -s -A "$UA" -m 20 -L -o /tmp/p.json -w '%{http_code}' "$b/products.json?limit=250"); n=$(python3 -c "import json;d=json.load(open('/tmp/p.json'));p=d['products'];print(len(p), '|', '; '.join(sorted({x.get('product_type','') for x in p})[:12]), '|', p[0]['variants'][0]['price'] if p else '')" 2>/dev/null || echo "not shopify")
+            echo "$b $c $n"
+          done

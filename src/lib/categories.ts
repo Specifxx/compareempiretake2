@@ -16,7 +16,23 @@ export interface Category {
   department: DepartmentId;
   /** One line for the category page header. */
   blurb: string;
+  /** What people type before "price comparison" when it is not `name` ("router", not "Wi-Fi & Networking"). */
+  searchName?: string;
 }
+
+/** Search Console 2026-11-01: "router price comparison" 2,286 impressions at position 8 under a title that said
+ *  "Wi-Fi & Networking". Titles and h1s use these words; the category's name stays on menus. */
+const SEARCH_NAMES: Partial<Record<CategoryId, string>> = {
+  routers: "Router",
+  ssds: "SSD",
+  ram: "RAM",
+  headphones: "Headphones",
+  vacuums: "Cordless Vacuum",
+  fridges: "Fridge",
+  "washing-machines": "Washing Machine",
+  "robot-vacuums": "Robot Vacuum",
+  "desktops": "Desktop PC",
+};
 
 export type DepartmentId = "phones-wearables" | "computers" | "pc-parts" | "tv-audio" | "gaming" | "cameras" | "home" | "kitchen" | "whitegoods";
 
@@ -41,6 +57,7 @@ const c = (id: CategoryId, name: string, noun: string, emoji: string, department
   emoji,
   department,
   blurb,
+  searchName: SEARCH_NAMES[id],
 });
 
 export const CATEGORIES: Category[] = [

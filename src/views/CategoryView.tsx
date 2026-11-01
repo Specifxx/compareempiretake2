@@ -31,9 +31,25 @@ export async function categoryMetadata(params: CategoryParams, region: RegionId)
   const stores = activeRetailers(c.id as CategoryId, region);
   const R = REGIONS[region];
   const langs = Object.fromEntries(REGION_IDS.filter((r) => activeCategories(r).some((x) => x.id === c.id)).map((r) => [REGIONS[r].hreflang, categoryHref(c.id, r)]));
+  const products = getSummaries(c.id as CategoryId, region).filter((p) => p.inStock && p.bestPrice > 0);
+  const count = getProducts(c.id as CategoryId, region).length;
+  const what = c.searchName ?? c.name;
+  const place = placeName(region);
+  // Longest first, each kept under ~60 characters so Google shows the whole thing.
+  const title =
+    [
+      `${what} Price Comparison ${place}: ${stores.length} Stores Compared`,
+      `${what} Price Comparison ${place}: ${stores.length} Stores`,
+      `${what} Price Comparison ${place}`,
+    ].find((t) => t.length <= 60) ?? `${what} Price Comparison ${place}`;
+  const low = products.length ? Math.min(...products.map((p) => p.bestPrice)) : 0;
+  const description = `${what} price comparison: ${count.toLocaleString("en-AU")} ${c.name.toLowerCase()} across ${stores.length} ${R.adjective} stores (${stores
+    .slice(0, 4)
+    .map((r) => r.name)
+    .join(", ")})${low ? `, from ${money(low, region)} today` : ""}. ${c.blurb} Price history on every product.`;
   return {
-    title: `${c.name} Price Comparison ${placeName(region)}`,
-    description: `Compare ${getProducts(c.id as CategoryId, region).length.toLocaleString("en-AU")} ${c.name.toLowerCase()} across ${stores.length} ${R.adjective} stores including ${stores.slice(0, 4).map((r) => r.name).join(", ")}. ${c.blurb} Price history on every product.`,
+    title: { absolute: title },
+    description,
     alternates: { canonical: categoryHref(c.id, region), ...(Object.keys(langs).length > 1 ? { languages: langs } : {}) },
     openGraph: { url: categoryHref(c.id, region), images: [{ url: ogImage({ title: `Compare ${c.name.toLowerCase()} prices in ${inRegion(region)}`, stores: stores.length, category: c.name, region }), width: 1200, height: 630 }] },
   };
@@ -58,7 +74,7 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
         <div>
           <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
             <span className="mr-2">{c.emoji}</span>
-            {c.name} <span className="text-ink-mute">price comparison</span>
+            {c.searchName ?? c.name} <span className="text-ink-mute">price comparison</span>
           </h1>
           <p className="mt-2 max-w-2xl text-ink-mute">
             {products.length.toLocaleString()} products across {stores.length} {REGIONS[region].adjective} stores. {c.blurb}
