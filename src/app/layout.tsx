@@ -13,6 +13,7 @@ import type { NavDepartment } from "@/components/Header";
 import type { CategoryId } from "@/lib/types";
 import { CONTACT_EMAIL, SITE } from "@/lib/site";
 import "./globals.css";
+import { SEASON_BOOT_SCRIPT } from "@/lib/season";
 
 // Self-hosted (OFL, from Fontsource) so builds never depend on fetching Google Fonts.
 const sans = localFont({ src: "./fonts/inter-latin-wght-normal.woff2", variable: "--font-sans", display: "swap", weight: "100 900" });
@@ -91,6 +92,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en-AU" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        {/* Christmas (1 November to Boxing Day): data-season on <html> from the visitor's own date. lib/season.ts. */}
+        <script dangerouslySetInnerHTML={{ __html: SEASON_BOOT_SCRIPT }} />
         <link rel="alternate" type="application/rss+xml" title="Compare Empire guides" href="/feed.xml" />
       </head>
       <body className="min-h-screen font-sans">

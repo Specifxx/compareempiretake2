@@ -15,6 +15,7 @@ import { storageLabel } from "@/lib/normalize";
 import { PriceCheckCard } from "@/components/PriceCheckCard";
 import { AmazonPicks } from "@/components/AmazonPicks";
 import { EbayStrip } from "@/components/EbayStrip";
+import { ChristmasDecor } from "@/components/ChristmasDecor";
 
 export function HomeView({ region }: { region: RegionId }) {
   const R = REGIONS[region];
@@ -40,11 +41,23 @@ export function HomeView({ region }: { region: RegionId }) {
           <div className="absolute -top-40 left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-brand/15 blur-3xl" />
           <div className="absolute -right-40 top-20 h-72 w-72 rounded-full bg-save/10 blur-3xl" />
         </div>
+        {/* Christmas only (1 November to Boxing Day, lib/season.ts; hidden by CSS otherwise): snow, lights, trees. */}
+        <div className="pointer-events-none absolute inset-0 -z-10">
+          <ChristmasDecor />
+        </div>
         <div className="container-x pb-12 pt-14 sm:pt-20">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-line bg-bg-card px-3 py-1 text-xs font-medium text-ink-soft shadow-sm">
               <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-save opacity-60" /><span className="relative inline-flex h-2 w-2 rounded-full bg-save" /></span>
               Prices checked {updated}
+            </div>
+            {/* Christmas only: a line to the deals, for gift shoppers. */}
+            <div className="xmas-pill-row mb-5 justify-center">
+              <Link href={to("/deals")} className="xmas-pill">
+                <span className="xmas-pill-icon" aria-hidden="true" />
+                <b>Christmas sale check</b>
+                <span className="xmas-pill-more hidden sm:inline">· real price drops only, checked every day →</span>
+              </Link>
             </div>
             <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
               Is that sale
