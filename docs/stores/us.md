@@ -1,6 +1,6 @@
 # US stores
 
-The scrapers are in `scripts/scrapers/regions/us/` and their entries in `src/lib/retailers-us.ts`. Prices are in USD as a product page shows them, without sales tax. Tested from the sandbox on 2026-10-24; the offer counts below are that run (`data/us/<cat>/raw/us-<store>.json`).
+The scrapers are in `scripts/scrapers/regions/us/` and their entries in `src/lib/retailers-us.ts`. Prices are in USD as a product page shows them, without sales tax. Tested from the sandbox on 2026-10-24 (since 2026-11-01 the sandbox can't reach stores: run *Probe stores* in GitHub Actions instead); the offer counts below are that run (`data/us/<cat>/raw/us-<store>.json`).
 
 `_shopify.ts` is a helper used by all the Shopify stores, not a store. It exports no `scrapers`, so the runner loads it and does nothing with it. It holds the shared `NOT_NEW` filter (refurbished, renewed, open box, pre-owned, demo, warranty or protection plan, gift card) and a reader for one offer per variant from `products.json`.
 
@@ -14,9 +14,9 @@ The scrapers are in `scripts/scrapers/regions/us/` and their entries in `src/lib
 | Audio Advice | Shopify; the mpn is the part of the SKU after `BRAND:` | headphones 130, speakers 127, tvs 68, soundbars 50 |
 | Headphones.com (`headphonescom`) | Shopify (USD) | headphones 277, speakers 19 |
 | Audio46 | Shopify | headphones 1841 (one offer per colour or termination variant) |
-| Apple | ported from the AU scraper; watch prices use the US `"amount"` field | tablets 160, laptops 61, desktops 29, smartwatches 26, headphones 18, monitors 10, speakers 9 |
+| Apple | ported from the AU scraper; watch prices use the US `"amount"` field; iPhones (2026-11-01) from each `/shop/buy-iphone/<model>` page's `"products"` JSON, carrier-locked entries skipped | phones 73, tablets 160, laptops 61, desktops 29, smartwatches 26, headphones 18, monitors 10, speakers 9 |
 | Dell | AU scraper with en-us | laptops 93, monitors 92, desktops 49 |
-| LG | JSON-LD ItemList on each listing plus the sub-listings it links | monitors 141, laptops 76, tvs 60, soundbars 19, speakers 14 |
+| LG | JSON-LD ItemList on each listing plus the sub-listings it links | monitors 141, fridges 79, washing-machines 77, laptops 76, tvs 60, dishwashers 41, soundbars 19, speakers 14 (appliances added 2026-11-01; filters, pedestals and parts dropped) |
 | Bose | AU scraper on bose.com | headphones 49, speakers 33, soundbars 5 |
 | Sonos | AU scraper with en-us | speakers 19, soundbars 8, headphones 6 |
 | Garmin | AU scraper with locale and country US | smartwatches 167 |
@@ -44,3 +44,7 @@ The scrapers are in `scripts/scrapers/regions/us/` and their entries in `src/lib
 - The daily job runs from Azure IPs, which may get different results. Best Buy and Walmart are worth one retry from Actions.
 - Garmin keeps the AU behaviour of also listing `BUNDLE-…` part numbers.
 - Programmes the owner could join: Abt, Focus Camera, World Wide Stereo and Audio Advice (through CJ, Impact or AvantLink), plus the brand stores, most of which are on Impact.
+
+## Probed 2026-11-01 from GitHub Actions (still blocked)
+
+Captcha or 403: Nothing, Motorola, OnePlus, Fairphone, Mint Mobile, Best Buy, Ninja, Shark, Dyson, Micro Center, Newegg, B&H, Adorama, Staples, Costco, Crucial, Kingston, AJ Madison, Lowe's, Home Depot, Cosori, Chefman, Dreame (products.json), eufy. Reachable and worth a scraper later: Google Store (Pixel), Samsung US (phones and SSDs carry `"price"` in the HTML now), Breville US, Office Depot.

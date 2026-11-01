@@ -1,0 +1,51 @@
+name: Probe stores
+
+# Tries scrapers and candidate store URLs from GitHub's network (the sandbox can't reach stores) without committing
+# anything: prints each scraper's offer count and a sample, and each URL's status. Run by hand when adding a store.
+on:
+  workflow_dispatch:
+    inputs:
+      region:
+        description: "au, us or uk"
+        default: "us"
+      stores:
+        description: "Scraper file names (space separated); blank runs none"
+        default: ""
+      urls:
+        description: "Candidate URLs to fetch (space separated)"
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Inputs
+        run: |
+          { echo "REGION=${{ inputs.region }}"; echo "STORES=${{ inputs.stores }}"; echo "URLS=${{ inputs.urls }}"; } >> "$GITHUB_ENV"
+      - name: Fetch candidate URLs
+        if: env.URLS != ''
+        run: |
+          for u in $URLS; do
+            code=$(curl -s -o /tmp/body -w '%{http_code}' -m 20 -L -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' "$u" || echo ERR)
+            size=$(wc -c < /tmp/body 2>/dev/null || echo 0)
+            hint=$(grep -o -m1 -E '"products":\[\{"id":[0-9]+,"title":"[^"]{0,60}|Just a moment|cf-chl|captcha|Access Denied|"price":"?[0-9.]+' /tmp/body | head -1)
+            echo "$code $size $u :: $hint"
+          done
+      - name: Run scrapers
+        if: env.STORES != ''
+        run: |
+          npx tsx scripts/scrape-categories.ts --region "$REGION" $STORES || true
+          for f in $(ls data/${REGION/au/}/*/raw/*.json 2>/dev/null; ls data/$REGION/*/raw/*.json 2>/dev/null); do :; done
+          git status --porcelain data | awk '{print $2}' | grep 'raw/.*json$' | while read f; do
+            echo "== $f"; node -e 'const j=require("./"+process.argv[1]);console.log(j.offers.length,"offers");for(const o of j.offers.slice(0,25))console.log(o.price,"|",o.title,"|",o.sku)' "$f"
+          done

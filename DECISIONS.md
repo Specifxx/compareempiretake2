@@ -671,3 +671,7 @@ JB Hi-Fi with nothing saying there was a US edition.
   serves AU, US and GB, and "Made in Australia" shows on Australian pages only.
 * US coverage is the weak point this exposes: 8 US phones from one store, no US PC parts or appliances. That is the
   next job, not this entry's.
+
+## 2026-11-01 — More US coverage: Apple iPhones and LG appliances
+
+Bill wants US visitors (see "Default to the visitor's region" above). The US catalogue had 8 phones from one store and no whitegoods. Apple US now adds its iPhones (73 offers: each model page's `"products"` JSON, carrier-locked entries skipped) and LG US adds fridges (79), washers and dryers (77) and dishwashers (41) from the same JSON-LD listings it already reads, with filters, pedestals and parts refused. The sandbox can no longer reach stores, so `.github/workflows/probe-stores.yml` (run by hand) tries scrapers and candidate URLs from GitHub's network and commits nothing. The big US PC-parts and appliance retailers (Best Buy, Newegg, B&H, Micro Center, Home Depot, Lowe's, AJ Madison) are still behind bot protection and stay out (docs/stores/us.md).
