@@ -3,7 +3,7 @@ import { ReviewsSection } from "@/components/ReviewsSection";
 
 export const metadata: Metadata = {
   title: "Reviews of Compare Empire",
-  description: "What Australians say about Compare Empire, the price comparison site that shows the real price history. Every genuine review is published.",
+  description: "What shoppers say about Compare Empire, the price comparison site that shows the real price history. Every genuine review is published.",
   alternates: { canonical: "/reviews" },
 };
 

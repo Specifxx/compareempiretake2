@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const TOPICS: [string, string][] = [
   ["A price looks wrong", "Use \u201cReport a wrong price\u201d under any product\u2019s prices, or send the product link and what the store shows. We fix matching errors fast."],
-  ["Add a store", "Tell us which Australian store you'd like us to check."],
+  ["Add a store", "Tell us which store you'd like us to check, in the US, Australia or the UK."],
   ["Retailers and partners", "Listing questions, corrections to your prices, or affiliate and partnership enquiries."],
   ["Your data", "Ask us to delete your alerts, feedback or reviews (see the privacy page)."],
   ["Press", "Price history data for stories about sales and fake discounts."],

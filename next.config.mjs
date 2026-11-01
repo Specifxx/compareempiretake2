@@ -48,7 +48,8 @@ const nextConfig = {
       ["/us/tablets/apple-ipad-mini-with-8-3-a17-pro", "/us/tablets/apple-ipad-mini-a17-pro"],
       ["/us/tablets/microsoft-surface-go-3-tablet-intel-core-i3-10100y-with", "/us/tablets/microsoft-surface-go-3-tablet-intel-core-i3-10100y"],
     ];
-    return merged.map(([source, destination]) => ({ source, destination, permanent: true }));
+    // The root became the US home on 2026-11-01 (Australia's moved to /au), so the old US home redirects to it.
+    return [{ source: "/us", destination: "/", permanent: true }, ...merged.map(([source, destination]) => ({ source, destination, permanent: true }))];
   },
   async headers() {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.

@@ -79,6 +79,8 @@ body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11";
 [data-grid-fallback] [data-filtered-only],
 html.gq [data-grid-fallback] [data-unfiltered] { display: none; }
 html.gq [data-grid-fallback] div[data-filtered-only] { display: block; }
+/* REGION_BOOT_SCRIPT (lib/region.ts): while a visitor is being moved to their own region's copy of the page, at most 1.5 s. */
+html[data-geo="pending"] main { visibility: hidden; }
 html.gq [data-grid-fallback] span[data-filtered-only] { display: inline; }
 
 /* Quick view (src/components/QuickView.tsx): opens at once, prices shimmer in. */

@@ -7,7 +7,7 @@ import { PhoneOffers } from "@/components/PhoneOffers";
 import { ReportPrice } from "@/components/ReportForms";
 import { PriceChart } from "@/components/PriceChart";
 import { checkVariant, getProduct, getProducts, getVsPairs, regionUpdatedAt, similarPhones, summarise, productHref, categoryHref } from "@/lib/catalog";
-import { money, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
+import { HOME_PATH, money, withXDefault, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById } from "@/lib/categories";
 import type { CategoryId, Phone } from "@/lib/types";
 import { slugify, storageLabel } from "@/lib/normalize";
@@ -28,7 +28,7 @@ function alternates(p: Phone) {
   const langs = Object.fromEntries(
     REGION_IDS.filter((r) => getProduct(p.category, p.slug, r)).map((r) => [REGIONS[r].hreflang, withRegion(`/${p.category}/${p.slug}`, r)]),
   );
-  return { canonical: productHref(p), ...(Object.keys(langs).length > 1 ? { languages: langs } : {}) };
+  return { canonical: productHref(p), ...(Object.keys(langs).length > 1 ? { languages: withXDefault(langs) } : {}) };
 }
 
 /** Product names that occur more than once in a region (same model, different codes): their titles get the code. */
@@ -165,7 +165,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
       ]
     : [];
   const crumbs = [
-    { name: "Home", url: `${SITE}${REGIONS[region].prefix}` || SITE },
+    { name: "Home", url: `${SITE}${HOME_PATH[region] === "/" ? "" : HOME_PATH[region]}` || SITE },
     { name: cat.name, url: `${SITE}${categoryHref(cat.id, region)}` },
     { name: phone.name, url: `${SITE}${productHref(phone)}` },
   ];
@@ -179,7 +179,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
     <div className="container-x pt-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <nav className="mb-6 flex items-center gap-2 text-sm text-ink-mute" aria-label="Breadcrumb">
-        <Link href={REGIONS[region].prefix || "/"} className="hover:text-ink">Home</Link>
+        <Link href={HOME_PATH[region]} className="hover:text-ink">Home</Link>
         <span>/</span>
         <Link href={categoryHref(cat.id, region)} className="hover:text-ink">{cat.name}</Link>
         <span>/</span>

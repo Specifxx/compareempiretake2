@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CONTACT_EMAIL } from "@/lib/site";
 import { RetailerDot } from "@/components/RetailerChip";
 import { getCatalog } from "@/lib/catalog";
 
 export const metadata: Metadata = {
   title: "About Compare Empire — how we compare prices",
-  description: "Compare Empire is an independent Australian price comparison site. Here's how we collect prices, rank stores and keep it honest.",
+  description: "Compare Empire is an independent price comparison site for the US, Australia and the UK. Here's how we collect prices, rank stores and keep it honest.",
   alternates: { canonical: "/about" },
 };
 
@@ -20,7 +21,7 @@ export default function AboutPage() {
       <div className="eyebrow">About</div>
       <h1 className="mt-2 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">One price comparison site, done properly.</h1>
       <p className="mt-5 text-lg text-ink-soft">
-        Buying anything in Australia means opening five tabs, decoding five naming schemes and still wondering if you missed a sale. Compare Empire does that
+        Buying anything online means opening five tabs, decoding five naming schemes and still wondering if you missed a sale. Compare Empire does that
         legwork every day and puts the answer on one page — phones, tablets, laptops, monitors, graphics cards and TVs so far, with more to come.
       </p>
 
@@ -49,7 +50,11 @@ export default function AboutPage() {
         </ol>
       </Section>
 
-      <Section title="Retailers we check" id="retailers">
+      <Section title="Retailers we check in Australia" id="retailers">
+        <p className="mb-3 text-sm text-ink-mute">
+          The US and UK stores have their own lists: <Link href="/us/stores" className="text-brand hover:underline">US stores</Link> ·{" "}
+          <Link href="/uk/stores" className="text-brand hover:underline">UK stores</Link>.
+        </p>
         <div className="card divide-y divide-line">
           {retailers.map((r) => (
             <a key={r.id} href={`https://www.${r.site}`} target="_blank" rel="noopener nofollow" className="flex items-center justify-between px-5 py-4 hover:bg-bg-sunk">

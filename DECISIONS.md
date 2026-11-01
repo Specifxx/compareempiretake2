@@ -641,3 +641,33 @@ can read for each:
 `SITEMAP_TIER` now defaults to 2: products at two or more stores (about 4,900 across the three regions),
 brand pages, category deal pages and comparisons. A week of tier 1 left over 5,400 pages with Search Console
 impressions, so Google is crawling past the sitemap anyway; the sitemap should say which pages matter.
+## 2026-11-01 — The visitor's own region by default; the root is the US home
+
+Owner, 2026-11-01: "the default region is the region that the visitor is located in. And if they can't determine it,
+then the default should be the US … anywhere that says Australia … needs to change to the US if the US region is
+selected … It's probably better for US to be on the indexing. And if anything, no region at all." Australia was the
+site root, so an American who typed compareempire.com, or clicked an Australian page in Google, got AUD prices from
+JB Hi-Fi with nothing saying there was a US edition.
+
+* **The root is the US home; Australia's home moved to `/au`** (`HOME_PATH`, `lib/region.ts`). `/us` 301s to `/`. Every
+  other Australian URL (`/phones`, `/phones/<slug>`, guides, brands) is unchanged, so their rankings are untouched; only
+  the AU home moved, and it never earned clicks of its own (43 for the whole site in the 90 days to 28 October).
+  The root's title names no country; the AU and UK homes keep theirs.
+* **Visitors are moved, crawlers never are.** `REGION_BOOT_SCRIPT` runs inline before first paint: the visitor's region
+  is the one they last picked in the header (`ce-region`), else their time zone's (Australia/* → AU, Europe/London → UK),
+  else the US. On a page of another region it reads the page's own hreflang alternates and `location.replace`s to that
+  region's copy; `<main>` is hidden until then (at most 1.5 s). A user agent that looks like a crawler, a link preview
+  or an audit tool (`BOT_UA`) is never moved and never sees anything hidden, so Google indexes each regional page as
+  itself, and hreflang (now with `x-default` = the US copy) tells it which to show where. Time zone, not
+  `x-vercel-ip-country`: the pages are static, it costs no function call, and the answer is the same for our three
+  regions with the US as the fallback. No cookie, no request.
+* **Hubs gained hreflang** (deals, a category's deals, browse, a category's A–Z page) so the move works there too.
+* **Pages with no copy in the visitor's region** (guides, brands, comparisons: Australian only) stay put and show one
+  line, `RegionNotice`: "In the US? This page compares Australian prices (AUD). See US prices · Stay on Australia".
+  Never a pop-up.
+* **Pages of no region** (about, contact, legal, reviews, forum, saved, alerts: `isNeutralPath`) render for the US on
+  the server and their header and footer move to the visitor's region in the browser; their copy no longer says
+  "Australian". The layout's default title and description name no country, `<html lang>` is `en`, the Organization
+  serves AU, US and GB, and "Made in Australia" shows on Australian pages only.
+* US coverage is the weak point this exposes: 8 US phones from one store, no US PC parts or appliances. That is the
+  next job, not this entry's.

@@ -7,8 +7,8 @@ import { HeartIcon, MenuIcon, MoonIcon, SearchIcon, SunIcon, CloseIcon } from ".
 import { SearchPalette } from "./SearchPalette";
 import { SearchBox } from "./SearchBox";
 import { saved } from "@/lib/store";
-import { REGIONS, withRegion, type RegionId } from "@/lib/region";
-import { useRegion } from "@/lib/use-region";
+import { HOME_PATH, isNeutralPath, REGIONS, withRegion, type RegionId } from "@/lib/region";
+import { rememberRegion, useRegion } from "@/lib/use-region";
 
 const AU_NAV = [
   { href: "/deals", label: "Deals" },
@@ -207,17 +207,14 @@ function RegionSwitcher({ regions, nav }: { regions: RegionId[]; nav: Partial<Re
   const [open, setOpen] = useState(false);
   useEffect(() => setOpen(false), [path]);
   const target = (to: RegionId) => {
-    const rest = region === "au" ? path : path.slice(REGIONS[region].prefix.length) || "/";
+    if (isNeutralPath(path)) return path;
+    const rest = path === HOME_PATH[region] ? "/" : region === "au" ? path : path.slice(REGIONS[region].prefix.length) || "/";
     const cat = rest.split("/")[1];
     const has = (nav[to] ?? []).some((d) => d.categories.some((c) => c.href === withRegion(`/${cat}`, to)));
     if (cat === "deals") return withRegion("/deals", to);
     return has ? withRegion(`/${cat}`, to) : withRegion("/", to);
   };
-  const remember = (r: RegionId) => {
-    try {
-      localStorage.setItem("ce-region", r);
-    } catch {}
-  };
+  const remember = rememberRegion;
   return (
     <div className="relative">
       <button onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-label={`Country: ${REGIONS[region].name}`} className="flex h-10 items-center gap-1.5 rounded-xl px-2.5 text-sm font-semibold text-ink-soft hover:bg-bg-sunk hover:text-ink">

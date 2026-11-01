@@ -3,12 +3,12 @@ import { notFound } from "next/navigation";
 import { DealsView } from "@/components/DealsView";
 import { EbayStrip } from "@/components/EbayStrip";
 import { ogImage } from "@/lib/og";
-import { regionLive } from "@/views/region-meta";
+import { hubLanguages, regionLive } from "@/views/region-meta";
 
 export const metadata: Metadata = {
   title: "Today's best tech deals in the UK — checked against real prices",
   description: "The biggest real savings today across UK stores: price drops, retailer sales and store gaps, with no fake 'was' prices.",
-  alternates: { canonical: "/uk/deals" },
+  alternates: { canonical: "/uk/deals", languages: hubLanguages("/deals") },
   openGraph: { images: [{ url: ogImage({ title: "Today's real deals — no fake 'was' prices", region: "uk" }), width: 1200, height: 630 }] },
 };
 

@@ -1,6 +1,6 @@
 "use client";
 import { useRegion } from "@/lib/use-region";
-import { REGIONS } from "@/lib/region";
+import { HOME_PATH } from "@/lib/region";
 import Link from "next/link";
 
 // At Christmas Santa's hat sits on it (globals.css .xmas-logo-hat, hidden outside the season), hence the host span.
@@ -26,7 +26,7 @@ export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
 export function Logo() {
   const region = useRegion();
   return (
-    <Link href={REGIONS[region].prefix || "/"} className="flex items-center gap-2.5" aria-label="Compare Empire home">
+    <Link href={HOME_PATH[region]} className="flex items-center gap-2.5" aria-label="Compare Empire home">
       <LogoMark />
       <span className="font-display text-[1.15rem] font-extrabold tracking-tight">
         Compare<span className="text-brand">Empire</span>
