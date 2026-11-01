@@ -90,4 +90,8 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-zatu", name: "Zatu Games", site: "zatu.com", color: "#E65100", type: "retailer" },
   { id: "uk-appliancesuperstore", name: "Appliance Superstore", site: "appliancesuperstore.co.uk", color: "#00529B", type: "retailer" },
   { id: "uk-audeze", name: "Audeze", site: "audeze.co.uk", color: "#1A1A1A", type: "official" },
+  { id: "uk-thecoffeefactory", name: "The Coffee Factory", site: "thecoffeefactory.co.uk", color: "#4E342E", type: "retailer" },
+  { id: "uk-smallbatch", name: "Small Batch Coffee", site: "smallbatchcoffee.co.uk", color: "#212121", type: "retailer" },
+  { id: "uk-quarterhorse", name: "Quarter Horse Coffee", site: "quarterhorsecoffee.com", color: "#8D6E63", type: "retailer" },
+  { id: "uk-artisanroast", name: "Artisan Roast", site: "artisanroast.co.uk", color: "#BF360C", type: "retailer" },
 ];
