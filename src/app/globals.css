@@ -452,3 +452,16 @@ html.gq [data-grid-fallback] span[data-filtered-only] { display: inline; }
   --xmas-pill-border: rgb(248 113 113 / 0.45);
 }
 /* xmas-site:end */
+
+/* The beta forum (src/components/forum/forum.css) in this site's colours. */
+.fm {
+  --fm-card: rgb(var(--card));
+  --fm-sunk: rgb(var(--sunk));
+  --fm-line: rgb(var(--line));
+  --fm-ink: rgb(var(--ink));
+  --fm-muted: rgb(var(--ink-mute));
+  --fm-accent: rgb(var(--brand));
+  --fm-on-accent: rgb(var(--brand-ink));
+  --fm-accent-soft: rgb(var(--brand-soft));
+  --fm-radius: 14px;
+}

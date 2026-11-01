@@ -171,6 +171,7 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
               {NAV.map((n) => (
                 <Link key={n.href} href={n.href} onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">{n.label}</Link>
               ))}
+              <Link href="/forum" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">Community forum</Link>
               <Link href="/about" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">About</Link>
             </div>
           </nav>
