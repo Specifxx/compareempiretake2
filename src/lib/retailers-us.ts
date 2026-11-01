@@ -93,7 +93,7 @@ export const US_RETAILERS: (Retailer & { id: `us-${string}` })[] = [
   { id: "us-shenzhenaudio", name: "ShenZhen Audio", site: "shenzhenaudio.com", color: "#C62828", type: "retailer" },
   { id: "us-mobilepixels", name: "Mobile Pixels", site: "mobilepixels.us", color: "#1565C0", type: "official" },
   { id: "us-oreck", name: "Oreck", site: "oreck.com", color: "#00539B", type: "official" },
-  { id: "us-electronicsexpo", name: "Electronic Express", site: "electronicsexpo.com", color: "#E21F26", type: "retailer" },
+  { id: "us-electronicsexpo", name: "Electronics Expo", site: "electronicsexpo.com", color: "#E21F26", type: "retailer" },
   { id: "us-projectorscreen", name: "ProjectorScreen.com", site: "projectorscreen.com", color: "#0B5394", type: "retailer" },
   { id: "us-xoticpc", name: "Xotic PC", site: "xoticpc.com", color: "#E4002B", type: "retailer" },
   { id: "us-ritzcamera", name: "Ritz Camera", site: "ritzcamera.com", color: "#C8102E", type: "retailer" },

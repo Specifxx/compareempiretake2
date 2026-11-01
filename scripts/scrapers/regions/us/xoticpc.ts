@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "us-xoticpc",
   base: "https://www.xoticpc.com",
-  cats: ["monitors", "laptops", "desktops", "headphones"],
+  cats: ["monitors", "laptops", "desktops"],
 });

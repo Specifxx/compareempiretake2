@@ -711,3 +711,11 @@ security cameras in cameras, microphones in washing machines, robot vacuums sold
 drone service plans, cases and lights, and anything sold "repackaged", "reconditioned" or as an international
 version. Left out: Leica Store Miami (mostly accessories), Di Bartoli (the store stopped answering mid-read), and
 6th Ave's own kits (only its plain cameras and watches are read).
+
+## 2026-11-01 — Store survey round 3: 17 more stores (US 88→92, UK 48→54, AU 60→67)
+
+399 more candidates (`docs/stores/candidates4.txt`) gave 17 clean stores, mostly hi-fi dealers and two big LEGO shops
+(Brickville, Toyworld Bendigo). The Audio Tailor and Aussie Hi-Fi are one stock on two domains, so only The Audio
+Tailor is read. "Floor stock", "pre-loved" and "ex-floor" now count as not new, and speaker "packages" (a pair plus
+an amplifier) are refused. Yield is falling (from 10% to 4%), so later rounds use brand dealer lists and
+regional brand stores rather than guessed domains.
