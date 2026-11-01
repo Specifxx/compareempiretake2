@@ -533,3 +533,17 @@ and a central postcode as `contextualLocation`, so eBay quotes real postage; a l
 is never kept, and the cheapest delivered (item + postage) wins. Stored rows without postage (317 AU, 279 US, 40 UK on
 the day) are hidden (`catalog.ts`) and age out within five days. The phone menu closed on a route change but stayed open
 after tapping the page already shown, so every link in it now closes it too.
+
+## Christmas theme: 1 November to Boxing Day (2026-11-01)
+
+Owner, 2026-11-01: every Compare site gets a Christmas theme after the Halloween one, each its own take. Snow behind the home hero, corner trees and gifts, a Santa hat on the logo, and a "Christmas sale check" pill to real price drops only. Pages stay static; the boot script decides whether the markup shows.
+
+The season window is fixed in `src/lib/season.ts`: 1 November to 26 December, every year, by the visitor's own
+date, stamped on `<html data-season>` by an inline boot script before first paint. `?season=christmas` previews it out
+of season and `?season=off` hides it in season. Every decoration is CSS-gated on that attribute, `aria-hidden`,
+`pointer-events: none`, painted under the content (never over a price or a button), animated with `transform`
+only, and stopped under `prefers-reduced-motion`. The page's content and links stay in the server HTML; the season
+adds no request, no script beyond the boot line and no database or data read. The shared rules sit between
+`xmas-common:start` and `xmas-common:end` in `globals.css` (identical on every sister site); this site's colours sit in
+the `xmas-site` block after it. Art is eight small SVGs in `public/xmas/`. To end it early, move the `to` date; after
+Boxing Day it switches itself off.
