@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "uk-homeavdirect",
   base: "https://www.homeavdirect.co.uk",
-  cats: ["soundbars", "headphones", "speakers"],
+  cats: ["soundbars", "headphones"],
 });

@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "us-moonaudio",
   base: "https://www.moon-audio.com",
-  cats: ["headphones", "soundbars"],
+  cats: ["headphones"],
 });

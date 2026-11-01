@@ -4,5 +4,5 @@ import { autoShopify } from "../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "lenwallis",
   base: "https://www.lenwallisaudio.com",
-  cats: ["soundbars", "headphones", "tvs"],
+  cats: ["soundbars", "headphones"],
 });
