@@ -139,7 +139,18 @@ export type RetailerId =
   | "dipacci"
   | "marketlane"
   | "threebearscoffee"
-  | "singleo";
+  | "singleo"
+  | "audiotrends"
+  | "brickresales"
+  | "brisbanehifi"
+  | "discounttoyco"
+  | "dukescoffee"
+  | "godfreys"
+  | "merlo"
+  | "toottoottoys"
+  | "toybricks"
+  | "toyworldfrankston"
+  | "toyworldwarrnambool";
 
 export interface Retailer {
   id: RetailerId;

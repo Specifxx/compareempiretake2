@@ -87,6 +87,18 @@ const AU_RETAILERS = {
   marketlane: { id: "marketlane", name: "Market Lane Coffee", site: "marketlane.com.au", color: "#5D4037", type: "retailer" },
   threebearscoffee: { id: "threebearscoffee", name: "Three Bears Coffee", site: "threebearscoffee.com.au", color: "#6D4C41", type: "retailer" },
   singleo: { id: "singleo", name: "Single O", site: "singleo.com.au", color: "#FF7043", type: "retailer" },
+  // Store survey round 5, 2026-11-01
+  audiotrends: { id: "audiotrends", name: "Audio Trends", site: "audiotrends.com.au", color: "#1A237E", type: "retailer" },
+  brickresales: { id: "brickresales", name: "Brick Resales", site: "brickresales.com.au", color: "#F9A825", type: "retailer" },
+  brisbanehifi: { id: "brisbanehifi", name: "Brisbane Hi-Fi", site: "brisbanehifi.com.au", color: "#4A148C", type: "retailer" },
+  discounttoyco: { id: "discounttoyco", name: "Discount Toy Co", site: "discounttoyco.com.au", color: "#E91E63", type: "retailer" },
+  dukescoffee: { id: "dukescoffee", name: "Dukes Coffee Roasters", site: "dukescoffee.com.au", color: "#3E2723", type: "retailer" },
+  godfreys: { id: "godfreys", name: "Godfreys", site: "godfreys.com.au", color: "#E30613", type: "retailer" },
+  merlo: { id: "merlo", name: "Merlo Coffee", site: "merlo.com.au", color: "#8D6E63", type: "retailer" },
+  toottoottoys: { id: "toottoottoys", name: "Toot Toot Toys", site: "toottoottoys.com.au", color: "#43A047", type: "retailer" },
+  toybricks: { id: "toybricks", name: "Toy Bricks", site: "toybricks.com.au", color: "#FBC02D", type: "retailer" },
+  toyworldfrankston: { id: "toyworldfrankston", name: "Toyworld Frankston", site: "toyworldfrankston.com.au", color: "#E30613", type: "retailer" },
+  toyworldwarrnambool: { id: "toyworldwarrnambool", name: "Toyworld Warrnambool", site: "toyworldwarrnambool.com.au", color: "#E30613", type: "retailer" },
 };
 
 export const RETAILERS = {
