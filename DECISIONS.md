@@ -676,6 +676,15 @@ JB Hi-Fi with nothing saying there was a US edition.
 
 Bill wants US visitors (see "Default to the visitor's region" above). The US catalogue had 8 phones from one store and no whitegoods. Apple US now adds its iPhones (73 offers: each model page's `"products"` JSON, carrier-locked entries skipped) and LG US adds fridges (79), washers and dryers (77) and dishwashers (41) from the same JSON-LD listings it already reads, with filters, pedestals and parts refused. The sandbox can no longer reach stores, so `.github/workflows/probe-stores.yml` (run by hand) tries scrapers and candidate URLs from GitHub's network and commits nothing. The big US PC-parts and appliance retailers (Best Buy, Newegg, B&H, Micro Center, Home Depot, Lowe's, AJ Madison) are still behind bot protection and stay out (docs/stores/us.md).
 
+## 2026-11-01: eBay and Amazon rows look like the other price rows
+
+The owner: "the ebay and amazon links should blend in and look exactly the same as the other price rows … reflect that
+change on the other sites that require it." Paid marketplace rows (eBay, Amazon, and TCGplayer where it is pinned) keep
+their place and their "Ad"/paid-link label, but lose their brand tints and brand-coloured buttons: they use the same row
+and the same button as a store. They are still never counted as a store and never re-ranked by commission. This
+reverses the 2026-10-30 "bright, catchy colour" pinned rows; eBay ad strips and panels outside the price rows keep
+their own look.
+
 ## 2026-11-01 — 69 more stores through one reader, and eBay covers every product before repeating one
 
 Bill: "we need to do a scan, and we got to aim for a 100+ stores. Across all regions. I can see that the US we have less stores than Australia … Same as the UK." And for eBay: "prioritize the US first … aim for coverage … for some products, maybe the price gets refreshed once a week … we're not just using our eBay code on the same thing every day."
