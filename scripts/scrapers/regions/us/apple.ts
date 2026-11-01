@@ -1,5 +1,5 @@
 /**
- * Apple US store: iPads (tablets), MacBook Air/Pro/Neo (laptops), Studio Display (monitors).
+ * Apple US store: iPhones (phones), iPads (tablets), MacBook Air/Pro/Neo (laptops), Studio Display (monitors).
  * iPad buy pages embed `"products":[{sku,partNumber,price:{fullPrice},name}]` and a JSON-LD Product per
  * screen size whose name carries the chip ("iPad Air 11-inch (M4)") and whose offers list the part numbers.
  * Mac buy pages link one server-rendered page per standard configuration, each with JSON-LD (name, price, part).
@@ -290,7 +290,40 @@ async function monitors(): Promise<RawOffer[]> {
   return out;
 }
 
-export const scrapers: Partial<Record<Exclude<CategoryId, "phones">, () => Promise<RawOffer[]>>> = {
+/**
+ * iPhones (owner, 2026-11-01: more US coverage). The buy page of each model embeds `"products":[…]` with one entry per
+ * storage, colour and carrier; `fullPrice` is the full retail price. Carrier-tied entries (AT&T, Verizon, T-Mobile,
+ * Boost) are left out: only the unlocked / connect-later price is compared, one offer per part number.
+ */
+async function phones(): Promise<RawOffer[]> {
+  const index = await get(`${BASE}/shop/buy-iphone`);
+  const models = [...new Set([...index.matchAll(/\/shop\/buy-iphone\/(iphone-[a-z0-9-]+)/g)].map((m) => m[1]))];
+  const out: RawOffer[] = [];
+  const seen = new Set<string>();
+  for (const m of models) {
+    const url = `${BASE}/shop/buy-iphone/${m}`;
+    let html: string;
+    try {
+      html = await get(url);
+    } catch {
+      continue;
+    }
+    const image = html.match(/<meta property="og:image" content="([^"]+)"/)?.[1];
+    for (const p of products(html)) {
+      const price = p.price?.fullPrice;
+      const name = clean(p.name);
+      if (!price || !/^iPhone\b/i.test(name) || !/\d+\s?(GB|TB)\b/i.test(name) || seen.has(p.partNumber)) continue;
+      if (/AT&T|AT&amp;T|Verizon|T-Mobile|Boost|Sprint|Cricket|Visible|carrier/i.test(`${p.name} ${p.sku}`)) continue;
+      seen.add(p.partNumber);
+      out.push({ retailer: "us-apple", sku: p.partNumber, mpn: p.partNumber, brand: "Apple", title: `Apple ${name}`, url, price, image, inStock: true });
+    }
+    await sleep(800);
+  }
+  return out;
+}
+
+export const scrapers: Partial<Record<CategoryId, () => Promise<RawOffer[]>>> = {
+  phones,
   tablets,
   laptops,
   monitors,
