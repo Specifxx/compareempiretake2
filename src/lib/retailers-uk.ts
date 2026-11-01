@@ -102,4 +102,10 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-stuartwestmoreland", name: "Stuart Westmoreland", site: "stuartwestmoreland.co.uk", color: "#1B5E20", type: "retailer" },
   { id: "uk-londonappliances", name: "London Appliances", site: "londonappliances.com", color: "#1565C0", type: "retailer" },
   { id: "uk-toysntuck", name: "Toys N Tuck", site: "toysntuck.co.uk", color: "#EF6C00", type: "retailer" },
+  { id: "uk-balancecoffee", name: "Balance Coffee", site: "balancecoffee.co.uk", color: "#212121", type: "retailer" },
+  { id: "uk-brickabrac", name: "Brick-a-Brac", site: "brickabrac.co.uk", color: "#C62828", type: "retailer" },
+  { id: "uk-potterscookshop", name: "Potters Cookshop", site: "potterscookshop.co.uk", color: "#33691E", type: "retailer" },
+  { id: "uk-startfitness", name: "Start Fitness", site: "startfitness.co.uk", color: "#E65100", type: "retailer" },
+  { id: "uk-samturner", name: "Sam Turner & Sons", site: "sam-turner.co.uk", color: "#1B5E20", type: "retailer" },
+  { id: "uk-letsrun", name: "Let's Run", site: "lets-run.co.uk", color: "#0277BD", type: "retailer" },
 ];
