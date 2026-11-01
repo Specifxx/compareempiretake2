@@ -21,7 +21,7 @@ const CUR: Record<string, string> = { us: "USD", uk: "GBP", au: "AUD" };
 async function main() {
   const lines = readFileSync(process.argv[2], "utf8").split("\n").map((l) => l.trim()).filter((l) => l && !l.startsWith("#"));
   const results: unknown[] = [];
-  await pool(lines, 6, async (line) => {
+  await pool(lines, 10, async (line) => {
     const [region, base0] = line.split(/\s+/);
     const base = base0.replace(/\/$/, "");
     const r: Record<string, unknown> = { region, base };
