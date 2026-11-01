@@ -1,7 +1,7 @@
 import "server-only";
 import { activeCategories, getBrands, getCatalog, getVsPairs, liveRegions } from "./catalog";
 import { getGuides } from "./guides";
-import { PREFIXED_REGIONS, withRegion, type RegionId } from "./region";
+import { HOME_PATH, PREFIXED_REGIONS, withRegion, type RegionId } from "./region";
 import { SITE } from "./site";
 import type { Phone } from "./types";
 
@@ -34,7 +34,7 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
     {
       id: "pages",
       entries: () =>
-        ["/", "/deals", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/contact", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), lastmod, priority: p === "/" ? 1 : 0.6 })),
+        [HOME_PATH.au, "/deals", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/contact", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), lastmod, priority: p === HOME_PATH.au ? 1 : 0.6 })),
     },
     {
       id: "categories",

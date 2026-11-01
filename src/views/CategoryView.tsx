@@ -8,7 +8,7 @@ import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { GuideCard } from "@/components/GuideCard";
 import { guidesForCategory } from "@/lib/guides";
 import { SITE } from "@/lib/site";
-import { money, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
+import { HOME_PATH, money, withXDefault, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById, CATEGORIES, DEPARTMENTS } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
 import { ogImage } from "@/lib/og";
@@ -30,7 +30,7 @@ export async function categoryMetadata(params: CategoryParams, region: RegionId)
   if (!c) return {};
   const stores = activeRetailers(c.id as CategoryId, region);
   const R = REGIONS[region];
-  const langs = Object.fromEntries(REGION_IDS.filter((r) => activeCategories(r).some((x) => x.id === c.id)).map((r) => [REGIONS[r].hreflang, categoryHref(c.id, r)]));
+  const langs = withXDefault(Object.fromEntries(REGION_IDS.filter((r) => activeCategories(r).some((x) => x.id === c.id)).map((r) => [REGIONS[r].hreflang, categoryHref(c.id, r)])));
   const products = getSummaries(c.id as CategoryId, region).filter((p) => p.inStock && p.bestPrice > 0);
   const count = getProducts(c.id as CategoryId, region).length;
   const what = c.searchName ?? c.name;
@@ -67,7 +67,7 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
   return (
     <div className="container-x pt-8">
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
-        <Link href={REGIONS[region].prefix || "/"} className="hover:text-ink">Home</Link> /{" "}
+        <Link href={HOME_PATH[region]} className="hover:text-ink">Home</Link> /{" "}
         <Link href={region === "au" ? "/categories" : withRegion("/browse", region)} className="hover:text-ink">All categories</Link> / <span>{dept.name}</span>
       </nav>
       <div className="flex flex-wrap items-end justify-between gap-4">
@@ -135,7 +135,7 @@ function CategoryGuideSection({ id, name, region, products }: { id: CategoryId; 
     ...(guide?.faq ?? []),
   ];
   const crumbs = [
-    { name: "Home", item: `${SITE}${REGIONS[region].prefix}` || SITE },
+    { name: "Home", item: `${SITE}${HOME_PATH[region] === "/" ? "" : HOME_PATH[region]}` || SITE },
     { name, item: `${SITE}${categoryHref(id, region)}` },
   ];
   const ld = [

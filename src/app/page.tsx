@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { HomeView } from "@/views/HomeView";
-import { homeLanguages } from "@/views/region-meta";
+import { regionHomeMetadata } from "@/views/region-meta";
 
-// The Australian home is the root. Without its own canonical it was the one
-// indexable page with none (crawl-audit-sites, 2026-10-30), and the regional
-// homes' hreflang pointed at it without it pointing back.
-export const metadata: Metadata = { alternates: { canonical: "/", languages: homeLanguages() } };
+// The site root is the US home (owner, 2026-11-01): Googlebot crawls from the US and most searchers are American.
+// Australia's home is /au and the UK's /uk; a visitor from either is moved there in the browser (REGION_BOOT_SCRIPT),
+// crawlers never are. /us redirects here (next.config.mjs).
+export const generateMetadata = (): Metadata => regionHomeMetadata("us");
 
 export default function Home() {
-  return <HomeView region="au" />;
+  return <HomeView region="us" />;
 }

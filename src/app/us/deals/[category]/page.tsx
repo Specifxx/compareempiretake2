@@ -5,6 +5,7 @@ import { EbayStrip } from "@/components/EbayStrip";
 import { activeCategories } from "@/lib/catalog";
 import { categoryById } from "@/lib/categories";
 import { ogImage } from "@/lib/og";
+import { hubLanguages } from "@/views/region-meta";
 import type { CategoryId } from "@/lib/types";
 
 type Params = Promise<{ category: string }>;
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   return {
     title: `${c.name} deals in the US today — real savings only`,
     description: `The best ${c.name.toLowerCase()} deals in the US today, checked against every store's real price and our price history. No sponsored spots.`,
-    alternates: { canonical: `/us/deals/${c.id}` },
+    alternates: { canonical: `/us/deals/${c.id}`, languages: hubLanguages(`/deals/${c.id}`, (r) => activeCategories(r).some((x) => x.id === c.id)) },
     openGraph: { images: [{ url: ogImage({ title: `${c.name} deals today`, category: c.name, region: "us" }), width: 1200, height: 630 }] },
   };
 }

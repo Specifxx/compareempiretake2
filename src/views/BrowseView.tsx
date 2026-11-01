@@ -3,8 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { activeCategories, getProducts } from "@/lib/catalog";
 import { categoryById } from "@/lib/categories";
-import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
+import { HOME_PATH, money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import type { CategoryId } from "@/lib/types";
+import { hubLanguages } from "@/views/region-meta";
 
 /**
  * Plain HTML lists of every product, A to Z, so every product page is reachable by a crawlable link
@@ -21,7 +22,7 @@ export const browsePageParams = (region: RegionId) =>
   activeCategories(region).flatMap((c) => Array.from({ length: pages(c.id as CategoryId, region) - 1 }, (_, i) => ({ category: c.id, page: String(i + 2) })));
 
 export function browseIndexMetadata(region: RegionId): Metadata {
-  return { title: `Browse every product we compare in ${IN[region]}`, description: `An A to Z list of every product and category Compare Empire tracks across ${REGIONS[region].adjective} stores.`, alternates: { canonical: withRegion("/browse", region) } };
+  return { title: `Browse every product we compare in ${IN[region]}`, description: `An A to Z list of every product and category Compare Empire tracks across ${REGIONS[region].adjective} stores.`, alternates: { canonical: withRegion("/browse", region), languages: hubLanguages("/browse") } };
 }
 
 export function BrowseIndex({ region }: { region: RegionId }) {
@@ -29,7 +30,7 @@ export function BrowseIndex({ region }: { region: RegionId }) {
   return (
     <div className="container-x max-w-4xl pt-10 pb-16">
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
-        <Link href={REGIONS[region].prefix || "/"} className="hover:text-ink">Home</Link> / <span>Browse</span>
+        <Link href={HOME_PATH[region]} className="hover:text-ink">Home</Link> / <span>Browse</span>
       </nav>
       <h1 className="font-display text-3xl font-extrabold tracking-tight">Browse every product</h1>
       <p className="mt-2 text-ink-mute">Every category and product we compare in {IN[region]}, A to Z.</p>
@@ -65,7 +66,7 @@ export async function browseMetadata(params: Params, region: RegionId): Promise<
   return {
     title: `All ${r.c.name.toLowerCase()} A to Z${r.total > 1 ? ` (page ${r.n} of ${r.total})` : ""} — ${IN[region]}`,
     description: `Every ${r.c.noun} we compare in ${IN[region]}, listed A to Z with today's lowest price${r.total > 1 ? `, page ${r.n} of ${r.total}` : ""}.`,
-    alternates: { canonical: path },
+    alternates: { canonical: path, languages: r.n === 1 ? hubLanguages(`/browse/${r.c.id}`, (x) => activeCategories(x).some((y) => y.id === r.c.id)) : undefined },
   };
 }
 
@@ -78,7 +79,7 @@ export async function BrowseCategory({ params, region }: { params: Params; regio
   return (
     <div className="container-x max-w-4xl pt-10 pb-16">
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
-        <Link href={REGIONS[region].prefix || "/"} className="hover:text-ink">Home</Link> / <Link href={withRegion("/browse", region)} className="hover:text-ink">Browse</Link> / <span>{c.name}</span>
+        <Link href={HOME_PATH[region]} className="hover:text-ink">Home</Link> / <Link href={withRegion("/browse", region)} className="hover:text-ink">Browse</Link> / <span>{c.name}</span>
       </nav>
       <h1 className="font-display text-3xl font-extrabold tracking-tight">All {c.name.toLowerCase()}, A to Z</h1>
       <p className="mt-2 text-ink-mute">

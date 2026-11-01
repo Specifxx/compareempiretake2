@@ -6,8 +6,9 @@ import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { QuickView } from "@/components/QuickView";
+import { RegionNotice } from "@/components/RegionNotice";
 import { activeCategories, categoryHref, getBrands, liveRegions } from "@/lib/catalog";
-import type { RegionId } from "@/lib/region";
+import { REGION_BOOT_SCRIPT, type RegionId } from "@/lib/region";
 import { DEPARTMENTS, FEATURED } from "@/lib/categories";
 import type { NavDepartment } from "@/components/Header";
 import type { CategoryId } from "@/lib/types";
@@ -21,10 +22,11 @@ const display = localFont({ src: "./fonts/bricolage-grotesque-latin-wght-normal.
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: { default: "Compare Empire — Compare tech prices across Australian stores", template: "%s · Compare Empire" },
+  // No country in the defaults (owner, 2026-11-01): the root is the US home, and a page that names a country sets its own.
+  title: { default: "Compare Empire — tech price comparison, checked every day", template: "%s · Compare Empire" },
   description:
-    "Is that sale real? We check prices on phones, TVs, laptops, headphones and more at 30+ Australian stores every day, including JB Hi-Fi, Harvey Norman and The Good Guys, and keep the price history so you can see a real deal.",
-  openGraph: { type: "website", siteName: "Compare Empire", locale: "en_AU", images: [{ url: "/og?t=Is+that+sale+actually+real%3F", width: 1200, height: 630 }] },
+    "Is that sale real? We check prices on phones, TVs, laptops, headphones and more at stores in the US, Australia and the UK every day, and keep the price history so you can see a real deal.",
+  openGraph: { type: "website", siteName: "Compare Empire", images: [{ url: "/og?t=Is+that+sale+actually+real%3F", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" },
   icons: { icon: "/icon.svg" },
   // Large image previews and full snippets in Google (Search, Discover, Images), as RiftCompare does.
@@ -89,11 +91,13 @@ const getChrome = () =>
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const { regions, nav } = getChrome();
   return (
-    <html lang="en-AU" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         {/* Christmas (1 November to Boxing Day): data-season on <html> from the visitor's own date. lib/season.ts. */}
         <script dangerouslySetInnerHTML={{ __html: SEASON_BOOT_SCRIPT }} />
+        {/* The visitor's own region (owner, 2026-11-01): moves a person, never a crawler, to their region's copy of the page. lib/region.ts. */}
+        <script dangerouslySetInnerHTML={{ __html: REGION_BOOT_SCRIPT }} />
         <link rel="alternate" type="application/rss+xml" title="Compare Empire guides" href="/feed.xml" />
       </head>
       <body className="min-h-screen font-sans">
@@ -106,11 +110,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               name: "Compare Empire",
               url: SITE,
               email: CONTACT_EMAIL,
-              contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: CONTACT_EMAIL, areaServed: "AU", availableLanguage: "en" },
+              contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: CONTACT_EMAIL, areaServed: ["US", "AU", "GB"], availableLanguage: "en" },
             }),
           }}
         />
         <Header nav={nav} regions={regions} />
+        <RegionNotice />
         <main>{children}</main>
         <Footer />
         <CompareTray />

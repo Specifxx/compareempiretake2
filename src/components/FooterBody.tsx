@@ -54,7 +54,7 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
         <div className="container-x flex flex-col gap-2 py-5 text-xs text-ink-mute sm:flex-row sm:justify-between">
           <span>© {d.year} Compare Empire. {R.taxNote}; check the retailer for the final price. eBay links are affiliate links; we may earn a commission. {AMAZON_DISCLOSURE}</span>
           <span>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-ink">{CONTACT_EMAIL}</a> · Made in Australia 🇦🇺
+            <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-ink">{CONTACT_EMAIL}</a>{region === "au" && " · Made in Australia 🇦🇺"}
           </span>
         </div>
       </div>
