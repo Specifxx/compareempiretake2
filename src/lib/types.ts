@@ -125,7 +125,14 @@ export type RetailerId =
   | "dronesdirectau"
   | "hobbywarehouse"
   | "hooverau"
-  | "westcoasthifi";
+  | "westcoasthifi"
+  | "absolutehifi"
+  | "theaudiotailor"
+  | "brickville"
+  | "melbournehifi"
+  | "theaudioexperts"
+  | "thevacuumshop"
+  | "toyworldbendigo";
 
 export interface Retailer {
   id: RetailerId;

@@ -53,4 +53,10 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-morphyrichards", name: "Morphy Richards", site: "morphyrichards.co.uk", color: "#1A1A1A", type: "official" },
   { id: "uk-theespressoshop", name: "The Espresso Shop", site: "theespressoshop.co.uk", color: "#5D4037", type: "retailer" },
   { id: "uk-flashcentre", name: "The Flash Centre", site: "theflashcentre.com", color: "#E30613", type: "retailer" },
+  { id: "uk-nintronics", name: "Nintronics", site: "nintronics.co.uk", color: "#1A1A1A", type: "retailer" },
+  { id: "uk-oxfordaudio", name: "Oxford Audio", site: "oxfordaudio.co.uk", color: "#002147", type: "retailer" },
+  { id: "uk-rayleighhifi", name: "Rayleigh Hi-Fi", site: "rayleighhifi.com", color: "#B71C1C", type: "retailer" },
+  { id: "uk-redber", name: "Redber Coffee", site: "redber.co.uk", color: "#C62828", type: "retailer" },
+  { id: "uk-stoneaudio", name: "Stone Audio", site: "stoneaudio.co.uk", color: "#333333", type: "retailer" },
+  { id: "uk-dualit", name: "Dualit", site: "dualit.com", color: "#1A1A1A", type: "official" },
 ];
