@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T08:55:19.738Z",
+ "scrapedAt": "2026-11-01T23:08:02.330Z",
  "offers": [
   {
    "retailer": "thegoodguys",
@@ -43,6 +43,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097976_1059711.png?v=1776752342&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "W1084WAU",
+   "brand": "ASKO"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "asko-8kg-classic-heat-pump-dryer-t108hwau",
+   "title": "ASKO 8kg Classic Heat Pump Dryer",
+   "url": "https://www.thegoodguys.com.au/asko-8kg-classic-heat-pump-dryer-t108hwau",
+   "price": 1954,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097980_1060711.png?v=1776640565&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "T108HWAU",
    "brand": "ASKO"
   },
   {
@@ -157,13 +168,24 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "bosch-10kg-front-load-washer-wgg254z1au",
-   "title": "Bosch 10kg Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/bosch-10kg-front-load-washer-wgg254z1au",
-   "price": 1183,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097770_1052694.png?v=1776233518&width=284&height=284&quality=88",
+   "sku": "bosch-10kg-series-8-front-load-washer-wgh25400au",
+   "title": "Bosch 10kg Series 8 Front Load Washer",
+   "url": "https://www.thegoodguys.com.au/bosch-10kg-series-8-front-load-washer-wgh25400au",
+   "price": 2049,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097847_1088699.png?v=1787291468&width=284&height=284&quality=88",
    "inStock": true,
-   "mpn": "WGG254Z1AU",
+   "mpn": "WGH25400AU",
+   "brand": "Bosch"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "bosch-10kg-series-8-front-load-washer-wgh254a1au",
+   "title": "Bosch 10kg Series 8 Front Load Washer",
+   "url": "https://www.thegoodguys.com.au/bosch-10kg-series-8-front-load-washer-wgh254a1au",
+   "price": 2199,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097848_1088700.png?v=1787291703&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WGH254A1AU",
    "brand": "Bosch"
   },
   {
@@ -197,6 +219,39 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097775_1061477.png?v=1776919098&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "WAN28288AU",
+   "brand": "Bosch"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "bosch-8kg-heat-pump-dryer-wqg235d8au",
+   "title": "Bosch 8kg Heat Pump Dryer",
+   "url": "https://www.thegoodguys.com.au/bosch-8kg-heat-pump-dryer-wqg235d8au",
+   "price": 1699,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50085923_875202.png?v=1776227710&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WQG235D8AU",
+   "brand": "Bosch"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "bosch-8kg-heat-pump-dryer-wqg235drau",
+   "title": "Bosch 8kg Heat Pump Dryer",
+   "url": "https://www.thegoodguys.com.au/bosch-8kg-heat-pump-dryer-wqg235drau",
+   "price": 1699,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50088966_1009015.png?v=1776229626&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WQG235DRAU",
+   "brand": "Bosch"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "bosch-9kg-front-load-washer-wan28227au",
+   "title": "Bosch 9kg Front Load Washer",
+   "url": "https://www.thegoodguys.com.au/bosch-9kg-front-load-washer-wan28227au",
+   "price": 945,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097769_1061478.png?v=1776919432&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WAN28227AU",
    "brand": "Bosch"
   },
   {
@@ -300,17 +355,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "electrolux-12kg-front-load-washer-ewf1243r7scs",
-   "title": "Electrolux 12kg Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/electrolux-12kg-front-load-washer-ewf1243r7scs",
-   "price": 998,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097344_1042702.png?v=1776230966&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "EWF1243R7SCS",
-   "brand": "Electrolux"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "electrolux-6kg-vented-dryer-edv605h3wc",
    "title": "Electrolux 6kg Vented Dryer",
    "url": "https://www.thegoodguys.com.au/electrolux-6kg-vented-dryer-edv605h3wc",
@@ -344,10 +388,21 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "electrolux-8kg-front-load-washer-ewf8023p5wcs",
+   "title": "Electrolux 8kg Front Load Washer",
+   "url": "https://www.thegoodguys.com.au/electrolux-8kg-front-load-washer-ewf8023p5wcs",
+   "price": 799,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097306_1096110.png?v=1789948411&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "EWF8023P5WCS",
+   "brand": "Electrolux"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "electrolux-8kg-heat-pump-dryer-edh803r7wc",
    "title": "Electrolux 8kg Heat Pump Dryer",
    "url": "https://www.thegoodguys.com.au/electrolux-8kg-heat-pump-dryer-edh803r7wc",
-   "price": 1343,
+   "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094816_1002636.png?v=1776233065&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "EDH803R7WC",
@@ -384,6 +439,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097726_1046279.png?v=1776232208&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "WH1060P5",
+   "brand": "Fisher"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "fisher-and-paykel-10kg-series-5-contemporary-front-load-washer-wh1060pg5",
+   "title": "Fisher & Paykel 10kg Series 5 Contemporary Front Load Washer",
+   "url": "https://www.thegoodguys.com.au/fisher-and-paykel-10kg-series-5-contemporary-front-load-washer-wh1060pg5",
+   "price": 1199,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099597_1096865.png?v=1790223191&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WH1060PG5",
    "brand": "Fisher"
   },
   {
@@ -454,17 +520,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "fisher-and-paykel-12kg-series-5-contemporary-front-load-washer-wh1260pg5",
-   "title": "Fisher & Paykel 12kg Series 5 Contemporary Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/fisher-and-paykel-12kg-series-5-contemporary-front-load-washer-wh1260pg5",
-   "price": 1299,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099602_1096870.png?v=1790223434&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WH1260PG5",
-   "brand": "Fisher"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "fisher-and-paykel-12kg-series-5-contemporary-front-load-washer-wh1260p5",
    "title": "Fisher & Paykel 12kg Series 5 Contemporary Front Load Washer",
    "url": "https://www.thegoodguys.com.au/fisher-and-paykel-12kg-series-5-contemporary-front-load-washer-wh1260p5",
@@ -472,17 +527,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099593_1096874.png?v=1790223358&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "WH1260P5",
-   "brand": "Fisher"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "fisher-and-paykel-12kg-series-7-contemporary-front-load-washer-wh1260r5",
-   "title": "Fisher & Paykel 12kg Series 7 Contemporary Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/fisher-and-paykel-12kg-series-7-contemporary-front-load-washer-wh1260r5",
-   "price": 1799,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099596_1096864.png?v=1790223545&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WH1260R5",
    "brand": "Fisher"
   },
   {
@@ -556,7 +600,7 @@
    "sku": "fisher-and-paykel-7kg-sensor-dryer-de7060g2",
    "title": "Fisher & Paykel 7kg Sensor Dryer",
    "url": "https://www.thegoodguys.com.au/fisher-and-paykel-7kg-sensor-dryer-de7060g2",
-   "price": 511,
+   "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50069801_679756.png?v=1776401925&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "DE7060G2",
@@ -567,7 +611,7 @@
    "sku": "fisher-and-paykel-8kg-series-5-contemporary-front-load-washer-wh8060j5",
    "title": "Fisher & Paykel 8kg Series 5 Contemporary Front Load Washer",
    "url": "https://www.thegoodguys.com.au/fisher-and-paykel-8kg-series-5-contemporary-front-load-washer-wh8060j5",
-   "price": 798,
+   "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097688_1046276.png?v=1776232485&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "WH8060J5",
@@ -707,17 +751,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "haier-75kg-300-series-front-load-washer-hwf75kw1",
-   "title": "Haier 7.5kg 300 Series Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/haier-75kg-300-series-front-load-washer-hwf75kw1",
-   "price": 499,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097822_1058088.png?v=1776232547&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "HWF75KW1",
-   "brand": "Haier"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "haier-75kg-top-load-washer-hwt75aa1",
    "title": "Haier 7.5kg Top Load Washer",
    "url": "https://www.thegoodguys.com.au/haier-75kg-top-load-washer-hwt75aa1",
@@ -751,17 +784,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "haier-85kg-300-series-front-load-washer-hwf85kw1",
-   "title": "Haier 8.5kg 300 Series Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/haier-85kg-300-series-front-load-washer-hwf85kw1",
-   "price": 592,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097824_1054684.png?v=1776231331&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "HWF85KW1",
-   "brand": "Haier"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "haier-85kg-300-series-front-load-washer-hwf85kb1",
    "title": "Haier 8.5kg 300 Series Front Load Washer",
    "url": "https://www.thegoodguys.com.au/haier-85kg-300-series-front-load-washer-hwf85kb1",
@@ -787,7 +809,7 @@
    "sku": "haier-8kg-500-series-heat-pump-dryer-hdhps80nb1",
    "title": "Haier 8kg 500 Series Heat Pump Dryer",
    "url": "https://www.thegoodguys.com.au/haier-8kg-500-series-heat-pump-dryer-hdhps80nb1",
-   "price": 913,
+   "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097833_1054536.png?v=1776233193&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "HDHPS80NB1",
@@ -798,21 +820,10 @@
    "sku": "haier-8kg-top-load-washer-hwt08an1",
    "title": "Haier 8kg Top Load Washer",
    "url": "https://www.thegoodguys.com.au/haier-8kg-top-load-washer-hwt08an1",
-   "price": 643,
+   "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50074600_762118.png?v=1776401556&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "HWT08AN1",
-   "brand": "Haier"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "haier-95kg-500-series-front-load-washer-hwfs95nb1",
-   "title": "Haier 9.5kg 500 Series Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/haier-95kg-500-series-front-load-washer-hwfs95nb1",
-   "price": 799,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097830_1051407.png?v=1776232863&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "HWFS95NB1",
    "brand": "Haier"
   },
   {
@@ -850,6 +861,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "hisense-10kg-heat-pump-dryer-hdfs10hpb",
+   "title": "Hisense 10kg Heat Pump Dryer",
+   "url": "https://www.thegoodguys.com.au/hisense-10kg-heat-pump-dryer-hdfs10hpb",
+   "price": 1699,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50089677_950040.png?v=1776233239&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "HDFS10HPB",
+   "brand": "Hisense"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "hisense-10kg-series-5i-front-load-washer-hwf5i1015",
    "title": "Hisense 10kg Series 5I Front Load Washer",
    "url": "https://www.thegoodguys.com.au/hisense-10kg-series-5i-front-load-washer-hwf5i1015",
@@ -864,7 +886,7 @@
    "sku": "hisense-10kg-series-8i-front-load-washer-hwf8i1015bx",
    "title": "Hisense 10kg Series 8i Front Load Washer",
    "url": "https://www.thegoodguys.com.au/hisense-10kg-series-8i-front-load-washer-hwf8i1015bx",
-   "price": 942,
+   "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097732_1049438.png?v=1776233356&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "HWF8I1015BX",
@@ -875,7 +897,7 @@
    "sku": "hisense-10kg-series-8i-heat-pump-dryer-hdf8i10hb",
    "title": "Hisense 10kg Series 8i Heat Pump Dryer",
    "url": "https://www.thegoodguys.com.au/hisense-10kg-series-8i-heat-pump-dryer-hdf8i10hb",
-   "price": 1443,
+   "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097765_1049438.png?v=1776233532&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "HDF8I10HB",
@@ -883,13 +905,24 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "hisense-12kg-series-5i-front-load-washer-hwf5i1215",
-   "title": "Hisense 12kg Series 5I Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/hisense-12kg-series-5i-front-load-washer-hwf5i1215",
-   "price": 799,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098431_1060678.png?v=1777251219&width=284&height=284&quality=88",
+   "sku": "hisense-12kg-series-9s-front-load-washer-hwf9s1214bx",
+   "title": "Hisense 12kg Series 9S Front Load Washer",
+   "url": "https://www.thegoodguys.com.au/hisense-12kg-series-9s-front-load-washer-hwf9s1214bx",
+   "price": 1499,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097735_1087470.png?v=1786670633&width=284&height=284&quality=88",
    "inStock": true,
-   "mpn": "HWF5I1215",
+   "mpn": "HWF9S1214BX",
+   "brand": "Hisense"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "hisense-12kg-8kg-heat-pump-combo-washer-dryer-hcf8i1215hb",
+   "title": "Hisense 12kg-8kg Heat Pump Combo Washer Dryer",
+   "url": "https://www.thegoodguys.com.au/hisense-12kg-8kg-heat-pump-combo-washer-dryer-hcf8i1215hb",
+   "price": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096886_1026738.png?v=1776302624&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "HCF8I1215HB",
    "brand": "Hisense"
   },
   {
@@ -944,17 +977,6 @@
    "price": 1977,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096184_1023534.png?v=1776231443&width=284&height=284&quality=88",
    "inStock": true,
-   "brand": "LG"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "lg-10kg-series-3-ai-front-load-washer-wx3-1410w",
-   "title": "LG 10kg Series 3 AI Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/lg-10kg-series-3-ai-front-load-washer-wx3-1410w",
-   "price": 898,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098113_1056701.png?v=1776232448&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "1410W",
    "brand": "LG"
   },
   {
@@ -1102,17 +1124,6 @@
    "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098865_1064012.png?v=1778473179&width=284&height=284&quality=88",
    "inStock": true,
-   "brand": "LG"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "lg-8kg-series-3-slim-ai-front-load-washer-wx3-1208w",
-   "title": "LG 8kg Series 3 Slim AI Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/lg-8kg-series-3-slim-ai-front-load-washer-wx3-1208w",
-   "price": 799,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098873_1061127.png?v=1776817069&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "1208W",
    "brand": "LG"
   },
   {
@@ -1376,17 +1387,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "samsung-9kg-smart-front-load-washer-ww90dg6u3alb",
-   "title": "Samsung 9kg Smart Front Load Washer",
-   "url": "https://www.thegoodguys.com.au/samsung-9kg-smart-front-load-washer-ww90dg6u3alb",
-   "price": 794,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098695_1060682.png?v=1779201494&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "WW90DG6U3ALB",
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "samsung-9kg-smart-heat-pump-dryer-dv91t6440le",
    "title": "Samsung 9kg Smart Heat Pump Dryer",
    "url": "https://www.thegoodguys.com.au/samsung-9kg-smart-heat-pump-dryer-dv91t6440le",
@@ -1442,6 +1442,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "solt-10kg-top-load-washer-ggstlw10rcw",
+   "title": "Solt 10kg Top Load Washer",
+   "url": "https://www.thegoodguys.com.au/solt-10kg-top-load-washer-ggstlw10rcw",
+   "price": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100351_1064230.png?v=1791936707&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "GGSTLW10RCW",
+   "brand": "Solt"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "solt-10kg-top-load-washer-ggstlw100rcw2",
    "title": "Solt 10kg Top Load Washer",
    "url": "https://www.thegoodguys.com.au/solt-10kg-top-load-washer-ggstlw100rcw2",
@@ -1486,6 +1497,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "solt-6kg-front-load-washer-ggsflw6002w",
+   "title": "Solt 6kg Front Load Washer",
+   "url": "https://www.thegoodguys.com.au/solt-6kg-front-load-washer-ggsflw6002w",
+   "price": 388,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097599_1045177.png?v=1776401524&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "GGSFLW6002W",
+   "brand": "Solt"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "solt-6kg-front-load-washer-ggsflw6002b",
    "title": "Solt 6kg Front Load Washer",
    "url": "https://www.thegoodguys.com.au/solt-6kg-front-load-washer-ggsflw6002b",
@@ -1493,6 +1515,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099857_1080619.png?v=1783570492&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "GGSFLW6002B",
+   "brand": "Solt"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "solt-7kg-top-load-washer-ggstlw70rcw",
+   "title": "Solt 7kg Top Load Washer",
+   "url": "https://www.thegoodguys.com.au/solt-7kg-top-load-washer-ggstlw70rcw",
+   "price": 499,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100352_1064230.png?v=1791757322&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "GGSTLW70RCW",
    "brand": "Solt"
   },
   {
@@ -1563,10 +1596,21 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "tcl-10kg-front-load-washer-wf10p12w",
+   "title": "TCL 10kg Front Load Washer",
+   "url": "https://www.thegoodguys.com.au/tcl-10kg-front-load-washer-wf10p12w",
+   "price": 599,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100548_1100190.png?v=1792549927&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WF10P12W",
+   "brand": "TCL"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "westinghouse-10kg-front-load-washer-wwf1044m7sas",
    "title": "Westinghouse 10kg Front Load Washer",
    "url": "https://www.thegoodguys.com.au/westinghouse-10kg-front-load-washer-wwf1044m7sas",
-   "price": 928,
+   "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097392_1051451.png?v=1776231406&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "WWF1044M7SAS",
@@ -1665,7 +1709,7 @@
    "sku": "westinghouse-8kg-front-load-washer-wwf8024m5was",
    "title": "Westinghouse 8kg Front Load Washer",
    "url": "https://www.thegoodguys.com.au/westinghouse-8kg-front-load-washer-wwf8024m5was",
-   "price": 723,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097390_1042083.png?v=1776233064&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "WWF8024M5WAS",

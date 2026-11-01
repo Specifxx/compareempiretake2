@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T09:32:38.120Z",
+ "scrapedAt": "2026-11-01T23:49:16.537Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -10,6 +10,17 @@
    "price": 54.97,
    "wasPrice": 59.09,
    "image": "https://www.laptopsdirect.co.uk/Images/YD3200C5FHBOX_1_Classic.jpg?v=9",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1727832",
+   "mpn": "100-100000510BOX",
+   "title": "AMD Ryzen 3 4100 4 Core AM4 Zen 2 Processor",
+   "url": "https://www.laptopsdirect.co.uk/amd-ryzen-5-5600g-socket-am4-3.8-ghz-radeon-processor-100-100000510box/version.asp",
+   "price": 88.97,
+   "wasPrice": 97.14,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100000510BOX_1_Classic.jpg?v=7",
    "inStock": true
   },
   {
@@ -36,6 +47,39 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1715377",
+   "mpn": "100-100000927BOX",
+   "title": "AMD Ryzen 5 5600 6 Core AM4 Zen 3 Processor",
+   "url": "https://www.laptopsdirect.co.uk/-100-100000927box/version.asp",
+   "price": 118.97,
+   "wasPrice": 139.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100000927BOX_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1810951",
+   "mpn": "100-100001015BOX",
+   "title": "AMD Ryzen 5 7600 6 Core AM5 Raphael Processor",
+   "url": "https://www.laptopsdirect.co.uk/-100-100001015box/version.asp",
+   "price": 162.97,
+   "wasPrice": 220,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100001015BOX_1_Classic.jpg?v=24",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1793602",
+   "mpn": "100-100000593WOF",
+   "title": "AMD Ryzen 5 7600X 6 Core AM5 Raphael Processor",
+   "url": "https://www.laptopsdirect.co.uk/-100-100000593wof/version.asp",
+   "price": 187.97,
+   "wasPrice": 221.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100000593WOF_1_Classic.jpg?v=24",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1901138",
    "mpn": "100-100000931BOX",
    "title": "AMD Ryzen 5 8500G 6 Core AM5 Phoenix Processor",
@@ -58,6 +102,39 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1603037",
+   "mpn": "100-100000263BOX",
+   "title": "AMD Ryzen 7 5700G 8 Core AM4 Zen 3 Processor",
+   "url": "https://www.laptopsdirect.co.uk/amd-ryzen-5-5700g-socket-am4-3.8-ghz-radeon-processor-100-100000263box/version.asp",
+   "price": 201.97,
+   "wasPrice": 352.79,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100000263BOX_1_classic.jpg?v=2",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1715376",
+   "mpn": "100-100000926WOF",
+   "title": "AMD Ryzen 7 5700X 8 Core AM4 Zen 3 Processor",
+   "url": "https://www.laptopsdirect.co.uk/-100-100000926wof/version.asp",
+   "price": 185.97,
+   "wasPrice": 279.59,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100000926WOF_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1539152",
+   "mpn": "100-100000063WOF",
+   "title": "AMD Ryzen 7 5800X 8 Core AM4 Zen 3 Processor",
+   "url": "https://www.laptopsdirect.co.uk/amd-ryzen-7-5800x-socket-am4-3.8-ghz-zen-3-processor-100-100000063wof/version.asp",
+   "price": 234.97,
+   "wasPrice": 446.38,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100000063WOF_1_9015347_Classic.jpg?v=9",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2058871",
    "mpn": "100-100000592SBX",
    "title": "AMD Ryzen 7 7700 8 Core AM5 Processor",
@@ -75,6 +152,17 @@
    "price": 266.97,
    "wasPrice": 315.59,
    "image": "https://www.laptopsdirect.co.uk/Images/100-100000591WOF_1_Classic.jpg?v=14",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1836335",
+   "mpn": "100-100000910WOF",
+   "title": "AMD Ryzen 7 7800X3D 8 Core AM5 Raphael Processor",
+   "url": "https://www.laptopsdirect.co.uk/amd-ryzen-7-7800x3d-8-core-am5-zen4-processor-100-100000910wof/version.asp",
+   "price": 398.97,
+   "wasPrice": 436.79,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100000910WOF_1_Classic.png?v=13",
    "inStock": true
   },
   {
@@ -130,6 +218,17 @@
    "price": 277.97,
    "wasPrice": 341.99,
    "image": "https://www.laptopsdirect.co.uk/Images/100-100001581WOF_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1781840",
+   "mpn": "100-100000589WOF",
+   "title": "AMD Ryzen 9 7900X 12 Core AM5 Raphael Processor",
+   "url": "https://www.laptopsdirect.co.uk/-100-100000589wof/version.asp",
+   "price": 309.97,
+   "wasPrice": 599.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100000514WOF_1_Classic.png?v=16",
    "inStock": true
   },
   {
@@ -332,6 +431,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1671221",
+   "mpn": "BX8071512700K",
+   "title": "Intel Core i7 12700K 12 Core LGA 1700 Alder Lake-S Processor",
+   "url": "https://www.laptopsdirect.co.uk/intel-12-core-i7-12700k-alder-lake-cpu-processor-bx8071512700k/version.asp",
+   "price": 290.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/BX8071512700K_1_Classic.jpg?v=16",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1671220",
    "mpn": "BX8071512700KF",
    "title": "Intel Core i7 12700KF 12 Core LGA 1700 Alder Lake Processor",
@@ -371,6 +480,17 @@
    "url": "https://www.laptopsdirect.co.uk/intel-cpu-core-i7-14700-5.4ghz-lga1700-box-bx8071514700/version.asp",
    "price": 324.97,
    "image": "https://www.laptopsdirect.co.uk/Images/BX8071514700_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1894459",
+   "mpn": "BX8071514700F",
+   "title": "Intel Core i7-14700F 20 Core LGA 1700 Raptor Lake Processor",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-i7-14700f-20-core-lga-1700-raptor-lake-processor-bx8071514700f/version.asp",
+   "price": 309.97,
+   "wasPrice": 334.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/BX8071514700F_1_Classic.jpg?v=5",
    "inStock": true
   },
   {

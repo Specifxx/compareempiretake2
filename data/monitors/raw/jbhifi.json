@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T09:17:33.264Z",
+ "scrapedAt": "2026-11-01T23:25:57.446Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -86,7 +86,7 @@
    "url": "https://www.jbhifi.com.au/products/aoc-25g4s-24-5-fhd-310hz-gaming-monitor",
    "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807568-Product-0-I-638913363014977474.jpg?v=1755739585",
-   "inStock": true,
+   "inStock": false,
    "mpn": "25G4S",
    "brand": "Aoc"
   },
@@ -1445,7 +1445,7 @@
    "sku": "816550",
    "title": "Philips 16B1P3320 15.6\" FHD Portable Business Monitor",
    "url": "https://www.jbhifi.com.au/products/philips-16b1p3320-15-6-fhd-portable-business-monitor",
-   "price": 299,
+   "price": 209,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/816550-Product-0-I-639136399804232482.jpg?v=1778043256",
    "inStock": false,
    "mpn": "16B1P3320",
@@ -1535,7 +1535,8 @@
    "sku": "633501",
    "title": "Philips 34E1C5600HE 34'' Curved 100Hz WQHD Monitor with Windows Hello Webcam",
    "url": "https://www.jbhifi.com.au/products/philips-34e1c5600he-34-curved-100hz-wqhd-monitor-with-windows-hello-webcam",
-   "price": 699,
+   "price": 549,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/633501-Product-0-I-638375766603245880.jpg?v=1701980539",
    "inStock": true,
    "mpn": "34E1C5600HE",
@@ -1882,7 +1883,7 @@
    "url": "https://www.jbhifi.com.au/products/samsung-s65tc-34-ultra-wide-curved-wqhd-monitor",
    "price": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/675802-Product-0-I-638433081605121403.jpg?v=1707711435",
-   "inStock": false,
+   "inStock": true,
    "mpn": "S65TC",
    "brand": "Samsung"
   },
@@ -1893,7 +1894,7 @@
    "url": "https://www.jbhifi.com.au/products/samsung-viewfinity-s8-s80uh-27-4k-uhd-monitor",
    "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907067-Product-0-I-639225408606241525.jpg?v=1786944125",
-   "inStock": false,
+   "inStock": true,
    "mpn": "S80UH",
    "brand": "Samsung"
   },

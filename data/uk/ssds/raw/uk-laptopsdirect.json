@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T09:32:49.295Z",
+ "scrapedAt": "2026-11-01T23:49:26.101Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -9,6 +9,17 @@
    "url": "https://www.laptopsdirect.co.uk/2-power-500gb-m.2-nvme-ssd-ssd7013a/version.asp",
    "price": 81.97,
    "image": "https://www.laptopsdirect.co.uk/Images/SSD7013A_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2067524",
+   "mpn": "A1/SNV3S/2000G",
+   "title": "Box Opened Kingston NV3 2TB M.2 2280 Internal SSD",
+   "url": "https://www.laptopsdirect.co.uk/grade-a1-kingston-nv3-2tb-m.2-2280-internal-ssd-a1-snv3s-2000g/version.asp",
+   "price": 240.96,
+   "wasPrice": 304.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/SNV3S2000G_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -211,6 +222,16 @@
    "price": 1295.97,
    "wasPrice": 1457.99,
    "image": "https://www.laptopsdirect.co.uk/Images/STMF4000400_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1942551",
+   "mpn": "LNM790X002T-RNNNG",
+   "title": "Lexar NM790 SSD 2TB PCIe Gen4 NVMe M.2 2280",
+   "url": "https://www.laptopsdirect.co.uk/lexar-nm790-ssd-2tb-pcie-gen4-nvme-m.2-2280-lnm790x002t-rnnng/version.asp",
+   "price": 367.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/LNM790X002T-RNNNG_1_Classic.jpg?v=5",
    "inStock": true
   },
   {

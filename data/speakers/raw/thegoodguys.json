@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T08:53:51.638Z",
+ "scrapedAt": "2026-11-01T23:06:28.503Z",
  "offers": [
   {
    "retailer": "thegoodguys",
@@ -233,6 +233,16 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "jbl-boombox-4-6630995",
+   "title": "JBL Boombox 4",
+   "url": "https://www.thegoodguys.com.au/jbl-boombox-4-6630995",
+   "price": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096601_1015742.png?v=1776230746&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "jbl-charge-6-portable-bt-speaker-6494047",
    "title": "JBL Charge 6 Portable BT Speaker",
    "url": "https://www.thegoodguys.com.au/jbl-charge-6-portable-bt-speaker-6494047",
@@ -268,16 +278,6 @@
    "url": "https://www.thegoodguys.com.au/jbl-clip-5-bluetooth-speaker-6142299",
    "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50090660_913059.png?v=1776228875&width=284&height=284&quality=88",
-   "inStock": true,
-   "brand": "JBL"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "jbl-clip-5-bluetooth-speaker-blue-6142302",
-   "title": "JBL Clip 5 Bluetooth Speaker - Blue",
-   "url": "https://www.thegoodguys.com.au/jbl-clip-5-bluetooth-speaker-blue-6142302",
-   "price": 99,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50090661_913052.png?v=1776228803&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "JBL"
   },
@@ -378,6 +378,16 @@
    "url": "https://www.thegoodguys.com.au/jbl-go-5-mini-bluetooth-speaker-blue-6784886",
    "price": 79,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099634_1078908.png?v=1784085769&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "jbl-go-5-mini-bluetooth-speaker-white-6784903",
+   "title": "JBL GO 5 Mini Bluetooth Speaker - White",
+   "url": "https://www.thegoodguys.com.au/jbl-go-5-mini-bluetooth-speaker-white-6784903",
+   "price": 79,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099636_1078906.png?v=1784085826&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "JBL"
   },
@@ -920,6 +930,16 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "ultimate-ears-wonderboom-4-984-001882",
+   "title": "Ultimate Ears Wonderboom 4",
+   "url": "https://www.thegoodguys.com.au/ultimate-ears-wonderboom-4-984-001882",
+   "price": 149,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50090432_911188.png?v=1776229083&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Ultimate"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "ultimate-ears-wonderboom-4-blue-984-001883",
    "title": "Ultimate Ears Wonderboom 4 - Blue",
    "url": "https://www.thegoodguys.com.au/ultimate-ears-wonderboom-4-blue-984-001883",
@@ -970,13 +990,57 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "webyloewe-we-hear-1-portable-bluetooth-speaker-sg-wehear1grey",
-   "title": "WeByLoewe WE HEAR 1 PORTABLE BLUETOOTH SPEAKER SG",
-   "url": "https://www.thegoodguys.com.au/webyloewe-we-hear-1-portable-bluetooth-speaker-sg-wehear1grey",
+   "sku": "webyloewe-we-hear-1-portable-bluetooth-speaker-ab-wehear1blue",
+   "title": "WeByLoewe WE HEAR 1 PORTABLE BLUETOOTH SPEAKER AB",
+   "url": "https://www.thegoodguys.com.au/webyloewe-we-hear-1-portable-bluetooth-speaker-ab-wehear1blue",
    "price": 114,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50083314_868588.png?v=1776228616&width=284&height=284&quality=88",
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50083313_868591.png?v=1776228324&width=284&height=284&quality=88",
    "inStock": true,
-   "mpn": "WEHEAR1GREY",
+   "mpn": "WEHEAR1BLUE",
+   "brand": "WeByLoewe"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "webyloewe-we-hear-1-portable-bluetooth-speaker-cr-wehear1red",
+   "title": "WeByLoewe WE HEAR 1 PORTABLE BLUETOOTH SPEAKER CR",
+   "url": "https://www.thegoodguys.com.au/webyloewe-we-hear-1-portable-bluetooth-speaker-cr-wehear1red",
+   "price": 114,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50083312_868592.png?v=1776228622&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WEHEAR1RED",
+   "brand": "WeByLoewe"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "webyloewe-we-hear-2-portable-bluetooth-speaker-ab-wehear2blue",
+   "title": "WeByLoewe WE HEAR 2 PORTABLE BLUETOOTH SPEAKER AB",
+   "url": "https://www.thegoodguys.com.au/webyloewe-we-hear-2-portable-bluetooth-speaker-ab-wehear2blue",
+   "price": 174,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50083316_868617.png?v=1776228587&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WEHEAR2BLUE",
+   "brand": "WeByLoewe"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "webyloewe-we-hear-2-portable-bluetooth-speaker-cr-wehear2red",
+   "title": "WeByLoewe WE HEAR 2 PORTABLE BLUETOOTH SPEAKER CR",
+   "url": "https://www.thegoodguys.com.au/webyloewe-we-hear-2-portable-bluetooth-speaker-cr-wehear2red",
+   "price": 174,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50083315_868619.png?v=1776228572&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WEHEAR2RED",
+   "brand": "WeByLoewe"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "webyloewe-we-hear-2-portable-bluetooth-speaker-sg-wehear2grey",
+   "title": "WeByLoewe WE HEAR 2 PORTABLE BLUETOOTH SPEAKER SG",
+   "url": "https://www.thegoodguys.com.au/webyloewe-we-hear-2-portable-bluetooth-speaker-sg-wehear2grey",
+   "price": 174,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50083317_868616.png?v=1776228133&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WEHEAR2GREY",
    "brand": "WeByLoewe"
   },
   {

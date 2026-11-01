@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T09:23:46.781Z",
+ "scrapedAt": "2026-11-01T23:30:56.123Z",
  "offers": [
   {
    "retailer": "us-abt",
@@ -820,9 +820,9 @@
    "sku": "248109",
    "title": "Samsung Crystal UHD U8000H 70-Inch 4K Smart TV in Black - UN70U8000HFXZA",
    "url": "https://www.abt.com/Samsung-Crystal-UHD-U8000H-70-Inch-4K-Smart-TV-in-Black-UN70U8000HFXZA/p/248109.html",
-   "price": 367.99,
+   "price": 358.55,
    "image": "https://content.abt.com/image.php/3be2c814a6ae74a86f96f813d251ba34?image=/images/products/BDP_Images/samsung-4k-smart-tv-UN65U8000HFXZA-front.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung",
    "mpn": "UN70U8000HFXZA"
   },
@@ -1081,17 +1081,6 @@
   },
   {
    "retailer": "us-abt",
-   "sku": "227937",
-   "title": "Samsung Q7F QLED TV 98-Inch 4K Smart in Black - QN98Q7FAAFXZA",
-   "url": "https://www.abt.com/Samsung-Q7F-QLED-TV-98-Inch-4K-Smart-in-Black-QN98Q7FAAFXZA/p/227937.html",
-   "price": 1997,
-   "image": "https://content.abt.com/image.php/99b0e417852b7b93ead3f31cdba5b671?image=/images/products/BDP_Images/samsung-qled-4k-tv-QN98Q7FAAFXZA-front.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
-   "brand": "Samsung",
-   "mpn": "QN98Q7FAAFXZA"
-  },
-  {
-   "retailer": "us-abt",
    "sku": "252232",
    "title": "Samsung Q8F QLED TV 85-Inch 4K Smart in Black - QN85Q8FDAFXZA",
    "url": "https://www.abt.com/Samsung-Q8F-QLED-TV-85-Inch-4K-Smart-in-Black-QN85Q8FDAFXZA/p/252232.html",
@@ -1166,6 +1155,17 @@
    "inStock": true,
    "brand": "Samsung",
    "mpn": "QN85QN70HAFXZA"
+  },
+  {
+   "retailer": "us-abt",
+   "sku": "218546",
+   "title": "Samsung QN80F Neo QLED TV 100-Inch 4K Smart in Titan Black - QN100QN80FFXZA",
+   "url": "https://www.abt.com/Samsung-QN80F-Neo-QLED-TV-100-Inch-4K-Smart-in-Titan-Black-QN100QN80FFXZA/p/218546.html",
+   "price": 4997.99,
+   "image": "https://content.abt.com/image.php/59251a6c0f49baacc4f2baa0fc463bf2?image=/images/products/BDP_Images/samsung-tv-QN100QN80FAFXZA-front-view.jpg&ck=2&width=165&height=150&canvas",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "QN100QN80FFXZA"
   },
   {
    "retailer": "us-abt",
@@ -2085,9 +2085,9 @@
    "sku": "246493",
    "title": "Sony BRAVIA 7 II 50-Inch True RGB 4K HDR Google TV with Gemini - K50XR70M2",
    "url": "https://www.abt.com/Sony-BRAVIA-7-II-50-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K50XR70M2/p/246493.html",
-   "price": 1299.99,
+   "price": 1298,
    "image": "https://content.abt.com/image.php/4b6c94f9a43ec550d2436182f2dbe86f?image=/images/products/BDP_Images/sony-rgb-4k-smart-tv-K55XR70M2-front.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony",
    "mpn": "K50XR70M2"
   },
@@ -2096,7 +2096,7 @@
    "sku": "244173",
    "title": "Sony BRAVIA 7 II 55-Inch True RGB 4K HDR Google TV with Gemini - K55XR70M2",
    "url": "https://www.abt.com/Sony-BRAVIA-7-II-55-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K55XR70M2/p/244173.html",
-   "price": 1698,
+   "price": 1398,
    "image": "https://content.abt.com/image.php/4b6c94f9a43ec550d2436182f2dbe86f?image=/images/products/BDP_Images/sony-rgb-4k-smart-tv-K55XR70M2-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sony",
@@ -2107,7 +2107,7 @@
    "sku": "244172",
    "title": "Sony BRAVIA 7 II 65-Inch True RGB 4K HDR Google TV with Gemini - K65XR70M2",
    "url": "https://www.abt.com/Sony-BRAVIA-7-II-65-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K65XR70M2/p/244172.html",
-   "price": 1798,
+   "price": 1598,
    "image": "https://content.abt.com/image.php/ffc29dd892d3b8ba01aabb94be266754?image=/images/products/BDP_Images/sony-rgb-4k-smart-tv-K65XR70M2-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sony",
@@ -2129,7 +2129,7 @@
    "sku": "244170",
    "title": "Sony BRAVIA 7 II 85-Inch True RGB 4K HDR Google TV with Gemini - K85XR70M2",
    "url": "https://www.abt.com/Sony-BRAVIA-7-II-85-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K85XR70M2/p/244170.html",
-   "price": 3998,
+   "price": 3498,
    "image": "https://content.abt.com/image.php/ffc29dd892d3b8ba01aabb94be266754?image=/images/products/BDP_Images/sony-rgb-4k-smart-tv-K65XR70M2-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sony",
@@ -2349,7 +2349,7 @@
    "sku": "208254",
    "title": "Sylvox Limo Series RV TV 24-Inch Smart 1080p with Built-In DVD Player - RT24R3KGCA",
    "url": "https://www.abt.com/Sylvox-Limo-Series-RV-TV-24-Inch-Smart-1080p-with-Built-In-DVD-Player-RT24R3KGCA/p/208254.html",
-   "price": 319,
+   "price": 339,
    "image": "https://content.abt.com/image.php/f70b82c95a7f0c32fe318a439e35dda7?image=/images/products/BDP_Images/sylvox-tv-RT24R3KGCA-main.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sylvox",
@@ -2360,7 +2360,7 @@
    "sku": "208255",
    "title": "Sylvox Limo Series RV TV 32-Inch Smart 1080p with Built-In DVD Player - RT32R3KGCA",
    "url": "https://www.abt.com/Sylvox-Limo-Series-RV-TV-32-Inch-Smart-1080p-with-Built-In-DVD-Player-RT32R3KGCA/p/208255.html",
-   "price": 369,
+   "price": 399,
    "image": "https://content.abt.com/image.php/0443f629fdf85504e6b1857aacd97491?image=/images/products/BDP_Images/sylvox-tv-RT32R3KGCA-main.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sylvox",
