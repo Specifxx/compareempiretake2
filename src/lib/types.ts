@@ -164,7 +164,9 @@ export type RetailerId =
   | "audioroom"
   | "customht"
   | "birite"
-  | "videoguys";
+  | "videoguys"
+  | "theplayroom"
+  | "buymobile";
 
 export interface Retailer {
   id: RetailerId;

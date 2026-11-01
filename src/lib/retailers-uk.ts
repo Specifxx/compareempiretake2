@@ -100,4 +100,6 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-aolcookshop", name: "AOL Cookshop", site: "aolcookshop.co.uk", color: "#2E7D32", type: "retailer" },
   { id: "uk-rdo", name: "RDO Kitchens & Appliances", site: "rdo.co.uk", color: "#C62828", type: "retailer" },
   { id: "uk-stuartwestmoreland", name: "Stuart Westmoreland", site: "stuartwestmoreland.co.uk", color: "#1B5E20", type: "retailer" },
+  { id: "uk-londonappliances", name: "London Appliances", site: "londonappliances.com", color: "#1565C0", type: "retailer" },
+  { id: "uk-toysntuck", name: "Toys N Tuck", site: "toysntuck.co.uk", color: "#EF6C00", type: "retailer" },
 ];
