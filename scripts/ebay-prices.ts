@@ -52,6 +52,8 @@ const CATEGORY_WEIGHT: Partial<Record<CategoryId, number>> = {
   "robot-vacuums": 0.9, motherboards: 0.9, routers: 0.8, desktops: 0.7, printers: 0.6,
   // Appliances: eBay sells small ones new; big whitegoods are mostly pick-up or second-hand there.
   vacuums: 1.0, "coffee-machines": 1.0, "air-fryers": 0.8, fridges: 0.3, "washing-machines": 0.3, dishwashers: 0.3,
+  // New sealed LEGO is one of eBay's biggest toy categories, and every listing names the set number.
+  lego: 1.4,
 };
 const REGION_WEIGHT: Record<RegionId, number> = { au: 1.0, us: 1.25, uk: 0.9 };
 /** Words that mark a listing as something other than the product itself. */
@@ -164,8 +166,15 @@ function loadDemand(): DemandFile | null {
   }
 }
 
-/** The words a listing title must contain: brand plus the model's distinctive tokens. */
-function mustHave(p: Phone): string[] {
+/** A LEGO set's number ("75447"), from its URL. */
+const legoSet = (p: Phone) => (p.category === "lego" ? p.slug.match(/^lego-(\d{4,6})$/)?.[1] : undefined);
+/** LEGO listings that are not the sealed set: parts, instructions, figures out of it, knock-offs. */
+const NOT_THE_SET = /\b(instructions?( only)?|manual only|minifigs? only|minifigures? only|no minifig\w*|no box|without box|incomplete|bulk|pieces only|parts only|custom|moc|compatible|led light|light kit|lighting kit|display case|frame)\b/i;
+
+/** The words a listing title must contain: brand plus the model's distinctive tokens; for LEGO, the set number. */
+export function mustHave(p: Phone): string[] {
+  const set = legoSet(p);
+  if (set) return ["lego", set];
   const words = `${p.brand} ${p.model}`
     .toLowerCase()
     .replace(/[^a-z0-9.+ ]/g, " ")
@@ -207,7 +216,8 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
   const m = MARKET[c.region];
   const lo = Math.max(MIN_PRICE, Math.floor(c.p.bestPrice * 0.45));
   const hi = Math.ceil(c.p.bestPrice * 1.35);
-  const q = `${c.p.brand} ${c.p.model}`.slice(0, 100);
+  const set = legoSet(c.p);
+  const q = set ? `LEGO ${set}` : `${c.p.brand} ${c.p.model}`.slice(0, 100);
   const filter = [`conditionIds:{1000}`, `buyingOptions:{FIXED_PRICE}`, `itemLocationCountry:${m.country}`, `deliveryCountry:${m.country}`, `price:[${lo}..${hi}]`, `priceCurrency:${m.currency}`].join(",");
   const url = `https://api.ebay.com/buy/browse/v1/item_summary/search?q=${encodeURIComponent(q)}&filter=${encodeURIComponent(filter)}&sort=price&limit=25`;
   for (let attempt = 0; attempt < 3; attempt++) {
@@ -241,6 +251,7 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
     };
     const ok = (body.itemSummaries ?? []).filter((s) => {
       const t = norm(s.title);
+      if (set && (NOT_THE_SET.test(s.title) || !new RegExp(`\\b${set}\\b`).test(s.title))) return false;
       return s.price && postage(s) != null && !NOT_THE_PRODUCT.test(s.title) && need.every((w) => t.includes(w));
     });
     const best = ok.sort((a, b) => Number(a.price!.value) + postage(a)! - (Number(b.price!.value) + postage(b)!))[0];

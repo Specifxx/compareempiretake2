@@ -1,0 +1,33 @@
+name: LEGO trial scrape (temporary)
+on:
+  push:
+    branches: [claude/project-thread-n8ab78]
+    paths: [.github/workflows/lego-trial.yml, scripts/scrapers/lego.ts]
+permissions:
+  contents: write
+jobs:
+  trial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/scrape-categories.ts toysrus toyworld kidstuff hobbyco --cat lego
+      - run: npx tsx scripts/build-catalog.ts lego
+      - run: |
+          node -e '
+            const c = require("./data/lego/catalog.json");
+            const ps = c.phones;
+            const multi = ps.filter((p) => p.retailerCount > 1);
+            console.log("products", ps.length, "in 2+ stores", multi.length, "3+", ps.filter((p) => p.retailerCount > 2).length);
+            for (const p of multi.sort((a, b) => b.bestPrice - a.bestPrice).slice(0, 25)) console.log(p.slug, "|", p.name, "|", p.bestPrice, "|", p.retailerCount, "|", JSON.stringify(p.specs));
+          '
+      - run: |
+          git config user.name "compare-empire-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/lego
+          git commit -m "data: first LEGO prices" && git pull --rebase origin "${GITHUB_REF_NAME}" && git push

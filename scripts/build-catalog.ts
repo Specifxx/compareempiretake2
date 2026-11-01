@@ -198,7 +198,8 @@ function build(category: CategoryId) {
     const name = `${g.brand} ${model}`;
     // File names can't exceed 255 bytes; Australia's longest slug is 162, so 170 changes no existing URL.
     const cap = (x: string) => (x.length <= 170 ? x : x.slice(0, 170).replace(/-[^-]*$/, ""));
-    let slug = cap(slugify(name));
+    // A LEGO set's URL is its set number ("/lego/lego-75447"): stores word the name differently, the number never changes.
+    let slug = category === "lego" && g.code ? `lego-${g.code}` : cap(slugify(name));
     // Two listings with the same display name but different keys (codes) must not share a URL.
     for (let n = 2; usedSlugs.has(slug); n++) {
       const suffix = slugify(g.code ?? String(usedSlugs.size)) + (n > 2 ? `-${n}` : "");

@@ -39,6 +39,10 @@ const AU_RETAILERS = {
   sharkninja: { id: "sharkninja", name: "SharkNinja", site: "sharkninja.com.au", color: "#1C1C1C", type: "official" },
   tefal: { id: "tefal", name: "Tefal", site: "tefal.com.au", color: "#D2232A", type: "official" },
   bissell: { id: "bissell", name: "BISSELL", site: "bissell.com.au", color: "#0057A8", type: "official" },
+  toysrus: { id: "toysrus", name: "Toys R Us", site: "toysrus.com.au", color: "#0060A9", type: "retailer" },
+  toyworld: { id: "toyworld", name: "Toyworld", site: "toyworld.com.au", color: "#E2001A", type: "retailer" },
+  kidstuff: { id: "kidstuff", name: "Kidstuff", site: "kidstuff.com.au", color: "#00A3AD", type: "retailer" },
+  hobbyco: { id: "hobbyco", name: "Hobbyco", site: "hobbyco.com.au", color: "#1D3C78", type: "retailer" },
 };
 
 export const RETAILERS = {
