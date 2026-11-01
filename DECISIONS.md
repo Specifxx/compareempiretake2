@@ -592,3 +592,25 @@ reason to come back that search rankings alone don't. `/forum` (docs/forum.md):
   DiscussionForumPosting JSON-LD.
 - **Moderation:** the owner asks Claude; a post is removed by an edit to
   `forum.json` (`removeFromForum` in `src/lib/forum/core.ts`).
+
+## 2026-11-01: eBay quota follows Google search demand
+
+Compare Empire earned its first eBay commission on 1 November, and the owner asked that the daily eBay calls
+go first to what people search for and to expensive products, never to anything under $10. About 29,500
+products are over the A$10 floor (the floor stays), and the key allows ~4,950 searches a day, so the order
+matters. Until now it ranked by stores stocking a product, newness, category and the log of the price.
+
+- **Search demand first.** TCGEmpire's `sister-demand.yml` writes Search Console's page clicks and impressions
+  (56 days, no queries) to this repo's `demand` branch every day before the price job; the eBay step fetches
+  it. A product's own page (clicks × 20 + impressions), any `/compare/a-vs-b` page naming it (half each), and
+  its category's page (much smaller weight) raise its demand. On 1 November 1,000 pages had impressions; the
+  US robot vacuum page alone had 22,000.
+- **Price counts as its square root**, not its log: commission is a share of the sale, so a A$1,000 product is
+  worth about four times a A$60 one, not twice.
+- **The daily tier grew from 25% to 35%** of the budget, so searched products are refreshed every day; the
+  rest still rotates stalest first.
+- **One budget per eBay quota day (Pacific).** On 1 November a second run the same eBay day hit the rate
+  limit after 54 calls. `data/ebay-status.json` now records `quotaDay` and `quotaSpent`; a later run that day
+  spends only what is left, or nothing after a 429.
+- Without the demand file (branch missing, file older than two weeks) the ranking falls back to the store
+  signals, so a broken export costs precision, not prices.
