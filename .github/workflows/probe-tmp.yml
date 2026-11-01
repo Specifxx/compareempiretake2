@@ -7,16 +7,13 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npx tsx scripts/scrape-categories.ts --region us --cat routers glinet firewalla amplifi
       - run: |
-          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
-          for b in https://www.gl-inet.com https://firewalla.com https://store.amplifi.com https://www.cudy.com; do
-            echo "== $b"; curl -s -A "$UA" -m 20 "$b/meta.json" | python3 -c "import json,sys;d=json.load(sys.stdin);print(d.get('currency'),d.get('country'),d.get('name'))" || true
-            curl -s -A "$UA" -m 20 "$b/products.json?limit=250" -o /tmp/p.json || true
-            python3 - <<'P' || true
-          import json
-          p=json.load(open('/tmp/p.json'))['products']
-          for x in p[:60]:
-              v=x['variants'][0]
-              print(f"  {x.get('product_type','')[:22]:22} | {x['title'][:70]:70} | {v['price']} | {v.get('sku')} | {v['available']} | {len(x['variants'])}v")
-          P
+          for f in data/us/routers/raw/us-glinet.json data/us/routers/raw/us-firewalla.json data/us/routers/raw/us-amplifi.json; do
+            python3 -c "import json,sys;d=json.load(open('$f'));[print(o['price'],o['inStock'],o.get('mpn'),o['title'][:80]) for o in d['offers']]" || true
           done
+      - run: npx tsx scripts/build-catalog.ts --region us routers && python3 -c "import json;d=json.load(open('data/us/routers/catalog.json'));p=d.get('products') or d.get('phones') or d;print(type(p), len(p))"

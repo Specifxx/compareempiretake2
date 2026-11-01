@@ -30,4 +30,7 @@ export const US_RETAILERS: (Retailer & { id: `us-${string}` })[] = [
   { id: "us-maingear", name: "MAINGEAR", site: "maingear.com", color: "#E10600", type: "official" },
   { id: "us-minisforum", name: "MINISFORUM", site: "store.minisforum.com", color: "#1A1A1A", type: "official" },
   { id: "us-gmktec", name: "GMKtec", site: "gmktec.com", color: "#E4002B", type: "official" },
+  { id: "us-glinet", name: "GL.iNet", site: "gl-inet.com", color: "#E60012", type: "official" },
+  { id: "us-firewalla", name: "Firewalla", site: "firewalla.com", color: "#1F6FEB", type: "official" },
+  { id: "us-amplifi", name: "AmpliFi", site: "store.amplifi.com", color: "#0559C9", type: "official" },
 ];
