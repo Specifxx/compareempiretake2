@@ -85,4 +85,6 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-fenwick", name: "Fenwick", site: "fenwick.co.uk", color: "#000000", type: "retailer" },
   { id: "uk-coaltown", name: "Coaltown Coffee", site: "coaltowncoffee.co.uk", color: "#212121", type: "retailer" },
   { id: "uk-cosori", name: "COSORI", site: "cosori.co.uk", color: "#D32F2F", type: "official" },
+  { id: "uk-hifilounge", name: "HiFi Lounge", site: "hifilounge.co.uk", color: "#212121", type: "retailer" },
+  { id: "uk-levoit", name: "Levoit", site: "levoit.co.uk", color: "#00A19A", type: "official" },
 ];
