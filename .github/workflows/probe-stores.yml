@@ -14,6 +14,9 @@ on:
       urls:
         description: "Candidate URLs to fetch (space separated)"
         default: ""
+      survey:
+        description: "Candidates file for scripts/probe-auto.ts (one '<region> <shopify base url>' per line); blank skips"
+        default: ""
 
 permissions:
   contents: read
@@ -31,7 +34,7 @@ jobs:
       - run: npm ci
       - name: Inputs
         run: |
-          { echo "REGION=${{ inputs.region }}"; echo "STORES=${{ inputs.stores }}"; echo "URLS=${{ inputs.urls }}"; } >> "$GITHUB_ENV"
+          { echo "SURVEY=${{ inputs.survey }}"; echo "REGION=${{ inputs.region }}"; echo "STORES=${{ inputs.stores }}"; echo "URLS=${{ inputs.urls }}"; } >> "$GITHUB_ENV"
       - name: Fetch candidate URLs
         if: env.URLS != ''
         run: |
@@ -49,3 +52,6 @@ jobs:
           git status --porcelain data | awk '{print $2}' | grep 'raw/.*json$' | while read f; do
             echo "== $f"; node -e 'const j=require("./"+process.argv[1]);console.log(j.offers.length,"offers");for(const o of j.offers.slice(0,25))console.log(o.price,"|",o.title,"|",o.sku)' "$f"
           done
+      - name: Survey Shopify candidates
+        if: env.SURVEY != ''
+        run: npx tsx scripts/probe-auto.ts "$SURVEY"
