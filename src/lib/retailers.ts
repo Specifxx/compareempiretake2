@@ -109,6 +109,12 @@ const AU_RETAILERS = {
   thehifishop: { id: "thehifishop", name: "The Hi-Fi Shop", site: "thehifishop.com.au", color: "#263238", type: "retailer" },
   goldcoasthifi: { id: "goldcoasthifi", name: "Gold Coast Hi-Fi", site: "goldcoasthifi.com.au", color: "#F9A825", type: "retailer" },
   cosmorex: { id: "cosmorex", name: "Cosmorex Coffee", site: "cosmorex.com.au", color: "#3E2723", type: "retailer" },
+  audioroom: { id: "audioroom", name: "The Audio Room", site: "audioroom.com.au", color: "#37474F", type: "retailer" },
+  customht: { id: "customht", name: "Custom Home Theatre", site: "customht.com.au", color: "#1A237E", type: "retailer" },
+  birite: { id: "birite", name: "BiRite", site: "birite.com.au", color: "#E30613", type: "retailer" },
+  videoguys: { id: "videoguys", name: "Videoguys", site: "videoguys.com.au", color: "#F57C00", type: "retailer" },
+  theplayroom: { id: "theplayroom", name: "The Playroom", site: "theplayroom.com.au", color: "#7B1FA2", type: "retailer" },
+  buymobile: { id: "buymobile", name: "BuyMobile", site: "buymobile.com.au", color: "#0277BD", type: "retailer" },
 };
 
 export const RETAILERS = {

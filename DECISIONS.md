@@ -757,3 +757,20 @@ Shop's, Townsville Hi-Fi is Gold Coast Hi-Fi's, and Shark (sharkclean.com.au), D
 under other ids. The candidate check now also skips every site in the retailer registries. Left out: Workshop
 Coffee-style machine + subscription bundles, a drone shop selling training courses, an espresso parts shop, a radio
 shop, a games shop whose "speakers" were Magic cards, and Appliance Superstore's vacuum drawers, hobs and hoods.
+
+## 2026-11-01 — Store survey rounds 11–14: UK and AU pass 100 stores (UK 89→103, AU 95→101)
+
+Guessed domains had stopped working (round 11: 228 candidates, 2 stores). Rounds 12–14 found shops instead by
+searching for popular products ("Sonos Era 300 buy UK", "LEGO 10316 Rivendell", "Dyson V15 Detect") and surveying
+whoever sold them (`docs/stores/candidates13.txt` to `candidates15.txt`). This turned up the largest new stores of
+the whole survey: Atlantic Electrics, RDO, London Appliances and Stuart Westmoreland (UK appliances), BiRite (AU
+appliances) and AJ Toys, Toys N Tuck, Brick-a-Brac, Sam Turner and The Playroom (LEGO). 20 stores were added: UK +14
+(Doug Brady Hi-Fi, AJ Toys, Atlantic Electrics, AOL Cookshop, RDO, Stuart Westmoreland, London Appliances, Toys N Tuck,
+Balance Coffee, Brick-a-Brac, Potters Cookshop, Start Fitness, Sam Turner, Let's Run) and AU +6 (The Audio Room,
+Custom Home Theatre, BiRite, Videoguys, The Playroom, BuyMobile). "Box opened" and ex-display stock is refused at the
+appliance stores.
+
+Left out: shops that show prices without VAT (Audio Gold, Total Cards, the trade CCTV and catering suppliers WME and
+Canmac), resellers with marketplace-style listings (Gadcet, ScreenMoove), and The Appliance Guys AU, whose prices
+include delivery, installation and removal. Next time, search for products first: it found more real stores in 60
+candidates than guessing did in 700.
