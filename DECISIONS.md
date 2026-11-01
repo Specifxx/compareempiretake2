@@ -547,3 +547,20 @@ adds no request, no script beyond the boot line and no database or data read. Th
 `xmas-common:start` and `xmas-common:end` in `globals.css` (identical on every sister site); this site's colours sit in
 the `xmas-site` block after it. Art is eight small SVGs in `public/xmas/`. To end it early, move the `to` date; after
 Boxing Day it switches itself off.
+
+## 2026-11-01 — Category titles use the searched word; three US router stores
+
+Search Console (90 days to 29 Oct): "router price comparison" 2,286 impressions at position 8 on `/us/routers` (rising
+from nothing to ~330 a day in the last week), one click; "robot vacuum price comparison" ~22,000 impressions at 5–6 on
+`/us/robot-vacuums`, no clicks. The router page's title said "Wi-Fi & Networking Price Comparison US" and its description
+"Compare 10 wi-fi & networking across 1 US stores".
+
+- Categories carry an optional `searchName` (`SEARCH_NAMES`, `lib/categories.ts`): "Router", "SSD", "RAM",
+  "Fridge"… Titles and h1s use it ("Router Price Comparison US: 4 Stores Compared"); menus keep the category's name.
+  Descriptions lead with the same words and today's lowest in-stock price.
+- US routers had one store (Abt). Added three official Shopify stores, each read through `_shopify.ts`: GL.iNet
+  (www.gl-inet.com, USD; only the US/NA plug variant, "CN warehouse" note dropped via the new `clean` option),
+  Firewalla (security gateways and access points; no switches, warranties or rack mounts) and AmpliFi (Ubiquiti's
+  consumer mesh store). A test build took the page from 10 products to 48. Probed and refused: Cudy (every price is a
+  9999 placeholder), Netgear, TP-Link, ASUS, Ubiquiti's main store, eero (not Shopify); Micro Center, B&H, Adorama,
+  Newegg and Crutchfield answer 403.

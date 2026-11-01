@@ -70,6 +70,8 @@ export interface StoreCfg {
   brand?: string;
   /** Extra exclusion applied to every title. */
   exclude?: RegExp;
+  /** Tidies a variant's title after the exclusions ran (drops shipping notes such as "CN warehouse - US plug"). */
+  clean?: (title: string) => string;
 }
 
 export function variantTitle(p: ShopifyProduct, v: ShopifyProduct["variants"][number]): string {
@@ -88,8 +90,9 @@ export async function scrapeCat(cfg: StoreCfg, rule: CatRule): Promise<RawOffer[
       if (NOT_NEW.test(ptitle) || NOT_NEW.test(p.product_type ?? "") || cfg.exclude?.test(ptitle)) continue;
       if (!rule.keep(p, ptitle)) continue;
       for (const v of p.variants) {
-        const title = variantTitle(p, v);
-        if (NOT_NEW.test(v.title ?? "") || cfg.exclude?.test(title)) continue;
+        const raw = variantTitle(p, v);
+        if (NOT_NEW.test(v.title ?? "") || cfg.exclude?.test(raw)) continue;
+        const title = cfg.clean ? cfg.clean(raw) : raw;
         const price = Number(v.price);
         const was = Number(v.compare_at_price);
         if (!price || price < 5) continue;
