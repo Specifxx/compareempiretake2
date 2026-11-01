@@ -26,16 +26,21 @@ async function main() {
     const base = base0.replace(/\/$/, "");
     const r: Record<string, unknown> = { region, base };
     try {
-      const meta = await getJson<{ currency?: string; name?: string; country?: string; myshopify_domain?: string }>(`${base}/meta.json`).catch(() => ({}) as Record<string, string>);
+      const meta: { currency?: string; name?: string; country?: string } = await getJson<{ currency?: string; name?: string; country?: string; myshopify_domain?: string }>(`${base}/meta.json`).catch(() => ({}) as Record<string, string>);
       r.name = meta.name;
       r.currency = meta.currency;
       r.country = meta.country;
       const products = await catalogue(base, 20);
       r.products = products.length;
+      const woo = products[0] as unknown as { woo?: boolean; currency?: string } | undefined;
+      if (woo?.woo) {
+        r.platform = "woo";
+        r.currency = woo.currency;
+      }
       r.vendors = [...new Set(products.map((p) => p.vendor))].length;
       const got = await readAuto({ retailer: "probe" as never, base, cats: ALL });
       r.cats = Object.fromEntries([...got].filter(([, o]) => o.length).map(([c, o]) => [c, o.length]));
-      r.samples = Object.fromEntries([...got].filter(([, o]) => o.length).map(([c, o]) => [c, o.slice(0, 3).map((x) => `${x.price} ${x.brand ?? "?"} | ${x.title}`)]));
+      r.samples = Object.fromEntries([...got].filter(([, o]) => o.length).map(([c, o]) => [c, o.filter((_, i) => i % Math.max(1, Math.floor(o.length / 6)) === 0).slice(0, 6).map((x) => `${x.price} ${x.brand ?? "?"} | ${x.title}`)]));
       r.ok = r.currency === CUR[region];
     } catch (e) {
       r.error = (e as Error).message.slice(0, 120);
