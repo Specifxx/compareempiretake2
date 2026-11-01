@@ -14,6 +14,9 @@ on:
       urls:
         description: "Candidate URLs to fetch (space separated)"
         default: ""
+      harvest:
+        description: "Directory pages to read for store domains (space separated, fetched one a second); blank skips"
+        default: ""
       survey:
         description: "Candidates file for scripts/probe-auto.ts (one '<region> <shopify base url>' per line); blank skips"
         default: ""
@@ -34,7 +37,7 @@ jobs:
       - run: npm ci
       - name: Inputs
         run: |
-          { echo "SURVEY=${{ inputs.survey }}"; echo "REGION=${{ inputs.region }}"; echo "STORES=${{ inputs.stores }}"; echo "URLS=${{ inputs.urls }}"; } >> "$GITHUB_ENV"
+          { echo "SURVEY=${{ inputs.survey }}"; echo "REGION=${{ inputs.region }}"; echo "STORES=${{ inputs.stores }}"; echo "URLS=${{ inputs.urls }}"; echo "HARVEST=${{ inputs.harvest }}"; } >> "$GITHUB_ENV"
       - name: Fetch candidate URLs
         if: env.URLS != ''
         run: |
@@ -44,6 +47,14 @@ jobs:
             hint=$(grep -o -m1 -E '"products":\[\{"id":[0-9]+,"title":"[^"]{0,60}|Just a moment|cf-chl|captcha|Access Denied|"price":"?[0-9.]+' /tmp/body | head -1)
             echo "$code $size $u :: $hint"
           done
+      - name: Harvest store domains from directory pages
+        if: env.HARVEST != ''
+        run: |
+          for u in $HARVEST; do
+            curl -s -m 20 -L -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' "$u" \
+              | grep -oE 'https?://(www\.)?[a-z0-9-]+(\.[a-z0-9-]+)*\.(com|co\.uk|uk|com\.au|au|net|store|shop|co|io)\b' | sed -E 's#https?://(www\.)?##' || true
+            sleep 1
+          done | sort -u | sed 's/^/HARVEST /'
       - name: Run scrapers
         if: env.STORES != ''
         run: |

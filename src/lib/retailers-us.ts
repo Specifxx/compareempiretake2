@@ -97,4 +97,12 @@ export const US_RETAILERS: (Retailer & { id: `us-${string}` })[] = [
   { id: "us-projectorscreen", name: "ProjectorScreen.com", site: "projectorscreen.com", color: "#0B5394", type: "retailer" },
   { id: "us-xoticpc", name: "Xotic PC", site: "xoticpc.com", color: "#E4002B", type: "retailer" },
   { id: "us-ritzcamera", name: "Ritz Camera", site: "ritzcamera.com", color: "#C8102E", type: "retailer" },
+  { id: "us-abyss", name: "ABYSS Headphones", site: "abyss-headphones.com", color: "#111111", type: "official" },
+  { id: "us-colmi", name: "COLMI", site: "colmi.com", color: "#1A1A1A", type: "official" },
+  { id: "us-kospet", name: "KOSPET", site: "kospet.com", color: "#E65100", type: "official" },
+  { id: "us-fritaire", name: "Fritaire", site: "fritaire.com", color: "#D4A5A5", type: "official" },
+  { id: "us-psaudio", name: "PS Audio", site: "psaudio.com", color: "#0A2342", type: "official" },
+  { id: "us-ratio", name: "Ratio", site: "ratiocoffee.com", color: "#2B2B2B", type: "official" },
+  { id: "us-uperfect", name: "UPERFECT", site: "uperfect.com", color: "#1565C0", type: "official" },
+  { id: "us-snaptain", name: "SNAPTAIN", site: "snaptain.com", color: "#F57C00", type: "official" },
 ];

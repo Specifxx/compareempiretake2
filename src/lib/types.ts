@@ -132,7 +132,14 @@ export type RetailerId =
   | "melbournehifi"
   | "theaudioexperts"
   | "thevacuumshop"
-  | "toyworldbendigo";
+  | "toyworldbendigo"
+  | "artisti"
+  | "blackboardcoffee"
+  | "darkstarcoffee"
+  | "dipacci"
+  | "marketlane"
+  | "threebearscoffee"
+  | "singleo";
 
 export interface Retailer {
   id: RetailerId;
