@@ -16,17 +16,18 @@ const track = (p: Props) => ({ "data-buy": "amazon", "data-buy-kind": `amazon-${
  */
 export function AmazonRow({ href, name = "Amazon AU", ...p }: Props & { href?: string; name?: string }) {
   return (
-    <a href={href ?? amazonAuLink(p.query)} target="_blank" rel={AMAZON_REL} {...track(p)} className="card flex items-center gap-3 border-[#FF9900]/70 bg-[#FFF3DC] p-4 transition hover:border-[#FF9900] hover:shadow-lift dark:bg-[#FF9900]/15 sm:gap-4">
+    <a href={href ?? amazonAuLink(p.query)} target="_blank" rel={AMAZON_REL} {...track(p)} className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2 font-semibold">
           <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-[#FF9900] ring-1 ring-black/10" /> {name}
-          <span className="rounded-full bg-[#FF9900] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-black">Ad</span>
+          <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
         </div>
         <div className="mt-1 text-xs text-ink-soft">New, sold by Amazon and marketplace sellers. We can&apos;t show Amazon&apos;s price here.</div>
       </div>
-      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-[#FF9900] px-3 py-2 text-sm font-bold text-black">
-        <span className="hidden sm:inline">Check price on Amazon</span><span className="sm:hidden">Amazon</span> <ExternalIcon className="h-3.5 w-3.5" />
+      <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
+        Check price on Amazon <ExternalIcon className="h-3.5 w-3.5" />
       </span>
+      <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
     </a>
   );
 }
