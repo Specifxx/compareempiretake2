@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-daewoo",
   base: "https://www.daewooelectricals.com",
   brand: "Daewoo",
-  cats: ["air-fryers", "coffee-machines"],
+  cats: ["air-fryers"],
 });

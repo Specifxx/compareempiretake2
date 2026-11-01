@@ -4,5 +4,7 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "us-6ave",
   base: "https://www.6ave.com",
-  cats: ["cameras", "headphones", "smartwatches", "drones"],
+  cats: ["cameras", "smartwatches"],
+  // 6ave makes its own kits (an extra card, AirPods, "and more"); only the plain product is compared.
+  exclude: /creator kit|pro kit|\bkit with\b|with apple|airpods|\band more\b|\+ ?\d+ ?gb|memory card|keyboard\)|stop motion/i,
 });

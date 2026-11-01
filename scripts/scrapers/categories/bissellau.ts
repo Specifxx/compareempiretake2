@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "bissellau",
   base: "https://www.bissell.com.au",
   brand: "BISSELL",
-  cats: ["vacuums", "robot-vacuums"],
+  cats: ["vacuums"],
 });

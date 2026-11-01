@@ -88,7 +88,6 @@ export const US_RETAILERS: (Retailer & { id: `us-${string}` })[] = [
   { id: "us-elitegourmet", name: "Elite Gourmet", site: "elitegourmet.net", color: "#B71C1C", type: "official" },
   { id: "us-headamp", name: "HeadAmp", site: "headamp.com", color: "#222222", type: "retailer" },
   { id: "us-kalorik", name: "Kalorik", site: "kalorik.com", color: "#D32F2F", type: "official" },
-  { id: "us-leicamiami", name: "Leica Store Miami", site: "leicastoremiami.com", color: "#E20612", type: "retailer" },
   { id: "us-listenup", name: "ListenUp", site: "listenup.com", color: "#E87722", type: "retailer" },
   { id: "us-safeandsound", name: "Safe and Sound HQ", site: "safeandsoundhq.com", color: "#0E4D92", type: "retailer" },
   { id: "us-shenzhenaudio", name: "ShenZhen Audio", site: "shenzhenaudio.com", color: "#C62828", type: "retailer" },

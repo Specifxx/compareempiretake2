@@ -122,7 +122,6 @@ export type RetailerId =
   | "bissellau"
   | "brickbuilder"
   | "carltonav"
-  | "dibartoli"
   | "dronesdirectau"
   | "hobbywarehouse"
   | "hooverau"

@@ -67,7 +67,6 @@ const AU_RETAILERS = {
   bissellau: { id: "bissellau", name: "BISSELL", site: "bissell.com.au", color: "#003DA5", type: "official" },
   brickbuilder: { id: "brickbuilder", name: "Brick Builder", site: "brickbuilder.com.au", color: "#F7C600", type: "retailer" },
   carltonav: { id: "carltonav", name: "Carlton Audio Visual", site: "carltonaudiovisual.com.au", color: "#14213D", type: "retailer" },
-  dibartoli: { id: "dibartoli", name: "Di Bartoli", site: "dibartoli.com.au", color: "#8B0000", type: "retailer" },
   dronesdirectau: { id: "dronesdirectau", name: "Drones Direct", site: "dronesdirect.com.au", color: "#0072CE", type: "retailer" },
   hobbywarehouse: { id: "hobbywarehouse", name: "Hobby Warehouse", site: "hobbywarehouse.com.au", color: "#E53935", type: "retailer" },
   hooverau: { id: "hooverau", name: "Hoover", site: "hoover.com.au", color: "#C8102E", type: "official" },
