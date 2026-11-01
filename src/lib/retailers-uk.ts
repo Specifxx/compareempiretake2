@@ -94,4 +94,5 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-smallbatch", name: "Small Batch Coffee", site: "smallbatchcoffee.co.uk", color: "#212121", type: "retailer" },
   { id: "uk-quarterhorse", name: "Quarter Horse Coffee", site: "quarterhorsecoffee.com", color: "#8D6E63", type: "retailer" },
   { id: "uk-artisanroast", name: "Artisan Roast", site: "artisanroast.co.uk", color: "#BF360C", type: "retailer" },
+  { id: "uk-dougbrady", name: "Doug Brady Hi-Fi", site: "dougbradyhifi.com", color: "#0D47A1", type: "retailer" },
 ];

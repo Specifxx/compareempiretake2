@@ -109,6 +109,7 @@ const AU_RETAILERS = {
   thehifishop: { id: "thehifishop", name: "The Hi-Fi Shop", site: "thehifishop.com.au", color: "#263238", type: "retailer" },
   goldcoasthifi: { id: "goldcoasthifi", name: "Gold Coast Hi-Fi", site: "goldcoasthifi.com.au", color: "#F9A825", type: "retailer" },
   cosmorex: { id: "cosmorex", name: "Cosmorex Coffee", site: "cosmorex.com.au", color: "#3E2723", type: "retailer" },
+  audioroom: { id: "audioroom", name: "The Audio Room", site: "audioroom.com.au", color: "#37474F", type: "retailer" },
 };
 
 export const RETAILERS = {
