@@ -9,6 +9,7 @@ import { SearchBox } from "./SearchBox";
 import { saved } from "@/lib/store";
 import { HOME_PATH, isNeutralPath, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { rememberRegion, useRegion } from "@/lib/use-region";
+import { Flag } from "./Flag";
 
 const AU_NAV = [
   { href: "/deals", label: "Deals" },
@@ -218,14 +219,14 @@ function RegionSwitcher({ regions, nav }: { regions: RegionId[]; nav: Partial<Re
   return (
     <div className="relative">
       <button onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-label={`Country: ${REGIONS[region].name}`} className="flex h-10 items-center gap-1.5 rounded-xl px-2.5 text-sm font-semibold text-ink-soft hover:bg-bg-sunk hover:text-ink">
-        <span className="text-lg leading-none">{REGIONS[region].flag}</span>
+        <Flag code={region} className="text-lg" />
         <span className="hidden sm:inline">{region.toUpperCase()}</span>
       </button>
       {open && (
         <div className="card absolute right-0 top-full z-50 mt-2 w-56 p-1.5 shadow-lift animate-fade-up">
           {regions.map((r) => (
             <Link key={r} href={target(r)} onClick={() => remember(r)} className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm hover:bg-bg-sunk ${r === region ? "font-semibold text-brand" : ""}`}>
-              <span className="text-lg leading-none">{REGIONS[r].flag}</span>
+              <Flag code={r} className="text-lg" />
               <span>{REGIONS[r].name}</span>
               <span className="ml-auto text-xs text-ink-mute">{REGIONS[r].currency}</span>
             </Link>

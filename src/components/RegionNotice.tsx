@@ -1,4 +1,5 @@
 "use client";
+import { Flag } from "@/components/Flag";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -27,7 +28,7 @@ export function RegionNotice() {
     <div className="border-b border-line bg-bg-sunk">
       <div className="container-x flex flex-wrap items-center gap-x-4 gap-y-1 py-2 text-sm">
         <span>
-          {W.flag} In {want === "au" ? "Australia" : `the ${want.toUpperCase()}`}? This page compares {P.adjective} prices ({P.currency}).
+          <Flag code={want} /> In {want === "au" ? "Australia" : `the ${want.toUpperCase()}`}? This page compares {P.adjective} prices ({P.currency}).
         </span>
         <Link href={HOME_PATH[want]} onClick={() => rememberRegion(want)} className="font-semibold text-brand hover:underline">
           See {W.adjective} prices

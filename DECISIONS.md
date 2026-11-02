@@ -911,3 +911,16 @@ The rules we keep, on every Compare Empire site:
 - Every link tagged, rel="sponsored nofollow"; no incentive (cashback, discount) for buying through it.
 - Here: no Amazon link in the search box or palette (free text, in an overlay) or the quick view; the
   Amazon row lost its orange dot and orange hover; the footer carries the trademark line.
+
+## 2026-11-02 — The country chooser in the home hero, with drawn flags
+
+Owner: "the region switcher must be more prevalent on all sites, on the main home page hero etc … and have
+the flags as well". Every country's home (`HomeView`) has a "Prices for" row of flag chips above its search
+(`HomeRegionPicker`): plain links to each live country's home, the current one marked with its currency,
+and each click remembered (`rememberRegion`) so `region-boot` does not move the visitor back to their time
+zone's home. The header switcher stays.
+
+- **Flags are inline SVG (`src/components/Flag.tsx`), not the `REGIONS[].flag` emoji and not image files.**
+  Windows draws a flag emoji as two letters ("AU"); image files would be new requests and hosting. The
+  header switcher, its menu, the region notice, the stores page and the price report draw it too. The same
+  file is in every Compare Empire repo that has a region switcher; keep the copies identical.

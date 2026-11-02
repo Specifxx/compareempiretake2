@@ -5,7 +5,7 @@ import { PhoneCard } from "@/components/PhoneCard";
 import { SearchBox } from "@/components/SearchBox";
 import { getGuides } from "@/lib/guides";
 import { GuideCard } from "@/components/GuideCard";
-import { activeCategories, checkVariant, getCatalog, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
+import { activeCategories, checkVariant, getCatalog, liveRegions, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import type { CategoryId } from "@/lib/types";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { FEATURED } from "@/lib/categories";
@@ -16,6 +16,7 @@ import { PriceCheckCard } from "@/components/PriceCheckCard";
 import { AmazonPicks } from "@/components/AmazonPicks";
 import { EbayStrip } from "@/components/EbayStrip";
 import { ChristmasDecor } from "@/components/ChristmasDecor";
+import { HomeRegionPicker } from "@/components/HomeRegionPicker";
 
 export function HomeView({ region }: { region: RegionId }) {
   const R = REGIONS[region];
@@ -70,7 +71,10 @@ export function HomeView({ region }: { region: RegionId }) {
             <p className="mx-auto mt-2 max-w-xl text-sm text-ink-mute">
               {phones.length.toLocaleString()} products · {offers.toLocaleString()} live prices · cheapest in-stock first · no paid rankings
             </p>
-            <div className="mx-auto mt-8 max-w-2xl">
+            <div className="mt-6">
+              <HomeRegionPicker region={region} regions={liveRegions()} />
+            </div>
+            <div className="mx-auto mt-5 max-w-2xl">
               <SearchBox size="lg" />
             </div>
             <p className="mt-5 text-sm text-ink-mute">
