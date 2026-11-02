@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "us-bella",
   base: "https://www.bellahousewares.com",
   brand: "bella",
-  cats: ["coffee-machines", "air-fryers"],
+  cats: ["coffee-machines", "air-fryers", "small-kitchen"],
 });

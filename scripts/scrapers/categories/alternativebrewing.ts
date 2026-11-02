@@ -4,5 +4,5 @@ import { autoShopify } from "../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "alternativebrewing",
   base: "https://www.alternativebrewing.com.au",
-  cats: ["coffee-machines"],
+  cats: ["coffee-machines", "coffee-gear", "small-kitchen"],
 });

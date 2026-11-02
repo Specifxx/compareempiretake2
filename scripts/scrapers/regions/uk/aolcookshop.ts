@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "uk-aolcookshop",
   base: "https://www.aolcookshop.co.uk",
-  cats: ["coffee-machines"],
+  cats: ["coffee-machines", "bbqs", "coffee-gear", "small-kitchen"],
 });

@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-dualit",
   base: "https://www.dualit.com",
   brand: "Dualit",
-  cats: ["coffee-machines"],
+  cats: ["coffee-machines", "coffee-gear", "small-kitchen"],
 });

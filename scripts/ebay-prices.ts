@@ -60,6 +60,8 @@ const CATEGORY_WEIGHT: Partial<Record<CategoryId, number>> = {
   vacuums: 1.0, "coffee-machines": 1.0, "air-fryers": 0.8, fridges: 0.3, "washing-machines": 0.3, dishwashers: 0.3,
   // New sealed LEGO is one of eBay's biggest toy categories, and every listing names the set number.
   lego: 1.4,
+  // 2026-11: Dyson and ghd tools, KitchenAid mixers and grinders sell new on eBay; BBQs are bulky, often pick-up only.
+  "hair-care": 1.2, "small-kitchen": 0.8, "coffee-gear": 0.9, bbqs: 0.4,
 };
 const REGION_WEIGHT: Record<RegionId, number> = { au: 1.0, us: 1.25, uk: 0.9 };
 /** Words that mark a listing as something other than the product itself. */

@@ -43,6 +43,11 @@ const NOISE: Partial<Record<CategoryId, string[]>> = {
   fridges: "fridge refrigerator freezer door mount".split(" "),
   "washing-machines": "washing machine washer dryer load".split(" "),
   dishwashers: "dishwasher freestanding built-in built under".split(" "),
+  // 2026-11 categories. Small kitchen keeps its type nouns: a series' kettle and toaster share every other word.
+  "hair-care": "hair dryer hairdryer blow styling tool professional ionic salon".split(" "),
+  "small-kitchen": "electric cordless digital".split(" "),
+  bbqs: "bbq barbecue barbeque grill outdoor".split(" "),
+  "coffee-gear": "coffee grinder burr conical flat electric manual hand".split(" "),
 };
 
 const clean = (s: string) =>
@@ -178,6 +183,7 @@ const CODE_FIRST: Partial<Record<CategoryId, true>> = {
   printers: true, routers: true, desktops: true, soundbars: true,
   // Appliances: every store prints the maker's model code, and colours have codes of their own (BES870BSS / BES870BTR).
   "air-fryers": true, "coffee-machines": true, fridges: true, "washing-machines": true, dishwashers: true, vacuums: true,
+  "hair-care": true, "small-kitchen": true, bbqs: true, "coffee-gear": true,
 };
 const strongCode = (t: string) =>
   t
@@ -186,7 +192,7 @@ const strongCode = (t: string) =>
     .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !/^\d+(\.\d+)?(GB|TB|MHZ|HZ|MM|W|MAH|P|L|KG|LITRES?|RPM|BAR|PSI|STAR)$/.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d)/.test(w) && !COMPONENT_CODE.test(w) && !/^(BE|AXE?|AC)\d{3,5}$/.test(w))
     .sort((a, b) => b.length - a.length)[0];
 
-const APPLIANCES = new Set<CategoryId>(["vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers"]);
+const APPLIANCES = new Set<CategoryId>(["vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers", "hair-care", "small-kitchen", "bbqs", "coffee-gear"]);
 
 /** Breville's Australian stock suffix ("BES870BTR4IAN1", "BCA800BSS0ZAN1") is not part of the model code. */
 function stripRegionSuffix(code: string | undefined): string | undefined {
@@ -450,6 +456,60 @@ export function moreSpecs(category: CategoryId, titles: string[]): [string, stri
       out.push(["Install", has(/\b(fully integrated|integrated)\b/i) ? "Integrated" : has(/\b(built[- ]?in|built[- ]?under|under[- ]?bench|semi[- ]integrated)\b/i) ? "Built-in" : has(/\b(benchtop|countertop|compact|portable)\b/i) ? "Benchtop" : "Freestanding"]);
       break;
     }
+    case "hair-care": {
+      const type = hairType(all);
+      if (type) out.push(["Type", type]);
+      const w = first(/\b(\d{3,4})\s?W\b/i);
+      if (w && Number(w) >= 300 && Number(w) <= 3000) out.push(["Power", `${w}W`]);
+      out.push(["Power source", has(/\bcordless\b|\brechargeable\b|\bbattery\b/i) ? "Cordless" : "Corded"]);
+      break;
+    }
+    case "small-kitchen": {
+      const type = kitchenType(all);
+      if (type) out.push(["Type", type]);
+      const l = litres(all, 0.3, 40);
+      if (l) out.push(["Capacity", `${l}L`]);
+      const w = first(/\b(\d{3,4})\s?W\b/i);
+      if (w && Number(w) >= 200 && Number(w) <= 3600) out.push(["Power", `${w}W`]);
+      break;
+    }
+    case "bbqs": {
+      out.push([
+        "Fuel",
+        has(/\bpellet\b|traeger|smokefire|pit boss/i)
+          ? "Pellet"
+          : has(/\bcharcoal\b|\bkamado\b|big green egg|\bkettle\b|smokey|master-?touch|\bbriquette/i)
+            ? "Charcoal"
+            : has(/\belectric\b|woodfire|\bvolt\b/i)
+              ? "Electric"
+              : has(/\bgas\b|\blpg\b|propane|natural gas|\bburners?\b|\bnatural gas\b|weber (q|spirit|genesis|summit)/i)
+                ? "Gas"
+                : has(/\bwood\b/i)
+                  ? "Wood"
+                  : "Other",
+      ]);
+      out.push(["Type", has(/pizza oven|\booni\b|gozney|roccbox/i) ? "Pizza oven" : has(/\bsmoker\b/i) ? "Smoker" : has(/\bkamado\b|big green egg/i) ? "Kamado" : has(/\bgriddle\b|plancha|flat ?top/i) ? "Griddle" : has(/\bportable\b|\btravel(l)?er\b|\bweber q ?1\d{3}\b|\bgo-anywhere\b|\bsmokey joe\b|\bjumbo joe\b/i) ? "Portable BBQ" : "BBQ"]);
+      const burners = first(/\b(\d)[- ]?burners?\b/i);
+      if (burners) out.push(["Burners", burners]);
+      break;
+    }
+    case "coffee-gear": {
+      out.push([
+        "Type",
+        has(/grinder|coffee mill|hand mill|burr mill|niche zero|mignon|comandante|1zpresso|kingrinder/i)
+          ? has(/\b(manual|hand)\b|comandante|1zpresso|kingrinder|timemore c\d|skerton|\bhand mill\b/i) && !has(/\belectric\b/i)
+            ? "Manual grinder"
+            : "Electric grinder"
+          : has(/kettle/i)
+            ? "Kettle"
+            : has(/\bscales?\b|acaia/i)
+              ? "Scale"
+              : has(/frother|aeroccino/i)
+                ? "Milk frother"
+                : "Brewer",
+      ]);
+      break;
+    }
     case "lego": {
       const th = legoTheme(all);
       if (th) out.push(["Theme", th]);
@@ -469,6 +529,36 @@ export function moreSpecs(category: CategoryId, titles: string[]): [string, stri
   return out;
 }
 
+/** What kind of hair tool: the first match wins, so "styler" never hides a dryer that says so. */
+function hairType(all: string): string | undefined {
+  if (/airwrap|multi-?styler|air ?styler|flexstyle|hot (air )?brush|blow[- ]?dry brush|volumi[sz]er|heated brush/i.test(all)) return "Styler & hot brush";
+  if (/straightener|flat ?iron|airstrait|corrale|straightening brush|hair iron/i.test(all)) return "Straightener";
+  if (/curl|waver|crimper|\btong\b/i.test(all)) return "Curler & waver";
+  if (/clipper|trimmer/i.test(all)) return "Clipper & trimmer";
+  if (/dryer|supersonic/i.test(all)) return "Hair dryer";
+  return undefined;
+}
+
+/** What kind of small kitchen appliance. */
+function kitchenType(all: string): string | undefined {
+  const types: [RegExp, string][] = [
+    [/stand mixer|tilt[- ]head|bowl[- ]lift|kenwood chef|cooking chef|\bkmix\b|planetary mixer|kitchen mixer|food mixer/i, "Stand mixer"],
+    [/hand mixer/i, "Hand mixer"],
+    [/food processor|mini chopper|thermo ?mix/i, "Food processor"],
+    [/blender|nutribullet|vitamix/i, "Blender"],
+    [/juicer|juice extractor|citrus press/i, "Juicer"],
+    [/microwave/i, "Microwave"],
+    [/toaster oven|benchtop oven|countertop oven|mini oven/i, "Benchtop oven"],
+    [/toaster/i, "Toaster"],
+    [/kettle/i, "Kettle"],
+    [/rice cooker|slow cooker|pressure cooker|multi-?cooker|instant pot|egg cooker|soup maker|food steamer/i, "Cooker"],
+    [/sandwich|toastie|panini|contact grill|health grill|indoor grill|smart grill|cafe grill|optigrill|waffle/i, "Sandwich press & grill"],
+    [/sodastream|soda stream|sparkling water/i, "Sparkling water maker"],
+    [/ice cream|creami|yogh?urt|bread ?maker|dehydrator|popcorn|deep fryer|electric fry ?pan|electric wok|spirali[sz]er|mincer/i, "Other"],
+  ];
+  return types.find(([re]) => re.test(all))?.[1];
+}
+
 /** The largest litre figure in range: "11L Dual Zone" → 11, "635L French Door" → 635. */
 function litres(all: string, min: number, max: number): number | undefined {
   const ls = [...all.matchAll(/\b(\d{1,4}(?:\.\d)?)\s?(?:L|litres?|liters?|ltr)\b/gi)].map((m) => Number(m[1])).filter((n) => n >= min && n <= max);
@@ -478,6 +568,7 @@ function litres(all: string, min: number, max: number): number | undefined {
 export const MORE_CATEGORIES: CategoryId[] = [
   "smartwatches", "desktops", "printers", "routers", "cpus", "ssds", "ram", "motherboards", "soundbars", "headphones", "speakers", "consoles", "cameras", "drones", "robot-vacuums",
   "vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers", "lego",
+  "hair-care", "small-kitchen", "bbqs", "coffee-gear",
 ];
 
 /** Accessories that slip into these categories' listings. */
@@ -498,6 +589,10 @@ const MORE_ACCESSORY: Partial<Record<CategoryId, RegExp>> = {
   fridges: /\b(water filter|filter|replacement|shelf|drawer|door seal|gasket|ice tray|stand|plinth|hinge|reversal kit|cover)\b(?!.*\b(fridge|refrigerator|freezer)\b.*\d{2,4}\s?L\b)/i,
   "washing-machines": /\b(stacking kit|stack kit|pedestal|drawer|hose|tap|lint filter|cleaner|detergent|cover|shock|anti-?vibration|replacement)\b(?!.*\b\d{1,2}(\.\d)?\s?kg\b)/i,
   dishwashers: /\b(tablets|detergent|rinse aid|salt|cleaner|basket|rack|door panel|kickboard|plinth|hose|replacement)\b(?!.*\bplace settings?\b)/i,
+  "hair-care": /\b(replacement|spare|attachment|diffuser|nozzle|comb attachment|guard|blades?|filter|storage (case|bag)|heat (mat|pouch))\b(?!.*\b(dryer|straightener|styler|clipper|trimmer|airwrap|supersonic|curler)\b)/i,
+  "small-kitchen": /\b(replacement|spare|jug only|jar only|bowl only|blade assembly|filter|attachment)\b(?!.*\b(mixer|blender|processor|kettle|toaster|microwave|juicer|cooker|maker)\b)/i,
+  bbqs: /\b(cover|mat|tool set|brush|cleaner|thermometer|regulator|hose|gas bottle|pellets|charcoal bag|briquettes|rotisserie kit|pizza stone|peel)\b(?!.*\b(bbq|barbecue|grill|smoker|oven)\b)/i,
+  "coffee-gear": /\b(replacement|spare|burrs|filters|filter papers|hopper|dosing cup|cleaning tablets)\b(?!.*\b(grinder|kettle|scale|dripper|brewer)\b)/i,
 };
 export const isMoreAccessory = (category: CategoryId, t: string) => MORE_ACCESSORY[category]?.test(t) ?? false;
 

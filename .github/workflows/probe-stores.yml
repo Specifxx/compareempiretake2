@@ -20,6 +20,9 @@ on:
       survey:
         description: "Candidates file for scripts/probe-auto.ts (one '<region> <shopify base url>' per line); blank skips"
         default: ""
+      cats:
+        description: "Survey only these categories (space separated); blank surveys every category"
+        default: ""
 
 permissions:
   contents: read
@@ -37,7 +40,7 @@ jobs:
       - run: npm ci
       - name: Inputs
         run: |
-          { echo "SURVEY=${{ inputs.survey }}"; echo "REGION=${{ inputs.region }}"; echo "STORES=${{ inputs.stores }}"; echo "URLS=${{ inputs.urls }}"; echo "HARVEST=${{ inputs.harvest }}"; } >> "$GITHUB_ENV"
+          { echo "SURVEY=${{ inputs.survey }}"; echo "REGION=${{ inputs.region }}"; echo "STORES=${{ inputs.stores }}"; echo "URLS=${{ inputs.urls }}"; echo "HARVEST=${{ inputs.harvest }}"; echo "PROBE_CATS=${{ inputs.cats }}"; } >> "$GITHUB_ENV"
       - name: Fetch candidate URLs
         if: env.URLS != ''
         run: |

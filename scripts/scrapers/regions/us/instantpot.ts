@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "us-instantpot",
   base: "https://www.instantpot.com",
   brand: "Instant Pot",
-  cats: ["air-fryers", "coffee-machines"],
+  cats: ["air-fryers", "coffee-machines", "small-kitchen"],
 });

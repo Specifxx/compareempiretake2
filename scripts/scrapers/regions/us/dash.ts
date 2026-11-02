@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "us-dash",
   base: "https://www.bydash.com",
   brand: "Dash",
-  cats: ["air-fryers"],
+  cats: ["air-fryers", "small-kitchen"],
 });

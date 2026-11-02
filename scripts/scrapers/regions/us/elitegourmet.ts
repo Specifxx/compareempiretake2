@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "us-elitegourmet",
   base: "https://www.elitegourmet.net",
   brand: "Elite Gourmet",
-  cats: ["air-fryers"],
+  cats: ["air-fryers", "small-kitchen"],
 });

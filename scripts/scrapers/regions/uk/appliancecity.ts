@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "uk-appliancecity",
   base: "https://www.appliancecity.co.uk",
-  cats: ["dishwashers", "washing-machines", "fridges", "robot-vacuums", "coffee-machines", "air-fryers", "soundbars", "vacuums", "tvs"],
+  cats: ["dishwashers", "washing-machines", "fridges", "robot-vacuums", "coffee-machines", "air-fryers", "soundbars", "vacuums", "tvs", "bbqs", "small-kitchen"],
 });

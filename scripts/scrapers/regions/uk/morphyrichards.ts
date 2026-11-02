@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-morphyrichards",
   base: "https://www.morphyrichards.co.uk",
   brand: "Morphy Richards",
-  cats: ["coffee-machines", "air-fryers", "vacuums"],
+  cats: ["coffee-machines", "air-fryers", "vacuums", "small-kitchen"],
 });

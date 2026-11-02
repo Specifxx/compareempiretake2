@@ -54,7 +54,11 @@ export type CategoryId =
   | "fridges"
   | "washing-machines"
   | "dishwashers"
-  | "lego";
+  | "lego"
+  | "hair-care"
+  | "small-kitchen"
+  | "bbqs"
+  | "coffee-gear";
 
 /** AU stores keep bare ids; US and UK stores are prefixed with their region ("us-bestbuy", "uk-currys"). */
 export type RetailerId =
@@ -166,7 +170,39 @@ export type RetailerId =
   | "birite"
   | "videoguys"
   | "theplayroom"
-  | "buymobile";
+  | "buymobile"
+  | "coffeesupreme"
+  | "axilcoffee"
+  | "codeblackcoffee"
+  | "coffeealchemy"
+  | "jaspercoffee"
+  | "lomacoffee"
+  | "meccacoffee"
+  | "onacoffee"
+  | "padrecoffee"
+  | "redbrickcoffee"
+  | "ninjaau"
+  | "venezianocoffee"
+  | "rumblecoffee"
+  | "proudmary"
+  | "inglewoodcoffee"
+  | "oonau"
+  | "weberau"
+  | "horizonleisure"
+  | "cloudnineau"
+  | "centralcoastcoffee"
+  | "homeheatbbq"
+  | "chefsarmoury"
+  | "minimax"
+  | "hairhouse"
+  | "lookfantasticau"
+  | "chefswarehouse"
+  | "bbqsplus"
+  | "matchbox"
+  | "heatgrill"
+  | "hairshopau"
+  | "coffeebeanery"
+  | "bbqsandoutdoor";
 
 export interface Retailer {
   id: RetailerId;

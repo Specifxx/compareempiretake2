@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "kitchenaidau",
   base: "https://www.kitchenaid.com.au",
   brand: "KitchenAid",
-  cats: ["coffee-machines"],
+  cats: ["coffee-machines", "small-kitchen"],
 });

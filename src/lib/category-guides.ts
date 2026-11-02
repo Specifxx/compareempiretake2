@@ -194,6 +194,50 @@ export const CATEGORY_GUIDES: Partial<Record<CategoryId, CategoryGuide>> = {
     ],
     faq: [["How many place settings do I need?", "12 to 15 place settings suits most families. A 45cm slimline or benchtop model fits small kitchens and one or two people."]],
   },
+  "hair-care": {
+    tips: [
+      "Each colour of a Dyson or ghd tool usually has its own model code and its own price, and stores discount colours differently: check every colour before you buy.",
+      "For fine or damaged hair, look for adjustable heat (or a tool that limits it): most damage comes from heat, not from the brand.",
+      "A Dyson Airwrap or Shark FlexStyle replaces a dryer and a curler, but only if you use the attachments. If you only blow-dry, a good dryer costs a fraction of the price.",
+    ],
+    faq: [
+      ["Are cheaper Airwrap and Supersonic alternatives any good?", "Many are, for drying speed. They differ most on noise, weight and how well the curling attachments grip; compare the exact model, not the look."],
+      ["Do hair tools from overseas work here?", "Not always: check the plug and voltage. We only list each region's own stores, so the tools here are sold for local power."],
+    ],
+  },
+  "small-kitchen": {
+    tips: [
+      "Stand mixers, kettles and toasters from the same range share a name, so compare by the model code on the box: it also tells colours apart.",
+      "For a stand mixer, bowl size and motor matter more than wattage: a tilt-head 4.7–4.8L suits most home baking, a bowl-lift model suits heavy bread dough.",
+      "High-powered blenders crush ice and make nut butters; a cheaper personal blender is fine for smoothies.",
+    ],
+    faq: [
+      ["When do kitchen appliances go on sale?", "Often around Black Friday, Christmas and end-of-financial-year sales. The price history on each product page shows whether today's price is really low."],
+      ["Is a microwave's wattage important?", "Yes: a higher-wattage microwave cooks faster and more evenly. Inverter models defrost more gently."],
+    ],
+  },
+  bbqs: {
+    tips: [
+      "Gas BBQs are the quickest to light and clean; charcoal and kamados give more smoky flavour; pellet grills smoke low and slow with little effort.",
+      "Count burners for the space you cook on, not the label's total: three or four burners suit a family, a portable Weber Q or similar suits a balcony.",
+      "Many BBQs come in LPG (bottle) and natural gas (mains) versions that cannot be swapped without a conversion kit: buy the one your home uses.",
+    ],
+    faq: [
+      ["Does the price include delivery and assembly?", "Usually not. Large BBQs are often delivered flat-packed; check delivery, assembly and gas bottle costs at checkout before you compare two prices."],
+      ["When are BBQs cheapest?", "End of summer and winter clearances often beat spring prices. The price history on each BBQ's page shows whether today's price is low."],
+    ],
+  },
+  "coffee-gear": {
+    tips: [
+      "The grinder matters more than the machine: a good burr grinder improves every cup, while a cheap blade grinder makes uneven coffee.",
+      "Grind for how you brew: espresso needs a grinder that adjusts in fine steps; filter, AeroPress and plunger coffee need consistency at a coarser setting.",
+      "A gooseneck kettle and a scale make pour-over repeatable, and both are cheap next to an espresso setup.",
+    ],
+    faq: [
+      ["Manual or electric grinder?", "A good hand grinder costs less than an electric one of the same quality and is silent, but grinding for espresso by hand takes effort every morning."],
+      ["Flat or conical burrs?", "Both make excellent coffee. Flat burrs are often chosen for clarity in light roasts, conical for forgiving espresso; the grinder's build and alignment matter more."],
+    ],
+  },
   routers: {
     tips: ["Mesh systems beat a single powerful router in larger or multi-storey homes.", "Wi-Fi 7 helps only if your devices support it; Wi-Fi 6E or 6 is still excellent value for most homes."],
     faq: [["Do I need a new modem too?", "It depends on your connection type. Many providers supply a modem; a new router or mesh can connect to it."]],

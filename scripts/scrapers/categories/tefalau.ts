@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "tefalau",
   base: "https://www.tefal.com.au",
   brand: "Tefal",
-  cats: ["air-fryers"],
+  cats: ["air-fryers", "small-kitchen"],
 });

@@ -4,5 +4,5 @@ import { autoShopify } from "../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "billyguyatts",
   base: "https://www.billyguyatts.com.au",
-  cats: ["robot-vacuums", "vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers", "soundbars", "headphones", "speakers", "tvs", "monitors", "printers"],
+  cats: ["robot-vacuums", "vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers", "soundbars", "headphones", "speakers", "tvs", "monitors", "printers", "bbqs", "coffee-gear", "hair-care", "small-kitchen"],
 });
