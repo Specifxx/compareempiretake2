@@ -85,7 +85,7 @@ test("routes rendered on request trace the catalogues, never raw, history or arc
     Object.entries(map).flatMap(([glob, files]) => (picomatch(glob, { dot: true, contains: true })(route) ? files : []));
   const entries = walk(APP).filter((f) => /\/(page|route)\.(tsx?|jsx?)$/.test(f)).map((f) => rel(f).replace(/^src\//, "").replace(/\.[jt]sx?$/, ""));
   // /api/products is a function too (the compare table and saved list); the /api/grid lists are static and trace nothing.
-  const runtime = [...PRODUCT_PAGES.map((f) => f.replace(/^src\//, "").replace(/\.tsx$/, "")), "app/api/products/route", "app/admin/page"];
+  const runtime = [...PRODUCT_PAGES.map((f) => f.replace(/^src\//, "").replace(/\.tsx$/, "")), "app/api/products/route", "app/admin/page", "app/embed/price/route"];
   for (const e of runtime) assert.ok(entries.includes(e), `${e} exists`);
   const DATA = ["catalog.json", "series.json", "store-series.json", "ebay.json"].map((f) => `./data/**/${f}`);
   const EXCLUDED = ["./data/**/archive/**", "./data/**/history/**", "./data/**/raw/**"];

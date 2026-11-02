@@ -783,3 +783,14 @@ tech-buying search of the year and the page has to be indexed weeks before the d
 Sitemap tier 1 with the other hubs; footer links in every region. Never a "was" price we can't back up, a countdown,
 "ends soon" or an invented sale. Dates are pure (`src/lib/black-friday.ts`, tested). Part of the passive-growth plan
 (owner, 2026-11-02: no daily Reddit posts).
+
+## 2026-11-02 — Free price widgets
+
+`/embed` lists two free things a reviewer, blogger or forum can keep: a live price badge (`/embed/price?p=<product
+address>`, an iframe plus one plain text link to the product page, the part search engines credit) and a plain-HTML
+category link with no iframe. The daily outreach offers these instead of asking for a link (passive-growth plan, owner
+2026-11-02). The badge is a route handler with no dynamic segment (the address is the `p` query), so the "every
+[segment] is prerendered" rule doesn't apply and it renders on request like a product page: it traces the catalogues,
+sets its own day-long `Vercel-CDN-Cache-Control` and `frame-ancestors *` (only this response can be framed; nothing in
+`next.config.mjs` changed except the trace), and is noindex. A region with no data throws instead of caching a 404.
+`/embed` is a neutral page (header follows the visitor's region) built with the deploy.

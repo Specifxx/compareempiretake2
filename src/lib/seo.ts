@@ -34,7 +34,7 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
     {
       id: "pages",
       entries: () =>
-        [HOME_PATH.au, "/deals", "/black-friday", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/contact", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), lastmod, priority: p === HOME_PATH.au ? 1 : 0.6 })),
+        [HOME_PATH.au, "/deals", "/black-friday", "/embed", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/contact", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), lastmod, priority: p === HOME_PATH.au ? 1 : 0.6 })),
     },
     {
       id: "categories",
