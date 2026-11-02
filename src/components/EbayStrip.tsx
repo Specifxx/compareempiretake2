@@ -25,7 +25,7 @@ export function EbayStrip({ query, label, customid, phones, region = "au" }: { q
         ))}
       </div>
       <p className="mt-3 text-[11px] text-ink-mute">
-        We may earn a commission if you buy through these links. It never changes our price rankings. <Link href="/disclosure" className="underline">How we make money</Link>
+        We may earn a commission if you buy through these links. It never changes our price rankings. <Link prefetch={false} href="/disclosure" className="underline">How we make money</Link>
       </p>
     </section>
   );

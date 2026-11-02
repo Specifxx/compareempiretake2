@@ -35,7 +35,7 @@ export default function AffiliateDisclosurePage() {
         <h2>What affiliate links never change</h2>
         <p>
           Store prices are ranked cheapest first using each store&apos;s own price, checked daily. Amazon and eBay are shown separately and
-          labelled, and no store can pay to rank higher. See <Link href="/disclosure" className="underline">how we make money</Link>.
+          labelled, and no store can pay to rank higher. See <Link prefetch={false} href="/disclosure" className="underline">how we make money</Link>.
         </p>
         <h2>Questions</h2>
         <p>

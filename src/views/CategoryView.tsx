@@ -88,8 +88,8 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
   return (
     <div className="container-x pt-8">
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
-        <Link href={HOME_PATH[region]} className="hover:text-ink">Home</Link> /{" "}
-        <Link href={region === "au" ? "/categories" : withRegion("/browse", region)} className="hover:text-ink">All categories</Link> / <span>{dept.name}</span>
+        <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link> /{" "}
+        <Link prefetch={false} href={region === "au" ? "/categories" : withRegion("/browse", region)} className="hover:text-ink">All categories</Link> / <span>{dept.name}</span>
       </nav>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
@@ -103,9 +103,9 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
         </div>
         {siblings.length > 0 && (
           <div className="flex flex-wrap gap-2">
-            <Link href={withRegion(`/deals/${c.id}`, region)} className="chip text-xs font-semibold text-hot">🔥 {c.name} deals</Link>
+            <Link prefetch={false} href={withRegion(`/deals/${c.id}`, region)} className="chip text-xs font-semibold text-hot">🔥 {c.name} deals</Link>
             {siblings.map((s) => (
-              <Link key={s.id} href={categoryHref(s.id, region)} className="chip text-xs">{s.emoji} {s.name}</Link>
+              <Link prefetch={false} key={s.id} href={categoryHref(s.id, region)} className="chip text-xs">{s.emoji} {s.name}</Link>
             ))}
           </div>
         )}
@@ -133,7 +133,7 @@ function CategoryGuides({ id, name }: { id: CategoryId; name: string }) {
           <h2 className="font-display text-2xl font-extrabold tracking-tight">{name} guides</h2>
           <p className="mt-1 text-sm text-ink-mute">Best picks, comparisons and where to buy, with today&apos;s prices.</p>
         </div>
-        <Link href="/guides" className="hidden shrink-0 text-sm font-semibold text-brand hover:underline sm:inline">All guides →</Link>
+        <Link prefetch={false} href="/guides" className="hidden shrink-0 text-sm font-semibold text-brand hover:underline sm:inline">All guides →</Link>
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {list.map((g) => <GuideCard key={g.slug} g={g} />)}
@@ -199,14 +199,14 @@ function CategoryGuideSection({ id, name, region, products }: { id: CategoryId; 
         <div className="flex flex-wrap gap-2">
           {brands.map(([b, n]) =>
             region === "au" ? (
-              <Link key={b} href={`/brands/${b.toLowerCase().replace(/[^a-z0-9]+/g, "-")}?cat=${id}`} className="chip text-xs">{b} <span className="text-ink-mute">{n}</span></Link>
+              <Link prefetch={false} key={b} href={`/brands/${b.toLowerCase().replace(/[^a-z0-9]+/g, "-")}?cat=${id}`} className="chip text-xs">{b} <span className="text-ink-mute">{n}</span></Link>
             ) : (
               <span key={b} className="chip text-xs">{b} <span className="text-ink-mute">{n}</span></span>
             ),
           )}
         </div>
         <p className="mt-6 text-sm text-ink-mute">
-          See every {name.toLowerCase().replace(/s$/, "")} in one list: <Link href={withRegion(`/browse/${id}`, region)} className="underline">all {name.toLowerCase()} A to Z</Link>.
+          See every {name.toLowerCase().replace(/s$/, "")} in one list: <Link prefetch={false} href={withRegion(`/browse/${id}`, region)} className="underline">all {name.toLowerCase()} A to Z</Link>.
         </p>
       </div>
     </section>

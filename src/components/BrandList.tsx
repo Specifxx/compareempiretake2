@@ -12,7 +12,7 @@ export function BrandList({ brands }: { brands: BrandInfo[] }) {
   return (
     <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
       {brands.map((b) => (
-        <Link key={b.slug} href={`/brands/${b.slug}`} className="card group flex items-center gap-4 p-4 transition hover:shadow-lift">
+        <Link prefetch={false} key={b.slug} href={`/brands/${b.slug}`} className="card group flex items-center gap-4 p-4 transition hover:shadow-lift">
           <div className="img-tile grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-xl">
             {b.image && <img src={b.image} alt="" className="product-img h-14 w-14 object-contain" loading="lazy" />}
           </div>

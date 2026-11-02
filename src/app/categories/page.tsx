@@ -23,7 +23,7 @@ export default function CategoriesPage() {
             <h2 className="eyebrow mb-3">{d.name}</h2>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
               {cats.map((c) => (
-                <Link key={c.id} id={c.id} href={c.href} className="card scroll-mt-24 p-5 transition hover:shadow-lift">
+                <Link prefetch={false} key={c.id} id={c.id} href={c.href} className="card scroll-mt-24 p-5 transition hover:shadow-lift">
                   <div className="text-3xl">{c.emoji}</div>
                   <div className="mt-3 font-display text-lg font-bold leading-tight">{c.name}</div>
                   <div className="mt-1 text-sm text-ink-mute">{getProducts(c.id).length.toLocaleString()} products</div>
@@ -34,7 +34,7 @@ export default function CategoriesPage() {
         );
       })}
       <p className="mt-10 text-sm text-ink-mute">
-        Missing something? <Link href="/about#feedback" className="text-brand hover:underline">Tell us</Link> — we add the most-requested next.
+        Missing something? <Link prefetch={false} href="/about#feedback" className="text-brand hover:underline">Tell us</Link> — we add the most-requested next.
       </p>
     </div>
   );

@@ -19,7 +19,7 @@ export default function DisclosurePage() {
         <p>
           Links to eBay are part of the eBay Partner Network. If you click one and buy something on eBay, eBay may pay us a small commission. You pay exactly
           the same price. These links are marked &quot;Ad&quot;, &quot;affiliate link&quot; or sit in an eBay or marketplace box. As an Amazon Associate we also earn from qualifying purchases on amazon.com.au (see the{" "}
-          <Link className="underline" href="/affiliate-disclosure">affiliate disclosure</Link>). Other programs will be listed here.
+          <Link prefetch={false} className="underline" href="/affiliate-disclosure">affiliate disclosure</Link>). Other programs will be listed here.
         </p>
         <h2>What it never changes</h2>
         <p>

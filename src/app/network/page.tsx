@@ -35,7 +35,7 @@ export default function NetworkPage() {
             {FAMILY_SITES.filter((s) => s.clusters[0] === c || (c === "hobby" && s.clusters.includes("hobby"))).map((s) => (
               <li key={`${c}-${s.id}`} className="card p-4">
                 {s.id === "empire" ? (
-                  <Link href="/" className="font-semibold hover:underline">{s.name}</Link>
+                  <Link prefetch={false} href="/" className="font-semibold hover:underline">{s.name}</Link>
                 ) : (
                   <a href={c === "hobby" && s.id === "gundam" ? `${s.url}/kits` : s.url} rel="noopener" className="font-semibold hover:underline">{s.name}</a>
                 )}

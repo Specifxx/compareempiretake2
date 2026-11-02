@@ -955,3 +955,21 @@ every three-hourly price commit, because neither had the gate.
   (Vercel: when a branch matches several rules, any `true` wins). No preview is built for any branch or pull
   request, `[preview]` included; the older per-branch `false` entries stay for orphan commits' own copies.
 - So "push to prod" means land on the production branch; the release reaches visitors within a day.
+
+## 2026-11-02 — No link prefetching, no crawling of query URLs, a lighter search index
+
+**Why.** This project was the team's most expensive this cycle ($11.08: Fast Origin Transfer 50 GB, Fluid CPU
+16 h, 1.95M CDN requests, 3.1M ISR reads, 24 h of build CPU). Builds are now capped (entry above). The rest is
+pages rendered or read from storage instead of served from the CDN:
+- 74 of 93 `next/link`s prefetched. A category or deals page put dozens of product links in view, and each
+  prefetch is an RSC request, which `next.config.mjs` deliberately never CDN-caches, so every one was a full
+  server render of a product page (~150 KB), or an ISR read for a static page.
+- Crawlers walked `?v=`/`?utm_` variants of product pages. Each query string is its own CDN entry, so each was a
+  fresh render, and every deploy (up to 8 a day until today) emptied all of them.
+- The search index was every product in a region with its image URL: 8.4 MB (1.5 MB gzipped) in the UK, fetched
+  whole by each visitor who opens search.
+
+**What.** Every `<Link>` carries `prefetch={false}` (`tests/cost-rules.test.ts`). `robots.ts` disallows `/*?` with
+allows for `/_next/`, `/og` (share images) and icons, plus RiftCompare's scraper list. The search index keeps
+thumbnails for the 2,500 most popular products only (`SEARCH_IMAGE_LIMIT`), cutting it by about a third. Google
+still reads every page: sitemap URLs carry no query and canonicals are clean.

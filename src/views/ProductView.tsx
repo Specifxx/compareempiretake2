@@ -181,12 +181,12 @@ export async function ProductView({ params, region }: { params: ProductParams; r
     <div className="container-x pt-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <nav className="mb-6 flex items-center gap-2 text-sm text-ink-mute" aria-label="Breadcrumb">
-        <Link href={HOME_PATH[region]} className="hover:text-ink">Home</Link>
+        <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link>
         <span>/</span>
-        <Link href={categoryHref(cat.id, region)} className="hover:text-ink">{cat.name}</Link>
+        <Link prefetch={false} href={categoryHref(cat.id, region)} className="hover:text-ink">{cat.name}</Link>
         <span>/</span>
         {region === "au" ? (
-          <Link href={`/brands/${phone.brand.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} className="hover:text-ink">{phone.brand}</Link>
+          <Link prefetch={false} href={`/brands/${phone.brand.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} className="hover:text-ink">{phone.brand}</Link>
         ) : (
           <span>{phone.brand}</span>
         )}
@@ -289,7 +289,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           <div className="flex flex-wrap gap-2">
             {vs.map((v) => {
               const other = v.a.slug === phone.slug ? v.b : v.a;
-              return <Link key={v.slug} href={`/compare/${v.slug}`} className="chip">vs {other.name}</Link>;
+              return <Link prefetch={false} key={v.slug} href={`/compare/${v.slug}`} className="chip">vs {other.name}</Link>;
             })}
           </div>
         </section>

@@ -43,7 +43,7 @@ export default function ContactPage() {
         <SuggestStore regions={REGION_IDS.map((r) => [r.toUpperCase(), REGIONS[r].name])} what="products" buttonClassName="btn-primary" />
       </section>
       <p className="mt-8 text-sm text-ink-mute">
-        Want to stop price-alert emails? Use the link at the bottom of any alert email, or see <Link className="underline" href="/alerts">price alerts</Link>.
+        Want to stop price-alert emails? Use the link at the bottom of any alert email, or see <Link prefetch={false} className="underline" href="/alerts">price alerts</Link>.
       </p>
     </div>
   );

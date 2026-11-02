@@ -49,7 +49,7 @@ export function PriceAlertButton({ product, productName, variant, variantLabel, 
             <button className="btn-primary" disabled={state.kind === "busy"}>{state.kind === "busy" ? "Saving…" : "Set alert"}</button>
           </div>
           {state.kind === "error" && <p className="mt-2 text-sm text-hot">{state.msg}</p>}
-          <p className="mt-2 text-[11px] text-ink-mute">We only use your email for this alert. Every email has a one-click unsubscribe. <Link href="/privacy" className="underline">Privacy</Link></p>
+          <p className="mt-2 text-[11px] text-ink-mute">We only use your email for this alert. Every email has a one-click unsubscribe. <Link prefetch={false} href="/privacy" className="underline">Privacy</Link></p>
         </>
       )}
     </form>

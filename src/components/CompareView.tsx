@@ -151,7 +151,7 @@ export function CompareView() {
         <div className="card px-6 py-16 text-center">
           <div className="font-display text-xl font-bold">Pick up to four products</div>
           <p className="mt-2 text-sm text-ink-mute">Search above, or tap “Compare” on any product. You can compare within one category at a time.</p>
-          <Link href={withRegion("/phones", region)} className="btn-primary mt-6">Browse phones</Link>
+          <Link prefetch={false} href={withRegion("/phones", region)} className="btn-primary mt-6">Browse phones</Link>
         </div>
       ) : (
         <div className="overflow-x-auto">

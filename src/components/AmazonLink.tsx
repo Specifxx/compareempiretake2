@@ -45,7 +45,7 @@ export function AmazonButton({ className = "", ...p }: Props & { className?: str
 export function AmazonNote({ className = "mt-1.5" }: { className?: string }) {
   return (
     <p className={`text-[11px] text-ink-mute ${className}`}>
-      {AMAZON_DISCLOSURE} <Link href="/affiliate-disclosure" className="underline">Learn more</Link>
+      {AMAZON_DISCLOSURE} <Link prefetch={false} href="/affiliate-disclosure" className="underline">Learn more</Link>
     </p>
   );
 }

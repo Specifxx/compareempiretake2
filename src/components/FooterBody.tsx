@@ -45,7 +45,7 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
             <span key={s.id}>{i ? " · " : ""}<a href={s.url} target="_blank" rel="noopener" className="font-semibold text-ink-soft hover:text-ink" title={s.label}>{s.name}</a></span>
           ))}
           {" · "}
-          <Link href="/network" className="font-semibold text-ink-soft hover:text-ink">All Compare Empire sites →</Link>
+          <Link prefetch={false} href="/network" className="font-semibold text-ink-soft hover:text-ink">All Compare Empire sites →</Link>
         </div>
       </nav>
       <div className="border-t border-line">
@@ -67,7 +67,7 @@ function FooterCol({ title, links }: { title: string; links: string[][] }) {
       <ul className="space-y-2 text-sm">
         {links.map(([l, h]) => (
           <li key={h}>
-            <Link href={h} className="text-ink-soft hover:text-ink">{l}</Link>
+            <Link prefetch={false} href={h} className="text-ink-soft hover:text-ink">{l}</Link>
           </li>
         ))}
       </ul>

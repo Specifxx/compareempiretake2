@@ -67,7 +67,7 @@ export default function PriceReport() {
           <tbody>
             {cats.map((c) => (
               <tr key={c.id} className="border-t border-line">
-                <td className="px-4 py-2"><Link className="underline" href={categoryHref(c.id, "us")}>{c.name}</Link></td>
+                <td className="px-4 py-2"><Link prefetch={false} className="underline" href={categoryHref(c.id, "us")}>{c.name}</Link></td>
                 {regions.map((r) => {
                   const x = categoryReport(getProducts(c.id, r));
                   return <td key={r} className="px-4 py-2 text-right tabular-nums">{x.compared >= 3 ? pctText(x.gap10) : "—"}</td>;
@@ -83,7 +83,7 @@ export default function PriceReport() {
         <h2 className="font-semibold">Quote this report</h2>
         <p className="mt-1 text-sm text-ink-soft">You&apos;re welcome to use any number here in an article, video or post, with a link to this page. It updates itself, so the link stays current.</p>
         <p className="mt-3 rounded-lg bg-slate-100 p-2 font-mono text-xs text-slate-800">{citation}</p>
-        <p className="mt-3 text-sm"><Link className="underline" href="/embed">Free price widgets for your site →</Link></p>
+        <p className="mt-3 text-sm"><Link prefetch={false} className="underline" href="/embed">Free price widgets for your site →</Link></p>
       </section>
     </div>
   );

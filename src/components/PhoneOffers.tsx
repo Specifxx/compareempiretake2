@@ -303,7 +303,7 @@ export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest,
         </div>
         <p className="mt-2 text-[11px] text-ink-soft">
           Amazon and eBay links are ads and affiliate links: we may earn a commission, and they never change the store rankings below.{" "}
-          <Link href="/disclosure" className="underline">Learn more</Link>
+          <Link prefetch={false} href="/disclosure" className="underline">Learn more</Link>
         </p>
         {amazonHref && <AmazonNote className="mt-1" />}
       </div>
