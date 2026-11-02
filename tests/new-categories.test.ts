@@ -35,6 +35,8 @@ test("hair tools: dryers, straighteners, stylers and clippers, never their acces
     "Hair Dryer Holder Wall Mount",
     "Barbie Hair Salon Styling Head Play Set",
     "Bosch Serie 6 Heat Pump Dryer 9kg WQB246C9GB",
+    "Char-Griller CG30355225 Black 3-Burner Flat Iron Gas Griddle and Plancha",
+    "Tweezerman Curl 60° Lash Curler",
   ])
     assert.notEqual(cat(t), "hair-care", t);
 });
@@ -58,6 +60,9 @@ test("small kitchen: mixers, blenders, kettles and toasters, but not coffee kett
     "Stovetop Whistling Kettle 2.5L",
     "Ninja AF400 Dual Zone Air Fryer",
     "Kettlebell 16kg",
+    "Neff C1AMG84G0B Built In Electric Compact Oven, Grill & Microwave, 45cm High, Graphite",
+    "Weber Original Kettle Premium 57cm Black",
+    "Robus R100LEDS-01 GOLF 10W 4000K LED With Pro-Diffuser -Microwave Sensor",
   ])
     assert.notEqual(cat(t), "small-kitchen", t);
 });
@@ -70,6 +75,8 @@ test("BBQs: gas, charcoal, pellet and pizza ovens, not covers, fuel or benchtop 
     "Ooni Koda 16 Gas Pizza Oven",
     "Ziggy Classic 4 Burner Hotplate Combo BBQ",
     "Kamado Joe Classic III Charcoal Grill",
+    "Weber Original Kettle Premium 57cm Black",
+    "Beefeater 6-Burner Built In Gas BBQ with hood, Stainless Steel – ProLine Series",
     "Ninja Woodfire Pro Outdoor Grill & Smoker OG850",
   ])
     assert.equal(cat(t, 400), "bbqs", t);
@@ -80,6 +87,11 @@ test("BBQs: gas, charcoal, pellet and pizza ovens, not covers, fuel or benchtop 
     "Breville the Smart Grill Pro BGR840",
     "Grill Brush Stainless Steel",
     "Weber Genesis BBQ Cookbook",
+    "Westinghouse 60cm Multi-Function 3 Gas Oven with Separate Grill Stainless Steel",
+    "Victoria Arduino VA388 Worktop Grill Deep 3GR",
+    "Gas Burner for Ooni Karu 2 Pro",
+    "Le Creuset Signature Rectangle Grill Cerise 30x26cm",
+    "#263 Ex-Diplay (sold as seen) Portable Charcoal Grill Masterbuilt",
   ])
     assert.notEqual(cat(t, 400), "bbqs", t);
 });
@@ -95,6 +107,7 @@ test("coffee gear: grinders, pour-over kettles, scales and brewers, not machines
     "Bodum Chambord 8 Cup Coffee Plunger",
     "Hario V60 Glass Dripper 02",
     "Bialetti Moka Express 6 Cup",
+    "Fiorenzato F4 ALL GROUND Grinder Black",
   ])
     assert.equal(cat(t, 80), "coffee-gear", t);
   for (const t of [
@@ -104,6 +117,10 @@ test("coffee gear: grinders, pour-over kettles, scales and brewers, not machines
     "Makita GA5030 Angle Grinder 125mm",
     "Ethiopia Yirgacheffe Coffee Beans 1kg",
     "Replacement Burrs for Baratza Encore",
+    "Honduras | Balbina Sabillon | Anaerobic Natural 250gms Ground for Aeropress",
+    "Trade In Your Old Baratza Grinder Encore Encore - Black",
+    "Food Grinder Attachment 5KSMFGAA",
+    "Coffee Compass Gift Pack Cafetiere Grind",
   ])
     assert.notEqual(cat(t, 80), "coffee-gear", t);
 });

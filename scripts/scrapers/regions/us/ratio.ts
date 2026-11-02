@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "us-ratio",
   base: "https://www.ratiocoffee.com",
   brand: "Ratio",
-  cats: ["coffee-machines"],
+  cats: ["coffee-machines", "coffee-gear"],
 });

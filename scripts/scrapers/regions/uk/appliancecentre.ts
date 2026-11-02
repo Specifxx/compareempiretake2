@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "uk-appliancecentre",
   base: "https://www.appliancecentre.co.uk",
-  cats: ["washing-machines", "dishwashers", "vacuums", "fridges", "coffee-machines"],
+  cats: ["washing-machines", "dishwashers", "vacuums", "fridges", "coffee-machines", "bbqs", "coffee-gear", "small-kitchen"],
 });

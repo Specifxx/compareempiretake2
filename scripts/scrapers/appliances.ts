@@ -27,6 +27,9 @@ const TOY = /\btoys?\b|\bplay ?sets?\b|\bpretend\b|\bkids?\b|\bchildren'?s\b|\bd
  * for Supersonic" is not. The 2026-11 categories test accessory nouns on this part only.
  */
 const head = (t: string) => t.split(/\s(?:with|w\/|incl\.?|including|inc\.?|\+)\s/i)[0];
+/** "Gas Burner for Ooni Karu 16", "Griddle for Weber Traveler": a part named for the product it fits (store survey 2026-11-02). */
+const FOR_PRODUCT =
+  /\b(for|fits?|suits?|to suit)\s+(the\s+)?(weber|ooni|gozney|kamado|big green egg|traeger|broil king|napoleon|baby q|family q|q\d|kettle (barbecues?|bbqs?)|\d+ ?cm weber|char-griller|blackstone|dyson|ghd|shark|kitchenaid|thermomix|vitamix|breville|sage|baratza|fellow|hario|aeropress|bialetti|chemex|xbloom|eureka|niche)\b/i;
 
 /** Pour-over and barista gear: coffee gear, never a small kitchen appliance (owner's 2026-11 categories). */
 /**
@@ -35,7 +38,7 @@ const head = (t: string) => t.split(/\s(?:with|w\/|incl\.?|including|inc\.?|\+)\
  * crimping tools, motor and door assemblies).
  */
 const NOT_2026_11 =
-  /\b(housing|load cell|carrier|assembly|motor|control board|board|harness|door|gauge|cooking grid|cabinet|colou?r panel|panel|refrigerator|canopy|rangehood|hood only|island|kits?|service parts?|tamper|package|drain tray|taps?|faucet|valve|microphones?|mic|memory card|sd ?(xc|hc)? card|sdxc|microsdxc|tripod|monopod|power (cord|lead)|mains lead|c13|iec|tweeter|woofer|subwoofer|loudspeaker|speakers?|tonearm|keyboard|pedal|fuzz|distortion|equine|horse|livestock|sheep|shears?|irrigation|sprinkler|processor|cpu|threadripper|gaming|tool single|ratchet|cat ?6|connectors?|pods?|charging base|charging stand)\b/i;
+  /\b(housing|load cell|carrier|assembly|motor|control board|board|harness|door|gauge|cooking grid|cabinet|colou?r panel|panel|refrigerator|canopy|rangehood|hood only|island|kits?|service parts?|tamper|package|drain tray|taps?|faucet|valve|microphones?|mic|memory card|sd ?(xc|hc)? card|sdxc|microsdxc|tripod|monopod|power (cord|lead)|mains lead|c13|iec|tweeter|woofer|subwoofer|loudspeaker|speakers?|tonearm|keyboard|pedal|fuzz|distortion|equine|horse|livestock|sheep|shears?|irrigation|sprinkler|processor|cpu|threadripper|gaming|tool single|ratchet|cat ?6|connectors?|pods?|charging base|charging stand|ex-?displa?y|sold as seen|customer returns?|cooking class|class|masterclass|jacket|coat|dress|trade[- ]in|babygrow|mpn|ip6\d|microwave on\/off|microwave sensor|motion sensor|pir sensor|luminaire|led (lights?|strips?|battens?|panels?|bulbs?|downlights?))\b/i;
 
 const COFFEE_KETTLE = /gooseneck|pour[- ]?over|\bstagg\b|\bcorvo\b|\bfellow\b|\bvaria\b|spouted kettle|brewista|\bhario\b|bonavita|timemore|barista kettle|drip kettle/i;
 
@@ -67,7 +70,10 @@ export const APPLIANCE_IS: Record<ApplianceCat, (t: string) => boolean> = {
     !NOT_2026_11.test(t) &&
     !/\bcoffee\b|\bespresso\b|\bwhole bean\b|\bblend\b|\broast|\bpets?\b|\bdog\b|\bcat\b|\bhorse\b|\bnail\b|\bnose\b|\beyebrow\b|\bbikini\b|\bbody groomer\b|\bhedge\b|\bgrass\b|\bwire\b|\bribbon\b|\bclothes\b|\bhand dryer\b|\btumble\b|\bsalad\b|\bshoe\b|\bcurling (stone|broom)\b|\b(shampoo|conditioner|serum|mousse|hairspray|hair spray|heat protect\w*|primer|lotion|pomade|wax|balm)\b|\bscissors?\b|\bshears?\b|\bwigs?\b|\bextensions?\b|\bgift (set|pack)\b/i.test(t) &&
     !/\b(case|pouch|bag|mat|holder|stand|organi[sz]er|caddy|attachment|nozzle|diffuser|concentrator|comb|guard|blades?|head|filter|cord|spray|oil|cream|gel|mask|treatment|rollers?)s?\b/i.test(head(t).replace(/\bheated rollers?\b/i, "")) &&
-    !/\bhair clips?\b|\bclaw clips?\b|\bsnap clips?\b/i.test(t),
+    !/\bhair clips?\b|\bclaw clips?\b|\bsnap clips?\b/i.test(t) &&
+    // Char-Griller's "Flat Iron" is a griddle; lash and nail curlers/clippers are not hair tools.
+    !/\bgriddle\b|\bplancha\b|\bgas\b|\bgrill\b|\bburners?\b|\bbbq\b|\blash\b|\beyelash\b|\bfingernail\b|\bnails?\b|\btweezerman\b/i.test(t) &&
+    !FOR_PRODUCT.test(t),
   /** Stand mixers, blenders, food processors, kettles, toasters, microwaves, juicers and benchtop cookers (2026-11). */
   "small-kitchen": (t) =>
     /stand mixer|hand mixer|kitchen mixer|food mixer|planetary mixer|(tilt[- ]head|bowl[- ]lift)(?=.*mixer)|blender|nutribullet|vitamix|food processor|mini chopper|\bkettle\b|toaster|microwave|juicer|juice extractor|citrus press|rice cooker|slow cooker|pressure cooker|multi-?cooker|instant pot|sandwich (press|maker)|toastie maker|waffle maker|bread ?maker|ice cream maker|\bcreami\b|sodastream|soda stream|sparkling water maker|dehydrator|electric fry ?pan|electric wok|health grill|contact grill|indoor grill|smart grill|cafe grill|optigrill|panini (press|grill|maker)|benchtop oven|countertop oven|toaster oven|mini oven|egg cooker|food steamer|soup maker|yogh?urt maker|popcorn maker|deep fryer|spirali[sz]er|meat mincer|thermo ?mix|\bkmix\b|kenwood chef|cooking chef/i.test(t) &&
@@ -75,6 +81,9 @@ export const APPLIANCE_IS: Record<ApplianceCat, (t: string) => boolean> = {
     !NOT_2026_11.test(t) &&
     !COFFEE_KETTLE.test(t) &&
     !/air ?fry|coffee (machine|maker)|espresso|\bstove ?top\b|\bwhistl|camping|kettlebell|\btea ?pot\b|microwave (safe|cookware|popcorn)|toaster bags?|\bco2\b|gas cylinder|\bsyrups?\b|\bflavou?rs?\b|\bpods?\b|\bcapsules?\b|\bcommercial\b|\bcatering\b|\bdj\b|\baudio\b|\bmixing\b|\bchannels?\b|\bconcrete\b|\bpaint\b|\bcocktail\b|built[- ]in (microwave|oven)|\bwall oven\b|\bcooktop\b|\brangehood\b|\bdrawer\b|\bphone\b|\btelephone\b|\bturntable\b|\brecord player\b|inner (cooking )?pot|sealing ring|\bcharcoal\b|\bkettle (charcoal )?grill\b|\bgrill\b.*\bkettle\b|\bbarber\b|\btrimmer\b|\brinser\b|\bpitcher\b|\bpurifier\b|\bhumidifier\b|\bheater\b|\bfan\b|\bvacuum\b/i.test(t) &&
+    // Built-in ovens with a microwave function, Weber's kettle BBQs and their parts, oven mitts.
+    !/built[- ]?in|\bintegrated\b|over[- ]the[- ]range|\bcompact (combi(nation)? )?(microwave )?oven\b|combination (microwave )?oven|steam oven|\bweber\b|\bkettle\b.*\b\d{2} ?cm\b|\bkone\b|\bcone\b|rotisserie|barbecues?|\bbbqs?\b|grilling|\bgrates?\b|\binserts?\b|\bmitts?\b|collapsible|\bcamp\b|\bpanels?\b|\bbody\b|\bbase\b|\bboxes?\b|microwaveable/i.test(t) &&
+    !FOR_PRODUCT.test(t) &&
     !/\b(jugs?|jars?|bowls?|cups?|bottles?|blades?|beaters?|whisks?|dough hooks?|lids?|covers?|seals?|gaskets?|filters?|cartridges?|trays?|racks?|baskets?|pans?|dish(es)?|containers?|mats?|bags?|books?|cookbooks?|attachments?|accessor(y|ies)|stands?|shelf|shelves|brackets?|trim kits?|vent kits?|bundles?)\b/i.test(head(t).replace(/\bstand mixer\b/gi, "")),
   /** Gas, charcoal and pellet BBQs, smokers, kamados, griddles and outdoor pizza ovens (2026-11). */
   bbqs: (t) =>
@@ -82,9 +91,13 @@ export const APPLIANCE_IS: Record<ApplianceCat, (t: string) => boolean> = {
     !TOY.test(t) &&
     !NOT_2026_11.test(t) &&
     !/\bindoor\b|health grill|contact grill|\bpanini\b|\bsandwich\b|\btoaster\b|air ?fry|george foreman|\belectric (grill|griddle)\b(?!.*(outdoor|bbq|woodfire))|fire ?pit|patio heater|\bspeakers?\b|\bcar\b|\bradiator\b|\bgrille\b|\bmicrowave\b|\bmesh grill\b|\bcup grill\b|\bgroup\b|\bcookbook\b|\bbook\b|smart grill|cafe grill|optigrill|\btopper\b|grill pan|non-?stick|\bcast iron\b/i.test(t) &&
+    // Kitchen ranges and built-in ovens "with grill", espresso machines' drip grills, cookware grill pans, knife and tool sets.
+    !(/\b(oven|cooker|range|cooktop|hob)\b/i.test(t) && !/outdoor|pizza oven|woodfire|\bbbq\b|barbe(cue|que)|kamado|\bdome\b|\barc\b/i.test(t)) &&
+    !/wall mounted|worktop|cup support|\bgrp\b|\b\d ?gr\b|espresso|victoria arduino|la spaziale|\bsizzle\b|\b(le creuset|staub|chasseur|pyrolux|greenpan|lodge|smithey|demeyere|scanpan|blok|zwilling|wiltshire|global|w[uü]sthof|peugeot|all-clad|tefal|circulon|anolon|scanpan)\b|fry ?pan|square grill|rectangle grill|\bknives\b|\bknife\b|\bpepper\b|\bmill\b|blowtorch|\b\d+ ?(piece|pce|pc)\b|\bstarter pack\b/i.test(t) &&
+    !FOR_PRODUCT.test(t) &&
     // Kitchen brands' "grills" are benchtop contact grills unless the title says they cook outdoors.
     !/\b(breville|sunbeam|kambrook|tefal|russell hobbs|morphy richards|salter|cuisinart|sage|de'?longhi|kenwood|philips|panasonic|smeg|kitchenaid|swan|tower|cooks professional|anko|kmart|dash|bella|chefman|elite gourmet|maxi-matic|presto|hamilton beach|instant( pot)?|kalorik|cosori|ninja foodi)\b(?!.*\b(outdoor|bbq|barbecue|gas|charcoal|pellet|pizza oven)\b)/i.test(t) &&
-    !/\b(hoods?|covers?|mats?|tools?|utensils?|brush(es)?|cleaners?|cleaning|scrapers?|spatulas?|tongs|forks?|thermometers?|probes?|gloves?|aprons?|rubs?|sauces?|seasonings?|marinades?|pellets|briquettes?|chips|chunks|firelighters?|fuel|bottles?|cylinders?|hoses?|regulators?|replacement|spares?|parts?|stones?|peels?|cutters?|steels?|foil|woks?|skillets?|dutch ovens?|cloths?|carry (case|bag)|bags?|inserts?|liners?|lights?|hooks?|holders?|grates?|grill plates?|griddle plates?|rotisserie (kits?|spit)|accessor(y|ies))\b/i.test(head(t)),
+    !/\b(hoods?|covers?|mats?|tools?|utensils?|brush(es)?|cleaners?|cleaning|scrapers?|spatulas?|tongs|forks?|thermometers?|probes?|gloves?|aprons?|rubs?|sauces?|seasonings?|marinades?|pellets|briquettes?|chips|chunks|firelighters?|fuel|bottles?|cylinders?|hoses?|regulators?|replacement|spares?|parts?|stones?|peels?|cutters?|steels?|foil|woks?|skillets?|dutch ovens?|cloths?|carry (case|bag)|bags?|inserts?|liners?|lights?|hooks?|holders?|grates?|grill plates?|griddle plates?|rotisserie|handles?|windshields?|carts?|drawers?|storage|stands?|tables?|shelves|shelf|mates|nests?|bases?|expanders?|baskets?|boosters?|arch|packs?|sets?|kones?|cones?|smash plate|accessor(y|ies))\b/i.test(head(t)),
   /** Burr grinders, pour-over kettles, coffee scales, manual brewers and milk frothers (2026-11). */
   "coffee-gear": (t) =>
     (/grinder|coffee mill|hand mill|burr mill|gooseneck|pour[- ]?over|\bstagg\b|brewista|coffee scales?|espresso scales?|brew(ing)? scales?|\bacaia\b|aeropress|chemex|\bv60\b(?=.*\b(dripper|drip|brewer|coffee|hario|ceramic|glass|plastic|metal|copper|decanter|server|set)\b)|\bdripper|french press|coffee plunger|cafeti[eè]re|\bmoka\b|bialetti|stove ?top espresso|\bkalita\b|origami dripper|milk frother|aeroccino|niche zero|mignon|baratza|comandante|1zpresso|kingrinder|\bmazzer\b|mahlk|\bwilfa\b|(syphon|siphon)(?=.*\b(coffee|brewer|yama|hario|cup)\b)/i.test(t) || (COFFEE_KETTLE.test(t) && /kettle/i.test(t))) &&
@@ -92,6 +105,10 @@ export const APPLIANCE_IS: Record<ApplianceCat, (t: string) => boolean> = {
     !TOY.test(t) &&
     !NOT_2026_11.test(t) &&
     !/coffee machine|espresso machine|coffeemaker|coffee ?maker with|auto(matic)? pour[- ]?over|\b\d+[- ]cup\b.*\bcoffee maker\b|bean[- ]to[- ]cup|cold brew (coffee )?maker|filter coffee machine|drip coffee|\bpepper\b|\bsalt\b|\bspices?\b|\bherbs?\b|\bmeat\b|\bgrain\b|\bflour\b|\bnuts?\b|angle grinder|bench grinder|die grinder|\bdiscs?\b|\bcutting\b|makita|ryobi|dewalt|milwaukee|\bstump\b|\bwaste\b|\bbeans?\b|\b\d+ ?(g|kg)\b(?!.*(scale|grinder))|paper filters?|filter papers?|\b\d{2,4} ?(pk|pack|filters|pcs|count|ct)\b|subscription|gift card|\bsamples?\b|\bcommercial\b|\b\d+ ?lbs?\b|whole bean|ground coffee|\(coarse\)|\(fine\)|\bdecaf\b|\broast(ed|ers?)?\b|flavou?red|single origin|\bt-?shirt\b|\bhoodie\b|\bmerch\b|\bspeakers?\b|\bmonitor\b/i.test(t) &&
+    // Coffee sold "ground for" a brewer, gift and tasting packs, cups and glasses, clothes, trade-ins, food-mincer attachments, parts.
+    !(/\bground\b|\bgrind\b/i.test(t) && !/grinder|\bmill\b/i.test(t)) &&
+    !/wholebean|\bgift (set|box|pack)\b|variety pack|tasting|duo pack|blend pack|\bblend\b|\bglasses\b|\bcups\b|\bsaucers?\b|food grinder|meat grinder|mincer|attachment|blender|weighing plate|\bclean\b|home setup|\bcounter\b|coffee outlet|\bdrill\b|\bsaw\b|\b18v\b|tool combo|\bkemelia\b|\bbody\b|\bbase\b/i.test(t) &&
+    !FOR_PRODUCT.test(t) &&
     !(/coffee maker/i.test(t) && !/aeropress|chemex|dripper|french press|plunger|moka|stove ?top|cafeti/i.test(t)) &&
     // A bag of coffee whose grind option names a brewer ("... Coffee French Press 12oz").
     !(/\bcoffee\b/i.test(t) && /\b\d+ ?oz\.?\b/i.test(t) && !/\b(maker|brewer|kettle|grinder|scale|frother|plunger|carafe|dripper|server)\b/i.test(t)) &&

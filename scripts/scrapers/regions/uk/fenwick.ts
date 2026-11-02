@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "uk-fenwick",
   base: "https://www.fenwick.co.uk",
-  cats: ["headphones", "coffee-machines", "lego"],
+  cats: ["headphones", "coffee-machines", "lego", "coffee-gear", "small-kitchen"],
 });

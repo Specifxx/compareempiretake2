@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-londonappliances",
   base: "https://www.londonappliances.com",
   exclude: /box opened|graded|ex[- ]display/i,
-  cats: ["dishwashers", "fridges", "washing-machines", "coffee-machines"],
+  cats: ["dishwashers", "fridges", "washing-machines", "coffee-machines", "small-kitchen"],
 });

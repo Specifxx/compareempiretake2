@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-stuartwestmoreland",
   base: "https://www.stuartwestmoreland.co.uk",
   exclude: /box opened|graded|ex[- ]display/i,
-  cats: ["vacuums", "tvs", "coffee-machines", "air-fryers", "dishwashers", "washing-machines", "soundbars", "robot-vacuums", "fridges"],
+  cats: ["vacuums", "tvs", "coffee-machines", "air-fryers", "dishwashers", "washing-machines", "soundbars", "robot-vacuums", "fridges", "bbqs", "coffee-gear", "hair-care", "small-kitchen"],
 });

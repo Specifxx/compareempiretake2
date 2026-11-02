@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "us-mova",
   base: "https://www.mova-tech.com",
   brand: "MOVA",
-  cats: ["robot-vacuums", "vacuums"],
+  cats: ["robot-vacuums", "vacuums", "hair-care"],
 });

@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-smallbatch",
   base: "https://www.smallbatchcoffee.co.uk",
   exclude: /\+ ?free/i,
-  cats: ["coffee-machines"],
+  cats: ["coffee-machines", "coffee-gear"],
 });

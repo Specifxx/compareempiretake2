@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-atlanticelectrics",
   base: "https://www.atlanticelectrics.co.uk",
   exclude: /box opened|graded|ex[- ]display/i,
-  cats: ["fridges", "dishwashers", "washing-machines", "tvs", "coffee-machines", "vacuums", "robot-vacuums", "soundbars", "headphones", "speakers", "air-fryers"],
+  cats: ["fridges", "dishwashers", "washing-machines", "tvs", "coffee-machines", "vacuums", "robot-vacuums", "soundbars", "headphones", "speakers", "air-fryers", "bbqs", "hair-care", "small-kitchen"],
 });

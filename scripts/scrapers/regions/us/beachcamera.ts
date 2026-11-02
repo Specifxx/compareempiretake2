@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "us-beachcamera",
   base: "https://www.beachcamera.com",
-  cats: ["tvs", "headphones", "printers", "monitors", "cameras", "smartwatches", "coffee-machines", "soundbars", "robot-vacuums", "laptops", "air-fryers", "vacuums"],
+  cats: ["tvs", "headphones", "printers", "monitors", "cameras", "smartwatches", "coffee-machines", "soundbars", "robot-vacuums", "laptops", "air-fryers", "vacuums", "bbqs", "small-kitchen"],
 });
