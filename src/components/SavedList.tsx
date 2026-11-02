@@ -65,7 +65,7 @@ export function SavedList() {
       <div className="card px-6 py-16 text-center">
         <div className="font-display text-xl font-bold">{shared ? "This shared list is empty" : "Nothing saved yet"}</div>
         <p className="mt-2 text-sm text-ink-mute">Tap the heart on anything to keep an eye on its price. Saved phones live in this browser — no account needed.</p>
-        <Link href="/phones" className="btn-primary mt-6">Browse phones</Link>
+        <Link prefetch={false} href="/phones" className="btn-primary mt-6">Browse phones</Link>
       </div>
     );
   return (
@@ -87,7 +87,7 @@ export function SavedList() {
         <div className="mb-5 flex flex-wrap items-center gap-3 rounded-2xl border border-line bg-bg-card p-4 text-sm">
           <span className="text-ink-mute">Someone shared this list with you. Today&apos;s prices, each at its cheapest store.</span>
           <button type="button" className="btn-primary" onClick={keep}>{kept ? "Added to your saved list" : "Keep this list"}</button>
-          <Link href="/saved" className="font-semibold text-brand hover:underline" onClick={() => setShared(null)}>Your own list</Link>
+          <Link prefetch={false} href="/saved" className="font-semibold text-brand hover:underline" onClick={() => setShared(null)}>Your own list</Link>
         </div>
       ) : (
         <div className="mb-5">

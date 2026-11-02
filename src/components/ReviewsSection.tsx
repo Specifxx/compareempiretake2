@@ -41,7 +41,7 @@ export function ReviewsSection({ limit = 6, full }: { limit?: number; full?: boo
           <p className="mt-1 text-sm text-ink-mute">Every genuine review is published, good or bad.</p>
         </div>
         <div className="flex gap-2">
-          {!full && data?.count ? <Link href="/reviews" className="btn-ghost">All reviews</Link> : null}
+          {!full && data?.count ? <Link prefetch={false} href="/reviews" className="btn-ghost">All reviews</Link> : null}
           <button onClick={openReview} className="btn-primary">★ Write a review</button>
         </div>
       </div>

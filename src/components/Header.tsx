@@ -74,7 +74,7 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
           </button>
           <nav className="hidden items-center gap-1 xl:flex">
             {NAV.map((n) => (
-              <Link
+              <Link prefetch={false}
                 key={n.href}
                 href={n.href}
                 className={`rounded-lg px-3 py-2 text-sm font-medium transition ${path.startsWith(n.href) ? "bg-bg-sunk text-ink" : "text-ink-soft hover:text-ink"}`}
@@ -89,7 +89,7 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
           <button onClick={() => setOpen(true)} className="ml-auto grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-line bg-bg-card text-sm text-ink-mute shadow-sm sm:flex sm:w-auto sm:min-w-0 sm:flex-1 sm:items-center sm:gap-2 sm:px-3 md:hidden" aria-label="Search">
             <SearchIcon className="h-4 w-4 shrink-0" /> <span className="hidden truncate sm:inline">Search products…</span>
           </button>
-          <Link href="/saved" className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk hover:text-ink" aria-label="Saved">
+          <Link prefetch={false} href="/saved" className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk hover:text-ink" aria-label="Saved">
             <HeartIcon />
             {savedList.length > 0 && (
               <span className="absolute right-1 top-1 grid h-4 min-w-4 place-items-center rounded-full bg-hot px-1 text-[10px] font-bold text-white">{savedList.length}</span>
@@ -105,7 +105,7 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
         <div className="hidden border-t border-line/60 md:block">
           <nav className="container-x flex h-11 items-center gap-1 overflow-x-auto text-sm scrollbar-none" aria-label="Categories">
             {flat.filter((c) => c.featured).map((c) => (
-              <Link
+              <Link prefetch={false}
                 key={c.href}
                 href={c.href}
                 className={`shrink-0 rounded-lg px-3 py-1.5 font-medium transition ${path === c.href || path.startsWith(c.href + "/") ? "bg-brand-soft text-brand" : "text-ink-soft hover:bg-bg-sunk hover:text-ink"}`}
@@ -120,9 +120,9 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
               </button>
             )}
             <span className="mx-2 h-5 w-px shrink-0 bg-line" />
-            <Link href={NAV[0].href} className={`shrink-0 rounded-lg px-3 py-1.5 font-semibold transition ${path.startsWith(NAV[0].href) ? "bg-hot/10 text-hot" : "text-hot hover:bg-hot/10"}`}>🔥 Deals</Link>
+            <Link prefetch={false} href={NAV[0].href} className={`shrink-0 rounded-lg px-3 py-1.5 font-semibold transition ${path.startsWith(NAV[0].href) ? "bg-hot/10 text-hot" : "text-hot hover:bg-hot/10"}`}>🔥 Deals</Link>
             {NAV.slice(1).map((n) => (
-              <Link key={n.href} href={n.href} className="shrink-0 rounded-lg px-3 py-1.5 font-medium text-ink-soft transition hover:bg-bg-sunk hover:text-ink xl:hidden">{n.label}</Link>
+              <Link prefetch={false} key={n.href} href={n.href} className="shrink-0 rounded-lg px-3 py-1.5 font-medium text-ink-soft transition hover:bg-bg-sunk hover:text-ink xl:hidden">{n.label}</Link>
             ))}
           </nav>
         </div>
@@ -136,14 +136,14 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
                     <ul className="space-y-3">
                       {d.categories.map((c) => (
                         <li key={c.href}>
-                          <Link href={c.href} className="group flex items-center gap-2 font-semibold hover:text-brand">
+                          <Link prefetch={false} href={c.href} className="group flex items-center gap-2 font-semibold hover:text-brand">
                             <span className="text-lg">{c.emoji}</span> {c.name}
                             <span className="text-xs font-normal text-ink-mute">{c.count.toLocaleString()}</span>
                           </Link>
                           {c.brands.length > 0 && (
                             <div className="mt-1.5 flex flex-wrap gap-x-3 gap-y-1 pl-7 text-xs text-ink-mute">
                               {c.brands.slice(0, 4).map((b) => (
-                                <Link key={b.href} href={b.href} className="hover:text-brand">{b.name}</Link>
+                                <Link prefetch={false} key={b.href} href={b.href} className="hover:text-brand">{b.name}</Link>
                               ))}
                             </div>
                           )}
@@ -162,7 +162,7 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
               <div key={d.name} className="border-t border-line py-3 first:border-0">
                 <div className="eyebrow mb-1 px-3">{d.name}</div>
                 {d.categories.map((c) => (
-                  <Link key={c.href} href={c.href} onClick={() => setMenu(false)} className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">
+                  <Link prefetch={false} key={c.href} href={c.href} onClick={() => setMenu(false)} className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">
                     <span>{c.emoji}</span> {c.name} <span className="ml-auto text-xs text-ink-mute">{c.count}</span>
                   </Link>
                 ))}
@@ -170,10 +170,10 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
             ))}
             <div className="border-t border-line pt-3">
               {NAV.map((n) => (
-                <Link key={n.href} href={n.href} onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">{n.label}</Link>
+                <Link prefetch={false} key={n.href} href={n.href} onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">{n.label}</Link>
               ))}
-              <Link href="/forum" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">Community forum</Link>
-              <Link href="/about" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">About</Link>
+              <Link prefetch={false} href="/forum" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">Community forum</Link>
+              <Link prefetch={false} href="/about" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">About</Link>
             </div>
           </nav>
         )}
@@ -225,7 +225,7 @@ function RegionSwitcher({ regions, nav }: { regions: RegionId[]; nav: Partial<Re
       {open && (
         <div className="card absolute right-0 top-full z-50 mt-2 w-56 p-1.5 shadow-lift animate-fade-up">
           {regions.map((r) => (
-            <Link key={r} href={target(r)} onClick={() => remember(r)} className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm hover:bg-bg-sunk ${r === region ? "font-semibold text-brand" : ""}`}>
+            <Link prefetch={false} key={r} href={target(r)} onClick={() => remember(r)} className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm hover:bg-bg-sunk ${r === region ? "font-semibold text-brand" : ""}`}>
               <Flag code={r} className="text-lg" />
               <span>{REGIONS[r].name}</span>
               <span className="ml-auto text-xs text-ink-mute">{REGIONS[r].currency}</span>

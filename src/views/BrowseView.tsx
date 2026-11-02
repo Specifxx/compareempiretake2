@@ -30,14 +30,14 @@ export function BrowseIndex({ region }: { region: RegionId }) {
   return (
     <div className="container-x max-w-4xl pt-10 pb-16">
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
-        <Link href={HOME_PATH[region]} className="hover:text-ink">Home</Link> / <span>Browse</span>
+        <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link> / <span>Browse</span>
       </nav>
       <h1 className="font-display text-3xl font-extrabold tracking-tight">Browse every product</h1>
       <p className="mt-2 text-ink-mute">Every category and product we compare in {IN[region]}, A to Z.</p>
       <ul className="mt-8 grid gap-2 sm:grid-cols-2">
         {cats.map((c) => (
           <li key={c.id}>
-            <Link href={withRegion(`/browse/${c.id}`, region)} className="card flex items-center justify-between px-4 py-3 hover:shadow-lift">
+            <Link prefetch={false} href={withRegion(`/browse/${c.id}`, region)} className="card flex items-center justify-between px-4 py-3 hover:shadow-lift">
               <span className="font-semibold">{c.emoji} {c.name}</span>
               <span className="text-sm text-ink-mute">{getProducts(c.id as CategoryId, region).length.toLocaleString()} products</span>
             </Link>
@@ -79,11 +79,11 @@ export async function BrowseCategory({ params, region }: { params: Params; regio
   return (
     <div className="container-x max-w-4xl pt-10 pb-16">
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
-        <Link href={HOME_PATH[region]} className="hover:text-ink">Home</Link> / <Link href={withRegion("/browse", region)} className="hover:text-ink">Browse</Link> / <span>{c.name}</span>
+        <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link> / <Link prefetch={false} href={withRegion("/browse", region)} className="hover:text-ink">Browse</Link> / <span>{c.name}</span>
       </nav>
       <h1 className="font-display text-3xl font-extrabold tracking-tight">All {c.name.toLowerCase()}, A to Z</h1>
       <p className="mt-2 text-ink-mute">
-        {getProducts(c.id as CategoryId, region).length.toLocaleString()} products{total > 1 ? ` · page ${n} of ${total}` : ""}. For filters and sorting, see <Link href={withRegion(`/${c.id}`, region)} className="underline">{c.name}</Link>.
+        {getProducts(c.id as CategoryId, region).length.toLocaleString()} products{total > 1 ? ` · page ${n} of ${total}` : ""}. For filters and sorting, see <Link prefetch={false} href={withRegion(`/${c.id}`, region)} className="underline">{c.name}</Link>.
       </p>
       <ul className="mt-6 divide-y divide-line rounded-2xl border border-line bg-bg-card">
         {items.map((p) => (
@@ -98,7 +98,7 @@ export async function BrowseCategory({ params, region }: { params: Params; regio
       {total > 1 && (
         <nav className="mt-6 flex flex-wrap gap-2" aria-label="Pages">
           {Array.from({ length: total }, (_, i) => i + 1).map((k) => (
-            <Link key={k} href={page(k)} aria-current={k === n ? "page" : undefined} className={`chip text-xs ${k === n ? "chip-on" : ""}`}>{k}</Link>
+            <Link prefetch={false} key={k} href={page(k)} aria-current={k === n ? "page" : undefined} className={`chip text-xs ${k === n ? "chip-on" : ""}`}>{k}</Link>
           ))}
         </nav>
       )}

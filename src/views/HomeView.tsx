@@ -54,7 +54,7 @@ export function HomeView({ region }: { region: RegionId }) {
             </div>
             {/* Christmas only: a line to the deals, for gift shoppers. */}
             <div className="xmas-pill-row mb-5 justify-center">
-              <Link href={to("/deals")} className="xmas-pill">
+              <Link prefetch={false} href={to("/deals")} className="xmas-pill">
                 <span className="xmas-pill-icon" aria-hidden="true" />
                 <b>Christmas sale check</b>
                 <span className="xmas-pill-more hidden sm:inline">· real price drops only, checked every day →</span>
@@ -82,7 +82,7 @@ export function HomeView({ region }: { region: RegionId }) {
               {retailers.length > 3 && (
                 <>
                   {" "}and{" "}
-                  <Link href={region === "au" ? "/about#retailers" : to("/stores")} className="font-medium text-ink-soft underline decoration-line underline-offset-4 hover:text-ink">{retailers.length - 3} more stores</Link>
+                  <Link prefetch={false} href={region === "au" ? "/about#retailers" : to("/stores")} className="font-medium text-ink-soft underline decoration-line underline-offset-4 hover:text-ink">{retailers.length - 3} more stores</Link>
                 </>
               )}
             </p>
@@ -111,11 +111,11 @@ export function HomeView({ region }: { region: RegionId }) {
       <section className="container-x">
         <div className="mb-4 flex items-end justify-between gap-4">
           <h2 className="font-display text-xl font-extrabold tracking-tight">Shop by category</h2>
-          <Link href={to("/browse")} className="text-sm font-semibold text-brand hover:underline">Browse all products →</Link>
+          <Link prefetch={false} href={to("/browse")} className="text-sm font-semibold text-brand hover:underline">Browse all products →</Link>
         </div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
           {cats.map(({ c, count, from, image }) => (
-            <Link key={c.id} href={to(c.href)} className="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift">
+            <Link prefetch={false} key={c.id} href={to(c.href)} className="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift">
               <div className="img-tile relative aspect-square">
                 {image && <img src={image} alt="" loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-4 transition group-hover:scale-105" />}
               </div>
@@ -138,7 +138,7 @@ export function HomeView({ region }: { region: RegionId }) {
           <ul className="mt-6 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
             {getGuides().slice(6, 18).map((g) => (
               <li key={g.slug} className="border-b border-dashed border-line pb-2">
-                <Link href={`/guides/${g.slug}`} className="font-medium text-ink-soft hover:text-brand">{g.title}</Link>
+                <Link prefetch={false} href={`/guides/${g.slug}`} className="font-medium text-ink-soft hover:text-brand">{g.title}</Link>
               </li>
             ))}
           </ul>
@@ -229,8 +229,8 @@ export function HomeView({ region }: { region: RegionId }) {
               Compare Empire is new and built in the open. Tell us about a store we&apos;re missing or a price we got wrong and we&apos;ll add it — the more stores we check, the more everyone saves.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <Link href="/about#feedback" className="btn bg-white text-[#2A1A8C] hover:bg-white/90">Suggest a store</Link>
-              <Link href="/about" className="btn border border-white/30 text-white hover:bg-white/10">How we compare</Link>
+              <Link prefetch={false} href="/about#feedback" className="btn bg-white text-[#2A1A8C] hover:bg-white/90">Suggest a store</Link>
+              <Link prefetch={false} href="/about" className="btn border border-white/30 text-white hover:bg-white/10">How we compare</Link>
             </div>
           </div>
         </div>
@@ -246,7 +246,7 @@ function SectionHead({ title, sub, href, cta }: { title: string; sub: string; hr
         <h2 className="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{title}</h2>
         <p className="mt-1 text-sm text-ink-mute">{sub}</p>
       </div>
-      <Link href={href} className="hidden shrink-0 items-center gap-1 text-sm font-semibold text-brand hover:underline sm:inline-flex">
+      <Link prefetch={false} href={href} className="hidden shrink-0 items-center gap-1 text-sm font-semibold text-brand hover:underline sm:inline-flex">
         {cta} <ArrowRight />
       </Link>
     </div>

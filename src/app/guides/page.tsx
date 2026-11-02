@@ -73,7 +73,7 @@ export default function GuidesPage() {
       <section className="mt-16 rounded-3xl bg-bg-sunk p-6 text-sm text-ink-soft sm:p-8">
         <h2 className="font-display text-lg font-bold text-ink">How these guides are made</h2>
         <p className="mt-2 max-w-3xl">
-          We don&apos;t type prices into articles. Each guide pulls today&apos;s lowest in-stock price for every product it names, and the &ldquo;which store is cheapest&rdquo; tables count every product two or more stores sell, every morning. Stores can&apos;t pay to be included or to rank higher. <Link href="/about#how" className="font-medium text-brand hover:underline">More about how we compare</Link>
+          We don&apos;t type prices into articles. Each guide pulls today&apos;s lowest in-stock price for every product it names, and the &ldquo;which store is cheapest&rdquo; tables count every product two or more stores sell, every morning. Stores can&apos;t pay to be included or to rank higher. <Link prefetch={false} href="/about#how" className="font-medium text-brand hover:underline">More about how we compare</Link>
         </p>
       </section>
     </div>

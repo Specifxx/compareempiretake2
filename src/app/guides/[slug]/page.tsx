@@ -67,9 +67,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <div className="mx-auto max-w-6xl lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12">
         <article className="min-w-0 max-w-3xl">
           <nav className="mb-5 flex flex-wrap items-center gap-1.5 text-sm text-ink-mute">
-            <Link href="/guides" className="hover:text-ink">Guides</Link>
+            <Link prefetch={false} href="/guides" className="hover:text-ink">Guides</Link>
             <span aria-hidden>/</span>
-            <Link href={`/guides#${section.id}`} className="hover:text-ink">{section.name}</Link>
+            <Link prefetch={false} href={`/guides#${section.id}`} className="hover:text-ink">{section.name}</Link>
           </nav>
           <h1 className="font-display text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-[2.75rem]">{g.title}</h1>
           <p className="mt-4 text-lg text-ink-soft">{g.description}</p>
@@ -91,7 +91,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           </div>
           <div className="mt-12 rounded-2xl border border-line bg-bg-sunk p-5 text-sm text-ink-soft">
             <b className="text-ink">How we work:</b> every price in this guide is today&apos;s lowest in-stock price across the Australian stores we check, refreshed every morning, and the tables recalculate with it. Nobody pays to be included or to rank higher. Specs come from the stores&apos; and makers&apos; own listings.{" "}
-            <Link href="/about#how" className="text-brand hover:underline">How Compare Empire works</Link>
+            <Link prefetch={false} href="/about#how" className="text-brand hover:underline">How Compare Empire works</Link>
           </div>
         </article>
         <aside className="hidden lg:block">
@@ -105,7 +105,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </nav>
             )}
             {cat && catCount > 0 && (
-              <Link href={cat.href} className="card block bg-gradient-to-br from-brand-soft to-bg-card p-5 transition hover:shadow-lift">
+              <Link prefetch={false} href={cat.href} className="card block bg-gradient-to-br from-brand-soft to-bg-card p-5 transition hover:shadow-lift">
                 <div className="text-2xl">{cat.emoji}</div>
                 <div className="mt-2 font-display text-lg font-bold leading-snug">Compare every {cat.noun} price</div>
                 <p className="mt-1 text-sm text-ink-soft">{catCount.toLocaleString("en-AU")} products in {cat.name} across Australian stores, cheapest in stock first.</p>

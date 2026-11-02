@@ -30,9 +30,9 @@ export function DealsView({ category, region = "au", blackFriday = false, sale }
         </p>
       </div>
       <nav className="mt-6 flex gap-2 overflow-x-auto pb-1 scrollbar-none" aria-label="Deal categories">
-        <Link href={withRegion("/deals", region)} className={`chip shrink-0 text-xs ${!category ? "chip-on" : ""}`}>All</Link>
+        <Link prefetch={false} href={withRegion("/deals", region)} className={`chip shrink-0 text-xs ${!category ? "chip-on" : ""}`}>All</Link>
         {tabs.map((t) => (
-          <Link key={t.id} href={withRegion(`/deals/${t.id}`, region)} className={`chip shrink-0 text-xs ${category === t.id ? "chip-on" : ""}`}>
+          <Link prefetch={false} key={t.id} href={withRegion(`/deals/${t.id}`, region)} className={`chip shrink-0 text-xs ${category === t.id ? "chip-on" : ""}`}>
             {t.emoji} {t.name}
           </Link>
         ))}

@@ -17,7 +17,7 @@ export function CompareTray() {
         <button onClick={compare.clear} className="grid h-8 w-8 place-items-center rounded-lg text-ink-mute hover:bg-bg-sunk" aria-label="Clear compare">
           <CloseIcon className="h-4 w-4" />
         </button>
-        <Link href={`/compare?p=${list.join(",")}`} className="btn-primary py-2">
+        <Link prefetch={false} href={`/compare?p=${list.join(",")}`} className="btn-primary py-2">
           Compare now
         </Link>
       </div>

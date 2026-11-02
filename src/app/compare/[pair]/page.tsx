@@ -41,7 +41,7 @@ export default async function VsPage({ params }: { params: Promise<{ pair: strin
   ];
   return (
     <div className="container-x max-w-4xl pt-10">
-      <nav className="mb-6 text-sm text-ink-mute"><Link href="/compare" className="hover:text-ink">Compare</Link> / <span className="text-ink">{a.model} vs {b.model}</span></nav>
+      <nav className="mb-6 text-sm text-ink-mute"><Link prefetch={false} href="/compare" className="hover:text-ink">Compare</Link> / <span className="text-ink">{a.model} vs {b.model}</span></nav>
       <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{a.name} vs {b.name}</h1>
       <p className="mt-3 text-lg text-ink-soft">
         Today the <b className="text-ink">{cheap.name}</b> is{" "}
@@ -90,7 +90,7 @@ export default async function VsPage({ params }: { params: Promise<{ pair: strin
         <section className="mt-14">
           <h2 className="mb-4 font-display text-xl font-bold">Related comparisons</h2>
           <div className="flex flex-wrap gap-2">
-            {related.map((r) => <Link key={r.slug} href={`/compare/${r.slug}`} className="chip">{r.a.model} vs {r.b.model}</Link>)}
+            {related.map((r) => <Link prefetch={false} key={r.slug} href={`/compare/${r.slug}`} className="chip">{r.a.model} vs {r.b.model}</Link>)}
           </div>
         </section>
       )}

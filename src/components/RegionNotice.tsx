@@ -33,7 +33,7 @@ export function RegionNotice() {
         <span>
           <Flag code={want} /> In {want === "au" ? "Australia" : `the ${want.toUpperCase()}`}? This page compares {P.adjective} prices ({P.currency}).
         </span>
-        <Link href={to ?? HOME_PATH[want]} onClick={() => rememberRegion(want)} className="font-semibold text-brand hover:underline">
+        <Link prefetch={false} href={to ?? HOME_PATH[want]} onClick={() => rememberRegion(want)} className="font-semibold text-brand hover:underline">
           {to ? `Switch to ${W.adjective} prices` : `See ${W.adjective} prices`}
         </Link>
         <button

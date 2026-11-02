@@ -23,7 +23,7 @@ export function GuideCard({ g, big, eager }: { g: Guide; big?: boolean; eager?: 
   const section = GUIDE_SECTIONS.find((s) => s.id === g.section);
   const fan = FAN[images.length] ?? [];
   return (
-    <Link href={`/guides/${g.slug}`} className={`card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift ${big ? "md:col-span-2" : ""}`}>
+    <Link prefetch={false} href={`/guides/${g.slug}`} className={`card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift ${big ? "md:col-span-2" : ""}`}>
       <div className={`relative overflow-hidden bg-gradient-to-br from-[#2A1A8C] via-brand to-[#9B4DFF] ${big ? "aspect-[2/1]" : "aspect-[16/9]"}`}>
         <div aria-hidden className="pointer-events-none absolute -right-10 -top-16 h-48 w-48 rounded-full bg-white/15 blur-2xl" />
         <div aria-hidden className="pointer-events-none absolute -bottom-20 left-6 h-40 w-40 rounded-full bg-save/30 blur-2xl" />
