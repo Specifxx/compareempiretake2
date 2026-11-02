@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T23:32:37.436Z",
+ "scrapedAt": "2026-11-02T04:08:05.536Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -22,18 +22,6 @@
    "inStock": false,
    "brand": "Astro",
    "mpn": "ASTA40TRM80X"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "ASUTUFGAMINGH1",
-   "title": "ASUS TUF Gaming H1 Wired Headset in Black - TUFGAMINGH1",
-   "url": "https://www.beachcamera.com/products/asus-tuf-gaming-h1",
-   "price": 61.37,
-   "wasPrice": 73.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1012006_1_a96843bd-e055-44c7-96d0-0b47a6654eb1.jpg?v=1790668984",
-   "inStock": true,
-   "brand": "ASUS",
-   "mpn": "ASUTUFGAMINGH1"
   },
   {
    "retailer": "us-beachcamera",
@@ -111,18 +99,6 @@
    "inStock": false,
    "brand": "Audio-Technica",
    "mpn": "ATHR70XA"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "ATHM20X",
-   "title": "Audio-Technica Professional Monitor Headphones (ATH-M20X)",
-   "url": "https://www.beachcamera.com/products/audio-technica-professional-monitor-headphones-ath-m20x",
-   "price": 59,
-   "wasPrice": 70.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/144134_1.jpg?v=1752714578",
-   "inStock": true,
-   "brand": "Audio-Technica",
-   "mpn": "ATHM20X"
   },
   {
    "retailer": "us-beachcamera",
@@ -491,6 +467,18 @@
   },
   {
    "retailer": "us-beachcamera",
+   "sku": "BOSQCUH2CC",
+   "title": "Bose QuietComfort Ultra Headphones (2nd Gen) - Cherry Chocolate",
+   "url": "https://www.beachcamera.com/products/bose-quietcomfort-ultra-headphones-2nd-gen-cherry-chocolate",
+   "price": 399,
+   "wasPrice": 449,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1216996_1.jpg?v=1789752649",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "BOSQCUH2CC"
+  },
+  {
+   "retailer": "us-beachcamera",
    "sku": "BOSQCUH2DG",
    "title": "Bose QuietComfort Ultra Headphones (2nd Gen) - Desert Gold",
    "url": "https://www.beachcamera.com/products/bose-quietcomfort-ultra-headphones-2nd-gen-desert-gold",
@@ -524,6 +512,18 @@
    "inStock": true,
    "brand": "Bose",
    "mpn": "BOSQCUH2MV"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "BOSQCUH2OG",
+   "title": "Bose QuietComfort Ultra Headphones (2nd Gen) - Olive Green",
+   "url": "https://www.beachcamera.com/products/bose-quietcomfort-ultra-headphones-2nd-gen-olive-green",
+   "price": 399,
+   "wasPrice": 449,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1217004_1.jpg?v=1789752652",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "BOSQCUH2OG"
   },
   {
    "retailer": "us-beachcamera",
@@ -569,53 +569,72 @@
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "BOSUOEBK",
-   "title": "Bose Ultra Open Earbuds - Black",
-   "url": "https://www.beachcamera.com/products/bose-ultra-open-earbuds-black",
-   "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1209592_1.jpg?v=1788192877",
-   "inStock": false,
-   "brand": "Bose"
+   "sku": "E2BOSSPOEBK",
+   "title": "Bose Sport Open Earbuds, Black 901149-0010 with Zippered Waist Belt",
+   "url": "https://www.beachcamera.com/products/bose-sport-open-earbuds-black-901149-0010-with-zippered-waist-belt",
+   "price": 204,
+   "wasPrice": 218.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1218083_1.jpg?v=1790638320",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "E2BOSSPOEBK"
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "BOSUOEDG",
-   "title": "Bose Ultra Open Earbuds - Desert Gold",
-   "url": "https://www.beachcamera.com/products/bose-ultra-open-earbuds-desert-gold",
-   "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1209970_1.png?v=1790669091",
-   "inStock": false,
-   "brand": "Bose"
+   "sku": "E2BOSSPOEEG",
+   "title": "Bose Sport Open Earbuds, Eucalyptus Green 901149-0030 with Zippered Waist Belt",
+   "url": "https://www.beachcamera.com/products/bose-sport-open-earbuds-eucalyptus-green-901149-0030-with-zippered-waist-belt",
+   "price": 204,
+   "wasPrice": 218.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1218062_1.jpg?v=1790619348",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "E2BOSSPOEEG"
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "BOSUOEMV",
-   "title": "Bose Ultra Open Earbuds - Midnight Violet",
-   "url": "https://www.beachcamera.com/products/bose-ultra-open-earbuds-midnight-violet",
-   "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1209994_1.jpg?v=1788192940",
-   "inStock": false,
-   "brand": "Bose"
+   "sku": "E2BOSSPOEWH",
+   "title": "Bose Sport Open Earbuds, White 901149-0020 with Zippered Waist Belt",
+   "url": "https://www.beachcamera.com/products/bose-sport-open-earbuds-white-901149-0020-with-zippered-waist-belt",
+   "price": 204,
+   "wasPrice": 218.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1218061_1.jpg?v=1790619358",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "E2BOSSPOEWH"
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "BOSUOEMB",
-   "title": "Bose Ultra Open Earbuds - Moonstone Blue",
-   "url": "https://www.beachcamera.com/products/bose-ultra-open-earbuds-moonstone-blue",
+   "sku": "BOSUOE2BK",
+   "title": "Bose Ultra Open Earbuds (2nd Gen) - Black",
+   "url": "https://www.beachcamera.com/products/bose-ultra-open-earbuds-2nd-gen-black",
    "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1209991_1.png?v=1790669108",
-   "inStock": false,
-   "brand": "Bose"
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1217065_1.jpg?v=1792080265",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "BOSUOE2BK"
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "BOSUOEWS",
-   "title": "Bose Ultra Open Earbuds - White Smoke",
-   "url": "https://www.beachcamera.com/products/bose-ultra-open-earbuds-white-smoke",
+   "sku": "BOSUOE2OG",
+   "title": "Bose Ultra Open Earbuds (2nd Gen) - Olive Green",
+   "url": "https://www.beachcamera.com/products/bose-ultra-open-earbuds-2nd-gen-olive-green",
    "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1210022_1.jpg?v=1788192961",
-   "inStock": false,
-   "brand": "Bose"
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1217090_1.jpg?v=1792080294",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "BOSUOE2OG"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "BOSUOE2WH",
+   "title": "Bose Ultra Open Earbuds (2nd Gen) - White",
+   "url": "https://www.beachcamera.com/products/bose-ultra-open-earbuds-2nd-gen-white",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1217101_1.jpg?v=1792080324",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "BOSUOE2WH"
   },
   {
    "retailer": "us-beachcamera",
@@ -649,7 +668,7 @@
    "price": 49.95,
    "wasPrice": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/471284_1.jpg?v=1752739992",
-   "inStock": false,
+   "inStock": true,
    "brand": "Deco Gear",
    "mpn": "DGKDH10BL"
   },
@@ -689,6 +708,54 @@
   },
   {
    "retailer": "us-beachcamera",
+   "sku": "DGBOSQCG1101",
+   "title": "Deco Gear Unofficial Master Guide to the Bose QuietComfort Headphones",
+   "url": "https://www.beachcamera.com/products/deco-gear-unofficial-master-guide-to-the-bose-quietcomfort-headphones",
+   "price": 129.99,
+   "wasPrice": 155.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1215704_1_f08e16c0-c788-4885-8617-995ef9c9ffe2.jpg?v=1793589898",
+   "inStock": false,
+   "brand": "Deco Gear",
+   "mpn": "DGBOSQCG1101"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "DGBOSQCULTRA101",
+   "title": "Deco Gear Unofficial Master Guide to the Bose QuietComfort Ultra 2nd Gen Headphones",
+   "url": "https://www.beachcamera.com/products/deco-gear-unofficial-master-guide-to-the-bose-quietcomfort-ultra-2nd-gen-headphones",
+   "price": 129.99,
+   "wasPrice": 155.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1215705_1.jpg?v=1788991293",
+   "inStock": true,
+   "brand": "Deco Gear",
+   "mpn": "DGBOSQCULTRA101"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "DGWH1000XX101",
+   "title": "Deco Gear Unofficial Master Guide to the Sony 1000X THE COLLEXION Headphones",
+   "url": "https://www.beachcamera.com/products/deco-gear-unofficial-master-guide-to-the-sony-1000x-the-collexion-headphones",
+   "price": 129.99,
+   "wasPrice": 155.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1201047_1.jpg?v=1784131261",
+   "inStock": true,
+   "brand": "Deco Gear",
+   "mpn": "DGWH1000XX101"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "DGWH1000XM4C101",
+   "title": "Deco Gear Unofficial Master Guide to the Sony WH-1000XM4C Wireless Headphones",
+   "url": "https://www.beachcamera.com/products/deco-gear-unofficial-master-guide-to-the-sony-wh-1000xm4c-wireless-headphones",
+   "price": 129.99,
+   "wasPrice": 155.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1222237_1.jpg?v=1792639292",
+   "inStock": true,
+   "brand": "Deco Gear",
+   "mpn": "DGWH1000XM4C101"
+  },
+  {
+   "retailer": "us-beachcamera",
    "sku": "DGWH1000XM6101",
    "title": "Deco Gear Unofficial Master Guide to the Sony WH-1000XM6",
    "url": "https://www.beachcamera.com/products/deco-gear-unofficial-master-guide-to-the-sony-wh-1000xm6",
@@ -698,30 +765,6 @@
    "inStock": true,
    "brand": "Deco Gear",
    "mpn": "DGWH1000XM6101"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "EKSTAM0103",
-   "title": "EKSAtelecom H1 Pro AI-Powered Wireless Headset, Black",
-   "url": "https://www.beachcamera.com/products/eksa-nonabyte-inc-h1-pro-ai-powered-headset",
-   "price": 79,
-   "wasPrice": 94.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1095199_1.jpg?v=1752942701",
-   "inStock": true,
-   "brand": "EKSAtelecom",
-   "mpn": "EKSTAM0103"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "EKSTQM0101",
-   "title": "EKSAtelecom S30 AI-Powered Open-Ear True Wireless Headset, Black",
-   "url": "https://www.beachcamera.com/products/eksa-nonabyte-inc-s30-ai-powered-headset",
-   "price": 72,
-   "wasPrice": 94.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1095210_1.jpg?v=1752942727",
-   "inStock": true,
-   "brand": "EKSAtelecom",
-   "mpn": "EKSTQM0101"
   },
   {
    "retailer": "us-beachcamera",
@@ -780,30 +823,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1158066_1.jpg?v=1770675519",
    "inStock": false,
    "mpn": "JBLLIVE770NCBLU"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "E1PLAYREM04",
-   "title": "Playseat Evolution Gaming Chair (Black) + Premium Sony INZONE H3 Gaming Headset",
-   "url": "https://www.beachcamera.com/products/playseat-evolution-gaming-chair-black-premium-sony-inzone-h3-gaming-headset",
-   "price": 339,
-   "wasPrice": 447.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/979803_1.jpg?v=1752796253",
-   "inStock": false,
-   "brand": "Playseat",
-   "mpn": "E1PLAYREM04"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "E1PLAYRAP00314",
-   "title": "Playseat Trophy Simulator Seat, Red + Premium Sony INZONE H3 Gaming Headset",
-   "url": "https://www.beachcamera.com/products/playseat-trophy-simulator-seat-red-premium-sony-inzone-h3-gaming-headset",
-   "price": 619.99,
-   "wasPrice": 676,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/979794_1.jpg?v=1752796239",
-   "inStock": false,
-   "brand": "Playseat",
-   "mpn": "E1PLAYRAP00314"
   },
   {
    "retailer": "us-beachcamera",
@@ -889,18 +908,6 @@
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "SNMDR7506",
-   "title": "Sony MDR-7506 Professional Large Diaphragm Headphones",
-   "url": "https://www.beachcamera.com/products/sony-mdr-7506-professional-large-diaphragm-headphones",
-   "price": 113,
-   "wasPrice": 135.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/SNMDR7506.jpg?v=1770045142",
-   "inStock": true,
-   "brand": "Sony",
-   "mpn": "SNMDR7506"
-  },
-  {
-   "retailer": "us-beachcamera",
    "sku": "SNZX110NCK",
    "title": "Sony MDRZX110NC Noise Cancelling Headphones Extended Battery Life none",
    "url": "https://www.beachcamera.com/products/sony-mdrzx110nc-noise-cancelling-headphones-extended-battery-life",
@@ -949,18 +956,6 @@
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "SNWFC510W",
-   "title": "Sony WF-C510 Truly Wireless Earbuds with 22-Hour Battery, IPX4, Multipoint, White",
-   "url": "https://www.beachcamera.com/products/sony-wf-c510-truly-wireless-earbuds-with-22-hour-battery-ipx4-multipoint-white",
-   "price": 68,
-   "wasPrice": 81.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1045836_1_aa95e0e3-4ff4-42a9-9638-92bbc694a889.jpg?v=1789755198",
-   "inStock": true,
-   "brand": "Sony",
-   "mpn": "SNWFC510W"
-  },
-  {
-   "retailer": "us-beachcamera",
    "sku": "SNWFC700NB",
    "title": "Sony WF-C700N Truly Wireless In-Ear Headphones, Black none",
    "url": "https://www.beachcamera.com/products/sony-wf-c700n-truly-wireless-in-ear-headphones-black",
@@ -982,28 +977,6 @@
    "inStock": true,
    "brand": "Sony",
    "mpn": "SNWFC710NB"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "SNWH1000XM6B",
-   "title": "Sony WH-1000XM6 Best Wireless Noise Canceling Headphones | Black",
-   "url": "https://www.beachcamera.com/products/sony-wh-1000xm6-best-wireless-noise-canceling-headphones-black",
-   "price": 458,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1092506_1_ac32ce21-83db-4bbf-8a30-07837d4faaa7.jpg?v=1789755241",
-   "inStock": true,
-   "brand": "Sony",
-   "mpn": "SNWH1000XM6B"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "SNWH1000XM6S",
-   "title": "Sony WH-1000XM6 Best Wireless Noise Canceling Headphones | Platinum Silver",
-   "url": "https://www.beachcamera.com/products/sony-wh-1000xm6-best-wireless-noise-canceling-headphones-platinum-silver",
-   "price": 458,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1092517_1_f1251072-b24d-4f24-8483-a62913d80b62.jpg?v=1789755263",
-   "inStock": true,
-   "brand": "Sony",
-   "mpn": "SNWH1000XM6S"
   },
   {
    "retailer": "us-beachcamera",

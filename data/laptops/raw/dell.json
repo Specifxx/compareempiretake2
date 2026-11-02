@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T22:54:16.705Z",
+ "scrapedAt": "2026-11-02T03:31:08.973Z",
  "offers": [
   {
    "retailer": "dell",
@@ -193,6 +193,17 @@
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/xps16dx16263",
    "price": 6219.31,
    "image": "https://i.dell.com/assetlink/img/global/laptop-xps-dx16263-gy-gallery-1-dl12v3lo-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1099&qlt=100,0&resMode=sharp2&size=1099,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "xps13dx13267",
+   "brand": "Dell",
+   "title": "Dell New XPS Googlebook Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/xps13dx13267",
+   "price": 4250.4,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-xps-dx13267-yl-gallery-1-dl12pn23-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1106&qlt=100,0&resMode=sharp2&size=1106,804",
    "inStock": true,
    "fromPrice": true
   },

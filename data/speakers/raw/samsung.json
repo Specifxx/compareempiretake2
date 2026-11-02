@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-01T23:03:19.598Z",
+ "scrapedAt": "2026-11-02T03:42:27.026Z",
  "offers": [
   {
    "retailer": "samsung",
@@ -23,6 +23,18 @@
    "price": 249,
    "wasPrice": 499,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-ls51h-xy/gallery/au-music-studio5-ls50h-583351-hw-ls51h-xy-thumb-551728798",
+   "inStock": true
+  },
+  {
+   "retailer": "samsung",
+   "sku": "HW-LS70H/XY",
+   "mpn": "HW-LS70H/XY",
+   "brand": "Samsung",
+   "title": "Samsung Music Studio 7 LS70H WiFi-Bluetooth Wireless Speaker (2026)",
+   "url": "https://www.samsung.com/au/audio-devices/wireless-speaker/ls70h-black-hw-ls70h-xy/",
+   "price": 374,
+   "wasPrice": 749,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-ls70h-xy/gallery/au-music-studio7-ls70h-hw-ls70h-xy-thumb-551428107",
    "inStock": false
   },
   {
@@ -47,7 +59,7 @@
    "price": 349,
    "wasPrice": 479,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/mx-st40f-xy/gallery/au-mx-st40f-mx-st40f-xy-thumb-550590530",
-   "inStock": false
+   "inStock": true
   }
  ]
 }
