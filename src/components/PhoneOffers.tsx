@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { marketplacesFor } from "@/lib/marketplaces";
 import { AmazonNote, AmazonRow } from "./AmazonLink";
+import { amazonLink, amazonStore } from "@/lib/amazon";
 import { EbayListingRow, EbaySearchRow } from "./EbayListingRow";
 import { withRegion } from "@/lib/region";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
@@ -272,7 +273,8 @@ export function PhoneOffers({
 export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest, compact = false }: { phone: Phone; variantQuery: string; product: string; cheapest?: number; compact?: boolean }) {
   const { $, R, region } = useRegionKit();
   const markets = marketplacesFor(region);
-  const amazon = markets.find((m) => m.id === "amazon")!;
+  const amazonHref = amazonLink(region, mq, compact ? "quickview" : "product");
+  const amazonName = amazonStore(region)?.name;
   const ebay = markets.find((m) => m.id === "ebay")!;
   const cid = `p-${phone.category}-${phone.slug}`;
   const phones = phone.category === "phones";
@@ -288,7 +290,7 @@ export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest,
       ) : (
         <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} adjective={R.adjective} />
       )}
-      <AmazonRow query={mq} product={product} placement={compact ? "quickview" : "product"} href={region === "au" ? undefined : amazon.url(mq)} name={amazon.name} />
+      {amazonHref && <AmazonRow query={mq} product={product} placement={compact ? "quickview" : "product"} href={amazonHref} name={amazonName} />}
       {compact ? null : (
       <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
@@ -307,7 +309,7 @@ export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest,
           Amazon and eBay links are ads and affiliate links: we may earn a commission, and they never change the store rankings below.{" "}
           <Link href="/disclosure" className="underline">Learn more</Link>
         </p>
-        {region === "au" && <AmazonNote className="mt-1" />}
+        {amazonHref && <AmazonNote className="mt-1" />}
       </div>
       )}
     </div>

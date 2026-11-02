@@ -5,7 +5,7 @@ import { SearchIcon } from "./icons";
 import { useResults, type SearchEntry } from "./SearchBox";
 import { useSearchIndex } from "@/lib/use-search-index";
 import { useRegionKit } from "@/lib/use-region";
-import { AMAZON_REL, amazonAuLink } from "@/lib/amazon";
+import { AMAZON_REL, amazonLink } from "@/lib/amazon";
 
 const NONE: SearchEntry[] = [];
 const SUGGESTIONS = ["iPhone 17 Pro", "RTX 5070 Ti", '65" OLED', "AirPods", "PS5", "under $500"];
@@ -96,8 +96,8 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
             See all results for “{q}” →
           </button>
         )}
-        {q.trim() && region === "au" && (
-          <a href={amazonAuLink(q.trim())} target="_blank" rel={AMAZON_REL} data-buy="amazon" data-buy-kind="amazon-search" data-amazon="search" data-buy-product={q.trim()} className="flex items-center justify-between gap-3 border-t border-line px-4 py-3 text-sm hover:bg-bg-sunk">
+        {q.trim() && amazonLink(region, q.trim()) && (
+          <a href={amazonLink(region, q.trim(), "search")!} target="_blank" rel={AMAZON_REL} data-buy="amazon" data-buy-kind="amazon-search" data-amazon="search" data-buy-product={q.trim()} className="flex items-center justify-between gap-3 border-t border-line px-4 py-3 text-sm hover:bg-bg-sunk">
             <span>Check price on Amazon for “{q.trim()}” ↗</span>
             <span className="text-[10px] text-ink-mute">Ad · affiliate link</span>
           </a>
