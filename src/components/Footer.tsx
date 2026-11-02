@@ -21,8 +21,8 @@ export function Footer() {
           year: Number(new Date(updatedAt).toLocaleDateString("en-CA", { timeZone: R.timeZone }).slice(0, 4)),
           shop:
             region === "au"
-              ? [["All phones", "/phones"], ["Today's deals", "/deals"], ["Black Friday deals", "/black-friday"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"], ["Browse all products", "/browse"], ["Free price widgets", "/embed"]]
-              : [["All phones", to("/phones")], ["Today's deals", to("/deals")], ["Black Friday deals", to("/black-friday")], ["Stores we check", to("/stores")], ["Browse all products", to("/browse")]],
+              ? [["All phones", "/phones"], ["Today's deals", "/deals"], ["Black Friday deals", "/black-friday"], ["Boxing Day deals", "/boxing-day"], ["January sales", "/january-sales"], ["Lunar New Year deals", "/lunar-new-year"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"], ["Browse all products", "/browse"], ["Free price widgets", "/embed"], ["Tech price report", "/price-report"]]
+              : [["All phones", to("/phones")], ["Today's deals", to("/deals")], ["Black Friday deals", to("/black-friday")], ["Boxing Day deals", to("/boxing-day")], ["January sales", to("/january-sales")], ["Stores we check", to("/stores")], ["Browse all products", to("/browse")]],
           categories: activeCategories(region).map((c) => [c.name, categoryHref(c.id, region)]),
         },
       ];

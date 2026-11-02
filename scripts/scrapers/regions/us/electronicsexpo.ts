@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "us-electronicsexpo",
   base: "https://www.electronicsexpo.com",
-  cats: ["soundbars", "speakers", "tvs", "headphones", "coffee-machines"],
+  cats: ["soundbars", "speakers", "tvs", "headphones", "coffee-machines", "small-kitchen"],
 });

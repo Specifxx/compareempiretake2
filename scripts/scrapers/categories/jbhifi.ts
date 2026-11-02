@@ -276,6 +276,12 @@ const HANDLES: Record<Cat, RegExp> = {
   "washing-machines": /(washing-machine|washer|dryer|front-load|top-load)/,
   dishwashers: /dishwasher/,
   lego: /(?!)/,
+  // 2026-11: JB is read for hair tools and grinders only. Its kettles, toasters and blenders run to a thousand-odd
+  // product pages, which would eat the shared 40-minute time budget the older categories depend on.
+  "hair-care": /(hair-?dryer|blow-?dryer|straightener|styler|airwrap|supersonic|corrale|airstrait|flexstyle|curler|curling|hot-brush|volumi[sz]er|clipper|hair-trimmer)/,
+  "coffee-gear": /(grinder|gooseneck|pour-over|coffee-scale|aeropress|french-press|moka|milk-frother|aeroccino)/,
+  "small-kitchen": /(?!)/,
+  bbqs: /(?!)/,
 };
 const HANDLE_JUNK =
   /refurb|renewed|open-box|ex-display|ex-demo|pre-owned|-case|-cover|folio|sleeve|-bag|backpack|-stand|-mount|bracket|cable|keyboard|protector|stylus|-pen-|pencil|charger|adapter|-dock|-arm|holder|-skin|riser|-strap|-mouse/;
@@ -297,6 +303,8 @@ const HANDLE_ACC: Partial<Record<Cat, RegExp>> = {
   "washing-machines": /hair-?dryer|hand-dryer|stack|pedestal|hose|-for-|detergent|dishwasher|airer|shoe|salad/,
   dishwashers: /tablet|detergent|rinse|cleaner|-for-|salt/,
   lego: /(?!)/,
+  "hair-care": /-for-|attachment|diffuser|nozzle|comb|guard|blade|case|-bag|stand|holder|mat$|pet-|dog-|nail|nose|replacement/,
+  "coffee-gear": /-for-|burrs?$|replacement|filter-paper|papers|pepper|salt|spice|cleaning|tablets|-cup$|-mug/,
   routers: /extender|repeater|usb|pcie|antenna|access-point|switch|powerline|camera|cable|mount|bracket|adapter/,
   ssds: /enclosure|adapter|caddy|-dock|bracket|cable|reader|laptop|notebook|desktop|gaming-pc|macbook|imac|refurb/,
   ram: /laptop-.*-(i[3579]|ryzen)|gaming-pc|desktop-pc|gddr|graphics|motherboard/,
@@ -335,12 +343,16 @@ const TYPES: Record<Cat, RegExp> = {
   dishwashers: /APPLIANCE|WHITEGOOD|KITCHEN/i,
   // LEGO comes only from the toy stores (scripts/scrapers/lego.ts); JB is never read for it.
   lego: /(?!)/,
+  "hair-care": /APPLIANCE|PERSONAL|BEAUTY|GROOM|HEALTH/i,
+  "coffee-gear": /APPLIANCE|KITCHEN|COFFEE/i,
+  "small-kitchen": /(?!)/,
+  bbqs: /(?!)/,
 };
 
 /** Marketplace sellers on JB for these are PC stores selling new stock; elsewhere marketplace is mostly refurbished. */
 const MARKETPLACE_OK = new Set<Cat>(["graphics-cards", "cpus", "ssds", "ram", "motherboards", "routers", "printers", "desktops"]);
 /** Where a title-borne manufacturer code is worth taking. */
-const TITLE_CODE_LOOSE = new Set<Cat>(["ssds", "ram", "printers", "routers", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers"]);
+const TITLE_CODE_LOOSE = new Set<Cat>(["ssds", "ram", "printers", "routers", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers", "hair-care", "coffee-gear"]);
 
 let sitemap: Promise<string[]> | undefined;
 /** All product URLs from JB's product sitemaps, fetched once per run. */

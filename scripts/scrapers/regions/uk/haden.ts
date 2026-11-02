@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-haden",
   base: "https://www.haden.com",
   brand: "Haden",
-  cats: ["air-fryers", "fridges", "washing-machines"],
+  cats: ["air-fryers", "fridges", "washing-machines", "small-kitchen"],
 });

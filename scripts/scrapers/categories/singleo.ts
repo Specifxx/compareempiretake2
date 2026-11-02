@@ -4,5 +4,5 @@ import { autoShopify } from "../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "singleo",
   base: "https://www.singleo.com.au",
-  cats: ["coffee-machines"],
+  cats: ["coffee-machines", "coffee-gear"],
 });

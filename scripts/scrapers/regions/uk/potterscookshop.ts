@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "uk-potterscookshop",
   base: "https://www.potterscookshop.co.uk",
-  cats: ["coffee-machines", "air-fryers"],
+  cats: ["coffee-machines", "air-fryers", "coffee-gear", "small-kitchen"],
 });

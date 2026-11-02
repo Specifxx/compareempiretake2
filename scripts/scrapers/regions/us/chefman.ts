@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "us-chefman",
   base: "https://www.chefman.com",
   brand: "Chefman",
-  cats: ["air-fryers", "coffee-machines"],
+  cats: ["air-fryers", "coffee-machines", "coffee-gear", "small-kitchen"],
 });

@@ -51,4 +51,9 @@ export const scrapers: Partial<Record<Cat, () => Promise<RawOffer[]>>> = {
   fridges: b("fridges", ["fridges-freezers"]),
   "washing-machines": b("washing-machines", ["washing-machines", "clothes-dryers", "washer-dryer-combos"]),
   dishwashers: b("dishwashers", ["dishwashers"]),
+  // 2026-11 categories: collections checked from GitHub's network on 2026-11-02 (kettles and mixers have none of their own).
+  "hair-care": b("hair-care", ["hair-dryers", "hair-stylers"]),
+  "small-kitchen": b("small-kitchen", ["toasters", "blenders", "food-processors", "microwaves"]),
+  "coffee-gear": b("coffee-gear", ["coffee-grinders"]),
+  bbqs: b("bbqs", ["bbqs"]),
 };

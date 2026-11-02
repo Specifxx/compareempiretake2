@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-cosori",
   base: "https://www.cosori.co.uk",
   brand: "COSORI",
-  cats: ["air-fryers"],
+  cats: ["air-fryers", "small-kitchen"],
 });

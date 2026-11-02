@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
+import { ShareArrival } from "@/components/ShareArrival";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
@@ -122,6 +123,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <QuickView />
         <FeedbackWidget />
         <SiteAnalytics />
+        <ShareArrival />
       </body>
     </html>
   );

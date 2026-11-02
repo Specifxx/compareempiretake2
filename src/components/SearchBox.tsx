@@ -6,7 +6,7 @@ import { search } from "@/lib/search";
 import { useSearchIndex } from "@/lib/use-search-index";
 import { SearchIcon } from "./icons";
 import { useRegionKit } from "@/lib/use-region";
-import { AMAZON_REL, amazonAuLink } from "@/lib/amazon";
+import { AMAZON_REL, amazonLink } from "@/lib/amazon";
 
 export interface SearchEntry {
   kind: "phone" | "guide" | "vs" | "category";
@@ -160,9 +160,9 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
               See all results for “{q.trim()}” →
             </button>
           )}
-          {q.trim() && region === "au" && (
+          {q.trim() && amazonLink(region, q.trim()) && (
             <a
-              href={amazonAuLink(q.trim())}
+              href={amazonLink(region, q.trim(), "search")!}
               target="_blank"
               rel={AMAZON_REL}
               data-buy="amazon"

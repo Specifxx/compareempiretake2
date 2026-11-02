@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "birite",
   base: "https://www.birite.com.au",
   exclude: /box opened|ex[- ]display|seconds stock/i,
-  cats: ["vacuums", "tvs", "coffee-machines", "air-fryers", "soundbars", "fridges", "dishwashers", "washing-machines", "robot-vacuums"],
+  cats: ["vacuums", "tvs", "coffee-machines", "air-fryers", "soundbars", "fridges", "dishwashers", "washing-machines", "robot-vacuums", "bbqs", "coffee-gear", "hair-care", "small-kitchen"],
 });

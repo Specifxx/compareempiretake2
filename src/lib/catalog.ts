@@ -134,6 +134,15 @@ export interface PhoneSummary {
   region?: RegionId;
   /** Today's cheapest new eBay listing, when the daily eBay job found one. */
   ebayPrice?: number;
+  /** The store with the cheapest in-stock outright price: set by /api/products only (the saved list), never in a page. */
+  bestStore?: string;
+}
+
+/** The store selling the product cheapest today, outright and in stock (any variant). */
+export function cheapestStore(p: Phone): string | undefined {
+  let best: Offer | undefined;
+  for (const v of p.variants) for (const o of v.offers) if (o.inStock && o.kind !== "plan" && (!best || o.price < best.price)) best = o;
+  return best ? RETAILERS[best.retailer]?.name : undefined;
 }
 
 export function summarise(p: Phone): PhoneSummary {

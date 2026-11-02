@@ -795,6 +795,72 @@ sets its own day-long `Vercel-CDN-Cache-Control` and `frame-ancestors *` (only t
 `next.config.mjs` changed except the trace), and is noindex. A region with no data throws instead of caching a 404.
 `/embed` is a neutral page (header follows the visitor's region) built with the deploy.
 
+## 2026-11-02 — Self-updating price report
+
+`/price-report` is one neutral page, kept at one URL and built with each deploy from that day's catalogue: per region,
+stores and products priced, how often the cheapest store is 10%+ under the dearest for the same model and size, and
+that share per category. It leads with the 10% share, not the median gap, because many products sell at one list
+price everywhere (the US median is 0%), and the share is the honest "does comparing pay" number. It is the citable
+asset the daily outreach offers tech writers (passive-growth plan, owner 2026-11-02). Pure numbers in
+`src/lib/price-report.ts` (tested): in-stock outright prices only, one gap per product from the variant most stores sell.
+
+## 2026-11-02 — Seasonal sale pages
+
+`/boxing-day`, `/january-sales` and `/lunar-new-year`, with `/uk/…` and `/us/…` (owner-approved growth plan,
+2026-11-02): one URL per region, kept every year like `/black-friday`, built weeks ahead so they are indexed
+before the day. Each is the region's deals page under the event's heading (`DealsView` with `sale`). The intro
+states where the day is a sale day as a fact, never as the page's region. Dates, the year a page is about (it
+rolls over a week after the event) and the intro are pure in `src/lib/sale-seasons.ts`
+(`tests/sale-seasons.test.ts`); Lunar New Year is a published-date table to 2040 (6 February 2027). Footer and
+sitemap. Never a "was" price, a countdown or an invented sale.
+
+## 2026-11-02 — Four new categories: small kitchen, coffee gear, hair tools, BBQs
+
+From the approved consolidation plan (owner, 2026-11-02): Compare Empire is the general store for broad categories,
+so hair care, small kitchen, BBQs and coffee gear come here as categories, in every region, rather than as new sites.
+
+- **What each holds.** Small Kitchen Appliances: stand and hand mixers, blenders, food processors, kettles, toasters,
+  microwaves, juicers, benchtop cookers and contact grills. Coffee Grinders & Gear: burr grinders, pour-over kettles,
+  scales, manual brewers (AeroPress, V60, Chemex, plungers, moka pots) and milk frothers. Hair Dryers & Stylers:
+  dryers, straighteners, curlers, hot brushes and stylers (Airwrap, FlexStyle) and hair clippers. BBQs & Pizza Ovens:
+  gas, charcoal, pellet and kamado BBQs, smokers, griddles and outdoor pizza ovens. Two new departments, "Hair &
+  Beauty" and "BBQs & Outdoor"; the kitchen two join "Kitchen".
+- **They are appliance categories** (`scripts/scrapers/appliances.ts`): new-only, parts refused, model code first.
+  Accessory nouns are tested only on the part of a title before "with" / "incl." / "+", so "Supersonic Hair Dryer
+  with Diffuser" is a dryer and "Diffuser for Supersonic" is not. Each category refuses the others' look-alikes:
+  a gooseneck kettle is coffee gear, never a kettle; a kitchen brand's "grill" is a benchtop grill unless the title
+  says gas, charcoal, pellet or outdoor; a bag of coffee whose grind option names a brewer is not a brewer.
+  Manual brewers (AeroPress, Chemex, drippers) left Coffee Machines for Coffee Gear.
+- **Brands without renames.** The new brands (Weber, Wilfa, Moccamaster, ghd…) live in their own table, read only
+  for the four categories: added to the shared one they renamed, and so re-URLed, existing coffee-machine and
+  air-fryer products. Every existing catalogue was rebuilt before and after and compared: no slug changed.
+- **Small kitchen keeps its type nouns** in the product key: a range's kettle and toaster share every other word.
+- **JB Hi-Fi** is read for hair tools and grinders only: its kettles, toasters and blenders run to a thousand-odd
+  product pages inside the 40-minute budget the older categories share.
+- **Stores** come from re-surveying every store already read (one catalogue read gives every category, so this costs
+  no extra requests), the earlier candidates with kitchen, coffee, hair or BBQ names, and 139 shops found by
+  searching for popular products (`docs/stores/candidates16-*.txt` to `candidates18.txt`).
+  The survey's samples drove a second round of refusals: built-in ovens and range cookers "with grill", espresso
+  machines' drip grills, cookware grill pans (Le Creuset, Staub, Lodge…), coffee sold "ground for" a brewer, gift
+  and tasting packs, trade-ins, ex-display stock, and any part named for the product it fits ("Gas Burner for
+  Ooni Karu"). Left out: Salons Direct (trade prices ex VAT), The Espresso Shop .com (mirror of .co.uk), Espresso
+  Underground (parts), Electricals Online (sensor lights), Coffee Compass (beans only).
+- **First count** (test scrape, 2026-11-02, stores with 3+ offers): AU bbqs 12, coffee gear 35, hair 8, small
+  kitchen 11 (plus JB Hi-Fi, The Good Guys and Betta); UK 14 / 36 / 6 / 18; US 12 / 17 / 8 / 16. Hair tools and
+  BBQs are the thin ones; the next survey should target salon suppliers that show VAT-inclusive prices and BBQ
+  specialists.
+
+## 2026-11-02 — Share buttons and shared saved lists
+
+Word of mouth (owner, 2026-11-02). The product page's Share button now names the real gap (cheapest and dearest
+in-stock outright price from two different stores, one currency) and the quick view has one too: the phone's share
+sheet, else copy the link, no pop-up, no reward (`src/components/ShareButton.tsx`). The saved list can be shared:
+`/saved?l=/phones/a,/us/tvs/b` carries up to 50 product paths in the link, nothing is stored, the shared view is
+read-only with "Keep this list", and each item says its cheapest store (`bestStore`, added by `/api/products` only, so
+no page grows). `/saved` stays noindex and out of robots. Every shared link carries `utm_source=share&utm_medium=<product|list>`
+(`src/lib/share-link.ts`, tested); the button sends a Vercel `share` event and `ShareArrival` one `share_visit` per
+tab, which RiftCompare's weekly growth report counts. No new function and no per-product share image.
+
 ## Sites that grow each other: the family feed, cluster blocks and short footers (2026-11-02)
 
 Owner, 2026-11-02: "We need each site to help each other grow as a team effort", and the
