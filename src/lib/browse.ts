@@ -183,6 +183,17 @@ export const FACETS: Record<string, FacetDef[]> = {
     { key: "Install", label: "Install" },
     { key: "Place settings", label: "Place settings" },
   ],
+  "hair-care": [
+    { key: "Type", label: "Type" },
+    { key: "Power source", label: "Power" },
+  ],
+  "small-kitchen": [{ key: "Type", label: "Type" }],
+  bbqs: [
+    { key: "Type", label: "Type" },
+    { key: "Fuel", label: "Fuel" },
+    { key: "Burners", label: "Burners" },
+  ],
+  "coffee-gear": [{ key: "Type", label: "Type" }],
 };
 
 /** "635L" → "450–599L"-style bucket labels, by the first number in the value. */

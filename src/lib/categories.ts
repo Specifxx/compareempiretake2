@@ -33,9 +33,13 @@ const SEARCH_NAMES: Partial<Record<CategoryId, string>> = {
   "robot-vacuums": "Robot Vacuum",
   "desktops": "Desktop PC",
   lego: "LEGO",
+  "hair-care": "Hair Dryer",
+  "small-kitchen": "Kitchen Appliance",
+  bbqs: "BBQ",
+  "coffee-gear": "Coffee Grinder",
 };
 
-export type DepartmentId = "phones-wearables" | "computers" | "pc-parts" | "tv-audio" | "gaming" | "cameras" | "home" | "kitchen" | "whitegoods" | "toys";
+export type DepartmentId = "phones-wearables" | "computers" | "pc-parts" | "tv-audio" | "gaming" | "cameras" | "home" | "kitchen" | "whitegoods" | "toys" | "beauty" | "outdoor";
 
 export const DEPARTMENTS: { id: DepartmentId; name: string }[] = [
   { id: "phones-wearables", name: "Phones & Wearables" },
@@ -48,6 +52,8 @@ export const DEPARTMENTS: { id: DepartmentId; name: string }[] = [
   { id: "kitchen", name: "Kitchen" },
   { id: "whitegoods", name: "Fridges & Laundry" },
   { id: "toys", name: "Toys & LEGO" },
+  { id: "beauty", name: "Hair & Beauty" },
+  { id: "outdoor", name: "BBQs & Outdoor" },
 ];
 
 const c = (id: CategoryId, name: string, noun: string, emoji: string, department: DepartmentId, blurb: string): Category => ({
@@ -91,6 +97,10 @@ export const CATEGORIES: Category[] = [
   c("washing-machines", "Washing Machines & Dryers", "washing machine", "🫧", "whitegoods", "Front and top loaders, dryers and washer-dryers, matched by model code."),
   c("dishwashers", "Dishwashers", "dishwasher", "🍽️", "whitegoods", "Freestanding, built-in and integrated dishwashers, matched by model code."),
   c("lego", "LEGO", "LEGO set", "🧱", "toys", "Every LEGO set matched by its set number, across Australia's toy stores."),
+  c("small-kitchen", "Small Kitchen Appliances", "kitchen appliance", "🥣", "kitchen", "Stand mixers, blenders, kettles, toasters, food processors and microwaves, matched by model code."),
+  c("coffee-gear", "Coffee Grinders & Gear", "coffee grinder", "🫘", "kitchen", "Burr grinders, pour-over kettles, coffee scales and brewers, matched by model."),
+  c("hair-care", "Hair Dryers & Stylers", "hair tool", "💇", "beauty", "Hair dryers, straighteners, curlers, stylers and clippers, matched by model so each colour is its own product."),
+  c("bbqs", "BBQs & Pizza Ovens", "BBQ", "🔥", "outdoor", "Gas, charcoal and pellet BBQs, smokers, griddles and pizza ovens, matched by model."),
 ];
 
 /** Shown in the header's category bar; everything else is one click away in "All categories". */

@@ -5,16 +5,18 @@
  * store is added only when its currency is the region's and its categories hold real product.
  *
  *   npx tsx scripts/probe-auto.ts docs/stores/candidates.txt
+ *   PROBE_CATS="hair-care bbqs" npx tsx scripts/probe-auto.ts docs/stores/candidates.txt   # only these categories
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import type { CategoryId } from "../src/lib/types";
 import { getJson, pool } from "./lib/http";
 import { catalogue, readAuto } from "./scrapers/auto-shopify";
 
-const ALL: CategoryId[] = [
+const ALL: CategoryId[] = process.env.PROBE_CATS ? (process.env.PROBE_CATS.split(/[\s,]+/).filter(Boolean) as CategoryId[]) : [
   "lego", "robot-vacuums", "vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers",
   "soundbars", "headphones", "speakers", "drones", "cameras", "consoles", "smartwatches", "phones", "tablets",
   "laptops", "desktops", "monitors", "tvs", "printers", "routers", "graphics-cards", "cpus", "ssds", "ram", "motherboards",
+  "small-kitchen", "coffee-gear", "hair-care", "bbqs",
 ];
 const CUR: Record<string, string> = { us: "USD", uk: "GBP", au: "AUD" };
 

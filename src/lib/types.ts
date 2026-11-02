@@ -54,7 +54,11 @@ export type CategoryId =
   | "fridges"
   | "washing-machines"
   | "dishwashers"
-  | "lego";
+  | "lego"
+  | "hair-care"
+  | "small-kitchen"
+  | "bbqs"
+  | "coffee-gear";
 
 /** AU stores keep bare ids; US and UK stores are prefixed with their region ("us-bestbuy", "uk-currys"). */
 export type RetailerId =

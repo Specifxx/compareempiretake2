@@ -74,6 +74,44 @@ BRANDS["fisher and paykel"] = "Fisher & Paykel";
 BRANDS["black & decker"] = "Black+Decker";
 BRANDS.kärcher = "Karcher";
 
+/**
+ * Brands of the 2026-11 categories (hair tools, small kitchen, BBQs, coffee gear). Kept apart from BRANDS and read
+ * only for those categories: added to BRANDS they renamed existing coffee-machine and air-fryer products (Wilfa,
+ * Moccamaster, Blackstone), and a product's name is its URL.
+ */
+const BRANDS_2026_11: Record<string, string> = {
+  ...BRANDS,
+  ...Object.fromEntries(
+    [
+    "ghd", "Remington", "BaByliss", "BaBylissPRO", "Cloud Nine", "Revlon", "VS Sassoon", "Braun", "Wahl", "Andis", "Conair",
+    "Bio Ionic", "Laifen", "Silver Bullet", "Mermade", "Lucky Curl", "Hot Tools", "Drybar", "Paul Mitchell", "Parlux",
+    "Bondi Boost", "Tymo", "Glamoriser", "Hairitage", "Rowenta", "BaByliss Pro", "L'Oréal",
+    "Magimix", "Dualit", "Zwilling", "Hamilton Beach", "Bamix", "Thermomix",
+    "Chefman", "Brabantia", "Sodastream", "Breadman", "Nutri Ninja", "Kuvings",
+    "Hurom", "Greenis", "Cuckoo", "Zojirushi", "Instant Brands", "Crock-Pot", "Crockpot", "Lékué",
+    "Weber", "Traeger", "Ziggy", "Everdure", "Masport", "Gasmate", "Beefeater", "Napoleon", "Broil King", "Char-Broil", "Big Green Egg",
+    "Kamado Joe", "Ooni", "Gozney", "Pit Boss", "Z Grills", "Camp Chef", "Blackstone", "Solo Stove", "Jumbuck",
+    "Rinnai", "Heatlie", "Kettle Chef", "Monument Grills", "Nexgrill", "Royal Gourmet", "Recteq", "Green Mountain Grills",
+    "Louisiana Grills", "Oklahoma Joe's", "Dyna-Glo", "Masterbuilt", "Landmann", "Tepro", "Boss Grill", "Lion Premium Grills",
+    "Baratza", "Comandante", "Timemore", "Acaia", "Hario", "1Zpresso", "Kingrinder", "Mahlkönig",
+    "Mazzer", "Wilfa", "Bodum", "AeroPress", "Chemex", "Bialetti", "Kalita", "Bonavita", "Wacaco",
+    "Option-O", "Fiorenzato", "Ceado", "Anfim", "Bezzera", "Ascaso", "La Marzocco", "Profitec", "Lelit",
+    "Moccamaster", "Technivorm", "Espro", "Rhinowares", "Barista & Co", "Kinto", "Felicita", "Brewista",
+    ].map((b) => [b.toLowerCase(), b]),
+  ),
+  ghd: "ghd",
+  babylisspro: "BaByliss",
+  "babyliss pro": "BaByliss",
+  kitchenaid: "KitchenAid",
+  crockpot: "Crock-Pot",
+  "nutri ninja": "Ninja",
+  "instant brands": "Instant",
+  technivorm: "Moccamaster",
+  mahlkonig: "Mahlkönig",
+  aeropress: "AeroPress",
+};
+const NEW_CATEGORIES = new Set<CategoryId>(["hair-care", "small-kitchen", "bbqs", "coffee-gear"]);
+
 /** Sub-brands that imply the maker. */
 const IMPLIED: [RegExp, string][] = [
   [/\b(ipad|macbook|imac|studio display)\b/i, "Apple"],
@@ -115,13 +153,13 @@ export function isProduct(title: string): boolean {
   return !ACCESSORY.test(title) && !SECOND_HAND.test(title);
 }
 
-function brandOf(o: RawOffer, title: string): string | undefined {
+function brandOf(o: RawOffer, title: string, table: Record<string, string> = BRANDS): string | undefined {
   const fromStore = o.brand?.trim().toLowerCase();
-  if (fromStore && BRANDS[fromStore]) return BRANDS[fromStore];
+  if (fromStore && table[fromStore]) return table[fromStore];
   const words = title.toLowerCase().split(/\s+/);
   for (const n of [3, 2, 1]) {
     const w = words.slice(0, n).join(" ");
-    if (BRANDS[w]) return BRANDS[w];
+    if (table[w]) return table[w];
   }
   for (const [re, b] of IMPLIED) if (re.test(title)) return b;
   return fromStore ? o.brand!.trim().replace(/\b\w/g, (c) => c.toUpperCase()) : undefined;
@@ -349,7 +387,7 @@ export function parseProduct(o: RawOffer, category: CategoryId): Parsed | null {
   if (MORE_CATEGORIES.includes(category)) {
     // These categories legitimately contain words the first set treats as accessories ("Case", "Dock", "Soundbar").
     if (SECOND_HAND.test(o.title) || isMoreAccessory(category, o.title)) return null;
-    return parseMore(o, category, brandOf);
+    return parseMore(o, category, NEW_CATEGORIES.has(category) ? (x, t) => brandOf(x, t, BRANDS_2026_11) : brandOf);
   }
   if (!isProduct(o.title)) return null;
   switch (category) {
