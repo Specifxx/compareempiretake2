@@ -934,3 +934,24 @@ PICKED a region (header switcher or the notice's buttons, kept in localStorage) 
 they opened and `RegionNotice` offers "Switch to <region> prices", linking the page's own hreflang alternate (their
 region's home when the page has none). The owner's 2026-11-01 rule still holds: the visitor's region is the default
 everywhere it is chosen without a URL (neutral pages, the switcher), and the root stays the US home.
+
+## 2026-11-02 — At most one production build every 12 hours, and no branch but production deploys
+
+**Why.** The owner capped Vercel spend at $5–6 a day across every site. 1 November cost $11.82 (normally
+$2–4), and Build CPU was the largest line ($4.26), followed by CDN requests and ISR writes, which every
+build multiplies (a deploy empties the page cache, so the next crawl re-renders and re-writes every page).
+The `[deploy]` gate itself held; its premise did not: sessions landed 7–14 `[deploy]` commits a day per site
+(manual "release now" runs and `[deploy]` in merge subjects), RiftCompare, OP, MTG and DexCompare alike.
+Compare Empire's site built on every push to its production branch (84 commits that day) and CamCompare on
+every three-hourly price commit, because neither had the gate.
+
+**What.**
+- `scripts/vercel-ignore-build.sh` skips a production `[deploy]` commit when the last production
+  deployment (`VERCEL_GIT_PREVIOUS_SHA`, set by Vercel in that step) is under 12 hours old; the commit
+  rides the next release. `[urgent]` in the SUBJECT overrides it, and only when the owner says a release
+  cannot wait. An unset or unreadable last deployment builds (fail open). `tests/deploy-gap.test.ts` pins it,
+  and the file is the same in every Compare Empire repo.
+- `vercel.json` `git.deploymentEnabled` starts with `"**": false` and enables only the production branch
+  (Vercel: when a branch matches several rules, any `true` wins). No preview is built for any branch or pull
+  request, `[preview]` included; the older per-branch `false` entries stay for orphan commits' own copies.
+- So "push to prod" means land on the production branch; the release reaches visitors within a day.
