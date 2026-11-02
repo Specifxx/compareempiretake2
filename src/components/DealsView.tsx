@@ -5,9 +5,10 @@ import type { CategoryId } from "@/lib/types";
 import { REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { DealCard } from "./DealCard";
 import { NewsletterSignup } from "./NewsletterSignup";
+import { blackFriday as bfDate, cyberMonday, longDate, seasonYear } from "@/lib/black-friday";
 
 /** The deals list for every category, or one. */
-export function DealsView({ category, region = "au" }: { category?: CategoryId; region?: RegionId }) {
+export function DealsView({ category, region = "au", blackFriday = false }: { category?: CategoryId; region?: RegionId; blackFriday?: boolean }) {
   const deals = getDeals(category ? 60 : 90, category, region);
   const { updatedAt } = getCatalog(undefined, region);
   const R = REGIONS[region];
@@ -18,7 +19,8 @@ export function DealsView({ category, region = "au" }: { category?: CategoryId; 
   return (
     <div className="container-x pt-10">
       <div className="max-w-2xl">
-        <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{c ? `${c.name} deals` : "Today's deals"}</h1>
+        <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{blackFriday ? `Black Friday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : c ? `${c.name} deals` : "Today's deals"}</h1>
+        {blackFriday && <BlackFridayDates today={updatedAt.slice(0, 10)} />}
         <p className="mt-2 text-ink-mute">
           Every deal here is worked out from real prices we checked on{" "}
           {new Date(updatedAt).toLocaleDateString(R.locale, { timeZone: R.timeZone, weekday: "long", day: "numeric", month: "long" })} — no sponsored spots, no
@@ -64,5 +66,17 @@ function Legend({ color, label }: { color: string; label: string }) {
     <span className="inline-flex items-center gap-2 rounded-full border border-line bg-bg-card px-3 py-1.5">
       <span className={`h-2 w-2 rounded-full ${color}`} /> {label}
     </span>
+  );
+}
+
+/** The Black Friday page's dates line (DECISIONS.md, "Black Friday page", 2026-11-02). */
+function BlackFridayDates({ today }: { today: string }) {
+  const y = seasonYear(today);
+  const bf = bfDate(y);
+  return (
+    <p className="mt-2 text-ink-mute">
+      Black Friday is {longDate(bf)} and Cyber Monday is {longDate(cyberMonday(y))} {y}.{today < bf ? " Many stores start their sales earlier." : ""} This page
+      updates with every price check through the sales, so bookmark it. We only see what a store asks when we read its prices: check the price on its page before you buy.
+    </p>
   );
 }

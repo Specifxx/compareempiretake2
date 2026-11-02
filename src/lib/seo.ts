@@ -34,7 +34,7 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
     {
       id: "pages",
       entries: () =>
-        [HOME_PATH.au, "/deals", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/contact", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), lastmod, priority: p === HOME_PATH.au ? 1 : 0.6 })),
+        [HOME_PATH.au, "/deals", "/black-friday", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/contact", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), lastmod, priority: p === HOME_PATH.au ? 1 : 0.6 })),
     },
     {
       id: "categories",
@@ -62,7 +62,7 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
       {
         id: `${r}-pages`,
         entries: () => [
-          ...["/", "/deals", "/stores", "/browse"].map((p) => ({ loc: abs(withRegion(p, r)), lastmod: lm, priority: p === "/" ? 1 : 0.6 })),
+          ...["/", "/deals", "/black-friday", "/stores", "/browse"].map((p) => ({ loc: abs(withRegion(p, r)), lastmod: lm, priority: p === "/" ? 1 : 0.6 })),
           ...activeCategories(r).flatMap((c) => [
             { loc: abs(withRegion(`/${c.id}`, r)), lastmod: lm, priority: 0.9 },
             { loc: abs(withRegion(`/browse/${c.id}`, r)), lastmod: lm, priority: 0.5 },
