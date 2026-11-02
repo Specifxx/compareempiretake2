@@ -21,7 +21,7 @@ export function Footer() {
           year: Number(new Date(updatedAt).toLocaleDateString("en-CA", { timeZone: R.timeZone }).slice(0, 4)),
           shop:
             region === "au"
-              ? [["All phones", "/phones"], ["Today's deals", "/deals"], ["Black Friday deals", "/black-friday"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"], ["Browse all products", "/browse"]]
+              ? [["All phones", "/phones"], ["Today's deals", "/deals"], ["Black Friday deals", "/black-friday"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"], ["Browse all products", "/browse"], ["Free price widgets", "/embed"]]
               : [["All phones", to("/phones")], ["Today's deals", to("/deals")], ["Black Friday deals", to("/black-friday")], ["Stores we check", to("/stores")], ["Browse all products", to("/browse")]],
           categories: activeCategories(region).map((c) => [c.name, categoryHref(c.id, region)]),
         },

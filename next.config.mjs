@@ -29,7 +29,7 @@ const nextConfig = {
   // Keys are picomatch globs over route names (brackets escaped) that also match inside a name: the first covers
   // /[category]/[slug], /us/[category]/[slug] and /uk/[category]/[slug]; "/admin" also catches the small /api/admin routes.
   // The /api/grid lists are prerendered with the deploy and served as files, so they trace nothing.
-  outputFileTracingIncludes: { "/\\[category\\]/\\[slug\\]": RUNTIME_DATA, "/api/products": RUNTIME_DATA, "/admin": RUNTIME_DATA },
+  outputFileTracingIncludes: { "/\\[category\\]/\\[slug\\]": RUNTIME_DATA, "/api/products": RUNTIME_DATA, "/admin": RUNTIME_DATA, "/embed/price": RUNTIME_DATA },
   outputFileTracingExcludes: { "/**": ["./data/**/raw/**", "./data/**/history/**", "./data/**/archive/**"] },
   // One model, one page (Search Console, 2026-10-27): the iPad mini and Surface Go 3 pages the catalog split by
   // size, generation-vs-chip naming or a stray "with" (src/lib/match.ts parseTablet) now redirect to the merged page.
