@@ -6,7 +6,6 @@ import { search } from "@/lib/search";
 import { useSearchIndex } from "@/lib/use-search-index";
 import { SearchIcon } from "./icons";
 import { useRegionKit } from "@/lib/use-region";
-import { AMAZON_REL, amazonLink } from "@/lib/amazon";
 
 export interface SearchEntry {
   kind: "phone" | "guide" | "vs" | "category";
@@ -160,21 +159,8 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
               See all results for “{q.trim()}” →
             </button>
           )}
-          {q.trim() && amazonLink(region, q.trim()) && (
-            <a
-              href={amazonLink(region, q.trim(), "search")!}
-              target="_blank"
-              rel={AMAZON_REL}
-              data-buy="amazon"
-              data-buy-kind="amazon-search"
-              data-amazon="search"
-              data-buy-product={q.trim()}
-              className="flex items-center justify-between gap-3 border-t border-line px-4 py-2.5 text-sm hover:bg-bg-sunk"
-            >
-              <span>Check price on Amazon for “{q.trim()}” ↗</span>
-              <span className="text-[10px] text-ink-mute">Ad · affiliate link</span>
-            </a>
-          )}
+          {/* No Amazon search for whatever was typed (2026-11-02): Amazon's Operating Agreement wants links to specific
+              products we chose, never inside a pop-up; product pages carry the Amazon row. */}
         </div>
       )}
     </div>

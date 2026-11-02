@@ -268,7 +268,8 @@ export function PhoneOffers({
 export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest, compact = false }: { phone: Phone; variantQuery: string; product: string; cheapest?: number; compact?: boolean }) {
   const { $, R, region } = useRegionKit();
   const markets = marketplacesFor(region);
-  const amazonHref = amazonLink(region, mq, compact ? "quickview" : "product");
+  // Never in the quick view (2026-11-02): Amazon's Operating Agreement allows no Amazon link in a pop-up window.
+  const amazonHref = compact ? null : amazonLink(region, mq, "product");
   const amazonName = amazonStore(region)?.name;
   const ebay = markets.find((m) => m.id === "ebay")!;
   const cid = `p-${phone.category}-${phone.slug}`;
@@ -285,7 +286,7 @@ export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest,
       ) : (
         <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} adjective={R.adjective} />
       )}
-      {amazonHref && <AmazonRow query={mq} product={product} placement={compact ? "quickview" : "product"} href={amazonHref} name={amazonName} />}
+      {amazonHref && <AmazonRow query={mq} product={product} placement="product" href={amazonHref} name={amazonName} />}
       {compact ? null : (
       <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>

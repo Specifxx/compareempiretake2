@@ -11,15 +11,15 @@ type Props = { query: string; product?: string; placement: string };
 const track = (p: Props) => ({ "data-buy": "amazon", "data-buy-kind": `amazon-${p.placement}`, "data-buy-product": p.product, "data-amazon": p.placement });
 
 /**
- * A row shaped like the store rows on a product page, pinned above them and tinted Amazon orange so it
- * is never lost. `href`/`name` override the AU link for the US and UK, which have no tag yet.
+ * A row shaped like the store rows on a product page, pinned above them. Never in Amazon's own colours
+ * (2026-11-02: the Associates Operating Agreement forbids styling that could pass for Amazon's site). `href`/`name` override the AU link for the US and UK, which have no tag yet.
  */
 export function AmazonRow({ href, name = "Amazon AU", ...p }: Props & { href?: string; name?: string }) {
   return (
     <a href={href ?? amazonAuLink(p.query)} target="_blank" rel={AMAZON_REL} {...track(p)} className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2 font-semibold">
-          <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-[#FF9900] ring-1 ring-black/10" /> {name}
+          {name}
           <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
         </div>
         <div className="mt-1 text-xs text-ink-soft">New, sold by Amazon and marketplace sellers. We can&apos;t show Amazon&apos;s price here.</div>
@@ -35,7 +35,7 @@ export function AmazonRow({ href, name = "Amazon AU", ...p }: Props & { href?: s
 /** A compact button for cards and tables. */
 export function AmazonButton({ className = "", ...p }: Props & { className?: string }) {
   return (
-    <a href={amazonAuLink(p.query)} target="_blank" rel={AMAZON_REL} {...track(p)} className={`inline-flex items-center justify-center gap-1 rounded-xl border border-line bg-bg-card px-3 py-2 text-xs font-semibold transition hover:border-[#FF9900] hover:text-ink ${className}`}>
+    <a href={amazonAuLink(p.query)} target="_blank" rel={AMAZON_REL} {...track(p)} className={`inline-flex items-center justify-center gap-1 rounded-xl border border-line bg-bg-card px-3 py-2 text-xs font-semibold transition hover:border-brand/40 hover:text-ink ${className}`}>
       Check price on Amazon <ExternalIcon className="h-3 w-3" />
     </a>
   );
