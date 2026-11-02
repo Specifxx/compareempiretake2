@@ -12,7 +12,7 @@ const HAS_UA = [{ type: "header", key: "user-agent", value: ".+" }];
 const NOT_RSC = [{ type: "header", key: "rsc" }];
 // What the routes that render on request (product pages, /api/products and /admin, through the root layout) read at
 // runtime (src/lib/catalog.ts). Never the scrape inputs, history or archive.
-const RUNTIME_DATA = ["./data/**/catalog.json", "./data/**/series.json", "./data/**/store-series.json", "./data/**/ebay.json"];
+const RUNTIME_DATA = ["./data/**/catalog.json", "./data/**/series.json", "./data/**/store-series.json", "./data/**/ebay.json", "./data/family/family-cluster.json"];
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

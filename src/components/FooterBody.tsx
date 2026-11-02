@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { CONTACT_EMAIL, FAMILY_SITES } from "@/lib/site";
+import { CONTACT_EMAIL } from "@/lib/site";
+import { footerSisters } from "@/lib/family-network";
 import { AMAZON_DISCLOSURE } from "@/lib/amazon";
 import { REGIONS, type RegionId } from "@/lib/region";
 import { useRegion } from "@/lib/use-region";
@@ -35,19 +36,16 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
           links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Community forum (beta)", "/forum"], ["Retailers we check", region === "au" ? "/about#retailers" : `${R.prefix}/stores`], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["Suggest a store", "/contact#suggest"], ["How we make money", "/disclosure"], ["Affiliate disclosure", "/affiliate-disclosure"], ["Privacy", "/privacy"]]}
         />
       </div>
-      <nav aria-label="The Compare Empire family" className="border-t border-line">
-        <div className="container-x py-5 text-xs text-ink-mute">
-          <div className="eyebrow mb-2">More price comparison from Compare Empire</div>
-          <ul className="flex flex-wrap gap-x-5 gap-y-1">
-            {FAMILY_SITES.map((s) => (
-              <li key={s.url}>
-                <a href={s.url} target="_blank" rel="noopener" className="font-semibold text-ink-soft hover:text-ink">
-                  {s.anchor}
-                </a>{" "}
-                on {s.name}
-              </li>
-            ))}
-          </ul>
+      {/* One short line (owner, 2026-11-02: the old list was "convoluted"): our tech sister, then the page that lists every site
+          (DECISIONS.md "Sites that grow each other"). */}
+      <nav aria-label="Compare Empire sites" className="border-t border-line">
+        <div className="container-x py-4 text-xs text-ink-mute">
+          Sister site:{" "}
+          {footerSisters("empire").map((s, i) => (
+            <span key={s.id}>{i ? " · " : ""}<a href={s.url} target="_blank" rel="noopener" className="font-semibold text-ink-soft hover:text-ink" title={s.label}>{s.name}</a></span>
+          ))}
+          {" · "}
+          <Link href="/network" className="font-semibold text-ink-soft hover:text-ink">All Compare Empire sites →</Link>
         </div>
       </nav>
       <div className="border-t border-line">
