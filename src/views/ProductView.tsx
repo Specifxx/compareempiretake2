@@ -16,6 +16,7 @@ import { SITE } from "@/lib/site";
 import { ogImage } from "@/lib/og";
 import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { camCompareFor } from "@/lib/family";
 
 export type ProductParams = Promise<{ category: string; slug: string }>;
 const load = async (params: ProductParams, region: RegionId) => {
@@ -101,6 +102,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
   const vs = phone.category === "phones" && region === "au" ? getVsPairs().filter((v) => v.a.slug === phone.slug || v.b.slug === phone.slug) : [];
   const cat = categoryById(phone.category)!;
   const updatedAt = regionUpdatedAt(region);
+  const cam = phone.category === "cameras" ? camCompareFor(phone.name) : null;
   const R = REGIONS[region];
   const s = phone.specs;
   const specs: [string, string | undefined][] =
@@ -218,6 +220,12 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">About the {phone.model}</h2>
           <div className="card space-y-3 p-5 text-sm leading-relaxed text-ink-soft">
             {phone.blurb ? <p>{phone.blurb}</p> : <p>{phone.name} is sold new by {phone.retailerCount} of the {R.adjective} retailers we check.</p>}
+            {cam && (
+              // Hand-off to the camera specialist (DECISIONS.md "Sites that grow each other"): the same model only (lib/family-network.ts sameProduct).
+              <p>
+                Comparing cameras? <a href={cam.url} rel="noopener" className="font-semibold text-ink hover:underline">The {phone.model} on CamCompare</a> has its full specs, used and refurbished prices, and the cameras buyers compare it with.
+              </p>
+            )}
             <p>
               We found <b className="text-ink">{phone.offerCount} listings</b> for this phone across{" "}
               <b className="text-ink">{phone.retailerCount} {phone.retailerCount === 1 ? "store" : "stores"}</b>, in {phone.variants.length}{" "}

@@ -50,6 +50,11 @@ jobs:
         run: |
           git fetch --depth=1 origin demand && git show FETCH_HEAD:gsc-pages.json > "$EBAY_DEMAND_FILE" || echo "No demand branch yet"
           npx tsx scripts/ebay-prices.ts
+      # The Compare Empire network (scripts/family-sync.ts): our best deals and camera pages for CamCompare,
+      # and CamCompare's feed for our deals pages and camera hand-offs. Never fatal.
+      - name: Family feed
+        continue-on-error: true
+        run: npx tsx --conditions=react-server scripts/family-sync.ts
       - name: Commit data
         run: |
           git config user.name "compare-empire-bot"

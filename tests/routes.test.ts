@@ -87,7 +87,8 @@ test("routes rendered on request trace the catalogues, never raw, history or arc
   // /api/products is a function too (the compare table and saved list); the /api/grid lists are static and trace nothing.
   const runtime = [...PRODUCT_PAGES.map((f) => f.replace(/^src\//, "").replace(/\.tsx$/, "")), "app/api/products/route", "app/admin/page", "app/embed/price/route"];
   for (const e of runtime) assert.ok(entries.includes(e), `${e} exists`);
-  const DATA = ["catalog.json", "series.json", "store-series.json", "ebay.json"].map((f) => `./data/**/${f}`);
+  // family-cluster.json: CamCompare's camera pages, for the product page's hand-off (lib/family.ts).
+  const DATA = [...["catalog.json", "series.json", "store-series.json", "ebay.json"].map((f) => `./data/**/${f}`), "./data/family/family-cluster.json"];
   const EXCLUDED = ["./data/**/archive/**", "./data/**/history/**", "./data/**/raw/**"];
   assert.ok(entries.length > 20, `found ${entries.length} app entries`);
   for (const e of entries) {

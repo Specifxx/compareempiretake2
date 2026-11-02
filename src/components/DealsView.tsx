@@ -4,6 +4,7 @@ import { categoryById } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
 import { REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { DealCard } from "./DealCard";
+import { FamilyCluster } from "./FamilyCluster";
 import { NewsletterSignup } from "./NewsletterSignup";
 import { blackFriday as bfDate, cyberMonday, longDate, seasonYear } from "@/lib/black-friday";
 
@@ -56,6 +57,8 @@ export function DealsView({ category, region = "au", blackFriday = false }: { ca
           <p className="text-sm text-ink-mute">No deals worth calling one today. That&apos;s a result too: prices are where they usually are.</p>
         )}
       </section>
+      {/* One block per page (DECISIONS.md "Sites that grow each other"): the tech sister's camera deals, on the all-category list. */}
+      {!category && <FamilyCluster region={region} />}
       <div className="mt-12"><NewsletterSignup /></div>
     </div>
   );
