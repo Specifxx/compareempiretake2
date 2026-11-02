@@ -61,7 +61,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
-          git commit -m "data: daily prices $(TZ=Australia/Sydney date +%F)"
+          git commit -m "data: daily prices $(TZ=Australia/Sydney date +%F) [deploy]"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
       - name: Email price-drop alerts
