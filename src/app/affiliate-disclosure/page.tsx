@@ -18,8 +18,9 @@ export default function AffiliateDisclosurePage() {
         <p className="rounded-2xl border border-line bg-bg-card p-5 font-semibold text-ink">{AMAZON_DISCLOSURE}</p>
         <h2>Amazon</h2>
         <p>
-          Compare Empire is a participant in the Amazon Services LLC Associates Program for Amazon Australia (amazon.com.au). Links marked
-          &quot;Check price on Amazon&quot; go straight to amazon.com.au with our tracking tag. If you buy something after clicking one, Amazon may
+          Compare Empire is a participant in the Amazon Associates Programs for Amazon Australia (amazon.com.au) and Amazon US
+          (amazon.com). Links marked &quot;Check price on Amazon&quot; go straight to that Amazon store with our tracking tag. If you buy
+          something after clicking one, Amazon may
           pay us a commission. You pay the same price.
         </p>
         <p>
