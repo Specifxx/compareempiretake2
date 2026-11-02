@@ -51,7 +51,7 @@ export const regionOf = (pathname: string): RegionId => {
  * Pages that belong to no region (about, legal, forum, reviews…). Their server HTML is built for the US, the default,
  * and the browser moves the header and footer to the visitor's own region (`useRegion`). They never redirect.
  */
-const NEUTRAL = new Set(["about", "contact", "privacy", "disclosure", "affiliate-disclosure", "reviews", "forum", "saved", "alerts", "admin", "embed"]);
+const NEUTRAL = new Set(["about", "contact", "privacy", "disclosure", "affiliate-disclosure", "reviews", "forum", "saved", "alerts", "admin", "embed", "price-report"]);
 export const isNeutralPath = (pathname: string) => NEUTRAL.has(pathname.split("/")[1] ?? "");
 
 /** The region a browser's time zone points at; anything we don't cover is the US (owner, 2026-11-01). */

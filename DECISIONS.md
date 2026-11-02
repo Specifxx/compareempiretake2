@@ -794,3 +794,12 @@ category link with no iframe. The daily outreach offers these instead of asking 
 sets its own day-long `Vercel-CDN-Cache-Control` and `frame-ancestors *` (only this response can be framed; nothing in
 `next.config.mjs` changed except the trace), and is noindex. A region with no data throws instead of caching a 404.
 `/embed` is a neutral page (header follows the visitor's region) built with the deploy.
+
+## 2026-11-02 — Self-updating price report
+
+`/price-report` is one neutral page, kept at one URL and built with each deploy from that day's catalogue: per region,
+stores and products priced, how often the cheapest store is 10%+ under the dearest for the same model and size, and
+that share per category. It leads with the 10% share, not the median gap, because many products sell at one list
+price everywhere (the US median is 0%), and the share is the honest "does comparing pay" number. It is the citable
+asset the daily outreach offers tech writers (passive-growth plan, owner 2026-11-02). Pure numbers in
+`src/lib/price-report.ts` (tested): in-stock outright prices only, one gap per product from the variant most stores sell.
