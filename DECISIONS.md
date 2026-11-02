@@ -849,3 +849,14 @@ so hair care, small kitchen, BBQs and coffee gear come here as categories, in ev
   kitchen 11 (plus JB Hi-Fi, The Good Guys and Betta); UK 14 / 36 / 6 / 18; US 12 / 17 / 8 / 16. Hair tools and
   BBQs are the thin ones; the next survey should target salon suppliers that show VAT-inclusive prices and BBQ
   specialists.
+
+## 2026-11-02 — Share buttons and shared saved lists
+
+Word of mouth (owner, 2026-11-02). The product page's Share button now names the real gap (cheapest and dearest
+in-stock outright price from two different stores, one currency) and the quick view has one too: the phone's share
+sheet, else copy the link, no pop-up, no reward (`src/components/ShareButton.tsx`). The saved list can be shared:
+`/saved?l=/phones/a,/us/tvs/b` carries up to 50 product paths in the link, nothing is stored, the shared view is
+read-only with "Keep this list", and each item says its cheapest store (`bestStore`, added by `/api/products` only, so
+no page grows). `/saved` stays noindex and out of robots. Every shared link carries `utm_source=share&utm_medium=<product|list>`
+(`src/lib/share-link.ts`, tested); the button sends a Vercel `share` event and `ShareArrival` one `share_visit` per
+tab, which RiftCompare's weekly growth report counts. No new function and no per-product share image.

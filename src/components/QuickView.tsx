@@ -11,6 +11,9 @@ import type { Phone } from "@/lib/types";
 import { parseHref } from "@/lib/product-refs";
 import { useRegionKit } from "@/lib/use-region";
 import { defaultVariant, groupByRetailer, OutrightRow, PinnedMarketplaces } from "./PhoneOffers";
+import { ShareButton } from "./ShareButton";
+import { shareText } from "@/lib/share-link";
+import { RETAILERS } from "@/lib/retailers";
 
 interface Head {
   href: string;
@@ -180,6 +183,18 @@ function Prices({ phone, href, vid, setVid }: { phone: Phone; href: string; vid:
           Also on a plan at {plans} {plans === 1 ? "carrier" : "carriers"}: the full page compares the repayments.
         </p>
       )}
+      <div className="mt-3">
+        <ShareButton
+          title={phone.name}
+          path={`${href}?v=${variant.id}`}
+          text={shareText(
+            `${phone.name}${phone.variants.length > 1 || variant.storageGb ? ` ${variant.label}` : ""}`,
+            rows.filter((r) => r.best.inStock).map((r) => ({ price: r.best.price, store: RETAILERS[r.best.retailer].name })),
+            $,
+          )}
+          className="btn-ghost text-sm"
+        />
+      </div>
     </>
   );
 }
