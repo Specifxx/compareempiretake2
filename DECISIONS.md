@@ -784,6 +784,36 @@ Sitemap tier 1 with the other hubs; footer links in every region. Never a "was" 
 "ends soon" or an invented sale. Dates are pure (`src/lib/black-friday.ts`, tested). Part of the passive-growth plan
 (owner, 2026-11-02: no daily Reddit posts).
 
+## 2026-11-02 — Free price widgets
+
+`/embed` lists two free things a reviewer, blogger or forum can keep: a live price badge (`/embed/price?p=<product
+address>`, an iframe plus one plain text link to the product page, the part search engines credit) and a plain-HTML
+category link with no iframe. The daily outreach offers these instead of asking for a link (passive-growth plan, owner
+2026-11-02). The badge is a route handler with no dynamic segment (the address is the `p` query), so the "every
+[segment] is prerendered" rule doesn't apply and it renders on request like a product page: it traces the catalogues,
+sets its own day-long `Vercel-CDN-Cache-Control` and `frame-ancestors *` (only this response can be framed; nothing in
+`next.config.mjs` changed except the trace), and is noindex. A region with no data throws instead of caching a 404.
+`/embed` is a neutral page (header follows the visitor's region) built with the deploy.
+
+## 2026-11-02 — Self-updating price report
+
+`/price-report` is one neutral page, kept at one URL and built with each deploy from that day's catalogue: per region,
+stores and products priced, how often the cheapest store is 10%+ under the dearest for the same model and size, and
+that share per category. It leads with the 10% share, not the median gap, because many products sell at one list
+price everywhere (the US median is 0%), and the share is the honest "does comparing pay" number. It is the citable
+asset the daily outreach offers tech writers (passive-growth plan, owner 2026-11-02). Pure numbers in
+`src/lib/price-report.ts` (tested): in-stock outright prices only, one gap per product from the variant most stores sell.
+
+## 2026-11-02 — Seasonal sale pages
+
+`/boxing-day`, `/january-sales` and `/lunar-new-year`, with `/uk/…` and `/us/…` (owner-approved growth plan,
+2026-11-02): one URL per region, kept every year like `/black-friday`, built weeks ahead so they are indexed
+before the day. Each is the region's deals page under the event's heading (`DealsView` with `sale`). The intro
+states where the day is a sale day as a fact, never as the page's region. Dates, the year a page is about (it
+rolls over a week after the event) and the intro are pure in `src/lib/sale-seasons.ts`
+(`tests/sale-seasons.test.ts`); Lunar New Year is a published-date table to 2040 (6 February 2027). Footer and
+sitemap. Never a "was" price, a countdown or an invented sale.
+
 ## 2026-11-02 — Four new categories: small kitchen, coffee gear, hair tools, BBQs
 
 From the approved consolidation plan (owner, 2026-11-02): Compare Empire is the general store for broad categories,

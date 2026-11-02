@@ -6,9 +6,10 @@ import { REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { DealCard } from "./DealCard";
 import { NewsletterSignup } from "./NewsletterSignup";
 import { blackFriday as bfDate, cyberMonday, longDate, seasonYear } from "@/lib/black-friday";
+import { saleHeading, saleIntro, saleYear, type SaleSlug } from "@/lib/sale-seasons";
 
 /** The deals list for every category, or one. */
-export function DealsView({ category, region = "au", blackFriday = false }: { category?: CategoryId; region?: RegionId; blackFriday?: boolean }) {
+export function DealsView({ category, region = "au", blackFriday = false, sale }: { category?: CategoryId; region?: RegionId; blackFriday?: boolean; sale?: SaleSlug }) {
   const deals = getDeals(category ? 60 : 90, category, region);
   const { updatedAt } = getCatalog(undefined, region);
   const R = REGIONS[region];
@@ -19,8 +20,8 @@ export function DealsView({ category, region = "au", blackFriday = false }: { ca
   return (
     <div className="container-x pt-10">
       <div className="max-w-2xl">
-        <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{blackFriday ? `Black Friday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : c ? `${c.name} deals` : "Today's deals"}</h1>
-        {blackFriday && <BlackFridayDates today={updatedAt.slice(0, 10)} />}
+        <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{sale ? `${saleHeading(sale, saleYear(sale, updatedAt.slice(0, 10))).replace(/ deals /, " tech deals ")}` : blackFriday ? `Black Friday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : c ? `${c.name} deals` : "Today's deals"}</h1>
+        {sale ? <SaleDates slug={sale} today={updatedAt.slice(0, 10)} place={/^United /.test(R.name) ? `the ${R.name}` : R.name} /> : blackFriday && <BlackFridayDates today={updatedAt.slice(0, 10)} />}
         <p className="mt-2 text-ink-mute">
           Every deal here is worked out from real prices we checked on{" "}
           {new Date(updatedAt).toLocaleDateString(R.locale, { timeZone: R.timeZone, weekday: "long", day: "numeric", month: "long" })} — no sponsored spots, no
@@ -77,6 +78,16 @@ function BlackFridayDates({ today }: { today: string }) {
     <p className="mt-2 text-ink-mute">
       Black Friday is {longDate(bf)} and Cyber Monday is {longDate(cyberMonday(y))} {y}.{today < bf ? " Many stores start their sales earlier." : ""} This page
       updates with every price check through the sales, so bookmark it. We only see what a store asks when we read its prices: check the price on its page before you buy.
+    </p>
+  );
+}
+
+/** The seasonal sale pages' opening line (DECISIONS.md, "Seasonal sale pages", 2026-11-02). */
+function SaleDates({ slug, today, place }: { slug: SaleSlug; today: string; place: string }) {
+  return (
+    <p className="mt-2 text-ink-mute">
+      {saleIntro(slug, saleYear(slug, today), place)} This page updates with every price check through the sales, so bookmark it. We only see what a store asks
+      when we read its prices: check the price on its page before you buy.
     </p>
   );
 }
