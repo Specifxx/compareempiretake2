@@ -23,6 +23,19 @@ export const categoryParams = (region: RegionId) => activeCategories(region).map
 const inRegion = (region: RegionId) => (region === "au" ? "Australia" : region === "us" ? "the US" : "the UK");
 /** Search Console (2026-10-29): category pages rank for "<category> price comparison" (US robot vacuums: 7,600
  *  impressions at position 6, no clicks) under a title that never said it. */
+/** The three brands with the most products, in that order. */
+function topBrands(brands: (string | undefined)[]): string[] {
+  const n = new Map<string, number>();
+  for (const b of brands) if (b) n.set(b, (n.get(b) ?? 0) + 1);
+  return [...n].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([b]) => b);
+}
+
+/** A search snippet that answers the click: how many, which brands, how many stores, the cheapest today. */
+export function categoryDescription(d: { count: number; noun: string; brands: string[]; stores: number; adjective: string; from: string | null }): string {
+  const brands = d.brands.length ? ` from ${d.brands.join(", ")} and more` : "";
+  return `Compare ${d.count.toLocaleString("en-AU")} ${d.noun}${brands} across ${d.stores} ${d.adjective} stores${d.from ? `, from ${d.from} today` : ""}. See the cheapest store for each model, with prices checked daily and full price history.`;
+}
+
 const placeName = (region: RegionId) => (region === "au" ? "Australia" : region === "us" ? "US" : "UK");
 
 export async function categoryMetadata(params: CategoryParams, region: RegionId): Promise<Metadata> {
@@ -35,18 +48,26 @@ export async function categoryMetadata(params: CategoryParams, region: RegionId)
   const count = getProducts(c.id as CategoryId, region).length;
   const what = c.searchName ?? c.name;
   const place = placeName(region);
-  // Longest first, each kept under ~60 characters so Google shows the whole thing.
+  // Search Console (25–31 Oct): 54K impressions at 0.1% CTR, "router price comparison" 2,286 impressions and
+  // 1 click. The title says the query, the month (a dated title reads as current; pages rebuild daily) and the
+  // store count; longest first, each kept under ~60 characters so Google shows the whole thing.
+  const month = new Date().toLocaleString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" });
   const title =
     [
+      `${what} Price Comparison ${place} (${month}): ${stores.length} Stores`,
       `${what} Price Comparison ${place}: ${stores.length} Stores Compared`,
       `${what} Price Comparison ${place}: ${stores.length} Stores`,
       `${what} Price Comparison ${place}`,
     ].find((t) => t.length <= 60) ?? `${what} Price Comparison ${place}`;
   const low = products.length ? Math.min(...products.map((p) => p.bestPrice)) : 0;
-  const description = `${what} price comparison: ${count.toLocaleString("en-AU")} ${c.name.toLowerCase()} across ${stores.length} ${R.adjective} stores (${stores
-    .slice(0, 4)
-    .map((r) => r.name)
-    .join(", ")})${low ? `, from ${money(low, region)} today` : ""}. ${c.blurb} Price history on every product.`;
+  const description = categoryDescription({
+    count,
+    noun: c.name.toLowerCase(),
+    brands: topBrands(getProducts(c.id as CategoryId, region).map((p) => p.brand)),
+    stores: stores.length,
+    adjective: R.adjective,
+    from: low ? money(low, region) : null,
+  });
   return {
     title: { absolute: title },
     description,
