@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-appliancesuperstore",
   base: "https://www.appliancesuperstore.co.uk",
   exclude: /vacuum drawer|\bhob\b|hood|\boven\b|warming drawer/i,
-  cats: ["fridges", "dishwashers", "washing-machines", "coffee-machines", "bbqs", "small-kitchen"],
+  cats: ["fridges", "dishwashers", "washing-machines", "coffee-machines"],
 });

@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "uk-rdo",
   base: "https://www.rdo.co.uk",
   exclude: /box opened|graded|ex[- ]display/i,
-  cats: ["fridges", "washing-machines", "dishwashers", "vacuums", "coffee-machines", "bbqs", "small-kitchen"],
+  cats: ["fridges", "washing-machines", "dishwashers", "vacuums", "coffee-machines", "small-kitchen"],
 });

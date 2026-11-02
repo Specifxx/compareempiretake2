@@ -783,3 +783,39 @@ tech-buying search of the year and the page has to be indexed weeks before the d
 Sitemap tier 1 with the other hubs; footer links in every region. Never a "was" price we can't back up, a countdown,
 "ends soon" or an invented sale. Dates are pure (`src/lib/black-friday.ts`, tested). Part of the passive-growth plan
 (owner, 2026-11-02: no daily Reddit posts).
+
+## 2026-11-02 — Four new categories: small kitchen, coffee gear, hair tools, BBQs
+
+From the approved consolidation plan (owner, 2026-11-02): Compare Empire is the general store for broad categories,
+so hair care, small kitchen, BBQs and coffee gear come here as categories, in every region, rather than as new sites.
+
+- **What each holds.** Small Kitchen Appliances: stand and hand mixers, blenders, food processors, kettles, toasters,
+  microwaves, juicers, benchtop cookers and contact grills. Coffee Grinders & Gear: burr grinders, pour-over kettles,
+  scales, manual brewers (AeroPress, V60, Chemex, plungers, moka pots) and milk frothers. Hair Dryers & Stylers:
+  dryers, straighteners, curlers, hot brushes and stylers (Airwrap, FlexStyle) and hair clippers. BBQs & Pizza Ovens:
+  gas, charcoal, pellet and kamado BBQs, smokers, griddles and outdoor pizza ovens. Two new departments, "Hair &
+  Beauty" and "BBQs & Outdoor"; the kitchen two join "Kitchen".
+- **They are appliance categories** (`scripts/scrapers/appliances.ts`): new-only, parts refused, model code first.
+  Accessory nouns are tested only on the part of a title before "with" / "incl." / "+", so "Supersonic Hair Dryer
+  with Diffuser" is a dryer and "Diffuser for Supersonic" is not. Each category refuses the others' look-alikes:
+  a gooseneck kettle is coffee gear, never a kettle; a kitchen brand's "grill" is a benchtop grill unless the title
+  says gas, charcoal, pellet or outdoor; a bag of coffee whose grind option names a brewer is not a brewer.
+  Manual brewers (AeroPress, Chemex, drippers) left Coffee Machines for Coffee Gear.
+- **Brands without renames.** The new brands (Weber, Wilfa, Moccamaster, ghd…) live in their own table, read only
+  for the four categories: added to the shared one they renamed, and so re-URLed, existing coffee-machine and
+  air-fryer products. Every existing catalogue was rebuilt before and after and compared: no slug changed.
+- **Small kitchen keeps its type nouns** in the product key: a range's kettle and toaster share every other word.
+- **JB Hi-Fi** is read for hair tools and grinders only: its kettles, toasters and blenders run to a thousand-odd
+  product pages inside the 40-minute budget the older categories share.
+- **Stores** come from re-surveying every store already read (one catalogue read gives every category, so this costs
+  no extra requests), the earlier candidates with kitchen, coffee, hair or BBQ names, and 139 shops found by
+  searching for popular products (`docs/stores/candidates16-*.txt` to `candidates18.txt`).
+  The survey's samples drove a second round of refusals: built-in ovens and range cookers "with grill", espresso
+  machines' drip grills, cookware grill pans (Le Creuset, Staub, Lodge…), coffee sold "ground for" a brewer, gift
+  and tasting packs, trade-ins, ex-display stock, and any part named for the product it fits ("Gas Burner for
+  Ooni Karu"). Left out: Salons Direct (trade prices ex VAT), The Espresso Shop .com (mirror of .co.uk), Espresso
+  Underground (parts), Electricals Online (sensor lights), Coffee Compass (beans only).
+- **First count** (test scrape, 2026-11-02, stores with 3+ offers): AU bbqs 12, coffee gear 35, hair 8, small
+  kitchen 11 (plus JB Hi-Fi, The Good Guys and Betta); UK 14 / 36 / 6 / 18; US 12 / 17 / 8 / 16. Hair tools and
+  BBQs are the thin ones; the next survey should target salon suppliers that show VAT-inclusive prices and BBQ
+  specialists.

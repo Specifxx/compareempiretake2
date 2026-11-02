@@ -110,7 +110,6 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-letsrun", name: "Let's Run", site: "lets-run.co.uk", color: "#0277BD", type: "retailer" },
   // 2026-11-02: hair tools, small kitchen, BBQs and coffee gear
   { id: "uk-squaremile", name: "Square Mile Coffee", site: "shop.squaremilecoffee.com", color: "#111111", type: "retailer" },
-  { id: "uk-coffeecompass", name: "Coffee Compass", site: "coffeecompass.co.uk", color: "#2B4C3F", type: "retailer" },
   { id: "uk-crankhouse", name: "Crankhouse Coffee", site: "crankhousecoffee.co.uk", color: "#1D1D1D", type: "retailer" },
   { id: "uk-darkarts", name: "Dark Arts Coffee", site: "darkartscoffee.co.uk", color: "#000000", type: "retailer" },
   { id: "uk-darkwoods", name: "Dark Woods Coffee", site: "darkwoodscoffee.co.uk", color: "#2F3B2F", type: "retailer" },
