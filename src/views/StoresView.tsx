@@ -1,3 +1,4 @@
+import { Flag } from "@/components/Flag";
 import { activeRetailers, getProducts } from "@/lib/catalog";
 import { REGIONS, type RegionId } from "@/lib/region";
 import { RetailerDot } from "@/components/RetailerChip";
@@ -10,7 +11,7 @@ export function StoresView({ region }: { region: RegionId }) {
   const stores = activeRetailers(undefined, region).sort((a, b) => (counts.get(b.id) ?? 0) - (counts.get(a.id) ?? 0));
   return (
     <div className="container-x max-w-3xl pt-12 pb-16">
-      <div className="eyebrow">{R.flag} {R.name}</div>
+      <div className="eyebrow"><Flag code={R.id} /> {R.name}</div>
       <h1 className="mt-2 font-display text-4xl font-extrabold tracking-tight">The {stores.length} {R.adjective} stores we check</h1>
       <p className="mt-4 text-ink-soft">Every price comes from the store&apos;s own website, checked daily. {R.taxNote}. No store pays to rank higher.</p>
       <ul className="card mt-8 divide-y divide-line">

@@ -1,3 +1,4 @@
+import { Flag } from "@/components/Flag";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { activeCategories, categoryHref, getProducts, liveRegions, regionUpdatedAt } from "@/lib/catalog";
@@ -61,7 +62,7 @@ export default function PriceReport() {
       <section className="card mt-4 overflow-x-auto p-0">
         <table className="w-full min-w-[560px] text-left text-sm">
           <thead className="text-xs uppercase text-ink-soft">
-            <tr><th className="px-4 py-3">Category</th>{regions.map((r) => <th key={r} className="px-4 py-3 text-right">{REGIONS[r].flag} {r.toUpperCase()}</th>)}</tr>
+            <tr><th className="px-4 py-3">Category</th>{regions.map((r) => <th key={r} className="px-4 py-3 text-right"><Flag code={r} /> {r.toUpperCase()}</th>)}</tr>
           </thead>
           <tbody>
             {cats.map((c) => (
