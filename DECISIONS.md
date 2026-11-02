@@ -774,3 +774,12 @@ Left out: shops that show prices without VAT (Audio Gold, Total Cards, the trade
 Canmac), resellers with marketplace-style listings (Gadcet, ScreenMoove), and The Appliance Guys AU, whose prices
 include delivery, installation and removal. Next time, search for products first: it found more real stores in 60
 candidates than guessing did in 700.
+
+## 2026-11-02 — Black Friday page
+
+`/black-friday`, `/us/black-friday` and `/uk/black-friday` show the region's deals (`DealsView`) under a Black Friday
+heading with the year's dates, at one URL kept every year so links and rankings carry over. Black Friday is the biggest
+tech-buying search of the year and the page has to be indexed weeks before the day (27 November 2026), so it ships now.
+Sitemap tier 1 with the other hubs; footer links in every region. Never a "was" price we can't back up, a countdown,
+"ends soon" or an invented sale. Dates are pure (`src/lib/black-friday.ts`, tested). Part of the passive-growth plan
+(owner, 2026-11-02: no daily Reddit posts).
