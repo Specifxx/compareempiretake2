@@ -924,3 +924,13 @@ zone's home. The header switcher stays.
   Windows draws a flag emoji as two letters ("AU"); image files would be new requests and hosting. The
   header switcher, its menu, the region notice, the stores page and the price report draw it too. The same
   file is in every Compare Empire repo that has a region switcher; keep the copies identical.
+
+## 2026-11-02: Nobody is moved to another region on a guess
+
+Since 2026-11-01 a visitor on another region's page was moved in the browser to their time zone's copy (`REGION_BOOT_SCRIPT`).
+Crawlers were excluded, but Search Console then reported `/us/routers` as "Duplicate, Google chose different canonical"
+(`/routers`), and Google's own guidance is not to redirect automatically on a guessed location. Now only a visitor who
+PICKED a region (header switcher or the notice's buttons, kept in localStorage) is moved; everyone else stays on the URL
+they opened and `RegionNotice` offers "Switch to <region> prices", linking the page's own hreflang alternate (their
+region's home when the page has none). The owner's 2026-11-01 rule still holds: the visitor's region is the default
+everywhere it is chosen without a URL (neutral pages, the switcher), and the root stays the US home.
