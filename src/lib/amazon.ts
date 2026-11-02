@@ -2,13 +2,13 @@
  * Amazon Associates. Every Amazon link on the site is built here and goes straight to the region's
  * Amazon with that store's tracking tag: no shorteners, redirects or cloaking. A tag earns only on
  * the Amazon whose Associates account issued it: compareempire-22 (the owner's AU account) on
- * amazon.com.au, riftcompare-20 (the owner's US account) on amazon.com. The UK has no account yet,
- * so Amazon UK shows only once NEXT_PUBLIC_AMAZON_UK_TAG is set: an untagged link earns nothing.
+ * amazon.com.au, riftcompare-20 (the owner's US account) on amazon.com, compareempi03-21 (the owner's
+ * UK account) on amazon.co.uk. Hard-coded (owner, 2026-11-02: no Vercel variable decides a tag).
  *
  * We have no Product Advertising API access yet, so we never show Amazon prices, ratings or
  * availability: links say "Check price on Amazon". Links carry rel="sponsored nofollow noopener".
  */
-export const AMAZON_AU_TAG = process.env.AMAZON_AU_TAG || "compareempire-22";
+export const AMAZON_AU_TAG = "compareempire-22";
 export const AMAZON_REL = "sponsored nofollow noopener";
 export const AMAZON_DISCLOSURE = "As an Amazon Associate I earn from qualifying purchases.";
 /** Amazon's trademark notice (Operating Agreement Dos and Don'ts, 2026-11-02), in the footer of every page. */
@@ -25,12 +25,10 @@ export function amazonAuLink(asinOrSearchTerm: string): string {
 
 export type AmazonRegion = "au" | "us" | "uk";
 
-// NEXT_PUBLIC_ so the client components (region is picked in the browser) get the same tag; read
-// with literal names so Next inlines them at build.
 const TAGS: Record<AmazonRegion, string> = {
   au: AMAZON_AU_TAG,
-  us: (process.env.NEXT_PUBLIC_AMAZON_US_TAG || "riftcompare-20").trim(),
-  uk: (process.env.NEXT_PUBLIC_AMAZON_UK_TAG || "").trim(),
+  us: "riftcompare-20",
+  uk: "compareempi03-21",
 };
 const STORES: Record<AmazonRegion, { host: string; name: string }> = {
   au: { host: "www.amazon.com.au", name: "Amazon AU" },
