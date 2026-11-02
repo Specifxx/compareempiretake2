@@ -63,24 +63,31 @@ function boot({ path, tz = "America/New_York", saved, ua = "Mozilla/5.0 (iPhone)
   return { moved, attrs };
 }
 
-test("a visitor is moved to their own region's copy of the page; crawlers never are", () => {
+test("only a visitor who picked a region is moved to that region's copy; a guessed region and crawlers never are", () => {
   const alts = { "en-AU": "/phones", "en-US": "/us/phones", "en-GB": "/uk/phones" };
-  assert.equal(boot({ path: "/phones", alternates: alts }).moved, "/us/phones?x=1", "US visitor on an Australian page");
-  assert.equal(boot({ path: "/phones", tz: "Asia/Tokyo", alternates: alts }).moved, "/us/phones?x=1", "unknown → US");
-  assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", alternates: alts }).moved, "/phones?x=1", "Australian visitor on a US page");
-  assert.equal(boot({ path: "/", tz: "Australia/Perth", alternates: { "en-AU": "/au", "en-US": "/" } }).moved, "/au?x=1", "Australian visitor on the root");
-  assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", saved: "us", alternates: alts }).moved, null, "a region picked in the header wins");
-  assert.equal(boot({ path: "/phones", saved: "uk", alternates: alts }).moved, "/uk/phones?x=1");
-  assert.equal(boot({ path: "/us/phones", alternates: alts }).moved, null, "already in their region");
-  const bot = boot({ path: "/phones", ua: "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X) Chrome/120 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)", alternates: alts });
+  // 2026-11-02: Google's guidance is no automatic redirect on a guessed location; RegionNotice offers the copy instead.
+  assert.equal(boot({ path: "/phones", alternates: alts }).moved, null, "US time zone on an Australian page: stays");
+  assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", alternates: alts }).moved, null, "Australian time zone on a US page: stays");
+  assert.equal(boot({ path: "/", tz: "Australia/Perth", alternates: { "en-AU": "/au", "en-US": "/" } }).moved, null, "Australian time zone on the root: stays");
+  assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", alternates: alts }).attrs["data-geo"], undefined, "and nothing is hidden");
+  assert.equal(boot({ path: "/phones", saved: "uk", alternates: alts }).moved, "/uk/phones?x=1", "a region picked in the header moves");
+  assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", saved: "us", alternates: alts }).moved, null, "the pick wins over the time zone");
+  assert.equal(boot({ path: "/us/phones", saved: "us", alternates: alts }).moved, null, "already in their region");
+  const bot = boot({ path: "/phones", saved: "us", ua: "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X) Chrome/120 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)", alternates: alts });
   assert.equal(bot.moved, null, "Googlebot stays");
   assert.equal(bot.attrs["data-geo"], undefined, "and nothing is hidden from it");
-  const miss = boot({ path: "/guides/best-phones", alternates: {} });
+  const miss = boot({ path: "/guides/best-phones", saved: "us", alternates: {} });
   assert.equal(miss.moved, null, "no copy in their region: stay");
   assert.equal(miss.attrs["data-geo-miss"], "us");
   assert.equal(miss.attrs["data-geo"], undefined, "content shown again");
-  assert.equal(boot({ path: "/about", tz: "Australia/Sydney" }).moved, null, "pages of no region never move");
+  assert.equal(boot({ path: "/about", saved: "au" }).moved, null, "pages of no region never move");
   assert.doesNotThrow(() => vm.runInNewContext(REGION_BOOT_SCRIPT, {}));
+});
+
+test("RegionNotice offers the visitor's own copy of the page", () => {
+  const notice = readFileSync("src/components/RegionNotice.tsx", "utf8");
+  assert.match(notice, /href=\{to \?\? HOME_PATH\[want\]\}/);
+  assert.match(notice, /BOT_UA\.test/);
 });
 
 test("the layout runs the region script before paint and names no country by default", () => {

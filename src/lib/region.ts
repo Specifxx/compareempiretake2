@@ -69,11 +69,11 @@ export const REGION_STORAGE_KEY = "ce-region";
 export const BOT_UA = /bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|lighthouse|headless|preview|facebookexternalhit|embedly|whatsapp/i;
 
 /**
- * Inline, before first paint: a visitor on a page of another region than their own (the one they picked in the header,
- * else their time zone's, else the US) is sent to the same page in their region when the page lists one as an hreflang
- * alternate. Until DOMContentLoaded `<main>` is hidden (globals.css, html[data-geo]), at most 1.5 s. When the page has
- * no such alternate (an Australian guide), it stays and `data-geo-miss` tells RegionNotice to offer the region's home.
- * Crawlers are never moved. Nothing is sent anywhere: no request, no cookie.
+ * Inline, before first paint: a visitor who PICKED a region (the header's switcher or RegionNotice's buttons, kept in
+ * localStorage) and lands on another region's page is sent to the same page in their region when the page lists one as
+ * an hreflang alternate. Until DOMContentLoaded `<main>` is hidden (globals.css, html[data-geo]), at most 1.5 s.
+ * A visitor who never picked is never moved (2026-11-02, Google's guidance: no automatic redirects on a guessed
+ * location): RegionNotice offers their time zone's copy instead. Crawlers are never moved. Nothing is sent anywhere.
  */
 export const REGION_BOOT_SCRIPT = `(function(){try{
 var d=document.documentElement,p=location.pathname,s=p.split("/")[1]||"";
@@ -81,8 +81,7 @@ if(${BOT_UA}.test(navigator.userAgent))return;
 if(${JSON.stringify([...NEUTRAL])}.indexOf(s)>=0)return;
 var page=s==="us"||s==="uk"||s==="au"?s:s?"au":"us";
 var want=null;try{want=localStorage.getItem("${REGION_STORAGE_KEY}")}catch(e){}
-if(want!=="au"&&want!=="us"&&want!=="uk"){var z="";try{z=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch(e){}
-want=z.indexOf("Australia/")===0?"au":["Europe/London","Europe/Belfast","Europe/Guernsey","Europe/Jersey","Europe/Isle_of_Man"].indexOf(z)>=0?"uk":"us"}
+if(want!=="au"&&want!=="us"&&want!=="uk")return;
 if(want===page)return;
 var from=null;try{from=sessionStorage.getItem("ce-geo-from")}catch(e){}
 if(from===p)return;
