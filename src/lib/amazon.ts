@@ -11,6 +11,8 @@
 export const AMAZON_AU_TAG = process.env.AMAZON_AU_TAG || "compareempire-22";
 export const AMAZON_REL = "sponsored nofollow noopener";
 export const AMAZON_DISCLOSURE = "As an Amazon Associate I earn from qualifying purchases.";
+/** Amazon's trademark notice (Operating Agreement Dos and Don'ts, 2026-11-02), in the footer of every page. */
+export const AMAZON_TRADEMARK = "Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.";
 
 const ASIN = /^[A-Z0-9]{10}$/;
 
