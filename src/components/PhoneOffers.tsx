@@ -10,7 +10,9 @@ import { withRegion } from "@/lib/region";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
 import type { Offer, Phone, RetailerId } from "@/lib/types";
-import { CheckIcon, ExternalIcon, ShareIcon } from "./icons";
+import { CheckIcon, ExternalIcon } from "./icons";
+import { ShareButton } from "./ShareButton";
+import { shareText } from "@/lib/share-link";
 import { RetailerDot } from "./RetailerChip";
 import { SaveButton } from "./SaveButton";
 import { CompareToggle } from "./CompareToggle";
@@ -49,7 +51,6 @@ export function PhoneOffers({
   const initial = phone.variants.find((v) => v.id === params.get("v")) ?? defaultVariant(phone);
   const [vid, setVid] = useState(initial.id);
   const [colour, setColour] = useState<string | null>(null);
-  const [copied, setCopied] = useState(false);
   const variant = phone.variants.find((v) => v.id === vid) ?? initial;
   const { $, R, region } = useRegionKit();
   const href = withRegion(`/${phone.category}/${phone.slug}`, region);
@@ -72,18 +73,12 @@ export function PhoneOffers({
   const best = rows[0]?.best;
   const top = rows.length > 1 ? Math.max(...rows.map((r) => r.best.price)) : undefined;
 
-  const share = async () => {
-    const url = `${location.origin}${href}?v=${variant.id}`;
-    const text = `${phone.name}${vLabel ? ` ${vLabel}` : ""} from ${$(variant.bestPrice)} — compared across ${phone.retailerCount} ${R.adjective} stores`;
-    try {
-      if (navigator.share) await navigator.share({ title: phone.name, text, url });
-      else {
-        await navigator.clipboard.writeText(url);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-      }
-    } catch {}
-  };
+  // Word of mouth: the message names the real gap between two stores, in-stock outright prices only.
+  const shareMsg = shareText(
+    `${phone.name}${vLabel ? ` ${vLabel}` : ""}`,
+    rows.filter((r) => r.best.inStock).map((r) => ({ price: r.best.price, store: RETAILERS[r.best.retailer].name })),
+    $,
+  );
 
   return (
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12">
@@ -251,7 +246,7 @@ export function PhoneOffers({
         <div className="mt-6 flex flex-wrap gap-2">
           <PriceAlertButton key={variant.id} product={href} productName={phone.name} variant={variant.id} variantLabel={vLabel || undefined} price={variant.bestPrice} />
           <CompareToggle slug={href} block />
-          <button onClick={share} className="btn-ghost"><ShareIcon /> {copied ? "Link copied" : "Share"}</button>
+          <ShareButton title={phone.name} path={`${href}?v=${variant.id}`} text={shareMsg} />
         </div>
 
         <div className="mt-10 scroll-mt-24" id="history">

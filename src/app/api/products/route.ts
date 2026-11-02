@@ -1,4 +1,4 @@
-import { getProduct, getProducts, summarise } from "@/lib/catalog";
+import { cheapestStore, getProduct, getProducts, summarise } from "@/lib/catalog";
 import { parseProductQuery } from "@/lib/product-refs";
 
 /**
@@ -23,5 +23,5 @@ export function GET(req: Request) {
   // Without its traced data every answer would be an empty list the CDN keeps for a day: fail with a 500 instead, which it never caches.
   for (const region of new Set(q.refs.map((r) => r.region))) if (!getProducts(undefined, region).length) throw new Error(`no catalogue for ${region}`);
   const found = q.refs.flatMap((r) => getProduct(r.category, r.slug, r.region) ?? []);
-  return Response.json({ products: q.view === "summary" ? found.map(summarise) : found }, { headers: CACHED });
+  return Response.json({ products: q.view === "summary" ? found.map((p) => ({ ...summarise(p), bestStore: cheapestStore(p) })) : found }, { headers: CACHED });
 }
