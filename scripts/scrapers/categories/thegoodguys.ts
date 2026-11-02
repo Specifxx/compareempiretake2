@@ -154,6 +154,23 @@ const CATS: Partial<Record<Exclude<CategoryId, "phones">, Cat>> = {
     paths: ["/cooking-and-dishwashers/dishwashers"],
     keep: (t) => isAppliance("dishwashers", t),
   },
+  // 2026-11 categories (paths checked from GitHub's network on 2026-11-02).
+  "hair-care": {
+    paths: ["/health-and-grooming/hair-styling"],
+    keep: (t) => isAppliance("hair-care", t),
+  },
+  "small-kitchen": {
+    paths: ["/small-kitchen-appliances", "/small-kitchen-appliances/benchtop-cooking", "/cooking-and-dishwashers/microwaves"],
+    keep: (t) => isAppliance("small-kitchen", t),
+  },
+  "coffee-gear": {
+    paths: ["/small-kitchen-appliances/coffee-machines-and-beverages/coffee-grinders"],
+    keep: (t) => isAppliance("coffee-gear", t),
+  },
+  bbqs: {
+    paths: ["/bbqs"],
+    keep: (t) => isAppliance("bbqs", t),
+  },
 };
 
 async function scrapeCategory(cat: Exclude<CategoryId, "phones">): Promise<RawOffer[]> {
