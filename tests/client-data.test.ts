@@ -358,7 +358,7 @@ test("the head script marks every grid query key, so a filtered deep link never 
 
 test("the build fails before Vercel would refuse a prerendered output, and names the big ones", () => {
   const pkg = JSON.parse(readFileSync(path.join(ROOT, "package.json"), "utf8")) as { scripts: Record<string, string> };
-  assert.match(pkg.scripts.build, /^next build && node scripts\/check-prerender-size\.mjs$/);
+  assert.match(pkg.scripts.build, /^(\(tsx scripts\/fetch-amazon-prices\.ts \|\| true\) && )?next build && node scripts\/check-prerender-size\.mjs$/);
   const dir = mkdtempSync(path.join(os.tmpdir(), "prerender-"));
   const file = (rel: string, bytes: number) => {
     const p = path.join(dir, rel);
