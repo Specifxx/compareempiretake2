@@ -1,7 +1,7 @@
 /**
  * Amazon Associates. Every Amazon link on the site is built here and goes straight to the region's
  * Amazon with that store's tracking tag: no shorteners, redirects or cloaking. A tag earns only on
- * the Amazon whose Associates account issued it: compareempire-22 (the owner's AU account) on
+ * the Amazon whose Associates account issued it: cecompare-22 (the owner's AU account) on
  * amazon.com.au, riftcompare-20 (the owner's US account) on amazon.com, compareempi03-21 (the owner's
  * UK account) on amazon.co.uk. Hard-coded (owner, 2026-11-02: no Vercel variable decides a tag).
  *
@@ -9,7 +9,7 @@
  * while under 24 hours old (lib/amazon-live.ts, DECISIONS 2026-11-03). Until the API opens to the account,
  * links say "Check price on Amazon". No ratings, ever. Links carry rel="sponsored nofollow noopener".
  */
-export const AMAZON_AU_TAG = "compareempire-22";
+export const AMAZON_AU_TAG = "cecompare-22";
 export const AMAZON_REL = "sponsored nofollow noopener";
 export const AMAZON_DISCLOSURE = "As an Amazon Associate I earn from qualifying purchases.";
 /** Amazon's trademark notice (Operating Agreement Dos and Don'ts, 2026-11-02), in the footer of every page. */
