@@ -1064,3 +1064,14 @@ keeps today's "Check price on Amazon" row.
   A price outside 60%–160% of the variant's store median is dropped. Never in a sort, the "Cheapest" badge,
   deals, alerts, history, feeds, metadata, JSON-LD, the quick view or another region
   (`tests/amazon-api.test.ts` pins the reader to `ProductView`). The row stays an ad, outside the store order.
+
+## Site reviews move to RiftCompare's shared queue (2026-11-03)
+
+The owner wanted RiftCompare's rating pop-up on every site, each site's reviews public, and every written review approved in
+RiftCompare's admin (riftcompare.com/admin/reviews); star ratings count at once. From now on the "Write a review" tab of the
+feedback widget and the new corner card (`components/site-reviews/RateCard.tsx`, after 4 pages and 3 minutes or on return from
+a store tab, at most three times 14 days apart, always closable) send to `https://riftcompare.com/api/site-reviews`, and nothing
+new is written to the `reviews` table. The reviews already there stay where they are and keep showing: `ReviewsSection` merges
+this site's approved reviews (`/api/reviews`) with the shared service's (`/api/site-reviews/compareempire`, CDN six hours), and
+the score counts both. Reviews still pending in this site's own admin are finished there. "Send feedback" is unchanged. While no
+ad script is on the page the card says "We don't run banner ads, so if this helped, please leave us a review."

@@ -467,3 +467,14 @@ html.gq [data-grid-fallback] span[data-filtered-only] { display: inline; }
   --fm-accent-soft: rgb(var(--brand-soft));
   --fm-radius: 14px;
 }
+
+/* Rate us card and "What people say" (components/site-reviews): drawn in the site's own theme, light and dark. */
+:root {
+  --srv-bg: rgb(var(--card));
+  --srv-fg: rgb(var(--ink));
+  --srv-muted: rgb(var(--ink-mute));
+  --srv-line: rgb(var(--line));
+  --srv-accent: rgb(var(--brand));
+  --srv-accent-fg: rgb(var(--brand-ink));
+  --srv-field: rgb(var(--bg));
+}
