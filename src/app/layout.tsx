@@ -108,11 +108,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Compare Empire",
-              url: SITE,
-              email: CONTACT_EMAIL,
-              contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: CONTACT_EMAIL, areaServed: ["US", "AU", "GB"], availableLanguage: "en" },
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": `${SITE}/#org`,
+                  name: "Compare Empire",
+                  url: SITE,
+                  logo: `${SITE}/icon.svg`,
+                  email: CONTACT_EMAIL,
+                  contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: CONTACT_EMAIL, areaServed: ["US", "AU", "GB"], availableLanguage: "en" },
+                },
+                // SEO audit, 2026-11-03: the site had no WebSite entity.
+                { "@type": "WebSite", "@id": `${SITE}/#website`, name: "Compare Empire", url: SITE, publisher: { "@id": `${SITE}/#org` }, inLanguage: "en" },
+              ],
             }),
           }}
         />

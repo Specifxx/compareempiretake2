@@ -95,7 +95,7 @@ export function HomeView({ region }: { region: RegionId }) {
           <Link href={`${to(`/${example.phone.category}/${example.phone.slug}`)}?v=${example.variant.id}`} prefetch={false} className="mx-auto flex max-w-3xl flex-col items-stretch gap-4 rounded-3xl border border-line bg-bg-card p-4 shadow-card transition hover:shadow-lift sm:flex-row sm:items-center">
             <div className="flex items-center gap-4">
               <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-2xl">
-                {example.phone.image && <img src={example.phone.image} alt="" className="product-img h-full w-full object-contain p-2" />}
+                {example.phone.image && <img src={example.phone.image} alt={example.phone.name} className="product-img h-full w-full object-contain p-2" />}
               </div>
               <div>
                 <div className="eyebrow">Live example</div>
@@ -117,7 +117,7 @@ export function HomeView({ region }: { region: RegionId }) {
           {cats.map(({ c, count, from, image }) => (
             <Link prefetch={false} key={c.id} href={to(c.href)} className="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift">
               <div className="img-tile relative aspect-square">
-                {image && <img src={image} alt="" loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-4 transition group-hover:scale-105" />}
+                {image && <img src={image} alt={c.name} loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-4 transition group-hover:scale-105" />}
               </div>
               <div className="p-3">
                 <div className="font-semibold">{c.emoji} {c.name}</div>

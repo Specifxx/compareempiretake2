@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { categoryById } from "@/lib/categories";
-import { GUIDE_SECTIONS, guideImages, type Guide } from "@/lib/guides";
+import { GUIDE_SECTIONS, guidePhotos, type Guide } from "@/lib/guides";
 
 // Fanned photo cards on the thumbnail: the first in front. Positions for one, two and three photos.
 const FAN: Record<number, { left: string; top: string; w: string; rot: string; z: number }[]> = {
@@ -18,7 +18,8 @@ const FAN: Record<number, { left: string; top: string; w: string; rot: string; z
 
 /** A guide's card on /guides, the home page, category pages and "Keep reading". */
 export function GuideCard({ g, big, eager }: { g: Guide; big?: boolean; eager?: boolean }) {
-  const images = guideImages(g);
+  const photos = guidePhotos(g);
+  const images = photos.map((x) => x.src);
   const cat = categoryById(g.category);
   const section = GUIDE_SECTIONS.find((s) => s.id === g.section);
   const fan = FAN[images.length] ?? [];
@@ -35,7 +36,7 @@ export function GuideCard({ g, big, eager }: { g: Guide; big?: boolean; eager?: 
               style={{ left: fan[i].left, top: fan[i].top, width: fan[i].w, transform: `rotate(${fan[i].rot})`, zIndex: fan[i].z }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element -- the stores' own photos, hotlinked */}
-              <img src={src} alt="" className="h-full w-full object-contain" loading={eager && i === 0 ? "eager" : "lazy"} />
+              <img src={src} alt={photos[i].alt} className="h-full w-full object-contain" loading={eager && i === 0 ? "eager" : "lazy"} />
             </span>
           ))
         ) : (
