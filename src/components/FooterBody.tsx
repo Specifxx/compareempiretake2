@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
 import { CONTACT_EMAIL } from "@/lib/site";
-import { footerSisters } from "@/lib/family-network";
 import { AMAZON_DISCLOSURE, AMAZON_TRADEMARK } from "@/lib/amazon";
 import { REGIONS, type RegionId } from "@/lib/region";
 import { useRegion } from "@/lib/use-region";
@@ -40,11 +39,8 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
           (DECISIONS.md "Sites that grow each other"). */}
       <nav aria-label="Compare Empire sites" className="border-t border-line">
         <div className="container-x py-4 text-xs text-ink-mute">
-          Sister site:{" "}
-          {footerSisters("empire").map((s, i) => (
-            <span key={s.id}>{i ? " · " : ""}<a href={s.url} target="_blank" rel="noopener" className="font-semibold text-ink-soft hover:text-ink" title={s.label}>{s.name}</a></span>
-          ))}
-          {" · "}
+          {/* No sister-site list (owner, 2026-11-03: sitewide links between our own sites read as a link network):
+              /network lists every site once (lib/family-network.ts). */}
           <Link prefetch={false} href="/network" className="font-semibold text-ink-soft hover:text-ink">All Compare Empire sites →</Link>
         </div>
       </nav>

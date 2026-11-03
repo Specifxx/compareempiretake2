@@ -3,12 +3,11 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { FAMILY_SITES, footerSisters } from "../src/lib/family-network";
 
-// The footer (owner, 2026-11-02: the old eleven-site list was "convoluted"): our own cluster (CamCompare)
-// by name, plus one link to /network, which lists every site once (DECISIONS.md "Sites that grow each other").
-test("footer: the tech sister and the network page, plain followed links", () => {
-  assert.deepEqual(footerSisters("empire").map((s) => s.id), ["cam"]);
+// The footer (owner, 2026-11-03): no sister-site list, only one link to /network, which lists every site once.
+test("footer: no sister list, one plain link to the network page", () => {
+  assert.deepEqual(footerSisters("empire"), []);
   const footer = readFileSync("src/components/FooterBody.tsx", "utf8");
-  assert.match(footer, /footerSisters\("empire"\)/);
+  assert.doesNotMatch(footer, /footerSisters|Sister site/);
   assert.match(footer, /href="\/network"/);
   assert.doesNotMatch(footer, /sponsored|nofollow/);
 });
