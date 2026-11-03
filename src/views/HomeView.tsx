@@ -19,6 +19,7 @@ import { ChristmasDecor } from "@/components/ChristmasDecor";
 import { HomeRegionPicker } from "@/components/HomeRegionPicker";
 import { HotLaunches } from "@/components/HotLaunches";
 import { hotLaunches } from "@/lib/launches";
+import { CreatorsCornerBadge } from "@/components/creators/CreatorsCornerBadge";
 
 export function HomeView({ region }: { region: RegionId }) {
   const R = REGIONS[region];
@@ -50,8 +51,10 @@ export function HomeView({ region }: { region: RegionId }) {
         <div className="pointer-events-none absolute inset-0 -z-10">
           <ChristmasDecor />
         </div>
-        <div className="container-x pb-12 pt-14 sm:pt-20">
+        <div className="container-x relative pb-12 pt-14 sm:pt-20">
           <div className="mx-auto max-w-3xl text-center">
+            {/* The creators hub, above the fold (owner, 2026-11-03): top-right corner from sm, a centred pill above the headline on a phone. */}
+            <CreatorsCornerBadge />
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-line bg-bg-card px-3 py-1 text-xs font-medium text-ink-soft shadow-sm">
               <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-save opacity-60" /><span className="relative inline-flex h-2 w-2 rounded-full bg-save" /></span>
               Prices checked {updated}
