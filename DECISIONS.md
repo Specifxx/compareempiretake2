@@ -1064,3 +1064,22 @@ keeps today's "Check price on Amazon" row.
   A price outside 60%–160% of the variant's store median is dropped. Never in a sort, the "Cheapest" badge,
   deals, alerts, history, feeds, metadata, JSON-LD, the quick view or another region
   (`tests/amazon-api.test.ts` pins the reader to `ProductView`). The row stays an ad, outside the store order.
+
+## 2026-11-03: "Hot right now": the year's big launches lead the homepage
+
+Owner, 2026-11-03: "there are extremely hype products right now like the iphone duo and the galaxy fold 8 so we
+should make sure we feature these as much as possible on the website home". Launch weeks are when buyers search,
+and the catalogue already carries these phones in every region; the homepage didn't say so.
+
+- **A hand-kept launch list, facts from the maker.** `src/content/launches.ts` holds each launch's name, pre-order
+  and release dates, the last day it is featured, and the maker's own announcement as its source, with the day it
+  was checked. No price is ever typed there. Today: iPhone Duo (pre-order 16 October, out 23 October 2026, Apple
+  Newsroom) and Galaxy Z Fold8, Fold8 Ultra and Flip8 (on sale 7 August 2026, Samsung Newsroom).
+- **Prices are the region's own stores'.** `lib/launches.ts` matches each launch to the catalogue by name; the
+  listing with the most stores wins (then the cheapest), so a UK store that splits colours into their own products
+  still finds the main one, and a pattern must not match a sibling (`Fold8` never takes the `Fold8 Ultra` row).
+  A released launch no store in the region lists is left out; one still on pre-order shows "No store price yet".
+- **Placement.** `components/HotLaunches.tsx`, straight under the hero on `/`, `/au` and `/uk`, newest release
+  first. The day is the last import's (`catalogDay`), not the build clock, so the row changes only with data.
+  Static and server-rendered like the rest of the page: no request-time read, no new build.
+- Adding a launch is one entry; a launch drops off after `featureUntil`. The launch calendar page reads the same list.

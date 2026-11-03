@@ -5,7 +5,7 @@ import { PhoneCard } from "@/components/PhoneCard";
 import { SearchBox } from "@/components/SearchBox";
 import { getGuides } from "@/lib/guides";
 import { GuideCard } from "@/components/GuideCard";
-import { activeCategories, checkVariant, getCatalog, liveRegions, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
+import { activeCategories, catalogDay, checkVariant, getCatalog, liveRegions, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import type { CategoryId } from "@/lib/types";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { FEATURED } from "@/lib/categories";
@@ -17,6 +17,8 @@ import { AmazonPicks } from "@/components/AmazonPicks";
 import { EbayStrip } from "@/components/EbayStrip";
 import { ChristmasDecor } from "@/components/ChristmasDecor";
 import { HomeRegionPicker } from "@/components/HomeRegionPicker";
+import { HotLaunches } from "@/components/HotLaunches";
+import { hotLaunches } from "@/lib/launches";
 
 export function HomeView({ region }: { region: RegionId }) {
   const R = REGIONS[region];
@@ -33,6 +35,8 @@ export function HomeView({ region }: { region: RegionId }) {
   const popular = summaries.filter((p) => p.retailerCount >= 3 && p.image).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice).slice(0, 8);
   const budget = summaries.filter((p) => p.bestPrice <= 500 && p.retailerCount >= 2 && p.image && p.inStock).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation).slice(0, 4);
   const example = pickExample(region);
+  // The year's big launches (content/launches.ts), dated by the last import, not the build clock.
+  const hot = hotLaunches(region, catalogDay(region), getSummaries);
   const updated = new Date(updatedAt).toLocaleString(R.locale, { timeZone: R.timeZone, weekday: "long", hour: "numeric", minute: "2-digit" });
 
   return (
@@ -89,6 +93,8 @@ export function HomeView({ region }: { region: RegionId }) {
           </div>
         </div>
       </section>
+
+      <HotLaunches items={hot} region={region} />
 
       {example && (
         <section className="container-x -mt-4 mb-10">
