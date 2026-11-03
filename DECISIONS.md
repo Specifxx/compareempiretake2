@@ -973,3 +973,23 @@ pages rendered or read from storage instead of served from the CDN:
 allows for `/_next/`, `/og` (share images) and icons, plus RiftCompare's scraper list. The search index keeps
 thumbnails for the 2,500 most popular products only (`SEARCH_IMAGE_LIMIT`), cutting it by about a third. Google
 still reads every page: sitemap URLs carry no query and canonicals are clean.
+
+## 2026-11-03 — A share card that says "price comparison" at thumbnail size
+
+**Why.** Owner: the link preview should be "more visual", so that "even from far distance, people can tell what
+this website's going to be about". The old card was a text headline on a pale background ("Is that sale actually
+real?"), which at feed-thumbnail size read as nothing in particular.
+
+**What.** One template (`src/app/og/route.tsx`) for the home pages, categories and products: the brand's violet,
+a two-to-three-word headline in Archivo Black ("Compare prices.", "Cameras", the product name), and a white panel
+of one real product's store prices: the three cheapest in-stock outright stores and the dearest, the cheapest in
+green with a tick, and "Save $X vs the dearest store" when the gap is at least 3%. Home and category cards add a
+row of three product photos under the headline. `src/lib/share-rows.ts` picks the rows (never eBay, plans or
+out-of-stock offers; each store once) and the lead product (most stores, a 4–35% gap: wider is usually a list price
+against a sale and reads as a trick; two stores as a fallback). A page with no rows of its own (deals, sale seasons)
+draws grey bars, never invented stores or prices.
+
+**Cost.** No new function: it is the same edge route, cached a day by the CDN, and the page that links it is the
+only thing that reads the catalogue. The card's URL carries its prices, so it changes when they do. Fonts are
+subset to Latin (60 KB). Store photos are fetched by the route and dropped unless PNG/JPEG under 3 MB within 2.5 s,
+so a slow or WebP photo blanks one tile instead of failing the card.
