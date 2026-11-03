@@ -12,6 +12,7 @@ import { parseHref } from "@/lib/product-refs";
 import { useRegionKit } from "@/lib/use-region";
 import { defaultVariant, groupByRetailer, OutrightRow, PinnedMarketplaces } from "./PhoneOffers";
 import { ShareButton } from "./ShareButton";
+import { closeQuickViewUrl, onQuickViewHistory, openQuickViewUrl } from "@/lib/quick-view-url";
 import { shareText } from "@/lib/share-link";
 import { RETAILERS } from "@/lib/retailers";
 
@@ -59,7 +60,12 @@ export function QuickView() {
   const [phone, setPhone] = useState<Phone | null | "loading">(null);
   const [vid, setVid] = useState<string | null>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
-  const close = useCallback(() => setHead(null), []);
+  // Closing steps back to the list's own URL (lib/quick-view-url.ts); the details link only hides it, and lands on the URL already shown.
+  const close = useCallback(() => {
+    setHead(null);
+    closeQuickViewUrl();
+  }, []);
+  const hide = useCallback(() => setHead(null), []);
 
   useEffect(() => {
     // Capture phase on the document: runs before Next's Link, which then sees the click already handled.
@@ -68,11 +74,19 @@ export function QuickView() {
       const h = headOf(e);
       if (!h) return;
       e.preventDefault();
+      show(h);
+      // The product's own link in the address bar while it is open (owner, 2026-11-03), so it can be copied, shared or bookmarked.
+      openQuickViewUrl(h.href, h);
+    }
+    function show(h: Head | null) {
       setHead(h);
+      if (!h) return;
       setVid(null);
       setPhone("loading");
       load(h.href).then((d) => setPhone((cur) => (cur === "loading" ? d : cur)));
     }
+    // Back closes the pop-up, Forward reopens it.
+    const offHistory = onQuickViewHistory<Head>(show);
     // Warm the answer when a mouse rests on a card, so most opens are instant.
     function onOver(e: PointerEvent) {
       const h = e.pointerType === "mouse" ? headOf(e) : null;
@@ -83,8 +97,14 @@ export function QuickView() {
     return () => {
       document.removeEventListener("click", onClick, true);
       document.removeEventListener("pointerover", onOver);
+      offHistory();
     };
   }, []);
+
+  // A picked size or colour goes into the link too (the share button already shares it), replacing the pop-up's own entry.
+  useEffect(() => {
+    if (head && vid) openQuickViewUrl(`${head.href}?v=${vid}`, head);
+  }, [head, vid]);
 
   useEffect(() => {
     if (!head) return;
@@ -132,7 +152,7 @@ export function QuickView() {
           )}
         </div>
         <div className="border-t border-line p-4 sm:px-5">
-          <Link href={phone && phone !== "loading" && vid ? `${head.href}?v=${vid}` : head.href} prefetch={false} onClick={close} className="btn-primary flex w-full justify-center text-[15px]">
+          <Link href={phone && phone !== "loading" && vid ? `${head.href}?v=${vid}` : head.href} prefetch={false} onClick={hide} className="btn-primary flex w-full justify-center text-[15px]">
             See price history and details <span aria-hidden>→</span>
           </Link>
         </div>

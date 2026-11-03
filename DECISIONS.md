@@ -1011,6 +1011,22 @@ only thing that reads the catalogue. The card's URL carries its prices, so it ch
 subset to Latin (60 KB). Store photos are fetched by the route and dropped unless PNG/JPEG under 3 MB within 2.5 s,
 so a slow or WebP photo blanks one tile instead of failing the card.
 
+## 2026-11-03 — The quick view shows the product's own link
+
+**Why.** Owner: "quickview popup should have a link change as well for all sites, instead of using the same link". The
+pop-up kept the list page's URL, so a copied or bookmarked link lost the product, and Back left the page instead of
+closing the pop-up.
+
+**What.** Opening a quick view pushes the product page's own existing URL (the product's own path, plus `?v=<variant>` once a size or colour is picked, as the share button already did) with `history.pushState`
+(`src/lib/quick-view-url.ts`, the same file on every site). Back closes it and restores the list's URL, Forward reopens it,
+closing it (×, Escape, the backdrop) steps back, so the history never fills with pop-ups. "See price history and details"
+only hides the pop-up and navigates to the URL already shown, which Next turns into a replace: Back from the product page
+goes to the list. The entry copies Next's own history state (`__NA` and the router tree), so the app router passes the
+push through and the page under the pop-up never re-renders.
+
+**SEO.** No new URL exists: the link is the canonical product page, which a reload, a share or a crawler gets in full
+server HTML. Never a `?view=` or `#` variant (duplicate URLs, extra CDN copies). Pinned by `tests/quick-view-url.test.ts`.
+
 ## 2026-11-03 SEO audit: home titles, alt text, WebSite entity, brand breadcrumbs
 
 Bill's network SEO audit read the AU home title as 76 characters ("Compare Empire Australia — compare tech prices across
