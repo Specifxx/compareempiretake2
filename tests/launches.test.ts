@@ -4,7 +4,7 @@ import { test } from "node:test";
 import { execFileSync } from "node:child_process";
 import assert from "node:assert/strict";
 import { LAUNCHES } from "../src/content/launches";
-import { featuredLaunches, hotLaunches, matchLaunch } from "../src/lib/launches";
+import { featuredLaunches, hotLaunches, launchCalendar, matchLaunch } from "../src/lib/launches";
 import type { PhoneSummary } from "../src/lib/catalog";
 
 const p = (slug: string, name: string, bestPrice: number, retailerCount: number): PhoneSummary =>
@@ -61,4 +61,11 @@ test("the real catalogue: every region shows the iPhone Duo and the Fold8", () =
     assert.ok(keys.includes("galaxy-z-fold8"), `${r}: ${keys}`);
   }
   console.log(JSON.stringify(out));
+});
+
+test("the calendar: coming soon by date, out now newest first, every launch listed even with no store", () => {
+  const cal = launchCalendar("uk", "2026-10-18", () => [p("apple-iphone-duo", "Apple iPhone Duo", 1, 1)]);
+  assert.deepEqual(cal.soon.map((r) => r.launch.key), ["iphone-duo"]);
+  assert.deepEqual(cal.out.map((r) => [r.launch.key, r.product]), [["galaxy-z-fold8", null], ["galaxy-z-fold8-ultra", null], ["galaxy-z-flip8", null]]);
+  assert.equal(launchCalendar("uk", "2027-06-01", () => []).out.every((r) => !r.current), true);
 });

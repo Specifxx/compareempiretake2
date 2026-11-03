@@ -47,3 +47,27 @@ export function hotLaunches(
   }
   return out;
 }
+
+export interface CalendarLaunch extends HotLaunch {
+  /** Still featured on the homepage (today is on or before featureUntil). */
+  current: boolean;
+}
+
+/** The launch calendar (/launches): every launch, the region's product for each (or null), coming soon first, then newest out. */
+export function launchCalendar(
+  region: RegionId,
+  today: string,
+  read: (category: Launch["category"], region: RegionId) => PhoneSummary[],
+  launches: readonly Launch[] = LAUNCHES,
+): { soon: CalendarLaunch[]; out: CalendarLaunch[] } {
+  const byCat = new Map<string, PhoneSummary[]>();
+  const rows = launches.map((launch) => {
+    if (!byCat.has(launch.category)) byCat.set(launch.category, read(launch.category, region));
+    return { launch, product: matchLaunch(launch, byCat.get(launch.category)!), status: launch.releaseDate > today ? "pre-order" : "new", current: today <= launch.featureUntil } as CalendarLaunch;
+  });
+  const order = (a: CalendarLaunch, b: CalendarLaunch) => launches.indexOf(a.launch) - launches.indexOf(b.launch);
+  return {
+    soon: rows.filter((r) => r.status === "pre-order").sort((a, b) => a.launch.releaseDate.localeCompare(b.launch.releaseDate) || order(a, b)),
+    out: rows.filter((r) => r.status === "new").sort((a, b) => b.launch.releaseDate.localeCompare(a.launch.releaseDate) || order(a, b)),
+  };
+}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { HotLaunch } from "@/lib/launches";
-import { money, REGIONS, type RegionId } from "@/lib/region";
+import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 
 // The homepage's "Hot right now" row (owner, 2026-11-03): the year's big launches straight under the hero, each with the
 // region's cheapest store price today and how many stores have it. Every price is a store's; the dates are the maker's.
@@ -16,6 +16,7 @@ export function HotLaunches({ items, region }: { items: HotLaunch[]; region: Reg
           <div className="eyebrow">Just launched</div>
           <h2 id="hot-launches" className="font-display text-xl font-extrabold tracking-tight sm:text-2xl">Hot right now</h2>
         </div>
+        <Link prefetch={false} href={withRegion("/launches", region)} className="text-sm font-semibold text-brand hover:underline">All launches →</Link>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {items.map(({ launch, product, status }, i) => {

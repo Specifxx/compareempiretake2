@@ -1082,4 +1082,6 @@ and the catalogue already carries these phones in every region; the homepage did
 - **Placement.** `components/HotLaunches.tsx`, straight under the hero on `/`, `/au` and `/uk`, newest release
   first. The day is the last import's (`catalogDay`), not the build clock, so the row changes only with data.
   Static and server-rendered like the rest of the page: no request-time read, no new build.
-- Adding a launch is one entry; a launch drops off after `featureUntil`. The launch calendar page reads the same list.
+- Adding a launch is one entry; it drops off the homepage after `featureUntil`. The launch calendar (`/launches`,
+  `/uk/launches`, `/us/launches`, `views/LaunchesView.tsx`, in the sitemap, linked from the row) lists every entry,
+  coming soon then newest out, with its pre-order and release dates, the source link and the region's store price.
