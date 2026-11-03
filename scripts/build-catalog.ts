@@ -10,7 +10,8 @@
 import { dataPath, REGIONS, type RegionId } from "../src/lib/region";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
-import { categorySpecs, conflicts, mergeTarget, parseProduct, type Parsed } from "../src/lib/match";
+import { categorySpecs, conflicts, mergeTarget, type Parsed } from "../src/lib/match";
+import { parseListing } from "../src/lib/listing-parse";
 import { parseTitle, slugify, storageLabel } from "../src/lib/normalize";
 import { RETAILERS } from "../src/lib/retailers";
 import type { Catalog, CategoryId, HistoryDay, StoreSeries, Offer, Phone, RawOffer, RetailerId, Specs, Variant } from "../src/lib/types";
@@ -31,14 +32,7 @@ interface Group {
   aliases?: Set<string>;
 }
 
-/** Phones keep their original parser; every other category uses src/lib/match.ts. */
-function parse(o: RawOffer, category: CategoryId): Parsed | null {
-  if (category !== "phones") return parseProduct(o, category);
-  const p = parseTitle(o.title, { allowNoStorage: o.fromPrice });
-  if (!p) return null;
-  const label = storageLabel(p.storageGb);
-  return { brand: p.brand, model: p.model, key: p.key, colour: p.colour, variant: { id: p.storageGb ? label.toLowerCase() : "", label, storageGb: p.storageGb } };
-}
+const parse = parseListing;
 
 function median(xs: number[]): number {
   const s = [...xs].sort((a, b) => a - b);

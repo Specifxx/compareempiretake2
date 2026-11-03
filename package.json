@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/check-prerender-size.mjs",
+    "build": "(tsx scripts/fetch-amazon-prices.ts || true) && next build && node scripts/check-prerender-size.mjs",
     "check:size": "node scripts/check-prerender-size.mjs",
     "start": "next start",
     "lint": "next lint",

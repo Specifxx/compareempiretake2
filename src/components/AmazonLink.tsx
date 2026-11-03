@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AMAZON_DISCLOSURE, AMAZON_REL, amazonAuLink } from "@/lib/amazon";
 import { ExternalIcon } from "./icons";
+import { AmazonLivePrice } from "./AmazonLivePrice";
 
 /**
  * Amazon AU links. No Amazon price, rating or stock is shown (we have no API access), only
@@ -14,7 +15,7 @@ const track = (p: Props) => ({ "data-buy": "amazon", "data-buy-kind": `amazon-${
  * A row shaped like the store rows on a product page, pinned above them. Never in Amazon's own colours
  * (2026-11-02: the Associates Operating Agreement forbids styling that could pass for Amazon's site). `href`/`name` override the AU link for the US and UK, which have no tag yet.
  */
-export function AmazonRow({ href, name = "Amazon AU", ...p }: Props & { href?: string; name?: string }) {
+export function AmazonRow({ href, name = "Amazon AU", live, ...p }: Props & { href?: string; name?: string; live?: { text: string; at: string } }) {
   return (
     <a href={href ?? amazonAuLink(p.query)} target="_blank" rel={AMAZON_REL} {...track(p)} className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
       <div className="min-w-0 flex-1">
@@ -22,10 +23,13 @@ export function AmazonRow({ href, name = "Amazon AU", ...p }: Props & { href?: s
           {name}
           <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
         </div>
-        <div className="mt-1 text-xs text-ink-soft">New, sold by Amazon and marketplace sellers. We can&apos;t show Amazon&apos;s price here.</div>
+        <div className="mt-1 text-xs text-ink-soft">
+          {live ? "New, Amazon's listing of this exact model." : "New, sold by Amazon and marketplace sellers. We can't show Amazon's price here."}
+        </div>
       </div>
+      {live && <AmazonLivePrice text={live.text} at={live.at} />}
       <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
-        Check price on Amazon <ExternalIcon className="h-3.5 w-3.5" />
+        {live ? "View on Amazon" : "Check price on Amazon"} <ExternalIcon className="h-3.5 w-3.5" />
       </span>
       <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
     </a>
