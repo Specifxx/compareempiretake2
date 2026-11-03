@@ -5,8 +5,9 @@
  * amazon.com.au, riftcompare-20 (the owner's US account) on amazon.com, compareempi03-21 (the owner's
  * UK account) on amazon.co.uk. Hard-coded (owner, 2026-11-02: no Vercel variable decides a tag).
  *
- * We have no Product Advertising API access yet, so we never show Amazon prices, ratings or
- * availability: links say "Check price on Amazon". Links carry rel="sponsored nofollow noopener".
+ * Prices: only from the Creators API, only in Australia, only on the product page's Amazon row and only
+ * while under 24 hours old (lib/amazon-live.ts, DECISIONS 2026-11-03). Until the API opens to the account,
+ * links say "Check price on Amazon". No ratings, ever. Links carry rel="sponsored nofollow noopener".
  */
 export const AMAZON_AU_TAG = "compareempire-22";
 export const AMAZON_REL = "sponsored nofollow noopener";
@@ -56,3 +57,9 @@ export function amazonLink(region: AmazonRegion, asinOrSearchTerm: string, place
   if (ASIN.test(v)) return `https://${a.host}/dp/${v}?tag=${encodeURIComponent(a.tag)}${sub}`;
   return `https://${a.host}/s?k=${encodeURIComponent(v)}&tag=${encodeURIComponent(a.tag)}${sub}`;
 }
+
+/** Amazon's licence: a Creators API price may be shown for 24 hours after it was fetched, with that time. */
+export const AMAZON_MAX_AGE_H = 24;
+/** Whether a price fetched at `at` may still be shown at `now`. */
+export const isFreshAmazonPrice = (at: string | undefined, now = Date.now()) =>
+  !!at && Number.isFinite(Date.parse(at)) && now - Date.parse(at) < AMAZON_MAX_AGE_H * 3600_000 && Date.parse(at) <= now + 60_000;

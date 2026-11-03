@@ -18,12 +18,15 @@ import { shareRows } from "@/lib/share-rows";
 import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { camCompareFor } from "@/lib/family";
+import { amazonFor } from "@/lib/amazon-live";
 
 export type ProductParams = Promise<{ category: string; slug: string }>;
 const load = async (params: ProductParams, region: RegionId) => {
   const { category, slug } = await params;
   return getProduct(category as CategoryId, slug, region);
 };
+/** The product page's copy of the product, with its Amazon links and live prices (AU only). */
+const withAmazon = (p: Phone, region: RegionId): Phone => ({ ...p, amazon: amazonFor(p, region) });
 
 /** hreflang links to the same product in the other regions we have it in. */
 function alternates(p: Phone) {
@@ -200,7 +203,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
       </nav>
 
       <Suspense>
-        <PhoneOffers phone={phone} chart={chart} checks={checks} />
+        <PhoneOffers phone={withAmazon(phone, region)} chart={chart} checks={checks} />
       </Suspense>
       <ReportPrice
         product={`${phone.brand} ${phone.model}`}

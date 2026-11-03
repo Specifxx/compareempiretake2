@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { marketplacesFor } from "@/lib/marketplaces";
 import { AmazonNote, AmazonRow } from "./AmazonLink";
+import { AMAZON_PRICE_DISCLAIMER } from "./AmazonLivePrice";
 import { amazonLink, amazonStore } from "@/lib/amazon";
 import { EbayListingRow, EbaySearchRow } from "./EbayListingRow";
 import { withRegion } from "@/lib/region";
@@ -186,7 +187,7 @@ export function PhoneOffers({
             )}
             <span className="text-xs text-ink-mute">{tab === "outright" ? "Cheapest in-stock first" : "Lowest monthly repayment first"}</span>
           </div>
-          <PinnedMarketplaces phone={phone} variantQuery={mq} product={href} cheapest={best?.price} />
+          <PinnedMarketplaces phone={phone} variantId={variant.id} variantQuery={mq} product={href} cheapest={best?.price} />
           {tab === "outright" ? (
           <>
           <ol className="space-y-2.5">
@@ -265,11 +266,13 @@ export function PhoneOffers({
  * second, as on every sister site); the marketplace searches follow, except in the quick view (`compact`).
  * None is ranked among the stores, counted as one or given the "Cheapest" badge.
  */
-export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest, compact = false }: { phone: Phone; variantQuery: string; product: string; cheapest?: number; compact?: boolean }) {
+export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product, cheapest, compact = false }: { phone: Phone; variantId?: string; variantQuery: string; product: string; cheapest?: number; compact?: boolean }) {
   const { $, R, region } = useRegionKit();
   const markets = marketplacesFor(region);
   // Never in the quick view (2026-11-02): Amazon's Operating Agreement allows no Amazon link in a pop-up window.
-  const amazonHref = compact ? null : amazonLink(region, mq, "product");
+  const live = compact || !variantId ? undefined : phone.amazon?.[variantId];
+  // The variant's own Amazon page when the ASIN finder matched it (scripts/amazon-asins.ts), else a tagged search.
+  const amazonHref = compact ? null : (live?.url ?? amazonLink(region, mq, "product"));
   const amazonName = amazonStore(region)?.name;
   const ebay = markets.find((m) => m.id === "ebay")!;
   const cid = `p-${phone.category}-${phone.slug}`;
@@ -286,7 +289,7 @@ export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest,
       ) : (
         <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} adjective={R.adjective} />
       )}
-      {amazonHref && <AmazonRow query={mq} product={product} placement="product" href={amazonHref} name={amazonName} />}
+      {amazonHref && <AmazonRow query={mq} product={product} placement={live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at } : undefined} />}
       {compact ? null : (
       <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
@@ -306,6 +309,7 @@ export function PinnedMarketplaces({ phone, variantQuery: mq, product, cheapest,
           <Link prefetch={false} href="/disclosure" className="underline">Learn more</Link>
         </p>
         {amazonHref && <AmazonNote className="mt-1" />}
+        {live?.price && <p className="mt-1 text-[11px] text-ink-mute">* Amazon price: {AMAZON_PRICE_DISCLAIMER}</p>}
       </div>
       )}
     </div>

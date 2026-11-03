@@ -1038,3 +1038,29 @@ name. The layout's JSON-LD adds a WebSite beside the Organization, and brand pag
 Already in place: Product + AggregateOffer and breadcrumbs on product pages, breadcrumbs + FAQPage on categories,
 reciprocal hreflang with the US root as x-default, price history on every product page, and no automatic geo-redirect
 (only a visitor who picked a region is moved; crawlers never; 2026-11-02). `tests/seo-audit.test.ts`.
+
+## 2026-11-03: Amazon AU prices from the Creators API, switched on by its keys
+
+The owner's Amazon Associates AU account was approved; he asked for Amazon price rows "using the API". Amazon's
+only product API is now the Creators API (PA-API 5 was retired in 2026). It opens only to accounts with
+qualifying sales (third-party guides say 10 in the last 30 days), is closed again after 30 days without one,
+and starts at 1 request a second and 8,640 a day. So the code ships now and does nothing until
+`AMAZON_CREATORS_AU_CLIENT_ID` / `_CLIENT_SECRET` (and `_VERSION`, 3.3 by default) exist, in GitHub secrets
+for the ASIN finder and in Vercel for the build. Without them, or while Amazon refuses, every product page
+keeps today's "Check price on Amazon" row.
+
+- **ASINs are found in GitHub Actions, prices by the build.** `scripts/amazon-asins.ts` (daily refresh,
+  `AMAZON_SEARCH_BUDGET` 400 searches) keeps a result only when `lib/listing-parse.ts` (the parser the
+  catalogue itself uses, moved out of `build-catalog.ts`) reads its title as the product's own group key and
+  variant; misses are retried after 30 days. ASINs may be stored, so `data/amazon/asins-au.json` is
+  committed; `status-au.json` says what the last run did (off, refused, ok). `scripts/fetch-amazon-prices.ts`
+  runs before `next build` (`AMAZON_BUILD_CALLS` 100 getItems calls, ten ASINs each, about two minutes),
+  most-compared products first, and writes the git-ignored `data/amazon-live/au.json`: Amazon's licence lets
+  a price be kept 24 hours and shown with its time, and a commit would keep it forever. It never fails a build.
+- **Where it shows.** Only the product page's Amazon row (`PinnedMarketplaces`): the variant's own `/dp/`
+  link once its ASIN is known (placement `product-asin`), and the new, in-stock, AUD buy-box price with
+  "as of <time> Sydney time" and Amazon's disclaimer under the marketplace box. The page drops a price over
+  24 hours old (`isFreshAmazonPrice`), and the browser checks again because the CDN keeps pages for hours.
+  A price outside 60%–160% of the variant's store median is dropped. Never in a sort, the "Cheapest" badge,
+  deals, alerts, history, feeds, metadata, JSON-LD, the quick view or another region
+  (`tests/amazon-api.test.ts` pins the reader to `ProductView`). The row stays an ad, outside the store order.

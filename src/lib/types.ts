@@ -266,6 +266,11 @@ export interface Phone {
   firstSeen: string;
   /** Today's cheapest matching new eBay listing (data/<region>/ebay.json), attached at load. */
   ebay?: { price: number; shipping?: number; title: string; url: string; seller?: string; feedback?: number; checkedAt: string };
+  /**
+   * Amazon per variant id (lib/amazon-live.ts): the ASIN's tagged link, and a Creators API price only while
+   * under 24 hours old. Attached by the product page alone (never the catalogue, deals, sorts or the quick view).
+   */
+  amazon?: Record<string, { asin: string; url: string; price?: number; at?: string }>;
   /** Set when the catalogue is loaded (not stored): the country this product's prices are from. */
   region?: import("./region").RegionId;
 }
