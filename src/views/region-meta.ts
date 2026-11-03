@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { activeRetailers, getProducts } from "@/lib/catalog";
 import { ogImage } from "@/lib/og";
+import { pickShareProduct, sharePhotos } from "@/lib/share-rows";
+import type { CategoryId } from "@/lib/types";
 import { HOME_PATH, REGION_IDS, REGIONS, withRegion, withXDefault, type RegionId } from "@/lib/region";
 
 /** A region goes live once it has products; until then its pages 404. */
@@ -10,6 +12,21 @@ const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the U
 
 /** hreflang alternates for the home page across live regions; x-default is the root (the US home). */
 export const homeLanguages = () => ({ ...Object.fromEntries(REGION_IDS.filter(regionLive).map((r) => [REGIONS[r].hreflang, HOME_PATH[r]])), "x-default": "/" });
+
+// The home card leads with a product everyone recognises, with three more kinds of product under the headline.
+const HERO_CATEGORIES: CategoryId[] = ["phones", "tvs", "laptops", "headphones", "consoles", "tablets"];
+const EXTRA_CATEGORIES: CategoryId[] = ["tvs", "headphones", "coffee-machines", "laptops", "air-fryers", "phones"];
+
+/** The home page's share card: "Compare prices.", the store count, and one real product's store prices. */
+export function homeCard(region: RegionId, stores: number): string {
+  let hero: ReturnType<typeof pickShareProduct> = null;
+  for (const c of HERO_CATEGORIES) if ((hero = pickShareProduct(getProducts(c, region)))) break;
+  hero ??= pickShareProduct(getProducts(undefined, region));
+  const extra = EXTRA_CATEGORIES.filter((c) => c !== hero?.p.category)
+    .flatMap((c) => sharePhotos(getProducts(c, region), 1))
+    .slice(0, 3);
+  return ogImage({ kind: "home", title: "Compare prices", stores, region, product: hero?.p.name, image: hero?.p.image, rows: hero?.rows, extra });
+}
 
 export function regionHomeMetadata(region: RegionId): Metadata {
   const R = REGIONS[region];
@@ -24,7 +41,7 @@ export function regionHomeMetadata(region: RegionId): Metadata {
     title: { absolute: title },
     description,
     alternates: { canonical: HOME_PATH[region], languages: homeLanguages() },
-    openGraph: { title, description, images: [{ url: ogImage({ title: `Is that sale actually real? Compare ${R.adjective} prices`, stores, region }), width: 1200, height: 630 }] },
+    openGraph: { title, description, images: [{ url: homeCard(region, stores), width: 1200, height: 630 }] },
   };
 }
 

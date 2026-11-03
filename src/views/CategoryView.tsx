@@ -12,6 +12,7 @@ import { HOME_PATH, money, withXDefault, REGION_IDS, REGIONS, withRegion, type R
 import { categoryById, CATEGORIES, DEPARTMENTS } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
 import { ogImage } from "@/lib/og";
+import { pickShareProduct, sharePhotos } from "@/lib/share-rows";
 import { EbayStrip } from "@/components/EbayStrip";
 import { AmazonPicks } from "@/components/AmazonPicks";
 
@@ -72,8 +73,16 @@ export async function categoryMetadata(params: CategoryParams, region: RegionId)
     title: { absolute: title },
     description,
     alternates: { canonical: categoryHref(c.id, region), ...(Object.keys(langs).length > 1 ? { languages: langs } : {}) },
-    openGraph: { url: categoryHref(c.id, region), images: [{ url: ogImage({ title: `Compare ${c.name.toLowerCase()} prices in ${inRegion(region)}`, stores: stores.length, category: c.name, region }), width: 1200, height: 630 }] },
+    openGraph: { url: categoryHref(c.id, region), images: [{ url: categoryCard(c.id as CategoryId, c.name, stores.length, region), width: 1200, height: 630 }] },
   };
+}
+
+/** The category's share card: its name, store count and one real product's store prices (src/app/og/route.tsx). */
+function categoryCard(id: CategoryId, name: string, stores: number, region: RegionId): string {
+  const products = getProducts(id, region);
+  const hero = pickShareProduct(products);
+  const extra = sharePhotos(products, 4, new Set(hero ? [hero.p.slug] : [])).filter((u) => u !== hero?.p.image).slice(0, 3);
+  return ogImage({ kind: "category", title: `Compare ${name.toLowerCase()} prices in ${inRegion(region)}`, category: name, stores, region, product: hero?.p.name, image: hero?.p.image, rows: hero?.rows, extra });
 }
 
 export async function CategoryView({ params, region }: { params: CategoryParams; region: RegionId }) {

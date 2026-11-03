@@ -14,6 +14,7 @@ import { slugify, storageLabel } from "@/lib/normalize";
 import { RETAILERS } from "@/lib/retailers";
 import { SITE } from "@/lib/site";
 import { ogImage } from "@/lib/og";
+import { shareRows } from "@/lib/share-rows";
 import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { camCompareFor } from "@/lib/family";
@@ -68,14 +69,18 @@ export async function productMetadata(params: ProductParams, region: RegionId): 
 function shareCard(p: Phone) {
   const v = p.variants.reduce((a, b) => (a.bestPrice <= b.bestPrice ? a : b));
   const check = checkVariant(p, v).check;
+  const share = shareRows(p);
   return ogImage({
-    title: p.name,
+    kind: "product",
+    title: nameFor(p, p.region ?? "au"),
     price: p.bestPrice,
     stores: p.retailerCount,
     verdict: check.verdict === "new" ? undefined : check.headline,
     region: p.region,
     image: p.image,
     category: categoryById(p.category)?.name,
+    product: share && p.variants.length > 1 ? `${p.model} · ${share.variant.label}` : p.model,
+    rows: share?.rows,
   });
 }
 
