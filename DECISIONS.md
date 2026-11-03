@@ -1010,3 +1010,15 @@ draws grey bars, never invented stores or prices.
 only thing that reads the catalogue. The card's URL carries its prices, so it changes when they do. Fonts are
 subset to Latin (60 KB). Store photos are fetched by the route and dropped unless PNG/JPEG under 3 MB within 2.5 s,
 so a slow or WebP photo blanks one tile instead of failing the card.
+
+## 2026-11-03 SEO audit: home titles, alt text, WebSite entity, brand breadcrumbs
+
+Bill's network SEO audit read the AU home title as 76 characters ("Compare Empire Australia — compare tech prices across
+131 Australian stores"), cut off in results, and 45 of 87 homepage photos without alt text. Home titles are now keyword
+first, brand last, all within 60: "Tech Price Comparison: Phones, Laptops, TVs | Compare Empire" (the root, still naming no
+country) and "Compare Tech Prices in Australia / the UK | Compare Empire". Every product photo (search, palette, guide
+cards, category tiles, Amazon picks, gallery thumbs, brand list, compare picker, guide tables, embed) carries the product
+name. The layout's JSON-LD adds a WebSite beside the Organization, and brand pages show a breadcrumb with a BreadcrumbList.
+Already in place: Product + AggregateOffer and breadcrumbs on product pages, breadcrumbs + FAQPage on categories,
+reciprocal hreflang with the US root as x-default, price history on every product page, and no automatic geo-redirect
+(only a visitor who picked a region is moved; crawlers never; 2026-11-02). `tests/seo-audit.test.ts`.

@@ -153,7 +153,7 @@ function TopTable({ rows }: { rows: Phone[] }) {
               <Link href={`/${p.category}/${p.slug}`} prefetch={false} className="flex items-center gap-3 px-3 py-3 transition hover:bg-bg-sunk sm:gap-4 sm:px-4">
                 <span className="w-5 shrink-0 text-center font-display text-sm font-bold text-ink-mute">{i + 1}</span>
                 <span className="img-tile grid h-14 w-14 shrink-0 place-items-center overflow-hidden rounded-xl">
-                  {p.image && <img src={p.image} alt="" loading="lazy" className="product-img h-full w-full object-contain p-1.5" />}
+                  {p.image && <img src={p.image} alt={p.name} loading="lazy" className="product-img h-full w-full object-contain p-1.5" />}
                 </span>
                 <span className="min-w-0 flex-1">
                   <span className="line-clamp-2 text-sm font-semibold leading-snug">{p.name}</span>

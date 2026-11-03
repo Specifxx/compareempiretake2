@@ -74,7 +74,7 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
                 className={`flex w-full items-center gap-3 rounded-xl px-3 py-2 text-left ${i === active ? "bg-bg-sunk" : ""}`}
               >
                 <div className="img-tile grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-lg">
-                  {r.image ? <img src={r.image} alt="" className="product-img h-11 w-11 object-contain" loading="lazy" /> : <span className="text-xs font-bold text-brand">{r.kind === "vs" ? "VS" : "📖"}</span>}
+                  {r.image ? <img src={r.image} alt={r.name} className="product-img h-11 w-11 object-contain" loading="lazy" /> : <span className="text-xs font-bold text-brand">{r.kind === "vs" ? "VS" : "📖"}</span>}
                 </div>
                 <div className="min-w-0 flex-1">
                   <div className="truncate font-medium">{r.name}</div>

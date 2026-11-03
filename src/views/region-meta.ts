@@ -32,10 +32,8 @@ export function regionHomeMetadata(region: RegionId): Metadata {
   const R = REGIONS[region];
   const stores = activeRetailers(undefined, region).length;
   // The root names no country (owner, 2026-11-01: "if anything, no region at all"); its stores are American.
-  const title =
-    region === "us"
-      ? "Compare Empire — tech price comparison: phones, laptops, TVs & more"
-      : `Compare Empire ${region === "au" ? "Australia" : R.adjective} — compare tech prices across ${stores} ${R.adjective} stores`;
+  // 60 characters or fewer, keyword first, brand last (SEO audit, 2026-11-03: the AU title ran to 76 and was cut off).
+  const title = region === "us" ? "Tech Price Comparison: Phones, Laptops, TVs | Compare Empire" : `Compare Tech Prices in ${IN[region]} | Compare Empire`;
   const description = `Phones, laptops, TVs, headphones and more: every price at ${stores} ${R.adjective} stores, checked daily, with price history to spot fake sales in ${IN[region]}.`;
   return {
     title: { absolute: title },

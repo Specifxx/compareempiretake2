@@ -91,7 +91,7 @@ export function PhoneOffers({
           <div className="mt-3 flex gap-2 overflow-x-auto scrollbar-none">
             {images.map((src, i) => (
               <button key={src} onClick={() => setImg(i)} className={`img-tile h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 ${i === img ? "border-brand" : "border-transparent"}`}>
-                <img src={src} alt="" className="product-img h-full w-full object-contain p-1.5" loading="lazy" />
+                <img src={src} alt={`${phone.name}, photo ${i + 1}`} className="product-img h-full w-full object-contain p-1.5" loading="lazy" />
               </button>
             ))}
           </div>

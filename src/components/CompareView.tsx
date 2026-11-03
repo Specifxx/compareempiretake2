@@ -125,7 +125,7 @@ export function CompareView() {
               {options.map((e) => (
                 <li key={e.href}>
                   <button className="flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left hover:bg-bg-sunk" onClick={() => { setList([...kept, e.href]); setQ(""); }}>
-                    <span className="img-tile grid h-9 w-9 place-items-center rounded-md">{e.image && <img src={e.image} alt="" className="product-img h-8 w-8 object-contain" />}</span>
+                    <span className="img-tile grid h-9 w-9 place-items-center rounded-md">{e.image && <img src={e.image} alt={e.name} className="product-img h-8 w-8 object-contain" />}</span>
                     <span className="flex-1 text-sm font-medium">{e.name}</span>
                     {e.price !== undefined && <span className="text-sm text-ink-mute">{$(e.price)}</span>}
                   </button>

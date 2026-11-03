@@ -121,12 +121,17 @@ export function guideHero(g: Guide) {
 
 /** Up to `n` photographed products a guide is about: its hero, then the products its blocks name. For its thumbnail. */
 export function guideImages(g: Guide, n = 3): string[] {
+  return guidePhotos(g, n).map((x) => x.src);
+}
+
+/** guideImages with each photo's product name, for alt text (SEO audit, 2026-11-03). */
+export function guidePhotos(g: Guide, n = 3): { src: string; alt: string }[] {
   const refs = [g.hero ?? "", ...[...g.body.matchAll(/^\[\[(?:phone|compare|build):([^\]]+)\]\]$/gm)].flatMap((m) => m[1].split(",").map((x) => x.split("|")[0].trim()))];
-  const out: string[] = [];
+  const out: { src: string; alt: string }[] = [];
   for (const ref of refs) {
     if (!ref) continue;
     const p = ref.includes("/") ? getProduct(ref.split("/")[0] as CategoryId, ref.split("/")[1]) : getPhone(ref);
-    if (p?.image && !out.includes(p.image)) out.push(p.image);
+    if (p?.image && !out.some((x) => x.src === p.image)) out.push({ src: p.image, alt: p.name });
     if (out.length >= n) break;
   }
   return out;

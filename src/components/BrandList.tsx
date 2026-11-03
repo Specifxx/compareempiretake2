@@ -14,7 +14,7 @@ export function BrandList({ brands }: { brands: BrandInfo[] }) {
       {brands.map((b) => (
         <Link prefetch={false} key={b.slug} href={`/brands/${b.slug}`} className="card group flex items-center gap-4 p-4 transition hover:shadow-lift">
           <div className="img-tile grid h-16 w-16 shrink-0 place-items-center overflow-hidden rounded-xl">
-            {b.image && <img src={b.image} alt="" className="product-img h-14 w-14 object-contain" loading="lazy" />}
+            {b.image && <img src={b.image} alt={`${b.brand} products`} className="product-img h-14 w-14 object-contain" loading="lazy" />}
           </div>
           <div className="min-w-0">
             <div className="font-display text-lg font-bold">{b.brand}</div>

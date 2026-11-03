@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { PhoneBrowser } from "@/components/PhoneBrowser";
 import { gridProps, gridSrc } from "@/lib/browse";
 import { getBrands, getSummaries, gridVersion } from "@/lib/catalog";
+import Link from "next/link";
+import { SITE } from "@/lib/site";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -27,6 +29,23 @@ export default async function BrandPage({ params }: { params: Promise<{ brand: s
   const phones = getSummaries().filter((p) => p.brand === brand.brand);
   return (
     <div className="container-x pt-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+              { "@type": "ListItem", position: 2, name: "Brands", item: `${SITE}/brands` },
+              { "@type": "ListItem", position: 3, name: brand.brand, item: `${SITE}/brands/${brand.slug}` },
+            ],
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
+      <nav aria-label="Breadcrumb" className="mb-2 text-sm text-ink-mute">
+        <Link prefetch={false} href="/" className="hover:text-brand">Home</Link> / <Link prefetch={false} href="/brands" className="hover:text-brand">Brands</Link> / <span>{brand.brand}</span>
+      </nav>
       <div className="eyebrow">Brand</div>
       <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{brand.brand}</h1>
       <p className="mt-2 text-ink-mute">{phones.length} {brand.brand} products across {brand.categories.length} {brand.categories.length === 1 ? "category" : "categories"}, from ${brand.from.toLocaleString("en-AU")}.</p>
