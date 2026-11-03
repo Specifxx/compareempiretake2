@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
+import { RateCard } from "@/components/site-reviews/RateCard";
 import { QuickView } from "@/components/QuickView";
 import { RegionNotice } from "@/components/RegionNotice";
 import { activeCategories, categoryHref, getBrands, liveRegions } from "@/lib/catalog";
@@ -15,6 +16,7 @@ import type { NavDepartment } from "@/components/Header";
 import type { CategoryId } from "@/lib/types";
 import { CONTACT_EMAIL, SITE } from "@/lib/site";
 import "./globals.css";
+import "@/components/site-reviews/site-reviews.css";
 import { SEASON_BOOT_SCRIPT } from "@/lib/season";
 
 // Self-hosted (OFL, from Fontsource) so builds never depend on fetching Google Fonts.
@@ -131,6 +133,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CompareTray />
         <QuickView />
         <FeedbackWidget />
+        {/* Rate us (owner, 2026-11-03): the corner card, asking only after real use; RiftCompare keeps the ratings. */}
+        <RateCard />
         <SiteAnalytics />
         <ShareArrival />
       </body>

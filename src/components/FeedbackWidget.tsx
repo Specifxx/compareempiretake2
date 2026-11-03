@@ -1,4 +1,5 @@
 "use client";
+import { RatingForm } from "./site-reviews/RatingForm";
 import { CONTACT_EMAIL } from "@/lib/site";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -102,40 +103,15 @@ function FeedbackForm({ page }: { page: string }) {
   );
 }
 
+/**
+ * The review tab: the shared rating-and-review form (owner, 2026-11-03: every site's reviews approved in RiftCompare's admin,
+ * star ratings public at once). Reviews sent before then stay in this site's own table and keep showing (ReviewsSection).
+ */
 function ReviewForm() {
-  const [rating, setRating] = useState(0);
-  const [name, setName] = useState("");
-  const [body, setBody] = useState("");
-  const [email, setEmail] = useState("");
-  const [hp, setHp] = useState("");
-  const [state, setState] = useState<{ s: "idle" | "busy" | "ok" | "error"; msg?: string }>({ s: "idle" });
-  if (state.s === "ok") return <Thanks>Thank you! Your review will appear once we&apos;ve checked it isn&apos;t spam — usually within a day.</Thanks>;
   return (
-    <form
-      className="mt-4 space-y-3"
-      onSubmit={async (e) => {
-        e.preventDefault();
-        setState({ s: "busy" });
-        const r = await post("/api/reviews", { rating, name, body, email, website: hp });
-        setState(r.ok ? { s: "ok" } : { s: "error", msg: r.msg });
-      }}
-    >
-      <div>
-        <div className="text-sm font-medium">How was Compare Empire for you?</div>
-        <div className="mt-1 flex gap-1" role="radiogroup" aria-label="Rating">
-          {[1, 2, 3, 4, 5].map((n) => (
-            <button type="button" key={n} onClick={() => setRating(n)} role="radio" aria-checked={rating === n} aria-label={`${n} stars`} className={`text-3xl leading-none transition ${n <= rating ? "text-[#E7A600]" : "text-line hover:text-[#E7A600]/60"}`}>★</button>
-          ))}
-        </div>
-      </div>
-      <input value={name} onChange={(e) => setName(e.target.value)} maxLength={60} placeholder="Your first name (shown with your review)" className="h-11 w-full rounded-xl border border-line bg-bg px-3 text-sm outline-none focus:border-brand" />
-      <textarea required value={body} onChange={(e) => setBody(e.target.value)} rows={4} maxLength={2000} placeholder="What did you use it for? Did it save you money? What's missing?" className="w-full rounded-xl border border-line bg-bg p-3 text-sm outline-none focus:border-brand" />
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email (optional, never shown)" className="h-11 w-full rounded-xl border border-line bg-bg px-3 text-sm outline-none focus:border-brand" />
-      <input value={hp} onChange={(e) => setHp(e.target.value)} tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
-      {state.s === "error" && <p className="text-sm text-hot">{state.msg}</p>}
-      <button className="btn-primary w-full" disabled={state.s === "busy" || !rating}>{state.s === "busy" ? "Sending…" : "Post review"}</button>
-      <p className="text-[11px] text-ink-mute">We publish every genuine review, good or bad. We only remove spam, abuse or personal details.</p>
-    </form>
+    <div className="mt-4">
+      <RatingForm />
+    </div>
   );
 }
 
