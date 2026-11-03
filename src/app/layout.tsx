@@ -38,8 +38,9 @@ export const metadata: Metadata = {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "AzWwvsCoV2fKvjAspJUFFd77HqxcG_7Eb_4P7cTDOHk",
     other: {
       "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? "04270C74F268EA0135FD19602057D497",
-      // Commission Factory site ownership (affiliate network).
-      "commission-factory-verification": "7d3167b7f3264490902052134cfafc08",
+      // Commission Factory site ownership (affiliate network): one tag per verification code. The
+      // second was requested 2026-11-03; the first (#18) stays so the earlier verification holds.
+      "commission-factory-verification": ["7d3167b7f3264490902052134cfafc08", "b10c49c2a5ca4100ba4cb4e3002f3e8b"],
     },
   },
 };
