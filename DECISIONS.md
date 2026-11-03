@@ -1096,3 +1096,16 @@ and the catalogue already carries these phones in every region; the homepage did
 - Adding a launch is one entry; it drops off the homepage after `featureUntil`. The launch calendar (`/launches`,
   `/uk/launches`, `/us/launches`, `views/LaunchesView.tsx`, in the sitemap, linked from the row) lists every entry,
   coming soon then newest out, with its pre-order and release dates, the source link and the region's store price.
+## 2026-11-03: A Creators page and a homepage bubble, like RiftCompare's
+
+Owner: "having the creators page for all of these sites as well is really, really good. Like just a bubble and then a
+really nice formatted creators page, just like how RiftCompare does it." Word of mouth from creators and visitors is the
+sites' main growth channel, so every site gets one.
+
+`/creators` is RiftCompare's page in Compare Empire's theme, without the parts that need a database: the list is the
+static array in `src/lib/creators.ts` (empty until the first creator agrees; the grid shows "Your channel here" spots,
+never an invented creator), applying is a pre-filled email to `CONTACT_EMAIL`, and there are no creator codes. "Buy them
+a coffee" is the creator's own Ko-fi, Patreon or tip page: the site never handles the money. `CreatorsCornerBadge` is the
+bubble in the homepage hero (top-right from sm, a centred pill above the headline on a phone); the footer and the sitemap
+link the page. Prerendered like /about: no data or request read, no ISR. Not called "partners" anywhere: that word means
+the affiliate links.
