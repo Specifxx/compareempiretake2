@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T03:53:44.929Z",
+ "scrapedAt": "2026-11-03T02:00:14.386Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -116,6 +116,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "896738",
+   "title": "ASKO W3114CXLW Logic 11kg Steel Seal Front Load Washer",
+   "url": "https://www.jbhifi.com.au/products/asko-w3114cxlw-logic-11kg-steel-seal-front-load-washer",
+   "price": 2464,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896738-Product-0-I-639140617202391563.jpg?v=1778464985",
+   "inStock": false,
+   "brand": "Asko"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "564535",
    "title": "ASKO W4086C 8kg Logic Front Load Washer",
    "url": "https://www.jbhifi.com.au/products/asko-w4086c-8kg-logic-front-load-washer",
@@ -171,6 +181,16 @@
    "url": "https://www.jbhifi.com.au/products/asko-w7956xlg-style-9-5kg-steel-seal-front-load-washer-graphite-black",
    "price": 3229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896751-Product-0-I-639141446404646606.jpg?v=1778547905",
+   "inStock": false,
+   "brand": "Asko"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "896747",
+   "title": "ASKO W7956XLW Style+ 9.5kg Steel Seal Front Load Washer (White)",
+   "url": "https://www.jbhifi.com.au/products/asko-w7956xlw-style-9-5kg-steel-seal-front-load-washer-white",
+   "price": 2974,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896747-Product-0-I-639141444002919927.jpg?v=1778547665",
    "inStock": false,
    "brand": "Asko"
   },
@@ -639,17 +659,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/885660-Product-0-I-639063630602631697.jpg?v=1770766326",
    "inStock": true,
    "mpn": "DH8060J5",
-   "brand": "Fisher & Paykel"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "482988",
-   "title": "Fisher & Paykel DH8060P3 8kg Heat Pump Dryer (White)",
-   "url": "https://www.jbhifi.com.au/products/fisher-paykel-dh8060p3-8kg-heat-pump-dryer-white",
-   "price": 844,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/482988-Product-0-I-638091181041503418.jpg?v=1791255955",
-   "inStock": true,
-   "mpn": "DH8060P3",
    "brand": "Fisher & Paykel"
   },
   {
@@ -1173,7 +1182,7 @@
    "url": "https://www.jbhifi.com.au/products/haier-hwt10an1-10kg-top-load-washing-machine-white",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/495495-Product-0-I-637489750936604800.jpg?v=1791255970",
-   "inStock": false,
+   "inStock": true,
    "mpn": "HWT10AN1",
    "brand": "Haier"
   },
@@ -1664,6 +1673,17 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "896489",
+   "title": "LG WXC3-1410W Series 3 10kg/6kg Front Load Washer Dryer Combo (White)",
+   "url": "https://www.jbhifi.com.au/products/lg-wxc3-1410w-series-3-10kg-6kg-front-load-washer-dryer-combo-white",
+   "price": 1077,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896489-Product-0-I-639147650405228785.jpg?v=1779168305",
+   "inStock": true,
+   "mpn": "WXC3-1410W",
+   "brand": "Lg"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "883393",
    "title": "LG WXLC-1016GX 16/10kg Series XL Front Load Washer Combo (Graphite)",
    "url": "https://www.jbhifi.com.au/products/lg-wxlc-1016gx-16-10kg-series-xl-front-load-washer-combo-graphite",
@@ -1839,6 +1859,18 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "918951",
+   "title": "TCL DH90C60W 9kg Heat Pump Dryer (White)",
+   "url": "https://www.jbhifi.com.au/products/tcl-dh90c60w-9kg-heat-pump-dryer-white",
+   "price": 999,
+   "wasPrice": 1199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918951-Product-0-I-639291918605050469.jpg?v=1793595185",
+   "inStock": true,
+   "mpn": "DH90C60W",
+   "brand": "Tcl"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "610554",
    "title": "TCL F708TLW 8kg Top Load Washing Machine",
    "url": "https://www.jbhifi.com.au/products/tcl-f708tlw-8kg-top-load-washing-machine",
@@ -1866,6 +1898,42 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895663-Product-0-I-639113913004329526.jpg?v=1775794586",
    "inStock": true,
    "mpn": "WA10P60G",
+   "brand": "Tcl"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "918952",
+   "title": "TCL WF10C60W 10.5kg Front Load Washer (White)",
+   "url": "https://www.jbhifi.com.au/products/tcl-wf10c60w-10-5kg-front-load-washer-white",
+   "price": 899,
+   "wasPrice": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918952-Product-0-I-639291801004538051.jpg?v=1793583425",
+   "inStock": true,
+   "mpn": "WF10C60W",
+   "brand": "Tcl"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "918109",
+   "title": "TCL WF10P12W 10kg Front Load Washer (White)",
+   "url": "https://www.jbhifi.com.au/products/tcl-wf10p12w-10kg-front-load-washer-white",
+   "price": 599,
+   "wasPrice": 799,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918109-Product-0-I-639291807604905577.jpg?v=1793584024",
+   "inStock": false,
+   "mpn": "WF10P12W",
+   "brand": "Tcl"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "918108",
+   "title": "TCL WF75P12W 7.5kg Front Load Washer (White)",
+   "url": "https://www.jbhifi.com.au/products/tcl-wf75p12w-7-5kg-front-load-washer-white",
+   "price": 449,
+   "wasPrice": 599,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918108-Product-0-I-639291816003112985.jpg?v=1793584806",
+   "inStock": false,
+   "mpn": "WF75P12W",
    "brand": "Tcl"
   },
   {
@@ -1922,6 +1990,28 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/544693-Product-0-I-637800758302491730.jpg?v=1790718314",
    "inStock": true,
    "mpn": "WDV656N3WB",
+   "brand": "Westinghouse"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "883471",
+   "title": "Westinghouse WWF1044M7SAS EasyCare 700 Series 10kg Front Load Washer (Dark Onyx)",
+   "url": "https://www.jbhifi.com.au/products/westinghouse-wwf1044m7sas-easycare-700-series-10kg-front-load-washer-dark-onyx",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/883471-Product-0-I-639043930204824632.jpg?v=1768796284",
+   "inStock": true,
+   "mpn": "WWF1044M7SAS",
+   "brand": "Westinghouse"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "883467",
+   "title": "Westinghouse WWF1044M7WAS EasyCare 700 Series 10kg Front Load Washer (White)",
+   "url": "https://www.jbhifi.com.au/products/westinghouse-wwf1044m7was-easycare-700-series-10kg-front-load-washer-white",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/883467-Product-0-I-639043918203310376.jpg?v=1768795104",
+   "inStock": true,
+   "mpn": "WWF1044M7WAS",
    "brand": "Westinghouse"
   },
   {

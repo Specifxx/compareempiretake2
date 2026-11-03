@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:06:58.358Z",
+ "scrapedAt": "2026-11-03T02:18:46.201Z",
  "offers": [
   {
    "retailer": "us-bloomaudio",
@@ -229,7 +229,7 @@
    "url": "https://bloomaudio.com/products/64-audio-u4s?variant=41570964865099",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/64-audio-u4s-1-thumbnail-main.jpg?v=1691002660",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-bloomaudio",
@@ -372,7 +372,8 @@
    "sku": "AK-64A-XIO",
    "title": "Astell&Kern x 64 Audio XIO | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/astell-kern-64-audio-xio?variant=42091508269131",
-   "price": 3000,
+   "price": 2500,
+   "wasPrice": 3000,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ak-64a-0-xio-thumb.webp?v=1754510816",
    "inStock": true,
    "brand": "Astell&Kern",
@@ -742,7 +743,7 @@
    "url": "https://bloomaudio.com/products/audio-technica-ath-s120c?variant=40900652138571",
    "price": 32,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/audio-technica-ath-s120c-grey-2-thumbnail.jpg?v=1720634100",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audio-Technica",
    "mpn": "ATH-S120C-GY"
   },
@@ -753,7 +754,7 @@
    "url": "https://bloomaudio.com/products/audio-technica-ath-s120c?variant=40900657807435",
    "price": 32,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/audio-technica-ath-s120c-violet-1-thumbnail.jpg?v=1720634100",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audio-Technica",
    "mpn": "ATH-S120C-LV"
   },
@@ -1461,7 +1462,7 @@
    "url": "https://bloomaudio.com/products/ddhifi-e13p-memory?variant=41847289872459",
    "price": 169.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ddhifi-1-E13P-thumb.webp?v=1752776636",
-   "inStock": true,
+   "inStock": false,
    "brand": "ddHiFi",
    "mpn": "DD-E13P-MEMORY"
   },
@@ -1710,7 +1711,7 @@
    "price": 67.99,
    "wasPrice": 79.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/dunu-titan-s2-0-thumb.jpg?v=1719844849",
-   "inStock": false,
+   "inStock": true,
    "brand": "DUNU",
    "mpn": "DUN-TITAN-S2"
   },
@@ -2106,7 +2107,7 @@
    "url": "https://bloomaudio.com/products/final-d8000-pro-dc",
    "price": 4799,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/final-d8000-pro-dc-0-thumb.webp?v=1729692144",
-   "inStock": false,
+   "inStock": true,
    "brand": "Final Audio",
    "mpn": "FA-D8000-PRO-DC"
   },
@@ -2992,7 +2993,7 @@
    "url": "https://bloomaudio.com/products/ice-lab-lumira?variant=67227067121739",
    "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/icelab-lumira-main-thumb.webp?v=1791818824",
-   "inStock": false,
+   "inStock": true,
    "brand": "Ice Lab"
   },
   {

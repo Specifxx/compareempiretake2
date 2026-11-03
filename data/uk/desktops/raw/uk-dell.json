@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:18:34.237Z",
+ "scrapedAt": "2026-11-03T02:29:50.649Z",
  "offers": [
   {
    "retailer": "uk-dell",
@@ -25,6 +25,16 @@
   },
   {
    "retailer": "uk-dell",
+   "sku": "aat2250_reg_01",
+   "brand": "Alienware",
+   "title": "Alienware Area-51 Gaming Desktop - Intel Core Ultra 9 285K, 32 GB DDR5, 1 TB SSD",
+   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/alienwarearea51aat2250/aat2250_reg_01",
+   "price": 34955.9,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/area-51-r8/media-gallery/360mm/desktop-alienware-area51-r8-360-silver-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=605&qlt=100,0&resMode=sharp2&size=605,804",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-dell",
    "sku": "alienwareauroraact1250",
    "brand": "Alienware",
    "title": "Alienware Aurora Gaming Desktop",
@@ -33,16 +43,6 @@
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-aurora-r16-arl/media-gallery/240mm/desktop-alienware-act1250-240mm-bk-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=855&qlt=100,0&resMode=sharp2&size=855,804",
    "inStock": true,
    "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "act1250_reg_01",
-   "brand": "Alienware",
-   "title": "Alienware Aurora Gaming Desktop - Intel Core Ultra 7 265F, 16 GB DDR5, 1 TB SSD",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/alienwareauroraact1250/act1250_reg_01",
-   "price": 32191.1,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-aurora-r16-arl/media-gallery/240mm/desktop-alienware-act1250-240mm-bk-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=855&qlt=100,0&resMode=sharp2&size=855,804",
-   "inStock": true
   },
   {
    "retailer": "uk-dell",
@@ -72,10 +72,20 @@
    "brand": "Dell",
    "title": "Dell 27 All-In-One Desktop",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dell27allinoneec27260",
-   "price": 1293.96,
+   "price": 1180.76,
    "image": "https://i.dell.com/assetlink/img/en/aio-dell-27-ec27260t-gy-gallery-1-dl1f7d9-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1000&qlt=100,0&resMode=sharp2&size=1000,804",
    "inStock": true,
    "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "ec27260_so_04",
+   "brand": "Dell",
+   "title": "Dell 27 All-In-One Desktop - Intel Core Ultra 5 322, 16 GB DDR5, 512 GB SSD, 27\" Touch FHD (1920x1080)",
+   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dell27allinoneec27260/ec27260_so_04",
+   "price": 31180.76,
+   "image": "https://i.dell.com/assetlink/img/en/aio-dell-27-ec27260t-gy-gallery-1-dl1f7d9-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1000&qlt=100,0&resMode=sharp2&size=1000,804",
+   "inStock": true
   },
   {
    "retailer": "uk-dell",
@@ -215,7 +225,7 @@
    "brand": "Dell",
    "title": "Dell Pro Max Tower T2 Desktop",
    "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellpromaxtowert2fct2250",
-   "price": 1542.34,
+   "price": 1546.8,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcst2250/media-gallery/desktop-dell-pro-max-fct2250-tower-bk-lockable-hdd-slim-odd-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=611&qlt=100,0&resMode=sharp2&size=611,804",
    "inStock": true,
    "fromPrice": true
@@ -281,7 +291,7 @@
    "brand": "Dell",
    "title": "Dell Pro Precision 9 T2 Desktop",
    "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision9t2pw9t2260",
-   "price": 4121.14,
+   "price": 4125.6,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t2-pw9t2260/media-gallery/desktop-precision-pw9t2260-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=553&qlt=100,0&resMode=sharp2&size=553,804",
    "inStock": true,
    "fromPrice": true
@@ -292,7 +302,7 @@
    "brand": "Dell",
    "title": "Dell Pro Precision 9 T4 Desktop",
    "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision9t4pw9t4260",
-   "price": 5613.94,
+   "price": 5618.4,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t4-pw9t4260/media-gallery/desktop-dell-pro-precision-pw9t4260-premium-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=549&qlt=100,0&resMode=sharp2&size=549,804",
    "inStock": true,
    "fromPrice": true
@@ -303,7 +313,7 @@
    "brand": "Dell",
    "title": "Dell Pro Precision 9 T6 Desktop",
    "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision9t6pw9t6260",
-   "price": 7023.05,
+   "price": 7024.8,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t6-pw9t6260/media-gallery/desktop-precision-pw9t6260-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=617&qlt=100,0&resMode=sharp2&size=617,804",
    "inStock": true,
    "fromPrice": true
@@ -398,16 +408,6 @@
   },
   {
    "retailer": "uk-dell",
-   "sku": "qct1250_reg_03",
-   "brand": "Dell",
-   "title": "Dell Pro Tower Desktop - Intel Core Ultra 5 235, 16 GB DDR5, 512 GB SSD",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellprotowerqct1250/qct1250_reg_03",
-   "price": 31390.26,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qct1250/media-gallery/desktop-dell-pro-qct1250-tower-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=486&qlt=100,0&resMode=sharp2&size=486,804",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-dell",
    "sku": "dellprotowerplusqbt1250",
    "brand": "Dell",
    "title": "Dell Pro Tower Plus Desktop",
@@ -445,7 +445,7 @@
    "brand": "Dell",
    "title": "Dell Slim Desktop - Intel Core i5-14400, 16 GB DDR5, 512 GB SSD",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellslimecs1250/ecs1250_fixed_76",
-   "price": 3909.61,
+   "price": 3818.61,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ecs1250/media-gallery/with-reader/desktop-ecs1250-slim-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=485&qlt=100,0&resMode=sharp2&size=485,804",
    "inStock": true
   },
@@ -477,10 +477,20 @@
    "brand": "Dell",
    "title": "Dell Tower Plus Desktop",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/delltowerplusebt2250",
-   "price": 1479.91,
+   "price": 1257.91,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ebt2250/mg/black/desktop-tower-ebt2250-c-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=625&qlt=100,0&resMode=sharp2&size=625,804",
    "inStock": true,
    "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "ebt2250_reg_01",
+   "brand": "Dell",
+   "title": "Dell Tower Plus Desktop - Intel Core Ultra 7 265, 16 GB DDR5, 512 GB SSD",
+   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/delltowerplusebt2250/ebt2250_reg_01",
+   "price": 31257.91,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ebt2250/mg/black/desktop-tower-ebt2250-c-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=625&qlt=100,0&resMode=sharp2&size=625,804",
+   "inStock": true
   }
  ]
 }

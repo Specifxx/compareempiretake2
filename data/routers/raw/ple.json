@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T03:41:19.057Z",
+ "scrapedAt": "2026-11-03T01:52:32.519Z",
  "offers": [
   {
    "retailer": "ple",
@@ -391,7 +391,7 @@
    "price": 69,
    "wasPrice": 169,
    "image": "https://plecom.imgix.net/iil-350348-661573.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -580,18 +580,6 @@
    "price": 159,
    "image": "https://plecom.imgix.net/iil-449708-679722.jpg?w=600&h=600",
    "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "678964",
-   "title": "TP-Link Archer MR505 - 4G+ Cat6 AC1200 Wireless Dual Band Gigabit Router",
-   "brand": "TP-Link",
-   "mpn": "Archer MR505",
-   "url": "https://www.ple.com.au/products/678964/tp-link-archer-mr505-4g-cat6-ac1200-wireless-dual-band-gigabit-router",
-   "price": 99,
-   "wasPrice": 199,
-   "image": "https://plecom.imgix.net/iil-446954-678964.jpg?w=600&h=600",
-   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1060,8 +1048,7 @@
    "brand": "TP-Link",
    "mpn": "ER605",
    "url": "https://www.ple.com.au/products/643986/tp-link-safestream-er605-gigabit-multi-wan-vpn-router",
-   "price": 89,
-   "wasPrice": 129,
+   "price": 129,
    "image": "https://plecom.imgix.net/iil-474202-643986.jpg?w=600&h=600",
    "inStock": true
   },

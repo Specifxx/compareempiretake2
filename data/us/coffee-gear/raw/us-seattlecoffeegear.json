@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:10:58.272Z",
+ "scrapedAt": "2026-11-03T02:22:33.166Z",
  "offers": [
   {
    "retailer": "us-seattlecoffeegear",
@@ -149,7 +149,8 @@
    "sku": "GRN929O1240",
    "title": "Ascaso H64 Espresso Grinder Black",
    "url": "https://www.seattlecoffeegear.com/products/ascaso-h64-espresso-grinder?variant=52361248801075",
-   "price": 895,
+   "price": 805.5,
+   "wasPrice": 895,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/AscasoH64EspressoGrindernew-6.jpg?v=1767994721",
    "inStock": true,
    "brand": "Ascaso",
@@ -160,7 +161,8 @@
    "sku": "GRN929O1260",
    "title": "Ascaso H64 Espresso Grinder White",
    "url": "https://www.seattlecoffeegear.com/products/ascaso-h64-espresso-grinder?variant=52361248833843",
-   "price": 895,
+   "price": 805.5,
+   "wasPrice": 895,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/AscasoH64EspressoGrindernew.jpg?v=1767994586",
    "inStock": true,
    "brand": "Ascaso",
@@ -729,30 +731,6 @@
   },
   {
    "retailer": "us-seattlecoffeegear",
-   "sku": "GRN724M2940",
-   "title": "Eureka Mignon Crono Brew Coffee Grinder Black",
-   "url": "https://www.seattlecoffeegear.com/products/eureka-mignon-crono-brew-coffee-grinder?variant=48998057378099",
-   "price": 199,
-   "wasPrice": 229,
-   "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/Eureka_Mignon_Crono_Brew_Coffee_Grindernew.jpg?v=1734115230",
-   "inStock": false,
-   "brand": "Eureka",
-   "mpn": "GRN724M2940"
-  },
-  {
-   "retailer": "us-seattlecoffeegear",
-   "sku": "GRN724M2960",
-   "title": "Eureka Mignon Crono Brew Coffee Grinder White",
-   "url": "https://www.seattlecoffeegear.com/products/eureka-mignon-crono-brew-coffee-grinder?variant=48998057410867",
-   "price": 199,
-   "wasPrice": 219,
-   "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/Eureka_Mignon_Crono_Brew_Coffee_Grindernew-5.jpg?v=1726259445",
-   "inStock": false,
-   "brand": "Eureka",
-   "mpn": "GRN724M2960"
-  },
-  {
-   "retailer": "us-seattlecoffeegear",
    "sku": "GRN724L2640",
    "title": "Eureka Mignon Filtro Silent Coffee Grinder Black",
    "url": "https://www.seattlecoffeegear.com/products/eureka-mignon-filtro-silent-coffee-grinder?variant=47157197111603",
@@ -1111,7 +1089,7 @@
    "url": "https://www.seattlecoffeegear.com/products/eureka-zenith-65-e-hi-speed-espresso-grinder?variant=47157163589939",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/EUREKAZENITHNEO65EHI-SPEEDESPRESSOGRINDERnew-1.jpg?v=1710821116",
-   "inStock": true,
+   "inStock": false,
    "brand": "Eureka",
    "mpn": "GRN724J2180"
   },
@@ -1551,7 +1529,7 @@
    "url": "https://www.seattlecoffeegear.com/products/kalita-wave-stainless-steel-dripper?variant=47202669297971",
    "price": 39.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/KALITAWAVESTAINLESSSTEELDRIPPERnew-1.jpg?v=1711418480",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kalita",
    "mpn": "CPO436B0120"
   },

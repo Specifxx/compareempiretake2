@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:09:00.984Z",
+ "scrapedAt": "2026-11-03T02:20:23.370Z",
  "offers": [
   {
    "retailer": "us-espressoparts",
@@ -188,7 +188,7 @@
    "url": "https://www.espressoparts.com/products/espresso-machine-thermofilter-1-temperature-device-scace-device-only",
    "price": 400,
    "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/products/ep_thermofilter1_1.jpg?v=1610085609",
-   "inStock": true,
+   "inStock": false,
    "mpn": "EP_THERMOFILTER1"
   },
   {
@@ -376,7 +376,8 @@
    "sku": "D8ONE-CHROME",
    "title": "Sanremo D8 ONE Group Volumetric Espresso Machine - Chrome & Black",
    "url": "https://www.espressoparts.com/products/sanremo-d8-one-group-volumetric-espresso-machine-total-chrome",
-   "price": 6300,
+   "price": 5670,
+   "wasPrice": 6300,
    "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/files/D8_One_PRO_BX_SLIM.png?v=1793289482",
    "inStock": true,
    "brand": "Sanremo",
@@ -387,7 +388,8 @@
    "sku": "D8ONE-BLACK",
    "title": "Sanremo D8 ONE Group Volumetric Espresso Machine - Total Black",
    "url": "https://www.espressoparts.com/products/sanremo-d8-one-group-volumetric-espresso-machine-total-black",
-   "price": 6300,
+   "price": 5670,
+   "wasPrice": 6300,
    "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/files/D8_One_PRO_TB_LED.png?v=1793289470",
    "inStock": true,
    "brand": "Sanremo",
@@ -398,7 +400,8 @@
    "sku": "D8ONE-WHITE",
    "title": "Sanremo D8 ONE Group Volumetric Espresso Machine - Total White",
    "url": "https://www.espressoparts.com/products/sanremo-d8-one-group-volumetric-espresso-machine-total-white",
-   "price": 6300,
+   "price": 5670,
+   "wasPrice": 6300,
    "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/files/D8_One_PRO_TW_SLIM_LED.png?v=1793289457",
    "inStock": true,
    "brand": "Sanremo",

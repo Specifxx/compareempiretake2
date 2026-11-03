@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:12:34.502Z",
+ "scrapedAt": "2026-11-03T02:23:51.743Z",
  "offers": [
   {
    "retailer": "us-wholelattelove",
@@ -1090,7 +1090,7 @@
    "price": 2899,
    "wasPrice": 3256,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/BZDUOMNBLKFC_7308.png?v=1740152918",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bezzera"
   },
   {
@@ -1112,7 +1112,7 @@
    "price": 3099,
    "wasPrice": 3256,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/25_ProductPhoto_BZDUOMNBLKTMPFC_2000px3.jpg?v=1740152918",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bezzera"
   },
   {
@@ -5623,6 +5623,16 @@
   },
   {
    "retailer": "us-wholelattelove",
+   "sku": "73664",
+   "title": "DeLonghi La Specialista Touch Espresso Machine",
+   "url": "https://www.wholelattelove.com/products/delonghi-la-specialista-touch-espresso-machine",
+   "price": 799.95,
+   "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/LaSpecialistaTouch_EC9455M_FrontView_WhiteBackgroundShot300.jpg?v=1793630790",
+   "inStock": true,
+   "brand": "DeLonghi"
+  },
+  {
+   "retailer": "us-wholelattelove",
    "sku": "66311",
    "title": "DeLonghi Magnifica Plus Automatic Espresso Machine ECAM32070SB",
    "url": "https://www.wholelattelove.com/products/delonghi-magnifica-plus-automatic-espresso-machine-ecam32070sb",
@@ -7107,7 +7117,7 @@
    "title": "ECM Technika VI Espresso Machine Flow Control No Accents",
    "url": "https://www.wholelattelove.com/products/ecm-technika-vi-espresso-machine?variant=44789028552758",
    "price": 3399,
-   "wasPrice": 3499,
+   "wasPrice": 3599,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/bundlerphoto_71145_2000px.jpg?v=1770387968",
    "inStock": true
   },
@@ -7153,7 +7163,7 @@
    "title": "ECM Technika VI Espresso Machine Flow Paddle No Accents",
    "url": "https://www.wholelattelove.com/products/ecm-technika-vi-espresso-machine?variant=44789028716598",
    "price": 3399,
-   "wasPrice": 3499,
+   "wasPrice": 3599,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/bundlerphoto_71152_2000px-Copy.jpg?v=1770387968",
    "inStock": true
   },
@@ -8664,7 +8674,8 @@
    "sku": "66469",
    "title": "JURA J8 Twin Espresso Machine Diamond Black",
    "url": "https://www.wholelattelove.com/products/jura-j8-twin-espresso-machine?variant=43591103545398",
-   "price": 3599,
+   "price": 3299,
+   "wasPrice": 3599,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/J8-twin_pss_Di-Bl_2Esp.jpg?v=1743190285",
    "inStock": true,
    "brand": "JURA"
@@ -8674,7 +8685,8 @@
    "sku": "68486",
    "title": "JURA J8 Twin Espresso Machine Diamond White",
    "url": "https://www.wholelattelove.com/products/jura-j8-twin-espresso-machine?variant=43591103578166",
-   "price": 3599,
+   "price": 3299,
+   "wasPrice": 3599,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/J8-twin_pss_Di-Wh_2Esp.jpg?v=1743190285",
    "inStock": true,
    "brand": "JURA"
@@ -13997,7 +14009,7 @@
    "price": 2300,
    "wasPrice": 2750,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/RETCASSWSFPCOPBO_FR_a79e9d75-6b10-45b4-a1e9-ec6284fc9ba9.jpg?v=1763391591",
-   "inStock": true,
+   "inStock": false,
    "brand": "Rocket Espresso"
   },
   {
@@ -14008,7 +14020,7 @@
    "price": 2050,
    "wasPrice": 2500,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/RETCASSWSCOPBO_FR_4f8f76cf-87d4-4856-af6c-5fb403eb9262.jpg?v=1763391591",
-   "inStock": true,
+   "inStock": false,
    "brand": "Rocket Espresso"
   },
   {
@@ -14019,7 +14031,7 @@
    "price": 2300,
    "wasPrice": 2550,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/70624_FR.jpg?v=1763391591",
-   "inStock": true,
+   "inStock": false,
    "brand": "Rocket Espresso"
   },
   {
@@ -14030,7 +14042,7 @@
    "price": 2050,
    "wasPrice": 2300,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/RETCASSWSCOP_FR_ef257894-1408-41d9-bc6c-a7468f92be4c.jpg?v=1763391591",
-   "inStock": true,
+   "inStock": false,
    "brand": "Rocket Espresso"
   },
   {
@@ -14041,7 +14053,7 @@
    "price": 2300,
    "wasPrice": 2750,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/RETCASSWSFPCOPOW_FR_2318d7df-b708-4513-99d4-151dc389b390.jpg?v=1763391591",
-   "inStock": true,
+   "inStock": false,
    "brand": "Rocket Espresso"
   },
   {
@@ -14052,7 +14064,7 @@
    "price": 2050,
    "wasPrice": 2500,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/RETCASSWSCOPOW_FR_dbad8366-b5ba-447f-a72d-37296e17e500.jpg?v=1763391591",
-   "inStock": true,
+   "inStock": false,
    "brand": "Rocket Espresso"
   },
   {
@@ -14063,7 +14075,7 @@
    "price": 2300,
    "wasPrice": 2750,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/RETCASSWSFPCOPWL_FR_1c20ea8e-8eba-4c69-991e-4e169f8553cc.jpg?v=1763391591",
-   "inStock": true,
+   "inStock": false,
    "brand": "Rocket Espresso"
   },
   {

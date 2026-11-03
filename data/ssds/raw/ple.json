@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T03:41:06.763Z",
+ "scrapedAt": "2026-11-03T01:52:19.473Z",
  "offers": [
   {
    "retailer": "ple",
@@ -325,6 +325,18 @@
    "price": 149,
    "wasPrice": 189,
    "image": "https://plecom.imgix.net/iil-416101-672868.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "654609",
+   "title": "Crucial P3 Plus PCIe Gen4 NVMe M.2 SSD - 500GB",
+   "brand": "Micron",
+   "mpn": "CT500P3PSSD8",
+   "url": "https://www.ple.com.au/products/654609/crucial-p3-plus-pcie-gen4-nvme-m2-ssd-500gb",
+   "price": 99,
+   "wasPrice": 119,
+   "image": "https://plecom.imgix.net/iil-346694-654609.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -698,7 +710,7 @@
    "price": 999,
    "wasPrice": 1069,
    "image": "https://plecom.imgix.net/iil-439972-677698.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -954,6 +966,18 @@
    "url": "https://www.ple.com.au/products/682352/patriot-vp4300-lite-pcie-gen4-nvme-m2-ssd-1tb",
    "price": 299,
    "image": "https://plecom.imgix.net/iil-459580-682352.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "687749",
+   "title": "PNY CS1031 PCIe Gen3 NVMe M.2 SSD - 500GB",
+   "brand": "PNY",
+   "mpn": "M280CS1031-500-CL",
+   "url": "https://www.ple.com.au/products/687749/pny-cs1031-pcie-gen3-nvme-m2-ssd-500gb",
+   "price": 119,
+   "wasPrice": 129,
+   "image": "https://plecom.imgix.net/iil-483151-687749.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -1455,6 +1479,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "662942",
+   "title": "Silicon Power UD85 PCIe Gen4 NVMe M.2 SSD - 2TB",
+   "brand": "Silicon Power",
+   "mpn": "SP02KGBP44UD8505",
+   "url": "https://www.ple.com.au/products/662942/silicon-power-ud85-pcie-gen4-nvme-m2-ssd-2tb",
+   "price": 439,
+   "image": "https://plecom.imgix.net/iil-364158-662942.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "685908",
    "title": "Team MP44L PCIe Gen4 NVMe M.2 SSD - 500GB",
    "brand": "TEAM Group",
@@ -1471,7 +1506,7 @@
    "brand": "TEAM Group",
    "mpn": "TM8FFD001T0C101",
    "url": "https://www.ple.com.au/products/670592/team-mp44q-pcie-gen4-nvme-m2-ssd-1tb",
-   "price": 239,
+   "price": 234,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-406549-670592.jpg?w=600&h=600",
    "inStock": true
@@ -1510,6 +1545,18 @@
    "price": 139,
    "wasPrice": 199,
    "image": "https://plecom.imgix.net/iil-468768-683158.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "683975",
+   "title": "WD Blue SN5100 PCIe Gen4 NVMe M.2 SSD - 1TB",
+   "brand": "Western Digital",
+   "mpn": "WDS100T5B0E-00CPE0",
+   "url": "https://www.ple.com.au/products/683975/wd-blue-sn5100-pcie-gen4-nvme-m2-ssd-1tb",
+   "price": 289,
+   "wasPrice": 419,
+   "image": "https://plecom.imgix.net/iil-467325-683975.jpg?w=600&h=600",
    "inStock": true
   },
   {

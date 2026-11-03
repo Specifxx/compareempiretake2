@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:14:53.670Z",
+ "scrapedAt": "2026-11-03T02:26:21.003Z",
  "offers": [
   {
    "retailer": "uk-appliancecentre",
@@ -110,6 +110,29 @@
    "inStock": true,
    "brand": "Bosch",
    "mpn": "SMI2HTS06G"
+  },
+  {
+   "retailer": "uk-appliancecentre",
+   "sku": "SMS26AI08G",
+   "title": "Bosch Series 2 SMS26AI08G Silver Inox Freestanding Dishwasher",
+   "url": "https://www.appliancecentre.co.uk/p/bosch-series-2-sms26ai08g-silver-inox-freestanding-dishwasher/",
+   "price": 425,
+   "wasPrice": 445,
+   "image": "https://www.appliancecentre.co.uk/wp-content/uploads/2025/06/86f85c390e8a64f80f1aa8bef14ccb1a15a573aa.jpg",
+   "inStock": true,
+   "brand": "Bosch",
+   "mpn": "SMS26AI08G"
+  },
+  {
+   "retailer": "uk-appliancecentre",
+   "sku": "SMS26AW08G",
+   "title": "Bosch Series 2 SMS26AW08G White Freestanding Dishwasher",
+   "url": "https://www.appliancecentre.co.uk/p/bosch-series-2-sms26aw08g-white-freestanding-dishwasher/",
+   "price": 399,
+   "image": "https://www.appliancecentre.co.uk/wp-content/uploads/2025/06/2c272f18a7d5510ed83301d593ec2d04aec3cced.jpg",
+   "inStock": true,
+   "brand": "Bosch",
+   "mpn": "SMS26AW08G"
   },
   {
    "retailer": "uk-appliancecentre",
@@ -370,29 +393,6 @@
    "inStock": true,
    "brand": "Bosch",
    "mpn": "SMD8YCX03G"
-  },
-  {
-   "retailer": "uk-appliancecentre",
-   "sku": "SMS26AI08G",
-   "title": "Bosch SMS26AI08G Silver Inox Freestanding Dishwasher",
-   "url": "https://www.appliancecentre.co.uk/p/bosch-series-2-sms26ai08g-60cm-silver-inox-standard-freestanding-dishwasher/",
-   "price": 425,
-   "wasPrice": 445,
-   "image": "https://www.appliancecentre.co.uk/wp-content/uploads/2025/06/86f85c390e8a64f80f1aa8bef14ccb1a15a573aa.jpg",
-   "inStock": true,
-   "brand": "Bosch",
-   "mpn": "SMS26AI08G"
-  },
-  {
-   "retailer": "uk-appliancecentre",
-   "sku": "SMS26AW08G",
-   "title": "Bosch SMS26AW08G White Freestanding Dishwasher",
-   "url": "https://www.appliancecentre.co.uk/p/bosch-series-2-sms26aw08g-60cm-white-standard-freestanding-dishwasher/",
-   "price": 399,
-   "image": "https://www.appliancecentre.co.uk/wp-content/uploads/2025/06/2c272f18a7d5510ed83301d593ec2d04aec3cced.jpg",
-   "inStock": true,
-   "brand": "Bosch",
-   "mpn": "SMS26AW08G"
   },
   {
    "retailer": "uk-appliancecentre",
@@ -1088,7 +1088,8 @@
    "sku": "DI262D",
    "title": "Smeg Universal DI262D Fully Integrated Dishwasher",
    "url": "https://www.appliancecentre.co.uk/p/smeg-universal-di262d-fully-integrated-dishwasher/",
-   "price": 449,
+   "price": 425,
+   "wasPrice": 499,
    "image": "https://www.appliancecentre.co.uk/wp-content/uploads/2026/05/di262d-1778676882.jpg",
    "inStock": true,
    "brand": "Smeg",

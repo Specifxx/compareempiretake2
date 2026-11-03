@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T03:40:50.086Z",
+ "scrapedAt": "2026-11-03T01:52:04.053Z",
  "offers": [
   {
    "retailer": "ple",
@@ -59,6 +59,17 @@
    "price": 589,
    "wasPrice": 1199,
    "image": "https://plecom.imgix.net/iil-260883-647132.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "667446",
+   "title": "ASUS GeForce RTX 4060 Dual OC 8GB GDDR6",
+   "brand": "ASUS",
+   "mpn": "DUAL-RTX4060-O8G-V2-RETAIL",
+   "url": "https://www.ple.com.au/products/667446/asus-geforce-rtx-4060-dual-oc-8gb-gddr6",
+   "price": 599,
+   "image": "https://plecom.imgix.net/iil-404657-667446.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -728,17 +739,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "682786",
-   "title": "MAXSUN Intel Arc B580 iCraft 12GB GDDR6 (White)",
-   "brand": "MAXSUN",
-   "mpn": "MS-ARC-B580-ICRAFT-12G",
-   "url": "https://www.ple.com.au/products/682786/maxsun-intel-arc-b580-icraft-12gb-gddr6-white",
-   "price": 499,
-   "image": "https://plecom.imgix.net/iil-474519-682786.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "663144",
    "title": "MSI GeForce GT 1030 4GB DDR4 AERO ITX OC",
    "brand": "MSI",
@@ -1113,6 +1113,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "677002",
+   "title": "Palit GeForce RTX 5070 Infinity 3 12GB GDDR7",
+   "brand": "Palit",
+   "mpn": "NE75070019K9-GB2050S",
+   "url": "https://www.ple.com.au/products/677002/palit-geforce-rtx-5070-infinity-3-12gb-gddr7",
+   "price": 1419,
+   "image": "https://plecom.imgix.net/iil-436028-677002.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
    "sku": "683096",
    "title": "PNY GeForce RTX 5050 Dual Fan 8GB GDDR6",
    "brand": "PNY",
@@ -1430,7 +1441,7 @@
    "url": "https://www.ple.com.au/products/687885/zotac-gaming-geforce-rtx-3060-twin-edge-12gb-gddr6",
    "price": 729,
    "image": "https://plecom.imgix.net/iil-484438-687885.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1529,7 +1540,7 @@
    "url": "https://www.ple.com.au/products/674634/zotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-gddr7",
    "price": 2999,
    "image": "https://plecom.imgix.net/iil-425581-674634.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",

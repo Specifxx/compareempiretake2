@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T03:40:25.641Z",
+ "scrapedAt": "2026-11-03T01:51:46.731Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -58,7 +58,7 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-gt-730-4h-2gb-gddr5-video-card-4x-hdmi-ports-ac49976",
    "price": 149,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_gt_730_4h_2gb_gddr5_video_card_ac49976.jpg?v=1787795374",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -408,7 +408,7 @@
    "url": "https://www.mwave.com.au/products/asus-rog-astral-geforce-rtx-5080-16gb-gddr7-oc-edition-video-card-ac81478",
    "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_astral_geforce_rtx_5080_16gb_gddr7_oc_edition_video_card_ac81478_70395.jpg?v=1787784042",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -426,7 +426,7 @@
    "sku": "AC81843",
    "title": "ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition Video Card",
    "url": "https://www.mwave.com.au/products/asus-rog-astral-geforce-rtx-5090-32gb-gddr7-oc-edition-video-card-ac81843",
-   "price": 12999,
+   "price": 16999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_astral_geforce_rtx_5090_32gb_gddr7_oc_edition_video_card_ac81843_40766.jpg?v=1787795429",
    "inStock": true,
    "brand": "Asus"
@@ -456,7 +456,7 @@
    "sku": "AC81840",
    "title": "ASUS ROG Strix GeForce RTX 5070 12GB GDDR7 OC Edition Video Card",
    "url": "https://www.mwave.com.au/products/asus-rog-strix-geforce-rtx-5070-12gb-gddr7-oc-edition-video-card-ac81840",
-   "price": 1499,
+   "price": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_geforce_rtx_5070_12gb_gddr7_oc_edition_video_card_ac81840_39878.jpg?v=1787795450",
    "inStock": true,
    "brand": "Asus"
@@ -708,7 +708,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5060-eagle-max-oc-8gb-gddr7-video-card-ac90887",
    "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5060_eagle_max_oc_8gb_gddr7_video_card_ac90887_84732.jpg?v=1787796640",
-   "inStock": false,
+   "inStock": true,
    "brand": "Gigabyte"
   },
   {
@@ -1076,7 +1076,7 @@
    "sku": "AC81822",
    "title": "Gigabyte GeForce RTX 5080 AORUS MASTER 16GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5080-aorus-master-16gb-video-card-ac81822",
-   "price": 3199,
+   "price": 3799,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5080_aorus_master_16gb_video_card_ac81822_81911.jpg?v=1787796659",
    "inStock": false,
    "brand": "Gigabyte"
@@ -1086,7 +1086,7 @@
    "sku": "AC81821",
    "title": "Gigabyte GeForce RTX 5080 AORUS MASTER ICE 16GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5080-aorus-master-ice-16gb-video-card-ac81821",
-   "price": 3199,
+   "price": 3799,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5080_aorus_master_ice_16gb_video_card_ac81821_66615.jpg?v=1787796653",
    "inStock": false,
    "brand": "Gigabyte"
@@ -1126,7 +1126,7 @@
    "sku": "AC81820",
    "title": "Gigabyte GeForce RTX 5090 AORUS MASTER 32GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5090-aorus-master-32gb-video-card-ac81820",
-   "price": 12999,
+   "price": 16999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5090_aorus_master_32gb_video_card_ac81820_71586.jpg?v=1787796660",
    "inStock": false,
    "brand": "Gigabyte"
@@ -1136,7 +1136,7 @@
    "sku": "AC81819",
    "title": "Gigabyte GeForce RTX 5090 AORUS MASTER ICE 32GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5090-aorus-master-ice-32gb-video-card-ac81819",
-   "price": 12999,
+   "price": 16999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5090_aorus_master_ice_32gb_video_card_ac81819_39057.jpg?v=1787745872",
    "inStock": false,
    "brand": "Gigabyte"
@@ -1146,7 +1146,7 @@
    "sku": "AC81825",
    "title": "Gigabyte GeForce RTX 5090 GAMING OC 32GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5090-gaming-oc-32gb-video-card-ac81825",
-   "price": 12999,
+   "price": 15999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5090_gaming_oc_32gb_video_card_ac81825_77800.jpg?v=1787796660",
    "inStock": false,
    "brand": "Gigabyte"
@@ -1356,7 +1356,7 @@
    "sku": "AC83004",
    "title": "Inno3D GeForce RTX 5070 TWIN X2 12GB GDDR7 Video Card",
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5070-twin-x2-12gb-gddr7-video-card-ac83004",
-   "price": 1349,
+   "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5070_twin_x2_12gb_gddr7_video_card_ac83004_64565.jpg?v=1787797061",
    "inStock": false,
    "brand": "Inno3D"
@@ -1516,7 +1516,7 @@
    "sku": "AC87147",
    "title": "MSI GeForce RTX 5060 GAMING OC 8GB Video Card",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5060-gaming-oc-8gb-video-card-ac87147",
-   "price": 789,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5060_gaming_oc_8gb_video_card_ac87147_13529.jpg?v=1787746802",
    "inStock": false,
    "brand": "MSI"
@@ -1626,7 +1626,7 @@
    "sku": "AC84785",
    "title": "MSI GeForce RTX 5060 Ti SHADOW 2X OC PLUS 16GB Video Card",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5060-ti-shadow-2x-oc-plus-16gb-video-card-ac84785",
-   "price": 1269,
+   "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5060_ti_16g_shadow_2x_oc_plus_video_card_ac84785_16248.jpg?v=1787797747",
    "inStock": false,
    "brand": "MSI"
@@ -1776,7 +1776,7 @@
    "sku": "AC86247",
    "title": "MSI GeForce RTX 5070 SHADOW 3X OC 12GB Video Card",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-shadow-3x-oc-12gb-video-card-ac86247",
-   "price": 1389,
+   "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_shadow_3x_oc_12gb_video_card_ac86247_10665.jpg?v=1787797755",
    "inStock": false,
    "brand": "MSI"
@@ -1786,7 +1786,7 @@
    "sku": "AC86246",
    "title": "MSI GeForce RTX 5070 Ti GAMING TRIO OC 16GB Video Card",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-ti-gaming-trio-oc-16gb-video-card-ac86246",
-   "price": 2059,
+   "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_ti_gaming_trio_oc_16gb_video_card_ac86246_48931.jpg?v=1787797755",
    "inStock": false,
    "brand": "MSI"
@@ -1898,7 +1898,7 @@
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5080-ventus-3x-oc-16gb-video-card-ac81865",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5080_ventus_3x_oc_16gb_video_card_ac81865_79886.jpg?v=1787797754",
-   "inStock": true,
+   "inStock": false,
    "brand": "MSI"
   },
   {
@@ -2186,7 +2186,7 @@
    "sku": "AC86453",
    "title": "Sapphire Radeon RX 9060 XT PULSE GAMING OC 16GB Video Card",
    "url": "https://www.mwave.com.au/products/sapphire-radeon-rx-9060-xt-pulse-gaming-oc-16gb-video-card-ac86453",
-   "price": 839,
+   "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sapphire_radeon_rx_9060_xt_pulse_gaming_oc_16gb_video_card_ac86453_53949.jpg?v=1787798354",
    "inStock": true,
    "brand": "Sapphire"
@@ -2226,7 +2226,7 @@
    "sku": "AC82920",
    "title": "Sapphire Radeon RX 9070 XT NITRO+ 16GB Video Card",
    "url": "https://www.mwave.com.au/products/sapphire-radeon-rx-9070-xt-nitro-16gb-video-card-ac82920",
-   "price": 1399,
+   "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sapphire_radeon_rx_9070_xt_nitro_16gb_video_card_ac82920_8903.jpg?v=1787798357",
    "inStock": true,
    "brand": "Sapphire"
@@ -2236,7 +2236,7 @@
    "sku": "AC82922",
    "title": "Sapphire Radeon RX 9070 XT Pulse 16GB Video Card",
    "url": "https://www.mwave.com.au/products/sapphire-radeon-rx-9070-xt-pulse-16gb-video-card-ac82922",
-   "price": 1329,
+   "price": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sapphire_radeon_rx_9070_xt_16gb_video_card_ac82922_15135.jpg?v=1787747259",
    "inStock": true,
    "brand": "Sapphire"
@@ -2246,7 +2246,7 @@
    "sku": "AC82921",
    "title": "Sapphire Radeon RX 9070 XT PURE 16GB Video Card",
    "url": "https://www.mwave.com.au/products/sapphire-radeon-rx-9070-xt-pure-16gb-video-card-ac82921",
-   "price": 1349,
+   "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sapphire_radeon_rx_9070_xt_pure_16gb_video_card_ac82921_34548.jpg?v=1787798355",
    "inStock": true,
    "brand": "Sapphire"
@@ -2378,7 +2378,7 @@
    "url": "https://www.mwave.com.au/products/zotac-gaming-geforce-rtx-5070-twin-edge-oc-12gb-video-card-white-ad00484",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/zotac_gaming_geforce_rtx_5070_twin_edge_oc_12gb_video_card_white_ad00484_38863.jpg?v=1790126548",
-   "inStock": false,
+   "inStock": true,
    "brand": "Zotac"
   },
   {

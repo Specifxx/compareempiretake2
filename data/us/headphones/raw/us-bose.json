@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:07:15.683Z",
+ "scrapedAt": "2026-11-03T02:19:02.246Z",
  "offers": [
   {
    "retailer": "us-bose",
@@ -7,7 +7,7 @@
    "mpn": "NCWEARB-HEADPHONEIN-BLK-WW",
    "brand": "Bose",
    "title": "Bose Noise Cancelling Wired Earbuds - Black",
-   "url": "https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html?dwvar_NCWEARB-HEADPHONEIN_color=BLACK",
+   "url": "https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html",
    "price": 99,
    "image": "https://assets.bosecreative.com/transform/66a721ef-9a18-4e4d-bc5a-c3f4c6aa61e0/FY27_NCWE27-Blk_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
    "inStock": false
@@ -18,7 +18,7 @@
    "mpn": "NCWEARB-HEADPHONEIN-DDPMNT-WW",
    "brand": "Bose",
    "title": "Bose Noise Cancelling Wired Earbuds - Dewdrop Mint",
-   "url": "https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html",
+   "url": "https://www.bose.com/p/earbuds/bose-noise-cancelling-wired-earbuds/NCWEARB-HEADPHONEIN.html?dwvar_NCWEARB-HEADPHONEIN_color=DEWDROP%20MINT",
    "price": 99,
    "image": "https://assets.bosecreative.com/transform/7cd72a47-a802-45a3-9144-2981411cdcb0/FY27_NCWELE27-DewMint_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
    "inStock": false
@@ -43,7 +43,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-quietcomfort-headphones/QCEARB24-HEADPHONEIN.html?dwvar_QCEARB24-HEADPHONEIN_color=BLACK",
    "price": 179,
    "image": "https://assets.bosecreative.com/transform/4c800e67-2502-4cd9-ba55-2555de393b8a/SF_QCEB25_BLACK_PDP_ECOMM-GALLERY_IMG-1",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -119,7 +119,7 @@
    "title": "Bose QuietComfort Headphones - Black",
    "url": "https://www.bose.com/p/headphones/quietcomfort-acoustic-noise-cancelling-headphones/QC-HEADPHONEARN.html?dwvar_QC-HEADPHONEARN_color=BLACK",
    "price": 169,
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-bose",
@@ -263,7 +263,7 @@
    "url": "https://www.bose.com/p/headphones/bose-quietcomfort-headphones-2nd-gen/QC2G-HEADPHONEARN.html?dwvar_QC2G-HEADPHONEARN_color=HAZELNUT%20TAUPE",
    "price": 359,
    "image": "https://assets.bosecreative.com/transform/61aa4df9-2b33-49c3-b22d-fdc1b43f67d2/FY27_QCHIILE27-HzlTaup_CREA-1209_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -274,7 +274,7 @@
    "url": "https://www.bose.com/p/headphones/bose-quietcomfort-headphones-2nd-gen/QC2G-HEADPHONEARN.html?dwvar_QC2G-HEADPHONEARN_color=ROSEWOOD%20MAUVE",
    "price": 359,
    "image": "https://assets.bosecreative.com/transform/0554e03f-7236-4013-8fc0-897760fbbb0b/QCHIILE27-RoseMauv_PDP_E-Comm_Gallery_1_1500x1120?format=avif&quality=95",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-bose",
@@ -318,7 +318,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html",
    "price": 299,
    "image": "https://assets.bosecreative.com/transform/bb7b1552-1001-446f-bfd5-f7e2c4ee31ee/QCUEII_DeepPlum_Ecomm-Gallery-1-1634x1224?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -340,7 +340,7 @@
    "url": "https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html?dwvar_QCUE2-HEADPHONEIN_color=MIDNIGHT%20VIOLET",
    "price": 299,
    "image": "https://assets.bosecreative.com/transform/99fc09f0-c8e6-4b88-ba28-6eafe31e151b/QCUEBIILE26-MidnightViolet_SF_E-Comm_Gallery_1_1632x1224?format=avif&quality=95",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-bose",
@@ -360,7 +360,7 @@
    "brand": "Bose",
    "title": "Bose QuietComfort Ultra Headphones - Black",
    "url": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones/QCUH-HEADPHONEARN.html?dwvar_QCUH-HEADPHONEARN_color=BLACK",
-   "price": 269,
+   "price": 429,
    "inStock": true
   },
   {
@@ -390,7 +390,7 @@
    "brand": "Bose",
    "title": "Bose QuietComfort Ultra Headphones - Sandstone",
    "url": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones/QCUH-HEADPHONEARN.html?dwvar_QCUH-HEADPHONEARN_color=SANDSTONE",
-   "price": 269,
+   "price": 429,
    "inStock": true
   },
   {
@@ -412,7 +412,7 @@
    "url": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html?dwvar_QCUH2-HEADPHONEARN_color=BLACK",
    "price": 449,
    "image": "https://assets.bosecreative.com/transform/dbd0f72b-d68f-4bef-9d38-88132ffa0048/QCUHII26-BoseBlack_SF_PDP_E-Comm_Gallery_1_1500x1120?format=avif&quality=95",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-bose",
@@ -423,18 +423,7 @@
    "url": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html",
    "price": 449,
    "image": "https://assets.bosecreative.com/transform/69de3d90-3cc5-4f7c-ac71-d03a030e4154/FY27_QCUHIILE27-ChryChoc_CREA-1174_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95",
-   "inStock": false
-  },
-  {
-   "retailer": "us-bose",
-   "sku": "QCUH2-HEADPHONEARN-DSGLD-WW",
-   "mpn": "QCUH2-HEADPHONEARN-DSGLD-WW",
-   "brand": "Bose",
-   "title": "Bose QuietComfort Ultra Headphones (2nd Gen) - Desert Gold",
-   "url": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html?dwvar_QCUH2-HEADPHONEARN_color=DESERT%20GOLD",
-   "price": 449,
-   "image": "https://assets.bosecreative.com/transform/667a70bc-3053-4cab-a083-832458ef1769/QCUHIILE26-DesertGold_SF_PDP_E-Comm-Gallery_1_1632x1224?format=avif&quality=95",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-bose",
@@ -445,7 +434,7 @@
    "url": "https://www.bose.com/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html?dwvar_QCUH2-HEADPHONEARN_color=DRIFTWOOD%20SAND",
    "price": 449,
    "image": "https://assets.bosecreative.com/transform/2ac16f2b-7abd-49a1-9a26-f68ab5d78469/QCUHIILE26-DriftwoodSand_E-Comm_Gallery_1_1632x1224?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",

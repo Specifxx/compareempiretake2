@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T03:31:17.726Z",
+ "scrapedAt": "2026-11-03T01:42:35.011Z",
  "offers": [
   {
    "retailer": "dell",
@@ -7,7 +7,7 @@
    "brand": "Alienware",
    "title": "Alienware Area-51 Gaming Desktop",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/alienwarearea51aat2265",
-   "price": 9819.7,
+   "price": 9836.2,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware/aat2265/media-gallery/desktop-alienware-aat2265-360mm-gy-gallery-hero.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=786&qlt=100,0&resMode=sharp2&size=786,804",
    "inStock": true,
    "fromPrice": true
@@ -18,7 +18,7 @@
    "brand": "Alienware",
    "title": "Alienware Area-51 Gaming Desktop",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/alienwarearea51aat2250",
-   "price": 8614.1,
+   "price": 8630.6,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/area-51-r8/media-gallery/240mm/desktop-alienware-area51-r8-240-silver-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=613&qlt=100,0&resMode=sharp2&size=613,804",
    "inStock": true,
    "fromPrice": true
@@ -29,7 +29,7 @@
    "brand": "Alienware",
    "title": "Alienware Aurora Gaming Desktop",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/alienwareauroraact1250",
-   "price": 4910.4,
+   "price": 4926.9,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-aurora-r16-arl/media-gallery/240mm/desktop-alienware-act1250-240mm-bk-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=607&qlt=100,0&resMode=sharp2&size=607,804",
    "inStock": true,
    "fromPrice": true
@@ -40,7 +40,7 @@
    "brand": "Dell",
    "title": "Dell 24 All-in-One",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dell24allinoneec24250",
-   "price": 1608.2,
+   "price": 1611.5,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ec24250/media-gallery/black/touch/aio-desktop-ec24250-touch-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1094&qlt=100,0&resMode=sharp2&size=1094,804",
    "inStock": true,
    "fromPrice": true
@@ -51,7 +51,7 @@
    "brand": "Dell",
    "title": "Dell 24 All-in-One Desktop",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dell24allinoneec24260",
-   "price": 2489.3,
+   "price": 2492.6,
    "image": "https://i.dell.com/assetlink/img/en/aio-dell-24-ec24260-gy-gallery-1-dl1f7mc-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1028&qlt=100,0&resMode=sharp2&size=1028,804",
    "inStock": true,
    "fromPrice": true
@@ -62,8 +62,39 @@
    "brand": "Dell",
    "title": "Dell 27 All-in-One",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dell27allinoneec27250",
-   "price": 1758.9,
+   "price": 1762.2,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ec27250/media-gallery/white/non-touch/fabric-speaker/desktop-dell-ec27250nt-aio-gy-fbcspk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1062&qlt=100,0&resMode=sharp2&size=1062,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "ec27250_so_14",
+   "brand": "Dell",
+   "title": "Dell 27 All-in-One - Intel Core i5-1334U, 16 GB DDR5, 512 GB SSD, 27\" Non Touch FHD (1920x1080)",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dell27allinoneec27250/ec27250_so_14",
+   "price": 1762.2,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ec27250/media-gallery/white/non-touch/fabric-speaker/desktop-dell-ec27250nt-aio-gy-fbcspk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1062&qlt=100,0&resMode=sharp2&size=1062,804",
+   "inStock": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "ec27250_so_13",
+   "brand": "Dell",
+   "title": "Dell 27 All-in-One - Intel Core i7-1355U, 16 GB DDR5, 1 TB SSD, 27\" Non Touch FHD (1920x1080)",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dell27allinoneec27250/ec27250_so_13",
+   "price": 2362.8,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ec27250/media-gallery/white/non-touch/fabric-speaker/desktop-dell-ec27250nt-aio-gy-fbcspk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1062&qlt=100,0&resMode=sharp2&size=1062,804",
+   "inStock": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellpromaxtowert2fct2250",
+   "brand": "Dell",
+   "title": "Dell Pro Max Tower T2 Desktop",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellpromaxtowert2fct2250",
+   "price": 3091,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcst2250/media-gallery/desktop-dell-pro-max-fct2250-tower-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=611&qlt=100,0&resMode=sharp2&size=611,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -91,6 +122,39 @@
   },
   {
    "retailer": "dell",
+   "sku": "dellproprecision71urackpw7r1260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 7 R1 Rack",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellproprecision71urackpw7r1260",
+   "price": 5332.8,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-7r1-rack-pw7r1260/media-gallery/server-precision-rack-pw7r1260-hdd-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1314&qlt=100,0&resMode=sharp2&size=1314,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproprecision9t2pw9t2260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T2 Desktop",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellproprecision9t2pw9t2260",
+   "price": 7365.6,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t2-pw9t2260/media-gallery/desktop-precision-pw9t2260-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=553&qlt=100,0&resMode=sharp2&size=553,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproprecision9t4pw9t4260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T4 Desktop",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellproprecision9t4pw9t4260",
+   "price": 11603.9,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t4-pw9t4260/media-gallery/desktop-dell-pro-precision-pw9t4260-premium-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=549&qlt=100,0&resMode=sharp2&size=549,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
    "sku": "dellproessentialslimqvs1260",
    "brand": "Dell",
    "title": "Dell Pro Slim Essential Desktop",
@@ -106,7 +170,7 @@
    "brand": "Dell",
    "title": "Dell Slim Desktop",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellslimds1265",
-   "price": 1158.3,
+   "price": 1161.6,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ds1265/media-gallery/desktop-ds1265-slim-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=461&qlt=100,0&resMode=sharp2&size=461,804",
    "inStock": true,
    "fromPrice": true
@@ -117,7 +181,7 @@
    "brand": "Dell",
    "title": "Dell Slim Desktop",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellslimecs1250",
-   "price": 1140.7,
+   "price": 1144,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ecs1250/media-gallery/with-reader/desktop-ecs1250-slim-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=485&qlt=100,0&resMode=sharp2&size=485,804",
    "inStock": true,
    "fromPrice": true
@@ -128,7 +192,17 @@
    "brand": "Dell",
    "title": "Dell Slim Desktop - AMD Ryzen 5 150, 8 GB DDR5, 512 GB SSD",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellslimds1265/ds1265_fixed_83",
-   "price": 1158.3,
+   "price": 1161.6,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ds1265/media-gallery/desktop-ds1265-slim-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=461&qlt=100,0&resMode=sharp2&size=461,804",
+   "inStock": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "ds1265_fixed_85",
+   "brand": "Dell",
+   "title": "Dell Slim Desktop - AMD Ryzen 7 170, 16 GB DDR5, 512 GB SSD",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellslimds1265/ds1265_fixed_85",
+   "price": 1597.2,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ds1265/media-gallery/desktop-ds1265-slim-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=461&qlt=100,0&resMode=sharp2&size=461,804",
    "inStock": true
   },
@@ -138,7 +212,7 @@
    "brand": "Dell",
    "title": "Dell Tower Desktop",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/delltowerect1250",
-   "price": 1807.3,
+   "price": 1810.6,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ect1250/media-gallery/with-reader/desktop-tower-ect1250-c-no-ssd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=560&qlt=100,0&resMode=sharp2&size=560,804",
    "inStock": true,
    "fromPrice": true

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:26:01.723Z",
+ "scrapedAt": "2026-11-03T02:37:53.649Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -609,7 +609,7 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-expo-32gb-2x16gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit-black-cmh32gx5m2b6000z30k/MY-4DU-CS.html",
    "price": 548.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw275f6073/images/data/product/6d/d0817f/6b50e073a21946f19db54150dbe9faadf86534b2.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -1063,6 +1063,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-GSK-01358",
+   "brand": "G.Skill",
+   "title": "G.Skill Trident Z5 Neo EXPO/XMP RGB 32GB (2x16GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-xmp-rgb-32gb-2x16gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit/MEM-GSK-01358.html",
+   "price": 649.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw9c223187/images/data/product/da/77e72a/7e0d93c0ed9c6ad28e246bd9530cbfb0ed46404d.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-GSK-01356",
    "brand": "G.Skill",
    "title": "G.Skill Trident Z5 Neo EXPO/XMP RGB 32GB (2x16GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
@@ -1070,16 +1080,6 @@
    "price": 899.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw16cc6f27/images/data/product/c1/f459f6/1a286f26f2133e371891fd229ac6e9e0c4df0879.jpg?sw=500",
    "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
-   "sku": "MEM-GSK-01358",
-   "brand": "G.Skill",
-   "title": "G.Skill Trident Z5 Neo EXPO/XMP RGB 32GB (2x16GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
-   "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-xmp-rgb-32gb-2x16gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit/MEM-GSK-01358.html",
-   "price": 649.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw9c223187/images/data/product/da/77e72a/7e0d93c0ed9c6ad28e246bd9530cbfb0ed46404d.jpg?sw=500",
-   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -2789,7 +2789,7 @@
    "url": "https://www.overclockers.co.uk/teamgroup-delta-rgb-expo-xmp-32gb-2x16gb-ddr5-pc5-49600c38-6200mhz-dual-channel-kit-white/MY-0AX-TG.html",
    "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe1ce8b01/images/data/product/57/384a16/2219158cc20ae82933b040b487b9acc02301c864.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",

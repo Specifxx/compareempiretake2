@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T03:29:57.391Z",
+ "scrapedAt": "2026-11-03T01:41:29.806Z",
  "offers": [
   {
    "retailer": "centralcoastcoffee",
@@ -527,7 +527,7 @@
    "url": "https://www.centralcoastcoffee.com.au/products/aeropress-coffee-maker-steel?variant=44079220260900",
    "price": 299.09,
    "image": "https://cdn.shopify.com/s/files/1/0109/4175/9552/files/aeropress-coffee-maker-steel-image-2-darkmode-v4-review.webp?v=1791179518",
-   "inStock": true,
+   "inStock": false,
    "brand": "AeroPress"
   },
   {
@@ -2552,6 +2552,17 @@
   },
   {
    "retailer": "centralcoastcoffee",
+   "sku": "VCWN-40-OV",
+   "title": "Hario V60 Server 01 - Olive Wood",
+   "url": "https://www.centralcoastcoffee.com.au/products/hario-v60-server-01-olive-wood",
+   "price": 81.77,
+   "image": "https://cdn.shopify.com/s/files/1/0109/4175/9552/files/Server-01-1.png?v=1793608598",
+   "inStock": true,
+   "brand": "Hario",
+   "mpn": "VCWN-40-OV"
+  },
+  {
+   "retailer": "centralcoastcoffee",
    "sku": "XGS-INT-02TB",
    "title": "Hario V60 Server 02 - 600ml",
    "url": "https://www.centralcoastcoffee.com.au/products/hario-v60-server?variant=43816520646692",
@@ -2560,6 +2571,17 @@
    "inStock": true,
    "brand": "Hario",
    "mpn": "XGS-INT-02TB"
+  },
+  {
+   "retailer": "centralcoastcoffee",
+   "sku": "VCWN-60-OV",
+   "title": "Hario V60 Server 02 - Olive Wood",
+   "url": "https://www.centralcoastcoffee.com.au/products/hario-v60-server-02-olive-wood",
+   "price": 90.86,
+   "image": "https://cdn.shopify.com/s/files/1/0109/4175/9552/files/Server-02-1.png?v=1793608686",
+   "inStock": true,
+   "brand": "Hario",
+   "mpn": "VCWN-60-OV"
   },
   {
    "retailer": "centralcoastcoffee",
@@ -3423,8 +3445,8 @@
    "sku": "VSSL-JAVA",
    "title": "VSSL Java Hand Grinder",
    "url": "https://www.centralcoastcoffee.com.au/products/vssl-java-hand-grinder",
-   "price": 99.09,
-   "wasPrice": 200,
+   "price": 200,
+   "wasPrice": 227.23,
    "image": "https://cdn.shopify.com/s/files/1/0109/4175/9552/files/vssl-java-hand-grinder-image-1-darkmode-v4-review.webp?v=1791115186",
    "inStock": true,
    "brand": "VSSL"

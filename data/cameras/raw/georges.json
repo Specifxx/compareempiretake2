@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T03:34:10.260Z",
+ "scrapedAt": "2026-11-03T01:45:14.037Z",
  "offers": [
   {
    "retailer": "georges",
@@ -303,7 +303,7 @@
    "sku": "GC47-BDX4UB",
    "title": "BirdDog X4 Ultra 4K PTZ Camera with AI Tracking Black",
    "url": "https://www.georges.com.au/products/birddog-x4-ultra-4k-ptz-camera-with-ai-tracking?variant=51596354945191",
-   "price": 4149,
+   "price": 4053.23,
    "wasPrice": 4335,
    "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC47-BDX4UB.jpg?v=1744788135",
    "inStock": true,
@@ -375,7 +375,7 @@
    "sku": "GC50-PSUPPLY-24V250W",
    "title": "Blackmagic 24V 250W Power Supply for URSA Cine Camera",
    "url": "https://www.georges.com.au/products/blackmagic-24v-250w-power-supply-for-ursa-cine-camera",
-   "price": 279.84,
+   "price": 291.5,
    "wasPrice": 295,
    "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC50-PSUPPLY-24V250W.jpg?v=1772091044",
    "inStock": true,
@@ -818,10 +818,9 @@
    "sku": "GC41-DJIOSMONANO64",
    "title": "DJI Osmo Nano Action Camera (64GB)",
    "url": "https://www.georges.com.au/products/dji-osmo-nano-action-camera-64gb",
-   "price": 423.2,
-   "wasPrice": 529,
+   "price": 529,
    "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC41-DJIOSMONANO64_1.jpg?v=1757912431",
-   "inStock": false,
+   "inStock": true,
    "mpn": "GC41-DJIOSMONANO64"
   },
   {
@@ -1104,10 +1103,10 @@
    "sku": "GC22-85447",
    "title": "Fujifilm Instax Mini 99 Instant Camera (Silver)",
    "url": "https://www.georges.com.au/products/fujifilm-instax-mini-99-instant-camera-silver",
-   "price": 224.95,
+   "price": 219,
    "wasPrice": 279,
    "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/1_705651c8-b488-42e1-9951-74b581d9665f.jpg?v=1784188606",
-   "inStock": false,
+   "inStock": true,
    "brand": "Instax",
    "mpn": "GC22-85447"
   },
@@ -1194,6 +1193,18 @@
    "inStock": true,
    "brand": "Instax",
    "mpn": "GC22-87037"
+  },
+  {
+   "retailer": "georges",
+   "sku": "GC22-84462",
+   "title": "Fujifilm Instax Stax of Fun Instant Photo Kit - Blue",
+   "url": "https://www.georges.com.au/products/fujifilm-instax-stax-of-fun-instant-photo-kit-blue",
+   "price": 104.9,
+   "wasPrice": 139,
+   "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/products/mini_11_blue_components_square.webp?v=1672809621",
+   "inStock": true,
+   "brand": "Instax",
+   "mpn": "GC22-84462"
   },
   {
    "retailer": "georges",
@@ -1415,7 +1426,7 @@
    "sku": "GC17-CHDHZ-311-RW",
    "title": "GoPro MAX2",
    "url": "https://www.georges.com.au/products/gopro-max2",
-   "price": 628,
+   "price": 629.95,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC17-CHDHZ-311-RW_3_4e31e891-df18-452d-9358-fd9aabcfa1b5.jpg?v=1758691756",
    "inStock": true,
@@ -1445,18 +1456,6 @@
    "inStock": true,
    "brand": "GoPro",
    "mpn": "GC17-CHDHW-011-RW"
-  },
-  {
-   "retailer": "georges",
-   "sku": "GC40-1176526",
-   "title": "HARMAN Technology TiTAN 4 x 5\" Pinhole Camera",
-   "url": "https://www.georges.com.au/products/harman-technology-titan-4-x-5-pinhole-camera",
-   "price": 494,
-   "wasPrice": 495,
-   "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC40-1176526.jpg?v=1738585231",
-   "inStock": true,
-   "brand": "HARMAN technology",
-   "mpn": "GC40-1176526"
   },
   {
    "retailer": "georges",
@@ -2121,6 +2120,18 @@
   },
   {
    "retailer": "georges",
+   "sku": "GC153-LI950BLACK",
+   "title": "Lomography Instant Wide Glass Polaroid Camera - Black",
+   "url": "https://www.georges.com.au/products/lomography-instant-wide-glass-polaroid-camera-black",
+   "price": 403.2,
+   "wasPrice": 449,
+   "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC153-LI950BLACK.jpg?v=1754989430",
+   "inStock": true,
+   "brand": "Lomography",
+   "mpn": "GC153-LI950BLACK"
+  },
+  {
+   "retailer": "georges",
    "sku": "GC153-LA121PS",
    "title": "Lomography LomoApparat 21mm Wide-Angle Camera (Black)",
    "url": "https://www.georges.com.au/products/lomography-lomoapparat-21mm-wide-angle-camera-black",
@@ -2428,6 +2439,18 @@
    "inStock": true,
    "brand": "Nikon",
    "mpn": "GC46-VOA223AA"
+  },
+  {
+   "retailer": "georges",
+   "sku": "GC11-NISI-X100V-SIL",
+   "title": "NiSi UHD UV for Fujifilm X100/X100S/X100F/X100T/X100V (Silver)",
+   "url": "https://www.georges.com.au/products/nisi-uhd-uv-for-fujifilm-x100-x100s-x100f-x100t-x100v-silver",
+   "price": 84.55,
+   "wasPrice": 89,
+   "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC11-NISI-X100V-SIL.jpg?v=1750141048",
+   "inStock": true,
+   "brand": "NiSi",
+   "mpn": "GC11-NISI-X100V-SIL"
   },
   {
    "retailer": "georges",
@@ -3111,7 +3134,7 @@
    "sku": "GC40-1558",
    "title": "Ricoh GR IV Digital Camera (Black)",
    "url": "https://www.georges.com.au/products/ricoh-gr-iv-digital-camera-black",
-   "price": 1998,
+   "price": 1988,
    "wasPrice": 2200,
    "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC40-1558_bonus-callout.jpg?v=1792388599",
    "inStock": true,
@@ -3135,7 +3158,7 @@
    "sku": "GC40-1587",
    "title": "Ricoh GR IV Monochrome Digital Camera",
    "url": "https://www.georges.com.au/products/ricoh-gr-iv-monochrome-digital-camera",
-   "price": 2499.95,
+   "price": 2919.34,
    "wasPrice": 3249,
    "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC40-1587_bonus-callout.jpg?v=1792388622",
    "inStock": true,
@@ -3398,7 +3421,7 @@
    "sku": "GC35-ILCE7RM6B",
    "title": "Sony A7R VI Mirrorless Camera (Body Only)",
    "url": "https://www.georges.com.au/products/sony-a7r-vi-mirrorless-camera-body-only",
-   "price": 6698,
+   "price": 6790,
    "wasPrice": 6999,
    "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/GC35-ILCE7RM6B_2.jpg?v=1793322477",
    "inStock": true,
@@ -3434,7 +3457,7 @@
    "sku": "GC35-DSCRX10M5",
    "title": "Sony RX10 V Digital Camera",
    "url": "https://www.georges.com.au/products/sony-rx10-v-digital-camera",
-   "price": 3390,
+   "price": 3425,
    "wasPrice": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/CX64130_right.jpg?v=1783652317",
    "inStock": true,
@@ -4074,6 +4097,18 @@
    "inStock": true,
    "brand": "Tether Tools",
    "mpn": "GC49-30.ORC115"
+  },
+  {
+   "retailer": "georges",
+   "sku": "GC33-TA-T35-CS-B",
+   "title": "Tilta Cooling System for Sony ZV-E1 - Black",
+   "url": "https://www.georges.com.au/products/tilta-cooling-system-for-sony-zv-e1-black",
+   "price": 116.1,
+   "wasPrice": 130,
+   "image": "https://cdn.shopify.com/s/files/1/0603/4083/0375/files/1_986762a8-faa6-4a4c-82c1-b6192ad33bbd.jpg?v=1691995415",
+   "inStock": true,
+   "brand": "Tilta",
+   "mpn": "GC33-TA-T35-CS-B"
   },
   {
    "retailer": "georges",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:08:20.678Z",
+ "scrapedAt": "2026-11-03T02:19:55.426Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -63,7 +63,7 @@
    "url": "https://www.electronicsexpo.com/products/furrion-aurora-2-1-outdoor-soundbar-speaker-with-built-in-subwoofer-bluetooth-hdmi-optical-inputs-fsbnn30mst",
    "price": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/furrion-aurora-21-outdoor-soundbar-speaker-with-built-in-subwoofer-bluetooth-hdmi-optical-inputs-fsbnn30mst-product-type-6112996.jpg?v=1783617798",
-   "inStock": true,
+   "inStock": false,
    "brand": "Furrion",
    "mpn": "FRRFSBNN30MST"
   },
@@ -129,8 +129,7 @@
    "sku": "JBLBAR1000MK2.FBA",
    "title": "JBL Bar 1000MK2 Powered 7.1.4-Channel sound bar system with Bluetooth, Wi-Fi, Apple AirPlay 2, DTS:X, and Dolby Atmos",
    "url": "https://www.electronicsexpo.com/products/jbl-bar-1000mk2-7-1-4-channel-soundbar-system-with-detachable-surround-speakers-multibeam-3-0-dolby-atmos-and-dts-x-480w-rms-with-10-sub-works-with-voice-assistant-enabled-speakers",
-   "price": 999.95,
-   "wasPrice": 1199.95,
+   "price": 1199.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-bar-1000mk2-powered-714-channel-sound-bar-system-with-bluetooth-wi-fi-apple-airplay-2-dtsx-and-dolby-atmos-product-type-6489397.jpg?v=1758815627",
    "inStock": true,
    "mpn": "JBLBAR1000MK2.FBA"
@@ -151,8 +150,7 @@
    "sku": "JBLBAR20AIOM2.FBA",
    "title": "JBL Bar 2.0 All-in-One Compact, Powered Sound Bar with Bluetooth",
    "url": "https://www.electronicsexpo.com/products/jbl-bar-2-0-all-in-one-compact-powered-sound-bar-with-bluetooth",
-   "price": 149.95,
-   "wasPrice": 219.95,
+   "price": 219.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/jbl-bar-20-all-in-one-compact-powered-sound-bar-with-bluetooth-3996051.jpg?v=1753292501",
    "inStock": true,
    "mpn": "JBLBAR20AIOM2.FBA"
@@ -162,8 +160,7 @@
    "sku": "JBLBAR21DBM2.FBA",
    "title": "JBL Bar 2.1 Deep Bass 300W 2.1-Channel Soundbar System",
    "url": "https://www.electronicsexpo.com/products/jbl-bar-2-1-deep-bass-300w-2-1-channel-soundbar-system",
-   "price": 229.95,
-   "wasPrice": 379.95,
+   "price": 379.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-bar-21-deep-bass-300w-21-channel-soundbar-system-3148175.jpg?v=1753292328",
    "inStock": true,
    "mpn": "JBLBAR21DBM2.FBA"
@@ -194,8 +191,7 @@
    "sku": "JBLBAR500MK2.FBA",
    "title": "JBL Bar 500 MK2 Powered 5.1-Channel Dolby Atmos Sound Bar/Subwoofer System with Wi-Fi and Bluetooth",
    "url": "https://www.electronicsexpo.com/products/jbl-bar-500mk2-5-1-channel-soundbar-system-with-dolby-atmos-multibeam-3-0-purevoice-2-0-750w-with-10-sub-easy-sound-calibration-and-works-with-voice-assistant-enabled-speakers",
-   "price": 499.95,
-   "wasPrice": 649.95,
+   "price": 649.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-bar-500-mk2-powered-51-channel-dolby-atmos-sound-barsubwoofer-system-with-wi-fi-and-bluetooth-product-type-7099777.jpg?v=1758815627",
    "inStock": true,
    "mpn": "JBLBAR500MK2.FBA"
@@ -216,8 +212,7 @@
    "sku": "JBLBAR700MK2.FBA",
    "title": "JBL Bar 700MK2 Powered 7.1-Channel Dolby Atmos Sound Bar System with Wi-Fi, Bluetooth, and Apple AirPlay 2",
    "url": "https://www.electronicsexpo.com/products/jbl-bar-700mk2-7-1-channel-soundbar-system-with-detachable-speakers-and-dolby-atmos-780w-max-output-power-and-a-10-wireless-subwoofer-works-with-voice-assistant-enabled-speakers",
-   "price": 749.95,
-   "wasPrice": 899.95,
+   "price": 899.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-bar-700mk2-powered-71-channel-dolby-atmos-sound-bar-system-with-wi-fi-bluetooth-and-apple-airplay-2-product-type-1432437.jpg?v=1758815627",
    "inStock": true,
    "mpn": "JBLBAR700MK2.FBA"
@@ -449,7 +444,8 @@
    "sku": "SAMHWB630F.FBA",
    "title": "Samsung HW-B630F Powered 3.1-Channel Sound Bar and Wireless Subwoofer System with DTS Virtual:X",
    "url": "https://www.electronicsexpo.com/products/samsung-hw-b630f-powered-3-1-channel-sound-bar-and-wireless-subwoofer-system-with-dts-virtual-x",
-   "price": 327.99,
+   "price": 237.99,
+   "wasPrice": 327.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/samsung-hw-b630f-powered-31-channel-sound-bar-and-wireless-subwoofer-system-with-dts-virtualx-product-type-2126130.jpg?v=1772645236",
    "inStock": false,
    "brand": "Samsung",
@@ -517,7 +513,7 @@
    "sku": "SAMHWQ900H.FBA",
    "title": "Samsung HW-Q900H Powered 7.1.2-Channel Dolby Atmos Sound Bar and Subwoofer System",
    "url": "https://www.electronicsexpo.com/products/samsung-hw-q900h-powered-7-1-2-channel-dolby-atmos-sound-bar-and-subwoofer-system",
-   "price": 1197.99,
+   "price": 997.99,
    "wasPrice": 1497.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/samsung-hw-q900h-powered-712-channel-dolby-atmos-sound-bar-and-subwoofer-system-product-type-7315675.webp?v=1785608293",
    "inStock": true,

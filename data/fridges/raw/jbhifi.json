@@ -1,6 +1,16 @@
 {
- "scrapedAt": "2026-11-02T03:48:26.461Z",
+ "scrapedAt": "2026-11-03T01:56:22.152Z",
  "offers": [
+  {
+   "retailer": "jbhifi",
+   "sku": "608827",
+   "title": "Beko BAF369W 351L Frost Free Single Door Fridge (White)",
+   "url": "https://www.jbhifi.com.au/products/beko-baf369w-351l-frost-free-single-door-fridge-white",
+   "price": 1149,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/608827-Product-0-I-638116295240451342.jpg?v=1791256181",
+   "inStock": true,
+   "brand": "Beko"
+  },
   {
    "retailer": "jbhifi",
    "sku": "781686",
@@ -28,8 +38,19 @@
    "url": "https://www.jbhifi.com.au/products/chiq-cbm230ns3-231l-bottom-mount-fridge-silver",
    "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/640335-Product-0-I-638227552206356777_8ccbe4e6-06ab-4709-a88c-3f953e7bf704.jpg?v=1791256265",
-   "inStock": true,
+   "inStock": false,
    "mpn": "CBM230NS3",
+   "brand": "Chiq"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "640328",
+   "title": "CHiQ CBM280NB3 283L Bottom Mount Fridge (Black)",
+   "url": "https://www.jbhifi.com.au/products/chiq-cbm280nb3-283l-bottom-mount-fridge-black",
+   "price": 594,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/640328-Product-0-I-638186991004442291.jpg?v=1791256236",
+   "inStock": true,
+   "mpn": "CBM280NB3",
    "brand": "Chiq"
   },
   {
@@ -2297,16 +2318,6 @@
    "url": "https://www.jbhifi.com.au/products/tcl-p445bfg-416l-bottom-mount-fridge-grey",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/843369-Product-0-I-638973741625377236.jpg?v=1761777427",
-   "inStock": true,
-   "brand": "Tcl"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "843367",
-   "title": "TCL P454TMB 415L Top Mount Fridge (Black)",
-   "url": "https://www.jbhifi.com.au/products/tcl-p454tmb-415l-top-mount-fridge-black",
-   "price": 699,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/843367-Product-0-I-638985033003848543.jpg?v=1762906570",
    "inStock": true,
    "brand": "Tcl"
   },

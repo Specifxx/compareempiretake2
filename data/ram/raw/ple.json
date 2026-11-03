@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T03:41:10.457Z",
+ "scrapedAt": "2026-11-03T01:52:23.142Z",
  "offers": [
   {
    "retailer": "ple",
@@ -175,15 +175,15 @@
   },
   {
    "retailer": "ple",
-   "sku": "668110",
-   "title": "Corsair Vengeance 16GB Kit (2x8GB) XMP/EXPO DDR5-5200 C40 (Grey)",
+   "sku": "636466",
+   "title": "Corsair Vengeance LPX 16GB Kit (2x8GB) DDR4-2666 C16",
    "brand": "Corsair",
-   "mpn": "CMK16GX5M2B5200Z40",
-   "url": "https://www.ple.com.au/products/668110/corsair-vengeance-16gb-kit-2x8gb-xmpexpo-ddr5-5200-c40-grey",
-   "price": 299,
-   "wasPrice": 419,
-   "image": "https://plecom.imgix.net/iil-393170-668110.jpg?w=600&h=600",
-   "inStock": false
+   "mpn": "CMK16GX4M2A2666C16",
+   "url": "https://www.ple.com.au/products/636466/corsair-vengeance-lpx-16gb-kit-2x8gb-ddr4-2666-c16",
+   "price": 99,
+   "wasPrice": 159,
+   "image": "https://plecom.imgix.net/iil-190677-636466.jpg?w=600&h=600",
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -208,6 +208,18 @@
    "wasPrice": 479,
    "image": "https://plecom.imgix.net/iil-245607-644907.jpg?w=600&h=600",
    "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "670859",
+   "title": "Corsair Vengeance LPX 32GB Kit (2x16GB) DDR4-3200 C16 (White)",
+   "brand": "Corsair",
+   "mpn": "CMK32GX4M2E3200C16W",
+   "url": "https://www.ple.com.au/products/670859/corsair-vengeance-lpx-32gb-kit-2x16gb-ddr4-3200-c16-white",
+   "price": 429,
+   "wasPrice": 479,
+   "image": "https://plecom.imgix.net/iil-411214-670859.jpg?w=600&h=600",
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -256,13 +268,24 @@
   },
   {
    "retailer": "ple",
+   "sku": "655604",
+   "title": "Corsair Vengeance RGB 32GB Kit (2x16GB) XMP/EXPO DDR5-5200 C40 (Grey)",
+   "brand": "Corsair",
+   "mpn": "CMH32GX5M2B5200Z40K",
+   "url": "https://www.ple.com.au/products/655604/corsair-vengeance-rgb-32gb-kit-2x16gb-xmpexpo-ddr5-5200-c40-grey",
+   "price": 699,
+   "wasPrice": 799,
+   "image": "https://plecom.imgix.net/iil-315401-655604.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "683827",
    "title": "Corsair Vengeance RGB 32GB Kit (2x16GB) XMP/EXPO DDR5-6000 C38 (Grey)",
    "brand": "Corsair",
    "mpn": "CMH32GX5M2B6000Z38",
    "url": "https://www.ple.com.au/products/683827/corsair-vengeance-rgb-32gb-kit-2x16gb-xmpexpo-ddr5-6000-c38-grey-",
-   "price": 789,
-   "wasPrice": 799,
+   "price": 829,
    "image": "https://plecom.imgix.net/iil-467472-683827.jpg?w=600&h=600",
    "inStock": true
   },
@@ -275,7 +298,7 @@
    "url": "https://www.ple.com.au/products/688729/corsair-vengeance-rgb-32gb-kit-2x16gb-xmpexpo-ddr5-6000-c38-grey-",
    "price": 799,
    "image": "https://plecom.imgix.net/iil-487502-688729.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -606,18 +629,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "679969",
-   "title": "G.Skill Trident Z RGB 32GB Kit (2x16GB) DDR4-3200 C16",
-   "brand": "G.Skill",
-   "mpn": "F4-3200C16D-32GTZRX",
-   "url": "https://www.ple.com.au/products/679969/gskill-trident-z-rgb-32gb-kit-2x16gb-ddr4-3200-c16",
-   "price": 474,
-   "wasPrice": 539,
-   "image": "https://plecom.imgix.net/iil-450740-679969.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "634890",
    "title": "G.Skill Trident Z RGB 32GB Kit (2x16GB) DDR4-3200 C16",
    "brand": "G.Skill",
@@ -627,6 +638,18 @@
    "wasPrice": 539,
    "image": "https://plecom.imgix.net/iil-405348-634890.jpg?w=600&h=600",
    "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "679969",
+   "title": "G.Skill Trident Z RGB 32GB Kit (2x16GB) DDR4-3200 C16",
+   "brand": "G.Skill",
+   "mpn": "F4-3200C16D-32GTZRX",
+   "url": "https://www.ple.com.au/products/679969/gskill-trident-z-rgb-32gb-kit-2x16gb-ddr4-3200-c16",
+   "price": 474,
+   "wasPrice": 539,
+   "image": "https://plecom.imgix.net/iil-450740-679969.jpg?w=600&h=600",
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -772,7 +795,7 @@
    "url": "https://www.ple.com.au/products/685972/gskill-trident-z5-neox-rgb-32gb-kit-2x16gb-expo-ull-ddr5-6000-c30-matte-white",
    "price": 1209,
    "image": "https://plecom.imgix.net/iil-475665-685972.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -880,6 +903,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "678333",
+   "title": "GeIL Orion 32GB Kit (2x16GB) DDR4-3200 C22",
+   "brand": "GeIL",
+   "mpn": "GOG432GB3200C22DC",
+   "url": "https://www.ple.com.au/products/678333/geil-orion-32gb-kit-2x16gb-ddr4-3200-c22",
+   "price": 299,
+   "wasPrice": 362,
+   "image": "https://plecom.imgix.net/iil-447352-678333.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "688730",
    "title": "GeIL Orion 8GB Kit (1x8GB) DDR4-3600 C18 (Charcoal Grey)",
    "brand": "GeIL",
@@ -946,6 +981,17 @@
    "url": "https://www.ple.com.au/products/679152/geil-polaris-rgb-32gb-kit-2x16gb-expo-ddr5-6000-c36-white",
    "price": 779,
    "image": "https://plecom.imgix.net/iil-449094-679152.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "664657",
+   "title": "GeIL Polaris RGB 32GB Kit (2x16GB) EXPO DDR5-6000 C38 (Grey)",
+   "brand": "GeIL",
+   "mpn": "GAOSG532GB6000C38BDC",
+   "url": "https://www.ple.com.au/products/664657/geil-polaris-rgb-32gb-kit-2x16gb-expo-ddr5-6000-c38-grey",
+   "price": 629,
+   "image": "https://plecom.imgix.net/iil-372288-664657.jpg?w=600&h=600",
    "inStock": true
   },
   {

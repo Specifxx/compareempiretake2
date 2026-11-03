@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:28:46.807Z",
+ "scrapedAt": "2026-11-03T02:40:13.476Z",
  "offers": [
   {
    "retailer": "uk-samsung",
@@ -19,8 +19,8 @@
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab A11 Kids Edition (LTE) 64GB",
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-kids-edition-lte-64gb-pink-f-smx135kepi/",
-   "price": 258.5,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx135kepi/gallery/uk-galaxy-tab-a11-kids-edition-lte-64gb-pink-f-smx135kepi-thumb-555196247",
+   "price": 239,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx135kepi/gallery/uk-galaxy-tab-a11-kids-edition-lte-64gb-pink-f-smx135kepi-thumb-555252033",
    "inStock": true
   },
   {
@@ -30,8 +30,8 @@
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab A11 Kids Edition (LTE) 64GB",
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-kids-edition-lte-64gb-blue-f-smx135kebl/",
-   "price": 258.5,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx135kebl/gallery/uk-galaxy-tab-a11-kids-edition-lte-64gb-blue-f-smx135kebl-thumb-555195988",
+   "price": 239,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx135kebl/gallery/uk-galaxy-tab-a11-kids-edition-lte-64gb-blue-f-smx135kebl-thumb-555252306",
    "inStock": true
   },
   {
@@ -41,8 +41,8 @@
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab A11 Kids Edition (Wi-Fi) 64GB",
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-kids-edition-wi-fi-64gb-pink-f-smx130kepi/",
-   "price": 208.5,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx130kepi/gallery/uk-galaxy-tab-a11-kids-edition-wi-fi-64gb-pink-f-smx130kepi-thumb-555201721",
+   "price": 189,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx130kepi/gallery/uk-galaxy-tab-a11-kids-edition-wi-fi-64gb-pink-f-smx130kepi-thumb-555252353",
    "inStock": true
   },
   {
@@ -52,8 +52,8 @@
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab A11 Kids Edition (Wi-Fi) 64GB",
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-kids-edition-wi-fi-64gb-blue-f-smx130kebl/",
-   "price": 208.5,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx130kebl/gallery/uk-galaxy-tab-a11-kids-edition-wi-fi-64gb-blue-f-smx130kebl-thumb-555201586",
+   "price": 189,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx130kebl/gallery/uk-galaxy-tab-a11-kids-edition-wi-fi-64gb-blue-f-smx130kebl-thumb-555252824",
    "inStock": true
   },
   {
@@ -87,6 +87,50 @@
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-plus-grey-128gb-5g-sm-x236bzareub/",
    "price": 339,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x236bzareub/gallery/uk-galaxy-tab-a11-plus-sm-x230-sm-x236bzareub-thumb-550008799",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-samsung",
+   "sku": "SMX236KEPI",
+   "mpn": "SMX236KEPI",
+   "brand": "Samsung",
+   "title": "Samsung Galaxy Tab A11+ Kids Edition (5G) 128GB",
+   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-plus-kids-edition-5g-128gb-pink-f-smx236kepi/",
+   "price": 359,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx236kepi/gallery/uk-galaxy-tab-a11-plus-kids-edition-5g-128gb-pink-f-smx236kepi-thumb-555277170",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-samsung",
+   "sku": "SMX236KEBL",
+   "mpn": "SMX236KEBL",
+   "brand": "Samsung",
+   "title": "Samsung Galaxy Tab A11+ Kids Edition (5G) 128GB",
+   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-plus-kids-edition-5g-128gb-blue-f-smx236kebl/",
+   "price": 359,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx236kebl/gallery/uk-galaxy-tab-a11-plus-kids-edition-5g-128gb-blue-f-smx236kebl-thumb-555277168",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-samsung",
+   "sku": "SMX230KEPI",
+   "mpn": "SMX230KEPI",
+   "brand": "Samsung",
+   "title": "Samsung Galaxy Tab A11+ Kids Edition (Wi-Fi) 128GB",
+   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-plus-kids-edition-wi-fi-128gb-pink-f-smx230kepi/",
+   "price": 309,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx230kepi/gallery/uk-galaxy-tab-a11-plus-kids-edition-wi-fi-128gb-pink-f-smx230kepi-thumb-555277172",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-samsung",
+   "sku": "SMX230KEBL",
+   "mpn": "SMX230KEBL",
+   "brand": "Samsung",
+   "title": "Samsung Galaxy Tab A11+ Kids Edition (Wi-Fi) 128GB",
+   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-plus-kids-edition-wi-fi-128gb-blue-f-smx230kebl/",
+   "price": 309,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx230kebl/gallery/uk-galaxy-tab-a11-plus-kids-edition-wi-fi-128gb-blue-f-smx230kebl-thumb-555277174",
    "inStock": true
   },
   {
@@ -146,13 +190,13 @@
   },
   {
    "retailer": "uk-samsung",
-   "sku": "SM-X406BZRREUB",
-   "mpn": "SM-X406BZRREUB",
+   "sku": "SM-X406BZAREUB",
+   "mpn": "SM-X406BZAREUB",
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab S10 Lite 5G (10.9\") 128GB",
-   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s10-lite-coralred-128gb-5g-sm-x406bzrreub/",
+   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s10-lite-grey-128gb-5g-sm-x406bzareub/",
    "price": 419,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x406bzrreub/gallery/uk-galaxy-tab-s10-lite-sm-x406-561445-sm-x406bzrreub-thumb-548601381",
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x406bzareub/gallery/uk-galaxy-tab-s10-lite-sm-x406-561445-sm-x406bzareub-thumb-548601327",
    "inStock": true
   },
   {

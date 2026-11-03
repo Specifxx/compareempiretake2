@@ -1,28 +1,6 @@
 {
- "scrapedAt": "2026-11-02T04:26:41.390Z",
+ "scrapedAt": "2026-11-03T02:37:27.073Z",
  "offers": [
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2079193",
-   "mpn": "A1/KCP432NS8/16",
-   "title": "Box Opened Kingston 16GB 1x16GB DIMM 3200MHz DDR4 Module Desktop Memory",
-   "url": "https://www.laptopsdirect.co.uk/grade-a1-kingston-16gb-1x16gb-dimm-3200mhz-ddr4-module-desktop-memory-a1-kcp432ns8-16/version.asp",
-   "price": 180.71,
-   "wasPrice": 223.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/A1KCP432NS816_1_Classic.png?v=6",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2091153",
-   "mpn": "A1/KF432C16BB/32",
-   "title": "Box Opened Kingston FURY Beast Black 32GB 1x32GB DDR4 3200MHz DIMM Desktop Memory",
-   "url": "https://www.laptopsdirect.co.uk/box-opened-kingston-fury-beast-black-32gb-1x32gb-ddr4-3200mhz-dimm-desktop-a1-kf432c16bb-32/version.asp",
-   "price": 370.47,
-   "wasPrice": 441.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/KF432C16BB32_1_Classic.png?v=5",
-   "inStock": true
-  },
   {
    "retailer": "uk-laptopsdirect",
    "sku": "1730751",
@@ -50,7 +28,7 @@
    "mpn": "CT16G4SFRA32A",
    "title": "Crucial 16GB (1x16GB) SO-DIMM 3200MHz DDR4 Laptop Memory",
    "url": "https://www.laptopsdirect.co.uk/crucial-16gb-ddr4-3200-cl22-sodimm-ct16g4sfra32a/version.asp",
-   "price": 140.97,
+   "price": 139.97,
    "wasPrice": 154.99,
    "image": "https://www.laptopsdirect.co.uk/Images/CT16G4SFRA32A_1_Classic.jpg?v=5",
    "inStock": true
@@ -71,8 +49,7 @@
    "mpn": "CT8G4DFRA32A",
    "title": "Crucial CL22 8GB (1x8GB) DIMM 3200MHz DDR4 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/crucial-8gb-ddr4-3200-cl22-non-ecc-ct8g4dfra32a/version.asp",
-   "price": 87.97,
-   "wasPrice": 92.98,
+   "price": 86.97,
    "image": "https://www.laptopsdirect.co.uk/Images/CT8G4DFRA32A_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -146,7 +123,7 @@
    "mpn": "KCP556SS8-16",
    "title": "Kingston 16GB (1x16GB) SO-DIMM 5600MHz DDR5 Laptop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-16gb-1x16gb-so-dimm-5600mhz-ddr5-laptop-memory-kcp556ss8-16/version.asp",
-   "price": 284.97,
+   "price": 283.97,
    "wasPrice": 359.99,
    "image": "https://www.laptopsdirect.co.uk/Images/KCP556SS8-16_1_Classic.jpg?v=5",
    "inStock": true
@@ -272,22 +249,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2008616",
-   "mpn": "KF556C40BB2-32",
-   "title": "Kingston FURY Beast 32GB (1x32GB) DIMM 5600MT/s DDR5 Desktop Memory",
-   "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-32gb-1x32gb-dimm-5600mt-s-ddr5-desktop-memory-kf556c40bb2-32/version.asp",
-   "price": 549.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/KF556C40BB2-32_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2008612",
    "mpn": "KF556C36BBE2-32",
    "title": "Kingston FURY Beast 32GB (1x32GB) DIMM 5600MT/s DDR5 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-32gb-1x32gb-dimm-5600mt-s-ddr5-desktop-memory-kf556c36bbe2-32/version.asp",
    "price": 621.97,
    "image": "https://www.laptopsdirect.co.uk/Images/KF556C36BBE2-32_1_Classic.png?v=10",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2008616",
+   "mpn": "KF556C40BB2-32",
+   "title": "Kingston FURY Beast 32GB (1x32GB) DIMM 5600MT/s DDR5 Desktop Memory",
+   "url": "https://www.laptopsdirect.co.uk/kingston-fury-beast-32gb-1x32gb-dimm-5600mt-s-ddr5-desktop-memory-kf556c40bb2-32/version.asp",
+   "price": 549.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/KF556C40BB2-32_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -454,8 +431,8 @@
    "mpn": "KVR32N22S8/8",
    "title": "Kingston ValueRAM 8GB (1x8GB) DIMM 3200MHz DDR4 Desktop Memory",
    "url": "https://www.laptopsdirect.co.uk/kingston-8gb-ddr4-3200mhz-dimm-memory-kvr32n22s8-8/version.asp",
-   "price": 64.97,
-   "wasPrice": 69.97,
+   "price": 74.97,
+   "wasPrice": 79.97,
    "image": "https://www.laptopsdirect.co.uk/Images/KVR32N22S88_1_Classic.png?v=5",
    "inStock": true
   },

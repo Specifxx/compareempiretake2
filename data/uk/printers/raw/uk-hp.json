@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:21:48.103Z",
+ "scrapedAt": "2026-11-03T02:33:20.183Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -183,7 +183,7 @@
    "brand": "HP",
    "title": "HP Color LaserJet Pro 4202dn Color printer",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-color-laserjet-pro-4202dn-printer-4ra87f-abu",
-   "price": 407.99,
+   "price": 310,
    "wasPrice": 439.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/1/f/1f3ddcb1-de7b-4088-a6ec-e121990cb7b5.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -195,7 +195,8 @@
    "brand": "HP",
    "title": "HP Color LaserJet Pro 4202dw Wireless Colour printer",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-color-laserjet-pro-4202dw-printer-4ra88f-b19",
-   "price": 431.99,
+   "price": 329.99,
+   "wasPrice": 431.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/8/f/8ffbe60d-546e-47aa-a51f-2bdc1ed8aa4b.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -206,7 +207,7 @@
    "brand": "HP",
    "title": "HP Color LaserJet Pro 4302dw Wireless Colour printer",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-color-laserjet-pro-mfp-4302dw-printer-4ra83f-b19",
-   "price": 460.9,
+   "price": 400,
    "wasPrice": 550.45,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/8/7/87d6e8e6-b8b4-4495-b422-f62afd4e54de.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -218,7 +219,7 @@
    "brand": "HP",
    "title": "HP Color LaserJet Pro 4302fdn Colour printer",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-color-laserjet-pro-mfp-4302fdn-printer-4ra84f-abu",
-   "price": 553.9,
+   "price": 419.99,
    "wasPrice": 599.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/8/6/8674b55e-77e6-438f-81af-df578e7e94ea.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -230,7 +231,7 @@
    "brand": "HP",
    "title": "HP Color LaserJet Pro 4302fdw Wireless Colour printer with Fax",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-color-laserjet-pro-mfp-4302fdw-printer-5hh64f-b19",
-   "price": 568.9,
+   "price": 439.99,
    "wasPrice": 629.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/4/2/42a5be6a-6d5a-4177-9f26-c8c654477d63.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -705,7 +706,7 @@
    "brand": "HP",
    "title": "HP LaserJet M110w Wireless Printer",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-laserjet-m110w-printer-7md66f-b19",
-   "price": 96,
+   "price": 79.99,
    "wasPrice": 119.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/8/9/898783d6-e087-4dd3-8114-9b11f921a74c.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -729,7 +730,8 @@
    "brand": "HP",
    "title": "HP LaserJet M209dw Black & White Wireless Printer",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-laserjet-m209dw-printer-6gw62f-b19",
-   "price": 149.99,
+   "price": 70,
+   "wasPrice": 149.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/f/f/ffb2ce74-79c8-4011-8407-294ce4530655.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -832,22 +834,10 @@
    "brand": "HP",
    "title": "HP LaserJet Pro 4002dn Printer",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-laserjet-pro-4002dn-printer-2z605f-abu",
-   "price": 279.6,
+   "price": 299.99,
    "wasPrice": 357.95,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/7/f/7fb7da8f-b653-4063-a00c-b57c81e6face.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "2Z606F#B19",
-   "mpn": "2Z606F#B19",
-   "brand": "HP",
-   "title": "HP LaserJet Pro 4002dw Black and White Wireless Printer",
-   "url": "https://www.hp.com/gb-en/shop/products/printers/hp-laserjet-pro-4002dw-printer-2z606f-b19",
-   "price": 266.2,
-   "wasPrice": 420.7,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/1/8/184a8760-f528-4eb4-96ad-728526b08f64.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -874,18 +864,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "2Z622F#B19",
-   "mpn": "2Z622F#B19",
-   "brand": "HP",
-   "title": "HP LaserJet Pro MFP 4102dw Printer",
-   "url": "https://www.hp.com/gb-en/shop/products/printers/hp-laserjet-pro-mfp-4102dw-printer-2z622f-b19",
-   "price": 328.1,
-   "wasPrice": 550.43,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/e/2/e268964b-f8e8-40da-8a33-373be8c8af95.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "2Z623F#ABU",
    "mpn": "2Z623F#ABU",
    "brand": "HP",
@@ -895,18 +873,6 @@
    "wasPrice": 587.75,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/9/9/99cedd6f-0649-438c-b2c5-466b2828406b.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "2Z624F#B19",
-   "mpn": "2Z624F#B19",
-   "brand": "HP",
-   "title": "HP LaserJet Pro MFP 4102fdw Black & White Wireless Printer",
-   "url": "https://www.hp.com/gb-en/shop/products/printers/hp-laserjet-pro-mfp-4102fdw-printer-2z624f-b19",
-   "price": 324.9,
-   "wasPrice": 632.36,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/d/6/d6914cc5-b914-468d-a6fe-767cf78864d7.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1120,7 +1086,7 @@
    "brand": "HP",
    "title": "HP Smart Tank 5107 Wireless All-in-One Colour Printer",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-smart-tank-5107-all-in-one-printer-5d1b1a-bhc",
-   "price": 142.98,
+   "price": 139.99,
    "wasPrice": 209.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-smart-tank-5107_1__cus_1.jpg?store=gb-en&image-type=small_image",
    "inStock": true
@@ -1132,8 +1098,7 @@
    "brand": "HP",
    "title": "HP Smart Tank 5109 All-in-One Colour Printer",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-smart-tank-5109-all-in-one-printer-5d1c0a-bhc",
-   "price": 149.99,
-   "wasPrice": 209.99,
+   "price": 209.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-smart-tank-5109_1__cus.jpg?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -1191,7 +1156,7 @@
    "brand": "HP",
    "title": "HP Smart Tank 7605 All-in-One",
    "url": "https://www.hp.com/gb-en/shop/products/printers/hp-smart-tank-7605-all-in-one-28c02a-bhc",
-   "price": 280,
+   "price": 259.99,
    "wasPrice": 349.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-smart-tank-7605_1__cus.jpg?store=gb-en&image-type=small_image",
    "inStock": true

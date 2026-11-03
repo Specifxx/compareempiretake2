@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:28:56.974Z",
+ "scrapedAt": "2026-11-03T02:40:26.060Z",
  "offers": [
   {
    "retailer": "uk-stuartwestmoreland",
@@ -57,6 +57,17 @@
    "inStock": false,
    "brand": "Dreame",
    "mpn": "HHR32A"
+  },
+  {
+   "retailer": "uk-stuartwestmoreland",
+   "sku": "HHR58C",
+   "title": "Dreame T14 Pro Wet & Dry Cordless Vacuum Cleaner – Black (HHR58C)",
+   "url": "https://www.stuartwestmoreland.co.uk/products/dreame-t14-pro-wet-dry-vacuum-cleaner-hhr58c",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/HHR58C-1_1ce7eb72-9d76-4f15-a49d-c14d358d273b.jpg?v=1793621631",
+   "inStock": false,
+   "brand": "Dreame",
+   "mpn": "HHR58C"
   },
   {
    "retailer": "uk-stuartwestmoreland",
@@ -213,7 +224,7 @@
    "sku": "V12-2023",
    "title": "Dyson V12 Detect Slim Absolute Cordless Stick Vacuum Cleaner",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v12-detect-slim-absolute-cordless-stick-vacuum-cleaner",
-   "price": 516,
+   "price": 514,
    "wasPrice": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/2c915a58-dyson-v12-2023-1.jpg?v=1755270906",
    "inStock": true,
@@ -315,7 +326,7 @@
    "sku": "V8CYCLONENEW",
    "title": "Dyson V8 Cyclone New Cordless Vacuum Cleaner – Black/Green",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v8-cyclone-new-cordless-vacuum-black-green-v8cyclonenew",
-   "price": 201.99,
+   "price": 199.99,
    "wasPrice": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V8CYCLONENEW-1.jpg?v=1779372984",
    "inStock": true,
@@ -807,10 +818,9 @@
    "sku": "HZ500UK",
    "title": "Shark Anti Hair Wrap Corded Stick Vacuum Cleaner with Flexology – Purple | HZ500UK",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-anti-hair-wrap-corded-stick-vacuum-cleaner-flexology-hz500uk-purple",
-   "price": 159.99,
-   "wasPrice": 189.99,
+   "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/HZ500UK-NEW-1.jpg?v=1781707622",
-   "inStock": true,
+   "inStock": false,
    "brand": "Shark",
    "mpn": "HZ500UK"
   },
@@ -1253,6 +1263,7 @@
    "title": "Vax Air Lift Pet Pro Vacuum Cleaner UCUESHV1",
    "url": "https://www.stuartwestmoreland.co.uk/products/vax-air-lift-pet-pro-vacuum-cleaner-ucueshv1",
    "price": 108.99,
+   "wasPrice": 109.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/fd89fae8-UCUESHV1-1.jpg?v=1755270931",
    "inStock": true,
    "mpn": "UCUESHV1"

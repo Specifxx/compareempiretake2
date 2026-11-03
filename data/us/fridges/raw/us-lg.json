@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-02T04:10:35.433Z",
+ "scrapedAt": "2026-11-03T02:22:20.179Z",
  "offers": [
   {
    "retailer": "us-lg",
@@ -190,17 +190,6 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "LRMVC2306D",
-   "mpn": "LRMVC2306D",
-   "brand": "LG",
-   "title": "23 cu. ft. Smart InstaView™ Door-in-Door® Counter-Depth Refrigerator with Craft Ice™",
-   "url": "https://www.lg.com/us/refrigerators/lg-lrmvc2306d-french-4-door-refrigerator",
-   "price": 4099,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/244b5165-5a87-4c84-9c7a-da42b288908d/Refrigerator_LRMVC2306D_gallery_01_5000x5000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
    "sku": "LRSOC2306S",
    "mpn": "LRSOC2306S",
    "brand": "LG",
@@ -208,6 +197,17 @@
    "url": "https://www.lg.com/us/refrigerators/lg-lrsoc2306s-side-by-side-refrigerator",
    "price": 2332,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/c380cbe5-3276-4684-a529-93146660d116/md08001666-450_v1-jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "LRMVC2306S",
+   "mpn": "LRMVC2306S",
+   "brand": "LG",
+   "title": "23 cu. ft. Smart Wi-Fi Enabled InstaView® Door-in-Door® Counter-Depth Refrigerator with Craft Ice® Maker",
+   "url": "https://www.lg.com/us/refrigerators/lg-lrmvc2306s-french-4-door-refrigerator",
+   "price": 2999,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/c9f74e8f-2630-4a08-a258-42fb8f01a5c1/Refrigerator_LRMVC2306S_gallery_01_5000x5000",
    "inStock": true
   },
   {
@@ -228,7 +228,7 @@
    "brand": "LG",
    "title": "24 cu. ft. Counter-Depth MAX™ with Zero Clearance™ 3-Door French Door Refrigerator",
    "url": "https://www.lg.com/us/refrigerators/lg-lf24z6330s-french-3-door-refrigerator",
-   "price": 2199,
+   "price": 2299,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/aa3a56eb-66a8-4bf6-9f1a-71272d6fcb81/Refrigerator_LF24Z6330S_gallery_01_2500x2500",
    "inStock": true
   },
@@ -404,7 +404,7 @@
    "brand": "LG",
    "title": "26 cu. ft. Smart InstaView® Counter-Depth MAX™ French Door Refrigerator",
    "url": "https://www.lg.com/us/refrigerators/lg-lrfoc2606s-french-3-door-refrigerator",
-   "price": 2099,
+   "price": 2399,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/6066cbc4-ee9c-43c1-ba96-6a6af67f143d/Refrigerator_LRFOC2606S_lg-largest-badge_gallery_01_5000x5000",
    "inStock": true
   },
@@ -421,13 +421,13 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "LRSDS2706S",
-   "mpn": "LRSDS2706S",
+   "sku": "LRSDS2706D",
+   "mpn": "LRSDS2706D",
    "brand": "LG",
-   "title": "27 cu. ft. 36 Inch Wide Side-by-Side Refrigerator - Stainless Steel",
-   "url": "https://www.lg.com/us/refrigerators/lg-lrsds2706s-side-by-side-refrigerator",
-   "price": 2221,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/33d47f56-84d5-4c47-94e0-36a7d5e6d06c/Refrigerators_LRSDS2706S_reliability_gallery-1_5000x5000",
+   "title": "27 cu. ft. Side-By-Side Door-in-Door® Refrigerator with Craft Ice®",
+   "url": "https://www.lg.com/us/refrigerators/lg-lrsds2706d-side-by-side-refrigerator",
+   "price": 2332,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/1e92dbe2-abf8-422c-b44b-96c9a5705950/md08000823-450-jpg",
    "inStock": true
   },
   {
@@ -470,7 +470,7 @@
    "brand": "LG",
    "title": "27 cu. ft. Smart Counter-Depth MAX™ French Door Refrigerator",
    "url": "https://www.lg.com/us/refrigerators/lg-lrflc2716v-french-3-door-refrigerator",
-   "price": 1699,
+   "price": 1799,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/fa323ceb-d41f-484d-a708-b5d4d628a3d1/Refrigerator_LRFLC2716V_gallery-01_2500x2500",
    "inStock": true
   },
@@ -569,7 +569,7 @@
    "brand": "LG",
    "title": "29 cu. ft. 4 Door French Door Refrigerator with Double Freezer",
    "url": "https://www.lg.com/us/refrigerators/lg-lmws29626s-french-4-door-refrigerator",
-   "price": 1399,
+   "price": 1599,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/9095d0f8-dd03-46e8-80b5-4b70b62af0eb/Refrigerator_LMWS29626S_gallery_01_2500x2500",
    "inStock": true
   },
@@ -580,7 +580,7 @@
    "brand": "LG",
    "title": "29 cu. ft. French Door Refrigerator",
    "url": "https://www.lg.com/us/refrigerators/lg-lrfcs29d6s-french-3-door-refrigerator",
-   "price": 1399,
+   "price": 1599,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/132f6c91-4a7e-4ebf-b17c-b4ce71662c9f/Refrigerator_LRFCS29D6S_gallery_01_5000x5000",
    "inStock": true
   },
@@ -602,7 +602,7 @@
    "brand": "LG",
    "title": "29 cu. ft. Smart InstaView® Standard-Depth MAX™ 4-Door French Door Refrigerator with Full-Convert Drawer™",
    "url": "https://www.lg.com/us/refrigerators/lg-lf29s8250s-french-4-door-refrigerator",
-   "price": 1999,
+   "price": 2699,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/0e083c95-7a03-4f05-93b7-11ee673e7ae6/Refrigerator_LF29S8250S_gallery_01_5000x5000",
    "inStock": true
   },
@@ -652,24 +652,24 @@
   },
   {
    "retailer": "us-lg",
+   "sku": "LRMDS3006S",
+   "mpn": "LRMDS3006S",
+   "brand": "LG",
+   "title": "30 cu. ft. 36 Inch Wide French Door Refrigerator - Stainless Steel",
+   "url": "https://www.lg.com/us/refrigerators/lg-lrmds3006s-french-4-door-refrigerator",
+   "price": 3799,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/5d72aab6-e133-4821-94e1-20576d0cd64e/Refrigerator_LRMDS3006S_gallery_01_5000x5000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
    "sku": "LRMXS3006S",
    "mpn": "LRMXS3006S",
    "brand": "LG",
    "title": "30 cu. ft. Smart French Door Refrigerator with Craft Ice™ & Full-Convert™ Drawer",
    "url": "https://www.lg.com/us/refrigerators/lg-lrmxs3006s-french-4-door-refrigerator",
-   "price": 1899,
+   "price": 1999,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/f0b513a7-bb08-4ecb-8e75-4b1139a52d4c/Refrigerator_LRMXS3006S_gallery_01_5000x5000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "LRMDS3006D",
-   "mpn": "LRMDS3006D",
-   "brand": "LG",
-   "title": "30 cu. ft. Smart Refrigerator with Craft Ice®",
-   "url": "https://www.lg.com/us/refrigerators/lg-lrmds3006d-french-4-door-refrigerator",
-   "price": 2699,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/70198a01-0792-4f3a-8180-f7c640ec2f42/Refrigerator_LRMDS3006D_gallery_01_5000x5000",
    "inStock": true
   },
   {
@@ -701,7 +701,7 @@
    "brand": "LG",
    "title": "31 cu. ft. Smart Standard-Depth MAX™ French Door Refrigerator with Four Types of Ice and Mirror InstaView®",
    "url": "https://www.lg.com/us/refrigerators/lg-lryks3106s-french-4-door-refrigerator",
-   "price": 2799,
+   "price": 3099,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/f646c38b-ba6d-4ca5-b31b-5876992619f0/Refrigerator_LRYKS3106S_lg-largest-badge_gallery_01_5000x5000",
    "inStock": true
   },
@@ -784,17 +784,6 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "LT09S2000W",
-   "mpn": "LT09S2000W",
-   "brand": "LG",
-   "title": "9 cu. ft. 22 Inch width Top Freezer Refrigerator",
-   "url": "https://www.lg.com/us/refrigerators/lg-lt09s2000w-top-freezer-refrigerator",
-   "price": 699,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/32ff6ded-4ec7-496d-be33-0c92c6762ee0/Refrigerator_LT09S2000W_gallery-01_2500x2500",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
    "sku": "LT09S2000B",
    "mpn": "LT09S2000B",
    "brand": "LG",
@@ -802,6 +791,17 @@
    "url": "https://www.lg.com/us/refrigerators/lg-lt09s2000b-top-freezer-refrigerator",
    "price": 699,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/4c33bea9-62b1-469d-ad46-c142eda4920a/Refrigerator_LT09S2000B_gallery-01_2500x2500",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "LT09S2000W",
+   "mpn": "LT09S2000W",
+   "brand": "LG",
+   "title": "9 cu. ft. 22 Inch width Top Freezer Refrigerator",
+   "url": "https://www.lg.com/us/refrigerators/lg-lt09s2000w-top-freezer-refrigerator",
+   "price": 699,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/32ff6ded-4ec7-496d-be33-0c92c6762ee0/Refrigerator_LT09S2000W_gallery-01_2500x2500",
    "inStock": true
   },
   {
@@ -855,7 +855,7 @@
    "brand": "LG",
    "title": "LG STUDIO 26 cu. ft. Smart Side-by-Side Built-In Refrigerator with Ice & Water Dispenser",
    "url": "https://www.lg.com/us/refrigerators/lg-srsxb2622s-side-by-side-refrigerator",
-   "price": 7999,
+   "price": 8499,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/ed486d42-fc3c-41c8-b3e9-7a9e06d930d3/md08001514-450-jpg",
    "inStock": true
   },
