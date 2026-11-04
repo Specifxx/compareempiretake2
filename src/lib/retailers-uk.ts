@@ -132,4 +132,17 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-abell", name: "Abell", site: "abell.co.uk", color: "#1D3557", type: "retailer" },
   { id: "uk-astonfincher", name: "Aston & Fincher", site: "astonandfincher.co.uk", color: "#E4007C", type: "retailer" },
   { id: "uk-revivehair", name: "Revive Hair Artists", site: "revivehairartists.co.uk", color: "#222222", type: "retailer" },
+  // The big chains, priced from affiliate-network product feeds once their secret exists (docs/stores/big-stores.md, 2026-11-04)
+  { id: "uk-currys", name: "Currys", site: "currys.co.uk", color: "#4C12A1", type: "retailer" },
+  { id: "uk-argos", name: "Argos", site: "argos.co.uk", color: "#D7192D", type: "retailer" },
+  { id: "uk-ao", name: "AO", site: "ao.com", color: "#00A651", type: "retailer" },
+  { id: "uk-johnlewis", name: "John Lewis", site: "johnlewis.com", color: "#1E1E1E", type: "retailer" },
+  { id: "uk-very", name: "Very", site: "very.co.uk", color: "#E4007C", type: "retailer" },
+  { id: "uk-scan", name: "Scan", site: "scan.co.uk", color: "#E30613", type: "retailer" },
+  { id: "uk-ebuyer", name: "Ebuyer", site: "ebuyer.com", color: "#0054A6", type: "retailer" },
+  { id: "uk-richersounds", name: "Richer Sounds", site: "richersounds.com", color: "#E2001A", type: "retailer" },
+  { id: "uk-smyths", name: "Smyths Toys", site: "smythstoys.com", color: "#E31837", type: "retailer" },
+  { id: "uk-game", name: "GAME", site: "game.co.uk", color: "#5F259F", type: "retailer" },
+  { id: "uk-costcouk", name: "Costco UK", site: "costco.co.uk", color: "#005DAA", type: "retailer" },
+  { id: "uk-cramptonandmoore", name: "Crampton & Moore", site: "cramptonandmoore.co.uk", color: "#1A1A1A", type: "retailer" },
 ];
