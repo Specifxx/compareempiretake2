@@ -1135,3 +1135,8 @@ GraphQL, Myer's Constructor, Officeworks' Algolia).
   rather than worked around; Appliances Online is a next-round candidate.
 - Kmart, Bunnings, Costco (all regions) and Micro Center run no affiliate programme we know of and block servers,
   so they stay out until that changes; their secret names are reserved in case a feed appears.
+- Added the same day (owner: "this is also just for Australia we need to cover us and UK as well"): Best Buy's free
+  Products API (`regions/us/bestbuy.ts`, `BESTBUY_API_KEY`: keyword searches per category through the feed rules, the
+  Impact feed merged on top), and feed-gated files for Office Depot, Williams Sonoma, Kohl's, Macy's, Wayfair, BJ's
+  (US) and Robert Dyas, Littlewoods, The Entertainer, Hamleys, Ryman, Jessops, Marks Electrical, Appliances Direct
+  (UK). The owner's prompt is now ordered US, UK, then AU.

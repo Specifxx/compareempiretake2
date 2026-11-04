@@ -147,4 +147,10 @@ export const US_RETAILERS: (Retailer & { id: `us-${string}` })[] = [
   { id: "us-crutchfield", name: "Crutchfield", site: "crutchfield.com", color: "#0A4C8C", type: "retailer" },
   { id: "us-costco", name: "Costco", site: "costco.com", color: "#005DAA", type: "retailer" },
   { id: "us-microcenter", name: "Micro Center", site: "microcenter.com", color: "#B31B1B", type: "retailer" },
+  { id: "us-officedepot", name: "Office Depot", site: "officedepot.com", color: "#CC0000", type: "retailer" },
+  { id: "us-williamssonoma", name: "Williams Sonoma", site: "williams-sonoma.com", color: "#1F2A44", type: "retailer" },
+  { id: "us-kohls", name: "Kohl's", site: "kohls.com", color: "#6B2C91", type: "retailer" },
+  { id: "us-macys", name: "Macy's", site: "macys.com", color: "#E21A2C", type: "retailer" },
+  { id: "us-wayfair", name: "Wayfair", site: "wayfair.com", color: "#7F187F", type: "retailer" },
+  { id: "us-bjs", name: "BJ's Wholesale", site: "bjs.com", color: "#D3222A", type: "retailer" },
 ];

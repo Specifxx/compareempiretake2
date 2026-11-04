@@ -56,7 +56,7 @@ and the chain simply stays off until a correct feed is set.
 
 | Chain | Status | Why | Way in | Secret |
 |---|---|---|---|---|
-| Best Buy | Walled (connection reset) | Akamai | Impact feed, **or** its free Products API (`developer.bestbuy.com`, 5 req/s) | `FEED_URL_US_BESTBUY` |
+| **Best Buy** | **Ready** (`regions/us/bestbuy.ts`) | Walled (Akamai), but its free Products API needs only a key from developer.bestbuy.com (no affiliate approval); read by keyword per category once `BESTBUY_API_KEY` exists, Impact feed merged on top | API key, then Impact feed | `BESTBUY_API_KEY`, `FEED_URL_US_BESTBUY` |
 | Walmart | Tiny block body | PerimeterX | Impact feed | `FEED_URL_US_WALMART` |
 | Target | Client-rendered, keyed `redsky` API | key in page JS: not used by policy | Impact (Target Partners) feed | `FEED_URL_US_TARGET` |
 | Home Depot | Walled | Akamai | Impact feed | `FEED_URL_US_HOMEDEPOT` |
@@ -65,13 +65,17 @@ and the chain simply stays off until a correct feed is set.
 | B&H Photo | Walled | | own programme's feed | `FEED_URL_US_BHPHOTO` |
 | Adorama | Walled | | Impact feed | `FEED_URL_US_ADORAMA` |
 | Staples | Tiny block body | | Impact / CJ feed | `FEED_URL_US_STAPLES` |
-| Office Depot | "We're Sorry" page | | CJ feed | (add on approval) |
+| Office Depot | "We're Sorry" page | | CJ feed | `FEED_URL_US_OFFICEDEPOT` |
 | GameStop | Walled | | Impact / CJ feed | `FEED_URL_US_GAMESTOP` |
 | Sam's Club | Tiny block body | | Impact feed | `FEED_URL_US_SAMSCLUB` |
 | Crutchfield | Walled | | CJ / Impact feed | `FEED_URL_US_CRUTCHFIELD` |
 | Costco | GraphQL with a client id in page JS | not used by policy; no affiliate programme | none | `FEED_URL_US_COSTCO` (if one appears) |
 | Micro Center | Walled | no affiliate programme | none | `FEED_URL_US_MICROCENTER` (if one appears) |
-| Williams-Sonoma, Kohl's, Macy's, Wayfair, BJ's | Walled | | their networks' feeds (later; smaller overlap with our categories) | — |
+| Williams Sonoma | Walled | | Rakuten / CJ feed | `FEED_URL_US_WILLIAMSSONOMA` |
+| Kohl's | Walled | | Impact / CJ feed | `FEED_URL_US_KOHLS` |
+| Macy's | Walled | | Rakuten / Impact feed | `FEED_URL_US_MACYS` |
+| Wayfair | Walled | | CJ / Impact feed | `FEED_URL_US_WAYFAIR` |
+| BJ's Wholesale | Walled | | Impact / CJ feed | `FEED_URL_US_BJS` |
 | Amazon, eBay | Live | APIs | | |
 
 ## United Kingdom
@@ -91,8 +95,15 @@ and the chain simply stays off until a correct feed is set.
 | Smyths Toys | Challenge | | Awin feed | `FEED_URL_UK_SMYTHS` |
 | GAME | Walled | | Awin feed | `FEED_URL_UK_GAME` |
 | Costco UK | Walled | no affiliate programme | none | `FEED_URL_UK_COSTCOUK` (if one appears) |
-| Robert Dyas, CCL, Novatech, Littlewoods, The Entertainer, Hamleys, Ryman, Tesco, Harrods, Selfridges | Walled / 404 | | their networks' feeds (later) | — |
-| Marks Electrical, Sonic Direct, Sevenoaks, Jessops, Appliances Direct, Donaghy Bros, Hifix, Electricshop | Client-rendered, 500, Cloudflare on page 2, or no card markup | | feed or a later round | — |
+| Robert Dyas | Walled | | Awin feed | `FEED_URL_UK_ROBERTDYAS` |
+| Littlewoods | Walled | | Awin feed | `FEED_URL_UK_LITTLEWOODS` |
+| The Entertainer | Walled | | Awin feed | `FEED_URL_UK_THEENTERTAINER` |
+| Hamleys | Walled | | Awin feed | `FEED_URL_UK_HAMLEYS` |
+| Ryman | Walled | | Awin feed | `FEED_URL_UK_RYMAN` |
+| Jessops | 404 to servers | | Awin feed | `FEED_URL_UK_JESSOPS` |
+| Marks Electrical | Client-rendered | | Awin feed | `FEED_URL_UK_MARKSELECTRICAL` |
+| Appliances Direct | No card markup / 500 | | Awin feed | `FEED_URL_UK_APPLIANCESDIRECT` |
+| CCL, Novatech, Tesco, Harrods, Selfridges, Sonic Direct, Sevenoaks, Donaghy Bros, Hifix, Electricshop | Walled, 404, 500, Cloudflare on page 2, or no card markup | | a later round | — |
 | Amazon UK, eBay UK | Live | APIs | | |
 
 ## Adding a chain's feed later
