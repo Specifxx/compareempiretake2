@@ -58,7 +58,8 @@ async function crawl(path: string, maxPages = 12): Promise<RawOffer[]> {
     let html: string;
     try {
       html = await get(`${BASE}${path}${p > 1 ? `?p=${p}` : ""}`);
-    } catch {
+    } catch (e) {
+      console.log(`uk-reliant ${path} p${p}: ${(e as Error).message}`);
       break;
     }
     const cards = page(html);

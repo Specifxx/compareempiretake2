@@ -33,29 +33,62 @@ type Product = {
   brand?: { name?: string };
   attributes?: { id?: string; value?: string }[];
   preorderProduct?: boolean;
+  /** SKUs of the products that replaced this one (a delisted product points at the current model). */
+  substitutes?: (string | { sku?: string })[];
+  family?: (string | { sku?: string })[];
 };
 
 const CATS = [
-  "phones", "tablets", "laptops", "desktops", "monitors", "printers", "routers", "tvs", "soundbars", "headphones", "speakers",
-  "smartwatches", "cameras", "drones", "consoles", "graphics-cards", "cpus", "ssds", "ram", "motherboards", "robot-vacuums",
-  "vacuums", "air-fryers", "coffee-machines", "small-kitchen", "hair-care", "lego",
+  "phones",
+  "tablets",
+  "laptops",
+  "desktops",
+  "monitors",
+  "printers",
+  "routers",
+  "tvs",
+  "soundbars",
+  "headphones",
+  "speakers",
+  "smartwatches",
+  "cameras",
+  "drones",
+  "consoles",
+  "graphics-cards",
+  "cpus",
+  "ssds",
+  "ram",
+  "motherboards",
+  "robot-vacuums",
+  "vacuums",
+  "air-fryers",
+  "coffee-machines",
+  "small-kitchen",
+  "hair-care",
+  "lego",
 ] as const satisfies readonly CategoryId[];
 
 /** Which sitemap slugs are worth a product call: broad on purpose, the shared title checks decide the rest. */
 const SLUG: Record<(typeof CATS)[number], RegExp> = {
-  phones: /iphone|galaxy-(s|z|a)\d|pixel-\d|smartphone|-phone-|oppo-|motorola|moto-g|nokia-|xiaomi|redmi/,
+  phones:
+    /iphone|galaxy-(s|z|a)\d|pixel-\d|smartphone|-phone-|oppo-|motorola|moto-g|nokia-|xiaomi|redmi/,
   tablets: /ipad|galaxy-tab|tablet|surface-pro|lenovo-tab|matepad|-pad-/,
-  laptops: /laptop|macbook|chromebook|surface-laptop|zenbook|vivobook|thinkpad|ideapad|yoga-|inspiron|legion|omnibook|-notebook-(pc|computer)|gaming-notebook/,
-  desktops: /desktop|imac|mac-mini|mac-studio|all-in-one|-tower-|gaming-pc|mini-pc/,
+  laptops:
+    /laptop|macbook|chromebook|surface-laptop|zenbook|vivobook|thinkpad|ideapad|yoga-|inspiron|legion|omnibook|-notebook-(pc|computer)|gaming-notebook/,
+  desktops:
+    /desktop|imac|mac-mini|mac-studio|all-in-one|-tower-|gaming-pc|mini-pc/,
   monitors: /monitor/,
   printers: /printer/,
   routers: /router|mesh-wifi|wifi-6|wifi-7|-mesh-/,
   tvs: /-tv-|television|-tv$|smart-tv|oled|qled/,
   soundbars: /soundbar|sound-bar/,
   headphones: /headphone|earphone|earbud|airpods|headset/,
-  speakers: /speaker|homepod|sonos|soundcore|jbl-(flip|charge|go|clip|boombox|xtreme)/,
-  smartwatches: /apple-watch|galaxy-watch|pixel-watch|garmin|fitbit|smart-?watch|amazfit|huawei-watch|xiaomi-watch|redmi-watch/,
-  cameras: /(?<!web|security-|dash-|ip-|action-)camera|instax|gopro|insta360|mirrorless|dslr|powershot|lumix/,
+  speakers:
+    /speaker|homepod|sonos|soundcore|jbl-(flip|charge|go|clip|boombox|xtreme)/,
+  smartwatches:
+    /apple-watch|galaxy-watch|pixel-watch|garmin|fitbit|smart-?watch|amazfit|huawei-watch|xiaomi-watch|redmi-watch/,
+  cameras:
+    /(?<!web|security-|dash-|ip-|action-)camera|instax|gopro|insta360|mirrorless|dslr|powershot|lumix/,
   drones: /drone|dji/,
   consoles: /playstation|ps5|xbox|nintendo|switch-2|console|steam-deck/,
   "graphics-cards": /graphics-card|geforce|radeon|rtx-\d/,
@@ -67,25 +100,45 @@ const SLUG: Record<(typeof CATS)[number], RegExp> = {
   vacuums: /vacuum|-vac-/,
   "air-fryers": /air-?fryer/,
   "coffee-machines": /coffee|espresso|nespresso/,
-  "small-kitchen": /kettle|toaster|blender|mixer|food-processor|microwave|juicer|rice-cooker|slow-cooker|sandwich-press|grill/,
-  "hair-care": /hair-dryer|hairdryer|straightener|airwrap|curler|hair-styler|supersonic/,
+  "small-kitchen":
+    /kettle|toaster|blender|mixer|food-processor|microwave|juicer|rice-cooker|slow-cooker|sandwich-press|grill/,
+  "hair-care":
+    /hair-dryer|hairdryer|straightener|airwrap|curler|hair-styler|supersonic/,
   lego: /lego/,
 };
 
 const MAX_SKUS = 12000;
+/** The product sitemap is mostly delisted models (it stops at 40,035 URLs); their `substitutes` lead to the current ones. */
+const FOLLOW_ROUNDS = 4;
+const FOLLOW_MAX = 6000;
 
 /** Officeworks sells stationery and accessories with the same words as our categories; refuse those before the shared checks. */
 const REFUSE: Partial<Record<(typeof CATS)[number], RegExp>> = {
-  laptops: /\bnotebook\b(?!.*(\bgb\b|ssd|ryzen|intel|core|snapdragon|windows|chromeos|macos|\d{2}(\.\d)?\s?("|inch)))|\bpad\b|\brefill|\bpaper\b|\bpages?\b|\bruled\b|spiral|\bdiary|planner|\bsleeve|\bbag\b|\bcase\b|\bstand\b|\bbattery\b|\bcharger|adapter|\bskin\b|lock\b|\btoy\b/i,
-  tablets: /\bcase\b|\bcover\b|keyboard|stylus|\bpen\b|screen protector|\bstand\b|\bmount|\bkids?\b|\btoy\b|charger|\bcable\b/i,
-  cameras: /\bmod\b|\bkit\b|\bmount|\bstrap|\bcase\b|\bbattery|charger|\bfilter|\bcap\b|tripod|selfie|\bgrip\b|\bbag\b|\bfilm\b|\bpack\b|lens\b|webcam|dash ?cam|security|doorbell|\bbaby\b|trail cam|\bprinter\b|\bpaper\b|\bsd\b/i,
+  laptops:
+    /\bnotebook\b(?!.*(\bgb\b|ssd|ryzen|intel|core|snapdragon|windows|chromeos|macos|\d{2}(\.\d)?\s?("|inch)))|\bpad\b|\brefill|\bpaper\b|\bpages?\b|\bruled\b|spiral|\bdiary|planner|\bsleeve|\bbag\b|\bcase\b|\bstand\b|\bbattery\b|\bcharger|adapter|\bskin\b|lock\b|\btoy\b/i,
+  tablets:
+    /\bcase\b|\bcover\b|keyboard|stylus|\bpen\b|screen protector|\bstand\b|\bmount|\bkids?\b|\btoy\b|charger|\bcable\b/i,
+  cameras:
+    /\bmod\b|\bkit\b|\bmount|\bstrap|\bcase\b|\bbattery|charger|\bfilter|\bcap\b|tripod|selfie|\bgrip\b|\bbag\b|\bfilm\b|\bpack\b|lens\b|webcam|dash ?cam|security|doorbell|\bbaby\b|trail cam|\bprinter\b|\bpaper\b|\bsd\b/i,
   headphones: /\bcase\b|\bcable\b|\btips\b|\bstand\b|\bsplitter|adapter/i,
   speakers: /\bstand\b|\bmount|\bcable\b|\bcase\b|\bbag\b/i,
-  printers: /\bink\b|toner|cartridge|\bpaper\b|\blabels?\b|\btape\b|\bribbon|drum\b|maintenance|\bstand\b|\btray\b|\bcable\b|\bwarranty/i,
-  routers: /\bcable\b|\bantenna|\bswitch\b|\badapter\b(?!.*router)|powerline|extender/i,
+  printers:
+    /\bink\b|toner|cartridge|\bpaper\b|\blabels?\b|\btape\b|\bribbon|drum\b|maintenance|\bstand\b|\btray\b|\bcable\b|\bwarranty/i,
+  routers:
+    /\bcable\b|\bantenna|\bswitch\b|\badapter\b(?!.*router)|powerline|extender/i,
   ssds: /\benclosure|\bcase\b|\bdock|\bcable\b|adapter|\bhdd\b|hard drive|\busb\b.*flash/i,
 };
-const MIN_PRICE: Partial<Record<(typeof CATS)[number], number>> = { laptops: 250, tablets: 100, monitors: 90, phones: 100, headphones: 15, speakers: 20, tvs: 150, ssds: 25, ram: 25 };
+const MIN_PRICE: Partial<Record<(typeof CATS)[number], number>> = {
+  laptops: 250,
+  tablets: 100,
+  monitors: 90,
+  phones: 100,
+  headphones: 15,
+  speakers: 20,
+  tvs: 150,
+  ssds: 25,
+  ram: 25,
+};
 const BATCH = 12;
 
 type Cat = (typeof CATS)[number];
@@ -95,7 +148,9 @@ async function skus(): Promise<string[]> {
   const xml = await get(`${BASE}/sitemap-products.xml`);
   const want = Object.values(SLUG);
   const out = new Set<string>();
-  for (const m of xml.matchAll(/<loc>\s*https:\/\/www\.officeworks\.com\.au\/shop\/officeworks\/p\/([a-z0-9-]+)-([a-z0-9]+)\s*<\/loc>/g)) {
+  for (const m of xml.matchAll(
+    /<loc>\s*https:\/\/www\.officeworks\.com\.au\/shop\/officeworks\/p\/([a-z0-9-]+)-([a-z0-9]+)\s*<\/loc>/g,
+  )) {
     const slug = m[1];
     if (want.some((re) => re.test(slug))) out.add(m[2].toUpperCase());
     if (out.size >= MAX_SKUS) break;
@@ -105,7 +160,9 @@ async function skus(): Promise<string[]> {
 
 async function products(batch: string[]): Promise<Product[]> {
   try {
-    const j = JSON.parse(await get(`${API}/products?sku=${batch.join(",")}`)) as Product[] | { products?: Product[] };
+    const j = JSON.parse(
+      await get(`${API}/products?sku=${batch.join(",")}`),
+    ) as Product[] | { products?: Product[] };
     return Array.isArray(j) ? j : (j.products ?? []);
   } catch {
     return [];
@@ -115,7 +172,10 @@ async function products(batch: string[]): Promise<Product[]> {
 /** The price the product page shows, in dollars, or undefined. */
 async function livePrice(sku: string): Promise<number | undefined> {
   try {
-    const j = JSON.parse(await get(`${API}/prices/${sku}`)) as Record<string, { price?: number }>;
+    const j = JSON.parse(await get(`${API}/prices/${sku}`)) as Record<
+      string,
+      { price?: number }
+    >;
     const c = j[sku]?.price;
     return typeof c === "number" && c > 0 ? c / 100 : undefined;
   } catch {
@@ -127,52 +187,92 @@ function attr(p: Product, id: string): string | undefined {
   return p.attributes?.find((a) => a.id === id)?.value;
 }
 
+const skuOf = (x: string | { sku?: string } | undefined) =>
+  (typeof x === "string" ? x : x?.sku)?.toUpperCase();
+
 async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
   const list = await skus();
   console.log(`officeworks: ${list.length} candidate SKUs from the sitemap`);
-  const batches: string[][] = [];
-  for (let i = 0; i < list.length; i += BATCH) batches.push(list.slice(i, i + BATCH));
   const kept: { p: Product; cat: Cat; edlp: number }[] = [];
   let seen = 0;
   const why = { unpublished: 0, notOnline: 0, noCategory: 0, refused: 0 };
   const samples: string[] = [];
-  await pool(batches, 2, async (b) => {
-    for (const p of await products(b)) {
-      seen++;
-      if (samples.length < 12 && /laptop|monitor|iphone|ipad/i.test(p.name ?? "")) samples.push(`${p.sku} published=${p.published} rangedOnline=${p.rangedOnline} ranged=${JSON.stringify(p.ranged)} d2=${attr(p, "statusChannelD2")} ${p.name}`);
-      if (!p.sku || !p.name || !p.seoPath) continue;
-      if (!p.published) {
-        why.unpublished++;
-        continue;
+  const asked = new Set(list);
+  let queue = list;
+  let followed = 0;
+  for (let round = 0; round <= FOLLOW_ROUNDS && queue.length; round++) {
+    const batches: string[][] = [];
+    for (let i = 0; i < queue.length; i += BATCH)
+      batches.push(queue.slice(i, i + BATCH));
+    const next = new Set<string>();
+    await pool(batches, 2, async (b) => {
+      for (const p of await products(b)) {
+        seen++;
+        for (const x of [...(p.substitutes ?? []), ...(p.family ?? [])]) {
+          const sku = skuOf(x);
+          if (sku && !asked.has(sku) && followed + next.size < FOLLOW_MAX)
+            next.add(sku);
+        }
+        if (
+          samples.length < 12 &&
+          /laptop|monitor|iphone|ipad/i.test(p.name ?? "")
+        )
+          samples.push(
+            `${p.sku} published=${p.published} rangedOnline=${p.rangedOnline} ranged=${JSON.stringify(p.ranged)} d2=${attr(p, "statusChannelD2")} ${p.name}`,
+          );
+        if (!p.sku || !p.name || !p.seoPath) continue;
+        if (!p.published) {
+          why.unpublished++;
+          continue;
+        }
+        if (!(p.rangedOnline ?? p.ranged?.online)) {
+          why.notOnline++;
+          continue;
+        }
+        const edlp = Number(attr(p, "edlpPrice"));
+        const name = p.name.replace(/\s+/g, " ").trim();
+        const cat = classify(CATS, name, edlp > 0 ? edlp : 1, p.brand?.name) as
+          | Cat
+          | undefined;
+        if (!cat) {
+          why.noCategory++;
+          continue;
+        }
+        if (REFUSE[cat]?.test(name)) {
+          why.refused++;
+          continue;
+        }
+        kept.push({ p, cat, edlp });
       }
-      if (!(p.rangedOnline ?? p.ranged?.online)) {
-        why.notOnline++;
-        continue;
-      }
-      const edlp = Number(attr(p, "edlpPrice"));
-      const name = p.name.replace(/\s+/g, " ").trim();
-      const cat = classify(CATS, name, edlp > 0 ? edlp : 1, p.brand?.name) as Cat | undefined;
-      if (!cat) {
-        why.noCategory++;
-        continue;
-      }
-      if (REFUSE[cat]?.test(name)) {
-        why.refused++;
-        continue;
-      }
-      kept.push({ p, cat, edlp });
-    }
-    await sleep(250);
-  });
-  console.log(`officeworks: ${seen} products read, ${kept.length} ranged online in our categories (${JSON.stringify(why)})`);
+      await sleep(250);
+    });
+    queue = [...next];
+    for (const s of queue) asked.add(s);
+    followed += queue.length;
+    console.log(
+      `officeworks: round ${round} read ${seen} products so far, ${kept.length} kept, following ${queue.length} substitutes`,
+    );
+  }
+  console.log(
+    `officeworks: ${seen} products read, ${kept.length} ranged online in our categories (${JSON.stringify(why)})`,
+  );
   for (const s of samples) console.log(`officeworks sample: ${s}`);
   const offers: { cat: Cat; offer: RawOffer }[] = [];
   await pool(kept, 2, async ({ p, cat, edlp }) => {
     const price = (await livePrice(p.sku!)) ?? (edlp > 0 ? edlp : undefined);
     await sleep(120);
     const title = p.name!.replace(/\s+/g, " ").trim();
-    if (!price || price < (MIN_PRICE[cat] ?? 0) || classify([cat], title, price, p.brand?.name) !== cat) return;
-    const image = p.image ? (p.image.startsWith("//") ? `https:${p.image}` : p.image) : undefined;
+    if (
+      !price ||
+      price < (MIN_PRICE[cat] ?? 0) ||
+      classify([cat], title, price, p.brand?.name) !== cat
+    )
+      return;
+    const image = p.image
+      ? p.image.startsWith("//")
+        ? `https:${p.image}`
+        : p.image
+      : undefined;
     offers.push({
       cat,
       offer: {
@@ -185,7 +285,10 @@ async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
         image,
         inStock: !p.preorderProduct,
         brand: p.brand?.name,
-        mpn: p.manufacturerPartNumber || attr(p, "manufacturerPartNumber") || attr(p, "modelNumber"),
+        mpn:
+          p.manufacturerPartNumber ||
+          attr(p, "manufacturerPartNumber") ||
+          attr(p, "modelNumber"),
       },
     });
   });
@@ -198,4 +301,5 @@ async function scrape(cat: Cat): Promise<RawOffer[]> {
   return (await catalogue).filter((o) => o.cat === cat).map((o) => o.offer);
 }
 
-export const scrapers: Partial<Record<CategoryId, () => Promise<RawOffer[]>>> = Object.fromEntries(CATS.map((c) => [c, () => scrape(c)]));
+export const scrapers: Partial<Record<CategoryId, () => Promise<RawOffer[]>>> =
+  Object.fromEntries(CATS.map((c) => [c, () => scrape(c)]));

@@ -24,7 +24,7 @@ for (const f of readdirSync(dir).filter((f) => !f.endsWith(".headers")).sort()) 
   }
   if (/<urlset|<sitemapindex/.test(body.slice(0, 2000))) {
     const locs = [...body.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-    console.log(`-- sitemap: ${locs.length} urls; first: ${locs.slice(0, 15).join(" ")}`);
+    console.log(`-- sitemap: ${locs.length} urls; first: ${locs.slice(0, 15).join(" ")}; last: ${locs.slice(-8).join(" ")}`);
     const kw = locs.filter((u) => /tv|laptop|monitor|printer|ipad|tablet|headphone|router|speaker|iphone|phone|camera|drone|vacuum|coffee|fryer|watch|desktop|fridge|wash|dishwash|soundbar|console|playstation|xbox|nintendo|lego/i.test(u));
     console.log(`-- sitemap keyword urls: ${kw.length}; sample: ${kw.filter((_, i) => i % Math.max(1, Math.floor(kw.length / 40)) === 0).slice(0, 40).join(" ")}`);
     continue;
