@@ -144,5 +144,13 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-smyths", name: "Smyths Toys", site: "smythstoys.com", color: "#E31837", type: "retailer" },
   { id: "uk-game", name: "GAME", site: "game.co.uk", color: "#5F259F", type: "retailer" },
   { id: "uk-costcouk", name: "Costco UK", site: "costco.co.uk", color: "#005DAA", type: "retailer" },
+  { id: "uk-robertdyas", name: "Robert Dyas", site: "robertdyas.co.uk", color: "#1A5632", type: "retailer" },
+  { id: "uk-littlewoods", name: "Littlewoods", site: "littlewoods.com", color: "#8C1D40", type: "retailer" },
+  { id: "uk-theentertainer", name: "The Entertainer", site: "thetoyshop.com", color: "#E4002B", type: "retailer" },
+  { id: "uk-hamleys", name: "Hamleys", site: "hamleys.com", color: "#B5121B", type: "retailer" },
+  { id: "uk-ryman", name: "Ryman", site: "ryman.co.uk", color: "#D71920", type: "retailer" },
+  { id: "uk-jessops", name: "Jessops", site: "jessops.com", color: "#231F20", type: "retailer" },
+  { id: "uk-markselectrical", name: "Marks Electrical", site: "markselectrical.co.uk", color: "#003F87", type: "retailer" },
+  { id: "uk-appliancesdirect", name: "Appliances Direct", site: "appliancesdirect.co.uk", color: "#E30613", type: "retailer" },
   { id: "uk-cramptonandmoore", name: "Crampton & Moore", site: "cramptonandmoore.co.uk", color: "#1A1A1A", type: "retailer" },
 ];

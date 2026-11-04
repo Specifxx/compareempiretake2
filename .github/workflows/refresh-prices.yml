@@ -44,6 +44,7 @@ jobs:
       - name: Scrape US stores
         continue-on-error: true
         env:
+          BESTBUY_API_KEY: ${{ secrets.BESTBUY_API_KEY }}
           FEED_URL_US_BESTBUY: ${{ secrets.FEED_URL_US_BESTBUY }}
           FEED_URL_US_WALMART: ${{ secrets.FEED_URL_US_WALMART }}
           FEED_URL_US_TARGET: ${{ secrets.FEED_URL_US_TARGET }}
@@ -58,6 +59,12 @@ jobs:
           FEED_URL_US_CRUTCHFIELD: ${{ secrets.FEED_URL_US_CRUTCHFIELD }}
           FEED_URL_US_COSTCO: ${{ secrets.FEED_URL_US_COSTCO }}
           FEED_URL_US_MICROCENTER: ${{ secrets.FEED_URL_US_MICROCENTER }}
+          FEED_URL_US_OFFICEDEPOT: ${{ secrets.FEED_URL_US_OFFICEDEPOT }}
+          FEED_URL_US_WILLIAMSSONOMA: ${{ secrets.FEED_URL_US_WILLIAMSSONOMA }}
+          FEED_URL_US_KOHLS: ${{ secrets.FEED_URL_US_KOHLS }}
+          FEED_URL_US_MACYS: ${{ secrets.FEED_URL_US_MACYS }}
+          FEED_URL_US_WAYFAIR: ${{ secrets.FEED_URL_US_WAYFAIR }}
+          FEED_URL_US_BJS: ${{ secrets.FEED_URL_US_BJS }}
         run: npx tsx scripts/scrape-categories.ts --region us
       - name: Scrape UK stores
         continue-on-error: true
@@ -73,6 +80,14 @@ jobs:
           FEED_URL_UK_SMYTHS: ${{ secrets.FEED_URL_UK_SMYTHS }}
           FEED_URL_UK_GAME: ${{ secrets.FEED_URL_UK_GAME }}
           FEED_URL_UK_COSTCOUK: ${{ secrets.FEED_URL_UK_COSTCOUK }}
+          FEED_URL_UK_ROBERTDYAS: ${{ secrets.FEED_URL_UK_ROBERTDYAS }}
+          FEED_URL_UK_LITTLEWOODS: ${{ secrets.FEED_URL_UK_LITTLEWOODS }}
+          FEED_URL_UK_THEENTERTAINER: ${{ secrets.FEED_URL_UK_THEENTERTAINER }}
+          FEED_URL_UK_HAMLEYS: ${{ secrets.FEED_URL_UK_HAMLEYS }}
+          FEED_URL_UK_RYMAN: ${{ secrets.FEED_URL_UK_RYMAN }}
+          FEED_URL_UK_JESSOPS: ${{ secrets.FEED_URL_UK_JESSOPS }}
+          FEED_URL_UK_MARKSELECTRICAL: ${{ secrets.FEED_URL_UK_MARKSELECTRICAL }}
+          FEED_URL_UK_APPLIANCESDIRECT: ${{ secrets.FEED_URL_UK_APPLIANCESDIRECT }}
         run: npx tsx scripts/scrape-categories.ts --region uk
       - name: Build catalogues
         run: |
