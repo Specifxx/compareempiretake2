@@ -1109,3 +1109,28 @@ a coffee" is the creator's own Ko-fi, Patreon or tip page: the site never handle
 bubble in the homepage hero (top-right from sm, a centred pill above the headline on a phone); the footer and the sitemap
 link the page. Prerendered like /about: no data or request read, no ISR. Not called "partners" anywhere: that word means
 the affiliate links.
+
+## 2026-11-04: The big chains: Officeworks read directly, the walled ones through their affiliate feeds
+
+Owner: "We are missing some stores in compareempire. Especially Australian favourites like officeworks. We need all of
+the big websites on it … all big stores captured with no gaps." The audit (`docs/stores/big-stores.md`) found that
+nearly every national chain in all three regions walls off server-side reads (Akamai, Cloudflare, PerimeterX), and the
+survey rules forbid going past a wall or using a key lifted from a page's JavaScript (Target's redsky, Costco's
+GraphQL, Myer's Constructor, Officeworks' Algolia).
+
+- **Officeworks is read through its own public, keyless catalogue API** (`/catalogue-app/api/products?sku=…` and
+  `/prices/<sku>`, the calls its product page makes), with the product sitemap as the SKU list. The prices endpoint
+  is the price the page shows; the `edlpPrice` attribute is the fallback and the "was" price. Only products still
+  `rangedOnline` are kept. About 200 product calls and one small price call per kept product, spaced out.
+- **Every other walled chain gets a feed-gated store file** (`scripts/scrapers/feed.ts`, `feedStore({...})`): it
+  reads the chain's affiliate-network product feed once the `FEED_URL_<CHAIN>` GitHub secret exists and exports
+  nothing until then. The feed is the chain's own daily export of every product, price, stock and tracked link, so
+  it is both the legitimate door and the one that pays. Prices in another currency, non-new condition and
+  untracked links are refused by the reader, as a store's listings would be.
+- **A chain with no listings is not a store yet.** `/how-we-pick-stores` and `llms.txt` now count and list only
+  `activeRetailers` (stores with listings), so the 35 gated chains don't appear as stores the site compares until
+  their feed is live. Nothing indexable changed for the stores that already have listings.
+- Reliant and Crampton & Moore (UK, Magento, server-rendered) and Peter's of Kensington, Appliance Central and
+  Everyday Home Living (AU) are read directly; Harris Scarfe and Appliances Online are next-round candidates.
+- Kmart, Bunnings, Costco (all regions) and Micro Center run no affiliate programme we know of and block servers,
+  so they stay out until that changes; their secret names are reserved in case a feed appears.
