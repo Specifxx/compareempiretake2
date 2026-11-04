@@ -148,6 +148,8 @@ export async function ProductView({ params, region }: { params: ProductParams; r
       lowPrice: phone.bestPrice,
       highPrice: Math.max(...phone.variants.flatMap((v) => v.offers.map((o) => o.price))),
       offerCount: phone.offerCount,
+      // Prices refresh on the daily import: good until tomorrow (schema.org priceValidUntil).
+      priceValidUntil: new Date(Date.now() + 86400e3).toISOString().slice(0, 10),
       url: `${SITE}${productHref(phone)}`,
     },
   };
