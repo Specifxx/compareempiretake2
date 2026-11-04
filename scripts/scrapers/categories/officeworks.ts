@@ -16,6 +16,7 @@
 import type { CategoryId, RawOffer } from "../../../src/lib/types";
 import { get, pool, sleep } from "../../lib/http";
 import { classify } from "../auto-shopify";
+import { feedStore } from "../feed";
 
 const BASE = "https://www.officeworks.com.au";
 const API = `${BASE}/catalogue-app/api`;
@@ -287,9 +288,26 @@ async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
   return offers;
 }
 
+/**
+ * The product sitemap stops at 40,035 mostly delisted URLs and category pages are client-side, so the direct read
+ * reaches only the products those lead to (about 165: phones, tablets, headphones, SSDs, printers…). The affiliate
+ * feed (`FEED_URL_OFFICEWORKS`, Commission Factory) is the whole range; when it exists its rows are added, the direct
+ * read's price winning for a SKU both have.
+ */
+const feed = feedStore({
+  retailer: "officeworks",
+  env: "FEED_URL_OFFICEWORKS",
+  currency: "AUD",
+  cats: CATS,
+});
+
 async function scrape(cat: Cat): Promise<RawOffer[]> {
   catalogue ??= readAll();
-  return (await catalogue).filter((o) => o.cat === cat).map((o) => o.offer);
+  const out = new Map<string, RawOffer>();
+  for (const o of (await feed[cat]?.()) ?? []) out.set(o.sku, o);
+  for (const o of await catalogue)
+    if (o.cat === cat) out.set(o.offer.sku, o.offer);
+  return [...out.values()];
 }
 
 export const scrapers: Partial<Record<CategoryId, () => Promise<RawOffer[]>>> =
