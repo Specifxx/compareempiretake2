@@ -52,6 +52,9 @@ jobs:
             hint=$(grep -o -m1 -E '"products":\[\{"id":[0-9]+,"title":"[^"]{0,60}|Just a moment|cf-chl|captcha|Access Denied|"price":"?[0-9.]+' "$f" | head -1)
             echo "$code $size $u :: $hint"
           done
+      - name: What is in each body
+        if: env.URLS != ''
+        run: node scripts/probe-bodies.mjs /tmp/bodies
       - name: Keep the fetched bodies (download the "bodies" artifact to read them)
         if: env.URLS != ''
         uses: actions/upload-artifact@v4
