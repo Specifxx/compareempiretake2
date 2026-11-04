@@ -134,19 +134,38 @@ async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
   for (let i = 0; i < list.length; i += BATCH) batches.push(list.slice(i, i + BATCH));
   const kept: { p: Product; cat: Cat; edlp: number }[] = [];
   let seen = 0;
+  const why = { unpublished: 0, notOnline: 0, noCategory: 0, refused: 0 };
+  const samples: string[] = [];
   await pool(batches, 2, async (b) => {
     for (const p of await products(b)) {
       seen++;
-      if (!p.sku || !p.name || !p.seoPath || !p.published || !(p.rangedOnline ?? p.ranged?.online)) continue;
+      if (samples.length < 12 && /laptop|monitor|iphone|ipad/i.test(p.name ?? "")) samples.push(`${p.sku} published=${p.published} rangedOnline=${p.rangedOnline} ranged=${JSON.stringify(p.ranged)} d2=${attr(p, "statusChannelD2")} ${p.name}`);
+      if (!p.sku || !p.name || !p.seoPath) continue;
+      if (!p.published) {
+        why.unpublished++;
+        continue;
+      }
+      if (!(p.rangedOnline ?? p.ranged?.online)) {
+        why.notOnline++;
+        continue;
+      }
       const edlp = Number(attr(p, "edlpPrice"));
       const name = p.name.replace(/\s+/g, " ").trim();
       const cat = classify(CATS, name, edlp > 0 ? edlp : 1, p.brand?.name) as Cat | undefined;
-      if (!cat || REFUSE[cat]?.test(name)) continue;
+      if (!cat) {
+        why.noCategory++;
+        continue;
+      }
+      if (REFUSE[cat]?.test(name)) {
+        why.refused++;
+        continue;
+      }
       kept.push({ p, cat, edlp });
     }
     await sleep(250);
   });
-  console.log(`officeworks: ${seen} products read, ${kept.length} ranged online in our categories`);
+  console.log(`officeworks: ${seen} products read, ${kept.length} ranged online in our categories (${JSON.stringify(why)})`);
+  for (const s of samples) console.log(`officeworks sample: ${s}`);
   const offers: { cat: Cat; offer: RawOffer }[] = [];
   await pool(kept, 2, async ({ p, cat, edlp }) => {
     const price = (await livePrice(p.sku!)) ?? (edlp > 0 ? edlp : undefined);

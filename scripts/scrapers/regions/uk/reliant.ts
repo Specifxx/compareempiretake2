@@ -24,8 +24,9 @@ const CATS = Object.keys(PATHS) as CategoryId[];
 
 type Meta = { id?: string; name?: string; brand?: string; url?: string };
 
-function page(html: string): { id: string; url: string; price: number; was?: number; image?: string }[] {
-  const out: { id: string; url: string; price: number; was?: number; image?: string }[] = [];
+type Card = { id: string; url: string; price: number; was?: number; image?: string; name?: string };
+function page(html: string): Card[] {
+  const out: Card[] = [];
   const parts = html.split(/class="item product product-item/).slice(1);
   for (const card of parts) {
     const url = card.match(/href="(https:\/\/www\.reliant\.co\.uk\/[^"]+)"/)?.[1];
@@ -33,7 +34,8 @@ function page(html: string): { id: string; url: string; price: number; was?: num
     const was = Number(card.match(/data-price-amount="([\d.]+)"\s+data-price-type="oldPrice"/)?.[1]);
     const id = url?.match(/-(\d{6,})$/)?.[1];
     if (!url || !id || !(price > 0)) continue;
-    out.push({ id, url, price, was: was > price ? was : undefined, image: card.match(/srcset="(https:[^"]+\.(?:jpe?g|png))"/)?.[1] });
+    const name = card.match(/class="product-item-link"[^>]*>\s*([^<]+?)\s*<\/a>/)?.[1];
+    out.push({ id, url, price, was: was > price ? was : undefined, image: card.match(/srcset="(https:[^"]+\.(?:jpe?g|png))"/)?.[1], name });
   }
   return out;
 }
@@ -61,11 +63,12 @@ async function crawl(path: string, maxPages = 12): Promise<RawOffer[]> {
     }
     const cards = page(html);
     const meta = metas(html);
+    if (p === 1) console.log(`uk-reliant ${path}: ${html.length} bytes, ${cards.length} cards, ${meta.size} metas${/challenge-platform|just a moment/i.test(html) ? ", challenge page" : ""}`);
     let fresh = 0;
     for (const c of cards) {
       if (out.has(c.id)) continue;
       const m = meta.get(c.id);
-      const title = decodeEntities(m?.name ?? "").replace(/\s+/g, " ").trim();
+      const title = decodeEntities(c.name ?? m?.name ?? "").replace(/\s+/g, " ").trim();
       if (!title) continue;
       fresh++;
       out.set(c.id, { retailer: "uk-reliant", sku: c.id, title, url: c.url, price: c.price, wasPrice: c.was, image: c.image, inStock: true, brand: m?.brand, mpn: title.match(/\b([A-Z]{1,4}\d{2,3}[A-Z0-9-]{3,})\b/)?.[1] });

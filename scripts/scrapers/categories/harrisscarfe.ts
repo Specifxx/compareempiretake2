@@ -31,8 +31,8 @@ const money = (s: string | undefined) => {
 function cards(html: string): RawOffer[] {
   const out: RawOffer[] = [];
   for (const card of html.split(/class="product-card item itemcontainer"/).slice(1)) {
-    const url = card.match(/"url":"((?:\/en-au)?\/p\/[^"]+)"/)?.[1] ?? card.match(/href="((?:\/en-au)?\/p\/[^"]+)"/)?.[1];
-    const name = card.match(/"name":"((?:[^"\\]|\\.)+)"/)?.[1] ?? card.match(/itemprop="name"[^>]*(?:content="([^"]+)"|>\s*([^<]+)<)/)?.[1];
+    const url = card.match(/"variantUrl":"([^"]+)"/)?.[1] ?? card.match(/data-bv-redirect-url="([^"]+)"/)?.[1] ?? card.match(/href="([^"]*\/p\/[^"]+)"/)?.[1];
+    const name = card.match(/data-product-name="([^"]+)"/)?.[1] ?? card.match(/"name":"((?:[^"\\]|\\.)+)"/)?.[1];
     const priceBlock = card.match(/"price":\{([^}]*)\}/)?.[1] ?? "";
     const f = (k: string) => money(priceBlock.match(new RegExp(`"${k}":"([^"]*)"`))?.[1]);
     const reg = f("regPrice") ?? f("fromRegPrice");
