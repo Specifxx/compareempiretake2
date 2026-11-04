@@ -4,6 +4,7 @@
 import { readdirSync, readFileSync } from "node:fs";
 const dir = process.argv[2] || "/tmp/bodies";
 const LIMIT = Number(process.env.PROBE_PRINT_LIMIT || 6000);
+const JSON_LIMIT = Number(process.env.PROBE_JSON_LIMIT || 40000);
 for (const f of readdirSync(dir).filter((f) => !f.endsWith(".headers")).sort()) {
   const body = readFileSync(`${dir}/${f}`, "utf8");
   let headers = "";
@@ -14,7 +15,7 @@ for (const f of readdirSync(dir).filter((f) => !f.endsWith(".headers")).sort()) 
   console.log(`-- ${ct} ${server}`.trim());
   const isHtml = /<html|<!doctype html/i.test(body.slice(0, 2000));
   if (!isHtml || body.length < 4000) {
-    console.log(body.slice(0, LIMIT));
+    console.log(body.slice(0, /^\s*[[{]/.test(body) ? JSON_LIMIT : LIMIT));
     continue;
   }
   const title = body.match(/<title[^>]*>([^<]{0,160})/i)?.[1];
@@ -30,8 +31,21 @@ for (const f of readdirSync(dir).filter((f) => !f.endsWith(".headers")).sort()) 
   }
   const prices = [...body.matchAll(/"(?:price|salePrice|finalPrice|final_price|current_price|currentPrice|sellingPrice|offerPrice|priceValue)"\s*:\s*"?\d[\d.,]*/gi)].slice(0, 8);
   for (const p of prices) console.log(`-- price: ${body.slice(Math.max(0, p.index - 250), p.index + 120).replace(/\s+/g, " ")}`);
-  const money = [...body.matchAll(/[$£]\s?\d{2,5}(?:\.\d\d)?/g)].slice(0, 5);
-  for (const m of money) console.log(`-- money: ${body.slice(Math.max(0, m.index - 300), m.index + 60).replace(/\s+/g, " ")}`);
+  const money = [...body.matchAll(/[$£]\s?\d{2,5}(?:\.\d\d)?/g)];
+  const step = Math.max(1, Math.floor(money.length / 6));
+  for (let i = 0; i < money.length && i < step * 6; i += step) console.log(`-- money ${i + 1}/${money.length}: ${body.slice(Math.max(0, money[i].index - 300), money[i].index + 60).replace(/\s+/g, " ")}`);
+  const apis = new Set([...body.matchAll(/\/(?:[a-z-]+-app\/)?api\/[a-zA-Z0-9/_.-]{3,80}/g)].map((m) => m[0]).filter((a) => !/\/api\/(js|v\d\/js)\b/.test(a)));
+  if (apis.size) console.log(`-- api paths: ${[...apis].slice(0, 40).join(" ")}`);
+  const skus = [...body.matchAll(/"(?:sku|productCode|partNumber|product_code|itemCode)"\s*:\s*"[^"]{3,40}"/g)];
+  if (skus.length) console.log(`-- sku keys (${skus.length}): ${skus.slice(0, 5).map((m) => body.slice(m.index, m.index + 260).replace(/\s+/g, " ")).join(" ## ")}`);
+  const cards = [...body.matchAll(/class="[^"]*(?:product-(?:card|item|tile|grid-item|box)|productCard|ProductCard|product_item)[^"]*"/g)];
+  if (cards.length) console.log(`-- product cards (${cards.length}): ${cards.slice(0, 2).map((m) => body.slice(m.index, m.index + 900).replace(/\s+/g, " ")).join(" ## ")}`);
+  for (const key of ["owProductPrice", '"hits":', '"products":[', 'pagination', 'data-page-count', 'page=2', '?p=2']) {
+    const i = body.indexOf(key);
+    if (i >= 0) console.log(`-- near ${key} @${i}: ${body.slice(Math.max(0, i - 200), i + 500).replace(/\s+/g, " ")}`);
+  }
+  const srcs = new Set([...body.matchAll(/<script[^>]+src="(\/[^"]+\.js[^"]*)"/gi)].map((m) => m[1]));
+  if (srcs.size) console.log(`-- own scripts: ${[...srcs].slice(0, 12).join(" ")}`);
   const hosts = new Set([...body.matchAll(/<script[^>]+src="(https?:)?\/\/([^/"]+)/gi)].map((m) => m[2]));
   console.log(`-- script hosts: ${[...hosts].slice(0, 25).join(" ")}`);
   const links = new Set([...body.matchAll(/href="(\/[a-z0-9\-/_.]{6,80})"/gi)].map((m) => m[1]));
