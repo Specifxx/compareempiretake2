@@ -44,12 +44,21 @@ jobs:
       - name: Fetch candidate URLs
         if: env.URLS != ''
         run: |
+          mkdir -p /tmp/bodies; n=0
           for u in $URLS; do
-            code=$(curl -s -o /tmp/body -w '%{http_code}' -m 20 -L -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' "$u" || echo ERR)
-            size=$(wc -c < /tmp/body 2>/dev/null || echo 0)
-            hint=$(grep -o -m1 -E '"products":\[\{"id":[0-9]+,"title":"[^"]{0,60}|Just a moment|cf-chl|captcha|Access Denied|"price":"?[0-9.]+' /tmp/body | head -1)
+            n=$((n+1)); f="/tmp/bodies/$(printf '%03d' $n)-$(echo "$u" | sed -E 's#https?://(www\.)?##; s#[^A-Za-z0-9.]+#_#g' | cut -c1-80).txt"
+            code=$(curl -s -o "$f" -D "$f.headers" -w '%{http_code}' -m 20 -L -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' -H 'accept: text/html,application/json;q=0.9,*/*;q=0.8' -H 'accept-language: en-AU,en;q=0.9' "$u" || echo ERR)
+            size=$(wc -c < "$f" 2>/dev/null || echo 0)
+            hint=$(grep -o -m1 -E '"products":\[\{"id":[0-9]+,"title":"[^"]{0,60}|Just a moment|cf-chl|captcha|Access Denied|"price":"?[0-9.]+' "$f" | head -1)
             echo "$code $size $u :: $hint"
           done
+      - name: Keep the fetched bodies (download the "bodies" artifact to read them)
+        if: env.URLS != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: bodies
+          path: /tmp/bodies
+          retention-days: 3
       - name: Harvest store domains from directory pages
         if: env.HARVEST != ''
         run: |
