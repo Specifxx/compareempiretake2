@@ -14,6 +14,21 @@ for (const f of readdirSync(dir).filter((f) => !f.endsWith(".headers")).sort()) 
   const server = headers.match(/^(server|x-powered-by|x-shopify-stage|x-sorting-hat-shopid|x-cache|cf-ray|x-akamai[^:]*|x-magento[^:]*|x-bc[^:]*):.*$/gim)?.join(" | ") ?? "";
   console.log(`-- ${ct} ${server}`.trim());
   const isHtml = /<html|<!doctype html/i.test(body.slice(0, 2000));
+  if (/javascript/.test(ct) || /\.js(\?|\.txt$|$)/.test(f)) {
+    // A script bundle: only the API paths and price-ish strings it names.
+    const paths = new Set([...body.matchAll(/["'`](\/?(?:[a-z-]+\/)?api\/[A-Za-z0-9/_${}.?=&:-]{2,120})["'`]/g)].map((m) => m[1]));
+    console.log(`-- api paths in bundle (${paths.size}): ${[...paths].slice(0, 150).join("  ")}`);
+    const pricey = new Set([...body.matchAll(/["'`]([^"'`\n]{0,60}(?:price|pricing|availability|stock|search|products)[^"'`\n]{0,60})["'`]/gi)].map((m) => m[1]).filter((x) => /\/|\?/.test(x)));
+    console.log(`-- price-ish strings (${pricey.size}): ${[...pricey].slice(0, 120).join("  ")}`);
+    continue;
+  }
+  if (/<urlset|<sitemapindex/.test(body.slice(0, 2000))) {
+    const locs = [...body.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+    console.log(`-- sitemap: ${locs.length} urls; first: ${locs.slice(0, 15).join(" ")}`);
+    const kw = locs.filter((u) => /tv|laptop|monitor|printer|ipad|tablet|headphone|router|speaker|iphone|phone|camera|drone|vacuum|coffee|fryer|watch|desktop|fridge|wash|dishwash|soundbar|console|playstation|xbox|nintendo|lego/i.test(u));
+    console.log(`-- sitemap keyword urls: ${kw.length}; sample: ${kw.filter((_, i) => i % Math.max(1, Math.floor(kw.length / 40)) === 0).slice(0, 40).join(" ")}`);
+    continue;
+  }
   if (!isHtml || body.length < 4000) {
     console.log(body.slice(0, /^\s*[[{]/.test(body) ? JSON_LIMIT : LIMIT));
     continue;
@@ -48,6 +63,8 @@ for (const f of readdirSync(dir).filter((f) => !f.endsWith(".headers")).sort()) 
   if (srcs.size) console.log(`-- own scripts: ${[...srcs].slice(0, 12).join(" ")}`);
   const hosts = new Set([...body.matchAll(/<script[^>]+src="(https?:)?\/\/([^/"]+)/gi)].map((m) => m[2]));
   console.log(`-- script hosts: ${[...hosts].slice(0, 25).join(" ")}`);
-  const links = new Set([...body.matchAll(/href="(\/[a-z0-9\-/_.]{6,80})"/gi)].map((m) => m[1]));
-  console.log(`-- links: ${[...links].slice(0, 60).join(" ")}`);
+  const links = new Set([...body.matchAll(/href="((?:https?:\/\/[^/"]+)?\/[a-z0-9\-/_.]{4,90}\/?)"/gi)].map((m) => m[1].replace(/^https?:\/\/[^/]+/, "")));
+  console.log(`-- links: ${[...links].slice(0, 40).join(" ")}`);
+  const kwl = [...links].filter((u) => /tv|laptop|monitor|printer|tablet|headphone|router|speaker|phone|camera|drone|vacuum|coffee|fryer|watch|desktop|fridge|refrig|wash|dishwash|soundbar|console|gaming|applian|electr|kitchen|audio|lego|toy/i.test(u) && !/\.(css|js|png|jpg|woff2?|svg)$/.test(u));
+  console.log(`-- keyword links (${kwl.length}): ${kwl.slice(0, 120).join(" ")}`);
 }
