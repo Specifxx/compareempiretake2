@@ -196,7 +196,6 @@ async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
   const kept: { p: Product; cat: Cat; edlp: number }[] = [];
   let seen = 0;
   const why = { unpublished: 0, notOnline: 0, noCategory: 0, refused: 0 };
-  const samples: string[] = [];
   const asked = new Set(list);
   let queue = list;
   let followed = 0;
@@ -260,7 +259,6 @@ async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
   console.log(
     `officeworks: ${seen} products read, ${kept.length} ranged online in our categories (${JSON.stringify(why)})`,
   );
-  for (const s of samples) console.log(`officeworks sample: ${s}`);
   const offers: { cat: Cat; offer: RawOffer }[] = [];
   await pool(kept, 2, async ({ p, cat, edlp }) => {
     const price = (await livePrice(p.sku!)) ?? (edlp > 0 ? edlp : undefined);
