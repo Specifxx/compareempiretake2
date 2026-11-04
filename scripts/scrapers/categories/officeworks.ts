@@ -212,15 +212,6 @@ async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
           if (sku && !asked.has(sku) && followed + next.size < FOLLOW_MAX)
             next.add(sku);
         }
-        if (
-          samples.length < 40 &&
-          p.published &&
-          p.rangedOnline &&
-          /laptop|macbook|chromebook|notebook|\btv\b|monitor|lego|console|playstation|xbox|switch|surface|ideapad|vivobook|zenbook/i.test(
-            p.name ?? "",
-          )
-        )
-          samples.push(`${p.sku} edlp=${attr(p, "edlpPrice")} ${p.name}`);
         if (!p.sku || !p.name || !p.seoPath) continue;
         if (!p.published) {
           why.unpublished++;
@@ -237,8 +228,6 @@ async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
           | undefined;
         if (!cat) {
           why.noCategory++;
-          if (samples.length < 40)
-            samples.push(`NOCAT ${p.sku} edlp=${attr(p, "edlpPrice")} ${name}`);
           continue;
         }
         if (REFUSE[cat]?.test(name)) {
