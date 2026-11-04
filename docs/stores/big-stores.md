@@ -78,7 +78,7 @@ and the chain simply stays off until a correct feed is set.
 
 | Chain | Status | Why | Way in | Secret |
 |---|---|---|---|---|
-| **Reliant** | **Live** (`regions/uk/reliant.ts`) | Magento, server-rendered cards | direct | — |
+| Reliant | Dropped | its pages answered the probe but 403 the import (Cloudflare): a wall, not worked around | Awin feed if it has one | — |
 | **Crampton & Moore** | **Live** | Magento, server-rendered cards | direct | — |
 | Currys | Walled | Akamai | Awin feed | `FEED_URL_UK_CURRYS` |
 | Argos | Walled | Akamai | Awin feed | `FEED_URL_UK_ARGOS` |

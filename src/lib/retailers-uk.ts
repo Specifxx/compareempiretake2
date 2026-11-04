@@ -144,6 +144,5 @@ export const UK_RETAILERS: (Retailer & { id: `uk-${string}` })[] = [
   { id: "uk-smyths", name: "Smyths Toys", site: "smythstoys.com", color: "#E31837", type: "retailer" },
   { id: "uk-game", name: "GAME", site: "game.co.uk", color: "#5F259F", type: "retailer" },
   { id: "uk-costcouk", name: "Costco UK", site: "costco.co.uk", color: "#005DAA", type: "retailer" },
-  { id: "uk-reliant", name: "Reliant", site: "reliant.co.uk", color: "#003B71", type: "retailer" },
   { id: "uk-cramptonandmoore", name: "Crampton & Moore", site: "cramptonandmoore.co.uk", color: "#1A1A1A", type: "retailer" },
 ];

@@ -1130,8 +1130,8 @@ GraphQL, Myer's Constructor, Officeworks' Algolia).
 - **A chain with no listings is not a store yet.** `/how-we-pick-stores` and `llms.txt` now count and list only
   `activeRetailers` (stores with listings), so the 35 gated chains don't appear as stores the site compares until
   their feed is live. Nothing indexable changed for the stores that already have listings.
-- Reliant and Crampton & Moore (UK, Magento, server-rendered) and Peter's of Kensington, Harris Scarfe and Everyday
-  Home Living (AU) are read directly; Appliance Central answered the import with 403 and was dropped unworked-around;
-  Appliances Online is a next-round candidate.
+- Crampton & Moore (UK, Magento, server-rendered) and Peter's of Kensington, Harris Scarfe and Everyday Home Living
+  (AU) are read directly; Appliance Central and Reliant answered the probe but gave the import a 403, and were dropped
+  rather than worked around; Appliances Online is a next-round candidate.
 - Kmart, Bunnings, Costco (all regions) and Micro Center run no affiliate programme we know of and block servers,
   so they stay out until that changes; their secret names are reserved in case a feed appears.
