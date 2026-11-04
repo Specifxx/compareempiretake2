@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { RETAILERS } from "@/lib/retailers";
+import { activeRetailers } from "@/lib/catalog";
+import { REGION_IDS } from "@/lib/region";
 import { HowWePickStores } from "@/components/HowWePickStores";
 
 // The store-vetting page every Compare Empire site shares (owner, 2026-11-02).
@@ -10,7 +11,8 @@ export const metadata: Metadata = {
 };
 
 export default function HowWePickPage() {
-  const stores = Object.values(RETAILERS).filter((r) => r.type !== "carrier").map((r) => r.name);
+  // Stores with a price on the site today (a registered store whose feed has not started yet is not listed).
+  const stores = [...new Set(REGION_IDS.flatMap((region) => activeRetailers(undefined, region)).filter((r) => r.type !== "carrier").map((r) => r.name))];
   return (
     <div className="container-x max-w-3xl pt-12 pb-16">
       <HowWePickStores

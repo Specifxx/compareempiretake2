@@ -202,7 +202,20 @@ export type RetailerId =
   | "heatgrill"
   | "hairshopau"
   | "coffeebeanery"
-  | "bbqsandoutdoor";
+  | "bbqsandoutdoor"
+  | "petersofkensington"
+  | "appliancecentral"
+  | "everydayhomeliving"
+  | "officeworks"
+  | "bigw"
+  | "kogan"
+  | "catch"
+  | "binglee"
+  | "myer"
+  | "davidjones"
+  | "targetau"
+  | "kmart"
+  | "bunnings";
 
 export interface Retailer {
   id: RetailerId;

@@ -1,6 +1,7 @@
 import { CATEGORIES } from "@/lib/categories";
 import { getGuides } from "@/lib/guides";
-import { RETAILERS } from "@/lib/retailers";
+import { activeRetailers } from "@/lib/catalog";
+import { REGION_IDS } from "@/lib/region";
 import { SITE, SITE_NAME } from "@/lib/site";
 
 // /llms.txt (llmstxt.org): a plain map of the site for AI answer engines, as RiftCompare publishes,
@@ -12,7 +13,7 @@ export function GET() {
   const md = [
     `# ${SITE_NAME}`,
     "",
-    `> ${SITE_NAME} compares prices for phones, tablets, laptops, TVs, appliances and other tech across stores in the United States, Australia and the United Kingdom (${Object.keys(RETAILERS).length} stores in all), each market in its own currency, with price history. Free, no account needed.`,
+    `> ${SITE_NAME} compares prices for phones, tablets, laptops, TVs, appliances and other tech across stores in the United States, Australia and the United Kingdom (${new Set(REGION_IDS.flatMap((region) => activeRetailers(undefined, region).map((r) => r.id))).size} stores in all), each market in its own currency, with price history. Free, no account needed.`,
     "",
     "## Editions",
     `- [United States](${SITE}/)`,

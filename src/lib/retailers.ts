@@ -147,6 +147,20 @@ const AU_RETAILERS = {
   hairshopau: { id: "hairshopau", name: "Hairshop", site: "hairshop.com.au", color: "#111111", type: "retailer" },
   coffeebeanery: { id: "coffeebeanery", name: "Coffee Beanery", site: "coffeebeanery.com.au", color: "#4E342E", type: "retailer" },
   bbqsandoutdoor: { id: "bbqsandoutdoor", name: "BBQs & Outdoor", site: "bbqsandoutdoor.com.au", color: "#E65100", type: "retailer" },
+  petersofkensington: { id: "petersofkensington", name: "Peter's of Kensington", site: "petersofkensington.com.au", color: "#1B365D", type: "retailer" },
+  appliancecentral: { id: "appliancecentral", name: "Appliance Central", site: "appliancecentral.com.au", color: "#C8102E", type: "retailer" },
+  everydayhomeliving: { id: "everydayhomeliving", name: "Everyday Home Living", site: "everydayhomeliving.com.au", color: "#2E7D32", type: "retailer" },
+  // The big chains, priced from affiliate-network product feeds once their secret exists (docs/stores/big-stores.md, 2026-11-04)
+  officeworks: { id: "officeworks", name: "Officeworks", site: "officeworks.com.au", color: "#0033A0", type: "retailer" },
+  bigw: { id: "bigw", name: "Big W", site: "bigw.com.au", color: "#0057B8", type: "retailer" },
+  kogan: { id: "kogan", name: "Kogan", site: "kogan.com", color: "#E8252A", type: "retailer" },
+  catch: { id: "catch", name: "Catch", site: "catch.com.au", color: "#5C2D91", type: "retailer" },
+  binglee: { id: "binglee", name: "Bing Lee", site: "binglee.com.au", color: "#1B3F94", type: "retailer" },
+  myer: { id: "myer", name: "Myer", site: "myer.com.au", color: "#1A1A1A", type: "retailer" },
+  davidjones: { id: "davidjones", name: "David Jones", site: "davidjones.com", color: "#000000", type: "retailer" },
+  targetau: { id: "targetau", name: "Target Australia", site: "target.com.au", color: "#CC0000", type: "retailer" },
+  kmart: { id: "kmart", name: "Kmart", site: "kmart.com.au", color: "#E31837", type: "retailer" },
+  bunnings: { id: "bunnings", name: "Bunnings", site: "bunnings.com.au", color: "#0D5257", type: "retailer" },
 };
 
 export const RETAILERS = {
