@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:35:04.844Z",
+ "scrapedAt": "2026-11-04T00:59:42.963Z",
  "offers": [
   {
    "retailer": "uk-londonappliances",
@@ -104,7 +104,7 @@
    "sku": "FFB76727PM",
    "title": "AEG FFB76727PM 7000 Series, Freestanding 60cm GlassCare Dishwasher",
    "url": "https://www.londonappliances.com/products/aeg-ffb76727pm-freestanding-60cm-glasscare-dishwasher",
-   "price": 779,
+   "price": 779.99,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/PSAADW210PA00007.jpg?v=1750436851",
    "inStock": true,
@@ -126,7 +126,7 @@
    "sku": "FFX32617ZW",
    "title": "AEG FFX32617ZW 3000 AirDry Freestanding Dishwasher with AirDry Technology + 13 Place Settings",
    "url": "https://www.londonappliances.com/products/aeg-ffx32617zw-3000-airdry-freestanding-dishwasher-with-airdry-technology-13-place-settings",
-   "price": 498,
+   "price": 474,
    "wasPrice": 539,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/PSAADW210PA00004_26b1cad0-dbc3-4f29-a8d7-b129dad06d59.jpg?v=1726140604",
    "inStock": false,
@@ -278,7 +278,7 @@
    "sku": "FSS64907Z",
    "title": "AEG FSS64907Z 6000 SatelliteClean Fully Integrated Dishwasher with AirDry Technology + 14 Place Settings",
    "url": "https://www.londonappliances.com/products/aeg-fss64907z-6000-satelliteclean-fully-integrated-dishwasher-with-airdry-technology-14-place-settings",
-   "price": 599,
+   "price": 570,
    "wasPrice": 609,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/PSAADW210PE00009.jpg?v=1726139242",
    "inStock": false,
@@ -562,7 +562,7 @@
    "price": 399,
    "wasPrice": 469,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/24747670_SMS26AW08G_STP_def.png?v=1730716613",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bosch",
    "mpn": "SMS26AW08G"
   },
@@ -610,7 +610,7 @@
    "price": 449,
    "wasPrice": 509,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/23581146_SPS2IKW01G_STP_def.webp?v=1744299529",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bosch",
    "mpn": "SPS2IKW01G"
   },
@@ -655,7 +655,7 @@
    "sku": "SMH4HVX00G",
    "title": "Bosch Series 4 SMH4HVX00G, Fully-integrated dishwasher",
    "url": "https://www.londonappliances.com/products/bosch-smh4hvx00g-fully-integrated-dishwasher",
-   "price": 399,
+   "price": 429,
    "wasPrice": 589,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/23439181_SMH4HVX00G_STP_def.webp?v=1744099944",
    "inStock": false,
@@ -670,7 +670,7 @@
    "price": 549,
    "wasPrice": 689,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/23539463_SMS4EKI06G_STP_def.webp?v=1744104923",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bosch",
    "mpn": "SMS4EKI06G"
   },
@@ -682,7 +682,7 @@
    "price": 549,
    "wasPrice": 629,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/23539465_SMS4EKW06G_STP_def.webp?v=1744294875",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bosch",
    "mpn": "SMS4EKW06G"
   },
@@ -787,7 +787,8 @@
    "sku": "SPS4HMW49G",
    "title": "Bosch Series 4 SPS4HMW49G, Free-standing dishwasher",
    "url": "https://www.londonappliances.com/products/bosch-sps4hmw49g-free-standing-dishwasher",
-   "price": 699,
+   "price": 499,
+   "wasPrice": 589,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/23438940_SPS4HMW49G_STP_def.webp?v=1744105131",
    "inStock": false,
    "brand": "Bosch",
@@ -1822,7 +1823,7 @@
    "price": 289,
    "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/pi-eef4ee30-cd52-4425-a353-9fca87c01938.jpg?v=1744715378",
-   "inStock": false,
+   "inStock": true,
    "brand": "Indesit",
    "mpn": "IN2FE10CS90SUK"
   },
@@ -2181,7 +2182,7 @@
    "price": 699,
    "wasPrice": 1029,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/sn25ei13ce_800x800_da2bc9f5-21e3-4c5d-a3cb-09eaf800aca1.jpg?v=1745493024",
-   "inStock": true,
+   "inStock": false,
    "brand": "Siemens",
    "mpn": "SN25EI13CE"
   },

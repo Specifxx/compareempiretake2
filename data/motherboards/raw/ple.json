@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:52:25.042Z",
+ "scrapedAt": "2026-11-04T00:20:17.120Z",
  "offers": [
   {
    "retailer": "ple",
@@ -304,21 +304,9 @@
    "brand": "ASUS",
    "mpn": "ROG MAXIMUS Z890 APEX",
    "url": "https://www.ple.com.au/products/669092/asus-rog-maximus-z890-apex-lga1851-atx-desktop-motherboard",
-   "price": 739,
+   "price": 699,
    "wasPrice": 1299,
    "image": "https://plecom.imgix.net/iil-403955-669092.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "650892",
-   "title": "ASUS ROG Strix B550-F Gaming WiFi II AM4 ATX Desktop Motherboard",
-   "brand": "ASUS",
-   "mpn": "ROG STRIX B550-F GAMING WIFI II",
-   "url": "https://www.ple.com.au/products/650892/asus-rog-strix-b550-f-gaming-wifi-ii-am4-atx-desktop-motherboard",
-   "price": 249,
-   "wasPrice": 349,
-   "image": "https://plecom.imgix.net/iil-316829-650892.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -342,7 +330,7 @@
    "url": "https://www.ple.com.au/products/684018/asus-rog-strix-b850-a-gaming-wifi7-neo-am5-atx-desktop-motherboard",
    "price": 479,
    "image": "https://plecom.imgix.net/iil-468387-684018.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -354,7 +342,7 @@
    "price": 649,
    "wasPrice": 679,
    "image": "https://plecom.imgix.net/iil-412785-672011.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -366,7 +354,7 @@
    "price": 499,
    "wasPrice": 549,
    "image": "https://plecom.imgix.net/iil-412288-671706.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -564,7 +552,7 @@
    "brand": "ASUS",
    "mpn": "TUF GAMING B850-E WIFI",
    "url": "https://www.ple.com.au/products/676582/asus-tuf-gaming-b850-e-wifi-am5-atx-desktop-motherboard",
-   "price": 369,
+   "price": 349,
    "wasPrice": 379,
    "image": "https://plecom.imgix.net/iil-439220-676582.jpg?w=600&h=600",
    "inStock": true
@@ -872,7 +860,7 @@
    "url": "https://www.ple.com.au/products/686257/gigabyte-b850-ai-top-am5-atx-desktop-motherboard",
    "price": 749,
    "image": "https://plecom.imgix.net/iil-475545-686257.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1275,7 +1263,7 @@
    "price": 329,
    "wasPrice": 459,
    "image": "https://plecom.imgix.net/iil-408363-671015.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1592,6 +1580,18 @@
    "price": 239,
    "wasPrice": 289,
    "image": "https://plecom.imgix.net/iil-413097-672079.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "679546",
+   "title": "MSI B840M Gaming Plus WiFi6E AM5 mATX Desktop Motherboard",
+   "brand": "MSI",
+   "mpn": "B840M GAMING PLUS WIFI6E",
+   "url": "https://www.ple.com.au/products/679546/msi-b840m-gaming-plus-wifi6e-am5-matx-desktop-motherboard",
+   "price": 179,
+   "wasPrice": 259,
+   "image": "https://plecom.imgix.net/iil-449354-679546.jpg?w=600&h=600",
    "inStock": true
   },
   {

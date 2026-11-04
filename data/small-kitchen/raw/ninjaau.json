@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:51:59.636Z",
+ "scrapedAt": "2026-11-04T00:19:51.769Z",
  "offers": [
   {
    "retailer": "ninjaau",
@@ -38,7 +38,7 @@
    "url": "https://www.ninjakitchen.com.au/products/ninja-blast-max-cordless-portable-blender?variant=41896768962595",
    "price": 139.99,
    "image": "https://cdn.shopify.com/s/files/1/0723/4204/4707/files/BC251-navy-1.webp?v=1770606847",
-   "inStock": false,
+   "inStock": true,
    "mpn": "BC251NVANZ"
   },
   {
@@ -259,7 +259,7 @@
    "url": "https://www.ninjakitchen.com.au/products/ninja-nc300-creami",
    "price": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/0723/4204/4707/files/NC300-pnew2webp.webp?v=1770613721",
-   "inStock": false,
+   "inStock": true,
    "mpn": "NC300ANZ"
   },
   {
@@ -292,6 +292,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0723/4204/4707/files/NC300Bundle_ac69a04d-27b3-40af-96d1-13febb1d13bf.jpg?v=1784657144",
    "inStock": false,
    "brand": "SharkNinja Australia"
+  },
+  {
+   "retailer": "ninjaau",
+   "sku": "NC601BLANZ",
+   "title": "Ninja Creami XL 11-in-1 Ice Cream Maker",
+   "url": "https://www.ninjakitchen.com.au/products/ninja-creami-xl-11-in-1-ice-cream-maker",
+   "price": 449.99,
+   "image": "https://cdn.shopify.com/s/files/1/0723/4204/4707/files/nc601bl-1.webp?v=1793580807",
+   "inStock": true,
+   "mpn": "NC601BLANZ"
   },
   {
    "retailer": "ninjaau",
@@ -370,7 +380,7 @@
    "url": "https://www.ninjakitchen.com.au/products/ninja-neverclog-cold-press-juicer",
    "price": 249.99,
    "image": "https://cdn.shopify.com/s/files/1/0723/4204/4707/files/jc151-1.webp?v=1770612837",
-   "inStock": true,
+   "inStock": false,
    "mpn": "JC151ANZ"
   },
   {
@@ -411,7 +421,7 @@
    "price": 249.99,
    "wasPrice": 319.99,
    "image": "https://cdn.shopify.com/s/files/1/0723/4204/4707/files/GR101-1.webp?v=1770605260",
-   "inStock": false,
+   "inStock": true,
    "mpn": "GR101ANZ"
   },
   {

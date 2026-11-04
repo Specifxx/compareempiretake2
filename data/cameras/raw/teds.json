@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:54:11.886Z",
+ "scrapedAt": "2026-11-04T00:23:01.153Z",
  "offers": [
   {
    "retailer": "teds",
@@ -245,6 +245,16 @@
    "price": 999.95,
    "wasPrice": 1299.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/eosrp-body.jpg?v=1768969238",
+   "inStock": true,
+   "brand": "Canon"
+  },
+  {
+   "retailer": "teds",
+   "sku": "152368",
+   "title": "Canon ERC-R5L Rain Cover for EOS R5 II - Large",
+   "url": "https://www.teds.com.au/products/canon-erc-r5l-rain-cover-for-eos-r5-ii-large",
+   "price": 199.95,
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/152368.jpg?v=1793685669",
    "inStock": true,
    "brand": "Canon"
   },
@@ -715,26 +725,6 @@
   },
   {
    "retailer": "teds",
-   "sku": "131618",
-   "title": "Ilford PIXI-Z Zoom Digital Camera Kit - Pink - Bonus 32GB Card",
-   "url": "https://www.teds.com.au/products/ilford-pixi-z-zoom-digital-camera-pink",
-   "price": 199.95,
-   "wasPrice": 249.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/3005203K.tag.0.webp?v=1791409872",
-   "inStock": true
-  },
-  {
-   "retailer": "teds",
-   "sku": "130618",
-   "title": "Ilford PIXI-Z Zoom Digital Camera Kit- White - Bonus 32GB Card",
-   "url": "https://www.teds.com.au/products/ilford-pixi-z-zoom-digital-camera-white",
-   "price": 199.95,
-   "wasPrice": 249.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/3005200K.tag.0.webp?v=1791409872",
-   "inStock": true
-  },
-  {
-   "retailer": "teds",
    "sku": "151808",
    "title": "Insta 360 GO 3S Sport Action Camera w/128GB Standard Edition - Black",
    "url": "https://www.teds.com.au/products/insta-360-go-3s-sport-action-camera-w-128gb-standard-edition-black",
@@ -805,16 +795,6 @@
   },
   {
    "retailer": "teds",
-   "sku": "126850",
-   "title": "Insta360 One RS Sport Action Camera 4K",
-   "url": "https://www.teds.com.au/products/insta360-one-rs-sport-action-camera-4k",
-   "price": 549.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/1654796741_1688557_jpg.jpg?v=1768968658",
-   "inStock": true,
-   "brand": "TECHLYTE"
-  },
-  {
-   "retailer": "teds",
    "sku": "128459",
    "title": "Insta360 Pro 2 Standard Edition (Farsight included)",
    "url": "https://www.teds.com.au/products/insta360-pro-2-standard-edition-farsight-included",
@@ -868,16 +848,6 @@
    "url": "https://www.teds.com.au/products/lomo-li100-instant-camera-black",
    "price": 99.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/li100_black.jpg?v=1768968606",
-   "inStock": true,
-   "brand": "LOMO"
-  },
-  {
-   "retailer": "teds",
-   "sku": "107233",
-   "title": "Lomo Sprocket Rocket Panorama Camera BLK",
-   "url": "https://www.teds.com.au/products/lomo-sprocket-rocket-panorama-camera-blk",
-   "price": 69.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/sprocket-rocket-sml.jpg?v=1768968659",
    "inStock": true,
    "brand": "LOMO"
   },
@@ -958,16 +928,6 @@
    "url": "https://www.teds.com.au/products/nikon-fsa-l2-fieldscope-dslr-camera-attachment",
    "price": 1699.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/102709.jpg?v=1786069302",
-   "inStock": true,
-   "brand": "Nikon"
-  },
-  {
-   "retailer": "teds",
-   "sku": "127998",
-   "title": "Nikon Z fc Body Only - Brown",
-   "url": "https://www.teds.com.au/products/nikon-z-fc-body-only-brown",
-   "price": 1499.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/48297.jpg?v=1791420357",
    "inStock": true,
    "brand": "Nikon"
   },
@@ -1346,6 +1306,36 @@
   },
   {
    "retailer": "teds",
+   "sku": "171885",
+   "title": "OPENMOON Camera Support Saddle Large Brown",
+   "url": "https://www.teds.com.au/products/openmoon-camera-support-saddle-large-brown",
+   "price": 424.95,
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/171885.jpg?v=1793686751",
+   "inStock": true,
+   "brand": "OPENMOON"
+  },
+  {
+   "retailer": "teds",
+   "sku": "171886",
+   "title": "OPENMOON Camera Support Saddle Medium Brown 330x230x200mm",
+   "url": "https://www.teds.com.au/products/openmoon-camera-support-saddle-medium-brown-330x230x200mm",
+   "price": 384.95,
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/171886.jpg?v=1793686798",
+   "inStock": true,
+   "brand": "OPENMOON"
+  },
+  {
+   "retailer": "teds",
+   "sku": "171887",
+   "title": "OPENMOON Camera Support Saddle Small Brown",
+   "url": "https://www.teds.com.au/products/openmoon-camera-support-saddle-small-brown",
+   "price": 344.95,
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/171887.jpg?v=1793687129",
+   "inStock": true,
+   "brand": "OPENMOON"
+  },
+  {
+   "retailer": "teds",
    "sku": "120235",
    "title": "Panasonic AW UE50WEJ PTZ Streaming Camera",
    "url": "https://www.teds.com.au/products/panasonic-aw-ue50wej-ptz-streaming-camera",
@@ -1373,16 +1363,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/xlr.jpg?v=1770110828",
    "inStock": true,
    "brand": "Panasonic"
-  },
-  {
-   "retailer": "teds",
-   "sku": "107770",
-   "title": "Panasonic Lumix 12-32mm Zoom",
-   "url": "https://www.teds.com.au/products/panasonic-lumix-12-32mm-zoom",
-   "price": 549.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/panasonic_12-32mm_1.jpg?v=1768968708",
-   "inStock": true,
-   "brand": "Panasonic Lumix"
   },
   {
    "retailer": "teds",
@@ -1430,8 +1410,7 @@
    "sku": "129527",
    "title": "Panasonic Lumix G97 + 12-60mm Kit",
    "url": "https://www.teds.com.au/products/panasonic-lumix-g97-12-60mm-kit",
-   "price": 999.95,
-   "wasPrice": 1299.95,
+   "price": 1299.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/panasonic_dc_g97-mirrorless-camera.jpg?v=1768968623",
    "inStock": true,
    "brand": "Panasonic Lumix"
@@ -1522,63 +1501,11 @@
   },
   {
    "retailer": "teds",
-   "sku": "124893",
-   "title": "Panasonic Lumix S1IIE + 24-105mm Zoom Kit",
-   "url": "https://www.teds.com.au/products/panasonic-lumix-s1iie-24-105mm-zoom-kit",
-   "price": 4599.95,
-   "wasPrice": 4699.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/s1iie_m-kit_slant_k_1.jpg?v=1768968677",
-   "inStock": true,
-   "brand": "Panasonic Lumix"
-  },
-  {
-   "retailer": "teds",
-   "sku": "124891",
-   "title": "Panasonic Lumix S1IIE Body",
-   "url": "https://www.teds.com.au/products/panasonic-lumix-s1iie-body",
-   "price": 2999.95,
-   "wasPrice": 3299.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/s1iie_body_front_k.jpg?v=1768968677",
-   "inStock": true,
-   "brand": "Panasonic Lumix"
-  },
-  {
-   "retailer": "teds",
-   "sku": "124890",
-   "title": "Panasonic Lumix S1MKII + 24-105mm Zoom Kit",
-   "url": "https://www.teds.com.au/products/panasonic-lumix-s1mkii-24-105mm-zoom-kit",
-   "price": 5899.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/s1ii_m-kit_slant_k.jpg?v=1768968676",
-   "inStock": true,
-   "brand": "Panasonic Lumix"
-  },
-  {
-   "retailer": "teds",
    "sku": "120844",
    "title": "Panasonic Lumix S5 + 20-60mm Kit",
    "url": "https://www.teds.com.au/products/panasonic-lumix-s5-20-60mm",
    "price": 2199.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/s5_s-r2060_slant_k.jpg?v=1771407648",
-   "inStock": true,
-   "brand": "Panasonic Lumix"
-  },
-  {
-   "retailer": "teds",
-   "sku": "127846",
-   "title": "Panasonic Lumix S5II Body Only",
-   "url": "https://www.teds.com.au/products/panasonic-lumix-s5ii-body-only",
-   "price": 2499.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/panasonic-lumix-s5ii-body-only_4.jpg?v=1768968657",
-   "inStock": true,
-   "brand": "Panasonic Lumix"
-  },
-  {
-   "retailer": "teds",
-   "sku": "127848",
-   "title": "Panasonic Lumix S5IIX Body Only",
-   "url": "https://www.teds.com.au/products/panasonic-lumix-s5iix-body-only",
-   "price": 2799.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/panasonic-lumix-s5iix.jpg?v=1768968658",
    "inStock": true,
    "brand": "Panasonic Lumix"
   },
@@ -1900,16 +1827,6 @@
   },
   {
    "retailer": "teds",
-   "sku": "125224",
-   "title": "Ricoh Theta X 360-degree camera",
-   "url": "https://www.teds.com.au/products/ricoh-theta-x-360-degree-camera",
-   "price": 1199.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/ricoh-theta-x.jpg?v=1768968676",
-   "inStock": true,
-   "brand": "Ricoh"
-  },
-  {
-   "retailer": "teds",
    "sku": "111752",
    "title": "Rode VideoMicro > For Compact System Cameras",
    "url": "https://www.teds.com.au/products/rode-videomicro-for-compact-system-cameras",
@@ -2000,16 +1917,6 @@
   },
   {
    "retailer": "teds",
-   "sku": "129609",
-   "title": "Sony A6700 + 18-105mm G PZ Kit",
-   "url": "https://www.teds.com.au/products/sony-a6700-kit-18-105mm-g-pz-kit",
-   "price": 2999.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/sony-a6700-18-105mmkit.jpg?v=1768968677",
-   "inStock": true,
-   "brand": "Sony"
-  },
-  {
-   "retailer": "teds",
    "sku": "123213",
    "title": "Sony A7 V Body Only",
    "url": "https://www.teds.com.au/products/sony-a7-mark-v-body-only",
@@ -2025,16 +1932,6 @@
    "url": "https://www.teds.com.au/products/sony-a7r-mark-vi-body-only",
    "price": 6999.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/Sony_A7RVI.jpg?v=1778575747",
-   "inStock": true,
-   "brand": "Sony"
-  },
-  {
-   "retailer": "teds",
-   "sku": "121353",
-   "title": "Sony Alpha A1 Body",
-   "url": "https://www.teds.com.au/products/sony-alpha-a1-body",
-   "price": 6999.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/sony-alpha-a1-body-front.jpg?v=1768968676",
    "inStock": true,
    "brand": "Sony"
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:23:23.255Z",
+ "scrapedAt": "2026-11-04T00:48:18.678Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -186,7 +186,8 @@
    "sku": "51929566511415",
    "title": "Bose SoundLink Flex Portable Speaker (2nd Gen, Sunset Peach)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-flex-portable-speaker-2nd-gen-sunset-peach",
-   "price": 159,
+   "price": 119,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-SoundLink-Flex-Portable-Speaker-2nd-Gen_-Sunset-Peach-Image-03.jpg?v=1775708003",
    "inStock": true,
    "brand": "Bose"
@@ -206,7 +207,8 @@
    "sku": "48871203569975",
    "title": "Bose SoundLink Max Bluetooth Boombox Speaker (Black)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-max-bluetooth-boombox-speaker-black",
-   "price": 399,
+   "price": 279,
+   "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/2_bd904672-0382-471b-856b-fdc045a81966.jpg?v=1769892285",
    "inStock": true,
    "brand": "Bose"
@@ -238,7 +240,7 @@
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-micro-bluetooth-portable-waterproof-speaker-black",
    "price": 119,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/169679_WWS1.jpg?v=1776335190",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose"
   },
   {
@@ -256,7 +258,8 @@
    "sku": "51058953683255",
    "title": "Bose Soundlink Micro Portable Speaker (2nd Gen, Black)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-micro-portable-speaker-2nd-gen-black",
-   "price": 129,
+   "price": 89,
+   "wasPrice": 129,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-Soundlink-Micro-Portable-Speaker-2nd-Gen_-Black-Image-11.jpg?v=1757478709",
    "inStock": true,
    "brand": "Bose"
@@ -286,7 +289,8 @@
    "sku": "51462941999415",
    "title": "Bose Soundlink Micro Portable Speaker (2nd Gen, Sandstone)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-micro-portable-speaker-2nd-gen-sandstone",
-   "price": 129,
+   "price": 99,
+   "wasPrice": 129,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-Soundlink-Micro-Portable-Speaker-2nd-Gen_-Sandstone-Image-01.jpg?v=1765775544",
    "inStock": true,
    "brand": "Bose"
@@ -1160,7 +1164,8 @@
    "sku": "52142482555191",
    "title": "JBL Professional EON712 12 Inch Powered PA Speaker with Bluetooth",
    "url": "https://www.worldwidestereo.com/products/jbl-pro-eon712-12-inch-powered-pa-speaker-with-bluetooth",
-   "price": 549,
+   "price": 499,
+   "wasPrice": 549,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBLPro-EON712-12-Inch-Powered-PA-Speaker-with-Bluetooth-Image-01.jpg?v=1778765804",
    "inStock": true,
    "brand": "JBL Professional"
@@ -1965,7 +1970,7 @@
    "url": "https://www.worldwidestereo.com/products/yamaha-wx-021wh-musiccast-20-wireless-speaker-white",
    "price": 299.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/170804_WWS1.jpg?v=1711465048",
-   "inStock": false,
+   "inStock": true,
    "brand": "Yamaha"
   }
  ]

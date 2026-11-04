@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:51:51.073Z",
+ "scrapedAt": "2026-11-04T00:19:43.352Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -350,7 +350,7 @@
    "url": "https://www.mwave.com.au/products/biwin-m100-1tb-25-sata-iii-6-gbs-ssd-550500mbs-ac82908",
    "price": 211.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/biwin_m100_1tb_25_sata_iii_6_gbs_ssd_bm100nn01tbrgx_ac82908_27071.jpg?v=1787745033",
-   "inStock": true,
+   "inStock": false,
    "brand": "Biwin"
   },
   {
@@ -1248,7 +1248,7 @@
    "url": "https://www.mwave.com.au/products/lexar-nm790-2tb-pcie-40-nvme-m2-ssd-lnm790x002trnnng-ac67987",
    "price": 479,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_nm790_2tb_pcie_40_nvme_m2_ssd_lnm790x002trnnng_ac67987_51407.jpg?v=1787797406",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LNM790X002T-RNNNG",
    "brand": "Lexar"
   },
@@ -1388,7 +1388,7 @@
    "sku": "AC80115",
    "title": "Lexar NQ790 4TB PCIe 4.0 NVMe M.2 2280 SSD - LNQ790X004T-RNNNG",
    "url": "https://www.mwave.com.au/products/lexar-nq790-4tb-pcie-40-nvme-m2-2280-ssd-lnq790x004trnnng-ac80115",
-   "price": 799,
+   "price": 878,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_nq790_4tb_pcie_40_nvme_m2_2280_ssd_lnq790x004trnnng_ac80115_38197.jpg?v=1787797410",
    "inStock": true,
    "mpn": "LNQ790X004T-RNNNG",
@@ -1622,7 +1622,7 @@
    "url": "https://www.mwave.com.au/products/predator-gm7-2tb-pcie-40-nvme-m2-2280-ssd-72006300mbs-ac98918",
    "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/predator_gm7_2tb_pcie_40_nvme_m2_2280_ssd_up_to_7400mbs_read_ac98918_23449.jpg?v=1787798104",
-   "inStock": true,
+   "inStock": false,
    "brand": "Predator"
   },
   {
@@ -2269,7 +2269,7 @@
    "sku": "AC57887",
    "title": "Silicon Power A55 1TB SATA III M.2 2280 SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-a55-1tb-sata-iii-m2-2280-ssd-ac57887",
-   "price": 188.5,
+   "price": 194.5,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ss3a55m28_1tb_sata_iii_m2_2280_sp001tbss3a55m28_ac57887.jpg?v=1787798413",
    "inStock": false,
    "brand": "Silicon Power"
@@ -2309,7 +2309,7 @@
    "sku": "AC92559",
    "title": "Silicon Power Ace A58 1TB 2.5\" SATA III 3D NAND SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-ace-a58-1tb-25-sata-iii-3d-nand-ssd-ac92559",
-   "price": 188,
+   "price": 194,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ace_a58_128gb_25_sata_iii_3d_nand_ssd_ac92559_92250.jpg?v=1789457425",
    "inStock": false,
    "brand": "Silicon Power"
@@ -2319,9 +2319,9 @@
    "sku": "AC92557",
    "title": "Silicon Power Ace A58 256GB 2.5\" SATA III 3D NAND SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-ace-a58-256gb-25-sata-iii-3d-nand-ssd-ac92557",
-   "price": 63,
+   "price": 64,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ace_a58_128gb_25_sata_iii_3d_nand_ssd_ac92557_92250.jpg?v=1789457428",
-   "inStock": true,
+   "inStock": false,
    "brand": "Silicon Power"
   },
   {
@@ -2359,7 +2359,7 @@
    "sku": "AC93725",
    "title": "Silicon Power B75 Pro 1TB USB-C 3.2 Gen 2 Portable SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-b75-pro-1tb-usbc-32-gen-2-portable-ssd-ac93725",
-   "price": 208,
+   "price": 214,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_b75_pro_1tb_usbc_32_gen_2_portable_ssd_ac93725_9007.jpg?v=1789457428",
    "inStock": false,
    "brand": "Silicon Power"
@@ -2411,7 +2411,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-128gb-pcie-30-nvme-m2-ssd-sz128gbp34a60m28au-ac93695",
    "price": 58,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_128gb_pcie_30_m2_nvme_ssd_ac93695_63954.jpg?v=1789457433",
-   "inStock": false,
+   "inStock": true,
    "mpn": "SZ128GBP34A60M28AU",
    "brand": "Silicon Power"
   },
@@ -2464,7 +2464,7 @@
    "sku": "AC93720",
    "title": "Silicon Power PC60 1TB USB-C 3.2 Gen 2 Portable SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-pc60-1tb-usbc-32-gen-2-portable-ssd-ac93720",
-   "price": 207,
+   "price": 213,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_pc60_1tb_usbc_32_gen_2_portable_ssd_ac93720_16625.jpg?v=1789457435",
    "inStock": false,
    "brand": "Silicon Power"
@@ -2594,7 +2594,7 @@
    "sku": "AC61408",
    "title": "Silicon Power UD85 1TB M.2 NVMe PCIe Gen 4.0 SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-ud85-1tb-m2-nvme-pcie-gen-40-ssd-ac61408",
-   "price": 247,
+   "price": 243,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud85_250tb_m2_nvme_pcie_gen_40_ssd_ac61408_66027.jpg?v=1787798427",
    "inStock": false,
    "brand": "Silicon Power"
@@ -2604,7 +2604,7 @@
    "sku": "AC61405",
    "title": "Silicon Power UD85 250GB M.2 NVMe PCIe Gen 4.0 SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-ud85-250gb-m2-nvme-pcie-gen-40-ssd-ac61405",
-   "price": 98,
+   "price": 88,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud85_250tb_m2_nvme_pcie_gen_40_ssd_ac61405_66027.jpg?v=1787798428",
    "inStock": false,
    "brand": "Silicon Power"
@@ -2644,7 +2644,7 @@
    "sku": "AC93745",
    "title": "Silicon Power UD90 1TB PCIe 4.0 NVMe M.2 2230 SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-1tb-pcie-40-nvme-m2-2230-ssd-ac93745",
-   "price": 258,
+   "price": 298,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_1tb_pcie_40_nvme_m2_2230_ssd_ac93745_1998.jpg?v=1789457432",
    "inStock": true,
    "brand": "Silicon Power"
@@ -2654,7 +2654,7 @@
    "sku": "AC93701",
    "title": "Silicon Power UD90 1TB PCIe 4.0 NVMe M.2 SSD - SZ01KGBP44UD9005AU",
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-1tb-pcie-40-nvme-m2-ssd-sz01kgbp44ud9005au-ac93701",
-   "price": 248,
+   "price": 244,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_1tb_pcie_40_nvme_m2_ssd_sz01kgbp44ud9005au_ac93701_45920.jpg?v=1789457436",
    "inStock": false,
    "mpn": "SZ01KGBP44UD9005AU",
@@ -2665,7 +2665,7 @@
    "sku": "AC93332",
    "title": "Silicon Power UD90 250GB PCIe 4.0 NVMe M.2 SSD - SZ250GBP44UD9005AU",
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-250gb-pcie-40-nvme-m2-ssd-sz250gbp44ud9005au-ac93332",
-   "price": 99,
+   "price": 89,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_250gb_nvme_14_pcie_40_ssd_ac93332.jpg?v=1789457435",
    "inStock": true,
    "mpn": "SZ250GBP44UD9005AU",
@@ -2676,7 +2676,7 @@
    "sku": "AC93746",
    "title": "Silicon Power UD90 2TB PCIe 4.0 NVMe M.2 2230 SSD",
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-2tb-pcie-40-nvme-m2-2230-ssd-ac93746",
-   "price": 434,
+   "price": 448,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_2tb_pcie_40_nvme_m2_2230_ssd_ac93746_61445.jpg?v=1789457432",
    "inStock": true,
    "brand": "Silicon Power"
@@ -2718,7 +2718,7 @@
    "sku": "AC93700",
    "title": "Silicon Power UD90 500GB PCIe 4.0 NVMe M.2 SSD - SZ500GBP44UD9005AU",
    "url": "https://www.mwave.com.au/products/silicon-power-ud90-500gb-pcie-40-nvme-m2-ssd-sz500gbp44ud9005au-ac93700",
-   "price": 164,
+   "price": 144,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ud90_500gb_pcie_40_nvme_m2_ssd_sz500gbp44ud9005au_ac93700_20861.jpg?v=1789457434",
    "inStock": true,
    "mpn": "SZ500GBP44UD9005AU",
@@ -2899,7 +2899,7 @@
    "url": "https://www.mwave.com.au/products/wd-black-sn850x-1tb-pcie-40-nvme-m2-2280-ssd-with-heatsink-wds100t2xhe-ac56421",
    "price": 548.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/wd_black_sn850x_1tb_pcie_40_nvme_m2_2280_ssd_with_heatsink_wds100t2xhe_ac56421.jpg?v=1787748317",
-   "inStock": false,
+   "inStock": true,
    "mpn": "WDS100T2XHE",
    "brand": "Western Digital"
   },

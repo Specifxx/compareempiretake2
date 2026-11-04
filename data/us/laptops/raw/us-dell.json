@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:19:40.304Z",
+ "scrapedAt": "2026-11-04T00:44:39.282Z",
  "offers": [
   {
    "retailer": "us-dell",
@@ -61,8 +61,19 @@
    "brand": "Dell",
    "title": "Dell 16 Laptop",
    "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dell16laptopdc16251",
-   "price": 1399.99,
+   "price": 1929.99,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell/16251/media-gallery/platinum-metal/fpr/notebook-dc16251-fpr-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1020&qlt=100,0&resMode=sharp2&size=1020,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dell16laptopdc16255",
+   "brand": "Dell",
+   "title": "Dell 16 Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dell16laptopdc16255",
+   "price": 799.99,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell/dc16255/mg/black/non-fpr/notebook-dc16255-nt-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1035&qlt=100,0&resMode=sharp2&size=1035,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -87,6 +98,16 @@
    "image": "https://i.dell.com/assetlink/img/global/laptop-dell-ds14270-row-beige-gallery-1-dl11i20g-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1063&qlt=100,0&resMode=sharp2&size=1063,804",
    "inStock": true,
    "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "ds14270_cto_01",
+   "brand": "Dell",
+   "title": "Dell New Dell 14S Laptop - Intel Core 5 320, 8 GB LPDDR5X, 256 GB SSD, 14\" Non Touch FHD+ (1920x1200)",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dell14sds14270/ds14270_cto_01",
+   "price": 649.99,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-dell-ds14270-row-beige-gallery-1-dl11i20g-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1063&qlt=100,0&resMode=sharp2&size=1063,804",
+   "inStock": true
   },
   {
    "retailer": "us-dell",
@@ -149,17 +170,6 @@
    "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/xps13dx13260",
    "price": 699.99,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-dx13260/media-gallery/sky/laptop-xps-13-sky-dx13260-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1043&qlt=100,0&resMode=sharp2&size=1043,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "us-dell",
-   "sku": "xps14da14260",
-   "brand": "Dell",
-   "title": "Dell XPS 14 Laptop",
-   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/xps14da14260",
-   "price": 1699.99,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/images/products/laptops-and-2-in-1s/xps/14-da14260-touch/dell-da14260t-laptop-c-15000ff100-gy-oled.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1076&qlt=100,0&resMode=sharp2&size=1076,804",
    "inStock": true,
    "fromPrice": true
   }

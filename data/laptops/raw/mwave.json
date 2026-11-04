@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:51:42.344Z",
+ "scrapedAt": "2026-11-04T00:19:34.811Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -862,7 +862,7 @@
    "url": "https://www.mwave.com.au/products/asus-vivobook-s14-oled-m3407ha-14-ryzen-7-16gb-1tb-laptop-grey-ac91898",
    "price": 1538,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_vivobook_s14_oled_m3407ha_14_ryzen_7_16gb_1tb_laptop_grey_ac91898_86661.jpg?v=1787784098",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -1912,6 +1912,7 @@
    "title": "Dell Pro Precision 5 16\" FHD+ AI Laptop - Core Ultra 9-386H 32GB 1TB RTX Pro 2000 8GB W11P",
    "url": "https://www.mwave.com.au/products/dell-pro-precision-5-16-fhd-ai-laptop-core-ultra-9386h-32gb-1tb-rtx-pro-2000-8gb-w11p-ad00638",
    "price": 8102.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/laptop-precision-pro-16-pw516261_9.jpg?v=1793685099",
    "inStock": true,
    "brand": "Dell"
   },
@@ -2858,7 +2859,7 @@
    "sku": "AC85152",
    "title": "HP EliteBook 8 G1i 13\" WUXGA AI Laptop - Core Ultra 5-225U 16GB 512GB Touch LTE 5G W11 PRO",
    "url": "https://www.mwave.com.au/products/hp-elitebook-8-g1i-13-wuxga-ai-laptop-core-ultra-5225u-16gb-512gb-touch-lte-5g-w11-pro-ac85152",
-   "price": 4780.95,
+   "price": 4384,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hp_elitebook_8_g1i_13_wuxga_ai_laptop_core_ultra_5225u_16gb_512gb_touch_lte_5g_w11_pro_ac85152_31437.jpg?v=1787796866",
    "inStock": true,
    "brand": "Hp"
@@ -2910,7 +2911,7 @@
    "url": "https://www.mwave.com.au/products/hp-elitebook-8-g1i-13-wuxga-ai-laptop-core-ultra-7255u-16gb-512gb-w11-pro-ac85157",
    "price": 2690.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hp_elitebook_8_g1i_13_wuxga_ai_laptop_core_ultra_7255u_16gb_512gb_w11_pro_ac85157_9293.jpg?v=1787796868",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hp"
   },
   {
@@ -6264,22 +6265,22 @@
   },
   {
    "retailer": "mwave",
-   "sku": "169183",
-   "title": "Panasonic Toughbook 55 Mk3 14\" HD Laptop with i5-1345U, 8GB, 512GB SSD",
-   "url": "https://www.mwave.com.au/products/panasonic-toughbook-55-mk3-14-hd-laptop-i51345u-8gb-512gb-w11p-no-webcam-ac80173",
-   "price": 4211.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/panasonic_toughbook_55_mk3_14_hd_laptop_i51345u_8gb_512gb_w11p_no_webcam_ac80173_91282.jpg?v=1787800610",
-   "inStock": true,
-   "brand": "Panasonic"
-  },
-  {
-   "retailer": "mwave",
    "sku": "169179",
    "title": "Panasonic Toughbook 55 Mk3 14\" HD Laptop with i5-1345U, 8GB, 512GB SSD",
    "url": "https://www.mwave.com.au/products/panasonic-toughbook-55-mk3-14-hd-laptop-i51345u-8gb-512gb-w11p-ac80169",
    "price": 4386.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/panasonic_toughbook_55_mk3_14_hd_laptop_i51345u_8gb_512gb_w11p_ac80169_51871.jpg?v=1787789065",
    "inStock": false,
+   "brand": "Panasonic"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "169183",
+   "title": "Panasonic Toughbook 55 Mk3 14\" HD Laptop with i5-1345U, 8GB, 512GB SSD",
+   "url": "https://www.mwave.com.au/products/panasonic-toughbook-55-mk3-14-hd-laptop-i51345u-8gb-512gb-w11p-no-webcam-ac80173",
+   "price": 4211.95,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/panasonic_toughbook_55_mk3_14_hd_laptop_i51345u_8gb_512gb_w11p_no_webcam_ac80173_91282.jpg?v=1787800610",
+   "inStock": true,
    "brand": "Panasonic"
   },
   {

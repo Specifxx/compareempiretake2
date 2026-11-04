@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:20:23.371Z",
+ "scrapedAt": "2026-11-04T00:45:21.563Z",
  "offers": [
   {
    "retailer": "us-espressoparts",
@@ -963,7 +963,7 @@
    "url": "https://www.espressoparts.com/products/fiorenzato-f83-e-pro-sense-on-demand-gbw-espresso-grinder-matte-black",
    "price": 3095,
    "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/files/f83-e-pro-sense-blk-1.jpg?v=1793300052",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fiorenzato",
    "mpn": "FZTF83EPROSENMBL"
   },
@@ -1500,26 +1500,6 @@
   },
   {
    "retailer": "us-espressoparts",
-   "sku": "LM_LUXDB",
-   "title": "La Marzocco Lux D Espresso Grinder - Black",
-   "url": "https://www.espressoparts.com/products/la-marzocco-lux-d-black",
-   "price": 1145,
-   "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/products/lux-d-black_front.jpg?v=1793289982",
-   "inStock": true,
-   "brand": "La Marzocco"
-  },
-  {
-   "retailer": "us-espressoparts",
-   "sku": "LM_LUXDP",
-   "title": "La Marzocco Lux D Espresso Grinder - Polished Aluminum",
-   "url": "https://www.espressoparts.com/products/la-marzocco-lux-d-polished-metallic-silver",
-   "price": 1145,
-   "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/products/lux-d-aluminum_front.jpg?v=1793289994",
-   "inStock": true,
-   "brand": "La Marzocco"
-  },
-  {
-   "retailer": "us-espressoparts",
    "sku": "LM_LUXDW",
    "title": "La Marzocco Lux D Espresso Grinder - White",
    "url": "https://www.espressoparts.com/products/la-marzocco-lux-d-white",
@@ -1953,17 +1933,6 @@
    "inStock": true,
    "brand": "Mahlkönig",
    "mpn": "MAH308181"
-  },
-  {
-   "retailer": "us-espressoparts",
-   "sku": "MAH103631",
-   "title": "Mahlkönig Pro-M 65mm Steel Burr Set",
-   "url": "https://www.espressoparts.com/products/mahlkonig-prom-burr-set",
-   "price": 254.98,
-   "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/products/MAH103631.png?v=1785181229",
-   "inStock": true,
-   "brand": "Mahlkönig",
-   "mpn": "MAH103631"
   },
   {
    "retailer": "us-espressoparts",
@@ -3093,7 +3062,7 @@
    "url": "https://www.espressoparts.com/products/v60-ceramic-coffee-dripper-02-oil-green",
    "price": 33.25,
    "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/products/v60-oil-green_1.jpg?v=1667236128",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hario",
    "mpn": "HARIO_V60_02CRGRN"
   },

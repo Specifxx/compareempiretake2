@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:29:55.773Z",
+ "scrapedAt": "2026-11-04T00:54:56.117Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -556,7 +556,7 @@
    "sku": "98951018",
    "title": "Doro Aurora A10 - 64GB + 4GB - Black / White",
    "url": "https://www.clove.co.uk/products/doro-aurora-a10-64gb-4gb-black-white",
-   "price": 118,
+   "price": 119,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f4ec519d-8a17-4b77-90d7-6ba6f699e94e.jpg?v=1760000091",
    "inStock": true,
    "brand": "Doro"
@@ -598,7 +598,7 @@
    "url": "https://www.clove.co.uk/products/doro-aurora-a30-128gb-6gb-black-white",
    "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3c3866e8-bc28-4af6-94f4-548b1a97210c.jpg?v=1760000092",
-   "inStock": true,
+   "inStock": false,
    "brand": "Doro"
   },
   {
@@ -606,7 +606,7 @@
    "sku": "98978858",
    "title": "Doro Aurora A30 - 128GB + 6GB - Graphite",
    "url": "https://www.clove.co.uk/products/doro-aurora-a30-128gb-6gb-graphite",
-   "price": 249,
+   "price": 248,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4b7269f8-6b34-48fa-b37a-f6d5e04a0672.jpg?v=1760000117",
    "inStock": true,
    "brand": "Doro"
@@ -1475,6 +1475,66 @@
    "price": 89.99,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/MOTP-G05BLU_1.png?v=1741189177",
    "inStock": false,
+   "brand": "Motorola"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "MOTP-G75128BLU",
+   "title": "Motorola Moto G75 (5G) Dual SIM Aqua Blue 128GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/motorola-moto-g75-5g?variant=68052053590059",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/combined_1100_15.png?v=1793180199",
+   "inStock": true,
+   "brand": "Motorola"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "MOTP-G75256BLU",
+   "title": "Motorola Moto G75 (5G) Dual SIM Aqua Blue 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/motorola-moto-g75-5g?variant=41217986592811",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/combined_1100_15.png?v=1793180199",
+   "inStock": true,
+   "brand": "Motorola"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "MOTP-G75128GRY",
+   "title": "Motorola Moto G75 (5G) Dual SIM Charcoal Grey 128GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/motorola-moto-g75-5g?variant=68052053655595",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/combined_1100_15.png?v=1793180199",
+   "inStock": true,
+   "brand": "Motorola"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "MOTP-G75256GRY",
+   "title": "Motorola Moto G75 (5G) Dual SIM Charcoal Grey 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/motorola-moto-g75-5g?variant=41217986625579",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/combined_1100_15.png?v=1793180199",
+   "inStock": true,
+   "brand": "Motorola"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "MOTP-G75128GRN",
+   "title": "Motorola Moto G75 (5G) Dual SIM Succulent Green 128GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/motorola-moto-g75-5g?variant=68052053622827",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/combined_1100_15.png?v=1793180199",
+   "inStock": true,
+   "brand": "Motorola"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "MOTP-G75256GRN",
+   "title": "Motorola Moto G75 (5G) Dual SIM Succulent Green 256GB + 8GB RAM",
+   "url": "https://www.clove.co.uk/products/motorola-moto-g75-5g?variant=41217986560043",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/combined_1100_15.png?v=1793180199",
+   "inStock": true,
    "brand": "Motorola"
   },
   {
@@ -2968,7 +3028,7 @@
    "sku": "105347388",
    "title": "TCL K70 Power 4G 17.3 cm (6.8\") Hybrid Dual SIM Android 16.0 USB Type-C 8 GB 256 GB 6500 mAh Grey",
    "url": "https://www.clove.co.uk/products/tcl-k70-power-4g-17-3-cm-6-8-hybrid-dual-sim-android-16-0-usb-type-c-8-gb-256-gb-6500-mah-grey",
-   "price": 162,
+   "price": 169,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/844de362-3017-4e5b-95f2-19535752e588.jpg?v=1793287478",
    "inStock": true
   },

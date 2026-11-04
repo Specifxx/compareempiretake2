@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:56:22.152Z",
+ "scrapedAt": "2026-11-04T00:19:49.227Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -1522,7 +1522,7 @@
    "price": 1280,
    "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811737-Product-0-I-638820897011899589.jpg?v=1746492976",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hisense"
   },
   {
@@ -2530,26 +2530,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "586186",
-   "title": "Westinghouse WCM5000WE 504L Chest Freezer",
-   "url": "https://www.jbhifi.com.au/products/westinghouse-wcm5000we-504l-chest-freezer",
-   "price": 1149,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/586186-Product-0-I-637908874377209556.jpg?v=1792373292",
-   "inStock": true,
-   "brand": "Westinghouse"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "586190",
-   "title": "Westinghouse WCM7000WE 702L Chest Freezer",
-   "url": "https://www.jbhifi.com.au/products/westinghouse-wcm7000we-702l-chest-freezer",
-   "price": 1899,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/586190-Product-0-I-637908874982172607.jpg?v=1792373289",
-   "inStock": true,
-   "brand": "Westinghouse"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "817106",
    "title": "Westinghouse WHE5600SD 565L French Door Fridge",
    "url": "https://www.jbhifi.com.au/products/westinghouse-whe5600sd-565l-french-door-fridge",
@@ -2646,7 +2626,7 @@
    "sku": "817108",
    "title": "Westinghouse WQE5400SD 547L French Door Fridge",
    "url": "https://www.jbhifi.com.au/products/westinghouse-wqe5400sd-547l-french-door-fridge",
-   "price": 1849,
+   "price": 1798,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817108-Product-0-I-639118074003570944.jpg?v=1776210666",
    "inStock": true,
    "brand": "Westinghouse"
@@ -2656,7 +2636,7 @@
    "sku": "817235",
    "title": "Westinghouse WQE5700BD 564L French Door Fridge (Matte Black)",
    "url": "https://www.jbhifi.com.au/products/westinghouse-wqe5700bd-564l-french-door-fridge-matte-black",
-   "price": 1799,
+   "price": 1645,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817235-Product-0-I-639117252602633809.jpg?v=1776128536",
    "inStock": true,
    "brand": "Westinghouse"
@@ -2749,7 +2729,8 @@
    "sku": "843124",
    "title": "Westinghouse WTM2500BA-X 247L Top Mount Fridge (Black)",
    "url": "https://www.jbhifi.com.au/products/westinghouse-wtm2500ba-x-247l-top-mount-fridge-black",
-   "price": 599,
+   "price": 498,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/843124-Product-0-I-638948061604090622.jpg?v=1759209430",
    "inStock": true,
    "mpn": "WTM2500BA-X",

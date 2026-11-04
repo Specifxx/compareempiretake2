@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:38:29.321Z",
+ "scrapedAt": "2026-11-04T01:03:18.919Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -109,7 +109,7 @@
    "url": "https://www.overclockers.co.uk/asus-rog-strix-g16-nvidia-rtx-5080-32gb-16.0-wqxga-300hz-intel-ultra-core-9-290hx-plus-gaming-laptop/LAP-ASU-08815.html",
    "price": 3299.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc5acd686/images/data/product/6f/5d0d17/911484e74434df6a922aeccc5d58db8334f22214.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -389,7 +389,7 @@
    "url": "https://www.overclockers.co.uk/asus-vivobook-s16-32gb-16-wuxga-oled-1tb-amd-ryzen-ai-7-445-laptop/LAP-ASU-09480.html",
    "price": 1399.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw08010e40/images/data/product/30/c363fd/1b55e776d00e93ab2b9dd4537c007e6e842747e3.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -580,16 +580,6 @@
    "price": 1549.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwabe3b347/images/data/product/f4/945d4c/5b358a941835d93e20b864436ac030f838e5d3a5.jpg?sw=500",
    "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
-   "sku": "LAP-MDN-08812",
-   "brand": "Medion",
-   "title": "Medion Erazer Defender 17 P10 NVIDIA RTX 5070 32GB 17.3 FHD 144Hz Intel Core i9-14900HX Gaming Laptop",
-   "url": "https://www.overclockers.co.uk/medion-erazer-defender-17-p10-nvidia-rtx-5070-32gb-17.3-fhd-144hz-intel-core-i9-14900hx-gaming-laptop/LAP-MDN-08812.html",
-   "price": 1999.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3ee31660/images/data/product/1e/3cef5d/45c95c790922b08e7b0684558035ca08ceb8558d.jpg?sw=500",
-   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -979,7 +969,7 @@
    "url": "https://www.overclockers.co.uk/msi-raider-16-hx-nvidia-rtx-5070-ti-16gb-16-qhd-240hz-intel-core-ultra-7-251hx-gaming-laptop/LAP-MSI-08494.html",
    "price": 2299.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8e334e7b/images/data/product/ae/162a9c/afbb765e442e80ee76b368b6bd6307ff6e1f233d.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -1119,7 +1109,7 @@
    "url": "https://www.overclockers.co.uk/msi-titan-18-hx-nvidia-rtx-5090-64gb-18-uhd-miniled-120hz-intel-core-ultra-9-290hx-plus-gaming-laptop/LAP-MSI-08087.html",
    "price": 5499.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwabf2207a/images/data/product/ce/eb4ede/237d8de9fe4ecf738707f864dcea072a3eb44bae.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",

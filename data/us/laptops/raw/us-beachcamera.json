@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:19:36.735Z",
+ "scrapedAt": "2026-11-04T00:44:27.800Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -481,7 +481,7 @@
    "price": 3646,
    "wasPrice": 3666.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1161472_1.jpg?v=1793613696",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dell",
    "mpn": "DEL8V43M"
   },
@@ -871,6 +871,40 @@
   },
   {
    "retailer": "us-beachcamera",
+   "sku": "HP14HZ0688NR",
+   "title": "Hewlett Packard OmniBook 3 14\" 2K OLED Snapdragon X 16GB/512GB Next Gen AI PC Laptop",
+   "url": "https://www.beachcamera.com/products/hewlett-packard-14-qc-sd-x-16g-512gb-touch",
+   "price": 892.34,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1225854_1.jpg?v=1793690163",
+   "inStock": true,
+   "brand": "Hewlett Packard",
+   "mpn": "HP14HZ0688NR"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "HP14HZ0188NR",
+   "title": "Hewlett Packard OmniBook 3 14” 2K OLED Snapdragon X 8GB/256GB Next Gen AI PC Laptop",
+   "url": "https://www.beachcamera.com/products/hewlett-packard-14-qc-sd-x-8g-256gb-nt",
+   "price": 499.99,
+   "wasPrice": 599.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1225868_1.jpg?v=1793690124",
+   "inStock": true,
+   "brand": "Hewlett Packard",
+   "mpn": "HP14HZ0188NR"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "HP14HZ0288NR",
+   "title": "Hewlett Packard OmniBook 3 14\" Snapdragon X X1-26-100 16GB/256GB SSD Next Gen AI PC Laptop",
+   "url": "https://www.beachcamera.com/products/hewlett-packard-14-qc-sd-x-16g-256gb-nt",
+   "price": 680.67,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1225834_1.jpg?v=1793690124",
+   "inStock": true,
+   "brand": "Hewlett Packard",
+   "mpn": "HP14HZ0288NR"
+  },
+  {
+   "retailer": "us-beachcamera",
    "sku": "HP16BY0549NR",
    "title": "Hewlett Packard OmniBook 3 16-by0549nr 16\" WUXGA AMD Ryzen 3 30 Touch Laptop, Silver/Gray",
    "url": "https://www.beachcamera.com/products/hewlett-packard-omnibook-3-16-by0549nr-16-wuxga-amd-ryzen-3-30-touch-laptop-silver-gray",
@@ -879,6 +913,17 @@
    "inStock": true,
    "brand": "Hewlett Packard",
    "mpn": "HP16BY0549NR"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "HP17DP0419NR",
+   "title": "Hewlett Packard OmniBook 3 17-dp0419nr 17.3\" Full HD AMD Ryzen 3 8GB/512GB Touch AI Laptop",
+   "url": "https://www.beachcamera.com/products/hewlett-packard-17-ryzen-3-30-8gb-512gb-touc",
+   "price": 969,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1225842_1.jpg?v=1793690165",
+   "inStock": true,
+   "brand": "Hewlett Packard",
+   "mpn": "HP17DP0419NR"
   },
   {
    "retailer": "us-beachcamera",
@@ -1435,7 +1480,7 @@
    "price": 1699,
    "wasPrice": 2158.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1165651_1.jpg?v=1793620821",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lenovo",
    "mpn": "LN21TF0027US"
   },
@@ -1894,7 +1939,7 @@
    "price": 1999,
    "wasPrice": 2158.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1139568_1.jpg?v=1793627316",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung Mobile",
    "mpn": "SAMNP964QHAKG1US"
   },

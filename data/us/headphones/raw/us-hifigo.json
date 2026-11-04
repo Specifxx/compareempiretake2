@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:20:59.567Z",
+ "scrapedAt": "2026-11-04T00:46:00.528Z",
  "offers": [
   {
    "retailer": "us-hifigo",
@@ -750,7 +750,8 @@
    "sku": "HG00224921CNSBS1",
    "title": "DUNU SUBSURGE 2DD Bass-Focused Gaming IEMs SUBSURGE 3.5mm",
    "url": "https://hifigo.com/products/dunu-subsurge",
-   "price": 59.99,
+   "price": 53.99,
+   "wasPrice": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/dunu-subsurge-2dd-bass-focused-gaming-iems-dunu-162972.jpg?v=1793189459",
    "inStock": true,
    "brand": "DUNU",
@@ -1032,7 +1033,7 @@
    "price": 299.99,
    "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/elysian-acoustic-labs-pilgrim-1-lsr-dd3-sonion-ba-hybrid-in-ear-monitors-hifigo-pilgrim-44mm-272341.jpg?v=1761621018",
-   "inStock": true,
+   "inStock": false,
    "brand": "Elysian",
    "mpn": "HG00224226CNPilgrim1"
   },
@@ -1043,7 +1044,7 @@
    "url": "https://hifigo.com/products/elysian-acoustic-labs-pilgrim-26?variant=51391358894319",
    "price": 269.99,
    "wasPrice": 299.99,
-   "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/4223894d620449df81106c0230b4d99d.jpg?v=1793670280",
+   "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/elysian-acoustic-labs-pilgrim-26-1dd-3ba-hybrid-in-ear-monitors-hifigo-pilgrim-26-35mm-flat-2pin-949985.jpg?v=1793679249",
    "inStock": true,
    "mpn": "HG00224897CNPG261"
   },
@@ -1054,7 +1055,7 @@
    "url": "https://hifigo.com/products/elysian-acoustic-labs-pilgrim-26?variant=51391358927087",
    "price": 269.99,
    "wasPrice": 299.99,
-   "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/4223894d620449df81106c0230b4d99d.jpg?v=1793670280",
+   "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/elysian-acoustic-labs-pilgrim-26-1dd-3ba-hybrid-in-ear-monitors-hifigo-pilgrim-26-35mm-flat-2pin-949985.jpg?v=1793679249",
    "inStock": true,
    "mpn": "HG00224897CNPG262"
   },
@@ -3028,6 +3029,46 @@
   },
   {
    "retailer": "us-hifigo",
+   "sku": "HG00224941CNEGBG",
+   "title": "Pre Sale Moondrop EDGE2 / EDGE 2 Wood Dome Composite Diaphragm Headphones EDGE2 Black and Gray",
+   "url": "https://hifigo.com/products/moondrop-edge2?variant=51397268963567",
+   "price": 109.99,
+   "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/pre-sale-moondrop-edge2-edge-2-wood-dome-composite-diaphragm-headphones-hifigo-edge2-black-and-gray-943851.jpg?v=1793710809",
+   "inStock": true,
+   "mpn": "HG00224941CNEGBG"
+  },
+  {
+   "retailer": "us-hifigo",
+   "sku": "HG00224941CNEGBW",
+   "title": "Pre Sale Moondrop EDGE2 / EDGE 2 Wood Dome Composite Diaphragm Headphones EDGE2 Black and White",
+   "url": "https://hifigo.com/products/moondrop-edge2?variant=51397268930799",
+   "price": 109.99,
+   "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/pre-sale-moondrop-edge2-edge-2-wood-dome-composite-diaphragm-headphones-hifigo-edge2-black-and-white-621043.jpg?v=1793710805",
+   "inStock": true,
+   "mpn": "HG00224941CNEGBW"
+  },
+  {
+   "retailer": "us-hifigo",
+   "sku": "HG00224941CNEGWT",
+   "title": "Pre Sale Moondrop EDGE2 / EDGE 2 Wood Dome Composite Diaphragm Headphones EDGE2 Creamy White",
+   "url": "https://hifigo.com/products/moondrop-edge2?variant=51397269029103",
+   "price": 109.99,
+   "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/pre-sale-moondrop-edge2-edge-2-wood-dome-composite-diaphragm-headphones-hifigo-edge2-creamy-white-861773.jpg?v=1793710820",
+   "inStock": true,
+   "mpn": "HG00224941CNEGWT"
+  },
+  {
+   "retailer": "us-hifigo",
+   "sku": "HG00224941CNEGRD",
+   "title": "Pre Sale Moondrop EDGE2 / EDGE 2 Wood Dome Composite Diaphragm Headphones EDGE2 Red",
+   "url": "https://hifigo.com/products/moondrop-edge2?variant=51397268996335",
+   "price": 109.99,
+   "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/pre-sale-moondrop-edge2-edge-2-wood-dome-composite-diaphragm-headphones-hifigo-edge2-red-340642.jpg?v=1793710807",
+   "inStock": true,
+   "mpn": "HG00224941CNEGRD"
+  },
+  {
+   "retailer": "us-hifigo",
    "sku": "HG00224922CNKS",
    "title": "Pre Sale Tanchjim KASIER 1DD + 4BA Hybrid In-Ear Monitors",
    "url": "https://hifigo.com/products/tanchjim-kasier",
@@ -4064,17 +4105,6 @@
    "inStock": true,
    "brand": "TANCHJIM",
    "mpn": "HG00224871CNOLAIITP"
-  },
-  {
-   "retailer": "us-hifigo",
-   "sku": "HG00224787CNSODA",
-   "title": "TANCHJIM SODA 1DD + 4BA + 2 Passive Hybrid IEMs",
-   "url": "https://hifigo.com/products/tanchjim-soda",
-   "price": 409.2,
-   "image": "https://cdn.shopify.com/s/files/1/0031/0453/8673/files/tanchjim-soda-1dd-4ba-2-passive-hybrid-iems-tanchjim-soda-731384.jpg?v=1767160550",
-   "inStock": true,
-   "brand": "TANCHJIM",
-   "mpn": "HG00224787CNSODA"
   },
   {
    "retailer": "us-hifigo",

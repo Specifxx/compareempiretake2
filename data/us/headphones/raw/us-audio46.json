@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:18:39.630Z",
+ "scrapedAt": "2026-11-04T00:43:34.808Z",
  "offers": [
   {
    "retailer": "us-audio46",
@@ -5155,7 +5155,7 @@
    "url": "https://www.audio46.com/products/beyerdynamic-aventho-y-wireless-over-ear-headphones?variant=51789339394281",
    "price": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/PIC_AVENTHO-Y_26-06_Soft-Jade-Perspective-WHITE_v1.png?v=1788368456",
-   "inStock": true,
+   "inStock": false,
    "brand": "Beyerdynamic"
   },
   {
@@ -5706,7 +5706,7 @@
    "url": "https://www.audio46.com/products/beyerdynamic-t5-high-end-tesla-headphones-3rd-gen",
    "price": 999.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/Shop_Beyerdynamic_T5_3rd_Gen_Over-Ear_Headphones_on_sale_with_premium_sound_and_deep_bass_for_audiophiles.jpg?v=1762457768",
-   "inStock": false,
+   "inStock": true,
    "brand": "Beyerdynamic"
   },
   {
@@ -7011,7 +7011,7 @@
    "price": 899,
    "wasPrice": 1250,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/DALI-IO-8_Iron-Black_01.png?v=1762467799",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dali",
    "mpn": "IO-8 Iron Black 203081"
   },
@@ -8878,7 +8878,7 @@
    "url": "https://www.audio46.com/products/final-audio-dx3000cl-closed-back-headphones",
    "price": 599.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/251121_DX3000CL_SD_01_3000x_b70163d1-0659-4cf4-8587-93923629aa73.png?v=1769455655",
-   "inStock": true,
+   "inStock": false,
    "brand": "Final Audio",
    "mpn": "DX3000CL"
   },
@@ -10568,7 +10568,7 @@
    "url": "https://www.audio46.com/products/grado-signature-hp100-se-special-edition-open-back-headphones",
    "price": 2495,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/hp100-se-angled-left.png?v=1762467804",
-   "inStock": true,
+   "inStock": false,
    "brand": "Grado",
    "mpn": "HP100 SE"
   },
@@ -10590,7 +10590,7 @@
    "url": "https://www.audio46.com/products/grado-signature-s550-headphone",
    "price": 995,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Image12.jpg?v=1772646841",
-   "inStock": true,
+   "inStock": false,
    "brand": "Grado",
    "mpn": "S550"
   },
@@ -10821,7 +10821,7 @@
    "url": "https://www.audio46.com/products/hifiman-ananda-stealth-planar-magnetic-headphones",
    "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/20180605100657_84564_bb14f46d-0937-4928-bbb6-6c336202b4ba.jpg?v=1762462025",
-   "inStock": true,
+   "inStock": false,
    "brand": "HIFIMAN",
    "mpn": "Ananda Stealth"
   },
@@ -14003,6 +14003,28 @@
    "inStock": false,
    "brand": "LETSHUOER",
    "mpn": "Tape Pro Black"
+  },
+  {
+   "retailer": "us-audio46",
+   "sku": "67859754320105",
+   "title": "Loewe Leo Wireless Noise-Canceling Over-Ear Headphones Midnight Blue",
+   "url": "https://www.audio46.com/products/loewe-leo-wireless-noise-canceling-over-ear-headphones?variant=67859754320105",
+   "price": 2000,
+   "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Image_8_955a4b6b-968e-4aa1-b463-ef1912eee2b2.jpg?v=1793737174",
+   "inStock": true,
+   "brand": "LOEWE",
+   "mpn": "MIDNIGHT-BLUE"
+  },
+  {
+   "retailer": "us-audio46",
+   "sku": "67859754352873",
+   "title": "Loewe Leo Wireless Noise-Canceling Over-Ear Headphones Moonlight Beige",
+   "url": "https://www.audio46.com/products/loewe-leo-wireless-noise-canceling-over-ear-headphones?variant=67859754352873",
+   "price": 2000,
+   "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Image_35162141-b937-4c98-a16e-0e02d728c351.jpg?v=1793737193",
+   "inStock": true,
+   "brand": "LOEWE",
+   "mpn": "MOONLIGHT-BEIGE"
   },
   {
    "retailer": "us-audio46",
@@ -17273,6 +17295,17 @@
    "inStock": true,
    "brand": "SIVGA",
    "mpn": "Luan Brown"
+  },
+  {
+   "retailer": "us-audio46",
+   "sku": "51525189468393",
+   "title": "Sivga Lyrebird Quad-Driver Hybrid In-Ear Monitors",
+   "url": "https://www.audio46.com/products/sivga-lyrebird-quad-driver-hybrid-in-ear-monitors",
+   "price": 149,
+   "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Image1_38e72c29-f766-4a13-98d6-20ec52f6a411.jpg?v=1784124879",
+   "inStock": false,
+   "brand": "SIVGA",
+   "mpn": "LYREBIRD"
   },
   {
    "retailer": "us-audio46",

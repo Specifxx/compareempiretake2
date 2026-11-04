@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:52:39.412Z",
+ "scrapedAt": "2026-11-04T00:20:30.557Z",
  "offers": [
   {
    "retailer": "ple",
@@ -1413,7 +1413,7 @@
    "price": 39,
    "wasPrice": 49,
    "image": "https://plecom.imgix.net/iil-473428-685627.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1927,6 +1927,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "689008",
+   "title": "SteelSeries Arctis Nova 3X - Wireless Gaming Headset - White",
+   "brand": "SteelSeries",
+   "mpn": "61690",
+   "url": "https://www.ple.com.au/products/689008/steelseries-arctis-nova-3x-wireless-gaming-headset-white",
+   "price": 229,
+   "image": "https://plecom.imgix.net/iil-488915-689008.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
    "sku": "668054",
    "title": "SteelSeries Arctis Nova 5 Wireless - Gaming Headset",
    "brand": "SteelSeries",
@@ -1946,7 +1957,7 @@
    "url": "https://www.ple.com.au/products/684473/steelseries-arctis-nova-7-gen-2-wireless-gaming-headset-black",
    "price": 429,
    "image": "https://plecom.imgix.net/iil-470912-684473.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",

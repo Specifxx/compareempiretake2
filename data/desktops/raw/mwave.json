@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:51:48.428Z",
+ "scrapedAt": "2026-11-04T00:19:41.130Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -28,7 +28,7 @@
    "url": "https://www.mwave.com.au/products/apple-mac-mini-m6-chip-24gb-256gb-ssd-25-gbps-ad00703",
    "price": 1776.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/MACMINIM6_ce7e22ed-5319-4990-8acc-8421950f34cb.jpg?v=1793224087",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -330,6 +330,15 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_nuc_14_pro_ai_copilot_mini_pc_core_ultra_5_16gb_512gb_w11_pro__ac83000_54085.jpg?v=1787795386",
    "inStock": true,
    "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183309",
+   "title": "ASUS NUC 14 PRO Mini PC - Intel Core Ultra 5 16GB RAM 500GB SSD W11 PRO",
+   "url": "https://www.mwave.com.au/products/asus-nuc-14-pro-mini-pc-intel-core-ultra-5-16gb-ram-500gb-ssd-w11-pro",
+   "price": 1754,
+   "inStock": true,
+   "brand": "ASUS"
   },
   {
    "retailer": "mwave",
@@ -2548,7 +2557,7 @@
    "url": "https://www.mwave.com.au/products/thermaltake-horizon-pro-v2-ti-gaming-pc-intel-i714700f-32gb-2tb-rtx5070ti-w11h-ac85335",
    "price": 4299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/thermaltake_horizon_pro_v2_ti_gaming_pc_intel_i714700f_32gb_2tb_rtx5070ti_w11h_ac85335_68357.jpg?v=1787799176",
-   "inStock": true,
+   "inStock": false,
    "brand": "Thermaltake"
   },
   {

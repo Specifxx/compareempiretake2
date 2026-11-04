@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:56:17.450Z",
+ "scrapedAt": "2026-11-04T00:23:00.125Z",
  "offers": [
   {
    "retailer": "msy",
@@ -8,7 +8,7 @@
    "brand": "Acer",
    "mpn": "Z4724G",
    "url": "https://www.msy.com.au/product/acer-aio-veriton-23-8in-fhd-core-i7-14700-512gb-ssd-16gb-ram-w11p-desktop-pc-z4724g-93666",
-   "price": 1299,
+   "price": 1399,
    "image": "https://assets.msy.com.au/newsite/images/202605/thumb_img/Branded-Desktop-PCs-Acer-AIO-Veriton-23-8in-FHD-Core-i7-14700-512GB-SSD-16GB-RAM-W11P-Desktop-PC-Z4724G-3.jpg",
    "inStock": true
   },
@@ -136,7 +136,7 @@
    "brand": "Dell",
    "mpn": "BTP106_QCM1250_AU3Y",
    "url": "https://www.msy.com.au/product/dell-pro-intel-core-ultra-5-235t-512gb-ssd-16gb-ram-w11p-micro-ai-desktop-pc-btp106-qcm1250-au3y-96283",
-   "price": 1799,
+   "price": 1999,
    "image": "https://assets.msy.com.au/newsite/images/202609/thumb_img/Branded-Desktop-PCs-Dell-Pro-Intel-Core-Ultra-5-235T-512GB-SSD-16GB-RAM-W11P-Micro-AI-Desktop-PC-BTP106-QCM1250-AU3Y-1.jpg",
    "inStock": true
   },
@@ -191,7 +191,7 @@
    "brand": "Dell",
    "mpn": "CTOC715_QCS1250_AU",
    "url": "https://www.msy.com.au/product/dell-pro-slim-i7-14700t-512gb-ssd-16gb-ram-w11p-desktop-pc-ctoc715-qcs1250-au-96285",
-   "price": 1999,
+   "price": 2240,
    "image": "https://assets.msy.com.au/newsite/images/202609/thumb_img/Branded-Gaming-PCs-Dell-Pro-Slim-i7-14700T-512GB-SSD-16GB-RAM-W11P-Desktop-PC-CTOC715-QCS1250-AU-4.jpg",
    "inStock": true
   },
@@ -202,7 +202,7 @@
    "brand": "Dell",
    "mpn": "BTP009_QCS1250_AU",
    "url": "https://www.msy.com.au/product/dell-pro-slim-sff-i5-14500-512gb-ssd-16gb-ram-no-wl-w11p-desktop-pc-btp009-qcs1250-au-91365",
-   "price": 1449,
+   "price": 1499,
    "image": "https://assets.msy.com.au/newsite/images/202511/thumb_img/Branded-Desktop-PCs-Dell-Pro-Slim-SFF-i5-14500-512GB-SSD-16GB-RAM-NO-WL-W11P-Desktop-PC-BTP009-QCS1250-AU-5.png",
    "inStock": true
   },
@@ -384,6 +384,16 @@
    "url": "https://www.msy.com.au/product/g5-ryzen-5-7500f-radeon-rx-9060-xt-8g-gaming-pc-61440-95201",
    "price": 2299,
    "image": "https://assets.msy.com.au/newsite/images/202608/thumb_img/Gaming-PCs-Ready2Go-G5-Ryzen-5-7500F-Radeon-RX-9060-XT-8G-Gaming-PC-61440-11.png",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
+   "sku": "96611",
+   "title": "G5 Ryzen 5 7500F Radeon RX 9070 Gaming PC 62033",
+   "brand": "Umart",
+   "url": "https://www.msy.com.au/product/g5-ryzen-5-7500f-radeon-rx-9070-gaming-pc-62033-96611",
+   "price": 3299,
+   "image": "https://assets.msy.com.au/newsite/images/202610/thumb_img/Gaming-PCs-Ready2Go-G5-Ryzen-5-7500F-Radeon-RX-9070-Gaming-PC-62033-11.png",
    "inStock": true
   },
   {
@@ -892,6 +902,28 @@
    "url": "https://www.msy.com.au/product/l7-nuc-13-pro-intel-i7-13620h-500gb-ssd-16gb-ram-windows-11-pro-mini-pc-for-office-and-home-60660-93709",
    "price": 1299,
    "image": "https://assets.msy.com.au/newsite/images/202604/thumb_img/Office-Home-Mini-PC-L7-NUC-13-Pro-Intel-i7-13620H-500GB-SSD-16GB-RAM-Windows-11-Pro-Mini-PC-for-Office-and-Home-60660-8.png",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
+   "sku": "96923",
+   "title": "L7 NUC 15 Pro Slim U7-255H 1TB SSD 32GB RAM Windows 11 Pro Mini PC for Office and Home 62264",
+   "brand": "Umart",
+   "mpn": "U7-255H",
+   "url": "https://www.msy.com.au/product/l7-nuc-15-pro-slim-u7-255h-1tb-ssd-32gb-ram-windows-11-pro-mini-pc-for-office-and-home-62264-96923",
+   "price": 1699,
+   "image": "https://assets.msy.com.au/newsite/images/202611/thumb_img/Office-Home-Mini-PC-L7-NUC-15-Pro-Slim-U7-255H-1TB-SSD-32GB-RAM-Windows-11-Pro-Mini-PC-for-Office-and-Home-62264-8.png",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
+   "sku": "96922",
+   "title": "L7 NUC 15 Pro Slim U7-255H 500GB SSD 16GB RAM Windows 11 Pro Mini PC for Office and Home 62263",
+   "brand": "Umart",
+   "mpn": "U7-255H",
+   "url": "https://www.msy.com.au/product/l7-nuc-15-pro-slim-u7-255h-500gb-ssd-16gb-ram-windows-11-pro-mini-pc-for-office-and-home-62263-96922",
+   "price": 1499,
+   "image": "https://assets.msy.com.au/newsite/images/202611/thumb_img/Office-Home-Mini-PC-L7-NUC-15-Pro-Slim-U7-255H-500GB-SSD-16GB-RAM-Windows-11-Pro-Mini-PC-for-Office-and-Home-62263-8.png",
    "inStock": true
   },
   {

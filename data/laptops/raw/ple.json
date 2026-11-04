@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T01:52:09.377Z",
+ "scrapedAt": "2026-11-04T00:20:00.157Z",
  "offers": [
   {
    "retailer": "ple",
@@ -58,7 +58,7 @@
    "price": 1799,
    "wasPrice": 2999,
    "image": "https://plecom.imgix.net/iil-453522-680662.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -499,17 +499,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "682898",
-   "title": "ASUS Vivobook 16 - 16\" OLED, Ryzen 7 170, 16GB/512GB - Win 11 Notebook",
-   "brand": "ASUS",
-   "mpn": "M1605NAQ-SH031W",
-   "url": "https://www.ple.com.au/products/682898/asus-vivobook-16-16-oled-ryzen-7-170-16gb512gb-win-11-notebook",
-   "price": 1399,
-   "image": "https://plecom.imgix.net/iil-462370-682898.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "677459",
    "title": "ASUS Vivobook 16 (M1607) - 16\" Ryzen AI 5 330, 16GB/512GB - Win 11 Copilot+ AI Notebook",
    "brand": "ASUS",
@@ -724,10 +713,9 @@
    "brand": "Gigabyte",
    "mpn": "AERO X16 1WH93AUC94DH",
    "url": "https://www.ple.com.au/products/675564/gigabyte-aero-x16-1wh-16-165hz-ryzen-ai-7-350-rtx-5070-16gb1tb-win-11-gaming-notebook-white",
-   "price": 2249,
-   "wasPrice": 3299,
+   "price": 3299,
    "image": "https://plecom.imgix.net/iil-437398-675564.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:19:36.731Z",
+ "scrapedAt": "2026-11-04T00:44:27.795Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -228,7 +228,7 @@
    "price": 1299.99,
    "wasPrice": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1129020_1_3931feb0-d792-43cb-b4c3-574d3e98d804.jpg?v=1790672565",
-   "inStock": false,
+   "inStock": true,
    "mpn": "LGOLED55C5PUA"
   },
   {
@@ -550,7 +550,7 @@
    "price": 289.99,
    "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1189051_1.png?v=1790672338",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LG24LB7000PUA"
   },
   {
@@ -972,7 +972,7 @@
    "sku": "PN75W85C",
    "title": "Panasonic 75\" W85C 4K 3840x2160 60Hz QD-Mini LED Google TV (2026)",
    "url": "https://www.beachcamera.com/products/panasonic-75-w85c-4k-3840x2160-60hz-qd-mini-led-google-tv-2026",
-   "price": 899.99,
+   "price": 799.99,
    "wasPrice": 1499.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1208236_1_6c16d6d8-fe23-4da5-b70a-3b135df6fb80.jpg?v=1790630385",
    "inStock": true,
@@ -1038,47 +1038,14 @@
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "PNTV43W70BP",
-   "title": "Panasonic W70 Series 55 inch LED 4K Ultra HD Smart Fire TV 43 inches",
-   "url": "https://www.beachcamera.com/products/panasonic-w70-series-55-inch-led-4k-ultra-hd-smart-fire-tv?variant=62807207444851",
-   "price": 247.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/p43.jpg?v=1779386053",
-   "inStock": false,
-   "brand": "Panasonic",
-   "mpn": "PNTV43W70BP"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "PNTV50W70BP",
-   "title": "Panasonic W70 Series 55 inch LED 4K Ultra HD Smart Fire TV 50 inches",
-   "url": "https://www.beachcamera.com/products/panasonic-w70-series-55-inch-led-4k-ultra-hd-smart-fire-tv?variant=62807207477619",
-   "price": 277.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/p43.jpg?v=1779386053",
-   "inStock": false,
-   "brand": "Panasonic",
-   "mpn": "PNTV50W70BP"
-  },
-  {
-   "retailer": "us-beachcamera",
    "sku": "PNTV55W70BP",
    "title": "Panasonic W70 Series 55 inch LED 4K Ultra HD Smart Fire TV 55 inches",
-   "url": "https://www.beachcamera.com/products/panasonic-w70-series-55-inch-led-4k-ultra-hd-smart-fire-tv?variant=62807207510387",
+   "url": "https://www.beachcamera.com/products/panasonic-w70-series-55-inch-led-4k-ultra-hd-smart-fire-tv",
    "price": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/p43.jpg?v=1779386053",
    "inStock": false,
    "brand": "Panasonic",
    "mpn": "PNTV55W70BP"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "PNTV65W70BP",
-   "title": "Panasonic W70 Series 55 inch LED 4K Ultra HD Smart Fire TV 65 inches",
-   "url": "https://www.beachcamera.com/products/panasonic-w70-series-55-inch-led-4k-ultra-hd-smart-fire-tv?variant=62807207543155",
-   "price": 427.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/p43.jpg?v=1779386053",
-   "inStock": true,
-   "brand": "Panasonic",
-   "mpn": "PNTV65W70BP"
   },
   {
    "retailer": "us-beachcamera",
@@ -1387,7 +1354,7 @@
    "price": 1297.99,
    "wasPrice": 1399.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1186706_1.jpg?v=1779489947",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung",
    "mpn": "E5SAMQN55LS03H"
   },
@@ -1398,7 +1365,7 @@
    "url": "https://www.beachcamera.com/products/samsung-55-class-the-frame-pro-neo-qled-4k-tv-2026-the-frame-customizable-bezel-pack-5",
    "price": 1117.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1187519_1.jpg?v=1780016497",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung",
    "mpn": "E5SAMQN55LS03HE"
   },
@@ -3065,7 +3032,7 @@
    "price": 897.99,
    "wasPrice": 999.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1152919_1.jpg?v=1793627686",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung",
    "mpn": "SAMUN55NU7200F"
   },
@@ -3452,7 +3419,7 @@
    "price": 1598,
    "wasPrice": 1999.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/994055_1.jpg?v=1753067896",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony",
    "mpn": "SNK65XR70"
   },

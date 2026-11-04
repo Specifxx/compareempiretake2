@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:17:47.677Z",
+ "scrapedAt": "2026-11-04T00:42:46.629Z",
  "offers": [
   {
    "retailer": "us-acemagic",
@@ -243,13 +243,15 @@
   },
   {
    "retailer": "us-acemagic",
-   "sku": "51514538393906",
+   "sku": "CMNF9A00SUS2870",
    "title": "ACEMAGIC F9A AMD Ryzen AI MAX + 395 AI Mini Workstation",
-   "url": "https://acemagic.com/products/acemagic-minipc-f9a",
-   "price": 4999,
+   "url": "https://acemagic.com/products/acemagic-f9a-395-minipc",
+   "price": 3299,
+   "wasPrice": 3899,
    "image": "https://cdn.shopify.com/s/files/1/0738/1499/9346/files/F9A-MINIPC-AI395-Main-Image-1.jpg?v=1787994038",
-   "inStock": false,
-   "brand": "ACEMAGIC"
+   "inStock": true,
+   "brand": "ACEMAGIC",
+   "mpn": "CMNF9A00SUS2870"
   },
   {
    "retailer": "us-acemagic",
@@ -507,7 +509,7 @@
    "sku": "CMNM1APRBUS2870",
    "title": "ACEMAGIC M1A PRO + AMD Ryzen AI MAX + 395/Intel Core i9-13900HK Mini PC US 128GB RAM +2TB SSD",
    "url": "https://acemagic.com/products/m1a-395?variant=50752660177202",
-   "price": 3399,
+   "price": 3299,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/0738/1499/9346/files/ACEMAGIC-MINIPC-M1A-PRO-MIAN-IMAGE-1.png?v=1768641963",
    "inStock": true,

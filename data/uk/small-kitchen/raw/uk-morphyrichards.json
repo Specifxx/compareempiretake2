@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:36:22.473Z",
+ "scrapedAt": "2026-11-04T01:01:17.753Z",
  "offers": [
   {
    "retailer": "uk-morphyrichards",
@@ -518,7 +518,7 @@
    "url": "https://www.morphyrichards.co.uk/products/clay-4-slice-grey-toaster-flint",
    "price": 79.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Clay_Flint_4SliceToaster_243101_Front.png?v=1769774214",
-   "inStock": true,
+   "inStock": false,
    "brand": "Morphy Richards"
   },
   {
@@ -769,7 +769,7 @@
    "url": "https://www.morphyrichards.co.uk/products/clay-grey-kettle-and-toaster-set-flint",
    "price": 134.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/Clay_Kettle_and_Toaster__Set_Flint_Hero.png?v=1770202030",
-   "inStock": true,
+   "inStock": false,
    "brand": "Morphy Richards"
   },
   {
@@ -779,7 +779,7 @@
    "url": "https://www.morphyrichards.co.uk/products/clay-grey-kettle-toaster-and-microwave-set-flint",
    "price": 249.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/Clay_Kettle_Toaster_Microwave_Set_Flint_Hero.png?v=1770203367",
-   "inStock": true,
+   "inStock": false,
    "brand": "Morphy Richards"
   },
   {
@@ -1314,6 +1314,16 @@
   },
   {
    "retailer": "uk-morphyrichards",
+   "sku": "60307380011392",
+   "title": "Saute Soup 1.6L Soup Maker & FREE Mico Toastie Maker",
+   "url": "https://www.morphyrichards.co.uk/products/saute-soup-1-6l-soup-maker-free-mico-toastie-maker",
+   "price": 129.98,
+   "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/Saute_Soup_Maker_with_Toastie_Maker.png?v=1793710979",
+   "inStock": true,
+   "brand": "Morphy Richards"
+  },
+  {
+   "retailer": "uk-morphyrichards",
    "sku": "460012",
    "title": "Sear & Stew 3.5L Slow Cooker",
    "url": "https://www.morphyrichards.co.uk/products/sear-stew-3-5l-slow-cooker",
@@ -1730,7 +1740,7 @@
    "price": 44.99,
    "wasPrice": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/venturesilver_7d8eff3f-c4ae-4e27-8c6c-dd13ee124fbd.png?v=1695714115",
-   "inStock": false,
+   "inStock": true,
    "brand": "Morphy Richards"
   },
   {
@@ -1923,7 +1933,7 @@
    "url": "https://www.morphyrichards.co.uk/products/venture-silver-bundle",
    "price": 124.98,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/VentureSilverKettleandToasterSet.png?v=1723210889",
-   "inStock": false,
+   "inStock": true,
    "brand": "Morphy Richards"
   },
   {

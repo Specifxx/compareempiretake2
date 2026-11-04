@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-03T02:29:55.977Z",
+ "scrapedAt": "2026-11-04T00:54:56.285Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -1859,7 +1859,7 @@
    "url": "https://www.clove.co.uk/products/asus-prime-b760m-k-intel-b760-lga-1700-micro-atx",
    "price": 96,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2f36a68df2eb22a80bd7a7199f29c87c_bd191e70-f49c-49c8-9eca-0e5ea5c9eb27.jpg?v=1715613780",
-   "inStock": false,
+   "inStock": true,
    "mpn": "B760M-K",
    "brand": "ASUS"
   },
@@ -1901,7 +1901,7 @@
    "sku": "96786506",
    "title": "ASUS PRIME B840M-A WIFI micro ATX motherboard - AMD B840 Socket AM5",
    "url": "https://www.clove.co.uk/products/asus-prime-b840m-a-wifi-amd-b840-socket-am5-micro-atx",
-   "price": 113,
+   "price": 112,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dd356384-6994-4ebc-8235-fd9fb09f658e.jpg?v=1741784139",
    "inStock": true,
    "mpn": "B840M-A",
@@ -1934,9 +1934,9 @@
    "sku": "98974526",
    "title": "ASUS PRIME B850M-K micro ATX motherboard - AMD B850 Socket AM5",
    "url": "https://www.clove.co.uk/products/asus-prime-b850m-k-amd-b850-socket-am5-micro-atx",
-   "price": 116.69,
+   "price": 103,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/download_33cb882c-9bc2-444d-b148-877525355710.jpg?v=1748954904",
-   "inStock": false,
+   "inStock": true,
    "mpn": "B850M-K",
    "brand": "ASUS"
   },
@@ -1947,7 +1947,7 @@
    "url": "https://www.clove.co.uk/products/asus-prime-b860-plus-wifi-intel-b860-lga-1851-socket-v1-atx",
    "price": 158,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5644f2e4-7294-4669-ae42-4045f0165a71.jpg?v=1741784167",
-   "inStock": false,
+   "inStock": true,
    "mpn": "B860-PLUS",
    "brand": "ASUS"
   },
@@ -2077,9 +2077,9 @@
    "sku": "87340866",
    "title": "ASUS PRIME H610M-A WIFI micro ATX motherboard - Intel H610 LGA 1700",
    "url": "https://www.clove.co.uk/products/asus-prime-h610m-a-wifi-intel-h610-lga-1700-micro-atx",
-   "price": 89.58,
+   "price": 93,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/32ff305734dea62ef60e73cac81c960c.jpg?v=1714406160",
-   "inStock": false,
+   "inStock": true,
    "mpn": "H610M-A",
    "brand": "ASUS"
   },
@@ -2374,9 +2374,9 @@
    "sku": "88930415",
    "title": "ASUS PRIME Z790M PLUS micro ATX motherboard - Intel Z790 LGA 1700",
    "url": "https://www.clove.co.uk/products/asus-prime-z790m-plus-intel-z790-lga-1700-micro-atx-1",
-   "price": 194.95,
+   "price": 194,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f050357056aba5e878b575fcb14a62e9.jpg?v=1713189826",
-   "inStock": false,
+   "inStock": true,
    "mpn": "Z790M",
    "brand": "ASUS"
   },
@@ -2800,7 +2800,7 @@
    "url": "https://www.clove.co.uk/products/asus-rog-crosshair-x870e-hero-atx-motherboard-amd-x870e-socket-am5",
    "price": 584,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f1b8700f-4332-4870-ba48-8446de0a3b03.jpg?v=1736778865",
-   "inStock": false,
+   "inStock": true,
    "mpn": "X870E",
    "brand": "ASUS"
   },
@@ -2863,17 +2863,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dd7910d57371cfca472955f4f1f25ae6.jpg?v=1725450252",
    "inStock": false,
    "mpn": "B550-A",
-   "brand": "ASUS"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "73093591",
-   "title": "ASUS ROG STRIX B550-F GAMING WIFI II ATX motherboard - AMD B550 Socket AM4",
-   "url": "https://www.clove.co.uk/products/asus-rog-strix-b550-f-gaming-wifi-ii-amd-b550-socket-am4-atx",
-   "price": 104,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0811abf12fe24d550f7b0e4b680c7fe8.jpg?v=1726133796",
-   "inStock": true,
-   "mpn": "B550-F",
    "brand": "ASUS"
   },
   {
@@ -2958,7 +2947,7 @@
    "sku": "89045267",
    "title": "ASUS ROG STRIX B760-F GAMING WIFI ATX motherboard - Intel B760 LGA 1700",
    "url": "https://www.clove.co.uk/products/asus-rog-strix-b760-f-gaming-wifi-intel-b760-lga-1700-atx",
-   "price": 90,
+   "price": 206,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/51a8d37035bdf4f7f6061f865a836345.jpg?v=1713189811",
    "inStock": true,
    "mpn": "B760-F",
@@ -3485,7 +3474,7 @@
    "url": "https://www.clove.co.uk/products/asus-tuf-gaming-b760-plus-wifi-intel-b760-lga-1700-atx",
    "price": 163,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/15e658f1edbdea71b3f76f741666a3b7.jpg?v=1719394991",
-   "inStock": false,
+   "inStock": true,
    "brand": "ASUS"
   },
   {
@@ -3603,7 +3592,7 @@
    "sku": "96782622",
    "title": "ASUS TUF GAMING B850-PLUS WIFI ATX motherboard - AMD B850 Socket AM5",
    "url": "https://www.clove.co.uk/products/asus-tuf-gaming-b850-plus-wifi-amd-b850-socket-am5-atx",
-   "price": 211,
+   "price": 210,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dcdbe383-c799-42a7-ac37-02710c633df4.jpg?v=1741784113",
    "inStock": true,
    "mpn": "B850-PLUS",
@@ -3627,7 +3616,7 @@
    "url": "https://www.clove.co.uk/products/asus-tuf-gaming-b860-plus-wifi-intel-b860-lga-1851-socket-v1-atx",
    "price": 188,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c4c63cf4-e824-43be-b955-1148ef926329.jpg?v=1741784170",
-   "inStock": false,
+   "inStock": true,
    "mpn": "B860-PLUS",
    "brand": "ASUS"
   },
@@ -4160,7 +4149,7 @@
    "sku": "90792635",
    "title": "GIGABYTE B650 EAGLE AX ATX motherboard - AMD B650 Socket AM5",
    "url": "https://www.clove.co.uk/products/gigabyte-b650-eagle-ax-motherboard-supports-amd-ryzen-7000-cpus-12-2-2-phases-digital-vrm-up-to-7600mhz-ddr5-oc-1xpcie-5-0-2xpcie-4-0-m-2-wi-fi-6e-802-11ax-gbe-lan-usb-3-2-gen2",
-   "price": 164,
+   "price": 162,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3f6968f45f46a2a4ad6b8198ef3c0601.jpg?v=1721060041",
    "inStock": true,
    "brand": "Gigabyte"
@@ -4170,7 +4159,7 @@
    "sku": "90802827",
    "title": "Gigabyte B650 GAMING X AX V2 ATX motherboard - AMD B650 Socket AM5",
    "url": "https://www.clove.co.uk/products/gigabyte-b650-gaming-x-ax-v2-motherboard-supports-amd-ryzen-8000-cpus-8-2-2-phases-digital-vrm-up-to-8000mhz-ddr5-oc-1xpcie-5-0-2xpcie-4-0-m-2-wi-fi-6e-802-11ax-2-5gbe-lan-usb-3-2-gen-2",
-   "price": 152,
+   "price": 151,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/de8522f03f99fcb4810dcd1e3ee11c08.jpg?v=1716912189",
    "inStock": true,
    "brand": "Gigabyte"
@@ -5686,7 +5675,7 @@
    "sku": "104427613",
    "title": "MSI MAG B850 GAMING PLUS MAX WIFI motherboard AMD B850 Socket AM5 ATX",
    "url": "https://www.clove.co.uk/products/msi-mag-b850-gaming-plus-max-wifi-motherboard-amd-b850-socket-am5-atx",
-   "price": 182,
+   "price": 181.33,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/df91a704-2d87-4652-a162-a6e32592a23b.jpg?v=1791571503",
    "inStock": true
   },
