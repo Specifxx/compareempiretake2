@@ -54,7 +54,7 @@ for (const f of readdirSync(dir).filter((f) => !f.endsWith(".headers")).sort()) 
   const skus = [...body.matchAll(/"(?:sku|productCode|partNumber|product_code|itemCode)"\s*:\s*"[^"]{3,40}"/g)];
   if (skus.length) console.log(`-- sku keys (${skus.length}): ${skus.slice(0, 5).map((m) => body.slice(m.index, m.index + 260).replace(/\s+/g, " ")).join(" ## ")}`);
   const cards = [...body.matchAll(/class="[^"]*(?:product-(?:card|item|tile|grid-item|box)|productCard|ProductCard|product_item)[^"]*"/g)];
-  if (cards.length) console.log(`-- product cards (${cards.length}): ${cards.slice(0, 2).map((m) => body.slice(m.index, m.index + 900).replace(/\s+/g, " ")).join(" ## ")}`);
+  if (cards.length) console.log(`-- product cards (${cards.length}): ${cards.slice(0, 2).map((m) => body.slice(m.index, m.index + 4500).replace(/\s+/g, " ")).join(" ## ")}`);
   for (const key of ["owProductPrice", '"hits":', '"products":[', 'pagination', 'data-page-count', 'page=2', '?p=2']) {
     const i = body.indexOf(key);
     if (i >= 0) console.log(`-- near ${key} @${i}: ${body.slice(Math.max(0, i - 200), i + 500).replace(/\s+/g, " ")}`);
