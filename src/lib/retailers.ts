@@ -148,8 +148,8 @@ const AU_RETAILERS = {
   coffeebeanery: { id: "coffeebeanery", name: "Coffee Beanery", site: "coffeebeanery.com.au", color: "#4E342E", type: "retailer" },
   bbqsandoutdoor: { id: "bbqsandoutdoor", name: "BBQs & Outdoor", site: "bbqsandoutdoor.com.au", color: "#E65100", type: "retailer" },
   petersofkensington: { id: "petersofkensington", name: "Peter's of Kensington", site: "petersofkensington.com.au", color: "#1B365D", type: "retailer" },
-  appliancecentral: { id: "appliancecentral", name: "Appliance Central", site: "appliancecentral.com.au", color: "#C8102E", type: "retailer" },
   everydayhomeliving: { id: "everydayhomeliving", name: "Everyday Home Living", site: "everydayhomeliving.com.au", color: "#2E7D32", type: "retailer" },
+  harrisscarfe: { id: "harrisscarfe", name: "Harris Scarfe", site: "harrisscarfe.com.au", color: "#102B52", type: "retailer" },
   // The big chains, priced from affiliate-network product feeds once their secret exists (docs/stores/big-stores.md, 2026-11-04)
   officeworks: { id: "officeworks", name: "Officeworks", site: "officeworks.com.au", color: "#0033A0", type: "retailer" },
   bigw: { id: "bigw", name: "Big W", site: "bigw.com.au", color: "#0057B8", type: "retailer" },

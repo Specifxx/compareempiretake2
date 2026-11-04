@@ -26,7 +26,7 @@ type Meta = { id?: string; name?: string; brand?: string; url?: string };
 
 function page(html: string): { id: string; url: string; price: number; was?: number; image?: string }[] {
   const out: { id: string; url: string; price: number; was?: number; image?: string }[] = [];
-  const parts = html.split(/<li class="item product product-item/).slice(1);
+  const parts = html.split(/class="item product product-item/).slice(1);
   for (const card of parts) {
     const url = card.match(/href="(https:\/\/www\.reliant\.co\.uk\/[^"]+)"/)?.[1];
     const price = Number(card.match(/data-price-amount="([\d.]+)"\s+data-price-type="finalPrice"/)?.[1]);

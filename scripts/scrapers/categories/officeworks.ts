@@ -45,7 +45,7 @@ const CATS = [
 const SLUG: Record<(typeof CATS)[number], RegExp> = {
   phones: /iphone|galaxy-(s|z|a)\d|pixel-\d|smartphone|-phone-|oppo-|motorola|moto-g|nokia-|xiaomi|redmi/,
   tablets: /ipad|galaxy-tab|tablet|surface-pro|lenovo-tab|matepad|-pad-/,
-  laptops: /laptop|macbook|notebook|chromebook|surface-laptop|zenbook|vivobook|thinkpad|ideapad|yoga-|inspiron|legion|omnibook/,
+  laptops: /laptop|macbook|chromebook|surface-laptop|zenbook|vivobook|thinkpad|ideapad|yoga-|inspiron|legion|omnibook|-notebook-(pc|computer)|gaming-notebook/,
   desktops: /desktop|imac|mac-mini|mac-studio|all-in-one|-tower-|gaming-pc|mini-pc/,
   monitors: /monitor/,
   printers: /printer/,
@@ -53,9 +53,9 @@ const SLUG: Record<(typeof CATS)[number], RegExp> = {
   tvs: /-tv-|television|-tv$|smart-tv|oled|qled/,
   soundbars: /soundbar|sound-bar/,
   headphones: /headphone|earphone|earbud|airpods|headset/,
-  speakers: /speaker|homepod|sonos/,
-  smartwatches: /watch/,
-  cameras: /camera|instax|gopro|insta360|mirrorless|dslr/,
+  speakers: /speaker|homepod|sonos|soundcore|jbl-(flip|charge|go|clip|boombox|xtreme)/,
+  smartwatches: /apple-watch|galaxy-watch|pixel-watch|garmin|fitbit|smart-?watch|amazfit|huawei-watch|xiaomi-watch|redmi-watch/,
+  cameras: /(?<!web|security-|dash-|ip-|action-)camera|instax|gopro|insta360|mirrorless|dslr|powershot|lumix/,
   drones: /drone|dji/,
   consoles: /playstation|ps5|xbox|nintendo|switch-2|console|steam-deck/,
   "graphics-cards": /graphics-card|geforce|radeon|rtx-\d/,
@@ -72,7 +72,20 @@ const SLUG: Record<(typeof CATS)[number], RegExp> = {
   lego: /lego/,
 };
 
-const MAX_SKUS = 4000;
+const MAX_SKUS = 12000;
+
+/** Officeworks sells stationery and accessories with the same words as our categories; refuse those before the shared checks. */
+const REFUSE: Partial<Record<(typeof CATS)[number], RegExp>> = {
+  laptops: /\bnotebook\b(?!.*(\bgb\b|ssd|ryzen|intel|core|snapdragon|windows|chromeos|macos|\d{2}(\.\d)?\s?("|inch)))|\bpad\b|\brefill|\bpaper\b|\bpages?\b|\bruled\b|spiral|\bdiary|planner|\bsleeve|\bbag\b|\bcase\b|\bstand\b|\bbattery\b|\bcharger|adapter|\bskin\b|lock\b|\btoy\b/i,
+  tablets: /\bcase\b|\bcover\b|keyboard|stylus|\bpen\b|screen protector|\bstand\b|\bmount|\bkids?\b|\btoy\b|charger|\bcable\b/i,
+  cameras: /\bmod\b|\bkit\b|\bmount|\bstrap|\bcase\b|\bbattery|charger|\bfilter|\bcap\b|tripod|selfie|\bgrip\b|\bbag\b|\bfilm\b|\bpack\b|lens\b|webcam|dash ?cam|security|doorbell|\bbaby\b|trail cam|\bprinter\b|\bpaper\b|\bsd\b/i,
+  headphones: /\bcase\b|\bcable\b|\btips\b|\bstand\b|\bsplitter|adapter/i,
+  speakers: /\bstand\b|\bmount|\bcable\b|\bcase\b|\bbag\b/i,
+  printers: /\bink\b|toner|cartridge|\bpaper\b|\blabels?\b|\btape\b|\bribbon|drum\b|maintenance|\bstand\b|\btray\b|\bcable\b|\bwarranty/i,
+  routers: /\bcable\b|\bantenna|\bswitch\b|\badapter\b(?!.*router)|powerline|extender/i,
+  ssds: /\benclosure|\bcase\b|\bdock|\bcable\b|adapter|\bhdd\b|hard drive|\busb\b.*flash/i,
+};
+const MIN_PRICE: Partial<Record<(typeof CATS)[number], number>> = { laptops: 250, tablets: 100, monitors: 90, phones: 100, headphones: 15, speakers: 20, tvs: 150, ssds: 25, ram: 25 };
 const BATCH = 12;
 
 type Cat = (typeof CATS)[number];
@@ -128,7 +141,7 @@ async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
       const edlp = Number(attr(p, "edlpPrice"));
       const name = p.name.replace(/\s+/g, " ").trim();
       const cat = classify(CATS, name, edlp > 0 ? edlp : 1, p.brand?.name) as Cat | undefined;
-      if (!cat) continue;
+      if (!cat || REFUSE[cat]?.test(name)) continue;
       kept.push({ p, cat, edlp });
     }
     await sleep(250);
@@ -139,7 +152,7 @@ async function readAll(): Promise<{ cat: Cat; offer: RawOffer }[]> {
     const price = (await livePrice(p.sku!)) ?? (edlp > 0 ? edlp : undefined);
     await sleep(120);
     const title = p.name!.replace(/\s+/g, " ").trim();
-    if (!price || classify([cat], title, price, p.brand?.name) !== cat) return;
+    if (!price || price < (MIN_PRICE[cat] ?? 0) || classify([cat], title, price, p.brand?.name) !== cat) return;
     const image = p.image ? (p.image.startsWith("//") ? `https:${p.image}` : p.image) : undefined;
     offers.push({
       cat,

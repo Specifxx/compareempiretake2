@@ -17,8 +17,8 @@ const PATHS: Partial<Record<CategoryId, string[]>> = {
   speakers: ["/home-cinema-hifi/bluetooth-speakers.html", "/home-cinema-hifi/multi-room-and-smart-speakers.html"],
   headphones: ["/home-cinema-hifi/headphones.html"],
   "washing-machines": ["/laundry/washing-machines.html"],
-  dishwashers: ["/dishwashers.html", "/kitchen-appliances/dishwashers.html"],
-  fridges: ["/refrigeration.html"],
+  dishwashers: ["/dishwashers.html", "/kitchen-appliances/dishwashers.html", "/dishwashers/freestanding-dishwashers.html", "/dishwashers/integrated-dishwashers.html"],
+  fridges: ["/refrigeration.html", "/refrigeration/fridge-freezers.html", "/refrigeration/american-style.html", "/refrigeration/fridges.html"],
 };
 const CATS = Object.keys(PATHS) as CategoryId[];
 
