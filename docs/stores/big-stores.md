@@ -35,9 +35,9 @@ and the chain simply stays off until a correct feed is set.
 | **Officeworks** | **Live** (`categories/officeworks.ts`) | Category pages are Algolia (client-side), but the site's own keyless catalogue API answers `/catalogue-app/api/products?sku=…` and `/prices/<sku>`; the product sitemap lists every SKU | Read directly, every import | — (feed `FEED_URL_OFFICEWORKS` also works, as a fallback) |
 | JB Hi-Fi, Harvey Norman, The Good Guys, Betta, Bing Lee's rivals… | Live already | | | |
 | **Peter's of Kensington** | **Live** | Server-rendered ItemList JSON-LD | direct | — |
-| **Appliance Central** | **Live** | OpenCart category pages | direct | — |
+| Appliance Central | Dropped | category pages answered 200 to the probe but 403 to the import run: a wall, not worked around | feed if it has one | — |
 | **Everyday Home Living** | **Live** | Shopify | direct | — |
-| Harris Scarfe | Probed; cards server-rendered (Hybris), pagination is JavaScript | one more read needed | direct (next round) | — |
+| **Harris Scarfe** | **Live** (`categories/harrisscarfe.ts`) | SAP Commerce cards with the product JSON inline; the public price, never the "Friends" club price | direct | — |
 | Big W | Walled (403 / challenge) | Akamai | Commission Factory feed | `FEED_URL_BIGW` |
 | Kogan | Walled | Cloudflare challenge | Commission Factory feed | `FEED_URL_KOGAN` |
 | Catch | Walled | Akamai | Commission Factory feed | `FEED_URL_CATCH` |
