@@ -32,7 +32,7 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
         <FooterCol title="Categories" links={d.categories} />
         <FooterCol
           title="Compare Empire"
-          links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Community forum (beta)", "/forum"], ["Creators", "/creators"], ["Retailers we check", region === "au" ? "/about#retailers" : `${R.prefix}/stores`], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["Suggest a store", "/contact#suggest"], ["How we pick stores", "/how-we-pick-stores"], ["How we make money", "/disclosure"], ["Affiliate disclosure", "/affiliate-disclosure"], ["Privacy", "/privacy"]]}
+          links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Community forum (beta)", "/forum"], ["Creators", "/creators"], ["Retailers we check", region === "au" ? "/about#retailers" : `${R.prefix}/stores`], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["List your store", "/list-your-store"], ["How we pick stores", "/how-we-pick-stores"], ["How we make money", "/disclosure"], ["Affiliate disclosure", "/affiliate-disclosure"], ["Privacy", "/privacy"]]}
         />
       </div>
       {/* One short line (owner, 2026-11-02: the old list was "convoluted"): our tech sister, then the page that lists every site
