@@ -1239,3 +1239,15 @@ when that store's own account has qualifying sales, about 10 in 30 days), so the
 ever issues a separate one. A store that refuses (403) is skipped and the next region still runs, so each
 marketplace switches itself on the day its account qualifies. Everything else from the 2026-11-03 entry stands:
 prices never committed, shown under 24 hours only, product page row only, never a sort, badge, deal or alert.
+
+## 2026-11-05 — www is a 308 to the apex
+
+The owner asked why compareempire.com gets under 100 impressions a week when it had 50K: "probably the www change".
+Checked live tonight: `www.compareempire.com` resolves again and serves every page with a 200 and a canonical that
+points at the apex, with no redirect. So the sequence was: www lost its DNS on 26 Oct, the site moved its canonical
+host to the apex on the 27th (above), Google's index (mostly www URLs then) could reach nothing for days, impressions
+fell from the 29th, and once www came back it was a second copy of the site rather than a redirect. The canonical tag
+alone consolidates slowly. `next.config.mjs` now answers every www request with a 308 to the same path on the apex,
+except `/api/ebay/account-deletion`, which eBay has registered under the www URL and challenges there
+(`tests/routes.test.ts`). This rides the next release with the thin-pages work above; recovery is measured in weeks,
+so the Search Console recheck stays at ~25 November.
