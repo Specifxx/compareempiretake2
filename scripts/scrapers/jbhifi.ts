@@ -52,6 +52,7 @@ export async function scrapeJbHifi(): Promise<RawOffer[]> {
         wasPrice: was > price ? was : undefined,
         image: p.images[0]?.src,
         inStock: !/AwaitingStock|PreOrder|NotAvailable|SoldOut/i.test(tags),
+        preorder: /PreOrder/i.test(tags) || undefined,
         blurb: blurbFrom(p.body_html),
       });
     } catch (e) {

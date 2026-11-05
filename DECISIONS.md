@@ -1170,3 +1170,19 @@ Two visitor reports (`reports` branch) pointed at two importer faults, not two r
   Harvey Norman and Mobileciti (403 since the same day) are bot walls, so their scrapers are removed rather than
   worked around; their retailer entries stay for history. JB Hi-Fi's product reads get 60 minutes instead of 40
   (half its categories were a week or more old under the 40-minute budget).
+
+## 2026-11-05 — Store pre-orders find themselves
+
+The owner asked for the sites to update themselves for new releases and pre-orders. `content/launches.ts` (2026-11-03)
+is the hand-kept half: the hype launches, each dated from the maker. The automatic half is now the stores' own
+listings: a listing is a pre-order when the store's availability says so (JB Hi-Fi's `PreOrder` tag, a feed's
+availability `preorder`, both carried as `RawOffer.preorder`) or its title does ("(Pre-Order)", "PREORDER
+November", "Coming Soon"; `lib/preorders.ts` `PREORDER_TITLE`, read at catalogue build for every source). `Offer.preorder`
+and `PhoneSummary.preorderStores` carry it to the pages: the product row says "Pre-order" instead of "Out of stock /
+pre-order", `/launches` gets "On pre-order at <region> stores now" (every such product, most stores first, up to 24),
+and the home's "Hot right now" row fills its four cards with store pre-orders after the hand-kept launches
+(`lib/launches.ts` `storePreorders`, which skips a product a hand launch already shows). Nothing is inferred: no ship
+date is parsed from a title, the price is the store's pre-order price, and a product leaves the list the morning every
+store simply has it in stock. The first import after this lands marks today's eleven pre-order titles (coffee gear, a
+B&O headphone) and JB Hi-Fi's tagged pre-orders; a launch no store lists yet still needs its `launches.ts` entry.
+`tests/preorders.test.ts`.

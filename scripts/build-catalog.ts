@@ -7,6 +7,7 @@
  *   npx tsx scripts/build-catalog.ts            # every category with raw data
  *   npx tsx scripts/build-catalog.ts tvs        # one category
  */
+import { offerIsPreorder } from "../src/lib/preorders";
 import { dataPath, REGIONS, type RegionId } from "../src/lib/region";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
@@ -103,6 +104,7 @@ function build(category: CategoryId) {
     wasPrice: o.wasPrice,
     colour,
     inStock: o.inStock,
+    preorder: offerIsPreorder(o) || undefined,
     image: o.image,
     kind: o.kind ?? "outright",
     monthly: o.monthly,

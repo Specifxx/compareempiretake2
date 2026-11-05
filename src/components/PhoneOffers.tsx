@@ -339,8 +339,8 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was 
           {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Cheapest</span>}
         </div>
         <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-mute">
-          <span className={o.inStock ? "inline-flex items-center gap-1 text-save" : "text-hot"}>
-            {o.inStock ? <><CheckIcon className="h-3.5 w-3.5" /> In stock</> : "Out of stock / pre-order"}
+          <span className={o.inStock ? "inline-flex items-center gap-1 text-save" : o.preorder ? "font-semibold text-brand" : "text-hot"}>
+            {o.inStock ? <><CheckIcon className="h-3.5 w-3.5" /> In stock</> : o.preorder ? "Pre-order" : "Out of stock / pre-order"}
           </span>
           <span className="truncate">{[...cs].filter(Boolean).slice(0, 4).join(", ")}{cs.size > 4 ? ` +${cs.size - 4}` : ""}</span>
         </div>

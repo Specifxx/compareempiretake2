@@ -1,5 +1,6 @@
 import "server-only";
 import { existsSync, readFileSync } from "node:fs";
+import { preorderStoreCount } from "./preorders";
 import path from "node:path";
 import { dataVersion } from "./browse";
 import { CATEGORIES } from "./categories";
@@ -130,6 +131,8 @@ export interface PhoneSummary {
   /** Biggest saving on any variant vs the dearest retailer or the RRP. */
   saving: number;
   inStock: boolean;
+  /** Stores selling it on pre-order today (lib/preorders.ts); 0 once it is simply in stock. */
+  preorderStores: number;
   atLowest: boolean;
   region?: RegionId;
   /** Today's cheapest new eBay listing, when the daily eBay job found one. */
@@ -172,6 +175,7 @@ export function summarise(p: Phone): PhoneSummary {
     generation: p.generation,
     saving: Math.max(0, ...deals.map((d) => d.saving)),
     inStock: p.variants.some((v) => v.offers.some((o) => o.inStock)),
+    preorderStores: preorderStoreCount(p),
     region: p.region,
     ebayPrice: p.ebay?.price,
     atLowest: p.variants.some((v) => v.previousBest !== undefined && v.bestPrice <= (v.lowestEver ?? Infinity) && v.bestPrice < v.previousBest),
