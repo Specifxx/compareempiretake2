@@ -11,5 +11,7 @@
  "shown": null,
  "actual": "1199",
  "issue": "wrong-price",
- "note": null
+ "note": null,
+ "resolution": "Confirmed: Harvey Norman charges $1,199; our $697 was a 22 Oct file served for two weeks after the store put up a bot wall. Fixed in compareempiretake2 #73: feeds older than 3 days are left out; Harvey Norman removed.",
+ "closedAt": "2026-11-05"
 }
