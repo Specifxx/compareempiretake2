@@ -156,3 +156,14 @@ test("a product route that cannot read its data fails with a 500, not a cached 4
   const block = s.slice(i, s.indexOf("notFound();", i));
   assert.match(block, /if \(!getProducts\(undefined, region\)\.length\) throw new Error/, "throws before notFound() when the region has no data");
 });
+
+test("www redirects to the apex for every path but eBay's registered account-deletion endpoint", async () => {
+  const config = (await import(pathToFileURL(path.join(ROOT, "next.config.mjs")).href)).default;
+  const www = (await config.redirects()).find((r: { has?: { type: string; value: string }[] }) => r.has?.some((h) => h.type === "host" && h.value === "www.compareempire.com"));
+  assert.ok(www, "a host redirect for www");
+  assert.equal(www.permanent, true);
+  assert.equal(www.destination, "https://compareempire.com/:path");
+  const matches = getPathMatch(www.source);
+  for (const p of ["/", "/us/robot-vacuums", "/tablets/apple-ipad-air-11-m4", "/sitemap.xml", "/api/products"]) assert.notEqual(matches(p), false, p);
+  assert.equal(matches("/api/ebay/account-deletion"), false, "eBay's challenge must reach the www URL it was registered with");
+});

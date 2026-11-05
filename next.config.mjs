@@ -50,7 +50,11 @@ const nextConfig = {
     // Brand slugs minted from an undecoded store title ("Bowers &amp; Wilkins", 2026-11-05); product URLs with the
     // same artefact redirect from the product page itself (lib/indexing.ts cleanedSlug).
     const entity = [["/brands/bowers-amp-wilkins", "/brands/bowers-wilkins"]];
-    return [{ source: "/us", destination: "/", permanent: true }, ...[...merged, ...entity].map(([source, destination]) => ({ source, destination, permanent: true }))];
+    // www is a 308 to the apex (2026-11-05): www had no DNS from 26 Oct, came back serving the whole site as a
+    // duplicate host, and Google still filed most pages under it. Every path moves except eBay's account-deletion
+    // endpoint, registered with eBay under the www URL (its challenge is signed with that URL and is not redirected).
+    const www = { source: "/:path((?!api/ebay/).*)", has: [{ type: "host", value: "www.compareempire.com" }], destination: "https://compareempire.com/:path", permanent: true };
+    return [www, { source: "/us", destination: "/", permanent: true }, ...[...merged, ...entity].map(([source, destination]) => ({ source, destination, permanent: true }))];
   },
   async headers() {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.
