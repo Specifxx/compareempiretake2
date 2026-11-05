@@ -68,7 +68,7 @@ each renders on its first request and Vercel's CDN keeps it for a day, reset by 
   URLs, each a miss after every deploy (~720k invocations a month per crawler and CDN region, ~6 h
   Active CPU, ~17 GB compressed origin transfer), would be near or over Hobby's 1M invocations, 4 h
   Active CPU and 10 GB Fast Origin Transfer. Confirm the plan, and if it's Hobby or the numbers run
-  well above this, shrink the crawl surface (`SITEMAP_TIER`, IndexNow) before anything else.
+  well above this, shrink the crawl surface (`SITEMAP_MIN_STORES`, IndexNow) before anything else.
 - **Each deploy empties the CDN**, and every crawled product then renders once more per CDN region.
   Cheap builds make extra pushes tempting: keep pushes to the production branch batched.
 

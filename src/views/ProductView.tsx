@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { Suspense } from "react";
 import { PhoneCard } from "@/components/PhoneCard";
 import { PhoneOffers } from "@/components/PhoneOffers";
@@ -19,11 +19,19 @@ import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { camCompareFor } from "@/lib/family";
 import { amazonFor } from "@/lib/amazon-live";
+import { cleanedSlug, productIndexable, productTitle } from "@/lib/indexing";
+import { guidesForCategory } from "@/lib/guides";
 
 export type ProductParams = Promise<{ category: string; slug: string }>;
 const load = async (params: ProductParams, region: RegionId) => {
   const { category, slug } = await params;
-  return getProduct(category as CategoryId, slug, region);
+  const p = getProduct(category as CategoryId, slug, region);
+  if (p) return p;
+  // A URL from before the catalogue decoded store titles ("bowers-amp-wilkins-…") moves to the clean slug for good
+  // (lib/indexing.ts); any other unknown slug is a 404 as before.
+  const clean = cleanedSlug(slug);
+  if (clean && getProduct(category as CategoryId, clean, region)) permanentRedirect(withRegion(`/${category}/${clean}`, region));
+  return undefined;
 };
 /** The product page's copy of the product, with its Amazon links and live prices (AU only). */
 const withAmazon = (p: Phone, region: RegionId): Phone => ({ ...p, amazon: amazonFor(p, region) });
@@ -57,12 +65,14 @@ export async function productMetadata(params: ProductParams, region: RegionId): 
   const R = REGIONS[region];
   const $ = (n: number) => money(n, region);
   const cheapest = p.variants.flatMap((v) => v.offers).filter((o) => o.inStock && o.price === p.bestPrice)[0];
-  const store = cheapest ? ` at ${RETAILERS[cheapest.retailer].name}` : "";
-  const title = `${nameFor(p, region)} price in ${region === "au" ? "Australia" : region === "us" ? "the US" : "the UK"} — from ${$(p.bestPrice)}${store}`;
-  const description = `${nameFor(p, region)} from ${$(p.bestPrice)}. Compare ${p.offerCount} live prices across ${p.retailerCount} retailers in ${p.variants.length > 1 ? `${p.variants.map((v) => v.label).join(", ")}, ` : ""}with price history.`;
+  const store = cheapest ? RETAILERS[cheapest.retailer].name : "";
+  const title = productTitle({ name: nameFor(p, region), place: region === "au" ? "Australia" : region === "us" ? "the US" : "the UK", price: $(p.bestPrice), store, stores: p.retailerCount });
+  const description = `${nameFor(p, region)} from ${$(p.bestPrice)}${store ? ` at ${store}` : ""}. Compare ${p.offerCount} live prices across ${p.retailerCount} ${R.adjective} ${p.retailerCount === 1 ? "store" : "stores"}${p.variants.length > 1 ? ` in ${p.variants.map((v) => v.label).join(", ")}` : ""}, with price history and whether today's price is a good one.`;
   return {
     title,
     description,
+    // One-store and sold-out pages stay live and linked but out of the index (lib/indexing.ts).
+    ...(productIndexable(p) ? {} : { robots: { index: false, follow: true } }),
     alternates: alternates(p),
     openGraph: { title, description, url: productHref(p), images: [{ url: shareCard(p), width: 1200, height: 630 }] },
     twitter: { card: "summary_large_image", title, description, images: [shareCard(p)] },
@@ -176,6 +186,16 @@ export async function ProductView({ params, region }: { params: ProductParams; r
         ...(lowestEver < cheapest.price ? ([[`What is the lowest price the ${phone.name} has been?`, `The lowest price we've recorded is ${$(lowestEver)}.`]] as [string, string][]) : []),
       ]
     : [];
+  // Store by store, cheapest first: the one paragraph no two product pages share (Search Console, 2026-11-05).
+  const byStore = [...new Map(inStock.sort((a, b) => a.price - b.price).map((o) => [o.retailer, o])).values()];
+  const storeLine =
+    byStore.length >= 2
+      ? `Cheapest in stock today is ${RETAILERS[byStore[0].retailer].name} at ${$(byStore[0].price)}, then ${byStore
+          .slice(1, 5)
+          .map((o) => `${RETAILERS[o.retailer].name} (${$(o.price)})`)
+          .join(", ")}${byStore.length > 5 ? ` and ${byStore.length - 5} more` : ""}${dearest && dearest.price > byStore[0].price ? `: a ${$(dearest.price - byStore[0].price)} gap between the cheapest and dearest store` : ""}.`
+      : null;
+  const guides = region === "au" ? guidesForCategory(phone.category, 4) : [];
   const crumbs = [
     { name: "Home", url: `${SITE}${HOME_PATH[region] === "/" ? "" : HOME_PATH[region]}` || SITE },
     { name: cat.name, url: `${SITE}${categoryHref(cat.id, region)}` },
@@ -236,6 +256,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
                 Comparing cameras? <a href={cam.url} rel="noopener" className="font-semibold text-ink hover:underline">The {phone.model} on CamCompare</a> has its full specs, used and refurbished prices, and the cameras buyers compare it with.
               </p>
             )}
+            {storeLine && <p>{storeLine}</p>}
             <p>
               We found <b className="text-ink">{phone.offerCount} listings</b> for this phone across{" "}
               <b className="text-ink">{phone.retailerCount} {phone.retailerCount === 1 ? "store" : "stores"}</b>, in {phone.variants.length}{" "}
@@ -287,6 +308,16 @@ export async function ProductView({ params, region }: { params: ProductParams; r
                 <p className="mt-2 text-sm text-ink-soft">{a}</p>
               </details>
             ))}
+          </div>
+        </section>
+      )}
+
+      {guides.length > 0 && (
+        <section className="mt-16">
+          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">{cat.name} guides</h2>
+          <div className="flex flex-wrap gap-2">
+            {guides.map((g) => <Link prefetch={false} key={g.slug} href={`/guides/${g.slug}`} className="chip">{g.title}</Link>)}
+            <Link prefetch={false} href={`/brands/${phone.brand.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} className="chip">All {phone.brand} prices</Link>
           </div>
         </section>
       )}

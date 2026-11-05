@@ -54,3 +54,17 @@ export function decodeEntities(s: string): string {
     .replace(/&nbsp;/g, " ")
     .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)));
 }
+
+/**
+ * A store title as a buyer reads it, whatever the scraper left in: HTML entities ("Bowers &amp; Wilkins" became
+ * the brand "Bowers &Amp; Wilkins" and the slug "bowers-amp-wilkins"; "Weber&#174" with no semicolon), the
+ * ®/™ marks and a feed's variant tag ("[v::tx]"). The catalogue builder runs every raw title through it, so one
+ * scraper that forgets to decode can no longer mint a URL (DECISIONS.md, 2026-11-05).
+ */
+export function cleanTitle(title: string): string {
+  return decodeEntities(title.replace(/&#(\d+)(?![\d;])/g, "&#$1;"))
+    .replace(/[®™©]/g, "")
+    .replace(/\s*\[v::[^\]]*\]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}

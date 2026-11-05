@@ -1186,3 +1186,40 @@ date is parsed from a title, the price is the store's pre-order price, and a pro
 store simply has it in stock. The first import after this lands marks today's eleven pre-order titles (coffee gear, a
 B&O headphone) and JB Hi-Fi's tagged pre-orders; a launch no store lists yet still needs its `launches.ts` entry.
 `tests/preorders.test.ts`.
+
+## 2026-11-05 — Thin pages out of the index: a 5,900-URL sitemap with real dates
+
+Search Console for compareempire.com (the owner's analysis, 2026-11-05): impressions peaked near 30K a day on 26–27
+October and were near zero by the 29th, with a 0.2% click rate; no manual action, nothing broken, the sitemap
+submitted on 3 November with 2,619 of its ~13,500 URLs found. The reading: a new site that offered thousands of
+templated one- and two-store product pages at once, which Google sampled and then throttled. Four changes, all of
+which alter titles, metadata and the sitemap on purpose (the owner's "redesigns change no URL or title" rule, 2026-11-03,
+is for design work; this is the search work it protects):
+
+1. **One-store and sold-out product pages are `noindex, follow`** (`lib/indexing.ts` `productIndexable`: two or
+   more stores and at least one in-stock outright offer). They stay live and linked, so a store that lists the product
+   tomorrow brings the page back. A brand page whose every product is thin is noindex the same way. The sitemap
+   (`lib/seo.ts`) now lists only products at three or more stores, in stock (`productInSitemap`, `SITEMAP_MIN_STORES`
+   in Vercel widens it to 2 once Search Console shows this tier indexed), brands with an indexable product, and the
+   head-to-heads: about 5,900 URLs (AU 2,997 products, UK 1,783, US 246, 368 brands) instead of 13,500. The old
+   `SITEMAP_TIER` is gone.
+2. **`lastmod` is each page's real last change.** Every URL used to carry the build time, which teaches Google to
+   ignore the field. A product's is the last day any variant's best price moved (`productLastmod`, from
+   `series.json`), else the day it was first seen; a category's and a brand's the newest of their products'; a
+   head-to-head's the newer of its two; a guide's its date; a sale or deals page the import time; a static page
+   (about, privacy…) none. The index dates each child sitemap by its newest entry.
+3. **Store titles are decoded before they name a brand or mint a slug** (`scripts/lib/http.ts` `cleanTitle`, run on
+   every raw title in `build-catalog.ts`): "Bowers &amp; Wilkins" had become the brand "Bowers &Amp; Wilkins" and
+   the slug `bowers-amp-wilkins-…` on four speaker pages, "Weber&#174" (no semicolon) the brand on 17 US grills, and
+   a feed's "[v::tx]" tag part of names. The next import merges them under the clean brand; the old product URLs
+   301 to the clean slug when it exists (`cleanedSlug` in the product page's loader; a real "amp", as in "WiiM Amp",
+   never redirects because the clean slug does not exist), and `/brands/bowers-amp-wilkins` redirects in
+   `next.config.mjs`.
+4. **The pages earning impressions get a title that answers the click and copy no two pages share.** Product titles
+   are now "<name> price in <place>: <price> at <store>, <n> stores compared" (longest rung that fits 70 characters;
+   `productTitle`), the description names the store; the About card gains a store-by-store sentence (cheapest, the
+   next four, the gap to the dearest); and AU product pages link their category's guides and the brand page.
+
+Not done, on purpose: no indexing requests, no sitemap resubmission (the index is read daily as it is). Recheck
+Search Console around 25 November: the indexed count against the 5,900 URLs, and the click rate on iPad, Pixel,
+router and Black Friday pages. `tests/indexing.test.ts`.

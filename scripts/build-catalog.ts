@@ -15,6 +15,7 @@ import { categorySpecs, conflicts, mergeTarget, type Parsed } from "../src/lib/m
 import { parseListing } from "../src/lib/listing-parse";
 import { parseTitle, slugify, storageLabel } from "../src/lib/normalize";
 import { RETAILERS } from "../src/lib/retailers";
+import { cleanTitle } from "./lib/http";
 import type { Catalog, CategoryId, HistoryDay, StoreSeries, Offer, Phone, RawOffer, RetailerId, Specs, Variant } from "../src/lib/types";
 
 /** Shopify CDN images first: clean white backgrounds and resizable. */
@@ -124,6 +125,7 @@ function build(category: CategoryId) {
     }
     scrapedAt.push(at);
     for (const o of offers) {
+      o.title = cleanTitle(o.title);
       const p = parse(o, category);
       if (!p) continue;
       if (category === "phones" && p.variant.storageGb === 0) {
