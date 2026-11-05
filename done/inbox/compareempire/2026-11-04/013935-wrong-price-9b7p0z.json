@@ -11,5 +11,7 @@
  "shown": "$497",
  "actual": null,
  "issue": "wrong-price",
- "note": null
+ "note": null,
+ "resolution": "Confirmed: Alternative Brewing charges $699; our $497 was Shopify Markets pricing the feed in US dollars for the US runner. Fixed in compareempiretake2 #73: every Shopify read now asks for the store's own country.",
+ "closedAt": "2026-11-05"
 }
