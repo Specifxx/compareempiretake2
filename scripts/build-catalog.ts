@@ -81,6 +81,10 @@ const REGION = (regionArg >= 0 ? process.argv.splice(regionArg, 2)[1] : "au") as
 if (!REGIONS[REGION]) throw new Error(`unknown region ${REGION}`);
 const ROOT = dataPath(REGION);
 
+/** Prices older than this are not shown: a failing store's last file is kept for a retry, not served. */
+const MAX_RAW_AGE_DAYS = 3;
+const MAX_RAW_AGE_MS = MAX_RAW_AGE_DAYS * 86_400_000;
+
 function today(): string {
   return new Date().toLocaleDateString("en-CA", { timeZone: REGIONS[REGION].timeZone });
 }
@@ -108,6 +112,14 @@ function build(category: CategoryId) {
     const id = f.replace(/\.json$/, "") as RetailerId;
     if (!RETAILERS[id]) continue;
     const { offers, scrapedAt: at } = JSON.parse(readFileSync(`${dir}/raw/${f}`, "utf8")) as { offers: RawOffer[]; scrapedAt: string };
+    // A store whose scrape keeps failing keeps its last file, which is right for a day or two and wrong
+    // after that: Harvey Norman's 22 Oct file was still "today's price" on 4 Nov (a visitor reported the
+    // Edge 60 Pro at $697 when the store had gone back to $1,199). Past MAX_RAW_AGE the file is left out,
+    // so the store simply disappears until its scrape works again.
+    if (Date.now() - Date.parse(at) > MAX_RAW_AGE_MS) {
+      console.log(`${category}/${id}: raw file from ${at.slice(0, 10)} is older than ${MAX_RAW_AGE_DAYS} days — left out`);
+      continue;
+    }
     scrapedAt.push(at);
     for (const o of offers) {
       const p = parse(o, category);

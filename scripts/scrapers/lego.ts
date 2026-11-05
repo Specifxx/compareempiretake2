@@ -36,7 +36,7 @@ function collection(base: string, handle: string): Promise<Product[]> {
       (async () => {
         const out: Product[] = [];
         for (let page = 1; page <= 20; page++) {
-          const { products } = JSON.parse(await get(`${base}/collections/${handle}/products.json?limit=250&page=${page}`)) as { products: Product[] };
+          const { products } = JSON.parse(await get(`${base}/collections/${handle}/products.json?limit=250&page=${page}&country=AU`)) as { products: Product[] };
           out.push(...products);
           if (products.length < 250) break;
           await sleep(1200);

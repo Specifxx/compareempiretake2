@@ -18,7 +18,7 @@ export function catalogue(base: string, maxPages = 40): Promise<ShopifyProduct[]
     c = (async () => {
       const all: ShopifyProduct[] = [];
       for (let page = 1; page <= maxPages; page++) {
-        const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}/products.json?limit=250&page=${page}`);
+        const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}/products.json?limit=250&page=${page}&country=GB`);
         all.push(...products);
         if (products.length < 250) break;
         await sleep(700);

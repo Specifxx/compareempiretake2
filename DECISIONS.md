@@ -1152,3 +1152,21 @@ The request is filed as a `suggest-store` report with `issue: "owner"`; RiftComp
 those first and asks for a reply within two days. No email is asked for (the reports branch is public); no pop-up,
 no cold email. RiftCompare and OP Compare keep their `/stores/suggest` page (now the owner pitch) and redirect
 `/list-your-store` to it.
+
+## 2026-11-05 — Wrong-price reports: a store's own market price, and nothing older than three days
+
+Two visitor reports (`reports` branch) pointed at two importer faults, not two rows:
+
+- **Shopify prices in the caller's currency.** Alternative Brewing and Barista Warehouse showed the Barista Express at
+  "$497–$501" while both stores charge $699: Shopify Markets prices `/products.json` for the requester's country, and
+  the runner is in the US, so a Markets-enabled store answered in converted US dollars (0.715x that day; the
+  `country=US` read of the same feed reproduces it). Every Shopify read now carries the region's `country=`
+  (`AU`, `GB`, `US`), as RiftCompare's and DexCompare's importers already do. `probe-auto.ts` never caught it because
+  `/meta.json` reports the shop's base currency, which is right; the price was the wrong one.
+- **No price older than three days.** The Edge 60 Pro showed Harvey Norman at $697 (the store: $1,199) because
+  Harvey Norman had answered a challenge page instead of `__NEXT_DATA__` since 22 Oct, and "a failing store keeps
+  yesterday's file" had served a two-week-old file as today's. `build-catalog.ts` now leaves out any raw file older
+  than `MAX_RAW_AGE_DAYS` (3): a store that stays broken disappears from the site instead of showing a stale price.
+  Harvey Norman and Mobileciti (403 since the same day) are bot walls, so their scrapers are removed rather than
+  worked around; their retailer entries stay for history. JB Hi-Fi's product reads get 60 minutes instead of 40
+  (half its categories were a week or more old under the 40-minute budget).

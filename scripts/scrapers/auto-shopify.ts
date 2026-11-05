@@ -6,7 +6,7 @@
  * out; nothing is guessed from a product_type alone. LEGO uses the set-number rules of `lego.ts`, phones need a
  * phone model name as well as `looksLikePhone`.
  *
- * Prices are the shop's base currency (`/products.json` ignores the visitor's market), which `probe-auto.ts`
+ * Every read carries `country=AU`: Shopify Markets prices `/products.json` for the caller's country, and the runner is in the US (a US$-converted price, about 0.7x, reached Alternative Brewing and Barista Warehouse on 2026-11-04; visitor report). `probe-auto.ts`
  * checked against the region's currency before a store was added.
  */
 import type { CategoryId, RawOffer, RetailerId } from "../../src/lib/types";
@@ -123,7 +123,7 @@ export function catalogue(base: string, maxPages = 40, platform?: "shopify" | "w
       const all: ShopifyProduct[] = [];
       try {
         for (let page = 1; page <= maxPages; page++) {
-          const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}/products.json?limit=250&page=${page}`);
+          const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}/products.json?limit=250&page=${page}&country=AU`);
           if (!Array.isArray(products)) throw new Error("not a Shopify feed");
           all.push(...products);
           if (products.length < 250) break;

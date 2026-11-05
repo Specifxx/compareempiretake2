@@ -16,7 +16,7 @@ const JUNK = /accessor|\bkit\b|filter|brush|mop pad|dust ?bag|bag\b|module|solut
 async function robotVacuums(): Promise<RawOffer[]> {
   const out: RawOffer[] = [];
   for (let page = 1; page <= 10; page++) {
-    const { products } = JSON.parse(await get(`${BASE}/products.json?limit=250&page=${page}`)) as { products: Product[] };
+    const { products } = JSON.parse(await get(`${BASE}/products.json?limit=250&page=${page}&country=AU`)) as { products: Product[] };
     if (!products.length) break;
     for (const p of products) {
       const title = decodeEntities(p.title).replace(/\s+/g, " ").trim();
