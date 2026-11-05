@@ -1,42 +1,6 @@
 {
- "scrapedAt": "2026-11-04T00:20:00.157Z",
+ "scrapedAt": "2026-11-05T00:42:20.703Z",
  "offers": [
-  {
-   "retailer": "ple",
-   "sku": "688841",
-   "title": "#PCR ASUS Vivobook 15 (F1504VA) - 16\", Ultra 7 150U, 16GB/512GB - Win 11 Notebook (Silver)",
-   "brand": "ASUS",
-   "mpn": "F1504VA-BQ751W",
-   "url": "https://www.ple.com.au/products/688841/pcr-asus-vivobook-15-f1504va-16-ultra-7-150u-16gb512gb-win-11-notebook-silver",
-   "price": 1499,
-   "wasPrice": 1699,
-   "image": "https://plecom.imgix.net/iil-488360-688841.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "688840",
-   "title": "#PCR ASUS Vivobook S16 (D3607) - 16\" OLED, Ryzen AI 7 445, 16GB/512GB - Win 11 Copilot Notebook",
-   "brand": "ASUS",
-   "mpn": "D3607GA-SH766W",
-   "url": "https://www.ple.com.au/products/688840/pcr-asus-vivobook-s16-d3607-16-oled-ryzen-ai-7-445-16gb512gb-win-11-copilot-notebook",
-   "price": 1499,
-   "wasPrice": 1899,
-   "image": "https://plecom.imgix.net/iil-488400-688840.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "688842",
-   "title": "#PCR ASUS Zenbook 14 (UX3405CA) - 14\" OLED, Ultra 7 225H, 16GB/512GB - Win 11 Notebook",
-   "brand": "ASUS",
-   "mpn": "UX3405CA-QL756W",
-   "url": "https://www.ple.com.au/products/688842/pcr-asus-zenbook-14-ux3405ca-14-oled-ultra-7-225h-16gb512gb-win-11-notebook",
-   "price": 1899,
-   "wasPrice": 2299,
-   "image": "https://plecom.imgix.net/iil-488420-688842.jpg?w=600&h=600",
-   "inStock": false
-  },
   {
    "retailer": "ple",
    "sku": "684897",
@@ -127,17 +91,6 @@
    "price": 4549,
    "wasPrice": 6699,
    "image": "https://plecom.imgix.net/iil-473009-684781.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "687495",
-   "title": "ASUS Gaming V16 (V3607) - 16\" 144Hz, Core 7 240H, RTX 5050, 32GB/1TB - Win 11 Notebook",
-   "brand": "ASUS",
-   "mpn": "V3607VH-RP001W",
-   "url": "https://www.ple.com.au/products/687495/asus-gaming-v16-v3607-16-144hz-core-7-240h-rtx-5050-32gb1tb-win-11-notebook",
-   "price": 2799,
-   "image": "https://plecom.imgix.net/iil-482218-687495.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -272,6 +225,17 @@
    "url": "https://www.ple.com.au/products/687975/asus-proart-p16-h7607-16-3k-oled-120hz-touch-nvidia-rtx-spark-n1x-20-core-cpu-64gb1tb-win-11-pro-notebook",
    "price": 7999,
    "image": "https://plecom.imgix.net/iil-485925-687975.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "688548",
+   "title": "ASUS ProArt PX13 (HN7306) - 13.3\" OLED, Ryzen AI MAX+ 395, 128GB/1TB - Win 11 Pro Notebook",
+   "brand": "ASUS",
+   "mpn": "HN7306EA-LX005X",
+   "url": "https://www.ple.com.au/products/688548/asus-proart-px13-hn7306-133-oled-ryzen-ai-max-395-128gb1tb-win-11-pro-notebook",
+   "price": 9999,
+   "image": "https://plecom.imgix.net/iil-487035-688548.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -487,6 +451,29 @@
   },
   {
    "retailer": "ple",
+   "sku": "688545",
+   "title": "ASUS Vivbook 16 (M1652) - 16\", Ryzen 7 7840HS, 8GB/512GB - Win 11 Home Notebook (Silver)",
+   "brand": "ASUS",
+   "mpn": "M1652XA-MB710W",
+   "url": "https://www.ple.com.au/products/688545/asus-vivbook-16-m1652-16-ryzen-7-7840hs-8gb512gb-win-11-home-notebook-silver",
+   "price": 1499,
+   "image": "https://plecom.imgix.net/iil-488949-688545.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "688841",
+   "title": "ASUS Vivobook 15 (F1504VA) - 16\", Ultra 7 150U, 16GB/512GB - Win 11 Notebook (Silver)",
+   "brand": "ASUS",
+   "mpn": "F1504VA-BQ751W",
+   "url": "https://www.ple.com.au/products/688841/asus-vivobook-15-f1504va-16-ultra-7-150u-16gb512gb-win-11-notebook-silver",
+   "price": 1499,
+   "wasPrice": 1699,
+   "image": "https://plecom.imgix.net/iil-488360-688841.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
    "sku": "684880",
    "title": "ASUS Vivobook 15 (M1502) - 15.6\" Ryzen 5 150, 8GB/512GB - Win 11 Notebook (Quiet Blue)",
    "brand": "ASUS",
@@ -520,6 +507,17 @@
    "wasPrice": 1699,
    "image": "https://plecom.imgix.net/iil-418129-672662.jpg?w=600&h=600",
    "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "688547",
+   "title": "ASUS Vivobook 16 Flip (TP3607) - 16\" OLED, Ultra 7 355, 32GB/512GB - Win 11 Notebook",
+   "brand": "ASUS",
+   "mpn": "TP3607AA-SI720W",
+   "url": "https://www.ple.com.au/products/688547/asus-vivobook-16-flip-tp3607-16-oled-ultra-7-355-32gb512gb-win-11-notebook",
+   "price": 2999,
+   "image": "https://plecom.imgix.net/iil-487024-688547.jpg?w=600&h=600",
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -592,6 +590,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "688840",
+   "title": "ASUS Vivobook S16 (D3607) - 16\" OLED, Ryzen AI 7 445, 16GB/512GB - Win 11 Copilot Notebook",
+   "brand": "ASUS",
+   "mpn": "D3607GA-SH766W",
+   "url": "https://www.ple.com.au/products/688840/asus-vivobook-s16-d3607-16-oled-ryzen-ai-7-445-16gb512gb-win-11-copilot-notebook",
+   "price": 1499,
+   "wasPrice": 1899,
+   "image": "https://plecom.imgix.net/iil-488400-688840.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
    "sku": "682904",
    "title": "ASUS Zenbook 14 (UM3406) - 14\" OLED,  Ryzen AI 5 430, 16GB/512GB - Win 11 Copilot Notebook",
    "brand": "ASUS",
@@ -613,6 +623,29 @@
    "wasPrice": 2399,
    "image": "https://plecom.imgix.net/iil-462444-682906.jpg?w=600&h=600",
    "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "688546",
+   "title": "ASUS Zenbook 14 (UM3406) - 14\" OLED, Ryzen AI 7 445, 32GB/512GB - Win 11 Copilot Notebook",
+   "brand": "ASUS",
+   "mpn": "UM3406GA-QL708W",
+   "url": "https://www.ple.com.au/products/688546/asus-zenbook-14-um3406-14-oled-ryzen-ai-7-445-32gb512gb-win-11-copilot-notebook",
+   "price": 2799,
+   "image": "https://plecom.imgix.net/iil-487008-688546.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "688842",
+   "title": "ASUS Zenbook 14 (UX3405CA) - 14\" OLED, Ultra 7 225H, 16GB/512GB - Win 11 Notebook",
+   "brand": "ASUS",
+   "mpn": "UX3405CA-QL756W",
+   "url": "https://www.ple.com.au/products/688842/asus-zenbook-14-ux3405ca-14-oled-ultra-7-225h-16gb512gb-win-11-notebook",
+   "price": 1899,
+   "wasPrice": 2299,
+   "image": "https://plecom.imgix.net/iil-488420-688842.jpg?w=600&h=600",
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -747,10 +780,9 @@
    "brand": "Gigabyte",
    "mpn": "AERO X16 3VHK3AUC93AH",
    "url": "https://www.ple.com.au/products/685364/gigabyte-aero-x16-3vh-16-165hz-ryzen-7-260-rtx-5060-16gb512gb-win-11-gaming-notebook-space-grey",
-   "price": 1899,
-   "wasPrice": 2399,
+   "price": 2399,
    "image": "https://plecom.imgix.net/iil-472248-685364.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -990,17 +1022,6 @@
    "url": "https://www.ple.com.au/products/688185/msi-crosshair-16-max-hx-e2wgxk-16-165hz-oled-ultra-9-275hx-rtx-5070-16gb1tb-win-11-gaming-notebook",
    "price": 4099,
    "image": "https://plecom.imgix.net/iil-487075-688185.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "682970",
-   "title": "MSI Cyborg 15 (B13W) - 15.6\" 144Hz, i5-13420H, RTX 5050, 16GB/512GB - Win 11 Gaming Notebook",
-   "brand": "MSI",
-   "mpn": "Cyborg 15 B13WEKG-1069AU",
-   "url": "https://www.ple.com.au/products/682970/msi-cyborg-15-b13w-156-144hz-i5-13420h-rtx-5050-16gb512gb-win-11-gaming-notebook",
-   "price": 1999,
-   "image": "https://plecom.imgix.net/iil-462668-682970.jpg?w=600&h=600",
    "inStock": true
   },
   {

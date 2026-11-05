@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:43:34.808Z",
+ "scrapedAt": "2026-11-05T01:06:41.741Z",
  "offers": [
   {
    "retailer": "us-audio46",
@@ -273,7 +273,7 @@
    "url": "https://www.audio46.com/products/64-audio-u4s-universal-in-ear-monitor",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/U4s-PLP-HiRscopy.jpg?v=1762464170",
-   "inStock": true,
+   "inStock": false,
    "brand": "64 Audio",
    "mpn": "U4s"
   },
@@ -3669,7 +3669,7 @@
    "url": "https://www.audio46.com/products/audeze-lcd-x-planar-magnetic-headphones-2024-revision?variant=46676733657321",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Audeze_LCD-X_best_gaming_headset_with_wireless_technology_and_noise_cancelling_providing_premium_sound_for_immersive_gaming.png?v=1762466595",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audeze",
    "mpn": "100-LX-1018-00"
   },
@@ -5155,7 +5155,7 @@
    "url": "https://www.audio46.com/products/beyerdynamic-aventho-y-wireless-over-ear-headphones?variant=51789339394281",
    "price": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/PIC_AVENTHO-Y_26-06_Soft-Jade-Perspective-WHITE_v1.png?v=1788368456",
-   "inStock": false,
+   "inStock": true,
    "brand": "Beyerdynamic"
   },
   {
@@ -6318,7 +6318,7 @@
    "url": "https://www.audio46.com/products/bowers-wilkins-px7-s3-over-ear-noise-canceling-wireless-headphones?variant=49958931988713",
    "price": 479,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Buybox1-min.png?v=1766506479",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bowers & Wilkins",
    "mpn": "Frost Blue FP46604"
   },
@@ -6717,7 +6717,8 @@
    "sku": "48954191446249",
    "title": "Campfire Audio Grand Luna Planar Hybrid Universal In-Ear Monitors",
    "url": "https://www.audio46.com/products/campfire-audio-grand-luna-planar-hybrid-iem",
-   "price": 1399,
+   "price": 1099,
+   "wasPrice": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Grand-Luna-1_2048copy.png?v=1755536303",
    "inStock": true,
    "brand": "Campfire Audio",
@@ -6798,7 +6799,8 @@
    "sku": "45649163223273",
    "title": "Campfire Audio Ponderosa Universal In-Ear Monitors Black Essential (3.5mm only)",
    "url": "https://www.audio46.com/products/campfire-audio-ponderosa-in-ear-monitors?variant=45649163223273",
-   "price": 799,
+   "price": 599,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Ponderosa_Universal_Black_1_b8b4c820-906a-418c-b0fe-6f68f65c9ac0.jpg?v=1699898994",
    "inStock": false,
    "brand": "Campfire Audio",
@@ -6809,7 +6811,8 @@
    "sku": "45649163256041",
    "title": "Campfire Audio Ponderosa Universal In-Ear Monitors Black Essential (4.4mm only)",
    "url": "https://www.audio46.com/products/campfire-audio-ponderosa-in-ear-monitors?variant=45649163256041",
-   "price": 799,
+   "price": 599,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Ponderosa_Universal_Black_1_b8b4c820-906a-418c-b0fe-6f68f65c9ac0.jpg?v=1699898994",
    "inStock": false,
    "brand": "Campfire Audio",
@@ -6820,7 +6823,8 @@
    "sku": "46005972533481",
    "title": "Campfire Audio Ponderosa Universal In-Ear Monitors Green Essential (3.5mm only)",
    "url": "https://www.audio46.com/products/campfire-audio-ponderosa-in-ear-monitors?variant=46005972533481",
-   "price": 799,
+   "price": 599,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Ponderosa_Universal_Green_1_fc9c1d00-31cc-4ebd-a2d9-9daf5250531d.jpg?v=1762465699",
    "inStock": false,
    "brand": "Campfire Audio",
@@ -6831,7 +6835,8 @@
    "sku": "46005972566249",
    "title": "Campfire Audio Ponderosa Universal In-Ear Monitors Green Essential (4.4mm only)",
    "url": "https://www.audio46.com/products/campfire-audio-ponderosa-in-ear-monitors?variant=46005972566249",
-   "price": 799,
+   "price": 599,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Ponderosa_Universal_Green_1_fc9c1d00-31cc-4ebd-a2d9-9daf5250531d.jpg?v=1762465699",
    "inStock": false,
    "brand": "Campfire Audio",
@@ -8878,7 +8883,7 @@
    "url": "https://www.audio46.com/products/final-audio-dx3000cl-closed-back-headphones",
    "price": 599.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/251121_DX3000CL_SD_01_3000x_b70163d1-0659-4cf4-8587-93923629aa73.png?v=1769455655",
-   "inStock": false,
+   "inStock": true,
    "brand": "Final Audio",
    "mpn": "DX3000CL"
   },
@@ -10568,7 +10573,7 @@
    "url": "https://www.audio46.com/products/grado-signature-hp100-se-special-edition-open-back-headphones",
    "price": 2495,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/hp100-se-angled-left.png?v=1762467804",
-   "inStock": false,
+   "inStock": true,
    "brand": "Grado",
    "mpn": "HP100 SE"
   },
@@ -12660,7 +12665,7 @@
    "url": "https://www.audio46.com/products/jvc-true-wireless-fitness-series-earphones?variant=51142527582441",
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/jvc-haec25t-clip-true-wireless-for-sport-haec25tw-240979.png?v=1780412480",
-   "inStock": true,
+   "inStock": false,
    "brand": "JVC",
    "mpn": "HA-EC25T-W-U"
   },
@@ -17068,7 +17073,7 @@
    "url": "https://www.audio46.com/products/shure-se215-sound-isolating-earphones?variant=18292173308019",
    "price": 109,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/5ba96cfdb59f6e94bee527c2054fa23f.jpg?v=1666027003",
-   "inStock": false,
+   "inStock": true,
    "brand": "Shure",
    "mpn": "SE215-CL"
   },
@@ -17090,31 +17095,20 @@
    "url": "https://www.audio46.com/products/shure-se425-pro-professional-sound-isolating-earphones",
    "price": 296,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/c143931965fca580649d32061240d553_copy.jpg?v=1762467124",
-   "inStock": false,
+   "inStock": true,
    "brand": "Shure",
    "mpn": "SE425-CL"
   },
   {
    "retailer": "us-audio46",
    "sku": "18292065992819",
-   "title": "Shure SE535 Wired Noise-Isolating Earphones - Discontinued Clear",
-   "url": "https://www.audio46.com/products/shure-se535-noise-isolating-in-ear-monitor-headphones?variant=18292065992819",
-   "price": 494,
-   "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/shure_se535_cl_1.jpg?v=1759441164",
-   "inStock": false,
+   "title": "Shure SE535 Wired Noise-Isolating Earphones",
+   "url": "https://www.audio46.com/products/shure-se535-noise-isolating-in-ear-monitor-headphones",
+   "price": 499,
+   "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/629c617d84cfecd6a702a622145863cf.png?v=1793807552",
+   "inStock": true,
    "brand": "Shure",
    "mpn": "SE535-CL"
-  },
-  {
-   "retailer": "us-audio46",
-   "sku": "18408847081587",
-   "title": "Shure SE535 Wired Noise-Isolating Earphones - Discontinued SPE Red",
-   "url": "https://www.audio46.com/products/shure-se535-noise-isolating-in-ear-monitor-headphones?variant=18408847081587",
-   "price": 494,
-   "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/shure_se535_red_1.jpg?v=1553629243",
-   "inStock": false,
-   "brand": "Shure",
-   "mpn": "SE535LTD"
   },
   {
    "retailer": "us-audio46",
@@ -17123,7 +17117,7 @@
    "url": "https://www.audio46.com/products/shure-se846-pro-gen-2-wired-professional-sound-isolating-earphones?variant=43703351541993",
    "price": 989,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/products/c146a2454d0277125f92ff3b66739e6f.jpg?v=1663793018",
-   "inStock": false,
+   "inStock": true,
    "brand": "Shure",
    "mpn": "SE846G2CL"
   },
@@ -18880,7 +18874,7 @@
    "url": "https://www.audio46.com/products/thieaudio-monarch-mkiv?variant=50686053384425",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0065/4432/6771/files/Image_21_33cc20d7-bab3-4196-866f-f8ef246b9a3b.jpg?v=1774366396",
-   "inStock": false,
+   "inStock": true,
    "brand": "Thieaudio",
    "mpn": "Monarch MKIV Stellashot"
   },

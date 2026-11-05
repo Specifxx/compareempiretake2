@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T01:01:48.862Z",
+ "scrapedAt": "2026-11-05T01:30:21.772Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -31,7 +31,7 @@
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-pink-128gb-wi-fi-tablet-md4e4kn-a/version.asp",
    "price": 409.97,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4E4KNA_1_Classic.jpg?v=5",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -41,27 +41,6 @@
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-silver-128gb-wi-fi-tablet-md3y4kn-a/version.asp",
    "price": 419,
    "wasPrice": 508,
-   "image": "https://www.laptopsdirect.co.uk/Images/MD4G4KNA_1_Classic.jpg?v=9",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1996704",
-   "mpn": "MD7K4KN/A",
-   "title": "Apple iPad 2025 11\" Silver 256GB Wi-Fi & Cellular Tablet",
-   "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-silver-256gb-cellular-tablet-md7k4kn-a/version.asp",
-   "price": 649.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/MD4G4KNA_1_Classic.jpg?v=9",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1996692",
-   "mpn": "MD4G4KN/A",
-   "title": "Apple iPad 2025 11\" Silver 256GB Wi-Fi Tablet",
-   "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-silver-256gb-wi-fi-tablet-md4g4kn-a/version.asp",
-   "price": 529,
-   "wasPrice": 608,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4G4KNA_1_Classic.jpg?v=9",
    "inStock": true
   },
@@ -126,6 +105,26 @@
    "price": 2009.97,
    "wasPrice": 2129.98,
    "image": "https://www.laptopsdirect.co.uk/Images/MVW83NFA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1932829",
+   "mpn": "MVVH3NF/A",
+   "title": "Apple iPad Pro 2024 11\" Standard Glass Silver 2TB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/apple-ipad-pro-2024-11-standard-glass-silver-2tb-wi-fi-tablet-mvvh3nf-a/version.asp",
+   "price": 1799.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/MVVH3NFA_1_Classic.jpg?v=20",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1932828",
+   "mpn": "MVVG3NF/A",
+   "title": "Apple iPad Pro 2024 11\" Standard Glass Space Black 2TB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/apple-ipad-pro-2024-11-standard-glass-space-black-2tb-wi-fi-tablet-mvvg3nf-a/version.asp",
+   "price": 1799.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/MVVG3NFA_1_Classic.jpg?v=31",
    "inStock": true
   },
   {
@@ -207,7 +206,7 @@
    "title": "Samsung Galaxy Tab A11 8.7\" Grey 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-a11-8.7-grey-128gb-wi-fi-tablet-sm-x130nzaeeub/version.asp",
    "price": 179,
-   "wasPrice": 239,
+   "wasPrice": 189,
    "image": "https://www.laptopsdirect.co.uk/Images/SM-X130NZAAEUB_1_Classic.png?v=5",
    "inStock": true
   },
@@ -283,7 +282,7 @@
    "title": "Samsung Galaxy Tab A11+ 11\" Silver 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-a11-11-silver-128gb-wi-fi-tablet-sm-x230nzsreub/version.asp",
    "price": 197.97,
-   "wasPrice": 289,
+   "wasPrice": 295.19,
    "image": "https://www.laptopsdirect.co.uk/Images/SM-X230NZSPEUB_1_Classic.jpg?v=6",
    "inStock": true
   },
@@ -387,7 +386,7 @@
    "title": "TCL Tab 10L Gen 4 10.1\" Space Black 64GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/tcl-tab-10l-gen-4-10.1-space-black-64gb-wi-fi-tablet-8483a1-2alca111/version.asp",
    "price": 99,
-   "wasPrice": 115,
+   "wasPrice": 139,
    "image": "https://www.laptopsdirect.co.uk/Images/8483A1-2ALCA111_1_Classic.png?v=5",
    "inStock": true
   }

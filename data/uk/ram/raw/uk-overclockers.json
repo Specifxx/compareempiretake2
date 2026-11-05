@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T01:02:46.887Z",
+ "scrapedAt": "2026-11-05T01:25:33.800Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -303,26 +303,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "MEM-ADA-09436",
-   "brand": "ADATA",
-   "title": "ADATA XPG LANCER RGB EXPO/XMP 32GB (2x16GB) DDR4 C32 6400MHz Dual Channel Kit - Black",
-   "url": "https://www.overclockers.co.uk/adata-xpg-lancer-rgb-expo-xmp-32gb-2x16gb-ddr4-c32-6400mhz-dual-channel-kit-black/MEM-ADA-09436.html",
-   "price": 509.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe75077d0/images/data/product/b7/79addd/e357c66a72cdea2fdc0311f436b53f4e3eea23e1.png?sw=500",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
-   "sku": "MEM-ADA-09437",
-   "brand": "ADATA",
-   "title": "ADATA XPG LANCER RGB EXPO/XMP 32GB (2x16GB) DDR4 C32 6400MHz Dual Channel Kit - White",
-   "url": "https://www.overclockers.co.uk/adata-xpg-lancer-rgb-expo-xmp-32gb-2x16gb-ddr4-c32-6400mhz-dual-channel-kit-white/MEM-ADA-09437.html",
-   "price": 499.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa24bc2de/images/data/product/07/ebbe97/231efa944de3ab1ec1d9478d627fbe26b9487f05.png?sw=500",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "MEM-ADA-07169",
    "brand": "ADATA",
    "title": "ADATA XPG LANCER RGB EXPO/XMP 32GB (2x16GB) DDR5 C30 6000MHz Dual Channel Kit - Black",
@@ -340,6 +320,26 @@
    "price": 599.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3b0139a9/images/data/product/db/e29871/6d36f22f2a2ffc29e600d9d8f0ad882289843e08.png?sw=500",
    "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-ADA-09436",
+   "brand": "ADATA",
+   "title": "ADATA XPG LANCER RGB EXPO/XMP 32GB (2x16GB) DDR5 C32 6400MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/adata-xpg-lancer-rgb-expo-xmp-32gb-2x16gb-ddr5-c32-6400mhz-dual-channel-kit-black/MEM-ADA-09436.html",
+   "price": 509.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe75077d0/images/data/product/b7/79addd/e357c66a72cdea2fdc0311f436b53f4e3eea23e1.png?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-ADA-09437",
+   "brand": "ADATA",
+   "title": "ADATA XPG LANCER RGB EXPO/XMP 32GB (2x16GB) DDR5 C32 6400MHz Dual Channel Kit - White",
+   "url": "https://www.overclockers.co.uk/adata-xpg-lancer-rgb-expo-xmp-32gb-2x16gb-ddr5-c32-6400mhz-dual-channel-kit-white/MEM-ADA-09437.html",
+   "price": 499.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa24bc2de/images/data/product/07/ebbe97/231efa944de3ab1ec1d9478d627fbe26b9487f05.png?sw=500",
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -609,7 +609,7 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-expo-32gb-2x16gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit-black-cmh32gx5m2b6000z30k/MY-4DU-CS.html",
    "price": 548.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw275f6073/images/data/product/6d/d0817f/6b50e073a21946f19db54150dbe9faadf86534b2.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -679,7 +679,7 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-expo-xmp-64gb-2x32gb-ddr5-c40-6000mhz-dual-channel-kit/MEM-CRS-07680.html",
    "price": 999.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwd61f69d7/images/data/product/01/3a44b1/b5f867d92e1b9a590721f8e2ec6d654812b8271e.png?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -957,7 +957,7 @@
    "brand": "G.Skill",
    "title": "G.Skill Ripjaws M5 NEO RGB EXPO 64GB (2x32GB) DDR5 PC5-48000C28 6000MHz Dual Channel Kit - White",
    "url": "https://www.overclockers.co.uk/g.skill-ripjaws-m5-neo-rgb-expo-64gb-2x32gb-ddr5-pc5-48000c28-6000mhz-dual-channel-kit-white/MEM-GSK-04200.html",
-   "price": 2099.99,
+   "price": 1199.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8af73190/images/data/product/a3/baa366/3b55221bf753eb4e34e53fcef751e905eebecb8a.png?sw=500",
    "inStock": true
   },
@@ -1083,22 +1083,22 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "MEM-GSK-01359",
-   "brand": "G.Skill",
-   "title": "G.Skill Trident Z5 Neo EXPO/XMP RGB 64GB (2x32GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
-   "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-xmp-rgb-64gb-2x32gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit/MEM-GSK-01359.html",
-   "price": 1999.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw74b17191/images/data/product/db/afd2f9/7127f84a1f53d476aee0887eaa7672c4ea39b646.jpg?sw=500",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "MEM-GSK-01357",
    "brand": "G.Skill",
    "title": "G.Skill Trident Z5 Neo EXPO/XMP RGB 64GB (2x32GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
    "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-xmp-rgb-64gb-2x32gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit/MEM-GSK-01357.html",
    "price": 1999.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw6bd602d7/images/data/product/39/5ca7af/479e98044166a9c1546d849a33503bb9a01df386.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-GSK-01359",
+   "brand": "G.Skill",
+   "title": "G.Skill Trident Z5 Neo EXPO/XMP RGB 64GB (2x32GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-xmp-rgb-64gb-2x32gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit/MEM-GSK-01359.html",
+   "price": 1999.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw74b17191/images/data/product/db/afd2f9/7127f84a1f53d476aee0887eaa7672c4ea39b646.jpg?sw=500",
    "inStock": true
   },
   {
@@ -1517,7 +1517,7 @@
    "brand": "Kingston",
    "title": "Kingston FURY Beast EXPO/XMP 64GB (2x32GB) DDR5 C36 6000MHz Dual Channel Kit - Black",
    "url": "https://www.overclockers.co.uk/kingston-fury-beast-expo-xmp-64gb-2x32gb-ddr5-c36-6000mhz-dual-channel-kit-black/MEM-KNG-05850.html",
-   "price": 1079.99,
+   "price": 999.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw50a5adb2/images/data/product/d0/29d209/867bb0d90b7006464e45fc53fc94021c589c01ff.jpg?sw=500",
    "inStock": true
   },
@@ -1727,7 +1727,7 @@
    "brand": "Kingston",
    "title": "Kingston FURY Beast RGB EXPO/XMP 64GB (2x32GB) DDR5 C36 6000MHz Dual Channel Kit",
    "url": "https://www.overclockers.co.uk/kingston-fury-beast-rgb-expo-xmp-64gb-2x32gb-ddr5-c36-6000mhz-dual-channel-kit/MEM-KNG-09506.html",
-   "price": 1099.99,
+   "price": 999.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw0cbbf8c3/images/data/product/0c/3320cc/9ed766b79aedca9e00119e52fbb0a993908c3561.png?sw=500",
    "inStock": true
   },
@@ -2037,7 +2037,7 @@
    "brand": "KLEVV",
    "title": "KLEVV BOLT V EXPO 64GB (2x32GB) 6000MHz C30 DDR5 Dual Channel Kit - Black",
    "url": "https://www.overclockers.co.uk/klevv-bolt-v-expo-64gb-2x32gb-6000mhz-c30-ddr5-dual-channel-kit-black/MEM-KLV-09259.html",
-   "price": 949.99,
+   "price": 899.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw72f738fc/images/data/product/e3/69d9ec/331bceca674e18fd7a911b65ab62a21153770927.jpg?sw=500",
    "inStock": true
   },

@@ -1,16 +1,6 @@
 {
- "scrapedAt": "2026-11-04T00:01:51.969Z",
+ "scrapedAt": "2026-11-05T00:24:56.368Z",
  "offers": [
-  {
-   "retailer": "samsung",
-   "sku": "Galaxy A17 5G",
-   "title": "Samsung Galaxy A17 5G",
-   "url": "https://www.samsung.com/au/smartphones/galaxy-a/galaxy-a17-5g-black-128gb-sm-a176bzkcats/",
-   "price": 399,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/sm-a176bzkcats/gallery/au-galaxy-a17-5g-sm-a176-sm-a176bzkcats-thumb-548809407",
-   "inStock": false,
-   "fromPrice": true
-  },
   {
    "retailer": "samsung",
    "sku": "Galaxy A27 5G",
@@ -48,7 +38,7 @@
    "url": "https://www.samsung.com/au/smartphones/galaxy-s25-ultra/buy/?modelCode=SM-S938BAKAATS",
    "price": 1999,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/2501/gallery/au-galaxy-s25-s938-sm-s938bakaats-thumb-544697617",
-   "inStock": false,
+   "inStock": true,
    "fromPrice": true
   },
   {
@@ -153,16 +143,6 @@
   },
   {
    "retailer": "samsung",
-   "sku": "Galaxy XCover7 Pro",
-   "title": "Samsung Galaxy XCover7 Pro",
-   "url": "https://www.samsung.com/au/smartphones/others/galaxy-xcover7-pro-black-128gb-sm-g766bzkdsts/",
-   "price": 999,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/sm-g766bzkdsts/gallery/au-galaxy-xcover7-pro-sm-g766-sm-g766bzkdsts-thumb-547073286",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "samsung",
    "sku": "Galaxy Z Flip8",
    "title": "Samsung Galaxy Z Flip8",
    "url": "https://www.samsung.com/au/smartphones/galaxy-z-flip8/buy/?modelCode=SM-F776BLGAATS",
@@ -215,9 +195,9 @@
    "retailer": "samsung",
    "sku": "Galaxy Z Fold8 Ultra",
    "title": "Samsung Galaxy Z Fold8 Ultra",
-   "url": "https://www.samsung.com/au/smartphones/galaxy-z-fold8-ultra/buy/?modelCode=SM-F976BZKGATS",
+   "url": "https://www.samsung.com/au/smartphones/galaxy-z-fold8-ultra/buy/?modelCode=SM-F976BZWGATS",
    "price": 3299,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/f2607/gallery/au-galaxy-z-fold8-ultra-f976-sm-f976bzkgats-thumb-553717902",
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/f2607/gallery/au-galaxy-z-fold8-ultra-f976-sm-f976bzwgats-thumb-553718016",
    "inStock": true,
    "fromPrice": true
   }

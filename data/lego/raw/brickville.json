@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:06:35.438Z",
+ "scrapedAt": "2026-11-05T00:29:07.922Z",
  "offers": [
   {
    "retailer": "brickville",
@@ -7,7 +7,7 @@
    "title": "LEGO 3-1 Creator Space Mining Mech 31115",
    "url": "https://www.brickville.com.au/products/lego-creator-space-mining-mech-31115",
    "price": 69.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/products/BTKA_16852539157381575_0a0d19df41922bcd6c600a76a01c83.jpg?v=1686012793",
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/A1644305.jpg?v=1793825023",
    "inStock": true,
    "brand": "LEGO",
    "mpn": "31115"
@@ -73,7 +73,7 @@
    "title": "LEGO ANIMAL Dark Bluish Gray Shark 2547c03",
    "url": "https://www.brickville.com.au/products/lego-animal-dark-bluish-gray-shark",
    "price": 6.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_76cbc48c-e0be-4dbe-8184-9d1eae34bb7e.jpg?v=1787489901",
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_76cbc48c-e0be-4dbe-8184-9d1eae34bb7e.jpg?v=1793825668",
    "inStock": true,
    "brand": "LEGO",
    "mpn": "2547"
@@ -117,7 +117,7 @@
    "title": "LEGO ANIMAL Dinosaur Coelophysis / Gallimimus with Dark Green Stripes 98166pb01",
    "url": "https://www.brickville.com.au/products/lgeo-animal-dinosaur-coelophysis-gallimimus-with-dark-green-stripes-98166pb01",
    "price": 17.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_a8c936dc-8867-4f21-91a8-e05495e5a69c.jpg?v=1787492093",
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_a8c936dc-8867-4f21-91a8-e05495e5a69c.jpg?v=1793825731",
    "inStock": true,
    "brand": "LEGO",
    "mpn": "98166"
@@ -161,7 +161,7 @@
    "title": "LEGO ANIMAL Dog, Terrier with Black Eyes and Nose and Pink Tongue Pattern 26078pb001",
    "url": "https://www.brickville.com.au/products/dog-terrier-with-black-eyes-and-nose-and-pink-tongue-pattern-26078pb001",
    "price": 9.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/26078pb001.png?v=1792889949",
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/26078pb001-n-weiss-2610142347.webp?v=1793826468",
    "inStock": true,
    "brand": "LEGO",
    "mpn": "26078"
@@ -183,7 +183,7 @@
    "title": "LEGO ANIMAL Harry Potter Owl (Errol) 92084pb02",
    "url": "https://www.brickville.com.au/products/lego-animal-harry-potter-owl-errol-92084pb02",
    "price": 4.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/92084pb02.png?v=1762655288",
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/4759_94d58f34-c930-4f9a-beda-d575311395bb.webp?v=1793826812",
    "inStock": true,
    "brand": "LEGO",
    "mpn": "92084"
@@ -282,7 +282,7 @@
    "title": "LEGO ANIMAL Owl (Pigwidgeon) 92084pb01",
    "url": "https://www.brickville.com.au/products/lego-animal-owl-pigwidgeon-92084pb01",
    "price": 1.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/92084pb01_bba3483c-52b8-4305-95e1-cca26595bf42.png?v=1762654002",
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/92084pb01_bba3483c-52b8-4305-95e1-cca26595bf42.png?v=1793826908",
    "inStock": true,
    "brand": "LEGO",
    "mpn": "92084"
@@ -561,7 +561,7 @@
    "url": "https://www.brickville.com.au/products/lego-architecture-taj-mahal-21056",
    "price": 219.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/products/BTKA_16852490592548783_259ab7bf98e99c6dac02afc41a2fa2.jpg?v=1686267052",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21056"
   },
@@ -695,7 +695,7 @@
    "url": "https://www.brickville.com.au/products/lego-batman-returns-batcave-shadow-box-76252",
    "price": 1799.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/lego-76252-dc-comics-super-heroes-batcave-shadow-box-10360671_00.jpg?v=1792464470",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76252"
   },
@@ -781,17 +781,6 @@
   },
   {
    "retailer": "brickville",
-   "sku": "10344",
-   "title": "LEGO Botanicals Lucky Bamboo 10344",
-   "url": "https://www.brickville.com.au/products/lego-botanicals-lucky-bamboo-10344",
-   "price": 49.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/64304217882654.jpg?v=1743650019",
-   "inStock": true,
-   "brand": "LEGO",
-   "mpn": "10344"
-  },
-  {
-   "retailer": "brickville",
    "sku": "11506",
    "title": "LEGO Botanicals Rocking Plants 11506",
    "url": "https://www.brickville.com.au/products/lego-botanicals-rocking-plants-11506",
@@ -828,7 +817,7 @@
    "sku": "910034",
    "title": "LEGO Brick Cross Train Station 910034",
    "url": "https://www.brickville.com.au/products/lego-brick-cross-train-station-910034",
-   "price": 649.99,
+   "price": 749.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l1200_b72b011a-1c9c-4473-9643-1dc6f1cd2cdd.jpg?v=1746063399",
    "inStock": true,
    "brand": "LEGO",
@@ -1722,6 +1711,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "7726",
+   "title": "LEGO City Coast Guard Truck with Speed Boat 7726",
+   "url": "https://www.brickville.com.au/products/lego-city-coast-guard-truck-with-speed-boat-7726",
+   "price": 99.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/7726box.webp?v=1793788269",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "7726"
+  },
+  {
+   "retailer": "brickville",
    "sku": "7905",
    "title": "LEGO City Construction Building Crane 7905",
    "url": "https://www.brickville.com.au/products/lego-city-construction-building-crane-7905",
@@ -1831,6 +1831,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "60433"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "60182",
+   "title": "LEGO City Pickup & Caravan 60182",
+   "url": "https://www.brickville.com.au/products/lego-city-pickup-caravan-60182",
+   "price": 129.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l640_a2a3503a-4647-47a8-887a-a7a0f0a5f9d4.png?v=1718885636",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "60182"
   },
   {
    "retailer": "brickville",
@@ -3764,6 +3775,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "75953",
+   "title": "LEGO Harry Potter Hogwarts Whomping Willow 75953",
+   "url": "https://www.brickville.com.au/products/lego-harry-potter-hogwarts-whomping-willow-75953",
+   "price": 139.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/61y843TxDCL._AC_UF894_1000_QL80.jpg?v=1701822677",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "75953"
+  },
+  {
+   "retailer": "brickville",
    "sku": "76387",
    "title": "LEGO Harry Potter Philosopher's Stone Hogwarts Fluffy Encounter 76387",
    "url": "https://www.brickville.com.au/products/lego-harry-potter-philosophers-stone-hogwarts-fluffy-encounter-76387",
@@ -3806,6 +3828,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "75957"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76420",
+   "title": "LEGO Harry Potter Triwizard Tournament The Black Lake 76420",
+   "url": "https://www.brickville.com.au/products/lego-harry-potter-triwizard-tournament-the-black-lake-76420",
+   "price": 79.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/43989820669982.jpg?v=1694946819",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76420"
   },
   {
    "retailer": "brickville",
@@ -3908,14 +3941,14 @@
   },
   {
    "retailer": "brickville",
-   "sku": "40601",
-   "title": "LEGO Icons Castle Majisto's Magical Workshop 40601",
-   "url": "https://www.brickville.com.au/products/lego-icons-castle-majistos-magical-workshop-40601",
-   "price": 69.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/download_04ead855-e6f4-4ec1-8c4a-17b9456bfcc3.jpg?v=1701332182",
+   "sku": "10292",
+   "title": "LEGO Icons Friends Apartments 10292",
+   "url": "https://www.brickville.com.au/products/lego-icons-friends-apartments-10292",
+   "price": 649.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l1200_a905648e-0eda-45a8-9552-943b7520bfd8.png?v=1793792102",
    "inStock": true,
    "brand": "LEGO",
-   "mpn": "40601"
+   "mpn": "10292"
   },
   {
    "retailer": "brickville",
@@ -3927,6 +3960,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "10273"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76989",
+   "title": "LEGO Icons Horizon Forbidden West Tallneck 76989",
+   "url": "https://www.brickville.com.au/products/lego-icons-horizon-forbidden-west-tallneck-76989",
+   "price": 219.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_c7ce44dd-d180-42c3-b43a-69a0601cfe2c.jpg?v=1793788967",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76989"
   },
   {
    "retailer": "brickville",
@@ -4118,6 +4162,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "21324",
+   "title": "LEGO Ideas 123 Sesame Street 21324",
+   "url": "https://www.brickville.com.au/products/lego-ideas-123-sesame-street-21324",
+   "price": 279.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l1200_5762c784-29cb-478e-8a56-0d4360e32a11.jpg?v=1749963490",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21324"
+  },
+  {
+   "retailer": "brickville",
    "sku": "21301",
    "title": "LEGO Ideas Birds 21301",
    "url": "https://www.brickville.com.au/products/lego-ideas-birds-21301",
@@ -4173,6 +4228,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "21335",
+   "title": "LEGO Ideas Motorized Lighthouse 21335",
+   "url": "https://www.brickville.com.au/products/lego-ideas-motorized-lighthouse-21335",
+   "price": 599.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/21335-1.jpg?v=1731928268",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21335"
+  },
+  {
+   "retailer": "brickville",
    "sku": "21309",
    "title": "LEGO Ideas NASA Apollo Saturn V 21309",
    "url": "https://www.brickville.com.au/products/lego-ideas-nasa-apollo-saturn-v-21309",
@@ -4204,6 +4270,28 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "21104"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "21344",
+   "title": "LEGO Ideas Orient Express 21344",
+   "url": "https://www.brickville.com.au/products/lego-ideas-orient-express-21345",
+   "price": 749.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/21344-Orient-Express-Box-1400x1049.jpg?v=1777006005",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21344"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "21322",
+   "title": "LEGO Ideas Pirates of Barracuda Bay 21322",
+   "url": "https://www.brickville.com.au/products/lego-ideas-pirates-of-barracuda-bay-21322",
+   "price": 599.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l1200_c921470e-7dfa-4fcd-aff3-cfb211febcb2.jpg?v=1793791577",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21322"
   },
   {
    "retailer": "brickville",
@@ -4438,6 +4526,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "76969"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76956",
+   "title": "LEGO Jurassic World Jurassic Park T. rex Breakout 76956",
+   "url": "https://www.brickville.com.au/products/lego-jurassic-world-jurassic-park-t-rex-breakout-76956",
+   "price": 279.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_6c790837-5ce5-402f-99f3-7cc5dea9186f.jpg?v=1793789356",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76956"
   },
   {
    "retailer": "brickville",
@@ -4696,6 +4795,18 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "76060"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76156",
+   "title": "LEGO Marvel Super Heroes Eternals Rise of the Domo 76156",
+   "url": "https://www.brickville.com.au/products/lego-eternals-rise-of-the-domo-76156",
+   "price": 119.99,
+   "wasPrice": 179.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/76156-myhobbies_600x_6fe0b4bf-49ff-4093-816e-3f1b7a2f0271.webp?v=1716431532",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76156"
   },
   {
    "retailer": "brickville",
@@ -5214,7 +5325,7 @@
    "url": "https://www.brickville.com.au/products/lego-ninjago-dragons-rising-city-markets-71799",
    "price": 689.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/71E4g1OoNcL.jpg?v=1742447120",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "71799"
   },
@@ -6012,7 +6123,7 @@
    "price": 299.99,
    "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_db9a94f4-2342-4e89-8b4e-23d637b33114.jpg?v=1783332368",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "6044"
   },
@@ -7565,18 +7676,6 @@
   },
   {
    "retailer": "brickville",
-   "sku": "7665",
-   "title": "LEGO Star Wars Republic Cruiser (Limited Edition) 7665",
-   "url": "https://www.brickville.com.au/products/lego-star-wars-republic-cruiser-limited-edition-7665",
-   "price": 1149.99,
-   "wasPrice": 1199.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/61zRRrLz3xL.jpg?v=1721479350",
-   "inStock": false,
-   "brand": "LEGO",
-   "mpn": "7665"
-  },
-  {
-   "retailer": "brickville",
    "sku": "75342",
    "title": "LEGO Star Wars Republic Fighter Tank 75342",
    "url": "https://www.brickville.com.au/products/lego-star-wars-republic-fighter-tank-75342",
@@ -7803,17 +7902,6 @@
   },
   {
    "retailer": "brickville",
-   "sku": "75045",
-   "title": "LEGO Star Wars The Clone Wars Republic AV-7 Anti-Vehicle Cannon 75045",
-   "url": "https://www.brickville.com.au/products/lego-star-wars-the-clone-wars-republic-av-7-anti-vehicle-cannon-75045",
-   "price": 599.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/71-1rXotZEL._AC_UF894_1000_QL80.jpg?v=1727960500",
-   "inStock": false,
-   "brand": "LEGO",
-   "mpn": "75045"
-  },
-  {
-   "retailer": "brickville",
    "sku": "75360",
    "title": "LEGO Star Wars The Clone Wars Yoda's Jedi Starfighter 75360",
    "url": "https://www.brickville.com.au/products/lego-star-wars-the-clone-wars-yodas-jedi-starfighter-75360",
@@ -8013,6 +8101,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "10221"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "75181",
+   "title": "LEGO Star Wars UCS Y-wing Starfighter 75181",
+   "url": "https://www.brickville.com.au/products/lego-star-wars-ucs-y-wing-starfighter-75181",
+   "price": 899.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/Lego-75181-Y-wing.webp?v=1741751631",
+   "inStock": false,
+   "brand": "LEGO",
+   "mpn": "75181"
   },
   {
    "retailer": "brickville",
@@ -8830,17 +8929,6 @@
   },
   {
    "retailer": "brickville",
-   "sku": "70841",
-   "title": "LEGO The LEGO Movie 2 Benny's Space Squad 70841",
-   "url": "https://www.brickville.com.au/products/lego-the-lego-movie-2-bennys-space-squad-70841",
-   "price": 59.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/products/original_5bab3128-dc21-4f54-8897-25cd1ae3ba66.jpg?v=1776073965",
-   "inStock": true,
-   "brand": "LEGO",
-   "mpn": "70841"
-  },
-  {
-   "retailer": "brickville",
    "sku": "70831",
    "title": "LEGO The Lego Movie 2 Emmet's Dream House/Rescue Rocket! 70831",
    "url": "https://www.brickville.com.au/products/lego-the-lego-movie-2-emmets-dream-house-rescue-rocket-70831",
@@ -8860,6 +8948,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "70826"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "70830",
+   "title": "LEGO The Lego Movie 2 Sweet Mayhem's Systar Starship! 70830",
+   "url": "https://www.brickville.com.au/products/lego-the-lego-movie-2-sweet-mayhems-systar-starship-70830",
+   "price": 119.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/70830_alt1.webp?v=1756723343",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "70830"
   },
   {
    "retailer": "brickville",
@@ -9148,6 +9247,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "40564"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "10254",
+   "title": "LEGO Winter Holiday Train 10254",
+   "url": "https://www.brickville.com.au/products/lego-winter-holiday-train-10254",
+   "price": 399.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/71JE1TS9BXL._AC_UF894_1000_QL80_82e2417c-ced3-4e70-88c3-cc6da6b0c975.jpg?v=1718885802",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "10254"
   },
   {
    "retailer": "brickville",

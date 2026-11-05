@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:44:39.282Z",
+ "scrapedAt": "2026-11-05T01:07:52.371Z",
  "offers": [
   {
    "retailer": "us-dell",
@@ -20,6 +20,39 @@
    "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/alienware16xauroraac16251",
    "price": 2199.99,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/ac16251/media-gallery/laptop-alienware-ac16251-blue-ff-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=973&qlt=100,0&resMode=sharp2&size=973,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellplus142n1laptopdb04250",
+   "brand": "Dell",
+   "title": "Dell 14 Plus 2-in-1 Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellplus142n1laptopdb04250",
+   "price": 1339.99,
+   "image": "https://i.dell.com/assetlink/img/en/2in1-dell-db04520-plus-bl-gallery-2-dl1ejhv-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1145&qlt=100,0&resMode=sharp2&size=1145,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellplus14laptopdb04255",
+   "brand": "Dell",
+   "title": "Dell 14 Plus 2-in-1 Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellplus14laptopdb04255",
+   "price": 1109.99,
+   "image": "https://i.dell.com/assetlink/img/en/laptop-dell-plus-db04255t-midnight-bl-gallery-1-dl1fj68-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1147&qlt=100,0&resMode=sharp2&size=1147,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellplus14laptopdb14250",
+   "brand": "Dell",
+   "title": "Dell 14 Plus Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellplus14laptopdb14250",
+   "price": 1299.99,
+   "image": "https://i.dell.com/assetlink/img/en/laptop-dell-db14250nt-fpr-laptop-bl-gallery-1-dl1evkv-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1018&qlt=100,0&resMode=sharp2&size=1018,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -68,12 +101,12 @@
   },
   {
    "retailer": "us-dell",
-   "sku": "dell16laptopdc16255",
+   "sku": "dellplus16laptopdb16255",
    "brand": "Dell",
-   "title": "Dell 16 Laptop",
-   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dell16laptopdc16255",
-   "price": 799.99,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell/dc16255/mg/black/non-fpr/notebook-dc16255-nt-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1035&qlt=100,0&resMode=sharp2&size=1035,804",
+   "title": "Dell 16 Plus Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellplus16laptopdb16255",
+   "price": 1249.99,
+   "image": "https://i.dell.com/assetlink/img/global/dell-db16255nt-laptop-c-15000ff105-ice-bl-fpr-dl16cq4-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1017&qlt=100,0&resMode=sharp2&size=1017,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -85,6 +118,17 @@
    "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dell16sds16260",
    "price": 1549.99,
    "image": "https://i.dell.com/assetlink/img/en/laptop-ds16260t-oled-blue-gallery-1-dl111nva-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1010&qlt=100,0&resMode=sharp2&size=1010,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dell16sds16265",
+   "brand": "Dell",
+   "title": "Dell 16S Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dell16sds16265",
+   "price": 1149.99,
+   "image": "https://i.dell.com/assetlink/img/global/notebook-ds16265nt-qhd-blue-gallery-1-dl112j4u-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1040&qlt=100,0&resMode=sharp2&size=1040,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -111,24 +155,47 @@
   },
   {
    "retailer": "us-dell",
+   "sku": "dellproplus13laptoppb13250",
+   "brand": "Dell",
+   "title": "Dell Pro 13 Plus Laptop or 2-in-1",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellproplus13laptoppb13250",
+   "price": 2025,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro-plus/pb13250/media-gallery/pb13250-4mm-mipi/laptop-dell-pro-pb13250nt-gy-4mm-mipi-5mp-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1344&qlt=100,0&resMode=sharp2&size=1344,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
    "sku": "dellpro14laptoppc14250",
    "brand": "Dell",
    "title": "Dell Pro 14 Laptop",
    "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellpro14laptoppc14250",
-   "price": 1334,
+   "price": 1343,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc14250/media-gallery/notebook-dell-pro-pc14250-hd-fhd-gy-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1062&qlt=100,0&resMode=sharp2&size=1062,804",
    "inStock": true,
    "fromPrice": true
   },
   {
    "retailer": "us-dell",
-   "sku": "pb14250_so_3",
+   "sku": "dellpro14laptoppc14255",
    "brand": "Dell",
-   "title": "Dell Pro 14 Plus Laptop or 2-in-1 - Intel Core Ultra 5 236V, 16 GB LPDDR5X, 512 GB SSD, 14\" Touch FHD+ (1920x1200)",
-   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellproplus14laptoppb14250/pb14250_so_3",
-   "price": 1936,
+   "title": "Dell Pro 14 Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellpro14laptoppc14255",
+   "price": 1224,
+   "image": "https://i.dell.com/assetlink/img/en/notebook-dell-pro-pc14255-hd-fhd-gy-gallery-1-cn-dl1107re-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1061&qlt=100,0&resMode=sharp2&size=1061,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellproplus14laptoppb14250",
+   "brand": "Dell",
+   "title": "Dell Pro 14 Plus Laptop or 2-in-1",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellproplus14laptoppb14250",
+   "price": 1896,
    "image": "https://i.dell.com/assetlink/img/en/laptop-dellpro-pb14520nt-gy-80mm-wlan-gallery-1-dl1evog-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1153&qlt=100,0&resMode=sharp2&size=1153,804",
-   "inStock": true
+   "inStock": true,
+   "fromPrice": true
   },
   {
    "retailer": "us-dell",
@@ -136,8 +203,29 @@
    "brand": "Dell",
    "title": "Dell Pro 16 Laptop",
    "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellpro16laptoppc16250",
-   "price": 1324,
+   "price": 1333,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc16250/media-gallery/gray/hd-fhd/laptop-dell-pro-pc16250-gy-hd-fhd-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1335&qlt=100,0&resMode=sharp2&size=1335,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "pc16250_so_23",
+   "brand": "Dell",
+   "title": "Dell Pro 16 Laptop - Intel Core 5 120U, 8 GB DDR5, 256 GB SSD, 16\" Non Touch IPS (1920x1200)",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellpro16laptoppc16250/pc16250_so_23",
+   "price": 1333,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pc16250/media-gallery/gray/hd-fhd/laptop-dell-pro-pc16250-gy-hd-fhd-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1335&qlt=100,0&resMode=sharp2&size=1335,804",
+   "inStock": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellpromaxplus16laptopmb16250",
+   "brand": "Dell",
+   "title": "Dell Pro Max 16 Plus Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellpromaxplus16laptopmb16250",
+   "price": 3395,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro-max-plus/mb16250/media-gallery/notebook-pro-max-mb16250nt-bk-ir-fpr-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1026&qlt=100,0&resMode=sharp2&size=1026,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -149,6 +237,17 @@
    "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellproprecision514spw514260",
    "price": 2580,
    "image": "https://i.dell.com/assetlink/img/global/notebook-pw514260-fpr-8mp-ir-camera-wwan-gray-gallery-1-dl1108en-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1017&qlt=100,0&resMode=sharp2&size=1017,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellproprecision516spw516260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 5 Series 16S Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellproprecision516spw516260",
+   "price": 2560,
+   "image": "https://i.dell.com/assetlink/img/global/notebook-precision-pw516260-fpr-8mp-ir-camera-wwan-gray-gallery-1-dl11084r-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1006&qlt=100,0&resMode=sharp2&size=1006,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -170,6 +269,28 @@
    "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/xps13dx13260",
    "price": 699.99,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-dx13260/media-gallery/sky/laptop-xps-13-sky-dx13260-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1043&qlt=100,0&resMode=sharp2&size=1043,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "xps14da14260",
+   "brand": "Dell",
+   "title": "Dell XPS 14 Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/xps14da14260",
+   "price": 1699.99,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/images/products/laptops-and-2-in-1s/xps/14-da14260-touch/dell-da14260t-laptop-c-15000ff100-gy-oled.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1076&qlt=100,0&resMode=sharp2&size=1076,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "xps16da16260",
+   "brand": "Dell",
+   "title": "Dell XPS 16 Laptop",
+   "url": "https://www.dell.com/en-us/shop/laptop-computers/spd/xps16da16260",
+   "price": 1899.99,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-16-da16260/media-gallery/touch/notebook-da16260-t-gray-gallery-11.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1542&qlt=100,0&resMode=sharp2&size=1542,804",
    "inStock": true,
    "fromPrice": true
   }

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:44:27.800Z",
+ "scrapedAt": "2026-11-05T01:07:33.086Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -481,7 +481,7 @@
    "price": 3646,
    "wasPrice": 3666.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1161472_1.jpg?v=1793613696",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dell",
    "mpn": "DEL8V43M"
   },
@@ -871,6 +871,17 @@
   },
   {
    "retailer": "us-beachcamera",
+   "sku": "HP14HZ0588NR",
+   "title": "Hewlett Packard OmniBook 3 14\" 2K OLED Snapdragon X 16GB/256GB Next Gen AI PC Laptop",
+   "url": "https://www.beachcamera.com/products/hewlett-packard-14-qc-sd-x-16g-256gb-nt-1",
+   "price": 680.67,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1225880_1.jpg?v=1793690143",
+   "inStock": true,
+   "brand": "Hewlett Packard",
+   "mpn": "HP14HZ0588NR"
+  },
+  {
+   "retailer": "us-beachcamera",
    "sku": "HP14HZ0688NR",
    "title": "Hewlett Packard OmniBook 3 14\" 2K OLED Snapdragon X 16GB/512GB Next Gen AI PC Laptop",
    "url": "https://www.beachcamera.com/products/hewlett-packard-14-qc-sd-x-16g-512gb-touch",
@@ -883,7 +894,7 @@
   {
    "retailer": "us-beachcamera",
    "sku": "HP14HZ0188NR",
-   "title": "Hewlett Packard OmniBook 3 14” 2K OLED Snapdragon X 8GB/256GB Next Gen AI PC Laptop",
+   "title": "Hewlett Packard OmniBook 3 14\" 2K OLED Snapdragon X 8GB/256GB Next Gen AI PC Laptop",
    "url": "https://www.beachcamera.com/products/hewlett-packard-14-qc-sd-x-8g-256gb-nt",
    "price": 499.99,
    "wasPrice": 599.99,
@@ -891,6 +902,17 @@
    "inStock": true,
    "brand": "Hewlett Packard",
    "mpn": "HP14HZ0188NR"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "HP14HZ0388NR",
+   "title": "Hewlett Packard OmniBook 3 14\" 2K Snapdragon X 16GB/512GB Next Gen AI PC Laptop, Silver",
+   "url": "https://www.beachcamera.com/products/hewlett-packard-14-qc-sd-x-16g-512gb-nt",
+   "price": 772.74,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1225893_1.jpg?v=1793690143",
+   "inStock": true,
+   "brand": "Hewlett Packard",
+   "mpn": "HP14HZ0388NR"
   },
   {
    "retailer": "us-beachcamera",
@@ -1278,7 +1300,7 @@
    "price": 2309.98,
    "wasPrice": 2771.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1165386_1.jpg?v=1793620634",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lenovo",
    "mpn": "LN21QG0007US"
   },
@@ -1480,7 +1502,7 @@
    "price": 1699,
    "wasPrice": 2158.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1165651_1.jpg?v=1793620821",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lenovo",
    "mpn": "LN21TF0027US"
   },

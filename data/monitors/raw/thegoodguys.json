@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:24:14.565Z",
+ "scrapedAt": "2026-11-05T00:46:25.915Z",
  "offers": [
   {
    "retailer": "thegoodguys",
@@ -212,17 +212,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "asus-zenscreen-16-inches-ips-portable-monitor-mb16fc",
-   "title": "Asus Zenscreen 16\" IPS Portable Monitor",
-   "url": "https://www.thegoodguys.com.au/asus-zenscreen-16-inches-ips-portable-monitor-mb16fc",
-   "price": 349,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100432_1088569.png?v=1792624305&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "MB16FC",
-   "brand": "Asus"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "dell-24-inches-fhd-curved-gaming-monitor-s2422hg",
    "title": "Dell 24\" FHD Curved Gaming Monitor",
    "url": "https://www.thegoodguys.com.au/dell-24-inches-fhd-curved-gaming-monitor-s2422hg",
@@ -388,7 +377,7 @@
    "sku": "lenovo-legion-r27qe-gen-2-27-inches-qhd-ips-monitor-68c7gac3au",
    "title": "Lenovo Legion R27qe Gen 2 27\" QHD IPS Monitor",
    "url": "https://www.thegoodguys.com.au/lenovo-legion-r27qe-gen-2-27-inches-qhd-ips-monitor-68c7gac3au",
-   "price": 299,
+   "price": 149,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098671_1056380.png?v=1777946505&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "68C7GAC3AU",
@@ -437,6 +426,16 @@
    "inStock": true,
    "mpn": "64BFUAR1AU",
    "brand": "Lenovo"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "lg-24-inches-fhd-ips-monitor-24u411a-baauq",
+   "title": "LG 24\" FHD IPS 120Hz 1ms MBR HDR10 Monitor",
+   "url": "https://www.thegoodguys.com.au/lg-24-inches-fhd-ips-monitor-24u411a-baauq",
+   "price": 154,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095507_1002375.png?v=1776233158&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "LG"
   },
   {
    "retailer": "thegoodguys",
@@ -543,7 +542,7 @@
    "sku": "msi-156-inches-fhd-portable-monitor-6069372",
    "title": "MSI 15.6\" FHD Portable Monitor",
    "url": "https://www.thegoodguys.com.au/msi-156-inches-fhd-portable-monitor-6069372",
-   "price": 279,
+   "price": 195,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094996_960025.png?v=1776753373&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "MSI"
@@ -563,8 +562,18 @@
    "sku": "msi-34-inches-uwqhd-1500r-curved-black-monitor-6216903",
    "title": "MSI 34\" UWQHD 1500R Curved Black Monitor",
    "url": "https://www.thegoodguys.com.au/msi-34-inches-uwqhd-1500r-curved-black-monitor-6216903",
-   "price": 649,
+   "price": 454,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095189_960024.png?v=1776232223&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "MSI"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "msi-34-inches-uwqhd-1500r-curved-white-monitor-6216904",
+   "title": "MSI 34\" UWQHD 1500R Curved White Monitor",
+   "url": "https://www.thegoodguys.com.au/msi-34-inches-uwqhd-1500r-curved-white-monitor-6216904",
+   "price": 454,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095190_960022.png?v=1776230596&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "MSI"
   },
@@ -625,6 +634,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "samsung-27-inches-odyssey-g51f-qhd-gaming-monitor-ls27fg510eexxy",
+   "title": "Samsung 27\" Odyssey G51F QHD Gaming Monitor",
+   "url": "https://www.thegoodguys.com.au/samsung-27-inches-odyssey-g51f-qhd-gaming-monitor-ls27fg510eexxy",
+   "price": 499,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095586_1003510.png?v=1776230365&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "LS27FG510EEXXY",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "samsung-27-inches-s36gd-curved-monitor-ls27d366gaexxy",
    "title": "Samsung 27\" S36GD Curved Monitor",
    "url": "https://www.thegoodguys.com.au/samsung-27-inches-s36gd-curved-monitor-ls27d366gaexxy",
@@ -639,7 +659,7 @@
    "sku": "samsung-32-inches-m70f-4k-uhd-smart-monitor-ls32fm700uexxy",
    "title": "Samsung 32\" M70F 4K UHD Smart Monitor",
    "url": "https://www.thegoodguys.com.au/samsung-32-inches-m70f-4k-uhd-smart-monitor-ls32fm700uexxy",
-   "price": 499,
+   "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095876_1005915.png?v=1776232775&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "LS32FM700UEXXY",
@@ -672,7 +692,7 @@
    "sku": "samsung-43-inches-m70f-4k-uhd-smart-monitor-ls43fm702uexxy",
    "title": "Samsung 43\" M70F 4K UHD Smart Monitor",
    "url": "https://www.thegoodguys.com.au/samsung-43-inches-m70f-4k-uhd-smart-monitor-ls43fm702uexxy",
-   "price": 849,
+   "price": 679,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095875_1005925.png?v=1776231237&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "LS43FM702UEXXY",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T01:00:57.911Z",
+ "scrapedAt": "2026-11-05T01:28:53.635Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -30,19 +30,8 @@
    "title": "ASUS GeForce RTX 5060 Ti 8GB GDDR16 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/asus-geforce-rtx-5060-ti-8gb-gddr16-graphics-card-90yv0mp2-m0na00/version.asp",
    "price": 524.97,
-   "wasPrice": 569.99,
+   "wasPrice": 622.79,
    "image": "https://www.laptopsdirect.co.uk/Images/90YV0MP2-M0NA00_1_Classic.jpg?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2031078",
-   "mpn": "90YV0MD3-M0NA00",
-   "title": "ASUS GeForce RTX 5070 Ti 16GB GDDR7 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/asus-geforce-rtx-5070-ti-16gb-gddr7-graphics-card-90yv0md3-m0na00/version.asp",
-   "price": 1308.97,
-   "wasPrice": 1399.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/90YV0MD3-M0NA00_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -51,7 +40,8 @@
    "mpn": "90YV0LV0-M0NA00",
    "title": "ASUS GeForce RTX 5080 16GB GDDR7 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/asus-geforce-rtx-5080-16gb-gddr7-graphics-card-90yv0lv0-m0na00/version.asp",
-   "price": 2550.97,
+   "price": 2522.97,
+   "wasPrice": 2712.41,
    "image": "https://www.laptopsdirect.co.uk/Images/90YV0LV0-M0NA00_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -102,7 +92,7 @@
    "mpn": "GV-N3050WF2OCV2-6GD",
    "title": "Gigabyte GeForce RTX 3050 WINDFORCE OC V2 6GB GDDR6 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-3050-windforce-oc-v2-6gb-gddr6-graphics-card-gv-n3050wf2ocv2-6gd/version.asp",
-   "price": 247.97,
+   "price": 250.97,
    "wasPrice": 268.9,
    "image": "https://www.laptopsdirect.co.uk/Images/GV-N3050WF2OCV2-6GD_1_Classic.jpg?v=1",
    "inStock": true
@@ -115,16 +105,6 @@
    "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-5060-ti-gaming-oc-16gb-gddr7-graphics-card-gv-n506tgaming-oc-16gd/version.asp",
    "price": 806.97,
    "image": "https://www.laptopsdirect.co.uk/Images/GV-N506TGAMING%20OC-16GD_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1845261",
-   "mpn": "GV-R76GAMING OC-8GD",
-   "title": "Gigabyte Radeon RX 7600 OC 8GB GDDR6 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/gigabyte-radeon-rx-7600-8gb-gddr6-oc-graphics-card-gv-r76gaming-oc-8gd/version.asp",
-   "price": 441.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/GV-R76GAMING%20OC-8GD_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -150,11 +130,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2716548",
+   "mpn": "GV-R907GREGAMING OC-12GD",
+   "title": "GIGABYTE Radeon RX 9070 GRE 12GB GDDR6 Graphics Card",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-radeon-rx-9070-gre-12gb-gddr6-graphics-card-gv-r907gregaming-oc-12gd/version.asp",
+   "price": 717.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GV-R907GREGAMING%20OC-12GD_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1999129",
    "mpn": "GV-R9070XTGAMING OC-16GD",
    "title": "Gigabyte Radeon RX 9070 XT GAMING OC 16GB GDDR6 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/gigabyte-radeon-rx-9070-xt-gaming-oc-16gb-gddr6-graphics-card-gv-r9070xtgaming-oc-16gd/version.asp",
-   "price": 1010.97,
+   "price": 1003.97,
+   "wasPrice": 1059,
    "image": "https://www.laptopsdirect.co.uk/Images/GV-R9070XTGAMING%20OC-16GD_1_Classic.png?v=5",
    "inStock": true
   },

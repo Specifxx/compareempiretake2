@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-11-04T00:09:30.771Z",
+ "scrapedAt": "2026-11-05T00:32:06.951Z",
  "offers": [
+  {
+   "retailer": "ecovacs",
+   "sku": "110-2241-0202",
+   "mpn": "DEEBOT N10",
+   "brand": "ECOVACS",
+   "title": "ECOVACS DEEBOT N10",
+   "url": "https://www.ecovacs.com/au/shop/deebot-robotic-vacuum-cleaner/deebot-n10",
+   "price": 799,
+   "image": "https://site-static.ecovacs.com/upload/au/image/product/2024/04/03/131200_1372-052355_6702-N10White-1-1280x1280.jpg",
+   "inStock": false
+  },
   {
    "retailer": "ecovacs",
    "sku": "110-2241-0304",
@@ -261,8 +272,7 @@
    "brand": "ECOVACS",
    "title": "ECOVACS DEEBOT X12S OmniCyclone",
    "url": "https://www.ecovacs.com/au/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone",
-   "price": 2499,
-   "wasPrice": 2999,
+   "price": 2999,
    "image": "https://site-static.ecovacs.com/upload/au/image/product/2026/09/08/053110_4388$au-deebot-x12s-oc-920x920.png",
    "inStock": true
   },

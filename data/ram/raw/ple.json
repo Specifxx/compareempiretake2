@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:20:14.362Z",
+ "scrapedAt": "2026-11-05T00:42:34.361Z",
  "offers": [
   {
    "retailer": "ple",
@@ -261,7 +261,7 @@
    "brand": "Corsair",
    "mpn": "CMH32GX5M2B6000Z38",
    "url": "https://www.ple.com.au/products/683827/corsair-vengeance-rgb-32gb-kit-2x16gb-xmpexpo-ddr5-6000-c38-grey-",
-   "price": 829,
+   "price": 839,
    "image": "https://plecom.imgix.net/iil-467472-683827.jpg?w=600&h=600",
    "inStock": true
   },
@@ -886,7 +886,7 @@
    "url": "https://www.ple.com.au/products/688730/geil-orion-8gb-kit-1x8gb-ddr4-3600-c18-charcoal-grey",
    "price": 109,
    "image": "https://plecom.imgix.net/iil-487508-688730.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -898,18 +898,6 @@
    "price": 179,
    "wasPrice": 209,
    "image": "https://plecom.imgix.net/iil-242570-644160.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "644162",
-   "title": "GeIL Orion RGB 16GB Kit (2x8GB) DDR4-3200 C16 (Grey)",
-   "brand": "GeIL",
-   "mpn": "GOSG416GB3200C16BDC",
-   "url": "https://www.ple.com.au/products/644162/geil-orion-rgb-16gb-kit-2x8gb-ddr4-3200-c16-grey",
-   "price": 189,
-   "wasPrice": 219,
-   "image": "https://plecom.imgix.net/iil-242577-644162.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -934,7 +922,7 @@
    "price": 699,
    "wasPrice": 779,
    "image": "https://plecom.imgix.net/iil-449087-679151.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -945,7 +933,7 @@
    "url": "https://www.ple.com.au/products/679152/geil-polaris-rgb-32gb-kit-2x16gb-expo-ddr5-6000-c36-white",
    "price": 779,
    "image": "https://plecom.imgix.net/iil-449094-679152.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1043,7 +1031,7 @@
    "brand": "Kingston",
    "mpn": "KF560C36BBE2K2-64",
    "url": "https://www.ple.com.au/products/679893/kingston-fury-64gb-kit-2x32gb-ddr5-6000-c36",
-   "price": 2349,
+   "price": 2599,
    "image": "https://plecom.imgix.net/iil-451643-679893.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1313,7 +1301,7 @@
    "brand": "Kingston",
    "mpn": "KF560C30BBEAK2-64",
    "url": "https://www.ple.com.au/products/666012/kingston-fury-beast-rgb-64gb-kit-2x32gb-ddr5-6000-c30",
-   "price": 2679,
+   "price": 2899,
    "image": "https://plecom.imgix.net/iil-381706-666012.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1562,7 +1550,8 @@
    "brand": "Lexar",
    "mpn": "LD4AS016G-B3200GSST",
    "url": "https://www.ple.com.au/products/686934/lexar-16gb-single-1x16gb-ddr4-3200-c22-so-dimm",
-   "price": 189,
+   "price": 179,
+   "wasPrice": 189,
    "image": "https://plecom.imgix.net/iil-479134-686934.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1620,7 +1609,7 @@
    "brand": "Lexar",
    "mpn": "LD4AS008G-B3200GSST",
    "url": "https://www.ple.com.au/products/686935/lexar-8gb-single-1x8gb-ddr4-3200-c22-so-dimm",
-   "price": 109,
+   "price": 99,
    "wasPrice": 119,
    "image": "https://plecom.imgix.net/iil-479135-686935.jpg?w=600&h=600",
    "inStock": false
@@ -1703,7 +1692,7 @@
    "brand": "Lexar",
    "mpn": "LD5U16G60C360V-RGS",
    "url": "https://www.ple.com.au/products/686936/lexar-thor-g2-16gb-single-1x16gb-ddr5-6000-c36",
-   "price": 339,
+   "price": 349,
    "image": "https://plecom.imgix.net/iil-479176-686936.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1714,8 +1703,7 @@
    "brand": "Lexar",
    "mpn": "LD5U16G60C380V-RGD",
    "url": "https://www.ple.com.au/products/685922/lexar-thor-g2-32gb-kit-2x16gb-ddr5-6000-c38",
-   "price": 649,
-   "wasPrice": 746,
+   "price": 769,
    "image": "https://plecom.imgix.net/iil-474567-685922.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1729,18 +1717,6 @@
    "price": 199,
    "wasPrice": 229,
    "image": "https://plecom.imgix.net/iil-474561-685924.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "685920",
-   "title": "Lexar THOR G2 RGB 16GB Single (1x16GB) DDR5-6000 C36",
-   "brand": "Lexar",
-   "mpn": "LD5U16G60C36BV-RGS",
-   "url": "https://www.ple.com.au/products/685920/lexar-thor-g2-rgb-16gb-single-1x16gb-ddr5-6000-c36",
-   "price": 309,
-   "wasPrice": 413,
-   "image": "https://plecom.imgix.net/iil-475105-685920.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -1776,7 +1752,7 @@
    "url": "https://www.ple.com.au/products/686669/patriot-viper-venom-32gb-kit-2x16gb-expo-amd-optimised-ddr5-6000-c36",
    "price": 699,
    "image": "https://plecom.imgix.net/iil-477636-686669.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",

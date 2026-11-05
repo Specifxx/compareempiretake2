@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:20:10.996Z",
+ "scrapedAt": "2026-11-05T00:42:30.993Z",
  "offers": [
   {
    "retailer": "ple",
@@ -631,6 +631,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "673517",
+   "title": "Lexar NM790 PCIe Gen4 NVMe M.2 SSD - 2TB",
+   "brand": "Lexar",
+   "mpn": "LNM790X002T-RNNNG",
+   "url": "https://www.ple.com.au/products/673517/lexar-nm790-pcie-gen4-nvme-m2-ssd-2tb",
+   "price": 549,
+   "image": "https://plecom.imgix.net/iil-420128-673517.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "685887",
    "title": "Lexar NM790 PCIe Gen4 NVMe M.2 SSD - 512GB",
    "brand": "Lexar",
@@ -720,7 +731,7 @@
    "url": "https://www.ple.com.au/products/685886/lexar-nq780-pcie-gen4-nvme-m2-ssd-4tb",
    "price": 849,
    "image": "https://plecom.imgix.net/iil-474316-685886.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -743,6 +754,18 @@
    "price": 189,
    "image": "https://plecom.imgix.net/iil-479133-686933.jpg?w=600&h=600",
    "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "688786",
+   "title": "Lexar NQ7A1 PCIe Gen4 NVMe M.2 SSD - 2TB",
+   "brand": "Lexar",
+   "mpn": "LNQ7A1X002T-HNNNU",
+   "url": "https://www.ple.com.au/products/688786/lexar-nq7a1-pcie-gen4-nvme-m2-ssd-2tb-",
+   "price": 449,
+   "wasPrice": 479,
+   "image": "https://plecom.imgix.net/iil-489133-688786.jpg?w=600&h=600",
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1482,7 +1505,7 @@
    "brand": "TEAM Group",
    "mpn": "TM8FFD002T0C101",
    "url": "https://www.ple.com.au/products/670593/team-mp44q-pcie-gen4-nvme-m2-ssd-2tb",
-   "price": 439,
+   "price": 409,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-406563-670593.jpg?w=600&h=600",
    "inStock": true

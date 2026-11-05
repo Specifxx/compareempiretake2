@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:59:30.902Z",
+ "scrapedAt": "2026-11-05T01:22:23.611Z",
  "offers": [
   {
    "retailer": "uk-hughes",
@@ -91,6 +91,17 @@
   },
   {
    "retailer": "uk-hughes",
+   "sku": "50a6stuk",
+   "mpn": "50A6STUK",
+   "brand": "Hisense",
+   "title": "Hisense A6S 50\" 4K Ultra HD LED 50Hz Smart TV - 50A6STUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/50a6stuk",
+   "price": 299,
+   "image": "https://cdn6.hughes.co.uk/media/2c/aa/4a/1789124369/HIS-50A6STUK-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
    "sku": "65a6stuk",
    "mpn": "65A6STUK",
    "brand": "Hisense",
@@ -146,17 +157,6 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "65e7stuk-pro",
-   "mpn": "65E7STUK-PRO",
-   "brand": "Hisense",
-   "title": "Hisense E7STUK-PRO 65\" 4K Ultra HD Hi-QLED Freely Smart TV - 65E7STUK-PRO",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/65e7stuk-pro",
-   "price": 699,
-   "image": "https://cdn6.hughes.co.uk/media/54/10/49/1786976048/HIS-65E7STUK-PRO-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "75e7stuk-pro",
    "mpn": "75E7STUK-PRO",
    "brand": "Hisense",
@@ -176,17 +176,6 @@
    "price": 1199,
    "image": "https://cdn6.hughes.co.uk/media/67/36/78/1786976109/HIS-85E7STUK-PRO-EL.jpg",
    "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "43q7stuk",
-   "mpn": "43Q7STUK",
-   "brand": "Hisense",
-   "title": "Hisense Q7S 43\" HI-QLED Smart TV - 43Q7STUK",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/43q7stuk",
-   "price": 329,
-   "image": "https://cdn6.hughes.co.uk/media/86/26/66/1789124037/HIS-43Q7STUK-EL.jpg",
-   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -219,6 +208,17 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/65q7stuk",
    "price": 599,
    "image": "https://cdn6.hughes.co.uk/media/9b/8b/b4/1787848004/HIS-65Q7STUK-EL.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "75q7stuk",
+   "mpn": "75Q7STUK",
+   "brand": "Hisense",
+   "title": "Hisense Q7S 75\" HI-QLED Smart TV - 75Q7STUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/75q7stuk",
+   "price": 749,
+   "image": "https://cdn6.hughes.co.uk/media/6a/9d/a3/1789124207/HIS-75Q7STUK-EL.jpg",
    "inStock": true
   },
   {
@@ -278,6 +278,28 @@
   },
   {
    "retailer": "uk-hughes",
+   "sku": "55u7stuk",
+   "mpn": "55U7STUK",
+   "brand": "Hisense",
+   "title": "Hisense U7S 55\" 4K Ultra HD ULED MiniLED Smart TV - 55U7STUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/55u7stuk",
+   "price": 699,
+   "image": "https://cdn6.hughes.co.uk/media/ce/e9/5b/1786704235/HIS-55U7STUK-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "65u7stuk",
+   "mpn": "65U7STUK",
+   "brand": "Hisense",
+   "title": "Hisense U7S 65\" 4K Ultra HD ULED MiniLED Smart TV - 65U7STUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/65u7stuk",
+   "price": 899,
+   "image": "https://cdn6.hughes.co.uk/media/19/6d/84/1786704159/HIS-65U7STUK-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
    "sku": "75u7stuk",
    "mpn": "75U7STUK",
    "brand": "Hisense",
@@ -296,7 +318,7 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/85u7stuk",
    "price": 1599,
    "image": "https://cdn6.hughes.co.uk/media/77/e7/65/1786703931/HIS-85U7STUK-EL.jpg",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -311,14 +333,14 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "75u7stuk-pro",
-   "mpn": "75U7STUK-PRO",
+   "sku": "55u7stuk-pro",
+   "mpn": "55U7STUK-PRO",
    "brand": "Hisense",
-   "title": "Hisense U7STUK-PRO 75\" 4K Ultra HD ULED Freely Smart TV - 75U7STUK-PRO",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/75u7stuk-pro",
-   "price": 1299,
-   "image": "https://cdn6.hughes.co.uk/media/bf/98/5d/1786725038/HIS-75U7STUK-PRO-EL.jpg",
-   "inStock": true
+   "title": "Hisense U7STUK-PRO 55\" 4K Ultra HD ULED Freely Smart TV - 55U7STUK-PRO",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/55u7stuk-pro",
+   "price": 799,
+   "image": "https://cdn6.hughes.co.uk/media/2a/80/3a/1786724936/HIS-55U7STUK-PRO-EL.jpg",
+   "inStock": false
   },
   {
    "retailer": "uk-hughes",
@@ -329,17 +351,6 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/85u7stuk-pro",
    "price": 1799,
    "image": "https://cdn6.hughes.co.uk/media/41/a6/17/1786725084/HIS-85U7STUK-PRO-EL.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "75u8qtuk",
-   "mpn": "75U8QTUK",
-   "brand": "Hisense",
-   "title": "Hisense U8QTUK 75\" 165Hz MiniLED Smart AI TV with Freely - 75U8QTUK",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/75u8qtuk",
-   "price": 1651,
-   "image": "https://cdn6.hughes.co.uk/media/55/4b/ee/1749737365/HIS-75U8QTUK-EL.jpg",
    "inStock": false
   },
   {
@@ -363,6 +374,17 @@
    "price": 1299,
    "image": "https://cdn6.hughes.co.uk/media/9b/15/71/1789123303/HIS-65UR8STUK-EL.jpg",
    "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "75ur8stuk",
+   "mpn": "75UR8STUK",
+   "brand": "Hisense",
+   "title": "Hisense UR8S 75\" 4K RGB Mini LED Smart TV - 75UR8STUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/hisense/75ur8stuk",
+   "price": 1899,
+   "image": "https://cdn6.hughes.co.uk/media/63/72/62/1789123132/HIS-75UR8STUK-EL.jpg",
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -394,17 +416,6 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/oled42c54la",
    "price": 799,
    "image": "https://cdn6.hughes.co.uk/media/19/ae/49/1743515307/LG-OLED42C54LA-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "oled42c66lb",
-   "mpn": "OLED42C66LB",
-   "brand": "Lg",
-   "title": "LG C66LB 42\" 4K Ultra HD OLED HDR evo AI Smart TV - OLED42C66LB",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/oled42c66lb",
-   "price": 899,
-   "image": "https://cdn6.hughes.co.uk/media/a0/01/3e/1778487140/LG-OLED42C66LB-EL.jpg",
    "inStock": true
   },
   {
@@ -453,17 +464,6 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "oled48g66ls",
-   "mpn": "OLED48G66LS",
-   "brand": "Lg",
-   "title": "LG Evo AI G66 48\" 4K Ultra Hd OLED 120Hz Smart TV - OLED48G66LS",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/oled48g66ls",
-   "price": 1299,
-   "image": "https://cdn6.hughes.co.uk/media/61/94/a3/1787922220/LG-OLED48G66LS-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "oled55g66ls",
    "mpn": "OLED55G66LS",
    "brand": "Lg",
@@ -504,16 +504,17 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/oled77g64lw",
    "price": 3499,
    "image": "https://cdn6.hughes.co.uk/media/a7/27/92/1787916613/LG-OLED77G64LW-EL.jpg",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hughes",
-   "sku": "55nano80a6b",
+   "sku": "oled83g64lw",
+   "mpn": "OLED83G64LW",
    "brand": "Lg",
-   "title": "LG NANO80A6B 55\" 4K Ultra HD NanoCell Smart TV 55NANO80A6B",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/55nano80a6b",
-   "price": 379.99,
-   "image": "https://cdn6.hughes.co.uk/media/4a/15/3c/1743091219/LG-55NANO80A6B-EL.jpg",
+   "title": "LG G64 Evo AI 83\" 4K Ultra HD OLED 120Hz Smart TV - OLED83G64LW",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/oled83g64lw",
+   "price": 5299,
+   "image": "https://cdn6.hughes.co.uk/media/41/75/f5/1787916021/LG-OLED83G64LW-EL.jpg",
    "inStock": false
   },
   {
@@ -525,7 +526,7 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/43nu900b6la",
    "price": 269,
    "image": "https://cdn6.hughes.co.uk/media/c5/9d/84/1779876017/LG-43NU900B6LA-EL.jpg",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -547,17 +548,6 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/75nu900b6la",
    "price": 709,
    "image": "https://cdn6.hughes.co.uk/media/72/4d/ae/1787934499/LG-75NU900B6LA-EL.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "85nu900b6la",
-   "mpn": "85NU900B6LA",
-   "brand": "Lg",
-   "title": "LG NU900 85\" 4K Ultra HD LED HDR Smart TV - 85NU900B6LA",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/85nu900b6la",
-   "price": 1139,
-   "image": "https://cdn6.hughes.co.uk/media/c3/55/65/1785233550/LG-85NU900B6LA-EL.jpg",
    "inStock": true
   },
   {
@@ -584,17 +574,6 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "43qned87b6a",
-   "mpn": "43QNED87B6A",
-   "brand": "Lg",
-   "title": "LG QNED87 43\" 4K QNED Mini LED Smart TV - 43QNED87B6A",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/43qned87b6a",
-   "price": 449,
-   "image": "https://cdn6.hughes.co.uk/media/3d/0c/2c/1778245568/LG-43QNED87B6A-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "50qned87b6a",
    "mpn": "50QNED87B6A",
    "brand": "Lg",
@@ -614,28 +593,6 @@
    "price": 899,
    "image": "https://cdn6.hughes.co.uk/media/85/b8/eb/1778245904/LG-65QNED87B6A-EL.jpg",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "75qned87b6a",
-   "mpn": "75QNED87B6A",
-   "brand": "Lg",
-   "title": "LG QNED87 75\" 4K QNED Mini LED Smart TV - 75QNED87B6A",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/75qned87b6a",
-   "price": 1299,
-   "image": "https://cdn6.hughes.co.uk/media/2a/fc/64/1778245998/LG-75QNED87B6A-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "86qned87b6a",
-   "mpn": "86QNED87B6A",
-   "brand": "Lg",
-   "title": "LG QNED87 86\" 4K QNED Mini LED Smart TV - 86QNED87B6A",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/lg/86qned87b6a",
-   "price": 1799,
-   "image": "https://cdn6.hughes.co.uk/media/4d/e8/3e/1778246094/LG-86QNED87B6A-EL.jpg",
-   "inStock": false
   },
   {
    "retailer": "uk-hughes",
@@ -771,13 +728,13 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "tv48z90beba",
-   "mpn": "TV-48Z90BEB",
+   "sku": "tv42z90beba",
+   "mpn": "TV-42Z90BEB",
    "brand": "Panasonic",
-   "title": "Panasonic Z90 Series 48\" 4K Ultra HD OLED Freely Fire TV - TV-48Z90BEB",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/panasonic/tv48z90beba",
-   "price": 999,
-   "image": "https://cdn6.hughes.co.uk/media/e2/54/95/1748945183/PAN-TV48Z90BEB-EL.jpg",
+   "title": "Panasonic Z90 Series 42\" 4K Ultra HD OLED Freely Fire TV - TV-42Z90BEB",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/panasonic/tv42z90beba",
+   "price": 899,
+   "image": "https://cdn6.hughes.co.uk/media/61/67/d6/1748944936/PAN-TV42Z90BEB-EL.jpg",
    "inStock": true
   },
   {
@@ -837,28 +794,6 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "ue43m70h",
-   "mpn": "UE43M70H",
-   "brand": "Samsung",
-   "title": "Samsung M70H 43\" 4K Ultra HD Mini LED HDR Vision AI Smart TV - UE43M70H",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/ue43m70h",
-   "price": 299,
-   "image": "https://cdn6.hughes.co.uk/media/31/26/a0/1779447510/SAM-UE43M70H-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "ue50m70h",
-   "mpn": "UE50M70H",
-   "brand": "Samsung",
-   "title": "Samsung M70H 50\" 4K Ultra HD Mini LED HDR Vision AI Smart TV - UE50M70H",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/ue50m70h",
-   "price": 349,
-   "image": "https://cdn6.hughes.co.uk/media/98/f8/76/1779447547/SAM-UE50M70H-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "ue55m70h",
    "mpn": "UE55M70H",
    "brand": "Samsung",
@@ -892,6 +827,61 @@
   },
   {
    "retailer": "uk-hughes",
+   "sku": "ue85m70h",
+   "mpn": "UE85M70H",
+   "brand": "Samsung",
+   "title": "Samsung M70H 85\" 4K Ultra HD Mini LED HDR Vision AI Smart TV - UE85M70H",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/ue85m70h",
+   "price": 1199,
+   "image": "https://cdn6.hughes.co.uk/media/d2/d4/24/1779449256/SAM-UE85M70H-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "qe75q7f2",
+   "mpn": "QE75Q7F2",
+   "brand": "Samsung",
+   "title": "Samsung Q7F2 75\" QLED 4K Vision AI Smart TV - QE75Q7F2",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe75q7f2",
+   "price": 849,
+   "image": "https://cdn6.hughes.co.uk/media/00/4a/a9/1774016187/SAM-QE75Q7F2-EL.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "qe83s90f",
+   "mpn": "QE83S90F",
+   "brand": "Samsung",
+   "title": "Samsung QES90F 83\" 4K Ultra HD OLED HDR Smart TV - QE83S90F",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe83s90f",
+   "price": 2699,
+   "image": "https://cdn6.hughes.co.uk/media/4c/9c/8e/1747230236/SAM-QE83S90F_E.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "qe43qn73h",
+   "mpn": "QE43QN73H",
+   "brand": "Samsung",
+   "title": "Samsung QN73H 43\" 4K Ultra HD Neo QLED Smart TV - QE43QN73H",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe43qn73h",
+   "price": 449,
+   "image": "https://cdn6.hughes.co.uk/media/9f/e3/af/1779810064/SAM-QE43QN73H-EL.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "qe55qn73h",
+   "mpn": "QE55QN73H",
+   "brand": "Samsung",
+   "title": "Samsung QN73H 55\" 4K Ultra HD Neo QLED Smart TV - QE55QN73H",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe55qn73h",
+   "price": 699,
+   "image": "https://cdn6.hughes.co.uk/media/63/5d/9b/1779811589/SAM-QE55QN73H-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
    "sku": "qe65qn73h",
    "mpn": "QE65QN73H",
    "brand": "Samsung",
@@ -914,17 +904,6 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "qe85qn73h",
-   "mpn": "QE85QN73H",
-   "brand": "Samsung",
-   "title": "Samsung QN73H 85\" 4K Ultra HD Neo QLED Smart TV - QE85QN73H",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe85qn73h",
-   "price": 1899,
-   "image": "https://cdn6.hughes.co.uk/media/ff/1c/52/1779812448/SAM-QE85QN73H-EL.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "qe50qn80h",
    "mpn": "QE50QN80H",
    "brand": "Samsung",
@@ -932,7 +911,7 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe50qn80h",
    "price": 649,
    "image": "https://cdn6.hughes.co.uk/media/dc/9b/4b/1779884013/SAM-QE50QN80H-EL.jpg",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hughes",
@@ -963,41 +942,8 @@
    "brand": "Samsung",
    "title": "Samsung QN80H 75\" 4K Ultra HD Neo QLED Smart TV - QE75QN80H",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe75qn80h",
-   "price": 1799,
+   "price": 1599,
    "image": "https://cdn6.hughes.co.uk/media/99/a0/02/1779884238/SAM-QE75QN80H-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "qe85qn80h",
-   "mpn": "QE85QN80H",
-   "brand": "Samsung",
-   "title": "Samsung QN80H 85\" 4K Ultra HD Neo QLED Smart TV - QE85QN80H",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe85qn80h",
-   "price": 2099,
-   "image": "https://cdn6.hughes.co.uk/media/6e/9d/16/1779884569/SAM-QE85QN80H-EL.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "mre55r85h",
-   "mpn": "MRE55R85H",
-   "brand": "Samsung",
-   "title": "Samsung R85H 55\" 4K Ultra HD Micro RGB Vision AI Smart TV - MRE55R85H",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/mre55r85h",
-   "price": 899,
-   "image": "https://cdn6.hughes.co.uk/media/13/d1/66/1788515880/SAM-MRE55R85H-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "mre65r85h",
-   "mpn": "MRE65R85H",
-   "brand": "Samsung",
-   "title": "Samsung R85H 65\" 4K Ultra HD Micro RGB Vision AI Smart TV - MRE65R85H",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/mre65r85h",
-   "price": 1299,
-   "image": "https://cdn6.hughes.co.uk/media/ef/66/8b/1788515681/SAM-MRE65R85H-EL.jpg",
    "inStock": true
   },
   {
@@ -1018,7 +964,7 @@
    "brand": "Samsung",
    "title": "Samsung S85H 55\" 4K Ultra HD OLED Vision AI Smart TV - QE55S85H",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe55s85h",
-   "price": 999,
+   "price": 899,
    "image": "https://cdn6.hughes.co.uk/media/03/c6/03/1790869201/SAM-QE65S85H-EL.jpg",
    "inStock": true
   },
@@ -1031,7 +977,18 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe65s85h",
    "price": 1399,
    "image": "https://cdn6.hughes.co.uk/media/03/c6/03/1790869201/SAM-QE65S85H-EL.jpg",
-   "inStock": false
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "qe42s90h",
+   "mpn": "QE42S90H",
+   "brand": "Samsung",
+   "title": "Samsung S90H 42\" 4K Ultra HD OLED HDR Vision AI Smart TV - QE42S90H",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe42s90h",
+   "price": 899,
+   "image": "https://cdn6.hughes.co.uk/media/1a/05/fe/1779465281/SAM-QE42S90H-EL.jpg",
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -1106,42 +1063,31 @@
    "brand": "Samsung",
    "title": "Samsung The Frame 43\" LS03HE 4k Ultra HD Vision AI Smart TV - QE43LS03HE",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe43ls03he",
-   "price": 849,
+   "price": 749,
    "image": "https://cdn6.hughes.co.uk/media/9a/a8/ae/1789143577/SAM-QE43LS03HE-1.jpg",
    "inStock": false
   },
   {
    "retailer": "uk-hughes",
-   "sku": "qe55ls03ha",
-   "mpn": "QE55LS03HA",
+   "sku": "qe55ls03hw",
+   "mpn": "QE55LS03HW",
    "brand": "Samsung",
-   "title": "Samsung The Frame 55\" LS03HA 4K Ultra HD 100Hz Smart TV - QE55LS03HA",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe55ls03ha",
-   "price": 899,
-   "image": "https://cdn6.hughes.co.uk/media/52/8b/49/1789973483/QELS03HA-Series-2.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "qe65ls03ha",
-   "mpn": "QE65LS03HA",
-   "brand": "Samsung",
-   "title": "Samsung The Frame 65\" LS03HA 4K Ultra HD 100Hz Smart TV - QE65LS03HA",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe65ls03ha",
-   "price": 1399,
-   "image": "https://cdn6.hughes.co.uk/media/52/8b/49/1789973483/QELS03HA-Series-2.jpg",
+   "title": "Samsung The Frame Pro 55\" LS03HW 4K Ultra HD HDR Smart TV - QE55LS03HW",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe55ls03hw",
+   "price": 1199,
+   "image": "https://cdn6.hughes.co.uk/media/a6/ec/a9/1788514123/SAM-QE55LS03HW-EL.jpg",
    "inStock": false
   },
   {
    "retailer": "uk-hughes",
-   "sku": "qe85ls03hw",
-   "mpn": "QE85LS03HW",
+   "sku": "qe65ls03hw",
+   "mpn": "QE65LS03HW",
    "brand": "Samsung",
-   "title": "Samsung The Frame Pro LS03HW 85\" 4K Ultra HD HDR Smart TV - QE85LS03HW",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe85ls03hw",
-   "price": 2799,
-   "image": "https://cdn6.hughes.co.uk/media/61/1e/9c/1788451061/SAM-QE85LS03HW-EL.jpg",
-   "inStock": true
+   "title": "Samsung The Frame Pro LS03HW 65\" 4K Ultra HD HDR Smart TV - QE65LS03HW",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/qe65ls03hw",
+   "price": 1499,
+   "image": "https://cdn6.hughes.co.uk/media/g0/d8/ee/1788452352/SAM-QE65LS03HW-EL.jpg",
+   "inStock": false
   },
   {
    "retailer": "uk-hughes",
@@ -1194,7 +1140,7 @@
    "brand": "Samsung",
    "title": "Samsung U8020H 85\" 4K Ultra HD Vision AI Smart TV - UE85U8020H",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/samsung/ue85u8020h",
-   "price": 899,
+   "price": 999,
    "image": "https://cdn6.hughes.co.uk/media/f3/75/db/1788447444/SAM-UE85U8020H-EL.jpg",
    "inStock": true
   },
@@ -1218,28 +1164,6 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k50s25m2pb",
    "price": 599,
    "image": "https://cdn6.hughes.co.uk/media/25/dd/70/1778682249/SON-K50S25M2PB-EL.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "k55s25m2pb",
-   "mpn": "K55S25M2",
-   "brand": "Sony",
-   "title": "Sony BRAVIA 2 II 55\" 4K Ultra HD Direct LED Google TV - K55S25M2",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k55s25m2pb",
-   "price": 679,
-   "image": "https://cdn6.hughes.co.uk/media/fb/5f/5e/1778682341/SON-K55S25M2PB-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "k65s25m2pb",
-   "mpn": "K65S25M2",
-   "brand": "Sony",
-   "title": "Sony BRAVIA 2 II 65\" 4K Ultra HD Direct LED Google TV - K65S25M2",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k65s25m2pb",
-   "price": 869,
-   "image": "https://cdn6.hughes.co.uk/media/d5/e5/da/1778682419/SON-K65S25M2PB-EL.jpg",
    "inStock": true
   },
   {
@@ -1251,7 +1175,7 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k43xr38m2pb",
    "price": 749,
    "image": "https://cdn6.hughes.co.uk/media/c7/0d/5e/1792069613/SON-KXR38M2PB-7.jpg",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -1262,7 +1186,7 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k50xr38m2pb",
    "price": 849,
    "image": "https://cdn6.hughes.co.uk/media/c7/0d/5e/1792069613/SON-KXR38M2PB-7.jpg",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -1273,7 +1197,7 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k55xr38m2pb",
    "price": 899,
    "image": "https://cdn6.hughes.co.uk/media/c7/0d/5e/1792069613/SON-KXR38M2PB-7.jpg",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -1284,7 +1208,7 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k65xr38m2pb",
    "price": 1199,
    "image": "https://cdn6.hughes.co.uk/media/c7/0d/5e/1792069613/SON-KXR38M2PB-7.jpg",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -1321,14 +1245,47 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "k98xr55bp.uka",
-   "mpn": "K98XR55BP",
+   "sku": "k85s38bp.uka",
+   "mpn": "K85S38B",
    "brand": "Sony",
-   "title": "Sony BRAVIA 5 98\" 4K XR Mini LED Smart Google TV - K98XR55BP",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k98xr55bp.uka",
-   "price": 3799,
-   "image": "https://cdn6.hughes.co.uk/media/6f/a3/52/1747324895/SON-K98XR55BP-EL.jpg",
+   "title": "Sony BRAVIA 3 KS38B 85\" 4K Ultra HD LED HDR Smart TV - K85S38B",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k85s38bp.uka",
+   "price": 1499,
+   "image": "https://cdn6.hughes.co.uk/media/18/bf/37/1749727306/SON-K85S38BP-EL.jpg",
    "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "k55xr55b.uka",
+   "mpn": "K55XR55B",
+   "brand": "Sony",
+   "title": "Sony BRAVIA 5 55\" 4K XR Mini LED Smart Google TV - K55XR55B",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k55xr55b.uka",
+   "price": 1299,
+   "image": "https://cdn6.hughes.co.uk/media/a7/c5/66/1743771507/SON-K55XR55B-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "k65xr55b.uka",
+   "mpn": "K65XR55B",
+   "brand": "Sony",
+   "title": "Sony BRAVIA 5 65\" 4K XR Mini LED Smart Google TV - K65XR55B",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k65xr55b.uka",
+   "price": 1299,
+   "image": "https://cdn6.hughes.co.uk/media/5f/0b/14/1743771588/SON-K65XR55B-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "k75xr55bp.uka",
+   "mpn": "K75XR55BP",
+   "brand": "Sony",
+   "title": "Sony BRAVIA 5 75\" 4K XR Mini LED Smart Google TV - K75XR55BP",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k75xr55bp.uka",
+   "price": 1899,
+   "image": "https://cdn6.hughes.co.uk/media/f5/b0/e5/1743771670/SON-K75XR55B-EL.jpg",
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -1340,17 +1297,6 @@
    "price": 1399,
    "image": "https://cdn6.hughes.co.uk/media/99/0c/46/1788785546/SON-K50XR75M2PB-EL.jpg",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "k55xr75m2b",
-   "mpn": "K55XR75M2PB",
-   "brand": "Sony",
-   "title": "Sony BRAVIA 7 II XR75M2PB 55\" 4K Ultra HD RGB LED HDR Smart TV - K55XR75M2PB",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k55xr75m2b",
-   "price": 1449,
-   "image": "https://cdn6.hughes.co.uk/media/6b/5f/c8/1788786293/SON-K55XR75M2B-EL.jpg",
-   "inStock": false
   },
   {
    "retailer": "uk-hughes",
@@ -1376,28 +1322,6 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "k98xr75m2pb",
-   "mpn": "K98XR75M2PB",
-   "brand": "Sony",
-   "title": "Sony BRAVIA 7 II XR75M2PB 98\" 4K Ultra HD RGB LED HDR Smart TV - K98XR75M2PB",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k98xr75m2pb",
-   "price": 5999,
-   "image": "https://cdn6.hughes.co.uk/media/68/5a/16/1788793462/SON-K98XR75M2PB-EL.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "k65xr8m25b.uka",
-   "mpn": "K65XR8M25B",
-   "brand": "Sony",
-   "title": "Sony BRAVIA 8 II 65\" 4K QD-OLED Google TV with Acoustic Surface Audio+ - K65XR8M25B",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k65xr8m25b.uka",
-   "price": 2199,
-   "image": "https://cdn6.hughes.co.uk/media/1c/09/4a/1743782647/SON-K65XR8M25B-EL.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "k77xr80pu",
    "mpn": "K77XR80PU",
    "brand": "Sony",
@@ -1405,17 +1329,28 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k77xr80pu",
    "price": 2299,
    "image": "https://cdn6.hughes.co.uk/media/ee/ab/53/1713370264/K-77XR80_ForEEA%28GB%29.png",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "k65xr95m2pb",
+   "mpn": "K65XR95M2PB",
+   "brand": "Sony",
+   "title": "Sony BRAVIA 9 II XR95M2PB 65\" 4K Ultra HD RGB LED HDR Smart TV - K65XR95M2PB",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k65xr95m2pb",
+   "price": 2999,
+   "image": "https://cdn6.hughes.co.uk/media/bf/f4/53/1788789482/SON-K65XR95M2PB-EL.jpg",
    "inStock": false
   },
   {
    "retailer": "uk-hughes",
-   "sku": "k115xr95m2b",
-   "mpn": "K115XR95M2PB",
+   "sku": "k75xr95m2pb",
+   "mpn": "K75XR95M2PB",
    "brand": "Sony",
-   "title": "Sony BRAVIA 9 II XR95M2PB 115\" 4K Ultra HD RGB LED HDR Smart TV - K115XR95M2PB",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k115xr95m2b",
-   "price": 22999,
-   "image": "https://cdn6.hughes.co.uk/media/8d/ed/f6/1788784954/SON-K115XR95M2B-EL.jpg",
+   "title": "Sony BRAVIA 9 II XR95M2PB 75\" 4K Ultra HD RGB LED HDR Smart TV - K75XR95M2PB",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/sony/k75xr95m2pb",
+   "price": 3999,
+   "image": "https://cdn6.hughes.co.uk/media/b2/5c/fe/1788791803/SON-K75XR95M2PB-EL.jpg",
    "inStock": false
   },
   {
@@ -1463,36 +1398,36 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "75a300w-uk",
-   "mpn": "75A300W",
+   "sku": "43a400pro-uk",
+   "mpn": "43A400PRO-UK",
    "brand": "Tcl",
-   "title": "TCL A300W 75\" 4K Ultra HD QLED Canvas Lifestyle TV - 75A300W",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/75a300w-uk",
-   "price": 1179,
-   "image": "https://cdn6.hughes.co.uk/media/c7/f9/c4/1751877032/TCL-75A300W-UK-EL.jpg",
+   "title": "TCL A400PRO 43\" 4K Ultra HD QD-Mini LED HDR Google Smart TV - 43A400PRO-UK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/43a400pro-uk",
+   "price": 499,
+   "image": "https://cdn6.hughes.co.uk/media/80/1b/6c/1788944483/TCL-43A400PRO-UK-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "55a400pro-uk",
+   "mpn": "55A400PRO-UK",
+   "brand": "Tcl",
+   "title": "TCL A400PRO 55\" 4K Ultra HD QD-Mini LED HDR Google Smart TV - 55A400PRO-UK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/55a400pro-uk",
+   "price": 729,
+   "image": "https://cdn6.hughes.co.uk/media/8e/93/b8/1788946980/TCL-55A400PRO-UK-EL.jpg",
    "inStock": false
   },
   {
    "retailer": "uk-hughes",
-   "sku": "65a400muk",
-   "mpn": "65A400M",
+   "sku": "65a400pro-uk",
+   "mpn": "65A400PRO-UK",
    "brand": "Tcl",
-   "title": "TCL A400M 65\" 4K Ultra HD QD-Mini LED HDR Smart TV - 65A400M",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/65a400muk",
-   "price": 799,
-   "image": "https://cdn6.hughes.co.uk/media/9a/21/1b/1788949444/TCL-65A400MUK-EL.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "75a400muk",
-   "mpn": "75A400M",
-   "brand": "Tcl",
-   "title": "TCL A400M 75\" 4K Ultra HD QD-Mini LED HDR Smart TV - 75A400M",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/75a400muk",
-   "price": 1099,
-   "image": "https://cdn6.hughes.co.uk/media/09/55/e3/1788952117/TCL-75A400MUK-EL.jpg",
-   "inStock": false
+   "title": "TCL A400PRO 65\" 4K Ultra HD QD-Mini LED HDR Google Smart TV - 65A400PRO-UK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/65a400pro-uk",
+   "price": 899,
+   "image": "https://cdn6.hughes.co.uk/media/94/76/97/1788949643/TCL-65A400PRO-UK-EL.jpg",
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -1507,24 +1442,35 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "55a400uuk",
-   "mpn": "55A400U-UK",
+   "sku": "65a400uuk",
+   "mpn": "65A400U-UK",
    "brand": "Tcl",
-   "title": "TCL A400U 55\" 4K Ultra HD QD-Mini LED HDR Smart TV - 55A400U-UK",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/55a400uuk",
-   "price": 699,
-   "image": "https://cdn6.hughes.co.uk/media/6c/93/62/1788947228/TCL-55A400UUK-EL.jpg",
-   "inStock": false
+   "title": "TCL A400U 65\" 4K Ultra HD QD-Mini LED HDR Smart TV - 65A400U-UK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/65a400uuk",
+   "price": 899,
+   "image": "https://cdn6.hughes.co.uk/media/1e/2a/3c/1788950663/TCL-65A400UUK-EL.jpg",
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
-   "sku": "85a400uuk",
-   "mpn": "85A400U-UK",
+   "sku": "75a400uuk",
+   "mpn": "75A400U-UK",
    "brand": "Tcl",
-   "title": "TCL A400U 85\" 4K Ultra HD QD-Mini LED HDR Smart TV - 85A400U-UK",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/85a400uuk",
-   "price": 1499,
-   "image": "https://cdn6.hughes.co.uk/media/48/51/1b/1788956583/TCL-85A400UUK-EL.jpg",
+   "title": "TCL A400U 75\" 4K Ultra HD QD-Mini LED HDR Smart TV - 75A400U-UK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/75a400uuk",
+   "price": 1299,
+   "image": "https://cdn6.hughes.co.uk/media/71/44/97/1788952525/TCL-75A400UUK-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "98a400uuk",
+   "mpn": "98A400U-UK",
+   "brand": "Tcl",
+   "title": "TCL A400U 98\" 4K Ultra HD QD-Mini LED HDR Smart TV - 98A400U-UK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/98a400uuk",
+   "price": 2199,
+   "image": "https://cdn6.hughes.co.uk/media/44/ca/fe/1788958035/TCL-98A400UUK-EL.jpg",
    "inStock": true
   },
   {
@@ -1547,6 +1493,17 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/65c8luk",
    "price": 1499,
    "image": "https://cdn6.hughes.co.uk/media/3f/9d/0c/1788950959/TCL-65C8LUK-EL.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "85c8luk",
+   "mpn": "85C8LUK",
+   "brand": "Tcl",
+   "title": "TCL C8LUK 85\" 4K Ultra HD SQD-Mini LED Smart TV - 85C8LUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/85c8luk",
+   "price": 2499,
+   "image": "https://cdn6.hughes.co.uk/media/70/b2/b4/1788956730/TCL-85C8LUK-EL.jpg",
    "inStock": false
   },
   {
@@ -1606,17 +1563,6 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "65p7luk",
-   "mpn": "65P7L-UK",
-   "brand": "Tcl",
-   "title": "TCL P7L 65\" 4K Smart QLED Google AI TV - 65P7L-UK",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/65p7luk",
-   "price": 579,
-   "image": "https://cdn6.hughes.co.uk/media/9d/af/71/1788951102/TCL-65P7LUK-EL.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "85p7luk",
    "mpn": "85P7L-UK",
    "brand": "Tcl",
@@ -1624,6 +1570,39 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/85p7luk",
    "price": 999,
    "image": "https://cdn6.hughes.co.uk/media/7f/8b/a6/1786364435/TCL-85P7LUK-EL.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "65rm7luk",
+   "mpn": "65RM7LUK",
+   "brand": "Tcl",
+   "title": "TCL RM7L 65\" 4K Ultra HD RGB-Mini LED TV - 65RM7LUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/65rm7luk",
+   "price": 999,
+   "image": "https://cdn6.hughes.co.uk/media/6a/34/65/1788951283/TCL-65RM7LUK-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "75rm7luk",
+   "mpn": "75RM7LUK",
+   "brand": "Tcl",
+   "title": "TCL RM7L 75\" 4K Ultra HD RGB-Mini LED TV - 75RM7LUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/75rm7luk",
+   "price": 1299,
+   "image": "https://cdn6.hughes.co.uk/media/b3/80/38/1788953064/TCL-75RM7LUK-EL.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "85rm7luk",
+   "mpn": "85RM7LUK",
+   "brand": "Tcl",
+   "title": "TCL RM7L 85\" 4K Ultra HD RGB-Mini LED TV - 85RM7LUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/85rm7luk",
+   "price": 1999,
+   "image": "https://cdn6.hughes.co.uk/media/8f/f3/49/1788957073/TCL-85RM7LUK-EL.jpg",
    "inStock": false
   },
   {
@@ -1677,7 +1656,7 @@
    "brand": "Tcl",
    "title": "TCL V5D-UK 32\" Full HD HDR QLED Freely Smart TV - 32V5DUK",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/32v5duk",
-   "price": 189,
+   "price": 169,
    "image": "https://cdn6.hughes.co.uk/media/76/ab/e4/1784200380/TCL-32V5DUK-EL.jpg",
    "inStock": false
   },
@@ -1705,6 +1684,17 @@
   },
   {
    "retailer": "uk-hughes",
+   "sku": "55v6cuk",
+   "mpn": "55V6CUK",
+   "brand": "Tcl",
+   "title": "TCL V6CUK 55\" 4K Ultra HD DLED HDR Google Smart TV - 55V6CUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/55v6cuk",
+   "price": 289,
+   "image": "https://cdn6.hughes.co.uk/media/fe/6f/04/1737473708/tcl-55v6c-uk-EL.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
    "sku": "43v6duk",
    "mpn": "43V6DUK",
    "brand": "Tcl",
@@ -1721,7 +1711,7 @@
    "brand": "Tcl",
    "title": "TCL V6DUK 50\" 4K Ultra HD Fire TV - 50V6DUK",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/50v6duk",
-   "price": 279,
+   "price": 259,
    "image": "https://cdn6.hughes.co.uk/media/cc/f2/df/1788946419/TCL-50V6DUK-EL.jpg",
    "inStock": true
   },
@@ -1732,8 +1722,19 @@
    "brand": "Tcl",
    "title": "TCL V6DUK 55\" 4K Ultra HD Fire TV - 55V6DUK",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/55v6duk",
-   "price": 349,
+   "price": 299,
    "image": "https://cdn6.hughes.co.uk/media/b8/cd/ab/1788949032/TCL-55V6DUK-EL.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "65v6duk",
+   "mpn": "65V6DUK",
+   "brand": "Tcl",
+   "title": "TCL V6DUK 65\" 4K Ultra HD Fire TV - 65V6DUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/65v6duk",
+   "price": 499,
+   "image": "https://cdn6.hughes.co.uk/media/a2/ff/91/1788951683/TCL-65V6DUK-EL.jpg",
    "inStock": true
   },
   {
@@ -1746,6 +1747,28 @@
    "price": 569,
    "image": "https://cdn6.hughes.co.uk/media/0d/48/9f/1788953287/TCL-75V6DUK-EL.jpg",
    "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "75x11luk",
+   "mpn": "75X11LUK",
+   "brand": "Tcl",
+   "title": "TCL X11L 75\" 4K Ultra HD SQD-Mini LED Smart TV - 75X11LUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/75x11luk",
+   "price": 3499,
+   "image": "https://cdn6.hughes.co.uk/media/e6/c1/1f/1788956168/TCL-75X11LUK-EL.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "85x11luk",
+   "mpn": "85X11LUK",
+   "brand": "Tcl",
+   "title": "TCL X11L 85\" 4K Ultra HD SQD-Mini LED Smart TV - 85X11LUK",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/televisions/all-televisions/tcl/85x11luk",
+   "price": 5299,
+   "image": "https://cdn6.hughes.co.uk/media/59/56/d4/1788957440/TCL-85X11LUK-EL.jpg",
+   "inStock": false
   }
  ]
 }

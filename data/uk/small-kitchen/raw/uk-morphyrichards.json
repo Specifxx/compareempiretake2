@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T01:01:17.753Z",
+ "scrapedAt": "2026-11-05T01:24:06.180Z",
  "offers": [
   {
    "retailer": "uk-morphyrichards",
@@ -16,7 +16,8 @@
    "sku": "48755",
    "title": "3 Tier Food Steamer",
    "url": "https://www.morphyrichards.co.uk/products/3-tier-food-steamer",
-   "price": 49.99,
+   "price": 39.99,
+   "wasPrice": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/48755_B.png?v=1692190398",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -306,7 +307,8 @@
    "sku": "511420",
    "title": "Cassini 20L 800W Black Digital Microwave - Moonless Night",
    "url": "https://www.morphyrichards.co.uk/products/cassini-20l-800w-blue-digital-microwave-outer-space-copy",
-   "price": 129.99,
+   "price": 99.99,
+   "wasPrice": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Cassini_20LitreDigitalMicrowave_511420_Front.png?v=1765277066",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -316,7 +318,8 @@
    "sku": "511421",
    "title": "Cassini 20L 800W Blue Digital Microwave - Outer Space",
    "url": "https://www.morphyrichards.co.uk/products/cassini-20l-800w-blue-digital-microwave-outer-space",
-   "price": 129.99,
+   "price": 99.99,
+   "wasPrice": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Cassini_20LitreDigitalMicrowave_511421_Front.png?v=1765276788",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -326,7 +329,8 @@
    "sku": "511422",
    "title": "Cassini 20L 800W Green Digital Microwave - Olivine",
    "url": "https://www.morphyrichards.co.uk/products/cassini-20l-800w-green-digital-microwave-olivine",
-   "price": 129.99,
+   "price": 99.99,
+   "wasPrice": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Cassini_20LitreDigitalMicrowave_511422_Front.png?v=1765276035",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -588,7 +592,7 @@
    "url": "https://www.morphyrichards.co.uk/products/easy-time-3-5l-slow-cooker",
    "price": 64.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/Bundle_Product_Stills_33dfcc35-8825-4b69-b595-0d250f9838fc.png?v=1763719278",
-   "inStock": true,
+   "inStock": false,
    "brand": "Morphy Richards"
   },
   {
@@ -606,7 +610,8 @@
    "sku": "222064",
    "title": "Equip Black 2 Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/equip-2-slice-toaster-black",
-   "price": 29.99,
+   "price": 24.99,
+   "wasPrice": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Equip_2SliceToaster_222064_Side.png?v=1759914032",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -626,7 +631,8 @@
    "sku": "222065",
    "title": "Equip Cream 2 Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/equip-2-slice-toaster-cream",
-   "price": 29.99,
+   "price": 24.99,
+   "wasPrice": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Equip_2SliceToaster_222065_Side.png?v=1759914407",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -646,7 +652,8 @@
    "sku": "222068",
    "title": "Equip Grey 2-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/equip-2-slice-toaster-grey",
-   "price": 29.99,
+   "price": 24.99,
+   "wasPrice": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Equip_2SliceToaster_222068_Side.png?v=1759914598",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -696,7 +703,8 @@
    "sku": "222066",
    "title": "Equip Red 2-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/equip-2-slice-toaster-red",
-   "price": 29.99,
+   "price": 24.99,
+   "wasPrice": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Equip_2SliceToaster_222066_Side.png?v=1759914779",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -706,7 +714,8 @@
    "sku": "222067",
    "title": "Equip Silver 2 Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/equip-2-slice-toaster-silver",
-   "price": 29.99,
+   "price": 24.99,
+   "wasPrice": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Equip_2SliceToaster_222067_Side.png?v=1759914247",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -787,8 +796,7 @@
    "sku": "450001",
    "title": "GrillX Toasted Sandwich Maker",
    "url": "https://www.morphyrichards.co.uk/products/grillx-toasted-sandwich-maker",
-   "price": 39.99,
-   "wasPrice": 59.99,
+   "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_ToasterSandwichMaker_450001_Side_Open.png?v=1762763062",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -839,8 +847,7 @@
    "sku": "220031",
    "title": "Hive Black 2-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/hive-2-slice-toaster-black",
-   "price": 28.99,
-   "wasPrice": 34.99,
+   "price": 34.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_2SliceToaster_220031_Side.png?v=1757601633",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -860,8 +867,7 @@
    "sku": "220032",
    "title": "Hive Cream 2-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/hive-2-slice-toaster-cream",
-   "price": 28.99,
-   "wasPrice": 34.99,
+   "price": 34.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_2SliceToaster_220032_Side.png?v=1757601451",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -881,8 +887,7 @@
    "sku": "220033",
    "title": "Hive Grey 2-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/hive-2-slice-toaster-grey",
-   "price": 28.99,
-   "wasPrice": 34.99,
+   "price": 34.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_2SliceToaster_220033_Side.png?v=1757601977",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -902,8 +907,7 @@
    "sku": "220034",
    "title": "Hive White 2-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/hive-2-slice-toaster-white",
-   "price": 28.99,
-   "wasPrice": 34.99,
+   "price": 34.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_2SliceToaster_220034_Side.png?v=1757601787",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1063,7 +1067,8 @@
    "sku": "242901",
    "title": "Mexborough 4 Slice Toaster - Black",
    "url": "https://www.morphyrichards.co.uk/products/mexborough-4-slice-toaster-black",
-   "price": 59.99,
+   "price": 49.99,
+   "wasPrice": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Mexborough_Black_Toaster_242901_Side.png?v=1752133031",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1073,7 +1078,8 @@
    "sku": "242902",
    "title": "Mexborough 4 Slice Toaster - Grey",
    "url": "https://www.morphyrichards.co.uk/products/mexborough-4-slice-toaster-grey",
-   "price": 59.99,
+   "price": 44.99,
+   "wasPrice": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Mexborough_Grey_Toaster_242902_Side.png?v=1752134235",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1083,7 +1089,8 @@
    "sku": "242903",
    "title": "Mexborough 4 Slice Toaster - White",
    "url": "https://www.morphyrichards.co.uk/products/mexborough-4-slice-toaster-white",
-   "price": 59.99,
+   "price": 44.99,
+   "wasPrice": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Mexborough_White_Toaster_242903_Side.png?v=1752134622",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1183,8 +1190,7 @@
    "sku": "400520",
    "title": "MixStar 4L Compact Stand Mixer",
    "url": "https://www.morphyrichards.co.uk/products/mixstar-compact-stand-mixer",
-   "price": 109.99,
-   "wasPrice": 189.99,
+   "price": 189.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/400520--1.png?v=1692183666",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1205,8 +1211,7 @@
    "sku": "242801",
    "title": "Motive Black 4 Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/morphy-richards-motive-4-slice-toaster-black",
-   "price": 37.99,
-   "wasPrice": 44.99,
+   "price": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/242801_A1.png?v=1697098278",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -1246,8 +1251,7 @@
    "sku": "242800",
    "title": "Motive Silver 4 Slice Toaster - Brushed Steel",
    "url": "https://www.morphyrichards.co.uk/products/morphy-richards-motive-4-slice-toaster-brushed-steel",
-   "price": 37.99,
-   "wasPrice": 44.99,
+   "price": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/Motive_4_Slice_242800.png?v=1723123825",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -1317,7 +1321,8 @@
    "sku": "60307380011392",
    "title": "Saute Soup 1.6L Soup Maker & FREE Mico Toastie Maker",
    "url": "https://www.morphyrichards.co.uk/products/saute-soup-1-6l-soup-maker-free-mico-toastie-maker",
-   "price": 129.98,
+   "price": 79.99,
+   "wasPrice": 129.98,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/Saute_Soup_Maker_with_Toastie_Maker.png?v=1793710979",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1347,8 +1352,7 @@
    "sku": "460016",
    "title": "Sear & Stew Oval 3.5L Slow Cooker - Rose Gold",
    "url": "https://www.morphyrichards.co.uk/products/sear-stew-oval-3-5l-slow-cooker",
-   "price": 39.99,
-   "wasPrice": 59.99,
+   "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_3.5LSlowCooker_460016_Front_copy.png?v=1720709481",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1368,8 +1372,7 @@
    "sku": "461016",
    "title": "Sear & Stew Oval 6.5L Slow Cooker - Rose Gold",
    "url": "https://www.morphyrichards.co.uk/products/rose-gold-sear-stew-slow-cooker-6-5l",
-   "price": 64.99,
-   "wasPrice": 74.99,
+   "price": 74.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_6.5LSlowCooker_461016_Front_copy.png?v=1720709703",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -1400,8 +1403,7 @@
    "sku": "245705",
    "title": "Signature Grey 4 Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/signature-toaster-grey",
-   "price": 69.99,
-   "wasPrice": 99.99,
+   "price": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Signature_LongSlot4SliceToaster_245705_Side.png?v=1769004038",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1421,8 +1423,7 @@
    "sku": "245744",
    "title": "Signature Matt Black 4-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/signature-4-slice-toaster-black",
-   "price": 69.99,
-   "wasPrice": 99.99,
+   "price": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Signature_LongSlot4SliceToaster_245744_Side.png?v=1769004470",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1462,8 +1463,7 @@
    "sku": "245742",
    "title": "Signature Matt Copper 4-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/signature-4-slice-toaster-copper",
-   "price": 69.99,
-   "wasPrice": 99.99,
+   "price": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_Signature_LongSlot4SliceToaster_245742_Side.png?v=1769004263",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1503,8 +1503,7 @@
    "sku": "485501",
    "title": "ThermoGrill Contact Grill with Temperature Probe",
    "url": "https://www.morphyrichards.co.uk/products/thermogrill-contact-grill-with-temperature-probe",
-   "price": 99.99,
-   "wasPrice": 129.99,
+   "price": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/MorphyRichards_ThermoGrill_ContactGrill_485501_Front.png?v=1769686415",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1675,8 +1674,7 @@
    "sku": "100131",
    "title": "Venture 1.5L Pyramid Kettle - Black",
    "url": "https://www.morphyrichards.co.uk/products/venture-pyramid-kettle-black",
-   "price": 44.99,
-   "wasPrice": 59.99,
+   "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/ventureblack_b6079947-70e5-4423-8961-9ce2c10a9ceb.png?v=1695714137",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -1686,8 +1684,7 @@
    "sku": "100132",
    "title": "Venture 1.5L Pyramid Kettle - Cream",
    "url": "https://www.morphyrichards.co.uk/products/venture-pyramid-kettle-cream",
-   "price": 44.99,
-   "wasPrice": 59.99,
+   "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/Bundle_Product_Stills_b5307143-e9ba-4777-a5b2-199fd2ac02fc.png?v=1764072455",
    "inStock": false,
    "brand": "Morphy Richards"
@@ -1737,8 +1734,7 @@
    "sku": "100130",
    "title": "Venture 1.5L Silver Pyramid Kettle",
    "url": "https://www.morphyrichards.co.uk/products/venture-pyramid-kettle-silver",
-   "price": 44.99,
-   "wasPrice": 59.99,
+   "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/venturesilver_7d8eff3f-c4ae-4e27-8c6c-dd13ee124fbd.png?v=1695714115",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1748,8 +1744,7 @@
    "sku": "240131",
    "title": "Venture Black 4-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/venture-4-slice-toaster-black",
-   "price": 49.99,
-   "wasPrice": 64.99,
+   "price": 64.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/240131.png?v=1695718424",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1789,8 +1784,7 @@
    "sku": "240132",
    "title": "Venture Cream 4-Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/venture-4-slice-toaster-cream",
-   "price": 49.99,
-   "wasPrice": 64.99,
+   "price": 64.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/240132.png?v=1695717821",
    "inStock": true,
    "brand": "Morphy Richards"
@@ -1910,8 +1904,7 @@
    "sku": "240130",
    "title": "Venture Retro Silver 4 Slice Toaster",
    "url": "https://www.morphyrichards.co.uk/products/venture-4-slice-toaster-stainless-steel",
-   "price": 49.99,
-   "wasPrice": 64.99,
+   "price": 64.99,
    "image": "https://cdn.shopify.com/s/files/1/0804/0808/4768/files/240130.png?v=1695718140",
    "inStock": true,
    "brand": "Morphy Richards"

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:46:04.192Z",
+ "scrapedAt": "2026-11-05T01:09:18.953Z",
  "offers": [
   {
    "retailer": "us-glazers",
@@ -158,7 +158,7 @@
    "url": "https://www.glazerscamera.com/products/canon-eos-r10-body",
    "price": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/products/EOSR10Body01_5331C002AA.jpg?v=1653367037",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon"
   },
   {
@@ -1740,7 +1740,8 @@
    "sku": "88537",
    "title": "Lumix S5 IIX Mirrorless Camera",
    "url": "https://www.glazerscamera.com/products/lumix-dc-s5iix-body",
-   "price": 2199.99,
+   "price": 1799.99,
+   "wasPrice": 2199.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/products/88537_Hero.png?v=1672854200",
    "inStock": true,
    "brand": "Lumix"

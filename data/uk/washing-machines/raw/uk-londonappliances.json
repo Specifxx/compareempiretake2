@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:59:42.965Z",
+ "scrapedAt": "2026-11-05T01:22:54.420Z",
  "offers": [
   {
    "retailer": "uk-londonappliances",
@@ -191,7 +191,7 @@
    "sku": "LFR94946WS",
    "title": "AEG LFR94946WS 9000 Series Front Loading Full Size 9kg Washing Machine",
    "url": "https://www.londonappliances.com/products/aeg-lfr94946ws-9000-series-front-loading-full-size-9kg-washing-machine",
-   "price": 1099,
+   "price": 1099.99,
    "wasPrice": 1239,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/PSAAWM220PA00074_7e66189b-ebb9-4821-bbc8-7e217a5fb6f3.jpg?v=1726141019",
    "inStock": true,
@@ -321,7 +321,7 @@
    "sku": "LFX6G7434BI",
    "title": "AEG LFX6G7434BI 6000 Series Front Loading Full Size 7kg Washing Machine",
    "url": "https://www.londonappliances.com/products/aeg-lfx6g7434bi-6000-series-front-loading-full-size-7kg-washing-machine",
-   "price": 649,
+   "price": 649.99,
    "wasPrice": 679,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/PSAAWM240PE00004_cda376df-43f1-4b20-abe3-da4d73e452ef.png?v=1726139876",
    "inStock": true,
@@ -332,7 +332,7 @@
    "sku": "LFX6G8434BI",
    "title": "AEG LFX6G8434BI 6000 Series Front Loading Full Size 8kg Washing Machine",
    "url": "https://www.londonappliances.com/products/aeg-lfx6g8434bi-6000-series-front-loading-full-size-8kg-washing-machine",
-   "price": 592,
+   "price": 659,
    "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/PSAAWM240PE00005.png?v=1726139311",
    "inStock": false,
@@ -364,7 +364,7 @@
    "sku": "LWR7196U4B",
    "title": "AEG LWR7196U4B 7000 Series, 9kg/5kg 1600rpm Freestanding Washer Dryer",
    "url": "https://www.londonappliances.com/products/aeg-lwr7196u4b-9kg-5kg-1600rpm-freestanding-washer-dryer",
-   "price": 999,
+   "price": 1049,
    "wasPrice": 1069,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/PSAAWD230PA00001.jpg?v=1750439951",
    "inStock": true,
@@ -440,7 +440,7 @@
    "sku": "LWX60746B",
    "title": "AEG LWX60746B 6000 Series 7/4kg Washer Dryer",
    "url": "https://www.londonappliances.com/products/aeg-lwx60746b-6000-series-7-4kg-washer-dryer",
-   "price": 679,
+   "price": 679.99,
    "wasPrice": 829,
    "inStock": true,
    "mpn": "LWX60746B"
@@ -471,7 +471,7 @@
    "sku": "LX6WG74634BI",
    "title": "AEG LX6WG74634BI 6000 Series 7/4kg Washer Dryer",
    "url": "https://www.londonappliances.com/products/aeg-lx6wg74634bi-6000-series-7-4kg-washer-dryer",
-   "price": 779,
+   "price": 919,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/PSAAWD240PE00002_cd452bcc-becf-485c-9217-d6752224c219.jpg?v=1726140084",
    "inStock": true,
    "mpn": "LX6WG74634BI"
@@ -567,7 +567,7 @@
    "sku": "TR818P4B",
    "title": "AEG TR818P4B 8000 Series 8kg Heat Pump Tumble Dryer",
    "url": "https://www.londonappliances.com/products/aeg-tr818p4b-8000-series-8kg-heat-pump-tumble-dryer",
-   "price": 589,
+   "price": 619.99,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/PSAADY220PA0002I.png?v=1726140622",
    "inStock": true,
    "mpn": "TR818P4B"
@@ -760,7 +760,7 @@
    "price": 579,
    "wasPrice": 739,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/wth85225gb_800x800_8aad5f82-0f50-4e6d-b641-143635a5b859.webp?v=1731254567",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bosch",
    "mpn": "WTH85225GB"
   },
@@ -1558,7 +1558,7 @@
    "price": 445,
    "wasPrice": 527.72,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/NDEH11A2TCEXM.jpg?v=1722509552",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hoover",
    "mpn": "NDEH11A2TCEXM"
   },
@@ -1617,7 +1617,7 @@
    "price": 395,
    "wasPrice": 509,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/products/pi-61701703-ad49-44fb-bc46-883351eaa3c8_0bf77080-6881-4baf-8a20-182db0cc40cf.jpg?v=1681950445",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hotpoint",
    "mpn": "BIWDHG75148UKN"
   },
@@ -1781,7 +1781,7 @@
    "price": 519,
    "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/pi-ae510ec3-9ebd-4212-afc4-8d4f593bab4b.jpg?v=1786443858",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hotpoint",
    "mpn": "CHK83MWWUK"
   },
@@ -2008,7 +2008,7 @@
    "price": 499,
    "wasPrice": 529,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/pi-3d2861f2-39ef-49a8-9d0d-5fbce06e5e2a.jpg?v=1786444041",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hotpoint",
    "mpn": "HPD9693GCAREUK"
   },
@@ -2043,7 +2043,7 @@
    "price": 340,
    "wasPrice": 369,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/pi-f0ecf110-9fc8-40da-bcde-7e600c3b4149.jpg?v=1722509425",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hotpoint",
    "mpn": "NSWF7469GGUK"
   },
@@ -2146,7 +2146,7 @@
    "sku": "CYD92DWWUK",
    "title": "Indesit C YD 92D WW UK Freestanding 9kg Heat Pump Tumble Dryer",
    "url": "https://www.londonappliances.com/products/indesit-c-yd-92d-ww-uk-freestanding-9kg-heat-pump-tumble-dryer",
-   "price": 369,
+   "price": 329,
    "wasPrice": 449,
    "inStock": false,
    "brand": "Indesit",
@@ -2202,7 +2202,7 @@
    "sku": "CYDA81WWGLUK",
    "title": "Indesit CYDA81WWGLUK 8kg Vented Tumble Dryer - White",
    "url": "https://www.londonappliances.com/products/indesit-cyda81wwgluk-8kg-vented-tumble-dryer-white",
-   "price": 269,
+   "price": 251,
    "wasPrice": 289,
    "image": "https://cdn.shopify.com/s/files/1/0678/1354/0140/files/pi-9442376b-94ad-4b06-bc41-31126d11bc73.jpg?v=1730716580",
    "inStock": false,

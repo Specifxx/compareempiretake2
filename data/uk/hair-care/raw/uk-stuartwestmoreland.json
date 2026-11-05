@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T01:05:00.328Z",
+ "scrapedAt": "2026-11-05T01:29:27.145Z",
  "offers": [
   {
    "retailer": "uk-stuartwestmoreland",
@@ -42,7 +42,7 @@
    "url": "https://www.stuartwestmoreland.co.uk/products/dreame-pocket-neo-hair-dryer-gold-ahd51-gold",
    "price": 119,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/AHD51-GOLD-1.jpg?v=1768296175",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dreame",
    "mpn": "AHD51-GOLD"
   },
@@ -106,9 +106,10 @@
    "sku": "HD436SLUK",
    "title": "Shark FlexStyle Air Styler & Hair Dryer for Straight & Wavy Hair in Stone - HD436SLUK",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-flexstyle-air-styler-hair-dryer-for-straight-wavy-hair-in-stone-hd436sluk",
-   "price": 249.99,
+   "price": 149.99,
+   "wasPrice": 249.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/HD436SLUK-1.jpg?v=1768296592",
-   "inStock": true,
+   "inStock": false,
    "brand": "Shark",
    "mpn": "HD436SLUK"
   },
@@ -139,9 +140,10 @@
    "sku": "HD701UK",
    "title": "Shark SpeedStyle Pro High-Velocity Hair Dryer System – Black | HD701UK",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-speedstyle-pro-hd701uk-high-velocity-hair-dryer-black",
-   "price": 139.99,
+   "price": 99.99,
+   "wasPrice": 139.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/HD701UK-1.jpg?v=1781695775",
-   "inStock": true,
+   "inStock": false,
    "brand": "Shark",
    "mpn": "HD701UK"
   }

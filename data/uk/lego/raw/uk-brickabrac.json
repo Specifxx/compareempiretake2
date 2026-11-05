@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:52:46.962Z",
+ "scrapedAt": "2026-11-05T01:16:06.469Z",
  "offers": [
   {
    "retailer": "uk-brickabrac",
@@ -1671,7 +1671,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-city-30663-space-hoverbike-polybag",
    "price": 3.49,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/30663-1.jpg?v=1729588299",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "30663"
   },
@@ -2853,6 +2853,17 @@
   },
   {
    "retailer": "uk-brickabrac",
+   "sku": "41016",
+   "title": "LEGO Friends 41016 Advent Calendar",
+   "url": "https://www.brickabrac.co.uk/products/lego-friends-41016-advent-calendar",
+   "price": 26.99,
+   "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/box.jpg?v=1793792564",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "41016"
+  },
+  {
+   "retailer": "uk-brickabrac",
    "sku": "41040",
    "title": "LEGO Friends 41040 Advent Calendar 2014",
    "url": "https://www.brickabrac.co.uk/products/lego-friends-41040-advent-calendar-2014",
@@ -3911,7 +3922,8 @@
    "sku": "76354",
    "title": "LEGO Marvel 76354 S.H.I.E.L.D. Helicarrier",
    "url": "https://www.brickabrac.co.uk/products/lego-marvel-76354-s-h-i-e-l-d-helicarrier",
-   "price": 329.99,
+   "price": 259.99,
+   "wasPrice": 329.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/76354_39282.jpg?v=1780330808",
    "inStock": true,
    "brand": "LEGO",

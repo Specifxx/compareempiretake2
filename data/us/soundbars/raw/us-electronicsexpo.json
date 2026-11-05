@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:44:52.811Z",
+ "scrapedAt": "2026-11-05T01:07:58.021Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -19,7 +19,7 @@
    "url": "https://www.electronicsexpo.com/products/definitive-technology-mythos-3c-65-ultra-slim-on-wall-passive-sound-bar-for-65-class-tvs-each",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/definitive-technology-mythos-3c-65-passive-3-channel-home-theater-sound-bar-each-7013417.jpg?v=1753289450",
-   "inStock": true,
+   "inStock": false,
    "brand": "Definitive Technology",
    "mpn": "DEFMYTHOSSC65.FBA"
   },
@@ -30,7 +30,7 @@
    "url": "https://www.electronicsexpo.com/products/definitive-technology-mythos-3c-75-passive-3-channel-home-theater-sound-bar-each",
    "price": 1999,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/definitive-technology-mythos-3c-75-passive-3-channel-home-theater-sound-bar-each-2955040.jpg?v=1753289413",
-   "inStock": true,
+   "inStock": false,
    "brand": "Definitive Technology",
    "mpn": "DEFMYTHOSSC75.FBA"
   },
@@ -96,7 +96,7 @@
    "url": "https://www.electronicsexpo.com/products/harman-kardon-enchant-900-powered-5-0-2-channel-dolby-atmos-sound-bar-with-wi-fi-bluetooth-and-apple-airplay-2",
    "price": 549.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/harman-kardon-enchant-900-powered-502-channel-dolby-atmos-sound-bar-with-wi-fi-bluetooth-and-apple-airplay-2-product-type-2980727.webp?v=1784741894",
-   "inStock": true,
+   "inStock": false,
    "brand": "Harman Kardon",
    "mpn": "HARENCHANT900"
   },
@@ -107,7 +107,7 @@
    "url": "https://www.electronicsexpo.com/products/harman-kardon-enchant-sub-2-6-1-2-wireless-powered-subwoofer-for-harman-kardon-enchant-sound-bars",
    "price": 449.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/harman-kardon-enchant-sub-2-6-12-wireless-powered-subwoofer-for-harman-kardon-enchant-sound-bars-product-type-3843278.jpg?v=1784741892",
-   "inStock": true,
+   "inStock": false,
    "brand": "Harman Kardon"
   },
   {
@@ -345,7 +345,7 @@
    "sku": "LGES95TR",
    "title": "LG S95TR 9.1.5-Channel Dolby Atmos Soundbar System with Wireless Rear Speakers",
    "url": "https://www.electronicsexpo.com/products/lg-s95tr-9-1-5-channel-dolby-atmos-soundbar-system-with-wireless-rear-speakers",
-   "price": 1599,
+   "price": 1599.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/soundbars1.jpg?v=1781120190",
    "inStock": false,
    "mpn": "LGES95TR"
@@ -582,8 +582,7 @@
    "sku": "SAMHWQ800H.FBA",
    "title": "Samsung Q-Series Soundbar HW-Q800H with Wireless Subwoofer",
    "url": "https://www.electronicsexpo.com/products/samsung-q-series-soundbar-hw-q800h-with-wireless-subwoofer",
-   "price": 699.99,
-   "wasPrice": 1099.99,
+   "price": 1099.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/samsung-q-series-soundbar-hw-q800h-with-wireless-subwoofer-product-type-4614925.jpg?v=1792824072",
    "inStock": true,
    "brand": "Samsung",
@@ -676,7 +675,7 @@
    "price": 98,
    "wasPrice": 158,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/sony-ht-s100f-120w-stereo-soundbar-product-type-5314332.jpg?v=1775593876",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony",
    "mpn": "SONHTS100F.FBA"
   },
@@ -783,6 +782,17 @@
    "inStock": true,
    "brand": "Yamaha",
    "mpn": "YAMSRX50ABL.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "YAMSRX90ABL.FBA",
+   "title": "Yamaha True X Bar 90A 3.1.2-Channel Dolby Atmos Soundbar System",
+   "url": "https://www.electronicsexpo.com/products/yamaha-true-x-bar-90a-3-1-2-channel-dolby-atmos-soundbar-system",
+   "price": 2799.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/yamaha-true-x-bar-90a-312-channel-dolby-atmos-soundbar-system-product-type-8107183.jpg?v=1776114403",
+   "inStock": true,
+   "brand": "YAMAHA",
+   "mpn": "YAMSRX90ABL.FBA"
   },
   {
    "retailer": "us-electronicsexpo",

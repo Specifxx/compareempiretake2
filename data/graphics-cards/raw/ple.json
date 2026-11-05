@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:19:55.874Z",
+ "scrapedAt": "2026-11-05T00:42:15.385Z",
  "offers": [
   {
    "retailer": "ple",
@@ -71,7 +71,7 @@
    "price": 529,
    "wasPrice": 574,
    "image": "https://plecom.imgix.net/iil-437645-677346.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -129,6 +129,18 @@
    "url": "https://www.ple.com.au/products/688386/asus-geforce-rtx-5060-ti-dual-8gb-gddr7-white",
    "price": 829,
    "image": "https://plecom.imgix.net/iil-485994-688386.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "674806",
+   "title": "ASUS GeForce RTX 5060 Ti Dual OC 16GB GDDR7",
+   "brand": "ASUS",
+   "mpn": "DUAL-RTX5060TI-O16G",
+   "url": "https://www.ple.com.au/products/674806/asus-geforce-rtx-5060-ti-dual-oc-16gb-gddr7",
+   "price": 1299,
+   "wasPrice": 1399,
+   "image": "https://plecom.imgix.net/iil-427714-674806.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -648,6 +660,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "686207",
+   "title": "Gigabyte GeForce RTX 5080 AORUS Infinity 16GB GDDR7",
+   "brand": "Gigabyte",
+   "mpn": "GV-N5080AORUS IF-16GD",
+   "url": "https://www.ple.com.au/products/686207/gigabyte-geforce-rtx-5080-aorus-infinity-16gb-gddr7",
+   "price": 3499,
+   "wasPrice": 3799,
+   "image": "https://plecom.imgix.net/iil-475428-686207.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "686221",
    "title": "Gigabyte GeForce RTX 5080 AORUS Infinity 16GB GDDR7 - Wood",
    "brand": "Gigabyte",
@@ -656,6 +680,17 @@
    "price": 3599,
    "wasPrice": 3909,
    "image": "https://plecom.imgix.net/iil-475440-686221.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "672368",
+   "title": "Gigabyte GeForce RTX 5080 Aorus Master 16GB GDDR7",
+   "brand": "Gigabyte",
+   "mpn": "GV-N5080AORUS M-16GD",
+   "url": "https://www.ple.com.au/products/672368/gigabyte-geforce-rtx-5080-aorus-master-16gb-gddr7",
+   "price": 3699,
+   "image": "https://plecom.imgix.net/iil-416521-672368.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -817,6 +852,18 @@
    "wasPrice": 749,
    "image": "https://plecom.imgix.net/iil-430596-675856.jpg?w=600&h=600",
    "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "675855",
+   "title": "MSI GeForce RTX 5060 8GB GDDR7 VENTUS 2X OC",
+   "brand": "MSI",
+   "mpn": "GeForce RTX 5060 8G VENTUS 2X OC",
+   "url": "https://www.ple.com.au/products/675855/msi-geforce-rtx-5060-8gb-gddr7-ventus-2x-oc",
+   "price": 719,
+   "wasPrice": 769,
+   "image": "https://plecom.imgix.net/iil-430590-675855.jpg?w=600&h=600",
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1098,17 +1145,6 @@
    "url": "https://www.ple.com.au/products/674494/palit-geforce-rtx-5060-ti-infinity-3-16gb-gddr7",
    "price": 1259,
    "image": "https://plecom.imgix.net/iil-428044-674494.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "677002",
-   "title": "Palit GeForce RTX 5070 Infinity 3 12GB GDDR7",
-   "brand": "Palit",
-   "mpn": "NE75070019K9-GB2050S",
-   "url": "https://www.ple.com.au/products/677002/palit-geforce-rtx-5070-infinity-3-12gb-gddr7",
-   "price": 1419,
-   "image": "https://plecom.imgix.net/iil-436028-677002.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -1419,7 +1455,7 @@
    "url": "https://www.ple.com.au/products/678054/xfx-swift-radeon-rx-9070-xt-triple-fan-gaming-edition-16gb-gddr6-",
    "price": 1479,
    "image": "https://plecom.imgix.net/iil-441703-678054.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1527,7 +1563,7 @@
    "brand": "Zotac",
    "mpn": "ZT-B50800J2-10P",
    "url": "https://www.ple.com.au/products/674634/zotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-gddr7",
-   "price": 2999,
+   "price": 3399,
    "image": "https://plecom.imgix.net/iil-425581-674634.jpg?w=600&h=600",
    "inStock": true
   },

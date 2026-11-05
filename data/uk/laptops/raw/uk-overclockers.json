@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T01:03:18.919Z",
+ "scrapedAt": "2026-11-05T01:26:07.208Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -459,7 +459,7 @@
    "url": "https://www.overclockers.co.uk/gigabyte-gaming-a16-pro-nvidia-rtx-5070-ti-32gb-16-qhd-165hz-intel-core-7-240h-gaming-laptop/LAP-GIG-07592.html",
    "price": 2199.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe5c1e57c/images/data/product/4d/e40937/d77aa25623b0dc9d992cde08156d1548b3cbb7da.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -479,7 +479,7 @@
    "url": "https://www.overclockers.co.uk/gigabyte-gaming-a18-pro-nvidia-rtx-5070-ti-32gb-18-qhd-165hz-intel-core-7-240h-gaming-laptop/LAP-GIG-08044.html",
    "price": 2299.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw9ec08c98/images/data/product/65/057a5f/4b0a4246102fc3a5d0db0121a675b969d64373f7.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -540,16 +540,6 @@
    "price": 2999.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe3c7246b/images/data/product/38/7a21b6/0b2533503cc4cab3d80e46fb39fef9d6ec6543f9.jpg?sw=500",
    "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
-   "sku": "LAP-MDN-04291",
-   "brand": "Medion",
-   "title": "Medion Erazer Beast 16 X1 NVIDIA RTX 5090 32GB 16 QHD+ MiniLED 300Hz Intel Core Ultra 9 275HX Gaming Laptop",
-   "url": "https://www.overclockers.co.uk/medion-erazer-beast-16-x1-nvidia-rtx-5090-32gb-16-qhd-miniled-300hz-intel-core-ultra-9-275hx-gaming-laptop/LAP-MDN-04291.html",
-   "price": 3199.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw86a483af/images/data/product/dc/7a7a5e/d25c3a897ddfd3cad05b6e07c6a9d6ed1fa8bad1.jpg?sw=500",
-   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -737,7 +727,7 @@
    "brand": "MSI",
    "title": "MSI Crosshair 16 HX NVIDIA 4060 16GB 16 QHD+ 240Hz Intel i7-14700HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/msi-crosshair-16-hx-nvidia-4060-16gb-16-qhd-240hz-intel-i7-14700hx-gaming-laptop/LAP-MSI-01948.html",
-   "price": 1599.95,
+   "price": 1499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa1338400/images/data/product/64/0064ce/b00bd9aac6784afb7e146f854b5e39a24bd3201f.jpg?sw=500",
    "inStock": true
   },
@@ -947,7 +937,7 @@
    "brand": "MSI",
    "title": "MSI Pulse 16 AI NVIDIA RTX 4060 16GB 16\" QHD+ 165Hz Intel Core Ultra 7 155H Gaming Laptop",
    "url": "https://www.overclockers.co.uk/msi-pulse-16-ai-nvidia-rtx-4060-16gb-16-qhd-165hz-intel-core-ultra-7-155h-gaming-laptop/LAP-MSI-06428.html",
-   "price": 1599.95,
+   "price": 1499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw65d9a493/images/data/product/81/1d6138/06ed0418314fc0b0db52fb1dc7a5336195d106c0.jpg?sw=500",
    "inStock": true
   },
@@ -959,7 +949,7 @@
    "url": "https://www.overclockers.co.uk/msi-pulse-16-ai-nvidia-rtx-5060-16gb-16-qhd-240hz-amd-ryzen-9-hx370-gaming-laptop/LAP-MSI-06941.html",
    "price": 1449.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw7ca30e91/images/data/product/83/d56488/24f2677587e3b993128812340621aab965b64bd0.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -1120,6 +1110,76 @@
    "price": 3349.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw0c4c1596/images/data/product/4e/8ddf9e/a20359f4c0f38af9809b5467c11be5ea79c011b8.jpg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-PIN-09035",
+   "brand": "Pinnacle",
+   "title": "OcUK Pinnacle Cubit360 RTX 5090 64GB 16\" QHD 300Hz 1TB Intel Ultra Core 9 290HX Plus Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/ocuk-pinnacle-cubit360-rtx-5090-64gb-16-qhd-300hz-1tb-intel-ultra-core-9-290hx-plus-gaming-laptop/LAP-PIN-09035.html",
+   "price": 3999.95,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc1579efe/images/data/product/53/362e38/dcf351775486b4a8c1fb1fffaf0b28499867f6dc.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-PIN-09377",
+   "brand": "Pinnacle",
+   "title": "OcUK Pinnacle RTX 5070 16GB 16\" QHD+ 240Hz 1TB Intel Core Ultra 7 270HX Plus Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-16gb-16-qhd-240hz-1tb-intel-core-ultra-7-270hx-plus-gaming-laptop/LAP-PIN-09377.html",
+   "price": 1699.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw161eecb6/images/data/product/d4/e375c0/cd1e7e579233fb4366aeaf4d8e58c5c9884bd8ba.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-PIN-09380",
+   "brand": "Pinnacle",
+   "title": "OcUK Pinnacle RTX 5070 16GB 16\" QHD+ 240Hz 1TB Intel Core Ultra 9 290HX Plus Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-16gb-16-qhd-240hz-1tb-intel-core-ultra-9-290hx-plus-gaming-laptop/LAP-PIN-09380.html",
+   "price": 1799.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw1e938a81/images/data/product/21/e5a64d/cd1e7e579233fb4366aeaf4d8e58c5c9884bd8ba.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-PIN-09378",
+   "brand": "Pinnacle",
+   "title": "OcUK Pinnacle RTX 5070 32GB 16\" QHD+ 240Hz 1TB Intel Core Ultra 7 270HX Plus Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-32gb-16-qhd-240hz-1tb-intel-core-ultra-7-270hx-plus-gaming-laptop/LAP-PIN-09378.html",
+   "price": 1949.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw52a4ebcd/images/data/product/e5/a7e25b/cd1e7e579233fb4366aeaf4d8e58c5c9884bd8ba.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-PIN-09381",
+   "brand": "Pinnacle",
+   "title": "OcUK Pinnacle RTX 5070 32GB 16\" QHD+ 240Hz 1TB Intel Core Ultra 9 290HX Plus Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-32gb-16-qhd-240hz-1tb-intel-core-ultra-9-290hx-plus-gaming-laptop/LAP-PIN-09381.html",
+   "price": 1999.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwd17f8724/images/data/product/5f/d58631/cd1e7e579233fb4366aeaf4d8e58c5c9884bd8ba.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-PIN-09379",
+   "brand": "Pinnacle",
+   "title": "OcUK Pinnacle RTX 5070 32GB 16\" QHD+ 240Hz 2TB Intel Core Ultra 7 270HX Plus Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-32gb-16-qhd-240hz-2tb-intel-core-ultra-7-270hx-plus-gaming-laptop/LAP-PIN-09379.html",
+   "price": 1999.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwf3a13676/images/data/product/ac/60f0b6/cd1e7e579233fb4366aeaf4d8e58c5c9884bd8ba.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-PIN-09382",
+   "brand": "Pinnacle",
+   "title": "OcUK Pinnacle RTX 5070 32GB 16\" QHD+ 240Hz 2TB Intel Core Ultra 9 290HX Plus Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-32gb-16-qhd-240hz-2tb-intel-core-ultra-9-290hx-plus-gaming-laptop/LAP-PIN-09382.html",
+   "price": 2099.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwd0729bc2/images/data/product/ef/a42d9e/cd1e7e579233fb4366aeaf4d8e58c5c9884bd8ba.jpg?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",

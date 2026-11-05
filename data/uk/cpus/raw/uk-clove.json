@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-04T00:54:56.249Z",
+ "scrapedAt": "2026-11-05T01:17:51.235Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -59,7 +59,7 @@
    "sku": "93042015",
    "title": "AMD EPYC 4464P processor - 3.7 GHz 64 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-4464p-processor-3-7-ghz-64-mb-l3",
-   "price": 438,
+   "price": 439,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/79f50cfa8e10bf21f31ab8ff41fb79dc.jpg?v=1732292013",
    "inStock": true
   },
@@ -113,7 +113,7 @@
    "sku": "99252607",
    "title": "AMD EPYC 4565P processor 4.3 GHz 64 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-epyc-4565p-processor-4-3-ghz-64-mb-l3-tray",
-   "price": 714,
+   "price": 715,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/06b538c2-2baf-4f23-a4c4-452e37782cb3.jpg?v=1791886368",
    "inStock": true
   },
@@ -166,11 +166,65 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "39105473",
+   "title": "AMD EPYC 7251 Processor 2.1 GHz 32 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7251-processor-2-1-ghz-32-mb-l3",
+   "price": 410.9,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3cec8d1a-320e-4324-99c8-4c00d1064b69.jpg?v=1793790804",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213448",
+   "title": "AMD EPYC 7262 Processor 3.2 GHz 128 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7262-processor-3-2-ghz-128-mb-l3",
+   "price": 399.95,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/03293c5e-f2c1-4ea0-92b3-c22212c8aeb0.jpg?v=1793790460",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213465",
+   "title": "AMD EPYC 7272 Processor 2.9 GHz 64 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7272-processor-2-9-ghz-64-mb-l3",
+   "price": 306.8,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7f118c9b-41d3-4eca-b4cc-4d21d99c741f.jpg?v=1793790470",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "36489451",
+   "title": "AMD EPYC 7281 Processor 2.1 GHz 32 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7281-processor-2-1-ghz-32-mb-l3",
+   "price": 160.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8ede9b39-c7b2-4960-a7ec-f05823b52934.jpg?v=1793790799",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213451",
+   "title": "AMD EPYC 7282 Processor 2.8 GHz 64 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7282-processor-2-8-ghz-64-mb-l3",
+   "price": 338.96,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7e97ec70-1a14-4905-ac7c-e33cb0663d49.jpg?v=1793790463",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "65337327",
    "title": "AMD EPYC 72F3 processor 3.7 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-72f3-processor-3-7-ghz-256-mb-l3",
    "price": 1350.31,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4d0d222a-cc33-4c0c-9beb-7876efd08cbb.jpg?v=1791886068",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213449",
+   "title": "AMD EPYC 7302 Processor 3 GHz 128 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7302-processor-3-ghz-128-mb-l3",
+   "price": 918.68,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/522b710a-fedb-42ff-a751-77ad256c92e8.jpg?v=1793790462",
    "inStock": false
   },
   {
@@ -223,8 +277,17 @@
    "sku": "65281702",
    "title": "AMD EPYC 7343 processor 3.2 GHz 128 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-7343-processor-3-2-ghz-128-mb-l3",
-   "price": 539,
+   "price": 540,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/18287554-e9f5-48f9-8ef4-13dccdf569ed.jpg?v=1721060951",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "39105798",
+   "title": "AMD EPYC 7351P Processor 2.4 GHz 64 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7351p-processor-2-4-ghz-64-mb-l3",
+   "price": 586.4,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/81f5dc7f-abfb-44c9-957e-fdd37e2806d3.jpg?v=1793790806",
    "inStock": false
   },
   {
@@ -257,11 +320,38 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "53213458",
+   "title": "AMD EPYC 7402 Processor 2.8 GHz 128 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7402-processor-2-8-ghz-128-mb-l3",
+   "price": 1136.28,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4f56de80-fd13-43dd-a11d-e1d8ee4ebf1f.jpg?v=1793790466",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213450",
+   "title": "AMD EPYC 7402P Processor 2.8 GHz 128 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7402p-processor-2-8-ghz-128-mb-l3",
+   "price": 1212.42,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ccd67e71-8d75-4a67-ae04-1af2e88da8ea.jpg?v=1793790433",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "65282464",
    "title": "AMD EPYC 7413 Processor 2.65 GHz 128 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-7413-processor-2-65-ghz-128-mb-l3",
-   "price": 539,
+   "price": 540,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/352de3db-73bc-4613-a69a-11c14c9b26e7.jpg?v=1686673065",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "65293590",
+   "title": "AMD EPYC 7443 Processor 2.85 GHz 128 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7443-processor-2-85-ghz-128-mb-l3",
+   "price": 1878,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c4d72a0f-90f7-4c6a-8812-e62295bfe44c.jpg?v=1793790819",
    "inStock": true
   },
   {
@@ -271,6 +361,24 @@
    "url": "https://www.clove.co.uk/products/amd-epyc-7443p-processor-2-85-ghz-128-mb-l3",
    "price": 598.66,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2791e1b8-f1a3-49a3-a468-9b33caee7a6e.jpg?v=1721060944",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "36489523",
+   "title": "AMD EPYC 7451 Processor 2.3 GHz 64 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7451-processor-2-3-ghz-64-mb-l3",
+   "price": 210.96,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f8009b46-56fb-471e-9dfa-68ad425c3dd9.jpg?v=1793790442",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213459",
+   "title": "AMD EPYC 7452 Processor 2.35 GHz 128 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7452-processor-2-35-ghz-128-mb-l3",
+   "price": 1611.46,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0fddfbb3-1f51-4ad8-9928-0dbb91f70a85.jpg?v=1793790468",
    "inStock": false
   },
   {
@@ -287,9 +395,36 @@
    "sku": "65337620",
    "title": "AMD EPYC 74F3 processor 3.2 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-74f3-processor-3-2-ghz-256-mb-l3",
-   "price": 1348,
+   "price": 1349,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7ecdcdf4-ef16-443a-9ec4-e193be7eb2ab.jpg?v=1709804607",
    "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "36489582",
+   "title": "AMD EPYC 7501 Processor 2 GHz 64 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7501-processor-2-ghz-64-mb-l3",
+   "price": 277.61,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f0a72064-5308-4570-9328-07ab4190b995.jpg?v=1793790804",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213454",
+   "title": "AMD EPYC 7502 Processor 2.5 GHz 128 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7502-processor-2-5-ghz-128-mb-l3",
+   "price": 532.31,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3f8a0eb8-01dc-4902-94b1-46b095c97215.jpg?v=1793790466",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213457",
+   "title": "AMD EPYC 7502P Processor 2.5 GHz 128 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7502p-processor-2-5-ghz-128-mb-l3",
+   "price": 540.46,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0cade455-31ab-4501-a9da-f47055c451df.jpg?v=1793790809",
+   "inStock": false
   },
   {
    "retailer": "uk-clove",
@@ -311,10 +446,19 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "53213445",
+   "title": "AMD EPYC 7542 Processor 2.9 GHz 128 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7542-processor-2-9-ghz-128-mb-l3",
+   "price": 1740.08,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/be379019-e580-421d-aa61-14b03619269a.jpg?v=1793790457",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "65293591",
    "title": "AMD EPYC 7543 processor 2.8 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-7543-processor-2-8-ghz-256-mb-l3",
-   "price": 1011,
+   "price": 1012,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/32b7c420e904a04ca031b58b06bc7f41.jpg?v=1726504776",
    "inStock": true
   },
@@ -325,6 +469,24 @@
    "url": "https://www.clove.co.uk/products/amd-epyc-7543p-processor-2-8-ghz-256-mb-l3",
    "price": 1299.45,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2c15142a-1c57-4ff8-b1ad-852a89cb4af5.jpg?v=1686673063",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "36489362",
+   "title": "AMD EPYC 7551P Processor 2 GHz 64 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7551p-processor-2-ghz-64-mb-l3",
+   "price": 277.61,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9d7da9e9-e641-44d8-ad67-d859cd490101.jpg?v=1793790798",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213446",
+   "title": "AMD EPYC 7552 Processor 2.2 GHz 192 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7552-processor-2-2-ghz-192-mb-l3",
+   "price": 3875.24,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/68beacca-10f7-4bdc-bf51-339f852d24aa.jpg?v=1793790458",
    "inStock": false
   },
   {
@@ -356,11 +518,56 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "58857279",
+   "title": "AMD EPYC 7662 Processor 2 GHz 256 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7662-processor-2-ghz-256-mb-l3",
+   "price": 5031.49,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ae596912-5066-4eb8-8b36-42ef732f5ea2.jpg?v=1793790775",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "65337657",
    "title": "AMD EPYC 7663 processor 2 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-7663-processor-2-ghz-256-mb-l3",
    "price": 4106.39,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/40584cb5-0963-4b71-9115-c53c21610b24.jpg?v=1721060958",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213462",
+   "title": "AMD EPYC 7702 Processor 2 GHz 256 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7702-processor-2-ghz-256-mb-l3",
+   "price": 5809.01,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e4521d4-bc16-44de-9686-4413819e7646.jpg?v=1793790469",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "53213453",
+   "title": "AMD EPYC 7702P Processor 2 GHz 256 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7702p-processor-2-ghz-256-mb-l3",
+   "price": 4261.76,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5b5f5b92-1c9d-423a-bde8-bf7d68930fc4.jpg?v=1793790465",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "65282552",
+   "title": "AMD EPYC 7713 Processor 2 GHz 256 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7713-processor-2-ghz-256-mb-l3",
+   "price": 1350,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b1b399bd-7df1-40f1-8170-5a5524d8e382.jpg?v=1793790782",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "65337423",
+   "title": "AMD EPYC 7713P Processor 2 GHz 256 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-epyc-7713p-processor-2-ghz-256-mb-l3",
+   "price": 4899.31,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/54f75e4a-f848-49ab-9097-40219b197d83.jpg?v=1793790820",
    "inStock": false
   },
   {
@@ -477,7 +684,7 @@
    "sku": "81597135",
    "title": "AMD EPYC 9174F processor 4.1 GHz 256 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-epyc-9174f-processor-4-1-ghz-256-mb-l3-tray",
-   "price": 1886,
+   "price": 1888,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/da2971fd-0175-4ff2-8fd0-83830db71550.jpg?v=1791885756",
    "inStock": true,
    "mpn": "9174F"
@@ -506,7 +713,7 @@
    "sku": "81597090",
    "title": "AMD EPYC 9224 processor 2.5 GHz 64 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9224-processor-2-5-ghz-64-mb-l3",
-   "price": 1213,
+   "price": 1214,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/64b3f827cd866928c2f54112bbd982c7_80ed797f-dc97-4cf0-bea3-fd25a490ce41.jpg?v=1720517658",
    "inStock": true
   },
@@ -524,7 +731,7 @@
    "sku": "81597009",
    "title": "AMD EPYC 9254 processor 2.9 GHz 128 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-epyc-9254-processor-2-9-ghz-128-mb-l3-tray",
-   "price": 1482,
+   "price": 1483,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/12f136e0-4c27-45f2-8715-5b3c15e1cbdf.jpg?v=1791886039",
    "inStock": true
   },
@@ -572,7 +779,7 @@
    "sku": "81597087",
    "title": "AMD EPYC 9334 processor 2.7 GHz 128 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9334-processor-2-7-ghz-128-mb-l3",
-   "price": 2156,
+   "price": 2157,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/64b3f827cd866928c2f54112bbd982c7_8ffb0659-8778-4d8e-9c82-06b05ebe7911.jpg?v=1720517649",
    "inStock": true
   },
@@ -599,7 +806,7 @@
    "sku": "81596488",
    "title": "AMD EPYC 9354 processor 3.25 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9354-processor-3-25-ghz-256-mb-l3",
-   "price": 1886,
+   "price": 1888,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/64b3f827cd866928c2f54112bbd982c7.jpg?v=1720517648",
    "inStock": true
   },
@@ -617,7 +824,7 @@
    "sku": "81597250",
    "title": "AMD EPYC 9354P processor 3.25 GHz 256 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-epyc-9354p-processor-3-25-ghz-256-mb-l3-tray",
-   "price": 1819,
+   "price": 1820,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b403c575-7b44-40a5-9112-86a482aa2171.jpg?v=1791885767",
    "inStock": true
   },
@@ -644,7 +851,7 @@
    "sku": "81597249",
    "title": "AMD EPYC 9374F processor 3.85 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9374f-processor-3-85-ghz-256-mb-l3",
-   "price": 2829,
+   "price": 2831,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/64b3f827cd866928c2f54112bbd982c7_98247ae1-fe03-450a-b6c5-9585dfdacfa1.jpg?v=1726504765",
    "inStock": true,
    "mpn": "9374F"
@@ -674,7 +881,7 @@
    "sku": "81597134",
    "title": "AMD EPYC 9454 processor 2.75 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9454-processor-2-75-ghz-256-mb-l3",
-   "price": 2425,
+   "price": 2427,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/acf6c6984ba7a87d33ffd24647a8c3ff.jpg?v=1712831184",
    "inStock": true
   },
@@ -692,7 +899,7 @@
    "sku": "81596613",
    "title": "AMD EPYC 9454P processor 2.75 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9454p-processor-2-75-ghz-256-mb-l3",
-   "price": 2291,
+   "price": 2292,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/64b3f827cd866928c2f54112bbd982c7_387b0547-fc10-4dce-a0b5-7b2d1a313e20.jpg?v=1726504777",
    "inStock": true
   },
@@ -728,7 +935,7 @@
    "sku": "81596612",
    "title": "AMD EPYC 9474F processor 3.6 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9474f-processor-3-6-ghz-256-mb-l3",
-   "price": 2964,
+   "price": 2966,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/64b3f827cd866928c2f54112bbd982c7_71beed1b-92a6-427c-af0d-fdda0927c3d2.jpg?v=1726504778",
    "inStock": true,
    "mpn": "9474F"
@@ -758,7 +965,7 @@
    "sku": "81597086",
    "title": "AMD EPYC 9534 processor 2.45 GHz 256 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-epyc-9534-processor-2-45-ghz-256-mb-l3-tray",
-   "price": 3234,
+   "price": 3236,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4367438d-ca2e-463a-a4fb-fb53bb543e8f.jpg?v=1791886048",
    "inStock": true
   },
@@ -776,7 +983,7 @@
    "sku": "81596486",
    "title": "AMD EPYC 9554 processor 3.1 GHz 256 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-epyc-9554-processor-3-1-ghz-256-mb-l3-tray",
-   "price": 3368,
+   "price": 3371,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/feb1d48f-d289-4288-8dac-dfc4199eded0.jpg?v=1791886044",
    "inStock": true
   },
@@ -785,7 +992,7 @@
    "sku": "81597089",
    "title": "AMD EPYC 9554P processor 3.1 GHz 256 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-epyc-9554p-processor-3-1-ghz-256-mb-l3-tray",
-   "price": 2964,
+   "price": 2966,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ed27c338-639d-4ff8-84ab-b297ca8bbaf1.jpg?v=1791886048",
    "inStock": true
   },
@@ -831,7 +1038,7 @@
    "sku": "81596487",
    "title": "AMD EPYC 9634 processor 2.25 GHz 384 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9634-processor-2-25-ghz-384-mb-l3",
-   "price": 2560,
+   "price": 2562,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/64b3f827cd866928c2f54112bbd982c7_3f383a7e-3d9c-42e9-b67a-2124c777bd87.jpg?v=1720517652",
    "inStock": true
   },
@@ -858,7 +1065,7 @@
    "sku": "81596965",
    "title": "AMD EPYC 9654 processor 2.4 GHz 384 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9654-processor-2-4-ghz-384-mb-l3",
-   "price": 4042,
+   "price": 4045,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/343ba0bc-e388-4789-a9d2-0842031177c3.jpg?v=1743582659",
    "inStock": true
   },
@@ -876,7 +1083,7 @@
    "sku": "81597011",
    "title": "AMD EPYC 9654P processor 2.4 GHz 384 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-epyc-9654p-processor-2-4-ghz-384-mb-l3-tray",
-   "price": 3907,
+   "price": 3910,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/22c3d854-fcdf-4ec1-a57f-b8b6d06d0665.jpg?v=1791885761",
    "inStock": true
   },
@@ -903,7 +1110,7 @@
    "sku": "86332182",
    "title": "AMD EPYC 9734 processor 2.2 GHz 256 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-epyc-9734-processor-2-2-ghz-256-mb-l3-tray",
-   "price": 4042,
+   "price": 4045,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4a426bdb-b320-4a2f-a12d-b1487b270131.jpg?v=1791885748",
    "inStock": true
   },
@@ -921,7 +1128,7 @@
    "sku": "86333194",
    "title": "AMD EPYC 9754 processor 2.25 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-epyc-9754-processor-2-25-ghz-256-mb-l3",
-   "price": 4581,
+   "price": 4584,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8163d69114c3b933e013b5c52fd7d3d5.jpg?v=1720517651",
    "inStock": true
   },
@@ -971,6 +1178,16 @@
    "price": 118,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/795b38cb-4458-4a75-a7e1-86e5fc42a4cf.jpg?v=1721060929",
    "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "62162244",
+   "title": "AMD Ryzen 3 PRO 4350G Processor 3.8 GHz 4 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-3-pro-4350g-processor-3-8-ghz-4-mb-l3",
+   "price": 137.66,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3e04fb61-638e-471c-b813-5b77b28a2ae6.jpg?v=1793790779",
+   "inStock": false,
+   "mpn": "4350G"
   },
   {
    "retailer": "uk-clove",
@@ -1063,7 +1280,7 @@
    "sku": "76641546",
    "title": "AMD Ryzen 5 4500 Processor 3.6 GHz 8 MB L3 Box",
    "url": "https://www.clove.co.uk/products/amd-ryzen-5-4500-processor-3-6-ghz-8-mb-l3-box",
-   "price": 161,
+   "price": 160,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1cf159b0-3936-487a-97ee-bc17326c19d9.jpg?v=1686672793",
    "inStock": true
   },
@@ -1119,7 +1336,7 @@
    "sku": "105558614",
    "title": "AMD Ryzen 5 5500F processor 3 GHz 19 MB L2 & L3 Box",
    "url": "https://www.clove.co.uk/products/amd-ryzen-5-5500f-processor-3-ghz-19-mb-l2-l3-box",
-   "price": 116,
+   "price": 115,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2a451bc0-7550-4b18-91a4-42391d5d171d.jpg?v=1791885734",
    "inStock": true,
    "mpn": "5500F"
@@ -1252,6 +1469,16 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "65235327",
+   "title": "AMD Ryzen 5 5600X Processor 3.7 GHz 32 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-5-5600x-processor-3-7-ghz-32-mb-l3-2",
+   "price": 343.51,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dd982fad-aab8-4bb7-b1e4-4cbc0b13f879.jpg?v=1793790440",
+   "inStock": false,
+   "mpn": "5600X"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "61410718",
    "title": "AMD Ryzen 5 5600X Processor 3.7 GHz 32 MB L3",
    "url": "https://www.clove.co.uk/products/amd-ryzen-5-5600x-processor-3-7-ghz-32-mb-l3",
@@ -1310,6 +1537,15 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "105577238",
+   "title": "AMD Ryzen 5 7500 processor 32 MB L3 Box",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-5-7500-processor-32-mb-l3-box",
+   "price": 229,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b0e65f14-8962-4ad1-a26e-aa0aebb31a6c.jpg?v=1793790423",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "87024357",
    "title": "AMD Ryzen 5 7500F processor - 3.7 GHz 32 MB L3 with Box",
    "url": "https://www.clove.co.uk/products/socket-am5-6-cores-12-threads-3-7-ghz-base-clock-5-ghz-boost-clock-32-mb-cache-65-w",
@@ -1323,7 +1559,7 @@
    "sku": "87032737",
    "title": "AMD Ryzen 5 7500F processor 3.7 GHz 32 MB L3",
    "url": "https://www.clove.co.uk/products/amd-ryzen-5-7500f-processor-3-7-ghz-32-mb-l3",
-   "price": 217,
+   "price": 216,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/678cb0c02fc97ee7807579586af93276_c14c5ee3-c52d-4d50-83d5-997b9176c85a.jpg?v=1726504759",
    "inStock": true,
    "mpn": "7500F"
@@ -1533,7 +1769,7 @@
    "sku": "93314943",
    "title": "AMD Ryzen 5 9600X processor 3.9 GHz 38 MB L2 & L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-ryzen-5-9600x-processor-3-9-ghz-38-mb-l2-l3-tray",
-   "price": 333,
+   "price": 332,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2cd41fc6-dd95-40be-8151-4c6a491fd995.jpg?v=1791886054",
    "inStock": true,
    "mpn": "9600X"
@@ -1642,6 +1878,16 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "42598149",
+   "title": "AMD Ryzen 7 2700X Processor 3.7 GHz Box",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-7-2700x-processor-3-7-ghz-box",
+   "price": 418.66,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f739320e-8f4e-4297-8ed9-d8740e6e0090.jpg?v=1793790450",
+   "inStock": false,
+   "mpn": "2700X"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "91303003",
    "title": "AMD Ryzen 7 5700 processor 3.7 GHz 16 MB L3 Box",
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-5700-processor-3-7-ghz-16-mb-l3-box",
@@ -1654,7 +1900,7 @@
    "sku": "70934551",
    "title": "AMD Ryzen 7 5700G processor 3.8 GHz 16 MB L3",
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-5700g-processor-3-8-ghz-16-mb-l3",
-   "price": 434,
+   "price": 433,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0c9defad-b0b0-4506-819e-028a233ec0e2.jpg?v=1709804534",
    "inStock": false,
    "mpn": "5700G"
@@ -1664,7 +1910,7 @@
    "sku": "68314693",
    "title": "AMD Ryzen 7 5700G Processor 3.8 GHz 16 MB L3 Box",
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-5700g-processor-3-8-ghz-16-mb-l3-box",
-   "price": 434,
+   "price": 433,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1e951069-1626-4248-9cc1-f7c0949e306a.jpg?v=1686672820",
    "inStock": true,
    "mpn": "5700G"
@@ -1754,7 +2000,7 @@
    "sku": "104862340",
    "title": "AMD Ryzen 7 5800X3D processor 3.4 GHz 96 MB L3 Box",
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-5800x3d-processor-3-4-ghz-96-mb-l3-box",
-   "price": 417,
+   "price": 420,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/51081757-f485-4bd9-a409-a1819c6e00a4.jpg?v=1791885754",
    "inStock": true,
    "mpn": "5800X3D"
@@ -1783,7 +2029,7 @@
    "sku": "99919845",
    "title": "AMD Ryzen 7 7700 processor 3.8 GHz 32 MB L3 Box",
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-7700-processor-3-8-ghz-32-mb-l3-box-1",
-   "price": 401,
+   "price": 400,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/20f9ad5d-f6e1-4e0b-a2e2-f60789eec66a.jpg?v=1791886060",
    "inStock": true
   },
@@ -1829,7 +2075,7 @@
    "sku": "80857925",
    "title": "AMD Ryzen 7 7700X processor 4.5 GHz 32 MB L3",
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-7700x-processor-4-5-ghz-32-mb-l3",
-   "price": 480,
+   "price": 479,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5beb7e22-b86b-4632-8953-1d22511db324.jpg?v=1721060890",
    "inStock": true,
    "mpn": "7700X"
@@ -1841,6 +2087,16 @@
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-7700x3d-processor-4-ghz-96-mb-l3-box",
    "price": 392,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9f3d0020-2f4d-4637-ba0a-584eb554d6ec.jpg?v=1791885747",
+   "inStock": true,
+   "mpn": "7700X3D"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105284595",
+   "title": "AMD Ryzen 7 7700X3D processor 4 GHz 96 MB L3 Tray",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-7-7700x3d-processor-4-ghz-96-mb-l3-tray",
+   "price": 392,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d930670e-0f0a-4a65-9bd9-74f865d73a05.jpg?v=1793790411",
    "inStock": true,
    "mpn": "7700X3D"
   },
@@ -1887,7 +2143,7 @@
    "sku": "92999951",
    "title": "AMD Ryzen 7 8700F processor 4.1 GHz 16 MB L3 Box",
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-8700f-processor-4-1-ghz-16-mb-l3-box",
-   "price": 319,
+   "price": 318,
    "inStock": true,
    "mpn": "8700F"
   },
@@ -1984,7 +2240,7 @@
    "sku": "103397479",
    "title": "AMD Ryzen 7 9850X3D processor 4.7 GHz 96 MB L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-9850x3d-processor-4-7-ghz-96-mb-l3-tray",
-   "price": 600,
+   "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/838c5c08-5bf9-455b-bea1-2b7d288f6d60.jpg?v=1791886039",
    "inStock": true,
    "mpn": "9850X3D"
@@ -2034,6 +2290,16 @@
    "price": 491,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/84d571b9-2233-4ec0-a2cc-cedaf6cc0329.jpg?v=1791886072",
    "inStock": true
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "55510733",
+   "title": "AMD Ryzen 9 3950X Processor 3.5 GHz 64 MB L3",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-9-3950x-processor-3-5-ghz-64-mb-l3",
+   "price": 820.76,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3f17dda0-86b3-4ae6-ad4a-87d42b73cd0b.jpg?v=1793790472",
+   "inStock": false,
+   "mpn": "3950X"
   },
   {
    "retailer": "uk-clove",
@@ -2185,7 +2451,7 @@
    "sku": "93310076",
    "title": "AMD Ryzen 9 9900X processor 4.4 GHz 76 MB L2 & L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-ryzen-9-9900x-processor-4-4-ghz-76-mb-l2-l3-tray",
-   "price": 536,
+   "price": 535,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/966c6ca6-bb35-4702-8337-53201b17698d.jpg?v=1791886347",
    "inStock": true,
    "mpn": "9900X"
@@ -2205,7 +2471,7 @@
    "sku": "98966560",
    "title": "AMD Ryzen 9 9900X3D processor 4.4 GHz 140 MB L2 & L3 Tray",
    "url": "https://www.clove.co.uk/products/amd-ryzen-9-9900x3d-processor-4-4-ghz-140-mb-l2-l3-tray",
-   "price": 720,
+   "price": 719,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c94659eb-0b33-4bea-9626-c7a416719efd.jpg?v=1791885770",
    "inStock": true,
    "mpn": "9900X3D"
@@ -2381,6 +2647,46 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "79396687",
+   "title": "AMD Ryzen Threadripper PRO 5955WX processor 4 GHz 64 MB L3 Box",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-threadripper-pro-5955wx-processor-4-ghz-64-mb-l3-box",
+   "price": 1526,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d65d0e6e-b5a9-4bed-b4e5-d719821645e5.jpg?v=1793790420",
+   "inStock": true,
+   "mpn": "5955WX"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "78331664",
+   "title": "AMD Ryzen Threadripper PRO 5965WX processor 3.8 GHz 128 MB L3 Tray",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-threadripper-pro-5965wx-processor-3-8-ghz-128-mb-l3-tray",
+   "price": 2804,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/86b0e737-9681-4708-b6eb-9ec9396dc309.jpg?v=1793790419",
+   "inStock": true,
+   "mpn": "5965WX"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "78112249",
+   "title": "AMD Ryzen Threadripper PRO 5975WX processor 3.6 GHz 128 MB L3 Box",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-threadripper-pro-5975wx-processor-3-6-ghz-128-mb-l3-box",
+   "price": 3862,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/502cf656-216d-4a9d-8eda-262029eb3863.jpg?v=1793790416",
+   "inStock": true,
+   "mpn": "5975WX"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "78330574",
+   "title": "AMD Ryzen Threadripper PRO 5975WX processor 3.6 GHz 128 MB L3 Tray",
+   "url": "https://www.clove.co.uk/products/amd-ryzen-threadripper-pro-5975wx-processor-3-6-ghz-128-mb-l3-tray",
+   "price": 3862,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/08e28d6d-e870-4675-baf4-52687a8570a0.jpg?v=1793790418",
+   "inStock": true,
+   "mpn": "5975WX"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "78333034",
    "title": "AMD Ryzen Threadripper PRO 5995WX processor 2.7 GHz 256 MB L3",
    "url": "https://www.clove.co.uk/products/amd-ryzen-threadripper-pro-5995wx-processor-2-7-ghz-256-mb-l3",
@@ -2522,9 +2828,9 @@
    "sku": "99607719",
    "title": "AMD Ryzen Threadripper PRO 9985WX processor 3.2 GHz 256 MB L3 Box",
    "url": "https://www.clove.co.uk/products/amd-ryzen-threadripper-pro-9985wx-processor-3-2-ghz-256-mb-l3-box",
-   "price": 9664.04,
+   "price": 9560,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/467f61ee-7fa6-4427-8656-e86b1205c374.jpg?v=1791886352",
-   "inStock": false,
+   "inStock": true,
    "mpn": "9985WX"
   },
   {
@@ -2665,6 +2971,26 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "60759481",
+   "title": "Intel Core i3-10100F Processor 3.6 GHz 6 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-10100f-processor-3-6-ghz-6-mb-smart-cache",
+   "price": 93.21,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/cda9da4b-a89a-48c3-a7f2-b2fc7ab31f71.jpg?v=1793790811",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "60759382",
+   "title": "Intel Core i3-10100F Processor 3.6 GHz 6 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-10100f-processor-3-6-ghz-6-mb-smart-cache-box",
+   "price": 100.91,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e05931e-273b-4a14-9e3e-70006ea39bf9.jpg?v=1793790438",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "63644004",
    "title": "Intel Core i3-10105 processor 3.7 GHz 6 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i3-10105-processor-3-7-ghz-6-mb-smart-cache-box",
@@ -2675,11 +3001,51 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "65069142",
+   "title": "Intel Core i3-10105F Processor 3.7 GHz 6 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-10105f-processor-3-7-ghz-6-mb-smart-cache",
+   "price": 89.01,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ca62622e-6ec7-4228-8444-71d175ec771c.jpg?v=1793790812",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "63644016",
    "title": "Intel Core i3-10105F processor 3.7 GHz 6 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i3-10105f-processor-3-7-ghz-6-mb-smart-cache-box",
    "price": 105.31,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1b6a1c7487d3496ed50833afc97d3cc9.jpg?v=1721219312",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "58589155",
+   "title": "Intel Core i3-10300 Processor 3.7 GHz 8 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-10300-processor-3-7-ghz-8-mb-smart-cache-box",
+   "price": 132.18,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c669b547-f8c1-4390-a11f-3d2b79ce59e5.jpg?v=1793790772",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "63644131",
+   "title": "Intel Core i3-10305 Processor 3.8 GHz 8 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-10305-processor-3-8-ghz-8-mb-smart-cache-box",
+   "price": 225.91,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9d077c54-4891-4e26-bd08-ec07c92f0066.jpg?v=1793790819",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "58589157",
+   "title": "Intel Core i3-10320 Processor 3.8 GHz 8 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-10320-processor-3-8-ghz-8-mb-smart-cache-box",
+   "price": 219.28,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2798498e-8b40-4105-9a2a-8e7b87acf03a.jpg?v=1793790810",
    "inStock": false,
    "brand": "Intel"
   },
@@ -2785,6 +3151,96 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "12784013",
+   "title": "Intel Core i3-4330TE Processor 2.4 GHz 4 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-4330te-processor-2-4-ghz-4-mb-smart-cache",
+   "price": 115.51,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0fe0f0a0-2e28-433b-a03a-91b2136a660c.jpg?v=1793790790",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "12723412",
+   "title": "Intel Core i3-4350T Processor 3.1 GHz 4 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-4350t-processor-3-1-ghz-4-mb-smart-cache",
+   "price": 184.49,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b1211fbd-d2b2-412e-ba77-178183b7fab0.jpg?v=1793790785",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "19821516",
+   "title": "Intel Core i3-6100T Processor 3.2 GHz 3 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-6100t-processor-3-2-ghz-3-mb-smart-cache",
+   "price": 161.05,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/be359fe5-5834-471b-9e42-35dc0e7c66b6.jpg?v=1793790793",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "33936571",
+   "title": "Intel Core i3-6100TE Processor 2.7 GHz 4 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-6100te-processor-2-7-ghz-4-mb-smart-cache",
+   "price": 161.05,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4164abf2-35c8-41de-b639-f50e19ab31a1.jpg?v=1793790797",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "32775375",
+   "title": "Intel Core i3-7100T Processor 3.4 GHz 3 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-7100t-processor-3-4-ghz-3-mb-smart-cache",
+   "price": 199.38,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/252095b2-1f5c-48d7-9873-ec99a75b75a2.jpg?v=1793790795",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "38753531",
+   "title": "Intel Core i3-7101TE Processor 3.4 GHz 3 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-7101te-processor-3-4-ghz-3-mb-smart-cache",
+   "price": 161.05,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/efd0eb74-dd06-4d5d-a423-2fd4dccb0512.jpg?v=1793790444",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "32775096",
+   "title": "Intel Core i3-7320 Processor 4.1 GHz 4 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-7320-processor-4-1-ghz-4-mb-smart-cache",
+   "price": 196.22,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bea67f33-6e0c-461c-9fe5-0200162e01c9.jpg?v=1793790795",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "32862084",
+   "title": "Intel Core i3-7350K Processor 4.2 GHz 4 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-7350k-processor-4-2-ghz-4-mb-smart-cache",
+   "price": 217.31,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/686dceb5-9d0c-409c-92af-cdbf5c5a593b.jpg?v=1793790796",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "38301757",
+   "title": "Intel Core i3-8100 Processor 3.6 GHz 6 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i3-8100-processor-3-6-ghz-6-mb-smart-cache",
+   "price": 161.05,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/732b0dd8-ec6e-4762-9282-1198f8264a1f.jpg?v=1793790429",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "52296843",
    "title": "Intel Core i3-9100 processor 3.6 GHz 6 MB Smart Cache",
    "url": "https://www.clove.co.uk/products/intel-core-i3-9100-processor-3-6-ghz-6-mb-smart-cache",
@@ -2835,6 +3291,56 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "77992202",
+   "title": "Intel Core i5-10500E Processor 3.1 GHz 12 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-10500e-processor-3-1-ghz-12-mb-smart-cache",
+   "price": 253.12,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7f424f87-ed22-4568-8a18-146f0fe8d2df.jpg?v=1793790784",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "58589201",
+   "title": "Intel Core i5-10600 Processor 3.3 GHz 12 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-10600-processor-3-3-ghz-12-mb-smart-cache-box",
+   "price": 336.19,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4fc89989-c047-45bc-bb88-c8f9ddfab202.jpg?v=1793790436",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "58279398",
+   "title": "Intel Core i5-10600K Processor 4.1 GHz 12 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-10600k-processor-4-1-ghz-12-mb-smart-cache-box",
+   "price": 179.15,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4dbdd7e2-a90b-4f3b-b6f6-bfee149cc5e5.jpg?v=1793790477",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "58279399",
+   "title": "Intel Core i5-10600KF Processor 4.1 GHz 12 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-10600kf-processor-4-1-ghz-12-mb-smart-cache-box",
+   "price": 143.04,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/67434c8c-2d69-468b-b822-a1c81f3355df.jpg?v=1793790435",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "65426353",
+   "title": "Intel Core i5-11400 Processor 2.6 GHz 12 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-11400-processor-2-6-ghz-12-mb-smart-cache",
+   "price": 172.84,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f6fda16b-2fde-48b4-8593-c3a1dce9b8d9.jpg?v=1793790820",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "63011970",
    "title": "Intel Core i5-11400 processor 2.6 GHz 12 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i5-11400-processor-2-6-ghz-12-mb-smart-cache-box",
@@ -2845,11 +3351,41 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "65426354",
+   "title": "Intel Core i5-11400F Processor 2.6 GHz 12 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-11400f-processor-2-6-ghz-12-mb-smart-cache",
+   "price": 127.38,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/24a29010-148b-4293-87e4-c4f2b0e01ac3.jpg?v=1793790813",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "62994985",
    "title": "Intel Core i5-11400F Processor 2.6 GHz 12 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i5-11400f-processor-2-6-ghz-12-mb-smart-cache-box",
    "price": 148.14,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/62864af8-6a6c-41f7-a843-dd3bdc1d7c83.jpg?v=1686672982",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "63002843",
+   "title": "Intel Core i5-11500 Processor 2.7 GHz 12 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-11500-processor-2-7-ghz-12-mb-smart-cache-box",
+   "price": 223.53,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/916c23b1-8827-4177-ba7b-c59f3b98bf5f.jpg?v=1793790817",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "63011975",
+   "title": "Intel Core i5-11600 Processor 2.8 GHz 12 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-11600-processor-2-8-ghz-12-mb-smart-cache-box",
+   "price": 180.37,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/85595589-921d-43b7-983d-7d7667595fcf.jpg?v=1793790818",
    "inStock": false,
    "brand": "Intel"
   },
@@ -2870,6 +3406,16 @@
    "url": "https://www.clove.co.uk/products/intel-core-i5-11600k-processor-3-9-ghz-12-mb-smart-cache-box",
    "price": 213.72,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ad80478010cd6a86e83e1a9b1b865302.jpg?v=1721219313",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "63002842",
+   "title": "Intel Core i5-11600KF Processor 3.9 GHz 12 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-11600kf-processor-3-9-ghz-12-mb-smart-cache-box",
+   "price": 148.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f3bb3449-1406-4014-845a-7a6c8d4b1103.jpg?v=1793790438",
    "inStock": false,
    "brand": "Intel"
   },
@@ -2945,6 +3491,16 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "70961474",
+   "title": "Intel Core i5-12600K Processor 20 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-12600k-processor-20-mb-smart-cache",
+   "price": 243.8,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/49df8743-be10-4ea5-9c49-6a8d50f111c5.jpg?v=1793790814",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "70692401",
    "title": "Intel Core i5-12600K processor 20 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i5-12600k-processor-20-mb-smart-cache-box",
@@ -2985,11 +3541,31 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "82701201",
+   "title": "Intel Core i5-13500 Processor 24 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-13500-processor-24-mb-smart-cache",
+   "price": 301.74,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/68d4f7bb-4f4d-483d-9173-1a7b58856938.jpg?v=1793790815",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "82700835",
    "title": "Intel Core i5-13500 Processor 24 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i5-13500-processor-24-mb-smart-cache-box",
    "price": 300.41,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1179c463-d9b3-41c1-8907-123e5e178a79.jpg?v=1686672907",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "82701045",
+   "title": "Intel Core i5-13600 Processor 24 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-13600-processor-24-mb-smart-cache",
+   "price": 323.02,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bebdcfc4-70c6-4311-9ef6-5d1682c0e6bb.jpg?v=1793790815",
    "inStock": false,
    "brand": "Intel"
   },
@@ -3106,7 +3682,7 @@
    "sku": "90744150",
    "title": "Intel Core i5-14500 processor 24 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i5-14500-processor-24-mb-smart-cache-box",
-   "price": 310,
+   "price": 309,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2a4bb7df-c3df-45ae-b33d-083a5364bfbe.jpg?v=1709804399",
    "inStock": true,
    "brand": "Intel"
@@ -3126,7 +3702,7 @@
    "sku": "89493506",
    "title": "Intel Core i5-14600K processor 24 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i5-14600k-processor-24-mb-smart-cache-box",
-   "price": 290,
+   "price": 289,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7769ea98-9db9-4845-b01b-714c92d69779.jpg?v=1709804373",
    "inStock": true,
    "brand": "Intel"
@@ -3153,6 +3729,96 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "12725390",
+   "title": "Intel Core i5-4460T Processor 1.9 GHz 6 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-4460t-processor-1-9-ghz-6-mb-smart-cache",
+   "price": 232.56,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1f2b9a79-42e6-4c20-9d83-3841f65bc847.jpg?v=1793790789",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "12723420",
+   "title": "Intel Core i5-4590S Processor 3 GHz 6 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-4590s-processor-3-ghz-6-mb-smart-cache",
+   "price": 243.12,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1af123d5-5812-4a1b-b3f0-f50f583536f2.jpg?v=1793790786",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "12723421",
+   "title": "Intel Core i5-4690S Processor 3.2 GHz 6 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-4690s-processor-3-2-ghz-6-mb-smart-cache",
+   "price": 266.56,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/989269f1-4f38-4d24-818b-f54dd93600ef.jpg?v=1793790787",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "28553188",
+   "title": "Intel Core i5-6500TE Processor 2.3 GHz 6 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-6500te-processor-2-3-ghz-6-mb-smart-cache",
+   "price": 291.04,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f3918834-b620-479a-9988-451b9969ef5c.jpg?v=1793790794",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "32761455",
+   "title": "Intel Core i5-7500 Processor 3.4 GHz 6 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-7500-processor-3-4-ghz-6-mb-smart-cache",
+   "price": 310.19,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7fbfe2cc-5dd9-4ff3-bf32-9a5fec6213d1.jpg?v=1793790441",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "42273310",
+   "title": "Intel Core i5-8400T Processor 1.7 GHz 9 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-8400t-processor-1-7-ghz-9-mb-smart-cache",
+   "price": 232.56,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5cabdf0f-d153-485a-967e-427d651ff24b.jpg?v=1793790447",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "42273309",
+   "title": "Intel Core i5-8600T Processor 2.3 GHz 9 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-8600t-processor-2-3-ghz-9-mb-smart-cache",
+   "price": 266.56,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/03b902e7-a052-4a98-b2a4-14a981317ccd.jpg?v=1793790807",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "52254881",
+   "title": "Intel Core i5-9500T Processor 2.2 GHz 9 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-9500t-processor-2-2-ghz-9-mb-smart-cache",
+   "price": 307.46,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/346519ff-7a48-4b76-9854-fd5230ab663d.jpg?v=1793790456",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "52254860",
+   "title": "Intel Core i5-9600T Processor 2.3 GHz 9 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i5-9600t-processor-2-3-ghz-9-mb-smart-cache",
+   "price": 266.56,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ae416cdb-ae64-4631-88e9-511e3404a121.jpg?v=1793790451",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "59548428",
    "title": "Intel Core i7-10700 processor 2.9 GHz 16 MB Smart Cache",
    "url": "https://www.clove.co.uk/products/intel-core-i7-10700-processor-2-9-ghz-16-mb-smart-cache",
@@ -3173,11 +3839,61 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "58788117",
+   "title": "Intel Core i7-10700F Processor 2.9 GHz 16 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-10700f-processor-2-9-ghz-16-mb-smart-cache-box",
+   "price": 251.73,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a88d2de8-4062-4d03-8aa3-740f923e3527.jpg?v=1793790774",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "58279364",
+   "title": "Intel Core i7-10700K Processor 3.8 GHz 16 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-10700k-processor-3-8-ghz-16-mb-smart-cache-box",
+   "price": 273.13,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5fd61e18-c15a-40e3-a916-b3bf2db01019.jpg?v=1793790434",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "58279372",
+   "title": "Intel Core i7-10700KF Processor 3.8 GHz 16 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-10700kf-processor-3-8-ghz-16-mb-smart-cache-box",
+   "price": 252.58,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/12eb379f-6b00-4a87-9b28-7088f94bfc34.jpg?v=1793790816",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "65419047",
+   "title": "Intel Core i7-11700 Processor 2.5 GHz 16 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-11700-processor-2-5-ghz-16-mb-smart-cache",
+   "price": 260.88,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bf2d75c9-625f-4653-9aca-915f375e6a3d.jpg?v=1793790812",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "63021147",
    "title": "Intel Core i7-11700 Processor 2.5 GHz 16 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i7-11700-processor-2-5-ghz-16-mb-smart-cache-box",
    "price": 273.09,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0946aa4c-7e5b-44c6-b6a1-dda0801ac3d2.jpg?v=1686673046",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "63021145",
+   "title": "Intel Core i7-11700F Processor 2.5 GHz 16 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-11700f-processor-2-5-ghz-16-mb-smart-cache-box",
+   "price": 283.89,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e34994bb-7313-4480-bc73-3d4d14f105be.jpg?v=1793790439",
    "inStock": false,
    "brand": "Intel"
   },
@@ -3213,6 +3929,26 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "74366363",
+   "title": "Intel Core i7-12700 processor 25 MB Smart Cache Tray",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-12700-processor-25-mb-smart-cache-tray",
+   "price": 364,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9fb0a12d-3cb3-451d-9220-024bbfbbcb4b.jpg?v=1793790424",
+   "inStock": true,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "74366293",
+   "title": "Intel Core i7-12700F Processor 25 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-12700f-processor-25-mb-smart-cache",
+   "price": 352,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e1f1ea00-eedf-493f-8cc3-dbbffcd75815.jpg?v=1793790814",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "73715272",
    "title": "Intel Core i7-12700F Processor 25 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i7-12700f-processor-25-mb-smart-cache-box",
@@ -3233,12 +3969,32 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "70957867",
+   "title": "Intel Core i7-12700KF Processor 25 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-12700kf-processor-25-mb-smart-cache",
+   "price": 326.02,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e1088ae9-66f0-448d-8a9a-e1611901e3d1.jpg?v=1793790813",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "70689750",
    "title": "Intel Core i7-12700KF processor 25 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i7-12700kf-processor-25-mb-smart-cache-box",
-   "price": 372,
+   "price": 373,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/65e4b3d8cfd1fd24338d9ea520e33aa8.jpg?v=1727281385",
    "inStock": true,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "82700753",
+   "title": "Intel Core i7-13700 Processor 30 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-13700-processor-30-mb-smart-cache",
+   "price": 448.74,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b9f60d27-af6d-4959-9e63-d9441e9b53b2.jpg?v=1793790784",
+   "inStock": false,
    "brand": "Intel"
   },
   {
@@ -3336,7 +4092,7 @@
    "sku": "90610273",
    "title": "Intel Core i7-14700F processor 33 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i7-14700f-processor-33-mb-smart-cache-box",
-   "price": 414,
+   "price": 413,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/85827bd1-5de7-44fd-b99e-697b2bca657a.jpg?v=1709804391",
    "inStock": true,
    "brand": "Intel"
@@ -3356,7 +4112,7 @@
    "sku": "89493507",
    "title": "Intel Core i7-14700K processor 33 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i7-14700k-processor-33-mb-smart-cache-box",
-   "price": 462,
+   "price": 460,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c5ed25d9-79bf-49a8-b5f4-a5fe192ff897.jpg?v=1709804375",
    "inStock": true,
    "brand": "Intel"
@@ -3375,9 +4131,39 @@
    "sku": "89482432",
    "title": "Intel Core i7-14700KF processor 33 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i7-14700kf-processor-33-mb-smart-cache-box",
-   "price": 440,
+   "price": 439,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2f497737-5411-4b09-9ff2-3255d9ca2e57.jpg?v=1709804374",
    "inStock": true,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "18230187",
+   "title": "Intel Core i7-6700 Processor 3.4 GHz 8 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-6700-processor-3-4-ghz-8-mb-smart-cache",
+   "price": 365.05,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/290a80ed-51d7-4bc4-9372-24ae70251579.jpg?v=1793790791",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "28552753",
+   "title": "Intel Core i7-6700TE Processor 2.4 GHz 8 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-6700te-processor-2-4-ghz-8-mb-smart-cache",
+   "price": 427.85,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1aa6ad78-d7ef-4d38-bdb6-1d9bbd283ab9.jpg?v=1793790793",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "38301756",
+   "title": "Intel Core i7-8700K Processor 3.7 GHz 12 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i7-8700k-processor-3-7-ghz-12-mb-smart-cache",
+   "price": 428.37,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/69fff20c-6a1d-4f56-ac8f-485b271ba166.jpg?v=1793790443",
+   "inStock": false,
    "brand": "Intel"
   },
   {
@@ -3387,6 +4173,16 @@
    "url": "https://www.clove.co.uk/products/intel-core-i7-9700-processor-3-ghz-12-mb-smart-cache",
    "price": 485.98,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8ab5c447-a470-43ae-ba43-13bd6d896231.jpg?v=1713968919",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "60112092",
+   "title": "Intel Core i9-10850K Processor 3.6 GHz 20 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i9-10850k-processor-3-6-ghz-20-mb-smart-cache-box",
+   "price": 454.19,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bfcb0239-8143-4991-8e55-02e3eeec74c2.jpg?v=1793790779",
    "inStock": false,
    "brand": "Intel"
   },
@@ -3432,11 +4228,31 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "55543238",
+   "title": "Intel Core i9-10920X Processor 3.5 GHz 19.25 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i9-10920x-processor-3-5-ghz-19-25-mb-smart-cache-box",
+   "price": 837.55,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3c1308d0-a685-47eb-9640-1f50f9525da2.jpg?v=1793790475",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "55543240",
    "title": "Intel Core i9-10940X Processor 3.3 GHz 19.25 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i9-10940x-processor-3-3-ghz-19-25-mb-smart-cache-box",
    "price": 955.62,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ef9fb99b-e16d-4916-8c12-020964defae4.jpg?v=1686673064",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "63021149",
+   "title": "Intel Core i9-11900 Processor 2.5 GHz 16 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i9-11900-processor-2-5-ghz-16-mb-smart-cache-box",
+   "price": 317.65,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f2c4231c-1980-4567-af6c-15d0b5e4eaf8.jpg?v=1793790440",
    "inStock": false,
    "brand": "Intel"
   },
@@ -3457,6 +4273,26 @@
    "url": "https://www.clove.co.uk/products/intel-core-i9-11900k-processor-3-5-ghz-16-mb-smart-cache",
    "price": 263.32,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b0008c46-10f8-4a41-b1e1-9117687bee0e.jpg?v=1709804461",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "62994999",
+   "title": "Intel Core i9-11900K Processor 3.5 GHz 16 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-core-i9-11900k-processor-3-5-ghz-16-mb-smart-cache-box",
+   "price": 343.63,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/09d17b20-963d-44ea-a68a-f15b3e0e4b6e.jpg?v=1793790425",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "62992420",
+   "title": "Intel Core i9-11900KF Processor 3.5 GHz 16 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i9-11900kf-processor-3-5-ghz-16-mb-smart-cache",
+   "price": 251.13,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b4978fa2-774d-4126-ad1e-d149f37b822c.jpg?v=1793790781",
    "inStock": false,
    "brand": "Intel"
   },
@@ -3508,6 +4344,16 @@
    "price": 507.84,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1411f185-69c6-4798-8a4f-cf21f711ae00.jpg?v=1686673005",
    "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "70957866",
+   "title": "Intel Core i9-12900KF processor 30 MB Smart Cache Tray",
+   "url": "https://www.clove.co.uk/products/intel-core-i9-12900kf-processor-30-mb-smart-cache-tray",
+   "price": 489,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e3924b7f-b409-4990-9964-e0ea5b5a57e5.jpg?v=1793790409",
+   "inStock": true,
    "brand": "Intel"
   },
   {
@@ -3605,7 +4451,7 @@
    "sku": "90610274",
    "title": "Intel Core i9-14900F processor - 36 MB Smart Cache - With Box",
    "url": "https://www.clove.co.uk/products/intel-core-i9-14900f-processor-36-mb-smart-cache-box",
-   "price": 663,
+   "price": 661,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b182c02b2d7ba60a1b7b565fb27139cb.jpg?v=1712593981",
    "inStock": true,
    "brand": "Intel"
@@ -3624,7 +4470,7 @@
    "sku": "89516804",
    "title": "Intel Core i9-14900K processor - 36 MB Smart Cache - With Box",
    "url": "https://www.clove.co.uk/products/intel-core-i9-14900k-processor-36-mb-smart-cache-box",
-   "price": 645,
+   "price": 643,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/42f65e9441726b7f99b32860332af7a5.jpg?v=1712593969",
    "inStock": true,
    "brand": "Intel"
@@ -3644,7 +4490,7 @@
    "sku": "89503935",
    "title": "Intel Core i9-14900KF processor - 36 MB Smart Cache - With Box",
    "url": "https://www.clove.co.uk/products/intel-core-i9-14900kf-processor-36-mb-smart-cache-box",
-   "price": 611,
+   "price": 609,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/42f65e9441726b7f99b32860332af7a5_55fe5d1c-f620-426e-ab51-ab0f82f3d28d.jpg?v=1712593989",
    "inStock": true,
    "brand": "Intel"
@@ -3673,8 +4519,28 @@
    "sku": "91978765",
    "title": "Intel Core i9-14900KS processor 36 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i9-14900ks-processor-36-mb-smart-cache-box",
-   "price": 825,
+   "price": 823,
    "inStock": true,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "37312093",
+   "title": "Intel Core i9-7940X Processor 3.1 GHz 19.25 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i9-7940x-processor-3-1-ghz-19-25-mb-smart-cache",
+   "price": 1492.92,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b2758ed6-50bd-4e11-8ac8-b24a4d5fbd32.jpg?v=1793790428",
+   "inStock": false,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "52254868",
+   "title": "Intel Core i9-9900T Processor 2.1 GHz 16 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-core-i9-9900t-processor-2-1-ghz-16-mb-smart-cache",
+   "price": 513.94,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a6479c05-b9cc-4c7e-b982-c4b05cdc13e5.jpg?v=1793790453",
+   "inStock": false,
    "brand": "Intel"
   },
   {
@@ -3682,7 +4548,7 @@
    "sku": "96836657",
    "title": "Intel Core Ultra 5 225 processor 20 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-ultra-5-225-processor-20-mb-smart-cache-box",
-   "price": 218,
+   "price": 217,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/613176c9-90fb-48c4-a485-8e5cd474c84d.jpg?v=1743582673",
    "inStock": true,
    "brand": "Intel"
@@ -3732,7 +4598,7 @@
    "sku": "96851864",
    "title": "Intel Core Ultra 5 235 processor 24 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-ultra-5-235-processor-24-mb-smart-cache-box",
-   "price": 340,
+   "price": 339,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/79a3be02-944a-4aac-8ce5-56d23ca5f5b7.jpg?v=1743582661",
    "inStock": true,
    "brand": "Intel"
@@ -3836,7 +4702,7 @@
    "sku": "96830392",
    "title": "Intel Core Ultra 7 265 processor 30 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-ultra-7-265-processor-30-mb-smart-cache-box",
-   "price": 449,
+   "price": 448,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/40ea7225-0703-41a4-a509-b6210ec644cf.jpg?v=1743582666",
    "inStock": true,
    "brand": "Intel"
@@ -3856,7 +4722,7 @@
    "sku": "96845682",
    "title": "Intel Core Ultra 7 265F processor 30 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-ultra-7-265f-processor-30-mb-smart-cache-box",
-   "price": 429,
+   "price": 428,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/39609fc6-75df-4305-bcd5-7fa76b498d33.jpg?v=1743582663",
    "inStock": true,
    "brand": "Intel"
@@ -3938,7 +4804,7 @@
    "sku": "96849453",
    "title": "Intel Core Ultra 9 285 processor 36 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-ultra-9-285-processor-36-mb-smart-cache-box",
-   "price": 750,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6e9d437e-4603-4e99-9157-b5b7eb7dd0a8.jpg?v=1743582663",
    "inStock": true,
    "brand": "Intel"
@@ -3958,9 +4824,31 @@
    "sku": "93391272",
    "title": "Intel Core Ultra 9 285K processor 36 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-ultra-9-285k-processor-36-mb-smart-cache-box",
-   "price": 768,
+   "price": 766,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f726e5e9-7884-4d92-9fc4-15736e6f7980.jpg?v=1743582678",
    "inStock": true,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "42274322",
+   "title": "Intel Pentium Gold G5400T Processor 3.1 GHz 4 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-pentium-gold-g5400t-processor-3-1-ghz-4-mb-smart-cache",
+   "price": 118.66,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a70968f4-70f4-4bdb-aea4-5e352b225bbb.jpg?v=1793790448",
+   "inStock": false,
+   "mpn": "G5400T",
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "42331454",
+   "title": "Intel Pentium Gold G5500T Processor 3.2 GHz 4 MB Smart Cache",
+   "url": "https://www.clove.co.uk/products/intel-pentium-gold-g5500t-processor-3-2-ghz-4-mb-smart-cache",
+   "price": 115.32,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ed8a3abf-2c49-4938-98eb-16876e4f86d5.jpg?v=1793790809",
+   "inStock": false,
+   "mpn": "G5500T",
    "brand": "Intel"
   },
   {
@@ -3983,6 +4871,39 @@
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b0b26561-6bfa-4f65-b0ff-28335eb66cbf.jpg?v=1721060949",
    "inStock": false,
    "mpn": "G6405",
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "58788114",
+   "title": "Intel Pentium Gold G6500 Processor 4.1 GHz 4 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-pentium-gold-g6500-processor-4-1-ghz-4-mb-smart-cache-box",
+   "price": 142.42,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/48ec89fc-b24e-4d94-b1cd-649fda1b2e4b.jpg?v=1793790437",
+   "inStock": false,
+   "mpn": "G6500",
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "58788110",
+   "title": "Intel Pentium Gold G6600 Processor 4.2 GHz 4 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-pentium-gold-g6600-processor-4-2-ghz-4-mb-smart-cache-box",
+   "price": 182.44,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f8111663-7fb9-4d4e-b1ae-2c8857764eb5.jpg?v=1793790810",
+   "inStock": false,
+   "mpn": "G6600",
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "63644007",
+   "title": "Intel Pentium Gold G6605 Processor 4.3 GHz 4 MB Smart Cache Box",
+   "url": "https://www.clove.co.uk/products/intel-pentium-gold-g6605-processor-4-3-ghz-4-mb-smart-cache-box",
+   "price": 148.68,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dbec9100-1927-47de-bdbd-32cfe79d55b0.jpg?v=1793790818",
+   "inStock": false,
+   "mpn": "G6605",
    "brand": "Intel"
   },
   {
@@ -4052,6 +4973,16 @@
    "url": "https://www.clove.co.uk/products/intel-xeon-6337p-processor-3-5-ghz-18-mb-tray",
    "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/50664e32-54cd-440b-96f3-32e433d66a7a.jpg?v=1791885739",
+   "inStock": true,
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "98954805",
+   "title": "Intel Xeon 6353P processor 2.7 GHz 24 MB Tray",
+   "url": "https://www.clove.co.uk/products/intel-xeon-6353p-processor-2-7-ghz-24-mb-tray",
+   "price": 625,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ca246fca-d092-4d28-bf86-87d50e39460e.jpg?v=1793790414",
    "inStock": true,
    "brand": "Intel"
   },
@@ -4147,6 +5078,17 @@
    "url": "https://www.clove.co.uk/products/intel-xeon-e-2436-processor-2-9-ghz-18-mb-box",
    "price": 370.57,
    "inStock": false,
+   "mpn": "E-2436",
+   "brand": "Intel"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "90641583",
+   "title": "Intel Xeon E-2436 processor 2.9 GHz 18 MB Tray",
+   "url": "https://www.clove.co.uk/products/intel-xeon-e-2436-processor-2-9-ghz-18-mb-tray",
+   "price": 468,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/14f119bd-57f0-4731-bf5b-6e9c25c700fa.jpg?v=1793790422",
+   "inStock": true,
    "mpn": "E-2436",
    "brand": "Intel"
   },
