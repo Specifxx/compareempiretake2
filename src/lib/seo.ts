@@ -1,27 +1,23 @@
 import "server-only";
-import { activeCategories, getBrands, getCatalog, getVsPairs, liveRegions } from "./catalog";
+import { activeCategories, getBrands, getCatalog, getProducts, getSeries, getVsPairs, liveRegions } from "./catalog";
 import { getGuides } from "./guides";
+import { brandIndexable, latest, productInSitemap, productLastmod } from "./indexing";
 import { HOME_PATH, PREFIXED_REGIONS, withRegion, type RegionId } from "./region";
 import { SITE } from "./site";
-import type { Phone } from "./types";
+import type { CategoryId, Phone } from "./types";
 
 /**
- * Which pages go in the sitemap. Every page stays live and crawlable (the /browse pages link to all
- * of them); the sitemap only tells search engines where to start. A new site with ~28K programmatic
- * product pages, most sold by one store, looks thin, so we submit in tiers and expand once Search
- * Console shows the earlier tier indexed:
+ * Which pages go in the sitemap. Every indexable page stays live and crawlable (the /browse pages link to all
+ * of them); the sitemap only tells search engines where to start. A new site with ~28K programmatic product pages
+ * per region, most sold by one store, looks thin (Search Console, 2026-10-29: impressions peaked and faded within
+ * days of the first crawl), so the sitemap lists only products sold by three or more stores, in stock
+ * (lib/indexing.ts `productInSitemap`; `SITEMAP_MIN_STORES` in Vercel widens it to 2 once this tier is indexed),
+ * brands with an indexable product, and the head-to-head pages. One-store and sold-out products are noindex.
  *
- *   1  hubs (home, categories, deals, stores, browse, guides) + products sold by 3+ stores
- *   2  + products at 2 stores, brand pages, category deals, head-to-head comparisons  (default since 2026-11-01)
- *   3  + every product
- *
- * Raise it with the SITEMAP_TIER env var in Vercel (it's read at build), or change the default here.
+ * lastmod is each page's real last change (lib/indexing.ts `productLastmod`: the last day a price moved), never
+ * the build time, and is left out where nothing records one.
  */
-export const SITEMAP_TIER = Math.min(3, Math.max(1, Number(process.env.SITEMAP_TIER || 2)));
-
-/** Minimum stores a product needs to be in the sitemap at each tier. */
-const MIN_STORES: Record<number, number> = { 1: 3, 2: 2, 3: 1 };
-export const productInSitemap = (p: Phone) => p.retailerCount >= MIN_STORES[SITEMAP_TIER];
+export { productInSitemap } from "./indexing";
 
 export interface SitemapEntry { loc: string; lastmod?: string; priority?: number }
 const abs = (path: string) => `${SITE}${path === "/" ? "" : path}` || SITE;
@@ -29,32 +25,42 @@ const abs = (path: string) => `${SITE}${path === "/" ? "" : path}` || SITE;
 /** The sections of the sitemap index; each becomes /sitemaps/<id>.xml. */
 export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }[] {
   const au = getCatalog();
+  // Pages built from today's prices change with every import; the rest carry no lastmod.
   const lastmod = new Date(au.updatedAt).toISOString();
+  const priced = new Set([HOME_PATH.au, "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year", "/price-report"]);
   const sections: { id: string; entries: () => SitemapEntry[] }[] = [
     {
       id: "pages",
       entries: () =>
-        [HOME_PATH.au, "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year", "/embed", "/price-report", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/creators", "/network", "/contact", "/how-we-pick-stores", "/list-your-store", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), lastmod, priority: p === HOME_PATH.au ? 1 : 0.6 })),
+        [HOME_PATH.au, "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year", "/embed", "/price-report", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/creators", "/network", "/contact", "/how-we-pick-stores", "/list-your-store", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), ...(priced.has(p) ? { lastmod } : {}), priority: p === HOME_PATH.au ? 1 : 0.6 })),
     },
     {
       id: "categories",
       entries: () => [
-        ...activeCategories().flatMap((c) => [
-          { loc: abs(c.href), lastmod, priority: 0.9 },
-          { loc: abs(`/browse/${c.id}`), lastmod, priority: 0.5 },
-          ...(SITEMAP_TIER >= 2 ? [{ loc: abs(`/deals/${c.id}`), lastmod, priority: 0.6 }] : []),
-        ]),
+        ...activeCategories().flatMap((c) => {
+          const lm = categoryLastmod(c.id as CategoryId, "au");
+          return [
+            { loc: abs(c.href), lastmod: lm, priority: 0.9 },
+            { loc: abs(`/browse/${c.id}`), lastmod: lm, priority: 0.5 },
+            { loc: abs(`/deals/${c.id}`), lastmod: lm, priority: 0.6 },
+          ];
+        }),
       ],
     },
     { id: "guides", entries: () => getGuides().map((g) => ({ loc: abs(`/guides/${g.slug}`), lastmod: new Date(g.date).toISOString(), priority: 0.8 })) },
     { id: "products-au", entries: () => products("au") },
   ];
-  if (SITEMAP_TIER >= 2) {
-    sections.push(
-      { id: "brands", entries: () => getBrands().map((b) => ({ loc: abs(`/brands/${b.slug}`), lastmod, priority: 0.5 })) },
-      { id: "compare", entries: () => getVsPairs().map((v) => ({ loc: abs(`/compare/${v.slug}`), lastmod, priority: 0.5 })) },
-    );
-  }
+  sections.push(
+    {
+      id: "brands",
+      entries: () =>
+        getBrands()
+          .map((b) => ({ b, ps: getProducts().filter((p) => p.brand === b.brand) }))
+          .filter(({ ps }) => brandIndexable(ps))
+          .map(({ b, ps }) => ({ loc: abs(`/brands/${b.slug}`), lastmod: latest(ps.map(lastmodOf)), priority: 0.5 })),
+    },
+    { id: "compare", entries: () => getVsPairs().map((v) => ({ loc: abs(`/compare/${v.slug}`), lastmod: latest([lastmodOf(v.a), lastmodOf(v.b)]), priority: 0.5 })) },
+  );
   for (const r of PREFIXED_REGIONS.filter((x) => liveRegions().includes(x))) {
     const { updatedAt } = getCatalog(undefined, r);
     const lm = new Date(updatedAt).toISOString();
@@ -62,11 +68,15 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
       {
         id: `${r}-pages`,
         entries: () => [
-          ...["/", "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year", "/stores", "/browse"].map((p) => ({ loc: abs(withRegion(p, r)), lastmod: lm, priority: p === "/" ? 1 : 0.6 })),
-          ...activeCategories(r).flatMap((c) => [
-            { loc: abs(withRegion(`/${c.id}`, r)), lastmod: lm, priority: 0.9 },
-            { loc: abs(withRegion(`/browse/${c.id}`, r)), lastmod: lm, priority: 0.5 },
-          ]),
+          ...["/", "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year"].map((p) => ({ loc: abs(withRegion(p, r)), lastmod: lm, priority: p === "/" ? 1 : 0.6 })),
+          ...["/stores", "/browse"].map((p) => ({ loc: abs(withRegion(p, r)), priority: 0.6 })),
+          ...activeCategories(r).flatMap((c) => {
+            const clm = categoryLastmod(c.id as CategoryId, r);
+            return [
+              { loc: abs(withRegion(`/${c.id}`, r)), lastmod: clm, priority: 0.9 },
+              { loc: abs(withRegion(`/browse/${c.id}`, r)), lastmod: clm, priority: 0.5 },
+            ];
+          }),
         ],
       },
       { id: `products-${r}`, entries: () => products(r) },
@@ -75,10 +85,15 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
   return sections;
 }
 
+/** The day a product's page last changed (the last price move), as the sitemap's lastmod. */
+const lastmodOf = (p: Phone) => productLastmod(p, getSeries(p));
+/** A category page changes whenever one of its products does. */
+const categoryLastmod = (category: CategoryId, region: RegionId) => latest(getProducts(category, region).map(lastmodOf));
+
 function products(region: RegionId): SitemapEntry[] {
-  const { phones, updatedAt } = getCatalog(undefined, region);
-  const lastmod = new Date(updatedAt).toISOString();
-  return phones.filter(productInSitemap).map((p) => ({ loc: abs(withRegion(`/${p.category}/${p.slug}`, region)), lastmod, priority: p.retailerCount >= 3 ? 0.8 : 0.6 }));
+  return getProducts(undefined, region)
+    .filter(productInSitemap)
+    .map((p) => ({ loc: abs(withRegion(`/${p.category}/${p.slug}`, region)), lastmod: lastmodOf(p), priority: p.retailerCount >= 5 ? 0.8 : 0.7 }));
 }
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
@@ -87,9 +102,10 @@ export function urlsetXml(entries: SitemapEntry[]): string {
     .map((e) => `<url><loc>${esc(e.loc)}</loc>${e.lastmod ? `<lastmod>${e.lastmod}</lastmod>` : ""}${e.priority ? `<priority>${e.priority}</priority>` : ""}</url>`)
     .join("\n")}\n</urlset>\n`;
 }
-export function indexXml(ids: string[], lastmod: string): string {
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${ids
-    .map((id) => `<sitemap><loc>${SITE}/sitemaps/${id}.xml</loc><lastmod>${lastmod}</lastmod></sitemap>`)
+/** The index: each child sitemap dated by its newest entry. */
+export function indexXml(sections: { id: string; lastmod?: string }[]): string {
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sections
+    .map(({ id, lastmod }) => `<sitemap><loc>${SITE}/sitemaps/${id}.xml</loc>${lastmod ? `<lastmod>${lastmod}</lastmod>` : ""}</sitemap>`)
     .join("\n")}\n</sitemapindex>\n`;
 }
 export const XML_HEADERS = { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600, s-maxage=86400" };

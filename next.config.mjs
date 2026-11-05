@@ -47,7 +47,10 @@ const nextConfig = {
       ["/us/tablets/microsoft-surface-go-3-tablet-intel-core-i3-10100y-with", "/us/tablets/microsoft-surface-go-3-tablet-intel-core-i3-10100y"],
     ];
     // The root became the US home on 2026-11-01 (Australia's moved to /au), so the old US home redirects to it.
-    return [{ source: "/us", destination: "/", permanent: true }, ...merged.map(([source, destination]) => ({ source, destination, permanent: true }))];
+    // Brand slugs minted from an undecoded store title ("Bowers &amp; Wilkins", 2026-11-05); product URLs with the
+    // same artefact redirect from the product page itself (lib/indexing.ts cleanedSlug).
+    const entity = [["/brands/bowers-amp-wilkins", "/brands/bowers-wilkins"]];
+    return [{ source: "/us", destination: "/", permanent: true }, ...[...merged, ...entity].map(([source, destination]) => ({ source, destination, permanent: true }))];
   },
   async headers() {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.

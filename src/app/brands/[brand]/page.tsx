@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PhoneBrowser } from "@/components/PhoneBrowser";
 import { gridProps, gridSrc } from "@/lib/browse";
-import { getBrands, getSummaries, gridVersion } from "@/lib/catalog";
+import { getBrands, getProducts, getSummaries, gridVersion } from "@/lib/catalog";
+import { brandIndexable } from "@/lib/indexing";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
 
@@ -19,6 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ brand: st
     title: `${brand.brand} prices in Australia`,
     description: `Compare prices on ${brand.count} ${brand.brand} products across Australian retailers, from $${brand.from.toLocaleString("en-AU")}.`,
     alternates: { canonical: `/brands/${brand.slug}` },
+    // A brand whose every product is sold by one store (or sold out) is a thin list: live, linked, not indexed.
+    ...(brandIndexable(getProducts().filter((p) => p.brand === brand.brand)) ? {} : { robots: { index: false, follow: true } }),
   };
 }
 
