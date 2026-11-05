@@ -1,14 +1,14 @@
-// Helpers the two Amazon scripts share: the AU catalogue, read straight from data/ (lib/catalog.ts is server-only).
+// Helpers the two Amazon scripts share: a region's catalogue, read straight from data/ (lib/catalog.ts is server-only).
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { liveCategories } from "../src/lib/categories";
-import { dataPath } from "../src/lib/region";
+import { dataPath, type RegionId } from "../src/lib/region";
 import type { Catalog, Phone } from "../src/lib/types";
 
-export function auProducts(): Phone[] {
+export function productsFor(region: RegionId): Phone[] {
   const out: Phone[] = [];
   for (const c of liveCategories()) {
-    const f = path.join(process.cwd(), dataPath("au", c.id), "catalog.json");
+    const f = path.join(process.cwd(), dataPath(region, c.id), "catalog.json");
     if (!existsSync(f)) continue;
     for (const p of (JSON.parse(readFileSync(f, "utf8")) as Catalog).phones) out.push({ ...p, category: p.category ?? c.id });
   }

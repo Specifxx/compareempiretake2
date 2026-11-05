@@ -5,9 +5,10 @@
  * amazon.com.au, riftcompare-20 (the owner's US account) on amazon.com, compareempi03-21 (the owner's
  * UK account) on amazon.co.uk. Hard-coded (owner, 2026-11-02: no Vercel variable decides a tag).
  *
- * Prices: only from the Creators API, only in Australia, only on the product page's Amazon row and only
- * while under 24 hours old (lib/amazon-live.ts, DECISIONS 2026-11-03). Until the API opens to the account,
- * links say "Check price on Amazon". No ratings, ever. Links carry rel="sponsored nofollow noopener".
+ * Prices: only from the Creators API, in every region with a tag (AU, US since the US approval of
+ * 2026-11-05, UK), only on the product page's Amazon row and only while under 24 hours old
+ * (lib/amazon-live.ts, DECISIONS 2026-11-03 and 2026-11-05). Until the API opens to a store's account,
+ * its links say "Check price on Amazon". No ratings, ever. Links carry rel="sponsored nofollow noopener".
  */
 export const AMAZON_AU_TAG = "cecompare-22";
 export const AMAZON_REL = "sponsored nofollow noopener";

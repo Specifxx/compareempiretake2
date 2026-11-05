@@ -33,7 +33,7 @@ const load = async (params: ProductParams, region: RegionId) => {
   if (clean && getProduct(category as CategoryId, clean, region)) permanentRedirect(withRegion(`/${category}/${clean}`, region));
   return undefined;
 };
-/** The product page's copy of the product, with its Amazon links and live prices (AU only). */
+/** The product page's copy of the product, with its Amazon links and live prices (every region with a tag). */
 const withAmazon = (p: Phone, region: RegionId): Phone => ({ ...p, amazon: amazonFor(p, region) });
 
 /** hreflang links to the same product in the other regions we have it in. */

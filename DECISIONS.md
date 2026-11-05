@@ -1225,3 +1225,17 @@ Search Console around 25 November: the indexed count against the 5,900 URLs, and
 router and Black Friday pages. `tests/indexing.test.ts`.
 The owner asked for this release the same morning ("deploy now"), so it shipped as an `[deploy] [urgent]` commit
 rather than waiting for the evening data release.
+
+## 2026-11-05: Amazon API prices in every region, not only Australia
+
+The US Associates account (riftcompare-20) was approved today, and the owner asked for Amazon's API prices as price
+rows on every site. On this site the machinery from 2026-11-03 was Australia-only (`amazonFor` returned nothing
+elsewhere, the scripts read `au` alone). Now `scripts/amazon-asins.ts` and `scripts/fetch-amazon-prices.ts` run for
+every region with a tag (AU, US, UK), one file per region (`data/amazon/asins-<region>.json`,
+`status-<region>.json`, the git-ignored `data/amazon-live/<region>.json`), and the product page shows the price in
+the region's own clock. ONE credential: a Creators API credential is global, and access is per marketplace (it opens
+when that store's own account has qualifying sales, about 10 in 30 days), so the AU-named variables
+(`AMAZON_CREATORS_AU_*`) serve the US and UK too; `AMAZON_CREATORS_US_*` / `_UK_*` override them only if Amazon
+ever issues a separate one. A store that refuses (403) is skipped and the next region still runs, so each
+marketplace switches itself on the day its account qualifies. Everything else from the 2026-11-03 entry stands:
+prices never committed, shown under 24 hours only, product page row only, never a sort, badge, deal or alert.

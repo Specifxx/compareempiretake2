@@ -1,6 +1,6 @@
 import "server-only";
 /**
- * What a product page may show of Amazon, per variant: the ASIN's own tagged link (data/amazon/asins-au.json,
+ * What a product page may show of Amazon, per variant and region: the ASIN's own tagged link (data/amazon/asins-<region>.json,
  * written by scripts/amazon-asins.ts; ASINs may be stored), and, only while under 24 hours old, the price the
  * build fetched from the Creators API (data/amazon-live/<region>.json, git-ignored, never committed: Amazon's
  * licence lets a price be kept 24 hours and shown with its time). Read only by the product page: never by a
@@ -8,7 +8,7 @@ import "server-only";
  */
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { amazonLink, isFreshAmazonPrice as isFresh, type AmazonRegion } from "./amazon";
+import { amazonLink, amazonStore, isFreshAmazonPrice as isFresh, type AmazonRegion } from "./amazon";
 import type { Phone } from "./types";
 
 export interface AmazonLive { asin: string; url: string; price?: number; at?: string }
@@ -36,9 +36,9 @@ function files(region: AmazonRegion) {
   return c;
 }
 
-/** The product's Amazon per variant id (only variants with a known ASIN). Only AU has API access. */
+/** The product's Amazon per variant id (only variants with a known ASIN), in any region with a tag. */
 export function amazonFor(p: Pick<Phone, "category" | "slug" | "variants">, region: AmazonRegion, now = Date.now()): Record<string, AmazonLive> | undefined {
-  if (region !== "au") return undefined;
+  if (!amazonStore(region)) return undefined;
   const { asins, live } = files(region);
   const fresh = live && isFresh(live.fetchedAt, now);
   const out: Record<string, AmazonLive> = {};
