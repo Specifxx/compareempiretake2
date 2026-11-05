@@ -10,8 +10,11 @@
  * scaled by shipped revenue; one call is one request however many ASINs it carries (getItems takes ten).
  *
  * Credentials: AMAZON_CREATORS_AU_CLIENT_ID / _CLIENT_SECRET / _VERSION, GitHub secrets and Vercel variables,
- * never in the repo. The version (3.1 NA, 3.2 EU, 3.3 FE) is printed beside the credential and picks the
- * Login with Amazon token endpoint; the AU store is in FE, so 3.3 is the default.
+ * never in the repo. ONE credential serves every marketplace (2026-11-05: the US account was approved; a
+ * credential is global, access is per marketplace and opens when that store's account has qualifying sales),
+ * so the AU-named variables are the default for the US and UK too; AMAZON_CREATORS_US_* / _UK_* override
+ * them if Amazon ever issues a separate one. The version (3.1 NA, 3.2 EU, 3.3 FE) is printed beside the
+ * credential and picks the Login with Amazon token endpoint.
  * Docs: https://affiliate-program.amazon.com/creatorsapi/docs/en-us/get-started/using-curl
  */
 export const CREATORS_API = "https://creatorsapi.amazon/catalog/v1";
@@ -36,11 +39,13 @@ export interface Credentials { id: string; secret: string; version: string }
 
 /** The market's credential from the environment, or null (then nothing runs and nothing fails). */
 export function credentialsFor(market: AmazonMarket, env: Record<string, string | undefined> = process.env): Credentials | null {
-  const k = `AMAZON_CREATORS_${market.toUpperCase()}_`;
-  const id = env[`${k}CLIENT_ID`]?.trim();
-  const secret = env[`${k}CLIENT_SECRET`]?.trim();
-  if (!id || !secret) return null;
-  return { id, secret, version: env[`${k}VERSION`]?.trim() || DEFAULT_VERSION[market] };
+  for (const m of [market, "au" as const]) {
+    const k = `AMAZON_CREATORS_${m.toUpperCase()}_`;
+    const id = env[`${k}CLIENT_ID`]?.trim();
+    const secret = env[`${k}CLIENT_SECRET`]?.trim();
+    if (id && secret) return { id, secret, version: env[`${k}VERSION`]?.trim() || DEFAULT_VERSION[m] };
+  }
+  return null;
 }
 
 export interface Listing {

@@ -7,7 +7,7 @@ import { AmazonNote, AmazonRow } from "./AmazonLink";
 import { AMAZON_PRICE_DISCLAIMER } from "./AmazonLivePrice";
 import { amazonLink, amazonStore } from "@/lib/amazon";
 import { EbayListingRow, EbaySearchRow } from "./EbayListingRow";
-import { withRegion } from "@/lib/region";
+import { REGIONS, withRegion } from "@/lib/region";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
 import type { Offer, Phone, RetailerId } from "@/lib/types";
@@ -19,6 +19,9 @@ import { SaveButton } from "./SaveButton";
 import { CompareToggle } from "./CompareToggle";
 import { PriceCheckCard } from "./PriceCheckCard";
 import { PriceAlertButton } from "./PriceAlertButton";
+
+/** The clock an Amazon price's "as of" time is shown in: the region's own. */
+const AMAZON_CLOCK: Record<string, string> = { au: "Sydney time", us: "New York time", uk: "London time" };
 import type { PriceCheck, WasCheck } from "@/lib/price-check";
 import { useRegionKit } from "@/lib/use-region";
 
@@ -289,7 +292,7 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
       ) : (
         <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} adjective={R.adjective} />
       )}
-      {amazonHref && <AmazonRow query={mq} product={product} placement={live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at } : undefined} />}
+      {amazonHref && <AmazonRow query={mq} product={product} placement={live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} />}
       {compact ? null : (
       <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
