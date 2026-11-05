@@ -17,7 +17,7 @@ export async function scrapeShopify(retailer: RetailerId, base: string, collecti
   const out = new Map<string, RawOffer>();
   for (const c of collections) {
     for (let page = 1; page <= 10; page++) {
-      const { products } = await getJson<{ products: Product[] }>(`${base}/collections/${c}/products.json?limit=250&page=${page}`);
+      const { products } = await getJson<{ products: Product[] }>(`${base}/collections/${c}/products.json?limit=250&page=${page}&country=AU`);
       for (const p of products) {
         for (const v of p.variants) {
           const title = v.title && v.title !== "Default Title" && !p.title.includes(v.title) ? `${p.title} ${v.title.replace(/\s*\/\s*/g, " ")}` : p.title;

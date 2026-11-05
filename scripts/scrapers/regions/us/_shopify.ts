@@ -41,7 +41,7 @@ export function feed(base: string, collection = "", maxPages = 20): Promise<Shop
       const all: ShopifyProduct[] = [];
       for (let page = 1; page <= maxPages; page++) {
         const path = collection ? `/collections/${collection}/products.json` : "/products.json";
-        const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}${path}?limit=250&page=${page}`);
+        const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}${path}?limit=250&page=${page}&country=US`);
         all.push(...products);
         if (products.length < 250) break;
         await sleep(500);

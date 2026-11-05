@@ -211,7 +211,7 @@ export async function shopifyCategory(
   const out = new Map<string, RawOffer>();
   for (const c of collections) {
     for (let page = 1; page <= 20; page++) {
-      const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}/collections/${c}/products.json?limit=250&page=${page}`);
+      const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}/collections/${c}/products.json?limit=250&page=${page}&country=AU`);
       for (const p of products) {
         if (opts.skip?.(p)) continue;
         const pt = decodeEntities(p.title).trim();

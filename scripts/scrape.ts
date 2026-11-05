@@ -6,16 +6,14 @@
 import { writeFileSync } from "node:fs";
 import type { RawOffer, RetailerId } from "../src/lib/types";
 import { scrapeGoodGuys } from "./scrapers/goodguys";
-import { scrapeHarveyNorman } from "./scrapers/harveynorman";
 import { scrapeJbHifi } from "./scrapers/jbhifi";
-import { scrapeMobileciti } from "./scrapers/mobileciti";
 import * as more from "./scrapers/more";
 
 const SCRAPERS: Partial<Record<RetailerId, () => Promise<RawOffer[]>>> = {
   jbhifi: scrapeJbHifi,
-  harveynorman: scrapeHarveyNorman,
+  // Harvey Norman (a challenge page instead of __NEXT_DATA__ since 22 Oct) and Mobileciti (403 since
+  // 22 Oct) put up bot walls, which are never worked around (DECISIONS.md, 2026-11-05).
   thegoodguys: scrapeGoodGuys,
-  mobileciti: scrapeMobileciti,
   apple: more.scrapeApple,
   samsung: more.scrapeSamsung,
   telstra: more.scrapeTelstra,
