@@ -1223,3 +1223,5 @@ is for design work; this is the search work it protects):
 Not done, on purpose: no indexing requests, no sitemap resubmission (the index is read daily as it is). Recheck
 Search Console around 25 November: the indexed count against the 5,900 URLs, and the click rate on iPad, Pixel,
 router and Black Friday pages. `tests/indexing.test.ts`.
+The owner asked for this release the same morning ("deploy now"), so it shipped as an `[deploy] [urgent]` commit
+rather than waiting for the evening data release.
