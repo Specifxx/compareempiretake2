@@ -18,7 +18,7 @@ import { EbayStrip } from "@/components/EbayStrip";
 import { ChristmasDecor } from "@/components/ChristmasDecor";
 import { HomeRegionPicker } from "@/components/HomeRegionPicker";
 import { HotLaunches } from "@/components/HotLaunches";
-import { hotLaunches } from "@/lib/launches";
+import { hotLaunches, storePreorders } from "@/lib/launches";
 import { CreatorsCornerBadge } from "@/components/creators/CreatorsCornerBadge";
 
 export function HomeView({ region }: { region: RegionId }) {
@@ -38,6 +38,8 @@ export function HomeView({ region }: { region: RegionId }) {
   const example = pickExample(region);
   // The year's big launches (content/launches.ts), dated by the last import, not the build clock.
   const hot = hotLaunches(region, catalogDay(region), getSummaries);
+  // ...and whatever the stores opened pre-orders for on their own (lib/preorders.ts), filling the row to four cards.
+  const pre = storePreorders(region, catalogDay(region), getSummaries).slice(0, Math.max(0, 4 - hot.length));
   const updated = new Date(updatedAt).toLocaleString(R.locale, { timeZone: R.timeZone, weekday: "long", hour: "numeric", minute: "2-digit" });
 
   return (
@@ -97,7 +99,7 @@ export function HomeView({ region }: { region: RegionId }) {
         </div>
       </section>
 
-      <HotLaunches items={hot} region={region} />
+      <HotLaunches items={hot} preorders={pre} region={region} />
 
       {example && (
         <section className="container-x -mt-4 mb-10">

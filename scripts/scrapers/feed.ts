@@ -192,6 +192,7 @@ export function rowsToOffers(s: FeedStore, rows: Iterable<FeedRow>): Map<Categor
       wasPrice: full > price ? full : undefined,
       image: image && /^https?:\/\//.test(image) ? image : undefined,
       inStock: inStock(r.availability),
+      preorder: /pre-?order/i.test(r.availability ?? "") || undefined,
       brand: cat === "lego" ? "LEGO" : brand && !/^(n\/a|none|unknown|-)$/i.test(brand) ? brand : undefined,
       mpn: set ?? (r.mpn?.trim() || undefined),
     };

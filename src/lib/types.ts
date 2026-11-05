@@ -11,6 +11,8 @@ export interface RawOffer {
   wasPrice?: number;
   image?: string;
   inStock: boolean;
+  /** The store sells it on pre-order (its availability says so; lib/preorders.ts also reads the title). */
+  preorder?: boolean;
   /** Short marketing blurb when the retailer gives one (JB Hi-Fi). */
   blurb?: string;
   /** "plan": the phone is paid off monthly with a carrier plan (price = device total). */
@@ -235,6 +237,8 @@ export interface Offer {
   wasPrice?: number;
   colour: string;
   inStock: boolean;
+  /** On pre-order at this store (lib/preorders.ts): the price is the store's pre-order price. */
+  preorder?: boolean;
   image?: string;
   kind?: "outright" | "plan";
   monthly?: number;

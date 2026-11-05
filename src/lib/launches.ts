@@ -48,6 +48,35 @@ export function hotLaunches(
   return out;
 }
 
+/** A product the stores themselves are taking pre-orders for (lib/preorders.ts), found in the import with no entry here. */
+export interface StorePreorder {
+  product: PhoneSummary;
+  /** Stores selling it on pre-order today. */
+  stores: number;
+}
+
+/**
+ * Every product with a store pre-order today, most stores first (then most stores overall, then cheapest), leaving out any
+ * the hand-kept launches above already show. `read` is the whole region's catalogue (getSummaries with no category).
+ */
+export function storePreorders(
+  region: RegionId,
+  today: string,
+  read: (category: Launch["category"] | undefined, region: RegionId) => PhoneSummary[],
+  launches: readonly Launch[] = LAUNCHES,
+): StorePreorder[] {
+  const all = read(undefined, region);
+  const shown = new Set<string>();
+  for (const launch of featuredLaunches(today, launches)) {
+    const m = matchLaunch(launch, all.filter((p) => p.category === launch.category));
+    if (m) shown.add(`${m.category}/${m.slug}`);
+  }
+  return all
+    .filter((p) => p.preorderStores > 0 && !shown.has(`${p.category}/${p.slug}`))
+    .sort((a, b) => b.preorderStores - a.preorderStores || b.retailerCount - a.retailerCount || a.bestPrice - b.bestPrice)
+    .map((product) => ({ product, stores: product.preorderStores }));
+}
+
 export interface CalendarLaunch extends HotLaunch {
   /** Still featured on the homepage (today is on or before featureUntil). */
   current: boolean;

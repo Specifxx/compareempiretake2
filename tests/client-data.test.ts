@@ -199,6 +199,7 @@ const summary = (i: number, o: Partial<PhoneSummary> = {}): PhoneSummary => ({
   generation: (i * 3) % 4,
   saving: (i * 11) % 120,
   inStock: i % 2 === 0,
+  preorderStores: 0,
   atLowest: false,
   region: "au",
   ...o,
