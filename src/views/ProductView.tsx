@@ -225,7 +225,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
   ];
 
   return (
-    <div className="container-x pt-6">
+    <div className="container-x pt-6" data-no-dock>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <nav className="mb-6 flex items-center gap-2 text-sm text-ink-mute" aria-label="Breadcrumb">
         <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link>

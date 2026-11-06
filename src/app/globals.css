@@ -498,3 +498,21 @@ html.gq [data-grid-fallback] span[data-filtered-only] { display: inline; }
   --srv-accent-fg: rgb(var(--brand-ink));
   --srv-field: rgb(var(--bg));
 }
+
+/* The side rails (components/SideRails.tsx; owner, 2026-11-06): from 1280px the page's column leaves 160px (a 136px rail and
+   two 12px gutters) free on each side; from 1600px it is its full 80rem again and the rails sit just outside it. The header
+   keeps its full width (the rails start below it). Pure CSS, the same on the server: no layout shift when the rails mount. */
+@media (min-width: 1280px) {
+  main .container-x,
+  footer .container-x {
+    max-width: min(80rem, calc(100vw - 320px));
+  }
+}
+.rail-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--line)) transparent;
+}
+/* The feedback button rides above the phone dock while it shows. */
+html[data-ad-dock] [data-feedback-button] {
+  bottom: calc(76px + env(safe-area-inset-bottom));
+}

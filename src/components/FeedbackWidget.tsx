@@ -39,6 +39,7 @@ export function FeedbackWidget() {
     <>
       <button
         onClick={() => setOpen(true)}
+        data-feedback-button
         className="fixed bottom-4 right-4 z-40 inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2.5 text-sm font-semibold text-bg shadow-lift transition hover:scale-[1.03]"
         aria-label="Send feedback or write a review"
       >
