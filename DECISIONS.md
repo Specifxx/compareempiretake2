@@ -1466,3 +1466,23 @@ review found monitors labelled wrong (the LG 27GM950B, a 5K Mini LED IPS, shown 
 - **Shipping a reading fix without an import.** `scripts/refresh-specs.ts` rewrites only `specs` in every
   catalog.json; the daily build does the same from the raw files. Phones keep a build-time figure their stored titles
   no longer state (the catalogue trims titles and blurbs).
+
+## 2026-11-06 — US prices: each Amazon country needs its own credential; brand stores read directly
+
+**Owner (Bill, 2026-11-06):** the US "literally only has like one store … where's the Amazon? … Best Buy might not
+actually work, but we can probably find a proxy … get that immediately on this website."
+
+**Amazon.** The AU Creators API credential answered every US and UK call with `400 InvalidAssociate` ("Your credential is
+not linked to the partner tag"): a credential belongs to the Associates account that made it, so the 2026-11-05 note
+that one credential is global was wrong. The import now stops a region at the first such answer and records "refused"
+with the reason, and passes `AMAZON_CREATORS_US_*` / `_UK_*` / `_CA_*`. The US credential is made in the US Associates
+Central (store riftcompare-20, version 3.1); prices still wait until that account has 10 qualifying sales in 30 days.
+
+**Best Buy.** No proxy: a store that walls off servers is never worked around (the rule on every site). Best Buy's free
+Products API (`BESTBUY_API_KEY`, wired 2026-11-04) is the legitimate door and waits only for the key.
+
+**Brand stores read directly.** Samsung US (listing JSON-LD), Google Store US (Pixel, the config page's offers: unlocked
+only, one offer per model and storage at its lowest colour price) and Motorola US (product-page JSON-LD; a page that
+sells several storages for one price is skipped). Carrier, trade-in, monthly-only and renewed prices are refused.
+Phone dealers read through `autoShopify` keep only US unlocked units (global models, dual-SIM imports and carrier
+phones refused). Rounds 22 and 23 added 25 independent US stores this way.
