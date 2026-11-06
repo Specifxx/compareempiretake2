@@ -75,3 +75,25 @@ test("topProducts filters by spec (contains, or = for exact) and keeps one row p
   const by = cheapestBy(ps, { cats: ["graphics-cards"], spec: "GPU", values: ["RTX 5070 Ti", "RTX 5070"] });
   assert.deepEqual(by.map((r) => [r.value, r.cheapest.slug, r.models]), [["RTX 5070 Ti", "rtx-5070-ti", 1], ["RTX 5070", "rtx-5070-b", 2]]);
 });
+
+test("posts are written for every region: no region in a slug, no typed amounts (2026-11-06)", () => {
+  assert.ok(guides.length >= 10, `only ${guides.length} guides`);
+  for (const g of guides) {
+    assert.doesNotMatch(g.slug, /australia|-us$|-uk$|canada|singapore/, `${g.slug}: a post serves every region, so its slug names none`);
+    assert.doesNotMatch(g.meta.title, /Australia/, `${g.slug}: title names Australia`);
+    assert.doesNotMatch(g.body.replace(/^\[\[[^\]]+\]\]$/gm, ""), /[$£€]\d/, `${g.slug}: typed a price; use {{price:}} so each region gets its own currency`);
+    for (const m of g.body.matchAll(/^\[\[\w+:([^\]]+)\]\]$/gm)) assert.doesNotMatch(m[1], /(^|,)(max|min)=/, `${g.slug}: max=/min= are in one currency`);
+  }
+});
+
+test("every retired guide 301s somewhere real, and no live guide is redirected", () => {
+  const redirects = JSON.parse(readFileSync(path.join(process.cwd(), "content/guide-redirects.json"), "utf8")) as Record<string, string>;
+  const slugs = new Set(guides.map((g) => g.slug));
+  const cats = (readFileSync(path.join(process.cwd(), "next.config.mjs"), "utf8").match(/CATEGORY_IDS = "([^"]+)"/) ?? [])[1]?.split("|") ?? [];
+  for (const [from, to] of Object.entries(redirects)) {
+    assert.ok(!slugs.has(from), `${from} is live and redirected`);
+    const m = to.match(/^\/guides\/([a-z0-9-]+)$/);
+    if (m) assert.ok(slugs.has(m[1]), `${from} → ${to}, which doesn't exist`);
+    else assert.ok(to === "/guides" || cats.includes(to.replace(/^\/us\//, "/").slice(1)), `${from} → ${to} is neither a guide nor a category page`);
+  }
+});
