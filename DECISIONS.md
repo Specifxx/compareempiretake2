@@ -1528,3 +1528,14 @@ phones refused). Rounds 22 and 23 added 25 independent US stores this way.
 
 Most data fixes (cameras, grey imports, Xidax) take effect with the next daily import's catalogue build; the display
 fixes with the next release.
+
+## 2026-11-06 — Awin offers and vouchers for the whole family (`data/awin/promotions.json`)
+
+**Decision (owner: store promotions "captured in our price comparison"):** the daily Awin sync also reads Awin's Offers
+API (`POST /publisher/3144410/promotions`, membership `joined`, status `active`) and publishes the live offers and
+vouchers of the programmes that accepted us in the public `data/awin/promotions.json`, beside `programmes.json`. Only
+what an advertiser gives its publishers to share: title, description (240 characters), start and end, regions, and a
+voucher's code. An offer with no end date, already over, from a programme we have not joined, or a voucher whose code
+Awin withholds, is dropped (`toPromotion`, `tests/awin.test.ts`). A failure keeps yesterday's file and never touches the
+programme list. Sister sites copy it in their build and show an offer as a note beside that store's row, never in its
+price or its rank, and drop it at its end date (KaeYoung first, `src/lib/promos.ts` there).
