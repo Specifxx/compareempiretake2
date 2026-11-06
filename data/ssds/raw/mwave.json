@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-11-05T00:40:08.274Z",
+ "scrapedAt": "2026-11-06T00:28:50.751Z",
  "offers": [
   {
    "retailer": "mwave",
    "sku": "AC98975",
    "title": "Acer FA100 256GB PCIe 3.0 NVMe M.2 2280 SSD - 1950/1300MB/s",
    "url": "https://www.mwave.com.au/products/acer-fa100-256gb-pcie-30-nvme-m2-2280-ssd-19501300mbs-ac98975",
-   "price": 67,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/acer_fa100_256gb_pcie_30_nvme_m2_2280_ssd_up_to_1950_mbs_read_ac98975_41791.jpg?v=1787783550",
    "inStock": true,
    "brand": "Acer"
@@ -16,7 +16,7 @@
    "sku": "AC98974",
    "title": "Acer RE100 2TB 2.5\" 3D NAND SATA SSD",
    "url": "https://www.mwave.com.au/products/acer-re100-2tb-25-3d-nand-sata-ssd-ac98974",
-   "price": 339,
+   "price": 449,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/acer_re100_2tb_25_3d_nand_sata_ssd_ac98974_84038.jpg?v=1787783556",
    "inStock": true,
    "brand": "Acer"
@@ -66,7 +66,7 @@
    "sku": "AC56606",
    "title": "ADATA Legend 710 1TB PCIe 3.0 NVMe M.2 2280 SSD - ALEG-710-1TCS",
    "url": "https://www.mwave.com.au/products/adata-legend-710-1tb-pcie-30-nvme-m2-2280-ssd-aleg7101tcs-ac56606",
-   "price": 229,
+   "price": 248.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/adata_legend_710_1tb_pcie_30_nvme_m2_2280_ssd_aleg7101tcs_blue_ac56606.jpg?v=1787744431",
    "inStock": true,
    "mpn": "ALEG-710-1TCS",
@@ -235,7 +235,7 @@
    "url": "https://www.mwave.com.au/products/adata-sd620-512gb-usb-32-gen-2-external-portable-ssd-black-ac96680",
    "price": 133.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/adata_sd620_512gb_usb_32_gen_2_external_portable_ssd_black_ac96680_3776.jpg?v=1787744440",
-   "inStock": true,
+   "inStock": false,
    "brand": "ADATA"
   },
   {
@@ -339,7 +339,7 @@
    "url": "https://www.mwave.com.au/products/biwin-black-opal-x570-pro-8tb-pcie-50-nvme-m2-ssd-bx570dn08tbrgx-ac98567",
    "price": 2443.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/biwin_black_opal_x570_pro_8tb_pcie_50_nvme_m2_ssd_bx570dn08tbrgx_ac98567_19747.jpg?v=1787795687",
-   "inStock": false,
+   "inStock": true,
    "mpn": "BX570DN08TB-RGX",
    "brand": "Biwin"
   },
@@ -350,7 +350,7 @@
    "url": "https://www.mwave.com.au/products/biwin-m100-1tb-25-sata-iii-6-gbs-ssd-550500mbs-ac82908",
    "price": 211.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/biwin_m100_1tb_25_sata_iii_6_gbs_ssd_bm100nn01tbrgx_ac82908_27071.jpg?v=1787745033",
-   "inStock": false,
+   "inStock": true,
    "brand": "Biwin"
   },
   {
@@ -371,7 +371,7 @@
    "url": "https://www.mwave.com.au/products/biwin-m350-1tb-pcie-40-nvme-m2-ssd-readwrite-speeds-up-to-60005000-mbs-ac89568",
    "price": 324,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/biwin_m350_1tb_pcie_40_nvme_m2_ssd_ac89568_36744.jpg?v=1787795692",
-   "inStock": false,
+   "inStock": true,
    "brand": "Biwin"
   },
   {
@@ -863,7 +863,7 @@
    "sku": "AC98216",
    "title": "KingBank KP320 256GB 2.5\" SATA III SSD",
    "url": "https://www.mwave.com.au/products/kingbank-kp320-256gb-25-sata-iii-ssd-ac98216",
-   "price": 88,
+   "price": 109,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kingbank_kp320_256gb_25_sata_iii_ssd_k502fsl1256401_ac98216_39029.jpg?v=1787797202",
    "inStock": true,
    "brand": "KingBank"
@@ -1226,7 +1226,7 @@
    "url": "https://www.mwave.com.au/products/lexar-nm620-512gb-pcie-30-nvme-m2-2280-ssd-lnm620x512grnnng-ac71354",
    "price": 169,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_nm620_512gb_pcie_30_nvme_m2_2280_ssd_lnm620x512grnnng_ac71354_94633.jpg?v=1787797407",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LNM620X512G-RNNNG",
    "brand": "Lexar"
   },
@@ -1248,7 +1248,7 @@
    "url": "https://www.mwave.com.au/products/lexar-nm790-2tb-pcie-40-nvme-m2-ssd-lnm790x002trnnng-ac67987",
    "price": 479,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexar_nm790_2tb_pcie_40_nvme_m2_ssd_lnm790x002trnnng_ac67987_51407.jpg?v=1787797406",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LNM790X002T-RNNNG",
    "brand": "Lexar"
   },
@@ -2330,7 +2330,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-ace-a58-256gb-25-sata-iii-3d-nand-ssd-ac92557",
    "price": 64,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_ace_a58_128gb_25_sata_iii_3d_nand_ssd_ac92557_92250.jpg?v=1789457428",
-   "inStock": true,
+   "inStock": false,
    "brand": "Silicon Power"
   },
   {
@@ -2420,7 +2420,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-128gb-pcie-30-nvme-m2-ssd-sz128gbp34a60m28au-ac93695",
    "price": 58,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_128gb_pcie_30_m2_nvme_ssd_ac93695_63954.jpg?v=1789457433",
-   "inStock": true,
+   "inStock": false,
    "mpn": "SZ128GBP34A60M28AU",
    "brand": "Silicon Power"
   },
@@ -2431,7 +2431,7 @@
    "url": "https://www.mwave.com.au/products/silicon-power-p34a60-1tb-pcie-30-nvme-m2-ssd-sz001tbp34a60m28au-ac93698",
    "price": 238,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_p34a60_1tb_pcie_30_m2_nvme_ssd_ac93698_65873.jpg?v=1789457429",
-   "inStock": false,
+   "inStock": true,
    "mpn": "SZ001TBP34A60M28AU",
    "brand": "Silicon Power"
   },
@@ -2797,6 +2797,116 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/silicon_power_xs75_4tb_pcie_40_nvme_m2_ssd_w_heatsink_ps5_compatible_ac93707_41594.jpg?v=1789457454",
    "inStock": false,
    "mpn": "SZ04KGBP44XS75S5AU",
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183273",
+   "title": "SP Silicon Power CreatePro CR55N 1TB SATA SSD 500MB/s Studio Backup",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr55n-1tb-sata-ssd-500mb-s-studio-backup",
+   "price": 695,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183273_8046d975-98f3-46b2-9cae-367c96846775.png?v=1793834894",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183277",
+   "title": "SP Silicon Power CreatePro CR55N 2TB SATA SSD 500MB/s Studio Backup",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr55n-2tb-sata-ssd-500mb-s-studio-backup",
+   "price": 1265,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183277_2.jpg?v=1793759757",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183301",
+   "title": "SP Silicon Power CreatePro CR55N 512GB SATA SSD 500MB/s Studio Backup",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr55n-512gb-sata-ssd-500mb-s-studio-backup",
+   "price": 375,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183301.png?v=1793834706",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183278",
+   "title": "SP Silicon Power CreatePro CR72X 2TB Portable SSD 1050MB/s Mobile Creator",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr72x-2tb-portable-ssd-1050mb-s-mobile-creator",
+   "price": 1110,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183278.png?v=1793837755",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183297",
+   "title": "SP Silicon Power CreatePro CR72X 500GB Portable SSD 1050MB/s Mobile Creator",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr72x-500gb-portable-ssd-1050mb-s-mobile-creator",
+   "price": 285,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183297.png?v=1793758029",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183280",
+   "title": "SP Silicon Power CreatePro CR75S 1TB PCIe SSD 7000MB/s 3D & Video Edit",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr75s-1tb-pcie-ssd-7000mb-s-3d-video-edit",
+   "price": 645,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183280_8dce5628-c7a1-488b-923b-2c0b1f6e4aba.png?v=1793835218",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183283",
+   "title": "SP Silicon Power CreatePro CR75S 2TB PCIe SSD 7000MB/s 3D & Video Edit",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr75s-2tb-pcie-ssd-7000mb-s-3d-video-edit",
+   "price": 1330,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183283_385c406d-0ef5-4739-b1aa-b123f7bd6199.png?v=1793835689",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183295",
+   "title": "SP Silicon Power CreatePro CR75S 500GB PCIe SSD 7000MB/s 3D & Video Edit",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr75s-500gb-pcie-ssd-7000mb-s-3d-video-edit",
+   "price": 485,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/siliconpower-PCIe-CR75S-2100x1500_1_26D14bp2qs.jpg?v=1793760109",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183281",
+   "title": "SP Silicon Power CreatePro CR90N 1TB PCIe SSD 5000MB/s Studio Film Editor",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr90n-1tb-pcie-ssd-5000mb-s-studio-film-editor",
+   "price": 780,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/siliconpower-PCIe-CR90D-2100x1500_1_26D16fhvZy.jpg?v=1793755019",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183284",
+   "title": "SP Silicon Power CreatePro CR90N 2TB PCIe SSD 5000MB/s Studio Film Editor",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr90n-2tb-pcie-ssd-5000mb-s-studio-film-editor",
+   "price": 1560,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183284_4c817809-8809-4686-be31-5d757ac6d404.png?v=1793835065",
+   "inStock": false,
+   "brand": "Silicon Power"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183296",
+   "title": "SP Silicon Power CreatePro CR90N 500GB PCIe SSD 5000MB/s Studio Film Editor",
+   "url": "https://www.mwave.com.au/products/sp-silicon-power-createpro-cr90n-500gb-pcie-ssd-5000mb-s-studio-film-editor",
+   "price": 390,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183296_f73c26e8-ef46-4595-8718-0b929ecabcd2.png?v=1793836044",
+   "inStock": false,
    "brand": "Silicon Power"
   },
   {

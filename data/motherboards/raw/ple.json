@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T00:42:37.055Z",
+ "scrapedAt": "2026-11-06T00:31:06.213Z",
  "offers": [
   {
    "retailer": "ple",
@@ -1050,7 +1050,7 @@
    "price": 174,
    "wasPrice": 199,
    "image": "https://plecom.imgix.net/iil-464493-683442.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1114,18 +1114,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "671916",
-   "title": "Gigabyte B860M DS3H WiFi6E LGA1851 mATX Desktop Motherboard",
-   "brand": "Gigabyte",
-   "mpn": "B860M DS3H WIFI6E 1.0",
-   "url": "https://www.ple.com.au/products/671916/gigabyte-b860m-ds3h-wifi6e-lga1851-matx-desktop-motherboard",
-   "price": 169,
-   "wasPrice": 269,
-   "image": "https://plecom.imgix.net/iil-411943-671916.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "687172",
    "title": "Gigabyte B860M DS3H WiFi6E LGA1851 mATX Desktop Motherboard",
    "brand": "Gigabyte",
@@ -1134,6 +1122,18 @@
    "price": 189,
    "wasPrice": 289,
    "image": "https://plecom.imgix.net/iil-480401-687172.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "671916",
+   "title": "Gigabyte B860M DS3H WiFi6E LGA1851 mATX Desktop Motherboard",
+   "brand": "Gigabyte",
+   "mpn": "B860M DS3H WIFI6E 1.0",
+   "url": "https://www.ple.com.au/products/671916/gigabyte-b860m-ds3h-wifi6e-lga1851-matx-desktop-motherboard",
+   "price": 169,
+   "wasPrice": 269,
+   "image": "https://plecom.imgix.net/iil-411943-671916.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -1263,7 +1263,7 @@
    "price": 329,
    "wasPrice": 459,
    "image": "https://plecom.imgix.net/iil-408363-671015.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1556,7 +1556,7 @@
    "url": "https://www.ple.com.au/products/687767/msi-b550-gaming-wifi6e-am4-atx-desktop-motherboard",
    "price": 229,
    "image": "https://plecom.imgix.net/iil-483361-687767.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

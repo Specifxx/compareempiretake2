@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T00:42:34.361Z",
+ "scrapedAt": "2026-11-06T00:31:04.199Z",
  "offers": [
   {
    "retailer": "ple",
@@ -81,7 +81,7 @@
    "price": 779,
    "wasPrice": 781,
    "image": "https://plecom.imgix.net/iil-473445-685256.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -263,7 +263,7 @@
    "url": "https://www.ple.com.au/products/683827/corsair-vengeance-rgb-32gb-kit-2x16gb-xmpexpo-ddr5-6000-c38-grey-",
    "price": 839,
    "image": "https://plecom.imgix.net/iil-467472-683827.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -605,6 +605,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "679969",
+   "title": "G.Skill Trident Z RGB 32GB Kit (2x16GB) DDR4-3200 C16",
+   "brand": "G.Skill",
+   "mpn": "F4-3200C16D-32GTZRX",
+   "url": "https://www.ple.com.au/products/679969/gskill-trident-z-rgb-32gb-kit-2x16gb-ddr4-3200-c16",
+   "price": 474,
+   "wasPrice": 539,
+   "image": "https://plecom.imgix.net/iil-450740-679969.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "634890",
    "title": "G.Skill Trident Z RGB 32GB Kit (2x16GB) DDR4-3200 C16",
    "brand": "G.Skill",
@@ -614,18 +626,6 @@
    "wasPrice": 539,
    "image": "https://plecom.imgix.net/iil-405348-634890.jpg?w=600&h=600",
    "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "679969",
-   "title": "G.Skill Trident Z RGB 32GB Kit (2x16GB) DDR4-3200 C16",
-   "brand": "G.Skill",
-   "mpn": "F4-3200C16D-32GTZRX",
-   "url": "https://www.ple.com.au/products/679969/gskill-trident-z-rgb-32gb-kit-2x16gb-ddr4-3200-c16",
-   "price": 474,
-   "wasPrice": 539,
-   "image": "https://plecom.imgix.net/iil-450740-679969.jpg?w=600&h=600",
-   "inStock": false
   },
   {
    "retailer": "ple",
@@ -852,7 +852,7 @@
    "url": "https://www.ple.com.au/products/684770/geil-16gb-single-1x16gb-ddr5-5600-c46-so-dimm",
    "price": 379,
    "image": "https://plecom.imgix.net/iil-470847-684770.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1864,7 +1864,7 @@
    "brand": "TEAM Group",
    "mpn": "FF4D532G6400HC40BDC01",
    "url": "https://www.ple.com.au/products/683156/team-t-force-delta-rgb-32gb-kit-2x16gb-ddr5-6400-c40-white",
-   "price": 819,
+   "price": 1129,
    "image": "https://plecom.imgix.net/iil-466309-683156.jpg?w=600&h=600",
    "inStock": true
   },

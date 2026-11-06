@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:25:19.102Z",
+ "scrapedAt": "2026-11-06T01:33:44.178Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -969,7 +969,7 @@
    "url": "https://www.overclockers.co.uk/asus-rog-strix-b850-e-gaming-wifi-socket-am5-ddr5-atx-motherboard/MOT-ASU-03840.html",
    "price": 259.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwf36a3ca6/images/data/product/43/9edce9/3c39ddc1bd713d4222de0e4c690a6ddbbe96eb8f.png?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -1619,7 +1619,7 @@
    "url": "https://www.overclockers.co.uk/gigabyte-b850-eagle-wifi6e-socket-am5-ddr5-atx-motherboard/MOT-GIG-03859.html",
    "price": 144.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwace0beb6/images/data/product/b1/8a7948/92bcfdf732d3efb4fddfac5eac0664ea3c5f96f8.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -1649,7 +1649,7 @@
    "url": "https://www.overclockers.co.uk/gigabyte-b850m-eagle-wifi6e-ice-socket-am5-ddr5-micro-atx-motherboard/MOT-GIG-06614.html",
    "price": 139.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb9b36e57/images/data/product/7f/6c2c0c/9da6bfa362cee247d48717fb4e29041ff0da0148.png?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -1809,7 +1809,7 @@
    "url": "https://www.overclockers.co.uk/gigabyte-x870-aorus-stealth-socket-am5-ddr5-atx-motherboard/MOT-GIG-07217.html",
    "price": 309.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw231a3190/images/data/product/a2/7a88e2/d4da5566d281b63774fa54985c1a12043aed80b3.png?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -1839,7 +1839,7 @@
    "url": "https://www.overclockers.co.uk/gigabyte-x870-gaming-wifi6-socket-am5-ddr5-atx-motherboard/MOT-GIG-03347.html",
    "price": 179.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw76ad5c63/images/data/product/0d/f548d8/3aa8a3ca13c5664af7a2b3b68d90f9d4a6f691d0.png?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -2009,7 +2009,7 @@
    "url": "https://www.overclockers.co.uk/gigabyte-z890-aorus-pro-ice-lga1851-ddr5-atx-motherboard/MOT-GIG-03483.html",
    "price": 261.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5a09bf70/images/data/product/81/f71a11/47987ffcd388b0cf92f9dfd1183ed405179d1045.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -2139,6 +2139,16 @@
    "price": 149.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw0c512e3d/images/data/product/90/978488/26f994c697cfe9e6103b4806668a72f8fedfca4e.jpg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MOT-MSI-09475",
+   "brand": "MSI",
+   "title": "MSI MAG B550 TOMAHAWK WIFI (Socket AM4) DDR4 ATX Motherboard",
+   "url": "https://www.overclockers.co.uk/msi-mag-b550-tomahawk-wifi-socket-am4-ddr4-atx-motherboard/MOT-MSI-09475.html",
+   "price": 149.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc326db82/images/data/product/ca/509fdc/01011e11ebe348051ccb9255e999f55bfacfbf2f.png?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -2272,6 +2282,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MOT-MSI-09448",
+   "brand": "MSI",
+   "title": "MSI MEG X870E Godlike Max (Socket AM5) DDR5 E-ATX Motherboard",
+   "url": "https://www.overclockers.co.uk/msi-meg-x870e-godlike-max-socket-am5-ddr5-e-atx-motherboard/MOT-MSI-09448.html",
+   "price": 1399.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwf22beaaf/images/data/product/fd/dfd632/cb92dd70d785584714e306fa177bd19ab27b711d.png?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MOT-MSI-03435",
    "brand": "MSI",
    "title": "MSI MEG Z890 Ace (LGA 1851) DDR5 ATX Motherboard",
@@ -2279,6 +2299,16 @@
    "price": 429.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8ff73d03/images/data/product/58/69d17b/8e6c376d1e5f95b0815cfa88ff520681efdd7208.png?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MOT-MSI-09474",
+   "brand": "MSI",
+   "title": "MSI MPG X870E CARBON MAX WIFI (Socket AM5) DDR5 ATX Motherboard",
+   "url": "https://www.overclockers.co.uk/msi-mpg-x870e-carbon-max-wifi-socket-am5-ddr5-atx-motherboard/MOT-MSI-09474.html",
+   "price": 559.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc17c6cdd/images/data/product/80/d952ad/b343a7808c83d3885bb2066efbcd4db712b9d340.png?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -2318,7 +2348,17 @@
    "url": "https://www.overclockers.co.uk/msi-mpg-z890-carbon-wifi-lga-1851-ddr5-atx-motherboard/MOT-MSI-03436.html",
    "price": 329.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw6978e6f6/images/data/product/91/af73d1/414e2a46180eefbea764b96e5fcb36c9aaee1628.png?sw=500",
-   "inStock": true
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MOT-MSI-09476",
+   "brand": "MSI",
+   "title": "MSI PRO A520M WIFI6E (Socket AM4) DDR4 mATX Motherboard",
+   "url": "https://www.overclockers.co.uk/msi-pro-a520m-wifi6e-socket-am4-ddr4-matx-motherboard/MOT-MSI-09476.html",
+   "price": 79.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwfeabc9b0/images/data/product/f9/da291b/b1ff28f174ace3ab4d7daea04c6e8975f58b93fc.png?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -2339,6 +2379,16 @@
    "price": 99.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw80bb003b/images/data/product/8a/092188/0172a85f6fbb671114c6339d9dd8aca2bb1661af.png?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MOT-MSI-09478",
+   "brand": "MSI",
+   "title": "MSI PRO B550-S (Socket AM4) DDR4 ATX Motherboard",
+   "url": "https://www.overclockers.co.uk/msi-pro-b550-s-socket-am4-ddr4-atx-motherboard/MOT-MSI-09478.html",
+   "price": 109.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwda8b8a4e/images/data/product/c0/a0939a/906cdf897baa2c2a864d0b7dcaeafa989dddeef1.png?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",

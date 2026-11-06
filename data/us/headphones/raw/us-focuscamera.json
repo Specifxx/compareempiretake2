@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:08:17.294Z",
+ "scrapedAt": "2026-11-06T01:16:55.356Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -599,7 +599,7 @@
    "price": 169,
    "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3653067.jpg?v=1785850599",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose",
    "mpn": "884367-1500"
   },
@@ -993,7 +993,7 @@
    "url": "https://www.focuscamera.com/products/bose-901149-0030-audio-electronics-headphones-earbuds",
    "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3673169.jpg?v=1790100401",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose",
    "mpn": "901149-0030"
   },
@@ -1719,7 +1719,7 @@
    "url": "https://www.focuscamera.com/products/logitech-981-001416-audio-electronics-headphones-earbuds",
    "price": 69.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3372315.jpg?v=1765320727",
-   "inStock": true,
+   "inStock": false,
    "brand": "LOGITECH INC.",
    "mpn": "981-001416"
   },
@@ -1777,6 +1777,17 @@
    "inStock": false,
    "brand": "Segue Corp",
    "mpn": "MW07PC"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "51013901320240",
+   "title": "Minelab EQUINOX Fully Submersible Adjustable Fit Headphones with 3.5mm Jack (Black and Yellow)",
+   "url": "https://www.focuscamera.com/products/minelab-3011-0372-audio-electronics-headphones-earbuds",
+   "price": 170,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3424402.jpg?v=1793893856",
+   "inStock": true,
+   "brand": "Minelab",
+   "mpn": "3011-0372"
   },
   {
    "retailer": "us-focuscamera",
@@ -2271,7 +2282,7 @@
    "url": "https://www.focuscamera.com/products/skullcandy-s6cnw-u740-audio-electronics-headphones-earbuds",
    "price": 279.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3651990.jpg?v=1785332217",
-   "inStock": true,
+   "inStock": false,
    "brand": "SKULLCANDY",
    "mpn": "S6CNW-U740"
   },
@@ -2370,7 +2381,7 @@
    "url": "https://www.focuscamera.com/products/skullcandy-s2dpw-t001-audio-electronics-headphones-earbuds",
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3637083.jpg?v=1781617216",
-   "inStock": true,
+   "inStock": false,
    "brand": "SKULLCANDY",
    "mpn": "S2DPW-T001"
   },
@@ -2425,7 +2436,7 @@
    "url": "https://www.focuscamera.com/products/skullcandy-s2mtw-t001-audio-electronics-headphones-earbuds",
    "price": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3568908.jpg?v=1764785597",
-   "inStock": true,
+   "inStock": false,
    "brand": "SKULLCANDY",
    "mpn": "S2MTW-T001"
   },
@@ -2525,7 +2536,7 @@
    "url": "https://www.focuscamera.com/products/skullcandy-s2ppw-s795-audio-electronics-headphones-earbuds",
    "price": 64.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3571587.jpg?v=1764785656",
-   "inStock": true,
+   "inStock": false,
    "brand": "SKULLCANDY",
    "mpn": "S2PPW-S795"
   },

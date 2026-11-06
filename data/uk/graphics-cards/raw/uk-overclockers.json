@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:25:00.476Z",
+ "scrapedAt": "2026-11-06T01:33:26.409Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -39,7 +39,7 @@
    "url": "https://www.overclockers.co.uk/asrock-intel-arc-b570-challenger-10gb-oc-gddr6-pci-express-graphics-card/GRA-ASR-04236.html",
    "price": 359.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw9d552104/images/data/product/37/fe428c/f5e46139f67abdf6a71ca0ba2376ca9005e22e8d.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -269,7 +269,7 @@
    "url": "https://www.overclockers.co.uk/asus-geforce-rtx-5050-prime-oc-8gb-gddr6-pci-express-graphics-card/GRA-ASU-05710.html",
    "price": 349.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwab36c6c0/images/data/product/e5/af7640/dc627f3f1b5331257178a19ae04dd087228dec16.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -277,7 +277,7 @@
    "brand": "ASUS",
    "title": "Asus GeForce RTX 5060 Dual OC 8GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/asus-geforce-rtx-5060-dual-oc-8gb-gddr7-pci-express-graphics-card/GRA-ASU-05135.html",
-   "price": 399.95,
+   "price": 449.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwd91dd1d2/images/data/product/e0/44ac8c/cecda30b6d9c765665714eeb6fcbc10be035d036.jpg?sw=500",
    "inStock": true
   },
@@ -489,7 +489,7 @@
    "url": "https://www.overclockers.co.uk/asus-geforce-rtx-5070-prime-oc-white-12gb-gddr7-graphics-card/GRA-ASU-05204.html",
    "price": 899.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwd55364b4/images/data/product/e2/e820de/30fb97be1ed2cfa7e3c42d7fd9b8c96bcb2b6128.png?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -527,7 +527,7 @@
    "brand": "ASUS",
    "title": "Asus GeForce RTX 5070 Ti Prime OC 16GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/asus-geforce-rtx-5070-ti-prime-oc-16gb-gddr7-pci-express-graphics-card/GRA-ASU-04152.html",
-   "price": 1099.99,
+   "price": 1199.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb6db97b0/images/data/product/36/13b583/6d18a594978b3a088d1be62f7ea47124dd2e3e01.jpg?sw=500",
    "inStock": true
   },
@@ -1319,6 +1319,26 @@
    "url": "https://www.overclockers.co.uk/gainward-geforce-rtx-5080-phoenix-v1-16gb-gddr7-pci-express-graphics-card/GRA-GNW-05170.html",
    "price": 1499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw432e34d6/images/data/product/d0/5ff8c5/909bef52922bf8ca84a3f809aad67d099a6d3489.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "GRA-GNW-09467",
+   "brand": "Gainward",
+   "title": "Gainward GeForce RTX 5080 Python III 16GB GDDR7 PCI-Express Graphics Card",
+   "url": "https://www.overclockers.co.uk/gainward-geforce-rtx-5080-python-iii-16gb-gddr7-pci-express-graphics-card/GRA-GNW-09467.html",
+   "price": 1789.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw1f548904/images/data/product/b0/76bb0f/77709f7e0585a79e6325b110ce503dad94e1d17f.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "GRA-GNW-09466",
+   "brand": "Gainward",
+   "title": "Gainward GeForce RTX 5080 Python III OC 16GB GDDR7 PCI-Express Graphics Card",
+   "url": "https://www.overclockers.co.uk/gainward-geforce-rtx-5080-python-iii-oc-16gb-gddr7-pci-express-graphics-card/GRA-GNW-09466.html",
+   "price": 1799.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwba095564/images/data/product/10/0ab2dd/fdf75514a63011cce876de318d41d75f05818ab0.png?sw=500",
    "inStock": false
   },
   {
@@ -2136,7 +2156,7 @@
    "url": "https://www.overclockers.co.uk/inno3d-geforce-rtx-5050-twin-x2-oc-8gb-gddr6-pci-express-graphics-card/GRA-INO-07692.html",
    "price": 349.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw1343b7e1/images/data/product/a7/b334ac/20b21eb7c13193136555c01ad79d089d4a88b7a2.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -2394,7 +2414,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5060 Gaming OC 8GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5060-gaming-oc-8gb-gddr7-pci-express-graphics-card/GRA-MSI-05226.html",
-   "price": 469.99,
+   "price": 539.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwfd590896/images/data/product/7d/1c7a27/6085cf4cf85d2cb777fc087a78bd14ab787beb56.png?sw=500",
    "inStock": true
   },
@@ -2424,7 +2444,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5060 Ti Gaming Trio OC 8GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5060-ti-gaming-trio-oc-8gb-gddr7-pci-express-graphics-card/GRA-MSI-08107.html",
-   "price": 569.99,
+   "price": 578.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5552b8af/images/data/product/e0/3bffe3/3ad5b060d05de33d8f03f994603cea6097a0d366.png?sw=500",
    "inStock": true
   },
@@ -2444,7 +2464,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5060 Ti Ventus 2x OC Plus 16GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-16gb-gddr7-pci-express-graphics-card/GRA-MSI-04941.html",
-   "price": 728.99,
+   "price": 749.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw14fd6d43/images/data/product/7b/ff8bd3/1da5eceb2cb55691ff4f0b576f839010b0f17e6b.png?sw=500",
    "inStock": true
   },
@@ -2454,7 +2474,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5060 Ti Ventus 2x OC Plus 8GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5060-ti-ventus-2x-oc-plus-8gb-gddr7-pci-express-graphics-card/GRA-MSI-04944.html",
-   "price": 509.99,
+   "price": 518.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwda23f260/images/data/product/d1/662fb7/b5ab91e2f753863b0c6087b77017c4e7f27aa862.png?sw=500",
    "inStock": true
   },
@@ -2494,7 +2514,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5060 Ventus 2X OC 8GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5060-ventus-2x-oc-8gb-gddr7-pci-express-graphics-card/GRA-MSI-05228.html",
-   "price": 439.99,
+   "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw13bb54b8/images/data/product/e3/cd8002/2a450231670706d201e0999e537cf35b77c8c47a.jpg?sw=500",
    "inStock": true
   },
@@ -2504,7 +2524,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5060 Ventus 2X OC White 8GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5060-ventus-2x-oc-white-8gb-gddr7-pci-express-graphics-card/GRA-MSI-05227.html",
-   "price": 449.99,
+   "price": 509.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwbcc33da8/images/data/product/4b/9971af/27fcf567e4ea226057c4f3eb306868ba5afbbff1.png?sw=500",
    "inStock": true
   },
@@ -2514,7 +2534,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5070 Gaming Trio OC 12GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5070-gaming-trio-oc-12gb-gddr7-pci-express-graphics-card/GRA-MSI-04631.html",
-   "price": 899.99,
+   "price": 908.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw755c2d40/images/data/product/f0/14d329/48b5f71ce7c7984c9af00af7fb2b9386f75f9d9e.png?sw=500",
    "inStock": true
   },
@@ -2544,7 +2564,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5070 Ti Gaming Trio OC 16GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5070-ti-gaming-trio-oc-16gb-gddr7-pci-express-graphics-card/GRA-MSI-05292.html",
-   "price": 1349.99,
+   "price": 1379.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwdba3602d/images/data/product/a0/72a070/f7ff3222c7764c3e0937c9633744df11deddd447.png?sw=500",
    "inStock": true
   },
@@ -2564,7 +2584,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5070 Ti Ventus 3X OC 16GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5070-ti-ventus-3x-oc-16gb-gddr7-pci-express-graphics-card/GRA-MSI-04347.html",
-   "price": 1249.99,
+   "price": 1298.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe37f688e/images/data/product/84/1d5740/fdd5fc3518bb36dd228607e7220ffc36d256f012.jpg?sw=500",
    "inStock": true
   },
@@ -2574,7 +2594,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5070 Ventus 2X OC 12GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5070-ventus-2x-oc-12gb-gddr7-pci-express-graphics-card/GRA-MSI-04633.html",
-   "price": 799.99,
+   "price": 829.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw70591c25/images/data/product/66/3486fa/6b4524d5e8b70c845d438c4d1f381de4fe31973f.png?sw=500",
    "inStock": true
   },
@@ -2584,7 +2604,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5070 Ventus 2X OC White 12GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5070-ventus-2x-oc-white-12gb-gddr7-pci-express-graphics-card/GRA-MSI-04632.html",
-   "price": 814.99,
+   "price": 839.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwae06725f/images/data/product/5a/501812/99d1cc5ef854416217e223d8699c82279f3c3c09.png?sw=500",
    "inStock": true
   },
@@ -2614,7 +2634,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5080 Gaming Trio OC 16GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5080-gaming-trio-oc-16gb-gddr7-pci-express-graphics-card/GRA-MSI-04044.html",
-   "price": 1729.99,
+   "price": 1799.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw21cf29a5/images/data/product/1b/9c7ba7/7bdc05ecbe749a6e8f94cfd44daa520452c7923d.png?sw=500",
    "inStock": true
   },
@@ -2634,7 +2654,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5080 Ventus 3X OC 16GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5080-ventus-3x-oc-16gb-gddr7-pci-express-graphics-card/GRA-MSI-04826.html",
-   "price": 1679.99,
+   "price": 1699.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5d17f367/images/data/product/0e/7deb1b/43b9d241d7640b5183fa63a7c235c5c8c29569e9.jpg?sw=500",
    "inStock": true
   },
@@ -2644,7 +2664,7 @@
    "brand": "MSI",
    "title": "MSI GeForce RTX 5080 Ventus 3X OC Black 16GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/msi-geforce-rtx-5080-ventus-3x-oc-black-16gb-gddr7-pci-express-graphics-card/GRA-MSI-09502.html",
-   "price": 1679.99,
+   "price": 1699.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwfb791e4e/images/data/product/74/dcdbf7/c2ca5813ba130f88ee7c0ba451ac4f4fb04bb375.jpg?sw=500",
    "inStock": true
   },
@@ -3400,6 +3420,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "GRA-PNY-09477",
+   "brand": "PNY",
+   "title": "PNY Nvidia RTX Pro 6000 Blackwell Max-Q Workstation 96GB Graphics Card - OEM",
+   "url": "https://www.overclockers.co.uk/pny-nvidia-rtx-pro-6000-blackwell-max-q-workstation-96gb-graphics-card-oem/GRA-PNY-09477.html",
+   "price": 14999.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5cb3d48f/images/data/product/e2/db5d62/d8fd4fb711162a53084f4741e33f478ff5180e71.png?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "GRA-PNY-09091",
    "brand": "PNY",
    "title": "PNY Nvidia RTX Pro 6000 Blackwell Server Edition 96GB Graphics Card",
@@ -3427,6 +3457,26 @@
    "price": 15899.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe5e619a3/images/data/product/4e/81a7e9/da858d31d4d3b682a552d4c733430322472ce538.png?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "GRA-PWC-09534",
+   "brand": "PowerColor",
+   "title": "Powercolor Passive AMD Radeon AI PRO R9600D 32GB GDDR6 Workstation Graphics Card",
+   "url": "https://www.overclockers.co.uk/powercolor-passive-amd-radeon-ai-pro-r9600d-32gb-gddr6-workstation-graphics-card/GRA-PWC-09534.html",
+   "price": 7000,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw88dc8531/images/data/product/66/6f9cb1/c9fe9d2cfde5d53a8e355ab1d2b0dc920cc59c45.png?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "GRA-PWC-09533",
+   "brand": "PowerColor",
+   "title": "Powercolor Passive AMD Radeon AI PRO R9700S 32GB GDDR6 Workstation Graphics Card",
+   "url": "https://www.overclockers.co.uk/powercolor-passive-amd-radeon-ai-pro-r9700s-32gb-gddr6-workstation-graphics-card/GRA-PWC-09533.html",
+   "price": 2299.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw1e81a7b5/images/data/product/51/60d4e8/9ad8bdea0bb2ddec7b843c76a241f96c98fe1876.png?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -3916,7 +3966,7 @@
    "url": "https://www.overclockers.co.uk/zotac-geforce-rtx-5050-twin-edge-oc-white-8gb-gddr6-pci-express-graphics-card/GRA-ZTC-05700.html",
    "price": 319.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8549477a/images/data/product/ee/ff96a3/79d3d24c937ec35cc2936928c2edd1604952d46e.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",

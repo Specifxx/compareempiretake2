@@ -1,6 +1,16 @@
 {
- "scrapedAt": "2026-11-05T01:30:47.055Z",
+ "scrapedAt": "2026-11-06T01:37:11.584Z",
  "offers": [
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2030069",
+   "mpn": "DCPL1640WZU1",
+   "title": "Brother DCP-L1640W Mono Laser Printer",
+   "url": "https://www.laptopsdirect.co.uk/brother-dcp-l1640w-mono-laser-printer-dcpl1640wzu1/version.asp",
+   "price": 154.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DCPL1640WZU1_1_classic.jpg?v=5",
+   "inStock": true
+  },
   {
    "retailer": "uk-laptopsdirect",
    "sku": "2030070",
@@ -10,6 +20,16 @@
    "price": 174.97,
    "image": "https://www.laptopsdirect.co.uk/Images/DCPL1660WZU1_1_classic.jpg?v=5",
    "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1874124",
+   "mpn": "DCPL2620DWZU1",
+   "title": "Brother DCP-L2620DW A4 Mono Laser Multifunction Printer",
+   "url": "https://www.laptopsdirect.co.uk/brother-dcp-l2620dw-a4-mono-laser-mfp-dcpl2620dwzu1/version.asp",
+   "price": 179,
+   "image": "https://www.laptopsdirect.co.uk/Images/DCPL2620DWZU1_1_Classic.jpg?v=5",
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -92,7 +112,7 @@
    "mpn": "5779C008",
    "title": "Canon GX4050 A4 Colour Multifunction Inkjet Printer",
    "url": "https://www.laptopsdirect.co.uk/canon-gx4050-a4-colour-multifunction-inkjet-printer-5779c008/version.asp",
-   "price": 419.97,
+   "price": 428.97,
    "wasPrice": 464.99,
    "image": "https://www.laptopsdirect.co.uk/Images/5779C008_1_Classic.png?v=59",
    "inStock": true
@@ -192,23 +212,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2064453",
+   "mpn": "6928C020",
+   "title": "Canon i-SENSYS MF667Cdw A4 Colour Multifunction Laser Printer",
+   "url": "https://www.laptopsdirect.co.uk/canon-i-sensys-mf667cdw-a4-colour-multifunction-inkjet-printer-6928c020/version.asp",
+   "price": 314.97,
+   "wasPrice": 335.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/6928C020_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2052049",
    "mpn": "7185C021",
    "title": "Canon i-SENSYS MF752Cdw II? A4 Colour Laser Multifunction Printer",
    "url": "https://www.laptopsdirect.co.uk/canon-i-sensys-mf752cdw-ii-a4-colour-laser-multifunction-printer-7185c021/version.asp",
    "price": 384.97,
    "image": "https://www.laptopsdirect.co.uk/Images/7185C021_1_Classic.jpg?v=3",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2052048",
-   "mpn": "7185C020",
-   "title": "Canon i-SENSYS MF754 II A4 Colour Laser Multifunction Printer",
-   "url": "https://www.laptopsdirect.co.uk/canon-i-sensys-mf754-ii-a4-colour-laser-multifunction-printer-7185c020/version.asp",
-   "price": 409.97,
-   "wasPrice": 469.18,
-   "image": "https://www.laptopsdirect.co.uk/Images/7185C020_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -257,13 +277,24 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1422318",
-   "mpn": "0959C008",
-   "title": "Canon MAXIFY MB2150 A4 Colour Multifunction Inkjet Printer",
-   "url": "https://www.laptopsdirect.co.uk/canon-maxify-mb2150-a4-multifunction-colour-inkjet-printer-0959c008/version.asp",
-   "price": 119.97,
-   "wasPrice": 131.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/0959C008_1_Classic.jpg?v=3",
+   "sku": "1417799",
+   "mpn": "0958C008",
+   "title": "Canon MAXIFY MB2750 A4 Colour Multifunction Inkjet Printer",
+   "url": "https://www.laptopsdirect.co.uk/canon-maxify-mb2750-a4-multifunction-colour-inkjet-printer-0958c008/version.asp",
+   "price": 139.97,
+   "wasPrice": 152.39,
+   "image": "https://www.laptopsdirect.co.uk/Images/A10958C008_1_Classic.jpg?v=8",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1243970",
+   "mpn": "0960C008",
+   "title": "Canon MAXIFY MB5150 A4 Colour Multifunction Inkjet Printer",
+   "url": "https://www.laptopsdirect.co.uk/canon-mb5150-a4-colour-inkjet-printer-0960c008/version.asp",
+   "price": 159,
+   "wasPrice": 185.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/0960C008_1_Classic.jpg?v=3",
    "inStock": true
   },
   {
@@ -392,7 +423,6 @@
    "title": "Epson WorkForce Pro WF4820D A4 All In One Inkjet Touchscreen Printer",
    "url": "https://www.laptopsdirect.co.uk/epson-workforce-pro-wf4820d-a4-all-in-one-inkjet-touchscreen-printer-c11cj06401/version.asp",
    "price": 164.97,
-   "wasPrice": 175.19,
    "image": "https://www.laptopsdirect.co.uk/Images/C11CJ06401_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -413,7 +443,7 @@
    "mpn": "C11CK64401",
    "title": "Epson WorkForce WF-2910DWF Multifunction Inkjet Printer",
    "url": "https://www.laptopsdirect.co.uk/epson-workforce-wf-2910dwf-multifunction-inkjet-printer-c11ck64401/version.asp",
-   "price": 76.97,
+   "price": 77.97,
    "wasPrice": 83.99,
    "image": "https://www.laptopsdirect.co.uk/Images/C11CK64401_1_Classic.jpg?v=29",
    "inStock": true
@@ -447,7 +477,7 @@
    "title": "Epson WorkForce WF-2960DWF Multifunction Printer - Black",
    "url": "https://www.laptopsdirect.co.uk/epson-workforce-wf-2960dwf-multifunction-printer-black-c11ck60401/version.asp",
    "price": 104.97,
-   "wasPrice": 111.58,
+   "wasPrice": 112,
    "image": "https://www.laptopsdirect.co.uk/Images/C11CK60401_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -485,6 +515,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1930420",
+   "mpn": "499R0F",
+   "title": "HP Color LaserJet Pro 3202dw A4/Legal Colour Printer",
+   "url": "https://www.laptopsdirect.co.uk/hp-color-laserjet-pro-3202dw-a4-legal-colour-printer-499r0f/version.asp",
+   "price": 314.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/499R0F_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1851357",
    "mpn": "4RA87F",
    "title": "HP Color LaserJet Pro 4202dn A4 Colour Laser Printer",
@@ -517,13 +557,24 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "490055",
-   "mpn": "CE710A",
-   "title": "HP Colour LaserJet Professional A3 Printer",
-   "url": "https://www.laptopsdirect.co.uk/hp_color_laserjet_professional_cp5225_-_colour_laser_printer_-_a3_-_usb_ce710a/version.asp",
-   "price": 1012.97,
-   "wasPrice": 1169.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/CE710A_1_16954152_classic.jpg?v=5",
+   "sku": "1852100",
+   "mpn": "4RA83F",
+   "title": "HP Color LaserJet Pro MFP 4302dw A4 Colour Multifunction Laser Printer",
+   "url": "https://www.laptopsdirect.co.uk/hp-color-laserjet-pro-mfp-4302dw-a4-colour-multifunction-laser-printer-4ra83f/version.asp",
+   "price": 489.97,
+   "wasPrice": 525.58,
+   "image": "https://www.laptopsdirect.co.uk/Images/4RA83F_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1851356",
+   "mpn": "4RA84F",
+   "title": "HP Color LaserJet Pro MFP 4302fdn A4 Colour Multifunction Laser Printer",
+   "url": "https://www.laptopsdirect.co.uk/hp-color-laserjet-pro-mfp-4302fdn-a4-colour-multifunction-laser-printer-4ra84f/version.asp",
+   "price": 579,
+   "wasPrice": 619.18,
+   "image": "https://www.laptopsdirect.co.uk/Images/4RA84F_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
@@ -539,6 +590,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "490055",
+   "mpn": "CE710A",
+   "title": "HP Colour LaserJet Professional A3 Printer",
+   "url": "https://www.laptopsdirect.co.uk/hp_color_laserjet_professional_cp5225_-_colour_laser_printer_-_a3_-_usb_ce710a/version.asp",
+   "price": 1012.97,
+   "wasPrice": 1169.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/CE710A_1_16954152_classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1131954",
    "mpn": "CZ993A",
    "title": "HP Colour Officejet 200 A4 Mobile Printer",
@@ -546,17 +608,6 @@
    "price": 229.97,
    "wasPrice": 259,
    "image": "https://www.laptopsdirect.co.uk/Images/CZ993A_1_Classic.jpg?v=6",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1143516",
-   "mpn": "CZ992A",
-   "title": "HP Colour Officejet 250 A4 Colour Multifunction Printer",
-   "url": "https://www.laptopsdirect.co.uk/hp-officejet-250-mobile-all-in-one-multifunction-printer-colour-ink-j-cz992a/version.asp",
-   "price": 264.97,
-   "wasPrice": 286.78,
-   "image": "https://www.laptopsdirect.co.uk/Images/CZ992A_1_Classic.jpg?v=2",
    "inStock": true
   },
   {
@@ -589,6 +640,27 @@
    "price": 109.97,
    "wasPrice": 118.78,
    "image": "https://www.laptopsdirect.co.uk/Images/405U8B_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1906367",
+   "mpn": "40Q47B",
+   "title": "HP OfficeJet Pro 8135e A4 Colour Multifunction Inkjet Printer with HP Plus",
+   "url": "https://www.laptopsdirect.co.uk/hp-officejet-pro-8135e-a4-colour-multifunction-inkjet-printer-with-hp-plus-40q47b/version.asp",
+   "price": 129,
+   "wasPrice": 140.38,
+   "image": "https://www.laptopsdirect.co.uk/Images/40Q47B_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1883365",
+   "mpn": "5A0S3B",
+   "title": "HP OfficeJet Pro 9110b A4 Colour Inkjet Printer",
+   "url": "https://www.laptopsdirect.co.uk/hp-officejet-pro-9110b-a4-colour-inkjet-printer-5a0s3b/version.asp",
+   "price": 99.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/5A0S3B_1_Classic.png?v=5",
    "inStock": true
   },
   {

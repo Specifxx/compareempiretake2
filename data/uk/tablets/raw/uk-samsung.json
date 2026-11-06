@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:28:27.179Z",
+ "scrapedAt": "2026-11-06T01:36:57.165Z",
  "offers": [
   {
    "retailer": "uk-samsung",
@@ -21,7 +21,7 @@
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-kids-edition-lte-64gb-pink-f-smx135kepi/",
    "price": 189,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx135kepi/gallery/uk-galaxy-tab-a11-kids-edition-lte-64gb-pink-f-smx135kepi-thumb-555252033",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-samsung",
@@ -32,7 +32,7 @@
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-kids-edition-lte-64gb-blue-f-smx135kebl/",
    "price": 189,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx135kebl/gallery/uk-galaxy-tab-a11-kids-edition-lte-64gb-blue-f-smx135kebl-thumb-555252306",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-samsung",
@@ -43,7 +43,7 @@
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-kids-edition-wi-fi-64gb-pink-f-smx130kepi/",
    "price": 139,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx130kepi/gallery/uk-galaxy-tab-a11-kids-edition-wi-fi-64gb-pink-f-smx130kepi-thumb-555252353",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-samsung",
@@ -54,7 +54,7 @@
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-kids-edition-wi-fi-64gb-blue-f-smx130kebl/",
    "price": 139,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx130kebl/gallery/uk-galaxy-tab-a11-kids-edition-wi-fi-64gb-blue-f-smx130kebl-thumb-555252824",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-samsung",
@@ -190,17 +190,6 @@
   },
   {
    "retailer": "uk-samsung",
-   "sku": "SM-X406BZAREUB",
-   "mpn": "SM-X406BZAREUB",
-   "brand": "Samsung",
-   "title": "Samsung Galaxy Tab S10 Lite 5G (10.9\") 128GB",
-   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s10-lite-grey-128gb-5g-sm-x406bzareub/",
-   "price": 419,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x406bzareub/gallery/uk-galaxy-tab-s10-lite-sm-x406-561445-sm-x406bzareub-thumb-548601327",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-samsung",
    "sku": "SM-X730NZSTEUB",
    "mpn": "SM-X730NZSTEUB",
    "brand": "Samsung",
@@ -223,13 +212,13 @@
   },
   {
    "retailer": "uk-samsung",
-   "sku": "SM-X930NZSTEUB",
-   "mpn": "SM-X930NZSTEUB",
+   "sku": "SM-X930NZSPEUB",
+   "mpn": "SM-X930NZSPEUB",
    "brand": "Samsung",
-   "title": "Samsung Galaxy Tab S11 Ultra (14.6\") 1TB",
-   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s11-ultra-silver-1tb-wi-fi-sm-x930nzsteub/",
-   "price": 1749,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x930nzsteub/gallery/uk-galaxy-tab-s11-ultra-sm-x930-sm-x930nzsteub-thumb-548916280",
+   "title": "Samsung Galaxy Tab S11 Ultra (14.6\") 512GB",
+   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s11-ultra-silver-512gb-wi-fi-sm-x930nzspeub/",
+   "price": 1419,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x930nzspeub/gallery/uk-galaxy-tab-s11-ultra-sm-x930-sm-x930nzspeub-thumb-548916233",
    "inStock": true
   },
   {

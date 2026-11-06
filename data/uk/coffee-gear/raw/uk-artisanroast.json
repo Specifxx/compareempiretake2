@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-11-05T01:13:56.880Z",
+ "scrapedAt": "2026-11-06T01:22:43.532Z",
  "offers": [
   {
    "retailer": "uk-artisanroast",
    "sku": "11127146564",
    "title": "Aeropress",
    "url": "https://www.artisanroast.co.uk/products/aeropress",
-   "price": 45,
+   "price": 90,
    "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/aerooooo.jpg?v=1752775033",
    "inStock": true,
    "brand": "Aeropress"
@@ -16,7 +16,7 @@
    "sku": "801703-11C",
    "title": "AeroPress GO Travel Coffee Maker",
    "url": "https://www.artisanroast.co.uk/products/aeropress-go-travel-coffee-maker",
-   "price": 44.99,
+   "price": 90,
    "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/aeropress_go.jpg?v=1752773294",
    "inStock": true,
    "brand": "AeroPress",
@@ -27,7 +27,7 @@
    "sku": "40194618622005",
    "title": "BIALETTI MOKA 4 CUP",
    "url": "https://www.artisanroast.co.uk/products/bialetti-moka",
-   "price": 58,
+   "price": 115,
    "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/bialetti.jpg?v=1752773900",
    "inStock": true,
    "brand": "BIALETTI"
@@ -37,7 +37,7 @@
    "sku": "2012",
    "title": "Comandante C40 Nitro Blade Coffee Grinder MK4 (Liquid Amber)",
    "url": "https://www.artisanroast.co.uk/products/comandante-c40-nitro-blade-coffee-grinder-mk4-liquid-amber",
-   "price": 255,
+   "price": 505,
    "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/comendante2.jpg?v=1752769886",
    "inStock": true,
    "brand": "Comandante"
@@ -47,7 +47,7 @@
    "sku": "3559",
    "title": "Comandante X25 Trailmaster Dune Coffee Grinder",
    "url": "https://www.artisanroast.co.uk/products/comandante-x25-trailmaster-dune-coffee-grinder",
-   "price": 239,
+   "price": 473,
    "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/handgrinder1.jpg?v=1752769672",
    "inStock": true,
    "brand": "Comandante"
@@ -57,9 +57,9 @@
    "sku": "SS-45768381071604",
    "title": "Hario Switch V60 Ceramic Immersion Dripper - Smokey Black (Size 02)",
    "url": "https://www.artisanroast.co.uk/products/hario-switch-v60-ceramic-immersion-dripper-smokey-black-size-02",
-   "price": 60,
+   "price": 119,
    "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/SSDC-02-SMB.jpg?v=1747670629",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hario",
    "mpn": "SS-45768381071604"
   },
@@ -68,17 +68,37 @@
    "sku": "11368831236",
    "title": "Hario V60 Ceramic - red",
    "url": "https://www.artisanroast.co.uk/products/hario-v60-ceramic-red",
-   "price": 19.5,
+   "price": 39,
    "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/v6909.jpg?v=1752774362",
    "inStock": false,
    "brand": "HARIO"
   },
   {
    "retailer": "uk-artisanroast",
+   "sku": "55296242057598",
+   "title": "La Alquimia: Las Lomas 250gm Aeropress",
+   "url": "https://www.artisanroast.co.uk/products/laalquimia-costa-rica-honey?variant=55296242057598",
+   "price": 28,
+   "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/la_alquimia_las_lomas_bag_small_1b74a143-2efa-4abe-9f8a-56c96381740c.webp?v=1760448794",
+   "inStock": true,
+   "brand": "Costa Rica / Honey"
+  },
+  {
+   "retailer": "uk-artisanroast",
+   "sku": "55296241959294",
+   "title": "La Alquimia: Las Lomas 250gm Cafetiere",
+   "url": "https://www.artisanroast.co.uk/products/laalquimia-costa-rica-honey?variant=55296241959294",
+   "price": 28,
+   "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/la_alquimia_las_lomas_bag_small_1b74a143-2efa-4abe-9f8a-56c96381740c.webp?v=1760448794",
+   "inStock": true,
+   "brand": "Costa Rica / Honey"
+  },
+  {
+   "retailer": "uk-artisanroast",
    "sku": "KS1B-T2",
    "title": "Wilfa Uniform & Kitchen Scale",
    "url": "https://www.artisanroast.co.uk/products/wilfa-uniform-kitchen-scale",
-   "price": 85,
+   "price": 169,
    "image": "https://cdn.shopify.com/s/files/1/0182/3863/files/wilf_0258777a-7aea-492b-872d-4488e6e366f3.jpg?v=1693388475",
    "inStock": true,
    "brand": "Wilfa",

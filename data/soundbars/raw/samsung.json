@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T00:44:00.535Z",
+ "scrapedAt": "2026-11-06T00:32:21.964Z",
  "offers": [
   {
    "retailer": "samsung",
@@ -10,7 +10,7 @@
    "url": "https://www.samsung.com/au/audio-devices/soundbar/b400f-black-hw-b400f-xy/",
    "price": 179,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-b400f-xy/gallery/au-b-series-soundbar-hw-b400f-hw-b400f-xy-thumb-546491804",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "samsung",
@@ -56,6 +56,17 @@
    "price": 799,
    "wasPrice": 1099,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-q800h-xy/gallery/au-q-series-soundbar-hw-q800h-hw-q800h-xy-thumb-551256101",
+   "inStock": true
+  },
+  {
+   "retailer": "samsung",
+   "sku": "HW-Q930H/XY",
+   "mpn": "HW-Q930H/XY",
+   "brand": "Samsung",
+   "title": "Samsung Q-series Soundbar HW-Q930H 9.1.4ch Subwoofer & Rear Speaker (2026)",
+   "url": "https://www.samsung.com/au/audio-devices/soundbar/q930h-black-hw-q930h-xy/",
+   "price": 1699,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-q930h-xy/gallery/au-q-series-soundbar-hw-q930h-hw-q930h-xy-thumb-551255999",
    "inStock": true
   },
   {

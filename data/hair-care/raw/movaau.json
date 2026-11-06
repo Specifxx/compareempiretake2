@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T00:39:28.518Z",
+ "scrapedAt": "2026-11-06T00:28:29.325Z",
  "offers": [
   {
    "retailer": "movaau",
@@ -8,21 +8,9 @@
    "url": "https://au.mova-tech.com/products/mova-aero-c",
    "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/AeroC.jpg?v=1781506521",
-   "inStock": false,
+   "inStock": true,
    "brand": "MOVA",
    "mpn": "010401AA000410"
-  },
-  {
-   "retailer": "movaau",
-   "sku": "010401AC000279",
-   "title": "MOVA Flip 10 Hairdryer(Available on Amazon)",
-   "url": "https://au.mova-tech.com/products/mova-flip10-hairdryer",
-   "price": 129,
-   "wasPrice": 349,
-   "image": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Flip_10.jpg?v=1778140884",
-   "inStock": false,
-   "brand": "MOVA",
-   "mpn": "010401AC000279"
   },
   {
    "retailer": "movaau",
@@ -31,7 +19,7 @@
    "url": "https://au.mova-tech.com/products/mova-master-10?variant=46659147432157",
    "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Master_10_cff5a131-8676-4f8d-a65a-96bdba2d4fe8.jpg?v=1778140884",
-   "inStock": false,
+   "inStock": true,
    "brand": "MOVA",
    "mpn": "010403AE000024"
   },
@@ -42,7 +30,7 @@
    "url": "https://au.mova-tech.com/products/mova-master-10?variant=46659147464925",
    "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Master_10_Pink.jpg?v=1780975578",
-   "inStock": false,
+   "inStock": true,
    "brand": "MOVA",
    "mpn": "010403AN000024"
   },
@@ -54,7 +42,7 @@
    "price": 99,
    "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Shine10-gold-thumb-1.png?v=1759040142",
-   "inStock": false,
+   "inStock": true,
    "brand": "MOVA",
    "mpn": "010401AB000273"
   },
@@ -66,7 +54,7 @@
    "price": 99,
    "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Shine10-thumb-1.jpg?v=1759040142",
-   "inStock": false,
+   "inStock": true,
    "brand": "MOVA",
    "mpn": "010401AA000273"
   },

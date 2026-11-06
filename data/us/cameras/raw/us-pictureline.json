@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:10:25.078Z",
+ "scrapedAt": "2026-11-06T01:18:48.980Z",
  "offers": [
   {
    "retailer": "us-pictureline",
@@ -641,6 +641,26 @@
   },
   {
    "retailer": "us-pictureline",
+   "sku": "16757045",
+   "title": "Fujifilm X-H2 Digital Camera Body",
+   "url": "https://www.pictureline.com/products/fujifilm-x-h2-digital-camera-body",
+   "price": 2299,
+   "image": "https://cdn.shopify.com/s/files/1/0750/1017/products/X-H2-Digital-Camera-Body-1.jpg?v=1704234522",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "us-pictureline",
+   "sku": "16756924",
+   "title": "Fujifilm X-H2S Digital Camera Body",
+   "url": "https://www.pictureline.com/products/fujifilm-x-h2s-digital-camera-body",
+   "price": 2899,
+   "image": "https://cdn.shopify.com/s/files/1/0750/1017/products/X-H2S-Digital-Camera-Body-1.jpg?v=1704234590",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "us-pictureline",
    "sku": "16953936",
    "title": "Fujifilm X-M5 Mirrorless Camera (Black)",
    "url": "https://www.pictureline.com/products/fujifilm-x-m5-mirrorless-camera-black",
@@ -1131,7 +1151,7 @@
    "url": "https://www.pictureline.com/products/leica-wireless-charging-handgrip-hg-dc1",
    "price": 235,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Wireless-Charging-Handgrip-HG-DC1-1.jpg?v=1685115363",
-   "inStock": false,
+   "inStock": true,
    "brand": "Leica"
   },
   {
@@ -1830,7 +1850,8 @@
    "sku": "CCP-BK-2",
    "title": "WANDRD PRVKE Camera Cube Pro (21L)",
    "url": "https://www.pictureline.com/products/wandrd-prvke-camera-cube-pro-21l",
-   "price": 109,
+   "price": 87.2,
+   "wasPrice": 109,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/wandrd-prvke-camera-cube-pro-21l-open-empty-interior-view.jpg?v=1790182426",
    "inStock": false,
    "brand": "WANDRD",
@@ -1841,7 +1862,8 @@
    "sku": "CCPP-BK-2",
    "title": "WANDRD PRVKE Camera Cube Pro + (31L)",
    "url": "https://www.pictureline.com/products/wandrd-prvke-camera-cube-pro-31l",
-   "price": 119,
+   "price": 95.2,
+   "wasPrice": 119,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/wandrd-prvke-camera-cube-pro-31l-open-interior-view.jpg?v=1790195279",
    "inStock": true,
    "brand": "WANDRD",

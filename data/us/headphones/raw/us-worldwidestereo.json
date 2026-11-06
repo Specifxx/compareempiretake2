@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:11:13.232Z",
+ "scrapedAt": "2026-11-06T01:19:42.910Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -138,7 +138,7 @@
    "url": "https://www.worldwidestereo.com/products/audeze-maxwell-2-wireless-gaming-headset-for-playstation-pc-mac-switch-mobile",
    "price": 329,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Audeze-Maxwell-2-Wireless-Gaming-Headset-for-PlayStation-Image-10.jpg?v=1770828717",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audeze"
   },
   {
@@ -1560,7 +1560,8 @@
    "sku": "52422371344695",
    "title": "Focal Bathys MG Over-Ear Bluetooth Headphones (Graphen Grey)",
    "url": "https://www.worldwidestereo.com/products/focal-bathys-mg-over-ear-bluetooth-headphones-graphen-grey",
-   "price": 1499,
+   "price": 1199,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Focal-Bathys-MG-Over-Ear-Bluetooth-Headphones-Graphen-Grey-Image-01.jpg?v=1781014739",
    "inStock": true,
    "brand": "Focal"
@@ -1570,7 +1571,8 @@
    "sku": "50425301205303",
    "title": "Focal Bathys MG Over-Ear Wireless Headphones with Active Noise Cancellation",
    "url": "https://www.worldwidestereo.com/products/focal-bathys-mg-over-ear-wireless-headphones-with-active-noise-cancelation",
-   "price": 1499,
+   "price": 1199,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_4ae35c23-33e8-45ab-b029-b82cc7e962c4.jpg?v=1762447660",
    "inStock": false,
    "brand": "Focal"
@@ -1591,7 +1593,7 @@
    "sku": "52163727032631",
    "title": "Focal Bathys Over-Ear Hi-Fi Bluetooth Wireless Headphones with Active Noise Cancellation (Deep Black)",
    "url": "https://www.worldwidestereo.com/products/focal-bathys-over-ear-hi-fi-bluetooth-wireless-headphones-with-active-noise-cancellation-deep-black",
-   "price": 799,
+   "price": 639,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Focal-Bathys-Over-Ear-Hi-Fi-Bluetooth-Wireless-Headphones-with-Active-Noise-Cancellation-Deep-Black-Image-01.jpg?v=1779131951",
    "inStock": false,
@@ -1602,7 +1604,7 @@
    "sku": "49780567966007",
    "title": "Focal Bathys Over-Ear Hi-Fi Bluetooth Wireless Headphones with Active Noise Cancellation (Dune)",
    "url": "https://www.worldwidestereo.com/products/focal-bathys-over-ear-hi-fi-bluetooth-wireless-headphones-with-active-noise-cancelation-dune",
-   "price": 799,
+   "price": 639,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_1cd0850c-9ccf-4f2e-8da0-230d2be27940.jpg?v=1762447797",
    "inStock": false,
@@ -1623,7 +1625,8 @@
    "sku": "53463402709303",
    "title": "Focal Clear Mg Professional Open-Back Headphones",
    "url": "https://www.worldwidestereo.com/products/focal-clear-mg-professional-open-back-headphones",
-   "price": 1499,
+   "price": 1269,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Focal-Clear-Mg-Professional-Open-Back-Headphones-Image-01.jpg?v=1793379278",
    "inStock": false,
    "brand": "Focal"
@@ -1633,7 +1636,8 @@
    "sku": "53463852319031",
    "title": "Focal Lensys Professional Closed-Back Headphones",
    "url": "https://www.worldwidestereo.com/products/focal-lensys-professional-closed-back-headphones",
-   "price": 699,
+   "price": 599,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Focal-Lensys-Professional-Closed-Back-Headphones-Image-01.jpg?v=1793390194",
    "inStock": false,
    "brand": "Focal"
@@ -1643,7 +1647,8 @@
    "sku": "53515599741239",
    "title": "Focal Listen Professional Closed-Back Over-Ear Headphones with In-Line Remote and Microphone (Red/Black)",
    "url": "https://www.worldwidestereo.com/products/focal-listen-professional-closed-back-over-ear-headphones-with-in-line-remote-and-microphone-red-black",
-   "price": 329,
+   "price": 279,
+   "wasPrice": 329,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_00f3e284-b010-4c9a-85eb-952c03e45606.jpg?v=1793827117",
    "inStock": false,
    "brand": "Focal"
@@ -1655,7 +1660,7 @@
    "url": "https://www.worldwidestereo.com/products/focal-stellia-closed-back-circum-aural-over-ear-headphones-cognac",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/172550_WWS1.jpg?v=1773775949",
-   "inStock": true,
+   "inStock": false,
    "brand": "Focal"
   },
   {
@@ -2116,7 +2121,7 @@
    "price": 149.95,
    "wasPrice": 180,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Soundgear-Clips-Open-Ear-True-Wireless-Earbuds-Copper-Image-14.jpg?v=1773342842",
-   "inStock": true,
+   "inStock": false,
    "brand": "JBL"
   },
   {
@@ -3114,7 +3119,7 @@
    "price": 128,
    "wasPrice": 179.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Sony-WHCH730N-B-Wireless-Over-Ear-Headphones-Image-01.jpg?v=1789415955",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony"
   },
   {

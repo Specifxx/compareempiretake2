@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T00:25:46.094Z",
+ "scrapedAt": "2026-11-06T00:14:16.750Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -26,6 +26,15 @@
    "url": "https://www.mwave.com.au/products/google-pixel-11-5g-512gb-smartphone-hibiscus?variant=67616881180803",
    "price": 1697,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/GP11512HIB.jpg?v=1793075363",
+   "inStock": false
+  },
+  {
+   "retailer": "mwave",
+   "sku": "67616881115267",
+   "title": "Google Pixel 11 5G 512GB Smartphone - Pistachio",
+   "url": "https://www.mwave.com.au/products/google-pixel-11-5g-512gb-smartphone-pistachio?variant=67616881115267",
+   "price": 1697,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/GP11512PIS.jpg?v=1793918119",
    "inStock": false
   },
   {
@@ -137,6 +146,15 @@
   },
   {
    "retailer": "mwave",
+   "sku": "67616881737859",
+   "title": "Google Pixel 11 Pro XL 5G 512GB Smartphone - Fog",
+   "url": "https://www.mwave.com.au/products/google-pixel-11-pro-xl-5g-512gb-smartphone-fog?variant=67616881737859",
+   "price": 2297,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/GP11PX512F.jpg?v=1793920964",
+   "inStock": true
+  },
+  {
+   "retailer": "mwave",
    "sku": "67616880656515",
    "title": "Google Pixel 11 Pro XL 5G 512GB Smartphone - Obsidian",
    "url": "https://www.mwave.com.au/products/google-pixel-11-pro-xl-5g-512gb-smartphone-obsidian?variant=67616880656515",
@@ -223,7 +241,7 @@
    "url": "https://www.mwave.com.au/products/samsung-galaxy-a37-67-128gb-5g-smartphone-charcoal-ac98920?variant=47995438366851",
    "price": 583.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_a37_67_128gb_5g_smartphone_charcoal_ac98920_28837.jpg?v=1787798271",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "mwave",

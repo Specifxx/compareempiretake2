@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T00:43:49.870Z",
+ "scrapedAt": "2026-11-06T00:26:44.210Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -648,7 +648,8 @@
    "sku": "885660",
    "title": "Fisher & Paykel DH8060J5 Series 5 8kg Contemporary Heat Pump Dryer (White)",
    "url": "https://www.jbhifi.com.au/products/fisher-paykel-dh8060j5-series-5-8kg-contemporary-heat-pump-dryer-white",
-   "price": 1149,
+   "price": 999,
+   "wasPrice": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/885660-Product-0-I-639063630602631697.jpg?v=1770766326",
    "inStock": true,
    "mpn": "DH8060J5",
@@ -692,8 +693,7 @@
    "sku": "885685",
    "title": "Fisher & Paykel WH1060P5 Series 5 10kg Contemporary Front Load Washer (White)",
    "url": "https://www.jbhifi.com.au/products/fisher-paykel-wh1060p5-series-5-10kg-contemporary-front-load-washer-white",
-   "price": 979,
-   "wasPrice": 1199,
+   "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/885685-Product-0-I-639063649805290608.jpg?v=1770768245",
    "inStock": true,
    "mpn": "WH1060P5",
@@ -739,7 +739,7 @@
    "sku": "885700",
    "title": "Fisher & Paykel WH8060J5 Series 5 8kg Conteporary Front Load Washer (White)",
    "url": "https://www.jbhifi.com.au/products/fisher-paykel-wh8060j5-series-5-8kg-conteporary-front-load-washer-white",
-   "price": 849,
+   "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/885700-Product-0-I-639063657604708222.jpg?v=1770769026",
    "inStock": true,
    "mpn": "WH8060J5",
@@ -1524,6 +1524,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/843080-Product-0-I-638943726688246890.jpg?v=1758775925",
    "inStock": false,
    "mpn": "WTX9-14W",
+   "brand": "Lg"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "626205",
+   "title": "LG WV9-1609B 9kg Series 9 Front Load Washer (Black Steel)",
+   "url": "https://www.jbhifi.com.au/products/lg-wv9-1609b-9kg-series-9-front-load-washer-black-steel",
+   "price": 784,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/626205-Product-0-I-638168724619319589.jpg?v=1791256206",
+   "inStock": true,
+   "mpn": "WV9-1609B",
    "brand": "Lg"
   },
   {

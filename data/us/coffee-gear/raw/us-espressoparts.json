@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:08:25.305Z",
+ "scrapedAt": "2026-11-06T01:16:58.457Z",
  "offers": [
   {
    "retailer": "us-espressoparts",
@@ -203,6 +203,17 @@
    "inStock": true,
    "brand": "AeroPress",
    "mpn": "AER15C05"
+  },
+  {
+   "retailer": "us-espressoparts",
+   "sku": "AERSS005",
+   "title": "AeroPress Premium Coffee Press - Stainless Steel",
+   "url": "https://www.espressoparts.com/products/aeropress-premium-coffee-press-stainless-steel",
+   "price": 169.95,
+   "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/files/AP_Steel_Stainless_PDP_ATF_1.png?v=1793876139",
+   "inStock": true,
+   "brand": "AeroPress",
+   "mpn": "AERSS005"
   },
   {
    "retailer": "us-espressoparts",
@@ -1432,7 +1443,7 @@
    "url": "https://www.espressoparts.com/products/kalita-wave-server-300ml",
    "price": 26.78,
    "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/products/kw300server3_8d4cffe8-52ab.jpg?v=1783620906",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kalita",
    "mpn": "KWSERVER300"
   },
@@ -3041,7 +3052,7 @@
    "url": "https://www.espressoparts.com/products/hario-v60-ceramic-coffee-dripper-02-navy-blue",
    "price": 33.25,
    "image": "https://cdn.shopify.com/s/files/1/0511/8282/9755/files/v60-02-navy_frt.jpg?v=1696351441",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hario",
    "mpn": "HARIO_V60_02CRNAVY"
   },

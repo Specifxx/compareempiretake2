@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:06:46.148Z",
+ "scrapedAt": "2026-11-06T01:15:24.322Z",
  "offers": [
   {
    "retailer": "us-bloomaudio",
@@ -1986,7 +1986,7 @@
    "url": "https://bloomaudio.com/products/fiio-ft7?variant=41802513023051",
    "price": 699.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/fiio-0-ft7-thumb.webp?v=1751995426",
-   "inStock": true,
+   "inStock": false,
    "brand": "FiiO",
    "mpn": "FIO-FT7"
   },
@@ -2367,8 +2367,8 @@
    "sku": "FBATHYS-DEEP-BLK",
    "title": "Focal Bathys | Wireless Closed-Back Headphones Deep Black",
    "url": "https://bloomaudio.com/products/focal-bathys?variant=67282201509963",
-   "price": 799,
-   "wasPrice": 849,
+   "price": 699,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/focal-bathys-deep-black.webp?v=1792434605",
    "inStock": true,
    "brand": "Focal"
@@ -2378,8 +2378,8 @@
    "sku": "FBATHYS-DN",
    "title": "Focal Bathys | Wireless Closed-Back Headphones Dune",
    "url": "https://bloomaudio.com/products/focal-bathys?variant=41145125404747",
-   "price": 799,
-   "wasPrice": 849,
+   "price": 699,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/focal-bathys-dune-8-thumb.webp?v=1736960762",
    "inStock": true,
    "brand": "Focal"
@@ -2389,7 +2389,8 @@
    "sku": "FOC-BATHYS-MG",
    "title": "Focal Bathys MG | Wireless Closed-Back Headphones Chestnut",
    "url": "https://bloomaudio.com/products/focal-bathys-mg?variant=41801554788427",
-   "price": 1499,
+   "price": 1349,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/focal-bathys-mg-thumb.webp?v=1742839452",
    "inStock": true,
    "brand": "Focal"
@@ -2399,7 +2400,8 @@
    "sku": "FOC-BATHYS-MG-GRY",
    "title": "Focal Bathys MG | Wireless Closed-Back Headphones Grey",
    "url": "https://bloomaudio.com/products/focal-bathys-mg?variant=42954077503563",
-   "price": 1499,
+   "price": 1349,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/focal-bathys-mg-grey-two.webp?v=1785269004",
    "inStock": true,
    "brand": "Focal"
@@ -2964,7 +2966,7 @@
    "url": "https://bloomaudio.com/products/ibasso-epitome?variant=41927124680779",
    "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ibasso-3-epitome-thumb.webp?v=1765475879",
-   "inStock": false,
+   "inStock": true,
    "brand": "iBasso"
   },
   {
@@ -4229,7 +4231,7 @@
    "url": "https://bloomaudio.com/products/noble-audio-xm-1-xmems",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-xm1-A0-thumb.jpg?v=1703865732",
-   "inStock": true,
+   "inStock": false,
    "brand": "Noble",
    "mpn": "NA-XM1"
   },

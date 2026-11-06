@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:09:04.718Z",
+ "scrapedAt": "2026-11-06T01:17:43.303Z",
  "offers": [
   {
    "retailer": "us-headphonescom",
@@ -1083,7 +1083,7 @@
    "sku": "40188558835783",
    "title": "Focal Bathys Black",
    "url": "https://www.headphones.com/products/focal-bathys-headphones?variant=40188558835783",
-   "price": 799,
+   "price": 639,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/1791/0383/files/Bathys_Deep_black_34_Packaging.jpg?v=1787939640",
    "inStock": true,
@@ -1095,7 +1095,7 @@
    "sku": "40188558868551",
    "title": "Focal Bathys Dune",
    "url": "https://www.headphones.com/products/focal-bathys-headphones?variant=40188558868551",
-   "price": 799,
+   "price": 639,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/1791/0383/files/FocalBathysDune151024x1024.jpg?v=1707788860",
    "inStock": true,
@@ -1107,7 +1107,8 @@
    "sku": "49839965667399",
    "title": "Focal Bathys MG Wireless Headphones Brown",
    "url": "https://www.headphones.com/products/focal-bathys-mg-wireless-headphones?variant=49839965667399",
-   "price": 1499,
+   "price": 1199,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/1791/0383/files/FocalBathysMg161024x1024.jpg?v=1742847972",
    "inStock": true,
    "brand": "Focal",
@@ -1118,7 +1119,8 @@
    "sku": "49839965700167",
    "title": "Focal Bathys MG Wireless Headphones Grey",
    "url": "https://www.headphones.com/products/focal-bathys-mg-wireless-headphones?variant=49839965700167",
-   "price": 1499,
+   "price": 1199,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/1791/0383/files/Bathys_MG_Graphen_Grey_34.jpg?v=1792526940",
    "inStock": true,
    "brand": "Focal",
@@ -1191,7 +1193,7 @@
    "price": 349,
    "wasPrice": 749,
    "image": "https://cdn.shopify.com/s/files/1/1791/0383/files/FocalElex21024x1024.jpg?v=1707789451",
-   "inStock": true,
+   "inStock": false,
    "brand": "Focal",
    "mpn": "FOAHALELEX0B000B"
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:07:33.084Z",
+ "scrapedAt": "2026-11-06T01:16:08.297Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -438,7 +438,7 @@
    "price": 479,
    "wasPrice": 598.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1108908_1.jpg?v=1755531990",
-   "inStock": true,
+   "inStock": false,
    "brand": "ASUS",
    "mpn": "ASUVA34VCPSR"
   },
@@ -611,7 +611,7 @@
   {
    "retailer": "us-beachcamera",
    "sku": "DELP2425D",
-   "title": "Dell Pro 24 Plus 23.8” QHD 2560x1440 100Hz 5ms IPS Monitor (P2425D)",
+   "title": "Dell Pro 24 Plus 23.8\" QHD 2560x1440 100Hz 5ms IPS Monitor (P2425D)",
    "url": "https://www.beachcamera.com/products/dell-pro-24-plus-23-8-qhd-2560x1440-100hz-5ms-ips-monitor-p2425d",
    "price": 322.65,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1224379_1.jpg?v=1793614088",
@@ -777,9 +777,9 @@
    "sku": "HPOMEN27QG2",
    "title": "Hewlett Packard OMEN 27 inch QHD 180Hz Gaming Monitor",
    "url": "https://www.beachcamera.com/products/hewlett-packard-omen-27-inch-qhd-180hz-gaming-monitor",
-   "price": 470,
+   "price": 450,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1124492_1_b3560f47-70d5-4076-8233-c5906f0c93bc.jpg?v=1790125564",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hewlett Packard",
    "mpn": "HPOMEN27QG2"
   },
@@ -1610,7 +1610,7 @@
    "price": 389.99,
    "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1198622_1.jpg?v=1782943439",
-   "inStock": false,
+   "inStock": true,
    "mpn": "LG34U650A"
   },
   {
@@ -2140,7 +2140,8 @@
    "sku": "SAMLS32FM703UNXZA",
    "title": "Samsung 32\" Smart Monitor M7 M70F 4K UHD with Samsung Vision AI - White",
    "url": "https://www.beachcamera.com/products/samsung-32-smart-monitor-m7-m70f-4k-uhd-with-samsung-vision-ai-white",
-   "price": 399.99,
+   "price": 329.99,
+   "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1221955_1.jpg?v=1792638675",
    "inStock": true,
    "brand": "Samsung",
@@ -2293,6 +2294,17 @@
    "inStock": false,
    "brand": "Samsung",
    "mpn": "SAMLC34H890WJNXZA"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "SAMLS32H704EANXZA",
+   "title": "Samsung LS32H704EANXZA 32\" ViewFinity S7 (S70H) High-Resolution Monitor",
+   "url": "https://www.beachcamera.com/products/samsung-ls32h704eanxza-32-viewfinity-s7-s70h-high-resolution-monitor",
+   "price": 329.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1225930_1.jpg?v=1793722598",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "SAMLS32H704EANXZA"
   },
   {
    "retailer": "us-beachcamera",

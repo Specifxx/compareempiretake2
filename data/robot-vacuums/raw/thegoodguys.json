@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-11-05T00:48:42.201Z",
+ "scrapedAt": "2026-11-06T00:37:15.780Z",
  "offers": [
   {
    "retailer": "thegoodguys",
    "sku": "dreame-aqua10-roller-robot-vacuum-rlh31ce",
    "title": "Dreame Aqua10 Roller Robot Vacuum",
    "url": "https://www.thegoodguys.com.au/dreame-aqua10-roller-robot-vacuum-rlh31ce",
-   "price": 1097,
+   "price": 1058,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096429_1018905.png?v=1776232350&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "RLH31CE",
@@ -14,10 +14,21 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "dreame-aqua10-ultra-roller-robot-vacuum-rlh71de",
+   "title": "Dreame Aqua10 Ultra Roller Robot Vacuum",
+   "url": "https://www.thegoodguys.com.au/dreame-aqua10-ultra-roller-robot-vacuum-rlh71de",
+   "price": 2999,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096430_1018907.png?v=1776749501&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "RLH71DE",
+   "brand": "Dreame"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "dreame-aqua10-ultra-track-s-robot-vacuum-rlr81ce",
    "title": "Dreame Aqua10 Ultra Track S Robot Vacuum",
    "url": "https://www.thegoodguys.com.au/dreame-aqua10-ultra-track-s-robot-vacuum-rlr81ce",
-   "price": 1797,
+   "price": 1697,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096431_1025119.png?v=1776233298&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "RLR81CE",
@@ -77,17 +88,6 @@
    "inStock": true,
    "mpn": "RLX86DE",
    "brand": "Dreame"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "dyson-r1-nurovi-robotic-vacuum-657032-01",
-   "title": "Dyson r1 Nurovi Robotic Vacuum",
-   "url": "https://www.thegoodguys.com.au/dyson-r1-nurovi-robotic-vacuum-657032-01",
-   "price": 949,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100163_1089489.png?v=1788471151&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "657032-01",
-   "brand": "Dyson"
   },
   {
    "retailer": "thegoodguys",
@@ -244,7 +244,7 @@
    "sku": "mova-s70-pro-roller-wet-and-dry-robotic-vacuum-010201aa001014",
    "title": "MOVA S70 Pro Roller Wet & Dry Robotic Vacuum",
    "url": "https://www.thegoodguys.com.au/mova-s70-pro-roller-wet-and-dry-robotic-vacuum-010201aa001014",
-   "price": 995,
+   "price": 986,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098439_1053762.png?v=1776232461&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "010201AA001014",
@@ -281,16 +281,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50093931_946382.png?v=1776232146&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "YJCC015",
-   "brand": "Narwal"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "narwal-freo-z-ultra-robot-vacuum-and-mop-yjcc017-white",
-   "title": "Narwal Freo Z Ultra Robot Vacuum and Mop",
-   "url": "https://www.thegoodguys.com.au/narwal-freo-z-ultra-robot-vacuum-and-mop-yjcc017-white",
-   "price": 2499,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50093930_946383.png?v=1776233334&width=284&height=284&quality=88",
-   "inStock": true,
    "brand": "Narwal"
   },
   {
@@ -350,8 +340,18 @@
    "sku": "roborock-qrevo-edge-2-pro-robotic-vacuum-rr-qe2p02-03-wht",
    "title": "Roborock QRevo Edge 2 Pro Robotic Vacuum",
    "url": "https://www.thegoodguys.com.au/roborock-qrevo-edge-2-pro-robotic-vacuum-rr-qe2p02-03-wht",
-   "price": 1995,
+   "price": 1195,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097915_1046073.png?v=1776749506&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Roborock"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "roborock-qrevo-edge-2-robotic-vacuum-rr-qe252-03-blk",
+   "title": "Roborock QRevo Edge 2 Robotic Vacuum",
+   "url": "https://www.thegoodguys.com.au/roborock-qrevo-edge-2-robotic-vacuum-rr-qe252-03-blk",
+   "price": 2199,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50101105_1106177.png?v=1793856141&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Roborock"
   },

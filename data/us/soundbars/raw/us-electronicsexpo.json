@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:07:58.021Z",
+ "scrapedAt": "2026-11-06T01:16:30.144Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -19,7 +19,7 @@
    "url": "https://www.electronicsexpo.com/products/definitive-technology-mythos-3c-65-ultra-slim-on-wall-passive-sound-bar-for-65-class-tvs-each",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/definitive-technology-mythos-3c-65-passive-3-channel-home-theater-sound-bar-each-7013417.jpg?v=1753289450",
-   "inStock": false,
+   "inStock": true,
    "brand": "Definitive Technology",
    "mpn": "DEFMYTHOSSC65.FBA"
   },
@@ -30,7 +30,7 @@
    "url": "https://www.electronicsexpo.com/products/definitive-technology-mythos-3c-75-passive-3-channel-home-theater-sound-bar-each",
    "price": 1999,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/definitive-technology-mythos-3c-75-passive-3-channel-home-theater-sound-bar-each-2955040.jpg?v=1753289413",
-   "inStock": false,
+   "inStock": true,
    "brand": "Definitive Technology",
    "mpn": "DEFMYTHOSSC75.FBA"
   },
@@ -96,7 +96,7 @@
    "url": "https://www.electronicsexpo.com/products/harman-kardon-enchant-900-powered-5-0-2-channel-dolby-atmos-sound-bar-with-wi-fi-bluetooth-and-apple-airplay-2",
    "price": 549.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/harman-kardon-enchant-900-powered-502-channel-dolby-atmos-sound-bar-with-wi-fi-bluetooth-and-apple-airplay-2-product-type-2980727.webp?v=1784741894",
-   "inStock": false,
+   "inStock": true,
    "brand": "Harman Kardon",
    "mpn": "HARENCHANT900"
   },
@@ -107,7 +107,7 @@
    "url": "https://www.electronicsexpo.com/products/harman-kardon-enchant-sub-2-6-1-2-wireless-powered-subwoofer-for-harman-kardon-enchant-sound-bars",
    "price": 449.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/harman-kardon-enchant-sub-2-6-12-wireless-powered-subwoofer-for-harman-kardon-enchant-sound-bars-product-type-3843278.jpg?v=1784741892",
-   "inStock": false,
+   "inStock": true,
    "brand": "Harman Kardon"
   },
   {
@@ -731,8 +731,7 @@
    "sku": "YAMSRB30ABL.FBA",
    "title": "Yamaha SR-B30A Dolby Atmos Sound Bar with Built-In Subwoofers",
    "url": "https://www.electronicsexpo.com/products/yamaha-sr-b30a-dolby-atmos-sound-bar-with-built-in-subwoofers",
-   "price": 249.95,
-   "wasPrice": 279.95,
+   "price": 279.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/yamaha-sr-b30a-dolby-atmos-sound-bar-with-built-in-subwoofers-1513271.jpg?v=1753291924",
    "inStock": true,
    "brand": "Yamaha",

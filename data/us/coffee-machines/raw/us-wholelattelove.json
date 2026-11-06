@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:11:48.516Z",
+ "scrapedAt": "2026-11-06T01:20:19.045Z",
  "offers": [
   {
    "retailer": "us-wholelattelove",
@@ -18,7 +18,7 @@
    "url": "https://www.wholelattelove.com/products/arkel-coast-espresso-machine?variant=46541556645942",
    "price": 2699,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/bundlerphoto_72048_2000px6.jpg?v=1785335332",
-   "inStock": true,
+   "inStock": false,
    "brand": "Arkel"
   },
   {
@@ -4897,7 +4897,8 @@
    "sku": "30920",
    "title": "Braun PureFlavor Coffee Maker KF5650BK",
    "url": "https://www.wholelattelove.com/products/braun-pureflavor-coffee-maker-kf5650bk",
-   "price": 99.95,
+   "price": 89.96,
+   "wasPrice": 99.95,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/products/KF5650BK-Main_ca72cb33-cbec-4d3b-a20a-c2f67aac6877.jpg?v=1654180335",
    "inStock": true,
    "brand": "Braun"
@@ -5219,7 +5220,8 @@
    "sku": "29224",
    "title": "Dalla Corte Mina Espresso Machine 110V Venice Wood",
    "url": "https://www.wholelattelove.com/products/dalla-corte-mina-espresso-machine?variant=43815256719414",
-   "price": 8500,
+   "price": 7650,
+   "wasPrice": 8500,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/products/MinaVW_Left_IMG_0938.jpg?v=1601056248",
    "inStock": true,
    "brand": "Dalla Corte"
@@ -5587,7 +5589,7 @@
    "url": "https://www.wholelattelove.com/products/delonghi-eletta-explore-espresso-machine",
    "price": 1999.95,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/Delongi_Eletta_Explore_Front_Facing.jpg?v=1720028248",
-   "inStock": true,
+   "inStock": false,
    "brand": "DeLonghi"
   },
   {
@@ -5595,7 +5597,7 @@
    "sku": "31320",
    "title": "DeLonghi La Specialista Arte EC9155MB Espresso Machine",
    "url": "https://www.wholelattelove.com/products/delonghi-la-specialista-arte-ec9155mb-espresso-machine",
-   "price": 599.95,
+   "price": 629.96,
    "wasPrice": 699.95,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/products/LaSpecialistaArte-Main.jpg?v=1641505258",
    "inStock": true,
@@ -5606,7 +5608,8 @@
    "sku": "30918",
    "title": "DeLonghi La Specialista Maestro Espresso Machine",
    "url": "https://www.wholelattelove.com/products/delonghi-la-specialista-maestro-espresso-machine",
-   "price": 1299.95,
+   "price": 1169.96,
+   "wasPrice": 1299.95,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/products/DEEC9665M.jpg?v=1723494294",
    "inStock": true,
    "brand": "DeLonghi"
@@ -6349,7 +6352,7 @@
    "sku": "41757",
    "title": "ECM Synchronika Espresso Machine - AMG Limited Edition",
    "url": "https://www.wholelattelove.com/products/ecm-synchronika-espresso-machine-amg-limited-edition",
-   "price": 3299,
+   "price": 3599.1,
    "wasPrice": 3999,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/ECMSYNCHDBAMG_3292.png?v=1764083938",
    "inStock": true
@@ -7370,7 +7373,8 @@
    "sku": "6847",
    "title": "Gaggia Brera Espresso Machine in Black",
    "url": "https://www.wholelattelove.com/products/gaggia-brera-espresso-machine-in-black",
-   "price": 499,
+   "price": 399,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/products/brera-black-left-facing.jpg?v=1764083089",
    "inStock": true,
    "brand": "Gaggia"
@@ -7380,7 +7384,8 @@
    "sku": "6863",
    "title": "Gaggia Brera Espresso Machine in Silver",
    "url": "https://www.wholelattelove.com/products/gaggia-brera-espresso-machine-in-silver",
-   "price": 499,
+   "price": 399,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/products/brera-left-facing.jpg?v=1764083876",
    "inStock": true,
    "brand": "Gaggia"
@@ -7445,7 +7450,7 @@
    "sku": "25597",
    "title": "Gaggia Carezza De LUXE Espresso Machine",
    "url": "https://www.wholelattelove.com/products/gaggia-carezza-deluxe",
-   "price": 229,
+   "price": 314.1,
    "wasPrice": 349,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/products/IMG_2336.jpg?v=1628541834",
    "inStock": true,
@@ -9027,7 +9032,7 @@
    "url": "https://www.wholelattelove.com/products/lelit-bianca-v3-dual-boiler-espresso-machine?variant=44028724871222",
    "price": 2999.95,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/products/LLTBIANCA-SS_0139.jpg?v=1670353168",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lelit"
   },
   {
@@ -9037,7 +9042,7 @@
    "url": "https://www.wholelattelove.com/products/lelit-bianca-v3-dual-boiler-espresso-machine?variant=44028763275318",
    "price": 3299.95,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/bundlerphoto_LEBIANCAPSSOW_2000px3.jpg?v=1756150073",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lelit"
   },
   {
@@ -18974,7 +18979,7 @@
    "sku": "69121",
    "title": "Stone Lite Espresso Machine Black",
    "url": "https://www.wholelattelove.com/products/stone-lite-espresso-machine?variant=43526809288758",
-   "price": 1124,
+   "price": 1124.1,
    "wasPrice": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/Stone_Lite_Black_Right_Facing.jpg?v=1753125742",
    "inStock": true,
@@ -18996,7 +19001,7 @@
    "sku": "69123",
    "title": "Stone Lite Espresso Machine White",
    "url": "https://www.wholelattelove.com/products/stone-lite-espresso-machine?variant=43526807224374",
-   "price": 1124,
+   "price": 1124.1,
    "wasPrice": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0078/9502/3675/files/Stone_Lite_White_Right_Facing.jpg?v=1753126061",
    "inStock": true,

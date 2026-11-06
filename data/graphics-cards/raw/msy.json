@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T00:39:53.522Z",
+ "scrapedAt": "2026-11-06T00:28:56.403Z",
  "offers": [
   {
    "retailer": "msy",
@@ -520,6 +520,17 @@
   },
   {
    "retailer": "msy",
+   "sku": "81294",
+   "title": "Asus TUF Gaming GeForce RTX 5080 16G OC Graphics Card",
+   "brand": "Asus",
+   "mpn": "TUF-RTX5080-O16G-GAMING",
+   "url": "https://www.msy.com.au/product/asus-tuf-gaming-geforce-rtx-5080-16g-oc-graphics-card-tuf-rtx5080-o16g-gaming-81294",
+   "price": 3699,
+   "image": "https://assets.msy.com.au/newsite/images/202501/thumb_img/Asus-TUF-Gaming-GeForce-RTX-5080-Graphics-Card-TUF-RTX5080-O16G-GAMING-8.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
    "sku": "93760",
    "title": "Asus TUF Gaming Radeon RX 9070 XT COD BO7 Special Edition 16G Graphics Card",
    "brand": "Asus",
@@ -706,17 +717,6 @@
   },
   {
    "retailer": "msy",
-   "sku": "83279",
-   "title": "Gigabyte GeForce RTX 5060 Eagle OC Ice 8G Graphics Card",
-   "brand": "Gigabyte",
-   "mpn": "GV-N5060EAGLEOC ICE-8GD",
-   "url": "https://www.msy.com.au/product/gigabyte-geforce-rtx-5060-eagle-oc-ice-8g-graphics-card-gv-n5060eagleoc-ice-8gd-83279",
-   "price": 839,
-   "image": "https://assets.msy.com.au/newsite/images/202505/thumb_img/Gigabyte-GeForce-RTX-5060-Eagle-OC-Ice-8G-Graphics-Card-GV-N5060EAGLEOC-ICE-8GD-7.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
    "sku": "83283",
    "title": "Gigabyte GeForce RTX 5060 OC Low Profile 8G Graphics Card",
    "brand": "Gigabyte",
@@ -799,7 +799,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-N506TWF2-8GD",
    "url": "https://www.msy.com.au/product/gigabyte-geforce-rtx-5060-ti-windforce-8g-graphics-card-gv-n506twf2-8gd-82696",
-   "price": 899,
+   "price": 799,
    "image": "https://assets.msy.com.au/newsite/images/202504/thumb_img/Gigabyte-GeForce-RTX-5060-Ti-WindForce-8G-Graphics-Card-GV-N506TWF2-8GD-5.jpg",
    "inStock": true
   },
@@ -876,7 +876,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5070EAGLEOC ICE-12GD",
    "url": "https://www.msy.com.au/product/gigabyte-geforce-rtx-5070-eagle-oc-ice-sff-12g-graphics-card-gv-n5070eagleoc-ice-12gd-82031",
-   "price": 1499,
+   "price": 14498,
    "image": "https://assets.msy.com.au/newsite/images/202503/thumb_img/Gigabyte-GeForce-RTX-5070-Eagle-OC-Ice-SFF-12G-Graphics-Card-GV-N5070EAGLEOC-ICE-12GD-7.jpg",
    "inStock": true
   },
@@ -1315,7 +1315,7 @@
    "brand": "MSI",
    "mpn": "GeForce RTX 5080 16G EXPERT OC",
    "url": "https://www.msy.com.au/product/msi-geforce-rtx-5080-16g-expert-oc-graphics-card-geforce-rtx-5080-16g-expert-oc-85856",
-   "price": 3499,
+   "price": 3599,
    "image": "https://assets.msy.com.au/newsite/images/202508/thumb_img/MSI-GeForce-RTX-5080-16G-Expert-OC-Graphics-Card-GeForce-RTX-5080-16G-EXPERT-OC-8.jpg",
    "inStock": true
   },
@@ -1326,7 +1326,7 @@
    "brand": "MSI",
    "mpn": "GeForce RTX 5080 16G INSPIRE 3X OC",
    "url": "https://www.msy.com.au/product/msi-geforce-rtx-5080-16g-inspire-3x-oc-graphics-card-geforce-rtx-5080-16g-inspire-3x-oc-81410",
-   "price": 3499,
+   "price": 3699,
    "image": "https://assets.msy.com.au/newsite/images/202501/thumb_img/MSI-GeForce-RTX-5080-16G-Inspire-3X-OC-Graphics-Card-GeForce-RTX-5080-16G-INSPIRE-3X-OC-8.jpg",
    "inStock": true
   },
@@ -1337,7 +1337,7 @@
    "brand": "MSI",
    "mpn": "GeForce RTX 5080 16G SHADOW 3X OC",
    "url": "https://www.msy.com.au/product/msi-geforce-rtx-5080-16g-shadow-3x-oc-graphics-card-geforce-rtx-5080-16g-shadow-3x-oc-82035",
-   "price": 3549,
+   "price": 3599,
    "image": "https://assets.msy.com.au/newsite/images/202503/thumb_img/MSI-GeForce-RTX-5080-16G-Shadow-3X-OC-Graphics-Card-GeForce-RTX-5080-16G-SHADOW-3X-OC-8.jpg",
    "inStock": true
   },
@@ -1381,7 +1381,7 @@
    "brand": "MSI",
    "mpn": "GeForce RTX 5080 16G VENTUS 3X OC PLUS",
    "url": "https://www.msy.com.au/product/msi-geforce-rtx-5080-ventus-3x-plus-16g-oc-graphics-card-geforce-rtx-5080-16g-ventus-3x-oc-plus-81401",
-   "price": 3399,
+   "price": 3499,
    "image": "https://assets.msy.com.au/newsite/images/202501/thumb_img/MSI-GeForce-RTX-5080-Ventus-3X-Plus-16G-OC-Graphics-Card-GeForce-RTX-5080-16G-VENTUS-3X-OC-PLUS-8.jpg",
    "inStock": true
   },
@@ -1546,7 +1546,7 @@
    "brand": "Sapphire",
    "mpn": "11348-02-20G",
    "url": "https://www.msy.com.au/product/sapphire-radeon-rx-9070-xt-pure-gaming-16g-oc-graphics-card-11348-02-20g-81940",
-   "price": 1699,
+   "price": 1499,
    "image": "https://assets.msy.com.au/newsite/images/202503/thumb_img/Sapphire-Radeon-RX-9070-XT-Pure-Gaming-16G-OC-Graphics-Card-11348-02-20G-8.jpg",
    "inStock": true
   },
@@ -1557,7 +1557,7 @@
    "brand": "Sapphire",
    "mpn": "11354-01-20G",
    "url": "https://www.msy.com.au/product/sapphirepulse-amd-radeon-rx-9070-gre-gaming-oc-12gb-graphics-card-11354-01-20g-95356",
-   "price": 1199,
+   "price": 899,
    "image": "https://assets.msy.com.au/newsite/images/202608/thumb_img/SapphirePulse-AMD-Radeon-RX-9070-GRE-Gaming-OC-12GB-Graphics-Card-11354-01-20G-9.jpg",
    "inStock": true
   },

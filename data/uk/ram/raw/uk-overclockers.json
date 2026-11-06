@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-05T01:25:33.800Z",
+ "scrapedAt": "2026-11-06T01:34:00.453Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -609,7 +609,7 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-expo-32gb-2x16gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit-black-cmh32gx5m2b6000z30k/MY-4DU-CS.html",
    "price": 548.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw275f6073/images/data/product/6d/d0817f/6b50e073a21946f19db54150dbe9faadf86534b2.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -699,7 +699,7 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-32gb-2x16gb-ddr5-c38-6000mhz-dual-channel-kit/MEM-CRS-06838.html",
    "price": 599.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw55e75779/images/data/product/a2/8e5421/3f89212de0445c076ce63418421f633eda8cd608.png?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -719,7 +719,7 @@
    "url": "https://www.overclockers.co.uk/corsair-vengeance-rgb-xmp-32gb-2x16gb-ddr5-pc5-48000c36-6000mhz-dual-channel/MEM-CRS-02782.html",
    "price": 599.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3e155a52/images/data/product/ff/991936/03f872128edc704c0a7b169c0f82c9048b150bda.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -1083,22 +1083,22 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "MEM-GSK-01357",
-   "brand": "G.Skill",
-   "title": "G.Skill Trident Z5 Neo EXPO/XMP RGB 64GB (2x32GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
-   "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-xmp-rgb-64gb-2x32gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit/MEM-GSK-01357.html",
-   "price": 1999.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw6bd602d7/images/data/product/39/5ca7af/479e98044166a9c1546d849a33503bb9a01df386.jpg?sw=500",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "MEM-GSK-01359",
    "brand": "G.Skill",
    "title": "G.Skill Trident Z5 Neo EXPO/XMP RGB 64GB (2x32GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
    "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-xmp-rgb-64gb-2x32gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit/MEM-GSK-01359.html",
    "price": 1999.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw74b17191/images/data/product/db/afd2f9/7127f84a1f53d476aee0887eaa7672c4ea39b646.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-GSK-01357",
+   "brand": "G.Skill",
+   "title": "G.Skill Trident Z5 Neo EXPO/XMP RGB 64GB (2x32GB) DDR5 PC5-48000C30 6000MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/g.skill-trident-z5-neo-expo-xmp-rgb-64gb-2x32gb-ddr5-pc5-48000c30-6000mhz-dual-channel-kit/MEM-GSK-01357.html",
+   "price": 1999.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw6bd602d7/images/data/product/39/5ca7af/479e98044166a9c1546d849a33503bb9a01df386.jpg?sw=500",
    "inStock": true
   },
   {
@@ -2453,6 +2453,26 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MEM-PAT-09531",
+   "brand": "Patriot",
+   "title": "Patriot Viper Elite 5 Ultra 16GB (1x16GB) DDR5 C36 6000MHz Single Channel Kit",
+   "url": "https://www.overclockers.co.uk/patriot-viper-elite-5-ultra-16gb-1x16gb-ddr5-c36-6000mhz-single-channel-kit/MEM-PAT-09531.html",
+   "price": 259.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw997f2945/images/data/product/90/a10f3d/2926b53770382e254f3ea9283be7defc96c35bc6.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-PAT-09532",
+   "brand": "Patriot",
+   "title": "Patriot Viper Elite 5 Ultra 32GB (2x16GB) DDR5 C36 6400MHz Dual Channel Kit",
+   "url": "https://www.overclockers.co.uk/patriot-viper-elite-5-ultra-32gb-2x16gb-ddr5-c36-6400mhz-dual-channel-kit/MEM-PAT-09532.html",
+   "price": 509.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw22963d88/images/data/product/37/777593/121b6bbf1d582b5e782369d2879ffc0aca392a1b.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MEM-PAT-06808",
    "brand": "Patriot",
    "title": "Patriot Viper Elite 5 Ultra EXPO/XMP 32GB (2x16GB) DDR5 C28 6000MHz Dual Channel Kit",
@@ -3320,6 +3340,66 @@
    "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe6597fe2/images/data/product/1a/f6ad96/2a62c013092087eb41546befae26b10282db16ba.jpg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-VCR-09535",
+   "brand": "V-Color",
+   "title": "V-Color Prism Pro RGB 16GB (2x8GB) DDR4 C16 3200MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/v-color-prism-pro-rgb-16gb-2x8gb-ddr4-c16-3200mhz-dual-channel-kit-black/MEM-VCR-09535.html",
+   "price": 149.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw2cfdc19f/images/data/product/bd/b99252/8449020f61b226410faaba30f44ec9ee8a125754.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-VCR-09536",
+   "brand": "V-Color",
+   "title": "V-Color Prism Pro RGB 16GB (2x8GB) DDR4 C18 3600MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/v-color-prism-pro-rgb-16gb-2x8gb-ddr4-c18-3600mhz-dual-channel-kit-black/MEM-VCR-09536.html",
+   "price": 155.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw9edb7289/images/data/product/37/bf81f8/8449020f61b226410faaba30f44ec9ee8a125754.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-VCR-09537",
+   "brand": "V-Color",
+   "title": "V-Color Prism Pro RGB 32GB (2x16GB) DDR4 C16 3200MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/v-color-prism-pro-rgb-32gb-2x16gb-ddr4-c16-3200mhz-dual-channel-kit-black/MEM-VCR-09537.html",
+   "price": 289.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw80505d45/images/data/product/de/4641a3/8449020f61b226410faaba30f44ec9ee8a125754.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-VCR-09538",
+   "brand": "V-Color",
+   "title": "V-Color Prism Pro RGB 32GB (2x16GB) DDR4 C18 3600MHz Dual Channel Kit - Black",
+   "url": "https://www.overclockers.co.uk/v-color-prism-pro-rgb-32gb-2x16gb-ddr4-c18-3600mhz-dual-channel-kit-black/MEM-VCR-09538.html",
+   "price": 299.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwed6b5395/images/data/product/18/acaecf/8449020f61b226410faaba30f44ec9ee8a125754.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-VCR-09539",
+   "brand": "V-Color",
+   "title": "V-Color Prism Pro RGB 64GB (2x32GB) DDR4 C16 3200MHz Dual Channel Kit - Chromed",
+   "url": "https://www.overclockers.co.uk/v-color-prism-pro-rgb-64gb-2x32gb-ddr4-c16-3200mhz-dual-channel-kit-chromed/MEM-VCR-09539.html",
+   "price": 589.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw2aa4d2f4/images/data/product/df/71487b/59cef11dfaffcbf2242ad471601b0804acf3972b.jpg?sw=500",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MEM-VCR-09540",
+   "brand": "V-Color",
+   "title": "V-Color Prism Pro RGB 64GB (2x32GB) DDR4 C18 3600MHz Dual Channel Kit - Chromed",
+   "url": "https://www.overclockers.co.uk/v-color-prism-pro-rgb-64gb-2x32gb-ddr4-c18-3600mhz-dual-channel-kit-chromed/MEM-VCR-09540.html",
+   "price": 599.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8347c454/images/data/product/10/436f58/59cef11dfaffcbf2242ad471601b0804acf3972b.jpg?sw=500",
+   "inStock": false
   }
  ]
 }
