@@ -40,9 +40,22 @@ test("motorola and honor naming quirks", () => {
 
 test("terabytes and 4G LTE", () => {
   assert.equal(parseTitle("Apple iPhone 17 Pro Max 1TB Cosmic Orange")!.storageGb, 1024);
+  // Samsung sells the A17 4G and the A17 5G as two phones ($199 and $379 in 2026-11); the 4G is its own model.
   const p = parseTitle("Samsung Galaxy A17 4G LTE 128GB Black")!;
-  assert.equal(p.model, "Galaxy A17");
+  assert.equal(p.model, "Galaxy A17 4G");
   assert.equal(p.colour, "Black");
+  assert.equal(parseTitle("Samsung Galaxy A17 5G 128GB (Black)")!.model, "Galaxy A17");
+  assert.equal(parseTitle("Samsung Galaxy A17 5G 128GB (Black)")!.key, parseTitle("Samsung Galaxy A17 128GB Black")!.key);
+  assert.notEqual(parseTitle("Samsung Galaxy A17 4G 128GB (Black)")!.key, parseTitle("Samsung Galaxy A17 5G 128GB (Black)")!.key);
+});
+
+test("bundles are not the phone, and Enterprise Edition is its own SKU", () => {
+  assert.equal(parseTitle("Apple iPhone 17 Pro Max 256GB (Deep Blue) with OtterBox Protection Bundle"), null);
+  const e = parseTitle("Samsung Galaxy A17 5G 128GB Smartphone - Enterprise Edition")!;
+  assert.equal(e.model, "Galaxy A17 Enterprise Edition");
+  assert.equal(e.colour, "");
+  assert.notEqual(e.key, parseTitle("Samsung Galaxy A17 5G 128GB (Black)")!.key);
+  assert.equal(parseTitle("Samsung Galaxy A57 5G Enterprise Edition Awesome Grey 6.7\" 128GB 5G Unlocked & SIM Free Smartphone")!.model, "Galaxy A57 Enterprise Edition");
 });
 
 test("RAM/storage pairs are not part of the model", () => {
@@ -70,4 +83,14 @@ test("less common brands parse", () => {
   assert.equal(parseTitle("Ruio Titan 128GB Smart Phone - Black")!.brand, "RUIO");
   assert.equal(parseTitle("HUAWEI Pura 80 Pro 512GB - Black")!.brand, "Huawei");
   assert.equal(parseTitle("Meizu 22 256GB Grey")!.brand, "Meizu");
+});
+
+test("a colour written before the storage is a colour, not a model", () => {
+  const p = parseTitle('Apple iPhone 17 Black 6.3" 256GB 5G Unlocked & SIM Free Smartphone')!;
+  assert.equal(p.model, "iPhone 17");
+  assert.equal(p.colour, "Black");
+  assert.equal(p.key, parseTitle("Apple iPhone 17 256GB (Sage)")!.key);
+  assert.equal(parseTitle("Samsung Galaxy S26 Ultra Phantom Black 512GB")!.model, "Galaxy S26 Ultra");
+  // Only when a number or a model suffix is left: "Mist" is not on the colour list, so the name is left alone.
+  assert.equal(parseTitle("Google Pixel 10 Pro Mist Blue 256GB")!.model, "Pixel 10 Pro Mist Blue");
 });

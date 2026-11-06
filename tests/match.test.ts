@@ -107,3 +107,44 @@ test("one iPad mini page per model: size, generation-or-chip naming and 'with' n
   assert.notEqual(key("Apple iPad mini (A20 Pro) Wi-Fi + Cellular 128GB Standard Glass - Midnight"), a17);
   assert.equal(key("Apple 8.3 inch iPad Mini - WiFi 64GB - Space Grey"), key("Apple iPad Mini Wi-Fi 128GB - Space Grey"));
 });
+
+test("laptops under one part number split on the stated CPU, drive and screen size", async () => {
+  const { conflicts, laptopSignature } = await import("../src/lib/match");
+  assert.ok(conflicts(laptopSignature('Dell Pro 14 Plus PB14250 14" FHD+ AI CoPilot+ Laptop - Intel Ultra 5-238V vPro 32GB 512GB W11 Pro'), laptopSignature('Dell Pro 14 Plus PB14250 14" FHD+ AI CoPilot+ Laptop - Intel Ultra 7-268V vPro 32GB')));
+  assert.ok(conflicts(laptopSignature('ASUS BR1104FTA 11.6" Touch Rugged Education Laptop - Intel N150 8GB 128GB W11P'), laptopSignature('ASUS BR1104FTA 11.6" Touch Rugged Education Laptop - Intel N150 8GB 256GB W11P')));
+  assert.ok(conflicts(laptopSignature('ASUS BR1104FTA 11.6" Touch Rugged Education Laptop - Intel N150 8GB 128GB W11P'), laptopSignature('ASUS BR1104FTA 12.2" Touch Rugged Education Laptop - Intel N150 8GB 128GB W11P')));
+  assert.ok(conflicts(laptopSignature('Asus UM3406 Zenbook 14" WUXGA Touchscreen Laptop (Ryzen AI 5)[1TB]'), laptopSignature('Asus UM3406 Zenbook 14" WUXGA Touchscreen Copilot+ AI PC Laptop (Ryzen AI 7)[1TB]')));
+  assert.ok(conflicts(laptopSignature('Microsoft Surface Laptop 8 13.8" Copilot+ PC Snapdragon 35 cm (13.8") Touchscreen 64 GB LPDDR5x-SDRAM 1 TB SSD'), laptopSignature('Microsoft Surface Laptop 8 15" Copilot+ PC Snapdragon 38.1 cm (15") Touchscreen 64 GB LPDDR5x-SDRAM 1 TB SSD')));
+  // The same configuration in two stores' words still agrees.
+  assert.ok(!conflicts(laptopSignature("LG gram Pro Laptop 17-Inch Intel Core Ultra 7 32GB RAM 1TB SSD in Black - 17Z90U-H.AU87U1"), laptopSignature("LG gram Pro 17 Inch Copilot+ PC, Windows 11 Home, Lightweight Dual AI Touchscreen Laptop, Intel Core Ultra 7, 32GB RAM, 1TB SSD, Black")));
+  assert.equal(parseProduct(o("Microsoft Surface Pro, 13-inch (12th Edition) Essentials Bundle - Snapdragon X2 Plus (10 Core) with LCD display, Platinum, 16 GB RAM, 256 GB SSD"), "tablets"), null);
+  assert.equal(parseProduct(o("Dell XPS 13 Laptop Bundle with Sleeve and Mouse"), "laptops"), null);
+});
+
+test("tablets under one name split on RAM and edition", async () => {
+  const { conflicts } = await import("../src/lib/match");
+  const a = parseProduct(o("Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Plus (10 Core) with LCD display, Black, 16 GB RAM, 512 GB SSD"), "tablets")!;
+  const b = parseProduct(o("Microsoft Surface Pro, 13-inch (12th Edition) - Snapdragon X2 Plus (10 Core) with LCD display, Black, 24 GB RAM, 512 GB SSD"), "tablets")!;
+  const c = parseProduct(o("Microsoft Surface Pro, 13-inch (11th Edition) - Snapdragon X Plus (10 Core), with LCD display, Dune, Wi-Fi, 16 GB RAM, 512 GB SSD"), "tablets")!;
+  assert.equal(a.key, b.key);
+  assert.ok(conflicts(a.discriminator!, b.discriminator!));
+  assert.ok(conflicts(a.discriminator!, c.discriminator!));
+  // A store that states no RAM agrees with every RAM figure; a Galaxy Tab's "6GB RAM 128GB" is the 128GB tablet.
+  const d = parseProduct(o("Samsung Galaxy Tab A11+ (X236 6GB RAM 128GB 5G) Silver"), "tablets")!;
+  const e = parseProduct(o("Samsung Galaxy Tab A11+ 5G 128GB - Grey"), "tablets")!;
+  assert.equal(d.key, e.key);
+  assert.equal(d.variant.id, e.variant.id);
+  assert.ok(!conflicts(d.discriminator!, e.discriminator!));
+});
+
+test("desktops under one model code split on their configuration, and a CPU model is not the code", async () => {
+  const { conflicts } = await import("../src/lib/match");
+  const a = parseProduct(o("Lenovo ThinkCentre M70Q G6 Tiny PC - Ultra 7-265T 32GB 512GB WIFI+BT W11 Pro"), "desktops")!;
+  const b = parseProduct(o("Lenovo ThinkCentre M70Q G6 Tiny PC - Ultra 7-265T 32GB 1TB WIFI+BT W11 Pro"), "desktops")!;
+  assert.ok(conflicts(a.discriminator!, b.discriminator!));
+  assert.ok(conflicts(parseProduct(o("Acer Veriton X Series desktop (VX2710G) - Intel Core i5, 8GB RAM, 512GB SSD, Windows 11 Pro"), "desktops")!.discriminator!, parseProduct(o("Acer Veriton X Series desktop (VX2710G) - Intel Core i7, 16GB RAM, 512GB SSD, Windows 11 Pro"), "desktops")!.discriminator!));
+  assert.ok(conflicts(parseProduct(o("Acer Predator PO3-665 Gaming Desktop - Intel Core i5-14400F, 16GB RAM, 512GB SSD, NVIDIA GeForce RTX 5060, Windows 11, Black"), "desktops")!.discriminator!, parseProduct(o("Acer Predator PO3-665 Gaming Desktop - Intel Core i5-14400F, 16GB RAM, 512GB SSD, NVIDIA GeForce RTX 5070, Windows 11, Black"), "desktops")!.discriminator!));
+  // "U7-255H" and "5-235T" are processors: the Dell Pro Micro and the Dell Pro AIO 24 are different computers.
+  assert.notEqual(key("Dell Pro Micro AI Desktop PC - Core Ultra 5-235T 16GB 256GB W11P", "desktops"), key('Dell Pro AIO 24 Gen 5 23.8" FHD AI All-in-One Desktop PC - Core Ultra 5-235T 16GB 512GB W11P', "desktops"));
+  assert.notEqual(key("ASUS NUC 15 Pro Slim Mini PC - Intel Core 7-240H, 16GB RAM, 512GB SSD, Windows 11 Pro - 3 YR ONSITE", "desktops"), key('ASUS ExpertCenter P440 23.8" All-in-One Desktop PC Intel Core 7-240H 16GB 512GB W11P', "desktops"));
+});

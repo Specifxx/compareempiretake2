@@ -15,6 +15,7 @@ import { ShareButton } from "./ShareButton";
 import { closeQuickViewUrl, onQuickViewHistory, openQuickViewUrl } from "@/lib/quick-view-url";
 import { shareText } from "@/lib/share-link";
 import { RETAILERS } from "@/lib/retailers";
+import { RegionTag } from "./RegionTag";
 
 interface Head {
   href: string;
@@ -162,7 +163,7 @@ export function QuickView() {
 }
 
 function Prices({ phone, href, vid, setVid }: { phone: Phone; href: string; vid: string | null; setVid: (v: string) => void }) {
-  const { $ } = useRegionKit();
+  const { $, R, region } = useRegionKit();
   const variant = phone.variants.find((v) => v.id === vid) ?? defaultVariant(phone);
   const rows = groupByRetailer(variant.offers.filter((o) => o.kind !== "plan"));
   const plans = new Set(variant.offers.filter((o) => o.kind === "plan").map((o) => o.retailer)).size;
@@ -180,12 +181,15 @@ function Prices({ phone, href, vid, setVid }: { phone: Phone; href: string; vid:
               className={`rounded-xl border px-3 py-1.5 text-left transition ${v.id === variant.id ? "border-brand bg-brand-soft" : "border-line bg-bg-card hover:border-ink/25"}`}
             >
               <div className={`text-sm font-semibold ${v.id === variant.id ? "text-brand" : ""}`}>{v.label}</div>
-              <div className="text-xs text-ink-mute">from {$(v.bestPrice)}</div>
+              <div className="text-xs text-ink-mute">from {$(v.bestPrice)} {R.currency}</div>
             </button>
           ))}
         </div>
       )}
-      <h3 className="mb-3 text-sm font-semibold">Every store&apos;s price</h3>
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <h3 className="text-sm font-semibold">Every store&apos;s price</h3>
+        <RegionTag region={region} tax />
+      </div>
       <PinnedMarketplaces phone={phone} variantQuery={mq} product={href} cheapest={best?.price} compact />
       {rows.length ? (
         <ol className="space-y-2.5">

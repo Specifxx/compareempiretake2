@@ -8,14 +8,11 @@
  * doesn't matter. Two stores describing a product differently stay apart;
  * that's deliberate (see match.ts).
  */
+import { COLOURS } from "./colours";
 import { storageLabel } from "./normalize";
 import type { CategoryId, RawOffer, Specs } from "./types";
 import type { Parsed } from "./match";
 
-const COLOURS =
-  "black white silver grey gray blue red green pink purple gold rose midnight starlight graphite navy cream sand beige natural jet space slate ink plum lavender mint coral orange yellow teal sage blush cobalt onyx arctic sky light dark deep matte platinum champagne bronze copper charcoal stone moss olive ivory pearl peach smoke frost ash cloud ocean desert storm phantom carbon lilac violet lime ruby burgundy espresso mocha".split(
-    " ",
-  );
 const COLOUR_RE = new RegExp(`\\b(${COLOURS.join("|")})\\b`, "gi");
 
 const COMMON_NOISE = "new genuine au aus australian stock version model with and the for in of by plus+ - | / & latest 2024 2025 2026 2027 inc incl including".split(" ");
@@ -31,7 +28,7 @@ const NOISE: Partial<Record<CategoryId, string[]>> = {
   drones: "drone camera quadcopter".split(" "),
   smartwatches: "smartwatch smart watch fitness tracker gps cellular lte bluetooth wi-fi wifi case band sport loop solo braided milanese link bracelet trail alpine ocean m/l s/m sm ml".split(" "),
   ssds: "ssd nvme m.2 m2 pcie gen4 gen5 gen3 internal solid state drive 2280 read write speeds up to mb/s gb/s storage".split(" "),
-  ram: "memory ram desktop kit dimm module modules".split(" "),
+  ram: "memory ram desktop kit dimm module modules technology expo xmp expo/xmp dual quad channel".split(" "),
   motherboards: "motherboard mainboard socket".split(" "),
   printers: "printer multifunction wireless colour color inkjet laser mono".split(" "),
   routers: "router wireless dual-band tri-band quad-band gigabit system mesh wifi wi-fi".split(" "),
@@ -66,19 +63,60 @@ const keyOf = (...parts: (string | number | undefined)[]) =>
     .replace(/\+/g, " plus ")
     .replace(/[^a-z0-9]+/g, "");
 
-/** Colour from a trailing " - Colour" or "(Colour)", when it reads like a colour. */
-function splitColour(t: string): { rest: string; colour: string } {
-  const m = t.match(/\s[-–]\s([^()\-–]+)$/) ?? t.match(/\(([^()]+)\)\s*$/);
-  if (m && COLOUR_RE.test(m[1]) && m[1].split(/\s+/).length <= 4) {
-    COLOUR_RE.lastIndex = 0;
-    return { rest: t.slice(0, m.index).trim(), colour: m[1].trim() };
-  }
+/**
+ * Words that describe the product, not its colour, however a store packs them into the colour slot: a trailing
+ * "(2nd Gen, Black)", "- Wireless Gaming Headset Black" or "- Monterey Blue 1TB" used to parse as one colour, so
+ * the 2nd Gen joined the 1st, the wireless headset the wired one and the 1TB drive the 2TB (2026-11-06).
+ */
+const NOT_COLOUR = /\d|^(wireless|wired|gen|generation|edition|pack|bundle|kit|with|headset|headphones?|earbuds?|earphones?|cellular|wifi|wi-fi|lte|gps|esim|hood|gas|lpg|propane|natural|amps?|volt|new|refurbished)$/i;
+const isColourWord = (w: string) => {
   COLOUR_RE.lastIndex = 0;
-  return { rest: t, colour: "" };
+  const hit = COLOUR_RE.test(w);
+  COLOUR_RE.lastIndex = 0;
+  return hit;
+};
+
+/**
+ * Colour from a trailing " - Colour" or "(Colour)", when it reads like a colour. `rest` is the title without the
+ * colour (what identifies the product); `name` is the title without the whole trailing slot, for the display name.
+ */
+function splitColour(t: string): { rest: string; colour: string; name: string } {
+  const m = t.match(/\s[-–]\s([^()\-–]+)$/) ?? t.match(/\(([^()]+)\)\s*$/);
+  if (!m) return { rest: t, colour: "", name: t };
+  const before = t.slice(0, m.index).trim();
+  // "Gozney - Arc XL Pizza Oven": a store that writes "Brand - Model" leaves nothing before the dash; the slot is
+  // the whole product, never a colour.
+  if (!before) return { rest: t, colour: "", name: t };
+  // The display name (and so the product's URL) follows the rule in force before 2026-11-06: a slot of up to four
+  // words holding a colour word is cut off, anything else stays. Only `rest` (identity) and `colour` read the slot
+  // more carefully below, so a wider split never moves a page.
+  const oldCut = COLOUR_RE.test(m[1]) && m[1].trim().split(/\s+/).length <= 4;
+  COLOUR_RE.lastIndex = 0;
+  const name = oldCut ? before : t;
+  // "(64GB, Arctic White)", "(2nd Gen, Black)": the colour is the last comma segment; the rest stays identity.
+  const segments = m[1].split(/\s*,\s*/).map((x) => x.trim()).filter(Boolean);
+  const last = segments.pop() ?? "";
+  const words = last.split(/\s+/).filter(Boolean);
+  // "Monterey Blue 1TB": a capacity or size in the colour slot goes back to the identity; the colour words stay.
+  const figures = words.filter((w) => /\d/.test(w));
+  const specs = words.filter((w) => !/\d/.test(w) && NOT_COLOUR.test(w));
+  const plain = words.filter((w) => !/\d/.test(w) && !NOT_COLOUR.test(w));
+  // Four words at most, figures included: "Chestnut C3S Hand Grinder Black" is a product, not a colour.
+  if (!specs.length && plain.length && words.length <= 4 && plain.some(isColourWord)) {
+    return { rest: [before, ...segments, ...figures].join(" ").trim(), colour: plain.join(" "), name };
+  }
+  // "Wireless Gaming Headset Black": a product word in the slot means only the trailing colour words are the colour.
+  let i = plain.length;
+  while (i > 0 && isColourWord(plain[i - 1])) i--;
+  if (specs.length && i < plain.length) {
+    return { rest: [before, ...segments, ...figures, ...specs, ...plain.slice(0, i)].join(" ").trim(), colour: plain.slice(i).join(" "), name };
+  }
+  return { rest: t, colour: "", name };
 }
 
 function identity(t: string, brand: string, category: CategoryId, drop: RegExp[] = []): string[] {
-  let s = t.toLowerCase();
+  // "2nd Generation" and "2nd Gen" are one edition.
+  let s = t.toLowerCase().replace(/\bgeneration\b/g, "gen");
   for (const re of drop) s = s.replace(re, " ");
   s = s.replace(new RegExp(`\\b${brand.toLowerCase().replace(/[^a-z0-9 ]/g, "")}\\b`, "g"), " ").replace(COLOUR_RE, " ");
   COLOUR_RE.lastIndex = 0;
@@ -106,7 +144,8 @@ const CPU_RE =
 export function cpuModel(t: string): { brand: string; family: string; model: string } | undefined {
   const m = t.match(CPU_RE);
   if (!m) return undefined;
-  if (m[1]) return { brand: "AMD", family: `Ryzen ${m[2]}`, model: m[3].toUpperCase() };
+  // "Ryzen 5 PRO 8500G" is a different part from the "Ryzen 5 8500G" (2026-11-06).
+  if (m[1]) return { brand: "AMD", family: `Ryzen ${m[2]}${/\bPRO\s+\d{4}/i.test(m[0]) && !/pro/i.test(m[2]) ? " PRO" : ""}`, model: m[3].toUpperCase() };
   if (m[4]) return { brand: "Intel", family: `Core ${m[4].replace(/\s+/, " ")}`.replace(/ultra/i, "Ultra"), model: m[5].toUpperCase() };
   if (m[6]) return { brand: "Intel", family: `Core ${m[6].toLowerCase()}`, model: m[7].toUpperCase() };
   return { brand: /athlon/i.test(m[8]) ? "AMD" : "Intel", family: m[8], model: m[9].toUpperCase() };
@@ -189,8 +228,17 @@ const strongCode = (t: string) =>
   t
     .split(/[\s(),/[\]]+/)
     .map((w) => w.replace(/^[-–.]+|[-–.:;]+$/g, "").toUpperCase())
-    .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !/^\d+(\.\d+)?(GB|TB|MHZ|HZ|MM|W|MAH|P|L|KG|LITRES?|RPM|BAR|PSI|STAR)$/.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d)/.test(w) && !COMPONENT_CODE.test(w) && !/^(BE|AXE?|AC)\d{3,5}$/.test(w))
+    .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !UNIT_FIGURE.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d|802\.11)/.test(w) && !COMPONENT_CODE.test(w) && !CPU_LIKE.test(w) && !/^(BE|AXE?|AC)\d{3,5}$/.test(w))
     .sort((a, b) => b.length - a.length)[0];
+
+/**
+ * A figure with a unit is never a model code: "300ML" merged every 300 ml moka pot, "10-CUP" every 10-cup coffee
+ * maker and "30-INCH" every 30" grill of a brand (2026-11-06).
+ */
+const UNIT_FIGURE =
+  /^\d+(\.\d+)?-?(GB|TB|MB|MHZ|GHZ|HZ|MM|CM|M|KM|IN|INCH|FT|W|KW|V|A|AMPS?|MAH|P|L|LTR|ML|CL|KG|G|LBS?|OZ|LITRES?|LITERS?|RPM|BAR|PSI|STAR|CUPS?|PK|PACK|PCS?|PIECES?|BTU|DB|K|X|PORTS?|SLOTS?|CORES?|CH|BIT|ZONE|PLACE|SETTINGS?|BURNERS?|DOOR|SPEEDS?|SEAT|TRAYS?|YEARS?|YRS?|MONTHS?|DAYS?|HRS?|MINS?|SEC|S|H|TH|ND|RD|ST|D|IN-\d)$/;
+/** A processor's model ("U7-255H", "5-235T", "7-240H") names the chip, not the computer it sits in. */
+const CPU_LIKE = /^[A-Z]?\d-\d{3,5}[A-Z]{0,3}$/;
 
 const APPLIANCES = new Set<CategoryId>(["vacuums", "air-fryers", "coffee-machines", "fridges", "washing-machines", "dishwashers", "hair-care", "small-kitchen", "bbqs", "coffee-gear"]);
 
@@ -250,12 +298,15 @@ export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOff
   const t0 = clean(APPLIANCES.has(category) ? o.title.replace(/[®™©]/g, "") : o.title);
   const brand = brandOf(o, t0) ?? (category === "consoles" ? consoleMaker(t0) : undefined);
   if (!brand) return null;
-  const { rest, colour } = splitColour(t0);
+  const { rest, colour, name } = splitColour(t0);
   if (category === "ram") {
     const sig = ramSignature(rest);
     const code = o.mpn && o.mpn.length >= 6 ? o.mpn.toUpperCase().replace(/[^A-Z0-9]/g, "") : undefined;
     if (!sig && !code) return null;
-    return { brand, model: display(rest, brand), key: keyOf(brand, code ?? sig), variant: STD, colour, discriminator: sig ?? "" };
+    // Without a part number the spec alone is not the product: Vengeance LPX, Vengeance RGB and Dominator
+    // Platinum are all "32GB 2x16 DDR5 6000 CL30" at three prices, so the line's words join the key (2026-11-06).
+    const line = code ? [] : identity(rest, brand, category).filter((w) => w.length >= 3 && !/^\d/.test(w) && !/^(ddr\d|cl\d+|c\d{2}|pc\d-\d+\w*|mhz|mt\/s)$/.test(w));
+    return { brand, model: display(name, brand), key: keyOf(brand, code ?? sig, ...line), variant: STD, colour, discriminator: sig ?? "" };
   }
   const v = variantFor(category, rest);
   const stated = o.mpn && o.mpn.length >= 5 && !COMPONENT_CODE.test(o.mpn.replace(/\s+/g, "")) ? o.mpn.toUpperCase() : undefined;
@@ -267,10 +318,10 @@ export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOff
     brand,
     model: display(
       category === "smartwatches"
-        ? rest.replace(/\b\d{2}\s?mm\b.*$/i, "").trim() || rest
+        ? name.replace(/\b\d{2}\s?mm\b.*$/i, "").trim() || name
         : v.storageGb
-          ? rest.replace(/\s*\b\d+(?:\.\d+)?\s?(GB|TB)\b/gi, "").replace(/\s{2,}/g, " ").trim()
-          : rest,
+          ? name.replace(/\s*\b\d+(?:\.\d+)?\s?(GB|TB)\b/gi, "").replace(/\s{2,}/g, " ").trim()
+          : name,
       brand,
       APPLIANCES.has(category),
     ),
@@ -279,7 +330,32 @@ export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOff
     variant: { id: v.id, label: v.label, storageGb: v.storageGb },
     colour,
     code,
+    discriminator: discriminatorFor(category, rest, code),
   };
+}
+
+/**
+ * What must agree inside one group, beyond the key. Empty when the title doesn't say; two listings that both say
+ * and differ are split by the catalogue build (`conflicts`).
+ */
+function discriminatorFor(category: CategoryId, t: string, code: string | undefined): string | undefined {
+  if (category === "headphones") {
+    // Bose QuietComfort Headphones and QuietComfort Earbuds share every identity word (2026-11-06).
+    return /\b(earbuds?|earphones?|in-ear|buds|tws|true wireless)\b/i.test(t) ? "earbuds" : /\b(headphones?|headset|over-ear|on-ear)\b/i.test(t) ? "headphones" : "";
+  }
+  if (category === "bbqs") {
+    // Weber's codes repeat across lines (Spirit E-425, Genesis E-425) and fuels (LPG, natural gas): the word
+    // before the code is the line, and the fuel must agree (2026-11-06).
+    const fuel = /\bnatural gas\b|\bNG\b/i.test(t) ? "ng" : /\b(U?LPG|LP|propane)\b/i.test(t) ? "lpg" : "";
+    let line = "";
+    if (code) {
+      const at = t.toUpperCase().indexOf(code.toUpperCase());
+      const before = at > 0 ? t.slice(0, at).trim().split(/\s+/).filter((w) => /^[a-z]+$/i.test(w)) : [];
+      line = before.at(-1)?.toLowerCase() ?? "";
+    }
+    return [fuel, line].join("|");
+  }
+  return undefined;
 }
 
 function consoleMaker(t: string): string | undefined {

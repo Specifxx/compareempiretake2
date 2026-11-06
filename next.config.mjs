@@ -45,6 +45,15 @@ const nextConfig = {
       ["/us/tablets/apple-ipad-mini-8-3-a17-pro", "/us/tablets/apple-ipad-mini-a17-pro"],
       ["/us/tablets/apple-ipad-mini-with-8-3-a17-pro", "/us/tablets/apple-ipad-mini-a17-pro"],
       ["/us/tablets/microsoft-surface-go-3-tablet-intel-core-i3-10100y-with", "/us/tablets/microsoft-surface-go-3-tablet-intel-core-i3-10100y"],
+      // 2026-11-06 (storage, bundle and edition merges): the pages the stricter matcher moved. The Galaxy A16 page held
+      // the 4G and 5G phones; the Bose page held both SoundLink Flex generations (the 2nd Gen kept most stores); the
+      // HyperX and Tefal pages gained a store and took the shorter name.
+      ["/phones/samsung-galaxy-a16", "/phones/samsung-galaxy-a16-4g"],
+      ["/uk/phones/samsung-galaxy-a16", "/uk/phones/samsung-galaxy-a16-4g"],
+      ["/us/speakers/bose-soundlink-flex-portable-speaker", "/us/speakers/bose-soundlink-flex-portable-speaker-2nd-gen"],
+      ["/headphones/hyperx-cloud-iii-gaming-headset", "/headphones/hyperx-cloud-iii"],
+      ["/uk/headphones/hyperx-cloud-iii-gaming-headset", "/uk/headphones/hyperx-cloud-iii"],
+      ["/air-fryers/tefal-easy-fry-grill-and-steam-xxl-3-in-1-air-fryer-fw2018", "/air-fryers/tefal-easy-fry-grill-steam-xxl-air-fryer"],
     ];
     // The root became the US home on 2026-11-01 (Australia's moved to /au), so the old US home redirects to it.
     // Brand slugs minted from an undecoded store title ("Bowers &amp; Wilkins", 2026-11-05); product URLs with the
