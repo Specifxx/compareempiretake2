@@ -83,7 +83,10 @@ test("every store row link goes through storeLink", () => {
   }
 });
 
-test("the daily workflow runs the Awin sync with its secret", () => {
-  const wf = readFileSync(".github/workflows/refresh-prices.yml", "utf8");
+test("the Awin job reads the account with its secret and never deploys", () => {
+  const wf = readFileSync(".github/workflows/awin-sync.yml", "utf8");
   assert.match(wf, /AWIN_API_TOKEN: \$\{\{ secrets\.AWIN_API_TOKEN \}\}\n\s+run: npx tsx scripts\/awin-sync\.ts/);
+  assert.match(wf, /workflow_dispatch/);
+  assert.doesNotMatch(wf, /\[deploy\]|\[urgent\]/i);
+  assert.match(wf, /git add data\/awin\n/);
 });

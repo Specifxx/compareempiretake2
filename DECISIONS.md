@@ -1314,7 +1314,8 @@ category outside the store's range is never enabled on a count alone.
 ## 2026-11-06 — Awin: an accepted store pays from the next morning, on every site, with no step by hand
 
 **Decision (owner: "check if we are making the most of Awin, and if it's not there, just do it"):** the Awin publisher
-account (Compare Empire, 3144410) is read every morning by `scripts/awin-sync.ts` (secret `AWIN_API_TOKEN`), which writes
+account (Compare Empire, 3144410) is read every day by `scripts/awin-sync.ts` in its own job, *Awin programmes*
+(`awin-sync.yml`, 17:40 UTC or on demand, secret `AWIN_API_TOKEN`, commit without `[deploy]`), which writes
 the programmes that accepted us, with their tracked domains, to `data/awin/programmes.json`. Every link to a store's own
 page goes through `storeLink` (`src/lib/store-links.ts`): when its host is a joined advertiser's domain it becomes an Awin
 deep link (`awinmid`, `awinaffid=3144410`, `clickref=ce-<placement>`, `ued=<the same page>`), rel "sponsored", marked

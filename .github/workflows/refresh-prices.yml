@@ -23,13 +23,6 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      # Awin programmes that accepted us (scripts/awin-sync.ts): every store link to one becomes a tracked deep link,
-      # here and, through the committed data/awin/programmes.json, on every sister site. A no-op until the secret exists.
-      - name: Awin programmes
-        continue-on-error: true
-        env:
-          AWIN_API_TOKEN: ${{ secrets.AWIN_API_TOKEN }}
-        run: npx tsx scripts/awin-sync.ts
       - name: Scrape phones
         run: npm run scrape
       - name: Scrape tablets, laptops, monitors, graphics cards and TVs
