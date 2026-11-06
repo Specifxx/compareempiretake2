@@ -9,11 +9,12 @@
  * the site keeps its "Check price on Amazon" row. Limits: 1 request a second and 8,640 a day at first, then
  * scaled by shipped revenue; one call is one request however many ASINs it carries (getItems takes ten).
  *
- * Credentials: AMAZON_CREATORS_AU_CLIENT_ID / _CLIENT_SECRET / _VERSION, GitHub secrets and Vercel variables,
- * never in the repo. ONE credential serves every marketplace (2026-11-05: the US account was approved; a
- * credential is global, access is per marketplace and opens when that store's account has qualifying sales),
- * so the AU-named variables are the default for the US and UK too; AMAZON_CREATORS_US_* / _UK_* override
- * them if Amazon ever issues a separate one. The version (3.1 NA, 3.2 EU, 3.3 FE) is printed beside the
+ * Credentials: AMAZON_CREATORS_<AU|US|UK|CA>_CLIENT_ID / _CLIENT_SECRET / _VERSION, GitHub secrets and Vercel
+ * variables, never in the repo. A credential is linked to the Associates account that created it: the AU one
+ * answers every US and UK call with 400 InvalidAssociate ("Your credential is not linked to the partner tag",
+ * 2026-11-06), so each country needs its own credential, made in that country's Associates Central
+ * (affiliate-program.amazon.com for the US, version 3.1). The AU variables remain the fallback, and a market
+ * they cannot serve ends quietly as "refused" with the reason on /admin. The version (3.1 NA, 3.2 EU, 3.3 FE) is printed beside the
  * credential and picks the Login with Amazon token endpoint.
  * Docs: https://affiliate-program.amazon.com/creatorsapi/docs/en-us/get-started/using-curl
  */
@@ -91,6 +92,9 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 export class AmazonRefused extends Error {}
 
+/** Amazon's answer when the credential is not linked to this marketplace's tag (another country's account). */
+export const isWrongAccount = (body: string) => /InvalidAssociate|not linked to the partner tag/i.test(body);
+
 /** A signed-in caller for one market: one request a second, stops on 401/403/429 (access closed or limit hit). */
 export async function creatorsClient(market: AmazonMarket, tag: string, creds: Credentials) {
   const tok = await fetch(tokenEndpoint(creds.version, market), {
@@ -111,7 +115,13 @@ export async function creatorsClient(market: AmazonMarket, tag: string, creds: C
     });
     await sleep(1100);
     if (res.status === 401 || res.status === 403 || res.status === 429) throw new AmazonRefused(`${op} ${res.status} ${(await res.text()).slice(0, 160)}`);
-    if (!res.ok) throw new Error(`${op} ${res.status} ${(await res.text()).slice(0, 160)}`);
+    if (!res.ok) {
+      const text = (await res.text()).slice(0, 160);
+      // 400 InvalidAssociate: the credential belongs to another country's Associates account than this store's
+      // tag (2026-11-06: the AU credential refused every US and UK call). Every call would fail the same way.
+      if (isWrongAccount(text)) throw new AmazonRefused(`${op} ${res.status} ${text}`);
+      throw new Error(`${op} ${res.status} ${text}`);
+    }
     return itemsOf((await res.json()) as Body);
   }
   return { call, calls: () => calls };

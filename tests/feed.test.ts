@@ -65,3 +65,30 @@ test("a feed store exports no scrapers until its secret exists", () => {
   assert.deepEqual(Object.keys(feedStore({ retailer: "officeworks", env: "FEED_URL_TEST", currency: "AUD", cats: ["tvs", "laptops"] })), ["tvs", "laptops"]);
   delete process.env.FEED_URL_TEST;
 });
+
+test("Awin: a joined chain's feed is found from the one datafeed key, with our columns", async () => {
+  const { awinAdvertiser, awinFeedLink } = await import("../scripts/scrapers/feed");
+  const joined = [{ id: 1599, domains: ["currys.co.uk", "pcworld.co.uk"] }, { id: 7, domains: ["ao.com"] }];
+  assert.equal(awinAdvertiser("currys.co.uk", joined), 1599);
+  assert.equal(awinAdvertiser("www.ao.com", joined), 7);
+  assert.equal(awinAdvertiser("argos.co.uk", joined), undefined);
+  assert.equal(awinAdvertiser(undefined, joined), undefined);
+  const list = [
+    `"Advertiser ID","Advertiser Name","Primary Region","Membership Status","Feed ID","Feed Name","Language","Vertical","Last Imported","Last Checked","No of products","URL"`,
+    `"1599","Currys","GB","active","111","Currys small","en","Electronics","","","200","https://productdata.awin.com/datafeed/download/apikey/K/language/en/fid/111/columns/aw_deep_link,product_name/format/csv/delimiter/%2C/compression/gzip/"`,
+    `"1599","Currys","GB","active","222","Currys main","en","Electronics","","","90000","https://productdata.awin.com/datafeed/download/apikey/K/language/en/fid/222/columns/aw_deep_link,product_name/format/csv/delimiter/%2C/compression/gzip/"`,
+    `"7","AO","GB","not joined","333","AO","en","Electronics","","","5000",""`,
+  ].join("\n");
+  const link = awinFeedLink(list, 1599, "K");
+  assert.match(link!, /\/fid\/222\//);
+  assert.match(link!, /\/columns\/aw_deep_link,product_name,aw_product_id,.*,brand_name,ean,mpn,model_number,in_stock,condition\/format\/csv/);
+  assert.equal(awinFeedLink(list, 7, "K"), undefined, "a feed of an advertiser we have not joined is never read");
+  assert.equal(awinFeedLink(list, 42, "K"), undefined);
+});
+
+test("a feed-gated store stays off with neither its secret nor an Awin membership", () => {
+  delete process.env.FEED_URL_UK_CURRYS;
+  process.env.AWIN_DATAFEED_KEY = "K";
+  assert.deepEqual(feedStore({ retailer: "uk-currys", env: "FEED_URL_UK_CURRYS", currency: "GBP", cats: ["tvs"] }), {});
+  delete process.env.AWIN_DATAFEED_KEY;
+});
