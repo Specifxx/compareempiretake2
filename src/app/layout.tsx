@@ -8,6 +8,7 @@ import { CompareTray } from "@/components/CompareTray";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { RateCard } from "@/components/site-reviews/RateCard";
 import { QuickView } from "@/components/QuickView";
+import { SideRails } from "@/components/SideRails";
 import { RegionNotice } from "@/components/RegionNotice";
 import { activeCategories, categoryHref, getBrands, liveRegions } from "@/lib/catalog";
 import { REGION_BOOT_SCRIPT, type RegionId } from "@/lib/region";
@@ -140,6 +141,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <FeedbackWidget />
         {/* Rate us (owner, 2026-11-03): the corner card, asking only after real use; RiftCompare keeps the ratings. */}
         <RateCard />
+        {/* eBay and Amazon side rails from 1280px, the eBay tiles in the phone dock below: browser only (components/SideRails.tsx). */}
+        <SideRails />
         <SiteAnalytics />
         <ShareArrival />
       </body>

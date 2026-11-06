@@ -1581,3 +1581,32 @@ same in every site (port fixes by hand): `src/lib/cart-list.ts`, `src/components
 one per-site file; styles imported once from the root layout), `tests/cart-list.test.ts`.
 
 - 2026-11-06 14:15 UTC: owner chose an urgent release of the 12:42 data commit (e06a5114: US phones 15 to 43, new US stores from rounds 22/23 and the Samsung, Google Store and Motorola readers), second production build today.
+## 2026-11-06 — Side rails: eBay left, Amazon right, and the phone dock
+
+Owner: "the eBay and TCGplayer ads, but instead of the TCGplayer ad, we have the Amazon ad banner that's scrollable … on
+KaeYoung … Compare Empire and ScentCompare … and CamCompare, just like we did for DexCompare and MTG Compare … RiftCompare
+and the card engine."
+
+- **Rails** (`components/SideRails.tsx`, mounted once in the root layout): eBay down the far left of the screen, Amazon down
+  the far right, outside the page's column, up to ten tiles each that scroll inside the rail. From **1280px** like the
+  sisters: below 1600px `main .container-x` and `footer .container-x` give up 160px a side (globals.css), from 1600px the
+  column is its full 80rem and the rails sit just outside it. The header keeps its full width. Fixed under the sticky
+  header (measured), clear of the feedback button. Tiles come from one static JSON per region (`/rails/<region>`,
+  force-static, `lib/side-rails.ts`), fetched after hydration: nothing in a page's HTML, no function, no SEO change.
+- **eBay tiles**: the daily eBay job's own listings (photo + delivered price) for the most-compared products, taken a
+  category at a time (phones, TVs, laptops, headphones…) so a rail is not all phones; where there are too few (Canada and
+  Singapore, which the job does not search yet) the rest are exact-name eBay searches with no price. customid
+  `ce-<region>-side-ebay-<category>`.
+- **Amazon tiles have no price**: the Creators API refuses us until each account has 10 qualifying sales in 30 days, and
+  Amazon's licence forbids keeping a price, so a file served for a day may not carry one. Each links to Amazon's page of the
+  item when `data/amazon/asins-<region>.json` holds its ASIN, else an exact product-name search; ascsubtag
+  `ce-<region>-side-amazon-<category>`. No Amazon rail in Singapore (no Associates programme).
+- **Phone dock** (`components/AdDock.tsx`, from DexCompare / WargameCompare): below 1280px the eBay tiles with a price in a
+  64px bar at the foot of the screen, after 60% of a screen is scrolled, hidden beside the footer, the rating card, the
+  compare tray, a dialog or the keyboard, never on a product page (`data-no-dock`: its eBay and Amazon rows are the unit
+  there), ✕ for the visit; the feedback button rides above it. **Never Amazon**: the Operating Agreement allows no Amazon
+  link in an overlay. customid `ce-<region>-dock-ebay-<category>`.
+
+No extra deploy: it ships with the next daily data release (each deploy re-renders the product pages).
+**Measure** with the sisters' ~11-10 / ~11-17 checks (EPN customid, Amazon ascsubtag). If pages per visit drop on phones,
+drop the dock first.
