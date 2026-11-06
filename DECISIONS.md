@@ -1610,3 +1610,4 @@ and the card engine."
 No extra deploy: it ships with the next daily data release (each deploy re-renders the product pages).
 **Measure** with the sisters' ~11-10 / ~11-17 checks (EPN customid, Amazon ascsubtag). If pages per visit drop on phones,
 drop the dock first.
+- 2026-11-06 15:20 UTC: a53c1412 failed on Vercel after 4 minutes (log not readable from the session); the same commit builds locally (2,110 pages, ~6.5 GB peak), so one retry of the owner-approved release.
