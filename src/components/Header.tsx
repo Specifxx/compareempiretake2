@@ -10,6 +10,7 @@ import { saved } from "@/lib/store";
 import { HOME_PATH, isNeutralPath, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { rememberRegion, useRegion } from "@/lib/use-region";
 import { Flag } from "./Flag";
+import { CartHeaderLink } from "./cart/CartHeaderLink";
 
 const AU_NAV = [
   { href: "/deals", label: "Deals" },
@@ -64,7 +65,7 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
     <>
       <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/80 backdrop-blur-xl">
         <div className="container-x flex h-16 items-center gap-1.5 sm:gap-4">
-          <Logo />
+          <Logo wordmark="hidden min-[480px]:inline" />
           <button
             onClick={() => setMega((m) => !m)}
             aria-expanded={mega}
@@ -95,6 +96,8 @@ export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepa
               <span className="absolute right-1 top-1 grid h-4 min-w-4 place-items-center rounded-full bg-hot px-1 text-[10px] font-bold text-white">{savedList.length}</span>
             )}
           </Link>
+          {/* The cart list (components/cart, owner 2026-11-06): every width, with its count. */}
+          <CartHeaderLink className="shrink-0 text-ink-soft hover:text-ink" />
           {regions.length > 1 && <RegionSwitcher regions={regions} nav={nav} />}
           <ThemeToggle />
           <button className="grid h-10 w-10 shrink-0 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu">

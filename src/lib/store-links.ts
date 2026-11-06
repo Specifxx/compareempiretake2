@@ -12,3 +12,22 @@ export function storeLink(url: string, placement: string): { href: string; rel: 
   const tracked = awinUrl(url, clickref("ce", placement));
   return tracked ? { href: tracked, rel: PAID_REL, paid: true } : { href: url, rel: STORE_REL, paid: false };
 }
+
+/**
+ * The cart list (components/cart, owner 2026-11-06): the Shopify cart permalink of an in-stock listing whose
+ * link earns nothing, `<shop>[/<locale>]/cart/<variant>:1`, from the `/products/<handle>?variant=<id>` URL the
+ * Shopify reader stores. Null for an Awin store (its tracking runs on its own pages, which a cart skips) and for
+ * any URL not in that shape, which stays a manual line with its own link.
+ */
+export function shopifyCartHref(url: string, inStock: boolean): string | null {
+  if (!inStock || awinUrl(url, "x")) return null;
+  try {
+    const u = new URL(url);
+    const m = u.pathname.match(/^((?:\/[a-z]{2}(?:-[a-z]{2})?)?)\/products\/[^/]+\/?$/i);
+    const v = u.searchParams.get("variant");
+    if (u.protocol !== "https:" || !m || !v || !/^\d{6,20}$/.test(v)) return null;
+    return `${u.origin}${m[1]}/cart/${v}:1`;
+  } catch {
+    return null;
+  }
+}

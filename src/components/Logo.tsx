@@ -23,12 +23,14 @@ export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
   );
 }
 
-export function Logo() {
+/** `wordmark` sets when the name shows: the header hides it on narrow phones, where the search, saved, cart, country
+ *  and menu buttons need the row's width (the link keeps its aria-label). */
+export function Logo({ wordmark = "" }: { wordmark?: string }) {
   const region = useRegion();
   return (
-    <Link prefetch={false} href={HOME_PATH[region]} className="flex items-center gap-2.5" aria-label="Compare Empire home">
+    <Link prefetch={false} href={HOME_PATH[region]} className="flex shrink-0 items-center gap-2.5" aria-label="Compare Empire home">
       <LogoMark />
-      <span className="font-display text-[1.15rem] font-extrabold tracking-tight">
+      <span className={`font-display text-[1.15rem] font-extrabold tracking-tight ${wordmark}`}>
         Compare<span className="text-brand">Empire</span>
       </span>
     </Link>
