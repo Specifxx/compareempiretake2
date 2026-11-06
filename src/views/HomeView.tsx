@@ -139,22 +139,21 @@ export function HomeView({ region }: { region: RegionId }) {
         </div>
       </section>
 
-      {/* The newest guides and posts, high on the page: they're what search engines and readers come back for. */}
-      {region === "au" && (
-        <section className="container-x mt-12">
-          <SectionHead title="Latest from the blog" sub="Our take on the year's big launches, best picks and head-to-heads, with live prices that update each morning." href="/guides" cta="All guides" />
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {getGuides().slice(0, 6).map((g, i) => <GuideCard key={g.slug} g={g} big={i === 0} />)}
-          </div>
-          <ul className="mt-6 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
-            {getGuides().slice(6, 18).map((g) => (
-              <li key={g.slug} className="border-b border-dashed border-line pb-2">
-                <Link prefetch={false} href={`/guides/${g.slug}`} className="font-medium text-ink-soft hover:text-brand">{g.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      {/* The newest guides and posts, high on the page: they're what search engines and readers come back for. Every
+          region since 2026-11-06: posts are written for every country and show the reader's own prices. */}
+      <section className="container-x mt-12">
+        <SectionHead title="Latest from the blog" sub="Our take on the year's big launches, best picks and head-to-heads, with live prices that update each morning." href="/guides" cta="All guides" />
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {getGuides().slice(0, 6).map((g, i) => <GuideCard key={g.slug} g={g} big={i === 0} />)}
+        </div>
+        <ul className="mt-6 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
+          {getGuides().slice(6, 18).map((g) => (
+            <li key={g.slug} className="border-b border-dashed border-line pb-2">
+              <Link prefetch={false} href={`/guides/${g.slug}`} className="font-medium text-ink-soft hover:text-brand">{g.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section className="container-x mt-12">
         <ReviewsSection limit={3} />

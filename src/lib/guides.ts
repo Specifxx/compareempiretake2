@@ -1,7 +1,9 @@
 import "server-only";
 import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
-import { getPhone, getProduct } from "./catalog";
+import { getProduct, getProducts, liveRegions } from "./catalog";
+import { topOptions, topProducts } from "./guide-data";
+import type { RegionId } from "./region";
 import type { CategoryId } from "./types";
 
 /**
@@ -32,9 +34,9 @@ export type GuideSectionId = "best" | "opinion" | "compare" | "stores" | "how-to
 /** The shelves of /guides, in order. Every guide names one in its front matter (`section:`). */
 export const GUIDE_SECTIONS: { id: GuideSectionId; name: string; blurb: string }[] = [
   { id: "best", name: "Best picks", blurb: "What to buy at every budget, ranked from today's prices." },
-  { id: "opinion", name: "Our take", blurb: "Opinion on the year's big launches, with the Australian prices that decide them." },
+  { id: "opinion", name: "Our take", blurb: "Opinion on the year's big launches, with the prices that decide them." },
   { id: "compare", name: "Head to head", blurb: "Two or three products side by side, with each store's price." },
-  { id: "stores", name: "Where to buy", blurb: "Which Australian stores are cheapest, worked out from every price we check." },
+  { id: "stores", name: "Where to buy", blurb: "Which stores are cheapest, worked out from every price we check." },
   { id: "how-to", name: "Buying guides", blurb: "The specs that matter, the ones that don't, and what to pay." },
   { id: "save", name: "Shop smarter", blurb: "Sales, price history, warranties and the tools that save you money." },
 ];
@@ -113,10 +115,21 @@ export function getGuides(): Guide[] {
 
 export const getGuide = (slug: string) => getGuides().find((g) => g.slug === slug);
 
-/** The product whose photo heads a guide: `hero: apple-iphone-17` (a phone) or `hero: tvs/<slug>`. */
+/** Regions to look a guide's products up in, the default (the US) first: one post serves every region (2026-11-06). */
+const LOOKUP: RegionId[] = ["us", "uk", "au", "ca", "sg"];
+const lookup = (ref: string) => {
+  const [cat, slug] = ref.includes("/") ? ref.split("/") : ["phones", ref];
+  for (const r of LOOKUP) {
+    const p = getProduct(cat as CategoryId, slug, r);
+    if (p) return p;
+  }
+  return undefined;
+};
+
+/** The product whose photo heads a guide: `hero: apple-iphone-17` (a phone) or `hero: tvs/<slug>`, in any region. A
+ * comma list names more products for the thumbnail (guidePhotos); the first heads the guide. */
 export function guideHero(g: Guide) {
-  if (!g.hero) return undefined;
-  return g.hero.includes("/") ? getProduct(g.hero.split("/")[0] as CategoryId, g.hero.split("/")[1]) : getPhone(g.hero);
+  return g.hero ? lookup(g.hero.split(",")[0].trim()) : undefined;
 }
 
 /** Up to `n` photographed products a guide is about: its hero, then the products its blocks name. For its thumbnail. */
@@ -124,15 +137,27 @@ export function guideImages(g: Guide, n = 3): string[] {
   return guidePhotos(g, n).map((x) => x.src);
 }
 
-/** guideImages with each photo's product name, for alt text (SEO audit, 2026-11-03). */
+/**
+ * guideImages with each photo's product name, for alt text (SEO audit, 2026-11-03). After the hero and the named
+ * products come the leading rows of the guide's [[top]] tables, in the default region first, so a post built from
+ * ranked tables still gets a three-photo thumbnail.
+ */
 export function guidePhotos(g: Guide, n = 3): { src: string; alt: string }[] {
-  const refs = [g.hero ?? "", ...[...g.body.matchAll(/^\[\[(?:phone|compare|build):([^\]]+)\]\]$/gm)].flatMap((m) => m[1].split(",").map((x) => x.split("|")[0].trim()))];
+  const refs = [...(g.hero ?? "").split(",").map((x) => x.trim()), ...[...g.body.matchAll(/^\[\[(?:phone|compare|build):([^\]]+)\]\]$/gm)].flatMap((m) => m[1].split(",").map((x) => x.split("|")[0].trim()))];
   const out: { src: string; alt: string }[] = [];
-  for (const ref of refs) {
-    if (!ref) continue;
-    const p = ref.includes("/") ? getProduct(ref.split("/")[0] as CategoryId, ref.split("/")[1]) : getPhone(ref);
-    if (p?.image && !out.some((x) => x.src === p.image)) out.push({ src: p.image, alt: p.name });
-    if (out.length >= n) break;
+  const add = (p: { image?: string; name: string } | undefined) => {
+    if (p?.image && out.length < n && !out.some((x) => x.src === p.image || x.alt === p.name)) out.push({ src: p.image, alt: p.name });
+  };
+  for (const ref of refs) if (ref) add(lookup(ref));
+  if (out.length < n) {
+    const live = liveRegions();
+    for (const m of g.body.matchAll(/^\[\[top:([^\]]+)\]\]$/gm)) {
+      const o = topOptions(m[1]);
+      for (const r of LOOKUP.filter((x) => live.includes(x))) {
+        for (const p of topProducts(o.cats.flatMap((c) => getProducts(c, r)), { ...o, n: 3 })) add(p);
+        if (out.length >= n) return out;
+      }
+    }
   }
   return out;
 }

@@ -83,3 +83,10 @@ one page of 48 (DECISIONS 2026-10-26, "No prerendered page carries a catalogue")
 - **`/api/products`** is a new function: one invocation per distinct query per CDN region per deploy
   (`Vercel-CDN-Cache-Control: s-maxage=86400`). Only `/compare` and `/saved` call it, and `robots.txt`
   disallows `/api/`. If it ever shows up as a real share of invocations, look at the query mix first.
+
+## 2026-11-06: IndexNow only for the sitemap tier
+
+IndexNow had been submitting ~9,700 product URLs a day, right after each daily deploy (an empty CDN), to four engines.
+It now sends only changed products in the sitemap tier (~1,100). DECISIONS 2026-11-06. Each extra production deploy
+still empties the CDN for every product URL, so one release a day remains the biggest lever: ship urgent releases only
+when the owner asks.

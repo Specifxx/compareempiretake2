@@ -1373,6 +1373,79 @@ and the header switcher, sitemap, hreflang and the region boot script name a reg
 - **Stores.** `docs/stores/canada-singapore.md`: 21 Canadian and 17 Singapore stores read directly, own-trade
   categories only, and feed slots for the big chains, which open when the owner's network approvals land.
 
+## 2026-11-06 — IndexNow sends only the sitemap tier
+
+**Decision (owner: "Compare Empire is still taking a lot of cost … find a way to reduce the cost"):** `scripts/indexnow.ts`
+submits the hub pages plus only those changed products that are in the sitemap (`productInSitemap`: 3+ stores, in stock),
+not every product whose best price moved. Today's data: 9,734 URLs a day becomes 1,135.
+
+**Why:** IndexNow shares each URL with Bing, Yandex, Seznam and Naver, and they fetch it within minutes of the submission,
+which runs five minutes after the daily `[deploy]` commit, when Vercel's CDN has just been emptied. Every submitted product
+was therefore a server render (and its share card a second one), ~9,700 a day per engine, and most of them were one-store
+pages that ask not to be indexed (2026-11-05, "Thin pages out of the index"), so the crawl bought nothing. Pages outside
+the tier are still found through the sitemap's hubs, the grids and `/browse` at the engines' own pace. Widening the sitemap
+tier (`SITEMAP_MIN_STORES`) widens IndexNow with it.
+## 2026-11-06 — The US is the default region, and one set of posts serves every region
+
+**Owner (Bill, 2026-11-06):** "I want the US to be the default region … unless we can tell that you're from Australia and
+we bring you to Australia" and "make region agnostic blog posts … aim for around 10 … get rid of all the region specific
+ones", because the site was only getting Australian visitors.
+
+**Region:** `REGION_BOOT_SCRIPT` now moves every visitor (never a crawler) to their region's copy of a page, when the page
+lists one as an hreflang alternate: their pick, else their time zone's region (AU, UK, CA, SG when live), else the US.
+This reverses the 2026-11-02 rule that moved only visitors who had picked. URLs, canonicals and hreflang are unchanged;
+crawlers are still never moved, so every regional page stays indexable.
+
+**Posts:** the 73 Australian guides are gone; 11 posts written for every country replace them (TVs, noise-cancelling
+headphones, soundbars, Bluetooth speakers, espresso machines, grinders, gaming monitors, grills and pizza ovens,
+beginner cameras, Black Friday 2026, the sales calendar). `GuideBody` draws each live block and inline price once per
+live region (`.rg-<region>` / `.rgi-<region>`); the boot script sets `html[data-gr]` and CSS shows the reader's, the US
+when unset (what crawlers read). A region whose stores share too few listings for a ranked table gets single-store rows
+("1 store"), and a block with nothing in a region says so in one line. Posts never type a price or a `max=`/`min=`
+(one currency), and their slugs and titles name no country (`tests/guides.test.ts`). `/guides` is now a page of no region.
+
+**Redirects:** every retired guide 301s (`content/guide-redirects.json`, read by `next.config.mjs`) to the new post on
+its topic, else its category's page (the US one where the US has 20+ products in it), else `/guides`. Never let a
+retired guide 404, and never reuse a retired slug.
+## 2026-11-06 — Awin: one datafeed key reads every joined chain's feed
+
+Bill asked for at least 20 stores on the most popular products in the US and UK. Today's catalogue has none: the best
+US phone has 1 store, the best UK phone 3, and outside LEGO no UK product passes 9. In the US and UK those products are
+sold by national chains that wall off every server read, so their affiliate feeds are the only door; the plan is in
+Bill's doc "Compare Empire: US and UK plan to 20 stores". A survey of 60 US and UK power tool shops found 4 readable
+(Coastal Tool, Toolnut, Factory Authorized Outlet, Axminster), so a Power tools category waits on the same feeds and
+is not built yet.
+
+Until now every feed-gated chain needed its own `FEED_URL_*` secret, pasted by hand after each approval (20+ for the UK
+alone). Awin serves all of a publisher's joined feeds under ONE datafeed key, with a public feed list
+(`productdata.awin.com/datafeed/list/apikey/<key>`). So `feedStore` now falls back, when its own secret is missing and
+`AWIN_DATAFEED_KEY` exists, to the store's site in `data/awin/programmes.json` (the daily joined list): a joined
+advertiser's largest active feed is read with our columns (brand, EAN, MPN, stock, currency). An Awin approval now
+switches a chain on the next morning with no step by hand. A `FEED_URL_*` secret still wins; an advertiser not joined
+is never read; rows go through the same title, currency and condition checks as every feed.
+## 2026-11-06 — Every comparable US and UK product in the sitemap
+
+**Owner (Bill, 2026-11-06), from an outside SEO review:** "Include every US product with 2+ stores in the sitemap, and
+noindex the single-store pages", "put each region on its own URL with correct hreflang and canonical tags", and cut the
+templated boilerplate that makes 18K product pages look like scaled content.
+
+**Checked live first (2026-11-06, page source of `/`, `/au`, `/uk`, `/us/tvs`, `/uk/tvs`, `/us/headphones`):** every
+region already has its own URL with a self-canonical and reciprocal hreflang (`/` is the US home, `/us` 301s to it on
+purpose, x-default is the US copy). Nothing to change there. One-store pages were already noindex,follow (2026-11-05).
+
+**Sitemap:** the US, UK, Canada and Singapore now list every indexable product (two or more stores, in stock); Australia
+keeps the three-store tier (`SITEMAP_MIN_STORES` still widens it). Today's data: US 245 → 967, UK 1,671 → 3,265, AU
+unchanged at 2,668. The US catalogue is 18,322 products but 17,297 of them are sold by one store, so the US sitemap
+cannot grow further until stores overlap more (the store-growth thread and the chain feeds). IndexNow keeps the
+three-store tier everywhere (`productInIndexNow`): its burst of renders right after a deploy is the cost the 2026-11-06
+IndexNow entry cut, and the sitemap is read at Google's own pace instead.
+
+**Unique content per product:** the "About" card now says where the price sits in its category in that region ("costs
+less than 64% of the 428 in-stock products in our TVs category in the US … the middle price is $1,297.99") and, from a
+week of history up, how the best price moved over about 30 days (`src/lib/product-facts.ts`). "for this phone" on every
+category's page now names the model. Guides link from product pages in every region (posts are region-agnostic since
+the entry above); the brand chip stays Australian, where brand pages live.
+
 ## 2026-11-06 — Specs that compare: one reading per title, and curated phone sheets
 
 Owner: the compare table was missing processors on laptops and screen, chip, camera and battery on most phones; a US

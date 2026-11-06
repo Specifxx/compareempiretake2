@@ -11,9 +11,11 @@
  * scraped store (`classify` from auto-shopify.ts), one offer per row; a feed priced in another currency is refused,
  * never converted. Links are the network's tracking links, used as given.
  */
+import { readFileSync } from "node:fs";
 import { Readable } from "node:stream";
 import { createGunzip } from "node:zlib";
 import type { CategoryId, RawOffer, RetailerId } from "../../src/lib/types";
+import { RETAILERS } from "../../src/lib/retailers";
 import { decodeEntities } from "../lib/http";
 import { classify } from "./auto-shopify";
 import { setFromTitle } from "./lego";
@@ -229,10 +231,80 @@ async function readFeed(s: FeedStore, url: string): Promise<Map<CategoryId, RawO
   return out;
 }
 
-/** The `scrapers` export of a feed-fed store file: empty until its secret exists. */
+// ---- Awin: one key, every joined chain's feed (2026-11-06) ----
+//
+// Awin publishes a joined advertiser's product feed under the publisher's ONE datafeed key (Toolbox → Create-a-Feed
+// shows it inside every feed link: .../datafeed/download/apikey/<key>/...). With that key as the secret
+// AWIN_DATAFEED_KEY, a feed-gated store whose site is a JOINED advertiser in data/awin/programmes.json (written daily
+// by the Awin programmes job) reads its feed with no secret of its own: an approval switches the store on the next
+// morning, with no step by hand. A FEED_URL_* secret still wins when it exists.
+
+const AWIN_COLUMNS = [
+  "aw_deep_link", "product_name", "aw_product_id", "merchant_product_id", "merchant_image_url", "search_price",
+  "rrp_price", "currency", "brand_name", "ean", "mpn", "model_number", "in_stock", "condition",
+].join(",");
+
+const bare = (h: string) => h.trim().toLowerCase().replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
+
+/** The joined Awin advertiser whose domains include `site` (data/awin/programmes.json), or undefined. Exported for tests. */
+export function awinAdvertiser(site: string | undefined, joined?: { id: number; domains: string[] }[]): number | undefined {
+  if (!site) return undefined;
+  let list = joined;
+  if (!list) {
+    try {
+      list = (JSON.parse(readFileSync(`${process.cwd()}/data/awin/programmes.json`, "utf8")) as { joined?: { id: number; domains: string[] }[] }).joined ?? [];
+    } catch {
+      list = [];
+    }
+  }
+  const want = bare(site);
+  return list.find((p) => p.domains.some((d) => bare(d) === want || bare(d).endsWith(`.${want}`)))?.id;
+}
+
+/**
+ * The download link for an advertiser's feed, from Awin's feed list (CSV, one row per feed of the publisher's joined
+ * advertisers, with a ready download URL). The largest feed wins; our columns replace the list's default ones so
+ * brand, EAN, MPN, stock and currency come with every row. Exported for tests.
+ */
+export function awinFeedLink(listCsv: string, advertiser: number, key: string): string | undefined {
+  const lines = listCsv.split(/\r?\n/).filter((l) => l.trim());
+  if (!lines.length) return undefined;
+  const head = scanDelimited(lines[0], ",").cells.map((h) => h.trim().toLowerCase());
+  const col = (...names: string[]) => head.findIndex((h) => names.includes(h));
+  const [adv, fid, count, url, status] = [col("advertiser id"), col("feed id"), col("no of products", "number of products", "products"), col("url"), col("membership status")];
+  if (adv < 0 || fid < 0) return undefined;
+  const feeds = lines
+    .slice(1)
+    .map((l) => scanDelimited(l, ",").cells)
+    .filter((c) => Number(c[adv]) === advertiser && (status < 0 || /^\s*(active|joined)\s*$/i.test(c[status] ?? "")))
+    .sort((a, b) => Number(b[count] ?? 0) - Number(a[count] ?? 0));
+  const best = feeds[0];
+  if (!best) return undefined;
+  const ready = url >= 0 ? best[url]?.trim() : "";
+  if (ready && /^https:\/\/productdata\.awin\.com\//.test(ready)) {
+    return /\/columns\/[^/]+/.test(ready) ? ready.replace(/\/columns\/[^/]+/, `/columns/${AWIN_COLUMNS}`) : ready.replace(/\/format\//, `/columns/${AWIN_COLUMNS}/format/`);
+  }
+  return `https://productdata.awin.com/datafeed/download/apikey/${key}/language/en/fid/${best[fid]}/columns/${AWIN_COLUMNS}/format/csv/delimiter/%2C/compression/gzip/`;
+}
+
+let awinList: Promise<string> | undefined;
+async function awinUrl(key: string, advertiser: number): Promise<string> {
+  awinList ??= fetch(`https://productdata.awin.com/datafeed/list/apikey/${key}`, { signal: AbortSignal.timeout(60_000) }).then((r) => {
+    if (!r.ok) throw new Error(`Awin feed list ${r.status}`);
+    return r.text();
+  });
+  const link = awinFeedLink(await awinList, advertiser, key);
+  if (!link) throw new Error(`Awin advertiser ${advertiser}: joined, but no feed in the feed list yet`);
+  return link;
+}
+
+/** The `scrapers` export of a feed-fed store file: empty until its secret exists, or its chain has joined us on Awin. */
 export function feedStore(s: FeedStore): Partial<Record<CategoryId, () => Promise<RawOffer[]>>> {
-  const url = process.env[s.env];
-  if (!url) return {};
+  const direct = process.env[s.env];
+  const key = process.env.AWIN_DATAFEED_KEY;
+  const advertiser = !direct && key ? awinAdvertiser(RETAILERS[s.retailer]?.site) : undefined;
+  if (!direct && !advertiser) return {};
+  const url = direct ? Promise.resolve(direct) : awinUrl(key!, advertiser!);
   let all: Promise<Map<CategoryId, RawOffer[]>> | undefined;
-  return Object.fromEntries(s.cats.map((c) => [c, async () => (await (all ??= readFeed(s, url))).get(c) ?? []]));
+  return Object.fromEntries(s.cats.map((c) => [c, async () => (await (all ??= url.then((u) => readFeed(s, u)))).get(c) ?? []]));
 }
