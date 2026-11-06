@@ -1,11 +1,5 @@
 {
- "_about": "Screen (inner screen for foldables), chip and battery from each model's Wikipedia infobox (source), which cites the maker's spec sheet; main camera is the maker's published main-sensor figure. Samsung chips that differ by country name both. A figure we could not confirm is left out, never guessed. Read by src/lib/specs-curated.ts.",
- "ASUS|ROG Phone 6": {
-  "screenInches": 6.78,
-  "chip": "Snapdragon 8+ Gen 1",
-  "batteryMah": 6000,
-  "source": "https://en.wikipedia.org/wiki/ROG_Phone_6"
- },
+ "_about": "Screen (inner screen for foldables), chip and battery from each model's Wikipedia infobox (source), which cites the maker's spec sheet; main camera is the maker's published main-sensor figure. Samsung chips that differ by country name both. A figure we could not confirm is left out, never guessed. The Motorola, OPPO and Galaxy A37 entries come from the maker's own spec page (source) instead. Read by src/lib/specs-curated.ts.",
  "Apple|iPhone 11": {
   "screenInches": 6.1,
   "chip": "A13 Bionic",
@@ -133,8 +127,68 @@
   "mainCameraMp": 48,
   "source": "https://en.wikipedia.org/wiki/IPhone_Duo"
  },
+ "ASUS|ROG Phone 6": {
+  "screenInches": 6.78,
+  "chip": "Snapdragon 8+ Gen 1",
+  "batteryMah": 6000,
+  "source": "https://en.wikipedia.org/wiki/ROG_Phone_6"
+ },
+ "Google|Pixel 10": {
+  "screenInches": 6.3,
+  "chip": "Tensor G5",
+  "batteryMah": 4970,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10"
+ },
+ "Google|Pixel 10 Pro": {
+  "screenInches": 6.3,
+  "chip": "Tensor G5",
+  "batteryMah": 4870,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10_Pro"
+ },
+ "Google|Pixel 10 Pro Fold": {
+  "screenInches": 8,
+  "chip": "Tensor G5",
+  "batteryMah": 5015,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10_Pro_Fold"
+ },
+ "Google|Pixel 10 Pro XL": {
+  "screenInches": 6.8,
+  "chip": "Tensor G5",
+  "batteryMah": 5200,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10_Pro"
+ },
+ "Google|Pixel 10a": {
+  "screenInches": 6.3,
+  "chip": "Tensor G4",
+  "batteryMah": 5100,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10a"
+ },
+ "Google|Pixel 11": {
+  "screenInches": 6.3,
+  "chip": "Tensor G6",
+  "batteryMah": 4985,
+  "source": "https://en.wikipedia.org/wiki/Pixel_11"
+ },
+ "Google|Pixel 11 Pro": {
+  "screenInches": 6.3,
+  "chip": "Tensor G6",
+  "batteryMah": 4850,
+  "source": "https://en.wikipedia.org/wiki/Pixel_11_Pro"
+ },
+ "Google|Pixel 11 Pro Fold": {
+  "screenInches": 8,
+  "chip": "Tensor G6",
+  "batteryMah": 4806,
+  "source": "https://en.wikipedia.org/wiki/Pixel_11_Pro_Fold"
+ },
+ "Google|Pixel 11 Pro XL": {
+  "screenInches": 6.8,
+  "chip": "Tensor G6",
+  "batteryMah": 5115,
+  "source": "https://en.wikipedia.org/wiki/Pixel_11_Pro"
+ },
  "Google|Pixel 5": {
-  "screenInches": 6.0,
+  "screenInches": 6,
   "chip": "Snapdragon 765G",
   "batteryMah": 4080,
   "source": "https://en.wikipedia.org/wiki/Pixel_5"
@@ -181,6 +235,12 @@
   "mainCameraMp": 50,
   "source": "https://en.wikipedia.org/wiki/Pixel_9"
  },
+ "Google|Pixel 9 Pro Fold": {
+  "chip": "Tensor G4",
+  "batteryMah": 4650,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/Pixel_9_Pro_Fold"
+ },
  "Google|Pixel 9 Pro XL": {
   "screenInches": 6.7,
   "chip": "Tensor G4",
@@ -188,71 +248,11 @@
   "mainCameraMp": 50,
   "source": "https://en.wikipedia.org/wiki/Pixel_9"
  },
- "Google|Pixel 9 Pro Fold": {
-  "chip": "Tensor G4",
-  "batteryMah": 4650,
-  "mainCameraMp": 48,
-  "source": "https://en.wikipedia.org/wiki/Pixel_9_Pro_Fold"
- },
  "Google|Pixel 9a": {
   "screenInches": 6.3,
   "chip": "Tensor G4",
   "batteryMah": 5100,
   "source": "https://en.wikipedia.org/wiki/Pixel_9a"
- },
- "Google|Pixel 10": {
-  "screenInches": 6.3,
-  "chip": "Tensor G5",
-  "batteryMah": 4970,
-  "source": "https://en.wikipedia.org/wiki/Pixel_10"
- },
- "Google|Pixel 10 Pro": {
-  "screenInches": 6.3,
-  "chip": "Tensor G5",
-  "batteryMah": 4870,
-  "source": "https://en.wikipedia.org/wiki/Pixel_10_Pro"
- },
- "Google|Pixel 10 Pro XL": {
-  "screenInches": 6.8,
-  "chip": "Tensor G5",
-  "batteryMah": 5200,
-  "source": "https://en.wikipedia.org/wiki/Pixel_10_Pro"
- },
- "Google|Pixel 10 Pro Fold": {
-  "screenInches": 8.0,
-  "chip": "Tensor G5",
-  "batteryMah": 5015,
-  "source": "https://en.wikipedia.org/wiki/Pixel_10_Pro_Fold"
- },
- "Google|Pixel 10a": {
-  "screenInches": 6.3,
-  "chip": "Tensor G4",
-  "batteryMah": 5100,
-  "source": "https://en.wikipedia.org/wiki/Pixel_10a"
- },
- "Google|Pixel 11": {
-  "screenInches": 6.3,
-  "chip": "Tensor G6",
-  "batteryMah": 4985,
-  "source": "https://en.wikipedia.org/wiki/Pixel_11"
- },
- "Google|Pixel 11 Pro": {
-  "screenInches": 6.3,
-  "chip": "Tensor G6",
-  "batteryMah": 4850,
-  "source": "https://en.wikipedia.org/wiki/Pixel_11_Pro"
- },
- "Google|Pixel 11 Pro XL": {
-  "screenInches": 6.8,
-  "chip": "Tensor G6",
-  "batteryMah": 5115,
-  "source": "https://en.wikipedia.org/wiki/Pixel_11_Pro"
- },
- "Google|Pixel 11 Pro Fold": {
-  "screenInches": 8.0,
-  "chip": "Tensor G6",
-  "batteryMah": 4806,
-  "source": "https://en.wikipedia.org/wiki/Pixel_11_Pro_Fold"
  },
  "HMD|Key": {
   "screenInches": 6.52,
@@ -260,13 +260,13 @@
   "batteryMah": 4000,
   "source": "https://en.wikipedia.org/wiki/HMD_Key"
  },
- "HMD|Pulse+": {
+ "HMD|Pulse Pro": {
   "screenInches": 6.65,
   "chip": "Unisoc T606",
   "mainCameraMp": 50,
   "source": "https://en.wikipedia.org/wiki/HMD_Pulse"
  },
- "HMD|Pulse Pro": {
+ "HMD|Pulse+": {
   "screenInches": 6.65,
   "chip": "Unisoc T606",
   "mainCameraMp": 50,
@@ -278,11 +278,118 @@
   "batteryMah": 5600,
   "source": "https://en.wikipedia.org/wiki/Honor_Magic_6_Pro"
  },
+ "Motorola|Edge 50": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 7 Gen 1",
+  "batteryMah": 5000,
+  "source": "https://www.motorola.com/au/en/p/phones/motorola-edge/50/pmipmgx38ml"
+ },
  "Motorola|Edge 50 Neo": {
   "screenInches": 6.4,
   "chip": "Dimensity 7300",
   "batteryMah": 4310,
   "source": "https://en.wikipedia.org/wiki/Motorola_Edge_50_Neo"
+ },
+ "Motorola|Edge 60 Fusion": {
+  "screenInches": 6.7,
+  "chip": "Dimensity 7300",
+  "batteryMah": 5200,
+  "source": "https://www.motorola.com/au/en/p/phones/motorola-edge/60-fusion/pmipmhq40mz"
+ },
+ "Motorola|Edge 70": {
+  "screenInches": 6.67,
+  "chip": "Snapdragon 7 Gen 4",
+  "mainCameraMp": 50,
+  "source": "https://www.motorola.com/au/en/p/phones/motorola-edge/70/pmipmjc43mb"
+ },
+ "Motorola|Edge 70 Fusion": {
+  "screenInches": 6.78,
+  "chip": "Snapdragon 7s Gen 3",
+  "mainCameraMp": 50,
+  "batteryMah": 7000,
+  "source": "https://www.motorola.com/au/en/p/phones/motorola-edge/70-fusion/pmipmjm44md"
+ },
+ "Motorola|moto g05": {
+  "screenInches": 6.7,
+  "chip": "Helio G81",
+  "mainCameraMp": 50,
+  "batteryMah": 5200,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/05/pmipmhk40m8"
+ },
+ "Motorola|moto g06": {
+  "screenInches": 6.88,
+  "mainCameraMp": 50,
+  "batteryMah": 5200,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/06/pmipmhy43m6"
+ },
+ "Motorola|moto g15": {
+  "screenInches": 6.7,
+  "chip": "Helio G81",
+  "mainCameraMp": 50,
+  "batteryMah": 5200,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/moto-g15/pmipmhj40m2"
+ },
+ "Motorola|moto g37": {
+  "chip": "Dimensity 6300",
+  "mainCameraMp": 50,
+  "batteryMah": 5200,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/37/pmipmjs45m2"
+ },
+ "Motorola|moto g55": {
+  "screenInches": 6.49,
+  "chip": "Dimensity 7025",
+  "mainCameraMp": 50,
+  "batteryMah": 5000,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/55-5g/pmipmhf39mn"
+ },
+ "Motorola|moto g56": {
+  "screenInches": 6.7,
+  "chip": "Dimensity 7060",
+  "mainCameraMp": 50,
+  "batteryMah": 5200,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/56-5g/pmipmhu41mg"
+ },
+ "Motorola|moto g57": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 6s Gen 4",
+  "mainCameraMp": 50,
+  "batteryMah": 5200,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/57-5g/pmipmjf43mj"
+ },
+ "Motorola|moto g67": {
+  "screenInches": 6.8,
+  "chip": "Dimensity 6300",
+  "batteryMah": 5200,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/67/pmipmjh43mu"
+ },
+ "Motorola|moto g75": {
+  "chip": "Snapdragon 6 Gen 3",
+  "mainCameraMp": 50,
+  "batteryMah": 5000,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/75-5g/pmipmhd39mi"
+ },
+ "Motorola|moto g86 Power": {
+  "chip": "Dimensity 7300",
+  "batteryMah": 6720,
+  "source": "https://www.motorola.com/au/en/p/phones/moto-g/86-power-5g/pmipmhs42m7"
+ },
+ "Motorola|Razr 50 Ultra": {
+  "screenInches": 6.9,
+  "chip": "Snapdragon 8s Gen 3",
+  "batteryMah": 4000,
+  "source": "https://www.motorola.com/au/en/p/phones/razr/50-ultra/pmipmgs37ms"
+ },
+ "Motorola|Razr 70 Ultra": {
+  "screenInches": 7,
+  "batteryMah": 5000,
+  "source": "https://www.motorola.com/au/en/p/phones/razr/razr-70-ultra/pmipmjk44m2"
+ },
+ "Motorola|Razr Fold": {
+  "screenInches": 8.1,
+  "chip": "Snapdragon 8 Gen 5",
+  "mainCameraMp": 50,
+  "batteryMah": 6000,
+  "source": "https://www.motorola.com/au/en/p/phones/razr/razr-fold/pmipmjj43mx"
  },
  "Nokia|C02": {
   "screenInches": 5.45,
@@ -324,11 +431,86 @@
   "batteryMah": 4700,
   "source": "https://en.wikipedia.org/wiki/Nothing_Phone_2"
  },
+ "OnePlus|Nord CE4 Lite": {
+  "screenInches": 6.67,
+  "chip": "Snapdragon 695",
+  "batteryMah": 5110,
+  "source": "https://en.wikipedia.org/wiki/OnePlus_Nord_CE4_Lite"
+ },
+ "OPPO|A38": {
+  "screenInches": 6.56,
+  "chip": "Helio G85",
+  "mainCameraMp": 50,
+  "batteryMah": 5000,
+  "source": "https://www.oppo.com/au/smartphones/series-a/a38/specs/"
+ },
+ "OPPO|A40": {
+  "screenInches": 6.67,
+  "chip": "Snapdragon 6s 4G Gen 1",
+  "mainCameraMp": 50,
+  "batteryMah": 5100,
+  "source": "https://www.oppo.com/au/smartphones/series-a/a40/specs/"
+ },
+ "OPPO|A5 Pro": {
+  "screenInches": 6.67,
+  "chip": "Dimensity 6300",
+  "mainCameraMp": 50,
+  "batteryMah": 5800,
+  "source": "https://www.oppo.com/au/smartphones/series-a/a5-pro-5g/specs/"
+ },
+ "OPPO|A5x": {
+  "screenInches": 6.67,
+  "chip": "Snapdragon 6s 4G Gen 1",
+  "mainCameraMp": 32,
+  "batteryMah": 6000,
+  "source": "https://www.oppo.com/au/smartphones/series-a/a5x/specs/"
+ },
+ "OPPO|A6": {
+  "screenInches": 6.75,
+  "chip": "Dimensity 6300",
+  "mainCameraMp": 50,
+  "batteryMah": 6550,
+  "source": "https://www.oppo.com/au/smartphones/series-a/a6-5g/specs/"
+ },
+ "OPPO|A7 Pro": {
+  "screenInches": 6.57,
+  "chip": "Dimensity 6360 Max",
+  "mainCameraMp": 50,
+  "batteryMah": 7400,
+  "source": "https://www.oppo.com/au/smartphones/series-a/a7-pro-5g/specs/"
+ },
+ "OPPO|A79": {
+  "screenInches": 6.72,
+  "chip": "MediaTek MT6833",
+  "batteryMah": 5000,
+  "source": "https://www.oppo.com/au/smartphones/series-a/a79-5g/specs/"
+ },
+ "OPPO|A80": {
+  "screenInches": 6.67,
+  "chip": "Dimensity 6300",
+  "mainCameraMp": 50,
+  "batteryMah": 5100,
+  "source": "https://www.oppo.com/au/smartphones/series-a/a80-5g/specs/"
+ },
  "OPPO|Find N6": {
   "screenInches": 8.12,
   "chip": "Snapdragon 8 Elite Gen 5",
   "batteryMah": 6000,
   "source": "https://en.wikipedia.org/wiki/Oppo_Find_N6"
+ },
+ "OPPO|Find X10": {
+  "screenInches": 6.59,
+  "chip": "Dimensity 9600",
+  "mainCameraMp": 200,
+  "batteryMah": 7150,
+  "source": "https://www.oppo.com/au/smartphones/series-find-x/find-x10/specs/"
+ },
+ "OPPO|Find X10 Pro Max": {
+  "screenInches": 6.78,
+  "chip": "Dimensity 9600 Pro",
+  "mainCameraMp": 200,
+  "batteryMah": 7150,
+  "source": "https://www.oppo.com/au/smartphones/series-find-x/find-x10-pro-max/specs/"
  },
  "OPPO|Find X5": {
   "screenInches": 6.55,
@@ -348,15 +530,54 @@
   "batteryMah": 7500,
   "source": "https://en.wikipedia.org/wiki/Oppo_Find_X9"
  },
+ "OPPO|Reno12": {
+  "screenInches": 6.7,
+  "chip": "Dimensity 7300",
+  "mainCameraMp": 50,
+  "batteryMah": 5000,
+  "source": "https://www.oppo.com/au/smartphones/series-reno/reno12/specs/"
+ },
+ "OPPO|Reno13": {
+  "screenInches": 6.59,
+  "chip": "Dimensity 8350",
+  "mainCameraMp": 50,
+  "batteryMah": 5600,
+  "source": "https://www.oppo.com/au/smartphones/series-reno/reno13/specs/"
+ },
+ "OPPO|Reno13 Pro": {
+  "screenInches": 6.83,
+  "chip": "Dimensity 8350",
+  "mainCameraMp": 50,
+  "batteryMah": 5800,
+  "source": "https://www.oppo.com/au/smartphones/series-reno/reno13-pro/specs/"
+ },
+ "OPPO|Reno15 F": {
+  "screenInches": 6.57,
+  "chip": "Snapdragon 6 Gen 1",
+  "mainCameraMp": 50,
+  "batteryMah": 6500,
+  "source": "https://www.oppo.com/au/smartphones/series-reno/reno15-f/specs/"
+ },
  "OPPO|Reno15 Pro": {
   "batteryMah": 6200,
-  "source": "https://en.wikipedia.org/wiki/Oppo_Reno15"
+  "source": "https://www.oppo.com/au/smartphones/series-reno/reno15-pro/specs/",
+  "screenInches": 6.32,
+  "chip": "Dimensity 8450",
+  "mainCameraMp": 200
  },
- "OnePlus|Nord CE4 Lite": {
-  "screenInches": 6.67,
-  "chip": "Snapdragon 695",
-  "batteryMah": 5110,
-  "source": "https://en.wikipedia.org/wiki/OnePlus_Nord_CE4_Lite"
+ "OPPO|Reno16 F": {
+  "screenInches": 6.57,
+  "chip": "Dimensity 7300",
+  "mainCameraMp": 50,
+  "batteryMah": 6500,
+  "source": "https://www.oppo.com/au/smartphones/series-reno/reno16-f/specs/"
+ },
+ "OPPO|Reno16 Pro": {
+  "screenInches": 6.32,
+  "chip": "Dimensity 8550",
+  "mainCameraMp": 200,
+  "batteryMah": 6000,
+  "source": "https://www.oppo.com/au/smartphones/series-reno/reno16-pro/specs/"
  },
  "Samsung|Galaxy A04s": {
   "screenInches": 6.5,
@@ -427,6 +648,12 @@
   "mainCameraMp": 50,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A36_5G"
  },
+ "Samsung|Galaxy A37": {
+  "screenInches": 6.7,
+  "mainCameraMp": 50,
+  "batteryMah": 5000,
+  "source": "https://www.samsung.com/au/smartphones/galaxy-a/galaxy-a37-5g-awesome-lavender-128gb-sm-a376blvaats/"
+ },
  "Samsung|Galaxy A54": {
   "screenInches": 6.4,
   "chip": "Exynos 1380",
@@ -482,13 +709,6 @@
   "mainCameraMp": 50,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S23"
  },
- "Samsung|Galaxy S23+": {
-  "screenInches": 6.6,
-  "chip": "Snapdragon 8 Gen 2",
-  "batteryMah": 4700,
-  "mainCameraMp": 50,
-  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S23"
- },
  "Samsung|Galaxy S23 FE": {
   "chip": "Exynos 2200 or Snapdragon 8 Gen 1",
   "batteryMah": 4500,
@@ -502,17 +722,17 @@
   "mainCameraMp": 200,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S23"
  },
+ "Samsung|Galaxy S23+": {
+  "screenInches": 6.6,
+  "chip": "Snapdragon 8 Gen 2",
+  "batteryMah": 4700,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S23"
+ },
  "Samsung|Galaxy S24": {
   "screenInches": 6.2,
   "chip": "Exynos 2400 or Snapdragon 8 Gen 3",
   "batteryMah": 4000,
-  "mainCameraMp": 50,
-  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24"
- },
- "Samsung|Galaxy S24+": {
-  "screenInches": 6.7,
-  "chip": "Exynos 2400 or Snapdragon 8 Gen 3",
-  "batteryMah": 4900,
   "mainCameraMp": 50,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24"
  },
@@ -530,17 +750,17 @@
   "mainCameraMp": 200,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24"
  },
+ "Samsung|Galaxy S24+": {
+  "screenInches": 6.7,
+  "chip": "Exynos 2400 or Snapdragon 8 Gen 3",
+  "batteryMah": 4900,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24"
+ },
  "Samsung|Galaxy S25": {
   "screenInches": 6.2,
   "chip": "Snapdragon 8 Elite",
   "batteryMah": 4000,
-  "mainCameraMp": 50,
-  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25"
- },
- "Samsung|Galaxy S25+": {
-  "screenInches": 6.7,
-  "chip": "Snapdragon 8 Elite",
-  "batteryMah": 4900,
   "mainCameraMp": 50,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25"
  },
@@ -564,14 +784,16 @@
   "mainCameraMp": 200,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25"
  },
+ "Samsung|Galaxy S25+": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 8 Elite",
+  "batteryMah": 4900,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25"
+ },
  "Samsung|Galaxy S26": {
   "chip": "Exynos 2600 or Snapdragon 8 Elite Gen 5",
   "batteryMah": 4300,
-  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S26"
- },
- "Samsung|Galaxy S26+": {
-  "chip": "Exynos 2600 or Snapdragon 8 Elite Gen 5",
-  "batteryMah": 4900,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S26"
  },
  "Samsung|Galaxy S26 FE": {
@@ -582,6 +804,11 @@
  "Samsung|Galaxy S26 Ultra": {
   "chip": "Snapdragon 8 Elite Gen 5",
   "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S26"
+ },
+ "Samsung|Galaxy S26+": {
+  "chip": "Exynos 2600 or Snapdragon 8 Elite Gen 5",
+  "batteryMah": 4900,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S26"
  },
  "Samsung|Galaxy Z Flip4": {
@@ -640,7 +867,7 @@
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Fold_6"
  },
  "Samsung|Galaxy Z Fold7": {
-  "screenInches": 8.0,
+  "screenInches": 8,
   "chip": "Snapdragon 8 Elite",
   "batteryMah": 4400,
   "mainCameraMp": 200,
@@ -653,7 +880,7 @@
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Fold_8"
  },
  "Samsung|Galaxy Z Fold8 Ultra": {
-  "screenInches": 8.0,
+  "screenInches": 8,
   "chip": "Snapdragon 8 Elite Gen 5",
   "batteryMah": 5000,
   "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Fold_8"

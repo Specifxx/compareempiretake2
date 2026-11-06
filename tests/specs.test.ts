@@ -73,6 +73,12 @@ test("a curated sheet reaches the model's colours and editions, never a sibling 
   assert.equal(sheet("Google", "Pixel 12a"), undefined);
   assert.equal(sheet("Samsung", "Galaxy S26 Edge"), undefined);
   assert.equal(sheet("Apple", "iPhone 17 Plus"), undefined);
+  assert.equal(sheet("OPPO", "Reno 12 FS"), undefined); // Reno12's sheet, a different phone
+  assert.equal(sheet("OPPO", "Reno16 F Pro"), undefined);
+  // Sizes and store suffixes are not part of the model.
+  assert.equal(sheet("Motorola", "moto G05 Denim Blue")?.chip, "Helio G81");
+  assert.equal(sheet("Motorola", "moto g57 17.3 cm")?.batteryMah, 5200);
+  assert.equal(sheet("OPPO", "Find X10 Graphite6.9\"")?.screenInches, 6.59);
   // Curated figures beat a title's.
   assert.equal(withCurated({ category: "phones", brand: "Apple", model: "iPhone 16" }, { screenInches: 6.7 }).screenInches, 6.1);
 });

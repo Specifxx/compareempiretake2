@@ -1466,6 +1466,12 @@ review found monitors labelled wrong (the LG 27GM950B, a 5K Mini LED IPS, shown 
 - **Shipping a reading fix without an import.** `scripts/refresh-specs.ts` rewrites only `specs` in every
   catalog.json; the daily build does the same from the raw files. Phones keep a build-time figure their stored titles
   no longer state (the catalogue trims titles and blurbs).
+- **Later the same day: makers' own spec pages.** Motorola AU, OPPO AU and Samsung AU publish full spec pages that
+  read fine, so 34 Motorola and OPPO models (and the Galaxy A37) were added from them, each with its page as `source`.
+  A model sold in 4G and 5G versions under one name (OPPO A5, A6x, A60) is left out: the catalogue can't tell which
+  one a store sells. Matching now drops sizes ("17.3 cm", '6.9"'), "UK Model", "Business Edition" and "PANTONE …"
+  before comparing, and a one- or two-letter word after a model ("Reno 12 FS") makes it another model. HONOR's spec
+  pages were not found at a readable address and were skipped.
 
 ## 2026-11-06 — US prices: each Amazon country needs its own credential; brand stores read directly
 
