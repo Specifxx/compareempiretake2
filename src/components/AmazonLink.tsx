@@ -2,6 +2,10 @@ import Link from "next/link";
 import { AMAZON_DISCLOSURE, AMAZON_REL, amazonAuLink } from "@/lib/amazon";
 import { ExternalIcon } from "./icons";
 import { AmazonLivePrice } from "./AmazonLivePrice";
+import { CheckIcon } from "./icons";
+import { StoreVote } from "./StoreVote";
+import { CartAddButton } from "./cart/CartAddButton";
+import { PIN_OUTLINE } from "./EbayListingRow";
 
 /**
  * Amazon AU links. No Amazon price, rating or stock is shown (we have no API access), only
@@ -15,21 +19,28 @@ const track = (p: Props) => ({ "data-buy": "amazon", "data-buy-kind": `amazon-${
  * A row shaped like the store rows on a product page, pinned above them. Never in Amazon's own colours
  * (2026-11-02: the Associates Operating Agreement forbids styling that could pass for Amazon's site). `href`/`name` override the AU link for the US and UK, which have no tag yet.
  */
-export function AmazonRow({ href, name = "Amazon AU", live, ...p }: Props & { href?: string; name?: string; live?: { text: string; at: string; zone?: { locale: string; timeZone: string; label: string } } }) {
+export function AmazonRow({ href, name = "Amazon AU", live, cart, ...p }: Props & { href?: string; name?: string; live?: { text: string; at: string; zone?: { locale: string; timeZone: string; label: string } }; /** With a live price, the cart list's line (owner, 2026-11-06: like a store row; lib/cart-list.ts keeps it 24 hours). */ cart?: { title: string; priceCents: number; currency: string; image?: string | null } }) {
+  const url = href ?? amazonAuLink(p.query);
+  const add = live && cart ? { href: url, productUrl: url, storeName: name, title: cart.title, priceCents: cart.priceCents, currency: cart.currency, image: cart.image ?? null } : null;
   return (
-    <a href={href ?? amazonAuLink(p.query)} target="_blank" rel={AMAZON_REL} {...track(p)} className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
+    <a href={url} target="_blank" rel={AMAZON_REL} {...track(p)} className={`card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4 ${PIN_OUTLINE.amazon}`}>
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2 font-semibold">
           {name}
           <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
+          {/* The thumbs stop the row's link (StoreVote calls preventDefault). */}
+          <StoreVote url={url} name={name} className="font-normal text-ink-mute" />
         </div>
-        <div className="mt-1 text-xs text-ink-soft">
-          {live ? "New, Amazon's listing of this exact model." : "New, sold by Amazon and marketplace sellers. We can't show Amazon's price here."}
+        <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-soft">
+          {live && <span className="inline-flex items-center gap-1 text-save"><CheckIcon className="h-3.5 w-3.5" /> In stock</span>}
+          <span>{live ? "New, Amazon's listing of this exact model." : "Also check the price on Amazon: new, sold by Amazon and marketplace sellers."}</span>
+          {add && <CartAddButton inline {...add} className="text-xs sm:hidden" />}
         </div>
       </div>
       {live && <AmazonLivePrice text={live.text} at={live.at} zone={live.zone} />}
+      {add && <CartAddButton {...add} className="hidden shrink-0 text-ink-mute sm:inline-flex" />}
       <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
-        {live ? "View on Amazon" : "Check price on Amazon"} <ExternalIcon className="h-3.5 w-3.5" />
+        {live ? "View on Amazon" : "Check Amazon"} <ExternalIcon className="h-3.5 w-3.5" />
       </span>
       <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
     </a>
