@@ -1407,6 +1407,65 @@ when unset (what crawlers read). A region whose stores share too few listings fo
 **Redirects:** every retired guide 301s (`content/guide-redirects.json`, read by `next.config.mjs`) to the new post on
 its topic, else its category's page (the US one where the US has 20+ products in it), else `/guides`. Never let a
 retired guide 404, and never reuse a retired slug.
+## 2026-11-06 — Awin: one datafeed key reads every joined chain's feed
+
+Bill asked for at least 20 stores on the most popular products in the US and UK. Today's catalogue has none: the best
+US phone has 1 store, the best UK phone 3, and outside LEGO no UK product passes 9. In the US and UK those products are
+sold by national chains that wall off every server read, so their affiliate feeds are the only door; the plan is in
+Bill's doc "Compare Empire: US and UK plan to 20 stores". A survey of 60 US and UK power tool shops found 4 readable
+(Coastal Tool, Toolnut, Factory Authorized Outlet, Axminster), so a Power tools category waits on the same feeds and
+is not built yet.
+
+Until now every feed-gated chain needed its own `FEED_URL_*` secret, pasted by hand after each approval (20+ for the UK
+alone). Awin serves all of a publisher's joined feeds under ONE datafeed key, with a public feed list
+(`productdata.awin.com/datafeed/list/apikey/<key>`). So `feedStore` now falls back, when its own secret is missing and
+`AWIN_DATAFEED_KEY` exists, to the store's site in `data/awin/programmes.json` (the daily joined list): a joined
+advertiser's largest active feed is read with our columns (brand, EAN, MPN, stock, currency). An Awin approval now
+switches a chain on the next morning with no step by hand. A `FEED_URL_*` secret still wins; an advertiser not joined
+is never read; rows go through the same title, currency and condition checks as every feed.
+## 2026-11-06 — Every comparable US and UK product in the sitemap
+
+**Owner (Bill, 2026-11-06), from an outside SEO review:** "Include every US product with 2+ stores in the sitemap, and
+noindex the single-store pages", "put each region on its own URL with correct hreflang and canonical tags", and cut the
+templated boilerplate that makes 18K product pages look like scaled content.
+
+**Checked live first (2026-11-06, page source of `/`, `/au`, `/uk`, `/us/tvs`, `/uk/tvs`, `/us/headphones`):** every
+region already has its own URL with a self-canonical and reciprocal hreflang (`/` is the US home, `/us` 301s to it on
+purpose, x-default is the US copy). Nothing to change there. One-store pages were already noindex,follow (2026-11-05).
+
+**Sitemap:** the US, UK, Canada and Singapore now list every indexable product (two or more stores, in stock); Australia
+keeps the three-store tier (`SITEMAP_MIN_STORES` still widens it). Today's data: US 245 → 967, UK 1,671 → 3,265, AU
+unchanged at 2,668. The US catalogue is 18,322 products but 17,297 of them are sold by one store, so the US sitemap
+cannot grow further until stores overlap more (the store-growth thread and the chain feeds). IndexNow keeps the
+three-store tier everywhere (`productInIndexNow`): its burst of renders right after a deploy is the cost the 2026-11-06
+IndexNow entry cut, and the sitemap is read at Google's own pace instead.
+
+**Unique content per product:** the "About" card now says where the price sits in its category in that region ("costs
+less than 64% of the 428 in-stock products in our TVs category in the US … the middle price is $1,297.99") and, from a
+week of history up, how the best price moved over about 30 days (`src/lib/product-facts.ts`). "for this phone" on every
+category's page now names the model. Guides link from product pages in every region (posts are region-agnostic since
+the entry above); the brand chip stays Australian, where brand pages live.
+
+## 2026-11-06 — Specs that compare: one reading per title, and curated phone sheets
+
+Owner: the compare table was missing processors on laptops and screen, chip, camera and battery on most phones; a US
+review found monitors labelled wrong (the LG 27GM950B, a 5K Mini LED IPS, shown "4K · OLED"; the 32QN600, QHD, shown
+"4K").
+
+- **Why they were wrong.** Specs were read from every store title joined into one string, so any one title decided a
+  row; and "27-Inch" counted as a model code, the shortest one, so different LG 27" and 32" monitors became one
+  product. Now each title gives its own reading and the most common one wins (`lib/specs.ts` `vote`), titles that
+  carry the product's own model code are preferred (`ownTitles`), and a size is never a code (`NOISE_CODE`).
+- **Processors.** `cpuName` reads every spelling stores use (U7-265HX, Ultra 9 386H, RAI 9 HX 370, Ryzen AI MAX+ 395,
+  Snapdragon X2 Elite, i7-14650HX) into one name, for laptops, desktops (new Processor and Graphics rows) and tablets.
+- **Curated sheets.** `data/specs/<category>.json` holds figures from the maker's sheet as the model's Wikipedia
+  infobox gives it, with the URL beside each; they beat a title's figure. 107 phone models so far. A figure we could not
+  confirm is left out, never guessed: "—" is better than a wrong number. GSMArena (Tollbit 402) and PhoneArena
+  (Cloudflare) refuse automated reads and are not worked around.
+- **Rows.** The compare table shows each category's rows in one order (`SPEC_ROWS`), then any other spec.
+- **Shipping a reading fix without an import.** `scripts/refresh-specs.ts` rewrites only `specs` in every
+  catalog.json; the daily build does the same from the raw files. Phones keep a build-time figure their stored titles
+  no longer state (the catalogue trims titles and blurbs).
 
 ## 2026-11-06 — US prices: each Amazon country needs its own credential; brand stores read directly
 

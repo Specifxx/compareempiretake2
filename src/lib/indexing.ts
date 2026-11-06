@@ -1,3 +1,4 @@
+import type { RegionId } from "./region";
 import type { Phone } from "./types";
 
 /**
@@ -16,11 +17,22 @@ const live = (p: Phone) => p.variants.some((v) => v.offers.some((o) => o.inStock
 export const productIndexable = (p: Phone) => p.retailerCount >= 2 && live(p);
 
 /**
- * The sitemap lists only the strongest tier: three or more stores, in stock. The rest of the indexable pages
- * are reached through /browse and the category grids; the tier widens once Search Console shows this one indexed.
+ * Which indexable product pages the sitemap lists. Australia lists only the strongest tier (three or more stores, in
+ * stock; `SITEMAP_MIN_STORES` in Vercel can widen it to 2). The US, UK, Canada and Singapore list every indexable page,
+ * two or more stores (owner, 2026-11-06: the US sitemap held 245 of ~970 comparable US products, so Google could not
+ * find most of them; DECISIONS.md "Every comparable US and UK product in the sitemap"). One-store pages stay out
+ * everywhere: they are noindex (`productIndexable`).
  */
 export const SITEMAP_MIN_STORES = Math.max(2, Number(process.env.SITEMAP_MIN_STORES || 3));
-export const productInSitemap = (p: Phone) => p.retailerCount >= SITEMAP_MIN_STORES && live(p);
+const sitemapFloor = (region: RegionId) => (region === "au" ? SITEMAP_MIN_STORES : 2);
+export const productInSitemap = (p: Phone) => p.retailerCount >= sitemapFloor(p.region ?? "au") && live(p);
+
+/**
+ * IndexNow (scripts/indexnow.ts) keeps the three-store tier in every region: each URL it sends is fetched by four
+ * engines minutes after a deploy, when the CDN is empty (DECISIONS.md, 2026-11-06 Vercel cost). The sitemap is read
+ * at Google's own pace, so widening it does not bring that burst.
+ */
+export const productInIndexNow = (p: Phone) => p.retailerCount >= 3 && live(p);
 
 /** A brand page is indexable when at least one of its products is. */
 export const brandIndexable = (products: Phone[]) => products.some(productIndexable);
