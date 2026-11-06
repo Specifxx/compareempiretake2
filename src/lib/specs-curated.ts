@@ -14,7 +14,14 @@ import type { CategoryId, Phone, Specs } from "./types";
 type Sheet = Partial<Pick<Specs, "screenInches" | "chip" | "mainCameraMp" | "batteryMah">> & { extra?: [string, string][]; source?: string };
 const sheets = new Map<CategoryId, { brand: string; key: string; sheet: Sheet }[]>();
 const norm = (s: string) =>
-  s.toLowerCase().replace(/\bmoto\s+edge\b/, "edge").replace(/\bgalaxy\s+fold/, "galaxy z fold").replace(/\+/g, " plus ").split(/[^a-z0-9]+/).filter(Boolean);
+  s
+    .toLowerCase()
+    // Sizes and store suffixes that are not part of the model: "17.3 cm", 'Graphite 6.9"', "UK Model",
+    // "PANTONE Cosmic Sky", "Business Edition", a trailing "-".
+    .replace(/\d+(\.\d+)?\s?(cm|"|”|inch(es)?)/g, " ")
+    .replace(/\b(uk model|business edition)\b/g, " ")
+    .replace(/\bpantone\b.*$/, " ")
+    .replace(/\bmoto\s+edge\b/, "edge").replace(/\bgalaxy\s+fold/, "galaxy z fold").replace(/\+/g, " plus ").split(/[^a-z0-9]+/).filter(Boolean);
 const compact = (s: string) => norm(s).join("");
 /** Words that make another model when they follow a model name: "iPhone 16" + "Plus", "Pixel 9" + "a". */
 const MODEL_WORDS = new Set("pro max ultra plus fe lite edge fold flip mini neo power fusion xl se nxtpaper enterprise".split(" "));
@@ -46,8 +53,8 @@ export function curatedSheet(p: Pick<Phone, "category" | "brand" | "model">): Sh
     while (i < words.length && joined.length < e.key.length) joined += words[i++];
     if (joined !== e.key) continue;
     const next = words[i];
-    // "Enterprise Edition" is the same phone; "Plus", "a", a number are another model.
-    if (next && next !== "enterprise" && (MODEL_WORDS.has(next) || /^[a-z]$|^\d|^[a-z]\d/.test(next))) continue;
+    // "Enterprise Edition" is the same phone; "Plus", "a", "FS", a number are another model.
+    if (next && next !== "enterprise" && (MODEL_WORDS.has(next) || /^[a-z]{1,2}$|^\d|^[a-z]\d/.test(next))) continue;
     return e.sheet;
   }
   return undefined;
