@@ -1445,3 +1445,14 @@ less than 64% of the 428 in-stock products in our TVs category in the US … the
 week of history up, how the best price moved over about 30 days (`src/lib/product-facts.ts`). "for this phone" on every
 category's page now names the model. Guides link from product pages in every region (posts are region-agnostic since
 the entry above); the brand chip stays Australian, where brand pages live.
+
+## 2026-11-06 — Awin offers and vouchers for the whole family (`data/awin/promotions.json`)
+
+**Decision (owner: store promotions "captured in our price comparison"):** the daily Awin sync also reads Awin's Offers
+API (`POST /publisher/3144410/promotions`, membership `joined`, status `active`) and publishes the live offers and
+vouchers of the programmes that accepted us in the public `data/awin/promotions.json`, beside `programmes.json`. Only
+what an advertiser gives its publishers to share: title, description (240 characters), start and end, regions, and a
+voucher's code. An offer with no end date, already over, from a programme we have not joined, or a voucher whose code
+Awin withholds, is dropped (`toPromotion`, `tests/awin.test.ts`). A failure keeps yesterday's file and never touches the
+programme list. Sister sites copy it in their build and show an offer as a note beside that store's row, never in its
+price or its rank, and drop it at its end date (KaeYoung first, `src/lib/promos.ts` there).

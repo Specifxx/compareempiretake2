@@ -91,3 +91,23 @@ test("the Awin job reads the account with its secret and never deploys", () => {
   for (const line of wf.split("\n").filter((l) => /git commit/.test(l))) assert.doesNotMatch(line, /\[deploy\]|\[urgent\]/i);
   assert.match(wf, /git add data\/awin\n/);
 });
+
+test("Awin offers: only live, joined, dated offers with a title are kept; a voucher needs its code", async () => {
+  const { toPromotion } = await import("../scripts/awin-sync");
+  const now = Date.parse("2026-11-06T00:00:00Z");
+  const base = { promotionId: 7, type: "promotion", advertiser: { id: 90791, joined: true }, title: "<b>Buy 2</b> get 10% off cleansers", description: "Auto-applied in cart.", startDate: "2026-11-01T00:00:00.000", endDate: "2026-11-30T00:00:00.000", regions: { all: true } };
+  const p = toPromotion(base, now)!;
+  assert.equal(p.title, "Buy 2 get 10% off cleansers");
+  assert.equal(p.end, "2026-11-30T00:00:00.000Z");
+  assert.equal(p.regions, "all");
+  assert.equal(p.code, undefined);
+  assert.equal(toPromotion({ ...base, endDate: "2026-11-05T00:00:00.000" }, now), null, "already over");
+  assert.equal(toPromotion({ ...base, endDate: undefined }, now), null, "no end date: never shown");
+  assert.equal(toPromotion({ ...base, advertiser: { id: 1, joined: false } }, now), null, "not joined");
+  assert.equal(toPromotion({ ...base, title: "  " }, now), null);
+  assert.equal(toPromotion({ ...base, type: "voucher", voucher: { code: null } }, now), null, "a voucher without its code says nothing");
+  const v = toPromotion({ ...base, type: "voucher", voucher: { code: "KBEAUTY15" }, regions: { all: false, list: [{ countryCode: "gb" }, { countryCode: "AU" }] } }, now)!;
+  assert.equal(v.code, "KBEAUTY15");
+  assert.deepEqual(v.regions, ["GB", "AU"]);
+  assert.equal(toPromotion({ ...base, regions: { all: false, list: [] } }, now), null);
+});
