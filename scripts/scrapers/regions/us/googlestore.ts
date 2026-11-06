@@ -107,6 +107,6 @@ async function read(cat: keyof typeof SEED): Promise<RawOffer[]> {
 
 export const scrapers: Partial<Record<CategoryId, () => Promise<RawOffer[]>>> = {
   phones: () => read("phones"),
-  tablets: () => read("tablets"),
-  smartwatches: () => read("smartwatches"),
+  // Tablets and watches: the guessed config pages (pixel_tablet, pixel_watch_4…) gave 0 unlocked offers on 2026-11-06.
+  // read("tablets") / read("smartwatches") stay ready for when their page names are known.
 };

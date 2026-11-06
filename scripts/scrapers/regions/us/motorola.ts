@@ -91,5 +91,6 @@ async function read(paths: string[], cat: "phones" | "smartwatches"): Promise<Ra
 
 export const scrapers: Partial<Record<CategoryId, () => Promise<RawOffer[]>>> = {
   phones: async () => read(await links(["smartphones", "smartphones-razr", "smartphones-moto-g", "smartphones-motorola-edge"], /^\/us\/en\/p\/phones\//), "phones"),
-  smartwatches: async () => read(await links(["smartphones", "wearables"], /^\/us\/en\/p\/wearables\//), "smartwatches"),
+  // Watches: only one (Moto Watch Ultra 2026) on 2026-11-06, under the three-offer floor; add back when there are more:
+  // smartwatches: async () => read(await links(["smartphones", "wearables"], /^\/us\/en\/p\/wearables\//), "smartwatches"),
 };
