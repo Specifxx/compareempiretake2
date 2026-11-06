@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "us-kyvol",
   base: "https://kyvol.com",
-  cats: ["robot-vacuums", "vacuums"],
+  cats: ["robot-vacuums"],
 });

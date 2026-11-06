@@ -280,7 +280,6 @@ export const US_RETAILERS: (Retailer & { id: `us-${string}` })[] = [
   { id: "us-globaldronehq", name: "Global Drone HQ", site: "globaldronehq.com", color: "#0F2C9C", type: "retailer" },
   // Store survey 2026-11-06, round 23 (US phones, Apple dealers, vacuums)
   { id: "us-swiftronicsinc", name: "Swiftronics", site: "swiftronicsinc.com", color: "#375571", type: "retailer" },
-  { id: "us-cell2get", name: "Cell2Get", site: "cell2get.com", color: "#A62678", type: "retailer" },
   { id: "us-smalldog", name: "Small Dog Electronics", site: "smalldog.com", color: "#14DACB", type: "retailer" },
   { id: "us-panasonic", name: "Panasonic", site: "shop.panasonic.com", color: "#5DAC1B", type: "retailer" },
   { id: "us-kyvol", name: "Kyvol", site: "kyvol.com", color: "#C25E89", type: "retailer" },

@@ -63,7 +63,7 @@ its trade). The rest were walled, not Shopify/WooCommerce, or priced in another 
 
 Round 22 (candidates22-us.txt, 253 surveyed, 71 readable): 14 added. Round 23 (candidates23-us.txt, 180 surveyed, phones,
 robot vacuums, routers): 11 added. Left out: B2B resellers fed by D&H/Synnex at inflated prices (thinkedu, unitedsupplycorp,
-islandelectricalsupply, wirelessplace), refurbished-only shops (techable), electronicsforce (same stock as cell2get),
+islandelectricalsupply, wirelessplace), refurbished-only shops (techable), cell2get and electronicsforce (one stock, mostly years-old models that read as used),
 Brookstone (marketplace-style own brands). Direct readers: Samsung US, Google Store US, Motorola US. Motorola's US names
 ("razr ultra 2026") differ from the catalogue's international names, so most of its offers wait for aliases. Reachable on
 2026-11-06 but not built: OnePlus US (prices only through its mall API), Nothing US (Hydrogen, no products.json).
