@@ -1579,3 +1579,5 @@ permalink (the single-click checkout links), so Awin and partner stores, and row
 "manual" lines on their own tracked links; eBay, Amazon, TCGplayer and Cardmarket are never lines. Shared files, the
 same in every site (port fixes by hand): `src/lib/cart-list.ts`, `src/components/cart/*` (`cart-config.ts` is the
 one per-site file; styles imported once from the root layout), `tests/cart-list.test.ts`.
+
+- 2026-11-06 14:15 UTC: owner chose an urgent release of the 12:42 data commit (e06a5114: US phones 15 to 43, new US stores from rounds 22/23 and the Samsung, Google Store and Motorola readers), second production build today.
