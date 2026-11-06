@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { storeLink } from "@/lib/store-links";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { storageLabel } from "@/lib/normalize";
@@ -97,7 +98,7 @@ export function CompareView() {
           (p: Phone) => {
             const o = p.variants.flatMap((v) => v.offers.filter((x) => x.retailer === r && x.kind !== "plan").map((x) => ({ ...x, gb: v.storageGb }))).sort((a, b) => a.price - b.price)[0];
             return o ? (
-              <a href={o.url} target="_blank" rel="noopener nofollow" data-buy={r} data-buy-product={hrefOf(p)} data-buy-price={o.price} data-buy-kind="compare" className="hover:text-brand">
+              <a href={storeLink(o.url, "compare").href} target="_blank" rel={storeLink(o.url, "compare").rel} data-buy={r} data-buy-product={hrefOf(p)} data-buy-price={o.price} data-buy-kind="compare" className="hover:text-brand">
                 <span className="font-semibold">{$(o.price)}</span> <span className="text-xs text-ink-mute">{storageLabel(o.gb)}</span>
               </a>
             ) : (

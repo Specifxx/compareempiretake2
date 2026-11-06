@@ -10,6 +10,7 @@ import { EbayListingRow, EbaySearchRow } from "./EbayListingRow";
 import { REGIONS, withRegion } from "@/lib/region";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
+import { storeLink } from "@/lib/store-links";
 import type { Offer, Phone, RetailerId } from "@/lib/types";
 import { CheckIcon, ExternalIcon } from "./icons";
 import { ShareButton } from "./ShareButton";
@@ -219,7 +220,7 @@ export function PhoneOffers({
           <ol className="space-y-2.5">
             {[...planRows].sort((a, b) => (a.best.monthly ?? 0) - (b.best.monthly ?? 0)).map(({ best: o }) => (
               <li key={o.retailer}>
-                <a href={o.url} target="_blank" rel="noopener nofollow" data-buy={o.retailer} data-buy-product={href} data-buy-price={o.monthly} data-buy-kind="plan" className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
+                <a href={storeLink(o.url, "plan").href} target="_blank" rel={storeLink(o.url, "plan").rel} data-buy={o.retailer} data-buy-product={href} data-buy-price={o.monthly} data-buy-kind="plan" className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
                   <div className="min-w-0 flex-1">
                     <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
                     <div className="mt-1 text-xs text-ink-mute">
@@ -323,11 +324,12 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
 /** One store's outright row (its cheapest listing of the variant), on the product page and in the quick view. */
 export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was }: { o: Offer; colours: Set<string>; rank: number; best?: Offer; product: string; was?: WasCheck }) {
   const { $ } = useRegionKit();
+  const link = storeLink(o.url, "row");
   return (
     <a
-      href={o.url}
+      href={link.href}
       target="_blank"
-      rel="noopener nofollow"
+      rel={link.rel}
       data-buy={o.retailer}
       data-buy-product={href}
       data-buy-price={o.price}
@@ -340,6 +342,7 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was 
           <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
           {RETAILERS[o.retailer].type === "official" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Official store</span>}
           {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Cheapest</span>}
+          {link.paid && <span className="text-[10px] text-ink-mute">Paid link</span>}
         </div>
         <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-mute">
           <span className={o.inStock ? "inline-flex items-center gap-1 text-save" : o.preorder ? "font-semibold text-brand" : "text-hot"}>

@@ -29,8 +29,9 @@ export default function AffiliateDisclosurePage() {
         </p>
         <h2>eBay and other stores</h2>
         <p>
-          Links to eBay are part of the eBay Partner Network and may also earn us a commission. Links to every other store are ordinary links
-          unless we say otherwise here.
+          Links to eBay are part of the eBay Partner Network and may also earn us a commission. Some stores pay us through the Awin
+          affiliate network: their links go through awin1.com and are marked &ldquo;Paid link&rdquo;. Links to every other store are
+          ordinary links.
         </p>
         <h2>What affiliate links never change</h2>
         <p>
