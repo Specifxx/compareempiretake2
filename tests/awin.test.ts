@@ -87,6 +87,7 @@ test("the Awin job reads the account with its secret and never deploys", () => {
   const wf = readFileSync(".github/workflows/awin-sync.yml", "utf8");
   assert.match(wf, /AWIN_API_TOKEN: \$\{\{ secrets\.AWIN_API_TOKEN \}\}\n\s+run: npx tsx scripts\/awin-sync\.ts/);
   assert.match(wf, /workflow_dispatch/);
-  assert.doesNotMatch(wf, /\[deploy\]|\[urgent\]/i);
+  assert.match(wf, /git commit -m "data: Awin programmes \$\(date -u \+%F\)"\n/);
+  for (const line of wf.split("\n").filter((l) => /git commit/.test(l))) assert.doesNotMatch(line, /\[deploy\]|\[urgent\]/i);
   assert.match(wf, /git add data\/awin\n/);
 });
