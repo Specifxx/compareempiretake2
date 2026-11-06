@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 // Must equal the CATEGORIES ids in src/lib/categories.ts (tests/routes.test.ts).
 const CATEGORY_IDS = "phones|tablets|smartwatches|laptops|desktops|monitors|printers|routers|graphics-cards|cpus|ssds|ram|motherboards|tvs|soundbars|headphones|speakers|consoles|cameras|drones|robot-vacuums|vacuums|air-fryers|coffee-machines|fridges|washing-machines|dishwashers|lego|small-kitchen|coffee-gear|hair-care|bbqs";
 // Product pages are functions. Vercel's CDN keeps each copy for a day and every deploy starts a fresh cache,
@@ -99,11 +100,15 @@ const nextConfig = {
     // Brand slugs minted from an undecoded store title ("Bowers &amp; Wilkins", 2026-11-05); product URLs with the
     // same artefact redirect from the product page itself (lib/indexing.ts cleanedSlug).
     const entity = [["/brands/bowers-amp-wilkins", "/brands/bowers-wilkins"]];
+    // 2026-11-06 (owner: one set of posts for every region, the Australia-only guides retired): each retired guide
+    // 301s to the new post on its topic, else its category's page (the US one where the US has that category), else
+    // /guides. tests/guides.test.ts checks every target exists and no live guide is redirected.
+    const retiredGuides = Object.entries(JSON.parse(readFileSync(new URL("./content/guide-redirects.json", import.meta.url), "utf8"))).map(([slug, to]) => [`/guides/${slug}`, to]);
     // www is a 308 to the apex (2026-11-05): www had no DNS from 26 Oct, came back serving the whole site as a
     // duplicate host, and Google still filed most pages under it. Every path moves except eBay's account-deletion
     // endpoint, registered with eBay under the www URL (its challenge is signed with that URL and is not redirected).
     const www = { source: "/:path((?!api/ebay/).*)", has: [{ type: "host", value: "www.compareempire.com" }], destination: "https://compareempire.com/:path", permanent: true };
-    return [www, { source: "/us", destination: "/", permanent: true }, ...[...merged, ...entity].map(([source, destination]) => ({ source, destination, permanent: true }))];
+    return [www, { source: "/us", destination: "/", permanent: true }, ...[...merged, ...entity, ...retiredGuides].map(([source, destination]) => ({ source, destination, permanent: true }))];
   },
   async headers() {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.

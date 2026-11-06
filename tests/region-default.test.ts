@@ -67,28 +67,34 @@ function boot({ path, tz = "America/New_York", saved, ua = "Mozilla/5.0 (iPhone)
   return { moved, attrs };
 }
 
-test("only a visitor who picked a region is moved to that region's copy; a guessed region and crawlers never are", () => {
+test("visitors go to their region's copy: their pick, else their time zone, else the US; crawlers never move", () => {
   const alts = { "en-AU": "/phones", "en-US": "/us/phones", "en-GB": "/uk/phones" };
-  // 2026-11-02: Google's guidance is no automatic redirect on a guessed location; RegionNotice offers the copy instead.
-  assert.equal(boot({ path: "/phones", alternates: alts }).moved, null, "US time zone on an Australian page: stays");
-  assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", alternates: alts }).moved, null, "Australian time zone on a US page: stays");
-  assert.equal(boot({ path: "/", tz: "Australia/Perth", alternates: { "en-AU": "/au", "en-US": "/" } }).moved, null, "Australian time zone on the root: stays");
-  assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", alternates: alts }).attrs["data-geo"], undefined, "and nothing is hidden");
+  // Owner, 2026-11-06: "the US is the default region, unless we can tell that you're from Australia" (reverses 11-02).
+  assert.equal(boot({ path: "/phones", alternates: alts }).moved, "/us/phones?x=1", "no time zone we cover on an Australian page: the US copy");
+  assert.equal(boot({ path: "/phones", tz: "Europe/Berlin", alternates: alts }).moved, "/us/phones?x=1", "a country we don't compare: the US");
+  assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", alternates: alts }).moved, "/phones?x=1", "Australian time zone on a US page: Australia");
+  assert.equal(boot({ path: "/", tz: "Australia/Perth", alternates: { "en-AU": "/au", "en-US": "/" } }).moved, "/au?x=1", "Australian time zone on the root: the Australian home");
+  assert.equal(boot({ path: "/us/phones", tz: "Europe/London", alternates: alts }).moved, "/uk/phones?x=1", "UK time zone: the UK copy");
+  assert.equal(boot({ path: "/", alternates: { "en-AU": "/au", "en-US": "/" } }).moved, null, "US visitor on the US home: stays");
   assert.equal(boot({ path: "/phones", saved: "uk", alternates: alts }).moved, "/uk/phones?x=1", "a region picked in the header moves");
   assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", saved: "us", alternates: alts }).moved, null, "the pick wins over the time zone");
   assert.equal(boot({ path: "/us/phones", saved: "us", alternates: alts }).moved, null, "already in their region");
-  const bot = boot({ path: "/phones", saved: "us", ua: "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X) Chrome/120 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)", alternates: alts });
+  assert.equal(boot({ path: "/us/phones", tz: "Australia/Perth", alternates: alts }).attrs["data-gr"], "au", "data-gr carries the visitor's region for guides");
+  const bot = boot({ path: "/phones", tz: "America/New_York", ua: "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X) Chrome/120 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)", alternates: alts });
   assert.equal(bot.moved, null, "Googlebot stays");
   assert.equal(bot.attrs["data-geo"], undefined, "and nothing is hidden from it");
-  // A region with no products yet (not in the layout's data-regions) is never a destination.
+  assert.equal(bot.attrs["data-gr"], undefined, "and reads the US copy of a guide");
+  // A region with no products yet (not in the layout's data-regions) is never a destination: the US instead.
   const late = { ...alts, "en-CA": "/ca/phones" };
-  assert.equal(boot({ path: "/phones", saved: "ca", alternates: late, attrs: { "data-regions": "au us uk" } }).moved, null, "a region not live yet: stay");
+  assert.equal(boot({ path: "/us/phones", tz: "America/Toronto", alternates: late, attrs: { "data-regions": "au us uk" } }).moved, null, "Canada not live yet: the US copy");
   assert.equal(boot({ path: "/phones", saved: "ca", alternates: late, attrs: { "data-regions": "au us uk ca" } }).moved, "/ca/phones?x=1", "once live it moves");
-  const miss = boot({ path: "/guides/best-phones", saved: "us", alternates: {} });
+  assert.equal(boot({ path: "/us/phones", tz: "America/Toronto", alternates: late, attrs: { "data-regions": "au us uk ca" } }).moved, "/ca/phones?x=1", "Canadian time zone once live");
+  const miss = boot({ path: "/phones/only-in-australia", alternates: {} });
   assert.equal(miss.moved, null, "no copy in their region: stay");
   assert.equal(miss.attrs["data-geo-miss"], "us");
   assert.equal(miss.attrs["data-geo"], undefined, "content shown again");
   assert.equal(boot({ path: "/about", saved: "au" }).moved, null, "pages of no region never move");
+  assert.equal(boot({ path: "/guides/best-tvs-2026", tz: "Australia/Sydney" }).moved, null, "guides are for every region and never move");
   assert.doesNotThrow(() => vm.runInNewContext(REGION_BOOT_SCRIPT, {}));
 });
 

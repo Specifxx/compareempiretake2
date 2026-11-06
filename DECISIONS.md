@@ -1385,3 +1385,25 @@ was therefore a server render (and its share card a second one), ~9,700 a day pe
 pages that ask not to be indexed (2026-11-05, "Thin pages out of the index"), so the crawl bought nothing. Pages outside
 the tier are still found through the sitemap's hubs, the grids and `/browse` at the engines' own pace. Widening the sitemap
 tier (`SITEMAP_MIN_STORES`) widens IndexNow with it.
+## 2026-11-06 — The US is the default region, and one set of posts serves every region
+
+**Owner (Bill, 2026-11-06):** "I want the US to be the default region … unless we can tell that you're from Australia and
+we bring you to Australia" and "make region agnostic blog posts … aim for around 10 … get rid of all the region specific
+ones", because the site was only getting Australian visitors.
+
+**Region:** `REGION_BOOT_SCRIPT` now moves every visitor (never a crawler) to their region's copy of a page, when the page
+lists one as an hreflang alternate: their pick, else their time zone's region (AU, UK, CA, SG when live), else the US.
+This reverses the 2026-11-02 rule that moved only visitors who had picked. URLs, canonicals and hreflang are unchanged;
+crawlers are still never moved, so every regional page stays indexable.
+
+**Posts:** the 73 Australian guides are gone; 11 posts written for every country replace them (TVs, noise-cancelling
+headphones, soundbars, Bluetooth speakers, espresso machines, grinders, gaming monitors, grills and pizza ovens,
+beginner cameras, Black Friday 2026, the sales calendar). `GuideBody` draws each live block and inline price once per
+live region (`.rg-<region>` / `.rgi-<region>`); the boot script sets `html[data-gr]` and CSS shows the reader's, the US
+when unset (what crawlers read). A region whose stores share too few listings for a ranked table gets single-store rows
+("1 store"), and a block with nothing in a region says so in one line. Posts never type a price or a `max=`/`min=`
+(one currency), and their slugs and titles name no country (`tests/guides.test.ts`). `/guides` is now a page of no region.
+
+**Redirects:** every retired guide 301s (`content/guide-redirects.json`, read by `next.config.mjs`) to the new post on
+its topic, else its category's page (the US one where the US has 20+ products in it), else `/guides`. Never let a
+retired guide 404, and never reuse a retired slug.

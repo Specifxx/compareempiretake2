@@ -50,10 +50,10 @@ export const regionOf = (pathname: string): RegionId => {
 };
 
 /**
- * Pages that belong to no region (about, legal, forum, reviews…). Their server HTML is built for the US, the default,
+ * Pages that belong to no region (guides, about, legal, forum, reviews…). Guides draw every region's prices (GuideBody). Their server HTML is built for the US, the default,
  * and the browser moves the header and footer to the visitor's own region (`useRegion`). They never redirect.
  */
-const NEUTRAL = new Set(["about", "contact", "privacy", "disclosure", "affiliate-disclosure", "reviews", "forum", "saved", "alerts", "admin", "embed", "price-report"]);
+const NEUTRAL = new Set(["guides", "about", "contact", "privacy", "disclosure", "affiliate-disclosure", "reviews", "forum", "saved", "alerts", "admin", "embed", "price-report"]);
 export const isNeutralPath = (pathname: string) => NEUTRAL.has(pathname.split("/")[1] ?? "");
 
 /** Canada's IANA zones (and the legacy Canada/* names). America/Toronto etc. are Canada-only zones. */
@@ -76,21 +76,28 @@ export const REGION_STORAGE_KEY = "ce-region";
 export const BOT_UA = /bot|crawl|spider|slurp|google|bing|yandex|baidu|duckduck|lighthouse|headless|preview|facebookexternalhit|embedly|whatsapp/i;
 
 /**
- * Inline, before first paint: a visitor who PICKED a region (the header's switcher or RegionNotice's buttons, kept in
- * localStorage) and lands on another region's page is sent to the same page in their region when the page lists one as
- * an hreflang alternate. Until DOMContentLoaded `<main>` is hidden (globals.css, html[data-geo]), at most 1.5 s.
- * A visitor who never picked is never moved (2026-11-02, Google's guidance: no automatic redirects on a guessed
- * location): RegionNotice offers their time zone's copy instead. Crawlers are never moved. Nothing is sent anywhere.
+ * Inline, before first paint: a visitor on another region's page is sent to the same page in their own region when the
+ * page lists one as an hreflang alternate. Their region is the one they picked (the header's switcher or RegionNotice's
+ * buttons, kept in localStorage), else the one their time zone says, else the US (owner, 2026-11-06: "the US is the
+ * default region, unless we can tell that you're from Australia and we bring you to Australia"; this reverses the
+ * 2026-11-02 rule that moved only visitors who had picked). Only live regions (the root layout's data-regions) count.
+ * Until DOMContentLoaded `<main>` is hidden (globals.css, html[data-geo]), at most 1.5 s. It also sets html[data-gr] to
+ * that region, which picks the prices a guide shows (GuideBody). Crawlers are never moved and keep the US copy of a
+ * guide, so every regional page stays indexable. Nothing is sent anywhere.
  */
 export const REGION_BOOT_SCRIPT = `(function(){try{
 var d=document.documentElement,p=location.pathname,s=p.split("/")[1]||"";
 if(${BOT_UA}.test(navigator.userAgent))return;
-if(${JSON.stringify([...NEUTRAL])}.indexOf(s)>=0)return;
 var R=${JSON.stringify(["au", "us", "uk", "ca", "sg"])};
-var page=R.indexOf(s)>=0?s:s?"au":"us";
+var L=d.getAttribute&&d.getAttribute("data-regions");L=L?L.split(" "):R;
+var ok=function(r){return R.indexOf(r)>=0&&L.indexOf(r)>=0};
 var want=null;try{want=localStorage.getItem("${REGION_STORAGE_KEY}")}catch(e){}
-var L=d.getAttribute&&d.getAttribute("data-regions");
-if(R.indexOf(want)<0||(L&&L.split(" ").indexOf(want)<0))return;
+if(!ok(want)){var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch(e){}
+want=/^Australia\\//.test(tz)?"au":/^Europe\\/(London|Belfast|Guernsey|Jersey|Isle_of_Man)$/.test(tz)?"uk":new RegExp(${JSON.stringify(CANADA_TZ.source)}).test(tz)?"ca":(tz==="Asia/Singapore"||tz==="Singapore")?"sg":"us";
+if(!ok(want))want="us"}
+d.setAttribute("data-gr",want);
+if(${JSON.stringify([...NEUTRAL])}.indexOf(s)>=0)return;
+var page=R.indexOf(s)>=0?s:s?"au":"us";
 if(want===page)return;
 var from=null;try{from=sessionStorage.getItem("ce-geo-from")}catch(e){}
 if(from===p)return;

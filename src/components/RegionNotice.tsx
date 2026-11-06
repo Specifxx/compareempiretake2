@@ -8,9 +8,9 @@ import { rememberRegion, visitorRegion } from "@/lib/use-region";
 
 /**
  * A visitor on another region's page gets one line saying whose prices these are, with their own region's copy of the
- * page (its hreflang alternate) or, when it has none, their region's home a tap away. Nobody is moved automatically
- * (2026-11-02): REGION_BOOT_SCRIPT moves only a visitor who picked a region, so a visitor who has picked one never sees
- * this on a page with a copy in theirs. Never a pop-up; never for crawlers.
+ * page (its hreflang alternate) or, when it has none, their region's home a tap away. Since 2026-11-06 REGION_BOOT_SCRIPT
+ * moves every visitor (their pick, else their time zone, else the US) to their region's copy when the page has one, so
+ * this shows mostly on pages without one. Never a pop-up; never for crawlers.
  */
 const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the UK", ca: "Canada", sg: "Singapore" };
 
