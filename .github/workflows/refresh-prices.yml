@@ -94,9 +94,26 @@ jobs:
       # Canada and Singapore (2026-11-06): independent stores read by auto-shopify.ts; their pages 404 until they have products.
       - name: Scrape Canadian stores
         continue-on-error: true
+        env:
+          FEED_URL_CA_BESTBUY: ${{ secrets.FEED_URL_CA_BESTBUY }}
+          FEED_URL_CA_WALMART: ${{ secrets.FEED_URL_CA_WALMART }}
+          FEED_URL_CA_STAPLES: ${{ secrets.FEED_URL_CA_STAPLES }}
+          FEED_URL_CA_CANADIANTIRE: ${{ secrets.FEED_URL_CA_CANADIANTIRE }}
+          FEED_URL_CA_NEWEGG: ${{ secrets.FEED_URL_CA_NEWEGG }}
+          FEED_URL_CA_LONDONDRUGS: ${{ secrets.FEED_URL_CA_LONDONDRUGS }}
+          FEED_URL_CA_VISIONS: ${{ secrets.FEED_URL_CA_VISIONS }}
+          FEED_URL_CA_COSTCO: ${{ secrets.FEED_URL_CA_COSTCO }}
+          FEED_URL_CA_HOMEDEPOT: ${{ secrets.FEED_URL_CA_HOMEDEPOT }}
+          FEED_URL_CA_THEBRICK: ${{ secrets.FEED_URL_CA_THEBRICK }}
+          FEED_URL_CA_LEONS: ${{ secrets.FEED_URL_CA_LEONS }}
         run: npx tsx scripts/scrape-categories.ts --region ca
       - name: Scrape Singapore stores
         continue-on-error: true
+        env:
+          FEED_URL_SG_COURTS: ${{ secrets.FEED_URL_SG_COURTS }}
+          FEED_URL_SG_HARVEYNORMAN: ${{ secrets.FEED_URL_SG_HARVEYNORMAN }}
+          FEED_URL_SG_BESTDENKI: ${{ secrets.FEED_URL_SG_BESTDENKI }}
+          FEED_URL_SG_GAINCITY: ${{ secrets.FEED_URL_SG_GAINCITY }}
         run: npx tsx scripts/scrape-categories.ts --region sg
       - name: Build catalogues
         run: |
