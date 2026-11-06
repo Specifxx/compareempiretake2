@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { codes, gpuChip, mergeTarget, parseProduct } from "../src/lib/match";
+import { codes, gpuChip, mergeTarget, parseProduct, sharedCodeMerges } from "../src/lib/match";
+import { productCodes } from "../src/lib/match-more";
 import type { RawOffer } from "../src/lib/types";
 
 const o = (title: string, extra: Partial<RawOffer> = {}) => ({ retailer: "jbhifi", sku: "x", url: "u", price: 1, inStock: true, title, ...extra }) as RawOffer;
@@ -147,4 +148,40 @@ test("desktops under one model code split on their configuration, and a CPU mode
   // "U7-255H" and "5-235T" are processors: the Dell Pro Micro and the Dell Pro AIO 24 are different computers.
   assert.notEqual(key("Dell Pro Micro AI Desktop PC - Core Ultra 5-235T 16GB 256GB W11P", "desktops"), key('Dell Pro AIO 24 Gen 5 23.8" FHD AI All-in-One Desktop PC - Core Ultra 5-235T 16GB 512GB W11P', "desktops"));
   assert.notEqual(key("ASUS NUC 15 Pro Slim Mini PC - Intel Core 7-240H, 16GB RAM, 512GB SSD, Windows 11 Pro - 3 YR ONSITE", "desktops"), key('ASUS ExpertCenter P440 23.8" All-in-One Desktop PC Intel Core 7-240H 16GB 512GB W11P', "desktops"));
+});
+
+test("pages that every listing names by the same model code join; a disagreeing spec or another brand keeps them apart", () => {
+  const codes = (...ts: string[]) => ts.map((t) => productCodes(t));
+  const m = sharedCodeMerges([
+    { key: "a", brand: "Sony", codes: codes("Sony WH-1000XM5 Noise Cancelling Headphones", "Sony WH-1000XM5 Noise Cancelling Headphones - Pink"), disc: [] },
+    { key: "b", brand: "Sony", codes: codes("Sony WH-1000XM5 Premium Noise Cancelling Wireless Over-Ear Headphones Black", "Sony WH-1000XM5 Premium Noise Cancelling Wireless Over-Ear Headphones Silver", "Sony WH-1000XM5 Wireless Noise Cancelling Headphones Black"), disc: [] },
+    { key: "c", brand: "Sony", codes: codes("Sony WF-1000XM5 True Wireless Noise Cancelling Earbuds (Black)"), disc: [] },
+    // One listing without the code: not every listing names it, so it never joins on the code.
+    { key: "d", brand: "Sony", codes: codes("Sony WH-1000XM5 Headphones", "Sony Noise Cancelling Headphones"), disc: [] },
+    { key: "e", brand: "Bose", codes: codes("Bose WH-1000XM5 Lookalike"), disc: [] },
+    // A series name shared by different products: too short, and the kits' lens codes are longer than X-T50.
+    { key: "h", brand: "Siemens", codes: codes("Siemens iQ300 60cm Fridge Freezer KG36NVICG"), disc: [] },
+    { key: "i", brand: "Siemens", codes: codes("Siemens iQ300 60cm Fridge Freezer KG39NVIBG", "Siemens iQ300 Fridge KG39NVIBG"), disc: [] },
+    { key: "j", brand: "Fujifilm", codes: codes("Fujifilm X-T50 Mirrorless Camera Body"), disc: [] },
+    { key: "k", brand: "Fujifilm", codes: codes("Fujifilm X-T50 Mirrorless Camera XC15-45mmF3.5-5.6 Lens Kit", "Fujifilm X-T50 with XC15-45mmF3.5-5.6"), disc: [] },
+    { key: "f", brand: "Sony", codes: codes("Sony WH-1000XM5 Wired Edition"), disc: ["wired"] },
+    { key: "g", brand: "Sony", codes: codes("Sony WH-1000XM5 Wireless Edition"), disc: ["wireless"] },
+  ]);
+  assert.equal(m.get("a"), "b", "the smaller page joins the larger, which keeps its URL");
+  assert.equal(m.has("b"), false);
+  assert.equal(m.has("c"), false, "WF is not WH");
+  assert.equal(m.has("d"), false);
+  assert.equal(m.has("e"), false);
+  assert.equal(m.has("h"), false, "iQ300 is a series, not a model");
+  assert.equal(m.has("i"), false);
+  assert.equal(m.has("j"), false, "the X-T50 body and its lens kits stay apart");
+  assert.equal(m.has("k"), false);
+  assert.equal(m.get("f"), "b", "a page whose spec the target does not contradict joins it");
+  assert.equal(m.has("g"), false, "a stated spec that disagrees with the page's (now wired) keeps it apart");
+});
+
+test("productCodes keeps model codes and drops figures, buses and chips", () => {
+  assert.deepEqual(productCodes("Samsung Galaxy S26 5G (Dual Sim, 256GB/12GB, 6.3'', SM-S942B) - Black"), ["SM-S942B"]);
+  assert.deepEqual(productCodes("Breville the Barista Express BES870BSS 1600W 15 Bar Wi-Fi 6 DDR5 i5-13400F 10.4L"), ["BES870BSS"]);
+  assert.deepEqual(productCodes("Sony 65 inch 4K TV"), []);
 });

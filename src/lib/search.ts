@@ -49,7 +49,8 @@ function digitRunsOn(hay: string, w: string): boolean {
   return true;
 }
 
-export function searchScore(query: string, name: string): number {
+/** `codes` (model codes the stores name, "SM-S947B") match like the name's own words but never count as length. */
+export function searchScore(query: string, name: string, codes: string[] = []): number {
   const q = norm(query)
     .replace(/\b([a-z]+)(\d+)([a-z]+)?\b/g, (_, a, n, b) => `${a}${n} ${b ?? ""}`)
     .split(" ")
@@ -57,7 +58,8 @@ export function searchScore(query: string, name: string): number {
     .map((w) => (w === "u" ? "ultra" : w === "pm" ? "pro max" : ALIASES[w] && w.length <= 3 ? ALIASES[w] : w))
     .join(" ")
     .split(" ");
-  const words = norm(name).split(" ");
+  const named = norm(name).split(" ");
+  const words = codes.length ? [...named, ...codes.flatMap((c) => norm(c).split(" "))] : named;
   const joined = words.join("");
   let score = 0;
   for (const w of q) {
@@ -79,13 +81,14 @@ export function searchScore(query: string, name: string): number {
     score += best;
   }
   // Prefer shorter names: "iPhone 17" over "iPhone 17 Pro Max" for "iphone 17".
-  return score - words.length * 0.05;
+  return score - named.length * 0.05;
 }
 
-export function search<T extends { name: string }>(items: T[], query: string, limit = 50): T[] {
+export function search<T extends { name: string; codes?: string[] }>(items: T[], query: string, limit = 50): T[] {
   if (!query.trim()) return items.slice(0, limit);
   return items
-    .map((it) => ({ it, s: searchScore(query, it.name) }))
+    // A model code the stores name ("SM-S947B") counts as part of the name (owner, 2026-11-06).
+    .map((it) => ({ it, s: searchScore(query, it.name, it.codes) }))
     .filter((x) => x.s > 0)
     .sort((a, b) => b.s - a.s)
     .slice(0, limit)

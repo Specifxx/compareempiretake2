@@ -27,3 +27,10 @@ test("exact model numbers: digits are not a prefix of a longer number, storage i
   assert.equal(search(items, "iphone 17 pro 256gb").length, 2, "the 17 Pro and 17 Pro Max, never the plain 17");
   assert.equal(search(cards, "rtx 5070 16gb").length, 2, "a capacity in the name still counts when it is there");
 });
+
+test("a model code the stores name is searchable", () => {
+  const phones = [{ name: "Samsung Galaxy S26", codes: ["SM-S942B"] }, { name: "Samsung Galaxy S26+", codes: ["SM-S947B"] }, { name: "Samsung Galaxy S26 Ultra" }];
+  assert.deepEqual(search(phones, "SM-S947B").map((p) => p.name), ["Samsung Galaxy S26+"]);
+  assert.equal(search(phones, "s942b")[0].name, "Samsung Galaxy S26");
+  assert.equal(search(phones, "galaxy s26")[0].name, "Samsung Galaxy S26", "names still rank as before");
+});

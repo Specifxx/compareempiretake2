@@ -163,3 +163,11 @@ test("Ryzen PRO is its own part", () => {
   assert.notEqual(key("AMD Ryzen 5 PRO 8500G processor 3.5 GHz 16 MB L3", "cpus"), key("AMD Ryzen 5 8500G processor 3.5 GHz 16 MB L3", "cpus"));
   assert.equal(cpuModel("AMD Ryzen Threadripper PRO 7985WX")?.family, "Ryzen Threadripper PRO");
 });
+
+test("headphones: wiring and impedance must agree", () => {
+  const d = (t: string, brand: string) => p(t, "headphones", { brand })!.discriminator;
+  assert.equal(d("Beyerdynamic DT 770 PRO Closed Reference Studio Headphones 80 Ohm", "Beyerdynamic"), "headphones||80");
+  assert.equal(d("Beyerdynamic DT 770 PRO Closed Reference Studio Headphones 250 Ohm", "Beyerdynamic"), "headphones||250");
+  assert.equal(d("HiFiMAN HE-R10D Dynamic Closed-Back Headphones Wireless", "HiFiMAN"), "headphones|wireless|");
+  assert.equal(d("HiFiMAN HE-R10D Dynamic Closed-Back Headphones Wired", "HiFiMAN"), "headphones|wired|");
+});
