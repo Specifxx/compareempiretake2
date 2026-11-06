@@ -168,8 +168,17 @@ jobs:
           git add data
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "data: daily prices $(TZ=Australia/Sydney date +%F) [deploy]"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push
+          # A code merge during the two-hour run can touch the same generated files (catalogues,
+          # data/amazon/status-*.json). This run's data is the newer copy of every file it
+          # wrote, so it wins a conflict (-X theirs while rebasing = the commit being applied);
+          # spec sheets merged meanwhile reach the catalogues on the next run. 2026-11-06: a
+          # plain rebase conflicted on 7 catalogues and threw away a full refresh.
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 10))
+          done
+          exit 1
       - name: Email price-drop alerts
         continue-on-error: true
         env:
