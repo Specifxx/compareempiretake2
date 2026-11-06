@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T00:19:25.991Z",
+ "scrapedAt": "2026-11-06T11:00:53.554Z",
  "offers": [
   {
    "retailer": "dreame",
@@ -19,7 +19,7 @@
    "url": "https://www.dreame.com.au/products/dreame-aqua20-ultra-roller-black",
    "price": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/Untitled_design_5_90da20f7-e84d-4401-b0f6-b1d93abe5e52.png?v=1793599929",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "dreame",
@@ -33,13 +33,14 @@
   },
   {
    "retailer": "dreame",
-   "sku": "DRE-L40UVE",
+   "sku": "DRE-L40SPU",
    "brand": "Dreame",
-   "title": "Dreame L40 Ultra VE Robot Vacuum Cleaner with Dual Scrubbing Mops for carpet and hard floor cleaning",
-   "url": "https://www.dreame.com.au/products/dreame-l40-ultra-ve",
-   "price": 1799,
-   "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/Untitled_design_7_f883a81f-fad3-4996-9f4d-a85a4be787c1.png?v=1793600131",
-   "inStock": false
+   "title": "Dreame L40S Pro Ultra Robot Vacuum and Mop with Self-Cleaning and Auto-Empty Dock",
+   "url": "https://www.dreame.com.au/products/dreame-l40s-pro-ultra-robot-vacuum-and-mop-with-self-cleaning-and-auto-empty-dock",
+   "price": 999,
+   "wasPrice": 2299,
+   "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/L40SProUltra--total-top-Photoroom.png?v=1792640245",
+   "inStock": true
   },
   {
    "retailer": "dreame",
@@ -49,7 +50,7 @@
    "url": "https://www.dreame.com.au/products/dreame-l60-ultra-ae-white",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/Untitled_design_3_55a82b39-2b00-4dec-9f7a-47592a5f259f.png?v=1793599621",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "dreame",
@@ -110,7 +111,7 @@
    "url": "https://www.dreame.com.au/products/dreame-x60-ultra",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/Untitled_design_12.png?v=1793600577",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "dreame",
@@ -118,8 +119,7 @@
    "brand": "Dreame",
    "title": "Dreame X60 Ultra Robot Vacuum Cleaner with 7.95cm Slim Design - White",
    "url": "https://www.dreame.com.au/products/dreame-x60-ultra-robot-vacuum-cleaner-white",
-   "price": 1799,
-   "wasPrice": 2999,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/Untitled_design_1_e4195856-683c-4f26-8f19-e03d38e0249f.png?v=1793595524",
    "inStock": false
   }

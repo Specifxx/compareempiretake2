@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-11-06T00:39:18.347Z",
+ "scrapedAt": "2026-11-06T11:17:12.206Z",
  "offers": [
+  {
+   "retailer": "thegoodguys",
+   "sku": "beurer-limited-edition-travel-hair-dryer-hc25rc",
+   "title": "Beurer Limited Edition Travel Hair Dryer",
+   "url": "https://www.thegoodguys.com.au/beurer-limited-edition-travel-hair-dryer-hc25rc",
+   "price": 49,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098515_1053716.png?v=1776230259&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "HC25RC",
+   "brand": "Beurer"
+  },
   {
    "retailer": "thegoodguys",
    "sku": "beurer-stylepro-hairdryer-hc50",
@@ -39,6 +50,16 @@
    "url": "https://www.thegoodguys.com.au/dreame-airstyle-era-8-in-1-hair-dryer-and-styling-tool-dre-airstyleera",
    "price": 398,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099528_1081332.png?v=1784178952&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Dreame"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "dreame-airstyle-pro-7-in-1-hair-dryer-and-styling-tool-purple-dre-airstylep-p",
+   "title": "Dreame AirStyle Pro 7 In 1 Hair Dryer And Styling Tool Purple",
+   "url": "https://www.thegoodguys.com.au/dreame-airstyle-pro-7-in-1-hair-dryer-and-styling-tool-purple-dre-airstylep-p",
+   "price": 599,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100111_1084262.png?v=1793848905&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Dreame"
   },
@@ -130,17 +151,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "dyson-supersonic-hair-dryer-ironfuchsia-386738-01",
-   "title": "Dyson Supersonic Hair Dryer Iron/Fuchsia",
-   "url": "https://www.thegoodguys.com.au/dyson-supersonic-hair-dryer-ironfuchsia-386738-01",
-   "price": 494,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50077005_781495.png?v=1781159492&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "386738-01",
-   "brand": "Dyson"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "dyson-supersonic-hair-dryer-nickelcopper-389925-01",
    "title": "Dyson Supersonic Hair Dryer Nickel/Copper",
    "url": "https://www.thegoodguys.com.au/dyson-supersonic-hair-dryer-nickelcopper-389925-01",
@@ -185,6 +195,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "dyson-supersonic-hair-dryer-prussian-blue-113297-01",
+   "title": "Dyson Supersonic Hair Dryer Prussian Blue",
+   "url": "https://www.thegoodguys.com.au/dyson-supersonic-hair-dryer-prussian-blue-113297-01",
+   "price": 599,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094487_951166.png?v=1776231607&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "113297-01",
+   "brand": "Dyson"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "dyson-supersonic-travel-hair-dryer-ceramic-pink-rose-gold-492459-01",
    "title": "Dyson Supersonic Travel Hair Dryer Ceramic Pink / Rose Gold",
    "url": "https://www.thegoodguys.com.au/dyson-supersonic-travel-hair-dryer-ceramic-pink-rose-gold-492459-01",
@@ -211,6 +232,26 @@
    "url": "https://www.thegoodguys.com.au/laifen-air-pro-high-speed-hair-dryer-jungle-green-90075930",
    "price": 179,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100797_1094069.png?v=1789105815&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Laifen"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "laifen-se-2-high-speed-hair-dryer-pastel-purple-90066065",
+   "title": "Laifen SE 2 High Speed Hair Dryer Pastel Purple",
+   "url": "https://www.thegoodguys.com.au/laifen-se-2-high-speed-hair-dryer-pastel-purple-90066065",
+   "price": 249,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100795_1094254.png?v=1789105695&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Laifen"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "laifen-se-2-high-speed-hair-dryer-pastel-white-90066070",
+   "title": "Laifen SE 2 High Speed Hair Dryer Pastel White",
+   "url": "https://www.thegoodguys.com.au/laifen-se-2-high-speed-hair-dryer-pastel-white-90066070",
+   "price": 249,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100796_1094255.png?v=1789105748&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Laifen"
   },
@@ -315,17 +356,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "remington-pro-air-turbo-2400w-hair-dryer-d5220au",
-   "title": "Remington Pro Air Turbo 2400W Hair Dryer",
-   "url": "https://www.thegoodguys.com.au/remington-pro-air-turbo-2400w-hair-dryer-d5220au",
-   "price": 49,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50026492_127362.png?v=1776227757&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "D5220AU",
-   "brand": "Remington"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "remington-pro-ceramic-hair-straightener-s5527au",
    "title": "Remington Pro Ceramic Hair Straightener",
    "url": "https://www.thegoodguys.com.au/remington-pro-ceramic-hair-straightener-s5527au",
@@ -388,17 +418,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50093983_955406.png?v=1776232357&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "SBB"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "shark-flexstyle-air-styling-and-drying-system-black-hd421",
-   "title": "Shark FlexStyle Air Styling And Drying System Black",
-   "url": "https://www.thegoodguys.com.au/shark-flexstyle-air-styling-and-drying-system-black-hd421",
-   "price": 399,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094548_958040.png?v=1776233219&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "HD421",
-   "brand": "Shark"
   },
   {
    "retailer": "thegoodguys",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T01:31:16.042Z",
+ "scrapedAt": "2026-11-06T12:22:15.900Z",
  "offers": [
   {
    "retailer": "uk-hughes",
@@ -110,6 +110,16 @@
    "price": 999,
    "image": "https://cdn6.hughes.co.uk/media/37/25/a3/1715347184/LG-US90TY-A.jpg",
    "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "1000003084",
+   "brand": "Majority",
+   "title": "Majority Bowfell Axis 2.1 Soundbar with Dolby Atmos",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/majority/1000003084",
+   "price": 129.99,
+   "image": "https://cdn6.hughes.co.uk/media/ca/38/ea/1789479633/MAJ-AXISBLK-1.jpg",
+   "inStock": true
   },
   {
    "retailer": "uk-hughes",
@@ -313,6 +323,16 @@
   },
   {
    "retailer": "uk-hughes",
+   "sku": "rayg1uk1blk",
+   "brand": "Sonos",
+   "title": "Sonos Ray All-In-One Soundbar - Black",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/sonos/rayg1uk1blk",
+   "price": 174.97,
+   "image": "https://cdn6.hughes.co.uk/media/g0/2a/f1/1751020673/SNS-RAY-BLACK-A.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
    "sku": "rayg1uk1",
    "brand": "Sonos",
    "title": "Sonos Ray All-In-One Soundbar - White",
@@ -410,16 +430,6 @@
    "price": 99,
    "image": "https://cdn6.hughes.co.uk/media/1e/af/66/1725379870/TCL-S55H-A.jpg",
    "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "s65kuk",
-   "brand": "Tcl",
-   "title": "TCL S65K 5.1ch True Surround Soundbar - Black",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/tcl/s65kuk",
-   "price": 169,
-   "image": "https://cdn6.hughes.co.uk/media/96/7f/4e/1793895971/TCL-S65K-10.jpg",
-   "inStock": true
   }
  ]
 }

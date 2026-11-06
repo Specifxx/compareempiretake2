@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T00:42:36.038Z",
+ "scrapedAt": "2026-11-06T11:26:25.338Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -64,7 +64,7 @@
    "price": 109,
    "wasPrice": 119,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807743-Product-0-I-639087917404928523.jpg?v=1773195007",
-   "inStock": true,
+   "inStock": false,
    "brand": "Aoc"
   },
   {
@@ -859,7 +859,7 @@
    "url": "https://www.jbhifi.com.au/products/lenovo-l27h-4a-27-qhd-100hz-ips-usb-c-monitor",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/788735-Product-0-I-638719837201623338.jpg?v=1736387127",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lenovo"
   },
   {
@@ -948,6 +948,16 @@
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-r27qc-27-qhd-180hz-va-curved-gaming-monitor",
    "price": 449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/788739-Product-0-I-639143998805571607.jpg?v=1778803149",
+   "inStock": true,
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "817777",
+   "title": "Lenovo Legion R27s 27\" FHD 144Hz Gaming Monitor",
+   "url": "https://www.jbhifi.com.au/products/lenovo-legion-r27s-27-fhd-144hz-gaming-monitor",
+   "price": 199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817777-Product-0-I-638924968807046647.jpg?v=1756900146",
    "inStock": true,
    "brand": "Lenovo"
   },
@@ -1067,6 +1077,17 @@
    "inStock": true,
    "mpn": "24ML600M",
    "brand": "LG"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "847705",
+   "title": "LG UltraFine evo 32U990A 32\" 6K Nano IPS Black Monitor with Thunderbolt 5.0",
+   "url": "https://www.jbhifi.com.au/products/lg-ultrafine-evo-32u990a-32-6k-nano-ips-black-monitor-with-thunderbolt-5-0",
+   "price": 3399,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/847705-Product-0-I-638974588270128329.jpg?v=1761869799",
+   "inStock": false,
+   "mpn": "32U990A",
+   "brand": "Lg"
   },
   {
    "retailer": "jbhifi",
@@ -1370,7 +1391,7 @@
    "price": 454,
    "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/791309-Product-0-I-638668909805582931.jpg?v=1731295210",
-   "inStock": false,
+   "inStock": true,
    "mpn": "MD342CQPW",
    "brand": "Msi"
   },
@@ -1468,7 +1489,7 @@
    "url": "https://www.jbhifi.com.au/products/philips-242b9t-24-ips-smoothtouch-monitor",
    "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/633402-Product-0-I-638330060417048318.jpg?v=1697409317",
-   "inStock": true,
+   "inStock": false,
    "mpn": "242B9T",
    "brand": "Philips"
   },

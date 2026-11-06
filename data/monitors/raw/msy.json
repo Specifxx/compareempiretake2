@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T00:30:32.369Z",
+ "scrapedAt": "2026-11-06T11:09:25.970Z",
  "offers": [
   {
    "retailer": "msy",
@@ -223,6 +223,17 @@
   },
   {
    "retailer": "msy",
+   "sku": "94936",
+   "title": "AOC 21.5in FHD VA 120Hz Adaptive Sync Monitor",
+   "brand": "AOC",
+   "mpn": "22B40HM",
+   "url": "https://www.msy.com.au/product/aoc-21-5in-fhd-va-120hz-adaptive-sync-monitor-22b40hm-94936",
+   "price": 89,
+   "image": "https://assets.msy.com.au/newsite/images/202607/thumb_img/Monitors-AOC-21-5in-FHD-VA-120Hz-Adaptive-Sync-Monitor-22B40HM-8.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
    "sku": "85606",
    "title": "AOC 23.8in FHD 120Hz AdaptiveSync IPS Monitor",
    "brand": "AOC",
@@ -360,7 +371,7 @@
    "brand": "AOC",
    "mpn": "27B3HA3",
    "url": "https://www.msy.com.au/product/aoc-27in-fhd-120hz-ips-monitor-27b3ha3-85607",
-   "price": 159,
+   "price": 149,
    "image": "https://assets.msy.com.au/newsite/images/202508/thumb_img/Monitors-AOC-27in-FHD-120Hz-IPS-Monitor-27B3HA3-6.jpg",
    "inStock": true
   },
@@ -531,17 +542,6 @@
   },
   {
    "retailer": "msy",
-   "sku": "93353",
-   "title": "AOC 27in QHD IPS 144Hz Adaptive Sync Monitor",
-   "brand": "AOC",
-   "mpn": "Q27B36X",
-   "url": "https://www.msy.com.au/product/aoc-27in-qhd-ips-144hz-adaptive-sync-monitor-q27b36x-93353",
-   "price": 185,
-   "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-AOC-24in-QHD-IPS-144Hz-Adaptive-Sync-Monitor-Q27B36X-8.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
    "sku": "92759",
    "title": "AOC 27in QHD QD-OLED 240Hz Gaming Monitor",
    "brand": "AOC",
@@ -613,7 +613,7 @@
    "brand": "AOC",
    "mpn": "U32G4",
    "url": "https://www.msy.com.au/product/aoc-31-5in-fhd-320hz-uhd-160hz-dual-refresh-rate-fast-ips-gaming-monitor-u32g4-86653",
-   "price": 529,
+   "price": 479,
    "image": "https://assets.msy.com.au/newsite/images/202509/thumb_img/Monitors-AOC-31-5in-FHD-320Hz-UHD-160Hz-Dual-Refresh-Rate-Fast-IPS-Gaming-Monitor-U32G4-10.jpg",
    "inStock": true
   },
@@ -624,7 +624,7 @@
    "brand": "AOC",
    "mpn": "Q32V3S/WS",
    "url": "https://www.msy.com.au/product/aoc-31-5in-qhd-ips-75hz-monitor-q32v3s-ws-58438",
-   "price": 299,
+   "price": 285,
    "image": "https://assets.msy.com.au/newsite/images/202104/thumb_img/58438_thumb_G_1617689308864.jpg",
    "inStock": true
   },
@@ -723,7 +723,7 @@
    "brand": "Asus",
    "mpn": "VA259HGA",
    "url": "https://www.msy.com.au/product/asus-24-5in-fhd-ips-120hz-adaptive-sync-eye-care-gaming-monitor-va259hga-83129",
-   "price": 138,
+   "price": 129,
    "image": "https://assets.msy.com.au/newsite/images/202505/thumb_img/Monitors-Asus-24-5in-FHD-IPS-120Hz-Adaptive-Sync-Eye-Care-Gaming-Monitor-VA259HGA-5.jpg",
    "inStock": true
   },
@@ -1680,7 +1680,7 @@
    "brand": "Gigabyte",
    "mpn": "G27Q3",
    "url": "https://www.msy.com.au/product/gigabyte-27in-qhd-superspeed-ips-320hz-freesync-premium-gaming-monitor-g27q3-94114",
-   "price": 319,
+   "price": 289,
    "image": "https://assets.msy.com.au/newsite/images/202606/thumb_img/Monitors-Gigabyte-27in-QHD-SuperSpeed-IPS-320Hz-FreeSync-Premium-Gaming-Monitor-G27Q3-10.jpg",
    "inStock": true
   },
@@ -1713,7 +1713,7 @@
    "brand": "Gigabyte",
    "mpn": "G27U",
    "url": "https://www.msy.com.au/product/gigabyte-27in-uhd-160hz-fhd-320hz-ss-ips-gaming-monitor-g27u-93208",
-   "price": 399,
+   "price": 369,
    "image": "https://assets.msy.com.au/newsite/images/202604/thumb_img/Monitors-Gigabyte-27in-UHD-160Hz-FHD-320Hz-SS-IPS-Gaming-Monitor-G27U-6.jpg",
    "inStock": true
   },
@@ -2582,7 +2582,7 @@
    "brand": "MSI",
    "mpn": "MAG 274QPF X32",
    "url": "https://www.msy.com.au/product/msi-mag-27in-wqhd-rapid-ips-320hz-adaptive-sync-gaming-monitor-mag-274qpf-x32-93335",
-   "price": 349,
+   "price": 339,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Monitors-MSI-MAG-27in-WQHD-Rapid-IPS-320Hz-Adaptive-Sync-Gaming-Monitor-MAG-274QPF-X32-7.jpg",
    "inStock": true
   },
@@ -3798,6 +3798,17 @@
   },
   {
    "retailer": "msy",
+   "sku": "86351",
+   "title": "Samsung Odyssey G7 G75F 40in WUHD 180Hz AMD FreeSync Premium Pro Curved VA Gaming Monitor",
+   "brand": "Samsung",
+   "mpn": "LS40FG752EEXXY",
+   "url": "https://www.msy.com.au/product/samsung-odyssey-g7-g75f-40in-wuhd-180hz-amd-freesync-premium-pro-curved-va-gaming-monitor-ls40fg752eexxy-86351",
+   "price": 1479,
+   "image": "https://assets.msy.com.au/newsite/images/202508/thumb_img/Monitors-Samsung-Odyssey-G7-G75F-40in-WUHD-180Hz-AMD-FreeSync-Premium-Pro-Curved-VA-Gaming-Monitor-LS40FG752EEXXY-6.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
    "sku": "95594",
    "title": "Samsung Odyssey G8 G80HF 27in 5K 180 Hz / QHD 360 Hz Dual Mode Gaming Monitor",
    "brand": "Samsung",
@@ -3941,17 +3952,6 @@
   },
   {
    "retailer": "msy",
-   "sku": "95880",
-   "title": "Samsung Smart Vision Ai M7 M70F 32in 4K Monitor - White",
-   "brand": "Samsung",
-   "mpn": "LS32FM701UEXXY",
-   "url": "https://www.msy.com.au/product/samsung-smart-vision-ai-m7-m70f-32in-4k-monitor-white-ls32fm701uexxy-95880",
-   "price": 499,
-   "image": "https://assets.msy.com.au/newsite/images/202609/thumb_img/Monitors-Samsung-Smart-Vision-Ai-M7-M70F-32in-4K-Monitor-White-LS32FM701UEXXY-7.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
    "sku": "96066",
    "title": "Samsung VewFinity S5 S55GH 34in UWQHD VA 120Hz FreeSync Premium Curved Monitor",
    "brand": "Samsung",
@@ -3970,17 +3970,6 @@
    "url": "https://www.msy.com.au/product/samsung-viewfinity-34in-wqhd-100hz-va-curved-webcam-business-monitor-ls34c650vaexxy-72137",
    "price": 599,
    "image": "https://assets.msy.com.au/newsite/images/202308/thumb_img/Monitors-Samsung-ViewFinity-34in-WQHD-100Hz-VA-Curved-Business-Monitor-LS34C650VAEXXY-5.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
-   "sku": "85005",
-   "title": "Samsung ViewFinity S60UD 24in QHD IPS 100Hz Monitor",
-   "brand": "Samsung",
-   "mpn": "LS24D600UEEXXY",
-   "url": "https://www.msy.com.au/product/samsung-viewfinity-s60ud-24in-qhd-ips-100hz-monitor-ls24d600ueexxy-85005",
-   "price": 359,
-   "image": "https://assets.msy.com.au/newsite/images/202507/thumb_img/Monitors-Samsung-ViewFinity-S60UD-24in-QHD-IPS-100Hz-Monitor-LS24D600UEEXXY-8.jpg",
    "inStock": true
   },
   {

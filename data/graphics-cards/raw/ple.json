@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T00:30:45.161Z",
+ "scrapedAt": "2026-11-06T11:10:10.157Z",
  "offers": [
   {
    "retailer": "ple",
@@ -71,18 +71,6 @@
    "price": 529,
    "wasPrice": 574,
    "image": "https://plecom.imgix.net/iil-437645-677346.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "677100",
-   "title": "ASUS GeForce RTX 5050 Dual OC 8GB GDDR6",
-   "brand": "ASUS",
-   "mpn": "DUAL-RTX5050-O8G",
-   "url": "https://www.ple.com.au/products/677100/asus-geforce-rtx-5050-dual-oc-8gb-gddr6",
-   "price": 499,
-   "wasPrice": 599,
-   "image": "https://plecom.imgix.net/iil-437642-677100.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -404,6 +392,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "681908",
+   "title": "ASUS Turbo Radeon AI Pro R9700 32GB GDDR6",
+   "brand": "ASUS",
+   "mpn": "TURBO-AI-PRO-R9700-32G",
+   "url": "https://www.ple.com.au/products/681908/asus-turbo-radeon-ai-pro-r9700-32gb-gddr6",
+   "price": 3199,
+   "image": "https://plecom.imgix.net/iil-489283-681908.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
    "sku": "674107",
    "title": "Gigabyte GeForce RTX 3050 Windforce OC V2 6GB GDDR6",
    "brand": "Gigabyte",
@@ -665,7 +664,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5080AORUSIF WD-16GD",
    "url": "https://www.ple.com.au/products/686221/gigabyte-geforce-rtx-5080-aorus-infinity-16gb-gddr7-wood",
-   "price": 3599,
+   "price": 3449,
    "wasPrice": 3909,
    "image": "https://plecom.imgix.net/iil-475440-686221.jpg?w=600&h=600",
    "inStock": true
@@ -933,6 +932,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "673620",
+   "title": "MSI GeForce RTX 5070 Ti 16GB GDDR7 VENTUS 3X OC",
+   "brand": "MSI",
+   "mpn": "GeForce RTX 5070 Ti 16G VENTUS 3X OC",
+   "url": "https://www.ple.com.au/products/673620/msi-geforce-rtx-5070-ti-16gb-gddr7-ventus-3x-oc",
+   "price": 2049,
+   "image": "https://plecom.imgix.net/iil-420588-673620.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "672336",
    "title": "MSI GeForce RTX 5080 16GB GDDR7 VENTUS 3X OC",
    "brand": "MSI",
@@ -1051,7 +1061,8 @@
    "brand": "NVIDIA",
    "mpn": "900-2G153-0000-000",
    "url": "https://www.ple.com.au/products/676396/nvidia-rtx-pro-6000-96gb-gddr7-blackwell-server-edition-oem-packaging",
-   "price": 39999,
+   "price": 34499,
+   "wasPrice": 39999,
    "image": "https://plecom.imgix.net/iil-433064-676396.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1255,7 +1266,7 @@
    "url": "https://www.ple.com.au/products/673937/sapphire-pulse-radeon-rx-9070-xt-16gb-gddr6",
    "price": 1529,
    "image": "https://plecom.imgix.net/iil-422887-673937.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

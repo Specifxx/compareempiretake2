@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T00:31:06.213Z",
+ "scrapedAt": "2026-11-06T11:10:30.816Z",
  "offers": [
   {
    "retailer": "ple",
@@ -579,7 +579,7 @@
    "price": 209,
    "wasPrice": 9999,
    "image": "https://plecom.imgix.net/iil-483023-687707.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -638,7 +638,7 @@
    "price": 499,
    "wasPrice": 519,
    "image": "https://plecom.imgix.net/iil-468439-684019.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -737,10 +737,10 @@
   {
    "retailer": "ple",
    "sku": "688751",
-   "title": "Gigabyte B650E Ealge AX AM5 ATX Desktop Motherboard",
+   "title": "Gigabyte B650E Eagle AX AM5 ATX Desktop Motherboard",
    "brand": "Gigabyte",
    "mpn": "B650E EAGLE WF6E",
-   "url": "https://www.ple.com.au/products/688751/gigabyte-b650e-ealge-ax-am5-atx-desktop-motherboard",
+   "url": "https://www.ple.com.au/products/688751/gigabyte-b650e-eagle-ax-am5-atx-desktop-motherboard",
    "price": 249,
    "image": "https://plecom.imgix.net/iil-487615-688751.jpg?w=600&h=600",
    "inStock": true
@@ -754,7 +754,7 @@
    "url": "https://www.ple.com.au/products/686482/gigabyte-b650em-force-wifi6e-am5-matx-desktop-motherboard",
    "price": 159,
    "image": "https://plecom.imgix.net/iil-477245-686482.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1556,18 +1556,6 @@
    "url": "https://www.ple.com.au/products/687767/msi-b550-gaming-wifi6e-am4-atx-desktop-motherboard",
    "price": 229,
    "image": "https://plecom.imgix.net/iil-483361-687767.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "671105",
-   "title": "MSI B650M Bomber WiFi AM5 mATX Desktop Motherboard",
-   "brand": "MSI",
-   "mpn": "B650M BOMBER WIFI",
-   "url": "https://www.ple.com.au/products/671105/msi-b650m-bomber-wifi-am5-matx-desktop-motherboard",
-   "price": 149,
-   "wasPrice": 179,
-   "image": "https://plecom.imgix.net/iil-409634-671105.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -1839,6 +1827,18 @@
    "price": 129,
    "image": "https://plecom.imgix.net/iil-462718-682997.jpg?w=600&h=600",
    "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "657179",
+   "title": "MSI PRO B760M-A WIFI DDR4 LGA1700 mATX Desktop Motherboard",
+   "brand": "MSI",
+   "mpn": "PRO B760M-A WIFI DDR4",
+   "url": "https://www.ple.com.au/products/657179/msi-pro-b760m-a-wifi-ddr4-lga1700-matx-desktop-motherboard",
+   "price": 199,
+   "wasPrice": 265,
+   "image": "https://plecom.imgix.net/iil-327013-657179.jpg?w=600&h=600",
+   "inStock": false
   },
   {
    "retailer": "ple",

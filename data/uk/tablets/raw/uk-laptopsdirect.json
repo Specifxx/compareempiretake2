@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T01:36:53.254Z",
+ "scrapedAt": "2026-11-06T12:31:42.423Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -29,7 +29,7 @@
    "title": "Apple iPad 2025 11\" Blue 256GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-blue-256gb-wi-fi-tablet-md4h4kn-a/version.asp",
    "price": 499.97,
-   "wasPrice": 529,
+   "wasPrice": 608,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4A4KNA_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -62,7 +62,7 @@
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-silver-256gb-cellular-tablet-md7k4kn-a/version.asp",
    "price": 649.97,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4G4KNA_1_Classic.jpg?v=9",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -108,6 +108,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1932841",
+   "mpn": "MVW83NF/A",
+   "title": "Apple iPad Pro 2024 11\" Standard Glass Silver 2TB Cellular Tablet",
+   "url": "https://www.laptopsdirect.co.uk/apple-ipad-pro-2024-11-standard-glass-silver-2tb-cellular-tablet-mvw83nf-a/version.asp",
+   "price": 2009.97,
+   "wasPrice": 2129.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/MVW83NFA_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1932829",
    "mpn": "MVVH3NF/A",
    "title": "Apple iPad Pro 2024 11\" Standard Glass Silver 2TB Wi-Fi Tablet",
@@ -134,6 +145,17 @@
    "url": "https://www.laptopsdirect.co.uk/lenovo-tab-10.1-luna-gray-128gb-wi-fi-tablet-zaek0012gb/version.asp",
    "price": 175.97,
    "wasPrice": 199,
+   "image": "https://www.laptopsdirect.co.uk/Images/ZAEK0012GB_1_Classic.jpg?v=21",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1996991",
+   "mpn": "ZAEL0024GB",
+   "title": "Lenovo Tab 10.1\" Luna Grey 64GB 4G Tablet",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-tab-10.1-luna-grey-64gb-4g-tablet-zael0024gb/version.asp",
+   "price": 189.97,
+   "wasPrice": 199.97,
    "image": "https://www.laptopsdirect.co.uk/Images/ZAEK0012GB_1_Classic.jpg?v=21",
    "inStock": true
   },
@@ -230,8 +252,18 @@
    "title": "Samsung Galaxy Tab A11+ 11\" Silver 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-a11-11-silver-128gb-wi-fi-tablet-sm-x230nzsreub/version.asp",
    "price": 197.97,
-   "wasPrice": 289,
    "image": "https://www.laptopsdirect.co.uk/Images/SM-X230NZSPEUB_1_Classic.jpg?v=6",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1793499",
+   "mpn": "SM-T636BZKEEEA",
+   "title": "Samsung Galaxy Tab Active4 Pro 10.1\" Black 128GB Wi-Fi & Cellular Tablet",
+   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-active4-pro-10.1-black-128gb-5g-tablet-sm-t636bzkeeea/version.asp",
+   "price": 625.16,
+   "wasPrice": 749,
+   "image": "https://www.laptopsdirect.co.uk/Images/SM-T636BZKEEEA_1_Classic.jpg?v=29",
    "inStock": true
   },
   {
@@ -262,7 +294,7 @@
    "mpn": "SM-X520NZAREUB",
    "title": "Samsung Galaxy Tab S10 FE 10.9\" Grey 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-s10-fe-10.9-grey-128-wi-fi-tablet-sm-x520nzareub/version.asp",
-   "price": 512.36,
+   "price": 514.76,
    "image": "https://www.laptopsdirect.co.uk/Images/A1SM-X626BZAREUB_1_Classic.jpg?v=9",
    "inStock": true
   },
@@ -274,16 +306,6 @@
    "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-s10-12.4-platinum-silver-256gb-5g-tablet-sm-x826bzsreub/version.asp",
    "price": 1229.97,
    "image": "https://www.laptopsdirect.co.uk/Images/SM-X820NZSPEUB_1_Classic.jpg?v=8",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1861405",
-   "mpn": "SM-X916BZEAEUB",
-   "title": "Samsung Galaxy Tab S9 Ultra 14.6\" Beige 256GB 5G Tablet",
-   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-s9-ultra-14.6-beige-256gb-5g-tablet-sm-x916bzeaeub/version.asp",
-   "price": 1241.96,
-   "image": "https://www.laptopsdirect.co.uk/Images/SM-X916BZEAEUB_1_Classic.jpg?v=10",
    "inStock": true
   },
   {
