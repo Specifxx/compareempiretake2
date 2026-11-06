@@ -48,3 +48,13 @@ The scrapers are in `scripts/scrapers/regions/us/` and their entries in `src/lib
 ## Probed 2026-11-01 from GitHub Actions (still blocked)
 
 Captcha or 403: Nothing, Motorola, OnePlus, Fairphone, Mint Mobile, Best Buy, Ninja, Shark, Dyson, Micro Center, Newegg, B&H, Adorama, Staples, Costco, Crucial, Kingston, AJ Madison, Lowe's, Home Depot, Cosori, Chefman, Dreame (products.json), eufy. Reachable and worth a scraper later: Google Store (Pixel), Samsung US (phones and SSDs carry `"price"` in the HTML now), Breville US, Office Depot.
+
+## Round 21 (2026-11-06): the US 10x / UK 5x store goal
+
+Owner's goal: about ten times Australia's stores and listings in the US and five times in the UK. Baseline that morning: AU 131
+stores / 41,848 listings, UK 126 / 37,063, US 126 / 23,890. A research pass ranked popular US stores by category (coffee, BBQ,
+vacuum, barber and salon, toy, camera, hi-fi, drone and PC specialists, plus brand stores), dropped marketplaces, forwarders,
+dropshippers and used/refurb sellers, and `docs/stores/candidates21-us-*.txt` (521 domains) went through *Probe stores*. 106
+stores read cleanly in USD and were added through `auto-shopify.ts`, each limited to the categories its own range covers (the
+shared title checks mis-file bike headsets as headphones and salon trimmers as cameras, so a store never gets a category outside
+its trade). The rest were walled, not Shopify/WooCommerce, or priced in another currency.
