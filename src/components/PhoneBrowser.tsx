@@ -6,6 +6,8 @@ import { categoryById } from "@/lib/categories";
 import { search } from "@/lib/search";
 import { CloseIcon, FilterIcon, SearchIcon } from "./icons";
 import { PhoneCard } from "./PhoneCard";
+import { RegionTag } from "./RegionTag";
+import { useRegion } from "@/lib/use-region";
 
 type Band = [string, number | undefined, number | undefined];
 const PRICE_BANDS: Record<string, Band[]> = {
@@ -120,6 +122,7 @@ function Browser({ initial, total, options, src, fixedBrand, category = "phones"
   const complete = !!full || !src || initial.length >= total;
 
   const q = params.get("q") ?? "";
+  const region = useRegion();
   const brandParam = params.get("brand") ?? "";
   const brands = useMemo(() => brandParam.split(",").filter(Boolean), [brandParam]);
   const min = params.get("min") ? Number(params.get("min")) : undefined;
@@ -363,6 +366,7 @@ function Browser({ initial, total, options, src, fixedBrand, category = "phones"
             <>
               {count} {count === 1 ? "product" : "products"}
               {q && <> matching “<span className="text-ink">{q}</span>”</>}
+              <RegionTag region={region} className="ml-3" />
             </>
           )}
         </div>

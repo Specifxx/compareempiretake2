@@ -5,6 +5,7 @@ import { SearchIcon } from "./icons";
 import { useResults, type SearchEntry } from "./SearchBox";
 import { useSearchIndex } from "@/lib/use-search-index";
 import { useRegionKit } from "@/lib/use-region";
+import { Currency, RegionTag } from "./RegionTag";
 
 const NONE: SearchEntry[] = [];
 const SUGGESTIONS = ["iPhone 17 Pro", "RTX 5070 Ti", '65" OLED', "AirPods", "PS5", "under $500"];
@@ -57,6 +58,10 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
           />
           <kbd className="hidden rounded-md border border-line px-1.5 py-0.5 text-[11px] text-ink-mute sm:block">esc</kbd>
         </div>
+        <div className="flex items-center justify-between gap-3 border-b border-line px-4 py-2">
+          <span className="eyebrow">{q ? "Results" : "Try"}</span>
+          <RegionTag region={region} />
+        </div>
         {!q && (
           <div className="flex flex-wrap gap-2 border-b border-line px-4 py-3">
             {SUGGESTIONS.map((s) => (
@@ -83,7 +88,7 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
                 {r.price !== undefined && (
                   <div className="text-right">
                     <div className="text-[11px] text-ink-mute">from</div>
-                    <div className="price">{$(r.price)}</div>
+                    <div className="price">{$(r.price)}<Currency region={region} /></div>
                   </div>
                 )}
               </button>

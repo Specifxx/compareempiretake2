@@ -38,6 +38,17 @@ function within1(a: string, b: string): boolean {
   return edits + (a.length - i) + (b.length - j) <= 1;
 }
 
+const STORAGE = /^\d+(gb|tb)$/;
+
+/** True when every place `w` occurs in `hay` is followed by, or preceded by, another digit: a different model number. */
+function digitRunsOn(hay: string, w: string): boolean {
+  for (let i = hay.indexOf(w); i >= 0; i = hay.indexOf(w, i + 1)) {
+    const after = hay[i + w.length], before = hay[i - 1];
+    if (!(after && /\d/.test(after)) && !(before && /\d/.test(before) && /^\d/.test(w))) return false;
+  }
+  return true;
+}
+
 export function searchScore(query: string, name: string): number {
   const q = norm(query)
     .replace(/\b([a-z]+)(\d+)([a-z]+)?\b/g, (_, a, n, b) => `${a}${n} ${b ?? ""}`)
@@ -50,14 +61,20 @@ export function searchScore(query: string, name: string): number {
   const joined = words.join("");
   let score = 0;
   for (const w of q) {
+    // A model number is exact in its digits (owner, 2026-11-06: search by exact model numbers): "qn90" is not a
+    // prefix of "qn900f", "5070" not of "50700", and no typo tolerance.
+    const modelNo = /\d/.test(w) && w.length >= 2;
     let best = 0;
     for (const n of words) {
       if (n === w) best = Math.max(best, 4);
-      else if (n.startsWith(w)) best = Math.max(best, 3);
-      else if (w.length >= 4 && within1(w, n)) best = Math.max(best, 2);
-      else if (w.length >= 3 && n.includes(w)) best = Math.max(best, 1.5);
+      else if (n.startsWith(w) && !(modelNo && /\d/.test(n[w.length]))) best = Math.max(best, 3);
+      else if (!modelNo && w.length >= 4 && within1(w, n)) best = Math.max(best, 2);
+      else if (w.length >= 3 && n.includes(w) && !(modelNo && digitRunsOn(n, w))) best = Math.max(best, 1.5);
     }
-    if (!best && joined.includes(w)) best = 1;
+    if (!best && joined.includes(w) && !(modelNo && digitRunsOn(joined, w))) best = 1;
+    // Names carry no storage ("iPhone 17 Pro 256GB" is the iPhone 17 Pro page, 256GB one of its variants), so a
+    // capacity the name lacks is not a miss.
+    if (!best && STORAGE.test(w)) continue;
     if (!best) return 0;
     score += best;
   }
