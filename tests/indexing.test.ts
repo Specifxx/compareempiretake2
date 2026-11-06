@@ -2,7 +2,7 @@
 // sitemap, each page's real lastmod, and the clean slug an entity-mangled URL redirects to.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { brandIndexable, cleanedSlug, latest, productIndexable, productInSitemap, productLastmod, productTitle, SITEMAP_MIN_STORES } from "../src/lib/indexing";
+import { brandIndexable, cleanedSlug, latest, productIndexable, productInIndexNow, productInSitemap, productLastmod, productTitle, SITEMAP_MIN_STORES } from "../src/lib/indexing";
 import { cleanTitle } from "../scripts/lib/http";
 import type { Phone } from "../src/lib/types";
 
@@ -17,11 +17,26 @@ test("a product page is indexed only when two or more stores sell it and one has
   assert.equal(productIndexable(product([offer("a", 10), offer("b", 11)])), true);
 });
 
-test("the sitemap lists the strongest tier only: three or more stores, in stock", () => {
+test("Australia's sitemap lists the strongest tier only: three or more stores, in stock", () => {
   assert.equal(SITEMAP_MIN_STORES, 3);
   assert.equal(productInSitemap(product([offer("a", 10), offer("b", 11)])), false);
   assert.equal(productInSitemap(product([offer("a", 10), offer("b", 11), offer("c", 12)])), true);
   assert.equal(productInSitemap(product([offer("a", 10, false), offer("b", 11, false), offer("c", 12, false)])), false);
+});
+
+test("the US, UK, Canada and Singapore sitemaps list every indexable product: two or more stores, in stock", () => {
+  for (const region of ["us", "uk", "ca", "sg"] as const) {
+    const at = (p: Phone) => ({ ...p, region });
+    assert.equal(productInSitemap(at(product([offer("a", 10)]))), false, `${region}: one store stays out`);
+    assert.equal(productInSitemap(at(product([offer("a", 10), offer("b", 11)]))), true, `${region}: two stores`);
+    assert.equal(productInSitemap(at(product([offer("a", 10, false), offer("b", 11, false)]))), false, `${region}: sold out`);
+  }
+  assert.equal(productInSitemap({ ...product([offer("a", 10), offer("b", 11)]), region: "au" }), false, "Australia keeps three");
+});
+
+test("IndexNow keeps the three-store tier in every region (Vercel cost)", () => {
+  assert.equal(productInIndexNow({ ...product([offer("a", 10), offer("b", 11)]), region: "us" }), false);
+  assert.equal(productInIndexNow({ ...product([offer("a", 10), offer("b", 11), offer("c", 12)]), region: "us" }), true);
 });
 
 test("a brand page is indexed when one of its products is", () => {

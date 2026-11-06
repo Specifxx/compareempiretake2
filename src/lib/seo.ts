@@ -10,8 +10,9 @@ import type { CategoryId, Phone } from "./types";
  * Which pages go in the sitemap. Every indexable page stays live and crawlable (the /browse pages link to all
  * of them); the sitemap only tells search engines where to start. A new site with ~28K programmatic product pages
  * per region, most sold by one store, looks thin (Search Console, 2026-10-29: impressions peaked and faded within
- * days of the first crawl), so the sitemap lists only products sold by three or more stores, in stock
- * (lib/indexing.ts `productInSitemap`; `SITEMAP_MIN_STORES` in Vercel widens it to 2 once this tier is indexed),
+ * days of the first crawl), so the sitemap lists only products a buyer can compare: two or more stores in stock in
+ * the US, UK, Canada and Singapore, three or more in Australia (lib/indexing.ts `productInSitemap`;
+ * `SITEMAP_MIN_STORES` in Vercel widens Australia to 2),
  * brands with an indexable product, and the head-to-head pages. One-store and sold-out products are noindex.
  *
  * lastmod is each page's real last change (lib/indexing.ts `productLastmod`: the last day a price moved), never
