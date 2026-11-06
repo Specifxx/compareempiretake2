@@ -61,6 +61,8 @@ function toOffer(node: Record<string, unknown>, url: string, title: string): Raw
   const price = Number(String(offer?.price ?? "").replace(/[^0-9.]/g, ""));
   if (!price) return undefined;
   const mpn = code(url);
+  // Carrier models end in the carrier's code (SM-S938UZBAVZW Verizon, …ATT, …TMB, …USC); unlocked ones in XAA/XAR.
+  if (mpn && /(?:VZW|ATT|TMB|USC|SPR|DSH)$/.test(mpn)) return undefined;
   const image = typeof node.image === "string" ? node.image.replace(/\?\$.*$/, "") : undefined;
   return {
     retailer: "us-samsung",
@@ -100,9 +102,7 @@ async function tablets(): Promise<RawOffer[]> {
     const slug = url.split("/").pop()!;
     const storage = slug.match(/-(\d+(?:gb|tb))-/)?.[1]?.toUpperCase();
     if (!storage) continue;
-    const g5 = /\b5G\b/i.test(n) || /-5g-/.test(slug);
-    const model = n.replace(/\s*\([\d.]+"?\)\s*/g, " ").replace(/\b5G\b/i, "").replace(/^Samsung\s+/i, "").replace(/\s+/g, " ").trim();
-    const t = toOffer(node, url, `Samsung ${model} ${storage} ${g5 ? "5G" : "Wi-Fi"}`);
+    const t = toOffer(node, url, `Samsung ${n.replace(/^Samsung\s+/i, "")} ${storage}`);
     if (t) out.push(t);
   }
   return out;
@@ -118,8 +118,7 @@ async function smartwatches(): Promise<RawOffer[]> {
     const model = parts[0].replace(/^Samsung\s+/i, "");
     const size = n.match(/(\d+)\s?mm/i)?.[1] ?? url.match(/-(\d+)mm-/)?.[1] ?? (/ultra/i.test(n) ? "47" : undefined);
     const lte = /\bLTE\b/i.test(n) || /-lte-/.test(url) || /ultra/i.test(n);
-    const colour = parts.length > 3 ? parts[parts.length - 1] : undefined;
-    const t = toOffer(node, url, `Samsung ${model} ${size ? `${size}mm ` : ""}${lte ? "GPS + Cellular (LTE)" : "GPS (Bluetooth)"}${colour ? ` - ${colour}` : ""}`);
+    const t = toOffer(node, url, `Samsung ${model} ${size ? `${size}mm ` : ""}${lte ? "GPS + Cellular (LTE)" : "GPS (Bluetooth)"}`);
     if (t) out.push(t);
   }
   return out;
