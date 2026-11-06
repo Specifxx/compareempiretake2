@@ -134,6 +134,8 @@ export interface PhoneSummary {
   /** Stores selling it on pre-order today (lib/preorders.ts); 0 once it is simply in stock. */
   preorderStores: number;
   atLowest: boolean;
+  /** Model codes the stores name, so search finds "SM-S947B". */
+  codes?: string[];
   region?: RegionId;
   /** Today's cheapest new eBay listing, when the daily eBay job found one. */
   ebayPrice?: number;
@@ -179,6 +181,7 @@ export function summarise(p: Phone): PhoneSummary {
     region: p.region,
     ebayPrice: p.ebay?.price,
     atLowest: p.variants.some((v) => v.previousBest !== undefined && v.bestPrice <= (v.lowestEver ?? Infinity) && v.bestPrice < v.previousBest),
+    codes: p.codes,
   };
 }
 

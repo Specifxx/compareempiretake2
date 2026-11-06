@@ -280,6 +280,8 @@ export interface Phone {
   specs: Specs;
   /** Release-ish ordering: higher is newer, derived from model numbers. */
   generation: number;
+  /** Model codes the stores name ("WH-1000XM5", "SM-S947B"), most common first, so search finds them. */
+  codes?: string[];
   firstSeen: string;
   /** Today's cheapest matching new eBay listing (data/<region>/ebay.json), attached at load. */
   ebay?: { price: number; shipping?: number; title: string; url: string; seller?: string; feedback?: number; checkedAt: string };

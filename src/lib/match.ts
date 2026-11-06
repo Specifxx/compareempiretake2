@@ -8,7 +8,7 @@
  * comparison sites get wrong and lose trust over.
  */
 import { parseTitle, storageLabel } from "./normalize";
-import { isMoreAccessory, MORE_CATEGORIES, moreSpecs, parseMore } from "./match-more";
+import { isMoreAccessory, MORE_CATEGORIES, moreSpecs, parseMore, productCodes } from "./match-more";
 import type { CategoryId, RawOffer, Specs } from "./types";
 
 export interface Parsed {
@@ -33,6 +33,8 @@ export interface Parsed {
    * Empty means the listing doesn't say.
    */
   discriminator?: string;
+  /** Every model code the listing names (title and MPN), for search and for joining pages that share one. */
+  codes?: string[];
 }
 
 const BRANDS: Record<string, string> = Object.fromEntries(
@@ -413,6 +415,12 @@ function bag(t: string, brand: string): string[] {
 }
 
 export function parseProduct(o: RawOffer, category: CategoryId): Parsed | null {
+  const p = parseProductInner(o, category);
+  if (p) p.codes = productCodes(`${clean(o.title)} ${o.mpn ?? ""}`);
+  return p;
+}
+
+function parseProductInner(o: RawOffer, category: CategoryId): Parsed | null {
   if (MORE_CATEGORIES.includes(category)) {
     // These categories legitimately contain words the first set treats as accessories ("Case", "Dock", "Soundbar").
     if (SECOND_HAND.test(o.title) || isMoreAccessory(category, o.title)) return null;
@@ -437,6 +445,37 @@ export function parseProduct(o: RawOffer, category: CategoryId): Parsed | null {
     default:
       return null;
   }
+}
+
+/**
+ * Pages of one brand that every listing on both sides names by the same model code are one product
+ * ("Sony WH-1000XM5 Noise Cancelling Headphones" and "Sony WH-1000XM5 Premium Noise Cancelling Wireless Over-Ear
+ * Headphones"; owner, 2026-11-06). The code must be EVERY listing's longest code on both sides and six characters
+ * or more: a series name ("iQ300" on three Siemens fridges, "X-T50" on the body and its lens kits, whose kits name
+ * a longer lens code) never joins pages. A stated spec that disagrees (`conflicts`) keeps them apart, and a screen
+ * size must match. Returns which group joins which: the smaller joins the larger (the joined page's name is then
+ * the most common one, and the old URL redirects, next.config.mjs). Never a fuzzy name.
+ */
+export function sharedCodeMerges(
+  groups: { key: string; brand: string; size?: number; codes: string[][]; disc: string[] }[],
+): Map<string, string> {
+  const out = new Map<string, string>();
+  const shared = (g: (typeof groups)[number]) => {
+    const primary = g.codes[0]?.[0];
+    return primary && primary.length >= 6 && g.codes.every((cs) => cs[0] === primary) ? [primary] : [];
+  };
+  const sorted = groups.map((g) => ({ g, shared: shared(g) })).filter((x) => x.shared.length).sort((a, b) => b.g.codes.length - a.g.codes.length);
+  const into = new Map<string, (typeof sorted)[number]>();
+  for (const x of sorted) {
+    const t = sorted.find((y) => y !== x && !out.has(y.g.key) && y.g.brand === x.g.brand && y.g.size === x.g.size && y.shared.some((c) => x.shared.includes(c)) && (into.get(y.g.key) ?? y).g.codes.length >= x.g.codes.length);
+    if (!t || out.has(x.g.key)) continue;
+    const target = into.get(t.g.key) ?? t;
+    if (x.g.disc.some((d) => target.g.disc.some((e) => conflicts(d, e)))) continue;
+    out.set(x.g.key, target.g.key);
+    target.g.disc = [...target.g.disc, ...x.g.disc];
+    into.set(x.g.key, target);
+  }
+  return out;
 }
 
 /**

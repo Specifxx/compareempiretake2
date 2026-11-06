@@ -14,6 +14,8 @@ export interface SearchEntry {
   category?: string;
   href: string;
   name: string;
+  /** Model codes the stores name ("SM-S947B"), searched with the name. */
+  codes?: string[];
   sub?: string;
   image?: string;
   price?: number;

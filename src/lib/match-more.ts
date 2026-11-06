@@ -224,19 +224,28 @@ const CODE_FIRST: Partial<Record<CategoryId, true>> = {
   "air-fryers": true, "coffee-machines": true, fridges: true, "washing-machines": true, dishwashers: true, vacuums: true,
   "hair-care": true, "small-kitchen": true, bbqs: true, "coffee-gear": true,
 };
-const strongCode = (t: string) =>
-  t
-    .split(/[\s(),/[\]]+/)
-    .map((w) => w.replace(/^[-–.]+|[-–.:;]+$/g, "").toUpperCase())
-    .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !UNIT_FIGURE.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d|802\.11)/.test(w) && !COMPONENT_CODE.test(w) && !CPU_LIKE.test(w) && !/^(BE|AXE?|AC)\d{3,5}$/.test(w))
-    .sort((a, b) => b.length - a.length)[0];
+/**
+ * Every maker's model code a title holds ("WH-1000XM5", "SM-S947B", "BES870BSS"), longest first: five to twenty
+ * characters with letters and at least two digits, never a figure with a unit, a bus name, a component or a CPU.
+ * The catalogue keeps them for search and for joining pages that share one (2026-11-06).
+ */
+export const productCodes = (t: string): string[] => [
+  ...new Set(
+    t
+      .split(/[\s(),/[\]]+/)
+      .map((w) => w.replace(/^[-–.]+|[-–.:;]+$/g, "").toUpperCase())
+      .filter((w) => w.length >= 5 && w.length <= 20 && (w.match(/\d/g)?.length ?? 0) >= 2 && /[A-Z]/.test(w) && !UNIT_FIGURE.test(w) && !/^(WI-?FI\d|DDR\d|GEN\d|USB\d|802\.11)/.test(w) && !COMPONENT_CODE.test(w) && !CPU_LIKE.test(w) && !/^(BE|AXE?|AC)\d{3,5}$/.test(w))
+      .sort((a, b) => b.length - a.length),
+  ),
+];
+const strongCode = (t: string) => productCodes(t)[0];
 
 /**
  * A figure with a unit is never a model code: "300ML" merged every 300 ml moka pot, "10-CUP" every 10-cup coffee
  * maker and "30-INCH" every 30" grill of a brand (2026-11-06).
  */
 const UNIT_FIGURE =
-  /^\d+(\.\d+)?-?(GB|TB|MB|MHZ|GHZ|HZ|MM|CM|M|KM|IN|INCH|FT|W|KW|V|A|AMPS?|MAH|P|L|LTR|ML|CL|KG|G|LBS?|OZ|LITRES?|LITERS?|RPM|BAR|PSI|STAR|CUPS?|PK|PACK|PCS?|PIECES?|BTU|DB|K|X|PORTS?|SLOTS?|CORES?|CH|BIT|ZONE|PLACE|SETTINGS?|BURNERS?|DOOR|SPEEDS?|SEAT|TRAYS?|YEARS?|YRS?|MONTHS?|DAYS?|HRS?|MINS?|SEC|S|H|TH|ND|RD|ST|D|IN-\d)$/;
+  /^\d+(\.\d+)?-?(GB|TB|MB|MHZ|GHZ|HZ|MM|CM|M|KM|IN|INCH|FT|W|KW|V|A|AMPS?|MAH|P|L|LTR|ML|CL|KG|G|LBS?|OZ|LITRES?|LITERS?|RPM|BAR|PSI|OHMS?|STAR|CUPS?|PK|PACK|PCS?|PIECES?|BTU|DB|K|X|PORTS?|SLOTS?|CORES?|CH|BIT|ZONE|PLACE|SETTINGS?|BURNERS?|DOOR|SPEEDS?|SEAT|TRAYS?|YEARS?|YRS?|MONTHS?|DAYS?|HRS?|MINS?|SEC|S|H|TH|ND|RD|ST|D|IN-\d)$/;
 /** A processor's model ("U7-255H", "5-235T", "7-240H") names the chip, not the computer it sits in. */
 const CPU_LIKE = /^[A-Z]?\d-\d{3,5}[A-Z]{0,3}$/;
 
@@ -341,7 +350,12 @@ export function parseMore(o: RawOffer, category: CategoryId, brandOf: (o: RawOff
 function discriminatorFor(category: CategoryId, t: string, code: string | undefined): string | undefined {
   if (category === "headphones") {
     // Bose QuietComfort Headphones and QuietComfort Earbuds share every identity word (2026-11-06).
-    return /\b(earbuds?|earphones?|in-ear|buds|tws|true wireless)\b/i.test(t) ? "earbuds" : /\b(headphones?|headset|over-ear|on-ear)\b/i.test(t) ? "headphones" : "";
+    const kind = /\b(earbuds?|earphones?|in-ear|buds|tws|true wireless)\b/i.test(t) ? "earbuds" : /\b(headphones?|headset|over-ear|on-ear)\b/i.test(t) ? "headphones" : "";
+    // HiFiMAN sells the HE-R10D wired and wireless at two prices: a stated wiring must agree too.
+    const wire = /\bwireless\b/i.test(t) ? "wireless" : /\bwired\b/i.test(t) ? "wired" : "";
+    // Beyerdynamic's DT 770 PRO comes in 32, 80 and 250 ohm, three products under one code.
+    const ohm = t.match(/\b(\d{2,3})\s?(?:ohms?|Ω)\b/i)?.[1] ?? "";
+    return `${kind}|${wire}|${ohm}`;
   }
   if (category === "bbqs") {
     // Weber's codes repeat across lines (Spirit E-425, Genesis E-425) and fuels (LPG, natural gas): the word
