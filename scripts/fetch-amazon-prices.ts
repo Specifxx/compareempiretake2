@@ -11,13 +11,14 @@
  */
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { amazonStore, type AmazonRegion } from "../src/lib/amazon";
+import { amazonStore } from "../src/lib/amazon";
+import type { AmazonMarket } from "../src/lib/amazon-creators";
 import { AmazonRefused, credentialsFor, creatorsClient, CURRENCY, pickListing, PRICE_RESOURCES } from "../src/lib/amazon-creators";
 import { productsFor, storeMedian } from "./amazon-shared";
 
-const REGIONS: AmazonRegion[] = ["au", "us", "uk"];
-const asinsFile = (r: AmazonRegion) => path.join(process.cwd(), "data", "amazon", `asins-${r}.json`);
-const outFile = (r: AmazonRegion) => path.join(process.cwd(), "data", "amazon-live", `${r}.json`);
+const REGIONS: AmazonMarket[] = ["au", "us", "uk", "ca"];
+const asinsFile = (r: AmazonMarket) => path.join(process.cwd(), "data", "amazon", `asins-${r}.json`);
+const outFile = (r: AmazonMarket) => path.join(process.cwd(), "data", "amazon-live", `${r}.json`);
 
 async function main() {
   rmSync(path.join(process.cwd(), "data", "amazon-live"), { recursive: true, force: true });
@@ -27,7 +28,7 @@ async function main() {
   }
 }
 
-async function region(r: AmazonRegion) {
+async function region(r: AmazonMarket) {
   const ASINS = asinsFile(r);
   const OUT = outFile(r);
   const creds = credentialsFor(r);

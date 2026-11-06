@@ -6,7 +6,7 @@ import { demand, searchDemand } from "../scripts/ebay-prices";
 import type { Phone } from "../src/lib/types";
 
 const p = (o: Partial<Phone>) => ({ slug: "x", brand: "B", model: "M", bestPrice: 500, retailerCount: 3, generation: 10, category: "tvs", ...o }) as unknown as Phone;
-const slugs = { au: new Map([["apple-iphone-17", ["phones"]], ["samsung-galaxy-s26", ["phones"]]]), us: new Map(), uk: new Map() };
+const slugs = { au: new Map([["apple-iphone-17", ["phones"]], ["samsung-galaxy-s26", ["phones"]]]), us: new Map(), uk: new Map(), ca: new Map(), sg: new Map() };
 const cats = new Set(["phones", "robot-vacuums", "tvs"]);
 const file = {
   updatedAt: new Date().toISOString(),

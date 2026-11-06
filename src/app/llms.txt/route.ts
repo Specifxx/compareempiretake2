@@ -1,7 +1,7 @@
 import { CATEGORIES } from "@/lib/categories";
 import { getGuides } from "@/lib/guides";
-import { activeRetailers } from "@/lib/catalog";
-import { REGION_IDS } from "@/lib/region";
+import { activeRetailers, getProducts } from "@/lib/catalog";
+import { REGION_IDS, REGIONS } from "@/lib/region";
 import { SITE, SITE_NAME } from "@/lib/site";
 
 // /llms.txt (llmstxt.org): a plain map of the site for AI answer engines, as RiftCompare publishes,
@@ -13,12 +13,13 @@ export function GET() {
   const md = [
     `# ${SITE_NAME}`,
     "",
-    `> ${SITE_NAME} compares prices for phones, tablets, laptops, TVs, appliances and other tech across stores in the United States, Australia and the United Kingdom (${new Set(REGION_IDS.flatMap((region) => activeRetailers(undefined, region).map((r) => r.id))).size} stores in all), each market in its own currency, with price history. Free, no account needed.`,
+    `> ${SITE_NAME} compares prices for phones, tablets, laptops, TVs, appliances and other tech across stores in the United States, Australia, the United Kingdom, Canada and Singapore (${new Set(REGION_IDS.flatMap((region) => activeRetailers(undefined, region).map((r) => r.id))).size} stores in all), each market in its own currency, with price history. Free, no account needed.`,
     "",
     "## Editions",
     `- [United States](${SITE}/)`,
     `- [Australia](${SITE}/au)`,
     `- [United Kingdom](${SITE}/uk)`,
+    ...(["ca", "sg"] as const).filter((r) => getProducts(undefined, r).length).map((r) => `- [${REGIONS[r].name}](${SITE}/${r})`),
     "",
     "## Categories (Australia)",
     ...live.map((c) => `- [${c.name}](${SITE}${c.href}): ${c.blurb}`),

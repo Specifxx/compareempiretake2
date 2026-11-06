@@ -3,7 +3,8 @@
  * Amazon with that store's tracking tag: no shorteners, redirects or cloaking. A tag earns only on
  * the Amazon whose Associates account issued it: cecompare-22 (the owner's AU account) on
  * amazon.com.au, riftcompare-20 (the owner's US account) on amazon.com, compareempi03-21 (the owner's
- * UK account) on amazon.co.uk. Hard-coded (owner, 2026-11-02: no Vercel variable decides a tag).
+ * UK account) on amazon.co.uk, compareempire-20 (the owner's Canada account, shared with the card sites) on amazon.ca.
+ * Singapore has none: amazon.sg runs no Associates programme, so the SG pages show no Amazon link at all. Hard-coded (owner, 2026-11-02: no Vercel variable decides a tag).
  *
  * Prices: only from the Creators API, in every region with a tag (AU, US since the US approval of
  * 2026-11-05, UK), only on the product page's Amazon row and only while under 24 hours old
@@ -25,17 +26,22 @@ export function amazonAuLink(asinOrSearchTerm: string): string {
   return `https://www.amazon.com.au/s?k=${encodeURIComponent(v)}&tag=${encodeURIComponent(AMAZON_AU_TAG)}`;
 }
 
-export type AmazonRegion = "au" | "us" | "uk";
+export type AmazonRegion = "au" | "us" | "uk" | "ca" | "sg";
 
 const TAGS: Record<AmazonRegion, string> = {
   au: AMAZON_AU_TAG,
   us: "riftcompare-20",
   uk: "compareempi03-21",
+  ca: "compareempire-20",
+  // amazon.sg has no Associates programme: no tag, so no Amazon link in Singapore.
+  sg: "",
 };
 const STORES: Record<AmazonRegion, { host: string; name: string }> = {
   au: { host: "www.amazon.com.au", name: "Amazon AU" },
   us: { host: "www.amazon.com", name: "Amazon US" },
   uk: { host: "www.amazon.co.uk", name: "Amazon UK" },
+  ca: { host: "www.amazon.ca", name: "Amazon CA" },
+  sg: { host: "www.amazon.sg", name: "Amazon SG" },
 };
 const TAG_RE = /^[a-z0-9][a-z0-9-]{1,60}$/i;
 

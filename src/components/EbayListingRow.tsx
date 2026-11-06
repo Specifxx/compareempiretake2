@@ -45,7 +45,7 @@ export function EbayListingRow({ listing, product, money, cheapest, locale, time
 }
 
 /** When the daily job has no listing for a product: a pinned, labelled search of new eBay listings in the region. */
-export function EbaySearchRow({ href, product, adjective }: { href: string; product: string; adjective: string }) {
+export function EbaySearchRow({ href, product, sellers }: { href: string; product: string; sellers: string }) {
   return (
     <a href={href} target="_blank" rel={SPONSORED_REL} data-buy="ebay" data-buy-kind="ebay-pinned-search" data-buy-product={product} className="card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4">
       <div className="min-w-0 flex-1">
@@ -53,7 +53,7 @@ export function EbaySearchRow({ href, product, adjective }: { href: string; prod
           <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-[#E53238] ring-1 ring-black/10" /> eBay
           <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
         </div>
-        <div className="mt-1 text-xs text-ink-soft">New, Buy It Now listings from {adjective} sellers, cheapest first</div>
+        <div className="mt-1 text-xs text-ink-soft">New, Buy It Now listings {sellers}, cheapest first</div>
       </div>
       <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
         Search eBay <ExternalIcon className="h-3.5 w-3.5" />

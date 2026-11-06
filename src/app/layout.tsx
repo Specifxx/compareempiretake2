@@ -95,7 +95,7 @@ const getChrome = () =>
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const { regions, nav } = getChrome();
   return (
-    <html lang="en" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${sans.variable} ${display.variable}`} data-regions={regions.join(" ")} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         {/* Christmas (1 November to Boxing Day): data-season on <html> from the visitor's own date. lib/season.ts. */}

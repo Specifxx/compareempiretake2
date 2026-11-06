@@ -7,7 +7,7 @@ import { HOME_PATH, isNeutralPath, REGION_BOOT_SCRIPT, regionFromTimeZone, regio
 // Owner, 2026-11-01: the default region is the visitor's own, the US when we can't tell; the root is the US home.
 
 test("the root is the US home, Australia's home is /au, and every other page keeps its URL", () => {
-  assert.deepEqual(HOME_PATH, { au: "/au", us: "/", uk: "/uk" });
+  assert.deepEqual(HOME_PATH, { au: "/au", us: "/", uk: "/uk", ca: "/ca", sg: "/sg" });
   assert.equal(regionOf("/"), "us");
   assert.equal(regionOf("/au"), "au");
   assert.equal(regionOf("/phones"), "au");
@@ -28,6 +28,10 @@ test("a time zone we don't cover is the US", () => {
   assert.equal(regionFromTimeZone("America/Chicago"), "us");
   assert.equal(regionFromTimeZone("Asia/Tokyo"), "us");
   assert.equal(regionFromTimeZone("Europe/Paris"), "us");
+  assert.equal(regionFromTimeZone("America/Toronto"), "ca");
+  assert.equal(regionFromTimeZone("America/Vancouver"), "ca");
+  assert.equal(regionFromTimeZone("Asia/Singapore"), "sg");
+  assert.equal(regionFromTimeZone("Asia/Kuala_Lumpur"), "us");
   assert.equal(regionFromTimeZone(""), "us");
   assert.ok(isNeutralPath("/about") && isNeutralPath("/forum/x") && !isNeutralPath("/phones") && !isNeutralPath("/"));
 });

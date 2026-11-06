@@ -8,7 +8,7 @@ import { HOME_PATH, REGION_IDS, REGIONS, withRegion, withXDefault, type RegionId
 /** A region goes live once it has products; until then its pages 404. */
 export const regionLive = (region: RegionId) => getProducts(undefined, region).length > 0;
 
-const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the UK" };
+const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the UK", ca: "Canada", sg: "Singapore" };
 
 /** hreflang alternates for the home page across live regions; x-default is the root (the US home). */
 export const homeLanguages = () => ({ ...Object.fromEntries(REGION_IDS.filter(regionLive).map((r) => [REGIONS[r].hreflang, HOME_PATH[r]])), "x-default": "/" });

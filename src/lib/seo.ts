@@ -70,7 +70,9 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
         entries: () => [
           ...["/", "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year"].map((p) => ({ loc: abs(withRegion(p, r)), lastmod: lm, priority: p === "/" ? 1 : 0.6 })),
           ...["/stores", "/browse"].map((p) => ({ loc: abs(withRegion(p, r)), priority: 0.6 })),
-          ...activeCategories(r).flatMap((c) => {
+          // Only categories with at least one strong product (2026-11-06: Canada and Singapore start with a few stores,
+          // and a category page listing only one-store products is as thin as those products' own pages).
+          ...activeCategories(r).filter((c) => getProducts(c.id as CategoryId, r).some(productInSitemap)).flatMap((c) => {
             const clm = categoryLastmod(c.id as CategoryId, r);
             return [
               { loc: abs(withRegion(`/${c.id}`, r)), lastmod: clm, priority: 0.9 },

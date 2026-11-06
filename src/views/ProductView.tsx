@@ -66,7 +66,7 @@ export async function productMetadata(params: ProductParams, region: RegionId): 
   const $ = (n: number) => money(n, region);
   const cheapest = p.variants.flatMap((v) => v.offers).filter((o) => o.inStock && o.price === p.bestPrice)[0];
   const store = cheapest ? RETAILERS[cheapest.retailer].name : "";
-  const title = productTitle({ name: nameFor(p, region), place: region === "au" ? "Australia" : region === "us" ? "the US" : "the UK", price: $(p.bestPrice), store, stores: p.retailerCount });
+  const title = productTitle({ name: nameFor(p, region), place: ({ au: "Australia", us: "the US", uk: "the UK", ca: "Canada", sg: "Singapore" } as const)[region], price: $(p.bestPrice), store, stores: p.retailerCount });
   const description = `${nameFor(p, region)} from ${$(p.bestPrice)}${store ? ` at ${store}` : ""}. Compare ${p.offerCount} live prices across ${p.retailerCount} ${R.adjective} ${p.retailerCount === 1 ? "store" : "stores"}${p.variants.length > 1 ? ` in ${p.variants.map((v) => v.label).join(", ")}` : ""}, with price history and whether today's price is a good one.`;
   return {
     title,

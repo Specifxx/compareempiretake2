@@ -6,8 +6,11 @@
  * out; nothing is guessed from a product_type alone. LEGO uses the set-number rules of `lego.ts`, phones need a
  * phone model name as well as `looksLikePhone`.
  *
- * Every read carries `country=AU`: Shopify Markets prices `/products.json` for the caller's country, and the runner is in the US (a US$-converted price, about 0.7x, reached Alternative Brewing and Barista Warehouse on 2026-11-04; visitor report). `probe-auto.ts`
- * checked against the region's currency before a store was added.
+ * Every read carries the store's region as `country=` (AU, US, GB, CA, SG; from the retailer id's prefix): Shopify Markets
+ * prices `/products.json` for the caller's country, and the runner is in the US (a US$-converted price, about 0.7x, reached
+ * Alternative Brewing and Barista Warehouse on 2026-11-04; visitor report). Until 2026-11-06 every store was read as AU,
+ * which priced a US, UK or Canadian store with an Australian market in A$. `probe-auto.ts` checked against the region's
+ * currency before a store was added.
  */
 import type { CategoryId, RawOffer, RetailerId } from "../../src/lib/types";
 import { decodeEntities, getJson, sleep } from "../lib/http";
@@ -115,15 +118,22 @@ async function wooCatalogue(base: string, maxPages: number): Promise<ShopifyProd
 }
 
 /** The whole store, paged politely, once per run: Shopify's `/products.json`, else WooCommerce's Store API. */
-export function catalogue(base: string, maxPages = 40, platform?: "shopify" | "woo"): Promise<ShopifyProduct[]> {
-  let c = catalogues.get(base);
+/** Shopify's market country for a store: its retailer id's region prefix ("us-", "uk-", "ca-", "sg-"), else Australia. */
+export function countryOf(retailer: string): string {
+  const p = /^(us|uk|ca|sg)-/.exec(retailer)?.[1];
+  return p === "uk" ? "GB" : p ? p.toUpperCase() : "AU";
+}
+
+export function catalogue(base: string, maxPages = 40, platform?: "shopify" | "woo", country = "AU"): Promise<ShopifyProduct[]> {
+  const key = `${country} ${base}`;
+  let c = catalogues.get(key);
   if (!c) {
     c = (async () => {
       if (platform === "woo") return wooCatalogue(base, maxPages * 2);
       const all: ShopifyProduct[] = [];
       try {
         for (let page = 1; page <= maxPages; page++) {
-          const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}/products.json?limit=250&page=${page}&country=AU`);
+          const { products } = await getJson<{ products: ShopifyProduct[] }>(`${base}/products.json?limit=250&page=${page}&country=${country}`);
           if (!Array.isArray(products)) throw new Error("not a Shopify feed");
           all.push(...products);
           if (products.length < 250) break;
@@ -135,7 +145,7 @@ export function catalogue(base: string, maxPages = 40, platform?: "shopify" | "w
       }
       return all;
     })();
-    catalogues.set(base, c);
+    catalogues.set(key, c);
   }
   return c;
 }
@@ -174,18 +184,20 @@ export interface AutoStore {
   skuIsMpn?: boolean;
   /** Skip the platform guess (a store that is not Shopify answers `/products.json` with a page). */
   platform?: "shopify" | "woo";
+  /** Shopify market country; default from the retailer id (`countryOf`). The survey passes its line's region. */
+  country?: string;
 }
 
 /** Every listed category's offers from one read of the store. */
 export async function readAuto(s: AutoStore): Promise<Map<Cat, RawOffer[]>> {
   const out = new Map<Cat, Map<string, RawOffer>>();
   // The store's own name as "vendor" (Pauls TV, Mymemory) is no brand.
-  const stem = new URL(s.base).hostname.replace(/^(www|shop|store|us|uk|au)\./, "").split(".")[0].replace(/[^a-z]/g, "");
+  const stem = new URL(s.base).hostname.replace(/^(www|shop|store|us|uk|au|ca|sg)\./, "").split(".")[0].replace(/[^a-z]/g, "");
   const ownName = (v: string) => {
     const l = v.toLowerCase().replace(/[^a-z]/g, "");
     return l.length > 2 && (stem.includes(l) || l.includes(stem));
   };
-  for (const p of await catalogue(s.base, 40, s.platform)) {
+  for (const p of await catalogue(s.base, 40, s.platform, s.country ?? countryOf(s.retailer))) {
     const pt = decodeEntities(p.title).replace(/[®™]/g, "").replace(/\s+/g, " ").trim();
     const tags = Array.isArray(p.tags) ? p.tags.join(" ") : p.tags ?? "";
     if (USED.test(pt) || USED.test(p.product_type ?? "") || USED.test(p.vendor ?? "") || /refurb|pre-?owned|\bused\b|open-?box/i.test(tags) || s.exclude?.test(pt)) continue;

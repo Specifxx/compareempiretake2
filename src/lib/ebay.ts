@@ -6,6 +6,8 @@
  * prefix which site: every Compare site uses this one campaign, hard-coded
  * (owner, 2026-10-30), and only the prefix tells them apart.
  */
+import { REGIONS } from "./region";
+
 export const EBAY_CAMPAIGN_ID = "5339155912";
 const SITE_TAG = "ce";
 
@@ -17,6 +19,10 @@ export const EBAY_SITES = {
   au: { host: "www.ebay.com.au", rotation: "705-53470-19255-0", siteid: "15", phonesCat: "9355" },
   us: { host: "www.ebay.com", rotation: "711-53200-19255-0", siteid: "0", phonesCat: "9355" },
   uk: { host: "www.ebay.co.uk", rotation: "710-53481-19255-0", siteid: "3", phonesCat: "9355" },
+  ca: { host: "www.ebay.ca", rotation: "706-53473-19255-0", siteid: "2", phonesCat: "9355" },
+  // EPN has no Singapore programme (no ebay.com.sg rotation exists; RiftCompare's lib/affiliate.ts, 2026-08-14), so
+  // Singapore's links go to ebay.com on the US rotation, and the `-sg-` customid still splits them out in EPN reports.
+  sg: { host: "www.ebay.com", rotation: "711-53200-19255-0", siteid: "0", phonesCat: "9355" },
 } as const;
 type EbayRegion = keyof typeof EBAY_SITES;
 
@@ -44,12 +50,17 @@ export function ebaySearch(query: string, opts: { condition?: EbayCondition; cus
   if (opts.phones) u.searchParams.set("_sacat", "9355");
   const c = CONDITION[opts.condition ?? "any"];
   if (c) u.searchParams.set("LH_ItemCondition", c);
-  u.searchParams.set("LH_PrefLoc", "1");
+  // Sellers in the region's own country, except Singapore: its links land on ebay.com (no EPN programme there), where
+  // "domestic" would mean US sellers, so eBay's default (items that ship to the visitor) is kept instead.
+  if (region !== "sg") u.searchParams.set("LH_PrefLoc", "1");
   u.searchParams.set("LH_BIN", "1");
   return ebayAffiliate(u.toString(), opts.customid, region);
 }
 
 export const ebayDeals = (customid?: string, region: EbayRegion = "au") => ebayAffiliate(`https://${EBAY_SITES[region].host}/deals/tech`, customid, region);
+
+/** Who an eBay search's listings come from, for the copy beside it. Singapore's searches run on ebay.com (above). */
+export const ebaySellers = (region: EbayRegion) => (region === "sg" ? "that ship to Singapore" : `from ${REGIONS[region].adjective} sellers`);
 
 /** rel for every paid link (Google's rule for affiliate links). */
 export const SPONSORED_REL = "noopener nofollow sponsored";

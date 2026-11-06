@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       region:
-        description: "au, us or uk"
+        description: "au, us, uk, ca or sg"
         default: "us"
       stores:
         description: "Scraper file names (space separated); blank runs none"
@@ -67,7 +67,7 @@ jobs:
         run: |
           for u in $HARVEST; do
             curl -s -m 20 -L -A 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' "$u" \
-              | grep -oE 'https?://(www\.)?[a-z0-9-]+(\.[a-z0-9-]+)*\.(com|co\.uk|uk|com\.au|au|net|store|shop|co|io)\b' | sed -E 's#https?://(www\.)?##' || true
+              | grep -oE 'https?://(www\.)?[a-z0-9-]+(\.[a-z0-9-]+)*\.(com|co\.uk|uk|com\.au|au|ca|com\.sg|sg|net|store|shop|co|io)\b' | sed -E 's#https?://(www\.)?##' || true
             sleep 1
           done | sort -u | sed 's/^/HARVEST /'
       - name: Run scrapers

@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { isNeutralPath, money, REGION_STORAGE_KEY, regionFromTimeZone, regionOf, REGIONS, withRegion, type RegionId } from "./region";
+import { isNeutralPath, money, REGION_IDS, REGION_STORAGE_KEY, regionFromTimeZone, regionOf, REGIONS, withRegion, type RegionId } from "./region";
 
 let soft: RegionId | undefined;
 
@@ -12,12 +12,16 @@ export function visitorRegion(): RegionId {
   try {
     saved = localStorage.getItem(REGION_STORAGE_KEY);
   } catch {}
-  if (saved === "au" || saved === "us" || saved === "uk") return (soft = saved);
+  // Only regions with products (the root layout's data-regions): a region whose stores are not in yet has no pages.
+  const live = (document.documentElement.dataset.regions ?? REGION_IDS.join(" ")).split(" ");
+  const ok = (r: string | null): r is RegionId => !!r && (REGION_IDS as string[]).includes(r) && live.includes(r);
+  if (ok(saved)) return (soft = saved);
   let tz = "";
   try {
     tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
   } catch {}
-  return (soft = regionFromTimeZone(tz));
+  const guess = regionFromTimeZone(tz);
+  return (soft = ok(guess) ? guess : "us");
 }
 
 /** Remember a region the visitor chose (the header's switcher, RegionNotice's buttons). */

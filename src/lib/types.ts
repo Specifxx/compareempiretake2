@@ -62,10 +62,12 @@ export type CategoryId =
   | "bbqs"
   | "coffee-gear";
 
-/** AU stores keep bare ids; US and UK stores are prefixed with their region ("us-bestbuy", "uk-currys"). */
+/** AU stores keep bare ids; other regions' stores are prefixed with their region ("us-bestbuy", "uk-currys", "ca-…", "sg-…"). */
 export type RetailerId =
   | `us-${string}`
   | `uk-${string}`
+  | `ca-${string}`
+  | `sg-${string}`
   | "jbhifi"
   | "harveynorman"
   | "thegoodguys"

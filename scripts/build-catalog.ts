@@ -102,7 +102,7 @@ function generation(brand: string, model: string): number {
   return n;
 }
 
-// --region us|uk builds data/<region>/<category>; the default is Australia (data/<category>).
+// --region us|uk|ca|sg builds data/<region>/<category>; the default is Australia (data/<category>).
 const regionArg = process.argv.indexOf("--region");
 const REGION = (regionArg >= 0 ? process.argv.splice(regionArg, 2)[1] : "au") as RegionId;
 if (!REGIONS[REGION]) throw new Error(`unknown region ${REGION}`);

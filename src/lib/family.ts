@@ -21,9 +21,9 @@ import {
 } from "./family-network";
 
 export const FAMILY_DIR = path.join(process.cwd(), "data", "family");
-const REGION: Record<RegionId, FamilyRegion> = { au: "AU", us: "US", uk: "UK" };
-const CURRENCY: Record<RegionId, string> = { au: "AUD", us: "USD", uk: "GBP" };
-const REGIONS: RegionId[] = ["au", "us", "uk"];
+const REGION: Record<RegionId, FamilyRegion> = { au: "AU", us: "US", uk: "UK", ca: "CA", sg: "SG" };
+const CURRENCY: Record<RegionId, string> = { au: "AUD", us: "USD", uk: "GBP", ca: "CAD", sg: "SGD" };
+const REGIONS: RegionId[] = ["au", "us", "uk", "ca", "sg"];
 
 let cluster: FamilyFeed[] | null = null;
 export function familyFeeds(now = Date.now()): FamilyFeed[] {
@@ -74,14 +74,16 @@ export function familyItems(): FamilyItem[] {
 }
 
 export function familyLinks(): FamilyFeed["links"] {
-  return { AU: { deals: `${SITE}/deals` }, US: { deals: `${SITE}/us/deals` }, UK: { deals: `${SITE}/uk/deals` } };
+  // Canada and Singapore only once they have products (their pages 404 until then).
+  const late = (["ca", "sg"] as RegionId[]).filter((r) => getProducts(undefined, r).length).map((r) => [REGION[r], { deals: `${SITE}/${r}/deals` }]);
+  return { AU: { deals: `${SITE}/deals` }, US: { deals: `${SITE}/us/deals` }, UK: { deals: `${SITE}/uk/deals` }, ...Object.fromEntries(late) };
 }
 
 /** Every camera page, for CamCompare's hand-off back to us (US first: the root edition). */
 export function familyProducts(): FamilyProduct[] {
   const seen = new Set<string>();
   const out: FamilyProduct[] = [];
-  for (const region of ["us", "au", "uk"] as RegionId[]) {
+  for (const region of ["us", "au", "uk", "ca", "sg"] as RegionId[]) {
     for (const p of getProducts("cameras", region)) {
       const key = p.name.toLowerCase();
       if (seen.has(key)) continue;

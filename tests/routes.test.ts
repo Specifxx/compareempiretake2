@@ -58,7 +58,7 @@ test("the CDN header covers product URLs only", async () => {
   const rules: { source: string; has?: unknown; missing?: unknown; headers: { key: string; value: string }[] }[] = await config.headers();
   assert.deepEqual(
     rules.map((r) => r.source),
-    [`/:category(${ids})/:slug`, `/:region(us|uk)/:category(${ids})/:slug`],
+    [`/:category(${ids})/:slug`, `/:region(us|uk|ca|sg)/:category(${ids})/:slug`],
     "CATEGORY_IDS in next.config.mjs must list exactly the CATEGORIES ids",
   );
   for (const r of rules) {

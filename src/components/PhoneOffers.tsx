@@ -8,7 +8,7 @@ import { AMAZON_PRICE_DISCLAIMER } from "./AmazonLivePrice";
 import { amazonLink, amazonStore } from "@/lib/amazon";
 import { EbayListingRow, EbaySearchRow } from "./EbayListingRow";
 import { REGIONS, withRegion } from "@/lib/region";
-import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
+import { ebaySearch, ebaySellers, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
 import type { Offer, Phone, RetailerId } from "@/lib/types";
 import { CheckIcon, ExternalIcon } from "./icons";
@@ -21,7 +21,7 @@ import { PriceCheckCard } from "./PriceCheckCard";
 import { PriceAlertButton } from "./PriceAlertButton";
 
 /** The clock an Amazon price's "as of" time is shown in: the region's own. */
-const AMAZON_CLOCK: Record<string, string> = { au: "Sydney time", us: "New York time", uk: "London time" };
+const AMAZON_CLOCK: Record<string, string> = { au: "Sydney time", us: "New York time", uk: "London time", ca: "Toronto time", sg: "Singapore time" };
 import type { PriceCheck, WasCheck } from "@/lib/price-check";
 import { useRegionKit } from "@/lib/use-region";
 
@@ -283,14 +283,14 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
   const more = [
     ...(phone.ebay ? [{ kind: "marketplace-new", href: ebay.url(mq, cid, phones), title: `New on ${ebay.name}`, note: "Every new listing, not just the cheapest" }] : []),
     { kind: "marketplace-refurbished", href: ebaySearch(mq, { condition: "refurbished", customid: `${cid}-refurb`, phones, region }), title: "Refurbished on eBay", note: "Often far cheaper; check the warranty" },
-    { kind: "marketplace-used", href: ebaySearch(mq, { condition: "used", customid: `${cid}-used`, phones, region }), title: "Used on eBay", note: `The cheapest way in, from ${R.adjective} sellers` },
+    { kind: "marketplace-used", href: ebaySearch(mq, { condition: "used", customid: `${cid}-used`, phones, region }), title: "Used on eBay", note: `The cheapest way in, ${ebaySellers(region)}` },
   ];
   return (
     <div className="mb-2.5 space-y-2.5" aria-label="Amazon and eBay">
       {phone.ebay ? (
         <EbayListingRow listing={phone.ebay} product={product} money={$} cheapest={cheapest} locale={R.locale} timeZone={R.timeZone} />
       ) : (
-        <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} adjective={R.adjective} />
+        <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} sellers={ebaySellers(region)} />
       )}
       {amazonHref && <AmazonRow query={mq} product={product} placement={live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} />}
       {compact ? null : (

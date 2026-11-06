@@ -12,6 +12,8 @@ import { rememberRegion, visitorRegion } from "@/lib/use-region";
  * (2026-11-02): REGION_BOOT_SCRIPT moves only a visitor who picked a region, so a visitor who has picked one never sees
  * this on a page with a copy in theirs. Never a pop-up; never for crawlers.
  */
+const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the UK", ca: "Canada", sg: "Singapore" };
+
 export function RegionNotice() {
   const path = usePathname() ?? "/";
   const [want, setWant] = useState<RegionId | null>(null);
@@ -31,7 +33,7 @@ export function RegionNotice() {
     <div className="border-b border-line bg-bg-sunk">
       <div className="container-x flex flex-wrap items-center gap-x-4 gap-y-1 py-2 text-sm">
         <span>
-          <Flag code={want} /> In {want === "au" ? "Australia" : `the ${want.toUpperCase()}`}? This page compares {P.adjective} prices ({P.currency}).
+          <Flag code={want} /> In {IN[want]}? This page compares {P.adjective} prices ({P.currency}).
         </span>
         <Link prefetch={false} href={to ?? HOME_PATH[want]} onClick={() => rememberRegion(want)} className="font-semibold text-brand hover:underline">
           {to ? `Switch to ${W.adjective} prices` : `See ${W.adjective} prices`}
@@ -44,7 +46,7 @@ export function RegionNotice() {
             setWant(null);
           }}
         >
-          Stay on {page === "au" ? "Australia" : P.adjective}
+          Stay on {page === "au" || page === "ca" || page === "sg" ? P.name : P.adjective}
         </button>
       </div>
     </div>

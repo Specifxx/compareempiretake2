@@ -2,7 +2,9 @@ import { Flag } from "@/components/Flag";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { activeCategories, categoryHref, getProducts, liveRegions, regionUpdatedAt } from "@/lib/catalog";
-import { REGIONS } from "@/lib/region";
+import { REGIONS, type RegionId } from "@/lib/region";
+
+const ORDER: RegionId[] = ["us", "uk", "ca", "au", "sg"];
 import { SITE, SITE_NAME } from "@/lib/site";
 import { categoryReport, pctText, type CategoryReport } from "@/lib/price-report";
 
@@ -26,7 +28,7 @@ const ROWS: [string, (x: CategoryReport) => string][] = [
 ];
 
 export default function PriceReport() {
-  const regions = liveRegions().sort((a, b) => ["us", "uk", "au"].indexOf(a) - ["us", "uk", "au"].indexOf(b));
+  const regions = liveRegions().sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b));
   const cats = activeCategories("us").length ? activeCategories("us") : activeCategories("au");
   const at = regionUpdatedAt("us");
   const asOf = at ? new Date(at).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }) : null;

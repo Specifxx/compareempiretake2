@@ -9,7 +9,7 @@ import { useRegion } from "@/lib/use-region";
 /** `year` is the import's year in the region (Footer.tsx), not the clock: a page cached over New Year still hydrates. */
 export interface FooterData { stores: number; products: number; checked: string; year: number; shop: string[][]; categories: string[][] }
 
-const WHO: Record<RegionId, string> = { au: "Australians", us: "shoppers in the US", uk: "shoppers in the UK" };
+const WHO: Record<RegionId, string> = { au: "Australians", us: "shoppers in the US", uk: "shoppers in the UK", ca: "Canadians", sg: "shoppers in Singapore" };
 
 export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData>> }) {
   const region = useRegion();

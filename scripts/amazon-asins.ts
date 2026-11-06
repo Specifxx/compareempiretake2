@@ -9,16 +9,17 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { amazonStore, type AmazonRegion } from "../src/lib/amazon";
+import { amazonStore } from "../src/lib/amazon";
+import type { AmazonMarket } from "../src/lib/amazon-creators";
 import { AmazonRefused, credentialsFor, creatorsClient } from "../src/lib/amazon-creators";
 import { amazonTitleMatches } from "../src/lib/listing-parse";
 import { productsFor } from "./amazon-shared";
 
-export const REGIONS: AmazonRegion[] = ["au", "us", "uk"];
-const file = (r: AmazonRegion) => path.join(process.cwd(), "data", "amazon", `asins-${r}.json`);
+export const REGIONS: AmazonMarket[] = ["au", "us", "uk", "ca"];
+const file = (r: AmazonMarket) => path.join(process.cwd(), "data", "amazon", `asins-${r}.json`);
 // What the last run did per region, for /admin and Empire HQ: "off" (no secrets), "refused" (no API access
 // yet for that store), "ok".
-const statusFile = (r: AmazonRegion) => path.join(process.cwd(), "data", "amazon", `status-${r}.json`);
+const statusFile = (r: AmazonMarket) => path.join(process.cwd(), "data", "amazon", `status-${r}.json`);
 const RECHECK_MISS_DAYS = 30;
 type Entry = { asin: string | null; checked: string };
 
@@ -26,7 +27,7 @@ async function main() {
   for (const r of REGIONS) if (amazonStore(r)) await region(r);
 }
 
-async function region(r: AmazonRegion) {
+async function region(r: AmazonMarket) {
   const FILE = file(r);
   const status = (o: object) => writeFileSync(statusFile(r), JSON.stringify({ at: new Date().toISOString(), ...o }) + "\n");
   const creds = credentialsFor(r);

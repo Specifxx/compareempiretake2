@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { REGIONS, type RegionId } from "@/lib/region";
-import { ebayDeals, ebaySearch, SPONSORED_REL } from "@/lib/ebay";
+import type { RegionId } from "@/lib/region";
+import { ebayDeals, ebaySearch, ebaySellers, SPONSORED_REL } from "@/lib/ebay";
 
 /** A clearly labelled eBay box: new, used and refurbished searches plus eBay's tech deals. */
 export function EbayStrip({ query, label, customid, phones, region = "au" }: { query: string; label: string; customid: string; phones?: boolean; region?: RegionId }) {
   const links: [string, string, string][] = [
-    ["New on eBay", `Brand-new listings from ${REGIONS[region].adjective} sellers`, ebaySearch(query, { condition: "new", customid, phones, region })],
+    ["New on eBay", `Brand-new listings ${ebaySellers(region)}`, ebaySearch(query, { condition: "new", customid, phones, region })],
     ["Refurbished on eBay", "Seller and eBay-certified refurbished", ebaySearch(query, { condition: "refurbished", customid, phones, region })],
     ["Used on eBay", "Often the cheapest way in", ebaySearch(query, { condition: "used", customid, phones, region })],
     ["eBay tech deals", "eBay's own daily tech deals", ebayDeals(customid, region)],
