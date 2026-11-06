@@ -1407,3 +1407,19 @@ when unset (what crawlers read). A region whose stores share too few listings fo
 **Redirects:** every retired guide 301s (`content/guide-redirects.json`, read by `next.config.mjs`) to the new post on
 its topic, else its category's page (the US one where the US has 20+ products in it), else `/guides`. Never let a
 retired guide 404, and never reuse a retired slug.
+## 2026-11-06 — Awin: one datafeed key reads every joined chain's feed
+
+Bill asked for at least 20 stores on the most popular products in the US and UK. Today's catalogue has none: the best
+US phone has 1 store, the best UK phone 3, and outside LEGO no UK product passes 9. In the US and UK those products are
+sold by national chains that wall off every server read, so their affiliate feeds are the only door; the plan is in
+Bill's doc "Compare Empire: US and UK plan to 20 stores". A survey of 60 US and UK power tool shops found 4 readable
+(Coastal Tool, Toolnut, Factory Authorized Outlet, Axminster), so a Power tools category waits on the same feeds and
+is not built yet.
+
+Until now every feed-gated chain needed its own `FEED_URL_*` secret, pasted by hand after each approval (20+ for the UK
+alone). Awin serves all of a publisher's joined feeds under ONE datafeed key, with a public feed list
+(`productdata.awin.com/datafeed/list/apikey/<key>`). So `feedStore` now falls back, when its own secret is missing and
+`AWIN_DATAFEED_KEY` exists, to the store's site in `data/awin/programmes.json` (the daily joined list): a joined
+advertiser's largest active feed is read with our columns (brand, EAN, MPN, stock, currency). An Awin approval now
+switches a chain on the next morning with no step by hand. A `FEED_URL_*` secret still wins; an advertiser not joined
+is never read; rows go through the same title, currency and condition checks as every feed.
