@@ -28,4 +28,6 @@ export const SG_RETAILERS: (Retailer & { id: `sg-${string}` })[] = [
   { id: "sg-shokz", name: "Shokz", site: "sg.shokz.com", color: "#1A1A1A", type: "official" },
   { id: "sg-sennheiser", name: "Sennheiser", site: "sg.sennheiser-hearing.com", color: "#0A0A0A", type: "official" },
   { id: "sg-narwal", name: "Narwal", site: "sg.narwal.com", color: "#333333", type: "official" },
+  { id: "sg-techhouse", name: "Tech House", site: "techhouse.sg", color: "#333333", type: "retailer" },
+  { id: "sg-metro", name: "Metro", site: "metro.com.sg", color: "#333333", type: "retailer" },
 ];
