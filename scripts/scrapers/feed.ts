@@ -37,19 +37,26 @@ type Field = keyof typeof FIELDS;
 export type FeedRow = Partial<Record<Field, string>>;
 
 export function headerMap(header: string[]): Map<number, Field> {
-  const m = new Map<number, Field>();
-  const taken = new Set<Field>();
-  header.forEach((h, i) => {
-    const key = h.trim().toLowerCase().replace(/^g:/, "").replace(/^"|"$/g, "");
+  // Per field, the column whose name comes FIRST in that field's list wins, whatever the column order: an Awin feed
+  // carries both aw_deep_link (tracked, pays) and merchant_deep_link (the bare store page), and the bare one must
+  // never win because the advertiser's columns happened to come in another order (2026-11-06).
+  const keys = header.map((h) => h.trim().toLowerCase().replace(/^g:/, "").replace(/^"|"$/g, ""));
+  const best = new Map<Field, { col: number; rank: number }>();
+  keys.forEach((key, col) => {
     for (const [field, names] of Object.entries(FIELDS) as [Field, readonly string[]][]) {
-      if (names.includes(key) && !taken.has(field)) {
-        m.set(i, field);
-        taken.add(field);
-        break;
-      }
+      const rank = names.indexOf(key);
+      if (rank < 0) continue;
+      const cur = best.get(field);
+      if (!cur || rank < cur.rank) best.set(field, { col, rank });
     }
   });
-  return m;
+  const pick = new Map<number, Field>();
+  // One field per column: a column claimed by an earlier field in FIELDS keeps that field.
+  for (const field of Object.keys(FIELDS) as Field[]) {
+    const b = best.get(field);
+    if (b && !pick.has(b.col)) pick.set(b.col, field);
+  }
+  return new Map([...pick].sort((a, b) => a[0] - b[0]));
 }
 
 /** One delimited line → cells, with "quoted, cells" and "" escapes; `open` when the text ends inside a quoted cell. */
