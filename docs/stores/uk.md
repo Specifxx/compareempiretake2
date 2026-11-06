@@ -65,3 +65,10 @@ Notes:
   change there changes UK results too.
 - Affiliate programmes worth a look: Box, Laptops Direct, Overclockers, Hughes (Awin); Dell, HP, Samsung, Microsoft,
   Garmin, Bose, DJI, eufy/soundcore and Roborock run their own or Awin/Rakuten programmes.
+
+## Round 21 (2026-11-06): the US 10x / UK 5x store goal
+
+Same pass as `us.md`: `docs/stores/candidates21-uk-*.txt` (394 domains) surveyed from GitHub Actions; 77 stores read cleanly in
+GBP and were added through `auto-shopify.ts` with only their own trade's categories (appliance independents, cookshops, coffee
+roasters and gear shops, garden centres and BBQ specialists, salon and barber suppliers, camera and drone shops, PC builders,
+DJ and pro-audio shops, jewellers and running shops for Garmin and Coros watches).

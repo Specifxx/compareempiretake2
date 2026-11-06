@@ -1251,3 +1251,18 @@ alone consolidates slowly. `next.config.mjs` now answers every www request with 
 except `/api/ebay/account-deletion`, which eBay has registered under the www URL and challenges there
 (`tests/routes.test.ts`). This rides the next release with the thin-pages work above; recovery is measured in weeks,
 so the Search Console recheck stays at ~25 November.
+
+## 2026-11-06 — The US and UK must reach 10x and 5x Australia's stores and listings
+
+**Decision (owner):** Compare Empire is not "ready" in a region until the US lists about ten times as many stores and listings as
+Australia and the UK about five times; the same rule applies to KaeYoung and the other compare sites. Until then, every round adds
+stores: research ranks the popular stores of each category, scam and dropship stores are filtered out, and candidates go through
+*Probe stores* before any is added. Round 21 added 106 US and 77 UK stores (`docs/stores/us.md`, `uk.md`).
+
+**Why the listing target needs the chains' feeds:** an independent Shopify store brings 20–3,000 listings; one chain feed
+(Walmart, Best Buy, Currys, AO, Argos) brings tens of thousands. The feed readers exist (`docs/stores/big-stores.md`); the
+approvals on Impact, Awin and Commission Factory are the owner's step, and the ratio reports say so each time.
+
+**Rule kept:** a store added by the one-line reader gets only the categories of its own trade. The shared title checks are
+written for electronics chains and mis-file a cycle shop's "headset" as headphones and a barber's trimmer as a camera, so a
+category outside the store's range is never enabled on a count alone.
