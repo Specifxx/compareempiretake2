@@ -42,6 +42,7 @@ jobs:
           FEED_URL_TARGETAU: ${{ secrets.FEED_URL_TARGETAU }}
           FEED_URL_KMART: ${{ secrets.FEED_URL_KMART }}
           FEED_URL_BUNNINGS: ${{ secrets.FEED_URL_BUNNINGS }}
+          AWIN_DATAFEED_KEY: ${{ secrets.AWIN_DATAFEED_KEY }}
         run: npx tsx scripts/scrape-categories.ts
       - name: Scrape US stores
         continue-on-error: true
@@ -67,6 +68,7 @@ jobs:
           FEED_URL_US_MACYS: ${{ secrets.FEED_URL_US_MACYS }}
           FEED_URL_US_WAYFAIR: ${{ secrets.FEED_URL_US_WAYFAIR }}
           FEED_URL_US_BJS: ${{ secrets.FEED_URL_US_BJS }}
+          AWIN_DATAFEED_KEY: ${{ secrets.AWIN_DATAFEED_KEY }}
         run: npx tsx scripts/scrape-categories.ts --region us
       - name: Scrape UK stores
         continue-on-error: true
@@ -90,6 +92,7 @@ jobs:
           FEED_URL_UK_JESSOPS: ${{ secrets.FEED_URL_UK_JESSOPS }}
           FEED_URL_UK_MARKSELECTRICAL: ${{ secrets.FEED_URL_UK_MARKSELECTRICAL }}
           FEED_URL_UK_APPLIANCESDIRECT: ${{ secrets.FEED_URL_UK_APPLIANCESDIRECT }}
+          AWIN_DATAFEED_KEY: ${{ secrets.AWIN_DATAFEED_KEY }}
         run: npx tsx scripts/scrape-categories.ts --region uk
       # Canada and Singapore (2026-11-06): independent stores read by auto-shopify.ts; their pages 404 until they have products.
       - name: Scrape Canadian stores
@@ -106,6 +109,7 @@ jobs:
           FEED_URL_CA_HOMEDEPOT: ${{ secrets.FEED_URL_CA_HOMEDEPOT }}
           FEED_URL_CA_THEBRICK: ${{ secrets.FEED_URL_CA_THEBRICK }}
           FEED_URL_CA_LEONS: ${{ secrets.FEED_URL_CA_LEONS }}
+          AWIN_DATAFEED_KEY: ${{ secrets.AWIN_DATAFEED_KEY }}
         run: npx tsx scripts/scrape-categories.ts --region ca
       - name: Scrape Singapore stores
         continue-on-error: true
@@ -114,6 +118,7 @@ jobs:
           FEED_URL_SG_HARVEYNORMAN: ${{ secrets.FEED_URL_SG_HARVEYNORMAN }}
           FEED_URL_SG_BESTDENKI: ${{ secrets.FEED_URL_SG_BESTDENKI }}
           FEED_URL_SG_GAINCITY: ${{ secrets.FEED_URL_SG_GAINCITY }}
+          AWIN_DATAFEED_KEY: ${{ secrets.AWIN_DATAFEED_KEY }}
         run: npx tsx scripts/scrape-categories.ts --region sg
       - name: Build catalogues
         run: |
