@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { activeRetailers, getProducts } from "@/lib/catalog";
+import { activeRetailers, getProducts, historyMature } from "@/lib/catalog";
 import { ogImage } from "@/lib/og";
 import { pickShareProduct, sharePhotos } from "@/lib/share-rows";
 import type { CategoryId } from "@/lib/types";
@@ -34,7 +34,7 @@ export function regionHomeMetadata(region: RegionId): Metadata {
   // The root names no country (owner, 2026-11-01: "if anything, no region at all"); its stores are American.
   // 60 characters or fewer, keyword first, brand last (SEO audit, 2026-11-03: the AU title ran to 76 and was cut off).
   const title = region === "us" ? "Tech Price Comparison: Phones, Laptops, TVs | Compare Empire" : `Compare Tech Prices in ${IN[region]} | Compare Empire`;
-  const description = `Phones, laptops, TVs, headphones and more: every price at ${stores} ${R.adjective} stores, checked daily, with price history to spot fake sales in ${IN[region]}.`;
+  const description = `Phones, laptops, TVs, headphones and more: every price at ${stores} ${R.adjective} stores, checked daily${historyMature(region) ? ", with price history to spot fake sales" : ", cheapest in-stock first"} in ${IN[region]}.`;
   return {
     title: { absolute: title },
     description,

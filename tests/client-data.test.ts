@@ -163,8 +163,13 @@ test("the static grid lists cover every grid with more than a page, and hold the
       const f = ["data", region, d, "catalog.json"].filter(Boolean).join("/");
       if (fs.existsSync(f)) counts[(region || "au") + "/" + d] = JSON.parse(fs.readFileSync(f, "utf8")).phones.length;
     }
+    // Brands as the site shows them: one spelling per brand (lib/product-names.ts foldBrands).
+    const { foldBrands } = await ${mod("lib/product-names.ts")};
+    const au = [];
+    for (const [k, n] of Object.entries(counts)) if (k.startsWith("au/")) au.push(...JSON.parse(fs.readFileSync("data/" + k.slice(3) + "/catalog.json", "utf8")).phones);
+    foldBrands(au);
     const brandCounts = {};
-    for (const [k, n] of Object.entries(counts)) if (k.startsWith("au/")) for (const p of JSON.parse(fs.readFileSync("data/" + k.slice(3) + "/catalog.json", "utf8")).phones) brandCounts[p.brand] = (brandCounts[p.brand] ?? 0) + 1;
+    for (const p of au) brandCounts[p.brand] = (brandCounts[p.brand] ?? 0) + 1;
     const res = await grid.GET(new Request("https://x/api/grid/au/phones"), { params: Promise.resolve({ region: "au", category: "phones" }) });
     const file = await res.json();
     const items = file.items;

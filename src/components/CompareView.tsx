@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { storeLink } from "@/lib/store-links";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { storageLabel } from "@/lib/normalize";
 import { compareGroup, normaliseHref, parseHref } from "@/lib/product-refs";
 import { money, withRegion } from "@/lib/region";
@@ -44,15 +44,9 @@ export function CompareView() {
   const [focused, setFocused] = useState(false);
   const index = useSearchIndex(focused || !!q, region);
 
-  // Keep the tray and the URL in step so a shared link opens the same comparison (as product paths,
-  // the form the Compare buttons store, and only the products the table shows).
-  useEffect(() => {
-    if (fromUrl?.length && hrefs.length && hrefs.join() !== tray.join()) {
-      compare.clear();
-      hrefs.forEach((s) => compare.toggle(s));
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params]);
+  // A shared or linked comparison (?p=…) is shown from the URL and never written into the visitor's own tray: it
+  // used to be, and the tray then said "2 to compare" on every page of someone who had added nothing (US shopper
+  // review, 2026-11-06). Only the visitor's own edits here (setList) change the tray.
   const setList = (list: string[]) => {
     compare.clear();
     list.forEach((s) => compare.toggle(s));

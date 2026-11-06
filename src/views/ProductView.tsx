@@ -258,7 +258,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
             )}
             {storeLine && <p>{storeLine}</p>}
             <p>
-              We found <b className="text-ink">{phone.offerCount} listings</b> for this phone across{" "}
+              We found <b className="text-ink">{phone.offerCount} {phone.offerCount === 1 ? "listing" : "listings"}</b> for the {phone.model} across{" "}
               <b className="text-ink">{phone.retailerCount} {phone.retailerCount === 1 ? "store" : "stores"}</b>, in {phone.variants.length}{" "}
               {phone.variants.length === 1 ? "option" : "options"}
               {phone.colours.length > 1 ? ` and ${phone.colours.length} colours` : ""}. Last checked{" "}

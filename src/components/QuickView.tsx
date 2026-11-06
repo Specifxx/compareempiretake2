@@ -2,10 +2,10 @@
 // The quick view (owner, 2026-10-30: "I really like the kaeyoung quick view pop ups", ported from K Young). A plain
 // click on a product card (a[data-qv]) opens this panel at once with what the card already knows (photo, brand,
 // model), then fills in the product from /api/products (CDN-cached for a day, the same answer the compare table
-// reads) and draws the product page's own rows: eBay first, Amazon second, then every store's outright price,
+// reads) and draws the product page's own rows: the cheapest store, then the eBay ad, then every other store's outright price,
 // cheapest in stock first. The card stays a real link: crawlers, new tabs and modified clicks go to the product page,
 // whose server HTML keeps every price. The card's own buttons (save, compare) keep working.
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { Phone } from "@/lib/types";
 import { parseHref } from "@/lib/product-refs";
@@ -190,17 +190,23 @@ function Prices({ phone, href, vid, setVid }: { phone: Phone; href: string; vid:
         <h3 className="text-sm font-semibold">Every store&apos;s price</h3>
         <RegionTag region={region} tax />
       </div>
-      <PinnedMarketplaces phone={phone} variantQuery={mq} product={href} cheapest={best?.price} compact />
       {rows.length ? (
+        // The cheapest store first, the eBay ad under it, never above (US shopper review, 2026-11-06).
         <ol className="space-y-2.5">
           {rows.map(({ best: o, colours }, i) => (
-            <li key={o.retailer}>
-              <OutrightRow o={o} colours={colours} rank={i} best={best} product={href} />
-            </li>
+            <Fragment key={o.retailer}>
+              <li>
+                <OutrightRow o={o} colours={colours} rank={i} best={best} product={href} />
+              </li>
+              {i === 0 && <li><PinnedMarketplaces phone={phone} variantQuery={mq} product={href} cheapest={best?.price} compact part="rows" /></li>}
+            </Fragment>
           ))}
         </ol>
       ) : (
-        <p className="rounded-2xl border border-line p-4 text-sm text-ink-mute">No store sells this outright today.</p>
+        <>
+          <p className="mb-2.5 rounded-2xl border border-line p-4 text-sm text-ink-mute">No store sells this outright today.</p>
+          <PinnedMarketplaces phone={phone} variantQuery={mq} product={href} cheapest={best?.price} compact part="rows" />
+        </>
       )}
       {plans > 0 && (
         <p className="mt-3 text-xs text-ink-mute">

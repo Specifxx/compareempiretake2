@@ -6,6 +6,7 @@ import { search } from "@/lib/search";
 import { useSearchIndex } from "@/lib/use-search-index";
 import { SearchIcon } from "./icons";
 import { useRegionKit } from "@/lib/use-region";
+import { withRegion, type RegionId } from "@/lib/region";
 import { Currency, RegionTag } from "./RegionTag";
 
 export interface SearchEntry {
@@ -48,6 +49,16 @@ export function useResults(items: SearchEntry[], q: string) {
   }, [items, q]);
 }
 
+/**
+ * "See all results": the category grid of the best match, in the visitor's region, filtered by the words typed. It
+ * used to be the Australian phones page whatever was searched (US shopper review, 2026-11-06: a TV search landed on
+ * AU phones). With no match, the region's A to Z list of categories.
+ */
+export function allResultsHref(q: string, matches: { href: string }[], region: RegionId): string {
+  const m = matches[0]?.href.match(/^((?:\/(?:us|uk|ca|sg))?\/[a-z0-9-]+)\/[^/]+$/);
+  return m ? `${m[1]}?q=${encodeURIComponent(q.trim())}` : withRegion("/browse", region);
+}
+
 export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; autoFocus?: boolean }) {
   const { $, region } = useRegionKit();
   const [q, setQ] = useState("");
@@ -76,7 +87,7 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
   const go = (href?: string) => {
     setOpen(false);
     input.current?.blur();
-    router.push(href ?? `/phones?q=${encodeURIComponent(q.trim())}`);
+    router.push(href ?? allResultsHref(q, phones, region));
   };
 
   const lg = size === "lg";

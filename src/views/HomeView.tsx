@@ -5,7 +5,7 @@ import { PhoneCard } from "@/components/PhoneCard";
 import { SearchBox } from "@/components/SearchBox";
 import { getGuides } from "@/lib/guides";
 import { GuideCard } from "@/components/GuideCard";
-import { activeCategories, catalogDay, checkVariant, getCatalog, liveRegions, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
+import { catalogDay, checkVariant, comparedCategories, getCatalog, historyMature, historySince, liveRegions, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import type { CategoryId } from "@/lib/types";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { FEATURED } from "@/lib/categories";
@@ -28,14 +28,18 @@ export function HomeView({ region }: { region: RegionId }) {
   const { retailers, updatedAt, phones } = getCatalog(undefined, region);
   const summaries = getSummaries("phones", region);
   const deals = getDeals(6, undefined, region);
-  const cats = activeCategories(region).map((c) => {
+  // Only categories with a real comparison: 2+ stores and a product two of them sell (US shopper review, 2026-11-06).
+  const cats = comparedCategories(region).map((c) => {
     const items = getSummaries(c.id as CategoryId, region);
     return { c, count: items.length, from: Math.min(...items.map((p) => p.bestPrice)), image: popularOf(items, 1)[0]?.image, popular: popularOf(items, 4) };
   });
   const offers = phones.reduce((n, p) => n + p.offerCount, 0);
-  const popular = summaries.filter((p) => p.retailerCount >= 3 && p.image).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice).slice(0, 8);
+  const popular = summaries.filter((p) => p.retailerCount >= 2 && p.image).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice).slice(0, 8);
   const budget = summaries.filter((p) => p.bestPrice <= 500 && p.retailerCount >= 2 && p.image && p.inStock).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation).slice(0, 4);
-  const example = pickExample(region);
+  // The "is that sale real?" promise only once the region's history can keep it (lib/catalog.ts HISTORY_CLAIM_DAYS).
+  const mature = historyMature(region);
+  const since = new Date(`${historySince(region)}T12:00:00Z`).toLocaleDateString(R.locale, { day: "numeric", month: "long", timeZone: "UTC" });
+  const example = mature ? pickExample(region) : undefined;
   // The year's big launches (content/launches.ts), dated by the last import, not the build clock.
   const hot = hotLaunches(region, catalogDay(region), getSummaries);
   // ...and whatever the stores opened pre-orders for on their own (lib/preorders.ts), filling the row to four cards.
@@ -66,17 +70,32 @@ export function HomeView({ region }: { region: RegionId }) {
               <Link prefetch={false} href={to("/deals")} className="xmas-pill">
                 <span className="xmas-pill-icon" aria-hidden="true" />
                 <b>Christmas sale check</b>
-                <span className="xmas-pill-more hidden sm:inline">· real price drops only, checked every day →</span>
+                <span className="xmas-pill-more hidden sm:inline">· {mature ? "real price drops only, checked every day" : "the biggest gaps between stores, checked every day"} →</span>
               </Link>
             </div>
-            <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-              Is that sale
-              <br />
-              <span className="bg-gradient-to-r from-brand to-[#B04BFF] bg-clip-text text-transparent">actually real?</span>
-            </h1>
-            <p className="mx-auto mt-5 max-w-xl text-lg text-ink-soft">
-              We save the price of everything we compare at {retailers.length} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.
-            </p>
+            {mature ? (
+              <>
+                <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
+                  Is that sale
+                  <br />
+                  <span className="bg-gradient-to-r from-brand to-[#B04BFF] bg-clip-text text-transparent">actually real?</span>
+                </h1>
+                <p className="mx-auto mt-5 max-w-xl text-lg text-ink-soft">
+                  We save the price of everything we compare at {retailers.length} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.
+                </p>
+              </>
+            ) : (
+              <>
+                <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
+                  Every store&apos;s price,
+                  <br />
+                  <span className="bg-gradient-to-r from-brand to-[#B04BFF] bg-clip-text text-transparent">cheapest first.</span>
+                </h1>
+                <p className="mx-auto mt-5 max-w-xl text-lg text-ink-soft">
+                  We check {retailers.length} {R.adjective} stores every morning and put their prices side by side, cheapest in stock first. We&apos;ve saved every price since {since}, so each product&apos;s history grows by a day each morning.
+                </p>
+              </>
+            )}
             <p className="mx-auto mt-2 max-w-xl text-sm text-ink-mute">
               {phones.length.toLocaleString()} products · {offers.toLocaleString()} live prices · cheapest in-stock first · no paid rankings
             </p>
@@ -156,9 +175,8 @@ export function HomeView({ region }: { region: RegionId }) {
         </section>
       )}
 
-      <section className="container-x mt-12">
-        <ReviewsSection limit={3} />
-      </section>
+      {/* Only once there are written reviews: an empty "be the first" box reads as a ghost town (US shopper review). */}
+      <ReviewsSection limit={3} hideEmpty className="container-x mt-12" />
 
       {region === "au" && (
         <div className="container-x">
@@ -172,19 +190,21 @@ export function HomeView({ region }: { region: RegionId }) {
 
       {deals.length > 0 && (
         <section className="container-x mt-12">
-          <SectionHead title="Today's best deals" sub="Real savings right now — against what other stores charge, a backed-up RRP, or last week's price." href={to("/deals")} cta="All deals" />
+          <SectionHead title="Today's best deals" sub={mature ? "Real savings right now — against what other stores charge, a was price we recorded, or last week's price." : "Today's biggest savings against what the other stores charge, or a price we recorded at the same store."} href={to("/deals")} cta="All deals" />
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {deals.map((d, i) => <DealCard key={`${d.phone.category}/${d.phone.slug}`} d={d} rank={i} />)}
           </div>
         </section>
       )}
 
-      <section className="container-x mt-16">
-        <SectionHead title="Most compared phones" sub="Stocked by the most retailers, so the price gap is real." href={to("/phones")} cta="All phones" />
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
-          {popular.map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} />)}
-        </div>
-      </section>
+      {popular.length >= 4 && (
+        <section className="container-x mt-16">
+          <SectionHead title="Most compared phones" sub="Stocked by the most retailers, so the price gap is real." href={to("/phones")} cta="All phones" />
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
+            {popular.map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} />)}
+          </div>
+        </section>
+      )}
 
       {cats.filter(({ c, popular }) => c.id !== "phones" && FEATURED.slice(0, 7).includes(c.id) && popular.length >= 4).map(({ c, popular }) => (
         <section key={c.id} className="container-x mt-16">
@@ -202,7 +222,9 @@ export function HomeView({ region }: { region: RegionId }) {
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            ["We call out fake sales", "We record every price, every day. If a “was $1,999” never cost $1,999, the price check next to it says so."],
+            mature
+              ? ["We call out fake sales", "We record every price, every day. If a “was $1,999” never cost $1,999, the price check next to it says so."]
+              : ["Price history from day one", `We've saved every store's price every day since ${since}. A store's “was” price shows only once our own record can check it.`],
             ["Nobody buys the top spot", "Shopping results put paid listings first. Ours are cheapest in-stock first — no retailer can pay to move up."],
             ["The exact phone, not a lookalike", "We split every phone by storage and leave out refurbs, grey imports and carrier-locked stock, so the cheapest price is for the phone you actually want."],
             region === "au" ? ["Real Aussie stores, in stock", "Only Australian retailers with local warranty, and we tell you who actually has it in stock today."] : [`Real ${R.adjective} stores, in stock`, `Only ${R.adjective} retailers selling new stock, and we tell you who actually has it in stock today.`],
@@ -283,7 +305,8 @@ function pickExample(region: RegionId) {
 /** Stocked by the most stores first: that's where the price gap means something. */
 function popularOf(items: PhoneSummary[], n: number) {
   return items
-    .filter((p) => p.image && p.inStock)
+    // Sold by two or more stores: a one-store product is not a comparison.
+    .filter((p) => p.image && p.inStock && p.retailerCount >= 2)
     .sort((a, b) => b.retailerCount - a.retailerCount || b.offerCount - a.offerCount || b.generation - a.generation)
     .slice(0, n);
 }

@@ -58,7 +58,9 @@ export function searchScore(query: string, name: string, codes: string[] = []): 
     .map((w) => (w === "u" ? "ultra" : w === "pm" ? "pro max" : ALIASES[w] && w.length <= 3 ? ALIASES[w] : w))
     .join(" ")
     .split(" ");
-  const named = norm(name).split(" ");
+  // "PS5" is what people type for the console stores spell "PlayStation 5" (US shopper review, 2026-11-06: a "PS5"
+  // search found headsets only), so a PlayStation name also answers to its short form.
+  const named = norm(name).replace(/\bplaystation ?([45])\b/g, "playstation $1 ps$1").split(" ");
   const words = codes.length ? [...named, ...codes.flatMap((c) => norm(c).split(" "))] : named;
   const joined = words.join("");
   let score = 0;

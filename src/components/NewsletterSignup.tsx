@@ -14,7 +14,7 @@ export function NewsletterSignup({ compact }: { compact?: boolean }) {
       <div className={compact ? "" : "max-w-xl"}>
         <div className="font-display text-lg font-bold">Get the weekly real-deals email</div>
         <p className="mt-1 text-sm text-ink-soft">
-          Every Friday: the biggest genuine price drops of the week, and the &ldquo;sales&rdquo; our price history says are fake. One email, no spam, unsubscribe any time.
+          Every Friday: the week&apos;s biggest price drops and the widest gaps between stores, from our daily price checks. One email, no spam, unsubscribe any time.
         </p>
       </div>
       <div className="mt-4 flex max-w-md gap-2">

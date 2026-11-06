@@ -55,6 +55,10 @@ body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11";
 /* White product shots sit on a soft tile in both themes. */
 .img-tile { background: radial-gradient(120% 90% at 50% 20%, #ffffff 0%, #f3f3f8 100%); }
 .dark .img-tile { background: radial-gradient(120% 90% at 50% 20%, #f7f7fb 0%, #dcdce6 100%); }
+/* A photo that failed to load (layout.tsx's error listener): hidden, and the tile says so. */
+img[data-broken] { visibility: hidden; }
+.img-missing { position: relative; }
+.img-missing::after { content: "No photo"; position: absolute; inset: 0; display: grid; place-items: center; font-size: 12px; color: #8a8a99; pointer-events: none; }
 
 .scrollbar-none::-webkit-scrollbar { display: none; }
 .scrollbar-none { scrollbar-width: none; }

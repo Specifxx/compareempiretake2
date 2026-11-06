@@ -1,5 +1,5 @@
 import "server-only";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { preorderStoreCount } from "./preorders";
 import path from "node:path";
 import { dataVersion } from "./browse";
@@ -8,6 +8,8 @@ import { storageLabel } from "./normalize";
 import { priceCheck, wasCheck, type PriceCheck, type WasCheck } from "./price-check";
 import { RETAILERS } from "./retailers";
 import { ebayAffiliate } from "./ebay";
+import { ebayTitleMatches } from "./ebay-match";
+import { foldBrands, tidyName } from "./product-names";
 import { dataPath, money, REGION_IDS, REGIONS, withRegion, type RegionId } from "./region";
 import type { Catalog, CategoryId, Offer, Phone, Retailer, RetailerId, StoreSeries, Variant } from "./types";
 
@@ -19,7 +21,7 @@ import type { Catalog, CategoryId, Offer, Phone, Retailer, RetailerId, StoreSeri
  */
 type Series = Record<string, Record<string, [string, number][]>>;
 interface Loaded { catalog: Catalog; series: Series; stores: StoreSeries }
-interface RegionData { loaded: Map<CategoryId, Loaded>; all: Phone[]; bySlug: Map<string, Phone>; updated: string }
+interface RegionData { loaded: Map<CategoryId, Loaded>; all: Phone[]; bySlug: Map<string, Phone>; updated: string; brandMoves: Map<string, string> }
 const read = <T,>(file: string, fallback: T): T => (existsSync(file) ? (JSON.parse(readFileSync(file, "utf8")) as T) : fallback);
 const regions = new Map<RegionId, RegionData>();
 function data(region: RegionId): RegionData {
@@ -33,6 +35,9 @@ function data(region: RegionId): RegionData {
     for (const p of catalog.phones) {
       p.category ??= c.id as CategoryId;
       p.region = region;
+      // Display only: the slug (the URL) is never touched (lib/product-names.ts).
+      p.name = tidyName(p.name);
+      p.model = tidyName(p.model);
     }
     loaded.set(c.id as CategoryId, { catalog, series: read(path.join(dir, "series.json"), {}), stores: read(path.join(dir, "store-series.json"), {}) });
   }
@@ -44,14 +49,54 @@ function data(region: RegionId): RegionData {
       const e = ebay[`${p.category}/${p.slug}`];
       // A listing whose postage eBay did not state is not shown (visitor feedback, 2026-10-31: postage the row hides is a
       // wasted click). Rows stored before then age out of the file within 5 days anyway.
-      p.ebay = e && e.shipping !== undefined ? { ...e, url: ebayAffiliate(e.url, `p-${p.category}-${p.slug}-listing`, region) } : undefined;
+      // ...nor one whose title is not this product (lib/ebay-match.ts; listings stored before a rule existed).
+      p.ebay = e && e.shipping !== undefined && ebayTitleMatches(p, e.title) ? { ...e, url: ebayAffiliate(e.url, `p-${p.category}-${p.slug}-listing`, region) } : undefined;
     }
   const all = [...loaded.values()].flatMap((l) => l.catalog.phones);
-  d = { loaded, all, bySlug: new Map(all.map((p) => [`${p.category}/${p.slug}`, p])), updated: [...loaded.values()].map((l) => l.catalog.updatedAt).sort().at(-1) ?? new Date().toISOString() };
+  // One spelling per brand in the region's filters and cards: "Leica" and "LEICA CAMERA INC.", "Sunbrite" and "SunBrite".
+  const brandMoves = foldBrands(all);
+  d = { loaded, all, brandMoves, bySlug: new Map(all.map((p) => [`${p.category}/${p.slug}`, p])), updated: [...loaded.values()].map((l) => l.catalog.updatedAt).sort().at(-1) ?? new Date().toISOString() };
   regions.set(region, d);
   return d;
 }
 const regionOfProduct = (p: Phone): RegionId => p.region ?? "au";
+
+/**
+ * How long a region's price history runs: from its first daily snapshot (data/<region>/<category>/history/) to the
+ * last import. Under HISTORY_CLAIM_DAYS the site makes no "is that sale real?" promise (US shopper review,
+ * 2026-11-06: two weeks of flat lines don't back it); the claim comes back by itself once the history is long enough.
+ */
+export const HISTORY_CLAIM_DAYS = 60;
+const historyStart = new Map<RegionId, string>();
+export function historySince(region: RegionId = "au"): string {
+  let first = historyStart.get(region);
+  if (first) return first;
+  first = catalogDay(region);
+  for (const c of CATEGORIES) {
+    const dir = path.join(process.cwd(), dataPath(region, c.id), "history");
+    if (!existsSync(dir)) continue;
+    const day = readdirSync(dir).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort()[0]?.slice(0, 10);
+    if (day && day < first) first = day;
+  }
+  historyStart.set(region, first);
+  return first;
+}
+export const historyMature = (region: RegionId = "au") => (Date.parse(catalogDay(region)) - Date.parse(historySince(region))) / 864e5 >= HISTORY_CLAIM_DAYS;
+
+/** A brand page slug that folded into another spelling's ("insta-360" → "insta360"), so the old URL can redirect. */
+export const movedBrandSlug = (slug: string, region: RegionId = "au") => data(region).brandMoves.get(slug);
+export const movedBrandSlugs = (region: RegionId = "au") => [...data(region).brandMoves.keys()];
+
+/**
+ * Categories with a real comparison in the region: two or more stores, and at least one product two of them sell.
+ * The home page shows only these (US shopper review, 2026-11-06: a 1-store category is not a comparison); every
+ * category page stays live and linked from the menu and footer.
+ */
+export const comparedCategories = (region: RegionId = "au") =>
+  activeCategories(region).filter((c) => {
+    const ps = getProducts(c.id as CategoryId, region);
+    return ps.some((p) => p.retailerCount >= 2) && new Set(ps.flatMap((p) => p.variants.flatMap((v) => v.offers.map((o) => o.retailer)))).size >= 2;
+  });
 
 /** When the region's prices were last imported: the same value as getCatalog(undefined, region).updatedAt, without scanning every offer. */
 export const regionUpdatedAt = (region: RegionId = "au") => data(region).updated;
@@ -151,7 +196,7 @@ export function cheapestStore(p: Phone): string | undefined {
 }
 
 export function summarise(p: Phone): PhoneSummary {
-  const deals = p.variants.map(variantDeal);
+  const deals = p.variants.map((v) => variantDeal(v, wasChecker(p, v)));
   const facets = Object.fromEntries(p.specs.extra ?? []);
   const subtitle =
     p.category === "phones" || p.category === "tablets"
@@ -200,7 +245,7 @@ export interface Deal {
 }
 
 /** Best real saving on a variant: a price drop, a retailer's own sale, or the gap to the dearest shop. */
-export function variantDeal(v: Variant): { saving: number; reference: number; kind: Deal["kind"]; offer: Offer } {
+export function variantDeal(v: Variant, checked?: (o: Offer) => boolean): { saving: number; reference: number; kind: Deal["kind"]; offer: Offer } {
   const outright = v.offers.filter((o) => o.kind !== "plan");
   const live = outright.filter((o) => o.inStock);
   const pool = live.length ? live : outright.length ? outright : v.offers;
@@ -209,10 +254,11 @@ export function variantDeal(v: Variant): { saving: number; reference: number; ki
   if (v.previousBest && v.previousBest > offer.price) {
     best = { saving: v.previousBest - offer.price, reference: v.previousBest, kind: "drop", offer };
   }
-  // A "was" price only counts as far as another store backs it up — today's
-  // price elsewhere or that store's own "was" — so one inflated RRP can't headline.
+  // A "was" price counts only once our own history at that store backs it (`checked`: the store really charged it
+  // on an earlier day; US shopper review, 2026-11-06: "−56% off RRP" from RRPs nobody had checked), and then only as
+  // far as another store backs it up too, so one inflated RRP can't headline.
   for (const o of pool) {
-    if (!o.wasPrice) continue;
+    if (!o.wasPrice || !checked?.(o)) continue;
     const others = outright.filter((x) => x.retailer !== o.retailer);
     if (!others.length) continue;
     const backed = Math.min(o.wasPrice, Math.max(...others.map((x) => Math.max(x.price, x.wasPrice ?? 0))));
@@ -228,7 +274,17 @@ export function variantDeal(v: Variant): { saving: number; reference: number; ki
     const typical = Math.round(median([...perStore.values()]));
     if (typical - offer.price > best.saving) best = { saving: typical - offer.price, reference: typical, kind: "spread", offer };
   }
+  // A reference more than twice today's price is a wrong match or a stale listing, not a saving ("Save $1,100" on a
+  // $1,099 camera): no deal at all.
+  if (best.reference > offer.price * 2) return { saving: 0, reference: offer.price, kind: "spread", offer };
   return best;
+}
+
+/** Whether a store's own "was" price on this variant is backed by what we recorded there (price-check.ts wasCheck). */
+export function wasChecker(p: Phone, v: Variant): (o: Offer) => boolean {
+  const stores = getStoreSeries(p)[v.id] ?? {};
+  const today = catalogDay(regionOfProduct(p));
+  return (o) => wasCheck(o, stores[o.retailer], RETAILERS[o.retailer]?.name ?? o.retailer, today)?.status === "backed";
 }
 
 export function getDeals(limit = 60, category?: CategoryId, region: RegionId = "au"): Deal[] {
@@ -238,7 +294,7 @@ export function getDeals(limit = 60, category?: CategoryId, region: RegionId = "
     // A single store's "RRP" on an old phone is not a deal anyone can check.
     if (phone.retailerCount < 2) continue;
     for (const variant of phone.variants) {
-      const d = variantDeal(variant);
+      const d = variantDeal(variant, wasChecker(phone, variant));
       if (d.saving < 20) continue;
       const percent = Math.round((d.saving / d.reference) * 100);
       if (percent < 4) continue;
@@ -246,7 +302,7 @@ export function getDeals(limit = 60, category?: CategoryId, region: RegionId = "
         d.kind === "drop"
           ? `Down ${$(d.saving)} this week`
           : d.kind === "rrp"
-            ? `${$(d.saving)} off RRP`
+            ? `${$(d.saving)} below ${RETAILERS[d.offer.retailer]?.name ?? "the store"}'s earlier price`
             : `${$(d.saving)} below the typical store price`;
       out.push({ phone, variant, offer: d.offer, saving: d.saving, percent, reference: d.reference, kind: d.kind, label });
     }
