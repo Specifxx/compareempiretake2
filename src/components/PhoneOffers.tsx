@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import Link from "next/link";
 import { marketplacesFor } from "@/lib/marketplaces";
 import { AmazonNote, AmazonRow } from "./AmazonLink";
@@ -191,21 +191,26 @@ export function PhoneOffers({
             )}
             <span className="text-xs text-ink-mute">{tab === "outright" ? "Cheapest in-stock first" : "Lowest monthly repayment first"}</span>
           </div>
-          <PinnedMarketplaces phone={phone} variantId={variant.id} variantQuery={mq} product={href} cheapest={best?.price} />
           {tab === "outright" ? (
           <>
+          {/* The cheapest store always comes first; the eBay and Amazon ads sit under it, never above it (US shopper review, 2026-11-06). */}
           <ol className="space-y-2.5">
             {rows.map(({ best: o, colours: cs }, i) => (
-              <li key={o.retailer}>
-                <OutrightRow o={o} colours={cs} rank={i} best={best} product={href} was={checks[variant.id]?.was[o.retailer]} />
-              </li>
+              <Fragment key={o.retailer}>
+                <li>
+                  <OutrightRow o={o} colours={cs} rank={i} best={best} product={href} was={checks[variant.id]?.was[o.retailer]} />
+                </li>
+                {i === 0 && <li><PinnedMarketplaces phone={phone} variantId={variant.id} variantQuery={mq} product={href} cheapest={best?.price} part="rows" /></li>}
+              </Fragment>
             ))}
+            {!rows.length && <li><PinnedMarketplaces phone={phone} variantId={variant.id} variantQuery={mq} product={href} cheapest={best?.price} part="rows" /></li>}
           </ol>
-          {Object.values(checks[variant.id]?.was ?? {}).length > 0 && (
+          <PinnedMarketplaces phone={phone} variantId={variant.id} variantQuery={mq} product={href} cheapest={best?.price} part="more" />
+          {checkedWas(checks[variant.id]?.was).length > 0 && (
             <div className="mt-4 rounded-2xl bg-bg-sunk p-4">
               <div className="text-sm font-semibold">Are these &ldquo;was&rdquo; prices real?</div>
               <ul className="mt-2 space-y-1.5 text-xs text-ink-soft">
-                {Object.values(checks[variant.id].was).map((w) => (
+                {checkedWas(checks[variant.id]?.was).map((w) => (
                   <li key={w!.retailer} className="flex gap-2">
                     <span className={w!.status === "backed" ? "text-save" : w!.status === "never" ? "text-hot" : "text-ink-mute"}>{w!.status === "backed" ? "✓" : w!.status === "never" ? "⚠" : "•"}</span>
                     <span><b className="text-ink">{RETAILERS[w!.retailer].name} says was {$(w!.was)}.</b> {w!.text}</span>
@@ -237,6 +242,7 @@ export function PhoneOffers({
               </li>
             ))}
           </ol>
+          <div className="mt-2.5"><PinnedMarketplaces phone={phone} variantId={variant.id} variantQuery={mq} product={href} cheapest={best?.price} /></div>
           <p className="mt-3 text-xs text-ink-mute">
             Repayments are for the phone only; you also pay for a mobile plan from that carrier. Leaving early usually means paying off the rest of the phone.
             {rows.length > 0 && best && <> Buying outright from {RETAILERS[best.retailer].name} at {$(best.price)} and adding any SIM-only plan is often cheaper.</>}
@@ -244,7 +250,7 @@ export function PhoneOffers({
           </>
           )}
           <p className="mt-3 text-xs text-ink-mute">
-            Prices include GST and are checked daily. Delivery and in-store availability vary — confirm on the retailer&apos;s site.
+            {R.taxNote}, checked daily. Delivery and in-store availability vary — confirm on the retailer&apos;s site.
           </p>
         </div>
 
@@ -264,13 +270,12 @@ export function PhoneOffers({
 }
 
 /**
- * Amazon and eBay, pinned above the store rows on every product page (owner, 2026-10-30: "the very, very
- * top", always shown, bright, shaped like the price rows). eBay takes the first position (today's cheapest
- * listing when we have one, else a search) and Amazon the second (owner, 2026-10-30: eBay first, Amazon
- * second, as on every sister site); the marketplace searches follow, except in the quick view (`compact`).
- * None is ranked among the stores, counted as one or given the "Cheapest" badge.
+ * Amazon and eBay ad rows, drawn like the store rows. Since 2026-11-06 (a US shopper's review: an eBay ad sat above
+ * the store tagged "Cheapest" in a "cheapest first" list) they go UNDER the cheapest store, never above it: `part="rows"`
+ * is placed after the first store row and `part="more"` (the marketplace searches) after the list. eBay before Amazon,
+ * as on every sister site. None is ranked among the stores, counted as one or given the "Cheapest" badge.
  */
-export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product, cheapest, compact = false }: { phone: Phone; variantId?: string; variantQuery: string; product: string; cheapest?: number; compact?: boolean }) {
+export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product, cheapest, compact = false, part = "all" }: { phone: Phone; variantId?: string; variantQuery: string; product: string; cheapest?: number; compact?: boolean; part?: "rows" | "more" | "all" }) {
   const { $, R, region } = useRegionKit();
   const markets = marketplacesFor(region);
   // Never in the quick view (2026-11-02): Amazon's Operating Agreement allows no Amazon link in a pop-up window.
@@ -287,14 +292,14 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
     { kind: "marketplace-used", href: ebaySearch(mq, { condition: "used", customid: `${cid}-used`, phones, region }), title: "Used on eBay", note: `The cheapest way in, ${ebaySellers(region)}` },
   ];
   return (
-    <div className="mb-2.5 space-y-2.5" aria-label="Amazon and eBay">
-      {phone.ebay ? (
+    <div className={part === "rows" ? "space-y-2.5" : part === "more" ? "mt-2.5" : "mb-2.5 space-y-2.5"} aria-label="Amazon and eBay">
+      {part === "more" ? null : phone.ebay ? (
         <EbayListingRow listing={phone.ebay} product={product} money={$} cheapest={cheapest} locale={R.locale} timeZone={R.timeZone} />
       ) : (
         <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} sellers={ebaySellers(region)} />
       )}
-      {amazonHref && <AmazonRow query={mq} product={product} placement={live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} />}
-      {compact ? null : (
+      {part !== "more" && amazonHref && <AmazonRow query={mq} product={product} placement={live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} />}
+      {compact || part === "rows" ? null : (
       <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
         <div className="mt-2 grid gap-2 sm:grid-cols-3">
@@ -309,7 +314,7 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
           ))}
         </div>
         <p className="mt-2 text-[11px] text-ink-soft">
-          Amazon and eBay links are ads and affiliate links: we may earn a commission, and they never change the store rankings below.{" "}
+          Amazon and eBay links are ads and affiliate links: we may earn a commission. They are never ranked above the cheapest store and never change the store order.{" "}
           <Link prefetch={false} href="/disclosure" className="underline">Learn more</Link>
         </p>
         {amazonHref && <AmazonNote className="mt-1" />}
@@ -353,9 +358,10 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was 
       </div>
       <div className="text-right">
         <div className="price text-xl sm:text-2xl">{$(o.price)}</div>
-        {o.wasPrice && <div className="text-xs text-ink-mute line-through">{$(o.wasPrice)}</div>}
-        {o.wasPrice && was && <WasNote w={was} />}
-        {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">+{$((o.price - best.price))}</div>}
+        {/* A store's "was" price is shown only once our own history can check it (US shopper review, 2026-11-06). */}
+        {o.wasPrice && was && was.status !== "unknown" && <div className="text-xs text-ink-mute line-through">{$(o.wasPrice)}</div>}
+        {o.wasPrice && was && was.status !== "unknown" && <WasNote w={was} />}
+        {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">{$((o.price - best.price))} more than the cheapest</div>}
       </div>
       <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
         Go to store <ExternalIcon className="h-3.5 w-3.5" />
@@ -365,9 +371,12 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was 
   );
 }
 
+/** The "was" prices our history can speak to: checked out, or never seen. "Too new to check" ones are left out. */
+const checkedWas = (was: Partial<Record<RetailerId, WasCheck>> | undefined) => Object.values(was ?? {}).filter((w): w is WasCheck => !!w && w.status !== "unknown");
+
 function WasNote({ w }: { w: WasCheck }) {
   const style = w.status === "backed" ? "text-save" : w.status === "never" ? "text-hot font-semibold" : "text-ink-mute";
-  const label = w.status === "backed" ? "✓ Was price checks out" : w.status === "never" ? "⚠ Was price not seen" : "Was price: too new to check";
+  const label = w.status === "backed" ? "✓ Was price checks out" : "⚠ Was price not seen";
   return (
     <div className={`mt-0.5 max-w-[12rem] text-[10px] leading-tight ${style}`} title={w.text}>
       {label}

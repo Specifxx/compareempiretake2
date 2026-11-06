@@ -30,7 +30,7 @@ export function PhoneCard({ p, priority, showCategory }: { p: CardItem; priority
           <div className="absolute inset-0 grid place-items-center text-sm text-ink-mute">No image</div>
         )}
         <div className="absolute left-3 top-3 flex flex-col items-start gap-1.5">
-          {pct >= 5 && <span className="rounded-full bg-save px-2 py-0.5 text-[11px] font-bold text-white">Save ${Math.round(p.saving)}</span>}
+          {pct >= 5 && <span className="rounded-full bg-save px-2 py-0.5 text-[11px] font-bold text-white">Save {money(Math.round(p.saving), p.region)}</span>}
           {p.atLowest && <span className="rounded-full bg-hot px-2 py-0.5 text-[11px] font-bold text-white">Lowest price yet</span>}
         </div>
         <SaveButton slug={p.href} className="absolute right-3 top-3" />

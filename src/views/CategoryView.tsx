@@ -162,7 +162,8 @@ function CategoryGuideSection({ id, name, region, products }: { id: CategoryId; 
   const brands = [...products.reduce((m, p) => m.set(p.brand, (m.get(p.brand) ?? 0) + 1), new Map<string, number>())].sort((a, b) => b[1] - a[1]).slice(0, 10);
   const faq: [string, string][] = [
     [`How much do ${name.toLowerCase()} cost?`, `Across the ${products.length.toLocaleString()} ${name.toLowerCase()} we compare, today's lowest prices run from ${$(priced[0])} to ${$(priced[priced.length - 1])}; the middle of the range is about ${$(median)}.`],
-    ...(guide?.faq ?? []),
+    // The guides are written for Australia first: an answer about Australian sellers or prices stays on the AU page.
+    ...(guide?.faq ?? []).filter(([q, a]) => region === "au" || !/\bAustralia/.test(q + a)),
   ];
   const crumbs = [
     { name: "Home", item: `${SITE}${HOME_PATH[region] === "/" ? "" : HOME_PATH[region]}` || SITE },
@@ -197,7 +198,7 @@ function CategoryGuideSection({ id, name, region, products }: { id: CategoryId; 
         <dl className="card divide-y divide-line text-sm">
           {([
             ["Products compared", products.length.toLocaleString()],
-            ["Sold by 2+ stores", multi.toLocaleString()],
+            ...(multi ? ([["Sold by 2+ stores", multi.toLocaleString()]] as [string, string][]) : []),
             ["Cheapest today", $(priced[0])],
             ["Typical price", $(median)],
           ] as [string, string][]).map(([k, v]) => (

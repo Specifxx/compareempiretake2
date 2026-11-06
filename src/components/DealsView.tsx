@@ -39,7 +39,7 @@ export function DealsView({ category, region = "au", blackFriday = false, sale }
       </nav>
       <div className="mt-4 flex flex-wrap gap-3 text-xs text-ink-soft">
         <Legend color="bg-hot" label="Price drop — cheaper than our check a week ago" />
-        <Legend color="bg-save" label="Off RRP — backed by another store's price" />
+        <Legend color="bg-save" label="Below a store's earlier price — one we recorded there" />
         <Legend color="bg-brand" label="Store gap — vs what other stores typically charge" />
       </div>
       {drops.length > 0 && (

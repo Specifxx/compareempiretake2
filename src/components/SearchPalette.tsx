@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { SearchIcon } from "./icons";
-import { useResults, type SearchEntry } from "./SearchBox";
+import { allResultsHref, useResults, type SearchEntry } from "./SearchBox";
 import { useSearchIndex } from "@/lib/use-search-index";
 import { useRegionKit } from "@/lib/use-region";
 import { Currency, RegionTag } from "./RegionTag";
@@ -34,7 +34,7 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
   const go = (href?: string) => {
     onClose();
     if (href) router.push(href);
-    else if (q.trim()) router.push(`/phones?q=${encodeURIComponent(q.trim())}`);
+    else if (q.trim()) router.push(allResultsHref(q, phones, region));
   };
 
   return (

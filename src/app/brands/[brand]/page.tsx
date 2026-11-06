@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { PhoneBrowser } from "@/components/PhoneBrowser";
 import { gridProps, gridSrc } from "@/lib/browse";
-import { getBrands, getProducts, getSummaries, gridVersion } from "@/lib/catalog";
+import { getBrands, getProducts, getSummaries, gridVersion, movedBrandSlug, movedBrandSlugs } from "@/lib/catalog";
 import { brandIndexable } from "@/lib/indexing";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return getBrands().map((b) => ({ brand: b.slug }));
+  // Plus each spelling that folded into another (lib/product-names.ts foldBrands): its old URL redirects.
+  return [...getBrands().map((b) => b.slug), ...movedBrandSlugs()].map((brand) => ({ brand }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ brand: string }> }): Promise<Metadata> {
@@ -28,7 +29,11 @@ export async function generateMetadata({ params }: { params: Promise<{ brand: st
 export default async function BrandPage({ params }: { params: Promise<{ brand: string }> }) {
   const slug = (await params).brand;
   const brand = getBrands().find((b) => b.slug === slug);
-  if (!brand) notFound();
+  if (!brand) {
+    const to = movedBrandSlug(slug);
+    if (to) permanentRedirect(`/brands/${to}`);
+    notFound();
+  }
   const phones = getSummaries().filter((p) => p.brand === brand.brand);
   return (
     <div className="container-x pt-10">

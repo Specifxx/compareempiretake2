@@ -684,6 +684,15 @@ const MORE_ACCESSORY: Partial<Record<CategoryId, RegExp>> = {
   bbqs: /\b(cover|mat|tool set|brush|cleaner|thermometer|regulator|hose|gas bottle|pellets|charcoal bag|briquettes|rotisserie kit|pizza stone|peel)\b(?!.*\b(bbq|barbecue|grill|smoker|oven)\b)/i,
   "coffee-gear": /\b(replacement|spare|burrs|filters|filter papers|hopper|dosing cup|cleaning tablets)\b(?!.*\b(grinder|kettle|scale|dripper|brewer)\b)/i,
 };
-export const isMoreAccessory = (category: CategoryId, t: string) => MORE_ACCESSORY[category]?.test(t) ?? false;
+/**
+ * Accessories that name the product they fit, so the "(?!.*camera)" escape above lets them through: "Camera Holster",
+ * "Camera Cube", "Ink Cartridge" for an instant camera, a CarePAK, a book about Leica (US shopper review, 2026-11-06:
+ * the Cameras category's cheapest "camera" was $19.99 among bags and tripods). Refused whatever else the title says.
+ */
+const ALWAYS_ACCESSORY: Partial<Record<CategoryId, RegExp>> = {
+  cameras:
+    /\b(holsters?|camera (?:cubes?|inserts?|bags?|backpacks?|slings?|straps?|cases?|cages?|plates?|organi[sz]ers?|parkas?|covers?|rain ?covers?)|cube(?: v\d)?|inserts?|backpacks?|slings?|pouch|books?|carepak|care ?pak|protection plan|warranty|ink cartridges?|cartridges?|film packs?|instant film|key ?chains?|release (?:buttons?|cords?)|tripods?|monopods?|ball ?heads?|tilt-?top head|cameraplate|l-?bracket|top handle|nato rail|softbox|light stand|motion controller|display mod|locking kit|picture box|adhesive|black mist|nd filters?|lens caps?|eyecups?|lens hoods?|battery grip|batter(?:y|ies)|chargers?|memory cards?|backup camera|dash ?cam|trail camera|security camera|webcam|organi[sz]ers?|head for|handle v\d|3-way|(?:media|display|light|power) mod|timer kit|ac adapt[oe]rs?|day pack|power supply|envelopes)\b|(?<![-\w])mounts\b/i,
+};
+export const isMoreAccessory = (category: CategoryId, t: string) => (MORE_ACCESSORY[category]?.test(t) || ALWAYS_ACCESSORY[category]?.test(t)) ?? false;
 
 export type { Specs };

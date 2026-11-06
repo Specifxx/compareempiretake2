@@ -33,6 +33,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
 import { dataPath, REGION_IDS, type RegionId } from "../src/lib/region";
 import { EBAY_CAMPAIGN_ID, ebayAffiliate } from "../src/lib/ebay";
+import { ebayTitleMatches, mustHave } from "../src/lib/ebay-match";
 import type { Catalog, CategoryId, Phone } from "../src/lib/types";
 import { pool, sleep } from "./lib/http";
 
@@ -181,19 +182,7 @@ const legoSet = (p: Phone) => (p.category === "lego" ? p.slug.match(/^lego-(\d{4
 /** LEGO listings that are not the sealed set: parts, instructions, figures out of it, knock-offs. */
 const NOT_THE_SET = /\b(instructions?( only)?|manual only|minifigs? only|minifigures? only|no minifig\w*|no box|without box|incomplete|bulk|pieces only|parts only|custom|moc|compatible|led light|light kit|lighting kit|display case|frame)\b/i;
 
-/** The words a listing title must contain: brand plus the model's distinctive tokens; for LEGO, the set number. */
-export function mustHave(p: Phone): string[] {
-  const set = legoSet(p);
-  if (set) return ["lego", set];
-  const words = `${p.brand} ${p.model}`
-    .toLowerCase()
-    .replace(/[^a-z0-9.+ ]/g, " ")
-    .split(/\s+/)
-    .filter((w) => w.length > 1 && !/^(the|and|with|for|in|of|inch|gb|tb|wi|fi|smart|new|edition)$/.test(w));
-  return [...new Set(words)].slice(0, 6);
-}
-
-const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9.+ ]/g, " ");
+export { mustHave };
 
 async function token(): Promise<string> {
   const res = await fetch("https://api.ebay.com/identity/v1/oauth2/token", {
@@ -251,7 +240,6 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
     }
     if (!res.ok) return null;
     const body = (await res.json()) as { itemSummaries?: Summary[] };
-    const need = mustHave(c.p);
     // Only a listing whose postage eBay states, in the region's currency; the cheapest delivered (item + postage) wins.
     const postage = (s: Summary): number | null => {
       const c = s.shippingOptions?.[0]?.shippingCost;
@@ -260,9 +248,8 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
       return Number.isFinite(n) && n >= 0 ? n : null;
     };
     const ok = (body.itemSummaries ?? []).filter((s) => {
-      const t = norm(s.title);
       if (set && (NOT_THE_SET.test(s.title) || !new RegExp(`\\b${set}\\b`).test(s.title))) return false;
-      return s.price && postage(s) != null && !NOT_THE_PRODUCT.test(s.title) && need.every((w) => t.includes(w));
+      return s.price && postage(s) != null && !NOT_THE_PRODUCT.test(s.title) && ebayTitleMatches(c.p, s.title);
     });
     const best = ok.sort((a, b) => Number(a.price!.value) + postage(a)! - (Number(b.price!.value) + postage(b)!))[0];
     if (!best) return null;

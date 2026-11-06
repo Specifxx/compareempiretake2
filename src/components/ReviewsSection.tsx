@@ -18,7 +18,7 @@ export function Stars({ n, className = "" }: { n: number; className?: string }) 
 }
 
 /** Reviews of Compare Empire itself, loaded live so new ones show without a rebuild. */
-export function ReviewsSection({ limit = 6, full }: { limit?: number; full?: boolean }) {
+export function ReviewsSection({ limit = 6, full, hideEmpty, className }: { limit?: number; full?: boolean; hideEmpty?: boolean; className?: string }) {
   const [data, setData] = useState<Data | null>(null);
   useEffect(() => {
     // Since 2026-11-03 new ratings and reviews go to RiftCompare's shared review service (approved in its admin; stars count at
@@ -30,7 +30,9 @@ export function ReviewsSection({ limit = 6, full }: { limit?: number; full?: boo
   }, []);
   if (data && !data.enabled) return null;
   const reviews = data?.reviews.slice(0, full ? undefined : limit) ?? [];
-  return (
+  // `hideEmpty` (the home page): nothing at all until there are written reviews to show.
+  if (hideEmpty && !reviews.length) return null;
+  const body = (
     <section className="card overflow-hidden">
       <div className="flex flex-col gap-4 border-b border-line p-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
@@ -66,6 +68,7 @@ export function ReviewsSection({ limit = 6, full }: { limit?: number; full?: boo
       )}
     </section>
   );
+  return className ? <div className={className}>{body}</div> : body;
 }
 
 /** This site's own (pre-2026-11-03) reviews and the shared service's, as one list and one score. Pure. */

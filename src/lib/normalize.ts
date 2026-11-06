@@ -81,6 +81,9 @@ const IMPLIED: [RegExp, string][] = [
  * With allowNoStorage, a title without a GB/TB figure parses with storageGb 0:
  * the store's "from" price, which the catalogue pins to the base model.
  */
+/** A phone made for another market, named as such in the title. */
+export const GREY_IMPORT = /\b(latin america(?:n)?|lat ?am|international|global|asia(?:n)?|european|eu|middle east|indian?|china|chinese|japan(?:ese)?|hong kong|hk)\s+(version|model|variant|spec|edition)\b/i;
+
 export function parseTitle(raw: string, opts: { allowNoStorage?: boolean } = {}): ParsedTitle | null {
   let t = raw
     .replace(/[  ]/g, " ")
@@ -103,6 +106,9 @@ export function parseTitle(raw: string, opts: { allowNoStorage?: boolean } = {})
   // A bundle ("iPhone 17 Pro Max 256GB with OtterBox Protection Bundle") is not the phone: its price would sit in
   // the phone's own row. Left out rather than guessed (2026-11-06).
   if (/\bbundle\b/i.test(raw)) return null;
+  // Another market's phone ("Galaxy A57 256GB (Latin America Version)", "International Version"): a grey import with
+  // other bands and no local warranty, priced apart from the local phone (US shopper review, 2026-11-06).
+  if (GREY_IMPORT.test(raw)) return null;
   // Enterprise Edition is a different SKU (its own price and warranty), not a colour of the retail phone.
   const enterprise = /\benterprise edition\b/i.test(raw);
   // Samsung sells "Galaxy A17 4G" and "Galaxy A17 5G" as two phones at two prices; the 4G is its own model.
@@ -192,6 +198,8 @@ function tidyColour(c: string): string {
 }
 
 export function storageLabel(gb: number): string {
+  // No storage (TVs, headphones, a "from" price): no label, never "0GB" (US shopper review, 2026-11-06).
+  if (!gb) return "";
   return gb >= 1024 ? `${gb / 1024}TB` : `${gb}GB`;
 }
 

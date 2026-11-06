@@ -12,7 +12,7 @@ export function parseListing(o: RawOffer, category: CategoryId): Parsed | null {
   if (category !== "phones") return parseProduct(o, category);
   const p = parseTitle(o.title, { allowNoStorage: o.fromPrice });
   if (!p) return null;
-  const label = storageLabel(p.storageGb);
+  const label = storageLabel(p.storageGb) || "Standard";
   return { brand: p.brand, model: p.model, key: p.key, colour: p.colour, variant: { id: p.storageGb ? label.toLowerCase() : "", label, storageGb: p.storageGb }, codes: productCodes(`${o.title} ${o.mpn ?? ""}`) };
 }
 

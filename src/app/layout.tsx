@@ -60,7 +60,10 @@ export const viewport: Viewport = {
 // (globals.css, [data-grid-fallback]). Crawlers and visitors without JavaScript never get the class.
 const themeScript =
   `try{var t=localStorage.getItem('ce-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}` +
-  `try{if(/[?&](?:q|brand|min|max|storage|fold|5g|stock|multi|cat|f\\.[a-z0-9-]+)=[^&]|[?&]sort=(?!popular(?:&|$))[^&]/.test(location.search))document.documentElement.classList.add('gq')}catch(e){}`;
+  `try{if(/[?&](?:q|brand|min|max|storage|fold|5g|stock|multi|cat|f\\.[a-z0-9-]+)=[^&]|[?&]sort=(?!popular(?:&|$))[^&]/.test(location.search))document.documentElement.classList.add('gq')}catch(e){}` +
+  // A store photo that fails to load (hotlink-blocked, moved) is hidden and its tile says "No photo", instead of a broken
+  // image icon (US shopper review, 2026-11-06). Capture phase: image errors don't bubble.
+  `document.addEventListener('error',function(e){var t=e.target;if(t&&t.tagName==='IMG'&&!t.hasAttribute('data-broken')){t.setAttribute('data-broken','');var p=t.closest('.img-tile');if(p)p.classList.add('img-missing')}},true);`;
 
 function navDepartments(region: RegionId): NavDepartment[] {
   const live = activeCategories(region);

@@ -160,7 +160,7 @@ export const CATEGORY_GUIDES: Partial<Record<CategoryId, CategoryGuide>> = {
   "coffee-machines": {
     tips: [
       "Decide how hands-on you want to be: pod machines are fastest, fully automatic machines grind and froth at a button, and manual espresso machines give the best coffee for the price if you'll learn the steps.",
-      "A built-in grinder saves buying one separately (budget A$150 or more for a decent standalone grinder).",
+      "A built-in grinder saves buying a decent standalone grinder separately, which can cost as much as a budget machine.",
       "The same machine often has a different model code per colour, and stores discount colours differently: check every colour's price.",
     ],
     faq: [

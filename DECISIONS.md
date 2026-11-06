@@ -1385,6 +1385,7 @@ was therefore a server render (and its share card a second one), ~9,700 a day pe
 pages that ask not to be indexed (2026-11-05, "Thin pages out of the index"), so the crawl bought nothing. Pages outside
 the tier are still found through the sitemap's hubs, the grids and `/browse` at the engines' own pace. Widening the sitemap
 tier (`SITEMAP_MIN_STORES`) widens IndexNow with it.
+
 ## 2026-11-06 — The US is the default region, and one set of posts serves every region
 
 **Owner (Bill, 2026-11-06):** "I want the US to be the default region … unless we can tell that you're from Australia and
@@ -1486,6 +1487,48 @@ only, one offer per model and storage at its lowest colour price) and Motorola U
 sells several storages for one price is skipped). Carrier, trade-in, monthly-only and renewed prices are refused.
 Phone dealers read through `autoShopify` keep only US unlocked units (global models, dual-SIM imports and carrier
 phones refused). Rounds 22 and 23 added 25 independent US stores this way.
+
+
+## 2026-11-06 — A US shopper's review: best price first, no claims the history can't back
+
+**Decision (owner pasted a US shopper's review and asked for every complaint fixed):** the parts not owned by other work
+(big US retailers and Amazon's price; spec labels) are fixed here.
+
+- **The cheapest store comes first, always.** The eBay and Amazon ad rows sit under the cheapest store row, on the product
+  page and in the quick view, never above it (an eBay ad sat above the store tagged "Cheapest" at the same price, in a
+  list headed "cheapest first"). This replaces the 2026-10-30 "pinned at the very top" placement; the rows still look
+  like store rows, are labelled Ad and are never ranked, counted or badged. "+$2" beside a store is now "$2 more than the
+  cheapest".
+- **No "is that sale real?" promise until the history can keep it.** `historyMature` (lib/catalog.ts): a region with
+  under `HISTORY_CLAIM_DAYS` (60) days of daily snapshots gets a plain hero ("Every store's price, cheapest first", with
+  the date we started saving prices), no fake-sale tile, no live price-check example, and a softer meta description. The
+  claim comes back by itself once the history is long enough. A store's "was" price is shown only when our own record
+  backs it or contradicts it, never as "too new to check", and an RRP deal counts only when the store really charged that
+  price on an earlier day (`wasChecker`). Any saving whose reference is over twice today's price is dropped as a wrong
+  match.
+- **Wrong matches.** eBay titles must contain each model word whole (the EOS R10 was priced from an R100 listing), and a
+  phone listing naming several storage sizes or another market's version is refused (`lib/ebay-match.ts`, also applied
+  to stored listings at load). A phone titled "Latin America / International … Version" is a grey import and is refused
+  by the parser. Xidax is read for monitors only: its GPUs, CPUs and SSDs carry PC-build upgrade prices.
+- **Names and brands are tidied at load, never the slug.** A trailing store code or barcode ("- 196388421343",
+  "- 17Z90U-H.AU87U1": LG US's own SKU, not an Australian model) leaves the name, "0GB" is never printed, distributors in
+  the brand field give way to the maker, and brand spellings fold into one (`lib/product-names.ts`). An AU brand page whose
+  spelling folded redirects permanently to the surviving one.
+- **Cameras** refuse holsters, cubes, inserts, books, CarePAKs, ink, key chains, tripod heads and similar even when the
+  title says "camera" (`ALWAYS_ACCESSORY` in match-more.ts).
+- **Copy.** The product page's tax line is the region's own (`taxNote`); "listings for this phone" names the product;
+  the 404 is about products; category FAQ answers about Australia stay on AU pages; "Sold by 2+ stores: 0" is not shown.
+- **Home page.** Only categories with two or more stores and at least one product two of them sell (`comparedCategories`);
+  popular rows list only products sold by 2+ stores; empty sections and the empty reviews box are not drawn. Every
+  category page stays live and in the menu and footer.
+- **Search.** "See all results" went to Australia's phones page whatever was searched; it now opens the best match's own
+  category in the visitor's region (`allResultsHref`). "PS5" finds the PlayStation 5.
+- **Compare tray.** A shared `/compare?p=…` link is shown from the URL and no longer written into the visitor's tray.
+- **Broken photos** are hidden and their tile says "No photo" (an error listener in the layout's head script).
+
+Most data fixes (cameras, grey imports, Xidax) take effect with the next daily import's catalogue build; the display
+fixes with the next release.
+
 ## 2026-11-06 — Awin offers and vouchers for the whole family (`data/awin/promotions.json`)
 
 **Decision (owner: store promotions "captured in our price comparison"):** the daily Awin sync also reads Awin's Offers
