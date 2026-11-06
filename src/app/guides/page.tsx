@@ -1,19 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { GuideCard } from "@/components/GuideCard";
-import { getCatalog } from "@/lib/catalog";
+import { activeRetailers, liveRegions } from "@/lib/catalog";
+import { REGIONS } from "@/lib/region";
 import { getGuides, GUIDE_SECTIONS } from "@/lib/guides";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Tech buying guides for Australia, with live prices",
-  description: "Best picks, head-to-head comparisons, which Australian stores are cheapest and how to shop smarter. Every price in every guide is checked each morning.",
+  title: "Tech buying guides with live prices",
+  description: "Best picks, buying advice and how to shop smarter, with live prices from the stores in your country (US, UK, Australia and more), checked each morning.",
   alternates: { canonical: "/guides" },
 };
 
 export default function GuidesPage() {
   const guides = getGuides();
-  const { retailers } = getCatalog();
+  const ORDER = ["us", "uk", "au", "ca", "sg"];
+  const regions = liveRegions().sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b));
+  const stores = regions.reduce((n, r) => n + activeRetailers(undefined, r).length, 0);
+  const names = regions.map((r) => (r === "us" || r === "uk" ? `the ${r.toUpperCase()}` : REGIONS[r].name));
+  const where = names.length > 1 ? `${names.slice(0, -1).join(", ")} and ${names.at(-1)}` : names[0];
   const latest = guides.slice(0, 3);
   const jsonLd = {
     "@context": "https://schema.org",
@@ -32,7 +37,7 @@ export default function GuidesPage() {
           <div className="eyebrow">Compare Empire guides</div>
           <h1 className="mt-2 font-display text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">Buy the right thing, from the right store</h1>
           <p className="mt-4 text-lg text-ink-soft">
-            {guides.length} guides for Australian shoppers. Every price, ranking and store comparison in them is recalculated each morning from {retailers.length} stores, so nothing here is months out of date.
+            {guides.length} guides for shoppers in {where}. Every price, ranking and store comparison in them is shown in your own currency and recalculated each morning from {stores.toLocaleString("en-US")} stores, so nothing here is months out of date.
           </p>
         </div>
         <nav className="relative mt-8 flex flex-wrap gap-2" aria-label="Guide sections">

@@ -3,11 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GuideBody } from "@/components/GuideBody";
 import { GuideCard } from "@/components/GuideCard";
-import { getCatalog, getProducts } from "@/lib/catalog";
+import { GuideRegionPicker } from "@/components/GuideRegionPicker";
+import { categoryHref, getProducts, liveRegions, regionUpdatedAt } from "@/lib/catalog";
+import { REGIONS } from "@/lib/region";
 import { categoryById } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
 import { ogImage } from "@/lib/og";
-import { getGuide, getGuides, GUIDE_SECTIONS, guideHero, guideToc, relatedGuides } from "@/lib/guides";
+import { getGuide, getGuides, GUIDE_SECTIONS, guidePhotos, guideToc, relatedGuides } from "@/lib/guides";
 import { SITE } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -16,7 +18,7 @@ export const generateStaticParams = () => getGuides().map((g) => ({ slug: g.slug
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const g = getGuide((await params).slug);
   if (!g) return {};
-  const img = guideHero(g)?.image;
+  const img = guidePhotos(g, 1)[0]?.src;
   // A branded share card (title, section and the hero's photo), like product pages', rather than the bare photo.
   const card = ogImage({ title: g.title, image: img, category: GUIDE_SECTIONS.find((s) => s.id === g.section)?.name });
   return {
@@ -30,14 +32,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
   const g = getGuide((await params).slug);
   if (!g) notFound();
-  const { updatedAt } = getCatalog();
-  const checked = new Date(updatedAt).toLocaleDateString("en-AU", { timeZone: "Australia/Sydney", day: "numeric", month: "long", year: "numeric" });
+  // One post for every region (owner, 2026-11-06): each block is drawn per live region and CSS shows the reader's.
+  const ORDER = ["us", "uk", "au", "ca", "sg"];
+  const regions = liveRegions().sort((a, b) => ORDER.indexOf(a) - ORDER.indexOf(b));
+  const updatedAt = regions.map((r) => regionUpdatedAt(r)).sort().at(-1) ?? new Date().toISOString();
+  const checked = new Date(updatedAt).toLocaleDateString("en-US", { timeZone: "UTC", day: "numeric", month: "long", year: "numeric" });
   const toc = guideToc(g);
   const more = relatedGuides(g, 6);
   const section = GUIDE_SECTIONS.find((s) => s.id === g.section)!;
   const cat = categoryById(g.category);
-  const catCount = cat ? getProducts(cat.id as CategoryId).length : 0;
-  const hero = guideHero(g);
+  const catRegions = cat ? regions.map((r) => ({ r, n: getProducts(cat.id as CategoryId, r).length })).filter((x) => x.n > 0) : [];
+  const heroImage = guidePhotos(g, 1)[0]?.src;
   const jsonLd = [
     {
       "@context": "https://schema.org",
@@ -46,7 +51,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       description: g.description,
       datePublished: g.date,
       dateModified: updatedAt.slice(0, 10),
-      image: hero?.image ? [hero.image] : undefined,
+      image: heroImage ? [heroImage] : undefined,
       author: { "@type": "Organization", name: "Compare Empire", url: `${SITE}/about` },
       publisher: { "@type": "Organization", name: "Compare Empire", url: SITE },
       mainEntityOfPage: `${SITE}/guides/${g.slug}`,
@@ -86,11 +91,12 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               </ol>
             </details>
           )}
+          <GuideRegionPicker regions={regions} />
           <div className="mt-8">
-            <GuideBody body={g.body} />
+            <GuideBody body={g.body} regions={regions} />
           </div>
           <div className="mt-12 rounded-2xl border border-line bg-bg-sunk p-5 text-sm text-ink-soft">
-            <b className="text-ink">How we work:</b> every price in this guide is today&apos;s lowest in-stock price across the Australian stores we check, refreshed every morning, and the tables recalculate with it. Nobody pays to be included or to rank higher. Specs come from the stores&apos; and makers&apos; own listings.{" "}
+            <b className="text-ink">How we work:</b> every price in this guide is today&apos;s lowest in-stock price across the stores we check in your country, in your own currency, refreshed every morning, and the tables recalculate with it. Prices are never converted between currencies. Nobody pays to be included or to rank higher. Specs come from the stores&apos; and makers&apos; own listings.{" "}
             <Link prefetch={false} href="/about#how" className="text-brand hover:underline">How Compare Empire works</Link>
           </div>
         </article>
@@ -104,14 +110,15 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                 </ol>
               </nav>
             )}
-            {cat && catCount > 0 && (
-              <Link prefetch={false} href={cat.href} className="card block bg-gradient-to-br from-brand-soft to-bg-card p-5 transition hover:shadow-lift">
-                <div className="text-2xl">{cat.emoji}</div>
-                <div className="mt-2 font-display text-lg font-bold leading-snug">Compare every {cat.noun} price</div>
-                <p className="mt-1 text-sm text-ink-soft">{catCount.toLocaleString("en-AU")} products in {cat.name} across Australian stores, cheapest in stock first.</p>
-                <span className="btn-primary mt-4 w-full py-2 text-xs">Compare {cat.name}</span>
-              </Link>
-            )}
+            {cat &&
+              catRegions.map(({ r, n }) => (
+                <Link key={r} prefetch={false} href={categoryHref(cat.id, r)} className={`rg rg-${r} card bg-gradient-to-br from-brand-soft to-bg-card p-5 transition hover:shadow-lift`}>
+                  <div className="text-2xl">{cat.emoji}</div>
+                  <div className="mt-2 font-display text-lg font-bold leading-snug">Compare every {cat.noun} price</div>
+                  <p className="mt-1 text-sm text-ink-soft">{n.toLocaleString("en-US")} products in {cat.name} across {REGIONS[r].adjective} stores, cheapest in stock first.</p>
+                  <span className="btn-primary mt-4 w-full py-2 text-xs">Compare {cat.name}</span>
+                </Link>
+              ))}
           </div>
         </aside>
       </div>
