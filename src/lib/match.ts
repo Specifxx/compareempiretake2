@@ -546,9 +546,9 @@ export function categorySpecs(category: CategoryId, titles: string[]): Specs {
     if (scr) extra.push(["Screen", `${scr}"`]);
   }
   if (category === "tablets") {
-    const scr = vote(titles.map((t) => t.match(/(\d{1,2}(?:\.\d)?)[- ]?(?:-inch|inch|"|”)/i)?.[1]).filter((x) => x && Number(x) >= 6 && Number(x) <= 15));
+    const scr = vote(titles.map((t) => t.match(/(\d{1,2}(?:\.\d)?)[- ]?(?:-inch|inch|"|”|in\b)/i)?.[1]).filter((x) => x && Number(x) >= 6 && Number(x) <= 15));
     if (scr) extra.push(["Screen", `${scr}"`]);
-    const apple = (t: string) => (/\b(ipad|apple)\b/i.test(t) ? t.match(/\b(A\d{2}(?: Pro)?)\b/)?.[1] : undefined);
+    const apple = (t: string) => (/\b(ipad|apple)\b/i.test(t) ? t.match(/\b(A\d{2}(?: Pro)?)\b/)?.[1]?.replace(/^/, "Apple ") : undefined);
     const chip = vote(titles.map((t) => cpuName(t) ?? apple(t) ?? phoneChip(t)));
     if (chip) extra.push(["Chip", chip]);
   }

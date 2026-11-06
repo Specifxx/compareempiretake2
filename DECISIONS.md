@@ -1473,6 +1473,12 @@ review found monitors labelled wrong (the LG 27GM950B, a 5K Mini LED IPS, shown 
   one a store sells. Matching now drops sizes ("17.3 cm", '6.9"'), "UK Model", "Business Edition" and "PANTONE …"
   before comparing, and a one- or two-letter word after a model ("Reno 12 FS") makes it another model. HONOR's spec
   pages were not found at a readable address and were skipped.
+- **US and UK next (owner's priority).** Samsung UK and the Google Store UK give main-camera figures the Wikipedia
+  infoboxes lacked (kept as `makerSource` beside the Wikipedia `source`); OnePlus UK and Motorola US spec pages give
+  whole entries. Tablets get their own sheet, `data/specs/tablets.json`, with chips per line from Wikipedia
+  (Galaxy Tab, iPad by year or generation); an iPad named only "iPad Pro 13\"" says no generation and stays "—".
+  Sony's main camera is printed as two figures (52 MP full, 48 MP effective), so it is left out. US laptops without a
+  processor are mostly build-to-order listings (Dell, MAINGEAR) whose title doesn't say one: also "—" by design.
 
 ## 2026-11-06 — US prices: each Amazon country needs its own credential; brand stores read directly
 

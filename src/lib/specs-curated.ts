@@ -16,10 +16,11 @@ const sheets = new Map<CategoryId, { brand: string; key: string; sheet: Sheet }[
 const norm = (s: string) =>
   s
     .toLowerCase()
-    // Sizes and store suffixes that are not part of the model: "17.3 cm", 'Graphite 6.9"', "UK Model",
+    // Sizes, codes and store suffixes that are not part of the model: "17.3 cm", 'Graphite 6.9"', "UK Model",
     // "PANTONE Cosmic Sky", "Business Edition", a trailing "-".
     .replace(/\d+(\.\d+)?\s?(cm|"|”|inch(es)?)/g, " ")
     .replace(/\b(uk model|business edition)\b/g, " ")
+    .replace(/\bsm-?[a-z]\d{3}\w*/g, " ") // Samsung's own model code: "Galaxy Tab A11 SM-X130"
     .replace(/\bpantone\b.*$/, " ")
     .replace(/\bmoto\s+edge\b/, "edge").replace(/\bgalaxy\s+fold/, "galaxy z fold").replace(/\+/g, " plus ").split(/[^a-z0-9]+/).filter(Boolean);
 const compact = (s: string) => norm(s).join("");
