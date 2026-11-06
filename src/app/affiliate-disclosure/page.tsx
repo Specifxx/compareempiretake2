@@ -19,7 +19,7 @@ export default function AffiliateDisclosurePage() {
         <h2>Amazon</h2>
         <p>
           Compare Empire is a participant in the Amazon Associates Programs for Amazon Australia (amazon.com.au), Amazon US
-          (amazon.com) and Amazon UK (amazon.co.uk). Links marked &quot;Check price on Amazon&quot; go straight to that Amazon store with our tracking tag. If you buy
+          (amazon.com), Amazon UK (amazon.co.uk) and Amazon Canada (amazon.ca). Amazon Singapore has no such programme, so our Singapore pages have no Amazon links. Links marked &quot;Check price on Amazon&quot; go straight to that Amazon store with our tracking tag. If you buy
           something after clicking one, Amazon may
           pay us a commission. You pay the same price.
         </p>

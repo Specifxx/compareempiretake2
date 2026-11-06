@@ -12,7 +12,7 @@ import { hubLanguages } from "@/views/region-meta";
  * (category grids load most of their products in the browser). 200 links a page.
  */
 const PER_PAGE = 200;
-const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the UK" };
+const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the UK", ca: "Canada", sg: "Singapore" };
 
 const sorted = (category: CategoryId, region: RegionId) => [...getProducts(category, region)].sort((a, b) => a.name.localeCompare(b.name));
 const pages = (category: CategoryId, region: RegionId) => Math.max(1, Math.ceil(getProducts(category, region).length / PER_PAGE));

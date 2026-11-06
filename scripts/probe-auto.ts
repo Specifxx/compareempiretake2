@@ -18,7 +18,7 @@ const ALL: CategoryId[] = process.env.PROBE_CATS ? (process.env.PROBE_CATS.split
   "laptops", "desktops", "monitors", "tvs", "printers", "routers", "graphics-cards", "cpus", "ssds", "ram", "motherboards",
   "small-kitchen", "coffee-gear", "hair-care", "bbqs",
 ];
-const CUR: Record<string, string> = { us: "USD", uk: "GBP", au: "AUD" };
+const CUR: Record<string, string> = { us: "USD", uk: "GBP", au: "AUD", ca: "CAD", sg: "SGD" };
 
 async function main() {
   const lines = readFileSync(process.argv[2], "utf8").split("\n").map((l) => l.trim()).filter((l) => l && !l.startsWith("#"));
@@ -32,7 +32,8 @@ async function main() {
       r.name = meta.name;
       r.currency = meta.currency;
       r.country = meta.country;
-      const products = await catalogue(base, 20);
+      const country = region === "uk" ? "GB" : region.toUpperCase();
+      const products = await catalogue(base, 20, undefined, country);
       r.products = products.length;
       const woo = products[0] as unknown as { woo?: boolean; currency?: string } | undefined;
       if (woo?.woo) {
@@ -40,7 +41,7 @@ async function main() {
         r.currency = woo.currency;
       }
       r.vendors = [...new Set(products.map((p) => p.vendor))].length;
-      const got = await readAuto({ retailer: "probe" as never, base, cats: ALL });
+      const got = await readAuto({ retailer: "probe" as never, base, cats: ALL, country });
       r.cats = Object.fromEntries([...got].filter(([, o]) => o.length).map(([c, o]) => [c, o.length]));
       r.samples = Object.fromEntries([...got].filter(([, o]) => o.length).map(([c, o]) => [c, o.filter((_, i) => i % Math.max(1, Math.floor(o.length / 6)) === 0).slice(0, 6).map((x) => `${x.price} ${x.brand ?? "?"} | ${x.title}`)]));
       r.ok = r.currency === CUR[region];

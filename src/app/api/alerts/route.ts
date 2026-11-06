@@ -20,7 +20,7 @@ export async function POST(req: Request) {
   if (!isEmail(body.email)) return json({ ok: false, error: "That email doesn't look right." }, 400);
   const email = body.email.toLowerCase();
   const product = clip(body.product, 200);
-  if (!/^(\/(us|uk))?\/[a-z-]+\/[a-z0-9-]+$/.test(product)) return json({ ok: false, error: "Unknown product." }, 400);
+  if (!/^(\/(us|uk|ca|sg))?\/[a-z-]+\/[a-z0-9-]+$/.test(product)) return json({ ok: false, error: "Unknown product." }, 400);
   const productName = clip(body.productName, 160) || product;
   const alertRegion = regionOf(product);
   const variant = clip(body.variant, 60);

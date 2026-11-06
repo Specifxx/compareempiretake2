@@ -1,3 +1,4 @@
+import type { RegionId } from "./region";
 /** One store's price on a share card: store name and price, in the region's own currency. */
 export interface ShareRow { s: string; p: number }
 
@@ -13,7 +14,7 @@ export function ogImage(o: {
   verdict?: string;
   image?: string;
   category?: string;
-  region?: "au" | "us" | "uk";
+  region?: RegionId;
   /** The product the store rows are for (the card's comparison panel). */
   product?: string;
   /** Real in-stock store prices for `product`, cheapest first (shareRows in src/lib/share-rows.ts). */

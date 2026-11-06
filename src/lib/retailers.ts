@@ -1,6 +1,8 @@
 import type { Retailer, RetailerId } from "./types";
 import { US_RETAILERS } from "./retailers-us";
 import { UK_RETAILERS } from "./retailers-uk";
+import { CA_RETAILERS } from "./retailers-ca";
+import { SG_RETAILERS } from "./retailers-sg";
 
 const AU_RETAILERS = {
   jbhifi: { id: "jbhifi", name: "JB Hi-Fi", site: "jbhifi.com.au", color: "#FFD600", type: "retailer" },
@@ -167,4 +169,6 @@ export const RETAILERS = {
   ...AU_RETAILERS,
   ...Object.fromEntries(US_RETAILERS.map((r) => [r.id, r])),
   ...Object.fromEntries(UK_RETAILERS.map((r) => [r.id, r])),
+  ...Object.fromEntries(CA_RETAILERS.map((r) => [r.id, r])),
+  ...Object.fromEntries(SG_RETAILERS.map((r) => [r.id, r])),
 } as Record<RetailerId, Retailer>;

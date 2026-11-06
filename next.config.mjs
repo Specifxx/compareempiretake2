@@ -109,7 +109,7 @@ const nextConfig = {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.
     return [
       { source: `/:category(${CATEGORY_IDS})/:slug`, has: HAS_UA, missing: NOT_RSC, headers: PRODUCT_CDN },
-      { source: `/:region(us|uk)/:category(${CATEGORY_IDS})/:slug`, has: HAS_UA, missing: NOT_RSC, headers: PRODUCT_CDN },
+      { source: `/:region(us|uk|ca|sg)/:category(${CATEGORY_IDS})/:slug`, has: HAS_UA, missing: NOT_RSC, headers: PRODUCT_CDN },
     ];
   },
 };

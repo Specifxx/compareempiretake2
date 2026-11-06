@@ -43,7 +43,7 @@ async function main() {
   let sent = 0;
   for (const a of rows) {
     const parts = a.product.split("/").filter(Boolean);
-    const region: RegionId = parts[0] === "us" || parts[0] === "uk" ? (parts.shift() as RegionId) : "au";
+    const region: RegionId = ["us", "uk", "ca", "sg"].includes(parts[0]) ? (parts.shift() as RegionId) : "au";
     const [cat, slug] = parts;
     const c = catalog(region, cat);
     const aud = (n: number) => money(n, region);

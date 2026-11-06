@@ -32,7 +32,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
 import { dataPath, REGION_IDS, type RegionId } from "../src/lib/region";
-import { EBAY_CAMPAIGN_ID } from "../src/lib/ebay";
+import { EBAY_CAMPAIGN_ID, ebayAffiliate } from "../src/lib/ebay";
 import type { Catalog, CategoryId, Phone } from "../src/lib/types";
 import { pool, sleep } from "./lib/http";
 
@@ -50,6 +50,8 @@ const MARKET: Record<RegionId, { id: string; currency: string; country: string; 
   au: { id: "EBAY_AU", currency: "AUD", country: "AU", zip: "2000" },
   us: { id: "EBAY_US", currency: "USD", country: "US", zip: "64101" },
   uk: { id: "EBAY_GB", currency: "GBP", country: "GB", zip: "B1 1AA" },
+  ca: { id: "EBAY_CA", currency: "CAD", country: "CA", zip: "M5V 2T6" },
+  sg: { id: "EBAY_SG", currency: "SGD", country: "SG", zip: "018956" },
 };
 /** How much eBay demand each category tends to have (1 = typical). */
 const CATEGORY_WEIGHT: Partial<Record<CategoryId, number>> = {
@@ -63,7 +65,7 @@ const CATEGORY_WEIGHT: Partial<Record<CategoryId, number>> = {
   // 2026-11: Dyson and ghd tools, KitchenAid mixers and grinders sell new on eBay; BBQs are bulky, often pick-up only.
   "hair-care": 1.2, "small-kitchen": 0.8, "coffee-gear": 0.9, bbqs: 0.4,
 };
-const REGION_WEIGHT: Record<RegionId, number> = { au: 1.0, us: 1.25, uk: 0.9 };
+const REGION_WEIGHT: Record<RegionId, number> = { au: 1.0, us: 1.25, uk: 0.9, ca: 0.8, sg: 0.5 };
 /** Words that mark a listing as something other than the product itself. */
 const NOT_THE_PRODUCT = /\b(case|cover|protector|skin|sticker|decal|stand|mount|holder|strap|band|charger|cable|adapter|dock|box only|empty box|parts|repair|broken|faulty|for parts|replacement|housing|shell|lcd|screen only|motherboard only|keyboard only|remote only|manual|bundle of|lot of|refurbished|renewed|used|open box|pre-owned)\b/i;
 
@@ -91,7 +93,7 @@ export interface SearchDemand {
   category: Map<string, number>;
 }
 
-const REGION_PREFIX = /^\/(us|uk)(?=\/)/;
+const REGION_PREFIX = /^\/(us|uk|ca|sg)(?=\/)/;
 /** Pages that are a category's own, under any region prefix. */
 const CATEGORY_PAGE = /^\/(?:browse\/|deals\/)?([a-z-]+)(?:\/\d+)?$/;
 
@@ -268,7 +270,8 @@ async function search(tok: string, c: Candidate): Promise<EbayListing | null | "
       price: Number(best.price!.value),
       shipping: postage(best)!,
       title: best.title,
-      url: best.itemAffiliateWebUrl ?? best.itemWebUrl,
+      // Singapore has no EPN programme, so its listings are tagged on ebay.com's US rotation (lib/ebay.ts EBAY_SITES.sg).
+      url: c.region === "sg" ? ebayAffiliate(best.itemWebUrl.replace(/\/\/(www\.)?ebay\.com\.sg\//, "//www.ebay.com/"), `sg-${c.p.category}`, "sg") : best.itemAffiliateWebUrl ?? best.itemWebUrl,
       image: best.image?.imageUrl,
       seller: best.seller?.username,
       feedback: best.seller?.feedbackPercentage ? Number(best.seller.feedbackPercentage) : undefined,
@@ -283,7 +286,7 @@ export const REFRESH_DAYS = 7;
 /** Products people already find on Google come round sooner. */
 export const SEARCHED_REFRESH_DAYS = 3;
 /** The order regions are served in (owner, 2026-11-01: the US first). */
-export const REGION_ORDER: RegionId[] = ["us", "au", "uk"];
+export const REGION_ORDER: RegionId[] = ["us", "au", "uk", "ca", "sg"];
 
 /**
  * Today's queue, coverage first (owner, 2026-11-01): every product that has never had an eBay price, US

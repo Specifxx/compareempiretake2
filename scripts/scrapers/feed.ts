@@ -162,7 +162,7 @@ export interface FeedStore {
   /** The GitHub secret holding the feed URL (`FEED_URL_<STORE>`), passed to the job by refresh-prices.yml. */
   env: string;
   /** The region's currency; a row naming another is dropped. */
-  currency: "AUD" | "USD" | "GBP";
+  currency: "AUD" | "USD" | "GBP" | "CAD" | "SGD";
   /** In priority order: a row goes to the first category whose checks it passes. */
   cats: readonly CategoryId[];
   /** Extra titles to refuse (marketplace sellers, a chain's own bundle wording). */

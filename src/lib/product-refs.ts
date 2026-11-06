@@ -8,7 +8,7 @@ import type { RegionId } from "./region";
 import type { CategoryId } from "./types";
 
 /** An optional region prefix, a category id and a slug: nothing else gets near the catalogue. */
-export const PRODUCT_HREF = /^(?:\/(us|uk))?\/([a-z-]+)\/([a-z0-9-]+)$/;
+export const PRODUCT_HREF = /^(?:\/(us|uk|ca|sg))?\/([a-z-]+)\/([a-z0-9-]+)$/;
 /** Products per request (the saved list holds up to 100, so it asks in two or more). */
 export const MAX_REFS = 50;
 /** The longest product path today is 189 characters. */

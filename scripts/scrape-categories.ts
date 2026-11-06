@@ -22,7 +22,7 @@ async function main() {
   const onlyCat = ci >= 0 ? (args.splice(ci, 2)[1] as CategoryId) : undefined;
   const ri = args.indexOf("--region");
   const region = ri >= 0 ? args.splice(ri, 2)[1] : "au";
-  if (!/^(au|us|uk)$/.test(region)) throw new Error(`unknown region ${region}`);
+  if (!/^(au|us|uk|ca|sg)$/.test(region)) throw new Error(`unknown region ${region}`);
   const onlyStores = args;
   const dir = path.join(process.cwd(), region === "au" ? "scripts/scrapers/categories" : `scripts/scrapers/regions/${region}`);
   const root = region === "au" ? "data" : `data/${region}`;

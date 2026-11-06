@@ -7,7 +7,7 @@ import { HOME_PATH, isNeutralPath, REGION_BOOT_SCRIPT, regionFromTimeZone, regio
 // Owner, 2026-11-01: the default region is the visitor's own, the US when we can't tell; the root is the US home.
 
 test("the root is the US home, Australia's home is /au, and every other page keeps its URL", () => {
-  assert.deepEqual(HOME_PATH, { au: "/au", us: "/", uk: "/uk" });
+  assert.deepEqual(HOME_PATH, { au: "/au", us: "/", uk: "/uk", ca: "/ca", sg: "/sg" });
   assert.equal(regionOf("/"), "us");
   assert.equal(regionOf("/au"), "au");
   assert.equal(regionOf("/phones"), "au");
@@ -28,6 +28,10 @@ test("a time zone we don't cover is the US", () => {
   assert.equal(regionFromTimeZone("America/Chicago"), "us");
   assert.equal(regionFromTimeZone("Asia/Tokyo"), "us");
   assert.equal(regionFromTimeZone("Europe/Paris"), "us");
+  assert.equal(regionFromTimeZone("America/Toronto"), "ca");
+  assert.equal(regionFromTimeZone("America/Vancouver"), "ca");
+  assert.equal(regionFromTimeZone("Asia/Singapore"), "sg");
+  assert.equal(regionFromTimeZone("Asia/Kuala_Lumpur"), "us");
   assert.equal(regionFromTimeZone(""), "us");
   assert.ok(isNeutralPath("/about") && isNeutralPath("/forum/x") && !isNeutralPath("/phones") && !isNeutralPath("/"));
 });
@@ -37,9 +41,9 @@ test("x-default is the US copy", () => {
   assert.deepEqual(withXDefault({ "en-AU": "/phones" }), { "en-AU": "/phones" });
 });
 
-type Run = { path: string; tz?: string; saved?: string; ua?: string; alternates?: Record<string, string> };
-function boot({ path, tz = "America/New_York", saved, ua = "Mozilla/5.0 (iPhone) Safari/604.1", alternates = {} }: Run) {
-  const attrs: Record<string, string> = {};
+type Run = { path: string; tz?: string; saved?: string; ua?: string; alternates?: Record<string, string>; attrs?: Record<string, string> };
+function boot({ path, tz = "America/New_York", saved, ua = "Mozilla/5.0 (iPhone) Safari/604.1", alternates = {}, attrs: start = {} }: Run) {
+  const attrs: Record<string, string> = { ...start };
   let moved: string | null = null;
   const session: Record<string, string> = {};
   const ctx = {
@@ -52,7 +56,7 @@ function boot({ path, tz = "America/New_York", saved, ua = "Mozilla/5.0 (iPhone)
     setTimeout: () => 0,
     document: {
       readyState: "complete",
-      documentElement: { setAttribute: (k: string, v: string) => (attrs[k] = v), removeAttribute: (k: string) => delete attrs[k] },
+      documentElement: { getAttribute: (k: string) => attrs[k] ?? null, setAttribute: (k: string, v: string) => (attrs[k] = v), removeAttribute: (k: string) => delete attrs[k] },
       querySelector: (sel: string) => {
         const lang = /hreflang="([^"]+)"/.exec(sel)?.[1] ?? "";
         return alternates[lang] ? { href: `https://compareempire.com${alternates[lang]}` } : null;
@@ -76,6 +80,10 @@ test("only a visitor who picked a region is moved to that region's copy; a guess
   const bot = boot({ path: "/phones", saved: "us", ua: "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X) Chrome/120 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)", alternates: alts });
   assert.equal(bot.moved, null, "Googlebot stays");
   assert.equal(bot.attrs["data-geo"], undefined, "and nothing is hidden from it");
+  // A region with no products yet (not in the layout's data-regions) is never a destination.
+  const late = { ...alts, "en-CA": "/ca/phones" };
+  assert.equal(boot({ path: "/phones", saved: "ca", alternates: late, attrs: { "data-regions": "au us uk" } }).moved, null, "a region not live yet: stay");
+  assert.equal(boot({ path: "/phones", saved: "ca", alternates: late, attrs: { "data-regions": "au us uk ca" } }).moved, "/ca/phones?x=1", "once live it moves");
   const miss = boot({ path: "/guides/best-phones", saved: "us", alternates: {} });
   assert.equal(miss.moved, null, "no copy in their region: stay");
   assert.equal(miss.attrs["data-geo-miss"], "us");

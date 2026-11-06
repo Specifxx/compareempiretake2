@@ -17,7 +17,7 @@ export interface Marketplace {
   note: string;
 }
 
-const EBAY_NAME = { au: "eBay AU", us: "eBay US", uk: "eBay UK" } as const;
+const EBAY_NAME = { au: "eBay AU", us: "eBay US", uk: "eBay UK", ca: "eBay CA", sg: "eBay" } as const;
 
 /** Amazon and eBay searches for a region. Amazon only where that region's Amazon has our tag. */
 export function marketplacesFor(region: RegionId = "au"): Marketplace[] {

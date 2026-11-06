@@ -1,5 +1,5 @@
 import { parseRows, type ShareRow } from "@/lib/og";
-import { money, REGIONS, type RegionId } from "@/lib/region";
+import { money, REGION_IDS, REGIONS, type RegionId } from "@/lib/region";
 import { ImageResponse } from "next/og";
 
 /**
@@ -105,7 +105,7 @@ export async function GET(req: Request) {
   const title = (q.get("t") ?? "Compare prices").slice(0, 90);
   const price = Number(q.get("p")) || undefined;
   const stores = Number(q.get("s")) || undefined;
-  const r: RegionId = q.get("r") === "us" ? "us" : q.get("r") === "uk" ? "uk" : "au";
+  const r: RegionId = REGION_IDS.find((x) => x === q.get("r")) ?? "au";
   const R = REGIONS[r];
   const verdict = q.get("v")?.slice(0, 48);
   const category = q.get("c")?.slice(0, 30);

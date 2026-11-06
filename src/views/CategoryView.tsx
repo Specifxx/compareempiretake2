@@ -21,7 +21,7 @@ const AMAZON_PICK_CATEGORIES: CategoryId[] = ["phones", "tvs", "laptops", "headp
 
 export type CategoryParams = Promise<{ category: string }>;
 export const categoryParams = (region: RegionId) => activeCategories(region).map((c) => ({ category: c.id }));
-const inRegion = (region: RegionId) => (region === "au" ? "Australia" : region === "us" ? "the US" : "the UK");
+const inRegion = (region: RegionId) => ({ au: "Australia", us: "the US", uk: "the UK", ca: "Canada", sg: "Singapore" })[region];
 /** Search Console (2026-10-29): category pages rank for "<category> price comparison" (US robot vacuums: 7,600
  *  impressions at position 6, no clicks) under a title that never said it. */
 /** The three brands with the most products, in that order. */
@@ -37,7 +37,7 @@ export function categoryDescription(d: { count: number; noun: string; brands: st
   return `Compare ${d.count.toLocaleString("en-AU")} ${d.noun}${brands} across ${d.stores} ${d.adjective} stores${d.from ? `, from ${d.from} today` : ""}. See the cheapest store for each model, with prices checked daily and full price history.`;
 }
 
-const placeName = (region: RegionId) => (region === "au" ? "Australia" : region === "us" ? "US" : "UK");
+const placeName = (region: RegionId) => ({ au: "Australia", us: "US", uk: "UK", ca: "Canada", sg: "Singapore" })[region];
 
 export async function categoryMetadata(params: CategoryParams, region: RegionId): Promise<Metadata> {
   const c = categoryById((await params).category);

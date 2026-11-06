@@ -25,10 +25,10 @@ const TOKEN_ENDPOINTS: Record<string, string> = {
   "3.3": "https://api.amazon.co.jp/auth/o2/token",
 };
 
-export type AmazonMarket = "au" | "us" | "uk";
-export const MARKETPLACE: Record<AmazonMarket, string> = { au: "www.amazon.com.au", us: "www.amazon.com", uk: "www.amazon.co.uk" };
-const DEFAULT_VERSION: Record<AmazonMarket, string> = { au: "3.3", us: "3.1", uk: "3.2" };
-export const CURRENCY: Record<AmazonMarket, string> = { au: "AUD", us: "USD", uk: "GBP" };
+export type AmazonMarket = "au" | "us" | "uk" | "ca";
+export const MARKETPLACE: Record<AmazonMarket, string> = { au: "www.amazon.com.au", us: "www.amazon.com", uk: "www.amazon.co.uk", ca: "www.amazon.ca" };
+const DEFAULT_VERSION: Record<AmazonMarket, string> = { au: "3.3", us: "3.1", uk: "3.2", ca: "3.1" };
+export const CURRENCY: Record<AmazonMarket, string> = { au: "AUD", us: "USD", uk: "GBP", ca: "CAD" };
 
 /** The token endpoint for a credential version; an unknown version falls back to the market's home region. */
 export function tokenEndpoint(version: string | undefined, market: AmazonMarket): string {
