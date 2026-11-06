@@ -1333,3 +1333,24 @@ A sibling page split by a stated spec takes the spec's words its slug lacks as i
 the counter, which changed with the catalogue's size. Rebuilt all three regions with the previous and the new parser on
 the same raw listings: 40 pages with two or more stores move, all of them duplicates joining their twin, and each
 redirects in `next.config.mjs`. Over the first pass's 213 moves (series codes), the tightening is the whole difference.
+
+
+## 2026-11-06 — Canada and Singapore
+
+Owner: expand Compare Empire to Canada and Singapore, with every affiliate working and as many stores as possible.
+`/ca` and `/sg` are regions like `/us` and `/uk` (CAD before sales tax; SGD with GST), each 404 until it has products,
+and the header switcher, sitemap, hreflang and the region boot script name a region only once it is live (the layout's
+`data-regions`), so nobody is ever sent to an empty region.
+
+- **eBay.** Canada is eBay.ca on the one EPN campaign (rotation 706-53473-19255-0). EPN has no Singapore programme, so
+  Singapore's eBay links go to ebay.com on the US rotation, worded "that ship to Singapore", never "from Singapore
+  sellers"; the price pass searches EBAY_SG and rewrites the item link the same way.
+- **Amazon.** amazon.ca with `compareempire-20` (Creators API 3.1, North America). amazon.sg has no Associates programme:
+  no Amazon row in Singapore.
+- **Shopify Markets.** Every auto-read store is now asked for its own region's prices (`country=` from the retailer
+  id's prefix). Before this, US and UK stores were read with `country=AU`; a store with Markets turned on could have
+  answered in another currency's converted price. The currency check still refuses any mismatch.
+- **Sitemap.** A prefixed region's category is listed only when it has at least one product strong enough for the
+  sitemap, so a new region's thin categories are never submitted (the 2026-11-05 thin-pages rule).
+- **Stores.** `docs/stores/canada-singapore.md`: 21 Canadian and 17 Singapore stores read directly, own-trade
+  categories only, and feed slots for the big chains, which open when the owner's network approvals land.
