@@ -6,7 +6,7 @@ import { PhoneCard } from "@/components/PhoneCard";
 import { PhoneOffers } from "@/components/PhoneOffers";
 import { ReportPrice } from "@/components/ReportForms";
 import { PriceChart } from "@/components/PriceChart";
-import { checkVariant, getProduct, getProducts, getVsPairs, regionUpdatedAt, similarPhones, summarise, productHref, categoryHref } from "@/lib/catalog";
+import { checkVariant, getProduct, getProducts, getSeries, getVsPairs, regionUpdatedAt, similarPhones, summarise, productHref, categoryHref } from "@/lib/catalog";
 import { HOME_PATH, money, withXDefault, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById } from "@/lib/categories";
 import type { CategoryId, Phone } from "@/lib/types";
@@ -21,6 +21,7 @@ import { camCompareFor } from "@/lib/family";
 import { amazonFor } from "@/lib/amazon-live";
 import { cleanedSlug, productIndexable, productTitle } from "@/lib/indexing";
 import { guidesForCategory } from "@/lib/guides";
+import { categoryPosition, priceMove } from "@/lib/product-facts";
 
 export type ProductParams = Promise<{ category: string; slug: string }>;
 const load = async (params: ProductParams, region: RegionId) => {
@@ -195,7 +196,23 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           .map((o) => `${RETAILERS[o.retailer].name} (${$(o.price)})`)
           .join(", ")}${byStore.length > 5 ? ` and ${byStore.length - 5} more` : ""}${dearest && dearest.price > byStore[0].price ? `: a ${$(dearest.price - byStore[0].price)} gap between the cheapest and dearest store` : ""}.`
       : null;
-  const guides = region === "au" ? guidesForCategory(phone.category, 4) : [];
+  // Where this price sits in the category, and how it moved in our history: facts no other page carries.
+  const peers = getProducts(phone.category, region).filter((q) => q.variants.some((v) => v.offers.some((o) => o.inStock && o.kind !== "plan")));
+  const pos = inStock.length ? categoryPosition(phone, peers) : undefined;
+  const IN = ({ au: "in Australia", us: "in the US", uk: "in the UK", ca: "in Canada", sg: "in Singapore" } as const)[region];
+  const positionLine = pos
+    ? pos.rank === 1
+      ? `At ${$(phone.bestPrice)} it is the cheapest of the ${pos.peers} in-stock products in our ${cat.name} category ${IN}; the middle price is ${$(pos.median)}.`
+      : `At ${$(phone.bestPrice)} it costs less than ${pos.cheaperThanPct}% of the ${pos.peers} in-stock products in our ${cat.name} category ${IN} (number ${pos.rank} from the cheapest); the middle price is ${$(pos.median)}.`
+    : null;
+  const move = priceMove(getSeries(phone));
+  const moveLine = move
+    ? Math.abs(move.to - move.from) < move.from * 0.005
+      ? `Its best price has barely moved over the last ${move.days} days (${$(move.from)} then, ${$(move.to)} today).`
+      : `Its best price has ${move.to < move.from ? "dropped" : "risen"} from ${$(move.from)} to ${$(move.to)} over the last ${move.days} days (${move.to < move.from ? "−" : "+"}${Math.abs(Math.round(((move.to - move.from) / move.from) * 100))}%).`
+    : null;
+  // Guides serve every region since 2026-11-06 (one post, each region's prices), so every product page links them.
+  const guides = guidesForCategory(phone.category, 4);
   const crumbs = [
     { name: "Home", url: `${SITE}${HOME_PATH[region] === "/" ? "" : HOME_PATH[region]}` || SITE },
     { name: cat.name, url: `${SITE}${categoryHref(cat.id, region)}` },
@@ -257,8 +274,10 @@ export async function ProductView({ params, region }: { params: ProductParams; r
               </p>
             )}
             {storeLine && <p>{storeLine}</p>}
+            {positionLine && <p>{positionLine}</p>}
+            {moveLine && <p>{moveLine}</p>}
             <p>
-              We found <b className="text-ink">{phone.offerCount} listings</b> for this phone across{" "}
+              We found <b className="text-ink">{phone.offerCount} listings</b> for the {phone.model} across{" "}
               <b className="text-ink">{phone.retailerCount} {phone.retailerCount === 1 ? "store" : "stores"}</b>, in {phone.variants.length}{" "}
               {phone.variants.length === 1 ? "option" : "options"}
               {phone.colours.length > 1 ? ` and ${phone.colours.length} colours` : ""}. Last checked{" "}
@@ -317,7 +336,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">{cat.name} guides</h2>
           <div className="flex flex-wrap gap-2">
             {guides.map((g) => <Link prefetch={false} key={g.slug} href={`/guides/${g.slug}`} className="chip">{g.title}</Link>)}
-            <Link prefetch={false} href={`/brands/${phone.brand.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} className="chip">All {phone.brand} prices</Link>
+            {region === "au" && <Link prefetch={false} href={`/brands/${phone.brand.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} className="chip">All {phone.brand} prices</Link>}
           </div>
         </section>
       )}

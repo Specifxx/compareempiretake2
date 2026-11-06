@@ -1423,3 +1423,25 @@ alone). Awin serves all of a publisher's joined feeds under ONE datafeed key, wi
 advertiser's largest active feed is read with our columns (brand, EAN, MPN, stock, currency). An Awin approval now
 switches a chain on the next morning with no step by hand. A `FEED_URL_*` secret still wins; an advertiser not joined
 is never read; rows go through the same title, currency and condition checks as every feed.
+## 2026-11-06 — Every comparable US and UK product in the sitemap
+
+**Owner (Bill, 2026-11-06), from an outside SEO review:** "Include every US product with 2+ stores in the sitemap, and
+noindex the single-store pages", "put each region on its own URL with correct hreflang and canonical tags", and cut the
+templated boilerplate that makes 18K product pages look like scaled content.
+
+**Checked live first (2026-11-06, page source of `/`, `/au`, `/uk`, `/us/tvs`, `/uk/tvs`, `/us/headphones`):** every
+region already has its own URL with a self-canonical and reciprocal hreflang (`/` is the US home, `/us` 301s to it on
+purpose, x-default is the US copy). Nothing to change there. One-store pages were already noindex,follow (2026-11-05).
+
+**Sitemap:** the US, UK, Canada and Singapore now list every indexable product (two or more stores, in stock); Australia
+keeps the three-store tier (`SITEMAP_MIN_STORES` still widens it). Today's data: US 245 → 967, UK 1,671 → 3,265, AU
+unchanged at 2,668. The US catalogue is 18,322 products but 17,297 of them are sold by one store, so the US sitemap
+cannot grow further until stores overlap more (the store-growth thread and the chain feeds). IndexNow keeps the
+three-store tier everywhere (`productInIndexNow`): its burst of renders right after a deploy is the cost the 2026-11-06
+IndexNow entry cut, and the sitemap is read at Google's own pace instead.
+
+**Unique content per product:** the "About" card now says where the price sits in its category in that region ("costs
+less than 64% of the 428 in-stock products in our TVs category in the US … the middle price is $1,297.99") and, from a
+week of history up, how the best price moved over about 30 days (`src/lib/product-facts.ts`). "for this phone" on every
+category's page now names the model. Guides link from product pages in every region (posts are region-agnostic since
+the entry above); the brand chip stays Australian, where brand pages live.

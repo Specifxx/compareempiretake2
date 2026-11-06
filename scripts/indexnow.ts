@@ -6,7 +6,7 @@
  * Sends the hub pages plus every product whose best price changed since the
  * previous history day. Run after the daily data commit.
  *
- * Only products in the sitemap tier (productInSitemap: 3+ stores, in stock) are
+ * Only products in the three-store tier (productInIndexNow: 3+ stores, in stock) are
  * sent (2026-11-06, Vercel cost). IndexNow shares every URL with Bing, Yandex,
  * Seznam and Naver, and each engine fetched it minutes after the deploy, when
  * Vercel's CDN is empty: ~9,700 product renders a day, most of them one-store
@@ -16,7 +16,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
 import { dataPath, REGION_IDS, withRegion } from "../src/lib/region";
-import { productInSitemap } from "../src/lib/indexing";
+import { productInIndexNow } from "../src/lib/indexing";
 import type { Phone } from "../src/lib/types";
 
 const HOST = "compareempire.com";
@@ -40,7 +40,7 @@ for (const region of REGION_IDS) for (const c of CATEGORIES) {
   for (const [slug, variants] of Object.entries(today)) {
     const changed = !prev?.[slug] || Object.entries(variants).some(([vid, p]) => best(p) !== best(prev[slug]?.[vid]));
     const p = changed ? bySlug.get(slug) : undefined;
-    if (p && productInSitemap(p)) urls.add(withRegion(`/${c.id}/${slug}`, region));
+    if (p && productInIndexNow(p)) urls.add(withRegion(`/${c.id}/${slug}`, region));
   }
 }
 
