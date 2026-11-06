@@ -97,3 +97,69 @@ test("appliance accessories are not appliances", () => {
   assert.equal(p("Samsung Fridge Water Filter HAF-QIN", "fridges"), null);
   assert.ok(p("Dyson V15 Detect Absolute Cordless Vacuum", "vacuums"));
 });
+
+test("a figure with a unit is never the model code", () => {
+  const av = { brand: "Avanti" }, cap = { brand: "Capresso" }, bull = { brand: "Bull Grills" };
+  assert.notEqual(key("Avanti Inox Stovetop Espresso Maker 6 Cup 300ml", "coffee-gear", av), key("Avanti Classic Pro Stovetop Espresso Maker 6 Cup 300ml", "coffee-gear", av));
+  assert.notEqual(key("Capresso MG900 10-Cup Rapid Brew Coffee Maker", "coffee-machines", cap), key("Capresso MT900 10-Cup Rapid Brew Coffee Maker", "coffee-machines", cap));
+  assert.notEqual(key("Bull Grills Outlaw 30-Inch 4-Burner Built-in Gas grill Propane", "bbqs", bull), key("Bull Grills Lonestar Select 30-Inch 4-Burner Built-In Gas Grill Propane", "bbqs", bull));
+  assert.equal(p("Avanti Domo Caf Coffee Plunger 800ml 6 Cup Steel", "coffee-gear", av)?.code, undefined);
+  assert.equal(p("Capresso MG900 10-Cup Rapid Brew Coffee Maker", "coffee-machines", cap)?.code, "MG900");
+  assert.notEqual(key("ASUS RT-AX57 Go Wireless Wifi 6 (802.11ax) AX3000 Dual Band Gigabit Router", "routers"), key("ASUS RT-BE58U Wifi 7 (802.11ax) Router", "routers"));
+});
+
+test("the colour slot keeps product words out of the colour", () => {
+  // The generation, the capacity and "wireless" stay with the product; only the colour is the colour.
+  const gen2 = p("Bose QuietComfort Headphones (2nd Gen, Black)", "headphones")!;
+  assert.equal(gen2.colour, "Black");
+  assert.notEqual(gen2.key, key("Bose QuietComfort Headphones - Black", "headphones"));
+  assert.equal(gen2.key, key("Bose QuietComfort Headphones (2nd Gen) - White Smoke", "headphones"));
+  const tb1 = p("SanDisk Extreme Portable SSD - Monterey Blue 1TB", "ssds")!;
+  assert.equal(tb1.variant.id, "1tb");
+  assert.equal(tb1.colour, "Monterey Blue");
+  assert.equal(tb1.key, p("SanDisk Extreme Portable SSD - Sky Blue 2TB", "ssds")!.key);
+  assert.notEqual(tb1.variant.id, p("SanDisk Extreme Portable SSD - Sky Blue 2TB", "ssds")!.variant.id);
+  const wired = p("HyperX Cloud Stinger 3 – Gaming Headset Black", "headphones")!;
+  const wireless = p("HyperX Cloud Stinger 3 – Wireless Gaming Headset Black", "headphones")!;
+  assert.equal(wired.colour, "Black");
+  assert.notEqual(wired.key, wireless.key);
+  // The display name (and so the URL) is still the title without the whole trailing slot.
+  assert.equal(wired.model, "Cloud Stinger 3");
+  const go3s = p("Insta360 GO 3S Action Camera (64GB, Arctic White)", "cameras")!;
+  assert.equal(go3s.colour, "Arctic White");
+  assert.notEqual(go3s.key, key("Insta360 GO 3S Action Camera (128GB, Arctic White)", "cameras"));
+  assert.equal(go3s.key, key("Insta360 GO 3S Action Camera (64GB, Midnight Black)", "cameras"));
+});
+
+test("headphones and earbuds of one name are two products", async () => {
+  const { conflicts } = await import("../src/lib/match");
+  const h = p("Bose QuietComfort Headphones - Black", "headphones")!;
+  const e = p("Bose QuietComfort Earbuds - Black", "headphones")!;
+  assert.ok(conflicts(h.discriminator!, e.discriminator!));
+  assert.ok(!conflicts(h.discriminator!, p("Bose QuietComfort Bluetooth Headphones - Noise Cancelling", "headphones")!.discriminator!));
+  assert.ok(conflicts(p("HyperX Cloud Earbuds III Black", "headphones")!.discriminator!, p("HyperX Cloud III – Gaming Headset Black", "headphones")!.discriminator!));
+});
+
+test("RAM without a part number keeps the line in the key", () => {
+  assert.notEqual(key("Corsair Vengeance LPX - 32 GB 4 x 8 GB DDR4 3200 MHz memory module", "ram"), key("Corsair Dominator Platinum RGB - 32 GB 4 x 8 GB DDR4 3200 MHz memory module", "ram"));
+  assert.notEqual(key("G.Skill Trident Z5 Neo RGB 64GB (2x 32GB) DDR5 6000MHz CL36 AMD Desktop Memory", "ram"), key("G.Skill Flare X5 64GB (2x 32GB) DDR5 6000MHz C36 Desktop Memory - White", "ram"));
+  assert.equal(key("Kingston Technology FURY Beast RGB - 32 GB 2 x 16 GB 3200MT/s DDR4 memory module", "ram"), key("Kingston Fury Beast RGB 32GB (2x16GB) DDR4 PC4-25600C16 3200MHz Dual Channel Kit", "ram"));
+  assert.notEqual(key("Kingston Technology FURY Renegade RGB - 32 GB 2 x 16 GB 6400MT/s DDR5 memory module", "ram"), key("Kingston FURY Beast RGB 32GB (2x16GB) DDR5 6400MHz Dual Channel Kit", "ram"));
+});
+
+test("BBQs: the line before the code and the fuel must agree", async () => {
+  const { conflicts } = await import("../src/lib/match");
+  const spirit = p("Weber Spirit E-425 4-Burner Gas Barbecue (LPG)", "bbqs")!;
+  const genesis = p("Weber Genesis 2026 E-425 Black (LPG)", "bbqs")!;
+  const spiritNg = p("Weber Spirit E-425 Black Natural Gas – New", "bbqs")!;
+  assert.equal(spirit.key, genesis.key);
+  assert.ok(conflicts(spirit.discriminator!, genesis.discriminator!));
+  assert.ok(conflicts(spirit.discriminator!, spiritNg.discriminator!));
+  assert.ok(!conflicts(spirit.discriminator!, p("Spirit E-425 4-Burner Gas BBQ (LPG)", "bbqs", { brand: "Weber" })!.discriminator!));
+  assert.ok(!conflicts(spirit.discriminator!, p("Weber Spirit E-425 Black ULPG", "bbqs")!.discriminator!));
+});
+
+test("Ryzen PRO is its own part", () => {
+  assert.notEqual(key("AMD Ryzen 5 PRO 8500G processor 3.5 GHz 16 MB L3", "cpus"), key("AMD Ryzen 5 8500G processor 3.5 GHz 16 MB L3", "cpus"));
+  assert.equal(cpuModel("AMD Ryzen Threadripper PRO 7985WX")?.family, "Ryzen Threadripper PRO");
+});

@@ -6,6 +6,7 @@ import { search } from "@/lib/search";
 import { useSearchIndex } from "@/lib/use-search-index";
 import { SearchIcon } from "./icons";
 import { useRegionKit } from "@/lib/use-region";
+import { Currency, RegionTag } from "./RegionTag";
 
 export interface SearchEntry {
   kind: "phone" | "guide" | "vs" | "category";
@@ -112,7 +113,11 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
       </label>
       {open && (
         <div id="search-results" role="listbox" className={`card absolute inset-x-0 z-50 mt-2 overflow-hidden text-left shadow-lift animate-fade-up ${lg ? "" : "min-w-[22rem]"}`}>
-          {!q.trim() && <div className="px-4 pb-1 pt-3 eyebrow">Popular right now</div>}
+          {/* Which country's prices these are: the UK and US editions leave prices unconverted (owner, 2026-11-06). */}
+          <div className="flex items-center justify-between gap-3 border-b border-line px-4 py-2">
+            {q.trim() ? <span className="eyebrow">Results</span> : <span className="eyebrow">Popular right now</span>}
+            <RegionTag region={region} />
+          </div>
           {!loaded && <div className="px-4 py-6 text-center text-sm text-ink-mute">Loading…</div>}
           {loaded && flat.length === 0 && <div className="px-4 py-6 text-center text-sm text-ink-mute">No matches for “{q}”. Try a brand or model number.</div>}
           <ul className="max-h-[60vh] overflow-y-auto p-1.5">
@@ -135,7 +140,7 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
                   {r.price !== undefined && (
                     <span className="text-right">
                       <span className="block text-[10px] text-ink-mute">from</span>
-                      <span className="price text-sm">{$(r.price)}</span>
+                      <span className="price text-sm">{$(r.price)}<Currency region={region} /></span>
                     </span>
                   )}
                 </Link>

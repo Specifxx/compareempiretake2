@@ -15,3 +15,15 @@ test("shorthand and typos", () => {
 test("no match returns nothing", () => {
   assert.equal(search(items, "nokia").length, 0);
 });
+
+test("exact model numbers: digits are not a prefix of a longer number, storage in the query is optional", () => {
+  const tvs = ["Samsung 65\" Neo QLED QN90F 4K Smart TV", "Samsung 75\" Neo QLED QN900F 8K Smart TV", "Samsung QN90H Neo QLED 85-Inch TV"].map((name) => ({ name }));
+  assert.deepEqual(search(tvs, "QN90F").map((t) => t.name), ["Samsung 65\" Neo QLED QN90F 4K Smart TV"]);
+  assert.deepEqual(search(tvs, "QN900F").map((t) => t.name), ["Samsung 75\" Neo QLED QN900F 8K Smart TV"]);
+  const cards = ["PNY GeForce RTX 5070 Ti OC 16G", "MSI GeForce RTX 5070 Ventus 12G", "Zotac GeForce RTX 5080 Solid 16GB"].map((name) => ({ name }));
+  assert.deepEqual(search(cards, "rtx 5070 ti").map((c) => c.name), ["PNY GeForce RTX 5070 Ti OC 16G"]);
+  assert.equal(search(cards, "5080")[0].name, "Zotac GeForce RTX 5080 Solid 16GB");
+  assert.equal(search(items, "iphone 17 pro 256gb")[0].name, "Apple iPhone 17 Pro");
+  assert.equal(search(items, "iphone 17 pro 256gb").length, 2, "the 17 Pro and 17 Pro Max, never the plain 17");
+  assert.equal(search(cards, "rtx 5070 16gb").length, 2, "a capacity in the name still counts when it is there");
+});

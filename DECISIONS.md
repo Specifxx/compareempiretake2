@@ -1251,3 +1251,48 @@ alone consolidates slowly. `next.config.mjs` now answers every www request with 
 except `/api/ebay/account-deletion`, which eBay has registered under the www URL and challenges there
 (`tests/routes.test.ts`). This rides the next release with the thin-pages work above; recovery is measured in weeks,
 so the Search Console recheck stays at ~25 November.
+
+## 2026-11-06 — Storage, bundles and configurations never share a page; the country and currency sit beside every price
+
+The owner (2026-11-06): keep the country and currency beside the search results, since the UK and US editions leave
+prices unconverted; test search with exact model numbers; make sure storage sizes or bundles are never treated as one
+product. An audit of every region's catalogue (`scratchpad audit`: variants with two offers that disagree on a
+capacity, a size, a bundle word or a price ratio over 1.8) found 2,468 doubtful variants, 119 of them with two
+storage sizes in one price row.
+
+What changed in the matcher (`src/lib/match.ts`, `match-more.ts`, `normalize.ts`; every rule has a real title in
+`tests/`), always in the direction of keeping listings apart:
+
+- Laptops, desktops and tablets carry a configuration signature as their discriminator (CPU, GPU, RAM, SSD, screen;
+  tablets RAM and "2nd Gen"/"2nd Edition"); two listings that state different values never share a page, two that
+  state the same or nothing may.
+- A title with "bundle" is refused in phones, laptops, tablets and desktops: its price would sit in the phone's row.
+- Samsung's "Galaxy A17 4G" is its own phone (sold beside the A17 5G at another price); "Enterprise Edition" is its own
+  SKU, not a colour. Other brands' "4G" stays a network note.
+- A colour written before the storage ("Apple iPhone 17 Black 6.3" 256GB") is a colour, not a phone per colour, when a
+  number or model suffix is left; the UK had five iPhone 17 pages.
+- A unit figure ("10.4L", "9 Cup", "4K", "3-in-1") is never a model code; a CPU-like code ("i5-13400F") never is either.
+- RAM kits are keyed on the line words plus the signature (capacity × sticks, speed, CL), never the retailer's title
+  alone; headphones split earbuds from headphones; BBQ lines keep their fuel (natural gas versus LPG) apart; a Ryzen
+  PRO is not the Ryzen.
+- The colour slot ("- Natural Gas", "(64GB, Arctic White)", "- Wireless Gaming Headset Black") now puts figures and
+  product words back into the identity and keeps only the colour words. The DISPLAY name still follows the old cut
+  (a slot of up to four words with a colour word), so a wider split never renames a page.
+
+URLs: the three regions were rebuilt from the same raw listings with the old and the new parser and every slug
+compared. Pages whose number-suffixed slug changed (`String(usedSlugs.size)`, unstable by design) and one-store pages
+(noindex since 2026-11-05) are left alone; the five indexable pages that moved (Galaxy A16 → A16 4G, the Bose
+SoundLink Flex page that held both generations → the 2nd Gen, HyperX Cloud III and the Tefal FW2018 pages that gained a
+store and took the shorter name) redirect in `next.config.mjs`. Titles and metadata are untouched.
+
+The UI: `RegionTag` (flag, "Australian stores · prices in AUD", or the tax note) heads the search dropdown, the
+palette, the results count on the grid and the quick view's price list; every price in those places carries its ISO
+code ("$1,299 AUD"), since AUD and USD both print as "$". `money()` is unchanged, so metadata and JSON-LD are too.
+
+Search (`src/lib/search.ts`): a query word with digits is exact in its digits ("QN90F" no longer lists the QN900F,
+"5070" never the 50700, no typo tolerance), and a capacity in the query ("iPhone 17 Pro 256GB") is optional when the
+name has none, since storage is a variant, not a page.
+
+Known and left for later: the same headphones are still several pages when stores word the name differently (three
+WH-1000XM5 pages in Australia); merging those needs a code or a curated alias and must not be guessed. Model codes
+such as SM-S947B are not searchable, since the index holds names only.

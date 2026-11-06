@@ -217,8 +217,21 @@ function displayName(title: string, brand: string): string {
 
 const IPAD_MINI_CHIP: Record<string, string> = { "6": "A15", "7": "A17 Pro" };
 
+/**
+ * What must agree inside one tablet variant: the RAM figure (the smaller GB figure, when the title gives two) and
+ * the edition ("11th Edition", "12th Gen"): Microsoft sells the Surface Pro 13" 512GB with 16GB, 24GB and 32GB of
+ * RAM across two editions, and stores list them under one name (2026-11-06).
+ */
+function tabletSignature(t: string, storageGb: number): string {
+  const gbs = [...t.matchAll(/(\d+)\s?(GB|TB)\b/gi)].map((m) => Number(m[1]) * (m[2].toUpperCase() === "TB" ? 1024 : 1));
+  const ram = gbs.filter((g) => g >= 2 && g <= 64 && g < storageGb).sort((a, b) => a - b)[0] ?? "";
+  const edition = t.match(/\b(\d{1,2})(?:st|nd|rd|th)\s+(?:gen(?:eration)?|ed(?:ition)?)\b/i)?.[1] ?? "";
+  return [ram, edition].join("|");
+}
+
 function parseTablet(o: RawOffer): Parsed | null {
   const t0 = clean(o.title);
+  if (BUNDLE.test(t0)) return null;
   const cellular = /\b(cellular|5g|lte|4g)\b/i.test(t0);
   // Apple chips only: "A11" in "Galaxy Tab A11+" is a model name, not a chip.
   const isApple = /\b(apple|ipad)\b/i.test(t0);
@@ -249,6 +262,7 @@ function parseTablet(o: RawOffer): Parsed | null {
     key: keyOf(brand, base, sz, ch ?? (gen ? `gen${gen}` : "")),
     variant: { id: `${storageLabel(p.storageGb).toLowerCase()}-${conn}`, label: `${storageLabel(p.storageGb)} · ${cellular ? "Wi-Fi + Cellular" : "Wi-Fi"}`, storageGb: p.storageGb },
     colour: p.colour,
+    discriminator: tabletSignature(t0, p.storageGb),
   };
 }
 
@@ -283,17 +297,31 @@ function maxHz(t: string): string {
   return hz.length ? String(Math.max(...hz)) : "";
 }
 
-/** "i7-14650HX|RTX 5050|16|512" from whatever the listing states. */
-function laptopSignature(t: string): string {
-  const cpu = t.match(/\b(i[3579][- ]\d{4,5}\w*|Ultra [3579] \d{3}\w*|Ryzen (?:AI )?(?:[3579] )?\w*\d{3,4}\w*|Snapdragon X\w*(?: \w+)?)\b/i)?.[1]?.toLowerCase().replace(/[\s-]+/g, "") ?? "";
+/**
+ * "i7-14650hx|RTX 5050|16|512|15.6" from whatever the listing states: CPU, GPU, RAM, SSD and screen size. Two
+ * listings under one part number that state different values here are different configurations (2026-11-06:
+ * stores sold the Dell Pro 14 Plus with an Ultra 5 and an Ultra 7, and the ASUS BR1104FTA with 128GB and 256GB,
+ * under one code).
+ */
+export function laptopSignature(t: string): string {
+  const cpu =
+    t
+      .match(/\b(i[3579][- ]\d{4,5}\w*|Core [3579][- ]\d{3}\w*|Ultra X?[3579][- ]\d{3}\w*|Ryzen (?:AI )?(?:[3579] )?(?:HX )?(?:PRO )?\w*\d{3,4}\w*|Ryzen AI [3579]\b|Snapdragon X\d? ?(?:Elite|Plus)?|M\d(?: (?:Pro|Max|Ultra))?\b(?= chip| \d|-core|,| with| \d)|N\d{3}\b|Kompanio \d{3,4})/i)?.[1]
+      ?.toLowerCase()
+      .replace(/[\s-]+/g, "") ?? "";
   const gpu = gpuChip(t) ?? "";
   // Graphics memory ("RTX 5060 8GB", "8GB GDDR7") isn't system RAM.
   const sys = t.replace(/\b(?:RTX|GTX|RX|Arc)\s?\w*\d{3,4}\w*(?:\s?(?:Ti|SUPER|XT))?\s?\d{1,2}\s?GB\b/gi, " ").replace(/\b\d{1,2}\s?GB\s?G?DDR\d\w*(?=\s|$)/gi, (m) => (/gddr/i.test(m) ? " " : m));
   const gbs = [...sys.matchAll(/(\d+)\s?(GB|TB)\b/gi)].map((m) => Number(m[1]) * (m[2].toUpperCase() === "TB" ? 1024 : 1));
   const ram = gbs.filter((g) => g >= 4 && g <= 128).sort((a, b) => a - b)[0] ?? "";
-  const ssd = gbs.filter((g) => g >= 256).sort((a, b) => b - a)[0] ?? "";
-  return [cpu, gpu, ram, ssd].join("|");
+  // The drive is the largest figure of 128GB or more that isn't the RAM figure; a lone "128GB" could be either.
+  const ssd = gbs.filter((g) => g >= 256 || (g >= 128 && ram && g > ram)).sort((a, b) => b - a)[0] ?? "";
+  const screen = t.match(/\b(1[0-8](?:\.\d)?)\s?(?:"|”|-?\s?inch\b|in\b)/i)?.[1] ?? "";
+  return [cpu, gpu, ram, ssd, screen].join("|");
 }
+
+/** A bundle (a laptop or tablet with a case, a pen, a subscription…) is not the product; left out, never merged. */
+const BUNDLE = /\bbundle\b/i;
 
 // ---- Graphics cards: brand + GPU + product line + memory ----
 
@@ -337,6 +365,7 @@ function parseGpu(o: RawOffer): Parsed | null {
 
 function parseLaptop(o: RawOffer): Parsed | null {
   const t = clean(o.title);
+  if (BUNDLE.test(t)) return null;
   const brand = brandOf(o, t);
   if (!brand) return null;
   if (brand === "Apple" && /macbook/i.test(t)) {
@@ -387,7 +416,12 @@ export function parseProduct(o: RawOffer, category: CategoryId): Parsed | null {
   if (MORE_CATEGORIES.includes(category)) {
     // These categories legitimately contain words the first set treats as accessories ("Case", "Dock", "Soundbar").
     if (SECOND_HAND.test(o.title) || isMoreAccessory(category, o.title)) return null;
-    return parseMore(o, category, NEW_CATEGORIES.has(category) ? (x, t) => brandOf(x, t, BRANDS_2026_11) : brandOf);
+    if (category === "desktops" && BUNDLE.test(o.title)) return null;
+    const parsed = parseMore(o, category, NEW_CATEGORIES.has(category) ? (x, t) => brandOf(x, t, BRANDS_2026_11) : brandOf);
+    // A desktop's model code covers every configuration a store sells (ThinkCentre M70q with 512GB and with 1TB):
+    // the stated CPU, GPU, RAM, drive and screen must agree, as for laptops.
+    if (parsed && category === "desktops") parsed.discriminator = laptopSignature(clean(o.title));
+    return parsed;
   }
   if (!isProduct(o.title)) return null;
   switch (category) {

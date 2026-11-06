@@ -8,6 +8,8 @@
  *   Mobileciti     Samsung Galaxy S26 5G (Dual Sim, 256GB/12GB, 6.3'', SM-S942B) - Black
  */
 
+import { COLOUR_WORD } from "./colours";
+
 export interface ParsedTitle {
   brand: string;
   model: string;
@@ -98,6 +100,14 @@ export function parseTitle(raw: string, opts: { allowNoStorage?: boolean } = {})
     if (gb > storageGb) storageGb = gb;
   }
   if (storageGb < 8 && !(opts.allowNoStorage && storageGb === 0)) return null;
+  // A bundle ("iPhone 17 Pro Max 256GB with OtterBox Protection Bundle") is not the phone: its price would sit in
+  // the phone's own row. Left out rather than guessed (2026-11-06).
+  if (/\bbundle\b/i.test(raw)) return null;
+  // Enterprise Edition is a different SKU (its own price and warranty), not a colour of the retail phone.
+  const enterprise = /\benterprise edition\b/i.test(raw);
+  // Samsung sells "Galaxy A17 4G" and "Galaxy A17 5G" as two phones at two prices; the 4G is its own model.
+  // Other brands' "4G" is a network note on the one phone they sell (Motorola g06 4G is the g06).
+  const samsung4g = /\bgalaxy\b/i.test(raw) && /\b(4G|LTE)\b/i.test(raw) && !/\b5G\b/i.test(raw);
   // "Samsung Google Pixel 10" — a store prefixed the wrong maker.
   t = t.replace(/^(\w+)\s+(?=(Apple|Samsung|Google|OPPO|Motorola|HONOR|Xiaomi|Nokia|TCL|Nothing)\b)/i, (m, w) => (BRANDS[w.toLowerCase()] ? "" : m));
 
@@ -131,6 +141,20 @@ export function parseTitle(raw: string, opts: { allowNoStorage?: boolean } = {})
     .replace(/\s+/g, " ")
     .trim();
 
+  // "Apple iPhone 17 Black 6.3" 256GB": a colour written before the storage would name a phone per colour. The
+  // trailing colour words move to the colour when what is left ends in a number or a model suffix ("iPhone 17",
+  // "S26 Ultra"), never otherwise ("Pixel 10 Pro Mist Blue" keeps "Mist", so its page keeps its name).
+  colour = tidyColour(colour);
+  if (!colour && cut > 0) {
+    const ws = model.split(" ");
+    let i = ws.length;
+    while (i > 1 && i > ws.length - 2 && COLOUR_WORD.has(ws[i - 1].toLowerCase())) i--;
+    if (i < ws.length && /(\d|^(pro|max|plus|ultra|mini|fe|edge|lite|neo|fold|flip)|\+)$/i.test(ws[i - 1])) {
+      colour = ws.slice(i).join(" ");
+      model = ws.slice(0, i).join(" ");
+    }
+  }
+
   let brand = "";
   const first = model.split(" ")[0].toLowerCase();
   if (BRANDS[first]) {
@@ -146,8 +170,10 @@ export function parseTitle(raw: string, opts: { allowNoStorage?: boolean } = {})
   if (brand === "HONOR") model = model.replace(/^Magic\s+(\d)/i, "Magic$1").replace(/^(Magic V\d+) Fold$/i, "$1");
   if (brand === "Samsung") model = model.replace(/^(Galaxy\s+)+/i, "").replace(/\bGalaxy\s+/gi, "").replace(/^/, "Galaxy ");
   if (brand === "Google" && !/^Pixel\b/i.test(model)) model = `Pixel ${model}`;
+  if (brand === "Samsung" && samsung4g) model = `${model} 4G`;
+  if (enterprise && !/\benterprise edition\b/i.test(model)) model = `${model} Enterprise Edition`;
 
-  colour = tidyColour(colour);
+  colour = tidyColour(colour).replace(/^Enterprise Edition$/i, "");
   const key = `${brand} ${model}`
     .toLowerCase()
     .replace(/\+/g, " plus ")
@@ -157,7 +183,8 @@ export function parseTitle(raw: string, opts: { allowNoStorage?: boolean } = {})
 
 function tidyColour(c: string): string {
   return c
-    .replace(/\b(eSIM Only|Dual Sim|5G|4G|LTE)\b/gi, "")
+    .replace(/\b(eSIM Only|Dual Sim|5G|4G|LTE|Unlocked|SIM Free|Smart ?phone|Mobile Phone)\b/gi, "")
+    .replace(/&/g, " ")
     .replace(/[()[\],]/g, " ")
     .replace(/\s+/g, " ")
     .trim()

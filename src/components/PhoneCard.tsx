@@ -4,6 +4,7 @@ import { categoryById } from "@/lib/categories";
 import { CompareToggle } from "./CompareToggle";
 import { SaveButton } from "./SaveButton";
 import { money } from "@/lib/region";
+import { Currency } from "./RegionTag";
 
 export function PhoneCard({ p, priority, showCategory }: { p: CardItem; priority?: boolean; showCategory?: boolean }) {
   const pct = p.saving > 0 ? Math.round((p.saving / (p.bestPrice + p.saving)) * 100) : 0;
@@ -48,7 +49,7 @@ export function PhoneCard({ p, priority, showCategory }: { p: CardItem; priority
         <div className="mt-auto flex items-end justify-between pt-3">
           <div>
             <div className="text-[11px] text-ink-mute">from</div>
-            <div className="price text-xl">{money(p.bestPrice, p.region)}</div>
+            <div className="price text-xl">{money(p.bestPrice, p.region)}{p.region && <Currency region={p.region} />}</div>
           </div>
           <div className="text-right text-xs text-ink-mute">
             <span className="font-semibold text-ink">{p.retailerCount}</span> {p.retailerCount === 1 ? "store" : "stores"}
