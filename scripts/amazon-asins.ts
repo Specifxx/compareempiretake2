@@ -24,7 +24,9 @@ const RECHECK_MISS_DAYS = 30;
 type Entry = { asin: string | null; checked: string };
 
 async function main() {
-  for (const r of REGIONS) if (amazonStore(r)) await region(r);
+  // AMAZON_REGIONS="us uk" runs only those (the Amazon ASINs workflow); unset runs every region.
+  const only = (process.env.AMAZON_REGIONS ?? "").split(/[\s,]+/).filter(Boolean);
+  for (const r of REGIONS) if (amazonStore(r) && (!only.length || only.includes(r))) await region(r);
 }
 
 async function region(r: AmazonMarket) {
