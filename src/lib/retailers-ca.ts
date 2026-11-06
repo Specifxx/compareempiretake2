@@ -39,4 +39,8 @@ export const CA_RETAILERS: (Retailer & { id: `ca-${string}` })[] = [
   { id: "ca-espressodolce", name: "Espresso Dolce", site: "espressodolce.ca", color: "#333333", type: "retailer" },
   { id: "ca-appliancecanada", name: "Appliance Canada", site: "appliancecanada.com", color: "#333333", type: "retailer" },
   { id: "ca-mastermind", name: "Mastermind Toys", site: "mastermindtoys.com", color: "#E4002B", type: "retailer" },
+  { id: "ca-ecscoffee", name: "ECS Coffee", site: "ecscoffee.com", color: "#333333", type: "retailer" },
+  { id: "ca-espressocanada", name: "Espresso Canada", site: "espressocanada.com", color: "#333333", type: "retailer" },
+  { id: "ca-liptons", name: "Lipton's", site: "liptons.ca", color: "#333333", type: "retailer" },
+  { id: "ca-barbecuesgalore", name: "Barbecues Galore", site: "barbecuesgalore.ca", color: "#333333", type: "retailer" },
 ];

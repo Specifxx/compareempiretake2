@@ -7,15 +7,15 @@ import. Stores were found by survey rounds 22 and 22b (`docs/stores/candidates22
 
 ## Read directly (one-line `autoShopify` stores)
 
-Canada (21): Shokz, soundcore, Roborock, Narwal, Dreame, Sennheiser, HyperX, Ooni (brand stores); The Camera Store,
+Canada (25): Shokz, soundcore, Roborock, Narwal, Dreame, Sennheiser, HyperX, Ooni (brand stores); The Camera Store,
 Gosselin (cameras, drones; Gosselin's used stock "USAGÉ" refused); Audio Excellence; iDrinkCoffee, Eight Ounce Coffee
 (its yard-sale and cosmetic-defect stock refused), Espresso Planet, Anthony's Espresso, Consiglio's Kitchenware, Home
-Coffee Solutions, Coffee Addicts, Espresso Dolce; Appliance Canada (one copy of each listing: its ZAA stock code); Mastermind Toys (LEGO only).
+Coffee Solutions, Coffee Addicts, Espresso Dolce; Appliance Canada (one copy of each listing: its ZAA stock code); Mastermind Toys (LEGO only). Round 22b: ECS Coffee (its returns refused), Espresso Canada, Lipton's (TV and hi-fi), Barbecues Galore (grills only, its covers, trays and kits refused).
 
-Singapore (17): Challenger (the country's largest electronics chain, read whole), Mega Discount Store (appliances, TVs;
+Singapore (19): Challenger (the country's largest electronics chain, read whole), Mega Discount Store (appliances, TVs;
 its air purifiers, water heaters, wine chillers and shavers refused), Stereo, Mobile Square, Gadget Box, Sony Store
 (pre-order, notify-me and special-order lines refused), MS Color, The Tech Yard (PC parts), Gameshop, Common Man Coffee
-Roasters; brand stores Mayer, Toyomi, Tefal, Europace, Shokz, Sennheiser, Narwal.
+Roasters; brand stores Mayer, Toyomi, Tefal, Europace, Shokz, Sennheiser, Narwal. Round 22b: Tech House (headphones, speakers; its watch cases left out), Metro (LEGO only: its other listings carry the distributor's name, not the brand).
 
 ## Feed slots (live once the owner's network approval saves a `FEED_URL_*` secret)
 
@@ -32,4 +32,5 @@ Leon's. Singapore: COURTS, Harvey Norman, Best Denki, Gain City. The owner's Chr
 - Mister Mobile: its catalogue files phones and parts under the wrong categories in the survey; not added on a guess.
 - Restaurant supply (Stop Restaurant Supply), school and toy stores without LEGO (Scholar's Choice, Toysense), Video
   Games Plus: nothing of ours.
+- BBQing.com: its grill category is mostly parts and accessories. Indigo, Wellwise, Megafurniture, Avol: little of ours.
 - Lazada, Shopee, Amazon.sg and every marketplace: we list stores, not marketplaces.
