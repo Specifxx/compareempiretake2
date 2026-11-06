@@ -1408,6 +1408,8 @@ when unset (what crawlers read). A region whose stores share too few listings fo
 **Redirects:** every retired guide 301s (`content/guide-redirects.json`, read by `next.config.mjs`) to the new post on
 its topic, else its category's page (the US one where the US has 20+ products in it), else `/guides`. Never let a
 retired guide 404, and never reuse a retired slug.
+
+Shipped in an urgent release on 2026-11-06 at about 11:00 UTC (owner chose "Ship now"), with the other Compare Empire PRs merged that morning.
 ## 2026-11-06 — Awin: one datafeed key reads every joined chain's feed
 
 Bill asked for at least 20 stores on the most popular products in the US and UK. Today's catalogue has none: the best
