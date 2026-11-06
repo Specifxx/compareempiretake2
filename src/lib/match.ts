@@ -7,6 +7,7 @@
  * is a small annoyance; the wrong product's price next to yours is the thing
  * comparison sites get wrong and lose trust over.
  */
+import { cpuName, dedicatedGpu, panelOf, phoneChip, refreshOf, resolutionOf, vote } from "./specs";
 import { parseTitle, storageLabel } from "./normalize";
 import { isMoreAccessory, MORE_CATEGORIES, moreSpecs, parseMore, productCodes } from "./match-more";
 import type { CategoryId, RawOffer, Specs } from "./types";
@@ -177,7 +178,7 @@ const clean = (s: string) =>
 
 /** Alphanumeric model-code-looking tokens: QN90F, U2724D, OLED65C5PSA, X1404VA-EB001W. */
 const NOISE_CODE =
-  /^(\d+(gb|tb|hz|k|p|w|mah|nits|ms|mm|cm|in|th|nd|rd|st)|[48]k|uhd|fhd|qhd|wqhd|hdr\d*|hdmi\d*(\.\d)?|usb\d*|wi-?fi\d*|\d{4}|gen\d+|ddr\d\w*|gddr\d\w*|lpddr\d\w*|pcie\d*|ps5|g-?sync|v\d|x\d{1,2}|\d+x\d+|m\.2|nvme|ssd|oc|ai|5g|4g|lte|win1[01]|w1[01]h|i[3579]-\d{4,5}\w*|r[3579]-\d{4}\w*|\d-in-\d|area-?51|wi-?fi-?\d\w*|[a-z]?\d{1,2}-\d{3,5}[a-z]{0,3}|\d{3,5}(hx|hs|h|u|v|k|ks|kf|x3d)|w11[hp]?|rtx\d{4}\w*)$/i;
+  /^(\d+(\.\d)?-?(inch|inches|in|cm)|\d+(gb|tb|hz|k|p|w|mah|nits|ms|mm|cm|in|th|nd|rd|st)|[48]k|uhd|fhd|qhd|wqhd|hdr\d*|hdmi\d*(\.\d)?|usb\d*|wi-?fi\d*|\d{4}|gen\d+|ddr\d\w*|gddr\d\w*|lpddr\d\w*|pcie\d*|ps5|g-?sync|v\d|x\d{1,2}|\d+x\d+|m\.2|nvme|ssd|oc|ai|5g|4g|lte|win1[01]|w1[01]h|i[3579]-\d{4,5}\w*|r[3579]-\d{4}\w*|\d-in-\d|area-?51|wi-?fi-?\d\w*|[a-z]?\d{1,2}-\d{3,5}[a-z]{0,3}|\d{3,5}(hx|hs|h|u|v|k|ks|kf|x3d)|w11[hp]?|rtx\d{4}\w*)$/i;
 export function codes(title: string): string[] {
   const out: string[] = [];
   for (const raw of title.split(/[\s(),/[\]]+/)) {
@@ -494,49 +495,63 @@ export function mergeTarget(code: string, candidates: { key: string; code: strin
   return hits.length === 1 ? hits[0].key : undefined;
 }
 
-/** Key specs per category, read from every store's title for the product. */
+/**
+ * Key specs per category, read from every store's title for the product: each title gives its own reading and the
+ * most common one wins (lib/specs.ts `vote`), so one stray title no longer decides a row.
+ */
 export function categorySpecs(category: CategoryId, titles: string[]): Specs {
-  if (MORE_CATEGORIES.includes(category)) return { extra: moreSpecs(category, titles), foldable: false };
+  if (MORE_CATEGORIES.includes(category)) {
+    const extra = moreSpecs(category, titles);
+    if (category === "desktops") {
+      // Processor and graphics first, as on laptops; the RAM and drive rows moreSpecs reads follow.
+      const cpu = vote(titles.map(cpuName));
+      const gpu = vote(titles.map(dedicatedGpu));
+      extra.unshift(...([cpu && ["Processor", cpu], gpu && ["Graphics", gpu]].filter(Boolean) as [string, string][]));
+    }
+    return { extra, foldable: false };
+  }
   const all = titles.join(" \n ");
   const extra: [string, string][] = [];
   const first = (re: RegExp) => all.match(re)?.[1];
-  const size = sizeOf(all);
   if (category === "tvs" || category === "monitors") {
+    const size = vote(titles.map(sizeOf));
     if (size) extra.push(["Screen size", `${size}"`]);
-    const res = /\b8K\b/i.test(all) ? "8K" : /\b(4K|UHD)\b/i.test(all) ? "4K UHD" : /\b(QHD|WQHD|1440p|2560\s?x\s?1440)\b/i.test(all) ? "QHD (1440p)" : /\b(FHD|1080p|Full HD|1920\s?x\s?1080)\b/i.test(all) ? "Full HD (1080p)" : undefined;
+    const res = vote(titles.map(resolutionOf));
     if (res) extra.push(["Resolution", res]);
-    const panel = first(/\b(QD-OLED|OLED|Neo QLED|QLED|Mini LED|Mini-LED|IPS|VA|TN|LED)\b/i);
-    if (panel) extra.push(["Panel", panel.replace(/mini-led/i, "Mini LED")]);
-    const hz = [...all.matchAll(/(\d{2,3})\s?Hz/gi)].map((m) => Number(m[1])).filter((n) => n >= 50 && n <= 600);
-    if (hz.length) extra.push(["Refresh rate", `${Math.max(...hz)}Hz`]);
-    if (/\bcurved\b/i.test(all)) extra.push(["Curved", "Yes"]);
+    const panel = vote(titles.map(panelOf));
+    if (panel) extra.push(["Panel", panel]);
+    const hz = vote(titles.map(refreshOf));
+    if (hz) extra.push(["Refresh rate", `${hz}Hz`]);
+    if (titles.filter((t) => /\bcurved\b/i.test(t)).length * 2 > titles.length) extra.push(["Curved", "Yes"]);
   }
   if (category === "graphics-cards") {
-    const chip = gpuChip(all);
+    const chip = vote(titles.map(gpuChip));
     if (chip) extra.push(["GPU", chip]);
-    const mem = first(/\b(\d{1,2})\s?G(?:B)?\b/i);
+    const mem = vote(titles.map((t) => t.match(/\b(\d{1,2})\s?G(?:B)?\b/i)?.[1]));
     if (mem) extra.push(["Memory", `${mem}GB`]);
-    const type = first(/\b(GDDR\d\w?)\b/i);
-    if (type) extra.push(["Memory type", type.toUpperCase()]);
+    const type = vote(titles.map((t) => t.match(/\b(GDDR\d\w?)\b/i)?.[1]?.toUpperCase()));
+    if (type) extra.push(["Memory type", type]);
   }
   if (category === "laptops") {
-    const cpu = first(/\b((?:Intel )?Core (?:Ultra )?[3579i]{1,2}[- ]?\w*\d{3,5}\w*|Ryzen (?:AI )?[3579] \w*\d{3,4}\w*|Snapdragon X \w+(?: \w+)?|M\d(?: Pro| Max)?)\b/i);
+    const cpu = vote(titles.map(cpuName));
     if (cpu) extra.push(["Processor", cpu]);
-    const gbs = [...all.matchAll(/(\d+)\s?(GB|TB)\b/gi)].map((m) => Number(m[1]) * (m[2].toUpperCase() === "TB" ? 1024 : 1));
-    const ram = gbs.filter((g) => g >= 4 && g <= 128).sort((a, b) => a - b)[0];
-    const ssd = gbs.filter((g) => g >= 128).sort((a, b) => b - a)[0];
-    if (ram && ram !== ssd) extra.push(["Memory", `${ram}GB`]);
-    if (ssd) extra.push(["Storage", storageLabel(ssd)]);
-    const scr = all.match(/(1[0-8](?:\.\d)?)\s?(?:"|-?\s?inch|in\b)/i)?.[1];
-    if (scr) extra.push(["Screen", `${scr}"`]);
-    const gpu = gpuChip(all);
+    const gpu = vote(titles.map(dedicatedGpu));
     if (gpu) extra.push(["Graphics", gpu]);
+    const sig = titles.map((t) => laptopSignature(t).split("|"));
+    const ram = vote(sig.map((x) => x[2]));
+    const ssd = vote(sig.map((x) => x[3]));
+    if (ram) extra.push(["Memory", `${ram}GB`]);
+    if (ssd) extra.push(["Storage", storageLabel(Number(ssd))]);
+    const scr = vote(titles.map((t) => t.match(/\b(1[0-8](?:\.\d)?)\s?(?:"|”|-?\s?inch\b|in\b)/i)?.[1]));
+    if (scr) extra.push(["Screen", `${scr}"`]);
   }
   if (category === "tablets") {
-    const scr = all.match(/(\d{1,2}(?:\.\d)?)[- ]?(?:-inch|inch|"|”)/i)?.[1];
+    const scr = vote(titles.map((t) => t.match(/(\d{1,2}(?:\.\d)?)[- ]?(?:-inch|inch|"|”)/i)?.[1]).filter((x) => x && Number(x) >= 6 && Number(x) <= 15));
     if (scr) extra.push(["Screen", `${scr}"`]);
-    const chip = first(/\b(M\d(?: Pro| Max)?|A\d{2}(?: Pro)?|Snapdragon [\w ]+?(?= |,|$)|Dimensity \d+|Helio \w+)\b/);
+    const apple = (t: string) => (/\b(ipad|apple)\b/i.test(t) ? t.match(/\b(A\d{2}(?: Pro)?)\b/)?.[1] : undefined);
+    const chip = vote(titles.map((t) => cpuName(t) ?? apple(t) ?? phoneChip(t)));
     if (chip) extra.push(["Chip", chip]);
   }
+  void first;
   return { extra, foldable: false };
 }
