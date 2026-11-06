@@ -296,11 +296,11 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
   return (
     <div className={part === "rows" ? "space-y-2.5" : part === "more" ? "mt-2.5" : "mb-2.5 space-y-2.5"} aria-label="Amazon and eBay">
       {part === "more" ? null : phone.ebay ? (
-        <EbayListingRow listing={phone.ebay} product={product} money={$} cheapest={cheapest} locale={R.locale} timeZone={R.timeZone} />
+        <EbayListingRow listing={phone.ebay} product={product} money={$} cheapest={cheapest} locale={R.locale} timeZone={R.timeZone} cart={compact ? undefined : { title: phone.name, image: phone.image ?? null, currency: R.currency }} />
       ) : (
         <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} sellers={ebaySellers(region)} />
       )}
-      {part !== "more" && amazonHref && <AmazonRow query={mq} product={product} placement={live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} />}
+      {part !== "more" && amazonHref && <AmazonRow query={mq} product={product} placement={live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} cart={live?.price ? { title: phone.name, priceCents: Math.round(live.price * 100), currency: R.currency, image: phone.image ?? null } : undefined} />}
       {compact || part === "rows" ? null : (
       <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
