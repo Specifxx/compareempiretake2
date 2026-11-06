@@ -4,5 +4,7 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "us-hotrodcameras",
   base: "https://hotrodcameras.com",
+  // "(Calibrated)" TVs carry a paid calibration service: not the plain product.
+  exclude: /calibrated/i,
   cats: ["cameras", "drones", "tvs", "monitors"],
 });
