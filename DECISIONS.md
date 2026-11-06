@@ -1296,3 +1296,25 @@ name has none, since storage is a variant, not a page.
 Known and left for later: the same headphones are still several pages when stores word the name differently (three
 WH-1000XM5 pages in Australia); merging those needs a code or a curated alias and must not be guessed. Model codes
 such as SM-S947B are not searchable, since the index holds names only.
+
+## 2026-11-06 — Model codes are searchable, and one model code means one page
+
+The two gaps the morning's entry left. First, search: the catalogue now keeps each product's model codes
+(`Phone.codes`, every code the stores' titles and MPNs name, most common first, at most six: "SM-S947B", "WH-1000XM5",
+"BES870BSS"), the search index carries them and `search()` matches them like the name's own words without counting
+them as length, so "SM-S947B" finds the Galaxy S26+ and "galaxy s26" still ranks the plain S26 first.
+
+Second, duplicates. Pages of one brand that EVERY listing on both sides names by the same model code are one product
+(`sharedCodeMerges`, `src/lib/match.ts`): the code must be each listing's longest and six characters or more, so a
+series name never joins pages ("iQ300" sat on three different Siemens fridges, "X-T50" on the body and its lens kits,
+"LGA1700" on every motherboard for that socket, which the first pass merged). A stated spec that disagrees keeps pages
+apart (headphones now state their wiring and impedance: the DT 770 PRO is three products, 32, 80 and 250 ohm), a screen
+size must match, and the rule runs only where a maker's code names one product: TVs, monitors, headphones, speakers,
+soundbars, smartwatches, printers and the appliances. Not cameras (a lens code is the kit's longest), computer parts,
+laptops and desktops, drones, phones, tablets or LEGO. Never a fuzzy name: two WH-1000XM5 pages worded differently join;
+a page without the code in one of its listings does not.
+
+A sibling page split by a stated spec takes the spec's words its slug lacks as its suffix ("…-headphones-80") instead of
+the counter, which changed with the catalogue's size. Rebuilt all three regions with the previous and the new parser on
+the same raw listings: 40 pages with two or more stores move, all of them duplicates joining their twin, and each
+redirects in `next.config.mjs`. Over the first pass's 213 moves (series codes), the tightening is the whole difference.

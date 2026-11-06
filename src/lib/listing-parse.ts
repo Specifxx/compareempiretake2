@@ -3,6 +3,7 @@
  * parser (lib/normalize.ts), every other category uses lib/match.ts. Same parser, same product: an Amazon
  * listing joins a product only when it parses to that product's own group key and variant.
  */
+import { productCodes } from "./match-more";
 import { parseProduct, type Parsed } from "./match";
 import { parseTitle, storageLabel } from "./normalize";
 import type { CategoryId, Phone, RawOffer } from "./types";
@@ -12,7 +13,7 @@ export function parseListing(o: RawOffer, category: CategoryId): Parsed | null {
   const p = parseTitle(o.title, { allowNoStorage: o.fromPrice });
   if (!p) return null;
   const label = storageLabel(p.storageGb);
-  return { brand: p.brand, model: p.model, key: p.key, colour: p.colour, variant: { id: p.storageGb ? label.toLowerCase() : "", label, storageGb: p.storageGb } };
+  return { brand: p.brand, model: p.model, key: p.key, colour: p.colour, variant: { id: p.storageGb ? label.toLowerCase() : "", label, storageGb: p.storageGb }, codes: productCodes(`${o.title} ${o.mpn ?? ""}`) };
 }
 
 const asRaw = (title: string): RawOffer => ({ retailer: "jbhifi", sku: "", title, url: "", price: 0, inStock: true }) as RawOffer;

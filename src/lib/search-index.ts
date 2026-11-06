@@ -20,14 +20,14 @@ export function getSearchIndex(region: RegionId = "au"): SearchEntry[] {
     return [
       ...getSummaries(undefined, region)
         .sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation)
-        .map((p) => ({ kind: "phone" as const, href: p.href, name: p.name, image: p.image, price: p.bestPrice, stores: p.retailerCount, category: categoryById(p.category)?.name }))
+        .map((p) => ({ kind: "phone" as const, href: p.href, name: p.name, codes: p.codes, image: p.image, price: p.bestPrice, stores: p.retailerCount, category: categoryById(p.category)?.name }))
         .map(thumb),
       ...activeCategories(region).map((c) => ({ kind: "category" as const, href: categoryHref(c.id, region), name: c.name })),
     ];
   return [
     ...getSummaries()
       .sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation)
-      .map((p) => ({ kind: "phone" as const, href: p.href, name: p.name, image: p.image, price: p.bestPrice, stores: p.retailerCount, category: categoryById(p.category)?.name }))
+      .map((p) => ({ kind: "phone" as const, href: p.href, name: p.name, codes: p.codes, image: p.image, price: p.bestPrice, stores: p.retailerCount, category: categoryById(p.category)?.name }))
       .map(thumb),
     ...activeCategories().map((c) => ({ kind: "category" as const, href: c.href, name: c.name })),
     ...getVsPairs().map((v) => ({ kind: "vs" as const, href: `/compare/${v.slug}`, name: `${v.a.name} vs ${v.b.name}` })),

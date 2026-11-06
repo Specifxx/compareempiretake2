@@ -11,8 +11,9 @@ import { offerIsPreorder } from "../src/lib/preorders";
 import { dataPath, REGIONS, type RegionId } from "../src/lib/region";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
-import { categorySpecs, conflicts, mergeTarget, type Parsed } from "../src/lib/match";
+import { categorySpecs, conflicts, mergeTarget, sharedCodeMerges, type Parsed } from "../src/lib/match";
 import { parseListing } from "../src/lib/listing-parse";
+import { productCodes } from "../src/lib/match-more";
 import { parseTitle, slugify, storageLabel } from "../src/lib/normalize";
 import { RETAILERS } from "../src/lib/retailers";
 import { cleanTitle } from "./lib/http";
@@ -32,14 +33,38 @@ interface Group {
   size?: number;
   disc?: string[];
   aliases?: Set<string>;
+  /** Each listing's model codes, in `raws` order. */
+  codes: string[][];
 }
 
 const parse = parseListing;
+
+const SHARED_CODE_CATEGORIES = new Set<CategoryId>([
+  "tvs", "monitors", "headphones", "speakers", "soundbars", "smartwatches", "printers",
+  "vacuums", "robot-vacuums", "air-fryers", "coffee-machines", "coffee-gear", "fridges", "washing-machines", "dishwashers", "hair-care", "small-kitchen", "bbqs",
+]);
 
 function median(xs: number[]): number {
   const s = [...xs].sort((a, b) => a - b);
   const m = s.length >> 1;
   return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+}
+
+/** The product's model codes, most listings first, at most six: what search matches besides the name. */
+function topCodes(codes: string[][]): string[] | undefined {
+  const c = new Map<string, number>();
+  for (const cs of codes) for (const x of new Set(cs)) c.set(x, (c.get(x) ?? 0) + 1);
+  const top = [...c].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 6).map(([x]) => x);
+  return top.length ? top : undefined;
+}
+
+/** The group's most common stated spec, as the slug words it would add: "headphones||250" beside "…-headphones" → "250". */
+function discSlug(g: Group, slug: string): string | undefined {
+  const stated = (g.disc ?? []).filter((d) => d.replace(/\|/g, ""));
+  if (!stated.length) return undefined;
+  const have = new Set(slug.split("-"));
+  const parts = mostCommon(stated).split("|").filter(Boolean).map(slugify).filter((p) => p && !p.split("-").every((w) => have.has(w)));
+  return parts.length ? parts.join("-") : undefined;
 }
 
 function mostCommon(xs: string[]): string {
@@ -138,8 +163,9 @@ function build(category: CategoryId) {
         for (let n = 2; groups.has(key) && (groups.get(key)!.disc ?? []).some((d) => conflicts(d, p.discriminator!)); n++) key = `${p.key}~${n}`;
       }
       let g = groups.get(key);
-      if (!g) groups.set(key, (g = { key, brand: p.brand, models: [], raws: [], byVariant: new Map(), code: p.code, size: p.size, disc: [] }));
+      if (!g) groups.set(key, (g = { key, brand: p.brand, models: [], raws: [], byVariant: new Map(), code: p.code, size: p.size, disc: [], codes: [] }));
       if (p.discriminator) g.disc!.push(p.discriminator);
+      g.codes.push(p.codes ?? []);
       if (p.alias) (g.aliases ??= new Set()).add(p.alias);
       g.models.push(p.model);
       g.raws.push(o);
@@ -155,7 +181,30 @@ function build(category: CategoryId) {
     if (!g) continue;
     const base = [...g.byVariant.values()].sort((x, y) => x.storageGb - y.storageGb)[0];
     g.raws.push(o);
+    g.codes.push(productCodes(o.title));
     base.offers.push(toOffer(o, colour));
+  }
+  // Pages that every listing names by the same model code are one product (src/lib/match.ts sharedCodeMerges);
+  // the smaller joins the larger so the page most stores sit on keeps its URL. Only where a maker's code names
+  // one product: not cameras (a lens code is the kit's longest), computer parts (a socket or chipset code is in
+  // every title), configurable machines, drones and their combos, phones and tablets (keyed by model name) or
+  // LEGO (set number).
+  if (SHARED_CODE_CATEGORIES.has(category)) {
+    const all = [...groups.values()];
+    for (const [from, to] of sharedCodeMerges(all.map((g) => ({ key: g.key, brand: g.brand, size: g.size, codes: g.codes, disc: g.disc ?? [] })))) {
+      const g = groups.get(from), t = groups.get(to);
+      if (!g || !t) continue;
+      t.models.push(...g.models);
+      t.raws.push(...g.raws);
+      t.codes.push(...g.codes);
+      t.disc = [...(t.disc ?? []), ...(g.disc ?? [])];
+      for (const [vid, v] of g.byVariant) {
+        const tv = t.byVariant.get(vid);
+        if (tv) tv.offers.push(...v.offers);
+        else t.byVariant.set(vid, v);
+      }
+      groups.delete(from);
+    }
   }
   // TVs: a store that only gives the full part number (QA65QN90FAWXXY)
   // joins the group with the series code it contains (QN90F), same brand and size.
@@ -169,6 +218,7 @@ function build(category: CategoryId) {
       const t = groups.get(target)!;
       t.models.push(...g.models);
       t.raws.push(...g.raws);
+      t.codes.push(...g.codes);
       for (const [vid, v] of g.byVariant) {
         const tv = t.byVariant.get(vid);
         if (tv) tv.offers.push(...v.offers);
@@ -189,6 +239,7 @@ function build(category: CategoryId) {
       const t = targets[0];
       t.models.push(...g.models);
       t.raws.push(...g.raws);
+      t.codes.push(...g.codes);
       for (const [vid, v] of g.byVariant) {
         const tv = t.byVariant.get(vid);
         if (tv) tv.offers.push(...v.offers);
@@ -210,9 +261,11 @@ function build(category: CategoryId) {
     const cap = (x: string) => (x.length <= 170 ? x : x.slice(0, 170).replace(/-[^-]*$/, ""));
     // A LEGO set's URL is its set number ("/lego/lego-75447"): stores word the name differently, the number never changes.
     let slug = category === "lego" && g.code ? `lego-${g.code}` : cap(slugify(name));
-    // Two listings with the same display name but different keys (codes) must not share a URL.
+    // Two listings with the same display name but different keys (codes) must not share a URL. A sibling split by
+    // a stated spec takes the spec's words the slug lacks ("…-headphones-250" for the 250 ohm DT 770 PRO), which
+    // is the same tomorrow; the counter is the last resort and changes with the catalogue (2026-11-06).
     for (let n = 2; usedSlugs.has(slug); n++) {
-      const suffix = slugify(g.code ?? String(usedSlugs.size)) + (n > 2 ? `-${n}` : "");
+      const suffix = slugify(g.code ?? discSlug(g, slug) ?? String(usedSlugs.size)) + (n > 2 ? `-${n}` : "");
       slug = `${cap(slugify(name)).slice(0, 168 - suffix.length)}-${suffix}`;
     }
     usedSlugs.add(slug);
@@ -259,6 +312,7 @@ function build(category: CategoryId) {
       blurb: blurb ? blurb.replace(/\s\d{1,2}\s+(?=[,.;])/g, "").replace(/(?<=[.!])\s\d{1,2}(?=\s[A-Z])/g, "").replace(/\s+([,.])/g, "$1").split(/(?<=\.)\s/).slice(0, 3).join(" ").slice(0, 320) : undefined,
       specs: category === "phones" ? extractSpecs(model, [...g.raws.map((r) => r.title), ...(blurb ? [blurb] : [])]) : categorySpecs(category, g.raws.map((r) => r.title)),
       generation: generation(g.brand, model),
+      codes: topCodes(g.codes),
       firstSeen: day,
     });
   }
