@@ -19,6 +19,7 @@ import { RetailerDot } from "./RetailerChip";
 import { SaveButton } from "./SaveButton";
 import { CompareToggle } from "./CompareToggle";
 import { PriceCheckCard } from "./PriceCheckCard";
+import { StoreVote } from "./StoreVote";
 import { PriceAlertButton } from "./PriceAlertButton";
 
 /** The clock an Amazon price's "as of" time is shown in: the region's own. */
@@ -348,6 +349,8 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was 
           {RETAILERS[o.retailer].type === "official" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Official store</span>}
           {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Cheapest</span>}
           {link.paid && <span className="text-[10px] text-ink-mute">Paid link</span>}
+          {/* The thumbs stop the row's link (StoreVote calls preventDefault). */}
+          <StoreVote url={o.url} name={RETAILERS[o.retailer].name} className="text-ink-mute" />
         </div>
         <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-mute">
           <span className={o.inStock ? "inline-flex items-center gap-1 text-save" : o.preorder ? "font-semibold text-brand" : "text-hot"}>
