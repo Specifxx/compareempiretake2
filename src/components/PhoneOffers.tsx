@@ -280,10 +280,13 @@ export function PhoneOffers({
 export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product, cheapest, compact = false, part = "all" }: { phone: Phone; variantId?: string; variantQuery: string; product: string; cheapest?: number; compact?: boolean; part?: "rows" | "more" | "all" }) {
   const { $, R, region } = useRegionKit();
   const markets = marketplacesFor(region);
-  // Never in the quick view (2026-11-02): Amazon's Operating Agreement allows no Amazon link in a pop-up window.
-  const live = compact || !variantId ? undefined : phone.amazon?.[variantId];
-  // The variant's own Amazon page when the ASIN finder matched it (scripts/amazon-asins.ts), else a tagged search.
-  const amazonHref = compact ? null : (live?.url ?? amazonLink(region, mq, "product"));
+  // The variant's own Amazon page when the ASIN finder matched it (scripts/amazon-asins.ts), else a tagged search. The quick
+  // view (compact) carries the same tagged link (owner, 2026-11-06: a visitor-opened view of this one product is the
+  // Associates policy's "pop-up windows in conjunction with your Site promoting Products closely associated with the
+  // materials on your Site"), but never Amazon's price: that stays on the product page (24-hour licence).
+  const found = variantId ? phone.amazon?.[variantId] : undefined;
+  const live = compact ? undefined : found;
+  const amazonHref = found?.url ?? amazonLink(region, mq, compact ? "quickview" : "product");
   const amazonName = amazonStore(region)?.name;
   const ebay = markets.find((m) => m.id === "ebay")!;
   const cid = `p-${phone.category}-${phone.slug}`;
@@ -300,7 +303,7 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
       ) : (
         <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} sellers={ebaySellers(region)} />
       )}
-      {part !== "more" && amazonHref && <AmazonRow query={mq} product={product} placement={live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} cart={live?.price ? { title: phone.name, priceCents: Math.round(live.price * 100), currency: R.currency, image: phone.image ?? null } : undefined} />}
+      {part !== "more" && amazonHref && <AmazonRow query={mq} product={product} placement={compact ? "quickview" : live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} cart={live?.price ? { title: phone.name, priceCents: Math.round(live.price * 100), currency: R.currency, image: phone.image ?? null } : undefined} />}
       {compact || part === "rows" ? null : (
       <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
