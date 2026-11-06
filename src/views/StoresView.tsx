@@ -1,5 +1,6 @@
 import { Flag } from "@/components/Flag";
 import { activeRetailers, getProducts } from "@/lib/catalog";
+import { storeLink } from "@/lib/store-links";
 import { REGIONS, type RegionId } from "@/lib/region";
 import { RetailerDot } from "@/components/RetailerChip";
 
@@ -17,7 +18,7 @@ export function StoresView({ region }: { region: RegionId }) {
       <ul className="card mt-8 divide-y divide-line">
         {stores.map((r) => (
           <li key={r.id}>
-            <a href={`https://www.${r.site.replace(/^www\./, "")}`} target="_blank" rel="noopener nofollow" className="flex items-center justify-between px-5 py-3.5 text-sm hover:bg-bg-sunk">
+            <a href={storeLink(`https://www.${r.site.replace(/^www\./, "")}`, "stores").href} target="_blank" rel={storeLink(`https://www.${r.site.replace(/^www\./, "")}`, "stores").rel} className="flex items-center justify-between px-5 py-3.5 text-sm hover:bg-bg-sunk">
               <span className="inline-flex items-center gap-2 font-medium"><RetailerDot id={r.id} /> {r.name}</span>
               <span className="text-ink-mute">{(counts.get(r.id) ?? 0).toLocaleString()} listings</span>
             </a>

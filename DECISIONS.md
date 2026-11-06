@@ -1334,6 +1334,24 @@ the counter, which changed with the catalogue's size. Rebuilt all three regions 
 the same raw listings: 40 pages with two or more stores move, all of them duplicates joining their twin, and each
 redirects in `next.config.mjs`. Over the first pass's 213 moves (series codes), the tightening is the whole difference.
 
+## 2026-11-06 — Awin: an accepted store pays from the next morning, on every site, with no step by hand
+
+**Decision (owner: "check if we are making the most of Awin, and if it's not there, just do it"):** the Awin publisher
+account (Compare Empire, 3144410) is read every day by `scripts/awin-sync.ts` in its own job, *Awin programmes*
+(`awin-sync.yml`, 17:40 UTC or on demand, secret `AWIN_API_TOKEN`, commit without `[deploy]`), which writes
+the programmes that accepted us, with their tracked domains, to `data/awin/programmes.json`. Every link to a store's own
+page goes through `storeLink` (`src/lib/store-links.ts`): when its host is a joined advertiser's domain it becomes an Awin
+deep link (`awinmid`, `awinaffid=3144410`, `clickref=ce-<placement>`, `ued=<the same page>`), rel "sponsored", marked
+"Paid link". Order and prices never change.
+
+**Why one public file:** before this, an Awin approval earned nothing until someone pasted a template per store per site
+(only CamCompare even had the slot). The file holds only what every Awin link already shows (advertiser id, name,
+domains), so the sister sites copy it at build (`scripts/fetch-awin.ts` in each) and one token serves the family.
+
+**Rules:** a programme that refuses deep links is left out (its clicks would land on its home page); eBay, Amazon and
+TCGplayer hosts are never wrapped; the sync is never fatal and keeps yesterday's list on any error. A product feed's
+`aw_deep_link` now always wins over `merchant_deep_link`, whatever the column order (`headerMap` ranks by alias, not by
+column), so a feed row can never lose its tracking.
 
 ## 2026-11-06 — Canada and Singapore
 

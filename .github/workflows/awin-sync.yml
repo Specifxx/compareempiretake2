@@ -1,0 +1,40 @@
+name: Awin programmes
+
+# The Awin programmes that accepted the family (scripts/awin-sync.ts) → data/awin/programmes.json. Every sister site
+# copies that file in its build, so a store that accepts us pays on every site from its next release. Its own job, so
+# it can run the moment an approval arrives without a full price refresh, and its commit carries no [deploy]: the file
+# is read from GitHub, not from this site's build (Compare Empire's own links pick it up in the next daily release).
+on:
+  schedule:
+    - cron: "40 17 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: awin-sync
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Read the Awin account
+        env:
+          AWIN_API_TOKEN: ${{ secrets.AWIN_API_TOKEN }}
+        run: npx tsx scripts/awin-sync.ts
+      - name: Commit the list
+        run: |
+          git config user.name "compare-empire-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/awin
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "data: Awin programmes $(date -u +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
