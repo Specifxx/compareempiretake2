@@ -9,7 +9,7 @@
  * Never fatal: no AWIN_API_TOKEN, an error or an odd answer keeps yesterday's file. Writes only public facts (what
  * every Awin link already carries); never the token.
  */
-import { readFileSync, writeFileSync, mkdirSync, appendFileSync } from "node:fs";
+import { writeFileSync, mkdirSync, appendFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { AWIN_PUBLISHER_ID, bareHost, type AwinProgramme } from "../src/lib/awin";
 
@@ -101,18 +101,10 @@ async function main() {
     if (Array.isArray(p)) pending = p.length;
   } catch {}
 
-  const prev = (() => {
-    try {
-      return JSON.parse(readFileSync(OUT, "utf8")) as { joined?: AwinProgramme[] };
-    } catch {
-      return {};
-    }
-  })();
-  const same = JSON.stringify(prev.joined ?? []) === JSON.stringify(kept);
   mkdirSync(dirname(OUT), { recursive: true });
-  // updatedAt moves only when the list changes, so an unchanged day makes no data commit of its own.
-  if (!same) writeFileSync(OUT, JSON.stringify({ publisherId: AWIN_PUBLISHER_ID, updatedAt: new Date().toISOString().slice(0, 10), joined: kept }, null, 2) + "\n");
-  summary(`Awin: ${kept.length} joined programmes with deep links, ${pending} applications pending${same ? " (unchanged)" : ""}.`);
+  // checkedAt says the list is live (RiftCompare's ops monitor warns when it is three days old).
+  writeFileSync(OUT, JSON.stringify({ publisherId: AWIN_PUBLISHER_ID, checkedAt: new Date().toISOString(), joined: kept }, null, 2) + "\n");
+  summary(`Awin: ${kept.length} joined programmes with deep links, ${pending} applications pending.`);
   for (const p of kept) summary(`- ${p.name} (${p.region ?? "?"}, ${p.domains.join(", ")})`);
 }
 
