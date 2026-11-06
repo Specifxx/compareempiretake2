@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
-import { credentialsFor, itemsOf, pickListing, tokenEndpoint, type Item } from "../src/lib/amazon-creators";
+import { credentialsFor, isWrongAccount, itemsOf, pickListing, tokenEndpoint, type Item } from "../src/lib/amazon-creators";
 import { isFreshAmazonPrice } from "../src/lib/amazon";
 import { amazonTitleMatches } from "../src/lib/listing-parse";
 import type { Phone } from "../src/lib/types";
@@ -21,12 +21,17 @@ test("no credentials, no client; version defaults per market", () => {
   assert.equal(credentialsFor("au", { AMAZON_CREATORS_AU_CLIENT_ID: "a", AMAZON_CREATORS_AU_CLIENT_SECRET: "b", AMAZON_CREATORS_AU_VERSION: "3.1" })!.version, "3.1");
 });
 
-test("one credential serves every marketplace: the AU variables are the US and UK default, a market's own win", () => {
+test("the AU variables are the US and UK fallback, a market's own credential wins", () => {
   const au = { AMAZON_CREATORS_AU_CLIENT_ID: "a", AMAZON_CREATORS_AU_CLIENT_SECRET: "b", AMAZON_CREATORS_AU_VERSION: "3.3" };
   assert.deepEqual(credentialsFor("us", au), { id: "a", secret: "b", version: "3.3" });
   assert.deepEqual(credentialsFor("uk", au), { id: "a", secret: "b", version: "3.3" });
   assert.deepEqual(credentialsFor("us", { ...au, AMAZON_CREATORS_US_CLIENT_ID: "u", AMAZON_CREATORS_US_CLIENT_SECRET: "v" }), { id: "u", secret: "v", version: "3.1" });
   assert.equal(credentialsFor("us", {}), null);
+});
+
+test("a credential from another country's account is a refusal, not 24,000 failed searches (2026-11-06)", () => {
+  assert.ok(isWrongAccount('{"message":"Your credential is not linked to the partner tag in the request for the given Marketplace.","reason":"InvalidAssociate"'));
+  assert.ok(!isWrongAccount('{"message":"Invalid keywords","reason":"InvalidParameterValue"}'));
 });
 
 const listing = (amount: number, o: Partial<{ cond: string; avail: string; cur: string; box: boolean; seller: string }> = {}) => ({

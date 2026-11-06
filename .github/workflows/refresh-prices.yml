@@ -140,6 +140,16 @@ jobs:
           AMAZON_CREATORS_AU_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_AU_CLIENT_ID }}
           AMAZON_CREATORS_AU_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_AU_CLIENT_SECRET }}
           AMAZON_CREATORS_AU_VERSION: ${{ secrets.AMAZON_CREATORS_AU_VERSION }}
+          # Each country's own credential (the AU one is refused for US and UK tags, 2026-11-06).
+          AMAZON_CREATORS_US_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_US_CLIENT_ID }}
+          AMAZON_CREATORS_US_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_US_CLIENT_SECRET }}
+          AMAZON_CREATORS_US_VERSION: ${{ secrets.AMAZON_CREATORS_US_VERSION }}
+          AMAZON_CREATORS_UK_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_UK_CLIENT_ID }}
+          AMAZON_CREATORS_UK_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_UK_CLIENT_SECRET }}
+          AMAZON_CREATORS_UK_VERSION: ${{ secrets.AMAZON_CREATORS_UK_VERSION }}
+          AMAZON_CREATORS_CA_CLIENT_ID: ${{ secrets.AMAZON_CREATORS_CA_CLIENT_ID }}
+          AMAZON_CREATORS_CA_CLIENT_SECRET: ${{ secrets.AMAZON_CREATORS_CA_CLIENT_SECRET }}
+          AMAZON_CREATORS_CA_VERSION: ${{ secrets.AMAZON_CREATORS_CA_VERSION }}
         run: npx tsx scripts/amazon-asins.ts
       # The Compare Empire network (scripts/family-sync.ts): our best deals and camera pages for CamCompare,
       # and CamCompare's feed for our deals pages and camera hand-offs. Never fatal.
