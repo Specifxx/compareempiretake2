@@ -1,0 +1,685 @@
+{
+ "_about": "Screen (inner screen for foldables), chip and battery from each model's Wikipedia infobox (source), which cites the maker's spec sheet; main camera is the maker's published main-sensor figure. Samsung chips that differ by country name both. A figure we could not confirm is left out, never guessed. Read by src/lib/specs-curated.ts.",
+ "ASUS|ROG Phone 6": {
+  "screenInches": 6.78,
+  "chip": "Snapdragon 8+ Gen 1",
+  "batteryMah": 6000,
+  "source": "https://en.wikipedia.org/wiki/ROG_Phone_6"
+ },
+ "Apple|iPhone 11": {
+  "screenInches": 6.1,
+  "chip": "A13 Bionic",
+  "batteryMah": 3110,
+  "mainCameraMp": 12,
+  "source": "https://en.wikipedia.org/wiki/IPhone_11"
+ },
+ "Apple|iPhone 13": {
+  "screenInches": 6.1,
+  "chip": "A15 Bionic",
+  "batteryMah": 3227,
+  "mainCameraMp": 12,
+  "source": "https://en.wikipedia.org/wiki/IPhone_13"
+ },
+ "Apple|iPhone 14": {
+  "screenInches": 6.1,
+  "chip": "A15 Bionic",
+  "batteryMah": 3279,
+  "mainCameraMp": 12,
+  "source": "https://en.wikipedia.org/wiki/IPhone_14"
+ },
+ "Apple|iPhone 15": {
+  "screenInches": 6.1,
+  "chip": "A16 Bionic",
+  "batteryMah": 3349,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_15"
+ },
+ "Apple|iPhone 15 Plus": {
+  "screenInches": 6.7,
+  "chip": "A16 Bionic",
+  "batteryMah": 4383,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_15"
+ },
+ "Apple|iPhone 15 Pro Max": {
+  "screenInches": 6.7,
+  "chip": "A17 Pro",
+  "batteryMah": 4422,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_15_Pro"
+ },
+ "Apple|iPhone 16": {
+  "screenInches": 6.1,
+  "chip": "A18",
+  "batteryMah": 3561,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_16"
+ },
+ "Apple|iPhone 16 Plus": {
+  "screenInches": 6.7,
+  "chip": "A18",
+  "batteryMah": 4674,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_16"
+ },
+ "Apple|iPhone 16 Pro": {
+  "screenInches": 6.3,
+  "chip": "A18 Pro",
+  "batteryMah": 3582,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_16_Pro"
+ },
+ "Apple|iPhone 16 Pro Max": {
+  "screenInches": 6.9,
+  "chip": "A18 Pro",
+  "batteryMah": 4685,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_16_Pro"
+ },
+ "Apple|iPhone 16e": {
+  "screenInches": 6.1,
+  "chip": "A18",
+  "batteryMah": 4005,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_16e"
+ },
+ "Apple|iPhone 17": {
+  "screenInches": 6.3,
+  "chip": "A19",
+  "batteryMah": 3692,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_17"
+ },
+ "Apple|iPhone 17 Pro": {
+  "screenInches": 6.3,
+  "chip": "A19 Pro",
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_17_Pro"
+ },
+ "Apple|iPhone 17 Pro Max": {
+  "screenInches": 6.9,
+  "chip": "A19 Pro",
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_17_Pro"
+ },
+ "Apple|iPhone 17e": {
+  "screenInches": 6.1,
+  "chip": "A19",
+  "batteryMah": 4005,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_17e"
+ },
+ "Apple|iPhone 18 Pro": {
+  "screenInches": 6.3,
+  "chip": "A20 Pro",
+  "source": "https://en.wikipedia.org/wiki/IPhone_18_Pro"
+ },
+ "Apple|iPhone 18 Pro Max": {
+  "screenInches": 6.9,
+  "chip": "A20 Pro",
+  "source": "https://en.wikipedia.org/wiki/IPhone_18_Pro"
+ },
+ "Apple|iPhone Air": {
+  "screenInches": 6.5,
+  "chip": "A19 Pro",
+  "batteryMah": 3149,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_Air"
+ },
+ "Apple|iPhone Duo": {
+  "screenInches": 7.6,
+  "chip": "A20 Pro",
+  "batteryMah": 4883,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/IPhone_Duo"
+ },
+ "Google|Pixel 5": {
+  "screenInches": 6.0,
+  "chip": "Snapdragon 765G",
+  "batteryMah": 4080,
+  "source": "https://en.wikipedia.org/wiki/Pixel_5"
+ },
+ "Google|Pixel 6": {
+  "screenInches": 6.4,
+  "chip": "Tensor",
+  "batteryMah": 4614,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Pixel_6"
+ },
+ "Google|Pixel 7a": {
+  "screenInches": 6.1,
+  "chip": "Tensor G2",
+  "batteryMah": 4385,
+  "mainCameraMp": 64,
+  "source": "https://en.wikipedia.org/wiki/Pixel_7a"
+ },
+ "Google|Pixel 8": {
+  "screenInches": 6.2,
+  "chip": "Tensor G3",
+  "batteryMah": 4575,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Pixel_8"
+ },
+ "Google|Pixel 8a": {
+  "screenInches": 6.1,
+  "chip": "Tensor G3",
+  "batteryMah": 4492,
+  "mainCameraMp": 64,
+  "source": "https://en.wikipedia.org/wiki/Pixel_8a"
+ },
+ "Google|Pixel 9": {
+  "screenInches": 6.3,
+  "chip": "Tensor G4",
+  "batteryMah": 4700,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Pixel_9"
+ },
+ "Google|Pixel 9 Pro": {
+  "screenInches": 6.3,
+  "chip": "Tensor G4",
+  "batteryMah": 4700,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Pixel_9"
+ },
+ "Google|Pixel 9 Pro XL": {
+  "screenInches": 6.7,
+  "chip": "Tensor G4",
+  "batteryMah": 5060,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Pixel_9"
+ },
+ "Google|Pixel 9 Pro Fold": {
+  "chip": "Tensor G4",
+  "batteryMah": 4650,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/Pixel_9_Pro_Fold"
+ },
+ "Google|Pixel 9a": {
+  "screenInches": 6.3,
+  "chip": "Tensor G4",
+  "batteryMah": 5100,
+  "source": "https://en.wikipedia.org/wiki/Pixel_9a"
+ },
+ "Google|Pixel 10": {
+  "screenInches": 6.3,
+  "chip": "Tensor G5",
+  "batteryMah": 4970,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10"
+ },
+ "Google|Pixel 10 Pro": {
+  "screenInches": 6.3,
+  "chip": "Tensor G5",
+  "batteryMah": 4870,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10_Pro"
+ },
+ "Google|Pixel 10 Pro XL": {
+  "screenInches": 6.8,
+  "chip": "Tensor G5",
+  "batteryMah": 5200,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10_Pro"
+ },
+ "Google|Pixel 10 Pro Fold": {
+  "screenInches": 8.0,
+  "chip": "Tensor G5",
+  "batteryMah": 5015,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10_Pro_Fold"
+ },
+ "Google|Pixel 10a": {
+  "screenInches": 6.3,
+  "chip": "Tensor G4",
+  "batteryMah": 5100,
+  "source": "https://en.wikipedia.org/wiki/Pixel_10a"
+ },
+ "Google|Pixel 11": {
+  "screenInches": 6.3,
+  "chip": "Tensor G6",
+  "batteryMah": 4985,
+  "source": "https://en.wikipedia.org/wiki/Pixel_11"
+ },
+ "Google|Pixel 11 Pro": {
+  "screenInches": 6.3,
+  "chip": "Tensor G6",
+  "batteryMah": 4850,
+  "source": "https://en.wikipedia.org/wiki/Pixel_11_Pro"
+ },
+ "Google|Pixel 11 Pro XL": {
+  "screenInches": 6.8,
+  "chip": "Tensor G6",
+  "batteryMah": 5115,
+  "source": "https://en.wikipedia.org/wiki/Pixel_11_Pro"
+ },
+ "Google|Pixel 11 Pro Fold": {
+  "screenInches": 8.0,
+  "chip": "Tensor G6",
+  "batteryMah": 4806,
+  "source": "https://en.wikipedia.org/wiki/Pixel_11_Pro_Fold"
+ },
+ "HMD|Key": {
+  "screenInches": 6.52,
+  "chip": "Unisoc SC9832E",
+  "batteryMah": 4000,
+  "source": "https://en.wikipedia.org/wiki/HMD_Key"
+ },
+ "HMD|Pulse+": {
+  "screenInches": 6.65,
+  "chip": "Unisoc T606",
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/HMD_Pulse"
+ },
+ "HMD|Pulse Pro": {
+  "screenInches": 6.65,
+  "chip": "Unisoc T606",
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/HMD_Pulse"
+ },
+ "HONOR|Magic6 Pro": {
+  "screenInches": 6.8,
+  "chip": "Snapdragon 8 Gen 3",
+  "batteryMah": 5600,
+  "source": "https://en.wikipedia.org/wiki/Honor_Magic_6_Pro"
+ },
+ "Motorola|Edge 50 Neo": {
+  "screenInches": 6.4,
+  "chip": "Dimensity 7300",
+  "batteryMah": 4310,
+  "source": "https://en.wikipedia.org/wiki/Motorola_Edge_50_Neo"
+ },
+ "Nokia|C02": {
+  "screenInches": 5.45,
+  "batteryMah": 3000,
+  "source": "https://en.wikipedia.org/wiki/Nokia_C02"
+ },
+ "Nokia|C12": {
+  "screenInches": 6.3,
+  "chip": "Unisoc SC9863A1",
+  "batteryMah": 3000,
+  "source": "https://en.wikipedia.org/wiki/Nokia_C12"
+ },
+ "Nokia|C32": {
+  "screenInches": 6.5,
+  "chip": "Unisoc SC9863A1",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Nokia_C32"
+ },
+ "Nokia|G50": {
+  "screenInches": 6.82,
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Nokia_G50"
+ },
+ "Nokia|X30": {
+  "screenInches": 6.43,
+  "chip": "Snapdragon 695",
+  "batteryMah": 4200,
+  "source": "https://en.wikipedia.org/wiki/Nokia_X30"
+ },
+ "Nokia|XR20": {
+  "screenInches": 6.67,
+  "chip": "Snapdragon 480",
+  "batteryMah": 4630,
+  "source": "https://en.wikipedia.org/wiki/Nokia_XR20"
+ },
+ "Nothing|Phone (2)": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 8+ Gen 1",
+  "batteryMah": 4700,
+  "source": "https://en.wikipedia.org/wiki/Nothing_Phone_2"
+ },
+ "OPPO|Find N6": {
+  "screenInches": 8.12,
+  "chip": "Snapdragon 8 Elite Gen 5",
+  "batteryMah": 6000,
+  "source": "https://en.wikipedia.org/wiki/Oppo_Find_N6"
+ },
+ "OPPO|Find X5": {
+  "screenInches": 6.55,
+  "chip": "Snapdragon 888",
+  "batteryMah": 4800,
+  "source": "https://en.wikipedia.org/wiki/Oppo_Find_X5"
+ },
+ "OPPO|Find X9": {
+  "screenInches": 6.59,
+  "chip": "Dimensity 9500",
+  "batteryMah": 7025,
+  "source": "https://en.wikipedia.org/wiki/Oppo_Find_X9"
+ },
+ "OPPO|Find X9 Pro": {
+  "screenInches": 6.78,
+  "chip": "Dimensity 9500",
+  "batteryMah": 7500,
+  "source": "https://en.wikipedia.org/wiki/Oppo_Find_X9"
+ },
+ "OPPO|Reno15 Pro": {
+  "batteryMah": 6200,
+  "source": "https://en.wikipedia.org/wiki/Oppo_Reno15"
+ },
+ "OnePlus|Nord CE4 Lite": {
+  "screenInches": 6.67,
+  "chip": "Snapdragon 695",
+  "batteryMah": 5110,
+  "source": "https://en.wikipedia.org/wiki/OnePlus_Nord_CE4_Lite"
+ },
+ "Samsung|Galaxy A04s": {
+  "screenInches": 6.5,
+  "chip": "Exynos 850",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A04"
+ },
+ "Samsung|Galaxy A05s": {
+  "screenInches": 6.72,
+  "chip": "Snapdragon 680",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A05"
+ },
+ "Samsung|Galaxy A16": {
+  "screenInches": 6.7,
+  "batteryMah": 5000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A16"
+ },
+ "Samsung|Galaxy A17": {
+  "screenInches": 6.7,
+  "batteryMah": 5000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A17"
+ },
+ "Samsung|Galaxy A18": {
+  "screenInches": 6.7,
+  "chip": "Exynos 1610",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A18"
+ },
+ "Samsung|Galaxy A21s": {
+  "screenInches": 6.5,
+  "chip": "Exynos 850",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A21s"
+ },
+ "Samsung|Galaxy A25": {
+  "screenInches": 6.5,
+  "chip": "Exynos 1280",
+  "batteryMah": 5000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A25_5G"
+ },
+ "Samsung|Galaxy A27": {
+  "chip": "Snapdragon 6 Gen 3",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A27_5G"
+ },
+ "Samsung|Galaxy A34": {
+  "screenInches": 6.6,
+  "chip": "Dimensity 1080",
+  "batteryMah": 5000,
+  "mainCameraMp": 48,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A34_5G"
+ },
+ "Samsung|Galaxy A35": {
+  "screenInches": 6.6,
+  "chip": "Exynos 1380",
+  "batteryMah": 5000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A35_5G"
+ },
+ "Samsung|Galaxy A36": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 6 Gen 3",
+  "batteryMah": 5000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A36_5G"
+ },
+ "Samsung|Galaxy A54": {
+  "screenInches": 6.4,
+  "chip": "Exynos 1380",
+  "batteryMah": 5000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A54_5G"
+ },
+ "Samsung|Galaxy A55": {
+  "screenInches": 6.6,
+  "chip": "Exynos 1480",
+  "batteryMah": 5000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A55_5G"
+ },
+ "Samsung|Galaxy A56": {
+  "screenInches": 6.7,
+  "chip": "Exynos 1580",
+  "batteryMah": 5000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A56_5G"
+ },
+ "Samsung|Galaxy A57": {
+  "screenInches": 6.7,
+  "chip": "Exynos 1680",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_A57_5G"
+ },
+ "Samsung|Galaxy S21": {
+  "screenInches": 6.2,
+  "chip": "Exynos 2100 or Snapdragon 888",
+  "batteryMah": 4000,
+  "mainCameraMp": 12,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S21"
+ },
+ "Samsung|Galaxy S21 Ultra": {
+  "screenInches": 6.8,
+  "chip": "Exynos 2100 or Snapdragon 888",
+  "batteryMah": 5000,
+  "mainCameraMp": 108,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S21"
+ },
+ "Samsung|Galaxy S22+": {
+  "screenInches": 6.6,
+  "chip": "Exynos 2200 or Snapdragon 8 Gen 1",
+  "batteryMah": 4500,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S22"
+ },
+ "Samsung|Galaxy S23": {
+  "screenInches": 6.1,
+  "chip": "Snapdragon 8 Gen 2",
+  "batteryMah": 3900,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S23"
+ },
+ "Samsung|Galaxy S23+": {
+  "screenInches": 6.6,
+  "chip": "Snapdragon 8 Gen 2",
+  "batteryMah": 4700,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S23"
+ },
+ "Samsung|Galaxy S23 FE": {
+  "chip": "Exynos 2200 or Snapdragon 8 Gen 1",
+  "batteryMah": 4500,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S23"
+ },
+ "Samsung|Galaxy S23 Ultra": {
+  "screenInches": 6.8,
+  "chip": "Snapdragon 8 Gen 2",
+  "batteryMah": 5000,
+  "mainCameraMp": 200,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S23"
+ },
+ "Samsung|Galaxy S24": {
+  "screenInches": 6.2,
+  "chip": "Exynos 2400 or Snapdragon 8 Gen 3",
+  "batteryMah": 4000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24"
+ },
+ "Samsung|Galaxy S24+": {
+  "screenInches": 6.7,
+  "chip": "Exynos 2400 or Snapdragon 8 Gen 3",
+  "batteryMah": 4900,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24"
+ },
+ "Samsung|Galaxy S24 FE": {
+  "screenInches": 6.7,
+  "chip": "Exynos 2400e",
+  "batteryMah": 4700,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24"
+ },
+ "Samsung|Galaxy S24 Ultra": {
+  "screenInches": 6.8,
+  "chip": "Snapdragon 8 Gen 3",
+  "batteryMah": 5000,
+  "mainCameraMp": 200,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S24"
+ },
+ "Samsung|Galaxy S25": {
+  "screenInches": 6.2,
+  "chip": "Snapdragon 8 Elite",
+  "batteryMah": 4000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25"
+ },
+ "Samsung|Galaxy S25+": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 8 Elite",
+  "batteryMah": 4900,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25"
+ },
+ "Samsung|Galaxy S25 Edge": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 8 Elite",
+  "batteryMah": 3900,
+  "mainCameraMp": 200,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25"
+ },
+ "Samsung|Galaxy S25 FE": {
+  "chip": "Exynos 2400",
+  "batteryMah": 4900,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25"
+ },
+ "Samsung|Galaxy S25 Ultra": {
+  "screenInches": 6.9,
+  "chip": "Snapdragon 8 Elite",
+  "batteryMah": 5000,
+  "mainCameraMp": 200,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S25"
+ },
+ "Samsung|Galaxy S26": {
+  "chip": "Exynos 2600 or Snapdragon 8 Elite Gen 5",
+  "batteryMah": 4300,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S26"
+ },
+ "Samsung|Galaxy S26+": {
+  "chip": "Exynos 2600 or Snapdragon 8 Elite Gen 5",
+  "batteryMah": 4900,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S26"
+ },
+ "Samsung|Galaxy S26 FE": {
+  "chip": "Exynos 2500",
+  "batteryMah": 4900,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S26"
+ },
+ "Samsung|Galaxy S26 Ultra": {
+  "chip": "Snapdragon 8 Elite Gen 5",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_S26"
+ },
+ "Samsung|Galaxy Z Flip4": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 8+ Gen 1",
+  "batteryMah": 3700,
+  "mainCameraMp": 12,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Flip_4"
+ },
+ "Samsung|Galaxy Z Flip5": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 8 Gen 2",
+  "batteryMah": 3700,
+  "mainCameraMp": 12,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Flip_5"
+ },
+ "Samsung|Galaxy Z Flip6": {
+  "screenInches": 6.7,
+  "chip": "Snapdragon 8 Gen 3",
+  "batteryMah": 4000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Flip_6"
+ },
+ "Samsung|Galaxy Z Flip7": {
+  "screenInches": 6.9,
+  "chip": "Exynos 2500",
+  "batteryMah": 4300,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Flip_7"
+ },
+ "Samsung|Galaxy Z Flip7 FE": {
+  "screenInches": 6.7,
+  "chip": "Exynos 2400",
+  "batteryMah": 4000,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Flip_7_FE"
+ },
+ "Samsung|Galaxy Z Flip8": {
+  "screenInches": 6.9,
+  "chip": "Exynos 2600 or Snapdragon 8 Elite Gen 5",
+  "batteryMah": 4300,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Flip_8"
+ },
+ "Samsung|Galaxy Z Fold5": {
+  "screenInches": 7.6,
+  "chip": "Snapdragon 8 Gen 2",
+  "batteryMah": 4400,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Fold_5"
+ },
+ "Samsung|Galaxy Z Fold6": {
+  "screenInches": 7.6,
+  "chip": "Snapdragon 8 Gen 3",
+  "batteryMah": 4400,
+  "mainCameraMp": 50,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Fold_6"
+ },
+ "Samsung|Galaxy Z Fold7": {
+  "screenInches": 8.0,
+  "chip": "Snapdragon 8 Elite",
+  "batteryMah": 4400,
+  "mainCameraMp": 200,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Fold_7"
+ },
+ "Samsung|Galaxy Z Fold8": {
+  "screenInches": 7.6,
+  "chip": "Snapdragon 8 Elite Gen 5",
+  "batteryMah": 4800,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Fold_8"
+ },
+ "Samsung|Galaxy Z Fold8 Ultra": {
+  "screenInches": 8.0,
+  "chip": "Snapdragon 8 Elite Gen 5",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Z_Fold_8"
+ },
+ "Sony|Xperia 1 VIII": {
+  "screenInches": 6.5,
+  "chip": "Snapdragon 8 Elite Gen 5",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Sony_Xperia_1_VIII"
+ },
+ "Sony|Xperia 10 VII": {
+  "screenInches": 6.1,
+  "chip": "Snapdragon 6 Gen 3",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Sony_Xperia_10_VII"
+ },
+ "Xiaomi|12": {
+  "screenInches": 6.2,
+  "chip": "Snapdragon 8 Gen 1",
+  "batteryMah": 4500,
+  "source": "https://en.wikipedia.org/wiki/Xiaomi_12"
+ },
+ "Xiaomi|14T": {
+  "screenInches": 6.67,
+  "chip": "Dimensity 8300 Ultra",
+  "batteryMah": 5000,
+  "source": "https://en.wikipedia.org/wiki/Xiaomi_14T"
+ }
+}

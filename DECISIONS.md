@@ -1446,6 +1446,46 @@ week of history up, how the best price moved over about 30 days (`src/lib/produc
 category's page now names the model. Guides link from product pages in every region (posts are region-agnostic since
 the entry above); the brand chip stays Australian, where brand pages live.
 
+## 2026-11-06 — Specs that compare: one reading per title, and curated phone sheets
+
+Owner: the compare table was missing processors on laptops and screen, chip, camera and battery on most phones; a US
+review found monitors labelled wrong (the LG 27GM950B, a 5K Mini LED IPS, shown "4K · OLED"; the 32QN600, QHD, shown
+"4K").
+
+- **Why they were wrong.** Specs were read from every store title joined into one string, so any one title decided a
+  row; and "27-Inch" counted as a model code, the shortest one, so different LG 27" and 32" monitors became one
+  product. Now each title gives its own reading and the most common one wins (`lib/specs.ts` `vote`), titles that
+  carry the product's own model code are preferred (`ownTitles`), and a size is never a code (`NOISE_CODE`).
+- **Processors.** `cpuName` reads every spelling stores use (U7-265HX, Ultra 9 386H, RAI 9 HX 370, Ryzen AI MAX+ 395,
+  Snapdragon X2 Elite, i7-14650HX) into one name, for laptops, desktops (new Processor and Graphics rows) and tablets.
+- **Curated sheets.** `data/specs/<category>.json` holds figures from the maker's sheet as the model's Wikipedia
+  infobox gives it, with the URL beside each; they beat a title's figure. 107 phone models so far. A figure we could not
+  confirm is left out, never guessed: "—" is better than a wrong number. GSMArena (Tollbit 402) and PhoneArena
+  (Cloudflare) refuse automated reads and are not worked around.
+- **Rows.** The compare table shows each category's rows in one order (`SPEC_ROWS`), then any other spec.
+- **Shipping a reading fix without an import.** `scripts/refresh-specs.ts` rewrites only `specs` in every
+  catalog.json; the daily build does the same from the raw files. Phones keep a build-time figure their stored titles
+  no longer state (the catalogue trims titles and blurbs).
+
+## 2026-11-06 — US prices: each Amazon country needs its own credential; brand stores read directly
+
+**Owner (Bill, 2026-11-06):** the US "literally only has like one store … where's the Amazon? … Best Buy might not
+actually work, but we can probably find a proxy … get that immediately on this website."
+
+**Amazon.** The AU Creators API credential answered every US and UK call with `400 InvalidAssociate` ("Your credential is
+not linked to the partner tag"): a credential belongs to the Associates account that made it, so the 2026-11-05 note
+that one credential is global was wrong. The import now stops a region at the first such answer and records "refused"
+with the reason, and passes `AMAZON_CREATORS_US_*` / `_UK_*` / `_CA_*`. The US credential is made in the US Associates
+Central (store riftcompare-20, version 3.1); prices still wait until that account has 10 qualifying sales in 30 days.
+
+**Best Buy.** No proxy: a store that walls off servers is never worked around (the rule on every site). Best Buy's free
+Products API (`BESTBUY_API_KEY`, wired 2026-11-04) is the legitimate door and waits only for the key.
+
+**Brand stores read directly.** Samsung US (listing JSON-LD), Google Store US (Pixel, the config page's offers: unlocked
+only, one offer per model and storage at its lowest colour price) and Motorola US (product-page JSON-LD; a page that
+sells several storages for one price is skipped). Carrier, trade-in, monthly-only and renewed prices are refused.
+Phone dealers read through `autoShopify` keep only US unlocked units (global models, dual-SIM imports and carrier
+phones refused). Rounds 22 and 23 added 25 independent US stores this way.
 ## 2026-11-06 — Awin offers and vouchers for the whole family (`data/awin/promotions.json`)
 
 **Decision (owner: store promotions "captured in our price comparison"):** the daily Awin sync also reads Awin's Offers
