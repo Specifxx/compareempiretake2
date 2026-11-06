@@ -89,7 +89,8 @@ if(${JSON.stringify([...NEUTRAL])}.indexOf(s)>=0)return;
 var R=${JSON.stringify(["au", "us", "uk", "ca", "sg"])};
 var page=R.indexOf(s)>=0?s:s?"au":"us";
 var want=null;try{want=localStorage.getItem("${REGION_STORAGE_KEY}")}catch(e){}
-if(R.indexOf(want)<0||(d.getAttribute("data-regions")||"").split(" ").indexOf(want)<0)return;
+var L=d.getAttribute&&d.getAttribute("data-regions");
+if(R.indexOf(want)<0||(L&&L.split(" ").indexOf(want)<0))return;
 if(want===page)return;
 var from=null;try{from=sessionStorage.getItem("ce-geo-from")}catch(e){}
 if(from===p)return;

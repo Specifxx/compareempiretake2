@@ -12,7 +12,7 @@ import { CATEGORIES } from "../src/lib/categories";
 const ROOT = path.join(__dirname, "..");
 const SRC = path.join(ROOT, "src");
 const APP = path.join(SRC, "app");
-const PRODUCT_PAGES = ["src/app/[category]/[slug]/page.tsx", "src/app/us/[category]/[slug]/page.tsx", "src/app/uk/[category]/[slug]/page.tsx"];
+const PRODUCT_PAGES = ["src/app/[category]/[slug]/page.tsx", "src/app/us/[category]/[slug]/page.tsx", "src/app/uk/[category]/[slug]/page.tsx", "src/app/ca/[category]/[slug]/page.tsx", "src/app/sg/[category]/[slug]/page.tsx"];
 const read = (rel: string) => readFileSync(path.join(ROOT, rel), "utf8");
 
 function walk(dir: string, out: string[] = []): string[] {
