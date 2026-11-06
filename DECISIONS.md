@@ -1372,3 +1372,24 @@ and the header switcher, sitemap, hreflang and the region boot script name a reg
   sitemap, so a new region's thin categories are never submitted (the 2026-11-05 thin-pages rule).
 - **Stores.** `docs/stores/canada-singapore.md`: 21 Canadian and 17 Singapore stores read directly, own-trade
   categories only, and feed slots for the big chains, which open when the owner's network approvals land.
+
+## 2026-11-06 — Specs that compare: one reading per title, and curated phone sheets
+
+Owner: the compare table was missing processors on laptops and screen, chip, camera and battery on most phones; a US
+review found monitors labelled wrong (the LG 27GM950B, a 5K Mini LED IPS, shown "4K · OLED"; the 32QN600, QHD, shown
+"4K").
+
+- **Why they were wrong.** Specs were read from every store title joined into one string, so any one title decided a
+  row; and "27-Inch" counted as a model code, the shortest one, so different LG 27" and 32" monitors became one
+  product. Now each title gives its own reading and the most common one wins (`lib/specs.ts` `vote`), titles that
+  carry the product's own model code are preferred (`ownTitles`), and a size is never a code (`NOISE_CODE`).
+- **Processors.** `cpuName` reads every spelling stores use (U7-265HX, Ultra 9 386H, RAI 9 HX 370, Ryzen AI MAX+ 395,
+  Snapdragon X2 Elite, i7-14650HX) into one name, for laptops, desktops (new Processor and Graphics rows) and tablets.
+- **Curated sheets.** `data/specs/<category>.json` holds figures from the maker's sheet as the model's Wikipedia
+  infobox gives it, with the URL beside each; they beat a title's figure. 107 phone models so far. A figure we could not
+  confirm is left out, never guessed: "—" is better than a wrong number. GSMArena (Tollbit 402) and PhoneArena
+  (Cloudflare) refuse automated reads and are not worked around.
+- **Rows.** The compare table shows each category's rows in one order (`SPEC_ROWS`), then any other spec.
+- **Shipping a reading fix without an import.** `scripts/refresh-specs.ts` rewrites only `specs` in every
+  catalog.json; the daily build does the same from the raw files. Phones keep a build-time figure their stored titles
+  no longer state (the catalogue trims titles and blurbs).

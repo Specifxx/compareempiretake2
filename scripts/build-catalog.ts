@@ -11,8 +11,10 @@ import { offerIsPreorder } from "../src/lib/preorders";
 import { dataPath, REGIONS, type RegionId } from "../src/lib/region";
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
-import { categorySpecs, conflicts, mergeTarget, sharedCodeMerges, type Parsed } from "../src/lib/match";
+import { categorySpecs, codes as titleCodes, conflicts, mergeTarget, sharedCodeMerges, type Parsed } from "../src/lib/match";
 import { parseListing } from "../src/lib/listing-parse";
+import { ownTitles, phoneSpecs } from "../src/lib/specs";
+import { withCurated } from "../src/lib/specs-curated";
 import { productCodes } from "../src/lib/match-more";
 import { parseTitle, slugify, storageLabel } from "../src/lib/normalize";
 import { RETAILERS } from "../src/lib/retailers";
@@ -71,29 +73,6 @@ function mostCommon(xs: string[]): string {
   const c = new Map<string, number>();
   for (const x of xs) c.set(x, (c.get(x) ?? 0) + 1);
   return [...c].sort((a, b) => b[1] - a[1] || a[0].length - b[0].length)[0][0];
-}
-
-function extractSpecs(model: string, texts: string[]): Specs {
-  const all = texts.join(" \n ");
-  const num = (re: RegExp, pick: (xs: number[]) => number) => {
-    const xs = [...all.matchAll(re)].map((m) => Number(m[1])).filter((n) => n > 0);
-    return xs.length ? pick(xs) : undefined;
-  };
-  const screen = num(/(\d\.\d{1,2})\s*(?:''|"|”|’’|-?\s?inch)/gi, (xs) => Number(mostCommon(xs.map(String))));
-  const battery = num(/(\d{4,5})\s?mAh/gi, (xs) => Math.max(...xs));
-  const camera = num(/(\d{2,3})\s?MP\b/gi, (xs) => Math.max(...xs));
-  const chip = all.match(/\b(A\d{2}(?: Pro| Bionic)?(?= chip)|Snapdragon[ ®]*(?:8 Elite(?: Gen \d)?|\d+s?\+? Gen \d|\d{3}\w?)|Tensor G\d|Dimensity \d{3,4}\w*|Exynos \d{4}|Helio [A-Z]\d+)/)?.[1];
-  const has5g = /\b5G\b/.test(all);
-  const has4g = /\b4G\b/.test(all);
-  return {
-    screenInches: screen && screen > 4 && screen < 9 ? screen : undefined,
-    batteryMah: battery && battery < 12000 ? battery : undefined,
-    mainCameraMp: camera && camera <= 200 ? camera : undefined,
-    chip: chip?.replace(/[ ®]+/g, " ").trim(),
-    network: has4g && !has5g ? "4G" : "5G",
-    foldable: /\b(fold|flip|razr|magic v|iphone duo)/i.test(model),
-    esimOnly: /esim only/i.test(all) || undefined,
-  };
 }
 
 /** Rough "how new" score from the first number in a model name. */
@@ -310,7 +289,7 @@ function build(category: CategoryId) {
       retailerCount: new Set(offersAll.map((o) => o.retailer)).size,
       offerCount: offersAll.length,
       blurb: blurb ? blurb.replace(/\s\d{1,2}\s+(?=[,.;])/g, "").replace(/(?<=[.!])\s\d{1,2}(?=\s[A-Z])/g, "").replace(/\s+([,.])/g, "$1").split(/(?<=\.)\s/).slice(0, 3).join(" ").slice(0, 320) : undefined,
-      specs: category === "phones" ? extractSpecs(model, [...g.raws.map((r) => r.title), ...(blurb ? [blurb] : [])]) : categorySpecs(category, g.raws.map((r) => r.title)),
+      specs: withCurated({ category, brand: g.brand, model }, category === "phones" ? phoneSpecs(model, [...g.raws.map((r) => r.title), ...(blurb ? [blurb] : [])]) : categorySpecs(category, ownTitles(g.raws.map((r) => r.title), topCodes(g.codes) ?? titleCodes(name), name))),
       generation: generation(g.brand, model),
       codes: topCodes(g.codes),
       firstSeen: day,
