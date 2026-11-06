@@ -10,7 +10,7 @@ import { EbayListingRow, EbaySearchRow } from "./EbayListingRow";
 import { REGIONS, withRegion } from "@/lib/region";
 import { ebaySearch, ebaySellers, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
-import { storeLink } from "@/lib/store-links";
+import { shopifyCartHref, storeLink } from "@/lib/store-links";
 import type { Offer, Phone, RetailerId } from "@/lib/types";
 import { CheckIcon, ExternalIcon } from "./icons";
 import { ShareButton } from "./ShareButton";
@@ -20,6 +20,7 @@ import { SaveButton } from "./SaveButton";
 import { CompareToggle } from "./CompareToggle";
 import { PriceCheckCard } from "./PriceCheckCard";
 import { StoreVote } from "./StoreVote";
+import { CartAddButton } from "./cart/CartAddButton";
 import { PriceAlertButton } from "./PriceAlertButton";
 
 /** The clock an Amazon price's "as of" time is shown in: the region's own. */
@@ -199,7 +200,7 @@ export function PhoneOffers({
             {rows.map(({ best: o, colours: cs }, i) => (
               <Fragment key={o.retailer}>
                 <li>
-                  <OutrightRow o={o} colours={cs} rank={i} best={best} product={href} was={checks[variant.id]?.was[o.retailer]} />
+                  <OutrightRow o={o} colours={cs} rank={i} best={best} product={href} was={checks[variant.id]?.was[o.retailer]} cart={{ title: phone.name, detail: vLabel || null, image: phone.image ?? phone.images[0] ?? null }} />
                 </li>
                 {i === 0 && <li><PinnedMarketplaces phone={phone} variantId={variant.id} variantQuery={mq} product={href} cheapest={best?.price} part="rows" /></li>}
               </Fragment>
@@ -328,9 +329,15 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
 
 /** Our verdict on a store's own "was" price, from what we've recorded there. */
 /** One store's outright row (its cheapest listing of the variant), on the product page and in the quick view. */
-export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was }: { o: Offer; colours: Set<string>; rank: number; best?: Offer; product: string; was?: WasCheck }) {
-  const { $ } = useRegionKit();
+export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was, cart }: { o: Offer; colours: Set<string>; rank: number; best?: Offer; product: string; was?: WasCheck; /** The product, for the cart list's add button (in-stock rows only). */ cart?: { title: string; detail?: string | null; image?: string | null } }) {
+  const { $, R } = useRegionKit();
   const link = storeLink(o.url, "row");
+  // The cart list (components/cart, owner 2026-11-06): a Shopify listing with no programme checks out at the
+  // store's cart; the rest keep this row's own (Awin-tracked) link.
+  const add =
+    cart && o.inStock
+      ? { href: shopifyCartHref(o.url, o.inStock) ?? link.href, productUrl: o.url, storeName: RETAILERS[o.retailer].name, title: cart.title, detail: cart.detail ?? null, priceCents: Math.round(o.price * 100), currency: R.currency, image: o.image ?? cart.image ?? null }
+      : null;
   return (
     <a
       href={link.href}
@@ -357,6 +364,8 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was 
             {o.inStock ? <><CheckIcon className="h-3.5 w-3.5" /> In stock</> : o.preorder ? "Pre-order" : "Out of stock / pre-order"}
           </span>
           <span className="truncate">{[...cs].filter(Boolean).slice(0, 4).join(", ")}{cs.size > 4 ? ` +${cs.size - 4}` : ""}</span>
+          {/* Phones: the add button as a line here, where the row has no width to spare. It stops the row's link. */}
+          {add && <CartAddButton inline {...add} className="text-xs sm:hidden" />}
         </div>
       </div>
       <div className="text-right">
@@ -366,6 +375,7 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was 
         {o.wasPrice && was && was.status !== "unknown" && <WasNote w={was} />}
         {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">{$((o.price - best.price))} more than the cheapest</div>}
       </div>
+      {add && <CartAddButton {...add} className="hidden shrink-0 text-ink-mute sm:inline-flex" />}
       <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
         Go to store <ExternalIcon className="h-3.5 w-3.5" />
       </span>
