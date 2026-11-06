@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "sg-thetechyard",
   base: "https://www.thetechyard.com",
-  cats: ["cpus", "motherboards", "graphics-cards", "monitors", "ssds", "ram", "headphones", "laptops"],
+  cats: ["cpus", "motherboards", "graphics-cards", "monitors", "ssds", "headphones", "laptops"],
 });

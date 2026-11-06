@@ -10,7 +10,7 @@ import. Stores were found by survey rounds 22 and 22b (`docs/stores/candidates22
 Canada (21): Shokz, soundcore, Roborock, Narwal, Dreame, Sennheiser, HyperX, Ooni (brand stores); The Camera Store,
 Gosselin (cameras, drones; Gosselin's used stock "USAGÉ" refused); Audio Excellence; iDrinkCoffee, Eight Ounce Coffee
 (its yard-sale and cosmetic-defect stock refused), Espresso Planet, Anthony's Espresso, Consiglio's Kitchenware, Home
-Coffee Solutions, Coffee Addicts, Espresso Dolce; Appliance Canada; Mastermind Toys (LEGO only).
+Coffee Solutions, Coffee Addicts, Espresso Dolce; Appliance Canada (one copy of each listing: its ZAA stock code); Mastermind Toys (LEGO only).
 
 Singapore (17): Challenger (the country's largest electronics chain, read whole), Mega Discount Store (appliances, TVs;
 its air purifiers, water heaters, wine chillers and shavers refused), Stereo, Mobile Square, Gadget Box, Sony Store

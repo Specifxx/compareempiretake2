@@ -5,6 +5,6 @@ export const scrapers = autoShopify({
   retailer: "sg-sony",
   base: "https://store.sony.com.sg",
   brand: "Sony",
-  cats: ["headphones", "consoles"],
+  cats: ["headphones"],
   exclude: /\[(pre ?order|notify me|special order)\]/i,
 });

@@ -4,5 +4,5 @@ import { autoShopify } from "../../auto-shopify";
 export const scrapers = autoShopify({
   retailer: "ca-audioexcellence",
   base: "https://www.audioexcellence.ca",
-  cats: ["headphones", "speakers", "soundbars"],
+  cats: ["headphones", "speakers"],
 });

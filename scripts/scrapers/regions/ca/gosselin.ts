@@ -5,5 +5,5 @@ export const scrapers = autoShopify({
   retailer: "ca-gosselin",
   base: "https://www.gosselinphoto.ca",
   cats: ["cameras", "drones"],
-  exclude: /\busag/i,
+  exclude: /\busag|\bsac\b|étui|\bsangle\b/i,
 });
