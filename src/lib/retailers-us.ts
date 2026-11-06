@@ -14,6 +14,8 @@ export const US_RETAILERS: (Retailer & { id: `us-${string}` })[] = [
   { id: "us-dell", name: "Dell", site: "dell.com", color: "#007DB8", type: "official" },
   { id: "us-lg", name: "LG", site: "lg.com/us", color: "#A50034", type: "official" },
   { id: "us-samsung", name: "Samsung", site: "samsung.com/us", color: "#1428A0", type: "official" },
+  { id: "us-googlestore", name: "Google Store", site: "store.google.com", color: "#4285F4", type: "official" },
+  { id: "us-motorola", name: "Motorola", site: "motorola.com/us", color: "#001428", type: "official" },
   { id: "us-bose", name: "Bose", site: "bose.com", color: "#000000", type: "official" },
   { id: "us-sonos", name: "Sonos", site: "sonos.com", color: "#000000", type: "official" },
   { id: "us-garmin", name: "Garmin", site: "garmin.com", color: "#007CC3", type: "official" },

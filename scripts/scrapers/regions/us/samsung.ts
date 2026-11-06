@@ -102,7 +102,9 @@ async function tablets(): Promise<RawOffer[]> {
     const slug = url.split("/").pop()!;
     const storage = slug.match(/-(\d+(?:gb|tb))-/)?.[1]?.toUpperCase();
     if (!storage) continue;
-    const t = toOffer(node, url, `Samsung ${n.replace(/^Samsung\s+/i, "")} ${storage}`);
+    // Some cards read "Galaxy Tab A11+ , 128GB, Gray (Unlocked)": keep the model, put the URL's storage after it.
+    const model = n.split(/\s*,\s*/)[0].replace(/^Samsung\s+/i, "").replace(/\s*\((?:unlocked|wi-?fi|5g)[^)]*\)/gi, "").replace(/\b\d+\s?(?:GB|TB)\b/i, "").replace(/\s+/g, " ").trim();
+    const t = toOffer(node, url, `Samsung ${model} ${storage}`);
     if (t) out.push(t);
   }
   return out;
