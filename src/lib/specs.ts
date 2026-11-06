@@ -54,6 +54,9 @@ export function cpuName(t: string): string | undefined {
     return `Intel ${m[1]}`;
   if ((m = t.match(/\b(?:AMD\s+)?Athlon\s+(Silver|Gold)(?:\s+(\d{4}[A-Z]?))?/i))) return `AMD Athlon ${m[1][0].toUpperCase()}${m[1].slice(1).toLowerCase()}${m[2] ? ` ${m[2]}` : ""}`;
   if ((m = t.match(/\bMediaTek\s+(Kompanio\s+\d{3,4}\w*)/i))) return `MediaTek ${m[1]}`;
+  // Older Intel Core m3/m5/m7 ("Core m3 8100Y") and Microsoft's own SQ1/SQ2 (Surface Pro X).
+  if ((m = t.match(/\bCore\s+m([357])[-\s](\d{4}Y)\b/i))) return `Intel Core m${m[1]}-${m[2].toUpperCase()}`;
+  if ((m = t.match(/\bMicrosoft\s+SQ\s?([12])\b/i))) return `Microsoft SQ${m[1]}`;
   return undefined;
 }
 
