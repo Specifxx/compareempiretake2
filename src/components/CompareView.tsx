@@ -8,6 +8,7 @@ import { compareGroup, normaliseHref, parseHref } from "@/lib/product-refs";
 import { money, withRegion } from "@/lib/region";
 import { RETAILERS } from "@/lib/retailers";
 import { search } from "@/lib/search";
+import { SPEC_ROWS } from "@/lib/specs";
 import { compare } from "@/lib/store";
 import type { Phone, RetailerId } from "@/lib/types";
 import { useProducts } from "@/lib/use-products";
@@ -79,8 +80,9 @@ export function CompareView() {
         ] as [string, (p: Phone) => React.ReactNode][])
       : ([
           ...(chosen.some((p) => p.variants.length > 1) ? ([["Options", (p: Phone) => p.variants.map((v) => v.label).join(" · ")]] as [string, (p: Phone) => React.ReactNode][]) : []),
-          // Every spec any chosen product has, in first-seen order.
-          ...[...new Set(chosen.flatMap((p) => (p.specs.extra ?? []).map(([k]) => k)))].map(
+          // The category's own rows first, in one order for every product (lib/specs.ts SPEC_ROWS), then any other
+          // spec a chosen product has. A row shows when at least one product has a figure for it.
+          ...[...new Set([...(category ? SPEC_ROWS[category] ?? [] : []), ...chosen.flatMap((p) => (p.specs.extra ?? []).map(([k]) => k))])].filter((k) => chosen.some((p) => (p.specs.extra ?? []).some(([x]) => x === k))).map(
             (k) => [k, (p: Phone) => (p.specs.extra ?? []).find(([x]) => x === k)?.[1] ?? "—"] as [string, (p: Phone) => React.ReactNode],
           ),
         ] as [string, (p: Phone) => React.ReactNode][])),

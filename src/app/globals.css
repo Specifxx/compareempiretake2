@@ -85,6 +85,22 @@ html.gq [data-grid-fallback] [data-unfiltered] { display: none; }
 html.gq [data-grid-fallback] div[data-filtered-only] { display: block; }
 /* REGION_BOOT_SCRIPT (lib/region.ts): while a visitor is being moved to their own region's copy of the page, at most 1.5 s. */
 html[data-geo="pending"] main { visibility: hidden; }
+/* Guides draw every region's prices (GuideBody); the reader's region shows: html[data-gr] (REGION_BOOT_SCRIPT,
+   GuideRegionPicker), the US when unset, which is what crawlers read. */
+.rg, .rgi { display: none; }
+html[data-gr="au"] .rg-au,
+html[data-gr="us"] .rg-us,
+html[data-gr="uk"] .rg-uk,
+html[data-gr="ca"] .rg-ca,
+html[data-gr="sg"] .rg-sg,
+html:not([data-gr]) .rg-us { display: block; }
+html[data-gr="au"] .rgi-au,
+html[data-gr="us"] .rgi-us,
+html[data-gr="uk"] .rgi-uk,
+html[data-gr="ca"] .rgi-ca,
+html[data-gr="sg"] .rgi-sg,
+html:not([data-gr]) .rgi-us { display: inline; }
+
 html.gq [data-grid-fallback] span[data-filtered-only] { display: inline; }
 
 /* Quick view (src/components/QuickView.tsx): opens at once, prices shimmer in. */

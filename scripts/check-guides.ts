@@ -4,6 +4,9 @@
  * drops those quietly, so a guide can thin out without anyone noticing. Warn-only (prices move
  * daily); run it after writing or editing a guide.
  *
+ * Every guide is drawn for every region we compare (2026-11-06), so each block is checked in each region with data;
+ * a block empty in one region shows a "not enough stores yet" line there.
+ *
  * Usage: npx tsx scripts/check-guides.ts
  */
 import { existsSync, readdirSync, readFileSync } from "node:fs";
@@ -12,21 +15,25 @@ import { blockArgs, cheapestBy, parseCats, planVsOutright, storeWins, topOptions
 import type { Phone } from "../src/lib/types";
 
 const root = process.cwd();
-const all: Phone[] = [];
-for (const c of parseCats("all")) {
-  const f = path.join(root, "data", c, "catalog.json");
-  if (existsSync(f)) all.push(...(JSON.parse(readFileSync(f, "utf8")).phones as Phone[]).map((p) => ({ ...p, category: c })));
+const REGION_DIRS: Record<string, string> = { au: "", us: "us", uk: "uk", ca: "ca", sg: "sg" };
+const regions: { id: string; all: Phone[] }[] = [];
+for (const [id, dir] of Object.entries(REGION_DIRS)) {
+  const all: Phone[] = [];
+  for (const c of parseCats("all")) {
+    const f = path.join(root, "data", dir, c, "catalog.json");
+    if (existsSync(f)) all.push(...(JSON.parse(readFileSync(f, "utf8")).phones as Phone[]).map((p) => ({ ...p, category: c })));
+  }
+  if (all.length) regions.push({ id, all });
 }
-const bySlug = new Map(all.map((p) => [`${p.category}/${p.slug}`, p]));
-const find = (ref: string) => bySlug.get(ref.includes("/") ? ref : `phones/${ref}`);
-
 let problems = 0;
 const dir = path.join(root, "content/guides");
-for (const file of readdirSync(dir).filter((f) => f.endsWith(".md")).sort()) {
+for (const file of readdirSync(dir).filter((f) => f.endsWith(".md")).sort()) for (const { id: region, all } of regions) {
+  const bySlug = new Map(all.map((p) => [`${p.category}/${p.slug}`, p]));
+  const find = (ref: string) => bySlug.get(ref.includes("/") ? ref : `phones/${ref}`);
   const body = readFileSync(path.join(dir, file), "utf8");
   const warn = (msg: string) => {
     problems++;
-    console.log(`${file}: ${msg}`);
+    console.log(`${file} [${region}]: ${msg}`);
   };
   for (const m of body.matchAll(/\{\{(price|stores|name|link):([a-z0-9/-]+)(?::[a-z0-9]+)?\}\}/g)) if (!find(m[2])) warn(`{{${m[1]}:${m[2]}}} matches no product`);
   for (const m of body.matchAll(/^\[\[(\w+):([^\]]+)\]\]\s*$/gm)) {
@@ -35,7 +42,9 @@ for (const file of readdirSync(dir).filter((f) => f.endsWith(".md")).sort()) {
     if (kind === "build") for (const s of arg.split(",")) if (!find(s.split("|")[0].trim())) warn(`[[build]] ${s.split("|")[0].trim()} matches no product`);
     if (kind === "compare") for (const s of arg.split(",")) if (!find(s.trim())) warn(`[[compare]] ${s.trim()} matches no product`);
     if (kind === "top") {
-      const n = topProducts(all, topOptions(arg)).length;
+      const o = topOptions(arg);
+      let n = topProducts(all, o).length;
+      if (n < 3 && (o.stores ?? 2) > 1) n = topProducts(all, { ...o, stores: 1 }).length; // GuideBody relaxes the same way
       if (n < 3) warn(`[[top:${arg}]] has ${n} rows`);
     }
     if (kind === "by") {
