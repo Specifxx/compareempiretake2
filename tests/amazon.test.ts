@@ -19,3 +19,10 @@ test("each region's Amazon carries that store's own tag, UK included (2026-11-02
   assert.equal(amazonLink("uk", "Dyson V15"), "https://www.amazon.co.uk/s?k=Dyson%20V15&tag=compareempi03-21");
   assert.equal(amazonStore("uk")!.name, "Amazon UK");
 });
+
+test("the quick view's Amazon row is the product page's tagged link, never Amazon's price (owner, 2026-11-06)", async () => {
+  const { readFileSync } = await import("node:fs");
+  const src = readFileSync("src/components/PhoneOffers.tsx", "utf8");
+  assert.match(src, /const amazonHref = found\?\.url \?\? amazonLink\(region, mq, compact \? "quickview" : "product"\);/, "the quick view keeps the Amazon link");
+  assert.match(src, /const live = compact \? undefined : found;/, "Amazon's price stays on the product page");
+});
