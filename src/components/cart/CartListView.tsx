@@ -100,6 +100,8 @@ export function CartListView() {
           <CartIcon size={36} />
           <p className="ce-cart-strong">Your cart is empty</p>
           <p>Tap the cart button beside any store&apos;s price to add it. Add from as many stores as you like: each store gets its own checkout button here.</p>
+          {/* A plain link: the kit is shared by sites with and without next/link rules. */}
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
           <a className="ce-cart-btn" href="/">
             Find prices
           </a>
