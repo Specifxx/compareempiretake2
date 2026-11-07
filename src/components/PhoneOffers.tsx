@@ -25,7 +25,7 @@ import { PriceAlertButton } from "./PriceAlertButton";
 
 /** The clock an Amazon price's "as of" time is shown in: the region's own. */
 const AMAZON_CLOCK: Record<string, string> = { au: "Sydney time", us: "New York time", uk: "London time", ca: "Toronto time", sg: "Singapore time" };
-import type { PriceCheck, WasCheck } from "@/lib/price-check";
+import { aboveRrp, unusuallyHigh, type PriceCheck, type Rrp, type StorePrice, type WasCheck } from "@/lib/price-check";
 import { useRegionKit } from "@/lib/use-region";
 
 /** One row per retailer: its cheapest listing, with the colours it has at that price. */
@@ -49,10 +49,13 @@ export function PhoneOffers({
   phone,
   chart,
   checks,
+  checkedAt = {},
 }: {
   phone: Phone;
   chart: Record<string, React.ReactNode>;
-  checks: Record<string, { check: PriceCheck; was: Partial<Record<RetailerId, WasCheck>> }>;
+  checks: Record<string, { check: PriceCheck; was: Partial<Record<RetailerId, WasCheck>>; kinds?: Partial<Record<RetailerId, StorePrice>> }>;
+  /** When each store's prices were last read (lib/catalog.ts storeCheckedAt), ISO time. */
+  checkedAt?: Partial<Record<RetailerId, string>>;
 }) {
   const params = useSearchParams();
   const initial = phone.variants.find((v) => v.id === params.get("v")) ?? defaultVariant(phone);
@@ -195,12 +198,25 @@ export function PhoneOffers({
           </div>
           {tab === "outright" ? (
           <>
+          {variant.rrp && <RrpLine rrp={variant.rrp} rows={rows.map((r) => r.best)} />}
           {/* The cheapest store always comes first; the eBay and Amazon ads sit under it, never above it (US shopper review, 2026-11-06). */}
           <ol className="space-y-2.5">
             {rows.map(({ best: o, colours: cs }, i) => (
               <Fragment key={o.retailer}>
                 <li>
-                  <OutrightRow o={o} colours={cs} rank={i} best={best} product={href} was={checks[variant.id]?.was[o.retailer]} cart={{ title: phone.name, detail: vLabel || null, image: phone.image ?? phone.images[0] ?? null }} />
+                  <OutrightRow
+                    o={o}
+                    colours={cs}
+                    rank={i}
+                    best={best}
+                    product={href}
+                    was={checks[variant.id]?.was[o.retailer]}
+                    rrp={variant.rrp}
+                    kind={checks[variant.id]?.kinds?.[o.retailer]}
+                    others={rows.filter((r) => r.best.retailer !== o.retailer).map((r) => r.best.price)}
+                    checkedAt={checkedAt[o.retailer]}
+                    cart={{ title: phone.name, detail: vLabel || null, image: phone.image ?? phone.images[0] ?? null }}
+                  />
                 </li>
                 {i === 0 && <li><PinnedMarketplaces phone={phone} variantId={variant.id} variantQuery={mq} product={href} cheapest={best?.price} part="rows" /></li>}
               </Fragment>
@@ -252,7 +268,10 @@ export function PhoneOffers({
           </>
           )}
           <p className="mt-3 text-xs text-ink-mute">
-            {R.taxNote}, checked daily. Delivery and in-store availability vary — confirm on the retailer&apos;s site.
+            {R.taxNote}, checked daily. Delivery and in-store availability vary — confirm on the retailer&apos;s site.{" "}
+            <Link prefetch={false} href={withRegion("/stores", region)} className="underline underline-offset-2 hover:text-ink">Which stores we check</Link>
+            {" · "}
+            <Link prefetch={false} href="/contact#suggest" className="underline underline-offset-2 hover:text-ink">Missing a store? Suggest one</Link>
           </p>
         </div>
 
@@ -332,7 +351,36 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
 
 /** Our verdict on a store's own "was" price, from what we've recorded there. */
 /** One store's outright row (its cheapest listing of the variant), on the product page and in the quick view. */
-export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was, cart }: { o: Offer; colours: Set<string>; rank: number; best?: Offer; product: string; was?: WasCheck; /** The product, for the cart list's add button (in-stock rows only). */ cart?: { title: string; detail?: string | null; image?: string | null } }) {
+export function OutrightRow({
+  o,
+  colours: cs,
+  rank: i,
+  best,
+  product: href,
+  was,
+  rrp,
+  kind,
+  others,
+  checkedAt,
+  cart,
+}: {
+  o: Offer;
+  colours: Set<string>;
+  rank: number;
+  best?: Offer;
+  product: string;
+  was?: WasCheck;
+  /** The variant's RRP as the stores state it (lib/price-check.ts storeRrp). */
+  rrp?: Rrp;
+  /** Sale or everyday price, from this store's own history. */
+  kind?: StorePrice;
+  /** The other stores' prices, to flag one far above them when there is no RRP. */
+  others?: number[];
+  /** When this store's prices were last read, ISO time. */
+  checkedAt?: string;
+  /** The product, for the cart list's add button (in-stock rows only). */
+  cart?: { title: string; detail?: string | null; image?: string | null };
+}) {
   const { $, R } = useRegionKit();
   const link = storeLink(o.url, "row");
   // The cart list (components/cart, owner 2026-11-06): a Shopify listing with no programme checks out at the
@@ -358,6 +406,14 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was,
           <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
           {RETAILERS[o.retailer].type === "official" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Official store</span>}
           {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Cheapest</span>}
+          {aboveRrp(o.price, rrp) ? (
+            <span className="rounded-full bg-hot/10 px-2 py-0.5 text-[10px] font-semibold text-hot" title={`The RRP ${rrp!.stores} stores list is ${$(rrp!.price)}`}>Above RRP</span>
+          ) : !rrp && others && unusuallyHigh(o.price, others) ? (
+            <span className="rounded-full bg-hot/10 px-2 py-0.5 text-[10px] font-semibold text-hot" title="Much dearer than the other stores: worth checking before you buy">Unusually high</span>
+          ) : null}
+          {kind?.kind === "sale" && <span className="rounded-full bg-save/10 px-2 py-0.5 text-[10px] font-semibold text-save" title={`Usually ${$(kind.usual)} at this store`}>Sale · usually {$(kind.usual)}</span>}
+          {kind?.kind === "everyday" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft" title="About what this store has charged for the past few weeks">Everyday price</span>}
+          {kind?.kind === "up" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft" title={`Usually ${$(kind.usual)} at this store`}>Up from {$(kind.usual)}</span>}
           {link.paid && <span className="text-[10px] text-ink-mute">Paid link</span>}
           {/* The thumbs stop the row's link (StoreVote calls preventDefault). */}
           <StoreVote url={o.url} name={RETAILERS[o.retailer].name} className="text-ink-mute" />
@@ -368,6 +424,7 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was,
           </span>
           <span className="truncate">{[...cs].filter(Boolean).slice(0, 4).join(", ")}{cs.size > 4 ? ` +${cs.size - 4}` : ""}</span>
           {/* Phones: the add button as a line here, where the row has no width to spare. It stops the row's link. */}
+          {checkedAt && <span suppressHydrationWarning title="When we last read this store's prices">Checked {checkedLabel(checkedAt, R.locale, R.timeZone)}</span>}
           {add && <CartAddButton inline {...add} className="text-xs sm:hidden" />}
         </div>
       </div>
@@ -384,6 +441,25 @@ export function OutrightRow({ o, colours: cs, rank: i, best, product: href, was,
       </span>
       <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
     </a>
+  );
+}
+
+/** "6 Nov, 9:54 pm" in the region's own clock. */
+function checkedLabel(iso: string, locale: string, timeZone: string) {
+  const d = new Date(iso);
+  return `${d.toLocaleDateString(locale, { timeZone, day: "numeric", month: "short" })}, ${d.toLocaleTimeString(locale, { timeZone, hour: "numeric", minute: "2-digit" })}`;
+}
+
+/** The RRP the stores state, and how many of today's stores sell at or under it. */
+function RrpLine({ rrp, rows }: { rrp: Rrp; rows: Offer[] }) {
+  const { $ } = useRegionKit();
+  const above = rows.filter((o) => aboveRrp(o.price, rrp)).length;
+  return (
+    <p className="mb-3 rounded-xl bg-bg-sunk px-3.5 py-2.5 text-xs text-ink-soft">
+      <b className="text-ink">RRP {$(rrp.price)}</b>, the recommended price {rrp.stores} stores list.{" "}
+      {rows.length - above} of {rows.length} {rows.length === 1 ? "store sells" : "stores sell"} at or under it
+      {above > 0 ? <>; <span className="font-semibold text-hot">{above} {above === 1 ? "charges" : "charge"} more</span>.</> : "."}
+    </p>
   );
 }
 

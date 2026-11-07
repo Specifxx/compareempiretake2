@@ -52,3 +52,38 @@ test("dates show the year from the catalogue's day, never the clock", () => {
   assert.equal(c.points.at(-1)![0], "2027-01-01", "the last point is the catalogue's day, which PriceCheckCard uses");
   assert.match(c.detail, /31 Dec 2026/);
 });
+
+// Reddit feedback, 2026-11-07: an RRP to check prices against, sale vs everyday, and prices far above the rest.
+import { aboveRrp, storePriceKind, storeRrp, unusuallyHigh } from "../src/lib/price-check";
+
+const off = (retailer: string, price: number, wasPrice?: number) => ({ retailer, sku: retailer, title: "", url: "", price, wasPrice, colour: "", inStock: true }) as Parameters<typeof storeRrp>[0][number];
+
+test("RRP: the 'was' price two or more stores state; a lone or tied one is none", () => {
+  // LEGO 75455 on 7 Nov: four stores say was $279.99; Kidstuff charges $319.99.
+  const boba = [off("toyworld", 269.99, 279.99), off("toyworldbendigo", 269.99, 279.99), off("brickbuilder", 279, 279.99), off("kidstuff", 319.99), off("toysrus", 279.99)];
+  const rrp = storeRrp(boba);
+  assert.deepEqual(rrp, { price: 279.99, stores: 3 });
+  assert.equal(aboveRrp(319.99, rrp), true);
+  assert.equal(aboveRrp(279.99, rrp), false);
+  assert.equal(aboveRrp(280.5, rrp), false, "rounding is not above");
+  assert.equal(storeRrp([off("a", 90, 100), off("b", 95)]), undefined, "one store's was price");
+  assert.equal(storeRrp([off("a", 90, 100), off("b", 95, 100), off("c", 90, 120), off("d", 92, 120)]), undefined, "two groups as big");
+  assert.equal(storeRrp([off("a", 90, 100), off("a", 91, 100)]), undefined, "one store twice");
+  assert.equal(storeRrp([off("a", 200, 100), off("b", 210, 100)]), undefined, "a was price under every price");
+});
+
+test("sale vs everyday needs four weeks of that store's prices", () => {
+  const days = (n: number, price: number) => Array.from({ length: n }, (_, i) => [new Date(Date.parse("2026-10-01") + i * 864e5).toISOString().slice(0, 10), price] as [string, number]);
+  const h = days(35, 100);
+  assert.deepEqual(storePriceKind(80, h, "2026-11-07"), { kind: "sale", usual: 100 });
+  assert.deepEqual(storePriceKind(100, h, "2026-11-07"), { kind: "everyday", usual: 100 });
+  assert.deepEqual(storePriceKind(110, h, "2026-11-07"), { kind: "up", usual: 100 });
+  assert.equal(storePriceKind(80, days(10, 100), "2026-11-07"), undefined);
+  assert.equal(storePriceKind(80, undefined, "2026-11-07"), undefined);
+});
+
+test("unusually high: 35% over the other stores' median, with three or more of them", () => {
+  assert.equal(unusuallyHigh(140, [100, 100, 102]), true);
+  assert.equal(unusuallyHigh(130, [100, 100, 102]), false);
+  assert.equal(unusuallyHigh(200, [100, 100]), false);
+});
