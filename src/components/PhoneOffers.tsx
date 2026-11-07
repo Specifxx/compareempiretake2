@@ -6,7 +6,7 @@ import { marketplacesFor } from "@/lib/marketplaces";
 import { AmazonNote, AmazonRow } from "./AmazonLink";
 import { AMAZON_PRICE_DISCLAIMER } from "./AmazonLivePrice";
 import { amazonLink, amazonStore } from "@/lib/amazon";
-import { EbayListingRow, EbaySearchRow } from "./EbayListingRow";
+import { EbayListingRow, EbaySearchRow, PIN_OUTLINE } from "./EbayListingRow";
 import { REGIONS, withRegion } from "@/lib/region";
 import { ebaySearch, ebaySellers, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
@@ -399,7 +399,7 @@ export function OutrightRow({
       data-buy-price={o.price}
       data-buy-rank={i + 1}
       data-buy-kind="outright"
-      className={`card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4 ${i === 0 && o.inStock ? "ring-2 ring-save/60" : ""}`}
+      className={`card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4 ${i === 0 && o.inStock ? PIN_OUTLINE.cheapest : ""}`}
     >
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2">
