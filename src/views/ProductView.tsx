@@ -41,10 +41,17 @@ const load = async (params: ProductParams, region: RegionId) => {
 /** The product page's copy of the product, with its Amazon links and live prices (every region with a tag). */
 const withAmazon = (p: Phone, region: RegionId): Phone => ({ ...p, amazon: amazonFor(p, region) });
 
-/** hreflang links to the same product in the other regions we have it in. */
+/**
+ * hreflang links to the same product in the other regions where its page is indexable (SEO audit, 2026-11-07): a
+ * noindex copy is never advertised, and a noindex page advertises none.
+ */
 function alternates(p: Phone) {
+  if (!productIndexable(p)) return { canonical: productHref(p) };
   const langs = Object.fromEntries(
-    REGION_IDS.filter((r) => getProduct(p.category, p.slug, r)).map((r) => [REGIONS[r].hreflang, withRegion(`/${p.category}/${p.slug}`, r)]),
+    REGION_IDS.filter((r) => {
+      const q = getProduct(p.category, p.slug, r);
+      return !!q && productIndexable(q);
+    }).map((r) => [REGIONS[r].hreflang, withRegion(`/${p.category}/${p.slug}`, r)]),
   );
   return { canonical: productHref(p), ...(Object.keys(langs).length > 1 ? { languages: withXDefault(langs) } : {}) };
 }

@@ -11,7 +11,7 @@ import type { CategoryId, Phone } from "./types";
  * of them); the sitemap only tells search engines where to start. A new site with ~28K programmatic product pages
  * per region, most sold by one store, looks thin (Search Console, 2026-10-29: impressions peaked and faded within
  * days of the first crawl), so the sitemap lists only products a buyer can compare: two or more stores in stock in
- * the US, UK, Canada and Singapore, three or more in Australia (lib/indexing.ts `productInSitemap`;
+ * the US and UK, three or more in Australia, Canada and Singapore (lib/indexing.ts `productInSitemap`;
  * `SITEMAP_MIN_STORES` in Vercel widens Australia to 2),
  * brands with an indexable product, and the head-to-head pages. One-store and sold-out products are noindex.
  *

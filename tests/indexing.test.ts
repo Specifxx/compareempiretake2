@@ -24,8 +24,25 @@ test("Australia's sitemap lists the strongest tier only: three or more stores, i
   assert.equal(productInSitemap(product([offer("a", 10, false), offer("b", 11, false), offer("c", 12, false)])), false);
 });
 
-test("the US, UK, Canada and Singapore sitemaps list every indexable product: two or more stores, in stock", () => {
-  for (const region of ["us", "uk", "ca", "sg"] as const) {
+test("Canada and Singapore index (and list) three-store pages only (2026-11-07)", () => {
+  for (const region of ["ca", "sg"] as const) {
+    const at = (p: Phone) => ({ ...p, region });
+    assert.equal(productIndexable(at(product([offer("a", 10), offer("b", 11)]))), false, `${region}: two stores is noindex`);
+    assert.equal(productInSitemap(at(product([offer("a", 10), offer("b", 11)]))), false, `${region}: …and out of the sitemap`);
+    assert.equal(productIndexable(at(product([offer("a", 10), offer("b", 11), offer("c", 12)]))), true, `${region}: three`);
+    assert.equal(productInSitemap(at(product([offer("a", 10), offer("b", 11), offer("c", 12)]))), true, `${region}: three listed`);
+  }
+});
+
+test("the product page's hreflang lists only regions where its copy is indexable, and a noindex page lists none", async () => {
+  const { readFileSync } = await import("node:fs");
+  const src = readFileSync(new URL("../src/views/ProductView.tsx", import.meta.url), "utf8");
+  assert.match(src, /if \(!productIndexable\(p\)\) return \{ canonical: productHref\(p\) \};/);
+  assert.match(src, /return !!q && productIndexable\(q\);/);
+});
+
+test("the US and UK sitemaps list every indexable product: two or more stores, in stock", () => {
+  for (const region of ["us", "uk"] as const) {
     const at = (p: Phone) => ({ ...p, region });
     assert.equal(productInSitemap(at(product([offer("a", 10)]))), false, `${region}: one store stays out`);
     assert.equal(productInSitemap(at(product([offer("a", 10), offer("b", 11)]))), true, `${region}: two stores`);
