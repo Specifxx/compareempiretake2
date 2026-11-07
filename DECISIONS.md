@@ -1714,3 +1714,21 @@ is the store: "iphone 16e good guys", "airpods 4 harvey norman", "dji mini 5 pro
 stores by price ("Also at The Good Guys, Harvey Norman and Officeworks: compare 9 Australian stores in 128GB, 256GB and
 512GB."), longest form first, within 160 characters. URLs, titles and headings are unchanged. Recheck CTR on those
 pages ~2026-11-25 with the same report.
+
+## 2026-11-07: Small regions index three-store pages only; hreflang only between indexable copies
+
+The owner's Search Console and Bing audit (2026-11-07) asked that a region's product page with 0–2 stores be noindex and
+that hreflang join only indexable pages. Two changes (`src/lib/indexing.ts`, `src/views/ProductView.tsx`):
+
+- `MIN_INDEX_STORES`: Canada and Singapore need three stores (in stock at one) before a product page there is indexable
+  and in the sitemap. With few stores in those regions, most products have one or two (Canada 84 two-store pages, 18
+  with three; Singapore 31 and 3), and those copies of a product Google already sees in the big regions read as thin.
+  Australia, the US and the UK keep two (the owner's 2026-11-06 call, "Every comparable US and UK product in the
+  sitemap"): a two-store page there is a real comparison, and moving them to three would noindex ~2,000 pages
+  (AU 1,501 → 713, US 912 → 402, UK 924 → 352), many already indexed. Raise them in `MIN_INDEX_STORES` if the owner
+  chooses to.
+- The product page's hreflang now lists only the regions where that product's own page is indexable, and a noindex page
+  lists none. Before, it listed every region holding the product, so an indexable AU page pointed Google at noindex
+  copies in Canada and Singapore.
+
+URLs, titles and pages are unchanged. Recheck with Search Console ~2026-11-25.
