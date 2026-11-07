@@ -1699,3 +1699,18 @@ the build's "edge runtime" line is only a notice.
 
 **Revisit** ~2026-12-01 with Search Console: if a retired category shows demand on another site in the family, or a kept
 category earns nothing, move it; the floors and brand lists are one table in `lib/focus.ts`.
+
+## 2026-11-07 — Product snippets name the stores people search for
+
+The owner's Search Console and Bing audit (2026-11-07) asked for the top 20 pages by impressions to be rewritten for
+click-through. Search Console's 90 days to 2026-11-04 (`sc-domain:compareempire.com`, TCGEmpire *Maintenance*
+`gsc-queries`, which now lists the top pages by impressions with each page's queries): routers (2,088, pos 8),
+robot vacuums (~22K, pos 5–6), then product pages (iPad mini 258, Galaxy Z Flip8 210, Galaxy S26 176, iPhone 18 Pro
+175, iPhone 16e 144, iPad 11 137, iPad A16 125, iPad Pro 11 M4 108, S23 Ultra 103, iPhone 17e 80, iPhone 18 Pro Max 74,
+UK iPad Air, iPad mini, Galaxy A16, Fold6) at 0–1.9% CTR. The category titles (2026-11-02) and product titles
+(2026-11-05) were already rewritten inside that window, so they stay; what the queries showed and no snippet answered
+is the store: "iphone 16e good guys", "airpods 4 harvey norman", "dji mini 5 pro harvey norman", "good guys iphone
+16e". `productDescription` (`lib/indexing.ts`) now leads with the cheapest price and store, then names the next three
+stores by price ("Also at The Good Guys, Harvey Norman and Officeworks: compare 9 Australian stores in 128GB, 256GB and
+512GB."), longest form first, within 160 characters. URLs, titles and headings are unchanged. Recheck CTR on those
+pages ~2026-11-25 with the same report.

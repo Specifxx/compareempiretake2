@@ -2,7 +2,7 @@
 // sitemap, each page's real lastmod, and the clean slug an entity-mangled URL redirects to.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { brandIndexable, cleanedSlug, latest, productIndexable, productInIndexNow, productInSitemap, productLastmod, productTitle, SITEMAP_MIN_STORES } from "../src/lib/indexing";
+import { brandIndexable, cleanedSlug, latest, productDescription, productIndexable, productInIndexNow, productInSitemap, productLastmod, productTitle, SITEMAP_MIN_STORES } from "../src/lib/indexing";
 import { cleanTitle } from "../scripts/lib/http";
 import type { Phone } from "../src/lib/types";
 
@@ -81,4 +81,16 @@ test("product titles say the price, the store and the stores compared, within 70
   assert.equal(one, "Google Pixel 11 price in the UK: £699 at Currys");
   const long = productTitle({ name: "Samsung Galaxy Tab S9 Ultra 14.6 inch Wi-Fi Tablet 12GB 256GB Graphite", place: "the UK", price: "£899", store: "Argos", stores: 4 });
   assert.ok(long.length <= 70 || long.endsWith("price in the UK"), long);
+});
+
+test("a product's search snippet names the cheapest store and the next ones by price, within 160 characters", () => {
+  const d = productDescription({ name: "Apple iPhone 16e", price: "$899", store: "JB Hi-Fi", others: ["The Good Guys", "Harvey Norman", "Officeworks", "Bing Lee"], stores: 9, adjective: "Australian", variants: ["128GB", "256GB", "512GB"] });
+  assert.ok(d.length <= 160, `${d.length}: ${d}`);
+  assert.match(d, /^Apple iPhone 16e from \$899 at JB Hi-Fi\. Also at The Good Guys/);
+  assert.match(d, /compare 9 Australian stores/);
+  assert.doesNotMatch(d, /Bing Lee/, "the fourth store does not fit");
+  const solo = productDescription({ name: "Google Pixel 11", price: "£699", store: "Currys", others: [], stores: 1, adjective: "UK", variants: [] });
+  assert.equal(solo, "Google Pixel 11 from £699 at Currys. Compare 1 UK store. Price history and whether today's price is a good one.");
+  const long = productDescription({ name: "Samsung Galaxy Tab S9 Ultra 14.6 inch Wi-Fi Tablet 12GB 256GB Graphite Edition Bundle", price: "£899", store: "Argos", others: ["Currys", "John Lewis", "Very"], stores: 4, adjective: "UK", variants: ["256GB", "512GB"] });
+  assert.ok(long.length <= 160, long);
 });
