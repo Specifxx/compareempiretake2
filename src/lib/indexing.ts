@@ -11,10 +11,20 @@ import type { Phone } from "./types";
 const live = (p: Phone) => p.variants.some((v) => v.offers.some((o) => o.inStock && o.kind !== "plan"));
 
 /**
- * A product page is indexable when it compares something: two or more stores, at least one of them with it in
- * stock. A one-store page or an all-sold-out page stays live and linked (follow) but asks not to be indexed.
+ * Stores a product needs in a region before its page there is indexable. Two in Australia, the US and the UK, where a
+ * two-store page is a real comparison among dozens of stores. Three in Canada and Singapore (SEO audit, 2026-11-07):
+ * with few stores there, most products have one or two, and those copies of a product Google already sees in the
+ * bigger regions read as thin. DECISIONS.md, 2026-11-07 "Small regions index three-store pages only".
  */
-export const productIndexable = (p: Phone) => p.retailerCount >= 2 && live(p);
+export const MIN_INDEX_STORES: Record<RegionId, number> = { au: 2, us: 2, uk: 2, ca: 3, sg: 3 };
+const indexFloor = (region: RegionId) => MIN_INDEX_STORES[region] ?? 2;
+
+/**
+ * A product page is indexable when it compares something: MIN_INDEX_STORES stores, at least one of them with it in
+ * stock. A thinner page or an all-sold-out page stays live and linked (follow) but asks not to be indexed, and is left
+ * out of the sitemap and of every other page's hreflang.
+ */
+export const productIndexable = (p: Phone) => p.retailerCount >= indexFloor(p.region ?? "au") && live(p);
 
 /**
  * Which indexable product pages the sitemap lists. Australia lists only the strongest tier (three or more stores, in
@@ -24,7 +34,7 @@ export const productIndexable = (p: Phone) => p.retailerCount >= 2 && live(p);
  * everywhere: they are noindex (`productIndexable`).
  */
 export const SITEMAP_MIN_STORES = Math.max(2, Number(process.env.SITEMAP_MIN_STORES || 3));
-const sitemapFloor = (region: RegionId) => (region === "au" ? SITEMAP_MIN_STORES : 2);
+const sitemapFloor = (region: RegionId) => Math.max(indexFloor(region), region === "au" ? SITEMAP_MIN_STORES : 2);
 export const productInSitemap = (p: Phone) => p.retailerCount >= sitemapFloor(p.region ?? "au") && live(p);
 
 /**
