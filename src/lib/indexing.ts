@@ -85,3 +85,24 @@ export function productTitle(d: { name: string; place: string; price: string; st
     ].find((t) => t.length <= 70) ?? `${d.name} price in ${d.place}`
   );
 }
+
+/**
+ * The search snippet under a product title (Search Console 90 days to 2026-11-04, the owner's audit of 11-07: the
+ * top product pages drew 0.6–1.3% CTR, and their queries name stores — "iphone 16e good guys", "airpods 4 harvey
+ * norman", "dji mini 5 pro harvey norman"). It names the cheapest store and the next stores by price, then what the
+ * page has, longest form first, kept within 160 characters so Google shows all of it.
+ */
+export function productDescription(d: { name: string; price: string; store: string; others: string[]; stores: number; adjective: string; variants: string[] }): string {
+  const lead = `${d.name} from ${d.price}${d.store ? ` at ${d.store}` : ""}.`;
+  const list = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`);
+  const storeWord = d.stores === 1 ? "store" : "stores";
+  const sizes = d.variants.length > 1 ? ` in ${list(d.variants)}` : "";
+  const tails = [" Price history and whether today's price is a good one.", " With price history.", ""];
+  const candidates: string[] = [];
+  for (let k = Math.min(3, d.others.length); k >= 0; k--) {
+    const also = k ? ` Also at ${list(d.others.slice(0, k))}:` : "";
+    const compare = `${also} compare ${d.stores} ${d.adjective} ${storeWord}`.replace(/^ c/, " C");
+    for (const sz of sizes ? [sizes, ""] : [""]) for (const t of tails) candidates.push(`${lead}${compare}${sz}.${t}`);
+  }
+  return candidates.find((t) => t.length <= 160) ?? lead;
+}
