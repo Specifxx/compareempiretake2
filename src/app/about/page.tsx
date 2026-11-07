@@ -53,7 +53,8 @@ export default function AboutPage() {
       <Section title="Retailers we check in Australia" id="retailers">
         <p className="mb-3 text-sm text-ink-mute">
           The US and UK stores have their own lists: <Link prefetch={false} href="/us/stores" className="text-brand hover:underline">US stores</Link> ·{" "}
-          <Link prefetch={false} href="/uk/stores" className="text-brand hover:underline">UK stores</Link>.
+          <Link prefetch={false} href="/uk/stores" className="text-brand hover:underline">UK stores</Link>. Every store with its last check, and the big stores we don&apos;t cover yet and why:{" "}
+          <Link prefetch={false} href="/stores" className="text-brand hover:underline">Australian stores</Link>.
         </p>
         <div className="card divide-y divide-line">
           {retailers.map((r) => (

@@ -1637,3 +1637,23 @@ the owner accepted the remaining risk. The quick view shows the link only (the i
 else the tagged search), never Amazon's price: that stays on the product page under the 24-hour licence. Uninvited
 overlays (a phone ad dock, a corner card, an exit pop-up) still never carry Amazon, and an Amazon page is never framed
 (item (n)).
+
+## 2026-11-07 — RRP, sale vs everyday, per-store check times and a coverage page (Reddit feedback)
+
+Reddit (r/dataisbeautiful, r/Nendoroid) asked: why is a LEGO set $319 when its RRP is $279, why aren't Big W, Target and
+Kmart compared, and how do I know the comparison is complete? Owner: act on all of it.
+
+- **RRP** (`storeRrp`, `lib/price-check.ts`): the "was" price two or more stores state (to the dollar); one store's, or
+  two equal groups, give none. Computed when the catalogue loads, never stored, so it always matches today's rows.
+  Rows over it by more than $1/1% say "Above RRP"; the list opens with "RRP $X … N of M stores sell at or under it".
+  On 7 Nov ~400 AU and ~430 UK LEGO sets get one, and ~200 AU sets have a store above it (Kidstuff's $319.99 75455).
+- **Unusually high**: with no RRP, a row more than 35% over the median of three or more other stores. A flag only.
+- **Sale / Everyday price / Up from**: from that store's own last 90 days (at least 8 days over 4 weeks), against
+  its median. Under that, nothing is claimed.
+- **Checked <time>** on every store row, from `data/<region>/status.json` (each raw file's `scrapedAt`): a store whose
+  import failed shows its older time instead of passing as today's.
+- **`/stores` for Australia** (the US/UK/CA/SG pages already existed) and every region's page now shows in-stock
+  counts, each store's last check, and "Big stores we don't cover yet" with the plain reason
+  (`lib/uncovered-stores.ts`, kept in step with `docs/stores/big-stores.md`). Big W, Target, Myer, Kmart are still
+  walled or script-keyed; they come in through Commission Factory feeds (`FEED_URL_*`), which wait on the owner's
+  application. A name leaves the list by itself once that store has prices.

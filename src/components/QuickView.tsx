@@ -196,7 +196,7 @@ function Prices({ phone, href, vid, setVid }: { phone: Phone; href: string; vid:
           {rows.map(({ best: o, colours }, i) => (
             <Fragment key={o.retailer}>
               <li>
-                <OutrightRow o={o} colours={colours} rank={i} best={best} product={href} cart={{ title: phone.name, detail: phone.variants.length > 1 || variant.storageGb ? variant.label : null, image: phone.image ?? phone.images[0] ?? null }} />
+                <OutrightRow o={o} colours={colours} rank={i} best={best} product={href} rrp={variant.rrp} cart={{ title: phone.name, detail: phone.variants.length > 1 || variant.storageGb ? variant.label : null, image: phone.image ?? phone.images[0] ?? null }} />
               </li>
               {i === 0 && <li><PinnedMarketplaces phone={phone} variantQuery={mq} product={href} cheapest={best?.price} compact part="rows" /></li>}
             </Fragment>

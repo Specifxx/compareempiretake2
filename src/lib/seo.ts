@@ -33,7 +33,7 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
     {
       id: "pages",
       entries: () =>
-        [HOME_PATH.au, "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year", "/embed", "/price-report", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/creators", "/network", "/contact", "/how-we-pick-stores", "/list-your-store", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), ...(priced.has(p) ? { lastmod } : {}), priority: p === HOME_PATH.au ? 1 : 0.6 })),
+        [HOME_PATH.au, "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year", "/embed", "/price-report", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/creators", "/network", "/contact", "/how-we-pick-stores", "/stores", "/list-your-store", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), ...(priced.has(p) ? { lastmod } : {}), priority: p === HOME_PATH.au ? 1 : 0.6 })),
     },
     {
       id: "categories",

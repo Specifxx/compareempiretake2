@@ -5,7 +5,7 @@ import path from "node:path";
 import { dataVersion } from "./browse";
 import { CATEGORIES } from "./categories";
 import { storageLabel } from "./normalize";
-import { priceCheck, wasCheck, type PriceCheck, type WasCheck } from "./price-check";
+import { priceCheck, storePriceKind, storeRrp, wasCheck, type PriceCheck, type StorePrice, type WasCheck } from "./price-check";
 import { RETAILERS } from "./retailers";
 import { ebayAffiliate } from "./ebay";
 import { ebayTitleMatches } from "./ebay-match";
@@ -38,6 +38,8 @@ function data(region: RegionId): RegionData {
       // Display only: the slug (the URL) is never touched (lib/product-names.ts).
       p.name = tidyName(p.name);
       p.model = tidyName(p.model);
+      // Read from today's offers, not stored: it can never disagree with the rows it is shown beside.
+      for (const v of p.variants) v.rrp = storeRrp(v.offers);
     }
     loaded.set(c.id as CategoryId, { catalog, series: read(path.join(dir, "series.json"), {}), stores: read(path.join(dir, "store-series.json"), {}) });
   }
@@ -139,7 +141,30 @@ export const categoryHref = (category: string, region: RegionId = "au") => withR
 /** Today's date in the region, from the last import (not the build clock). */
 export const catalogDay = (region: RegionId = "au") => new Date(data(region).updated).toLocaleDateString("en-CA", { timeZone: REGIONS[region].timeZone });
 
-export function checkVariant(p: Phone, v: Variant): { check: PriceCheck; was: Partial<Record<RetailerId, WasCheck>> } {
+/**
+ * When each store's prices were last read for a category in a region (data/<region>/status.json, written by
+ * build-catalog from each raw file's scrapedAt). A store missing from it (feeds, APIs) has no time to show.
+ */
+const checkedCache = new Map<string, Partial<Record<RetailerId, string>>>();
+export function storeCheckedAt(category: CategoryId, region: RegionId = "au"): Partial<Record<RetailerId, string>> {
+  const key = `${region}/${category}`;
+  let m = checkedCache.get(key);
+  if (m) return m;
+  const all = read<{ scrapes?: { category: string; retailer: string; scrapedAt: string }[] }>(path.join(process.cwd(), dataPath(region), "status.json"), {}).scrapes ?? [];
+  const byCat = new Map<string, Partial<Record<RetailerId, string>>>();
+  for (const s of all) {
+    const c = byCat.get(s.category) ?? {};
+    const r = s.retailer as RetailerId;
+    if (!c[r] || s.scrapedAt > c[r]!) c[r] = s.scrapedAt;
+    byCat.set(s.category, c);
+  }
+  for (const [c, v] of byCat) checkedCache.set(`${region}/${c}`, v);
+  m = checkedCache.get(key) ?? {};
+  checkedCache.set(key, m);
+  return m;
+}
+
+export function checkVariant(p: Phone, v: Variant): { check: PriceCheck; was: Partial<Record<RetailerId, WasCheck>>; kinds: Partial<Record<RetailerId, StorePrice>> } {
   const outright = v.offers.filter((o) => o.kind !== "plan");
   const cheapest = (outright.find((o) => o.inStock && o.price === v.bestPrice) ?? outright[0])?.retailer;
   const stores = getStoreSeries(p)[v.id] ?? {};
@@ -149,7 +174,15 @@ export function checkVariant(p: Phone, v: Variant): { check: PriceCheck; was: Pa
     const w = wasCheck(o, stores[o.retailer], RETAILERS[o.retailer].name, catalogDay(regionOfProduct(p)));
     if (w && (!was[o.retailer] || o.price < (outright.find((x) => x.retailer === o.retailer && x.wasPrice === was[o.retailer]!.was)?.price ?? Infinity))) was[o.retailer] = w;
   }
-  return { check, was };
+  // Sale or everyday, per store, for that store's cheapest listing of the variant (the row the page shows).
+  const kinds: Partial<Record<RetailerId, StorePrice>> = {};
+  const cheapestAt = new Map<RetailerId, number>();
+  for (const o of outright) cheapestAt.set(o.retailer, Math.min(cheapestAt.get(o.retailer) ?? Infinity, o.price));
+  for (const [r, price] of cheapestAt) {
+    const k = storePriceKind(price, stores[r], catalogDay(regionOfProduct(p)));
+    if (k) kinds[r] = k;
+  }
+  return { check, was, kinds };
 }
 
 /** What the browser needs to list, filter and search phones. */

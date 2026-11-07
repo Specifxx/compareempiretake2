@@ -120,3 +120,68 @@ export function wasCheck(o: Offer, history: Point[] | undefined, storeName: stri
   }
   return { retailer: o.retailer, was: o.wasPrice, status: "unknown", text: `Too new to check: we've only been recording ${storeName}'s price since ${pts[0] ? shortDate(pts[0][0], today) : "today"}.` };
 }
+
+/**
+ * The recommended retail price, as the stores themselves state it (Reddit feedback, 2026-11-07: "the RRP for that
+ * kit is only $279, not sure how it could be selling for $319 anywhere"). A store's "was" price counts as the RRP
+ * only when at least two different stores state the same one (to the nearest whole unit); a lone "was" price, or
+ * two groups as big as each other, give none. Never a guess: no RRP is better than a wrong one.
+ */
+export interface Rrp {
+  price: number;
+  /** How many stores state it. */
+  stores: number;
+}
+export function storeRrp(offers: Offer[]): Rrp | undefined {
+  const groups = new Map<number, { stores: Set<string>; prices: number[] }>();
+  for (const o of offers) {
+    if (o.kind === "plan" || !o.wasPrice || o.wasPrice <= 0) continue;
+    const k = Math.round(o.wasPrice);
+    const g = groups.get(k) ?? { stores: new Set(), prices: [] };
+    g.stores.add(o.retailer);
+    g.prices.push(o.wasPrice);
+    groups.set(k, g);
+  }
+  const ranked = [...groups.values()].filter((g) => g.stores.size >= 2).sort((a, b) => b.stores.size - a.stores.size);
+  if (!ranked.length || (ranked[1] && ranked[1].stores.size === ranked[0].stores.size)) return undefined;
+  const top = ranked[0];
+  // The exact figure most of them print (279.99, not 279.995).
+  const counts = new Map<number, number>();
+  for (const p of top.prices) counts.set(p, (counts.get(p) ?? 0) + 1);
+  const price = [...counts.entries()].sort((a, b) => b[1] - a[1] || b[0] - a[0])[0][0];
+  // A "was" price under every price on the page is not an RRP anyone charges against.
+  const outright = offers.filter((o) => o.kind !== "plan");
+  if (outright.length && price < Math.min(...outright.map((o) => o.price)) * 0.98) return undefined;
+  return { price, stores: top.stores.size };
+}
+
+/** Above the RRP by more than rounding: a dollar, or 1%, whichever is more. */
+export const aboveRrp = (price: number, rrp: Rrp | undefined) => !!rrp && price > rrp.price + Math.max(1, rrp.price * 0.01);
+
+/**
+ * Sale or everyday price, from that store's own history (Reddit feedback, 2026-11-07: "distinguish everyday prices
+ * from temporary sale prices"). Needs at least four weeks and eight days of that store's prices before today;
+ * "usual" is the median of its last 90 days. Under that, nothing is claimed.
+ */
+export interface StorePrice {
+  kind: "sale" | "everyday" | "up";
+  usual: number;
+}
+export function storePriceKind(price: number, history: Point[] | undefined, today: string): StorePrice | undefined {
+  const past = (history ?? []).filter(([d]) => d < today && Date.parse(today) - Date.parse(d) <= 90 * DAY);
+  if (past.length < 8 || span(past) < 28) return undefined;
+  const usual = median(past.map(([, p]) => p));
+  if (price <= usual * 0.95) return { kind: "sale", usual };
+  if (price >= usual * 1.05) return { kind: "up", usual };
+  if (Math.abs(price - usual) <= usual * 0.02) return { kind: "everyday", usual };
+  return undefined;
+}
+
+/**
+ * A price far above what the other stores charge, for a product with no RRP to check against: at least four
+ * stores, and more than 35% over the median of the others. A flag to look twice, never a price dropped.
+ */
+export function unusuallyHigh(price: number, others: number[]): boolean {
+  if (others.length < 3) return false;
+  return price > median(others) * 1.35;
+}
