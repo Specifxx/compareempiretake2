@@ -1757,3 +1757,10 @@ Black Friday is 27 November 2026 and Cyber Monday 30 November. Three additions, 
   `src/lib/ebay-deletion.ts`: the request's host when it is compareempire.com or www, else the apex), so it answers for
   either URL and no env value can make the hash disagree with the portal. `EBAY_DELETION_ENDPOINT` is no longer read.
 - Deployed urgently at the owner's word (2026-11-07), so the portal change can run straight away.
+
+## Black Friday indexing push (2026-11-07)
+
+Owner: get the Black Friday pages indexed and ranking. The sale pages were in the sitemap with a real lastmod, but the daily
+IndexNow list (`scripts/indexnow.ts`) named only the hubs and changed products. It now names /black-friday, /cyber-monday and
+the other seasonal pages (in every region) and the Black Friday guide: about 30 URLs, all CDN-cached pages, well inside the
+2026-11-06 cost cut. The guide now links Cyber Monday too. No manual indexing requests for this site (2026-11-05 rule).
