@@ -6,11 +6,11 @@ import { REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { DealCard } from "./DealCard";
 import { FamilyCluster } from "./FamilyCluster";
 import { NewsletterSignup } from "./NewsletterSignup";
-import { blackFriday as bfDate, cyberMonday, longDate, seasonYear } from "@/lib/black-friday";
+import { blackFriday as bfDate, cyberMonday, holidayFaq, longDate, seasonYear } from "@/lib/black-friday";
 import { saleHeading, saleIntro, saleYear, type SaleSlug } from "@/lib/sale-seasons";
 
 /** The deals list for every category, or one. */
-export function DealsView({ category, region = "au", blackFriday = false, sale }: { category?: CategoryId; region?: RegionId; blackFriday?: boolean; sale?: SaleSlug }) {
+export function DealsView({ category, region = "au", blackFriday = false, cyberMonday: cmPage = false, sale }: { category?: CategoryId; region?: RegionId; blackFriday?: boolean; cyberMonday?: boolean; sale?: SaleSlug }) {
   const deals = getDeals(category ? 60 : 90, category, region);
   const { updatedAt } = getCatalog(undefined, region);
   const R = REGIONS[region];
@@ -21,8 +21,8 @@ export function DealsView({ category, region = "au", blackFriday = false, sale }
   return (
     <div className="container-x pt-10">
       <div className="max-w-2xl">
-        <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{sale ? `${saleHeading(sale, saleYear(sale, updatedAt.slice(0, 10))).replace(/ deals /, " tech deals ")}` : blackFriday ? `Black Friday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : c ? `${c.name} deals` : "Today's deals"}</h1>
-        {sale ? <SaleDates slug={sale} today={updatedAt.slice(0, 10)} place={/^United /.test(R.name) ? `the ${R.name}` : R.name} /> : blackFriday && <BlackFridayDates today={updatedAt.slice(0, 10)} />}
+        <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{sale ? `${saleHeading(sale, saleYear(sale, updatedAt.slice(0, 10))).replace(/ deals /, " tech deals ")}` : blackFriday ? `Black Friday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : cmPage ? `Cyber Monday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : c ? `${c.name} deals` : "Today's deals"}</h1>
+        {sale ? <SaleDates slug={sale} today={updatedAt.slice(0, 10)} place={/^United /.test(R.name) ? `the ${R.name}` : R.name} /> : blackFriday ? <BlackFridayDates today={updatedAt.slice(0, 10)} region={region} /> : cmPage && <CyberMondayDates today={updatedAt.slice(0, 10)} region={region} />}
         <p className="mt-2 text-ink-mute">
           Every deal here is worked out from real prices we checked on{" "}
           {new Date(updatedAt).toLocaleDateString(R.locale, { timeZone: R.timeZone, weekday: "long", day: "numeric", month: "long" })} — no sponsored spots, no
@@ -59,6 +59,7 @@ export function DealsView({ category, region = "au", blackFriday = false, sale }
         )}
       </section>
       {/* One block per page (DECISIONS.md "Sites that grow each other"): the tech sister's camera deals, on the all-category list. */}
+      {(blackFriday || cmPage) && <HolidayFaq event={blackFriday ? "black-friday" : "cyber-monday"} today={updatedAt.slice(0, 10)} place={/^United /.test(R.name) ? `the ${R.name}` : R.name} />}
       {!category && <FamilyCluster region={region} />}
       <div className="mt-12"><NewsletterSignup /></div>
     </div>
@@ -74,14 +75,56 @@ function Legend({ color, label }: { color: string; label: string }) {
 }
 
 /** The Black Friday page's dates line (DECISIONS.md, "Black Friday page", 2026-11-02). */
-function BlackFridayDates({ today }: { today: string }) {
+function BlackFridayDates({ today, region }: { today: string; region: RegionId }) {
   const y = seasonYear(today);
   const bf = bfDate(y);
   return (
-    <p className="mt-2 text-ink-mute">
-      Black Friday is {longDate(bf)} and Cyber Monday is {longDate(cyberMonday(y))} {y}.{today < bf ? " Many stores start their sales earlier." : ""} This page
-      updates with every price check through the sales, so bookmark it. We only see what a store asks when we read its prices: check the price on its page before you buy.
+    <>
+      <p className="mt-2 text-ink-mute">
+        Black Friday is {longDate(bf)} and Cyber Monday is {longDate(cyberMonday(y))} {y}.{today < bf ? " Many stores start their sales earlier." : ""} This page
+        updates with every price check through the sales, so bookmark it. We only see what a store asks when we read its prices: check the price on its page before you buy.
+      </p>
+      <HolidayLinks other={{ href: withRegion("/cyber-monday", region), label: "Cyber Monday deals" }} />
+    </>
+  );
+}
+
+/** The Cyber Monday page's dates line (DECISIONS.md, "Black Friday strip and Cyber Monday page", 2026-11-07). */
+function CyberMondayDates({ today, region }: { today: string; region: RegionId }) {
+  const y = seasonYear(today);
+  const cm = cyberMonday(y);
+  return (
+    <>
+      <p className="mt-2 text-ink-mute">
+        Cyber Monday is {longDate(cm)} {y}, the Monday after Black Friday ({longDate(bfDate(y))}).{today < cm ? " Many stores start their sales earlier." : ""} This page
+        updates with every price check through the sales, so bookmark it. We only see what a store asks when we read its prices: check the price on its page before you buy.
+      </p>
+      <HolidayLinks other={{ href: withRegion("/black-friday", region), label: "Black Friday deals" }} />
+    </>
+  );
+}
+
+function HolidayLinks({ other }: { other: { href: string; label: string } }) {
+  return (
+    <p className="mt-2 text-sm">
+      <Link prefetch={false} href={other.href} className="underline">{other.label}</Link> ·{" "}
+      <Link prefetch={false} href="/guides/black-friday-2026-real-tech-deals" className="underline">How to tell a real deal from a fake one</Link>
     </p>
+  );
+}
+
+function HolidayFaq({ event, today, place }: { event: "black-friday" | "cyber-monday"; today: string; place: string }) {
+  const y = seasonYear(today);
+  return (
+    <section className="mt-12 max-w-3xl">
+      <h2 className="font-display text-xl font-bold">{event === "black-friday" ? "Black Friday" : "Cyber Monday"} {y}: questions</h2>
+      {holidayFaq(event, y, place).map((f) => (
+        <div key={f.q} className="mt-3 text-sm">
+          <h3 className="font-semibold">{f.q}</h3>
+          <p className="text-ink-mute">{f.a}</p>
+        </div>
+      ))}
+    </section>
   );
 }
 

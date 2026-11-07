@@ -27,10 +27,11 @@ export interface NavDepartment {
   categories: { name: string; href: string; emoji: string; count: number; featured: boolean; brands: { name: string; href: string }[] }[];
 }
 
-export function Header({ nav, regions }: { nav: Partial<Record<RegionId, NavDepartment[]>>; regions: RegionId[] }) {
+/** `sale`: Black Friday or Cyber Monday while the strip shows (lib/black-friday.ts saleStrip, decided by the layout): the nav's first link. */
+export function Header({ nav, regions, sale = null }: { nav: Partial<Record<RegionId, NavDepartment[]>>; regions: RegionId[]; sale?: { path: string; name: string } | null }) {
   const region = useRegion();
   const departments = nav[region] ?? nav.au ?? [];
-  const NAV = navFor(region);
+  const NAV = [...(sale ? [{ href: withRegion(sale.path, region), label: sale.name }] : []), ...navFor(region)];
   const [open, setOpen] = useState(false);
   const [menu, setMenu] = useState(false);
   const [mega, setMega] = useState(false);

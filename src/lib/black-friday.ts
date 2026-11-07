@@ -34,7 +34,46 @@ export function addDays(iso: string, n: number): string {
 }
 
 /** "Friday 27 November" */
-/** "Friday 27 November" */
 export function longDate(iso: string): string {
   return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+}
+
+/**
+ * The one-line strip under the header and the nav's first link (DECISIONS.md, "Black Friday strip and Cyber Monday page",
+ * 2026-11-07): Black Friday from 1 November to the Saturday after it, then Cyber Monday to the day after Cyber Monday, then
+ * nothing. A link, never a pop-up, a countdown or "ends soon".
+ */
+export function saleStrip(today: string): { path: "/black-friday" | "/cyber-monday"; name: string } | null {
+  const y = Number(today.slice(0, 4));
+  if (today < `${y}-11-01`) return null;
+  if (today <= addDays(blackFriday(y), 1)) return { path: "/black-friday", name: "Black Friday" };
+  if (today <= addDays(cyberMonday(y), 1)) return { path: "/cyber-monday", name: "Cyber Monday" };
+  return null;
+}
+
+/** The questions both pages answer in visible text. `place` is the region in a sentence ("the UK"). */
+export function holidayFaq(event: "black-friday" | "cyber-monday", year: number, place: string): { q: string; a: string }[] {
+  const bf = longDate(blackFriday(year));
+  const cm = longDate(cyberMonday(year));
+  const name = event === "black-friday" ? "Black Friday" : "Cyber Monday";
+  return [
+    {
+      q: `When is ${name} ${year}?`,
+      a: event === "black-friday"
+        ? `Black Friday ${year} is ${bf}, the day after US Thanksgiving. Cyber Monday follows on ${cm}. Many stores in ${place} start their sales in early November and run them through the weekend.`
+        : `Cyber Monday ${year} is ${cm}, the Monday after Black Friday (${bf}). Online stores often keep their Black Friday prices through the weekend and end them on Cyber Monday night.`,
+    },
+    {
+      q: `How do I know a ${name} deal is real?`,
+      a: "Compare today's price with what the same product cost a week ago and what other stores charge for it now. Every deal on this page is one of those two, from prices we checked ourselves, so a made-up \"was\" price never counts.",
+    },
+    {
+      q: "Are these prices before or after shipping?",
+      a: "Item prices as each store lists them. Delivery depends on the store and where you are, so check the price on the store's page before you buy.",
+    },
+    {
+      q: "How often does this page update?",
+      a: "With every price check, through the sales and after them. The URL stays the same every year, so bookmark it.",
+    },
+  ];
 }
