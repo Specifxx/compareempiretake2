@@ -32,6 +32,10 @@ const load = async (params: ProductParams, region: RegionId) => {
   // (lib/indexing.ts); any other unknown slug is a 404 as before.
   const clean = cleanedSlug(slug);
   if (clean && getProduct(category as CategoryId, clean, region)) permanentRedirect(withRegion(`/${category}/${clean}`, region));
+  // Any other product the region no longer lists (the focus cull, lib/focus.ts, or a product the stores stopped
+  // selling) moves to its category page for good, so its links and search history land on the nearest page. Only
+  // when the category has products here: with none, the data files were not read (the 500 in ProductView below).
+  if (getProducts(category as CategoryId, region).length) permanentRedirect(withRegion(`/${category}`, region));
   return undefined;
 };
 /** The product page's copy of the product, with its Amazon links and live prices (every region with a tag). */

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 import { GuideBody } from "@/components/GuideBody";
 import { getVsPairs } from "@/lib/catalog";
 import { storageLabel } from "@/lib/normalize";
 import type { Phone } from "@/lib/types";
 
-export const dynamicParams = false;
+// A pair the focus cull (lib/focus.ts) broke up 301s to the compare tool; only that redirect renders on request.
+export const dynamicParams = true;
 export const generateStaticParams = () => getVsPairs().map((p) => ({ pair: p.slug }));
 const find = (slug: string) => getVsPairs().find((p) => p.slug === slug);
 
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ pair: str
 
 export default async function VsPage({ params }: { params: Promise<{ pair: string }> }) {
   const p = find((await params).pair);
-  if (!p) notFound();
+  if (!p) permanentRedirect("/compare");
   const { a, b } = p;
   const [cheap, dear] = a.bestPrice <= b.bestPrice ? [a, b] : [b, a];
   const gap = dear.bestPrice - cheap.bestPrice;

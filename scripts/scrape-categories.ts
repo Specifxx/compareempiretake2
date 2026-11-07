@@ -13,6 +13,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import type { CategoryId, RawOffer } from "../src/lib/types";
 import { pool } from "./lib/http";
+import { isRetired } from "../src/lib/focus";
 
 type Scrapers = Partial<Record<CategoryId, () => Promise<RawOffer[]>>>;
 
@@ -38,6 +39,8 @@ async function main() {
     const mod = (await import(pathToFileURL(path.join(dir, f)).href)) as { scrapers?: Scrapers };
     for (const [cat, fn] of Object.entries(mod.scrapers ?? {}) as [CategoryId, () => Promise<RawOffer[]>][]) {
       if (onlyCat && cat !== onlyCat) continue;
+      // Retired categories (lib/focus.ts, owner 2026-11-07) are no longer read.
+      if (isRetired(cat)) continue;
       const t = Date.now();
       try {
         const offers = await fn();

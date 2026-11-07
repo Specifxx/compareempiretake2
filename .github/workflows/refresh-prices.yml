@@ -127,6 +127,14 @@ jobs:
           npx tsx scripts/build-catalog.ts --region uk
           npx tsx scripts/build-catalog.ts --region ca
           npx tsx scripts/build-catalog.ts --region sg
+      # The focus cull (src/lib/focus.ts, DECISIONS.md "The focus cull"): only current, wanted products reach the site,
+      # eBay and Amazon. Search Console's page demand keeps any page that earns search traffic.
+      - name: Focus the catalogues
+        env:
+          FOCUS_DEMAND_FILE: ${{ runner.temp }}/gsc-pages.json
+        run: |
+          git fetch --depth=1 origin demand && git show FETCH_HEAD:gsc-pages.json > "$FOCUS_DEMAND_FILE" || echo "No demand branch yet: using data/focus/demand.json"
+          npx tsx scripts/focus-catalog.ts
       - name: eBay prices (Browse API, up to 4,950 calls)
         continue-on-error: true
         env:

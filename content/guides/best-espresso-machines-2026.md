@@ -32,7 +32,7 @@ De'Longhi, Philips, Jura, Miele, Siemens and Breville's Oracle line grind, tamp 
 
 ## How to choose
 
-- **Budget for the grinder.** On a manual machine, the grinder matters as much as the machine. A machine with a built-in grinder is the easy start; a separate grinder is the better upgrade later. See [the best coffee grinders](/guides/best-coffee-grinders-2026).
+- **Budget for the grinder.** On a manual machine, the grinder matters as much as the machine. A machine with a built-in grinder is the easy start; a separate grinder is the better upgrade later.
 - **Single boiler, thermoblock or dual boiler.** A thermoblock heats fast and costs less; a heat-exchanger or dual boiler lets you steam milk while pulling a shot, which matters if you make several milk drinks in a row.
 - **Pressurised baskets** forgive pre-ground coffee; unpressurised ones reward fresh beans and a good grinder.
 - **Check the water tank and drip tray** for size if you make coffee for more than two.

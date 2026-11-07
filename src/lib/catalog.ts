@@ -9,6 +9,7 @@ import { priceCheck, wasCheck, type PriceCheck, type WasCheck } from "./price-ch
 import { RETAILERS } from "./retailers";
 import { ebayAffiliate } from "./ebay";
 import { ebayTitleMatches } from "./ebay-match";
+import { inFocus } from "./focus";
 import { foldBrands, tidyName } from "./product-names";
 import { dataPath, money, REGION_IDS, REGIONS, withRegion, type RegionId } from "./region";
 import type { Catalog, CategoryId, Offer, Phone, Retailer, RetailerId, StoreSeries, Variant } from "./types";
@@ -24,6 +25,10 @@ interface Loaded { catalog: Catalog; series: Series; stores: StoreSeries }
 interface RegionData { loaded: Map<CategoryId, Loaded>; all: Phone[]; bySlug: Map<string, Phone>; updated: string; brandMoves: Map<string, string> }
 const read = <T,>(file: string, fallback: T): T => (existsSync(file) ? (JSON.parse(readFileSync(file, "utf8")) as T) : fallback);
 const regions = new Map<RegionId, RegionData>();
+// The focus cull (lib/focus.ts): scripts/focus-catalog.ts already wrote only these products, so this is a guard for a
+// day the script did not run, never a second rule.
+let demand: Set<string> | undefined;
+const focusDemand = () => (demand ??= new Set(read<{ paths: string[] }>(path.join(process.cwd(), "data/focus/demand.json"), { paths: [] }).paths));
 function data(region: RegionId): RegionData {
   let d = regions.get(region);
   if (d) return d;
@@ -32,6 +37,7 @@ function data(region: RegionId): RegionData {
     const dir = path.join(process.cwd(), dataPath(region, c.id));
     if (!c.live || !existsSync(path.join(dir, "catalog.json"))) continue;
     const catalog = read<Catalog>(path.join(dir, "catalog.json"), { category: c.id as CategoryId, updatedAt: "", retailers: [], phones: [] });
+    catalog.phones = catalog.phones.filter((p) => inFocus(p, c.id as CategoryId, region, focusDemand()));
     for (const p of catalog.phones) {
       p.category ??= c.id as CategoryId;
       p.region = region;

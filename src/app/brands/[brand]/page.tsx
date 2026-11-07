@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound, permanentRedirect } from "next/navigation";
+import { permanentRedirect } from "next/navigation";
 import { PhoneBrowser } from "@/components/PhoneBrowser";
 import { gridProps, gridSrc } from "@/lib/browse";
 import { getBrands, getProducts, getSummaries, gridVersion, movedBrandSlug, movedBrandSlugs } from "@/lib/catalog";
@@ -7,7 +7,9 @@ import { brandIndexable } from "@/lib/indexing";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
 
-export const dynamicParams = false;
+// A brand the focus cull (lib/focus.ts) or the stores left with no products 301s to the brand list; only that
+// redirect renders on request (kept until the next deploy), every live brand is prerendered.
+export const dynamicParams = true;
 export function generateStaticParams() {
   // Plus each spelling that folded into another (lib/product-names.ts foldBrands): its old URL redirects.
   return [...getBrands().map((b) => b.slug), ...movedBrandSlugs()].map((brand) => ({ brand }));
@@ -31,8 +33,7 @@ export default async function BrandPage({ params }: { params: Promise<{ brand: s
   const brand = getBrands().find((b) => b.slug === slug);
   if (!brand) {
     const to = movedBrandSlug(slug);
-    if (to) permanentRedirect(`/brands/${to}`);
-    notFound();
+    permanentRedirect(to ? `/brands/${to}` : "/brands");
   }
   const phones = getSummaries().filter((p) => p.brand === brand.brand);
   return (

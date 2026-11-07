@@ -159,7 +159,7 @@ test("the static grid lists cover every grid with more than a page, and hold the
     const brand = await brands.generateStaticParams();
     const fs = await import("node:fs");
     const counts = {};
-    for (const region of ["", "us", "uk"]) for (const d of fs.readdirSync(["data", region].filter(Boolean).join("/"))) {
+    for (const region of ["", "us", "uk", "ca", "sg"]) for (const d of fs.readdirSync(["data", region].filter(Boolean).join("/"))) {
       const f = ["data", region, d, "catalog.json"].filter(Boolean).join("/");
       if (fs.existsSync(f)) counts[(region || "au") + "/" + d] = JSON.parse(fs.readFileSync(f, "utf8")).phones.length;
     }

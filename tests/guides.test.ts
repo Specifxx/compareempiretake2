@@ -77,7 +77,8 @@ test("topProducts filters by spec (contains, or = for exact) and keeps one row p
 });
 
 test("posts are written for every region: no region in a slug, no typed amounts (2026-11-06)", () => {
-  assert.ok(guides.length >= 10, `only ${guides.length} guides`);
+  // Nine since the focus cull retired the grinder and BBQ posts (owner, 2026-11-07).
+  assert.ok(guides.length >= 9, `only ${guides.length} guides`);
   for (const g of guides) {
     assert.doesNotMatch(g.slug, /australia|-us$|-uk$|canada|singapore/, `${g.slug}: a post serves every region, so its slug names none`);
     assert.doesNotMatch(g.meta.title, /Australia/, `${g.slug}: title names Australia`);

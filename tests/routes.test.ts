@@ -34,11 +34,18 @@ test("product pages render on request: force-dynamic, never ISR or prerendered",
   }
 });
 
+const REDIRECT_ON_DEMAND = ["src/app/brands/[brand]/page.tsx", "src/app/compare/[pair]/page.tsx"];
 test("every other dynamic segment stays prerendered with dynamicParams = false", () => {
   const routes = walk(APP).filter((f) => /\/(page\.tsx|route\.tsx?)$/.test(f) && /\[[^\]]+\]/.test(rel(f)));
   assert.ok(routes.length > 10);
   for (const f of routes) {
     if (PRODUCT_PAGES.includes(rel(f))) continue;
+    // A brand or pair the focus cull removed 301s (owner, 2026-11-07): only that redirect renders on request.
+    if (REDIRECT_ON_DEMAND.includes(rel(f))) {
+      assert.match(readFileSync(f, "utf8"), /dynamicParams = true[\s\S]*permanentRedirect\(/, rel(f));
+      assert.doesNotMatch(readFileSync(f, "utf8"), /notFound\(/, `${rel(f)}: an unknown slug redirects, never a 404 page cached until the next deploy`);
+      continue;
+    }
     assert.match(readFileSync(f, "utf8"), /dynamicParams = false/, `${rel(f)} would quietly become on-demand ISR`);
   }
 });
@@ -88,7 +95,7 @@ test("routes rendered on request trace the catalogues, never raw, history or arc
   const runtime = [...PRODUCT_PAGES.map((f) => f.replace(/^src\//, "").replace(/\.tsx$/, "")), "app/api/products/route", "app/admin/page", "app/embed/price/route"];
   for (const e of runtime) assert.ok(entries.includes(e), `${e} exists`);
   // family-cluster.json: CamCompare's camera pages, for the product page's hand-off (lib/family.ts).
-  const DATA = [...["catalog.json", "series.json", "store-series.json", "ebay.json"].map((f) => `./data/**/${f}`), "./data/family/family-cluster.json", "./data/amazon/*.json", "./data/amazon-live/*.json"];
+  const DATA = [...["catalog.json", "series.json", "store-series.json", "ebay.json"].map((f) => `./data/**/${f}`), "./data/family/family-cluster.json", "./data/focus/demand.json", "./data/amazon/*.json", "./data/amazon-live/*.json"];
   const EXCLUDED = ["./data/**/archive/**", "./data/**/history/**", "./data/**/raw/**"];
   assert.ok(entries.length > 20, `found ${entries.length} app entries`);
   for (const e of entries) {
