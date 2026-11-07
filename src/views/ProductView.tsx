@@ -9,7 +9,7 @@ import { PriceChart } from "@/components/PriceChart";
 import { checkVariant, getProduct, storeCheckedAt, getProducts, getSeries, getVsPairs, regionUpdatedAt, similarPhones, summarise, productHref, categoryHref } from "@/lib/catalog";
 import { HOME_PATH, money, withXDefault, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById } from "@/lib/categories";
-import type { CategoryId, Phone } from "@/lib/types";
+import type { CategoryId, Phone, RetailerId } from "@/lib/types";
 import { slugify, storageLabel } from "@/lib/normalize";
 import { RETAILERS } from "@/lib/retailers";
 import { SITE } from "@/lib/site";
@@ -19,7 +19,7 @@ import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { camCompareFor } from "@/lib/family";
 import { amazonFor } from "@/lib/amazon-live";
-import { cleanedSlug, productIndexable, productTitle } from "@/lib/indexing";
+import { cleanedSlug, productDescription, productIndexable, productTitle } from "@/lib/indexing";
 import { guidesForCategory } from "@/lib/guides";
 import { categoryPosition, priceMove } from "@/lib/product-facts";
 
@@ -72,7 +72,11 @@ export async function productMetadata(params: ProductParams, region: RegionId): 
   const cheapest = p.variants.flatMap((v) => v.offers).filter((o) => o.inStock && o.price === p.bestPrice)[0];
   const store = cheapest ? RETAILERS[cheapest.retailer].name : "";
   const title = productTitle({ name: nameFor(p, region), place: ({ au: "Australia", us: "the US", uk: "the UK", ca: "Canada", sg: "Singapore" } as const)[region], price: $(p.bestPrice), store, stores: p.retailerCount });
-  const description = `${nameFor(p, region)} from ${$(p.bestPrice)}${store ? ` at ${store}` : ""}. Compare ${p.offerCount} live prices across ${p.retailerCount} ${R.adjective} ${p.retailerCount === 1 ? "store" : "stores"}${p.variants.length > 1 ? ` in ${p.variants.map((v) => v.label).join(", ")}` : ""}, with price history and whether today's price is a good one.`;
+  // The next cheapest stores after the headline one, by their lowest in-stock price (lib/indexing.ts productDescription).
+  const byStore = new Map<RetailerId, number>();
+  for (const o of p.variants.flatMap((v) => v.offers)) if (o.inStock && o.kind !== "plan") byStore.set(o.retailer, Math.min(byStore.get(o.retailer) ?? Infinity, o.price));
+  const others = [...byStore].filter(([r]) => r !== cheapest?.retailer).sort((a, b) => a[1] - b[1]).map(([r]) => RETAILERS[r]?.name).filter((n): n is string => !!n && n !== store);
+  const description = productDescription({ name: nameFor(p, region), price: $(p.bestPrice), store, others: [...new Set(others)], stores: p.retailerCount, adjective: R.adjective, variants: p.variants.map((v) => v.label).filter(Boolean) });
   return {
     title,
     description,
