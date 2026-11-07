@@ -13,7 +13,32 @@ const HAS_UA = [{ type: "header", key: "user-agent", value: ".+" }];
 const NOT_RSC = [{ type: "header", key: "rsc" }];
 // What the routes that render on request (product pages, /api/products and /admin, through the root layout) read at
 // runtime (src/lib/catalog.ts). Never the scrape inputs, history or archive.
-const RUNTIME_DATA = ["./data/**/catalog.json", "./data/**/series.json", "./data/**/store-series.json", "./data/**/ebay.json", "./data/family/family-cluster.json", "./data/amazon/*.json", "./data/amazon-live/*.json"];
+const RUNTIME_DATA = ["./data/**/catalog.json", "./data/**/series.json", "./data/**/store-series.json", "./data/**/ebay.json", "./data/family/family-cluster.json", "./data/focus/demand.json", "./data/amazon/*.json", "./data/amazon-live/*.json"];
+
+// The focus cull (owner, 2026-11-07; src/lib/focus.ts RETIRED_CATEGORIES, which tests/focus.test.ts pins this to): a
+// retired category's pages, products, browse and deals pages 301 to the nearest kept category, else the region's home.
+const RETIRED = {
+  "coffee-gear": "coffee-machines",
+  "small-kitchen": "coffee-machines",
+  "air-fryers": null,
+  "hair-care": null,
+  bbqs: null,
+  fridges: null,
+  "washing-machines": null,
+  dishwashers: null,
+  printers: "laptops",
+  ram: "graphics-cards",
+  ssds: "graphics-cards",
+  motherboards: "graphics-cards",
+};
+const REGION_PREFIXES = ["", "/us", "/uk", "/ca", "/sg"];
+const retiredRedirects = () =>
+  REGION_PREFIXES.flatMap((r) =>
+    Object.entries(RETIRED).flatMap(([cat, to]) => {
+      const dest = to ? `${r}/${to}` : r === "" ? "/au" : r === "/us" ? "/" : r;
+      return [`${r}/${cat}`, `${r}/${cat}/:slug`, `${r}/browse/${cat}`, `${r}/browse/${cat}/:page`, `${r}/deals/${cat}`].map((source) => ({ source, destination: dest, permanent: true }));
+    }),
+  );
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -108,7 +133,7 @@ const nextConfig = {
     // duplicate host, and Google still filed most pages under it. Every path moves except eBay's account-deletion
     // endpoint, registered with eBay under the www URL (its challenge is signed with that URL and is not redirected).
     const www = { source: "/:path((?!api/ebay/).*)", has: [{ type: "host", value: "www.compareempire.com" }], destination: "https://compareempire.com/:path", permanent: true };
-    return [www, { source: "/us", destination: "/", permanent: true }, ...[...merged, ...entity, ...retiredGuides].map(([source, destination]) => ({ source, destination, permanent: true }))];
+    return [www, { source: "/us", destination: "/", permanent: true }, ...retiredRedirects(), ...[...merged, ...entity, ...retiredGuides].map(([source, destination]) => ({ source, destination, permanent: true }))];
   },
   async headers() {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.

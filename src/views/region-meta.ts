@@ -15,7 +15,7 @@ export const homeLanguages = () => ({ ...Object.fromEntries(REGION_IDS.filter(re
 
 // The home card leads with a product everyone recognises, with three more kinds of product under the headline.
 const HERO_CATEGORIES: CategoryId[] = ["phones", "tvs", "laptops", "headphones", "consoles", "tablets"];
-const EXTRA_CATEGORIES: CategoryId[] = ["tvs", "headphones", "coffee-machines", "laptops", "air-fryers", "phones"];
+const EXTRA_CATEGORIES: CategoryId[] = ["tvs", "headphones", "coffee-machines", "laptops", "cameras", "phones"];
 
 /** The home page's share card: "Compare prices.", the store count, and one real product's store prices. */
 export function homeCard(region: RegionId, stores: number): string {

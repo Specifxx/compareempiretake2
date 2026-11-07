@@ -3,6 +3,7 @@
  * Kogan or JB group theirs). A category is live once it has scrapers and a
  * data/<id>/catalog.json; until then it shows as "coming soon".
  */
+import { isRetired } from "./focus";
 import type { CategoryId } from "./types";
 
 export interface Category {
@@ -61,7 +62,8 @@ const c = (id: CategoryId, name: string, noun: string, emoji: string, department
   name,
   noun,
   href: `/${id}`,
-  live: true,
+  // Retired categories (lib/focus.ts, owner 2026-11-07) stay in the list for their scrapers' types, never live.
+  live: !isRetired(id),
   emoji,
   department,
   blurb,
@@ -104,7 +106,7 @@ export const CATEGORIES: Category[] = [
 ];
 
 /** Shown in the header's category bar; everything else is one click away in "All categories". */
-export const FEATURED: CategoryId[] = ["phones", "laptops", "tvs", "headphones", "tablets", "monitors", "graphics-cards", "consoles", "lego", "fridges", "coffee-machines"];
+export const FEATURED: CategoryId[] = ["phones", "laptops", "tvs", "headphones", "tablets", "monitors", "graphics-cards", "consoles", "lego", "coffee-machines", "cameras"];
 
 export const liveCategories = () => CATEGORIES.filter((c) => c.live);
 export const categoryById = (id: string) => CATEGORIES.find((c) => c.id === id);

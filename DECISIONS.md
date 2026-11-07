@@ -1657,3 +1657,45 @@ Kmart compared, and how do I know the comparison is complete? Owner: act on all 
   (`lib/uncovered-stores.ts`, kept in step with `docs/stores/big-stores.md`). Big W, Target, Myer, Kmart are still
   walled or script-keyed; they come in through Commission Factory feeds (`FEED_URL_*`), which wait on the owner's
   application. A name leaves the list by itself once that store has prices.
+## 2026-11-07 — The focus cull: only current, wanted products, and a 27-minute build becomes under two
+
+**Decision (owner: "we added way too many products … a lot of products aren't even relevant … very low demand. We want
+to focus on the state-of-the-art products … very high demand, very liquid … generating a ton of revenue. … we're not
+targeting people who … will only buy the very cheap things … significantly cull the website"; and "compareempire took
+30 mins to deploy which is a huge issue"):** the catalogue goes from 90,446 products to about 8,300, and the build from
+27 minutes (2,115 prerendered pages) to about a minute and a half (632) on the same four cores.
+
+What the data said (Search Console, 56 days to 2026-11-06, the `demand` branch): every click and nearly every impression
+went to tech. Robot vacuums 22.9K impressions, tablets 7.1K, phones 6.4K, laptops 3.2K, routers 2.6K, headphones 2.5K,
+smartwatches 1.9K, TVs 1.6K, monitors 1.4K; fridges, washing machines, dishwashers, air fryers, small kitchen, coffee
+gear, hair tools, BBQs and LEGO had none at all, and RAM, SSDs, motherboards and printers a few hundred, no clicks.
+82% of products were sold by one store.
+
+The rules (`src/lib/focus.ts`, applied by `scripts/focus-catalog.ts` after `build-catalog.ts` in the daily import, so the
+site, the sitemap, the search index, the grids, eBay, Amazon and IndexNow all see the same list; `lib/catalog.ts` applies
+them again as a guard):
+- **Twelve categories retired**: coffee gear, small kitchen, air fryers, hair tools, BBQs, fridges, washing machines,
+  dishwashers, printers, RAM, SSDs, motherboards. Their built data and scrapes are gone (`scrape-categories.ts` skips
+  them); their pages, products, browse and deals URLs 301 to the nearest kept category (grinders and kitchen to coffee
+  machines, printers to laptops, PC parts to graphics cards) or the region's home (`next.config.mjs` RETIRED, pinned to
+  the list by `tests/focus.test.ts`). The grinder and BBQ guides 301 too.
+- **In the twenty kept categories** a product is listed when it is a brand buyers search for in that category, above the
+  budget end (a per-category floor in US dollars, scaled per region: phones US$400, laptops US$800, TVs US$800, headphones
+  US$150, LEGO US$150…), on sale today (in stock or on pre-order), and, in Australia and the UK where stores overlap, sold
+  by two or more stores (phones, tablets, watches and consoles exempt: a few walled chains sell them).
+- **Never culled**: any product page with a Search Console click or 20+ impressions in 56 days (`data/focus/demand.json`,
+  refreshed by each import from the `demand` branch), and every launch on the homepage calendar (`content/launches.ts`).
+- A culled product's URL 301s to its category (`views/ProductView.tsx`); a brand or compare pair left without products
+  301s to `/brands` or `/compare` (those two routes now render unknown slugs on request, only to redirect). Raw scrapes
+  and daily history are kept, so a product that starts to qualify comes back with its price chart.
+
+Never mass-request indexing for compareempire.com (2026-11-05): the sitemap simply shrinks (about 3,000 URLs, all live and
+in focus) and Google follows the 301s at its own pace.
+
+**Why the build got fast:** every prerendered page summarised the whole region (nav, brands, search) over 90K products,
+the US search index was 7.8 MB and 857 brand pages were drawn. Now the largest prerendered file is the US search index at
+1.3 MB, 89 brand pages and 99 compare pages. The `/og` route stays on the edge on purpose (it never loads the catalogue);
+the build's "edge runtime" line is only a notice.
+
+**Revisit** ~2026-12-01 with Search Console: if a retired category shows demand on another site in the family, or a kept
+category earns nothing, move it; the floors and brand lists are one table in `lib/focus.ts`.
