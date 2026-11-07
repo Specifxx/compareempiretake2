@@ -6,7 +6,7 @@ import { PhoneCard } from "@/components/PhoneCard";
 import { PhoneOffers } from "@/components/PhoneOffers";
 import { ReportPrice } from "@/components/ReportForms";
 import { PriceChart } from "@/components/PriceChart";
-import { checkVariant, getProduct, getProducts, getSeries, getVsPairs, regionUpdatedAt, similarPhones, summarise, productHref, categoryHref } from "@/lib/catalog";
+import { checkVariant, getProduct, storeCheckedAt, getProducts, getSeries, getVsPairs, regionUpdatedAt, similarPhones, summarise, productHref, categoryHref } from "@/lib/catalog";
 import { HOME_PATH, money, withXDefault, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById } from "@/lib/categories";
 import type { CategoryId, Phone } from "@/lib/types";
@@ -177,6 +177,8 @@ export async function ProductView({ params, region }: { params: ProductParams; r
   const cheapest = pool.reduce((a, b) => (b.price < a.price ? b : a), pool[0]);
   const dearest = pool.reduce((a, b) => (b.price > a.price ? b : a), pool[0]);
   const lowestEver = Math.min(...phone.variants.map((v) => v.lowestEver ?? v.bestPrice));
+  // The RRP of the variant the summary leads with (the cheapest one's), when the stores state one.
+  const rrpOf = (cheapest && phone.variants.find((v) => v.id === cheapest.v.id)?.rrp) || undefined;
   const stores = [...new Set(outright.map((o) => RETAILERS[o.retailer].name))];
   const mainCheck = checks[cheapest?.v.id ?? phone.variants[0].id]?.check;
   const guide = CATEGORY_GUIDES[phone.category];
@@ -246,7 +248,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
       </nav>
 
       <Suspense>
-        <PhoneOffers phone={withAmazon(phone, region)} chart={chart} checks={checks} />
+        <PhoneOffers phone={withAmazon(phone, region)} chart={chart} checks={checks} checkedAt={storeCheckedAt(phone.category, region)} />
       </Suspense>
       <ReportPrice
         product={`${phone.brand} ${phone.model}`}
@@ -300,6 +302,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
                 ["Cheapest today", `${$(cheapest.price)} at ${RETAILERS[cheapest.retailer].name}`],
                 ...(dearest && dearest.price > cheapest.price ? ([["Price range across stores", `${$(cheapest.price)} to ${$(dearest.price)}`]] as [string, string][]) : []),
                 ...(phone.variants.length > 1 ? ([["Options", phone.variants.map((v) => `${v.label} from ${$(v.bestPrice)}`).join(" · ")]] as [string, string][]) : []),
+                ...(rrpOf ? ([["RRP", `${$(rrpOf.price)}, as ${rrpOf.stores} stores list it`]] as [string, string][]) : []),
                 ["Lowest we've recorded", $(lowestEver)],
                 ["Stores with it in stock", `${new Set(inStock.map((o) => o.retailer)).size} of ${phone.retailerCount}`],
               ] as [string, string][]).map(([k, v]) => (

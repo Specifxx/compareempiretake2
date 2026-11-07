@@ -261,6 +261,8 @@ export interface Variant {
   lowestEver?: number;
   /** Best price on the earliest day in the history window. */
   previousBest?: number;
+  /** The RRP two or more stores state as their "was" price (lib/price-check.ts storeRrp), set when the catalogue loads. */
+  rrp?: { price: number; stores: number };
 }
 
 /** A product in any category. ("Phone" is kept as the historical name.) */
