@@ -23,11 +23,12 @@ const HOST = "compareempire.com";
 const key = readdirSync("public").find((f) => /^[0-9a-f]{32}\.txt$/.test(f))?.replace(".txt", "");
 if (!key) throw new Error("no IndexNow key file in public/");
 
-const urls = new Set<string>(["/", "/deals", "/guides", ...CATEGORIES.filter((c) => c.live).flatMap((c) => [`/${c.id}`, `/deals/${c.id}`])]);
+const SEASON = ["/black-friday", "/cyber-monday", "/boxing-day", "/january-sales", "/lunar-new-year"];
+const urls = new Set<string>(["/", "/deals", "/guides", ...SEASON, "/guides/black-friday-2026-real-tech-deals", ...CATEGORIES.filter((c) => c.live).flatMap((c) => [`/${c.id}`, `/deals/${c.id}`])]);
 for (const region of REGION_IDS) for (const c of CATEGORIES.filter((x) => x.live)) {
   const dir = `${dataPath(region, c.id)}/history`;
   if (!existsSync(dir)) continue;
-  if (region !== "au") ["/", "/deals", `/${c.id}`].forEach((u) => urls.add(withRegion(u, region)));
+  if (region !== "au") ["/", "/deals", ...SEASON, `/${c.id}`].forEach((u) => urls.add(withRegion(u, region)));
   const days = readdirSync(dir).filter((f) => f.endsWith(".json")).sort();
   const load = (f?: string) => (f ? (JSON.parse(readFileSync(`${dir}/${f}`, "utf8")) as Record<string, Record<string, Record<string, number>>>) : undefined);
   const today = load(days.at(-1));

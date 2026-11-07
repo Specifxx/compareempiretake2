@@ -41,4 +41,4 @@ TVs are where the biggest Black Friday savings usually are, and where fake "was"
 
 For TVs, headphones, consoles and laptops, prices around Black Friday are usually close to the year's lowest, and the post-Christmas sales are the other window. For brand-new launches, discounts are rare in the first months. More in [the best time to buy tech](/guides/best-time-to-buy-tech).
 
-All of today's drops are on the [deals page](/us/deals), and our [Black Friday page](/us/black-friday) collects the sale as it happens.
+All of today's drops are on the [deals page](/us/deals), and our [Black Friday page](/us/black-friday) collects the sale as it happens. [Cyber Monday deals](/us/cyber-monday) does the same for the Monday; in Australia they are [Black Friday](/black-friday) and [Cyber Monday](/cyber-monday).
