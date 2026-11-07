@@ -8,7 +8,9 @@ import { CartAddButton } from "./cart/CartAddButton";
  * The pinned rows' outlines (owner, 2026-11-06: eBay and Amazon rows "function exactly like a normal store price row … it just
  * sits on the very top. And it has a different colored outline"): eBay green, Amazon amber.
  */
-export const PIN_OUTLINE = { ebay: "ring-2 ring-[#16a34a]", amazon: "ring-2 ring-[#f59e0b]" } as const;
+// cheapest: the "Cheapest" store row (owner, 2026-11-07: "the cheapest listing should also have an outline too"), sky blue
+// across the family so it never reads as eBay's green (its old faint green ring did) or Amazon's amber.
+export const PIN_OUTLINE = { ebay: "ring-2 ring-[#16a34a]", amazon: "ring-2 ring-[#f59e0b]", cheapest: "ring-2 ring-[#0ea5e9]" } as const;
 
 /**
  * Today's cheapest matching new eBay listing for a product, from the eBay Browse API (checked daily
