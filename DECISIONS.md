@@ -1756,3 +1756,4 @@ Black Friday is 27 November 2026 and Cyber Monday 30 November. Three additions, 
   after the next release). The route hashes the challenge with the URL eBay actually called (`endpointFor` in
   `src/lib/ebay-deletion.ts`: the request's host when it is compareempire.com or www, else the apex), so it answers for
   either URL and no env value can make the hash disagree with the portal. `EBAY_DELETION_ENDPOINT` is no longer read.
+- Deployed urgently at the owner's word (2026-11-07), so the portal change can run straight away.
