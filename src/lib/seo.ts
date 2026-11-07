@@ -28,12 +28,12 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
   const au = getCatalog();
   // Pages built from today's prices change with every import; the rest carry no lastmod.
   const lastmod = new Date(au.updatedAt).toISOString();
-  const priced = new Set([HOME_PATH.au, "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year", "/price-report"]);
+  const priced = new Set([HOME_PATH.au, "/deals", "/launches", "/black-friday", "/cyber-monday", "/boxing-day", "/january-sales", "/lunar-new-year", "/price-report"]);
   const sections: { id: string; entries: () => SitemapEntry[] }[] = [
     {
       id: "pages",
       entries: () =>
-        [HOME_PATH.au, "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year", "/embed", "/price-report", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/creators", "/network", "/contact", "/how-we-pick-stores", "/stores", "/list-your-store", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), ...(priced.has(p) ? { lastmod } : {}), priority: p === HOME_PATH.au ? 1 : 0.6 })),
+        [HOME_PATH.au, "/deals", "/launches", "/black-friday", "/cyber-monday", "/boxing-day", "/january-sales", "/lunar-new-year", "/embed", "/price-report", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/creators", "/network", "/contact", "/how-we-pick-stores", "/stores", "/list-your-store", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), ...(priced.has(p) ? { lastmod } : {}), priority: p === HOME_PATH.au ? 1 : 0.6 })),
     },
     {
       id: "categories",
@@ -69,7 +69,7 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
       {
         id: `${r}-pages`,
         entries: () => [
-          ...["/", "/deals", "/launches", "/black-friday", "/boxing-day", "/january-sales", "/lunar-new-year"].map((p) => ({ loc: abs(withRegion(p, r)), lastmod: lm, priority: p === "/" ? 1 : 0.6 })),
+          ...["/", "/deals", "/launches", "/black-friday", "/cyber-monday", "/boxing-day", "/january-sales", "/lunar-new-year"].map((p) => ({ loc: abs(withRegion(p, r)), lastmod: lm, priority: p === "/" ? 1 : 0.6 })),
           ...["/stores", "/browse"].map((p) => ({ loc: abs(withRegion(p, r)), priority: 0.6 })),
           // Only categories with at least one strong product (2026-11-06: Canada and Singapore start with a few stores,
           // and a category page listing only one-store products is as thin as those products' own pages).

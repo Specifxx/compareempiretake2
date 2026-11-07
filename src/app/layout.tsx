@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
 import { ShareArrival } from "@/components/ShareArrival";
 import { Header } from "@/components/Header";
+import { HolidayStrip } from "@/components/HolidayStrip";
+import { saleStrip } from "@/lib/black-friday";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
@@ -132,7 +134,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
-        <Header nav={nav} regions={regions} />
+        <Header nav={nav} regions={regions} sale={saleStrip(new Date().toISOString().slice(0, 10))} />
+        <HolidayStrip sale={saleStrip(new Date().toISOString().slice(0, 10))} />
         <RegionNotice />
         <main>{children}</main>
         <Footer />
