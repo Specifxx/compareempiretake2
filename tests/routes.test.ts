@@ -174,3 +174,17 @@ test("www redirects to the apex for every path but eBay's registered account-del
   for (const p of ["/", "/us/robot-vacuums", "/tablets/apple-ipad-air-11-m4", "/sitemap.xml", "/api/products"]) assert.notEqual(matches(p), false, p);
   assert.equal(matches("/api/ebay/account-deletion"), false, "eBay's challenge must reach the www URL it was registered with");
 });
+
+test("eBay's account-deletion challenge is hashed with the URL eBay called, apex or www (2026-11-07)", async () => {
+  const { endpointFor, challengeResponseFor } = await import("../src/lib/ebay-deletion");
+  assert.equal(endpointFor("compareempire.com"), "https://compareempire.com/api/ebay/account-deletion");
+  assert.equal(endpointFor("www.compareempire.com"), "https://www.compareempire.com/api/ebay/account-deletion");
+  assert.equal(endpointFor("evil.example"), "https://compareempire.com/api/ebay/account-deletion", "an unknown host never chooses the URL");
+  assert.equal(endpointFor(null), "https://compareempire.com/api/ebay/account-deletion");
+  // eBay's documented formula: sha256(challengeCode + verificationToken + endpoint), hex.
+  const { createHash } = await import("node:crypto");
+  const e = endpointFor("compareempire.com");
+  assert.equal(challengeResponseFor("abc", "t".repeat(40), e), createHash("sha256").update("abc" + "t".repeat(40) + e).digest("hex"));
+  const route = read("src/app/api/ebay/account-deletion/route.ts");
+  assert.doesNotMatch(route, /EBAY_DELETION_ENDPOINT/, "a stale www value in the env must not decide the hash");
+});

@@ -1746,3 +1746,13 @@ Black Friday is 27 November 2026 and Cyber Monday 30 November. Three additions, 
   existing deals come a link to the Black Friday guide and four visible questions (the dates, whether stores have sales, shipping, how often it updates). No FAQ rich-result markup:
   Google shows those only for government and health sites since 2023, so the text is what ranks.
   Not submitted for indexing by hand (never mass-request indexing for this site); the sitemap carries the new URLs.
+
+## 2026-11-07: eBay's account-deletion endpoint moves to the apex
+
+- eBay emailed (5 Nov) that `https://www.compareempire.com/api/ebay/account-deletion` had not acknowledged for 24 hours,
+  with 30 days before the keys are deactivated. www now redirects to the apex at Vercel's domain level, before Next's
+  redirect rules run, so #79's exemption for `/api/ebay/` never applied, and eBay does not follow redirects.
+- The endpoint registered in eBay's portal becomes `https://compareempire.com/api/ebay/account-deletion` (owner's step,
+  after the next release). The route hashes the challenge with the URL eBay actually called (`endpointFor` in
+  `src/lib/ebay-deletion.ts`: the request's host when it is compareempire.com or www, else the apex), so it answers for
+  either URL and no env value can make the hash disagree with the portal. `EBAY_DELETION_ENDPOINT` is no longer read.
