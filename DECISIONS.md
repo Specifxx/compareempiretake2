@@ -1799,3 +1799,19 @@ Its bio links `compareempire.com/links`: one tap to each live site, tagged `utm_
 so each site's analytics shows the visit. It is noindex (a menu for one profile; `/network` stays the indexed list), static,
 and lists a site only once its domain is live (SportsCardCompare and MotorCompare join when theirs are). KaeYoung stands
 alone and is never listed (`tests/instagram-links.test.ts`).
+
+## 2026-11-08 — Weekly price-movers videos for creators (owner)
+
+From the competitor scan the owner approved: every Monday a 20-second vertical video of the week's biggest price moves for
+DexCompare, RiftCompare, OP Compare and MTG Compare, free for creators to post. It lives here beside the daily reel because
+the renderer, music and `reels` branch already exist: `weekly-movers.yml` (Monday 03:10 UTC) runs `social/movers/build.sh`
+per site, reading each site's own public data on GitHub (no database, no Vercel build), and writes `movers/<day>/<site>/`
+plus `movers/README.md` (the page to send creators) and `movers/latest.json` on `reels`. Nothing is posted anywhere.
+
+Each video states its basis on screen, the one its site shows: Dex and MTG the cheapest in-stock US store price
+(`price-history.json`), Rift the cheapest in-stock listing in US$ (`data/price-history/cards`), OP TCGplayer's market price
+and 7-day change (snapshot `prices.json.gz`). Stricter than the sites' pages, because a video gets screenshotted: at least 10%
+and US$5, nothing over double or under half, 3+ US stores both days for sealed, no promos. A site with too few clean moves
+skips that week rather than show a thin list. Wording follows DexCompare's copy rules: "Up" and "Cheaper this week", dated,
+never "dropped", "trending" or a prediction (`tests/weekly-movers.test.ts`). RiftCompare's own Sunday movers pack
+(`TCGEmpire/social`, Riftbound branding, carousel) stays as it is.

@@ -5,13 +5,15 @@ import { spawn } from 'child_process';
 import path from 'path';
 const [specPath, out, flag] = process.argv.slice(2);
 const spec = JSON.parse(readFileSync(specPath, 'utf8'));
-for (const d of spec.deals) if (d.imgFile) d.img = 'data:image/jpeg;base64,' + readFileSync(path.resolve(path.dirname(specPath), d.imgFile)).toString('base64');
+// Photos: the daily reel's deals, or the weekly movers' two lists (social/movers), inlined as data URIs.
+for (const d of [...(spec.deals || []), ...(spec.up || []), ...(spec.down || [])]) if (d.imgFile) d.img = `data:${d.imgType || 'image/jpeg'};base64,` + readFileSync(path.resolve(path.dirname(specPath), d.imgFile)).toString('base64');
 mkdirSync(out, { recursive: true });
 const here = path.dirname(new URL(import.meta.url).pathname);
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
 await page.addInitScript(s => { window.SPEC = s; }, spec);
-await page.goto('file://' + here + '/stage.html');
+// spec.stage: another stage page, relative to this folder's parent (social/), e.g. movers/stage.html.
+await page.goto('file://' + (spec.stage ? path.resolve(here, '..', spec.stage) : here + '/stage.html'));
 await page.waitForFunction(() => window.READY);
 await page.evaluate(() => document.fonts.ready);
 const dur = await page.evaluate(() => window.DURATION);
@@ -26,7 +28,7 @@ if (flag === '--stills') {
     await page.evaluate(t => render(t), i / fps);
     const buf = await page.screenshot({ type: 'jpeg', quality: 92 });
     if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once('drain', r));
-    if (i === Math.round(2.3 * fps)) await page.screenshot({ path: path.join(out, 'cover.png') });
+    if (i === Math.round((spec.coverAt ?? 2.3) * fps)) await page.screenshot({ path: path.join(out, 'cover.png') });
   }
   ff.stdin.end(); await new Promise(r => ff.on('close', r));
 }
