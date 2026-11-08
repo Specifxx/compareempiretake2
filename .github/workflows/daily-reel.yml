@@ -3,7 +3,7 @@ name: Daily reel
 # One Instagram reel a day for the Compare Empire account (owner, 2026-11-08): the day's site in rotation
 # (social/reels/pick.mjs), its top store deals from its public family feed, rendered to a 1080x1920 MP4 with original
 # music. The files go to the `reels` branch (never deployed) under reels/<day>/, and social/reels/publish.mjs posts
-# them through Instagram's content-publishing API once IG_USER_ID and IG_ACCESS_TOKEN exist (a no-op before that).
+# them through Instagram's content-publishing API once IG_ACCESS_TOKEN exists (IG_USER_ID optional) (a no-op before that).
 on:
   schedule:
     - cron: "40 1 * * *"

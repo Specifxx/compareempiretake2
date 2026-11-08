@@ -1,12 +1,14 @@
 // node social/reels/publish.mjs <day>
 // Posts reels/<day>/reel.mp4 from the public `reels` branch to Instagram through the Instagram API with Instagram
-// Login (graph.instagram.com, content publishing). Needs IG_USER_ID and IG_ACCESS_TOKEN; without them it says so and
+// Login (graph.instagram.com, content publishing). Needs IG_ACCESS_TOKEN (IG_USER_ID optional: the token's own account,
+// `me`, when unset); without the token it says so and
 // exits 0, so the render still succeeds before the account is connected. Never posts the same day twice: it skips when
 // reels/<day>/posted.json exists (written by the workflow after a publish).
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 const day = process.argv[2];
-const { IG_USER_ID: user, IG_ACCESS_TOKEN: token, REELS_SHA: sha } = process.env;
-if (!user || !token) { console.log('Instagram not connected yet (IG_USER_ID / IG_ACCESS_TOKEN missing): rendered only.'); process.exit(0); }
+const { IG_ACCESS_TOKEN: token, REELS_SHA: sha } = process.env;
+const user = process.env.IG_USER_ID || 'me';
+if (!token) { console.log('Instagram not connected yet (IG_ACCESS_TOKEN missing): rendered only.'); process.exit(0); }
 if (existsSync(`reels/${day}/posted.json`)) { console.log('already posted'); process.exit(0); }
 const G = 'https://graph.instagram.com/v21.0';
 const base = `https://cdn.jsdelivr.net/gh/Specifxx/compareempiretake2@${sha}/reels/${day}`;
