@@ -1827,3 +1827,21 @@ collection worth"; Scryfall grew on free data credited with a link; price sites 
   badge (an ordinary link: no iframe, script, image or tracking) and its code to copy. `ListYourStore.tsx` takes it as the
   optional `badge` prop and stays the same file in every site. Stores see it when they come to us; nobody is emailed about it
   (cold outreach stays stopped).
+## 2026-11-08 — "Is this a good price?": paste a store link
+
+Owner, 2026-11-08 (the competitor scan's gap #7; the same checker runs on every Compare Empire site): a visitor pastes a
+store's product link at `/is-this-a-good-price` (`components/LinkChecker.tsx`, also reached by pasting a link into the header
+search or the palette, handed over as `#link=`, a fragment, so the page stays one static copy) and sees whether that store's
+price is the cheapest in stock (within 1%), fair (under the median), typical (within 3% of it) or high, against every store we
+read in that store's country, for the same model and variant (`lib/link-check.ts`, `tests/link-check.test.ts`).
+
+- The browser fetches `/check/<host>`: one static JSON per host our listings link to (289 today, 7.8 MB in all, the largest
+  ~390 KB before compression), built with the deploy like `/api/grid` (`force-static`, `dynamicParams = false`, any other host
+  a 404). No function runs, no ISR, and the pasted page is never fetched: we only read its host and path.
+- A link is matched to our listing by path (a Shopify `/products/<handle>` from a collection or a market prefix counts), and a
+  `?variant=` breaks a tie. Two different products under one path and no variant is no answer: a wrong product is worse than none.
+- Carrier plans never count as a price. An out-of-stock listing at an unchanged price says so instead of a verdict.
+- Amazon, eBay, marketplaces and stores we don't read get the products the link's words match in the search index of the
+  link's country (amazon.com.au → Australia), else the visitor's.
+- The page is neutral (`lib/region.ts` NEUTRAL): without that, the region boot script would send a US visitor to
+  `/us/is-this-a-good-price`, which does not exist.

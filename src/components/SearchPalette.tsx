@@ -50,6 +50,10 @@ export function SearchPalette({ open, onClose }: { open: boolean; onClose: () =>
               if (e.key === "Escape") onClose();
               if (e.key === "ArrowDown") { e.preventDefault(); setActive((a) => Math.min(a + 1, results.length - 1)); }
               if (e.key === "ArrowUp") { e.preventDefault(); setActive((a) => Math.max(a - 1, 0)); }
+              if (e.key === "Enter" && /^\s*(https?:\/\/|[a-z0-9-]+(\.[a-z0-9-]+)+\/)/i.test(q)) {
+                window.location.href = `/is-this-a-good-price#link=${encodeURIComponent(q.trim())}`;
+                return;
+              }
               if (e.key === "Enter") go(results[active]?.href);
             }}
             placeholder="Search 'iphone 17 pro', 's26u', 'under $500'…"

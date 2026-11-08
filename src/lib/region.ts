@@ -53,7 +53,7 @@ export const regionOf = (pathname: string): RegionId => {
  * Pages that belong to no region (guides, about, legal, forum, reviews…). Guides draw every region's prices (GuideBody). Their server HTML is built for the US, the default,
  * and the browser moves the header and footer to the visitor's own region (`useRegion`). They never redirect.
  */
-const NEUTRAL = new Set(["guides", "about", "contact", "privacy", "disclosure", "affiliate-disclosure", "reviews", "forum", "saved", "alerts", "admin", "embed", "price-report"]);
+const NEUTRAL = new Set(["guides", "about", "contact", "privacy", "disclosure", "affiliate-disclosure", "reviews", "forum", "saved", "alerts", "admin", "embed", "price-report", "is-this-a-good-price"]);
 export const isNeutralPath = (pathname: string) => NEUTRAL.has(pathname.split("/")[1] ?? "");
 
 /** Canada's IANA zones (and the legacy Canada/* names). America/Toronto etc. are Canada-only zones. */
