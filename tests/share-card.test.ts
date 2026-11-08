@@ -20,3 +20,8 @@ test("the share card is cached a day and its rows are in-stock outright store pr
   // eBay is never a store row: the picker reads only store offers.
   assert.doesNotMatch(pick, /\.ebay/);
 });
+
+test("the share card never fetches or draws a store photo (Vercel CPU, DECISIONS.md 2026-11-08)", () => {
+  const route = readFileSync("src/app/og/route.tsx", "utf8");
+  assert.doesNotMatch(route, /<img |function photo|q\.get\("i"\)|q\.getAll\("x"\)/);
+});
