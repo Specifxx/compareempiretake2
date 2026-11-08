@@ -1782,3 +1782,13 @@ the feedback box, /list-your-store and the affiliate disclosure, the destination
 and the default Reply-To. `INBOX_EMAIL`, `OWNER_EMAIL` and `REPLY_TO_EMAIL` are no longer read: the launch set the last two
 to the Outlook address in Vercel, and an override left behind would have kept sending mail there. Accounts registered with
 the Outlook address (Brevo, affiliate networks, Search Console) are logins, not the contact inbox, and stay as they are.
+
+## 2026-11-08 — The share card draws no store photos (Vercel cost cap)
+
+The team's Vercel bill ran at $11–18 a day against the owner's $5–6 cap, and Compare Empire's biggest line was Fluid
+Active CPU. Observability (12 hours): `/og` 7.5K invocations and 3 h of Active CPU; the product pages 4 min. Each card
+fetched a store's photo (up to 3 MB), base64-encoded and decoded it to draw a 134 px tile, plus up to three more
+tiles on home and category cards. `src/app/og/route.tsx` now draws no photo: the brand, the headline and the real
+price rows stay (they are what reads at thumbnail size, owner 2026-11-03), the product tile shows the tag glyph and
+the tile row gives way to the domain. `ogImage` still writes `i` and `x`, ignored, so every card URL already shared
+stays valid. `tests/share-card.test.ts` fails if the route fetches or draws a photo again.
