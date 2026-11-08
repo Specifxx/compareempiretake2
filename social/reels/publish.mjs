@@ -11,17 +11,25 @@ const { IG_ACCESS_TOKEN: token, REELS_SHA: sha } = process.env;
 let user = process.env.IG_USER_ID || '';
 if (!token) { console.log('Instagram not connected yet (IG_ACCESS_TOKEN missing): rendered only.'); process.exit(0); }
 if (existsSync(`reels/${day}/posted.json`)) { console.log('already posted'); process.exit(0); }
-const G = token.startsWith('EAA') ? 'https://graph.facebook.com/v21.0' : 'https://graph.instagram.com/v21.0';
-// A system-user token (Unified login) names the Instagram account it may publish to in its granular scopes; that
-// Graph id differs from the id the dashboard shows, so read it from the token itself when IG_USER_ID is unset.
-if (!user && token.startsWith('EAA')) {
-  const d = await (await fetch(`${G}/debug_token?input_token=${token}&access_token=${token}`)).json();
-  const scopes = d.data?.granular_scopes || [];
-  const ids = [...new Set(scopes.filter((g) => /^instagram_/.test(g.scope)).flatMap((g) => g.target_ids || []))];
-  console.log(`token scopes: ${scopes.map((g) => `${g.scope}${g.target_ids ? `[${g.target_ids.join(',')}]` : ''}`).join(' ') || JSON.stringify(d.error || {})}`);
-  user = ids[0] || '';
+let G = token.startsWith('EAA') ? 'https://graph.facebook.com/v21.0' : 'https://graph.instagram.com/v21.0';
+// Which host and Instagram id the token publishes with: the token itself decides. Try the Instagram host first (an
+// Instagram Login token, or a Unified-login token it accepts), then the Facebook host's own account and its Pages'
+// linked Instagram accounts. Each probe logs its answer (never the token) so a failure says why.
+async function probe(url) {
+  try { const j = await (await fetch(`${url}${url.includes('?') ? '&' : '?'}access_token=${encodeURIComponent(token)}`)).json(); console.log(`probe ${url.split('?')[0].replace(/^https:\/\//, '')}: ${JSON.stringify(j).slice(0, 300)}`); return j; }
+  catch (e) { console.log(`probe ${url}: ${e.message}`); return {}; }
 }
-if (!user) user = token.startsWith('EAA') ? '17841469203276309' : 'me';
+if (!user) {
+  const ig = await probe('https://graph.instagram.com/v21.0/me?fields=user_id,username');
+  if (ig.user_id || ig.id) { G = 'https://graph.instagram.com/v21.0'; user = ig.user_id || ig.id; }
+}
+if (!user) {
+  await probe('https://graph.facebook.com/v21.0/me?fields=id,name');
+  const pages = await probe('https://graph.facebook.com/v21.0/me/accounts?fields=name,instagram_business_account{id,username}');
+  const hit = (pages.data || []).map((p) => p.instagram_business_account).find(Boolean);
+  if (hit) { G = 'https://graph.facebook.com/v21.0'; user = hit.id; }
+}
+if (!user) throw new Error('no Instagram account reachable with this token (see probes above)');
 console.log(`posting as ${user}`);
 const base = `https://cdn.jsdelivr.net/gh/Specifxx/compareempiretake2@${sha}/reels/${day}`;
 const caption = readFileSync(`reels/${day}/caption.txt`, 'utf8');
