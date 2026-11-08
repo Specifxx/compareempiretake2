@@ -6,7 +6,8 @@
       "claude/admiring-newton-5xtu2p": true,
       "reports": false,
       "forum": false,
-      "demand": false
+      "demand": false,
+      "reels": false
     }
   },
   "ignoreCommand": "bash scripts/vercel-ignore-build.sh"
