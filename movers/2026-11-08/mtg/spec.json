@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "mtg",
+ "siteName": "MTG Compare",
+ "topic": "Magic: The Gathering",
+ "host": "mtgcompare.app",
+ "accent": "#e8743b",
+ "page": "mtgcompare.app/us",
+ "from": "2026-11-01",
+ "to": "2026-11-08",
+ "range": "1 Nov → 8 Nov",
+ "basis": "Cheapest in-stock US store price",
+ "cardsArt": false,
+ "up": [
+  {
+   "name": "FINAL FANTASY Commander Deck - FINAL FANTASY VII Limit Break (Game Edition)",
+   "sub": "Commander Deck",
+   "before": 4756,
+   "after": 7999,
+   "pct": 68,
+   "stores": 11,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/656732_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/final-fantasy-commander-deck-final-fantasy-vii-limit-break-game-edition",
+   "imgFile": "img/u0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Foundations - Starter Collection",
+   "sub": "Starter Kit",
+   "before": 2966,
+   "after": 3995,
+   "pct": 35,
+   "stores": 54,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/562162_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/foundations-starter-collection",
+   "imgFile": "img/u1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Duskmourn: House of Horror Collector Booster Box",
+   "sub": "Collector Booster Box",
+   "before": 65000,
+   "after": 79781,
+   "pct": 23,
+   "stores": 3,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/557244_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/duskmourn-house-of-horror-collector-booster-box",
+   "imgFile": "img/u2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "down": [
+  {
+   "name": "Star Trek Commander Deck - Klingon Fury (Collector's Edition)",
+   "sub": "Commander Deck",
+   "before": 15999,
+   "after": 8500,
+   "pct": -47,
+   "stores": 31,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/706174_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/star-trek-commander-deck-klingon-fury-collectors-edition",
+   "imgFile": "img/d0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Teenage Mutant Ninja Turtles Play Booster Box",
+   "sub": "Play Booster Box",
+   "before": 9871,
+   "after": 7500,
+   "pct": -24,
+   "stores": 118,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/657849_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/teenage-mutant-ninja-turtles-play-booster-box",
+   "imgFile": "img/d1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Secrets of Strixhaven Commander Deck - Witherbloom Pestilence",
+   "sub": "Commander Deck",
+   "before": 5400,
+   "after": 4299,
+   "pct": -20,
+   "stores": 14,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/675569_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/secrets-of-strixhaven-commander-deck-witherbloom-pestilence",
+   "imgFile": "img/d2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "fine": "Cheapest in-stock US store price, 1 Nov vs 8 Nov 2026. Prices change. Unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards."
+}

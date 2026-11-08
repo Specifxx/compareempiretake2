@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "op",
+ "siteName": "OP Compare",
+ "topic": "One Piece Card Game",
+ "host": "opcompare.app",
+ "accent": "#e0454a",
+ "page": "opcompare.app/movers",
+ "from": "2026-10-31",
+ "to": "2026-11-07",
+ "range": "31 Oct → 7 Nov",
+ "basis": "TCGplayer market price",
+ "cardsArt": true,
+ "up": [
+  {
+   "name": "Gloriosa",
+   "sub": "EB05 · EB05-052",
+   "before": 357,
+   "after": 689,
+   "pct": 93,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/718682_in_1000x1000.jpg",
+   "link": "https://opcompare.app/card/gloriosa-eb05-052",
+   "card": true,
+   "imgFile": "img/u0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Nami",
+   "sub": "EB05 · EB05-055",
+   "before": 345,
+   "after": 585,
+   "pct": 70,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/718681_in_1000x1000.jpg",
+   "link": "https://opcompare.app/card/nami-eb05-055",
+   "card": true,
+   "imgFile": "img/u1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Gloriosa · Super Rare Alternate Art",
+   "sub": "EB05 · EB05-052",
+   "before": 2215,
+   "after": 3518,
+   "pct": 59,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/722774_in_1000x1000.jpg",
+   "link": "https://opcompare.app/card/gloriosa-eb05-052-alternate-art",
+   "card": true,
+   "imgFile": "img/u2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "down": [
+  {
+   "name": "Baby 5 · Alternate Art",
+   "sub": "EB05 · EB05-004",
+   "before": 1576,
+   "after": 952,
+   "pct": -40,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/726585_in_1000x1000.jpg",
+   "link": "https://opcompare.app/card/baby-5-eb05-004-alternate-art",
+   "card": true,
+   "imgFile": "img/d0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Vinsmoke Reiju · SP",
+   "sub": "EB05 · EB05-031",
+   "before": 27920,
+   "after": 17701,
+   "pct": -37,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/722712_in_1000x1000.jpg",
+   "link": "https://opcompare.app/card/vinsmoke-reiju-eb05-031-sp",
+   "card": true,
+   "imgFile": "img/d1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Monkey.D.Luffy · Alternate Art",
+   "sub": "OP17 · OP17-093",
+   "before": 2894,
+   "after": 1890,
+   "pct": -35,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/710862_in_1000x1000.jpg",
+   "link": "https://opcompare.app/card/monkey-d-luffy-op17-093-alternate-art",
+   "card": true,
+   "imgFile": "img/d2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "fine": "TCGplayer market price, 31 Oct vs 7 Nov 2026. Prices change. Not affiliated with Bandai or Toei Animation."
+}

@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "rift",
+ "siteName": "RiftCompare",
+ "topic": "Riftbound",
+ "host": "riftcompare.com",
+ "accent": "#e0a23a",
+ "page": "riftcompare.com/movers",
+ "from": "2026-11-01",
+ "to": "2026-11-08",
+ "range": "1 Nov → 8 Nov",
+ "basis": "Cheapest in-stock store listing, in US$",
+ "cardsArt": true,
+ "up": [
+  {
+   "name": "Lonely Poro · Overnumbered",
+   "sub": "Unleashed · 221/219",
+   "before": 12000,
+   "after": 23999,
+   "pct": 100,
+   "image": "https://cdn.riftscribe.gg/cards/thumbnails/large/unl-221-219-2ac5c598eb0906cd.webp",
+   "link": "https://riftcompare.com/card/lonely-poro-unl-221-219",
+   "card": true,
+   "imgFile": "img/u0",
+   "imgType": "image/webp"
+  },
+  {
+   "name": "Rengar, Pridestalker · Overnumbered",
+   "sub": "Unleashed · 227/219",
+   "before": 4399,
+   "after": 8800,
+   "pct": 100,
+   "image": "https://cdn.riftscribe.gg/cards/thumbnails/large/unl-227-219-3781386237f37831.webp",
+   "link": "https://riftcompare.com/card/rengar-pridestalker-unl-227-219",
+   "card": true,
+   "imgFile": "img/u1",
+   "imgType": "image/webp"
+  },
+  {
+   "name": "Seraphine, Not Alone",
+   "sub": "Radiance · SP5/005",
+   "before": 496,
+   "after": 973,
+   "pct": 96,
+   "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ef6f277389bbb6361ef29a0332cd2cb34d4905aa-744x1039.png?accountingTag=RB",
+   "link": "https://riftcompare.com/card/seraphine-not-alone-rad-sp5-005",
+   "card": true,
+   "imgFile": "img/u2",
+   "imgType": "image/png"
+  }
+ ],
+ "down": [
+  {
+   "name": "Aphelios, Exalted · Signature",
+   "sub": "Radiance · 179*/167",
+   "before": 47333,
+   "after": 27400,
+   "pct": -42,
+   "image": "https://riftcompare.com/radiance-spoilers/aphelios-exalted-signature.jpg",
+   "link": "https://riftcompare.com/card/aphelios-exalted-rad-179s-167",
+   "card": true,
+   "imgFile": "img/d0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Riven, Broken Blade · Alt art",
+   "sub": "Radiance · 043a/167",
+   "before": 835,
+   "after": 525,
+   "pct": -37,
+   "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/9870e0f591e2ca04bea2274209e8df3d4435213b-744x1039.png?accountingTag=RB",
+   "link": "https://riftcompare.com/card/riven-broken-blade-rad-043a-167",
+   "card": true,
+   "imgFile": "img/d1",
+   "imgType": "image/png"
+  },
+  {
+   "name": "Blade of the Exile",
+   "sub": "Radiance · 150/167",
+   "before": 3047,
+   "after": 2000,
+   "pct": -34,
+   "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/04aaded01b23641e496e39f51882ccfe89715492-744x1040.png?accountingTag=RB",
+   "link": "https://riftcompare.com/card/blade-of-the-exile-rad-150-167",
+   "card": true,
+   "imgFile": "img/d2",
+   "imgType": "image/png"
+  }
+ ],
+ "fine": "Cheapest in-stock store listing, in US$, 1 Nov vs 8 Nov 2026. Prices change. RiftCompare is fan-made and isn't endorsed by Riot Games."
+}
