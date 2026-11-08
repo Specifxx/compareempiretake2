@@ -29,6 +29,16 @@ if (!user) {
   const hit = (pages.data || []).map((p) => p.instagram_business_account).find(Boolean);
   if (hit) { G = 'https://graph.facebook.com/v21.0'; user = hit.id; }
 }
+if (!user) {
+  // A system-user token reaches the Instagram accounts its business (RiftCompare portfolio) has and assigns to it.
+  for (const path of ['me/assigned_business_assets?fields=id,name', 'me?fields=business{id,name}',
+    '1787602549084949/instagram_business_accounts?fields=id,username', '1787602549084949/owned_instagram_accounts?fields=id,username',
+    '1787602549084949/instagram_accounts?fields=id,username', '17841469203276309?fields=id,username']) {
+    const j = await probe(`https://graph.facebook.com/v21.0/${path}`);
+    const acct = (j.data || [j]).find((a) => a && a.username === 'compareempire' && a.id);
+    if (acct && !user) { G = 'https://graph.facebook.com/v21.0'; user = acct.id; }
+  }
+}
 if (!user) throw new Error('no Instagram account reachable with this token (see probes above)');
 console.log(`posting as ${user}`);
 const base = `https://cdn.jsdelivr.net/gh/Specifxx/compareempiretake2@${sha}/reels/${day}`;
