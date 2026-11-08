@@ -1,0 +1,122 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- The weekly price-movers video (social/movers): window.SPEC from pick.mjs, window.render(t) draws time t. 1080x1920; text
+     stays above y 1550 (Reels and Shorts cover the bottom with their own buttons and caption). -->
+<style>
+@font-face{font-family:Brico;src:url(../../src/app/fonts/bricolage-grotesque-latin-wght-normal.woff2) format("woff2");font-weight:200 800}
+@font-face{font-family:InterV;src:url(../../src/app/fonts/inter-latin-wght-normal.woff2) format("woff2");font-weight:100 900}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0b0b12}
+body{font-family:InterV,sans-serif;color:#fff;position:relative}
+#bg{position:absolute;inset:0}
+#grain{position:absolute;inset:0;opacity:.045;background-image:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 3px)}
+.scene{position:absolute;inset:0;opacity:0}
+.chip{position:absolute;top:200px;left:80px;display:inline-flex;align-items:center;gap:16px;padding:16px 30px;border-radius:999px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.14);font-weight:700;font-size:36px}
+.chip i{width:20px;height:20px;border-radius:50%;display:block}
+.kicker{position:absolute;left:84px;top:610px;font-weight:700;font-size:40px;letter-spacing:6px;text-transform:uppercase;color:#b9b6cc}
+.big{position:absolute;left:76px;right:40px;top:670px;font-family:Brico;font-weight:800;font-size:178px;line-height:.92;letter-spacing:-6px}
+.big span{display:block}
+.range{position:absolute;left:84px;top:1050px;display:inline-flex;padding:18px 30px;border-radius:20px;font-family:Brico;font-weight:700;font-size:52px;color:#0b0b12}
+.teaser{position:absolute;left:84px;right:84px;top:1200px;font-size:42px;line-height:1.35;color:#cfcce0;font-weight:500}
+.spark{position:absolute;left:84px;top:1340px;width:912px;height:200px}
+.head{position:absolute;left:80px;top:340px;font-family:Brico;font-weight:800;font-size:96px;letter-spacing:-3px;display:flex;align-items:center;gap:24px}
+.head b{display:inline-flex;align-items:center;justify-content:center;width:96px;height:96px;border-radius:26px;font-size:60px;color:#0b0b12}
+.row{position:absolute;left:50px;right:50px;height:300px;border-radius:36px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.10);display:flex;align-items:center;gap:28px;padding:0 28px}
+.thumb{flex:0 0 212px;height:212px;border-radius:24px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.thumb img{width:190px;height:190px;object-fit:contain}
+.cards .thumb{background:transparent;flex-basis:176px;height:250px}
+.cards .thumb img{width:176px;height:246px;border-radius:10px}
+.thumb.none{background:#2a2a38}
+.info{flex:1;min-width:0}
+.name{font-family:Brico;font-weight:700;font-size:44px;line-height:1.08;letter-spacing:-.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sub{margin-top:10px;font-size:28px;color:#9e9bb3;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prices{margin-top:18px;font-size:35px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.prices .was{color:#9e9bb3}
+.prices .ar{color:#6e6b85;margin:0 10px}
+.pct{flex:0 0 auto;align-self:center;padding:14px 20px;border-radius:22px;font-family:Brico;font-weight:800;font-size:48px;color:#0b0b12;font-variant-numeric:tabular-nums}
+.foot{position:absolute;left:80px;right:80px;top:1500px;font-size:32px;color:#9e9bb3;font-weight:600}
+.end h1{position:absolute;left:0;right:0;top:660px;text-align:center;font-family:Brico;font-weight:800;font-size:118px;letter-spacing:-4px}
+.end .dot{position:absolute;left:460px;top:440px;width:160px;height:160px;border-radius:44px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#0b0b12;font-size:52px;line-height:.9}
+.end p.t{position:absolute;left:100px;right:100px;top:830px;text-align:center;font-size:48px;color:#cfcce0;line-height:1.3;font-weight:500}
+.end .cta{position:absolute;left:90px;right:90px;top:1080px;padding:32px 0;border-radius:999px;text-align:center;font-family:Brico;font-weight:800;font-size:44px;white-space:nowrap;color:#0b0b12}
+.end .fine{position:absolute;left:90px;right:90px;top:1300px;text-align:center;font-size:27px;color:#8b88a0;line-height:1.5}
+</style></head>
+<body>
+<div id="bg"></div><div id="grain"></div>
+<div id="root"></div>
+<script>
+const S=window.SPEC;
+const UP='#ff8a5b', DOWN='#3ee08f', A=S.accent;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const easeIO=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const usd=c=>'US$'+(c>=10000?Math.round(c/100).toLocaleString('en-US'):(c/100).toFixed(2));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.getElementById('bg').style.background=`radial-gradient(900px 700px at 15% 8%,${A}44,transparent 70%),radial-gradient(800px 800px at 95% 90%,${A}26,transparent 70%),#0b0b12`;
+// Timeline: intro, up (if any), cheaper (if any), end. Twenty seconds with both lists.
+const INTRO=2.8, LIST=(S.up.length&&S.down.length)?6.4:8.0, END=4.4;
+const T=[{k:'intro',a:0,b:INTRO}];let t0=INTRO;
+if(S.up.length){T.push({k:'up',a:t0,b:t0+LIST});t0+=LIST}
+if(S.down.length){T.push({k:'down',a:t0,b:t0+LIST});t0+=LIST}
+T.push({k:'end',a:t0,b:t0+END});
+window.DURATION=t0+END; window.CUTS=T.map(s=>s.a);
+const chip=`<div class="chip"><i style="background:${A}"></i>${esc(S.siteName)} · ${esc(S.topic)}</div>`;
+const n=S.up.length+S.down.length;
+let html=`<div class="scene" id="s-intro">${chip}
+<div class="kicker" id="ik">${esc(S.topic)} · this week</div>
+<div class="big"><span id="b1">PRICE</span><span id="b2" style="color:${A}">MOVERS</span></div>
+<div class="range" id="ir" style="background:${A}">${esc(S.range)}</div>
+<div class="teaser" id="it">The ${n} biggest moves in ${esc(S.basis.charAt(0).toLowerCase()+S.basis.slice(1))}.</div>
+<svg class="spark" id="sp" viewBox="0 0 912 200"><path id="spl" d="M0 150 L120 120 L220 140 L330 70 L440 95 L560 40 L660 90 L780 60 L912 20" fill="none" stroke="${A}" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
+const list=(k,items)=>{const up=k==='up',col=up?UP:DOWN;
+  return `<div class="scene ${S.cardsArt?'cards':''}" id="s-${k}">${chip}
+<div class="head"><b style="background:${col}">${up?'▲':'▼'}</b><span>${up?'Up this week':'Cheaper this week'}</span></div>
+${items.map((m,i)=>`<div class="row" style="top:${520+i*325}px"><div class="thumb ${m.img?'':'none'}">${m.img?`<img src="${m.img}">`:''}</div>
+<div class="info"><div class="name">${esc(m.name)}</div><div class="sub">${esc(m.sub||'')}</div>
+<div class="prices"><span class="was">${usd(m.before)}</span><span class="ar">→</span><span class="now" data-a="${m.before}" data-b="${m.after}">${usd(m.before)}</span></div></div>
+<div class="pct" style="background:${col}">${up?'+':'−'}${Math.abs(m.pct)}%</div></div>`).join('')}
+<div class="foot">${esc(S.basis)}, ${esc(S.range)}</div></div>`};
+if(S.up.length)html+=list('up',S.up);
+if(S.down.length)html+=list('down',S.down);
+html+=`<div class="scene end" id="s-end"><div class="dot" style="background:${A}"><span>▲</span><span>▼</span></div><h1>${esc(S.siteName)}</h1>
+<p class="t">Every store, compared daily.<br>See every move on ${esc(S.host)}</p>
+<div class="cta" style="background:${A}">${esc(S.page)}</div>
+<div class="fine">${esc(S.fine)}</div></div>`;
+document.getElementById('root').innerHTML=html;
+const $=(sel,el=document)=>el.querySelector(sel);
+const fade=(t,a,b)=>clamp((t-a)/.25)*clamp((b-t)/.25);
+const sp=$('#spl'), spLen=sp.getTotalLength(); sp.style.strokeDasharray=spLen;
+window.render=function(t){
+  for(const s of T){
+    const el=document.getElementById('s-'+s.k);
+    const op=s.k==='intro'?clamp((s.b-t)/.25):fade(t,s.a,s.b); el.style.opacity=op; if(op<=0)continue;
+    const u=t-s.a;
+    const ch=$('.chip',el);if(ch)ch.style.opacity=ease((u-.05)/.4);
+    if(s.k==='intro'){
+      $('#ik').style.opacity=ease(u/.4);
+      [['#b1',.1],['#b2',.4]].forEach(([id,d])=>{const e=$(id);e.style.opacity=ease((u-d)/.4);e.style.transform=`translateY(${(1-ease((u-d)/.55))*70}px)`});
+      const r=$('#ir');r.style.opacity=ease((u-.8)/.35);r.style.transform=`scale(${.85+.15*ease((u-.8)/.4)})`;r.style.transformOrigin='left center';
+      $('#it').style.opacity=ease((u-1.2)/.4);
+      sp.style.strokeDashoffset=spLen*(1-easeIO((u-.6)/1.8));
+      $('.big',el).style.scale=1+u*.01;
+    } else if(s.k==='up'||s.k==='down'){
+      const h=$('.head',el);h.style.opacity=ease((u-.1)/.4);h.style.transform=`translateX(${(1-ease((u-.1)/.5))*-60}px)`;
+      [...el.querySelectorAll('.row')].forEach((row,i)=>{
+        const d=.45+i*.55, e=ease((u-d)/.5);
+        row.style.opacity=e;row.style.transform=`translateY(${(1-e)*80}px)`;
+        const now=$('.now',row),a=+now.dataset.a,b=+now.dataset.b,k=easeIO((u-d-.5)/.9);
+        now.textContent=usd(Math.round(a+(b-a)*k));now.style.color=k>=1?(s.k==='up'?UP:DOWN):'#ffffff';
+        const p=$('.pct',row);const q=ease((u-d-1.3)/.3);p.style.opacity=q;p.style.transform=`scale(${.7+.3*q+(q>=1?.05*Math.max(0,1-(u-d-1.6)/.3):0)})`;
+      });
+      $('.foot',el).style.opacity=ease((u-2.4)/.5)*.9;
+    } else {
+      const d=$('.dot',el);const e=ease(u/.6);d.style.transform=`scale(${.5+.5*e}) rotate(${(1-e)*-20}deg)`;d.style.opacity=e;
+      $('h1',el).style.opacity=ease((u-.25)/.45);$('p.t',el).style.opacity=ease((u-.55)/.45);
+      const c=$('.cta',el);const q=ease((u-1.0)/.4);c.style.opacity=q;c.style.transform=`scale(${.85+.15*q})`;
+      $('.fine',el).style.opacity=ease((u-1.4)/.5);
+    }
+  }
+};
+window.READY=true;
+</script>
+</body></html>
