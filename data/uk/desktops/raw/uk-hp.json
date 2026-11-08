@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T12:21:15.898Z",
+ "scrapedAt": "2026-11-08T00:06:11.016Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -82,7 +82,7 @@
    "price": 2039.99,
    "wasPrice": 2443.01,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/e/0eed14df-ec05-43e2-813e-b2f13c9c5a4b.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -474,7 +474,7 @@
    "price": 1679.99,
    "wasPrice": 2011.15,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08174973_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1848,18 +1848,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "D46VTEA#ABU",
-   "mpn": "D46VTEA#ABU",
-   "brand": "HP",
-   "title": "HP ProStudio 2 G2a 23.8\" All-in-One Business Desktop PC, AMD Ryzen AI 7, 32GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-prostudio-2-all-in-one-g2a-24-desktop-next-gen-ai-pc-d46vtea-abu",
-   "price": 1439.99,
-   "wasPrice": 1972.79,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/1/9/19fe63ca-3f78-4011-b9ae-4a6f6bac94b4.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "D4KJ6EA#ABU",
    "mpn": "D4KJ6EA#ABU",
    "brand": "HP",
@@ -2048,7 +2036,7 @@
    "price": 5303.99,
    "wasPrice": 5938.16,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/7/5/75a69dd8-2204-4169-82f9-2f17c197d82c.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2489,9 +2477,10 @@
    "brand": "HP",
    "title": "HP Z2 Tower G1i Workstation Desktop PC, Intel Ultra 9, 64GB, 1TB",
    "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-z2-tower-g1i-workstation-desktop-pc-wolf-pro-security-edition-8t227ea-abu",
-   "price": 5318,
+   "price": 4751.99,
+   "wasPrice": 5318,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/8/0/803429ab-b7f0-41fa-9376-466f06115f8c.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2933,6 +2922,17 @@
    "price": 7199.99,
    "wasPrice": 9797.75,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/e/ce7260c7-fa58-4660-b9ad-9a25126f2f58.jpg?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "A9MU5EA#ABU",
+   "mpn": "A9MU5EA#ABU",
+   "brand": "HP",
+   "title": "OMEN 35L Gaming Desktop GT16-0000na PC",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-0000na-pc-a9mu5ea-abu",
+   "price": 1300,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/6/a6936de6-4afb-43eb-9052-ae13bb106c98.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {

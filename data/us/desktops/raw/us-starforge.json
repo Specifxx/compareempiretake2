@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T12:07:13.807Z",
+ "scrapedAt": "2026-11-07T23:54:08.548Z",
  "offers": [
   {
    "retailer": "us-starforge",
@@ -157,24 +157,13 @@
   },
   {
    "retailer": "us-starforge",
-   "sku": "48023044358358",
-   "title": "Voyager IV Ultimate",
-   "url": "https://www.starforgesystems.com/products/voyager-iv-ultimate",
-   "price": 7499.99,
-   "wasPrice": 7999.99,
-   "image": "https://cdn.shopify.com/s/files/1/0642/3648/6870/files/Shopify_0044_APNX-ULTIMATE-HeroImage_8d41f8b3-3bce-4af7-96a8-a8bb326f2f84.jpg?v=1776368492",
-   "inStock": false,
-   "brand": "Starforge"
-  },
-  {
-   "retailer": "us-starforge",
    "sku": "48193675428054",
    "title": "Voyager IV Ultimate - Maxed",
    "url": "https://www.starforgesystems.com/products/voyager-iv-ultimate-max",
-   "price": 8499.99,
-   "wasPrice": 9499.99,
+   "price": 8999.99,
+   "wasPrice": 9999.99,
    "image": "https://cdn.shopify.com/s/files/1/0642/3648/6870/files/Shopify_0044_APNX-ULTIMATE-HeroImage.jpg?v=1776368492",
-   "inStock": false,
+   "inStock": true,
    "brand": "Starforge"
   },
   {
@@ -182,10 +171,10 @@
    "sku": "48023044423894",
    "title": "Voyager IV Ultimate - RAM Upgrade - Additional RAM & SSD",
    "url": "https://www.starforgesystems.com/products/voyager-iv-ultimate-upgrade",
-   "price": 8299.99,
-   "wasPrice": 9299.99,
+   "price": 8799.99,
+   "wasPrice": 9799.99,
    "image": "https://cdn.shopify.com/s/files/1/0642/3648/6870/files/Shopify_0044_APNX-ULTIMATE-HeroImage.jpg?v=1776368492",
-   "inStock": false,
+   "inStock": true,
    "brand": "Starforge"
   }
  ]

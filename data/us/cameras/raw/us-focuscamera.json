@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T12:00:30.009Z",
+ "scrapedAt": "2026-11-07T23:49:35.773Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -695,7 +695,7 @@
    "url": "https://www.focuscamera.com/products/canon-3638c001-cameras-point-shoot-cameras",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/2525945.jpg?v=1752190761",
-   "inStock": false,
+   "inStock": true,
    "brand": "CANON USA, INC.",
    "mpn": "3638C001"
   },
@@ -956,7 +956,8 @@
    "sku": "42166878306352",
    "title": "Fujifilm GFX100S II Mirrorless Digital Camera Body with GFX 102MP CMOS II Sensor (Black)",
    "url": "https://www.focuscamera.com/products/fujifilm-600023616-cameras-mirrorless-cameras",
-   "price": 5699.95,
+   "price": 5699,
+   "wasPrice": 5699.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3386165.jpg?v=1752150467",
    "inStock": true,
    "brand": "FUJIFILM North America Corp.",
@@ -1713,7 +1714,7 @@
    "url": "https://www.focuscamera.com/products/kodak-charmera-64gb-cameras-point-shoot-cameras",
    "price": 79.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3607677.jpg?v=1774302335",
-   "inStock": true,
+   "inStock": false,
    "brand": "DEXXXON DIGITAL STORAGE, INC.",
    "mpn": "CHARMERA-64GB"
   },
@@ -1725,7 +1726,7 @@
    "price": 34.99,
    "wasPrice": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3593860.jpg?v=1770929409",
-   "inStock": true,
+   "inStock": false,
    "brand": "DEXXXON DIGITAL STORAGE, INC.",
    "mpn": "KODCHARMERA"
   },
@@ -1874,7 +1875,7 @@
    "url": "https://www.focuscamera.com/products/kodak-az528bk-cameras-point-shoot-cameras",
    "price": 289.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3259361.jpg?v=1751968128",
-   "inStock": true,
+   "inStock": false,
    "brand": "JK Imaging, LTD",
    "mpn": "AZ528BK"
   },
@@ -1978,7 +1979,7 @@
    "url": "https://www.focuscamera.com/products/kodak-fz55rd-cameras-point-shoot-cameras",
    "price": 159.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/2990782.jpg?v=1755529671",
-   "inStock": true,
+   "inStock": false,
    "brand": "JK Imaging, LTD",
    "mpn": "FZ55RD"
   },
@@ -2872,7 +2873,8 @@
    "sku": "42163322716208",
    "title": "NIKON Z8 Mirrorless Camera with 24-120mm f/4 Lens - Full-Frame Sensor and Nikon FTZ II Mount Adapter",
    "url": "https://www.focuscamera.com/products/nikon-niz824120adk-cameras-mirrorless-cameras",
-   "price": 5493.9,
+   "price": 4243.9,
+   "wasPrice": 5493.9,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3363250.jpg?v=1752057704",
    "inStock": true,
    "brand": "Nikon Inc.",
@@ -3851,7 +3853,7 @@
    "url": "https://www.focuscamera.com/products/ricoh-01158-cameras-point-shoot-cameras",
    "price": 1296.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3017414.jpg?v=1752106119",
-   "inStock": false,
+   "inStock": true,
    "brand": "RICOH IMAGING AMERICAS CORPORATION",
    "mpn": "01158"
   },
@@ -4523,7 +4525,8 @@
    "sku": "42164921303088",
    "title": "Sony ZV-1 II Vlog Camera for Content Creators and Vloggers (Black) with Wireless Shooting Grip",
    "url": "https://www.focuscamera.com/products/sony-zv1m2b-gpvpt2bt-cameras-point-shoot-cameras",
-   "price": 1158,
+   "price": 1108,
+   "wasPrice": 1158,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/35b6342cd3d27a994eb2ed9de7e94012cc20ebb00cb5c1adce470d13c2e4b286-03d823026a213ec1.jpg?v=1768407423",
    "inStock": true,
    "brand": "TD Synnex - Sony",

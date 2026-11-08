@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T12:08:38.152Z",
+ "scrapedAt": "2026-11-07T23:55:15.952Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -370,17 +370,6 @@
    "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/179288_WWS1.jpg?v=1734366868",
    "inStock": true,
-   "brand": "Audio-Technica"
-  },
-  {
-   "retailer": "us-worldwidestereo",
-   "sku": "50293512995127",
-   "title": "Audio-Technica ATH-R30x Over-Ear Open-Back Headphones (Black)",
-   "url": "https://www.worldwidestereo.com/products/audio-technica-ath-r30x-over-ear-open-back-headphones",
-   "price": 99,
-   "wasPrice": 109,
-   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_4036ffdd-061d-4084-ab70-a87df4243fc0.jpg?v=1762447656",
-   "inStock": false,
    "brand": "Audio-Technica"
   },
   {
@@ -1039,7 +1028,7 @@
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-headphones-2nd-gen-white-smoke",
    "price": 359,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Headphones-2nd-Gen_-White-Smoke-Image-05.jpg?v=1786593798",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose"
   },
   {
@@ -1539,16 +1528,6 @@
   },
   {
    "retailer": "us-worldwidestereo",
-   "sku": "49567396331831",
-   "title": "Denon AH-D7200 Reference Over-Ear Headphones (Walnut)",
-   "url": "https://www.worldwidestereo.com/products/denon-ah-d7200-reference-over-ear-headphones-walnut",
-   "price": 1099,
-   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_7c254389-49dc-4244-9585-bb34f9970ef7.jpg?v=1762447653",
-   "inStock": false,
-   "brand": "Denon"
-  },
-  {
-   "retailer": "us-worldwidestereo",
    "sku": "49567067996471",
    "title": "Denon AH-D9200 Reference Over-Ear Premium Headphone (Bamboo)",
    "url": "https://www.worldwidestereo.com/products/denon-ah-d9200-over-ear-premium-headphone-bamboo",
@@ -1608,7 +1587,7 @@
    "price": 639,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Focal-Bathys-Over-Ear-Hi-Fi-Bluetooth-Wireless-Headphones-with-Active-Noise-Cancellation-Deep-Black-Image-01.jpg?v=1779131951",
-   "inStock": false,
+   "inStock": true,
    "brand": "Focal"
   },
   {
@@ -1629,7 +1608,7 @@
    "url": "https://www.worldwidestereo.com/products/focal-clear-mg-open-back-high-fidelity-over-ear-headphones",
    "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/176131_WWS1.jpg?v=1770048243",
-   "inStock": true,
+   "inStock": false,
    "brand": "Focal"
   },
   {
@@ -1672,7 +1651,7 @@
    "url": "https://www.worldwidestereo.com/products/focal-stellia-closed-back-circum-aural-over-ear-headphones-cognac",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/172550_WWS1.jpg?v=1773775949",
-   "inStock": false,
+   "inStock": true,
    "brand": "Focal"
   },
   {
@@ -1737,7 +1716,7 @@
    "price": 89.95,
    "wasPrice": 105,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/23_85c9155e-5d4c-4078-b9b6-271941daae32.jpg?v=1761059046",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL"
   },
   {
@@ -2042,7 +2021,7 @@
    "sku": "50900193607991",
    "title": "JBL Quantum 910X Wireless Over Ear Gaming Headphones with Active Noise Cancelling (Black)",
    "url": "https://www.worldwidestereo.com/products/jbl-quantum-910x-wireless-over-ear-gaming-headphones-with-active-noise-cancelling-black",
-   "price": 219.95,
+   "price": 199.95,
    "wasPrice": 396,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Quantum-910X-Over-Ear-Gaming-Headphones-Black-Image-01.jpg?v=1762447735",
    "inStock": true,
@@ -2373,7 +2352,7 @@
    "price": 89.95,
    "wasPrice": 156,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Tune-780NC-Active-Noise-Cancelling-Over-Ear-Bluetooth-Headphones-White-Image-01_3db2a973-98ec-4671-8a92-c03a020cffef.jpg?v=1781409931",
-   "inStock": true,
+   "inStock": false,
    "brand": "JBL"
   },
   {
@@ -2417,7 +2396,7 @@
    "price": 399.95,
    "wasPrice": 429.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JVC-GLASS-Core-Pro-True-Wireless-Noise-Cancelling-Earbuds-Image-02.jpg?v=1788443896",
-   "inStock": true,
+   "inStock": false,
    "brand": "JVC"
   },
   {

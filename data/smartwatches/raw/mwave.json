@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T11:08:14.455Z",
+ "scrapedAt": "2026-11-07T22:54:51.476Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -38,7 +38,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-se-3-40mm-midnight-aluminium-case-gps-navy-blue-sport-band-s-m",
    "price": 395.84,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181642.jpg?v=1791854541",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -78,7 +78,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-se-3-44mm-midnight-aluminium-case-gps-navy-blue-sport-band-m-l",
    "price": 445.32,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181647.png?v=1791862678",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -168,7 +168,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-series-12-42mm-light-gold-aluminium-case-gps-sand-sport-band-s-m",
    "price": 647,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181590.jpg?v=1791944494",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -343,6 +343,26 @@
   },
   {
    "retailer": "mwave",
+   "sku": "182325",
+   "title": "Google Pixel Watch 5 41mm Wi-Fi Smartwatch - Champagne Gold / Canyon Active Band",
+   "url": "https://www.mwave.com.au/products/google-pixel-watch-5-41mm-wi-fi-smartwatch-champagne-gold-canyon-active-band",
+   "price": 649,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/11901375419-ga10902-us-google-pixel-watch-5-champagne-gold-aluminium-canyon-active-band-2.jpg?v=1794008515",
+   "inStock": false,
+   "brand": "Google"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "182323",
+   "title": "Google Pixel Watch 5 41mm Wi-Fi Smartwatch - Matte Black / Obsidian Active Band",
+   "url": "https://www.mwave.com.au/products/google-pixel-watch-5-41mm-wi-fi-smartwatch-matte-black-obsidian-active-band",
+   "price": 649,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/11901375445-ga10900-us-google-pixel-watch-5-matte-black-41mm-case-obsidian-active-band-1.jpg?v=1794009466",
+   "inStock": true,
+   "brand": "Google"
+  },
+  {
+   "retailer": "mwave",
    "sku": "182321",
    "title": "Google Pixel Watch 5 41mm Wi-Fi Smartwatch - Polished Silver / Fog Active Band",
    "url": "https://www.mwave.com.au/products/google-pixel-watch-5-41mm-wi-fi-smartwatch-polished-silver-fog-active-band",
@@ -357,7 +377,7 @@
    "title": "Google Pixel Watch 5 41mm Wi-Fi Smartwatch - Satin Pyrite / Olive Active Band",
    "url": "https://www.mwave.com.au/products/google-pixel-watch-5-41mm-wi-fi-smartwatch-satin-pyrite-olive-active-band",
    "price": 649,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/11901375420-ga11567-us-google-pixel-watch-5-satin-pyrite-aluminium-olive-active-band-1.jpg?v=1793947112",
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/11901375420-ga11567-us-google-pixel-watch-5-satin-pyrite-aluminium-olive-active-band-2.jpg?v=1793947112",
    "inStock": true,
    "brand": "Google"
   },

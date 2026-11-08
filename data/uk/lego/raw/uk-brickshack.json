@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T12:14:06.488Z",
+ "scrapedAt": "2026-11-07T23:58:53.529Z",
  "offers": [
   {
    "retailer": "uk-brickshack",
@@ -19,7 +19,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-flower-bouquet-set-pretty-pink",
    "price": 54.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-flower-bouquet-set-with-packaging-and-flowers.webp?v=1753558796",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10342"
   },
@@ -427,7 +427,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-minecraft-the-warden-encounter-21274",
    "price": 17.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/brick-shack-lego-minecraft-the-warden-encounter-21274-set-pieces.webp?v=1761401246",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "21274"
   },
@@ -713,7 +713,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-31095-creator-3-in-1-fairground-carousel",
    "price": 49.75,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/31095_alt1.jpg?v=1793270328",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31095"
   },
@@ -1197,7 +1197,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-42225-technic-yellow-motorcycle",
    "price": 9,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/42225_boxprod_v39_en-gb.png?v=1792239121",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "42225"
   },
@@ -1307,7 +1307,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-simba-the-lion-king-set-brick-shack",
    "price": 17.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-simba-the-lion-king-set-full-set-with-box-and-insects.webp?v=1753638581",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "43243"
   },
@@ -1527,7 +1527,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-city-sightseeing-bus-set",
    "price": 24.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-city-sightseeing-bus-set-full-bus-and-box-with-minifigures.webp?v=1753638420",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "60407"
   },
@@ -1681,7 +1681,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-city-yellow-taxi-60487",
    "price": 12.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-city-yellow-taxi-60487-set-with-car.png?v=1770727435",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "60487"
   },
@@ -1728,6 +1728,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "60493"
+  },
+  {
+   "retailer": "uk-brickshack",
+   "sku": "60497",
+   "title": "LEGO 60497: City: Drive-Through Car Wash",
+   "url": "https://www.brickshack.co.uk/products/lego-60497-city-drive-through-car-wash",
+   "price": 49.5,
+   "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/blt33a2eda4c9d743f2-60497_boxprod_v29.png?v=1793968757",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "60497"
   },
   {
    "retailer": "uk-brickshack",
@@ -1783,6 +1794,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "71481"
+  },
+  {
+   "retailer": "uk-brickshack",
+   "sku": "71490",
+   "title": "LEGO 71490: Dreamzzz: Izzie and Bunchurro the Gaming Bunny",
+   "url": "https://www.brickshack.co.uk/products/lego-71490-dreamzzz-izzie-and-bunchurro-the-gaming-bunny",
+   "price": 17.5,
+   "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/71490_boxprod_v39_en-gb.webp?v=1768587461",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "71490"
   },
   {
    "retailer": "uk-brickshack",
@@ -1912,7 +1934,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-71864-ninjago-kai-and-coles-combiner-vehicles",
    "price": 24.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/bltba4805276499d92d-71864_boxprod_v29.png?v=1792236118",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "71864"
   },
@@ -1978,7 +2000,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-plo-koon-starfighter-microfighter",
    "price": 13,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-plo-koon-starfighter-microfighter-assembled-set-figure.webp?v=1753796944",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75400"
   },
@@ -2033,7 +2055,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-327th-star-corps-clone-troopers-pack-75431",
    "price": 34.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-327th-star-corps-clone-troopers-battle-pack-75431-contents.webp?v=1761655289",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75431"
   },
@@ -2143,7 +2165,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-75456-star-wars-advent-calendar-2026",
    "price": 29.75,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/blt691e598d84db744d-75456_boxprod.png?v=1791478840",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75456"
   },
@@ -2220,7 +2242,7 @@
    "url": "https://www.brickshack.co.uk/products/marvel-lego-anti-venom-battle-set",
    "price": 12.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-marvel-lego-anti-venom-battle-box-set-figures-web-shooter.webp?v=1753562770",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76308"
   },
@@ -2396,7 +2418,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-nascar-chevrolet-camaro-zl1-speed-champions",
    "price": 20.75,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-nascar-chevrolet-camaro-zl1-full-set-box-figure.webp?v=1753629519",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76935"
   },
@@ -2498,6 +2520,17 @@
    "inStock": false,
    "brand": "LEGO",
    "mpn": "77053"
+  },
+  {
+   "retailer": "uk-brickshack",
+   "sku": "77054",
+   "title": "LEGO 77054: Animal Crossing: Leif's Caravan & Garden Shop",
+   "url": "https://www.brickshack.co.uk/products/lego-animal-crossing-set-uk-77054",
+   "price": 24.5,
+   "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-animal-crossing-set-uk-77054-complete-set.webp?v=1765110863",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "77054"
   },
   {
    "retailer": "uk-brickshack",
@@ -2627,7 +2660,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-77255-speed-champions-lightning-mcqueen",
    "price": 22.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/77255_boxprod_v39_en-gb.png?v=1784637385",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "77255"
   },
@@ -2638,7 +2671,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-77256-speed-champions-time-machine-from-back-to-the-future",
    "price": 22.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/77256_boxprod_v39_en-gb.png?v=1779538583",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77256"
   },

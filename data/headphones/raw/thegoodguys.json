@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T11:15:16.461Z",
+ "scrapedAt": "2026-11-07T22:59:45.737Z",
  "offers": [
   {
    "retailer": "thegoodguys",
@@ -76,6 +76,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096553_1015404.png?v=1776815901&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "MFHP4XA",
+   "brand": "Apple"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "apple-earpods-usb-c-myqy3fea",
+   "title": "Apple EarPods USB-C",
+   "url": "https://www.thegoodguys.com.au/apple-earpods-usb-c-myqy3fea",
+   "price": 29,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50092714_936544.png?v=1776229505&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "MYQY3FEA",
    "brand": "Apple"
   },
   {
@@ -302,6 +313,16 @@
    "url": "https://www.thegoodguys.com.au/bose-quietcomfort-ultra-headphones-sandstone-880066-0300",
    "price": 494,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50089389_897520.png?v=1776230936&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Bose"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "bose-quietcomfort-ultra-headphones-2nd-gen-890101-0100",
+   "title": "Bose QuietComfort Ultra Headphones 2nd Gen",
+   "url": "https://www.thegoodguys.com.au/bose-quietcomfort-ultra-headphones-2nd-gen-890101-0100",
+   "price": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096674_1021187.png?v=1776233363&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Bose"
   },
@@ -757,6 +778,16 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "jbl-tune-530bt-wireless-on-ear-headphones-6671223",
+   "title": "JBL Tune 530BT Wireless Headphones",
+   "url": "https://www.thegoodguys.com.au/jbl-tune-530bt-wireless-on-ear-headphones-6671223",
+   "price": 79,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097721_1043387.png?v=1776233194&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "jbl-tune-530bt-wireless-on-ear-headphones-blue-6671174",
    "title": "JBL Tune 530BT Wireless Headphones - Blue",
    "url": "https://www.thegoodguys.com.au/jbl-tune-530bt-wireless-on-ear-headphones-blue-6671174",
@@ -1162,6 +1193,16 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "skullcandy-hesh-360-wireless-headphones-255388",
+   "title": "Skullcandy Hesh 360 Wireless Headphones",
+   "url": "https://www.thegoodguys.com.au/skullcandy-hesh-360-wireless-headphones-255388",
+   "price": 149,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099318_1063674.png?v=1783574806&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Skullcandy"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "skullcandy-hesh-anc-headphones-253838",
    "title": "Skullcandy Hesh ANC Headphones",
    "url": "https://www.thegoodguys.com.au/skullcandy-hesh-anc-headphones-253838",
@@ -1486,6 +1527,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "sony-wf-c710n-noise-cancelling-earbuds-blue-wfc710nl",
+   "title": "Sony WF-C710N Noise Cancelling Earbuds - Blue",
+   "url": "https://www.thegoodguys.com.au/sony-wf-c710n-noise-cancelling-earbuds-blue-wfc710nl",
+   "price": 189,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094430_950950.png?v=1776233262&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WFC710NL",
+   "brand": "Sony"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "sony-wf-c710n-noise-cancelling-earbuds-white-wfc710nw",
    "title": "Sony WF-C710N Noise Cancelling Earbuds - White",
    "url": "https://www.thegoodguys.com.au/sony-wf-c710n-noise-cancelling-earbuds-white-wfc710nw",
@@ -1725,17 +1777,6 @@
    "inStock": true,
    "mpn": "WHCH520C",
    "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "soundcore-aeroclip-open-earbuds-a3388z11",
-   "title": "Soundcore AeroClip Open Earbuds",
-   "url": "https://www.thegoodguys.com.au/soundcore-aeroclip-open-earbuds-a3388z11",
-   "price": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097839_1046060.png?v=1776233590&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "A3388Z11",
-   "brand": "Soundcore"
   },
   {
    "retailer": "thegoodguys",

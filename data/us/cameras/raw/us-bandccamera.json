@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T11:57:06.174Z",
+ "scrapedAt": "2026-11-07T23:47:46.579Z",
  "offers": [
   {
    "retailer": "us-bandccamera",
@@ -339,7 +339,7 @@
    "price": 1549,
    "wasPrice": 1649,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/canon-eos-r7-mirrorless-camera-355856.png?v=1653496656",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon",
    "mpn": "5137C002"
   },
@@ -701,7 +701,7 @@
    "url": "https://bandccamera.com/products/fujifilm-instax-mini-13?variant=43007104516167",
    "price": 89.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/agizxgwsiowvfnwgdnud.jpg?v=1785173218",
-   "inStock": true,
+   "inStock": false,
    "brand": "Fujifilm"
   },
   {
@@ -2452,7 +2452,7 @@
    "url": "https://bandccamera.com/products/peak-design-camera-cube-v2-black-large",
    "price": 119.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/peak-design-camera-cube-v2-black-large-129514.png?v=1722449888",
-   "inStock": false,
+   "inStock": true,
    "brand": "Peak Design",
    "mpn": "BCC-L-BK-3"
   },
@@ -2743,7 +2743,7 @@
    "url": "https://bandccamera.com/products/sony-a1-ii-mirrorless-camera",
    "price": 6999.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/sony-a1-ii-mirrorless-camera-896221.jpg?v=1732148343",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony",
    "mpn": "ILCE-1M2/B"
   },
@@ -2765,7 +2765,7 @@
    "url": "https://bandccamera.com/products/sony-a7-v-mirrorless-camera?variant=42268736258119",
    "price": 2899.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/rzazqvb4jff4ngekstit.jpg?v=1764699152",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony",
    "mpn": "ILCE-7M5/B"
   },
@@ -3082,21 +3082,11 @@
   },
   {
    "retailer": "us-bandccamera",
-   "sku": "CCE-BK-2",
-   "title": "WANDRD Camera Cube Essential (21 Liter PRVKE)",
-   "url": "https://bandccamera.com/products/wandrd-camera-cube-essential-21-liter-prvke",
-   "price": 74,
-   "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/haobtyanhqv4gmicqpsc.jpg?v=1759770624",
-   "inStock": true,
-   "brand": "WANDRD",
-   "mpn": "CCE-BK-2"
-  },
-  {
-   "retailer": "us-bandccamera",
    "sku": "CCEP-BK-2",
    "title": "WANDRD Camera Cube Essential+ (31 Liter PRVKE)",
    "url": "https://bandccamera.com/products/wandrd-camera-cube-essential-31-liter-prvke",
-   "price": 84,
+   "price": 67.2,
+   "wasPrice": 84,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/k6eypumthytujs06psiv.jpg?v=1759770758",
    "inStock": true,
    "brand": "WANDRD",
@@ -3107,7 +3097,8 @@
    "sku": "CCP-BK-2",
    "title": "WANDRD Camera Cube Pro (21 Liter PRVKE)",
    "url": "https://bandccamera.com/products/wandrd-camera-cube-pro-21-liter-prvke",
-   "price": 109,
+   "price": 87.2,
+   "wasPrice": 109,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/kbz973xlbfanrmzb4bgu.jpg?v=1759770455",
    "inStock": false,
    "brand": "WANDRD",

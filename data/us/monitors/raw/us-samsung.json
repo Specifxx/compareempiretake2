@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T12:07:19.956Z",
+ "scrapedAt": "2026-11-07T23:54:24.323Z",
  "offers": [
   {
    "retailer": "us-samsung",
@@ -25,6 +25,17 @@
   },
   {
    "retailer": "us-samsung",
+   "sku": "LS25BG402ENXGO",
+   "mpn": "LS25BG402ENXGO",
+   "brand": "Samsung",
+   "title": "Samsung 25 Inch Odyssey G4 G40B FHD 240Hz | IPS | G-Sync Compatible Gaming Monitor LS25BG402ENXGO",
+   "url": "https://www.samsung.com/us/monitors/gaming/25-inch-odyssey-g40b-fhd-ips-240hz-1ms-gsync-gaming-monitor-sku-ls25bg402enxgo",
+   "price": 279.99,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls25bg402enxgo/gallery/us-gaming-ls25bg402enxgo-fhd-monitor-with-ips-panel-----hz-refresh-rate-and--ms-response-time-black-552035614",
+   "inStock": true
+  },
+  {
+   "retailer": "us-samsung",
    "sku": "LS27FG900XNXZA",
    "mpn": "LS27FG900XNXZA",
    "brand": "Samsung",
@@ -33,6 +44,17 @@
    "price": 1399.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27fg900xnxza/gallery/us-gaming-ls27fg900xnxza-odyssey--d-g--xf--k----hz-gaming-monitor-silver-552008923",
    "inStock": false
+  },
+  {
+   "retailer": "us-samsung",
+   "sku": "LS27CG552ENXZA",
+   "mpn": "LS27CG552ENXZA",
+   "brand": "Samsung",
+   "title": "Samsung 27 Inch Odyssey G5 G55C QHD 165Hz | AMD FreeSync | Curved Gaming Monitor LS27CG552ENXZA",
+   "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-g55c-qhd-165hz-1ms-mprt-curved-gaming-monitor-sku-ls27cg552enxza",
+   "price": 299.99,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27cg552enxza/gallery/us-gaming-ls27cg552enxza-odyssey-g--g--c-qhd----hz-curved-gaming-monitor-black-552003942",
+   "inStock": true
   },
   {
    "retailer": "us-samsung",
@@ -54,6 +76,17 @@
    "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-g7-g70d-4k-uhd-ips-144hz-1ms-gtg-smart-gaming-monitor-sku-ls27dg702enxza",
    "price": 699.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27dg702enxza/gallery/us-gaming-ls27dg702enxza----inch-odyssey-g--g--d-black-552007762",
+   "inStock": true
+  },
+  {
+   "retailer": "us-samsung",
+   "sku": "LS27FG706ENXZA",
+   "mpn": "LS27FG706ENXZA",
+   "brand": "Samsung",
+   "title": "Samsung 27 Inch Odyssey G70F 4K Dual Mode | IPS | 360Hz | G-Sync Compatible Gaming Monitor LS27FG706ENXZA",
+   "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-g7-g70f-fast-ips-dual-mode-4k-180hz-fhd-360hz-gaming-monitor-sku-ls27fg706enxza",
+   "price": 599.99,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27fg706enxza/gallery/us-gaming-ls27fg706enxza----inch-odyssey-g--f-black-552002862",
    "inStock": true
   },
   {
@@ -109,17 +142,6 @@
    "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-oled-g7-g70sh-4k-gaming-monitor-sku-ls27hg702snxza",
    "price": 999.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27hg702snxza/gallery/us-odyssey-oled-g7-g70sh-ls27hg702snxza-554531725",
-   "inStock": true
-  },
-  {
-   "retailer": "us-samsung",
-   "sku": "LS27HG802SNXZA",
-   "mpn": "LS27HG802SNXZA",
-   "brand": "Samsung",
-   "title": "Samsung 27 Inch Odyssey OLED G8 G80SH 4K Gaming Monitor (2026) LS27HG802SNXZA",
-   "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-oled-g8-g80sh-4k-gaming-monitor-sku-ls27hg802snxza",
-   "price": 1099.99,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27hg802snxza/gallery/us-odyssey-oled-g8-g80sh-590115-ls27hg802snxza-552623664",
    "inStock": true
   },
   {
@@ -450,7 +472,7 @@
    "url": "https://www.samsung.com/us/monitors/gaming/49-inch-odyssey-oled-g9-g91sd-dual-qhd-144hz-03ms-g-sync-sku-ls49dg910snxza",
    "price": 1299.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls49dg910snxza/gallery/us-gaming-ls49dg910snxza----inch-odyssey-oled-g--g--sd-silver-552004479",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-samsung",

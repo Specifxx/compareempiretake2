@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-06T12:00:00.831Z",
+ "scrapedAt": "2026-11-07T23:49:22.503Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -72,7 +72,8 @@
    "sku": "FRRFSBNN30MX.FBA",
    "title": "Furrion Aurora 2.1 Outdoor Soundbar Speaker with Wireless Subwoofer, Bluetooth, HDMI & Optical Inputs",
    "url": "https://www.electronicsexpo.com/products/furrion-aurora-2-1-outdoor-soundbar-speaker-with-wireless-subwoofer-bluetooth-hdmi-optical-inputs",
-   "price": 799.99,
+   "price": 599.99,
+   "wasPrice": 699.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/furrion-aurora-21-outdoor-soundbar-speaker-with-wireless-subwoofer-bluetooth-hdmi-optical-inputs-product-type-1291150.jpg?v=1772091013",
    "inStock": true,
    "brand": "Furrion",
@@ -136,8 +137,7 @@
    "sku": "JBLBAR1300XMK2.FBA",
    "title": "JBL Bar 1300XMK2 11.1.4-Channel Dolby Atmos Soundbar System",
    "url": "https://www.electronicsexpo.com/products/jbl-bar-1300xmk2-11-1-4-channel-soundbar-system",
-   "price": 1399.95,
-   "wasPrice": 1699.95,
+   "price": 1699.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-bar-1300xmk2-1114-channel-dolby-atmos-soundbar-system-product-type-7501581.jpg?v=1764024296",
    "inStock": true,
    "mpn": "JBLBAR1300XMK2.FBA"
@@ -582,7 +582,8 @@
    "sku": "SAMHWQ800H.FBA",
    "title": "Samsung Q-Series Soundbar HW-Q800H with Wireless Subwoofer",
    "url": "https://www.electronicsexpo.com/products/samsung-q-series-soundbar-hw-q800h-with-wireless-subwoofer",
-   "price": 1099.99,
+   "price": 697.99,
+   "wasPrice": 1099.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/samsung-q-series-soundbar-hw-q800h-with-wireless-subwoofer-product-type-4614925.jpg?v=1792824072",
    "inStock": true,
    "brand": "Samsung",
@@ -651,7 +652,7 @@
    "url": "https://www.electronicsexpo.com/products/sony-bravia-theater-bar-9-powered-5-0-2-channel-dolby-atmos-sound-bar-with-bluetooth-and-apple-airplay-2",
    "price": 1498,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/sony-bravia-theater-bar-9-powered-50-2-channel-dolby-atmos-sound-bar-with-bluetooth-and-apple-airplay-2-product-type-5227607.webp?v=1772731660",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony",
    "mpn": "SONHTA9000.FBA"
   },
