@@ -15,7 +15,6 @@ import { storageLabel } from "@/lib/normalize";
 import { PriceCheckCard } from "@/components/PriceCheckCard";
 import { AmazonPicks } from "@/components/AmazonPicks";
 import { EbayStrip } from "@/components/EbayStrip";
-import { ChristmasDecor } from "@/components/ChristmasDecor";
 import { HomeRegionPicker } from "@/components/HomeRegionPicker";
 import { HotLaunches } from "@/components/HotLaunches";
 import { hotLaunches, storePreorders } from "@/lib/launches";
@@ -55,7 +54,6 @@ export function HomeView({ region }: { region: RegionId }) {
         </div>
         {/* Christmas only (1 November to Boxing Day, lib/season.ts; hidden by CSS otherwise): snow, lights, trees. */}
         <div className="pointer-events-none absolute inset-0 -z-10">
-          <ChristmasDecor />
         </div>
         <div className="container-x relative pb-12 pt-14 sm:pt-20">
           <div className="mx-auto max-w-3xl text-center">
@@ -68,7 +66,6 @@ export function HomeView({ region }: { region: RegionId }) {
             {/* Christmas only: a line to the deals, for gift shoppers. */}
             <div className="xmas-pill-row mb-5 justify-center">
               <Link prefetch={false} href={to("/deals")} className="xmas-pill">
-                <span className="xmas-pill-icon" aria-hidden="true" />
                 <b>Christmas sale check</b>
                 <span className="xmas-pill-more hidden sm:inline">· {mature ? "real price drops only, checked every day" : "the biggest gaps between stores, checked every day"} →</span>
               </Link>
