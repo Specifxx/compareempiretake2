@@ -139,7 +139,9 @@ export function opMoves(core, prices, site) {
     if (!slug) return;
     const name = [c[2], c[6]].filter(Boolean).join(' · ');
     const set = setById.get(c[4]);
-    moves.push({ name, sub: [set?.code, c[3]].filter(Boolean).join(' · '), before, after: p[0], pct, image: `https://tcgplayer-cdn.tcgplayer.com/product/${id}_in_1000x1000.jpg`, link: site.url(slug), card: true });
+    // No photo: TCGplayer's One Piece scans carry a "SAMPLE" watermark (every card in the 2026-11-08 run), so the row draws a
+    // card-shaped tile with the card number and rarity instead (stage.html .tile).
+    moves.push({ name, sub: set?.name || set?.code || '', before, after: p[0], pct, image: null, tile: { number: c[3] || '', rarity: c[5] || '' }, link: site.url(slug), card: true });
   });
   const to = prices.at.slice(0, 10);
   return { from: isoOfDay(dayOf(to) - 7), to, basis: "TCGplayer market price", moves };
@@ -182,6 +184,7 @@ async function main() {
     const keep = [];
     for (const m of list) {
       if (keep.length >= PER_SIDE) break;
+      if (m.tile) { keep.push({ ...m }); continue; }
       let buf = null;
       if (flag !== '--offline') buf = await get(bigImage(m.image), 'bin').catch(() => null);
       if (!buf && flag !== '--offline') continue;
