@@ -1782,3 +1782,12 @@ the feedback box, /list-your-store and the affiliate disclosure, the destination
 and the default Reply-To. `INBOX_EMAIL`, `OWNER_EMAIL` and `REPLY_TO_EMAIL` are no longer read: the launch set the last two
 to the Outlook address in Vercel, and an override left behind would have kept sending mail there. Accounts registered with
 the Outlook address (Brevo, affiliate networks, Search Console) are logins, not the contact inbox, and stay as they are.
+
+## 2026-11-08 — Store badges, free price data and My collection (competitor scan)
+
+The owner approved the competitor scan's ideas (Collectr and PriceCharting keep people coming back with "what is my
+collection worth"; Scryfall grew on free data credited with a link; price sites earn links from the stores they list).
+- **Store badge.** `/list-your-store` ends with "Already listed? Add our badge": a plain-HTML (`lib/store-badge.ts`) "prices compared on"
+  badge (an ordinary link: no iframe, script, image or tracking) and its code to copy. `ListYourStore.tsx` takes it as the
+  optional `badge` prop and stays the same file in every site. Stores see it when they come to us; nobody is emailed about it
+  (cold outreach stays stopped).
