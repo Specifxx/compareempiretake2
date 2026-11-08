@@ -1845,3 +1845,22 @@ read in that store's country, for the same model and variant (`lib/link-check.ts
   link's country (amazon.com.au → Australia), else the visitor's.
 - The page is neutral (`lib/region.ts` NEUTRAL): without that, the region boot script would send a US visitor to
   `/us/is-this-a-good-price`, which does not exist.
+
+## 2026-11-08 — eBay: Compare Empire's keyset is shared three ways
+
+The owner asked to split Compare Empire's eBay keyset (the "compareempire" app, 5,000 Browse calls a day) with the two new
+sites that have no keys, SportsCardCompare (`Specifxx/waxcompare`) and MotorCompare (`Specifxx/motorcompare`), "for the most
+affiliate earnings". The split, 4,900 of 5,000 with 100 spare for a manual re-run:
+
+| Site | Calls a day | Why |
+|---|---|---|
+| Compare Empire | 2,900 | the most traffic and the first eBay earnings; ~30,700 products over the floor, searched by demand first |
+| SportsCardCompare | 1,400 | eBay is where sealed sports cards sell, at US$50–1,000+ a box; its catalogue sweep finds ~2.6 listings a call |
+| MotorCompare | 600 | Australia only, ~2,500 products of mostly A$10–80; new, no traffic yet; every product every ~4 days |
+
+`MAX_DAILY_CALLS` (2,900) in `scripts/ebay-prices.ts` is now a ceiling, not just a default: `EBAY_DAILY_CALLS` can only lower
+it, so the three sites can never together pass eBay's 5,000 (a 429 would blank the day for all three). At 2,900 a full round
+of every product takes ~10 days instead of ~6, so the coverage-first plan reaches the products with Google demand (3-day
+refresh) first and the long tail less often; those keep their "Search eBay" row when a listing ages out. Every site keeps its
+own counter per Pacific day; the keyset's deletion endpoint stays https://compareempire.com/api/ebay/account-deletion.
+Rebalance after two weeks of EPN earnings per call by customid (`ce-`, `wax-`, `mc-`).
