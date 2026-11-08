@@ -1764,3 +1764,12 @@ Owner: get the Black Friday pages indexed and ranking. The sale pages were in th
 IndexNow list (`scripts/indexnow.ts`) named only the hubs and changed products. It now names /black-friday, /cyber-monday and
 the other seasonal pages (in every region) and the Black Friday guide: about 30 URLs, all CDN-cached pages, well inside the
 2026-11-06 cost cut. The guide now links Cyber Monday too. No manual indexing requests for this site (2026-11-05 rule).
+
+## 2026-11-08 — Christmas is one quiet line, not a costume
+
+Owner: "some of the christmas themes on our websites are a bit too much - the theme must match the domain". The
+2026-11-01 Christmas look (falling snow, a strand of lights, trees, presents, candy canes, stockings, a Santa hat on the
+logo, candy-cane stripes and seasonal palette swaps) is gone, with its art in `public/xmas/`. The season keeps at most ONE
+touch, drawn in the site's own colours: the "Christmas sale check" line in the hero (`.xmas-pill`), in the site's own colours, with no gift icon. It still starts and ends by itself (`lib/season.ts`, 1 November to
+Boxing Day), and the tests pin that nothing else comes back. Black Friday and Cyber Monday (strip, pages, nav) are
+unchanged. The same rule went to every sister site: the site's own identity first.
