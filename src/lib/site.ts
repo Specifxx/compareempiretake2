@@ -6,6 +6,6 @@
 export const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://compareempire.com").replace(/\/$/, "").replace("://www.compareempire.com", "://compareempire.com");
 export const SITE_NAME = "Compare Empire";
 /** The business inbox: shown on the site, used as Reply-To, and the owner's alert address. */
-export const CONTACT_EMAIL = "compareempire@outlook.com";
+export const CONTACT_EMAIL = "compareempire@gmail.com";
 
 // The family list lives in lib/family-network.ts (FAMILY_SITES), the same file in every Compare Empire repo.

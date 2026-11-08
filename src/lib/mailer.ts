@@ -21,7 +21,8 @@ function parseFrom(from: string) {
 
 export async function sendMail(mail: Mail): Promise<boolean> {
   const from = process.env.EMAIL_FROM;
-  const replyTo = mail.replyTo || process.env.REPLY_TO_EMAIL || CONTACT_EMAIL;
+  // Always the site inbox (owner, 2026-11-08): REPLY_TO_EMAIL in Vercel still names the retired Outlook address.
+  const replyTo = mail.replyTo || CONTACT_EMAIL;
   if (!from) return false;
   try {
     let res: Response;
