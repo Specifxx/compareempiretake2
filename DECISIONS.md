@@ -1783,6 +1783,42 @@ and the default Reply-To. `INBOX_EMAIL`, `OWNER_EMAIL` and `REPLY_TO_EMAIL` are 
 to the Outlook address in Vercel, and an override left behind would have kept sending mail there. Accounts registered with
 the Outlook address (Brevo, affiliate networks, Search Console) are logins, not the contact inbox, and stay as they are.
 
+## 2026-11-08 — The share card draws no store photos (Vercel cost cap)
+
+The team's Vercel bill ran at $11–18 a day against the owner's $5–6 cap, and Compare Empire's biggest line was Fluid
+Active CPU. Observability (12 hours): `/og` 7.5K invocations and 3 h of Active CPU; the product pages 4 min. Each card
+fetched a store's photo (up to 3 MB), base64-encoded and decoded it to draw a 134 px tile, plus up to three more
+tiles on home and category cards. `src/app/og/route.tsx` now draws no photo: the brand, the headline and the real
+price rows stay (they are what reads at thumbnail size, owner 2026-11-03), the product tile shows the tag glyph and
+the tile row gives way to the domain. `ogImage` still writes `i` and `x`, ignored, so every card URL already shared
+stays valid. `tests/share-card.test.ts` fails if the route fetches or draws a photo again.
+## 2026-11-08 — /links: the Instagram link-in-bio page (owner)
+
+The owner's @riftcompare Instagram becomes Compare Empire, covering every site, with one daily reel from real deals.
+Its bio links `compareempire.com/links`: one tap to each live site, tagged `utm_source=instagram&utm_medium=social&utm_campaign=bio`
+so each site's analytics shows the visit. It is noindex (a menu for one profile; `/network` stays the indexed list), static,
+and lists a site only once its domain is live (SportsCardCompare and MotorCompare join when theirs are). KaeYoung stands
+alone and is never listed (`tests/instagram-links.test.ts`).
+
+## 2026-11-08 — Weekly price-movers videos for creators (owner)
+
+From the competitor scan the owner approved: every Monday a 20-second vertical video of the week's biggest price moves for
+DexCompare, RiftCompare, OP Compare and MTG Compare, free for creators to post. It lives here beside the daily reel because
+the renderer, music and `reels` branch already exist: `weekly-movers.yml` (Monday 03:10 UTC) runs `social/movers/build.sh`
+per site, reading each site's own public data on GitHub (no database, no Vercel build), and writes `movers/<day>/<site>/`
+plus `movers/README.md` (the page to send creators) and `movers/latest.json` on `reels`. Nothing is posted anywhere.
+
+Each video states its basis on screen, the one its site shows: Dex and MTG the cheapest in-stock US store price
+(`price-history.json`), Rift the cheapest in-stock listing in US$ (`data/price-history/cards`), OP TCGplayer's market price
+and 7-day change (snapshot `prices.json.gz`). Stricter than the sites' pages, because a video gets screenshotted: at least 10%
+and US$5, nothing over double or under half, 3+ US stores both days for sealed, no promos. A site with too few clean moves
+skips that week rather than show a thin list. Wording follows DexCompare's copy rules: "Up" and "Cheaper this week", dated,
+never "dropped", "trending" or a prediction (`tests/weekly-movers.test.ts`). RiftCompare's own Sunday movers pack
+(`TCGEmpire/social`, Riftbound branding, carousel) stays as it is.
+
+OP Compare's rows draw a card-shaped tile (number and rarity) instead of the card photo: TCGplayer's One Piece scans carry
+a "SAMPLE" watermark (all six in the first run, 2026-11-08), and a watermarked scan in a creator's video looks broken.
+
 ## 2026-11-08 — Store badges, free price data and My collection (competitor scan)
 
 The owner approved the competitor scan's ideas (Collectr and PriceCharting keep people coming back with "what is my

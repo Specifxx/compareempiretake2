@@ -11,6 +11,11 @@ import { ImageResponse } from "next/og";
  * going to be about"): the brand's violet, a two- or three-word headline, and a white panel of real store prices
  * with the cheapest in green. Every price is a real in-stock store price from the page that links the card; a card
  * without prices draws the panel as empty bars, never invented stores or numbers.
+ *
+ * No store photos (2026-11-08, the Vercel cost cap): fetching a store's photo (up to 3 MB), decoding it and drawing
+ * it made this route ~95% of the site's function CPU (Observability: /og 3 h of Active CPU in 12 h, the product
+ * pages 4 min). The card keeps the brand, headline and real price rows; the product tile shows the tag glyph. `i`
+ * and `x` are still written by ogImage and ignored here, so every card URL already shared stays valid.
  *   /og?k=home&t=Compare+prices&s=120&n=Galaxy+A17&i=<img>&d=JB+Hi-Fi~297|Harvey+Norman~299&x=<img>
  */
 export const runtime = "edge";
@@ -23,23 +28,6 @@ const INK = "#11111a";
 const MUTE = "#707084";
 const SAVE = "#058a5b";
 const SAVE_SOFT = "#d9f6e9";
-
-/** A store photo as a data URL, or undefined: only PNG/JPEG (what the renderer draws), under 3 MB, within 2.5 s. */
-async function photo(url: string | null | undefined): Promise<string | undefined> {
-  if (!url || !/^https:\/\/[^\s"]+$/.test(url)) return undefined;
-  try {
-    const res = await fetch(url, { headers: { accept: "image/png,image/jpeg;q=0.9" }, signal: AbortSignal.timeout(2500) });
-    const type = res.headers.get("content-type")?.split(";")[0].trim();
-    if (!res.ok || (type !== "image/png" && type !== "image/jpeg")) return undefined;
-    const buf = new Uint8Array(await res.arrayBuffer());
-    if (buf.length > 3_000_000) return undefined;
-    let bin = "";
-    for (let i = 0; i < buf.length; i += 0x8000) bin += String.fromCharCode(...buf.subarray(i, i + 0x8000));
-    return `data:${type};base64,${btoa(bin)}`;
-  } catch {
-    return undefined;
-  }
-}
 
 function Mark({ size }: { size: number }) {
   return (
@@ -111,9 +99,7 @@ export async function GET(req: Request) {
   const category = q.get("c")?.slice(0, 30);
   const product = q.get("n")?.slice(0, 70);
   const rows = parseRows(q.get("d"));
-  const xs = q.getAll("x").slice(0, 3);
-  const [img, archivoData, interData, ...xImgs] = await Promise.all([photo(q.get("i")), archivo, inter, ...xs.map(photo)]);
-  const extras = xImgs.filter((x): x is string => !!x);
+  const [archivoData, interData] = await Promise.all([archivo, inter]);
   const lo = rows[0]?.p;
   const hi = rows.at(-1)?.p;
   // The band only when the gap is worth saying: at least 3% (and a whole unit) between the cheapest and the dearest.
@@ -165,17 +151,7 @@ export async function GET(req: Request) {
             )}
           </div>
 
-          {extras.length ? (
-            <div style={{ display: "flex", gap: 16 }}>
-              {extras.map((x, i) => (
-                <div key={i} style={{ display: "flex", width: 112, height: 112, borderRadius: 22, background: "#fff", alignItems: "center", justifyContent: "center", boxShadow: "0 12px 30px rgba(20,10,80,0.35)" }}>
-                  <img src={x} alt="" width={92} height={92} style={{ objectFit: "contain" }} />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div style={{ display: "flex", fontSize: 26, color: "#d8ceff" }}>compareempire.com</div>
-          )}
+          <div style={{ display: "flex", fontSize: 26, color: "#d8ceff" }}>compareempire.com</div>
         </div>
 
         {/* Right: the comparison panel */}
@@ -183,11 +159,7 @@ export async function GET(req: Request) {
           <div style={{ display: "flex", flexDirection: "column", width: 500, background: "#fff", borderRadius: 30, padding: 26, gap: 16, boxShadow: "0 30px 70px rgba(20,10,80,0.45)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
               <div style={{ display: "flex", width: 150, height: 150, borderRadius: 20, background: "#f3f3f8", alignItems: "center", justifyContent: "center" }}>
-                {img ? (
-                  <img src={img} alt="" width={134} height={134} style={{ objectFit: "contain" }} />
-                ) : (
-                  <svg width="64" height="64" viewBox="0 0 24 24"><path d="M3 12l9-9h8v8l-9 9z" fill="none" stroke={VIOLET} strokeWidth="2" /><circle cx="16" cy="8" r="1.6" fill={VIOLET} /></svg>
-                )}
+                <svg width="64" height="64" viewBox="0 0 24 24"><path d="M3 12l9-9h8v8l-9 9z" fill="none" stroke={VIOLET} strokeWidth="2" /><circle cx="16" cy="8" r="1.6" fill={VIOLET} /></svg>
               </div>
               <div style={{ display: "flex", flexDirection: "column", flex: 1, gap: 6 }}>
                 <div style={{ display: "flex", fontSize: product && product.length > 34 ? 24 : 28, color: INK, lineHeight: 1.15, maxHeight: 96, overflow: "hidden" }}>{product ?? (kind === "product" ? title : "Same product, every store")}</div>

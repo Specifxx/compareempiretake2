@@ -1,0 +1,120 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Brico;src:url(../../src/app/fonts/bricolage-grotesque-latin-wght-normal.woff2) format("woff2");font-weight:200 800}
+@font-face{font-family:InterV;src:url(../../src/app/fonts/inter-latin-wght-normal.woff2) format("woff2");font-weight:100 900}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0c0a18}
+body{font-family:InterV,sans-serif;color:#fff;position:relative}
+#bg{position:absolute;inset:0;background:
+  radial-gradient(900px 700px at 20% 10%,rgba(91,61,245,.38),transparent 70%),
+  radial-gradient(800px 800px at 90% 85%,rgba(91,61,245,.22),transparent 70%),#0c0a18}
+#grain{position:absolute;inset:0;opacity:.05;background-image:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 3px)}
+.scene{position:absolute;inset:0;opacity:0}
+.brand{position:absolute;top:150px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:18px;font-family:Brico;font-weight:700;font-size:38px;letter-spacing:.5px}
+.brand svg{width:56px;height:56px}
+.hook{position:absolute;left:90px;right:60px;top:560px;font-family:Brico;font-weight:800;font-size:124px;line-height:1.02;letter-spacing:-4px}
+.hook .l{display:block}
+.hook .g{color:#3ee08f}
+.sub{position:absolute;left:90px;right:90px;top:860px;font-size:44px;color:#c9c4ea;font-weight:500;line-height:1.3}
+.chip{position:absolute;top:190px;left:90px;display:inline-flex;align-items:center;gap:14px;padding:16px 28px;border-radius:999px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.14);font-weight:700;font-size:36px}
+.chip i{width:18px;height:18px;border-radius:50%;display:block}
+.count{position:absolute;top:202px;right:90px;font-size:34px;color:#8d87b5;font-weight:600}
+.plate{position:absolute;left:210px;top:300px;width:660px;height:560px;border-radius:44px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 40px 120px rgba(0,0,0,.5)}
+.plate img{width:580px;height:490px;object-fit:contain}
+.title{position:absolute;left:90px;right:90px;top:900px;font-family:Brico;font-weight:700;font-size:58px;line-height:1.1;letter-spacing:-1px}
+.ref{position:absolute;left:90px;top:1060px;font-size:40px;color:#a9a3cf;font-weight:500}
+.ref b{position:relative;color:#fff;font-weight:700;margin-left:10px}
+.ref b s{position:absolute;left:-6px;right:-6px;top:50%;height:6px;background:#ff5d73;border-radius:3px;transform-origin:left center;display:block}
+.price{position:absolute;left:84px;top:1105px;font-family:Brico;font-weight:800;font-size:190px;letter-spacing:-6px;color:#3ee08f;font-variant-numeric:tabular-nums}
+.store{position:absolute;left:90px;top:1335px;font-size:40px;color:#e6e2ff;font-weight:600}
+.badge{position:absolute;left:90px;top:1405px;padding:14px 26px;border-radius:18px;background:#3ee08f;color:#06281a;font-weight:800;font-size:36px}
+.end .mark{position:absolute;left:400px;top:290px;width:280px;height:280px}
+.url{position:absolute;left:90px;top:1500px;font-size:34px;color:#a9a3cf;font-weight:600}
+.end h1{position:absolute;left:0;right:0;top:620px;text-align:center;font-family:Brico;font-weight:800;font-size:112px;letter-spacing:-3px}
+.end p.t{position:absolute;left:110px;right:110px;top:770px;text-align:center;font-size:46px;color:#c9c4ea;line-height:1.3;font-weight:500}
+.sites{position:absolute;left:80px;right:80px;top:950px;display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.sites span{padding:12px 22px;border-radius:999px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.12);font-size:30px;font-weight:600;color:#e6e2ff}
+.cta{position:absolute;left:290px;width:500px;top:1290px;padding:30px 0;border-radius:999px;background:#5b3df5;text-align:center;font-weight:800;font-size:46px;box-shadow:0 20px 60px rgba(91,61,245,.55)}
+.fine{position:absolute;left:90px;right:90px;top:1430px;text-align:center;font-size:27px;color:#8d87b5;line-height:1.45}
+</style></head>
+<body>
+<div id="bg"></div><div id="grain"></div>
+<div id="root"></div>
+<script>
+const CROWN='<svg viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#5B3DF5"/><path d="M14 44V22l9 8 9-12 9 12 9-8v22z" fill="#fff"/><rect x="14" y="47" width="36" height="5" rx="2.5" fill="#fff" opacity=".7"/></svg>';
+const S=window.SPEC;
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const ease=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const easeIO=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const money=(c,cur)=>{const sym={USD:'$',AUD:'A$',GBP:'£',CAD:'C$',EUR:'€',SGD:'S$',NZD:'NZ$'}[cur]||'';return sym+(c/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const root=document.getElementById('root');
+// timeline
+const HOOK=2.6, DEAL=5.6, END=4.0;
+const T=[];let t0=0;
+T.push({k:'hook',a:0,b:HOOK});t0=HOOK;
+S.deals.forEach((d,i)=>{T.push({k:'deal',i,a:t0,b:t0+DEAL});t0+=DEAL});
+T.push({k:'end',a:t0,b:t0+END});
+window.DURATION=t0+END;
+window.CUTS=T.map(s=>s.a);
+let html='';
+html+=`<div class="scene" id="s-hook"><div class="brand">${CROWN}<span>COMPARE EMPIRE</span></div>
+<div class="hook"><span class="l" id="h1">${esc(S.hook[0])}</span><span class="l g" id="h2">${esc(S.hook[1])}</span></div>
+<div class="sub" id="hs">${esc(S.sub)}</div></div>`;
+S.deals.forEach((d,i)=>{html+=`<div class="scene" id="s-d${i}">
+<div class="chip"><i style="background:${d.accent}"></i>${esc(d.siteName)} · ${esc(d.topic)}</div>
+<div class="count">${i+1}/${S.deals.length}</div>
+<div class="plate"><img src="${d.img}"></div>
+<div class="title">${esc(d.title)}</div>
+<div class="ref">${esc(d.refLabel)}:<b>${money(d.refCents,d.currency)}<s></s></b></div>
+<div class="price">${money(d.refCents,d.currency)}</div>
+<div class="store">at ${esc(d.store)}</div>
+<div class="badge">${d.savingPct}% under the ${esc(d.refShort)}</div><div class="url">Compare all stores → ${esc(d.url)}</div></div>`});
+html+=`<div class="scene end" id="s-end"><div class="mark">${CROWN}</div><h1>Compare Empire</h1>
+<p class="t">${esc(S.endLine)}</p>
+<div class="sites">${S.sites.map(s=>`<span>${esc(s)}</span>`).join('')}</div>
+<div class="cta">Link in bio</div>
+<div class="fine">${esc(S.fine)}</div></div>`;
+root.innerHTML=html;
+const $=(sel,el=document)=>el.querySelector(sel);
+function sceneAlpha(t,a,b){return clamp((t-a)/.25)*clamp((b-t)/.25)}
+window.render=function(t){
+  for(const s of T){
+    const el=document.getElementById(s.k==='deal'?'s-d'+s.i:'s-'+s.k);
+    const op=sceneAlpha(t,s.a,s.b); el.style.opacity=op; if(op<=0)continue;
+    const u=t-s.a;
+    if(s.k==='hook'){
+      const h1=$('#h1'),h2=$('#h2'),hs=$('#hs');
+      h1.style.transform=`translateY(${(1-ease(u/.6))*60}px)`;h1.style.opacity=ease(u/.5);
+      h2.style.transform=`translateY(${(1-ease((u-.55)/.6))*60}px)`;h2.style.opacity=ease((u-.55)/.5);
+      hs.style.opacity=ease((u-1.2)/.5);
+      const z=1+u*.012;$('.hook',el).style.scale=z;
+    } else if(s.k==='deal'){
+      const d=S.deals[s.i];
+      const p=$('.plate',el);const e=ease(u/.7);
+      p.style.transform=`translateY(${(1-e)*120}px) scale(${.9+.1*e+u*.006})`;p.style.opacity=e;
+      $('.chip',el).style.opacity=ease((u-.1)/.4);
+      const ti=$('.title',el);ti.style.opacity=ease((u-.35)/.45);ti.style.transform=`translateY(${(1-ease((u-.35)/.5))*30}px)`;
+      $('.ref',el).style.opacity=ease((u-.8)/.4);
+      $('.ref s',el).style.transform=`scaleX(${easeIO((u-1.5)/.35)})`;
+      const pr=$('.price',el);pr.style.opacity=ease((u-1.3)/.3);
+      const k=easeIO((u-1.6)/1.0);
+      const cents=Math.round(d.refCents+(d.cents-d.refCents)*k);
+      pr.textContent=money(cents,d.currency);
+      pr.style.color=k>=1?'#3ee08f':'#ffffff';
+      pr.style.transform=`scale(${1+(k>=1?.06*Math.max(0,1-(u-2.6)/.4):0)})`;pr.style.transformOrigin='left center';
+      $('.store',el).style.opacity=ease((u-2.7)/.4);
+      $('.url',el).style.opacity=ease((u-3.4)/.4);const b=$('.badge',el);b.style.opacity=ease((u-3.0)/.3);b.style.transform=`scale(${.8+.2*ease((u-3.0)/.35)})`;b.style.transformOrigin='left center';
+    } else {
+      const m=$('.mark',el);const e=ease(u/.7);m.style.transform=`scale(${.6+.4*e}) rotate(${(1-e)*-12}deg)`;m.style.opacity=e;
+      $('h1',el).style.opacity=ease((u-.3)/.5);$('p.t',el).style.opacity=ease((u-.6)/.5);
+      [...el.querySelectorAll('.sites span')].forEach((sp,j)=>{const q=ease((u-.9-j*.05)/.35);sp.style.opacity=q;sp.style.transform=`translateY(${(1-q)*20}px)`});
+      const c=$('.cta',el);const q=ease((u-1.8)/.4);c.style.opacity=q;c.style.transform=`scale(${.85+.15*q})`;
+      $('.fine',el).style.opacity=ease((u-2.0)/.5);
+    }
+  }
+};
+window.READY=true;
+</script>
+</body></html>
