@@ -1818,3 +1818,12 @@ never "dropped", "trending" or a prediction (`tests/weekly-movers.test.ts`). Rif
 
 OP Compare's rows draw a card-shaped tile (number and rarity) instead of the card photo: TCGplayer's One Piece scans carry
 a "SAMPLE" watermark (all six in the first run, 2026-11-08), and a watermarked scan in a creator's video looks broken.
+
+## 2026-11-08 — Store badges, free price data and My collection (competitor scan)
+
+The owner approved the competitor scan's ideas (Collectr and PriceCharting keep people coming back with "what is my
+collection worth"; Scryfall grew on free data credited with a link; price sites earn links from the stores they list).
+- **Store badge.** `/list-your-store` ends with "Already listed? Add our badge": a plain-HTML (`lib/store-badge.ts`) "prices compared on"
+  badge (an ordinary link: no iframe, script, image or tracking) and its code to copy. `ListYourStore.tsx` takes it as the
+  optional `badge` prop and stays the same file in every site. Stores see it when they come to us; nobody is emailed about it
+  (cold outreach stays stopped).
