@@ -1792,3 +1792,10 @@ tiles on home and category cards. `src/app/og/route.tsx` now draws no photo: the
 price rows stay (they are what reads at thumbnail size, owner 2026-11-03), the product tile shows the tag glyph and
 the tile row gives way to the domain. `ogImage` still writes `i` and `x`, ignored, so every card URL already shared
 stays valid. `tests/share-card.test.ts` fails if the route fetches or draws a photo again.
+## 2026-11-08 — /links: the Instagram link-in-bio page (owner)
+
+The owner's @riftcompare Instagram becomes Compare Empire, covering every site, with one daily reel from real deals.
+Its bio links `compareempire.com/links`: one tap to each live site, tagged `utm_source=instagram&utm_medium=social&utm_campaign=bio`
+so each site's analytics shows the visit. It is noindex (a menu for one profile; `/network` stays the indexed list), static,
+and lists a site only once its domain is live (SportsCardCompare and MotorCompare join when theirs are). KaeYoung stands
+alone and is never listed (`tests/instagram-links.test.ts`).
