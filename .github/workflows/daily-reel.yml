@@ -1,0 +1,49 @@
+name: Daily reel
+
+# One Instagram reel a day for the Compare Empire account (owner, 2026-11-08): the day's site in rotation
+# (social/reels/pick.mjs), its top store deals from its public family feed, rendered to a 1080x1920 MP4 with original
+# music. The files go to the `reels` branch (never deployed) under reels/<day>/, where the posting step reads them.
+on:
+  schedule:
+    - cron: "40 1 * * *"
+  workflow_dispatch:
+    inputs:
+      site:
+        description: "Site id to force (dex, rift, mtg, empire, op, lorcana, wargame, ygo, figure, gundam, cam, cyberpunk, bandai)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency: daily-reel
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg python3-numpy
+          npm install --no-save --no-audit --no-fund playwright@1.48.2
+          npx playwright install --with-deps chromium
+      - name: Build the reel
+        run: |
+          day=$(date -u +%F)
+          bash social/reels/build.sh "out/$day" ${{ github.event.inputs.site }}
+          echo "DAY=$day" >> "$GITHUB_ENV"
+      - name: Publish to the reels branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/r && cp out/$DAY/reel.mp4 out/$DAY/cover.png out/$DAY/caption.txt out/$DAY/spec.json /tmp/r/
+          git fetch origin reels || true
+          if git rev-parse --verify -q origin/reels >/dev/null; then git checkout -q -B reels origin/reels; else git checkout -q --orphan reels && git rm -rfq .; fi
+          rm -rf "reels/$DAY" && mkdir -p "reels/$DAY" && cp /tmp/r/* "reels/$DAY/"
+          # Keep the branch small: two weeks of reels.
+          ls -d reels/*/ 2>/dev/null | sort | head -n -14 | xargs -r git rm -rq
+          git add reels && git commit -qm "reel $DAY" && git push -q origin reels
