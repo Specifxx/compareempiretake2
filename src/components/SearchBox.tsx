@@ -112,6 +112,13 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
             if (e.key === "Escape") { setOpen(false); input.current?.blur(); }
             if (e.key === "ArrowDown") { e.preventDefault(); setActive((a) => Math.min(a + 1, flat.length - 1)); }
             if (e.key === "ArrowUp") { e.preventDefault(); setActive((a) => Math.max(a - 1, 0)); }
+            // A pasted store link goes to the price checker (#link=…, a fragment: the CDN keeps one copy of the page).
+            if (e.key === "Enter" && /^\s*(https?:\/\/|[a-z0-9-]+(\.[a-z0-9-]+)+\/)/i.test(q)) {
+              e.preventDefault();
+              setOpen(false);
+              window.location.href = `/is-this-a-good-price#link=${encodeURIComponent(q.trim())}`;
+              return;
+            }
             if (e.key === "Enter" && (flat[active] || q.trim())) go(flat[active]?.href);
           }}
           placeholder={lg ? "Search phones, TVs, laptops, graphics cards…" : "Search products…"}
