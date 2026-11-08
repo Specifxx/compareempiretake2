@@ -33,8 +33,7 @@ TASK 4. Vercel environment variables (Production)
 In compareempiretake2 → Settings → Environment Variables, make sure these exist (edit if wrong, skip if right):
 - BREVO_API_KEY = the key from task 2g
 - EMAIL_FROM = Compare Empire <alerts@compareempire.com>
-- OWNER_EMAIL = compareempire@outlook.com
-- REPLY_TO_EMAIL = compareempire@outlook.com
+- (OWNER_EMAIL and REPLY_TO_EMAIL are no longer read: every visitor and owner email goes to CONTACT_EMAIL, compareempire@gmail.com, since 2026-11-08.)
 - ADMIN_PASSWORD = STOP and ask me to type a long password myself (at least 16 characters). Do not invent it.
 Then Deployments → the latest Production deployment → ⋯ → Redeploy. Wait for Ready.
 

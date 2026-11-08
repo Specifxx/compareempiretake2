@@ -1773,3 +1773,12 @@ logo, candy-cane stripes and seasonal palette swaps) is gone, with its art in `p
 touch, drawn in the site's own colours: the "Christmas sale check" line in the hero (`.xmas-pill`), in the site's own colours, with no gift icon. It still starts and ends by itself (`lib/season.ts`, 1 November to
 Boxing Day), and the tests pin that nothing else comes back. Black Friday and Cyber Monday (strip, pages, nav) are
 unchanged. The same rule went to every sister site: the site's own identity first.
+
+## 2026-11-08 — Every Compare Empire email goes to compareempire@gmail.com
+
+Owner: "Switch it so anything compareempire goes to the email … Gmail". `CONTACT_EMAIL` is now compareempire@gmail.com,
+the inbox the static sister sites already use, instead of compareempire@outlook.com. It is the address shown in the footer,
+the feedback box, /list-your-store and the affiliate disclosure, the destination of every visitor message and owner notice,
+and the default Reply-To. `INBOX_EMAIL`, `OWNER_EMAIL` and `REPLY_TO_EMAIL` are no longer read: the launch set the last two
+to the Outlook address in Vercel, and an override left behind would have kept sending mail there. Accounts registered with
+the Outlook address (Brevo, affiliate networks, Search Console) are logins, not the contact inbox, and stay as they are.
