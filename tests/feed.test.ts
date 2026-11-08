@@ -86,6 +86,20 @@ test("Awin: a joined chain's feed is found from the one datafeed key, with our c
   assert.equal(awinFeedLink(list, 42, "K"), undefined);
 });
 
+test("Awin: the real 2026-11-08 feed list (ui.awin.com, Datafeed Format column) gives Ryman's feed", async () => {
+  const { awinFeedLink, AWIN_FEED_LISTS } = await import("../scripts/scrapers/feed");
+  const list = [
+    `Advertiser ID,Advertiser Name,Primary Region,Membership Status,Datafeed Format,Feed ID,Feed Name,Language,Vertical,Last Imported,Last Checked,No of products,URL`,
+    `"78586","Needs No Label","GB","Not Joined","Google","F94","","English","Retail","2026-11-08 07:54:48","2026-11-08 07:54:48","843","https://ui.awin.com/productdata-darwin-download/publisher/3144410/K/1/feed/F94.csv.gz"`,
+    `"3326","Ryman","GB","active","Awin","3326","Default","English","","2026-11-07 19:02:29","2026-11-08 07:13:59","27793","https://productdata.awin.com/datafeed/download/apikey/K/fid/3326/format/csv/language/en/delimiter/%2C/compression/gzip/adultcontent/1/columns/data_feed_id%2Cmerchant_id%2Cean/"`,
+  ].join("\n");
+  const link = awinFeedLink(list, 3326, "K");
+  assert.match(link!, /^https:\/\/productdata\.awin\.com\/datafeed\/download\/apikey\/K\/fid\/3326\/format\/csv\//);
+  assert.match(link!, /\/columns\/aw_deep_link,product_name,.*,ean,mpn,model_number,in_stock,condition\/$/);
+  assert.equal(awinFeedLink(list, 78586, "K"), undefined, "Not Joined is never read");
+  assert.match(AWIN_FEED_LISTS("K")[0], /^https:\/\/ui\.awin\.com\/productdata-darwin-download\/publisher\/3144410\/K\/1\/feedList$/);
+});
+
 test("a feed-gated store stays off with neither its secret nor an Awin membership", () => {
   delete process.env.FEED_URL_UK_CURRYS;
   process.env.AWIN_DATAFEED_KEY = "K";
