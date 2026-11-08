@@ -3,7 +3,7 @@
  * likely to get eBay clicks.
  *
  *   EBAY_CLIENT_ID / EBAY_CLIENT_SECRET   the production App ID and Cert ID (GitHub secrets only)
- *   EBAY_DAILY_CALLS                      Browse calls to spend (default 4950 of eBay's 5,000/day;
+ *   EBAY_DAILY_CALLS                      Browse calls to spend (default and ceiling 2,900: the 5,000/day keyset is shared;
  *                                         the OAuth token call is a different API and doesn't count)
  *
  * Plan (see DECISIONS.md, "eBay prices: spend 5,000 calls on the products people click", and
@@ -39,7 +39,10 @@ import { pool, sleep } from "./lib/http";
 
 const ID = process.env.EBAY_CLIENT_ID;
 const SECRET = process.env.EBAY_CLIENT_SECRET;
-const BUDGET = Number(process.env.EBAY_DAILY_CALLS || 4950);
+// Compare Empire's keyset is shared with SportsCardCompare (1,400) and MotorCompare (600) since 2026-11-08 (owner):
+// 2,900 a day is this site's share, and EBAY_DAILY_CALLS can only lower it (the three must stay under eBay's 5,000).
+export const MAX_DAILY_CALLS = 2900;
+const BUDGET = Math.min(MAX_DAILY_CALLS, Number(process.env.EBAY_DAILY_CALLS || MAX_DAILY_CALLS));
 const MIN_PRICE = 10;
 /** Above this a "price" is a store's placeholder (9999999.99) or a server rack, not something people buy on eBay. */
 const MAX_PRICE = 15_000;
