@@ -287,12 +287,33 @@ export function awinFeedLink(listCsv: string, advertiser: number, key: string): 
   return `https://productdata.awin.com/datafeed/download/apikey/${key}/language/en/fid/${best[fid]}/columns/${AWIN_COLUMNS}/format/csv/delimiter/%2C/compression/gzip/`;
 }
 
+/**
+ * Awin's feed list. Toolbox → Create-a-Feed now shows it at ui.awin.com (".../publisher/<id>/<key>/1/feedList",
+ * checked 2026-11-08: same columns, Ryman's row carries a productdata.awin.com download link); the older
+ * productdata.awin.com list is the fallback.
+ */
+export const AWIN_FEED_LISTS = (key: string, publisher = 3144410) => [
+  `https://ui.awin.com/productdata-darwin-download/publisher/${publisher}/${key}/1/feedList`,
+  `https://productdata.awin.com/datafeed/list/apikey/${key}`,
+];
+
 let awinList: Promise<string> | undefined;
+async function fetchAwinList(key: string): Promise<string> {
+  const errors: string[] = [];
+  for (const u of AWIN_FEED_LISTS(key)) {
+    try {
+      const r = await fetch(u, { signal: AbortSignal.timeout(60_000) });
+      const t = r.ok ? await r.text() : "";
+      if (/^\s*"?advertiser id"?,/i.test(t)) return t;
+      errors.push(`${new URL(u).host} ${r.status}`);
+    } catch (e) {
+      errors.push(`${new URL(u).host} ${(e as Error).message}`);
+    }
+  }
+  throw new Error(`Awin feed list: ${errors.join("; ")}`);
+}
 async function awinUrl(key: string, advertiser: number): Promise<string> {
-  awinList ??= fetch(`https://productdata.awin.com/datafeed/list/apikey/${key}`, { signal: AbortSignal.timeout(60_000) }).then((r) => {
-    if (!r.ok) throw new Error(`Awin feed list ${r.status}`);
-    return r.text();
-  });
+  awinList ??= fetchAwinList(key);
   const link = awinFeedLink(await awinList, advertiser, key);
   if (!link) throw new Error(`Awin advertiser ${advertiser}: joined, but no feed in the feed list yet`);
   return link;
