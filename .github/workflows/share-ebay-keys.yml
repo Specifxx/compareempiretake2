@@ -1,0 +1,33 @@
+# Copies this repo's eBay keyset (the "compareempire" app) to the two sites that share it (owner, 2026-11-08:
+# Compare Empire 2,900 / SportsCardCompare 1,400 / MotorCompare 600 calls a day; the caps live in each repo's code).
+# Manual only. The values go from secret to secret and are never printed. Needs GH_SECRETS_TOKEN to be allowed to
+# write secrets in the target repos; without that it fails and says so.
+name: Share eBay keys
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy EBAY_CLIENT_ID / EBAY_CLIENT_SECRET
+        env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+          ID: ${{ secrets.EBAY_CLIENT_ID }}
+          SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+        run: |
+          [ -n "$GH_TOKEN" ] || { echo "GH_SECRETS_TOKEN is not set"; exit 1; }
+          [ -n "$ID" ] && [ -n "$SECRET" ] || { echo "this repo has no eBay keys"; exit 1; }
+          fail=0
+          for repo in Specifxx/waxcompare Specifxx/motorcompare; do
+            if printf %s "$ID" | gh secret set EBAY_CLIENT_ID -R "$repo" >/dev/null 2>&1 && printf %s "$SECRET" | gh secret set EBAY_CLIENT_SECRET -R "$repo" >/dev/null 2>&1; then
+              echo "set on $repo"
+            else
+              echo "COULD NOT set on $repo (the token cannot write that repo's secrets)"; fail=1
+            fi
+          done
+          exit $fail
