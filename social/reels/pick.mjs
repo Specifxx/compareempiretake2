@@ -47,7 +47,8 @@ async function main() {
     if (!got) { console.error(`skip ${site.id}: no usable deals`); continue; }
     const deals = [];
     for (const [k, d] of got.deals.entries()) {
-      const img = await fetch(d.image.replace(/_200w\.jpg$/, '_in_1000x1000.jpg')).then((r) => (r.ok ? r.arrayBuffer() : null)).catch(() => null);
+      const big = d.image.replace(/_200w\.jpg$/, '_in_1000x1000.jpg').replace(/([?&]width=)\d+/, '$1900');
+      const img = await fetch(big).then((r) => (r.ok ? r.arrayBuffer() : null)).catch(() => null);
       if (!img) continue;
       writeFileSync(path.join(out, 'img', `${k}.jpg`), Buffer.from(img));
       const ref = d.refLabel || 'median store price';
@@ -61,7 +62,7 @@ async function main() {
       hook: [site.hook || 'Same box.', Math.min(...deals.map((d) => d.savingPct)) >= 45 ? 'Half the price.' : `Up to ${Math.max(...deals.map((d) => d.savingPct))}% less.`],
       sub: `${deals.length} real ${site.topic} deals from today's ${rn} store prices`,
       deals,
-      endLine: `${site.name} compares ${site.topic} prices across stores every day.`,
+      endLine: `${site.host}: every store, compared daily.`,
       sites: ['Pokémon', 'Magic', 'Lorcana', 'Riftbound', 'One Piece', 'Yu-Gi-Oh!', 'Gundam', 'Wargames', 'Anime figures', 'Cameras', 'Tech'],
       fine: `${rn} store prices, ${date}, before shipping. Prices change. ${site.fine || 'Independent; not affiliated with any brand shown.'}`,
     };
