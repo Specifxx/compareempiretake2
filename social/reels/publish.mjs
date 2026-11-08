@@ -8,10 +8,21 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 const day = process.argv[2];
 const { IG_ACCESS_TOKEN: token, REELS_SHA: sha } = process.env;
-const user = process.env.IG_USER_ID || '17841469203276309'; // @compareempire
+let user = process.env.IG_USER_ID || '';
 if (!token) { console.log('Instagram not connected yet (IG_ACCESS_TOKEN missing): rendered only.'); process.exit(0); }
 if (existsSync(`reels/${day}/posted.json`)) { console.log('already posted'); process.exit(0); }
 const G = token.startsWith('EAA') ? 'https://graph.facebook.com/v21.0' : 'https://graph.instagram.com/v21.0';
+// A system-user token (Unified login) names the Instagram account it may publish to in its granular scopes; that
+// Graph id differs from the id the dashboard shows, so read it from the token itself when IG_USER_ID is unset.
+if (!user && token.startsWith('EAA')) {
+  const d = await (await fetch(`${G}/debug_token?input_token=${token}&access_token=${token}`)).json();
+  const scopes = d.data?.granular_scopes || [];
+  const ids = [...new Set(scopes.filter((g) => /^instagram_/.test(g.scope)).flatMap((g) => g.target_ids || []))];
+  console.log(`token scopes: ${scopes.map((g) => `${g.scope}${g.target_ids ? `[${g.target_ids.join(',')}]` : ''}`).join(' ') || JSON.stringify(d.error || {})}`);
+  user = ids[0] || '';
+}
+if (!user) user = token.startsWith('EAA') ? '17841469203276309' : 'me';
+console.log(`posting as ${user}`);
 const base = `https://cdn.jsdelivr.net/gh/Specifxx/compareempiretake2@${sha}/reels/${day}`;
 const caption = readFileSync(`reels/${day}/caption.txt`, 'utf8');
 async function call(path, params, method = 'POST') {
