@@ -1815,3 +1815,6 @@ and US$5, nothing over double or under half, 3+ US stores both days for sealed, 
 skips that week rather than show a thin list. Wording follows DexCompare's copy rules: "Up" and "Cheaper this week", dated,
 never "dropped", "trending" or a prediction (`tests/weekly-movers.test.ts`). RiftCompare's own Sunday movers pack
 (`TCGEmpire/social`, Riftbound branding, carousel) stays as it is.
+
+OP Compare's rows draw a card-shaped tile (number and rarity) instead of the card photo: TCGplayer's One Piece scans carry
+a "SAMPLE" watermark (all six in the first run, 2026-11-08), and a watermarked scan in a creator's video looks broken.
