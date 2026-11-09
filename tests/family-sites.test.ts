@@ -15,7 +15,7 @@ test("footer: no sister list, one plain link to the network page", () => {
 test("network page: every site once per cluster, never KaeYoung, labels region-neutral", () => {
   const page = readFileSync("src/app/network/page.tsx", "utf8");
   assert.match(page, /FAMILY_SITES/);
-  assert.equal(FAMILY_SITES.length, 12);
+  assert.equal(FAMILY_SITES.length, 13);
   assert.ok(!FAMILY_SITES.some((s) => /kaeyoung/i.test(s.url)));
   for (const s of FAMILY_SITES) assert.doesNotMatch(s.label, /\b(Australian|Aussie|American|British|Canadian)\b/i, s.name);
 });
