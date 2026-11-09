@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "mtg",
+ "siteName": "MTG Compare",
+ "topic": "Magic: The Gathering",
+ "host": "mtgcompare.app",
+ "accent": "#e8743b",
+ "page": "mtgcompare.app/us",
+ "from": "2026-11-02",
+ "to": "2026-11-09",
+ "range": "2 Nov → 9 Nov",
+ "basis": "Cheapest in-stock US store price",
+ "cardsArt": false,
+ "up": [
+  {
+   "name": "FINAL FANTASY Commander Deck - FINAL FANTASY VII Limit Break (Game Edition)",
+   "sub": "Commander Deck",
+   "before": 4763,
+   "after": 7999,
+   "pct": 68,
+   "stores": 11,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/656732_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/final-fantasy-commander-deck-final-fantasy-vii-limit-break-game-edition",
+   "imgFile": "img/u0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Foundations - Starter Collection",
+   "sub": "Starter Kit",
+   "before": 2966,
+   "after": 3995,
+   "pct": 35,
+   "stores": 53,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/562162_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/foundations-starter-collection",
+   "imgFile": "img/u1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "FINAL FANTASY Commander Deck - FINAL FANTASY VI Revival Trance (Collector's Edition)",
+   "sub": "Commander Deck",
+   "before": 10000,
+   "after": 12575,
+   "pct": 26,
+   "stores": 8,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/618908_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/final-fantasy-commander-deck-final-fantasy-vi-revival-trance-collectors-edition",
+   "imgFile": "img/u2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "down": [
+  {
+   "name": "Star Trek Commander Deck - Klingon Fury (Collector's Edition)",
+   "sub": "Commander Deck",
+   "before": 14940,
+   "after": 8500,
+   "pct": -43,
+   "stores": 31,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/706174_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/star-trek-commander-deck-klingon-fury-collectors-edition",
+   "imgFile": "img/d0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Teenage Mutant Ninja Turtles Play Booster Box",
+   "sub": "Play Booster Box",
+   "before": 9999,
+   "after": 7500,
+   "pct": -25,
+   "stores": 119,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/657849_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/teenage-mutant-ninja-turtles-play-booster-box",
+   "imgFile": "img/d1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Secrets of Strixhaven Commander Deck - Witherbloom Pestilence",
+   "sub": "Commander Deck",
+   "before": 5400,
+   "after": 4299,
+   "pct": -20,
+   "stores": 14,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/675569_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/secrets-of-strixhaven-commander-deck-witherbloom-pestilence",
+   "imgFile": "img/d2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "fine": "Cheapest in-stock US store price, 2 Nov vs 9 Nov 2026. Prices change. Unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards."
+}

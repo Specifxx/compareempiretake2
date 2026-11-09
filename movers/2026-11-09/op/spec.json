@@ -1,0 +1,110 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "op",
+ "siteName": "OP Compare",
+ "topic": "One Piece Card Game",
+ "host": "opcompare.app",
+ "accent": "#e0454a",
+ "page": "opcompare.app/movers",
+ "from": "2026-11-01",
+ "to": "2026-11-08",
+ "range": "1 Nov → 8 Nov",
+ "basis": "TCGplayer market price",
+ "cardsArt": true,
+ "up": [
+  {
+   "name": "Mr. 1 (Daz.Bonez)",
+   "sub": "Extra Booster: Memorial Collection",
+   "before": 302,
+   "after": 559,
+   "pct": 85,
+   "image": null,
+   "tile": {
+    "number": "EB01-027",
+    "rarity": "R"
+   },
+   "link": "https://opcompare.app/card/mr-1-daz-bonez-eb01-027",
+   "card": true
+  },
+  {
+   "name": "Gloriosa",
+   "sub": "Extra Booster: One Piece Heroines Edition Vol. 2",
+   "before": 471,
+   "after": 761,
+   "pct": 62,
+   "image": null,
+   "tile": {
+    "number": "EB05-052",
+    "rarity": "SR"
+   },
+   "link": "https://opcompare.app/card/gloriosa-eb05-052",
+   "card": true
+  },
+  {
+   "name": "Gloriosa · Super Rare Alternate Art",
+   "sub": "Extra Booster: One Piece Heroines Edition Vol. 2",
+   "before": 2387,
+   "after": 3852,
+   "pct": 61,
+   "image": null,
+   "tile": {
+    "number": "EB05-052",
+    "rarity": "SR"
+   },
+   "link": "https://opcompare.app/card/gloriosa-eb05-052-alternate-art",
+   "card": true
+  }
+ ],
+ "down": [
+  {
+   "name": "Marco · SP",
+   "sub": "Extra Booster: Anime 25th Collection",
+   "before": 119934,
+   "after": 72200,
+   "pct": -40,
+   "image": null,
+   "tile": {
+    "number": "OP08-002",
+    "rarity": "L"
+   },
+   "link": "https://opcompare.app/card/marco-op08-002-sp",
+   "card": true
+  },
+  {
+   "name": "Baby 5 · Alternate Art",
+   "sub": "Extra Booster: One Piece Heroines Edition Vol. 2",
+   "before": 1529,
+   "after": 936,
+   "pct": -39,
+   "image": null,
+   "tile": {
+    "number": "EB05-004",
+    "rarity": "R"
+   },
+   "link": "https://opcompare.app/card/baby-5-eb05-004-alternate-art",
+   "card": true
+  },
+  {
+   "name": "Are You That Afraid of the New Era?! · Alternate Art",
+   "sub": "The World's Strongest Warriors",
+   "before": 6347,
+   "after": 3954,
+   "pct": -38,
+   "image": null,
+   "tile": {
+    "number": "OP17-037",
+    "rarity": "R"
+   },
+   "link": "https://opcompare.app/card/are-you-that-afraid-of-the-new-era-op17-037-alternate-art",
+   "card": true
+  }
+ ],
+ "fine": "TCGplayer market price, 1 Nov vs 8 Nov 2026. Prices change. Not affiliated with Bandai or Toei Animation."
+}

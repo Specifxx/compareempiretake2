@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "dex",
+ "siteName": "DexCompare",
+ "topic": "Pokémon TCG",
+ "host": "dexcompare.app",
+ "accent": "#ffcb05",
+ "page": "dexcompare.app/us/price-moves",
+ "from": "2026-11-02",
+ "to": "2026-11-09",
+ "range": "2 Nov → 9 Nov",
+ "basis": "Cheapest in-stock US store price",
+ "cardsArt": false,
+ "up": [
+  {
+   "name": "Charizard ex Special Collection",
+   "sub": "Collection",
+   "before": 3399,
+   "after": 4499,
+   "pct": 32,
+   "stores": 32,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/616305_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/charizard-ex-special-collection-2",
+   "imgFile": "img/u0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "30th Celebration - Tech Sticker Collection - Alolan Exeggutor",
+   "sub": "Collection",
+   "before": 2598,
+   "after": 3374,
+   "pct": 30,
+   "stores": 12,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/704145_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/30th-celebration-tech-sticker-collection-alolan-exeggutor",
+   "imgFile": "img/u1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Reshiram ex Box",
+   "sub": "Collection",
+   "before": 3499,
+   "after": 4495,
+   "pct": 28,
+   "stores": 5,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/666512_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/reshiram-ex-box",
+   "imgFile": "img/u2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "down": [
+  {
+   "name": "Delta Reign Booster Bundle",
+   "sub": "Booster Bundle",
+   "before": 3999,
+   "after": 2694,
+   "pct": -33,
+   "stores": 64,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/712097_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/delta-reign-booster-bundle",
+   "imgFile": "img/d0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "30th Celebration Figure Collection [Mew] [30C]",
+   "sub": "Collection",
+   "before": 9999,
+   "after": 6799,
+   "pct": -32,
+   "stores": 4,
+   "image": "https://cdn.shopify.com/s/files/1/0285/1320/6404/files/704193.jpg?v=1783878677",
+   "link": "https://dexcompare.app/us/p/30th-celebration-figure-collection-mew-30c",
+   "imgFile": "img/d1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Prismatic Evolutions - Tech Sticker Collection - Glaceon",
+   "sub": "Collection",
+   "before": 3995,
+   "after": 3000,
+   "pct": -25,
+   "stores": 3,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/593451_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/prismatic-evolutions-tech-sticker-collection-glaceon",
+   "imgFile": "img/d2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "fine": "Cheapest in-stock US store price, 2 Nov vs 9 Nov 2026. Prices change. Not affiliated with Nintendo, The Pokémon Company or Creatures."
+}
