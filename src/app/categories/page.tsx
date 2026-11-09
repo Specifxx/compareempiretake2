@@ -19,7 +19,7 @@ export default function CategoriesPage() {
         const cats = live.filter((c) => c.department === d.id);
         if (!cats.length) return null;
         return (
-          <section key={d.id} className="mt-10">
+          <section key={d.id} id={`dept-${d.id}`} className="mt-10 scroll-mt-24">
             <h2 className="eyebrow mb-3">{d.name}</h2>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
               {cats.map((c) => (
