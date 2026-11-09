@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T00:03:41.727Z",
+ "scrapedAt": "2026-11-09T00:13:01.939Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
@@ -49,8 +49,8 @@
    "sku": "100-100001905BOX",
    "title": "AMD Ryzen 5 5500F processor 3 GHz 19 MB L2 & L3 Box",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-5-5500f-6-core-am4-processor-12-threads-3ghz-up-to-4-4ghz-boost-19mb-cache-65w-with-wraith-stealth-cooler-no-graphics",
-   "price": 104.99,
-   "wasPrice": 113.99,
+   "price": 99.99,
+   "wasPrice": 104.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/9170a599f1480735a619d8f69750203370d0e2bda4241f9128c7d5922fb03434.jpg?v=1790472035",
    "inStock": true,
    "mpn": "100-100001905BOX"
@@ -71,7 +71,7 @@
    "title": "AMD Ryzen 5 5600X processor 3.7 GHz 32 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-5-5600x-processor-3-7-ghz-32-mb-l3-tray",
    "price": 117.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/Coming-Soon_1fc418b7-3a2c-4b93-8de1-102995811e75.jpg?v=1794049218",
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/ee23896ea232552b0313f42505f032e65c9da2865ab2a00e93b3d8be868fc5ec.jpg?v=1794102382",
    "inStock": true
   },
   {
@@ -166,7 +166,8 @@
    "sku": "100-000000926",
    "title": "AMD Ryzen 7 5700X processor 3.4 GHz 32 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-7-5700x-am4-tray",
-   "price": 177.99,
+   "price": 168.99,
+   "wasPrice": 177.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/e50fa32e134700a029a82a810c8bf731_59ec9552-ce7c-4016-ad8d-deb528c57a80.jpg?v=1782296249",
    "inStock": true,
    "brand": "AMD BOXED"
@@ -209,7 +210,7 @@
    "sku": "100-000001973",
    "title": "AMD Ryzen 7 9850X3D processor 4.7 GHz 96 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-7-9850x3d-am5-tray",
-   "price": 460.99,
+   "price": 438.99,
    "wasPrice": 463.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/85a66712e36f9364be9042d4d93d21ad_c11fd11e-d250-49eb-a6e7-aa5e1fd52a05.jpg?v=1782346280",
    "inStock": true,
@@ -252,7 +253,7 @@
    "sku": "100-100001978WOF",
    "title": "AMD Ryzen 9 9950X3D2 Dual Edition processor 4.3 GHz 192 MB L3 Box",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-9-9950x3d2-am5-ret-wof",
-   "price": 862.99,
+   "price": 776.99,
    "wasPrice": 912.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b83c52e68a614c2fae805487e561c688_939befad-e4f1-4fac-96cc-1f64e9f89e49.jpg?v=1793499121",
    "inStock": true,
@@ -619,6 +620,17 @@
    "inStock": true,
    "brand": "INTEL",
    "mpn": "AT807683B9B4884"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "PK8072006398601",
+   "title": "Intel Xeon 6515P processor 2.3 GHz 72 MB Tray",
+   "url": "https://directcomputers.co.uk/products/intel-xeon-6515p-fc-lga18n-tray",
+   "price": 801.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/7501f2348f65384fcb7c0bd46e4e1ce8.jpg?v=1794102456",
+   "inStock": true,
+   "brand": "INTEL",
+   "mpn": "PK8072006398601"
   },
   {
    "retailer": "uk-directcomputers",

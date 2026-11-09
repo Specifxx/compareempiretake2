@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-07T22:54:51.069Z",
+ "scrapedAt": "2026-11-08T23:04:17.466Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -8,7 +8,7 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060-ti-dual-oc-16gb-video-card-white-ac89745",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060_ti_dual_oc_16gb_video_card_ac89745_21480.jpg?v=1787795381",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -218,7 +218,7 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5070-prime-oc-12gb-gddr7-video-card-white-ac87767",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5070_prime_oc_12gb_gddr7_video_card_white_ac87767_84240.jpg?v=1787795387",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -256,7 +256,7 @@
    "sku": "AC81480",
    "title": "ASUS GeForce RTX 5080 PRIME 16GB GDDR7 OC Edition Video Card",
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5080-prime-16gb-gddr7-oc-edition-video-card-ac81480",
-   "price": 2799,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5080_prime_16gb_gddr7_oc_edition_video_card_ac81480_53507.jpg?v=1787795385",
    "inStock": false,
    "brand": "Asus"
@@ -306,7 +306,7 @@
    "sku": "AC99572",
    "title": "ASUS PRIME GeForce RTX 5080 EVO 16GB GDDR7 OC Edition Video Card",
    "url": "https://www.mwave.com.au/products/asus-prime-geforce-rtx-5080-evo-16gb-gddr7-oc-edition-video-card-ac99572",
-   "price": 2799,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_prime_geforce_rtx_5080_evo_16gb_gddr7_oc_edition_video_card_ac99572_31571.jpg?v=1787795419",
    "inStock": false,
    "brand": "Asus"
@@ -1056,9 +1056,9 @@
    "sku": "AC99932",
    "title": "Gigabyte GeForce RTX 5080 AORUS INFINITY 16GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5080-aorus-infinity-16gb-video-card-ac99932",
-   "price": 3299,
+   "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5080_aorus_infinity_16gb_video_card_ac99932_46317.jpg?v=1787796653",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gigabyte"
   },
   {
@@ -1066,7 +1066,7 @@
    "sku": "AC99933",
    "title": "Gigabyte GeForce RTX 5080 AORUS INFINITY WOOD 16GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5080-aorus-infinity-wood-16gb-video-card-ac99933",
-   "price": 3299,
+   "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5080_aorus_infinity_wood_16gb_video_card_ac99933_19058.jpg?v=1787745872",
    "inStock": false,
    "brand": "Gigabyte"
@@ -1096,7 +1096,7 @@
    "sku": "AC81826",
    "title": "Gigabyte GeForce RTX 5080 GAMING OC 16GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5080-gaming-oc-16gb-video-card-ac81826",
-   "price": 3499,
+   "price": 3199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5080_gaming_oc_16gb_video_card_ac81826_9170.jpg?v=1787796653",
    "inStock": true,
    "brand": "Gigabyte"
@@ -1386,7 +1386,7 @@
    "sku": "AC82068",
    "title": "Inno3D GeForce RTX 5080 X3 16GB Video Card",
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5080-x3-16gb-video-card-ac82068",
-   "price": 2799,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5080_x3_16gb_video_card_ac82068_77743.jpg?v=1787797063",
    "inStock": false,
    "brand": "Inno3D"
@@ -1396,7 +1396,7 @@
    "sku": "AC82069",
    "title": "Inno3D GeForce RTX 5080 X3 OC 16GB Video Card",
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5080-x3-oc-16gb-video-card-ac82069",
-   "price": 2799,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5080_x3_oc_16gb_video_card_ac82069_75886.jpg?v=1787785845",
    "inStock": false,
    "brand": "Inno3D"
@@ -1803,10 +1803,20 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC92600",
+   "title": "MSI GeForce RTX 5070 Ti MLG EDITION OC 16GB GDDR7 Video Card",
+   "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-ti-mlg-edition-oc-16gb-gddr7-video-card-ac92600",
+   "price": 1799,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_ti_mlg_edition_oc_16gb_gddr7_video_card_ac92600_42512.jpg?v=1793160643",
+   "inStock": false,
+   "brand": "MSI"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC83828",
    "title": "MSI GeForce RTX 5070 Ti SHADOW 3X OC 16GB Video Card",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-ti-shadow-3x-oc-16gb-video-card-ac83828",
-   "price": 1999,
+   "price": 2099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_ti_shadow_3x_oc_16gb_video_card_ac83828_52054.jpg?v=1787746813",
    "inStock": false,
    "brand": "MSI"
@@ -2116,7 +2126,7 @@
    "sku": "182284",
    "title": "Palit GeForce RTX 5080 GamingPro OC 16GB GDDR7 Video Card",
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5080-gamingpro-oc-16gb-gddr7-video-card",
-   "price": 2599,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/182284_9.png?v=1792033388",
    "inStock": false,
    "brand": "Palit"
@@ -2126,7 +2136,7 @@
    "sku": "AC98937",
    "title": "Palit GeForce RTX 5080 Infinity 3 16GB Video Card",
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5080-infinity-3-16gb-video-card-ac98937",
-   "price": 2799,
+   "price": 2899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5080_infinity_3_16gb_video_card_ac98937_47714.jpg?v=1787798052",
    "inStock": false,
    "brand": "Palit"
@@ -2156,7 +2166,7 @@
    "sku": "AC92215",
    "title": "Sapphire AMD Radeon AI Pro R9700 Blower 32GB GDDR6 Video Card",
    "url": "https://www.mwave.com.au/products/sapphire-amd-radeon-ai-pro-r9700-blower-32gb-gddr6-video-card-ac92215",
-   "price": 2499,
+   "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sapphire_amd_radeon_ai_pro_r9700_blower_32gb_gddr6_video_card_ac92215_75112.jpg?v=1787798349",
    "inStock": false,
    "brand": "Sapphire"
@@ -2256,7 +2266,7 @@
    "sku": "AC90927",
    "title": "XFX AMD Radeon AI Pro R9700 32GB GDDR6 Video Card",
    "url": "https://www.mwave.com.au/products/xfx-amd-radeon-ai-pro-r9700-32gb-gddr6-video-card-ac90927",
-   "price": 2399,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/xfx_amd_radeon_ai_pro_r9700_blower_32gb_gddr6_video_card_ac90927_99729.jpg?v=1787748354",
    "inStock": false,
    "brand": "XFX"
@@ -2276,7 +2286,7 @@
    "sku": "AC87625",
    "title": "XFX AMD Radeon RX 9070XT Mercury OC Magnetic Air Edition 16GB GDDR6 Video Card",
    "url": "https://www.mwave.com.au/products/xfx-amd-radeon-rx-9070xt-mercury-oc-magnetic-air-edition-16gb-gddr6-video-card-ac87625",
-   "price": 1379,
+   "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/xfx_amd_radeon_rx_9070xt_mercury_oc_magnetic_air_edition_16gb_gddr6_video_card_ac87625_18082.jpg?v=1787799789",
    "inStock": true,
    "brand": "XFX"
@@ -2286,7 +2296,7 @@
    "sku": "AC87626",
    "title": "XFX AMD Radeon RX 9070XT Mercury OC Magnetic Air Edition 16GB GDDR6 Video Card - White",
    "url": "https://www.mwave.com.au/products/xfx-amd-radeon-rx-9070xt-mercury-oc-magnetic-air-edition-16gb-gddr6-video-card-white-ac87626",
-   "price": 1369,
+   "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/xfx_amd_radeon_rx_9070xt_mercury_oc_magnetic_air_edition_16gb_gddr6_video_card_white_ac87626_58701.jpg?v=1787799794",
    "inStock": true,
    "brand": "XFX"
@@ -2296,9 +2306,9 @@
    "sku": "AC93385",
    "title": "XFX Mercury Radeon RX9070 XT OC Gaming Edition 16GB GDDR6 Video Card",
    "url": "https://www.mwave.com.au/products/xfx-mercury-radeon-rx9070-xt-oc-gaming-edition-16gb-gddr6-video-card-ac93385",
-   "price": 1329,
+   "price": 1579,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/rx97trgbbb9_ac93385_69871.jpg?v=1787799796",
-   "inStock": false,
+   "inStock": true,
    "brand": "XFX"
   },
   {
@@ -2386,7 +2396,7 @@
    "sku": "AC98692",
    "title": "Zotac Gaming GeForce RTX 5080 SOLID CORE OC 16GB Video Card",
    "url": "https://www.mwave.com.au/products/zotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-video-card-ac98692",
-   "price": 2799,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/zotac_gaming_geforce_rtx_5080_solid_core_oc_16gb_video_card_ac98692_16043.jpg?v=1787799873",
    "inStock": false,
    "brand": "Zotac"

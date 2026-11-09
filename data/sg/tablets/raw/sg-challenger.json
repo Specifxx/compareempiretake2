@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T00:17:14.615Z",
+ "scrapedAt": "2026-11-09T00:26:44.080Z",
  "offers": [
   {
    "retailer": "sg-challenger",
@@ -48,7 +48,7 @@
    "url": "https://www.challenger.sg/products/mj6c4zp-a-ipad-mini-wi-fi-cell-256gb-std-midnight",
    "price": 1379,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_mini_A20_Pro_Cellular_Midnight_PDP_Image_Position_1__SG-EN.jpg?v=1793154962",
-   "inStock": true,
+   "inStock": false,
    "brand": "APPLE"
   },
   {
@@ -339,7 +339,8 @@
    "sku": "0195950810769",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 128GB - Blue",
    "url": "https://www.challenger.sg/products/mh794zp-a-m4-11-ipad-air-wi-fi-cel-128gb-blue",
-   "price": 1379,
+   "price": 1171,
+   "wasPrice": 1379,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772595046",
    "inStock": false,
    "brand": "APPLE"
@@ -349,7 +350,8 @@
    "sku": "0195950811285",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 128GB - Purple",
    "url": "https://www.challenger.sg/products/mh7c4zp-a-m4-11-ipad-air-wi-fi-cel-128gb-purple",
-   "price": 1379,
+   "price": 1171,
+   "wasPrice": 1379,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772595073",
    "inStock": false,
    "brand": "APPLE"
@@ -359,7 +361,8 @@
    "sku": "0195950810509",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 128GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh784zp-a-m4-11-ipad-air-wi-fi-cel-128gb-space-grey",
-   "price": 1379,
+   "price": 1171,
+   "wasPrice": 1379,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772595080",
    "inStock": false,
    "brand": "APPLE"
@@ -369,7 +372,8 @@
    "sku": "0195950811025",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 128GB - Starlight",
    "url": "https://www.challenger.sg/products/mh7a4zp-a-m4-11-ipad-air-wi-fi-cel-128gb-starlight",
-   "price": 1379,
+   "price": 1171,
+   "wasPrice": 1379,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772595089",
    "inStock": true,
    "brand": "APPLE"
@@ -379,7 +383,8 @@
    "sku": "0195950813883",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 1TB - Blue",
    "url": "https://www.challenger.sg/products/mh7n4zp-a-m4-11-ipad-air-wi-fi-cel-1tb-blue",
-   "price": 2279,
+   "price": 2079,
+   "wasPrice": 2279,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772595046",
    "inStock": false,
    "brand": "APPLE"
@@ -389,7 +394,8 @@
    "sku": "0195950814408",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 1TB - Purple",
    "url": "https://www.challenger.sg/products/mh7q4zp-a-m4-11-ipad-air-wi-fi-cel-1tb-purple",
-   "price": 2279,
+   "price": 2079,
+   "wasPrice": 2279,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772595073",
    "inStock": false,
    "brand": "APPLE"
@@ -399,7 +405,8 @@
    "sku": "0195950813623",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 1TB - Space Grey",
    "url": "https://www.challenger.sg/products/mh7m4zp-a-m4-11-ipad-air-wi-fi-cel-1tb-space-grey",
-   "price": 2279,
+   "price": 2079,
+   "wasPrice": 2279,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772595080",
    "inStock": false,
    "brand": "APPLE"
@@ -409,7 +416,8 @@
    "sku": "0195950814149",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 1TB - Starlight",
    "url": "https://www.challenger.sg/products/mh7p4zp-a-m4-11-ipad-air-wi-fi-cel-1tb-starlight",
-   "price": 2279,
+   "price": 2079,
+   "wasPrice": 2279,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772595089",
    "inStock": false,
    "brand": "APPLE"
@@ -419,7 +427,8 @@
    "sku": "0195950811803",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 256GB - Blue",
    "url": "https://www.challenger.sg/products/mh7e4zp-a-m4-11-ipad-air-wi-fi-cel-256gb-blue",
-   "price": 1529,
+   "price": 1329,
+   "wasPrice": 1529,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772595046",
    "inStock": false,
    "brand": "APPLE"
@@ -429,7 +438,8 @@
    "sku": "0195950812329",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 256GB - Purple",
    "url": "https://www.challenger.sg/products/mh7g4zp-a-m4-11-ipad-air-wi-fi-cel-256gb-purple",
-   "price": 1529,
+   "price": 1329,
+   "wasPrice": 1529,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772595073",
    "inStock": false,
    "brand": "APPLE"
@@ -439,7 +449,8 @@
    "sku": "0195950811544",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 256GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh7d4zp-a-m4-11-ipad-air-wi-fi-cel-256gb-space-grey",
-   "price": 1529,
+   "price": 1329,
+   "wasPrice": 1529,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772595080",
    "inStock": false,
    "brand": "APPLE"
@@ -449,9 +460,10 @@
    "sku": "0195950812060",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 256GB - Starlight",
    "url": "https://www.challenger.sg/products/mh7f4zp-a-m4-11-ipad-air-wi-fi-cel-256gb-starlight",
-   "price": 1529,
+   "price": 1329,
+   "wasPrice": 1529,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772595089",
-   "inStock": true,
+   "inStock": false,
    "brand": "APPLE"
   },
   {
@@ -459,7 +471,8 @@
    "sku": "0195950812848",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 512GB - Blue",
    "url": "https://www.challenger.sg/products/mh7j4zp-a-m4-11-ipad-air-wi-fi-cel-512gb-blue",
-   "price": 1829,
+   "price": 1629,
+   "wasPrice": 1829,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772595046",
    "inStock": false,
    "brand": "APPLE"
@@ -469,7 +482,8 @@
    "sku": "0195950813364",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 512GB - Purple",
    "url": "https://www.challenger.sg/products/mh7l4zp-a-m4-11-ipad-air-wi-fi-cel-512gb-purple",
-   "price": 1829,
+   "price": 1629,
+   "wasPrice": 1829,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772595073",
    "inStock": false,
    "brand": "APPLE"
@@ -479,7 +493,8 @@
    "sku": "0195950812589",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 512GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh7h4zp-a-m4-11-ipad-air-wi-fi-cel-512gb-space-grey",
-   "price": 1829,
+   "price": 1629,
+   "wasPrice": 1829,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772595080",
    "inStock": false,
    "brand": "APPLE"
@@ -489,7 +504,8 @@
    "sku": "0195950813104",
    "title": "iPad Air 11\" M4 Wi-Fi + Cell 512GB - Starlight",
    "url": "https://www.challenger.sg/products/mh7k4zp-a-m4-11-ipad-air-wi-fi-cel-512gb-starlight",
-   "price": 1829,
+   "price": 1629,
+   "wasPrice": 1829,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_Cellular_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772595089",
    "inStock": false,
    "brand": "APPLE"
@@ -499,7 +515,8 @@
    "sku": "0195950823905",
    "title": "iPad Air 11\" M4 Wi-Fi 128GB - Blue",
    "url": "https://www.challenger.sg/products/mh314zp-a-m4-11-ipad-air-wi-fi-128gb-blue",
-   "price": 1149,
+   "price": 949,
+   "wasPrice": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772591266",
    "inStock": true,
    "brand": "APPLE"
@@ -509,7 +526,8 @@
    "sku": "0195950824360",
    "title": "iPad Air 11\" M4 Wi-Fi 128GB - Purple",
    "url": "https://www.challenger.sg/products/mh344zp-a-m4-11-ipad-air-wi-fi-128gb-purple",
-   "price": 1149,
+   "price": 949,
+   "wasPrice": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772591279",
    "inStock": true,
    "brand": "APPLE"
@@ -519,7 +537,8 @@
    "sku": "0195950823677",
    "title": "iPad Air 11\" M4 Wi-Fi 128GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh304zp-a-m4-11-ipad-air-wi-fi-128gb-space-grey",
-   "price": 1149,
+   "price": 949,
+   "wasPrice": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772591284",
    "inStock": true,
    "brand": "APPLE"
@@ -529,7 +548,8 @@
    "sku": "0195950824131",
    "title": "iPad Air 11\" M4 Wi-Fi 128GB - Starlight",
    "url": "https://www.challenger.sg/products/mh334zp-a-m4-11-ipad-air-wi-fi-128gb-starlight",
-   "price": 1149,
+   "price": 949,
+   "wasPrice": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772591289",
    "inStock": true,
    "brand": "APPLE"
@@ -539,7 +559,8 @@
    "sku": "0195950826661",
    "title": "iPad Air 11\" M4 Wi-Fi 1TB - Blue",
    "url": "https://www.challenger.sg/products/mh3h4zp-a-m4-11-ipad-air-wi-fi-1tb-blue",
-   "price": 2049,
+   "price": 1849,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772591266",
    "inStock": false,
    "brand": "APPLE"
@@ -549,7 +570,8 @@
    "sku": "0195950827125",
    "title": "iPad Air 11\" M4 Wi-Fi 1TB - Purple",
    "url": "https://www.challenger.sg/products/mh3k4zp-a-m4-11-ipad-air-wi-fi-1tb-purple",
-   "price": 2049,
+   "price": 1849,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772591279",
    "inStock": false,
    "brand": "APPLE"
@@ -559,7 +581,8 @@
    "sku": "0195950826432",
    "title": "iPad Air 11\" M4 Wi-Fi 1TB - Space Grey",
    "url": "https://www.challenger.sg/products/mh3g4zp-a-m4-11-ipad-air-wi-fi-1tb-space-grey",
-   "price": 2049,
+   "price": 1849,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772591284",
    "inStock": false,
    "brand": "APPLE"
@@ -569,7 +592,8 @@
    "sku": "0195950826890",
    "title": "iPad Air 11\" M4 Wi-Fi 1TB - Starlight",
    "url": "https://www.challenger.sg/products/mh3j4zp-a-m4-11-ipad-air-wi-fi-1tb-starlight",
-   "price": 2049,
+   "price": 1849,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772591289",
    "inStock": false,
    "brand": "APPLE"
@@ -579,7 +603,8 @@
    "sku": "0195950824827",
    "title": "iPad Air 11\" M4 Wi-Fi 256GB - Blue",
    "url": "https://www.challenger.sg/products/mh364zp-a-m4-11-ipad-air-wi-fi-256gb-blue",
-   "price": 1299,
+   "price": 1099,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772591266",
    "inStock": true,
    "brand": "APPLE"
@@ -589,7 +614,8 @@
    "sku": "0195950825282",
    "title": "iPad Air 11\" M4 Wi-Fi 256GB - Purple",
    "url": "https://www.challenger.sg/products/mh394zp-a-m4-11-ipad-air-wi-fi-256gb-purple",
-   "price": 1299,
+   "price": 1099,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772591279",
    "inStock": false,
    "brand": "APPLE"
@@ -599,7 +625,8 @@
    "sku": "0195950824599",
    "title": "iPad Air 11\" M4 Wi-Fi 256GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh354zp-a-m4-11-ipad-air-wi-fi-256gb-space-grey",
-   "price": 1299,
+   "price": 1099,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772591284",
    "inStock": true,
    "brand": "APPLE"
@@ -609,7 +636,8 @@
    "sku": "0195950825053",
    "title": "iPad Air 11\" M4 Wi-Fi 256GB - Starlight",
    "url": "https://www.challenger.sg/products/mh374zp-a-m4-11-ipad-air-wi-fi-256gb-starlight",
-   "price": 1299,
+   "price": 1099,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772591289",
    "inStock": true,
    "brand": "APPLE"
@@ -619,7 +647,8 @@
    "sku": "0195950825749",
    "title": "iPad Air 11\" M4 Wi-Fi 512GB - Blue",
    "url": "https://www.challenger.sg/products/mh3c4zp-a-m4-11-ipad-air-wi-fi-512gb-blue",
-   "price": 1599,
+   "price": 1399,
+   "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772591266",
    "inStock": false,
    "brand": "APPLE"
@@ -629,7 +658,8 @@
    "sku": "0195950826203",
    "title": "iPad Air 11\" M4 Wi-Fi 512GB - Purple",
    "url": "https://www.challenger.sg/products/mh3e4zp-a-m4-11-ipad-air-wi-fi-512gb-purple",
-   "price": 1599,
+   "price": 1399,
+   "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772591279",
    "inStock": false,
    "brand": "APPLE"
@@ -639,7 +669,8 @@
    "sku": "0195950825510",
    "title": "iPad Air 11\" M4 Wi-Fi 512GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh3a4zp-a-m4-11-ipad-air-wi-fi-512gb-space-grey",
-   "price": 1599,
+   "price": 1399,
+   "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772591284",
    "inStock": false,
    "brand": "APPLE"
@@ -649,7 +680,8 @@
    "sku": "0195950825978",
    "title": "iPad Air 11\" M4 Wi-Fi 512GB - Starlight",
    "url": "https://www.challenger.sg/products/mh3d4zp-a-m4-11-ipad-air-wi-fi-512gb-starlight",
-   "price": 1599,
+   "price": 1399,
+   "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772591289",
    "inStock": false,
    "brand": "APPLE"
@@ -659,7 +691,8 @@
    "sku": "0195950785043",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 128GB - Blue",
    "url": "https://www.challenger.sg/products/mh9e4zp-a-m4-13-ipad-air-wi-fi-cel-128gb-blue",
-   "price": 1679,
+   "price": 1468,
+   "wasPrice": 1679,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772598740",
    "inStock": false,
    "brand": "APPLE"
@@ -669,7 +702,8 @@
    "sku": "0195950785562",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 128GB - Purple",
    "url": "https://www.challenger.sg/products/mh9g4zp-a-m4-13-ipad-air-wi-fi-cel-128gb-purple",
-   "price": 1679,
+   "price": 1468,
+   "wasPrice": 1679,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772598546",
    "inStock": false,
    "brand": "APPLE"
@@ -679,7 +713,8 @@
    "sku": "0195950784787",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 128GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh9d4zp-a-m4-13-ipad-air-wi-fi-cel-128gb-space-grey",
-   "price": 1679,
+   "price": 1468,
+   "wasPrice": 1679,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772598526",
    "inStock": false,
    "brand": "APPLE"
@@ -689,7 +724,8 @@
    "sku": "0195950785302",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 128GB - Starlight",
    "url": "https://www.challenger.sg/products/mh9f4zp-a-m4-13-ipad-air-wi-fi-cel-128gb-starlight",
-   "price": 1679,
+   "price": 1468,
+   "wasPrice": 1679,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772598535",
    "inStock": false,
    "brand": "APPLE"
@@ -699,7 +735,8 @@
    "sku": "0195950788167",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 1TB - Blue",
    "url": "https://www.challenger.sg/products/mh9t4zp-a-m4-13-ipad-air-wi-fi-cel-1tb-blue",
-   "price": 2579,
+   "price": 2368,
+   "wasPrice": 2579,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772598740",
    "inStock": false,
    "brand": "APPLE"
@@ -709,7 +746,8 @@
    "sku": "0195950788686",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 1TB - Purple",
    "url": "https://www.challenger.sg/products/mh9v4zp-a-m4-13-ipad-air-wi-fi-cel-1tb-purple",
-   "price": 2579,
+   "price": 2368,
+   "wasPrice": 2579,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772598546",
    "inStock": false,
    "brand": "APPLE"
@@ -719,7 +757,8 @@
    "sku": "0195950787900",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 1TB - Space Grey",
    "url": "https://www.challenger.sg/products/mh9r4zp-a-m4-13-ipad-air-wi-fi-cel-1tb-space-grey",
-   "price": 2579,
+   "price": 2368,
+   "wasPrice": 2579,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772598526",
    "inStock": false,
    "brand": "APPLE"
@@ -729,7 +768,8 @@
    "sku": "0195950788426",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 1TB - Starlight",
    "url": "https://www.challenger.sg/products/mh9u4zp-a-m4-13-ipad-air-wi-fi-cel-1tb-starlight",
-   "price": 2579,
+   "price": 2368,
+   "wasPrice": 2579,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772598535",
    "inStock": false,
    "brand": "APPLE"
@@ -739,7 +779,8 @@
    "sku": "0195950786088",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 256GB - Blue",
    "url": "https://www.challenger.sg/products/mh9j4zp-a-m4-13-ipad-air-wi-fi-cel-256gb-blue",
-   "price": 1829,
+   "price": 1618,
+   "wasPrice": 1829,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772598740",
    "inStock": false,
    "brand": "APPLE"
@@ -749,7 +790,8 @@
    "sku": "0195950785821",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 256GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh9h4zp-a-m4-13-ipad-air-wi-fi-cel-256gb-space-grey",
-   "price": 1829,
+   "price": 1618,
+   "wasPrice": 1829,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772598526",
    "inStock": false,
    "brand": "APPLE"
@@ -759,7 +801,8 @@
    "sku": "0195950787122",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 512GB - Blue",
    "url": "https://www.challenger.sg/products/mh9n4zp-a-m4-13-ipad-air-wi-fi-cel-512gb-blue",
-   "price": 2129,
+   "price": 1918,
+   "wasPrice": 2129,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772598740",
    "inStock": false,
    "brand": "APPLE"
@@ -769,7 +812,8 @@
    "sku": "0195950787641",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 512GB - Purple",
    "url": "https://www.challenger.sg/products/mh9q4zp-a-m4-13-ipad-air-wi-fi-cel-512gb-purple",
-   "price": 2129,
+   "price": 1918,
+   "wasPrice": 2129,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772598546",
    "inStock": false,
    "brand": "APPLE"
@@ -779,7 +823,8 @@
    "sku": "0195950786866",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 512GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh9m4zp-a-m4-13-ipad-air-wi-fi-cel-512gb-space-grey",
-   "price": 2129,
+   "price": 1918,
+   "wasPrice": 2129,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772598526",
    "inStock": false,
    "brand": "APPLE"
@@ -789,7 +834,8 @@
    "sku": "0195950787382",
    "title": "iPad Air 13\" M4 Wi-Fi + Cell 512GB - Starlight",
    "url": "https://www.challenger.sg/products/mh9p4zp-a-m4-13-ipad-air-wi-fi-cel-512gb-starlight",
-   "price": 2129,
+   "price": 1918,
+   "wasPrice": 2129,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_Cellular_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772598535",
    "inStock": false,
    "brand": "APPLE"
@@ -799,7 +845,8 @@
    "sku": "0195950798142",
    "title": "iPad Air 13\" M4 Wi-Fi 128GB - Blue",
    "url": "https://www.challenger.sg/products/mh5p4zp-a-m4-13-ipad-air-wi-fi-128gb-blue",
-   "price": 1449,
+   "price": 1238,
+   "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772593730",
    "inStock": false,
    "brand": "APPLE"
@@ -809,7 +856,8 @@
    "sku": "0195950798609",
    "title": "iPad Air 13\" M4 Wi-Fi 128GB - Purple",
    "url": "https://www.challenger.sg/products/mh5t4zp-a-m4-13-ipad-air-wi-fi-128gb-purple",
-   "price": 1449,
+   "price": 1238,
+   "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772592227",
    "inStock": false,
    "brand": "APPLE"
@@ -819,7 +867,8 @@
    "sku": "0195950797916",
    "title": "iPad Air 13\" M4 Wi-Fi 128GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh5n4zp-a-m4-13-ipad-air-wi-fi-128gb-space-grey",
-   "price": 1449,
+   "price": 1238,
+   "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772592147",
    "inStock": false,
    "brand": "APPLE"
@@ -829,7 +878,8 @@
    "sku": "0195950798371",
    "title": "iPad Air 13\" M4 Wi-Fi 128GB - Starlight",
    "url": "https://www.challenger.sg/products/mh5q4zp-a-m4-13-ipad-air-wi-fi-128gb-starlight",
-   "price": 1449,
+   "price": 1238,
+   "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772592231",
    "inStock": false,
    "brand": "APPLE"
@@ -839,7 +889,8 @@
    "sku": "0195950800906",
    "title": "iPad Air 13\" M4 Wi-Fi 1TB - Blue",
    "url": "https://www.challenger.sg/products/mh644zp-a-m4-13-ipad-air-wi-fi-1tb-blue",
-   "price": 2349,
+   "price": 2138,
+   "wasPrice": 2349,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772593730",
    "inStock": false,
    "brand": "APPLE"
@@ -849,7 +900,8 @@
    "sku": "0195950801484",
    "title": "iPad Air 13\" M4 Wi-Fi 1TB - Purple",
    "url": "https://www.challenger.sg/products/mhdk4zp-a-m4-13-ipad-air-wi-fi-1tb-purple",
-   "price": 2349,
+   "price": 2138,
+   "wasPrice": 2349,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772592227",
    "inStock": false,
    "brand": "APPLE"
@@ -859,7 +911,8 @@
    "sku": "0195950800678",
    "title": "iPad Air 13\" M4 Wi-Fi 1TB - Space Grey",
    "url": "https://www.challenger.sg/products/mh634zp-a-m4-13-ipad-air-wi-fi-1tb-space-grey",
-   "price": 2349,
+   "price": 2138,
+   "wasPrice": 2349,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772592147",
    "inStock": false,
    "brand": "APPLE"
@@ -869,7 +922,8 @@
    "sku": "0195950801132",
    "title": "iPad Air 13\" M4 Wi-Fi 1TB - Starlight",
    "url": "https://www.challenger.sg/products/mh654zp-a-m4-13-ipad-air-wi-fi-1tb-starlight",
-   "price": 2349,
+   "price": 2138,
+   "wasPrice": 2349,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772592231",
    "inStock": false,
    "brand": "APPLE"
@@ -879,7 +933,8 @@
    "sku": "0195950799064",
    "title": "iPad Air 13\" M4 Wi-Fi 256GB - Blue",
    "url": "https://www.challenger.sg/products/mh5v4zp-a-m4-13-ipad-air-wi-fi-256gb-blue",
-   "price": 1599,
+   "price": 1388,
+   "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772593730",
    "inStock": true,
    "brand": "APPLE"
@@ -889,7 +944,8 @@
    "sku": "0195950799521",
    "title": "iPad Air 13\" M4 Wi-Fi 256GB - Purple",
    "url": "https://www.challenger.sg/products/mh5x4zp-a-m4-13-ipad-air-wi-fi-256gb-purple",
-   "price": 1599,
+   "price": 1388,
+   "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772592227",
    "inStock": false,
    "brand": "APPLE"
@@ -899,7 +955,8 @@
    "sku": "0195950798838",
    "title": "iPad Air 13\" M4 Wi-Fi 256GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh5u4zp-a-m4-13-ipad-air-wi-fi-256gb-space-grey",
-   "price": 1599,
+   "price": 1388,
+   "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772592147",
    "inStock": false,
    "brand": "APPLE"
@@ -909,7 +966,8 @@
    "sku": "0195950799293",
    "title": "iPad Air 13\" M4 Wi-Fi 256GB - Starlight",
    "url": "https://www.challenger.sg/products/mh5w4zp-a-m4-13-ipad-air-wi-fi-256gb-starlight",
-   "price": 1599,
+   "price": 1388,
+   "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772592231",
    "inStock": false,
    "brand": "APPLE"
@@ -919,7 +977,8 @@
    "sku": "0195950799989",
    "title": "iPad Air 13\" M4 Wi-Fi 512GB - Blue",
    "url": "https://www.challenger.sg/products/mh604zp-a-m4-13-ipad-air-wi-fi-512gb-blue",
-   "price": 1899,
+   "price": 1688,
+   "wasPrice": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772593730",
    "inStock": false,
    "brand": "APPLE"
@@ -929,7 +988,8 @@
    "sku": "0195950800449",
    "title": "iPad Air 13\" M4 Wi-Fi 512GB - Purple",
    "url": "https://www.challenger.sg/products/mh624zp-a-m4-13-ipad-air-wi-fi-512gb-purple",
-   "price": 1899,
+   "price": 1688,
+   "wasPrice": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Purple_PDP_Image_Position_1__SG-EN.jpg?v=1772592227",
    "inStock": false,
    "brand": "APPLE"
@@ -939,7 +999,8 @@
    "sku": "0195950799750",
    "title": "iPad Air 13\" M4 Wi-Fi 512GB - Space Grey",
    "url": "https://www.challenger.sg/products/mh5y4zp-a-m4-13-ipad-air-wi-fi-512gb-space-grey",
-   "price": 1899,
+   "price": 1688,
+   "wasPrice": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Space_Gray_PDP_Image_Position_1__SG-EN.jpg?v=1772592147",
    "inStock": false,
    "brand": "APPLE"
@@ -949,7 +1010,8 @@
    "sku": "0195950800210",
    "title": "iPad Air 13\" M4 Wi-Fi 512GB - Starlight",
    "url": "https://www.challenger.sg/products/mh614zp-a-m4-13-ipad-air-wi-fi-512gb-starlight",
-   "price": 1899,
+   "price": 1688,
+   "wasPrice": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_13-in_M4_WiFi_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772592231",
    "inStock": false,
    "brand": "APPLE"
