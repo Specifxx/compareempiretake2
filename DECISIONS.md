@@ -1864,3 +1864,20 @@ of every product takes ~10 days instead of ~6, so the coverage-first plan reache
 refresh) first and the long tail less often; those keep their "Search eBay" row when a listing ages out. Every site keeps its
 own counter per Pacific day; the keyset's deletion endpoint stays https://compareempire.com/api/ebay/account-deletion.
 Rebalance after two weeks of EPN earnings per call by customid (`ce-`, `wax-`, `mc-`).
+
+## 2026-11-09 — Navigation audit: menus in the HTML, search first on phones, breadcrumb to the category
+
+Owner: navigation is very important. The structure was already right (departments, a category bar, a megamenu), but its
+links existed only after a click: the "All categories" megamenu was mounted on click (`mega && …`), so a crawler saw none of
+the department or brand links, and the phone menu opened without search.
+
+- **The megamenu is always rendered** (`#mega-menu`, hidden by CSS until opened), so every department, category and AU brand
+  link is in the server HTML. It also opens on hover (hover-capable devices only), on click, closes on Escape, and marks the
+  current category.
+- **The phone menu starts with a search field** (opens the full-screen palette), lists every department, and ends with
+  "All categories A to Z", Deals, Brands, Guides and the forum.
+- **Category page:** the visible breadcrumb now ends on the category (Home / All categories / Department / Category); the
+  department links to its block on `/categories`. The "Top brands" chips are links in every region (the category's
+  `?brand=` filter; AU keeps its brand hubs). BreadcrumbList JSON-LD is unchanged.
+- No URL, title, canonical or JSON-LD changed. Not changed: the eBay and Amazon side rails and phone dock (owner-approved
+  2026-11-04 to 06, they float beside the page), and per-category sub-browse hubs (needs per-category facets; see report).

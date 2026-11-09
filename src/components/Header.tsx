@@ -49,11 +49,14 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
         else setOpen(true);
       }
     };
+    const onEsc = (e: KeyboardEvent) => e.key === "Escape" && (setMega(false), setMenu(false));
     window.addEventListener("keydown", onKey);
+    window.addEventListener("keydown", onEsc);
     const openSearch = () => setOpen(true);
     window.addEventListener("ce:search", openSearch);
     return () => {
       window.removeEventListener("keydown", onKey);
+      window.removeEventListener("keydown", onEsc);
       window.removeEventListener("ce:search", openSearch);
     };
   }, []);
@@ -69,7 +72,9 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
           <Logo wordmark="hidden min-[480px]:inline" />
           <button
             onClick={() => setMega((m) => !m)}
+            onMouseEnter={() => window.matchMedia("(hover: hover)").matches && setMega(true)}
             aria-expanded={mega}
+            aria-controls="mega-menu"
             className={`ml-2 hidden items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold transition md:inline-flex ${mega ? "bg-brand text-white" : "bg-bg-sunk text-ink hover:bg-brand-soft hover:text-brand"}`}
           >
             <MenuIcon className="h-4 w-4" /> All categories
@@ -130,8 +135,9 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
             ))}
           </nav>
         </div>
-        {mega && (
-          <div className="absolute inset-x-0 top-full hidden md:block" onMouseLeave={() => setMega(false)}>
+        {/* Always rendered (hidden until opened) so every department, category and brand link is in the server HTML. */}
+        {(
+          <div id="mega-menu" className={`absolute inset-x-0 top-full ${mega ? "hidden md:block" : "hidden"}`} onMouseLeave={() => setMega(false)}>
             <div className="container-x">
               <div className="card mt-2 grid max-h-[75vh] gap-x-8 gap-y-6 overflow-y-auto p-6 shadow-lift animate-fade-up md:grid-cols-3 lg:grid-cols-4">
                 {departments.map((d) => (
@@ -140,7 +146,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
                     <ul className="space-y-3">
                       {d.categories.map((c) => (
                         <li key={c.href}>
-                          <Link prefetch={false} href={c.href} className="group flex items-center gap-2 font-semibold hover:text-brand">
+                          <Link prefetch={false} href={c.href} aria-current={path === c.href || path.startsWith(c.href + "/") ? "page" : undefined} className={`group flex items-center gap-2 font-semibold hover:text-brand ${path === c.href || path.startsWith(c.href + "/") ? "text-brand" : ""}`}>
                             <span className="text-lg">{c.emoji}</span> {c.name}
                             <span className="text-xs font-normal text-ink-mute">{c.count.toLocaleString()}</span>
                           </Link>
@@ -161,7 +167,10 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
           </div>
         )}
         {menu && (
-          <nav className="container-x max-h-[75vh] overflow-y-auto pb-4 md:hidden">
+          <nav className="container-x max-h-[calc(100dvh-5rem)] overflow-y-auto overscroll-contain pb-6 md:hidden" aria-label="Menu">
+            <button onClick={() => { setMenu(false); setOpen(true); }} className="mb-2 mt-1 flex h-11 w-full items-center gap-2 rounded-xl border border-line bg-bg-card px-3 text-left text-sm text-ink-mute">
+              <SearchIcon className="h-4 w-4 shrink-0" /> Search products…
+            </button>
             {departments.map((d) => (
               <div key={d.name} className="border-t border-line py-3 first:border-0">
                 <div className="eyebrow mb-1 px-3">{d.name}</div>
@@ -173,6 +182,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
               </div>
             ))}
             <div className="border-t border-line pt-3">
+              <Link prefetch={false} href={region === "au" ? "/categories" : withRegion("/browse", region)} onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">All categories A to Z</Link>
               {NAV.map((n) => (
                 <Link prefetch={false} key={n.href} href={n.href} onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">{n.label}</Link>
               ))}

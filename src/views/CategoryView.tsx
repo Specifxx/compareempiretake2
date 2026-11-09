@@ -98,7 +98,7 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
     <div className="container-x pt-8">
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
         <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link> /{" "}
-        <Link prefetch={false} href={region === "au" ? "/categories" : withRegion("/browse", region)} className="hover:text-ink">All categories</Link> / <span>{dept.name}</span>
+        <Link prefetch={false} href={region === "au" ? "/categories" : withRegion("/browse", region)} className="hover:text-ink">All categories</Link> / <Link prefetch={false} href={`${region === "au" ? "/categories" : withRegion("/browse", region)}${region === "au" ? `#dept-${dept.id}` : ""}`} className="hover:text-ink">{dept.name}</Link> / <span aria-current="page">{c.name}</span>
       </nav>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
@@ -211,7 +211,7 @@ function CategoryGuideSection({ id, name, region, products }: { id: CategoryId; 
             region === "au" ? (
               <Link prefetch={false} key={b} href={`/brands/${b.toLowerCase().replace(/[^a-z0-9]+/g, "-")}?cat=${id}`} className="chip text-xs">{b} <span className="text-ink-mute">{n}</span></Link>
             ) : (
-              <span key={b} className="chip text-xs">{b} <span className="text-ink-mute">{n}</span></span>
+              <Link prefetch={false} key={b} href={`${categoryHref(id, region)}?brand=${encodeURIComponent(b)}`} className="chip text-xs">{b} <span className="text-ink-mute">{n}</span></Link>
             ),
           )}
         </div>
