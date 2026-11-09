@@ -359,8 +359,6 @@ export async function ProductView({ params, region }: { params: ProductParams; r
         </section>
       )}
 
-      <div className="mt-16"><NewsletterSignup compact /></div>
-
       {vs.length > 0 && (
         <section className="mt-16">
           <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">Compare the {phone.model}</h2>
@@ -381,6 +379,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           </div>
         </section>
       )}
+      <div className="mt-16"><NewsletterSignup compact /></div>
     </div>
   );
 }

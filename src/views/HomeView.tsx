@@ -28,13 +28,14 @@ export function HomeView({ region }: { region: RegionId }) {
   const summaries = getSummaries("phones", region);
   const deals = getDeals(6, undefined, region);
   // Only categories with a real comparison: 2+ stores and a product two of them sell (US shopper review, 2026-11-06).
-  const cats = comparedCategories(region).map((c) => {
+  // Ordered by what visitors open (FEATURED is the 30-day analytics order, 2026-11-09), the rest after.
+  const rank = (id: string) => { const i = FEATURED.indexOf(id as CategoryId); return i < 0 ? 99 : i; };
+  const cats = [...comparedCategories(region)].sort((a, b) => rank(a.id) - rank(b.id)).map((c) => {
     const items = getSummaries(c.id as CategoryId, region);
     return { c, count: items.length, from: Math.min(...items.map((p) => p.bestPrice)), image: popularOf(items, 1)[0]?.image, popular: popularOf(items, 4) };
   });
   const offers = phones.reduce((n, p) => n + p.offerCount, 0);
   const popular = summaries.filter((p) => p.retailerCount >= 2 && p.image).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice).slice(0, 8);
-  const budget = summaries.filter((p) => p.bestPrice <= 500 && p.retailerCount >= 2 && p.image && p.inStock).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation).slice(0, 4);
   // The "is that sale real?" promise only once the region's history can keep it (lib/catalog.ts HISTORY_CLAIM_DAYS).
   const mature = historyMature(region);
   const since = new Date(`${historySince(region)}T12:00:00Z`).toLocaleDateString(R.locale, { day: "numeric", month: "long", timeZone: "UTC" });
@@ -155,21 +156,14 @@ export function HomeView({ region }: { region: RegionId }) {
         </div>
       </section>
 
-      {/* The newest guides and posts, high on the page: they're what search engines and readers come back for. Every
-          region since 2026-11-06: posts are written for every country and show the reader's own prices. */}
-      <section className="container-x mt-12">
-        <SectionHead title="Latest from the blog" sub="Our take on the year's big launches, best picks and head-to-heads, with live prices that update each morning." href="/guides" cta="All guides" />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {getGuides().slice(0, 6).map((g, i) => <GuideCard key={g.slug} g={g} big={i === 0} />)}
-        </div>
-        <ul className="mt-6 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
-          {getGuides().slice(6, 18).map((g) => (
-            <li key={g.slug} className="border-b border-dashed border-line pb-2">
-              <Link prefetch={false} href={`/guides/${g.slug}`} className="font-medium text-ink-soft hover:text-brand">{g.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {deals.length > 0 && (
+        <section className="container-x mt-12">
+          <SectionHead title="Today's best deals" sub={mature ? "Real savings right now — against what other stores charge, a was price we recorded, or last week's price." : "Today's biggest savings against what the other stores charge, or a price we recorded at the same store."} href={to("/deals")} cta="All deals" />
+          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            {deals.map((d, i) => <DealCard key={`${d.phone.category}/${d.phone.slug}`} d={d} rank={i} />)}
+          </div>
+        </section>
+      )}
 
       {/* Only once there are written reviews: an empty "be the first" box reads as a ghost town (US shopper review). */}
       <ReviewsSection limit={3} hideEmpty className="container-x mt-12" />
@@ -183,15 +177,6 @@ export function HomeView({ region }: { region: RegionId }) {
       <div className="container-x">
         <EbayStrip query="unlocked smartphone" label="phones and tech" phones customid={`${region === "au" ? "" : `${region}-`}home`} region={region} />
       </div>
-
-      {deals.length > 0 && (
-        <section className="container-x mt-12">
-          <SectionHead title="Today's best deals" sub={mature ? "Real savings right now — against what other stores charge, a was price we recorded, or last week's price." : "Today's biggest savings against what the other stores charge, or a price we recorded at the same store."} href={to("/deals")} cta="All deals" />
-          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-            {deals.map((d, i) => <DealCard key={`${d.phone.category}/${d.phone.slug}`} d={d} rank={i} />)}
-          </div>
-        </section>
-      )}
 
       {popular.length >= 4 && (
         <section className="container-x mt-16">
@@ -212,58 +197,21 @@ export function HomeView({ region }: { region: RegionId }) {
       ))}
 
       <section className="container-x mt-16">
-        <div className="mb-6 max-w-2xl">
-          <div className="eyebrow">Why not just Google it?</div>
-          <h2 className="mt-2 font-display text-2xl font-extrabold tracking-tight sm:text-3xl">Google shows you ads. We show you the price.</h2>
-        </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            mature
-              ? ["We call out fake sales", "We record every price, every day. If a “was $1,999” never cost $1,999, the price check next to it says so."]
-              : ["Price history from day one", `We've saved every store's price every day since ${since}. A store's “was” price shows only once our own record can check it.`],
-            ["Nobody buys the top spot", "Shopping results put paid listings first. Ours are cheapest in-stock first — no retailer can pay to move up."],
-            ["The exact phone, not a lookalike", "We split every phone by storage and leave out refurbs, grey imports and carrier-locked stock, so the cheapest price is for the phone you actually want."],
-            region === "au" ? ["Real Aussie stores, in stock", "Only Australian retailers with local warranty, and we tell you who actually has it in stock today."] : [`Real ${R.adjective} stores, in stock`, `Only ${R.adjective} retailers selling new stock, and we tell you who actually has it in stock today.`],
-          ].map(([t, d]) => (
-            <div key={t} className="card p-5">
-              <div className="font-display text-lg font-bold leading-snug">{t}</div>
-              <p className="mt-2 text-sm text-ink-soft">{d}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {budget.length > 0 && (
-        <section className="container-x mt-16">
-          <SectionHead title={`Great phones under ${$(500)}`} sub="In stock now, compared across stores." href={`${to("/phones")}?max=500`} cta="See all under $500" />
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
-            {budget.map((p) => <PhoneCard key={p.href} p={p} />)}
-          </div>
-        </section>
-      )}
-
-
-      <section className="container-x mt-16">
         <NewsletterSignup />
       </section>
 
 
 
-      <section className="container-x mt-16">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#2A1A8C] via-brand to-[#9B4DFF] p-8 text-white sm:p-12">
-          <div className="max-w-xl">
-            <div className="text-xs font-semibold uppercase tracking-[0.14em] text-white/70">Built with the community</div>
-            <h2 className="mt-2 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Spotted a better price?</h2>
-            <p className="mt-3 text-white/80">
-              Compare Empire is new and built in the open. Tell us about a store we&apos;re missing or a price we got wrong and we&apos;ll add it — the more stores we check, the more everyone saves.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link prefetch={false} href="/about#feedback" className="btn bg-white text-[#2A1A8C] hover:bg-white/90">Suggest a store</Link>
-              <Link prefetch={false} href="/about" className="btn border border-white/30 text-white hover:bg-white/10">How we compare</Link>
-            </div>
-          </div>
+      {/* The newest guides and posts, high on the page: they're what search engines and readers come back for. Every
+          region since 2026-11-06: posts are written for every country and show the reader's own prices. */}
+      <section className="container-x mt-12">
+        <SectionHead title="Latest from the blog" sub="Our take on the year's big launches, best picks and head-to-heads, with live prices that update each morning." href="/guides" cta="All guides" />
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {getGuides().slice(0, 3).map((g, i) => <GuideCard key={g.slug} g={g} big={i === 0} />)}
         </div>
       </section>
+
+
     </>
   );
 }

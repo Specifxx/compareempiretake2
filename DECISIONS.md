@@ -1881,3 +1881,14 @@ the department or brand links, and the phone menu opened without search.
   `?brand=` filter; AU keeps its brand hubs). BreadcrumbList JSON-LD is unchanged.
 - No URL, title, canonical or JSON-LD changed. Not changed: the eBay and Amazon side rails and phone dock (owner-approved
   2026-11-04 to 06, they float beside the page), and per-category sub-browse hubs (needs per-category facets; see report).
+
+## 2026-11-09 — Focus pass: the home page leads with what gets clicked
+
+Owner: make the site do better; drop what nobody uses. Evidence (Vercel Web Analytics, 10 Oct to 9 Nov): 1,671 buy clicks on
+~5,200 views; 78% of ranked clicks hit row 1; 66% of clicks from Australia; product pages make nearly all clicks; cart, saved,
+network, reviews, alerts and stores each had 6 to 12 views. Plan: /mnt/project-files/compare-empire/ce-focus-plan-2026-11-09.html.
+
+- Home: categories in `FEATURED` (traffic) order, "Today's best deals" straight after them, blog cut to three cards and moved
+  below the product rows. Removed "Why not just Google it", "Built with the community" and the budget phones row.
+- Product page: the newsletter box moved below the compare and similar-price rows.
+- No URL, title, canonical, JSON-LD, sitemap or header menu changed (navigation is another thread's work).
