@@ -135,7 +135,7 @@ jobs:
         run: |
           git fetch --depth=1 origin demand && git show FETCH_HEAD:gsc-pages.json > "$FOCUS_DEMAND_FILE" || echo "No demand branch yet: using data/focus/demand.json"
           npx tsx scripts/focus-catalog.ts
-      - name: eBay prices (Browse API, up to 2,900 calls: the keyset is shared with SportsCardCompare and MotorCompare)
+      - name: "eBay prices (Browse API, up to 2,900 calls: the keyset is shared with SportsCardCompare and MotorCompare)"
         continue-on-error: true
         env:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
