@@ -16,6 +16,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { CATEGORIES } from "../src/lib/categories";
 import { dataPath, REGION_IDS, withRegion } from "../src/lib/region";
+import { GTA6_REGIONS } from "../src/lib/gta6";
 import { productInIndexNow } from "../src/lib/indexing";
 import type { Phone } from "../src/lib/types";
 
@@ -24,7 +25,7 @@ const key = readdirSync("public").find((f) => /^[0-9a-f]{32}\.txt$/.test(f))?.re
 if (!key) throw new Error("no IndexNow key file in public/");
 
 const SEASON = ["/black-friday", "/cyber-monday", "/boxing-day", "/january-sales", "/lunar-new-year"];
-const urls = new Set<string>(["/", "/deals", "/guides", ...SEASON, "/guides/black-friday-2026-real-tech-deals", ...CATEGORIES.filter((c) => c.live).flatMap((c) => [`/${c.id}`, `/deals/${c.id}`])]);
+const urls = new Set<string>(["/", "/deals", "/guides", ...GTA6_REGIONS.map((r) => withRegion("/gta-6", r)), ...SEASON, "/guides/black-friday-2026-real-tech-deals", ...CATEGORIES.filter((c) => c.live).flatMap((c) => [`/${c.id}`, `/deals/${c.id}`])]);
 for (const region of REGION_IDS) for (const c of CATEGORIES.filter((x) => x.live)) {
   const dir = `${dataPath(region, c.id)}/history`;
   if (!existsSync(dir)) continue;

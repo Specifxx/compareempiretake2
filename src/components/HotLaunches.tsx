@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { HotLaunch, StorePreorder } from "@/lib/launches";
+import { GTA6_REGIONS } from "@/lib/gta6";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 
 // The homepage's "Hot right now" row (owner, 2026-11-03): the year's big launches straight under the hero, each with the
@@ -16,7 +17,10 @@ export function HotLaunches({ items, preorders = [], region }: { items: HotLaunc
           <div className="eyebrow">Just launched</div>
           <h2 id="hot-launches" className="font-display text-xl font-bold tracking-tight sm:text-2xl">Hot right now</h2>
         </div>
-        <Link prefetch={false} href={withRegion("/launches", region)} className="text-sm font-semibold text-brand hover:underline">All launches →</Link>
+        <div className="flex shrink-0 flex-wrap justify-end gap-x-4 gap-y-1">
+          {GTA6_REGIONS.includes(region) && <Link prefetch={false} href={withRegion("/gta-6", region)} className="text-sm font-semibold text-brand hover:underline">GTA 6 console prices →</Link>}
+          <Link prefetch={false} href={withRegion("/launches", region)} className="text-sm font-semibold text-brand hover:underline">All launches →</Link>
+        </div>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {items.map(({ launch, product, status }, i) => {
