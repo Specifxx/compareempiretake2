@@ -114,8 +114,8 @@ export default function CreatorsPage() {
         <div aria-hidden className="pointer-events-none absolute -bottom-16 right-10 h-56 w-56 rounded-full bg-save/15 blur-3xl" />
         <div className="relative z-10 max-w-xl">
           <span className="eyebrow text-brand">✦ Creators</span>
-          <h1 className="mt-3 font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-            Tech creators we <span className="bg-gradient-to-r from-brand to-[#B04BFF] bg-clip-text text-transparent">love</span>
+          <h1 className="mt-3 font-display text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
+            Tech creators we <span className="bg-gradient-to-r from-brand to-[#3D8BFF] bg-clip-text text-transparent">love</span>
           </h1>
           <p className="mt-3 text-base leading-7 text-ink-soft">
             The people who make shopping for tech easier: phone, laptop and TV reviews, deal round-ups and the sale checks that save you
@@ -131,8 +131,8 @@ export default function CreatorsPage() {
           </div>
         </div>
         <div aria-hidden className="pointer-events-none absolute right-8 top-6 hidden h-56 w-72 md:block">
-          {["left-0 top-8 -rotate-[10deg] from-brand/40 to-brand-soft", "left-[88px] top-0 z-10 rotate-[2deg] from-[#B04BFF]/40 to-brand-soft", "left-[176px] top-10 rotate-[11deg] from-save/40 to-save-soft"].map((cls) => (
-            <div key={cls} className={`absolute h-48 w-36 rounded-2xl border border-line bg-gradient-to-br shadow-card ${cls}`}>
+          {["left-0 top-8 -rotate-[10deg] from-brand/40 to-brand-soft", "left-[88px] top-0 z-10 rotate-[2deg] from-[#3D8BFF]/40 to-brand-soft", "left-[176px] top-10 rotate-[11deg] from-save/40 to-save-soft"].map((cls) => (
+            <div key={cls} className={`absolute h-48 w-36 rounded-lg border border-line bg-gradient-to-br ${cls}`}>
               <div className="m-3 h-20 rounded-lg bg-bg-card/70" />
               <div className="mx-3 mt-3 h-2 w-20 rounded bg-bg-card/70" />
               <div className="mx-3 mt-2 h-2 w-12 rounded bg-bg-card/70" />
@@ -154,8 +154,8 @@ export default function CreatorsPage() {
           {/* Open spots fill the last row (a full row of three while the list is empty), so the grid reads as "join us" rather than a
               finished list. Never an invented creator. */}
           {Array.from({ length: openSpots }).map((_, i) => (
-            <a key={`open-${i}`} href="#apply" className="group flex min-h-72 flex-col items-center justify-center rounded-2xl border-2 border-dashed border-line bg-bg-card/60 p-6 text-center transition hover:border-brand hover:bg-brand-soft/40">
-              <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand/20 to-[#B04BFF]/30 text-3xl transition-transform group-hover:scale-110" aria-hidden>
+            <a key={`open-${i}`} href="#apply" className="group flex min-h-72 flex-col items-center justify-center rounded-lg border-2 border-dashed border-line bg-bg-card/60 p-6 text-center transition hover:border-brand hover:bg-brand-soft/40">
+              <span className="flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-br from-brand/20 to-[#3D8BFF]/30 text-3xl transition-transform group-hover:scale-110" aria-hidden>
                 ✨
               </span>
               <span className="mt-4 font-display text-base font-bold">Your channel here</span>
@@ -168,7 +168,7 @@ export default function CreatorsPage() {
 
       {/* How tipping works */}
       <section className="card mt-10 grid items-center gap-6 border-brand/30 bg-gradient-to-br from-brand-soft via-bg-card to-bg-card p-6 sm:grid-cols-[auto,1fr] sm:p-8">
-        <div className="flex h-20 w-20 items-center justify-center rounded-3xl bg-gradient-to-br from-brand to-[#B04BFF] text-brand-ink shadow-card">
+        <div className="flex h-20 w-20 items-center justify-center rounded-xl bg-gradient-to-br from-brand to-[#3D8BFF] text-brand-ink">
           <CoffeeIcon className="h-10 w-10" />
         </div>
         <div>

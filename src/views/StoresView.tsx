@@ -35,7 +35,7 @@ export function StoresView({ region }: { region: RegionId }) {
   return (
     <div className="container-x max-w-3xl pt-12 pb-16">
       <div className="eyebrow"><Flag code={R.id} /> {R.name}</div>
-      <h1 className="mt-2 font-display text-4xl font-extrabold tracking-tight">The {stores.length} {R.adjective} stores we check</h1>
+      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">The {stores.length} {R.adjective} stores we check</h1>
       <p className="mt-4 text-ink-soft">
         Every price comes from the store&apos;s own website or product feed, checked daily. {R.taxNote}. No store pays to be listed or to rank higher.
         Prices last imported {when(regionUpdatedAt(region))} ({R.timeZone.split("/")[1].replace(/_/g, " ")} time).
@@ -56,7 +56,7 @@ export function StoresView({ region }: { region: RegionId }) {
 
       {missing.length > 0 && (
         <section className="mt-12">
-          <h2 className="font-display text-2xl font-extrabold tracking-tight">Big stores we don&apos;t cover yet</h2>
+          <h2 className="font-display text-2xl font-bold tracking-tight">Big stores we don&apos;t cover yet</h2>
           <p className="mt-2 text-sm text-ink-soft">
             We&apos;d rather tell you than leave you guessing. These stores aren&apos;t in our comparisons today, so check them too before you buy.
           </p>
@@ -72,7 +72,7 @@ export function StoresView({ region }: { region: RegionId }) {
       )}
 
       <section className="mt-12 text-sm text-ink-soft">
-        <h2 className="font-display text-2xl font-extrabold tracking-tight text-ink">Missing a store?</h2>
+        <h2 className="font-display text-2xl font-bold tracking-tight text-ink">Missing a store?</h2>
         <p className="mt-2">
           Tell us and we&apos;ll check it: <Link prefetch={false} href="/contact#suggest" className="font-semibold text-brand hover:underline">suggest a store</Link>. Run one?{" "}
           <Link prefetch={false} href="/list-your-store" className="font-semibold text-brand hover:underline">List your store</Link> for free. See{" "}

@@ -172,7 +172,7 @@ export function CompareView() {
                         <CloseIcon className="h-3.5 w-3.5" />
                       </button>
                       <Link href={hrefOf(p)} prefetch={false} className="block">
-                        <div className="img-tile mb-3 aspect-square overflow-hidden rounded-2xl">{p.image && <img src={p.image} alt={p.name} className="product-img h-full w-full object-contain p-5" />}</div>
+                        <div className="img-tile mb-3 aspect-square overflow-hidden rounded-lg">{p.image && <img src={p.image} alt={p.name} className="product-img h-full w-full object-contain p-5" />}</div>
                         <div className="text-xs text-ink-mute">{p.brand}</div>
                         <div className="font-semibold">{p.model}</div>
                       </Link>

@@ -324,7 +324,7 @@ function Browser({ initial, total, options, src, fixedBrand, category = "phones"
   return (
     <div className="grid gap-8 lg:grid-cols-[260px_1fr]" data-grid-fallback={fallback ? "" : undefined}>
       <aside className="hidden lg:block">
-        <div className="sticky top-24">{filters}</div>
+        <div className="card sticky top-32 max-h-[calc(100vh-9rem)] overflow-y-auto p-4">{filters}</div>
       </aside>
       <div>
         <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center">

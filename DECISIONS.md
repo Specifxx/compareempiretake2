@@ -1892,3 +1892,26 @@ network, reviews, alerts and stores each had 6 to 12 views. Plan: /mnt/project-f
   below the product rows. Removed "Why not just Google it", "Built with the community" and the budget phones row.
 - Product page: the newsletter box moved below the compare and similar-price rows.
 - No URL, title, canonical, JSON-LD, sitemap or header menu changed (navigation is another thread's work).
+
+## 2026-11-10 — PriceRunner-style redesign: plain, category-first, the products closer to the top
+
+Owner: Compare Empire should look and feel like pricerunner.com (multi-region), bare-bones and functional, for return
+visits, a lower bounce rate and more exploring; it felt like "everything everywhere". Urgent release authorised.
+Before/after screenshots: /mnt/project-files/compare-empire/pricerunner-redesign/.
+
+- **Look:** a plain shop-window palette (light grey page, white cards, near-black text, one blue, green only for
+  savings), Inter only (the Bricolage display font is no longer loaded), flat cards with thin borders, no gradient blobs,
+  no emoji in navigation or category headings. The crown logo is blue. Nothing of PriceRunner's own (name, logo,
+  colours, icons, copy) is used: only the layout conventions every comparison site shares.
+- **Header:** one white bar with a wide search in the middle; on phones the search is its own always-visible row. The
+  category bar starts with "All categories" (the megamenu, still in the server HTML) and Deals, then the featured aisles.
+- **Home:** search band with the same H1, a one-line trust strip (checked time, products, prices, stores, cheapest first,
+  no paid rankings), round category tiles, "Price drops today", "Most compared phones", launches, a row per top category
+  (swipes on a phone), three guides, the newsletter. Removed from home: the live-example price check card, written
+  reviews, the AU Amazon picks and the eBay strip (the side rails and product pages keep eBay and Amazon).
+- **Product cards:** name, "from" price, "Compare N stores", eBay from; savings as a "−N%" badge.
+- **Product page:** "Similar price range" moved straight under the prices (before specs and FAQ); the price check card
+  sits under the price instead of squeezed beside it. Category filters sit in a card.
+- **No quick view.** A card click opens the product page, as on the big comparison sites: one place to compare, and no
+  `/api/products` function call per card click. `components/QuickView.tsx` is no longer mounted.
+- Unchanged: every URL, title, meta description, canonical, hreflang, JSON-LD, the sitemap and the store order rules.

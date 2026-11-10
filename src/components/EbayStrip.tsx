@@ -11,7 +11,7 @@ export function EbayStrip({ query, label, customid, phones, region = "au" }: { q
     ["eBay tech deals", "eBay's own daily tech deals", ebayDeals(customid, region)],
   ];
   return (
-    <section className="mt-10 rounded-2xl border border-line bg-bg-card p-5" aria-label="eBay">
+    <section className="mt-10 rounded-lg border border-line bg-bg-card p-5" aria-label="eBay">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="font-display text-lg font-bold">Shop {label} on eBay</h2>
         <span className="text-[11px] uppercase tracking-wide text-ink-mute">Ad · affiliate links</span>

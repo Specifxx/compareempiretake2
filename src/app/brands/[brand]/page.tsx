@@ -56,7 +56,7 @@ export default async function BrandPage({ params }: { params: Promise<{ brand: s
         <Link prefetch={false} href="/" className="hover:text-brand">Home</Link> / <Link prefetch={false} href="/brands" className="hover:text-brand">Brands</Link> / <span>{brand.brand}</span>
       </nav>
       <div className="eyebrow">Brand</div>
-      <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{brand.brand}</h1>
+      <h1 className="mt-1 font-display text-3xl font-bold tracking-tight sm:text-4xl">{brand.brand}</h1>
       <p className="mt-2 text-ink-mute">{phones.length} {brand.brand} products across {brand.categories.length} {brand.categories.length === 1 ? "category" : "categories"}, from ${brand.from.toLocaleString("en-AU")}.</p>
       <div className="mt-8">
         {/* The first page only; the full list is a static file the browser loads (lib/browse.ts). */}

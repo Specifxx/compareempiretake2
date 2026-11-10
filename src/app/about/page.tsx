@@ -19,7 +19,7 @@ export default function AboutPage() {
   return (
     <div className="container-x max-w-3xl pt-12">
       <div className="eyebrow">About</div>
-      <h1 className="mt-2 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">One price comparison site, done properly.</h1>
+      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight sm:text-5xl">One price comparison site, done properly.</h1>
       <p className="mt-5 text-lg text-ink-soft">
         Buying anything online means opening five tabs, decoding five naming schemes and still wondering if you missed a sale. Compare Empire does that
         legwork every day and puts the answer on one page — phones, tablets, laptops, monitors, graphics cards and TVs so far, with more to come.
@@ -89,7 +89,7 @@ export default function AboutPage() {
 function Section({ title, id, children }: { title: string; id?: string; children: React.ReactNode }) {
   return (
     <section id={id} className="mt-14 scroll-mt-24">
-      <h2 className="mb-5 font-display text-2xl font-extrabold tracking-tight">{title}</h2>
+      <h2 className="mb-5 font-display text-2xl font-bold tracking-tight">{title}</h2>
       {children}
     </section>
   );

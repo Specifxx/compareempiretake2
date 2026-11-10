@@ -67,71 +67,62 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/80 backdrop-blur-xl">
-        <div className="container-x flex h-16 items-center gap-1.5 sm:gap-4">
+      {/* One white bar like a big comparison site's (owner, 2026-11-10): logo, a wide search in the middle, the
+          visitor's lists and country on the right; the aisles below it. On a phone the search is its own row. */}
+      <header className="sticky top-0 z-40 border-b border-line bg-bg-card">
+        <div className="container-x flex h-16 items-center gap-1.5 sm:gap-3">
           <Logo wordmark="hidden min-[480px]:inline" />
-          <button
-            onClick={() => setMega((m) => !m)}
-            onMouseEnter={() => window.matchMedia("(hover: hover)").matches && setMega(true)}
-            aria-expanded={mega}
-            aria-controls="mega-menu"
-            className={`ml-2 hidden items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold transition md:inline-flex ${mega ? "bg-brand text-white" : "bg-bg-sunk text-ink hover:bg-brand-soft hover:text-brand"}`}
-          >
-            <MenuIcon className="h-4 w-4" /> All categories
-          </button>
-          <nav className="hidden items-center gap-1 xl:flex">
-            {NAV.map((n) => (
-              <Link prefetch={false}
-                key={n.href}
-                href={n.href}
-                className={`rounded-lg px-3 py-2 text-sm font-medium transition ${path.startsWith(n.href) ? "bg-bg-sunk text-ink" : "text-ink-soft hover:text-ink"}`}
-              >
-                {n.label}
-              </Link>
-            ))}
-          </nav>
-          <div className="ml-auto hidden max-w-sm flex-1 md:block">
+          <div className="mx-auto hidden max-w-2xl flex-1 px-4 md:block">
             <SearchBox />
           </div>
-          <button onClick={() => setOpen(true)} className="ml-auto grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-line bg-bg-card text-sm text-ink-mute shadow-sm sm:flex sm:w-auto sm:min-w-0 sm:flex-1 sm:items-center sm:gap-2 sm:px-3 md:hidden" aria-label="Search">
-            <SearchIcon className="h-4 w-4 shrink-0" /> <span className="hidden truncate sm:inline">Search products…</span>
-          </button>
-          <Link prefetch={false} href="/saved" className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk hover:text-ink" aria-label="Saved">
-            <HeartIcon />
-            {savedList.length > 0 && (
-              <span className="absolute right-1 top-1 grid h-4 min-w-4 place-items-center rounded-full bg-hot px-1 text-[10px] font-bold text-white">{savedList.length}</span>
-            )}
-          </Link>
-          {/* The cart list (components/cart, owner 2026-11-06): every width, with its count. */}
-          <CartHeaderLink className="shrink-0 text-ink-soft hover:text-ink" />
-          {regions.length > 1 && <RegionSwitcher regions={regions} nav={nav} />}
-          <ThemeToggle />
-          <button className="grid h-10 w-10 shrink-0 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu">
-            {menu ? <CloseIcon /> : <MenuIcon />}
+          <div className="ml-auto flex items-center gap-0.5 md:ml-0">
+            <Link prefetch={false} href="/saved" className="relative grid h-10 w-10 shrink-0 place-items-center rounded-lg text-ink-soft hover:bg-bg-sunk hover:text-ink" aria-label="Saved">
+              <HeartIcon />
+              {savedList.length > 0 && (
+                <span className="absolute right-1 top-1 grid h-4 min-w-4 place-items-center rounded-full bg-hot px-1 text-[10px] font-bold text-white">{savedList.length}</span>
+              )}
+            </Link>
+            {/* The cart list (components/cart, owner 2026-11-06): every width, with its count. */}
+            <CartHeaderLink className="shrink-0 text-ink-soft hover:text-ink" />
+            {regions.length > 1 && <RegionSwitcher regions={regions} nav={nav} />}
+            <ThemeToggle />
+            <button className="grid h-10 w-10 shrink-0 place-items-center rounded-lg text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu">
+              {menu ? <CloseIcon /> : <MenuIcon />}
+            </button>
+          </div>
+        </div>
+        {/* Phones: the search box is always in sight, under the logo. */}
+        <div className="container-x pb-2.5 md:hidden">
+          <button onClick={() => setOpen(true)} className="flex h-11 w-full items-center gap-2 rounded-lg border border-line bg-bg-sunk px-3 text-left text-sm text-ink-mute" aria-label="Search">
+            <SearchIcon className="h-4 w-4 shrink-0" /> <span className="truncate">Search phones, TVs, laptops…</span>
           </button>
         </div>
-        {/* Category bar: every live category one click away, like a department store's aisles. */}
-        <div className="hidden border-t border-line/60 md:block">
-          <nav className="container-x flex h-11 items-center gap-1 overflow-x-auto text-sm scrollbar-none" aria-label="Categories">
+        {/* Category bar: every department behind "All categories", the most visited aisles beside it. */}
+        <div className="hidden border-t border-line/70 md:block">
+          <nav className="container-x flex h-11 items-center gap-0.5 overflow-x-auto text-sm scrollbar-none" aria-label="Categories">
+            <button
+              onClick={() => setMega((m) => !m)}
+              onMouseEnter={() => window.matchMedia("(hover: hover)").matches && setMega(true)}
+              aria-expanded={mega}
+              aria-controls="mega-menu"
+              className={`mr-1 inline-flex shrink-0 items-center gap-2 rounded-md px-3 py-1.5 font-semibold transition ${mega ? "bg-ink text-bg-card" : "text-ink hover:bg-bg-sunk"}`}
+            >
+              <MenuIcon className="h-4 w-4" /> All categories
+            </button>
+            {/* Deals (or Black Friday while it runs) next to the menu, so a narrow screen never scrolls it out of sight. */}
+            <Link prefetch={false} href={NAV[0].href} className="shrink-0 rounded-md px-2.5 py-1.5 font-semibold text-hot transition hover:bg-hot/10">{NAV[0].label}</Link>
             {flat.filter((c) => c.featured).map((c) => (
               <Link prefetch={false}
                 key={c.href}
                 href={c.href}
-                className={`shrink-0 rounded-lg px-3 py-1.5 font-medium transition ${path === c.href || path.startsWith(c.href + "/") ? "bg-brand-soft text-brand" : "text-ink-soft hover:bg-bg-sunk hover:text-ink"}`}
+                className={`shrink-0 rounded-md px-2.5 py-1.5 font-medium transition ${path === c.href || path.startsWith(c.href + "/") ? "text-brand underline decoration-2 underline-offset-[14px]" : "text-ink-soft hover:text-ink"}`}
               >
-                <span className="mr-1.5">{c.emoji}</span>
                 {c.name}
               </Link>
             ))}
-            {flat.some((c) => !c.featured) && (
-              <button onClick={() => setMega((m) => !m)} className="shrink-0 rounded-lg px-3 py-1.5 font-medium text-ink-soft transition hover:bg-bg-sunk hover:text-ink">
-                More ▾
-              </button>
-            )}
             <span className="mx-2 h-5 w-px shrink-0 bg-line" />
-            <Link prefetch={false} href={NAV[0].href} className={`shrink-0 rounded-lg px-3 py-1.5 font-semibold transition ${path.startsWith(NAV[0].href) ? "bg-hot/10 text-hot" : "text-hot hover:bg-hot/10"}`}>🔥 Deals</Link>
             {NAV.slice(1).map((n) => (
-              <Link prefetch={false} key={n.href} href={n.href} className="shrink-0 rounded-lg px-3 py-1.5 font-medium text-ink-soft transition hover:bg-bg-sunk hover:text-ink xl:hidden">{n.label}</Link>
+              <Link prefetch={false} key={n.href} href={n.href} className="shrink-0 rounded-md px-2.5 py-1.5 font-medium text-ink-soft transition hover:text-ink">{n.label}</Link>
             ))}
           </nav>
         </div>
@@ -147,7 +138,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
                       {d.categories.map((c) => (
                         <li key={c.href}>
                           <Link prefetch={false} href={c.href} aria-current={path === c.href || path.startsWith(c.href + "/") ? "page" : undefined} className={`group flex items-center gap-2 font-semibold hover:text-brand ${path === c.href || path.startsWith(c.href + "/") ? "text-brand" : ""}`}>
-                            <span className="text-lg">{c.emoji}</span> {c.name}
+                            {c.name}
                             <span className="text-xs font-normal text-ink-mute">{c.count.toLocaleString()}</span>
                           </Link>
                           {c.brands.length > 0 && (
@@ -176,7 +167,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
                 <div className="eyebrow mb-1 px-3">{d.name}</div>
                 {d.categories.map((c) => (
                   <Link prefetch={false} key={c.href} href={c.href} onClick={() => setMenu(false)} className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">
-                    <span>{c.emoji}</span> {c.name} <span className="ml-auto text-xs text-ink-mute">{c.count}</span>
+                    {c.name} <span className="ml-auto text-xs text-ink-mute">{c.count}</span>
                   </Link>
                 ))}
               </div>
@@ -209,7 +200,7 @@ function ThemeToggle() {
     } catch {}
   };
   return (
-    <button onClick={flip} className="hidden h-10 w-10 place-items-center rounded-xl text-ink-soft hover:bg-bg-sunk hover:text-ink sm:grid" aria-label="Toggle dark mode">
+    <button onClick={flip} className="hidden h-10 w-10 place-items-center rounded-lg text-ink-soft hover:bg-bg-sunk hover:text-ink sm:grid" aria-label="Toggle dark mode">
       {dark ? <SunIcon /> : <MoonIcon />}
     </button>
   );
