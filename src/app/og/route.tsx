@@ -8,7 +8,7 @@ import { ImageResponse } from "next/og";
  * keeps each card a day; a card's URL changes when its prices do.
  *
  * Built to read at thumbnail size (owner, 2026-11-03: "even from far distance, people can tell what this website's
- * going to be about"): the brand's violet, a two- or three-word headline, and a white panel of real store prices
+ * going to be about"): the brand blue (the 2026-11-10 redesign, was violet), a two- or three-word headline, and a white panel of real store prices
  * with the cheapest in green. Every price is a real in-stock store price from the page that links the card; a card
  * without prices draws the panel as empty bars, never invented stores or numbers.
  *
@@ -23,7 +23,7 @@ export const runtime = "edge";
 const archivo = fetch(new URL("./fonts/Archivo-900.ttf", import.meta.url)).then((r) => r.arrayBuffer());
 const inter = fetch(new URL("./fonts/Inter-700.ttf", import.meta.url)).then((r) => r.arrayBuffer());
 
-const VIOLET = "#5B3DF5";
+const VIOLET = "#1456D6";
 const INK = "#11111a";
 const MUTE = "#707084";
 const SAVE = "#058a5b";
@@ -120,7 +120,7 @@ export async function GET(req: Request) {
 
   return new ImageResponse(
     (
-      <div style={{ width: "100%", height: "100%", display: "flex", background: `linear-gradient(135deg, #6B4DFF 0%, ${VIOLET} 45%, #3A1FC9 100%)`, fontFamily: "Inter", position: "relative" }}>
+      <div style={{ width: "100%", height: "100%", display: "flex", background: `linear-gradient(135deg, #2A6BF0 0%, ${VIOLET} 45%, #0B3A9E 100%)`, fontFamily: "Inter", position: "relative" }}>
         {/* soft light behind the panel */}
         <div style={{ display: "flex", position: "absolute", right: -120, top: -160, width: 760, height: 760, borderRadius: 999, background: "rgba(255,255,255,0.10)" }} />
 
@@ -129,7 +129,7 @@ export async function GET(req: Request) {
             <Mark size={58} />
             <div style={{ display: "flex", fontFamily: "Archivo", fontSize: 36, color: "#fff", letterSpacing: -0.5 }}>
               <span>Compare</span>
-              <span style={{ color: "#d8ceff" }}>Empire</span>
+              <span style={{ color: "#cfe0ff" }}>Empire</span>
             </div>
           </div>
 
@@ -144,19 +144,19 @@ export async function GET(req: Request) {
                 <span style={{ fontFamily: "Archivo", fontSize: 76 }}>{money(price, r)}</span>
               </div>
             ) : (
-              <div style={{ display: "flex", fontSize: 34, color: "#ece8ff", lineHeight: 1.2 }}>{sub}</div>
+              <div style={{ display: "flex", fontSize: 34, color: "#e6efff", lineHeight: 1.2 }}>{sub}</div>
             )}
             {kind === "product" && verdict && (
               <div style={{ display: "flex", alignSelf: "flex-start", background: SAVE_SOFT, color: SAVE, fontSize: 26, padding: "8px 18px", borderRadius: 999 }}>{verdict}</div>
             )}
           </div>
 
-          <div style={{ display: "flex", fontSize: 26, color: "#d8ceff" }}>compareempire.com</div>
+          <div style={{ display: "flex", fontSize: 26, color: "#cfe0ff" }}>compareempire.com</div>
         </div>
 
         {/* Right: the comparison panel */}
         <div style={{ display: "flex", position: "relative", width: 600, alignItems: "center", justifyContent: "center", paddingRight: 30 }}>
-          <div style={{ display: "flex", flexDirection: "column", width: 500, background: "#fff", borderRadius: 30, padding: 26, gap: 16, boxShadow: "0 30px 70px rgba(20,10,80,0.45)" }}>
+          <div style={{ display: "flex", flexDirection: "column", width: 500, background: "#fff", borderRadius: 30, padding: 26, gap: 16, boxShadow: "0 30px 70px rgba(5,20,80,0.45)" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
               <div style={{ display: "flex", width: 150, height: 150, borderRadius: 20, background: "#f3f3f8", alignItems: "center", justifyContent: "center" }}>
                 <svg width="64" height="64" viewBox="0 0 24 24"><path d="M3 12l9-9h8v8l-9 9z" fill="none" stroke={VIOLET} strokeWidth="2" /><circle cx="16" cy="8" r="1.6" fill={VIOLET} /></svg>
