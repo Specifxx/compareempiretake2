@@ -39,6 +39,14 @@ export function ogImage(o: {
   return `/og?${q}`;
 }
 
+/**
+ * The static share card of a region (public/share/<region>.png, the brand card with no prices, drawn once by the /og
+ * route and committed). Noindex product pages use it (CE-1, 2026-11-10): they are 61% of product pages, and each drew
+ * its own /og card on every price change, the site's biggest Vercel line after the 8 Nov fix. A static file is served
+ * by the CDN with no function at all.
+ */
+export const staticShareCard = (region: RegionId = "au") => `/share/${region}.png`;
+
 /** Parses the `d` parameter written by ogImage. Bad entries are dropped, never guessed. */
 export function parseRows(d: string | null): ShareRow[] {
   if (!d) return [];

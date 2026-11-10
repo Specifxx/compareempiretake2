@@ -1965,3 +1965,20 @@ Thread "Build compare search engine MVP" (plan: project files › compare-search
   already leads to our product page, which carries that product's Amazon row.
 - **Weekly numbers** are read by RiftCompare's earnings refresh from the Web Analytics API (searches, empty searches and
   their words, searches per sending site, paid clicks from /search) and shown on Empire HQ and in the Monday report.
+
+## 2026-11-10: Noindex product pages share a static card; /og cached a week (CE-1, hosting under A$7 a week)
+
+**Measured** (Vercel billing, read by the cost thread): compareempiretake2 cost $3.80 on 6 Nov, $1.47 on 8 Nov and $1.19 on 9 Nov,
+the first full day after the share card stopped drawing photos (#116). A$7 a week is about US$0.65 a day, so it still had to
+halve. Fluid Active CPU is still the largest line ($0.59), and Observability puts it on `/og`: 1.7K renders in 12 hours, ~1.3 s
+each, against under 9 minutes for every product route together. Each product page's card URL carries its prices, so every price
+change is a new card to draw, and crawlers fetch the cards of pages they are told not to index.
+
+**Changed.** (1) A product page that is noindex (`productIndexable` false: 4,973 of 8,209 today, 61%) points `og:image` and
+`twitter:image` at its region's static card, `public/share/<region>.png`: the brand card with empty bars and no prices, drawn
+once by `/og?k=home&r=<region>` and committed. A static file costs no function. Indexed pages keep their own card with real
+store prices. (2) `/og` answers with `s-maxage=604800` (a week, from a day): the URL carries everything the card draws, so a
+cached copy is never wrong. Redraw the static cards only if the `/og` design changes.
+
+**Also seen:** four production deploys on 10 Nov between 03:42 and 08:58 UTC (two READY, others cancelled). Each one empties the
+CDN cache for `/og` and the product pages; the one-build-per-12h rule matters for this site's bill as much as any code.
