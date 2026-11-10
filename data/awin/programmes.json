@@ -1,12 +1,23 @@
 {
   "publisherId": 3144410,
-  "checkedAt": "2026-11-10T08:37:44.771Z",
+  "checkedAt": "2026-11-10T11:14:35.332Z",
   "joined": [
+    {
+      "id": 25687,
+      "name": "Clifton Cameras",
+      "domains": [
+        "cliftoncameras.co.uk",
+        "dev.cliftoncameras.co.uk"
+      ],
+      "region": "GB",
+      "currency": "GBP"
+    },
     {
       "id": 1205,
       "name": "Hamleys",
       "domains": [
-        "hamleys.com"
+        "hamleys.com",
+        "hamleys.co.uk"
       ],
       "region": "GB",
       "currency": "GBP"
@@ -17,6 +28,16 @@
       "domains": [
         "opulensi.com",
         "opulensi.myshopify.com"
+      ],
+      "region": "GB",
+      "currency": "GBP"
+    },
+    {
+      "id": 21605,
+      "name": "Paco Perfumerias",
+      "domains": [
+        "perfumeprice.co.uk",
+        "pacoperfumerias.co.uk"
       ],
       "region": "GB",
       "currency": "GBP"
