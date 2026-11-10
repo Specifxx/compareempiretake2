@@ -108,7 +108,7 @@ export function searchEverything(rawQuery: string, region: RegionId, opts: { lim
     currency,
     products,
     family: fam,
-    ebay: { url: ebaySearch(query, { condition: "new", customid: `${placement}-${region}`, region }), label: `eBay listings for “${query}”` },
+    ebay: { url: ebaySearch(query, { condition: "new", customid: placement, region }), label: `eBay listings for “${query}”` },
     generatedAt: idx?.generatedAt ?? null,
   };
 }
@@ -138,7 +138,7 @@ export function comparePrices(productPath: string, placement = "mcp") {
           url: storeLink(o.url, placement).href,
         })),
     })),
-    ebay: p.ebay ? { cheapestNewListing: p.ebay.price, checkedAt: p.ebay.checkedAt, url: ebaySearch(p.name, { condition: "new", customid: `${placement}-${ref.region}`, region: ref.region }) } : null,
+    ebay: p.ebay ? { cheapestNewListing: p.ebay.price, checkedAt: p.ebay.checkedAt, url: ebaySearch(p.name, { condition: "new", customid: placement, region: ref.region }) } : null,
     note: "Prices are each store's own, in the region's currency, never converted. eBay is a listing price, not a store.",
   };
 }

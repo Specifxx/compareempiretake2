@@ -11,9 +11,16 @@ import { REGIONS } from "./region";
 export const EBAY_CAMPAIGN_ID = "5339155912";
 const SITE_TAG = "ce";
 
-/** `ce-<page…>`: the site tag first, so EPN's customid report groups by site. */
-export const ebayCustomId = (customid?: string) =>
-  !customid ? SITE_TAG : customid.startsWith(`${SITE_TAG}-`) ? customid : `${SITE_TAG}-${customid}`;
+/**
+ * `ce-<region>-<page…>`: the site tag first, so EPN's customid report groups by site, then the region, so earnings split
+ * by region (owner, 2026-11-10: product pages were `ce-p-<category>-…` with no region, and the eBay calls are now split
+ * by region). A page tag that already starts with a region keeps it once; a full `ce-…` tag is kept as given.
+ */
+export const ebayCustomId = (customid: string | undefined, region: EbayRegion = "au") => {
+  if (customid?.startsWith(`${SITE_TAG}-`)) return customid;
+  const page = (customid ?? "").replace(/^(?:au|us|uk|ca|sg)(?:-|$)/, "");
+  return [SITE_TAG, region, page].filter(Boolean).join("-");
+};
 /** eBay site per region: EPN rotation id and site id. */
 export const EBAY_SITES = {
   au: { host: "www.ebay.com.au", rotation: "705-53470-19255-0", siteid: "15", phonesCat: "9355" },
@@ -35,7 +42,7 @@ export function ebayAffiliate(url: string, customid?: string, region: EbayRegion
   u.searchParams.set("campid", EBAY_CAMPAIGN_ID);
   u.searchParams.set("toolid", "10001");
   u.searchParams.set("mkevt", "1");
-  u.searchParams.set("customid", ebayCustomId(customid).slice(0, 256));
+  u.searchParams.set("customid", ebayCustomId(customid, region).slice(0, 256));
   return u.toString();
 }
 

@@ -16,7 +16,8 @@
  *    it, and its category page's impressions all raise it. Then price (commission is a share of the
  *    sale, so the square root of the price, not its log), stores stocking it, newer models, a category
  *    weight and a US boost. Without the file the ranking falls back to the store-count signals alone.
- * 3. Coverage first, the US first (owner, 2026-11-01; `plan`): every product never priced on eBay, then
+ * 3. Each region its share of the day (owner, 2026-11-10; REGION_DAILY_CALLS: US 1,200, AU 1,100, UK 550, CA 50,
+ *    SG none). Within it, coverage first, the US first (owner, 2026-11-01; `plan`): every product never priced on eBay, then
  *    every product due again (a week after its last check, three days when it has Google impressions),
  *    each group US, then Australia, then the UK, by demand within a region. Nothing is searched twice
  *    before every product over the floor has been searched once; spare calls go to the stalest.
@@ -285,7 +286,22 @@ export const REGION_ORDER: RegionId[] = ["us", "au", "uk", "ca", "sg"];
  * the rest by demand × days since checked, so the budget is never left unspent. No product is searched
  * twice before every product over the floor has been searched once.
  */
-export function plan<C extends { region: RegionId; demand: number; searched: boolean; last?: string }>(all: C[], allowance: number, now: number): C[] {
+/**
+ * Each region's calls in a full 2,900-call day (owner, 2026-11-10, the region split brief): Australia is where the
+ * visitors and eBay earnings are, Canada has few products and Singapore none of eBay's programmes (0 listings of 511).
+ * Measured 8-10 Nov the coverage queue gave US 1,554 / AU 736 / UK 376 / CA 229 / SG 5. A smaller allowance (a second
+ * run, a lowered EBAY_DAILY_CALLS) is split in the same proportion.
+ */
+export const REGION_DAILY_CALLS: Record<RegionId, number> = { us: 1200, au: 1100, uk: 550, ca: 50, sg: 0 };
+
+export function plan<C extends { region: RegionId; demand: number; searched: boolean; last?: string }>(
+  all: C[],
+  allowance: number,
+  now: number,
+  /** Calls per region (REGION_DAILY_CALLS): each region first takes its share of the allowance in queue order, calls
+   *  a region cannot use go to the rest in the same order, and a region with no share is never searched. */
+  shares?: Partial<Record<RegionId, number>>,
+): C[] {
   const days = (c: C) => (c.last ? (now - Date.parse(c.last)) / 86_400_000 : Infinity);
   const regionRank = (c: C) => REGION_ORDER.indexOf(c.region);
   const byRegionThenDemand = (a: C, b: C) => regionRank(a) - regionRank(b) || b.demand - a.demand;
@@ -293,7 +309,26 @@ export function plan<C extends { region: RegionId; demand: number; searched: boo
   const due = all.filter((c) => c.last && days(c) >= (c.searched ? SEARCHED_REFRESH_DAYS : REFRESH_DAYS)).sort(byRegionThenDemand);
   const taken = new Set([...never, ...due]);
   const rest = all.filter((c) => !taken.has(c)).sort((a, b) => b.demand * days(b) - a.demand * days(a));
-  return [...never, ...due, ...rest].slice(0, Math.max(0, allowance));
+  const ordered = [...never, ...due, ...rest];
+  const n = Math.max(0, allowance);
+  if (!shares) return ordered.slice(0, n);
+  const total = Object.values(shares).reduce((a, b) => a + (b ?? 0), 0) || 1;
+  const take = new Set<C>();
+  const used = new Map<RegionId, number>();
+  for (const c of ordered) {
+    if (take.size >= n) break;
+    const quota = Math.floor(((shares[c.region] ?? 0) / total) * n);
+    if ((used.get(c.region) ?? 0) < quota) {
+      take.add(c);
+      used.set(c.region, (used.get(c.region) ?? 0) + 1);
+    }
+  }
+  for (const c of ordered) {
+    if (take.size >= n) break;
+    if ((shares[c.region] ?? 0) > 0) take.add(c);
+  }
+  // The US first (owner, 2026-11-01), so a rate-limit stop never cuts it; queue order within a region.
+  return ordered.filter((c) => take.has(c)).sort((a, b) => regionRank(a) - regionRank(b));
 }
 
 async function main() {
@@ -329,7 +364,7 @@ async function main() {
         return { region, key, p, demand: demand(p, region, gsc), searched, last: files[region].checked[key] };
       }),
   );
-  const queue = plan(all, allowance, Date.now());
+  const queue = plan(all, allowance, Date.now(), REGION_DAILY_CALLS);
   const searchedCount = all.filter((c) => c.searched).length;
   const fresh = queue.filter((c) => !c.last).length;
   const byRegion = REGION_IDS.map((r) => `${r} ${queue.filter((c) => c.region === r).length}`).join(", ");
