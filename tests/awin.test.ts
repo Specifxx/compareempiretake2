@@ -111,3 +111,8 @@ test("Awin offers: only live, joined, dated offers with a title are kept; a vouc
   assert.deepEqual(v.regions, ["GB", "AU"]);
   assert.equal(toPromotion({ ...base, regions: { all: false, list: [] } }, now), null);
 });
+
+test("Hamleys (Awin 1205) links become tracked deep links", () => {
+  const u = awinUrl("https://www.hamleys.com/lego-city-set", "ce-row");
+  assert.ok(u && u.includes("awinmid=1205") && u.includes("awinaffid=3144410"));
+});
