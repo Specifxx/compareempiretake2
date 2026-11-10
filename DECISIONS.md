@@ -1982,3 +1982,10 @@ cached copy is never wrong. Redraw the static cards only if the `/og` design cha
 
 **Also seen:** four production deploys on 10 Nov between 03:42 and 08:58 UTC (two READY, others cancelled). Each one empties the
 CDN cache for `/og` and the product pages; the one-build-per-12h rule matters for this site's bill as much as any code.
+
+## 2026-11-10: Hamleys joined on Awin (programme 1205)
+
+Awin's welcome email arrived for Hamleys (merchant 1205). It is added to `data/awin/programmes.json` now so every `hamleys.com` link becomes an
+Awin deep link (`awinmid=1205`, publisher 3144410) on this site and, through the copied list, the sisters; the daily `awin-sync` keeps it if the API
+lists it as joined. Hamleys is already a UK retailer here (`uk-hamleys`), fed by `FEED_URL_UK_HAMLEYS` once the owner creates the feed. PPC
+restriction (Hamleys' terms): never bid on "Hamleys" and never run PPC that links directly to hamleys.com.
