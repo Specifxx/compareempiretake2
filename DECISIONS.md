@@ -2001,3 +2001,20 @@ region's home page, and after the sister-site block on the all-category deals li
 Nothing is drawn when no joined store has an offer more than a day from its end, so it grows by itself as Awin approvals arrive. Never a
 store row, price, cheapest or deal; no pop-up, no rail. Measure: `buy_click` with `retailer=awin-<id>` and `kind=partner_offers_home|deals`
 (paid=1), against the programme's clicks in Awin's dashboard. Impact brands are not listed (they have no offers feed).
+
+## 2026-11-10: a GTA 6 console hub at /gta-6 (Australia, US, UK), not a new site
+
+Owner: Grand Theft Auto VI launches 19 November 2026 (Rockstar's newswire: "Thursday, November 19, 2026", PlayStation 5 and Xbox Series X|S),
+so make money from the hype and get it indexed. A new site was ruled out (the game costs the same in every store, so there is nothing to
+compare, and a new domain cannot rank before the launch week). The money is in the hardware, which this site already prices.
+
+**Built.** `/gta-6`, `/us/gta-6`, `/uk/gta-6` (`views/Gta6View.tsx`, `lib/gta6.ts`): the region's PS5 and Xbox Series consoles in stock, most
+stores first, from the day's catalogue (a store's price, never typed here), then controllers, SSDs, storage cards, headsets and 4K TVs as tagged
+Amazon and eBay searches (labelled "Ad", rel sponsored, never a store row or a ranking input). Facts come from Rockstar only and carry its
+link; no price or edition for the game (Engadget's US$80/US$100 was not confirmed on Rockstar's own page), no pre-load date (Rockstar says 10 Nov,
+Engadget 12 Nov), no shortage or "selling out" claim, and an unaffiliated line. Canada has no console catalogue and Singapore has no Amazon tag,
+so neither gets the page.
+
+**Indexing.** In the sitemap (`seo.ts` pages and `us-pages`/`uk-pages`), in the daily IndexNow list (`scripts/indexnow.ts`), linked from the home page's
+"Hot right now" header and the footer's Shop column, hreflang across the three regions. One URL per region, no mass requests, no host change.
+**Limit seen:** the US console catalogue is 8 products and each has one or two stores today, so the US page is thin until more stores list them.
