@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-09T00:21:09.410Z",
+ "scrapedAt": "2026-11-10T03:28:59.108Z",
  "offers": [
   {
    "retailer": "uk-redber",
@@ -20,7 +20,7 @@
    "price": 99.95,
    "wasPrice": 245.99,
    "image": "https://cdn.shopify.com/s/files/1/0197/6032/files/Bravilor_Junior_silver.png?v=1765544062",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bravilor Bonamat"
   },
   {
@@ -207,7 +207,8 @@
    "sku": "PRO-HIURAV-COM",
    "title": "Lelit Elizabeth V3 Dual Boiler Espresso Coffee Machine",
    "url": "https://www.redber.co.uk/products/lelit-elizabeth-dual-boiler-espresso-coffee-machine-brushed-stainless-steel",
-   "price": 1199.95,
+   "price": 1149.95,
+   "wasPrice": 1199.95,
    "image": "https://cdn.shopify.com/s/files/1/0197/6032/files/LelitElizabethDualBoilerEspressoCoffeeMachine-BrushedStainlessSteel.jpg?v=1748943451",
    "inStock": true,
    "brand": "Lelit"
@@ -417,7 +418,8 @@
    "sku": "PRO-SCKKNM-COM",
    "title": "Sage The Duo Temp Pro Coffee Machine - Brushed Stainless Steel",
    "url": "https://www.redber.co.uk/products/sage-the-duo-temp-pro-coffee-machine-brushed-stainless-steel",
-   "price": 399.95,
+   "price": 349.95,
+   "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/0197/6032/files/SageTheDuoTempPro-BrushedStainlessSteel.jpg?v=1750427900",
    "inStock": true,
    "brand": "Sage"

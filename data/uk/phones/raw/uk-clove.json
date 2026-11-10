@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-09T00:10:22.799Z",
+ "scrapedAt": "2026-11-10T03:18:40.322Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -588,7 +588,7 @@
    "url": "https://www.clove.co.uk/products/apple-iphone-duo?variant=45324789252139",
    "price": 2736,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/16761069-1e02-4985-91b6-1fd43d5abb6e.jpg?v=1789038426",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1174,15 +1174,6 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "93281988",
-   "title": "HMD Fusion Business Edition - 5G, 8GB/256GB, 6,56\", 108MP/50MP, 5.000 mAh, Noir",
-   "url": "https://www.clove.co.uk/products/hmd-fusion-business-edition-5g-8gb-256gb-6-56-108mp-50mp-5-000-mah-noir",
-   "price": 213.08,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/63be605a-5f01-437e-af47-cd520e5eaf8c.jpg?v=1793287488",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "HMD-KEYBLU",
    "title": "HMD Key Single SIM Icy Blue 32GB + 2GB RAM",
    "url": "https://www.clove.co.uk/products/hmd-key?variant=41320837578795",
@@ -1727,31 +1718,11 @@
   },
   {
    "retailer": "uk-clove",
-   "sku": "103272117",
-   "title": "OnePlus 15 17.2 cm (6.78\") Dual SIM Android 16.0 5G USB Type-C 16 GB 512 GB 7300 mAh Black",
-   "url": "https://www.clove.co.uk/products/oneplus-15-17-2-cm-6-78-dual-sim-android-16-0-5g-usb-type-c-16-gb-512-gb-7300-mah-black",
-   "price": 1061.1,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5459190c-920c-49d8-be67-e19bf10677f0.jpg?v=1793287485",
-   "inStock": true,
-   "brand": "OnePlus"
-  },
-  {
-   "retailer": "uk-clove",
    "sku": "103737905",
    "title": "OnePlus 15R 17.4 cm (6.83\") Dual SIM Android 16.0 5G USB Type-C 12 GB 256 GB 7400 mAh Mint colour",
    "url": "https://www.clove.co.uk/products/oneplus-15r-17-4-cm-6-83-dual-sim-android-16-0-5g-usb-type-c-12-gb-256-gb-7400-mah-mint-colour",
    "price": 536.55,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5205b488-e850-4a47-9289-9702e3a72ff2.jpg?v=1793287486",
-   "inStock": true,
-   "brand": "OnePlus"
-  },
-  {
-   "retailer": "uk-clove",
-   "sku": "100420456",
-   "title": "OnePlus Nord 5 17.4 cm (6.83\") Dual SIM Android 15 5G USB Type-C 12 GB 512 GB 5200 mAh Blue",
-   "url": "https://www.clove.co.uk/products/oneplus-nord-5-17-4-cm-6-83-dual-sim-android-15-5g-usb-type-c-12-gb-512-gb-5200-mah-blue",
-   "price": 353.61,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c1893d88-ed25-4939-88f5-c856b48e19b7.jpg?v=1793287479",
    "inStock": true,
    "brand": "OnePlus"
   },
@@ -1830,8 +1801,9 @@
    "sku": "SAMS-A18128BLK",
    "title": "Samsung Galaxy A18 4G Dual SIM Black 128GB + 4GB RAM",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-a18-4g?variant=68053980086315",
-   "price": 229.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f3732c33-c8e3-481d-8509-e6eedf7b594a.jpg?v=1793189746",
+   "price": 184.99,
+   "wasPrice": 229.99,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f32f99b7-59a0-4b34-952a-e5c08ce66320.jpg?v=1793189745",
    "inStock": true,
    "brand": "Samsung"
   },
@@ -1841,7 +1813,7 @@
    "title": "Samsung Galaxy A18 4G Dual SIM Light Blue 128GB + 4GB RAM",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-a18-4g?variant=68053980053547",
    "price": 229.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f3732c33-c8e3-481d-8509-e6eedf7b594a.jpg?v=1793189746",
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f32f99b7-59a0-4b34-952a-e5c08ce66320.jpg?v=1793189745",
    "inStock": true,
    "brand": "Samsung"
   },
@@ -1851,7 +1823,7 @@
    "title": "Samsung Galaxy A18 4G Dual SIM Silver 128GB + 4GB RAM",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-a18-4g?variant=68053980119083",
    "price": 229.99,
-   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f3732c33-c8e3-481d-8509-e6eedf7b594a.jpg?v=1793189746",
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f32f99b7-59a0-4b34-952a-e5c08ce66320.jpg?v=1793189745",
    "inStock": true,
    "brand": "Samsung"
   },

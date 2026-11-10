@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-09T00:19:31.041Z",
+ "scrapedAt": "2026-11-10T03:27:25.310Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -1767,7 +1767,7 @@
    "url": "https://www.overclockers.co.uk/gigabyte-geforce-rtx-5070-ti-eagle-oc-ice-sff-16gb-gddr7-pci-express-graphics-card/GRA-GIG-04140.html",
    "price": 1229.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8bd6e50a/images/data/product/0b/567be8/266b3e5d67d6e01d60e8cf55a3fca776469efbcb.png?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -2166,7 +2166,7 @@
    "url": "https://www.overclockers.co.uk/inno3d-geforce-rtx-5060-ti-twin-x2-16gb-gddr7-pci-express-graphics-card/GRA-INO-05064.html",
    "price": 719.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb3e0d49b/images/data/product/d2/ded743/7ecb3ae0a98484d66add22a0df5588d5caba7e6b.png?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -2830,16 +2830,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "GRA-NVI-05591",
-   "brand": "NVIDIA",
-   "title": "NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 PCI-Express Graphics Card - Retail",
-   "url": "https://www.overclockers.co.uk/nvidia-rtx-pro-4000-blackwell-24gb-gddr7-pci-express-graphics-card-retail/GRA-NVI-05591.html",
-   "price": 7099.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe0b6465c/images/data/product/2f/f7b864/7bf08dfd307aecce473d9ca08f0e4c4408138273.jpg?sw=500",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "GRA-NVI-05613",
    "brand": "NVIDIA",
    "title": "NVIDIA RTX PRO 4000 Blackwell 24GB GDDR7 PCI-Express Graphics Card - Retail",
@@ -2876,6 +2866,16 @@
    "url": "https://www.overclockers.co.uk/nvidia-rtx-pro-4500-blackwell-server-editon-32gb-gddr7-graphics-card-oem/GRA-NVI-07933.html",
    "price": 4399.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwea2313b9/images/data/product/3c/27fce1/0eab91054a1429560d9cacf5a91d595783444f2a.png?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "GRA-NVI-05591",
+   "brand": "NVIDIA",
+   "title": "NVIDIA RTX PRO 5000 Blackwell 24GB GDDR7 PCI-Express Graphics Card - Retail",
+   "url": "https://www.overclockers.co.uk/nvidia-rtx-pro-5000-blackwell-24gb-gddr7-pci-express-graphics-card-retail/GRA-NVI-05591.html",
+   "price": 7099.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe0b6465c/images/data/product/2f/f7b864/7bf08dfd307aecce473d9ca08f0e4c4408138273.jpg?sw=500",
    "inStock": true
   },
   {
@@ -3326,7 +3326,7 @@
    "url": "https://www.overclockers.co.uk/palit-geforce-rtx-5080-gaming-pro-oc-v1-16gb-gddr7-pci-express-graphics-card/GRA-PAL-08181.html",
    "price": 1589.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw6eae13f5/images/data/product/99/b1f227/4feb8f649ecc5fc091a9c73496fa71c82d902780.png?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -3546,7 +3546,7 @@
    "url": "https://www.overclockers.co.uk/powercolor-radeon-rx-9070-gre-hellhound-12gb-gddr6-pci-express-graphics-card/GRA-PWC-08280.html",
    "price": 599.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe6279380/images/data/product/ab/adff13/ce10ca397a4174a6ed7672867445bf3f50544d29.png?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -4194,7 +4194,7 @@
    "brand": "ZOTAC",
    "title": "Zotac GeForce RTX 5070 Twin Edge 12GB GDDR7 PCI-Express Graphics Card",
    "url": "https://www.overclockers.co.uk/zotac-geforce-rtx-5070-twin-edge-12gb-gddr7-pci-express-graphics-card/GRA-ZTC-05629.html",
-   "price": 778.99,
+   "price": 799.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwabe4a51b/images/data/product/7a/d977f2/3e3cc650f749d1b9d1e82e23c2b3840b839a39de.jpg?sw=500",
    "inStock": true
   },

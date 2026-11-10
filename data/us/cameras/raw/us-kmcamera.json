@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:59:53.375Z",
+ "scrapedAt": "2026-11-10T03:07:44.711Z",
  "offers": [
   {
    "retailer": "us-kmcamera",
@@ -406,7 +406,7 @@
    "price": 348,
    "wasPrice": 379,
    "image": "https://cdn.shopify.com/s/files/1/2657/1868/files/2511c0d3-2c41-4552-a903-5403e0e0976c.jpg?v=1792687252",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon",
    "mpn": "CAN7280C001-U9"
   },
@@ -1823,7 +1823,7 @@
    "url": "https://kmcamera.com/products/omsv110030ru000",
    "price": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/2657/1868/files/9076a03e-37df-4fce-b416-465114dec170.jpg?v=1755023501",
-   "inStock": false,
+   "inStock": true,
    "brand": "Olympus",
    "mpn": "OMSV110030RU000-MAIN"
   },
@@ -1878,7 +1878,7 @@
    "url": "https://kmcamera.com/products/pandczs99k9",
    "price": 697.99,
    "image": "https://cdn.shopify.com/s/files/1/2657/1868/files/7e58fab0-6184-4ddd-aa0d-34ad4408e902.jpg?v=1792073981",
-   "inStock": false,
+   "inStock": true,
    "brand": "Panasonic",
    "mpn": "PANDCZS99K9-MAIN"
   },
@@ -2333,7 +2333,8 @@
    "sku": "SONILCE1B-MAIN",
    "title": "Sony Alpha a1 Mirrorless Digital Camera | Body Only",
    "url": "https://kmcamera.com/products/sonilce1b",
-   "price": 6198,
+   "price": 5698,
+   "wasPrice": 6198,
    "image": "https://cdn.shopify.com/s/files/1/2657/1868/files/8f8e8486-0972-41b4-9c8e-7f83b7902db4.jpg?v=1770238598",
    "inStock": true,
    "brand": "Sony",
@@ -2513,7 +2514,7 @@
    "sku": "SONDSCRX1RM3B-MAIN",
    "title": "Sony RX1R III Digital Camera",
    "url": "https://kmcamera.com/products/sondscrx1rm3b",
-   "price": 5098,
+   "price": 4898,
    "image": "https://cdn.shopify.com/s/files/1/2657/1868/files/4a91f427-f264-4be5-9afe-aaec2620a25a.jpg?v=1752603612",
    "inStock": true,
    "brand": "Sony",

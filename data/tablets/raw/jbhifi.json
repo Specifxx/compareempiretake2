@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:44:10.330Z",
+ "scrapedAt": "2026-11-10T02:45:18.530Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -68,7 +68,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-128gb-wi-fi-cellular-silver",
    "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/791809-Product-0-I-638767375221077977.jpg?v=1741140823",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -128,7 +128,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-256gb-wi-fi-cellular-blue",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803410-Product-0-I-638767393905199395.jpg?v=1741142656",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1188,7 +1188,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-pro-11-inch-1tb-wi-fi-space-blackm5",
    "price": 3049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807503-Product-0-I-638961720608347173.jpg?v=1760575328",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1528,7 +1528,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-pro-13-inch-256gb-wi-fi-cellular-space-blackm5",
    "price": 2949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807512-Product-0-I-638961728402625498.jpg?v=1760591586",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1745,21 +1745,71 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "749922",
-   "title": "Microsoft Surface Pro (11th Edition) Copilot+ AI PC 13\" Snapdragon X Elite 12 core/16GB/1TB OLED (Platinum)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-11th-edition-copilot-ai-pc-13-snapdragon-x-elite-12-core-16gb-1tb-oled-platinum",
-   "price": 2999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749922-Product-0-I-638518539602279324.jpg?v=1791174804",
+   "sku": "914058",
+   "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 256GB/16GB Black (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-256gb-16gb-black-2nd-edition",
+   "price": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914058-Product-0-I-639258001807089464.jpg?v=1790203447",
    "inStock": true,
    "brand": "Microsoft"
   },
   {
    "retailer": "jbhifi",
-   "sku": "749818",
-   "title": "Microsoft Surface Pro (11th Edition) Copilot+ AI PC 13\" Snapdragon X Elite 12 core/16GB/1TB OLED (Sapphire)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-11th-edition-copilot-ai-pc-13-snapdragon-x-elite-12-core-16gb-1tb-oled-sapphire",
-   "price": 2999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749818-Product-0-I-638518539602921760.jpg?v=1791174800",
+   "sku": "914059",
+   "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 256GB/16GB Platinum (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-256gb-16gb-platinum-2nd-edition",
+   "price": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914059-Product-0-I-639258007804533745.jpg?v=1790204048",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "914060",
+   "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 256GB/16GB Violet (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-256gb-16gb-violet-2nd-edition",
+   "price": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914060-Product-0-I-639258012008262424.jpg?v=1790204510",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "914061",
+   "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 512GB/16GB Black (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-512gb-16gb-black-2nd-edition",
+   "price": 2199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914061-Product-0-I-639258015008410788.jpg?v=1790204767",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "914063",
+   "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 512GB/24GB Black (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-512gb-24gb-black-2nd-edition",
+   "price": 2499,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914063-Product-0-I-639258015012028472.jpg?v=1790204767",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "914044",
+   "title": "Microsoft Surface Pro 12\" Snapdragon X Plus 8 Core/12GB/256GB Platinum (1st Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-snapdragon-x-plus-8-core-12gb-256gb-platinum-1st-edition",
+   "price": 1649,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914044-Product-0-I-639268443010761357.jpg?v=1791247567",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "906678",
+   "title": "Microsoft Surface Pro 12\" Snapdragon X Plus 8 Core/8GB/256GB Platinum (1st Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-snapdragon-x-plus-8-core-8gb-256gb-platinum-1st-edition",
+   "price": 1499,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906678-Product-0-I-639239064003690620_1cf9c9eb-ac77-4375-9807-f713afc070e2.jpg?v=1788311407",
    "inStock": true,
    "brand": "Microsoft"
   },
@@ -1780,6 +1830,26 @@
    "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-13-inch-snapdragon-x2-plus-512gb-16gb-platinum-12th-edition",
    "price": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897350-Product-0-I-639172584499191819.jpg?v=1781661727",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "749922",
+   "title": "Microsoft Surface Pro Copilot+ Ai PC 13\" Snapdragon X Elite 12 Core/16GB/1TB OLED Platinum (11th Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-copilot-ai-pc-13-snapdragon-x-elite-12-core-16gb-1tb-oled-platinum-11th-edition",
+   "price": 2999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749922-Product-0-I-638518539602279324.jpg?v=1791174804",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "749818",
+   "title": "Microsoft Surface Pro Copilot+ AI PC 13\" Snapdragon X Elite 12 Core/16GB/1TB OLED Sapphire (11th Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-copilot-ai-pc-13-snapdragon-x-elite-12-core-16gb-1tb-oled-sapphire-11th-edition",
+   "price": 2999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749818-Product-0-I-638518539602921760.jpg?v=1791174800",
    "inStock": true,
    "brand": "Microsoft"
   },

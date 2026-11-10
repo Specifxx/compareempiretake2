@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-09T00:02:53.320Z",
+ "scrapedAt": "2026-11-10T03:10:42.991Z",
  "offers": [
   {
    "retailer": "us-samsung",
@@ -25,17 +25,6 @@
   },
   {
    "retailer": "us-samsung",
-   "sku": "LS25BG402ENXGO",
-   "mpn": "LS25BG402ENXGO",
-   "brand": "Samsung",
-   "title": "Samsung 25 Inch Odyssey G4 G40B FHD 240Hz | IPS | G-Sync Compatible Gaming Monitor LS25BG402ENXGO",
-   "url": "https://www.samsung.com/us/monitors/gaming/25-inch-odyssey-g40b-fhd-ips-240hz-1ms-gsync-gaming-monitor-sku-ls25bg402enxgo",
-   "price": 279.99,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls25bg402enxgo/gallery/us-gaming-ls25bg402enxgo-fhd-monitor-with-ips-panel-----hz-refresh-rate-and--ms-response-time-black-552035614",
-   "inStock": true
-  },
-  {
-   "retailer": "us-samsung",
    "sku": "LS27FG900XNXZA",
    "mpn": "LS27FG900XNXZA",
    "brand": "Samsung",
@@ -54,6 +43,17 @@
    "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-g55c-qhd-165hz-1ms-mprt-curved-gaming-monitor-sku-ls27cg552enxza",
    "price": 299.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27cg552enxza/gallery/us-gaming-ls27cg552enxza-odyssey-g--g--c-qhd----hz-curved-gaming-monitor-black-552003942",
+   "inStock": true
+  },
+  {
+   "retailer": "us-samsung",
+   "sku": "LS27FG532ENXZA",
+   "mpn": "LS27FG532ENXZA",
+   "brand": "Samsung",
+   "title": "Samsung 27 Inch Odyssey G53F QHD 200hz | AMD FreeSync Premium | HDR10 Gaming Monitor LS27FG532ENXZA",
+   "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-g5-g53f-qhd-ips-200hz-gaming-monitor-sku-ls27fg532enxza",
+   "price": 249.99,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27fg532enxza/gallery/us-gaming-ls27fg532enxza-odyssey-g--g--f-qhd----hz-gaming-monitor-black-552005175",
    "inStock": true
   },
   {
@@ -153,7 +153,7 @@
    "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-oled-g8-g81sf-4k-240hz-gaming-monitor-sku-ls27fg810snxza",
    "price": 1299.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27fg810snxza/gallery/us-gaming-ls27fg810snxza-----inch-odyssey-oled-g--g--sf--k----hz-gaming-monitor-silver-552225472",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-samsung",
@@ -208,17 +208,6 @@
    "url": "https://www.samsung.com/us/monitors/smart/27-s3-s30gd-fhd-ips-100hz-monitor-sku-ls27d300ganxza",
    "price": 149.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27d300ganxza/gallery/us-smart-ls27d300ganxza-----s---s--gd--fhd-ips----hz-monitor-black-551545395",
-   "inStock": true
-  },
-  {
-   "retailer": "us-samsung",
-   "sku": "LS27FM502ENXZA",
-   "mpn": "LS27FM502ENXZA",
-   "brand": "Samsung",
-   "title": "Samsung 27\" Smart Monitor M5 M50F FHD in Black LS27FM502ENXZA",
-   "url": "https://www.samsung.com/us/monitors/smart/27-inch-smart-monitor-m5-m50f-fhd-sku-ls27fm502enxza",
-   "price": 229.99,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27fm502enxza/gallery/us-smart-m5-m50f-black-ls27fm502enxza-551238426",
    "inStock": true
   },
   {
@@ -344,6 +333,17 @@
   },
   {
    "retailer": "us-samsung",
+   "sku": "LS32FM502ENXZA",
+   "mpn": "LS32FM502ENXZA",
+   "brand": "Samsung",
+   "title": "Samsung 32\" Smart Monitor M5 M50F FHD in Black LS32FM502ENXZA",
+   "url": "https://www.samsung.com/us/monitors/smart/32-inch-smart-monitor-m5-m50f-fhd-sku-ls32fm502enxza",
+   "price": 269.99,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls32fm502enxza/gallery/us-smart-m5-m50f-black-ls32fm502enxza-551238456",
+   "inStock": true
+  },
+  {
+   "retailer": "us-samsung",
    "sku": "LS32FM503ENXZA",
    "mpn": "LS32FM503ENXZA",
    "brand": "Samsung",
@@ -351,17 +351,6 @@
    "url": "https://www.samsung.com/us/monitors/smart/32-inch-smart-monitor-m5-m50f-fhd-sku-ls32fm503enxza",
    "price": 269.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls32fm503enxza/gallery/us-smart-m5-m50f-white-ls32fm503enxza-551215460",
-   "inStock": true
-  },
-  {
-   "retailer": "us-samsung",
-   "sku": "LC34G55TWWNXZA",
-   "mpn": "LC34G55TWWNXZA",
-   "brand": "Samsung",
-   "title": "Samsung 34 Inch Odyssey G5 G55T QHD 165Hz | AMD FreeSync Premium | Curved Gaming Monitor LC34G55TWWNXZA",
-   "url": "https://www.samsung.com/us/monitors/gaming/34-inch-g5-odyssey-gaming-monitor-with-1000r-curved-screen-sku-lc34g55twwnxza",
-   "price": 399.99,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/lc34g55twwnxza/gallery/us-gaming-lc34g55twwnxza----inch-odyssey-g--g--t-black-552009708",
    "inStock": true
   },
   {
@@ -472,7 +461,7 @@
    "url": "https://www.samsung.com/us/monitors/gaming/49-inch-odyssey-oled-g9-g91sd-dual-qhd-144hz-03ms-g-sync-sku-ls49dg910snxza",
    "price": 1299.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls49dg910snxza/gallery/us-gaming-ls49dg910snxza----inch-odyssey-oled-g--g--sd-silver-552004479",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-samsung",

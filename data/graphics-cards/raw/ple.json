@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:04:28.338Z",
+ "scrapedAt": "2026-11-10T02:12:13.211Z",
  "offers": [
   {
    "retailer": "ple",
@@ -678,7 +678,7 @@
    "url": "https://www.ple.com.au/products/672365/gigabyte-geforce-rtx-5080-aorus-master-ice-16gb-gddr7-white",
    "price": 3569,
    "image": "https://plecom.imgix.net/iil-416522-672365.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -711,7 +711,7 @@
    "url": "https://www.ple.com.au/products/680222/gigabyte-radeon-r9700-ai-top-32gb-gddr6",
    "price": 2899,
    "image": "https://plecom.imgix.net/iil-451625-680222.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -804,18 +804,6 @@
    "wasPrice": 649,
    "image": "https://plecom.imgix.net/iil-436251-677105.jpg?w=600&h=600",
    "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "675856",
-   "title": "MSI GeForce RTX 5060 8GB GDDR7 SHADOW 2X OC",
-   "brand": "MSI",
-   "mpn": "GeForce RTX 5060 8G SHADOW 2X OC",
-   "url": "https://www.ple.com.au/products/675856/msi-geforce-rtx-5060-8gb-gddr7-shadow-2x-oc",
-   "price": 649,
-   "wasPrice": 749,
-   "image": "https://plecom.imgix.net/iil-430596-675856.jpg?w=600&h=600",
-   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1008,7 +996,7 @@
    "price": 4999,
    "wasPrice": 9999,
    "image": "https://plecom.imgix.net/iil-450136-679161.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1277,7 +1265,7 @@
    "url": "https://www.ple.com.au/products/673936/sapphire-pure-radeon-rx-9070-xt-16gb-gddr6",
    "price": 1499,
    "image": "https://plecom.imgix.net/iil-422869-673936.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1354,7 +1342,7 @@
    "url": "https://www.ple.com.au/products/687911/xfx-swift-radeon-rx-9050-gaming-edition-8gb-gddr6",
    "price": 489,
    "image": "https://plecom.imgix.net/iil-484366-687911.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1409,7 +1397,7 @@
    "url": "https://www.ple.com.au/products/684913/xfx-swift-radeon-rx-9070-gre-12gb-gddr6",
    "price": 929,
    "image": "https://plecom.imgix.net/iil-471660-684913.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1431,7 +1419,7 @@
    "url": "https://www.ple.com.au/products/678054/xfx-swift-radeon-rx-9070-xt-triple-fan-gaming-edition-16gb-gddr6-",
    "price": 1479,
    "image": "https://plecom.imgix.net/iil-441703-678054.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1541,7 +1529,7 @@
    "url": "https://www.ple.com.au/products/674634/zotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-gddr7",
    "price": 3399,
    "image": "https://plecom.imgix.net/iil-425581-674634.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:59:02.037Z",
+ "scrapedAt": "2026-11-10T03:06:54.075Z",
  "offers": [
   {
    "retailer": "us-glazers",
@@ -267,7 +267,7 @@
    "url": "https://www.glazerscamera.com/products/canon-eos-r6-v-body",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/381597250C00201aHero_0d55ab2a-56c5-4aa3-be9a-8e6156b4ae43.png?v=1778626734",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -1355,6 +1355,16 @@
    "url": "https://www.glazerscamera.com/products/leica-q3-43mm-apo",
    "price": 7950,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/13636_01_Hero.png?v=1726875858",
+   "inStock": true,
+   "brand": "Leica"
+  },
+  {
+   "retailer": "us-glazers",
+   "sku": "45279",
+   "title": "Leica Q3 43 Formula 1 Edition Digital Camera",
+   "url": "https://www.glazerscamera.com/products/leica-q3-43mm-apo-f1-edition",
+   "price": 9950,
+   "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/Leica_Q3_43_F1_MB_WhiteHero.png?v=1794254944",
    "inStock": true,
    "brand": "Leica"
   },
@@ -2746,7 +2756,7 @@
    "sku": "25760",
    "title": "Sony RX1R III Premium Compact Camera",
    "url": "https://www.glazerscamera.com/products/sony-rx1r-iii-full-frame-compact-digital-camera",
-   "price": 5099.99,
+   "price": 4899.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/25760_DSCRX1RM3_01_Hero.png?v=1752602648",
    "inStock": true,
    "brand": "Sony"

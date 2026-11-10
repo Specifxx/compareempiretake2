@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-09T00:01:05.190Z",
+ "scrapedAt": "2026-11-10T03:09:05.395Z",
  "offers": [
   {
    "retailer": "us-pictureline",
@@ -454,7 +454,8 @@
    "sku": "CP.OS.00000506.02",
    "title": "DJI Osmo Action 6 Adventure Combo",
    "url": "https://www.pictureline.com/products/dji-osmo-action-6-pro-adventure-combo",
-   "price": 536,
+   "price": 479,
+   "wasPrice": 536,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/DJI-Osmo-Action-6-1_27586a16-9158-4ecc-a52d-291e800bdeca.jpg?v=1763675071",
    "inStock": true,
    "mpn": "CP.OS.00000506.02"
@@ -1800,7 +1801,7 @@
    "url": "https://www.pictureline.com/products/spider-camera-holster-spiderpro-single-camera-system-v3-brown",
    "price": 259,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Spiderv3-SCSBelt-Brown-1.jpg?v=1785277665",
-   "inStock": true,
+   "inStock": false,
    "brand": "Spider Camera Holster",
    "mpn": "1110BR"
   },

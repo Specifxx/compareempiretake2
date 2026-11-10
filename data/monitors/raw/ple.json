@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:04:31.448Z",
+ "scrapedAt": "2026-11-10T02:12:15.615Z",
  "offers": [
   {
    "retailer": "ple",
@@ -103,7 +103,7 @@
    "brand": "Acer",
    "mpn": "UM.JX0SA.306",
    "url": "https://www.ple.com.au/products/679981/acer-nitro-xz322qu-v3-32-curved-1440p-180hz-va-gaming-monitor",
-   "price": 294,
+   "price": 284,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-451188-679981.jpg?w=600&h=600",
    "inStock": false
@@ -1798,17 +1798,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "671752",
-   "title": "BenQ MOBIUZ EX321UX - 32\" 4K 2160p 144Hz IPS Gaming Monitor",
-   "brand": "BenQ",
-   "mpn": "EX321UX",
-   "url": "https://www.ple.com.au/products/671752/benq-mobiuz-ex321ux-32-4k-2160p-144hz-ips-gaming-monitor",
-   "price": 1899,
-   "image": "https://plecom.imgix.net/iil-411109-671752.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "665433",
    "title": "BenQ PhotoVue SW272Q - 27\" 1440p 60Hz IPS Professional Monitor",
    "brand": "BenQ",
@@ -1891,7 +1880,8 @@
    "brand": "Gigabyte",
    "mpn": "FO27Q24G",
    "url": "https://www.ple.com.au/products/688629/gigabyte-aorus-elite-fo27q24g-woled-265-1440p-240hz-003ms-gaming-monitor",
-   "price": 849,
+   "price": 699,
+   "wasPrice": 849,
    "image": "https://plecom.imgix.net/iil-487556-688629.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1902,7 +1892,8 @@
    "brand": "Gigabyte",
    "mpn": "FO27Q28G",
    "url": "https://www.ple.com.au/products/688630/gigabyte-aorus-elite-fo27q28g-woled-27-1440p-280hz-003ms-gaming-monitor",
-   "price": 999,
+   "price": 849,
+   "wasPrice": 999,
    "image": "https://plecom.imgix.net/iil-487555-688630.jpg?w=600&h=600",
    "inStock": true
   },
@@ -2223,7 +2214,7 @@
    "url": "https://www.ple.com.au/products/688721/lg-27g550b-b-27-1080p-300hz-1ms-ips-gaming-monitor",
    "price": 389,
    "image": "https://plecom.imgix.net/iil-487488-688721.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2305,7 +2296,7 @@
    "price": 499,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-487750-688764.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2353,7 +2344,7 @@
    "price": 429,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-469939-684557.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2445,7 +2436,7 @@
    "brand": "LG",
    "mpn": "27G610A-B",
    "url": "https://www.ple.com.au/products/680219/lg-ultragear-27g610a-b-27-1440p-200hz-ips-gaming-monitor",
-   "price": 229,
+   "price": 349,
    "wasPrice": 499,
    "image": "https://plecom.imgix.net/iil-451666-680219.jpg?w=600&h=600",
    "inStock": false
@@ -2505,8 +2496,7 @@
    "brand": "LG",
    "mpn": "27GM950B-B",
    "url": "https://www.ple.com.au/products/685713/lg-ultragear-evo-gm9-27gm950b-b-27-5k-2880p-165hz-1440p-330hz-dual-mode-ips-gaming-monitor",
-   "price": 1499,
-   "wasPrice": 1999,
+   "price": 1999,
    "image": "https://plecom.imgix.net/iil-473468-685713.jpg?w=600&h=600",
    "inStock": true
   },
@@ -2568,18 +2558,6 @@
    "wasPrice": 1599,
    "image": "https://plecom.imgix.net/iil-473598-685715.jpg?w=600&h=600",
    "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "679858",
-   "title": "LG UltraGear OLED 34GX90SA-W - 34\" Curved 1440p Ultrawide 240Hz 0.03ms Gaming Monitor (White)",
-   "brand": "LG",
-   "mpn": "34GX90SA-W",
-   "url": "https://www.ple.com.au/products/679858/lg-ultragear-oled-34gx90sa-w-34-curved-1440p-ultrawide-240hz-003ms-gaming-monitor-white",
-   "price": 1269,
-   "wasPrice": 1399,
-   "image": "https://plecom.imgix.net/iil-450596-679858.jpg?w=600&h=600",
-   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2756,7 +2734,7 @@
    "brand": "MSI",
    "mpn": "MAG 275CQF E18",
    "url": "https://www.ple.com.au/products/676862/msi-mag-275cqf-e18-27-curved-1440p-180hz-05ms-fast-va-gaming-monitor-",
-   "price": 219,
+   "price": 189,
    "wasPrice": 239,
    "image": "https://plecom.imgix.net/iil-435717-676862.jpg?w=600&h=600",
    "inStock": true
@@ -2816,7 +2794,7 @@
    "brand": "MSI",
    "mpn": "MAG 321CQF E18 ",
    "url": "https://www.ple.com.au/products/677534/msi-mag-321cqf-e18-32-curved-1440p-180hz-05ms-rapid-va-gaming-monitor",
-   "price": 309,
+   "price": 279,
    "wasPrice": 393,
    "image": "https://plecom.imgix.net/iil-439386-677534.jpg?w=600&h=600",
    "inStock": true
@@ -2888,7 +2866,7 @@
    "brand": "MSI",
    "mpn": "MPG 242R X60N",
    "url": "https://www.ple.com.au/products/678568/msi-mpg-242r-x60n-24-1080p-600hz-01ms-rapid-tn-gaming-monitor-",
-   "price": 899,
+   "price": 979,
    "wasPrice": 1599,
    "image": "https://plecom.imgix.net/iil-444656-678568.jpg?w=600&h=600",
    "inStock": true
@@ -2900,7 +2878,7 @@
    "brand": "MSI",
    "mpn": "MPG 272QRF X36",
    "url": "https://www.ple.com.au/products/681569/msi-mpg-272qrf-x36-27-1440p-360hz-05ms-rapid-ips-gaming-monitor",
-   "price": 999,
+   "price": 759,
    "wasPrice": 9999,
    "image": "https://plecom.imgix.net/iil-459196-681569.jpg?w=600&h=600",
    "inStock": true
@@ -3156,18 +3134,6 @@
    "wasPrice": 499,
    "image": "https://plecom.imgix.net/iil-442015-678151.jpg?w=600&h=600",
    "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "678162",
-   "title": "Philips 27E1N1800A - 27\" 4K 2160p 60Hz IPS Monitor",
-   "brand": "Philips",
-   "mpn": "27E1N1800A",
-   "url": "https://www.ple.com.au/products/678162/philips-27e1n1800a-27-4k-2160p-60hz-ips-monitor",
-   "price": 199,
-   "wasPrice": 349,
-   "image": "https://plecom.imgix.net/iil-441914-678162.jpg?w=600&h=600",
-   "inStock": true
   },
   {
    "retailer": "ple",
@@ -3434,7 +3400,7 @@
    "url": "https://www.ple.com.au/products/686244/samsung-odyssey-oled-g6-27-1440p-240hz-003ms-gaming-monitor",
    "price": 799,
    "image": "https://plecom.imgix.net/iil-475717-686244.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -3454,7 +3420,7 @@
    "brand": "Samsung",
    "mpn": "LS32HG732SEXXY",
    "url": "https://www.ple.com.au/products/685147/samsung-odyssey-oled-g7-32-4k-165hz-1080p-330hz-dual-mode-003ms-gaming-monitor",
-   "price": 1299,
+   "price": 1099,
    "wasPrice": 1399,
    "image": "https://plecom.imgix.net/iil-471708-685147.jpg?w=600&h=600",
    "inStock": true

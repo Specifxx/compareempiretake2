@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-09T00:26:24.967Z",
+ "scrapedAt": "2026-11-10T03:35:44.658Z",
  "offers": [
   {
    "retailer": "sg-mobilesquare",
@@ -149,7 +149,7 @@
    "price": 1740,
    "wasPrice": 1899,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "sg-mobilesquare",
@@ -256,7 +256,7 @@
    "sku": "44884587446361",
    "title": "Apple iPhone 18 Pro Max (1TB/12GB) Black",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-1tb-12gb?variant=44884587446361",
-   "price": 2740,
+   "price": 2730,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E091FFF3-EE04-4EA0-A67B-3DAB82DCFE1C.jpg?v=1789322781",
    "inStock": false
@@ -266,7 +266,7 @@
    "sku": "44884587479129",
    "title": "Apple iPhone 18 Pro Max (1TB/12GB) Burgundy",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-1tb-12gb?variant=44884587479129",
-   "price": 2740,
+   "price": 2730,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
    "inStock": true
@@ -276,7 +276,7 @@
    "sku": "44884587511897",
    "title": "Apple iPhone 18 Pro Max (1TB/12GB) Glacier",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-1tb-12gb?variant=44884587511897",
-   "price": 2740,
+   "price": 2730,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E74008D2-F26A-4918-AEA3-856B7D9A9388.jpg?v=1789322781",
    "inStock": true
@@ -286,7 +286,7 @@
    "sku": "44884587413593",
    "title": "Apple iPhone 18 Pro Max (1TB/12GB) Silver",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-1tb-12gb?variant=44884587413593",
-   "price": 2740,
+   "price": 2730,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/4D810AF8-2FD8-4800-9B18-4EF7E50D42A7.jpg?v=1789322781",
    "inStock": false
@@ -328,6 +328,46 @@
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-256gb-12gb?variant=44884579811417",
    "price": 1920,
    "wasPrice": 2099,
+   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/4D810AF8-2FD8-4800-9B18-4EF7E50D42A7.jpg?v=1789322781",
+   "inStock": false
+  },
+  {
+   "retailer": "sg-mobilesquare",
+   "sku": "44884590264409",
+   "title": "Apple iPhone 18 Pro Max (2TB/12GB) Black",
+   "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-2tb-12gb?variant=44884590264409",
+   "price": 3200,
+   "wasPrice": 3699,
+   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E091FFF3-EE04-4EA0-A67B-3DAB82DCFE1C.jpg?v=1789322781",
+   "inStock": true
+  },
+  {
+   "retailer": "sg-mobilesquare",
+   "sku": "44884590297177",
+   "title": "Apple iPhone 18 Pro Max (2TB/12GB) Burgundy",
+   "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-2tb-12gb?variant=44884590297177",
+   "price": 3200,
+   "wasPrice": 3699,
+   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
+   "inStock": false
+  },
+  {
+   "retailer": "sg-mobilesquare",
+   "sku": "44884590329945",
+   "title": "Apple iPhone 18 Pro Max (2TB/12GB) Glacier",
+   "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-2tb-12gb?variant=44884590329945",
+   "price": 3200,
+   "wasPrice": 3699,
+   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E74008D2-F26A-4918-AEA3-856B7D9A9388.jpg?v=1789322781",
+   "inStock": false
+  },
+  {
+   "retailer": "sg-mobilesquare",
+   "sku": "44884590231641",
+   "title": "Apple iPhone 18 Pro Max (2TB/12GB) Silver",
+   "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-2tb-12gb?variant=44884590231641",
+   "price": 3200,
+   "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/4D810AF8-2FD8-4800-9B18-4EF7E50D42A7.jpg?v=1789322781",
    "inStock": false
   },

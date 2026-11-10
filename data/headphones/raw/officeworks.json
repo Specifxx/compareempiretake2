@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:10:59.805Z",
+ "scrapedAt": "2026-11-10T02:18:53.615Z",
  "offers": [
   {
    "retailer": "officeworks",
@@ -124,6 +124,17 @@
   },
   {
    "retailer": "officeworks",
+   "sku": "BONKIDHPBK",
+   "title": "BONELK Classic Kids Wired Headphones Black",
+   "url": "https://www.officeworks.com.au/shop/officeworks/p/bonelk-classic-kids-wired-headphones-black-bonkidhpbk",
+   "price": 20,
+   "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/BONKIDHPBK_bonelk_classic_wired_headphones_black.jpg",
+   "inStock": true,
+   "brand": "Bonelk",
+   "mpn": "ELK-40050-R"
+  },
+  {
+   "retailer": "officeworks",
    "sku": "BONKWLSTPK",
    "title": "BONELK My-Style Kids Wireless Headphones Pink/White",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/bonelk-my-style-kids-wireless-headphones-pink-white-bonkwlstpk",
@@ -245,25 +256,14 @@
   },
   {
    "retailer": "officeworks",
-   "sku": "DIMDR15BK",
-   "title": "Sony Earphones Black EX15",
-   "url": "https://www.officeworks.com.au/shop/officeworks/p/sony-earphones-black-ex15-dimdr15bk",
-   "price": 24,
-   "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/DIMDR15BK_sony_earphones_black_ex15.jpg",
+   "sku": "LOGV100WH",
+   "title": "Logitech Zone Vibe 100 Headphones White",
+   "url": "https://www.officeworks.com.au/shop/officeworks/p/logitech-zone-vibe-100-headphones-white-logv100wh",
+   "price": 179,
+   "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/LOGV100WH_logitech_zone_vibe_100_headphones_white.jpg",
    "inStock": true,
-   "brand": "Sony",
-   "mpn": "MDREX15LPB"
-  },
-  {
-   "retailer": "officeworks",
-   "sku": "DIMDR15BL",
-   "title": "Sony Earphones Blue EX15",
-   "url": "https://www.officeworks.com.au/shop/officeworks/p/sony-earphones-blue-ex15-dimdr15bl",
-   "price": 24,
-   "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/DIMDR15BL_sony_earphones_blue_ex15.jpg",
-   "inStock": true,
-   "brand": "Sony",
-   "mpn": "MDREX15LPLI"
+   "brand": "Logitech",
+   "mpn": "981-001220"
   },
   {
    "retailer": "officeworks",
@@ -292,7 +292,7 @@
    "sku": "DISYX110NC",
    "title": "Sony Noise Cancelling Headphones Black ZX110NC",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/sony-noise-cancelling-headphones-black-zx110nc-disyx110nc",
-   "price": 78,
+   "price": 99,
    "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/DISYX110NC_sony_noise_cancelling_headphones_black_zx110nc.jpg",
    "inStock": true,
    "brand": "Sony",
@@ -303,7 +303,8 @@
    "sku": "DISYENHPBK",
    "title": "Sony On-Ear Headphones Black MDRZX110",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/sony-on-ear-headphones-black-mdrzx110-disyenhpbk",
-   "price": 44,
+   "price": 26,
+   "wasPrice": 44,
    "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/DISYENHPBK_sony_on_ear_headphones_black_mdrzx110.jpg",
    "inStock": true,
    "brand": "Sony",

@@ -1,6 +1,26 @@
 {
- "scrapedAt": "2026-11-08T23:10:08.031Z",
+ "scrapedAt": "2026-11-10T02:18:09.231Z",
  "offers": [
+  {
+   "retailer": "thegoodguys",
+   "sku": "bissell-powerclean-dual-brush-cordless-vacuum-4255",
+   "title": "Bissell PowerClean Dual Brush Cordless Vacuum",
+   "url": "https://www.thegoodguys.com.au/bissell-powerclean-dual-brush-cordless-vacuum-4255",
+   "price": 599,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097939_1046560.png?v=1776232600&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Bissell"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "bissell-powerclean-furfinder-cordless-vacuum-4239",
+   "title": "Bissell PowerClean FurFinder Cordless Vacuum",
+   "url": "https://www.thegoodguys.com.au/bissell-powerclean-furfinder-cordless-vacuum-4239",
+   "price": 349,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095264_960385.png?v=1776232167&width=284&height=284&quality=88",
+   "inStock": true,
+   "brand": "Bissell"
+  },
   {
    "retailer": "thegoodguys",
    "sku": "bissell-powerclean-furguard-cordless-vacuum-4241",
@@ -123,7 +143,7 @@
    "sku": "dyson-big-ball-bagless-barrel-vacuum-447177-01",
    "title": "Dyson Big Ball Bagless Barrel Vacuum",
    "url": "https://www.thegoodguys.com.au/dyson-big-ball-bagless-barrel-vacuum-447177-01",
-   "price": 599,
+   "price": 395,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50085575_859960.png?v=1776749566&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "447177-01",
@@ -134,7 +154,7 @@
    "sku": "dyson-pencilvac-fluffycones-cordless-vacuum-492714-01",
    "title": "Dyson PencilVac Fluffycones Cordless Vacuum",
    "url": "https://www.thegoodguys.com.au/dyson-pencilvac-fluffycones-cordless-vacuum-492714-01",
-   "price": 849,
+   "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096120_1010438.png?v=1776233562&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "492714-01",
@@ -156,7 +176,7 @@
    "sku": "dyson-v10-konical-cordless-vacuum-626407-01",
    "title": "Dyson V10 Konical Cordless Vacuum",
    "url": "https://www.thegoodguys.com.au/dyson-v10-konical-cordless-vacuum-626407-01",
-   "price": 799,
+   "price": 588,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097929_1049563.png?v=1776408262&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "626407-01",
@@ -189,10 +209,21 @@
    "sku": "dyson-v16-piston-animal-cordless-vacuum-496018-01",
    "title": "Dyson V16 Piston Animal Cordless Vacuum",
    "url": "https://www.thegoodguys.com.au/dyson-v16-piston-animal-cordless-vacuum-496018-01",
-   "price": 1199,
+   "price": 997,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096117_1010271.png?v=1776749610&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "496018-01",
+   "brand": "Dyson"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "dyson-v16-piston-animal-submarine-wet-and-dry-cordless-vacuum-496024-01",
+   "title": "Dyson V16 Piston Animal Submarine Wet & Dry Cordless Vacuum",
+   "url": "https://www.thegoodguys.com.au/dyson-v16-piston-animal-submarine-wet-and-dry-cordless-vacuum-496024-01",
+   "price": 1197,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096118_1010267.png?v=1776232595&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "496024-01",
    "brand": "Dyson"
   },
   {
@@ -211,7 +242,7 @@
    "sku": "dyson-v8-cyclone-cordless-vacuum-626406-01",
    "title": "Dyson V8 Cyclone Cordless Vacuum",
    "url": "https://www.thegoodguys.com.au/dyson-v8-cyclone-cordless-vacuum-626406-01",
-   "price": 649,
+   "price": 375,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098543_1056533.png?v=1776401013&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "626406-01",
@@ -291,17 +322,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50074235_761558.png?v=1776742503&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "P5OIB",
-   "brand": "Electrolux"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "electrolux-series-600-cordless-vacuum-efp61712a",
-   "title": "Electrolux Series 600 Cordless Vacuum",
-   "url": "https://www.thegoodguys.com.au/electrolux-series-600-cordless-vacuum-efp61712a",
-   "price": 399,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50093560_949830.png?v=1776231381&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "EFP61712A",
    "brand": "Electrolux"
   },
   {

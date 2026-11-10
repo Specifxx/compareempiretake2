@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:04:45.987Z",
+ "scrapedAt": "2026-11-10T02:12:30.158Z",
  "offers": [
   {
    "retailer": "ple",
@@ -1003,7 +1003,7 @@
    "price": 109,
    "wasPrice": 149,
    "image": "https://plecom.imgix.net/iil-329154-641895.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1233,7 +1233,7 @@
    "brand": "Ubiquiti",
    "mpn": "UXG-Fiber",
    "url": "https://www.ple.com.au/products/674102/ubiquiti-unifi-gateway-fiber-10gbe-router",
-   "price": 557,
+   "price": 499,
    "wasPrice": 589,
    "image": "https://plecom.imgix.net/iil-422747-674102.jpg?w=600&h=600",
    "inStock": true
@@ -1245,7 +1245,8 @@
    "brand": "Ubiquiti",
    "mpn": "UXG-Lite",
    "url": "https://www.ple.com.au/products/664078/ubiquiti-unifi-gateway-lite-router",
-   "price": 179,
+   "price": 79,
+   "wasPrice": 179,
    "image": "https://plecom.imgix.net/iil-367147-664078.jpg?w=600&h=600",
    "inStock": true
   },

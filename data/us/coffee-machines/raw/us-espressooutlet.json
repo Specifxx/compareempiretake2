@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:57:57.937Z",
+ "scrapedAt": "2026-11-10T03:05:47.693Z",
  "offers": [
   {
    "retailer": "us-espressooutlet",
@@ -141,7 +141,7 @@
    "price": 1299,
    "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/Manus_Main_White_Background.jpg?v=1762801782",
-   "inStock": true,
+   "inStock": false,
    "brand": "El Rocio"
   },
   {
@@ -445,7 +445,7 @@
    "url": "https://www.espressooutlet.net/products/lucca-solo-espresso-machine?variant=41118465982539",
    "price": 1395,
    "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/Lucca-Solo-Espresso-Machine-Stainless-KO-by-Clive-Coffee-Hero.jpg?v=1731009677",
-   "inStock": true,
+   "inStock": false,
    "brand": "Clive Coffee",
    "mpn": "SI7713SS"
   },
@@ -786,7 +786,7 @@
    "sku": "42369246036043",
    "title": "Turin Gallatin DB - Dual Boiler Espresso Machine with PID White",
    "url": "https://www.espressooutlet.net/products/turin-gallatin-db-dual-boiler-espresso-machine-with-pid?variant=42369246036043",
-   "price": 1949,
+   "price": 1829,
    "wasPrice": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/Gallatin_Dual_Boiler_White_Background_b653c685-4a9f-4a76-bb0b-6dbb72fc1845.jpg?v=1772738491",
    "inStock": true
@@ -897,7 +897,7 @@
    "sku": "42369243676747",
    "title": "Turin Gallatin V HX Espresso Machine with PID White Body with Stainless Group and Accents Yes ($125)",
    "url": "https://www.espressooutlet.net/products/turin-gallatin-hx-espresso-machine-with-pid?variant=42369243676747",
-   "price": 1299,
+   "price": 1149,
    "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/Gallatin_2-2.jpg?v=1772738572",
    "inStock": true
@@ -950,17 +950,6 @@
   },
   {
    "retailer": "us-espressooutlet",
-   "sku": "41307632468043",
-   "title": "Turin TrekBrew Portable Espresso Machine - Espresso Machine Only",
-   "url": "https://www.espressooutlet.net/products/turintrek-portable-espresso-machine-and-grinder",
-   "price": 89,
-   "wasPrice": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/TrekBrew.png?v=1747775430",
-   "inStock": true,
-   "brand": "Turin Grinders"
-  },
-  {
-   "retailer": "us-espressooutlet",
    "sku": "MVAE1PRVN3010135",
    "title": "Victoria Arduino E1 Prima & Prima Pro Espresso Machines Prima Volumetric Black",
    "url": "https://www.espressooutlet.net/products/victoria-arduino-e1-prima?variant=67233861894219",
@@ -1000,7 +989,8 @@
    "sku": "42675202490443",
    "title": "Wendougee LITA LA Espresso Machine Black",
    "url": "https://www.espressooutlet.net/products/wendougee-lita-ba?variant=42675202490443",
-   "price": 2383,
+   "price": 2099,
+   "wasPrice": 2599,
    "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/LITABlack.webp?v=1772740482",
    "inStock": true,
    "brand": "Wendougee"
@@ -1010,7 +1000,8 @@
    "sku": "42675202523211",
    "title": "Wendougee LITA LA Espresso Machine White",
    "url": "https://www.espressooutlet.net/products/wendougee-lita-ba?variant=42675202523211",
-   "price": 2383,
+   "price": 1999,
+   "wasPrice": 2599,
    "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/LITAWhite.webp?v=1772740482",
    "inStock": true,
    "brand": "Wendougee"

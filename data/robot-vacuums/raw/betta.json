@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T22:58:35.465Z",
+ "scrapedAt": "2026-11-10T02:06:25.520Z",
  "offers": [
   {
    "retailer": "betta",
@@ -76,7 +76,8 @@
    "sku": "837666",
    "title": "Dyson Spot+Scrub Ai Robot Vacuum",
    "url": "https://www.betta.com.au/products/dyson-spot-scrub-ai-robot-vacuum-837666",
-   "price": 1999,
+   "price": 1399,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/DYSON-218087.01-837666-10032026_20_1.jpg?v=1776098272",
    "inStock": true,
    "brand": "Dyson"
@@ -86,7 +87,8 @@
    "sku": "837914",
    "title": "iRobot Roomba 115 Combo Robotic Vacuum & Mop with Multifunctional Docking Station",
    "url": "https://www.betta.com.au/products/irobot-roomba-115-combo-robotic-vacuum-mop-with-multifunctional-docking-station-837914",
-   "price": 599,
+   "price": 429,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/IROBOT-Y455000-837914-14052026_20_1.jpg?v=1779122115",
    "inStock": true,
    "mpn": "Y455000",
@@ -97,7 +99,8 @@
    "sku": "838124",
    "title": "iRobot Roomba Plus 415 Combo Robot Vacuum and Mop + AutoWash Dock",
    "url": "https://www.betta.com.au/products/irobot-roomba-plus-415-combo-robot-vacuum-and-mop-autowash-dock-838124",
-   "price": 949,
+   "price": 679,
+   "wasPrice": 949,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/IROBOT-G285000-838124-06072026_20_1.jpg?v=1784856309",
    "inStock": true,
    "mpn": "G285000",
@@ -108,7 +111,8 @@
    "sku": "838125",
    "title": "iRobot Roomba Plus 575 Combo Robotic Vacuum & Mop with Multifunctional Docking Station",
    "url": "https://www.betta.com.au/products/irobot-roomba-plus-575-combo-robotic-vacuum-mop-with-multifunctional-docking-station-838125",
-   "price": 1699,
+   "price": 999,
+   "wasPrice": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/IROBOT-R285000-838125-06072026_20_1.jpg?v=1783474116",
    "inStock": true,
    "mpn": "R285000",
@@ -119,10 +123,23 @@
    "sku": "838196",
    "title": "iRobot Roomba Plus 675 Combo Robot Vacuum & Mop + AutoWash Dock",
    "url": "https://www.betta.com.au/products/irobot-roomba-plus-675-combo-robot-vacuum-mop-autowash-dock-838196",
-   "price": 2199,
+   "price": 1399,
+   "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/IROBOT-V185000-838196-01092026_20_1.jpg?v=1788312384",
    "inStock": true,
    "mpn": "V185000",
+   "brand": "Irobot"
+  },
+  {
+   "retailer": "betta",
+   "sku": "838568",
+   "title": "IROBOT ROOMBA PLUS 875 COMBO ROBOT + AUTOWASH DOCK",
+   "url": "https://www.betta.com.au/products/irobot-roomba-plus-875-combo-robot-autowash-dock-838568",
+   "price": 1999,
+   "wasPrice": 2899,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/IROBOT-Z185000-838568-14102026_20_1.jpg?v=1793110372",
+   "inStock": true,
+   "mpn": "Z185000",
    "brand": "Irobot"
   },
   {

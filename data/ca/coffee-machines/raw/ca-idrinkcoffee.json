@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-09T00:25:27.030Z",
+ "scrapedAt": "2026-11-10T03:34:46.204Z",
  "offers": [
   {
    "retailer": "ca-idrinkcoffee",
@@ -31,6 +31,26 @@
    "inStock": false,
    "brand": "Breville",
    "mpn": "SA-BRE-BES500-BSS"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "BEZ-ARIA-SS-FAST",
+   "title": "Bezzera Aria Fast Espresso Machine w/PID and Flow Control - Chrome",
+   "url": "https://www.idrinkcoffee.com/products/bezzera-aria-fast-espresso-machine-w-pid-and-flow-control-chrome",
+   "price": 3499,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/aria-fast-chrome.png?v=1793986558",
+   "inStock": true,
+   "brand": "Bezzera"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "BEZ-ARIA-W-FAST",
+   "title": "Bezzera Aria Fast Espresso Machine w/PID and Flow Control - White",
+   "url": "https://www.idrinkcoffee.com/products/bezzera-aria-fast-espresso-machine-w-pid-and-flow-control-white",
+   "price": 3499,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/aria-fast-white.png?v=1793986561",
+   "inStock": true,
+   "brand": "Bezzera"
   },
   {
    "retailer": "ca-idrinkcoffee",
@@ -201,6 +221,16 @@
    "price": 2799,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/nini-pid-de-green-front.png?v=1776285185",
    "inStock": false,
+   "brand": "Bezzera"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "BEZ-NINI-DE-SS",
+   "title": "Bezzera NINI DE Espresso Machine - Stainless Steel",
+   "url": "https://www.idrinkcoffee.com/products/bezzera-nini-de-espresso-machine-stainless-steel",
+   "price": 2799,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/ss-front.png?v=1793990060",
+   "inStock": true,
    "brand": "Bezzera"
   },
   {
@@ -2429,7 +2459,7 @@
    "url": "https://www.idrinkcoffee.com/products/profitec-pro-800-espresso-machine",
    "price": 4699,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/products/Pro800_seitlich.jpg?v=1650740621",
-   "inStock": false,
+   "inStock": true,
    "brand": "Profitec",
    "mpn": "PRO-800-22"
   },

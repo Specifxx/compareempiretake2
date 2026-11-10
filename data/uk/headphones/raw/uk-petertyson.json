@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-09T00:19:40.324Z",
+ "scrapedAt": "2026-11-10T03:27:35.632Z",
  "offers": [
   {
    "retailer": "uk-petertyson",
@@ -27,6 +27,15 @@
    "price": 1789,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/l/c/lcd-3.webp",
    "inStock": false
+  },
+  {
+   "retailer": "uk-petertyson",
+   "sku": "60302",
+   "title": "Audeze LCD-GX Open-Back Gaming Headset Leather",
+   "url": "https://petertyson.co.uk/audeze-lcd-gx",
+   "price": 889,
+   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/l/c/lcdgx_category.webp",
+   "inStock": true
   },
   {
    "retailer": "uk-petertyson",
@@ -102,15 +111,6 @@
   },
   {
    "retailer": "uk-petertyson",
-   "sku": "58595",
-   "title": "Beyerdynamic Amiron Zero In-ear Wireless Open-Ear Earbuds",
-   "url": "https://petertyson.co.uk/beyerdynamic-amiron-zero",
-   "price": 129,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/a/m/amironzerobl_peter_tyson_av_main.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
    "sku": "58599",
    "title": "Beyerdynamic Aventho 100 On-ear Wireless ANC Headphones",
    "url": "https://petertyson.co.uk/beyerdynamic-aventho-100",
@@ -135,24 +135,6 @@
    "price": 359,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/a/v/avent300grey_peter_tyson_av_main.webp",
    "inStock": true
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "58609",
-   "title": "Beyerdynamic DJ 300 Pro X Club On/Over-ear Wired DJ Headphones - Black",
-   "url": "https://petertyson.co.uk/beyerdynamic-dj-300-pro-x-club-black",
-   "price": 169,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/d/j/dj300prox_peter_tyson_av_2.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "60029",
-   "title": "Beyerdynamic MMX 130 Over-ear Wireless Open-back Gaming Headset",
-   "url": "https://petertyson.co.uk/beyerdynamic-mmx-130-wireless",
-   "price": 109,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/m/m/mmx130white_peter_tyson_av_main.webp",
-   "inStock": false
   },
   {
    "retailer": "uk-petertyson",
@@ -411,15 +393,6 @@
   },
   {
    "retailer": "uk-petertyson",
-   "sku": "54789",
-   "title": "FiiO Jade Audio JT7 Over-Ear Wired Open-Back Planar Headphones - Champagne Gold",
-   "url": "https://petertyson.co.uk/fiio-jade-audio-jt7-champagne-gold",
-   "price": 104,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/1/7/174045691.webp",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-petertyson",
    "sku": "52888",
    "title": "FiiO Snowsky Wind On-ear Wired Semi-open Headphones - Black",
    "url": "https://petertyson.co.uk/fiio-snowsky-wind-on-ear-wired-semi-open-headphones-black",
@@ -480,7 +453,7 @@
    "price": 449,
    "wasPrice": 495,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/e/hempclassic_peter_tyson_1.webp",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-petertyson",
@@ -525,7 +498,7 @@
    "sku": "38263",
    "title": "Grado GS1000x Statement Over-ear Wired Open-back Headphones",
    "url": "https://petertyson.co.uk/grado-gs1000x-statement-open-back-headphones",
-   "price": 949,
+   "price": 699,
    "wasPrice": 1295,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/g/s/gs1000x-3q-.webp",
    "inStock": true
@@ -535,7 +508,7 @@
    "sku": "25443",
    "title": "Grado Hemp On-ear Wired Open-back Headphones",
    "url": "https://petertyson.co.uk/grado-reference-series-hemp-headphones",
-   "price": 349,
+   "price": 269,
    "wasPrice": 479,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/g/r/grado-hemp-007-full.webp",
    "inStock": true
@@ -568,16 +541,6 @@
    "price": 289,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/f/hfmanandanano_3_.webp",
    "inStock": true
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "48309",
-   "title": "HifiMan Ananda Over-Ear Open-Back Planar Magnetic Headphones",
-   "url": "https://petertyson.co.uk/hifiman-ananda-planar-magnetic-reference-headphones",
-   "price": 229,
-   "wasPrice": 339,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/f/hfmananda.webp",
-   "inStock": false
   },
   {
    "retailer": "uk-petertyson",
@@ -637,15 +600,6 @@
   },
   {
    "retailer": "uk-petertyson",
-   "sku": "48318",
-   "title": "HiFiMan Deva Over-Ear Open-Back Planar Magnetic Headphones",
-   "url": "https://petertyson.co.uk/hifiman-deva-wired-advanced-active-headphones",
-   "price": 179,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/d/e/devawired.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
    "sku": "48317",
    "title": "HiFiMan Deva Pro Over-Ear Open-Back Planar Magnetic Headphones with Bluetooth Attachment",
    "url": "https://petertyson.co.uk/hifiman-deva-pro-planar-magnetic-headphones-wired-or-wireless",
@@ -653,16 +607,6 @@
    "wasPrice": 229,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/f/hfmdevapro.webp",
    "inStock": true
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "48500",
-   "title": "HiFiMan Edition XS Over-Ear Open-Back Planar Magnetic Headphones",
-   "url": "https://petertyson.co.uk/hifiman-edition-xs-planar-headphones",
-   "price": 189,
-   "wasPrice": 269,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/e/d/edition_xs-800_800-1.webp",
-   "inStock": false
   },
   {
    "retailer": "uk-petertyson",
@@ -718,15 +662,6 @@
    "url": "https://petertyson.co.uk/hifiman-he600-planar-headphones",
    "price": 799,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/e/he600_1_2025.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "48552",
-   "title": "HifiMan Sundara Over-Ear Closed-Back Planar Magnetic Headphones",
-   "url": "https://petertyson.co.uk/hifiman-sundara-planar-closed-back-headphones",
-   "price": 149,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/s/u/sundara-closed-back-1_1.webp",
    "inStock": false
   },
   {
@@ -896,15 +831,6 @@
   },
   {
    "retailer": "uk-petertyson",
-   "sku": "45665",
-   "title": "Marshall Motif II In-ear Wireless ANC Earbuds",
-   "url": "https://petertyson.co.uk/marshall-motif-ii-a-n-c-wireless-earbuds-black",
-   "price": 179,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/m/o/motifiiblack_2025_1.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
    "sku": "57459",
    "title": "Noble Artemis Over-Ear Wireless ANC Headphones - Black",
    "url": "https://petertyson.co.uk/noble-artemis-black",
@@ -977,15 +903,6 @@
   },
   {
    "retailer": "uk-petertyson",
-   "sku": "41498",
-   "title": "Sennheiser Accentum Over-ear Wireless ANC Headphones",
-   "url": "https://petertyson.co.uk/sennheiser-accentum-wireless-headphones-black",
-   "price": 159,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/a/c/accentumblk-1_1.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
    "sku": "59143",
    "title": "Sennheiser HDB 630 Over-ear Wireless ANC Headphones",
    "url": "https://petertyson.co.uk/sennheiser-hdb-630-config",
@@ -1022,44 +939,6 @@
   },
   {
    "retailer": "uk-petertyson",
-   "sku": "44761",
-   "title": "Sony WHULT900N ULT WEAR Over-ear Wireless ANC Headphones - Black",
-   "url": "https://petertyson.co.uk/sony-whult900n-ult-wear-wireless-noise-cancelling-headphones",
-   "price": 130,
-   "wasPrice": 179,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/u/l/ult_wear_black_standard_large.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "44763",
-   "title": "Sony WHULT900N ULT WEAR Over-ear Wireless ANC Headphones - White",
-   "url": "https://petertyson.co.uk/sony-whult900n-ult-wear-wireless-noise-cancelling-headphones-white",
-   "price": 130,
-   "wasPrice": 179,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/w/h/whult900nw-1_1.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "52321",
-   "title": "SoundCore Liberty 4 Pro In-ear Wireless ANC Earbuds - Black",
-   "url": "https://petertyson.co.uk/soundcore-liberty-4-pro-in-ear-wireless-active-noise-cancellation-earbuds-black",
-   "price": 129,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/l/i/lib4problk_1_2025.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "52303",
-   "title": "SoundCore Space One Pro Over-ear Wireless ANC Headphones - Black",
-   "url": "https://petertyson.co.uk/soundcore-space-one-pro-over-ear-wireless-active-noise-cancelling-headphones-black",
-   "price": 149,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/s/p/spaceoneprob_1_2025_1.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
    "sku": "51488",
    "title": "T+A Solitaire T Over-ear Wireless ANC Headphones",
    "url": "https://petertyson.co.uk/t-a-solitaire-t-bluetooth-headphones-cognac-white",
@@ -1075,26 +954,6 @@
    "price": 1289,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/s/o/solitairet-black_1.webp",
    "inStock": true
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "51877",
-   "title": "Technics EAH-A800 Over-ear Wireless ANC Headphones - Black",
-   "url": "https://petertyson.co.uk/technics-eah-a800-wireless-headphones-with-noise-cancelling-and-microphone-black",
-   "price": 199,
-   "wasPrice": 249,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/e/a/eaha800ek_1_2025.webp",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-petertyson",
-   "sku": "51878",
-   "title": "Technics EAH-A800 Over-ear Wireless ANC Headphones - Silver",
-   "url": "https://petertyson.co.uk/technics-eah-a800-wireless-headphones-with-noise-cancelling-and-microphone-silver",
-   "price": 199,
-   "wasPrice": 249,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/e/a/eaha800es_1_2025.webp",
-   "inStock": false
   }
  ]
 }

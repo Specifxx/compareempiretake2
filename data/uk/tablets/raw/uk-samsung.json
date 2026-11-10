@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-09T00:21:54.189Z",
+ "scrapedAt": "2026-11-10T03:29:47.790Z",
  "offers": [
   {
    "retailer": "uk-samsung",
@@ -91,17 +91,6 @@
   },
   {
    "retailer": "uk-samsung",
-   "sku": "SMX236KEPI",
-   "mpn": "SMX236KEPI",
-   "brand": "Samsung",
-   "title": "Samsung Galaxy Tab A11+ Kids Edition (5G) 128GB",
-   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-plus-kids-edition-5g-128gb-pink-f-smx236kepi/",
-   "price": 359,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx236kepi/gallery/uk-galaxy-tab-a11-plus-kids-edition-5g-128gb-pink-f-smx236kepi-thumb-555277170",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-samsung",
    "sku": "SMX236KEBL",
    "mpn": "SMX236KEBL",
    "brand": "Samsung",
@@ -113,14 +102,14 @@
   },
   {
    "retailer": "uk-samsung",
-   "sku": "SMX230KEPI",
-   "mpn": "SMX230KEPI",
+   "sku": "SMX236KEPI",
+   "mpn": "SMX236KEPI",
    "brand": "Samsung",
-   "title": "Samsung Galaxy Tab A11+ Kids Edition (Wi-Fi) 128GB",
-   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-plus-kids-edition-wi-fi-128gb-pink-f-smx230kepi/",
-   "price": 309,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx230kepi/gallery/uk-galaxy-tab-a11-plus-kids-edition-wi-fi-128gb-pink-f-smx230kepi-thumb-555277172",
-   "inStock": true
+   "title": "Samsung Galaxy Tab A11+ Kids Edition (5G) 128GB",
+   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-plus-kids-edition-5g-128gb-pink-f-smx236kepi/",
+   "price": 359,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx236kepi/gallery/uk-galaxy-tab-a11-plus-kids-edition-5g-128gb-pink-f-smx236kepi-thumb-555277170",
+   "inStock": false
   },
   {
    "retailer": "uk-samsung",
@@ -132,6 +121,17 @@
    "price": 309,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx230kebl/gallery/uk-galaxy-tab-a11-plus-kids-edition-wi-fi-128gb-blue-f-smx230kebl-thumb-555277174",
    "inStock": true
+  },
+  {
+   "retailer": "uk-samsung",
+   "sku": "SMX230KEPI",
+   "mpn": "SMX230KEPI",
+   "brand": "Samsung",
+   "title": "Samsung Galaxy Tab A11+ Kids Edition (Wi-Fi) 128GB",
+   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-a/galaxy-tab-a11-plus-kids-edition-wi-fi-128gb-pink-f-smx230kepi/",
+   "price": 309,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/f-smx230kepi/gallery/uk-galaxy-tab-a11-plus-kids-edition-wi-fi-128gb-pink-f-smx230kepi-thumb-555277172",
+   "inStock": false
   },
   {
    "retailer": "uk-samsung",
@@ -151,7 +151,7 @@
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab S10 FE (10.9\", Wi-Fi) 128GB",
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s10-fe-grey-128gb-wi-fi-sm-x520nzareub/",
-   "price": 539,
+   "price": 429,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x520nzareub/gallery/uk-galaxy-tab-s10-fe-sm-x526-sm-x520nzareub-thumb-545667964",
    "inStock": true
   },
@@ -162,7 +162,7 @@
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab S10 FE 5G (10.9\") 128GB",
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s10-fe-silver-128gb-5g-sm-x526bzsreub/",
-   "price": 639,
+   "price": 529,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x526bzsreub/gallery/uk-galaxy-tab-s10-fe-sm-x526-542825-sm-x526bzsreub-thumb-545669079",
    "inStock": true
   },
@@ -173,7 +173,7 @@
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab S10 FE+ (13.1\", Wi-Fi) 128GB",
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s10-fe-plus-grey-128gb-wi-fi-sm-x620nzareub/",
-   "price": 689,
+   "price": 549,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x620nzareub/gallery/uk-galaxy-tab-s10-fe-plus-sm-x626-sm-x620nzareub-thumb-545671590",
    "inStock": true
   },
@@ -184,7 +184,7 @@
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab S10 FE+ 5G (13.1\") 256GB",
    "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s10-fe-plus-grey-256gb-5g-sm-x626bzapeub/",
-   "price": 889,
+   "price": 729,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x626bzapeub/gallery/uk-galaxy-tab-s10-fe-plus-sm-x626-542844-sm-x626bzapeub-thumb-545673187",
    "inStock": true
   },
@@ -267,13 +267,13 @@
   },
   {
    "retailer": "uk-samsung",
-   "sku": "SM-X846BZSPEUB",
-   "mpn": "SM-X846BZSPEUB",
+   "sku": "SM-X846BZAPEUB",
+   "mpn": "SM-X846BZAPEUB",
    "brand": "Samsung",
    "title": "Samsung Galaxy Tab S12+ 5G (12.6\") 512GB",
-   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s12-plus-5g-silver-512gb-sm-x846bzspeub/",
+   "url": "https://www.samsung.com/uk/tablets/galaxy-tab-s/galaxy-tab-s12-plus-5g-grey-512gb-sm-x846bzapeub/",
    "price": 1549,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x846bzspeub/gallery/uk-galaxy-tab-s12-plus-sm-x846-sm-x846bzspeub-thumb-554720358",
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/sm-x846bzapeub/gallery/uk-galaxy-tab-s12-plus-sm-x846-607270-sm-x846bzapeub-thumb-554934516",
    "inStock": true
   }
  ]

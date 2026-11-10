@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T22:58:03.199Z",
+ "scrapedAt": "2026-11-10T02:05:47.963Z",
  "offers": [
   {
    "retailer": "betta",
@@ -67,7 +67,8 @@
    "sku": "821338",
    "title": "JBL JR310 Kids Bluetooth Wireless On-Ear Headphones - Blue/Pink",
    "url": "https://www.betta.com.au/products/jbl-jr310-kids-bluetooth-wireless-on-ear-headphones-blue-pink-821338",
-   "price": 58,
+   "price": 41,
+   "wasPrice": 58,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-JR310BLUETOOTHBLU-5059193-821338-051125.jpg?v=1774076772",
    "inStock": true,
    "brand": "JBL"
@@ -77,7 +78,8 @@
    "sku": "821339",
    "title": "JBL JR310 Kids Bluetooth Wireless On-Ear Headphones - Red/Blue",
    "url": "https://www.betta.com.au/products/jbl-jr310-kids-bluetooth-wireless-on-ear-headphones-red-blue-821339",
-   "price": 58,
+   "price": 41,
+   "wasPrice": 58,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-JR310BLUETOOTHRED-5059194-821339-051125.jpg?v=1774076774",
    "inStock": true,
    "brand": "JBL"
@@ -169,6 +171,86 @@
    "url": "https://www.betta.com.au/products/jbl-live-680-wireless-on-ear-noise-cancelling-headphones-black-877784",
    "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6779637-877784-07072026_20_1.jpg?v=1783519904",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "betta",
+   "sku": "877785",
+   "title": "JBL Live 780 Wireless On-Ear Noise Cancelling Headphones - Blue",
+   "url": "https://www.betta.com.au/products/jbl-live-780-wireless-on-ear-noise-cancelling-headphones-blue-877785",
+   "price": 249,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6779634-877785-07072026_20_1.jpg?v=1783519899",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "betta",
+   "sku": "877786",
+   "title": "JBL Live 780 Wireless On-Ear Noise Cancelling Headphones - White",
+   "url": "https://www.betta.com.au/products/jbl-live-780-wireless-on-ear-noise-cancelling-headphones-white-877786",
+   "price": 249,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6779638-877786-07072026_20_1.jpg?v=1783519909",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "betta",
+   "sku": "877779",
+   "title": "JBL Live 780 Wireless Over-Ear Noise Cancelling Headphones - Black",
+   "url": "https://www.betta.com.au/products/jbl-live-780-wireless-over-ear-noise-cancelling-headphones-black-877779",
+   "price": 298,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6779635-877779-07072026_20_1.jpg?v=1783519885",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "betta",
+   "sku": "877781",
+   "title": "JBL Live 780 Wireless Over-Ear Noise Cancelling Headphones - Blue",
+   "url": "https://www.betta.com.au/products/jbl-live-780-wireless-over-ear-noise-cancelling-headphones-blue-877781",
+   "price": 298,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6779631-877781-07072026_20_1.jpg?v=1783519895",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "betta",
+   "sku": "877780",
+   "title": "JBL Live 780 Wireless Over-Ear Noise Cancelling Headphones - White",
+   "url": "https://www.betta.com.au/products/jbl-live-780-wireless-over-ear-noise-cancelling-headphones-white-877780",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6779632-877780-07072026_20_1.jpg?v=1783519890",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "betta",
+   "sku": "877791",
+   "title": "JBL Live Beam 4 TWS Adaptive Noise Cancelling Earbuds - Black",
+   "url": "https://www.betta.com.au/products/jbl-live-beam-4-tws-adaptive-noise-cancelling-earbuds-black-877791",
+   "price": 268,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6784896-877791-07072026_20_1.jpg?v=1783519862",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "betta",
+   "sku": "877793",
+   "title": "JBL Live Beam 4 TWS Adaptive Noise Cancelling Earbuds - Blue",
+   "url": "https://www.betta.com.au/products/jbl-live-beam-4-tws-adaptive-noise-cancelling-earbuds-blue-877793",
+   "price": 268,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6784899-877793-07072026_20_1.jpg?v=1783519873",
+   "inStock": true,
+   "brand": "JBL"
+  },
+  {
+   "retailer": "betta",
+   "sku": "877792",
+   "title": "JBL Live Beam 4 TWS Adaptive Noise Cancelling Earbuds - Silver",
+   "url": "https://www.betta.com.au/products/jbl-live-beam-4-tws-adaptive-noise-cancelling-earbuds-silver-877792",
+   "price": 269,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6784909-877792-07072026_20_2.jpg?v=1783519879",
    "inStock": true,
    "brand": "JBL"
   },
@@ -378,7 +460,8 @@
    "sku": "874912",
    "title": "JBL Tune 680NC Noise Cancelling Wireless On-Ear Headphones - Black",
    "url": "https://www.betta.com.au/products/jbl-tune-680nc-noise-cancelling-wireless-on-ear-headphones-black-874912",
-   "price": 165,
+   "price": 125,
+   "wasPrice": 165,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/JBL-6686373-874912-18022026_20_1.jpg?v=1774079686",
    "inStock": true,
    "brand": "JBL"
@@ -559,7 +642,8 @@
    "sku": "829973",
    "title": "LG Dolby Atmos Play & Plug Tone Free TF8-IP67 Wireless Earbuds",
    "url": "https://www.betta.com.au/products/lg-dolby-atmos-play-plug-tone-free-tf8-ip67-wireless-earbuds-829973",
-   "price": 375,
+   "price": 338,
+   "wasPrice": 375,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/LG-TONE-UFT8Q_20BLACK_20LIME-829973-19042023.jpg?v=1782837634",
    "inStock": true,
    "mpn": "TONE-UTF8Q",
@@ -677,7 +761,7 @@
    "sku": "861102",
    "title": "Shokz OpenRun Earphones - Black",
    "url": "https://www.betta.com.au/products/shokz-openrun-earphones-black-861102",
-   "price": 218,
+   "price": 219,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/SHOKZ-S803BK-861102-140624-051125.jpg?v=1774079352",
    "inStock": true,
    "mpn": "S803BK",
@@ -779,6 +863,7 @@
    "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/SPROUT-SP204-864841-25112024.jpg?v=1774079786",
    "inStock": true,
+   "mpn": "SP204",
    "brand": "Sprout"
   },
   {
@@ -827,6 +912,17 @@
   },
   {
    "retailer": "betta",
+   "sku": "879224",
+   "title": "Techano IPH Earphones - White",
+   "url": "https://www.betta.com.au/products/techano-iph-earphones-white-879224",
+   "price": 39.95,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/TECHANO-AD037-879224-240826.jpg?v=1788185478",
+   "inStock": true,
+   "mpn": "AD037",
+   "brand": "Techano"
+  },
+  {
+   "retailer": "betta",
    "sku": "836916",
    "title": "Techano U15 Pro True Wireless In-Ear Headphones - White",
    "url": "https://www.betta.com.au/products/techano-u15-pro-true-wireless-in-ear-headphones-white-836916",
@@ -834,6 +930,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/TECHANO-AC330-836916-27082025.jpg?v=1774079915",
    "inStock": true,
    "mpn": "AC330",
+   "brand": "Techano"
+  },
+  {
+   "retailer": "betta",
+   "sku": "879223",
+   "title": "Techano USB-C In-Ear Earphones - White",
+   "url": "https://www.betta.com.au/products/techano-usb-c-in-ear-earphones-white-879223",
+   "price": 29.95,
+   "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/TECHANO-AD076-879223-240826.jpg?v=1788185475",
+   "inStock": true,
+   "mpn": "AD076",
    "brand": "Techano"
   }
  ]

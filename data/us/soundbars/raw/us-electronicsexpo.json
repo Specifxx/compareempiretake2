@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:57:48.767Z",
+ "scrapedAt": "2026-11-10T03:05:43.576Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -292,7 +292,7 @@
    "price": 279.99,
    "wasPrice": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/klipsch-flexus-core-100-powered-21-channel-dolby-atmos-sound-bar-with-bluetooth-product-type-4865809.jpg?v=1770335953",
-   "inStock": true,
+   "inStock": false,
    "brand": "Klipsch",
    "mpn": "KLPFLEXUS100.FBA"
   },
@@ -359,7 +359,8 @@
    "sku": "POLMAGMAXAX.FBA",
    "title": "Polk Audio MagniFi Max AX 5.1.2 Channel Sound Bar with 10\" Wireless Subwoofer",
    "url": "https://www.electronicsexpo.com/products/polk-audio-magnifi-max-ax-5-1-2-channel-sound-bar-with-10-wireless-subwoofer-2022-model",
-   "price": 799,
+   "price": 639,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/polk-audio-magnifi-max-ax-512-channel-sound-bar-with-10-wireless-subwoofer-2022-model-9116293.jpg?v=1753291823",
    "inStock": true,
    "brand": "Polk Audio"
@@ -414,7 +415,7 @@
    "sku": "POLMAGMAXAXSR.FBA",
    "title": "Polk MagniFi Max AX SR 7.1.2 Channel Sound Bar with 10\" Wireless Subwoofer & SR2 Surround Speakers",
    "url": "https://www.electronicsexpo.com/products/polk-magnifi-max-ax-sr-7-1-2-channel-sound-bar-with-10-wireless-subwoofer-sr2-surround-speakers-2022-model",
-   "price": 899,
+   "price": 719,
    "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/polk-magnifi-max-ax-sr-712-channel-sound-bar-with-10-wireless-subwoofer-sr2-surround-speakers-2022-model-3092536.jpg?v=1753292459",
    "inStock": true,
@@ -610,7 +611,8 @@
    "sku": "SENSB02SBK.FBA",
    "title": "Sennheiser AMBEO 250W 7.1.4-Channel Dolby Atmos Soundbar Mini",
    "url": "https://www.electronicsexpo.com/products/sennheiser-ambeo-250w-7-1-4-channel-dolby-atmos-soundbar-mini",
-   "price": 949.95,
+   "price": 499.95,
+   "wasPrice": 949.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/sennheiser-ambeo-250w-714-channel-dolby-atmos-soundbar-mini-6703169.jpg?v=1753291988",
    "inStock": false,
    "brand": "Sennheiser",
@@ -621,7 +623,8 @@
    "sku": "SENAMBEOBAR.FBA",
    "title": "Sennheiser AMBEO Soundbar Max 5.1.4-Channel Powered Sound Bar with Dolby Atmos and DTS:X",
    "url": "https://www.electronicsexpo.com/products/sennheiser-ambeo-soundbar-max-5-1-4-channel-powered-sound-bar-with-dolby-atmos-and-dts-x",
-   "price": 2999.95,
+   "price": 1699.95,
+   "wasPrice": 2999.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/sennheiser-ambeo-soundbar-max-514-channel-powered-sound-bar-with-dolby-atmos-and-dtsx-9637617.jpg?v=1753291819",
    "inStock": false,
    "brand": "Sennheiser"
@@ -722,6 +725,29 @@
   },
   {
    "retailer": "us-electronicsexpo",
+   "sku": "YAMSRC30ABLRB.FBA",
+   "title": "YAMAHA Audio SR-C30A Compact Sound Bar with Wireless Subwoofer and Bluetooth, Black",
+   "url": "https://www.electronicsexpo.com/products/yamaha-audio-sr-c30a-compact-sound-bar-with-wireless-subwoofer-and-bluetooth-black",
+   "price": 199.99,
+   "wasPrice": 279.99,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1725937.jpg?v=1793988531",
+   "inStock": true,
+   "brand": "Yamaha Audio",
+   "mpn": "YAMSRC30ABLRB.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "YAMB200ABL.FBA",
+   "title": "YAMAHA B200A Compact Sound Bar with Dolby Atmos, Bluetooth - Black",
+   "url": "https://www.electronicsexpo.com/products/yamaha-b200a-compact-sound-bar-with-dolby-atmos-bluetooth-black",
+   "price": 249.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1774570.jpg?v=1793988518",
+   "inStock": true,
+   "brand": "YAMAHA",
+   "mpn": "YAMB200ABL.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
    "sku": "YAMSRB20ABL.FBA",
    "title": "Yamaha SR-B20A Sound Bar with Built-In Subwoofers and Bluetooth",
    "url": "https://www.electronicsexpo.com/products/yamaha-sr-b20a-sound-bar-with-built-in-subwoofers-and-bluetooth-yamsrb20abl",
@@ -738,7 +764,7 @@
    "url": "https://www.electronicsexpo.com/products/yamaha-sr-b30a-dolby-atmos-sound-bar-with-built-in-subwoofers",
    "price": 279.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/yamaha-sr-b30a-dolby-atmos-sound-bar-with-built-in-subwoofers-1513271.jpg?v=1753291924",
-   "inStock": true,
+   "inStock": false,
    "brand": "Yamaha",
    "mpn": "YAMSRB30ABL.FBA"
   },

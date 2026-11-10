@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:59:59.092Z",
+ "scrapedAt": "2026-11-10T03:07:51.808Z",
  "offers": [
   {
    "retailer": "us-minisforum",
@@ -256,7 +256,7 @@
    "retailer": "us-minisforum",
    "sku": "47325699408117",
    "title": "MINISFORUM AtomMan G1 Pro AMD Ryzen™ 9 8945HX 32GB RAM+1TB SSD US",
-   "url": "https://store.minisforum.com/products/minisforum-g1-pro-gaming-pc?variant=47325699408117",
+   "url": "https://store.minisforum.com/products/minisforum-g1-pro-gaming-pc",
    "price": 1759,
    "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0401/1032/5921/files/Compressed_G1_Pro.png?v=1783865874",
@@ -864,6 +864,18 @@
   },
   {
    "retailer": "us-minisforum",
+   "sku": "67946482794741",
+   "title": "MINISFORUM T5 Max-388 AMD Ryzen™ AI Max+ 388 48GB RAM+1TB SSD | Estimated shipping time: Early December US",
+   "url": "https://store.minisforum.com/products/minisforum-t5-max-388-mini-pc",
+   "price": 1559,
+   "wasPrice": 1949,
+   "image": "https://cdn.shopify.com/s/files/1/0401/1032/5921/files/2_318fee30-dd1f-490f-bc2d-cc850832bf67.png?v=1793773725",
+   "inStock": true,
+   "brand": "MINISFORUM",
+   "mpn": "T5Max-38841US"
+  },
+  {
+   "retailer": "us-minisforum",
    "sku": "48798192402677",
    "title": "MINISFORUM UM750 Neo AMD Ryzen™ Z1 16GB RAM + 500GB SSD US",
    "url": "https://store.minisforum.com/products/minisforum-um750-neo-mini-pc?variant=48798192402677",
@@ -1143,7 +1155,7 @@
    "price": 671,
    "wasPrice": 839,
    "image": "https://cdn.shopify.com/s/files/1/0401/1032/5921/files/Compressed_X1_Lite.png?v=1783866304",
-   "inStock": true,
+   "inStock": false,
    "brand": "MINISFORUM",
    "mpn": "X1Lite-25535US"
   }

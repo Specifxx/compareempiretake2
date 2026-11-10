@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:09:31.136Z",
+ "scrapedAt": "2026-11-10T02:16:21.744Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -292,7 +292,7 @@
    "url": "https://www.jbhifi.com.au/products/aoc-q27g42ze-27-qhd-260hz-gaming-monitor",
    "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807562-Product-0-I-638913352297048937.jpg?v=1755738491",
-   "inStock": true,
+   "inStock": false,
    "mpn": "Q27G42ZE",
    "brand": "Aoc"
   },
@@ -951,17 +951,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "788740",
-   "title": "Lenovo Legion R32qc 31.5\" QHD 180Hz VA Curved Gaming Monitor",
-   "url": "https://www.jbhifi.com.au/products/lenovo-legion-r32qc-31-5-qhd-180hz-va-curved-gaming-monitor",
-   "price": 349,
-   "wasPrice": 429,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/788740-Product-0-I-638719830002537577.jpg?v=1736386221",
-   "inStock": true,
-   "brand": "Lenovo"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "797509",
    "title": "Lenovo Legion R34w-30 34\" WQHD 180Hz Curved Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-r34w-30-34-wqhd-180hz-curved-gaming-monitor",
@@ -1052,7 +1041,7 @@
    "url": "https://www.jbhifi.com.au/products/lg-16-view-wqxga-ips-portable-monitor-with-usb-type-c",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/633099-Product-0-I-638278220062517048.jpg?v=1692225253",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lg"
   },
   {
@@ -1202,7 +1191,6 @@
    "title": "LG UltraGear G6 27G64NA 27\" QHD 300Hz Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/lg-ultragear-g6-27g64na-27-qhd-300hz-gaming-monitor",
    "price": 499,
-   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899041-Product-0-I-639171668407086372.jpg?v=1787176011",
    "inStock": true,
    "mpn": "27G64NA",
@@ -1647,7 +1635,7 @@
    "url": "https://www.jbhifi.com.au/products/philips-evnia-32m2n8900-32-uhd-qd-oled-240hz-gaming-monitor",
    "price": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/814432-Product-0-I-638851127404174274.jpg?v=1749516012",
-   "inStock": false,
+   "inStock": true,
    "mpn": "32M2N8900",
    "brand": "Philips"
   },

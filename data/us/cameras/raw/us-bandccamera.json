@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:56:23.239Z",
+ "scrapedAt": "2026-11-10T03:04:08.220Z",
  "offers": [
   {
    "retailer": "us-bandccamera",
@@ -619,7 +619,8 @@
    "sku": "CP.OS.00000506.02",
    "title": "DJI Osmo Action 6 Adventure Combo",
    "url": "https://bandccamera.com/products/dji-osmo-action-6-adventure-combo",
-   "price": 536,
+   "price": 479,
+   "wasPrice": 536,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/wcgr3mwepej0hn9b07tu.jpg?v=1763495449",
    "inStock": true,
    "mpn": "CP.OS.00000506.02"
@@ -641,7 +642,7 @@
    "url": "https://bandccamera.com/products/dji-osmo-pocket-3-creator-combo",
    "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/dji-osmo-pocket-3-creator-combo-313820.jpg?v=1700008033",
-   "inStock": true,
+   "inStock": false,
    "mpn": "CP.OS.00000302.01"
   },
   {
@@ -2111,17 +2112,6 @@
   },
   {
    "retailer": "us-bandccamera",
-   "sku": "PMP1LC-BLK-01",
-   "title": "Nomatic McKinnon Camera Pack 25L + Ladder +1 Lg. Cube",
-   "url": "https://bandccamera.com/products/nomatic-mckinnon-camera-pack-25l-ladder-1-lg-cube",
-   "price": 369.99,
-   "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/nomatic-mckinnon-camera-pack-25l-ladder-1-lg-cube-988052.jpg?v=1728770153",
-   "inStock": false,
-   "brand": "Nomatic",
-   "mpn": "PMP1LC-BLK-01"
-  },
-  {
-   "retailer": "us-bandccamera",
    "sku": "V210040BU000",
    "title": "OM SYSTEM OM-1 Mark II Mirrorless Camera (Body Only)",
    "url": "https://bandccamera.com/products/om-system-om-1-mark-ii-mirrorless-camera-body-only",
@@ -2754,7 +2744,7 @@
    "url": "https://bandccamera.com/products/sony-a7-v-mirrorless-camera?variant=42268736258119",
    "price": 2899.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/rzazqvb4jff4ngekstit.jpg?v=1764699152",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony",
    "mpn": "ILCE-7M5/B"
   },
@@ -2927,7 +2917,7 @@
    "sku": "DSC-RX1RM3",
    "title": "Sony RX1R III Compact Digital camera",
    "url": "https://bandccamera.com/products/sony-rx1r-iii-compact-digital-camera",
-   "price": 5098,
+   "price": 4898,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/bjp6z09xntopvqdw1hoq.png?v=1752600424",
    "inStock": true,
    "brand": "Sony",

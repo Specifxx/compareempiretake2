@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-08T23:33:47.706Z",
+ "scrapedAt": "2026-11-10T02:39:07.925Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -88,7 +88,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-13-inch-with-m5-chip-1tb-24gb-starlight",
    "price": 2849,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/511614-Product-0-I-639081645603092548.jpg?v=1790763064",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -368,7 +368,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-proled-xdr-display-with-m5-pro-chip-1tb-24gb-space-black",
    "price": 4599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890938-Product-0-I-639288163802821283.jpg?v=1793219645",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1105,7 +1105,7 @@
    "title": "ASUS Zenbook 14 14\" WUXGA OLED Copilot+ AI PC Laptop (Snapdragon X X1-26-100)[512GB/Blue]",
    "url": "https://www.jbhifi.com.au/products/asus-zenbook-14-14-wuxga-oled-copilot-ai-pc-laptop-snapdragon-x-x1-26-100512gb-blue",
    "price": 2099,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906685-Product-0-I-639252374411844090.jpg?v=1789640705",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906685-Product-0-I-639297970203365266.jpg?v=1794200344",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1115,7 +1115,7 @@
    "title": "ASUS Zenbook 14\" WUXGA OLED Laptop Pink (Qualcomm Snapdragon X - X1-26-100)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-zenbook-14-wuxga-oled-laptop-pink-qualcomm-snapdragon-x-x1-26-100512gb-16gb",
    "price": 2099,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906684-Product-0-I-639286684202147102.jpg?v=1793071687",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906684-Product-0-I-639297966002863853.jpg?v=1794200063",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1373,13 +1373,23 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "659559",
-   "title": "HP 14a-nf0005TU 14\" HD Touchscreen Chromebook Laptop (Intel N100)[64GB]",
-   "url": "https://www.jbhifi.com.au/products/hp-14a-nf0005tu-14-hd-touchscreen-chromebook-laptop-intel-n10064gb",
-   "price": 549,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/659559-Product-0-I-638484822004365582_d9ec7ec6-bffd-4a54-92f6-84e33d3e0219.jpg?v=1758168546",
+   "sku": "10102960",
+   "title": "GIGABYTE A16 3TH | RTX 5050 8GB | Ryzen 7 260 | 16GB RAM | Gaming Laptop",
+   "url": "https://www.jbhifi.com.au/products/gigabyte-a16-3th-rtx-5050-8gb-ryzen-7-260-16gb-ram-gaming-laptop",
+   "price": 1699,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/069a11d743b64ac6811154e09ff80846.jpg?v=1794194129",
    "inStock": true,
-   "brand": "Hp"
+   "brand": "Aftershock Pc"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10102959",
+   "title": "GIGABYTE AERO X16 4WH Lunar White | RTX 5070 8GB | Ryzen AI 9 465 | 16GB RAM | Laptop",
+   "url": "https://www.jbhifi.com.au/products/gigabyte-aero-x16-4wh-lunar-white-rtx-5070-8gb-ryzen-ai-9-465-16gb-ram-laptop",
+   "price": 2599,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/64df1221884a49e3aa6d3e68aa633dd5.jpg?v=1794194343",
+   "inStock": true,
+   "brand": "Aftershock Pc"
   },
   {
    "retailer": "jbhifi",
@@ -1443,16 +1453,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "840480",
-   "title": "HP Laptop 14s-dq6002TU 14\" HD laptop (Intel N-Series)[128GB]",
-   "url": "https://www.jbhifi.com.au/products/hp-laptop-14s-dq6002tu-14-hd-laptop-intel-n-series128gb",
-   "price": 549,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840480-Product-0-I-639143983205669836.jpg?v=1778801599",
-   "inStock": true,
-   "brand": "Hp"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "840520",
    "title": "HP Laptop 15-fc0786au 15.6\" Full HD Laptop (Athlon Silver)[256GB]",
    "url": "https://www.jbhifi.com.au/products/hp-laptop-15-fc0786au-15-6-full-hd-laptop-athlon-silver256gb",
@@ -1488,7 +1488,6 @@
    "title": "HP Laptop 15-fd0943tu 15.6\" Full HD Laptop (Intel N150)[128GB]",
    "url": "https://www.jbhifi.com.au/products/hp-laptop-15-fd0943tu-15-6-full-hd-laptop-intel-n150128gb",
    "price": 444,
-   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840548-Product-0-I-639143989203211489.jpg?v=1778802191",
    "inStock": true,
    "brand": "Hp"
@@ -1987,6 +1986,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "10102939",
+   "title": "INFINITY W16 | RTX 5070 Ti 12GB | Core i9-13900HX | 16GB RAM | Gaming Laptop",
+   "url": "https://www.jbhifi.com.au/products/infinity-w16-rtx-5070-ti-12gb-core-i9-13900hx-16gb-ram-gaming-laptop",
+   "price": 3595,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/c4b2fe7bc0134ea0ba7d845584108d79.jpg?v=1794196294",
+   "inStock": true,
+   "brand": "Aftershock Pc"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "816938",
    "title": "Lenovo 14\" OLED Touchscreen Chromebook Plus Laptop With Gemini (256GB)",
    "url": "https://www.jbhifi.com.au/products/lenovo-14-oled-touchscreen-chromebook-plus-laptop-with-gemini-256gb",
@@ -2177,6 +2186,26 @@
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897171-Product-0-I-639165740404221546.jpg?v=1780977305",
    "inStock": true,
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "918168",
+   "title": "Lenovo IdeaPad Slim 3 15.3\" WUXGA Laptop (AMD Ryzen 5 - 125)[256GB/8GB]",
+   "url": "https://www.jbhifi.com.au/products/lenovo-ideapad-slim-3-15-3-wuxga-laptop-amd-ryzen-5-125256gb-8gb",
+   "price": 1299,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918168-Product-0-I-639297709805140741.jpg?v=1794174245",
+   "inStock": true,
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "918169",
+   "title": "Lenovo IdeaPad Slim 3 15.3\" WUXGA Laptop (AMD Ryzen 5 - 125)[512GB/16GB]",
+   "url": "https://www.jbhifi.com.au/products/lenovo-ideapad-slim-3-15-3-wuxga-laptop-amd-ryzen-5-125512gb-16gb",
+   "price": 1799,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918169-Product-0-I-639297713407578731.jpg?v=1794175385",
+   "inStock": false,
    "brand": "Lenovo"
   },
   {
@@ -2642,6 +2671,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "888301",
+   "title": "Lenovo Yoga S7 14\" WUXGA OLED Copilot+ AI PC Laptop (Intel Core Ultra 5 - 226V)[512GB]",
+   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-s7-14-wuxga-oled-copilot-ai-pc-laptop-intel-core-ultra-5-226v512gb",
+   "price": 1799,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/888301-Product-0-I-639122408406231156.jpg?v=1776644107",
+   "inStock": true,
+   "brand": "Lenovo - Yoga"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "888302",
    "title": "Lenovo Yoga S7 14\" WUXGA OLED Copilot+ AI PC Laptop (Intel Core Ultra 7 - 256V)[1TB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-s7-14-wuxga-oled-copilot-ai-pc-laptop-intel-core-ultra-7-256v1tb",
@@ -2747,19 +2786,9 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "749789",
-   "title": "Microsoft Surface Laptop (7th Edition) Copilot+ AI PC 13.8\" Snapdragon X Plus 10 core/16GB/512GB (Platinum)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-7th-edition-copilot-ai-pc-13-8-snapdragon-x-plus-10-core-16gb-512gb-platinum",
-   "price": 2399,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749789-Product-0-I-638518506623874710.jpg?v=1790763170",
-   "inStock": true,
-   "brand": "Microsoft"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "914043",
-   "title": "Microsoft Surface Laptop 13-inch Snapdragon X Plus 256GB/12GB Platinum (8th Edition)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x-plus-256gb-12gb-platinum-8th-edition",
+   "title": "Microsoft Surface Laptop 13-Inch Snapdragon X Plus 256GB/12GB Platinum (1st Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x-plus-256gb-12gb-platinum-1st-edition",
    "price": 1849,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914043-Product-0-I-639268443010169425.jpg?v=1791247568",
    "inStock": true,
@@ -2768,8 +2797,8 @@
   {
    "retailer": "jbhifi",
    "sku": "906679",
-   "title": "Microsoft Surface Laptop 13-inch Snapdragon X Plus 256GB/8GB Platinum (8th Edition)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x-plus-256gb-8gb-platinum-8th-edition",
+   "title": "Microsoft Surface Laptop 13-Inch Snapdragon X Plus 256GB/8GB Platinum (1st Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x-plus-256gb-8gb-platinum-1st-edition",
    "price": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906679-Product-0-I-639239092204735557.jpg?v=1788312489",
    "inStock": true,
@@ -2778,8 +2807,8 @@
   {
    "retailer": "jbhifi",
    "sku": "914051",
-   "title": "Microsoft Surface Laptop 13-inch Snapdragon X2 Plus 256GB/16GB (Black)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-256gb-16gb-black",
+   "title": "Microsoft Surface Laptop 13-Inch Snapdragon X2 Plus 256GB/16GB Black (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-256gb-16gb-black-2nd-edition",
    "price": 2099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914051-Product-0-I-639258030006113122.jpg?v=1790206267",
    "inStock": true,
@@ -2788,8 +2817,8 @@
   {
    "retailer": "jbhifi",
    "sku": "914052",
-   "title": "Microsoft Surface Laptop 13-inch Snapdragon X2 Plus 256GB/16GB (Platinum)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-256gb-16gb-platinum",
+   "title": "Microsoft Surface Laptop 13-Inch Snapdragon X2 Plus 256GB/16GB Platinum (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-256gb-16gb-platinum-2nd-edition",
    "price": 2099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914052-Product-0-I-639258034203951014.jpg?v=1790206686",
    "inStock": true,
@@ -2798,8 +2827,8 @@
   {
    "retailer": "jbhifi",
    "sku": "914053",
-   "title": "Microsoft Surface Laptop 13-inch Snapdragon X2 Plus 256GB/16GB (Violet)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-256gb-16gb-violet",
+   "title": "Microsoft Surface Laptop 13-Inch Snapdragon X2 Plus 256GB/16GB Violet (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-256gb-16gb-violet-2nd-edition",
    "price": 2099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914053-Product-0-I-639258043204721287.jpg?v=1790207586",
    "inStock": true,
@@ -2808,8 +2837,8 @@
   {
    "retailer": "jbhifi",
    "sku": "914054",
-   "title": "Microsoft Surface Laptop 13-inch Snapdragon X2 Plus 512GB/16GB (Black)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-512gb-16gb-black",
+   "title": "Microsoft Surface Laptop 13-Inch Snapdragon X2 Plus 512GB/16GB Black (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-512gb-16gb-black-2nd-edition",
    "price": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914054-Product-0-I-639258047408380855.jpg?v=1790208015",
    "inStock": true,
@@ -2818,8 +2847,8 @@
   {
    "retailer": "jbhifi",
    "sku": "914056",
-   "title": "Microsoft Surface Laptop 13-inch Snapdragon X2 Plus 512GB/24GB (Black)",
-   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-512gb-24gb-black",
+   "title": "Microsoft Surface Laptop 13-Inch Snapdragon X2 Plus 512GB/24GB Black (2nd Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-13-inch-snapdragon-x2-plus-512gb-24gb-black-2nd-edition",
    "price": 2599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914056-Product-0-I-639258047404394322.jpg?v=1790208015",
    "inStock": true,
@@ -2917,6 +2946,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "749789",
+   "title": "Microsoft Surface Laptop Copilot+ AI PC 13.8\" Snapdragon X Plus 10 Core/16GB/512GB Platinum (7th Edition)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-copilot-ai-pc-13-8-snapdragon-x-plus-10-core-16gb-512gb-platinum-7th-edition",
+   "price": 2399,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749789-Product-0-I-638518506623874710.jpg?v=1790763170",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "805982",
    "title": "Microsoft Surface Laptop Copilot+ AI PC 13\" Snapdragon X Plus 8 core/16GB/256GB (Platinum)",
    "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-copilot-ai-pc-13-snapdragon-x-plus-8-core-16gb-256gb-platinum",
@@ -2973,7 +3012,7 @@
    "url": "https://www.jbhifi.com.au/products/msi-crosshair-16-hx-16-wqxga-240hz-gaming-laptop-intel-core-i9-14900hxnvidia-geforce-rtx-5070",
    "price": 4599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896579-Product-0-I-639124174803841923.jpg?v=1793744533",
-   "inStock": false,
+   "inStock": true,
    "brand": "Msi"
   },
   {
