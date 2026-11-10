@@ -9,6 +9,7 @@ import { catalogDay, comparedCategories, getCatalog, historyMature, historySince
 import type { CategoryId } from "@/lib/types";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { FEATURED } from "@/lib/categories";
+import { PartnerOffers } from "@/components/PartnerOffers";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { HomeRegionPicker } from "@/components/HomeRegionPicker";
 import { HotLaunches } from "@/components/HotLaunches";
@@ -140,6 +141,8 @@ export function HomeView({ region }: { region: RegionId }) {
           {getGuides().slice(0, 3).map((g) => <GuideCard key={g.slug} g={g} />)}
         </div>
       </section>
+
+      <div className="container-x"><PartnerOffers region={region} placement="home" /></div>
 
       <section className="container-x mt-12">
         <NewsletterSignup />
