@@ -76,7 +76,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             <span aria-hidden>/</span>
             <Link prefetch={false} href={`/guides#${section.id}`} className="hover:text-ink">{section.name}</Link>
           </nav>
-          <h1 className="font-display text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-[2.75rem]">{g.title}</h1>
+          <h1 className="font-display text-3xl font-bold leading-[1.1] tracking-tight sm:text-[2.75rem]">{g.title}</h1>
           <p className="mt-4 text-lg text-ink-soft">{g.description}</p>
           <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1 border-b border-line pb-6 text-sm text-ink-mute">
             <span>By the Compare Empire team</span>
@@ -95,13 +95,13 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <div className="mt-8">
             <GuideBody body={g.body} regions={regions} />
           </div>
-          <div className="mt-12 rounded-2xl border border-line bg-bg-sunk p-5 text-sm text-ink-soft">
+          <div className="mt-12 rounded-lg border border-line bg-bg-sunk p-5 text-sm text-ink-soft">
             <b className="text-ink">How we work:</b> every price in this guide is today&apos;s lowest in-stock price across the stores we check in your country, in your own currency, refreshed every morning, and the tables recalculate with it. Prices are never converted between currencies. Nobody pays to be included or to rank higher. Specs come from the stores&apos; and makers&apos; own listings.{" "}
             <Link prefetch={false} href="/about#how" className="text-brand hover:underline">How Compare Empire works</Link>
           </div>
         </article>
         <aside className="hidden lg:block">
-          <div className="sticky top-24 space-y-5">
+          <div className="sticky top-32 space-y-5">
             {toc.length >= 3 && (
               <nav className="card p-5">
                 <div className="eyebrow">In this guide</div>
@@ -124,7 +124,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       </div>
       {more.length > 0 && (
         <section className="mx-auto mt-16 max-w-6xl">
-          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">Keep reading</h2>
+          <h2 className="mb-4 font-display text-2xl font-bold tracking-tight">Keep reading</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {more.map((m) => <GuideCard key={m.slug} g={m} />)}
           </div>

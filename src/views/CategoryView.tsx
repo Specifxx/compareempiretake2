@@ -95,15 +95,14 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
   const live = new Set(activeCategories(region).map((x) => x.id));
   const siblings = CATEGORIES.filter((x) => x.department === c.department && live.has(x.id) && x.id !== c.id);
   return (
-    <div className="container-x pt-8">
+    <div className="container-x pt-6">
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
         <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link> /{" "}
         <Link prefetch={false} href={region === "au" ? "/categories" : withRegion("/browse", region)} className="hover:text-ink">All categories</Link> / <Link prefetch={false} href={`${region === "au" ? "/categories" : withRegion("/browse", region)}${region === "au" ? `#dept-${dept.id}` : ""}`} className="hover:text-ink">{dept.name}</Link> / <span aria-current="page">{c.name}</span>
       </nav>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">
-            <span className="mr-2">{c.emoji}</span>
+          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
             {c.searchName ?? c.name} <span className="text-ink-mute">price comparison</span>
           </h1>
           <p className="mt-2 max-w-2xl text-ink-mute">
@@ -112,9 +111,9 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
         </div>
         {siblings.length > 0 && (
           <div className="flex flex-wrap gap-2">
-            <Link prefetch={false} href={withRegion(`/deals/${c.id}`, region)} className="chip text-xs font-semibold text-hot">🔥 {c.name} deals</Link>
+            <Link prefetch={false} href={withRegion(`/deals/${c.id}`, region)} className="chip text-xs font-semibold text-hot">{c.name} deals</Link>
             {siblings.map((s) => (
-              <Link prefetch={false} key={s.id} href={categoryHref(s.id, region)} className="chip text-xs">{s.emoji} {s.name}</Link>
+              <Link prefetch={false} key={s.id} href={categoryHref(s.id, region)} className="chip text-xs">{s.name}</Link>
             ))}
           </div>
         )}
@@ -136,10 +135,10 @@ function CategoryGuides({ id, name }: { id: CategoryId; name: string }) {
   const list = guidesForCategory(id, 6);
   if (!list.length) return null;
   return (
-    <section className="mt-16">
+    <section className="mt-12">
       <div className="mb-5 flex items-end justify-between gap-4">
         <div>
-          <h2 className="font-display text-2xl font-extrabold tracking-tight">{name} guides</h2>
+          <h2 className="font-display text-2xl font-bold tracking-tight">{name} guides</h2>
           <p className="mt-1 text-sm text-ink-mute">Best picks, comparisons and where to buy, with today&apos;s prices.</p>
         </div>
         <Link prefetch={false} href="/guides" className="hidden shrink-0 text-sm font-semibold text-brand hover:underline sm:inline">All guides →</Link>
@@ -174,16 +173,16 @@ function CategoryGuideSection({ id, name, region, products }: { id: CategoryId; 
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
   ];
   return (
-    <section className="mt-16 grid gap-8 lg:grid-cols-[1.2fr_1fr]">
+    <section className="mt-12 grid gap-8 lg:grid-cols-[1.2fr_1fr]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <div>
-        <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">How to choose {name.toLowerCase()}</h2>
+        <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">How to choose {name.toLowerCase()}</h2>
         {guide && (
           <ul className="card mb-6 space-y-3 p-5 text-sm leading-relaxed text-ink-soft">
             {guide.tips.map((t) => <li key={t} className="flex gap-2"><span className="text-brand">✓</span><span>{t}</span></li>)}
           </ul>
         )}
-        <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">{name} FAQ</h2>
+        <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">{name} FAQ</h2>
         <div className="card divide-y divide-line">
           {faq.map(([q, a]) => (
             <details key={q} className="px-5 py-4" open>
@@ -194,7 +193,7 @@ function CategoryGuideSection({ id, name, region, products }: { id: CategoryId; 
         </div>
       </div>
       <div>
-        <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">{name} at a glance</h2>
+        <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">{name} at a glance</h2>
         <dl className="card divide-y divide-line text-sm">
           {([
             ["Products compared", products.length.toLocaleString()],

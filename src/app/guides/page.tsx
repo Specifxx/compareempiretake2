@@ -30,12 +30,12 @@ export default function GuidesPage() {
   return (
     <div className="container-x pt-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <header className="relative overflow-hidden rounded-3xl border border-line bg-bg-card px-6 py-10 shadow-card sm:px-10 sm:py-14">
+      <header className="relative overflow-hidden rounded-xl border border-line bg-bg-card px-6 py-10 sm:px-10 sm:py-14">
         <div aria-hidden className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-brand/15 blur-3xl" />
         <div aria-hidden className="pointer-events-none absolute -bottom-24 left-1/3 h-56 w-56 rounded-full bg-save/10 blur-3xl" />
         <div className="relative max-w-2xl">
           <div className="eyebrow">Compare Empire guides</div>
-          <h1 className="mt-2 font-display text-3xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl">Buy the right thing, from the right store</h1>
+          <h1 className="mt-2 font-display text-3xl font-bold leading-[1.05] tracking-tight sm:text-5xl">Buy the right thing, from the right store</h1>
           <p className="mt-4 text-lg text-ink-soft">
             {guides.length} guides for shoppers in {where}. Every price, ranking and store comparison in them is shown in your own currency and recalculated each morning from {stores.toLocaleString("en-US")} stores, so nothing here is months out of date.
           </p>
@@ -53,7 +53,7 @@ export default function GuidesPage() {
       </header>
 
       <section className="mt-10">
-        <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">Latest</h2>
+        <h2 className="mb-4 font-display text-2xl font-bold tracking-tight">Latest</h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {latest.map((g, i) => <GuideCard key={g.slug} g={g} eager={i < 3} />)}
         </div>
@@ -65,7 +65,7 @@ export default function GuidesPage() {
         return (
           <section key={s.id} id={s.id} className="mt-14 scroll-mt-24">
             <div className="mb-5">
-              <h2 className="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{s.name}</h2>
+              <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">{s.name}</h2>
               <p className="mt-1 text-sm text-ink-mute">{s.blurb}</p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -75,7 +75,7 @@ export default function GuidesPage() {
         );
       })}
 
-      <section className="mt-16 rounded-3xl bg-bg-sunk p-6 text-sm text-ink-soft sm:p-8">
+      <section className="mt-16 rounded-xl bg-bg-sunk p-6 text-sm text-ink-soft sm:p-8">
         <h2 className="font-display text-lg font-bold text-ink">How these guides are made</h2>
         <p className="mt-2 max-w-3xl">
           We don&apos;t type prices into articles. Each guide pulls today&apos;s lowest in-stock price for every product it names, and the &ldquo;which store is cheapest&rdquo; tables count every product two or more stores sell, every morning. Stores can&apos;t pay to be included or to rank higher. <Link prefetch={false} href="/about#how" className="font-medium text-brand hover:underline">More about how we compare</Link>

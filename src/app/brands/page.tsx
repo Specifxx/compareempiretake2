@@ -23,12 +23,12 @@ export default function BrandsPage() {
   const brands = getBrands();
   return (
     <div className="container-x pt-10">
-      <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">Brands</h1>
+      <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Brands</h1>
       <p className="mt-2 text-ink-mute">{brands.length} brands sold new in Australia.</p>
       <BrandList brands={brands} />
 
       <section className="mt-14">
-        <h2 className="font-display text-2xl font-extrabold tracking-tight">Can&apos;t find a phone brand?</h2>
+        <h2 className="font-display text-2xl font-bold tracking-tight">Can&apos;t find a phone brand?</h2>
         <p className="mt-2 max-w-2xl text-sm text-ink-mute">
           These brands aren&apos;t sold new with an Australian warranty by any store we check, so there&apos;s nothing for us to compare yet. You can still find them as grey imports on the marketplaces — check the seller, warranty and 4G/5G bands for Australian networks. If a local store starts stocking one, it shows up here automatically.
         </p>

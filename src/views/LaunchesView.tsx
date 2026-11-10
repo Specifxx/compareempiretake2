@@ -13,7 +13,7 @@ function Row({ r, region }: { r: CalendarLaunch; region: RegionId }) {
   return (
     <li className="card flex flex-col gap-4 p-4 sm:flex-row sm:items-center">
       <div className="flex min-w-0 flex-1 items-center gap-4">
-        <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-2xl">
+        <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-lg">
           {product?.image && <img src={product.image} alt={product.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
         </div>
         <div className="min-w-0">
@@ -29,7 +29,7 @@ function Row({ r, region }: { r: CalendarLaunch; region: RegionId }) {
         </div>
       </div>
       {product ? (
-        <Link prefetch={false} href={product.href} className="flex shrink-0 items-center justify-between gap-4 rounded-2xl border border-line px-4 py-3 transition hover:shadow-lift sm:flex-col sm:items-end sm:gap-0">
+        <Link prefetch={false} href={product.href} className="flex shrink-0 items-center justify-between gap-4 rounded-lg border border-line px-4 py-3 transition hover:shadow-lift sm:flex-col sm:items-end sm:gap-0">
           <span className="text-xs text-ink-mute">from</span>
           <span className="price text-xl">{money(product.bestPrice, region)}</span>
           <span className="text-xs text-ink-mute">{product.retailerCount} {product.retailerCount === 1 ? "store" : "stores"} · compare →</span>
@@ -46,7 +46,7 @@ function PreorderRow({ r, region }: { r: StorePreorder; region: RegionId }) {
   return (
     <li className="card flex flex-col gap-4 p-4 sm:flex-row sm:items-center">
       <div className="flex min-w-0 flex-1 items-center gap-4">
-        <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-2xl">
+        <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-lg">
           {product.image && <img src={product.image} alt={product.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
         </div>
         <div className="min-w-0">
@@ -56,7 +56,7 @@ function PreorderRow({ r, region }: { r: StorePreorder; region: RegionId }) {
           <div className="mt-1 text-xs font-semibold text-brand">Pre-order open at {stores} {stores === 1 ? "store" : "stores"}</div>
         </div>
       </div>
-      <Link prefetch={false} href={product.href} className="flex shrink-0 items-center justify-between gap-4 rounded-2xl border border-line px-4 py-3 transition hover:shadow-lift sm:flex-col sm:items-end sm:gap-0">
+      <Link prefetch={false} href={product.href} className="flex shrink-0 items-center justify-between gap-4 rounded-lg border border-line px-4 py-3 transition hover:shadow-lift sm:flex-col sm:items-end sm:gap-0">
         <span className="text-xs text-ink-mute">from</span>
         <span className="price text-xl">{money(product.bestPrice, region)}</span>
         <span className="text-xs text-ink-mute">{product.retailerCount} {product.retailerCount === 1 ? "store" : "stores"} · compare →</span>
@@ -72,7 +72,7 @@ export function LaunchesView({ region }: { region: RegionId }) {
   return (
     <div className="container-x pb-12 pt-10">
       <div className="max-w-2xl">
-        <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">New phone launches</h1>
+        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">New phone launches</h1>
         <p className="mt-2 text-ink-mute">
           The big launches, with the release dates from each maker&apos;s own announcement, and what {REGIONS[region].adjective} stores charge for them today. Prices are
           checked every day; we never list a price before a store does.
@@ -80,19 +80,19 @@ export function LaunchesView({ region }: { region: RegionId }) {
       </div>
       {soon.length > 0 && (
         <section className="mt-8">
-          <h2 className="mb-3 font-display text-xl font-extrabold tracking-tight">Coming soon</h2>
+          <h2 className="mb-3 font-display text-xl font-bold tracking-tight">Coming soon</h2>
           <ul className="grid gap-3">{soon.map((r) => <Row key={r.launch.key} r={r} region={region} />)}</ul>
         </section>
       )}
       {pre.length > 0 && (
         <section className="mt-8">
-          <h2 className="mb-1 font-display text-xl font-extrabold tracking-tight">On pre-order at {REGIONS[region].adjective} stores now</h2>
+          <h2 className="mb-1 font-display text-xl font-bold tracking-tight">On pre-order at {REGIONS[region].adjective} stores now</h2>
           <p className="mb-3 text-sm text-ink-mute">Found in the stores&apos; own listings each morning: every product a store is taking pre-orders for, most stores first. Ship dates are on each store&apos;s page.</p>
           <ul className="grid gap-3">{pre.map((r) => <PreorderRow key={`${r.product.category}/${r.product.slug}`} r={r} region={region} />)}</ul>
         </section>
       )}
       <section className="mt-8">
-        <h2 className="mb-3 font-display text-xl font-extrabold tracking-tight">Out now</h2>
+        <h2 className="mb-3 font-display text-xl font-bold tracking-tight">Out now</h2>
         <ul className="grid gap-3">{out.map((r) => <Row key={r.launch.key} r={r} region={region} />)}</ul>
       </section>
     </div>

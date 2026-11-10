@@ -14,9 +14,9 @@ export function CreatorCard({ creator, index = 0 }: { creator: Creator; index?: 
         <div className="flex items-end justify-between gap-3">
           {creator.avatar ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={creator.avatar} alt={`${creator.name}'s avatar`} width={80} height={80} loading="lazy" decoding="async" className="h-20 w-20 rounded-2xl border-4 border-bg-card bg-bg-sunk object-cover shadow-card" />
+            <img src={creator.avatar} alt={`${creator.name}'s avatar`} width={80} height={80} loading="lazy" decoding="async" className="h-20 w-20 rounded-lg border-4 border-bg-card bg-bg-sunk object-cover" />
           ) : (
-            <div aria-hidden className="flex h-20 w-20 items-center justify-center rounded-2xl border-4 border-bg-card bg-brand text-2xl font-extrabold text-brand-ink shadow-card">
+            <div aria-hidden className="flex h-20 w-20 items-center justify-center rounded-lg border-4 border-bg-card bg-brand text-2xl font-bold text-brand-ink">
               {initials(creator.name)}
             </div>
           )}

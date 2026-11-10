@@ -10,11 +10,11 @@ const day = (iso: string, region: RegionId) =>
 export function HotLaunches({ items, preorders = [], region }: { items: HotLaunch[]; preorders?: StorePreorder[]; region: RegionId }) {
   if (!items.length && !preorders.length) return null;
   return (
-    <section className="container-x mb-12" aria-labelledby="hot-launches">
+    <section className="container-x" aria-labelledby="hot-launches">
       <div className="mb-4 flex items-end justify-between gap-4">
         <div>
           <div className="eyebrow">Just launched</div>
-          <h2 id="hot-launches" className="font-display text-xl font-extrabold tracking-tight sm:text-2xl">Hot right now</h2>
+          <h2 id="hot-launches" className="font-display text-xl font-bold tracking-tight sm:text-2xl">Hot right now</h2>
         </div>
         <Link prefetch={false} href={withRegion("/launches", region)} className="text-sm font-semibold text-brand hover:underline">All launches →</Link>
       </div>
@@ -23,7 +23,7 @@ export function HotLaunches({ items, preorders = [], region }: { items: HotLaunc
           const when = status === "pre-order" ? `Pre-order · out ${day(launch.releaseDate, region)}` : `Out ${day(launch.releaseDate, region)}`;
           const body = (
             <>
-              <div className="img-tile relative grid h-24 w-24 shrink-0 place-items-center overflow-hidden rounded-2xl sm:h-28 sm:w-28">
+              <div className="img-tile relative grid h-24 w-24 shrink-0 place-items-center overflow-hidden rounded-lg sm:h-28 sm:w-28">
                 {product?.image && <img src={product.image} alt={product.name} loading={i < 2 ? "eager" : "lazy"} className="product-img h-full w-full object-contain p-2" />}
                 {i === 0 && <span className="absolute left-1.5 top-1.5 rounded-full bg-hot px-2 py-0.5 text-[10px] font-bold text-white">New</span>}
               </div>
@@ -46,7 +46,7 @@ export function HotLaunches({ items, preorders = [], region }: { items: HotLaunc
             </>
           );
           return product ? (
-            <Link key={launch.key} prefetch={false} href={product.href} className="card flex items-center gap-4 p-3 transition hover:-translate-y-0.5 hover:shadow-lift">
+            <Link key={launch.key} prefetch={false} href={product.href} className="card flex items-center gap-4 p-3 transition hover:shadow-lift">
               {body}
             </Link>
           ) : (
@@ -57,8 +57,8 @@ export function HotLaunches({ items, preorders = [], region }: { items: HotLaunc
         })}
         {/* Store pre-orders found in the import (lib/preorders.ts): the stores' own words, no maker date to show. */}
         {preorders.map(({ product, stores }) => (
-          <Link key={`pre-${product.category}-${product.slug}`} prefetch={false} href={product.href} className="card flex items-center gap-4 p-3 transition hover:-translate-y-0.5 hover:shadow-lift">
-            <div className="img-tile relative grid h-24 w-24 shrink-0 place-items-center overflow-hidden rounded-2xl sm:h-28 sm:w-28">
+          <Link key={`pre-${product.category}-${product.slug}`} prefetch={false} href={product.href} className="card flex items-center gap-4 p-3 transition hover:shadow-lift">
+            <div className="img-tile relative grid h-24 w-24 shrink-0 place-items-center overflow-hidden rounded-lg sm:h-28 sm:w-28">
               {product.image && <img src={product.image} alt={product.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
             </div>
             <div className="min-w-0">

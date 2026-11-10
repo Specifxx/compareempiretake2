@@ -84,7 +84,7 @@ export function SavedList() {
         </div>
       )}
       {shared ? (
-        <div className="mb-5 flex flex-wrap items-center gap-3 rounded-2xl border border-line bg-bg-card p-4 text-sm">
+        <div className="mb-5 flex flex-wrap items-center gap-3 rounded-lg border border-line bg-bg-card p-4 text-sm">
           <span className="text-ink-mute">Someone shared this list with you. Today&apos;s prices, each at its cheapest store.</span>
           <button type="button" className="btn-primary" onClick={keep}>{kept ? "Added to your saved list" : "Keep this list"}</button>
           <Link prefetch={false} href="/saved" className="font-semibold text-brand hover:underline" onClick={() => setShared(null)}>Your own list</Link>

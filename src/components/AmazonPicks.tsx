@@ -16,7 +16,7 @@ export function AmazonPicks({ category, limit = 8, title }: { category?: Categor
     <section className="mt-12" aria-label="Top picks on Amazon AU">
       <div className="mb-4 flex flex-wrap items-end justify-between gap-2">
         <div>
-          <h2 className="font-display text-2xl font-extrabold tracking-tight">{title ?? "Top picks on Amazon AU"}</h2>
+          <h2 className="font-display text-2xl font-bold tracking-tight">{title ?? "Top picks on Amazon AU"}</h2>
           <p className="mt-1 text-sm text-ink-mute">The products Australians compare most. Check Amazon&apos;s price against the best price we found elsewhere.</p>
         </div>
         <span className="text-[11px] uppercase tracking-wide text-ink-mute">Ad · affiliate links</span>

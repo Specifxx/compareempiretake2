@@ -13,7 +13,7 @@ export default function CategoriesPage() {
   const live = activeCategories();
   return (
     <div className="container-x pt-10">
-      <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">All categories</h1>
+      <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">All categories</h1>
       <p className="mt-2 max-w-xl text-ink-mute">Every category we compare, checked at every store we cover each morning.</p>
       {DEPARTMENTS.map((d) => {
         const cats = live.filter((c) => c.department === d.id);

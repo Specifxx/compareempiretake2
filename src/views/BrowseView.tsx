@@ -32,7 +32,7 @@ export function BrowseIndex({ region }: { region: RegionId }) {
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
         <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link> / <span>Browse</span>
       </nav>
-      <h1 className="font-display text-3xl font-extrabold tracking-tight">Browse every product</h1>
+      <h1 className="font-display text-3xl font-bold tracking-tight">Browse every product</h1>
       <p className="mt-2 text-ink-mute">Every category and product we compare in {IN[region]}, A to Z.</p>
       <ul className="mt-8 grid gap-2 sm:grid-cols-2">
         {cats.map((c) => (
@@ -81,11 +81,11 @@ export async function BrowseCategory({ params, region }: { params: Params; regio
       <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
         <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link> / <Link prefetch={false} href={withRegion("/browse", region)} className="hover:text-ink">Browse</Link> / <span>{c.name}</span>
       </nav>
-      <h1 className="font-display text-3xl font-extrabold tracking-tight">All {c.name.toLowerCase()}, A to Z</h1>
+      <h1 className="font-display text-3xl font-bold tracking-tight">All {c.name.toLowerCase()}, A to Z</h1>
       <p className="mt-2 text-ink-mute">
         {getProducts(c.id as CategoryId, region).length.toLocaleString()} products{total > 1 ? ` · page ${n} of ${total}` : ""}. For filters and sorting, see <Link prefetch={false} href={withRegion(`/${c.id}`, region)} className="underline">{c.name}</Link>.
       </p>
-      <ul className="mt-6 divide-y divide-line rounded-2xl border border-line bg-bg-card">
+      <ul className="mt-6 divide-y divide-line rounded-lg border border-line bg-bg-card">
         {items.map((p) => (
           <li key={p.slug}>
             <Link href={withRegion(`/${p.category}/${p.slug}`, region)} prefetch={false} className="flex items-center justify-between gap-4 px-4 py-2.5 text-sm hover:bg-bg-sunk">

@@ -14,7 +14,7 @@ const TONE = {
 export function PriceCheckCard({ check, onOpenHistory }: { check: PriceCheck; onOpenHistory?: () => void }) {
   const t = TONE[check.verdict];
   return (
-    <div className="card flex min-w-0 flex-1 items-center gap-4 p-3.5 sm:max-w-sm">
+    <div className="card flex min-w-0 flex-1 items-center gap-4 p-3.5 sm:max-w-xl">
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2">
           <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide ${t.badge}`}>{t.label}</span>

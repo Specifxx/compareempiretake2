@@ -268,9 +268,19 @@ export async function ProductView({ params, region }: { params: ProductParams; r
         stores={outright.map((o) => ({ name: `${RETAILERS[o.retailer].name}${o.v.label && phone.variants.length > 1 ? ` · ${o.v.label}` : ""}`, price: $(o.price) }))}
       />
 
-      <section className="mt-16 grid gap-8 lg:grid-cols-2">
+      {/* Similar products straight under the prices (owner, 2026-11-10 redesign): the next product to compare, before the
+          specs and FAQ, keeps a visitor exploring instead of leaving. Same products and heading as before. */}
+      {similar.length > 0 && (
+        <section className="mt-12">
+          <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">Similar price range</h2>
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 lg:grid-cols-5">
+            {similar.map((p) => <PhoneCard key={p.href} p={p} />)}
+          </div>
+        </section>
+      )}
+      <section className="mt-12 grid gap-8 lg:grid-cols-2">
         <div>
-          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">Key specs</h2>
+          <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">Key specs</h2>
           <dl className="card divide-y divide-line">
             {specs.filter(([, v]) => v).map(([k, v]) => (
               <div key={k} className="flex gap-4 px-5 py-3.5 text-sm">
@@ -281,7 +291,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           </dl>
         </div>
         <div>
-          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">About the {phone.model}</h2>
+          <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">About the {phone.model}</h2>
           <div className="card space-y-3 p-5 text-sm leading-relaxed text-ink-soft">
             {phone.blurb ? <p>{phone.blurb}</p> : <p>{phone.name} is sold new by {phone.retailerCount} of the {R.adjective} retailers we check.</p>}
             {cam && (
@@ -305,9 +315,9 @@ export async function ProductView({ params, region }: { params: ProductParams; r
       </section>
 
       {cheapest && (
-        <section className="mt-16 grid gap-8 lg:grid-cols-2">
+        <section className="mt-12 grid gap-8 lg:grid-cols-2">
           <div>
-            <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">{phone.model} price summary</h2>
+            <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">{phone.model} price summary</h2>
             <dl className="card divide-y divide-line">
               {([
                 ["Cheapest today", `${$(cheapest.price)} at ${RETAILERS[cheapest.retailer].name}`],
@@ -326,7 +336,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           </div>
           {guide && (
             <div>
-              <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">Before you buy</h2>
+              <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">Before you buy</h2>
               <ul className="card space-y-3 p-5 text-sm leading-relaxed text-ink-soft">
                 {guide.tips.map((t) => <li key={t} className="flex gap-2"><span className="text-brand">✓</span><span>{t}</span></li>)}
               </ul>
@@ -336,8 +346,8 @@ export async function ProductView({ params, region }: { params: ProductParams; r
       )}
 
       {faq.length > 0 && (
-        <section className="mt-16 max-w-3xl">
-          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">{phone.model} FAQ</h2>
+        <section className="mt-12 max-w-3xl">
+          <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">{phone.model} FAQ</h2>
           <div className="card divide-y divide-line">
             {faq.map(([q, a]) => (
               <details key={q} className="group px-5 py-4" open>
@@ -350,8 +360,8 @@ export async function ProductView({ params, region }: { params: ProductParams; r
       )}
 
       {guides.length > 0 && (
-        <section className="mt-16">
-          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">{cat.name} guides</h2>
+        <section className="mt-12">
+          <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">{cat.name} guides</h2>
           <div className="flex flex-wrap gap-2">
             {guides.map((g) => <Link prefetch={false} key={g.slug} href={`/guides/${g.slug}`} className="chip">{g.title}</Link>)}
             {region === "au" && <Link prefetch={false} href={`/brands/${phone.brand.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`} className="chip">All {phone.brand} prices</Link>}
@@ -360,8 +370,8 @@ export async function ProductView({ params, region }: { params: ProductParams; r
       )}
 
       {vs.length > 0 && (
-        <section className="mt-16">
-          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">Compare the {phone.model}</h2>
+        <section className="mt-12">
+          <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">Compare the {phone.model}</h2>
           <div className="flex flex-wrap gap-2">
             {vs.map((v) => {
               const other = v.a.slug === phone.slug ? v.b : v.a;
@@ -371,15 +381,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
         </section>
       )}
 
-      {similar.length > 0 && (
-        <section className="mt-16">
-          <h2 className="mb-4 font-display text-2xl font-extrabold tracking-tight">Similar price range</h2>
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
-            {similar.map((p) => <PhoneCard key={p.href} p={p} />)}
-          </div>
-        </section>
-      )}
-      <div className="mt-16"><NewsletterSignup compact /></div>
+      <div className="mt-12"><NewsletterSignup compact /></div>
     </div>
   );
 }

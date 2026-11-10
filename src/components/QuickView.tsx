@@ -128,9 +128,9 @@ export function QuickView() {
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center sm:p-6" role="dialog" aria-modal="true" aria-label={name}>
       <button type="button" aria-label="Close" tabIndex={-1} className="qv-backdrop absolute inset-0 bg-black/45 backdrop-blur-[2px]" onClick={close} />
-      <div className="qv-panel relative flex max-h-[92vh] w-full max-w-2xl flex-col overflow-hidden rounded-t-3xl border border-line bg-bg-card shadow-2xl sm:rounded-3xl">
+      <div className="qv-panel relative flex max-h-[92vh] w-full max-w-2xl flex-col overflow-hidden rounded-t-3xl border border-line bg-bg-card shadow-2xl sm:rounded-xl">
         <div className="flex items-start gap-4 border-b border-line p-4 sm:p-5">
-          <div className="img-tile relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl">
+          <div className="img-tile relative h-24 w-24 shrink-0 overflow-hidden rounded-lg">
             {img ? <img src={img} alt="" className="product-img absolute inset-0 h-full w-full object-contain p-2" /> : <div className="grid h-full place-items-center text-xs text-ink-mute">No image</div>}
           </div>
           <div className="min-w-0 flex-1">
@@ -149,7 +149,7 @@ export function QuickView() {
           ) : phone ? (
             <Prices phone={phone} href={head.href} vid={vid} setVid={setVid} />
           ) : (
-            <p className="rounded-2xl border border-line p-4 text-sm text-ink-mute">Prices did not load. The full page has every store&apos;s price.</p>
+            <p className="rounded-lg border border-line p-4 text-sm text-ink-mute">Prices did not load. The full page has every store&apos;s price.</p>
           )}
         </div>
         <div className="border-t border-line p-4 sm:px-5">
@@ -204,7 +204,7 @@ function Prices({ phone, href, vid, setVid }: { phone: Phone; href: string; vid:
         </ol>
       ) : (
         <>
-          <p className="mb-2.5 rounded-2xl border border-line p-4 text-sm text-ink-mute">No store sells this outright today.</p>
+          <p className="mb-2.5 rounded-lg border border-line p-4 text-sm text-ink-mute">No store sells this outright today.</p>
           <PinnedMarketplaces phone={phone} variantQuery={mq} product={href} cheapest={best?.price} compact part="rows" />
         </>
       )}
@@ -233,7 +233,7 @@ function Skeleton() {
   return (
     <div className="space-y-2.5" aria-label="Loading prices" aria-busy="true">
       {[0, 1, 2, 3, 4].map((i) => (
-        <div key={i} className="flex items-center gap-3 rounded-2xl border border-line p-4">
+        <div key={i} className="flex items-center gap-3 rounded-lg border border-line p-4">
           <div className="flex-1 space-y-1.5">
             <div className="qv-shimmer h-3.5 w-1/3 rounded" />
             <div className="qv-shimmer h-2.5 w-1/4 rounded" />

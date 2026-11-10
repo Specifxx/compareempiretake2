@@ -39,12 +39,12 @@ export function ReviewsSection({ limit = 6, full, hideEmpty, className }: { limi
           <div className="eyebrow">What people say</div>
           {data?.count ? (
             <div className="mt-1 flex items-baseline gap-3">
-              <span className="font-display text-4xl font-extrabold">{data.average?.toFixed(1)}</span>
+              <span className="font-display text-4xl font-bold">{data.average?.toFixed(1)}</span>
               <Stars n={data.average ?? 0} className="text-xl" />
               <span className="text-sm text-ink-mute">from {data.count} {data.count === 1 ? "rating" : "ratings"}</span>
             </div>
           ) : (
-            <div className="mt-1 font-display text-2xl font-extrabold">{data ? "Be the first to review Compare Empire" : "Loading reviews…"}</div>
+            <div className="mt-1 font-display text-2xl font-bold">{data ? "Be the first to review Compare Empire" : "Loading reviews…"}</div>
           )}
           <p className="mt-1 text-sm text-ink-mute">Every genuine review is published, good or bad.</p>
         </div>

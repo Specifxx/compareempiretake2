@@ -22,14 +22,14 @@ export default function NetworkPage() {
   return (
     <div className="container-x max-w-3xl pt-12">
       <div className="eyebrow">Our sites</div>
-      <h1 className="mt-2 font-display text-4xl font-extrabold tracking-tight">The Compare Empire sites</h1>
+      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">The Compare Empire sites</h1>
       <p className="mt-4 text-lg text-ink-soft">
         Each site compares one kind of product across independent stores, checks prices every day, and always lists the cheapest price first. No store
         pays to rank higher. They are free to use and need no account.
       </p>
       {ORDER.map((c) => (
         <section key={c} className="mt-10" aria-labelledby={`network-${c}`}>
-          <h2 id={`network-${c}`} className="font-display text-2xl font-extrabold tracking-tight">{CLUSTER_NAMES[c]}</h2>
+          <h2 id={`network-${c}`} className="font-display text-2xl font-bold tracking-tight">{CLUSTER_NAMES[c]}</h2>
           <p className="mt-1 text-sm text-ink-mute">{INTRO[c]}</p>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2">
             {FAMILY_SITES.filter((s) => s.clusters[0] === c || (c === "hobby" && s.clusters.includes("hobby"))).map((s) => (

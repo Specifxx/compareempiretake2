@@ -12,7 +12,7 @@ export function FamilyCluster({ region }: { region: RegionId }) {
   return (
     <section className="mt-12" aria-labelledby="family-tech">
       <div className="eyebrow">From our sister site</div>
-      <h2 id="family-tech" className="mt-1 font-display text-2xl font-extrabold tracking-tight">{blockHeading("tech", "deal")}</h2>
+      <h2 id="family-tech" className="mt-1 font-display text-2xl font-bold tracking-tight">{blockHeading("tech", "deal")}</h2>
       <p className="mt-1 text-sm text-ink-mute">Today&apos;s best camera prices on CamCompare, from its own daily price check.</p>
       <ul className="mt-4 grid gap-3 sm:grid-cols-3">
         {tiles.map(({ site, item }) => (

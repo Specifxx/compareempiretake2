@@ -46,7 +46,7 @@ export function AlertStatus() {
 function Box({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="card p-8 text-center">
-      <h1 className="font-display text-2xl font-extrabold">{title}</h1>
+      <h1 className="font-display text-2xl font-bold">{title}</h1>
       <div className="mt-3 text-ink-soft">{children}</div>
     </div>
   );

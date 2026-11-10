@@ -92,8 +92,8 @@ export function PhoneOffers({
 
   return (
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12">
-      <div className="lg:sticky lg:top-24 lg:self-start">
-        <div className="img-tile relative aspect-square overflow-hidden rounded-3xl border border-line">
+      <div className="lg:sticky lg:top-32 lg:self-start">
+        <div className="img-tile relative aspect-square overflow-hidden rounded-lg border border-line">
           {images[img] && <img src={images[img]} alt={phone.name} className="product-img absolute inset-0 h-full w-full object-contain p-10" />}
           <SaveButton slug={href} className="absolute right-4 top-4" />
         </div>
@@ -110,10 +110,11 @@ export function PhoneOffers({
 
       <div className="min-w-0">
         <div className="text-sm font-semibold text-brand">{phone.brand}</div>
-        <h1 className="mt-1 font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{phone.model}</h1>
-        <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
+        <h1 className="mt-1 font-display text-3xl font-bold tracking-tight sm:text-4xl">{phone.model}</h1>
+        <div className="mt-4 flex flex-col gap-3">
+          <div className="flex flex-wrap items-end gap-x-5 gap-y-3">
           <div className="shrink-0">
-            <div className="text-xs text-ink-mute">Best price{vLabel ? ` · ${vLabel}` : ""}</div>
+            <div className="text-xs text-ink-mute">Lowest price{vLabel ? ` · ${vLabel}` : ""} · {rows.length} {rows.length === 1 ? "store" : "stores"} compared</div>
             <div className="price text-4xl">{$(variant.bestPrice)}</div>
             {top && top > variant.bestPrice && (
               <div className="mt-1 text-xs font-semibold text-save">Save {$((top - variant.bestPrice))} vs dearest store</div>
@@ -126,12 +127,13 @@ export function PhoneOffers({
             data-buy="ebay"
             data-buy-product={href}
             data-buy-kind="ebay-top"
-            className="inline-flex shrink-0 items-center gap-2 self-start rounded-xl border border-line bg-bg-card px-3 py-2 text-sm font-semibold transition hover:border-brand/40 sm:self-center"
+            className="inline-flex shrink-0 items-center gap-2 rounded-lg border border-line bg-bg-card px-3 py-2 text-sm font-semibold transition hover:border-brand/40"
           >
             <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#E53238] ring-1 ring-black/10" />
             {phone.ebay ? <>eBay {$(phone.ebay.price)}</> : "Check eBay"}
             <span className="rounded-full bg-bg-sunk px-1.5 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
           </a>
+          </div>
           {checks[variant.id] && (
             <PriceCheckCard check={checks[variant.id].check} onOpenHistory={() => document.getElementById("history")?.scrollIntoView({ behavior: "smooth", block: "center" })} />
           )}
@@ -225,7 +227,7 @@ export function PhoneOffers({
           </ol>
           <PinnedMarketplaces phone={phone} variantId={variant.id} variantQuery={mq} product={href} cheapest={best?.price} part="more" />
           {checkedWas(checks[variant.id]?.was).length > 0 && (
-            <div className="mt-4 rounded-2xl bg-bg-sunk p-4">
+            <div className="mt-4 rounded-lg bg-bg-sunk p-4">
               <div className="text-sm font-semibold">Are these &ldquo;was&rdquo; prices real?</div>
               <ul className="mt-2 space-y-1.5 text-xs text-ink-soft">
                 {checkedWas(checks[variant.id]?.was).map((w) => (
@@ -324,7 +326,7 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
       )}
       {part !== "more" && amazonHref && <AmazonRow query={mq} product={product} placement={compact ? "quickview" : live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} cart={live?.price ? { title: phone.name, priceCents: Math.round(live.price * 100), currency: R.currency, image: phone.image ?? null } : undefined} />}
       {compact || part === "rows" ? null : (
-      <div className="rounded-2xl border border-brand/50 bg-brand-soft p-3 sm:p-4">
+      <div className="rounded-lg border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
         <div className="mt-2 grid gap-2 sm:grid-cols-3">
           {more.map((m) => (
@@ -399,7 +401,7 @@ export function OutrightRow({
       data-buy-price={o.price}
       data-buy-rank={i + 1}
       data-buy-kind="outright"
-      className={`card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4 ${i === 0 && o.inStock ? PIN_OUTLINE.cheapest : ""}`}
+      className={`card flex items-center gap-3 p-3.5 transition hover:border-brand/50 sm:gap-4 sm:p-4 ${i === 0 && o.inStock ? PIN_OUTLINE.cheapest : ""}`}
     >
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2">
@@ -436,7 +438,7 @@ export function OutrightRow({
         {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">{$((o.price - best.price))} more than the cheapest</div>}
       </div>
       {add && <CartAddButton {...add} className="hidden shrink-0 text-ink-mute sm:inline-flex" />}
-      <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
+      <span className="hidden items-center gap-1 rounded-lg bg-brand px-3.5 py-2 text-sm font-semibold text-brand-ink sm:inline-flex">
         Go to store <ExternalIcon className="h-3.5 w-3.5" />
       </span>
       <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />

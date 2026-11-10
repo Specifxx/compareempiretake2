@@ -5,16 +5,11 @@ import { PhoneCard } from "@/components/PhoneCard";
 import { SearchBox } from "@/components/SearchBox";
 import { getGuides } from "@/lib/guides";
 import { GuideCard } from "@/components/GuideCard";
-import { catalogDay, checkVariant, comparedCategories, getCatalog, historyMature, historySince, liveRegions, getDeals, getPhones, getSummaries, type PhoneSummary } from "@/lib/catalog";
+import { catalogDay, comparedCategories, getCatalog, historyMature, historySince, liveRegions, getDeals, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import type { CategoryId } from "@/lib/types";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { FEATURED } from "@/lib/categories";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
-import { ReviewsSection } from "@/components/ReviewsSection";
-import { storageLabel } from "@/lib/normalize";
-import { PriceCheckCard } from "@/components/PriceCheckCard";
-import { AmazonPicks } from "@/components/AmazonPicks";
-import { EbayStrip } from "@/components/EbayStrip";
 import { HomeRegionPicker } from "@/components/HomeRegionPicker";
 import { HotLaunches } from "@/components/HotLaunches";
 import { hotLaunches, storePreorders } from "@/lib/launches";
@@ -27,6 +22,7 @@ export function HomeView({ region }: { region: RegionId }) {
   const { retailers, updatedAt, phones } = getCatalog(undefined, region);
   const summaries = getSummaries("phones", region);
   const deals = getDeals(6, undefined, region);
+  const stores = retailers.length;
   // Only categories with a real comparison: 2+ stores and a product two of them sell (US shopper review, 2026-11-06).
   // Ordered by what visitors open (FEATURED is the 30-day analytics order, 2026-11-09), the rest after.
   const rank = (id: string) => { const i = FEATURED.indexOf(id as CategoryId); return i < 0 ? 99 : i; };
@@ -35,215 +31,144 @@ export function HomeView({ region }: { region: RegionId }) {
     return { c, count: items.length, from: Math.min(...items.map((p) => p.bestPrice)), image: popularOf(items, 1)[0]?.image, popular: popularOf(items, 4) };
   });
   const offers = phones.reduce((n, p) => n + p.offerCount, 0);
-  const popular = summaries.filter((p) => p.retailerCount >= 2 && p.image).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice).slice(0, 8);
+  const popular = summaries.filter((p) => p.retailerCount >= 2 && p.image).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice).slice(0, 10);
   // The "is that sale real?" promise only once the region's history can keep it (lib/catalog.ts HISTORY_CLAIM_DAYS).
   const mature = historyMature(region);
   const since = new Date(`${historySince(region)}T12:00:00Z`).toLocaleDateString(R.locale, { day: "numeric", month: "long", timeZone: "UTC" });
-  const example = mature ? pickExample(region) : undefined;
   // The year's big launches (content/launches.ts), dated by the last import, not the build clock.
   const hot = hotLaunches(region, catalogDay(region), getSummaries);
   // ...and whatever the stores opened pre-orders for on their own (lib/preorders.ts), filling the row to four cards.
   const pre = storePreorders(region, catalogDay(region), getSummaries).slice(0, Math.max(0, 4 - hot.length));
   const updated = new Date(updatedAt).toLocaleString(R.locale, { timeZone: R.timeZone, weekday: "long", hour: "numeric", minute: "2-digit" });
 
+  // Laid out like a big comparison site's front page (owner, 2026-11-10, DECISIONS.md "PriceRunner-style redesign"):
+  // one plain search band, the categories, today's price drops, then the products people compare most. No floating
+  // promos, strips or reviews between the visitor and the products.
   return (
     <>
-      <section className="relative z-20">
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute -top-40 left-1/2 h-[520px] w-[900px] -translate-x-1/2 rounded-full bg-brand/15 blur-3xl" />
-          <div className="absolute -right-40 top-20 h-72 w-72 rounded-full bg-save/10 blur-3xl" />
-        </div>
-        {/* Christmas only (1 November to Boxing Day, lib/season.ts; hidden by CSS otherwise): snow, lights, trees. */}
-        <div className="pointer-events-none absolute inset-0 -z-10">
-        </div>
-        <div className="container-x relative pb-12 pt-14 sm:pt-20">
+      <section className="relative z-20 border-b border-line bg-bg-card">
+        <div className="container-x relative pb-6 pt-6 sm:pb-10 sm:pt-16">
           <div className="mx-auto max-w-3xl text-center">
             {/* The creators hub, above the fold (owner, 2026-11-03): top-right corner from sm, a centred pill above the headline on a phone. */}
             <CreatorsCornerBadge />
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-line bg-bg-card px-3 py-1 text-xs font-medium text-ink-soft shadow-sm">
-              <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-save opacity-60" /><span className="relative inline-flex h-2 w-2 rounded-full bg-save" /></span>
-              Prices checked {updated}
-            </div>
-            {/* Christmas only: a line to the deals, for gift shoppers. */}
-            <div className="xmas-pill-row mb-5 justify-center">
-              <Link prefetch={false} href={to("/deals")} className="xmas-pill">
-                <b>Christmas sale check</b>
-                <span className="xmas-pill-more hidden sm:inline">· {mature ? "real price drops only, checked every day" : "the biggest gaps between stores, checked every day"} →</span>
-              </Link>
-            </div>
-            {mature ? (
-              <>
-                <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-                  Is that sale
-                  <br />
-                  <span className="bg-gradient-to-r from-brand to-[#B04BFF] bg-clip-text text-transparent">actually real?</span>
-                </h1>
-                <p className="mx-auto mt-5 max-w-xl text-lg text-ink-soft">
-                  We save the price of everything we compare at {retailers.length} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.
-                </p>
-              </>
-            ) : (
-              <>
-                <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-                  Every store&apos;s price,
-                  <br />
-                  <span className="bg-gradient-to-r from-brand to-[#B04BFF] bg-clip-text text-transparent">cheapest first.</span>
-                </h1>
-                <p className="mx-auto mt-5 max-w-xl text-lg text-ink-soft">
-                  We check {retailers.length} {R.adjective} stores every morning and put their prices side by side, cheapest in stock first. We&apos;ve saved every price since {since}, so each product&apos;s history grows by a day each morning.
-                </p>
-              </>
-            )}
-            <p className="mx-auto mt-2 max-w-xl text-sm text-ink-mute">
-              {phones.length.toLocaleString()} products · {offers.toLocaleString()} live prices · cheapest in-stock first · no paid rankings
-            </p>
-            <div className="mt-6">
-              <HomeRegionPicker region={region} regions={liveRegions()} />
-            </div>
-            <div className="mx-auto mt-5 max-w-2xl">
-              <SearchBox size="lg" />
-            </div>
-            <p className="mt-5 text-sm text-ink-mute">
-              Including {retailers.slice(0, 3).map((r) => r.name).join(", ")}
-              {retailers.length > 3 && (
-                <>
-                  {" "}and{" "}
-                  <Link prefetch={false} href={region === "au" ? "/about#retailers" : to("/stores")} className="font-medium text-ink-soft underline decoration-line underline-offset-4 hover:text-ink">{retailers.length - 3} more stores</Link>
-                </>
+            <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
+              {mature ? <>Is that sale actually real?</> : <>Every store&apos;s price, cheapest first.</>}
+            </h1>
+            <p className="mx-auto mt-3 max-w-xl text-sm text-ink-soft sm:text-lg">
+              {mature ? (
+                <>We save the price of everything we compare at {stores} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.</>
+              ) : (
+                <>We check {stores} {R.adjective} stores every morning and put their prices side by side. Every price saved since {since}.</>
               )}
             </p>
+            {/* Phones already have the search under the logo (Header) and the country flag beside it. */}
+            <div className="mx-auto mt-6 hidden max-w-2xl md:block">
+              <SearchBox size="lg" />
+            </div>
+            <div className="mt-5 hidden sm:block">
+              <HomeRegionPicker region={region} regions={liveRegions()} />
+            </div>
           </div>
+        </div>
+        {/* What the site promises, in one line of facts (the trust strip). */}
+        <div className="border-t border-line/70 bg-bg-sunk/60">
+          <ul className="container-x flex flex-wrap items-center justify-center gap-x-6 gap-y-1.5 py-2.5 text-xs text-ink-soft sm:text-sm">
+            <li className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-save" aria-hidden /> Prices checked {updated}
+            </li>
+            <li>
+              <b className="text-ink">{phones.length.toLocaleString()}</b> products · <b className="text-ink">{offers.toLocaleString()}</b> prices
+            </li>
+            <li>
+              <Link prefetch={false} href={region === "au" ? "/about#retailers" : to("/stores")} className="underline decoration-line underline-offset-4 hover:text-ink">{stores} stores compared</Link>
+            </li>
+            <li className="hidden sm:list-item">Cheapest in stock first · no paid rankings</li>
+          </ul>
         </div>
       </section>
 
-      <HotLaunches items={hot} preorders={pre} region={region} />
-
-      {example && (
-        <section className="container-x -mt-4 mb-10">
-          <Link href={`${to(`/${example.phone.category}/${example.phone.slug}`)}?v=${example.variant.id}`} prefetch={false} className="mx-auto flex max-w-3xl flex-col items-stretch gap-4 rounded-3xl border border-line bg-bg-card p-4 shadow-card transition hover:shadow-lift sm:flex-row sm:items-center">
-            <div className="flex items-center gap-4">
-              <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-2xl">
-                {example.phone.image && <img src={example.phone.image} alt={example.phone.name} className="product-img h-full w-full object-contain p-2" />}
+      <section className="container-x mt-8">
+        <SectionHead title="Popular categories" href={to("/browse")} cta="All categories" />
+        <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+          {cats.map(({ c, count, image }) => (
+            <Link prefetch={false} key={c.id} href={to(c.href)} className="card tile-hover group flex flex-col items-center px-2 pb-3 pt-3 text-center">
+              <div className="img-tile relative h-16 w-16 overflow-hidden rounded-full border border-line/60 sm:h-20 sm:w-20">
+                {image && <img src={image} alt={c.name} loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-2.5" />}
               </div>
-              <div>
-                <div className="eyebrow">Live example</div>
-                <div className="font-semibold">{example.phone.name} {storageLabel(example.variant.storageGb)}</div>
-                <div className="price text-2xl">{$(example.variant.bestPrice)}</div>
-              </div>
-            </div>
-            <PriceCheckCard check={example.check} />
-          </Link>
-        </section>
-      )}
-
-      <section className="container-x">
-        <div className="mb-4 flex items-end justify-between gap-4">
-          <h2 className="font-display text-xl font-extrabold tracking-tight">Shop by category</h2>
-          <Link prefetch={false} href={to("/browse")} className="text-sm font-semibold text-brand hover:underline">Browse all products →</Link>
-        </div>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
-          {cats.map(({ c, count, from, image }) => (
-            <Link prefetch={false} key={c.id} href={to(c.href)} className="card group flex flex-col overflow-hidden transition hover:-translate-y-0.5 hover:shadow-lift">
-              <div className="img-tile relative aspect-square">
-                {image && <img src={image} alt={c.name} loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-4 transition group-hover:scale-105" />}
-              </div>
-              <div className="p-3">
-                <div className="font-semibold">{c.emoji} {c.name}</div>
-                <div className="text-xs text-ink-mute">{count.toLocaleString()} products · from {$(Math.round(from))}</div>
-              </div>
+              <div className="mt-2 text-[13px] font-semibold leading-tight group-hover:text-brand sm:text-sm">{c.name}</div>
+              <div className="mt-0.5 text-[11px] text-ink-mute">{count.toLocaleString()} products</div>
             </Link>
           ))}
         </div>
       </section>
 
       {deals.length > 0 && (
-        <section className="container-x mt-12">
-          <SectionHead title="Today's best deals" sub={mature ? "Real savings right now — against what other stores charge, a was price we recorded, or last week's price." : "Today's biggest savings against what the other stores charge, or a price we recorded at the same store."} href={to("/deals")} cta="All deals" />
-          <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+        <section className="container-x mt-10">
+          <SectionHead title="Price drops today" sub={mature ? "Real savings: against other stores, a was price we recorded, or last week's price." : "The biggest gaps between stores today, and drops we recorded at the same store."} href={to("/deals")} cta="All deals" />
+          <div className="grid gap-2.5 md:grid-cols-2 lg:grid-cols-3">
             {deals.map((d, i) => <DealCard key={`${d.phone.category}/${d.phone.slug}`} d={d} rank={i} />)}
           </div>
         </section>
       )}
 
-      {/* Only once there are written reviews: an empty "be the first" box reads as a ghost town (US shopper review). */}
-      <ReviewsSection limit={3} hideEmpty className="container-x mt-12" />
-
-      {region === "au" && (
-        <div className="container-x">
-          <AmazonPicks />
-        </div>
-      )}
-
-      <div className="container-x">
-        <EbayStrip query="unlocked smartphone" label="phones and tech" phones customid={`${region === "au" ? "" : `${region}-`}home`} region={region} />
-      </div>
-
       {popular.length >= 4 && (
-        <section className="container-x mt-16">
-          <SectionHead title="Most compared phones" sub="Stocked by the most retailers, so the price gap is real." href={to("/phones")} cta="All phones" />
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <section className="container-x mt-10">
+          <SectionHead title="Most compared phones" sub="Stocked by the most stores, so the price gap is real." href={to("/phones")} cta="All phones" />
+          <Row>
             {popular.map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} />)}
-          </div>
+          </Row>
         </section>
       )}
 
+      <div className="mt-10">
+        <HotLaunches items={hot} preorders={pre} region={region} />
+      </div>
+
       {cats.filter(({ c, popular }) => c.id !== "phones" && FEATURED.slice(0, 7).includes(c.id) && popular.length >= 4).map(({ c, popular }) => (
-        <section key={c.id} className="container-x mt-16">
-          <SectionHead title={`Popular ${c.name}`} sub={c.blurb} href={to(c.href)} cta={`All ${c.name}`} />
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
+        <section key={c.id} className="container-x mt-10">
+          <SectionHead title={`Popular ${c.name.toLowerCase()}`} href={to(c.href)} cta={`All ${c.name.toLowerCase()}`} />
+          <Row>
             {popular.map((p) => <PhoneCard key={p.href} p={p} />)}
-          </div>
+          </Row>
         </section>
       ))}
 
-      <section className="container-x mt-16">
-        <NewsletterSignup />
-      </section>
-
-
-
-      {/* The newest guides and posts, high on the page: they're what search engines and readers come back for. Every
-          region since 2026-11-06: posts are written for every country and show the reader's own prices. */}
+      {/* The newest guides: what search engines and readers come back for. Every region since 2026-11-06. */}
       <section className="container-x mt-12">
-        <SectionHead title="Latest from the blog" sub="Our take on the year's big launches, best picks and head-to-heads, with live prices that update each morning." href="/guides" cta="All guides" />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {getGuides().slice(0, 3).map((g, i) => <GuideCard key={g.slug} g={g} big={i === 0} />)}
+        <SectionHead title="Buying guides" sub="The year's big launches, best picks and head-to-heads, with live prices." href="/guides" cta="All guides" />
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {getGuides().slice(0, 3).map((g) => <GuideCard key={g.slug} g={g} />)}
         </div>
       </section>
 
-
+      <section className="container-x mt-12">
+        <NewsletterSignup />
+      </section>
     </>
   );
 }
 
-function SectionHead({ title, sub, href, cta }: { title: string; sub: string; href: string; cta: string }) {
+/** A row of product cards: swipes sideways on a phone, a grid from md. */
+function Row({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mb-5 flex items-end justify-between gap-4">
-      <div>
-        <h2 className="font-display text-2xl font-extrabold tracking-tight sm:text-3xl">{title}</h2>
-        <p className="mt-1 text-sm text-ink-mute">{sub}</p>
-      </div>
-      <Link prefetch={false} href={href} className="hidden shrink-0 items-center gap-1 text-sm font-semibold text-brand hover:underline sm:inline-flex">
-        {cta} <ArrowRight />
-      </Link>
+    <div className="-mx-4 flex snap-x gap-2.5 overflow-x-auto px-4 pb-1 scrollbar-none sm:mx-0 sm:px-0 md:grid md:grid-cols-4 md:overflow-visible lg:grid-cols-5 [&>*]:w-[44vw] [&>*]:shrink-0 [&>*]:snap-start sm:[&>*]:w-[30vw] md:[&>*]:w-auto">
+      {children}
     </div>
   );
 }
 
-/** The home page's proof: a popular phone whose history best shows the price check working. */
-function pickExample(region: RegionId) {
-  const rank = { lowest: 0, below: 1, above: 2, usual: 3, new: 4 } as const;
-  const phones = getPhones(region);
-  const min = phones.some((p) => p.retailerCount >= 6) ? 6 : 3;
-  const candidates = phones
-    .filter((p) => p.retailerCount >= min && p.image)
-    .slice(0, 30)
-    .map((phone) => {
-      const variant = phone.variants.reduce((a, b) => (new Set(b.offers.map((o) => o.retailer)).size > new Set(a.offers.map((o) => o.retailer)).size ? b : a));
-      return { phone, variant, check: checkVariant(phone, variant).check };
-    })
-    .sort((a, b) => rank[a.check.verdict] - rank[b.check.verdict] || b.check.points.length - a.check.points.length);
-  return candidates[0];
+function SectionHead({ title, sub, href, cta }: { title: string; sub?: string; href: string; cta: string }) {
+  return (
+    <div className="mb-3.5 flex items-end justify-between gap-4">
+      <div>
+        <h2 className="text-xl font-bold tracking-tight sm:text-2xl">{title}</h2>
+        {sub && <p className="mt-0.5 text-sm text-ink-mute">{sub}</p>}
+      </div>
+      <Link prefetch={false} href={href} className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-brand hover:underline">
+        {cta} <ArrowRight />
+      </Link>
+    </div>
+  );
 }
 
 /** Stocked by the most stores first: that's where the price gap means something. */

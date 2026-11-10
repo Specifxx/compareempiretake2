@@ -21,7 +21,7 @@ export function DealsView({ category, region = "au", blackFriday = false, cyberM
   return (
     <div className="container-x pt-10">
       <div className="max-w-2xl">
-        <h1 className="font-display text-3xl font-extrabold tracking-tight sm:text-4xl">{sale ? `${saleHeading(sale, saleYear(sale, updatedAt.slice(0, 10))).replace(/ deals /, " tech deals ")}` : blackFriday ? `Black Friday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : cmPage ? `Cyber Monday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : c ? `${c.name} deals` : "Today's deals"}</h1>
+        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">{sale ? `${saleHeading(sale, saleYear(sale, updatedAt.slice(0, 10))).replace(/ deals /, " tech deals ")}` : blackFriday ? `Black Friday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : cmPage ? `Cyber Monday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : c ? `${c.name} deals` : "Today's deals"}</h1>
         {sale ? <SaleDates slug={sale} today={updatedAt.slice(0, 10)} place={/^United /.test(R.name) ? `the ${R.name}` : R.name} /> : blackFriday ? <BlackFridayDates today={updatedAt.slice(0, 10)} region={region} /> : cmPage && <CyberMondayDates today={updatedAt.slice(0, 10)} region={region} />}
         <p className="mt-2 text-ink-mute">
           Every deal here is worked out from real prices we checked on{" "}

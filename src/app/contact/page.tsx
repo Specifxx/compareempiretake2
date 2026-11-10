@@ -23,7 +23,7 @@ export default function ContactPage() {
   return (
     <div className="container-x max-w-3xl pt-12 pb-16">
       <div className="eyebrow">Contact</div>
-      <h1 className="mt-2 font-display text-4xl font-extrabold tracking-tight">Talk to us.</h1>
+      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">Talk to us.</h1>
       <p className="mt-4 text-lg text-ink-soft">A real person reads every message, usually within two business days.</p>
       <div className="mt-6 flex flex-wrap gap-3">
         <a className="btn-primary" href={`mailto:${CONTACT_EMAIL}?subject=Compare%20Empire`}>Email {CONTACT_EMAIL}</a>
@@ -31,14 +31,14 @@ export default function ContactPage() {
       </div>
       <ul className="mt-10 grid gap-3 sm:grid-cols-2">
         {TOPICS.map(([t, d]) => (
-          <li key={t} className="rounded-2xl border border-line bg-surface p-5">
+          <li key={t} className="rounded-lg border border-line bg-surface p-5">
             <div className="font-semibold">{t}</div>
             <p className="mt-1 text-sm text-ink-soft">{d}</p>
           </li>
         ))}
       </ul>
       <section id="suggest" className="mt-10 scroll-mt-24">
-        <h2 className="font-display text-2xl font-extrabold tracking-tight">Suggest a store</h2>
+        <h2 className="font-display text-2xl font-bold tracking-tight">Suggest a store</h2>
         <p className="mt-2 text-ink-soft">A store we don&apos;t check yet? We look at every suggestion and add it if we can read its prices. Run one? <Link href="/list-your-store" prefetch={false} className="underline">List your store</Link>, free.</p>
         <SuggestStore regions={REGION_IDS.map((r) => [r.toUpperCase(), REGIONS[r].name])} what="products" buttonClassName="btn-primary" />
       </section>

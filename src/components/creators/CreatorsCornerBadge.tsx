@@ -8,9 +8,9 @@ export function CreatorsCornerBadge() {
     <Link
       href="/creators"
       prefetch={false}
-      className="group relative z-20 mb-5 inline-flex min-h-9 items-center gap-2 rounded-full border border-brand/40 bg-bg-card py-1.5 pl-2 pr-3.5 text-xs font-bold text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-brand sm:absolute sm:right-4 sm:top-4 sm:mb-0 sm:text-sm lg:right-8"
+      className="group relative z-20 mb-5 inline-flex min-h-9 items-center gap-2 rounded-full border border-brand/40 bg-bg-card py-1.5 pl-2 pr-3.5 text-xs font-bold text-ink shadow-sm transition hover:border-brand sm:absolute sm:right-4 sm:top-4 sm:mb-0 sm:text-sm lg:right-8"
     >
-      <span className="relative flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-brand to-[#B04BFF] text-[13px]" aria-hidden>
+      <span className="relative flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-brand to-[#3D8BFF] text-[13px]" aria-hidden>
         ✨
         <span className="absolute -right-0.5 -top-0.5 h-2 w-2 animate-ping rounded-full bg-brand" />
       </span>

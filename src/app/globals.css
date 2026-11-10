@@ -3,36 +3,38 @@
 @tailwind utilities;
 
 :root {
-  --bg: 248 248 251;
+  /* A plain shop-window palette (owner, 2026-11-10: "look and feel like a big price comparison site"): light grey
+     page, white cards, near-black text, one blue for links and buttons, green only for savings. */
+  --bg: 243 244 246;
   --card: 255 255 255;
-  --sunk: 241 241 246;
-  --ink: 17 17 26;
-  --ink-soft: 64 64 82;
-  --ink-mute: 112 112 132;
-  --line: 228 228 236;
-  --brand: 91 61 245;
-  --brand-soft: 238 234 255;
+  --sunk: 236 238 241;
+  --ink: 22 24 29;
+  --ink-soft: 60 64 72;
+  --ink-mute: 104 110 120;
+  --line: 222 225 230;
+  --brand: 20 86 214;
+  --brand-soft: 232 240 254;
   --brand-ink: 255 255 255;
-  --save: 6 148 98;
-  --save-soft: 222 247 236;
-  --hot: 240 82 52;
+  --save: 0 128 72;
+  --save-soft: 224 245 234;
+  --hot: 214 40 40;
   color-scheme: light;
 }
 
 .dark {
-  --bg: 11 11 16;
-  --card: 20 20 28;
-  --sunk: 15 15 21;
-  --ink: 240 240 247;
-  --ink-soft: 196 196 210;
-  --ink-mute: 140 140 158;
-  --line: 40 40 54;
-  --brand: 139 116 255;
-  --brand-soft: 37 31 70;
-  --brand-ink: 255 255 255;
-  --save: 52 211 153;
-  --save-soft: 14 48 38;
-  --hot: 255 112 84;
+  --bg: 16 18 22;
+  --card: 26 29 34;
+  --sunk: 21 23 28;
+  --ink: 236 238 242;
+  --ink-soft: 196 200 208;
+  --ink-mute: 142 148 158;
+  --line: 44 48 56;
+  --brand: 110 160 255;
+  --brand-soft: 26 38 64;
+  --brand-ink: 10 14 22;
+  --save: 64 200 140;
+  --save-soft: 16 46 34;
+  --hot: 255 110 100;
   color-scheme: dark;
 }
 
@@ -41,20 +43,23 @@ body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11";
 
 @layer components {
   .container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
-  .card { @apply rounded-2xl border border-line bg-bg-card shadow-card; }
-  .chip { @apply inline-flex items-center gap-1.5 rounded-full border border-line bg-bg-card px-3 py-1.5 text-sm font-medium text-ink-soft transition hover:border-ink/20 hover:text-ink; }
+  .card { @apply rounded-lg border border-line bg-bg-card; }
+  .chip { @apply inline-flex items-center gap-1.5 rounded-full border border-line bg-bg-card px-3 py-1.5 text-sm font-medium text-ink-soft transition hover:border-ink/30 hover:text-ink; }
   .chip-on { @apply border-brand bg-brand-soft text-brand; }
-  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition active:scale-[.98]; }
-  .btn-primary { @apply btn bg-brand text-brand-ink hover:brightness-110 shadow-sm; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition; }
+  .btn-primary { @apply btn bg-brand text-brand-ink hover:brightness-110; }
   .btn-ghost { @apply btn border border-line bg-bg-card text-ink hover:border-ink/25; }
-  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.14em] text-ink-mute; }
-  .price { @apply font-display font-bold tabular-nums tracking-tight; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.08em] text-ink-mute; }
+  .price { @apply font-bold tabular-nums tracking-tight; }
   .product-img { @apply mix-blend-multiply dark:mix-blend-normal; }
 }
 
-/* White product shots sit on a soft tile in both themes. */
-.img-tile { background: radial-gradient(120% 90% at 50% 20%, #ffffff 0%, #f3f3f8 100%); }
-.dark .img-tile { background: radial-gradient(120% 90% at 50% 20%, #f7f7fb 0%, #dcdce6 100%); }
+/* White product shots sit on plain white in both themes (a light tile in dark mode). */
+.img-tile { background: #ffffff; }
+.dark .img-tile { background: #f4f5f7; }
+/* The product cards' and category tiles' hover: a lift of the border only, no motion. */
+.tile-hover { transition: border-color .15s, box-shadow .15s; }
+.tile-hover:hover { border-color: rgb(var(--ink) / 0.25); box-shadow: 0 2px 10px -4px rgb(0 0 0 / 0.15); }
 /* A photo that failed to load (layout.tsx's error listener): hidden, and the tile says so. */
 img[data-broken] { visibility: hidden; }
 .img-missing { position: relative; }
@@ -66,7 +71,7 @@ img[data-broken] { visibility: hidden; }
 /* Guide typography (no plugin: a few rules cover what the guides use). */
 .prose-ce { @apply text-[1.05rem] leading-[1.75] text-ink-soft; }
 .prose-ce > * + * { @apply mt-5; }
-.prose-ce h2 { @apply mt-12 font-display text-2xl font-extrabold tracking-tight text-ink; }
+.prose-ce h2 { @apply mt-12 font-display text-2xl font-bold tracking-tight text-ink; }
 .prose-ce h3 { @apply mt-8 font-display text-xl font-bold text-ink; }
 .prose-ce a { @apply font-medium text-brand underline decoration-brand/30 underline-offset-2 hover:decoration-brand; }
 .prose-ce strong { @apply font-semibold text-ink; }

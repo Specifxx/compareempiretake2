@@ -94,8 +94,8 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
   return (
     <div ref={box} className="relative w-full">
       <label
-        className={`flex items-center gap-3 border border-line bg-bg-card transition focus-within:border-brand focus-within:ring-4 focus-within:ring-brand/15 ${
-          lg ? "h-16 rounded-2xl px-5 shadow-lift" : "h-10 rounded-xl px-3 shadow-sm"
+        className={`flex items-center gap-3 border transition focus-within:border-brand focus-within:bg-bg-card focus-within:ring-4 focus-within:ring-brand/15 ${
+          lg ? "h-14 rounded-lg border-line bg-bg-card px-4" : "h-11 rounded-lg border-line bg-bg-sunk px-3.5"
         }`}
       >
         <SearchIcon className={lg ? "h-6 w-6 text-brand" : "h-4 w-4 text-ink-mute"} />
@@ -121,7 +121,7 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
             }
             if (e.key === "Enter" && (flat[active] || q.trim())) go(flat[active]?.href);
           }}
-          placeholder={lg ? "Search phones, TVs, laptops, graphics cards…" : "Search products…"}
+          placeholder={lg ? "Search phones, TVs, laptops, graphics cards…" : "Search phones, TVs, laptops and more…"}
           className={`w-full min-w-0 bg-transparent outline-none placeholder:text-ink-mute ${lg ? "text-lg" : "text-sm"}`}
           aria-label="Search"
           role="combobox"

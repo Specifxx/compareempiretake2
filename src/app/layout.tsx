@@ -9,7 +9,6 @@ import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { RateCard } from "@/components/site-reviews/RateCard";
-import { QuickView } from "@/components/QuickView";
 import { SideRails } from "@/components/SideRails";
 import { RegionNotice } from "@/components/RegionNotice";
 import { activeCategories, categoryHref, getBrands, liveRegions } from "@/lib/catalog";
@@ -26,7 +25,6 @@ import { SEASON_BOOT_SCRIPT } from "@/lib/season";
 
 // Self-hosted (OFL, from Fontsource) so builds never depend on fetching Google Fonts.
 const sans = localFont({ src: "./fonts/inter-latin-wght-normal.woff2", variable: "--font-sans", display: "swap", weight: "100 900" });
-const display = localFont({ src: "./fonts/bricolage-grotesque-latin-wght-normal.woff2", variable: "--font-display", display: "swap", weight: "200 800" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -54,8 +52,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f8f8fb" },
-    { media: "(prefers-color-scheme: dark)", color: "#0b0b10" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#1a1d22" },
   ],
 };
 
@@ -103,7 +101,7 @@ const getChrome = () =>
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const { regions, nav } = getChrome();
   return (
-    <html lang="en" className={`${sans.variable} ${display.variable}`} data-regions={regions.join(" ")} suppressHydrationWarning>
+    <html lang="en" className={sans.variable} data-regions={regions.join(" ")} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         {/* Christmas (1 November to Boxing Day): data-season on <html> from the visitor's own date. lib/season.ts. */}
@@ -140,7 +138,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <CompareTray />
-        <QuickView />
+        {/* No quick view since the 2026-11-10 redesign: a product card opens the product page, as on the big comparison
+            sites (fewer /api/products calls, one place to compare). components/QuickView.tsx stays for a while. */}
         <FeedbackWidget />
         {/* Rate us (owner, 2026-11-03): the corner card, asking only after real use; RiftCompare keeps the ratings. */}
         <RateCard />

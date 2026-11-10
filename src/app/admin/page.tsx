@@ -37,7 +37,7 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
   return (
     <Shell>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <h1 className="font-display text-3xl font-extrabold">Admin</h1>
+        <h1 className="font-display text-3xl font-bold">Admin</h1>
         <form action="/api/admin/action" method="post">
           <input type="hidden" name="action" value="logout" />
           <button className="btn-ghost py-2 text-xs">Sign out</button>

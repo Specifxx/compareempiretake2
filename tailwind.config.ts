@@ -13,7 +13,7 @@ export default {
         save: { DEFAULT: "rgb(var(--save) / <alpha-value>)", soft: "rgb(var(--save-soft) / <alpha-value>)" },
         hot: "rgb(var(--hot) / <alpha-value>)",
       },
-      fontFamily: { sans: ["var(--font-sans)", "system-ui", "sans-serif"], display: ["var(--font-display)", "var(--font-sans)", "sans-serif"] },
+      fontFamily: { sans: ["var(--font-sans)", "system-ui", "sans-serif"], display: ["var(--font-sans)", "system-ui", "sans-serif"] },
       boxShadow: {
         card: "0 1px 2px rgb(0 0 0 / 0.04), 0 4px 16px -4px rgb(0 0 0 / 0.06)",
         lift: "0 2px 4px rgb(0 0 0 / 0.04), 0 16px 40px -12px rgb(0 0 0 / 0.18)",
