@@ -13,7 +13,7 @@ import type { CategoryId, Phone, RetailerId } from "@/lib/types";
 import { slugify, storageLabel } from "@/lib/normalize";
 import { RETAILERS } from "@/lib/retailers";
 import { SITE } from "@/lib/site";
-import { ogImage } from "@/lib/og";
+import { ogImage, staticShareCard } from "@/lib/og";
 import { shareRows } from "@/lib/share-rows";
 import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
@@ -90,10 +90,13 @@ export async function productMetadata(params: ProductParams, region: RegionId): 
     // One-store and sold-out pages stay live and linked but out of the index (lib/indexing.ts).
     ...(productIndexable(p) ? {} : { robots: { index: false, follow: true } }),
     alternates: alternates(p),
-    openGraph: { title, description, url: productHref(p), images: [{ url: shareCard(p), width: 1200, height: 630 }] },
-    twitter: { card: "summary_large_image", title, description, images: [shareCard(p)] },
+    openGraph: { title, description, url: productHref(p), images: [{ url: shareCardOf(p), width: 1200, height: 630 }] },
+    twitter: { card: "summary_large_image", title, description, images: [shareCardOf(p)] },
   };
 }
+
+/** Indexed pages draw their own card with real store prices; noindex ones share the region's static card (CE-1). */
+const shareCardOf = (p: Phone) => (productIndexable(p) ? shareCard(p) : staticShareCard(p.region ?? "au"));
 
 function shareCard(p: Phone) {
   const v = p.variants.reduce((a, b) => (a.bestPrice <= b.bestPrice ? a : b));

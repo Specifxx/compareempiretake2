@@ -184,7 +184,9 @@ export async function GET(req: Request) {
         { name: "Archivo", data: archivoData, weight: 900, style: "normal" },
         { name: "Inter", data: interData, weight: 700, style: "normal" },
       ],
-      headers: { "cache-control": "public, max-age=86400, s-maxage=86400" },
+      // A card's URL carries everything it draws, so a URL never needs redrawing: the CDN keeps it a week (CE-1, 2026-11-10;
+      // a day until then). Browsers still keep a day.
+      headers: { "cache-control": "public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400" },
     },
   );
 }
