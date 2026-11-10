@@ -2018,3 +2018,20 @@ so neither gets the page.
 **Indexing.** In the sitemap (`seo.ts` pages and `us-pages`/`uk-pages`), in the daily IndexNow list (`scripts/indexnow.ts`), linked from the home page's
 "Hot right now" header and the footer's Shop column, hreflang across the three regions. One URL per region, no mass requests, no host change.
 **Limit seen:** the US console catalogue is 8 products and each has one or two stores today, so the US page is thin until more stores list them.
+
+## 2026-11-10: eBay calls split by region, and every eBay tag names its region (owner)
+
+Measured 8-10 Nov the coverage queue spent the 2,900 calls a day as US 1,554 / AU 736 / UK 376 / CA 229 / SG 5, but the
+visitors and the eBay earnings are Australian first, Canada has few products and Singapore has no EPN programme (0 eBay
+listings of 511). The owner approved the region split brief (`strategy/ebay-region-split-brief-2026-11-10.md`):
+about AU 1,100 / US 1,200 / UK 550 / CA 50 / SG 0, the site's 2,900 unchanged.
+
+- `REGION_DAILY_CALLS` in `scripts/ebay-prices.ts` (US 1,200, AU 1,100, UK 550, CA 50, SG 0): `plan` gives each region
+  its share of the allowance (scaled for a second run or a lowered `EBAY_DAILY_CALLS`), filled in the old order
+  (never-priced, then due, then stalest by demand); calls a region cannot use go to the rest in the same order, never to a
+  region with no share; the US is searched first. Dry run on today's data: AU 1,100 / US 1,200 / UK 550 / CA 50 / SG 0.
+  Singapore's eBay rows age out after nine days (they were 0 anyway); its eBay search links stay.
+- `ebayCustomId` now writes `ce-<region>-<page…>` on every eBay link (product pages were `ce-p-<category>-…`, AU category
+  strips `ce-cat-…`, live search `ce-search-<region>`), so riftcompare.com/admin/earnings can split Compare Empire's eBay
+  earnings by region (the region is the second part, as on every other site). A page tag that already starts with its
+  region keeps it once; a full `ce-…` tag is kept as given.

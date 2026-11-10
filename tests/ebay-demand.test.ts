@@ -46,7 +46,7 @@ test("no demand file falls back to store signals", () => {
   assert.ok(demand(p({ retailerCount: 9 }), "au", d) > demand(p({ retailerCount: 1 }), "au", d));
 });
 
-import { plan, REFRESH_DAYS } from "../scripts/ebay-prices";
+import { plan, REFRESH_DAYS, REGION_DAILY_CALLS } from "../scripts/ebay-prices";
 
 const DAY = 86_400_000;
 const now = Date.parse("2026-11-01T12:00:00Z");
@@ -75,4 +75,18 @@ test("spare calls go to the stalest by demand, never past the allowance", () => 
   const all = [c("a", "us", 10, ago(1)), c("b", "us", 10, ago(2)), c("d", "uk", 1, ago(1))];
   assert.deepEqual(plan(all, 2, now).map((x) => x.id), ["b", "a"]);
   assert.equal(plan(all, 0, now).length, 0);
+});
+
+test("each region takes its share of the day, the US first, Singapore never (owner, 2026-11-10)", () => {
+  const many = (region: "au" | "us" | "uk", k: number) => Array.from({ length: k }, (_, i) => c(`${region}${i}`, region, 1));
+  const all = [...many("au", 20), ...many("us", 20), ...many("uk", 20), { id: "sg0", region: "sg" as const, demand: 99, searched: false }];
+  const q = plan(all, 10, now, { us: 0.4, au: 0.4, uk: 0.2, sg: 0 });
+  const by = (r: string) => q.filter((x) => x.region === r).length;
+  assert.deepEqual([by("us"), by("au"), by("uk"), by("sg")], [4, 4, 2, 0]);
+  assert.equal(q[0].region, "us");
+  // A region with fewer products than its share gives the rest away, never to a region with no share.
+  const few = plan([c("u", "us", 1), ...many("au", 5), { id: "sg0", region: "sg" as const, demand: 99, searched: false }], 5, now, { us: 0.8, au: 0.2, sg: 0 });
+  assert.deepEqual(few.map((x) => x.region), ["us", "au", "au", "au", "au"]);
+  assert.equal(Object.values(REGION_DAILY_CALLS).reduce((a, b) => a + b, 0), 2900, "the shares are the site's whole 2,900");
+  assert.equal(REGION_DAILY_CALLS.sg, 0);
 });

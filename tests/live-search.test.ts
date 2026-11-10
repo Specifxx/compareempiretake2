@@ -57,7 +57,7 @@ test("search everything: normalised query, our own products, a tagged eBay searc
   assert.ok(r.a.products.length > 0, "the US catalogue has iPhones");
   for (const p of r.a.products) assert.match(p.url, /^https:\/\/compareempire\.com\/us\//);
   assert.match(r.a.ebay.url, /campid=5339155912/);
-  assert.match(r.a.ebay.url, /customid=ce-search-us/);
+  assert.match(r.a.ebay.url, /customid=ce-us-search/);
   assert.doesNotMatch(JSON.stringify(r.a), /amazon\./i, "no Amazon search for typed words (Operating Agreement)");
 });
 
