@@ -15,6 +15,9 @@ const NOT_RSC = [{ type: "header", key: "rsc" }];
 // runtime (src/lib/catalog.ts). Never the scrape inputs, history or archive.
 const RUNTIME_DATA = ["./data/**/catalog.json", "./data/**/series.json", "./data/**/store-series.json", "./data/**/ebay.json", "./data/family/family-cluster.json", "./data/focus/demand.json", "./data/amazon/*.json", "./data/amazon-live/*.json"];
 
+// Search everything and the MCP server (DECISIONS.md 2026-11-10): the catalogues plus the family search index.
+const SEARCH_DATA = [...RUNTIME_DATA, "./data/family/family-search.json"];
+
 // The focus cull (owner, 2026-11-07; src/lib/focus.ts RETIRED_CATEGORIES, which tests/focus.test.ts pins this to): a
 // retired category's pages, products, browse and deals pages 301 to the nearest kept category, else the region's home.
 const RETIRED = {
@@ -53,7 +56,7 @@ const nextConfig = {
   // Keys are picomatch globs over route names (brackets escaped) that also match inside a name: the first covers
   // /[category]/[slug], /us/[category]/[slug] and /uk/[category]/[slug]; "/admin" also catches the small /api/admin routes.
   // The /api/grid lists are prerendered with the deploy and served as files, so they trace nothing.
-  outputFileTracingIncludes: { "/\\[category\\]/\\[slug\\]": RUNTIME_DATA, "/api/products": RUNTIME_DATA, "/admin": RUNTIME_DATA, "/embed/price": RUNTIME_DATA },
+  outputFileTracingIncludes: { "/\\[category\\]/\\[slug\\]": RUNTIME_DATA, "/api/products": RUNTIME_DATA, "/admin": RUNTIME_DATA, "/embed/price": RUNTIME_DATA, "/api/search": SEARCH_DATA, "/api/mcp": SEARCH_DATA },
   outputFileTracingExcludes: { "/**": ["./data/**/raw/**", "./data/**/history/**", "./data/**/archive/**"] },
   // One model, one page (Search Console, 2026-10-27): the iPad mini and Surface Go 3 pages the catalog split by
   // size, generation-vs-chip naming or a stray "with" (src/lib/match.ts parseTablet) now redirect to the merged page.

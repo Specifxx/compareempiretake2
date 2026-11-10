@@ -96,12 +96,16 @@ test("routes rendered on request trace the catalogues, never raw, history or arc
   for (const e of runtime) assert.ok(entries.includes(e), `${e} exists`);
   // family-cluster.json: CamCompare's camera pages, for the product page's hand-off (lib/family.ts).
   const DATA = [...["catalog.json", "series.json", "store-series.json", "ebay.json"].map((f) => `./data/**/${f}`), "./data/family/family-cluster.json", "./data/focus/demand.json", "./data/amazon/*.json", "./data/amazon-live/*.json"];
+  const SEARCH = ["app/api/search/route", "app/api/mcp/route"];
+  for (const e of SEARCH) assert.ok(entries.includes(e), `${e} exists`);
   const EXCLUDED = ["./data/**/archive/**", "./data/**/history/**", "./data/**/raw/**"];
   assert.ok(entries.length > 20, `found ${entries.length} app entries`);
   for (const e of entries) {
     const route = normalizeAppPath(e);
     const inc = traced(route, config.outputFileTracingIncludes);
     if (runtime.includes(e)) assert.deepEqual([...new Set(inc)].sort(), [...DATA].sort(), `${route} must trace the catalogues`);
+    // Search everything and the MCP server (DECISIONS.md 2026-11-10) also read the family search index.
+    else if (SEARCH.includes(e)) assert.deepEqual([...new Set(inc)].sort(), [...DATA, "./data/family/family-search.json"].sort(), `${route} must trace the catalogues and the family index`);
     // The /api/admin routes match "/admin" too (small routes, a known cost); every other route traces no data.
     else if (/^app\/api\/admin\//.test(e)) assert.ok(inc.every((f) => DATA.includes(f)), route);
     else assert.deepEqual(inc, [], `${route} traces data it doesn't read`);
@@ -112,7 +116,7 @@ test("routes rendered on request trace the catalogues, never raw, history or arc
 
 test("nothing a cached page renders reads the request", () => {
   // /api/products is CDN-cached by its URL, so it may read the query string and nothing else.
-  const starts = ["src/app/layout.tsx", "src/views/ProductView.tsx", ...PRODUCT_PAGES, "src/app/api/products/route.ts"];
+  const starts = ["src/app/layout.tsx", "src/views/ProductView.tsx", ...PRODUCT_PAGES, "src/app/api/products/route.ts", "src/app/api/search/route.ts"];
   const seen = new Set<string>();
   const resolve = (from: string, spec: string): string | undefined => {
     const base = spec.startsWith("@/") ? path.join(SRC, spec.slice(2)) : path.resolve(path.dirname(from), spec);

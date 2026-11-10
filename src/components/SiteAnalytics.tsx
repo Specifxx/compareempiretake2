@@ -51,6 +51,8 @@ export function SiteAnalytics() {
       if (!a || !countable()) return;
       const d = a.dataset;
       const props: Record<string, string | number> = { retailer: d.buy!, kind: d.buyKind ?? "store", page: location.pathname };
+      // Paid (an affiliate link: rel "sponsored") or a plain store link, so clicks can be told from earning clicks (2026-11-10).
+      props.paid = /\bsponsored\b/.test(a.rel) ? 1 : 0;
       if (d.buyProduct) props.product = d.buyProduct;
       if (d.buyPrice && !Number.isNaN(Number(d.buyPrice))) props.price = Math.round(Number(d.buyPrice));
       if (d.buyRank) props.rank = Number(d.buyRank);

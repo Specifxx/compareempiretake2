@@ -59,6 +59,9 @@ export function allResultsHref(q: string, matches: { href: string }[], region: R
   return m ? `${m[1]}?q=${encodeURIComponent(q.trim())}` : withRegion("/browse", region);
 }
 
+/** The family-wide results page (/search, DECISIONS.md 2026-11-10), with the query as /api/search keys it. */
+export const searchHref = (q: string) => `/search?q=${encodeURIComponent(q.replace(/\s+/g, " ").trim().toLowerCase().slice(0, 80))}`;
+
 export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; autoFocus?: boolean }) {
   const { $, region } = useRegionKit();
   const [q, setQ] = useState("");
@@ -87,7 +90,11 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
   const go = (href?: string) => {
     setOpen(false);
     input.current?.blur();
-    router.push(href ?? allResultsHref(q, phones, region));
+    // Nothing here matches: search every Compare Empire site (/search, 2026-11-10) rather than an empty category.
+    const to = href ?? (phones.length ? allResultsHref(q, phones, region) : searchHref(q));
+    // /search reads its query once, on load: a full navigation, so a new search from that page shows.
+    if (to.startsWith("/search?")) window.location.assign(to);
+    else router.push(to);
   };
 
   const lg = size === "lg";
@@ -183,6 +190,11 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
             <button onClick={() => go()} className="w-full border-t border-line px-4 py-2.5 text-left text-sm font-medium text-brand hover:bg-bg-sunk">
               See all results for “{q.trim()}” →
             </button>
+          )}
+          {q.trim().length >= 2 && (
+            <a href={searchHref(q)} onClick={() => setOpen(false)} className="block w-full border-t border-line px-4 py-2.5 text-left text-sm text-ink-soft hover:bg-bg-sunk">
+              Search every Compare Empire site, cards and figures too →
+            </a>
           )}
           {/* No Amazon search for whatever was typed (2026-11-02): Amazon's Operating Agreement wants links to specific
               products we chose, never inside a pop-up; product pages carry the Amazon row. */}
