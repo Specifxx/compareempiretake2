@@ -27,8 +27,13 @@ export function SearchResults() {
   const [q, setQ] = useState<string | null>(null);
   const [state, setState] = useState<{ status: "idle" | "loading" | "done" | "error"; data?: Answer }>({ status: "idle" });
 
+  const [from, setFrom] = useState<string | null>(null);
   useEffect(() => {
-    setQ(norm(new URLSearchParams(location.search).get("q") ?? ""));
+    const params = new URLSearchParams(location.search);
+    setQ(norm(params.get("q") ?? ""));
+    // Which sister site's empty search sent the visitor (their "Search every Compare Empire site" link), for the test.
+    const f = (params.get("from") ?? "").toLowerCase();
+    setFrom(/^[a-z]{2,12}$/.test(f) ? f : null);
   }, []);
 
   useEffect(() => {
@@ -43,13 +48,14 @@ export function SearchResults() {
         const results = data.products.length + data.family.length;
         // The 4-week test (owner, 2026-11-10): searches, and the words of searches nothing answered (the list of what
         // to add next). The query text only, nothing about the visitor.
-        track("search", results ? { region, results } : { region, results: 0, q: q.slice(0, 50) });
+        const src = { from: from ?? "ce" };
+        track("search", results ? { region, results, ...src } : { region, results: 0, q: q.slice(0, 50), ...src });
       })
       .catch(() => live && setState({ status: "error" }));
     return () => {
       live = false;
     };
-  }, [q, region]);
+  }, [q, region, from]);
 
   if (q === null) return null;
   if (q.length < 2) return <p className="mt-6 text-ink-soft">Type at least two letters in the search box above.</p>;
@@ -59,14 +65,32 @@ export function SearchResults() {
   const none = !d.products.length && !d.family.length;
   return (
     <div className="mt-6 space-y-10">
-      {none && <p className="text-ink-soft">Nothing on our sites matches “{d.query}” yet. Try a brand or a model number, or see eBay’s listings below.</p>}
+      {none && <p className="text-ink-soft">Nothing on our sites matches “{d.query}” yet. Try a brand or a model number, or see eBay’s listings above.</p>}
+      {/* eBay pinned first, labelled, outside the price order (the family rule for eBay rows, compare search test 2026-11-10). */}
+      <section>
+        <a
+          href={d.ebay.url}
+          target="_blank"
+          rel={SPONSORED_REL}
+          data-buy="ebay"
+          data-buy-kind="ebay-search"
+          data-buy-product={`search:${d.query.slice(0, 50)}`}
+          className="card flex items-center justify-between gap-3 p-4 hover:border-brand/40"
+        >
+          <span>
+            <span className="block font-medium">{d.ebay.label}</span>
+            <span className="block text-xs text-ink-mute">New, Buy It Now. Ad · Paid link</span>
+          </span>
+          <span className="text-sm font-semibold text-brand">eBay →</span>
+        </a>
+      </section>
       {d.products.length > 0 && (
         <section>
           <h2 className="font-display text-xl font-bold">Tech and appliances</h2>
           <ul className="mt-3 divide-y divide-line rounded-2xl border border-line bg-bg-card">
             {d.products.map((p, i) => (
               <li key={p.path}>
-                <a href={p.path} onClick={() => track("search_click", { to: "ce", rank: i + 1 })} className="flex items-center gap-3 px-4 py-3 hover:bg-bg-sunk">
+                <a href={p.path} onClick={() => track("search_click", { to: "ce", rank: i + 1, from: from ?? "ce" })} className="flex items-center gap-3 px-4 py-3 hover:bg-bg-sunk">
                   <span className="img-tile grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-lg">
                     {p.image && <img src={p.image} alt={p.name} className="product-img h-11 w-11 object-contain" loading="lazy" />}
                   </span>
@@ -94,7 +118,7 @@ export function SearchResults() {
           <ul className="mt-3 divide-y divide-line rounded-2xl border border-line bg-bg-card">
             {d.family.map((f, i) => (
               <li key={f.url}>
-                <a href={f.url} onClick={() => track("search_click", { to: "family", site: f.siteName, rank: i + 1 })} className="flex items-center gap-3 px-4 py-3 hover:bg-bg-sunk">
+                <a href={f.url} onClick={() => track("search_click", { to: "family", site: f.siteName, rank: i + 1, from: from ?? "ce" })} className="flex items-center gap-3 px-4 py-3 hover:bg-bg-sunk">
                   <span className="min-w-0 flex-1">
                     <span className="block truncate font-medium">{f.name}</span>
                     <span className="block text-xs text-ink-mute">{f.siteName} · {f.topic}</span>
@@ -109,23 +133,6 @@ export function SearchResults() {
           </ul>
         </section>
       )}
-      <section>
-        <a
-          href={d.ebay.url}
-          target="_blank"
-          rel={SPONSORED_REL}
-          data-buy="ebay"
-          data-buy-kind="ebay-search"
-          data-buy-product={`search:${d.query.slice(0, 50)}`}
-          className="card flex items-center justify-between gap-3 p-4 hover:border-brand/40"
-        >
-          <span>
-            <span className="block font-medium">{d.ebay.label}</span>
-            <span className="block text-xs text-ink-mute">New, Buy It Now. Ad · Paid link</span>
-          </span>
-          <span className="text-sm font-semibold text-brand">eBay →</span>
-        </a>
-      </section>
     </div>
   );
 }

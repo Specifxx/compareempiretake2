@@ -1948,3 +1948,20 @@ from DexCompare and RiftCompare, while Compare Empire earned A$12 against A$41 o
   only when nothing matched, nothing about the visitor), `search_click` (ours or a sister's, rank), and every `buy_click`
   now carries `paid` (1 when the link is rel "sponsored"). EPN customids `ce-search-*` and `ce-mcp-*` tie eBay earnings
   to search.
+
+## 2026-11-10 — Compare search test: sister sites send their empty searches here, eBay pinned first
+
+Thread "Build compare search engine MVP" (plan: project files › compare-search/compare-search-mvp-plan-2026-11-10.html).
+
+- **Traffic for the test.** Compare Empire alone gets ~170 views a day, too few searches to judge the 8 Dec gate. Every
+  sister site except KaeYoung and MotorCompare now shows "Search every Compare Empire site for “…” →" where its OWN
+  search found nothing (typeahead and results page), never beside a product it sells, so no earning click moves. The
+  link is `/search?q=<words>&r=<market>&from=<site key>`; `SearchResults` adds `from` (letters only, else `ce`) to the
+  `search` and `search_click` events, so the test can tell Compare Empire's own searches from each sister's.
+- **eBay is pinned first** on /search, labelled "Ad · Paid link", above our and the sisters' results (the family rule
+  for eBay rows). Still one search link per query from `/api/search`: live eBay prices per search would need eBay keys
+  on Vercel, which every site keeps GitHub-only; that is the owner's call and waits for the gate.
+- **No Amazon row on /search.** The Operating Agreement allows only links to a specific product (2026-11-02); a result
+  already leads to our product page, which carries that product's Amazon row.
+- **Weekly numbers** are read by RiftCompare's earnings refresh from the Web Analytics API (searches, empty searches and
+  their words, searches per sending site, paid clicks from /search) and shown on Empire HQ and in the Monday report.
