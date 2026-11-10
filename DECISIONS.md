@@ -1982,3 +1982,14 @@ cached copy is never wrong. Redraw the static cards only if the `/og` design cha
 
 **Also seen:** four production deploys on 10 Nov between 03:42 and 08:58 UTC (two READY, others cancelled). Each one empties the
 CDN cache for `/og` and the product pages; the one-build-per-12h rule matters for this site's bill as much as any code.
+
+## 2026-11-10: Link preview card follows the blue redesign
+
+Bill asked why our link thumbnails do not look like PriceRunner's. Read from its pages: PriceRunner sends `twitter:card=summary_large_image`
+with a hosted image and no text on it: a fixed brand hero on the home page, a grid of up to eight product photos on a category and
+the product's own photo on a product page. Ours already matched the technical practice (1200×630, absolute URL, summary_large_image,
+`og:image:width/height`, cached) but still drew the old violet after the PriceRunner-style redesign (#136) made the site blue, so
+every shared link looked like another brand. **Changed:** `/og` uses the brand blue (`#1456D6`, gradient `#2A6BF0` to `#0B3A9E`) and the
+five static region cards in `public/share/` were redrawn with it (per the rule above: redraw them when `/og`'s design changes). Store photos
+stay off the card (the 2026-11-08 CPU decision); the real store-price rows are the difference from PriceRunner's photo cards.
+Already shared cards expire from the CDN within a week. Rides the next release; no `[deploy]`.
