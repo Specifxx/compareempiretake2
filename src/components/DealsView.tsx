@@ -5,6 +5,7 @@ import type { CategoryId } from "@/lib/types";
 import { REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { DealCard } from "./DealCard";
 import { FamilyCluster } from "./FamilyCluster";
+import { PartnerOffers } from "./PartnerOffers";
 import { NewsletterSignup } from "./NewsletterSignup";
 import { blackFriday as bfDate, cyberMonday, holidayFaq, longDate, seasonYear } from "@/lib/black-friday";
 import { saleHeading, saleIntro, saleYear, type SaleSlug } from "@/lib/sale-seasons";
@@ -25,7 +26,7 @@ export function DealsView({ category, region = "au", blackFriday = false, cyberM
         {sale ? <SaleDates slug={sale} today={updatedAt.slice(0, 10)} place={/^United /.test(R.name) ? `the ${R.name}` : R.name} /> : blackFriday ? <BlackFridayDates today={updatedAt.slice(0, 10)} region={region} /> : cmPage && <CyberMondayDates today={updatedAt.slice(0, 10)} region={region} />}
         <p className="mt-2 text-ink-mute">
           Every deal here is worked out from real prices we checked on{" "}
-          {new Date(updatedAt).toLocaleDateString(R.locale, { timeZone: R.timeZone, weekday: "long", day: "numeric", month: "long" })} — no sponsored spots, no
+          {new Date(updatedAt).toLocaleDateString(R.locale, { timeZone: R.timeZone, weekday: "long", day: "numeric", month: "long" })} — no sponsored spots in this list, no
           &ldquo;was&rdquo; prices we can&apos;t back up.
         </p>
       </div>
@@ -61,6 +62,7 @@ export function DealsView({ category, region = "au", blackFriday = false, cyberM
       {/* One block per page (DECISIONS.md "Sites that grow each other"): the tech sister's camera deals, on the all-category list. */}
       {(blackFriday || cmPage) && <HolidayFaq event={blackFriday ? "black-friday" : "cyber-monday"} today={updatedAt.slice(0, 10)} place={/^United /.test(R.name) ? `the ${R.name}` : R.name} />}
       {!category && <FamilyCluster region={region} />}
+      {!category && !blackFriday && !cmPage && !sale && <PartnerOffers region={region} placement="deals" />}
       <div className="mt-12"><NewsletterSignup /></div>
     </div>
   );

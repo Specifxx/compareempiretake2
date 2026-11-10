@@ -1989,3 +1989,15 @@ Awin's welcome email arrived for Hamleys (merchant 1205). It is added to `data/a
 Awin deep link (`awinmid=1205`, publisher 3144410) on this site and, through the copied list, the sisters; the daily `awin-sync` keeps it if the API
 lists it as joined. Hamleys is already a UK retailer here (`uk-hamleys`), fed by `FEED_URL_UK_HAMLEYS` once the owner creates the feed. PPC
 restriction (Hamleys' terms): never bid on "Hamleys" and never run PPC that links directly to hamleys.com.
+
+## 2026-11-10: Awin stores get a visible "Offers from partner stores" block, low on the home page and the deals list
+
+Owner: more clicks on the Awin links, as visible as the eBay and Amazon placements, without crowding the top of a page. Awin links were
+already tracked everywhere (`awinUrl`) but a shopper only met them on a store row that happens to be Ryman or Hamleys. A new
+`PartnerOffers` block (`src/lib/partner-offers.ts`, `src/components/PartnerOffers.tsx`) lists, per joined Awin store that sells in the
+region, its live offers and vouchers from `data/awin/promotions.json`, with a "Shop at <store>" button to its tracked home page
+(clickref `ce-offers-<region>-<home|deals>`, rel sponsored, labelled "Ad" and "Paid link"). Placement: after the buying guides on each
+region's home page, and after the sister-site block on the all-category deals list (not category, sale-season or Black Friday pages).
+Nothing is drawn when no joined store has an offer more than a day from its end, so it grows by itself as Awin approvals arrive. Never a
+store row, price, cheapest or deal; no pop-up, no rail. Measure: `buy_click` with `retailer=awin-<id>` and `kind=partner_offers_home|deals`
+(paid=1), against the programme's clicks in Awin's dashboard. Impact brands are not listed (they have no offers feed).
