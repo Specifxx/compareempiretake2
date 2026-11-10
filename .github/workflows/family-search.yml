@@ -1,0 +1,44 @@
+name: Family search index
+
+# Search everything (scripts/family-search.ts, DECISIONS.md 2026-11-10): reads every sister's public /alert-feed.json
+# into data/family/family-search.json. refresh-prices.yml runs the same script every morning before its [deploy]
+# commit; this job is for the first build of the file and for a re-run by hand. Its commit carries no [deploy]: the
+# file reaches the site with the next daily release.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/family-search.ts
+      - src/lib/family-search.ts
+
+permissions:
+  contents: write
+
+concurrency: family-search-${{ github.ref_name }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Read the sisters' feeds
+        run: npx tsx scripts/family-search.ts
+      - name: Commit
+        run: |
+          git config user.name "compare-empire-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/family/family-search.json
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "data: family search index $(date -u +%F)"
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 10))
+          done
+          exit 1

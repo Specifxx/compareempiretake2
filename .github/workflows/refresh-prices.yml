@@ -169,6 +169,11 @@ jobs:
       - name: Family feed
         continue-on-error: true
         run: npx tsx --conditions=react-server scripts/family-sync.ts
+      # Search everything (scripts/family-search.ts, DECISIONS.md 2026-11-10): every sister's public price-alert feed,
+      # read once a day into data/family/family-search.json for /search and the MCP server. Never fatal.
+      - name: Family search index
+        continue-on-error: true
+        run: npx tsx scripts/family-search.ts
       - name: Commit data
         run: |
           git config user.name "compare-empire-bot"

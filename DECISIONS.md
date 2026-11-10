@@ -1915,3 +1915,36 @@ Before/after screenshots: /mnt/project-files/compare-empire/pricerunner-redesign
 - **No quick view.** A card click opens the product page, as on the big comparison sites: one place to compare, and no
   `/api/products` function call per card click. `components/QuickView.tsx` is no longer mounted.
 - Unchanged: every URL, title, meta description, canonical, hreflang, JSON-LD, the sitemap and the store order rules.
+
+## 2026-11-10 — Search everything and an MCP server (plan B of the compare search engine)
+
+Owner chose plan B on 10 Nov (plan: /mnt/project-files/compare-search/compare-search-engine-plan-2026-11-10.html): build
+"compare anything" as live search on compareempire.com plus an MCP server over the data the family already has, test it
+for four weeks, and leave the niche sites as they are. Evidence at the time: the last 30 days earned A$3,072, A$2,028 of it
+from DexCompare and RiftCompare, while Compare Empire earned A$12 against A$41 of Vercel.
+
+- **One index of the family.** `scripts/family-search.ts` reads each sister's public `/alert-feed.json` (the feed
+  RiftCompare's shared alert service already reads: name, path, lowest in-stock store price per region) and commits
+  `data/family/family-search.json`. It runs every morning in refresh-prices.yml, and in `family-search.yml` for the first
+  build or a re-run. A sister whose feed fails keeps yesterday's items. The routes drop any site older than four days, so a
+  stopped import never shows old prices. RiftCompare, OP Compare and CamCompare publish no alert feed, so they are not in it yet.
+- **No request fetches anything.** `/api/search?q=&r=` and `/api/mcp` read only committed files (the catalogues plus the
+  index, traced by next.config.mjs). The search route is a function the CDN keeps for six hours per query (owner rule: never
+  under 21600), and the page asks with the normalised query (lower case, single spaces), so each query has one cache entry.
+  An empty catalogue throws a 500, which is never cached.
+- **`/search`** is one static, noindex page. Its results are a client island. Robots already disallows query URLs (`/*?`),
+  and the page is not in the sitemap. The search box offers "Search every Compare Empire site" under its results and goes
+  there when nothing here matches.
+- **What a result shows:** our products (price, stores), then the sister products (each links to its own site, in the
+  region's own currency, never converted), then a labelled eBay search (`customid=ce-search-<region>`; the MCP's is
+  `ce-mcp-<region>`). The `ce-` prefix stays because EPN's per-site earnings group on it, so search and MCP clicks are told
+  apart by the placement after it. There is no Amazon search link for typed words (Operating Agreement, 2026-11-02), and the
+  MCP answers never carry an Amazon link or price.
+- **MCP server:** stateless Streamable HTTP. One JSON-RPC POST gets one JSON answer, with no sessions or streams. GET with
+  `text/event-stream` gets a 405. The tools are `search_products`, `compare_prices` (every store's price for a
+  compareempire.com product, with links through `storeLink`) and `price_history`. All are read only, with no key. `/mcp`
+  explains how to connect, and `llms.txt` lists the server. Each tool call logs one `[mcp] tool=… region=…` line.
+- **Measuring the four-week test** (judged around 8 Dec): Web Analytics `search` (region, result count, and the query text
+  only when nothing matched, nothing about the visitor), `search_click` (ours or a sister's, rank), and every `buy_click`
+  now carries `paid` (1 when the link is rel "sponsored"). EPN customids `ce-search-*` and `ce-mcp-*` tie eBay earnings
+  to search.
