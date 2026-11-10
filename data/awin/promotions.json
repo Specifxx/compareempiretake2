@@ -1,7 +1,163 @@
 {
   "publisherId": 3144410,
-  "checkedAt": "2026-11-10T11:14:39.149Z",
+  "checkedAt": "2026-11-10T22:32:29.739Z",
   "promotions": [
+    {
+      "id": 4169199,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED RUBBLE & CREW LINES",
+      "description": "SAVE 20% ON SELECTED RUBBLE & CREW LINES",
+      "start": "2026-11-10T17:08:00.000Z",
+      "end": "2026-11-26T17:07:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169202,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON LOL DOLLS & ACCESSORIES",
+      "description": "SAVE 20% ON LOL DOLLS & ACCESSORIES",
+      "start": "2026-11-10T17:09:00.000Z",
+      "end": "2026-11-26T17:08:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169203,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED SYLVANIAN FAMILES",
+      "description": "SAVE 20% ON SELECTED SYLVANIAN FAMILES",
+      "start": "2026-11-10T17:09:00.000Z",
+      "end": "2026-11-26T17:09:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169206,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED LEGO",
+      "description": "SAVE 20% ON SELECTED LEGO",
+      "start": "2026-11-10T17:11:00.000Z",
+      "end": "2026-11-26T17:10:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169204,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON ALL KINETIC SAND",
+      "description": "SAVE 20% ON ALL KINETIC SAND",
+      "start": "2026-11-10T17:10:00.000Z",
+      "end": "2026-11-26T17:10:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169211,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 25% ON SCHLEICH PLAYSETS",
+      "description": "SAVE 25% ON SCHLEICH PLAYSETS",
+      "start": "2026-11-10T17:12:00.000Z",
+      "end": "2026-11-26T17:11:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169210,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED MR BEAST LINES",
+      "description": "SAVE 20% ON SELECTED MR BEAST LINES",
+      "start": "2026-11-10T17:11:00.000Z",
+      "end": "2026-11-26T17:11:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169209,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON HOW TO TRAIN YOUR DRAGON LINES",
+      "description": "SAVE 20% ON HOW TO TRAIN YOUR DRAGON LINES",
+      "start": "2026-11-10T17:11:00.000Z",
+      "end": "2026-11-26T17:11:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169208,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON MONSTER JAM LINES",
+      "description": "SAVE 20% ON MONSTER JAM LINES",
+      "start": "2026-11-10T17:11:00.000Z",
+      "end": "2026-11-26T17:11:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169207,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED LEGO STAR WARS",
+      "description": "SAVE 20% ON SELECTED LEGO STAR WARS",
+      "start": "2026-11-10T17:11:00.000Z",
+      "end": "2026-11-26T17:11:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169213,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 10% ON ALL ONE FOR FUN VEHICLES",
+      "description": "SAVE 10% ON ALL ONE FOR FUN VEHICLES",
+      "start": "2026-11-10T17:12:00.000Z",
+      "end": "2026-11-26T17:12:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169212,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "3for2 ON ALL PAPO FIGURINES",
+      "description": "3for2 ON ALL PAPO FIGURINES",
+      "start": "2026-11-10T17:12:00.000Z",
+      "end": "2026-11-26T17:12:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169198,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED PAW PATROL LINES",
+      "description": "SAVE 20% ON SELECTED PAW PATROL LINES",
+      "start": "2026-11-10T17:07:00.000Z",
+      "end": "2026-11-26T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
     {
       "id": 3806300,
       "advertiserId": 1205,
@@ -702,6 +858,26 @@
       "end": "2027-01-01T15:59:00.000Z",
       "regions": "all",
       "code": "AFFWELCOME"
+    },
+    {
+      "id": 4165923,
+      "advertiserId": 116255,
+      "type": "promotion",
+      "title": "Vera Wang Lovestruck Eau de Parfum Spray 100ml",
+      "description": "Vera Wang Lovestruck Eau de Parfum Spray 100ml",
+      "start": "2026-11-07T21:26:00.000Z",
+      "end": "2026-11-30T21:23:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4165924,
+      "advertiserId": 116255,
+      "type": "promotion",
+      "title": "Bvlgari The Women's Gift Collection Miniature Perfume Gift Set 4 x 5ml",
+      "description": "Bvlgari The Women's Gift Collection Miniature Perfume Gift Set 4 x 5ml",
+      "start": "2026-11-07T21:28:00.000Z",
+      "end": "2026-11-30T21:27:00.000Z",
+      "regions": "all"
     }
   ]
 }
