@@ -27,7 +27,7 @@ export function AmazonRow({ href, name = "Amazon AU", live, cart, ...p }: Props 
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2 font-semibold">
           {name}
-          <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
+          <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad · Paid link</span>
           {/* The thumbs stop the row's link (StoreVote calls preventDefault). */}
           <StoreVote url={url} name={name} className="font-normal text-ink-mute" />
         </div>
@@ -39,10 +39,9 @@ export function AmazonRow({ href, name = "Amazon AU", live, cart, ...p }: Props 
       </div>
       {live && <AmazonLivePrice text={live.text} at={live.at} zone={live.zone} />}
       {add && <CartAddButton {...add} className="hidden shrink-0 text-ink-mute sm:inline-flex" />}
-      <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
+      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white">
         {live ? "View on Amazon" : "Check Amazon"} <ExternalIcon className="h-3.5 w-3.5" />
       </span>
-      <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
     </a>
   );
 }

@@ -2057,3 +2057,7 @@ the same rule: bot walls, never worked around.
   `storeLink`, so a chain that accepts us on Awin or Impact becomes a labelled paid link by itself. Never ranked, counted as a
   store, in a deal, an alert or a cart. A chain that gets a feed or reader leaves the list.
 - Not done, on purpose: no store page behind a wall is read, no key is lifted from a page's JavaScript, no proxy.
+
+## 2026-11-12 — Paid rows made visible and clickable (owner: "flood the underperforming sites with affiliate links, highly visible")
+
+The owner asked for the paid rows to be easy to see and click on the two sites that earn almost nothing from heavy traffic (Compare Empire, CamCompare). Changes are presentation only: the eBay and Amazon rows and any paid store row now carry a filled button with its action ("Buy on eBay", "Buy on Amazon", "Buy at store") at every width, including phones, where the button used to be a bare icon; the label reads "Ad · Paid link"; the hero's eBay button is filled; CamCompare's "or $X at <store>" line is a button. Unchanged on purpose: every link is rel sponsored, a paid row is never counted as a store, "cheapest" or a deal, commission never decides the order of the store rows, no pop-ups, URLs, titles and metadata are as before.

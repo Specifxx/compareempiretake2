@@ -35,7 +35,7 @@ export function EbayListingRow({ listing, product, money, cheapest, locale, time
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2 font-semibold">
           <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-[#E53238] ring-1 ring-black/10" /> eBay
-          <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad · New</span>
+          <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad · Paid link · New</span>
           {below && <span className="rounded-full bg-save/15 px-2 py-0.5 text-[10px] font-bold text-save">Below the stores</span>}
           {/* The thumbs stop the row's link (StoreVote calls preventDefault). */}
           <StoreVote url={listing.url} name="eBay" className="font-normal text-ink-mute" />
@@ -54,10 +54,9 @@ export function EbayListingRow({ listing, product, money, cheapest, locale, time
         <div className="text-[11px] text-ink-mute">{listing.shipping === undefined ? "+ postage" : listing.shipping === 0 ? "Free postage" : `+ ${money(listing.shipping)} postage`}</div>
       </div>
       {add && <CartAddButton {...add} className="hidden shrink-0 text-ink-mute sm:inline-flex" />}
-      <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
-        Go to eBay <ExternalIcon className="h-3.5 w-3.5" />
+      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white">
+        Buy on eBay <ExternalIcon className="h-3.5 w-3.5" />
       </span>
-      <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
     </a>
   );
 }
@@ -69,15 +68,14 @@ export function EbaySearchRow({ href, product, sellers }: { href: string; produc
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2 font-semibold">
           <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-[#E53238] ring-1 ring-black/10" /> eBay
-          <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
+          <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad · Paid link</span>
           <StoreVote url={href} name="eBay" className="font-normal text-ink-mute" />
         </div>
         <div className="mt-1 text-xs text-ink-soft">New, Buy It Now listings {sellers}, cheapest first</div>
       </div>
-      <span className="hidden items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white sm:inline-flex">
+      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white">
         Search eBay <ExternalIcon className="h-3.5 w-3.5" />
       </span>
-      <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
     </a>
   );
 }
