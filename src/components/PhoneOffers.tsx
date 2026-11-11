@@ -121,6 +121,7 @@ export function PhoneOffers({
               <div className="mt-1 text-xs font-semibold text-save">Save {$((top - variant.bestPrice))} vs dearest store</div>
             )}
           </div>
+          <div className="flex flex-col gap-1.5">
           <a
             href={phone.ebay?.url ?? ebaySearch(mq, { condition: "new", customid: `p-${phone.category}-${phone.slug}-top`, phones: phone.category === "phones", region })}
             target="_blank"
@@ -128,12 +129,14 @@ export function PhoneOffers({
             data-buy="ebay"
             data-buy-product={href}
             data-buy-kind="ebay-top"
-            className="inline-flex shrink-0 items-center gap-2 rounded-lg border border-line bg-bg-card px-3 py-2 text-sm font-semibold transition hover:border-brand/40"
+            className="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-brand px-4 py-2.5 text-sm font-semibold text-brand-ink shadow-sm transition hover:opacity-90"
           >
-            <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#E53238] ring-1 ring-black/10" />
-            {phone.ebay ? <>eBay {$(phone.ebay.price)}</> : "Check eBay"}
-            <span className="rounded-full bg-bg-sunk px-1.5 py-0.5 text-[10px] font-semibold text-ink-soft">Ad</span>
+            <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#E53238] ring-1 ring-white/70" />
+            {phone.ebay ? <>Buy on eBay {$(phone.ebay.price)}</> : "Check eBay"}
+            <ExternalIcon className="h-3.5 w-3.5" />
           </a>
+          <span className="text-center text-[10px] text-ink-mute">Ad · Paid link</span>
+          </div>
           </div>
           {checks[variant.id] && (
             <PriceCheckCard check={checks[variant.id].check} onOpenHistory={() => document.getElementById("history")?.scrollIntoView({ behavior: "smooth", block: "center" })} />
@@ -435,7 +438,7 @@ export function OutrightRow({
           {kind?.kind === "sale" && <span className="rounded-full bg-save/10 px-2 py-0.5 text-[10px] font-semibold text-save" title={`Usually ${$(kind.usual)} at this store`}>Sale · usually {$(kind.usual)}</span>}
           {kind?.kind === "everyday" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft" title="About what this store has charged for the past few weeks">Everyday price</span>}
           {kind?.kind === "up" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft" title={`Usually ${$(kind.usual)} at this store`}>Up from {$(kind.usual)}</span>}
-          {link.paid && <span className="text-[10px] text-ink-mute">Paid link</span>}
+          {link.paid && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Paid link</span>}
           {/* The thumbs stop the row's link (StoreVote calls preventDefault). */}
           <StoreVote url={o.url} name={RETAILERS[o.retailer].name} className="text-ink-mute" />
         </div>
@@ -457,10 +460,10 @@ export function OutrightRow({
         {best && o !== best && o.price > best.price && <div className="text-[11px] text-hot">{$((o.price - best.price))} more than the cheapest</div>}
       </div>
       {add && <CartAddButton {...add} className="hidden shrink-0 text-ink-mute sm:inline-flex" />}
-      <span className="hidden items-center gap-1 rounded-lg bg-brand px-3.5 py-2 text-sm font-semibold text-brand-ink sm:inline-flex">
-        Go to store <ExternalIcon className="h-3.5 w-3.5" />
+      <span className={`${link.paid ? "inline-flex" : "hidden sm:inline-flex"} shrink-0 items-center gap-1 rounded-lg bg-brand px-3.5 py-2 text-sm font-semibold text-brand-ink`}>
+        {link.paid ? "Buy at store" : "Go to store"} <ExternalIcon className="h-3.5 w-3.5" />
       </span>
-      <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />
+      {!link.paid && <ExternalIcon className="h-4 w-4 text-ink-mute sm:hidden" />}
     </a>
   );
 }
