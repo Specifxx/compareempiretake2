@@ -1,6 +1,6 @@
 {
   "publisherId": 3144410,
-  "checkedAt": "2026-11-10T22:32:29.739Z",
+  "checkedAt": "2026-11-11T23:44:04.550Z",
   "promotions": [
     {
       "id": 4169199,
@@ -217,6 +217,16 @@
       "regions": "all"
     },
     {
+      "id": 4170079,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Fellowes Cross Cut Paper Shredder 12C 12 Sheet Shredder",
+      "description": "Was £99.99 Now £54.99 Save £45",
+      "start": "2026-11-11T09:36:00.000Z",
+      "end": "2026-11-30T09:34:00.000Z",
+      "regions": "all"
+    },
+    {
       "id": 4118312,
       "advertiserId": 3326,
       "type": "promotion",
@@ -224,6 +234,26 @@
       "description": "Hurry while stock lasts - perfect Christmas Gift",
       "start": "2026-09-18T08:45:00.000Z",
       "end": "2026-11-30T09:44:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4170544,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Fellowes Powershred LX50 Cross Cut Shedder",
+      "description": "Was £64.99 Now £49.99 Save £15",
+      "start": "2026-11-11T14:15:00.000Z",
+      "end": "2026-11-30T14:14:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4170546,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Rexel Optimum AutoFeed Plus 225M Automatic Micro Cut Paper Shredder",
+      "description": "Was £544.99 Now £399.99 Save £145",
+      "start": "2026-11-11T14:17:00.000Z",
+      "end": "2026-11-30T14:16:00.000Z",
       "regions": "all"
     },
     {
@@ -729,15 +759,37 @@
       "regions": "all"
     },
     {
-      "id": 4157966,
-      "advertiserId": 90791,
+      "id": 4033771,
+      "advertiserId": 80509,
       "type": "voucher",
-      "title": "K-Beauty First - Pre-Black Friday",
-      "description": "Member Exclusive: -18% on $99+ | -15% on $59+",
-      "start": "2026-11-04T03:58:00.000Z",
-      "end": "2026-11-12T03:58:00.000Z",
+      "title": "40% OFF LWR01 Human Presence Sensor",
+      "description": "This promo code cannot be combined with any other discounts or offers—no expiration date.",
+      "start": "2026-07-30T06:17:00.000Z",
+      "end": "2027-04-01T03:59:00.000Z",
       "regions": "all",
-      "code": "SVPBF"
+      "code": "LWR40OFF"
+    },
+    {
+      "id": 4025627,
+      "advertiserId": 80509,
+      "type": "voucher",
+      "title": "Exclusive 10% Off Selected GL.iNet Routers",
+      "description": "Use code GL10OFF at checkout. Valid only on Flint 2 (GL-MT6000), Mudi 7 (GL-E5800), Beryl 7 (GL-MT3600BE), Flint 3 (GL-BE9300), Slate 7 Pro (GL-BE10000), and Slate 7 (GL-BE3600). This offer cannot be combined with other discounts or promoti",
+      "start": "2026-07-27T08:28:00.000Z",
+      "end": "2030-07-27T08:12:00.000Z",
+      "regions": "all",
+      "code": "GL10OFF"
+    },
+    {
+      "id": 3977035,
+      "advertiserId": 80509,
+      "type": "voucher",
+      "title": "Exclusive 8% Savings on All Our New Products",
+      "description": "Exclusive 8% Savings on All Our New Products",
+      "start": "2026-06-30T04:02:00.000Z",
+      "end": "2036-06-30T03:58:00.000Z",
+      "regions": "all",
+      "code": "GLNEW8"
     },
     {
       "id": 4161679,
@@ -751,6 +803,17 @@
       "code": "AFFSINGLE20"
     },
     {
+      "id": 4170123,
+      "advertiserId": 90791,
+      "type": "voucher",
+      "title": "VANA REWARD CLUB Members' Days",
+      "description": "VIP | EXTRA 30% OFF Super Fan | EXTRA 25% OFF Insider | EXTRA 20% OFF",
+      "start": "2026-11-11T10:00:00.000Z",
+      "end": "2026-11-13T15:59:00.000Z",
+      "regions": "all",
+      "code": "SVVRCMD11"
+    },
+    {
       "id": 4156336,
       "advertiserId": 90791,
       "type": "voucher",
@@ -760,6 +823,28 @@
       "end": "2026-11-17T06:31:00.000Z",
       "regions": "all",
       "code": "AFFCEN21"
+    },
+    {
+      "id": 4157966,
+      "advertiserId": 90791,
+      "type": "voucher",
+      "title": "K-Beauty First - Pre-Black Friday",
+      "description": "Member Exclusive: -18% on $99+ | -15% on $59+",
+      "start": "2026-11-04T03:58:00.000Z",
+      "end": "2026-11-26T03:58:00.000Z",
+      "regions": "all",
+      "code": "SVPBF"
+    },
+    {
+      "id": 4170051,
+      "advertiserId": 90791,
+      "type": "voucher",
+      "title": "Nov Sale: UP TO 25% OFF",
+      "description": "Member Exclusive: 25% OFF on $79+ | 18% OFF no MOV | 10% OFF no MOV for guest check out",
+      "start": "2026-11-11T09:29:00.000Z",
+      "end": "2026-11-26T09:28:00.000Z",
+      "regions": "all",
+      "code": "AFF26NOV"
     },
     {
       "id": 4156340,
@@ -877,6 +962,16 @@
       "description": "Bvlgari The Women's Gift Collection Miniature Perfume Gift Set 4 x 5ml",
       "start": "2026-11-07T21:28:00.000Z",
       "end": "2026-11-30T21:27:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4171358,
+      "advertiserId": 116255,
+      "type": "promotion",
+      "title": "Jessica Gift Sets 10 x Full Sized Varnish",
+      "description": "Jessica Limited Gift Sets",
+      "start": "2026-11-11T21:42:00.000Z",
+      "end": "2026-11-30T21:41:00.000Z",
       "regions": "all"
     }
   ]

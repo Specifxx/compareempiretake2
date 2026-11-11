@@ -1,6 +1,6 @@
 {
   "publisherId": 3144410,
-  "checkedAt": "2026-11-10T22:32:25.769Z",
+  "checkedAt": "2026-11-11T23:44:00.782Z",
   "joined": [
     {
       "id": 25687,
@@ -13,6 +13,20 @@
       "currency": "GBP"
     },
     {
+      "id": 80509,
+      "name": "GL Technologies (Hong Kong) Limited",
+      "domains": [
+        "gl-inet.com",
+        "store-us.gl-inet.com",
+        "store-eu.gl-inet.com",
+        "store-uk.gl-inet.com",
+        "store-ca.gl-inet.com",
+        "store.gl-inet.com"
+      ],
+      "region": "US",
+      "currency": "USD"
+    },
+    {
       "id": 1205,
       "name": "Hamleys",
       "domains": [
@@ -21,6 +35,15 @@
       ],
       "region": "GB",
       "currency": "GBP"
+    },
+    {
+      "id": 69786,
+      "name": "Lunzo DE",
+      "domains": [
+        "lunzo.de"
+      ],
+      "region": "DE",
+      "currency": "EUR"
     },
     {
       "id": 123248,
