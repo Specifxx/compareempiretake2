@@ -2035,3 +2035,21 @@ about AU 1,100 / US 1,200 / UK 550 / CA 50 / SG 0, the site's 2,900 unchanged.
   strips `ce-cat-…`, live search `ce-search-<region>`), so riftcompare.com/admin/earnings can split Compare Empire's eBay
   earnings by region (the region is the second part, as on every other site). A page tag that already starts with its
   region keeps it once; a full `ce-…` tag is kept as given.
+
+## 2026-11-11: JB Hi-Fi read on four runners; Google Shopping measured before anything is bought (owner)
+
+Owner: shoppers will not use the site without the big stores, and Impact and Awin approvals are not landing, so find other
+legitimate routes. The audit (this thread's report) found the biggest gap was already ours: **JB Hi-Fi was missing from 13 of
+its 19 categories.** Its per-product pages answer about one a second per address, the daily job's 60-minute budget read
+phones, TVs, monitors, graphics cards, laptops and tablets, and the other thirteen kept week-old files that the three-day
+rule (2026-11-04) then dropped (run of 10 Nov: "time budget reached with 523 of 1,019 products unchecked" for smartwatches,
+then every later category skipped). Harvey Norman (19 days old), Mobileciti and Vodafone (20) are the deliberate removals of
+the same rule: bot walls, never worked around.
+
+- `refresh-jbhifi.yml`: four runners at 14:40 UTC, each its own address and a 75-minute budget, categories split by weight
+  (`shardOf` in `jbhifi.ts`, `tests/jb-shards.test.ts`), one job commits the files. Same pages, same pace per address, the
+  shared 429 pause unchanged. The daily refresh sets `JB_SKIP_FRESH_HOURS=20`, so it reads only a category the shards missed.
+- `scripts/shopping-trial.ts` + `shopping-trial.yml`: a manual trial of DataForSEO's Google Shopping data on the free trial
+  credit (cap US$0.60 by each task's own `cost`). It reports which big stores appear, how often, and whether their prices agree
+  with the stores we read; no price from it reaches a page. Buying data waits on those numbers and the owner's OK.
+- Not done, on purpose: no store page behind a wall is read, no key is lifted from a page's JavaScript, no proxy.

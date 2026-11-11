@@ -51,6 +51,11 @@ async function main() {
         console.log(`${cat}/${retailer}: ${offers.length} offers in ${((Date.now() - t) / 1000).toFixed(0)}s`);
         ok++;
       } catch (e) {
+        // "SKIP: ..." is a store deciding it is already fresh, not a failure.
+        if ((e as Error).message.startsWith("SKIP:")) {
+          console.log(`${cat}/${retailer}: ${(e as Error).message}`);
+          continue;
+        }
         failed++;
         console.error(`${cat}/${retailer}: FAILED — ${(e as Error).message}`);
       }

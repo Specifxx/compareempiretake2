@@ -1,6 +1,8 @@
 import type { CategoryId, RawOffer, RetailerId } from "../../../src/lib/types";
 import { decodeEntities, get, getJson, pool, sleep } from "../../lib/http";
 import { APPLIANCE_IS, APPLIANCE_MIN_PRICE, isAppliance, isApplianceCat } from "../appliances";
+import { existsSync, readFileSync } from "node:fs";
+import { isRetired } from "../../../src/lib/focus";
 
 type Cat = Exclude<CategoryId, "phones">;
 
@@ -401,7 +403,23 @@ async function jbJson<T>(url: string): Promise<T> {
   throw new Error(`429 ${url}`);
 }
 
+/**
+ * Hours since a category's JB file was last written, or Infinity. With JB_SKIP_FRESH_HOURS set (the main daily run),
+ * a category the sharded JB job (refresh-jbhifi.yml) already refreshed is not read again.
+ */
+function fileAgeHours(cat: Cat): number {
+  try {
+    const f = `data/${cat}/raw/jbhifi.json`;
+    if (!existsSync(f)) return Infinity;
+    return (Date.now() - Date.parse(JSON.parse(readFileSync(f, "utf8")).scrapedAt)) / 3_600_000;
+  } catch {
+    return Infinity;
+  }
+}
+const SKIP_FRESH_HOURS = Number(process.env.JB_SKIP_FRESH_HOURS || 0);
+
 async function jbCategory(cat: Cat): Promise<RawOffer[]> {
+  if (SKIP_FRESH_HOURS > 0 && fileAgeHours(cat) < SKIP_FRESH_HOURS) throw new Error(`SKIP: jbhifi ${cat} was refreshed ${fileAgeHours(cat).toFixed(1)}h ago`);
   const urls = (await productUrls()).filter((u) => {
     const h = u.slice(u.lastIndexOf("/") + 1).toLowerCase();
     if (!HANDLES[cat].test(h)) return false;
@@ -457,6 +475,29 @@ async function jbCategory(cat: Cat): Promise<RawOffer[]> {
 // Start at a different category each day, so the time budget never starves the same ones.
 const CATS = Object.keys(HANDLES) as Cat[];
 const start = Math.floor(Date.now() / 86_400_000) % CATS.length;
-export const scrapers: Partial<Record<Cat, () => Promise<RawOffer[]>>> = Object.fromEntries(
-  [...CATS.slice(start), ...CATS.slice(0, start)].map((c) => [c, () => jbCategory(c)]),
-);
+
+/**
+ * JB's per-product reads are rate limited to roughly one a second per address, so one runner finishes about six
+ * categories in an hour and the other thirteen sat on week-old files (dropped after three days: JB was missing from
+ * headphones, speakers, cameras, consoles and more, 2026-11-11). refresh-jbhifi.yml runs JB_SHARD=<i>/<n> on n runners
+ * at once, each its own address and time budget. Weights are the candidate products per category (2026-11-11 log).
+ */
+const WEIGHT: Partial<Record<Cat, number>> = {
+  desktops: 1754, headphones: 1535, laptops: 1379, cameras: 1077, smartwatches: 1019, speakers: 864, tablets: 522,
+  routers: 515, tvs: 430, vacuums: 378, monitors: 368, "coffee-machines": 311, "robot-vacuums": 264,
+  cpus: 262, consoles: 179, soundbars: 111, "graphics-cards": 99, drones: 55,
+};
+export function shardOf(cats: Cat[], shard: number, of: number): Cat[] {
+  const load = Array<number>(of).fill(0);
+  const mine: Cat[] = [];
+  for (const c of [...cats].filter((c) => !isRetired(c)).sort((a, b) => (WEIGHT[b] ?? 300) - (WEIGHT[a] ?? 300) || a.localeCompare(b))) {
+    const i = load.indexOf(Math.min(...load));
+    load[i] += WEIGHT[c] ?? 300;
+    if (i === shard - 1) mine.push(c);
+  }
+  return mine;
+}
+const [shardNo, shardOfN] = (process.env.JB_SHARD ?? "").split("/").map(Number);
+const ordered = [...CATS.slice(start), ...CATS.slice(0, start)];
+const chosen = shardNo >= 1 && shardOfN >= 1 && shardNo <= shardOfN ? shardOf(ordered, shardNo, shardOfN) : ordered;
+export const scrapers: Partial<Record<Cat, () => Promise<RawOffer[]>>> = Object.fromEntries(chosen.map((c) => [c, () => jbCategory(c)]));
