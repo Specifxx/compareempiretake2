@@ -1,0 +1,77 @@
+name: Refresh JB Hi-Fi
+
+# JB Hi-Fi (Australia's biggest electronics chain) rate-limits its per-product pages to about one a second per
+# address, so one runner read six of its nineteen categories in an hour and the rest aged out after three days
+# (2026-11-11: JB was missing from headphones, speakers, cameras, consoles, drones, smartwatches, routers, desktops,
+# CPUs, soundbars, vacuums and coffee machines). Four runners read it side by side, each its own address and its own
+# 75-minute budget, then one job commits the files. Same robots.txt-allowed Shopify product JSON as before, at the
+# same pace per address; never past a 429 (the shared pause in jbhifi.ts still applies).
+# Runs before the daily refresh (which skips any JB category read in the last 20 hours).
+on:
+  schedule:
+    - cron: "40 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: refresh-jbhifi
+
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Read JB Hi-Fi (this runner's categories)
+        env:
+          JB_SHARD: ${{ matrix.shard }}/4
+          JB_BUDGET_MIN: "75"
+        run: npx tsx scripts/scrape-categories.ts jbhifi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: jbhifi-${{ matrix.shard }}
+          path: data/*/raw/jbhifi.json
+          if-no-files-found: ignore
+  commit:
+    needs: read
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: jbhifi-*
+          path: ${{ runner.temp }}/jb
+      - name: Commit the files that were refreshed
+        run: |
+          # Each artifact holds data/<category>/raw/jbhifi.json only for categories its runner finished; a runner that
+          # failed a category left yesterday's file unwritten, so nothing stale is copied over a newer one.
+          n=0
+          for f in $(cd "$RUNNER_TEMP/jb" && find . -path '*/raw/jbhifi.json' | sed 's|^\./[^/]*/||'); do
+            src=$(find "$RUNNER_TEMP/jb" -path "*/$f" | head -1)
+            mkdir -p "$(dirname "$f")" && cp "$src" "$f" && n=$((n+1))
+          done
+          echo "$n category files from the JB runners"
+          git config user.name "compare-empire-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          # No [deploy] marker: prices reach the site with the daily refresh, which rebuilds the catalogues.
+          git commit -m "data: JB Hi-Fi prices $(TZ=Australia/Sydney date +%F)"
+          for i in 1 2 3 4; do
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 10))
+          done
+          exit 1
