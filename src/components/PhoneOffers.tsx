@@ -4,6 +4,7 @@ import { Fragment, useMemo, useState } from "react";
 import Link from "next/link";
 import { marketplacesFor } from "@/lib/marketplaces";
 import { AmazonNote, AmazonRow } from "./AmazonLink";
+import { bigStoresFor } from "@/lib/big-stores";
 import { AMAZON_PRICE_DISCLAIMER } from "./AmazonLivePrice";
 import { amazonLink, amazonStore } from "@/lib/amazon";
 import { EbayListingRow, EbaySearchRow, PIN_OUTLINE } from "./EbayListingRow";
@@ -312,6 +313,7 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
   const ebay = markets.find((m) => m.id === "ebay")!;
   const cid = `p-${phone.category}-${phone.slug}`;
   const phones = phone.category === "phones";
+  const bigStores = bigStoresFor(region, phone.category, mq);
   const more = [
     ...(phone.ebay ? [{ kind: "marketplace-new", href: ebay.url(mq, cid, phones), title: `New on ${ebay.name}`, note: "Every new listing, not just the cheapest" }] : []),
     { kind: "marketplace-refurbished", href: ebaySearch(mq, { condition: "refurbished", customid: `${cid}-refurb`, phones, region }), title: "Refurbished on eBay", note: "Often far cheaper; check the warranty" },
@@ -346,6 +348,23 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
         {amazonHref && <AmazonNote className="mt-1" />}
         {live?.price && <p className="mt-1 text-[11px] text-ink-mute">* Amazon price: {AMAZON_PRICE_DISCLAIMER}</p>}
       </div>
+      )}
+      {compact || part === "rows" || !bigStores.length ? null : (
+        <div className="mt-2.5 rounded-lg border border-line bg-bg-card p-3 sm:p-4">
+          <div className="text-sm font-bold">Also check the big chains</div>
+          <p className="mt-0.5 text-[11px] text-ink-soft">These stores do not let us read their prices, so none is shown here. Each link opens the store&apos;s own search for this product.</p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {bigStores.map((s) => {
+              const l = storeLink(s.url, `bigchain-${phone.category}`);
+              return (
+                <a key={s.name} href={l.href} target="_blank" rel={l.rel} data-buy="bigchain" data-buy-product={product} data-buy-kind={`bigchain-${s.name.toLowerCase().replace(/[^a-z0-9]+/g, "")}`} className="inline-flex items-center gap-1 rounded-xl border border-line px-3 py-2 text-xs font-semibold transition hover:border-brand/40">
+                  Search {s.name} <ExternalIcon className="h-3 w-3" />
+                  {l.paid && <span className="text-[10px] font-normal text-ink-mute">Paid link</span>}
+                </a>
+              );
+            })}
+          </div>
+        </div>
       )}
     </div>
   );

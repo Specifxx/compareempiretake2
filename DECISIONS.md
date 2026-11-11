@@ -2049,7 +2049,11 @@ the same rule: bot walls, never worked around.
 - `refresh-jbhifi.yml`: four runners at 14:40 UTC, each its own address and a 75-minute budget, categories split by weight
   (`shardOf` in `jbhifi.ts`, `tests/jb-shards.test.ts`), one job commits the files. Same pages, same pace per address, the
   shared 429 pause unchanged. The daily refresh sets `JB_SKIP_FRESH_HOURS=20`, so it reads only a category the shards missed.
-- `scripts/shopping-trial.ts` + `shopping-trial.yml`: a manual trial of DataForSEO's Google Shopping data on the free trial
-  credit (cap US$0.60 by each task's own `cost`). It reports which big stores appear, how often, and whether their prices agree
-  with the stores we read; no price from it reaches a page. Buying data waits on those numbers and the owner's OK.
+- **Google Shopping data (DataForSEO) is not used for Compare Empire** (owner, 2026-11-11): the trial harness added the same
+  morning was removed again.
+- **"Also check the big chains"** (`lib/big-stores.ts`, shown on the product page under the marketplaces box, not in the
+  quick view): for a chain whose prices we cannot read (Harvey Norman, Big W, Kmart, Kogan; Walmart, Best Buy, Target, Newegg,
+  B&H; Currys, Argos, John Lewis) a plain link to the store's own search for the product, no price. It goes through
+  `storeLink`, so a chain that accepts us on Awin or Impact becomes a labelled paid link by itself. Never ranked, counted as a
+  store, in a deal, an alert or a cart. A chain that gets a feed or reader leaves the list.
 - Not done, on purpose: no store page behind a wall is read, no key is lifted from a page's JavaScript, no proxy.
