@@ -18,7 +18,7 @@ export function HotLaunches({ items, preorders = [], region }: { items: HotLaunc
           <h2 id="hot-launches" className="font-display text-xl font-bold tracking-tight sm:text-2xl">Hot right now</h2>
         </div>
         <div className="flex shrink-0 flex-wrap justify-end gap-x-4 gap-y-1">
-          {GTA6_REGIONS.includes(region) && <Link prefetch={false} href={withRegion("/gta-6", region)} className="text-sm font-semibold text-brand hover:underline">GTA 6 console prices →</Link>}
+          {GTA6_REGIONS.includes(region) && <Link prefetch={false} href={withRegion("/gta-6", region)} className="chip text-sm font-semibold text-hot">GTA 6 out 19 Nov: console prices →</Link>}
           <Link prefetch={false} href={withRegion("/launches", region)} className="text-sm font-semibold text-brand hover:underline">All launches →</Link>
         </div>
       </div>

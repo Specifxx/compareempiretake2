@@ -8,6 +8,7 @@ import { CATEGORY_GUIDES } from "@/lib/category-guides";
 import { GuideCard } from "@/components/GuideCard";
 import { guidesForCategory } from "@/lib/guides";
 import { SITE } from "@/lib/site";
+import { GTA6_REGIONS } from "@/lib/gta6";
 import { HOME_PATH, money, withXDefault, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById, CATEGORIES, DEPARTMENTS } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
@@ -112,6 +113,7 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
         {siblings.length > 0 && (
           <div className="flex flex-wrap gap-2">
             <Link prefetch={false} href={withRegion(`/deals/${c.id}`, region)} className="chip text-xs font-semibold text-hot">{c.name} deals</Link>
+            {c.id === "consoles" && GTA6_REGIONS.includes(region) && <Link prefetch={false} href={withRegion("/gta-6", region)} className="chip text-xs font-semibold text-hot">GTA 6 console prices</Link>}
             {siblings.map((s) => (
               <Link prefetch={false} key={s.id} href={categoryHref(s.id, region)} className="chip text-xs">{s.name}</Link>
             ))}
