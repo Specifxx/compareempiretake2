@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T03:04:13.532Z",
+ "scrapedAt": "2026-11-11T01:05:27.267Z",
  "offers": [
   {
    "retailer": "us-bloomaudio",
@@ -1023,7 +1023,7 @@
    "price": 899,
    "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/campfire-audio-moonrover-0-thumb.jpg?v=1715708601",
-   "inStock": false,
+   "inStock": true,
    "brand": "Campfire Audio"
   },
   {
@@ -1100,7 +1100,7 @@
    "price": 799,
    "wasPrice": 899,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/cfa-supermoon-uiem-blk-0-thumb.jpg?v=1695136358",
-   "inStock": false,
+   "inStock": true,
    "brand": "Campfire Audio"
   },
   {
@@ -1166,7 +1166,7 @@
    "price": 2699,
    "wasPrice": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/cfa-trifecta-cs-0-thumb.jpg?v=1702592168",
-   "inStock": false,
+   "inStock": true,
    "brand": "Campfire Audio"
   },
   {
@@ -1965,7 +1965,7 @@
    "url": "https://bloomaudio.com/products/fiio-ft13?variant=41737667444811",
    "price": 299.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/fiio-2-ft13-thumb.webp?v=1757531679",
-   "inStock": true,
+   "inStock": false,
    "brand": "FiiO",
    "mpn": "FIO-FT13-NAT"
   },
@@ -3840,7 +3840,7 @@
    "price": 42.49,
    "wasPrice": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/md-pudding-gry-thumb.webp?v=1779302023",
-   "inStock": true,
+   "inStock": false,
    "brand": "MoonDrop"
   },
   {
@@ -3907,6 +3907,16 @@
    "url": "https://bloomaudio.com/products/noble-audio-agis-2?variant=42365243883595",
    "price": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-audio-agis-ii-thumb.webp?v=1741965724",
+   "inStock": true,
+   "brand": "Noble"
+  },
+  {
+   "retailer": "us-bloomaudio",
+   "sku": "NA-ASTRID",
+   "title": "Noble Audio Astrid | True Wireless Hi-Fi Earphones New",
+   "url": "https://bloomaudio.com/products/noble-audio-astrid",
+   "price": 539,
+   "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-1-astrid-thumb.webp?v=1793910990",
    "inStock": true,
    "brand": "Noble"
   },
@@ -4916,7 +4926,7 @@
    "url": "https://bloomaudio.com/products/thieaudio-monarch-mk4?variant=41555721715787",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/thieaudio-monarch-mk4-disco.webp?v=1750952275",
-   "inStock": true,
+   "inStock": false,
    "brand": "Thieaudio"
   },
   {

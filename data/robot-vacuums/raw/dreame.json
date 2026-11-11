@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T02:06:13.693Z",
+ "scrapedAt": "2026-11-11T00:08:03.414Z",
  "offers": [
   {
    "retailer": "dreame",
@@ -10,7 +10,7 @@
    "price": 1699,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/Untitled_design_14.png?v=1793600727",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "dreame",
@@ -34,6 +34,16 @@
   },
   {
    "retailer": "dreame",
+   "sku": "DRE-L40UVE",
+   "brand": "Dreame",
+   "title": "Dreame L40 Ultra VE Robot Vacuum Cleaner with Dual Scrubbing Mops for carpet and hard floor cleaning",
+   "url": "https://www.dreame.com.au/products/dreame-l40-ultra-ve",
+   "price": 1799,
+   "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/Untitled_design_7_f883a81f-fad3-4996-9f4d-a85a4be787c1.png?v=1793600131",
+   "inStock": true
+  },
+  {
+   "retailer": "dreame",
    "sku": "DRE-L40SPU",
    "brand": "Dreame",
    "title": "Dreame L40S Pro Ultra Robot Vacuum and Mop with Self-Cleaning and Auto-Empty Dock",
@@ -42,6 +52,17 @@
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/L40SProUltra--total-top-Photoroom.png?v=1792640245",
    "inStock": false
+  },
+  {
+   "retailer": "dreame",
+   "sku": "DRE-L50U",
+   "brand": "Dreame",
+   "title": "Dreame L50 Ultra Robot Vacuum Cleaner with Auto Mop Self-Cleaning with 75°C Hot Water",
+   "url": "https://www.dreame.com.au/products/dreame-l50-ultra-robot-vacuum-cleaner",
+   "price": 999,
+   "wasPrice": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/1---_2asmhdvagjdvc.jpg?v=1787309661",
+   "inStock": true
   },
   {
    "retailer": "dreame",
@@ -70,7 +91,6 @@
    "title": "Dreame Matrix10 Ultra Robot Vacuum Cleaner with Multi-Mop Switching Technology",
    "url": "https://www.dreame.com.au/products/dreame-matrix10-ultra-robot-vacuum-cleaner",
    "price": 3499,
-   "wasPrice": 3999,
    "image": "https://cdn.shopify.com/s/files/1/0565/2401/3739/files/Untitled_design_17.png?v=1793601021",
    "inStock": true
   },

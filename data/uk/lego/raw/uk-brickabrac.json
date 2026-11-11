@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T03:16:04.146Z",
+ "scrapedAt": "2026-11-11T01:17:52.484Z",
  "offers": [
   {
    "retailer": "uk-brickabrac",
@@ -582,7 +582,7 @@
    "price": 80,
    "wasPrice": 114.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/products/71386-12.jpg?v=1742159713",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "71386"
   },
@@ -813,7 +813,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-77247-speed-champions-kick-sauber-f1-team-c44-race-car-retired-set",
    "price": 47.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/77247_Box1_v29.png?v=1774534935",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77247"
   },
@@ -1064,7 +1064,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-architecture-21060-himeji-castle",
    "price": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/21060_alt1.jpg?v=1742161001",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21060"
   },
@@ -1097,7 +1097,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-art-31212-the-milky-way-galaxy",
    "price": 152.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/31212_alt1.jpg?v=1766257578",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31212"
   },
@@ -1369,6 +1369,72 @@
   },
   {
    "retailer": "uk-brickabrac",
+   "sku": "11532",
+   "title": "LEGO Botanicals 11532 Buttercup Flowers",
+   "url": "https://www.brickabrac.co.uk/products/lego-botanicals-11532-buttercup-flowers",
+   "price": 4.49,
+   "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/0_box.jpg?v=1794354904",
+   "inStock": false,
+   "brand": "LEGO",
+   "mpn": "11532"
+  },
+  {
+   "retailer": "uk-brickabrac",
+   "sku": "11533",
+   "title": "LEGO Botanicals 11533 Mallow Flowers",
+   "url": "https://www.brickabrac.co.uk/products/lego-botanicals-11533-mallow-flowers",
+   "price": 4.49,
+   "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/0_box_3162e37d-ba6a-49b2-a0d1-ffe7013829f4.jpg?v=1794354904",
+   "inStock": false,
+   "brand": "LEGO",
+   "mpn": "11533"
+  },
+  {
+   "retailer": "uk-brickabrac",
+   "sku": "11534",
+   "title": "LEGO Botanicals 11534 Bluebell Flowers",
+   "url": "https://www.brickabrac.co.uk/products/lego-botanicals-11534-bluebell-flowers",
+   "price": 4.49,
+   "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/0_box_1a3a2fbe-8ab5-4fae-a421-4ceb37f92dc7.jpg?v=1794354905",
+   "inStock": false,
+   "brand": "LEGO",
+   "mpn": "11534"
+  },
+  {
+   "retailer": "uk-brickabrac",
+   "sku": "11535",
+   "title": "LEGO Botanicals 11535 Sweet Pea Flowers",
+   "url": "https://www.brickabrac.co.uk/products/lego-botanicals-11535-sweet-pea-flowers",
+   "price": 4.49,
+   "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/0_box_85b37d65-378d-4a66-90b4-ef4798ec6599.jpg?v=1794354905",
+   "inStock": false,
+   "brand": "LEGO",
+   "mpn": "11535"
+  },
+  {
+   "retailer": "uk-brickabrac",
+   "sku": "11536",
+   "title": "LEGO Botanicals 11536 Nasturtium Flowers",
+   "url": "https://www.brickabrac.co.uk/products/lego-botanicals-11536-nasturtium-flowers",
+   "price": 4.49,
+   "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/0_box_2729edb9-572b-4759-9493-7af23eb27b54.jpg?v=1794354904",
+   "inStock": false,
+   "brand": "LEGO",
+   "mpn": "11536"
+  },
+  {
+   "retailer": "uk-brickabrac",
+   "sku": "11537",
+   "title": "LEGO Botanicals 11537 Chicory Flowers",
+   "url": "https://www.brickabrac.co.uk/products/lego-botanicals-11537-chicory-flowers",
+   "price": 4.49,
+   "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/0_box_f3e35460-5100-47f0-b4de-4965cc361006.jpg?v=1794354905",
+   "inStock": false,
+   "brand": "LEGO",
+   "mpn": "11537"
+  },
+  {
+   "retailer": "uk-brickabrac",
    "sku": "40461",
    "title": "LEGO Botanicals 40461 Tulips | Retired LEGO Set",
    "url": "https://www.brickabrac.co.uk/products/lego-botanicals-40461-tulips-retired-lego-set",
@@ -1407,7 +1473,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-brickheadz-40466-chinese-new-year-pandas",
    "price": 19.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/40466_alt1.jpg?v=1742159850",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40466"
   },
@@ -1507,7 +1573,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-brickheadz-40673-spring-festival-mickey-mouse",
    "price": 13.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/40673_png.jpg?v=1787322131",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40673"
   },
@@ -1540,7 +1606,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-brickheadz-dumbo-40792-disney-collectible-figure",
    "price": 13.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/40792_boxprod_v39_en-gb.jpg?v=1777640477",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40792"
   },
@@ -2360,7 +2426,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-disney-43249-stitch",
    "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/43249_boxprod_v39.png?v=1791456196",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "43249"
   },
@@ -2415,7 +2481,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-disney-43301-toy-story-slinky-dog-bookends",
    "price": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/43301_55294.jpg?v=1780666392",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "43301"
   },
@@ -2994,7 +3060,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-harry-potter-30435-build-your-own-hogwarts-castle-polybag",
    "price": 3.49,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/products/30435-1.png?v=1742159842",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "30435"
   },
@@ -3527,7 +3593,7 @@
    "price": 49.99,
    "wasPrice": 64.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/21308_alt1.jpg?v=1790859701",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21308"
   },
@@ -3715,7 +3781,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-jurassic-world-30390-dinosaur-market-polybag",
    "price": 3.49,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/products/30390-2.jpg?v=1729083851",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "30390"
   },
@@ -3805,7 +3871,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-marvel-30652-dr-stranges-interdimensional-portal-polybag",
    "price": 3.49,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/products/30652-1.jpg?v=1727267048",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "30652"
   },
@@ -3952,7 +4018,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-marvel-76340-advent-calendar-2026",
    "price": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/box_e9360fce-5a18-440b-95c8-4301de12adfe.jpg?v=1794092686",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76340"
   },
@@ -4097,7 +4163,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-marvel-superheroes-30679-venom-street-bike-polybag",
    "price": 3.49,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/30679-1.jpg?v=1729517077",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "30679"
   },
@@ -4475,7 +4541,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-pokemon-72151-eevee",
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/72151_03343.jpg?v=1780670049",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "72151"
   },
@@ -4740,7 +4806,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-speed-champion-77239-porsche-911-gt3-rs",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/77239_box1_v39.jpg?v=1762786828",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77239"
   },
@@ -4962,7 +5028,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-speed-champions-77237-dodge-challenger-srt-hellcat",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/77237_boxprod_v39.jpg?v=1762786825",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77237"
   },
@@ -5488,7 +5554,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-star-wars-75438-yoda-bust",
    "price": 32.99,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/files/75438_21498.jpg?v=1780991728",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75438"
   },
@@ -6011,7 +6077,7 @@
    "url": "https://www.brickabrac.co.uk/products/lego-the-batman-30455-batmobile-polybag",
    "price": 3.49,
    "image": "https://cdn.shopify.com/s/files/1/0209/2978/products/30455-1.jpg?v=1729064465",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "30455"
   },

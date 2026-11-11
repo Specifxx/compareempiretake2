@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T03:19:44.421Z",
+ "scrapedAt": "2026-11-11T01:21:55.263Z",
  "offers": [
   {
    "retailer": "uk-dell",
@@ -35,6 +35,17 @@
   },
   {
    "retailer": "uk-dell",
+   "sku": "dellplus14laptopdb14250",
+   "brand": "Dell",
+   "title": "Dell 14 Plus Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/dellplus14laptopdb14250",
+   "price": 899,
+   "image": "https://i.dell.com/assetlink/img/en/laptop-dell-db14250nt-fpr-laptop-bl-gallery-1-dl1evkv-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1018&qlt=100,0&resMode=sharp2&size=1018,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
    "sku": "dell14sds14270",
    "brand": "Dell",
    "title": "Dell 14S Laptop",
@@ -52,6 +63,17 @@
    "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/dell15laptopdc15250",
    "price": 519,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell/dell-15-intel-3530/media-gallery/laptop-dell-dc15250nt-bk-plastic-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1254&qlt=100,0&resMode=sharp2&size=1254,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "dell15d15261",
+   "brand": "Dell",
+   "title": "Dell 15 Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/dell15d15261",
+   "price": 723.6,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-d15261-platinum-hd-rgb-silver-gallery-1-dl119nuh-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1035&qlt=100,0&resMode=sharp2&size=1035,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -88,6 +110,17 @@
   },
   {
    "retailer": "uk-dell",
+   "sku": "dell16laptopdc16250",
+   "brand": "Dell",
+   "title": "Dell 16 Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/dell16laptopdc16250",
+   "price": 749,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell/16250/media-gallery/carbon-plastic/non-fpr/notebook-dc16250-nt-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1055&qlt=100,0&resMode=sharp2&size=1055,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
    "sku": "dc16250_fixed_03",
    "brand": "Dell",
    "title": "Dell 16 Laptop - Intel Core 5 120U, 16 GB DDR5, 512 GB SSD, 16\" Non Touch FHD+ (1920x1200)",
@@ -95,6 +128,17 @@
    "price": 3799,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell/16250/media-gallery/carbon-plastic/non-fpr/notebook-dc16250-nt-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1055&qlt=100,0&resMode=sharp2&size=1055,804",
    "inStock": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "dellplus162n1laptopdb06250",
+   "brand": "Dell",
+   "title": "Dell 16 Plus 2-in-1 Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/dellplus162n1laptopdb06250",
+   "price": 899,
+   "image": "https://i.dell.com/assetlink/img/en/notebook-db06250t-bl-gallery-5-dl1ezf5-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1216&qlt=100,0&resMode=sharp2&size=1216,804",
+   "inStock": true,
+   "fromPrice": true
   },
   {
    "retailer": "uk-dell",
@@ -131,12 +175,45 @@
   },
   {
    "retailer": "uk-dell",
+   "sku": "dellproplus13laptoppb13250",
+   "brand": "Dell",
+   "title": "Dell Pro 13 Plus Laptop or 2-in-1",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/dellproplus13laptoppb13250",
+   "price": 1791.6,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro-plus/pb13250/media-gallery/pb13250-4mm-mipi/laptop-dell-pro-pb13250nt-gy-4mm-mipi-5mp-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1344&qlt=100,0&resMode=sharp2&size=1344,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
    "sku": "dellproplus14laptoppb14250",
    "brand": "Dell",
    "title": "Dell Pro 14 Plus Laptop or 2-in-1",
    "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/dellproplus14laptoppb14250",
    "price": 1663.2,
    "image": "https://i.dell.com/assetlink/img/en/laptop-dellpro-pb14520nt-gy-80mm-wlan-gallery-1-dl1evog-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1153&qlt=100,0&resMode=sharp2&size=1153,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "dellpropremium14laptoppa14250",
+   "brand": "Dell",
+   "title": "Dell Pro 14 Premium Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/dellpropremium14laptoppa14250",
+   "price": 1809.6,
+   "image": "https://i.dell.com/assetlink/img/en/notebook-14-pa14250-nt-gy-entry-panel-plastic-bezel-wlan-cn-no-copilot-gallery-1-dl1107ei-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1163&qlt=100,0&resMode=sharp2&size=1163,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "dellproessential15laptoppv15250",
+   "brand": "Dell",
+   "title": "Dell Pro 15 Essential Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/dellproessential15laptoppv15250",
+   "price": 934.8,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro/pv15250/media-gallery/notebook-pv15250-nt-laptop-bk-plastic-gallery-1.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1254&qlt=100,0&resMode=sharp2&size=1254,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -170,6 +247,61 @@
    "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/xps13dx13260",
    "price": 886.45,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-dx13260/media-gallery/sky/laptop-xps-13-sky-dx13260-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1043&qlt=100,0&resMode=sharp2&size=1043,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "xps139350",
+   "brand": "Dell",
+   "title": "Dell XPS 13 Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/xps139350",
+   "price": 1252.52,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9350/media-gallery/platinum/notebook-xps-13-9350-t-oled-sl-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1399&qlt=100,0&resMode=sharp2&size=1399,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "xps139345",
+   "brand": "Dell",
+   "title": "Dell XPS 13 Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/xps139345",
+   "price": 1353.32,
+   "image": "https://i.dell.com/assetlink/img/en/notebook-xps-13-9345-t-silver-gallery-2-dl1f09x-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1356&qlt=100,0&resMode=sharp2&size=1356,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "xps14da14250",
+   "brand": "Dell",
+   "title": "Dell XPS 14 Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/xps14da14250",
+   "price": 1957.23,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-premium/da14250/media-gallery/platinum/touch/notebook-dell-premium-da14250t-sl-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1086&qlt=100,0&resMode=sharp2&size=1086,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "xps14da14260",
+   "brand": "Dell",
+   "title": "Dell XPS 14 Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/xps14da14260",
+   "price": 2038.45,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/images/products/laptops-and-2-in-1s/xps/14-da14260-touch/dell-da14260t-laptop-c-15000ff100-gy-oled.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1076&qlt=100,0&resMode=sharp2&size=1076,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "xps16da16250",
+   "brand": "Dell",
+   "title": "Dell XPS 16 Laptop",
+   "url": "https://www.dell.com/en-gb/shop/laptop-computers/spd/xps16da16250",
+   "price": 2265.03,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-premium/da16250/media-gallery/laptop-dell-da16250t-sl-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1108&qlt=100,0&resMode=sharp2&size=1108,804",
    "inStock": true,
    "fromPrice": true
   }

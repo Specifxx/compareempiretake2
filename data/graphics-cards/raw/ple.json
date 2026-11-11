@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T02:12:13.211Z",
+ "scrapedAt": "2026-11-11T00:14:09.111Z",
  "offers": [
   {
    "retailer": "ple",
@@ -310,6 +310,17 @@
    "price": 3199,
    "image": "https://plecom.imgix.net/iil-415145-672024.jpg?w=600&h=600",
    "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "679013",
+   "title": "ASUS GeForce RTX 5090 ROG Astral OC 32GB GDDR7 (White)",
+   "brand": "ASUS",
+   "mpn": "ROG-ASTRAL-RTX5090-O32G-WHITE",
+   "url": "https://www.ple.com.au/products/679013/asus-geforce-rtx-5090-rog-astral-oc-32gb-gddr7-white",
+   "price": 12999,
+   "image": "https://plecom.imgix.net/iil-446158-679013.jpg?w=600&h=600",
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -715,18 +726,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "672552",
-   "title": "Gigabyte Radeon RX 9070 Gaming OC 16GB GDDR6",
-   "brand": "Gigabyte",
-   "mpn": "GV-R9070GAMING OC-16GD",
-   "url": "https://www.ple.com.au/products/672552/gigabyte-radeon-rx-9070-gaming-oc-16gb-gddr6",
-   "price": 1099,
-   "wasPrice": 1409,
-   "image": "https://plecom.imgix.net/iil-422695-672552.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "685112",
    "title": "Gigabyte Radeon RX 9070 GRE Gaming OC 12GB GDDR6",
    "brand": "Gigabyte",
@@ -803,7 +802,7 @@
    "price": 529,
    "wasPrice": 649,
    "image": "https://plecom.imgix.net/iil-436251-677105.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

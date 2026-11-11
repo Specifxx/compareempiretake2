@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T03:05:53.223Z",
+ "scrapedAt": "2026-11-11T01:07:10.661Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -437,11 +437,23 @@
    "sku": "42161226252336",
    "title": "Canon EOS R6 Mark II Mirrorless Camera with Canon RF 24-70mm f/2.8L IS USM Lens",
    "url": "https://www.focuscamera.com/products/canon-caer622470-cameras-mirrorless-cameras",
-   "price": 4899,
+   "price": 4399,
+   "wasPrice": 4899,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3177447.jpg?v=1751970461",
    "inStock": true,
    "brand": "CANON USA, INC.",
    "mpn": "CAER622470"
+  },
+  {
+   "retailer": "us-focuscamera",
+   "sku": "51043896983600",
+   "title": "Canon EOS R6 Mark III Full Frame Mirrorless Camera with Cropping Guide Firmware",
+   "url": "https://www.focuscamera.com/products/canon-7084c088-cameras-mirrorless-cameras",
+   "price": 2919,
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3688573.jpg?v=1794259249",
+   "inStock": true,
+   "brand": "CANON USA, INC.",
+   "mpn": "7084C088"
   },
   {
    "retailer": "us-focuscamera",
@@ -577,7 +589,8 @@
    "sku": "50838990487600",
    "title": "Canon EOS R8 Mirrorless Camera with Canon RF 15-35mm f/2.8L IS USM Wide-Angle Lens",
    "url": "https://www.focuscamera.com/products/canon-caer81535k-cameras-mirrorless-cameras",
-   "price": 4249,
+   "price": 3599,
+   "wasPrice": 4249,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3177450.jpg?v=1792415638",
    "inStock": false,
    "brand": "CANON USA, INC.",
@@ -588,7 +601,8 @@
    "sku": "50838990520368",
    "title": "Canon EOS R8 Mirrorless Camera with Canon RF 70-200mm f/2.8L IS USM Lens",
    "url": "https://www.focuscamera.com/products/canon-caer87020k-cameras-mirrorless-cameras",
-   "price": 4649,
+   "price": 3999,
+   "wasPrice": 4649,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3177451.jpg?v=1792415638",
    "inStock": false,
    "brand": "CANON USA, INC.",
@@ -673,7 +687,7 @@
    "url": "https://www.focuscamera.com/products/canon-3638c006-cameras-point-shoot-cameras",
    "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3676235.jpg?v=1791381318",
-   "inStock": true,
+   "inStock": false,
    "brand": "CANON USA, INC.",
    "mpn": "3638C006"
   },
@@ -993,7 +1007,7 @@
    "price": 449,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3514821.jpg?v=1758241724",
-   "inStock": false,
+   "inStock": true,
    "brand": "FUJIFILM North America Corp.",
    "mpn": "16954112"
   },
@@ -1017,7 +1031,7 @@
    "price": 449,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3514805.jpg?v=1758241680",
-   "inStock": false,
+   "inStock": true,
    "brand": "FUJIFILM North America Corp.",
    "mpn": "16954071"
   },
@@ -1578,17 +1592,6 @@
   },
   {
    "retailer": "us-focuscamera",
-   "sku": "42170102054960",
-   "title": "GoPro HERO10 Black Action Camera",
-   "url": "https://www.focuscamera.com/products/gopro-chdhx-101-video-cameras-action-cameras",
-   "price": 299.99,
-   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3399989.jpg?v=1752228217",
-   "inStock": false,
-   "brand": "D AND H DISTRIBUTING CO",
-   "mpn": "CHDHX-101"
-  },
-  {
-   "retailer": "us-focuscamera",
    "sku": "43085874102320",
    "title": "GoPro LIT Hero 4K60 Ultra HD 12MP Waterproof Action Camera with Built-in Light",
    "url": "https://www.focuscamera.com/products/gopro-chdhf-132-at-video-cameras-action-cameras",
@@ -1979,7 +1982,7 @@
    "url": "https://www.focuscamera.com/products/kodak-fz55rd-cameras-point-shoot-cameras",
    "price": 159.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/2990782.jpg?v=1755529671",
-   "inStock": false,
+   "inStock": true,
    "brand": "JK Imaging, LTD",
    "mpn": "FZ55RD"
   },
@@ -1988,7 +1991,7 @@
    "sku": "42320326524976",
    "title": "Kodak PixPro FZ45 Friendly Zoom 16MP 1080p Full HD Digital Camera (Pastel Pink)",
    "url": "https://www.focuscamera.com/products/kodak-fz45pk-cameras-point-shoot-cameras",
-   "price": 119.99,
+   "price": 129.99,
    "wasPrice": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/ad5a0ce1fbceb81bbccd24e14628b1ee2055dae7a084f5a8c578164cbe554ad9-05dd987cdde12be5.jpg?v=1772477027",
    "inStock": true,
@@ -2391,7 +2394,7 @@
    "price": 796.95,
    "wasPrice": 1096.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3313147.jpg?v=1751589594",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon Inc.",
    "mpn": "1781-NIKON"
   },
@@ -3510,7 +3513,7 @@
    "url": "https://www.focuscamera.com/products/panasonic-dc-l10k-cameras-point-shoot-cameras",
    "price": 1497.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3628787.jpg?v=1778612506",
-   "inStock": true,
+   "inStock": false,
    "brand": "PANASONIC CORPORATION OF N.A.",
    "mpn": "DC-L10K"
   },
@@ -4079,7 +4082,7 @@
    "url": "https://www.focuscamera.com/products/sony-ilce6700mb-cameras-mirrorless-cameras",
    "price": 1898,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3282377.jpg?v=1751618348",
-   "inStock": true,
+   "inStock": false,
    "brand": "TD Synnex - Sony",
    "mpn": "ILCE6700MB"
   },
@@ -4628,8 +4631,7 @@
    "sku": "42728582152240",
    "title": "Xtra Edge Pro Action Camera with Rugged Exterior and 4K Video Resolution",
    "url": "https://www.focuscamera.com/products/xtra-edge-cpos0000055801-video-cameras-action-cameras",
-   "price": 269.99,
-   "wasPrice": 299.99,
+   "price": 299.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3587444.jpg?v=1769526495",
    "inStock": true,
    "brand": "Jovistar Inc.",

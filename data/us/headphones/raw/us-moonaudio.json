@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T03:07:56.857Z",
+ "scrapedAt": "2026-11-11T01:09:26.374Z",
  "offers": [
   {
    "retailer": "us-moonaudio",
@@ -658,6 +658,7 @@
    "title": "HIFIMan Ananda Nano Headphones",
    "url": "https://www.moon-audio.com/products/ananda-nano-headphones",
    "price": 319,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/Main__76841.1686055598.1280.1280.jpg?v=1719255091",
    "inStock": true,
    "brand": "HIFIMAN"
@@ -668,6 +669,7 @@
    "title": "HIFIMan Arya Organic Headphones",
    "url": "https://www.moon-audio.com/products/arya-organic-headphones",
    "price": 769,
+   "wasPrice": 979,
    "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/HIFIMAN_Arya_Organic-5__66590.1699390918.1280.1280.jpg?v=1719255098",
    "inStock": true,
    "brand": "HIFIMAN"
@@ -678,6 +680,7 @@
    "title": "HIFIMan Arya Stealth Magnets Headphones",
    "url": "https://www.moon-audio.com/products/hifiman-arya-stealth-magnets-2021-planar-magnetic-headphones",
    "price": 599,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/hifiman-arya-stealth-main-01__48865.1684328816.1280.1280.png?v=1719252495",
    "inStock": true,
    "brand": "HIFIMAN"
@@ -695,6 +698,18 @@
   },
   {
    "retailer": "us-moonaudio",
+   "sku": "HE1000V4-stealth-1",
+   "title": "HIFIMan HE1000 Stealth Headphones (latest model)",
+   "url": "https://www.moon-audio.com/products/hifiman-he1000-headphones",
+   "price": 949,
+   "wasPrice": 1119,
+   "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/HIFIMAN_HE1000_V2-2__60117.1699904924.1280.1280.jpg?v=1719247354",
+   "inStock": true,
+   "brand": "HIFIMAN",
+   "mpn": "HE1000V4-stealth-1"
+  },
+  {
+   "retailer": "us-moonaudio",
    "sku": "HE1000-UNVEILED",
    "title": "HIFIMan HE1000 Unveiled Planar Magnetic Headphones",
    "url": "https://www.moon-audio.com/products/he1000-unveiled-planar-magnetic-headphones",
@@ -707,21 +722,11 @@
   },
   {
    "retailer": "us-moonaudio",
-   "sku": "HE1000V4-stealth-1",
-   "title": "HIFIMan HE1000 V4 Headphones - Stealth Magnet Edition",
-   "url": "https://www.moon-audio.com/products/hifiman-he1000-headphones",
-   "price": 949,
-   "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/HIFIMAN_HE1000_V2-2__60117.1699904924.1280.1280.jpg?v=1719247354",
-   "inStock": true,
-   "brand": "HIFIMAN",
-   "mpn": "HE1000V4-stealth-1"
-  },
-  {
-   "retailer": "us-moonaudio",
    "sku": "HiFiMan-HE1000se",
    "title": "HIFIMan HE1000se Headphones",
    "url": "https://www.moon-audio.com/products/hifiman-he1000se-planar-headphones",
    "price": 1699,
+   "wasPrice": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/hifiman-he1000se_06__95598.1675776144.1280.1280.jpg?v=1719249109",
    "inStock": true,
    "brand": "HIFIMAN",
@@ -732,7 +737,7 @@
    "sku": "hifiman_susvara",
    "title": "HIFIMan SUSVARA Headphones",
    "url": "https://www.moon-audio.com/products/hifiman-susvara-headphones",
-   "price": 6000,
+   "price": 5999,
    "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/hifiman-susvara-main-01__72943.1680189300.1280.1280.png?v=1719248245",
    "inStock": true,
    "brand": "HIFIMAN"

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T02:17:06.449Z",
+ "scrapedAt": "2026-11-11T00:18:13.067Z",
  "offers": [
   {
    "retailer": "thegoodguys",
@@ -43,6 +43,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100747_1093389.png?v=1789008710&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "MKFT4XA",
+   "brand": "Apple"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "apple-airpods-max-2-midnight-mhwk4zaa",
+   "title": "Apple AirPods Max 2 - Midnight",
+   "url": "https://www.thegoodguys.com.au/apple-airpods-max-2-midnight-mhwk4zaa",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098579_1054254.png?v=1776639231&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "MHWK4ZAA",
    "brand": "Apple"
   },
   {
@@ -302,16 +313,6 @@
    "url": "https://www.thegoodguys.com.au/bose-quietcomfort-ultra-headphones-sandstone-880066-0300",
    "price": 494,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50089389_897520.png?v=1776230936&width=284&height=284&quality=88",
-   "inStock": true,
-   "brand": "Bose"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "bose-quietcomfort-ultra-headphones-2nd-gen-890101-0100",
-   "title": "Bose QuietComfort Ultra Headphones 2nd Gen",
-   "url": "https://www.thegoodguys.com.au/bose-quietcomfort-ultra-headphones-2nd-gen-890101-0100",
-   "price": 699,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096674_1021187.png?v=1776233363&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Bose"
   },
@@ -777,16 +778,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "jbl-tune-530bt-wireless-on-ear-headphones-blue-6671174",
-   "title": "JBL Tune 530BT Wireless Headphones - Blue",
-   "url": "https://www.thegoodguys.com.au/jbl-tune-530bt-wireless-on-ear-headphones-blue-6671174",
-   "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097722_1043842.png?v=1776233502&width=284&height=284&quality=88",
-   "inStock": true,
-   "brand": "JBL"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "jbl-tune-680-nc-headphones-6686373",
    "title": "JBL Tune 680 NC Headphones",
    "url": "https://www.thegoodguys.com.au/jbl-tune-680-nc-headphones-6686373",
@@ -894,17 +885,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098623_1062633.png?v=1777866145&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "A10600116",
-   "brand": "Nothing"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "nothing-ear-a10600061",
-   "title": "Nothing Ear",
-   "url": "https://www.thegoodguys.com.au/nothing-ear-a10600061",
-   "price": 249,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098625_1062640.png?v=1777866107&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "A10600061",
    "brand": "Nothing"
   },
   {
@@ -1395,17 +1375,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "sony-on-ear-headphones-mdrzx110b",
-   "title": "Sony MDR-ZX110 Headphones",
-   "url": "https://www.thegoodguys.com.au/sony-on-ear-headphones-mdrzx110b",
-   "price": 27,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50045066_480482.png?v=1776233397&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "MDRZX110B",
-   "brand": "Sony"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "sony-on-ear-noise-cancelling-headphones-mdrzx110nc",
    "title": "Sony On Ear Noise Cancelling Headphones",
    "url": "https://www.thegoodguys.com.au/sony-on-ear-noise-cancelling-headphones-mdrzx110nc",
@@ -1534,6 +1503,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094429_950949.png?v=1776231670&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "WFC710NW",
+   "brand": "Sony"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "sony-wh1000xm4c-noise-cancelling-wireless-headphones-wh1000xm4cb",
+   "title": "Sony WH-1000XM4C Noise Cancelling Wireless Headphones - Black",
+   "url": "https://www.thegoodguys.com.au/sony-wh1000xm4c-noise-cancelling-wireless-headphones-wh1000xm4cb",
+   "price": 449,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100644_1092268.png?v=1788840792&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "WH1000XM4CB",
    "brand": "Sony"
   },
   {

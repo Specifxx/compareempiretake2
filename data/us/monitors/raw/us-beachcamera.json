@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T03:04:41.499Z",
+ "scrapedAt": "2026-11-11T01:05:53.592Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -546,7 +546,7 @@
    "price": 459,
    "wasPrice": 516.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1117106_1_f041c540-6d3e-403c-9e2b-a723f995fd84.jpg?v=1790122240",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dell",
    "mpn": "DELU2724D"
   },
@@ -883,7 +883,7 @@
    "url": "https://www.beachcamera.com/products/lenovo-p27q40-27-monitor-hdmi",
    "price": 365.74,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1204650_1.jpg?v=1793621383",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lenovo",
    "mpn": "LN64A7GAR6UZ"
   },
@@ -1223,7 +1223,7 @@
    "price": 169.99,
    "wasPrice": 199.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1200385_1_dde0809b-3efa-4a9c-9894-863fe4f7487c.jpg?v=1789689166",
-   "inStock": false,
+   "inStock": true,
    "mpn": "LG27GS75QB"
   },
   {
@@ -1643,7 +1643,7 @@
    "price": 899.99,
    "wasPrice": 1499.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1126386_1_715134fc-c5ee-4fc2-ac0b-2fc87ada2dd4.jpg?v=1790125804",
-   "inStock": false,
+   "inStock": true,
    "mpn": "LG39GX900AB"
   },
   {
@@ -1706,7 +1706,7 @@
    "url": "https://www.beachcamera.com/products/lg-45-ultragear-oled-wqhd-240hz-800r-curved-gaming-monitor-with-webos",
    "price": 1199.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1196990_1.jpg?v=1782376253",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LG45GX90SAB"
   },
   {
@@ -1858,7 +1858,7 @@
    "price": 923.94,
    "wasPrice": 1108.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1113178_1.jpg?v=1793626168",
-   "inStock": true,
+   "inStock": false,
    "mpn": "MSIMAG321UPQDOLED"
   },
   {
@@ -2130,7 +2130,8 @@
    "sku": "SAMLS32D396GANXZA",
    "title": "Samsung 32\" S3 (S39GD) Series FHD 100Hz Curved Monitor (LS32FM803UNXZA)",
    "url": "https://www.beachcamera.com/products/samsung-32-s3-s39gd-series-fhd-100hz-curved-monitor-white-ls32fm803unxza",
-   "price": 249.99,
+   "price": 189.99,
+   "wasPrice": 249.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1206758_1.jpg?v=1785943021",
    "inStock": true,
    "brand": "Samsung",

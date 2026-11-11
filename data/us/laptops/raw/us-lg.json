@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T03:07:41.163Z",
+ "scrapedAt": "2026-11-11T01:09:27.632Z",
  "offers": [
   {
    "retailer": "us-lg",
@@ -54,7 +54,7 @@
    "url": "https://www.lg.com/us/laptops/lg-14z90u-g.au85u1-gram-laptop",
    "price": 1999.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/66749a02-a9a9-468b-be1e-131020e9d4a2/Laptop-14Z90U-G-AU85U1-LG-Gram-gallery-01_5000x5000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -146,6 +146,17 @@
   },
   {
    "retailer": "us-lg",
+   "sku": "14U40V-G.AA65U1",
+   "mpn": "14U40V-G.AA65U1",
+   "brand": "LG",
+   "title": "LG gram Book 14 Inch, Windows 11 Home, IPS Laptop, Intel® Core™ 5, 16GB RAM, 512GB SSD, Titan Black",
+   "url": "https://www.lg.com/us/laptops/lg-14u40v-g.aa65u1-gram-laptop",
+   "price": 1099.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/1fec88cf-e52f-4853-8ce3-2498a9854bf9/Laptop_14U40V-G-AA65U1_gallery-1_5000x5000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
    "sku": "14U40V-G.AR51U3",
    "mpn": "14U40V-G.AR51U3",
    "brand": "LG",
@@ -153,6 +164,17 @@
    "url": "https://www.lg.com/us/laptops/lg-14u40v-g.ar51u3-gram-laptop",
    "price": 799.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/a69dec32-1d5b-448e-9541-2c87f93c522c/Laptop_14U40V-G-AR51U3_gallery-1_5000x5000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "14U40V-H.AA65U1",
+   "mpn": "14U40V-H.AA65U1",
+   "brand": "LG",
+   "title": "LG gram Book 14 Inch, Windows 11 Home, Touchscreen Laptop, Intel® Core™ 5, 16GB RAM, 512GB SSD, Titan Black",
+   "url": "https://www.lg.com/us/laptops/lg-14u40v-h.aa65u1-gram-laptop",
+   "price": 1199.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/a337fe00-93c2-4bb0-b45d-5281e883572c/Laptop_14U40V-H-AA65U1_gallery-1_5000x5000",
    "inStock": true
   },
   {

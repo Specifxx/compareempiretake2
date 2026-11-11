@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T02:39:07.925Z",
+ "scrapedAt": "2026-11-11T00:44:24.870Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -8,6 +8,16 @@
    "url": "https://www.jbhifi.com.au/products/alienware-16-aurora-16-wqxga-120hz-gaming-laptop-intel-core-7geforce-rtx-5050",
    "price": 2899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817493-Product-0-I-638876397006232275_471d7c28-3a1c-4ad9-b1b6-08472706ce70.jpg?v=1755487455",
+   "inStock": true,
+   "brand": "Alienware"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "807394",
+   "title": "Alienware Area-51 18\" WQXGA 300Hz Gaming Laptop (Intel Core Ultra 9-275HX)[GeForce RTX 5090]",
+   "url": "https://www.jbhifi.com.au/products/alienware-area-51-18-wqxga-300hz-gaming-laptop-intel-core-ultra-9-275hxgeforce-rtx-5090",
+   "price": 10499,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807394-Product-0-I-638828745009867672_71702388-de7e-42f6-a88d-8a79f02770dd.jpg?v=1755496217",
    "inStock": true,
    "brand": "Alienware"
   },
@@ -238,7 +248,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-15-inch-with-m5-chip-512gb-16gb-sky-blue",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807730-Product-0-I-639081657002250303.jpg?v=1772573479",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -396,8 +406,8 @@
    "sku": "413894",
    "title": "Apple MacBook Pro 14-inch with M5 Chip, 1TB/16GB (Silver)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m5-chip-1tb-16gb-silver",
-   "price": 2897,
-   "wasPrice": 3199,
+   "price": 2697,
+   "wasPrice": 2897,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/413894-Product-0-I-638961648006514437.jpg?v=1790763031",
    "inStock": true,
    "brand": "Apple"
@@ -407,20 +417,9 @@
    "sku": "413892",
    "title": "Apple MacBook Pro 14-inch with M5 Chip, 1TB/16GB (Space Black)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m5-chip-1tb-16gb-space-black",
-   "price": 2897,
-   "wasPrice": 3199,
+   "price": 2697,
+   "wasPrice": 2897,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/413892-Product-0-I-638961648001818227.jpg?v=1790763040",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "413895",
-   "title": "Apple MacBook Pro 14-inch with M5 Chip, 1TB/24GB (Silver)",
-   "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m5-chip-1tb-24gb-silver",
-   "price": 3197,
-   "wasPrice": 3346,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/413895-Product-0-I-638961650489343232.jpg?v=1790763046",
    "inStock": true,
    "brand": "Apple"
   },
@@ -429,8 +428,8 @@
    "sku": "315024",
    "title": "Apple MacBook Pro 14-inch with M5 Chip, 1TB/32GB (Silver)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m5-chip-1tb-32gb-silver",
-   "price": 3497,
-   "wasPrice": 3799,
+   "price": 3397,
+   "wasPrice": 3497,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/315024-Product-0-I-639081756605995674.jpg?v=1790763024",
    "inStock": true,
    "brand": "Apple"
@@ -542,7 +541,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m6-chip-1tb-24gb-silver",
    "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890934-Product-0-I-639287333404181678.jpg?v=1793136606",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -562,7 +561,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m6-chip-1tb-32gb-silver",
    "price": 3799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890935-Product-0-I-639287333405405132.jpg?v=1793136606",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -815,7 +814,7 @@
    "title": "ASUS ProArt P16 16\" 3K OLED Touch Laptop (Nvidia RTX Spark N1X - 20 core)[1TB/48GB]",
    "url": "https://www.jbhifi.com.au/products/asus-proart-p16-16-3k-oled-touch-laptop-nvidia-rtx-spark-n1x-20-core1tb-48gb",
    "price": 6999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918270-Product-0-I-639275509809793078.jpg?v=1791954249",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/asus-proart-p16-14-oled-touch-laptop-918270-asus-proart-p16-h7607-product-photo-black-05-2400x2400.jpg?v=1794286628",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1031,21 +1030,21 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "906681",
-   "title": "ASUS Vivobook S16 16\" 3K Laptop (Intel Core 7 - 350)[512GB/16GB]",
-   "url": "https://www.jbhifi.com.au/products/asus-vivobook-s16-16-3k-laptop-intel-core-7-350512gb-16gb",
-   "price": 2299,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906681-Product-0-I-639288347405504362.jpg?v=1793328606",
-   "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "890901",
    "title": "Asus Vivobook S16 16\" WUXGA Copilot+ AI PC Laptop (Intel Core Ultra 5)[512GB]",
    "url": "https://www.jbhifi.com.au/products/asus-vivobook-s16-16-wuxga-copilot-ai-pc-laptop-intel-core-ultra-5512gb",
    "price": 1669,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890901-Product-0-I-639123267606015272.jpg?v=1776730026",
+   "inStock": true,
+   "brand": "Asus"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "906681",
+   "title": "ASUS Vivobook S16 16\" WUXGA Laptop (Intel Core 7 - 350)[512GB/16GB]",
+   "url": "https://www.jbhifi.com.au/products/asus-vivobook-s16-16-wuxga-laptop-intel-core-7-350512gb-16gb",
+   "price": 2299,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906681-Product-0-I-639288347405504362.jpg?v=1793328606",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1065,7 +1064,7 @@
    "title": "ASUS Zenbook 14 14\" 3K OLED Touch Laptop Blue (Intel Core Ultra 5 - 325)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-zenbook-14-14-3k-oled-touch-laptop-blue-intel-core-ultra-5-325512gb-16gb",
    "price": 2799,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906687-Product-0-I-639278030411743583.jpg?v=1792206306",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906687-Product-0-I-639298837204272901.jpg?v=1794286986",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1075,7 +1074,7 @@
    "title": "ASUS Zenbook 14 14\" 3K OLED Touch Laptop Blue (Intel Core Ultra 7 - 355)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-zenbook-14-14-3k-oled-touch-laptop-blue-intel-core-ultra-7-355512gb-16gb",
    "price": 2999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914041-Product-0-I-639278031010312833.jpg?v=1792206366",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914041-Product-0-I-639298840205555412.jpg?v=1794287287",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1085,7 +1084,7 @@
    "title": "ASUS Zenbook 14 14\" 3K OLED Touch Laptop Pink (Intel Core Ultra 5 - 325)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-zenbook-14-14-3k-oled-touch-laptop-pink-intel-core-ultra-5-325512gb-16gb",
    "price": 2799,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918219-Product-0-I-639278035205014971.jpg?v=1792206785",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/asus-ux3480aa-su327w-zenbook-14-3k-pnk-918219-zenbook14-ux3480aa-product-photo-3p-komodo-coral-04.jpg?v=1794287409",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1095,7 +1094,7 @@
    "title": "ASUS Zenbook 14 14\" 3K OLED Touch Laptop Pink (Intel Core Ultra 7 - 355)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-zenbook-14-14-3k-oled-touch-laptop-pink-intel-core-ultra-7-355512gb-16gb",
    "price": 2999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918220-Product-0-I-639278036404975775.jpg?v=1792206915",
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918220-Product-0-I-639298842603404728.jpg?v=1794287526",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1254,8 +1253,7 @@
    "sku": "829793",
    "title": "Dell 15 DC15255 15.6\" FHD 120Hz Laptop (Ryzen 3)[512GB]",
    "url": "https://www.jbhifi.com.au/products/dell-15-dc15255-15-6-fhd-120hz-laptop-ryzen-3512gb",
-   "price": 779,
-   "wasPrice": 1299,
+   "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829793-Product-0-I-638912465402323891.jpg?v=1755649811",
    "inStock": true,
    "brand": "Dell"

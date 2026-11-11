@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T03:30:30.290Z",
+ "scrapedAt": "2026-11-11T01:32:04.174Z",
  "offers": [
   {
    "retailer": "uk-stuartwestmoreland",
@@ -72,7 +72,8 @@
    "sku": "BALLANIMALMF2",
    "title": "Dyson Ball Animal Multi-Floor Upright Vacuum Cleaner",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-ball-animal-multi-floor-upright-vacuum-ballanimalmf2",
-   "price": 379.99,
+   "price": 279,
+   "wasPrice": 379.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/709a208d-BALLANIMALMFNEW-1.jpg?v=1755270906",
    "inStock": true,
    "brand": "Dyson",
@@ -201,7 +202,7 @@
    "sku": "V10KONICALNEW",
    "title": "Dyson V10 Konical Cordless Vacuum Cleaner and Auto-empty Dok",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v10-konical-cordless-vacuum-auto-empty-dok-v10konicalnew",
-   "price": 545,
+   "price": 535,
    "wasPrice": 569.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V10KONICALNEW-1.jpg?v=1790086532",
    "inStock": true,
@@ -213,7 +214,7 @@
    "sku": "V12-2023",
    "title": "Dyson V12 Detect Slim Absolute Cordless Stick Vacuum Cleaner",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v12-detect-slim-absolute-cordless-stick-vacuum-cleaner",
-   "price": 490,
+   "price": 487,
    "wasPrice": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/2c915a58-dyson-v12-2023-1.jpg?v=1755270906",
    "inStock": true,
@@ -223,9 +224,10 @@
   {
    "retailer": "uk-stuartwestmoreland",
    "sku": "V12DETCT2",
-   "title": "Dyson V12 Detect Slim Cordless Vacuum Cleaner – Yellow/Nickel (V12DETCT2)",
+   "title": "Dyson V12 Detect Slim Cordless Vacuum Cleaner – Yellow/Nickel",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v12-detect-slim-cordless-vacuum-yellow-nickel-v12detct2",
-   "price": 549.99,
+   "price": 349.99,
+   "wasPrice": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V12DETCT2-1.jpg?v=1789126890",
    "inStock": true,
    "brand": "Dyson",
@@ -293,7 +295,7 @@
    "sku": "V16PISTANMLSUB",
    "title": "Dyson V16 Piston Animal Submarine Wet and Dry Cordless Vacuum Cleaner",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v16-piston-animal-submarine-wet-dry-cordless-vacuum-cleaner",
-   "price": 694,
+   "price": 692,
    "wasPrice": 899.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V16PISTANMLSUB-1.jpg?v=1768297460",
    "inStock": true,
@@ -577,7 +579,7 @@
    "sku": "V2517D",
    "title": "MOVA S2 Cordless Stick Vacuum Cleaner - V2517D",
    "url": "https://www.stuartwestmoreland.co.uk/products/mova-s2-cordless-stick-vacuum-150aw-foldable-design-v2517d",
-   "price": 99,
+   "price": 94,
    "wasPrice": 179,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V2517D-1.jpg?v=1775057093",
    "inStock": true,
@@ -590,6 +592,7 @@
    "title": "Numatic Henry Cylinder Vacuum Cleaner in Red – 902395",
    "url": "https://www.stuartwestmoreland.co.uk/products/numatic-henry-cylinder-vacuum-cleaner-in-red-902395",
    "price": 129.99,
+   "wasPrice": 179.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/21e4f1da-902395-1.jpg?v=1755271127",
    "inStock": true,
    "brand": "Numatic"
@@ -620,6 +623,7 @@
    "title": "Numatic Henry Quick Pro Cordless Dry Vacuum Cleaner – Grey – 919149",
    "url": "https://www.stuartwestmoreland.co.uk/products/numatic-henry-quick-pro-cordless-vacuum-cleaner-grey-919149",
    "price": 229.99,
+   "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/919149-1.jpg?v=1780928842",
    "inStock": true,
    "brand": "Numatic"
@@ -630,6 +634,7 @@
    "title": "Numatic Henry Quick Vacuum with 60 Minutes Run Time in Red - 916177",
    "url": "https://www.stuartwestmoreland.co.uk/products/numatic-henry-quick-vacuum-red-916177",
    "price": 179.99,
+   "wasPrice": 299.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/360e61c8-916177-1.jpg?v=1755271126",
    "inStock": true,
    "brand": "Numatic"
@@ -650,6 +655,7 @@
    "title": "Numatic Henry Xtra Cylinder Vacuum Cleaner – Red | 6L | All-Floor | 900027",
    "url": "https://www.stuartwestmoreland.co.uk/products/numatic-900027-henry-extra",
    "price": 139.99,
+   "wasPrice": 199.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/900027-1.jpg?v=1769614738",
    "inStock": true,
    "brand": "Numatic"
@@ -803,17 +809,6 @@
    "inStock": false,
    "brand": "Shark",
    "mpn": "HZ500UKT"
-  },
-  {
-   "retailer": "uk-stuartwestmoreland",
-   "sku": "NZ780UKT",
-   "title": "Shark Anti Hair Wrap Plus Upright Pet Vacuum with Lift-Away - NZ780UKT",
-   "url": "https://www.stuartwestmoreland.co.uk/products/shark-anti-hair-wrap-plus-upright-pet-vacuum-with-lift-away-nz780ukt",
-   "price": 399,
-   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/e0928697-NZ780UKT-1.jpg?v=1773833713",
-   "inStock": false,
-   "brand": "Shark",
-   "mpn": "NZ780UKT"
   },
   {
    "retailer": "uk-stuartwestmoreland",
@@ -1234,7 +1229,7 @@
    "price": 69.99,
    "wasPrice": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/CCQSASV1P1-1.jpg?v=1774948089",
-   "inStock": true,
+   "inStock": false,
    "mpn": "CCQSASV1P1"
   },
   {
