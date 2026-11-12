@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:24:51.174Z",
+ "scrapedAt": "2026-11-12T02:54:54.492Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -8,7 +8,7 @@
    "brand": "HP",
    "title": "HP Chromebook 14\" Chromebook, Intel Core i3, 8GB, 256GB",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-chromebook-14a-nf0006nax-d77fzea-abu",
-   "price": 429,
+   "price": 399,
    "wasPrice": 499,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08945350_cus_1.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -56,7 +56,7 @@
    "brand": "HP",
    "title": "HP Chromebook 14\" Chromebook, MediaTek Kompanio 540, 8GB, 128GB",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-chromebook-14a-nm0001nax-dt4z8ea-abu",
-   "price": 329,
+   "price": 299,
    "wasPrice": 430,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/f/i/finley_14_dfplus_cb_meteorsilver_wlan_t_nt_nonbacklit_catalog_front_6439054_cus.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -594,7 +594,7 @@
    "price": 1271.99,
    "wasPrice": 1521.54,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/e/a/eaea76e7-7fa3-4800-b9ef-dac326b9e279.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -1134,7 +1134,7 @@
    "price": 2237.15,
    "wasPrice": 2645.09,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/b/ab85d1e4-64be-4585-8700-21eda208fb35.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1764,7 +1764,8 @@
    "brand": "HP",
    "title": "HP HyperX OMEN 15\" Gaming Laptop, Intel Core i5, 16GB, 1TB, NVIDIA GeForce RTX 5050 8GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-15-inch-gaming-laptop-pc-15-ga0403na-e41t3ea-abu",
-   "price": 1799.99,
+   "price": 1499,
+   "wasPrice": 1799.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/7/8/78e40fdf-0c9a-4631-b520-d0056642b2dd.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -1786,7 +1787,8 @@
    "brand": "HP",
    "title": "HP HyperX OMEN 15\" Gaming Laptop, Intel Core i7, 16GB, 1TB, NVIDIA GeForce RTX 5060 8GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-15-inch-gaming-laptop-pc-15-ga0405na-e41t5ea-abu",
-   "price": 1999.99,
+   "price": 1899,
+   "wasPrice": 1999.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/7/8/78e40fdf-0c9a-4631-b520-d0056642b2dd.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -1808,7 +1810,7 @@
    "brand": "HP",
    "title": "HP HyperX OMEN 15\" Gaming Laptop, Intel Core i7, 24GB, 1TB, NVIDIA GeForce RTX 5060 8GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-15-inch-gaming-laptop-pc-15-ga0003na-d2ya8ea-abu",
-   "price": 1819,
+   "price": 1999,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/x/hx_omen_15_70w_iridblack_nonir_ips_4zone_win11_coreset_set_front_7044407_cus.jpg?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -1972,7 +1974,7 @@
    "brand": "HP",
    "title": "HP HyperX OMEN, Intel Core i5, 16GB, 1TB, NVIDIA GeForce RTX 5060 8GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-15-inch-gaming-laptop-pc-15-ga0002na-d2ya7ea-abu",
-   "price": 1499,
+   "price": 1549,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/x/hx_omen_15_70w_iridblack_nonir_ips_4zone_win11_coreset_set_front_7044314_cus.jpg?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -2055,7 +2057,7 @@
    "brand": "HP",
    "title": "HP Laptop 14\" Laptop, Intel Processor N150, 8GB, 128GB",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-laptop-14-ep2000na-d68g4ea-abu",
-   "price": 339,
+   "price": 259,
    "wasPrice": 499.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08454443_cus_1.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -2067,7 +2069,7 @@
    "brand": "HP",
    "title": "HP Laptop 15\" Laptop, AMD Ryzen 3, 8GB, 256GB",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-laptop-15-fc1006na-d37j1ea-abu",
-   "price": 449,
+   "price": 399,
    "wasPrice": 700,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08434622_cus.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -2079,7 +2081,7 @@
    "brand": "HP",
    "title": "HP Laptop 15\" Laptop, AMD Ryzen 5, 16GB, 512GB",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-laptop-15-fc1002na-d37hzea-abu",
-   "price": 649,
+   "price": 599,
    "wasPrice": 1000,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08434622_cus_2.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -2190,7 +2192,7 @@
    "price": 1799,
    "wasPrice": 1999,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/4/24c1_omen_avid_17_shadow_black_nt_1-zone_hdcam_nonfpr_hfr_coreset_front_4126115_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2202,7 +2204,7 @@
    "price": 3999,
    "wasPrice": 4399,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omen-16-dojo-front_cus_2.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2214,18 +2216,6 @@
    "price": 1749,
    "wasPrice": 2399.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/4/24c1_omen_voco_14_shadow-black_nt_ir-cam_nonfpr_4-zone_sot_core-set_front_4164337_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "C17WFEA#ABU",
-   "mpn": "C17WFEA#ABU",
-   "brand": "HP",
-   "title": "HP OMEN Transcend 14\" Gaming Laptop, Intel Core Ultra 7, 16GB, 1TB, NVIDIA GeForce RTX 5050 8GB, OLED Display, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/omen-transcend-laptop-14-fb1003na-c17wfea-abu",
-   "price": 1599,
-   "wasPrice": 2399.99,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/o/m/omen-transcend-14-gaming-laptop-voco-front_cus_4.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -2293,7 +2283,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 14\" Next Gen AI Laptop, Snapdragon X, 8GB, 512GB, OLED Display",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-3-laptop-next-gen-ai-14-hz0007nax-dx8m1ea-abu",
-   "price": 649,
+   "price": 499,
    "wasPrice": 799,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-3-14-inch-laptop-next-gen-ai-pc-abeq-nouvellesilver-front_cus.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -2328,7 +2318,8 @@
    "brand": "HP",
    "title": "HP OmniBook 3 16\" Laptop, Snapdragon C1-10-100, 4GB, 256GB, Touchscreen Display",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-3-laptop-ai-16-ct0002nax-e5hq9ea-abu",
-   "price": 599,
+   "price": 299,
+   "wasPrice": 599,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_omnibook_3_16_inch_inch_laptop_ai_pc_16-ct0000_product_glacier_silver_product_only_center_facing_2c1bae16-2df5-4196-9506-81735950e937.png_cus_1.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -2339,7 +2330,8 @@
    "brand": "HP",
    "title": "HP OmniBook 3 16\" Laptop, Snapdragon C1-10-100, 8GB, 256GB, Touchscreen Display",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-3-laptop-ai-16-ct0000nax-e5hq7ea-abu",
-   "price": 599,
+   "price": 349,
+   "wasPrice": 599,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_omnibook_3_16_inch_inch_laptop_ai_pc_16-ct0000_product_glacier_silver_product_only_center_facing_2c1bae16-2df5-4196-9506-81735950e937.png_cus.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -2526,7 +2518,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptopai-14-mh0062nax-e7pr2ea-abu",
    "price": 899.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/k/u/kudle_omnibook_14_cs_softhoneydew_tnt_bl_win11_catalog_front_8103362_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -3815,7 +3807,7 @@
    "sku": "E2TR1EA#ABU",
    "mpn": "E2TR1EA#ABU",
    "brand": "HP",
-   "title": "HP ProBook 4 G2i 14\" Business Laptop AI PC, Intel Core 5, 16GB, 512GB",
+   "title": "HP ProBook 4 G2i 14 inch Notebook AI PC Wolf Pro Security Edition",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-probook-4-g2i-14-inch-notebook-ai-pc-wolf-pro-security-edition-e2tr1ea-abu",
    "price": 1142.75,
    "wasPrice": 1388.39,
@@ -4113,7 +4105,7 @@
    "brand": "HP",
    "title": "HP Victus 15\" Gaming Laptop, AMD Ryzen 7, 16GB, 512GB, NVIDIA GeForce RTX 3050 6GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/victus-gaming-laptop-15-fb3401na-e41szea-abu",
-   "price": 999,
+   "price": 1049,
    "wasPrice": 1099,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/8/b8a7e1a0-c060-4aa7-99b4-e0be05de5698.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -4184,7 +4176,8 @@
    "brand": "HP",
    "title": "HP Victus 15\" Gaming Laptop, Intel Core i5, 16GB, 512GB, NVIDIA GeForce RTX 3050 6GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/victus-gaming-laptop-15-fa2401na-e41ssea-abu",
-   "price": 1300,
+   "price": 999,
+   "wasPrice": 1300,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/5/b5d15096-c009-4696-89f5-45702047b24b.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -4217,7 +4210,8 @@
    "brand": "HP",
    "title": "HP Victus 15\" Gaming Laptop, Intel Core i5, 16GB, 512GB, NVIDIA GeForce RTX 4050 6GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/victus-gaming-laptop-15-fa2402na-e41stea-abu",
-   "price": 1299,
+   "price": 1199,
+   "wasPrice": 1299,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/5/b5d15096-c009-4696-89f5-45702047b24b.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -4228,7 +4222,7 @@
    "brand": "HP",
    "title": "HP Victus 15\" Gaming Laptop, Intel Core i7, 16GB, 512GB, NVIDIA GeForce RTX 5050 8GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/victus-gaming-laptop-15-fa2403na-e41svea-abu",
-   "price": 1499,
+   "price": 1399,
    "wasPrice": 1600,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/5/b5d15096-c009-4696-89f5-45702047b24b.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -4240,7 +4234,7 @@
    "brand": "HP",
    "title": "HP Victus 15\" Gaming Laptop, Intel Core i7, 16GB, 512GB, NVIDIA GeForce RTX 5050 8GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/victus-gaming-laptop-15-fa2404na-e41swea-abu",
-   "price": 1399,
+   "price": 1249,
    "wasPrice": 1600,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/3/c/3ce3b469-3205-409d-8441-baaa65b4535f.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -5094,6 +5088,18 @@
    "price": 1699.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/d/ad520a6e-8737-4a63-a92a-d399892400c3.png?store=gb-en&image-type=small_image",
    "inStock": false
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "C17WFEA#ABU",
+   "mpn": "C17WFEA#ABU",
+   "brand": "HP",
+   "title": "OMEN Transcend Laptop 14-fb1003na",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/omen-transcend-laptop-14-fb1003na-c17wfea-abu",
+   "price": 1599,
+   "wasPrice": 2399.99,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/o/m/omen-transcend-14-gaming-laptop-voco-front_cus_4.png?store=gb-en&image-type=small_image",
+   "inStock": true
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T00:11:24.737Z",
+ "scrapedAt": "2026-11-12T01:42:28.139Z",
  "offers": [
   {
    "retailer": "hp",
@@ -32,7 +32,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-23-8-inch-all-in-one-24-cr0034a-pc-d9ub7pa.html",
    "price": 999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08630601_1_2.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -238,7 +238,7 @@
    "mpn": "BP0G1PT",
    "brand": "HP",
    "title": "HP EliteDesk 8 Mini G1i Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-elitedesk-8-mini-g1i-desktop-ai-pc-bp0g1pt-4.html",
+   "url": "https://www.hp.com/au-en/shop/hp-elitedesk-8-mini-g1i-desktop-ai-pc-bp0g1pt.html",
    "price": 3299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitedesk-8-mini-g1i-desktop-ai-pc-front_1.png",
    "inStock": false
@@ -370,7 +370,7 @@
    "mpn": "C0UN6PT",
    "brand": "HP",
    "title": "HP EliteStudio 8 All-in-One G1i 27 inch Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-27-inch-desktop-ai-pc-c0un6pt.html",
+   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-27-inch-desktop-ai-pc-c0un6pt-4.html",
    "price": 3549,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitestudio-8-aio-g1i-27-pc-front_1_2.png",
    "inStock": false
@@ -520,17 +520,6 @@
   },
   {
    "retailer": "hp",
-   "sku": "B27SWPT",
-   "mpn": "B27SWPT",
-   "brand": "HP",
-   "title": "HP Pro Mini 400 G9 Desktop PC",
-   "url": "https://www.hp.com/au-en/shop/hp-pro-mini-400-g9-desktop-pc-b27swpt-5.html",
-   "price": 2299,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/B/2/B27SWPT-1_T1748419846.png",
-   "inStock": false
-  },
-  {
-   "retailer": "hp",
    "sku": "D88B7PT",
    "mpn": "D88B7PT",
    "brand": "HP",
@@ -538,6 +527,17 @@
    "url": "https://www.hp.com/au-en/shop/hp-pro-mini-400-g9-desktop-pc-d88b7pt.html",
    "price": 2349,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/a/s/asteroids_gravitygrey_nonodd_coreset_horizontal_front_m1908705.png",
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
+   "sku": "B27SWPT",
+   "mpn": "B27SWPT",
+   "brand": "HP",
+   "title": "HP Pro Mini 400 G9 Desktop PC",
+   "url": "https://www.hp.com/au-en/shop/hp-pro-mini-400-g9-desktop-pc-b27swpt.html",
+   "price": 2299,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/B/2/B27SWPT-1_T1748419846.png",
    "inStock": false
   },
   {
@@ -568,7 +568,7 @@
    "mpn": "B29XLPT",
    "brand": "HP",
    "title": "HP Pro Small Form Factor 400 G9 Desktop PC",
-   "url": "https://www.hp.com/au-en/shop/hp-pro-small-form-factor-400-g9-desktop-pc-b29xlpt-3.html",
+   "url": "https://www.hp.com/au-en/shop/hp-pro-small-form-factor-400-g9-desktop-pc-b29xlpt.html",
    "price": 2299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/2/B29XLPT-1_T1748419835.png",
    "inStock": false
@@ -597,17 +597,6 @@
   },
   {
    "retailer": "hp",
-   "sku": "C3QQ7PT",
-   "mpn": "C3QQ7PT",
-   "brand": "HP",
-   "title": "HP ProStudio 4 All-in-One G1i 23.8 inch Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-prostudio-4-all-in-one-g1i-23-8-inch-desktop-ai-pc-c3qq7pt.html",
-   "price": 2832,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/_1",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
    "sku": "C3QQ6PT",
    "mpn": "C3QQ6PT",
    "brand": "HP",
@@ -619,14 +608,14 @@
   },
   {
    "retailer": "hp",
-   "sku": "C2BM3PT",
-   "mpn": "C2BM3PT",
+   "sku": "C3QQ7PT",
+   "mpn": "C3QQ7PT",
    "brand": "HP",
-   "title": "HP Z1 Tower G1i Desktop PC",
-   "url": "https://www.hp.com/au-en/shop/hp-z1-tower-g1i-desktop-pc-c2bm3pt.html",
-   "price": 2199,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/C/2/C2BM3PT-1_T1753232436.png",
-   "inStock": true
+   "title": "HP ProStudio 4 All-in-One G1i 23.8 inch Desktop AI PC",
+   "url": "https://www.hp.com/au-en/shop/hp-prostudio-4-all-in-one-g1i-23-8-inch-desktop-ai-pc-c3qq7pt.html",
+   "price": 2832,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/_1",
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -685,17 +674,6 @@
   },
   {
    "retailer": "hp",
-   "sku": "BV8B1PT",
-   "mpn": "BV8B1PT",
-   "brand": "HP",
-   "title": "HP Z2 Mini G1i Workstation Desktop PC",
-   "url": "https://www.hp.com/au-en/shop/hp-z2-mini-g1i-workstation-desktop-pc-bv8b1pt.html",
-   "price": 3490,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV8B1PT-1_T1756798860.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
    "sku": "BV2R1PT",
    "mpn": "BV2R1PT",
    "brand": "HP",
@@ -715,6 +693,17 @@
    "price": 6899,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2Q9PT-1_T1756798898.png",
    "inStock": true
+  },
+  {
+   "retailer": "hp",
+   "sku": "BV8B1PT",
+   "mpn": "BV8B1PT",
+   "brand": "HP",
+   "title": "HP Z2 Mini G1i Workstation Desktop PC",
+   "url": "https://www.hp.com/au-en/shop/hp-z2-mini-g1i-workstation-desktop-pc-bv8b1pt.html",
+   "price": 3490,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV8B1PT-1_T1756798860.png",
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -744,7 +733,7 @@
    "mpn": "BV2Q8PT",
    "brand": "HP",
    "title": "HP Z2 SFF G1i Workstation Desktop PC",
-   "url": "https://www.hp.com/au-en/shop/hp-z2-sff-g1i-workstation-desktop-pc-bv2q8pt-5.html",
+   "url": "https://www.hp.com/au-en/shop/hp-z2-sff-g1i-workstation-desktop-pc-bv2q8pt.html",
    "price": 4151,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2Q8PT-1_T1756798821.png",
    "inStock": false

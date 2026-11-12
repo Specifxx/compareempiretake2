@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:29:12.961Z",
+ "scrapedAt": "2026-11-12T02:59:26.297Z",
  "offers": [
   {
    "retailer": "uk-petertyson",
@@ -213,7 +213,8 @@
    "sku": "50107",
    "title": "Bowers & Wilkins Pi8 In-ear Wireless ANC Earbuds - McLaren Edition",
    "url": "https://petertyson.co.uk/bowers-wilkins-pi8-in-ear-true-wireless-earbuds-mclaren-edition",
-   "price": 469,
+   "price": 459,
+   "wasPrice": 469,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/p/i/pi8mclaren_2025_1.webp",
    "inStock": true
   },
@@ -414,7 +415,7 @@
    "sku": "41183",
    "title": "Focal Bathys Over-ear Wireless ANC Headphones",
    "url": "https://petertyson.co.uk/focal-bathys-headphones-config",
-   "price": 499,
+   "price": 449,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/b/a/bathys_cover.webp",
    "inStock": true
   },
@@ -453,7 +454,7 @@
    "price": 449,
    "wasPrice": 495,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/e/hempclassic_peter_tyson_1.webp",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-petertyson",
@@ -680,6 +681,15 @@
    "url": "https://petertyson.co.uk/jbl-endurance-zone",
    "price": 99,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/j/b/jblendzonblu_peter_tyson_main.webp",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-petertyson",
+   "sku": "57380",
+   "title": "JBL Live 680NC On-Ear Wireless ANC Headphones",
+   "url": "https://petertyson.co.uk/jbl-live-680nc",
+   "price": 99,
+   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/l/i/live680ncorg_peter_tyson_main_1.webp",
    "inStock": true
   },
   {

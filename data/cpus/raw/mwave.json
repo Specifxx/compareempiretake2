@@ -1,16 +1,6 @@
 {
- "scrapedAt": "2026-11-11T00:13:32.259Z",
+ "scrapedAt": "2026-11-12T01:43:25.923Z",
  "offers": [
-  {
-   "retailer": "mwave",
-   "sku": "AC53064",
-   "title": "AMD Ryzen 5 5500 6 Core 12 Thread up to 4.2GHz AM4 Unlocked CPU Processor + Wraith Stealth",
-   "url": "https://www.mwave.com.au/products/amd-ryzen-5-5500-6-core-12-thread-up-to-42ghz-am4-unlocked-cpu-processor-wraith-stealth-ac53064",
-   "price": 127,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/100100000457box_ac53064.jpg?v=1787744626",
-   "inStock": true,
-   "brand": "AMD"
-  },
   {
    "retailer": "mwave",
    "sku": "AC71846",
@@ -618,7 +608,7 @@
    "url": "https://www.mwave.com.au/products/intel-core-ultra-5-245kf-14-core-up-to-52ghz-lga-1851-unlocked-cpu-processor-ac78465",
    "price": 278.07,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/intel_core_ultra_5_245kf_14_core_up_to_52ghz_lga_1851_unlocked_cpu_processor_ac78465_41397.jpg?v=1787785855",
-   "inStock": true,
+   "inStock": false,
    "brand": "Intel"
   },
   {
@@ -748,7 +738,7 @@
    "url": "https://www.mwave.com.au/products/intel-xeon-w52455x-lga4677-32ghz-12core-cpu-processor-ac78257",
    "price": 1914.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/intel_xeon_w52455x_320ghz_12core_cpu_processor_ac78257_56891.jpg?v=1787746253",
-   "inStock": false,
+   "inStock": true,
    "brand": "Intel"
   },
   {

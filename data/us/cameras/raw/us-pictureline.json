@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:10:42.043Z",
+ "scrapedAt": "2026-11-12T02:40:54.503Z",
  "offers": [
   {
    "retailer": "us-pictureline",
@@ -991,7 +991,7 @@
    "url": "https://www.pictureline.com/products/leica-d-lux-8-digital-camera-black",
    "price": 1915,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/ld4.jpg?v=1716481477",
-   "inStock": true,
+   "inStock": false,
    "brand": "Leica"
   },
   {
@@ -1034,6 +1034,16 @@
    "inStock": false,
    "brand": "Leica",
    "mpn": "10773-U"
+  },
+  {
+   "retailer": "us-pictureline",
+   "sku": "97103",
+   "title": "Leica Noctilux Book",
+   "url": "https://www.pictureline.com/products/leica-noctilux-book",
+   "price": 75,
+   "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/leica-noctilux-book-front-view-of-the-leica-noctilux-book.jpg?v=1794417770",
+   "inStock": true,
+   "brand": "Leica"
   },
   {
    "retailer": "us-pictureline",
@@ -1478,7 +1488,7 @@
    "url": "https://www.pictureline.com/products/ricoh-gr-iv-compact-camera",
    "price": 1596.95,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Ricoh-GR-IV-Compact-Camera-1.jpg?v=1756162117",
-   "inStock": false,
+   "inStock": true,
    "brand": "Ricoh"
   },
   {
@@ -1844,7 +1854,7 @@
    "price": 87.2,
    "wasPrice": 109,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/wandrd-prvke-camera-cube-pro-21l-open-empty-interior-view.jpg?v=1790182426",
-   "inStock": false,
+   "inStock": true,
    "brand": "WANDRD",
    "mpn": "CCP-BK-2"
   },

@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-11-11T01:22:39.715Z",
+ "scrapedAt": "2026-11-12T02:52:20.661Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
    "sku": "100-506115",
    "title": "AMD Radeon Pro WX 3200 4 GB GDDR5",
    "url": "https://directcomputers.co.uk/products/radeon-pro-wx-3200-4gb",
-   "price": 169.99,
+   "price": 167.99,
    "wasPrice": 236.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/206fa56633fe7c3ba2300e0c2137a82a.jpg?v=1781341350",
    "inStock": true
@@ -36,39 +36,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "90YV0LD0-M0NA00",
-   "title": "ASUS Dual -RX7600-O8G-EVO AMD Radeon RX 7600 8 GB GDDR6",
-   "url": "https://directcomputers.co.uk/products/asus-dual-rx7600-evo-oc-8gb-ddr6-hdmi-3-dp-2715mhz-clock-overclocked",
-   "price": 458.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/1d879dd67bab3aac114d67361de45768.jpg?v=1770886944",
-   "inStock": true,
-   "brand": "ASUS",
-   "mpn": "90YV0LD0-M0NA00"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "90YV0M1G-M0NA00",
-   "title": "ASUS T1-RTX5070-O12G-GAMING NVIDIA GeForce RTX 5070 12 GB GDDR7",
-   "url": "https://directcomputers.co.uk/products/asus-rtx-5070-12gb-t1-oc",
-   "price": 1007.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/23c0f4c3ac65004120a3a41dfe94a02d84f6728a561618ef77826ff8b208ab2f.jpg?v=1789262067",
-   "inStock": true,
-   "brand": "ASUS",
-   "mpn": "90YV0M1G-M0NA00"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "90YV0MN0-M0NA00",
-   "title": "ASUS Turbo -AI-PRO-R9700-32G AMD Radeon AI PRO R9700 32 GB GDDR6",
-   "url": "https://directcomputers.co.uk/products/turbo-ai-pro-r9700-32g",
-   "price": 2266.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/8eeeb76522884c0836b70ac0d019d369.jpg?v=1788658101",
-   "inStock": true,
-   "brand": "ASUS",
-   "mpn": "90YV0MN0-M0NA00"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "GV-R76GAMING OC-8GD",
    "title": "GIGABYTE GAMING Radeon RX 7600 OC 8G AMD 8 GB GDDR6",
    "url": "https://directcomputers.co.uk/products/grgig-r76goc",
@@ -91,15 +58,48 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "GV-N3050WF2OCV2-8GD",
+   "title": "GIGABYTE GeForce RTX 3050 WINDFORCE OC V2 8G NVIDIA 8 GB GDDR6",
+   "url": "https://directcomputers.co.uk/products/gigabyte-rtx-3050-8gb-windforce-oc-v2",
+   "price": 372.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/05697aa97b3af7c7cfba602230791795.jpg?v=1770750713",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N3050WF2OCV2-8GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N3060WF2OC-12GD V2",
+   "title": "GIGABYTE GeForce RTX 3060 WINDFORCE OC 12G (rev. 2.0) NVIDIA 12 GB GDDR6",
+   "url": "https://directcomputers.co.uk/products/grgig-n3060wfov2",
+   "price": 497.99,
+   "wasPrice": 506.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f14a2ba1497e441b83ba4a5d310cde9d.jpg?v=1770807637",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N3060WF2OC-12GD V2"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "GV-N5060GAMING OCV2-8GD",
    "title": "GIGABYTE GeForce RTX 5060 GAMING OC V2 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0, 2602 MHz Core Clock, 3 x DisplayPort, 1 x HDMI, DLSS 4, GV-N5060GAMING OC V2-8GD",
    "url": "https://directcomputers.co.uk/products/gigabyte-5060-8gb-gaming-oc-v2",
-   "price": 548.99,
-   "wasPrice": 550.99,
+   "price": 550.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a74e7566752bd48257654aa6a0de49df5e4b319974443441ed4853ed1cfcc2e8.jpg?v=1791076840",
    "inStock": true,
    "brand": "GIGABYTE",
    "mpn": "GV-N5060GAMING OCV2-8GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N506TEAGLEMAX OC-8GD",
+   "title": "GIGABYTE GeForce RTX 5060 Ti EAGLE MAX OC 8G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5060-ti-eagle-max-oc-8gb-gddr7-graphics-card-4608-cuda-cores-2617-mhz-core-clock-triple-fan-3x-displayports-1x-hdmi-ports-1",
+   "price": 612.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/d9d0b44b7b5f9b3a059e27bca6f1a9c9.jpg?v=1776819088",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N506TEAGLEMAX OC-8GD"
   },
   {
    "retailer": "uk-directcomputers",
@@ -111,6 +111,17 @@
    "inStock": true,
    "brand": "GIGABYTE",
    "mpn": "GV-N5060WF2MAX OCV2-8GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N5060WF2OC-8GD",
+   "title": "GIGABYTE GeForce RTX 5060 WINDFORCE OC 8G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5060-windforce-oc-8gb-gddr7-graphics-card-3840-cuda-cores-2512mhz-core-clock-dual-fan-1x-displayports-1x-hdmi-ports",
+   "price": 539.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/00d690515c4fb184127f63d9631210d9.jpg?v=1765337702",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N5060WF2OC-8GD"
   },
   {
    "retailer": "uk-directcomputers",
@@ -128,7 +139,7 @@
    "sku": "GV-R9700AI TOP-32GD",
    "title": "GIGABYTE Radeon AI PRO R9700 AI TOP 32G Graphics Card",
    "url": "https://directcomputers.co.uk/products/gigabyte-ai-pro-r9700-32gb-ai-top",
-   "price": 2196.99,
+   "price": 2245.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b2e9809225b0e062832fba2730ecae3e.jpg?v=1776819043",
    "inStock": true,
    "brand": "GIGABYTE",
@@ -136,14 +147,15 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "GV-R9060XTGAMING OC-16GD",
-   "title": "GIGABYTE Radeon RX 9060 XT GAMING OC 16G Graphics Card",
-   "url": "https://directcomputers.co.uk/products/gigabyte-rx-9060-xt-16gb-gaming-oc",
-   "price": 799.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/7a80e96867e149e301763f658b58de53.jpg?v=1755482323",
+   "sku": "GV-R9070GAMING OC-16GD",
+   "title": "GIGABYTE Radeon RX 9070 GAMING OC 16G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-amd-radeon-rx-9070-gaming-oc-16gb-gddr6-graphics-card-3584-streams-tbd-mhz-core-clock-triple-fan-rgb-3x-displayports-1x-hdmi-port",
+   "price": 992.99,
+   "wasPrice": 1001.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/e9a724fbe709cd09bfd6951dcb38e086.jpg?v=1772940291",
    "inStock": true,
    "brand": "GIGABYTE",
-   "mpn": "GV-R9060XTGAMING OC-16GD"
+   "mpn": "GV-R9070GAMING OC-16GD"
   },
   {
    "retailer": "uk-directcomputers",

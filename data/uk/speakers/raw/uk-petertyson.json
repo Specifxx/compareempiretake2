@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:29:38.384Z",
+ "scrapedAt": "2026-11-12T02:59:51.683Z",
  "offers": [
   {
    "retailer": "uk-petertyson",
@@ -214,7 +214,7 @@
    "url": "https://petertyson.co.uk/bluesound-pulse-flex-p130",
    "price": 279,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/p/u/pulseflexblk_peter_tyson_av_main.webp",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-petertyson",
@@ -482,7 +482,7 @@
    "sku": "57692",
    "title": "JBL PartyBox 330",
    "url": "https://petertyson.co.uk/jbl-partybox-330",
-   "price": 499,
+   "price": 479,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/p/a/partybox330w_peter_tyson_main.webp",
    "inStock": true
   },
@@ -491,7 +491,7 @@
    "sku": "51115",
    "title": "JBL PartyBox 520 - Black",
    "url": "https://petertyson.co.uk/jbl-partybox-520-black",
-   "price": 599,
+   "price": 529,
    "wasPrice": 749,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/j/b/jbl-partybox-520-bluetooth-party-speaker_1__1.webp",
    "inStock": true
@@ -611,6 +611,15 @@
   },
   {
    "retailer": "uk-petertyson",
+   "sku": "44908",
+   "title": "Marshall Acton III Bluetooth Speaker",
+   "url": "https://petertyson.co.uk/marshall-acton-iii-bluetooth-speaker",
+   "price": 259,
+   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/a/c/actoniiib_2025_1.webp",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-petertyson",
    "sku": "57629",
    "title": "Marshall Acton IV Bluetooth Home Speaker - Black",
    "url": "https://petertyson.co.uk/marshall-acton-iv-black",
@@ -659,7 +668,8 @@
    "sku": "51547",
    "title": "Marshall Middleton II Portable Bluetooth Speaker",
    "url": "https://petertyson.co.uk/marshall-middleton-ii-portable-bluetooth-speaker",
-   "price": 259,
+   "price": 199,
+   "wasPrice": 259,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/m/i/middletoniib_2025_1.webp",
    "inStock": true
   },
@@ -868,11 +878,29 @@
   },
   {
    "retailer": "uk-petertyson",
+   "sku": "60390",
+   "title": "Sonos Play Portable Smart Speakers",
+   "url": "https://petertyson.co.uk/sonos-play-pair",
+   "price": 568,
+   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/p/l/playpairwh_peter_tyson_av_main_1.webp",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-petertyson",
    "sku": "44741",
    "title": "Sonos Roam 2 Ultra-Portable Smart Speaker",
    "url": "https://petertyson.co.uk/sonos-roam-2-portable-smart-speaker-config",
    "price": 179,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/r/o/roamblk-1.webp",
+   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/r/o/roam2black_2026_1_2_1.webp",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-petertyson",
+   "sku": "60387",
+   "title": "Sonos Roam 2 Ultra-Portable Smart Speakers",
+   "url": "https://petertyson.co.uk/sonos-roam-2-ultra-portable-smart-speaker",
+   "price": 286,
+   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/r/o/roam2white_pair_2026_1.webp",
    "inStock": true
   },
   {

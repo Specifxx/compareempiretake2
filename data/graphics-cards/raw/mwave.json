@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T00:13:30.044Z",
+ "scrapedAt": "2026-11-12T01:43:22.978Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -8,7 +8,7 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060-ti-dual-oc-16gb-video-card-white-ac89745",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060_ti_dual_oc_16gb_video_card_ac89745_21480.jpg?v=1787795381",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -158,7 +158,7 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060-ti-prime-oc-8gb-gddr7-video-card-ac83889",
    "price": 979,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060_ti_prime_oc_8gb_video_card_ac83889_9872.jpg?v=1787795380",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -298,7 +298,7 @@
    "url": "https://www.mwave.com.au/products/asus-prime-geforce-rtx-5080-16gb-gddr7-video-card-ac81838",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_prime_geforce_rtx_5080_16gb_gddr7_video_card_ac81838_1820.jpg?v=1787795414",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -550,66 +550,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_tuf_gaming_radeon_rx_9070_xt_oc_edition_16gb_gddr6_video_card_ac83466_60612.jpg?v=1787795493",
    "inStock": false,
    "brand": "Asus"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC25350",
-   "title": "GALAX GeForce RTX 2070 Super EX Gamer 1-Click OC 8GB Video Card",
-   "url": "https://www.mwave.com.au/products/galax-geforce-rtx-2070-super-ex-gamer-1click-oc-8gb-video-card-ac25350",
-   "price": 798.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/AC25350.jpg?v=1787796598",
-   "inStock": false,
-   "brand": "GALAX"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC83246",
-   "title": "GALAX GeForce RTX 5070 1-Click OC 12GB GDDR7 Video Card",
-   "url": "https://www.mwave.com.au/products/galax-geforce-rtx-5070-1click-oc-12gb-gddr7-video-card-ac83246",
-   "price": 1315.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/galax_geforce_rtx_5070_1click_oc_12gb_gddr7_video_card_ac83246_48599.jpg?v=1787785353",
-   "inStock": false,
-   "brand": "GALAX"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC83576",
-   "title": "GALAX GeForce RTX 5070 Ti EX Gamer 1-Click OC 16GB GDDR7 Video Card",
-   "url": "https://www.mwave.com.au/products/galax-geforce-rtx-5070-ti-ex-gamer-1click-oc-16gb-gddr7-video-card-ac83576",
-   "price": 1736.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/galax_geforce_rtx_5070_ti_ex_gamer_1click_oc_16gb_gddr7_video_card_ac83576_18902.jpg?v=1787745834",
-   "inStock": false,
-   "brand": "GALAX"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC83245",
-   "title": "GALAX GeForce RTX 5070 Ti EXG White 16GB GDDR7 Video Card - White Edition",
-   "url": "https://www.mwave.com.au/products/galax-geforce-rtx-5070-ti-exg-white-16gb-gddr7-video-card-white-edition-ac83245",
-   "price": 1818.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/galax_geforce_rtx_5070_ti_exg_white_16gb_gddr7_video_card_white_edition_ac83245_46866.jpg?v=1787785342",
-   "inStock": false,
-   "brand": "GALAX"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC81955",
-   "title": "GALAX GeForce RTX 5080 1-Click OC 16GB Video Card - Black",
-   "url": "https://www.mwave.com.au/products/galax-geforce-rtx-5080-1click-oc-16gb-video-card-black-ac81955",
-   "price": 2547.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/galax_geforce_rtx_5080_1click_oc_16gb_video_card_ac81955_42087.jpg?v=1787796604",
-   "inStock": false,
-   "brand": "GALAX"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC81956",
-   "title": "GALAX GeForce RTX 5080 1-Click OC 16GB Video Card - White",
-   "url": "https://www.mwave.com.au/products/galax-geforce-rtx-5080-1click-oc-16gb-video-card-white-ac81956",
-   "price": 2547.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/galax_geforce_rtx_5080_1click_oc_16gb_video_card_white_ac81956_1790.jpg?v=1787796608",
-   "inStock": false,
-   "brand": "GALAX"
   },
   {
    "retailer": "mwave",
@@ -928,7 +868,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5070-eagle-oc-ice-12gb-video-card-white-edition-ac82982",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5070_eagle_oc_ice_sff_12gb_video_card_ac82982_13403.jpg?v=1787796647",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gigabyte"
   },
   {
@@ -1103,22 +1043,12 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC87623",
-   "title": "Gigabyte GeForce RTX 5080 WINDFORCE 16GB GDDR7 Video Card",
-   "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5080-windforce-16gb-gddr7-video-card-ac87623",
-   "price": 2799,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5080_windforce_sff_16gb_video_card_ac87623_12242.jpg?v=1787796656",
-   "inStock": false,
-   "brand": "Gigabyte"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC81991",
    "title": "Gigabyte GeForce RTX 5080 WINDFORCE OC 16GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5080-windforce-oc-16gb-video-card-ac81991",
    "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5080_windforce_oc_sff_16gb_video_card_ac81991_1407.jpg?v=1787785370",
-   "inStock": false,
+   "inStock": true,
    "brand": "Gigabyte"
   },
   {
@@ -1348,7 +1278,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5070-ti-x3-oc-16gb-gddr7-video-card-ac83002",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5070_ti_x3_oc_16gb_gddr7_video_card_ac83002_53782.jpg?v=1787797058",
-   "inStock": true,
+   "inStock": false,
    "brand": "Inno3D"
   },
   {
@@ -1723,26 +1653,6 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC95649",
-   "title": "MSI GeForce RTX 5070 12G World of Warcraft MIDNIGHT LIGHT EDITION OC Video Card",
-   "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-12g-world-of-warcraft-midnight-light-edition-oc-video-card-ac95649",
-   "price": 1299,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_12g_world_of_warcraft_midnight_light_edition_oc_video_card_ac95649_25697.jpg?v=1787746809",
-   "inStock": false,
-   "brand": "MSI"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC95650",
-   "title": "MSI GeForce RTX 5070 12G World of Warcraft MIDNIGHT VOID EDITION OC Video Card",
-   "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-12g-world-of-warcraft-midnight-void-edition-oc-video-card-ac95650",
-   "price": 1299,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_12g_world_of_warcraft_midnight_void_edition_oc_video_card_ac95650_61595.jpg?v=1787797748",
-   "inStock": false,
-   "brand": "MSI"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC81857",
    "title": "MSI GeForce RTX 5070 GAMING TRIO OC 12GB Video Card",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-gaming-trio-oc-12gb-video-card-ac81857",
@@ -1788,7 +1698,7 @@
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-ti-gaming-trio-oc-16gb-video-card-ac86246",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_ti_gaming_trio_oc_16gb_video_card_ac86246_48931.jpg?v=1787797755",
-   "inStock": false,
+   "inStock": true,
    "brand": "MSI"
   },
   {
@@ -1818,16 +1728,6 @@
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-ti-shadow-3x-oc-16gb-video-card-ac83828",
    "price": 2099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_ti_shadow_3x_oc_16gb_video_card_ac83828_52054.jpg?v=1787746813",
-   "inStock": false,
-   "brand": "MSI"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC81855",
-   "title": "MSI GeForce RTX 5070 Ti VANGUARD SOC 16GB Video Card",
-   "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-ti-vanguard-soc-16gb-video-card-ac81855",
-   "price": 1899,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_ti_vanguard_soc_16gb_video_card_ac81855_3471.jpg?v=1787797755",
    "inStock": false,
    "brand": "MSI"
   },
@@ -1888,16 +1788,6 @@
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5080-gaming-trio-oc-16gb-video-card-ac81846",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5080_gaming_trio_oc_16gb_video_card_ac81846_37597.jpg?v=1787797753",
-   "inStock": false,
-   "brand": "MSI"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC82219",
-   "title": "MSI GeForce RTX 5080 SHADOW 3X OC 16GB Video Card",
-   "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5080-shadow-3x-oc-16gb-video-card-ac82219",
-   "price": 2899,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5080_shadow_3x_oc_16gb_video_card_ac82219_82666.jpg?v=1787797756",
    "inStock": false,
    "brand": "MSI"
   },
@@ -2058,7 +1948,7 @@
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5060-infinity-2-oc-8gb-video-card-ac91329",
    "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5060_infinity_2_oc_8gb_video_card_ac91329_71081.jpg?v=1787798049",
-   "inStock": false,
+   "inStock": true,
    "brand": "Palit"
   },
   {
@@ -2069,16 +1959,6 @@
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5060_ti_infinity_3_16gb_video_card_ac84824_5993.jpg?v=1787798039",
    "inStock": true,
-   "brand": "Palit"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC88011",
-   "title": "Palit GeForce RTX 5060 Ti White OC 16GB Video Card",
-   "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5060-ti-white-oc-16gb-video-card-ac88011",
-   "price": 1199,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5060_ti_white_oc_16gb_video_card_ac88011_21821.jpg?v=1787798043",
-   "inStock": false,
    "brand": "Palit"
   },
   {
@@ -2128,7 +2008,7 @@
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5080-gamingpro-oc-16gb-gddr7-video-card",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/182284_9.png?v=1792033388",
-   "inStock": false,
+   "inStock": true,
    "brand": "Palit"
   },
   {
@@ -2173,16 +2053,6 @@
   },
   {
    "retailer": "mwave",
-   "sku": "AC86454",
-   "title": "Sapphire AMD Radeon RX 9060 XT PULSE GAMING OC 8GB Video Card",
-   "url": "https://www.mwave.com.au/products/sapphire-amd-radeon-rx-9060-xt-pulse-gaming-oc-8gb-video-card-ac86454",
-   "price": 569,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sapphire_amd_radeon_rx_9060_xt_pulse_gaming_oc_8gb_video_card_ac86454_58072.jpg?v=1787798351",
-   "inStock": false,
-   "brand": "Sapphire"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC86451",
    "title": "Sapphire Radeon RX 9060 XT NITRO+ GAMING OC 16GB Video Card",
    "url": "https://www.mwave.com.au/products/sapphire-radeon-rx-9060-xt-nitro-gaming-oc-16gb-video-card-ac86451",
@@ -2219,16 +2089,6 @@
    "price": 879,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/182751.png?v=1792545942",
    "inStock": true,
-   "brand": "Sapphire"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC82896",
-   "title": "Sapphire Radeon RX 9070 Pure Gaming OC 16GB Video Card",
-   "url": "https://www.mwave.com.au/products/sapphire-radeon-rx-9070-pure-gaming-oc-16gb-video-card-ac82896",
-   "price": 1099,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sapphire_radeon_rx_9070_pure_gaming_oc_16gb_video_card_ac82896_85742.jpg?v=1787798356",
-   "inStock": false,
    "brand": "Sapphire"
   },
   {
@@ -2418,7 +2278,7 @@
    "url": "https://www.mwave.com.au/products/zotac-gaming-geforce-rtx-5090-solid-oc-32gb-video-card-white-ac85008",
    "price": 15999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/zotac_gaming_geforce_rtx_5090_solid_oc_32gb_video_card_white_ac85008_17500.jpg?v=1787799874",
-   "inStock": false,
+   "inStock": true,
    "brand": "Zotac"
   },
   {

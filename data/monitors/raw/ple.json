@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T00:14:11.410Z",
+ "scrapedAt": "2026-11-12T01:45:17.096Z",
  "offers": [
   {
    "retailer": "ple",
@@ -355,7 +355,7 @@
    "price": 349,
    "wasPrice": 439,
    "image": "https://plecom.imgix.net/iil-469700-684455.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1178,6 +1178,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "681400",
+   "title": "ASUS ROG Strix XG27ACMES - 27\" 1440p 255Hz 0.3ms Fast-IPS Gaming Monitor - White",
+   "brand": "ASUS",
+   "mpn": "XG27ACMES-W",
+   "url": "https://www.ple.com.au/products/681400/asus-rog-strix-xg27acmes-27-1440p-255hz-03ms-fast-ips-gaming-monitor-white",
+   "price": 399,
+   "image": "https://plecom.imgix.net/iil-461163-681400.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "679058",
    "title": "ASUS ROG Strix XG27ACMS 27\" 1440p 320Hz Fast IPS Gaming Monitor",
    "brand": "ASUS",
@@ -1560,6 +1571,28 @@
   },
   {
    "retailer": "ple",
+   "sku": "689175",
+   "title": "BenQ Creative Pro 27\" 4K 60Hz 5ms IPS Designer Monitor",
+   "brand": "BenQ",
+   "mpn": "PD2770U",
+   "url": "https://www.ple.com.au/products/689175/benq-creative-pro-27-4k-60hz-5ms-ips-designer-monitor",
+   "price": 2999,
+   "image": "https://plecom.imgix.net/iil-489707-689175.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "689174",
+   "title": "BenQ Creative Pro 32\" 4K 120Hz 5ms IPS Designer Monitor",
+   "brand": "BenQ",
+   "mpn": "PV3250U",
+   "url": "https://www.ple.com.au/products/689174/benq-creative-pro-32-4k-120hz-5ms-ips-designer-monitor",
+   "price": 2599,
+   "image": "https://plecom.imgix.net/iil-489697-689174.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
    "sku": "671748",
    "title": "BenQ Designer PD2706QN - 27\" 1440p 100Hz IPS Professional Monitor",
    "brand": "BenQ",
@@ -1648,7 +1681,8 @@
    "brand": "BenQ",
    "mpn": "GW2486TC",
    "url": "https://www.ple.com.au/products/669946/benq-gw2486tc-238-1080p-100hz-ips-monitor",
-   "price": 289,
+   "price": 269,
+   "wasPrice": 289,
    "image": "https://plecom.imgix.net/iil-403240-669946.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1918,7 +1952,7 @@
    "price": 259,
    "wasPrice": 329,
    "image": "https://plecom.imgix.net/iil-487554-687835.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2914,7 +2948,7 @@
    "brand": "MSI",
    "mpn": "MPG 491CQP QD-OLED",
    "url": "https://www.ple.com.au/products/665587/msi-mpg-mpg-491cqp-qd-oled-49-curved-144hz-gaming-monitor",
-   "price": 1199,
+   "price": 1499,
    "wasPrice": 1999,
    "image": "https://plecom.imgix.net/iil-378950-665587.jpg?w=600&h=600",
    "inStock": true
@@ -3219,18 +3253,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "677537",
-   "title": "Samsung Essential S4 270GD - 27\" 1080p 100Hz IPS Monitor",
-   "brand": "Samsung",
-   "mpn": "LS27D402GEEXXY",
-   "url": "https://www.ple.com.au/products/677537/samsung-essential-s4-270gd-27-1080p-100hz-ips-monitor",
-   "price": 219,
-   "wasPrice": 229,
-   "image": "https://plecom.imgix.net/iil-441393-677537.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "667709",
    "title": "Samsung Odyssey G30D - 32\" 1080p 180Hz VA Gaming Monitor",
    "brand": "Samsung",
@@ -3451,18 +3473,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "635111",
-   "title": "Samsung UJ590 - 31.5\" 4K 2160p 60Hz VA Monitor",
-   "brand": "Samsung",
-   "mpn": "LU32J590UQEXXY",
-   "url": "https://www.ple.com.au/products/635111/samsung-uj590-315-4k-2160p-60hz-va-monitor",
-   "price": 359,
-   "wasPrice": 479,
-   "image": "https://plecom.imgix.net/iil-226483-635111.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "687437",
    "title": "Samsung ViewFinity S5 S55GH - 34\" Curved 1440p Ultrawide 120Hz VA Monitor",
    "brand": "Samsung",
@@ -3634,7 +3644,7 @@
    "brand": "Samsung",
    "mpn": "LS49F950UAEXXY",
    "url": "https://www.ple.com.au/products/678021/samsung-viewfinity-s95uf-49-curved-1440p-120hz-business-monitor",
-   "price": 999,
+   "price": 1199,
    "wasPrice": 1899,
    "image": "https://plecom.imgix.net/iil-441378-678021.jpg?w=600&h=600",
    "inStock": true

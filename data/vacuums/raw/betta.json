@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T00:08:07.600Z",
+ "scrapedAt": "2026-11-12T01:37:59.755Z",
  "offers": [
   {
    "retailer": "betta",
@@ -93,7 +93,8 @@
    "sku": "836309",
    "title": "Bissell Powerclean FurGuard Vacuum Cleaner",
    "url": "https://www.betta.com.au/products/bissell-powerclean-furguard-vacuum-cleaner-836309",
-   "price": 449,
+   "price": 333,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/BISSELL-4241-836309-14042025_A-051125.jpg?v=1774079510",
    "inStock": true,
    "brand": "Bissell"
@@ -254,8 +255,7 @@
    "sku": "837873",
    "title": "Dyson V8 Advanced Handstick Vacuum + Car Cleaning Kit",
    "url": "https://www.betta.com.au/products/dyson-v8-advanced-handstick-vacuum-car-cleaning-kit-837873",
-   "price": 399,
-   "wasPrice": 699,
+   "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/DYSON-626439-01-837873-29042026_20_1.jpg?v=1777912603",
    "inStock": true,
    "brand": "Dyson"
@@ -457,7 +457,7 @@
    "sku": "836124",
    "title": "LG CordZero Handstick Vacuum",
    "url": "https://www.betta.com.au/products/lg-cordzero-handstick-vacuum-836124",
-   "price": 237,
+   "price": 239,
    "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/LG-A9ACE-836124-230525-051125.jpg?v=1774079680",
    "inStock": true,
@@ -481,7 +481,8 @@
    "sku": "706446",
    "title": "Miele Blizzard CX1 Cat & Dog Bagless Vacuum Cleaner - Autumn Red",
    "url": "https://www.betta.com.au/products/miele-blizzard-cx1-cat-dog-bagless-vacuum-cleaner-autumn-red-706446",
-   "price": 749,
+   "price": 695,
+   "wasPrice": 749,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/MIELE-10502220-706446_A_16752744_2027112025.jpg?v=1774075747",
    "inStock": true,
    "brand": "Miele"
@@ -501,7 +502,8 @@
    "sku": "827477",
    "title": "MIELE BOOST CX1 CAT & DOG BAGLESS VACUUM OBSIDIAN BLACK",
    "url": "https://www.betta.com.au/products/miele-boost-cx1-cat-dog-bagless-vacuum-obsidian-black-827477",
-   "price": 599,
+   "price": 495,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/MIELE-827477-11640600-29032022-051125.jpg?v=1774077348",
    "inStock": true,
    "brand": "Miele"
@@ -522,8 +524,7 @@
    "sku": "870170",
    "title": "Miele Guard L1 Cat & Dog Bagged Vacuum Cleaner - Obsidian Black",
    "url": "https://www.betta.com.au/products/miele-guard-l1-cat-dog-bagged-vacuum-cleaner-obsidian-black-870170",
-   "price": 595,
-   "wasPrice": 699,
+   "price": 695,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/MIELE-12696980-870170-16072025.jpg?v=1774079083",
    "inStock": true,
    "brand": "Miele"
@@ -533,8 +534,7 @@
    "sku": "870171",
    "title": "Miele Guard L1 Comfort XL Bagged Vacuum Cleaner - Titanium Pearl",
    "url": "https://www.betta.com.au/products/miele-guard-l1-comfort-xl-bagged-vacuum-cleaner-titanium-pearl-870171",
-   "price": 795,
-   "wasPrice": 899,
+   "price": 895,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/MIELE-12697000-870171-16072025.jpg?v=1774079978",
    "inStock": true,
    "brand": "Miele"
@@ -544,7 +544,8 @@
    "sku": "870167",
    "title": "Miele Guard S1 Junior Bagged Vacuum Cleaner - Terra Red",
    "url": "https://www.betta.com.au/products/miele-guard-s1-junior-bagged-vacuum-cleaner-terra-red-870167",
-   "price": 499,
+   "price": 297,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/MIELE-12697040-870167-16072025.jpg?v=1774079107",
    "inStock": true,
    "brand": "Miele"
@@ -710,8 +711,7 @@
    "sku": "876491",
    "title": "Shark PowerLite Clean & Empty Cordless Stick Vacuum",
    "url": "https://www.betta.com.au/products/shark-powerlite-clean-empty-cordless-stick-vacuum-876491",
-   "price": 467,
-   "wasPrice": 599,
+   "price": 598,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/SHARK-BU3621-876491-16042026_20_1.jpg?v=1779986258",
    "inStock": true,
    "mpn": "BU3621ANZ",
@@ -722,10 +722,11 @@
    "sku": "870210",
    "title": "Shark PowerPro Cordless Stick Vacuum - White",
    "url": "https://www.betta.com.au/products/shark-powerpro-cordless-stick-vacuum-white-870210",
-   "price": 399,
+   "price": 295,
+   "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0732/1239/5739/files/SHARK-IZ377H-870210-25072025_A-051125.jpg?v=1774079398",
    "inStock": true,
-   "mpn": "IZ377H",
+   "mpn": "IZ377HANZ",
    "brand": "Shark"
   },
   {

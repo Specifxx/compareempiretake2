@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:06:55.257Z",
+ "scrapedAt": "2026-11-12T02:37:23.241Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -63,7 +63,7 @@
    "url": "https://www.electronicsexpo.com/products/furrion-aurora-2-1-outdoor-soundbar-speaker-with-built-in-subwoofer-bluetooth-hdmi-optical-inputs-fsbnn30mst",
    "price": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/furrion-aurora-21-outdoor-soundbar-speaker-with-built-in-subwoofer-bluetooth-hdmi-optical-inputs-fsbnn30mst-product-type-6112996.jpg?v=1783617798",
-   "inStock": false,
+   "inStock": true,
    "brand": "Furrion",
    "mpn": "FRRFSBNN30MST"
   },
@@ -84,7 +84,7 @@
    "sku": "HARENCHANT1100",
    "title": "Harman Kardon Enchant 1100 Powered 5.0.2-Channel Dolby Atmos Sound Bar with Wi-Fi, Bluetooth, and Apple AirPlay 2",
    "url": "https://www.electronicsexpo.com/products/harman-kardon-enchant-1100-powered-5-0-2-channel-dolby-atmos-sound-bar-with-wi-fi-bluetooth-and-apple-airplay-2",
-   "price": 899.95,
+   "price": 799,
    "wasPrice": 999.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/harman-kardon-enchant-1100-powered-502-channel-dolby-atmos-sound-bar-with-wi-fi-bluetooth-and-apple-airplay-2-product-type-9694934.webp?v=1784741895",
    "inStock": true,
@@ -96,7 +96,7 @@
    "sku": "HARENCHANT900",
    "title": "Harman Kardon Enchant 900 Powered 5.0.2-Channel Dolby Atmos Sound Bar with Wi-Fi, Bluetooth, and Apple AirPlay 2",
    "url": "https://www.electronicsexpo.com/products/harman-kardon-enchant-900-powered-5-0-2-channel-dolby-atmos-sound-bar-with-wi-fi-bluetooth-and-apple-airplay-2",
-   "price": 499.95,
+   "price": 449,
    "wasPrice": 549.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/harman-kardon-enchant-900-powered-502-channel-dolby-atmos-sound-bar-with-wi-fi-bluetooth-and-apple-airplay-2-product-type-2980727.webp?v=1784741894",
    "inStock": true,
@@ -108,7 +108,7 @@
    "sku": "HARENCHANTSUB",
    "title": "Harman Kardon Enchant Sub 2 6-1/2\" Wireless Powered Subwoofer for Harman Kardon Enchant Sound Bars",
    "url": "https://www.electronicsexpo.com/products/harman-kardon-enchant-sub-2-6-1-2-wireless-powered-subwoofer-for-harman-kardon-enchant-sound-bars",
-   "price": 429.95,
+   "price": 419,
    "wasPrice": 449.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/harman-kardon-enchant-sub-2-6-12-wireless-powered-subwoofer-for-harman-kardon-enchant-sound-bars-product-type-3843278.jpg?v=1784741892",
    "inStock": true,
@@ -346,6 +346,16 @@
    "inStock": true,
    "brand": "Klipsch",
    "mpn": "KLPFLEXUS12SUB.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "LGES90TR.FBA",
+   "title": "LG S90TR 670W 7.1.3-Channel Dolby Atmos Soundbar System with Wireless Rear Speakers",
+   "url": "https://www.electronicsexpo.com/products/lg-s90tr-7-1-3-ch-oled-evo-tv-matching-home-theater-soundbar-black",
+   "price": 1199.99,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/lg-s90tr-713-ch-oled-evo-tv-matching-home-theater-soundbar-black-product-type-6856847.jpg?v=1794296557",
+   "inStock": true,
+   "mpn": "LGES90TR.FBA"
   },
   {
    "retailer": "us-electronicsexpo",
@@ -728,25 +738,13 @@
   },
   {
    "retailer": "us-electronicsexpo",
-   "sku": "YAMSRC30ABLRB.FBA",
-   "title": "YAMAHA Audio SR-C30A Compact Sound Bar with Wireless Subwoofer and Bluetooth, Black",
-   "url": "https://www.electronicsexpo.com/products/yamaha-audio-sr-c30a-compact-sound-bar-with-wireless-subwoofer-and-bluetooth-black",
-   "price": 199.99,
-   "wasPrice": 279.99,
-   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/yamaha-audio-sr-c30a-compact-sound-bar-with-wireless-subwoofer-and-bluetooth-black-product-type-9941456.jpg?v=1794296551",
-   "inStock": true,
-   "brand": "Yamaha Audio",
-   "mpn": "YAMSRC30ABLRB.FBA"
-  },
-  {
-   "retailer": "us-electronicsexpo",
    "sku": "YAMB200ABL.FBA",
-   "title": "YAMAHA B200A Compact Sound Bar with Dolby Atmos, Bluetooth - Black",
+   "title": "Yamaha B200A Compact Sound Bar with Dolby Atmos, Bluetooth",
    "url": "https://www.electronicsexpo.com/products/yamaha-b200a-compact-sound-bar-with-dolby-atmos-bluetooth-black",
    "price": 249.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/yamaha-b200a-compact-sound-bar-with-dolby-atmos-bluetooth-black-product-type-1572110.jpg?v=1794296553",
    "inStock": true,
-   "brand": "YAMAHA",
+   "brand": "Yamaha",
    "mpn": "YAMB200ABL.FBA"
   },
   {

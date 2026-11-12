@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-10T02:05:58.103Z",
+ "scrapedAt": "2026-11-12T01:37:43.109Z",
  "offers": [
   {
    "retailer": "dell",
@@ -104,7 +104,7 @@
    "brand": "Dell",
    "title": "Dell Precision 7960 Tower Workstation",
    "url": "https://www.dell.com/en-au/shop/workstation/spd/precision7960tower",
-   "price": 10686.5,
+   "price": 10575.4,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/precision-t7690/media-gallery/tower/desktop-precision-7960-t-gray-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=595&qlt=100,0&resMode=sharp2&size=595,804",
    "inStock": true,
    "fromPrice": true
@@ -122,11 +122,22 @@
   },
   {
    "retailer": "dell",
+   "sku": "dellpromaxmicrofcm2250",
+   "brand": "Dell",
+   "title": "Dell Pro Max Micro Desktop",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellpromaxmicrofcm2250",
+   "price": 5321.8,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcm2250/media-gallery/desktop-dell-pro-max-fcm2250-micro-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=507&qlt=100,0&resMode=sharp2&size=507,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
    "sku": "dellpromaxtowert2fct2250",
    "brand": "Dell",
    "title": "Dell Pro Max Tower T2 Desktop",
    "url": "https://www.dell.com/en-au/shop/workstation/spd/dellpromaxtowert2fct2250",
-   "price": 3091,
+   "price": 3121.8,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcst2250/media-gallery/desktop-dell-pro-max-fct2250-tower-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=611&qlt=100,0&resMode=sharp2&size=611,804",
    "inStock": true,
    "fromPrice": true
@@ -137,7 +148,7 @@
    "brand": "Dell",
    "title": "Dell Pro Micro Desktop",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellpromicroqcm1250",
-   "price": 3022.8,
+   "price": 2270.4,
    "image": "https://i.dell.com/assetlink/img/global/desktop-pro-qcm1250-micro-black-gallery-1-dl11avy1-original.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=560&qlt=100,0&resMode=sharp2&size=560,804",
    "inStock": true,
    "fromPrice": true
@@ -203,7 +214,7 @@
    "brand": "Dell",
    "title": "Dell Pro Precision with GB10",
    "url": "https://www.dell.com/en-au/shop/workstation/spd/dellpromaxwithgb10fcm1253",
-   "price": 13227.5,
+   "price": 11693,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcm1253/media-gallery/desktop-dell-pro-max-fcm1253-micro-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1592&qlt=100,0&resMode=sharp2&size=1592,804",
    "inStock": true,
    "fromPrice": true

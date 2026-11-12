@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:29:43.906Z",
+ "scrapedAt": "2026-11-12T02:59:45.086Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -29,7 +29,7 @@
    "url": "https://www.overclockers.co.uk/acer-32-xz322quv3bmiiphx-2560x1440-qhd-va-180hz-zeroframe-1ms-400nits-widescreen-curved-gaming-monitor/MON-ACR-04507.html",
    "price": 169.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw353f7cc6/images/data/product/ce/733bca/3b320a6bd1a522e04f61f8b58637f4fa43d5f5e3.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -239,7 +239,7 @@
    "url": "https://www.overclockers.co.uk/aoc-24.5-25g4kur-1920x1080-400hz-1ms-fast-ips-hdr400-g-sync-compatible-widescreen-gaming-monitor/MON-AOC-06499.html",
    "price": 169.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw1b0dbccf/images/data/product/f9/8ad6d9/c7b0e5d08bd3b72aceda489141f95363925e4eb6.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -453,6 +453,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MON-AOC-09456",
+   "brand": "AOC",
+   "title": "AOC C27G42ZEP 27\" FHD (1920x1080) Fast VA 260Hz OC A-Sync HDR10 Curved Widescreen Gaming Monitor",
+   "url": "https://www.overclockers.co.uk/aoc-c27g42zep-27-fhd-1920x1080-fast-va-260hz-oc-a-sync-hdr10-curved-widescreen-gaming-monitor/MON-AOC-09456.html",
+   "price": 129.95,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5b2944d2/images/data/product/ef/5936e7/1314ae976981502971649318892c33ad7e505ed9.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MON-AOC-09114",
    "brand": "AOC",
    "title": "AOC C27G4Z2 27\" FHD (1920x1080) 240Hz Fast VA 260Hz (OC) A-Sync HDR10 Curved Widescreen Gaming Monitor",
@@ -633,16 +643,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "MON-ASU-04494",
-   "brand": "ASUS",
-   "title": "ASUS ROG Strix 27\" XG27AQMR 2560x1440 IPS 300Hz 1ms Widescreen Gaming Monitor",
-   "url": "https://www.overclockers.co.uk/asus-rog-strix-27-xg27aqmr-2560x1440-ips-300hz-1ms-widescreen-gaming-monitor/MON-ASU-04494.html",
-   "price": 628.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8c262fc6/images/data/product/8c/f8ca4f/58c568e5118c0c65ab0d08527424f337d5fbbaa1.jpg?sw=500",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "MON-ASU-08116",
    "brand": "ASUS",
    "title": "ASUS ROG Strix 34\" QD-OLED XG34WCDMS 280Hz 0.03s FreeSync HDMI 2.1 Curved Ultrawide Gaming Monitor",
@@ -669,7 +669,7 @@
    "url": "https://www.overclockers.co.uk/asus-rog-strix-glossy-woled-xg27aqdmgr-27-2560x1440-trueblack-240hz-0.03ms-g-sync-compatible-widescreen-gaming-monitor/MON-ASU-07815.html",
    "price": 338.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe08cf9da/images/data/product/99/605565/42e82ce3b5416107f457650c06ff9de48df9c7ed.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -700,16 +700,6 @@
    "price": 598.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe41aa26d/images/data/product/16/6c0c38/d983959d9e7cd33e2a2c7e7620d8c7d1dcbcf1aa.jpg?sw=500",
    "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
-   "sku": "MON-ASU-06458",
-   "brand": "ASUS",
-   "title": "ASUS ROG Strix OLED XG32UCDS 32\" 4K 3840x2160 165Hz 0.03ms G-Sync Widescreen Gaming Monitor",
-   "url": "https://www.overclockers.co.uk/asus-rog-strix-oled-xg32ucds-32-4k-3840x2160-165hz-0.03ms-g-sync-widescreen-gaming-monitor/MON-ASU-06458.html",
-   "price": 553.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3296e274/images/data/product/40/d910bd/f4328e1b404fd3998b18c41831142a13be683890.jpg?sw=500",
-   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -1113,16 +1103,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "MON-ASU-06469",
-   "brand": "ASUS",
-   "title": "ASUS VA27AQSE 27\" 2560 x 1440 QHD IPS 60Hz 5ms Adaptive Sync sRGB99 Widescreen Business Monitor",
-   "url": "https://www.overclockers.co.uk/asus-va27aqse-27-2560-x-1440-qhd-ips-60hz-5ms-adaptive-sync-srgb99-widescreen-business-monitor/MON-ASU-06469.html",
-   "price": 128.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa1c862ff/images/data/product/35/fcbfe7/8b50cff7768a6597322314d2ee38f9226463e3ea.jpg?sw=500",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "MON-ASU-05887",
    "brand": "ASUS",
    "title": "ASUS VY249HF Eye Care 24\" 1920x1080 IPS 100Hz 1ms A-Sync Widescreen Gaming Monitor",
@@ -1323,6 +1303,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MON-ZOW-09679",
+   "brand": "BenQ",
+   "title": "BenQ GW2491P 24\" 1920x1080 IPS 120Hz 1ms Widescreen Gaming Monitor",
+   "url": "https://www.overclockers.co.uk/benq-gw2491p-24-1920x1080-ips-120hz-1ms-widescreen-gaming-monitor/MON-ZOW-09679.html",
+   "price": 79.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwd3ec10c9/images/data/product/0b/40f8bf/81336677079b70f8364a4708e4f47602cffbfb74.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MON-BNQ-09129",
    "brand": "BenQ",
    "title": "BenQ GW2790P 27\" FHD (1920x1080) IPS 120Hz Eye-Care Home Office Monitor",
@@ -1333,12 +1323,42 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MON-ZOW-09680",
+   "brand": "BenQ",
+   "title": "BenQ GW2791P 27\" 1920x1080 IPS 120Hz 1ms Widerscreen Gaming Monitor",
+   "url": "https://www.overclockers.co.uk/benq-gw2791p-27-1920x1080-ips-120hz-1ms-widerscreen-gaming-monitor/MON-ZOW-09680.html",
+   "price": 99.95,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw4741d6a0/images/data/product/38/cc2f74/48a588b003d09a1a887b38741bc152e6730f10a2.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MON-ZOW-09681",
+   "brand": "BenQ",
+   "title": "BenQ MA270UP 27\" Glossy IPS 4K UHD (3840x2160) USB-C HDR P3 Mac Widescreen Monitor",
+   "url": "https://www.overclockers.co.uk/benq-ma270up-27-glossy-ips-4k-uhd-3840x2160-usb-c-hdr-p3-mac-widescreen-monitor/MON-ZOW-09681.html",
+   "price": 449.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw99038e28/images/data/product/69/4bd3aa/8aa28fc93b5d1774f7ec4493591fcab31bd5b724.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MON-BNQ-09031",
    "brand": "BenQ",
    "title": "BenQ MA320UG 32\" 4K UHD (3840x2160) Nano IPS Gloss 120Hz FreeSync Thunderbolt 4 USB-C HDR P3 Widescreen Mac Monitor",
    "url": "https://www.overclockers.co.uk/benq-ma320ug-32-4k-uhd-3840x2160-nano-ips-gloss-120hz-freesync-thunderbolt-4-usb-c-hdr-p3-widescreen-mac-monitor/MON-BNQ-09031.html",
    "price": 699.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwdd3b570b/images/data/product/40/5cceb7/bc09edb5070967a3afd2d20cbc9f5e2f44c817e4.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MON-ZOW-09682",
+   "brand": "BenQ",
+   "title": "BenQ MA320UP 32\" Glossy IPS 4K UHD (3840x2160) 60Hz USB-C HDR P3 Widescreen Mac Monitor",
+   "url": "https://www.overclockers.co.uk/benq-ma320up-32-glossy-ips-4k-uhd-3840x2160-60hz-usb-c-hdr-p3-widescreen-mac-monitor/MON-ZOW-09682.html",
+   "price": 549.95,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw85bb1a97/images/data/product/af/fac61d/c0d70a749c79b70670154d4fb25eff14c0ca2163.jpg?sw=500",
    "inStock": true
   },
   {
@@ -1393,6 +1413,26 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MON-ZOW-09683",
+   "brand": "BenQ",
+   "title": "BenQ RD280UG 28\" IPS 4K+ UHD (3840x2560) 120Hz USB-C HDR10 P3 KVM 3:2 Ratio Programming Monitor",
+   "url": "https://www.overclockers.co.uk/benq-rd280ug-28-ips-4k-uhd-3840x2560-120hz-usb-c-hdr10-p3-kvm-3-2-ratio-programming-monitor/MON-ZOW-09683.html",
+   "price": 599.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5f024db4/images/data/product/8a/d60162/b1263ca09749abff4a0b510cd7387712a8da435f.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "MON-ZOW-09684",
+   "brand": "BenQ",
+   "title": "BenQ Zowie XL2540X+ 24.1\" Fast TN 280Hz 1ms Widescreen Gaming Monitor for Esports",
+   "url": "https://www.overclockers.co.uk/benq-zowie-xl2540x-24.1-fast-tn-280hz-1ms-widescreen-gaming-monitor-for-esports/MON-ZOW-09684.html",
+   "price": 314.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw629c9c08/images/data/product/a6/9b9f10/7f15f33b2e7fd1b2bb678d6c9650773355072c14.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MON-BNQ-09130",
    "brand": "BenQ",
    "title": "BenQ ZOWIE XQ2566X 24.1\" QHD (2560x1440) Fast TN 360Hz DyAc 3 HDMI 2.1 Widescreen Gaming Monitor",
@@ -1403,13 +1443,13 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "MO-004-CM",
-   "brand": "Cooler Master",
-   "title": "Cooler Master 24\" GA241 1920x1080 VA 100Hz 1ms FreeSync Widescreen Gaming Monitor",
-   "url": "https://www.overclockers.co.uk/cooler-master-24-ga241-1920x1080-va-100hz-1ms-freesync-widescreen-gaming-monitor/MO-004-CM.html",
-   "price": 83.95,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5692e96b/images/data/product/df/b6357c/fe8e5d8338164f2cc6aaf90301704acca95c9305.jpg?sw=500",
-   "inStock": false
+   "sku": "MON-ZOW-09685",
+   "brand": "BenQ",
+   "title": "BenQ Zowie XQ2766X 27\" Fast TN 2560x1440 360Hz 1ms DyAc 3 Widescreen Gaming Monitor for Esport",
+   "url": "https://www.overclockers.co.uk/benq-zowie-xq2766x-27-fast-tn-2560x1440-360hz-1ms-dyac-3-widescreen-gaming-monitor-for-esport/MON-ZOW-09685.html",
+   "price": 1099.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw26dabd07/images/data/product/6d/1313e0/cee9a14b858966d1c97ebda65fe689b09e625bf6.jpg?sw=500",
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -1449,16 +1489,6 @@
    "url": "https://www.overclockers.co.uk/gigabyte-24-g24f-2-1920x1080-ss-ips-165hz-1ms-freesync-widescreen-gaming-monitor/MO-00Z-GI.html",
    "price": 99.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw4d7f399c/images/data/product/06/d36985/123e93cf6ab8c5ec3b2eaf48c199fc904dd5a3f3.jpg?sw=500",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
-   "sku": "MON-GIG-05192",
-   "brand": "Gigabyte",
-   "title": "Gigabyte 25\" GS25F2 1920x1080 FHD SS IPS 200Hz 1ms FreeSync Premium HDR Ready Widescreen Gaming Monitor",
-   "url": "https://www.overclockers.co.uk/gigabyte-25-gs25f2-1920x1080-fhd-ss-ips-200hz-1ms-freesync-premium-hdr-ready-widescreen-gaming-monitor/MON-GIG-05192.html",
-   "price": 89.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwae0e6aaa/images/data/product/34/94cde3/7f31c5e887615e520742e62ed9424a4f223c11e6.jpg?sw=500",
    "inStock": true
   },
   {
@@ -2053,16 +2083,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "MON-KRI-06358",
-   "brand": "KOORUI",
-   "title": "KOORUI 24\" G2411P 1920x1080 IPS 200Hz 1ms FreeSync HDR 400 Widescreen Gaming Monitor",
-   "url": "https://www.overclockers.co.uk/koorui-24-g2411p-1920x1080-ips-200hz-1ms-freesync-hdr-400-widescreen-gaming-monitor/MON-KRI-06358.html",
-   "price": 89.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8706f978/images/data/product/05/969ce1/8046971059ab34bfb4b345d96525112a83f84460.jpg?sw=500",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "MON-KRI-06357",
    "brand": "KOORUI",
    "title": "KOORUI 27\" E2741A 3840x2160 IPS 60Hz FreeSync Premium Widescreen Gaming Monitor",
@@ -2159,7 +2179,7 @@
    "url": "https://www.overclockers.co.uk/koorui-g3221sc-32-2560x1440-va-170hz-1ms-a-sync-curved-widescreen-gaming-monitor/MON-KRI-06363.html",
    "price": 159.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw08e813ac/images/data/product/a5/e4c157/7ff9a1bd3603606e5368a114438b0168a1ac32be.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -2263,26 +2283,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "MON-LGC-02149",
-   "brand": "LG",
-   "title": "LG 27\" Ultragear 27GS60F-B 1920x1080 IPS 180Hz 1ms FreeSync/G-Sync Widescreen Gaming Monitor",
-   "url": "https://www.overclockers.co.uk/lg-27-ultragear-27gs60f-b-1920x1080-ips-180hz-1ms-freesync-g-sync-widescreen-gaming-monitor/MON-LGC-02149.html",
-   "price": 99.95,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc63ee15e/images/data/product/ca/04633f/cffa5345ac43cc54764eb5eaa6e562c9cd5ffcee.jpg?sw=500",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-overclockers",
-   "sku": "MON-LGC-04523",
-   "brand": "LG",
-   "title": "LG 27\" Ultragear 27GX790A-B 2560x1440 WOLED 480Hz 0.03ms FreeSync Widescreen DP 2.1 Gaming Monitor",
-   "url": "https://www.overclockers.co.uk/lg-27-ultragear-27gx790a-b-2560x1440-woled-480hz-0.03ms-freesync-widescreen-dp-2.1-gaming-monitor/MON-LGC-04523.html",
-   "price": 599.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw2b0f605e/images/data/product/16/db56cb/d2fa352221e6e4ce01c23666bfa6fa9807f56f98.jpg?sw=500",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "MON-LGC-07691",
    "brand": "LG",
    "title": "LG 27GX790B-B UltraGear 27\" OLED QHD/FHD Dual Mode 540Hz/720Hz FreeSync/G-SYNC Widescreen Gaming Monitor",
@@ -2370,16 +2370,6 @@
    "price": 179.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw200a5832/images/data/product/72/46ad1f/aa191172edba125e93fb7655f042c278befcf95d.jpg?sw=500",
    "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
-   "sku": "MON-LGC-04286",
-   "brand": "LG",
-   "title": "LG 32\" 32UN650K-W 3840x2160 IPS 60Hz FreeSync HDR Gaming Monitor - White",
-   "url": "https://www.overclockers.co.uk/lg-32-32un650k-w-3840x2160-ips-60hz-freesync-hdr-gaming-monitor-white/MON-LGC-04286.html",
-   "price": 279.95,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw6b271d49/images/data/product/50/9740cc/65a286ab0a7e54a4bd8b938c302554fe5ba5645c.jpg?sw=500",
-   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -2799,7 +2789,7 @@
    "url": "https://www.overclockers.co.uk/mpg-322ur-qd-oled-x24-32-3840-x-2160-uhd-240hz-0.03ms-adaptive-sync-dp-2.1-widescreen-gaming-monitor/MON-MSI-08115.html",
    "price": 748.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwf7a48352/images/data/product/b7/acfe13/e4983eb15e8425f706dd8dd404d1f3607ac7c9db.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -2889,7 +2879,7 @@
    "url": "https://www.overclockers.co.uk/msi-27-mag-274qf-2560x1440-wqhd-180hz-0.5ms-rapid-ips-freesync-gaming-monitor/MON-MSI-05298.html",
    "price": 118.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw05e6ce01/images/data/product/76/8de146/8942c69749e70332a8f9abb17ef4f6bc76b45295.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -3129,7 +3119,7 @@
    "url": "https://www.overclockers.co.uk/msi-mag-275upd-e14-27-3840x2160-uhd-dual-mode-uhd-144hz-fhd-288hz-ips-1ms-adaptive-sync-hdmi-2.1-widescreen-gaming-monitor/MON-MSI-06018.html",
    "price": 198.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb1a468f4/images/data/product/c8/d8780a/1c44a7a720cfaa37233f043b29ee4b8e9ad8a742.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -3403,16 +3393,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "MON-PHP-03536",
-   "brand": "Philips",
-   "title": "Philips 24\" EVNIA 24M2N3201A/00 1920x1080 Fast IPS 180Hz 1ms A-Sync HDR10 Widescreen Gaming Monitor",
-   "url": "https://www.overclockers.co.uk/philips-24-evnia-24m2n3201a-00-1920x1080-fast-ips-180hz-1ms-a-sync-hdr10-widescreen-gaming-monitor/MON-PHP-03536.html",
-   "price": 114.95,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3de09223/images/data/product/a9/feee46/c68a4dbaed9ebb712dbc7780bde55cee150088cd.jpg?sw=500",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "MON-PHP-04679",
    "brand": "Philips",
    "title": "Philips 27\" 27E1N1100A/00 IPS 1920x1080 120Hz 1ms Widescreen Gaming Monitor",
@@ -3489,7 +3469,7 @@
    "url": "https://www.overclockers.co.uk/philips-evnia-27-27m2n3501pa-00-2560x1440-fast-ips-240hz-260hz-oc-1ms-adaptive-sync-hdr10-widescreen-gaming-monitor/MON-PHP-05767.html",
    "price": 189.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwda120126/images/data/product/f4/5ed613/2b3b4510acab32d630fbee2818d57e6d25704d91.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -3583,6 +3563,16 @@
   },
   {
    "retailer": "uk-overclockers",
+   "sku": "MON-PHP-09458",
+   "brand": "Philips",
+   "title": "Philips Evnia 34M2C8600P 34\" WQHD (3440x1440) QD-OLED 280Hz FreeSync TrueBlack 500 USB-C Curved Ultrawide Gaming Monitor",
+   "url": "https://www.overclockers.co.uk/philips-evnia-34m2c8600p-34-wqhd-3440x1440-qd-oled-280hz-freesync-trueblack-500-usb-c-curved-ultrawide-gaming-monitor/MON-PHP-09458.html",
+   "price": 779.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw511a4850/images/data/product/05/e58a16/25f58bce0fa7c86f4c762de1dcdeb8d55c19d548.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
    "sku": "MON-PHP-03330",
    "brand": "Philips",
    "title": "Philips Evnia 49\" 49M2C8900L/00 QD-OLED Curved 5120x1440 144Hz 0.03ms 90w USB C Ultrawide Curved Gaming Monitor",
@@ -3649,7 +3639,7 @@
    "url": "https://www.overclockers.co.uk/samsung-32-ls32fg810suxxu-oled-3840x2160-240hz-0.03ms-freesync-odyssey-widescreen-gaming-monitor/MON-SAM-05296.html",
    "price": 598.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw02c3d556/images/data/product/97/3e52e9/a2ee477c5cad540c0688db92e32e51bd79cfa481.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -3709,7 +3699,7 @@
    "url": "https://www.overclockers.co.uk/samsung-odyssey-g6-g60f-27-qhd-fast-ips-350hz-g-sync-widescreen-gaming-monitor/MON-SAM-07427.html",
    "price": 228.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw393a33d0/images/data/product/e4/2a37a8/37140a81047be97a04617cbdd8b5ba72dd151e35.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -3759,7 +3749,7 @@
    "url": "https://www.overclockers.co.uk/samsung-odyssey-oled-g9-ls49dg912suxxu-49-curved-dqhd-gaming-monitor/MON-SAM-04281.html",
    "price": 698.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw47daef57/images/data/product/d6/3dc953/bb262572575c5fd86ec40a99ae42ff9917f26577.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",

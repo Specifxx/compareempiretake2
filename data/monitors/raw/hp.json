@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T00:11:33.629Z",
+ "scrapedAt": "2026-11-12T01:42:46.366Z",
  "offers": [
   {
    "retailer": "hp",
@@ -65,7 +65,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-p34hc-g4-wqhd-usb-c-curved-monitor-21y56aa.html",
    "price": 800,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/2/1/21Y56AA-1_T1678873193.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -153,7 +153,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-series-5-pro-23-8-inch-fhd-usb-c-monitor-524pu-9d9v7aa.html",
    "price": 445,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-series-5-pro-524pu-janet-front.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -175,7 +175,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-series-5-pro-27-inch-fhd-monitor-527pf-b28f5ut.html",
    "price": 370,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/2/B28F5UT-1_T1760490608.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -307,7 +307,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-series-7-pro-27-inch-qhd-monitor-727pq-8j4d8ut.html",
    "price": 730,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-series-7-pro-727pq-weezer-front-ap_1.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -362,7 +362,18 @@
    "url": "https://www.hp.com/au-en/shop/hp-series-7-pro-39-7-inch-5k2k-conferencing-monitor-740pm-8y2r2aa.html",
    "price": 2650,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/1/8/1861230782-0b6e59e4c5d8ca6936e79985cb3ca722c59231b0de32bea96b47b852d5a3383d-d_295x166",
-   "inStock": false
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
+   "sku": "D5KB2AA",
+   "mpn": "D5KB2AA",
+   "brand": "HP",
+   "title": "HyperX OMEN 23.8 inch FHD 144Hz Gaming Monitor - OMEN 24e",
+   "url": "https://www.hp.com/au-en/shop/hyperx-omen-23-8-inch-fhd-144hz-gaming-monitor-omen-24e-d5kb2aa.html",
+   "price": 199,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/D/5/D5KB2AA-1_T1794281426.png",
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -373,6 +384,28 @@
    "url": "https://www.hp.com/au-en/shop/hyperx-omen-23-8-inch-fhd-180hz-gaming-monitor-omen-24-g2-c2jp4aa.html",
    "price": 129,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/C/2/C2JP4AA-7_T1772434423.png",
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
+   "sku": "DL2G0AA",
+   "mpn": "DL2G0AA",
+   "brand": "HP",
+   "title": "HyperX OMEN 23.8 inch FHD 240Hz Gaming Monitor - OMEN 24 G3",
+   "url": "https://www.hp.com/au-en/shop/hyperx-omen-23-8-inch-fhd-240hz-gaming-monitor-omen-24-g3-dl2g0aa.html",
+   "price": 269,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/D/L/DL2G0AA-1_T1794281459.png",
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
+   "sku": "D5KB3AA",
+   "mpn": "D5KB3AA",
+   "brand": "HP",
+   "title": "HyperX OMEN 27 inch FHD 144Hz Gaming Monitor - OMEN 27e",
+   "url": "https://www.hp.com/au-en/shop/hyperx-omen-27-inch-fhd-144hz-gaming-monitor-omen-27e-d5kb3aa.html",
+   "price": 249,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/D/5/D5KB3AA-1_T1794281488.png",
    "inStock": true
   },
   {
@@ -428,17 +461,6 @@
    "url": "https://www.hp.com/au-en/shop/omen-by-hp-31-5-inch-qhd-165hz-curved-gaming-monitor-omen-32c-780k7aa.html",
    "price": 309,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/7/8/780K7AA-1_T1689745747.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "9R181AA",
-   "mpn": "9R181AA",
-   "brand": "HP",
-   "title": "OMEN Transcend 31.5 inch UHD 240Hz OLED Gaming Monitor - OMEN Transcend 32",
-   "url": "https://www.hp.com/au-en/shop/omen-transcend-31-5-inch-uhd-240hz-oled-gaming-monitor-omen-transcend-32-9r181aa.html",
-   "price": 2299,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/2/4/24c2_hp_omen_transcend_32_oled_gaming_monitor_blackandwhite_coreset_front.png",
    "inStock": true
   }
  ]

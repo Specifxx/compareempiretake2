@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-11-11T00:13:32.117Z",
+ "scrapedAt": "2026-11-12T01:43:25.713Z",
  "offers": [
   {
    "retailer": "mwave",
    "sku": "AC99378",
    "title": "ASUS ROG Rapture GT-BE19000AI Tri-Band Wi-Fi 7 802.11be Gaming Router",
    "url": "https://www.mwave.com.au/products/asus-rog-rapture-gtbe19000ai-triband-wifi-7-80211be-gaming-router-ac99378",
-   "price": 1248,
+   "price": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_rapture_gtbe19000ai_triband_wifi_7_80211be_gaming_router_ac99378_49976.jpg?v=1787795429",
    "inStock": true,
    "mpn": "GT-BE19000AI",
@@ -47,7 +47,7 @@
    "sku": "AC92142",
    "title": "ASUS ROG Strix GS-BE18000 Tri-Band Wi-Fi 7 Gaming Router",
    "url": "https://www.mwave.com.au/products/asus-rog-strix-gsbe18000-triband-wifi-7-gaming-router-ac92142",
-   "price": 715.98,
+   "price": 716,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_gsbe18000_triband_wifi_7_gaming_router_ac92142_66307.jpg?v=1787784046",
    "inStock": true,
    "mpn": "GS-BE18000",
@@ -90,7 +90,7 @@
    "sku": "AC99373",
    "title": "ASUS RT-BE86U WiFi 7 Dual-Band Extendable Gaming Router",
    "url": "https://www.mwave.com.au/products/asus-rtbe86u-wifi-7-dualband-extendable-gaming-router-ac99373",
-   "price": 518.74,
+   "price": 519,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rtbe86u_wifi_7_dualband_extendable_gaming_router_ac99373_82474.jpg?v=1787784076",
    "inStock": true,
    "mpn": "RT-BE86U",
@@ -172,7 +172,7 @@
    "sku": "AC92143",
    "title": "ASUS ZenWiFi BQ16 BE25000 Quad-Band Wi-Fi 7 Mesh Router - 2 Pack",
    "url": "https://www.mwave.com.au/products/asus-zenwifi-bq16-be25000-quadband-wifi-7-mesh-router-2-pack-ac92143",
-   "price": 2200,
+   "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_zenwifi_bq16_be25000_quadband_wifi_7_mesh_router_2_pack_ac92143_58738.jpg?v=1787795510",
    "inStock": false,
    "brand": "Asus"
@@ -566,7 +566,7 @@
    "url": "https://www.mwave.com.au/products/mercusys-halo-h80x-ax3000-whole-home-mesh-wifi-6-system-2-pack-ac60164",
    "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_halo_h80x_ax3000_whole_home_mesh_wifi_6_system_2_pack_ac60164_91046.jpg?v=1787797620",
-   "inStock": true,
+   "inStock": false,
    "brand": "Mercusys"
   },
   {
@@ -629,7 +629,7 @@
    "url": "https://www.mwave.com.au/products/mercusys-mr27be-be3600-dual-band-wifi-7-router-ac79149",
    "price": 129,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_mr27be_be3600_dual_band_wifi_7_router_ac79149_4742.jpg?v=1787797637",
-   "inStock": true,
+   "inStock": false,
    "brand": "Mercusys"
   },
   {
@@ -1257,16 +1257,6 @@
   },
   {
    "retailer": "mwave",
-   "sku": "145362",
-   "title": "TP-Link Archer AX23 AX1800 Wi-Fi 6 Router",
-   "url": "https://www.mwave.com.au/products/tplink-archer-ax23-ax1800-wifi-6-router-ac94071",
-   "price": 98.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_ax23_ax1800_wifi_6_router_ac94071_79877.jpg?v=1787800823",
-   "inStock": false,
-   "brand": "TP-Link"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC46640",
    "title": "TP-Link Archer AX55 AX3000 802.11ax Dual Band Gigabit Wi-Fi 6 Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-ax55-ax3000-80211ax-dual-band-gigabit-wifi-6-router-ac46640",
@@ -1503,16 +1493,6 @@
    "price": 713,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_nx500outdoor_5g_ax3000_wifi_6_outdoor_router_ac97744_10269.jpg?v=1787799323",
    "inStock": true,
-   "brand": "TP-Link"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC12490",
-   "title": "TP-Link Archer VR300 Wireless AC1200 VDSL/ADSL Modem Router - NBN Ready",
-   "url": "https://www.mwave.com.au/products/tplink-archer-vr300-wireless-ac1200-vdsladsl-modem-router-nbn-ready-ac12490",
-   "price": 120.83,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/AC12490_2.jpg?v=1787799324",
-   "inStock": false,
    "brand": "TP-Link"
   },
   {
@@ -1780,7 +1760,7 @@
    "sku": "AC76616",
    "title": "TP-Link Deco X55 AX3000 Whole Home Mesh Wi-Fi 6 Router System - 2 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-x55-ax3000-whole-home-mesh-wifi-6-router-system-2-pack-ac76616",
-   "price": 317,
+   "price": 310.64,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_x55_v1_ax3000_whole_home_mesh_wifi_6_router_system_2_pack_ac76616_18307.jpg?v=1787799334",
    "inStock": true,
    "brand": "TP-Link"
@@ -2107,16 +2087,6 @@
    "price": 647,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_networks_unifi_dream_router_7_wifi_7_cloud_gateway_lexar_1tb_microsd_bundle_ac99536_31589.jpg?v=1787799555",
    "inStock": true,
-   "brand": "Ubiquiti Networks"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC53841",
-   "title": "Ubiquiti Networks UXG-PRO Next-Generation Gateway Pro 1U Security Gateway",
-   "url": "https://www.mwave.com.au/products/ubiquiti-networks-uxgpro-nextgeneration-gateway-pro-1u-security-gateway-ac53841",
-   "price": 778,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_networks_uxgpro_nextgeneration_gateway_pro_1u_security_gateway_ac53841.jpg?v=1787799572",
-   "inStock": false,
    "brand": "Ubiquiti Networks"
   },
   {

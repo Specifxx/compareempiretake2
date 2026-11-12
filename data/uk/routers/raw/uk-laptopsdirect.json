@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:31:38.447Z",
+ "scrapedAt": "2026-11-12T03:04:45.052Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -23,16 +23,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1823419",
-   "mpn": "90IG05N0-MO3RH0",
-   "title": "ASUS ZenWiFi AX Mini XD4 Dual Band 2.4+5GHz 1800Mbps Wireless Router",
-   "url": "https://www.laptopsdirect.co.uk/asus-zenwifi-ax-mini-xd4-dual-band-2.4-5ghz-1800mbps-wireless-router-90ig05n0-mo3rh0/version.asp",
-   "price": 264.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/90IG05N0-MO3RH0_1_Classic.jpg?v=7",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1823422",
    "mpn": "90IG05Z0-MO3A20",
    "title": "ASUS ZenWiFi Pro ET12 Tri-Band 2.4+5GHz 11000 Wireless Router",
@@ -44,13 +34,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1858432",
-   "mpn": "V2763-K",
-   "title": "DrayTek V2763-K Vigor 2763 wired VDSL and Ethernet Router",
-   "url": "https://www.laptopsdirect.co.uk/draytek-v2763-k-vigor-2763-wired-vdsl-and-ethernet-router-v2763-k/version.asp",
-   "price": 155.96,
-   "wasPrice": 172.79,
-   "image": "https://www.laptopsdirect.co.uk/Images/V2763-K_1_Classic.jpg?v=11",
+   "sku": "2075188",
+   "mpn": "A1/MR2200AC",
+   "title": "Box Opened Synology MR2200ac Wireless Mesh Tri-Band Router",
+   "url": "https://www.laptopsdirect.co.uk/box-opened-synology-mr2200ac-wireless-mesh-tri-band-router-a1-mr2200ac/version.asp",
+   "price": 81.3,
+   "image": "https://www.laptopsdirect.co.uk/Images/A1MR2200AC_1_Classic.jpg?v=8",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1579360",
+   "mpn": "V2865LAC-K",
+   "title": "Draytek V2865LAC-K VDSL2 Gigabit 3G/4G 6 Port Wireless Router",
+   "url": "https://www.laptopsdirect.co.uk/draytek-vdsl2-gigabit-g-4g-6-port-wireless-router-v2865lac-k/version.asp",
+   "price": 449.97,
+   "wasPrice": 626.38,
+   "image": "https://www.laptopsdirect.co.uk/Images/V2865LAC-K_1_Classic.jpg?v=7",
    "inStock": true
   },
   {
@@ -97,6 +97,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1653652",
+   "mpn": "V2865AX-K",
+   "title": "DrayTek Vigor 2865ax 950MBPs Dual Band 5 Port Router",
+   "url": "https://www.laptopsdirect.co.uk/draytek-vigor-2865ax-950mbps-dual-band-5-port-router-v2865ax-k/version.asp",
+   "price": 354.97,
+   "wasPrice": 380.38,
+   "image": "https://www.laptopsdirect.co.uk/Images/V2865AX-K_1_Classic.jpg?v=18",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1932614",
    "mpn": "V2865LAX-5G-K",
    "title": "Draytek Vigor 2865Lax-5G AX3000 wireless VDSL router with integrated 5G modem",
@@ -104,6 +115,17 @@
    "price": 735.84,
    "wasPrice": 825.58,
    "image": "https://www.laptopsdirect.co.uk/Images/V2865LAX-5G-K_1_Classic.jpg?v=8",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1541616",
+   "mpn": "V2927-K",
+   "title": "Draytek Vigor 2927 Dual WAN 7 Port Router",
+   "url": "https://www.laptopsdirect.co.uk/draytek-vigor-2927-dual-wan-7-port-router-v2927-k/version.asp",
+   "price": 244.97,
+   "wasPrice": 266.38,
+   "image": "https://www.laptopsdirect.co.uk/Images/V2927-K_1_13348190_Classic.jpg?v=7",
    "inStock": true
   },
   {
@@ -203,13 +225,24 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "1998789",
-   "mpn": "UCG-ULTRA-UK",
-   "title": "Ubiquiti ULTRA gateway/controller 1000 Mbit/s (UK PSU ONLY)",
-   "url": "https://www.laptopsdirect.co.uk/ubiquiti-ultra-gateway-controller-1000-mbit-s-uk-psu-only-ucg-ultra-uk/version.asp",
-   "price": 99.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/UCG-ULTRA-UK_1_Classic.jpg?v=1",
-   "inStock": false
+   "sku": "1329721",
+   "mpn": "TD-W9960",
+   "title": "TP-LINK TD-W9960 300Mbps Wireless VDSL2/ADSL2+ Modem Router 4-Port 10/100",
+   "url": "https://www.laptopsdirect.co.uk/tp-link-td-w9960-300mbps-wireless-vdsl2-adsl2-modem-router-4-port-10-100-td-w9960/version.asp",
+   "price": 29.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/TD-W9960_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1183144",
+   "mpn": "TL-WR902AC",
+   "title": "TP-Link TL-WR902AC - Wireless router - 802.11a/b/g/n/ac - Dual Band",
+   "url": "https://www.laptopsdirect.co.uk/tp-link-tl-wr902ac-wireless-router-802.11a-b-g-n-ac-dual-band-tl-wr902ac/version.asp",
+   "price": 39.97,
+   "wasPrice": 47.98,
+   "image": "https://www.laptopsdirect.co.uk/Images/TL-WR902AC_1_15971356_classic.jpg?v=5",
+   "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",

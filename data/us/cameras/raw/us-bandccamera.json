@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:05:20.669Z",
+ "scrapedAt": "2026-11-12T02:35:49.345Z",
  "offers": [
   {
    "retailer": "us-bandccamera",
@@ -385,7 +385,7 @@
    "price": 619.99,
    "wasPrice": 699.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/canon-eos-rebel-t7-dslr-camera-with-18-55mm-and-75-300mm-lenses-352256.png?v=1645731892",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon",
    "mpn": "2727C021"
   },
@@ -600,7 +600,7 @@
    "url": "https://bandccamera.com/products/dji-osmo-360-action-camera-adventure-combo",
    "price": 569.99,
    "wasPrice": 699.99,
-   "inStock": false,
+   "inStock": true,
    "mpn": "CP.OS.00000442.02"
   },
   {
@@ -642,7 +642,7 @@
    "url": "https://bandccamera.com/products/dji-osmo-pocket-3-creator-combo",
    "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/dji-osmo-pocket-3-creator-combo-313820.jpg?v=1700008033",
-   "inStock": false,
+   "inStock": true,
    "mpn": "CP.OS.00000302.01"
   },
   {
@@ -1204,7 +1204,7 @@
    "url": "https://bandccamera.com/products/hasselblad-x2d-ii-100c-medium-format-mirrorless-camera",
    "price": 7799,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/mctrnw1kkdwv90pfksme.jpg?v=1759782413",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hasselblad",
    "mpn": "CP.HB.00000927.01"
   },
@@ -1501,7 +1501,7 @@
    "url": "https://bandccamera.com/products/leica-q3-monochrom",
    "price": 7950,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/z18i77ps33adwukze4co.jpg?v=1763662673",
-   "inStock": true,
+   "inStock": false,
    "brand": "Leica"
   },
   {
@@ -2281,7 +2281,7 @@
    "url": "https://bandccamera.com/products/panasonic-lumix-l10-digital-camera?variant=42767877242951",
    "price": 1499.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/tvrbl65nhufoglpbtrix.jpg?v=1778606072",
-   "inStock": false,
+   "inStock": true,
    "brand": "Panasonic",
    "mpn": "DC-L10K"
   },
@@ -2374,7 +2374,7 @@
    "url": "https://bandccamera.com/products/panasonic-lumix-zs99-compact-point-and-shoot-camera-black",
    "price": 697.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/panasonic-lumix-zs99-compact-point-and-shoot-camera-black-804659.jpg?v=1734477654",
-   "inStock": false,
+   "inStock": true,
    "brand": "Panasonic",
    "mpn": "DC-ZS99K"
   },

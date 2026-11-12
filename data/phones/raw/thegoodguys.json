@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T00:03:01.548Z",
+ "scrapedAt": "2026-11-12T01:33:04.440Z",
  "offers": [
   {
    "retailer": "thegoodguys",
@@ -255,15 +255,6 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "/apple-iphone-18-pro-256gb-silver-mjrq4xa",
-   "title": "Apple iPhone 18 Pro 256GB Silver",
-   "url": "https://www.thegoodguys.com.au/apple-iphone-18-pro-256gb-silver-mjrq4xa",
-   "price": 2098,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100750_1093412.png?v=1789006670&width=284&height=284&quality=88",
-   "inStock": true
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "/apple-iphone-18-pro-512gb-black-mjru4xa",
    "title": "Apple iPhone 18 Pro 512GB Black",
    "url": "https://www.thegoodguys.com.au/apple-iphone-18-pro-512gb-black-mjru4xa",
@@ -323,15 +314,6 @@
    "url": "https://www.thegoodguys.com.au/apple-iphone-18-pro-max-256gb-silver-mjxp4xa",
    "price": 2298,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100759_1093399.png?v=1789006670&width=284&height=284&quality=88",
-   "inStock": true
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "/apple-iphone-18-pro-max-512gb-black-mjxt4xa",
-   "title": "Apple iPhone 18 Pro Max 512GB Black",
-   "url": "https://www.thegoodguys.com.au/apple-iphone-18-pro-max-512gb-black-mjxt4xa",
-   "price": 2697,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100763_1093388.png?v=1789006627&width=284&height=284&quality=88",
    "inStock": true
   },
   {
@@ -413,14 +395,14 @@
    "url": "https://www.thegoodguys.com.au/apple-iphone-duo-512gb-star-white-mk2f4xa",
    "price": 3897,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100770_1093441.png?v=1789006783&width=284&height=284&quality=88",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "thegoodguys",
    "sku": "100256738",
    "title": "Google Pixel 10a 128GB Lavender",
    "url": "https://www.thegoodguys.com.au/google-pixel-10a-128gb-lavender-100256738",
-   "price": 949,
+   "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099719_1078609.png?v=1782183703&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -429,7 +411,7 @@
    "sku": "100256736",
    "title": "Google Pixel 10a 128GB Obsidian",
    "url": "https://www.thegoodguys.com.au/google-pixel-10a-128gb-obsidian-100256736",
-   "price": 949,
+   "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097900_1046782.png?v=1776248987&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -591,7 +573,7 @@
    "sku": "11901361284",
    "title": "Motorola Edge 70 5G 256GB Bronze Green",
    "url": "https://www.thegoodguys.com.au/motorola-edge-70-5g-256gb-bronze-green-11901361284",
-   "price": 599,
+   "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098610_1055681.png?v=1776262223&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -600,7 +582,7 @@
    "sku": "11901361255",
    "title": "Motorola Edge 70 5G 256GB Gadget Grey",
    "url": "https://www.thegoodguys.com.au/motorola-edge-70-5g-256gb-gadget-grey-11901361255",
-   "price": 599,
+   "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098609_1055678.png?v=1776262218&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -732,6 +714,15 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "11901352847",
+   "title": "Motorola g57 5G 128GB Fluidity",
+   "url": "https://www.thegoodguys.com.au/motorola-g57-5g-128gb-fluidity-cyan-11901352847",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097604_1043196.png?v=1776823391&width=284&height=284&quality=88",
+   "inStock": true
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "11901327984",
    "title": "Motorola g75 5G 256GB Charcoal Grey",
    "url": "https://www.thegoodguys.com.au/motorola-g75-5g-256gb-charcoal-grey-11901327984",
@@ -807,7 +798,7 @@
    "sku": "/nothing-phone-3-256gb-black-a10000018",
    "title": "Nothing Phone (3) 256GB Black",
    "url": "https://www.thegoodguys.com.au/nothing-phone-3-256gb-black-a10000018",
-   "price": 999,
+   "price": 1509,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095572_999085.png?v=1776254038&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -816,17 +807,8 @@
    "sku": "/nothing-phone-3-256gb-white-a10000019",
    "title": "Nothing Phone (3) 256GB White",
    "url": "https://www.thegoodguys.com.au/nothing-phone-3-256gb-white-a10000019",
-   "price": 999,
+   "price": 1509,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095573_999086.png?v=1776254032&width=284&height=284&quality=88",
-   "inStock": true
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "/nothing-phone-3-512gb-black-a10000020",
-   "title": "Nothing Phone (3) 512GB Black",
-   "url": "https://www.thegoodguys.com.au/nothing-phone-3-512gb-black-a10000020",
-   "price": 1149,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095575_999085.png?v=1776254032&width=284&height=284&quality=88",
    "inStock": true
   },
   {
@@ -834,7 +816,7 @@
    "sku": "/nothing-phone-4a-128-black-a10400282",
    "title": "Nothing Phone (4a) 128GB Black",
    "url": "https://www.thegoodguys.com.au/nothing-phone-4a-128-black-a10400282",
-   "price": 539,
+   "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098050_1049562.png?v=1776400638&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -843,7 +825,7 @@
    "sku": "/nothing-phone-4a-256gb-black-a10400283",
    "title": "Nothing Phone (4a) 256GB Black",
    "url": "https://www.thegoodguys.com.au/nothing-phone-4a-256gb-black-a10400283",
-   "price": 699,
+   "price": 849,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098052_1049562.png?v=1776397361&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -852,7 +834,7 @@
    "sku": "/nothing-phone-4a-256gb-blue-a10400287",
    "title": "Nothing Phone (4a) 256GB Blue",
    "url": "https://www.thegoodguys.com.au/nothing-phone-4a-256gb-blue-a10400287",
-   "price": 699,
+   "price": 849,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098053_1049561.png?v=1776254332&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -861,7 +843,7 @@
    "sku": "/nothing-phone-4a-pro-256gb-black-a10400338",
    "title": "Nothing Phone (4a) Pro 256GB Black",
    "url": "https://www.thegoodguys.com.au/nothing-phone-4a-pro-256gb-black-a10400338",
-   "price": 799,
+   "price": 949,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098055_1053146.png?v=1776254323&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -870,7 +852,7 @@
    "sku": "/nothing-phone-4a-pro-256gb-silver-a10400339",
    "title": "Nothing Phone (4a) Pro 256GB Silver",
    "url": "https://www.thegoodguys.com.au/nothing-phone-4a-pro-256gb-silver-a10400339",
-   "price": 799,
+   "price": 949,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098056_1053229.png?v=1776254318&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -908,24 +890,6 @@
    "url": "https://www.thegoodguys.com.au/oppo-a5x-128gb-laser-white-cph2725au-white",
    "price": 214,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095606_1001618.png?v=1776258416&width=284&height=284&quality=88",
-   "inStock": true
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "/oppo-find-x10-5g-512gb-glacier-blue-cph2911au-glacier-blue",
-   "title": "OPPO Find X10 5G 512GB  Glacier Blue",
-   "url": "https://www.thegoodguys.com.au/oppo-find-x10-5g-512gb-glacier-blue-cph2911au-glacier-blue",
-   "price": 2299,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50101300_1100729.png?v=1792422154&width=284&height=284&quality=88",
-   "inStock": true
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "/oppo-find-x10-5g-512gb-mist-grey-cph2911au-mist-grey",
-   "title": "OPPO Find X10 5G 512GB Mist Grey",
-   "url": "https://www.thegoodguys.com.au/oppo-find-x10-5g-512gb-mist-grey-cph2911au-mist-grey",
-   "price": 2299,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50101301_1100744.png?v=1792422043&width=284&height=284&quality=88",
    "inStock": true
   },
   {
@@ -978,7 +942,7 @@
    "sku": "11901345420",
    "title": "Samsung Galaxy A17 5G 128GB Black",
    "url": "https://www.thegoodguys.com.au/samsung-galaxy-a17-5g-128gb-black-11901345420",
-   "price": 379,
+   "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096373_1018455.png?v=1776745501&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -1043,6 +1007,15 @@
    "url": "https://www.thegoodguys.com.au/samsung-galaxy-a37-5g-128gb-charcoal-11901362224",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098539_1054125.png?v=1776744230&width=284&height=284&quality=88",
+   "inStock": true
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "11901362221",
+   "title": "Samsung Galaxy A37 5G 128GB Awesome Lavender",
+   "url": "https://www.thegoodguys.com.au/samsung-galaxy-a37-5g-128gb-lavender-11901362221",
+   "price": 599,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098540_1054127.png?v=1776744231&width=284&height=284&quality=88",
    "inStock": true
   },
   {
@@ -1446,7 +1419,7 @@
    "sku": "11901374871",
    "title": "Samsung Galaxy Z Flip8 256GB Cream",
    "url": "https://www.thegoodguys.com.au/samsung-galaxy-z-flip8-256gb-cream-11901374871",
-   "price": 1949,
+   "price": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099796_1083104.png?v=1784683721&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -1455,7 +1428,7 @@
    "sku": "11901374869",
    "title": "Samsung Galaxy Z Flip8 256GB Graphite",
    "url": "https://www.thegoodguys.com.au/samsung-galaxy-z-flip8-256gb-graphite-11901374869",
-   "price": 1949,
+   "price": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099797_1083163.png?v=1784683760&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -1464,7 +1437,7 @@
    "sku": "11901374873",
    "title": "Samsung Galaxy Z Flip8 256GB Pink",
    "url": "https://www.thegoodguys.com.au/samsung-galaxy-z-flip8-256gb-pink-11901374873",
-   "price": 1949,
+   "price": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099798_1083164.png?v=1784683797&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -1473,7 +1446,7 @@
    "sku": "11901374872",
    "title": "Samsung Galaxy Z Flip8 512GB Cream",
    "url": "https://www.thegoodguys.com.au/samsung-galaxy-z-flip8-512gb-cream-11901374872",
-   "price": 2249,
+   "price": 1749,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099799_1083104.png?v=1784683687&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -1482,7 +1455,7 @@
    "sku": "11901374864",
    "title": "Samsung Galaxy Z Flip8 512GB Graphite",
    "url": "https://www.thegoodguys.com.au/samsung-galaxy-z-flip8-512gb-graphite-11901374864",
-   "price": 2249,
+   "price": 1749,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099800_1083163.png?v=1784683580&width=284&height=284&quality=88",
    "inStock": true
   },
@@ -1491,7 +1464,7 @@
    "sku": "11901374874",
    "title": "Samsung Galaxy Z Flip8 512GB Pink",
    "url": "https://www.thegoodguys.com.au/samsung-galaxy-z-flip8-512gb-pink-11901374874",
-   "price": 2249,
+   "price": 1749,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099801_1083164.png?v=1784683631&width=284&height=284&quality=88",
    "inStock": true
   },

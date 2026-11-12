@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:05:53.595Z",
+ "scrapedAt": "2026-11-12T02:36:25.192Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -210,7 +210,7 @@
    "price": 749,
    "wasPrice": 898.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1161004_1.jpg?v=1793613583",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dell",
    "mpn": "DEL372N9"
   },
@@ -423,7 +423,7 @@
    "url": "https://www.beachcamera.com/products/dell-16-pro-16-plus-laptop-in-aluminum-647n0",
    "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1160804_1.jpg?v=1793613651",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dell",
    "mpn": "DEL647N0"
   },
@@ -1747,17 +1747,6 @@
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "MICEP233426",
-   "title": "Microsoft Surface 13\" Surface Touchscreen Laptop in Violet - EP2-33426",
-   "url": "https://www.beachcamera.com/products/microsoft-surface-13-surface-touchscreen-laptop-in-violet-ep2-33426",
-   "price": 1399,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1165081_1.jpg?v=1782828145",
-   "inStock": true,
-   "brand": "Microsoft Surface",
-   "mpn": "MICEP233426"
-  },
-  {
-   "retailer": "us-beachcamera",
    "sku": "MICEP237384",
    "title": "Microsoft Surface Commercial 15\" Surface Copilot+ PC Laptop in Black - EP2-37384",
    "url": "https://www.beachcamera.com/products/microsoft-surface-commercial-15-surface-copilot-pc-laptop-in-black-ep2-37384",
@@ -1767,18 +1756,6 @@
    "inStock": true,
    "brand": "Microsoft Surface Commercial",
    "mpn": "MICEP237384"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "MICEP233251",
-   "title": "Microsoft Surface Commercial 15\" Surface Laptop for Business Copilot+ PC in Platinum - EP2-33251",
-   "url": "https://www.beachcamera.com/products/microsoft-surface-commercial-15-surface-laptop-for-business-copilot-pc-in-platinum-ep2-33251",
-   "price": 2117.17,
-   "wasPrice": 2540.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1164691_1.jpg?v=1793625790",
-   "inStock": true,
-   "brand": "Microsoft Surface Commercial",
-   "mpn": "MICEP233251"
   },
   {
    "retailer": "us-beachcamera",
@@ -1861,18 +1838,6 @@
    "inStock": true,
    "brand": "Microsoft",
    "mpn": "MSR1S00062"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "MSZXX00001",
-   "title": "Microsoft Surface Laptop Copilot+ PC 13.8\" (7th Edition), Platinum",
-   "url": "https://www.beachcamera.com/products/microsoft-surface-laptop-copilot-pc-13-8-snapdragon-x-elite-16gb-1tb-platinum",
-   "price": 1299.99,
-   "wasPrice": 2099.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1031181_1.jpg?v=1786377696",
-   "inStock": true,
-   "brand": "Microsoft",
-   "mpn": "MSZXX00001"
   },
   {
    "retailer": "us-beachcamera",

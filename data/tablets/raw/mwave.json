@@ -1,16 +1,6 @@
 {
- "scrapedAt": "2026-11-11T00:13:27.834Z",
+ "scrapedAt": "2026-11-12T01:43:20.419Z",
  "offers": [
-  {
-   "retailer": "mwave",
-   "sku": "149204",
-   "title": "Apple iPad 10.9-inch (10th Gen) Wi-Fi 64GB - Blue",
-   "url": "https://www.mwave.com.au/products/apple-ipad-109inch-10th-gen-wifi-64gb-blue-ac58894",
-   "price": 445.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_109inch_10th_gen_wifi_64gb_blue_ac58894_89861.jpg?v=1787788517",
-   "inStock": false,
-   "brand": "Apple"
-  },
   {
    "retailer": "mwave",
    "sku": "149206",
@@ -88,7 +78,7 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-11-a16-wifi-cellular-128gb-silver-ac83301",
    "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_11_a16_wifi_cellular_128gb_silver_ac83301_40708.jpg?v=1787799933",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -128,7 +118,7 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-11-a16-wifi-256gb-silver-ac83293",
    "price": 947,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_11_a16_wifi_256gb_silver_ac83293_76970.jpg?v=1787799931",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -158,7 +148,7 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-11-a16-wifi-cellular-256gb-pink-ac83308",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_11_a16_wifi_cellular_256gb_pink_ac83308_61807.jpg?v=1787799932",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -498,7 +488,7 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-air-11inch-8th-gen-m4-wifi-128gb-purple-ac96008",
    "price": 1248,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_air_11inch_8th_gen_m4_wifi_128gb_purple_ac96008_65874.jpg?v=1787799946",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -766,7 +756,7 @@
    "sku": "176576",
    "title": "Apple iPad Air 13\" M4 Wi-Fi + Cellular 256GB (Space Grey)",
    "url": "https://www.mwave.com.au/products/apple-ipad-air-13inch-8th-gen-m4-wifi-5g-256gb-space-grey-ac96057",
-   "price": 2047,
+   "price": 2048,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_air_13inch_8th_gen_m4_wifi_5g_256gb_space_grey_ac96057_48153.jpg?v=1787799969",
    "inStock": true,
    "brand": "Apple"
@@ -983,242 +973,12 @@
   },
   {
    "retailer": "mwave",
-   "sku": "165236",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 128GB (Blue)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-128gb-blue-ac80908",
-   "price": 1199,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_128gb_blue_ac80908_42663.jpg?v=1787799978",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165238",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 128GB (Purple)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-128gb-purple-ac80911",
-   "price": 1199,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_128gb_purple_ac80911_58923.jpg?v=1787799985",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165235",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 128GB (Space Grey)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-128gb-space-grey-ac80917",
-   "price": 1199,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_128gb_space_grey_ac80917_72766.jpg?v=1787799989",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165237",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 128GB (Starlight)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-128gb-starlight-ac80903",
-   "price": 1199,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_128gb_starlight_ac80903_93794.jpg?v=1787799987",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165240",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 256GB (Blue)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-256gb-blue-ac80913",
-   "price": 1399,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_256gb_blue_ac80913_79116.jpg?v=1787799976",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165242",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 256GB (Purple)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-256gb-purple-ac80916",
-   "price": 1399,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_256gb_purple_ac80916_71806.jpg?v=1787799983",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165239",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 256GB (Space Grey)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-256gb-space-grey-ac80922",
-   "price": 1399,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_256gb_space_grey_ac80922_30188.jpg?v=1787799981",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165241",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 256GB (Starlight)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-256gb-starlight-ac80910",
-   "price": 1399,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_256gb_starlight_ac80910_96829.jpg?v=1787791424",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165248",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 512GB (Blue)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-512gb-blue-ac80918",
-   "price": 1749,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_512gb_blue_ac80918_19879.jpg?v=1787799988",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165250",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 512GB (Purple)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-512gb-purple-ac80920",
-   "price": 1749,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_512gb_purple_ac80920_45980.jpg?v=1787799982",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165247",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 512GB (Space Grey)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-512gb-space-grey-ac80900",
-   "price": 1749,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_512gb_space_grey_ac80900_72313.jpg?v=1787791423",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165249",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi + Cellular 512GB (Starlight)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-cellular-512gb-starlight-ac80921",
-   "price": 1749,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_cellular_512gb_starlight_ac80921_18176.jpg?v=1787791423",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165228",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 128GB (Blue)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-128gb-blue-ac80905",
-   "price": 897,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_128gb_blue_ac80905_407.jpg?v=1787799981",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165230",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 128GB (Purple)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-128gb-purple-ac80907",
-   "price": 949,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_128gb_purple_ac80907_19486.jpg?v=1787799978",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
    "sku": "165227",
    "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 128GB (Space Grey)",
    "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-128gb-space-grey-ac80904",
    "price": 923.92,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_128gb_space_grey_ac80904_26073.jpg?v=1787799979",
    "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165229",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 128GB (Starlight)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-128gb-starlight-ac80901",
-   "price": 949,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_128gb_starlight_ac80901_65765.jpg?v=1787788562",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165232",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 256GB (Blue)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-256gb-blue-ac80906",
-   "price": 1148,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_256gb_blue_ac80906_88547.jpg?v=1787799980",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165234",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 256GB (Purple)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-256gb-purple-ac80909",
-   "price": 1149,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_256gb_purple_ac80909_1051.jpg?v=1787799980",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165231",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 256GB (Space Grey)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-256gb-space-grey-ac80902",
-   "price": 1148,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_256gb_space_grey_ac80902_55540.jpg?v=1787799983",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165233",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 256GB (Starlight)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-256gb-starlight-ac80912",
-   "price": 1149,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_256gb_starlight_ac80912_20536.jpg?v=1787799983",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165244",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 512GB (Blue)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-512gb-blue-ac80915",
-   "price": 1499,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_512gb_blue_ac80915_47149.jpg?v=1787799974",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165246",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 512GB (Purple)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-512gb-purple-ac80919",
-   "price": 1499,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_512gb_purple_ac80919_82835.jpg?v=1787799981",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165243",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 512GB (Space Grey)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-512gb-space-grey-ac80914",
-   "price": 1349,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_512gb_space_grey_ac80914_56.jpg?v=1787799980",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "165245",
-   "title": "Apple iPad Mini 8.3\" (7th Gen) Wi-Fi 512GB (Starlight)",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-83-wifi-512gb-starlight-ac80923",
-   "price": 1499,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_mini_83_wifi_512gb_starlight_ac80923_1169.jpg?v=1787799985",
-   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1298,26 +1058,6 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-mini-a20-pro-8th-gen-wi-fi-256gb-starlight",
    "price": 1297,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/183081_1.webp?v=1793892543",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "183090",
-   "title": "Apple iPad mini A20 Pro (8th Gen) Wi-Fi 512GB Starlight",
-   "url": "https://www.mwave.com.au/products/apple-ipad-mini-a20-pro-8th-gen-wi-fi-512gb-starlight-1",
-   "price": 1847,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/image-Photoroom_20d606d0-979e-49ff-864e-5999461f44ba.jpg?v=1793573049",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "160407",
-   "title": "Apple iPad Pro 11\" 1TB Wi-Fi + Cellular (Space Black) [M4]",
-   "url": "https://www.mwave.com.au/products/apple-ipad-pro-11inch-5th-gen-m4-wifi-5g-1tb-space-black-ac75348",
-   "price": 2872.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_11inch_5th_gen_m4_wifi_5g_1tb_space_black_ac75348_7522.jpg?v=1787799992",
    "inStock": false,
    "brand": "Apple"
   },
@@ -1418,7 +1158,7 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-pro-11-m5-wifi-cellular-256gb-standard-glass-space-black-ac92301",
    "price": 2349,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_11_m5_wifi_cellular_256gb_standard_glass_space_black_ac92301_33284.jpg?v=1787799986",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1526,7 +1266,7 @@
    "sku": "172864",
    "title": "Apple iPad Pro 11\" 2TB Wi-Fi with Nano-Texture Glass (Space Black) [M5]",
    "url": "https://www.mwave.com.au/products/apple-ipad-pro-11-m5-wifi-2tb-nanotexture-glass-space-black-ac92315",
-   "price": 3439.96,
+   "price": 4099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_11_m5_wifi_2tb_nanotexture_glass_space_black_ac92315_83579.jpg?v=1787791410",
    "inStock": false,
    "brand": "Apple"
@@ -1536,7 +1276,7 @@
    "sku": "172863",
    "title": "Apple iPad Pro 11\" 2TB Wi-Fi with Standard Glass (Silver) [M5]",
    "url": "https://www.mwave.com.au/products/apple-ipad-pro-11-m5-wifi-2tb-standard-glass-silver-ac92316",
-   "price": 3251.02,
+   "price": 3949,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_11_m5_wifi_2tb_standard_glass_silver_ac92316_70042.jpg?v=1787791420",
    "inStock": false,
    "brand": "Apple"
@@ -1548,16 +1288,6 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-pro-11-m5-wifi-2tb-standard-glass-space-black-ac92317",
    "price": 3949,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_11_m5_wifi_2tb_standard_glass_space_black_ac92317_90095.jpg?v=1787788560",
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "160397",
-   "title": "Apple iPad Pro 11\" 512GB Wi-Fi (Space Black) [M4]",
-   "url": "https://www.mwave.com.au/products/apple-ipad-pro-11inch-5th-gen-m4-wifi-512gb-space-black-ac75338",
-   "price": 1973.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_11inch_5th_gen_m4_wifi_512gb_space_black_ac75338_74835.jpg?v=1787799989",
    "inStock": false,
    "brand": "Apple"
   },
@@ -1598,7 +1328,7 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-pro-11-m5-wifi-512gb-standard-glass-space-black-ac92319",
    "price": 2349,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_11_m5_wifi_512gb_standard_glass_space_black_ac92319_73281.jpg?v=1787799985",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1646,7 +1376,7 @@
    "sku": "172894",
    "title": "Apple iPad Pro 13\" 1TB Wi-Fi + Cellular with Standard Glass (Space Black) [M5]",
    "url": "https://www.mwave.com.au/products/apple-ipad-pro-13-m5-wifi-cellular-1tb-standard-glass-space-black-ac92323",
-   "price": 3392.73,
+   "price": 3647.39,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_13_m5_wifi_cellular_1tb_standard_glass_space_black_ac92323_19360.jpg?v=1787800003",
    "inStock": false,
    "brand": "Apple"
@@ -1698,7 +1428,7 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-pro-13-m5-wifi-cellular-256gb-standard-glass-silver-ac92324",
    "price": 2949,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_13_m5_wifi_cellular_256gb_standard_glass_silver_ac92324_62048.jpg?v=1787800003",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1708,7 +1438,7 @@
    "url": "https://www.mwave.com.au/products/apple-ipad-pro-13-m5-wifi-cellular-256gb-standard-glass-space-black-ac92325",
    "price": 2949,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_13_m5_wifi_cellular_256gb_standard_glass_space_black_ac92325_55226.jpg?v=1787748476",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1766,7 +1496,7 @@
    "sku": "172898",
    "title": "Apple iPad Pro 13\" 2TB Wi-Fi + Cellular with Standard Glass (Space Black) [M5]",
    "url": "https://www.mwave.com.au/products/apple-ipad-pro-13-m5-wifi-cellular-2tb-standard-glass-space-black-ac92329",
-   "price": 4558.06,
+   "price": 4108.25,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_ipad_pro_13_m5_wifi_cellular_2tb_standard_glass_space_black_ac92329_67089.jpg?v=1787799997",
    "inStock": false,
    "brand": "Apple"
@@ -2028,7 +1758,7 @@
    "url": "https://www.mwave.com.au/products/microsoft-surface-pro-12-snapdragon-x-plus-16gb-512gb-w11p-commercial-platinum-copilot-pc-ac86504",
    "price": 2219,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/microsoft_surface_pro_for_business_copilot_pc_12_snapdragon_x_plus_16gb_512gb_w11p_platinum_ac86504_61665.jpg?v=1787797673",
-   "inStock": true,
+   "inStock": false,
    "brand": "Microsoft"
   },
   {
@@ -2076,7 +1806,7 @@
    "sku": "174936",
    "title": "Samsung Galaxy Tab A11+ 5G 128GB - Grey",
    "url": "https://www.mwave.com.au/products/samsung-galaxy-tab-a11-tablet-128gb-wifi-5g-grey-ac96279",
-   "price": 497.95,
+   "price": 495.59,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_tab_a11_tablet_128gb_wifi_grey_ac96279_94832.jpg?v=1787791519",
    "inStock": true,
    "brand": "Samsung"
@@ -2096,7 +1826,7 @@
    "sku": "174934",
    "title": "Samsung Galaxy Tab A11+ Wi-Fi 128GB - Grey",
    "url": "https://www.mwave.com.au/products/samsung-galaxy-tab-a11-tablet-128gb-wifi-grey-ac94905",
-   "price": 440,
+   "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_tab_a11_tablet_128gb_wifi_grey_ac94905_94832.jpg?v=1787800710",
    "inStock": true,
    "brand": "Samsung"
@@ -2106,19 +1836,9 @@
    "sku": "174935",
    "title": "Samsung Galaxy Tab A11+ Wi-Fi 256GB - Grey",
    "url": "https://www.mwave.com.au/products/samsung-galaxy-tab-a11-tablet-256gb-wifi-grey-ac98202",
-   "price": 457.01,
+   "price": 479,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_tab_a11_tablet_128gb_wifi_grey_ac98202_94832.jpg?v=1787800709",
    "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "156797",
-   "title": "Samsung Galaxy Tab A9+ 11\" 128GB WIFI +5G (Graphite)",
-   "url": "https://www.mwave.com.au/products/samsung-galaxy-tab-a9-11-128gb-wifi-5g-tablet-graphite-ac69735",
-   "price": 593.31,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_tab_a9_11_128gb_wifi_5g_tablet_graphite_ac69735_76040.jpg?v=1787800708",
-   "inStock": false,
    "brand": "Samsung"
   },
   {
@@ -2128,36 +1848,6 @@
    "url": "https://www.mwave.com.au/products/samsung-galaxy-tab-a9-11-64gb-wifi-5g-tablet-graphite-ac69736",
    "price": 464.74,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_tab_a9_11_64gb_wifi_5g_tablet_graphite_ac69736_9452_ee642a7c-b2f6-4622-b358-ad9ddacbdf4d.jpg?v=1787800701",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "156795",
-   "title": "Samsung Galaxy Tab A9+ Wi-Fi 128GB (Graphite)",
-   "url": "https://www.mwave.com.au/products/samsung-galaxy-tab-a9-11-128gb-wifi-tablet-graphite-ac69737",
-   "price": 417.89,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_tab_a9_11_128gb_wifi_tablet_graphite_ac69737_68738.jpg?v=1787800707",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "156794",
-   "title": "Samsung Galaxy Tab A9+ Wi-Fi 64GB (Graphite)",
-   "url": "https://www.mwave.com.au/products/samsung-galaxy-tab-a9-11-64gb-wifi-tablet-graphite-ac69734",
-   "price": 302.95,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_tab_a9_11_64gb_wifi_tablet_graphite_ac69734_96701.jpg?v=1787748909",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "148725",
-   "title": "Samsung Galaxy Tab Active 4 Pro 10.1\" Wi-Fi 5G 128GB Black",
-   "url": "https://www.mwave.com.au/products/samsung-galaxy-tab-active4-pro-101-128gb-rugged-android-tablet-with-s-pen-5g-ac58112",
-   "price": 1299,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_tab_active4_pro_101_128gb_rugged_android_tablet_with_s_pen_5g_ac58112_1.jpg?v=1787748912",
    "inStock": false,
    "brand": "Samsung"
   },
@@ -2256,7 +1946,7 @@
    "sku": "174951",
    "title": "Samsung Galaxy Tab S10 FE+ Wi-Fi 256GB - Grey",
    "url": "https://www.mwave.com.au/products/samsung-galaxy-tab-s10-fe-124-256gb-wifi-with-s-pen-grey-ac86293",
-   "price": 1170.12,
+   "price": 1247,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_galaxy_tab_s10_fe_124_256gb_wifi_with_s_pen_grey_ac86293_38234.jpg?v=1787800714",
    "inStock": true,
    "brand": "Samsung"

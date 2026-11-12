@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T00:14:13.240Z",
+ "scrapedAt": "2026-11-12T01:45:18.986Z",
  "offers": [
   {
    "retailer": "ple",
@@ -96,10 +96,10 @@
   {
    "retailer": "ple",
    "sku": "682907",
-   "title": "ASUS Gaming V16 (V3607) - 16\" 144Hz, Ultra 7 240H, RTX 5050, 16GB/1TB - Win 11 Advance AI Notebook",
+   "title": "ASUS Gaming V16 (V3607) - 16\" 144Hz, Ultra 7 240H, RTX 5050, 16GB/1TB - Win 11 Home AI Notebook",
    "brand": "ASUS",
    "mpn": "V3607VH-RP713W",
-   "url": "https://www.ple.com.au/products/682907/asus-gaming-v16-v3607-16-144hz-ultra-7-240h-rtx-5050-16gb1tb-win-11-advance-ai-notebook",
+   "url": "https://www.ple.com.au/products/682907/asus-gaming-v16-v3607-16-144hz-ultra-7-240h-rtx-5050-16gb1tb-win-11-home-ai-notebook",
    "price": 2999,
    "image": "https://plecom.imgix.net/iil-462447-682907.jpg?w=600&h=600",
    "inStock": false
@@ -129,10 +129,10 @@
   {
    "retailer": "ple",
    "sku": "672666",
-   "title": "ASUS Gaming V16 (V3607) - 16\" Core 7 240H, RTX 4050, 16GB/512GB - Win 11 Advanced AI Notebook",
+   "title": "ASUS Gaming V16 (V3607) - 16\" Core 7 240H, RTX 4050, 16GB/512GB - Win 11 Home AI Notebook",
    "brand": "ASUS",
    "mpn": "V3607VU-RP036W",
-   "url": "https://www.ple.com.au/products/672666/asus-gaming-v16-v3607-16-core-7-240h-rtx-4050-16gb512gb-win-11-advanced-ai-notebook",
+   "url": "https://www.ple.com.au/products/672666/asus-gaming-v16-v3607-16-core-7-240h-rtx-4050-16gb512gb-win-11-home-ai-notebook",
    "price": 1799,
    "wasPrice": 2099,
    "image": "https://plecom.imgix.net/iil-418272-672666.jpg?w=600&h=600",
@@ -141,10 +141,10 @@
   {
    "retailer": "ple",
    "sku": "676927",
-   "title": "ASUS Gaming V16 (V3607) - 16\" Core 7 240H, RTX 5060, 32GB/1TB - Win 11 Pro Advanced AI Notebook",
+   "title": "ASUS Gaming V16 (V3607) - 16\" Core 7 240H, RTX 5060, 32GB/1TB - Win 11 Pro AI Notebook",
    "brand": "ASUS",
    "mpn": "V3607VM-RP032X",
-   "url": "https://www.ple.com.au/products/676927/asus-gaming-v16-v3607-16-core-7-240h-rtx-5060-32gb1tb-win-11-pro-advanced-ai-notebook",
+   "url": "https://www.ple.com.au/products/676927/asus-gaming-v16-v3607-16-core-7-240h-rtx-5060-32gb1tb-win-11-pro-ai-notebook",
    "price": 2899,
    "image": "https://plecom.imgix.net/iil-435535-676927.jpg?w=600&h=600",
    "inStock": true
@@ -292,7 +292,7 @@
    "url": "https://www.ple.com.au/products/687496/asus-rog-strix-g16-g615-16-25k-300hz-core-ultra-9-290hx-plus-rtx-5070-16gb1tb-win-11-gaming-notebook",
    "price": 4799,
    "image": "https://plecom.imgix.net/iil-482214-687496.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -779,10 +779,9 @@
    "brand": "Gigabyte",
    "mpn": "AERO X16 4WHN3AUC94DH",
    "url": "https://www.ple.com.au/products/687985/gigabyte-aero-x16-4wh-16-165hz-ryzen-9-ai-465-rtx-5070-16gb1tb-win-11-gaming-notebook-lunar-white",
-   "price": 2599,
-   "wasPrice": 3799,
+   "price": 3799,
    "image": "https://plecom.imgix.net/iil-485021-687985.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -815,8 +814,7 @@
    "brand": "Gigabyte",
    "mpn": "AORUS MASTER 16 6ZJM6AUE64SH",
    "url": "https://www.ple.com.au/products/685369/gigabyte-aorus-master-16-gen-2-6zj-16-oled-240hz-ryzen-9-9955hx3d-rtx-5090-32gb1tb-win-11-gaming-notebook",
-   "price": 6499,
-   "wasPrice": 8999,
+   "price": 8999,
    "image": "https://plecom.imgix.net/iil-472257-685369.jpg?w=600&h=600",
    "inStock": true
   },

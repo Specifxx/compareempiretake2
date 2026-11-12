@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T00:54:25.756Z",
+ "scrapedAt": "2026-11-12T02:12:27.320Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -58,7 +58,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-128gb-wi-fi-cellular-pink",
    "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803409-Product-0-I-638767381223075236.jpg?v=1741141388",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -78,7 +78,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-128gb-wi-fi-cellular-yellow",
    "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803408-Product-0-I-638767380030020489.jpg?v=1741141269",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -168,7 +168,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-512gb-wi-fi-blue",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803404-Product-0-I-638767396237465355.jpg?v=1741143124",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -239,16 +239,6 @@
    "price": 1549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803414-Product-0-I-638767391447782981.jpg?v=1741142410",
    "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "579771",
-   "title": "Apple iPad Air 10.9-inch 256GB Wi-Fi (Blue) [5th Gen]",
-   "url": "https://www.jbhifi.com.au/products/apple-ipad-air-10-9-inch-256gb-wi-fi-blue-5th-gen",
-   "price": 697,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/579771-Product-0-I-637824201177637969.jpg?v=1791174757",
-   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -358,7 +348,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-air-11-inch-m4-1tb-wi-fi-purple",
    "price": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807692-Product-0-I-639080821685148924.jpg?v=1772485447",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -408,7 +398,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-air-11-inch-m4-1tb-wi-fi-cellular-space-grey",
    "price": 2549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807723-Product-0-I-639080821812406232.jpg?v=1772485446",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -418,7 +408,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-air-11-inch-m4-1tb-wi-fi-cellular-starlight",
    "price": 2549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807725-Product-0-I-639080821869485799.jpg?v=1772485446",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -888,7 +878,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-air-13-inch-m4-512gb-wi-fi-cellular-space-grey",
    "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748029-Product-0-I-639080830805863560.jpg?v=1791174797",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -899,6 +889,16 @@
    "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748017-Product-0-I-639080835003253511.jpg?v=1791174801",
    "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "747993",
+   "title": "Apple iPad mini 8.3-inch Wi-Fi + Cellular 256GB (Blue)[A17 Pro Chip]",
+   "url": "https://www.jbhifi.com.au/products/apple-ipad-mini-8-3-inch-wi-fi-cellular-256gb-bluea17-pro-chip",
+   "price": 1399,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/747993-Product-0-I-638646297005376548.jpg?v=1744178692",
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -966,7 +966,7 @@
    "sku": "747970",
    "title": "Apple iPad mini 8.3-inch Wi-Fi 128GB (Blue)[A17 Pro Chip]",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-mini-8-3-inch-wi-fi-128gb-bluea17-pro-chip",
-   "price": 897,
+   "price": 767,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/747970-Product-0-I-638646297603652799.jpg?v=1736999898",
    "inStock": true,
    "brand": "Apple"
@@ -976,7 +976,7 @@
    "sku": "747969",
    "title": "Apple iPad mini 8.3-inch Wi-Fi 128GB (Space Grey)[A17 Pro Chip]",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-mini-8-3-inch-wi-fi-128gb-space-greya17-pro-chip",
-   "price": 897,
+   "price": 767,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/747969-Product-0-I-638646286206437794.jpg?v=1737003853",
    "inStock": true,
    "brand": "Apple"
@@ -1398,7 +1398,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-pro-11-inch-512gb-wi-fi-cellular-silverm5",
    "price": 2699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/747995-Product-0-I-638961726002598106.jpg?v=1760591406",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1448,7 +1448,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-pro-13-inch-1tb-wi-fi-cellular-space-blackm5",
    "price": 3999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807524-Product-0-I-638961727201743224.jpg?v=1760591586",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1528,7 +1528,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-pro-13-inch-256gb-wi-fi-cellular-space-blackm5",
    "price": 2949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807512-Product-0-I-638961728402625498.jpg?v=1760591586",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1676,7 +1676,7 @@
    "sku": "844441",
    "title": "Lenovo Ideatab Plus 12\" 2.5K 256GB Paper Like Tablet",
    "url": "https://www.jbhifi.com.au/products/lenovo-ideatab-plus-12-2-5k-256gb-paper-like-tablet",
-   "price": 399,
+   "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/844441-Product-0-I-639160610403006338.jpg?v=1780464305",
    "inStock": true,
    "brand": "Lenovo"
@@ -1686,8 +1686,7 @@
    "sku": "899162",
    "title": "Lenovo Legion Tab 8.8\" 2.5K Qualcomm Snapdragon 256GB Android Tablet (Glacier White)",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-tab-8-8-2-5k-qualcomm-snapdragon-256gb-android-tablet-glacier-white",
-   "price": 499,
-   "wasPrice": 999,
+   "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899162-Product-0-I-639152693405451940.jpg?v=1779673397",
    "inStock": true,
    "brand": "Lenovo"
@@ -1697,7 +1696,8 @@
    "sku": "910959",
    "title": "Lenovo Tab 10.1\" Full HD 4G 128GB Tablet",
    "url": "https://www.jbhifi.com.au/products/lenovo-tab-10-1-full-hd-4g-128gb-tablet",
-   "price": 399,
+   "price": 299,
+   "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/910959-Product-0-I-639253108802815103.jpg?v=1789714145",
    "inStock": true,
    "brand": "Lenovo"
@@ -1707,7 +1707,8 @@
    "sku": "910957",
    "title": "Lenovo Tab One 8.7\" 64GB Tablet",
    "url": "https://www.jbhifi.com.au/products/lenovo-tab-one-8-7-64gb-tablet",
-   "price": 299,
+   "price": 199,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/910957-Product-0-I-639253091404844401.jpg?v=1789712405",
    "inStock": true,
    "brand": "Lenovo"
@@ -1727,7 +1728,8 @@
    "sku": "894706",
    "title": "Lenovo Tab TB311FU 10\" WUXGA 64GB Tablet",
    "url": "https://www.jbhifi.com.au/products/lenovo-tab-tb311fu-10-wuxga-64gb-tablet",
-   "price": 349,
+   "price": 229,
+   "wasPrice": 349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894706-Product-0-I-639112075804919219.jpg?v=1775610845",
    "inStock": true,
    "brand": "Lenovo"
@@ -1737,8 +1739,7 @@
    "sku": "796721",
    "title": "Lenovo Yoga Tab Plus 12.7\" 3K 512GB Tablet",
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-tab-plus-12-7-3k-512gb-tablet",
-   "price": 999,
-   "wasPrice": 1499,
+   "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796721-Product-0-I-638918469619089191.jpg?v=1756250225",
    "inStock": false,
    "brand": "Lenovo"
@@ -2006,7 +2007,7 @@
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s10-fe-13-1-5g-256gb-grey",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/804640-Product-0-I-638791488137092400.jpg?v=1743552072",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {

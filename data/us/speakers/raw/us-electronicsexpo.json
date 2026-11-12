@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:06:55.258Z",
+ "scrapedAt": "2026-11-12T02:37:23.241Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -85,7 +85,7 @@
    "price": 319.99,
    "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/bose-soundlink-max-portable-waterproof-bluetooth-speaker-black-product-type-7759679.jpg?v=1787963894",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -296,7 +296,7 @@
    "price": 159.95,
    "wasPrice": 169.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/gemini-sound-as-2112p-amplified-2-channel-pa-dj-system-12-inch-woofer-1500w-watts-power-speakers-with-xlr-inputoutput-2-x-14-inch-microphonerca-and-aux-inputs-w-7688002.jpg?v=1759436490",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gemini",
    "mpn": "GEM2112P.FBA"
   },
@@ -338,7 +338,7 @@
    "sku": "HARENCHANTSPK",
    "title": "Harman Kardon Enchant Speaker Wireless Powered Speaker with Wi-Fi, Apple AirPlay 2, and Bluetooth",
    "url": "https://www.electronicsexpo.com/products/harman-kardon-enchant-speaker-wireless-powered-speaker-with-wi-fi-apple-airplay-2-and-bluetooth",
-   "price": 329.95,
+   "price": 299,
    "wasPrice": 349.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/harman-kardon-enchant-speaker-wireless-powered-speaker-with-wi-fi-apple-airplay-2-and-bluetooth-product-type-6684000.webp?v=1784741892",
    "inStock": true,
@@ -1725,6 +1725,17 @@
    "inStock": false,
    "brand": "MB Quart",
    "mpn": "MBQJC1116E.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "POLR350BLACK.FBA",
+   "title": "Polk Audio Reserve R350 Multi-Purpose Wall-Mountable Home Theater Speaker",
+   "url": "https://www.electronicsexpo.com/products/polk-audio-reserve-series-r350-slim-center-channel-speaker-black",
+   "price": 649,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1775147.jpg?v=1793988329",
+   "inStock": true,
+   "brand": "Polk Audio",
+   "mpn": "POLR350BLACK.FBA"
   },
   {
    "retailer": "us-electronicsexpo",

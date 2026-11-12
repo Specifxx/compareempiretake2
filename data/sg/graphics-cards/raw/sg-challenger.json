@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:36:41.320Z",
+ "scrapedAt": "2026-11-12T03:08:18.472Z",
  "offers": [
   {
    "retailer": "sg-challenger",
@@ -117,7 +117,7 @@
    "price": 1799,
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/fa607_a01.jpg?v=1773889862",
-   "inStock": true,
+   "inStock": false,
    "brand": "ASUS"
   },
   {
@@ -134,24 +134,13 @@
   {
    "retailer": "sg-challenger",
    "sku": "0199291691919",
-   "title": "Asus TUF Gaming F16 FX610JH-TU084W - i7-14650HX 16GB 512GB RTX5050 16\"",
-   "url": "https://www.challenger.sg/products/asus-tuf-fx610jh-tu084w-i7-14650hx-16gb-512gb-rtx5050-16",
+   "title": "Asus TUF Gaming F16 i7-14650HX 16GB 512GB RTX5050 16\"",
+   "url": "https://www.challenger.sg/products/asus-tuf-gaming-f16-i7-14650hx-16gb-512gb-rtx5050-16",
    "price": 2199,
    "wasPrice": 2899,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/TUF-Gaming-16_FX610_Off-Black_2.jpg?v=1783650033",
    "inStock": true,
    "brand": "ASUS"
-  },
-  {
-   "retailer": "sg-challenger",
-   "sku": "0199276699404",
-   "title": "Lenovo Legion 5 15AHP11 83Q7007DSB - R7-250 16GB 512GB RTX5070 15.3\"",
-   "url": "https://www.challenger.sg/products/lenovo-legi5-83q7007dsb-r7-250-16gb-512gb-rtx5070-15",
-   "price": 2799,
-   "wasPrice": 2999,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/01_Legion_5_15AHP11_Eclipse_Black_RGB_Hero_Front_Facing_JD.jpg?v=1785809463",
-   "inStock": true,
-   "brand": "LENOVO"
   },
   {
    "retailer": "sg-challenger",
@@ -161,6 +150,17 @@
    "price": 2999,
    "wasPrice": 3099,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Legion_5_15IRX10_CT1_04.jpg?v=1785138962",
+   "inStock": true,
+   "brand": "LENOVO"
+  },
+  {
+   "retailer": "sg-challenger",
+   "sku": "0199276699404",
+   "title": "Lenovo Legion 5 R7-250 16GB 512GB RTX5070 15.3\"",
+   "url": "https://www.challenger.sg/products/lenovo-legion-5-r7-250-16gb-512gb-rtx5070-15-3",
+   "price": 2799,
+   "wasPrice": 2999,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/01_Legion_5_15AHP11_Eclipse_Black_RGB_Hero_Front_Facing_JD.jpg?v=1785809463",
    "inStock": true,
    "brand": "LENOVO"
   },
@@ -193,7 +193,7 @@
    "price": 1899,
    "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/MSI_NB_Katana-15-HX-B14WX_PNG_noShadow_Photo02_b806023d-271d-420d-9495-35f15c688f2e.jpg?v=1776838967",
-   "inStock": true
+   "inStock": false
   }
  ]
 }

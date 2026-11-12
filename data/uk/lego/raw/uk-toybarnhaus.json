@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:32:28.546Z",
+ "scrapedAt": "2026-11-12T03:03:33.117Z",
  "offers": [
   {
    "retailer": "uk-toybarnhaus",
@@ -9,7 +9,7 @@
    "price": 66.99,
    "wasPrice": 71.84,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/42233_Display1_v29.png?v=1784975647",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "42233"
   },
@@ -75,7 +75,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-botanicals-happy-plants-v29-10349",
    "price": 17.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/10349_boxprod_v39_sha.png?v=1747315847",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "10349"
   },
@@ -119,7 +119,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-botanicals-rocking-plants-artificial-flowers-set-11506",
    "price": 17.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/11506_boxprod_v29_sha.png?v=1775133584",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "11506"
   },
@@ -439,7 +439,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-disney-moana-village-house-boat-43282",
    "price": 17.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43282_boxprod_v29.png?v=1787485726",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "43282"
   },
@@ -451,7 +451,7 @@
    "price": 29.99,
    "wasPrice": 54.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43270_boxprod_v29_sha.png?v=1785418975",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "43270"
   },
@@ -462,7 +462,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-disney-rapunzels-mini-tower-43294",
    "price": 17.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43294_boxprod_v29_sha.png?v=1787483914",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "43294"
   },
@@ -766,7 +766,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-harry-potter-dobby™-the-free-elf-76469",
    "price": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76469_boxprod_v29.png?v=1778330685",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "76469"
   },
@@ -777,7 +777,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-harry-potter-forbidden-forest™-expecto-patronum-76475",
    "price": 24.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76475_boxprod_v29_sha.png?v=1778505610",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "76475"
   },
@@ -877,7 +877,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-icons-the-lord-of-the-rings-saurons-helmet-11373",
    "price": 64.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/11373_boxprod_v29_sha_8064e943-dfc5-432c-84b1-e10b1a71a9ae.png?v=1770048012",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "11373"
   },
@@ -988,7 +988,7 @@
    "price": 55.99,
    "wasPrice": 69.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/21368_boxprod_v29_sha.png?v=1778499586",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21368"
   },
@@ -1557,7 +1557,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-speed-champions-lightning-mcqueen-77255",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77255_boxprod_v29_sha.png?v=1765381119",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "77255"
   },
@@ -1645,7 +1645,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-speed-champions-mercedes-amg-petronas-f1®-team-race-car-77244",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77244_boxprod_v29_sha.png?v=1739962341",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "77244"
   },
@@ -1861,24 +1861,13 @@
   },
   {
    "retailer": "uk-toybarnhaus",
-   "sku": "LEG75443",
-   "title": "LEGO Star Wars Grogu’s Homestead Toy Building Set (75443)",
-   "url": "https://www.toybarnhaus.co.uk/products/lego-star-wars-grogu-s-homestead-toy-building-set-75443",
-   "price": 17.99,
-   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75443_boxprod_v29_sha.png?v=1765381106",
-   "inStock": true,
-   "brand": "LEGO",
-   "mpn": "75443"
-  },
-  {
-   "retailer": "uk-toybarnhaus",
    "sku": "LEG75425",
    "title": "LEGO Star Wars SMART Play: Mos Eisley Cantina (75425)",
    "url": "https://www.toybarnhaus.co.uk/products/lego-star-wars-smart-play™-mos-eisley-cantina™-75425",
    "price": 39.99,
    "wasPrice": 69.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75425_boxprod_v29_Compatible_EN.png?v=1772380231",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "75425"
   },
@@ -2038,18 +2027,6 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "75413"
-  },
-  {
-   "retailer": "uk-toybarnhaus",
-   "sku": "LEG75423",
-   "title": "LEGO Star Wars: SMART Play: Luke's Red Five X-Wing (75423)",
-   "url": "https://www.toybarnhaus.co.uk/products/lego-star-wars-smart-play™-lukes-red-five-x-wing™-75423",
-   "price": 49.99,
-   "wasPrice": 79.99,
-   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75423_3.png?v=1770560202",
-   "inStock": true,
-   "brand": "LEGO",
-   "mpn": "75423"
   },
   {
    "retailer": "uk-toybarnhaus",
@@ -2313,17 +2290,6 @@
    "inStock": false,
    "brand": "LEGO",
    "mpn": "77093"
-  },
-  {
-   "retailer": "uk-toybarnhaus",
-   "sku": "LEG76784",
-   "title": "LEGO Wednesday Black Dahlia Flower (76784)",
-   "url": "https://www.toybarnhaus.co.uk/products/lego®-wednesday-black-dahlia-flower-halloween-gift-faux-plant-room-decor-76784",
-   "price": 19.99,
-   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76784_boxprod_v29_sha.png?v=1751892755",
-   "inStock": true,
-   "brand": "LEGO",
-   "mpn": "76784"
   },
   {
    "retailer": "uk-toybarnhaus",

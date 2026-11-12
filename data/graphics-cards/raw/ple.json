@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T00:14:09.111Z",
+ "scrapedAt": "2026-11-12T01:45:14.674Z",
  "offers": [
   {
    "retailer": "ple",
@@ -252,7 +252,7 @@
    "brand": "ASUS",
    "mpn": "ROG-STRIX-RTX5070TI-O16G-GAMING",
    "url": "https://www.ple.com.au/products/676585/asus-geforce-rtx-5070-ti-rog-strix-oc-16gb-gddr7",
-   "price": 2399,
+   "price": 2489,
    "image": "https://plecom.imgix.net/iil-437378-676585.jpg?w=600&h=600",
    "inStock": true
   },
@@ -597,7 +597,7 @@
    "url": "https://www.ple.com.au/products/672378/gigabyte-geforce-rtx-5070-eagle-oc-sff-12gb-gddr7",
    "price": 1499,
    "image": "https://plecom.imgix.net/iil-416517-672378.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -652,7 +652,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5080AORUS IF-16GD",
    "url": "https://www.ple.com.au/products/686207/gigabyte-geforce-rtx-5080-aorus-infinity-16gb-gddr7",
-   "price": 3499,
+   "price": 3299,
    "wasPrice": 3799,
    "image": "https://plecom.imgix.net/iil-475428-686207.jpg?w=600&h=600",
    "inStock": true
@@ -676,7 +676,8 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5080AORUS M-16GD",
    "url": "https://www.ple.com.au/products/672368/gigabyte-geforce-rtx-5080-aorus-master-16gb-gddr7",
-   "price": 3699,
+   "price": 3599,
+   "wasPrice": 3699,
    "image": "https://plecom.imgix.net/iil-416521-672368.jpg?w=600&h=600",
    "inStock": true
   },
@@ -709,8 +710,20 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5080WF3OC-16GD",
    "url": "https://www.ple.com.au/products/672384/gigabyte-geforce-rtx-5080-windforce-oc-sff-16gb-gddr7",
-   "price": 3599,
+   "price": 3199,
+   "wasPrice": 3599,
    "image": "https://plecom.imgix.net/iil-416526-672384.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "672364",
+   "title": "Gigabyte GeForce RTX 5090 Aorus Master 32GB GDDR7",
+   "brand": "Gigabyte",
+   "mpn": "GV-N5090AORUS M-32GD",
+   "url": "https://www.ple.com.au/products/672364/gigabyte-geforce-rtx-5090-aorus-master-32gb-gddr7",
+   "price": 13999,
+   "image": "https://plecom.imgix.net/iil-416528-672364.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -722,7 +735,7 @@
    "url": "https://www.ple.com.au/products/680222/gigabyte-radeon-r9700-ai-top-32gb-gddr6",
    "price": 2899,
    "image": "https://plecom.imgix.net/iil-451625-680222.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -754,7 +767,7 @@
    "brand": "MSI",
    "mpn": "GeForce GT 1030 4GD4 LP OC",
    "url": "https://www.ple.com.au/products/663145/msi-geforce-gt-1030-4gb-ddr4-low-profile-oc",
-   "price": 189,
+   "price": 179,
    "wasPrice": 195,
    "image": "https://plecom.imgix.net/iil-361456-663145.jpg?w=600&h=600",
    "inStock": true
@@ -1028,7 +1041,7 @@
    "url": "https://www.ple.com.au/products/679162/nvidia-rtx-pro-4500-blackwell-32gb-gddr7",
    "price": 7599,
    "image": "https://plecom.imgix.net/iil-460284-679162.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-11T01:36:41.321Z",
+ "scrapedAt": "2026-11-12T03:08:18.473Z",
  "offers": [
   {
    "retailer": "sg-challenger",
@@ -89,7 +89,8 @@
    "sku": "0195951379012",
    "title": "Apple AirPods 5",
    "url": "https://www.challenger.sg/products/mkfw4za-a-airpods-5",
-   "price": 199,
+   "price": 189,
+   "wasPrice": 199,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/AirPods_5_White_PDP_Image_Position_1__en-SG.jpg?v=1789027606",
    "inStock": true,
    "brand": "APPLE"
@@ -99,7 +100,8 @@
    "sku": "0195951378695",
    "title": "Apple AirPods 5 with Wireless Charging",
    "url": "https://www.challenger.sg/products/mkft4za-a-airpods-5-wireless-charging",
-   "price": 219,
+   "price": 209,
+   "wasPrice": 219,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/AirPods_5_White_PDP_Image_Position_1__en-SG.jpg?v=1789027606",
    "inStock": true,
    "brand": "APPLE"
@@ -739,6 +741,28 @@
    "price": 529,
    "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Px7S3Blue1.jpg?v=1778742596",
+   "inStock": true,
+   "brand": "BOWERS WILKINS"
+  },
+  {
+   "retailer": "sg-challenger",
+   "sku": "0714346351466",
+   "title": "Bowers Wilkins Pi8 ANC TWS Earbuds Dark Burgundy",
+   "url": "https://www.challenger.sg/products/bowers-wilkins-pi8-tws-earbuds-dark-burgundy",
+   "price": 529,
+   "wasPrice": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/B_WPi8DarkBurgundy1.jpg?v=1794365743",
+   "inStock": false,
+   "brand": "BOWERS WILKINS"
+  },
+  {
+   "retailer": "sg-challenger",
+   "sku": "0714346351589",
+   "title": "Bowers Wilkins Pi8 ANC TWS Earbuds Pale Mauve",
+   "url": "https://www.challenger.sg/products/bowers-wilkins-pi8-tws-earbuds-pale-mauve-1",
+   "price": 529,
+   "wasPrice": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/B_WPi8PaleMauve1.jpg?v=1794365435",
    "inStock": true,
    "brand": "BOWERS WILKINS"
   },
@@ -2559,7 +2583,7 @@
    "price": 169,
    "wasPrice": 239,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/g522-bk_1.jpg?v=1782961897",
-   "inStock": false,
+   "inStock": true,
    "brand": "LOGITECH G"
   },
   {
@@ -3461,7 +3485,7 @@
    "price": 217.55,
    "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/bsv3-bk_1.jpg?v=1786605683",
-   "inStock": false,
+   "inStock": true,
    "brand": "RAZER"
   },
   {
@@ -3538,7 +3562,7 @@
    "price": 569.05,
    "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/8887910060094_CTyNEqpWe4uvtIkTS2wQo1DIZ3kpFUZRxrTNNoWq.jpg?v=1758856336",
-   "inStock": false,
+   "inStock": true,
    "brand": "RAZER"
   },
   {
@@ -4052,7 +4076,7 @@
    "sku": "0810202681927",
    "title": "Shokz OpenFit Pro Open-Ear TWS Earbuds (Black)",
    "url": "https://www.challenger.sg/products/shokz-openfit-pro-open-ear-tws-earbuds-black",
-   "price": 369.55,
+   "price": 349,
    "wasPrice": 389,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SHOKZ_OPENFITPRO_BK_Renderin_0011.jpg?v=1777442416",
    "inStock": true,
@@ -4063,7 +4087,7 @@
    "sku": "0810202681910",
    "title": "Shokz OpenFit Pro Open-Ear TWS Earbuds (White)",
    "url": "https://www.challenger.sg/products/shokz-openfit-pro-open-ear-tws-earbuds-white",
-   "price": 369.55,
+   "price": 349,
    "wasPrice": 389,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SHOKZ_OPENFITPRO_WT_Rendering_001.jpg?v=1777442412",
    "inStock": true,
