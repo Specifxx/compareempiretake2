@@ -311,7 +311,8 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
   // materials on your Site"), but never Amazon's price: that stays on the product page (24-hour licence).
   const found = variantId ? phone.amazon?.[variantId] : undefined;
   const live = compact ? undefined : found;
-  const amazonHref = found?.url ?? amazonLink(region, mq, compact ? "quickview" : "product");
+  // Only with a live Amazon price (owner, 2026-11-12): no unpriced Amazon row, and none in the quick view.
+  const amazonHref = live?.price ? (found?.url ?? amazonLink(region, mq, "product")) : null;
   const amazonName = amazonStore(region)?.name;
   const ebay = markets.find((m) => m.id === "ebay")!;
   const cid = `p-${phone.category}-${phone.slug}`;
