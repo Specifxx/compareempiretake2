@@ -2061,3 +2061,17 @@ the same rule: bot walls, never worked around.
 ## 2026-11-12 — Paid rows made visible and clickable (owner: "flood the underperforming sites with affiliate links, highly visible")
 
 The owner asked for the paid rows to be easy to see and click on the two sites that earn almost nothing from heavy traffic (Compare Empire, CamCompare). Changes are presentation only: the eBay and Amazon rows and any paid store row now carry a filled button with its action ("Buy on eBay", "Buy on Amazon", "Buy at store") at every width, including phones, where the button used to be a bare icon; the label reads "Ad · Paid link"; the hero's eBay button is filled; CamCompare's "or $X at <store>" line is a button. Unchanged on purpose: every link is rel sponsored, a paid row is never counted as a store, "cheapest" or a deal, commission never decides the order of the store rows, no pop-ups, URLs, titles and metadata are as before.
+
+## 2026-11-12 — Feature the dearer items on the front page (owner)
+
+The owner wants the front page to push the higher-priced products, since a dearer sale pays more commission. Selection
+only: every product stays listed, searchable and linkable, and no URL, title, description, JSON-LD or sitemap changes.
+
+- **Floor = the median best price of a category's 2+-store products in that region** (`featureFloor` in `lib/catalog.ts`).
+  Real data, in each market's own currency (never converted) and each category's own price level, so no hand-typed AU/US
+  number to go stale; 0 (no floor) under 8 comparable products.
+- Home: the "most compared" phone row and each category strip take products at or above the floor ordered by
+  `ticketWeight` (price × stores, capped at five), falling back to the old stores-first order when too few clear it.
+  "Price drops today" calls `getDeals(…, { pricier: true })`: offers under the category floor are skipped and the price
+  level adds to the rank. `/deals`, the category pages, guides and the family feed keep the unfiltered `getDeals`.
+- Unchanged on purpose: store rows inside a product stay in price order, commission never ranks, deals are never eBay.
