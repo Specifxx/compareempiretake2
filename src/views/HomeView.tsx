@@ -5,7 +5,7 @@ import { PhoneCard } from "@/components/PhoneCard";
 import { SearchBox } from "@/components/SearchBox";
 import { getGuides } from "@/lib/guides";
 import { GuideCard } from "@/components/GuideCard";
-import { catalogDay, comparedCategories, getCatalog, historyMature, historySince, liveRegions, getDeals, getSummaries, type PhoneSummary } from "@/lib/catalog";
+import { catalogDay, comparedCategories, getCatalog, historyMature, historySince, liveRegions, getDeals, getSummaries, featureFloor, ticketWeight, type PhoneSummary } from "@/lib/catalog";
 import type { CategoryId } from "@/lib/types";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { FEATURED } from "@/lib/categories";
@@ -22,17 +22,22 @@ export function HomeView({ region }: { region: RegionId }) {
   const to = (h: string) => withRegion(h, region);
   const { retailers, updatedAt, phones } = getCatalog(undefined, region);
   const summaries = getSummaries("phones", region);
-  const deals = getDeals(6, undefined, region);
+  const deals = getDeals(6, undefined, region, { pricier: true });
   const stores = retailers.length;
   // Only categories with a real comparison: 2+ stores and a product two of them sell (US shopper review, 2026-11-06).
   // Ordered by what visitors open (FEATURED is the 30-day analytics order, 2026-11-09), the rest after.
   const rank = (id: string) => { const i = FEATURED.indexOf(id as CategoryId); return i < 0 ? 99 : i; };
   const cats = [...comparedCategories(region)].sort((a, b) => rank(a.id) - rank(b.id)).map((c) => {
     const items = getSummaries(c.id as CategoryId, region);
-    return { c, count: items.length, from: Math.min(...items.map((p) => p.bestPrice)), image: popularOf(items, 1)[0]?.image, popular: popularOf(items, 4) };
+    return { c, count: items.length, from: Math.min(...items.map((p) => p.bestPrice)), image: popularOf(items, 1)[0]?.image, popular: popularOf(items, 4, true) };
   });
   const offers = phones.reduce((n, p) => n + p.offerCount, 0);
-  const popular = summaries.filter((p) => p.retailerCount >= 2 && p.image).sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice).slice(0, 10);
+  // Dearer products first (owner, 2026-11-12): above the category's median price, ordered by ticket size, falling back
+  // to the old stores-first order when too few clear the floor. Cheaper phones stay listed and searchable.
+  const phoneFloor = featureFloor(summaries);
+  const stocked = summaries.filter((p) => p.retailerCount >= 2 && p.image);
+  const pricey = stocked.filter((p) => p.bestPrice >= phoneFloor).sort((a, b) => ticketWeight(b) - ticketWeight(a) || b.generation - a.generation);
+  const popular = (pricey.length >= 10 ? pricey : stocked.sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice)).slice(0, 10);
   // The "is that sale real?" promise only once the region's history can keep it (lib/catalog.ts HISTORY_CLAIM_DAYS).
   const mature = historyMature(region);
   const since = new Date(`${historySince(region)}T12:00:00Z`).toLocaleDateString(R.locale, { day: "numeric", month: "long", timeZone: "UTC" });
@@ -175,7 +180,12 @@ function SectionHead({ title, sub, href, cta }: { title: string; sub?: string; h
 }
 
 /** Stocked by the most stores first: that's where the price gap means something. */
-function popularOf(items: PhoneSummary[], n: number) {
+function popularOf(items: PhoneSummary[], n: number, pricier = false) {
+  if (pricier) {
+    const floor = featureFloor(items);
+    const top = items.filter((p) => p.image && p.inStock && p.retailerCount >= 2 && p.bestPrice >= floor).sort((a, b) => ticketWeight(b) - ticketWeight(a) || b.generation - a.generation);
+    if (top.length >= n) return top.slice(0, n);
+  }
   return items
     // Sold by two or more stores: a one-store product is not a comparison.
     .filter((p) => p.image && p.inStock && p.retailerCount >= 2)

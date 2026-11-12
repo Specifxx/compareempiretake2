@@ -326,8 +326,29 @@ export function wasChecker(p: Phone, v: Variant): (o: Offer) => boolean {
   return (o) => wasCheck(o, stores[o.retailer], RETAILERS[o.retailer]?.name ?? o.retailer, today)?.status === "backed";
 }
 
-export function getDeals(limit = 60, category?: CategoryId, region: RegionId = "au"): Deal[] {
+/**
+ * Front-page featuring floor (owner, 2026-11-12: feature the dearer items, they earn more commission per sale).
+ * The median best price of a category's multi-store products in one region, so it follows each market's own currency
+ * and each category's own price level (never converted, never a hand-typed number). Cheaper products stay listed,
+ * searchable and linkable; they are just not featured on the home page.
+ */
+export function featureFloor(items: { bestPrice: number; retailerCount: number }[]): number {
+  const prices = items.filter((p) => p.retailerCount >= 2).map((p) => p.bestPrice);
+  return prices.length >= 8 ? median(prices) : 0;
+}
+
+/** Home-page ordering: price level first, weighted by how many stores sell it (a comparison needs 2+). */
+export function ticketWeight(p: { bestPrice: number; retailerCount: number }): number {
+  return p.bestPrice * Math.min(p.retailerCount, 5);
+}
+
+export function getDeals(limit = 60, category?: CategoryId, region: RegionId = "au", opts: { pricier?: boolean } = {}): Deal[] {
   const out: Deal[] = [];
+  const floors = new Map<string, number>();
+  const floorOf = (c: string) => {
+    if (!floors.has(c)) floors.set(c, featureFloor(getSummaries(c as CategoryId, region)));
+    return floors.get(c)!;
+  };
   const $ = (n: number) => money(n, region);
   for (const phone of getProducts(category, region)) {
     // A single store's "RRP" on an old phone is not a deal anyone can check.
@@ -335,6 +356,7 @@ export function getDeals(limit = 60, category?: CategoryId, region: RegionId = "
     for (const variant of phone.variants) {
       const d = variantDeal(variant, wasChecker(phone, variant));
       if (d.saving < 20) continue;
+      if (opts.pricier && d.offer.price < floorOf(phone.category)) continue;
       const percent = Math.round((d.saving / d.reference) * 100);
       if (percent < 4) continue;
       const label =
@@ -348,7 +370,8 @@ export function getDeals(limit = 60, category?: CategoryId, region: RegionId = "
   }
   // One deal per phone: its best variant.
   const byPhone = new Map<string, Deal>();
-  for (const d of out.sort((a, b) => score(b) - score(a))) if (!byPhone.has(productHref(d.phone))) byPhone.set(productHref(d.phone), d);
+  const rank = opts.pricier ? (d: Deal) => score(d) + Math.log(d.offer.price + 1) * 8 : score;
+  for (const d of out.sort((a, b) => rank(b) - rank(a))) if (!byPhone.has(productHref(d.phone))) byPhone.set(productHref(d.phone), d);
   return [...byPhone.values()].slice(0, limit);
 }
 
