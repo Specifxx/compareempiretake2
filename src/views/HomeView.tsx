@@ -14,6 +14,7 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { HomeRegionPicker } from "@/components/HomeRegionPicker";
 import { HotLaunches } from "@/components/HotLaunches";
 import { hotLaunches, storePreorders } from "@/lib/launches";
+import { ChristmasBanner } from "@/components/season/ChristmasBanner";
 import { CreatorsCornerBadge } from "@/components/creators/CreatorsCornerBadge";
 
 export function HomeView({ region }: { region: RegionId }) {
@@ -57,6 +58,7 @@ export function HomeView({ region }: { region: RegionId }) {
           <div className="mx-auto max-w-3xl text-center">
             {/* The creators hub, above the fold (owner, 2026-11-03): top-right corner from sm, a centred pill above the headline on a phone. */}
             <CreatorsCornerBadge />
+            <ChristmasBanner href={to("/deals")} />
             <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
               {mature ? <>Is that sale actually real?</> : <>Every store&apos;s price, cheapest first.</>}
             </h1>

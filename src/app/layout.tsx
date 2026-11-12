@@ -21,7 +21,7 @@ import "./globals.css";
 // The cart list's styles (components/cart): imported here, never from a component, so node tests can load them.
 import "@/components/cart/cart.css";
 import "@/components/site-reviews/site-reviews.css";
-import { SEASON_BOOT_SCRIPT } from "@/lib/season";
+import { CHRISTMAS_FESTIVE_LAYER, SEASON_BOOT_SCRIPT } from "@/lib/season";
 
 // Self-hosted (OFL, from Fontsource) so builds never depend on fetching Google Fonts.
 const sans = localFont({ src: "./fonts/inter-latin-wght-normal.woff2", variable: "--font-sans", display: "swap", weight: "100 900" });
@@ -101,7 +101,7 @@ const getChrome = () =>
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const { regions, nav } = getChrome();
   return (
-    <html lang="en" className={sans.variable} data-regions={regions.join(" ")} suppressHydrationWarning>
+    <html lang="en" className={sans.variable} data-regions={regions.join(" ")} data-festive={CHRISTMAS_FESTIVE_LAYER ? "" : undefined} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         {/* Christmas (1 November to Boxing Day): data-season on <html> from the visitor's own date. lib/season.ts. */}

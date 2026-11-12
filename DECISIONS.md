@@ -2075,3 +2075,20 @@ only: every product stays listed, searchable and linkable, and no URL, title, de
   "Price drops today" calls `getDeals(…, { pricier: true })`: offers under the category floor are skipped and the price
   level adds to the rank. `/deals`, the category pages, guides and the family feed keep the unfiltered `getDeals`.
 - Unchanged on purpose: store rows inside a product stay in price order, commission never ranks, deals are never eBay.
+
+## 2026-11-12: a tasteful Christmas layer (owner: "more festive again", after the 8 November tone-down)
+
+On 2026-11-08 the owner had the over-the-top Christmas theme stripped ("the theme must match the domain"); on 2026-11-12 he asked for
+it to be more festive again. Accents only, behind the existing season window (1 November to 26 December, the visitor's date, `?season=`):
+
+- **A gifts banner** above the home headline (`components/season/ChristmasBanner.tsx`, from `HomeView`): one line of server HTML, an inline
+  `currentColor` gift icon, "Christmas tech gifts" (not a heading) and, from sm, a short subline. A cranberry-then-pine 3px left edge; the
+  card colours are the site's own. **This site has no gift guide and no gifts pill**, so it links the region's `/deals`, the holiday page
+  that lasts the whole season (Black Friday's strip ends after Cyber Monday). No new page.
+- **A 3px two-tone hairline** at the top of the page (`body` border, a hard-stop gradient, cranberry then pine), pure CSS, with `--xmas-red`
+  and `--xmas-green` tokens that are lighter in the dark theme. The Black Friday strip takes the cranberry token as a left edge; the
+  `.xmas-pill` rule in the shared block takes the pine one. No new elements.
+- **One off switch**: `CHRISTMAS_FESTIVE_LAYER` in `lib/season.ts`. It gates the banner markup and `data-festive` on `<html>`, which the CSS keys
+  on. False after New Year removes it; the window closing on 26 December does it anyway. The window logic is unchanged.
+- Still absent, and pinned by `tests/season.test.ts`: snow, flakes, lights, hats, candy stripes, canvas, animation, palette swaps, pop-ups,
+  floating rails, images, webfonts, extra requests. No URL, title, meta or heading changed; no `revalidate` touched.
