@@ -2097,3 +2097,16 @@ it to be more festive again. Accents only, behind the existing season window (1 
 ## 2026-11-12: the festive layer is released urgently (owner)
 
 The owner said to deploy the festive layer urgently once every site had it, so this merge carries `[deploy] [urgent]` in its subject: one production build now, instead of waiting for the next release. No other change.
+
+
+## 2026-11-12: a calmer price table (owner)
+
+The owner opened DexCompare and its quick view and said there was too much going on: too many colours, a colour per row. DexCompare's
+rule now applies here too: the accent is for the one thing to press, green is for money (the best price), everything else is neutral.
+This replaces the coloured outlines of 2026-11-06 and 2026-11-07.
+
+`PIN_OUTLINE` (`EbayListingRow.tsx`): the pinned eBay and Amazon rows lose their green and amber rings; the cheapest in-stock store row trades its sky-blue ring for a thin ring and soft wash in the savings green.
+
+Order, labels, links, tags, URLs, titles, metadata and headings are unchanged; what we earn still never decides order. Measure outbound
+clicks per placement on 19 November against the week before: if the pinned eBay row's clicks fall, strengthen its button before
+bringing any outline back.

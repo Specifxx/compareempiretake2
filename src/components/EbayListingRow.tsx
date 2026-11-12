@@ -5,12 +5,11 @@ import { StoreVote } from "./StoreVote";
 import { CartAddButton } from "./cart/CartAddButton";
 
 /**
- * The pinned rows' outlines (owner, 2026-11-06: eBay and Amazon rows "function exactly like a normal store price row … it just
- * sits on the very top. And it has a different colored outline"): eBay green, Amazon amber.
+ * The rows' marks. Since 2026-11-12 (owner: "too many colors … all the colored rows") the pinned eBay and Amazon rows carry no
+ * outline: their place on top and their "Ad" label tell them apart. The cheapest store row keeps the one mark, in the savings
+ * green (green is the colour of money on this site).
  */
-// cheapest: the "Cheapest" store row (owner, 2026-11-07: "the cheapest listing should also have an outline too"), sky blue
-// across the family so it never reads as eBay's green (its old faint green ring did) or Amazon's amber.
-export const PIN_OUTLINE = { ebay: "ring-2 ring-[#16a34a]", amazon: "ring-2 ring-[#f59e0b]", cheapest: "ring-2 ring-[#0ea5e9]" } as const;
+export const PIN_OUTLINE = { ebay: "", amazon: "", cheapest: "ring-1 ring-save/60 bg-save-soft/40" } as const;
 
 /**
  * Today's cheapest matching new eBay listing for a product, from the eBay Browse API (checked daily
