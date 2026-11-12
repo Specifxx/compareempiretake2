@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import vm from "node:vm";
 import { readFileSync } from "node:fs";
-import { isChristmas, SEASON_BOOT_SCRIPT } from "../src/lib/season";
+import { CHRISTMAS_FESTIVE_LAYER, isChristmas, SEASON_BOOT_SCRIPT } from "../src/lib/season";
 
 // Christmas (owner, 2026-11-01): 1 November to Boxing Day by the visitor's own date; pure decoration.
 
@@ -40,4 +40,22 @@ test("the layout stamps the season before paint, and Christmas is one quiet line
   for (const gone of [".xmas-snow", ".xmas-lights", ".xmas-art", ".xmas-hero", ".xmas-logo-hat", "/xmas/"]) assert.ok(!css.includes(gone), gone);
   assert.match(css, /:root\[data-season="christmas"\] \.xmas-pill-row \{\s*display: flex;/);
   assert.match(css, /\.xmas-pill \{[^}]*color: inherit;/);
+});
+
+test("the festive layer: tasteful accents behind one switch (owner, 2026-11-12, after the 2026-11-08 tone-down)", () => {
+  const css = readFileSync("src/app/globals.css", "utf8");
+  const block = css.slice(css.indexOf("xmas-common:start"), css.indexOf("xmas-common:end")).replace(/\/\*[\s\S]*?\*\//g, "");
+  assert.doesNotMatch(block, /@keyframes|animation|canvas|snow|flake|repeating-linear-gradient|45deg/, "no animation, snow, flakes, canvas or candy stripes");
+  assert.doesNotMatch(css, /data-season="christmas"\][^{]*\{[^}]*--(bg|card|ink|brand)\b/, "no palette swap");
+  assert.match(css, /\[data-season="christmas"\]\[data-festive\] \.xmas-banner \{\s*display: inline-flex;/, "the banner needs the season and the switch");
+  assert.match(css, /\[data-festive\] body \{[^}]*border-top: 3px solid[^}]*linear-gradient\(90deg, rgb\(var\(--xmas-red\)\) 50%, rgb\(var\(--xmas-green\)\) 50%\)/, "a 3px two-tone hairline, hard stop");
+  assert.match(css, /\[data-holiday-strip\] \{\s*box-shadow: inset 3px 0 0 rgb\(var\(--xmas-red\)\)/, "the Black Friday strip takes the token");
+  assert.match(css, /\.dark \{\s*--xmas-red/, "dark-theme tokens");
+  assert.equal(CHRISTMAS_FESTIVE_LAYER, true);
+  assert.match(readFileSync("src/app/layout.tsx", "utf8"), /data-festive=\{CHRISTMAS_FESTIVE_LAYER/);
+  const banner = readFileSync("src/components/season/ChristmasBanner.tsx", "utf8");
+  assert.match(banner, /CHRISTMAS_FESTIVE_LAYER/);
+  assert.match(banner, /currentColor/);
+  assert.doesNotMatch(banner, /<h[1-6]|canvas|snow|flake|<img/, "not a heading, no art");
+  assert.match(readFileSync("src/views/HomeView.tsx", "utf8"), /<ChristmasBanner href=\{to\("\/deals"\)\}/, "links the existing deals page");
 });

@@ -7,6 +7,11 @@
 // To switch it off early, set CHRISTMAS_TO to yesterday's month and day: no other file decides it. `?season=christmas`
 // previews it out of season, `?season=off` hides it.
 
+/** The one switch for the festive layer (owner, 2026-11-12, "more festive again", after the 2026-11-08 tone-down): the home page's
+ *  gifts banner and the data-festive attribute that the top hairline and the strip accent key on in globals.css. Set it to false
+ *  after New Year to remove them; the layer also ends by itself when the window closes on 26 December. */
+export const CHRISTMAS_FESTIVE_LAYER = true;
+
 export const CHRISTMAS_FROM = 1101; // mmdd, inclusive
 export const CHRISTMAS_TO = 1226;
 
