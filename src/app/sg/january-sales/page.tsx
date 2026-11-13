@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { saleYear, SALE_SEASONS } from "@/lib/sale-seasons";
 import { DealsView } from "@/components/DealsView";
-import { EbayStrip } from "@/components/EbayStrip";
+import { InlineAds } from "@/components/InlineAds";
 import { ogImage } from "@/lib/og";
 import { hubLanguages, regionLive } from "@/views/region-meta";
 
@@ -22,7 +22,7 @@ export default function Page() {
     <>
       <DealsView region="sg" sale="january-sales" />
       <div className="container-x pb-4">
-        <EbayStrip query="electronics" label="tech" customid="sg-january-sales" region="sg" />
+        <InlineAds />
       </div>
     </>
   );

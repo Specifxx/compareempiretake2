@@ -1,4 +1,4 @@
-import { EbayStrip } from "@/components/EbayStrip";
+import { InlineAds } from "@/components/InlineAds";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DealsView } from "@/components/DealsView";
@@ -30,7 +30,7 @@ export default async function CategoryDealsPage({ params }: { params: Promise<{ 
     <>
       <DealsView category={c.id as CategoryId} />
       <div className="container-x pb-4">
-        <EbayStrip query={c.noun} label={c.name.toLowerCase()} customid={`deals-${c.id}`} phones={c.id === "phones"} />
+        <InlineAds />
       </div>
     </>
   );

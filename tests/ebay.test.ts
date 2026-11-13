@@ -23,7 +23,7 @@ test("every eBay tag names its region second, once (owner, 2026-11-10)", () => {
   assert.equal(ebayCustomId("us-cat-tvs", "us"), "ce-us-cat-tvs", "a page tag that starts with its region keeps it once");
   assert.equal(ebayCustomId("cat-cameras", "ca"), "ce-ca-cat-cameras", "a category starting ca… is not a region");
   assert.equal(ebayCustomId("sg-deals-all", "sg"), "ce-sg-deals-all");
-  assert.equal(ebayCustomId("ce-us-side-ebay-tvs", "au"), "ce-us-side-ebay-tvs", "a full tag is kept");
+  assert.equal(ebayCustomId("ce-us-inline-ebay-tvs", "au"), "ce-us-inline-ebay-tvs", "a full tag is kept");
   for (const region of ["au", "us", "uk", "ca", "sg"] as const) {
     const u = new URL(ebaySearch("tv", { customid: "p-tvs-x-top", region }));
     assert.equal(u.searchParams.get("customid"), `ce-${region}-p-tvs-x-top`);

@@ -12,6 +12,7 @@ import { FEATURED } from "@/lib/categories";
 import { PartnerOffers } from "@/components/PartnerOffers";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { HomeRegionPicker } from "@/components/HomeRegionPicker";
+import { InlineAds } from "@/components/InlineAds";
 import { HotLaunches } from "@/components/HotLaunches";
 import { hotLaunches, storePreorders } from "@/lib/launches";
 import { ChristmasBanner } from "@/components/season/ChristmasBanner";
@@ -140,6 +141,9 @@ export function HomeView({ region }: { region: RegionId }) {
           </Row>
         </section>
       ))}
+
+      {/* The one ad block: below the popular rows, above the guides (never the hero). */}
+      <div className="container-x"><InlineAds /></div>
 
       {/* The newest guides: what search engines and readers come back for. Every region since 2026-11-06. */}
       <section className="container-x mt-12">

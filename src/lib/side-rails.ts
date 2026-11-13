@@ -1,10 +1,10 @@
-// The side rails' tiles (components/SideRails.tsx draws them; owner, 2026-11-06: "the eBay ads … and instead of the TCGplayer
+// The ad tiles (components/InlineAds.tsx draws six of them in the page, PhoneDock.tsx the eBay ones; they were the side rails' tiles, owner, 2026-11-06: "the eBay ads … and instead of the TCGplayer
 // ad, the Amazon ad banner that's scrollable", as on DexCompare and MTG Compare), computed once per region at build and served
 // as one static file per region (/rails/<region>, force-static): no page carries them and a visit never runs a function.
 //
-//   • Left, eBay: the daily eBay job's own matches (data/<region>/ebay.json, attached in lib/catalog.ts), the most-compared
-//     products across the top categories first, live listings (photo, delivered price) first, then exact-name searches. customid ce-<region>-side-ebay-<cat>.
-//   • Right, Amazon: the most-compared products as tagged links to Amazon's own page of the item when the import found its ASIN
+//   • eBay: the daily eBay job's own matches (data/<region>/ebay.json, attached in lib/catalog.ts), the most-compared
+//     products across the top categories first, live listings (photo, delivered price) first, then exact-name searches. customid ce-<region>-inline-ebay-<cat>.
+//   • Amazon (after eBay in the block): the most-compared products as tagged links to Amazon's own page of the item when the import found its ASIN
 //     (data/amazon/), else an exact product-name search (Associates: a specific product, never a category). NO price: the
 //     Creators API refuses us until each account has 10 qualifying sales, and Amazon's licence forbids keeping a price, so a
 //     file served for a day may not carry one. The photo is the store's own, as on our cards. No Amazon in Singapore.
@@ -81,7 +81,7 @@ export function railsFor(region: RegionId): Rails {
       name: p.name,
       img,
       price: money(e.price + (e.shipping ?? 0), region),
-      href: ebayAffiliate(e.url, `${region}-side-ebay-${p.category}`, region),
+      href: ebayAffiliate(e.url, `${region}-inline-ebay-${p.category}`, region),
     });
     if (ebayTiles.length >= MAX_TILES) break;
   }
@@ -92,7 +92,7 @@ export function railsFor(region: RegionId): Rails {
     if (ebayTiles.length >= MAX_TILES) break;
     const id = `${p.category}/${p.slug}`;
     if (have.has(id) || !p.image) continue;
-    ebayTiles.push({ id, name: p.name, img: p.image, price: null, href: ebaySearch(p.name, { condition: "new", customid: `${region}-side-ebay-${p.category}`, region }) });
+    ebayTiles.push({ id, name: p.name, img: p.image, price: null, href: ebaySearch(p.name, { condition: "new", customid: `${region}-inline-ebay-${p.category}`, region }) });
   }
 
   let amazon: Rails["amazon"] = null;
@@ -104,7 +104,7 @@ export function railsFor(region: RegionId): Rails {
     const tiles: RailTile[] = [];
     for (const p of order) {
       const id = `${p.category}/${p.slug}`;
-      const href = amazonLink(region, asins.get(id) ?? p.name, `side-amazon-${p.category}`);
+      const href = amazonLink(region, asins.get(id) ?? p.name, `inline-amazon-${p.category}`);
       if (!href || !p.image) continue;
       tiles.push({ id, name: p.name, img: p.image, price: null, href });
       if (tiles.length >= MAX_TILES) break;
@@ -117,7 +117,7 @@ export function railsFor(region: RegionId): Rails {
     region,
     ebay: {
       label: site.host.replace(/^www\./, ""),
-      more: ebayAffiliate(`https://${site.host}/deals/tech`, `${region}-side-ebay`, region),
+      more: ebayAffiliate(`https://${site.host}/deals/tech`, `${region}-inline-ebay`, region),
       tiles: ebayTiles,
     },
     amazon,

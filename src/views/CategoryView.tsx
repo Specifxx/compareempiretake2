@@ -14,11 +14,9 @@ import { categoryById, CATEGORIES, DEPARTMENTS } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
 import { ogImage } from "@/lib/og";
 import { pickShareProduct, sharePhotos } from "@/lib/share-rows";
-import { EbayStrip } from "@/components/EbayStrip";
-import { AmazonPicks } from "@/components/AmazonPicks";
+import { InlineAds } from "@/components/InlineAds";
 
 /** Top categories that get an Amazon picks section (high-intent, well stocked on Amazon AU). */
-const AMAZON_PICK_CATEGORIES: CategoryId[] = ["phones", "tvs", "laptops", "headphones", "tablets", "smartwatches", "consoles", "robot-vacuums"];
 
 export type CategoryParams = Promise<{ category: string }>;
 export const categoryParams = (region: RegionId) => activeCategories(region).map((c) => ({ category: c.id }));
@@ -126,8 +124,7 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
       </div>
       <CategoryGuideSection id={id} name={c.name} region={region} products={products} />
       {region === "au" && <CategoryGuides id={id} name={c.name} />}
-      {region === "au" && AMAZON_PICK_CATEGORIES.includes(id) && <AmazonPicks category={id} title={`Top ${c.name.toLowerCase()} picks on Amazon AU`} />}
-      <EbayStrip query={c.noun} label={c.name.toLowerCase()} customid={`${region === "au" ? "" : `${region}-`}cat-${c.id}`} phones={c.id === "phones"} region={region} />
+      <InlineAds />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { EbayStrip } from "@/components/EbayStrip";
+import { InlineAds } from "@/components/InlineAds";
 import { DealsView } from "@/components/DealsView";
 import { ogImage } from "@/lib/og";
 import { hubLanguages } from "@/views/region-meta";
@@ -16,7 +16,7 @@ export default function DealsPage() {
     <>
       <DealsView />
       <div className="container-x pb-4">
-        <EbayStrip query="electronics" label="tech" customid="deals-all" />
+        <InlineAds />
       </div>
     </>
   );
