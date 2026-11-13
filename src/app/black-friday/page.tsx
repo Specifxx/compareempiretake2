@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { seasonYear } from "@/lib/black-friday";
-import { EbayStrip } from "@/components/EbayStrip";
+import { InlineAds } from "@/components/InlineAds";
 import { DealsView } from "@/components/DealsView";
 import { ogImage } from "@/lib/og";
 import { hubLanguages } from "@/views/region-meta";
@@ -18,7 +18,7 @@ export default function BlackFridayPage() {
     <>
       <DealsView blackFriday />
       <div className="container-x pb-4">
-        <EbayStrip query="electronics" label="tech" customid="black-friday" />
+        <InlineAds />
       </div>
     </>
   );

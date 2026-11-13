@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DealsView } from "@/components/DealsView";
-import { EbayStrip } from "@/components/EbayStrip";
+import { InlineAds } from "@/components/InlineAds";
 import { activeCategories } from "@/lib/catalog";
 import { categoryById } from "@/lib/categories";
 import { ogImage } from "@/lib/og";
@@ -30,7 +30,7 @@ export default async function CategoryDealsPage({ params }: { params: Params }) 
     <>
       <DealsView category={c.id as CategoryId} region="ca" />
       <div className="container-x pb-4">
-        <EbayStrip query={c.noun} label={c.name.toLowerCase()} customid={`ca-deals-${c.id}`} phones={c.id === "phones"} region="ca" />
+        <InlineAds />
       </div>
     </>
   );

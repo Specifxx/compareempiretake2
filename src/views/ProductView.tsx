@@ -1,3 +1,4 @@
+import { InlineAds } from "@/components/InlineAds";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
@@ -383,6 +384,9 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           </div>
         </section>
       )}
+
+      {/* The one ad block: below the whole page, never beside the buy buttons or above a price. */}
+      <InlineAds />
 
       <div className="mt-12"><NewsletterSignup compact /></div>
     </div>

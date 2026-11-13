@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { seasonYear } from "@/lib/black-friday";
 import { notFound } from "next/navigation";
 import { DealsView } from "@/components/DealsView";
-import { EbayStrip } from "@/components/EbayStrip";
+import { InlineAds } from "@/components/InlineAds";
 import { ogImage } from "@/lib/og";
 import { hubLanguages, regionLive } from "@/views/region-meta";
 
@@ -20,7 +20,7 @@ export default function CyberMondayPage() {
     <>
       <DealsView region="uk" cyberMonday />
       <div className="container-x pb-4">
-        <EbayStrip query="electronics" label="tech" customid="uk-cyber-monday" region="uk" />
+        <InlineAds />
       </div>
     </>
   );

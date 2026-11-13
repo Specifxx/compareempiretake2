@@ -154,8 +154,8 @@ test("every link to a product page has prefetch={false}", () => {
       assert.match(m[0], /prefetch=\{false\}/, `${rel(f)}: ${m[0].slice(0, 120)}`);
     }
   }
-  // 9 since the 2026-11-10 redesign dropped the home page's "live example" card.
-  assert.ok(n >= 9, `found ${n} product links`);
+  // 9 since the 2026-11-10 redesign dropped the home page's "live example" card; 8 since the Amazon picks grid went (2026-11-13).
+  assert.ok(n >= 8, `found ${n} product links`);
   // The compare table builds its links with hrefOf(p) (region prefix included).
   assert.ok(seen.has("src/components/CompareView.tsx"), "CompareView's product links are checked");
 });
