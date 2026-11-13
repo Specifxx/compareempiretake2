@@ -38,7 +38,7 @@ test("rails: browser only, a static file per region, the page's column narrowed 
   assert.match(c, /fetch\(`\/rails\/\$\{region\}`\)/);
   assert.match(c, />Ad</);
   assert.equal(MIN_WIDTH, 1280);
-  assert.match(read("src/app/globals.css"), /@media \(min-width: 1280px\) \{\s*main \.container-x,\s*footer \.container-x \{\s*max-width: min\(80rem, calc\(100vw - 320px\)\);/);
+  assert.doesNotMatch(read("src/app/globals.css"), /calc\(100vw - 320px\)/, "no side rails (owner, 2026-11-13): the column keeps its whole width");
   assert.match(read("src/app/layout.tsx"), /<SideRails \/>/);
 });
 
