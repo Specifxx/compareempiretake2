@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T01:46:05.003Z",
+ "scrapedAt": "2026-11-13T00:24:22.710Z",
  "offers": [
   {
    "retailer": "samsung",
@@ -86,7 +86,7 @@
    "url": "https://www.samsung.com/au/tvs/uhd-4k-tv/u8000h-43-inch-crystal-uhd-4k-smart-tv-ua43u8000hwxxy/",
    "price": 749,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua43u8000hwxxy/gallery/au-uhd-u8000h-ua43u8000hwxxy-thumb-551519518",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",
@@ -174,7 +174,7 @@
    "url": "https://www.samsung.com/au/tvs/uhd-4k-tv/u8000h-55-inch-crystal-uhd-4k-smart-tv-ua55u8000hwxxy/",
    "price": 999,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua55u8000hwxxy/gallery/au-uhd-u8000h-ua55u8000hwxxy-thumb-551519686",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",
@@ -196,7 +196,7 @@
    "url": "https://www.samsung.com/au/tvs/qled-tv/qn1eh-55-inch-neo-qled-4k-vision-ai-smart-tv-qa55qn1ehawxxy/",
    "price": 1499,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa55qn1ehawxxy/gallery/au-qled-tv-qa55qn1ehawxxy-----------------neo-qled-qn-eh--k-samsung-vision-ai-smart-tv--------titanium-gray-thumb-552877087",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",
@@ -262,7 +262,7 @@
    "url": "https://www.samsung.com/au/tvs/uhd-4k-tv/u8000h-65-inch-crystal-uhd-4k-smart-tv-ua65u8000hwxxy/",
    "price": 1299,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua65u8000hwxxy/gallery/au-uhd-u8000h-ua65u8000hwxxy-thumb-551519746",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",
@@ -376,6 +376,17 @@
   },
   {
    "retailer": "samsung",
+   "sku": "QA65S90HAWXXY",
+   "mpn": "QA65S90HAWXXY",
+   "brand": "Samsung",
+   "title": "Samsung 65\" OLED S90H 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/oled-tv/s90h-65-inch-4k-smart-tv-qa65s90hawxxy/",
+   "price": 3999,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa65s90hawxxy/gallery/au-oled-tv-qa65s90hawxxy------------------------------------oled-s--h--k-samsung-vision-ai-smart-tv--------graphite-thumb-551531358",
+   "inStock": true
+  },
+  {
+   "retailer": "samsung",
    "sku": "QA65S95HAWXXY",
    "mpn": "QA65S95HAWXXY",
    "brand": "Samsung",
@@ -394,7 +405,7 @@
    "url": "https://www.samsung.com/au/tvs/uhd-4k-tv/u8000h-75-inch-crystal-uhd-4k-smart-tv-ua75u8000hwxxy/",
    "price": 1699,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua75u8000hwxxy/gallery/au-uhd-4k-tv-ua75u8000hwxxy-----crystal-uhd-u----h--k-samsung-vision-ai-smart-tv--------titanium-gray-thumb-551519929",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",
@@ -427,7 +438,7 @@
    "url": "https://www.samsung.com/au/tvs/qled-tv/qn70h-75-inch-neo-qled-4k-vision-ai-smart-tv-qa75qn70hawxxy/",
    "price": 2799,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa75qn70hawxxy/gallery/au-qled-qn70h-qa75qn70hawxxy-thumb-552411703",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",
@@ -486,6 +497,28 @@
   },
   {
    "retailer": "samsung",
+   "sku": "QA83S90HAEXXY",
+   "mpn": "QA83S90HAEXXY",
+   "brand": "Samsung",
+   "title": "Samsung 83\" OLED S90H 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/oled-tv/s90h-83-inch-4k-smart-tv-qa83s90haexxy/",
+   "price": 7499,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa83s90haexxy/gallery/au-oled-tv-qa83s90haexxy------------------------------------oled-s--h--k-samsung-vision-ai-smart-tv--------graphite-thumb-551531418",
+   "inStock": true
+  },
+  {
+   "retailer": "samsung",
+   "sku": "QA83S95FAEXXY",
+   "mpn": "QA83S95FAEXXY",
+   "brand": "Samsung",
+   "title": "Samsung 83\" OLED S95F 4K Samsung Vision AI Smart TV",
+   "url": "https://www.samsung.com/au/tvs/oled-tv/s95f-83-inch-oled-4k-vision-ai-smart-tv-qa83s95faexxy/",
+   "price": 9999,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa83s95faexxy/gallery/au-oled-s95f-540418-qa83s95faexxy-thumb-545432236",
+   "inStock": true
+  },
+  {
+   "retailer": "samsung",
    "sku": "QA83S95HAEXXY",
    "mpn": "QA83S95HAEXXY",
    "brand": "Samsung",
@@ -504,7 +537,7 @@
    "url": "https://www.samsung.com/au/tvs/uhd-4k-tv/u8000h-85-inch-crystal-uhd-4k-smart-tv-ua85u8000hwxxy/",
    "price": 2499,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua85u8000hwxxy/gallery/au-uhd-u8000h-ua85u8000hwxxy-thumb-551520033",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",
@@ -526,7 +559,7 @@
    "url": "https://www.samsung.com/au/tvs/mini-led-tv/m1eh-85-inch-4k-vision-ai-smart-tv-ua85m1ehawxxy/",
    "price": 2299,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua85m1ehawxxy/gallery/au-mini-led-m1eh-ua85m1ehawxxy-thumb-552198882",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",

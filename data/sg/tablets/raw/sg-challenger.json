@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T03:08:18.470Z",
+ "scrapedAt": "2026-11-13T01:46:15.745Z",
  "offers": [
   {
    "retailer": "sg-challenger",
@@ -606,7 +606,7 @@
    "price": 1099,
    "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Blue_PDP_Image_Position_1__SG-EN.jpg?v=1772591266",
-   "inStock": true,
+   "inStock": false,
    "brand": "APPLE"
   },
   {
@@ -639,7 +639,7 @@
    "price": 1099,
    "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPad_Air_11-in_M4_WiFi_Starlight_PDP_Image_Position_1__SG-EN.jpg?v=1772591289",
-   "inStock": true,
+   "inStock": false,
    "brand": "APPLE"
   },
   {
@@ -1563,6 +1563,16 @@
   },
   {
    "retailer": "sg-challenger",
+   "sku": "6932169358248",
+   "title": "OPPO Pad 3 Millennium Silver 8+256GB Wi-Fi",
+   "url": "https://www.challenger.sg/products/oppo-pad-3-millennium-silver-8-256gb-wi-fi",
+   "price": 479,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/6932169358248_mVKfWQtEkJbspI3GZpcmsyXe68ktJu49YWf7ISh8.png?v=1794453963",
+   "inStock": false,
+   "brand": "OPPO"
+  },
+  {
+   "retailer": "sg-challenger",
    "sku": "6932169385893",
    "title": "OPPO Pad 5 5G 8+256GB Aurora Pink (Matte Display)",
    "url": "https://www.challenger.sg/products/oppo-pad-5-aurora-pink-8-256gb-5g-matte-display",
@@ -1676,7 +1686,7 @@
    "price": 1388,
    "wasPrice": 1738,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/8806095674544_8INB1J3LE9a3IX7pvUTcmSJhUnd7jEpJwJywMv31.jpg?v=1754994872",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -2027,7 +2037,7 @@
    "price": 649,
    "wasPrice": 749,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/P81_P82_Blue_Front.jpg?v=1772768565",
-   "inStock": false,
+   "inStock": true,
    "brand": "XIAOMI"
   },
   {
@@ -2137,7 +2147,7 @@
    "price": 229,
    "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/p85-silver-Back.jpg?v=1776825230",
-   "inStock": true,
+   "inStock": false,
    "brand": "XIAOMI"
   },
   {

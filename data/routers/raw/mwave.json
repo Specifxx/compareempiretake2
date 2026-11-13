@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T01:43:25.713Z",
+ "scrapedAt": "2026-11-13T00:22:55.295Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -591,6 +591,16 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC94345",
+   "title": "Mercusys MB110-4G 300 Mbps Wireless N 4G LTE Router",
+   "url": "https://www.mwave.com.au/products/mercusys-mb110-4g-300-mbps-wireless-n-4g-lte-router",
+   "price": 73,
+   "inStock": false,
+   "mpn": "MB110-4G",
+   "brand": "Mercusys"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC93523",
    "title": "Mercusys MB230-4G 4G+ Cat6 AC1200 Wireless Dual-Band Gigabit Router",
    "url": "https://www.mwave.com.au/products/mercusys-mb2304g-4g-cat6-ac1200-wireless-dualband-gigabit-router-ac93523",
@@ -886,7 +896,7 @@
    "url": "https://www.mwave.com.au/products/ruijie-rgew1300g-1300m-dualband-gigabit-wifi-5-home-router-ac96346",
    "price": 63.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ruijie_rgew1300g_1300m_dualband_gigabit_wifi_5_home_router_ac96346_43875.jpg?v=1787798258",
-   "inStock": false,
+   "inStock": true,
    "mpn": "RG-EW1300G",
    "brand": "Rujie"
   },
@@ -2166,7 +2176,7 @@
    "url": "https://www.mwave.com.au/products/ubiquiti-unifi-gateway-fiber-ac82989",
    "price": 451,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/ubiquiti_unifi_gateway_fiber_ac82989_2973.jpg?v=1787748224",
-   "inStock": false,
+   "inStock": true,
    "brand": "Ubiquiti Networks"
   }
  ]

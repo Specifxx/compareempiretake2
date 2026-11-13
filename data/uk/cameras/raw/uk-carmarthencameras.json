@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T02:49:19.900Z",
+ "scrapedAt": "2026-11-13T01:27:57.800Z",
  "offers": [
   {
    "retailer": "uk-carmarthencameras",
@@ -81,7 +81,8 @@
    "sku": "8714574656199",
    "title": "Canon EOS 2000D Digital SLR Camera Body",
    "url": "https://carmarthencameras.com/products/canon-eos-2000d-digital-slr-camera-body",
-   "price": 479,
+   "price": 429,
+   "wasPrice": 479,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/canon-eos-2000d-body-product-front-view.webp?v=1737627971",
    "inStock": true,
    "brand": "Canon"
@@ -101,7 +102,7 @@
    "sku": "8714574687162",
    "title": "Canon EOS R1 - Mirrorless Camera Body Only",
    "url": "https://carmarthencameras.com/products/canon-eos-r1-body-only",
-   "price": 6399,
+   "price": 6249,
    "wasPrice": 6999,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Canon-EOS-R1-Body-Only-product-photo-5.webp?v=1730452557",
    "inStock": true,
@@ -126,7 +127,7 @@
    "price": 839,
    "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Canon-EOS-R10-Mirrorless-Camera-Body-Only-product-photo-4.webp?v=1730282382",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -190,7 +191,7 @@
    "url": "https://carmarthencameras.com/products/copy-of-canon-eos-r50-mirrorless-aps-c-body-only-1",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/canon-eos-r50-mirrorless-camera-vlogger-kit-black-product-product-attached-to-tripod.webp?v=1737631289",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -327,7 +328,7 @@
    "price": 1200,
    "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/3637c028_ps-g7-x-mark-iii_vlogger_02_1__1.jpg?v=1715353767",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -396,7 +397,7 @@
   {
    "retailer": "uk-carmarthencameras",
    "sku": "814373020905",
-   "title": "DELKIN SensorScope System DSLR First Aid Travel Kit",
+   "title": "Delkin Devices SensorScope System DSLR First Aid Travel Kit",
    "url": "https://carmarthencameras.com/products/delkin-sensorscope-system-dslr-first-aid-travel-kit",
    "price": 74.5,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/DELKIN-SensorScope-System-DSLR-First-Aid-Travel-Kit-Product-Photo-7.webp?v=1782223037",
@@ -1079,27 +1080,6 @@
    "price": 279,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Gomatic-McKinnon-Camera-Pack-25L-Ladder-product-photo-2.webp?v=1743855719",
    "inStock": true,
-   "brand": "Gomatic"
-  },
-  {
-   "retailer": "uk-carmarthencameras",
-   "sku": "850029149330",
-   "title": "Gomatic McKinnon Camera Pack 25L + Ladder + Divider Kit",
-   "url": "https://carmarthencameras.com/products/gomatic-mckinnon-camera-pack-25l-ladder-divider-kit",
-   "price": 309,
-   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Gomatic-McKinnon-Camera-Pack-25L-Ladder-Divider-Kit-product-photo-3.webp?v=1743848167",
-   "inStock": false,
-   "brand": "Gomatic"
-  },
-  {
-   "retailer": "uk-carmarthencameras",
-   "sku": "850029149453",
-   "title": "Gomatic McKinnon Camera Pack 25L + Ladder +1 Lg. Cube",
-   "url": "https://carmarthencameras.com/products/gomatic-mckinnon-camera-pack-25l-ladder-1-lg-cube",
-   "price": 254.99,
-   "wasPrice": 339.99,
-   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Gomatic-McKinnon-Camera-Pack-25L-Ladder-product-photo-2.webp?v=1743855719",
-   "inStock": false,
    "brand": "Gomatic"
   },
   {
@@ -2043,7 +2023,7 @@
    "url": "https://carmarthencameras.com/products/obscura-by-ilford-pin-hole-camera-kit",
    "price": 139,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/1174029_obscurakit_2_1_1.jpg?v=1654865051",
-   "inStock": false,
+   "inStock": true,
    "brand": "Ilford"
   },
   {
@@ -2094,7 +2074,8 @@
    "sku": "4545350056056",
    "title": "OM System OM-1 Mark II Mirrorless Camera Body Only",
    "url": "https://carmarthencameras.com/products/om-system-om-1-mark-ii-mirrorless-camera-body-only",
-   "price": 2049,
+   "price": 1799,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OM-System-OM-1-Mark-II-Mirrorless-Camera-Body-Only-product-photo-1.webp?v=1748426689",
    "inStock": true,
    "brand": "OM System"
@@ -2114,7 +2095,8 @@
    "sku": "4545350056452",
    "title": "OM System OM-3 Mirrorless Camera - Body Only",
    "url": "https://carmarthencameras.com/products/om-system-om-3-mirrorless-camera-body-only",
-   "price": 1699,
+   "price": 1524,
+   "wasPrice": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OM-System-OM-3-Mirrorless-Camera-Product-Photo-1.webp?v=1738758525",
    "inStock": true,
    "brand": "OM System"
@@ -2124,7 +2106,8 @@
    "sku": "4545350056803",
    "title": "OM System OM-5 Mark II - Mirrorless Digital Camera (Body Only) - Black",
    "url": "https://carmarthencameras.com/products/om-system-om-5-mark-ii-mirrorless-digital-camera-body-only",
-   "price": 1044,
+   "price": 869,
+   "wasPrice": 1044,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OM_SYSTEM_OM-5_Mark_II_C60_Black_Front.webp?v=1749819946",
    "inStock": true,
    "brand": "OM System"
@@ -2134,7 +2117,8 @@
    "sku": "4545350056834",
    "title": "OM System OM-5 Mark II Mirrorless Digital Camera (Body Only) - Silver",
    "url": "https://carmarthencameras.com/products/om-system-om-5-mark-ii-mirrorless-digital-camera-body-only-silver",
-   "price": 1044,
+   "price": 869,
+   "wasPrice": 1044,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OM_SYSTEM_OM-5_Mark_II_C30_Silver_Front.webp?v=1749820349",
    "inStock": true,
    "brand": "OM System"
@@ -2832,7 +2816,7 @@
    "price": 999,
    "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Sony-Alpha-a7-III-Mirrorless-Camera-Body-only-product-photo-1.webp?v=1726649238",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony"
   },
   {

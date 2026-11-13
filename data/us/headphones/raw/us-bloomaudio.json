@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T02:35:54.315Z",
+ "scrapedAt": "2026-11-13T01:14:59.764Z",
  "offers": [
   {
    "retailer": "us-bloomaudio",
@@ -1686,7 +1686,7 @@
    "url": "https://bloomaudio.com/products/dunu-sa6-mk2?variant=42091222171723",
    "price": 579,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/dunu-sa6-mk2-0-thumb.jpg?v=1719847222",
-   "inStock": true,
+   "inStock": false,
    "brand": "DUNU",
    "mpn": "DUN-SA6MKII"
   },
@@ -4767,6 +4767,26 @@
   },
   {
    "retailer": "us-bloomaudio",
+   "sku": "TA-CLAIRV-GU",
+   "title": "Thieaudio Clairvoyance MKII | Tribrid Universal IEMs Guilloché",
+   "url": "https://bloomaudio.com/products/thieaudio-clairvoyance-mk2?variant=67461262508107",
+   "price": 1099,
+   "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/thieaudio-clairvoyance-thumb-two.webp?v=1794492679",
+   "inStock": true,
+   "brand": "Thieaudio"
+  },
+  {
+   "retailer": "us-bloomaudio",
+   "sku": "TA-CLAIRV-STUDIO",
+   "title": "Thieaudio Clairvoyance MKII | Tribrid Universal IEMs Studio",
+   "url": "https://bloomaudio.com/products/thieaudio-clairvoyance-mk2?variant=67461262540875",
+   "price": 1099,
+   "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/thieaudio-clairvoyance-thumb-one.webp?v=1794492679",
+   "inStock": true,
+   "brand": "Thieaudio"
+  },
+  {
+   "retailer": "us-bloomaudio",
    "sku": "TA-CYPHER",
    "title": "Thieaudio Cypher | Flagship Open-Back Dynamic Headphones New",
    "url": "https://bloomaudio.com/products/thieaudio-cypher",
@@ -5340,6 +5360,16 @@
    "url": "https://bloomaudio.com/products/ziigaat-rumba",
    "price": 35.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/zig-rumba-thumb-one.webp?v=1790176660",
+   "inStock": true,
+   "brand": "ZiiGaat"
+  },
+  {
+   "retailer": "us-bloomaudio",
+   "sku": "ZIG-JADE",
+   "title": "ZiiGaat x B_Media Jade | Quadbrid Universal IEMs New",
+   "url": "https://bloomaudio.com/products/ziigaat-x-b_media-jade",
+   "price": 299,
+   "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-jade-thumb-one.webp?v=1794495629",
    "inStock": true,
    "brand": "ZiiGaat"
   },

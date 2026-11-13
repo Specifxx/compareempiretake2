@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T02:37:23.242Z",
+ "scrapedAt": "2026-11-13T01:16:30.698Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -299,7 +299,7 @@
    "title": "Audio-Technica ATH-WP900 Over-Ear High-Resolution Headphones, Flame Maple/Black",
    "url": "https://www.electronicsexpo.com/products/audio-technica-ath-wp900-over-ear-high-resolution-headphones-flame-maple-black",
    "price": 699,
-   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1773251.jpg?v=1793987638",
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/audio-technica-ath-wp900-over-ear-high-resolution-headphones-flame-mapleblack-product-type-5800659.jpg?v=1794469766",
    "inStock": true,
    "brand": "Audio-Technica",
    "mpn": "AUDATHWP900.FBA"
@@ -861,7 +861,7 @@
    "url": "https://www.electronicsexpo.com/products/jbl-endurance-peak-3-dust-and-waterproof-true-wireless-active-earbuds?variant=42498808971439",
    "price": 109.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/jbl-endurance-peak-3-dust-and-waterproof-true-wireless-active-earbuds-4888436.jpg?v=1753292455",
-   "inStock": false,
+   "inStock": true,
    "mpn": "JBLENDURPE3WHT.FBA"
   },
   {
@@ -1205,7 +1205,7 @@
    "url": "https://www.electronicsexpo.com/products/jbl-live-pro-2-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling?variant=41444037296303",
    "price": 169.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-live-pro-2-tws-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling-product-type-3108496.jpg?v=1776376089",
-   "inStock": false,
+   "inStock": true,
    "mpn": "JBLLIVEPRO2BLU.FBA"
   },
   {
@@ -2328,6 +2328,26 @@
   },
   {
    "retailer": "us-electronicsexpo",
+   "sku": "OXSSTORMA2BLK.FBA",
+   "title": "OXS Storm A2 Wireless Gaming Headset, Active Noise Cancellation, Over Ear Headphone Black",
+   "url": "https://www.electronicsexpo.com/products/oxs-storm-a2-wireless-gaming-headset-active-noise-cancellation-over-ear-headphone?variant=50881009287343",
+   "price": 129.99,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/OXSStormA2-1.avif?v=1794515190",
+   "inStock": true,
+   "mpn": "OXSSTORMA2BLK.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "OXSSTORMA2WHT.FBA",
+   "title": "OXS Storm A2 Wireless Gaming Headset, Active Noise Cancellation, Over Ear Headphone White",
+   "url": "https://www.electronicsexpo.com/products/oxs-storm-a2-wireless-gaming-headset-active-noise-cancellation-over-ear-headphone?variant=50881107919023",
+   "price": 129.99,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/OXS_Storm_A2_-white.avif?v=1794515981",
+   "inStock": true,
+   "mpn": "OXSSTORMA2WHT.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
    "sku": "OXSSTORMG2BLK.FBA",
    "title": "OXS Storm G2 Wireless Gaming Headset Black",
    "url": "https://www.electronicsexpo.com/products/oxs-storm-g2-wireless-gaming-headset?variant=50870640476335",
@@ -2365,7 +2385,7 @@
    "price": 59.99,
    "wasPrice": 73.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/presonus-hd7-professional-monitoring-headphones-product-type-9465168.jpg?v=1759349891",
-   "inStock": true,
+   "inStock": false,
    "brand": "PreSonus",
    "mpn": "PRE2777200102.FBA"
   },

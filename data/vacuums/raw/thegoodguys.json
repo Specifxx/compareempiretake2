@@ -1,16 +1,6 @@
 {
- "scrapedAt": "2026-11-12T01:50:33.780Z",
+ "scrapedAt": "2026-11-13T00:28:10.988Z",
  "offers": [
-  {
-   "retailer": "thegoodguys",
-   "sku": "bissell-powerclean-dual-brush-cordless-vacuum-4255",
-   "title": "Bissell PowerClean Dual Brush Cordless Vacuum",
-   "url": "https://www.thegoodguys.com.au/bissell-powerclean-dual-brush-cordless-vacuum-4255",
-   "price": 599,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097939_1046560.png?v=1776232600&width=284&height=284&quality=88",
-   "inStock": true,
-   "brand": "Bissell"
-  },
   {
    "retailer": "thegoodguys",
    "sku": "bissell-powerclean-furfinder-cordless-vacuum-4239",
@@ -26,7 +16,7 @@
    "sku": "bissell-powerclean-furguard-cordless-vacuum-4241",
    "title": "Bissell PowerClean FurGuard Cordless Vacuum",
    "url": "https://www.thegoodguys.com.au/bissell-powerclean-furguard-cordless-vacuum-4241",
-   "price": 347,
+   "price": 328,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095265_960384.png?v=1776749549&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Bissell"
@@ -198,7 +188,7 @@
    "sku": "dyson-v15-detect-absolute-cordless-vacuum-626408-01",
    "title": "Dyson V15 Detect Absolute Cordless Vacuum",
    "url": "https://www.thegoodguys.com.au/dyson-v15-detect-absolute-cordless-vacuum-626408-01",
-   "price": 748,
+   "price": 739,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098542_1056599.png?v=1783057599&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "626408-01",
@@ -209,7 +199,7 @@
    "sku": "dyson-v16-piston-animal-cordless-vacuum-496018-01",
    "title": "Dyson V16 Piston Animal Cordless Vacuum",
    "url": "https://www.thegoodguys.com.au/dyson-v16-piston-animal-cordless-vacuum-496018-01",
-   "price": 969,
+   "price": 967,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096117_1010271.png?v=1776749610&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "496018-01",
@@ -283,6 +273,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "electrolux-ergo-mini-handheld-vacuum-efh32405sw",
+   "title": "Electrolux Ergo Mini Handheld Vacuum",
+   "url": "https://www.thegoodguys.com.au/electrolux-ergo-mini-handheld-vacuum-efh32405sw",
+   "price": 129,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100356_1086658.png?v=1794462843&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "EFH32405SW",
+   "brand": "Electrolux"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "electrolux-pure-c9-animal-bagless-vacuum-pc91animat",
    "title": "Electrolux PURE C9 Animal Bagless Vacuum",
    "url": "https://www.thegoodguys.com.au/electrolux-pure-c9-animal-bagless-vacuum-pc91animat",
@@ -311,17 +312,6 @@
    "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50074236_759424.png?v=1776228825&width=284&height=284&quality=88",
    "inStock": true,
-   "brand": "Electrolux"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "electrolux-pure-well-q7-reach-stick-vacuum-wq71-p5oib",
-   "title": "Electrolux PURE Well Q7 Reach Stick Vacuum",
-   "url": "https://www.thegoodguys.com.au/electrolux-pure-well-q7-reach-stick-vacuum-wq71-p5oib",
-   "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50074235_761558.png?v=1776742503&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "P5OIB",
    "brand": "Electrolux"
   },
   {
@@ -612,10 +602,21 @@
    "sku": "miele-guard-s1-bagged-vacuum-nordic-blue-12697050",
    "title": "Miele Guard S1 Bagged Vacuum Nordic Blue",
    "url": "https://www.thegoodguys.com.au/miele-guard-s1-bagged-vacuum-nordic-blue-12697050",
-   "price": 297,
+   "price": 294,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50095652_1007514.png?v=1776305627&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Miele"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "shark-cordless-powerdetect-clean-and-empty-system-ip3251anz",
+   "title": "Shark Cordless PowerDetect Clean & Empty System",
+   "url": "https://www.thegoodguys.com.au/shark-cordless-powerdetect-clean-and-empty-system-ip3251anz",
+   "price": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50092092_939424.png?v=1776749604&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "IP3251ANZ",
+   "brand": "Shark"
   },
   {
    "retailer": "thegoodguys",
@@ -720,7 +721,7 @@
    "sku": "shark-stratos-pet-pro-cordless-vacuum-with-clean-sense-iq-iz402anz",
    "title": "Shark Stratos Pet Pro Cordless Vacuum with Clean Sense IQ",
    "url": "https://www.thegoodguys.com.au/shark-stratos-pet-pro-cordless-vacuum-with-clean-sense-iq-iz402anz",
-   "price": 549,
+   "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50099729_1078869.png?v=1790238616&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "IZ402ANZ",
@@ -731,7 +732,7 @@
    "sku": "shark-ultracyclone-pet-pro-cordless-handheld-vacuum-ch950anz",
    "title": "Shark UltraCyclone Pet Pro Cordless Handheld Vacuum",
    "url": "https://www.thegoodguys.com.au/shark-ultracyclone-pet-pro-cordless-handheld-vacuum-ch950anz",
-   "price": 199,
+   "price": 149,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50097183_1026630.png?v=1781054137&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "CH950ANZ",

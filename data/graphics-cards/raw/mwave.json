@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T01:43:22.978Z",
+ "scrapedAt": "2026-11-13T00:22:52.590Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -8,6 +8,24 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060-ti-dual-oc-16gb-video-card-white-ac89745",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060_ti_dual_oc_16gb_video_card_ac89745_21480.jpg?v=1787795381",
+   "inStock": false,
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "182774",
+   "title": "ASUS Dual GeForce RTX 5060 8GB GDDR7 EVO OC Edition Video Card",
+   "url": "https://www.mwave.com.au/products/asus-dual-geforce-rtx-5060-8gb-gddr7-evo-oc-edition-video-card",
+   "price": 749,
+   "inStock": true,
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "182775",
+   "title": "ASUS Dual GeForce RTX 5070 12GB GDDR7 EVO OC Edition Video Card",
+   "url": "https://www.mwave.com.au/products/asus-dual-geforce-rtx-5070-12gb-gddr7-evo-oc-edition-video-card",
+   "price": 1399,
    "inStock": true,
    "brand": "Asus"
   },
@@ -319,6 +337,15 @@
    "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_prime_radeon_rx_9060_xt_16gb_gddr6_oc_edition_ac91085_64745.jpg?v=1787795412",
    "inStock": false,
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "182776",
+   "title": "ASUS ProArt GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Video Card",
+   "url": "https://www.mwave.com.au/products/asus-proart-geforce-rtx-5070-ti-16gb-gddr7-oc-edition-video-card",
+   "price": 2099,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -678,7 +705,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5060-oc-low-profile-8gb-video-card-ac86090",
    "price": 629,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5060_oc_low_profile_8gb_video_card_ac86090_95840.jpg?v=1787796638",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gigabyte"
   },
   {
@@ -1193,6 +1220,15 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC78649",
+   "title": "Inno3D GeForce RTX 3060 TWIN X2 12GB Video Card",
+   "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-3060-twin-x2-12gb-video-card",
+   "price": 569,
+   "inStock": true,
+   "brand": "Inno3D"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC88547",
    "title": "INNO3D GeForce RTX 5050 TWIN X2 8GB Video Card",
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5050-twin-x2-8gb-video-card-ac88547",
@@ -1218,7 +1254,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5060-ti-twin-x2-8gb-video-card-ac84865",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5060_ti_twin_x2_8gb_video_card_ac84865_38117.jpg?v=1787746235",
-   "inStock": true,
+   "inStock": false,
    "brand": "Inno3D"
   },
   {
@@ -1238,7 +1274,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5060-ti-twin-x2-oc-8gb-video-card-ac84866",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5060_ti_twin_x2_oc_8gb_video_card_ac84866_26811.jpg?v=1787797059",
-   "inStock": true,
+   "inStock": false,
    "brand": "Inno3D"
   },
   {
@@ -1686,7 +1722,7 @@
    "sku": "AC86247",
    "title": "MSI GeForce RTX 5070 SHADOW 3X OC 12GB Video Card",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-shadow-3x-oc-12gb-video-card-ac86247",
-   "price": 1499,
+   "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_shadow_3x_oc_12gb_video_card_ac86247_10665.jpg?v=1787797755",
    "inStock": false,
    "brand": "MSI"
@@ -1888,7 +1924,7 @@
    "url": "https://www.mwave.com.au/products/nvidia-rtx-pro-5000-blackwell-48gb-professional-video-card-ac86470",
    "price": 12999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/nvidia_rtx_pro_5000_blackwell_48gb_professional_video_card_ac86470_87795.jpg?v=1787746934",
-   "inStock": false,
+   "inStock": true,
    "brand": "Nvidia"
   },
   {

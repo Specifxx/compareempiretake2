@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T02:34:27.326Z",
+ "scrapedAt": "2026-11-13T01:13:36.016Z",
  "offers": [
   {
    "retailer": "us-abt",
@@ -1042,7 +1042,7 @@
    "url": "https://www.abt.com/Samsung-Q7F-QLED-TV-98-Inch-4K-Smart-in-Black-QN98Q7FAAFXZA/p/227937.html",
    "price": 2497.99,
    "image": "https://content.abt.com/image.php/99b0e417852b7b93ead3f31cdba5b671?image=/images/products/BDP_Images/samsung-qled-4k-tv-QN98Q7FAAFXZA-front.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung",
    "mpn": "QN98Q7FAAFXZA"
   },
@@ -1199,6 +1199,17 @@
    "inStock": true,
    "brand": "Samsung",
    "mpn": "QN85QN80HAFXZA"
+  },
+  {
+   "retailer": "us-abt",
+   "sku": "231627",
+   "title": "Samsung QN90F Neo QLED TV 115-Inch 4K Smart in Titan Black - QN115QN90FFXZA",
+   "url": "https://www.abt.com/Samsung-QN90F-Neo-QLED-TV-115-Inch-4K-Smart-in-Titan-Black-QN115QN90FFXZA/p/231627.html",
+   "price": 26997.99,
+   "image": "https://content.abt.com/image.php/31df154eaddea6292474af30930f2081?image=/images/products/BDP_Images/samsung-qled-tv-4k-QN115QN90FFXZA-front.jpg&ck=2&width=165&height=150&canvas",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "QN115QN90FFXZA"
   },
   {
    "retailer": "us-abt",
@@ -2021,20 +2032,9 @@
    "url": "https://www.abt.com/Sony-BRAVIA-6-OLED-4K-48-Inch-HDR-Google-TV-with-Gemini-K48A60/p/248474.html",
    "price": 898,
    "image": "https://content.abt.com/image.php/97918a79f99badb9276e97172dd11a36?image=/images/products/BDP_Images/sony-oled-tvs-K48A60-sony-bravia-6-48-in-class-oled-4k-hdr-google-tv-main-product.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony",
    "mpn": "K48A60"
-  },
-  {
-   "retailer": "us-abt",
-   "sku": "248487",
-   "title": "Sony BRAVIA 6 OLED 4K 55-Inch HDR Google TV with Gemini - K55A60",
-   "url": "https://www.abt.com/Sony-BRAVIA-6-OLED-4K-55-Inch-HDR-Google-TV-with-Gemini-K55A60/p/248487.html",
-   "price": 998,
-   "image": "https://content.abt.com/image.php/b206808e3615a0719bdae1e451bcc6dd?image=/images/products/BDP_Images/sony-oled-tvs-K55A60-sony-bravia-6-55-in-oled-4k-hdr-google-tv-in-the-main-produc.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
-   "brand": "Sony",
-   "mpn": "K55A60"
   },
   {
    "retailer": "us-abt",
@@ -2043,38 +2043,16 @@
    "url": "https://www.abt.com/Sony-BRAVIA-6-OLED-4K-65-Inch-HDR-Google-TV-with-Gemini-K65A60/p/248488.html",
    "price": 1198,
    "image": "https://content.abt.com/image.php/b206808e3615a0719bdae1e451bcc6dd?image=/images/products/BDP_Images/sony-oled-tvs-K55A60-sony-bravia-6-55-in-oled-4k-hdr-google-tv-in-the-main-produc.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony",
    "mpn": "K65A60"
-  },
-  {
-   "retailer": "us-abt",
-   "sku": "248489",
-   "title": "Sony BRAVIA 6 OLED 4K 77-Inch HDR Google TV with Gemini - K77A60",
-   "url": "https://www.abt.com/Sony-BRAVIA-6-OLED-4K-77-Inch-HDR-Google-TV-with-Gemini-K77A60/p/248489.html",
-   "price": 1798,
-   "image": "https://content.abt.com/image.php/df8a394132a296b9d1728e8c1a68e9b0?image=/images/products/l-K55A60.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
-   "brand": "Sony",
-   "mpn": "K77A60"
-  },
-  {
-   "retailer": "us-abt",
-   "sku": "248490",
-   "title": "Sony BRAVIA 6 OLED 4K 83-Inch HDR Google TV with Gemini - K83A60",
-   "url": "https://www.abt.com/Sony-BRAVIA-6-OLED-4K-83-Inch-HDR-Google-TV-with-Gemini-K83A60/p/248490.html",
-   "price": 2398,
-   "image": "https://content.abt.com/image.php/40de43d1eb5134d35dc70c1a1447564f?image=/images/products/BDP_Images/sony-4k-oled-smart-tv-K-83A60-front.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
-   "brand": "Sony",
-   "mpn": "K83A60"
   },
   {
    "retailer": "us-abt",
    "sku": "246493",
    "title": "Sony BRAVIA 7 II 50-Inch True RGB 4K HDR Google TV with Gemini - K50XR70M2",
    "url": "https://www.abt.com/Sony-BRAVIA-7-II-50-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K50XR70M2/p/246493.html",
-   "price": 1298,
+   "price": 1098,
    "image": "https://content.abt.com/image.php/4b6c94f9a43ec550d2436182f2dbe86f?image=/images/products/BDP_Images/sony-rgb-4k-smart-tv-K55XR70M2-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sony",
@@ -2085,7 +2063,7 @@
    "sku": "244173",
    "title": "Sony BRAVIA 7 II 55-Inch True RGB 4K HDR Google TV with Gemini - K55XR70M2",
    "url": "https://www.abt.com/Sony-BRAVIA-7-II-55-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K55XR70M2/p/244173.html",
-   "price": 1398,
+   "price": 1198,
    "image": "https://content.abt.com/image.php/4b6c94f9a43ec550d2436182f2dbe86f?image=/images/products/BDP_Images/sony-rgb-4k-smart-tv-K55XR70M2-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sony",
@@ -2096,7 +2074,7 @@
    "sku": "244172",
    "title": "Sony BRAVIA 7 II 65-Inch True RGB 4K HDR Google TV with Gemini - K65XR70M2",
    "url": "https://www.abt.com/Sony-BRAVIA-7-II-65-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K65XR70M2/p/244172.html",
-   "price": 1598,
+   "price": 1498,
    "image": "https://content.abt.com/image.php/ffc29dd892d3b8ba01aabb94be266754?image=/images/products/BDP_Images/sony-rgb-4k-smart-tv-K65XR70M2-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sony",
@@ -2107,7 +2085,7 @@
    "sku": "244171",
    "title": "Sony BRAVIA 7 II 75-Inch True RGB 4K HDR Google TV with Gemini - K75XR70M2",
    "url": "https://www.abt.com/Sony-BRAVIA-7-II-75-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K75XR70M2/p/244171.html",
-   "price": 2298,
+   "price": 1998,
    "image": "https://content.abt.com/image.php/ffc29dd892d3b8ba01aabb94be266754?image=/images/products/BDP_Images/sony-rgb-4k-smart-tv-K65XR70M2-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sony",
@@ -2118,7 +2096,7 @@
    "sku": "244170",
    "title": "Sony BRAVIA 7 II 85-Inch True RGB 4K HDR Google TV with Gemini - K85XR70M2",
    "url": "https://www.abt.com/Sony-BRAVIA-7-II-85-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K85XR70M2/p/244170.html",
-   "price": 3498,
+   "price": 2998,
    "image": "https://content.abt.com/image.php/ffc29dd892d3b8ba01aabb94be266754?image=/images/products/BDP_Images/sony-rgb-4k-smart-tv-K65XR70M2-front.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sony",
@@ -2217,7 +2195,7 @@
    "sku": "244298",
    "title": "Sony BRAVIA 9 II 75-Inch True RGB 4K HDR Google TV with Gemini - K75XR90M2",
    "url": "https://www.abt.com/Sony-BRAVIA-9-II-75-Inch-True-RGB-4K-HDR-Google-TV-with-Gemini-K75XR90M2/p/244298.html",
-   "price": 4598,
+   "price": 3998,
    "image": "https://content.abt.com/image.php/f8096acca33018e73e3442530dae71ad?image=/images/products/BDP_Images/sony-tv-K65XR90M2.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Sony",

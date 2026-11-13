@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T03:08:18.469Z",
+ "scrapedAt": "2026-11-13T01:46:15.744Z",
  "offers": [
   {
    "retailer": "sg-challenger",
@@ -158,7 +158,7 @@
    "url": "https://www.challenger.sg/products/mjrv4x-a-iphone-18-pro-512gb-silver",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_18_Pro_Silver_PDP_Image_Position_1__en-SG.jpg?v=1789096306",
-   "inStock": true,
+   "inStock": false,
    "brand": "APPLE"
   },
   {
@@ -909,7 +909,7 @@
    "price": 999,
    "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_17e_Black_PDP_Image_Position_1__SEA-EN.jpg?v=1772590052",
-   "inStock": true,
+   "inStock": false,
    "brand": "APPLE"
   },
   {
@@ -1246,7 +1246,7 @@
    "price": 1999,
    "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/x10pm_white_back.jpg?v=1792550112",
-   "inStock": false,
+   "inStock": true,
    "brand": "OPPO"
   },
   {
@@ -1574,6 +1574,39 @@
   },
   {
    "retailer": "sg-challenger",
+   "sku": "8806099467098",
+   "title": "Samsung Galaxy A18 Black 4+128GB LTE (SM-A185GZKKXSP)",
+   "url": "https://www.challenger.sg/products/samsung-galaxy-a18-black-4-128gb-lte-sm-a185gzkkxsp",
+   "price": 228,
+   "wasPrice": 328,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A185_GalaxyA18_LTE_Front_Black.jpg?v=1794466679",
+   "inStock": false,
+   "brand": "SAMSUNG"
+  },
+  {
+   "retailer": "sg-challenger",
+   "sku": "8806099467272",
+   "title": "Samsung Galaxy A18 Light Blue 4+128GB LTE (SM-A185GLBKXSP)",
+   "url": "https://www.challenger.sg/products/samsung-galaxy-a18-light-blue-4-128gb-lte-sm-a185glbkxsp",
+   "price": 228,
+   "wasPrice": 328,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A185_GalaxyA18_LTE_Front_LightBlue.jpg?v=1794466689",
+   "inStock": false,
+   "brand": "SAMSUNG"
+  },
+  {
+   "retailer": "sg-challenger",
+   "sku": "8806099466909",
+   "title": "Samsung Galaxy A18 Silver 4+128GB LTE (SM-A185GZSKXSP)",
+   "url": "https://www.challenger.sg/products/samsung-galaxy-a18-silver-4-128gb-lte-sm-a185gzskxsp",
+   "price": 228,
+   "wasPrice": 328,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A185_GalaxyA18_LTE_Front_Silver.jpg?v=1794466698",
+   "inStock": false,
+   "brand": "SAMSUNG"
+  },
+  {
+   "retailer": "sg-challenger",
    "sku": "8806099363826",
    "title": "Samsung Galaxy A27 Black 8+256GB 5G (SM-A276BZKHXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a27-black-8-256gb-5g-sm-a276bzkhxsp",
@@ -1733,7 +1766,7 @@
    "price": 988,
    "wasPrice": 1058,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A576_GalaxyA57_5G_Front_AwesomeLilac.jpg?v=1773802974",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -1766,7 +1799,7 @@
    "price": 1038,
    "wasPrice": 1398,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-S731_Icyblue_001_Front_dffcee7d-b979-4979-90bc-3fdd3ba9b744.jpg?v=1757580038",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -1975,7 +2008,7 @@
    "price": 1928,
    "wasPrice": 2328,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_black_251120.jpg?v=1771905095",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -2041,7 +2074,7 @@
    "price": 2528,
    "wasPrice": 2928,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_cobaltviolet_251120.jpg?v=1771905125",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {

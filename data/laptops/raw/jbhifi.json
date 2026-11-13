@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T02:06:57.853Z",
+ "scrapedAt": "2026-11-13T00:44:26.237Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -98,7 +98,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-13-inch-with-m5-chip-1tb-24gb-starlight",
    "price": 2849,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/511614-Product-0-I-639081645603092548.jpg?v=1790763064",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -504,6 +504,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "315025",
+   "title": "Apple MacBook Pro 14-inch with M5 Pro Chip, 2TB/24GB (Silver)",
+   "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m5-pro-chip-2tb-24gb-silver",
+   "price": 4749,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/315025-Product-0-I-639081685205433037_92148ebc-aeec-4e52-a1f4-95cb7d03350e.jpg?v=1790763025",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "315026",
    "title": "Apple MacBook Pro 14-inch with M5 Pro Chip, 2TB/24GB (Space Black)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m5-pro-chip-2tb-24gb-space-black",
@@ -711,17 +721,6 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-16-inch-with-m5-pro-chip-1tb-24gb-space-black",
    "price": 4799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/673380-Product-0-I-639081688202933806.jpg?v=1790762985",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "413891",
-   "title": "Apple MacBook Pro 16-inch with M5 Pro Chip, 1TB/48GB (Silver)",
-   "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-16-inch-with-m5-pro-chip-1tb-48gb-silver",
-   "price": 5297,
-   "wasPrice": 5526,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/413891-Product-0-I-639081686404599196.jpg?v=1790763031",
    "inStock": true,
    "brand": "Apple"
   },
@@ -1345,6 +1344,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "829118",
+   "title": "Dell Inspiron 14 14\" WUXGA Copilot+ AI PC Laptop (Snapdragon X)[512GB/16GB]",
+   "url": "https://www.jbhifi.com.au/products/dell-inspiron-14-14-wuxga-copilot-ai-pc-laptop-snapdragon-x512gb-16gb",
+   "price": 1248,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829118-Product-0-I-638887441814152568.jpg?v=1753147453",
+   "inStock": true,
+   "brand": "Dell"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "829794",
    "title": "Dell Inspiron 14 7440 14\" WUXGA 2-in-1 Laptop (Intel Core 7)[1TB]",
    "url": "https://www.jbhifi.com.au/products/dell-inspiron-14-7440-14-wuxga-2-in-1-laptop-intel-core-71tb",
@@ -1395,6 +1404,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "10102960",
+   "title": "GIGABYTE A16 3TH | RTX 5050 8GB | Ryzen 7 260 | 16GB RAM | Gaming Laptop",
+   "url": "https://www.jbhifi.com.au/products/gigabyte-a16-3th-rtx-5050-8gb-ryzen-7-260-16gb-ram-gaming-laptop",
+   "price": 1699,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/069a11d743b64ac6811154e09ff80846.jpg?v=1794194129",
+   "inStock": true,
+   "brand": "Aftershock Pc"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "10102965",
    "title": "GIGABYTE A16 3VH | RTX 5060 8GB | Ryzen 7 260 | 16GB RAM | Gaming Laptop",
    "url": "https://www.jbhifi.com.au/products/gigabyte-a16-3vh-rtx-5060-8gb-ryzen-7-260-16gb-ram-gaming-laptop",
@@ -1420,6 +1439,26 @@
    "url": "https://www.jbhifi.com.au/products/gigabyte-aero-x16-4wh-space-grey-rtx-5070-8gb-ryzen-ai-9-465-16gb-ram-gaming-laptop",
    "price": 2599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/64df1221884a49e3aa6d3e68aa633dd5_844cb7b8-d38d-4cce-ae76-1c77b3615ff1.jpg?v=1794372944",
+   "inStock": true,
+   "brand": "Aftershock Pc"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10103759",
+   "title": "GIGABYTE AERO X16 Lunar White | RTX 5060 8GB | Ryzen AI 7 350 | 16GB RAM | Laptop",
+   "url": "https://www.jbhifi.com.au/products/gigabyte-aero-x16-lunar-white-rtx-5060-8gb-ryzen-ai-7-350-16gb-ram-laptop",
+   "price": 2199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/1df2b98b87e048ec9f11cbaaf9c2589a_4bd28812-1dc3-4339-a006-2484a75f1bef.png?v=1794459972",
+   "inStock": true,
+   "brand": "Aftershock Pc"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10103770",
+   "title": "GIGABYTE AERO X16 Space Grey | RTX 5060 8GB | Ryzen AI 7 350 | 16GB RAM | Laptop",
+   "url": "https://www.jbhifi.com.au/products/gigabyte-aero-x16-space-grey-rtx-5060-8gb-ryzen-ai-7-350-16gb-ram-laptop",
+   "price": 2199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/1df2b98b87e048ec9f11cbaaf9c2589a.png?v=1794459947",
    "inStock": true,
    "brand": "Aftershock Pc"
   },
@@ -2033,17 +2072,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "816938",
-   "title": "Lenovo 14\" OLED Touchscreen Chromebook Plus Laptop With Gemini (256GB)",
-   "url": "https://www.jbhifi.com.au/products/lenovo-14-oled-touchscreen-chromebook-plus-laptop-with-gemini-256gb",
-   "price": 848,
-   "wasPrice": 1399,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/816938-Product-0-I-639143992805846211.jpg?v=1778802493",
-   "inStock": true,
-   "brand": "Lenovo"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "907074",
    "title": "Lenovo 15M8910 15.3\" WUXGA Chromebook (MTK-540)[128GB/4GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-15m8910-15-3-wuxga-chromebook-mtk-540128gb-4gb",
@@ -2564,17 +2592,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "899169",
-   "title": "Lenovo LOQ 15.6\" Full HD 144Hz Gaming Laptop (AMD Ryzen 7-170)[GeForce RTX 3050]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-loq-15-6-full-hd-144hz-gaming-laptop-amd-ryzen-7-170geforce-rtx-3050",
-   "price": 1188,
-   "wasPrice": 1699,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899169-Product-0-I-639165796804934085.jpg?v=1780982946",
-   "inStock": true,
-   "brand": "Lenovo"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "899170",
    "title": "Lenovo LOQ 15.6\" Full HD 144Hz Gaming Laptop (AMD Ryzen 7-170)[GeForce RTX 4050]",
    "url": "https://www.jbhifi.com.au/products/lenovo-loq-15-6-full-hd-144hz-gaming-laptop-amd-ryzen-7-170geforce-rtx-4050",
@@ -2714,17 +2731,6 @@
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-pro-9-15-3-wqxga-oled-touch-laptop-nvidia-rtx-spark-n1x-20-core1tb-64gb",
    "price": 7999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918162-Product-0-I-639271212004368077.jpg?v=1791524471",
-   "inStock": true,
-   "brand": "Lenovo - Yoga"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "888301",
-   "title": "Lenovo Yoga S7 14\" WUXGA OLED Copilot+ AI PC Laptop (Intel Core Ultra 5 - 226V)[512GB]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-s7-14-wuxga-oled-copilot-ai-pc-laptop-intel-core-ultra-5-226v512gb",
-   "price": 1296,
-   "wasPrice": 1399,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/888301-Product-0-I-639122408406231156.jpg?v=1776644107",
    "inStock": true,
    "brand": "Lenovo - Yoga"
   },
@@ -3058,7 +3064,7 @@
    "url": "https://www.jbhifi.com.au/products/msi-crosshair-16-hx-16-wqxga-240hz-gaming-laptop-intel-core-i9-14900hxnvidia-geforce-rtx-5070",
    "price": 4599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896579-Product-0-I-639124174803841923.jpg?v=1793744533",
-   "inStock": true,
+   "inStock": false,
    "brand": "Msi"
   },
   {

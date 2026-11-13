@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T01:43:28.267Z",
+ "scrapedAt": "2026-11-13T00:22:57.745Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -43,6 +43,24 @@
   },
   {
    "retailer": "mwave",
+   "sku": "181552",
+   "title": "Apple AirPods 5",
+   "url": "https://www.mwave.com.au/products/apple-airpods-5",
+   "price": 201.59,
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "181551",
+   "title": "Apple AirPods 5 with Wireless Charging Case",
+   "url": "https://www.mwave.com.au/products/apple-airpods-5-with-wireless-charging-case",
+   "price": 239,
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
    "sku": "172356",
    "title": "Apple AirPods Pro 3",
    "url": "https://www.mwave.com.au/products/apple-airpods-pro-3-ac90550",
@@ -60,16 +78,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_earpods_with_35mm_headphone_plug_ac30290_5.jpg?v=1787799933",
    "inStock": true,
    "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "183412",
-   "title": "ASUS ROG Cetra Open Wireless Gaming Earbuds - Pink",
-   "url": "https://www.mwave.com.au/products/asus-rog-cetra-open-wireless-gaming-earbuds-pink",
-   "price": 329,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/h732_10.jpg?v=1794444122",
-   "inStock": false,
-   "brand": "Asus"
   },
   {
    "retailer": "mwave",
@@ -126,7 +134,7 @@
    "sku": "148229",
    "title": "Audio-Technica ATH-GL3 Closed Back High Fidelity Gaming Headset (Black)",
    "url": "https://www.mwave.com.au/products/audiotechnica-gl3-closed-back-high-fidelity-lightweight-gaming-headset-black-ac49444",
-   "price": 168.83,
+   "price": 168.82,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/audiotechnica_gl3_closed_back_high_fidelity_lightweight_gaming_headset_black_ac49444.jpg?v=1787800127",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -166,7 +174,7 @@
    "sku": "161507",
    "title": "Belkin USB-C In-Ear Headphones (White)",
    "url": "https://www.mwave.com.au/products/belkin-soundform-usbc-wired-earbuds-white-ac89775",
-   "price": 59,
+   "price": 54.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/belkin_soundform_usbc_wired_earbuds_white_ac89775_50093.jpg?v=1787791441",
    "inStock": true,
    "brand": "Belkin"
@@ -396,7 +404,7 @@
    "sku": "AC48209",
    "title": "Beyerdynamic DT 700 PRO X Closed-Back Studio Headphones",
    "url": "https://www.mwave.com.au/products/beyerdynamic-dt-700-pro-x-closedback-studio-headphones-ac48209",
-   "price": 399,
+   "price": 409,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/beyerdynamic_dt_700_pro_x_closedback_studio_headphones_ac48209.jpg?v=1787795685",
    "inStock": true,
    "brand": "Beyerdynamic"
@@ -446,7 +454,7 @@
    "sku": "AC86525",
    "title": "Beyerdynamic DT 770 PRO X Closed Back Studio Headphones - 48 Ohm",
    "url": "https://www.mwave.com.au/products/beyerdynamic-dt-770-pro-x-closed-back-studio-headphones-48-ohm-ac86525",
-   "price": 349,
+   "price": 379,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/beyerdynamic_dt_770_pro_x_closed_back_studio_headphones_48_ohm_ac86525_18615.jpg?v=1787795687",
    "inStock": true,
    "brand": "Beyerdynamic"
@@ -1038,7 +1046,7 @@
    "url": "https://www.mwave.com.au/products/hyperx-cloud-iii-wired-gaming-headset-black-ac62839",
    "price": 108,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hyperx_cloud_iii_wired_gaming_headset_black_ac62839_33280.jpg?v=1787748680",
-   "inStock": true,
+   "inStock": false,
    "brand": "HyperX"
   },
   {
@@ -1048,6 +1056,24 @@
    "url": "https://www.mwave.com.au/products/hyperx-cloud-mini-gaming-headset-black-ac76493",
    "price": 22,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hyperx_cloud_mini_gaming_headset_black_ac76493_68153.jpg?v=1787800341",
+   "inStock": true,
+   "brand": "HyperX"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "161724",
+   "title": "HyperX Cloud Mini Gaming Headset (Lavendar)",
+   "url": "https://www.mwave.com.au/products/hyperx-cloud-mini-gaming-headset-lavendar",
+   "price": 24.05,
+   "inStock": true,
+   "brand": "HyperX"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "161722",
+   "title": "HyperX Cloud Mini Gaming Headset (Multi)",
+   "url": "https://www.mwave.com.au/products/hyperx-cloud-mini-gaming-headset-multi",
+   "price": 24.05,
    "inStock": true,
    "brand": "HyperX"
   },
@@ -1156,7 +1182,7 @@
    "sku": "172105",
    "title": "INZONE E9 Wired In-Ear Gaming Headphones (Black)",
    "url": "https://www.mwave.com.au/products/sony-inzone-e9-wired-inear-gaming-headphones-ac88626",
-   "price": 168,
+   "price": 151.01,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sony_inzone_e9_wired_inear_gaming_headphones_ac88626_24860.jpg?v=1787791504",
    "inStock": false,
    "brand": "INZONE"
@@ -1186,7 +1212,7 @@
    "sku": "172113",
    "title": "INZONE H5 Wireless Gaming Headset (Black)",
    "url": "https://www.mwave.com.au/products/sony-inzone-h5-wireless-gaming-headset-black-ac88623",
-   "price": 228,
+   "price": 215.75,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sony_inzone_h5_wireless_gaming_headset_black_ac88623_98684.jpg?v=1787791515",
    "inStock": true,
    "brand": "INZONE"
@@ -1196,7 +1222,7 @@
    "sku": "172114",
    "title": "INZONE H5 Wireless Gaming Headset (White)",
    "url": "https://www.mwave.com.au/products/sony-inzone-h5-wireless-gaming-headset-white-ac88624",
-   "price": 228,
+   "price": 215.75,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sony_inzone_h5_wireless_gaming_headset_white_ac88624_2225.jpg?v=1787800652",
    "inStock": true,
    "brand": "INZONE"
@@ -1506,7 +1532,7 @@
    "sku": "168244",
    "title": "Logitech G ASTRO A10 Gen 2 Wired Gaming Headset for XBOX (Salvage/Black)",
    "url": "https://www.mwave.com.au/products/astro-a10-gen-2-wired-gaming-headset-for-xbox-pc-savage-black-ac59719",
-   "price": 83.76,
+   "price": 68,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/astro_a10_gen_2_wired_gaming_headset_for_xbox_pc_savage_black_ac59719_58341.jpg?v=1787791426",
    "inStock": true,
    "brand": "Logitech"
@@ -1516,7 +1542,7 @@
    "sku": "168245",
    "title": "Logitech G ASTRO A10 Gen 2 Wired Gaming Headset for XBOX (White)",
    "url": "https://www.mwave.com.au/products/astro-a10-gen-2-wired-gaming-headset-for-xbox-pc-white-ac59720",
-   "price": 83.76,
+   "price": 73.38,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/astro_a10_gen_2_wired_gaming_headset_for_xbox_pc_white_ac59720_3713.jpg?v=1787791426",
    "inStock": true,
    "brand": "Logitech"
@@ -1596,7 +1622,7 @@
    "sku": "140949",
    "title": "Logitech G335 Wired Gaming Headset - Mint",
    "url": "https://www.mwave.com.au/products/logitech-g335-wired-gaming-headset-mint-ac70083",
-   "price": 89,
+   "price": 88.14,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/logitech_g335_wired_gaming_headset_mint_ac70083_53884.jpg?v=1787800483",
    "inStock": true,
    "brand": "Logitech"
@@ -1606,7 +1632,7 @@
    "sku": "140948",
    "title": "Logitech G335 Wired Gaming Headset - White",
    "url": "https://www.mwave.com.au/products/logitech-g335-wired-gaming-headset-white-ac45767",
-   "price": 99,
+   "price": 88.68,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/logitech_g335_wired_gaming_headset_white_ac45767.jpg?v=1787748781",
    "inStock": false,
    "brand": "Logitech"
@@ -2113,6 +2139,15 @@
   },
   {
    "retailer": "mwave",
+   "sku": "182786",
+   "title": "MOONDROP CHU III 3.5mm Dynamic Driver Wired IEM In-Ear Monitor Headphones",
+   "url": "https://www.mwave.com.au/products/moondrop-chu-iii-3-5mm-dynamic-driver-wired-iem-in-ear-monitor-headphones",
+   "price": 39,
+   "inStock": true,
+   "brand": "MOONDROP"
+  },
+  {
+   "retailer": "mwave",
    "sku": "179914",
    "title": "MOONDROP KADENZ USB-C Dynamic Driver Wired IEM Headphones",
    "url": "https://www.mwave.com.au/products/moondrop-kadenz-usbc-wired-inear-monitor-iem-headphones-ac98797",
@@ -2196,7 +2231,7 @@
    "sku": "AC49783",
    "title": "Pioneer DJ HDJ-CUE1 Dynamic Over-Ear Headphones - Dark Silver",
    "url": "https://www.mwave.com.au/products/pioneer-dj-hdjcue1-dynamic-overear-headphones-dark-silver-ac49783",
-   "price": 135,
+   "price": 123,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/pioneer_dj_hdjcue1_dynamic_overear_headphones_dark_silver_ac49783.jpg?v=1787798078",
    "inStock": false,
    "brand": "Pioneer"
@@ -2418,7 +2453,7 @@
    "url": "https://www.mwave.com.au/products/shokz-openfit-air-openear-earphones-white-ac80727",
    "price": 187.58,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/shokz_openfit_air_openear_earphones_white_ac80727_72298.jpg?v=1787798396",
-   "inStock": true,
+   "inStock": false,
    "brand": "Shokz"
   },
   {
@@ -2506,7 +2541,7 @@
    "sku": "AC30864",
    "title": "Shure SE215 Stereo In-ear Sound Isolating Earphones - Clear",
    "url": "https://www.mwave.com.au/products/shure-se215-stereo-inear-sound-isolating-earphones-clear-ac30864",
-   "price": 149,
+   "price": 144.9,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/shure_se215_stereo_inear_sound_isolating_earphones_clear_ac30864.jpg?v=1787798393",
    "inStock": false,
    "brand": "Shure"
@@ -2636,7 +2671,7 @@
    "sku": "169103",
    "title": "SteelSeries Arctis Nova 3P Wireless Multi-Platform Gaming Headset (Black)",
    "url": "https://www.mwave.com.au/products/steelseries-arctis-nova-3p-wireless-gaming-headset-black-ac93082",
-   "price": 163.55,
+   "price": 158,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/arctis_nova_3p_wireless_gaming_headset_black_ac93082_60669.jpg?v=1787748965",
    "inStock": false,
    "brand": "SteelSeries"
@@ -2656,8 +2691,18 @@
    "sku": "169106",
    "title": "SteelSeries Arctis Nova 3X Wireless Multi-Platform Gaming Headset (Black)",
    "url": "https://www.mwave.com.au/products/steelseries-arctis-nova-3x-wireless-gaming-headset-black-ac93085",
-   "price": 169,
+   "price": 158,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/arctis_nova_3x_wireless_gaming_headset_black_ac93085_95759.jpg?v=1787800803",
+   "inStock": true,
+   "brand": "SteelSeries"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "169107",
+   "title": "SteelSeries Arctis Nova 3XW Wireless Gaming Headset - White",
+   "url": "https://www.mwave.com.au/products/steelseries-arctis-nova-3xw-wireless-gaming-headset-white-ac97771",
+   "price": 180.79,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/steelseries_arctis_nova_3xw_wireless_gaming_headset_white_ac97771_75732.jpg?v=1787800796",
    "inStock": true,
    "brand": "SteelSeries"
   },
@@ -2728,6 +2773,16 @@
    "url": "https://www.mwave.com.au/products/steelseries-arctis-nova-pro-x-wired-gaming-headset-ac54365",
    "price": 445.79,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/steelseries_arctis_nova_pro_x_gaming_headset_ac54365.jpg?v=1787800802",
+   "inStock": true,
+   "brand": "SteelSeries"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "169073",
+   "title": "SteelSeries Arctis Nova Pro X Wireless Gaming Headset",
+   "url": "https://www.mwave.com.au/products/steelseries-arctis-nova-pro-x-wireless-gaming-headset-ac54367",
+   "price": 557.05,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/steelseries_arctis_nova_pro_wireless_x_gaming_headset_ac54367.jpg?v=1787800802",
    "inStock": true,
    "brand": "SteelSeries"
   },

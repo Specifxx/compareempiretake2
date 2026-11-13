@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T02:43:30.209Z",
+ "scrapedAt": "2026-11-13T01:22:08.519Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -238,7 +238,7 @@
    "url": "https://www.worldwidestereo.com/products/audio-technica-ath-awas-over-ear-headphones-with-asada-zakura-japanese-cherry",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/25_da65fc9f-0b6c-433a-93b4-80142196bd77.jpg?v=1762447655",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audio-Technica"
   },
   {
@@ -634,7 +634,7 @@
    "sku": "53462898278711",
    "title": "Beyerdynamic DT 1770 PRO MK II Tesla Studio Headphones",
    "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-1770-pro-mk-ii-tesla-studio-headphones",
-   "price": 449.99,
+   "price": 599.99,
    "wasPrice": 799.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-1770-PRO-MK-II-Tesla-Studio-Headphones-Image-01.jpg?v=1793374860",
    "inStock": true,
@@ -1576,16 +1576,6 @@
   },
   {
    "retailer": "us-worldwidestereo",
-   "sku": "48908219810103",
-   "title": "Focal Azurys Closed-Back Headphones (Blue)",
-   "url": "https://www.worldwidestereo.com/products/focal-azurys-closed-back-headphones-blue",
-   "price": 599,
-   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/9_d796372c-63af-4909-9a80-dbf097a18660.jpg?v=1762447659",
-   "inStock": false,
-   "brand": "Focal"
-  },
-  {
-   "retailer": "us-worldwidestereo",
    "sku": "52422371344695",
    "title": "Focal Bathys MG Over-Ear Bluetooth Headphones (Graphen Grey)",
    "url": "https://www.worldwidestereo.com/products/focal-bathys-mg-over-ear-bluetooth-headphones-graphen-grey",
@@ -2356,7 +2346,7 @@
    "price": 149.95,
    "wasPrice": 156,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Tune-780NC-Active-Noise-Cancelling-Over-Ear-Bluetooth-Headphones-Black-Image-01.jpg?v=1781409930",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL"
   },
   {
@@ -2625,7 +2615,7 @@
    "url": "https://www.worldwidestereo.com/products/sennheiser-hd-569-around-ear-headphones-with-microphone",
    "price": 179.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/167308_WWS1.jpg?v=1704306693",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sennheiser"
   },
   {

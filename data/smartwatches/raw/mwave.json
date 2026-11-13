@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T01:43:23.433Z",
+ "scrapedAt": "2026-11-13T00:22:53.127Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -38,7 +38,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-se-3-40mm-midnight-aluminium-case-gps-navy-blue-sport-band-s-m",
    "price": 395.84,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181642.jpg?v=1791854541",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -58,6 +58,16 @@
    "url": "https://www.mwave.com.au/products/apple-watch-se-3-40mm-starlight-aluminium-case-gps-sand-sport-band-s-m",
    "price": 395.84,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181640.jpg?v=1791941264",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "181655",
+   "title": "Apple Watch SE 3 44mm Midnight Aluminium Case GPS + Cellular Sport Band (M/L)",
+   "url": "https://www.mwave.com.au/products/apple-watch-se-3-44mm-midnight-aluminium-case-gps-cellular-sport-band-m-l",
+   "price": 533.67,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/WS4CA4MMBL_apple_watch_se_3_gps.jpg?v=1792977512",
    "inStock": false,
    "brand": "Apple"
   },
@@ -168,7 +178,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-series-12-42mm-light-gold-aluminium-case-gps-sand-sport-band-s-m",
    "price": 643.23,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181590.jpg?v=1791944494",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -188,7 +198,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-series-12-46mm-black-aluminium-case-gps-black-sport-band-m-l",
    "price": 731.59,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181597_1.png?v=1791511553",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -303,6 +313,15 @@
   },
   {
    "retailer": "mwave",
+   "sku": "175264",
+   "title": "Apple Watch Ultra 3 49mm Natural Titanium Case GPS + Cellular Milanese Loop (Small)",
+   "url": "https://www.mwave.com.au/products/apple-watch-ultra-3-49mm-natural-titanium-case-gps-cellular-milanese-loop-small",
+   "price": 1483.11,
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
    "sku": "181579",
    "title": "Apple Watch Ultra 4 49mm Black Titanium Case GPS + Cellular Milanese Loop (L)",
    "url": "https://www.mwave.com.au/products/apple-watch-ultra-4-49mm-black-titanium-case-gps-cellular-milanese-loop-l",
@@ -340,6 +359,60 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181580_3.png?v=1792543293",
    "inStock": false,
    "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "181570",
+   "title": "Apple Watch Ultra 4 49mm Natural Titanium Case GPS + Cellular Milanese Loop (L)",
+   "url": "https://www.mwave.com.au/products/apple-watch-ultra-4-49mm-natural-titanium-case-gps-cellular-milanese-loop-l",
+   "price": 1499,
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "181569",
+   "title": "Apple Watch Ultra 4 49mm Natural Titanium Case GPS + Cellular Milanese Loop (M)",
+   "url": "https://www.mwave.com.au/products/apple-watch-ultra-4-49mm-natural-titanium-case-gps-cellular-milanese-loop-m",
+   "price": 1499,
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "181568",
+   "title": "Apple Watch Ultra 4 49mm Natural Titanium Case GPS + Cellular Milanese Loop (S)",
+   "url": "https://www.mwave.com.au/products/apple-watch-ultra-4-49mm-natural-titanium-case-gps-cellular-milanese-loop-s",
+   "price": 1499,
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "181571",
+   "title": "Apple Watch Ultra 4 49mm Natural Titanium Case GPS + Cellular Ocean Band",
+   "url": "https://www.mwave.com.au/products/apple-watch-ultra-4-49mm-natural-titanium-case-gps-cellular-ocean-band",
+   "price": 1347,
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "147872",
+   "title": "Fitbit Sense 2 Smart Watch - Blue Mist/Pale Gold",
+   "url": "https://www.mwave.com.au/products/fitbit-sense-2-smart-watch-blue-mist-pale-gold",
+   "price": 448,
+   "inStock": true,
+   "brand": "Fitbit"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "147871",
+   "title": "Fitbit Sense 2 Smart Watch - Graphite/Graphite",
+   "url": "https://www.mwave.com.au/products/fitbit-sense-2-smart-watch-graphite-graphite",
+   "price": 448,
+   "inStock": false,
+   "brand": "Fitbit"
   },
   {
    "retailer": "mwave",

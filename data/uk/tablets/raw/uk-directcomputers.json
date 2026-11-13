@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T02:52:20.662Z",
+ "scrapedAt": "2026-11-13T01:31:21.747Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
@@ -11,6 +11,18 @@
    "inStock": true,
    "brand": "ACER",
    "mpn": "NT.D7JEK.004"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "MD4E4KN/A",
+   "title": "Apple iPad 11-inch A16 Wi-Fi 128GB - Pink",
+   "url": "https://directcomputers.co.uk/products/ipad-11th-gen-wifi-128gb-pnk",
+   "price": 465.99,
+   "wasPrice": 500.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f1cceb2075fd0b5cc0c91accbd047f0f_9975c3df-1244-4c0e-b6fc-aa60e682482f.jpg?v=1781255060",
+   "inStock": true,
+   "brand": "APPLE",
+   "mpn": "MD4E4KN/A"
   },
   {
    "retailer": "uk-directcomputers",
@@ -26,18 +38,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "MD4D4KN/A",
-   "title": "Apple iPad 11-inch A16 Wi-Fi 128GB - Yellow",
-   "url": "https://directcomputers.co.uk/products/ipad-11th-gen-wifi-128gb-ylw",
-   "price": 465.99,
-   "wasPrice": 500.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/125ec6bfe5aa23b85a17c69136c2b9f6_c871e79f-e468-4540-952a-ecb9bec54adb.jpg?v=1781255133",
-   "inStock": true,
-   "brand": "APPLE",
-   "mpn": "MD4D4KN/A"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "MD4H4KN/A",
    "title": "Apple iPad 11-inch A16 Wi-Fi 256GB - Blue",
    "url": "https://directcomputers.co.uk/products/ipad-11th-gen-wifi-256gb-blu",
@@ -47,18 +47,6 @@
    "inStock": true,
    "brand": "APPLE",
    "mpn": "MD4H4KN/A"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "MD4P4KN/A",
-   "title": "Apple iPad 11-inch A16 Wi-Fi 256GB - Pink",
-   "url": "https://directcomputers.co.uk/products/non-cancellable-non-returnable-ncnr-ipad-11th-gen-wifi-256gb-pnk",
-   "price": 572.99,
-   "wasPrice": 615.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f1cceb2075fd0b5cc0c91accbd047f0f_54820e7f-f1a2-4487-9d12-67de01f9fb34.jpg?v=1781255830",
-   "inStock": true,
-   "brand": "APPLE",
-   "mpn": "MD4P4KN/A"
   },
   {
    "retailer": "uk-directcomputers",
@@ -74,15 +62,39 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "MD4J4KN/A",
-   "title": "Apple iPad 11-inch A16 Wi-Fi 256GB - Yellow",
-   "url": "https://directcomputers.co.uk/products/non-cancellable-non-returnable-ncnr-ipad-11th-gen-wifi-256gb-ylw",
-   "price": 572.99,
-   "wasPrice": 615.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/125ec6bfe5aa23b85a17c69136c2b9f6_5d03179b-cc67-4797-9df7-64d142fb33f2.jpg?v=1781255820",
+   "sku": "MD5C4KN/A",
+   "title": "Apple iPad 11-inch A16 Wi-Fi 512GB - Pink",
+   "url": "https://directcomputers.co.uk/products/non-cancellable-non-returnable-ncnr-ipad-11th-gen-wifi-512gb-pnk",
+   "price": 786.99,
+   "wasPrice": 845.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f1cceb2075fd0b5cc0c91accbd047f0f.jpg?v=1781255039",
    "inStock": true,
    "brand": "APPLE",
-   "mpn": "MD4J4KN/A"
+   "mpn": "MD5C4KN/A"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "MD4Q4KN/A",
+   "title": "Apple iPad 11-inch A16 Wi-Fi 512GB - Silver",
+   "url": "https://directcomputers.co.uk/products/non-cancellable-non-returnable-ncnr-ipad-11th-gen-wifi-512gb-slv",
+   "price": 786.99,
+   "wasPrice": 845.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/532699743e4908c006c8c94548850ce1_2a518a4d-f516-43b5-9019-46754fcfd178.jpg?v=1781255841",
+   "inStock": true,
+   "brand": "APPLE",
+   "mpn": "MD4Q4KN/A"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "MDWQ4KN/A",
+   "title": "Apple iPad 11-inch Pro M5 Wi-Fi 1TB with standard glass - Silver",
+   "url": "https://directcomputers.co.uk/products/non-cancellable-non-returnable-ncnr-ipad-pro-11-m5-wifi-1tb-silver",
+   "price": 1930.99,
+   "wasPrice": 2075.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/6e83043ceea95881a05ebb5e4df068b4_7e9175f4-9664-45d9-a5de-3dc25eef7aa3.jpg?v=1781321092",
+   "inStock": true,
+   "brand": "APPLE",
+   "mpn": "MDWQ4KN/A"
   },
   {
    "retailer": "uk-directcomputers",
@@ -106,6 +118,17 @@
    "inStock": true,
    "brand": "APPLE",
    "mpn": "MDWK4KN/A"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "MDWN4KN/A",
+   "title": "Apple iPad 11-inch Pro M5 Wi-Fi 512GB with standard glass - Silver",
+   "url": "https://directcomputers.co.uk/products/ipad-pro-11-m5-wifi-512gb-silver",
+   "price": 1503.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/6e83043ceea95881a05ebb5e4df068b4_c85ce0bc-482e-4d8c-9b4f-3502b8f1e1b9.jpg?v=1781280694",
+   "inStock": true,
+   "brand": "APPLE",
+   "mpn": "MDWN4KN/A"
   },
   {
    "retailer": "uk-directcomputers",
@@ -288,18 +311,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "MH5N4KN/A",
-   "title": "Apple iPad Air M4 128 GB 33 cm (13\") 12 GB Wi-Fi 7 (802.11be) iPadOS 26 Grey",
-   "url": "https://directcomputers.co.uk/products/ipad-air-m4-13-wifi-128gb-spg",
-   "price": 1021.99,
-   "wasPrice": 1098.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/e960b2a9dc9a1758daa6b22fb59eb3c5_2dda2410-a3ad-43ba-867d-f54e46b525e5.jpg?v=1781338799",
-   "inStock": true,
-   "brand": "APPLE",
-   "mpn": "MH5N4KN/A"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "MH374KN/A",
    "title": "Apple iPad Air M4 256 GB 27.9 cm (11\") 12 GB Wi-Fi 7 (802.11be) iPadOS 26 Beige",
    "url": "https://directcomputers.co.uk/products/ipad-air-m4-11-wifi-256gb-stl",
@@ -357,18 +368,6 @@
    "inStock": true,
    "brand": "APPLE",
    "mpn": "MH5W4KN/A"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "MH5V4KN/A",
-   "title": "Apple iPad Air M4 256 GB 33 cm (13\") 12 GB Wi-Fi 7 (802.11be) iPadOS 26 Blue",
-   "url": "https://directcomputers.co.uk/products/ipad-air-m4-13-wifi-256gb-blu",
-   "price": 1128.99,
-   "wasPrice": 1213.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/da1903da9b038932dbda8e8750161fa9_b6f69271-82e4-4680-ade6-dc25e73cf70b.jpg?v=1781338768",
-   "inStock": true,
-   "brand": "APPLE",
-   "mpn": "MH5V4KN/A"
   },
   {
    "retailer": "uk-directcomputers",
@@ -524,6 +523,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "ZADX0054GB",
+   "title": "Lenovo Tab Plus 8GB 128GB EMMC Android, Luna Grey",
+   "url": "https://directcomputers.co.uk/products/lenovo-tab-plus-11-5-128gb",
+   "price": 382.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/bcc0c6e6a261dde9dc17ef218222e241_d0a0ffbd-d5f0-472b-a03b-9cfcddfc9d68.jpg?v=1788052772",
+   "inStock": true,
+   "brand": "LENOVO",
+   "mpn": "ZADX0054GB"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "EP2-14798",
    "title": "Microsoft Surface Pro 10 5G Intel Core Ultra 7 LTE 256 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
    "url": "https://directcomputers.co.uk/products/pro10-5g-i7-16-256-plat-w11p",
@@ -572,30 +582,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "EP2-48855",
-   "title": "Microsoft Surface Pro 13\" Intel Core Ultra 5 512 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Black",
-   "url": "https://directcomputers.co.uk/products/pro-13-cu5-16-512-blk-w11p",
-   "price": 2393.99,
-   "wasPrice": 2417.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/cbea67694174bd826d135514a4231514_ee63c93b-460e-49b1-8394-3e512b87cd59.jpg?v=1787447589",
-   "inStock": true,
-   "brand": "MICROSOFT",
-   "mpn": "EP2-48855"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "EP2-61526",
-   "title": "Microsoft Surface Pro 13\" Snapdragon 512 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
-   "url": "https://directcomputers.co.uk/products/pro-13-m10-16-512-plat-w11p",
-   "price": 1727.99,
-   "wasPrice": 1848.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/9e7ca9057a1b14613635f396896a3dc0_9290ed20-e8ff-46eb-9b4b-3ab0ed55b9a0.jpg?v=1789695883",
-   "inStock": true,
-   "brand": "MICROSOFT",
-   "mpn": "EP2-61526"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "EP2-61590",
    "title": "Microsoft Surface Pro 13\" Snapdragon 512 GB 33 cm (13\") 32 GB Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
    "url": "https://directcomputers.co.uk/products/pro-13-m10-32-512-plat-w11p",
@@ -605,17 +591,6 @@
    "inStock": true,
    "brand": "MICROSOFT",
    "mpn": "EP2-61590"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "SM-X130NZAEEUB",
-   "title": "Samsung Galaxy Tab A11 128 GB 22.1 cm (8.7\") 8 GB Wi-Fi 5 (802.11ac) Grey",
-   "url": "https://directcomputers.co.uk/products/gxy-tab-a11-wifi-128gb-gray",
-   "price": 268.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/e226d7401110687717fa7893ae57d795_2678ed4e-d0d7-4f27-b55d-f097dde640f6.jpg?v=1775266845",
-   "inStock": true,
-   "brand": "SAMSUNG",
-   "mpn": "SM-X130NZAEEUB"
   },
   {
    "retailer": "uk-directcomputers",
@@ -655,38 +630,14 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "SM-X400NZAREUB",
-   "title": "Samsung Galaxy Tab S10 Lite 128 GB 27.7 cm (10.9\") 6 GB Wi-Fi 6 (802.11ax) Grey",
-   "url": "https://directcomputers.co.uk/products/gxy-tab-s10-lite-wifi-128-grey",
-   "price": 410.99,
-   "wasPrice": 422.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/4de2fb5963acdc5b1e4c2d9b4bf7858852823f783db970f2088fbc49fd4a3d4b_2553e337-0829-47fb-b709-a51fa6bd6e88.jpg?v=1794016468",
+   "sku": "SM-X730NZAREUB",
+   "title": "Samsung Galaxy Tab S11 128 GB 27.9 cm (11\") 12 GB Wi-Fi 6 (802.11ax) Grey",
+   "url": "https://directcomputers.co.uk/products/gxy-tab-s11-wifi-128gb-gray",
+   "price": 1044.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/7c01ee7ff8341fef4f24cf641f746c50_6d752ece-8104-4fab-b4f0-1d0cc80e7bcf.jpg?v=1773456102",
    "inStock": true,
    "brand": "SAMSUNG",
-   "mpn": "SM-X400NZAREUB"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "SM-X400NZSPEUB",
-   "title": "Samsung Galaxy Tab S10 Lite 256 GB 27.7 cm (10.9\") 8 GB Wi-Fi 6 (802.11ax) Silver",
-   "url": "https://directcomputers.co.uk/products/gxy-tab-s10-lite-wifi-256gb-silver",
-   "price": 508.99,
-   "wasPrice": 524.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/3156b296e1cfd7debbf27ec7e956ae19.jpg?v=1775008730",
-   "inStock": true,
-   "brand": "SAMSUNG",
-   "mpn": "SM-X400NZSPEUB"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "9491G-2CLCGB11-6",
-   "title": "TCL NXTPAPER 14 Mediatek 256 GB 36.2 cm (14.2\") 8 GB Wi-Fi 5 (802.11ac) Android 14 Grey",
-   "url": "https://directcomputers.co.uk/products/nxtpap-14-grey-inc-tpen-case-1",
-   "price": 385.99,
-   "wasPrice": 394.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/67c579a97429c6b2f2c02fc6437202ca.jpg?v=1781437729",
-   "inStock": true,
-   "mpn": "9491G-2CLCGB11-6"
+   "mpn": "SM-X730NZAREUB"
   },
   {
    "retailer": "uk-directcomputers",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T03:06:59.792Z",
+ "scrapedAt": "2026-11-13T01:44:58.169Z",
  "offers": [
   {
    "retailer": "ca-idrinkcoffee",
@@ -511,7 +511,7 @@
    "url": "https://www.idrinkcoffee.com/products/breville-barista-touch-impress-espresso-machine",
    "price": 2199.99,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/wmed-154BrevelleBaristaTouchImpressDT.jpg?v=1687373061",
-   "inStock": true,
+   "inStock": false,
    "brand": "Breville"
   },
   {
@@ -2444,6 +2444,16 @@
   },
   {
    "retailer": "ca-idrinkcoffee",
+   "sku": "PRO-MOVE-BASE",
+   "title": "Profitec Move Base Espresso Machine",
+   "url": "https://www.idrinkcoffee.com/products/profitec-move-base-espresso-machine",
+   "price": 2999,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/movebase.png?v=1787421684",
+   "inStock": true,
+   "brand": "Profitec"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
    "sku": "PRO-MOVE-B",
    "title": "Profitec MOVE Espresso Machine",
    "url": "https://www.idrinkcoffee.com/products/profitec-move-espresso-machine",
@@ -2539,17 +2549,6 @@
   },
   {
    "retailer": "ca-idrinkcoffee",
-   "sku": "QM-POP-R",
-   "title": "Quick Mill Pop-up Espresso Machine - Red",
-   "url": "https://www.idrinkcoffee.com/products/quick-mill-pop-up-espresso-machine-red",
-   "price": 1294,
-   "wasPrice": 1549,
-   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/red-front-r3-final.webp?v=1791575508",
-   "inStock": true,
-   "brand": "Quick Mill"
-  },
-  {
-   "retailer": "ca-idrinkcoffee",
    "sku": "QM-POP",
    "title": "Quick Mill Pop-up Espresso Machine - Stainless Steel",
    "url": "https://www.idrinkcoffee.com/products/quick-mill-popup-espresso-machine",
@@ -2583,8 +2582,19 @@
   },
   {
    "retailer": "ca-idrinkcoffee",
+   "sku": "QM-POP-R",
+   "title": "Quick Mill Popup Espresso Machine - Red",
+   "url": "https://www.idrinkcoffee.com/products/quick-mill-pop-up-espresso-machine-red",
+   "price": 1294,
+   "wasPrice": 1549,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/red-front-r3-final.webp?v=1791575508",
+   "inStock": true,
+   "brand": "Quick Mill"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
    "sku": "QM-POP-Y",
-   "title": "Quick Mill Pop-up Espresso Machine - Yellow",
+   "title": "Quick Mill Popup Espresso Machine - Yellow",
    "url": "https://www.idrinkcoffee.com/products/quick-mill-pop-up-espresso-machine-yellow",
    "price": 1294,
    "wasPrice": 1549,

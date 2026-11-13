@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T02:35:49.345Z",
+ "scrapedAt": "2026-11-13T01:14:53.074Z",
  "offers": [
   {
    "retailer": "us-bandccamera",
@@ -843,7 +843,7 @@
    "price": 449.95,
    "wasPrice": 649.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/rf48s3bfjbvyplnysfyy.jpg?v=1747934002",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -854,7 +854,7 @@
    "price": 449.95,
    "wasPrice": 649.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/aztk5vf7fmsvrbw8s5cb.jpg?v=1747933999",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -1360,6 +1360,16 @@
    "price": 7000,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/leica-m-a-typ-127-rangefinder-camera-black-542309.png?v=1662832521",
    "inStock": false,
+   "brand": "Leica"
+  },
+  {
+   "retailer": "us-bandccamera",
+   "sku": "10380",
+   "title": "Leica M-A Rangefinder Camera (Hammertone)",
+   "url": "https://bandccamera.com/products/leica-m-a-rangefinder-camera-hammertone",
+   "price": 8000,
+   "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/wmfowok22onszqwurqw0.png?v=1794496737",
+   "inStock": true,
    "brand": "Leica"
   },
   {
@@ -2804,7 +2814,7 @@
    "price": 3498,
    "wasPrice": 3798,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/sony-alpha-7r-v-full-frame-mirrorless-interchangeable-lens-camera-741434.png?v=1666880278",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony",
    "mpn": "ILCE7RM5/B"
   },

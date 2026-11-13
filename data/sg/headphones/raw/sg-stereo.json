@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T03:08:06.378Z",
+ "scrapedAt": "2026-11-13T01:46:03.661Z",
  "offers": [
   {
    "retailer": "sg-stereo",
@@ -119,7 +119,7 @@
    "url": "https://www.stereo.com.sg/products/audeze-maxwell-2-anc-pro-wireless-noise-cancelling-gaming-headphones?variant=43640976146467",
    "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/AudezeMaxwell2ANC-PlayStation-1_2048x_jpg.webp?v=1786612183",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audeze"
   },
   {
@@ -129,7 +129,7 @@
    "url": "https://www.stereo.com.sg/products/audeze-maxwell-2-anc-pro-wireless-noise-cancelling-gaming-headphones?variant=43640976179235",
    "price": 679,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/AudezeMaxwell2ANC-XBOX-1_2048x_jpg.webp?v=1786612183",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audeze"
   },
   {
@@ -867,7 +867,8 @@
    "sku": "714346345823-Cloud Grey",
    "title": "Bowers & Wilkins Pi6 True Wireless Earphones Cloud Grey",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-pi6-true-wireless-earphones?variant=40675598139427",
-   "price": 389,
+   "price": 289,
+   "wasPrice": 389,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/bw_pi8pdp_buy-stack_795104-5-min_1_1.png?v=1734063983",
    "inStock": true,
    "brand": "Bowers & Wilkins",
@@ -878,7 +879,8 @@
    "sku": "714346345885-Glacier Blue",
    "title": "Bowers & Wilkins Pi6 True Wireless Earphones Glacier Blue",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-pi6-true-wireless-earphones?variant=40675598172195",
-   "price": 389,
+   "price": 289,
+   "wasPrice": 389,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/bw_pi8pdp_buy-stack_795104-7-min_1_1.png?v=1734063968",
    "inStock": false,
    "brand": "Bowers & Wilkins",
@@ -889,7 +891,8 @@
    "sku": "714346345793-Storm Grey",
    "title": "Bowers & Wilkins Pi6 True Wireless Earphones Storm Grey",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-pi6-true-wireless-earphones?variant=40675598204963",
-   "price": 389,
+   "price": 289,
+   "wasPrice": 389,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/bw_pi8pdp_buy-stack_795104-4-min_1_1.png?v=1734063988",
    "inStock": true,
    "brand": "Bowers & Wilkins",
@@ -900,7 +903,8 @@
    "sku": "714346345670-Anthracite Black",
    "title": "Bowers & Wilkins Pi8 True Wireless Earphones Anthracite Black",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-pi8-true-wireless-earphones?variant=40675598270499",
-   "price": 699,
+   "price": 539,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/bw_buy-stack_pi8_795104-4-min.png?v=1734064022",
    "inStock": true,
    "brand": "Bowers & Wilkins",
@@ -911,7 +915,8 @@
    "sku": "714346345700-Dove White",
    "title": "Bowers & Wilkins Pi8 True Wireless Earphones Dove White",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-pi8-true-wireless-earphones?variant=40675598303267",
-   "price": 699,
+   "price": 539,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/bw_buy-stack_pi8_795104-5-min_1fcc672b-0a41-405d-84a2-f5addbbb2a59.png?v=1734064022",
    "inStock": true,
    "brand": "Bowers & Wilkins",
@@ -922,7 +927,8 @@
    "sku": "714346345762-Midnight Blue",
    "title": "Bowers & Wilkins Pi8 True Wireless Earphones Midnight Blue",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-pi8-true-wireless-earphones?variant=40675598336035",
-   "price": 699,
+   "price": 539,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/bw_buy-stack_pi8_795104-7-min.png?v=1734064022",
    "inStock": true,
    "brand": "Bowers & Wilkins",
@@ -933,7 +939,8 @@
    "sku": "40829669736483",
    "title": "Bowers & Wilkins PX7S3 Wireless Noise Cancelling Headphones Black",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-px7s3-wireless-noise-cancelling-headphones?variant=40829669736483",
-   "price": 699,
+   "price": 539,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/BW_Px7S3PDP__BuyStack7__967450-min.png?v=1746770207",
    "inStock": true,
    "brand": "Bowers & Wilkins"
@@ -943,7 +950,8 @@
    "sku": "40829669802019",
    "title": "Bowers & Wilkins PX7S3 Wireless Noise Cancelling Headphones Blue",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-px7s3-wireless-noise-cancelling-headphones?variant=40829669802019",
-   "price": 699,
+   "price": 539,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/BW_Px7S3PDP__BuyStack3__967450-min.png?v=1746770113",
    "inStock": true,
    "brand": "Bowers & Wilkins"
@@ -953,7 +961,8 @@
    "sku": "40829669769251",
    "title": "Bowers & Wilkins PX7S3 Wireless Noise Cancelling Headphones White",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-px7s3-wireless-noise-cancelling-headphones?variant=40829669769251",
-   "price": 699,
+   "price": 539,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/BW_Px7S3PDP__BuyStack11__967450-min.png?v=1746770207",
    "inStock": true,
    "brand": "Bowers & Wilkins"
@@ -963,7 +972,8 @@
    "sku": "42385183899683",
    "title": "Bowers & Wilkins PX8 S2 Noise Cancelling Headphones Midnight Blue",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-px8-s2-noise-cancelling-headphones?variant=42385183899683",
-   "price": 999,
+   "price": 849,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/BW_HeadphoneNewColourways_Px8S2-MidnightBlue_BuyStack_1442800_3.png?v=1777516760",
    "inStock": true,
    "brand": "Bowers & Wilkins"
@@ -973,7 +983,8 @@
    "sku": "40958458855459",
    "title": "Bowers & Wilkins PX8 S2 Noise Cancelling Headphones Onyx Black",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-px8-s2-noise-cancelling-headphones?variant=40958458855459",
-   "price": 999,
+   "price": 849,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/BW_Px8S2PDP_BuyStack_1116100-4-min.webp?v=1758776126",
    "inStock": true,
    "brand": "Bowers & Wilkins"
@@ -983,7 +994,8 @@
    "sku": "40958458888227",
    "title": "Bowers & Wilkins PX8 S2 Noise Cancelling Headphones Warm Stone",
    "url": "https://www.stereo.com.sg/products/bowers-wilkins-px8-s2-noise-cancelling-headphones?variant=40958458888227",
-   "price": 999,
+   "price": 849,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/BW_Px8S2PDP_BuyStack_1116100-5-min.webp?v=1758776125",
    "inStock": true,
    "brand": "Bowers & Wilkins"
@@ -1517,7 +1529,7 @@
    "url": "https://www.stereo.com.sg/products/etymotic-research-er4xr-audiophile-earphones",
    "price": 479,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/er4xrearphones-1.png?v=1726736896",
-   "inStock": true,
+   "inStock": false,
    "brand": "Etymotic Research"
   },
   {
@@ -2671,7 +2683,8 @@
    "sku": "7340055401104",
    "title": "Marshall Major V Wireless Bluetooth Headphone Black",
    "url": "https://www.stereo.com.sg/products/marshall-major-v-wireless-bluetooth-headphone?variant=40886734815267",
-   "price": 269,
+   "price": 239,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/1a__majorv_hero_tcwebstore_2000x_0dde48f8-c7ec-4899-91e5-8423dddce67f.jpg?v=1726775525",
    "inStock": true,
    "brand": "Marshall"
@@ -2681,7 +2694,8 @@
    "sku": "40963235479587",
    "title": "Marshall Major V Wireless Bluetooth Headphone Brown",
    "url": "https://www.stereo.com.sg/products/marshall-major-v-wireless-bluetooth-headphone?variant=40963235479587",
-   "price": 269,
+   "price": 239,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/81D5DvVfSRL.jpg?v=1759223176",
    "inStock": true,
    "brand": "Marshall"
@@ -2691,7 +2705,8 @@
    "sku": "7340055401105",
    "title": "Marshall Major V Wireless Bluetooth Headphone Cream",
    "url": "https://www.stereo.com.sg/products/marshall-major-v-wireless-bluetooth-headphone?variant=40886734848035",
-   "price": 269,
+   "price": 239,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/1A_MAJOR_V_Cream_d2273643-f94c-4511-aec2-b3392492ab99_jpg.webp?v=1752573321",
    "inStock": true,
    "brand": "Marshall"
@@ -2701,7 +2716,8 @@
    "sku": "7340055401106",
    "title": "Marshall Major V Wireless Bluetooth Headphone Midnight Blue",
    "url": "https://www.stereo.com.sg/products/marshall-major-v-wireless-bluetooth-headphone?variant=40886734880803",
-   "price": 269,
+   "price": 239,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/1a__MAJOR_V__NEW_Midnight_Blue_jpg.webp?v=1752573321",
    "inStock": true,
    "brand": "Marshall"
@@ -2771,7 +2787,8 @@
    "sku": "42382895382563",
    "title": "Marshall Monitor III ANC Wireless Noise cancelling Headphone Beige",
    "url": "https://www.stereo.com.sg/products/marshall-monitor-iii-anc-wireless-noise-cancelling-headphone?variant=42382895382563",
-   "price": 519,
+   "price": 459,
+   "wasPrice": 519,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/Monitor_III_ANC_Webstore_NEW_Monitor_III_ANC_jpg.webp?v=1777369843",
    "inStock": true,
    "brand": "Marshall"
@@ -2781,7 +2798,8 @@
    "sku": "42382895349795",
    "title": "Marshall Monitor III ANC Wireless Noise cancelling Headphone Black",
    "url": "https://www.stereo.com.sg/products/marshall-monitor-iii-anc-wireless-noise-cancelling-headphone?variant=42382895349795",
-   "price": 519,
+   "price": 459,
+   "wasPrice": 519,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/MonitorIIIANCWebstoreNEW_MonitorIIIANC_jpg.webp?v=1735808555",
    "inStock": true,
    "brand": "Marshall"
@@ -2867,7 +2885,7 @@
    "url": "https://www.stereo.com.sg/products/meze-audio-strada-closed-back-dynamic-driver-headphone",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/MezeAudioSTRADA-1_2048x_jpg.webp?v=1769338276",
-   "inStock": true,
+   "inStock": false,
    "brand": "Meze Audio"
   },
   {
@@ -2877,7 +2895,7 @@
    "url": "https://www.stereo.com.sg/products/noble-audio-fokus-artemis-hybrid-wireless-3-drivers-headphone",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/NobleAudioFoKusArtemis-3_2048x_jpg.webp?v=1789707640",
-   "inStock": true,
+   "inStock": false,
    "brand": "Noble Audio"
   },
   {

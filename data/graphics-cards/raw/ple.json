@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T01:45:14.674Z",
+ "scrapedAt": "2026-11-13T00:23:28.730Z",
  "offers": [
   {
    "retailer": "ple",
@@ -173,7 +173,8 @@
    "brand": "ASUS",
    "mpn": "PRIME-RTX5060TI-O16G",
    "url": "https://www.ple.com.au/products/674805/asus-geforce-rtx-5060-ti-prime-oc-16gb-gddr7",
-   "price": 1399,
+   "price": 1249,
+   "wasPrice": 1399,
    "image": "https://plecom.imgix.net/iil-427730-674805.jpg?w=600&h=600",
    "inStock": true
   },
@@ -318,7 +319,7 @@
    "brand": "ASUS",
    "mpn": "ROG-ASTRAL-RTX5090-O32G-WHITE",
    "url": "https://www.ple.com.au/products/679013/asus-geforce-rtx-5090-rog-astral-oc-32gb-gddr7-white",
-   "price": 12999,
+   "price": 15999,
    "image": "https://plecom.imgix.net/iil-446158-679013.jpg?w=600&h=600",
    "inStock": true
   },
@@ -410,7 +411,7 @@
    "url": "https://www.ple.com.au/products/681908/asus-turbo-radeon-ai-pro-r9700-32gb-gddr6",
    "price": 3199,
    "image": "https://plecom.imgix.net/iil-489283-681908.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -422,7 +423,7 @@
    "price": 399,
    "wasPrice": 449,
    "image": "https://plecom.imgix.net/iil-423173-674107.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -433,18 +434,6 @@
    "url": "https://www.ple.com.au/products/688735/gigabyte-geforce-rtx-5060-aorus-8gb-gddr7-ari-edition",
    "price": 779,
    "image": "https://plecom.imgix.net/iil-487543-688735.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "678238",
-   "title": "Gigabyte GeForce RTX 5060 Eagle Max OC 8GB GDDR7",
-   "brand": "Gigabyte",
-   "mpn": "GV-N5060EAGLEMAX OC-8GD",
-   "url": "https://www.ple.com.au/products/678238/gigabyte-geforce-rtx-5060-eagle-max-oc-8gb-gddr7",
-   "price": 666,
-   "wasPrice": 769,
-   "image": "https://plecom.imgix.net/iil-442586-678238.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -620,7 +609,7 @@
    "url": "https://www.ple.com.au/products/672376/gigabyte-geforce-rtx-5070-ti-eagle-oc-sff-16gb-gddr7",
    "price": 2199,
    "image": "https://plecom.imgix.net/iil-418509-672376.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -722,7 +711,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5090AORUS M-32GD",
    "url": "https://www.ple.com.au/products/672364/gigabyte-geforce-rtx-5090-aorus-master-32gb-gddr7",
-   "price": 13999,
+   "price": 16999,
    "image": "https://plecom.imgix.net/iil-416528-672364.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1096,7 +1085,8 @@
    "brand": "Palit",
    "mpn": "NE63060U19K9-PG190L",
    "url": "https://www.ple.com.au/products/688803/palit-geforce-rtx-3060-infinity-2-oc-12gb-gddr6",
-   "price": 689,
+   "price": 629,
+   "wasPrice": 689,
    "image": "https://plecom.imgix.net/iil-488339-688803.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1107,7 +1097,7 @@
    "brand": "Palit",
    "mpn": "NE7506T019P1-GB2062D",
    "url": "https://www.ple.com.au/products/674495/palit-geforce-rtx-5060-ti-dual-8gb-gddr7",
-   "price": 749,
+   "price": 689,
    "wasPrice": 809,
    "image": "https://plecom.imgix.net/iil-428052-674495.jpg?w=600&h=600",
    "inStock": true
@@ -1431,7 +1421,7 @@
    "url": "https://www.ple.com.au/products/678054/xfx-swift-radeon-rx-9070-xt-triple-fan-gaming-edition-16gb-gddr6-",
    "price": 1479,
    "image": "https://plecom.imgix.net/iil-441703-678054.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

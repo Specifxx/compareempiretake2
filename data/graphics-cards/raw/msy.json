@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-12T01:43:12.249Z",
+ "scrapedAt": "2026-11-13T00:20:44.552Z",
  "offers": [
   {
    "retailer": "msy",
@@ -360,19 +360,8 @@
    "brand": "Asus",
    "mpn": "PRIME-RX9070GRE-O12G-EVO",
    "url": "https://www.msy.com.au/product/asus-prime-radeon-rx-9070-gre-evo-oc-12g-graphics-card-prime-rx9070gre-o12g-evo-97081",
-   "price": 999,
+   "price": 899,
    "image": "https://assets.msy.com.au/newsite/images/202611/thumb_img/Asus-Prime-Radeon-RX-9070-Gre-Evo-OC-12G-Graphics-Card-PRIME-RX9070GRE-O12G-EVO-10.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
-   "sku": "82138",
-   "title": "Asus Prime Radeon RX 9070 OC 16G Graphics Card",
-   "brand": "Asus",
-   "mpn": "PRIME-RX9070-O16G",
-   "url": "https://www.msy.com.au/product/asus-prime-radeon-rx-9070-oc-16g-graphics-card-prime-rx9070-o16g-82138",
-   "price": 1499,
-   "image": "https://assets.msy.com.au/newsite/images/202503/thumb_img/Asus-Prime-Radeon-RX-9070-OC-16G-Graphics-Card-PRIME-RX9070-O16G-8.jpg",
    "inStock": true
   },
   {
@@ -805,6 +794,17 @@
   },
   {
    "retailer": "msy",
+   "sku": "82669",
+   "title": "Gigabyte GeForce RTX 5060 Ti Eagle OC 16G Graphics Card",
+   "brand": "Gigabyte",
+   "mpn": "GV-N506TEAGLE OC-16GD",
+   "url": "https://www.msy.com.au/product/gigabyte-geforce-rtx-5060-ti-eagle-oc-16g-graphics-card-gv-n506teagle-oc-16gd-82669",
+   "price": 1399,
+   "image": "https://assets.msy.com.au/newsite/images/202504/thumb_img/Gigabyte-GeForce-RTX-5060-Ti-Eagle-OC-16G-Graphics-Card-GV-N506TEAGLE-OC-16GD-7.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
    "sku": "82689",
    "title": "Gigabyte GeForce RTX 5060 Ti Eagle OC Ice 16G Graphics Card",
    "brand": "Gigabyte",
@@ -1118,7 +1118,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-R906XGAMINGOCICE-16GD",
    "url": "https://www.msy.com.au/product/gigabyte-radeon-rx-9060-xt-gaming-oc-ice-16g-graphics-card-gv-r906xgamingocice-16gd-90750",
-   "price": 829,
+   "price": 799,
    "image": "https://assets.msy.com.au/newsite/images/202511/thumb_img/Gigabyte-Radeon-RX-9060-XT-Gaming-OC-Ice-16G-Graphics-Card-GV-R906XGAMINGOCICE-16GD-9.jpg",
    "inStock": true
   },
@@ -1326,7 +1326,7 @@
    "brand": "MSI",
    "mpn": "GeForce RTX 5070 12G VENTUS 2X OC",
    "url": "https://www.msy.com.au/product/msi-geforce-rtx-5070-12g-ventus-2x-oc-graphics-card-geforce-rtx-5070-12g-ventus-2x-oc-82063",
-   "price": 1599,
+   "price": 1499,
    "image": "https://assets.msy.com.au/newsite/images/202503/thumb_img/MSI-GeForce-RTX-5070-12G-Ventus-2X-OC-Graphics-Card-GeForce-RTX-5070-12G-VENTUS-2X-OC-7.jpg",
    "inStock": true
   },
