@@ -2110,3 +2110,7 @@ This replaces the coloured outlines of 2026-11-06 and 2026-11-07.
 Order, labels, links, tags, URLs, titles, metadata and headings are unchanged; what we earn still never decides order. Measure outbound
 clicks per placement on 19 November against the week before: if the pinned eBay row's clicks fall, strengthen its button before
 bringing any outline back.
+
+## 2026-11-13: urgent release
+
+Owner asked for every site to be released now.
