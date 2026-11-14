@@ -3,7 +3,7 @@ import { shortDate } from "@/lib/price-check";
 import { Sparkline } from "./Sparkline";
 
 const TONE = {
-  lowest: { tone: "save", badge: "bg-save text-white", label: "Real deal" },
+  lowest: { tone: "save", badge: "bg-save text-bg-card", label: "Real deal" },
   below: { tone: "save", badge: "bg-save-soft text-save", label: "Good price" },
   usual: { tone: "brand", badge: "bg-brand-soft text-brand", label: "Usual price" },
   above: { tone: "hot", badge: "bg-hot/10 text-hot", label: "Wait if you can" },

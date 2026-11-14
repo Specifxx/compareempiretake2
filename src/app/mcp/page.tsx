@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 export default function Page() {
   const endpoint = `${SITE}/api/mcp`;
   return (
-    <div className="container-x max-w-3xl pt-12 pb-16">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10 pb-16">
       <div className="eyebrow">For AI assistants</div>
-      <h1 className="mt-2 font-display text-4xl font-extrabold tracking-tight">Compare Empire’s MCP server</h1>
+      <h1 className="mt-2 page-title">Compare Empire’s MCP server</h1>
       <p className="mt-3 text-ink-soft">
         AI assistants that shop for people can ask Compare Empire for prices directly. The server answers with each country’s store prices in its own currency, the
         same data as this site and its sister sites, and links to the full comparison. Free, no key, read only.

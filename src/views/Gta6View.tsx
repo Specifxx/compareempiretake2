@@ -15,9 +15,9 @@ export function Gta6View({ region }: { region: RegionId }) {
   const R = REGIONS[region];
   const faq = GTA6_FAQ(IN[region]);
   return (
-    <div className="container-x pb-12 pt-10">
+    <div className="container-x pb-12 pt-6 sm:pt-10">
       <div className="max-w-2xl">
-        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">GTA 6 consoles: PS5 and Xbox prices in {IN[region]}</h1>
+        <h1 className="page-title">GTA 6 consoles: PS5 and Xbox prices in {IN[region]}</h1>
         <p className="mt-2 text-ink-mute">
           Grand Theft Auto VI launches on <b className="text-ink">{day(GTA6.releaseDate, region)}</b> for {GTA6.platforms}, according to{" "}
           <a href={GTA6.source.url} rel="noopener" target="_blank" className="underline decoration-line underline-offset-2 hover:text-ink">{GTA6.source.label}</a>.

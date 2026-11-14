@@ -94,31 +94,31 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
   const live = new Set(activeCategories(region).map((x) => x.id));
   const siblings = CATEGORIES.filter((x) => x.department === c.department && live.has(x.id) && x.id !== c.id);
   return (
-    <div className="container-x pt-6">
-      <nav className="mb-4 text-sm text-ink-mute" aria-label="Breadcrumb">
+    <div className="container-x pt-5 sm:pt-6">
+      <nav className="mb-3 text-sm text-ink-mute sm:mb-4" aria-label="Breadcrumb">
         <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link> /{" "}
         <Link prefetch={false} href={region === "au" ? "/categories" : withRegion("/browse", region)} className="hover:text-ink">All categories</Link> / <Link prefetch={false} href={`${region === "au" ? "/categories" : withRegion("/browse", region)}${region === "au" ? `#dept-${dept.id}` : ""}`} className="hover:text-ink">{dept.name}</Link> / <span aria-current="page">{c.name}</span>
       </nav>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-            {c.searchName ?? c.name} <span className="text-ink-mute">price comparison</span>
+          <h1 className="page-title">
+            {c.searchName ?? c.name} <span className="font-semibold text-ink-mute">price comparison</span>
           </h1>
-          <p className="mt-2 max-w-2xl text-ink-mute">
+          <p className="page-lede">
             {products.length.toLocaleString()} products across {stores.length} {REGIONS[region].adjective} stores. {c.blurb}
           </p>
         </div>
         {siblings.length > 0 && (
           <div className="flex flex-wrap gap-2">
-            <Link prefetch={false} href={withRegion(`/deals/${c.id}`, region)} className="chip text-xs font-semibold text-hot">{c.name} deals</Link>
-            {c.id === "consoles" && GTA6_REGIONS.includes(region) && <Link prefetch={false} href={withRegion("/gta-6", region)} className="chip text-xs font-semibold text-hot">GTA 6 console prices</Link>}
+            <Link prefetch={false} href={withRegion(`/deals/${c.id}`, region)} className="chip text-xs font-semibold text-ink">{c.name} deals</Link>
+            {c.id === "consoles" && GTA6_REGIONS.includes(region) && <Link prefetch={false} href={withRegion("/gta-6", region)} className="chip text-xs font-semibold text-ink">GTA 6 console prices</Link>}
             {siblings.map((s) => (
               <Link prefetch={false} key={s.id} href={categoryHref(s.id, region)} className="chip text-xs">{s.name}</Link>
             ))}
           </div>
         )}
       </div>
-      <div className="mt-8">
+      <div className="mt-6 sm:mt-8">
         {/* The first page only; the full list is a static file the browser loads (lib/browse.ts). */}
         <PhoneBrowser key={`${region}/${id}`} {...gridProps(products, id, { brands: true, cats: false, src: gridSrc.category(region, id), version: gridVersion(region) })} category={id} />
       </div>

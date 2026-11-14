@@ -16,9 +16,9 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
   const d = data[region] ?? data.au!;
   const R = REGIONS[region];
   return (
-    <footer className="mt-24 border-t border-line bg-bg-card">
-      <div className="container-x grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-        <div className="space-y-4">
+    <footer className="mt-16 border-t border-line bg-bg-card sm:mt-24">
+      <div className="container-x grid grid-cols-2 gap-x-6 gap-y-8 py-10 sm:py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-10">
+        <div className="col-span-2 space-y-4 md:col-span-1">
           <Logo />
           <p className="max-w-sm text-sm text-ink-soft">
             Independent price comparison for {WHO[region]}. We check {d.stores} retailers every day so you don&apos;t have to open {d.stores} tabs.
@@ -60,10 +60,11 @@ function FooterCol({ title, links }: { title: string; links: string[][] }) {
   return (
     <div>
       <div className="eyebrow mb-3">{title}</div>
-      <ul className="space-y-2 text-sm">
+      <ul className="text-sm md:space-y-2">
         {links.map(([l, h]) => (
           <li key={h}>
-            <Link prefetch={false} href={h} className="text-ink-soft hover:text-ink">{l}</Link>
+            {/* 40px tall on a phone, so a thumb finds each link (2026-11-14). */}
+            <Link prefetch={false} href={h} className="inline-flex min-h-[2.5rem] items-center text-ink-soft hover:text-ink md:min-h-0">{l}</Link>
           </li>
         ))}
       </ul>

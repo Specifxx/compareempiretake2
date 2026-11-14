@@ -14,10 +14,10 @@ export const metadata: Metadata = {
 
 export default function LinksPage() {
   return (
-    <div className="container-x max-w-md pb-16 pt-10">
+    <div className="container-x max-w-md pb-16 pt-6 sm:pt-10">
       <div className="text-center">
         <div className="eyebrow">Compare Empire</div>
-        <h1 className="mt-2 font-display text-3xl font-bold tracking-tight">Pay less for the same thing</h1>
+        <h1 className="mt-2 page-title">Pay less for the same thing</h1>
         <p className="mt-2 text-ink-soft">Independent price comparison. We check store prices every day and always list the cheapest first.</p>
       </div>
       {LINK_GROUPS.map((g) => (

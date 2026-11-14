@@ -2149,3 +2149,39 @@ text button (`inline`) is drawn as a bordered button (`cart.css`). Neutral, neve
 filled action and the calm three-colour rule holds. Nothing else moved: which rows can be added (open store rows, eBay and
 Amazon with a live price; never a marketplace or a search row), the line's buy link and its affiliate tag, the row order, the
 buy button and every placement are unchanged. A caller can still ask for the bare icon (`label={false}`).
+
+## 2026-11-14: every page brought up to the home page's look (owner: "make all the other pages more aesthetic as well")
+
+The home page's language is now the spec for the rest of the site: one page header (quiet breadcrumb, `.page-title` h1,
+one `.page-lede` line), the home page's section heading (`.section-title`), flat bordered cards with the `tile-hover`
+border lift, neutral panels, green only for money, the brand colour only for the one thing to press. Before/after
+screenshots (390 and 1440 px, light and dark): /mnt/project-files/redesign/2026-11-14-polish/ce/.
+
+- **Shared:** a visible brand-colour focus ring on every link, button, summary and tab; a small press (scale 0.98,
+  150 ms, off under reduced motion) on buttons, chips and tiles; buttons at least 40 px tall; footer links 40 px tall
+  on a phone, in two columns instead of one long list; the light theme's muted grey a touch darker (4.8:1 on the sunk
+  panel, it was 4.4:1). Small filled badges (savings %, "Cheapest", "Real deal", "New", the saved count) and the eBay
+  and Amazon row buttons take the theme's own text token instead of white, which read 2:1 on the dark theme's bright
+  green and blue.
+- **Product pages:** on a phone the photo is 16:10 instead of square, so the name, photo, best price and the eBay button
+  all fit the first screen; smaller thumbnails; spec labels narrower on a phone.
+- **Category and list pages:** the filter box was squashed to a sliver on phones (`flex-1` in a column); it is full
+  height now, with the sort beside the Filters button. The red "deals" chips are neutral. Brand tiles no longer push
+  the /brands page sideways on a phone.
+- **Guides:** the index lost its colour-washed card for the shared header; guide cards everywhere (home included) have a
+  plain neutral thumbnail instead of the blue gradient with blurred blobs. Articles: a ~68 character measure, one
+  heading scale, muted list markers, neutral callouts, and Markdown tables that scroll in their own box. The sidebar
+  "Compare every … price" card is a plain card.
+- **Deals:** the three coloured legend pills fold into a "How we spot a deal" `<details>` (same words, in the HTML).
+- **Search:** the results area keeps its height while it loads (the footer no longer jumps), a no-results search offers
+  the region's category pages, and its copy says eBay's listings are below, where they are.
+- **404:** a search box and "Browse every category" beside "Go to the home page".
+- **Stores, about, browse and static pages:** the shared header and spacing; store and browse rows at least 44 px tall
+  with tabular numbers.
+
+Unchanged on purpose: no paid link, ad block, pinned eBay / Amazon row, affiliate tag, placement name, label or button
+word moved or changed, and store rows keep their price order, so the 19 November clicks-per-placement recheck is
+unaffected. No URL, redirect, title, meta description, canonical, robots, Open Graph, JSON-LD or h1 changed (checked
+on 13 URLs against the old build's server HTML, with every internal link and word kept); no `revalidate`, data read,
+font or library was added. Seen and left: an intermittent layout shift on product pages at 1440 px (0.55, about one
+load in four, on the old build too; the sections under the price table move once while the page settles).

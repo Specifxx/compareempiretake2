@@ -20,9 +20,9 @@ export default function EmbedPage() {
   const cats = activeCategories("us").slice(0, 3);
   const badges = cats.map((c) => textBadge(SITE, SITE_NAME, categoryHref(c.id, "us"), c.name));
   return (
-    <div className="container-x max-w-3xl pt-12 pb-16">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10 pb-16">
       <div className="eyebrow">Free widgets</div>
-      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">Free price widgets for reviews and guides</h1>
+      <h1 className="mt-2 page-title">Free price widgets for reviews and guides</h1>
       <p className="mt-5 text-lg text-ink-soft">
         Put a live price on any review, buying guide or forum post with one line of HTML. It shows the cheapest price across the stores we check in
         the US, the UK or Australia, and updates itself every day. Free, no signup, no script and no tracking. The widget is noindex, so it never

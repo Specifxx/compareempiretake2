@@ -15,7 +15,7 @@ export function DealCard({ d }: { d: Deal; rank?: number }) {
           <img src={d.offer.image ?? d.phone.image} alt={d.phone.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />
         ) : null}
         {d.percent > 0 && (
-          <span className="absolute left-1.5 top-1.5 rounded bg-save px-1.5 py-0.5 text-[11px] font-bold text-white">−{d.percent}%</span>
+          <span className="absolute left-1.5 top-1.5 rounded bg-save px-1.5 py-0.5 text-[11px] font-bold text-bg-card">−{d.percent}%</span>
         )}
       </div>
       <div className="flex min-w-0 flex-1 flex-col">

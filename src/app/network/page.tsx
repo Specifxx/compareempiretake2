@@ -20,9 +20,9 @@ const INTRO: Record<ClusterId, string> = {
 
 export default function NetworkPage() {
   return (
-    <div className="container-x max-w-3xl pt-12">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10">
       <div className="eyebrow">Our sites</div>
-      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">The Compare Empire sites</h1>
+      <h1 className="mt-2 page-title">The Compare Empire sites</h1>
       <p className="mt-4 text-lg text-ink-soft">
         Each site compares one kind of product across independent stores, checks prices every day, and always lists the cheapest price first. No store
         pays to rank higher. They are free to use and need no account.

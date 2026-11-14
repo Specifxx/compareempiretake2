@@ -41,9 +41,9 @@ export default async function VsPage({ params }: { params: Promise<{ pair: strin
     ["Stores selling it", (x) => String(x.retailerCount)],
   ];
   return (
-    <div className="container-x max-w-4xl pt-10">
+    <div className="container-x max-w-4xl pt-6 sm:pt-10">
       <nav className="mb-6 text-sm text-ink-mute"><Link prefetch={false} href="/compare" className="hover:text-ink">Compare</Link> / <span className="text-ink">{a.model} vs {b.model}</span></nav>
-      <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">{a.name} vs {b.name}</h1>
+      <h1 className="page-title">{a.name} vs {b.name}</h1>
       <p className="mt-3 text-lg text-ink-soft">
         Today the <b className="text-ink">{cheap.name}</b> is{" "}
         {gap > 0 ? <><b className="text-save">${gap.toLocaleString("en-AU")} cheaper</b> at its lowest price</> : "the same price"}{" "}

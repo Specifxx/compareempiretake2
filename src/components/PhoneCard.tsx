@@ -21,7 +21,7 @@ export function PhoneCard({ p, priority, showCategory }: { p: CardItem; priority
           <div className="absolute inset-0 grid place-items-center text-sm text-ink-mute">No image</div>
         )}
         <div className="absolute left-2.5 top-2.5 flex flex-col items-start gap-1">
-          {pct >= 5 && <span className="rounded bg-save px-1.5 py-0.5 text-[11px] font-bold text-white">−{pct}%</span>}
+          {pct >= 5 && <span className="rounded bg-save px-1.5 py-0.5 text-[11px] font-bold text-bg-card">−{pct}%</span>}
           {p.atLowest && <span className="rounded bg-ink px-1.5 py-0.5 text-[11px] font-semibold text-bg-card">Lowest price yet</span>}
         </div>
         <SaveButton slug={p.href} className="absolute right-2 top-2" />

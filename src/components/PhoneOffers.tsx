@@ -92,16 +92,16 @@ export function PhoneOffers({
   );
 
   return (
-    <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12">
+    <div className="grid grid-cols-1 gap-5 sm:gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12">
       <div className="lg:sticky lg:top-32 lg:self-start">
-        <div className="img-tile relative aspect-square overflow-hidden rounded-lg border border-line">
-          {images[img] && <img src={images[img]} alt={phone.name} className="product-img absolute inset-0 h-full w-full object-contain p-10" />}
+        <div className="img-tile relative aspect-[16/10] overflow-hidden rounded-lg border border-line sm:aspect-square">
+          {images[img] && <img src={images[img]} alt={phone.name} className="product-img absolute inset-0 h-full w-full object-contain p-5 sm:p-10" />}
           <SaveButton slug={href} className="absolute right-4 top-4" />
         </div>
         {images.length > 1 && (
-          <div className="mt-3 flex gap-2 overflow-x-auto scrollbar-none">
+          <div className="mt-2.5 flex gap-2 overflow-x-auto scrollbar-none">
             {images.map((src, i) => (
-              <button key={src} onClick={() => setImg(i)} className={`img-tile h-16 w-16 shrink-0 overflow-hidden rounded-xl border-2 ${i === img ? "border-brand" : "border-transparent"}`}>
+              <button key={src} onClick={() => setImg(i)} className={`img-tile h-12 w-12 shrink-0 overflow-hidden rounded-lg border-2 sm:h-16 sm:w-16 ${i === img ? "border-brand" : "border-transparent"}`}>
                 <img src={src} alt={`${phone.name}, photo ${i + 1}`} className="product-img h-full w-full object-contain p-1.5" loading="lazy" />
               </button>
             ))}
@@ -430,7 +430,7 @@ export function OutrightRow({
         <div className="flex flex-wrap items-center gap-2">
           <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
           {RETAILERS[o.retailer].type === "official" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Official store</span>}
-          {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">Cheapest</span>}
+          {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-bg-card">Cheapest</span>}
           {aboveRrp(o.price, rrp) ? (
             <span className="rounded-full bg-hot/10 px-2 py-0.5 text-[10px] font-semibold text-hot" title={`The RRP ${rrp!.stores} stores list is ${$(rrp!.price)}`}>Above RRP</span>
           ) : !rrp && others && unusuallyHigh(o.price, others) ? (

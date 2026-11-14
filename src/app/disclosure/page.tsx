@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 
 export default function DisclosurePage() {
   return (
-    <div className="container-x max-w-3xl pt-12 pb-16">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10 pb-16">
       <div className="eyebrow">Affiliate disclosure</div>
-      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">How we make money.</h1>
+      <h1 className="mt-2 page-title">How we make money.</h1>
       <div className="mt-8 space-y-6 text-ink-soft [&_h2]:mt-8 [&_h2]:font-display [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-ink">
         <p>Compare Empire is free to use. To keep it that way, some links on the site are affiliate links.</p>
         <h2>Which links</h2>

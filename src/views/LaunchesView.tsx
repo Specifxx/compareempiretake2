@@ -70,9 +70,9 @@ export function LaunchesView({ region }: { region: RegionId }) {
   // Whatever the stores opened pre-orders for on their own (lib/preorders.ts): found in the import, no entry needed.
   const pre = storePreorders(region, catalogDay(region), getSummaries).slice(0, 24);
   return (
-    <div className="container-x pb-12 pt-10">
+    <div className="container-x pb-12 pt-6 sm:pt-10">
       <div className="max-w-2xl">
-        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">New phone launches</h1>
+        <h1 className="page-title">New phone launches</h1>
         <p className="mt-2 text-ink-mute">
           The big launches, with the release dates from each maker&apos;s own announcement, and what {REGIONS[region].adjective} stores charge for them today. Prices are
           checked every day; we never list a price before a store does.

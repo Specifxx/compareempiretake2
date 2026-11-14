@@ -67,17 +67,17 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     },
   ];
   return (
-    <div className="container-x pt-8 sm:pt-10">
+    <div className="container-x pt-5 sm:pt-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="mx-auto max-w-6xl lg:grid lg:grid-cols-[minmax(0,1fr)_260px] lg:gap-12">
         <article className="min-w-0 max-w-3xl">
-          <nav className="mb-5 flex flex-wrap items-center gap-1.5 text-sm text-ink-mute">
+          <nav className="crumbs" aria-label="Breadcrumb">
             <Link prefetch={false} href="/guides" className="hover:text-ink">Guides</Link>
             <span aria-hidden>/</span>
             <Link prefetch={false} href={`/guides#${section.id}`} className="hover:text-ink">{section.name}</Link>
           </nav>
-          <h1 className="font-display text-3xl font-bold leading-[1.1] tracking-tight sm:text-[2.75rem]">{g.title}</h1>
-          <p className="mt-4 text-lg text-ink-soft">{g.description}</p>
+          <h1 className="text-[1.875rem] font-bold leading-[1.12] tracking-tight sm:text-[2.75rem]" style={{ textWrap: "balance" }}>{g.title}</h1>
+          <p className="mt-3 max-w-[68ch] text-[1.0625rem] leading-relaxed text-ink-soft sm:mt-4 sm:text-lg">{g.description}</p>
           <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1 border-b border-line pb-6 text-sm text-ink-mute">
             <span>By the Compare Empire team</span>
             <span>{g.readingMinutes} min read</span>
@@ -95,7 +95,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           <div className="mt-8">
             <GuideBody body={g.body} regions={regions} />
           </div>
-          <div className="mt-12 rounded-lg border border-line bg-bg-sunk p-5 text-sm text-ink-soft">
+          <div className="mt-12 max-w-[68ch] rounded-lg border border-line bg-bg-card p-5 text-sm leading-relaxed text-ink-soft">
             <b className="text-ink">How we work:</b> every price in this guide is today&apos;s lowest in-stock price across the stores we check in your country, in your own currency, refreshed every morning, and the tables recalculate with it. Prices are never converted between currencies. Nobody pays to be included or to rank higher. Specs come from the stores&apos; and makers&apos; own listings.{" "}
             <Link prefetch={false} href="/about#how" className="text-brand hover:underline">How Compare Empire works</Link>
           </div>
@@ -112,9 +112,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
             )}
             {cat &&
               catRegions.map(({ r, n }) => (
-                <Link key={r} prefetch={false} href={categoryHref(cat.id, r)} className={`rg rg-${r} card bg-gradient-to-br from-brand-soft to-bg-card p-5 transition hover:shadow-lift`}>
-                  <div className="text-2xl">{cat.emoji}</div>
-                  <div className="mt-2 font-display text-lg font-bold leading-snug">Compare every {cat.noun} price</div>
+                <Link key={r} prefetch={false} href={categoryHref(cat.id, r)} className={`rg rg-${r} card tile-hover p-5`}>
+                  <div className="text-xl">{cat.emoji}</div>
+                  <div className="mt-1.5 text-base font-bold leading-snug">Compare every {cat.noun} price</div>
                   <p className="mt-1 text-sm text-ink-soft">{n.toLocaleString("en-US")} products in {cat.name} across {REGIONS[r].adjective} stores, cheapest in stock first.</p>
                   <span className="btn-primary mt-4 w-full py-2 text-xs">Compare {cat.name}</span>
                 </Link>
@@ -124,8 +124,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       </div>
       {more.length > 0 && (
         <section className="mx-auto mt-16 max-w-6xl">
-          <h2 className="mb-4 font-display text-2xl font-bold tracking-tight">Keep reading</h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <h2 className="section-title mb-3.5">Keep reading</h2>
+          <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
             {more.map((m) => <GuideCard key={m.slug} g={m} />)}
           </div>
         </section>

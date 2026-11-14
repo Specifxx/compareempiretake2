@@ -29,7 +29,7 @@ export function HotLaunches({ items, preorders = [], region }: { items: HotLaunc
             <>
               <div className="img-tile relative grid h-24 w-24 shrink-0 place-items-center overflow-hidden rounded-lg sm:h-28 sm:w-28">
                 {product?.image && <img src={product.image} alt={product.name} loading={i < 2 ? "eager" : "lazy"} className="product-img h-full w-full object-contain p-2" />}
-                {i === 0 && <span className="absolute left-1.5 top-1.5 rounded-full bg-hot px-2 py-0.5 text-[10px] font-bold text-white">New</span>}
+                {i === 0 && <span className="absolute left-1.5 top-1.5 rounded-full bg-hot px-2 py-0.5 text-[10px] font-bold text-bg-card">New</span>}
               </div>
               <div className="min-w-0">
                 <div className="text-xs font-medium text-ink-mute">{launch.brand}</div>
