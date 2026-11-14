@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:17:45.698Z",
+ "scrapedAt": "2026-11-14T01:27:27.243Z",
  "offers": [
   {
    "retailer": "us-glazers",
@@ -369,7 +369,7 @@
    "url": "https://www.glazerscamera.com/products/canon-powershot-g7-x-mkiii-slv",
    "price": 929.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/products/48677_01_Hero.png?v=1667594320",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -428,7 +428,8 @@
    "sku": "26474",
    "title": "DJI Osmo 360 Action Camera Adventure Combo",
    "url": "https://www.glazerscamera.com/products/dji-osmo-360-adventure-combo",
-   "price": 699.99,
+   "price": 569.99,
+   "wasPrice": 699.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/26474_CP-OS-00000442-02_01_Hero.png?v=1753986655",
    "inStock": true
   },
@@ -437,7 +438,8 @@
    "sku": "26467",
    "title": "DJI Osmo 360 Action Camera Standard Combo",
    "url": "https://www.glazerscamera.com/products/dji-osmo-360-standard-combo",
-   "price": 549.99,
+   "price": 444.99,
+   "wasPrice": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/26467_CP-OS-00000441-02_01_Hero.png?v=1753984362",
    "inStock": true
   },
@@ -464,7 +466,8 @@
    "sku": "32072",
    "title": "DJI Osmo Action 6 Adventure Combo",
    "url": "https://www.glazerscamera.com/products/dji-osmo-action-6-adv-combo",
-   "price": 536,
+   "price": 479,
+   "wasPrice": 536,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/32072_CP-OS-00000506-02_01..png?v=1763496260",
    "inStock": true
   },
@@ -1185,6 +1188,16 @@
    "url": "https://www.glazerscamera.com/products/kb-talon-top-handle-nato",
    "price": 74.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/15525_KB-TALONTH-BK_01_Hero.png?v=1729879227",
+   "inStock": false,
+   "brand": "Kondor Blue"
+  },
+  {
+   "retailer": "us-glazers",
+   "sku": "46326",
+   "title": "Kondor Blue Talon XL Top Handle with Trigger REC for Cameras - Raven Black",
+   "url": "https://www.glazerscamera.com/products/kb-talon-xl-top-handle-w-trgr",
+   "price": 99.99,
+   "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/46326KB-TALONTHXL-BK05Hero.png?v=1794603183",
    "inStock": false,
    "brand": "Kondor Blue"
   },
@@ -2298,7 +2311,7 @@
    "url": "https://www.glazerscamera.com/products/pentax-wg-1000-olive",
    "price": 279.95,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/9847_01_Hero.png?v=1717791672",
-   "inStock": true,
+   "inStock": false,
    "brand": "Pentax"
   },
   {

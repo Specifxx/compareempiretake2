@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T00:23:31.104Z",
+ "scrapedAt": "2026-11-14T00:32:28.185Z",
  "offers": [
   {
    "retailer": "ple",
@@ -535,7 +535,7 @@
    "price": 269,
    "wasPrice": 369,
    "image": "https://plecom.imgix.net/iil-463394-682758.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -571,7 +571,7 @@
    "price": 169,
    "wasPrice": 249,
    "image": "https://plecom.imgix.net/iil-459702-682428.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2217,6 +2217,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "686256",
+   "title": "LG 27BA65QB-B - 27\" 1440p 100Hz IPS Monitor with Daisy Chain",
+   "brand": "LG",
+   "mpn": "27BA65QB-B",
+   "url": "https://www.ple.com.au/products/686256/lg-27ba65qb-b-27-1440p-100hz-ips-monitor-with-daisy-chain",
+   "price": 299,
+   "wasPrice": 399,
+   "image": "https://plecom.imgix.net/iil-476022-686256.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "688721",
    "title": "LG 27G550B-B - 27\" 1080p 300Hz 1ms IPS Gaming Monitor",
    "brand": "LG",
@@ -2236,6 +2248,18 @@
    "price": 143,
    "wasPrice": 229,
    "image": "https://plecom.imgix.net/iil-465022-683440.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "686049",
+   "title": "LG 27U730SA-W - 27\" 4K 2160p 60Hz IPS Smart Monitor with webOS",
+   "brand": "LG",
+   "mpn": "27U730SA-W",
+   "url": "https://www.ple.com.au/products/686049/lg-27u730sa-w-27-4k-2160p-60hz-ips-smart-monitor-with-webos",
+   "price": 399,
+   "wasPrice": 449,
+   "image": "https://plecom.imgix.net/iil-475107-686049.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -2437,7 +2461,7 @@
    "price": 349,
    "wasPrice": 499,
    "image": "https://plecom.imgix.net/iil-451666-680219.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2531,7 +2555,7 @@
    "url": "https://www.ple.com.au/products/683913/lg-ultragear-gx7-oled-27gx704a-b-27-1440p-240hz-003ms-gaming-monitor",
    "price": 749,
    "image": "https://plecom.imgix.net/iil-466892-683913.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2603,7 +2627,7 @@
    "price": 309,
    "wasPrice": 379,
    "image": "https://plecom.imgix.net/iil-453638-680683.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2711,7 +2735,7 @@
    "price": 329,
    "wasPrice": 399,
    "image": "https://plecom.imgix.net/iil-464280-683335.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2771,18 +2795,6 @@
    "price": 369,
    "wasPrice": 449,
    "image": "https://plecom.imgix.net/iil-440647-677775.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "672820",
-   "title": "MSI MAG 27C6F E20 - 27\" Curved 1080p 200Hz 0.5ms Fast VA Gaming Monitor",
-   "brand": "MSI",
-   "mpn": "MAG 276CF E20",
-   "url": "https://www.ple.com.au/products/672820/msi-mag-27c6f-e20-27-curved-1080p-200hz-05ms-fast-va-gaming-monitor",
-   "price": 179,
-   "wasPrice": 229,
-   "image": "https://plecom.imgix.net/iil-422048-672820.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -3433,7 +3445,7 @@
    "price": 1299,
    "wasPrice": 2299,
    "image": "https://plecom.imgix.net/iil-409767-668739.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

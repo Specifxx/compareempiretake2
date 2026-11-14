@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:21:12.062Z",
+ "scrapedAt": "2026-11-14T01:30:45.099Z",
  "offers": [
   {
    "retailer": "us-samsung",
@@ -25,6 +25,17 @@
   },
   {
    "retailer": "us-samsung",
+   "sku": "LS24D300GANXZA",
+   "mpn": "LS24D300GANXZA",
+   "brand": "Samsung",
+   "title": "Samsung 24\" S3 (S30GD) FHD IPS 100Hz Monitor LS24D300GANXZA",
+   "url": "https://www.samsung.com/us/monitors/smart/24-s3-s30gd-fhd-ips-100hz-monitor-sku-ls24d300ganxza",
+   "price": 119.99,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls24d300ganxza/gallery/us-smart-ls24d300ganxza-----s---s--gd--fhd-ips----hz-monitor-black-551545377",
+   "inStock": true
+  },
+  {
+   "retailer": "us-samsung",
    "sku": "LS27FG900XNXZA",
    "mpn": "LS27FG900XNXZA",
    "brand": "Samsung",
@@ -33,17 +44,6 @@
    "price": 1399.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27fg900xnxza/gallery/us-gaming-ls27fg900xnxza-odyssey--d-g--xf--k----hz-gaming-monitor-silver-552008923",
    "inStock": false
-  },
-  {
-   "retailer": "us-samsung",
-   "sku": "LS27FG532ENXZA",
-   "mpn": "LS27FG532ENXZA",
-   "brand": "Samsung",
-   "title": "Samsung 27 Inch Odyssey G53F QHD 200hz | AMD FreeSync Premium | HDR10 Gaming Monitor LS27FG532ENXZA",
-   "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-g5-g53f-qhd-ips-200hz-gaming-monitor-sku-ls27fg532enxza",
-   "price": 249.99,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27fg532enxza/gallery/us-gaming-ls27fg532enxza-odyssey-g--g--f-qhd----hz-gaming-monitor-black-552005175",
-   "inStock": true
   },
   {
    "retailer": "us-samsung",
@@ -198,17 +198,6 @@
    "price": 899.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27dg602snxza/gallery/us-gaming-ls27dg602snxza-odyssey-oled-g--g--sd-qhd----hz-gaming-monitor-silver-552034818",
    "inStock": false
-  },
-  {
-   "retailer": "us-samsung",
-   "sku": "LS27D300GANXZA",
-   "mpn": "LS27D300GANXZA",
-   "brand": "Samsung",
-   "title": "Samsung 27\" S3 (S30GD) FHD IPS 100Hz Monitor LS27D300GANXZA",
-   "url": "https://www.samsung.com/us/monitors/smart/27-s3-s30gd-fhd-ips-100hz-monitor-sku-ls27d300ganxza",
-   "price": 149.99,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27d300ganxza/gallery/us-smart-ls27d300ganxza-----s---s--gd--fhd-ips----hz-monitor-black-551545395",
-   "inStock": true
   },
   {
    "retailer": "us-samsung",
@@ -461,7 +450,7 @@
    "url": "https://www.samsung.com/us/monitors/gaming/49-inch-odyssey-g9-g91f-dqhd-144hz-gaming-monitor-sku-ls49fg910enxza",
    "price": 999.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls49fg910enxza/gallery/us-gaming-ls49fg910enxza-odyssey-g--g--f-dqhd----hz-gaming-monitor-black-551983403",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-samsung",

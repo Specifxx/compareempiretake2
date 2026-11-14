@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:16:48.082Z",
+ "scrapedAt": "2026-11-14T01:26:34.577Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -559,7 +559,7 @@
    "url": "https://www.focuscamera.com/products/bose-884367-1500-audio-electronics-headphones-earbuds",
    "price": 359,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3653067.jpg?v=1785850599",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "884367-1500"
   },
@@ -2321,7 +2321,7 @@
    "url": "https://www.focuscamera.com/products/skullcandy-s2dpw-t740-audio-electronics-headphones-earbuds",
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3637032.jpg?v=1781617216",
-   "inStock": false,
+   "inStock": true,
    "brand": "SKULLCANDY",
    "mpn": "S2DPW-T740"
   },
@@ -2409,7 +2409,7 @@
    "url": "https://www.focuscamera.com/products/skullcandy-s2mtw-t987-audio-electronics-headphones-earbuds",
    "price": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3571655.jpg?v=1764785615",
-   "inStock": false,
+   "inStock": true,
    "brand": "SKULLCANDY",
    "mpn": "S2MTW-T987"
   },
@@ -2551,7 +2551,8 @@
    "sku": "43485427433520",
    "title": "Sony IER-EX15C USB-C Plug, Wired in-Ear Headphones with Mic (Pink)",
    "url": "https://www.focuscamera.com/products/sony-ierex15cp-audio-electronics-headphones-earbuds",
-   "price": 28,
+   "price": 19.99,
+   "wasPrice": 28,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3660142.jpg?v=1786626381",
    "inStock": true,
    "brand": "TD Synnex - Sony",
@@ -2562,7 +2563,8 @@
    "sku": "42446360412208",
    "title": "Sony IER-EX15C Wired USB-C In-ear Headphones (Black)",
    "url": "https://www.focuscamera.com/products/sony-ierex15cb-audio-electronics-headphones-earbuds",
-   "price": 28,
+   "price": 19.99,
+   "wasPrice": 28,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3556896.jpg?v=1759353846",
    "inStock": true,
    "brand": "TD Synnex - Sony",
@@ -2573,7 +2575,8 @@
    "sku": "43319438147632",
    "title": "Sony IER-EX15C Wired USB-C In-ear Headphones (Blue)",
    "url": "https://www.focuscamera.com/products/sony-ierex15cl-audio-electronics-headphones-earbuds",
-   "price": 28,
+   "price": 19.99,
+   "wasPrice": 28,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3638638.jpg?v=1781875445",
    "inStock": true,
    "brand": "TD Synnex - Sony",
@@ -2791,7 +2794,7 @@
    "url": "https://www.focuscamera.com/products/sony-mdrex15lpb-2pk-audio-electronics-headphones-earbuds",
    "price": 20,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3268220.jpg?v=1774303811",
-   "inStock": true,
+   "inStock": false,
    "brand": "TD Synnex - Sony",
    "mpn": "MDREX15LPB-2PK"
   },
@@ -2993,7 +2996,7 @@
    "price": 298,
    "wasPrice": 328,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3600509.jpg?v=1772471810",
-   "inStock": false,
+   "inStock": true,
    "brand": "TD Synnex - Sony",
    "mpn": "WF1000XM6B"
   },
@@ -3005,7 +3008,7 @@
    "price": 298,
    "wasPrice": 328,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/e4d8184d54ef414cabb22a88f40b557eae17109395aac5540d8add6c8e7fcf10-9a94523c0edf7ffb.jpg?v=1776964562",
-   "inStock": false,
+   "inStock": true,
    "brand": "TD Synnex - Sony",
    "mpn": "WF1000XM6B-IC"
   },
@@ -3041,7 +3044,7 @@
    "price": 298,
    "wasPrice": 328,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3679079.png?v=1791913485",
-   "inStock": false,
+   "inStock": true,
    "brand": "TD Synnex - Sony",
    "mpn": "WF1000XM6B-WAA"
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:44:58.169Z",
+ "scrapedAt": "2026-11-14T01:57:33.772Z",
  "offers": [
   {
    "retailer": "ca-idrinkcoffee",
@@ -34,11 +34,31 @@
   },
   {
    "retailer": "ca-idrinkcoffee",
+   "sku": "BEZ-ARIA-B-FAST",
+   "title": "Bezzera Aria Fast Espresso Machine w/PID and Flow Control - Black",
+   "url": "https://www.idrinkcoffee.com/products/bezzera-aria-fast-espresso-machine-w-pid-and-flow-control-black",
+   "price": 3699,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/orig-black-nonwood.png?v=1793998071",
+   "inStock": true,
+   "brand": "Bezzera"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
    "sku": "BEZ-ARIA-SS-FAST",
    "title": "Bezzera Aria Fast Espresso Machine w/PID and Flow Control - Chrome",
    "url": "https://www.idrinkcoffee.com/products/bezzera-aria-fast-espresso-machine-w-pid-and-flow-control-chrome",
-   "price": 3499,
+   "price": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/aria-fast-chrome.png?v=1793986558",
+   "inStock": true,
+   "brand": "Bezzera"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "BEZ-ARIA-G-FAST",
+   "title": "Bezzera Aria Fast Espresso Machine w/PID and Flow Control - Green",
+   "url": "https://www.idrinkcoffee.com/products/bezzera-aria-fast-espresso-machine-w-pid-and-flow-control-green",
+   "price": 3699,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/orig-green-nonwood.png?v=1793998072",
    "inStock": true,
    "brand": "Bezzera"
   },
@@ -47,7 +67,7 @@
    "sku": "BEZ-ARIA-W-FAST",
    "title": "Bezzera Aria Fast Espresso Machine w/PID and Flow Control - White",
    "url": "https://www.idrinkcoffee.com/products/bezzera-aria-fast-espresso-machine-w-pid-and-flow-control-white",
-   "price": 3499,
+   "price": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/aria-fast-white.png?v=1793986561",
    "inStock": true,
    "brand": "Bezzera"
@@ -300,6 +320,16 @@
    "url": "https://www.idrinkcoffee.com/products/bezzera-sole-fast-espresso-machine-stainless-steel",
    "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/SOLEFASTHEATINGSTAINLESSSTEEL.png?v=1784036970",
+   "inStock": true,
+   "brand": "Bezzera"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "BEZ-SOLE-F-W",
+   "title": "Bezzera Sole Fast Espresso Machine - White",
+   "url": "https://www.idrinkcoffee.com/products/bezzera-sole-fast-espresso-machine-white",
+   "price": 3499,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/SOLEFASTHEATINGWHITE.png?v=1784036943",
    "inStock": true,
    "brand": "Bezzera"
   },
@@ -2119,7 +2149,7 @@
    "url": "https://www.idrinkcoffee.com/products/la-marzocco-linea-mini-r-espresso-machine-white?variant=44629235793954",
    "price": 8300,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/141LM_Linea_Mini_-_White_-_Thumbnail_No_Wood_Ps2.webp?v=1765494693",
-   "inStock": false,
+   "inStock": true,
    "brand": "La Marzocco"
   },
   {
@@ -2231,6 +2261,61 @@
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/01-profitec-drive-black-wood-schraeg.webp?v=1793906787",
    "inStock": true,
    "brand": "Profitec"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "PRO-GO2-BLK",
+   "title": "Profitec Go 2.0 Espresso Machine - Black",
+   "url": "https://www.idrinkcoffee.com/products/profitec-go-2-0-espresso-machine-black",
+   "price": 1799,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/black_349d8939-4c1f-4dd4-964d-4785b466afe1.jpg?v=1787421738",
+   "inStock": true,
+   "brand": "Profitec",
+   "mpn": "PRO-GO2-BLK"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "PRO-GO2-BL",
+   "title": "Profitec Go 2.0 Espresso Machine - Blue",
+   "url": "https://www.idrinkcoffee.com/products/profitec-go-2-0-espresso-machine-blue",
+   "price": 1849,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/blue.jpg?v=1787421744",
+   "inStock": true,
+   "brand": "Profitec",
+   "mpn": "PRO-GO2-BL"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "PRO-GO2-BSS",
+   "title": "Profitec Go 2.0 Espresso Machine - Brushed Stainless Steel",
+   "url": "https://www.idrinkcoffee.com/products/profitec-go-2-0-espresso-machine-brushed-stainless-steel",
+   "price": 1849,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/brushed.jpg?v=1787421748",
+   "inStock": true,
+   "brand": "Profitec",
+   "mpn": "PRO-GO2-BSS"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "PRO-GO2-R",
+   "title": "Profitec Go 2.0 Espresso Machine - Red",
+   "url": "https://www.idrinkcoffee.com/products/profitec-go-2-0-espresso-machine-red",
+   "price": 1849,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/red_c5564e9d-3396-4422-a0fb-19c9865e6ae9.jpg?v=1787421741",
+   "inStock": true,
+   "brand": "Profitec",
+   "mpn": "PRO-GO2-R"
+  },
+  {
+   "retailer": "ca-idrinkcoffee",
+   "sku": "PRO-GO2-YL",
+   "title": "Profitec Go 2.0 Espresso Machine - Yellow",
+   "url": "https://www.idrinkcoffee.com/products/profitec-go-2-0-espresso-machine-yellow",
+   "price": 1849,
+   "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/yellow_6c380c01-d9a1-4a64-8c95-a02921c915fc.jpg?v=1787421751",
+   "inStock": true,
+   "brand": "Profitec",
+   "mpn": "PRO-GO2-YL"
   },
   {
    "retailer": "ca-idrinkcoffee",

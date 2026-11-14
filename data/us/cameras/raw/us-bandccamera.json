@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:14:53.074Z",
+ "scrapedAt": "2026-11-14T01:24:48.694Z",
  "offers": [
   {
    "retailer": "us-bandccamera",
@@ -281,7 +281,7 @@
    "price": 569.99,
    "wasPrice": 719.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/plu2vl9kiwilftnxivsh.png?v=1743008704",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon",
    "mpn": "6895C002"
   },
@@ -420,7 +420,7 @@
    "url": "https://bandccamera.com/products/canon-powershot-elph-360-hs-a-digital-camera-black",
    "price": 379,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/n1chpbjykhezrwvsluvy.jpg?v=1757437938",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon",
    "mpn": "7280C001"
   },
@@ -453,7 +453,7 @@
    "url": "https://bandccamera.com/products/canon-powershot-elph-360-hs-a-digital-camera-silver",
    "price": 379,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/ultdkbl5d1buzybdi5kp.jpg?v=1760634813",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon",
    "mpn": "7283C001"
   },
@@ -905,7 +905,7 @@
    "url": "https://bandccamera.com/products/fujifilm-x-e5-digital-camera-body-silver",
    "price": 1699.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/ogqebuqjyvr8gkeeapte.png?v=1749739375",
-   "inStock": true,
+   "inStock": false,
    "brand": "Fujifilm"
   },
   {
@@ -1030,11 +1030,31 @@
   },
   {
    "retailer": "us-bandccamera",
+   "sku": "16953974",
+   "title": "FUJIFILM X-T50, BLACK",
+   "url": "https://bandccamera.com/products/fujifilm-x-t50-black",
+   "price": 1599.95,
+   "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/fujifilm-x-t50-black-310989.jpg?v=1715919445",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "us-bandccamera",
    "sku": "16954033",
    "title": "FUJIFILM X-T50, BLACK with XC15-45mmF3.5-5.6 OIS PZ Lens Kit",
    "url": "https://bandccamera.com/products/fujifilm-x-t50-black-with-xc15-45mmf3-5-5-6-ois-pz-lens-kit",
    "price": 1699.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/fujifilm-x-t50-black-with-xc15-45mmf35-56-ois-pz-lens-kit-615297.jpg?v=1716267540",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "us-bandccamera",
+   "sku": "16953998",
+   "title": "FUJIFILM X-T50, CHARCOAL SILVER",
+   "url": "https://bandccamera.com/products/fujifilm-x-t50-charcoal-silver",
+   "price": 1599.95,
+   "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/fujifilm-x-t50-charcoal-silver-775392.jpg?v=1715919456",
    "inStock": true,
    "brand": "Fujifilm"
   },
@@ -1349,7 +1369,7 @@
    "url": "https://bandccamera.com/products/leica-m-ev1-mirrorless-camera",
    "price": 9290,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/rpokjrk6ho5qjszoelho.jpg?v=1763849159",
-   "inStock": false,
+   "inStock": true,
    "brand": "Leica"
   },
   {
@@ -2754,7 +2774,7 @@
    "url": "https://bandccamera.com/products/sony-a7-v-mirrorless-camera?variant=42268736258119",
    "price": 2899.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/rzazqvb4jff4ngekstit.jpg?v=1764699152",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony",
    "mpn": "ILCE-7M5/B"
   },
@@ -2918,7 +2938,7 @@
    "url": "https://bandccamera.com/products/sony-dsc-rx10-v-digital-camera",
    "price": 2299.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/nl0jnhxfllbqy45hw35b.png?v=1783639952",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony",
    "mpn": "DSCRX10M5B"
   },

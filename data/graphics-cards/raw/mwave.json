@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T00:22:52.590Z",
+ "scrapedAt": "2026-11-14T00:31:40.160Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -26,6 +26,7 @@
    "title": "ASUS Dual GeForce RTX 5070 12GB GDDR7 EVO OC Edition Video Card",
    "url": "https://www.mwave.com.au/products/asus-dual-geforce-rtx-5070-12gb-gddr7-evo-oc-edition-video-card",
    "price": 1399,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/182775_10.png?v=1794540466",
    "inStock": true,
    "brand": "Asus"
   },
@@ -345,6 +346,7 @@
    "title": "ASUS ProArt GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Video Card",
    "url": "https://www.mwave.com.au/products/asus-proart-geforce-rtx-5070-ti-16gb-gddr7-oc-edition-video-card",
    "price": 2099,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/182776_6.png?v=1794538368",
    "inStock": true,
    "brand": "Asus"
   },
@@ -495,7 +497,7 @@
    "url": "https://www.mwave.com.au/products/asus-rog-strix-geforce-rtx-5070-ti-16gb-gddr7-oc-edition-video-card-ac81841",
    "price": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_geforce_rtx_5070_ti_16gb_gddr7_oc_edition_video_card_ac81841_17710.jpg?v=1787784050",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -835,7 +837,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5060-windforce-2-max-oc-video-card-ac88398",
    "price": 679,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5060_windforce_2_max_oc_video_card_ac88398_6346.jpg?v=1787796644",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gigabyte"
   },
   {
@@ -945,7 +947,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5070-ti-eagle-oc-16gb-video-card-ac82612",
    "price": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5070_ti_eagle_oc_sff_16gb_video_card_ac82612_8265.jpg?v=1787796644",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gigabyte"
   },
   {
@@ -1734,7 +1736,7 @@
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5070-ti-gaming-trio-oc-16gb-video-card-ac86246",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5070_ti_gaming_trio_oc_16gb_video_card_ac86246_48931.jpg?v=1787797755",
-   "inStock": true,
+   "inStock": false,
    "brand": "MSI"
   },
   {
@@ -1809,6 +1811,16 @@
   },
   {
    "retailer": "mwave",
+   "sku": "182854",
+   "title": "MSI GeForce RTX 5080 COD MW4 Limited Edition OC 16GB Video Card",
+   "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5080-cod-mw4-limited-edition-oc-16gb-video-card",
+   "price": 3499,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/f16a990a_GeForce_RTX_5080_16G_COD_MW4_EDITION_OC_box_card.jpg?v=1794204103",
+   "inStock": true,
+   "brand": "MSI"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC81848",
    "title": "MSI GeForce RTX 5080 GAMING TRIO OC  16GB Video Card - White",
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5080-gaming-trio-oc-16gb-video-card-white-ac81848",
@@ -1864,7 +1876,7 @@
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5090-ventus-3x-oc-32gb-video-card-ac81852",
    "price": 15999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5090_ventus_3x_oc_32gb_video_card_ac81852_56275.jpg?v=1787797751",
-   "inStock": false,
+   "inStock": true,
    "brand": "MSI"
   },
   {
@@ -1904,7 +1916,7 @@
    "url": "https://www.mwave.com.au/products/nvidia-rtx-pro-4500-blackwell-32gb-professional-video-card-ac86469",
    "price": 7499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/nvidia_rtx_pro_4500_blackwell_32gb_professional_video_card_ac86469_10173.jpg?v=1787797930",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nvidia"
   },
   {

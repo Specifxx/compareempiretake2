@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:41:25.704Z",
+ "scrapedAt": "2026-11-14T01:56:05.127Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -8,7 +8,7 @@
    "title": "Apple iPad 2025 11\" Blue 256GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-blue-256gb-wi-fi-tablet-md4h4kn-a/version.asp",
    "price": 499.97,
-   "wasPrice": 578,
+   "wasPrice": 748,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4A4KNA_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -18,9 +18,20 @@
    "mpn": "MD4E4KN/A",
    "title": "Apple iPad 2025 11\" Pink 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-pink-128gb-wi-fi-tablet-md4e4kn-a/version.asp",
-   "price": 414.97,
-   "wasPrice": 488,
+   "price": 404.97,
+   "wasPrice": 429,
    "image": "https://www.laptopsdirect.co.uk/Images/MD4E4KNA_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1996700",
+   "mpn": "MD7F4KN/A",
+   "title": "Apple iPad 2025 11\" Silver 128GB Cellular Tablet",
+   "url": "https://www.laptopsdirect.co.uk/apple-ipad-2025-11-silver-128gb-cellular-tablet-md7f4kn-a/version.asp",
+   "price": 549.97,
+   "wasPrice": 579,
+   "image": "https://www.laptopsdirect.co.uk/Images/MD4G4KNA_1_Classic.jpg?v=9",
    "inStock": true
   },
   {
@@ -170,6 +181,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1996991",
+   "mpn": "ZAEL0024GB",
+   "title": "Lenovo Tab 10.1\" Luna Grey 64GB 4G Tablet",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-tab-10.1-luna-grey-64gb-4g-tablet-zael0024gb/version.asp",
+   "price": 189.97,
+   "wasPrice": 199.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/ZAEK0012GB_1_Classic.jpg?v=21",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2040003",
    "mpn": "SM-X400NZAREUB",
    "title": "Samsung Galaxy S10 Lite 10.9\" Grey 128GB Wi-Fi Tablet",
@@ -268,6 +290,17 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2044726",
+   "mpn": "SM-X230NZAPEUB",
+   "title": "Samsung Galaxy Tab A11+ 11\" Grey 256GB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-a11-11-grey-256gb-wi-fi-tablet-sm-x230nzapeub/version.asp",
+   "price": 299,
+   "wasPrice": 359,
+   "image": "https://www.laptopsdirect.co.uk/Images/SM-X236BZAREUB_1_Classic.jpg?v=10",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1793499",
    "mpn": "SM-T636BZKEEEA",
    "title": "Samsung Galaxy Tab Active4 Pro 10.1\" Black 128GB Wi-Fi & Cellular Tablet",
@@ -305,17 +338,7 @@
    "mpn": "SM-X520NZAREUB",
    "title": "Samsung Galaxy Tab S10 FE 10.9\" Grey 128GB Wi-Fi Tablet",
    "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-s10-fe-10.9-grey-128-wi-fi-tablet-sm-x520nzareub/version.asp",
-   "price": 514.76,
-   "image": "https://www.laptopsdirect.co.uk/Images/A1SM-X626BZAREUB_1_Classic.jpg?v=9",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2002236",
-   "mpn": "SM-X626BZAREUB",
-   "title": "Samsung Galaxy Tab S10 FE+ 5G 13.1\" Grey 128GB 5G Tablet",
-   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-s10-fe-13.1-grey-128-5g-tablet-sm-x626bzareub/version.asp",
-   "price": 712.76,
+   "price": 454.76,
    "image": "https://www.laptopsdirect.co.uk/Images/A1SM-X626BZAREUB_1_Classic.jpg?v=9",
    "inStock": true
   },
@@ -337,6 +360,26 @@
    "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-s10-12.4-platinum-silver-512gb-5g-tablet-sm-x826bzspeub/version.asp",
    "price": 1384.97,
    "image": "https://www.laptopsdirect.co.uk/Images/SM-X820NZSPEUB_1_Classic.jpg?v=8",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2041142",
+   "mpn": "SM-X730NZAREUB",
+   "title": "Samsung Galaxy Tab S11 11\" Grey 128GB Wi-Fi Tablet",
+   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-s11-11-grey-128gb-wi-fi-tablet-sm-x730nzareub/version.asp",
+   "price": 944.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/SM-X730NZAREUB_1_Classic.jpg?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2041149",
+   "mpn": "SM-X736BZAPEUB",
+   "title": "Samsung Galaxy Tab S11 5G 11\" Grey 256GB 5G Tablet",
+   "url": "https://www.laptopsdirect.co.uk/samsung-galaxy-tab-s11-5g-11-grey-256gb-5g-tablet-sm-x736bzapeub/version.asp",
+   "price": 1194.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/SM-X736BZAPEUB_1_Classic.jpg?v=1",
    "inStock": true
   },
   {

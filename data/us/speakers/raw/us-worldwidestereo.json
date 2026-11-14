@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:22:10.666Z",
+ "scrapedAt": "2026-11-14T01:31:39.129Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -18,7 +18,7 @@
    "url": "https://www.worldwidestereo.com/products/bluesound-pulse-2i-premium-wireless-streaming-speaker-white",
    "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/4_6cc17a74-eec9-44d5-9953-940248a373f1.jpg?v=1738076977",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bluesound"
   },
   {
@@ -116,7 +116,8 @@
    "sku": "49718384951607",
    "title": "Bose SoundLink Flex Portable Speaker (2nd Gen, Black)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-flex-portable-speaker-2nd-gen-black",
-   "price": 159,
+   "price": 119,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/3_89539ade-ef8b-4c82-848e-4019b5fe143e.jpg?v=1727323867",
    "inStock": false,
    "brand": "Bose"
@@ -126,7 +127,8 @@
    "sku": "49718384984375",
    "title": "Bose SoundLink Flex Portable Speaker (2nd Gen, Blue Dusk)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-flex-portable-speaker-2nd-gen-blue-dusk",
-   "price": 159,
+   "price": 119,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_76d833f4-cc15-4d18-9be4-78b3ca763c9a.jpg?v=1765392222",
    "inStock": false,
    "brand": "Bose"
@@ -136,7 +138,8 @@
    "sku": "51026215567671",
    "title": "Bose SoundLink Flex Portable Speaker (2nd Gen, Citrus Yellow)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-flex-portable-speaker-2nd-gen-citrus-yellow",
-   "price": 159,
+   "price": 114,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-SoundLink-Flex-Portable-Speaker-2nd-Gen_-Citrus-Yellow-Image-01.jpg?v=1765392223",
    "inStock": false,
    "brand": "Bose"
@@ -146,7 +149,8 @@
    "sku": "52739660382519",
    "title": "Bose SoundLink Flex Portable Speaker (2nd Gen, Dewdrop Mint)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-flex-portable-speaker-2nd-gen-dewdrop-mint",
-   "price": 159,
+   "price": 119,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-SoundLink-Flex-Portable-Speaker-2nd-Gen_-Dewdrop-Mint-Image-01.jpg?v=1785384327",
    "inStock": false,
    "brand": "Bose"
@@ -156,7 +160,8 @@
    "sku": "51564815548727",
    "title": "Bose SoundLink Flex Portable Speaker (2nd Gen, Fog Grey)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-flex-portable-speaker-2nd-gen-fog-grey",
-   "price": 159,
+   "price": 119,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-SoundLink-Flex-Portable-Speaker-2nd-Gen_-Fog-Grey-Image-05.jpg?v=1768453805",
    "inStock": false,
    "brand": "Bose"
@@ -166,7 +171,8 @@
    "sku": "52739660349751",
    "title": "Bose SoundLink Flex Portable Speaker (2nd Gen, Rosewood Mauve)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-flex-portable-speaker-2nd-gen-rosewood-mauve",
-   "price": 159,
+   "price": 119,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-SoundLink-Flex-Portable-Speaker-2nd-Gen_-Rosewood-Mauve-Image-01.jpg?v=1785384327",
    "inStock": false,
    "brand": "Bose"
@@ -176,7 +182,8 @@
    "sku": "49718385082679",
    "title": "Bose SoundLink Flex Portable Speaker (2nd Gen, Sandstone)",
    "url": "https://www.worldwidestereo.com/products/bose-soundlink-flex-portable-speaker-2nd-gen-sandstone",
-   "price": 159,
+   "price": 104,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/6_550ae982-83e3-4cc0-85ba-5461521ce0a4.jpg?v=1765392222",
    "inStock": false,
    "brand": "Bose"
@@ -358,7 +365,7 @@
    "url": "https://www.worldwidestereo.com/products/bowers-wilkins-zepplin-pro-edition-wireless-speaker-space-grey",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_0d73267b-1f3f-46a0-b45d-8e5e7f39d855.jpg?v=1757699451",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bowers & Wilkins"
   },
   {
@@ -418,7 +425,7 @@
    "url": "https://www.worldwidestereo.com/products/denon-home-400-wireless-smart-speaker-stone",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Denon-Home-400-Wireless-Smart-Speaker-Stone-Image-08.jpg?v=1774352297",
-   "inStock": true,
+   "inStock": false,
    "brand": "Denon"
   },
   {
@@ -535,7 +542,7 @@
    "price": 749.95,
    "wasPrice": 925,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Template500.jpg?v=1770083635",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL"
   },
   {
@@ -722,7 +729,7 @@
    "price": 229.95,
    "wasPrice": 279.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Cove-M1-Compact-Wi-Fi-Home-Speaker-White-Image-01.jpg?v=1788235455",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL"
   },
   {
@@ -865,7 +872,7 @@
    "price": 54.95,
    "wasPrice": 60,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Go-5-Waterproof-Portable-Bluetooth-Speaker-Blue-Image-01.jpg?v=1777176231",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL"
   },
   {
@@ -920,7 +927,7 @@
    "price": 54.95,
    "wasPrice": 60,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Go-5-Waterproof-Portable-Bluetooth-Speaker-White-Image-05.jpg?v=1777176232",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL"
   },
   {
@@ -994,7 +1001,7 @@
    "sku": "52513059635511",
    "title": "JBL PartyBox 130 Portable Party Speaker (Black)",
    "url": "https://www.worldwidestereo.com/products/jbl-partybox-130-portable-party-speaker-black",
-   "price": 449.95,
+   "price": 319.95,
    "wasPrice": 540,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-PartyBox-130-Portable-Party-Speaker-Black-Image-01.jpg?v=1782145524",
    "inStock": true,
@@ -1005,7 +1012,7 @@
    "sku": "52513059799351",
    "title": "JBL PartyBox 130 Portable Party Speaker (White)",
    "url": "https://www.worldwidestereo.com/products/jbl-partybox-130-portable-party-speaker-white",
-   "price": 449.95,
+   "price": 319.95,
    "wasPrice": 540,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-PartyBox-130-Portable-Party-Speaker-White-Image-01.jpg?v=1782145525",
    "inStock": true,
@@ -1731,7 +1738,7 @@
    "url": "https://www.worldwidestereo.com/products/sony-ult-field-5-portable-wireless-bluetooth-speaker-black",
    "price": 348,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/11_4843d689-7373-4deb-9d59-447a617af100.jpg?v=1745587191",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony"
   },
   {
@@ -1860,17 +1867,6 @@
    "price": 392.49,
    "wasPrice": 449.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/180232_WWS1.jpg?v=1704320702",
-   "inStock": false,
-   "brand": "Tivoli Audio"
-  },
-  {
-   "retailer": "us-worldwidestereo",
-   "sku": "47174788874551",
-   "title": "Tivoli Audio Songbook Bluetooth Speaker with Built-In Pre-Amp and Carrying Handle (Green)",
-   "url": "https://www.worldwidestereo.com/products/tivoli-audio-songbook-bluetooth-speaker-with-built-in-pre-amp-and-carrying-handle-green",
-   "price": 382.49,
-   "wasPrice": 449.99,
-   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/180233_WWS1.jpg?v=1704320703",
    "inStock": false,
    "brand": "Tivoli Audio"
   },

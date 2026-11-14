@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:13:50.487Z",
+ "scrapedAt": "2026-11-14T01:23:48.880Z",
  "offers": [
   {
    "retailer": "us-abt",
@@ -272,7 +272,7 @@
    "url": "https://www.abt.com/Apple-iPad-11th-Generation-11-Inch-128GB-Wi-Fi-in-Yellow-MD4D4LLA/p/219021.html",
    "price": 427,
    "image": "https://content.abt.com/image.php/7ea110085a60ba8a556dd076b2ae45c0?image=/images/products/BDP_Images/apple-ipad-11th-gen-wifi-yellow-front-back-view.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MD4D4LL/A"
   },
@@ -391,7 +391,7 @@
    "sku": "219041",
    "title": "Apple iPad (11th Generation) 11-Inch 512GB Wi-Fi + Cellular in Yellow - MD7R4LL/A",
    "url": "https://www.abt.com/Apple-iPad-11th-Generation-11-Inch-512GB-Wi-Fi-Cellular-in-Yellow-MD7R4LLA/p/219041.html",
-   "price": 894.95,
+   "price": 875,
    "image": "https://content.abt.com/image.php/cc9c617c8d51835639f4f1c441f04a0a?image=/images/products/BDP_Images/apple-ipad-11th-gen-cellular-yellow-front-back-view.jpg&ck=2&width=165&height=150&canvas",
    "inStock": false,
    "brand": "Apple",
@@ -426,7 +426,7 @@
    "url": "https://www.abt.com/Apple-iPad-11th-Generation-11-Inch-512GB-Wi-Fi-in-Silver-MD4Q4LLA/p/219027.html",
    "price": 712,
    "image": "https://content.abt.com/image.php/d2b985e3a9d09831cdfdb362847ad8af?image=/images/products/BDP_Images/apple-ipad-11th-gen-wifi-silver-front-back-view.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MD4Q4LL/A"
   },
@@ -1081,17 +1081,6 @@
   },
   {
    "retailer": "us-abt",
-   "sku": "213824",
-   "title": "Apple iPad mini (7th Generation) 128GB Wi-Fi in Space Gray - MXN63LL/A",
-   "url": "https://www.abt.com/Apple-iPad-mini-7th-Generation-128GB-Wi-Fi-in-Space-Gray-MXN63LLA/p/213824.html",
-   "price": 569,
-   "image": "https://content.abt.com/image.php/5f81604ae511efe4738b5c4e4f636984?image=/images/products/BDP_Images/apple-ipad-mini-space-gray-front-view.jpg&ck=2&width=165&height=150&canvas",
-   "inStock": true,
-   "brand": "Apple",
-   "mpn": "MXN63LL/A"
-  },
-  {
-   "retailer": "us-abt",
    "sku": "252873",
    "title": "Apple iPad mini (A20 Pro) 128GB Wi-Fi + Cellular in Midnight - MJ674LL/A",
    "url": "https://www.abt.com/Apple-iPad-mini-A20-Pro-128GB-Wi-Fi-Cellular-in-Midnight-MJ674LLA/p/252873.html",
@@ -1700,7 +1689,7 @@
    "sku": "234292",
    "title": "Apple iPad Pro M5 13-Inch 2TB Wi-Fi + Cellular with Nano-Texture Glass in Silver - ME8N4LL/A",
    "url": "https://www.abt.com/Apple-iPad-Pro-M5-13-Inch-2TB-Wi-Fi-Cellular-with-Nano-Texture-Glass-in-Silver-ME8N4LLA/p/234292.html",
-   "price": 2754,
+   "price": 2798,
    "image": "https://content.abt.com/image.php/7ba59119e7b8c499103c85ffb1afee53?image=/images/products/BDP_Images/apple-ipad-pro-13in-cellular-silver-front-rear.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Apple",
@@ -1711,7 +1700,7 @@
    "sku": "234291",
    "title": "Apple iPad Pro M5 13-Inch 2TB Wi-Fi + Cellular with Nano-Texture Glass in Space Black - ME8M4LL/A",
    "url": "https://www.abt.com/Apple-iPad-Pro-M5-13-Inch-2TB-Wi-Fi-Cellular-with-Nano-Texture-Glass-in-Space-Black-ME8M4LLA/p/234291.html",
-   "price": 2754,
+   "price": 2798,
    "image": "https://content.abt.com/image.php/29fca1b1fb598134a2ac84702a1345ed?image=/images/products/BDP_Images/apple-ipad-pro-13in-cellular-space-black-front-rear.jpg&ck=2&width=165&height=150&canvas",
    "inStock": true,
    "brand": "Apple",

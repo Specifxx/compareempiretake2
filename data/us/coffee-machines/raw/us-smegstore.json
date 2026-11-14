@@ -1,12 +1,13 @@
 {
- "scrapedAt": "2026-11-13T01:20:56.783Z",
+ "scrapedAt": "2026-11-14T01:30:31.452Z",
  "offers": [
   {
    "retailer": "us-smegstore",
    "sku": "EGF03PGUS",
    "title": "Espresso coffee machine Retro-style Pastel green Glossy",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-pastel-green-glossy-egf03pgus",
-   "price": 1200,
+   "price": 1000,
+   "wasPrice": 1200,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/EGF03PGUS.jpg?v=1760031367",
    "inStock": true,
    "mpn": "EGF03PGUS"
@@ -16,7 +17,8 @@
    "sku": "BCC12BLMUS",
    "title": "Fully Automatic Espresso Machine with Steam Wand - Matte Black",
    "url": "https://smegstore.us/products/espresso-coffee-machine-collezione-black-matte-bcc12blmus",
-   "price": 1000,
+   "price": 900,
+   "wasPrice": 1000,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/BCC12BLMUS.jpg?v=1760031307",
    "inStock": false,
    "mpn": "BCC12BLMUS"
@@ -26,7 +28,8 @@
    "sku": "BCC12WHMUS",
    "title": "Fully Automatic Espresso Machine with Steam Wand - Matte White",
    "url": "https://smegstore.us/products/espresso-coffee-machine-collezione-white-matte-bcc12whmus",
-   "price": 1000,
+   "price": 900,
+   "wasPrice": 1000,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/BCC12WHMUS.jpg?v=1785510633",
    "inStock": true,
    "mpn": "BCC12WHMUS"
@@ -36,7 +39,8 @@
    "sku": "ECF03BLUS",
    "title": "Manual Espresso & Cold Brew Coffee Machine – Retro-Style Black",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-black-glossy-ecf03blus",
-   "price": 840,
+   "price": 740,
+   "wasPrice": 840,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF03BLUS.jpg?v=1774361612",
    "inStock": true,
    "mpn": "ECF03BLUS"
@@ -46,7 +50,8 @@
    "sku": "ECF03CRUS",
    "title": "Manual Espresso & Cold Brew Coffee Machine – Retro-Style Cream",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-cream-glossy-ecf03crus",
-   "price": 840,
+   "price": 740,
+   "wasPrice": 840,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF03CRUS.jpg?v=1774361614",
    "inStock": true,
    "mpn": "ECF03CRUS"
@@ -56,7 +61,8 @@
    "sku": "ECF03PBUS",
    "title": "Manual Espresso & Cold Brew Coffee Machine – Retro-Style Pastel Blue",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-pastel-blue-glossy-ecf03pbus",
-   "price": 840,
+   "price": 740,
+   "wasPrice": 840,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF03PBUS.jpg?v=1774361615",
    "inStock": true,
    "mpn": "ECF03PBUS"
@@ -66,7 +72,8 @@
    "sku": "ECF03PGUS",
    "title": "Manual Espresso & Cold Brew Coffee Machine – Retro-Style Pastel Green",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-pastel-green-glossy-ecf03pgus",
-   "price": 840,
+   "price": 740,
+   "wasPrice": 840,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF03PGUS.jpg?v=1774361616",
    "inStock": true,
    "mpn": "ECF03PGUS"
@@ -76,7 +83,8 @@
    "sku": "ECF03WHUS",
    "title": "Manual Espresso & Cold Brew Coffee Machine – Retro-Style White",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-white-glossy-ecf03whus",
-   "price": 840,
+   "price": 740,
+   "wasPrice": 840,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF03WHUS.jpg?v=1774361619",
    "inStock": true,
    "mpn": "ECF03WHUS"
@@ -86,7 +94,8 @@
    "sku": "EMC02BLMUS",
    "title": "Manual Espresso Coffee Machine - Collezione Black Matte",
    "url": "https://smegstore.us/products/espresso-coffee-machine-collezione-black-matte-emc02blmus",
-   "price": 1900,
+   "price": 1600,
+   "wasPrice": 1900,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/EMC02BLMUS.jpg?v=1760031376",
    "inStock": true,
    "mpn": "EMC02BLMUS"
@@ -96,7 +105,8 @@
    "sku": "EMC02WHMUS",
    "title": "Manual Espresso Coffee Machine - Collezione White Matte",
    "url": "https://smegstore.us/products/espresso-coffee-machine-collezione-white-matte-emc02whmus",
-   "price": 1900,
+   "price": 1600,
+   "wasPrice": 1900,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/EMC02WHMUS.jpg?v=1760031381",
    "inStock": true,
    "mpn": "EMC02WHMUS"
@@ -106,7 +116,8 @@
    "sku": "ECF02BLUS",
    "title": "Manual Espresso Coffee Machine - Retro-Style Black",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-black-glossy-ecf02blus",
-   "price": 600,
+   "price": 500,
+   "wasPrice": 600,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF02BLUS.jpg?v=1760031343",
    "inStock": true,
    "mpn": "ECF02BLUS"
@@ -116,7 +127,8 @@
    "sku": "ECF02WHUS",
    "title": "Manual Espresso Coffee Machine - Retro-Style White",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-white-glossy-ecf02whus",
-   "price": 600,
+   "price": 500,
+   "wasPrice": 600,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF02WHUS.jpg?v=1760031357",
    "inStock": true,
    "mpn": "ECF02WHUS"
@@ -146,7 +158,8 @@
    "sku": "ECF02RDUS",
    "title": "Retro-Style Manual Espresso Coffee Machine - Red",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-red-glossy-ecf02rdus",
-   "price": 600,
+   "price": 500,
+   "wasPrice": 600,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF02RDUS_4.jpg?v=1772473748",
    "inStock": true,
    "mpn": "ECF02RDUS"
@@ -156,7 +169,8 @@
    "sku": "ECF02PBUS",
    "title": "Retro-Style Manual Espresso Machine - Pastel Blue",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-pastel-blue-glossy-ecf02pbus",
-   "price": 600,
+   "price": 500,
+   "wasPrice": 600,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF02PBUS.jpg?v=1760031347",
    "inStock": true,
    "mpn": "ECF02PBUS"
@@ -166,7 +180,8 @@
    "sku": "ECF02PGUS",
    "title": "Retro-Style Manual Espresso Machine - Pastel Green",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-pastel-green-glossy-ecf02pgus",
-   "price": 600,
+   "price": 500,
+   "wasPrice": 600,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF02PGUS.jpg?v=1760031350",
    "inStock": true,
    "mpn": "ECF02PGUS"
@@ -176,7 +191,8 @@
    "sku": "ECF02PKUS",
    "title": "Retro-Style Manual Espresso Machine - Pink",
    "url": "https://smegstore.us/products/espresso-coffee-machine-retro-style-pink-glossy-ecf02pkus",
-   "price": 600,
+   "price": 500,
+   "wasPrice": 600,
    "image": "https://cdn.shopify.com/s/files/1/0835/3385/7057/files/ECF02PKUS.jpg?v=1760031353",
    "inStock": true,
    "mpn": "ECF02PKUS"

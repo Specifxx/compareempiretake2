@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:15:38.154Z",
+ "scrapedAt": "2026-11-14T01:25:38.886Z",
  "offers": [
   {
    "retailer": "us-bose",
@@ -7,7 +7,7 @@
    "mpn": "LSULT-SPEAKERWIRELESS-BLK-120V-US",
    "brand": "Bose",
    "title": "Bose Lifestyle Ultra Speaker - Black",
-   "url": "https://www.bose.com/p/home-theater/bose-lifestyle-ultra-speaker/LSULT-SPEAKERWIRELESS.html?dwvar_LSULT-SPEAKERWIRELESS_color=BLACK",
+   "url": "https://www.bose.com/p/speakers/bose-lifestyle-ultra-speaker/LSULT-SPEAKERWIRELESS.html",
    "price": 349,
    "image": "https://assets.bosecreative.com/transform/c0045c82-cc87-425d-9f37-9fc6cc9a193d/LSUS-NueBlack_ThreeQuarter_Left?format=avif&quality=95",
    "inStock": true
@@ -18,7 +18,7 @@
    "mpn": "LSULT-SPEAKERWIRELESS-DWSD-120V-US",
    "brand": "Bose",
    "title": "Bose Lifestyle Ultra Speaker - Driftwood Sand",
-   "url": "https://www.bose.com/p/home-theater/bose-lifestyle-ultra-speaker/LSULT-SPEAKERWIRELESS-DWSD-120V-US.html",
+   "url": "https://www.bose.com/p/speakers/bose-lifestyle-ultra-speaker/LSULT-SPEAKERWIRELESS.html?dwvar_LSULT-SPEAKERWIRELESS_color=DRIFTWOOD%20SAND",
    "price": 379,
    "image": "https://assets.bosecreative.com/transform/2508f3e8-ccb4-47c9-9a38-2dbe60ad24ca/LSUS-DriftwoodSand_ThreeQuarter_Left",
    "inStock": true
@@ -29,7 +29,7 @@
    "mpn": "LSULT-SPEAKERWIRELESS-WHTSM-120V-US",
    "brand": "Bose",
    "title": "Bose Lifestyle Ultra Speaker - White Smoke",
-   "url": "https://www.bose.com/p/home-theater/bose-lifestyle-ultra-speaker/LSULT-SPEAKERWIRELESS.html?dwvar_LSULT-SPEAKERWIRELESS_color=WHITE%20SMOKE",
+   "url": "https://www.bose.com/p/speakers/bose-lifestyle-ultra-speaker/LSULT-SPEAKERWIRELESS.html?dwvar_LSULT-SPEAKERWIRELESS_color=WHITE%20SMOKE",
    "price": 349,
    "image": "https://assets.bosecreative.com/transform/00182e91-0a5d-432a-b9a4-6e869d49f307/LSUS-WhiteSmoke_ThreeQuarter_Left",
    "inStock": true
@@ -105,7 +105,7 @@
    "url": "https://www.bose.com/p/speakers/bose-soundlink-flex-portable-speaker-2nd-gen/SLFLXII-SPEAKERWIRELESS.html?dwvar_SLFLXII-SPEAKERWIRELESS_color=CITRUS%20YELLOW",
    "price": 159,
    "image": "https://assets.bosecreative.com/transform/09f32a21-8229-42dd-8ce2-79044d01dd26/SLFLXIILE-Citrus_SF_PDP_E-CommGallery_1500x1120_1?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -354,18 +354,8 @@
    "sku": "858365-5110",
    "mpn": "858365-5110",
    "brand": "Bose",
-   "title": "Bose SoundLink Revolve II Bluetooth Speaker - Black",
-   "url": "https://www.bose.com/p/speakers/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS.html?dwvar_SLRVII-SPEAKERWIRELESS_color=BLACK",
-   "price": 219,
-   "inStock": false
-  },
-  {
-   "retailer": "us-bose",
-   "sku": "858365-5330",
-   "mpn": "858365-5330",
-   "brand": "Bose",
-   "title": "Bose SoundLink Revolve II Bluetooth Speaker - Gray",
-   "url": "https://www.bose.com/p/speakers/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS.html?dwvar_SLRVII-SPEAKERWIRELESS_color=GRAY",
+   "title": "Bose SoundLink Revolve II Bluetooth Speaker",
+   "url": "https://www.bose.com/p/speakers/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS.html",
    "price": 219,
    "inStock": false
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T00:25:34.480Z",
+ "scrapedAt": "2026-11-14T00:34:51.794Z",
  "offers": [
   {
    "retailer": "teds",
@@ -8,7 +8,7 @@
    "url": "https://www.teds.com.au/products/agfa-realishot-dc5500-digital-camera-black",
    "price": 79.95,
    "wasPrice": 99.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/agfa_dc5500bk.jpg?v=1768968624",
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/agfa_dc5500bk_2.jpg?v=1768968624",
    "inStock": true
   },
   {
@@ -43,12 +43,32 @@
   },
   {
    "retailer": "teds",
+   "sku": "131686",
+   "title": "Agfa Realishot DC9200 Zoom Digital Camera - Black",
+   "url": "https://www.teds.com.au/products/agfa-realishot-dc9200-digital-camera-black",
+   "price": 199.95,
+   "wasPrice": 249.95,
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/DC9200BK_4.jpg?v=1794559376",
+   "inStock": true
+  },
+  {
+   "retailer": "teds",
    "sku": "131682",
-   "title": "Agfa Realshot WP9500 Waterproof Camera",
-   "url": "https://www.teds.com.au/products/agfa-realshot-wp9500-waterproof-camera",
+   "title": "Agfa Realishot WP9500 Waterproof Camera - Orange",
+   "url": "https://www.teds.com.au/products/agfa-realishot-wp9500-waterproof-camera-orange",
    "price": 149.95,
    "wasPrice": 249.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/1783960441_IMG_2789495.jpg?v=1789511132",
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/wp9500_orange.jpg?v=1768968624",
+   "inStock": true
+  },
+  {
+   "retailer": "teds",
+   "sku": "131687",
+   "title": "Agfa Realishot WP9500 Waterproof Camera Black",
+   "url": "https://www.teds.com.au/products/agfa-realshot-wp9500-waterproof-camera-black",
+   "price": 149.95,
+   "wasPrice": 249.95,
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/WP9500BK.jpg?v=1794615197",
    "inStock": true
   },
   {
@@ -116,8 +136,7 @@
    "sku": "128164",
    "title": "Canon EOS R10 + 18-45mm & 55-210mm Twin Kit",
    "url": "https://www.teds.com.au/products/canon-eos-r10-18-45mm-55-210mm-stm-kit",
-   "price": 1899.95,
-   "wasPrice": 1999.95,
+   "price": 1999.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/canon_eos_r10_18-45mm_rfs_55-210mm_1.jpg?v=1771333081",
    "inStock": true,
    "brand": "Canon"
@@ -167,8 +186,7 @@
    "sku": "127513",
    "title": "Canon EOS R6 Mark II w/24-105mm L IS U Kit",
    "url": "https://www.teds.com.au/products/canon-eos-r6-mark-ii-24-105mm-l-is-u-kit",
-   "price": 4299.95,
-   "wasPrice": 4499.95,
+   "price": 4499.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/canon-rf24-105f4l_3.jpg?v=1768797647",
    "inStock": true,
    "brand": "Canon"
@@ -221,16 +239,6 @@
    "url": "https://www.teds.com.au/products/canon-erc-r5l-rain-cover-for-eos-r5-ii-large",
    "price": 199.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/152368.jpg?v=1793685669",
-   "inStock": true,
-   "brand": "Canon"
-  },
-  {
-   "retailer": "teds",
-   "sku": "124686",
-   "title": "Canon ERC-R5S Rain Cover for EOS R5 II - Small",
-   "url": "https://www.teds.com.au/products/canon-erc-r5s-rain-cover-for-eos-r5-ii-small",
-   "price": 199.95,
-   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/61990.jpg?v=1791351610",
    "inStock": true,
    "brand": "Canon"
   },
@@ -564,8 +572,7 @@
    "sku": "127591",
    "title": "Fujifilm X-T5 + 16-50mm Kit - Silver",
    "url": "https://www.teds.com.au/products/fujifilm-x-t5-16-50mm-kit-silver",
-   "price": 2999.95,
-   "wasPrice": 3299.95,
+   "price": 3299.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/fujifilm-x-t-5-silver-16-50mm.jpg?v=1768797646",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1227,7 +1234,7 @@
    "price": 1099.95,
    "wasPrice": 1299.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/om-system-om-5-angle.jpg?v=1768969270",
-   "inStock": true,
+   "inStock": false,
    "brand": "Olympus OM System"
   },
   {

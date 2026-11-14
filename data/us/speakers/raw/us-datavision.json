@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:16:16.534Z",
+ "scrapedAt": "2026-11-14T01:26:09.388Z",
  "offers": [
   {
    "retailer": "us-datavision",
@@ -20,7 +20,7 @@
    "price": 349,
    "wasPrice": 353.16,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/0f6c8764-f27b-45ab-9461-69aec64fe013.jpg?v=1750714838",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MDEW4LL/A"
   },
@@ -892,7 +892,7 @@
    "price": 64.95,
    "wasPrice": 99.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/products/f33d0dde-f347-43ce-8140-7507a98aa0bb.jpg?v=1611634582",
-   "inStock": true,
+   "inStock": false,
    "mpn": "JBLCLIP4BLKAM"
   },
   {
@@ -1620,7 +1620,8 @@
    "sku": "JBLPBCLUB120AM",
    "title": "JBL Party Box 120 Club Bluetooth Speaker",
    "url": "https://datavision.com/products/jbl-party-box-120-club-bluetooth-speaker",
-   "price": 449.95,
+   "price": 279.95,
+   "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/4e00f859-009c-47bd-bb2e-e11b4b79c7f8.jpg?v=1711132486",
    "inStock": false,
    "mpn": "JBLPBCLUB120AM"
@@ -1630,7 +1631,8 @@
    "sku": "JBLPB130BLKAM",
    "title": "JBL Party Box 130 Bluetooth Speaker - Light Show, IPX4, Guitar & Mic input - Black",
    "url": "https://datavision.com/products/jbl-party-box-130-bluetooth-speaker-light-show-ipx4-guitar-mic-input-black",
-   "price": 449.95,
+   "price": 319.95,
+   "wasPrice": 449.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/3920cc77-f534-427a-b21c-ae1785d6627d.jpg?v=1784916093",
    "inStock": false,
    "mpn": "JBLPB130BLKAM"
@@ -1679,7 +1681,8 @@
    "sku": "JBLPBCLUB120SWAM",
    "title": "JBL PartyBox Club 120 Bluetooth Speaker - White",
    "url": "https://datavision.com/products/jbl-partybox-club-120-bluetooth-speaker-white",
-   "price": 449.95,
+   "price": 279.95,
+   "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/f22e8487-dbdf-48f6-bb9e-c786a0dd3274.jpg?v=1727299195",
    "inStock": false,
    "mpn": "JBLPBCLUB120SWAM"

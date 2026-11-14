@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T01:15:32.994Z",
+ "scrapedAt": "2026-11-14T01:25:27.710Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -546,7 +546,7 @@
    "price": 459,
    "wasPrice": 516.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1117106_1_f041c540-6d3e-403c-9e2b-a723f995fd84.jpg?v=1790122240",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dell",
    "mpn": "DELU2724D"
   },
@@ -593,7 +593,7 @@
    "url": "https://www.beachcamera.com/products/dell-p2725de-27-inch-qhd-usb-c-hub-monitor-100hz-ips",
    "price": 495,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1200280_1.jpg?v=1793614130",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dell",
    "mpn": "DELP2725DE"
   },
@@ -1220,10 +1220,10 @@
    "sku": "LG27GS75QB",
    "title": "LG 27GS75Q-B 27-inch Ultragear QHD (2560x1440) Gaming Monitor",
    "url": "https://www.beachcamera.com/products/lg-27gs75q-b-27-inch-ultragear-qhd-2560x1440-gaming-monitor",
-   "price": 169.99,
+   "price": 174.99,
    "wasPrice": 199.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1200385_1_dde0809b-3efa-4a9c-9894-863fe4f7487c.jpg?v=1789689166",
-   "inStock": false,
+   "inStock": true,
    "mpn": "LG27GS75QB"
   },
   {
@@ -1706,7 +1706,7 @@
    "url": "https://www.beachcamera.com/products/lg-45-ultragear-oled-wqhd-240hz-800r-curved-gaming-monitor-with-webos",
    "price": 1399.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1196990_1.jpg?v=1782376253",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LG45GX90SAB"
   },
   {
@@ -1770,7 +1770,7 @@
    "price": 179,
    "wasPrice": 226.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1111730_1.jpg?v=1755567294",
-   "inStock": true,
+   "inStock": false,
    "mpn": "MSIMAG255XF"
   },
   {
@@ -2208,6 +2208,18 @@
   },
   {
    "retailer": "us-beachcamera",
+   "sku": "SAMLS34H550GANXZA",
+   "title": "Samsung 34\" ViewFinity S5 (S55GH) Ultrawide QHD 120Hz Curved Monitor",
+   "url": "https://www.beachcamera.com/products/samsung-34-viewfinity-s5-s55gh-ultrawide-qhd-120hz-curved-monitor",
+   "price": 329.99,
+   "wasPrice": 349.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1226387_1.jpg?v=1794249089",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "SAMLS34H550GANXZA"
+  },
+  {
+   "retailer": "us-beachcamera",
    "sku": "SAMLS34C654TANXGO",
    "title": "Samsung 34\" ViewFinity S65TC Ultra-WQHD 100Hz AMD FreeSync HDR10 Curved Monitor",
    "url": "https://www.beachcamera.com/products/samsung-34-viewfinity-s65tc-ultra-wqhd-100hz-amd-freesync-hdr10-curved-monitor-2",
@@ -2281,7 +2293,7 @@
    "price": 1899.99,
    "wasPrice": 1999.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1047756_1.jpg?v=1753036657",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung",
    "mpn": "SAMLS49DG956SN"
   },
@@ -2489,10 +2501,10 @@
    "sku": "VIEVX27182KPCMHD",
    "title": "ViewSonic 27\" FreeSync Premium WQHD Curved Gaming Monitor - VX2718-2KPC-MHD",
    "url": "https://www.beachcamera.com/products/viewsonic-27-freesync-premium-wqhd-curved-gaming-monitor-vx2718-2kpc-mhd",
-   "price": 214.53,
+   "price": 223.85,
    "wasPrice": 268.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1126615_1.jpg?v=1793630347",
-   "inStock": true,
+   "inStock": false,
    "brand": "ViewSonic",
    "mpn": "VIEVX27182KPCMHD"
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T00:22:59.309Z",
+ "scrapedAt": "2026-11-14T00:31:45.147Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -28,7 +28,7 @@
    "url": "https://www.mwave.com.au/products/apple-homepod-2nd-gen-white-ac61625",
    "price": 468.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_homepod_2nd_gen_white_ac61625_3538.jpg?v=1787799924",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -346,7 +346,7 @@
    "sku": "AC97682",
    "title": "Edifier QD25 Tabletop Bluetooth Speaker - Black",
    "url": "https://www.mwave.com.au/products/edifier-qd25-tabletop-bluetooth-speaker-black-ac97682",
-   "price": 126.21,
+   "price": 179,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/edifier_qd25_tabletop_bluetooth_speaker_black_ac97682_15364.jpg?v=1790126458",
    "inStock": false,
    "brand": "Edifier"
@@ -576,7 +576,7 @@
    "sku": "AC97676",
    "title": "Edifier R2750DB MKII Powered Bookshelf Bluetooth Speakers - Black",
    "url": "https://www.mwave.com.au/products/edifier-r2750db-mkii-powered-bookshelf-bluetooth-speakers-black-ac97676",
-   "price": 399,
+   "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/edifier_r2750db_mkii_powered_bookshelf_bluetooth_speakers_black_ac97676_58077.jpg?v=1790126463",
    "inStock": false,
    "brand": "Edifier"
@@ -586,7 +586,7 @@
    "sku": "AC97677",
    "title": "Edifier R2750DB MKII Powered Bookshelf Bluetooth Speakers - Walnut",
    "url": "https://www.mwave.com.au/products/edifier-r2750db-mkii-powered-bookshelf-bluetooth-speakers-walnut-ac97677",
-   "price": 399,
+   "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/edifier_r2750db_mkii_powered_bookshelf_bluetooth_speakers_walnut_ac97677_13314.jpg?v=1790126469",
    "inStock": false,
    "brand": "Edifier"
@@ -688,7 +688,7 @@
    "url": "https://www.mwave.com.au/products/kanto-ora4-140w-powered-reference-speakers-with-usbc-input-and-bluetooth-black-ac86570",
    "price": 572,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kanto_ora4_140w_powered_reference_speakers_with_usbc_input_and_bluetooth_black_ac86570_30558.jpg?v=1787797149",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kanto"
   },
   {
@@ -828,7 +828,7 @@
    "url": "https://www.mwave.com.au/products/kreafunk-ago-mini-bluetooth-speaker-dusty-green-ac97132",
    "price": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kreafunk_ago_mini_bluetooth_speaker_dusty_green_ac97132_80574.jpg?v=1787797299",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kreafunk"
   },
   {
@@ -1176,7 +1176,7 @@
    "sku": "AC97057",
    "title": "Lexon Mino+ Mini Bluetooth Speaker PANTONE - Green",
    "url": "https://www.mwave.com.au/products/lexon-mino-mini-bluetooth-speaker-pantone-green-ac97057",
-   "price": 79.95,
+   "price": 70.36,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lexon_mino_mini_bluetooth_speaker_pantone_green_ac97057_12330.jpg?v=1787797450",
    "inStock": true,
    "brand": "Lexon"
