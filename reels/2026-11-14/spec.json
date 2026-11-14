@@ -1,0 +1,75 @@
+{
+ "site": "cam",
+ "day": "2026-11-14",
+ "region": "US",
+ "hook": [
+  "Same camera.",
+  "Half the price."
+ ],
+ "sub": "3 real Cameras deals from today's US store prices",
+ "deals": [
+  {
+   "siteName": "CamCompare",
+   "topic": "Cameras",
+   "accent": "#2fbf8f",
+   "title": "RED KOMODO-X",
+   "cents": 499500,
+   "refCents": 999500,
+   "currency": "USD",
+   "refLabel": "RRP",
+   "refShort": "RRP",
+   "store": "Focus Camera",
+   "savingPct": 50,
+   "imgFile": "img/0.jpg",
+   "url": "camcompare.app",
+   "link": "https://www.camcompare.app/cameras/red-komodo-x"
+  },
+  {
+   "siteName": "CamCompare",
+   "topic": "Cameras",
+   "accent": "#2fbf8f",
+   "title": "Canon EOS 5D Mark IV",
+   "cents": 179900,
+   "refCents": 349900,
+   "currency": "USD",
+   "refLabel": "RRP",
+   "refShort": "RRP",
+   "store": "Dodd Camera",
+   "savingPct": 49,
+   "imgFile": "img/1.jpg",
+   "url": "camcompare.app",
+   "link": "https://www.camcompare.app/cameras/canon-eos-5d-mark-iv"
+  },
+  {
+   "siteName": "CamCompare",
+   "topic": "Cameras",
+   "accent": "#2fbf8f",
+   "title": "Nikon AF-S NIKKOR 500mm f/5.6E PF ED VR",
+   "cents": 199695,
+   "refCents": 359995,
+   "currency": "USD",
+   "refLabel": "RRP",
+   "refShort": "RRP",
+   "store": "Dodd Camera",
+   "savingPct": 45,
+   "imgFile": "img/2.jpg",
+   "url": "camcompare.app",
+   "link": "https://www.camcompare.app/lenses/nikon-af-s-500mm-f5-6e-pf-ed-vr"
+  }
+ ],
+ "endLine": "camcompare.app: every store, compared daily.",
+ "sites": [
+  "Pokémon",
+  "Magic",
+  "Lorcana",
+  "Riftbound",
+  "One Piece",
+  "Yu-Gi-Oh!",
+  "Gundam",
+  "Wargames",
+  "Anime figures",
+  "Cameras",
+  "Tech"
+ ],
+ "fine": "US store prices, 14 Nov 2026, before shipping. Prices change. Independent; not affiliated with any brand shown."
+}
