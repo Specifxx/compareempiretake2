@@ -71,9 +71,6 @@ body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11";
 /* A pressed button gives a little (transform only, 120ms); nothing moves for visitors who ask for less motion. */
 .btn, .chip { transition-property: color, background-color, border-color, box-shadow, opacity, transform; transition-duration: 150ms; }
 .btn:active, .chip:active { transform: scale(0.98); }
-@media (prefers-reduced-motion: reduce) {
-  .btn:active, .chip:active, .tile-hover:hover { transform: none; }
-}
 
 /* White product shots sit on plain white in both themes (a light tile in dark mode). */
 .img-tile { background: #ffffff; }
@@ -82,6 +79,10 @@ body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11";
 .tile-hover { transition: border-color .15s, box-shadow .15s, transform .18s ease-out; }
 .tile-hover:hover { border-color: rgb(var(--ink) / 0.25); box-shadow: 0 2px 10px -4px rgb(0 0 0 / 0.15); }
 .tile-hover:active { transform: scale(0.985); }
+/* Last, so it wins over every press above (the tile's press had come after it and kept moving). */
+@media (prefers-reduced-motion: reduce) {
+  .btn:active, .chip:active, .tile-hover:active { transform: none; }
+}
 /* A photo that failed to load (layout.tsx's error listener): hidden, and the tile says so. */
 img[data-broken] { visibility: hidden; }
 .img-missing { position: relative; }
@@ -276,6 +277,11 @@ html.gq [data-grid-fallback] span[data-filtered-only] { display: inline; }
   --fm-accent-soft: rgb(var(--brand-soft));
   --fm-radius: 14px;
 }
+
+/* The cart's filled buttons ("Find prices", each store's checkout) take the theme's text-on-brand colour (2026-11-14):
+   white read 2.6:1 on the dark theme's bright blue. Light theme unchanged (brand-ink is white there). `html:root` so it
+   wins over cart.css's own :root default whatever order the two load in. */
+html:root { --cart-on-accent: rgb(var(--brand-ink)); }
 
 /* Rate us card and "What people say" (components/site-reviews): drawn in the site's own theme, light and dark. */
 :root {
