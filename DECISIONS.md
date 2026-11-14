@@ -2185,3 +2185,28 @@ unaffected. No URL, redirect, title, meta description, canonical, robots, Open G
 on 13 URLs against the old build's server HTML, with every internal link and word kept); no `revalidate`, data read,
 font or library was added. Seen and left: an intermittent layout shift on product pages at 1440 px (0.55, about one
 load in four, on the old build too; the sections under the price table move once while the page settles).
+
+## 2026-11-14: review of the day's design pass, and three small fixes
+
+An independent check of #161 against the build before the day's first design change (03f0aa8f), on 22 URLs (every page
+type, US and AU) with scripts off and 13 URLs at 390 and 1440 px in light and dark: titles, meta descriptions,
+canonicals, robots, hreflang, Open Graph, JSON-LD and h1 identical; no internal link or h2 lost; every word of the
+server HTML kept (the deal legend's three lines are inside its `<details>`); paid links (`rel="sponsored"`) the same
+hrefs in the same order, their only new words being #160's owner-asked "Add to cart". No horizontal scroll, no console
+error, no keyboard stop without a visible focus ring, and no text under 4.5:1 on any sampled page. 461 sitemap URLs
+(every page, category, guide, brand and compare URL, 15 products per region) answer 200, indexable, self-canonical;
+robots.txt blocks only /saved, /admin, /api/, /embed/price and query strings; an unknown URL answers 404.
+
+Fixed:
+- **Reduced motion:** the tile press (`.tile-hover:active`, scale 0.985) still moved for visitors who ask for less
+  motion: the reduce rule named `:hover` and came before the press. It now names `:active` and sits after every press.
+- **/compare:** the empty picker renders after load (it reads the query string), so the footer jumped up the page
+  (layout shift 0.15 at 1440 px, on the old build too). The Suspense fallback now holds its height (370 px phone,
+  330 px wider); shift 0. Its intro line takes the shared `.page-lede`, like every other page.
+- **Cart, dark theme:** "Find prices" and each store's checkout button were white on the dark theme's bright blue
+  (2.6:1). `--cart-on-accent` is the theme's `brand-ink` now (7.5:1 dark; light theme unchanged, white on blue).
+
+Nothing about money changed: no paid link, ad block, pinned eBay / Amazon row, affiliate tag, placement, label, button
+word or order, so the 19 November clicks-per-placement recheck is unaffected. No URL or metadata changed. Seen and left:
+the product page's intermittent 0.55 shift at 1440 px (both builds, about one load in five) and the cart page's footer
+shift while it reads the browser's list (0.11, noindex, shared cart code across the sites).
