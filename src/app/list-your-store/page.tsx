@@ -17,7 +17,7 @@ export default function ListYourStorePage() {
   const names = REGION_IDS.map((r) => REGIONS[r].name);
   const markets = `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
   return (
-    <div className="container-x max-w-3xl pt-12 pb-16">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10 pb-16">
       <ListYourStore
         badge={storeBadge(`${SITE}/stores`, "Prices compared on Compare Empire")}
         site="Compare Empire"

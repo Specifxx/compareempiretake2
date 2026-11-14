@@ -10,7 +10,7 @@
   --sunk: 236 238 241;
   --ink: 22 24 29;
   --ink-soft: 60 64 72;
-  --ink-mute: 104 110 120;
+  --ink-mute: 98 104 114; /* 4.8:1 on the sunk panel, 5.1:1 on the page (2026-11-14) */
   --line: 222 225 230;
   --brand: 20 86 214;
   --brand-soft: 232 240 254;
@@ -46,20 +46,42 @@ body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11";
   .card { @apply rounded-lg border border-line bg-bg-card; }
   .chip { @apply inline-flex items-center gap-1.5 rounded-full border border-line bg-bg-card px-3 py-1.5 text-sm font-medium text-ink-soft transition hover:border-ink/30 hover:text-ink; }
   .chip-on { @apply border-brand bg-brand-soft text-brand; }
-  .btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition; }
+  .btn { @apply inline-flex min-h-[2.5rem] items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition; }
   .btn-primary { @apply btn bg-brand text-brand-ink hover:brightness-110; }
   .btn-ghost { @apply btn border border-line bg-bg-card text-ink hover:border-ink/25; }
   .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.08em] text-ink-mute; }
   .price { @apply font-bold tabular-nums tracking-tight; }
+  /* One page header on every page type (2026-11-14): a quiet breadcrumb, the h1, one line under it. The home page's
+     h1 keeps its own larger size; every other page's h1 is .page-title. */
+  .crumbs { @apply mb-4 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-ink-mute; }
+  .crumbs a { @apply rounded hover:text-ink hover:underline hover:underline-offset-4; }
+  .page-title { @apply text-[1.75rem] font-bold leading-[1.15] tracking-tight text-ink sm:text-4xl; text-wrap: balance; }
+  .page-lede { @apply mt-2 max-w-2xl text-[15px] leading-relaxed text-ink-soft sm:text-lg; }
+  /* A section's heading, as the home page draws it. */
+  .section-title { @apply text-xl font-bold tracking-tight sm:text-2xl; }
   .product-img { @apply mix-blend-multiply dark:mix-blend-normal; }
+}
+
+/* Keyboard focus is always visible, in the one brand colour (2026-11-14). */
+:where(a, button, summary, select, [role="tab"], [tabindex]):focus-visible {
+  outline: 2px solid rgb(var(--brand));
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+/* A pressed button gives a little (transform only, 120ms); nothing moves for visitors who ask for less motion. */
+.btn, .chip { transition-property: color, background-color, border-color, box-shadow, opacity, transform; transition-duration: 150ms; }
+.btn:active, .chip:active { transform: scale(0.98); }
+@media (prefers-reduced-motion: reduce) {
+  .btn:active, .chip:active, .tile-hover:hover { transform: none; }
 }
 
 /* White product shots sit on plain white in both themes (a light tile in dark mode). */
 .img-tile { background: #ffffff; }
 .dark .img-tile { background: #f4f5f7; }
 /* The product cards' and category tiles' hover: a lift of the border only, no motion. */
-.tile-hover { transition: border-color .15s, box-shadow .15s; }
+.tile-hover { transition: border-color .15s, box-shadow .15s, transform .18s ease-out; }
 .tile-hover:hover { border-color: rgb(var(--ink) / 0.25); box-shadow: 0 2px 10px -4px rgb(0 0 0 / 0.15); }
+.tile-hover:active { transform: scale(0.985); }
 /* A photo that failed to load (layout.tsx's error listener): hidden, and the tile says so. */
 img[data-broken] { visibility: hidden; }
 .img-missing { position: relative; }
@@ -68,18 +90,25 @@ img[data-broken] { visibility: hidden; }
 .scrollbar-none::-webkit-scrollbar { display: none; }
 .scrollbar-none { scrollbar-width: none; }
 
-/* Guide typography (no plugin: a few rules cover what the guides use). */
-.prose-ce { @apply text-[1.05rem] leading-[1.75] text-ink-soft; }
+/* Guide typography (no plugin: a few rules cover what the guides use). Article rhythm (2026-11-14): a ~68 character
+   measure for running text, one heading scale, neutral callouts, tables that scroll in their own box. */
+.prose-ce { @apply text-[1.0625rem] leading-[1.75] text-ink-soft; }
 .prose-ce > * + * { @apply mt-5; }
-.prose-ce h2 { @apply mt-12 font-display text-2xl font-bold tracking-tight text-ink; }
-.prose-ce h3 { @apply mt-8 font-display text-xl font-bold text-ink; }
+.prose-ce :where(p, ul, ol, blockquote, h2, h3) { max-width: 68ch; }
+.prose-ce h2 { @apply mt-10 scroll-mt-32 text-[1.375rem] font-bold leading-snug tracking-tight text-ink sm:text-2xl; }
+.prose-ce h3 { @apply mt-8 text-lg font-bold leading-snug text-ink sm:text-xl; }
+.prose-ce h2 + *, .prose-ce h3 + * { @apply mt-3; }
 .prose-ce a { @apply font-medium text-brand underline decoration-brand/30 underline-offset-2 hover:decoration-brand; }
 .prose-ce strong { @apply font-semibold text-ink; }
-.prose-ce ul { @apply list-disc space-y-2 pl-6; }
-.prose-ce ol { @apply list-decimal space-y-2 pl-6; }
-.prose-ce blockquote { @apply rounded-r-xl border-l-4 border-brand bg-brand-soft px-5 py-4 text-ink; }
-.prose-ce table { @apply w-full text-sm; }
-.prose-ce th, .prose-ce td { @apply border-b border-line px-3 py-2 text-left; }
+.prose-ce ul { @apply list-disc space-y-2 pl-6 marker:text-ink-mute; }
+.prose-ce ol { @apply list-decimal space-y-2 pl-6 marker:font-semibold marker:text-ink-mute; }
+.prose-ce li { @apply pl-1; }
+.prose-ce blockquote { @apply rounded-r-lg border-l-4 border-line bg-bg-card px-5 py-4 text-ink; }
+.prose-ce .prose-table { @apply overflow-x-auto rounded-lg border border-line bg-bg-card; }
+.prose-ce table { @apply w-full min-w-[30rem] text-sm tabular-nums; }
+.prose-ce th { @apply border-b border-line px-3 py-2.5 text-left font-medium text-ink-mute; }
+.prose-ce td { @apply border-b border-line px-3 py-2.5 text-left align-top; }
+.prose-ce tr:last-child td { @apply border-b-0; }
 .prose-ce > :first-child { @apply mt-0; }
 
 /* A product grid's prerendered first page is its unfiltered view (PhoneBrowser's Suspense fallback).

@@ -35,9 +35,9 @@ export default function PriceReport() {
   const all = Object.fromEntries(regions.map((r) => [r, categoryReport(getProducts(undefined, r))]));
   const citation = `${SITE_NAME}, "Tech price report, ${month()}", ${SITE}/price-report`;
   return (
-    <div className="container-x max-w-4xl pt-12 pb-16">
+    <div className="container-x max-w-4xl pt-6 sm:pt-10 pb-16">
       <div className="eyebrow">Updated with every day&apos;s prices</div>
-      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">Tech price report, {month()}</h1>
+      <h1 className="mt-2 page-title">Tech price report, {month()}</h1>
       <p className="mt-5 text-lg text-ink-soft">
         The same model, matched across the stores we check in the US, the UK and Australia: how far apart the cheapest and the dearest store are,
         category by category.{asOf ? ` Last updated ${asOf}.` : ""} Free to quote with a link.

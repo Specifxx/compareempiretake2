@@ -79,7 +79,8 @@ function NoData({ kind, arg, region }: { kind: string; arg: string; region: Regi
 
 /** h2s get the ids the table of contents links to (headingId, from the same markdown text). */
 function withHeadingIds(html: string): string {
-  return html.replace(/<h2>([\s\S]*?)<\/h2>/g, (_, inner: string) => `<h2 id="${headingId(inner.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"'))}">${inner}</h2>`);
+  // A Markdown table scrolls inside its own box on a phone instead of squeezing its columns (2026-11-14).
+  return html.replace(/<table>/g, '<div class="prose-table"><table>').replace(/<\/table>/g, "</table></div>").replace(/<h2>([\s\S]*?)<\/h2>/g, (_, inner: string) => `<h2 id="${headingId(inner.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"'))}">${inner}</h2>`);
 }
 
 /** An inline value per region: one span each, the reader's shown by CSS. One region: the bare value. */

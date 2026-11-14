@@ -246,9 +246,9 @@ export async function ProductView({ params, region }: { params: ProductParams; r
   ];
 
   return (
-    <div className="container-x pt-6" data-no-dock>
+    <div className="container-x pt-4 sm:pt-6" data-no-dock>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <nav className="mb-6 flex items-center gap-2 text-sm text-ink-mute" aria-label="Breadcrumb">
+      <nav className="crumbs flex-nowrap sm:mb-6" aria-label="Breadcrumb">
         <Link prefetch={false} href={HOME_PATH[region]} className="hover:text-ink">Home</Link>
         <span>/</span>
         <Link prefetch={false} href={categoryHref(cat.id, region)} className="hover:text-ink">{cat.name}</Link>
@@ -259,7 +259,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           <span>{phone.brand}</span>
         )}
         <span>/</span>
-        <span className="truncate text-ink">{phone.model}</span>
+        <span className="min-w-0 truncate text-ink">{phone.model}</span>
       </nav>
 
       <Suspense>
@@ -288,7 +288,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           <dl className="card divide-y divide-line">
             {specs.filter(([, v]) => v).map(([k, v]) => (
               <div key={k} className="flex gap-4 px-5 py-3.5 text-sm">
-                <dt className="w-36 shrink-0 text-ink-mute">{k}</dt>
+                <dt className="w-28 shrink-0 text-ink-mute sm:w-36">{k}</dt>
                 <dd className="font-medium">{v}</dd>
               </div>
             ))}
@@ -332,7 +332,7 @@ export async function ProductView({ params, region }: { params: ProductParams; r
                 ["Stores with it in stock", `${new Set(inStock.map((o) => o.retailer)).size} of ${phone.retailerCount}`],
               ] as [string, string][]).map(([k, v]) => (
                 <div key={k} className="flex gap-4 px-5 py-3.5 text-sm">
-                  <dt className="w-44 shrink-0 text-ink-mute">{k}</dt>
+                  <dt className="w-32 shrink-0 text-ink-mute sm:w-44">{k}</dt>
                   <dd className="font-medium">{v}</dd>
                 </div>
               ))}

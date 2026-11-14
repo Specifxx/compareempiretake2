@@ -21,9 +21,9 @@ const TOPICS: [string, string][] = [
 
 export default function ContactPage() {
   return (
-    <div className="container-x max-w-3xl pt-12 pb-16">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10 pb-16">
       <div className="eyebrow">Contact</div>
-      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">Talk to us.</h1>
+      <h1 className="mt-2 page-title">Talk to us.</h1>
       <p className="mt-4 text-lg text-ink-soft">A real person reads every message, usually within two business days.</p>
       <div className="mt-6 flex flex-wrap gap-3">
         <a className="btn-primary" href={`mailto:${CONTACT_EMAIL}?subject=Compare%20Empire`}>Email {CONTACT_EMAIL}</a>

@@ -29,9 +29,9 @@ const FAQ = [
 export default function Page() {
   const ld = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: FAQ.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
   return (
-    <div className="container-x max-w-3xl pt-12 pb-16">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10 pb-16">
       <div className="eyebrow">Free price checker</div>
-      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">Is this a good price?</h1>
+      <h1 className="mt-2 page-title">Is this a good price?</h1>
       <p className="mt-3 text-ink-soft">
         Paste the link to a phone, TV, laptop or appliance at any store and see how its price compares with the cheapest and the typical in-stock price at every other store we read.
       </p>

@@ -14,7 +14,7 @@ export default function HowWePickPage() {
   // Stores with a price on the site today (a registered store whose feed has not started yet is not listed).
   const stores = [...new Set(REGION_IDS.flatMap((region) => activeRetailers(undefined, region)).filter((r) => r.type !== "carrier").map((r) => r.name))];
   return (
-    <div className="container-x max-w-3xl pt-12 pb-16">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10 pb-16">
       <HowWePickStores
         site="Compare Empire"
         what="products"

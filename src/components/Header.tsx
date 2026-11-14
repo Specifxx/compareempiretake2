@@ -79,7 +79,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
             <Link prefetch={false} href="/saved" className="relative grid h-10 w-10 shrink-0 place-items-center rounded-lg text-ink-soft hover:bg-bg-sunk hover:text-ink" aria-label="Saved">
               <HeartIcon />
               {savedList.length > 0 && (
-                <span className="absolute right-1 top-1 grid h-4 min-w-4 place-items-center rounded-full bg-hot px-1 text-[10px] font-bold text-white">{savedList.length}</span>
+                <span className="absolute right-1 top-1 grid h-4 min-w-4 place-items-center rounded-full bg-hot px-1 text-[10px] font-bold text-bg-card">{savedList.length}</span>
               )}
             </Link>
             {/* The cart list (components/cart, owner 2026-11-06): every width, with its count. */}

@@ -328,7 +328,7 @@ function Browser({ initial, total, options, src, fixedBrand, category = "phones"
       </aside>
       <div>
         <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center">
-          <label className="flex h-11 flex-1 items-center gap-2 rounded-xl border border-line bg-bg-card px-3 shadow-sm focus-within:border-brand">
+          <label className="flex h-11 shrink-0 items-center gap-2 rounded-lg border border-line bg-bg-card px-3 focus-within:border-brand sm:flex-1">
             <SearchIcon className="h-4 w-4 text-ink-mute" />
             <input
               value={q}
@@ -342,12 +342,12 @@ function Browser({ initial, total, options, src, fixedBrand, category = "phones"
           </label>
           <div className="flex gap-2">
             <button className="btn-ghost lg:hidden" onClick={() => setPanel(true)}>
-              <FilterIcon /> Filters {active > 0 && <span className="rounded-full bg-brand px-1.5 text-[11px] text-white">{active}</span>}
+              <FilterIcon /> Filters {active > 0 && <span className="rounded-full bg-brand px-1.5 text-[11px] text-brand-ink">{active}</span>}
             </button>
             <select
               value={sort === "relevance" ? "popular" : sort}
               onChange={(e) => set({ sort: e.target.value === "popular" ? undefined : e.target.value })}
-              className="h-11 rounded-xl border border-line bg-bg-card px-3 text-sm font-medium shadow-sm"
+              className="h-11 min-w-0 flex-1 rounded-lg border border-line bg-bg-card px-3 text-sm font-medium sm:flex-none"
               aria-label="Sort"
             >
               {Object.entries(SORTS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}

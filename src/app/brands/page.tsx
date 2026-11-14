@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 export default function BrandsPage() {
   const brands = getBrands();
   return (
-    <div className="container-x pt-10">
-      <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Brands</h1>
+    <div className="container-x pt-6 sm:pt-10">
+      <h1 className="page-title">Brands</h1>
       <p className="mt-2 text-ink-mute">{brands.length} brands sold new in Australia.</p>
       <BrandList brands={brands} />
 

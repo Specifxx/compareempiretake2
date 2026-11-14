@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function ComparePage() {
   return (
-    <div className="container-x pt-10">
-      <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">Compare</h1>
+    <div className="container-x pt-6 sm:pt-10">
+      <h1 className="page-title">Compare</h1>
       <p className="mt-2 mb-8 text-ink-mute">Side by side: price at every store, and the specs that matter.</p>
       <Suspense>
         {/* No catalogue in the page: CompareView fetches the chosen products and searches the search index. */}

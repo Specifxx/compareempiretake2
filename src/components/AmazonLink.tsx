@@ -39,7 +39,7 @@ export function AmazonRow({ href, name = "Amazon AU", live, cart, ...p }: Props 
       </div>
       {live && <AmazonLivePrice text={live.text} at={live.at} zone={live.zone} />}
       {add && <CartAddButton {...add} className="hidden shrink-0 text-ink-mute sm:inline-flex" />}
-      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white">
+      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-brand-ink">
         {live ? "View on Amazon" : "Check Amazon"} <ExternalIcon className="h-3.5 w-3.5" />
       </span>
     </a>

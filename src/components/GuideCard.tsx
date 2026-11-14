@@ -24,15 +24,14 @@ export function GuideCard({ g, big, eager }: { g: Guide; big?: boolean; eager?: 
   const section = GUIDE_SECTIONS.find((s) => s.id === g.section);
   const fan = FAN[images.length] ?? [];
   return (
-    <Link prefetch={false} href={`/guides/${g.slug}`} className={`card group flex flex-col overflow-hidden transition hover:shadow-lift ${big ? "md:col-span-2" : ""}`}>
-      <div className={`relative overflow-hidden bg-gradient-to-br from-[#0B2A66] via-brand to-[#3D8BFF] ${big ? "aspect-[2/1]" : "aspect-[16/9]"}`}>
-        <div aria-hidden className="pointer-events-none absolute -right-10 -top-16 h-48 w-48 rounded-full bg-white/15 blur-2xl" />
-        <div aria-hidden className="pointer-events-none absolute -bottom-20 left-6 h-40 w-40 rounded-full bg-save/30 blur-2xl" />
+    <Link prefetch={false} href={`/guides/${g.slug}`} className={`card tile-hover group flex flex-col overflow-hidden ${big ? "md:col-span-2" : ""}`}>
+      {/* A calm, neutral thumbnail (2026-11-14): the products on a plain sunk panel, like the home page's tiles. */}
+      <div className={`relative overflow-hidden border-b border-line bg-bg-sunk ${big ? "aspect-[2/1]" : "aspect-[2/1] sm:aspect-[16/9]"}`}>
         {images.length ? (
           images.map((src, i) => (
             <span
               key={src}
-              className="absolute block aspect-square rounded-xl bg-white p-[3%] shadow-[0_12px_30px_rgba(0,0,0,0.35)]"
+              className="absolute block aspect-square rounded-lg border border-line/70 bg-white p-[3%] shadow-[0_6px_16px_-6px_rgba(0,0,0,0.25)]"
               style={{ left: fan[i].left, top: fan[i].top, width: fan[i].w, transform: `rotate(${fan[i].rot})`, zIndex: fan[i].z }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element -- the stores' own photos, hotlinked */}
@@ -42,12 +41,12 @@ export function GuideCard({ g, big, eager }: { g: Guide; big?: boolean; eager?: 
         ) : (
           <span aria-hidden className="absolute inset-0 grid place-items-center text-5xl opacity-90 transition group-hover:scale-110">{cat?.emoji ?? "🛒"}</span>
         )}
-        {section && <span className="absolute left-3 top-3 z-10 rounded-full bg-bg-card/90 px-2.5 py-1 text-[11px] font-semibold text-ink-soft shadow-sm backdrop-blur">{section.name}</span>}
+        {section && <span className="absolute left-3 top-3 z-10 rounded-full border border-line bg-bg-card px-2.5 py-1 text-[11px] font-semibold text-ink-soft">{section.name}</span>}
       </div>
-      <div className="flex flex-1 flex-col p-5">
-        <h3 className={`font-display font-bold leading-snug group-hover:text-brand ${big ? "text-2xl" : "text-lg"}`}>{g.title}</h3>
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
+        <h3 className={`font-bold leading-snug tracking-tight group-hover:text-brand ${big ? "text-2xl" : "text-base sm:text-lg"}`}>{g.title}</h3>
         <p className="mt-2 line-clamp-2 text-sm text-ink-soft">{g.description}</p>
-        <div className="mt-auto pt-4 text-xs text-ink-mute">{g.readingMinutes} min read · live prices</div>
+        <div className="mt-auto pt-3 text-xs text-ink-mute">{g.readingMinutes} min read · live prices</div>
       </div>
     </Link>
   );

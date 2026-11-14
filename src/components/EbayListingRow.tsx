@@ -53,7 +53,7 @@ export function EbayListingRow({ listing, product, money, cheapest, locale, time
         <div className="text-[11px] text-ink-mute">{listing.shipping === undefined ? "+ postage" : listing.shipping === 0 ? "Free postage" : `+ ${money(listing.shipping)} postage`}</div>
       </div>
       {add && <CartAddButton {...add} className="hidden shrink-0 text-ink-mute sm:inline-flex" />}
-      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white">
+      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-brand-ink">
         Buy on eBay <ExternalIcon className="h-3.5 w-3.5" />
       </span>
     </a>
@@ -72,7 +72,7 @@ export function EbaySearchRow({ href, product, sellers }: { href: string; produc
         </div>
         <div className="mt-1 text-xs text-ink-soft">New, Buy It Now listings {sellers}, cheapest first</div>
       </div>
-      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-white">
+      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-brand-ink">
         Search eBay <ExternalIcon className="h-3.5 w-3.5" />
       </span>
     </a>

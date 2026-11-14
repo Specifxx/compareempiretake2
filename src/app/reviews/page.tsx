@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function ReviewsPage() {
   return (
-    <div className="container-x max-w-5xl pt-10">
-      <h1 className="mb-6 font-display text-3xl font-bold tracking-tight sm:text-4xl">Reviews</h1>
+    <div className="container-x max-w-5xl pt-6 sm:pt-10">
+      <h1 className="mb-6 page-title">Reviews</h1>
       <ReviewsSection full />
     </div>
   );

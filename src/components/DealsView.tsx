@@ -20,17 +20,17 @@ export function DealsView({ category, region = "au", blackFriday = false, cyberM
   const c = category ? categoryById(category) : undefined;
   const tabs = activeCategories(region).filter((x) => getDeals(1, x.id, region).length > 0);
   return (
-    <div className="container-x pt-10">
+    <div className="container-x pt-6 sm:pt-10">
       <div className="max-w-2xl">
-        <h1 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">{sale ? `${saleHeading(sale, saleYear(sale, updatedAt.slice(0, 10))).replace(/ deals /, " tech deals ")}` : blackFriday ? `Black Friday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : cmPage ? `Cyber Monday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : c ? `${c.name} deals` : "Today's deals"}</h1>
+        <h1 className="page-title">{sale ? `${saleHeading(sale, saleYear(sale, updatedAt.slice(0, 10))).replace(/ deals /, " tech deals ")}` : blackFriday ? `Black Friday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : cmPage ? `Cyber Monday tech deals ${seasonYear(updatedAt.slice(0, 10))}` : c ? `${c.name} deals` : "Today's deals"}</h1>
         {sale ? <SaleDates slug={sale} today={updatedAt.slice(0, 10)} place={/^United /.test(R.name) ? `the ${R.name}` : R.name} /> : blackFriday ? <BlackFridayDates today={updatedAt.slice(0, 10)} region={region} /> : cmPage && <CyberMondayDates today={updatedAt.slice(0, 10)} region={region} />}
-        <p className="mt-2 text-ink-mute">
+        <p className="page-lede">
           Every deal here is worked out from real prices we checked on{" "}
           {new Date(updatedAt).toLocaleDateString(R.locale, { timeZone: R.timeZone, weekday: "long", day: "numeric", month: "long" })} — no sponsored spots in this list, no
           &ldquo;was&rdquo; prices we can&apos;t back up.
         </p>
       </div>
-      <nav className="mt-6 flex gap-2 overflow-x-auto pb-1 scrollbar-none" aria-label="Deal categories">
+      <nav className="-mx-4 mt-5 flex gap-2 overflow-x-auto px-4 pb-1 scrollbar-none sm:mx-0 sm:mt-6 sm:px-0" aria-label="Deal categories">
         <Link prefetch={false} href={withRegion("/deals", region)} className={`chip shrink-0 text-xs ${!category ? "chip-on" : ""}`}>All</Link>
         {tabs.map((t) => (
           <Link prefetch={false} key={t.id} href={withRegion(`/deals/${t.id}`, region)} className={`chip shrink-0 text-xs ${category === t.id ? "chip-on" : ""}`}>
@@ -38,19 +38,25 @@ export function DealsView({ category, region = "au", blackFriday = false, cyberM
           </Link>
         ))}
       </nav>
-      <div className="mt-4 flex flex-wrap gap-3 text-xs text-ink-soft">
-        <Legend color="bg-hot" label="Price drop — cheaper than our check a week ago" />
-        <Legend color="bg-save" label="Below a store's earlier price — one we recorded there" />
-        <Legend color="bg-brand" label="Store gap — vs what other stores typically charge" />
-      </div>
+      {/* The three kinds of deal, folded away (2026-11-14): same words, in the HTML, one tap to read. */}
+      <details className="group mt-3 text-sm text-ink-soft">
+        <summary className="inline-flex min-h-[2.5rem] cursor-pointer list-none items-center gap-1.5 font-medium text-ink-mute hover:text-ink [&::-webkit-details-marker]:hidden">
+          How we spot a deal <span aria-hidden className="transition-transform duration-150 group-open:rotate-180 motion-reduce:transition-none">▾</span>
+        </summary>
+        <ul className="mt-1 max-w-2xl space-y-1 border-l-2 border-line pl-3 text-xs sm:text-sm">
+          <Legend label="Price drop — cheaper than our check a week ago" />
+          <Legend label="Below a store's earlier price — one we recorded there" />
+          <Legend label="Store gap — vs what other stores typically charge" />
+        </ul>
+      </details>
       {drops.length > 0 && (
-        <section className="mt-10">
-          <h2 className="mb-4 font-display text-xl font-bold">Price drops this week</h2>
+        <section className="mt-8">
+          <h2 className="section-title mb-3.5">Price drops this week</h2>
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">{drops.map((d, i) => <DealCard key={`${d.phone.category}/${d.phone.slug}`} d={d} rank={i} />)}</div>
         </section>
       )}
       <section className="mt-10">
-        {drops.length > 0 && <h2 className="mb-4 font-display text-xl font-bold">Sales and store gaps</h2>}
+        {drops.length > 0 && <h2 className="section-title mb-3.5">Sales and store gaps</h2>}
         {rest.length ? (
           <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
             {rest.map((d, i) => <DealCard key={`${d.phone.category}/${d.phone.slug}`} d={d} rank={drops.length ? undefined : i} />)}
@@ -68,12 +74,8 @@ export function DealsView({ category, region = "au", blackFriday = false, cyberM
   );
 }
 
-function Legend({ color, label }: { color: string; label: string }) {
-  return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-line bg-bg-card px-3 py-1.5">
-      <span className={`h-2 w-2 rounded-full ${color}`} /> {label}
-    </span>
-  );
+function Legend({ label }: { label: string }) {
+  return <li>{label}</li>;
 }
 
 /** The Black Friday page's dates line (DECISIONS.md, "Black Friday page", 2026-11-02). */

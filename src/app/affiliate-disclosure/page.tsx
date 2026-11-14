@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function AffiliateDisclosurePage() {
   return (
-    <div className="container-x max-w-3xl pt-12 pb-16">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10 pb-16">
       <div className="eyebrow">Affiliate disclosure</div>
-      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight">Affiliate disclosure</h1>
+      <h1 className="mt-2 page-title">Affiliate disclosure</h1>
       <div className="mt-8 space-y-6 text-ink-soft [&_h2]:mt-8 [&_h2]:font-display [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-ink">
         <p className="rounded-lg border border-line bg-bg-card p-5 font-semibold text-ink">{AMAZON_DISCLOSURE}</p>
         <h2>Amazon</h2>

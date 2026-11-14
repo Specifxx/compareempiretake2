@@ -17,10 +17,10 @@ export default function AboutPage() {
   const counts = new Map<string, number>();
   phones.forEach((p) => p.variants.forEach((v) => v.offers.forEach((o) => counts.set(o.retailer, (counts.get(o.retailer) ?? 0) + 1))));
   return (
-    <div className="container-x max-w-3xl pt-12">
+    <div className="container-x max-w-3xl pt-6 sm:pt-10">
       <div className="eyebrow">About</div>
-      <h1 className="mt-2 font-display text-4xl font-bold tracking-tight sm:text-5xl">One price comparison site, done properly.</h1>
-      <p className="mt-5 text-lg text-ink-soft">
+      <h1 className="mt-2 page-title">One price comparison site, done properly.</h1>
+      <p className="page-lede">
         Buying anything online means opening five tabs, decoding five naming schemes and still wondering if you missed a sale. Compare Empire does that
         legwork every day and puts the answer on one page — phones, tablets, laptops, monitors, graphics cards and TVs so far, with more to come.
       </p>
