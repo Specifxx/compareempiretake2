@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-14T01:38:59.441Z",
+ "scrapedAt": "2026-11-15T00:17:42.507Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -188,7 +188,7 @@
    "url": "https://www.clove.co.uk/products/a2c-lenovo-thinkpad-t15-gen-1-intel-core™-i5-i5-10310u-laptop-39-6-cm-15-6-full-hd-16-gb-ddr4-sdram-256-gb-ssd-wi-fi-5-802-11ac-windows-11-pro-uk-english-black",
    "price": 414,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/099a3f12-fd91-4ec7-8dd0-75b84732a5ab.jpg?v=1791553574",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-clove",
@@ -656,7 +656,7 @@
    "url": "https://www.clove.co.uk/products/acer-chromebook-311-c725-853m",
    "price": 413,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6295c127-a916-4373-b9d2-e19849370b3f.jpg?v=1791555621",
-   "inStock": true,
+   "inStock": false,
    "mpn": "C725-853M",
    "brand": "Acer"
   },
@@ -803,7 +803,7 @@
    "url": "https://www.clove.co.uk/products/acer-chromebook-514-c937-tco-c4zt",
    "price": 361,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/1c1d7ce3-ecdf-489d-ae54-a4b8ec31106b.jpg?v=1791553559",
-   "inStock": false,
+   "inStock": true,
    "mpn": "C937-TCO-C4ZT",
    "brand": "Acer"
   },
@@ -1009,7 +1009,7 @@
    "sku": "104673876",
    "title": "Acer Chromebook Enterprise 514 Plus Spin 514 convertible (CPE594-2N) - MediaTek Kompanio Ultra 910, 16GB RAM, 256GB, 14\" 2.8K touchscreen, Chrome OS",
    "url": "https://www.clove.co.uk/products/acer-chromebook-enterprise-514-plus-spin-514-convertible-cpe594-2n-mediatek-kompanio-ultra-910-16gb-ram-256gb-14-2-8k-touchscreen-chrome-os",
-   "price": 978,
+   "price": 976,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8a6bf349-7c76-4204-9a13-1dffd5f9c1ea.jpg?v=1791554953",
    "inStock": true,
    "mpn": "CPE594-2N",
@@ -1275,7 +1275,7 @@
    "sku": "104487271",
    "title": "Acer Chromebook Plus 516 Intel Core 5-120U 8GB RAM 128GB UFS 16\" Chrome OS Laptop",
    "url": "https://www.clove.co.uk/products/acer-chromebook-plus-516-intel-core-5-120u-8gb-ram-128gb-ufs-16-chrome-os-laptop",
-   "price": 648,
+   "price": 465,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2a25694f-0d32-41a9-8776-4de8cbb00da2.jpg?v=1791553544",
    "inStock": false,
    "mpn": "5-120U",
@@ -1340,7 +1340,7 @@
    "sku": "104468051",
    "title": "Acer Chromebook R757TN-TCO N150 8GB 128GB COS 29.5 cm (11.6\") Touchscreen HD LPDDR5x-SDRAM eMMC Wi-Fi 6E (802.11ax) ChromeOS",
    "url": "https://www.clove.co.uk/products/acer-chromebook-r757tn-tco-n150-8gb-128gb-cos-29-5-cm-11-6-touchscreen-hd-lpddr5x-sdram-emmc-wi-fi-6e-802-11ax-chromeos",
-   "price": 530,
+   "price": 528,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ce4d3d8e-761e-45fe-83b9-2fa94ac72a7f.jpg?v=1791553549",
    "inStock": true,
    "mpn": "R757TN-TCO",
@@ -2862,7 +2862,7 @@
    "sku": "105368906",
    "title": "Acer TravelMate P6 14 AI Copilot+ PC (TMP614-55) - Intel Core Ultra 5, 16GB RAM, 512GB SSD, 14\" 2.8K display, Windows 11",
    "url": "https://www.clove.co.uk/products/acer-travelmate-p6-14-ai-copilot-pc-tmp614-55-intel-core-ultra-5-16gb-ram-512gb-ssd-14-2-8k-display-windows-11",
-   "price": 1479,
+   "price": 1477,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/022013e7-1d43-417c-8662-4857ad483390.jpg?v=1791988096",
    "inStock": true,
    "mpn": "TMP614-55",
@@ -3250,7 +3250,7 @@
    "url": "https://www.clove.co.uk/products/apple-macbook-air-apple-m-m5-laptop-38-9-cm-15-3-24-gb-1-tb-ssd-wi-fi-7-802-11be-macos-tahoe-blue",
    "price": 1971,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a33c6033-5449-4138-909a-bede02648e23.jpg?v=1791559863",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -5291,7 +5291,7 @@
    "sku": "99926436",
    "title": "ASUS ExpertBook B5 B5405CC-LYU715X Intel Core Ultra 7 255H Laptop 35.6 cm (14\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black",
    "url": "https://www.clove.co.uk/products/asus-expertbook-b5-b5405cc-lyu715x-intel-core-ultra-7-255h-laptop-35-6-cm-14-wuxga-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-black",
-   "price": 1072,
+   "price": 1186,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a21544ba-7ff0-4272-9308-91bd26cb045e.jpg?v=1791560961",
    "inStock": false,
    "mpn": "B5405CC-LYU715X",
@@ -5717,9 +5717,9 @@
    "sku": "105291975",
    "title": "ASUS ProArt P16 H7606GM-SR010W AMD Ryzen AI 9 465 Laptop 40.6 cm (16\") Touchscreen 3K 16 GB LPDDR5x-SDRAM 1 TB SSD NVIDIA® GeForce RTX™ 5060 Laptop GPU Wi-Fi 7 (802.11be) Windows 11 Home Black",
    "url": "https://www.clove.co.uk/products/asus-proart-p16-h7606gm-sr010w-amd-ryzen-ai-9-465-laptop-40-6-cm-16-touchscreen-3k-16-gb-lpddr5x-sdram-1-tb-ssd-nvidia®-geforce-rtx™-5060-laptop-gpu-wi-fi-7-802-11be-windows-11-home-black",
-   "price": 2589.91,
+   "price": 2407,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/acab5079-bd06-4dfc-8b6f-f5615a7b3164.jpg?v=1791554351",
-   "inStock": false,
+   "inStock": true,
    "mpn": "H7606GM-SR010W",
    "brand": "ASUS"
   },
@@ -7887,7 +7887,7 @@
    "sku": "105317278",
    "title": "ASUS Vivobook Go 15 E1504FA-BQ5732W AMD Ryzen 5 40 Laptop 39.6 cm (15.6\") Full HD 16 GB LPDDR5-SDRAM 512 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Home Black",
    "url": "https://www.clove.co.uk/products/asus-vivobook-go-15-e1504fa-bq5732w-amd-ryzen-5-40-laptop-39-6-cm-15-6-full-hd-16-gb-lpddr5-sdram-512-gb-ssd-wi-fi-6e-802-11ax-windows-11-home-black",
-   "price": 683,
+   "price": 674,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f442a2e6-37b3-4377-9a2e-302e3cd7e3bb.jpg?v=1791555641",
    "inStock": false,
    "mpn": "E1504FA-BQ5732W",
@@ -8280,7 +8280,7 @@
    "sku": "103575018",
    "title": "ASUS Vivobook S16 S3607NA-SH002W Snapdragon X2E-88-100 Laptop 40.6 cm (16\") WUXGA 16 GB LPDDR5x-SDRAM 1 TB SSD Wi-Fi 7 (802.11be) Windows 11 Home Blue",
    "url": "https://www.clove.co.uk/products/asus-vivobook-s16-s3607na-sh002w-snapdragon-x2e-88-100-laptop-40-6-cm-16-wuxga-16-gb-lpddr5x-sdram-1-tb-ssd-wi-fi-7-802-11be-windows-11-home-blue",
-   "price": 1301,
+   "price": 1297,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/106f6165-92dc-440e-a769-af884a456e3d.jpg?v=1791556859",
    "inStock": true,
    "mpn": "S3607NA-SH002W",
@@ -8600,7 +8600,7 @@
    "sku": "104473349",
    "title": "ASUS Zenbook A14 UX3407NA-QD148W Copilot+ PC Snapdragon X2E-88-100 Laptop 35.6 cm (14\") WUXGA 16 GB LPDDR5x-SDRAM 1 TB SSD Wi-Fi 7 (802.11be) Windows 11 Home Beige",
    "url": "https://www.clove.co.uk/products/asus-zenbook-a14-ux3407na-qd148w-copilot-pc-snapdragon-x2e-88-100-laptop-35-6-cm-14-wuxga-16-gb-lpddr5x-sdram-1-tb-ssd-wi-fi-7-802-11be-windows-11-home-beige",
-   "price": 1321,
+   "price": 1317,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/186a2c8f-49c0-492e-a489-ee106f12a3da.jpg?v=1791554328",
    "inStock": true,
    "mpn": "UX3407NA-QD148W",
@@ -9708,7 +9708,7 @@
    "sku": "99973764",
    "title": "DELL Pro 13 Plus PB13250 Plus Core Ultra 5 236V 16GB 256GB 13.3\" Touch Windows 11 (Copilot+ PC) - 3 year Support NDB OS and ADP",
    "url": "https://www.clove.co.uk/products/dell-pro-13-plus-pb13250-plus-core-ultra-5-236v-16gb-256gb-13-3-touch-windows-11-copilot-pc-3-year-support-ndb-os-and-adp",
-   "price": 1435,
+   "price": 1297,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/01881560-dfce-465a-b013-f187692cd124.jpg?v=1793278796",
    "inStock": true,
    "mpn": "PB13250",
@@ -9719,7 +9719,7 @@
    "sku": "103815020",
    "title": "DELL Pro 13 Premium PA13250 Copilot+ PC Intel Core Ultra 5 236V Laptop 33.8 cm (13.3\") Full HD+ 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro UK English Grey",
    "url": "https://www.clove.co.uk/products/dell-pro-13-premium-pa13250-copilot-pc-intel-core-ultra-5-236v-laptop-33-8-cm-13-3-full-hd-16-gb-lpddr5x-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-uk-english-grey",
-   "price": 1931,
+   "price": 1660,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/52e62f08-2df8-4202-aba6-1166ea2aa0ce.jpg?v=1791559454",
    "inStock": true,
    "mpn": "PA13250",
@@ -9807,7 +9807,7 @@
    "sku": "104209745",
    "title": "DELL Pro 14 Essential PV14250 Intel Core 7 150U Laptop 35.6 cm (14\") Full HD+ 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro UK English Black",
    "url": "https://www.clove.co.uk/products/dell-pro-14-essential-pv14250-intel-core-7-150u-laptop-35-6-cm-14-full-hd-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-6-802-11ax-windows-11-pro-uk-english-black",
-   "price": 972,
+   "price": 970,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/163d7607-33a2-4a38-b390-b95b898e2e56.jpg?v=1791560123",
    "inStock": true,
    "mpn": "PV14250",
@@ -10136,7 +10136,7 @@
    "sku": "103814754",
    "title": "DELL Pro 15 Essential PV15250 Intel® Core™ i5 i5-1334U Laptop 39.6 cm (15.6\") Full HD 8 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro UK English Black",
    "url": "https://www.clove.co.uk/products/dell-pro-15-essential-pv15250-intel®-core™-i5-i5-1334u-laptop-39-6-cm-15-6-full-hd-8-gb-ddr5-sdram-512-gb-ssd-wi-fi-6-802-11ax-windows-11-pro-uk-english-black",
-   "price": 702,
+   "price": 681,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/dd6b6778-f8cc-449a-8192-f03cc5f5b77d.jpg?v=1791560103",
    "inStock": true,
    "mpn": "PV15250",
@@ -10158,7 +10158,7 @@
    "sku": "104197838",
    "title": "DELL Pro 15 Essential PV15250 Intel® Core™ i7 i7-1355U Laptop 39.6 cm (15.6\") Full HD 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro UK English Black",
    "url": "https://www.clove.co.uk/products/dell-pro-15-essential-pv15250-intel®-core™-i7-i7-1355u-laptop-39-6-cm-15-6-full-hd-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-6-802-11ax-windows-11-pro-uk-english-black",
-   "price": 1029,
+   "price": 1016,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/30a33187-8580-4c74-94e1-7bc710381d84.jpg?v=1791559129",
    "inStock": false,
    "mpn": "PV15250",
@@ -10191,7 +10191,7 @@
    "sku": "103814701",
    "title": "DELL Pro 16 PC16250 Intel Core Ultra 5 225U Laptop 40.6 cm (16\") Full HD+ 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Pro UK English Black",
    "url": "https://www.clove.co.uk/products/dell-pro-16-pc16250-intel-core-ultra-5-225u-laptop-40-6-cm-16-full-hd-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-6e-802-11ax-windows-11-pro-uk-english-black",
-   "price": 1233,
+   "price": 1238,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e08d1a1f-a331-400b-a017-65fb4fb6b007.jpg?v=1791560681",
    "inStock": true,
    "mpn": "PC16250",
@@ -10213,7 +10213,7 @@
    "sku": "103814303",
    "title": "DELL Pro 16 PC16250 Intel Core Ultra 7 255U Laptop 40.6 cm (16\") Full HD+ 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro UK English Black",
    "url": "https://www.clove.co.uk/products/dell-pro-16-pc16250-intel-core-ultra-7-255u-laptop-40-6-cm-16-full-hd-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-6-802-11ax-windows-11-pro-uk-english-black",
-   "price": 1505,
+   "price": 1481,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/cb1f6394-344f-42c6-969c-6653c416247c.jpg?v=1791560122",
    "inStock": true,
    "mpn": "PC16250",
@@ -10246,7 +10246,7 @@
    "sku": "103814748",
    "title": "DELL Pro 16 Plus PB16250 Copilot+ PC Intel Core Ultra 7 266V Laptop 40.6 cm (16\") Full HD+ 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro UK English Aluminium",
    "url": "https://www.clove.co.uk/products/dell-pro-16-plus-pb16250-copilot-pc-intel-core-ultra-7-266v-laptop-40-6-cm-16-full-hd-16-gb-lpddr5x-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-uk-english-aluminium",
-   "price": 1494,
+   "price": 1441,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a9b5b775-7111-413e-8a27-713154c156ad.jpg?v=1791559162",
    "inStock": true,
    "mpn": "PB16250",
@@ -11052,9 +11052,9 @@
    "sku": "104744828",
    "title": "HP 14A-NM0004NAX MTK 540 4GB 128GB CHR MediaTek Kompanio 540 Chromebook 35.6 cm (14\") HD LPDDR5-SDRAM UFS Wi-Fi 6 (802.11ax) ChromeOS Grey",
    "url": "https://www.clove.co.uk/products/hp-14a-nm0004nax-mtk-540-4gb-128gb-chr-mediatek-kompanio-540-chromebook-35-6-cm-14-hd-lpddr5-sdram-ufs-wi-fi-6-802-11ax-chromeos-grey",
-   "price": 340.97,
+   "price": 265,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/72055252-56b4-43ed-96ce-844ede6ee573.jpg?v=1791555911",
-   "inStock": false,
+   "inStock": true,
    "mpn": "14A-NM0004NAX"
   },
   {
@@ -12058,7 +12058,7 @@
    "url": "https://www.clove.co.uk/products/hp-dq8k3ea-laptop-intel-core-5-210h-40-6-cm-16-2k-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-6-802-11ax-windows-11-home-grey-silver",
    "price": 815.41,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/593148a3-c433-49eb-8e4e-3c820d524c02.jpg?v=1791554342",
-   "inStock": false,
+   "inStock": true,
    "mpn": "DQ8K3EA"
   },
   {
@@ -12108,7 +12108,7 @@
    "url": "https://www.clove.co.uk/products/hp-dq9h2ea-laptop-copilot-pc-amd-ryzen™-ai-5-40-6-cm-16-touchscreen-2k-16-gb-lpddr5x-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-home-silver",
    "price": 1504,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2f71b5a4-e395-4935-a962-13db6586446d.jpg?v=1791554346",
-   "inStock": true,
+   "inStock": false,
    "mpn": "DQ9H2EA"
   },
   {
@@ -13984,7 +13984,7 @@
    "sku": "104703043",
    "title": "HP EliteBook 6 G2q 14 Next Gen AI Copilot+ PC Snapdragon X2P-64-100 Laptop 35.6 cm (14\") WUXGA 32 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Silver",
    "url": "https://www.clove.co.uk/products/hp-elitebook-6-g2q-14-next-gen-ai-copilot-pc-snapdragon-x2p-64-100-laptop-35-6-cm-14-wuxga-32-gb-lpddr5x-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-silver",
-   "price": 1895,
+   "price": 1445,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7bb0fee4-cecc-4cd8-aeae-1bd59803c28b.jpg?v=1791554065",
    "inStock": true,
    "mpn": "X2P-64-100"
@@ -16098,7 +16098,7 @@
    "url": "https://www.clove.co.uk/products/hp-laptop-15-fc1004na-amd-ryzen™-5-7520u-39-6-cm-15-6-full-hd-8-gb-lpddr5-sdram-512-gb-ssd-wi-fi-6-802-11ax-windows-11-home-black",
    "price": 578,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0e59af07-7560-46df-8276-1799c264ec09.jpg?v=1791556597",
-   "inStock": false,
+   "inStock": true,
    "mpn": "7520U"
   },
   {
@@ -16302,7 +16302,7 @@
    "url": "https://www.clove.co.uk/products/hp-omen-transcend-14-fb1003na-intel-core-ultra-7-255h-laptop-35-6-cm-14-3k-16-gb-lpddr5-sdram-1-tb-ssd-nvidia®-geforce-rtx™-5050-wi-fi-7-802-11be-windows-11-home-ai-pc-black",
    "price": 1851,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8f72fac7-db58-4110-88b0-fa2424cb1a59.jpg?v=1791553293",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-clove",
@@ -16516,9 +16516,9 @@
    "sku": "103768376",
    "title": "HP OmniBook 5 Laptop Next Gen AI 16-bf0003nax Copilot+ PC Snapdragon X1P-42-100 40.6 cm (16\") 2K 32 GB LPDDR5x-SDRAM 1 TB SSD Wi-Fi 6E (802.11ax) Windows 11 Home Silver",
    "url": "https://www.clove.co.uk/products/hp-omnibook-5-laptop-next-gen-ai-16-bf0003nax-copilot-pc-snapdragon-x1p-42-100-40-6-cm-16-2k-32-gb-lpddr5x-sdram-1-tb-ssd-wi-fi-6e-802-11ax-windows-11-home-silver",
-   "price": 1538,
+   "price": 1041,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f53c3b31-fcd0-4607-bf28-8a372cce26a2.jpg?v=1794322821",
-   "inStock": false,
+   "inStock": true,
    "mpn": "X1P-42-100"
   },
   {
@@ -16854,7 +16854,7 @@
    "url": "https://www.clove.co.uk/products/hp-omnibook-ultra-laptop-next-gen-ai-14-kg0001nax-copilot-pc-35-6-cm-14-touchscreen-2k-16-gb-lpddr5x-sdram-1-tb-ssd-wi-fi-7-802-11be-windows-11-home-blue-grey",
    "price": 1504,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8471c97c-d060-44c3-912a-47b872dd1461.jpg?v=1791557588",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-clove",
@@ -19096,7 +19096,7 @@
    "sku": "104835634",
    "title": "HP Z8G2I14 U7 366H 14 32GB/512 PC Copilot+ PC Intel Core Ultra 7 35.6 cm (14\") WUXGA LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro AI Workstation, AI PC Silver",
    "url": "https://www.clove.co.uk/products/hp-z8g2i14-u7-366h-14-32gb-512-pc-copilot-pc-intel-core-ultra-7-35-6-cm-14-wuxga-lpddr5x-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-ai-workstation-ai-pc-silver",
-   "price": 3460,
+   "price": 3464,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/cb081857-672f-450f-952f-7d4443c2ea00.jpg?v=1793278791",
    "inStock": false,
    "mpn": "Z8G2I14"
@@ -19855,7 +19855,7 @@
    "sku": "104523311",
    "title": "Lenovo Chrome 100e G5 M89 MediaTek Kompanio 540 Chromebook 29.5 cm (11.6\") HD 4 GB LPDDR5x-SDRAM 64 GB UFS Wi-Fi 6E (802.11ax) ChromeOS Grey UK English",
    "url": "https://www.clove.co.uk/products/lenovo-chrome-100e-g5-m89-mediatek-kompanio-540-chromebook-29-5-cm-11-6-hd-4-gb-lpddr5x-sdram-64-gb-ufs-wi-fi-6e-802-11ax-chromeos-grey-uk-english",
-   "price": 361,
+   "price": 357,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/af0d7df7-9406-4282-acb0-ca88b5a8c04a.jpg?v=1793279166",
    "inStock": true,
    "brand": "Lenovo"
@@ -20730,7 +20730,7 @@
    "sku": "104575237",
    "title": "Lenovo ThinkBook 14 G9 AHP AMD Ryzen™ 7 250 Laptop 35.6 cm (14\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Grey UK English",
    "url": "https://www.clove.co.uk/products/lenovo-thinkbook-14-g9-ahp-amd-ryzen™-7-250-laptop-35-6-cm-14-wuxga-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-grey-uk-english",
-   "price": 1152,
+   "price": 1252,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/26f3058a-b6d8-4d4c-9fc8-7f72ab634d41.jpg?v=1793279137",
    "inStock": false,
    "brand": "Lenovo"
@@ -20740,7 +20740,7 @@
    "sku": "104597506",
    "title": "Lenovo ThinkBook 14 G9 IPL Copilot+ PC Intel Core Ultra 5 325 Laptop 35.6 cm (14\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Grey English",
    "url": "https://www.clove.co.uk/products/lenovo-thinkbook-14-g9-ipl-copilot-pc-intel-core-ultra-5-325-laptop-35-6-cm-14-wuxga-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-grey-english",
-   "price": 992,
+   "price": 996,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3f0e61b2-47ca-4692-972f-1b6f8b226e1d.jpg?v=1791555323",
    "inStock": true,
    "brand": "Lenovo"
@@ -21327,7 +21327,7 @@
    "sku": "103565269",
    "title": "Lenovo ThinkPad E14 Gen 7 (Intel) Copilot+ PC Intel Core Ultra 7 258V Laptop 35.6 cm (14\") WUXGA 32 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Pro English Black",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-e14-gen-7-intel-copilot-pc-intel-core-ultra-7-258v-laptop-35-6-cm-14-wuxga-32-gb-lpddr5x-sdram-512-gb-ssd-wi-fi-6e-802-11ax-windows-11-pro-english-black",
-   "price": 1335,
+   "price": 1337,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/56c008ad-db2a-44ec-92ab-5f48553ff231.jpg?v=1791560945",
    "inStock": true,
    "brand": "Lenovo"
@@ -21377,7 +21377,7 @@
    "sku": "104574420",
    "title": "Lenovo ThinkPad E14 Gen 8 (AMD) Copilot+ PC AMD Ryzen™ AI 7 445 Laptop 35.6 cm (14\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black English",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-e14-gen-8-amd-copilot-pc-amd-ryzen™-ai-7-445-laptop-35-6-cm-14-wuxga-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-black-english",
-   "price": 1191,
+   "price": 1345,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/27e20f65-3420-43b3-9d6f-6a73c6e5f08f.jpg?v=1791554963",
    "inStock": true,
    "brand": "Lenovo"
@@ -21387,9 +21387,9 @@
    "sku": "104584213",
    "title": "Lenovo ThinkPad E14 Gen 8 (Intel) Copilot+ PC Intel Core Ultra 5 325 Laptop 35.6 cm (14\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black English",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-e14-gen-8-intel-copilot-pc-intel-core-ultra-5-325-laptop-35-6-cm-14-wuxga-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-black-english",
-   "price": 1046,
+   "price": 1048,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a83095b8-5872-452d-9988-16ebae371b35.jpg?v=1791554692",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lenovo"
   },
   {
@@ -21458,7 +21458,7 @@
    "sku": "104863251",
    "title": "Lenovo ThinkPad E16 Gen 3 (AMD) AMD Ryzen™ 5 220 Laptop 40.6 cm (16\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Pro Black UK English",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-e16-gen-3-amd-amd-ryzen™-5-220-laptop-40-6-cm-16-wuxga-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-6e-802-11ax-windows-11-pro-black-uk-english",
-   "price": 1025,
+   "price": 1023,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/671a967d-a41b-49ad-9962-f07ad9d7c797.jpg?v=1793279184",
    "inStock": true,
    "brand": "Lenovo"
@@ -21630,7 +21630,7 @@
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-l13-gen-5-intel-intel-core-ultra-5-135u-laptop-33-8-cm-13-3-wuxga-16-gb-lpddr5-sdram-256-gb-ssd-wi-fi-6e-802-11ax-windows-11-pro-uk-english-black",
    "price": 746,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9dc09787-7c70-4996-8361-7d512c992287.jpg?v=1791556316",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lenovo"
   },
   {
@@ -21864,7 +21864,7 @@
    "sku": "104576275",
    "title": "Lenovo ThinkPad L14 Gen 7 (Intel) Copilot+ PC Intel Core Ultra 5 325 Laptop 35.6 cm (14\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-l14-gen-7-intel-copilot-pc-intel-core-ultra-5-325-laptop-35-6-cm-14-wuxga-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-black-uk-english",
-   "price": 1253,
+   "price": 1238,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/84d99d11-e3b2-474f-ba52-c0ec9f47de45.jpg?v=1791555320",
    "inStock": true,
    "brand": "Lenovo"
@@ -21974,7 +21974,7 @@
    "sku": "104575328",
    "title": "Lenovo ThinkPad L16 Gen 3 (AMD) Copilot+ PC AMD Ryzen AI 5 PRO PRO 435 Laptop 40.6 cm (16\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-l16-gen-3-amd-copilot-pc-amd-ryzen-ai-5-pro-pro-435-laptop-40-6-cm-16-wuxga-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-black-uk-english",
-   "price": 1519,
+   "price": 1440,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9e506efb-f7cc-4e73-ac67-9d6ca4a863f9.jpg?v=1793279139",
    "inStock": false,
    "brand": "Lenovo"
@@ -22298,7 +22298,7 @@
    "sku": "103564067",
    "title": "Lenovo ThinkPad P16s Gen 4 (AMD) Copilot+ PC AMD Ryzen™ AI 7 350 Mobile workstation 40.6 cm (16\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro English Black",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-p16s-gen-4-amd-copilot-pc-amd-ryzen™-ai-7-350-mobile-workstation-40-6-cm-16-wuxga-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-english-black",
-   "price": 1440,
+   "price": 1447,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/76b6d596-1456-4582-bc99-9bb0ae7d0323.jpg?v=1791560687",
    "inStock": false,
    "brand": "Lenovo"
@@ -22308,9 +22308,9 @@
    "sku": "103565078",
    "title": "Lenovo ThinkPad P16s Gen 4 (AMD) Copilot+ PC AMD Ryzen™ AI 7 350 Mobile workstation 40.6 cm (16\") WUXGA 32 GB DDR5-SDRAM 1 TB SSD Wi-Fi 7 (802.11be) Windows 11 Pro English Black",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-p16s-gen-4-amd-copilot-pc-amd-ryzen™-ai-7-350-mobile-workstation-40-6-cm-16-wuxga-32-gb-ddr5-sdram-1-tb-ssd-wi-fi-7-802-11be-windows-11-pro-english-black",
-   "price": 2116,
+   "price": 2028,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a146c292-b50b-4a2c-9aa8-638302f4aecf.jpg?v=1791561239",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lenovo"
   },
   {
@@ -22558,7 +22558,7 @@
    "sku": "104887824",
    "title": "Lenovo ThinkPad T14 Gen 7 (Intel) Copilot+ PC Intel Core Ultra 7 355 Laptop 35.6 cm (14\") WUXGA 32 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro English Black",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-t14-gen-7-intel-copilot-pc-intel-core-ultra-7-355-laptop-35-6-cm-14-wuxga-32-gb-lpddr5x-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-english-black",
-   "price": 2096,
+   "price": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/af5486a8-a978-4baa-8edd-a23f9df9d3d1.jpg?v=1791555633",
    "inStock": false,
    "brand": "Lenovo"
@@ -22692,7 +22692,7 @@
    "sku": "105548860",
    "title": "Lenovo ThinkPad T14s Gen 6 (Intel) Copilot+ PC Intel Core Ultra 7 268V Laptop 35.6 cm (14\") WUXGA 32 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-t14s-gen-6-intel-copilot-pc-intel-core-ultra-7-268v-laptop-35-6-cm-14-wuxga-32-gb-lpddr5x-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-black-uk-english",
-   "price": 2095,
+   "price": 1977,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0095626f-bc02-404c-9289-c4e33bd9e705.jpg?v=1794322804",
    "inStock": true,
    "brand": "Lenovo"
@@ -22935,7 +22935,7 @@
    "sku": "103565205",
    "title": "Lenovo ThinkPad T1g Gen 8 Intel Core Ultra 9 285H Laptop 40.6 cm (16\") WUXGA 64 GB LPDDR5x-SDRAM 2 TB SSD NVIDIA® GeForce RTX™ 5070 Laptop GPU Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-t1g-gen-8-intel-core-ultra-9-285h-laptop-40-6-cm-16-wuxga-64-gb-lpddr5x-sdram-2-tb-ssd-nvidia®-geforce-rtx™-5070-laptop-gpu-wi-fi-7-802-11be-windows-11-pro-black-uk-english",
-   "price": 5126,
+   "price": 5123,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0e9fb578-b78b-4a09-af73-67a7f394da9a.jpg?v=1793278805",
    "inStock": false,
    "brand": "Lenovo"
@@ -23087,7 +23087,7 @@
    "url": "https://www.clove.co.uk/products/lenovo-thinkpad-x13-gen-4-amd-amd-ryzen™-5-pro-7540u-laptop-33-8-cm-13-3-touchscreen-wuxga-16-gb-lpddr5x-sdram-256-gb-ssd-wi-fi-6e-802-11ax-windows-11-pro-uk-english-black-1",
    "price": 721,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7ce708c1-a208-4c16-a197-b0a67a3e67a9.jpg?v=1791556309",
-   "inStock": false,
+   "inStock": true,
    "mpn": "7540U",
    "brand": "Lenovo"
   },
@@ -23662,7 +23662,7 @@
    "sku": "103549312",
    "title": "Lenovo V15 G4 AMN Laptop - 39.6 cm (15.6\") - AMD Ryzen™ 5 7520U - 16 GB LPDDR5-SDRAM - 256 GB SSD - Wi-Fi 6 (802.11ax) - Windows 11 Pro UK - English - Black",
    "url": "https://www.clove.co.uk/products/lenovo-v15-g4-amn-laptop-39-6-cm-15-6-amd-ryzen™-5-7520u-16-gb-lpddr5-sdram-256-gb-ssd-wi-fi-6-802-11ax-windows-11-pro-uk-english-black",
-   "price": 576,
+   "price": 583,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/affeed7c-9ffd-4817-adfb-535b46f30c36.jpg?v=1789561914",
    "inStock": true,
    "mpn": "7520U",
@@ -23684,7 +23684,7 @@
    "sku": "89529974",
    "title": "Lenovo V15 G4 AMN Laptop 39.6 cm (15.6\") Full HD AMD Ryzen™ 5 7520U 8 GB LPDDR5-SDRAM 256 GB SSD Wi-Fi 5 (802.11ac) Windows 11 Pro Black",
    "url": "https://www.clove.co.uk/products/lenovo-v15-g4-amn-laptop-39-6-cm-15-6-full-hd-amd-ryzen-5-7520u-8-gb-lpddr5-sdram-256-gb-ssd-wi-fi-5-802-11ac-windows-11-pro-black",
-   "price": 576,
+   "price": 583,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/74db5fe3-7c65-48e4-8d45-6007dbf755d9.jpg?v=1709577079",
    "inStock": false,
    "mpn": "7520U",
@@ -23795,7 +23795,7 @@
    "sku": "99658285",
    "title": "Lenovo V15 G5 IRL Intel® Core™ i5 i5-13420H Laptop 39.6 cm (15.6\") Full HD 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro English Black",
    "url": "https://www.clove.co.uk/products/lenovo-v15-g5-irl-intel®-core™-i5-i5-13420h-laptop-39-6-cm-15-6-full-hd-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-6-802-11ax-windows-11-pro-english-black",
-   "price": 767,
+   "price": 772,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ac149084-7dd2-47cb-a71a-1c2b3a7d923f.jpg?v=1791560957",
    "inStock": true,
    "brand": "Lenovo"
@@ -23835,7 +23835,7 @@
    "sku": "103549676",
    "title": "Lenovo V15 G5 IRL Intel® Core™ i5 i5-13420H Laptop 39.6 cm (15.6\") Full HD 8 GB DDR5-SDRAM 256 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro UK English Black",
    "url": "https://www.clove.co.uk/products/lenovo-v15-g5-irl-intel®-core™-i5-i5-13420h-laptop-39-6-cm-15-6-full-hd-8-gb-ddr5-sdram-256-gb-ssd-wi-fi-6-802-11ax-windows-11-pro-uk-english-black",
-   "price": 551,
+   "price": 576,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/bee8cddb-7ba7-4d9a-b58d-e445b8827500.jpg?v=1791559158",
    "inStock": true,
    "brand": "Lenovo"
@@ -23895,7 +23895,7 @@
    "sku": "103549428",
    "title": "Lenovo V15 G5 IRL Intel® Core™ i7 i7-13620H Laptop 39.6 cm (15.6\") Full HD 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro English Black",
    "url": "https://www.clove.co.uk/products/lenovo-v15-g5-irl-intel®-core™-i7-i7-13620h-laptop-39-6-cm-15-6-full-hd-16-gb-ddr5-sdram-512-gb-ssd-wi-fi-6-802-11ax-windows-11-pro-english-black",
-   "price": 872,
+   "price": 865,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d1a0d448-009e-49a7-82da-f7aa34a59b5d.jpg?v=1791558780",
    "inStock": true,
    "brand": "Lenovo"
@@ -25511,7 +25511,7 @@
    "url": "https://www.clove.co.uk/products/microsoft-surface-laptop-8-13-8-copilot-pc-intel-core-ultra-x7-368h-35-cm-13-8-touchscreen-32-gb-lpddr5x-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-platinum",
    "price": 3595,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4262caf9-457e-4082-851c-6cad5f8652a9.jpg?v=1791554335",
-   "inStock": true,
+   "inStock": false,
    "brand": "Microsoft"
   },
   {
@@ -25599,7 +25599,7 @@
    "sku": "104895470",
    "title": "Microsoft Surface Laptop 8 15\" Copilot+ PC Snapdragon 38.1 cm (15\") Touchscreen 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
    "url": "https://www.clove.co.uk/products/microsoft-surface-laptop-8-15-copilot-pc-snapdragon-38-1-cm-15-touchscreen-16-gb-lpddr5x-sdram-512-gb-ssd-wi-fi-7-802-11be-windows-11-pro-platinum",
-   "price": 1890,
+   "price": 1889,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9ce8cb31-9cf3-4243-94e5-5fef306d67f5.jpg?v=1791555317",
    "inStock": true,
    "brand": "Microsoft"

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-14T01:38:59.515Z",
+ "scrapedAt": "2026-11-15T00:17:42.559Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -8,7 +8,7 @@
    "url": "https://www.clove.co.uk/products/acer-chromebook-d-chrome-tablet-311-d723n-10-95in-mediatek-wuxga-itouchscreen-4gb-64gb-mediatek-kompanio-27-9-cm-11-wi-fi-6-802-11ax-chromeos-silver",
    "price": 321,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/42d859d4-563c-4feb-a4e8-fc2872f54437.jpg?v=1791796409",
-   "inStock": true,
+   "inStock": false,
    "mpn": "D723N",
    "brand": "Acer"
   },
@@ -1886,7 +1886,7 @@
    "url": "https://www.clove.co.uk/products/apple-ipad-air-m4-128-gb-27-9-cm-11-12-gb-wi-fi-7-802-11be-ipados-26-purple",
    "price": 761,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/671d6748-8257-4bc9-8bff-eb2fe1c8d3b7.jpg?v=1791796082",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1906,7 +1906,7 @@
    "url": "https://www.clove.co.uk/products/apple-ipad-air-m4-128-gb-33-cm-13-12-gb-wi-fi-7-802-11be-ipados-26-blue",
    "price": 964,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d6b81b96-566c-46bf-ad75-934b5c4a9b99.jpg?v=1791796069",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -2044,9 +2044,9 @@
    "sku": "103818638",
    "title": "Apple iPad Air M4 512 GB 33 cm (13\") 12 GB Wi-Fi 7 (802.11be) iPadOS 26 Beige",
    "url": "https://www.clove.co.uk/products/apple-ipad-air-m4-512-gb-33-cm-13-12-gb-wi-fi-7-802-11be-ipados-26-beige",
-   "price": 1269.35,
+   "price": 1269,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/29d39578-469d-4631-b97e-1aad454ba8cd.jpg?v=1791795686",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -3027,7 +3027,7 @@
    "sku": "100266718",
    "title": "Lenovo Idea Tab 5G MediaTek Dimensity 128 GB 27.9 cm (11\") 8 GB Wi-Fi 5 (802.11ac) Android 15 Grey",
    "url": "https://www.clove.co.uk/products/lenovo-idea-tab-5g-mediatek-dimensity-128-gb-27-9-cm-11-8-gb-wi-fi-5-802-11ac-android-15-grey",
-   "price": 269,
+   "price": 293,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7358965a-bc02-4cfd-8485-4310e41e55f0.jpg?v=1791796373",
    "inStock": true,
    "brand": "Lenovo"
@@ -3207,7 +3207,7 @@
    "sku": "102650230",
    "title": "Lenovo Tab K9 Mediatek 64 GB 22.1 cm (8.7\") 4 GB Wi-Fi 5 (802.11ac) Android 14 Grey",
    "url": "https://www.clove.co.uk/products/lenovo-tab-k9-mediatek-64-gb-22-1-cm-8-7-4-gb-wi-fi-5-802-11ac-android-14-grey",
-   "price": 131,
+   "price": 130,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c4468c4b-0f26-4ce3-9557-d6760fc0a913.jpg?v=1791796380",
    "inStock": true,
    "brand": "Lenovo"
@@ -3417,7 +3417,7 @@
    "sku": "102846278",
    "title": "Lenovo Tab One Mediatek 64 GB 22.1 cm (8.7\") 4 GB Wi-Fi 5 (802.11ac) Android 14 Grey",
    "url": "https://www.clove.co.uk/products/lenovo-tab-one-mediatek-64-gb-22-1-cm-8-7-4-gb-wi-fi-5-802-11ac-android-14-grey-2",
-   "price": 159,
+   "price": 158,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c41a6a82-5a5b-4cc1-a7a2-8f8e9b111ffb.jpg?v=1793353182",
    "inStock": true,
    "brand": "Lenovo"
@@ -3764,7 +3764,7 @@
    "sku": "95152516",
    "title": "Microsoft Surface Pro 11 Copilot+ PC Intel Core Ultra 5 256 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-11-copilot-pc-intel-core-ultra-5-256-gb-33-cm-13-16-gb-wi-fi-7-802-11be-windows-11-pro-platinum",
-   "price": 1697,
+   "price": 1460,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3fa40cbd-47f3-49ae-bbc6-72ab16c9ef00.jpg?v=1791794554",
    "inStock": true,
    "brand": "Microsoft"
@@ -3884,7 +3884,7 @@
    "sku": "97063654",
    "title": "Microsoft Surface Pro 11 Copilot+ PC Intel Core Ultra 7 512 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Black",
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-11-copilot-pc-intel-core-ultra-7-512-gb-33-cm-13-16-gb-wi-fi-7-802-11be-windows-11-pro-black",
-   "price": 1949,
+   "price": 1952,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ac87bed8-d141-409f-a07e-f6160b37db0e.jpg?v=1791794209",
    "inStock": true,
    "brand": "Microsoft"
@@ -4324,7 +4324,7 @@
    "sku": "100458829",
    "title": "Samsung Galaxy Tab A11 128 GB 22.1 cm (8.7\") 8 GB Wi-Fi 5 (802.11ac) Silver",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-a11-128-gb-22-1-cm-8-7-8-gb-wi-fi-5-802-11ac-silver",
-   "price": 220,
+   "price": 218,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5d02d5e7-a6f9-4fd9-8d5b-dc563d54ac59.jpg?v=1791796058",
    "inStock": true,
    "brand": "Samsung"
@@ -4367,7 +4367,7 @@
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-a11-64-gb-22-1-cm-8-7-4-gb-wi-fi-5-802-11ac-silver",
    "price": 141,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/268a675d-ff2d-4042-9226-81dbf9e76063.jpg?v=1791796359",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {
@@ -4458,7 +4458,7 @@
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-a11-5g-128-gb-27-9-cm-11-6-gb-wi-fi-5-802-11ac-grey",
    "price": 282,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/496b29ea-b2f4-40da-ba9a-0b4f0bfe906b.jpg?v=1791796369",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {
@@ -4637,7 +4637,7 @@
    "sku": "90766305",
    "title": "Samsung Galaxy Tab Active5 Enterprise Edition 5G Samsung Exynos LTE-TDD & LTE-FDD 128 GB 20.3 cm (8\") 6 GB Wi-Fi 6 (802.11ax) Android 14 Green",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-active5-enterprise-edition-5g-samsung-exynos-lte-tdd-lte-fdd-128-gb-20-3-cm-8-6-gb-wi-fi-6-802-11ax-android-14-green-1",
-   "price": 635,
+   "price": 638,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a968171d-5f7f-4de8-8cb9-42e06621385b.jpg?v=1791796371",
    "inStock": true,
    "brand": "Samsung"
@@ -4647,7 +4647,7 @@
    "sku": "90759450",
    "title": "Samsung Galaxy Tab Active5 Enterprise Edition 5G Samsung Exynos LTE-TDD & LTE-FDD 128 GB 20.3 cm (8\") 6 GB Wi-Fi 6 (802.11ax) Android 14 Green",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-active5-enterprise-edition-5g-samsung-exynos-lte-tdd-lte-fdd-128-gb-20-3-cm-8-6-gb-wi-fi-6-802-11ax-android-14-green",
-   "price": 629,
+   "price": 633,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/031697c8-7ef4-47f5-ac22-a6fa9f7f8efe.jpg?v=1791796074",
    "inStock": true,
    "brand": "Samsung"
@@ -4862,7 +4862,7 @@
    "sku": "100032555",
    "title": "Samsung Galaxy Tab S10 Lite 5G LTE-TDD & LTE-FDD 128 GB 27.7 cm (10.9\") 6 GB Wi-Fi 6 (802.11ax) Silver",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-s10-lite-5g-lte-tdd-lte-fdd-128-gb-27-7-cm-10-9-6-gb-wi-fi-6-802-11ax-silver",
-   "price": 506,
+   "price": 485,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d31873b3-de5b-4d1d-a33c-11f0afb89e94.jpg?v=1791796084",
    "inStock": true,
    "brand": "Samsung"

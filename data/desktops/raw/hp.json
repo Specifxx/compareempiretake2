@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-13T00:20:02.615Z",
+ "scrapedAt": "2026-11-14T23:09:39.432Z",
  "offers": [
   {
    "retailer": "hp",
@@ -22,17 +22,6 @@
    "price": 1199,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08630601_2_1.png",
    "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "D9UB7PA",
-   "mpn": "D9UB7PA",
-   "brand": "HP",
-   "title": "HP 23.8 inch All-in-One Desktop PC 24-cr0034a",
-   "url": "https://www.hp.com/au-en/shop/hp-23-8-inch-all-in-one-24-cr0034a-pc-d9ub7pa.html",
-   "price": 999,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08630601_1_2.png",
-   "inStock": false
   },
   {
    "retailer": "hp",
@@ -238,7 +227,7 @@
    "mpn": "BP0G1PT",
    "brand": "HP",
    "title": "HP EliteDesk 8 Mini G1i Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-elitedesk-8-mini-g1i-desktop-ai-pc-bp0g1pt.html",
+   "url": "https://www.hp.com/au-en/shop/hp-elitedesk-8-mini-g1i-desktop-ai-pc-bp0g1pt-4.html",
    "price": 3299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitedesk-8-mini-g1i-desktop-ai-pc-front_1.png",
    "inStock": false
@@ -370,10 +359,10 @@
    "mpn": "C0UN6PT",
    "brand": "HP",
    "title": "HP EliteStudio 8 All-in-One G1i 27 inch Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-27-inch-desktop-ai-pc-c0un6pt-4.html",
+   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-27-inch-desktop-ai-pc-c0un6pt.html",
    "price": 3549,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitestudio-8-aio-g1i-27-pc-front_1_2.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -624,7 +613,7 @@
    "brand": "HP",
    "title": "HP Z1 Tower G1i Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z1-tower-g1i-desktop-pc-d0vj8at.html",
-   "price": 4199,
+   "price": 4369,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/D/0/D0VJ8AT-1_T1766125895.png",
    "inStock": true
   },
@@ -635,7 +624,7 @@
    "brand": "HP",
    "title": "HP Z1 Tower G1i Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z1-tower-g1i-desktop-pc-c2aj1pt.html",
-   "price": 3999,
+   "price": 4059,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/C/2/C2AJ1PT-1_T1753232462.png",
    "inStock": true
   },
@@ -646,7 +635,7 @@
    "brand": "HP",
    "title": "HP Z1 Tower G1i Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z1-tower-g1i-desktop-pc-d0vl1at.html",
-   "price": 3999,
+   "price": 4029,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/D/0/D0VL1AT-1_T1766123982.png",
    "inStock": true
   },
@@ -668,19 +657,8 @@
    "brand": "HP",
    "title": "HP Z2 Mini G1i Workstation Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z2-mini-g1i-workstation-desktop-pc-bv2r3pt.html",
-   "price": 4499,
+   "price": 5749,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2R3PT-1_T1756798874.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "BV2R1PT",
-   "mpn": "BV2R1PT",
-   "brand": "HP",
-   "title": "HP Z2 Mini G1i Workstation Desktop PC",
-   "url": "https://www.hp.com/au-en/shop/hp-z2-mini-g1i-workstation-desktop-pc-bv2r1pt.html",
-   "price": 5759,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2R1PT-1_T1756798886.png",
    "inStock": true
   },
   {
@@ -690,8 +668,19 @@
    "brand": "HP",
    "title": "HP Z2 Mini G1i Workstation Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z2-mini-g1i-workstation-desktop-pc-bv2q9pt.html",
-   "price": 6899,
+   "price": 7459,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2Q9PT-1_T1756798898.png",
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
+   "sku": "BV2R1PT",
+   "mpn": "BV2R1PT",
+   "brand": "HP",
+   "title": "HP Z2 Mini G1i Workstation Desktop PC",
+   "url": "https://www.hp.com/au-en/shop/hp-z2-mini-g1i-workstation-desktop-pc-bv2r1pt.html",
+   "price": 6249,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2R1PT-1_T1756798886.png",
    "inStock": true
   },
   {
@@ -701,7 +690,7 @@
    "brand": "HP",
    "title": "HP Z2 Mini G1i Workstation Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z2-mini-g1i-workstation-desktop-pc-bv8b1pt.html",
-   "price": 3490,
+   "price": 3949,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV8B1PT-1_T1756798860.png",
    "inStock": false
   },
@@ -712,7 +701,7 @@
    "brand": "HP",
    "title": "HP Z2 SFF G1i Workstation Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z2-sff-g1i-workstation-desktop-pc-bv5m0pt.html",
-   "price": 6599,
+   "price": 7109,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV5M0PT-1_T1756798843.png",
    "inStock": true
   },
@@ -723,7 +712,7 @@
    "brand": "HP",
    "title": "HP Z2 SFF G1i Workstation Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z2-sff-g1i-workstation-desktop-pc-bv2q7pt.html",
-   "price": 5039,
+   "price": 5479,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2Q7PT-1_T1756798831.png",
    "inStock": true
   },
@@ -734,7 +723,7 @@
    "brand": "HP",
    "title": "HP Z2 SFF G1i Workstation Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z2-sff-g1i-workstation-desktop-pc-bv2q8pt.html",
-   "price": 4151,
+   "price": 3739,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2Q8PT-1_T1756798821.png",
    "inStock": false
   },
@@ -745,7 +734,7 @@
    "brand": "HP",
    "title": "HP Z2 Tower G1i Workstation Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z2-tower-g1i-workstation-desktop-pc-bv5m2pt.html",
-   "price": 7781,
+   "price": 6709,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV5M2PT-1_T1756798936.png",
    "inStock": true
   },
@@ -756,7 +745,7 @@
    "brand": "HP",
    "title": "HP Z2 Tower G1i Workstation Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z2-tower-g1i-workstation-desktop-pc-bv2q6pt.html",
-   "price": 5059,
+   "price": 5539,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2Q6PT-1_T1756798920.png",
    "inStock": true
   },
@@ -767,7 +756,7 @@
    "brand": "HP",
    "title": "HP Z2 Tower G1i Workstation Desktop PC",
    "url": "https://www.hp.com/au-en/shop/hp-z2-tower-g1i-workstation-desktop-pc-bv2r4pt.html",
-   "price": 10993,
+   "price": 9819,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/V/BV2R4PT-1_T1756798949.png",
    "inStock": false
   },

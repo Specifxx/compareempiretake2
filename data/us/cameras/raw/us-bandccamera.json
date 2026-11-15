@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-14T01:24:48.694Z",
+ "scrapedAt": "2026-11-15T00:03:47.753Z",
  "offers": [
   {
    "retailer": "us-bandccamera",
@@ -1491,7 +1491,7 @@
    "url": "https://bandccamera.com/products/leica-q3-43-black",
    "price": 7950,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/leica-q3-43-digital-camera-105791.png?v=1727467352",
-   "inStock": true,
+   "inStock": false,
    "brand": "Leica"
   },
   {
@@ -2104,7 +2104,7 @@
    "price": 3196.95,
    "wasPrice": 4296.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/nikon-z8-mirrorless-camera-272004.png?v=1683734380",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon"
   },
   {
@@ -2346,7 +2346,7 @@
    "price": 2099.99,
    "wasPrice": 2499.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/Screenshot2025-05-13at10.23.59AM.png?v=1747157121",
-   "inStock": true,
+   "inStock": false,
    "brand": "Panasonic",
    "mpn": "DC-S1M2ESBODY9"
   },
@@ -2393,7 +2393,7 @@
    "url": "https://bandccamera.com/products/panasonic-lumix-s9-mirrorless-camera",
    "price": 1497.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/panasonic-lumix-s9-mirrorless-camera-855847.png?v=1716446778",
-   "inStock": true,
+   "inStock": false,
    "brand": "Panasonic",
    "mpn": "DC-S9BODYK9"
   },
@@ -2703,28 +2703,6 @@
   },
   {
    "retailer": "us-bandccamera",
-   "sku": "C46900",
-   "title": "Sigma BF Mirrorless Camera (Black)",
-   "url": "https://bandccamera.com/products/sigma-bf-mirrorless-camera-black",
-   "price": 2199,
-   "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/sigma-bf-mirrorless-camera-black-417993.png?v=1740451864",
-   "inStock": false,
-   "brand": "Sigma",
-   "mpn": "C46900"
-  },
-  {
-   "retailer": "us-bandccamera",
-   "sku": "C47900",
-   "title": "Sigma BF Mirrorless Camera (Silver)",
-   "url": "https://bandccamera.com/products/sigma-bf-mirrorless-camera-silver",
-   "price": 2199,
-   "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/sigma-bf-mirrorless-camera-silver-903425.png?v=1740451868",
-   "inStock": false,
-   "brand": "Sigma",
-   "mpn": "C47900"
-  },
-  {
-   "retailer": "us-bandccamera",
    "sku": "SR_3234",
    "title": "SmallRig “Black Mamba” Kit for EOS R5 & R6 3234",
    "url": "https://bandccamera.com/products/smallrig-black-mamba-kit-for-eos-r5-r6-3234",
@@ -2774,7 +2752,7 @@
    "url": "https://bandccamera.com/products/sony-a7-v-mirrorless-camera?variant=42268736258119",
    "price": 2899.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/rzazqvb4jff4ngekstit.jpg?v=1764699152",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony",
    "mpn": "ILCE-7M5/B"
   },
@@ -3005,7 +2983,7 @@
    "price": 2198,
    "wasPrice": 2498,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/sony-zv-e1-mirrorless-camera-black-body-only-633724.png?v=1683702571",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony",
    "mpn": "ILCZVE1/B"
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-14T00:31:43.934Z",
+ "scrapedAt": "2026-11-14T23:10:53.582Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -47,7 +47,7 @@
    "title": "Apple AirPods 5",
    "url": "https://www.mwave.com.au/products/apple-airpods-5",
    "price": 201.59,
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -56,7 +56,7 @@
    "title": "Apple AirPods 5 with Wireless Charging Case",
    "url": "https://www.mwave.com.au/products/apple-airpods-5-with-wireless-charging-case",
    "price": 239,
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -76,8 +76,18 @@
    "url": "https://www.mwave.com.au/products/apple-earpods-with-35mm-headphone-plug-ac30290",
    "price": 26.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_earpods_with_35mm_headphone_plug_ac30290_5.jpg?v=1787799933",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183412",
+   "title": "ASUS ROG Cetra Open Wireless Gaming Earbuds - Pink",
+   "url": "https://www.mwave.com.au/products/asus-rog-cetra-open-wireless-gaming-earbuds-pink",
+   "price": 329,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/h732_10.jpg?v=1794444122",
+   "inStock": false,
+   "brand": "Asus"
   },
   {
    "retailer": "mwave",
@@ -744,7 +754,7 @@
    "sku": "AC80078",
    "title": "Edifier W800BT Pro ANC Bluetooth Stereo Headphones - Black",
    "url": "https://www.mwave.com.au/products/edifier-w800bt-pro-anc-bluetooth-stereo-headphones-black-ac80078",
-   "price": 119,
+   "price": 90.47,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/edifier_w800bt_pro_wireless_overear_anc_headphones_black_ac80078_8766.jpg?v=1787796343",
    "inStock": false,
    "brand": "Edifier"
@@ -1014,7 +1024,7 @@
    "sku": "148119",
    "title": "HyperX Cloud Alpha Gaming Headset (Red)",
    "url": "https://www.mwave.com.au/products/hyperx-cloud-alpha-gaming-headset-red-ac50481",
-   "price": 99,
+   "price": 109,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hyperx_cloud_alpha_gaming_headset_red_ac50481_1.jpg?v=1787748678",
    "inStock": true,
    "brand": "HyperX"
@@ -1462,7 +1472,7 @@
    "sku": "AC97072",
    "title": "Kreafunk Buzz Junior Bluetooth Headphones - Cloudy Blue",
    "url": "https://www.mwave.com.au/products/kreafunk-buzz-junior-bluetooth-headphones-cloudy-blue-ac97072",
-   "price": 133.2,
+   "price": 135.11,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/kreafunk_buzz_junior_bluetooth_headphones_cloudy_blue_ac97072_50620.jpg?v=1787797302",
    "inStock": true,
    "brand": "Kreafunk"

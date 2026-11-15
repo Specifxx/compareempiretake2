@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-14T00:32:28.185Z",
+ "scrapedAt": "2026-11-14T23:11:21.644Z",
  "offers": [
   {
    "retailer": "ple",
@@ -1749,7 +1749,7 @@
    "url": "https://www.ple.com.au/products/686651/benq-ma320ug-32-4k-2160p-120hz-ips-monitor-for-mac",
    "price": 1399,
    "image": "https://plecom.imgix.net/iil-477319-686651.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2155,7 +2155,7 @@
    "price": 659,
    "wasPrice": 799,
    "image": "https://plecom.imgix.net/iil-471989-684561.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2867,7 +2867,7 @@
    "price": 799,
    "wasPrice": 899,
    "image": "https://plecom.imgix.net/iil-486745-688490.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2927,7 +2927,7 @@
    "price": 1599,
    "wasPrice": 9999,
    "image": "https://plecom.imgix.net/iil-459254-681566.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -3206,18 +3206,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "661307",
-   "title": "Philips Evnia 34M2C8600 QD-OLED - 34\" Curved 1440p Ultrawide 175Hz 0.03ms Gaming Monitor",
-   "brand": "Philips",
-   "mpn": "34M2C8600",
-   "url": "https://www.ple.com.au/products/661307/philips-evnia-34m2c8600-qd-oled-34-curved-1440p-ultrawide-175hz-003ms-gaming-monitor",
-   "price": 1299,
-   "wasPrice": 1799,
-   "image": "https://plecom.imgix.net/iil-347862-661307.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "674163",
    "title": "Samsung Essential S3 S32GF - 24\" 1080p 120Hz IPS Monitor",
    "brand": "Samsung",
@@ -3442,7 +3430,7 @@
    "brand": "Samsung",
    "mpn": "LS49DG930SEXXY",
    "url": "https://www.ple.com.au/products/668739/samsung-odyssey-oled-g9-49-curved-1440p-240hz-gaming-monitor",
-   "price": 1299,
+   "price": 1599,
    "wasPrice": 2299,
    "image": "https://plecom.imgix.net/iil-409767-668739.jpg?w=600&h=600",
    "inStock": false
@@ -3454,8 +3442,7 @@
    "brand": "Samsung",
    "mpn": "LS32FM701UEXXY",
    "url": "https://www.ple.com.au/products/687502/samsung-smart-monitor-m7-m70f-32-4k-60hz-4ms-va-smart-monitor",
-   "price": 399,
-   "wasPrice": 499,
+   "price": 499,
    "image": "https://plecom.imgix.net/iil-481830-687502.jpg?w=600&h=600",
    "inStock": true
   },
