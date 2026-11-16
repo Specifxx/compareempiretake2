@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T00:22:14.964Z",
+ "scrapedAt": "2026-11-16T00:45:47.231Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -246,7 +246,7 @@
    "price": 1983.77,
    "wasPrice": 2375.39,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/r/gruyere_14_naturalsilver_wwan_t_ircam_fpr_catalog_front_6479459_cus_5.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1281,6 +1281,18 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "E15CQET#ABU",
+   "mpn": "E15CQET#ABU",
+   "brand": "HP",
+   "title": "HP EliteBook X Flip G2i 14 inch Notebook Next Gen AI PC",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-x-flip-g2i-14-inch-notebook-next-gen-ai-pc-e15cqet-abu",
+   "price": 2772.6,
+   "wasPrice": 4205.83,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-x-flip-g2i-14-inch-notebook-next-gen-ai-pc-cashmerexi-atmospheric-blue-tent-pen_cus_3.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "E37P0EA#ABU",
    "mpn": "E37P0EA#ABU",
    "brand": "HP",
@@ -1289,18 +1301,6 @@
    "price": 2639.99,
    "wasPrice": 3137.69,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-x-flip-g2i-14-inch-notebook-next-gen-ai-pc-cashmerexi-glacier-silver-tent-pen_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E15CQET#ABU",
-   "mpn": "E15CQET#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook X Flip G2i 14\" 3K OLED Touchscreen Business Laptop Next Gen AI PC, Intel Core Ultra X7, 32GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-x-flip-g2i-14-inch-notebook-next-gen-ai-pc-e15cqet-abu",
-   "price": 2772.6,
-   "wasPrice": 4205.83,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-x-flip-g2i-14-inch-notebook-next-gen-ai-pc-cashmerexi-atmospheric-blue-tent-pen_cus_3.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -1780,7 +1780,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-15-inch-gaming-laptop-pc-15-gb0001na-d2ya9ea-abu",
    "price": 1199.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/7/9/79f5a334-26cd-4ada-830d-7118c26654d9.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2598,7 +2598,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-flip-2-in-1-laptop-next-gen-ai-14-km0001nax-e2bs2ea-abu",
    "price": 1900,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-5-flip-14-inch-2-in-1-laptop-pc-salute-glacier-silver-tent-pen_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -5176,7 +5176,7 @@
    "price": 1599,
    "wasPrice": 2399.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/o/m/omen-transcend-14-gaming-laptop-voco-front_cus_4.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   }
  ]
 }

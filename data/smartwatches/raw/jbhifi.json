@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-14T01:17:06.059Z",
+ "scrapedAt": "2026-11-15T23:57:58.356Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -299,6 +299,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "656216",
+   "title": "Apple Watch Series 10 46mm Rose Gold Aluminium Case GPS + Cellular Sport Band (M/L)[Light Blush]",
+   "url": "https://www.jbhifi.com.au/products/apple-watch-series-10-46mm-rose-gold-aluminium-case-gps-cellular-sport-band-m-llight-blush",
+   "price": 607,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/656216-Product-0-I-638615287204118708.jpg?v=1725938721",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "835925",
    "title": "Apple Watch Series 11  42mm Jet Black Aluminium Case GPS Sport Band (S/M) [Black]",
    "url": "https://www.jbhifi.com.au/products/apple-watch-series-11-42mm-jet-black-aluminium-case-gps-sport-band-s-m-black",
@@ -499,16 +509,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "835937",
-   "title": "Apple Watch Series 11 46mm Rose Gold Aluminium Case GPS Sport Band (S/M) [Light Blush]",
-   "url": "https://www.jbhifi.com.au/products/apple-watch-series-11-46mm-rose-gold-aluminium-case-gps-sport-band-s-m-light-blush",
-   "price": 599,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/835937-Product-0-I-638930731807583615.jpg?v=1757476445",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "835973",
    "title": "Apple Watch Series 11 46mm Silver Aluminium Case GPS + Cellular Sport Band (M/L) [Purple Fog]",
    "url": "https://www.jbhifi.com.au/products/apple-watch-series-11-46mm-silver-aluminium-case-gps-cellular-sport-band-m-l-purple-fog",
@@ -657,7 +657,7 @@
    "price": 1149,
    "wasPrice": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913736-Product-0-I-639246076206916916.jpg?v=1789010886",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -983,7 +983,7 @@
    "price": 1239,
    "wasPrice": 1339,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913734-Product-0-I-639246073807025508.jpg?v=1789010646",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1005,7 +1005,7 @@
    "price": 1499,
    "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913746-Product-0-I-639245949610834638.jpg?v=1788998226",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1161,7 +1161,7 @@
    "price": 1589,
    "wasPrice": 1689,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913750-Product-0-I-639245956804270240.jpg?v=1788998947",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1332,7 +1332,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-watch-ultra-4-49mm-black-titanium-case-gps-cellular-black-titanium-milanese-loop-m",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913770-Product-0-I-639246151803636643.jpg?v=1789018446",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -2429,16 +2429,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "662766",
-   "title": "Google Pixel Watch 2 Wi-Fi (Polished Silver with Bay Active Band)",
-   "url": "https://www.jbhifi.com.au/products/google-pixel-watch-2-wi-fi-polished-silver-with-bay-active-band",
-   "price": 179,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/662766-Product-0-I-638303497205039899.jpg?v=1695359600",
-   "inStock": true,
-   "brand": "Google"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "780373",
    "title": "Google Pixel Watch 3 LTE 41mm (Champagne Gold with Hazel Active Band)",
    "url": "https://www.jbhifi.com.au/products/google-pixel-watch-3-lte-41mm-champagne-gold-with-hazel-active-band",
@@ -2560,17 +2550,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "829979",
-   "title": "Google Pixel Watch 4 Wi-Fi 41mm (Polished Silver with Iris Active Band)",
-   "url": "https://www.jbhifi.com.au/products/google-pixel-watch-4-wi-fi-41mm-polished-silver-with-iris-active-band",
-   "price": 429,
-   "wasPrice": 579,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829979-Product-0-I-638907289802611659.jpg?v=1755229511",
-   "inStock": true,
-   "brand": "Google"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "829981",
    "title": "Google Pixel Watch 4 Wi-Fi 45mm (Matte Black with Obsidian Active Band)",
    "url": "https://www.jbhifi.com.au/products/google-pixel-watch-4-wi-fi-45mm-matte-black-with-obsidian-active-band",
@@ -2578,17 +2557,6 @@
    "wasPrice": 679,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829981-Product-0-I-638907291604753567.jpg?v=1755132429",
    "inStock": true,
-   "brand": "Google"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "829983",
-   "title": "Google Pixel Watch 4 Wi-Fi 45mm (Polished Silver Aluminum with Porcelain Active Band)",
-   "url": "https://www.jbhifi.com.au/products/google-pixel-watch-4-wi-fi-45mm-polished-silver-aluminum-with-porcelain-active-band",
-   "price": 479,
-   "wasPrice": 679,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829983-Product-0-I-638913250221526872.jpg?v=1755751068",
-   "inStock": false,
    "brand": "Google"
   },
   {
@@ -2774,17 +2742,6 @@
    "price": 249,
    "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895783-Product-0-I-639119127605095074.jpg?v=1776381308",
-   "inStock": true,
-   "brand": "Huawei"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "843349",
-   "title": "Huawei Watch GT 6 41mm (Black Fluoroelastomer Strap)",
-   "url": "https://www.jbhifi.com.au/products/huawei-watch-gt-6-41mm-black-fluoroelastomer-strap",
-   "price": 249,
-   "wasPrice": 269,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/843349-Product-0-I-638953071002941793.jpg?v=1759710366",
    "inStock": true,
    "brand": "Huawei"
   },
@@ -3452,7 +3409,8 @@
    "sku": "815301",
    "title": "Samsung Galaxy Watch8  Classic 46mm (Black)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-classic-46mm-black",
-   "price": 899,
+   "price": 584,
+   "wasPrice": 899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815301-Product-0-I-638874468603962388.jpg?v=1751850129",
    "inStock": true,
    "brand": "Samsung"
@@ -3462,7 +3420,8 @@
    "sku": "815302",
    "title": "Samsung Galaxy Watch8  Classic 46mm (White)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-classic-46mm-white",
-   "price": 899,
+   "price": 584,
+   "wasPrice": 899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815302-Product-0-I-638874469812101571.jpg?v=1751850251",
    "inStock": true,
    "brand": "Samsung"
@@ -3472,7 +3431,8 @@
    "sku": "815303",
    "title": "Samsung Galaxy Watch8  Classic LTE 46mm (Black)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-classic-lte-46mm-black",
-   "price": 999,
+   "price": 649,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815303-Product-0-I-638874468620623379.jpg?v=1751850613",
    "inStock": true,
    "brand": "Samsung"
@@ -3482,7 +3442,8 @@
    "sku": "815304",
    "title": "Samsung Galaxy Watch8  Classic LTE 46mm (White)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-classic-lte-46mm-white",
-   "price": 999,
+   "price": 649,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815304-Product-0-I-638874469807913313.jpg?v=1751850251",
    "inStock": true,
    "brand": "Samsung"
@@ -3492,7 +3453,8 @@
    "sku": "815296",
    "title": "Samsung Galaxy Watch8  LTE 40mm (Silver)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-lte-40mm-silver",
-   "price": 749,
+   "price": 374,
+   "wasPrice": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815296-Product-0-I-638874471602255498.jpg?v=1751850431",
    "inStock": true,
    "brand": "Samsung"
@@ -3522,7 +3484,8 @@
    "sku": "815293",
    "title": "Samsung Galaxy Watch8 40mm (Graphite)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-40mm-graphite",
-   "price": 649,
+   "price": 299,
+   "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815293-Product-0-I-638874472203622244.jpg?v=1751850513",
    "inStock": true,
    "brand": "Samsung"
@@ -3532,7 +3495,8 @@
    "sku": "815294",
    "title": "Samsung Galaxy Watch8 40mm (Silver)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-40mm-silver",
-   "price": 649,
+   "price": 299,
+   "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815294-Product-0-I-638874472803887205.jpg?v=1751850552",
    "inStock": true,
    "brand": "Samsung"

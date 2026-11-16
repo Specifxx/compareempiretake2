@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T00:04:22.682Z",
+ "scrapedAt": "2026-11-16T00:27:26.438Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -228,7 +228,7 @@
    "price": 1299.99,
    "wasPrice": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1129020_1_3931feb0-d792-43cb-b4c3-574d3e98d804.jpg?v=1790672565",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LGOLED55C5PUA"
   },
   {
@@ -855,7 +855,7 @@
    "sku": "PN32S65C",
    "title": "Panasonic 32\" S65C Full HD 1080p 60Hz QLED+ Fire TV (2026)",
    "url": "https://www.beachcamera.com/products/panasonic-32-s65c-full-hd-1080p-60hz-qled-fire-tv-2026",
-   "price": 199.99,
+   "price": 179.99,
    "wasPrice": 265.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1208152_3.jpg?v=1790673643",
    "inStock": true,
@@ -867,7 +867,7 @@
    "sku": "PN40S65C",
    "title": "Panasonic 40\" S65C Full HD 1080p 60Hz QLED Fire TV (2026)",
    "url": "https://www.beachcamera.com/products/panasonic-40-s65c-full-hd-1080p-60hz-qled-fire-tv-2026",
-   "price": 249.99,
+   "price": 229.99,
    "wasPrice": 312.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1208153_1_2783b910-0d2b-489b-b569-e1caed0bf01d.jpg?v=1790777010",
    "inStock": true,
@@ -879,7 +879,7 @@
    "sku": "PN43S65C",
    "title": "Panasonic 43\" S65C Full HD 1080p 60Hz QLED Fire TV (2026)",
    "url": "https://www.beachcamera.com/products/panasonic-43-s65c-full-hd-1080p-60hz-qled-fire-tv-2026",
-   "price": 279.99,
+   "price": 259.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1208156_1_080dba82-e72a-4a50-94b0-ce99ce43ae4f.jpg?v=1790630296",
    "inStock": true,
    "brand": "Panasonic",
@@ -914,7 +914,7 @@
    "sku": "PN55W80C",
    "title": "Panasonic 55\" W80C 4K UHD 3840x2160 120Hz QLED+ Fire TV (2026)",
    "url": "https://www.beachcamera.com/products/panasonic-q4h-55-uhd-qled-matte-screen-fire-tv-2026",
-   "price": 399.99,
+   "price": 409.99,
    "wasPrice": 499.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1208204_1_79fe58f3-e50c-47a4-a4da-728931f3d504.jpg?v=1791921768",
    "inStock": true,
@@ -962,7 +962,8 @@
    "sku": "PN75W80C",
    "title": "Panasonic 75\" W80C 4K UHD 3840x2160 120Hz QLED+ Fire TV (2026)",
    "url": "https://www.beachcamera.com/products/panasonic-75-uhd-qled-matte-screen-fire-tv-2026",
-   "price": 849.99,
+   "price": 649.99,
+   "wasPrice": 749.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1208232_1_fb21509a-b2f3-488d-a9cb-9b9f685065ff.jpg?v=1790673705",
    "inStock": true,
    "brand": "Panasonic",
@@ -985,33 +986,12 @@
    "sku": "PN85W80C",
    "title": "Panasonic 85\" W80C 4K UHD 3840x2160 120Hz QLED+ Fire TV (2026)",
    "url": "https://www.beachcamera.com/products/panasonic-85-uhd-qled-matte-screen-fire-tv-2026",
-   "price": 1099.99,
+   "price": 899.99,
+   "wasPrice": 1099.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1208239_1_5977af4a-3ad8-4e60-ab29-3e158523b560.jpg?v=1790673726",
    "inStock": true,
    "brand": "Panasonic",
    "mpn": "PN85W80C"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "PN55Z85C",
-   "title": "Panasonic S8C 55\" OLED 144Hz TV",
-   "url": "https://www.beachcamera.com/products/panasonic-s8c-55-oled-144hz-tv",
-   "price": 1299.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1208206_1.jpg?v=1787054692",
-   "inStock": true,
-   "brand": "Panasonic",
-   "mpn": "PN55Z85C"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "PN65Z85C",
-   "title": "Panasonic S8C 65 \" OLED 120Hz TV",
-   "url": "https://www.beachcamera.com/products/panasonic-s8c-65-oled-120hz-tv",
-   "price": 1799.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1208308_1.jpg?v=1787054772",
-   "inStock": false,
-   "brand": "Panasonic",
-   "mpn": "PN65Z85C"
   },
   {
    "retailer": "us-beachcamera",

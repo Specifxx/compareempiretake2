@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T00:05:04.781Z",
+ "scrapedAt": "2026-11-16T00:28:09.700Z",
  "offers": [
   {
    "retailer": "us-datavision",
@@ -43,7 +43,7 @@
    "url": "https://datavision.com/products/apple-airpods-max-blue-mww63am-a-2024",
    "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/f86a99d2-3794-4225-a3c0-7c6249a9f615.jpg?v=1726072991",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MWW63AM/A"
   },
@@ -814,7 +814,7 @@
    "sku": "JBLENDUPACEBLKGAM",
    "title": "JBL Endurance Pace Bluetooth Wireless Waterproof Headphones - Black",
    "url": "https://datavision.com/products/jbl-endurance-pace-bluetooth-wireless-waterproof-headphones-black",
-   "price": 89.95,
+   "price": 59.95,
    "wasPrice": 107,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/948d2a5f-897d-4305-a832-9cd50356b323.jpg?v=1773687672",
    "inStock": false
@@ -824,7 +824,8 @@
    "sku": "JBLENDUPEAK4BLKGAM",
    "title": "JBL Endurance Peak 4 Noise Cancelling TWS Earbuds, up to 48hr batt. IP68 - Black",
    "url": "https://datavision.com/products/jbl-endurance-peak-4-noise-cancelling-tws-earbuds-up-to-48hr-batt-ip68-black",
-   "price": 129.95,
+   "price": 79.95,
+   "wasPrice": 129.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/4c4c63c2-4caf-4b25-b0a4-24a7eaa380fe.jpg?v=1777919529",
    "inStock": true,
    "mpn": "JBLENDUPEAK4BLKGAM"
@@ -834,7 +835,8 @@
    "sku": "JBLENDUPEAK4PURAM",
    "title": "JBL Endurance Peak 4 Noise Cancelling TWS Earbuds, up to 48hr batt. IP68 - Purple",
    "url": "https://datavision.com/products/jbl-endurance-peak-4-noise-cancelling-tws-earbuds-up-to-48hr-batt-ip68-purple",
-   "price": 129.95,
+   "price": 79.95,
+   "wasPrice": 129.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/c42833f2-ac5c-4271-ace7-8f1464c5a2bd.jpg?v=1777919518",
    "inStock": false,
    "mpn": "JBLENDUPEAK4PURAM"
@@ -844,7 +846,8 @@
    "sku": "JBLENDUPEAK4WHTAM",
    "title": "JBL Endurance Peak 4 Noise Cancelling TWS Earbuds, up to 48hr batt. IP68 - White",
    "url": "https://datavision.com/products/jbl-endurance-peak-4-noise-cancelling-tws-earbuds-up-to-48hr-batt-ip68-white",
-   "price": 129.95,
+   "price": 79.95,
+   "wasPrice": 129.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/45ec97d5-ff35-4061-adf9-751c6c50e96b.jpg?v=1777919506",
    "inStock": false,
    "mpn": "JBLENDUPEAK4WHTAM"
@@ -884,7 +887,8 @@
    "sku": "JBLENDURACE2BLKAM",
    "title": "JBL Endurance Race 2 Noise Cancelling True Wirelss Sport Headphones - Black",
    "url": "https://datavision.com/products/jbl-clip-4-ultra-portable-waterproof-speaker-cloud-white",
-   "price": 89.95,
+   "price": 49.95,
+   "wasPrice": 79.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/e74431f6-303b-4d14-a0de-57280fa2fd81.jpg?v=1748446163",
    "inStock": true,
    "mpn": "JBLENDURACE2BLKAM"
@@ -894,7 +898,8 @@
    "sku": "JBLENDURACE2BLUAM",
    "title": "JBL Endurance Race 2 Noise Cancelling True Wirelss Sport Headphones - Blue",
    "url": "https://datavision.com/products/jbl-endurance-race-2-noise-cancelling-true-wirelss-sport-headphones-blue",
-   "price": 89.95,
+   "price": 49.95,
+   "wasPrice": 79.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/4d2d34c4-ad8c-4f63-b7fc-b1a6b609c462.jpg?v=1748446229",
    "inStock": true,
    "mpn": "JBLENDURACE2BLUAM"
@@ -904,7 +909,8 @@
    "sku": "JBLENDURACE2WHTAM",
    "title": "JBL Endurance Race 2 Noise Cancelling True Wirelss Sport Headphones - White",
    "url": "https://datavision.com/products/jbl-endurance-race-2-noise-cancelling-true-wirelss-sport-headphones-white",
-   "price": 89.95,
+   "price": 49.95,
+   "wasPrice": 79.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/30d44346-7b7f-4277-94b0-f176600dfbf3.jpg?v=1748446195",
    "inStock": true,
    "mpn": "JBLENDURACE2WHTAM"
@@ -998,7 +1004,7 @@
    "sku": "JBLENDURRUN3CBGAM",
    "title": "JBL Endurance Run Sport USB-C wired in ear headphone - Black",
    "url": "https://datavision.com/products/jbl-endurance-run-sport-usb-c-wired-in-ear-headphone-black",
-   "price": 34.95,
+   "price": 29.95,
    "wasPrice": 42,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/9d69a560-ab4b-4a19-8b2d-53d309b4822e.jpg?v=1773687662",
    "inStock": false,
@@ -1029,7 +1035,7 @@
    "sku": "JBLENDUZONEBLKGAM",
    "title": "JBL Endurance Zone Bluetooth Wireless Waterproof Earbuds - Black",
    "url": "https://datavision.com/products/jbl-endurance-zone-bluetooth-wireless-waterproof-earbuds-black",
-   "price": 179.95,
+   "price": 99.95,
    "wasPrice": 216,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/99d4fd57-8bd2-43c1-92d3-92a19ba4641c.jpg?v=1773687590",
    "inStock": true
@@ -1039,7 +1045,7 @@
    "sku": "JBLENDUZONEWHTAM",
    "title": "JBL Endurance Zone Bluetooth Wireless Waterproof Earbuds - White",
    "url": "https://datavision.com/products/jbl-endurance-zone-bluetooth-wireless-waterproof-earbuds-white",
-   "price": 179.95,
+   "price": 99.95,
    "wasPrice": 216,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/27f8b9ab-f91a-41fb-958c-d7a5484e429a.jpg?v=1773687580",
    "inStock": true
@@ -1259,7 +1265,8 @@
    "sku": "JBLLIVE680NCBLKAM",
    "title": "JBL Live 680NC On Ear Noise Cancelling Wireless Headphone - Black",
    "url": "https://datavision.com/products/jbl-live-680nc-on-ear-noise-cancelling-wireless-headphone-black",
-   "price": 159.95,
+   "price": 89.95,
+   "wasPrice": 159.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/59bc6652-02e7-4b0b-8f0e-b7caab0bdf8a.jpg?v=1780964359",
    "inStock": false,
    "mpn": "JBLLIVE680NCBLKAM"
@@ -1269,7 +1276,8 @@
    "sku": "JBLLIVE680NCCPGAM",
    "title": "JBL Live 680NC On Ear Noise Cancelling Wireless Headphone - Champagne",
    "url": "https://datavision.com/products/jbl-live-680nc-on-ear-noise-cancelling-wireless-headphone-champagne",
-   "price": 159.95,
+   "price": 89.95,
+   "wasPrice": 159.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/3ee4baad-1731-4e0b-ac00-c18d05409670.jpg?v=1780964382",
    "inStock": true,
    "mpn": "JBLLIVE680NCCPGAM"
@@ -1279,7 +1287,8 @@
    "sku": "JBLLIVE680NCGRNAM",
    "title": "JBL Live 680NC On Ear Noise Cancelling Wireless Headphone - Green",
    "url": "https://datavision.com/products/jbl-live-680nc-on-ear-noise-cancelling-wireless-headphone-green",
-   "price": 159.95,
+   "price": 89.95,
+   "wasPrice": 159.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/1489154e-76d9-4432-bbd5-81ce90ed3358.jpg?v=1780964398",
    "inStock": true,
    "mpn": "JBLLIVE680NCGRNAM"
@@ -1289,7 +1298,8 @@
    "sku": "JBLLIVE680NCWHTAM",
    "title": "JBL Live 680NC On Ear Noise Cancelling Wireless Headphone - White",
    "url": "https://datavision.com/products/jbl-live-680nc-on-ear-noise-cancelling-wireless-headphone-white",
-   "price": 159.95,
+   "price": 89.95,
+   "wasPrice": 159.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/63480f87-992e-4154-9e8e-260ca0ed534e.jpg?v=1780964370",
    "inStock": true,
    "mpn": "JBLLIVE680NCWHTAM"
@@ -1299,7 +1309,8 @@
    "sku": "JBLLIVE770NCBLKAM",
    "title": "JBL Live 770 NC Noise Cancelling Wireless Bluetooth Ear Headphones - Black",
    "url": "https://datavision.com/products/jbl-live-770-nc-noise-cancelling-wireless-bluetooth-ear-headphones-black",
-   "price": 219.95,
+   "price": 109.95,
+   "wasPrice": 199.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/products/ea428583-5bd7-4eda-b320-1af140672eb9.png?v=1709237537",
    "inStock": true,
    "mpn": "JBLLIVE770NCBLKAM"
@@ -1309,7 +1320,8 @@
    "sku": "JBLLIVE770NCWHTAM",
    "title": "JBL Live 770 NC Noise Cancelling Wireless Bluetooth Ear Headphones - White",
    "url": "https://datavision.com/products/jbl-live-770-nc-noise-cancelling-wireless-bluetooth-ear-headphones-white",
-   "price": 219.95,
+   "price": 109.95,
+   "wasPrice": 199.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/products/ee2cd69f-55f2-4879-82ea-06ef75d80fca.jpg?v=1709140610",
    "inStock": false,
    "mpn": "JBLLIVE770NCWHTAM"
@@ -1458,7 +1470,8 @@
    "sku": "JBLQTUM250BLKAM",
    "title": "JBL Quantum 250 3.5mm Wired Gaming Headset; Universal, 50mm Drivers - Black",
    "url": "https://datavision.com/products/jbl-quantum-250-3-5mm-wired-gaming-headset-universal-50mm-drivers-black",
-   "price": 79.95,
+   "price": 59.95,
+   "wasPrice": 79.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/67c6dbe9-bdb6-4744-9007-04d79109a381.jpg?v=1777919456",
    "inStock": true,
    "mpn": "JBLQTUM250BLKAM"
@@ -1531,7 +1544,8 @@
    "sku": "JBLQTUM650XBLKAM",
    "title": "JBL Quantum 650 2.4ghz / Bluetooth Gaming Headphones; 50mm Drivers Universal - Black",
    "url": "https://datavision.com/products/jbl-quantum-650-2-4ghz-bluetooth-gaming-headphones-50mm-drivers-universal-black",
-   "price": 199.95,
+   "price": 159.95,
+   "wasPrice": 199.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/728159c1-cb55-49cf-abe9-80adafaf2559.jpg?v=1777919466",
    "inStock": true,
    "mpn": "JBLQTUM650XBLKAM"
@@ -1562,7 +1576,8 @@
    "sku": "JBLQTUM950XBLKAM",
    "title": "JBL Quantum 950 2.4ghz / Noise Cancelling Bluetooth Gaming Headphones; 50mm Drivers Universal - Black",
    "url": "https://datavision.com/products/jbl-quantum-950-2-4ghz-noise-cancelling-bluetooth-gaming-headphones-50mm-drivers-universal-black",
-   "price": 399.95,
+   "price": 249.95,
+   "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/23de4468-c166-4770-a650-7356fdd2afc6.jpg?v=1777919477",
    "inStock": true,
    "mpn": "JBLQTUM950XBLKAM"
@@ -1683,7 +1698,7 @@
    "sku": "JBLSENSELITEBLKAM",
    "title": "JBL Sense Lite Bluetooth Earbuds - Black",
    "url": "https://datavision.com/products/jbl-sense-lite-bluetooth-earbuds-black",
-   "price": 149.95,
+   "price": 99.95,
    "wasPrice": 180,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/431c306c-7300-45e4-aca6-c343c1cb6438.jpg?v=1773687560",
    "inStock": true
@@ -1733,7 +1748,7 @@
    "sku": "JBLSNDGEARCLBLUAM",
    "title": "JBL Soundgear Clips Bluetooth Earbuds - Blue",
    "url": "https://datavision.com/products/jbl-soundgear-clips-bluetooth-earbuds-blue",
-   "price": 149.95,
+   "price": 99.95,
    "wasPrice": 180,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/80e76547-c79e-4c38-98d3-f166082419d8.jpg?v=1773687642",
    "inStock": true
@@ -1753,7 +1768,7 @@
    "sku": "JBLSNDGEARCLPURAM",
    "title": "JBL Soundgear Clips Bluetooth Earbuds - Purple",
    "url": "https://datavision.com/products/jbl-soundgear-clips-bluetooth-earbuds-purple",
-   "price": 149.95,
+   "price": 99.95,
    "wasPrice": 180,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/03c05c8b-0f35-4c94-9add-8f59ddfe0067.jpg?v=1773687652",
    "inStock": true
@@ -1763,17 +1778,18 @@
    "sku": "JBLSNDGEARCLWHTAM",
    "title": "JBL Soundgear Clips Bluetooth Earbuds - White",
    "url": "https://datavision.com/products/jbl-soundgear-clips-bluetooth-earbuds-white",
-   "price": 149.95,
+   "price": 99.95,
    "wasPrice": 180,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/f43376cd-2cd2-4dbf-9fda-a3ffb2090ea2.jpg?v=1773687631",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-datavision",
    "sku": "JBLSNDGEARSNSBLKAM",
    "title": "JBL Soundgear Sense TWS Open Ear Headphones - Black",
    "url": "https://datavision.com/products/jbl-soundgear-sense-tws-open-ear-headphones-black",
-   "price": 164.95,
+   "price": 89.95,
+   "wasPrice": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/products/0561bd71-9212-4a29-942c-9241369d4aab.jpg?v=1709237475",
    "inStock": false
   },
@@ -1782,7 +1798,8 @@
    "sku": "JBLSNDGEARSNSWHTAM",
    "title": "JBL Soundgear Sense TWS Open Ear Headphones - White",
    "url": "https://datavision.com/products/jbl-soundgear-sense-tws-open-ear-headphones-white",
-   "price": 164.95,
+   "price": 89.95,
+   "wasPrice": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/products/c16aa6aa-6026-422c-a32d-c5472e169bb8.jpg?v=1709237509",
    "inStock": false
   },
@@ -1821,7 +1838,8 @@
    "sku": "JBLT670NCBLKAM",
    "title": "JBL T670 NC On Ear Wireless Bluetooth Headphones - Black",
    "url": "https://datavision.com/products/jbl-t670-nc-on-ear-wireless-bluetooth-headphones-black",
-   "price": 109.95,
+   "price": 49.95,
+   "wasPrice": 99.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/products/dc7017f5-72c3-46d3-b39d-695e7b43f501.jpg?v=1709140550",
    "inStock": false,
    "mpn": "JBLT670NCBLKAM"
@@ -1831,7 +1849,8 @@
    "sku": "JBLT670NCWHTAM",
    "title": "JBL T670 NC On Ear Wireless Bluetooth Headphones - White",
    "url": "https://datavision.com/products/jbl-t670-nc-on-ear-wireless-bluetooth-headphones-white",
-   "price": 109.95,
+   "price": 49.95,
+   "wasPrice": 99.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/products/6e9604df-f64c-4438-bc38-613dcce8d5df.jpg?v=1709140579",
    "inStock": false,
    "mpn": "JBLT670NCWHTAM"
@@ -2389,7 +2408,8 @@
    "sku": "JBLT530BTBLUAM",
    "title": "JBL Tune 530BT On Ear Bluetooth Headphones - Blue",
    "url": "https://datavision.com/products/jbl-tune-530bt-on-ear-bluetooth-headphones-blue",
-   "price": 59.95,
+   "price": 34.95,
+   "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/66b2c4dd-ee91-46c8-a229-46bc1d30bb75.jpg?v=1790633151",
    "inStock": false,
    "mpn": "JBLT530BTBLUAM"
@@ -2399,7 +2419,8 @@
    "sku": "JBLT530BTLAVAM",
    "title": "JBL Tune 530BT On Ear Bluetooth Headphones - Lavender",
    "url": "https://datavision.com/products/jbl-tune-530bt-on-ear-bluetooth-headphones-lavender",
-   "price": 59.95,
+   "price": 34.95,
+   "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/895c0341-d8cf-4793-ab8a-06969c23567c.jpg?v=1777919577",
    "inStock": false,
    "mpn": "JBLT530BTLAVAM"
@@ -2409,7 +2430,8 @@
    "sku": "JBLT530BTWHTAM",
    "title": "JBL Tune 530BT On Ear Bluetooth Headphones - White",
    "url": "https://datavision.com/products/jbl-tune-530bt-on-ear-bluetooth-headphones-white",
-   "price": 59.95,
+   "price": 34.95,
+   "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/17c466ba-51ef-4797-b392-38b67dd3ada0.jpg?v=1790633136",
    "inStock": true,
    "mpn": "JBLT530BTWHTAM"
@@ -2490,7 +2512,8 @@
    "sku": "JBLT680NCBLKAM",
    "title": "JBL Tune 680NCBT Active Noise Cancelling On Ear Bluetooth Headphone - Black",
    "url": "https://datavision.com/products/jbl-tune-680ncbt-active-noise-cancelling-on-ear-bluetooth-headphone-black",
-   "price": 109.95,
+   "price": 64.95,
+   "wasPrice": 109.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/2924eb68-9ba5-44aa-bd4b-5db16bb3fe43.jpg?v=1780964289",
    "inStock": true,
    "mpn": "JBLT680NCBLKAM"
@@ -2500,7 +2523,8 @@
    "sku": "JBLT680NCBLUAM",
    "title": "JBL Tune 680NCBT Active Noise Cancelling On Ear Bluetooth Headphone - Blue",
    "url": "https://datavision.com/products/jbl-tune-680ncbt-active-noise-cancelling-on-ear-bluetooth-headphone-blue",
-   "price": 109.95,
+   "price": 64.95,
+   "wasPrice": 109.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/bf3859c3-c0a4-4d42-bfb2-8f6396adea1f.jpg?v=1780964314",
    "inStock": true,
    "mpn": "JBLT680NCBLUAM"
@@ -2510,7 +2534,8 @@
    "sku": "JBLT680NCWHTAM",
    "title": "JBL Tune 680NCBT Active Noise Cancelling On Ear Bluetooth Headphone - White",
    "url": "https://datavision.com/products/jbl-tune-680ncbt-active-noise-cancelling-on-ear-bluetooth-headphone-white",
-   "price": 109.95,
+   "price": 64.95,
+   "wasPrice": 109.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/f562c6ef-a487-47a0-bb17-2af4c6cbc317.jpg?v=1780964299",
    "inStock": true,
    "mpn": "JBLT680NCWHTAM"
@@ -2559,7 +2584,8 @@
    "sku": "JBLT730BTWHTAM",
    "title": "JBL Tune 730NCBT Over Ear Bluetooth Headphone - White",
    "url": "https://datavision.com/products/jbl-tune-730ncbt-over-ear-bluetooth-headphone-white",
-   "price": 89.95,
+   "price": 49.95,
+   "wasPrice": 89.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/c3a06606-2062-485f-8253-f766a7a289b4.jpg?v=1777919596",
    "inStock": true,
    "mpn": "JBLT730BTWHTAM"
@@ -2569,7 +2595,8 @@
    "sku": "JBLT730BTBLKAM",
    "title": "JBL Tune 730NCBT Over Ear Bluetooth Headphones - Black",
    "url": "https://datavision.com/products/jbl-tune-730ncbt-over-ear-bluetooth-headphones-black",
-   "price": 89.95,
+   "price": 49.95,
+   "wasPrice": 89.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/4b9de690-f7cf-4bb7-a74d-dc77e77e24f4.jpg?v=1777919587",
    "inStock": false,
    "mpn": "JBLT730BTBLKAM"
@@ -2579,7 +2606,8 @@
    "sku": "JBLT730BTBLUAM",
    "title": "JBL Tune 730NCBT Over Ear Bluetooth Headphones - Blue",
    "url": "https://datavision.com/products/jbl-tune-730ncbt-over-ear-bluetooth-headphones-blue",
-   "price": 89.95,
+   "price": 49.95,
+   "wasPrice": 89.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/6539e023-9101-4846-8aab-45711b5a43ed.jpg?v=1777919605",
    "inStock": true,
    "mpn": "JBLT730BTBLUAM"
@@ -2640,7 +2668,8 @@
    "sku": "JBLT780NCBLKAM",
    "title": "JBL Tune 780NCBT Active Noise Cancelling Over Ear Bluetooth Headphone - Black",
    "url": "https://datavision.com/products/jbl-tune-780ncbt-active-noise-cancelling-over-ear-bluetooth-headphone-black",
-   "price": 149.95,
+   "price": 79.95,
+   "wasPrice": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/601dc2c0-9c89-4df3-9f04-95e285681d50.jpg?v=1780964326",
    "inStock": true,
    "mpn": "JBLT780NCBLKAM"
@@ -2650,7 +2679,8 @@
    "sku": "JBLT780NCBLUAM",
    "title": "JBL Tune 780NCBT Active Noise Cancelling Over Ear Bluetooth Headphone - Blue",
    "url": "https://datavision.com/products/jbl-tune-780ncbt-active-noise-cancelling-over-ear-bluetooth-headphone-blue",
-   "price": 149.95,
+   "price": 79.95,
+   "wasPrice": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/a3bf01db-38eb-4372-a742-d3e6fc63de11.jpg?v=1780964349",
    "inStock": false,
    "mpn": "JBLT780NCBLUAM"
@@ -2660,7 +2690,8 @@
    "sku": "JBLT780NCWHTAM",
    "title": "JBL Tune 780NCBT Active Noise Cancelling Over Ear Bluetooth Headphone - White",
    "url": "https://datavision.com/products/jbl-tune-780ncbt-active-noise-cancelling-over-ear-bluetooth-headphone-white",
-   "price": 149.95,
+   "price": 79.95,
+   "wasPrice": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/94144657-fa14-4fa6-a16e-0d212f0d7109.jpg?v=1780964336",
    "inStock": true,
    "mpn": "JBLT780NCWHTAM"
@@ -2670,7 +2701,8 @@
    "sku": "JBLTBUDS2BLKAM",
    "title": "JBL Tune Buds 2 Noise Cancelling True Wireless Headphones - Black",
    "url": "https://datavision.com/products/jbl-tune-buds-2-noise-cancelling-true-wireless-headphones-black",
-   "price": 109.95,
+   "price": 52.95,
+   "wasPrice": 99.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/f52f31a8-1304-408e-b7bf-52e6b2435bdd.jpg?v=1748446458",
    "inStock": false,
    "mpn": "JBLTBUDS2BLKAM"
@@ -2690,7 +2722,8 @@
    "sku": "JBLTBUDS2WHTAM",
    "title": "JBL Tune Buds 2 Noise Cancelling True Wireless Headphones - White",
    "url": "https://datavision.com/products/jbl-tour-one-m3-over-ear-noise-cancelling-headphone-w-smart-tx-control-blue",
-   "price": 109.95,
+   "price": 52.95,
+   "wasPrice": 99.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/795dab94-be3b-4eb1-bc82-bcead235e677.jpg?v=1748446491",
    "inStock": false,
    "mpn": "JBLTBUDS2WHTAM"
@@ -2741,7 +2774,8 @@
    "sku": "JBLVBEAM2BLKAM",
    "title": "JBL Vibe Beam 2 Noise Cancelling True Wireless Headphone - Black",
    "url": "https://datavision.com/products/jbl-vibe-beam-2-noise-cancelling-true-wireless-headphone-black",
-   "price": 64.95,
+   "price": 39.95,
+   "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/92a9b4b7-c058-4f30-89b4-0fe63878fac1.jpg?v=1748446261",
    "inStock": false,
    "mpn": "JBLVBEAM2BLKAM"
@@ -2751,7 +2785,8 @@
    "sku": "JBLVBEAM2WHTAM",
    "title": "JBL Vibe Beam 2 Noise Cancelling True Wireless Headphone - White",
    "url": "https://datavision.com/products/jbl-vibe-beam-2-noise-cancelling-true-wireless-headphone-white",
-   "price": 64.95,
+   "price": 39.95,
+   "wasPrice": 64.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/04441583-d563-4d33-8707-a44519b167b3.jpg?v=1748446294",
    "inStock": false,
    "mpn": "JBLVBEAM2WHTAM"
@@ -2761,7 +2796,8 @@
    "sku": "JBLVBUDS2BLKAM",
    "title": "JBL Vibe Buds 2 Noise Cancelling True Wireless Headphone - Black",
    "url": "https://datavision.com/products/jbl-vibe-buds-2-noise-cancelling-true-wireless-headphone-black",
-   "price": 64.95,
+   "price": 39.95,
+   "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/2ff823a2-1c62-4512-8bfe-226a6b385d34.jpg?v=1748446327",
    "inStock": true,
    "mpn": "JBLVBUDS2BLKAM"
@@ -2771,7 +2807,8 @@
    "sku": "JBLVBUDS2WHTAM",
    "title": "JBL Vibe Buds 2 Noise Cancelling True Wireless Headphone - White",
    "url": "https://datavision.com/products/jbl-vibe-buds-2-noise-cancelling-true-wireless-headphone-white",
-   "price": 64.95,
+   "price": 39.95,
+   "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/d463dcea-257d-4d05-b459-c91f3f11c12c.jpg?v=1748446359",
    "inStock": false,
    "mpn": "JBLVBUDS2WHTAM"

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-14T23:13:37.122Z",
+ "scrapedAt": "2026-11-15T23:37:03.664Z",
  "offers": [
   {
    "retailer": "teds",
@@ -8,6 +8,15 @@
    "url": "https://www.teds.com.au/products/dji-air-3s-drone-fly-more-combo-with-rc-2",
    "price": 2429,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/dji_air_3s_drone_fly_more_combo_with_rc_2.jpg?v=1768968692",
+   "inStock": true
+  },
+  {
+   "retailer": "teds",
+   "sku": "129563",
+   "title": "DJI AIR 3S Drone Fly More Combo With RC N3",
+   "url": "https://www.teds.com.au/products/dji-air-3s-drone-fly-more-combo-with-rc-n3",
+   "price": 2129,
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/dji-rcn3-fly-more-combo.jpg?v=1768968694",
    "inStock": true
   },
   {
@@ -42,7 +51,8 @@
    "sku": "124619",
    "title": "DJI Flip Drone with RC2 Remote",
    "url": "https://www.teds.com.au/products/dji-flip-drone-rc2",
-   "price": 759,
+   "price": 649,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/flipsinglerc2_1__jpg.jpg?v=1768968693",
    "inStock": false
   },
@@ -51,7 +61,8 @@
    "sku": "124618",
    "title": "DJI Flip Drone with RCN3 Remote",
    "url": "https://www.teds.com.au/products/dji-flip-drone",
-   "price": 559,
+   "price": 479,
+   "wasPrice": 559,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/flipsingle_5__jpg.jpg?v=1768968693",
    "inStock": true
   },
@@ -132,7 +143,8 @@
    "sku": "120618",
    "title": "DJI NEO Drone",
    "url": "https://www.teds.com.au/products/dji-neo-drone",
-   "price": 249,
+   "price": 209,
+   "wasPrice": 249,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/dji-neo_1.jpg?v=1768968797",
    "inStock": false
   },
@@ -141,7 +153,8 @@
    "sku": "122618",
    "title": "DJI NEO Drone Fly More Combo",
    "url": "https://www.teds.com.au/products/dji-neo-drone-fly-more-combo",
-   "price": 459.95,
+   "price": 379,
+   "wasPrice": 459.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/dji-neo-fly-more-combo_1.jpg?v=1768968798",
    "inStock": true
   },
@@ -150,8 +163,8 @@
    "sku": "122619",
    "title": "DJI NEO Drone Motion Fly More Combo",
    "url": "https://www.teds.com.au/products/dji-neo-drone-motion-fly-more-combo",
-   "price": 649,
-   "wasPrice": 759,
+   "price": 589,
+   "wasPrice": 705,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/dji-neo-motion-fly-more-combo_1.jpg?v=1768968796",
    "inStock": true
   }

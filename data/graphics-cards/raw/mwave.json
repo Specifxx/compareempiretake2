@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-14T23:10:49.875Z",
+ "scrapedAt": "2026-11-15T23:34:26.637Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -9,6 +9,16 @@
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060_ti_dual_oc_16gb_video_card_ac89745_21480.jpg?v=1787795381",
    "inStock": false,
+   "brand": "Asus"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "183396",
+   "title": "ASUS AMD Turbo Radeon AI PRO R9700 32GB GDDR6 Video Card",
+   "url": "https://www.mwave.com.au/products/asus-amd-turbo-radeon-ai-pro-r9700-32gb-gddr6-video-card",
+   "price": 3299,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/fwebp_1_1ace3de6-d97d-4cb7-98a4-34e22b4b5b3e.jpg?v=1794783948",
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -1082,6 +1092,16 @@
   },
   {
    "retailer": "mwave",
+   "sku": "183398",
+   "title": "Gigabyte GeForce RTX 5080 WINDFORCE OC V2 16GB GDDR7 Video Card",
+   "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5080-windforce-oc-v2-16gb-gddr7-video-card",
+   "price": 3499,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/GeForceRTX_5080WINDFORCEOCV2SFF16G_01.jpg?v=1794782461",
+   "inStock": true,
+   "brand": "Gigabyte"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC81820",
    "title": "Gigabyte GeForce RTX 5090 AORUS MASTER 32GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5090-aorus-master-32gb-video-card-ac81820",
@@ -1177,7 +1197,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-radeon-rx-9070-gaming-oc-16gb-video-card-ac82804",
    "price": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_radeon_rx_9070_gaming_oc_16gb_video_card_ac82804_45512.jpg?v=1787796666",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gigabyte"
   },
   {
@@ -1296,7 +1316,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5060-twin-x2-8gb-video-card-ac86241",
    "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5060_twin_x2_8gb_video_card_ac86241_56692.jpg?v=1787746240",
-   "inStock": true,
+   "inStock": false,
    "brand": "Inno3D"
   },
   {
@@ -2106,7 +2126,7 @@
    "url": "https://www.mwave.com.au/products/sapphire-radeon-rx-9060-xt-nitro-gaming-oc-16gb-video-card-ac86451",
    "price": 849,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/sapphire_radeon_rx_9060_xt_nitro_gaming_oc_16gb_video_card_ac86451_17530.jpg?v=1787798351",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sapphire"
   },
   {

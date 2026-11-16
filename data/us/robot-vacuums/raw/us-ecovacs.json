@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T00:05:19.431Z",
+ "scrapedAt": "2026-11-16T00:28:20.790Z",
  "offers": [
   {
    "retailer": "us-ecovacs",
@@ -59,6 +59,17 @@
   },
   {
    "retailer": "us-ecovacs",
+   "sku": "OZT50MPW",
+   "mpn": "DEEBOT T50 PRO OMNI White",
+   "brand": "ECOVACS",
+   "title": "ECOVACS DEEBOT T50 PRO OMNI White",
+   "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/t50-pro-omni-white",
+   "price": 699.99,
+   "image": "https://site-static.ecovacs.com/upload/us/image/product/2026/07/22/074725_6575$id-t50-pro-omin-white-920x920-2.png",
+   "inStock": true
+  },
+  {
+   "retailer": "us-ecovacs",
    "sku": "OZT50SP",
    "mpn": "DEEBOT T50S PRO OMNI",
    "brand": "ECOVACS",
@@ -66,6 +77,17 @@
    "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/t50s-pro-omni",
    "price": 499.99,
    "image": "https://site-static.ecovacs.com/upload/us/image/product/2026/05/27/031124_8323$deebot-t50s-pro-omni-black-2-920x920.png",
+   "inStock": true
+  },
+  {
+   "retailer": "us-ecovacs",
+   "sku": "OZT90M",
+   "mpn": "DEEBOT T90 MAX OMNI Black",
+   "brand": "ECOVACS",
+   "title": "ECOVACS DEEBOT T90 MAX OMNI Black Robot Vacuum and Mop",
+   "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-omni-black",
+   "price": 649.99,
+   "image": "https://site-static.ecovacs.com/upload/us/image/product/2026/10/08/091040_2194$t90-max-omni-black-920x920-6.png",
    "inStock": true
   },
   {
@@ -125,18 +147,6 @@
   },
   {
    "retailer": "us-ecovacs",
-   "sku": "OZT90S",
-   "mpn": "DEEBOT T90S OMNI Black",
-   "brand": "ECOVACS",
-   "title": "ECOVACS DEEBOT T90S OMNI Black Robot Vacuum and Mop",
-   "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90s-omni-black",
-   "price": 679,
-   "wasPrice": 849.99,
-   "image": "https://site-static.ecovacs.com/upload/us/image/product/2026/09/30/092019_5641$deebot-t90s-omnit90s-pro-omni-black-920x920-1.png",
-   "inStock": true
-  },
-  {
-   "retailer": "us-ecovacs",
    "sku": "OZT90SW",
    "mpn": "DEEBOT T90S OMNI White",
    "brand": "ECOVACS",
@@ -190,18 +200,6 @@
    "price": 999.99,
    "image": "https://site-static.ecovacs.com/upload/us/image/product/2026/11/11/031759_5017$id-x11s-pro-black-920x920-1.png",
    "inStock": false
-  },
-  {
-   "retailer": "us-ecovacs",
-   "sku": "OZX12PC",
-   "mpn": "DEEBOT X12 PRO OMNI Care",
-   "brand": "ECOVACS",
-   "title": "ECOVACS DEEBOT X12 PRO OMNI Care",
-   "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/x12-pro-omni-care",
-   "price": 799,
-   "wasPrice": 1549.99,
-   "image": "https://site-static.ecovacs.com/upload/us/image/product/2026/09/16/082759_4810$us-x12-pro-omni-care-920x920.png",
-   "inStock": true
   },
   {
    "retailer": "us-ecovacs",
