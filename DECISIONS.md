@@ -2210,3 +2210,9 @@ Nothing about money changed: no paid link, ad block, pinned eBay / Amazon row, a
 word or order, so the 19 November clicks-per-placement recheck is unaffected. No URL or metadata changed. Seen and left:
 the product page's intermittent 0.55 shift at 1440 px (both builds, about one load in five) and the cart page's footer
 shift while it reads the browser's list (0.11, noindex, shared cart code across the sites).
+
+## 2026-11-16: A small unpriced "Also on Amazon" line in the marketplaces box
+
+The 2026-11-12/13 rule (Amazon row only with a live price) took Amazon buy clicks to zero from 13 Nov. Not a row: one line in the product page's
+"Also check the marketplaces" box, only where the ASIN finder matched this exact model (`phone.amazon[variant].url`), unpriced, labelled paid,
+never the quick view, never ranked, best, a deal or an alert. Placement `product-also`. Read Amazon clicks per day against 7-12 Nov.

@@ -6,7 +6,7 @@ import { marketplacesFor } from "@/lib/marketplaces";
 import { AmazonNote, AmazonRow } from "./AmazonLink";
 import { bigStoresFor } from "@/lib/big-stores";
 import { AMAZON_PRICE_DISCLAIMER } from "./AmazonLivePrice";
-import { amazonLink, amazonStore } from "@/lib/amazon";
+import { AMAZON_REL, amazonLink, amazonStore } from "@/lib/amazon";
 import { EbayListingRow, EbaySearchRow, PIN_OUTLINE } from "./EbayListingRow";
 import { REGIONS, withRegion } from "@/lib/region";
 import { ebaySearch, ebaySellers, SPONSORED_REL } from "@/lib/ebay";
@@ -314,6 +314,9 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
   // Only with a live Amazon price (owner, 2026-11-12): no unpriced Amazon row, and none in the quick view.
   const amazonHref = live?.price ? (found?.url ?? amazonLink(region, mq, "product")) : null;
   const amazonName = amazonStore(region)?.name;
+  // An unpriced "Also on Amazon" line (owner, 2026-11-16): where the ASIN finder matched this exact model but there is no live price,
+  // one small line in the marketplaces box, product page only. Not a row, never in the quick view, never ranked or a price.
+  const amazonAlso = !compact && !amazonHref && found?.url ? found.url : null;
   const ebay = markets.find((m) => m.id === "ebay")!;
   const cid = `p-${phone.category}-${phone.slug}`;
   const phones = phone.category === "phones";
@@ -349,7 +352,16 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
           Amazon and eBay links are ads and affiliate links: we may earn a commission. They are never ranked above the cheapest store and never change the store order.{" "}
           <Link prefetch={false} href="/disclosure" className="underline">Learn more</Link>
         </p>
-        {amazonHref && <AmazonNote className="mt-1" />}
+        {amazonAlso && (
+          <p className="mt-2 text-xs text-ink-soft">
+            Also on {amazonName}:{" "}
+            <a href={amazonAlso} target="_blank" rel={AMAZON_REL} data-buy="amazon" data-buy-kind="amazon-product-also" data-buy-product={product} data-amazon="product-also" className="font-semibold text-brand underline-offset-2 hover:underline">
+              see this exact model ↗
+            </a>{" "}
+            <span className="text-[11px] text-ink-mute">Paid link, price not shown.</span>
+          </p>
+        )}
+        {(amazonHref || amazonAlso) && <AmazonNote className="mt-1" />}
         {live?.price && <p className="mt-1 text-[11px] text-ink-mute">* Amazon price: {AMAZON_PRICE_DISCLAIMER}</p>}
       </div>
       )}
