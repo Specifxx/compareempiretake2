@@ -1,0 +1,110 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "op",
+ "siteName": "OP Compare",
+ "topic": "One Piece Card Game",
+ "host": "opcompare.app",
+ "accent": "#e0454a",
+ "page": "opcompare.app/movers",
+ "from": "2026-11-08",
+ "to": "2026-11-15",
+ "range": "8 Nov → 15 Nov",
+ "basis": "TCGplayer market price",
+ "cardsArt": true,
+ "up": [
+  {
+   "name": "Marco · SP",
+   "sub": "Extra Booster: Anime 25th Collection",
+   "before": 72202,
+   "after": 120000,
+   "pct": 66,
+   "image": null,
+   "tile": {
+    "number": "OP08-002",
+    "rarity": "L"
+   },
+   "link": "https://opcompare.app/card/marco-op08-002-sp",
+   "card": true
+  },
+  {
+   "name": "Nojiko · Alternate Art",
+   "sub": "Extra Booster: One Piece Heroines Edition Vol. 2",
+   "before": 1599,
+   "after": 2501,
+   "pct": 56,
+   "image": null,
+   "tile": {
+    "number": "EB05-057",
+    "rarity": "R"
+   },
+   "link": "https://opcompare.app/card/nojiko-eb05-057-alternate-art",
+   "card": true
+  },
+  {
+   "name": "Kuzan",
+   "sub": "Royal Blood",
+   "before": 489,
+   "after": 693,
+   "pct": 42,
+   "image": null,
+   "tile": {
+    "number": "OP10-082",
+    "rarity": "SR"
+   },
+   "link": "https://opcompare.app/card/kuzan-op10-082",
+   "card": true
+  }
+ ],
+ "down": [
+  {
+   "name": "Jewelry Bonney",
+   "sub": "Extra Booster: One Piece Heroines Edition Vol. 2",
+   "before": 1040,
+   "after": 549,
+   "pct": -47,
+   "image": null,
+   "tile": {
+    "number": "EB05-001",
+    "rarity": "SR"
+   },
+   "link": "https://opcompare.app/card/jewelry-bonney-eb05-001",
+   "card": true
+  },
+  {
+   "name": "Kouzuki Hiyori",
+   "sub": "Extra Booster: Memorial Collection",
+   "before": 1600,
+   "after": 949,
+   "pct": -41,
+   "image": null,
+   "tile": {
+    "number": "EB01-013",
+    "rarity": "R"
+   },
+   "link": "https://opcompare.app/card/kouzuki-hiyori-eb01-013",
+   "card": true
+  },
+  {
+   "name": "Jewelry Bonney · Super Rare Alternate Art",
+   "sub": "Extra Booster: One Piece Heroines Edition Vol. 2",
+   "before": 3213,
+   "after": 2056,
+   "pct": -36,
+   "image": null,
+   "tile": {
+    "number": "EB05-001",
+    "rarity": "SR"
+   },
+   "link": "https://opcompare.app/card/jewelry-bonney-eb05-001-alternate-art",
+   "card": true
+  }
+ ],
+ "fine": "TCGplayer market price, 8 Nov vs 15 Nov 2026. Prices change. Not affiliated with Bandai or Toei Animation."
+}

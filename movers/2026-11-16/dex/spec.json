@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "dex",
+ "siteName": "DexCompare",
+ "topic": "Pokémon TCG",
+ "host": "dexcompare.app",
+ "accent": "#ffcb05",
+ "page": "dexcompare.app/us/price-moves",
+ "from": "2026-11-09",
+ "to": "2026-11-16",
+ "range": "9 Nov → 16 Nov",
+ "basis": "Cheapest in-stock US store price",
+ "cardsArt": false,
+ "up": [
+  {
+   "name": "Stellar Crown Booster Box",
+   "sub": "Booster Box",
+   "before": 15000,
+   "after": 29995,
+   "pct": 100,
+   "stores": 14,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/557354_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/stellar-crown-booster-box",
+   "imgFile": "img/u0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Ascended Heroes - Mega Meganium ex Box",
+   "sub": "Collection",
+   "before": 3475,
+   "after": 4738,
+   "pct": 36,
+   "stores": 21,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/672733_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/ascended-heroes-mega-meganium-ex-box",
+   "imgFile": "img/u1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Prismatic Evolutions - Tech Sticker Collection - Glaceon",
+   "sub": "Collection",
+   "before": 3000,
+   "after": 3997,
+   "pct": 33,
+   "stores": 4,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/593451_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/prismatic-evolutions-tech-sticker-collection-glaceon",
+   "imgFile": "img/u2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "down": [
+  {
+   "name": "Delta Reign Booster Box",
+   "sub": "Booster Box",
+   "before": 16164,
+   "after": 8999,
+   "pct": -44,
+   "stores": 76,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/712094_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/delta-reign-booster-box",
+   "imgFile": "img/d0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "30th Celebration - EX Box",
+   "sub": "Collection",
+   "before": 3999,
+   "after": 2799,
+   "pct": -30,
+   "stores": 11,
+   "image": "https://cdn.shopify.com/s/files/1/0514/4854/5477/files/WebsitePNG-2026-07-08T100216.654.png?v=1783530392",
+   "link": "https://dexcompare.app/us/p/30th-celebration-ex-box",
+   "imgFile": "img/d1",
+   "imgType": "image/png"
+  },
+  {
+   "name": "30th Celebration Mewtwo Figure Collection",
+   "sub": "Collection",
+   "before": 7796,
+   "after": 5626,
+   "pct": -28,
+   "stores": 23,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/704194_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/30th-celebration-mewtwo-figure-collection",
+   "imgFile": "img/d2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "fine": "Cheapest in-stock US store price, 9 Nov vs 16 Nov 2026. Prices change. Not affiliated with Nintendo, The Pokémon Company or Creatures."
+}

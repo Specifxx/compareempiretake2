@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "mtg",
+ "siteName": "MTG Compare",
+ "topic": "Magic: The Gathering",
+ "host": "mtgcompare.app",
+ "accent": "#e8743b",
+ "page": "mtgcompare.app/us",
+ "from": "2026-11-09",
+ "to": "2026-11-16",
+ "range": "9 Nov → 16 Nov",
+ "basis": "Cheapest in-stock US store price",
+ "cardsArt": false,
+ "up": [
+  {
+   "name": "Avatar: The Last Airbender - Scene Box (The Black Sun Invasion)",
+   "sub": "Scene Box",
+   "before": 2701,
+   "after": 3995,
+   "pct": 48,
+   "stores": 17,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/648713_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/avatar-the-last-airbender-scene-box-the-black-sun-invasion",
+   "imgFile": "img/u0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Duskmourn: House of Horror Commander Deck - Jump Scare!",
+   "sub": "Commander Deck",
+   "before": 5000,
+   "after": 5999,
+   "pct": 20,
+   "stores": 4,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/557255_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/duskmourn-house-of-horror-commander-deck-jump-scare",
+   "imgFile": "img/u1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Commander Masters Commander Deck - Eldrazi Unbound",
+   "sub": "Commander Deck",
+   "before": 35000,
+   "after": 41539,
+   "pct": 19,
+   "stores": 3,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/484931_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/commander-masters-commander-deck-eldrazi-unbound",
+   "imgFile": "img/u2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "down": [
+  {
+   "name": "FINAL FANTASY Commander Deck - FINAL FANTASY VII Limit Break (Game Edition)",
+   "sub": "Commander Deck",
+   "before": 7999,
+   "after": 4878,
+   "pct": -39,
+   "stores": 11,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/656732_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/final-fantasy-commander-deck-final-fantasy-vii-limit-break-game-edition",
+   "imgFile": "img/d0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Star Trek Commander Deck - Klingon Fury",
+   "sub": "Commander Deck",
+   "before": 4499,
+   "after": 2799,
+   "pct": -38,
+   "stores": 54,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/706169_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/star-trek-commander-deck-klingon-fury",
+   "imgFile": "img/d1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Star Trek Commander Deck - Federation Fleet (Collector's Edition)",
+   "sub": "Commander Deck",
+   "before": 15999,
+   "after": 11997,
+   "pct": -25,
+   "stores": 29,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/706177_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/star-trek-commander-deck-federation-fleet-collectors-edition",
+   "imgFile": "img/d2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "fine": "Cheapest in-stock US store price, 9 Nov vs 16 Nov 2026. Prices change. Unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards."
+}
