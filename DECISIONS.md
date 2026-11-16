@@ -2216,3 +2216,7 @@ shift while it reads the browser's list (0.11, noindex, shared cart code across 
 The 2026-11-12/13 rule (Amazon row only with a live price) took Amazon buy clicks to zero from 13 Nov. Not a row: one line in the product page's
 "Also check the marketplaces" box, only where the ASIN finder matched this exact model (`phone.amazon[variant].url`), unpriced, labelled paid,
 never the quick view, never ranked, best, a deal or an alert. Placement `product-also`. Read Amazon clicks per day against 7-12 Nov.
+
+## 2026-11-16: urgent release of the "Also on Amazon" line
+
+Amazon clicks were about 0 a day since 13 Nov. The owner approved one urgent production build (subject carries the urgent marker) so the unpriced matched line goes live now instead of waiting for the next daily release. One build, no previews.
