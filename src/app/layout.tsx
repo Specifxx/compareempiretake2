@@ -52,8 +52,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#1a1d22" },
+    { color: "#1a1d22" },
   ],
 };
 
@@ -62,7 +61,7 @@ export const viewport: Viewport = {
 // the grid's prerendered, unfiltered first page shows as a skeleton until the browser filters it
 // (globals.css, [data-grid-fallback]). Crawlers and visitors without JavaScript never get the class.
 const themeScript =
-  `try{var t=localStorage.getItem('ce-theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('dark')}catch(e){}` +
+  `try{var t=localStorage.getItem('ce-theme');document.documentElement.classList.toggle('dark',t!=='light')}catch(e){}` +
   `try{if(/[?&](?:q|brand|min|max|storage|fold|5g|stock|multi|cat|f\\.[a-z0-9-]+)=[^&]|[?&]sort=(?!popular(?:&|$))[^&]/.test(location.search))document.documentElement.classList.add('gq')}catch(e){}` +
   // A store photo that fails to load (hotlink-blocked, moved) is hidden and its tile says "No photo", instead of a broken
   // image icon (US shopper review, 2026-11-06). Capture phase: image errors don't bubble.
@@ -101,7 +100,7 @@ const getChrome = () =>
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const { regions, nav } = getChrome();
   return (
-    <html lang="en" className={sans.variable} data-regions={regions.join(" ")} data-festive={CHRISTMAS_FESTIVE_LAYER ? "" : undefined} suppressHydrationWarning>
+    <html lang="en" className={`${sans.variable} dark`} data-regions={regions.join(" ")} data-festive={CHRISTMAS_FESTIVE_LAYER ? "" : undefined} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         {/* Christmas (1 November to Boxing Day): data-season on <html> from the visitor's own date. lib/season.ts. */}
