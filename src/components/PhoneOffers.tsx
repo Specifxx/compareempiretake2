@@ -350,7 +350,7 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
         </div>
         <p className="mt-2 text-[11px] text-ink-soft">
           Amazon and eBay links are ads and affiliate links: we may earn a commission. They are never ranked above the cheapest store and never change the store order.{" "}
-          <Link prefetch={false} href="/disclosure" className="underline">Learn more</Link>
+          <Link prefetch={false} href="/disclosure" className="underline">Learn more about how we make money</Link>
         </p>
         {amazonAlso && (
           <p className="mt-2 text-xs text-ink-soft">
