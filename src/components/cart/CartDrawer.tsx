@@ -12,7 +12,6 @@
 // The cart lives in this browser only (src/lib/cart-list.ts); /cart stays as the no-script page.
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
-import Link from "next/link";
 import { createPortal } from "react-dom";
 import { cartRef, formatMoney, groupByStore, onCartChange, readCart, setQty, writeCart, type CartLine } from "@/lib/cart-list";
 import { browserKind, buildCheckout, checkLines, isGone, openAll, popupSteps, readPopupMemory, writePopupMemory, type CheckoutItem, type Checks } from "@/lib/cart-checkout";
