@@ -60,6 +60,23 @@ export function QuickView() {
   const [head, setHead] = useState<Head | null>(null);
   const [phone, setPhone] = useState<Phone | null | "loading">(null);
   const [vid, setVid] = useState<string | null>(null);
+
+  // The tab's title and description follow the product while its quick view is open (Fiverr review F8, 2026-11-17: the tab kept the list's
+  // title); both go back on close. Only the browser's document is touched, never the server's HTML.
+  const titleName = head?.name || "";
+  useEffect(() => {
+    if (!head || !titleName) return;
+    const prevTitle = document.title;
+    const suffix = prevTitle.includes(" | ") ? prevTitle.slice(prevTitle.lastIndexOf(" | ")) : "";
+    const meta = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    const prevDesc = meta?.content;
+    document.title = `${titleName} prices${suffix}`;
+    if (meta) meta.content = `Compare every store's price for ${titleName}, cheapest first.`;
+    return () => {
+      document.title = prevTitle;
+      if (meta && prevDesc != null) meta.content = prevDesc;
+    };
+  }, [head, titleName]);
   const closeRef = useRef<HTMLButtonElement>(null);
   // Closing steps back to the list's own URL (lib/quick-view-url.ts); the details link only hides it, and lands on the URL already shown.
   const close = useCallback(() => {
