@@ -32,16 +32,29 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Mark the start of this runner's read
+        run: touch "$RUNNER_TEMP/jb-start"
       - name: Read JB Hi-Fi (this runner's categories)
         env:
           JB_SHARD: ${{ matrix.shard }}/4
           JB_BUDGET_MIN: "75"
         run: npx tsx scripts/scrape-categories.ts jbhifi
+      - name: Keep only the files this runner wrote
+        if: always()
+        # The checkout holds every category's old jbhifi.json. Uploading them all let a runner's stale copy of a
+        # category another runner had just read win in the commit job (17 Nov 2026: "76 category files ... No changes"
+        # while headphones, speakers, cameras and others stayed 2-3 weeks old and were dropped by the three-day rule).
+        run: |
+          mkdir -p "$RUNNER_TEMP/jb-out"
+          find data -path '*/raw/jbhifi.json' -newer "$RUNNER_TEMP/jb-start" | while read -r f; do
+            mkdir -p "$RUNNER_TEMP/jb-out/$(dirname "$f")" && cp "$f" "$RUNNER_TEMP/jb-out/$f"
+          done
+          find "$RUNNER_TEMP/jb-out" -type f | sed "s|$RUNNER_TEMP/jb-out/|fresh: |"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: jbhifi-${{ matrix.shard }}
-          path: data/*/raw/jbhifi.json
+          path: ${{ runner.temp }}/jb-out/data
           if-no-files-found: ignore
   commit:
     needs: read
@@ -58,8 +71,9 @@ jobs:
           # Each artifact holds data/<category>/raw/jbhifi.json only for categories its runner finished; a runner that
           # failed a category left yesterday's file unwritten, so nothing stale is copied over a newer one.
           n=0
-          for f in $(cd "$RUNNER_TEMP/jb" && find . -path '*/raw/jbhifi.json' | sed 's|^\./[^/]*/||'); do
-            src=$(find "$RUNNER_TEMP/jb" -path "*/$f" | head -1)
+          # Artifacts now hold only freshly written files, laid out as <category>/raw/jbhifi.json.
+          for src in $(find "$RUNNER_TEMP/jb" -path '*/raw/jbhifi.json'); do
+            f="data/${src#*/jbhifi-*/}"
             mkdir -p "$(dirname "$f")" && cp "$src" "$f" && n=$((n+1))
           done
           echo "$n category files from the JB runners"
