@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T23:28:02.211Z",
+ "scrapedAt": "2026-11-17T02:32:50.489Z",
  "offers": [
   {
    "retailer": "customht",
@@ -358,7 +358,8 @@
    "sku": "47427255271682",
    "title": "WiiM Sound Wireless Smart Speaker Black",
    "url": "https://www.customht.com.au/products/wiim-sound-wireless-smart-speaker?variant=47427255271682",
-   "price": 499,
+   "price": 399,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0064/4376/1716/files/cht-solutions-wireless-speakers-1224713917.jpg?v=1772497655",
    "inStock": true,
    "brand": "WiiM"
@@ -368,9 +369,10 @@
    "sku": "47427255304450",
    "title": "WiiM Sound Wireless Smart Speaker White",
    "url": "https://www.customht.com.au/products/wiim-sound-wireless-smart-speaker?variant=47427255304450",
-   "price": 499,
+   "price": 399,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0064/4376/1716/files/cht-solutions-wireless-speakers-1224713916.jpg?v=1772497596",
-   "inStock": false,
+   "inStock": true,
    "brand": "WiiM"
   }
  ]

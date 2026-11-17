@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:50:11.626Z",
+ "scrapedAt": "2026-11-17T03:54:37.910Z",
  "offers": [
   {
    "retailer": "uk-petertyson",
@@ -298,16 +298,18 @@
    "sku": "46822",
    "title": "DALI iO-8 Over-ear Wireless ANC Headphones - Caramel White",
    "url": "https://petertyson.co.uk/dali-io-8-headphones-caramel-white",
-   "price": 499,
+   "price": 349,
+   "wasPrice": 499,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/i/o/io8white_1.webp",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-petertyson",
    "sku": "46821",
    "title": "DALI iO-8 Over-ear Wireless ANC Headphones - Iron Black",
    "url": "https://petertyson.co.uk/dali-io-8-headphones-iron-black",
-   "price": 499,
+   "price": 349,
+   "wasPrice": 499,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/i/o/io8_black_1_1.webp",
    "inStock": true
   },
@@ -607,7 +609,7 @@
    "url": "https://petertyson.co.uk/hifiman-he1000-unveiled",
    "price": 2109,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/h/i/hifiman-he1000-unveiled-perspective-600x600.webp",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-petertyson",
@@ -906,7 +908,8 @@
    "sku": "44739",
    "title": "Sonos Ace Over-ear Wireless ANC Headphones - Black",
    "url": "https://petertyson.co.uk/sonos-ace-headphones",
-   "price": 349,
+   "price": 199,
+   "wasPrice": 349,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/a/c/aceblack_2026_1.webp",
    "inStock": true
   },
@@ -915,7 +918,8 @@
    "sku": "44740",
    "title": "Sonos Ace Over-ear Wireless ANC Headphones - White",
    "url": "https://petertyson.co.uk/sonos-ace-headphones-white",
-   "price": 349,
+   "price": 199,
+   "wasPrice": 349,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/a/c/acewhite_2026_1.webp",
    "inStock": true
   },

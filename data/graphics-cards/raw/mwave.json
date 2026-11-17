@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T23:34:26.637Z",
+ "scrapedAt": "2026-11-17T02:39:27.429Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -13,20 +13,11 @@
   },
   {
    "retailer": "mwave",
-   "sku": "183396",
-   "title": "ASUS AMD Turbo Radeon AI PRO R9700 32GB GDDR6 Video Card",
-   "url": "https://www.mwave.com.au/products/asus-amd-turbo-radeon-ai-pro-r9700-32gb-gddr6-video-card",
-   "price": 3299,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/fwebp_1_1ace3de6-d97d-4cb7-98a4-34e22b4b5b3e.jpg?v=1794783948",
-   "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "mwave",
    "sku": "182774",
    "title": "ASUS Dual GeForce RTX 5060 8GB GDDR7 EVO OC Edition Video Card",
    "url": "https://www.mwave.com.au/products/asus-dual-geforce-rtx-5060-8gb-gddr7-evo-oc-edition-video-card",
    "price": 749,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/14.jpg?v=1794789279",
    "inStock": true,
    "brand": "Asus"
   },
@@ -157,7 +148,7 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060-ti-prime-16gb-gddr7-video-card-ac83891",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060_ti_prime_16gb_video_card_ac83891_73903.jpg?v=1787784016",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -317,7 +308,7 @@
    "url": "https://www.mwave.com.au/products/asus-prime-geforce-rtx-5070-ti-16gb-gddr7-oc-edition-video-card-ac81834",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_prime_geforce_rtx_5070_ti_16gb_gddr7_oc_edition_video_card_ac81834_13581.jpg?v=1787795415",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -897,7 +888,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5070-eagle-oc-12gb-video-card-ac82983",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_geforce_rtx_5070_eagle_oc_sff_12gb_video_card_ac82983_97236.jpg?v=1787796645",
-   "inStock": false,
+   "inStock": true,
    "brand": "Gigabyte"
   },
   {
@@ -1092,16 +1083,6 @@
   },
   {
    "retailer": "mwave",
-   "sku": "183398",
-   "title": "Gigabyte GeForce RTX 5080 WINDFORCE OC V2 16GB GDDR7 Video Card",
-   "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5080-windforce-oc-v2-16gb-gddr7-video-card",
-   "price": 3499,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/GeForceRTX_5080WINDFORCEOCV2SFF16G_01.jpg?v=1794782461",
-   "inStock": true,
-   "brand": "Gigabyte"
-  },
-  {
-   "retailer": "mwave",
    "sku": "AC81820",
    "title": "Gigabyte GeForce RTX 5090 AORUS MASTER 32GB Video Card",
    "url": "https://www.mwave.com.au/products/gigabyte-geforce-rtx-5090-aorus-master-32gb-video-card-ac81820",
@@ -1286,7 +1267,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5060-ti-twin-x2-oc-16gb-video-card-ac84869",
    "price": 1049,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5060_ti_twin_x2_oc_16gb_video_card_ac84869_34515.jpg?v=1787785838",
-   "inStock": false,
+   "inStock": true,
    "brand": "Inno3D"
   },
   {
@@ -1316,7 +1297,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5060-twin-x2-8gb-video-card-ac86241",
    "price": 649,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5060_twin_x2_8gb_video_card_ac86241_56692.jpg?v=1787746240",
-   "inStock": false,
+   "inStock": true,
    "brand": "Inno3D"
   },
   {
@@ -1386,7 +1367,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5080-x3-oc-16gb-video-card-ac82069",
    "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5080_x3_oc_16gb_video_card_ac82069_75886.jpg?v=1787785845",
-   "inStock": false,
+   "inStock": true,
    "brand": "Inno3D"
   },
   {
@@ -1396,7 +1377,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5090-x3-oc-32gb-gddr7-video-card-ac83010",
    "price": 15999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5090_x3_oc_32gb_gddr7_video_card_ac83010_42691.jpg?v=1787797064",
-   "inStock": false,
+   "inStock": true,
    "brand": "Inno3D"
   },
   {
@@ -2056,7 +2037,7 @@
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5070-ti-gamingpros-16gb-video-card-ac88912",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/palit_geforce_rtx_5070_ti_gamingpros_16gb_video_card_ac88912_93702.jpg?v=1787798042",
-   "inStock": true,
+   "inStock": false,
    "brand": "Palit"
   },
   {

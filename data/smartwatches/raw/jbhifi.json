@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T23:57:58.356Z",
+ "scrapedAt": "2026-11-17T02:49:51.218Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -414,6 +414,16 @@
    "url": "https://www.jbhifi.com.au/products/apple-watch-series-11-42mm-space-grey-aluminium-case-gps-cellular-sport-band-m-l-black",
    "price": 709,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/835944-Product-0-I-638930688604611810.jpg?v=1757472124",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "835928",
+   "title": "Apple Watch Series 11 42mm Space Grey Aluminium Case GPS Sport Band (M/L) [Black]",
+   "url": "https://www.jbhifi.com.au/products/apple-watch-series-11-42mm-space-grey-aluminium-case-gps-sport-band-m-l-black",
+   "price": 549,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/835928-Product-0-I-638930648404167848.jpg?v=1757468105",
    "inStock": true,
    "brand": "Apple"
   },
@@ -899,7 +909,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-watch-series-12-42mm-black-aluminium-case-sport-band-gps-cellular-m-l-black",
    "price": 669,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913719-Product-0-I-639246060005552629.jpg?v=1789009265",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1633,7 +1643,7 @@
    "url": "https://www.jbhifi.com.au/products/garmin-fenix-9-pro-47mm-titanium-with-autumn-orange-spark-orange-silicone-band",
    "price": 1749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/911648-Product-0-I-639234069611753268.jpg?v=1787810229",
-   "inStock": false,
+   "inStock": true,
    "brand": "Garmin"
   },
   {
@@ -1723,7 +1733,7 @@
    "url": "https://www.jbhifi.com.au/products/garmin-fenix-9-pro-inreach-47mm-titanium-with-autumn-orange-spark-orange-silicone-band",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/911650-Product-0-I-639234078609298868.jpg?v=1787811126",
-   "inStock": false,
+   "inStock": true,
    "brand": "Garmin"
   },
   {
@@ -1951,7 +1961,8 @@
    "sku": "808799",
    "title": "Garmin Forerunner® 265 Sports Watch (Aqua)",
    "url": "https://www.jbhifi.com.au/products/garmin-forerunner-265-sports-watch-aqua",
-   "price": 799,
+   "price": 397,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/808799-Product-0-I-638787343203325465.jpg?v=1743137590",
    "inStock": true,
    "brand": "Garmin"
@@ -1961,7 +1972,8 @@
    "sku": "808797",
    "title": "Garmin Forerunner® 265 Sports Watch (Black)",
    "url": "https://www.jbhifi.com.au/products/garmin-forerunner-265-sports-watch-black",
-   "price": 799,
+   "price": 397,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/808797-Product-0-I-638790555612860359.jpg?v=1743459011",
    "inStock": true,
    "brand": "Garmin"
@@ -1971,7 +1983,8 @@
    "sku": "808798",
    "title": "Garmin Forerunner® 265 Sports Watch (Whitestone)",
    "url": "https://www.jbhifi.com.au/products/garmin-forerunner-265-sports-watch-whitestone",
-   "price": 799,
+   "price": 397,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/808798-Product-0-I-638819973005606586.jpg?v=1749689790",
    "inStock": true,
    "brand": "Garmin"
@@ -1981,7 +1994,8 @@
    "sku": "808812",
    "title": "Garmin Forerunner® 265S  Sports Watch (Pink)",
    "url": "https://www.jbhifi.com.au/products/garmin-forerunner-265s-sports-watch-pink",
-   "price": 799,
+   "price": 397,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/808812-Product-0-I-638787345003016917.jpg?v=1743137769",
    "inStock": true,
    "brand": "Garmin"
@@ -1991,7 +2005,8 @@
    "sku": "808806",
    "title": "Garmin Forerunner® 265S Sports Watch (Black)",
    "url": "https://www.jbhifi.com.au/products/garmin-forerunner-265s-sports-watch-black",
-   "price": 799,
+   "price": 397,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/808806-Product-0-I-638787343803716713.jpg?v=1743137654",
    "inStock": true,
    "brand": "Garmin"
@@ -2001,7 +2016,8 @@
    "sku": "808811",
    "title": "Garmin Forerunner® 265S Sports Watch (Whitestone)",
    "url": "https://www.jbhifi.com.au/products/garmin-forerunner-265s-sports-watch-whitestone",
-   "price": 799,
+   "price": 397,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/808811-Product-0-I-638787344402442424.jpg?v=1743137709",
    "inStock": true,
    "brand": "Garmin"
@@ -2112,7 +2128,7 @@
    "price": 449,
    "wasPrice": 549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/795992-Product-0-I-638719744803168369.jpg?v=1743548586",
-   "inStock": false,
+   "inStock": true,
    "brand": "Garmin"
   },
   {
@@ -2333,7 +2349,7 @@
    "price": 399,
    "wasPrice": 549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811067-Product-0-I-638791471204207623.jpg?v=1743550391",
-   "inStock": false,
+   "inStock": true,
    "brand": "Garmin"
   },
   {
@@ -2830,16 +2846,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "895015",
-   "title": "moto Smart Watch (Stainless Steel Black)",
-   "url": "https://www.jbhifi.com.au/products/moto-smart-watch-stainless-steel-black",
-   "price": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895015-Product-0-I-639118121402276603.jpg?v=1776215406",
-   "inStock": false,
-   "brand": "Moto"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "846904",
    "title": "Noise ColorFit Pro 6 Max Smartwatch (Blue Titanium)",
    "url": "https://www.jbhifi.com.au/products/noise-colorfit-pro-6-max-smartwatch-blue-titanium",
@@ -3331,16 +3337,6 @@
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch-ultra2-47mm-titanium-grey-marine-black",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904722-Product-0-I-639203658005764061.jpg?v=1793047267",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "904723",
-   "title": "Samsung Galaxy Watch Ultra2 47mm (Titanium Silver/Marine Olive)",
-   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch-ultra2-47mm-titanium-silver-marine-olive",
-   "price": 1299,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904723-Product-0-I-639203659803778035.jpg?v=1793047267",
    "inStock": true,
    "brand": "Samsung"
   },

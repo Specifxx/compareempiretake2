@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-11-15T23:41:23.399Z",
+ "scrapedAt": "2026-11-17T02:46:33.330Z",
  "offers": [
   {
    "retailer": "officeworks",
    "sku": "SYECHDOT5C",
    "title": "Amazon Echo Dot 5th Gen Charcoal",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/amazon-echo-dot-5th-gen-charcoal-syechdot5c",
-   "price": 127,
+   "price": 49,
    "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/SYECHDOT5C_amazon_echo_dot_5th_gen_charcoal.jpg",
    "inStock": true,
    "brand": "Amazon",
@@ -91,6 +91,17 @@
   },
   {
    "retailer": "officeworks",
+   "sku": "FNGO4DLOSL",
+   "title": "GO 4 Door Locker Silver",
+   "url": "https://www.officeworks.com.au/shop/officeworks/p/go-4-door-locker-silver-fngo4dlosl",
+   "price": 299,
+   "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/FNGO4DLOSL_go_4_door_locker_silver.jpg",
+   "inStock": true,
+   "brand": "Go Storage",
+   "mpn": "GL305 4 SILVER GREY"
+  },
+  {
+   "retailer": "officeworks",
    "sku": "JBLCLIP5BK",
    "title": "JBL Clip 5 Mini Bluetooth Speaker Black",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/jbl-clip-5-mini-bluetooth-speaker-black-jblclip5bk",
@@ -116,7 +127,7 @@
    "sku": "JBLCLIP5PK",
    "title": "JBL Clip 5 Mini Bluetooth Speaker Pink",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/jbl-clip-5-mini-bluetooth-speaker-pink-jblclip5pk",
-   "price": 99,
+   "price": 78,
    "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/JBLCLIP5PK_jbl_clip_5_mini_bluetooth_speaker_pink.jpg",
    "inStock": true,
    "brand": "JBL",
@@ -149,7 +160,8 @@
    "sku": "INLOGZ150B",
    "title": "Logitech Multimedia Speakers Black Z150",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/logitech-multimedia-speakers-black-z150-inlogz150b",
-   "price": 39,
+   "price": 28,
+   "wasPrice": 39,
    "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/INLOGZ150B_logitech_multimedia_speakers_black_z150.jpg",
    "inStock": true,
    "brand": "Logitech",

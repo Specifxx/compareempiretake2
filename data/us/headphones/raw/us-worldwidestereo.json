@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:33:52.961Z",
+ "scrapedAt": "2026-11-17T03:38:47.285Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -68,7 +68,7 @@
    "url": "https://www.worldwidestereo.com/products/audeze-lcd-s20-closed-back-planar-magnetic-headphones",
    "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_7ccb19d1-fc7e-448e-9fd8-d76e59365169.jpg?v=1771353415",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audeze"
   },
   {
@@ -288,7 +288,7 @@
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-g1-premium-gaming-headset",
    "price": 219,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/173430_WWS1.jpg?v=1769873334",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audio-Technica"
   },
   {
@@ -788,7 +788,7 @@
    "sku": "53464668406071",
    "title": "Beyerdynamic DT 770 PRO 80 Ohm Closed-Back Studio Headphonese (Black/Gray)",
    "url": "https://www.worldwidestereo.com/products/beyerdynamic-dt-770-pro-80-ohm-over-ear-headphones-for-studio-usage-black-gray",
-   "price": 179,
+   "price": 179.99,
    "wasPrice": 279,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Beyerdynamic-DT-770-Pro-80-Ohm-Over-Ear-Headphones-for-Studio-Usage-Black-Gray-Image-01.jpg?v=1793811095",
    "inStock": true,
@@ -879,7 +879,7 @@
    "price": 119.99,
    "wasPrice": 279.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-150-Wireless-Gaming-Headset-Arctic-White-Image-01.jpg?v=1793375283",
-   "inStock": false,
+   "inStock": true,
    "brand": "Beyerdynamic"
   },
   {
@@ -997,7 +997,7 @@
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-headphones-2nd-gen-black",
    "price": 359,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Headphones-2nd-Gen_-Black-Image-05.jpg?v=1786593797",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -1811,7 +1811,7 @@
    "price": 94.95,
    "wasPrice": 192,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Live-680NC-On-Ear-Noise-Cancelling-Wireless-Headphones-Champagne-Image-01.jpg?v=1775232229",
-   "inStock": true,
+   "inStock": false,
    "brand": "JBL"
   },
   {
@@ -2053,7 +2053,7 @@
    "price": 254.95,
    "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Quantum-950-Bluetooth-Gaming-Headphones-Image-01.jpg?v=1777262587",
-   "inStock": true,
+   "inStock": false,
    "brand": "JBL"
   },
   {
@@ -2988,7 +2988,7 @@
    "sku": "49801459925303",
    "title": "Sony Linkbuds Fit Truly Wireless Noise Cancelling Earbuds (Black)",
    "url": "https://www.worldwidestereo.com/products/sony-linkbuds-fit-truly-wireless-noise-cancelling-earbuds-black",
-   "price": 208,
+   "price": 198,
    "wasPrice": 229.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/7_6cb5076e-d2dc-4161-a04e-9757af400766.jpg?v=1729097152",
    "inStock": true,
@@ -3094,7 +3094,8 @@
    "sku": "46697616605495",
    "title": "Sony WH-RF400 Wireless Over-Ear Home Theater Headphones (Black)",
    "url": "https://www.worldwidestereo.com/products/sony-wh-rf400-wireless-over-ear-home-theater-headphones-black",
-   "price": 158,
+   "price": 128,
+   "wasPrice": 159.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/172909_WWS1.jpg?v=1726074835",
    "inStock": true,
    "brand": "Sony"
@@ -3104,8 +3105,7 @@
    "sku": "46701869957431",
    "title": "Sony WHCH720N/B Hybrid Wired & Wireless Bluetooth Noise Canceling Headphones",
    "url": "https://www.worldwidestereo.com/products/sony-whch720n-b-hybrid-wired-wireless-bluetooth-noise-canceling-headphones-with-adjustable-ambient-sound-siri-google-assistant-compatible-built-in-microphone",
-   "price": 93,
-   "wasPrice": 179.99,
+   "price": 178,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/179469_WWS1.jpg?v=1734030567",
    "inStock": false,
    "brand": "Sony"
@@ -3115,7 +3115,7 @@
    "sku": "52987151057207",
    "title": "Sony WHCH730N/B Wireless Over-Ear Headphones",
    "url": "https://www.worldwidestereo.com/products/sony-whch730n-b-wireless-over-ear-headphones",
-   "price": 128,
+   "price": 103,
    "wasPrice": 179.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Sony-WHCH730N-B-Wireless-Over-Ear-Headphones-Image-01.jpg?v=1789415955",
    "inStock": true,

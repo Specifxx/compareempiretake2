@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-11-16T00:53:07.068Z",
+ "scrapedAt": "2026-11-17T03:57:46.087Z",
  "offers": [
+  {
+   "retailer": "uk-stuartwestmoreland",
+   "sku": "BCS71HYGGB",
+   "title": "Bosch ProAqua Cordless Vacuum Cleaner - 40 Minutes Run Time - BCS71HYGGB",
+   "url": "https://www.stuartwestmoreland.co.uk/products/bosch-proaqua-cordless-vacuum-cleaner-bcs71hyggb",
+   "price": 499.99,
+   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/8e71b34b-BCS71HYGGB-1.jpg?v=1755271058",
+   "inStock": true,
+   "brand": "Bosch",
+   "mpn": "BCS71HYGGB"
+  },
   {
    "retailer": "uk-stuartwestmoreland",
    "sku": "VRV80A",
@@ -29,7 +40,8 @@
    "sku": "VRV73H",
    "title": "Dreame R20 Pro Cordless Vacuum Cleaner – Silver – VRV73H",
    "url": "https://www.stuartwestmoreland.co.uk/products/dreame-r20-pro-cordless-vacuum-cleaner-silver-vrv73h",
-   "price": 299,
+   "price": 179,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/VRV73H-1.jpg?v=1779352550",
    "inStock": true,
    "brand": "Dreame",
@@ -203,23 +215,12 @@
    "sku": "V10KONICALNEW",
    "title": "Dyson V10 Konical Cordless Vacuum Cleaner and Auto-empty Dok",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v10-konical-cordless-vacuum-auto-empty-dok-v10konicalnew",
-   "price": 394,
+   "price": 392.64,
    "wasPrice": 569.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V10KONICALNEW-1.jpg?v=1790086532",
    "inStock": true,
    "brand": "Dyson",
    "mpn": "V10KONICALNEW"
-  },
-  {
-   "retailer": "uk-stuartwestmoreland",
-   "sku": "V12-2023",
-   "title": "Dyson V12 Detect Slim Absolute Cordless Stick Vacuum Cleaner",
-   "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v12-detect-slim-absolute-cordless-stick-vacuum-cleaner",
-   "price": 549.99,
-   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/2c915a58-dyson-v12-2023-1.jpg?v=1755270906",
-   "inStock": false,
-   "brand": "Dyson",
-   "mpn": "V12-2023"
   },
   {
    "retailer": "uk-stuartwestmoreland",
@@ -259,7 +260,8 @@
    "sku": "V15DETABSOLUTE",
    "title": "Dyson V15 Detect Absolute Cordless Vacuum Cleaner - Yellow and Nickel",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v15-detect-absolute-cordless-vacuum-yellow-nickel-v15detabsolute",
-   "price": 499.99,
+   "price": 479,
+   "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V15DETABSOLUTE-1_8634c4af-8525-457f-bf82-6e09f2938e0e.jpg?v=1793118865",
    "inStock": true,
    "brand": "Dyson",
@@ -822,9 +824,9 @@
    "sku": "NZ801UKT",
    "title": "Shark Anti Hair Wrap Upright Vacuum Cleaner with Powered Lift-Away TruePet - Blue - NZ801UKT",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-upright-vacuum-anti-hair-wrap-pet-nz801ukt",
-   "price": 399,
+   "price": 219.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/NZ801UKT-1.jpg?v=1776424411",
-   "inStock": false,
+   "inStock": true,
    "brand": "Shark",
    "mpn": "NZ801UKT"
   },
@@ -1129,8 +1131,7 @@
    "sku": "WV270UK",
    "title": "Shark Wandvac 2.0 Handheld Cordless Vacuum Cleaner - 15 Minutes Run Time - Blue WV270UK",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-wandvac-handheld-cordless-vacuum-cleaner-blue-wv270uk",
-   "price": 89.99,
-   "wasPrice": 179.99,
+   "price": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/df1d4b98-WV270UK-1.jpg?v=1755270978",
    "inStock": false,
    "brand": "Shark",
@@ -1252,7 +1253,7 @@
    "price": 139.99,
    "wasPrice": 249.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/CDUP-LORP-1.jpg?v=1773232139",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-stuartwestmoreland",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:45:47.231Z",
+ "scrapedAt": "2026-11-17T03:50:20.517Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -174,7 +174,7 @@
    "price": 1343.99,
    "wasPrice": 1607.06,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-6-14-inch-g1-ai-wafer14-wafer14r-waffle14-front_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -630,7 +630,7 @@
    "price": 1643.87,
    "wasPrice": 1933.2,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/m/e/merino13x_hp_elitebook_8_flip_g2i_flip_g2i_glaciersilver_wlan_nonfpr_catalog_tent_6476762_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1158,7 +1158,7 @@
    "price": 2237.15,
    "wasPrice": 2645.09,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/b/ab85d1e4-64be-4585-8700-21eda208fb35.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -1277,7 +1277,7 @@
    "price": 2365.57,
    "wasPrice": 2831.93,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-ultra-g1i-14-inch-laptop-next-gen-ai-pc-snowwhite-atmospheric-blue-front_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -1922,53 +1922,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "E41T8EA#ABU",
-   "mpn": "E41T8EA#ABU",
-   "brand": "HP",
-   "title": "HP HyperX OMEN 16\" Gaming Laptop, Intel Core Ultra 7, 32GB, 1TB, NVIDIA GeForce RTX 5070 Ti 12GB, OLED Display, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ah1401na-e41t8ea-abu",
-   "price": 2879,
-   "wasPrice": 3299.99,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/d/ad2f6d07-d8ae-4539-bf43-bdd9d0de75d1.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E41T9EA#ABU",
-   "mpn": "E41T9EA#ABU",
-   "brand": "HP",
-   "title": "HP HyperX OMEN 16\" Gaming Laptop, Intel Core Ultra 7, 32GB, 1TB, NVIDIA GeForce RTX 5080",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ah1402na-e41t9ea-abu",
-   "price": 3199,
-   "wasPrice": 3700,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/d/ad2f6d07-d8ae-4539-bf43-bdd9d0de75d1.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E41U9EA#ABU",
-   "mpn": "E41U9EA#ABU",
-   "brand": "HP",
-   "title": "HP HyperX OMEN 16\" Gaming Laptop, Intel Core Ultra 9, 64GB, 2TB, NVIDIA GeForce RTX 5080 16GB, OLED Display, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ah1403na-e41u9ea-abu",
-   "price": 4799,
-   "wasPrice": 4999.99,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/d/ad2f6d07-d8ae-4539-bf43-bdd9d0de75d1.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E41TCEA#ABU",
-   "mpn": "E41TCEA#ABU",
-   "brand": "HP",
-   "title": "HP HyperX OMEN 16\" Gaming Laptop, Intel Core Ultra 9, 64GB, 2TB, NVIDIA GeForce RTX 5090 24GB, OLED Display, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ah1405na-e41tcea-abu",
-   "price": 5599,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/d/ad2f6d07-d8ae-4539-bf43-bdd9d0de75d1.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "E0VU4EA#ABU",
    "mpn": "E0VU4EA#ABU",
    "brand": "HP",
@@ -2001,6 +1954,53 @@
    "price": 1699,
    "wasPrice": 2200,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/x/hx_omen_16_amd_valorant_non_oled_fhd_4rgb_coreset_front_7437650_cus.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E41T8EA#ABU",
+   "mpn": "E41T8EA#ABU",
+   "brand": "HP",
+   "title": "HP HyperX OMEN MAX 16\" Gaming Laptop, Intel Core Ultra 7, 32GB, 1TB, NVIDIA GeForce RTX 5070 Ti 12GB, OLED Display, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ah1401na-e41t8ea-abu",
+   "price": 2879,
+   "wasPrice": 3299.99,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/d/ad2f6d07-d8ae-4539-bf43-bdd9d0de75d1.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E41T9EA#ABU",
+   "mpn": "E41T9EA#ABU",
+   "brand": "HP",
+   "title": "HP HyperX OMEN MAX 16\" Gaming Laptop, Intel Core Ultra 7, 32GB, 1TB, NVIDIA GeForce RTX 5080, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ah1402na-e41t9ea-abu",
+   "price": 3199,
+   "wasPrice": 3700,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/d/ad2f6d07-d8ae-4539-bf43-bdd9d0de75d1.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E41U9EA#ABU",
+   "mpn": "E41U9EA#ABU",
+   "brand": "HP",
+   "title": "HP HyperX OMEN MAX 16\" Gaming Laptop, Intel Core Ultra 9, 64GB, 2TB, NVIDIA GeForce RTX 5080 16GB, OLED Display, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ah1403na-e41u9ea-abu",
+   "price": 4799,
+   "wasPrice": 4999.99,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/d/ad2f6d07-d8ae-4539-bf43-bdd9d0de75d1.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E41TCEA#ABU",
+   "mpn": "E41TCEA#ABU",
+   "brand": "HP",
+   "title": "HP HyperX OMEN MAX 16\" Gaming Laptop, Intel Core Ultra 9, 64GB, 2TB, NVIDIA GeForce RTX 5090 24GB, OLED Display, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hyperx-omen-max-16-inch-gaming-laptop-pc-16-ah1405na-e41tcea-abu",
+   "price": 5599,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/d/ad2f6d07-d8ae-4539-bf43-bdd9d0de75d1.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -2069,7 +2069,7 @@
    "brand": "HP",
    "title": "HP Laptop 14\" Laptop, Intel Core 7, 16GB, 512GB",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-laptop-14-ep1014nax-d77srea-abu",
-   "price": 659,
+   "price": 599,
    "wasPrice": 899,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08482846_cus_2.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -2180,7 +2180,7 @@
    "price": 729,
    "wasPrice": 849,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08515077_cus_4.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2342,7 +2342,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 16\" Laptop, Snapdragon C1-10-100, 4GB, 256GB, Touchscreen Display",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-3-laptop-ai-16-ct0002nax-e5hq9ea-abu",
-   "price": 299,
+   "price": 479,
    "wasPrice": 599,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_omnibook_3_16_inch_inch_laptop_ai_pc_16-ct0000_product_glacier_silver_product_only_center_facing_2c1bae16-2df5-4196-9506-81735950e937.png_cus_1.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -2354,7 +2354,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 16\" Laptop, Snapdragon C1-10-100, 8GB, 256GB, Touchscreen Display",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-3-laptop-ai-16-ct0000nax-e5hq7ea-abu",
-   "price": 349,
+   "price": 549,
    "wasPrice": 599,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_omnibook_3_16_inch_inch_laptop_ai_pc_16-ct0000_product_glacier_silver_product_only_center_facing_2c1bae16-2df5-4196-9506-81735950e937.png_cus.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -2690,7 +2690,7 @@
    "brand": "HP",
    "title": "HP OmniBook 5 16\" Laptop, Intel Core i7, 16GB, 1TB",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptop-16-ba1001nax-dw9c4ea-abu",
-   "price": 999,
+   "price": 769,
    "wasPrice": 1399,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-5-14-inch-laptop-next-gen-ai-pc-canopyr-glacier-silver-front_cus_1_1.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -3020,7 +3020,7 @@
    "price": 1929,
    "wasPrice": 2399,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-ultra-14-ngai-grahami-silk-sand-front_cus_2_1.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -3245,7 +3245,7 @@
    "brand": "HP",
    "title": "HP OmniBook X 14\" Next Gen AI Laptop, Intel Core Ultra 7, 16GB, 512GB, OLED, Touchscreen Display",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-x-flip-2-in-1-laptop-next-gen-ai-14-kb0016nax-dv3f1ea-abu",
-   "price": 1329,
+   "price": 1099,
    "wasPrice": 1499,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-x-flip-14-inch-2-in-1-laptop-next-gen-ai-pc-kentoi-meteor-silver-tent-pen_cus_3.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -3517,7 +3517,7 @@
    "price": 1077.11,
    "wasPrice": 1287.64,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-probook-4-g1a-16-naturalsilver-frontopen_cus_6.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -4805,7 +4805,7 @@
    "price": 2867.99,
    "wasPrice": 3209.52,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-zbook-ultra-g1a-14-chiron-meteorsilver-front_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -4961,7 +4961,7 @@
    "price": 3388.79,
    "wasPrice": 3777.97,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/z/b/zbook_xg2i_16_meteorsilver_nt_5m_ircam_als_fpr_wlan_backlitkb_coreset_frontopen_me_6504702_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -5176,7 +5176,7 @@
    "price": 1599,
    "wasPrice": 2399.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/o/m/omen-transcend-14-gaming-laptop-voco-front_cus_4.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   }
  ]
 }

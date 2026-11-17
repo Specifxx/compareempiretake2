@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:50:31.357Z",
+ "scrapedAt": "2026-11-17T03:55:02.020Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -139,7 +139,7 @@
    "url": "https://www.overclockers.co.uk/asus-rog-strix-g18-nvidia-rtx-5080-32gb-18.0-wqxga-240hz-intel-core-ultra-9-290hx-plus-gaming-laptop/LAP-ASU-08191.html",
    "price": 3599.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw47b55615/images/data/product/43/a2fc86/116b8d29b0d0a86e1c8c8714e71c00aebdfde955.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -169,7 +169,7 @@
    "url": "https://www.overclockers.co.uk/asus-rog-zephyrus-g16-nvidia-rtx-5060-16gb-16.0-wqxga-oled-240hz-intel-core-ultra-7-255h-gaming-laptop/LAP-ASU-09468.html",
    "price": 1899.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc30fd147/images/data/product/bf/a8f348/252efae3371c69d369b50b063ec1420a77df0453.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -543,26 +543,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "LAP-MDN-05305",
-   "brand": "Medion",
-   "title": "Medion Erazer Defender P1 NVIDIA RTX 5060 32GB 17.3 FHD 144Hz i7-13620H Gaming Laptop",
-   "url": "https://www.overclockers.co.uk/medion-erazer-defender-p1-nvidia-rtx-5060-32gb-17.3-fhd-144hz-i7-13620h-gaming-laptop/LAP-MDN-05305.html",
-   "price": 1299.95,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc1b8d9cb/images/data/product/5d/dd21a6/2eb90b9ddfce574260233215a231dbae5de8bb71.png?sw=500",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-overclockers",
-   "sku": "LAP-MDN-05306",
-   "brand": "Medion",
-   "title": "Medion Erazer Defender P1 NVIDIA RTX 5060 32GB 17.3 FHD 144Hz Intel Core 7 240H Gaming Laptop",
-   "url": "https://www.overclockers.co.uk/medion-erazer-defender-p1-nvidia-rtx-5060-32gb-17.3-fhd-144hz-intel-core-7-240h-gaming-laptop/LAP-MDN-05306.html",
-   "price": 1299.95,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwe7256d51/images/data/product/5a/26fe95/d454e063864c1b13234baede972a7bf385714b85.png?sw=500",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "LAP-MDN-05304",
    "brand": "Medion",
    "title": "Medion Erazer Deputy P1 NVIDIA RTX 5060 16GB 15.6 FHD 144Hz Intel Core 7 250H Gaming Laptop",
@@ -583,16 +563,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "LAP-MDN-05307",
-   "brand": "Medion",
-   "title": "Medion Erazer Deputy P1 NVIDIA RTX 5070 32GB 15.6 FHD 144Hz Intel Core 9 270H Gaming Laptop",
-   "url": "https://www.overclockers.co.uk/medion-erazer-deputy-p1-nvidia-rtx-5070-32gb-15.6-fhd-144hz-intel-core-9-270h-gaming-laptop/LAP-MDN-05307.html",
-   "price": 1499.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwc87cfbdf/images/data/product/fa/3035b9/6a7a88dc6962d18ee6e4750f894c5e5f9a8acded.png?sw=500",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "LAP-MDN-05728",
    "brand": "Medion",
    "title": "Medion Erazer Scout E15 NVIDIA RTX 5050 16GB 15.6 FHD 144Hz Intel I5-13420H Gaming Laptop",
@@ -609,7 +579,7 @@
    "url": "https://www.overclockers.co.uk/medion-erazer-scout-e17-nvidia-rtx-5050-16gb-17.3-fhd-144hz-intel-core-5-210h-gaming-laptop/LAP-MDN-05729.html",
    "price": 1049.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwf3d02598/images/data/product/c7/520cc2/6bd1f8fc08d1526d0452331bb8ca524349c1bddc.png?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -737,7 +707,7 @@
    "brand": "MSI",
    "title": "MSI Cyborg 15 NVIDIA RTX 5050 16GB 15.6 FHD 144Hz Intel Core 7 240H Gaming Laptop",
    "url": "https://www.overclockers.co.uk/msi-cyborg-15-nvidia-rtx-5050-16gb-15.6-fhd-144hz-intel-core-7-240h-gaming-laptop/LAP-MSI-06263.html",
-   "price": 1049.99,
+   "price": 1199.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa263d93d/images/data/product/84/cbeb12/b3881887dd5c5cb2edcfb821ab8d1f4a1ee466b8.jpg?sw=500",
    "inStock": false
   },
@@ -799,7 +769,7 @@
    "url": "https://www.overclockers.co.uk/msi-modern-14-14-fhd-16gb-512gb-intel-core-i5-1334u-laptop/LAP-MSI-08944.html",
    "price": 649.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa311613e/images/data/product/bf/20f24d/aaaa756595ad1933a4fa447b0269d658bb6b7262.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -1119,7 +1089,7 @@
    "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-ti-32gb-16-qhd-300hz-1tb-intel-ultra-core-9-290hx-plus-gaming-laptop/LAP-PIN-08072.html",
    "price": 2399.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw50415df3/images/data/product/03/7feabe/dcf351775486b4a8c1fb1fffaf0b28499867f6dc.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -1129,7 +1099,7 @@
    "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-ti-32gb-16-qhd-300hz-2tb-intel-ultra-core-9-290hx-plus-gaming-laptop/LAP-PIN-08074.html",
    "price": 2499.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw9a18d10e/images/data/product/7b/a8ebdc/dcf351775486b4a8c1fb1fffaf0b28499867f6dc.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -1139,7 +1109,7 @@
    "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-ti-64gb-16-qhd-300hz-1tb-intel-core-ultra-9-290hx-plus-gaming-laptop/LAP-PIN-09177.html",
    "price": 2899.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw423c7d9b/images/data/product/63/dadc7f/dcf351775486b4a8c1fb1fffaf0b28499867f6dc.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",

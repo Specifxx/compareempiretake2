@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:28:22.892Z",
+ "scrapedAt": "2026-11-17T03:33:03.389Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -8,7 +8,7 @@
    "url": "https://www.electronicsexpo.com/products/adam-professional-audio-h200-over-ear-closed-back-headphones",
    "price": 179.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/adam-professional-audio-h200-over-ear-closed-back-headphones-product-type-2459617.jpg?v=1759349097",
-   "inStock": false,
+   "inStock": true,
    "brand": "ADAM Audio",
    "mpn": "ADAH200.FBA"
   },
@@ -97,6 +97,40 @@
   },
   {
    "retailer": "us-electronicsexpo",
+   "sku": "AUDATHAL5NC.FBA",
+   "title": "Audio-Technica ATH-AL5NC Wireless Open-Back Headphones",
+   "url": "https://www.electronicsexpo.com/products/audio-technica-ath-al5nc-wireless-open-back-headphones",
+   "price": 279,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1770709.jpg?v=1793987610",
+   "inStock": true,
+   "brand": "Audio-Technica",
+   "mpn": "AUDATHAL5NC.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "AUDATHGDL3BK.FBA",
+   "title": "Audio-Technica ATH-GDL3WH Open-Back Gaming Headset Black",
+   "url": "https://www.electronicsexpo.com/products/audio-technica-ath-gdl3wh-open-back-gaming-headset-white?variant=50895040839855",
+   "price": 139,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/61e_GCDrPyL._AC_SL1500.avif?v=1794857025",
+   "inStock": true,
+   "brand": "Audio-Technica",
+   "mpn": "AUDATHGDL3BK.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "AUDATHGDL3WH.FBA",
+   "title": "Audio-Technica ATH-GDL3WH Open-Back Gaming Headset White",
+   "url": "https://www.electronicsexpo.com/products/audio-technica-ath-gdl3wh-open-back-gaming-headset-white?variant=50895040807087",
+   "price": 129,
+   "wasPrice": 139,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/71ffANWck6L._AC_SL1500.avif?v=1794856956",
+   "inStock": true,
+   "brand": "Audio-Technica",
+   "mpn": "AUDATHGDL3WH.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
    "sku": "AUDATHM20XWH.FBA",
    "title": "Audio-Technica ATH-M20x Headphones (White)",
    "url": "https://www.electronicsexpo.com/products/audio-technica-ath-m20x-headphones-white",
@@ -174,6 +208,17 @@
   },
   {
    "retailer": "us-electronicsexpo",
+   "sku": "AUDATHM50X2.FBA",
+   "title": "Audio-Technica ATH-M50XBT2 Wireless Headphones, Black",
+   "url": "https://www.electronicsexpo.com/products/audio-technica-ath-m50xbt2-wireless-headphones-black",
+   "price": 219,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1368394.jpg?v=1793987628",
+   "inStock": true,
+   "brand": "Audio-Technica",
+   "mpn": "AUDATHM50X2.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
    "sku": "AUDATHM50XBT2L.FBA",
    "title": "Audio-Technica ATH-M50xBT2 Wireless Over-Ear Headphones (Limited Edition LAB Finish)",
    "url": "https://www.electronicsexpo.com/products/audio-technica-ath-m50xbt2-wireless-over-ear-headphones-limited-edition-lab-finish",
@@ -193,6 +238,18 @@
    "inStock": true,
    "brand": "Audio Technica",
    "mpn": "AUDM50XSTSUSB.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "AUDATHM50XSTSW.FBA",
+   "title": "Audio-Technica ATH-M50xSTS-WL Wireless Headset",
+   "url": "https://www.electronicsexpo.com/products/audio-technica-ath-m50xsts-wl-wireless-headset",
+   "price": 299,
+   "wasPrice": 352,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1773233.jpg?v=1793987633",
+   "inStock": true,
+   "brand": "Audio-Technica",
+   "mpn": "AUDATHM50XSTSW.FBA"
   },
   {
    "retailer": "us-electronicsexpo",
@@ -1094,7 +1151,7 @@
    "price": 129.95,
    "wasPrice": 249.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-live-780nc-wireless-over-ear-noise-cancelling-headphones-product-type-1754836.jpg?v=1791517223",
-   "inStock": false,
+   "inStock": true,
    "mpn": "JBLLIVE780NCBK.FBA"
   },
   {
@@ -1220,8 +1277,7 @@
    "sku": "JBLLIVEPRO2BLU.FBA",
    "title": "JBL Live Pro 2 TWS True Wireless In-Ear Bluetooth Headphones with Adjustable Noise Canceling",
    "url": "https://www.electronicsexpo.com/products/jbl-live-pro-2-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling?variant=41444037296303",
-   "price": 89.95,
-   "wasPrice": 169.95,
+   "price": 169.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-live-pro-2-tws-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling-product-type-3108496.jpg?v=1776376089",
    "inStock": true,
    "mpn": "JBLLIVEPRO2BLU.FBA"
@@ -1231,8 +1287,7 @@
    "sku": "JBLLIVEPRO2BLK.FBA",
    "title": "JBL Live Pro 2 TWS True Wireless In-Ear Bluetooth Headphones with Adjustable Noise Canceling Black",
    "url": "https://www.electronicsexpo.com/products/jbl-live-pro-2-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling?variant=41444037263535",
-   "price": 89.95,
-   "wasPrice": 169.95,
+   "price": 169.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-live-pro-2-tws-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling-product-type-9617104.jpg?v=1776376088",
    "inStock": true,
    "mpn": "JBLLIVEPRO2BLK.FBA"
@@ -1253,8 +1308,7 @@
    "sku": "JBLLIVEPRO2SLV.FBA",
    "title": "JBL Live Pro 2 TWS True Wireless In-Ear Bluetooth Headphones with Adjustable Noise Canceling Silver",
    "url": "https://www.electronicsexpo.com/products/jbl-live-pro-2-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling?variant=41444037329071",
-   "price": 89.95,
-   "wasPrice": 169.95,
+   "price": 169.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-live-pro-2-tws-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling-product-type-7739231.jpg?v=1776376089",
    "inStock": true,
    "mpn": "JBLLIVEPRO2SLV.FBA"
@@ -1686,9 +1740,9 @@
   {
    "retailer": "us-electronicsexpo",
    "sku": "JBLT530BTBLU.FBA",
-   "title": "JBL Tune 530BT (2026) – Wireless On-Ear Bluetooth Headphones",
+   "title": "JBL Tune 530BT Wireless On-Ear Bluetooth Headphones",
    "url": "https://www.electronicsexpo.com/products/jbl-tune-530bt-2026-wireless-on-ear-bluetooth-headphones-white?variant=50847948669103",
-   "price": 29.95,
+   "price": 39.95,
    "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/71IzQEfDYyL._AC_SL1500.avif?v=1794256486",
    "inStock": true,
@@ -1697,9 +1751,9 @@
   {
    "retailer": "us-electronicsexpo",
    "sku": "JBLT530BTBLK.FBA",
-   "title": "JBL Tune 530BT (2026) – Wireless On-Ear Bluetooth Headphones Black",
+   "title": "JBL Tune 530BT Wireless On-Ear Bluetooth Headphones Black",
    "url": "https://www.electronicsexpo.com/products/jbl-tune-530bt-2026-wireless-on-ear-bluetooth-headphones-white?variant=50847948701871",
-   "price": 29.95,
+   "price": 39.95,
    "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/71bxgOa0vCL._AC_SL1500_b69c94d2-dd99-4f43-be0d-c3f76637d6c4.avif?v=1794256477",
    "inStock": true,
@@ -1708,9 +1762,9 @@
   {
    "retailer": "us-electronicsexpo",
    "sku": "JBLT530BTLAV.FBA",
-   "title": "JBL Tune 530BT (2026) – Wireless On-Ear Bluetooth Headphones Purple",
+   "title": "JBL Tune 530BT Wireless On-Ear Bluetooth Headphones Purple",
    "url": "https://www.electronicsexpo.com/products/jbl-tune-530bt-2026-wireless-on-ear-bluetooth-headphones-white?variant=50847948636335",
-   "price": 29.95,
+   "price": 39.95,
    "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/71bW2oGEOYL._AC_SL1500.avif?v=1794256500",
    "inStock": true,
@@ -1719,9 +1773,9 @@
   {
    "retailer": "us-electronicsexpo",
    "sku": "JBLT530BTWHT.FBA",
-   "title": "JBL Tune 530BT (2026) – Wireless On-Ear Bluetooth Headphones White",
+   "title": "JBL Tune 530BT Wireless On-Ear Bluetooth Headphones White",
    "url": "https://www.electronicsexpo.com/products/jbl-tune-530bt-2026-wireless-on-ear-bluetooth-headphones-white?variant=50847948603567",
-   "price": 29.95,
+   "price": 39.95,
    "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/61s3awZfUfL._AC_SL1500.avif?v=1794256451",
    "inStock": true,
@@ -1948,8 +2002,7 @@
    "sku": "JBLT780NCBEG.FBA",
    "title": "JBL Tune 780NC Wireless Over-Ear Noise-Canceling Headphones Beige",
    "url": "https://www.electronicsexpo.com/products/jbl-tune-780nc-wireless-over-ear-noise-canceling-headphones?variant=47158877225135",
-   "price": 79.95,
-   "wasPrice": 149.95,
+   "price": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-tune-780nc-wireless-over-ear-noise-canceling-headphones-product-type-5810476.jpg?v=1783616174",
    "inStock": true,
    "mpn": "JBLT780NCBEG.FBA"
@@ -1981,8 +2034,7 @@
    "sku": "JBLT780NCLAV.FBA",
    "title": "JBL Tune 780NC Wireless Over-Ear Noise-Canceling Headphones Lavender",
    "url": "https://www.electronicsexpo.com/products/jbl-tune-780nc-wireless-over-ear-noise-canceling-headphones?variant=47159042900143",
-   "price": 79.95,
-   "wasPrice": 149.95,
+   "price": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-tune-780nc-wireless-over-ear-noise-canceling-headphones-product-type-8444940.jpg?v=1783702633",
    "inStock": true,
    "mpn": "JBLT780NCLAV.FBA"
@@ -2474,6 +2526,17 @@
   },
   {
    "retailer": "us-electronicsexpo",
+   "sku": "SENOTW1BK.FBA",
+   "title": "Sennheiser ACCENTUM Open Wireless Earbuds, Bluetooth, 28hr Battery, Black",
+   "url": "https://www.electronicsexpo.com/products/sennheiser-accentum-open-wireless-earbuds-ear-buds-with-open-design-dynamic-sound-and-bluetooth-5-3-ipx4-splash-resistance-28-hour-battery-life-and-usb-c-charging-case-black",
+   "price": 129.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1727000.jpg?v=1774969993",
+   "inStock": true,
+   "brand": "Sennheiser",
+   "mpn": "SENOTW1BK.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
    "sku": "SENACAEBTBK.FBA",
    "title": "Sennheiser ACCENTUM Over-Ear Wireless Headphones Black",
    "url": "https://www.electronicsexpo.com/products/sennheiser-accentum-over-ear-wireless-headphones?variant=43071022661807",
@@ -2804,6 +2867,50 @@
    "inStock": false,
    "brand": "Sennheiser",
    "mpn": "SENM4AEBT80TH.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "SENM5AEBTBK.FBA",
+   "title": "Sennheiser Momentum 5 Wireless Over-Ear Noise-Canceling Bluetooth Headphones Black",
+   "url": "https://www.electronicsexpo.com/products/sennheiser-momentum-5-wireless-headphones-anc-57-hr-battery-white?variant=50895223423151",
+   "price": 399.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/Sennheiser_Momentum_5-black.avif?v=1794861550",
+   "inStock": true,
+   "brand": "Sennheiser",
+   "mpn": "SENM5AEBTBK.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "SENM5AEBTBRZ.FBA",
+   "title": "Sennheiser Momentum 5 Wireless Over-Ear Noise-Canceling Bluetooth Headphones Bronze",
+   "url": "https://www.electronicsexpo.com/products/sennheiser-momentum-5-wireless-headphones-anc-57-hr-battery-white?variant=50895234203823",
+   "price": 399.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/SENM5AEBTBRZ-bronze.avif?v=1794862015",
+   "inStock": false,
+   "brand": "Sennheiser",
+   "mpn": "SENM5AEBTBRZ.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "SENM5AEBTLAV.FBA",
+   "title": "Sennheiser Momentum 5 Wireless Over-Ear Noise-Canceling Bluetooth Headphones Lavender",
+   "url": "https://www.electronicsexpo.com/products/sennheiser-momentum-5-wireless-headphones-anc-57-hr-battery-white?variant=50895226994863",
+   "price": 399.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/Sennheiser_Momentum_5-1.avif?v=1794861722",
+   "inStock": false,
+   "brand": "Sennheiser",
+   "mpn": "SENM5AEBTLAV.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "SENM5AEBTWH.FBA",
+   "title": "Sennheiser Momentum 5 Wireless Over-Ear Noise-Canceling Bluetooth Headphones White",
+   "url": "https://www.electronicsexpo.com/products/sennheiser-momentum-5-wireless-headphones-anc-57-hr-battery-white?variant=50895216967855",
+   "price": 399.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1775210.jpg?v=1793988382",
+   "inStock": true,
+   "brand": "Sennheiser",
+   "mpn": "SENM5AEBTWH.FBA"
   },
   {
    "retailer": "us-electronicsexpo",

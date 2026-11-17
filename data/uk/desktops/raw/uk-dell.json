@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:42:55.246Z",
+ "scrapedAt": "2026-11-17T03:47:21.857Z",
  "offers": [
   {
    "retailer": "uk-dell",
@@ -7,7 +7,7 @@
    "brand": "Alienware",
    "title": "Alienware Area-51 Gaming Desktop",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/alienwarearea51aat2250",
-   "price": 4955.9,
+   "price": 4956.13,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/area-51-r8/media-gallery/360mm/desktop-alienware-area51-r8-360-silver-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=605&qlt=100,0&resMode=sharp2&size=605,804",
    "inStock": true,
    "fromPrice": true
@@ -29,7 +29,7 @@
    "brand": "Alienware",
    "title": "Alienware Area-51 Gaming Desktop - Intel Core Ultra 9 285K, 32 GB DDR5, 1 TB SSD",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/alienwarearea51aat2250/aat2250_reg_01",
-   "price": 34955.9,
+   "price": 34956.13,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/area-51-r8/media-gallery/360mm/desktop-alienware-area51-r8-360-silver-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=605&qlt=100,0&resMode=sharp2&size=605,804",
    "inStock": true
   },
@@ -61,7 +61,7 @@
    "brand": "Dell",
    "title": "Dell 24 All-in-One Desktop",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dell24allinoneec24260",
-   "price": 1320.36,
+   "price": 1251.96,
    "image": "https://i.dell.com/assetlink/img/en/aio-dell-24-ec24260-gy-gallery-1-dl1f7mc-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1028&qlt=100,0&resMode=sharp2&size=1028,804",
    "inStock": true,
    "fromPrice": true
@@ -89,45 +89,12 @@
   },
   {
    "retailer": "uk-dell",
-   "sku": "precision5860tower",
-   "brand": "Dell",
-   "title": "Dell Precision 5860 Tower Workstation",
-   "url": "https://www.dell.com/en-gb/shop/workstation/spd/precision5860tower",
-   "price": 3519.94,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/precision-desktops/desktop-precision-5860/media-gallery/desktop-precision-5860-black-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=447&qlt=100,0&resMode=sharp2&size=447,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
    "sku": "precisiontower7875",
    "brand": "Dell",
    "title": "Dell Precision 7875 Tower Workstation",
    "url": "https://www.dell.com/en-gb/shop/workstation/spd/precisiontower7875",
    "price": 4455.94,
    "image": "https://i.dell.com/assetlink/img/en/desktop-precison-7875-black-gallery-1-dl1e3an-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=503&qlt=100,0&resMode=sharp2&size=503,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "precision7960rack",
-   "brand": "Dell",
-   "title": "Dell Precision 7960 Rack",
-   "url": "https://www.dell.com/en-gb/shop/workstation/spd/precision7960rack",
-   "price": 6829.54,
-   "image": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/precision-t7690/media-gallery/rack/server-workstation-precision-r7960-bezel-black-gallery-4.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=3495&qlt=100,0&resMode=sharp2&size=3495,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "precision7960tower",
-   "brand": "Dell",
-   "title": "Dell Precision 7960 Tower Workstation",
-   "url": "https://www.dell.com/en-gb/shop/workstation/spd/precision7960tower",
-   "price": 5340.34,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/precision-t7690/media-gallery/tower/desktop-precision-7960-t-gray-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=595&qlt=100,0&resMode=sharp2&size=595,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -309,28 +276,6 @@
   },
   {
    "retailer": "uk-dell",
-   "sku": "dellproprecision9t4pw9t4260",
-   "brand": "Dell",
-   "title": "Dell Pro Precision 9 T4 Desktop",
-   "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision9t4pw9t4260",
-   "price": 5618.4,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t4-pw9t4260/media-gallery/desktop-dell-pro-precision-pw9t4260-premium-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=549&qlt=100,0&resMode=sharp2&size=549,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellproprecision9t6pw9t6260",
-   "brand": "Dell",
-   "title": "Dell Pro Precision 9 T6 Desktop",
-   "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision9t6pw9t6260",
-   "price": 7022.4,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t6-pw9t6260/media-gallery/desktop-precision-pw9t6260-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=617&qlt=100,0&resMode=sharp2&size=617,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
    "sku": "dellpromaxwithgb10fcm1253",
    "brand": "Dell",
    "title": "Dell Pro Precision with GB10",
@@ -359,17 +304,6 @@
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproslimqcs1250",
    "price": 883.86,
    "image": "https://i.dell.com/assetlink/img/global/desktop-pro-qcs1250-slim-odd-black-gallery-1-dl1feup-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=509&qlt=100,0&resMode=sharp2&size=509,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "dellproslimqcs1255",
-   "brand": "Dell",
-   "title": "Dell Pro Slim Desktop",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproslimqcs1255",
-   "price": 1326.66,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qcs1255/media-gallery/odd/desktop-pro-qcs1255-slim-amd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=414&qlt=100,0&resMode=sharp2&size=414,804",
    "inStock": true,
    "fromPrice": true
   },

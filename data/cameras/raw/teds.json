@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T23:37:03.663Z",
+ "scrapedAt": "2026-11-17T02:42:22.013Z",
  "offers": [
   {
    "retailer": "teds",
@@ -945,6 +945,17 @@
   },
   {
    "retailer": "teds",
+   "sku": "115259",
+   "title": "Nikon D7500 - Body Only",
+   "url": "https://www.teds.com.au/products/nikon-d7500-body-only",
+   "price": 1439.95,
+   "wasPrice": 1599.95,
+   "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/d7500_front.jpg?v=1768968758",
+   "inStock": true,
+   "brand": "Nikon"
+  },
+  {
+   "retailer": "teds",
    "sku": "102709",
    "title": "Nikon FSA-L2 Fieldscope DSLR Camera Attachment",
    "url": "https://www.teds.com.au/products/nikon-fsa-l2-fieldscope-dslr-camera-attachment",
@@ -1130,7 +1141,8 @@
    "sku": "170810",
    "title": "NiSi 100x100mm True Color Square Polarizer",
    "url": "https://www.teds.com.au/products/nisi-100x100mm-true-color-square-polarizer",
-   "price": 299.95,
+   "price": 254.96,
+   "wasPrice": 299.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/170810.jpg?v=1786333421",
    "inStock": true,
    "brand": "NiSi"
@@ -1140,7 +1152,8 @@
    "sku": "150811",
    "title": "NiSi Black Mist 1/4 for Fujifilm X100 Series (Black)",
    "url": "https://www.teds.com.au/products/nisi-black-mist-1-4-for-fujifilm-x100-series-black",
-   "price": 119.95,
+   "price": 101.96,
+   "wasPrice": 119.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/150811.webp?v=1780640443",
    "inStock": true,
    "brand": "NiSi"
@@ -1150,7 +1163,8 @@
    "sku": "171254",
    "title": "NiSi Wide Conversion Lens Kit for Ricoh GR III",
    "url": "https://www.teds.com.au/products/nisi-wide-conversion-lens-kit-for-ricoh-gr-iii",
-   "price": 159.95,
+   "price": 135.96,
+   "wasPrice": 159.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/171254.jpg?v=1786510446",
    "inStock": true,
    "brand": "NiSi"
@@ -1160,7 +1174,8 @@
    "sku": "171255",
    "title": "NiSi Wide Conversion Lens Kit for Ricoh GR IIIx",
    "url": "https://www.teds.com.au/products/nisi-wide-conversion-lens-kit-for-ricoh-gr-iiix",
-   "price": 159.95,
+   "price": 135.96,
+   "wasPrice": 159.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/171255.jpg?v=1786510475",
    "inStock": true,
    "brand": "NiSi"
@@ -1170,7 +1185,8 @@
    "sku": "171253",
    "title": "NiSi Wide Conversion Lens Kit for Ricoh GR IV",
    "url": "https://www.teds.com.au/products/nisi-wide-conversion-lens-kit-for-ricoh-gr-iv",
-   "price": 159.95,
+   "price": 135.96,
+   "wasPrice": 159.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/171253.jpg?v=1786510508",
    "inStock": true,
    "brand": "NiSi"
@@ -1244,7 +1260,7 @@
    "price": 1099.95,
    "wasPrice": 1299.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/om-system-om-5-angle.jpg?v=1768969270",
-   "inStock": true,
+   "inStock": false,
    "brand": "Olympus OM System"
   },
   {
@@ -1818,7 +1834,7 @@
    "price": 169.95,
    "wasPrice": 199.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/polaroid_now_600_g2_instant_camera_-_purple_-_tilt.jpg?v=1770116157",
-   "inStock": true,
+   "inStock": false,
    "brand": "Polaroid"
   },
   {
@@ -1997,7 +2013,8 @@
    "sku": "123213",
    "title": "Sony A7 V Body Only",
    "url": "https://www.teds.com.au/products/sony-a7-mark-v-body-only",
-   "price": 4399.95,
+   "price": 3959.96,
+   "wasPrice": 4399.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/sonu-alpha-a75_3.jpg?v=1768797648",
    "inStock": true,
    "brand": "sony"
@@ -2087,7 +2104,8 @@
    "sku": "119593",
    "title": "Sony RX100 Mark VII Advanced Compact",
    "url": "https://www.teds.com.au/products/sony-rx100-mark-vii",
-   "price": 1799.95,
+   "price": 1619.96,
+   "wasPrice": 1799.95,
    "image": "https://cdn.shopify.com/s/files/1/0588/9464/7339/files/sony_rx100_mark_vii_right-wide-mid.jpg?v=1768797647",
    "inStock": true,
    "brand": "sony"

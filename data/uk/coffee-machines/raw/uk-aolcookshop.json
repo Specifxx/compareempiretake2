@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:34:35.757Z",
+ "scrapedAt": "2026-11-17T03:39:35.573Z",
  "offers": [
   {
    "retailer": "uk-aolcookshop",
@@ -37,7 +37,8 @@
    "sku": "092018",
    "title": "JURA C9 Automatic Coffee Machine Piano Black",
    "url": "https://www.aolcookshop.co.uk/products/jura-c9-automatic-coffee-machine-piano-black",
-   "price": 895,
+   "price": 699,
+   "wasPrice": 895,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAC9AutomaticCoffeeMachinePianoBlack1.webp?v=1793422669",
    "inStock": false,
    "brand": "JURA"
@@ -47,7 +48,8 @@
    "sku": "092011",
    "title": "JURA E10 Automatic Coffee Machine Diamond Black",
    "url": "https://www.aolcookshop.co.uk/products/jura-e10-automatic-coffee-machine?variant=57328033464698",
-   "price": 1425,
+   "price": 1325,
+   "wasPrice": 1425,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAE10AutomaticCoffeeMachineDiamondBlack3.webp?v=1793422643",
    "inStock": true,
    "brand": "JURA"
@@ -57,9 +59,10 @@
    "sku": "092010",
    "title": "JURA E10 Automatic Coffee Machine Onyx Grey",
    "url": "https://www.aolcookshop.co.uk/products/jura-e10-automatic-coffee-machine?variant=57430269165946",
-   "price": 1425,
+   "price": 1149,
+   "wasPrice": 1425,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAE10AutomaticCoffeeMachineOnyxGrey3.webp?v=1793422654",
-   "inStock": false,
+   "inStock": true,
    "brand": "JURA"
   },
   {
@@ -67,7 +70,8 @@
    "sku": "092016",
    "title": "JURA E6 Automatic Coffee Machine Dark Inox",
    "url": "https://www.aolcookshop.co.uk/products/jura-e6-automatic-coffee-machine?variant=57430269395322",
-   "price": 935,
+   "price": 874,
+   "wasPrice": 935,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAE6AutomaticCoffeeMachineDarkInox8_f7736c5e-fef1-4846-b716-5198b9458a39.webp?v=1792399844",
    "inStock": true,
    "brand": "JURA"
@@ -77,7 +81,8 @@
    "sku": "092017",
    "title": "JURA E6 Automatic Coffee Machine Piano Black",
    "url": "https://www.aolcookshop.co.uk/products/jura-e6-automatic-coffee-machine?variant=56063035801978",
-   "price": 935,
+   "price": 874,
+   "wasPrice": 935,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAE6AutomaticCoffeeMachinePianoBlack1_9f892389-1466-4052-a7ae-5e19a6464009.webp?v=1792399844",
    "inStock": true,
    "brand": "JURA"
@@ -87,7 +92,8 @@
    "sku": "092013",
    "title": "JURA E8 Automatic Coffee Machine Cosmic Black",
    "url": "https://www.aolcookshop.co.uk/products/jura-e8-automatic-coffee-machine?variant=57430269231482",
-   "price": 1295,
+   "price": 1175,
+   "wasPrice": 1295,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAE8AutomaticCoffeeMachineCosmicBlack1_59f4a649-ff89-44a7-94ce-04ce01c7954c.webp?v=1792403119",
    "inStock": true,
    "brand": "JURA"
@@ -97,9 +103,10 @@
    "sku": "092014",
    "title": "JURA E8 Automatic Coffee Machine Midnight Silver",
    "url": "https://www.aolcookshop.co.uk/products/jura-e8-automatic-coffee-machine?variant=57430269198714",
-   "price": 1295,
+   "price": 1175,
+   "wasPrice": 1295,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAE8AutomaticCoffeeMachineMidnightSilver1_0dc48d41-a31a-400f-b435-7f86221a4ae2.webp?v=1792403119",
-   "inStock": false,
+   "inStock": true,
    "brand": "JURA"
   },
   {
@@ -107,9 +114,10 @@
    "sku": "092015",
    "title": "JURA E8 Automatic Coffee Machine Piano Black",
    "url": "https://www.aolcookshop.co.uk/products/jura-e8-automatic-coffee-machine?variant=56063315280250",
-   "price": 1295,
+   "price": 1175,
+   "wasPrice": 1295,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAE8AutomaticCoffeeMachinePianoBlack1_5cf3895d-a7c5-4097-a5d4-55a05434d7c7.webp?v=1792403119",
-   "inStock": false,
+   "inStock": true,
    "brand": "JURA"
   },
   {
@@ -117,7 +125,8 @@
    "sku": "092012",
    "title": "JURA E8 Automatic Coffee Machine Piano White",
    "url": "https://www.aolcookshop.co.uk/products/jura-e8-automatic-coffee-machine?variant=57430269264250",
-   "price": 1295,
+   "price": 1175,
+   "wasPrice": 1295,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAE8AutomaticCoffeeMachinePianoWhite1_87a8d918-ecbb-4184-a91f-3977802596ec.webp?v=1792403119",
    "inStock": true,
    "brand": "JURA"
@@ -148,7 +157,8 @@
    "sku": "141015A",
    "title": "JURA ENA 8 Automatic Coffee Machine Nordic White",
    "url": "https://www.aolcookshop.co.uk/products/jura-ena-8-coffee-machine?variant=56063606391162",
-   "price": 1095,
+   "price": 895,
+   "wasPrice": 1095,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAENA8AutomaticCoffeeMachineNordicWhite1.webp?v=1792425947",
    "inStock": true,
    "brand": "JURA",
@@ -159,9 +169,10 @@
    "sku": "141234",
    "title": "JURA GIGA 10 Automatic Coffee Machine Diamond Black",
    "url": "https://www.aolcookshop.co.uk/products/jura-giga-10-automatic-coffee-machine-diamond-black",
-   "price": 3795,
+   "price": 3444.99,
+   "wasPrice": 3795,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAGIGA10AutomaticCoffeeMachineDiamondBlack1.webp?v=1794372952",
-   "inStock": false,
+   "inStock": true,
    "brand": "JURA"
   },
   {
@@ -179,7 +190,8 @@
    "sku": "092005",
    "title": "JURA J10 Twin Automatic Coffee Machine Diamond Onyx",
    "url": "https://www.aolcookshop.co.uk/products/jura-j10-twin-automatic-coffee-machine-diamond-onyx",
-   "price": 2175,
+   "price": 1998.95,
+   "wasPrice": 2175,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAJ10TwinAutomaticCoffeeMachineDiamondOnyx1.webp?v=1793422619",
    "inStock": true,
    "brand": "JURA"
@@ -229,9 +241,10 @@
    "sku": "092002",
    "title": "JURA Z10 Automatic Coffee Machine Aluminium Black",
    "url": "https://www.aolcookshop.co.uk/products/jura-z10-automatic-coffee-machine?variant=57430269329786",
-   "price": 2500,
+   "price": 2200,
+   "wasPrice": 2500,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAZ10AutomaticCoffeeMachineAluminiumBlack3.webp?v=1792400830",
-   "inStock": false,
+   "inStock": true,
    "brand": "JURA"
   },
   {
@@ -239,9 +252,10 @@
    "sku": "092001",
    "title": "JURA Z10 Automatic Coffee Machine Aluminium White",
    "url": "https://www.aolcookshop.co.uk/products/jura-z10-automatic-coffee-machine?variant=56062959911290",
-   "price": 2500,
+   "price": 2200,
+   "wasPrice": 2500,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAZ10AutomaticCoffeeMachineAluminiumWhite3.webp?v=1792400830",
-   "inStock": false,
+   "inStock": true,
    "brand": "JURA"
   },
   {
@@ -249,7 +263,8 @@
    "sku": "092003",
    "title": "JURA Z10 Automatic Coffee Machine Diamond Black",
    "url": "https://www.aolcookshop.co.uk/products/jura-z10-automatic-coffee-machine?variant=56062959944058",
-   "price": 2450,
+   "price": 2249,
+   "wasPrice": 2450,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAZ10AutomaticCoffeeMachineDiamondBlack1.webp?v=1792400830",
    "inStock": true,
    "brand": "JURA"
@@ -259,7 +274,8 @@
    "sku": "092004",
    "title": "JURA Z10 Automatic Coffee Machine Diamond White",
    "url": "https://www.aolcookshop.co.uk/products/jura-z10-automatic-coffee-machine?variant=57430269297018",
-   "price": 2450,
+   "price": 2249,
+   "wasPrice": 2450,
    "image": "https://cdn.shopify.com/s/files/1/0072/1875/7690/files/JURAZ10AutomaticCoffeeMachineDiamondWhite2.webp?v=1792400830",
    "inStock": true,
    "brand": "JURA"

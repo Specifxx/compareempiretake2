@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:31:21.473Z",
+ "scrapedAt": "2026-11-17T03:36:13.121Z",
  "offers": [
   {
    "retailer": "us-prophotosupply",
@@ -721,7 +721,7 @@
    "url": "https://prophotosupply.com/products/canon-powershot-g7-x-mark-iii-kit-black",
    "price": 929.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/3637C001_powershot-g7-x-mark-iii-black_primary.png?v=1723141603",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon",
    "mpn": "3637C001"
   },
@@ -808,7 +808,8 @@
    "sku": "600023616",
    "title": "Fujifilm GFX 100S II Digital Mirrorless Camera",
    "url": "https://prophotosupply.com/products/fujifilm-gfx-100s-ii-digital-mirrorless-camera",
-   "price": 5699.95,
+   "price": 5199.95,
+   "wasPrice": 5699.95,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/600023616.png?v=1715728233",
    "inStock": true,
    "brand": "Fujifilm"
@@ -818,7 +819,8 @@
    "sku": "600023590",
    "title": "Fujifilm GFX100 II Digital Mirrorless Camera Body",
    "url": "https://prophotosupply.com/products/fujifilm-gfx100-ii-digital-mirrorless-camera-body",
-   "price": 8499.95,
+   "price": 7999.95,
+   "wasPrice": 8499.95,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/600023590_MAIN00_Image_GFX100__front_CMOS.png?v=1694534702",
    "inStock": true,
    "brand": "Fujifilm"
@@ -828,7 +830,8 @@
    "sku": "16938039",
    "title": "Fujifilm GFX100RF Digital Mirrorless Camera Black",
    "url": "https://prophotosupply.com/products/fujifilm-gfx100rf-digital-mirrorless-camera?variant=41656487280717",
-   "price": 5599.95,
+   "price": 5099.95,
+   "wasPrice": 5599.95,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/16938039_PT06_Image_GFX100RF_front_hood_black.png?v=1742486002",
    "inStock": true,
    "brand": "Fujifilm"
@@ -838,7 +841,8 @@
    "sku": "16938065",
    "title": "Fujifilm GFX100RF Digital Mirrorless Camera Silver",
    "url": "https://prophotosupply.com/products/fujifilm-gfx100rf-digital-mirrorless-camera?variant=41656487313485",
-   "price": 5599.95,
+   "price": 5099.95,
+   "wasPrice": 5599.95,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/16938065_MAIN00_Image_GFX100RF_front_silver.png?v=1742486002",
    "inStock": true,
    "brand": "Fujifilm"
@@ -971,7 +975,8 @@
    "sku": "16949844",
    "title": "Fujifilm X-E5 Digital Camera Black Body Only",
    "url": "https://prophotosupply.com/products/fujifilm-x-e5-digital-camera?variant=41858747170893",
-   "price": 1699.99,
+   "price": 1599.99,
+   "wasPrice": 1699.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/16949844_Image_MAIN00_X-E5_front_CMOS_black.png?v=1749681283",
    "inStock": true,
    "brand": "Fujifilm"
@@ -981,7 +986,8 @@
    "sku": "16949882",
    "title": "Fujifilm X-E5 Digital Camera Black with XF 23mm f 2.8 Lens Kit",
    "url": "https://prophotosupply.com/products/fujifilm-x-e5-digital-camera?variant=41858747203661",
-   "price": 1899.99,
+   "price": 1799.99,
+   "wasPrice": 1899.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/16949882_Image_MAIN00_X-E5_front_XF23F2_8_black.png?v=1749681283",
    "inStock": false,
    "brand": "Fujifilm"
@@ -991,7 +997,8 @@
    "sku": "16949923",
    "title": "Fujifilm X-E5 Digital Camera Silver Body Only",
    "url": "https://prophotosupply.com/products/fujifilm-x-e5-digital-camera?variant=41858747236429",
-   "price": 1699.99,
+   "price": 1599.99,
+   "wasPrice": 1699.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/16949923_Image_MAIN00_X-E5_front_CMOS_silver.png?v=1749681283",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1001,7 +1008,8 @@
    "sku": "16949961",
    "title": "Fujifilm X-E5 Digital Camera Silver with XF 23mm f 2.8 Lens Kit",
    "url": "https://prophotosupply.com/products/fujifilm-x-e5-digital-camera?variant=41858747269197",
-   "price": 1899.99,
+   "price": 1799.99,
+   "wasPrice": 1899.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/16949961_Image_MAIN00_X-E5_front_XF23F2_8_silver.png?v=1749681283",
    "inStock": false,
    "brand": "Fujifilm"
@@ -1061,7 +1069,8 @@
    "sku": "16781852",
    "title": "Fujifilm X-S20 Digital Mirrorless Camera Body Only",
    "url": "https://prophotosupply.com/products/fujifilm-x-s20-digital-mirrorless-camera?variant=40099217571917",
-   "price": 1499.99,
+   "price": 1399.99,
+   "wasPrice": 1499.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/16781852_MAIN00_Image_X-S20_front_Sensor.jpg?v=1685041141",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1071,7 +1080,8 @@
    "sku": "16781943",
    "title": "Fujifilm X-S20 Digital Mirrorless Camera with 15-45mm Lens Kit",
    "url": "https://prophotosupply.com/products/fujifilm-x-s20-digital-mirrorless-camera?variant=40099217604685",
-   "price": 1899.99,
+   "price": 1799.99,
+   "wasPrice": 1899.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/16781852_PT16_Image_X-S20_front_XC15-45.jpg?v=1685041174",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1131,7 +1141,8 @@
    "sku": "16953974",
    "title": "Fujifilm X-T50 Digital Mirrorless Camera Black",
    "url": "https://prophotosupply.com/products/fujifilm-x-t50-digital-mirrorless-camera?variant=40969652764749",
-   "price": 1599.99,
+   "price": 1499.99,
+   "wasPrice": 1599.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/Preview.png?v=1715724109",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1141,7 +1152,8 @@
    "sku": "16954033",
    "title": "Fujifilm X-T50 Digital Mirrorless Camera Black, with 15-45mm Lens Kit",
    "url": "https://prophotosupply.com/products/fujifilm-x-t50-digital-mirrorless-camera?variant=40969652961357",
-   "price": 1699.99,
+   "price": 1599.99,
+   "wasPrice": 1699.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/Preview_12.png?v=1715724109",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1151,7 +1163,8 @@
    "sku": "16953998",
    "title": "Fujifilm X-T50 Digital Mirrorless Camera Charcoal Silver",
    "url": "https://prophotosupply.com/products/fujifilm-x-t50-digital-mirrorless-camera?variant=40969652830285",
-   "price": 1599.99,
+   "price": 1499.99,
+   "wasPrice": 1599.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/Preview_8.png?v=1715724109",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1161,7 +1174,8 @@
    "sku": "16954057",
    "title": "Fujifilm X-T50 Digital Mirrorless Camera Charcoal Silver, with 15-45mm Lens Kit",
    "url": "https://prophotosupply.com/products/fujifilm-x-t50-digital-mirrorless-camera?variant=40969653026893",
-   "price": 1699.99,
+   "price": 1599.99,
+   "wasPrice": 1699.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/Preview_14.png?v=1715724109",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1171,7 +1185,8 @@
    "sku": "16954021",
    "title": "Fujifilm X-T50 Digital Mirrorless Camera Charcoal Silver, with 16-50mm Kit",
    "url": "https://prophotosupply.com/products/fujifilm-x-t50-digital-mirrorless-camera?variant=40969652928589",
-   "price": 1999.99,
+   "price": 1899.99,
+   "wasPrice": 1999.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/Preview_11.png?v=1715724109",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1181,7 +1196,8 @@
    "sku": "16953986",
    "title": "Fujifilm X-T50 Digital Mirrorless Camera Silver",
    "url": "https://prophotosupply.com/products/fujifilm-x-t50-digital-mirrorless-camera?variant=40969652797517",
-   "price": 1599.99,
+   "price": 1499.99,
+   "wasPrice": 1599.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/Preview_7.png?v=1715724109",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1191,7 +1207,8 @@
    "sku": "16954045",
    "title": "Fujifilm X-T50 Digital Mirrorless Camera Silver, with 15-45mm Lens Kit",
    "url": "https://prophotosupply.com/products/fujifilm-x-t50-digital-mirrorless-camera?variant=40969652994125",
-   "price": 1699.99,
+   "price": 1599.99,
+   "wasPrice": 1699.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/Preview_13.png?v=1715724109",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1201,7 +1218,8 @@
    "sku": "16954019",
    "title": "Fujifilm X-T50 Digital Mirrorless Camera Silver, with 16-50mm Kit",
    "url": "https://prophotosupply.com/products/fujifilm-x-t50-digital-mirrorless-camera?variant=40969652895821",
-   "price": 1999.99,
+   "price": 1899.99,
+   "wasPrice": 1999.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/Preview_10.png?v=1715724109",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1231,7 +1249,8 @@
    "sku": "XPROII-L",
    "title": "Godox XPro II TTL Wireless Transmitter For Leica",
    "url": "https://prophotosupply.com/products/godox-xpro-ttl-transmitter?variant=40067951263821",
-   "price": 129.99,
+   "price": 119.99,
+   "wasPrice": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/products/1655502358_IMG_1775731.png?v=1679682747",
    "inStock": true,
    "brand": "Godox"
@@ -1352,7 +1371,7 @@
    "sku": "NI-1649",
    "title": "Nikon Z 5 Mirrorless Camera Body Only",
    "url": "https://prophotosupply.com/products/nikon-z-5-mirrorless-camera?variant=40026538115149",
-   "price": 999.95,
+   "price": 799.95,
    "wasPrice": 1449.95,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/products/Z5_front.png?v=1675118147",
    "inStock": true,
@@ -2106,7 +2125,7 @@
    "sku": "DSCRX1RM3B",
    "title": "Sony RX1R III Premium Compact Camera",
    "url": "https://prophotosupply.com/products/sony-rx1r-iii-premium-compact-camera",
-   "price": 5099.99,
+   "price": 4899.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/RX1RIII_front.png?v=1752602207",
    "inStock": true,
    "brand": "Sony",
@@ -2117,7 +2136,8 @@
    "sku": "ZV1M2/B",
    "title": "Sony ZV-1 II Vlog Camera",
    "url": "https://prophotosupply.com/products/sony-zv-1-ii-vlog-camera",
-   "price": 999.99,
+   "price": 899.99,
+   "wasPrice": 999.99,
    "image": "https://cdn.shopify.com/s/files/1/0014/9336/8896/files/01ZV-1II_front_on_black.png?v=1684860214",
    "inStock": false,
    "brand": "Sony",

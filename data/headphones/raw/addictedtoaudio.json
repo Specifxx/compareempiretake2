@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T23:25:32.728Z",
+ "scrapedAt": "2026-11-17T02:30:16.137Z",
  "offers": [
   {
    "retailer": "addictedtoaudio",
@@ -450,7 +450,7 @@
    "url": "https://www.addictedtoaudio.com.au/products/astell-kern-novus-in-ear-monitors",
    "price": 8699,
    "image": "https://cdn.shopify.com/s/files/1/0875/3864/files/astell-and-kern-novus-in-ear-monitors.jpg?v=1714612138",
-   "inStock": false,
+   "inStock": true,
    "brand": "Astell&Kern",
    "mpn": "4PSF420-CMGO01"
   },
@@ -741,28 +741,6 @@
    "inStock": true,
    "brand": "Bellos Audio",
    "mpn": "BELLOS.X4.CIEM"
-  },
-  {
-   "retailer": "addictedtoaudio",
-   "sku": "C11257",
-   "title": "Cambridge Audio Melomania A100 True Wireless Earbuds Black",
-   "url": "https://www.addictedtoaudio.com.au/products/cambridge-audio-melomania-a100-true-wireless-earbuds?variant=42135787044998",
-   "price": 239,
-   "image": "https://cdn.shopify.com/s/files/1/0875/3864/files/cambridge-audio-melomania-a100-true-wireless-earbuds-white-5.png?v=1750373386",
-   "inStock": false,
-   "brand": "Cambridge Audio",
-   "mpn": "C11257"
-  },
-  {
-   "retailer": "addictedtoaudio",
-   "sku": "C11258",
-   "title": "Cambridge Audio Melomania A100 True Wireless Earbuds White",
-   "url": "https://www.addictedtoaudio.com.au/products/cambridge-audio-melomania-a100-true-wireless-earbuds?variant=42135787077766",
-   "price": 239,
-   "image": "https://cdn.shopify.com/s/files/1/0875/3864/files/cambridge-audio-melomania-a100-true-wireless-earbuds-white-5.png?v=1750373386",
-   "inStock": false,
-   "brand": "Cambridge Audio",
-   "mpn": "C11258"
   },
   {
    "retailer": "addictedtoaudio",
@@ -1885,7 +1863,7 @@
   },
   {
    "retailer": "addictedtoaudio",
-   "sku": "6953175741282",
+   "sku": "6953175740759",
    "title": "FiiO FD3 & FD3 Pro In Ear Headphones",
    "url": "https://www.addictedtoaudio.com.au/products/fiio-fd3-in-ear-headphones?variant=39438816477318",
    "price": 209,
@@ -3047,8 +3025,7 @@
    "sku": "FOCAL.SPARK.BK",
    "title": "Focal Spark In-Ear Earphones Black",
    "url": "https://www.addictedtoaudio.com.au/products/focal-spark-in-ear-headphones?variant=44451196803",
-   "price": 39,
-   "wasPrice": 109.95,
+   "price": 109.95,
    "image": "https://cdn.shopify.com/s/files/1/0875/3864/products/FocalSparkInEarHeadphones10.jpg?v=1593693709",
    "inStock": false,
    "brand": "Focal"
@@ -4850,7 +4827,7 @@
    "url": "https://www.addictedtoaudio.com.au/products/sennheiser-hd820-closed-back-audiophile-headphones",
    "price": 3499.95,
    "image": "https://cdn.shopify.com/s/files/1/0875/3864/products/SennheiserHD82002.jpg?v=1760072415",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sennheiser"
   },
   {

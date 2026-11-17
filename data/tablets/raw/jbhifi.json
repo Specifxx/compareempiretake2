@@ -1,12 +1,13 @@
 {
- "scrapedAt": "2026-11-15T23:46:52.499Z",
+ "scrapedAt": "2026-11-17T02:40:45.745Z",
  "offers": [
   {
    "retailer": "jbhifi",
    "sku": "803398",
    "title": "Apple iPad 11-inch A16 128GB Wi-Fi (Blue)",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-128gb-wi-fi-blue",
-   "price": 696,
+   "price": 675,
+   "wasPrice": 696,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803398-Product-0-I-638767376421497594.jpg?v=1741140912",
    "inStock": true,
    "brand": "Apple"
@@ -16,7 +17,8 @@
    "sku": "803400",
    "title": "Apple iPad 11-inch A16 128GB Wi-Fi (Pink)",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-128gb-wi-fi-pink",
-   "price": 696,
+   "price": 675,
+   "wasPrice": 696,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803400-Product-0-I-638767379418451953.jpg?v=1741141209",
    "inStock": true,
    "brand": "Apple"
@@ -26,7 +28,8 @@
    "sku": "791808",
    "title": "Apple iPad 11-inch A16 128GB Wi-Fi (Silver)",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-128gb-wi-fi-silver",
-   "price": 696,
+   "price": 675,
+   "wasPrice": 696,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/791808-Product-0-I-638767373420955290.jpg?v=1741140610",
    "inStock": true,
    "brand": "Apple"
@@ -36,7 +39,8 @@
    "sku": "803399",
    "title": "Apple iPad 11-inch A16 128GB Wi-Fi (Yellow)",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-128gb-wi-fi-yellow",
-   "price": 696,
+   "price": 675,
+   "wasPrice": 696,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803399-Product-0-I-638767377020490994.jpg?v=1741140971",
    "inStock": true,
    "brand": "Apple"
@@ -86,7 +90,8 @@
    "sku": "803401",
    "title": "Apple iPad 11-inch A16 256GB Wi-Fi (Blue)",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-256gb-wi-fi-blue",
-   "price": 949,
+   "price": 860,
+   "wasPrice": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803401-Product-0-I-638767395653699687.jpg?v=1741143137",
    "inStock": true,
    "brand": "Apple"
@@ -96,7 +101,8 @@
    "sku": "803403",
    "title": "Apple iPad 11-inch A16 256GB Wi-Fi (Pink)",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-256gb-wi-fi-pink",
-   "price": 949,
+   "price": 860,
+   "wasPrice": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803403-Product-0-I-638767395677977568.jpg?v=1741143135",
    "inStock": true,
    "brand": "Apple"
@@ -106,7 +112,8 @@
    "sku": "791825",
    "title": "Apple iPad 11-inch A16 256GB Wi-Fi (Silver)",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-256gb-wi-fi-silver",
-   "price": 949,
+   "price": 860,
+   "wasPrice": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/791825-Product-0-I-638767396212290654.jpg?v=1741143117",
    "inStock": true,
    "brand": "Apple"
@@ -116,7 +123,8 @@
    "sku": "803402",
    "title": "Apple iPad 11-inch A16 256GB Wi-Fi (Yellow)",
    "url": "https://www.jbhifi.com.au/products/apple-ipad-11-inch-a16-256gb-wi-fi-yellow",
-   "price": 949,
+   "price": 860,
+   "wasPrice": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803402-Product-0-I-638767391560786862.jpg?v=1741142410",
    "inStock": false,
    "brand": "Apple"
@@ -1638,7 +1646,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-pro-13-inch-512gb-wi-fi-cellular-space-blackm5",
    "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807514-Product-0-I-638961731402930604.jpg?v=1760576407",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1949,17 +1957,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "804628",
-   "title": "Samsung Galaxy Tab S10 FE 10.9\" Wi-Fi 128GB (Light Blue)",
-   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s10-fe-10-9-wi-fi-128gb-light-blue",
-   "price": 599,
-   "wasPrice": 849,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/804628-Product-0-I-639232152602432036.jpg?v=1787618528",
-   "inStock": false,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "804631",
    "title": "Samsung Galaxy Tab S10 FE 10.9\" Wi-Fi 128GB (Silver)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s10-fe-10-9-wi-fi-128gb-silver",
@@ -1997,7 +1994,7 @@
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s10-fe-13-1-5g-256gb-grey",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/804640-Product-0-I-638791488137092400.jpg?v=1743552072",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung"
   },
   {
@@ -2032,21 +2029,21 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "804637",
-   "title": "Samsung Galaxy Tab S10 FE+ 13.1\" Wi-Fi 256GB (Grey)",
-   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s10-fe-13-1-wi-fi-256gb-grey",
-   "price": 1299,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/804637-Product-0-I-638791484430315978.jpg?v=1743551716",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "784341",
    "title": "Samsung Galaxy Tab S10 Ultra 14.6\" 5G 1TB (Grey)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s10-ultra-14-6-5g-1tb-grey",
    "price": 2598,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784341-Product-0-I-638640410404526268_2f356308-d52b-4b71-9dea-36fd93821f61.jpg?v=1728511996",
+   "inStock": true,
+   "brand": "Samsung S9"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "784339",
+   "title": "Samsung Galaxy Tab S10 Ultra 14.6\" 5G 256GB (Grey)",
+   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s10-ultra-14-6-5g-256gb-grey",
+   "price": 1548,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784339-Product-0-I-638640413403428724.jpg?v=1728512002",
    "inStock": true,
    "brand": "Samsung S9"
   },
@@ -2277,7 +2274,7 @@
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s12-12-6-5g-256gb-grey",
    "price": 2249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/912946-Product-0-I-639282398255342131.jpg?v=1792982587",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung"
   },
   {

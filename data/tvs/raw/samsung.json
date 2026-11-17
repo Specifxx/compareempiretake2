@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-15T23:35:27.780Z",
+ "scrapedAt": "2026-11-17T02:40:38.452Z",
  "offers": [
   {
    "retailer": "samsung",
@@ -79,6 +79,17 @@
   },
   {
    "retailer": "samsung",
+   "sku": "QA42S90HAEXXY",
+   "mpn": "QA42S90HAEXXY",
+   "brand": "Samsung",
+   "title": "Samsung 42\" OLED S90H 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/oled-tv/s90h-42-inch-4k-smart-tv-qa42s90haexxy/",
+   "price": 1999,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa42s90haexxy/gallery/au-oled-s90h-qa42s90haexxy-thumb-551733540",
+   "inStock": false
+  },
+  {
+   "retailer": "samsung",
    "sku": "UA43U8000HWXXY",
    "mpn": "UA43U8000HWXXY",
    "brand": "Samsung",
@@ -145,17 +156,6 @@
   },
   {
    "retailer": "samsung",
-   "sku": "UA50M70HAWXXY",
-   "mpn": "UA50M70HAWXXY",
-   "brand": "Samsung",
-   "title": "Samsung 50\" Mini LED M70H 4K Samsung Vision AI Smart TV (2026)",
-   "url": "https://www.samsung.com/au/tvs/mini-led-tv/m70h-50-inch-4k-vision-ai-smart-tv-ua50m70hawxxy/",
-   "price": 899,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua50m70hawxxy/gallery/au-mini-led-tv-ua50m70hawxxy-----mini-led-m--h--k-samsung-vision-ai-smart-tv------titanium-black-thumb-551511021",
-   "inStock": true
-  },
-  {
-   "retailer": "samsung",
    "sku": "QA50QN80HAWXXY",
    "mpn": "QA50QN80HAWXXY",
    "brand": "Samsung",
@@ -178,6 +178,17 @@
   },
   {
    "retailer": "samsung",
+   "sku": "MRA55R85HAWXXY",
+   "mpn": "MRA55R85HAWXXY",
+   "brand": "Samsung",
+   "title": "Samsung 55\" Micro RGB R85H 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/micro-rgb/r85h-4k-55-inch-smart-tv-mra55r85hawxxy/",
+   "price": 2199,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/mra55r85hawxxy/gallery/au-microrgb-r85h-mra55r85hawxxy-thumb-551807708",
+   "inStock": false
+  },
+  {
+   "retailer": "samsung",
    "sku": "UA55M1EHAWXXY",
    "mpn": "UA55M1EHAWXXY",
    "brand": "Samsung",
@@ -185,7 +196,7 @@
    "url": "https://www.samsung.com/au/tvs/mini-led-tv/m1eh-55-inch-4k-vision-ai-smart-tv-ua55m1ehawxxy/",
    "price": 949,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua55m1ehawxxy/gallery/au-mini-led-m1eh-ua55m1ehawxxy-thumb-552198168",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "samsung",
@@ -196,7 +207,7 @@
    "url": "https://www.samsung.com/au/tvs/qled-tv/qn1eh-55-inch-neo-qled-4k-vision-ai-smart-tv-qa55qn1ehawxxy/",
    "price": 1499,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa55qn1ehawxxy/gallery/au-qled-tv-qa55qn1ehawxxy-----------------neo-qled-qn-eh--k-samsung-vision-ai-smart-tv--------titanium-gray-thumb-552877087",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "samsung",
@@ -328,18 +339,7 @@
    "url": "https://www.samsung.com/au/tvs/qled-tv/qn70h-65-inch-neo-qled-4k-vision-ai-smart-tv-qa65qn70hawxxy/",
    "price": 1999,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa65qn70hawxxy/gallery/au-qled-qn70h-qa65qn70hawxxy-thumb-552411648",
-   "inStock": false
-  },
-  {
-   "retailer": "samsung",
-   "sku": "QA65QN80HAWXXY",
-   "mpn": "QA65QN80HAWXXY",
-   "brand": "Samsung",
-   "title": "Samsung 65\" Neo QLED QN80H 4K Samsung Vision AI Smart TV (2026)",
-   "url": "https://www.samsung.com/au/tvs/qled-tv/qn80h-65-inch-neo-qled-4k-smart-tv-qa65qn80hawxxy/",
-   "price": 2199,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa65qn80hawxxy/gallery/au-qled-qn80h-qa65qn80hawxxy-thumb-551698154",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",
@@ -372,7 +372,7 @@
    "url": "https://www.samsung.com/au/tvs/oled-tv/s85h-65-inch-oled-4k-smart-tv-qa65s85haexxy/",
    "price": 3299,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa65s85haexxy/gallery/au-oled-tv-qa65s85haexxy-----oled-s--h--k-samsung-vision-ai-smart-tv--------graphite-thumb-551535314",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "samsung",
@@ -416,7 +416,7 @@
    "url": "https://www.samsung.com/au/tvs/micro-rgb/r85h-4k-75-inch-smart-tv-mra75r85hawxxy/",
    "price": 4299,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/mra75r85hawxxy/gallery/au-micro-rgb-mra75r85hawxxy-----micro-rgb-r--h--k-samsung-vision-ai-smart-tv--------titanium-black-thumb-551867757",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "samsung",
@@ -438,6 +438,17 @@
    "url": "https://www.samsung.com/au/tvs/mini-led-tv/m1eh-75-inch-4k-vision-ai-smart-tv-ua75m1ehawxxy/",
    "price": 1499,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua75m1ehawxxy/gallery/au-mini-led-m1eh-ua75m1ehawxxy-thumb-552198825",
+   "inStock": true
+  },
+  {
+   "retailer": "samsung",
+   "sku": "QA75QN1EHAWXXY",
+   "mpn": "QA75QN1EHAWXXY",
+   "brand": "Samsung",
+   "title": "Samsung 75\" Neo QLED QN1EH 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/qled-tv/qn1eh-75-inch-neo-qled-4k-vision-ai-smart-tv-qa75qn1ehawxxy/",
+   "price": 2499,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa75qn1ehawxxy/gallery/au-qled-tv-qa75qn1ehawxxy-----------------neo-qled-qn-eh--k-samsung-vision-ai-smart-tv--------titanium-gray-thumb-552877155",
    "inStock": true
   },
   {
@@ -475,6 +486,28 @@
   },
   {
    "retailer": "samsung",
+   "sku": "QA77S85HAEXXY",
+   "mpn": "QA77S85HAEXXY",
+   "brand": "Samsung",
+   "title": "Samsung 77\" OLED S85H 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/oled-tv/s85h-77-inch-oled-4k-smart-tv-qa77s85haexxy/",
+   "price": 4499,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa77s85haexxy/gallery/au-oled-tv-qa77s85haexxy-----oled-s--h--k-samsung-vision-ai-smart-tv--------graphite-thumb-551536132",
+   "inStock": false
+  },
+  {
+   "retailer": "samsung",
+   "sku": "QA77S90HAWXXY",
+   "mpn": "QA77S90HAWXXY",
+   "brand": "Samsung",
+   "title": "Samsung 77\" OLED S90H 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/oled-tv/s90h-77-inch-4k-smart-tv-qa77s90hawxxy/",
+   "price": 5499,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa77s90hawxxy/gallery/au-oled-tv-qa77s90hawxxy------------------------------------oled-s--h--k-samsung-vision-ai-smart-tv--------graphite-thumb-551531388",
+   "inStock": false
+  },
+  {
+   "retailer": "samsung",
    "sku": "QA77S95FAWXXY",
    "mpn": "QA77S95FAWXXY",
    "brand": "Samsung",
@@ -482,17 +515,6 @@
    "url": "https://www.samsung.com/au/tvs/oled-tv/s95f-77-inch-oled-4k-vision-ai-smart-tv-qa77s95fawxxy/",
    "price": 7999,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa77s95fawxxy/gallery/au-oled-s95f-540418-qa77s95fawxxy-thumb-545432214",
-   "inStock": false
-  },
-  {
-   "retailer": "samsung",
-   "sku": "QA77S95HAEXXY",
-   "mpn": "QA77S95HAEXXY",
-   "brand": "Samsung",
-   "title": "Samsung 77\" OLED S95H 4K Samsung Vision AI Smart TV (2026)",
-   "url": "https://www.samsung.com/au/tvs/oled-tv/s95h-77-inch-oled-4k-vision-ai-smart-tv-qa77s95haexxy/",
-   "price": 7999,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa77s95haexxy/gallery/au-oled-s95h-qa77s95haexxy-thumb-551823948",
    "inStock": false
   },
   {
@@ -585,13 +607,24 @@
   },
   {
    "retailer": "samsung",
-   "sku": "QA85QN80HAWXXY",
-   "mpn": "QA85QN80HAWXXY",
+   "sku": "QA85QN1EHAWXXY",
+   "mpn": "QA85QN1EHAWXXY",
    "brand": "Samsung",
-   "title": "Samsung 85\" Neo QLED QN80H 4K Samsung Vision AI Smart TV (2026)",
-   "url": "https://www.samsung.com/au/tvs/qled-tv/qn80h-85-inch-neo-qled-4k-smart-tv-qa85qn80hawxxy/",
-   "price": 3999,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa85qn80hawxxy/gallery/au-qled-tv-qa85qn80hawxxy-----neo-qled-qn--h--k-samsung-vision-ai-smart-tv--------titanium-black-thumb-553002039",
+   "title": "Samsung 85\" Neo QLED QN1EH 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/qled-tv/qn1eh-85-inch-neo-qled-4k-vision-ai-smart-tv-qa85qn1ehawxxy/",
+   "price": 3499,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa85qn1ehawxxy/gallery/au-qled-qn1eh-qa85qn1ehawxxy-thumb-552876780",
+   "inStock": false
+  },
+  {
+   "retailer": "samsung",
+   "sku": "QA85QN70HAWXXY",
+   "mpn": "QA85QN70HAWXXY",
+   "brand": "Samsung",
+   "title": "Samsung 85\" Neo QLED QN70H 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/qled-tv/qn70h-85-inch-neo-qled-4k-vision-ai-smart-tv-qa85qn70hawxxy/",
+   "price": 3799,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa85qn70hawxxy/gallery/au-qled-qn70h-qa85qn70hawxxy-thumb-552411761",
    "inStock": false
   },
   {

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:27:36.875Z",
+ "scrapedAt": "2026-11-17T03:32:13.189Z",
  "offers": [
   {
    "retailer": "us-bose",
@@ -237,7 +237,7 @@
    "url": "https://www.bose.com/p/speakers/bose-soundlink-micro-portable-speaker-2nd-gen/SLMC2-SPEAKERWIRELESS.html?dwvar_SLMC2-SPEAKERWIRELESS_color=BLACK",
    "price": 129,
    "image": "https://assets.bosecreative.com/transform/e6daa19d-7bf3-4729-b651-0bcd8ea957c8/SLMII-NueBlack_SF_PDP_E-Comm_Gallery_1_1500x1120?format=avif&quality=95",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-bose",
@@ -354,8 +354,18 @@
    "sku": "858365-5110",
    "mpn": "858365-5110",
    "brand": "Bose",
-   "title": "Bose SoundLink Revolve II Bluetooth Speaker",
-   "url": "https://www.bose.com/p/speakers/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS.html",
+   "title": "Bose SoundLink Revolve II Bluetooth Speaker - Black",
+   "url": "https://www.bose.com/p/speakers/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS.html?dwvar_SLRVII-SPEAKERWIRELESS_color=BLACK",
+   "price": 219,
+   "inStock": false
+  },
+  {
+   "retailer": "us-bose",
+   "sku": "858365-5330",
+   "mpn": "858365-5330",
+   "brand": "Bose",
+   "title": "Bose SoundLink Revolve II Bluetooth Speaker - Gray",
+   "url": "https://www.bose.com/p/speakers/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVII-SPEAKERWIRELESS.html?dwvar_SLRVII-SPEAKERWIRELESS_color=GRAY",
    "price": 219,
    "inStock": false
   },

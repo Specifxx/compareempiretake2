@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:30:40.207Z",
+ "scrapedAt": "2026-11-17T03:35:25.785Z",
  "offers": [
   {
    "retailer": "us-listenup",
@@ -1818,28 +1818,6 @@
   },
   {
    "retailer": "us-listenup",
-   "sku": "PER-R5M-BLK",
-   "title": "Perlisten R5M Monitor - THX Dominus, THX Ultra Speaker",
-   "url": "https://www.listenup.com/products/perlisten-r5m-monitor-thx-dominus-thx-ultra-speaker",
-   "price": 2995,
-   "image": "https://cdn.shopify.com/s/files/1/0495/6910/4031/products/fb646a6f-62e0-4f5b-be42-3c95edcc0394.jpg?v=1670366877",
-   "inStock": true,
-   "brand": "Perlisten",
-   "mpn": "PER-R5M-BLK"
-  },
-  {
-   "retailer": "us-listenup",
-   "sku": "PER-R7T-BLK",
-   "title": "Perlisten R7t Loudspeaker - High Gloss Black",
-   "url": "https://www.listenup.com/products/perlisten-r7t-loudspeaker-high-gloss-black",
-   "price": 4995,
-   "image": "https://cdn.shopify.com/s/files/1/0495/6910/4031/products/4ab70c47-f3ff-4cdb-863f-6c463d22c67a.jpg?v=1670366879",
-   "inStock": true,
-   "brand": "Perlisten",
-   "mpn": "PER-R7T-BLK"
-  },
-  {
-   "retailer": "us-listenup",
    "sku": "PLK-ATRIUMSAT3-BRO",
    "title": "Polk Atrium SAT300 Compact Outdoor Loudspeaker",
    "url": "https://www.listenup.com/products/atrium-sat300-compact-staked-outdoor-loudspeaker",
@@ -2454,9 +2432,10 @@
    "sku": "SON-HT-A9000-BLK",
    "title": "Sony BRAVIA Theater Bar 9 with 13 speakers, Dolby Atmos/DTS:X",
    "url": "https://www.listenup.com/products/sony-bravia-theater-bar-9-with-13-speakers-dolby-atmos®-dts-x®",
-   "price": 1498,
+   "price": 1398,
+   "wasPrice": 1498,
    "image": "https://cdn.shopify.com/s/files/1/0495/6910/4031/files/506db04c-8219-4295-9ed3-3e9c9009ed38.jpg?v=1765561168",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony",
    "mpn": "SON-HT-A9000-BLK"
   },
@@ -2465,7 +2444,8 @@
    "sku": "SON-HT-A9M2-WHI",
    "title": "Sony BRAVIA Theater Quad with 16 total speakers, Dolby Atmos/DTS:X",
    "url": "https://www.listenup.com/products/sony-bravia-theater-quad-with-16-total-speakers-dolby-atmos®-dts-x®",
-   "price": 2698,
+   "price": 1998,
+   "wasPrice": 2698,
    "image": "https://cdn.shopify.com/s/files/1/0495/6910/4031/files/ffd47b4a-726c-4460-8ed4-c909027f1dd9.jpg?v=1764108074",
    "inStock": true,
    "brand": "Sony",
@@ -2487,7 +2467,8 @@
    "sku": "SON-HT-AN7-BLK",
    "title": "Sony BRAVIA Theater U Wearable TV Speaker",
    "url": "https://www.listenup.com/products/sony-bravia-theater-u-wearable-tv-speaker",
-   "price": 348,
+   "price": 198,
+   "wasPrice": 348,
    "image": "https://cdn.shopify.com/s/files/1/0495/6910/4031/files/8ba3f2bb-57b5-4676-ae2e-e1038796a258.jpg?v=1750099968",
    "inStock": true,
    "brand": "Sony",

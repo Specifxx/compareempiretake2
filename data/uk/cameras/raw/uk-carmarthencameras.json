@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:39:53.790Z",
+ "scrapedAt": "2026-11-17T03:44:20.801Z",
  "offers": [
   {
    "retailer": "uk-carmarthencameras",
@@ -201,7 +201,7 @@
    "url": "https://carmarthencameras.com/products/canon-eos-r50-camera-with-rf-s-18-45mm-lens-kit",
    "price": 859,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/canon-eos-r50-mirrorless-camera-black-and-rf-s-18-45mm-f4-5-6-3-is-stm-lens-product-front-view-with-lens.webp?v=1737631600",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -538,6 +538,15 @@
    "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/DJI-OsmoPocket4-CreatorCombo1.webp?v=1776338188",
    "inStock": false
+  },
+  {
+   "retailer": "uk-carmarthencameras",
+   "sku": "6937224172258",
+   "title": "DJI Osmo Pocket 4P Vlog Combo - White",
+   "url": "https://carmarthencameras.com/products/dji-osmo-pocket-4p-vlog-combo-white",
+   "price": 605,
+   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/DJI-Osmo-Pocket-4P-Vlog-Combo-White-Product-Photo-9.webp?v=1790780763",
+   "inStock": true
   },
   {
    "retailer": "uk-carmarthencameras",
@@ -1048,7 +1057,7 @@
    "sku": "4547410533644",
    "title": "Fujifilm X-T50 Body - Silver",
    "url": "https://carmarthencameras.com/products/fujifilm-x-t50-body-only-silver",
-   "price": 1399,
+   "price": 1379,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Fujifilm-X-T50_front_CMOS_silver.jpg?v=1715769404",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1313,7 +1322,7 @@
    "url": "https://carmarthencameras.com/products/kodak-pixpro-c1-brown",
    "price": 84.99,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak-Pixpro-C1-Brown-product-photo-8.webp?v=1754036954",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kodak"
   },
   {
@@ -1865,7 +1874,8 @@
    "sku": "4960759903761",
    "title": "Nikon Z50 Mirrorless Digital Camera - Body Only",
    "url": "https://carmarthencameras.com/products/nikon-z50-digital-camera-body-only",
-   "price": 899,
+   "price": 879,
+   "wasPrice": 899,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Nikon-Z50-Product-Photo-1.webp?v=1759418586",
    "inStock": false,
    "brand": "Nikon"
@@ -1920,7 +1930,7 @@
    "price": 1799,
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Nikon-Z7ii-Body-Only-Product-Photo-4.webp?v=1759485809",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon"
   },
   {
@@ -1928,7 +1938,7 @@
    "sku": "4960759910028",
    "title": "Nikon Z8 Camera Body",
    "url": "https://carmarthencameras.com/products/nikon-z8-mirrorless-camera-body-only",
-   "price": 3199,
+   "price": 2899,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Nikon-Z8-Product-Photo-Z8_front.webp?v=1723633075",
    "inStock": true,
@@ -1950,7 +1960,7 @@
    "sku": "4960759920034",
    "title": "Nikon Zf Digital Camera Body - Silver",
    "url": "https://carmarthencameras.com/products/nikon-zf-mirrorless-camera-body-silver",
-   "price": 1949,
+   "price": 1899,
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Nikon-Zf_SL_front.webp?v=1756977990",
    "inStock": true,
@@ -2234,7 +2244,7 @@
    "price": 379,
    "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Panasonic-lumix-DC-FZ82D-product-photo-FZ80DFZ82DFZ85D_front.jpg?v=1719915192",
-   "inStock": false,
+   "inStock": true,
    "brand": "Panasonic"
   },
   {

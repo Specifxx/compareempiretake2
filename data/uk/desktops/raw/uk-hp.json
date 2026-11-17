@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-16T00:45:52.633Z",
+ "scrapedAt": "2026-11-17T03:50:25.530Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -295,7 +295,7 @@
    "price": 1583.99,
    "wasPrice": 2332.79,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/5/7/57b6871d-0f84-4f1d-a4c7-6799ccc55436.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -419,18 +419,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DK4B0AT#ABU",
-   "mpn": "DK4B0AT#ABU",
-   "brand": "HP",
-   "title": "HP EliteDesk 8 Mini G2i Business Desktop Next Gen AI PC, Intel Core Ultra 9, 32GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-elitedesk-8-mini-g2i-desktop-next-gen-ai-pc-wolf-pro-security-edition-dk4b0at-abu",
-   "price": 2495.99,
-   "wasPrice": 2977.51,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/0/2026_movies_moomin_ai_mini_dt_jetblack_nonodd_nonvent_horizontal_catalog_whitebg_front_5520117_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "E22V2EA#ABU",
    "mpn": "E22V2EA#ABU",
    "brand": "HP",
@@ -439,6 +427,18 @@
    "price": 2495.99,
    "wasPrice": 3543.59,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/0/2026_movies_moomin_ai_mini_dt_jetblack_nonodd_nonvent_horizontal_catalog_whitebg_front_5520117_cus_2.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "DK4B0AT#ABU",
+   "mpn": "DK4B0AT#ABU",
+   "brand": "HP",
+   "title": "HP EliteDesk 8 Mini G2i Business Desktop Next Gen AI PC, Intel Core Ultra 9, 32GB, 1TB",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/hp-elitedesk-8-mini-g2i-desktop-next-gen-ai-pc-wolf-pro-security-edition-dk4b0at-abu",
+   "price": 2495.99,
+   "wasPrice": 2977.51,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/0/2026_movies_moomin_ai_mini_dt_jetblack_nonodd_nonvent_horizontal_catalog_whitebg_front_5520117_cus.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -595,6 +595,18 @@
    "price": 2735.99,
    "wasPrice": 3277.43,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/k/a/kazaam_27_pikesilver_kbm_jazz_catalog_ahs_whitebg_front_3210410_cus_1.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "DA3X0EA#ABU",
+   "mpn": "DA3X0EA#ABU",
+   "brand": "HP",
+   "title": "HP HyperX OMEN MAX 45L Gaming Desktop, Intel Core Ultra 7, 32GB, 2TB, NVIDIA GeForce RTX 5080 16GB, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/hyperx-omen-max-45l-gaming-desktop-gt24-0400na-pc-da3x0ea-abu",
+   "price": 3499,
+   "wasPrice": 4000,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/6/26c1_hx_omen_45l_sblack_rtx5090dv2_argb_4x32_coreset_frontright_6476708_cus.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -761,18 +773,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "E41TJEA#ABU",
-   "mpn": "E41TJEA#ABU",
-   "brand": "HP",
-   "title": "HP OMEN 16L Gaming Desktop, Intel Core i7, 16GB, 1TB, NVIDIA GeForce RTX 5060 Ti 8GB, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-16l-gaming-desktop-pc-tg03-1402na-pc-e41tjea-abu",
-   "price": 1869,
-   "wasPrice": 1900,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/5/25c1_omen_16l_n1_mentaliraptorl_shadbl_coreset_frontright_6516601_cus_6.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "BT8E9EA#ABU",
    "mpn": "BT8E9EA#ABU",
    "brand": "HP",
@@ -781,6 +781,18 @@
    "price": 1499,
    "wasPrice": 1549,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/5/25c1_omen_16l_n1_mentaliraptorl_shadbl_coreset_frontright_6516601_cus.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E41TJEA#ABU",
+   "mpn": "E41TJEA#ABU",
+   "brand": "HP",
+   "title": "HP OMEN 16L Gaming Desktop, Intel Core i7, 16GB, 1TB, NVIDIA GeForce RTX 5060 Ti 8GB, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-16l-gaming-desktop-pc-tg03-1402na-pc-e41tjea-abu",
+   "price": 1869,
+   "wasPrice": 1900,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/5/25c1_omen_16l_n1_mentaliraptorl_shadbl_coreset_frontright_6516601_cus_6.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -827,6 +839,17 @@
    "price": 1499,
    "wasPrice": 1999,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/1/2/12aa9289-baf2-4bf1-89d6-ce2e468ee045.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "A9MU5EA#ABU",
+   "mpn": "A9MU5EA#ABU",
+   "brand": "HP",
+   "title": "HP OMEN 35L Gaming Desktop, AMD Ryzen 5, 16GB, 1TB, NVIDIA GeForce RTX 4060, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-0000na-pc-a9mu5ea-abu",
+   "price": 1300,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/6/a6936de6-4afb-43eb-9052-ae13bb106c98.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -900,23 +923,23 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "D01LJEA#ABU",
-   "mpn": "D01LJEA#ABU",
-   "brand": "HP",
-   "title": "HP OMEN 35L Gaming Desktop, AMD Ryzen 7, 32GB, 1TB, NVIDIA GeForce RTX 5070 12GB, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-1003na-pc-d01ljea-abu",
-   "price": 2769,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/7/b714d6d9-98c0-486b-95dd-ef4e26de876a.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "D01LMEA#ABU",
    "mpn": "D01LMEA#ABU",
    "brand": "HP",
    "title": "HP OMEN 35L Gaming Desktop, AMD Ryzen 7, 32GB, 1TB, NVIDIA GeForce RTX 5070 12GB, with Xbox Game Pass",
    "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-1402na-pc-d01lmea-abu",
    "price": 2699,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/7/b714d6d9-98c0-486b-95dd-ef4e26de876a.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "D01LJEA#ABU",
+   "mpn": "D01LJEA#ABU",
+   "brand": "HP",
+   "title": "HP OMEN 35L Gaming Desktop, AMD Ryzen 7, 32GB, 1TB, NVIDIA GeForce RTX 5070 12GB, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-1003na-pc-d01ljea-abu",
+   "price": 2769,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/7/b714d6d9-98c0-486b-95dd-ef4e26de876a.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -1025,6 +1048,17 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "BT7W7EA#ABU",
+   "mpn": "BT7W7EA#ABU",
+   "brand": "HP",
+   "title": "HP OMEN 35L Gaming Desktop, Intel Core Ultra 7, 32GB, 1TB, NVIDIA GeForce RTX 5060 Ti 16GB, with Xbox Game Pass",
+   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-0049na-pc-bt7w7ea-abu",
+   "price": 2899,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/4/24c2_omen_snowball_35l_glass_arctic_liquidcooling_rtx4090_4x8_kingstonfurye_argb_shadowblack_coreset_frontright_4976850_cus_8.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "BT7V9EA#ABU",
    "mpn": "BT7V9EA#ABU",
    "brand": "HP",
@@ -1033,17 +1067,6 @@
    "price": 2349,
    "wasPrice": 2399,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/6/1/611faa42-37e2-4bfc-af33-68e5fd18b454.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "BT7W7EA#ABU",
-   "mpn": "BT7W7EA#ABU",
-   "brand": "HP",
-   "title": "HP OMEN 35L Gaming Desktop, Intel Core Ultra 7, 32GB, 1TB, NVIDIA GeForce RTX 5060 Ti 16GB, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-0049na-pc-bt7w7ea-abu",
-   "price": 2899,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/4/24c2_omen_snowball_35l_glass_arctic_liquidcooling_rtx4090_4x8_kingstonfurye_argb_shadowblack_coreset_frontright_4976850_cus_8.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -1113,18 +1136,6 @@
    "price": 6499.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/9/3/9355b858-ac4c-41c8-bd7b-acc582eac954.png?store=gb-en&image-type=small_image",
    "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DA3X0EA#ABU",
-   "mpn": "DA3X0EA#ABU",
-   "brand": "HP",
-   "title": "HP OMEN MAX 45L Gaming Desktop, Intel Core Ultra 7, 32GB, 2TB, NVIDIA GeForce RTX 5080 16GB, with Xbox Game Pass",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/hyperx-omen-max-45l-gaming-desktop-gt24-0400na-pc-da3x0ea-abu",
-   "price": 3499,
-   "wasPrice": 4000,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/6/26c1_hx_omen_45l_sblack_rtx5090dv2_argb_4x32_coreset_frontright_6476708_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -1559,7 +1570,7 @@
    "price": 796.1,
    "wasPrice": 1139.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/2/7/27266e44-d4c0-4b9a-976b-ef6e5bc31b8a.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2853,17 +2864,6 @@
    "price": 7199.99,
    "wasPrice": 9797.75,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/e/ce7260c7-fa58-4660-b9ad-9a25126f2f58.jpg?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "A9MU5EA#ABU",
-   "mpn": "A9MU5EA#ABU",
-   "brand": "HP",
-   "title": "OMEN 35L Gaming Desktop GT16-0000na PC",
-   "url": "https://www.hp.com/gb-en/shop/products/desktops/omen-35l-gaming-desktop-gt16-0000na-pc-a9mu5ea-abu",
-   "price": 1300,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/6/a6936de6-4afb-43eb-9052-ae13bb106c98.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
