@@ -109,6 +109,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* The visitor's own region (owner, 2026-11-01): moves a person, never a crawler, to their region's copy of the page. lib/region.ts. */}
         <script dangerouslySetInnerHTML={{ __html: REGION_BOOT_SCRIPT }} />
         <link rel="alternate" type="application/rss+xml" title="Compare Empire guides" href="/feed.xml" />
+        {/* Impact reads the non-standard `value` attribute (compareempire.com, added 2026-11-17). */}
+        <meta {...({ name: "impact-site-verification", value: "ac33b0a7-2d32-4f82-b333-5217684fa690" } as object)} />
       </head>
       <body className="min-h-screen font-sans">
         <script
