@@ -1,0 +1,75 @@
+{
+ "site": "dex",
+ "day": "2026-11-17",
+ "region": "US",
+ "hook": [
+  "Same box.",
+  "Half the price."
+ ],
+ "sub": "3 real Pokémon deals from today's US store prices",
+ "deals": [
+  {
+   "siteName": "DexCompare",
+   "topic": "Pokémon",
+   "accent": "#ffcb05",
+   "title": "Paradox Rift Build & Battle Stadium",
+   "cents": 6000,
+   "refCents": 11788,
+   "currency": "USD",
+   "refLabel": "Median store price",
+   "refShort": "median store price",
+   "store": "Devastation Store Miami",
+   "savingPct": 49,
+   "imgFile": "img/0.jpg",
+   "url": "dexcompare.app",
+   "link": "https://dexcompare.app/us/p/paradox-rift-build-and-battle-stadium"
+  },
+  {
+   "siteName": "DexCompare",
+   "topic": "Pokémon",
+   "accent": "#ffcb05",
+   "title": "Chaos Rising - 3 Pack Blister",
+   "cents": 1299,
+   "refCents": 2450,
+   "currency": "USD",
+   "refLabel": "Median store price",
+   "refShort": "median store price",
+   "store": "Apollo's Vault",
+   "savingPct": 47,
+   "imgFile": "img/1.jpg",
+   "url": "dexcompare.app",
+   "link": "https://dexcompare.app/us/p/chaos-rising-3-pack-blister"
+  },
+  {
+   "siteName": "DexCompare",
+   "topic": "Pokémon",
+   "accent": "#ffcb05",
+   "title": "Journey Together - 3 Pack Blister - Scrafty",
+   "cents": 1500,
+   "refCents": 2797,
+   "currency": "USD",
+   "refLabel": "Median store price",
+   "refShort": "median store price",
+   "store": "Devastation Store Miami",
+   "savingPct": 46,
+   "imgFile": "img/2.jpg",
+   "url": "dexcompare.app",
+   "link": "https://dexcompare.app/us/p/journey-together-3-pack-blister-scrafty"
+  }
+ ],
+ "endLine": "dexcompare.app: every store, compared daily.",
+ "sites": [
+  "Pokémon",
+  "Magic",
+  "Lorcana",
+  "Riftbound",
+  "One Piece",
+  "Yu-Gi-Oh!",
+  "Gundam",
+  "Wargames",
+  "Anime figures",
+  "Cameras",
+  "Tech"
+ ],
+ "fine": "US store prices, 17 Nov 2026, before shipping. Prices change. Independent; not affiliated with any brand shown."
+}
