@@ -2220,3 +2220,10 @@ never the quick view, never ranked, best, a deal or an alert. Placement `product
 ## 2026-11-16: urgent release of the "Also on Amazon" line
 
 Amazon clicks were about 0 a day since 13 Nov. The owner approved one urgent production build (subject carries the urgent marker) so the unpriced matched line goes live now instead of waiting for the next daily release. One build, no previews.
+
+## 2026-11-17: "Check Amazon" is a row again, an ordinary one after the store list
+
+Owner: "even if there are no Amazon prices available, we should have an option to check on Amazon in our price rows." With no live Amazon
+price `PinnedMarketplaces` draws the unpriced `AmazonRow` ("Check Amazon": the model's own Amazon page where the ASIN finder matched it,
+else the tagged search) AFTER the store list, on the product page and in the quick view. A priced Amazon row still goes under the
+cheapest store as before. Never ranked, a price or the best price. It replaces the 2026-11-16 line in the marketplaces box.

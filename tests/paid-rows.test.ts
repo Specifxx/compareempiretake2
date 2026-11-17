@@ -8,7 +8,9 @@ test("the phone Amazon row needs a live price", () => {
   assert.match(src, /const amazonHref = live\?\.price \? /);
 });
 
-test("Amazon also-line: one unpriced line in the marketplaces box, product page only, only for a matched ASIN", () => {
+test("Check Amazon (owner, 2026-11-17): an unpriced ordinary row after the store list, page and quick view", () => {
   const s = readFileSync(new URL("../src/components/PhoneOffers.tsx", import.meta.url), "utf8");
-  assert.match(s, /const amazonAlso = !compact && !amazonHref && found\?\.url \? found\.url : null;/);
+  assert.match(s, /const unpricedHref = !amazonHref && amazonStore\(region\)/);
+  assert.match(s, /part !== "rows" && unpricedHref && <AmazonRow/);
+  assert.doesNotMatch(s, /amazonAlso/);
 });
