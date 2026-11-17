@@ -11,6 +11,7 @@
 // browser, once, and the same button opens the remaining stores. Every link is the row's own tagged link, never a plain one. (2026-11-17, owner: all the tabs or nothing, never a one-at-a-time walk.)
 // The cart lives in this browser only (src/lib/cart-list.ts); /cart stays as the no-script page.
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { createPortal } from "react-dom";
 import { cartRef, formatMoney, groupByStore, onCartChange, readCart, setQty, writeCart, type CartLine } from "@/lib/cart-list";
 import { browserKind, buildCheckout, checkLines, isGone, openAll, popupSteps, readPopupMemory, writePopupMemory, type CheckoutItem, type Checks } from "@/lib/cart-checkout";
@@ -281,9 +282,9 @@ export function CartDrawer({ open, onClose }: { open: boolean; onClose: () => vo
                 </button>
               )}
               <div className="cd-links2">
-                <a href="/cart" onClick={onClose}>
+                <Link href="/cart" prefetch={false} onClick={onClose}>
                   Full cart page
-                </a>
+                </Link>
                 <button
                   type="button"
                   onClick={() => {
