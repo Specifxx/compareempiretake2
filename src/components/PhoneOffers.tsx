@@ -327,7 +327,7 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
     { kind: "marketplace-refurbished", href: ebaySearch(mq, { condition: "refurbished", customid: `${cid}-refurb`, phones, region }), title: "Refurbished on eBay", note: "Often far cheaper; check the warranty" },
     { kind: "marketplace-used", href: ebaySearch(mq, { condition: "used", customid: `${cid}-used`, phones, region }), title: "Used on eBay", note: `The cheapest way in, ${ebaySellers(region)}` },
   ];
-  // Owner, 2026-11-17: affiliated rows at the top, cheapest price first; an unpriced row (a search, Check Amazon) after the priced ones, eBay before Amazon.
+  // Owner, 2026-11-17 (final): affiliated rows at the top: eBay, then Amazon (priced or the unpriced Check Amazon).
   const ebayNode = phone.ebay ? (
     <EbayListingRow listing={phone.ebay} product={product} money={$} cheapest={cheapest} locale={R.locale} timeZone={R.timeZone} cart={compact ? undefined : { title: phone.name, image: phone.image ?? null, currency: R.currency }} />
   ) : (
@@ -338,10 +338,7 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
   ) : unpricedHref ? (
     <AmazonRow query={mq} product={product} placement={compact ? "quickview" : "check"} href={unpricedHref} name={amazonName} cart={{ title: phone.name, priceCents: 0, currency: R.currency, image: phone.image ?? null }} />
   ) : null;
-  const ebayCents = phone.ebay ? Math.round(phone.ebay.price * 100) : null;
-  const amazonCents = live?.price ? Math.round(live.price * 100) : null;
-  const amazonFirst = amazonCents !== null && (ebayCents === null || amazonCents < ebayCents);
-  const paidRows = amazonFirst ? [amazonNode, ebayNode] : [ebayNode, amazonNode];
+  const paidRows = [ebayNode, amazonNode]; // owner, 2026-11-17 (final): eBay first, then Amazon (priced or Check), above the stores
   return (
     <div className={part === "rows" ? "space-y-2.5" : part === "more" ? "mt-2.5" : "mb-2.5 space-y-2.5"} aria-label="Amazon and eBay">
       {part !== "more" && paidRows.map((n, i) => n && <Fragment key={i}>{n}</Fragment>)}

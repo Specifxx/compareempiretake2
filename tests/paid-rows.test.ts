@@ -23,8 +23,7 @@ test("affiliate rows lead the store list on the page and in the quick view (owne
   }
 });
 
-test("eBay and Amazon rows are ordered by price, unpriced after, eBay before Amazon (owner, 2026-11-17)", () => {
+test("eBay first, then Amazon (priced or Check), above the stores (owner, 2026-11-17, final)", () => {
   const s = readFileSync(new URL("../src/components/PhoneOffers.tsx", import.meta.url), "utf8");
-  assert.match(s, /const amazonFirst = amazonCents !== null && \(ebayCents === null \|\| amazonCents < ebayCents\);/);
-  assert.match(s, /const paidRows = amazonFirst \? \[amazonNode, ebayNode\] : \[ebayNode, amazonNode\];/);
+  assert.match(s, /const paidRows = \[ebayNode, amazonNode\];/);
 });
