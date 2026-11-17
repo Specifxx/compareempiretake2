@@ -20,6 +20,7 @@ import { CONTACT_EMAIL, SITE } from "@/lib/site";
 import "./globals.css";
 // The cart list's styles (components/cart): imported here, never from a component, so node tests can load them.
 import "@/components/cart/cart.css";
+import "@/components/cart/cart-drawer.css";
 import "@/components/site-reviews/site-reviews.css";
 import { CHRISTMAS_FESTIVE_LAYER, SEASON_BOOT_SCRIPT } from "@/lib/season";
 
