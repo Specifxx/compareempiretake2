@@ -1,6 +1,6 @@
 {
   "publisherId": 3144410,
-  "checkedAt": "2026-11-15T22:05:35.042Z",
+  "checkedAt": "2026-11-17T01:05:32.042Z",
   "promotions": [
     {
       "id": 4169199,
@@ -195,16 +195,6 @@
         "GB"
       ],
       "code": "NEW10"
-    },
-    {
-      "id": 4144697,
-      "advertiserId": 3326,
-      "type": "promotion",
-      "title": "Fellowes Powershred P-25S Strip-Cut 5 Sheet Shredder",
-      "description": "Was £24.99 Now £19.99 Save £5",
-      "start": "2026-10-20T08:50:00.000Z",
-      "end": "2026-11-16T09:49:00.000Z",
-      "regions": "all"
     },
     {
       "id": 4144635,
@@ -516,6 +506,18 @@
       "code": "SIGLENS175"
     },
     {
+      "id": 4170451,
+      "advertiserId": 25687,
+      "type": "promotion",
+      "title": "Special Price on the Zeiss Secacam 1 Trail Camera",
+      "description": "Zeiss Secacam 1 Trail Camera: £84.99, reduced from £95. Save £10.01. No code required.",
+      "start": "2026-11-16T00:00:00.000Z",
+      "end": "2026-12-06T23:59:59.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
       "id": 4129879,
       "advertiserId": 25687,
       "type": "promotion",
@@ -727,6 +729,48 @@
       "start": "2026-06-24T15:43:00.000Z",
       "end": "2027-06-30T22:59:00.000Z",
       "regions": "all"
+    },
+    {
+      "id": 4173894,
+      "advertiserId": 35221,
+      "type": "promotion",
+      "title": "Stumptown Holiday Gift Guide",
+      "description": "Stumptown Coffee Holiday Gift Guide",
+      "start": "2026-11-13T14:22:00.000Z",
+      "end": "2026-11-30T14:18:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 3656342,
+      "advertiserId": 35221,
+      "type": "promotion",
+      "title": "15% off first 5 subscription orders (affiliate exclusive offer!)",
+      "description": "15% off first 5 sub orders with code 15-OFF-FIVE",
+      "start": "2026-01-01T11:49:00.000Z",
+      "end": "2027-01-01T07:59:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 3500720,
+      "advertiserId": 35221,
+      "type": "voucher",
+      "title": "Save 10% off your first order",
+      "description": "Save 10% off your first order at StumptownCoffee.com",
+      "start": "2025-10-21T15:24:00.000Z",
+      "end": "2027-12-31T22:59:00.000Z",
+      "regions": "all",
+      "code": "SAVE10"
+    },
+    {
+      "id": 3500696,
+      "advertiserId": 35221,
+      "type": "voucher",
+      "title": "30% off your first order with a new subscription",
+      "description": "30% off your first order with a new subscription",
+      "start": "2025-10-21T15:06:00.000Z",
+      "end": "2027-12-31T22:59:00.000Z",
+      "regions": "all",
+      "code": "SAVE30"
     },
     {
       "id": 4171415,
