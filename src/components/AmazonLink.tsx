@@ -19,9 +19,9 @@ const track = (p: Props) => ({ "data-buy": "amazon", "data-buy-kind": `amazon-${
  * A row shaped like the store rows on a product page, pinned above them. Never in Amazon's own colours
  * (2026-11-02: the Associates Operating Agreement forbids styling that could pass for Amazon's site). `href`/`name` override the AU link for the US and UK, which have no tag yet.
  */
-export function AmazonRow({ href, name = "Amazon AU", live, cart, ...p }: Props & { href?: string; name?: string; live?: { text: string; at: string; zone?: { locale: string; timeZone: string; label: string } }; /** With a live price, the cart list's line (owner, 2026-11-06: like a store row; lib/cart-list.ts keeps it 24 hours). */ cart?: { title: string; priceCents: number; currency: string; image?: string | null } }) {
+export function AmazonRow({ href, name = "Amazon AU", live, cart, ...p }: Props & { href?: string; name?: string; live?: { text: string; at: string; zone?: { locale: string; timeZone: string; label: string } }; /** The cart list's line (owner, 2026-11-17: every row gets one; without a live price it is an unpriced search line) (owner, 2026-11-06: like a store row; lib/cart-list.ts keeps it 24 hours). */ cart?: { title: string; priceCents: number; currency: string; image?: string | null } }) {
   const url = href ?? amazonAuLink(p.query);
-  const add = live && cart ? { href: url, productUrl: url, storeName: name, title: cart.title, priceCents: cart.priceCents, currency: cart.currency, image: cart.image ?? null } : null;
+  const add = cart ? { href: url, productUrl: url, storeName: name, title: cart.title, priceCents: live ? cart.priceCents : 0, currency: cart.currency, image: cart.image ?? null } : null;
   return (
     <a href={url} target="_blank" rel={AMAZON_REL} {...track(p)} className={`card flex items-center gap-3 p-4 transition hover:border-brand/40 hover:shadow-lift sm:gap-4 ${PIN_OUTLINE.amazon}`}>
       <div className="min-w-0 flex-1">

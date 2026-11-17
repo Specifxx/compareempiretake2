@@ -334,20 +334,22 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
       ) : (
         <EbaySearchRow href={ebaySearch(mq, { condition: "new", customid: `${cid}-pinned`, phones, region })} product={product} sellers={ebaySellers(region)} />
       )}
-      {part !== "more" && amazonHref && <AmazonRow query={mq} product={product} placement={compact ? "quickview" : live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} cart={live?.price ? { title: phone.name, priceCents: Math.round(live.price * 100), currency: R.currency, image: phone.image ?? null } : undefined} />}
-      {part !== "rows" && unpricedHref && <AmazonRow query={mq} product={product} placement={compact ? "quickview" : "check"} href={unpricedHref} name={amazonName} />}
+      {part !== "more" && amazonHref && <AmazonRow query={mq} product={product} placement={compact ? "quickview" : live ? "product-asin" : "product"} href={amazonHref} name={amazonName} live={live?.price && live.at ? { text: $(live.price), at: live.at, zone: { locale: REGIONS[region].locale, timeZone: REGIONS[region].timeZone, label: AMAZON_CLOCK[region] } } : undefined} cart={{ title: phone.name, priceCents: live?.price ? Math.round(live.price * 100) : 0, currency: R.currency, image: phone.image ?? null }} />}
+      {part !== "rows" && unpricedHref && <AmazonRow query={mq} product={product} placement={compact ? "quickview" : "check"} href={unpricedHref} name={amazonName} cart={{ title: phone.name, priceCents: 0, currency: R.currency, image: phone.image ?? null }} />}
       {compact || part === "rows" ? null : (
       <div className="rounded-lg border border-brand/50 bg-brand-soft p-3 sm:p-4">
         <div className="text-sm font-bold text-brand">Also check the marketplaces</div>
         <div className="mt-2 grid gap-2 sm:grid-cols-3">
           {more.map((m) => (
-            <a key={m.kind} data-buy="ebay" data-buy-product={product} data-buy-kind={m.kind} href={m.href} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between gap-2 rounded-xl border border-brand/30 bg-bg-card px-3 py-2.5 text-sm transition hover:border-brand">
+            <div key={m.kind} className="flex flex-col items-start gap-1"><a data-buy="ebay" data-buy-product={product} data-buy-kind={m.kind} href={m.href} target="_blank" rel={SPONSORED_REL} className="flex items-center justify-between gap-2 rounded-xl border border-brand/30 bg-bg-card px-3 py-2.5 text-sm transition hover:border-brand">
               <span className="min-w-0">
                 <span className="font-semibold text-brand">{m.title}</span>
                 <span className="block text-[11px] text-ink-soft">{m.note}</span>
               </span>
               <ExternalIcon className="h-4 w-4 shrink-0 text-brand" />
             </a>
+            <CartAddButton href={m.href} productUrl={m.href} storeName={m.title} title={phone.name} detail="Search results" priceCents={0} currency={R.currency} image={phone.image ?? null} className="text-xs text-ink-mute" />
+            </div>
           ))}
         </div>
         <p className="mt-2 text-[11px] text-ink-soft">
@@ -366,10 +368,12 @@ export function PinnedMarketplaces({ phone, variantId, variantQuery: mq, product
             {bigStores.map((s) => {
               const l = storeLink(s.url, `bigchain-${phone.category}`);
               return (
-                <a key={s.name} href={l.href} target="_blank" rel={l.rel} data-buy="bigchain" data-buy-product={product} data-buy-kind={`bigchain-${s.name.toLowerCase().replace(/[^a-z0-9]+/g, "")}`} className="inline-flex items-center gap-1 rounded-xl border border-line px-3 py-2 text-xs font-semibold transition hover:border-brand/40">
+                <span key={s.name} className="inline-flex flex-col items-start gap-1"><a href={l.href} target="_blank" rel={l.rel} data-buy="bigchain" data-buy-product={product} data-buy-kind={`bigchain-${s.name.toLowerCase().replace(/[^a-z0-9]+/g, "")}`} className="inline-flex items-center gap-1 rounded-xl border border-line px-3 py-2 text-xs font-semibold transition hover:border-brand/40">
                   Search {s.name} <ExternalIcon className="h-3 w-3" />
                   {l.paid && <span className="text-[10px] font-normal text-ink-mute">Paid link</span>}
                 </a>
+                <CartAddButton href={l.href} productUrl={l.href} storeName={s.name} title={phone.name} detail="Search results" priceCents={0} currency={R.currency} image={phone.image ?? null} className="text-xs text-ink-mute" />
+                </span>
               );
             })}
           </div>
