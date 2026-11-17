@@ -2251,3 +2251,14 @@ Applied here (the full reasoning is in DexCompare's DECISIONS.md, same date):
   drawer); "Total before postage" became "Estimated total (before postage)"; the add button's tooltip says you pay at the store. The label stays
   "Add to cart" (owner, 2026-11-14: a literal "Add to cart" on every row).
 - **The quick view sets the tab title and description while it is open** and restores them on close (the tab used to keep the list's title).
+
+## 2026-11-17: The JB Hi-Fi runners uploaded every old file, so fresh categories were overwritten
+
+The 2026-11-11 four-runner job read JB Hi-Fi correctly (run of 16 Nov: headphones 947 offers, tablets 239, TVs 222, robot vacuums 58,
+soundbars 63) but the commit job said "76 category files from the JB runners ... No changes". Each runner uploaded
+`data/*/raw/jbhifi.json`, which matches all 19 files in its checkout, old ones included, and the commit job copied the first
+copy it found per path, usually another runner's stale one. On `main` soundbars, headphones, speakers, consoles, cameras, drones,
+robot vacuums, vacuums and coffee machines were still 2 to 3 weeks old, so the three-day rule (2026-11-04) kept dropping JB from
+them. Now each runner marks its start, uploads only the files written after it (`find -newer`), and the commit job copies those.
+No scraper, page, price rule or deploy marker changed; the fix shows in the next JB run and the daily refresh after it.
+Check: `data/status.json` should show every JB category under 3 days old after 19 Nov.
