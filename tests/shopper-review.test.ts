@@ -74,11 +74,11 @@ test("camera bags, holsters, books and supplies are not cameras", () => {
   ]) assert.equal(isMoreAccessory("cameras", t), false, t);
 });
 
-test("ads sit under the cheapest store, never above it, on the product page and in the quick view", () => {
+test("affiliate rows lead the list, eBay then Amazon, on the product page and in the quick view (owner, 2026-11-17 reverses the 2026-11-06 review)", () => {
   for (const f of ["src/components/PhoneOffers.tsx", "src/components/QuickView.tsx"]) {
     const src = readFileSync(f, "utf8");
-    assert.match(src, /i === 0 && <li><PinnedMarketplaces[^>]*part="rows"/, f);
-    assert.doesNotMatch(src, /<PinnedMarketplaces[^>]*\/>\s*\{(rows\.length|tab === "outright")/, `${f}: no ad block above the store list`);
+    assert.match(src, /<li><PinnedMarketplaces[^\n]*part="rows" \/><\/li>\}?\n\s+\{rows\.map/, f);
+    assert.doesNotMatch(src, /i === 0 && <li><PinnedMarketplaces/, `${f}: not after the first store`);
   }
 });
 

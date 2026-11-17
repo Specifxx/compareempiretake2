@@ -7,6 +7,7 @@ import { HolidayStrip } from "@/components/HolidayStrip";
 import { saleStrip } from "@/lib/black-friday";
 import { Footer } from "@/components/Footer";
 import { CompareTray } from "@/components/CompareTray";
+import { QuickView } from "@/components/QuickView";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { RateCard } from "@/components/site-reviews/RateCard";
 import { PhoneDock } from "@/components/PhoneDock";
@@ -140,8 +141,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <CompareTray />
-        {/* No quick view since the 2026-11-10 redesign: a product card opens the product page, as on the big comparison
-            sites (fewer /api/products calls, one place to compare). components/QuickView.tsx stays for a while. */}
+        {/* The quick view is back (owner, 2026-11-17: "quick view open must apply to all product"): a click on any product link opens it
+            (the 2026-11-10 redesign had unmounted it). tests/quick-view-all-links.test.ts pins the mount. */}
+        <QuickView />
         <FeedbackWidget />
         {/* Rate us (owner, 2026-11-03): the corner card, asking only after real use; RiftCompare keeps the ratings. */}
         <RateCard />
