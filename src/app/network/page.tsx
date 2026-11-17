@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CLUSTER_NAMES, FAMILY_SITES, type ClusterId } from "@/lib/family-network";
+import { CLUSTER_NAMES, FAMILY_SITES, sameSide, type ClusterId } from "@/lib/family-network";
 
 // The Compare Empire network page (DECISIONS.md "Sites that grow each other", 2026-11-02): the one page
 // every sister site's footer links ("A Compare Empire site"), listing every site once, grouped the way
@@ -32,7 +32,7 @@ export default function NetworkPage() {
           <h2 id={`network-${c}`} className="font-display text-2xl font-bold tracking-tight">{CLUSTER_NAMES[c]}</h2>
           <p className="mt-1 text-sm text-ink-mute">{INTRO[c]}</p>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-            {FAMILY_SITES.filter((s) => s.clusters[0] === c || (c === "hobby" && s.clusters.includes("hobby"))).map((s) => (
+            {FAMILY_SITES.filter((s) => sameSide("empire", s.id) && (s.clusters[0] === c || (c === "hobby" && s.clusters.includes("hobby")))).map((s) => (
               <li key={`${c}-${s.id}`} className="card p-4">
                 {s.id === "empire" ? (
                   <Link prefetch={false} href="/" className="font-semibold hover:underline">{s.name}</Link>
