@@ -86,7 +86,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
             <CartHeaderLink className="shrink-0 text-ink-soft hover:text-ink" />
             {regions.length > 1 && <RegionSwitcher regions={regions} nav={nav} />}
             <ThemeToggle />
-            <button className="grid h-10 w-10 shrink-0 place-items-center rounded-lg text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu">
+            <button className="grid h-10 w-10 shrink-0 place-items-center rounded-lg text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu" aria-expanded={menu} data-bn-menu>
               {menu ? <CloseIcon /> : <MenuIcon />}
             </button>
           </div>

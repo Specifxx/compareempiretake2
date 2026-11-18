@@ -2290,3 +2290,17 @@ The owner wants every site's home page to lead with the items most likely to ear
 - Measure: buy clicks per visitor sitewide and on home pages, the week before (11-18 Nov) against the two weeks after the release;
   a demand file under 30 views for a list means that list ran on the fallback and is read apart.
 - Here: the home page's price drops (pool of 18, show 6), "most compared" phones (pool of 30, show 10) and each category's four tiles (pool of 12) rank by `/<category>/<slug>` views in any region and value; the old order is the pool and the fallback. Site key `ce`, written into the daily data commit.
+
+## 2026-11-18: Phone bottom nav, opt-in first (owner)
+
+The owner tried TCG Prices' bottom nav on his phone ("looks good … a bit of lag") and asked for it on every site, smoother.
+This is that bar (`src/components/BottomNav.tsx`, the same file on every site that has it; this site's tabs and switch in
+`src/lib/bottom-nav.ts`): Home (the region's home), Search, Deals (the region's), Cart, Menu. Below 768px only, browser only (nothing in the server HTML, so SEO, the first paint and CLS are
+untouched). It sits flush at `bottom: 0` and moves on `transform` alone; it never measures the address bar (the cause of
+RiftCompare's deleted bar, 2026-09-18). The scroll handler reads `scrollY` and writes two attributes, nothing else: no layout
+reads, no React re-render, no backdrop blur (each repaints every scroll frame on a phone). It hides on scroll down, returns on the
+first 4px upward flick, and stays away while zoomed, typing, over a dialog, the menu or the open cart, over a buy bar, and over
+any Add to cart button in its strip. The phone ad dock yields while it shows (`html[data-bottomnav]`): one bar at a time.
+The menu tab clicks the element marked `data-bn-menu`. `BOTTOM_NAV` is the switch: "optin" (only `?bn=1`, kept in
+localStorage) until this site passes the phone tests, then "on"; "off" is the rollback. `?bn=0` always opts a visitor out.
+`tests/bottom-nav.test.ts` pins all of it.

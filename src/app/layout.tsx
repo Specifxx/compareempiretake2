@@ -24,6 +24,8 @@ import "@/components/cart/cart.css";
 import "@/components/cart/cart-drawer.css";
 import "@/components/site-reviews/site-reviews.css";
 import { CHRISTMAS_FESTIVE_LAYER, SEASON_BOOT_SCRIPT } from "@/lib/season";
+import { BottomNav } from "@/components/BottomNav";
+import { BOTTOM_NAV } from "@/lib/bottom-nav";
 
 // Self-hosted (OFL, from Fontsource) so builds never depend on fetching Google Fonts.
 const sans = localFont({ src: "./fonts/inter-latin-wght-normal.woff2", variable: "--font-sans", display: "swap", weight: "100 900" });
@@ -151,6 +153,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <PhoneDock />
         <SiteAnalytics />
         <ShareArrival />
+        {/* The phone bottom nav (components/BottomNav.tsx, lib/bottom-nav.ts): browser only, phones only, BOTTOM_NAV is its switch. */}
+        {BOTTOM_NAV !== "off" && <BottomNav mode={BOTTOM_NAV} />}
       </body>
     </html>
   );
