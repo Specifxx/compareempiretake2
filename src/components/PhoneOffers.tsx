@@ -7,6 +7,7 @@ import { AmazonNote, AmazonRow } from "./AmazonLink";
 import { bigStoresFor } from "@/lib/big-stores";
 import { AMAZON_PRICE_DISCLAIMER } from "./AmazonLivePrice";
 import { amazonLink, amazonStore } from "@/lib/amazon";
+import { BEST_TAG_CLASS, bestPriceHint, bestTreatment } from "@/lib/best-price";
 import { EbayListingRow, EbaySearchRow, PIN_OUTLINE, ebayIsCheapest } from "./EbayListingRow";
 import { REGIONS, withRegion } from "@/lib/region";
 import { ebaySearch, ebaySellers, SPONSORED_REL } from "@/lib/ebay";
@@ -427,6 +428,11 @@ export function OutrightRow({
 }) {
   const { $, R } = useRegionKit();
   const link = storeLink(o.url, "row");
+  // Owner, 2026-11-18: the cheapest mark is loud only when the link pays us; a plain store gets a small neutral tag and a note
+  // (an eBay row is on every list: the listing or its search row). An eBay cheapest listing already took the store's mark.
+  const best_ = bestTreatment(i === 0 && o.inStock && !ebayCheapest, link.paid);
+  const loud = i === 0 && o.inStock && (ebayCheapest ? link.paid : best_ === "loud");
+  const hint = best_ === "plain" ? bestPriceHint({ ebay: true }) : null;
   // The cart list (components/cart, owner 2026-11-06): a Shopify listing with no programme checks out at the
   // store's cart; the rest keep this row's own (Awin-tracked) link.
   const add =
@@ -443,13 +449,14 @@ export function OutrightRow({
       data-buy-price={o.price}
       data-buy-rank={i + 1}
       data-buy-kind="outright"
-      className={`card flex items-center gap-3 p-3.5 transition hover:border-brand/50 sm:gap-4 sm:p-4 ${i === 0 && o.inStock ? PIN_OUTLINE.cheapest : ""}`}
+      className={`card flex items-center gap-3 p-3.5 transition hover:border-brand/50 sm:gap-4 sm:p-4 ${loud ? PIN_OUTLINE.cheapest : ""}`}
     >
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-center gap-2">
           <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
           {RETAILERS[o.retailer].type === "official" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Official store</span>}
-          {i === 0 && o.inStock && !ebayCheapest && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-bg-card">Cheapest</span>}
+          {best_ === "loud" && <span className={BEST_TAG_CLASS.loud}>Cheapest</span>}
+          {best_ === "plain" && <span data-best-tag="plain" className={BEST_TAG_CLASS.plain}>Best price</span>}
           {aboveRrp(o.price, rrp) ? (
             <span className="rounded-full bg-hot/10 px-2 py-0.5 text-[10px] font-semibold text-hot" title={`The RRP ${rrp!.stores} stores list is ${$(rrp!.price)}`}>Above RRP</span>
           ) : !rrp && others && unusuallyHigh(o.price, others) ? (
@@ -462,6 +469,7 @@ export function OutrightRow({
           {/* The thumbs stop the row's link (StoreVote calls preventDefault). */}
           <StoreVote url={o.url} name={RETAILERS[o.retailer].name} className="text-ink-mute" />
         </div>
+        {hint && <p data-best-note="" className="mt-0.5 text-[11px] text-ink-mute"><span aria-hidden="true" className="mr-1">ⓘ</span>{hint}</p>}
         <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-mute">
           <span className={o.inStock ? "inline-flex items-center gap-1 text-save" : o.preorder ? "font-semibold text-brand" : "text-hot"}>
             {o.inStock ? <><CheckIcon className="h-3.5 w-3.5" /> In stock</> : o.preorder ? "Pre-order" : "Out of stock / pre-order"}
