@@ -49,6 +49,11 @@ body { @apply bg-bg text-ink antialiased; font-feature-settings: "ss01", "cv11";
   .btn { @apply inline-flex min-h-[2.5rem] items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition; }
   .btn-primary { @apply btn bg-brand text-brand-ink hover:brightness-110; }
   .btn-ghost { @apply btn border border-line bg-bg-card text-ink hover:border-ink/25; }
+  /* Amazon's own action (owner, 2026-11-18, reversing the 2026-11-02 no-Amazon-orange line): a calm amber with DARK ink in both
+     themes (fixed hexes), so the Amazon row is never mistaken for the brand-blue button. Colour only: the element sets its own
+     size. Hover darkens on the button itself or on the row link around it. */
+  .btn-amazon { @apply border border-[#e08a00] bg-[#ffa41c] text-[#111111] hover:bg-[#fa8900]; }
+  a:hover > .btn-amazon { background-color: #fa8900; }
   .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.08em] text-ink-mute; }
   .price { @apply font-bold tabular-nums tracking-tight; }
   /* One page header on every page type (2026-11-14): a quiet breadcrumb, the h1, one line under it. The home page's

@@ -2335,6 +2335,15 @@ ten written notes. Rift's own record also holds "too many popups asking for my o
   triage*, which now prints a 7-day feedback table per site and flags every note for a look. No email address is asked
   for or kept: the thanks shows the site's inbox for anyone who wants a reply.
 
+## 2026-11-18: Amazon's button is amber, and the quick view's "See full page" is named as one (owner)
+
+Owner: the Amazon row's button must be visibly its own colour, not the brand blue. `.btn-amazon` (`globals.css`): amber
+`#ffa41c` (hover `#fa8900`, 1px `#e08a00` border) with dark ink `#111` in both themes. `AmazonRow` (priced "View on Amazon" and
+unpriced "Check Amazon", product page and quick view) and `AmazonButton` (the compare table) wear it. This reverses the
+2026-11-02 no-Amazon-colours line for the button only; rel, tracking, "Ad · Paid link", row order and prices are unchanged. The
+quick view's pinned bottom button (already full width) is at least 44px and reads "See full page: price history and details".
+`tests/amazon-button.test.ts`.
+
 ## 2026-11-18: The cart is off; the buy button is the row's one action again
 
 Owner, 2026-11-18: "I never intended the cart to be like a very big feature … we need to be promoting, getting more clicks rather than

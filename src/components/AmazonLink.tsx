@@ -16,8 +16,8 @@ type Props = { query: string; product?: string; placement: string };
 const track = (p: Props) => ({ "data-buy": "amazon", "data-buy-kind": `amazon-${p.placement}`, "data-buy-product": p.product, "data-amazon": p.placement });
 
 /**
- * A row shaped like the store rows on a product page, pinned above them. Never in Amazon's own colours
- * (2026-11-02: the Associates Operating Agreement forbids styling that could pass for Amazon's site). `href`/`name` override the AU link for the US and UK, which have no tag yet.
+ * A row shaped like the store rows on a product page, pinned above them. Its button is amber (`btn-amazon`, owner
+ * 2026-11-18, reversing the 2026-11-02 no-Amazon-colours rule) so it is never mistaken for the brand button. `href`/`name` override the AU link for the US and UK, which have no tag yet.
  */
 export function AmazonRow({ href, name = "Amazon AU", live, cart, ...p }: Props & { href?: string; name?: string; live?: { text: string; at: string; zone?: { locale: string; timeZone: string; label: string } }; /** The cart list's line (owner, 2026-11-17: every row gets one; without a live price it is an unpriced search line) (owner, 2026-11-06: like a store row; lib/cart-list.ts keeps it 24 hours). */ cart?: { title: string; priceCents: number; currency: string; image?: string | null } }) {
   const url = href ?? amazonAuLink(p.query);
@@ -39,7 +39,7 @@ export function AmazonRow({ href, name = "Amazon AU", live, cart, ...p }: Props 
       </div>
       {live && <AmazonLivePrice text={live.text} at={live.at} zone={live.zone} />}
       {add && <CartAddButton {...add} className="hidden shrink-0 text-ink-mute sm:inline-flex" />}
-      <span className="inline-flex shrink-0 items-center gap-1 rounded-xl bg-brand px-3 py-2 text-sm font-semibold text-brand-ink">
+      <span className="btn-amazon inline-flex min-h-11 shrink-0 items-center gap-1 rounded-xl px-3 py-2 text-sm font-semibold">
         {live ? "View on Amazon" : "Check Amazon"} <ExternalIcon className="h-3.5 w-3.5" />
       </span>
     </a>
@@ -49,7 +49,7 @@ export function AmazonRow({ href, name = "Amazon AU", live, cart, ...p }: Props 
 /** A compact button for cards and tables. */
 export function AmazonButton({ className = "", ...p }: Props & { className?: string }) {
   return (
-    <a href={amazonAuLink(p.query)} target="_blank" rel={AMAZON_REL} {...track(p)} className={`inline-flex items-center justify-center gap-1 rounded-xl border border-line bg-bg-card px-3 py-2 text-xs font-semibold transition hover:border-brand/40 hover:text-ink ${className}`}>
+    <a href={amazonAuLink(p.query)} target="_blank" rel={AMAZON_REL} {...track(p)} className={`btn-amazon inline-flex items-center justify-center gap-1 rounded-xl px-3 py-2 text-xs font-semibold transition ${className}`}>
       Check price on Amazon <ExternalIcon className="h-3 w-3" />
     </a>
   );
