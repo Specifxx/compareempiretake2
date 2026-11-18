@@ -2390,3 +2390,24 @@ Row order, sorting, labels, `rel`, tracking, deal badges, JSON-LD, feeds and ale
 
 **Why.** The loud green on a non-paying store pulled clicks away from our paid rows. **Measure:** paid clicks per 100 buy clicks (`data-buy` clicks on
 paid links) for two weeks before and after the release that carries this.
+
+## 2026-11-19: Neon holds only the price alerts; feedback and reviews no longer touch it
+
+Owner, 2026-11-19, after the Neon project "apricot-kite" (made from Vercel's Storage tab, so it lives in Vercel's Neon
+organisation, not the owner's own account) reached its free limit: "reduce Compare Empire's dependency on Neon". The database
+is now read or written only for what has to be private and lasting: the price-alert table (sign-up, confirm, unsubscribe, and
+the daily check in `refresh-prices.yml`), plus `/admin`.
+
+- **Reviews.** New reviews have gone to RiftCompare's shared review service since 2026-11-03. The older approved ones are
+  `data/reviews/legacy.json` (`lib/legacy-reviews.ts`), written by `scripts/export-legacy-reviews.ts` in the daily run right
+  before the data commit, in the same minutes as the alert check, so it adds no database wake; a database that doesn't answer
+  leaves the file as it is. `ReviewsSection` reads the file, never `/api/reviews`; that route now serves the same file (CDN a
+  day) and its POST answers 410.
+- **Feedback** (`/api/feedback`) and **reports** (`/api/report`): the reports branch (`lib/reports-github.ts`: no email, no IP,
+  contact details blanked; every feedback kind now, not only wrong prices and stores) and the site inbox, Reply-To the
+  visitor. A message counts as delivered when either takes it. The per-visitor limit is `overLimit` (in memory) and the inbox's
+  25 a day is `lib/inbox-cap.ts` (per function instance, in memory): neither counts rows any more. `/admin`'s feedback tab
+  keeps the messages sent before this; new ones are in the inbox and the daily triage issue.
+- Why not move the alerts to RiftCompare's shared alert service: that service writes to RiftCompare's operational Neon
+  project, which is itself on course for its compute cap (RM12, ~30 Nov), and Compare Empire's alerts are per storage
+  variant, which the shared feed format does not carry. Alerts wake the database about once a day, which the free tier covers.

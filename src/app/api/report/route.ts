@@ -1,15 +1,14 @@
 // POST /api/report: "Report a wrong price" (under every product's prices) and
 // "Suggest a store" (/contact). Filed in the private reports repo shared by every
 // Compare Empire site (src/lib/reports-github.ts), and, as /api/feedback does,
-// saved to the feedback table (no email, no IP hash) and emailed to the site
-// inbox under the same daily cap. Nothing about the visitor is kept.
-import { ensureSchema } from "@/lib/db";
+// emailed to the site inbox under the same daily cap (no database since
+// 2026-11-19). Nothing about the visitor is kept.
 import { notifyInbox } from "@/lib/email";
+import { takeInboxSlot } from "@/lib/inbox-cap";
 import { handleReportPost, type Report } from "@/lib/reports-github";
 import { CONTACT_EMAIL } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
-const INBOX_EMAILS_PER_DAY = 25;
 
 function reportMessage(r: Report): string {
   const lines =
@@ -24,18 +23,13 @@ function reportMessage(r: Report): string {
 async function alsoSave(r: Report): Promise<boolean> {
   // A "Was this page useful?" tap alone is counted by the daily triage from the reports branch, never saved or emailed here.
   if (r.kind === "feedback" && !r.note) return false;
-  const sql = await ensureSchema();
-  if (!sql) return false;
-  const kind = r.kind === "suggest-store" ? "store" : r.kind;
+  if (!takeInboxSlot()) return false;
   const message = reportMessage(r);
-  await sql`INSERT INTO feedback (kind, message, email, page, ip_hash) VALUES (${kind}, ${message}, ${null}, ${r.page}, ${null})`;
   try {
-    const [{ today }] = (await sql`SELECT count(*)::int AS today FROM feedback WHERE created_at > now() - interval '1 day'`) as { today: number }[];
-    if (today <= INBOX_EMAILS_PER_DAY) await notifyInbox(message.split("\n")[0]!.slice(0, 90), `${message}${r.page ? `\nPage: ${r.page}` : ""}`);
+    return await notifyInbox(message.split("\n")[0]!.slice(0, 90), `${message}${r.page ? `\nPage: ${r.page}` : ""}`);
   } catch {
-    /* saved; the email is a courtesy */
+    return false;
   }
-  return true;
 }
 
 export function POST(req: Request) {

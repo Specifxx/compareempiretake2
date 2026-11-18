@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { loadFeed, type SiteReviewsFeed } from "@/lib/site-reviews";
+import { legacyReviews } from "@/lib/legacy-reviews";
 
 interface Review { id: number | string; name: string; rating: number; body: string; created_at: string }
 interface Data { enabled: boolean; reviews: Review[]; count: number; average: number | null }
@@ -23,10 +24,8 @@ export function ReviewsSection({ limit = 6, full, hideEmpty, className }: { limi
   useEffect(() => {
     // Since 2026-11-03 new ratings and reviews go to RiftCompare's shared review service (approved in its admin; stars count at
     // once). Reviews sent before then stay in this site's own table. Both are shown, newest first, and the score counts both.
-    const own = fetch("/api/reviews")
-      .then((r) => r.json() as Promise<Data>)
-      .catch((): Data => ({ enabled: false, reviews: [], count: 0, average: null }));
-    Promise.all([own, loadFeed()]).then(([o, f]) => setData(mergeReviews(o, f)));
+    // The older ones are a committed file since 2026-11-19 (lib/legacy-reviews.ts), so no visit wakes the database.
+    loadFeed().then((f) => setData(mergeReviews(legacyReviews(), f)));
   }, []);
   if (data && !data.enabled) return null;
   const reviews = data?.reviews.slice(0, full ? undefined : limit) ?? [];
