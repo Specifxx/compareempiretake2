@@ -2,6 +2,7 @@ import Link from "next/link";
 import { catalogDay, getSummaries } from "@/lib/catalog";
 import { launchCalendar, storePreorders, type CalendarLaunch, type StorePreorder } from "@/lib/launches";
 import { money, REGIONS, type RegionId } from "@/lib/region";
+import { sized } from "@/lib/image-size";
 
 // The launch calendar (owner, 2026-11-03: a fresh pipeline of new products, the hype launches first). Every launch in
 // content/launches.ts with the maker's dates, its source, and the region's cheapest store price today. Static.
@@ -14,7 +15,7 @@ function Row({ r, region }: { r: CalendarLaunch; region: RegionId }) {
     <li className="card flex flex-col gap-4 p-4 sm:flex-row sm:items-center">
       <div className="flex min-w-0 flex-1 items-center gap-4">
         <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-lg">
-          {product?.image && <img src={product.image} alt={product.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
+          {product?.image && <img src={sized(product.image, 220)} alt={product.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
         </div>
         <div className="min-w-0">
           <div className="text-xs font-medium text-ink-mute">{launch.brand}</div>
@@ -47,7 +48,7 @@ function PreorderRow({ r, region }: { r: StorePreorder; region: RegionId }) {
     <li className="card flex flex-col gap-4 p-4 sm:flex-row sm:items-center">
       <div className="flex min-w-0 flex-1 items-center gap-4">
         <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-lg">
-          {product.image && <img src={product.image} alt={product.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
+          {product.image && <img src={sized(product.image, 220)} alt={product.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
         </div>
         <div className="min-w-0">
           <div className="text-xs font-medium text-ink-mute">{product.brand}</div>

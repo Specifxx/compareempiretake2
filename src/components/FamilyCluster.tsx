@@ -4,6 +4,7 @@
 import { familyTiles } from "@/lib/family";
 import { blockHeading, familyMoney, tileNote } from "@/lib/family-network";
 import type { RegionId } from "@/lib/region";
+import { sized } from "@/lib/image-size";
 
 // Off (2026-11-19, the core-update quality pass; owner: "too many sites pages linking to others"): a block of tiles linking
 // our other sites on deals, pre-order and sale pages reads as a link network. The one link between our sites is the footer's
@@ -23,7 +24,7 @@ export function FamilyCluster({ region }: { region: RegionId }) {
       <ul className="mt-4 grid gap-3 sm:grid-cols-3">
         {tiles.map(({ site, item }) => (
           <li key={item.url} className="card flex gap-3 p-4">
-            {item.image ? <img src={item.image} alt={item.title} className="h-16 w-16 shrink-0 object-contain" loading="lazy" /> : null}
+            {item.image ? <img src={sized(item.image, 64)} alt={item.title} className="h-16 w-16 shrink-0 object-contain" loading="lazy" /> : null}
             <div className="min-w-0 text-sm">
               <div className="text-xs text-ink-mute">{site.name}</div>
               <a href={item.url} rel="noopener" className="line-clamp-2 font-semibold hover:underline">{item.title}</a>

@@ -5,6 +5,7 @@ import { CompareToggle } from "./CompareToggle";
 import { SaveButton } from "./SaveButton";
 import { money } from "@/lib/region";
 import { Currency } from "./RegionTag";
+import { sized } from "@/lib/image-size";
 
 /**
  * One product in a grid, drawn like a big comparison site's listing (owner, 2026-11-10): photo on white, name,
@@ -16,7 +17,7 @@ export function PhoneCard({ p, priority, showCategory }: { p: CardItem; priority
     <Link href={p.href} prefetch={false} className="card tile-hover group relative flex flex-col overflow-hidden">
       <div className="img-tile relative aspect-[4/3.4] border-b border-line/60">
         {p.image ? (
-          <img src={p.image} alt={p.name} loading={priority ? "eager" : "lazy"} className="product-img absolute inset-0 h-full w-full object-contain p-5" />
+          <img src={sized(p.image, 220)} alt={p.name} loading={priority ? "eager" : "lazy"} className="product-img absolute inset-0 h-full w-full object-contain p-5" />
         ) : (
           <div className="absolute inset-0 grid place-items-center text-sm text-ink-mute">No image</div>
         )}

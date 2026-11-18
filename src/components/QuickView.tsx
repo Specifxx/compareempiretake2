@@ -16,6 +16,7 @@ import { closeQuickViewUrl, onQuickViewHistory, openQuickViewUrl } from "@/lib/q
 import { shareText } from "@/lib/share-link";
 import { RETAILERS } from "@/lib/retailers";
 import { RegionTag } from "./RegionTag";
+import { sized } from "@/lib/image-size";
 
 interface Head {
   href: string;
@@ -148,7 +149,7 @@ export function QuickView() {
       <div className="qv-panel relative flex max-h-[92vh] w-full max-w-2xl flex-col overflow-hidden rounded-t-3xl border border-line bg-bg-card shadow-2xl sm:rounded-xl">
         <div className="flex items-start gap-4 border-b border-line p-4 sm:p-5">
           <div className="img-tile relative h-24 w-24 shrink-0 overflow-hidden rounded-lg">
-            {img ? <img src={img} alt="" className="product-img absolute inset-0 h-full w-full object-contain p-2" /> : <div className="grid h-full place-items-center text-xs text-ink-mute">No image</div>}
+            {img ? <img src={sized(img, 220)} alt="" className="product-img absolute inset-0 h-full w-full object-contain p-2" /> : <div className="grid h-full place-items-center text-xs text-ink-mute">No image</div>}
           </div>
           <div className="min-w-0 flex-1">
             {brand && <div className="text-sm font-semibold text-brand">{brand}</div>}

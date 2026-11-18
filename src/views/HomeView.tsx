@@ -18,6 +18,7 @@ import { HotLaunches } from "@/components/HotLaunches";
 import { hotLaunches, storePreorders } from "@/lib/launches";
 import { ChristmasBanner } from "@/components/season/ChristmasBanner";
 import { CreatorsCornerBadge } from "@/components/creators/CreatorsCornerBadge";
+import { sized } from "@/lib/image-size";
 
 export function HomeView({ region }: { region: RegionId }) {
   const R = REGIONS[region];
@@ -103,7 +104,7 @@ export function HomeView({ region }: { region: RegionId }) {
           {cats.map(({ c, count, image }) => (
             <Link prefetch={false} key={c.id} href={to(c.href)} className="card tile-hover group flex flex-col items-center px-2 pb-3 pt-3 text-center">
               <div className="img-tile relative h-16 w-16 overflow-hidden rounded-full border border-line/60 sm:h-20 sm:w-20">
-                {image && <img src={image} alt={c.name} loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-2.5" />}
+                {image && <img src={sized(image, 220)} alt={c.name} loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-2.5" />}
               </div>
               <div className="mt-2 text-[13px] font-semibold leading-tight group-hover:text-brand sm:text-sm">{c.name}</div>
               <div className="mt-0.5 text-[11px] text-ink-mute">{count.toLocaleString()} products</div>

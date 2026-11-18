@@ -8,6 +8,7 @@ import { SearchIcon } from "./icons";
 import { useRegionKit } from "@/lib/use-region";
 import { withRegion, type RegionId } from "@/lib/region";
 import { Currency, RegionTag } from "./RegionTag";
+import { sized } from "@/lib/image-size";
 
 export interface SearchEntry {
   kind: "phone" | "guide" | "vs" | "category";
@@ -158,7 +159,7 @@ export function SearchBox({ size = "md", autoFocus }: { size?: "md" | "lg"; auto
                   className={`flex items-center gap-3 rounded-xl px-2.5 py-2 ${i === active ? "bg-bg-sunk" : ""}`}
                 >
                   <span className="img-tile grid h-11 w-11 shrink-0 place-items-center overflow-hidden rounded-lg">
-                    {r.image && <img src={r.image} alt={r.name} className="product-img h-10 w-10 object-contain" loading="lazy" />}
+                    {r.image && <img src={sized(r.image, 48)} alt={r.name} className="product-img h-10 w-10 object-contain" loading="lazy" />}
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm font-medium"><Highlight text={r.name} q={q} /></span>
