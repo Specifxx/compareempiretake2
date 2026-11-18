@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T03:32:05.577Z",
+ "scrapedAt": "2026-11-18T02:42:34.995Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -85,7 +85,7 @@
    "price": 229,
    "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1209693_1_2a2d4f54-722b-4bca-945c-cc41f5c90e65.jpg?v=1789692449",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -136,9 +136,10 @@
    "sku": "BOSQCHWS",
    "title": "Bose QuietComfort Headphones - White Smoke",
    "url": "https://www.beachcamera.com/products/bose-quietcomfort-headphones-white-smoke",
-   "price": 359,
+   "price": 269,
+   "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1209746_1_b2f69623-dd3c-4558-978e-9221f89b09ac.jpg?v=1789692493",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose"
   },
   {
@@ -670,7 +671,7 @@
    "price": 419,
    "wasPrice": 474.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1137480_1.jpg?v=1793624030",
-   "inStock": false,
+   "inStock": true,
    "brand": "Logitech Core",
    "mpn": "LOG939002132"
   },
@@ -754,7 +755,7 @@
    "price": 40.41,
    "wasPrice": 48.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1138144_1.jpg?v=1793625344",
-   "inStock": false,
+   "inStock": true,
    "brand": "Logitech Core",
    "mpn": "LOG981001575"
   },

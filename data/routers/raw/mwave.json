@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T02:39:29.999Z",
+ "scrapedAt": "2026-11-18T01:49:04.882Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -47,7 +47,7 @@
    "sku": "AC92142",
    "title": "ASUS ROG Strix GS-BE18000 Tri-Band Wi-Fi 7 Gaming Router",
    "url": "https://www.mwave.com.au/products/asus-rog-strix-gsbe18000-triband-wifi-7-gaming-router-ac92142",
-   "price": 499,
+   "price": 716,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_strix_gsbe18000_triband_wifi_7_gaming_router_ac92142_66307.jpg?v=1787784046",
    "inStock": true,
    "mpn": "GS-BE18000",
@@ -162,7 +162,7 @@
    "sku": "AC92145",
    "title": "ASUS ZenWiFi BD4 Dual-Band WiFi-7 Extendable Router",
    "url": "https://www.mwave.com.au/products/asus-zenwifi-bd4-dualband-wifi7-extendable-router-ac92145",
-   "price": 129,
+   "price": 134.32,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_zenwifi_bd4_dualband_outdoor_wifi_7_extendable_router_ac92145_34870.jpg?v=1787795504",
    "inStock": true,
    "brand": "Asus"
@@ -484,9 +484,9 @@
    "sku": "AC86495",
    "title": "Mercusys AX3000 Dual-Band Wi-Fi 6 Router",
    "url": "https://www.mwave.com.au/products/mercusys-ax3000-dualband-wifi-6-router-ac86495",
-   "price": 103,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_ax3000_dualband_wifi_6_router_ac86495_18260.jpg?v=1787797632",
-   "inStock": true,
+   "inStock": false,
    "brand": "Mercusys"
   },
   {
@@ -494,7 +494,7 @@
    "sku": "AC98013",
    "title": "Mercusys Halo H25BE BE3600 Whole Home Mesh Wi-Fi 7 System - 2 Pack",
    "url": "https://www.mwave.com.au/products/mercusys-halo-h25be-be3600-whole-home-mesh-wifi-7-system-2-pack-ac98013",
-   "price": 277,
+   "price": 269,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_halo_h25be_be3600_whole_home_mesh_wifi_7_system_2_pack_ac98013_91775.jpg?v=1787797619",
    "inStock": true,
    "brand": "Mercusys"
@@ -514,7 +514,7 @@
    "sku": "AC98014",
    "title": "Mercusys Halo H27BE BE3600 Whole Home Mesh Wi-Fi 7 System - 2 Pack",
    "url": "https://www.mwave.com.au/products/mercusys-halo-h27be-be3600-whole-home-mesh-wifi-7-system-2-pack-ac98014",
-   "price": 303,
+   "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_halo_h27be_be3600_whole_home_mesh_wifi_7_system_2_pack_ac98014_38589.jpg?v=1787797621",
    "inStock": true,
    "brand": "Mercusys"
@@ -544,7 +544,7 @@
    "sku": "AC93518",
    "title": "Mercusys Halo H47BE BE9300 Whole Home Mesh Wi-Fi 7 System - 2 Pack",
    "url": "https://www.mwave.com.au/products/mercusys-halo-h47be-be9300-whole-home-mesh-wifi-7-system-2-pack-ac93518",
-   "price": 606,
+   "price": 569,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_halo_h47be_be9300_whole_home_mesh_wifi_7_system_2_pack_ac93518_96648.jpg?v=1787797629",
    "inStock": true,
    "brand": "Mercusys"
@@ -554,7 +554,7 @@
    "sku": "AC71372",
    "title": "Mercusys Halo H60X AX1500 Dual Band Mesh Wi-Fi 6 System - 2 Pack",
    "url": "https://www.mwave.com.au/products/mercusys-halo-h60x-ax1500-dual-band-mesh-wifi-6-system-2-pack-ac71372",
-   "price": 118,
+   "price": 119,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_halo_h60x_ax1500_dual_band_mesh_wifi_6_system_2_pack_ac71372_34539.jpg?v=1787797624",
    "inStock": true,
    "brand": "Mercusys"
@@ -564,7 +564,7 @@
    "sku": "AC60164",
    "title": "Mercusys Halo H80X AX3000 Whole Home Mesh WiFi 6 System - 2 Pack",
    "url": "https://www.mwave.com.au/products/mercusys-halo-h80x-ax3000-whole-home-mesh-wifi-6-system-2-pack-ac60164",
-   "price": 199,
+   "price": 194,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_halo_h80x_ax3000_whole_home_mesh_wifi_6_system_2_pack_ac60164_91046.jpg?v=1787797620",
    "inStock": false,
    "brand": "Mercusys"
@@ -595,6 +595,7 @@
    "title": "Mercusys MB110-4G 300 Mbps Wireless N 4G LTE Router",
    "url": "https://www.mwave.com.au/products/mercusys-mb110-4g-300-mbps-wireless-n-4g-lte-router",
    "price": 73,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/1-e39acfb318-mb110-4g-1.jpg?v=1794891803",
    "inStock": true,
    "mpn": "MB110-4G",
    "brand": "Mercusys"
@@ -615,7 +616,7 @@
    "sku": "AC88369",
    "title": "Mercusys MB520-5G 5G AX3000 Wireless Dual Band Router",
    "url": "https://www.mwave.com.au/products/mercusys-mb5205g-5g-ax3000-wireless-dual-band-router-ac88369",
-   "price": 599,
+   "price": 479,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_mb5205g_5g_ax3000_wireless_dual_band_router_ac88369_42623.jpg?v=1787797623",
    "inStock": false,
    "mpn": "MB520-5G",
@@ -647,7 +648,7 @@
    "sku": "AC86671",
    "title": "Mercusys MR37BE BE6500 Dual-Band Wi-Fi 7 Router",
    "url": "https://www.mwave.com.au/products/mercusys-mr37be-be6500-dualband-wifi-7-router-ac86671",
-   "price": 233,
+   "price": 219,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_mr37be_be6500_dualband_wifi_7_router_ac86671_19189.jpg?v=1787797632",
    "inStock": true,
    "brand": "Mercusys"
@@ -657,7 +658,7 @@
    "sku": "AC71374",
    "title": "Mercusys MR47BE BE9300 Tri-Band Wi-Fi 7 Router",
    "url": "https://www.mwave.com.au/products/mercusys-mr47be-be9300-triband-wifi-7-router-ac71374",
-   "price": 277,
+   "price": 269,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_mr47be_be9300_triband_wifi_7_router_ac71374_51034.jpg?v=1787797621",
    "inStock": true,
    "brand": "Mercusys"
@@ -667,7 +668,7 @@
    "sku": "AC62894",
    "title": "Mercusys MR60X AX1500 WiFi 6 Router",
    "url": "https://www.mwave.com.au/products/mercusys-mr60x-ax1500-wifi-6-router-ac62894",
-   "price": 51,
+   "price": 49,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_mr60x_ax1500_wifi_6_router_ac62894_69850.jpg?v=1787797626",
    "inStock": true,
    "brand": "Mercusys"
@@ -677,7 +678,7 @@
    "sku": "AC60172",
    "title": "Mercusys MR80X AX3000 Dual-Band Wi-Fi 6 Router",
    "url": "https://www.mwave.com.au/products/mercusys-mr80x-ax3000-dualband-wifi-6-router-ac60172",
-   "price": 86,
+   "price": 84,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/mercusys_mr80x_ax3000_dualband_wifi_6_router_ac60172_3343.jpg?v=1787797625",
    "inStock": false,
    "brand": "Mercusys"
@@ -1260,7 +1261,7 @@
    "sku": "AC68000",
    "title": "TP-Link Archer AX1800 Dual-Band Wi-Fi 6 Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-ax1800-dualband-wifi-6-router-ac68000",
-   "price": 120.23,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_ax1800_dualband_wifi_6_router_v12_ac68000_62899.jpg?v=1787799312",
    "inStock": true,
    "brand": "TP-Link"
@@ -1270,7 +1271,7 @@
    "sku": "AC46640",
    "title": "TP-Link Archer AX55 AX3000 802.11ax Dual Band Gigabit Wi-Fi 6 Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-ax55-ax3000-80211ax-dual-band-gigabit-wifi-6-router-ac46640",
-   "price": 139.61,
+   "price": 119,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_ax55_ax3000_80211ax_dual_band_gigabit_wifi_6_router_ac46640.jpg?v=1787799312",
    "inStock": true,
    "brand": "TP-Link"
@@ -1290,7 +1291,7 @@
    "sku": "AC45505",
    "title": "TP-Link Archer AX72 AX5400 Dual-Band Gigabit Wi-Fi 6 Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-ax72-ax5400-dualband-gigabit-wifi-6-router-ac45505",
-   "price": 220,
+   "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_ax72_ax5400_dualband_gigabit_wifi_6_router_ac45505.jpg?v=1787799311",
    "inStock": true,
    "brand": "TP-Link"
@@ -1310,7 +1311,7 @@
    "sku": "AC86212",
    "title": "TP-Link Archer AXE75 AXE5400 Tri-Band Gigabit Wi-Fi 6E Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-axe75-axe5400-triband-gigabit-wifi-6e-router-ac86212",
-   "price": 261.58,
+   "price": 210.93,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_axe75_axe5400_triband_gigabit_wifi_6e_router_ac86212_81578.jpg?v=1787799315",
    "inStock": true,
    "brand": "TP-Link"
@@ -1320,7 +1321,7 @@
    "sku": "AC82841",
    "title": "TP-Link Archer BE220 BE3600 Dual-Band Wi-Fi 7 Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-be220-be3600-dualband-wifi-7-router-ac82841",
-   "price": 178,
+   "price": 129,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_be220_be3600_dualband_wifi_7_router_ac82841_46458.jpg?v=1787799315",
    "inStock": true,
    "brand": "TP-Link"
@@ -1330,7 +1331,7 @@
    "sku": "AC77141",
    "title": "TP-Link Archer BE3600 BE3600 Dual-Band Wi-Fi 7 Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-be3600-be3600-dualband-wifi-7-router-ac77141",
-   "price": 222,
+   "price": 134,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_be3600_be3600_dualband_wifi_7_router_ac77141_58575.jpg?v=1787799311",
    "inStock": false,
    "brand": "TP-Link"
@@ -1350,7 +1351,7 @@
    "sku": "AC71508",
    "title": "TP-Link Archer BE550 BE9300 Tri-Band Wi-Fi 7 Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-be550-be9300-triband-wifi-7-router-ac71508",
-   "price": 480.37,
+   "price": 413.56,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_be550_be9300_triband_wifi_7_router_ac71508_499.jpg?v=1787788003",
    "inStock": true,
    "brand": "TP-Link"
@@ -1420,7 +1421,7 @@
    "sku": "AC88550",
    "title": "TP-Link Archer GE400 BE6500 Dual-Band Wi-Fi 7 Gaming Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-ge400-be6500-dualband-wifi-7-gaming-router-ac88550",
-   "price": 349.14,
+   "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_archer_ge400_be6500_dualband_wifi_7_gaming_router_ac88550_22962.jpg?v=1787748024",
    "inStock": true,
    "brand": "TP-Link"
@@ -1430,7 +1431,7 @@
    "sku": "AC78963",
    "title": "TP-Link Archer GE550 BE9300 Tri-Band Wi-Fi 7 RGB Gaming Router",
    "url": "https://www.mwave.com.au/products/tplink-archer-ge550-be9300-triband-wifi-7-rgb-gaming-router-ac78963",
-   "price": 535,
+   "price": 449,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/archer_ge550_ac78963_64037.jpg?v=1787799325",
    "inStock": true,
    "brand": "TP-Link"
@@ -1550,7 +1551,7 @@
    "sku": "AC87127",
    "title": "TP-Link Deco BE22 BE3600 Whole Home Mesh Wi-Fi 7 System - 3 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-be22-be3600-whole-home-mesh-wifi-7-system-3-pack-ac87127",
-   "price": 499,
+   "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_be22_be3600_whole_home_mesh_wifi_7_system_3_pack_ac87127_69387.jpg?v=1787748041",
    "inStock": true,
    "brand": "TP-Link"
@@ -1560,7 +1561,7 @@
    "sku": "AC87135",
    "title": "TP-Link Deco BE3600 Whole Home Mesh Wi-Fi 7 System - 2 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-be3600-whole-home-mesh-wifi-7-system-2-pack-ac87135",
-   "price": 382,
+   "price": 319,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/be3600_whole_home_mesh_wifi_7_system_ac87135_2202.jpg?v=1787799334",
    "inStock": true,
    "brand": "TP-Link"
@@ -1570,7 +1571,7 @@
    "sku": "AC71381",
    "title": "TP-Link Deco BE65 BE11000 Whole Home Mesh Wi-Fi 7 System - 3 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-be65-be11000-whole-home-mesh-wifi-7-system-3-pack-ac71381",
-   "price": 1049,
+   "price": 847,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_be65_be11000_whole_home_mesh_wifi_7_system_3_pack_ac71381_11842.jpg?v=1787799332",
    "inStock": true,
    "brand": "TP-Link"
@@ -1620,7 +1621,7 @@
    "sku": "AC90577",
    "title": "TP-Link Deco BE68 BE14000 Tri-Band Whole Home Mesh Wi-Fi 7 System",
    "url": "https://www.mwave.com.au/products/tplink-deco-be68-be14000-triband-whole-home-mesh-wifi-7-system-ac90577",
-   "price": 456,
+   "price": 359,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_be68_be14000_triband_whole_home_mesh_wifi_7_system_ac90577_74254.jpg?v=1787799338",
    "inStock": true,
    "brand": "TP-Link"
@@ -1630,7 +1631,7 @@
    "sku": "AC90576",
    "title": "TP-Link Deco BE68 BE14000 Tri-Band Whole Home Mesh Wi-Fi 7 System - 2 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-be68-be14000-triband-whole-home-mesh-wifi-7-system-2-pack-ac90576",
-   "price": 821,
+   "price": 659,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_be68_be14000_triband_whole_home_mesh_wifi_7_system_2_pack_ac90576_3531.jpg?v=1787748048",
    "inStock": false,
    "brand": "TP-Link"
@@ -1640,7 +1641,7 @@
    "sku": "AC90575",
    "title": "TP-Link Deco BE68 BE14000 Tri-Band Whole Home Mesh Wi-Fi 7 System - 3 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-be68-be14000-triband-whole-home-mesh-wifi-7-system-3-pack-ac90575",
-   "price": 1186,
+   "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_be68_be14000_triband_whole_home_mesh_wifi_7_system_3_pack_ac90575_26428.jpg?v=1787748049",
    "inStock": true,
    "brand": "TP-Link"
@@ -1650,7 +1651,7 @@
    "sku": "156433",
    "title": "TP-Link Deco BE85 BE22000 Tri-Band Mesh WiFi7 System (3 Pack)",
    "url": "https://www.mwave.com.au/products/tplink-deco-be85-be22000-whole-home-mesh-wifi-7-system-3-pack-ac71379",
-   "price": 2441.95,
+   "price": 2467.9,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_be85_be22000_whole_home_mesh_wifi_7_system_3_pack_ac71379_76248.jpg?v=1787800816",
    "inStock": true,
    "brand": "TP-Link"
@@ -1700,7 +1701,7 @@
    "sku": "AC78307",
    "title": "TP-Link Deco X1500 AX1500 Whole Home Mesh Wi-Fi 6 System - 2 pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-x1500-ax1500-whole-home-mesh-wifi-6-system-2-pack-ac78307",
-   "price": 226,
+   "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_x1500_ax1500_whole_home_mesh_wifi_6_system_2_pack_ac78307_39708.jpg?v=1787799332",
    "inStock": false,
    "brand": "TP-Link"
@@ -1720,7 +1721,7 @@
    "sku": "145368",
    "title": "TP-Link Deco X20 AX1800 Whole Home Mesh Wi-Fi 6 System - 3 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-x20-ax1800-whole-home-mesh-wifi-system-3pack-ac31232",
-   "price": 269,
+   "price": 268.77,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_x20_ax1800_whole_home_mesh_wifi_system_3pack_ac31232_5.jpg?v=1787800820",
    "inStock": true,
    "brand": "TP-Link"
@@ -1770,7 +1771,7 @@
    "sku": "AC76616",
    "title": "TP-Link Deco X55 AX3000 Whole Home Mesh Wi-Fi 6 Router System - 2 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-x55-ax3000-whole-home-mesh-wifi-6-router-system-2-pack-ac76616",
-   "price": 317,
+   "price": 279,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_x55_v1_ax3000_whole_home_mesh_wifi_6_router_system_2_pack_ac76616_18307.jpg?v=1787799334",
    "inStock": true,
    "brand": "TP-Link"
@@ -1780,7 +1781,7 @@
    "sku": "AC76615",
    "title": "TP-Link Deco X55 AX3000 Whole Home Mesh Wi-Fi 6 Router System - 3 Pack",
    "url": "https://www.mwave.com.au/products/tplink-deco-x55-ax3000-whole-home-mesh-wifi-6-router-system-3-pack-ac76615",
-   "price": 453,
+   "price": 349,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_deco_x55_v1_ax3000_whole_home_mesh_wifi_6_router_system_3_pack_ac76615_44101.jpg?v=1787799331",
    "inStock": true,
    "brand": "TP-Link"
@@ -1930,7 +1931,7 @@
    "sku": "AC95298",
    "title": "TP-Link Mercusys MB135-4G AC1200 Wireless Dual Band 4G LTE Router",
    "url": "https://www.mwave.com.au/products/tplink-mercusys-mb1354g-ac1200-wireless-dual-band-4g-lte-router-ac95298",
-   "price": 103,
+   "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_mercusys_mb1354g_ac1200_wireless_dual_band_4g_lte_router_ac95298_51251.jpg?v=1787799366",
    "inStock": true,
    "mpn": "MB135-4G",
@@ -2003,7 +2004,7 @@
    "sku": "AC36775",
    "title": "TP-Link TL-MR100 300 Mbps Wireless N 4G LTE Router",
    "url": "https://www.mwave.com.au/products/tplink-tlmr100-300-mbps-wireless-n-4g-lte-router-ac36775",
-   "price": 96.36,
+   "price": 99.78,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/tplink_tlmr100_300_mbps_wireless_n_4g_lte_router_ac36775_6.jpg?v=1787799394",
    "inStock": true,
    "mpn": "TL-MR100",

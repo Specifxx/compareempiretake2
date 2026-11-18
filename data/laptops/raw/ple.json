@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T02:39:43.027Z",
+ "scrapedAt": "2026-11-18T01:50:06.567Z",
  "offers": [
   {
    "retailer": "ple",
@@ -1016,6 +1016,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "682970",
+   "title": "MSI Cyborg 15 (B13W) - 15.6\" 144Hz, i5-13420H, RTX 5050, 16GB/512GB - Win 11 Gaming Notebook",
+   "brand": "MSI",
+   "mpn": "Cyborg 15 B13WEKG-1069AU",
+   "url": "https://www.ple.com.au/products/682970/msi-cyborg-15-b13w-156-144hz-i5-13420h-rtx-5050-16gb512gb-win-11-gaming-notebook",
+   "price": 1499,
+   "wasPrice": 1999,
+   "image": "https://plecom.imgix.net/iil-462668-682970.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "688175",
    "title": "MSI Cyborg 15 (C13W) - 15.6\" 144Hz, i5-13420H, RTX 5050, 16GB/512GB - Win 11 Gaming Notebook",
    "brand": "MSI",
@@ -1254,27 +1266,14 @@
   },
   {
    "retailer": "ple",
-   "sku": "686783",
-   "title": "MSI Stealth A18 AI+ (A3XW) - 18\" 120Hz, Ryzen AI 9 HX 370, RTX 5090, 64GB/2TB - Win 11 Gaming Notebook",
+   "sku": "689122",
+   "title": "MSI Stealth 16 AI+ (B3WI) - 16\" OLED 240Hz, Ultra 9 386H, RTX 5080, 16GB/1TB - Win 11 Pro Gaming Notebook",
    "brand": "MSI",
-   "mpn": "Stealth A18 AI+ A3XWJG-014AU",
-   "url": "https://www.ple.com.au/products/686783/msi-stealth-a18-ai-a3xw-18-120hz-ryzen-ai-9-hx-370-rtx-5090-64gb2tb-win-11-gaming-notebook",
-   "price": 7499,
-   "wasPrice": 9499,
-   "image": "https://plecom.imgix.net/iil-478460-686783.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "683509",
-   "title": "MSI Thin 15 (B2R) - 15\" 144Hz, Core 7 240H, RTX 4050, 16GB/512GB - Win 11 Gaming Notebook",
-   "brand": "MSI",
-   "mpn": "Thin 15 B2RVE-3079AU",
-   "url": "https://www.ple.com.au/products/683509/msi-thin-15-b2r-15-144hz-core-7-240h-rtx-4050-16gb512gb-win-11-gaming-notebook",
-   "price": 1499,
-   "wasPrice": 1699,
-   "image": "https://plecom.imgix.net/iil-465345-683509.jpg?w=600&h=600",
-   "inStock": false
+   "mpn": "Stealth 16 AI+ B3WI-078AU",
+   "url": "https://www.ple.com.au/products/689122/msi-stealth-16-ai-b3wi-16-oled-240hz-ultra-9-386h-rtx-5080-16gb1tb-win-11-pro-gaming-notebook",
+   "price": 6299,
+   "image": "https://plecom.imgix.net/iil-490143-689122.jpg?w=600&h=600",
+   "inStock": true
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T03:32:50.326Z",
+ "scrapedAt": "2026-11-18T02:43:17.661Z",
  "offers": [
   {
    "retailer": "us-datavision",
@@ -828,7 +828,7 @@
    "price": 79.95,
    "wasPrice": 129.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/4c4c63c2-4caf-4b25-b0a4-24a7eaa380fe.jpg?v=1777919529",
-   "inStock": true,
+   "inStock": false,
    "mpn": "JBLENDUPEAK4BLKGAM"
   },
   {
@@ -913,7 +913,7 @@
    "price": 49.95,
    "wasPrice": 79.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/30d44346-7b7f-4277-94b0-f176600dfbf3.jpg?v=1748446195",
-   "inStock": true,
+   "inStock": false,
    "mpn": "JBLENDURACE2WHTAM"
   },
   {
@@ -1756,7 +1756,7 @@
    "price": 99.95,
    "wasPrice": 180,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/80e76547-c79e-4c38-98d3-f166082419d8.jpg?v=1773687642",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-datavision",
@@ -2791,7 +2791,7 @@
    "price": 39.95,
    "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/92a9b4b7-c058-4f30-89b4-0fe63878fac1.jpg?v=1748446261",
-   "inStock": false,
+   "inStock": true,
    "mpn": "JBLVBEAM2BLKAM"
   },
   {
@@ -2813,7 +2813,7 @@
    "price": 39.95,
    "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/2ff823a2-1c62-4512-8bfe-226a6b385d34.jpg?v=1748446327",
-   "inStock": true,
+   "inStock": false,
    "mpn": "JBLVBUDS2BLKAM"
   },
   {
@@ -2824,7 +2824,7 @@
    "price": 39.95,
    "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/d463dcea-257d-4d05-b459-c91f3f11c12c.jpg?v=1748446359",
-   "inStock": false,
+   "inStock": true,
    "mpn": "JBLVBUDS2WHTAM"
   },
   {
@@ -2954,6 +2954,17 @@
    "inStock": false,
    "brand": "Samsung",
    "mpn": "SM-R530NZWAXAR"
+  },
+  {
+   "retailer": "us-datavision",
+   "sku": "SM-U600NZKAXAR",
+   "title": "Samsung Galaxy Buds On - Bluetooth Noise Cancelling Earbuds, Graphite",
+   "url": "https://datavision.com/products/samsung-galaxy-buds-on-bluetooth-noise-cancelling-earbuds-graphite",
+   "price": 229.99,
+   "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/20d52e2b-ae0e-4b1d-b903-fb4b50eac716.jpg?v=1794959756",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "SM-U600NZKAXAR"
   },
   {
    "retailer": "us-datavision",

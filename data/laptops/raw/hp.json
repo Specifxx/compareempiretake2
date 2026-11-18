@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T02:37:28.137Z",
+ "scrapedAt": "2026-11-18T01:47:19.773Z",
  "offers": [
   {
    "retailer": "hp",
@@ -19,7 +19,7 @@
    "brand": "HP",
    "title": "HP 15.6 inch Laptop 15-fc0831AU, Black",
    "url": "https://www.hp.com/au-en/shop/hp-laptop-15-fc0831au-d78grpa.html",
-   "price": 999,
+   "price": 1399,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08434622_3_3.png",
    "inStock": false
   },
@@ -54,7 +54,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-chromebook-14a-nf0007tu-a1mt6pa.html",
    "price": 349,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08897767_2.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -333,6 +333,17 @@
   },
   {
    "retailer": "hp",
+   "sku": "C86MBPA",
+   "mpn": "C86MBPA",
+   "brand": "HP",
+   "title": "HP EliteBook Ultra G1i 14 inch Laptop Next Gen AI PC, Blue",
+   "url": "https://www.hp.com/au-en/shop/hp-elitebook-ultra-g1i-14-inch-notebook-next-gen-ai-pc-c86mbpa.html",
+   "price": 4199,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/s/n/snowwhite-1_2_1.png",
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
    "sku": "B9GC8PT",
    "mpn": "B9GC8PT",
    "brand": "HP",
@@ -355,17 +366,6 @@
   },
   {
    "retailer": "hp",
-   "sku": "C86M9PA",
-   "mpn": "C86M9PA",
-   "brand": "HP",
-   "title": "HP EliteBook X Flip G1i 14 inch Laptop Next Gen AI PC, Blue",
-   "url": "https://www.hp.com/au-en/shop/hp-elitebook-x-flip-g1i-14-inch-notebook-next-gen-ai-pc-c86m9pa.html",
-   "price": 3899,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/m/a/masadanx1_2_2.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
    "sku": "C86M7PA",
    "mpn": "C86M7PA",
    "brand": "HP",
@@ -373,6 +373,17 @@
    "url": "https://www.hp.com/au-en/shop/hp-elitebook-x-flip-g1i-14-inch-notebook-next-gen-ai-pc-c86m7pa.html",
    "price": 3899,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/m/a/masadanx1_6.png",
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
+   "sku": "C86M9PA",
+   "mpn": "C86M9PA",
+   "brand": "HP",
+   "title": "HP EliteBook X Flip G1i 14 inch Laptop Next Gen AI PC, Blue",
+   "url": "https://www.hp.com/au-en/shop/hp-elitebook-x-flip-g1i-14-inch-notebook-next-gen-ai-pc-c86m9pa.html",
+   "price": 3899,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/m/a/masadanx1_2_2.png",
    "inStock": false
   },
   {
@@ -514,7 +525,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 14 inch Laptop AI 14-ht0149TU, Blue",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-3-laptop-ai-14-ht0149tu-dz4m0pa.html",
-   "price": 699,
+   "price": 599,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omn_1_10_15.png",
    "inStock": true
   },
@@ -525,7 +536,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 14 inch Laptop AI 14-ht0150TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-3-laptop-ai-14-ht0150tu-dz4m1pa.html",
-   "price": 699,
+   "price": 599,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omn_1_8_42.png",
    "inStock": true
   },
@@ -538,7 +549,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-3-laptop-next-gen-ai-14-hz0007qu-d5ct0pa.html",
    "price": 1299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-3-14-inch-laptop-next-gen-ai-pc-abeq-nouvellesilver-front.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -767,19 +778,8 @@
    "brand": "HP",
    "title": "HP OmniBook 5 Flip 2-in-1 14 inch Laptop Next Gen AI 14-km0006TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-5-flip-2-in-1-laptop-next-gen-ai-14-km0006tu-d46wppa.html",
-   "price": 1699,
+   "price": 2699,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp0e57_1_5.png",
-   "inStock": false
-  },
-  {
-   "retailer": "hp",
-   "sku": "D78GZPA",
-   "mpn": "D78GZPA",
-   "brand": "HP",
-   "title": "HP OmniBook 5 Laptop Next Gen AI 16 inch Laptop 16-bm0053TU, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-omnibook-5-laptop-next-gen-ai-16-bm0053tu-d78gzpa.html",
-   "price": 2399,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omn_1_8_14.png",
    "inStock": false
   },
   {
@@ -976,7 +976,7 @@
    "brand": "HP",
    "title": "HP OmniBook Ultra 14 inch Laptop Next Gen AI 14-kg0017QU, Blue",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-ultra-laptop-next-gen-ai-14-kg0017qu-d78gmpa.html",
-   "price": 3999,
+   "price": 3299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-ultra-14-ngai-grahamq-stone-blue-front-touchicon.png",
    "inStock": true
   },
@@ -987,7 +987,7 @@
    "brand": "HP",
    "title": "HP OmniBook Ultra 14 inch Laptop Next Gen AI 14-kg0018QU, Blue",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-ultra-laptop-next-gen-ai-14-kg0018qu-d78gnpa.html",
-   "price": 3599,
+   "price": 2999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-ultra-14-ngai-grahamq-stone-blue-front-touchicon_1.png",
    "inStock": true
   },
@@ -1130,7 +1130,7 @@
    "brand": "HP",
    "title": "HP OmniBook X Flip 16 inch Laptop Next Gen AI 16-as0000TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-flipngai-16-as0000tu-bd5q7pa.html",
-   "price": 2199,
+   "price": 1999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-x-flip-16-inch-2-in-1-laptop-next-gen-ai-pc-clipperx-glacier-silver-tent-touchicon.png",
    "inStock": true
   },
@@ -1140,8 +1140,8 @@
    "mpn": "BD5Q8PA",
    "brand": "HP",
    "title": "HP OmniBook X Flip 16 inch Laptop Next Gen AI 16-as0001TU, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-flipngai-16-as0001tu-bd5q8par.html",
-   "price": 2099,
+   "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-flipngai-16-as0001tu-bd5q8pa.html",
+   "price": 1799,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-x-flip-16-inch-2-in-1-laptop-next-gen-ai-pc-clipperx-glacier-silver-tent-touchicon_1.png",
    "inStock": true
   },
@@ -1163,7 +1163,7 @@
    "brand": "HP",
    "title": "HP OmniBook X Flip 2-in-1 14 inch Laptop Next Gen AI 14-kb0061TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-flip-2-in-1-laptop-next-gen-ai-14-kb0061tu-d79trpa.html",
-   "price": 1699,
+   "price": 1499,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-x-flip-14-inch-2-in-1-laptop-next-gen-ai-pc-kentoi-meteor-silver-tent-touchicon.png",
    "inStock": true
   },
@@ -1174,7 +1174,7 @@
    "brand": "HP",
    "title": "HP OmniBook X Flip 2-in-1 14 inch Laptop Next Gen AI 14-kb0064TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-flip-2-in-1-laptop-next-gen-ai-14-kb0064tu-d68ybpa.html",
-   "price": 1799,
+   "price": 1599,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-x-flip-14-inch-2-in-1-laptop-next-gen-ai-pc-kentoi-meteor-silver-tent-touchicon_1.png",
    "inStock": true
   },
@@ -1185,7 +1185,7 @@
    "brand": "HP",
    "title": "HP OmniBook X Flip 2-in-1 14 inch Laptop Next Gen AI 14-kc0048AU, Brown",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-flip-2-in-1-laptop-next-gen-ai-14-kc0048au-d78fkpa.html",
-   "price": 2699,
+   "price": 2499,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-x-flip-14-inch-2-in-1-laptop-next-gen-ai-pc-kentoa-deep-espresso-tent-touchicon_1.png",
    "inStock": true
   },
@@ -1196,7 +1196,7 @@
    "brand": "HP",
    "title": "HP OmniBook X Flip 2-in-1 14 inch Laptop Next Gen AI 14-kc0049AU, Brown",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-flip-2-in-1-laptop-next-gen-ai-14-kc0049au-d78flpa.html",
-   "price": 2499,
+   "price": 2299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-x-flip-14-inch-2-in-1-laptop-next-gen-ai-pc-kentoa-deep-espresso-tent-touchicon.png",
    "inStock": true
   },
@@ -1218,7 +1218,7 @@
    "brand": "HP",
    "title": "HP OmniBook X Flip 2-in-1 16 inch Laptop Next Gen AI 16-cb0010TU, Gray",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-x-flip-2-in-1-laptop-next-gen-ai-16-cb0010tu-dd2h7pa.html",
-   "price": 2299,
+   "price": 1999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-x-flip-16-inch-2-in-1-laptop-next-gen-ai-pc-kokii-eclipse-gray-tent-touchicon_3.png",
    "inStock": true
   },
@@ -1253,7 +1253,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-probook-4-g1ah-16-inch-notebook-pc-c86mcpa.html",
    "price": 1899,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-probook-4-g1a-16-naturalsilver-frontopen.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -1385,7 +1385,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-zbook-8-g1ak-14-inch-mobile-workstation-pc-c0bq7pt.html",
    "price": 3399,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbo_2_3_7.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -1636,7 +1636,7 @@
    "brand": "HP",
    "title": "HP ZBook X G2i 16 inch Mobile Workstation PC, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-zbook-x-g2i-16-inch-mobile-workstation-pc-dm6c6pt.html",
-   "price": 6332,
+   "price": 4899,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/z/b/zbook_xg2i_16_meteorsilver_nt_5m_ircam_als_fpr_wlan_backlitkb_coreset_frontopen_me_6504702.png",
    "inStock": true
   },

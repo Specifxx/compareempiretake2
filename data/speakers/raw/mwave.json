@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T02:39:34.029Z",
+ "scrapedAt": "2026-11-18T01:49:08.631Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -18,7 +18,7 @@
    "url": "https://www.mwave.com.au/products/apple-homepod-2nd-gen-midnight-ac90413",
    "price": 477,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/apple_homepod_2nd_gen_midnight_ac90413_69055.jpg?v=1787799930",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -48,7 +48,7 @@
    "url": "https://www.mwave.com.au/products/apple-homepod-mini-2-smart-speaker-green",
    "price": 227,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/homepod-mini-select-green-202610_FV1.jpg?v=1792377275",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -483,6 +483,17 @@
   },
   {
    "retailer": "mwave",
+   "sku": "AC00182",
+   "title": "Edifier R12U-B 2.0 Multimedia Speakers - Black",
+   "url": "https://www.mwave.com.au/products/edifier-r12ub-20-multimedia-speakers-black-ac00182",
+   "price": 29,
+   "wasPrice": 39,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/AC00182_1.jpg?v=1793160283",
+   "inStock": false,
+   "brand": "Edifier"
+  },
+  {
+   "retailer": "mwave",
    "sku": "AC00184",
    "title": "Edifier R12U-R 2.0 Multimedia Speakers - Red",
    "url": "https://www.mwave.com.au/products/edifier-r12ur-20-multimedia-speakers-red-ac00184",
@@ -598,6 +609,16 @@
    "url": "https://www.mwave.com.au/products/edifier-r33bt-active-bluetooth-50-speakers-ac47924",
    "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/edifier_r33bt_active_bluetooth_50_speakers_ac47924.jpg?v=1787745571",
+   "inStock": false,
+   "brand": "Edifier"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "AC40240",
+   "title": "Edifier S1000MKII Hi-Fi 2.0 Active Bookshelf Bluetooth Speakers",
+   "url": "https://www.mwave.com.au/products/edifier-s1000mkii-hifi-20-active-bookshelf-bluetooth-speakers-ac40240",
+   "price": 579,
+   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/edifier_s1000mkiii_hifi_20_active_bookshelf_bluetooth_speakers_ac40240_2.jpg?v=1793160277",
    "inStock": false,
    "brand": "Edifier"
   },

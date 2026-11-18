@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T03:33:23.817Z",
+ "scrapedAt": "2026-11-18T02:43:41.346Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -744,7 +744,7 @@
    "url": "https://www.focuscamera.com/products/canon-2955c001-cameras-point-shoot-cameras",
    "price": 795,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/2320112.jpg?v=1751933136",
-   "inStock": false,
+   "inStock": true,
    "brand": "CANON USA, INC.",
    "mpn": "2955C001"
   },
@@ -815,7 +815,7 @@
    "price": 3599,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3629007.jpg?v=1778700731",
-   "inStock": true,
+   "inStock": false,
    "brand": "CANON USA, INC.",
    "mpn": "7250C010"
   },
@@ -1075,7 +1075,7 @@
    "url": "https://www.focuscamera.com/products/fujifilm-16949882-cameras-mirrorless-cameras",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3521906.jpg?v=1758241549",
-   "inStock": false,
+   "inStock": true,
    "brand": "FUJIFILM North America Corp.",
    "mpn": "16949882"
   },
@@ -1121,7 +1121,7 @@
    "url": "https://www.focuscamera.com/products/fujifilm-16953948-cameras-mirrorless-cameras",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3553783.jpg?v=1781881705",
-   "inStock": false,
+   "inStock": true,
    "brand": "FUJIFILM North America Corp.",
    "mpn": "16953948"
   },
@@ -2386,7 +2386,7 @@
    "url": "https://www.focuscamera.com/products/nikon-1641-nikon-cameras-mirrorless-cameras",
    "price": 1696.95,
    "wasPrice": 2246.95,
-   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3195935.jpg?v=1752112473",
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3195956.jpg?v=1752112473",
    "inStock": true,
    "brand": "Nikon Inc.",
    "mpn": "1641-NIKON"
@@ -2422,7 +2422,7 @@
    "url": "https://www.focuscamera.com/products/nikon-1659-nikon-cameras-mirrorless-cameras",
    "price": 1296.95,
    "wasPrice": 1746.95,
-   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3196598.jpg?v=1752113385",
+   "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/1390c41bd0ac541a9144638a078c4c52a811b3adeb31979f0fc9c3d73fe6ef7d-acbdfb4594c0834a.jpg?v=1794925757",
    "inStock": true,
    "brand": "Nikon Inc.",
    "mpn": "1659-NIKON"
@@ -2651,7 +2651,7 @@
    "price": 956.95,
    "wasPrice": 1006.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3446517.jpg?v=1751589618",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon Inc.",
    "mpn": "1784-NIKON"
   },
@@ -3262,7 +3262,8 @@
    "sku": "42170189021232",
    "title": "Panasonic LUMIX FZ80D Compact Camera",
    "url": "https://www.focuscamera.com/products/panasonic-dcfz80dk-64gb-cameras-point-shoot-cameras",
-   "price": 549.99,
+   "price": 499.99,
+   "wasPrice": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3435470.jpg?v=1752232632",
    "inStock": true,
    "brand": "PANASONIC CORPORATION OF N.A.",
@@ -3273,7 +3274,8 @@
    "sku": "42170188300336",
    "title": "Panasonic LUMIX FZ80D Point and Shoot Digital Camera",
    "url": "https://www.focuscamera.com/products/panasonic-dcfz80dk-cameras-point-shoot-cameras",
-   "price": 547.99,
+   "price": 497.99,
+   "wasPrice": 547.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3400792.jpg?v=1752232606",
    "inStock": true,
    "brand": "PANASONIC CORPORATION OF N.A.",

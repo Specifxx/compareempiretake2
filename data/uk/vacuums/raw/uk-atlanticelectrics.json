@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T03:41:09.732Z",
+ "scrapedAt": "2026-11-18T02:51:39.600Z",
  "offers": [
   {
    "retailer": "uk-atlanticelectrics",
@@ -126,7 +126,7 @@
    "sku": "1400047876",
    "title": "Dyson PENCILVAC Cordless Pencil Vacuum Cleaner With Up To 30 Minutes Run Time, Matte Black",
    "url": "https://www.atlanticelectrics.co.uk/products/dyson-pencilvac-cordless-pencil-vacuum-30-minutes-run-time-matte-black",
-   "price": 429.99,
+   "price": 299.99,
    "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/files/DysonPENCILVACFluffyCones.jpg?v=1771864282",
    "inStock": true,
    "brand": "Dyson"
@@ -597,8 +597,7 @@
    "sku": "1400051801",
    "title": "Shark BH102UK PowerBoost Pet Handheld Vacuum With Up To 40 Minutes Run Time, Charcoal With Blue",
    "url": "https://www.atlanticelectrics.co.uk/products/shark-bh102uk-powerboost-pet-handheld-vacuum-40-minutes-run-time-charcoal-with-blue",
-   "price": 119.99,
-   "wasPrice": 229.99,
+   "price": 227.6,
    "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/files/SHKBH102UK_2-1.webp?v=1777545078",
    "inStock": true,
    "brand": "Shark"
@@ -618,9 +617,18 @@
    "sku": "1400050822",
    "title": "Shark BU3621UKT Cordless Stick Vacuum Cleaner, 40 Minutes Run Time - Grey",
    "url": "https://www.atlanticelectrics.co.uk/products/shark-bu3621ukt-cordless-stick-vacuum-cleaner-40-minutes-run-time-glacier-blue",
-   "price": 219.99,
-   "wasPrice": 349.99,
+   "price": 372.68,
    "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/files/SharkBU3621UKT.jpg?v=1790936691",
+   "inStock": true,
+   "brand": "Shark"
+  },
+  {
+   "retailer": "uk-atlanticelectrics",
+   "sku": "100326299",
+   "title": "Shark CH950UKT Cordless HandVac Pet Vacuum Cleaner With Up To 10 Minutes Run Time, Black/Yellow",
+   "url": "https://www.atlanticelectrics.co.uk/products/shark-ch950ukt-cordless-handvac-pet-model-black",
+   "price": 87.2,
+   "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/products/shark-ch950ukt-cordless-handvac-pet-model-black-yellow-705718.jpg?v=1675437971",
    "inStock": true,
    "brand": "Shark"
   },
@@ -660,8 +668,7 @@
    "sku": "1400016172",
    "title": "Shark IP1251UKT PowerDetect Cordless Vacuum Cleaner With Up To 70 Minutes Run Time, Java",
    "url": "https://www.atlanticelectrics.co.uk/products/shark-ip1251ukt-powerdetect-cordless-vacuum-cleaner-with-up-to-70-minutes-run-time-java",
-   "price": 319.99,
-   "wasPrice": 519.99,
+   "price": 552.49,
    "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/files/SHKIP1251UKT_1-1.webp?v=1735408160",
    "inStock": true,
    "brand": "Shark"
@@ -713,8 +720,7 @@
    "sku": "100350160",
    "title": "Shark IZ400UK Stratos Cordless Stick Vacuum Cleaner With Up To 60 Minutes Run Time, Gold",
    "url": "https://www.atlanticelectrics.co.uk/products/shark-iz400uk-stratos-cordless-stick-vacuum-cleaner-60-minutes-run-time-gold",
-   "price": 229.99,
-   "wasPrice": 419.99,
+   "price": 215.12,
    "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/products/shark-iz400uk-stratos-cordless-stick-vacuum-cleaner-60-minutes-run-time-gold-287554.jpg?v=1675437976",
    "inStock": true,
    "brand": "Shark"
@@ -734,8 +740,7 @@
    "sku": "100350180",
    "title": "Shark IZ420UKT Stratos Cordless Stick Vacuum Cleaner With Up To 120 Minutes Run Time, Silver",
    "url": "https://www.atlanticelectrics.co.uk/products/shark-iz420ukt-stratos-cordless-stick-vacuum-cleaner-120-minutes-run-time-silver",
-   "price": 319.99,
-   "wasPrice": 499.99,
+   "price": 531.8,
    "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/products/shark-iz420ukt-stratos-cordless-stick-vacuum-cleaner-120-minutes-run-time-silver-537770.jpg?v=1675437977",
    "inStock": true,
    "brand": "Shark"
@@ -755,8 +760,7 @@
    "sku": "1400041453",
    "title": "Shark LA791UKT Detect Pet Pro Bagless Upright Corded Vacuum Cleaner, Adriatic Teal / Silver",
    "url": "https://www.atlanticelectrics.co.uk/products/shark-la791ukt-detect-pet-pro-upright-corded-vacuum-adriatic-teal-silver",
-   "price": 229.99,
-   "wasPrice": 379.99,
+   "price": 405.44,
    "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/files/SHKLA791UKT_main-1.webp?v=1757498247",
    "inStock": true,
    "brand": "Shark"
@@ -866,6 +870,16 @@
   },
   {
    "retailer": "uk-atlanticelectrics",
+   "sku": "1400046975",
+   "title": "Shark VM200UK VacMop Cordless 2-in-1 Vacuum Mop with Targeted Spray, Charcoal Grey",
+   "url": "https://www.atlanticelectrics.co.uk/products/shark-vm200uk-shark-vacmop-cordless-2-in-1-vacuum-mop-with-targeted-spray-9-min-30-sec-run-time",
+   "price": 107.48,
+   "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/files/SHKVM200UK_main-1.webp?v=1765028650",
+   "inStock": true,
+   "brand": "Shark"
+  },
+  {
+   "retailer": "uk-atlanticelectrics",
    "sku": "100364912",
    "title": "Shark WD110UK HydroVac Corded Hard Floor Wet & Dry Vacuum Cleaner, Navy Blue",
    "url": "https://www.atlanticelectrics.co.uk/products/shark-wd110uk-hydrovac-corded-hard-floor-wet-dry-vacuum-cleaner-navy-blue",
@@ -889,7 +903,7 @@
    "sku": "100345960",
    "title": "Shark WV270UK Wandvac 2.0 Cordless Vacuum Cleaner With Up To 15 Minutes Run Time, Blue",
    "url": "https://www.atlanticelectrics.co.uk/products/shark-wv270uk-wandvac-2-0-cordless-vacuum-cleaner-15-minutes-run-time-blue",
-   "price": 99.99,
+   "price": 193.28,
    "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/products/shark-wv270uk-wandvac-20-cordless-vacuum-cleaner-15-minutes-run-time-blue-510959.jpg?v=1675437994",
    "inStock": true,
    "brand": "Shark"
@@ -956,7 +970,7 @@
    "sku": "1400011014",
    "title": "Vax CVRAV013 Pick Up Pet Cyclonic Cylinder Vacuum Cleaner, Silver & Blue",
    "url": "https://www.atlanticelectrics.co.uk/products/vax-cvrav013-pick-up-pet-cyclonic-cylinder-vacuum-cleaner-silver-blue",
-   "price": 89.99,
+   "price": 69.99,
    "image": "https://cdn.shopify.com/s/files/1/0631/0510/6143/files/VAXCVRAV013_2.webp?v=1722960447",
    "inStock": true
   },

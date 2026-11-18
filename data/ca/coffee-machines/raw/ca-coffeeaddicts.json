@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T04:01:10.804Z",
+ "scrapedAt": "2026-11-18T03:11:17.646Z",
  "offers": [
   {
    "retailer": "ca-coffeeaddicts",
@@ -121,7 +121,7 @@
    "price": 479.99,
    "wasPrice": 649.99,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/BrevilleBambinoPlus.jpg?v=1746151143",
-   "inStock": false,
+   "inStock": true,
    "brand": "Breville",
    "mpn": "BES500BSS1BCA1"
   },
@@ -133,7 +133,7 @@
    "price": 749.99,
    "wasPrice": 999.99,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/BrevilleBaristaExpress.jpg?v=1746151140",
-   "inStock": false,
+   "inStock": true,
    "brand": "Breville",
    "mpn": "BES870BSS1BCA1"
   },
@@ -144,7 +144,7 @@
    "url": "https://coffeeaddicts.ca/products/breville-barista-express-impress-espresso-machine?variant=45206827663612",
    "price": 1149.99,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/BrevilleBaristaExpressImpressblackstainless.jpg?v=1746151139",
-   "inStock": false,
+   "inStock": true,
    "brand": "Breville",
    "mpn": "BES876BST1BNA1"
   },
@@ -431,7 +431,7 @@
    "price": 3439.99,
    "wasPrice": 4299.99,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/brevilleoracletouchblackstainless.jpg?v=1746151130",
-   "inStock": true,
+   "inStock": false,
    "brand": "Breville",
    "mpn": "BES990BST1BCA1"
   },
@@ -617,7 +617,7 @@
    "url": "https://coffeeaddicts.ca/products/ecm-mechanika-slim-pid-espresso-machine",
    "price": 3099,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/MechanikaSlimPIDangled.jpg?v=1746150519",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ca-coffeeaddicts",
@@ -626,7 +626,7 @@
    "url": "https://coffeeaddicts.ca/products/ecm-puristika-espresso-machine",
    "price": 2299,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/ECM_Puristika_frontal.jpg?v=1765807355",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ca-coffeeaddicts",
@@ -1280,7 +1280,7 @@
    "url": "https://coffeeaddicts.ca/products/profitec-jump-espresso-machine",
    "price": 2899,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/profitec-jump-schraeg.jpg?v=1746150634",
-   "inStock": false,
+   "inStock": true,
    "brand": "Profitec"
   },
   {
@@ -1332,7 +1332,7 @@
    "url": "https://coffeeaddicts.ca/products/profitec-ride-espresso-machine?variant=51023349547260",
    "price": 3699,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/ride-angled.jpg?v=1755964156",
-   "inStock": false,
+   "inStock": true,
    "brand": "Profitec"
   },
   {
