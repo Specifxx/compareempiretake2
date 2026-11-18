@@ -3,6 +3,7 @@ import { Analytics, type BeforeSendEvent } from "@vercel/analytics/next";
 import { track } from "@vercel/analytics";
 import Script from "next/script";
 import { useEffect, useState } from "react";
+import { dockArmNow } from "@/lib/dock-arm";
 
 /** GA4 measurement id (G-XXXX). GA4 loads only when it is set, and only for real visitors. */
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -56,7 +57,7 @@ export function SiteAnalytics() {
       if (d.buyProduct) props.product = d.buyProduct;
       if (d.buyPrice && !Number.isNaN(Number(d.buyPrice))) props.price = Math.round(Number(d.buyPrice));
       if (d.buyRank) props.rank = Number(d.buyRank);
-      track("buy_click", props);
+      track("buy_click", { ...props, dock_arm: dockArmNow() });
       // Amazon Associates: a GA4 event per outbound Amazon click, to see which products and placements convert.
       if (d.buy === "amazon")
         window.gtag?.("event", "amazon_click", {
