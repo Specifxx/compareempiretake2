@@ -2262,3 +2262,7 @@ robot vacuums, vacuums and coffee machines were still 2 to 3 weeks old, so the t
 them. Now each runner marks its start, uploads only the files written after it (`find -newer`), and the commit job copies those.
 No scraper, page, price rule or deploy marker changed; the fix shows in the next JB run and the daily refresh after it.
 Check: `data/status.json` should show every JB category under 3 days old after 19 Nov.
+
+## 2026-11-18: cart checkout opens every store or none (owner)
+
+Checkout (`openAll`, `src/lib/cart-checkout.ts`) opens one blank tab per store inside the click, and only when every one opens does it send each to its store's own tagged link. If the browser refuses any, it closes the ones that opened, visits nothing, and the drawer shows the allow-pop-ups steps and a "Try again" button. Before, the first store opened and the rest were refused, which left the visitor with one tab. Chrome 157 on dexcompare.io and on url-opener.com (the owner's model, which does the same close-and-ask) both give one tab until pop-ups are allowed for the site; with them allowed, all open. No browser API grants that permission from a click, so the steps stay.
