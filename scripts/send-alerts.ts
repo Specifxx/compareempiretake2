@@ -11,6 +11,9 @@ import { dataPath, money, type RegionId } from "../src/lib/region";
 import { emailConfigured, sendMail } from "../src/lib/mailer";
 import { SITE } from "../src/lib/site";
 
+// The sender's postal address (owner, 2026-11-18): US law (CAN-SPAM) requires one in commercial email.
+const MAILING_ADDRESS = "12 York Rd, Kellyville NSW 2155, Australia";
+
 const url = process.env.DATABASE_URL;
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
@@ -64,8 +67,8 @@ async function main() {
 <ul>${offers.map((o) => `<li>${esc(name(o.retailer))}: <b>${aud(o.price)}</b> · <a href="${esc(o.url)}">view at store</a></li>`).join("")}</ul>
 <p><a href="${link}" style="background:#4f46e5;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none">See price history and every store</a></p>
 <p style="color:#666;font-size:12px">Prices change quickly; check the store before buying. You asked Compare Empire to email you about this product.
-<a href="${unsub}">Stop this alert</a> · <a href="${unsub}&all=1">Stop all alerts</a></p></div>`;
-    const text = `${title} is now ${aud(price)} (your target: ${aud(a.target)}).\n\n${offers.map((o) => `${name(o.retailer)}: ${aud(o.price)} ${o.url}`).join("\n")}\n\nPrice history: ${link}\n\nStop this alert: ${unsub}`;
+<a href="${unsub}">Stop this alert</a> · <a href="${unsub}&all=1">Stop all alerts</a><br/>${MAILING_ADDRESS}</p></div>`;
+    const text = `${title} is now ${aud(price)} (your target: ${aud(a.target)}).\n\n${offers.map((o) => `${name(o.retailer)}: ${aud(o.price)} ${o.url}`).join("\n")}\n\nPrice history: ${link}\n\nStop this alert: ${unsub}\n\n${MAILING_ADDRESS}`;
     if (await send(a.email, `Price drop: ${title} is ${aud(price)}`, html, text, unsub)) {
       await sql`UPDATE alerts SET last_notified_price = ${price}, last_notified_at = now() WHERE id = ${a.id}`;
       sent++;
