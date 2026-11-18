@@ -7,7 +7,7 @@ import { AmazonNote, AmazonRow } from "./AmazonLink";
 import { bigStoresFor } from "@/lib/big-stores";
 import { AMAZON_PRICE_DISCLAIMER } from "./AmazonLivePrice";
 import { amazonLink, amazonStore } from "@/lib/amazon";
-import { EbayListingRow, EbaySearchRow, PIN_OUTLINE } from "./EbayListingRow";
+import { EbayListingRow, EbaySearchRow, PIN_OUTLINE, ebayIsCheapest } from "./EbayListingRow";
 import { REGIONS, withRegion } from "@/lib/region";
 import { ebaySearch, ebaySellers, SPONSORED_REL } from "@/lib/ebay";
 import { RETAILERS } from "@/lib/retailers";
@@ -215,6 +215,7 @@ export function PhoneOffers({
                     o={o}
                     colours={cs}
                     rank={i}
+                    ebayCheapest={i === 0 && !!phone.ebay && ebayIsCheapest(phone.ebay.price + (phone.ebay.shipping ?? 0), best?.price)}
                     best={best}
                     product={href}
                     was={checks[variant.id]?.was[o.retailer]}
@@ -395,6 +396,7 @@ export function OutrightRow({
   o,
   colours: cs,
   rank: i,
+  ebayCheapest = false,
   best,
   product: href,
   was,
@@ -407,6 +409,8 @@ export function OutrightRow({
   o: Offer;
   colours: Set<string>;
   rank: number;
+  /** eBay's new listing is the cheapest, so this store row drops its "Cheapest" tag (owner, 2026-11-18). */
+  ebayCheapest?: boolean;
   best?: Offer;
   product: string;
   was?: WasCheck;
@@ -445,7 +449,7 @@ export function OutrightRow({
         <div className="flex flex-wrap items-center gap-2">
           <span className="inline-flex items-center gap-2 font-semibold"><RetailerDot id={o.retailer} /> {RETAILERS[o.retailer].name}</span>
           {RETAILERS[o.retailer].type === "official" && <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Official store</span>}
-          {i === 0 && o.inStock && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-bg-card">Cheapest</span>}
+          {i === 0 && o.inStock && !ebayCheapest && <span className="rounded-full bg-save px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-bg-card">Cheapest</span>}
           {aboveRrp(o.price, rrp) ? (
             <span className="rounded-full bg-hot/10 px-2 py-0.5 text-[10px] font-semibold text-hot" title={`The RRP ${rrp!.stores} stores list is ${$(rrp!.price)}`}>Above RRP</span>
           ) : !rrp && others && unusuallyHigh(o.price, others) ? (

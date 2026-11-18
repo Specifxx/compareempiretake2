@@ -16,9 +16,19 @@ export const PIN_OUTLINE = { ebay: "", amazon: "", cheapest: "ring-1 ring-save/6
  * by scripts/ebay-prices.ts). Pinned above the store rows and drawn exactly like one (owner, 2026-11-01: "blend in"),
  * labelled as an ad, never ranked among them.
  */
+/** An eBay price more than 25% under the cheapest store is a wrong product, never the cheapest. */
+export const EBAY_MAX_UNDER_STORES = 0.75;
+
+/** Owner, 2026-11-18 (withdrawing "eBay is never the cheapest"): the NEW eBay listing (the daily job takes new Buy It Now only) is the cheapest when
+ *  its price with postage is under the cheapest in-stock store's and not more than 25% under it. Then the store's own "Cheapest" tag goes. */
+export function ebayIsCheapest(total: number, cheapest: number | undefined): boolean {
+  return cheapest !== undefined && total < cheapest && total >= cheapest * EBAY_MAX_UNDER_STORES;
+}
+
 export function EbayListingRow({ listing, product, money, cheapest, locale, timeZone, cart }: { listing: NonNullable<Phone["ebay"]>; product: string; money: (n: number) => string; cheapest?: number; locale: string; timeZone: string; /** The cart list (owner, 2026-11-06): like a store row, a manual line on the listing's tagged link. */ cart?: { title: string; detail?: string | null; image?: string | null; currency: string } }) {
   const total = listing.price + (listing.shipping ?? 0);
   const below = cheapest !== undefined && total < cheapest;
+  const winner = ebayIsCheapest(total, cheapest);
   const add = cart ? { href: listing.url, productUrl: listing.url, storeName: "eBay", title: cart.title, detail: cart.detail ?? null, priceCents: Math.round(listing.price * 100), currency: cart.currency, image: cart.image ?? null } : null;
   return (
     <a
@@ -35,7 +45,7 @@ export function EbayListingRow({ listing, product, money, cheapest, locale, time
         <div className="flex flex-wrap items-center gap-2 font-semibold">
           <span className="inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-[#E53238] ring-1 ring-black/10" /> eBay
           <span className="rounded-full bg-bg-sunk px-2 py-0.5 text-[10px] font-semibold text-ink-soft">Ad · Paid link · New</span>
-          {below && <span className="rounded-full bg-save/15 px-2 py-0.5 text-[10px] font-bold text-save">Below the stores</span>}
+          {below && <span className="rounded-full bg-save/15 px-2 py-0.5 text-[10px] font-bold text-save">{winner ? "Cheapest" : "Below the stores"}</span>}
           {/* The thumbs stop the row's link (StoreVote calls preventDefault). */}
           <StoreVote url={listing.url} name="eBay" className="font-normal text-ink-mute" />
         </div>

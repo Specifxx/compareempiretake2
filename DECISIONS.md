@@ -2312,6 +2312,12 @@ scroll up, hidden while typing, zoomed, over the cart or menu, never over Add to
 live with `?bn=1`, so `BOTTOM_NAV` is "on" (the owner asked for the bar on every site). `?bn=0` still opts a visitor out, and "off"
 is the rollback. It ships with the next daily release, not its own build.
 
+## 2026-11-18: eBay's listing may be "Cheapest" (owner)
+
+The owner withdrew "eBay is never the cheapest". The NEW eBay listing (the daily job takes new Buy It Now only) shows "Cheapest" instead of
+"Below the stores" when its price with postage is under the cheapest in-stock store's and not more than 25% under it (`ebayIsCheapest`,
+`EBAY_MAX_UNDER_STORES`: a wrong product, not a deal); that store's own "Cheapest" tag then goes. A listing far under the stores keeps the
+plain "Below the stores". Order, metadata and feeds are unchanged. `tests/ebay-cheapest.test.ts`.
 ## 2026-11-18: Feedback asks: "Was this page useful?" in the footer, a /feedback page, counted by the daily triage (owner)
 
 The owner: "We need more feedback so can we find a way to get more". One RiftCompare visitor's note (sort the movers by %
