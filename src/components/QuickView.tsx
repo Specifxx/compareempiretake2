@@ -170,8 +170,8 @@ export function QuickView() {
           )}
         </div>
         <div className="border-t border-line p-4 sm:px-5">
-          <Link href={phone && phone !== "loading" && vid ? `${head.href}?v=${vid}` : head.href} prefetch={false} onClick={hide} className="btn-primary flex w-full justify-center text-[15px]">
-            See price history and details <span aria-hidden>→</span>
+          <Link href={phone && phone !== "loading" && vid ? `${head.href}?v=${vid}` : head.href} prefetch={false} onClick={hide} data-quickview-fullpage className="btn-primary flex min-h-11 w-full justify-center text-[15px]">
+            See full page: price history and details <span aria-hidden>→</span>
           </Link>
         </div>
       </div>

@@ -5,7 +5,7 @@
 // Escape, the backdrop) steps back the same way, so the history never fills with pop-ups.
 //
 // The pushed entry copies Next's own history state (__NA and the router tree), so the app router passes the push through untouched:
-// the page under the pop-up stays what it is, and Back restores it without a fetch. "See price history and details" then navigates
+// the page under the pop-up stays what it is, and Back restores it without a fetch. "See full page: price history and details" then navigates
 // to the URL already in the address bar, which Next turns into a replace: Back from the product page goes to the list.
 //
 // Identical in every site's repo (tests/quick-view-url.test.ts pins the behaviour).
