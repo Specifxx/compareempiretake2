@@ -1,12 +1,13 @@
 {
- "scrapedAt": "2026-10-30T23:24:05.541Z",
+ "scrapedAt": "2026-11-18T22:42:56.882Z",
  "offers": [
   {
    "retailer": "jbhifi",
    "sku": "881622",
    "title": "Antigravity A1 8K 360 Drone Infinity Bundle",
    "url": "https://www.jbhifi.com.au/products/antigravity-a1-8k-360-drone-infinity-bundle",
-   "price": 2899,
+   "price": 1159,
+   "wasPrice": 2899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/881622-Product-0-I-639004858206019686.jpg?v=1764896046",
    "inStock": true,
    "brand": "Antigravity"
@@ -48,7 +49,7 @@
    "url": "https://www.jbhifi.com.au/products/dji-avata-360-8k-drone-dji-rc-2",
    "price": 1159,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894546-Product-0-I-639099853806460787.jpg?v=1774394106",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dji"
   },
   {
@@ -66,7 +67,8 @@
    "sku": "795627",
    "title": "DJI Flip Drone (DJI RC 2)",
    "url": "https://www.jbhifi.com.au/products/dji-flip-drone-dji-rc-2",
-   "price": 759,
+   "price": 649,
+   "wasPrice": 759,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/795627-Product-0-I-638720575806478521.jpg?v=1791256553",
    "inStock": false,
    "brand": "Dji"
@@ -76,7 +78,8 @@
    "sku": "795626",
    "title": "DJI Flip Drone (DJI RC-N3)",
    "url": "https://www.jbhifi.com.au/products/dji-flip-drone-dji-rc-n3",
-   "price": 559,
+   "price": 479,
+   "wasPrice": 559,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/795626-Product-0-I-638720624407614200.jpg?v=1790915887",
    "inStock": true,
    "brand": "Dji"
@@ -86,7 +89,8 @@
    "sku": "795628",
    "title": "DJI Flip Fly More Combo (DJI RC 2)",
    "url": "https://www.jbhifi.com.au/products/dji-flip-fly-more-combo-dji-rc-2",
-   "price": 919,
+   "price": 779,
+   "wasPrice": 919,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/795628-Product-0-I-638720587202066929.jpg?v=1791256550",
    "inStock": true,
    "brand": "Dji"
@@ -176,7 +180,8 @@
    "sku": "811487",
    "title": "DJI Mavic 4 Pro 512GB Creator Combo (DJI RC Pro 2)",
    "url": "https://www.jbhifi.com.au/products/dji-mavic-4-pro-512gb-creator-combo-dji-rc-pro-2",
-   "price": 5359,
+   "price": 4889,
+   "wasPrice": 5359,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811487-Product-0-I-638823667805493749.jpg?v=1747122914",
    "inStock": true,
    "brand": "Dji"
@@ -186,18 +191,9 @@
    "sku": "811486",
    "title": "DJI Mavic 4 Pro Fly More Combo (DJI RC 2)",
    "url": "https://www.jbhifi.com.au/products/dji-mavic-4-pro-fly-more-combo-dji-rc-2",
-   "price": 4039,
+   "price": 3885,
+   "wasPrice": 4039,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811486-Product-0-I-638823669604272517.jpg?v=1747122974",
-   "inStock": true,
-   "brand": "Dji"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "623786",
-   "title": "DJI Mini 3 Drone",
-   "url": "https://www.jbhifi.com.au/products/dji-mini-3-drone",
-   "price": 509,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/623786-Product-0-I-638325781204882218.jpg?v=1791256229",
    "inStock": true,
    "brand": "Dji"
   },
@@ -306,7 +302,8 @@
    "sku": "782312",
    "title": "DJI Neo Drone",
    "url": "https://www.jbhifi.com.au/products/dji-neo-drone",
-   "price": 249,
+   "price": 199,
+   "wasPrice": 249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/782312-Product-0-I-638608467005439349.jpg?v=1725509476",
    "inStock": true,
    "brand": "Dji"
@@ -316,7 +313,8 @@
    "sku": "782313",
    "title": "DJI Neo Fly More Combo",
    "url": "https://www.jbhifi.com.au/products/dji-neo-fly-more-combo",
-   "price": 459,
+   "price": 348,
+   "wasPrice": 379,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/782313-Product-0-I-638608469417994034.jpg?v=1725579918",
    "inStock": true,
    "brand": "Dji"
@@ -326,7 +324,8 @@
    "sku": "790944",
    "title": "DJI Neo Motion Fly More Combo",
    "url": "https://www.jbhifi.com.au/products/dji-neo-motion-fly-more-combo",
-   "price": 709,
+   "price": 589,
+   "wasPrice": 709,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/790944-Product-0-I-638662747205232873.jpg?v=1730678056",
    "inStock": true,
    "brand": "Dji"
@@ -336,7 +335,8 @@
    "sku": "906982",
    "title": "HoverAir AQUA 4K Waterproof Drone Basic Combo",
    "url": "https://www.jbhifi.com.au/products/hoverair-aqua-4k-waterproof-drone-basic-combo",
-   "price": 2199,
+   "price": 1249,
+   "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906982-Product-0-I-639203844035148552.jpg?v=1784787665",
    "inStock": false,
    "brand": "Hoverair"
@@ -348,7 +348,7 @@
    "url": "https://www.jbhifi.com.au/products/potensic-atom-2-4k-drone-fly-more-combo",
    "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/889959-Product-0-I-639068916607075344.jpg?v=1771299966",
-   "inStock": false,
+   "inStock": true,
    "brand": "Potensic"
   },
   {
@@ -368,7 +368,7 @@
    "url": "https://www.jbhifi.com.au/products/potensic-atom-2-4k-drone-with-screen-remote-standard-kit",
    "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/889954-Product-0-I-639068926804305884.jpg?v=1771299968",
-   "inStock": true,
+   "inStock": false,
    "brand": "Potensic"
   },
   {
@@ -406,7 +406,8 @@
    "sku": "912908",
    "title": "Zero-X Glyden2 2K QHD Drone with Screen Controller",
    "url": "https://www.jbhifi.com.au/products/zero-x-glyden2-2k-qhd-drone-with-screen-controller",
-   "price": 299,
+   "price": 236,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/912908-Product-0-I-639262836603563635.jpg?v=1790686924",
    "inStock": true,
    "brand": "Zero-X"
@@ -416,7 +417,8 @@
    "sku": "912909",
    "title": "Zero-X Levion2 4K Drone with Screen Controller",
    "url": "https://www.jbhifi.com.au/products/zero-x-levion2-4k-drone-with-screen-controller",
-   "price": 599,
+   "price": 479,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/912909-Product-0-I-639262839004459885.jpg?v=1790687164",
    "inStock": true,
    "brand": "Zero-X"
@@ -436,7 +438,8 @@
    "sku": "912907",
    "title": "Zero-X Osprey2 Full HD Drone with WiFi",
    "url": "https://www.jbhifi.com.au/products/zero-x-osprey2-full-hd-drone-with-wifi",
-   "price": 129,
+   "price": 99,
+   "wasPrice": 129,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/912907-Product-0-I-639262834805311581.jpg?v=1790686805",
    "inStock": true,
    "brand": "Zero-X"

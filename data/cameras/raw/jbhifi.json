@@ -1,6 +1,16 @@
 {
- "scrapedAt": "2026-10-30T23:23:18.768Z",
+ "scrapedAt": "2026-11-18T22:25:29.340Z",
  "offers": [
+  {
+   "retailer": "jbhifi",
+   "sku": "10103901",
+   "title": "Brinno TLC300 Time Lapse Camera",
+   "url": "https://www.jbhifi.com.au/products/brinno-tlc300-time-lapse-camera",
+   "price": 369,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/c53df94cd2014e92a37b2df89b86071e.png?v=1794464431",
+   "inStock": true,
+   "brand": "Brinno"
+  },
   {
    "retailer": "jbhifi",
    "sku": "888312",
@@ -53,20 +63,11 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "888311",
-   "title": "Camp Snap Pro Digital Camera",
-   "url": "https://www.jbhifi.com.au/products/camp-snap-pro-digital-camera",
-   "price": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/888311-Product-0-I-639081022207569448.jpg?v=1772505487",
-   "inStock": true,
-   "brand": "Campsnap"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "625741",
    "title": "Canon EOS 1500D DSLR Camera with 18-55mm Lens",
    "url": "https://www.jbhifi.com.au/products/canon-eos-1500d-dslr-camera-with-18-55mm-lens",
-   "price": 849,
+   "price": 667,
+   "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/625741-Product-0-I-638496997803555505.jpg?v=1715216052",
    "inStock": true,
    "brand": "Canon"
@@ -76,7 +77,8 @@
    "sku": "593530",
    "title": "Canon EOS R10 Mirrorless Camera with RFS 18-150STM Lens",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r10-mirrorless-camera-with-rfs-18-150stm-lens",
-   "price": 1869,
+   "price": 1567.4,
+   "wasPrice": 1844,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/593530-Product-0-I-638496998443442722.jpg?v=1791256119",
    "inStock": false,
    "brand": "Canon"
@@ -86,7 +88,8 @@
    "sku": "593529",
    "title": "Canon EOS R10 Mirrorless Camera with RFS 18-45STM Lens",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r10-mirrorless-camera-with-rfs-18-45stm-lens",
-   "price": 1399,
+   "price": 1189.15,
+   "wasPrice": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/593529-Product-0-I-638560111889925539.jpg?v=1791256112",
    "inStock": true,
    "brand": "Canon"
@@ -96,7 +99,8 @@
    "sku": "787855",
    "title": "Canon EOS R100 Mirrorless 18-45 + 55-210 Twin Lens Kit",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r100-mirrorless-18-45-55-210-twin-lens-kit",
-   "price": 1399,
+   "price": 1070.15,
+   "wasPrice": 1259,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/787855-Product-0-I-638616924610798961.jpg?v=1726096214",
    "inStock": false,
    "brand": "Canon"
@@ -106,8 +110,8 @@
    "sku": "652310",
    "title": "Canon EOS R100 Mirrorless Camera with RF-S 18-45mm Lens",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r100-mirrorless-camera-with-rf-s-18-45mm-lens",
-   "price": 929,
-   "wasPrice": 1099,
+   "price": 788,
+   "wasPrice": 929,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/652310-Product-0-I-638204870412595312.jpg?v=1791256264",
    "inStock": true,
    "brand": "Canon"
@@ -117,7 +121,8 @@
    "sku": "535940",
    "title": "Canon EOS R3 Mirrorless Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r3-mirrorless-camera-body-only",
-   "price": 8199,
+   "price": 6969.15,
+   "wasPrice": 8199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/535940-Product-0-I-638496998424577383.jpg?v=1791256032",
    "inStock": false,
    "brand": "Canon"
@@ -127,7 +132,8 @@
    "sku": "654352",
    "title": "Canon EOS R50 Mirrorless Camera with RFS 18-45 + 55-210mm Twin Lens Kit",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r50-mirrorless-camera-with-rfs-18-45-55-210mm-twin-lens-kit",
-   "price": 1497,
+   "price": 1272.45,
+   "wasPrice": 1497,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/654352-Product-0-I-638263704606322398.jpg?v=1791256254",
    "inStock": true,
    "brand": "Canon"
@@ -137,7 +143,8 @@
    "sku": "654351",
    "title": "Canon EOS R50 Mirrorless Camera with RFS 18-45mm Lens Kit",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r50-mirrorless-camera-with-rfs-18-45mm-lens-kit",
-   "price": 1198,
+   "price": 998,
+   "wasPrice": 1198,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/654351-Product-0-I-638263704688996341.jpg?v=1791256255",
    "inStock": true,
    "brand": "Canon"
@@ -147,7 +154,7 @@
    "sku": "809135",
    "title": "Canon EOS R50 V Mirrorless Vlog Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r50-v-mirrorless-vlog-camera-body-only",
-   "price": 1039,
+   "price": 1169,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/809135-Product-0-I-638786237407142637.jpg?v=1743136752",
    "inStock": false,
    "brand": "Canon"
@@ -157,8 +164,8 @@
    "sku": "809136",
    "title": "Canon EOS R50 V Mirrorless Vlog Camera with RF-S 14-30mm f/4-6.3 IS STM PZ Lens",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r50-v-mirrorless-vlog-camera-with-rf-s-14-30mm-f-4-6-3-is-stm-pz-lens",
-   "price": 1194,
-   "wasPrice": 1327,
+   "price": 1087,
+   "wasPrice": 1194,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/809136-Product-0-I-638786265007716027.jpg?v=1743381315",
    "inStock": true,
    "brand": "Canon"
@@ -168,7 +175,8 @@
    "sku": "616025",
    "title": "Canon EOS R6 Mark II Mirrorless Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r6-mark-ii-mirrorless-camera-body-only",
-   "price": 3299,
+   "price": 2804.15,
+   "wasPrice": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/616025-Product-0-I-638030576241728821.jpg?v=1791256157",
    "inStock": true,
    "brand": "Canon"
@@ -178,7 +186,8 @@
    "sku": "847953",
    "title": "Canon EOS R6 Mark III Mirrorless Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r6-mark-iii-mirrorless-camera-body-only",
-   "price": 3879,
+   "price": 3654,
+   "wasPrice": 3879,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/847953-Product-0-I-638979865207699683.jpg?v=1762389786",
    "inStock": false,
    "brand": "Canon"
@@ -188,7 +197,8 @@
    "sku": "847954",
    "title": "Canon EOS R6 Mark III Mirrorless Camera with RF 24-105 f/4L IS USM",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r6-mark-iii-mirrorless-camera-with-rf-24-105-f-4l-is-usm",
-   "price": 5529,
+   "price": 5226,
+   "wasPrice": 5529,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/847954-Product-0-I-638979867005687691.jpg?v=1762389965",
    "inStock": false,
    "brand": "Canon"
@@ -198,7 +208,8 @@
    "sku": "593526",
    "title": "Canon EOS R7 Mirrorless Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r7-mirrorless-camera-body-only",
-   "price": 2299,
+   "price": 1954.15,
+   "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/593526-Product-0-I-638490980402780491.jpg?v=1791256113",
    "inStock": false,
    "brand": "Canon"
@@ -208,8 +219,8 @@
    "sku": "593527",
    "title": "Canon EOS R7 Mirrorless Camera with RFS 18-150STM Lens",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r7-mirrorless-camera-with-rfs-18-150stm-lens",
-   "price": 2347,
-   "wasPrice": 2699,
+   "price": 2294,
+   "wasPrice": 2347,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/593527-Product-0-I-638538331805464563.jpg?v=1791256115",
    "inStock": true,
    "brand": "Canon"
@@ -219,7 +230,8 @@
    "sku": "629110",
    "title": "Canon EOS R8 Mirrorless Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r8-mirrorless-camera-body-only",
-   "price": 1979,
+   "price": 1682.15,
+   "wasPrice": 1979,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/629110-Product-0-I-638139638598954689.jpg?v=1791256225",
    "inStock": true,
    "brand": "Canon"
@@ -229,7 +241,8 @@
    "sku": "629111",
    "title": "Canon EOS R8 Mirrorless Camera RF 24-50 STM Lens Kit",
    "url": "https://www.jbhifi.com.au/products/canon-eos-r8-mirrorless-camera-rf-24-50-stm-lens-kit",
-   "price": 2269,
+   "price": 1949.9,
+   "wasPrice": 2269,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/629111-Product-0-I-638139648799018509.jpg?v=1791256218",
    "inStock": true,
    "brand": "Canon"
@@ -269,7 +282,8 @@
    "sku": "809134",
    "title": "Canon PowerShot V1 Vlog Camera",
    "url": "https://www.jbhifi.com.au/products/canon-powershot-v1-vlog-camera",
-   "price": 1449,
+   "price": 1198,
+   "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/809134-Product-0-I-638786227803344545_3515a20d-0916-4c1a-b398-89e884535eee.jpg?v=1743139576",
    "inStock": true,
    "brand": "Canon"
@@ -279,7 +293,8 @@
    "sku": "650047",
    "title": "Canon PowerShot V10 Vlogging Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/canon-powershot-v10-vlogging-camera-black",
-   "price": 597,
+   "price": 492,
+   "wasPrice": 579,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/650047-Product-0-I-638194484660715118.jpg?v=1791256246",
    "inStock": true,
    "brand": "Canon"
@@ -289,7 +304,8 @@
    "sku": "650048",
    "title": "Canon PowerShot V10 Vlogging Camera (Silver)",
    "url": "https://www.jbhifi.com.au/products/canon-powershot-v10-vlogging-camera-silver",
-   "price": 597,
+   "price": 492,
+   "wasPrice": 579,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/650048-Product-0-I-638194487446075363.jpg?v=1791256242",
    "inStock": true,
    "brand": "Canon"
@@ -309,7 +325,8 @@
    "sku": "817559",
    "title": "DJI Osmo 360 Adventure Combo",
    "url": "https://www.jbhifi.com.au/products/dji-osmo-360-adventure-combo",
-   "price": 989,
+   "price": 839,
+   "wasPrice": 989,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817559-Product-0-I-638896002603096636.jpg?v=1754242706",
    "inStock": true,
    "brand": "Dji"
@@ -349,7 +366,8 @@
    "sku": "817560",
    "title": "DJI Osmo 360 Standard Combo",
    "url": "https://www.jbhifi.com.au/products/dji-osmo-360-standard-combo",
-   "price": 759,
+   "price": 649,
+   "wasPrice": 759,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817560-Product-0-I-638947197605101673.jpg?v=1761867758",
    "inStock": true,
    "brand": "Dji"
@@ -359,7 +377,8 @@
    "sku": "656832",
    "title": "DJI Osmo Action 4 Adventure Combo",
    "url": "https://www.jbhifi.com.au/products/dji-osmo-action-4-adventure-combo",
-   "price": 549,
+   "price": 499,
+   "wasPrice": 549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656832-Product-0-I-638265378031987127.jpg?v=1690941074",
    "inStock": true,
    "brand": "Dji"
@@ -369,7 +388,8 @@
    "sku": "656831",
    "title": "DJI Osmo Action 4 Standard Combo",
    "url": "https://www.jbhifi.com.au/products/dji-osmo-action-4-standard-combo",
-   "price": 359,
+   "price": 299,
+   "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656831-Product-0-I-638265409233305291.jpg?v=1690944192",
    "inStock": true,
    "brand": "Dji"
@@ -379,7 +399,8 @@
    "sku": "786704",
    "title": "DJI Osmo Action 5  Pro Standard Combo",
    "url": "https://www.jbhifi.com.au/products/dji-osmo-action-5-pro-standard-combo",
-   "price": 539,
+   "price": 459,
+   "wasPrice": 539,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/786704-Product-0-I-638621260807099027.jpg?v=1726529353",
    "inStock": true,
    "brand": "Dji"
@@ -389,7 +410,8 @@
    "sku": "786705",
    "title": "DJI Osmo Action 5 Pro Adventure Combo",
    "url": "https://www.jbhifi.com.au/products/dji-osmo-action-5-pro-adventure-combo",
-   "price": 709,
+   "price": 599,
+   "wasPrice": 709,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/786705-Product-0-I-638621256011328819.jpg?v=1726528875",
    "inStock": true,
    "brand": "Dji"
@@ -449,7 +471,7 @@
    "sku": "668633",
    "title": "DJI Osmo Pocket 3 4K 3 Axis Gimbal Camera",
    "url": "https://www.jbhifi.com.au/products/dji-osmo-pocket-3-4k-3-axis-gimbal-camera",
-   "price": 599,
+   "price": 587,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/668633-Product-0-I-638337113408113121.jpg?v=1698114619",
    "inStock": true,
    "brand": "Dji"
@@ -516,6 +538,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "918327",
+   "title": "DJI Osmo Pocket 4P Vlog Combo (White)",
+   "url": "https://www.jbhifi.com.au/products/dji-osmo-pocket-4p-vlog-combo-white",
+   "price": 1099,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918327-Product-0-I-639301259403778921.jpg?v=1794529207",
+   "inStock": false,
+   "brand": "Dji"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "846365",
    "title": "FireFly Pixus Slim Digital Compact Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/firefly-pixus-slim-digital-compact-camera-black",
@@ -546,10 +578,21 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "10103032",
+   "title": "Freewell Wide Angle Lens Kit for Insta360 Luna Ultra",
+   "url": "https://www.jbhifi.com.au/products/freewell-wide-angle-lens-kit-for-insta360-luna-ultra",
+   "price": 75,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/0c7ca822a8f6481883c07543463d14a3.jpg?v=1794279018",
+   "inStock": true,
+   "brand": "Freewell"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "904930",
    "title": "Fujifilm Instax Mini 13 Premium Bundle (Blue)",
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-mini-13-premium-bundle-blue",
-   "price": 169,
+   "price": 149,
+   "wasPrice": 169,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904930-Product-0-I-639257200203414103.jpg?v=1790123286",
    "inStock": true,
    "brand": "Fujifilm"
@@ -559,7 +602,8 @@
    "sku": "904931",
    "title": "Fujifilm Instax Mini 13 Premium Bundle (Green)",
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-mini-13-premium-bundle-green",
-   "price": 169,
+   "price": 149,
+   "wasPrice": 169,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904931-Product-0-I-639257205004288626.jpg?v=1792540533",
    "inStock": true,
    "brand": "Fujifilm"
@@ -569,7 +613,8 @@
    "sku": "904927",
    "title": "Fujifilm Instax Mini 13 Premium Bundle (Pink)",
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-mini-13-premium-bundle-pink",
-   "price": 169,
+   "price": 149,
+   "wasPrice": 169,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904927-Product-0-I-639257175604135060.jpg?v=1790120826",
    "inStock": true,
    "brand": "Fujifilm"
@@ -579,7 +624,8 @@
    "sku": "904928",
    "title": "Fujifilm Instax Mini 13 Premium Bundle (Purple)",
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-mini-13-premium-bundle-purple",
-   "price": 169,
+   "price": 149,
+   "wasPrice": 169,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904928-Product-0-I-639257196607378415.jpg?v=1790122926",
    "inStock": true,
    "brand": "Fujifilm"
@@ -589,7 +635,8 @@
    "sku": "904929",
    "title": "Fujifilm Instax Mini 13 Premium Bundle (White)",
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-mini-13-premium-bundle-white",
-   "price": 169,
+   "price": 149,
+   "wasPrice": 169,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904929-Product-0-I-639257198403490219.jpg?v=1790123107",
    "inStock": true,
    "brand": "Fujifilm"
@@ -609,7 +656,8 @@
    "sku": "831247",
    "title": "Fujifilm Instax Mini 41 Instant Camera Value Pack",
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-mini-41-instant-camera-value-pack",
-   "price": 199,
+   "price": 149,
+   "wasPrice": 199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/831247-Product-0-I-638931454804649204.jpg?v=1757548745",
    "inStock": true,
    "brand": "Fujifilm"
@@ -631,6 +679,16 @@
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-mini-evo-cinema-instant-camera",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/883570-Product-0-I-639039617405648225.jpg?v=1768365006",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "919253",
+   "title": "Fujifilm instax Mini EVO Instant Camera Bundle (Gentle Rose)",
+   "url": "https://www.jbhifi.com.au/products/fujifilm-instax-mini-evo-instant-camera-bundle-gentle-rose",
+   "price": 329,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/919253-Product-0-I-639298750803367392.jpg?v=1794278361",
    "inStock": true,
    "brand": "Fujifilm"
   },
@@ -749,7 +807,8 @@
    "sku": "776384",
    "title": "Fujifilm Instax Wide 400 Instant Camera",
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-wide-400-instant-camera",
-   "price": 229,
+   "price": 178,
+   "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/776384-Product-0-I-638605017603853548.jpg?v=1724905035",
    "inStock": true,
    "brand": "Fujifilm"
@@ -761,7 +820,7 @@
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-wide-400-instant-camera-jet-black",
    "price": 229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/892847-Product-0-I-639113833806745772.jpg?v=1775786851",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -771,6 +830,16 @@
    "url": "https://www.jbhifi.com.au/products/fujifilm-instax-wide-400-instant-camera-bundle-green",
    "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/910256-Product-0-I-639225420006150032.jpg?v=1786945270",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "910257",
+   "title": "FujiFilm instax WIDE 400 Instant Camera Bundle (Jet Black)",
+   "url": "https://www.jbhifi.com.au/products/fujifilm-instax-wide-400-instant-camera-bundle-jet-black",
+   "price": 249,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/910257-Product-0-I-639225420006168726.jpg?v=1786945274",
    "inStock": true,
    "brand": "Fujifilm"
   },
@@ -830,7 +899,7 @@
    "sku": "788625",
    "title": "Fujifilm X-M5 Mirrorless Camera with XC 15-45mm Lens (Black)",
    "url": "https://www.jbhifi.com.au/products/fujifilm-x-m5-mirrorless-camera-with-xc-15-45mm-lens-black",
-   "price": 1199,
+   "price": 1257,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/788625-Product-0-I-638645494802237379.jpg?v=1728952757",
    "inStock": true,
    "brand": "Fujifilm"
@@ -850,7 +919,7 @@
    "sku": "864198",
    "title": "Fujifilm X-T30 III Mirrorless Camera with 13-33mm Lens (Charcoal/Silver)",
    "url": "https://www.jbhifi.com.au/products/fujifilm-x-t30-iii-mirrorless-camera-with-13-33mm-lens-charcoal-silver",
-   "price": 1459,
+   "price": 1532,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/864198-Product-0-I-639004021205886966.jpg?v=1764805387",
    "inStock": false,
    "brand": "Fujifilm"
@@ -867,20 +936,11 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "677018",
-   "title": "Fujifilm X100VI Compact Camera (Silver)",
-   "url": "https://www.jbhifi.com.au/products/fujifilm-x100vi-compact-camera-silver",
-   "price": 3199,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/677018-Product-0-I-638439871210448754.jpg?v=1708390399",
-   "inStock": true,
-   "brand": "Fujifilm"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "783942",
    "title": "GoPro Hero 4K Action Cam",
    "url": "https://www.jbhifi.com.au/products/gopro-hero-4k-action-cam",
-   "price": 349,
+   "price": 274,
+   "wasPrice": 349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/783942-Product-0-I-638609230803706231.jpg?v=1730159597",
    "inStock": true,
    "brand": "Gopro"
@@ -900,7 +960,7 @@
    "sku": "783940",
    "title": "GoPro Hero13 Black 5.3K HyperSmooth 6.0 Action Cam",
    "url": "https://www.jbhifi.com.au/products/gopro-hero13-black-5-3k-hypersmooth-6-0-action-cam",
-   "price": 649,
+   "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/783940-Product-0-I-638609148605229588_16cdd37c-4d5a-4860-9856-c90cc105603a.jpg?v=1728960077",
    "inStock": true,
    "brand": "Gopro"
@@ -910,7 +970,7 @@
    "sku": "783941",
    "title": "GoPro Hero13 Black 5.3K HyperSmooth 6.0 Action Cam Creator Edition",
    "url": "https://www.jbhifi.com.au/products/gopro-hero13-black-5-3k-hypersmooth-6-0-action-cam-creator-edition",
-   "price": 979,
+   "price": 929,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/783941-Product-0-I-638609155805375899_b589370c-e443-4f08-80ee-e81209abf6d8.jpg?v=1728960914",
    "inStock": true,
    "brand": "Gopro"
@@ -930,7 +990,8 @@
    "sku": "840465",
    "title": "GoPro MAX 2 8K 360 Action Cam",
    "url": "https://www.jbhifi.com.au/products/gopro-max-2-8k-360-action-cam",
-   "price": 849,
+   "price": 507,
+   "wasPrice": 629,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840465-Product-0-I-638941996812462359.jpg?v=1758602948",
    "inStock": true,
    "brand": "Gopro"
@@ -972,7 +1033,7 @@
    "url": "https://www.jbhifi.com.au/products/gopro-mission-1-pro-8k-ultimate-creator-edition",
    "price": 1849,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914844-Product-0-I-639273612013686392.jpg?v=1791764526",
-   "inStock": true,
+   "inStock": false,
    "brand": "Gopro"
   },
   {
@@ -1050,7 +1111,8 @@
    "sku": "834152",
    "title": "Insta360 Go Ultra Action Cam Creator Bundle (Black)",
    "url": "https://www.jbhifi.com.au/products/insta360-go-ultra-action-cam-creator-bundle-black",
-   "price": 839,
+   "price": 699,
+   "wasPrice": 839,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/834152-Product-0-I-638954072446005578.jpg?v=1759810504",
    "inStock": true,
    "brand": "Insta360"
@@ -1060,7 +1122,8 @@
    "sku": "752663",
    "title": "Insta360 GO3S with 128GB Memory (White)",
    "url": "https://www.jbhifi.com.au/products/insta360-go3s-with-128gb-memory-white",
-   "price": 615,
+   "price": 459,
+   "wasPrice": 615,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/752663-Product-0-I-638539282806253637.jpg?v=1718331556",
    "inStock": true,
    "brand": "Insta360"
@@ -1070,7 +1133,8 @@
    "sku": "899008",
    "title": "Insta360 Luna Ultra 8K Gimbal Camera Standard Bundle (Cosmic Black)",
    "url": "https://www.jbhifi.com.au/products/insta360-luna-ultra-8k-gimbal-camera-standard-bundle-cosmic-black",
-   "price": 1229,
+   "price": 1099,
+   "wasPrice": 1229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899008-Product-0-I-639166449006453662.jpg?v=1781048165",
    "inStock": true,
    "brand": "Insta360"
@@ -1080,7 +1144,8 @@
    "sku": "899009",
    "title": "Insta360 Luna Ultra Ultra 8K Gimbal Camera Creator Bundle (Cosmic Black)",
    "url": "https://www.jbhifi.com.au/products/insta360-luna-ultra-ultra-8k-gimbal-camera-creator-bundle-cosmic-black",
-   "price": 1549,
+   "price": 1248,
+   "wasPrice": 1549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899009-Product-0-I-639166453807236310.jpg?v=1781048647",
    "inStock": true,
    "brand": "Insta360"
@@ -1090,7 +1155,8 @@
    "sku": "745616",
    "title": "Insta360 X4 8K 360 Action Camera",
    "url": "https://www.jbhifi.com.au/products/insta360-x4-8k-360-action-camera",
-   "price": 747,
+   "price": 529,
+   "wasPrice": 747,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/745616-Product-0-I-638489893804526837.jpg?v=1713757153",
    "inStock": true,
    "brand": "Insta360"
@@ -1110,7 +1176,8 @@
    "sku": "847091",
    "title": "Insta360 X4 Air 8K 360 Action Cam Starter Bundle",
    "url": "https://www.jbhifi.com.au/products/insta360-x4-air-8k-360-action-cam-starter-bundle",
-   "price": 699,
+   "price": 525,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/847091-Product-0-I-638972242277227775.jpg?v=1761627487",
    "inStock": true,
    "brand": "Insta360"
@@ -1130,7 +1197,8 @@
    "sku": "811527",
    "title": "Insta360 X5 8K 360 Action Camera Essentials Bundle",
    "url": "https://www.jbhifi.com.au/products/insta360-x5-8k-360-action-camera-essentials-bundle",
-   "price": 1109,
+   "price": 877,
+   "wasPrice": 1109,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811527-Product-0-I-638803690203205350_dc6b2b71-1591-4049-939c-c2b268c7329c.jpg?v=1745364072",
    "inStock": true,
    "brand": "Insta360"
@@ -1180,7 +1248,8 @@
    "sku": "653252",
    "title": "Kodak C210RW Mini Shot 2 Instant Camera",
    "url": "https://www.jbhifi.com.au/products/kodak-c210rw-mini-shot-2-instant-camera",
-   "price": 189,
+   "price": 164,
+   "wasPrice": 189,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/653252-Product-0-I-638235882609654416.jpg?v=1688690296",
    "inStock": true,
    "brand": "Kodak"
@@ -1190,7 +1259,8 @@
    "sku": "653251",
    "title": "Kodak Pixpro AZ528 Digital Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-az528-digital-camera-black",
-   "price": 499,
+   "price": 397,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/653251-Product-0-I-638235147010918446.jpg?v=1687996117",
    "inStock": true,
    "brand": "Kodak"
@@ -1200,7 +1270,8 @@
    "sku": "653247",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-black",
-   "price": 219,
+   "price": 178,
+   "wasPrice": 219,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/653247-Product-0-I-638235167437009563.jpg?v=1687996121",
    "inStock": true,
    "brand": "Kodak"
@@ -1210,7 +1281,8 @@
    "sku": "893388",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (Pink)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-pink",
-   "price": 219,
+   "price": 178,
+   "wasPrice": 219,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893388-Product-0-I-639107014803789631.jpg?v=1775104749",
    "inStock": true,
    "brand": "Kodak"
@@ -1220,7 +1292,8 @@
    "sku": "662354",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (Red)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-red",
-   "price": 219,
+   "price": 178,
+   "wasPrice": 219,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/662354-Product-0-I-638743226420433053.jpg?v=1749022243",
    "inStock": true,
    "brand": "Kodak"
@@ -1230,7 +1303,8 @@
    "sku": "893389",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (Silver)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-silver",
-   "price": 219,
+   "price": 178,
+   "wasPrice": 219,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893389-Product-0-I-639113974201661640.jpg?v=1775800685",
    "inStock": true,
    "brand": "Kodak"
@@ -1240,7 +1314,8 @@
    "sku": "675795",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (White)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-white",
-   "price": 219,
+   "price": 178,
+   "wasPrice": 219,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/675795-Product-0-I-638416603849262149.jpg?v=1706063660",
    "inStock": true,
    "brand": "Kodak"
@@ -1350,7 +1425,8 @@
    "sku": "797069",
    "title": "Nikon Coolpix P1100 Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/nikon-coolpix-p1100-camera-black",
-   "price": 1749,
+   "price": 1486,
+   "wasPrice": 1749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/797069-Product-0-I-638742971405788573.jpg?v=1738700410",
    "inStock": true,
    "brand": "Nikon"
@@ -1360,7 +1436,8 @@
    "sku": "666630",
    "title": "Nikon Z 30 Mirrorless Camera with 12-28mm Powerzoom Lens",
    "url": "https://www.jbhifi.com.au/products/nikon-z-30-mirrorless-camera-with-12-28mm-powerzoom-lens",
-   "price": 1199,
+   "price": 1049,
+   "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/666630-Product-0-I-638325986402456199_51ed80b9-d39b-4614-95fb-f535229a9647.jpg?v=1701397805",
    "inStock": true,
    "brand": "Nikon"
@@ -1370,7 +1447,8 @@
    "sku": "660797",
    "title": "Nikon Z 30 Mirrorless Camera with 16-50mm VR Lens",
    "url": "https://www.jbhifi.com.au/products/nikon-z-30-mirrorless-camera-with-16-50mm-vr-lens-1",
-   "price": 1049,
+   "price": 897,
+   "wasPrice": 1049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/660797-Product-0-I-638295801004220804.jpg?v=1791256294",
    "inStock": true,
    "brand": "Nikon"
@@ -1380,19 +1458,10 @@
    "sku": "660799",
    "title": "Nikon Z fc Mirrorless Camera with 16-50mm VR SL Lens (Black)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-16-50mm-vr-sl-lens-black",
-   "price": 1499,
+   "price": 1296,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/660799-Product-0-I-638726571607928646.jpg?v=1791256335",
    "inStock": true,
-   "brand": "Nikon"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "526052",
-   "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Amber Brown)",
-   "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-amber-brown",
-   "price": 2049,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/526052-Product-0-I-637605577705087568.jpg?v=1791255998",
-   "inStock": false,
    "brand": "Nikon"
   },
   {
@@ -1400,7 +1469,8 @@
    "sku": "617452",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Chalk Blue)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-chalk-blue",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/617452-Product-0-I-638036078840706647.jpg?v=1791256182",
    "inStock": false,
    "brand": "Nikon"
@@ -1410,7 +1480,8 @@
    "sku": "526053",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Coral Pink)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-coral-pink",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/526053-Product-0-I-637605590303542919.jpg?v=1791256010",
    "inStock": false,
    "brand": "Nikon"
@@ -1420,7 +1491,8 @@
    "sku": "617454",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Crimson Red)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-crimson-red",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/617454-Product-0-I-638036066840902766.jpg?v=1791256159",
    "inStock": false,
    "brand": "Nikon"
@@ -1430,7 +1502,8 @@
    "sku": "617453",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Midnight Grey)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-midnight-grey",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/617453-Product-0-I-638036066846215360.jpg?v=1791256170",
    "inStock": false,
    "brand": "Nikon"
@@ -1440,7 +1513,8 @@
    "sku": "526054",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Mint Green)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-mint-green",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/526054-Product-0-I-637605592106187116.jpg?v=1791256018",
    "inStock": false,
    "brand": "Nikon"
@@ -1450,7 +1524,8 @@
    "sku": "617457",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Mustard Yellow)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-mustard-yellow",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/617457-Product-0-I-638036066841059054.jpg?v=1791256161",
    "inStock": false,
    "brand": "Nikon"
@@ -1460,7 +1535,8 @@
    "sku": "526051",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Natural Grey)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-natural-grey",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/526051-Product-0-I-637605594505903372.jpg?v=1791256011",
    "inStock": false,
    "brand": "Nikon"
@@ -1470,7 +1546,8 @@
    "sku": "617455",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Olive Green)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-olive-green",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/617455-Product-0-I-638036067440606406.jpg?v=1791256180",
    "inStock": false,
    "brand": "Nikon"
@@ -1480,7 +1557,8 @@
    "sku": "526050",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Sand Beige)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-sand-beige",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/526050-Product-0-I-637605596302707320.jpg?v=1791256001",
    "inStock": false,
    "brand": "Nikon"
@@ -1490,7 +1568,8 @@
    "sku": "617456",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (Walnut Brown)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-walnut-brown",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/617456-Product-0-I-638036067445762673.jpg?v=1791256164",
    "inStock": false,
    "brand": "Nikon"
@@ -1500,7 +1579,8 @@
    "sku": "526049",
    "title": "Nikon Z fc Mirrorless Camera with Nikkor Z 16-50mm Lens (White)",
    "url": "https://www.jbhifi.com.au/products/nikon-z-fc-mirrorless-camera-with-nikkor-z-16-50mm-lens-white",
-   "price": 2049,
+   "price": 1499,
+   "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/526049-Product-0-I-637605597502341057.jpg?v=1791256000",
    "inStock": false,
    "brand": "Nikon"
@@ -1510,7 +1590,8 @@
    "sku": "540343",
    "title": "Nikon Z Macro Camera Lens Kit MC Z 50mm f/2.8 + SB 5000",
    "url": "https://www.jbhifi.com.au/products/nikon-z-macro-camera-lens-kit-mc-z-50mm-f-2-8-sb-5000",
-   "price": 1499,
+   "price": 1274.15,
+   "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/540343-Product-0-I-638446847406391291.jpg?v=1709088424",
    "inStock": true,
    "brand": "Nikon"
@@ -1520,7 +1601,8 @@
    "sku": "815534",
    "title": "Nikon Z50II Mirrorless Camera with NIKKOR Z DX 16-50mm & 50-250mm Kit",
    "url": "https://www.jbhifi.com.au/products/nikon-z50ii-mirrorless-camera-with-nikkor-z-dx-16-50mm-50-250mm-kit",
-   "price": 2199,
+   "price": 1549,
+   "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815534-Product-0-I-638856426609277989.jpg?v=1750045931",
    "inStock": false,
    "brand": "Nikon"
@@ -1530,7 +1612,8 @@
    "sku": "811068",
    "title": "Nikon Z5II Mirrorless Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/nikon-z5ii-mirrorless-camera-body-only",
-   "price": 2699,
+   "price": 2296,
+   "wasPrice": 2699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811068-Product-0-I-638791680008055557.jpg?v=1743572772",
    "inStock": true,
    "brand": "Nikon"
@@ -1540,7 +1623,8 @@
    "sku": "811071",
    "title": "Nikon Z5II Mirrorless Camera with NIKKOR Z 24-200mm f/4-6.3 VR",
    "url": "https://www.jbhifi.com.au/products/nikon-z5ii-mirrorless-camera-with-nikkor-z-24-200mm-f-4-6-3-vr",
-   "price": 3999,
+   "price": 3397,
+   "wasPrice": 3999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811071-Product-0-I-638791702802552083_c01edb3a-4d7d-46ad-b88d-b272293dc74a.jpg?v=1743573827",
    "inStock": false,
    "brand": "Nikon"
@@ -1550,7 +1634,8 @@
    "sku": "811069",
    "title": "Nikon Z5II Mirrorless Camera with NIKKOR Z 24-50mm f/4-6.3",
    "url": "https://www.jbhifi.com.au/products/nikon-z5ii-mirrorless-camera-with-nikkor-z-24-50mm-f-4-6-3",
-   "price": 2999,
+   "price": 2397,
+   "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811069-Product-0-I-638791701008939177_0590d37e-fda1-48d0-a5c1-b4eac89b8370.jpg?v=1743573732",
    "inStock": true,
    "brand": "Nikon"
@@ -1560,7 +1645,8 @@
    "sku": "811070",
    "title": "Nikon Z5II Mirrorless Camera with NIKKOR Z 24-70mm f/4 S",
    "url": "https://www.jbhifi.com.au/products/nikon-z5ii-mirrorless-camera-with-nikkor-z-24-70mm-f-4-s",
-   "price": 3649,
+   "price": 3126,
+   "wasPrice": 3649,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811070-Product-0-I-638791702205681892_1edd08ab-a78f-459e-bd68-4ec5e165f57b.jpg?v=1743573678",
    "inStock": false,
    "brand": "Nikon"
@@ -1577,50 +1663,11 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "636758",
-   "title": "Nikon Z6II Mirrorless Camera (Body Only)",
-   "url": "https://www.jbhifi.com.au/products/nikon-z6ii-mirrorless-camera-body-only",
-   "price": 2799,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/636758-Product-0-I-638209261848324417.jpg?v=1791256231",
-   "inStock": true,
-   "brand": "Nikon"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "754336",
-   "title": "Nikon Z6III Mirrorless Camera [Body Only]",
-   "url": "https://www.jbhifi.com.au/products/nikon-z6iii-mirrorless-camera-body-only",
-   "price": 4499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754336-Product-0-I-638541983406677007_3ce26766-b1b5-41ec-bb3a-e4632eb1ea57.jpg?v=1718667971",
-   "inStock": true,
-   "brand": "Nikon"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "754338",
-   "title": "Nikon Z6III Mirrorless Camera with Nikkor Z 24-200mm f/4-6.3 VR Lens Kit",
-   "url": "https://www.jbhifi.com.au/products/nikon-z6iii-mirrorless-camera-with-nikkor-z-24-200mm-f-4-6-3-vr-lens-kit",
-   "price": 5799,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754338-Product-0-I-638541986403678907_d46e191a-d2c6-4157-ae0a-646d1271264e.jpg?v=1718668031",
-   "inStock": false,
-   "brand": "Nikon"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "754337",
-   "title": "Nikon Z6III Mirrorless Camera with Nikkor Z 24-70 f/4 S Lens Kit",
-   "url": "https://www.jbhifi.com.au/products/nikon-z6iii-mirrorless-camera-with-nikkor-z-24-70-f-4-s-lens-kit",
-   "price": 5499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754337-Product-0-I-638541985217217688_2a1560e6-1235-4029-9b0d-3b4a81a36cce.jpg?v=1718668040",
-   "inStock": false,
-   "brand": "Nikon"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "647624",
    "title": "Nikon Z8 Mirrorless Camera (Body Only)",
    "url": "https://www.jbhifi.com.au/products/nikon-z8-mirrorless-camera-body-only",
-   "price": 7449,
+   "price": 5497,
+   "wasPrice": 7449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/647624-Product-0-I-638192962876989648.jpg?v=1791256238",
    "inStock": false,
    "brand": "Nikon"
@@ -1680,7 +1727,7 @@
    "sku": "662225",
    "title": "OM System TG-7 Tough Digital Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/om-system-tg-7-tough-digital-camera-black",
-   "price": 699,
+   "price": 729,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/662225-Product-0-I-638311983006083041.jpg?v=1771286106",
    "inStock": true,
    "brand": "Om System"
@@ -1690,7 +1737,7 @@
    "sku": "662224",
    "title": "OM System TG-7 Tough Digital Camera (Red)",
    "url": "https://www.jbhifi.com.au/products/om-system-tg-7-tough-digital-camera-red",
-   "price": 699,
+   "price": 729,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/662224-Product-0-I-638311983605854506.jpg?v=1771286106",
    "inStock": true,
    "brand": "Om System"
@@ -1700,7 +1747,8 @@
    "sku": "777797",
    "title": "Panasonic LUMIX FZ80D 4K Video Compact Bridge Camera",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-fz80d-4k-video-compact-bridge-camera",
-   "price": 749,
+   "price": 649,
+   "wasPrice": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/777797-Product-0-I-638586788403295099.jpg?v=1723085833",
    "inStock": true,
    "brand": "Panasonic"
@@ -1710,18 +1758,9 @@
    "sku": "777798",
    "title": "Panasonic LUMIX G100D Compact Mirrorless Camera with 12-32mm F3.5-5.6 Lens",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-g100d-compact-mirrorless-camera-with-12-32mm-f3-5-5-6-lens",
-   "price": 999,
+   "price": 799,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/777798-Product-0-I-638587779007445646.jpg?v=1723181232",
-   "inStock": true,
-   "brand": "Panasonic"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "905411",
-   "title": "Panasonic Lumix G85 Mirrorless Camera with 12-60mm Lens",
-   "url": "https://www.jbhifi.com.au/products/panasonic-lumix-g85-mirrorless-camera-with-12-60mm-lens",
-   "price": 1179,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/905411-Product-0-I-637641180504879659.jpg?v=1791255898",
    "inStock": true,
    "brand": "Panasonic"
   },
@@ -1730,7 +1769,8 @@
    "sku": "796002",
    "title": "Panasonic LUMIX G97 Mirrorless Camera with 12-60mm Lens",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-g97-mirrorless-camera-with-12-60mm-lens",
-   "price": 1499,
+   "price": 849,
+   "wasPrice": 899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796002-Product-0-I-638759695809431119.jpg?v=1740372851",
    "inStock": true,
    "brand": "Panasonic"
@@ -1740,7 +1780,8 @@
    "sku": "898931",
    "title": "Panasonic LUMIX L10 Premium Compact Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-l10-premium-compact-camera-black",
-   "price": 2599,
+   "price": 2299,
+   "wasPrice": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/898931-Product-0-I-639144058807162653.jpg?v=1778809146",
    "inStock": true,
    "brand": "Panasonic"
@@ -1750,9 +1791,10 @@
    "sku": "898932",
    "title": "Panasonic LUMIX L10 Premium Compact Camera (Silver)",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-l10-premium-compact-camera-silver",
-   "price": 2599,
+   "price": 2299,
+   "wasPrice": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/898932-Product-0-I-639144060603001922.jpg?v=1778809325",
-   "inStock": true,
+   "inStock": false,
    "brand": "Panasonic"
   },
   {
@@ -1760,7 +1802,8 @@
    "sku": "814202",
    "title": "Panasonic LUMIX S1II Hybrid Mirrorless Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-s1ii-hybrid-mirrorless-camera-body-only",
-   "price": 4799,
+   "price": 3999,
+   "wasPrice": 4799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/814202-Product-0-I-638834013005775011.jpg?v=1747804566",
    "inStock": false,
    "brand": "Panasonic"
@@ -1770,7 +1813,8 @@
    "sku": "814201",
    "title": "Panasonic LUMIX S1IIE Hybrid Mirrorless Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-s1iie-hybrid-mirrorless-camera-body-only",
-   "price": 3499,
+   "price": 2999,
+   "wasPrice": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/814201-Product-0-I-638833991408139178.jpg?v=1747802407",
    "inStock": false,
    "brand": "Panasonic"
@@ -1780,7 +1824,7 @@
    "sku": "790174",
    "title": "Panasonic LUMIX S9 Compact Mirrorless Camera with 18-40mm F4.5-6.3 Compact Zoom Lens (Silver)",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-s9-compact-mirrorless-camera-with-18-40mm-f4-5-6-3-compact-zoom-lens-silver",
-   "price": 2499,
+   "price": 1898,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/790174-Product-0-I-638642197205207949.jpg?v=1728622990",
    "inStock": true,
    "brand": "Panasonic"
@@ -1790,7 +1834,8 @@
    "sku": "894721",
    "title": "Panasonic LUMIX TZ300 Premium Compact Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-tz300-premium-compact-camera-black",
-   "price": 1299,
+   "price": 997,
+   "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894721-Product-0-I-639099546607037193.jpg?v=1774357928",
    "inStock": true,
    "brand": "Panasonic"
@@ -1800,7 +1845,8 @@
    "sku": "894722",
    "title": "Panasonic LUMIX TZ300 Premium Compact Camera (Dark Silver)",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-tz300-premium-compact-camera-dark-silver",
-   "price": 1299,
+   "price": 997,
+   "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894722-Product-0-I-639099441008628142.jpg?v=1774347382",
    "inStock": true,
    "brand": "Panasonic"
@@ -1810,7 +1856,7 @@
    "sku": "796000",
    "title": "Panasonic LUMIX TZ99 30x Zoom Compact Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-tz99-30x-zoom-compact-camera-black",
-   "price": 999,
+   "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796000-Product-0-I-638759679602642948.jpg?v=1741313837",
    "inStock": true,
    "brand": "Panasonic"
@@ -1820,7 +1866,7 @@
    "sku": "796001",
    "title": "Panasonic LUMIX TZ99 30x Zoom Compact Camera (Silver)",
    "url": "https://www.jbhifi.com.au/products/panasonic-lumix-tz99-30x-zoom-compact-camera-silver",
-   "price": 999,
+   "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796001-Product-0-I-638759680202230759.jpg?v=1741313849",
    "inStock": true,
    "brand": "Panasonic"
@@ -1830,7 +1876,8 @@
    "sku": "606833",
    "title": "Peak Design Capture Camera Clip V3 (Black)",
    "url": "https://www.jbhifi.com.au/products/peak-design-capture-camera-clip-v3-black",
-   "price": 159,
+   "price": 143.1,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/606833-Product-0-I.jpg?v=1572320254",
    "inStock": true,
    "brand": "Peak Design"
@@ -1840,7 +1887,8 @@
    "sku": "812159",
    "title": "Polaroid Flip Instant Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/polaroid-flip-instant-camera-black",
-   "price": 399,
+   "price": 238,
+   "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/812159-Product-0-I-638820127802634427_d8746409-a947-4c9b-afda-f37600d4e746.jpg?v=1752463031",
    "inStock": true,
    "brand": "Polaroid"
@@ -1850,7 +1898,8 @@
    "sku": "812160",
    "title": "Polaroid Flip Instant Camera (White)",
    "url": "https://www.jbhifi.com.au/products/polaroid-flip-instant-camera-white",
-   "price": 399,
+   "price": 238,
+   "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/812160-Product-0-I-638820127804357747_acd2e434-d702-4364-982f-0fadc3edf606.jpg?v=1752463218",
    "inStock": true,
    "brand": "Polaroid"
@@ -1882,16 +1931,6 @@
    "url": "https://www.jbhifi.com.au/products/polaroid-go-generation-2-instant-camera-purple",
    "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/812870-Product-0-I-638827931403211800.jpg?v=1747196409",
-   "inStock": true,
-   "brand": "Polaroid"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "675939",
-   "title": "Polaroid Go Generation 2 Instant Camera (White)",
-   "url": "https://www.jbhifi.com.au/products/polaroid-go-generation-2-instant-camera-white",
-   "price": 99,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/675939-Product-0-I-638433057604893837.jpg?v=1707709030",
    "inStock": true,
    "brand": "Polaroid"
   },
@@ -1960,7 +1999,8 @@
    "sku": "840464",
    "title": "Polaroid Now Generation 3 Instant Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/polaroid-now-generation-3-instant-camera-black-1",
-   "price": 229,
+   "price": 178,
+   "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840464-Product-0-I-638938569625414197.jpg?v=1758260225",
    "inStock": true,
    "brand": "Polaroid"
@@ -1970,7 +2010,8 @@
    "sku": "840463",
    "title": "Polaroid Now Generation 3 Instant Camera (Coral)",
    "url": "https://www.jbhifi.com.au/products/polaroid-now-generation-3-instant-camera-coral",
-   "price": 229,
+   "price": 178,
+   "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840463-Product-0-I-638938569067108936.jpg?v=1758260165",
    "inStock": true,
    "brand": "Polaroid"
@@ -1980,7 +2021,8 @@
    "sku": "840462",
    "title": "Polaroid Now Generation 3 Instant Camera (Pebble White)",
    "url": "https://www.jbhifi.com.au/products/polaroid-now-generation-3-instant-camera-pebble-white",
-   "price": 229,
+   "price": 178,
+   "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840462-Product-0-I-638938564812973811.jpg?v=1758259745",
    "inStock": true,
    "brand": "Polaroid"
@@ -1990,7 +2032,8 @@
    "sku": "892647",
    "title": "Polaroid Now Generation 3 Instant Camera (Pink)",
    "url": "https://www.jbhifi.com.au/products/polaroid-now-generation-3-instant-camera-pink",
-   "price": 229,
+   "price": 178,
+   "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/892647-Product-0-I-639099174622733860.jpg?v=1774320785",
    "inStock": true,
    "brand": "Polaroid"
@@ -2000,7 +2043,8 @@
    "sku": "892648",
    "title": "Polaroid Now Generation 3 Instant Camera (Teal)",
    "url": "https://www.jbhifi.com.au/products/polaroid-now-generation-3-instant-camera-teal",
-   "price": 229,
+   "price": 178,
+   "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/892648-Product-0-I-639099174619151811.jpg?v=1774320726",
    "inStock": true,
    "brand": "Polaroid"
@@ -2040,7 +2084,8 @@
    "sku": "840457",
    "title": "Polaroid Now Instant Camera Generation 3 - Thrasher Edition",
    "url": "https://www.jbhifi.com.au/products/polaroid-now-instant-camera-generation-3-thrasher-edition",
-   "price": 269,
+   "price": 178,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840457-Product-0-I-638938518681583973.jpg?v=1758255186",
    "inStock": true,
    "brand": "Polaroid"
@@ -2077,10 +2122,21 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "10103161",
+   "title": "SmallRig Power Bank for DJI Osmo Pocket 3 / 4 / 4P 7221",
+   "url": "https://www.jbhifi.com.au/products/smallrig-power-bank-for-dji-osmo-pocket-3-4-4p-7221",
+   "price": 61.9,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/dae48ebd27774716bbc870ea074292a4.jpg?v=1794279032",
+   "inStock": true,
+   "brand": "Smallrig"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "795714",
    "title": "Sony Alpha A6400 Mirrorless Camera with 16-50mm II Lens (Black)",
    "url": "https://www.jbhifi.com.au/products/sony-alpha-a6400-mirrorless-camera-with-16-50mm-ii-lens-black",
-   "price": 1499,
+   "price": 1274,
+   "wasPrice": 1296,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/795714-Product-0-I-638759584312535177.jpg?v=1791256609",
    "inStock": true,
    "brand": "Sony"
@@ -2100,7 +2156,7 @@
    "sku": "788854",
    "title": "Sony Cybershot RX100 VII Ultra Fast 4K Compact Camera",
    "url": "https://www.jbhifi.com.au/products/sony-cybershot-rx100-vii-ultra-fast-4k-compact-camera",
-   "price": 1799,
+   "price": 1649,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/788854-Product-0-I.jpg?v=1791255896",
    "inStock": true,
    "brand": "Sony"
@@ -2110,7 +2166,7 @@
    "sku": "613705",
    "title": "Sony CyberShot ZV-1F 4K Vlog Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/sony-cybershot-zv-1f-4k-vlog-camera-black",
-   "price": 899,
+   "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/613705-Product-0-I-638012815640924486.jpg?v=1791256161",
    "inStock": true,
    "brand": "Sony"
@@ -2120,7 +2176,7 @@
    "sku": "613706",
    "title": "Sony CyberShot ZV-1F 4K Vlog Camera (White)",
    "url": "https://www.jbhifi.com.au/products/sony-cybershot-zv-1f-4k-vlog-camera-white",
-   "price": 899,
+   "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/613706-Product-0-I-638012822241969990.jpg?v=1791256164",
    "inStock": true,
    "brand": "Sony"
@@ -2130,7 +2186,8 @@
    "sku": "803357",
    "title": "Sony FX30 Cinema Line Mirrorless Camera [Body Only]",
    "url": "https://www.jbhifi.com.au/products/sony-fx30-cinema-line-mirrorless-camera-body-only",
-   "price": 2499,
+   "price": 2249,
+   "wasPrice": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803357-Product-0-I-638767210204327315_30494968-068b-4982-b532-e7a373a09755.jpg?v=1742939414",
    "inStock": true,
    "brand": "Sony"
@@ -2160,7 +2217,7 @@
    "sku": "652273",
    "title": "Sony ZV-1 II 18-50mm Vlogging Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/sony-zv-1-ii-18-50mm-vlogging-camera-black",
-   "price": 1299,
+   "price": 848,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/652273-Product-0-I-638204187631208014.jpg?v=1791256255",
    "inStock": true,
    "brand": "Sony"
@@ -2170,7 +2227,8 @@
    "sku": "652274",
    "title": "Sony ZV-1 II 18-50mm Vlogging Camera (White)",
    "url": "https://www.jbhifi.com.au/products/sony-zv-1-ii-18-50mm-vlogging-camera-white",
-   "price": 1299,
+   "price": 848,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/652274-Product-0-I-638204161815268952.jpg?v=1684819457",
    "inStock": true,
    "brand": "Sony"
@@ -2240,7 +2298,7 @@
    "sku": "840455",
    "title": "Sony ZV-E10 Mirrorless Vlog Camera with 16-50mm OSS II Lens Kit (Black)",
    "url": "https://www.jbhifi.com.au/products/sony-zv-e10-mirrorless-vlog-camera-with-16-50mm-oss-ii-lens-kit-black",
-   "price": 1249,
+   "price": 997,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840455-Product-0-I-638973720605197555.jpg?v=1791256698",
    "inStock": true,
    "brand": "Sony"
@@ -2250,7 +2308,7 @@
    "sku": "840456",
    "title": "Sony ZV-E10 Mirrorless Vlog Camera with 16-50mm OSS II Lens Kit (White)",
    "url": "https://www.jbhifi.com.au/products/sony-zv-e10-mirrorless-vlog-camera-with-16-50mm-oss-ii-lens-kit-white",
-   "price": 1249,
+   "price": 998,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840456-Product-0-I-638996218804919291.jpg?v=1791256711",
    "inStock": false,
    "brand": "Sony"
@@ -2260,7 +2318,8 @@
    "sku": "782376",
    "title": "Vivitar 20MP Compact Digital Camera with 8x Optical Zoom (Silver)",
    "url": "https://www.jbhifi.com.au/products/vivitar-20mp-compact-digital-camera-with-8x-optical-zoom-silver",
-   "price": 199,
+   "price": 129,
+   "wasPrice": 199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/782376-Product-0-I-638621430005138081.jpg?v=1726628171",
    "inStock": true,
    "brand": "Vivitar"
@@ -2377,16 +2436,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "846378",
-   "title": "XCD Camera and Lens Storage Cube",
-   "url": "https://www.jbhifi.com.au/products/xcd-camera-and-lens-storage-cube",
-   "price": 69,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/846378-Product-0-I-639010150205714445.jpg?v=1765418286",
-   "inStock": true,
-   "brand": "Xcd Essentials"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "709178",
    "title": "Zero-X Adventura Dual Lens FHD Digital Compact Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/zero-x-adventura-dual-lens-fhd-digital-compact-camera-black",
@@ -2410,7 +2459,8 @@
    "sku": "709182",
    "title": "Zero-X Aqua Waterproof 4K UHD Digital Compact Camera (Blue)",
    "url": "https://www.jbhifi.com.au/products/zero-x-aqua-waterproof-4k-uhd-digital-compact-camera-blue",
-   "price": 199,
+   "price": 147,
+   "wasPrice": 199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/709182-Product-0-I-638445964804546744.jpg?v=1708999690",
    "inStock": true,
    "brand": "Zero-X"
@@ -2440,7 +2490,7 @@
    "sku": "530541",
    "title": "Zero-X ZX-20 4K Action Camera with 2.0\" Screen & Wi-Fi",
    "url": "https://www.jbhifi.com.au/products/zero-x-zx-20-4k-action-camera-with-2-0-screen-wi-fi",
-   "price": 129,
+   "price": 77,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/530541-Product-0-I-637638652700954716.jpg?v=1628232544",
    "inStock": true,
    "brand": "Zero-X"
@@ -2480,7 +2530,8 @@
    "sku": "912910",
    "title": "Zero-X ZX-AC100 Full HD Waterproof Action Camera with 2.0” Screen",
    "url": "https://www.jbhifi.com.au/products/zero-x-zx-ac100-full-hd-waterproof-action-camera-with-2-0-screen",
-   "price": 89,
+   "price": 69,
+   "wasPrice": 89,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/912910-Product-0-I-639262879203890946.jpg?v=1790691845",
    "inStock": true,
    "brand": "Zero-X"
@@ -2490,7 +2541,8 @@
    "sku": "912911",
    "title": "Zero-X ZX-AC200 4K Waterproof Action Camera with 2.0” Screen & Wi-Fi",
    "url": "https://www.jbhifi.com.au/products/zero-x-zx-ac200-4k-waterproof-action-camera-with-2-0-screen-wi-fi",
-   "price": 149,
+   "price": 112,
+   "wasPrice": 149,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/912911-Product-0-I-639262881004411051.jpg?v=1790692145",
    "inStock": true,
    "brand": "Zero-X"
@@ -2500,7 +2552,8 @@
    "sku": "912912",
    "title": "Zero-X ZX-AC400 4K UHD Waterproof Action Camera with Dual-Screen & Wi-Fi",
    "url": "https://www.jbhifi.com.au/products/zero-x-zx-ac400-4k-uhd-waterproof-action-camera-with-dual-screen-wi-fi",
-   "price": 299,
+   "price": 233,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/912912-Product-0-I-639262882803857913.jpg?v=1790692146",
    "inStock": true,
    "brand": "Zero-X"

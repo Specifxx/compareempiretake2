@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:34:00.443Z",
+ "scrapedAt": "2026-11-18T22:35:15.091Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -163,6 +163,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "10101778",
+   "title": "Aftershock Nature Lemons | RTX 5080 | Ryzen 7 9800X3D | 32GB RAM | Desktop Gaming PC",
+   "url": "https://www.jbhifi.com.au/products/aftershock-nature-lemons-rtx-5080-ryzen-7-9800x3d-32gb-ram-desktop-gaming-pc",
+   "price": 6195,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/412b64437e60472e9a0a83291d6be645.jpg?v=1794439395",
+   "inStock": true,
+   "brand": "Aftershock Pc"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "10069632",
    "title": "Aftershock Nimbus | RTX 5080 | Ryzen 7 7800X3D | Gaming PC",
    "url": "https://www.jbhifi.com.au/products/aftershock-nimbus-rtx-5080-ryzen-7-7800x3d-gaming-pc",
@@ -208,26 +218,6 @@
    "url": "https://www.jbhifi.com.au/products/aftershock-rog-edition-20-bundle-r9-9950x3d2-rtx-5090-64gb-ram-desktop-gaming-pc",
    "price": 29995,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/903c79bc5657472a8e6c34127b4a33cd.jpg?v=1794304472",
-   "inStock": true,
-   "brand": "Aftershock Pc"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "10102922",
-   "title": "Aftershock Taro Bubble Tea | RTX 5060 OC 8GB | Ryzen 5 7500F | 16GB RAM | Desktop Gaming PC",
-   "url": "https://www.jbhifi.com.au/products/aftershock-taro-bubble-tea-rtx-5060-oc-8gb-ryzen-5-7500f-16gb-ram-desktop-gaming-pc",
-   "price": 1895,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/05ddf07dbb7b4674be8a95c0465345ac.jpg?v=1794194266",
-   "inStock": true,
-   "brand": "Aftershock Pc"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "10045786",
-   "title": "Aftershock Zeal Mini | RTX 5060 OC 8GB | Ryzen 5 7500F | Desktop Gaming PC",
-   "url": "https://www.jbhifi.com.au/products/aftershock-zeal-mini-rtx-5060-oc-8gb-ryzen-5-7500f-desktop-gaming-pc",
-   "price": 1895,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/eda3689317bc4e17932efc8ef6cd47f6.webp?v=1781226005",
    "inStock": true,
    "brand": "Aftershock Pc"
   },
@@ -378,17 +368,6 @@
    "price": 2897,
    "wasPrice": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/686826-Product-0-I-638657541002511527.jpg?v=1790763167",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "748076",
-   "title": "Apple iMac with Retina 4.5K Display 24-inch, M4 Chip 10-core 512GB/24GB (Pink)[2024]",
-   "url": "https://www.jbhifi.com.au/products/apple-imac-with-retina-4-5k-display-24-inch-m4-chip-10-core-512gb-24gb-pink2024",
-   "price": 2897,
-   "wasPrice": 3299,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748076-Product-0-I-638657544603613485.jpg?v=1738311645",
    "inStock": true,
    "brand": "Apple"
   },
@@ -723,7 +702,8 @@
    "sku": "900354",
    "title": "Asus TUF T500 Gaming Desktop (Intel Core 7 - 240H)[GeForce RTX 5060]",
    "url": "https://www.jbhifi.com.au/products/asus-tuf-t500-gaming-desktop-intel-core-7-240hgeforce-rtx-5060",
-   "price": 3699,
+   "price": 2589,
+   "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/900354-Product-0-I-639250430405490695.jpg?v=1789446341",
    "inStock": true,
    "brand": "Asus"
@@ -733,7 +713,8 @@
    "sku": "904566",
    "title": "Asus V470 AIO 27\" Full HD All-in-One PC (Intel Core 5 - 210H)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-v470-aio-27-full-hd-all-in-one-pc-intel-core-5-210h512gb-16gb",
-   "price": 1999,
+   "price": 1499,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904566-Product-0-I-639184582803777178.jpg?v=1782861547",
    "inStock": true,
    "brand": "Asus"
@@ -743,7 +724,8 @@
    "sku": "904567",
    "title": "ASUS V470 AIO 27\" Full HD All-in-One PC (Intel Core 7 - 240H)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-v470-aio-27-full-hd-all-in-one-pc-intel-core-7-240h512gb-16gb",
-   "price": 2299,
+   "price": 1729,
+   "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904567-Product-0-I-639184582204842033.jpg?v=1782861485",
    "inStock": true,
    "brand": "Asus"
@@ -753,7 +735,8 @@
    "sku": "896804",
    "title": "Asus V500 Compact SFF Desktop PC (Intel Core 7 - 240H)[1TB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-v500-compact-sff-desktop-pc-intel-core-7-240h1tb-16gb",
-   "price": 1799,
+   "price": 1349,
+   "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896804-Product-0-I-639195088804690348.jpg?v=1783912146",
    "inStock": true,
    "brand": "Asus"
@@ -863,8 +846,7 @@
    "sku": "897358",
    "title": "HP OmniDesk Slim S03-0001a Desktop PC (Intel Core i7 - 14700)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/hp-omnidesk-slim-s03-0001a-desktop-pc-intel-core-i7-14700512gb-16gb",
-   "price": 1599,
-   "wasPrice": 2399,
+   "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897358-Product-0-I-639234749408122602.jpg?v=1787878205",
    "inStock": true,
    "brand": "Hp"
@@ -874,8 +856,7 @@
    "sku": "840540",
    "title": "HP OmniStudio 23.8\" Full HD All-in-One Desktop PC (Ryzen 3)[512GB/8GB]",
    "url": "https://www.jbhifi.com.au/products/hp-omnistudio-23-8-full-hd-all-in-one-desktop-pc-ryzen-3512gb-8gb",
-   "price": 999,
-   "wasPrice": 1499,
+   "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840540-Product-0-I-639124132804665807.jpg?v=1776816546",
    "inStock": true,
    "brand": "Hp"
@@ -885,7 +866,8 @@
    "sku": "840542",
    "title": "HP OmniStudio 27\" Full HD All-in-One Desktop PC (Intel Core 5)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/hp-omnistudio-27-full-hd-all-in-one-desktop-pc-intel-core-5512gb-16gb",
-   "price": 2349,
+   "price": 1244,
+   "wasPrice": 2349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840542-Product-0-I-639124136405057425.jpg?v=1776816906",
    "inStock": true,
    "brand": "Hp"
@@ -895,7 +877,8 @@
    "sku": "840543",
    "title": "HP OmniStudio 27\" Full HD All-in-One Desktop PC (Intel Core 7 - 240H)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/hp-omnistudio-27-full-hd-all-in-one-desktop-pc-intel-core-7-240h512gb-16gb",
-   "price": 2799,
+   "price": 1899,
+   "wasPrice": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840543-Product-0-I-639124139418027201.jpg?v=1780361227",
    "inStock": true,
    "brand": "Hp"
@@ -905,8 +888,7 @@
    "sku": "840541",
    "title": "HP OmniStudio 27\" Full HD All-in-One Desktop PC (Ryzen 5)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/hp-omnistudio-27-full-hd-all-in-one-desktop-pc-ryzen-5512gb-16gb",
-   "price": 1399,
-   "wasPrice": 1849,
+   "price": 1849,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840541-Product-0-I-639124139425953180.jpg?v=1776817449",
    "inStock": true,
    "brand": "Hp"
@@ -966,7 +948,8 @@
    "sku": "833036",
    "title": "Lenovo Yoga AIO 27\" QHD All-in-One AI PC (Intel Core Ultra 9-285H)[1TB/32GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-aio-27-qhd-all-in-one-ai-pc-intel-core-ultra-9-285h1tb-32gb",
-   "price": 3999,
+   "price": 2999,
+   "wasPrice": 3999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/833036-Product-0-I-638977386086551281.jpg?v=1762141999",
    "inStock": true,
    "brand": "Lenovo"
@@ -2114,6 +2097,16 @@
    "url": "https://www.jbhifi.com.au/products/thermaltake-citadel-600-xtreme-gaming-desktop-pc-amd-7800x3d-rtx-5080-32gb-ram",
    "price": 5289,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/eefa621b3fb641c785949659306153ce.jpg?v=1783312526",
+   "inStock": true,
+   "brand": "Thermaltake"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10013495",
+   "title": "Thermaltake Genesis PRO V4 Snow Gaming Desktop PC ( Intel 12400F / RTX 3050 / 16GB RAM)",
+   "url": "https://www.jbhifi.com.au/products/thermaltake-genesis-pro-v4-snow-gaming-desktop-pc-intel-12400f-rtx-3050-16gb-ram",
+   "price": 1599,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/e95f0c0cd50341aca112ae17edc6ebe5.jpg?v=1745290229",
    "inStock": true,
    "brand": "Thermaltake"
   },
