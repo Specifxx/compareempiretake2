@@ -2334,3 +2334,12 @@ ten written notes. Rift's own record also holds "too many popups asking for my o
   vote is `votes/<site>/<day>/<time>-up|down-<rand>.json`, counted from its file name by RiftCompare's daily *Reports
   triage*, which now prints a 7-day feedback table per site and flags every note for a look. No email address is asked
   for or kept: the thanks shows the site's inbox for anyone who wants a reply.
+
+## 2026-11-18: The cart is off; the buy button is the row's one action again
+
+Owner, 2026-11-18: "I never intended the cart to be like a very big feature … we need to be promoting, getting more clicks rather than
+losing clicks … this is top priority." Measured in Vercel (buy_click, visitors): visitors who clicked a buy link were 33-38% of the
+day's visitors on 1-5 Nov and 15-20% on 8-13 Nov, then 12% (14 Nov, labelled "Add to cart" on every row), 14%, 14% and 6% on 17 Nov
+(the cart drawer). `CART_ON = false` in `lib/cart-list.ts` switches the cart off: no row draws an Add to cart button, and the header
+and bottom-nav cart appear only for a visitor who already has lines. The code stays; `CART_ON = true` brings it back. Read buy
+clicks per visitor for 19-25 Nov against 14-17 Nov.
