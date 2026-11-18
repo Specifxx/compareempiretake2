@@ -8,7 +8,7 @@ const ROOT = path.resolve(__dirname, "..");
 const read = (p: string) => fs.readFileSync(path.join(ROOT, p), "utf8");
 
 test(".btn-amazon is amber with dark ink in both themes", () => {
-  assert.match(read("src/app/globals.css"), /\.btn-amazon \{ @apply border border-\[#e08a00\] bg-\[#ffa41c\] text-\[#111111\] hover:bg-\[#fa8900\]; \}/);
+  assert.match(read("src/app/globals.css"), /\.btn-amazon \{ @apply border border-\[#B7791F\] bg-\[#F5A524\] text-\[#111111\] hover:bg-\[#DC8A0B\]; \}/);
 });
 
 test("the Amazon row's button (priced and Check Amazon) and the compare-table button use .btn-amazon, rel unchanged", () => {
