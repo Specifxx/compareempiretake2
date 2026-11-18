@@ -16,6 +16,7 @@ import { useSearchIndex } from "@/lib/use-search-index";
 import { CloseIcon, SearchIcon } from "./icons";
 import { RetailerDot } from "./RetailerChip";
 import { AmazonButton, AmazonNote } from "./AmazonLink";
+import { sized } from "@/lib/image-size";
 
 /**
  * Up to four products side by side. The page carries no catalogue: the chosen products come from
@@ -122,7 +123,7 @@ export function CompareView() {
               {options.map((e) => (
                 <li key={e.href}>
                   <button className="flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left hover:bg-bg-sunk" onClick={() => { setList([...kept, e.href]); setQ(""); }}>
-                    <span className="img-tile grid h-9 w-9 place-items-center rounded-md">{e.image && <img src={e.image} alt={e.name} className="product-img h-8 w-8 object-contain" />}</span>
+                    <span className="img-tile grid h-9 w-9 place-items-center rounded-md">{e.image && <img src={sized(e.image, 36)} alt={e.name} className="product-img h-8 w-8 object-contain" />}</span>
                     <span className="flex-1 text-sm font-medium">{e.name}</span>
                     {e.price !== undefined && <span className="text-sm text-ink-mute">{$(e.price)}</span>}
                   </button>
@@ -172,7 +173,7 @@ export function CompareView() {
                         <CloseIcon className="h-3.5 w-3.5" />
                       </button>
                       <Link href={hrefOf(p)} prefetch={false} className="block">
-                        <div className="img-tile mb-3 aspect-square overflow-hidden rounded-lg">{p.image && <img src={p.image} alt={p.name} className="product-img h-full w-full object-contain p-5" />}</div>
+                        <div className="img-tile mb-3 aspect-square overflow-hidden rounded-lg">{p.image && <img src={sized(p.image, 220)} alt={p.name} className="product-img h-full w-full object-contain p-5" />}</div>
                         <div className="text-xs text-ink-mute">{p.brand}</div>
                         <div className="font-semibold">{p.model}</div>
                       </Link>

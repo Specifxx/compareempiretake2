@@ -11,6 +11,7 @@ import { storageLabel } from "@/lib/normalize";
 import { RETAILERS } from "@/lib/retailers";
 import { PhoneCard } from "./PhoneCard";
 import { RetailerDot } from "./RetailerChip";
+import { sized } from "@/lib/image-size";
 
 /**
  * A product in one region: a phone slug ("apple-iphone-17"), or any product as "category/slug" ("tvs/lg-oled-evo-c5-65").
@@ -216,7 +217,7 @@ function TopTable({ rows, $ }: { rows: Phone[]; $: Money }) {
               <Link href={href(p)} prefetch={false} className="flex items-center gap-3 px-3 py-3 transition hover:bg-bg-sunk sm:gap-4 sm:px-4">
                 <span className="w-5 shrink-0 text-center font-display text-sm font-bold text-ink-mute">{i + 1}</span>
                 <span className="img-tile grid h-14 w-14 shrink-0 place-items-center overflow-hidden rounded-xl">
-                  {p.image && <img src={p.image} alt={p.name} loading="lazy" className="product-img h-full w-full object-contain p-1.5" />}
+                  {p.image && <img src={sized(p.image, 220)} alt={p.name} loading="lazy" className="product-img h-full w-full object-contain p-1.5" />}
                 </span>
                 <span className="min-w-0 flex-1">
                   <span className="line-clamp-2 text-sm font-semibold leading-snug">{p.name}</span>
@@ -372,7 +373,7 @@ function Pick({ p, note, $ }: { p: Phone; note?: string; $: Money }) {
   return (
     <div className="card my-6 flex flex-col gap-4 p-4 sm:flex-row sm:items-center">
       <Link href={href(p)} prefetch={false} className="img-tile grid h-32 w-full shrink-0 place-items-center overflow-hidden rounded-xl sm:h-28 sm:w-28">
-        {p.image && <img src={p.image} alt={p.name} loading="lazy" className="product-img h-full object-contain p-2" />}
+        {p.image && <img src={sized(p.image, 220)} alt={p.name} loading="lazy" className="product-img h-full object-contain p-2" />}
       </Link>
       <div className="min-w-0 flex-1">
         <Link href={href(p)} prefetch={false} className="font-display text-lg font-bold hover:text-brand">{p.name}</Link>

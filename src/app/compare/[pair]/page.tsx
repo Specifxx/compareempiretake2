@@ -5,6 +5,7 @@ import { GuideBody } from "@/components/GuideBody";
 import { getVsPairs } from "@/lib/catalog";
 import { storageLabel } from "@/lib/normalize";
 import type { Phone } from "@/lib/types";
+import { sized } from "@/lib/image-size";
 
 // A pair the focus cull (lib/focus.ts) broke up 301s to the compare tool; only that redirect renders on request.
 export const dynamicParams = true;
@@ -53,7 +54,7 @@ export default async function VsPage({ params }: { params: Promise<{ pair: strin
       <div className="mt-8 grid grid-cols-2 gap-4">
         {[a, b].map((x) => (
           <Link key={x.slug} href={`/${x.category}/${x.slug}`} prefetch={false} className="card group overflow-hidden text-center transition hover:shadow-lift">
-            <div className="img-tile aspect-square">{x.image && <img src={x.image} alt={x.name} className="product-img h-full w-full object-contain p-6" />}</div>
+            <div className="img-tile aspect-square">{x.image && <img src={sized(x.image, 320)} alt={x.name} className="product-img h-full w-full object-contain p-6" />}</div>
             <div className="p-4">
               <div className="text-xs text-ink-mute">{x.brand}</div>
               <div className="font-semibold">{x.model}</div>

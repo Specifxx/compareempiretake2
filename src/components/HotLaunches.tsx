@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { HotLaunch, StorePreorder } from "@/lib/launches";
 import { GTA6_REGIONS } from "@/lib/gta6";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
+import { sized } from "@/lib/image-size";
 
 // The homepage's "Hot right now" row (owner, 2026-11-03): the year's big launches straight under the hero, each with the
 // region's cheapest store price today and how many stores have it. Every price is a store's; the dates are the maker's.
@@ -28,7 +29,7 @@ export function HotLaunches({ items, preorders = [], region }: { items: HotLaunc
           const body = (
             <>
               <div className="img-tile relative grid h-24 w-24 shrink-0 place-items-center overflow-hidden rounded-lg sm:h-28 sm:w-28">
-                {product?.image && <img src={product.image} alt={product.name} loading={i < 2 ? "eager" : "lazy"} className="product-img h-full w-full object-contain p-2" />}
+                {product?.image && <img src={sized(product.image, 220)} alt={product.name} loading={i < 2 ? "eager" : "lazy"} className="product-img h-full w-full object-contain p-2" />}
                 {i === 0 && <span className="absolute left-1.5 top-1.5 rounded-full bg-hot px-2 py-0.5 text-[10px] font-bold text-bg-card">New</span>}
               </div>
               <div className="min-w-0">
@@ -63,7 +64,7 @@ export function HotLaunches({ items, preorders = [], region }: { items: HotLaunc
         {preorders.map(({ product, stores }) => (
           <Link key={`pre-${product.category}-${product.slug}`} prefetch={false} href={product.href} className="card flex items-center gap-4 p-3 transition hover:shadow-lift">
             <div className="img-tile relative grid h-24 w-24 shrink-0 place-items-center overflow-hidden rounded-lg sm:h-28 sm:w-28">
-              {product.image && <img src={product.image} alt={product.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
+              {product.image && <img src={sized(product.image, 220)} alt={product.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
             </div>
             <div className="min-w-0">
               <div className="text-xs font-medium text-ink-mute">{product.brand}</div>
