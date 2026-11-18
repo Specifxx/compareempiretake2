@@ -176,6 +176,13 @@ jobs:
       - name: Family search index
         continue-on-error: true
         run: npx tsx scripts/family-search.ts
+      # The home pages' ranking input (src/lib/home-rank.ts, DECISIONS.md 2026-11-18): product page views and buy clicks per
+      # item, last 28 and 7 days, from RiftCompare's /api/demand/ce, written into the data commit below.
+      #  Never fatal: a failed fetch keeps yesterday's file and the home page keeps its order.
+      - name: Home page demand
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: DEMAND_WRITE_ONLY=1 bash scripts/pull-demand.sh ce data/demand.json
       - name: Commit data
         run: |
           git config user.name "compare-empire-bot"
