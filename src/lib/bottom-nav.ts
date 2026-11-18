@@ -3,7 +3,7 @@
 // ?bn=1, "on" shows it to every phone visitor (?bn=0 still opts out). The tabs are worked out in the browser from the page.
 import type { BottomNavMode, BottomNavTab } from "@/components/BottomNav";
 
-export const BOTTOM_NAV: BottomNavMode = "optin";
+export const BOTTOM_NAV: BottomNavMode = "on";
 
 import { HOME_PATH, REGION_IDS, REGION_STORAGE_KEY, isNeutralPath, regionOf, withRegion, type RegionId } from "@/lib/region";
 
