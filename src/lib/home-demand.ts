@@ -6,7 +6,9 @@ import raw from "../../data/demand.json";
 import type { Deal, PhoneSummary } from "./catalog";
 import { rankItems, type DemandFile } from "./home-rank";
 
-export const HOME_DEMAND = raw as DemandFile;
+// Through unknown: JSON imports type each pair as number[], not [number, number], so the first non-empty file
+// fails the typecheck, and with it the next release's build (MTG and Dex, 2026-11-18).
+export const HOME_DEMAND = raw as unknown as DemandFile;
 
 /** Products, most likely to earn first: their page's views (any region), stores selling them, price, pre-orders. */
 export function rankSummaries(list: readonly PhoneSummary[]): PhoneSummary[] {
