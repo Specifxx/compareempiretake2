@@ -5,6 +5,7 @@ import { CONTACT_EMAIL } from "@/lib/site";
 import { AMAZON_DISCLOSURE, AMAZON_TRADEMARK } from "@/lib/amazon";
 import { REGIONS, type RegionId } from "@/lib/region";
 import { useRegion } from "@/lib/use-region";
+import { FeedbackAsk } from "@/components/FeedbackAsk";
 
 /** `year` is the import's year in the region (Footer.tsx), not the clock: a page cached over New Year still hydrates. */
 export interface FooterData { stores: number; products: number; checked: string; year: number; shop: string[][]; categories: string[][] }
@@ -17,6 +18,8 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
   const R = REGIONS[region];
   return (
     <footer className="mt-16 border-t border-line bg-bg-card sm:mt-24">
+      {/* "Was this page useful?" (owner, 2026-11-18: more feedback). One inline line, never a pop-up. */}
+      <div className="container-x pt-8"><FeedbackAsk email={CONTACT_EMAIL} /></div>
       <div className="container-x grid grid-cols-2 gap-x-6 gap-y-8 py-10 sm:py-12 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-10">
         <div className="col-span-2 space-y-4 md:col-span-1">
           <Logo />
@@ -32,7 +35,7 @@ export function FooterBody({ data }: { data: Partial<Record<RegionId, FooterData
         <FooterCol title="Categories" links={d.categories} />
         <FooterCol
           title="Compare Empire"
-          links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Community forum (beta)", "/forum"], ["Creators", "/creators"], ["Retailers we check", `${R.prefix}/stores`], ["Price alerts", "/alerts"], ["Contact us", "/contact"], ["List your store", "/list-your-store"], ["How we pick stores", "/how-we-pick-stores"], ["How we make money", "/disclosure"], ["Affiliate disclosure", "/affiliate-disclosure"], ["Privacy", "/privacy"]]}
+          links={[["About & how it works", "/about"], ["Reviews", "/reviews"], ["Community forum (beta)", "/forum"], ["Creators", "/creators"], ["Retailers we check", `${R.prefix}/stores`], ["Price alerts", "/alerts"], ["Send feedback", "/feedback"], ["Contact us", "/contact"], ["List your store", "/list-your-store"], ["How we pick stores", "/how-we-pick-stores"], ["How we make money", "/disclosure"], ["Affiliate disclosure", "/affiliate-disclosure"], ["Privacy", "/privacy"]]}
         />
       </div>
       {/* One short line (owner, 2026-11-02: the old list was "convoluted"): our tech sister, then the page that lists every site
