@@ -2343,3 +2343,12 @@ unpriced "Check Amazon", product page and quick view) and `AmazonButton` (the co
 2026-11-02 no-Amazon-colours line for the button only; rel, tracking, "Ad · Paid link", row order and prices are unchanged. The
 quick view's pinned bottom button (already full width) is at least 44px and reads "See full page: price history and details".
 `tests/amazon-button.test.ts`.
+
+## 2026-11-18: The cart is off; the buy button is the row's one action again
+
+Owner, 2026-11-18: "I never intended the cart to be like a very big feature … we need to be promoting, getting more clicks rather than
+losing clicks … this is top priority." Measured in Vercel (buy_click, visitors): visitors who clicked a buy link were 33-38% of the
+day's visitors on 1-5 Nov and 15-20% on 8-13 Nov, then 12% (14 Nov, labelled "Add to cart" on every row), 14%, 14% and 6% on 17 Nov
+(the cart drawer). `CART_ON = false` in `lib/cart-list.ts` switches the cart off: no row draws an Add to cart button, and the header
+and bottom-nav cart appear only for a visitor who already has lines. The code stays; `CART_ON = true` brings it back. Read buy
+clicks per visitor for 19-25 Nov against 14-17 Nov.
