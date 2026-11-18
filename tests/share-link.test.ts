@@ -29,3 +29,11 @@ test("a shared saved list carries only product paths, at most 50", () => {
   assert.equal(decodeSavedList("?x=1"), null);
   assert.equal(encodeSavedList(Array.from({ length: 70 }, (_, n) => `/phones/p${n}`)).split(",").length, 50);
 });
+
+// Share-for-a-deal (owner, 2026-11-18).
+import { pickShareArm } from "../src/components/ShareThanks";
+test("the share-for-a-deal arm is drawn once, half and half, and kept", () => {
+  assert.equal(pickShareArm(null, 0.2), "reward");
+  assert.equal(pickShareArm(null, 0.8), "plain");
+  assert.equal(pickShareArm("reward", 0.8), "reward");
+});
