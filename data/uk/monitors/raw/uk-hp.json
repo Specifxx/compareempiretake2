@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T03:50:26.366Z",
+ "scrapedAt": "2026-11-18T03:00:25.893Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -266,7 +266,7 @@
    "price": 499,
    "wasPrice": 1349.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/0/5/05ef7f59-d65c-4723-bdea-4d8d7ef62880.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -353,7 +353,8 @@
    "brand": "HP",
    "title": "HP Series 3 Pro 27 inch FHD Monitor - 327pe",
    "url": "https://www.hp.com/gb-en/shop/products/monitors/hp-series-3-pro-27-inch-fhd-monitor-327pe-b1gm6aa-abu",
-   "price": 239.98,
+   "price": 199.98,
+   "wasPrice": 239.98,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/8/4/84a7228f-d89e-42b6-b6d3-242258c39c20.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
@@ -392,6 +393,17 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "9D9V7AA#ABU",
+   "mpn": "9D9V7AA#ABU",
+   "brand": "HP",
+   "title": "HP Series 5 Pro 23.8 inch FHD USB-C Monitor - 524pu",
+   "url": "https://www.hp.com/gb-en/shop/products/monitors/hp-series-5-pro-23-8-inch-fhd-usb-c-monitor-524pu-9d9v7aa-abu",
+   "price": 239.99,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-series-5-pro-524pu-janet-front_cus.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "B11W5AT#ABU",
    "mpn": "B11W5AT#ABU",
    "brand": "HP",
@@ -421,18 +433,7 @@
    "url": "https://www.hp.com/gb-en/shop/products/monitors/hp-series-5-pro-23-8-inch-fhd-usb-c-conferencing-monitor-524pm-9e0g9ut-abu",
    "price": 359.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-series_5-pro-524pm-eleanor-front_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "9D9V7AA#ABU",
-   "mpn": "9D9V7AA#ABU",
-   "brand": "HP",
-   "title": "HP Series 5 Pro 23.8\" FHD USB-C Monitor – 524pu",
-   "url": "https://www.hp.com/gb-en/shop/products/monitors/hp-series-5-pro-23-8-inch-fhd-usb-c-monitor-524pu-9d9v7aa-abu",
-   "price": 239.99,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-series-5-pro-524pu-janet-front_cus.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -512,7 +513,7 @@
    "price": 1120,
    "wasPrice": 1243.2,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/e/1/e149fd5c-e1c9-4e9c-a631-14bccca70352.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",

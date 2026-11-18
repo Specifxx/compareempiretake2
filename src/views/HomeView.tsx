@@ -9,6 +9,7 @@ import { catalogDay, comparedCategories, getCatalog, historyMature, historySince
 import type { CategoryId } from "@/lib/types";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { FEATURED } from "@/lib/categories";
+import { rankDeals, rankSummaries } from "@/lib/home-demand";
 import { PartnerOffers } from "@/components/PartnerOffers";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { HomeRegionPicker } from "@/components/HomeRegionPicker";
@@ -24,7 +25,7 @@ export function HomeView({ region }: { region: RegionId }) {
   const to = (h: string) => withRegion(h, region);
   const { retailers, updatedAt, phones } = getCatalog(undefined, region);
   const summaries = getSummaries("phones", region);
-  const deals = getDeals(6, undefined, region, { pricier: true });
+  const deals = rankDeals(getDeals(18, undefined, region, { pricier: true })).slice(0, 6);
   const stores = retailers.length;
   // Only categories with a real comparison: 2+ stores and a product two of them sell (US shopper review, 2026-11-06).
   // Ordered by what visitors open (FEATURED is the 30-day analytics order, 2026-11-09), the rest after.
@@ -39,7 +40,7 @@ export function HomeView({ region }: { region: RegionId }) {
   const phoneFloor = featureFloor(summaries);
   const stocked = summaries.filter((p) => p.retailerCount >= 2 && p.image);
   const pricey = stocked.filter((p) => p.bestPrice >= phoneFloor).sort((a, b) => ticketWeight(b) - ticketWeight(a) || b.generation - a.generation);
-  const popular = (pricey.length >= 10 ? pricey : stocked.sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice)).slice(0, 10);
+  const popular = rankSummaries((pricey.length >= 10 ? pricey : stocked.sort((a, b) => b.retailerCount - a.retailerCount || b.generation - a.generation || b.bestPrice - a.bestPrice)).slice(0, 30)).slice(0, 10);
   // The "is that sale real?" promise only once the region's history can keep it (lib/catalog.ts HISTORY_CLAIM_DAYS).
   const mature = historyMature(region);
   const since = new Date(`${historySince(region)}T12:00:00Z`).toLocaleDateString(R.locale, { day: "numeric", month: "long", timeZone: "UTC" });
@@ -190,11 +191,13 @@ function popularOf(items: PhoneSummary[], n: number, pricier = false) {
   if (pricier) {
     const floor = featureFloor(items);
     const top = items.filter((p) => p.image && p.inStock && p.retailerCount >= 2 && p.bestPrice >= floor).sort((a, b) => ticketWeight(b) - ticketWeight(a) || b.generation - a.generation);
-    if (top.length >= n) return top.slice(0, n);
+    if (top.length >= n) return rankSummaries(top.slice(0, n * 3)).slice(0, n);
   }
-  return items
+  // Demand orders the head (lib/home-rank.ts): the old order is the pool and the fallback.
+  const pool = items
     // Sold by two or more stores: a one-store product is not a comparison.
     .filter((p) => p.image && p.inStock && p.retailerCount >= 2)
     .sort((a, b) => b.retailerCount - a.retailerCount || b.offerCount - a.offerCount || b.generation - a.generation)
-    .slice(0, n);
+    .slice(0, n * 3);
+  return rankSummaries(pool).slice(0, n);
 }

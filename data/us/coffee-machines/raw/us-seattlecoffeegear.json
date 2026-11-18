@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T03:37:19.195Z",
+ "scrapedAt": "2026-11-18T02:47:34.703Z",
  "offers": [
   {
    "retailer": "us-seattlecoffeegear",
@@ -189,7 +189,7 @@
    "price": 2173.5,
    "wasPrice": 2415,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/AscasoSteelDuoPlusEspressoMachine3.0new-8.jpg?v=1790716944",
-   "inStock": false,
+   "inStock": true,
    "brand": "Ascaso",
    "mpn": "ESE929P1560"
   },
@@ -201,7 +201,7 @@
    "price": 2173.5,
    "wasPrice": 2415,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/AscasoSteelDuoPlusEspressoMachine3.0new-4.jpg?v=1790716944",
-   "inStock": false,
+   "inStock": true,
    "brand": "Ascaso",
    "mpn": "ESE929P1540"
   },
@@ -1132,7 +1132,7 @@
    "url": "https://www.seattlecoffeegear.com/products/jura-j10-twin-superautomatic-espresso-machine?variant=53975365353779",
    "price": 3799,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/JuraJ10TwinSuperautomaticEspressoMachinenew-10.jpg?v=1793662619",
-   "inStock": true,
+   "inStock": false,
    "brand": "Jura",
    "mpn": "ESU451P2000"
   },
@@ -1189,7 +1189,7 @@
    "url": "https://www.seattlecoffeegear.com/products/jura-w8-superautomatic-espresso-machine",
    "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/JuraW8SuperautomaticEspressoMachinenew-4.jpg?v=1747250479",
-   "inStock": false,
+   "inStock": true,
    "brand": "Jura",
    "mpn": "ESU451N1820"
   },
@@ -1609,7 +1609,8 @@
    "sku": "ESE487H0100",
    "title": "Rancilio Silvia PID Espresso Machine Black",
    "url": "https://www.seattlecoffeegear.com/products/rancilio-silvia-pid-espresso-machine?variant=47157151858995",
-   "price": 1199,
+   "price": 1119,
+   "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RANCILIOSILVIAPIDESPRESSOMACHINEnew-1.jpg?v=1711386977",
    "inStock": true,
    "brand": "Rancilio",
@@ -1620,7 +1621,8 @@
    "sku": "ESE487O0620",
    "title": "Rancilio Silvia PID Espresso Machine Green",
    "url": "https://www.seattlecoffeegear.com/products/rancilio-silvia-pid-espresso-machine?variant=53028505977139",
-   "price": 1199,
+   "price": 1119,
+   "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RANCILIO_SILVIA_ESPRESSO_MACHINE_Greennew_copy.jpg?v=1770324704",
    "inStock": true,
    "brand": "Rancilio",
@@ -1631,7 +1633,8 @@
    "sku": "ESE487A0040",
    "title": "Rancilio Silvia PID Espresso Machine Stainless Steel",
    "url": "https://www.seattlecoffeegear.com/products/rancilio-silvia-pid-espresso-machine?variant=47157151891763",
-   "price": 1199,
+   "price": 1119,
+   "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RANCILIOSILVIAPIDESPRESSOMACHINEnew-3.jpg?v=1711386978",
    "inStock": true,
    "brand": "Rancilio",
@@ -1642,7 +1645,8 @@
    "sku": "ESE487L0340",
    "title": "Rancilio Silvia PID Espresso Machine White",
    "url": "https://www.seattlecoffeegear.com/products/rancilio-silvia-pid-espresso-machine?variant=47157151924531",
-   "price": 1199,
+   "price": 1119,
+   "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RANCILIOSILVIAPIDESPRESSOMACHINEnew-4.jpg?v=1711386977",
    "inStock": true,
    "brand": "Rancilio",
@@ -2244,7 +2248,7 @@
    "price": 799.95,
    "wasPrice": 999.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/SMEGEGF03EspressoMachinenew-5_76003f0e-6c3d-45f1-b789-4e369319c82b.jpg?v=1785360230",
-   "inStock": false,
+   "inStock": true,
    "brand": "SMEG",
    "mpn": "ESH764P0020"
   },
@@ -2280,7 +2284,7 @@
    "price": 799.95,
    "wasPrice": 999.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/SMEGEGF03EspressoMachinenew-18_8c6abc7e-472b-464c-8cef-779cea2f58c7.jpg?v=1785360230",
-   "inStock": false,
+   "inStock": true,
    "brand": "SMEG",
    "mpn": "ESH764P0080"
   },
@@ -2316,7 +2320,7 @@
    "price": 1299.95,
    "wasPrice": 1599.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/SMEGEMC02EspressoMachinenew.jpg?v=1784837776",
-   "inStock": false,
+   "inStock": true,
    "brand": "SMEG",
    "mpn": "ESE764P0320"
   },
@@ -2349,7 +2353,7 @@
    "url": "https://www.seattlecoffeegear.com/products/technivorm-cup-one-coffee-maker?variant=47157085143347",
    "price": 259,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/TECHNIVORMMOCCAMASTERCUP-ONECOFFEEMAKERnew.jpg?v=1712007313",
-   "inStock": false,
+   "inStock": true,
    "brand": "Technivorm",
    "mpn": "CDR499F0460"
   },
@@ -2679,7 +2683,7 @@
    "url": "https://www.seattlecoffeegear.com/products/terra-kaffe-demi-superautomatic-espresso-machine?variant=52933681840435",
    "price": 795,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/TerraKaffeDemiSuperautomaticEspressoMachinenew_f735101c-1875-4447-82cf-7053f978adc0.jpg?v=1771522958",
-   "inStock": false,
+   "inStock": true,
    "brand": "Terra Kaffe",
    "mpn": "ESU858O0060"
   },

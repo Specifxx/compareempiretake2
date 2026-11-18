@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T03:32:05.578Z",
+ "scrapedAt": "2026-11-18T02:42:34.997Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -301,7 +301,7 @@
    "price": 179.99,
    "wasPrice": 199.95,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1159605_1.jpg?v=1771520623",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm",
    "mpn": "FJINSTAXSQ1CWKIT"
   },
@@ -662,7 +662,7 @@
    "price": 799.99,
    "wasPrice": 918.75,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1212362_1_4b0e3802-2582-409d-97ee-9e4f7d6de3db.jpg?v=1790670689",
-   "inStock": false,
+   "inStock": true,
    "brand": "Nikon",
    "mpn": "E7NKD7500"
   },
@@ -782,7 +782,7 @@
    "price": 1049.99,
    "wasPrice": 1199.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1139251_1_009c2b8a-27ba-473b-9a01-99ba6a58a847.jpg?v=1790673549",
-   "inStock": false,
+   "inStock": true,
    "brand": "OM SYSTEM",
    "mpn": "OMV210070BU000"
   },
@@ -794,7 +794,7 @@
    "price": 1049.99,
    "wasPrice": 1199.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1139254_1_80facbf4-718e-47b4-a7c0-5936b8f044d7.jpg?v=1790673557",
-   "inStock": false,
+   "inStock": true,
    "brand": "OM SYSTEM",
    "mpn": "OMV210070SU000"
   },
@@ -803,7 +803,8 @@
    "sku": "OMV207130BU000",
    "title": "OM SYSTEM Olympus OM-D E-M10 Mark IV 20MP Digital Camera Body, Black (V207130BU000)",
    "url": "https://www.beachcamera.com/products/om-digital-solutions-om-d-e-m10-mark-iv-20mp-digital-camera-body-black-v207130bu000",
-   "price": 799.99,
+   "price": 549.99,
+   "wasPrice": 799.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1163154_1_8f0028b6-c4b3-4de1-aa9c-92663a470a83.jpg?v=1790673501",
    "inStock": true,
    "brand": "OM SYSTEM",
@@ -886,7 +887,7 @@
    "price": 1729,
    "wasPrice": 2399.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1199026_1.jpg?v=1783035052",
-   "inStock": false,
+   "inStock": true,
    "brand": "OM SYSTEMS",
    "mpn": "E8OMV210050SW000"
   },

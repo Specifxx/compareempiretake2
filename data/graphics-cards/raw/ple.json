@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T02:39:38.604Z",
+ "scrapedAt": "2026-11-18T01:50:01.429Z",
  "offers": [
   {
    "retailer": "ple",
@@ -693,6 +693,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "672363",
+   "title": "Gigabyte GeForce RTX 5090 AORUS MASTER ICE 32GB GDDR7 (White)",
+   "brand": "Gigabyte",
+   "mpn": "GV-N5090AORUSM ICE-32GD",
+   "url": "https://www.ple.com.au/products/672363/gigabyte-geforce-rtx-5090-aorus-master-ice-32gb-gddr7-white",
+   "price": 16999,
+   "image": "https://plecom.imgix.net/iil-416537-672363.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "680222",
    "title": "Gigabyte Radeon R9700 Ai Top 32GB GDDR6",
    "brand": "Gigabyte",
@@ -1146,17 +1157,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "676643",
-   "title": "PNY GeForce RTX 5070 Triple Fan OC 12GB GDDR7",
-   "brand": "PNY",
-   "mpn": "VCG507012TFXPB1-O",
-   "url": "https://www.ple.com.au/products/676643/pny-geforce-rtx-5070-triple-fan-oc-12gb-gddr7",
-   "price": 1569,
-   "image": "https://plecom.imgix.net/iil-434808-676643.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "672776",
    "title": "PNY GeForce RTX 5080 Triple Fan 16GB GDDR7",
    "brand": "PNY",
@@ -1441,7 +1441,7 @@
    "url": "https://www.ple.com.au/products/674980/zotac-gaming-geforce-rtx-5060-ti-twin-edge-oc-16gb-gddr7",
    "price": 1399,
    "image": "https://plecom.imgix.net/iil-428015-674980.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

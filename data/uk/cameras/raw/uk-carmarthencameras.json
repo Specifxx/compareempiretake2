@@ -1,17 +1,6 @@
 {
- "scrapedAt": "2026-11-17T03:44:20.801Z",
+ "scrapedAt": "2026-11-18T02:54:36.512Z",
  "offers": [
-  {
-   "retailer": "uk-carmarthencameras",
-   "sku": "3760265544264",
-   "title": "AgfaPhoto Realishot DC9200 Black - Digital Camera",
-   "url": "https://carmarthencameras.com/products/agfaphoto-realishot-dc9200-black-digital-camera",
-   "price": 119,
-   "wasPrice": 129,
-   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/AGFAPHOTO_DC9200Front.jpg?v=1723111469",
-   "inStock": false,
-   "brand": "Agfa"
-  },
   {
    "retailer": "uk-carmarthencameras",
    "sku": "5035627111117",
@@ -621,17 +610,6 @@
   },
   {
    "retailer": "uk-carmarthencameras",
-   "sku": "4547410545180",
-   "title": "Fujifilm Insatx Mini 41 Black Instant Camera",
-   "url": "https://carmarthencameras.com/products/fujifilm-insatx-mini-41-black-instant-camera",
-   "price": 84,
-   "wasPrice": 94,
-   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Fujifilm-Insatx-Mini-41-Black-Instant-Camera-product-photo-1_75919dc8-0933-464d-8dc0-a253560e835b.webp?v=1744704918",
-   "inStock": true,
-   "brand": "Fujifilm"
-  },
-  {
-   "retailer": "uk-carmarthencameras",
    "sku": "4547410489071",
    "title": "Fujifilm Instax Mini 12 Instant Camera BLOSSOM PINK",
    "url": "https://carmarthencameras.com/products/fujifilm-instax-mini-12-camera?variant=41011586367585",
@@ -742,12 +720,13 @@
   },
   {
    "retailer": "uk-carmarthencameras",
-   "sku": "4547410349450/4547410364859",
-   "title": "Fujifilm instax mini 9 instant Camera - Smoky White With 10 shots",
-   "url": "https://carmarthencameras.com/products/copy-of-fujifilm-instax-mini-9-instant-camera-smoky-white",
-   "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/instaxmini9whitewith10shots.jpg?v=1670237079",
-   "inStock": false,
+   "sku": "4547410545180",
+   "title": "Fujifilm Instax Mini 41 Black Instant Camera",
+   "url": "https://carmarthencameras.com/products/fujifilm-insatx-mini-41-black-instant-camera",
+   "price": 84,
+   "wasPrice": 94,
+   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Fujifilm-Insatx-Mini-41-Black-Instant-Camera-product-photo-1_75919dc8-0933-464d-8dc0-a253560e835b.webp?v=1744704918",
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -896,7 +875,7 @@
    "url": "https://carmarthencameras.com/products/fujifilm-x-e5-mirrorless-camera-body-silver",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Fujifilm-X-E5_front_CMOS_silver.webp?v=1749650213",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -2087,7 +2066,7 @@
    "price": 799,
    "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/om-system-e-m10_mark_iv_silver_14-150.webp?v=1773922244",
-   "inStock": true,
+   "inStock": false,
    "brand": "OM System"
   },
   {

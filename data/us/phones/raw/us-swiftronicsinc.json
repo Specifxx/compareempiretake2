@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T03:37:41.610Z",
+ "scrapedAt": "2026-11-18T02:47:56.281Z",
  "offers": [
   {
    "retailer": "us-swiftronicsinc",
@@ -41,7 +41,7 @@
    "url": "https://swiftronicsinc.com/products/apple-iphone-17-pro-a3522-unlocked-5g?variant=52659538395502",
    "price": 1139.99,
    "image": "https://cdn.shopify.com/s/files/1/0708/3566/7238/files/IP17ProOrg.jpg?v=1767890558",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "APL-MG864VC/A"
   },
@@ -1290,14 +1290,14 @@
   },
   {
    "retailer": "us-swiftronicsinc",
-   "sku": "SM-A366W-8/128-BLK",
+   "sku": "SM-A366W-6/128-BLK",
    "title": "Samsung Galaxy A36(SM-A366W) - 5G Unlocked Canadian Model 6GB+128GB Black",
    "url": "https://swiftronicsinc.com/products/samsung-galaxy-a36sm-a366w-5g-unlocked-canadian-model",
    "price": 279.99,
    "image": "https://cdn.shopify.com/s/files/1/0708/3566/7238/files/samsung-galaxy-a36-preto-frente-costas-800x800-meo_733244c0-f102-4ff7-9dbc-6264bab4b4ff.jpg?v=1791231673",
    "inStock": true,
    "brand": "Samsung",
-   "mpn": "SM-A366W-8/128-BLK"
+   "mpn": "SM-A366W-6/128-BLK"
   },
   {
    "retailer": "us-swiftronicsinc",
@@ -1398,7 +1398,7 @@
    "price": 839.99,
    "wasPrice": 1139.99,
    "image": "https://cdn.shopify.com/s/files/1/0708/3566/7238/files/S26Silver.png?v=1772481154",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung",
    "mpn": "SM-S942W-12/512-SLV"
   },

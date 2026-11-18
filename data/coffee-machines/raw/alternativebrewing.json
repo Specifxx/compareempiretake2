@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T02:30:15.729Z",
+ "scrapedAt": "2026-11-18T01:40:16.246Z",
  "offers": [
   {
    "retailer": "alternativebrewing",
@@ -1811,7 +1811,7 @@
    "url": "https://www.alternativebrewing.com.au/products/fellow-espresso-series-1?variant=45108077723847",
    "price": 2599,
    "image": "https://cdn.shopify.com/s/files/1/0542/1344/3783/files/Fellow-Espresso-Series-1-Cherry-Red-Walnut.jpg?v=1776648556",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fellow"
   },
   {
@@ -2848,7 +2848,7 @@
    "price": 949.9,
    "wasPrice": 1044.9,
    "image": "https://cdn.shopify.com/s/files/1/0542/1344/3783/products/Melitta-Purista-Black-Automated-Coffee-Machine.jpg?v=1707192964",
-   "inStock": false,
+   "inStock": true,
    "brand": "Melitta"
   },
   {
@@ -4281,10 +4281,19 @@
   {
    "retailer": "alternativebrewing",
    "sku": "PRIMUS-ESP-BLK",
-   "title": "WPM Primus Coffee Machine",
-   "url": "https://www.alternativebrewing.com.au/products/wpm-primus-espresso-machine",
+   "title": "WPM Primus Coffee Machine Black",
+   "url": "https://www.alternativebrewing.com.au/products/wpm-primus-espresso-machine?variant=68713688563911",
    "price": 2799,
-   "image": "https://cdn.shopify.com/s/files/1/0542/1344/3783/files/WPM-Primus-Espresso.jpg?v=1754545127",
+   "image": "https://cdn.shopify.com/s/files/1/0542/1344/3783/files/WPM-Primus-Espresso-Machine.jpg?v=1764548522",
+   "inStock": true
+  },
+  {
+   "retailer": "alternativebrewing",
+   "sku": "PRIMUS-ESP-SLV",
+   "title": "WPM Primus Coffee Machine Silver",
+   "url": "https://www.alternativebrewing.com.au/products/wpm-primus-espresso-machine?variant=68713688596679",
+   "price": 2799,
+   "image": "https://cdn.shopify.com/s/files/1/0542/1344/3783/files/WPM_Primus_Coffee_Machine_Silver.jpg?v=1794889573",
    "inStock": true
   }
  ]

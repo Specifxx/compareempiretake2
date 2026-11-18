@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T02:39:54.211Z",
+ "scrapedAt": "2026-11-18T01:50:18.575Z",
  "offers": [
   {
    "retailer": "ple",
@@ -167,7 +167,7 @@
    "price": 639,
    "wasPrice": 679,
    "image": "https://plecom.imgix.net/iil-455308-680915.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -400,7 +400,7 @@
    "brand": "TP-Link",
    "mpn": "Archer AX55",
    "url": "https://www.ple.com.au/products/647794/tp-link-archer-ax55-ax3000-dual-band-wi-fi-6-router",
-   "price": 159,
+   "price": 119,
    "wasPrice": 249,
    "image": "https://plecom.imgix.net/iil-263569-647794.jpg?w=600&h=600",
    "inStock": true
@@ -424,7 +424,7 @@
    "brand": "TP-Link",
    "mpn": "Archer AX72",
    "url": "https://www.ple.com.au/products/647156/tp-link-archer-ax72-ax5400-dual-band-wi-fi-6-router",
-   "price": 249,
+   "price": 199,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-260914-647156.jpg?w=600&h=600",
    "inStock": true
@@ -436,7 +436,7 @@
    "brand": "TP-Link",
    "mpn": "Archer BE220",
    "url": "https://www.ple.com.au/products/673719/tp-link-archer-be220-be3600-dual-band-wi-fi-7-router-",
-   "price": 199,
+   "price": 129,
    "wasPrice": 229,
    "image": "https://plecom.imgix.net/iil-421087-673719.jpg?w=600&h=600",
    "inStock": true
@@ -460,7 +460,7 @@
    "brand": "TP-Link",
    "mpn": "Archer BE3600",
    "url": "https://www.ple.com.au/products/668212/tp-link-archer-be3600-be3600-dual-band-wi-fi-7-router",
-   "price": 229,
+   "price": 134,
    "wasPrice": 249,
    "image": "https://plecom.imgix.net/iil-393947-668212.jpg?w=600&h=600",
    "inStock": true
@@ -472,7 +472,7 @@
    "brand": "TP-Link",
    "mpn": "Archer BE550",
    "url": "https://www.ple.com.au/products/664306/tp-link-archer-be550-be9300-tri-band-wi-fi-7-router",
-   "price": 499,
+   "price": 449,
    "wasPrice": 549,
    "image": "https://plecom.imgix.net/iil-369094-664306.jpg?w=600&h=600",
    "inStock": true
@@ -518,7 +518,8 @@
    "brand": "TP-Link",
    "mpn": "Archer GE400",
    "url": "https://www.ple.com.au/products/678731/tp-link-archer-ge400-be6500-wi-fi-7-gaming-router",
-   "price": 399,
+   "price": 299,
+   "wasPrice": 399,
    "image": "https://plecom.imgix.net/iil-446105-678731.jpg?w=600&h=600",
    "inStock": true
   },
@@ -529,7 +530,7 @@
    "brand": "TP-Link",
    "mpn": "Archer GE550",
    "url": "https://www.ple.com.au/products/687538/tp-link-archer-ge550-wi-fi-7-gaming-router",
-   "price": 599,
+   "price": 449,
    "wasPrice": 649,
    "image": "https://plecom.imgix.net/iil-483783-687538.jpg?w=600&h=600",
    "inStock": true
@@ -646,7 +647,7 @@
    "brand": "TP-Link",
    "mpn": "Deco BE65(3-pack)",
    "url": "https://www.ple.com.au/products/664305/tp-link-deco-be65-be11000-wi-fi-7-tri-band-mesh-system-3-pack",
-   "price": 1099,
+   "price": 849,
    "wasPrice": 1499,
    "image": "https://plecom.imgix.net/iil-369087-664305.jpg?w=600&h=600",
    "inStock": true
@@ -658,7 +659,7 @@
    "brand": "TP-Link",
    "mpn": "Deco BE65(1-pack)",
    "url": "https://www.ple.com.au/products/665982/tp-link-deco-be65-be11000-wi-fi-7-tri-band-mesh-unit-1-pack",
-   "price": 449,
+   "price": 349,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-381753-665982.jpg?w=600&h=600",
    "inStock": true
@@ -732,7 +733,7 @@
    "price": 114,
    "wasPrice": 129,
    "image": "https://plecom.imgix.net/iil-208892-638313.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -789,7 +790,7 @@
    "brand": "TP-Link",
    "mpn": "Deco X20(2-pack)",
    "url": "https://www.ple.com.au/products/642688/tp-link-deco-x20-ax1800-wi-fi-6-mesh-system-2-pack",
-   "price": 249,
+   "price": 209,
    "wasPrice": 269,
    "image": "https://plecom.imgix.net/iil-337485-642688.jpg?w=600&h=600",
    "inStock": true
@@ -849,7 +850,8 @@
    "brand": "TP-Link",
    "mpn": "Deco X55(2-pack)",
    "url": "https://www.ple.com.au/products/667729/tp-link-deco-x55-ax3000-wi-fi-6-mesh-system-2-pack",
-   "price": 319,
+   "price": 279,
+   "wasPrice": 319,
    "image": "https://plecom.imgix.net/iil-392270-667729.jpg?w=600&h=600",
    "inStock": true
   },
@@ -860,7 +862,7 @@
    "brand": "TP-Link",
    "mpn": "Deco X55(3-pack)",
    "url": "https://www.ple.com.au/products/667730/tp-link-deco-x55-ax3000-wi-fi-6-mesh-system-3-pack",
-   "price": 429,
+   "price": 349,
    "wasPrice": 449,
    "image": "https://plecom.imgix.net/iil-392268-667730.jpg?w=600&h=600",
    "inStock": true
@@ -1060,7 +1062,7 @@
    "brand": "TP-Link",
    "mpn": "TL-WR3002X",
    "url": "https://www.ple.com.au/products/674343/tp-link-tl-wr3002x-ax3000-gigabit-wi-fi-6-portable-travel-router",
-   "price": 129,
+   "price": 109,
    "wasPrice": 179,
    "image": "https://plecom.imgix.net/iil-423966-674343.jpg?w=600&h=600",
    "inStock": true

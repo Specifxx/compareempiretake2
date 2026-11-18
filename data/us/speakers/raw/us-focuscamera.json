@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-17T03:33:27.223Z",
+ "scrapedAt": "2026-11-18T02:43:44.233Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -8,7 +8,7 @@
    "url": "https://www.focuscamera.com/products/bose-894001-1100-tv-home-audio-docks-speakers",
    "price": 349,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3650957.jpg?v=1785245245",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose",
    "mpn": "894001-1100"
   },
@@ -146,7 +146,7 @@
    "url": "https://www.focuscamera.com/products/bose-895098-0200-tv-home-audio-docks-speakers",
    "price": 129,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3650773.jpg?v=1784901421",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose",
    "mpn": "895098-0200"
   },
@@ -157,7 +157,7 @@
    "url": "https://www.focuscamera.com/products/bose-8950980200-bzc-tv-home-audio-docks-speakers",
    "price": 132.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3675432.jpg?v=1790779058",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose",
    "mpn": "8950980200-BZC"
   },
@@ -234,7 +234,7 @@
    "url": "https://www.focuscamera.com/products/bose-894040-0100-tv-home-audio-docks-speakers",
    "price": 269,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3687326.jpg?v=1793820894",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose",
    "mpn": "894040-0100"
   },
@@ -629,7 +629,8 @@
    "sku": "42994243731504",
    "title": "Sony BRAVIA Theater Rear 9 SA-RS9 Wireless Speakers w/ 360 Spatial Sound (Black)",
    "url": "https://www.focuscamera.com/products/sony-sars9-tv-home-audio-docks-speakers",
-   "price": 748,
+   "price": 548,
+   "wasPrice": 748,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3625494.jpg?v=1777559971",
    "inStock": true,
    "brand": "TD Synnex - Sony",
@@ -640,7 +641,8 @@
    "sku": "42161739694128",
    "title": "Sony Bravia Theater U Wearable TV Speaker with 360 Spatial Sound Personalizer Technology (Black)",
    "url": "https://www.focuscamera.com/products/sony-htan7-tv-home-audio-docks-speakers",
-   "price": 348,
+   "price": 248,
+   "wasPrice": 348,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3390551.jpg?v=1751985765",
    "inStock": true,
    "brand": "TD Synnex - Sony",
@@ -865,7 +867,7 @@
    "url": "https://www.focuscamera.com/products/sony-srsult10h-tv-home-audio-docks-speakers",
    "price": 138,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/ad05cd887f0d942d8904a48591d4b5ff0cb918ede73fb20ae76e9b7ca12513c8-f9ea13bf677e54f2.jpg?v=1788874814",
-   "inStock": true,
+   "inStock": false,
    "brand": "TD Synnex - Sony",
    "mpn": "SRSULT10H"
   },
