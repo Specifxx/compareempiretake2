@@ -18,7 +18,7 @@ coffee machines, fridges, washing machines and dishwashers). Live at compareempi
    series to `data/series.json`.
 3. `next build` prerenders the home, category, brand, deal, browse, compare and guide pages;
    product pages render on their first request and Vercel's CDN keeps them until the next deploy.
-   No database.
+   No database for anything public (the price-alert sign-ups are the one private table, DECISIONS.md 2026-11-19).
 
 `.github/workflows/refresh-prices.yml` runs steps 1–2 every morning and commits the
 data, which triggers one Vercel deploy a day.

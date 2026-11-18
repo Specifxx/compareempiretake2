@@ -1,15 +1,16 @@
-import { ensureSchema } from "@/lib/db";
 import { notifyInbox } from "@/lib/email";
-import { clip, ipHash, isEmail, json } from "@/lib/server-utils";
-import { cleanReport, saveReport } from "@/lib/reports-github";
+import { takeInboxSlot } from "@/lib/inbox-cap";
+import { clip, isEmail, json } from "@/lib/server-utils";
+import { cleanReport, overLimit, saveReport } from "@/lib/reports-github";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 const KINDS = ["bug", "idea", "wrong-price", "store", "other"];
-const INBOX_EMAILS_PER_DAY = 25;
 
+// No database since 2026-11-19 (DECISIONS.md): a message goes to the site's reports branch, which the daily triage reads
+// (lib/reports-github.ts: no email, no IP, contact details blanked in the text), and to the site inbox, Reply-To the visitor
+// (owner, 2026-10-30: "any feedback feeds into the respective emails"). Delivered when either one took it.
 export async function POST(req: Request) {
-  const sql = await ensureSchema();
-  if (!sql) return json({ ok: false, error: "Feedback isn't switched on yet." }, 503);
   const body = await req.json().catch(() => ({}));
   if (body.website) return json({ ok: true }); // honeypot: bots fill every field
   const message = clip(body.message, 4000);
@@ -17,28 +18,23 @@ export async function POST(req: Request) {
   const kind = KINDS.includes(body.kind) ? body.kind : "other";
   const email = isEmail(body.email) ? body.email.toLowerCase() : null;
   const page = clip(body.page, 300) || null;
-  const ip = ipHash(req);
-  const [{ n }] = (await sql`SELECT count(*)::int AS n FROM feedback WHERE ip_hash = ${ip} AND created_at > now() - interval '1 hour'`) as { n: number }[];
-  if (n >= 10) return json({ ok: false, error: "That's a lot of feedback — please try again in a bit." }, 429);
-  await sql`INSERT INTO feedback (kind, message, email, page, ip_hash) VALUES (${kind}, ${message}, ${email}, ${page}, ${ip})`;
-  // A wrong price or a store sent through the general feedback box also goes to the
-  // private reports repo the daily triage reads (lib/reports-github.ts), without the
-  // email or the IP hash; emails and phone numbers in the text are blanked there.
-  if (kind === "wrong-price" || kind === "store") {
-    const r = cleanReport({ kind: "other", issue: kind, note: message, page }, "compareempire");
-    if (r.ok) await saveReport(r.report);
+  const xff = req.headers.get("x-forwarded-for");
+  if (overLimit((xff ? xff.split(",")[0]!.trim() : req.headers.get("x-real-ip")) || "unknown")) {
+    return json({ ok: false, error: "That's a lot of feedback — please try again in a bit." }, 429);
   }
-  // Emailed to the site inbox, Reply-To the visitor (owner, 2026-10-30: "any feedback
-  // feeds into the respective emails"); not to the owner's personal address, and
-  // ratings and reviews still send nothing. At most INBOX_EMAILS_PER_DAY a day, so a
-  // flood cannot spend the mail allowance; the rest wait in /admin. Never fails the save.
-  try {
-    const [{ today }] = (await sql`SELECT count(*)::int AS today FROM feedback WHERE created_at > now() - interval '1 day'`) as { today: number }[];
-    if (today <= INBOX_EMAILS_PER_DAY) {
-      await notifyInbox(`Feedback (${kind}): ${message.replace(/\s+/g, " ").slice(0, 80)}`, `${kind}${page ? ` · ${page}` : ""}\nFrom: ${email ?? "no email given"}\n\n${message}`, email);
+  const r =
+    kind === "wrong-price" || kind === "store"
+      ? cleanReport({ kind: "other", issue: kind, note: message, page }, "compareempire")
+      : cleanReport({ kind: "feedback", issue: kind, note: message, page }, "compareempire");
+  const saved = r.ok ? await saveReport(r.report) : "failed";
+  let emailed = false;
+  if (takeInboxSlot()) {
+    try {
+      emailed = await notifyInbox(`Feedback (${kind}): ${message.replace(/\s+/g, " ").slice(0, 80)}`, `${kind}${page ? ` · ${page}` : ""}\nFrom: ${email ?? "no email given"}\n\n${message}`, email);
+    } catch {
+      /* the report branch has it */
     }
-  } catch {
-    /* the message is saved; the email is a courtesy */
   }
-  return json({ ok: true });
+  if (saved === "saved" || emailed) return json({ ok: true });
+  return json({ ok: false, error: `Couldn't send that right now. Please email ${CONTACT_EMAIL} instead.` }, 502);
 }

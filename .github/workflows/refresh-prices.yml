@@ -183,6 +183,12 @@ jobs:
         if: ${{ !cancelled() }}
         continue-on-error: true
         run: DEMAND_WRITE_ONLY=1 bash scripts/pull-demand.sh ce data/demand.json
+      - name: Pre-November reviews to a file (one database read, next to the alert check)
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: npx tsx scripts/export-legacy-reviews.ts
       - name: Commit data
         run: |
           git config user.name "compare-empire-bot"

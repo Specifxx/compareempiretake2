@@ -23,9 +23,9 @@ export async function notifyOwner(subject: string, text: string): Promise<void> 
  * the old INBOX_EMAIL variable is no longer read), Reply-To the visitor when they left an address (owner,
  * 2026-10-30: "any feedback feeds into the respective emails").
  */
-export async function notifyInbox(subject: string, text: string, replyTo?: string | null): Promise<void> {
+export async function notifyInbox(subject: string, text: string, replyTo?: string | null): Promise<boolean> {
   const to = CONTACT_EMAIL;
-  await sendMail({ to, subject: `[Compare Empire] ${subject}`, html: `<pre style="font:14px/1.5 sans-serif;white-space:pre-wrap">${escapeHtml(text)}</pre>`, text, ...(replyTo ? { replyTo } : {}) });
+  return sendMail({ to, subject: `[Compare Empire] ${subject}`, html: `<pre style="font:14px/1.5 sans-serif;white-space:pre-wrap">${escapeHtml(text)}</pre>`, text, ...(replyTo ? { replyTo } : {}) });
 }
 
 export const escapeHtml = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
