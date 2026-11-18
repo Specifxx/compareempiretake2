@@ -21,6 +21,7 @@ import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { camCompareFor } from "@/lib/family";
 import { amazonFor } from "@/lib/amazon-live";
 import { cleanedSlug, productDescription, productIndexable, productTitle } from "@/lib/indexing";
+import { productFound } from "@/lib/search-found";
 import { guidesForCategory } from "@/lib/guides";
 import { categoryPosition, priceMove } from "@/lib/product-facts";
 
@@ -47,11 +48,11 @@ const withAmazon = (p: Phone, region: RegionId): Phone => ({ ...p, amazon: amazo
  * noindex copy is never advertised, and a noindex page advertises none.
  */
 function alternates(p: Phone) {
-  if (!productIndexable(p)) return { canonical: productHref(p) };
+  if (!productIndexable(p, productFound(p))) return { canonical: productHref(p) };
   const langs = Object.fromEntries(
     REGION_IDS.filter((r) => {
       const q = getProduct(p.category, p.slug, r);
-      return !!q && productIndexable(q);
+      return !!q && productIndexable(q, productFound(q));
     }).map((r) => [REGIONS[r].hreflang, withRegion(`/${p.category}/${p.slug}`, r)]),
   );
   return { canonical: productHref(p), ...(Object.keys(langs).length > 1 ? { languages: withXDefault(langs) } : {}) };
@@ -89,7 +90,7 @@ export async function productMetadata(params: ProductParams, region: RegionId): 
     title,
     description,
     // One-store and sold-out pages stay live and linked but out of the index (lib/indexing.ts).
-    ...(productIndexable(p) ? {} : { robots: { index: false, follow: true } }),
+    ...(productIndexable(p, productFound(p)) ? {} : { robots: { index: false, follow: true } }),
     alternates: alternates(p),
     openGraph: { title, description, url: productHref(p), images: [{ url: shareCardOf(p), width: 1200, height: 630 }] },
     twitter: { card: "summary_large_image", title, description, images: [shareCardOf(p)] },
@@ -97,7 +98,7 @@ export async function productMetadata(params: ProductParams, region: RegionId): 
 }
 
 /** Indexed pages draw their own card with real store prices; noindex ones share the region's static card (CE-1). */
-const shareCardOf = (p: Phone) => (productIndexable(p) ? shareCard(p) : staticShareCard(p.region ?? "au"));
+const shareCardOf = (p: Phone) => (productIndexable(p, productFound(p)) ? shareCard(p) : staticShareCard(p.region ?? "au"));
 
 function shareCard(p: Phone) {
   const v = p.variants.reduce((a, b) => (a.bestPrice <= b.bestPrice ? a : b));

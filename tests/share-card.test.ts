@@ -33,5 +33,5 @@ test("noindex product pages share the region's static card instead of drawing th
     assert.ok(readFileSync(`public/share/${r}.png`).length > 10_000, r);
   }
   const view = readFileSync("src/views/ProductView.tsx", "utf8");
-  assert.match(view, /productIndexable\(p\) \? shareCard\(p\) : staticShareCard/);
+  assert.match(view, /productIndexable\(p, productFound\(p\)\) \? shareCard\(p\) : staticShareCard/);
 });

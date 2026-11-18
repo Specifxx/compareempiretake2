@@ -143,7 +143,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
                           </Link>
                           {c.brands.length > 0 && (
                             <div className="mt-1.5 flex flex-wrap gap-x-3 gap-y-1 pl-7 text-xs text-ink-mute">
-                              {c.brands.slice(0, 4).map((b) => (
+                              {c.brands.slice(0, 2).map((b) => (
                                 <Link prefetch={false} key={b.href} href={b.href} className="hover:text-brand">{b.name}</Link>
                               ))}
                             </div>
@@ -177,8 +177,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
               {NAV.map((n) => (
                 <Link prefetch={false} key={n.href} href={n.href} onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">{n.label}</Link>
               ))}
-              <Link prefetch={false} href="/forum" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">Community forum</Link>
-              <Link prefetch={false} href="/about" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">About</Link>
+              <Link prefetch={false} href="/about" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">Who runs Compare Empire</Link>
             </div>
           </nav>
         )}
