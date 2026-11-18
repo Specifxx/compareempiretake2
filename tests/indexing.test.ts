@@ -10,11 +10,13 @@ const offer = (retailer: string, price: number, inStock = true, kind: "outright"
 const product = (offers: ReturnType<typeof offer>[]): Phone =>
   ({ slug: "x", category: "tvs", brand: "LG", model: "C5", name: "LG C5", firstSeen: "2026-10-20", retailerCount: new Set(offers.map((o) => o.retailer)).size, offerCount: offers.length, bestPrice: Math.min(...offers.map((o) => o.price)), variants: [{ id: "v", label: "", storageGb: 0, bestPrice: 1, offers }], images: [], colours: [], specs: {}, generation: 0 }) as unknown as Phone;
 
-test("a product page is indexed only when two or more stores sell it and one has it in stock", () => {
+test("a product page asks to be indexed with three stores, one in stock; two stores only when search finds it (2026-11-19)", () => {
   assert.equal(productIndexable(product([offer("a", 10)])), false, "one store");
   assert.equal(productIndexable(product([offer("a", 10, false), offer("b", 11, false)])), false, "all sold out");
   assert.equal(productIndexable(product([offer("a", 10, false), offer("b", 11, true, "plan")])), false, "a plan is not a price");
-  assert.equal(productIndexable(product([offer("a", 10), offer("b", 11)])), true);
+  assert.equal(productIndexable(product([offer("a", 10), offer("b", 11)])), false, "two stores, not found");
+  assert.equal(productIndexable(product([offer("a", 10), offer("b", 11)]), true), true, "two stores, found in search");
+  assert.equal(productIndexable(product([offer("a", 10), offer("b", 11), offer("c", 12)])), true);
 });
 
 test("Australia's sitemap lists the strongest tier only: three or more stores, in stock", () => {
@@ -37,15 +39,17 @@ test("Canada and Singapore index (and list) three-store pages only (2026-11-07)"
 test("the product page's hreflang lists only regions where its copy is indexable, and a noindex page lists none", async () => {
   const { readFileSync } = await import("node:fs");
   const src = readFileSync(new URL("../src/views/ProductView.tsx", import.meta.url), "utf8");
-  assert.match(src, /if \(!productIndexable\(p\)\) return \{ canonical: productHref\(p\) \};/);
-  assert.match(src, /return !!q && productIndexable\(q\);/);
+  assert.match(src, /if \(!productIndexable\(p, productFound\(p\)\)\) return \{ canonical: productHref\(p\) \};/);
+  assert.match(src, /return !!q && productIndexable\(q, productFound\(q\)\);/);
 });
 
-test("the US and UK sitemaps list every indexable product: two or more stores, in stock", () => {
+test("the US and UK sitemaps list every product that asks to be indexed: three stores, or two that search finds (2026-11-19)", () => {
   for (const region of ["us", "uk"] as const) {
     const at = (p: Phone) => ({ ...p, region });
     assert.equal(productInSitemap(at(product([offer("a", 10)]))), false, `${region}: one store stays out`);
-    assert.equal(productInSitemap(at(product([offer("a", 10), offer("b", 11)]))), true, `${region}: two stores`);
+    assert.equal(productInSitemap(at(product([offer("a", 10), offer("b", 11)]))), false, `${region}: two stores, not found`);
+    assert.equal(productInSitemap(at(product([offer("a", 10), offer("b", 11)])), true), true, `${region}: two stores, found`);
+    assert.equal(productInSitemap(at(product([offer("a", 10), offer("b", 11), offer("c", 12)]))), true, `${region}: three stores`);
     assert.equal(productInSitemap(at(product([offer("a", 10, false), offer("b", 11, false)]))), false, `${region}: sold out`);
   }
   assert.equal(productInSitemap({ ...product([offer("a", 10), offer("b", 11)]), region: "au" }), false, "Australia keeps three");
@@ -58,7 +62,8 @@ test("IndexNow keeps the three-store tier in every region (Vercel cost)", () => 
 
 test("a brand page is indexed when one of its products is", () => {
   assert.equal(brandIndexable([product([offer("a", 10)]), product([offer("b", 10)])]), false);
-  assert.equal(brandIndexable([product([offer("a", 10)]), product([offer("a", 10), offer("b", 12)])]), true);
+  assert.equal(brandIndexable([product([offer("a", 10)]), product([offer("a", 10), offer("b", 12)])]), false, "two stores no longer asks (2026-11-19)");
+  assert.equal(brandIndexable([product([offer("a", 10)]), product([offer("a", 10), offer("b", 12), offer("c", 13)])]), true);
 });
 
 test("lastmod is the last day a price moved, else the day the product was first seen; never the build time", () => {

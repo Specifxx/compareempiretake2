@@ -2428,3 +2428,24 @@ sitting on top of it.
   `var(--bn-space)` + a small gap up, and the body's bottom padding follows it. Hidden, it slides fully off-screen (transform only, CLS 0).
 - **Measured** (local build, dock stacked): Pixel 7 412×915 nav + dock take 129px (14.1%); iPhone 15 393×852 with a 34px safe area
   143px (16.8%); iPhone SE 375×667 129px (19.3%); the old flush bar took about the same plus the full safe area.
+
+## 2026-11-19: Core-update quality pass: three-store indexing, fewer links, who runs the site
+
+Compare Empire fell from 25,473 impressions on 27 Oct (average position 15) to 391 on 29 Oct (position 49) and 12-41 a day
+since. The cause was www.compareempire.com losing DNS in the 26 Oct outage while Google held the site under www (the apex
+became canonical 27 Oct, www 308s to the exact apex page since 5 Nov), not the November core update. Recovery is Google
+re-learning the apex; this pass makes sure what it re-learns is the strongest part of the site.
+
+- **Indexing** (`lib/indexing.ts`): a product page asks to be indexed with three or more stores (one in stock) in every
+  region. A two-store page in Australia, the US or the UK asks only when Search Console shows people finding it
+  (`lib/search-found.ts`, the `data/focus/demand.json` paths the focus job already refreshes daily). About 3,200 product
+  pages asked before; about 1,400 ask now, plus those search finds. The rest stay live, noindex, follow, out of the
+  sitemap and hreflang. A brand page asks when one of its products does.
+- **Fewer links**: the footer's shop column is 4 links (was 10-16: every seasonal sale, widgets, report), categories show
+  the first 8, the site column 6 (was 13: no forum, creators, reviews, alerts, feedback, list-your-store); the header's
+  category menu shows 2 brands per category (was 4); the phone menu drops the forum. The cross-site cluster tiles are off.
+- **Who runs it**: the about page names the co-founders (Bill and George), says AI tools help with code and guides while
+  prices are read by a program, corrects "Right now, we don't [make money]" to the affiliate links we have, and gives the
+  running cost (about A$790 a month for the group, our books to 15 Nov 2026).
+
+The one ad block already sits below each page's content; no URL or host changes.

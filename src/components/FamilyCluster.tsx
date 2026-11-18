@@ -5,7 +5,13 @@ import { familyTiles } from "@/lib/family";
 import { blockHeading, familyMoney, tileNote } from "@/lib/family-network";
 import type { RegionId } from "@/lib/region";
 
+// Off (2026-11-19, the core-update quality pass; owner: "too many sites pages linking to others"): a block of tiles linking
+// our other sites on deals, pre-order and sale pages reads as a link network. The one link between our sites is the footer's
+// /our-sites. The component stays so the pages need no change; flip this only with the owner.
+const CROSS_SITE_BLOCKS = false;
+
 export function FamilyCluster({ region }: { region: RegionId }) {
+  if (!CROSS_SITE_BLOCKS) return null;
   const tiles = familyTiles(region);
   if (!tiles.length) return null;
   const more = tiles.find((t) => t.more)?.more;

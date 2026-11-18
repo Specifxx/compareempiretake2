@@ -3,6 +3,7 @@ import { activeCategories, getBrands, getCatalog, getProducts, getSeries, getVsP
 import { getGuides } from "./guides";
 import { GTA6_REGIONS } from "./gta6";
 import { brandIndexable, latest, productInSitemap, productLastmod } from "./indexing";
+import { productFound } from "./search-found";
 import { HOME_PATH, PREFIXED_REGIONS, withRegion, type RegionId } from "./region";
 import { SITE } from "./site";
 import type { CategoryId, Phone } from "./types";
@@ -74,7 +75,7 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
           ...["/stores", "/browse"].map((p) => ({ loc: abs(withRegion(p, r)), priority: 0.6 })),
           // Only categories with at least one strong product (2026-11-06: Canada and Singapore start with a few stores,
           // and a category page listing only one-store products is as thin as those products' own pages).
-          ...activeCategories(r).filter((c) => getProducts(c.id as CategoryId, r).some(productInSitemap)).flatMap((c) => {
+          ...activeCategories(r).filter((c) => getProducts(c.id as CategoryId, r).some((p) => productInSitemap(p, productFound(p)))).flatMap((c) => {
             const clm = categoryLastmod(c.id as CategoryId, r);
             return [
               { loc: abs(withRegion(`/${c.id}`, r)), lastmod: clm, priority: 0.9 },
@@ -96,7 +97,7 @@ const categoryLastmod = (category: CategoryId, region: RegionId) => latest(getPr
 
 function products(region: RegionId): SitemapEntry[] {
   return getProducts(undefined, region)
-    .filter(productInSitemap)
+    .filter((p) => productInSitemap(p, productFound(p)))
     .map((p) => ({ loc: abs(withRegion(`/${p.category}/${p.slug}`, region)), lastmod: lastmodOf(p), priority: p.retailerCount >= 5 ? 0.8 : 0.7 }));
 }
 
