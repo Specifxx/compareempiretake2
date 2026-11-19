@@ -38,7 +38,7 @@ async function region(r: AmazonMarket) {
   const byKey = new Map(products.flatMap((p) => p.variants.map((v) => [`${p.category}/${p.slug}/${v.id}`, { p, v: v.id }] as const)));
   // In catalogue order (most-compared first); one ASIN may serve two keys (a variant listed twice).
   const wanted = [...byKey.keys()].filter((k) => known[k]?.asin);
-  const cap = Number(process.env.AMAZON_BUILD_CALLS || 100) * 10;
+  const cap = Math.min(30, Number(process.env.AMAZON_BUILD_CALLS || 30)) * 10;
   const keys = wanted.slice(0, cap);
   const api = await creatorsClient(r, amazonStore(r)!.tag, creds);
   const fetchedAt = new Date().toISOString();
