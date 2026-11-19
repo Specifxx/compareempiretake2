@@ -137,7 +137,10 @@ const nextConfig = {
     // endpoint, once registered under the www URL. That exemption never helped: Vercel redirects www before Next
     // (eBay marked the endpoint down, 2026-11-07), so eBay now has the apex URL.
     const www = { source: "/:path((?!api/ebay/).*)", has: [{ type: "host", value: "www.compareempire.com" }], destination: "https://compareempire.com/:path", permanent: true };
-    return [www, { source: "/us", destination: "/", permanent: true }, ...retiredRedirects(), ...[...merged, ...entity, ...retiredGuides].map(([source, destination]) => ({ source, destination, permanent: true }))];
+    // Australia's pages have no prefix (only its home is /au), so /au/deals, /au/phones/... were 404s for anyone who
+    // guessed the pattern from the other regions (review of 19 Nov 2026). Each now 301s to the Australian page it meant.
+    const auPrefixed = { source: "/au/:path+", destination: "/:path+", permanent: true };
+    return [www, { source: "/us", destination: "/", permanent: true }, auPrefixed, ...retiredRedirects(), ...[...merged, ...entity, ...retiredGuides].map(([source, destination]) => ({ source, destination, permanent: true }))];
   },
   async headers() {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.

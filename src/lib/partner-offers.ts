@@ -32,6 +32,13 @@ export interface PartnerOffers {
   offers: AwinOffer[];
 }
 
+/**
+ * The programmes whose offers suit a tech comparison site (review of 19 Nov 2026: coffee beans, cookware and perfume
+ * offers on the tech homepage diluted what the page is about). An allowlist, so a programme that joins later stays off
+ * until someone adds it here: Clifton Cameras (cameras), GL Technologies (GL.iNet routers), Ryman (printers, office tech).
+ */
+export const ON_TOPIC_PROGRAMMES: ReadonlySet<number> = new Set([25687, 80509, 3326]);
+
 const COUNTRY: Record<RegionId, string> = { au: "AU", us: "US", uk: "GB", ca: "CA", sg: "SG" };
 const DAY = 86_400_000;
 
@@ -51,7 +58,7 @@ export function partnerOffers(region: RegionId, placement: string, opts: { store
   const { stores = 3, perStore = 2, now = Date.now(), joined = JOINED, offers = OFFERS } = opts;
   const out: PartnerOffers[] = [];
   for (const p of joined) {
-    if (p.link || !sellsIn(p, region) || !p.domains[0]) continue;
+    if (p.link || !ON_TOPIC_PROGRAMMES.has(p.id) || !sellsIn(p, region) || !p.domains[0]) continue;
     const live = offers
       .filter((o) => o.advertiserId === p.id && Date.parse(o.start) <= now && Date.parse(o.end) - now > DAY)
       .sort((a, b) => Number(b.type === "voucher") - Number(a.type === "voucher") || a.end.localeCompare(b.end))
