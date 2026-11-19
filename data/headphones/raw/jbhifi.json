@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T22:42:23.030Z",
+ "scrapedAt": "2026-11-19T22:36:40.563Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -1559,7 +1559,6 @@
    "title": "Bose QuietComfort Ultra Noise Cancelling Headphones Gen 2 (Black)",
    "url": "https://www.jbhifi.com.au/products/bose-quietcomfort-ultra-noise-cancelling-headphones-gen-2-black",
    "price": 549,
-   "wasPrice": 578,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/833201-Product-0-I-638923857606696428.jpg?v=1756789026",
    "inStock": true,
    "brand": "Bose"
@@ -1656,34 +1655,12 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "664125",
-   "title": "Bose Ultra Open Earbuds (Black)",
-   "url": "https://www.jbhifi.com.au/products/bose-ultra-open-earbuds-black",
-   "price": 225,
-   "wasPrice": 259,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/664125-Product-0-I-638439849604314033_2e3cfa6e-4a97-4dd7-9b24-a7637a322dfb.jpg?v=1728618675",
-   "inStock": true,
-   "brand": "Bose"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "833208",
    "title": "Bose Ultra Open Earbuds (Midnight Violet)",
    "url": "https://www.jbhifi.com.au/products/bose-ultra-open-earbuds-midnight-violet",
    "price": 225,
    "wasPrice": 259,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/833208-Product-0-I-638929664403045826.jpg?v=1757369709",
-   "inStock": true,
-   "brand": "Bose"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "664126",
-   "title": "Bose Ultra Open Earbuds (White Smoke)",
-   "url": "https://www.jbhifi.com.au/products/bose-ultra-open-earbuds-white-smoke",
-   "price": 225,
-   "wasPrice": 259,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/664126-Product-0-I-638439850203192945.jpg?v=1728618554",
    "inStock": true,
    "brand": "Bose"
   },
@@ -2058,7 +2035,7 @@
    "url": "https://www.jbhifi.com.au/products/cmf-buds-pro-2-in-ear-wireless-headphones-v3-green",
    "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914091-Product-0-I-639249431402704546.jpg?v=1789346409",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nothing"
   },
   {
@@ -2833,7 +2810,8 @@
    "sku": "812182",
    "title": "JBL JR 320 Kids Wired On-Ear Headphones (Black)",
    "url": "https://www.jbhifi.com.au/products/jbl-jr-320-kids-wired-on-ear-headphones-black",
-   "price": 24.95,
+   "price": 19,
+   "wasPrice": 24.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/812182-Product-0-I-638856309003807217.jpg?v=1750034165",
    "inStock": true,
    "brand": "Jbl"
@@ -2853,7 +2831,8 @@
    "sku": "796383",
    "title": "JBL JUNIOR 320 Wired On-Ear Kids Headphones (Blue)",
    "url": "https://www.jbhifi.com.au/products/jbl-junior-320-wired-on-ear-kids-headphones-blue",
-   "price": 24.95,
+   "price": 19,
+   "wasPrice": 24.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796383-Product-0-I-638749279202812012.jpg?v=1739331192",
    "inStock": true,
    "brand": "Jbl"
@@ -2863,7 +2842,8 @@
    "sku": "796384",
    "title": "JBL JUNIOR 320 Wired On-Ear Kids Headphones (Purple)",
    "url": "https://www.jbhifi.com.au/products/jbl-junior-320-wired-on-ear-kids-headphones-purple",
-   "price": 24.95,
+   "price": 19,
+   "wasPrice": 24.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796384-Product-0-I-638749279802306533.jpg?v=1739331251",
    "inStock": true,
    "brand": "Jbl"
@@ -2873,7 +2853,8 @@
    "sku": "796385",
    "title": "JBL JUNIOR 320BT Wireless On-Ear Kids Headphones (Blue)",
    "url": "https://www.jbhifi.com.au/products/jbl-junior-320bt-wireless-on-ear-kids-headphones-blue",
-   "price": 49.95,
+   "price": 34.95,
+   "wasPrice": 49.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796385-Product-0-I-638749353019796888.jpg?v=1739338572",
    "inStock": true,
    "brand": "Jbl"
@@ -2883,7 +2864,8 @@
    "sku": "796387",
    "title": "JBL JUNIOR 320BT Wireless On-Ear Kids Headphones (Green)",
    "url": "https://www.jbhifi.com.au/products/jbl-junior-320bt-wireless-on-ear-kids-headphones-green",
-   "price": 49.95,
+   "price": 34.95,
+   "wasPrice": 49.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796387-Product-0-I-638749353020070051.jpg?v=1739338572",
    "inStock": true,
    "brand": "Jbl"
@@ -2893,7 +2875,8 @@
    "sku": "796386",
    "title": "JBL JUNIOR 320BT Wireless On-Ear Kids Headphones (Purple)",
    "url": "https://www.jbhifi.com.au/products/jbl-junior-320bt-wireless-on-ear-kids-headphones-purple",
-   "price": 49.95,
+   "price": 34.95,
+   "wasPrice": 49.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796386-Product-0-I-638749353602878478.jpg?v=1739338632",
    "inStock": true,
    "brand": "Jbl"
@@ -3130,17 +3113,6 @@
    "price": 149,
    "wasPrice": 249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/911472-Product-0-I-639240057604162615.jpg?v=1788422226",
-   "inStock": true,
-   "brand": "Jbl"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "789052",
-   "title": "JBL Quantum 100M2 Over-Ear Gaming Headset (Purple)",
-   "url": "https://www.jbhifi.com.au/products/jbl-quantum-100m2-over-ear-gaming-headset-purple",
-   "price": 28,
-   "wasPrice": 59,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/789052-Product-0-I-638640258603869328.jpg?v=1728429131",
    "inStock": true,
    "brand": "Jbl"
   },
@@ -3599,7 +3571,6 @@
    "title": "JBL Tune 720BT Wireless Over-Ear Headphones (White)",
    "url": "https://www.jbhifi.com.au/products/jbl-tune-720bt-wireless-over-ear-headphones-white",
    "price": 99,
-   "wasPrice": 129,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/659932-Product-0-I-638279268003305617.jpg?v=1692769431",
    "inStock": true,
    "brand": "Jbl"
@@ -4284,7 +4255,7 @@
    "price": 299,
    "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/660844-Product-0-I-638282700006179406.jpg?v=1790898814",
-   "inStock": false,
+   "inStock": true,
    "brand": "Logitech-G"
   },
   {
@@ -6043,7 +6014,7 @@
    "price": 349,
    "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829188-Product-0-I-638894452806255340.jpg?v=1753848549",
-   "inStock": false,
+   "inStock": true,
    "brand": "Razer"
   },
   {
@@ -6197,7 +6168,7 @@
    "price": 129,
    "wasPrice": 149,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890824-Product-0-I-639117399604916351.jpg?v=1776143226",
-   "inStock": true,
+   "inStock": false,
    "brand": "Razer"
   },
   {
@@ -6503,6 +6474,16 @@
    "price": 162,
    "wasPrice": 249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/833177-Product-0-I-638936285405035014.jpg?v=1758031806",
+   "inStock": true,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "776220",
+   "title": "Samsung Galaxy Buds3 Pro (Silver)",
+   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-buds3-pro-silver",
+   "price": 399,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/776220-Product-0-I-638561819463124022.jpg?v=1790804781",
    "inStock": true,
    "brand": "Samsung"
   },
@@ -8589,8 +8570,8 @@
    "sku": "746056",
    "title": "SteelSeries Arctis Nova 5 Wireless Gaming Headset",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-5-wireless-gaming-headset",
-   "price": 239,
-   "wasPrice": 299,
+   "price": 199,
+   "wasPrice": 239,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/746056-Product-0-I-638501197811706663.jpg?v=1714523054",
    "inStock": true,
    "brand": "Steelseries"
@@ -8600,8 +8581,8 @@
    "sku": "784118",
    "title": "SteelSeries Arctis Nova 5 Wireless Gaming Headset (White)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-5-wireless-gaming-headset-white",
-   "price": 239,
-   "wasPrice": 299,
+   "price": 199,
+   "wasPrice": 239,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784118-Product-0-I-638610119402999443_3bbe6553-4072-4ebf-97ca-9ad3e96c3ff9.jpg?v=1725415694",
    "inStock": true,
    "brand": "Steelseries"
@@ -8611,8 +8592,8 @@
    "sku": "746057",
    "title": "SteelSeries Arctis Nova 5P Wireless Gaming Headset",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-5p-wireless-gaming-headset",
-   "price": 239,
-   "wasPrice": 299,
+   "price": 199,
+   "wasPrice": 239,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/746057-Product-0-I-638501198407899035.jpg?v=1714523114",
    "inStock": true,
    "brand": "Steelseries"
@@ -8622,8 +8603,8 @@
    "sku": "784119",
    "title": "SteelSeries Arctis Nova 5P Wireless Gaming Headset (White)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-5p-wireless-gaming-headset-white",
-   "price": 239,
-   "wasPrice": 299,
+   "price": 199,
+   "wasPrice": 239,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784119-Product-0-I-638610119403355088_12557a6a-1ae4-4f36-93bc-03cf5ed83586.jpg?v=1725415753",
    "inStock": true,
    "brand": "Steelseries"
@@ -8633,8 +8614,8 @@
    "sku": "746058",
    "title": "SteelSeries Arctis Nova 5X Wireless Gaming Headset",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-5x-wireless-gaming-headset",
-   "price": 239,
-   "wasPrice": 299,
+   "price": 199,
+   "wasPrice": 239,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/746058-Product-0-I-638501199007001822.jpg?v=1714523176",
    "inStock": true,
    "brand": "Steelseries"
@@ -8644,8 +8625,8 @@
    "sku": "784120",
    "title": "SteelSeries Arctis Nova 5X Wireless Gaming Headset (White)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-5x-wireless-gaming-headset-white",
-   "price": 239,
-   "wasPrice": 299,
+   "price": 199,
+   "wasPrice": 239,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784120-Product-0-I-638610120004170805_d8c01c68-d9dd-4689-b604-c29a79f70d47.jpg?v=1725415872",
    "inStock": true,
    "brand": "Steelseries"
@@ -8655,7 +8636,8 @@
    "sku": "890849",
    "title": "SteelSeries Arctis Nova 7 Gen 2 Wireless Gaming Headset (Black)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-7-gen-2-wireless-gaming-headset-black",
-   "price": 326,
+   "price": 299,
+   "wasPrice": 326,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890849-Product-0-I-639122559005396813.jpg?v=1776659164",
    "inStock": true,
    "brand": "Steelseries"
@@ -8665,10 +8647,10 @@
    "sku": "890851",
    "title": "SteelSeries Arctis Nova 7 Gen 2 Wireless Gaming Headset (Magenta)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-7-gen-2-wireless-gaming-headset-magenta",
-   "price": 329,
-   "wasPrice": 429,
+   "price": 299,
+   "wasPrice": 329,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890851-Product-0-I-639122561405997265.jpg?v=1776659405",
-   "inStock": true,
+   "inStock": false,
    "brand": "Steelseries"
   },
   {
@@ -8676,8 +8658,8 @@
    "sku": "890850",
    "title": "SteelSeries Arctis Nova 7 Gen 2 Wireless Gaming Headset (White)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-7-gen-2-wireless-gaming-headset-white",
-   "price": 329,
-   "wasPrice": 429,
+   "price": 299,
+   "wasPrice": 329,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890850-Product-0-I-639122561406547060.jpg?v=1776659406",
    "inStock": true,
    "brand": "Steelseries"
@@ -8697,7 +8679,8 @@
    "sku": "890852",
    "title": "SteelSeries Arctis Nova 7P Gen 2 Wireless Gaming Headset (White)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-7p-gen-2-wireless-gaming-headset-white",
-   "price": 326,
+   "price": 299,
+   "wasPrice": 326,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890852-Product-0-I-639122563202718989.jpg?v=1776659585",
    "inStock": true,
    "brand": "Steelseries"
@@ -8727,8 +8710,8 @@
    "sku": "896360",
    "title": "SteelSeries Arctis Nova 7X Gen 2 Wireless Gaming Headset (Black)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-7x-gen-2-wireless-gaming-headset-black",
-   "price": 329,
-   "wasPrice": 429,
+   "price": 299,
+   "wasPrice": 329,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896360-Product-0-I-639122569204039991.jpg?v=1776660186",
    "inStock": true,
    "brand": "Steelseries"
@@ -8748,8 +8731,8 @@
    "sku": "844524",
    "title": "SteelSeries Arctis Nova Elite Wireless Gaming Headset (Obsidian)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-elite-wireless-gaming-headset-obsidian",
-   "price": 1199,
-   "wasPrice": 1349,
+   "price": 1099,
+   "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/844524-Product-0-I-638948971811997602.jpg?v=1759300445",
    "inStock": true,
    "brand": "Steelseries"
@@ -8759,8 +8742,8 @@
    "sku": "844523",
    "title": "SteelSeries Arctis Nova Elite Wireless Gaming Headset (Sage & Gold)",
    "url": "https://www.jbhifi.com.au/products/steelseries-arctis-nova-elite-wireless-gaming-headset-sage-gold",
-   "price": 1199,
-   "wasPrice": 1349,
+   "price": 1099,
+   "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/844523-Product-0-I-638948943014767178.jpg?v=1759297603",
    "inStock": true,
    "brand": "Steelseries"
@@ -9161,7 +9144,7 @@
    "url": "https://www.jbhifi.com.au/products/turtle-beach-atlas-air-wireless-gaming-headset",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/746017-Product-0-I-638750118683216510.jpg?v=1739415143",
-   "inStock": false,
+   "inStock": true,
    "brand": "Turtle Beach"
   },
   {
@@ -9406,7 +9389,7 @@
    "url": "https://www.jbhifi.com.au/products/turtle-beach-stealth-700-wireless-multiplatform-amplified-gaming-headset-for-pc-ps5-ps4-mobile",
    "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784086-Product-0-I-638599039803886345.jpg?v=1724307260",
-   "inStock": false,
+   "inStock": true,
    "brand": "Turtle Beach"
   },
   {
@@ -9566,7 +9549,6 @@
    "title": "XCD Wired USB-C Over-Ear Headphones with In-Line Mic (Black)",
    "url": "https://www.jbhifi.com.au/products/xcd-wired-usb-c-over-ear-headphones-with-in-line-mic-black",
    "price": 19,
-   "wasPrice": 24.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754717-Product-0-I-638578122005042716.jpg?v=1722215464",
    "inStock": true,
    "brand": "Xcd"
@@ -9577,7 +9559,6 @@
    "title": "XCD XCD23001 True Wireless In-Ear Headphones (Blue)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23001-true-wireless-in-ear-headphones-blue",
    "price": 18,
-   "wasPrice": 29.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656627-Product-0-I-638278478403337070.jpg?v=1692311828",
    "inStock": true,
    "brand": "Xcd"
@@ -9588,7 +9569,6 @@
    "title": "XCD XCD23001 True Wireless In-Ear Headphones (White)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23001-true-wireless-in-ear-headphones-white",
    "price": 18,
-   "wasPrice": 29.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656628-Product-0-I-638278479004287565.jpg?v=1692311230",
    "inStock": true,
    "brand": "Xcd"
@@ -9599,7 +9579,6 @@
    "title": "XCD XCD23002 True Wireless Stem In-Ear Headphones (Blue)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23002-true-wireless-stem-in-ear-headphones-blue",
    "price": 18,
-   "wasPrice": 29.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656631-Product-0-I-638278479602882878.jpg?v=1692313753",
    "inStock": true,
    "brand": "Xcd"
@@ -9610,7 +9589,6 @@
    "title": "XCD XCD23005 TWS Noise Cancelling Stem In-Ear Headphones (Black)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23005-tws-noise-cancelling-stem-in-ear-headphones-black",
    "price": 29,
-   "wasPrice": 39.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656640-Product-0-I-638294801403692583.jpg?v=1693883349",
    "inStock": true,
    "brand": "Xcd"
@@ -9621,7 +9599,6 @@
    "title": "XCD XCD23005 TWS Noise Cancelling Stem In-Ear Headphones (Blue)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23005-tws-noise-cancelling-stem-in-ear-headphones-blue",
    "price": 29,
-   "wasPrice": 39.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656641-Product-0-I-638294802009279413.jpg?v=1693883469",
    "inStock": true,
    "brand": "Xcd"
@@ -9632,7 +9609,6 @@
    "title": "XCD XCD23006 TWS Noise Cancelling In-Ear Headphones (Blue)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23006-tws-noise-cancelling-in-ear-headphones-blue",
    "price": 29,
-   "wasPrice": 39.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656645-Product-0-I-638278485003408212.jpg?v=1692314598",
    "inStock": true,
    "brand": "Xcd"
@@ -9643,7 +9619,6 @@
    "title": "XCD XCD23006 TWS Noise Cancelling In-Ear Headphones (White)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23006-tws-noise-cancelling-in-ear-headphones-white",
    "price": 29,
-   "wasPrice": 39.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656646-Product-0-I-638278485604236830.jpg?v=1692314594",
    "inStock": true,
    "brand": "Xcd"
@@ -9654,7 +9629,6 @@
    "title": "XCD XCD23007 True Wireless Sport In-Ear Headphones (White)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23007-true-wireless-sport-in-ear-headphones-white",
    "price": 20,
-   "wasPrice": 29,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656649-Product-0-I-638278488003060218.jpg?v=1692314713",
    "inStock": true,
    "brand": "Xcd"
@@ -9665,7 +9639,6 @@
    "title": "XCD XCD23009 Bluetooth Over-Ear Headphones (Blue)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23009-bluetooth-over-ear-headphones-blue",
    "price": 29,
-   "wasPrice": 34.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656655-Product-0-I-638279077806229850.jpg?v=1692315072",
    "inStock": true,
    "brand": "Xcd"
@@ -9676,7 +9649,6 @@
    "title": "XCD XCD23009 Bluetooth Over-Ear Headphones (White)",
    "url": "https://www.jbhifi.com.au/products/xcd-xcd23009-bluetooth-over-ear-headphones-white",
    "price": 29,
-   "wasPrice": 34.95,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/656657-Product-0-I-638279077806539771.jpg?v=1692315077",
    "inStock": true,
    "brand": "Xcd"

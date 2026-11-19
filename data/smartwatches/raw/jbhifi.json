@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T22:34:30.482Z",
+ "scrapedAt": "2026-11-19T22:42:53.292Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -1332,7 +1332,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-watch-ultra-4-49mm-black-titanium-case-gps-cellular-black-titanium-milanese-loop-m",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913770-Product-0-I-639246151803636643.jpg?v=1789018446",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1898,7 +1898,7 @@
    "url": "https://www.jbhifi.com.au/products/garmin-fenix-8-51mm-solar-sapphire-edition-carbon-grey-titanium-with-black-pebble-grey-band",
    "price": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/781492-Product-0-I-638596433404421241.jpg?v=1724046617",
-   "inStock": true,
+   "inStock": false,
    "brand": "Garmin"
   },
   {
@@ -2601,8 +2601,8 @@
    "sku": "907343",
    "title": "Google Pixel Watch 5 41mm (Matte Black/Obsidian Active Band 2nd Gen)",
    "url": "https://www.jbhifi.com.au/products/google-pixel-watch-5-41mm-matte-black-obsidian-active-band-2nd-gen",
-   "price": 544,
-   "wasPrice": 649,
+   "price": 498,
+   "wasPrice": 544,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907343-Product-0-I-639216535203571000.jpg?v=1786056785",
    "inStock": true,
    "brand": "Google"
@@ -2623,8 +2623,8 @@
    "sku": "907344",
    "title": "Google Pixel Watch 5 41mm (Satin Pyrite/Olive Active Band 2nd Gen)",
    "url": "https://www.jbhifi.com.au/products/google-pixel-watch-5-41mm-satin-pyrite-olive-active-band-2nd-gen",
-   "price": 544,
-   "wasPrice": 649,
+   "price": 498,
+   "wasPrice": 544,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907344-Product-0-I-639216537003459654.jpg?v=1786056966",
    "inStock": true,
    "brand": "Google"
@@ -2678,8 +2678,8 @@
    "sku": "907346",
    "title": "Google Pixel Watch 5 45mm (Matte Black/Obsidian Active Band 2nd Gen)",
    "url": "https://www.jbhifi.com.au/products/google-pixel-watch-5-45mm-matte-black-obsidian-active-band-2nd-gen",
-   "price": 599,
-   "wasPrice": 699,
+   "price": 549,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907346-Product-0-I-639216535802610795.jpg?v=1786056845",
    "inStock": true,
    "brand": "Google"
@@ -2689,8 +2689,8 @@
    "sku": "907345",
    "title": "Google Pixel Watch 5 45mm (Polished Silver/Fog Active Band 2nd Gen)",
    "url": "https://www.jbhifi.com.au/products/google-pixel-watch-5-45mm-polished-silver-fog-active-band-2nd-gen",
-   "price": 599,
-   "wasPrice": 699,
+   "price": 549,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907345-Product-0-I-639216534004603619.jpg?v=1786056664",
    "inStock": true,
    "brand": "Google"
@@ -2700,8 +2700,8 @@
    "sku": "907347",
    "title": "Google Pixel Watch 5 45mm (Satin Pyrite/Olive Active Band 2nd Gen)",
    "url": "https://www.jbhifi.com.au/products/google-pixel-watch-5-45mm-satin-pyrite-olive-active-band-2nd-gen",
-   "price": 599,
-   "wasPrice": 699,
+   "price": 549,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907347-Product-0-I-639216537603000362.jpg?v=1786057025",
    "inStock": true,
    "brand": "Google"
@@ -3478,17 +3478,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "815296",
-   "title": "Samsung Galaxy Watch8  LTE 40mm (Silver)",
-   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-lte-40mm-silver",
-   "price": 374,
-   "wasPrice": 749,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815296-Product-0-I-638874471602255498.jpg?v=1751850431",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "815299",
    "title": "Samsung Galaxy Watch8  LTE 44mm (Graphite)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-lte-44mm-graphite",
@@ -3729,7 +3718,7 @@
    "url": "https://www.jbhifi.com.au/products/withings-milanese-mesh-band-18mm-rose-gold",
    "price": 79,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/782033-Product-0-I-638587724404433254.jpg?v=1723175704",
-   "inStock": true,
+   "inStock": false,
    "brand": "Withings"
   },
   {

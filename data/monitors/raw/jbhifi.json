@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T22:40:23.534Z",
+ "scrapedAt": "2026-11-19T22:55:28.490Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -262,7 +262,7 @@
    "price": 349,
    "wasPrice": 439,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/900338-Product-0-I-639209803204782332.jpg?v=1785383586",
-   "inStock": true,
+   "inStock": false,
    "mpn": "CU34G4H",
    "brand": "Aoc"
   },
@@ -320,7 +320,7 @@
    "price": 399,
    "wasPrice": 489,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/900339-Product-0-I-639209806802662657.jpg?v=1785383945",
-   "inStock": true,
+   "inStock": false,
    "brand": "Aoc"
   },
   {
@@ -555,18 +555,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807594-Product-0-I-638960071265121964.jpg?v=1760410385",
    "inStock": true,
    "mpn": "MB169CK",
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "431874",
-   "title": "Asus ZenScreen MB16ACE 15.6\" Full HD Portable Monitor",
-   "url": "https://www.jbhifi.com.au/products/asus-zenscreen-mb16ace-15-6-full-hd-portable-monitor",
-   "price": 198,
-   "wasPrice": 349,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/431874-Product-0-I-638047870040679360.jpg?v=1669150685",
-   "inStock": true,
-   "mpn": "MB16ACE",
    "brand": "Asus"
   },
   {
@@ -848,7 +836,7 @@
    "url": "https://www.jbhifi.com.au/products/hyperx-omen-27-g3-27-fhd-240hz-gaming-monitor",
    "price": 329,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/919511-Product-0-I-639301336804314990.jpg?v=1794536948",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hyper X Omen"
   },
   {
@@ -858,7 +846,7 @@
    "url": "https://www.jbhifi.com.au/products/hyperx-omen-27q-g3-27-qhd-240hz-gaming-monitor",
    "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/919512-Product-0-I-639301345205868749.jpg?v=1794537784",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hyper X Omen"
   },
   {
@@ -1014,6 +1002,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "817777",
+   "title": "Lenovo Legion R27s 27\" FHD 144Hz Gaming Monitor",
+   "url": "https://www.jbhifi.com.au/products/lenovo-legion-r27s-27-fhd-144hz-gaming-monitor",
+   "price": 199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817777-Product-0-I-638924968807046647.jpg?v=1756900146",
+   "inStock": true,
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "788740",
    "title": "Lenovo Legion R32qc 31.5\" QHD 180Hz VA Curved Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-r32qc-31-5-qhd-180hz-va-curved-gaming-monitor",
@@ -1040,7 +1038,7 @@
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-r45w-30-44-5-dual-qhd-170hz-gaming-monitor",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660803-Product-0-I-638320638037538774.jpg?v=1696467073",
-   "inStock": true,
+   "inStock": false,
    "mpn": "R45W-30",
    "brand": "Lenovo"
   },
@@ -1628,7 +1626,7 @@
    "url": "https://www.jbhifi.com.au/products/philips-evnia-24m2n2100nf-24-fhd-144hz-gaming-monitor",
    "price": 139,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807762-Product-0-I-639106083603614388.jpg?v=1775015755",
-   "inStock": false,
+   "inStock": true,
    "mpn": "24M2N2100NF",
    "brand": "Philips"
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T22:50:20.138Z",
+ "scrapedAt": "2026-11-19T22:39:05.808Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -355,7 +355,7 @@
    "price": 2049,
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807690-Product-0-I-639080821679969803.jpg?v=1772485447",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -377,7 +377,7 @@
    "price": 2049,
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807689-Product-0-I-639080821728788046.jpg?v=1772485445",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -432,7 +432,7 @@
    "price": 2299,
    "wasPrice": 2549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807725-Product-0-I-639080821869485799.jpg?v=1772485446",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -509,7 +509,7 @@
    "price": 1449,
    "wasPrice": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807713-Product-0-I-639080822052818087.jpg?v=1772485446",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -520,7 +520,7 @@
    "price": 1449,
    "wasPrice": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807716-Product-0-I-639080822055482293.jpg?v=1772485447",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -795,7 +795,7 @@
    "price": 1499,
    "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807698-Product-0-I-639080820606045423.jpg?v=1772485326",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -806,7 +806,7 @@
    "price": 1499,
    "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807700-Product-0-I-639080827805404646.jpg?v=1772486045",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1110,7 +1110,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-mini-8-5-inch-wi-fi-cellular-128gb-midnight-a20-pro",
    "price": 1349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/448182-Product-0-I-639286414206795366.jpg?v=1793044686",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1280,7 +1280,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-pro-11-inch-1tb-wi-fi-cellular-with-nano-texture-glass-space-blackm5",
    "price": 3599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748007-Product-0-I-638961723007120309.jpg?v=1760575565",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1705,6 +1705,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "10105221",
+   "title": "Laser 10.1 Inch Android 15 Tablet 64GB Wi-Fi 6 (Blue)",
+   "url": "https://www.jbhifi.com.au/products/laser-10-1-inch-android-15-tablet-64gb-wi-fi-6-blue",
+   "price": 149,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/9fc2f20b4b564179aa7a629b014dc7d3.jpg?v=1795049412",
+   "inStock": true,
+   "brand": "Laser"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "910960",
    "title": "Lenovo Idea Tab 11\" 2.5K 128GB Paper-Like Tablet",
    "url": "https://www.jbhifi.com.au/products/lenovo-idea-tab-11-2-5k-128gb-paper-like-tablet-1",
@@ -1804,7 +1814,7 @@
    "sku": "914058",
    "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 256GB/16GB Black (2nd Edition)",
    "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-256gb-16gb-black-2nd-edition",
-   "price": 1699,
+   "price": 1647,
    "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914058-Product-0-I-639258001807089464.jpg?v=1790203447",
    "inStock": true,
@@ -1815,7 +1825,7 @@
    "sku": "914059",
    "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 256GB/16GB Platinum (2nd Edition)",
    "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-256gb-16gb-platinum-2nd-edition",
-   "price": 1699,
+   "price": 1647,
    "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914059-Product-0-I-639258007804533745.jpg?v=1790204048",
    "inStock": true,
@@ -1826,7 +1836,7 @@
    "sku": "914060",
    "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 256GB/16GB Violet (2nd Edition)",
    "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-256gb-16gb-violet-2nd-edition",
-   "price": 1699,
+   "price": 1647,
    "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914060-Product-0-I-639258012008262424.jpg?v=1790204510",
    "inStock": true,
@@ -1837,7 +1847,7 @@
    "sku": "914061",
    "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 512GB/16GB Black (2nd Edition)",
    "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-512gb-16gb-black-2nd-edition",
-   "price": 1899,
+   "price": 1797,
    "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914061-Product-0-I-639258015008410788.jpg?v=1790204767",
    "inStock": true,
@@ -1936,7 +1946,7 @@
    "sku": "841093",
    "title": "Microsoft Surface Pro OLED 13-inch Snapdragon X2 Elite 512GB/16GB Black (12th Edition)",
    "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-oled-13-inch-snapdragon-x2-elite-512gb-16gb-black-12th-edition",
-   "price": 2399,
+   "price": 2347,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/841093-Product-0-I-639172584602978113.jpg?v=1781661726",
    "inStock": true,
@@ -2410,16 +2420,6 @@
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s9-11-5g-128gb-beige",
    "price": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/655508-Product-0-I-638523864007589152.jpg?v=1791174781",
-   "inStock": true,
-   "brand": "Samsung S9"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "655503",
-   "title": "Samsung Galaxy Tab S9 11\" Wi-Fi 128GB (Graphite)",
-   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s9-11-wi-fi-128gb-graphite",
-   "price": 488,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/655503-Product-0-I-638524496405880100.jpg?v=1791174754",
    "inStock": true,
    "brand": "Samsung S9"
   },
