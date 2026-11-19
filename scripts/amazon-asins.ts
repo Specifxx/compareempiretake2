@@ -5,7 +5,7 @@
  * ASIN. Found ASINs and misses go in data/amazon/asins-<region>.json (ASINs may be stored; prices never are).
  * A miss is retried after 30 days. Without credentials it does nothing; a refusal (that store's account has
  * no API access yet) ends that region quietly and the next region still runs.
- *   npx tsx scripts/amazon-asins.ts            AMAZON_SEARCH_BUDGET=400 a region by default
+ *   npx tsx scripts/amazon-asins.ts            AMAZON_SEARCH_BUDGET=100 (owner, 2026-11-19: the network's Amazon API allowance is shared, mostly ScentCompare's) a region by default
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -38,7 +38,7 @@ async function region(r: AmazonMarket) {
     status({ state: "off" });
     return console.log(`Amazon ASINs ${r}: no AMAZON_CREATORS_* credentials yet, skipped.`);
   }
-  const budget = Number(process.env.AMAZON_SEARCH_BUDGET || 400);
+  const budget = Math.min(100, Number(process.env.AMAZON_SEARCH_BUDGET || 100));
   const today = new Date().toISOString().slice(0, 10);
   const known: Record<string, Entry> = existsSync(FILE) ? JSON.parse(readFileSync(FILE, "utf8")) : {};
   const products = productsFor(r);
