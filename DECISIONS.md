@@ -2428,3 +2428,17 @@ sitting on top of it.
   `var(--bn-space)` + a small gap up, and the body's bottom padding follows it. Hidden, it slides fully off-screen (transform only, CLS 0).
 - **Measured** (local build, dock stacked): Pixel 7 412×915 nav + dock take 129px (14.1%); iPhone 15 393×852 with a 34px safe area
   143px (16.8%); iPhone SE 375×667 129px (19.3%); the old flush bar took about the same plus the full safe area.
+
+## 2026-11-19: Search-engine-first audit after the November 2026 core update
+
+Google's core-update guidance asks whether a page exists mainly to help people or mainly to catch a search, and names
+content "spread across a large network of sites" and re-dating pages to look fresh as warning signs. What changed here:
+
+- **Seasonal sale pages.** The same template put Boxing Day, January sales and Lunar New Year (and Valentine's Day where
+  a site has it) pages on every Compare site, indexed all year, each listing the same deals as the Black Friday page.
+  `saleIndexable` in `lib/sale-seasons.ts`: Lunar New Year and Valentine's Day pages are never indexed, Boxing Day and
+  January sales only from three weeks before the homepage links them until a week after they end; out of season they are
+  noindex, follow and out of the sitemap (`withoutOffSeasonSales`). The URLs stay live all year (URL freeze).
+- The footer no longer links the Lunar New Year page.
+
+Black Friday and Cyber Monday pages are unchanged (in season). Judge the effect on 1 to 8 Dec against 3 to 9 Nov.
