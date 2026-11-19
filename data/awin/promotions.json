@@ -1,6 +1,6 @@
 {
   "publisherId": 3144410,
-  "checkedAt": "2026-11-18T23:36:29.051Z",
+  "checkedAt": "2026-11-19T23:48:38.293Z",
   "promotions": [
     {
       "id": 4169199,
@@ -34,18 +34,6 @@
       "description": "SAVE 20% ON SELECTED SYLVANIAN FAMILES",
       "start": "2026-11-10T17:09:00.000Z",
       "end": "2026-11-26T17:09:00.000Z",
-      "regions": [
-        "GB"
-      ]
-    },
-    {
-      "id": 4169206,
-      "advertiserId": 1205,
-      "type": "promotion",
-      "title": "SAVE 20% ON SELECTED LEGO",
-      "description": "SAVE 20% ON SELECTED LEGO",
-      "start": "2026-11-10T17:11:00.000Z",
-      "end": "2026-11-26T17:10:00.000Z",
       "regions": [
         "GB"
       ]
@@ -111,18 +99,6 @@
       ]
     },
     {
-      "id": 4169207,
-      "advertiserId": 1205,
-      "type": "promotion",
-      "title": "SAVE 20% ON SELECTED LEGO STAR WARS",
-      "description": "SAVE 20% ON SELECTED LEGO STAR WARS",
-      "start": "2026-11-10T17:11:00.000Z",
-      "end": "2026-11-26T17:11:00.000Z",
-      "regions": [
-        "GB"
-      ]
-    },
-    {
       "id": 4169213,
       "advertiserId": 1205,
       "type": "promotion",
@@ -154,6 +130,186 @@
       "description": "SAVE 20% ON SELECTED PAW PATROL LINES",
       "start": "2026-11-10T17:07:00.000Z",
       "end": "2026-11-26T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181232,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 50% ON SELECTED MATTEL DOLLS",
+      "description": "SAVE 50% ON SELECTED MATTEL DOLLS",
+      "start": "2026-11-19T10:25:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181231,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 50% ON SCHLEICH BATTLE CAVES",
+      "description": "SAVE 50% ON SCHLEICH BATTLE CAVES",
+      "start": "2026-11-19T10:25:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181229,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 33% ON SELECTED SCHLEICH PLAYSETS",
+      "description": "SAVE 33% ON SELECTED SCHLEICH PLAYSETS",
+      "start": "2026-11-19T10:24:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181228,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED VTECH LINES",
+      "description": "SAVE 20% ON SELECTED VTECH LINES",
+      "start": "2026-11-19T10:24:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181224,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED NUMBERBLOCKS LINES",
+      "description": "SAVE 20% ON SELECTED NUMBERBLOCKS LINES",
+      "start": "2026-11-19T10:24:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181223,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED LINES OF BRIGHT STARS LINES",
+      "description": "SAVE 20% ON SELECTED LINES OF BRIGHT STARS LINES",
+      "start": "2026-11-19T10:23:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181221,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED LINES OF BABY EINSTEIN LINES",
+      "description": "SAVE 20% ON SELECTED LINES OF BABY EINSTEIN LINES",
+      "start": "2026-11-19T10:23:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181218,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 15% ON SELECTED TONIES LINES",
+      "description": "SAVE 15% ON SELECTED TONIES LINES",
+      "start": "2026-11-19T10:23:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181217,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 15% ON SELECTED NAT GEO LINES",
+      "description": "SAVE 15% ON SELECTED NAT GEO LINES",
+      "start": "2026-11-19T10:23:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181212,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 10% ON SELECTED SCIENCE PRODUCTS",
+      "description": "SAVE 10% ON SELECTED SCIENCE PRODUCTS",
+      "start": "2026-11-19T10:22:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181204,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 10% ON SELECTED MICRO SCOOTER PRODUCTS",
+      "description": "SAVE 10% ON SELECTED MICRO SCOOTER PRODUCTS",
+      "start": "2026-11-19T10:21:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181197,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "Hamleys Brand Toys",
+      "description": "Hamleys Brand Toys",
+      "start": "2026-11-19T10:17:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4181193,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "BUY 1 FOR £9.99 ON DITTY BIRD BOOKS",
+      "description": "BUY 1 FOR £9.99 ON DITTY BIRD BOOKS",
+      "start": "2026-11-19T10:17:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169207,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED STAR WARS LEGO SETS",
+      "description": "SAVE 20% ON SELECTED LEGO STAR WARS",
+      "start": "2026-11-10T17:11:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
+    },
+    {
+      "id": 4169206,
+      "advertiserId": 1205,
+      "type": "promotion",
+      "title": "SAVE 20% ON SELECTED LEGO SETS",
+      "description": "SAVE 20% ON SELECTED LEGO",
+      "start": "2026-11-10T17:11:00.000Z",
+      "end": "2026-12-09T23:59:00.000Z",
       "regions": [
         "GB"
       ]
@@ -304,6 +460,56 @@
       "description": "Was £544.99 Now £399.99 Save £145",
       "start": "2026-11-11T14:17:00.000Z",
       "end": "2026-11-30T14:16:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4180909,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deal - Canyon Cometstrike GK-55 Keyboard Wired US Black",
+      "description": "Was £29.99 Now £19.99 Save £10",
+      "start": "2026-11-19T08:31:00.000Z",
+      "end": "2026-12-04T08:29:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4180917,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deal - Royal and Langnickel Sketching Travel Easel Set",
+      "description": "Was £69.99 Now £35 Save £34.99",
+      "start": "2026-11-19T08:33:00.000Z",
+      "end": "2026-12-04T08:32:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4180923,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deal - Royal and Langnickel Deluxe Art Set - Mixed Media",
+      "description": "Was £159.99 Now £80 Save £79.99",
+      "start": "2026-11-19T08:35:00.000Z",
+      "end": "2026-12-04T08:34:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4180929,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deal - HP v150w USB 2.0 Flash Drive 64GB",
+      "description": "Was £24.99 Now £11.99 Save £13",
+      "start": "2026-11-19T08:37:00.000Z",
+      "end": "2026-12-04T08:36:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4180939,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deal - Roka Bantry B Recycled Nylon Backpack Small - Corn",
+      "description": "Was £59.95 Now £39.99 Save £19.96",
+      "start": "2026-11-19T08:40:00.000Z",
+      "end": "2026-12-04T08:38:00.000Z",
       "regions": "all"
     },
     {
@@ -488,6 +694,16 @@
       "code": "FASTCHAIR"
     },
     {
+      "id": 4180899,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deal - Canon SELPHY CP1500 Colour Portable Photo Printer Black",
+      "description": "Was £134.99 Now £99.99 Save £35",
+      "start": "2026-11-19T08:28:00.000Z",
+      "end": "2027-01-26T08:27:00.000Z",
+      "regions": "all"
+    },
+    {
       "id": 2998744,
       "advertiserId": 3326,
       "type": "voucher",
@@ -548,36 +764,6 @@
       "description": "New Arrivals at Paco Perfumerias",
       "start": "2026-09-22T14:42:00.000Z",
       "end": "2027-04-30T20:59:00.000Z",
-      "regions": "all"
-    },
-    {
-      "id": 4129676,
-      "advertiserId": 25687,
-      "type": "promotion",
-      "title": "Save £300 on the a7 iii",
-      "description": "Save £300 on the a7 iii",
-      "start": "2026-10-01T08:38:00.000Z",
-      "end": "2026-11-18T23:59:00.000Z",
-      "regions": "all"
-    },
-    {
-      "id": 4129196,
-      "advertiserId": 25687,
-      "type": "promotion",
-      "title": "Save up to £200 on Select Sony Cameras",
-      "description": "Save up to £200 on Select Sony Cameras",
-      "start": "2026-09-30T23:00:00.000Z",
-      "end": "2026-11-18T23:59:00.000Z",
-      "regions": "all"
-    },
-    {
-      "id": 4117545,
-      "advertiserId": 25687,
-      "type": "promotion",
-      "title": "Save £300 on the Sony a7 iv",
-      "description": "Save £300 on the Sony a7 iv",
-      "start": "2026-09-17T23:00:00.000Z",
-      "end": "2026-11-18T23:59:00.000Z",
       "regions": "all"
     },
     {
@@ -779,6 +965,18 @@
         "GB"
       ],
       "code": "PENTAX2020270110"
+    },
+    {
+      "id": 4170454,
+      "advertiserId": 25687,
+      "type": "promotion",
+      "title": "Save £200 on Fujifilm X-H2S Body Only",
+      "description": "Save £200 on Fujifilm X-H2S Body Only: £2,099, reduced from £2,299. No code required.",
+      "start": "2026-11-19T00:00:00.000Z",
+      "end": "2027-01-20T23:59:59.000Z",
+      "regions": [
+        "GB"
+      ]
     },
     {
       "id": 4144937,
