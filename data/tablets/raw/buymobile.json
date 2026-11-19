@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T01:42:11.234Z",
+ "scrapedAt": "2026-11-19T01:13:02.068Z",
  "offers": [
   {
    "retailer": "buymobile",
@@ -234,17 +234,6 @@
   },
   {
    "retailer": "buymobile",
-   "sku": "APL-IPAD-AIR13-2026-M4-256GB-WIFI-GRY",
-   "title": "Apple iPad Air 13-inch (2026 M4 256GB WiFi) Grey",
-   "url": "https://www.buymobile.com.au/products/apple-ipad-air-13-inch-2026-m4-256gb-wifi?variant=45264383705203",
-   "price": 1649.95,
-   "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleiPadAir13-inch_2026M4Grey_627099cd-51ac-4413-a1f3-844888fc48b9.jpg?v=1784487126",
-   "inStock": false,
-   "brand": "Apple",
-   "mpn": "APL-IPAD-AIR13-2026-M4-256GB-WIFI-GRY"
-  },
-  {
-   "retailer": "buymobile",
    "sku": "APL-IPAD-AIR13-2026-M4-256GB-WIFI-PUR",
    "title": "Apple iPad Air 13-inch (2026 M4 256GB WiFi) Purple",
    "url": "https://www.buymobile.com.au/products/apple-ipad-air-13-inch-2026-m4-256gb-wifi?variant=45264383672435",
@@ -253,6 +242,17 @@
    "inStock": false,
    "brand": "Apple",
    "mpn": "APL-IPAD-AIR13-2026-M4-256GB-WIFI-PUR"
+  },
+  {
+   "retailer": "buymobile",
+   "sku": "APL-IPAD-AIR13-2026-M4-256GB-WIFI-GRY",
+   "title": "Apple iPad Air 13-inch (2026 M4 256GB WiFi) Space Grey",
+   "url": "https://www.buymobile.com.au/products/apple-ipad-air-13-inch-2026-m4-256gb-wifi?variant=45264383705203",
+   "price": 1649.95,
+   "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleiPadAir13-inch_2026M4Grey_627099cd-51ac-4413-a1f3-844888fc48b9.jpg?v=1784487126",
+   "inStock": false,
+   "brand": "Apple",
+   "mpn": "APL-IPAD-AIR13-2026-M4-256GB-WIFI-GRY"
   },
   {
    "retailer": "buymobile",
@@ -1075,7 +1075,7 @@
    "url": "https://www.buymobile.com.au/products/samsung-galaxy-tab-s11-x730-12gb-ram-256gb-wifi?variant=43784470593651",
    "price": 1500.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/SamsungGalaxyTabS11_X73012GBRAM256GBWiFi_GreyFrontBack.jpg?v=1757711454",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung",
    "mpn": "SMG-X730-12-256GB-WIFI-GRY"
   },
@@ -1119,7 +1119,7 @@
    "url": "https://www.buymobile.com.au/products/samsung-galaxy-tab-s11-x736-12gb-ram-256gb-5g?variant=43957813805171",
    "price": 1702.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/Samsung_Galaxy_Tab_S11_X736_12GB_RAM_256GB_5G.jpg?v=1759792698",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung",
    "mpn": "SMG-X736-12-256GB-5G-GRY"
   },

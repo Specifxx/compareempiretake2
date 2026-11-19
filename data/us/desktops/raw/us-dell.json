@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:43:14.757Z",
+ "scrapedAt": "2026-11-19T01:33:07.552Z",
  "offers": [
   {
    "retailer": "us-dell",
@@ -90,6 +90,17 @@
   },
   {
    "retailer": "us-dell",
+   "sku": "dellcreatoreditiondesktopdm1273",
+   "brand": "Dell",
+   "title": "Dell New Dell Creator Edition Desktop",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellcreatoreditiondesktopdm1273",
+   "price": 7464,
+   "image": "https://i.dell.com/assetlink/img/global/micro-desktop-dm1273-black-gallery-1-dl12wbaz-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1587&qlt=100,0&resMode=sharp2&size=1587,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
    "sku": "precision5860tower",
    "brand": "Dell",
    "title": "Dell Precision 5860 Tower",
@@ -138,8 +149,19 @@
    "brand": "Dell",
    "title": "Dell Pro 24 All-in-One 65W Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellpro24allinone65wqc24250",
-   "price": 1902,
+   "price": 1858,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qc24250/media-gallery/desktop-aio-dell-pro-qc24250-fixst-cam-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=961&qlt=100,0&resMode=sharp2&size=961,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "dellpro24allinoneplusqb24250",
+   "brand": "Dell",
+   "title": "Dell Pro 24 All-in-One Plus Desktop",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellpro24allinoneplusqb24250",
+   "price": 2257,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qb24250/media-gallery/desktop-aio-dell-pro-qb24250-gy-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=945&qlt=100,0&resMode=sharp2&size=945,804",
    "inStock": true,
    "fromPrice": true
   },

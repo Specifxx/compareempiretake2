@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:59:48.405Z",
+ "scrapedAt": "2026-11-19T01:49:47.919Z",
  "offers": [
   {
    "retailer": "uk-geraldgiles",
@@ -120,7 +120,8 @@
    "sku": "PENCILVAC",
    "title": "Dyson PencilVac Fluffycones – Cordless Vacuum Cleaner",
    "url": "https://www.geraldgiles.co.uk/store/dyson/euronics/dyson/dyson-upright-vacuum-cleaners/dyson-pencilvac-fluffycones-cordless-vacuum-cleaner/",
-   "price": 429.99,
+   "price": 299.99,
+   "wasPrice": 429,
    "image": "https://www.geraldgiles.co.uk/app/uploads/2026/02/pencil.jpg",
    "inStock": true,
    "brand": "Dyson"
@@ -616,18 +617,6 @@
   },
   {
    "retailer": "uk-geraldgiles",
-   "sku": "SV2000UK",
-   "title": "Shark Freestyle Pro Cordless Upright Vacuum – SV2000UK",
-   "url": "https://www.geraldgiles.co.uk/store/shark/euronics/sale/small-appliances-sale/vacuum-cleaners-sale/shark-freestyle-pro-cordless-upright-vacuum-sv2000uk/",
-   "price": 99.99,
-   "wasPrice": 149.99,
-   "image": "https://www.geraldgiles.co.uk/app/uploads/2025/10/iz200.jpg",
-   "inStock": false,
-   "brand": "Shark",
-   "mpn": "SV2000UK"
-  },
-  {
-   "retailer": "uk-geraldgiles",
    "sku": "HZ500UK",
    "title": "Shark HZ500UK Anti Hair Wrap Corded Stick Vacuum Cleaner with Flexology – Purple",
    "url": "https://www.geraldgiles.co.uk/store/shark/euronics/small-appliances/vacuum-cleaners/upright-vacuum-cleaners/shark-hz500uk-anti-hair-wrap-corded-stick-vacuum-cleaner-with-flexology-purple/",
@@ -644,7 +633,7 @@
    "url": "https://www.geraldgiles.co.uk/store/shark/euronics/small-appliances/vacuum-cleaners/cordless-vacuum-cleaners/shark-ia3241ukt-phoenix-aed-cordless-vacuum-cleaner-ultramarine/",
    "price": 519.99,
    "image": "https://www.geraldgiles.co.uk/app/uploads/2026/08/61vpah8I2L.jpg",
-   "inStock": true,
+   "inStock": false,
    "brand": "Shark",
    "mpn": "IA3241UKT"
   },
@@ -749,21 +738,9 @@
    "url": "https://www.geraldgiles.co.uk/store/shark/euronics/small-appliances/vacuum-cleaners/cordless-vacuum-cleaners/shark-powerpro-pet-cordless-stick-vacuum-with-anti-hair-wrap-floor-detect-iz380ukt/",
    "price": 299.99,
    "image": "https://www.geraldgiles.co.uk/app/uploads/2025/04/IZ380UKT-1.jpg",
-   "inStock": true,
-   "brand": "Shark",
-   "mpn": "IZ380UKT"
-  },
-  {
-   "retailer": "uk-geraldgiles",
-   "sku": "LU250UKT",
-   "title": "Shark Rotator Corded Pet Upright Vacuum Cleaner LU250UKT",
-   "url": "https://www.geraldgiles.co.uk/store/shark/euronics/sale/small-appliances-sale/vacuum-cleaners-sale/shark-rotator-corded-pet-upright-vacuum-cleaner-lu250ukt/",
-   "price": 179.99,
-   "wasPrice": 279.99,
-   "image": "https://www.geraldgiles.co.uk/app/uploads/2026/08/lu250.jpg",
    "inStock": false,
    "brand": "Shark",
-   "mpn": "LU250UKT"
+   "mpn": "IZ380UKT"
   },
   {
    "retailer": "uk-geraldgiles",
@@ -782,7 +759,7 @@
    "sku": "UCUESHV1",
    "title": "Vax Air Lift Steerable Pet Pro Upright Vacuum Cleaner – Grey & Purple",
    "url": "https://www.geraldgiles.co.uk/store/vax/euronics/sale/small-appliances-sale/vacuum-cleaners-sale/vax-air-lift-steerable-pet-pro-upright-vacuum-cleaner-grey-purple/",
-   "price": 108.99,
+   "price": 99.99,
    "wasPrice": 129.99,
    "image": "https://www.geraldgiles.co.uk/app/uploads/2023/02/Airliftpetpro-2.jpg",
    "inStock": true,
@@ -846,7 +823,7 @@
    "url": "https://www.geraldgiles.co.uk/store/vax/euronics/small-appliances/vacuum-cleaners/upright-vacuum-cleaners/vax-upright-corded-bagless-vacuum-u85asbe-orange-grey/",
    "price": 99.99,
    "image": "https://www.geraldgiles.co.uk/app/uploads/2023/10/U85ASBE-1.jpg",
-   "inStock": false,
+   "inStock": true,
    "mpn": "U85-AS-BE"
   }
  ]

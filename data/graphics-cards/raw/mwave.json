@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T01:49:02.391Z",
+ "scrapedAt": "2026-11-19T01:18:48.372Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -148,7 +148,7 @@
    "url": "https://www.mwave.com.au/products/asus-geforce-rtx-5060-ti-prime-16gb-gddr7-video-card-ac83891",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_geforce_rtx_5060_ti_prime_16gb_video_card_ac83891_73903.jpg?v=1787784016",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -1367,7 +1367,7 @@
    "url": "https://www.mwave.com.au/products/inno3d-geforce-rtx-5080-x3-oc-16gb-video-card-ac82069",
    "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5080_x3_oc_16gb_video_card_ac82069_75886.jpg?v=1787785845",
-   "inStock": false,
+   "inStock": true,
    "brand": "Inno3D"
   },
   {
@@ -1379,16 +1379,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/inno3d_geforce_rtx_5090_x3_oc_32gb_gddr7_video_card_ac83010_42691.jpg?v=1787797064",
    "inStock": true,
    "brand": "Inno3D"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC93420",
-   "title": "Intel Arc B580 Battlemage 12GB Video Card",
-   "url": "https://www.mwave.com.au/products/intel-arc-b580-battlemage-12gb-video-card-ac93420",
-   "price": 499,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/intel_arc_b580_battlemage_12gb_video_card_ac93420_11250.jpg?v=1787797076",
-   "inStock": false,
-   "brand": "Intel"
   },
   {
    "retailer": "mwave",
@@ -1847,7 +1837,7 @@
    "url": "https://www.mwave.com.au/products/msi-geforce-rtx-5080-ventus-3x-oc-16gb-video-card-ac81865",
    "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_geforce_rtx_5080_ventus_3x_oc_16gb_video_card_ac81865_79886.jpg?v=1787797754",
-   "inStock": true,
+   "inStock": false,
    "brand": "MSI"
   },
   {
@@ -1937,7 +1927,7 @@
    "url": "https://www.mwave.com.au/products/nvidia-rtx-pro-5000-blackwell-48gb-professional-video-card-ac86470",
    "price": 12999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/nvidia_rtx_pro_5000_blackwell_48gb_professional_video_card_ac86470_87795.jpg?v=1787746934",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nvidia"
   },
   {
@@ -2057,7 +2047,7 @@
    "url": "https://www.mwave.com.au/products/palit-geforce-rtx-5080-gamingpro-oc-16gb-gddr7-video-card",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/182284_9.png?v=1792033388",
-   "inStock": true,
+   "inStock": false,
    "brand": "Palit"
   },
   {

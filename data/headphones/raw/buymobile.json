@@ -1,21 +1,10 @@
 {
- "scrapedAt": "2026-11-18T01:42:11.233Z",
+ "scrapedAt": "2026-11-19T01:13:02.067Z",
  "offers": [
   {
    "retailer": "buymobile",
-   "sku": "APL-AIRPODS-4-MXP63-WHT",
-   "title": "Apple AirPods 4 MXP63 White",
-   "url": "https://www.buymobile.com.au/products/apple-airpods-4-mxp63",
-   "price": 174.95,
-   "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleAirPods_4thGenMXP63withTypeCchargingcase_White.jpg?v=1775057498",
-   "inStock": true,
-   "brand": "Apple",
-   "mpn": "APL-AIRPODS-4-MXP63-WHT"
-  },
-  {
-   "retailer": "buymobile",
    "sku": "APL-AIRPODS-4-MXP93-WHT",
-   "title": "Apple AirPods 4 MXP93 (With Active Noise Cancelling) White",
+   "title": "Apple AirPods 4 with Active Noise Cancellation (MXP93) White",
    "url": "https://www.buymobile.com.au/products/apple-airpods-4-mxp93-with-active-noise-cancelling",
    "price": 213.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleAirPods4_MXP93WithActiveNoiseCancelling_White.jpg?v=1775047180",
@@ -26,7 +15,7 @@
   {
    "retailer": "buymobile",
    "sku": "APL-AIRPODS-5-MKFW4-WHT",
-   "title": "Apple AirPods 5 White",
+   "title": "Apple AirPods 5 with Active Noise Cancellation White",
    "url": "https://www.buymobile.com.au/products/apple-airpods-5",
    "price": 217.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleAirPods5White.jpg?v=1791626632",
@@ -36,30 +25,8 @@
   },
   {
    "retailer": "buymobile",
-   "sku": "APL-AIRPODS-MAX-MWW43-BLK",
-   "title": "Apple Airpods Max (MWW43) Over-Ear Headphones with Active Noise Cancelling - Midnight",
-   "url": "https://www.buymobile.com.au/products/apple-mww43-airpods-max-over-ear-headphones-with-active-noise-cancelling-midnight",
-   "price": 626.95,
-   "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/Apple_MWW43AirpodsMax_Over-EarHeadphoneswithActiveNoiseCancellingMidnight.jpg?v=1757111062",
-   "inStock": false,
-   "brand": "Apple",
-   "mpn": "APL-AIRPODS-MAX-MWW43-BLK"
-  },
-  {
-   "retailer": "buymobile",
-   "sku": "APL-AIRPODS-MAX-MWW53-GLD",
-   "title": "Apple Airpods Max (MWW53) Over-Ear Headphones with Active Noise Cancelling - Starlight",
-   "url": "https://www.buymobile.com.au/products/apple-mww53-airpods-max-over-ear-headphones-with-active-noise-cancelling-starlight",
-   "price": 680.95,
-   "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/Apple_MWW43AirpodsMax_Over-EarHeadphoneswithActiveNoiseCancellingStralight.jpg?v=1757111085",
-   "inStock": false,
-   "brand": "Apple",
-   "mpn": "APL-AIRPODS-MAX-MWW53-GLD"
-  },
-  {
-   "retailer": "buymobile",
    "sku": "APL-AIRPODS-MAX-MWW63-BLU",
-   "title": "Apple Airpods Max (MWW63) Over-Ear Headphones with Active Noise Cancelling - Blue",
+   "title": "Apple AirPods Max (USB-C) Over-Ear Noise Cancelling Headphones – Blue (MWW63)",
    "url": "https://www.buymobile.com.au/products/apple-mww63-airpods-max-over-ear-headphones-with-active-noise-cancelling-blue",
    "price": 680.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/Apple_MWW43AirpodsMax_Over-EarHeadphoneswithActiveNoiseCancellingBlue.jpg?v=1757111086",
@@ -69,8 +36,19 @@
   },
   {
    "retailer": "buymobile",
+   "sku": "APL-AIRPODS-MAX-MWW43-BLK",
+   "title": "Apple AirPods Max (USB-C) Over-Ear Noise Cancelling Headphones – Midnight (MWW43)",
+   "url": "https://www.buymobile.com.au/products/apple-mww43-airpods-max-over-ear-headphones-with-active-noise-cancelling-midnight",
+   "price": 626.95,
+   "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/Apple_MWW43AirpodsMax_Over-EarHeadphoneswithActiveNoiseCancellingMidnight.jpg?v=1757111062",
+   "inStock": false,
+   "brand": "Apple",
+   "mpn": "APL-AIRPODS-MAX-MWW43-BLK"
+  },
+  {
+   "retailer": "buymobile",
    "sku": "APL-AIRPODS-MAX-MWW83-PUR",
-   "title": "Apple Airpods Max (MWW83) Over-Ear Headphones with Active Noise Cancelling - Purple",
+   "title": "Apple AirPods Max (USB-C) Over-Ear Noise Cancelling Headphones – Purple (MWW83)",
    "url": "https://www.buymobile.com.au/products/apple-mww83-airpods-max-over-ear-headphones-with-active-noise-cancelling-purple",
    "price": 647.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/Apple_MWW83AirpodsMax_Over-EarHeadphoneswithActiveNoiseCancellingPurple.jpg?v=1757111070",
@@ -80,8 +58,19 @@
   },
   {
    "retailer": "buymobile",
+   "sku": "APL-AIRPODS-MAX-MWW53-GLD",
+   "title": "Apple AirPods Max (USB-C) Over-Ear Noise Cancelling Headphones – Starlight (MWW53)",
+   "url": "https://www.buymobile.com.au/products/apple-mww53-airpods-max-over-ear-headphones-with-active-noise-cancelling-starlight",
+   "price": 680.95,
+   "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/Apple_MWW43AirpodsMax_Over-EarHeadphoneswithActiveNoiseCancellingStralight.jpg?v=1757111085",
+   "inStock": false,
+   "brand": "Apple",
+   "mpn": "APL-AIRPODS-MAX-MWW53-GLD"
+  },
+  {
+   "retailer": "buymobile",
    "sku": "APL-AIRPODS-MAX2-MHWM4-BLU",
-   "title": "Apple Airpods Max 2 (Over-Ear Headphones with Active Noise Cancellation) Blue",
+   "title": "Apple AirPods Max 2 Over-Ear Headphones with Active Noise Cancellation Blue",
    "url": "https://www.buymobile.com.au/products/apple-airpods-max-2-over-ear-headphones-with-active-noise-cancellation?variant=44912841916531",
    "price": 734.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleAirpodsMax2_Over-EarHeadphoneswithActiveNoiseCancellation_Blue.jpg?v=1777598020",
@@ -92,7 +81,7 @@
   {
    "retailer": "buymobile",
    "sku": "APL-AIRPODS-MAX2-MHWK4-MID",
-   "title": "Apple Airpods Max 2 (Over-Ear Headphones with Active Noise Cancellation) Midnight",
+   "title": "Apple AirPods Max 2 Over-Ear Headphones with Active Noise Cancellation Midnight",
    "url": "https://www.buymobile.com.au/products/apple-airpods-max-2-over-ear-headphones-with-active-noise-cancellation?variant=44912841850995",
    "price": 743.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleAirpodsMax2_Over-EarHeadphoneswithActiveNoiseCancellation_Midnight2.jpg?v=1777598006",
@@ -103,7 +92,7 @@
   {
    "retailer": "buymobile",
    "sku": "APL-AIRPODS-MAX2-MHWN4-ORG",
-   "title": "Apple Airpods Max 2 (Over-Ear Headphones with Active Noise Cancellation) Orange",
+   "title": "Apple AirPods Max 2 Over-Ear Headphones with Active Noise Cancellation Orange",
    "url": "https://www.buymobile.com.au/products/apple-airpods-max-2-over-ear-headphones-with-active-noise-cancellation?variant=44912841949299",
    "price": 740.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleAirpodsMax2_Over-EarHeadphoneswithActiveNoiseCancellation_orange.jpg?v=1777598052",
@@ -114,7 +103,7 @@
   {
    "retailer": "buymobile",
    "sku": "APL-AIRPODS-MAX2-MHWP4-PUR",
-   "title": "Apple Airpods Max 2 (Over-Ear Headphones with Active Noise Cancellation) Purple",
+   "title": "Apple AirPods Max 2 Over-Ear Headphones with Active Noise Cancellation Purple",
    "url": "https://www.buymobile.com.au/products/apple-airpods-max-2-over-ear-headphones-with-active-noise-cancellation?variant=44912841982067",
    "price": 734.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleAirpodsMax2_Over-EarHeadphoneswithActiveNoiseCancellation_e2377516-d48b-4cdc-8de3-448c5e202867.jpg?v=1777597992",
@@ -125,24 +114,13 @@
   {
    "retailer": "buymobile",
    "sku": "APL-AIRPODS-MAX2-MHWL4-SLT",
-   "title": "Apple Airpods Max 2 (Over-Ear Headphones with Active Noise Cancellation) Starlight",
+   "title": "Apple AirPods Max 2 Over-Ear Headphones with Active Noise Cancellation Starlight",
    "url": "https://www.buymobile.com.au/products/apple-airpods-max-2-over-ear-headphones-with-active-noise-cancellation?variant=44912841883763",
    "price": 734.95,
    "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleAirpodsMax2_Over-EarHeadphoneswithActiveNoiseCancellation_Starlight.jpg?v=1777597973",
    "inStock": true,
    "brand": "Apple",
    "mpn": "APL-AIRPODS-MAX2-MHWL4-SLT"
-  },
-  {
-   "retailer": "buymobile",
-   "sku": "APL-AIRPODS-3-MFHP4-WHT",
-   "title": "Apple AirPods Pro 3 MFHP4 White",
-   "url": "https://www.buymobile.com.au/products/apple-airpods-3-mfhp4",
-   "price": 345.95,
-   "image": "https://cdn.shopify.com/s/files/1/1081/0050/files/AppleAirPodspro3MFHP4White_33667ada-5f0c-48af-978e-46ea3287df90.jpg?v=1775039469",
-   "inStock": true,
-   "brand": "Apple",
-   "mpn": "APL-AIRPODS-3-MFHP4-WHT"
   },
   {
    "retailer": "buymobile",

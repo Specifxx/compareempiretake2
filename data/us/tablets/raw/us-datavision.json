@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:43:17.650Z",
+ "scrapedAt": "2026-11-19T01:32:17.893Z",
  "offers": [
   {
    "retailer": "us-datavision",
@@ -3667,7 +3667,7 @@
    "url": "https://datavision.com/products/apple-11-inch-ipad-wi-fi-cellular-128gb-pink-a16-md7j4ll-a-11th-gen",
    "price": 604,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/56f34f18-8899-4d9e-aae5-86d34ffdde48.jpg?v=1741650256",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MD7J4LL/A"
   },
@@ -5516,7 +5516,7 @@
    "url": "https://datavision.com/products/apple-13-in-ipad-pro-m5-wi-fi-cellular-2tb-standard-glass-space-black-me8j4ll-a-oct-2025",
    "price": 2679,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/fb878414-2364-4ddc-89b6-c26400d38323.jpg?v=1760563997",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "ME8J4LL/A"
   },
@@ -6200,7 +6200,7 @@
    "url": "https://datavision.com/products/apple-13-inch-ipad-air-wi-fi-cellular-512gb-blue-m4-mh9n4ll-a-2026",
    "price": 1389,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/eb86a4da-4903-4e11-9b1c-2700d8694dfe.jpg?v=1772498976",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MH9N4LL/A"
   },
@@ -6387,7 +6387,7 @@
    "url": "https://datavision.com/products/apple-13-inch-ipad-air-wi-fi-512gb-purple-m4-mh624ll-a-2026",
    "price": 1244,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/9027275d-0b9a-4fda-a9d1-ba5a68a149a3.jpg?v=1772499188",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "MH624LL/A"
   },
@@ -6932,7 +6932,7 @@
    "url": "https://datavision.com/products/apple-ipad-mini-wi-fi-cellular-512gb-standard-glass-starlight-a20-pro-mj6k4ll-a",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/bf8c9161-0bdc-4bcc-b549-3bae615f1a26.jpg?v=1793309483",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "MJ6K4LL/A"
   },
@@ -7159,7 +7159,7 @@
    "url": "https://datavision.com/products/apple-ipad-mini-wi-fi-256gb-standard-glass-starlight-a20-pro-mj6r4ll-a",
    "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/f27a32f3-1dff-4e39-8b5a-fa82976d4339.jpg?v=1793309361",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "MJ6R4LL/A"
   },
@@ -7956,6 +7956,29 @@
   },
   {
    "retailer": "us-datavision",
+   "sku": "SM-X238UZAACCT",
+   "title": "Samsung Galaxy Tab A11+ 5G 11-in 128GB Android Tablet, Wi-Fi (AT&T) - Gray",
+   "url": "https://datavision.com/products/samsung-galaxy-tab-a11-5g-11-in-128gb-android-tablet-wi-fi-at-t-gray",
+   "price": 269,
+   "wasPrice": 399,
+   "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/928b787a-e5f4-4034-9c06-3bddf72329c0.jpg?v=1795036991",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "SM-X238UZAACCT"
+  },
+  {
+   "retailer": "us-datavision",
+   "sku": "SM-X238UZAAXAU",
+   "title": "Samsung Galaxy Tab A11+ 5G 11-in 128GB Android Tablet, Wi-Fi (T-Mobile) - Gray",
+   "url": "https://datavision.com/products/samsung-galaxy-tab-a11-5g-11-in-128gb-android-tablet-wi-fi-t-mobile-gray",
+   "price": 329,
+   "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/40e9bd87-f712-45ee-8ef6-9340be5f694b.jpg?v=1795037268",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "SM-X238UZAAXAU"
+  },
+  {
+   "retailer": "us-datavision",
    "sku": "SM-T500NZDAXAR",
    "title": "Samsung Galaxy Tab A7 10.4 Wi-Fi 32GB Tablet - Gold SM-T500NZDAXAR (2020)",
    "url": "https://datavision.com/products/samsung-galaxy-tab-a7-10-4-wi-fi-32gb-tablet-gold-sm-t500nzdaxar-2020",
@@ -8175,6 +8198,18 @@
    "inStock": true,
    "brand": "Samsung",
    "mpn": "SM-X520NZSEXAR"
+  },
+  {
+   "retailer": "us-datavision",
+   "sku": "SM-X528UZAAUSC",
+   "title": "Samsung Galaxy Tab S10 FE 5G 10.9-in 128GB Tablet (AT&T Network)",
+   "url": "https://datavision.com/products/samsung-galaxy-tab-s10-fe-5g-10-9-in-128gb-tablet-at-t-network",
+   "price": 449,
+   "wasPrice": 699,
+   "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/83ab8e61-4cbf-4397-a7ed-f739c26e2704.jpg?v=1795034356",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "SM-X528UZAAUSC"
   },
   {
    "retailer": "us-datavision",

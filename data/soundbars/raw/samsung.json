@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T01:51:14.964Z",
+ "scrapedAt": "2026-11-19T01:21:06.566Z",
  "offers": [
   {
    "retailer": "samsung",
@@ -8,7 +8,8 @@
    "brand": "Samsung",
    "title": "Samsung B-series Soundbar HW-B450F 2.1 ch Subwoofer",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/b450f-black-hw-b450f-xy/",
-   "price": 449,
+   "price": 299,
+   "wasPrice": 449,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-b450f-xy/gallery/au-b-series-soundbar-hw-b450f-hw-b450f-xy-thumb-547016217",
    "inStock": true
   },
@@ -19,7 +20,8 @@
    "brand": "Samsung",
    "title": "Samsung B-series Soundbar HW-B650F 3.1 ch Subwoofer",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/b650f-black-hw-b650f-xy/",
-   "price": 599,
+   "price": 399,
+   "wasPrice": 599,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-b650f-xy/gallery/au-b-series-soundbar-hw-b650f-hw-b650f-xy-thumb-546663864",
    "inStock": true
   },
@@ -30,8 +32,7 @@
    "brand": "Samsung",
    "title": "Samsung Q-Series Soundbar HW-Q600H 3.1.2ch Subwoofer (2026)",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/q600h-black-hw-q600h-xy/",
-   "price": 599,
-   "wasPrice": 899,
+   "price": 899,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-q600h-xy/gallery/au-q-series-soundbar-hw-q600h-hw-q600h-xy-thumb-551256209",
    "inStock": true
   },
@@ -42,8 +43,7 @@
    "brand": "Samsung",
    "title": "Samsung Q-series Soundbar HW-Q800H 5.1.2ch Subwoofer (2026)",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/q800h-black-hw-q800h-xy/",
-   "price": 799,
-   "wasPrice": 1099,
+   "price": 1099,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-q800h-xy/gallery/au-q-series-soundbar-hw-q800h-hw-q800h-xy-thumb-551256101",
    "inStock": true
   },
@@ -54,7 +54,8 @@
    "brand": "Samsung",
    "title": "Samsung Q-series Soundbar HW-Q930H 9.1.4ch Subwoofer & Rear Speaker (2026)",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/q930h-black-hw-q930h-xy/",
-   "price": 1699,
+   "price": 1099,
+   "wasPrice": 1699,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-q930h-xy/gallery/au-q-series-soundbar-hw-q930h-hw-q930h-xy-thumb-551255999",
    "inStock": true
   },
@@ -65,7 +66,8 @@
    "brand": "Samsung",
    "title": "Samsung Q-Series Soundbar HW-Q990H 11.1.4ch Subwoofer & Rear Speaker (2026)",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/q990h-black-hw-q990h-xy/",
-   "price": 1999,
+   "price": 1499,
+   "wasPrice": 1999,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-q990h-xy/gallery/au-q-series-soundbar-hw-q990h-hw-q990h-xy-thumb-551255877",
    "inStock": true
   },
@@ -76,7 +78,8 @@
    "brand": "Samsung",
    "title": "Samsung Q-series Soundbar HW-QS700F 3.1.2 ch Subwoofer",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/qs700f-black-hw-qs700f-xy/",
-   "price": 999,
+   "price": 599,
+   "wasPrice": 999,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-qs700f-xy/gallery/au-q-series-soundbar-hw-qs700f-hw-qs700f-xy-thumb-545479960",
    "inStock": true
   },
@@ -87,8 +90,7 @@
    "brand": "Samsung",
    "title": "Samsung S-Series All-in-one Soundbar HW-S60D with 5.0ch",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/s60d-black-hw-s60d-xy/",
-   "price": 399,
-   "wasPrice": 599,
+   "price": 599,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-s60d-xy/gallery/au--hw-s60d-xy-thumb-550120533",
    "inStock": true
   },
@@ -99,8 +101,7 @@
    "brand": "Samsung",
    "title": "Samsung S-Series All-in-one Soundbar HW-S61D with 5.0ch",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/s61d-white-hw-s61d-xy/",
-   "price": 399,
-   "wasPrice": 599,
+   "price": 599,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-s61d-xy/gallery/au--hw-s61d-xy-thumb-550120530",
    "inStock": true
   },
@@ -111,8 +112,7 @@
    "brand": "Samsung",
    "title": "Samsung S-Series Ultra Slim Soundbar HW-S800D with 3.1.2ch",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/s800d-black-hw-s800d-xy/",
-   "price": 599,
-   "wasPrice": 999,
+   "price": 999,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-s800d-xy/gallery/au--hw-s800d-xy-thumb-550120512",
    "inStock": true
   },
@@ -123,8 +123,7 @@
    "brand": "Samsung",
    "title": "Samsung S-Series Ultra Slim Soundbar HW-S801D with 3.1.2ch",
    "url": "https://www.samsung.com/au/audio-devices/soundbar/s801d-white-hw-s801d-xy/",
-   "price": 599,
-   "wasPrice": 999,
+   "price": 999,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/hw-s801d-xy/gallery/au--hw-s801d-xy-thumb-550120523",
    "inStock": true
   }

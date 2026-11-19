@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T01:50:06.567Z",
+ "scrapedAt": "2026-11-19T01:20:03.029Z",
  "offers": [
   {
    "retailer": "ple",
@@ -113,7 +113,7 @@
    "url": "https://www.ple.com.au/products/685133/asus-gaming-v16-v3607-16-144hz-ultra-7-240h-rtx-5060-32gb1tb-win-11-notebook",
    "price": 2999,
    "image": "https://plecom.imgix.net/iil-471894-685133.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -197,10 +197,10 @@
   {
    "retailer": "ple",
    "sku": "687970",
-   "title": "ASUS ProArt P16 (H7607) - 16\" 3K OLED 120Hz Touch, NVIDIA RTX Spark N1X 18-core CPU, 24GB/1TB - Win 11 Home Notebook",
+   "title": "ASUS ProArt P16 (H7607) - 16\" 3K OLED 120Hz Touch, RTX Spark N1X 18-core CPU, 24GB/1TB - Win 11 Home Notebook",
    "brand": "ASUS",
    "mpn": "H7607BA-SR272W",
-   "url": "https://www.ple.com.au/products/687970/asus-proart-p16-h7607-16-3k-oled-120hz-touch-nvidia-rtx-spark-n1x-18-core-cpu-24gb1tb-win-11-home-notebook",
+   "url": "https://www.ple.com.au/products/687970/asus-proart-p16-h7607-16-3k-oled-120hz-touch-rtx-spark-n1x-18-core-cpu-24gb1tb-win-11-home-notebook",
    "price": 5999,
    "image": "https://plecom.imgix.net/iil-485932-687970.jpg?w=600&h=600",
    "inStock": false
@@ -208,10 +208,10 @@
   {
    "retailer": "ple",
    "sku": "687976",
-   "title": "ASUS ProArt P16 (H7607) - 16\" 3K OLED 120Hz Touch, NVIDIA RTX Spark N1X 20-core CPU, 128GB/1TB - Win 11 Pro Notebook",
+   "title": "ASUS ProArt P16 (H7607) - 16\" 3K OLED 120Hz Touch, RTX Spark N1X 20-core CPU, 128GB/1TB - Win 11 Pro Notebook",
    "brand": "ASUS",
    "mpn": "H7607BA-SE315XS",
-   "url": "https://www.ple.com.au/products/687976/asus-proart-p16-h7607-16-3k-oled-120hz-touch-nvidia-rtx-spark-n1x-20-core-cpu-128gb1tb-win-11-pro-notebook",
+   "url": "https://www.ple.com.au/products/687976/asus-proart-p16-h7607-16-3k-oled-120hz-touch-rtx-spark-n1x-20-core-cpu-128gb1tb-win-11-pro-notebook",
    "price": 10999,
    "image": "https://plecom.imgix.net/iil-485939-687976.jpg?w=600&h=600",
    "inStock": true
@@ -219,10 +219,10 @@
   {
    "retailer": "ple",
    "sku": "687975",
-   "title": "ASUS ProArt P16 (H7607) - 16\" 3K OLED 120Hz Touch, NVIDIA RTX Spark N1X 20-core CPU, 64GB/1TB - Win 11 Pro Notebook",
+   "title": "ASUS ProArt P16 (H7607) - 16\" 3K OLED 120Hz Touch, RTX Spark N1X 20-core CPU, 64GB/1TB - Win 11 Pro Notebook",
    "brand": "ASUS",
    "mpn": "H7607BA-SR396X",
-   "url": "https://www.ple.com.au/products/687975/asus-proart-p16-h7607-16-3k-oled-120hz-touch-nvidia-rtx-spark-n1x-20-core-cpu-64gb1tb-win-11-pro-notebook",
+   "url": "https://www.ple.com.au/products/687975/asus-proart-p16-h7607-16-3k-oled-120hz-touch-rtx-spark-n1x-20-core-cpu-64gb1tb-win-11-pro-notebook",
    "price": 7999,
    "image": "https://plecom.imgix.net/iil-485925-687975.jpg?w=600&h=600",
    "inStock": false
@@ -236,18 +236,6 @@
    "url": "https://www.ple.com.au/products/688548/asus-proart-px13-hn7306-133-oled-ryzen-ai-max-395-128gb1tb-win-11-pro-notebook",
    "price": 9999,
    "image": "https://plecom.imgix.net/iil-487035-688548.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "672657",
-   "title": "ASUS ROG Flow Z13 (GZ302) - 13.4\" 180Hz, Ryzen AI MAX+ 395, 32GB/1TB - Win 11 Gaming Notebook",
-   "brand": "ASUS",
-   "mpn": "GZ302EA-RU093W",
-   "url": "https://www.ple.com.au/products/672657/asus-rog-flow-z13-gz302-134-180hz-ryzen-ai-max-395-32gb1tb-win-11-gaming-notebook",
-   "price": 4449,
-   "wasPrice": 4499,
-   "image": "https://plecom.imgix.net/iil-437296-672657.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -323,7 +311,8 @@
    "brand": "ASUS",
    "mpn": "RC73YA-NH002W",
    "url": "https://www.ple.com.au/products/679387/asus-rog-xbox-ally-7-120hz-ryzen-z2-a-16gb512gb-gaming-handheld-white",
-   "price": 999,
+   "price": 799,
+   "wasPrice": 999,
    "image": "https://plecom.imgix.net/iil-448110-679387.jpg?w=600&h=600",
    "inStock": true
   },
@@ -334,7 +323,8 @@
    "brand": "ASUS",
    "mpn": "RC73XA-NH011W",
    "url": "https://www.ple.com.au/products/679388/asus-rog-xbox-ally-x-7-120hz-ryzen-ai-z2-extreme-24gb1tb-gaming-handheld-black",
-   "price": 1799,
+   "price": 1499,
+   "wasPrice": 1799,
    "image": "https://plecom.imgix.net/iil-449252-679388.jpg?w=600&h=600",
    "inStock": true
   },
@@ -433,8 +423,7 @@
    "brand": "ASUS",
    "mpn": "FX608JPR-RV064W",
    "url": "https://www.ple.com.au/products/676376/asus-tuf-gaming-f16-fx608-16-165hz-i7-14650hx-rtx-5070-16gb1tb-win-11-notebook",
-   "price": 2999,
-   "wasPrice": 3999,
+   "price": 3999,
    "image": "https://plecom.imgix.net/iil-435565-676376.jpg?w=600&h=600",
    "inStock": true
   },
@@ -492,8 +481,7 @@
    "brand": "ASUS",
    "mpn": "X1607CA-MB110W",
    "url": "https://www.ple.com.au/products/672662/asus-vivobook-16-x1607-16-ultra-5-225h-16gb512gb-win-11-ai-notebook",
-   "price": 1199,
-   "wasPrice": 1699,
+   "price": 1699,
    "image": "https://plecom.imgix.net/iil-418129-672662.jpg?w=600&h=600",
    "inStock": false
   },
@@ -644,8 +632,7 @@
    "brand": "ASUS",
    "mpn": "UX3407NA-QD043W",
    "url": "https://www.ple.com.au/products/687285/asus-zenbook-a14-ux3407-14-oled-snapdragon-x2-elite-32gb1tb-win-11-ai-notebook",
-   "price": 2699,
-   "wasPrice": 3699,
+   "price": 3699,
    "image": "https://plecom.imgix.net/iil-480648-687285.jpg?w=600&h=600",
    "inStock": false
   },

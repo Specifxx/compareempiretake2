@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T03:03:25.323Z",
+ "scrapedAt": "2026-11-19T01:52:17.888Z",
  "offers": [
   {
    "retailer": "uk-mooresappliances",
@@ -9,7 +9,7 @@
    "price": 299,
    "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0245/4041/files/MIEBOOSTCX1CAT_DOG_main.webp?v=1779975334",
-   "inStock": false,
+   "inStock": true,
    "brand": "Miele"
   },
   {
@@ -29,7 +29,6 @@
    "title": "Miele GuardS1BLUE Vacuum - Nordic Blue",
    "url": "https://mooresappliances.co.uk/products/miele-guards1blue-vacuum-nordic-blue",
    "price": 159,
-   "wasPrice": 199,
    "image": "https://cdn.shopify.com/s/files/1/0245/4041/files/MIEGUARDS1BLUE_1.webp?v=1749654006",
    "inStock": true,
    "brand": "Miele"
@@ -40,6 +39,7 @@
    "title": "Numatic 902395 Henry Vacuum Cleaner - Red",
    "url": "https://mooresappliances.co.uk/products/numatic-902395-henry-vacuum-cleaner-red",
    "price": 129.99,
+   "wasPrice": 179.99,
    "image": "https://cdn.shopify.com/s/files/1/0245/4041/files/NUM902395_3.webp?v=1749642170",
    "inStock": true,
    "brand": "Numatic"
@@ -104,7 +104,7 @@
    "price": 319.99,
    "wasPrice": 499.99,
    "image": "https://cdn.shopify.com/s/files/1/0245/4041/files/SHKIZ420UKT_main.webp?v=1749810004",
-   "inStock": false,
+   "inStock": true,
    "brand": "Shark"
   },
   {
@@ -221,8 +221,8 @@
    "sku": "18082",
    "title": "VAX UCUESHV1 Air Lift Steerable Pet Pro Vacuum Cleaner",
    "url": "https://mooresappliances.co.uk/products/vax-ucueshv1-air-lift-steerable-pet-pro-vacuum-cleaner-1",
-   "price": 108.99,
-   "wasPrice": 109.99,
+   "price": 99.99,
+   "wasPrice": 108.99,
    "image": "https://cdn.shopify.com/s/files/1/0245/4041/files/VAXUCUESHV1_2.webp?v=1750251786",
    "inStock": true
   }

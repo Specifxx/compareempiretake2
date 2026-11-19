@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:42:34.996Z",
+ "scrapedAt": "2026-11-19T01:31:32.668Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -340,7 +340,8 @@
    "sku": "ASUVA24DQ",
    "title": "ASUS 24\" FreeSync Eye Care Monitor - 90LM0543-B013B0",
    "url": "https://www.beachcamera.com/products/asus-23-8-full-hd-1080p-eye-hdmi-2",
-   "price": 187,
+   "price": 165,
+   "wasPrice": 171.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1116980_1.jpg?v=1757574934",
    "inStock": true,
    "brand": "ASUS",
@@ -546,7 +547,7 @@
    "price": 459,
    "wasPrice": 516.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1117106_1_f041c540-6d3e-403c-9e2b-a723f995fd84.jpg?v=1790122240",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dell",
    "mpn": "DELU2724D"
   },
@@ -1076,16 +1077,6 @@
   },
   {
    "retailer": "us-beachcamera",
-   "sku": "LG27G640AB",
-   "title": "LG 27 Inch UltraGear IPS QHD 1440p 300Hz 1ms G-Sync Compatible Gaming Monitor",
-   "url": "https://www.beachcamera.com/products/lg-27-inch-ultragear-ips-qhd-1440p-300hz-1ms-g-sync-compatible-gaming-monitor",
-   "price": 449.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1130095_1_8deaa297-97dd-40b0-ba5e-3857e7d7b0a6.jpg?v=1790672392",
-   "inStock": true,
-   "mpn": "LG27G640AB"
-  },
-  {
-   "retailer": "us-beachcamera",
    "sku": "LG27G850AB",
    "title": "LG 27 Inch UltraGear Nano IPS Black 4K UHD 240Hz or FHD 480Hz 1ms Gaming Monitor",
    "url": "https://www.beachcamera.com/products/lg-27-inch-ultragear-nano-ips-black-4k-uhd-240hz-or-fhd-480hz-1ms-gaming-monitor",
@@ -1481,7 +1472,7 @@
    "url": "https://www.beachcamera.com/products/lg-32ur550k-b-32-inch-ultrafine-4k-uhd-3840-2160-monitor-black",
    "price": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1200214_1_bee3f832-52d9-41f2-b4e6-d6c70ad5f6c5.jpg?v=1789689236",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LG32UR550KB"
   },
   {
@@ -1589,7 +1580,7 @@
    "price": 349.99,
    "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1198620_1_e83d614f-d725-43d5-8a5c-1311feb0d820.jpg?v=1789688943",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LG34U640B"
   },
   {
@@ -1612,17 +1603,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1198622_1.jpg?v=1782943439",
    "inStock": true,
    "mpn": "LG34U650A"
-  },
-  {
-   "retailer": "us-beachcamera",
-   "sku": "LG34WR55QKB",
-   "title": "LG 34WR55QK B 34\" Curved UltraWide WQHD HDR 10 100Hz Monitor with USB Type-C",
-   "url": "https://www.beachcamera.com/products/lg-34wr55qk-b-34-curved-ultrawide-wqhd-hdr-10-100hz-monitor-with-usb-type-c",
-   "price": 349.99,
-   "wasPrice": 499.99,
-   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1042658_1.jpg?v=1752980725",
-   "inStock": true,
-   "mpn": "LG34WR55QKB"
   },
   {
    "retailer": "us-beachcamera",
@@ -1706,7 +1686,7 @@
    "url": "https://www.beachcamera.com/products/lg-45-ultragear-oled-wqhd-240hz-800r-curved-gaming-monitor-with-webos",
    "price": 1399.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1196990_1.jpg?v=1782376253",
-   "inStock": false,
+   "inStock": true,
    "mpn": "LG45GX90SAB"
   },
   {

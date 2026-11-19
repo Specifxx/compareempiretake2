@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T03:11:33.567Z",
+ "scrapedAt": "2026-11-19T01:59:56.800Z",
  "offers": [
   {
    "retailer": "ca-homecoffeesolutions",
@@ -564,7 +564,7 @@
    "price": 449,
    "wasPrice": 649.99,
    "image": "https://cdn.shopify.com/s/files/1/0113/4942/files/Artboard1_23067654-d54b-4a62-9265-fd1ab8d256d0.jpg?v=1756413642",
-   "inStock": true,
+   "inStock": false,
    "brand": "Breville",
    "mpn": "unt-brvl-bamplus-ss-1x1"
   },
@@ -696,7 +696,7 @@
    "price": 879,
    "wasPrice": 1149.99,
    "image": "https://cdn.shopify.com/s/files/1/0113/4942/products/Artboard2_256b78e9-bf74-471f-b8a4-261caf9d5946.jpg?v=1756413532",
-   "inStock": false,
+   "inStock": true,
    "brand": "Breville",
    "mpn": "unt-brvl-impress-seaslt-1x1"
   },
@@ -792,7 +792,7 @@
    "price": 1699,
    "wasPrice": 2199.99,
    "image": "https://cdn.shopify.com/s/files/1/0113/4942/products/Artboard9_89bf3021-2690-43ce-9d34-797db26b5726.jpg?v=1756413547",
-   "inStock": true,
+   "inStock": false,
    "brand": "Breville",
    "mpn": "unt-brvl-touchimprs-seaslt-1x1"
   },
@@ -2861,7 +2861,7 @@
    "url": "https://www.homecoffeesolutions.com/products/lelit-elizabeth-dual-boiler-espresso-machine",
    "price": 2695,
    "image": "https://cdn.shopify.com/s/files/1/0113/4942/products/lelitElizabethFront2.jpg?v=1754492375",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lelit",
    "mpn": "unt-lelt-elizabeth-1x1"
   },
@@ -3725,7 +3725,8 @@
    "sku": "unt-rnclo-silviaprox-blk-1x1",
    "title": "Rancilio Silvia Pro X Dual Boiler Espresso Machine with PID (Black)",
    "url": "https://www.homecoffeesolutions.com/products/rancilio-silvia-pro-x-dual-boiler-espresso-machine-with-pid-black",
-   "price": 3405,
+   "price": 2699.99,
+   "wasPrice": 3405,
    "image": "https://cdn.shopify.com/s/files/1/0113/4942/files/pro_x_black_fron_t.jpg?v=1755213401",
    "inStock": true,
    "brand": "Rancilio",
@@ -3759,7 +3760,8 @@
    "sku": "unt-rnclo-silviaprox-wht-1x1",
    "title": "Rancilio Silvia Pro X Dual Boiler Espresso Machine with PID (White)",
    "url": "https://www.homecoffeesolutions.com/products/rancilio-silvia-pro-x-dual-boiler-espresso-machine-with-pid-white",
-   "price": 3405,
+   "price": 3198.99,
+   "wasPrice": 3405,
    "image": "https://cdn.shopify.com/s/files/1/0113/4942/files/pro_x_white.jpg?v=1750114206",
    "inStock": true,
    "brand": "Rancilio",
@@ -4091,7 +4093,7 @@
    "price": 299.99,
    "wasPrice": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/0113/4942/files/DCF02CRUS_8dab5149-7e6e-4c37-8ad8-dbd6c3f8363e.jpg?v=1776795609",
-   "inStock": true,
+   "inStock": false,
    "brand": "Smeg",
    "mpn": "unt-smeg-drip-crm-1x1"
   },

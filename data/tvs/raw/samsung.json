@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T01:50:52.001Z",
+ "scrapedAt": "2026-11-19T01:20:41.634Z",
  "offers": [
   {
    "retailer": "samsung",
@@ -54,7 +54,7 @@
    "url": "https://www.samsung.com/au/tvs/full-hd-tv/f6000-32-inch-ua32f6000fwxxy/",
    "price": 499,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua32f6000fwxxy/gallery/au-fhd-f6000-ua32f6000fwxxy-thumb-544933349",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "samsung",
@@ -64,7 +64,7 @@
    "url": "https://www.samsung.com/au/tvs/full-hd-tv/f6000-32-inch-ua32f6000fwxxy/?40",
    "price": 499,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua32f6000fwxxy/gallery/au-fhd-f6000-ua32f6000fwxxy-thumb-544933349",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "samsung",
@@ -420,6 +420,17 @@
   },
   {
    "retailer": "samsung",
+   "sku": "UA75M70HAWXXY",
+   "mpn": "UA75M70HAWXXY",
+   "brand": "Samsung",
+   "title": "Samsung 75\" Mini LED M70H 4K Samsung Vision AI Smart TV (2026)",
+   "url": "https://www.samsung.com/au/tvs/mini-led-tv/m70h-75-inch-4k-vision-ai-smart-tv-ua75m70hawxxy/",
+   "price": 1699,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/au/ua75m70hawxxy/gallery/au-mini-led-tv-ua75m70hawxxy-----mini-led-m--h--k-samsung-vision-ai-smart-tv------titanium-black-thumb-551512802",
+   "inStock": true
+  },
+  {
+   "retailer": "samsung",
    "sku": "QA75QN1EHAWXXY",
    "mpn": "QA75QN1EHAWXXY",
    "brand": "Samsung",
@@ -427,7 +438,7 @@
    "url": "https://www.samsung.com/au/tvs/qled-tv/qn1eh-75-inch-neo-qled-4k-vision-ai-smart-tv-qa75qn1ehawxxy/",
    "price": 2499,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/au/qa75qn1ehawxxy/gallery/au-qled-tv-qa75qn1ehawxxy-----------------neo-qled-qn-eh--k-samsung-vision-ai-smart-tv--------titanium-gray-thumb-552877155",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "samsung",
