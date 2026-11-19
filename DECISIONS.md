@@ -2470,3 +2470,17 @@ product page carries `hubLanguages` alternates with x-default the US copy).
   later stays off the tech pages until it is added there.
 - The H1 is "Compare <US|Australian|UK…> tech prices: phones, laptops, TVs and more"; the "Is that sale actually real?" hook
   moved into the line under it. The trust strip links "How we check prices" (`/how-we-pick-stores`) beside the checked time.
+
+## 2026-11-19: Search-engine-first audit after the November 2026 core update
+
+Google's core-update guidance asks whether a page exists mainly to help people or mainly to catch a search, and names
+content "spread across a large network of sites" and re-dating pages to look fresh as warning signs. What changed here:
+
+- **Seasonal sale pages.** The same template put Boxing Day, January sales and Lunar New Year (and Valentine's Day where
+  a site has it) pages on every Compare site, indexed all year, each listing the same deals as the Black Friday page.
+  `saleIndexable` in `lib/sale-seasons.ts`: Lunar New Year and Valentine's Day pages are never indexed, Boxing Day and
+  January sales only from three weeks before the homepage links them until a week after they end; out of season they are
+  noindex, follow and out of the sitemap (`withoutOffSeasonSales`). The URLs stay live all year (URL freeze).
+- The footer no longer links the Lunar New Year page.
+
+Black Friday and Cyber Monday pages are unchanged (in season). Judge the effect on 1 to 8 Dec against 3 to 9 Nov.
