@@ -193,3 +193,15 @@ test("eBay's account-deletion challenge is hashed with the URL eBay called, apex
   const route = read("src/app/api/ebay/account-deletion/route.ts");
   assert.doesNotMatch(route, /EBAY_DELETION_ENDPOINT/, "a stale www value in the env must not decide the hash");
 });
+
+test("/au/<path> 301s to the prefix-less Australian page; /au itself stays Australia's home (review, 2026-11-19)", async () => {
+  const config = (await import(pathToFileURL(path.join(ROOT, "next.config.mjs")).href)).default;
+  const au = (await config.redirects()).find((r: { source: string }) => r.source === "/au/:path+");
+  assert.ok(au, "an /au/<path> redirect");
+  assert.equal(au.permanent, true);
+  assert.equal(au.destination, "/:path+");
+  const matches = getPathMatch(au.source);
+  for (const p of ["/au/deals", "/au/phones/apple-iphone-17", "/au/browse/tvs/2"]) assert.notEqual(matches(p), false, p);
+  assert.equal(matches("/au"), false, "Australia's home is a real page");
+  assert.ok(existsSync(path.join(ROOT, "src/app/au/page.tsx")) && readdirSync(path.join(ROOT, "src/app/au")).length === 1, "no other /au route the redirect would shadow");
+});

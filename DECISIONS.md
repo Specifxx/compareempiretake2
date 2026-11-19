@@ -2456,3 +2456,17 @@ The owner, 2026-11-19: "I want it for all the sites, so people have like an ad o
 2026-11-18 (`lib/dock-arm.ts`) ends early with its "on" arm for every visitor: the eBay dock is stacked just above the phone bottom
 nav whenever it shows, instead of taking turns with the nav. Its own rules are unchanged: after a scroll, labelled "Ad", ✕ for the
 visit, never Amazon. `dock_arm` on buy_click now always reads "on".
+
+## 2026-11-19 — /au/<path> redirects, tech-only partner offers, a homepage H1 that says what and where
+
+An outside review of the site (owner pasted it, 19 Nov) found: `/au/deals` 404s while `/deals` is Australia's deals page;
+the "Offers from US partner stores" block showed coffee beans and a cookware shop on a tech homepage; the H1 ("Every store's
+price, cheapest first.") named no category, region or reason to trust it. Its "no hreflang" claim is wrong (every hub and
+product page carries `hubLanguages` alternates with x-default the US copy).
+
+- Australia's pages stay prefix-less (frozen URLs); `/au/:path+` now 301s to `/:path+`, so a guessed `/au/...` lands on the
+  Australian page instead of a 404. `/au` itself is still Australia's home (`tests/routes.test.ts`).
+- `ON_TOPIC_PROGRAMMES` in `lib/partner-offers.ts` is an allowlist (Clifton Cameras, GL.iNet, Ryman); a programme that joins
+  later stays off the tech pages until it is added there.
+- The H1 is "Compare <US|Australian|UK…> tech prices: phones, laptops, TVs and more"; the "Is that sale actually real?" hook
+  moved into the line under it. The trust strip links "How we check prices" (`/how-we-pick-stores`) beside the checked time.

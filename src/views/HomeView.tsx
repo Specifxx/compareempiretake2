@@ -63,11 +63,13 @@ export function HomeView({ region }: { region: RegionId }) {
             <CreatorsCornerBadge />
             <ChristmasBanner href={to("/deals")} />
             <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
-              {mature ? <>Is that sale actually real?</> : <>Every store&apos;s price, cheapest first.</>}
+              {/* Says what and where (review of 19 Nov 2026: the old "Every store's price, cheapest first." named no category,
+                  region or reason to trust it over a marketplace); the page title already names phones, laptops and TVs. */}
+              Compare {R.adjective} tech prices: phones, laptops, TVs and more
             </h1>
             <p className="mx-auto mt-3 max-w-xl text-sm text-ink-soft sm:text-lg">
               {mature ? (
-                <>We save the price of everything we compare at {stores} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.</>
+                <>Is that sale actually real? We save the price of everything we compare at {stores} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.</>
               ) : (
                 <>We check {stores} {R.adjective} stores every morning and put their prices side by side. Every price saved since {since}.</>
               )}
@@ -94,6 +96,9 @@ export function HomeView({ region }: { region: RegionId }) {
               <Link prefetch={false} href={region === "au" ? "/about#retailers" : to("/stores")} className="underline decoration-line underline-offset-4 hover:text-ink">{stores} stores compared</Link>
             </li>
             <li className="hidden sm:list-item">Cheapest in stock first · no paid rankings</li>
+            <li>
+              <Link prefetch={false} href="/how-we-pick-stores" className="underline decoration-line underline-offset-4 hover:text-ink">How we check prices</Link>
+            </li>
           </ul>
         </div>
       </section>
