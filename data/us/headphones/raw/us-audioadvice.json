@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:41:20.111Z",
+ "scrapedAt": "2026-11-19T01:30:29.991Z",
  "offers": [
   {
    "retailer": "us-audioadvice",
@@ -555,7 +555,7 @@
    "url": "https://www.audioadvice.com/products/denon-perl-true-wireless-earbuds-black?variant=41614043152468",
    "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/0572/3281/8260/files/low--denon_perl_earbuds_white_studio_03.jpg?v=1718145481",
-   "inStock": true,
+   "inStock": false,
    "brand": "Denon",
    "mpn": "PERL-WHT"
   },
@@ -739,6 +739,17 @@
    "inStock": false,
    "brand": "Grado",
    "mpn": "GW100X"
+  },
+  {
+   "retailer": "us-audioadvice",
+   "sku": "48298919231572",
+   "title": "Grado GW200 Open-back Wireless Series Headphones",
+   "url": "https://www.audioadvice.com/products/grado-gw200-open-back-wireless-series-headphones",
+   "price": 329,
+   "image": "https://cdn.shopify.com/s/files/1/0572/3281/8260/files/GradoGW200Open-backWirelessSeriesHeadphones_3.png?v=1795011109",
+   "inStock": true,
+   "brand": "Grado",
+   "mpn": "GW200"
   },
   {
    "retailer": "us-audioadvice",

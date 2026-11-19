@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:45:40.395Z",
+ "scrapedAt": "2026-11-19T01:34:50.764Z",
  "offers": [
   {
    "retailer": "us-lg",
@@ -208,7 +208,7 @@
    "url": "https://www.lg.com/us/monitors/lg-27ba850-i-fhd-monitor",
    "price": 409.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/3f6d296c-c4c6-4e1c-9c77-4793b1ada2e0/Monitor-27BA850-I-Gallery-01_5000x5000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -307,6 +307,17 @@
    "url": "https://www.lg.com/us/monitors/lg-27gm950b-b-gaming-monitor",
    "price": 799.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/659fab46-0b55-423c-b75a-84f991194c1f/Monitor-27GM950B-B-gallery-new-01_5000x5000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "27G41WB-B",
+   "mpn": "27G41WB-B",
+   "brand": "LG",
+   "title": "27 Inch UltraGear™ G4, 144Hz FHD IPS Gaming Monitor",
+   "url": "https://www.lg.com/us/monitors/lg-27g41wb-b-gaming-monitor",
+   "price": 94,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/b81c948d-ba48-4ac1-9f1e-1b29dcb25b3b/Monitor_27G41WB-B_gallery-1_5000x5000",
    "inStock": true
   },
   {
@@ -648,7 +659,7 @@
    "url": "https://www.lg.com/us/monitors/lg-32ur500k-b-uhd-monitor",
    "price": 299.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/8af4c228-07fe-4ccd-af1d-bae7b372b412/Monitor_32UR500K-B_Gallery_01_5000x5000",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-lg",
@@ -670,17 +681,6 @@
    "url": "https://www.lg.com/us/monitors/lg-32gn550-b-gaming-monitor",
    "price": 229.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/3da7fc14-22a4-47e8-b9f6-fc4c56d80ec1/md07519941-450-jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "32GN600-B",
-   "mpn": "32GN600-B",
-   "brand": "LG",
-   "title": "32 Inch UltraGear QHD 1440P 165Hz HDR10 Monitor with FreeSync™ Premium",
-   "url": "https://www.lg.com/us/monitors/lg-32gn600-b-gaming-monitor",
-   "price": 229,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/c8d68835-7550-415b-b64c-a2cf0211c213/md07519557-450-jpg",
    "inStock": false
   },
   {
@@ -824,7 +824,7 @@
    "url": "https://www.lg.com/us/monitors/lg-34wq60c-b-ultrawide-monitor",
    "price": 299.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/763ade63-a7c2-4a36-9223-2dbe5866cd8a/md08003261-450-jpg",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-lg",
@@ -901,7 +901,7 @@
    "url": "https://www.lg.com/us/monitors/lg-34g630a-b-gaming-monitor",
    "price": 349.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/5e523333-9a63-44c3-9b54-125f0ec7a110/Monitor-34G630A-B-gallery-02-new_5000x5000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",

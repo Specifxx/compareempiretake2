@@ -18,6 +18,7 @@ import { HotLaunches } from "@/components/HotLaunches";
 import { hotLaunches, storePreorders } from "@/lib/launches";
 import { ChristmasBanner } from "@/components/season/ChristmasBanner";
 import { CreatorsCornerBadge } from "@/components/creators/CreatorsCornerBadge";
+import { sized } from "@/lib/image-size";
 
 export function HomeView({ region }: { region: RegionId }) {
   const R = REGIONS[region];
@@ -62,11 +63,13 @@ export function HomeView({ region }: { region: RegionId }) {
             <CreatorsCornerBadge />
             <ChristmasBanner href={to("/deals")} />
             <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
-              {mature ? <>Is that sale actually real?</> : <>Every store&apos;s price, cheapest first.</>}
+              {/* Says what and where (review of 19 Nov 2026: the old "Every store's price, cheapest first." named no category,
+                  region or reason to trust it over a marketplace); the page title already names phones, laptops and TVs. */}
+              Compare {R.adjective} tech prices: phones, laptops, TVs and more
             </h1>
             <p className="mx-auto mt-3 max-w-xl text-sm text-ink-soft sm:text-lg">
               {mature ? (
-                <>We save the price of everything we compare at {stores} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.</>
+                <>Is that sale actually real? We save the price of everything we compare at {stores} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.</>
               ) : (
                 <>We check {stores} {R.adjective} stores every morning and put their prices side by side. Every price saved since {since}.</>
               )}
@@ -93,6 +96,9 @@ export function HomeView({ region }: { region: RegionId }) {
               <Link prefetch={false} href={region === "au" ? "/about#retailers" : to("/stores")} className="underline decoration-line underline-offset-4 hover:text-ink">{stores} stores compared</Link>
             </li>
             <li className="hidden sm:list-item">Cheapest in stock first · no paid rankings</li>
+            <li>
+              <Link prefetch={false} href="/how-we-pick-stores" className="underline decoration-line underline-offset-4 hover:text-ink">How we check prices</Link>
+            </li>
           </ul>
         </div>
       </section>
@@ -103,7 +109,7 @@ export function HomeView({ region }: { region: RegionId }) {
           {cats.map(({ c, count, image }) => (
             <Link prefetch={false} key={c.id} href={to(c.href)} className="card tile-hover group flex flex-col items-center px-2 pb-3 pt-3 text-center">
               <div className="img-tile relative h-16 w-16 overflow-hidden rounded-full border border-line/60 sm:h-20 sm:w-20">
-                {image && <img src={image} alt={c.name} loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-2.5" />}
+                {image && <img src={sized(image, 220)} alt={c.name} loading="lazy" className="product-img absolute inset-0 h-full w-full object-contain p-2.5" />}
               </div>
               <div className="mt-2 text-[13px] font-semibold leading-tight group-hover:text-brand sm:text-sm">{c.name}</div>
               <div className="mt-0.5 text-[11px] text-ink-mute">{count.toLocaleString()} products</div>

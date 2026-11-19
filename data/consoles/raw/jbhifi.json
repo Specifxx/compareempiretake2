@@ -1,12 +1,13 @@
 {
- "scrapedAt": "2026-10-30T23:06:24.701Z",
+ "scrapedAt": "2026-11-18T22:42:11.179Z",
  "offers": [
   {
    "retailer": "jbhifi",
    "sku": "835295",
    "title": "ASUS ROG Xbox Ally AMD Ryzen Z2 A 16GB 512GB 120Hz Gaming Handheld (60Wh)",
    "url": "https://www.jbhifi.com.au/products/asus-rog-xbox-ally-amd-ryzen-z2-a-16gb-512gb-120hz-gaming-handheld-60wh",
-   "price": 999,
+   "price": 799,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/835295-Product-0-I-638940979203671673_1ef4d467-6c24-43be-9a76-f52766bba93f.jpg?v=1762901345",
    "inStock": true,
    "brand": "Asus"
@@ -16,7 +17,8 @@
    "sku": "835296",
    "title": "ASUS ROG Xbox Ally X AMD Ryzen AI Z2 Extreme 24GB 1TB 120Hz Gaming Handheld (80Wh)",
    "url": "https://www.jbhifi.com.au/products/asus-rog-xbox-ally-x-amd-ryzen-ai-z2-extreme-24gb-1tb-120hz-gaming-handheld-80wh",
-   "price": 1799,
+   "price": 1499,
+   "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/835296-Product-0-I-638940979801789552.jpg?v=1762901406",
    "inStock": true,
    "brand": "Asus"
@@ -24,11 +26,11 @@
   {
    "retailer": "jbhifi",
    "sku": "906326",
-   "title": "ASUS ROG Xbox Ally X20 AMD Ryzen AI Z2 Extreme 24GB 1TB 120Hz Gaming Handheld (80Wh)",
+   "title": "ASUS ROG XBOX Ally X20 AMD Ryzen AI Z2 Extreme 24GB 1TB 120Hz Gaming Handheld (80Wh)",
    "url": "https://www.jbhifi.com.au/products/asus-rog-xbox-ally-x20-amd-ryzen-ai-z2-extreme-24gb-1tb-120hz-gaming-handheld-80wh",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906326-Product-0-I-639231448206217447.jpg?v=1787548084",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -36,7 +38,8 @@
    "sku": "829211",
    "title": "Lenovo Legion Go S AMD Ryzen Z1 Extreme (1TB)",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-go-s-amd-ryzen-z1-extreme-1tb",
-   "price": 1799,
+   "price": 1499,
+   "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829211-Product-0-I-638908222803283771.jpg?v=1755225553",
    "inStock": true,
    "brand": "Lenovo"
@@ -46,7 +49,8 @@
    "sku": "796013",
    "title": "Lenovo Legion Go S Z2 Go 512GB",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-go-s-z2-go-512gb",
-   "price": 1299,
+   "price": 999,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796013-Product-0-I-638719060207675649.jpg?v=1791256556",
    "inStock": true,
    "brand": "Lenovo"
@@ -56,7 +60,7 @@
    "sku": "814291",
    "title": "MSI Claw 7 AI+ A2VM 7\" FHD Touchscreen 120Hz Gaming Handheld - Core Ultra 7 (512GB)",
    "url": "https://www.jbhifi.com.au/products/msi-claw-7-ai-a2vm-7-fhd-touchscreen-120hz-gaming-handheld-core-ultra-7-512gb",
-   "price": 1579,
+   "price": 1349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/814291-Product-0-I-638883132007315844.jpg?v=1752716477",
    "inStock": true,
    "brand": "Msi"
@@ -66,7 +70,8 @@
    "sku": "808380",
    "title": "Nintendo Switch 2 Console",
    "url": "https://www.jbhifi.com.au/products/nintendo-switch-2-console",
-   "price": 769,
+   "price": 688,
+   "wasPrice": 769,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/808380-Product-0-I-638792042401905111_bf87046f-52c7-495a-a4b5-4826f9abfea6.jpg?v=1743607995",
    "inStock": true,
    "brand": "Nintendo"
@@ -76,7 +81,7 @@
    "sku": "906355",
    "title": "Nintendo Switch 2 Console + Mario Kart World Bundle",
    "url": "https://www.jbhifi.com.au/products/nintendo-switch-2-console-mario-kart-world-bundle-1",
-   "price": 839,
+   "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906355-Product-0-I-639246848419430960.jpg?v=1789088106",
    "inStock": true,
    "brand": "Nintendo"
@@ -198,7 +203,7 @@
    "url": "https://www.jbhifi.com.au/products/xbox-series-x-1tb-digital-console-robot-white",
    "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749727-Product-0-I-638596367404641478_5078ff3e-77f8-4624-8299-9f9874400a44.jpg?v=1791256445",
-   "inStock": true,
+   "inStock": false,
    "brand": "Microsoft"
   }
  ]

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T03:12:34.348Z",
+ "scrapedAt": "2026-11-19T02:00:47.297Z",
  "offers": [
   {
    "retailer": "sg-mobilesquare",
@@ -36,7 +36,7 @@
    "sku": "43004004958297",
    "title": "Apple iPhone 17 Pro Max (512GB/12GB) Cosmic Orange",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-17-pro-max-512gb-12gb?variant=43004004958297",
-   "price": 1880,
+   "price": 1870,
    "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/IMG-3929.png?v=1776134258",
    "inStock": true
@@ -46,7 +46,7 @@
    "sku": "43004004991065",
    "title": "Apple iPhone 17 Pro Max (512GB/12GB) Deep Blue",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-17-pro-max-512gb-12gb?variant=43004004991065",
-   "price": 1880,
+   "price": 1870,
    "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/IMG-3972.png?v=1776134258",
    "inStock": false
@@ -56,7 +56,7 @@
    "sku": "43004004925529",
    "title": "Apple iPhone 17 Pro Max (512GB/12GB) Silver",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-17-pro-max-512gb-12gb?variant=43004004925529",
-   "price": 1880,
+   "price": 1870,
    "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/IMG-4107.png?v=1775672247",
    "inStock": false
@@ -119,7 +119,7 @@
    "price": 1740,
    "wasPrice": 1899,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "sg-mobilesquare",
@@ -146,7 +146,7 @@
    "sku": "44884578533465",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Black",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578533465",
-   "price": 2680,
+   "price": 2660,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E091FFF3-EE04-4EA0-A67B-3DAB82DCFE1C.jpg?v=1789322781",
    "inStock": true
@@ -156,7 +156,7 @@
    "sku": "44884578566233",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Burgundy",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578566233",
-   "price": 2680,
+   "price": 2660,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
    "inStock": false
@@ -166,7 +166,7 @@
    "sku": "44884578599001",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Glacier",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578599001",
-   "price": 2680,
+   "price": 2660,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E74008D2-F26A-4918-AEA3-856B7D9A9388.jpg?v=1789322781",
    "inStock": false
@@ -176,8 +176,48 @@
    "sku": "44884578500697",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Silver",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578500697",
-   "price": 2680,
+   "price": 2660,
    "wasPrice": 3699,
+   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/4D810AF8-2FD8-4800-9B18-4EF7E50D42A7.jpg?v=1789322781",
+   "inStock": false
+  },
+  {
+   "retailer": "sg-mobilesquare",
+   "sku": "44884577910873",
+   "title": "Apple iPhone 18 Pro (512GB/12GB) Black",
+   "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-512gb-12gb?variant=44884577910873",
+   "price": 2050,
+   "wasPrice": 2199,
+   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E091FFF3-EE04-4EA0-A67B-3DAB82DCFE1C.jpg?v=1789322781",
+   "inStock": false
+  },
+  {
+   "retailer": "sg-mobilesquare",
+   "sku": "44884577943641",
+   "title": "Apple iPhone 18 Pro (512GB/12GB) Burgundy",
+   "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-512gb-12gb?variant=44884577943641",
+   "price": 2050,
+   "wasPrice": 2199,
+   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
+   "inStock": true
+  },
+  {
+   "retailer": "sg-mobilesquare",
+   "sku": "44884577976409",
+   "title": "Apple iPhone 18 Pro (512GB/12GB) Glacier",
+   "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-512gb-12gb?variant=44884577976409",
+   "price": 2050,
+   "wasPrice": 2199,
+   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E74008D2-F26A-4918-AEA3-856B7D9A9388.jpg?v=1789322781",
+   "inStock": false
+  },
+  {
+   "retailer": "sg-mobilesquare",
+   "sku": "44884577878105",
+   "title": "Apple iPhone 18 Pro (512GB/12GB) Silver",
+   "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-512gb-12gb?variant=44884577878105",
+   "price": 2050,
+   "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/4D810AF8-2FD8-4800-9B18-4EF7E50D42A7.jpg?v=1789322781",
    "inStock": false
   },
@@ -186,7 +226,7 @@
    "sku": "44884587446361",
    "title": "Apple iPhone 18 Pro Max (1TB/12GB) Black",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-1tb-12gb?variant=44884587446361",
-   "price": 2680,
+   "price": 2670,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E091FFF3-EE04-4EA0-A67B-3DAB82DCFE1C.jpg?v=1789322781",
    "inStock": false
@@ -196,7 +236,7 @@
    "sku": "44884587479129",
    "title": "Apple iPhone 18 Pro Max (1TB/12GB) Burgundy",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-1tb-12gb?variant=44884587479129",
-   "price": 2680,
+   "price": 2670,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
    "inStock": true
@@ -206,7 +246,7 @@
    "sku": "44884587511897",
    "title": "Apple iPhone 18 Pro Max (1TB/12GB) Glacier",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-1tb-12gb?variant=44884587511897",
-   "price": 2680,
+   "price": 2670,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E74008D2-F26A-4918-AEA3-856B7D9A9388.jpg?v=1789322781",
    "inStock": true
@@ -216,7 +256,7 @@
    "sku": "44884587413593",
    "title": "Apple iPhone 18 Pro Max (1TB/12GB) Silver",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-max-1tb-12gb?variant=44884587413593",
-   "price": 2680,
+   "price": 2670,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/4D810AF8-2FD8-4800-9B18-4EF7E50D42A7.jpg?v=1789322781",
    "inStock": false
@@ -229,7 +269,7 @@
    "price": 1920,
    "wasPrice": 2099,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E091FFF3-EE04-4EA0-A67B-3DAB82DCFE1C.jpg?v=1789322781",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "sg-mobilesquare",
@@ -239,7 +279,7 @@
    "price": 1920,
    "wasPrice": 2099,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "sg-mobilesquare",
@@ -249,7 +289,7 @@
    "price": 1920,
    "wasPrice": 2099,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E74008D2-F26A-4918-AEA3-856B7D9A9388.jpg?v=1789322781",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "sg-mobilesquare",
@@ -703,44 +743,6 @@
   },
   {
    "retailer": "sg-mobilesquare",
-   "sku": "43055918547033",
-   "title": "OPPO A6 5G (256GB/6GB) Agent Sealed Set Sakura Pink",
-   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a6-5g-br-256gb-6gb-br-font-color-red-free-wired-earphones-br-free-10-ntuc-voucher-font-div?variant=43055918547033",
-   "price": 369,
-   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/A501EE75-2DEC-4138-ACBA-A84EE37D5E31.png?v=1775240352",
-   "inStock": false
-  },
-  {
-   "retailer": "sg-mobilesquare",
-   "sku": "43055918514265",
-   "title": "OPPO A6 5G (256GB/6GB) Agent Sealed Set Sapphire Blue",
-   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a6-5g-br-256gb-6gb-br-font-color-red-free-wired-earphones-br-free-10-ntuc-voucher-font-div?variant=43055918514265",
-   "price": 369,
-   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/5BD27C48-5FE4-4F57-B407-85E055EE6E8D.png?v=1775240352",
-   "inStock": false
-  },
-  {
-   "retailer": "sg-mobilesquare",
-   "sku": "43029221245017",
-   "title": "OPPO A6 5G (256GB/6GB) Telco Sealed Set Sakura Pink",
-   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a6-5g-br-256gb-6gb-br-font-color-red-free-wired-earphones-br-free-10-ntuc-voucher-font-div?variant=43029221245017",
-   "price": 339,
-   "wasPrice": 369,
-   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/A501EE75-2DEC-4138-ACBA-A84EE37D5E31.png?v=1775240352",
-   "inStock": false
-  },
-  {
-   "retailer": "sg-mobilesquare",
-   "sku": "43029221212249",
-   "title": "OPPO A6 5G (256GB/6GB) Telco Sealed Set Sapphire Blue",
-   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a6-5g-br-256gb-6gb-br-font-color-red-free-wired-earphones-br-free-10-ntuc-voucher-font-div?variant=43029221212249",
-   "price": 339,
-   "wasPrice": 369,
-   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/5BD27C48-5FE4-4F57-B407-85E055EE6E8D.png?v=1775240352",
-   "inStock": false
-  },
-  {
-   "retailer": "sg-mobilesquare",
    "sku": "43055922348121",
    "title": "OPPO A6 Pro 5G (256GB/8+8GB) Agent Sealed Set Coral Pink",
    "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a5-pro-5g-br-256gb-8-8gb-br-font-color-red-instant-19-rebate-br-font-div?variant=43055922348121",
@@ -782,37 +784,19 @@
   {
    "retailer": "sg-mobilesquare",
    "sku": "43055913336921",
-   "title": "OPPO A6X 5G (128GB/4GB+4GB) Agent Sealed Set Plum Purple Wired Stereo Earphones With Mic",
+   "title": "OPPO A6X 5G (128GB/4GB+4GB) Plum Purple Wired Stereo Earphones With Mic",
    "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a6x-5g-br-128gb-8gb-br-font-color-red-free-10-ntuc-voucher-font-div?variant=43055913336921",
-   "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/35F0ADF1-00E9-44D1-9A37-94542A11502A.jpg?v=1766220664",
-   "inStock": true
-  },
-  {
-   "retailer": "sg-mobilesquare",
-   "sku": "43055913369689",
-   "title": "OPPO A6X 5G (128GB/4GB+4GB) Agent Sealed Set Violet Purple Wired Stereo Earphones With Mic",
-   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a6x-5g-br-128gb-8gb-br-font-color-red-free-10-ntuc-voucher-font-div?variant=43055913369689",
-   "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/7B7C0117-7995-4FE4-94BB-44FD7F1CF0E8.jpg?v=1766220664",
-   "inStock": true
-  },
-  {
-   "retailer": "sg-mobilesquare",
-   "sku": "43029230059609",
-   "title": "OPPO A6X 5G (128GB/4GB+4GB) Telco Sealed Set Plum Purple Wired Stereo Earphones With Mic",
-   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a6x-5g-br-128gb-8gb-br-font-color-red-free-10-ntuc-voucher-font-div?variant=43029230059609",
-   "price": 279,
+   "price": 268,
    "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/35F0ADF1-00E9-44D1-9A37-94542A11502A.jpg?v=1766220664",
    "inStock": true
   },
   {
    "retailer": "sg-mobilesquare",
-   "sku": "43029230092377",
-   "title": "OPPO A6X 5G (128GB/4GB+4GB) Telco Sealed Set Violet Purple Wired Stereo Earphones With Mic",
-   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a6x-5g-br-128gb-8gb-br-font-color-red-free-10-ntuc-voucher-font-div?variant=43029230092377",
-   "price": 279,
+   "sku": "43055913369689",
+   "title": "OPPO A6X 5G (128GB/4GB+4GB) Violet Purple Wired Stereo Earphones With Mic",
+   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a6x-5g-br-128gb-8gb-br-font-color-red-free-10-ntuc-voucher-font-div?variant=43055913369689",
+   "price": 268,
    "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/7B7C0117-7995-4FE4-94BB-44FD7F1CF0E8.jpg?v=1766220664",
    "inStock": true

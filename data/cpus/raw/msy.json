@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-11-18T01:52:16.506Z",
+ "scrapedAt": "2026-11-19T01:21:19.009Z",
  "offers": [
+  {
+   "retailer": "msy",
+   "sku": "97390",
+   "title": "AMD Ryzen 5 5500F 6 Core 4.4GHz AM4 Box CPU Processor",
+   "brand": "AMD",
+   "mpn": "100-100001905BOX",
+   "url": "https://www.msy.com.au/product/amd-ryzen-5-5500f-6-core-4-4ghz-am4-box-cpu-processor-100-100001905box-97390",
+   "price": 149,
+   "image": "https://assets.msy.com.au/newsite/images/202611/thumb_img/AMD-CPU-AMD-Ryzen-5-5500F-6-Core-4-4GHz-AM4-Box-CPU-Processor-100-100001905BOX-1.jpg",
+   "inStock": true
+  },
   {
    "retailer": "msy",
    "sku": "75737",
@@ -107,7 +118,7 @@
    "brand": "AMD",
    "mpn": "100-100002235WOF",
    "url": "https://www.msy.com.au/product/amd-ryzen-7-7700x3d-8-core-am5-4-5ghz-cpu-processor-100-100002235wof-95001",
-   "price": 529,
+   "price": 499,
    "image": "https://assets.msy.com.au/newsite/images/202607/thumb_img/AMD-CPU-AMD-Ryzen-7-7700X3D-8-Core-AM5-4-5GHz-CPU-Processor-100-100002235WOF-3.jpg",
    "inStock": true
   },
@@ -228,7 +239,7 @@
    "brand": "Intel",
    "mpn": "BX80768265",
    "url": "https://www.msy.com.au/product/intel-core-arrow-lake-ultra-7-265-lga-1851-5-30ghz-cpu-processor-bx80768265-81670",
-   "price": 585,
+   "price": 559,
    "image": "https://assets.msy.com.au/newsite/images/202502/thumb_img/Intel-CPU-Intel-Core-Arrow-Lake-Ultra-7-265-LGA-1851-5-30GHz-CPU-Processor-BX80768265-3.jpg",
    "inStock": true
   },
@@ -294,7 +305,7 @@
    "brand": "Intel",
    "mpn": "BX8071514100",
    "url": "https://www.msy.com.au/product/intel-core-i3-14100-4-core-4-70-ghz-lga-1700-boxed-cpu-processor-bx8071514100-75275",
-   "price": 199,
+   "price": 179,
    "image": "https://assets.msy.com.au/newsite/images/202401/thumb_img/Intel-CPU-Intel-Core-i3-14100-4-Core-4-70-GHz-LGA-1700-CPU-Processor-1.jpg",
    "inStock": true
   },
@@ -359,7 +370,7 @@
    "title": "Intel Core i7 12700 12 Core LGA 1700 4.90GHz CPU Processor",
    "brand": "Intel",
    "url": "https://www.msy.com.au/product/intel-core-i7-12700-12-core-lga-1700-4-90ghz-cpu-processor-62650",
-   "price": 479,
+   "price": 469,
    "image": "https://assets.msy.com.au/newsite/images/202204/thumb_img/62650_thumb_G_1649032065412.jpg",
    "inStock": true
   },
@@ -425,7 +436,7 @@
    "brand": "Intel",
    "mpn": "BX8071514700F",
    "url": "https://www.msy.com.au/product/intel-core-i7-14700f-20-core-lga-1700-5-40ghz-boxed-cpu-processor-bx8071514700f-75271",
-   "price": 509,
+   "price": 499,
    "image": "https://assets.msy.com.au/newsite/images/202401/thumb_img/Intel-CPU-Intel-Core-i7-14700F-20-Core-LGA-1700-5-40GHz-CPU-Processor-1.jpg",
    "inStock": true
   },
@@ -480,7 +491,7 @@
    "brand": "Intel",
    "mpn": "BX80768245K",
    "url": "https://www.msy.com.au/product/intel-core-ultra-5-14-core-lga-1851-245k-5-20ghz-cpu-processor-bx80768245k-79656",
-   "price": 339,
+   "price": 279,
    "image": "https://assets.msy.com.au/newsite/images/202410/thumb_img/Intel-CPU-Intel-Core-Ultra-5-14-Core-LGA-1851-245K-5-20GHz-CPU-Processor-BX80768245K-1.jpg",
    "inStock": true
   },
@@ -524,7 +535,7 @@
    "brand": "Intel",
    "mpn": "BX80768250K",
    "url": "https://www.msy.com.au/product/intel-core-ultra-5-250k-plus-lga-1851-5-30ghz-cpu-processor-bx80768250k-93151",
-   "price": 309,
+   "price": 299,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Intel-CPU-Intel-Core-Ultra-5-250K-Plus-LGA-1851-5-30GHz-CPU-Processor-BX80768250K-1.jpg",
    "inStock": true
   },
@@ -568,7 +579,7 @@
    "brand": "Intel",
    "mpn": "BX80768270K",
    "url": "https://www.msy.com.au/product/intel-core-ultra-7-270k-plus-lga-1851-5-50ghz-cpu-processor-bx80768270k-93152",
-   "price": 499,
+   "price": 469,
    "image": "https://assets.msy.com.au/newsite/images/202603/thumb_img/Intel-CPU-Intel-Core-Ultra-7-270K-Plus-LGA-1851-5-50GHz-CPU-Processor-BX80768270K-1.jpg",
    "inStock": true
   },

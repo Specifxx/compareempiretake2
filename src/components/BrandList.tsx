@@ -2,6 +2,7 @@
 import Link from "next/link";
 import type { BrandInfo } from "@/lib/catalog";
 import { categoryById } from "@/lib/categories";
+import { sized } from "@/lib/image-size";
 
 /**
  * The /brands grid. A client component only so the page's RSC payload carries one small row per
@@ -14,7 +15,7 @@ export function BrandList({ brands }: { brands: BrandInfo[] }) {
       {brands.map((b) => (
         <Link prefetch={false} key={b.slug} href={`/brands/${b.slug}`} className="card tile-hover group flex min-w-0 items-center gap-3 p-3 sm:gap-4 sm:p-4">
           <div className="img-tile grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-lg sm:h-16 sm:w-16">
-            {b.image && <img src={b.image} alt={`${b.brand} products`} className="product-img h-10 w-10 object-contain sm:h-14 sm:w-14" loading="lazy" />}
+            {b.image && <img src={sized(b.image, 56)} alt={`${b.brand} products`} className="product-img h-10 w-10 object-contain sm:h-14 sm:w-14" loading="lazy" />}
           </div>
           <div className="min-w-0">
             <div className="text-base font-bold leading-snug [overflow-wrap:anywhere] sm:text-lg">{b.brand}</div>

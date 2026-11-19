@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:42:32.027Z",
+ "scrapedAt": "2026-11-19T01:31:33.858Z",
  "offers": [
   {
    "retailer": "us-brandsmart",
@@ -16,9 +16,10 @@
    "retailer": "us-brandsmart",
    "sku": "3437",
    "title": "CleanView Compact Turbo Upright Vacuum",
-   "url": "https://www.brandsmartusa.com/products/appliances-vacuum-cleaners-floor-care-upright-vacuums-cleanview-compact-turbo-upright-vacuum",
-   "price": 89.99,
-   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/3af80077-1654-404c-97bc-34e66c1acd20_c3286f5d-39a2-46e5-8309-566aba3f1db1.jpg?v=1794960928",
+   "url": "https://www.brandsmartusa.com/products/appliances-upright-vacuums-cleanview-compact-turbo-upright-vacuum",
+   "price": 79.99,
+   "wasPrice": 99.99,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/f748f410-bade-4de2-9e3b-b2ffe86e4e8a_5d1f658c-c813-4d3f-a48f-5388bab34ba8.jpg?v=1795027719",
    "inStock": true,
    "brand": "BISSELL"
   },
@@ -38,7 +39,8 @@
    "sku": "4073",
    "title": "CleanView Max Tangle-Free Rewind Pet Vacuum",
    "url": "https://www.brandsmartusa.com/products/appliances-vacuum-cleaners-floor-care-upright-vacuums-cleanview-max-tangle-free-rewind-pet-vacuum",
-   "price": 189.99,
+   "price": 159.99,
+   "wasPrice": 199.99,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/46cc8fb0-c34a-424e-9382-7ba62a0d6266.jpg?v=1790187638",
    "inStock": true,
    "brand": "BISSELL"
@@ -72,6 +74,29 @@
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/dd985b95-9678-4ae7-a84a-c2b73041c1ce.jpg?v=1790093921",
    "inStock": true,
    "brand": "BISSELL"
+  },
+  {
+   "retailer": "us-brandsmart",
+   "sku": "3789",
+   "title": "Cleanview XR Stick Vacuum",
+   "url": "https://www.brandsmartusa.com/products/appliances-vacuum-cleaners-floor-care-stick-vacuums-cleanview-xr-stick-vacuum",
+   "price": 199.99,
+   "wasPrice": 249.99,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/65e4be6c-6fa6-4a07-813b-2f23a54da63b.jpg?v=1790099669",
+   "inStock": true,
+   "brand": "BISSELL"
+  },
+  {
+   "retailer": "us-brandsmart",
+   "sku": "NES520",
+   "title": "Corded Stick Vacuum Cleaner",
+   "url": "https://www.brandsmartusa.com/products/appliances-vacuum-cleaners-floor-care-stick-vacuums-corded-stick-vacuum-cleaner",
+   "price": 129.99,
+   "wasPrice": 199.99,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/9f987602-78d6-4811-9651-d6eb1b8de9ad.jpg?v=1790099843",
+   "inStock": true,
+   "brand": "Eureka",
+   "mpn": "NES520"
   },
   {
    "retailer": "us-brandsmart",
@@ -319,6 +344,16 @@
    "inStock": true,
    "brand": "Electrolux",
    "mpn": "EHVS7551AO"
+  },
+  {
+   "retailer": "us-brandsmart",
+   "sku": "447921-01",
+   "title": "V11 Cordless Vacuum - Blue/Nickel",
+   "url": "https://www.brandsmartusa.com/products/appliances-vacuum-cleaners-floor-care-stick-vacuums-v11-cordless-vacuum-blue-nickel",
+   "price": 569.99,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/dfc2c03c-9076-499d-9dd3-4979e49f2e20.jpg?v=1790101638",
+   "inStock": true,
+   "brand": "Dyson"
   },
   {
    "retailer": "us-brandsmart",

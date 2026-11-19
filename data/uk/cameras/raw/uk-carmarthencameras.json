@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:54:36.512Z",
+ "scrapedAt": "2026-11-19T01:43:38.350Z",
  "offers": [
   {
    "retailer": "uk-carmarthencameras",
@@ -127,7 +127,7 @@
    "price": 379,
    "wasPrice": 559,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Canon-EOS-R100-APS-C-Mirrorless-Camera-Body-Product-Photo-1.webp?v=1787647006",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -232,7 +232,7 @@
    "price": 799,
    "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Canon-EOS-R50-V-Mirrorless-Camera-Body-Only-Product-Photo-14.webp?v=1742986274",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -296,7 +296,7 @@
    "price": 1439,
    "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Canon-EOS-R7-Mirrorless-Camera-with-RF-S-18-150mm-Lens-Kit-product-photo-1.webp?v=1730544950",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -398,7 +398,8 @@
    "sku": "6937224110519",
    "title": "DJI Osmo 360 - Adventure Combo",
    "url": "https://carmarthencameras.com/products/dji-osmo-360-adventure-combo",
-   "price": 539,
+   "price": 389,
+   "wasPrice": 539,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/DJI-Osmo-360-Product-Photo-4.webp?v=1753711238",
    "inStock": true
   },
@@ -407,7 +408,8 @@
    "sku": "6937224110502",
    "title": "DJI Osmo 360 8K Camera - Standard Combo",
    "url": "https://carmarthencameras.com/products/dji-osmo-360-standard-combo",
-   "price": 409,
+   "price": 295,
+   "wasPrice": 409,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/DJI-Osmo-360-Product-Photo-4.webp?v=1753711238",
    "inStock": true
   },
@@ -416,7 +418,8 @@
    "sku": "6937224148741",
    "title": "DJI Osmo 360 II Adventure Combo",
    "url": "https://carmarthencameras.com/products/dji-osmo-360-ii-adventure-combo",
-   "price": 639,
+   "price": 579,
+   "wasPrice": 639,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/DJI-Osmo-360-II-Adventure-Combo-Product-Photo-6.webp?v=1793714525",
    "inStock": true
   },
@@ -443,7 +446,8 @@
    "sku": "6941565965080",
    "title": "DJI Osmo Action 4 Adventure Combo Camera",
    "url": "https://carmarthencameras.com/products/dji-osmo-action-4-adventure-combo",
-   "price": 299,
+   "price": 239,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OsmoAction42_2_13e31bd1-fca3-481e-b1af-5a1b092b17b4.jpg?v=1719844667",
    "inStock": false
   },
@@ -452,7 +456,8 @@
    "sku": "6941565965073",
    "title": "DJI Osmo Action 4 Standard Combo Camera",
    "url": "https://carmarthencameras.com/products/dji-osmo-action-4-standard-combo",
-   "price": 209,
+   "price": 165,
+   "wasPrice": 209,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OsmoAction42_2.jpg?v=1690899105",
    "inStock": false
   },
@@ -506,7 +511,8 @@
    "sku": "6941565969903",
    "title": "DJI Osmo Pocket 3 Creator Combo Video Camera",
    "url": "https://carmarthencameras.com/products/dji-osmo-pocket-3-creator-combo",
-   "price": 499,
+   "price": 339,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/DJI-Osmo-Pocket-3-Creator-Combo-Video-Camera-Product-Photo-3.webp?v=1773307990",
    "inStock": false
   },
@@ -515,7 +521,8 @@
    "sku": "6941565969873",
    "title": "DJI Osmo Pocket 3 Video Camera",
    "url": "https://carmarthencameras.com/products/dji-osmo-pocket-3",
-   "price": 389,
+   "price": 262,
+   "wasPrice": 389,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/DJI-Osmo-Pocket-3-Video-Camera-product-shot-7a6a53e5c8e9829a1364577fdb3209a3_ultra.jpg?v=1699612774",
    "inStock": true
   },
@@ -1167,7 +1174,8 @@
    "sku": "819900014341",
    "title": "Kodak FZ45 Compact Camera - Blue",
    "url": "https://carmarthencameras.com/products/kodak-fz45-compact-camera-blue",
-   "price": 112,
+   "price": 89,
+   "wasPrice": 112,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak-FZ45-Compact-Camera-Blue-Product-Photo-11.webp?v=1785423525",
    "inStock": true,
    "brand": "Kodak"
@@ -1177,7 +1185,8 @@
    "sku": "819900014419",
    "title": "Kodak FZ45 Compact Camera - Pink",
    "url": "https://carmarthencameras.com/products/kodak-fz45-compact-camera-pink",
-   "price": 112,
+   "price": 89,
+   "wasPrice": 112,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak-FZ45-Compact-Camera-Pink-Product-Photo-11.webp?v=1785423962",
    "inStock": true,
    "brand": "Kodak"
@@ -1309,7 +1318,7 @@
    "sku": "819900014037",
    "title": "Kodak PIXPRO FZ45 16MP Digital Camera - Black",
    "url": "https://carmarthencameras.com/products/kodak-pixpro-fz45-16mp-digital-camera-black",
-   "price": 94,
+   "price": 89,
    "wasPrice": 112,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/s-l1600_12.jpg?v=1676132501",
    "inStock": true,
@@ -1320,7 +1329,7 @@
    "sku": "819900014044",
    "title": "Kodak PIXPRO FZ45 16MP Digital Camera - Red",
    "url": "https://carmarthencameras.com/products/copy-of-kodak-pixpro-fz45-16mp-digital-camera-red",
-   "price": 94,
+   "price": 89,
    "wasPrice": 112,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak_Pixpro_Compact_Camera_FZ45RD_1.webp?v=1761565493",
    "inStock": true,
@@ -1331,7 +1340,7 @@
    "sku": "819900014051",
    "title": "Kodak PIXPRO FZ45 16MP Digital Camera - White",
    "url": "https://carmarthencameras.com/products/copy-of-kodak-pixpro-fz45-16mp-digital-camera-white",
-   "price": 94,
+   "price": 89,
    "wasPrice": 112,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak_Pixpro_Compact_Camera_FZ45WH_1.webp?v=1761569042",
    "inStock": true,
@@ -1342,7 +1351,8 @@
    "sku": "0819900014211",
    "title": "Kodak Pixpro FZ45 Digital Camera - Silver",
    "url": "https://carmarthencameras.com/products/kodak-pixpro-fz45-silver",
-   "price": 112,
+   "price": 89,
+   "wasPrice": 112,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak-Pixpro-FZ45-Silver-Product-Photo-2.webp?v=1784798988",
    "inStock": true,
    "brand": "Kodak"
@@ -1352,7 +1362,7 @@
    "sku": "0819900014068",
    "title": "Kodak PIXPRO FZ55 16MP 5x Zoom Compact Camera - Black",
    "url": "https://carmarthencameras.com/products/kodak-pixpro-fz55-16mp-5x-zoom-compact-camera-black",
-   "price": 125,
+   "price": 120,
    "wasPrice": 154,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak_Pixpro_Compact_Camera_FZ55BK_10.webp?v=1773241373",
    "inStock": true,
@@ -1363,7 +1373,7 @@
    "sku": "819900014082",
    "title": "Kodak PIXPRO FZ55 16MP 5x Zoom Compact Camera - Blue",
    "url": "https://carmarthencameras.com/products/kodak-pixpro-fz55-16mp-5x-zoom-compact-camera-blue",
-   "price": 129,
+   "price": 120,
    "wasPrice": 154,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak_Pixpro_Compact_Camera_FZ55BL_1.webp?v=1773239120",
    "inStock": true,
@@ -1374,7 +1384,7 @@
    "sku": "819900014075",
    "title": "Kodak PIXPRO FZ55 16MP 5x Zoom Compact Camera - Red",
    "url": "https://carmarthencameras.com/products/kodak-pixpro-fz55-16mp-5x-zoom-compact-camera-red",
-   "price": 129,
+   "price": 120,
    "wasPrice": 154,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/81a8ZMB-nNL._AC_SL1500.jpg?v=1682066154",
    "inStock": true,
@@ -1387,7 +1397,7 @@
    "url": "https://carmarthencameras.com/products/kodak-pixpro-fz55-pink",
    "price": 130,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak-Pixpro-FZ55-Pink-Product-Photo-1.webp?v=1783323801",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kodak"
   },
   {
@@ -1395,7 +1405,8 @@
    "sku": "0819900014310",
    "title": "Kodak Pixpro FZ55 Digital Camera - Silver",
    "url": "https://carmarthencameras.com/products/kodak-pixpro-fz55-silver",
-   "price": 130,
+   "price": 120,
+   "wasPrice": 130,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak-Pixpro-FZ55-Silver-Product-Photo-1.webp?v=1783326028",
    "inStock": true,
    "brand": "Kodak"
@@ -1405,7 +1416,8 @@
    "sku": "0819900013993",
    "title": "Kodak PIXPRO WPZ2 16MP 4x Zoom Tough Compact Camera - Blue",
    "url": "https://carmarthencameras.com/products/kodak-pixpro-wpz2-16mp-4x-zoom-tough-compact-camera-blue",
-   "price": 159,
+   "price": 153,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak_Pixpro_Compact_Camera_WPZ2BL_1.webp?v=1761573917",
    "inStock": true,
    "brand": "Kodak"
@@ -1435,7 +1447,8 @@
    "sku": "819900014020",
    "title": "Kodak Pixpro WPZ2 Tough Digital Compact Camera - Red",
    "url": "https://carmarthencameras.com/products/kodak-pixpro-wpz2-tough-digital-compact-camera-red",
-   "price": 159,
+   "price": 153,
+   "wasPrice": 159,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak_Pixpro_Compact_Camera_WPZ2RD_1.webp?v=1761580616",
    "inStock": true,
    "brand": "Kodak"
@@ -1735,7 +1748,7 @@
    "sku": "4960759916617",
    "title": "Nikon CoolPix P1100 Bridge Camera",
    "url": "https://carmarthencameras.com/products/nikon-coolpix-p1100-bridge-camera",
-   "price": 999,
+   "price": 849,
    "wasPrice": 1049,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/P1100_BK_front_lo.webp?v=1738748050",
    "inStock": true,
@@ -2302,7 +2315,8 @@
    "sku": "5025232942756",
    "title": "Panasonic Lumix S5II Camera with 20-60mm & 50mm Lens Kit",
    "url": "https://carmarthencameras.com/products/panasonic-lumix-s5ii-with-20-60mm-50mm-lens-kit",
-   "price": 1799,
+   "price": 1399,
+   "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Panasonic-Lumix-S5II-Camera-with-20-60mm-_-50mm-Lens-Kit-product-photo-6.webp?v=1729590464",
    "inStock": true,
    "brand": "Panasonic"
@@ -2466,7 +2480,8 @@
    "sku": "5025232978748",
    "title": "Panasonic Lumix TZ99 Compact Camera - Black",
    "url": "https://carmarthencameras.com/products/panasonic-lumix-tz99-compact-camera-black",
-   "price": 519,
+   "price": 493,
+   "wasPrice": 519,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/lumix-camera-DC-TZ99E-K-productimage-front.webp?v=1734347686",
    "inStock": true,
    "brand": "Panasonic"
@@ -2476,7 +2491,8 @@
    "sku": "5025232978755",
    "title": "Panasonic Lumix TZ99 Compact Camera - Silver",
    "url": "https://carmarthencameras.com/products/panasonic-lumix-tz99-compact-camera-silver",
-   "price": 519,
+   "price": 493,
+   "wasPrice": 519,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/lumix-camera-DC-TZ99E-S-productimage-front.webp?v=1734348329",
    "inStock": true,
    "brand": "Panasonic"
@@ -2782,7 +2798,8 @@
    "sku": "4548736109018",
    "title": "Sony a6100 Mirrorless Digital Camera with 16-50mm and 55-210mm Lenses",
    "url": "https://carmarthencameras.com/products/sony-a6100-mirrorless-digital-camera-with-16-50mm-and-55-210mm-lenses",
-   "price": 999,
+   "price": 699,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/1566990986_img_1242994_1__1_cf4546bb-ca6b-4b5f-bc0a-77a7e0620dd9.jpg?v=1692152808",
    "inStock": true,
    "brand": "Sony"
@@ -2792,7 +2809,8 @@
    "sku": "4548736146976",
    "title": "Sony a6700 16-50mm Digital Camera Kit",
    "url": "https://carmarthencameras.com/products/copy-of-sony-a6700-camera-body-only",
-   "price": 1449,
+   "price": 1295,
+   "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/sony-a6700-mirrorless-camerac1bdf7bf848c9748670c3bed5a857398_8cac871f-9d0e-4f5e-8a45-0998fa7d2d3d.jpg?v=1689261336",
    "inStock": true,
    "brand": "Sony"
@@ -2835,7 +2853,8 @@
    "sku": "4548736133754",
    "title": "Sony a7 IV Digital Camera Body",
    "url": "https://carmarthencameras.com/products/sony-alpha-7-iv-full-frame-mirrorless-camera-body",
-   "price": 1999,
+   "price": 1799,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Sony-A7-IV-Digital-Camera-Body-product-photo-1.webp?v=1770029321",
    "inStock": true,
    "brand": "Sony"
@@ -2897,7 +2916,7 @@
    "sku": "5013493465145",
    "title": "Sony ZV-1 II Digital Camera",
    "url": "https://carmarthencameras.com/products/sony-zv-1-ii-v-log-camera",
-   "price": 649,
+   "price": 699,
    "wasPrice": 869,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/1684837971_IMG_2003238.jpg?v=1692149165",
    "inStock": true,
@@ -2919,7 +2938,7 @@
    "sku": "5013493418318",
    "title": "Sony ZV-E10 Digital Camera Body",
    "url": "https://carmarthencameras.com/products/sony-alpha-zv-e10-mirrorless-vlogging-camera-body-only",
-   "price": 499,
+   "price": 599,
    "wasPrice": 679,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Sony-Alpha-ZV-E10-Mirrorless-Vlogging-Camera-product-photo-1.webp?v=1726650869",
    "inStock": false,

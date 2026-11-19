@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:42:32.031Z",
+ "scrapedAt": "2026-11-19T01:31:33.862Z",
  "offers": [
   {
    "retailer": "us-brandsmart",
@@ -77,17 +77,6 @@
    "inStock": true,
    "brand": "Apple",
    "mpn": "MD4G4LLA"
-  },
-  {
-   "retailer": "us-brandsmart",
-   "sku": "MC9X4LLA",
-   "title": "11'' iPad Air M3 chip 128GB With Wi-Fi - Blue",
-   "url": "https://www.brandsmartusa.com/products/electronics-computers-tablets-and-home-office-tablets-11-ipad-air-m3-chip-128gb-with-wi-fi-blue",
-   "price": 539,
-   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/eafedd53-6ac2-49af-984c-cf418b318d7a_ca1dcd2a-2a4a-4e14-be29-9dd9c57a9144.jpg?v=1790184033",
-   "inStock": true,
-   "brand": "Apple",
-   "mpn": "MC9X4LLA"
   },
   {
    "retailer": "us-brandsmart",
@@ -189,6 +178,17 @@
   },
   {
    "retailer": "us-brandsmart",
+   "sku": "MDYK4LLA",
+   "title": "13'' iPad Pro M5 chip 256GB With Wi-Fi - Silver",
+   "url": "https://www.brandsmartusa.com/products/electronics-computers-tablets-and-home-office-tablets-13-ipad-pro-m5-chip-256gb-with-wi-fi-silver",
+   "price": 1499,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/8fdcff15-ed8f-4172-b14e-4bebcd3d6c87.jpg?v=1790184391",
+   "inStock": true,
+   "brand": "Apple",
+   "mpn": "MDYK4LLA"
+  },
+  {
+   "retailer": "us-brandsmart",
    "sku": "V8216GPUR",
    "title": "7'' 16GB HD Kids Tablet - Purple",
    "url": "https://www.brandsmartusa.com/products/electronics-computers-tablets-and-home-office-tablets-7-16gb-hd-kids-tablet-purple",
@@ -231,17 +231,6 @@
    "inStock": true,
    "brand": "SuperSonic",
    "mpn": "SC-4107"
-  },
-  {
-   "retailer": "us-brandsmart",
-   "sku": "SMX135GZAAL15",
-   "title": "8.7\" Galaxy A11 LTE 64GB 4GB RAM Gray Tablet",
-   "url": "https://www.brandsmartusa.com/products/electronics-computers-tablets-and-home-office-tablets-8-7-galaxy-a11-lte-64gb-4gb-ram-gray-tablet",
-   "price": 199.99,
-   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/b7999439-5eac-45ea-b308-d01936af9266_1097a159-9ce1-4ea9-ad2e-560e2701aed3.jpg?v=1790184324",
-   "inStock": true,
-   "brand": "Samsung",
-   "mpn": "SMX135GZAAL15"
   },
   {
    "retailer": "us-brandsmart",
@@ -303,10 +292,10 @@
   {
    "retailer": "us-brandsmart",
    "sku": "RATM30846F-GR",
-   "title": "8” MediaTek MT8781/G99, Octa Core 4GB Memory 64GB Storage 2 MP Front Camera 5 MP Rear Camera Android 14 Tablet",
+   "title": "8” MediaTek MT8781/G99, Octa Core 4GB Memory 64GB Storage 2 MP Front Camera 5 MP Rear Camera Android 14 Tablet,8” Tablet MediaTek MT8781/G99, Octa Core, 4GB Memory 64GB Storage, 2 MP Front Camera, 5 MP Rear Camera, Android 14 - Gray",
    "url": "https://www.brandsmartusa.com/products/electronics-computers-tablets-and-home-office-tablets-8-mediatek-mt8781-g99-octa-core-4gb-memory-64gb-storage-2-mp-front-camera-5-mp-r",
    "price": 139.99,
-   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/601b977d-220f-45ab-b135-dc1363cc70fe.jpg?v=1790189425",
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/e419da7d-a3f1-48ec-b158-ca4f3cffa889.jpg?v=1795025968",
    "inStock": true,
    "mpn": "RATM30846F-GR"
   },
@@ -354,6 +343,30 @@
    "inStock": true,
    "brand": "Samsung",
    "mpn": "SMX230NZSTXAR"
+  },
+  {
+   "retailer": "us-brandsmart",
+   "sku": "SC5110",
+   "title": "Sonic10pro 10\" 32GB Octacore Android Tablet",
+   "url": "https://www.brandsmartusa.com/products/electronics-computers-tablets-and-home-office-tablets-sonic10pro-10-32gb-octacore-android-tablet",
+   "price": 99.99,
+   "wasPrice": 129.99,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/d5bbcbf4-573f-47ac-a0f4-c5e9121a9150.jpg?v=1790190065",
+   "inStock": true,
+   "brand": "SuperSonic",
+   "mpn": "SC5110"
+  },
+  {
+   "retailer": "us-brandsmart",
+   "sku": "SC5107",
+   "title": "Sonic7pro 7\" 32GB Octacore Android Tablet",
+   "url": "https://www.brandsmartusa.com/products/electronics-computers-tablets-and-home-office-tablets-sonic7pro-7-32gb-octacore-android-tablet",
+   "price": 79.99,
+   "wasPrice": 99.99,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/012e2664-fb02-42c9-8027-2a97ab262b71.jpg?v=1790190067",
+   "inStock": true,
+   "brand": "SuperSonic",
+   "mpn": "SC5107"
   }
  ]
 }

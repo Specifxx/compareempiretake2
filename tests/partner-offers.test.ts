@@ -36,3 +36,13 @@ test("expired, not started, within a day of ending, Impact brands and stores wit
   assert.deepEqual(r[0].offers.map((x) => x.id), [5, 4]);
   assert.equal(r.length, 1);
 });
+
+test("only on-topic (tech) programmes are shown: coffee, cookware and perfume partners never are", () => {
+  const offTopic = [
+    { id: 35221, name: "Stumptown Coffee Roasters", domains: ["stumptowncoffee.com"], region: "US" },
+    { id: 96403, name: "Milk Street Kitchen", domains: ["177milkstreet.com"], region: "US" },
+    { id: 80509, name: "GL Technologies (Hong Kong) Limited", domains: ["gl-inet.com"], region: "US" },
+  ];
+  const offers = [o(1, 35221, "2026-12-01T00:00:00Z"), o(2, 96403, "2026-12-01T00:00:00Z"), o(3, 80509, "2026-12-01T00:00:00Z")];
+  assert.deepEqual(partnerOffers("us", "home", { now: NOW, joined: offTopic, offers }).map((x) => x.advertiserId), [80509]);
+});

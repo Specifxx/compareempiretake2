@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T01:50:01.429Z",
+ "scrapedAt": "2026-11-19T01:19:58.305Z",
  "offers": [
   {
    "retailer": "ple",
@@ -98,6 +98,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "675848",
+   "title": "ASUS GeForce RTX 5060 Prime OC 8GB GDDR7",
+   "brand": "ASUS",
+   "mpn": "PRIME-RTX5060-O8G",
+   "url": "https://www.ple.com.au/products/675848/asus-geforce-rtx-5060-prime-oc-8gb-gddr7",
+   "price": 699,
+   "wasPrice": 769,
+   "image": "https://plecom.imgix.net/iil-430563-675848.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "688386",
    "title": "ASUS GeForce RTX 5060 Ti Dual 8GB GDDR7 - White",
    "brand": "ASUS",
@@ -140,7 +152,7 @@
    "price": 749,
    "wasPrice": 839,
    "image": "https://plecom.imgix.net/iil-427717-674698.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -401,17 +413,6 @@
    "wasPrice": 1609,
    "image": "https://plecom.imgix.net/iil-422800-672471.jpg?w=600&h=600",
    "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "681908",
-   "title": "ASUS Turbo Radeon AI Pro R9700 32GB GDDR6",
-   "brand": "ASUS",
-   "mpn": "TURBO-AI-PRO-R9700-32G",
-   "url": "https://www.ple.com.au/products/681908/asus-turbo-radeon-ai-pro-r9700-32gb-gddr6",
-   "price": 3199,
-   "image": "https://plecom.imgix.net/iil-489283-681908.jpg?w=600&h=600",
-   "inStock": true
   },
   {
    "retailer": "ple",
@@ -723,7 +724,7 @@
    "price": 1099,
    "wasPrice": 1409,
    "image": "https://plecom.imgix.net/iil-422695-672552.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -732,8 +733,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-R907GREGAMING OC-12GD",
    "url": "https://www.ple.com.au/products/685112/gigabyte-radeon-rx-9070-gre-gaming-oc-12gb-gddr6",
-   "price": 899,
-   "wasPrice": 949,
+   "price": 949,
    "image": "https://plecom.imgix.net/iil-471506-685112.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1050,7 +1050,8 @@
    "brand": "NVIDIA",
    "mpn": "900-5G153-2500-000",
    "url": "https://www.ple.com.au/products/679159/nvidia-rtx-pro-6000-blackwell-max-q-workstation-edition-96gb",
-   "price": 29999,
+   "price": 27599,
+   "wasPrice": 29999,
    "image": "https://plecom.imgix.net/iil-464355-679159.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1165,18 +1166,6 @@
    "price": 3379,
    "image": "https://plecom.imgix.net/iil-415699-672776.jpg?w=600&h=600",
    "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "676091",
-   "title": "SAPPHIRE NITRO+ Radeon RX 9060 XT 16GB GDDR6",
-   "brand": "SAPPHIRE",
-   "mpn": "11350-01-20G",
-   "url": "https://www.ple.com.au/products/676091/sapphire-nitro-radeon-rx-9060-xt-16gb-gddr6",
-   "price": 859,
-   "wasPrice": 899,
-   "image": "https://plecom.imgix.net/iil-433043-676091.jpg?w=600&h=600",
-   "inStock": true
   },
   {
    "retailer": "ple",

@@ -5,8 +5,8 @@ import { RetailerDot } from "@/components/RetailerChip";
 import { getCatalog } from "@/lib/catalog";
 
 export const metadata: Metadata = {
-  title: "About Compare Empire — how we compare prices",
-  description: "Compare Empire is an independent price comparison site for the US, Australia and the UK. Here's how we collect prices, rank stores and keep it honest.",
+  title: "About Compare Empire: who runs it and how we compare prices",
+  description: "Compare Empire is an independent price comparison site run by Bill and George. How we collect prices, rank stores, earn money and what the site costs to run.",
   alternates: { canonical: "/about" },
 };
 
@@ -69,10 +69,26 @@ export default function AboutPage() {
         </p>
       </Section>
 
+      <Section title="Who runs it" id="who">
+        <p className="text-ink-soft">
+          Compare Empire is run by its two co-founders, Bill and George, from Australia. It is independent and self-funded: no retailer, brand
+          or investor owns any of it. We use AI tools to help write the site&apos;s code and draft its buying guides, and check the guides before
+          they go up. Prices are never typed in by hand: a program reads them from each retailer every day.
+        </p>
+      </Section>
+
       <Section title="How we make money" id="money">
         <p className="text-ink-soft">
-          Right now, we don&apos;t. When we do, it will be through affiliate links and clearly-labelled ads — and neither will ever change the order of prices.
-          If a store pays us, you&apos;ll still see the cheapest one first.
+          Through affiliate links: eBay, Amazon and some retailers pay us a small commission when you buy through a link here, at no cost to you.
+          Those links are labelled, and none of them changes the order of prices: if a store pays us, you&apos;ll still see the cheapest one first.
+          The details are on our <Link prefetch={false} href="/disclosure" className="text-brand hover:underline">disclosure page</Link>.
+        </p>
+      </Section>
+
+      <Section title="What it costs to run" id="costs">
+        <p className="text-ink-soft">
+          Compare Empire shares its hosting, daily price checks, domains and tools with a few other price sites we run. Together they cost about
+          A$790 a month (our own books, 30 days to 15 November 2026). The affiliate commission above is what pays for it.
         </p>
       </Section>
 

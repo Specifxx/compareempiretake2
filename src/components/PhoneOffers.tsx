@@ -29,6 +29,7 @@ import { PriceAlertButton } from "./PriceAlertButton";
 const AMAZON_CLOCK: Record<string, string> = { au: "Sydney time", us: "New York time", uk: "London time", ca: "Toronto time", sg: "Singapore time" };
 import { aboveRrp, unusuallyHigh, type PriceCheck, type Rrp, type StorePrice, type WasCheck } from "@/lib/price-check";
 import { useRegionKit } from "@/lib/use-region";
+import { sized } from "@/lib/image-size";
 
 /** One row per retailer: its cheapest listing, with the colours it has at that price. */
 export function groupByRetailer(list: Offer[]) {
@@ -96,14 +97,14 @@ export function PhoneOffers({
     <div className="grid grid-cols-1 gap-5 sm:gap-8 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-12">
       <div className="lg:sticky lg:top-32 lg:self-start">
         <div className="img-tile relative aspect-[16/10] overflow-hidden rounded-lg border border-line sm:aspect-square">
-          {images[img] && <img src={images[img]} alt={phone.name} className="product-img absolute inset-0 h-full w-full object-contain p-5 sm:p-10" />}
+          {images[img] && <img src={sized(images[img], 420)} fetchPriority="high" decoding="async" alt={phone.name} className="product-img absolute inset-0 h-full w-full object-contain p-5 sm:p-10" />}
           <SaveButton slug={href} className="absolute right-4 top-4" />
         </div>
         {images.length > 1 && (
           <div className="mt-2.5 flex gap-2 overflow-x-auto scrollbar-none">
             {images.map((src, i) => (
               <button key={src} onClick={() => setImg(i)} className={`img-tile h-12 w-12 shrink-0 overflow-hidden rounded-lg border-2 sm:h-16 sm:w-16 ${i === img ? "border-brand" : "border-transparent"}`}>
-                <img src={src} alt={`${phone.name}, photo ${i + 1}`} className="product-img h-full w-full object-contain p-1.5" loading="lazy" />
+                <img src={sized(src, 80)} alt={`${phone.name}, photo ${i + 1}`} className="product-img h-full w-full object-contain p-1.5" loading="lazy" />
               </button>
             ))}
           </div>

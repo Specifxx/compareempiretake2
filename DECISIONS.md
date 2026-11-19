@@ -2429,6 +2429,48 @@ sitting on top of it.
 - **Measured** (local build, dock stacked): Pixel 7 412×915 nav + dock take 129px (14.1%); iPhone 15 393×852 with a 34px safe area
   143px (16.8%); iPhone SE 375×667 129px (19.3%); the old flush bar took about the same plus the full safe area.
 
+## 2026-11-19: Core-update quality pass: three-store indexing, fewer links, who runs the site
+
+Compare Empire fell from 25,473 impressions on 27 Oct (average position 15) to 391 on 29 Oct (position 49) and 12-41 a day
+since. The cause was www.compareempire.com losing DNS in the 26 Oct outage while Google held the site under www (the apex
+became canonical 27 Oct, www 308s to the exact apex page since 5 Nov), not the November core update. Recovery is Google
+re-learning the apex; this pass makes sure what it re-learns is the strongest part of the site.
+
+- **Indexing** (`lib/indexing.ts`): a product page asks to be indexed with three or more stores (one in stock) in every
+  region. A two-store page in Australia, the US or the UK asks only when Search Console shows people finding it
+  (`lib/search-found.ts`, the `data/focus/demand.json` paths the focus job already refreshes daily). About 3,200 product
+  pages asked before; about 1,400 ask now, plus those search finds. The rest stay live, noindex, follow, out of the
+  sitemap and hreflang. A brand page asks when one of its products does.
+- **Fewer links**: the footer's shop column is 4 links (was 10-16: every seasonal sale, widgets, report), categories show
+  the first 8, the site column 6 (was 13: no forum, creators, reviews, alerts, feedback, list-your-store); the header's
+  category menu shows 2 brands per category (was 4); the phone menu drops the forum. The cross-site cluster tiles are off.
+- **Who runs it**: the about page names the co-founders (Bill and George), says AI tools help with code and guides while
+  prices are read by a program, corrects "Right now, we don't [make money]" to the affiliate links we have, and gives the
+  running cost (about A$790 a month for the group, our books to 15 Nov 2026).
+
+The one ad block already sits below each page's content; no URL or host changes.
+
+## 2026-11-19: The dock A/B ends: the phone ad strip sits above the bottom nav for everyone (owner)
+
+The owner, 2026-11-19: "I want it for all the sites, so people have like an ad on their phone right there." The dock A/B of
+2026-11-18 (`lib/dock-arm.ts`) ends early with its "on" arm for every visitor: the eBay dock is stacked just above the phone bottom
+nav whenever it shows, instead of taking turns with the nav. Its own rules are unchanged: after a scroll, labelled "Ad", ✕ for the
+visit, never Amazon. `dock_arm` on buy_click now always reads "on".
+
+## 2026-11-19 — /au/<path> redirects, tech-only partner offers, a homepage H1 that says what and where
+
+An outside review of the site (owner pasted it, 19 Nov) found: `/au/deals` 404s while `/deals` is Australia's deals page;
+the "Offers from US partner stores" block showed coffee beans and a cookware shop on a tech homepage; the H1 ("Every store's
+price, cheapest first.") named no category, region or reason to trust it. Its "no hreflang" claim is wrong (every hub and
+product page carries `hubLanguages` alternates with x-default the US copy).
+
+- Australia's pages stay prefix-less (frozen URLs); `/au/:path+` now 301s to `/:path+`, so a guessed `/au/...` lands on the
+  Australian page instead of a 404. `/au` itself is still Australia's home (`tests/routes.test.ts`).
+- `ON_TOPIC_PROGRAMMES` in `lib/partner-offers.ts` is an allowlist (Clifton Cameras, GL.iNet, Ryman); a programme that joins
+  later stays off the tech pages until it is added there.
+- The H1 is "Compare <US|Australian|UK…> tech prices: phones, laptops, TVs and more"; the "Is that sale actually real?" hook
+  moved into the line under it. The trust strip links "How we check prices" (`/how-we-pick-stores`) beside the checked time.
+
 ## 2026-11-19: Search-engine-first audit after the November 2026 core update
 
 Google's core-update guidance asks whether a page exists mainly to help people or mainly to catch a search, and names

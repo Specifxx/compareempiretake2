@@ -5,6 +5,7 @@ import { useRegionKit } from "@/lib/use-region";
 import { Currency } from "./RegionTag";
 import { SPONSORED_REL } from "@/lib/ebay";
 import { withRegion, type RegionId } from "@/lib/region";
+import { sized } from "@/lib/image-size";
 
 /**
  * The /search results (DECISIONS.md 2026-11-10): reads ?q= in the browser, asks /api/search (CDN-cached six hours per
@@ -96,7 +97,7 @@ export function SearchResults({ ways = {} }: { ways?: Partial<Record<RegionId, {
               <li key={p.path}>
                 <a href={p.path} onClick={() => track("search_click", { to: "ce", rank: i + 1, from: from ?? "ce" })} className="flex items-center gap-3 px-4 py-3 hover:bg-bg-sunk">
                   <span className="img-tile grid h-12 w-12 shrink-0 place-items-center overflow-hidden rounded-lg">
-                    {p.image && <img src={p.image} alt={p.name} className="product-img h-11 w-11 object-contain" loading="lazy" />}
+                    {p.image && <img src={sized(p.image, 48)} alt={p.name} className="product-img h-11 w-11 object-contain" loading="lazy" />}
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block truncate font-medium">{p.name}</span>

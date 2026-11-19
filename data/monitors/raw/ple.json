@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T01:50:04.766Z",
+ "scrapedAt": "2026-11-19T01:20:01.074Z",
  "offers": [
   {
    "retailer": "ple",
@@ -149,7 +149,7 @@
    "brand": "AOC",
    "mpn": "24B36X",
    "url": "https://www.ple.com.au/products/681720/aoc-24b36x-24-1080p-144hz-ips-monitor",
-   "price": 109,
+   "price": 119,
    "wasPrice": 149,
    "image": "https://plecom.imgix.net/iil-458237-681720.jpg?w=600&h=600",
    "inStock": true
@@ -619,7 +619,7 @@
    "price": 299,
    "wasPrice": 399,
    "image": "https://plecom.imgix.net/iil-449909-679813.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1548,13 +1548,13 @@
   {
    "retailer": "ple",
    "sku": "689175",
-   "title": "BenQ Creative Pro 27\" 4K 60Hz 5ms IPS Designer Monitor",
+   "title": "BenQ Creative Pro 27\" 2160p 4K 60Hz IPS Designer Monitor",
    "brand": "BenQ",
    "mpn": "PD2770U",
-   "url": "https://www.ple.com.au/products/689175/benq-creative-pro-27-4k-60hz-5ms-ips-designer-monitor",
+   "url": "https://www.ple.com.au/products/689175/benq-creative-pro-27-2160p-4k-60hz-ips-designer-monitor",
    "price": 2999,
    "image": "https://plecom.imgix.net/iil-489707-689175.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1565,7 +1565,7 @@
    "url": "https://www.ple.com.au/products/689174/benq-creative-pro-32-4k-120hz-5ms-ips-designer-monitor",
    "price": 2599,
    "image": "https://plecom.imgix.net/iil-489697-689174.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1693,7 +1693,7 @@
    "url": "https://www.ple.com.au/products/688909/benq-ma270s-27-5k-2880p-70hz-ips-nano-gloss-monitor-for-macbook",
    "price": 1499,
    "image": "https://plecom.imgix.net/iil-488489-688909.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1739,7 +1739,7 @@
    "price": 1189,
    "wasPrice": 1399,
    "image": "https://plecom.imgix.net/iil-477319-686651.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2209,18 +2209,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "686256",
-   "title": "LG 27BA65QB-B - 27\" 1440p 100Hz IPS Monitor with Daisy Chain",
-   "brand": "LG",
-   "mpn": "27BA65QB-B",
-   "url": "https://www.ple.com.au/products/686256/lg-27ba65qb-b-27-1440p-100hz-ips-monitor-with-daisy-chain",
-   "price": 299,
-   "wasPrice": 399,
-   "image": "https://plecom.imgix.net/iil-476022-686256.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "688721",
    "title": "LG 27G550B-B - 27\" 1080p 300Hz 1ms IPS Gaming Monitor",
    "brand": "LG",
@@ -2429,7 +2417,7 @@
    "brand": "LG",
    "mpn": "32U990A-S",
    "url": "https://www.ple.com.au/products/681727/lg-ultrafine-evo-32u990a-s-32-6k-60hz-ips-professional-monitor",
-   "price": 1899,
+   "price": 2699,
    "wasPrice": 3699.003,
    "image": "https://plecom.imgix.net/iil-464552-681727.jpg?w=600&h=600",
    "inStock": true
@@ -2477,10 +2465,10 @@
    "brand": "LG",
    "mpn": "49GR85DC-B",
    "url": "https://www.ple.com.au/products/680887/lg-ultragear-49gr85dc-b-49-curved-1440p-ultrawide-240hz-gaming-monitor",
-   "price": 1399,
+   "price": 1599,
    "wasPrice": 1699,
    "image": "https://plecom.imgix.net/iil-454410-680887.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2551,7 +2539,7 @@
    "price": 799,
    "wasPrice": 1399,
    "image": "https://plecom.imgix.net/iil-450181-679767.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2862,6 +2850,17 @@
    "price": 799,
    "wasPrice": 899,
    "image": "https://plecom.imgix.net/iil-486745-688490.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "689272",
+   "title": "MSI MEG X 34\" Curved 1440p 360Hz 0.03ms QD-OLED Ai Gaming Monitor",
+   "brand": "MSI",
+   "mpn": "MEG X",
+   "url": "https://www.ple.com.au/products/689272/msi-meg-x-34-curved-1440p-360hz-003ms-qd-oled-ai-gaming-monitor",
+   "price": 2299,
+   "image": "https://plecom.imgix.net/iil-490239-689272.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -3241,7 +3240,8 @@
    "brand": "Samsung",
    "mpn": "LS27FG502EEXXY ",
    "url": "https://www.ple.com.au/products/683277/samsung-odyssey-g5-g50f-27-1440p-180hz-1ms-fast-ips-gaming-monitor",
-   "price": 359,
+   "price": 279,
+   "wasPrice": 359,
    "image": "https://plecom.imgix.net/iil-463921-683277.jpg?w=600&h=600",
    "inStock": true
   },
@@ -3252,7 +3252,8 @@
    "brand": "Samsung",
    "mpn": "LS32FG502EEXXY",
    "url": "https://www.ple.com.au/products/683278/samsung-odyssey-g5-g50f-32-1440p-180hz-1ms-fast-ips-gaming-monitor",
-   "price": 429,
+   "price": 349,
+   "wasPrice": 429,
    "image": "https://plecom.imgix.net/iil-463906-683278.jpg?w=600&h=600",
    "inStock": true
   },
@@ -3371,7 +3372,7 @@
    "price": 499,
    "wasPrice": 799,
    "image": "https://plecom.imgix.net/iil-475717-686244.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -3399,12 +3400,23 @@
   },
   {
    "retailer": "ple",
+   "sku": "687442",
+   "title": "Samsung Odyssey OLED G7 G70SH - 27\" 4K 2160p 165Hz 0.03ms Gaming Monitor",
+   "brand": "Samsung",
+   "mpn": "LS27HG700SEXXY",
+   "url": "https://www.ple.com.au/products/687442/samsung-odyssey-oled-g7-g70sh-27-4k-2160p-165hz-003ms-gaming-monitor",
+   "price": 1899,
+   "image": "https://plecom.imgix.net/iil-481778-687442.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "668738",
    "title": "Samsung Odyssey OLED G8 - 34\" Curved 1440p 175Hz Gaming Monitor",
    "brand": "Samsung",
    "mpn": "LS34DG850SEXXY",
    "url": "https://www.ple.com.au/products/668738/samsung-odyssey-oled-g8-34-curved-1440p-175hz-gaming-monitor",
-   "price": 999,
+   "price": 1399,
    "wasPrice": 1799,
    "image": "https://plecom.imgix.net/iil-409763-668738.jpg?w=600&h=600",
    "inStock": true
@@ -3595,7 +3607,7 @@
    "brand": "Samsung",
    "mpn": "LS40H850TAEXXY",
    "url": "https://www.ple.com.au/products/686273/samsung-viewfinity-s85th-40-curved-5k2k-2160p-144hz-va-professional-monitor",
-   "price": 1349,
+   "price": 1499,
    "wasPrice": 2099,
    "image": "https://plecom.imgix.net/iil-475843-686273.jpg?w=600&h=600",
    "inStock": true

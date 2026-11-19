@@ -5,6 +5,7 @@ import { RETAILERS } from "@/lib/retailers";
 import { TrendDown } from "./icons";
 import { RetailerDot } from "./RetailerChip";
 import { money, withRegion } from "@/lib/region";
+import { sized } from "@/lib/image-size";
 
 // `rank` is kept for callers; every deal now shows its saving on the photo (owner, 2026-11-10 redesign).
 export function DealCard({ d }: { d: Deal; rank?: number }) {
@@ -12,7 +13,7 @@ export function DealCard({ d }: { d: Deal; rank?: number }) {
     <Link href={`${withRegion(`/${d.phone.category}/${d.phone.slug}`, d.phone.region ?? "au")}?v=${d.variant.id}`} prefetch={false} className="card tile-hover group flex min-w-0 gap-3.5 p-3 sm:p-3.5">
       <div className="img-tile relative grid h-24 w-24 shrink-0 place-items-center overflow-hidden rounded-xl sm:h-28 sm:w-28">
         {d.offer.image || d.phone.image ? (
-          <img src={d.offer.image ?? d.phone.image} alt={d.phone.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />
+          <img src={sized(d.offer.image ?? d.phone.image, 220)} alt={d.phone.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />
         ) : null}
         {d.percent > 0 && (
           <span className="absolute left-1.5 top-1.5 rounded bg-save px-1.5 py-0.5 text-[11px] font-bold text-bg-card">−{d.percent}%</span>

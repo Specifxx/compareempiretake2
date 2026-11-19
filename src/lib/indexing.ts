@@ -24,7 +24,15 @@ const indexFloor = (region: RegionId) => MIN_INDEX_STORES[region] ?? 2;
  * stock. A thinner page or an all-sold-out page stays live and linked (follow) but asks not to be indexed, and is left
  * out of the sitemap and of every other page's hreflang.
  */
-export const productIndexable = (p: Phone) => p.retailerCount >= indexFloor(p.region ?? "au") && live(p);
+export const productIndexable = (p: Phone, found = false) => p.retailerCount >= (found ? indexFloor(p.region ?? "au") : ASK_INDEX_MIN_STORES) && live(p);
+
+/**
+ * Core-update quality pass (2026-11-19, DECISIONS.md): a product page asks to be indexed with ASK_INDEX_MIN_STORES (3)
+ * stores in every region. A two-store page in Australia, the US or the UK asks only when Search Console shows people
+ * finding it (`found`: a click or 10+ impressions in 56 days, data/focus/demand.json, lib/search-found.ts). About 3,200
+ * product pages asked before, for a few thousand impressions; about 1,400 ask now, plus the ones search finds.
+ */
+export const ASK_INDEX_MIN_STORES = 3;
 
 /**
  * Which indexable product pages the sitemap lists. Australia lists only the strongest tier (three or more stores, in
@@ -35,7 +43,7 @@ export const productIndexable = (p: Phone) => p.retailerCount >= indexFloor(p.re
  */
 export const SITEMAP_MIN_STORES = Math.max(2, Number(process.env.SITEMAP_MIN_STORES || 3));
 const sitemapFloor = (region: RegionId) => Math.max(indexFloor(region), region === "au" ? SITEMAP_MIN_STORES : 2);
-export const productInSitemap = (p: Phone) => p.retailerCount >= sitemapFloor(p.region ?? "au") && live(p);
+export const productInSitemap = (p: Phone, found = false) => productIndexable(p, found) && p.retailerCount >= (found ? 2 : sitemapFloor(p.region ?? "au"));
 
 /**
  * IndexNow (scripts/indexnow.ts) keeps the three-store tier in every region: each URL it sends is fetched by four
@@ -45,7 +53,7 @@ export const productInSitemap = (p: Phone) => p.retailerCount >= sitemapFloor(p.
 export const productInIndexNow = (p: Phone) => p.retailerCount >= 3 && live(p);
 
 /** A brand page is indexable when at least one of its products is. */
-export const brandIndexable = (products: Phone[]) => products.some(productIndexable);
+export const brandIndexable = (products: Phone[]) => products.some((p) => productIndexable(p));
 
 /**
  * When a product page last changed: the most recent day any variant's best price moved (from the price series,

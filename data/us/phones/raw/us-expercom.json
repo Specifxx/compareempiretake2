@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:43:36.926Z",
+ "scrapedAt": "2026-11-19T01:32:53.279Z",
  "offers": [
   {
    "retailer": "us-expercom",
@@ -41,7 +41,7 @@
    "url": "https://expercom.com/products/iphone-17-pro-256gb-silver-unlocked",
    "price": 1239,
    "image": "https://cdn.shopify.com/s/files/1/0044/3911/3762/files/IMG-18057389_m_jpeg_1.jpg?v=1757451247",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MG7K4LL/A"
   },
@@ -140,7 +140,7 @@
    "url": "https://expercom.com/products/iphone-18-pro-256gb-glacier-unlocked",
    "price": 1329,
    "image": "https://cdn.shopify.com/s/files/1/0044/3911/3762/files/iPhone18Pro-1-Glacier.jpg?v=1788987918",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MJQ64LL/A"
   },
@@ -217,7 +217,7 @@
    "url": "https://expercom.com/products/iphone-18-pro-max-256gb-black-unlocked",
    "price": 1439,
    "image": "https://cdn.shopify.com/s/files/1/0044/3911/3762/files/iPhone18ProMax-1-Black.jpg?v=1788995136",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "MJW44LL/A"
   },
@@ -250,7 +250,7 @@
    "url": "https://expercom.com/products/iphone-18-pro-max-256gb-silver-unlocked",
    "price": 1439,
    "image": "https://cdn.shopify.com/s/files/1/0044/3911/3762/files/iPhone18ProMax-1-Silver.jpg?v=1788995141",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "MJW54LL/A"
   },
@@ -283,7 +283,7 @@
    "url": "https://expercom.com/products/iphone-18-pro-max-512gb-glacier-unlocked",
    "price": 1659,
    "image": "https://cdn.shopify.com/s/files/1/0044/3911/3762/files/iPhone18ProMax-1-Glacier.jpg?v=1788995140",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "MJWC4LL/A"
   },

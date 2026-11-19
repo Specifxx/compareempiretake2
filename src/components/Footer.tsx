@@ -1,4 +1,3 @@
-import { GTA6_REGIONS } from "@/lib/gta6";
 import { activeCategories, categoryHref, getCatalog, liveRegions } from "@/lib/catalog";
 import { REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { FooterBody, type FooterData } from "./FooterBody";
@@ -20,11 +19,9 @@ export function Footer() {
           products: phones.length,
           checked: `${new Date(updatedAt).toLocaleString(R.locale, { timeZone: R.timeZone, day: "numeric", month: "short", year: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" })}`,
           year: Number(new Date(updatedAt).toLocaleDateString("en-CA", { timeZone: R.timeZone }).slice(0, 4)),
-          shop:
-            region === "au"
-              ? [["All phones", "/phones"], ["Today's deals", "/deals"], ["Is this a good price?", "/is-this-a-good-price"], ["GTA 6 console prices", "/gta-6"], ["Black Friday deals", "/black-friday"], ["Cyber Monday deals", "/cyber-monday"], ["Boxing Day deals", "/boxing-day"], ["January sales", "/january-sales"], ["Brands", "/brands"], ["Compare", "/compare"], ["Guides", "/guides"], ["All categories", "/categories"], ["Browse all products", "/browse"], ["Free price widgets", "/embed"], ["Tech price report", "/price-report"]]
-              : [["All phones", to("/phones")], ["Today's deals", to("/deals")], ["Is this a good price?", "/is-this-a-good-price"], ...(GTA6_REGIONS.includes(region) ? [["GTA 6 console prices", to("/gta-6")]] : []), ["Black Friday deals", to("/black-friday")], ["Cyber Monday deals", to("/cyber-monday")], ["Boxing Day deals", to("/boxing-day")], ["January sales", to("/january-sales")], ["Stores we check", to("/stores")], ["Browse all products", to("/browse")]],
-          categories: activeCategories(region).map((c) => [c.name, categoryHref(c.id, region)]),
+          // Fewer links on every page (2026-11-19, core-update quality pass): the header and the category pages reach the rest.
+          shop: [["Today's deals", to("/deals")], ["Brands", "/brands"], ["Buying guides", "/guides"], ["All categories", "/categories"]],
+          categories: activeCategories(region).slice(0, 8).map((c) => [c.name, categoryHref(c.id, region)]),
         },
       ];
     }),

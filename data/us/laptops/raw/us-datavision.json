@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T02:43:17.653Z",
+ "scrapedAt": "2026-11-19T01:32:17.896Z",
  "offers": [
   {
    "retailer": "us-datavision",
@@ -381,7 +381,7 @@
    "url": "https://datavision.com/products/cto-apple-13-inch-macbook-air-m5-chip-w-10-core-cpu-10-core-gpu-32gb-512gb-midnight-40w-z1l6000rr-2026",
    "price": 1609,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/67ef304e-51d5-455d-b5e1-b5db7c893c48.jpg?v=1773768918",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "Z1L6000RR"
   },
@@ -7192,7 +7192,7 @@
    "url": "https://datavision.com/products/apple-14-in-macbook-pro-m5-chip-w-10-core-cpu-and-10-core-gpu-1tb-ssd-space-black-mde14ll-a-oct-2025",
    "price": 1799,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/f8e5be60-2983-423a-9328-65f020a4a040.jpg?v=1760564176",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MDE14LL/A"
   },
@@ -7340,7 +7340,7 @@
    "url": "https://datavision.com/products/apple-14-inch-macbook-pro-with-proled-xdr-display-apple-m5-pro-chip-with-18-core-cpu-and-20-core-gpu-1tb-ssd-silver-mmf54ll-a",
    "price": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/af9af8ed-f5dd-466b-9df3-9c1c247ced8d.jpg?v=1793309141",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple",
    "mpn": "MMF54LL/A"
   },
@@ -11429,6 +11429,18 @@
    "inStock": false,
    "brand": "Samsung",
    "mpn": "NP950XEE-XA1US"
+  },
+  {
+   "retailer": "us-datavision",
+   "sku": "NP940XMA-KB1US",
+   "title": "Samsung Galaxy Book4 Edge Laptop - 16-in Touch-Screen, 16GB, 512GB - Sapphire Blue",
+   "url": "https://datavision.com/products/samsung-galaxy-book4-edge-laptop-16-in-touch-screen-16gb-512gb-sapphire-blue",
+   "price": 999.99,
+   "wasPrice": 1599.99,
+   "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/d9c93e17-d178-4ac8-b2a3-0d8e47bf18ce.jpg?v=1795034511",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "NP940XMA-KB1US"
   },
   {
    "retailer": "us-datavision",

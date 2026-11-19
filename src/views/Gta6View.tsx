@@ -4,6 +4,7 @@ import { amazonLink, AMAZON_DISCLOSURE, AMAZON_REL } from "@/lib/amazon";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import { GTA6, GTA6_ACCESSORIES, GTA6_FAQ, gta6Consoles } from "@/lib/gta6";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
+import { sized } from "@/lib/image-size";
 
 // The GTA 6 shopping hub (lib/gta6.ts). Consoles come from the day's store prices; accessories are labelled paid searches.
 const day = (iso: string, region: RegionId) =>
@@ -35,7 +36,7 @@ export function Gta6View({ region }: { region: RegionId }) {
               <li key={p.href}>
                 <Link prefetch={false} href={p.href} className="card flex items-center gap-4 p-4 transition hover:shadow-lift">
                   <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-lg">
-                    {p.image && <img src={p.image} alt={p.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
+                    {p.image && <img src={sized(p.image, 220)} alt={p.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="text-xs font-medium text-ink-mute">{p.brand}</div>
