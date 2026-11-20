@@ -65,6 +65,7 @@ test("every console Rockstar names gets a row; the cheapest in-stock match wins,
     c("Sony PlayStation 5 Console", 899, 2),
     c("Sony PlayStation 5 Console Digital Edition", 919, 1),
     c("Microsoft Xbox Series X", 1099, 3),
+    c("Microsoft Xbox Series X Digital Edition", 999, 1),
     c("Microsoft Xbox Series S", 699, 3, { inStock: false }),
     c("PS5 DualSense Controller", 99, 8),
   ]);
