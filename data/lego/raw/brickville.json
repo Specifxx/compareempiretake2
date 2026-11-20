@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:13:01.215Z",
+ "scrapedAt": "2026-11-20T01:17:45.033Z",
  "offers": [
   {
    "retailer": "brickville",
@@ -173,7 +173,7 @@
    "url": "https://www.brickville.com.au/products/lego-animal-harry-potter-owl-errol-92084pb02",
    "price": 4.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/4759_94d58f34-c930-4f9a-beda-d575311395bb.webp?v=1793826812",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "92084"
   },
@@ -618,7 +618,7 @@
    "url": "https://www.brickville.com.au/products/lego-avengers-endgame-endgame-final-battle-76266",
    "price": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_c551492a-4502-483a-b698-87a38059f054.jpg?v=1794446474",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76266"
   },
@@ -662,7 +662,7 @@
    "url": "https://www.brickville.com.au/products/lego-batman-app-controlled-batmobile-76112",
    "price": 299.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/76112_alt1_cc3b36cb-186c-47b2-81ba-2a347019457f.jpg?v=1794448033",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76112"
   },
@@ -741,7 +741,7 @@
    "url": "https://www.brickville.com.au/products/lego-blacktron-renegade-10355",
    "price": 159.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/10355_grande_b4d4c4c5-bca5-4cdb-bd6b-3b33f79e8501.webp?v=1765357545",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10355"
   },
@@ -2093,7 +2093,7 @@
    "url": "https://www.brickville.com.au/products/lego-around-the-world-11015",
    "price": 79.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/28124360736798.jpg?v=1688641103",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "11015"
   },
@@ -2259,7 +2259,7 @@
    "url": "https://www.brickville.com.au/products/lego-creator-3-in-1-exotic-peacock-31157",
    "price": 39.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/31157_alt1.webp?v=1764837397",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31157"
   },
@@ -3088,7 +3088,7 @@
    "url": "https://www.brickville.com.au/products/lego-dc-super-heroes-1989-batwing-76161",
    "price": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/products/BTKA_168524883023479_b8a985c55981abba0d79a7ee4e92e7.jpg?v=1686271684",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76161"
   },
@@ -4955,7 +4955,7 @@
    "url": "https://www.brickville.com.au/products/lego-legends-of-chima-ice-bear-tribe-pack-70230",
    "price": 47.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/71c0Az36hGL._AC_UF894_1000_QL80.jpg?v=1793004600",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "70230"
   },
@@ -5236,7 +5236,7 @@
    "url": "https://www.brickville.com.au/products/lego-minecraft-the-turtle-beach-house-21254",
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/47775070584862.jpg?v=1752712068",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21254"
   },
@@ -5302,7 +5302,7 @@
    "url": "https://www.brickville.com.au/products/lego-mini-pokemon-center-40911",
    "price": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/40911_Box1_v39.png?v=1777981804",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40911"
   },
@@ -5887,6 +5887,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "71042",
+   "title": "LEGO Pirates of the Caribbean Silent Mary 71042",
+   "url": "https://www.brickville.com.au/products/lego-pirates-of-the-caribbean-silent-mary-71042",
+   "price": 779.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/71042_alt1.jpg?v=1711227190",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "71042"
+  },
+  {
+   "retailer": "brickville",
    "sku": "70409",
    "title": "LEGO Pirates Shipwreck Defence 70409",
    "url": "https://www.brickville.com.au/products/lego-pirates-shipwreck-defence-70409",
@@ -5950,6 +5961,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "30653"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "30670",
+   "title": "LEGO POLYBAG Christmas Creator Santa's Sleigh Ride 30670",
+   "url": "https://www.brickville.com.au/products/lego-polybag-christmas-creator-santas-sleigh-ride-30670",
+   "price": 14.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/30670-2Santa_sSleighRidepolybag.webp?v=1730506044",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "30670"
   },
   {
    "retailer": "brickville",
@@ -6360,6 +6382,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "30685",
+   "title": "LEGO POLYBAG Star Wars TIE Interceptor 30685",
+   "url": "https://www.brickville.com.au/products/lego-polybag-star-wars-tie-interceptor-30685",
+   "price": 9.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_ce9b3a63-afec-49cd-8d84-b8eb82f33911.jpg?v=1726659929",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "30685"
+  },
+  {
+   "retailer": "brickville",
    "sku": "4049",
    "title": "LEGO POLYBAG Studios Nesquik Quiky Film Set 4049",
    "url": "https://www.brickville.com.au/products/lego-polybag-studios-nesquik-quiky-film-set-4049",
@@ -6382,6 +6415,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "30389",
+   "title": "LEGO POLYBAG Super Mario Fuzzy & Mushroom Platform 30389",
+   "url": "https://www.brickville.com.au/products/lego-polybag-super-mario-fuzzy-mushroom-platform-30389",
+   "price": 14.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/lego-30389-1_large_362ab01d-f6c8-4334-98a9-d40bae62d20f.jpg?v=1753358557",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "30389"
+  },
+  {
+   "retailer": "brickville",
    "sku": "30702",
    "title": "LEGO POLYBAG Super Mario Mario Kart Toad (Pit Crew) 30702",
    "url": "https://www.brickville.com.au/products/lego-polybag-super-mario-mario-kart-toad-pit-crew-30702",
@@ -6390,6 +6434,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "30702"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "30385",
+   "title": "LEGO POLYBAG Super Mario Super Mushroom Surprise 30385",
+   "url": "https://www.brickville.com.au/products/lego-polybag-super-mario-super-mushroom-surprise-30385",
+   "price": 14.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/lego-30385-1_large_da1ed09a-2e9c-4de0-9e34-216dc4db0ebd.jpg?v=1753358776",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "30385"
   },
   {
    "retailer": "brickville",
@@ -6576,7 +6631,7 @@
    "url": "https://www.brickville.com.au/products/lego-space-micro-rocket-launchpad-40712",
    "price": 79.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/81i5RtYQY9L_0c03d348-9902-428b-96c5-be40cc4d2a82.jpg?v=1718885542",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40712"
   },
@@ -8157,7 +8212,7 @@
    "url": "https://www.brickville.com.au/products/lego-star-wars-tatooine-homestead-40451",
    "price": 69.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/617XyWqxtQL.jpg?v=1707812646",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40451"
   },
@@ -8180,7 +8235,7 @@
    "price": 219.99,
    "wasPrice": 249.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/91e2nxRuEML.jpg?v=1690542084",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "7929"
   },
@@ -8527,7 +8582,7 @@
    "url": "https://www.brickville.com.au/products/lego-star-wars-yodas-hut-75208",
    "price": 89.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/download_3d3e764e-d819-4384-83bf-e298903830dd.jpg?v=1709726268",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75208"
   },
@@ -8780,7 +8835,7 @@
    "url": "https://www.brickville.com.au/products/lego-technic-buggy-42101",
    "price": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/42101_alt1.jpg?v=1786592677",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "42101"
   },
@@ -9047,7 +9102,7 @@
    "url": "https://www.brickville.com.au/products/lego-technic-mercedes-amg-f1-w14-e-performance-pull-back-42165",
    "price": 39.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/48145514070046.jpg?v=1725478687",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "42165"
   },
@@ -9393,7 +9448,7 @@
    "sku": "70618",
    "title": "LEGO The LEGO Ninjago Movie Destiny's Bounty 70618",
    "url": "https://www.brickville.com.au/products/lego-the-lego-ninjago-movie-destinys-bounty-70618",
-   "price": 599.99,
+   "price": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/91NtzBMHeoL._AC_UF894_1000_QL80_c2b6a0f3-baa9-492c-ade4-f7acb316c6b1.jpg?v=1718885610",
    "inStock": true,
    "brand": "LEGO",
@@ -9494,7 +9549,7 @@
    "url": "https://www.brickville.com.au/products/lego-the-simpsons-krusty-burger-10353",
    "price": 329.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l1200_543b0846-6d58-425e-b86b-53aa3c22addb.jpg?v=1759982716",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10352"
   },
@@ -9593,7 +9648,7 @@
    "url": "https://www.brickville.com.au/products/lego-up-scaled-baby-astronaut-40767",
    "price": 89.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/40767_Box1_V29.webp?v=1747531976",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40767"
   },

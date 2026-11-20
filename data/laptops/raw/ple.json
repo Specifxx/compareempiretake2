@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:20:03.029Z",
+ "scrapedAt": "2026-11-20T01:24:20.330Z",
  "offers": [
   {
    "retailer": "ple",
@@ -8,9 +8,22 @@
    "brand": "ASUS",
    "mpn": "B3405CCA-LY1677X",
    "url": "https://www.ple.com.au/products/684897/asus-expertbook-b3-b3405-14-ultra-5-225h-16gb512gb-win-11-pro-notebook",
-   "price": 2599,
+   "price": 1749,
+   "wasPrice": 2599,
    "image": "https://plecom.imgix.net/iil-471818-684897.jpg?w=600&h=600",
    "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "680663",
+   "title": "ASUS ExpertBook B3 (B3605) - 16\" Core Ultra 5 225H, 16GB/512GB - Win 11 Pro Notebook",
+   "brand": "ASUS",
+   "mpn": "B3605CCA-MB0943X",
+   "url": "https://www.ple.com.au/products/680663/asus-expertbook-b3-b3605-16-core-ultra-5-225h-16gb512gb-win-11-pro-notebook",
+   "price": 1549,
+   "wasPrice": 2699,
+   "image": "https://plecom.imgix.net/iil-454080-680663.jpg?w=600&h=600",
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -31,7 +44,8 @@
    "brand": "ASUS",
    "mpn": "P1403CVA-S61548X",
    "url": "https://www.ple.com.au/products/683293/asus-expertbook-p1-p1403-14-core-5-210h-16gb512gb-win-11-pro-notebook",
-   "price": 2199,
+   "price": 1399,
+   "wasPrice": 2199,
    "image": "https://plecom.imgix.net/iil-464509-683293.jpg?w=600&h=600",
    "inStock": true
   },
@@ -65,7 +79,8 @@
    "brand": "ASUS",
    "mpn": "P5405CSA-NZ0667X",
    "url": "https://www.ple.com.au/products/676785/asus-expertbook-p5-p5405-14-core-ultra-7-258v-32gb1tb-win-11-pro-ai-notebook",
-   "price": 3549,
+   "price": 2799,
+   "wasPrice": 3549,
    "image": "https://plecom.imgix.net/iil-435980-676785.jpg?w=600&h=600",
    "inStock": true
   },
@@ -95,17 +110,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "682907",
-   "title": "ASUS Gaming V16 (V3607) - 16\" 144Hz, Ultra 7 240H, RTX 5050, 16GB/1TB - Win 11 Home AI Notebook",
-   "brand": "ASUS",
-   "mpn": "V3607VH-RP713W",
-   "url": "https://www.ple.com.au/products/682907/asus-gaming-v16-v3607-16-144hz-ultra-7-240h-rtx-5050-16gb1tb-win-11-home-ai-notebook",
-   "price": 2999,
-   "image": "https://plecom.imgix.net/iil-462447-682907.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "685133",
    "title": "ASUS Gaming V16 (V3607) - 16\" 144Hz, Ultra 7 240H, RTX 5060, 32GB/1TB - Win 11 Notebook",
    "brand": "ASUS",
@@ -122,7 +126,8 @@
    "brand": "ASUS",
    "mpn": "V3607VJ-RP133W",
    "url": "https://www.ple.com.au/products/680233/asus-gaming-v16-v3607-16-core-5-210h-rtx-3050-16gb512gb-win-11-ai-notebook",
-   "price": 1599,
+   "price": 1399,
+   "wasPrice": 1599,
    "image": "https://plecom.imgix.net/iil-452376-680233.jpg?w=600&h=600",
    "inStock": true
   },
@@ -429,17 +434,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "688545",
-   "title": "ASUS Vivbook 16 (M1652) - 16\", Ryzen 7 7840HS, 8GB/512GB - Win 11 Home Notebook (Silver)",
-   "brand": "ASUS",
-   "mpn": "M1652XA-MB710W",
-   "url": "https://www.ple.com.au/products/688545/asus-vivbook-16-m1652-16-ryzen-7-7840hs-8gb512gb-win-11-home-notebook-silver",
-   "price": 1499,
-   "image": "https://plecom.imgix.net/iil-488949-688545.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "688841",
    "title": "ASUS Vivobook 15 (F1504VA) - 16\", Ultra 7 150U, 16GB/512GB - Win 11 Notebook (Silver)",
    "brand": "ASUS",
@@ -697,7 +691,7 @@
   {
    "retailer": "ple",
    "sku": "687981",
-   "title": "Gigabyte AERO X16 (1VH) - 16\" 165Hz, Ryzen 7 AI 350, RTX 5060, 16GB/512GB Win 11 Gaming Notebook (Lunar White)",
+   "title": "Gigabyte AERO X16 (1VH) - 16\" 165Hz, Ryzen 7 AI 350, RTX 5060, 16GB/512GB - Win 11 Gaming Notebook (Lunar White)",
    "brand": "Gigabyte",
    "mpn": "AERO X16 1VH93AUC93DH",
    "url": "https://www.ple.com.au/products/687981/gigabyte-aero-x16-1vh-16-165hz-ryzen-7-ai-350-rtx-5060-16gb512gb-win-11-gaming-notebook-lunar-white",
@@ -764,7 +758,7 @@
   {
    "retailer": "ple",
    "sku": "687985",
-   "title": "Gigabyte AERO X16 (4WH) - 16\" 165Hz, Ryzen 9 AI 465, RTX 5070, 16GB/1TB Win 11 Gaming Notebook (Lunar White)",
+   "title": "Gigabyte AERO X16 (4WH) - 16\" 165Hz, Ryzen 9 AI 465, RTX 5070, 16GB/1TB - Win 11 Gaming Notebook (Lunar White)",
    "brand": "Gigabyte",
    "mpn": "AERO X16 4WHN3AUC94DH",
    "url": "https://www.ple.com.au/products/687985/gigabyte-aero-x16-4wh-16-165hz-ryzen-9-ai-465-rtx-5070-16gb1tb-win-11-gaming-notebook-lunar-white",
@@ -775,7 +769,7 @@
   {
    "retailer": "ple",
    "sku": "687986",
-   "title": "Gigabyte AERO X16 (4WH) - 16\" 165Hz, Ryzen 9 AI 465, RTX 5070, 16GB/1TB Win 11 Gaming Notebook (Space Gray)",
+   "title": "Gigabyte AERO X16 (4WH) - 16\" 165Hz, Ryzen 9 AI 465, RTX 5070, 16GB/1TB - Win 11 Gaming Notebook (Space Gray)",
    "brand": "Gigabyte",
    "mpn": "AERO X16 4WHN3AUC94AH",
    "url": "https://www.ple.com.au/products/687986/gigabyte-aero-x16-4wh-16-165hz-ryzen-9-ai-465-rtx-5070-16gb1tb-win-11-gaming-notebook-space-gray",
@@ -809,7 +803,7 @@
   {
    "retailer": "ple",
    "sku": "687984",
-   "title": "Gigabyte Gaming A16 (3VH) - 16\" 165Hz, Ryzen 7 260, RTX 5060, 16GB/1TB Win 11 Gaming Notebook (Black Steel)",
+   "title": "Gigabyte GAMING A16 (3VH) - 16\" 165Hz, Ryzen 7 260, RTX 5060, 16GB/1TB - Win 11 Gaming Notebook (Black Steel)",
    "brand": "Gigabyte",
    "mpn": "GAMING A16 3VHK3AUC94SH",
    "url": "https://www.ple.com.au/products/687984/gigabyte-gaming-a16-3vh-16-165hz-ryzen-7-260-rtx-5060-16gb1tb-win-11-gaming-notebook-black-steel",
@@ -821,7 +815,7 @@
   {
    "retailer": "ple",
    "sku": "687982",
-   "title": "Gigabyte Gaming A16 (3VH) - 16\" 165Hz, Ryzen 7 260, RTX 5060, 16GB/512GB Win 11 Gaming Notebook (Black Steel)",
+   "title": "Gigabyte GAMING A16 (3VH) - 16\" 165Hz, Ryzen 7 260, RTX 5060, 16GB/512GB - Win 11 Gaming Notebook (Black Steel)",
    "brand": "Gigabyte",
    "mpn": "GAMING A16 3VHK3AU893SH",
    "url": "https://www.ple.com.au/products/687982/gigabyte-gaming-a16-3vh-16-165hz-ryzen-7-260-rtx-5060-16gb512gb-win-11-gaming-notebook-black-steel",
@@ -833,10 +827,10 @@
   {
    "retailer": "ple",
    "sku": "685368",
-   "title": "Gigabyte GAMING A16 (5TH) - 16\" 165Hz, Ryzen 7 170, RTX 5050, 16GB/512GB - Win 11 Notebook",
+   "title": "Gigabyte GAMING A16 (5TH) - 16\" 165Hz, Ryzen 7 170, RTX 5050, 16GB/512GB - Win 11 Gaming Notebook",
    "brand": "Gigabyte",
    "mpn": "GAMING A16 5THP3AU893SH",
-   "url": "https://www.ple.com.au/products/685368/gigabyte-gaming-a16-5th-16-165hz-ryzen-7-170-rtx-5050-16gb512gb-win-11-notebook",
+   "url": "https://www.ple.com.au/products/685368/gigabyte-gaming-a16-5th-16-165hz-ryzen-7-170-rtx-5050-16gb512gb-win-11-gaming-notebook",
    "price": 2199,
    "image": "https://plecom.imgix.net/iil-472262-685368.jpg?w=600&h=600",
    "inStock": true
@@ -844,14 +838,25 @@
   {
    "retailer": "ple",
    "sku": "685367",
-   "title": "Gigabyte GAMING A16 (5VH) - 16\" 165Hz, Ryzen 7 170, RTX 5060, 16GB/512GB - Win 11 Notebook",
+   "title": "Gigabyte GAMING A16 (5VH) - 16\" 165Hz, Ryzen 7 170, RTX 5060, 16GB/512GB - Win 11 Gaming Notebook",
    "brand": "Gigabyte",
    "mpn": "GAMING A16 5VHP3AU893SH",
-   "url": "https://www.ple.com.au/products/685367/gigabyte-gaming-a16-5vh-16-165hz-ryzen-7-170-rtx-5060-16gb512gb-win-11-notebook",
+   "url": "https://www.ple.com.au/products/685367/gigabyte-gaming-a16-5vh-16-165hz-ryzen-7-170-rtx-5060-16gb512gb-win-11-gaming-notebook",
    "price": 1699,
    "wasPrice": 2299,
    "image": "https://plecom.imgix.net/iil-472279-685367.jpg?w=600&h=600",
    "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "689296",
+   "title": "Gigabyte GAMING A16 (CMH) - 16\" 165Hz, Core i7 13620H, RTX 4050, 16GB/512GB - Win 11 Gaming Notebook (Black Steel)",
+   "brand": "Gigabyte",
+   "mpn": "GAMING A16 CMHI2AU893SH",
+   "url": "https://www.ple.com.au/products/689296/gigabyte-gaming-a16-cmh-16-165hz-core-i7-13620h-rtx-4050-16gb512gb-win-11-gaming-notebook-black-steel",
+   "price": 1999,
+   "image": "https://plecom.imgix.net/iil-490301-689296.jpg?w=600&h=600",
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -952,7 +957,7 @@
    "price": 1749,
    "wasPrice": 2099,
    "image": "https://plecom.imgix.net/iil-420542-672968.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -999,7 +1004,7 @@
    "price": 3299,
    "wasPrice": 3899,
    "image": "https://plecom.imgix.net/iil-487943-688189.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1035,7 +1040,7 @@
    "price": 2099,
    "wasPrice": 2499,
    "image": "https://plecom.imgix.net/iil-487948-688176.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1083,7 +1088,7 @@
    "price": 2399,
    "wasPrice": 2999,
    "image": "https://plecom.imgix.net/iil-487953-688177.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1143,7 +1148,7 @@
    "price": 1699,
    "wasPrice": 2049,
    "image": "https://plecom.imgix.net/iil-473568-685297.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1167,7 +1172,7 @@
    "price": 2099,
    "wasPrice": 2499,
    "image": "https://plecom.imgix.net/iil-462696-682972.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1191,7 +1196,7 @@
    "price": 2899,
    "wasPrice": 3349,
    "image": "https://plecom.imgix.net/iil-487842-688188.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1202,7 +1207,7 @@
    "url": "https://www.ple.com.au/products/688622/msi-prestige-n16-flip-ai-c1xmt-16-28k-oled-120hz-touch-rtx-spark-n1x-20-core-cpu-32gb1tb-win-11-pro-notebook",
    "price": 6599,
    "image": "https://plecom.imgix.net/iil-487122-688622.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1237,7 +1242,7 @@
    "price": 5599,
    "wasPrice": 6599,
    "image": "https://plecom.imgix.net/iil-487207-688180.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",

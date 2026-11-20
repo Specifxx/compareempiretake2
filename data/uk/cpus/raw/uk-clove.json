@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:44:46.399Z",
+ "scrapedAt": "2026-11-20T01:49:07.323Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -43,7 +43,7 @@
    "url": "https://www.clove.co.uk/products/amd-epyc-4345p-processor-3-8-ghz-32-mb-l3-tray",
    "price": 405.62,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/152a37ac-3ddb-403c-a093-543e40058d35.jpg?v=1791886371",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-clove",
@@ -2202,7 +2202,7 @@
    "url": "https://www.clove.co.uk/products/amd-ryzen-7-9700x-processor-3-8-ghz-40-mb-l2-l3-tray",
    "price": 430,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/edd2c552-c7b6-440b-84a5-0cab9cec45a8.jpg?v=1791886068",
-   "inStock": true,
+   "inStock": false,
    "mpn": "9700X"
   },
   {
@@ -3664,7 +3664,7 @@
    "url": "https://www.clove.co.uk/products/intel-core-i5-14400f-processor-20-mb-smart-cache-box",
    "price": 174,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/252f4351-7d0e-4efb-b950-487a1202a6ce.jpg?v=1709804421",
-   "inStock": true,
+   "inStock": false,
    "brand": "Intel"
   },
   {
@@ -4520,7 +4520,7 @@
    "title": "Intel Core i9-14900KS processor 36 MB Smart Cache Box",
    "url": "https://www.clove.co.uk/products/intel-core-i9-14900ks-processor-36-mb-smart-cache-box",
    "price": 838,
-   "inStock": true,
+   "inStock": false,
    "brand": "Intel"
   },
   {
@@ -4590,7 +4590,7 @@
    "url": "https://www.clove.co.uk/products/intel-core-ultra-5-225f-processor-20-mb-smart-cache-box",
    "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/eadda43f-6d07-4413-8190-64db15606a08.jpg?v=1743582672",
-   "inStock": true,
+   "inStock": false,
    "brand": "Intel"
   },
   {

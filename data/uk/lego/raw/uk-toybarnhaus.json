@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:56:54.874Z",
+ "scrapedAt": "2026-11-20T02:02:01.872Z",
  "offers": [
   {
    "retailer": "uk-toybarnhaus",
@@ -9,7 +9,7 @@
    "price": 66.99,
    "wasPrice": 71.84,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/42233_Display1_v29.png?v=1784975647",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "42233"
   },
@@ -108,7 +108,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-botanicals-peace-lily-flower-decor-11504",
    "price": 54.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/11504_boxprod_v29_sha.png?v=1765380997",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "11504"
   },
@@ -207,7 +207,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-city-mountain-bike-adventure-van-60512",
    "price": 17.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/60512_boxprod_v29_sha.png?v=1778330390",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "60512"
   },
@@ -336,7 +336,7 @@
    "price": 18.99,
    "wasPrice": 24.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76332_boxprod_v29_sha.png?v=1770046400",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76332"
   },
@@ -544,6 +544,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "43011"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "LEG43023",
+   "title": "LEGO Editions: McLaren Mastercard F1 Team Lando Norris Helmet (43023)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-editions-mclaren-mastercard-f1®-team-lando-norris-helmet-43023",
+   "price": 79.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43023_boxprod_v29_sha.png?v=1780578383",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "43023"
   },
   {
    "retailer": "uk-toybarnhaus",
@@ -809,7 +820,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-harry-potter-hogwarts™-house-crest-76462",
    "price": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76462_boxprod_v29_sha.png?v=1778331621",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76462"
   },
@@ -831,7 +842,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-harry-potter-norbert-hagrids-baby-dragon-76477",
    "price": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76477_boxprod_v29.png?v=1778327932",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "76477"
   },
@@ -1098,7 +1109,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-marvel-doctor-doom-bust-76345",
    "price": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76345_boxprod_v29.png?v=1785764729",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76345"
   },
@@ -1839,17 +1850,6 @@
   },
   {
    "retailer": "uk-toybarnhaus",
-   "sku": "LEG75456",
-   "title": "LEGO Star Wars: Advent Calendar 2026 (75456)",
-   "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-star-wars-advent-calendar-2026-75456",
-   "price": 29.99,
-   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75456_boxprod_v29_sha.png?v=1783677246",
-   "inStock": true,
-   "brand": "LEGO",
-   "mpn": "75456"
-  },
-  {
-   "retailer": "uk-toybarnhaus",
    "sku": "LEG75401",
    "title": "LEGO Star Wars: Ahsoka's Jedi Interceptor (75401)",
    "url": "https://www.toybarnhaus.co.uk/products/lego-star-wars-ahsokas-jedi-interceptor-75401",
@@ -2014,6 +2014,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "72046"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "LEG72051",
+   "title": "LEGO Super Mario: Donkey Kong Arcade (72051)",
+   "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-super-mario-donkey-kong™-arcade-72051",
+   "price": 149.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/72051_boxprod_v29_sha.png?v=1784893264",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "72051"
   },
   {
    "retailer": "uk-toybarnhaus",
@@ -2218,7 +2229,7 @@
    "price": 94.99,
    "wasPrice": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77093_boxprod_v29_sha.png?v=1768752230",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "77093"
   },

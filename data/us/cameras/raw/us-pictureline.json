@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:35:48.234Z",
+ "scrapedAt": "2026-11-20T01:40:04.095Z",
  "offers": [
   {
    "retailer": "us-pictureline",
@@ -40,16 +40,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Variokit-monoballFix-Compact-Cameraplate-1.jpg?v=1722623589",
    "inStock": true,
    "brand": "Arca-Swiss"
-  },
-  {
-   "retailer": "us-pictureline",
-   "sku": "BPIC101326",
-   "title": "Boise - Get To Know Your Camera: 3 Part Series Tuesdays October 2026",
-   "url": "https://www.pictureline.com/products/boise-get-to-know-your-camera-3-part-series-tuesdays-october-2026",
-   "price": 249,
-   "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/BoiseClasses_Covers_Summer26_Artboard6copy5_a80a5298-1945-4fde-9499-4a3c2325d1e4_1.jpg?v=1788210538",
-   "inStock": true,
-   "mpn": "BPIC101326"
   },
   {
    "retailer": "us-pictureline",
@@ -218,7 +208,7 @@
    "sku": "6895C002",
    "title": "Canon EOS R50 V Mirrorless Camera Body",
    "url": "https://www.pictureline.com/products/canon-eos-r50v-mirrorless-camera-body",
-   "price": 569.99,
+   "price": 519.99,
    "wasPrice": 719.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Canon-EOS-R50-V-Mirrorless-Camera-Body-1.jpg?v=1743009201",
    "inStock": true,
@@ -233,7 +223,7 @@
    "price": 1999,
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/products/CanonR61.jpg?v=1704233885",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon",
    "mpn": "5666C002"
   },
@@ -325,7 +315,7 @@
    "price": 134.99,
    "wasPrice": 144.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/products/Rain-Cover-ERC-E5S_1_xl.jpg?v=1610749301",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon",
    "mpn": "1758C001"
   },
@@ -400,7 +390,7 @@
    "sku": "6390C001",
    "title": "Canon PowerShot V1 Digital Camera",
    "url": "https://www.pictureline.com/products/canon-powershot-v1-digital-camera",
-   "price": 849,
+   "price": 829,
    "wasPrice": 1029,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Canon-Powershot-V1-Digital-Camera-2.jpg?v=1743006536",
    "inStock": true,
@@ -412,7 +402,7 @@
    "sku": "CP.OS.00000442.02",
    "title": "DJI Osmo 360 Adventure Combo",
    "url": "https://www.pictureline.com/products/dji-osmo-360-adventure-combo",
-   "price": 569.99,
+   "price": 531.99,
    "wasPrice": 699.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/DJI-Osmo-360-Standard-Combo-1.jpg?v=1753891760",
    "inStock": true,
@@ -423,7 +413,7 @@
    "sku": "CP.OS.00000441.02",
    "title": "DJI Osmo 360 Standard Combo",
    "url": "https://www.pictureline.com/products/dji-osmo-360-standard-combo",
-   "price": 444.99,
+   "price": 427.99,
    "wasPrice": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/DJI-Osmo-360-Standard-Combo-1.jpg?v=1753891760",
    "inStock": true,
@@ -485,7 +475,8 @@
    "sku": "CP.OS.00000301.01",
    "title": "DJI Osmo Pocket 3",
    "url": "https://www.pictureline.com/products/dji-osmo-pocket-3",
-   "price": 439,
+   "price": 373,
+   "wasPrice": 439,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Osmo-Pocket-3-1.jpg?v=1698335532",
    "inStock": true,
    "mpn": "CP.OS.00000301.01"
@@ -495,7 +486,8 @@
    "sku": "CP.OS.00000302.01",
    "title": "DJI Osmo Pocket 3 Creator Combo",
    "url": "https://www.pictureline.com/products/dji-osmo-pocket-3-creator-combo",
-   "price": 549,
+   "price": 469,
+   "wasPrice": 549,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Osmo-Pocket-3-Creator-Combo-1.jpg?v=1698335721",
    "inStock": true,
    "mpn": "CP.OS.00000302.01"

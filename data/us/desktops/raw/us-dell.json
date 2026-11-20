@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:33:07.552Z",
+ "scrapedAt": "2026-11-20T01:36:31.610Z",
  "offers": [
   {
    "retailer": "us-dell",
@@ -55,16 +55,6 @@
    "image": "https://i.dell.com/assetlink/img/en/aio-dell-24-ec24260-gy-gallery-1-dl1f7mc-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1028&qlt=100,0&resMode=sharp2&size=1028,804",
    "inStock": true,
    "fromPrice": true
-  },
-  {
-   "retailer": "us-dell",
-   "sku": "ec24250_so_31",
-   "brand": "Dell",
-   "title": "Dell 24 All-in-One Desktop - Intel Core 3 100U, 8 GB DDR5, 512 GB SSD, 23.8\" Touch FHD (1920x1080)",
-   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dell24allinoneec24250/ec24250_so_31",
-   "price": 949.99,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ec24250/media-gallery/white/touch/dell-ec24250t-aio-gy-mldspk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1083&qlt=100,0&resMode=sharp2&size=1083,804",
-   "inStock": true
   },
   {
    "retailer": "us-dell",
@@ -138,7 +128,7 @@
    "brand": "Dell",
    "title": "Dell Pro 24 All-in-One 35W Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellpro24allinone35wqc24251",
-   "price": 1764,
+   "price": 1458,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qc24251/media-gallery/desktop-aio-dell-pro-qc24251-fixst-cam-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=967&qlt=100,0&resMode=sharp2&size=967,804",
    "inStock": true,
    "fromPrice": true
@@ -167,11 +157,22 @@
   },
   {
    "retailer": "us-dell",
+   "sku": "dellpro5microp5m1260",
+   "brand": "Dell",
+   "title": "Dell Pro 5 Micro Desktop",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellpro5microp5m1260",
+   "price": 1587,
+   "image": "https://i.dell.com/assetlink/img/global/dell-pro-p5m1260-micro-desktop-c-30030rf000-bk-dl169my-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=435&qlt=100,0&resMode=sharp2&size=435,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
    "sku": "dellproessentialmicropvm1265",
    "brand": "Dell",
    "title": "Dell Pro Essential Micro Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellproessentialmicropvm1265",
-   "price": 1027,
+   "price": 1007,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-essential/pvm1265/media-gallery/desktop-pvm1265-pro-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=413&qlt=100,0&resMode=sharp2&size=413,804",
    "inStock": true,
    "fromPrice": true
@@ -259,7 +260,7 @@
    "brand": "Dell",
    "title": "Dell Pro Micro Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellpromicroqcm1250",
-   "price": 1205,
+   "price": 1142,
    "image": "https://i.dell.com/assetlink/img/global/desktop-pro-qcm1250-micro-black-gallery-1-dl11avy1-original.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=560&qlt=100,0&resMode=sharp2&size=560,804",
    "inStock": true,
    "fromPrice": true
@@ -270,7 +271,7 @@
    "brand": "Dell",
    "title": "Dell Pro Micro Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellpromicroqcm1255",
-   "price": 1297,
+   "price": 1049,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/images/products/desktops-and-all-in-ones/dell-pro-desktop/qcm1255/dell-pro-qcm1255-micro-desktop-c-00015rf000-bk.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=560&qlt=100,0&resMode=sharp2&size=560,804",
    "inStock": true,
    "fromPrice": true
@@ -422,7 +423,7 @@
    "brand": "Dell",
    "title": "Dell Pro Tower Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellprotowerqct1250",
-   "price": 1492,
+   "price": 1008,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qct1250/media-gallery/desktop-dell-pro-qct1250-tower-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=486&qlt=100,0&resMode=sharp2&size=486,804",
    "inStock": true,
    "fromPrice": true
@@ -466,10 +467,20 @@
    "brand": "Dell",
    "title": "Dell Slim Desktop",
    "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellslimds1265",
-   "price": 829.99,
+   "price": 699.99,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ds1265/media-gallery/desktop-ds1265-slim-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=461&qlt=100,0&resMode=sharp2&size=461,804",
    "inStock": true,
    "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "ecs1250_so_30",
+   "brand": "Dell",
+   "title": "Dell Slim Desktop - Intel Core Ultra 5 225, 16 GB DDR5, 512 GB SSD",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/dellslimecs1250/ecs1250_so_30",
+   "price": 979.99,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ecs1250/media-gallery/with-reader/desktop-ecs1250-slim-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=485&qlt=100,0&resMode=sharp2&size=485,804",
+   "inStock": true
   },
   {
    "retailer": "us-dell",
@@ -492,6 +503,16 @@
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-essential/pvt1265/media-gallery/desktop-pvt1265-pro-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=526&qlt=100,0&resMode=sharp2&size=526,804",
    "inStock": true,
    "fromPrice": true
+  },
+  {
+   "retailer": "us-dell",
+   "sku": "ect1250_so_19",
+   "brand": "Dell",
+   "title": "Dell Tower Desktop - Intel Core Ultra 5 225, 8 GB DDR5, 512 GB SSD",
+   "url": "https://www.dell.com/en-us/shop/desktop-computers/spd/delltowerect1250/ect1250_so_19",
+   "price": 849.99,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ect1250/media-gallery/with-reader/desktop-tower-ect1250-c-no-ssd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=560&qlt=100,0&resMode=sharp2&size=560,804",
+   "inStock": true
   },
   {
    "retailer": "us-dell",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:56:21.460Z",
+ "scrapedAt": "2026-11-20T01:59:57.006Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -9,17 +9,6 @@
    "url": "https://www.laptopsdirect.co.uk/asus-geforce-gt-710-3gb-gddr5-graphics-card-90yv0ala-m0na00/version.asp",
    "price": 68.97,
    "image": "https://www.laptopsdirect.co.uk/Images/90YV0ALA-M0NA00_1_Classic.png?v=5",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "1954655",
-   "mpn": "90YV0K60-M0NA00",
-   "title": "ASUS GeForce RTX 3050 6GB GDDR6 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/asus-geforce-rtx-3050-6gb-gddr6-graphics-card-90yv0k60-m0na00/version.asp",
-   "price": 284.97,
-   "wasPrice": 299.99,
-   "image": "https://www.laptopsdirect.co.uk/Images/90YV0K60-M0NA00_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -40,7 +29,7 @@
    "title": "ASUS GeForce RTX 5060 Ti 8GB GDDR16 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/asus-geforce-rtx-5060-ti-8gb-gddr16-graphics-card-90yv0mp2-m0na00/version.asp",
    "price": 524.97,
-   "wasPrice": 619.19,
+   "wasPrice": 589.99,
    "image": "https://www.laptopsdirect.co.uk/Images/90YV0MP2-M0NA00_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -88,12 +77,32 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2032095",
-   "mpn": "GV-N5060WF2OC-8GD",
-   "title": "GIGABYTE GeForce RTX 5060 WINDFORCE OC 8GB GDDR7 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-5060-windforce-oc-8gb-gddr7-graphics-card-gv-n5060wf2oc-8gd/version.asp",
-   "price": 494.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/GV-N5060WF2OC-8GD_1_Classic.jpg?v=1",
+   "sku": "1891640",
+   "mpn": "GV-N3050WF2OCV2-8GD",
+   "title": "GIGABYTE GeForce RTX 3050 WINDFORCE OC V2 8GB GDDR6 Graphics Card",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-nvidia-geforce-rtx-3050-windforce-oc-v2-8gb-gddr6-graphics-card-gv-n3050wf2ocv2-8gd/version.asp",
+   "price": 322.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GV-N3050WF2OCV2-8GD_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2010537",
+   "mpn": "GV-N506TEAGLE OC-16GD",
+   "title": "Gigabyte GeForce RTX 5060 Ti EAGLE OC ICE 16GB GDDR7 Graphics Card",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-5060-ti-eagle-oc-ice-16gb-gddr7-graphics-card-gv-n506teagle-oc-16gd/version.asp",
+   "price": 778.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GV-N506TEAGLE%20OC-16GD_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2015420",
+   "mpn": "GV-N506TWF2OC-16GD",
+   "title": "Gigabyte GeForce RTX 5060 Ti WINDFORCE OC 16GB GDDR7 Graphics Card",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-5060-ti-windforce-oc-16gb-gddr7-graphics-card-gv-n506twf2oc-16gd/version.asp",
+   "price": 768.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GV-N506TWF2OC-16GD_1_Classic.jpg?v=1",
    "inStock": true
   },
   {

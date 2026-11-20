@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:55:35.636Z",
+ "scrapedAt": "2026-11-20T02:00:32.171Z",
  "offers": [
   {
    "retailer": "uk-samsung",
@@ -76,7 +76,7 @@
    "url": "https://www.samsung.com/uk/monitors/gaming/odyssey-g7-g70f-27-inch-dual-mode-4k-180hz-fhd-360hz-ls27fg702euxxu/",
    "price": 299,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/ls27fg702euxxu/gallery/uk-odyssey-g7-27g70f-ls27fg702euxxu-thumb-549319273",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-samsung",
@@ -223,17 +223,6 @@
   },
   {
    "retailer": "uk-samsung",
-   "sku": "LS32FM702UUXXU",
-   "mpn": "LS32FM702UUXXU",
-   "brand": "Samsung",
-   "title": "Samsung 32\" Smart Monitor M7 M70F UHD",
-   "url": "https://www.samsung.com/uk/monitors/smart/smart-monitor-m7-32-inch-smart-tv-apps-4k-uhd-ls32fm702uuxxu/",
-   "price": 299,
-   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/ls32fm702uuxxu/gallery/uk-smart-m7-32m70f-black-ls32fm702uuxxu-thumb-547264518",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-samsung",
    "sku": "LS32FM801UUXXU",
    "mpn": "LS32FM801UUXXU",
    "brand": "Samsung",
@@ -340,6 +329,17 @@
    "url": "https://www.samsung.com/uk/monitors/high-resolution/viewfinity-s8-s85th-40-inch-5k2k-curved-wuhd-ls40h850tauxxu/",
    "price": 1199,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/ls40h850tauxxu/gallery/uk-viewfinity-s8-40s85th-ls40h850tauxxu-thumb-553171645",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-samsung",
+   "sku": "LS43FM702UUXXU",
+   "mpn": "LS43FM702UUXXU",
+   "brand": "Samsung",
+   "title": "Samsung 43\" Smart Monitor M7 M70F UHD",
+   "url": "https://www.samsung.com/uk/monitors/smart/smart-monitor-m7-43-inch-smart-tv-apps-4k-uhd-ls43fm702uuxxu/",
+   "price": 299,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/uk/ls43fm702uuxxu/gallery/uk-smart-m7-32m70f-black-552297-ls43fm702uuxxu-thumb-547264761",
    "inStock": true
   },
   {

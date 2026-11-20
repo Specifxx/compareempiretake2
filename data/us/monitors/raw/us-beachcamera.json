@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:31:32.668Z",
+ "scrapedAt": "2026-11-20T01:35:47.122Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -547,7 +547,7 @@
    "price": 459,
    "wasPrice": 516.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1117106_1_f041c540-6d3e-403c-9e2b-a723f995fd84.jpg?v=1790122240",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dell",
    "mpn": "DELU2724D"
   },
@@ -594,7 +594,7 @@
    "url": "https://www.beachcamera.com/products/dell-p2725de-27-inch-qhd-usb-c-hub-monitor-100hz-ips",
    "price": 495,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1200280_1.jpg?v=1793614130",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dell",
    "mpn": "DELP2725DE"
   },
@@ -1077,6 +1077,17 @@
   },
   {
    "retailer": "us-beachcamera",
+   "sku": "LG27G640AB",
+   "title": "LG 27 Inch UltraGear IPS QHD 1440p 300Hz 1ms G-Sync Compatible Gaming Monitor",
+   "url": "https://www.beachcamera.com/products/lg-27-inch-ultragear-ips-qhd-1440p-300hz-1ms-g-sync-compatible-gaming-monitor",
+   "price": 229.99,
+   "wasPrice": 449.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1130095_1_8deaa297-97dd-40b0-ba5e-3857e7d7b0a6.jpg?v=1790672392",
+   "inStock": true,
+   "mpn": "LG27G640AB"
+  },
+  {
+   "retailer": "us-beachcamera",
    "sku": "LG27G850AB",
    "title": "LG 27 Inch UltraGear Nano IPS Black 4K UHD 240Hz or FHD 480Hz 1ms Gaming Monitor",
    "url": "https://www.beachcamera.com/products/lg-27-inch-ultragear-nano-ips-black-4k-uhd-240hz-or-fhd-480hz-1ms-gaming-monitor",
@@ -1526,7 +1537,7 @@
    "url": "https://www.beachcamera.com/products/lg-34-ultragear-wqhd-oled-curved-gaming-monitor-240hz-0-03ms-gtg-displayhdr",
    "price": 1199.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1110805_1.jpg?v=1784584993",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LG34GX900AB"
   },
   {
@@ -1676,7 +1687,7 @@
    "url": "https://www.beachcamera.com/products/lg-45-inch-ultragear-oled-wqhd-240hz-0-03ms-g-sync-curved-gaming-monitor",
    "price": 1699.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1120999_1.jpg?v=1757713158",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LG45GX900AB"
   },
   {
@@ -1686,7 +1697,7 @@
    "url": "https://www.beachcamera.com/products/lg-45-ultragear-oled-wqhd-240hz-800r-curved-gaming-monitor-with-webos",
    "price": 1399.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1196990_1.jpg?v=1782376253",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LG45GX90SAB"
   },
   {

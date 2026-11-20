@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:32:49.797Z",
+ "scrapedAt": "2026-11-20T01:36:56.560Z",
  "offers": [
   {
    "retailer": "us-espressooutlet",
@@ -281,7 +281,7 @@
    "url": "https://www.espressooutlet.net/products/la-spaziale-vivaldi-ii-espresso-machine?variant=40371289587787",
    "price": 2795,
    "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/Vivaldi-Black-side.jpg?v=1772743414",
-   "inStock": true,
+   "inStock": false,
    "brand": "La Spaziale"
   },
   {
@@ -291,7 +291,7 @@
    "url": "https://www.espressooutlet.net/products/la-spaziale-vivaldi-ii-espresso-machine?variant=40371289620555",
    "price": 2795,
    "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/Vivaldi-red-side.jpg?v=1772743414",
-   "inStock": true,
+   "inStock": false,
    "brand": "La Spaziale",
    "mpn": "M0196"
   },
@@ -910,7 +910,7 @@
    "price": 479,
    "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/DSC00763.jpg?v=1763496210",
-   "inStock": false,
+   "inStock": true,
    "brand": "Turin Grinders",
    "mpn": "TCRM3007LB-438"
   },
@@ -937,6 +937,16 @@
    "inStock": true,
    "brand": "Turin Grinders",
    "mpn": "TCRM3007LW-439"
+  },
+  {
+   "retailer": "us-espressooutlet",
+   "sku": "67376250093643",
+   "title": "Turin MC3 Dual Boiler Espresso Machine Black",
+   "url": "https://www.espressooutlet.net/products/turin-mc3-dual-boiler-espresso-machine",
+   "price": 1099,
+   "wasPrice": 1299,
+   "image": "https://cdn.shopify.com/s/files/1/0564/3288/5835/files/MC3DB001.png?v=1795101929",
+   "inStock": true
   },
   {
    "retailer": "us-espressooutlet",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T01:48:32.306Z",
+ "scrapedAt": "2026-11-20T01:24:03.854Z",
  "offers": [
   {
    "retailer": "hp",
@@ -208,7 +208,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-series-5-pro-27-inch-qhd-usb-c-conferencing-monitor-527pm-9e0y9ut.html",
    "price": 810,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-series-5-pro-527pm-chidi-front.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -461,6 +461,17 @@
    "url": "https://www.hp.com/au-en/shop/omen-by-hp-31-5-inch-qhd-165hz-curved-gaming-monitor-omen-32c-780k7aa.html",
    "price": 309,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/7/8/780K7AA-1_T1689745747.png",
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
+   "sku": "9R181AA",
+   "mpn": "9R181AA",
+   "brand": "HP",
+   "title": "OMEN Transcend 31.5 inch UHD 240Hz OLED Gaming Monitor - OMEN Transcend 32",
+   "url": "https://www.hp.com/au-en/shop/omen-transcend-31-5-inch-uhd-240hz-oled-gaming-monitor-omen-transcend-32-9r181aa.html",
+   "price": 2299,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/2/4/24c2_hp_omen_transcend_32_oled_gaming_monitor_blackandwhite_coreset_front.png",
    "inStock": true
   }
  ]

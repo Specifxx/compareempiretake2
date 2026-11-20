@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:37:11.206Z",
+ "scrapedAt": "2026-11-20T01:41:34.504Z",
  "offers": [
   {
    "retailer": "us-samsung",
@@ -43,6 +43,17 @@
    "url": "https://www.samsung.com/us/monitors/curved/27-inch-essential-monitor-s3-s39gd-fhd-100hz-1800r-curvature-game-mode-with-speaker-sku-ls27d396ganxza",
    "price": 199.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27d396ganxza/gallery/us-curved-ls27d396ganxza----inch-essential-monitor-s--s--gd-black-552034564",
+   "inStock": true
+  },
+  {
+   "retailer": "us-samsung",
+   "sku": "LS27FG532ENXZA",
+   "mpn": "LS27FG532ENXZA",
+   "brand": "Samsung",
+   "title": "Samsung 27 Inch Odyssey G53F QHD 200hz | AMD FreeSync Premium | HDR10 Gaming Monitor LS27FG532ENXZA",
+   "url": "https://www.samsung.com/us/monitors/gaming/27-inch-odyssey-g5-g53f-qhd-ips-200hz-gaming-monitor-sku-ls27fg532enxza",
+   "price": 249.99,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls27fg532enxza/gallery/us-gaming-ls27fg532enxza-odyssey-g--g--f-qhd----hz-gaming-monitor-black-552005175",
    "inStock": true
   },
   {
@@ -406,7 +417,7 @@
    "url": "https://www.samsung.com/us/monitors/gaming/49-inch-odyssey-oled-g9-g95sd-dual-qhd-240hz-03ms-g-sync-sku-ls49dg956snxgo",
    "price": 1899.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/ls49dg956snxgo/gallery/us-gaming-ls49dg956snxgo-odyssey-oled-g--g--sd-dqhd-silver-552034452",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-samsung",

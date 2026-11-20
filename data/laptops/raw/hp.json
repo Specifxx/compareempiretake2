@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-18T01:47:19.773Z",
+ "scrapedAt": "2026-11-20T01:22:52.875Z",
  "offers": [
   {
    "retailer": "hp",
@@ -47,12 +47,23 @@
   },
   {
    "retailer": "hp",
+   "sku": "A1NF6PA",
+   "mpn": "A1NF6PA",
+   "brand": "HP",
+   "title": "HP Chromebook 14 inch 14a-nf0005TU, Silver",
+   "url": "https://www.hp.com/au-en/shop/hp-chromebook-14a-nf0005tu-a1nf6pa.html",
+   "price": 599,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c0889776-touch.png",
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
    "sku": "A1MT6PA",
    "mpn": "A1MT6PA",
    "brand": "HP",
    "title": "HP Chromebook 14 inch 14a-nf0007TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-chromebook-14a-nf0007tu-a1mt6pa.html",
-   "price": 349,
+   "price": 429,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08897767_2.png",
    "inStock": false
   },
@@ -109,7 +120,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-elitebook-6-g1a-16-inch-notebook-ai-pc-c86mdpa.html",
    "price": 2499,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitebook-6-g1a-16-naturalsilver-frontopen.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -187,17 +198,6 @@
    "price": 3449,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitebook-6-g1i-16-wafer16-frontopen_1.png",
    "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "C86MMPA",
-   "mpn": "C86MMPA",
-   "brand": "HP",
-   "title": "HP EliteBook 8 Flip G1i 13 inch Laptop AI PC, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-elitebook-8-flip-g1i-13-inch-notebook-ai-pc-c86mmpa.html",
-   "price": 3299,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp_elitebook_8_13_flip_g1i_machu13x_flipfrontright_2_touchcscreen_2.png",
-   "inStock": false
   },
   {
    "retailer": "hp",
@@ -505,7 +505,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-fortis-flip-g1m-11-inch-chromebook-b97vtpt.html",
    "price": 399,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-fortis-flip-g1m-11-chromebook-jetblack-front-touchicon.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -624,7 +624,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 17.3 inch Laptop 17-dk0026TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-3-laptop-17-dk0026tu-e75rqpa.html",
-   "price": 699,
+   "price": 599,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-17.3-inch-laptop-pc-costaa-glacier-silver-front_2.png",
    "inStock": true
   },
@@ -635,7 +635,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 17.3 inch Laptop AI 17-dg0026TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-3-laptop-ai-17-dg0026tu-e75rmpa.html",
-   "price": 1499,
+   "price": 1199,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-17.3-inch-laptop-pc-costaa-glacier-silver-front_3.png",
    "inStock": true
   },
@@ -646,7 +646,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 17.3 inch Laptop AI 17-dg0027TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-3-laptop-ai-17-dg0027tu-e75rnpa.html",
-   "price": 1299,
+   "price": 999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-17.3-inch-laptop-pc-costaa-glacier-silver-front_2_1.png",
    "inStock": true
   },
@@ -657,7 +657,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 17.3 inch Laptop AI 17-dg0028TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-3-laptop-ai-17-dg0028tu-e75rppa.html",
-   "price": 899,
+   "price": 699,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-17.3-inch-laptop-pc-costaa-glacier-silver-front_1_1.png",
    "inStock": true
   },
@@ -668,7 +668,7 @@
    "brand": "HP",
    "title": "HP OmniBook 5 14 inch Laptop AI 14-kf0013TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-5-laptopai-14-kf0013tu-dg6y2pa.html",
-   "price": 1299,
+   "price": 1199,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-5-14-inch-laptop-next-gen-ai-pc-deso-glacier-silver-front_1.png",
    "inStock": true
   },
@@ -679,7 +679,7 @@
    "brand": "HP",
    "title": "HP OmniBook 5 14 inch Laptop AI 14-kf0014TU, Silver",
    "url": "https://www.hp.com/au-en/shop/hp-omnibook-5-laptopai-14-kf0014tu-dg6c9pa.html",
-   "price": 1199,
+   "price": 1099,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-omnibook-5-14-inch-laptop-next-gen-ai-pc-deso-glacier-silver-front.png",
    "inStock": true
   },
@@ -1363,18 +1363,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-probook-4-g1q-14-inch-notebook-next-gen-ai-pc-bx2e6pt.html",
    "price": 2299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-probook-4-g1q-14-naturalsilve-frontopen_1.png",
-   "inStock": false
-  },
-  {
-   "retailer": "hp",
-   "sku": "D9CH9PT",
-   "mpn": "D9CH9PT",
-   "brand": "HP",
-   "title": "HP ZBook 8 G1ak 14 inch Mobile Workstation PC, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-zbook-8-g1ak-14-inch-mobile-workstation-pc-d9ch9pt.html",
-   "price": 2299,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbo_2_3_12.png",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "hp",
@@ -1529,17 +1518,6 @@
    "price": 9859,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbook-fury-16-gemtree16-meteorsilver-front-touchicon_1.png",
    "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "C2EP6PT",
-   "mpn": "C2EP6PT",
-   "brand": "HP",
-   "title": "HP ZBook Fury G1i 18 inch Mobile Workstation PC, Silver",
-   "url": "https://www.hp.com/au-en/shop/hp-zbook-fury-g1i-18-inch-mobile-workstation-pc-c2ep6pt.html",
-   "price": 8429,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-zbook-fury-g1i-18-inch-mobile-workstation-gemtree18-frontopen_1_1.png",
-   "inStock": false
   },
   {
    "retailer": "hp",

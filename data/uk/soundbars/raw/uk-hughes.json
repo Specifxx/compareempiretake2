@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:50:14.783Z",
+ "scrapedAt": "2026-11-20T01:55:03.986Z",
  "offers": [
   {
    "retailer": "uk-hughes",
@@ -29,6 +29,16 @@
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/hisense/ax5100q",
    "price": 299,
    "image": "https://cdn6.hughes.co.uk/media/8d/d5/7c/1749629831/HIS-AX5100Q-C.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "ax5125h",
+   "brand": "Hisense",
+   "title": "Hisense AX5125H 5.1.2 Channel Cinematic Soundbar with Wireless Subwoofer",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/hisense/ax5125h",
+   "price": 499,
+   "image": "https://cdn6.hughes.co.uk/media/94/83/95/1715260541/HIS-AX5125H-B.jpg",
    "inStock": true
   },
   {
@@ -103,12 +113,12 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "1000003062",
+   "sku": "1000003086",
    "brand": "Majority",
-   "title": "Majority NAGA40BLK Naga 40 Plus Soundbar with Wireless Subwoofer",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/majority/1000003062",
-   "price": 99.95,
-   "image": "https://cdn6.hughes.co.uk/media/18/7b/f9/1786969677/MAJ-NAGA40BLK-1.jpg",
+   "title": "Majority Bowfell Halo 5.1 Wireless Compact Sound Bar with Dolby Atmos - Black",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/majority/1000003086",
+   "price": 169.99,
+   "image": "https://cdn6.hughes.co.uk/media/bc/8b/80/1790931637/Majority%20Bowfell%20Halo%205.1%20Atmos%20-%20%20Including%20Which%20Award%20-%20SQUARE.jpg",
    "inStock": true
   },
   {
@@ -133,10 +143,10 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "hw-q600h",
+   "sku": "hwq600h",
    "brand": "Samsung",
    "title": "Samsung HW-Q600H Q-Series Wireless Soundbar 3.1.2 Ch",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/samsung/hw-q600h",
+   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/samsung/hwq600h",
    "price": 299,
    "image": "https://cdn6.hughes.co.uk/media/01/7c/17/1780044783/SAM-HW-Q600H-B.jpg",
    "inStock": true
@@ -213,23 +223,13 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "hws700d",
-   "brand": "Samsung",
-   "title": "Samsung HWS700D Ultra Slim Soundbar 3.1ch Subwoofer - Black",
-   "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/samsung/hws700d",
-   "price": 219,
-   "image": "https://cdn6.hughes.co.uk/media/c8/6e/ea/1712933188/SAM-HWS700D-A.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "hw-qs90h",
    "brand": "Samsung",
    "title": "Samsung QS90H Q-Series 7.1.2 Ch All-in-One Soundbar - Black",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/samsung/hw-qs90h",
    "price": 749,
    "image": "https://cdn6.hughes.co.uk/media/ab/54/6a/1780060592/SAM-HW-QS90H-A.jpg",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hughes",
@@ -348,7 +348,7 @@
    "brand": "Sony",
    "title": "Sony HTA9000 7.0.2ch Dolby Atmos Soundbar",
    "url": "https://www.hughes.co.uk/product/tv-and-entertainment/dvd-blu-ray-and-homecinema/soundbar/sony/hta9000",
-   "price": 899,
+   "price": 830,
    "image": "https://cdn6.hughes.co.uk/media/42/34/92/1743774696/SON-HTA9000-A.jpg",
    "inStock": false
   },

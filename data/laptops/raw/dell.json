@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:13:42.807Z",
+ "scrapedAt": "2026-11-20T01:18:35.151Z",
  "offers": [
   {
    "retailer": "dell",
@@ -42,17 +42,6 @@
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dellplus14laptopdb04255",
    "price": 1719.3,
    "image": "https://i.dell.com/assetlink/img/en/laptop-dell-plus-db04255t-ice-bl-gallery-1-dl1fj3h-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1147&qlt=100,0&resMode=sharp2&size=1147,804",
-   "inStock": true,
-   "fromPrice": true
-  },
-  {
-   "retailer": "dell",
-   "sku": "dell14sds14270",
-   "brand": "Dell",
-   "title": "Dell 14S Laptop",
-   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell14sds14270",
-   "price": 1226.5,
-   "image": "https://i.dell.com/assetlink/img/global/laptop-dell-ds14270-row-beige-gallery-1-dl11i20g-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1063&qlt=100,0&resMode=sharp2&size=1063,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -132,11 +121,22 @@
   },
   {
    "retailer": "dell",
+   "sku": "dell14sds14270",
+   "brand": "Dell",
+   "title": "Dell New Dell 14S Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell14sds14270",
+   "price": 1226.5,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-dell-ds14270-row-beige-gallery-1-dl11i20g-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1063&qlt=100,0&resMode=sharp2&size=1063,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
    "sku": "xps13dx13260",
    "brand": "Dell",
    "title": "Dell XPS 13 Laptop (2026)",
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/xps13dx13260",
-   "price": 1653.21,
+   "price": 1600.41,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-dx13260/media-gallery/sky/laptop-xps-13-sky-dx13260-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1043&qlt=100,0&resMode=sharp2&size=1043,804",
    "inStock": true,
    "fromPrice": true

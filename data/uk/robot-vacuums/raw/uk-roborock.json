@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:54:50.088Z",
+ "scrapedAt": "2026-11-20T01:59:34.981Z",
  "offers": [
   {
    "retailer": "uk-roborock",
@@ -28,8 +28,7 @@
    "sku": "RRUK-Q10S5Plus5-M1",
    "title": "Roborock Q10 S5+ Robot Vacuum with Auto-Empty Dock Black",
    "url": "https://uk.roborock.com/products/q10-s5-plus-robot-vacuum?variant=46774115401895",
-   "price": 179.99,
-   "wasPrice": 399.99,
+   "price": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0645/4109/8151/files/Talc_W_Set.png?v=1772497023",
    "inStock": false,
    "brand": "Roborock UK Official Store"
@@ -39,8 +38,7 @@
    "sku": "RRUK-Q10S5Plus0-M1",
    "title": "Roborock Q10 S5+ Robot Vacuum with Auto-Empty Dock White",
    "url": "https://uk.roborock.com/products/q10-s5-plus-robot-vacuum?variant=46774115434663",
-   "price": 179.99,
-   "wasPrice": 399.99,
+   "price": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0645/4109/8151/files/Talc_W_Set.png?v=1772497023",
    "inStock": false,
    "brand": "Roborock UK Official Store"
@@ -208,27 +206,6 @@
   },
   {
    "retailer": "uk-roborock",
-   "sku": "RRUK-Saros205-M1",
-   "title": "Roborock Saros 20 – AdaptiLift™ Chassis 3.0 for Smooth Threshold Crossing, Powered by 36,000 Pa Suction",
-   "url": "https://uk.roborock.com/products/roborock-saros-20-flagship-robot-vacuum-cleaner?variant=50364648521895",
-   "price": 1299,
-   "image": "https://cdn.shopify.com/s/files/1/0645/4109/8151/files/Saros_20_Set.jpg?v=1782366531",
-   "inStock": true,
-   "brand": "Roborock United Kingdom Official Site"
-  },
-  {
-   "retailer": "uk-roborock",
-   "sku": "RRUK-Saros205-M1-N",
-   "title": "Roborock Saros 20 – AdaptiLift™ Chassis 3.0 for Smooth Threshold Crossing, Powered by 36,000 Pa Suction Saros 20 Set",
-   "url": "https://uk.roborock.com/products/roborock-saros-20-flagship-robot-vacuum-cleaner?variant=50364648489127",
-   "price": 799,
-   "wasPrice": 1309,
-   "image": "https://cdn.shopify.com/s/files/1/0645/4109/8151/files/Saros_20_Set.jpg?v=1782366531",
-   "inStock": true,
-   "brand": "Roborock United Kingdom Official Site"
-  },
-  {
-   "retailer": "uk-roborock",
    "sku": "RRUK-Saros20Neo5-M1",
    "title": "Roborock Saros 20 Neo Robot Vacuum and Mop with Hot Water Mopping & Intelligent Dock Black",
    "url": "https://uk.roborock.com/products/roborock-saros-20-neo-set-robot-vacuum-with-auto-mop-removal?variant=51288539168935",
@@ -246,6 +223,27 @@
    "price": 699,
    "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0645/4109/8151/files/Saros_20_Neo_B.png?v=1788403416",
+   "inStock": true,
+   "brand": "Roborock United Kingdom Official Site"
+  },
+  {
+   "retailer": "uk-roborock",
+   "sku": "RRUK-Saros205-M1",
+   "title": "Robot Vacuum Roborock Saros 20 Powered with 36,000 Pa Suction",
+   "url": "https://uk.roborock.com/products/roborock-saros-20-flagship-robot-vacuum-cleaner?variant=50364648521895",
+   "price": 1299,
+   "image": "https://cdn.shopify.com/s/files/1/0645/4109/8151/files/Saros_20_Set.jpg?v=1782366531",
+   "inStock": true,
+   "brand": "Roborock United Kingdom Official Site"
+  },
+  {
+   "retailer": "uk-roborock",
+   "sku": "RRUK-Saros205-M1-N",
+   "title": "Robot Vacuum Roborock Saros 20 Powered with 36,000 Pa Suction Saros 20 Set",
+   "url": "https://uk.roborock.com/products/roborock-saros-20-flagship-robot-vacuum-cleaner?variant=50364648489127",
+   "price": 799,
+   "wasPrice": 1309,
+   "image": "https://cdn.shopify.com/s/files/1/0645/4109/8151/files/Saros_20_Set.jpg?v=1782366531",
    "inStock": true,
    "brand": "Roborock United Kingdom Official Site"
   }

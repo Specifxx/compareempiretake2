@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:25:30.852Z",
+ "scrapedAt": "2026-11-20T01:30:54.602Z",
  "offers": [
   {
    "retailer": "officeworks",
@@ -72,7 +72,8 @@
    "sku": "BEASOLO4PK",
    "title": "Beats Solo 4 Wireless On-Ear Headphones Cloud Pink",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/beats-solo-4-wireless-on-ear-headphones-cloud-pink-beasolo4pk",
-   "price": 169,
+   "price": 164,
+   "wasPrice": 169,
    "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/BEASOLO4PK_beats_solo_4_wireless_on_ear_headphones_cloud_pink.jpg",
    "inStock": true,
    "brand": "Beats",
@@ -84,7 +85,6 @@
    "title": "Beats Solo 4 Wireless On-Ear Headphones Matt Black",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/beats-solo-4-wireless-on-ear-headphones-matt-black-beasolo4bk",
    "price": 164,
-   "wasPrice": 169,
    "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/BEASOLO4BK_beats_solo_4_wireless_on_ear_headphones_matt_black.jpg",
    "inStock": true,
    "brand": "Beats",
@@ -283,7 +283,6 @@
    "title": "Logitech Zone Vibe 100 Headphones Black",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/logitech-zone-vibe-100-headphones-black-logv100bk",
    "price": 94,
-   "wasPrice": 99,
    "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/LOGV100BK_logitech_zone_vibe_100_headphones_black.jpg",
    "inStock": true,
    "brand": "Logitech",
@@ -291,10 +290,22 @@
   },
   {
    "retailer": "officeworks",
+   "sku": "LOGV100WH",
+   "title": "Logitech Zone Vibe 100 Headphones White",
+   "url": "https://www.officeworks.com.au/shop/officeworks/p/logitech-zone-vibe-100-headphones-white-logv100wh",
+   "price": 94,
+   "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/LOGV100WH_logitech_zone_vibe_100_headphones_white.jpg",
+   "inStock": true,
+   "brand": "Logitech",
+   "mpn": "981-001220"
+  },
+  {
+   "retailer": "officeworks",
    "sku": "DISYSMIEBK",
    "title": "Sony Earphones with Smartphone Control Black MDREX15AP",
    "url": "https://www.officeworks.com.au/shop/officeworks/p/sony-earphones-with-smartphone-control-black-mdrex15ap-disysmiebk",
-   "price": 19.95,
+   "price": 18,
+   "wasPrice": 19.95,
    "image": "https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/DISYSMIEBK_sony_earphones_with_smartphone_control_black_mdrex15ap.jpg",
    "inStock": true,
    "brand": "Sony",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:46:36.805Z",
+ "scrapedAt": "2026-11-20T01:51:09.744Z",
  "offers": [
   {
    "retailer": "uk-dell",
@@ -43,16 +43,6 @@
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-aurora-r16-arl/media-gallery/240mm/desktop-alienware-act1250-240mm-bk-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=855&qlt=100,0&resMode=sharp2&size=855,804",
    "inStock": true,
    "fromPrice": true
-  },
-  {
-   "retailer": "uk-dell",
-   "sku": "act1250_reg_01",
-   "brand": "Alienware",
-   "title": "Alienware Aurora Gaming Desktop - Intel Core Ultra 7 265F, 16 GB DDR5, 1 TB SSD",
-   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/alienwareauroraact1250/act1250_reg_01",
-   "price": 32191.1,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-aurora-r16-arl/media-gallery/240mm/desktop-alienware-act1250-240mm-bk-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=855&qlt=100,0&resMode=sharp2&size=855,804",
-   "inStock": true
   },
   {
    "retailer": "uk-dell",
@@ -176,6 +166,17 @@
   },
   {
    "retailer": "uk-dell",
+   "sku": "dellpro5microp5m1260",
+   "brand": "Dell",
+   "title": "Dell Pro 5 Micro Desktop",
+   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellpro5microp5m1260",
+   "price": 1422.98,
+   "image": "https://i.dell.com/assetlink/img/global/dell-pro-p5m1260-micro-desktop-c-30030rf000-bk-dl169my-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=435&qlt=100,0&resMode=sharp2&size=435,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
    "sku": "dellproessentialmicropvm1265",
    "brand": "Dell",
    "title": "Dell Pro Essential Micro Desktop",
@@ -268,7 +269,7 @@
    "brand": "Dell",
    "title": "Dell Pro Micro Plus Desktop",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellpromicroplusqbm1250",
-   "price": 1336.58,
+   "price": 1416.36,
    "image": "https://i.dell.com/assetlink/img/global/desktop-pro-qbm1250-micro-black-gallery-1-dup11224216579468106-dl11bg12-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=354&qlt=100,0&resMode=sharp2&size=354,804",
    "inStock": true,
    "fromPrice": true
@@ -367,7 +368,7 @@
    "brand": "Dell",
    "title": "Dell Pro Slim Desktop",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproslimqcs1250",
-   "price": 883.86,
+   "price": 1083.06,
    "image": "https://i.dell.com/assetlink/img/global/desktop-pro-qcs1250-slim-odd-black-gallery-1-dl1feup-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=509&qlt=100,0&resMode=sharp2&size=509,804",
    "inStock": true,
    "fromPrice": true
@@ -378,7 +379,7 @@
    "brand": "Dell",
    "title": "Dell Pro Slim Desktop",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproslimqcs1255",
-   "price": 1326.66,
+   "price": 1365.06,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qcs1255/media-gallery/odd/desktop-pro-qcs1255-slim-amd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=414&qlt=100,0&resMode=sharp2&size=414,804",
    "inStock": true,
    "fromPrice": true
@@ -455,10 +456,20 @@
    "brand": "Dell",
    "title": "Dell Slim Desktop",
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellslimds1265",
-   "price": 664.81,
+   "price": 705.61,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ds1265/media-gallery/desktop-ds1265-slim-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=461&qlt=100,0&resMode=sharp2&size=461,804",
    "inStock": true,
    "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "ecs1250_fixed_76",
+   "brand": "Dell",
+   "title": "Dell Slim Desktop - Intel Core i5-14400, 16 GB DDR5, 512 GB SSD",
+   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellslimecs1250/ecs1250_fixed_76",
+   "price": 3818.61,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell/ecs1250/media-gallery/with-reader/desktop-ecs1250-slim-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=485&qlt=100,0&resMode=sharp2&size=485,804",
+   "inStock": true
   },
   {
    "retailer": "uk-dell",

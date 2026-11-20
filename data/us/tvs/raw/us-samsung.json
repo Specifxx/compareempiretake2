@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:36:56.865Z",
+ "scrapedAt": "2026-11-20T01:41:20.334Z",
  "offers": [
   {
    "retailer": "us-samsung",
@@ -32,7 +32,7 @@
    "url": "https://www.samsung.com/us/tvs/qled-tv/32-inch-qled-q8f-4k-tv-sku-qn32q8faafxza",
    "price": 499.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/qn32q8faafxza/gallery/us-qled-q8f-qn32q8faafxza-546809673",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-samsung",
@@ -76,6 +76,17 @@
    "url": "https://www.samsung.com/us/tvs/mini-led-tv/43-inch-mini-led-4k-tv-m70h-sku-un43m70hafxza",
    "price": 299.99,
    "image": "https://images.samsung.com/is/image/samsung/p6pim/us/un43m70hafxza/gallery/us-mini-led-m70h-un43m70hafxza-551592775",
+   "inStock": true
+  },
+  {
+   "retailer": "us-samsung",
+   "sku": "UN50M70HAFXZA",
+   "mpn": "UN50M70HAFXZA",
+   "brand": "Samsung",
+   "title": "Samsung 50 Inch Class Mini LED M70H 4K Samsung TV (2026) UN50M70HAFXZA",
+   "url": "https://www.samsung.com/us/tvs/mini-led-tv/50-inch-mini-led-4k-tv-m70h-sku-un50m70hafxza",
+   "price": 399.99,
+   "image": "https://images.samsung.com/is/image/samsung/p6pim/us/un50m70hafxza/gallery/us-mini-led-m70h-un50m70hafxza-551592910",
    "inStock": true
   },
   {

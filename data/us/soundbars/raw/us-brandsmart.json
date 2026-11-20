@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:31:33.861Z",
+ "scrapedAt": "2026-11-20T01:35:55.461Z",
  "offers": [
   {
    "retailer": "us-brandsmart",
@@ -23,18 +23,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/b3b92feb-e2bb-405d-a3a2-66e23730ca0d.jpg?v=1790102946",
    "inStock": true,
    "mpn": "BAR1300XM2BLK"
-  },
-  {
-   "retailer": "us-brandsmart",
-   "sku": "ESBAE20",
-   "title": "2.0 Sound Bar",
-   "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-2-0-sound-bar",
-   "price": 49.99,
-   "wasPrice": 69.99,
-   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/1490569e-7910-472b-9e8d-8f24d69f5b84.jpg?v=1790103080",
-   "inStock": true,
-   "brand": "Element Electronics",
-   "mpn": "ESBAE20"
   },
   {
    "retailer": "us-brandsmart",
@@ -118,17 +106,6 @@
    "inStock": true,
    "brand": "Klipsch",
    "mpn": "FLEXUSCORE200"
-  },
-  {
-   "retailer": "us-brandsmart",
-   "sku": "HWQS730D",
-   "title": "3.1.2-Channel Wireless Soundbar with Atmos",
-   "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-3-1-2-channel-wireless-soundbar-with-at-1",
-   "price": 799.99,
-   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/2ec18dab-f08f-4263-aded-7b6dc7f34966.jpg?v=1790097404",
-   "inStock": true,
-   "brand": "Samsung",
-   "mpn": "HWQS730D"
   },
   {
    "retailer": "us-brandsmart",
@@ -292,7 +269,8 @@
    "sku": "ARCG2US1BLK",
    "title": "Arc Ultra Premium Smart Soundbar - Black",
    "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-arc-ultra-premium-smart-soundbar-black",
-   "price": 1099,
+   "price": 849,
+   "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/8399c406-1c0e-47dc-b9c7-c0ba68a7422e.jpg?v=1790092077",
    "inStock": true,
    "brand": "Sonos",
@@ -303,7 +281,8 @@
    "sku": "ARCG2US1",
    "title": "Arc Ultra Premium Smart Soundbar - White",
    "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-arc-ultra-premium-smart-soundbar-white",
-   "price": 1099,
+   "price": 849,
+   "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/976b8730-48a5-40bd-b541-b4cfa06a2c93.jpg?v=1790092078",
    "inStock": true,
    "brand": "Sonos",
@@ -338,11 +317,24 @@
    "sku": "BEAM2US1",
    "title": "Beam 2 Soundbar - White",
    "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-beam-2-soundbar-white",
-   "price": 499,
+   "price": 339,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/5f7c4114-b5fc-45ea-a526-d4dbfc691b7b.jpg?v=1790092080",
    "inStock": true,
    "brand": "Sonos",
    "mpn": "BEAM2US1"
+  },
+  {
+   "retailer": "us-brandsmart",
+   "sku": "ESBAE20",
+   "title": "Element 2.0 Sound Bar",
+   "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-element-2-0-sound-bar",
+   "price": 49.99,
+   "wasPrice": 69.99,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/83eb4c09-3377-4e51-8436-e7d5241d5d1a_db6768aa-cf12-40b4-b3e3-d4e50a3bb551.png?v=1795077048",
+   "inStock": true,
+   "brand": "Element 2.0 Sound Bar",
+   "mpn": "ESBAE20"
   },
   {
    "retailer": "us-brandsmart",
@@ -484,7 +476,7 @@
    "sku": "RAY1SUBM1WHT",
    "title": "RAY Soundbar with Sub Mini - White",
    "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-ray-soundbar-with-sub-mini-white",
-   "price": 678,
+   "price": 588,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/05633f4f-7941-4486-a4fb-6a636a3385f5_c73deda5-b2fd-4d1d-bba0-bdc2d24331cb.jpg?v=1790802589",
    "inStock": true,
    "brand": "Sonos",
@@ -495,7 +487,7 @@
    "sku": "RAYG1US1BLK",
    "title": "RAY Soundbar With Wi-Fi - Black",
    "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-ray-soundbar-with-wi-fi-black",
-   "price": 219,
+   "price": 189,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/7dabc31c-05fd-44ca-8a68-84195ed6c88c.jpg?v=1790092106",
    "inStock": true,
    "brand": "Sonos",
@@ -506,7 +498,7 @@
    "sku": "RAYG1US1",
    "title": "RAY Soundbar With Wi-Fi - White",
    "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-ray-soundbar-with-wi-fi-white",
-   "price": 219,
+   "price": 189,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/cf58e4ef-d13e-46fa-9f51-4987fb546874.jpg?v=1790092104",
    "inStock": true,
    "brand": "Sonos",
@@ -523,6 +515,17 @@
    "inStock": true,
    "brand": "Samsung",
    "mpn": "HWB750FZP"
+  },
+  {
+   "retailer": "us-brandsmart",
+   "sku": "HWQS730D",
+   "title": "SAMSUNG Q-series 3.1.2 ch. Wireless Dolby ATMOS Soundbar with Q-Symphony HW-QS730D",
+   "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-soundbars-samsung-q-series-3-1-2-ch-wireless-dolby-atmos-soundbar-with-q-symphony-hw-qs730",
+   "price": 799.99,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/b9d01a14-859e-4fc2-9bc8-c3c456c9b4d1.jpg?v=1795054579",
+   "inStock": true,
+   "brand": "Samsung",
+   "mpn": "HWQS730D"
   },
   {
    "retailer": "us-brandsmart",

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:19:58.305Z",
+ "scrapedAt": "2026-11-20T01:24:16.099Z",
  "offers": [
   {
    "retailer": "ple",
@@ -716,18 +716,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "672552",
-   "title": "Gigabyte Radeon RX 9070 Gaming OC 16GB GDDR6",
-   "brand": "Gigabyte",
-   "mpn": "GV-R9070GAMING OC-16GD",
-   "url": "https://www.ple.com.au/products/672552/gigabyte-radeon-rx-9070-gaming-oc-16gb-gddr6",
-   "price": 1099,
-   "wasPrice": 1409,
-   "image": "https://plecom.imgix.net/iil-422695-672552.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "685112",
    "title": "Gigabyte Radeon RX 9070 GRE Gaming OC 12GB GDDR6",
    "brand": "Gigabyte",
@@ -1136,17 +1124,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "676644",
-   "title": "PNY GeForce RTX 5070 ARGB OC Triple Fan 12GB GDDR7",
-   "brand": "PNY",
-   "mpn": "VCG507012TFXXPB1-O",
-   "url": "https://www.ple.com.au/products/676644/pny-geforce-rtx-5070-argb-oc-triple-fan-12gb-gddr7",
-   "price": 1599,
-   "image": "https://plecom.imgix.net/iil-434775-676644.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "672777",
    "title": "PNY GeForce RTX 5070 Ti ARGB OC 16GB",
    "brand": "PNY",
@@ -1166,6 +1143,17 @@
    "price": 3379,
    "image": "https://plecom.imgix.net/iil-415699-672776.jpg?w=600&h=600",
    "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "672771",
+   "title": "PNY GeForce RTX 5090 Triple Fan OC 32GB GDDR7",
+   "brand": "PNY",
+   "mpn": "VCG509032TFXPB1-O",
+   "url": "https://www.ple.com.au/products/672771/pny-geforce-rtx-5090-triple-fan-oc-32gb-gddr7",
+   "price": 14999,
+   "image": "https://plecom.imgix.net/iil-415763-672771.jpg?w=600&h=600",
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1241,7 +1229,7 @@
    "brand": "XFX",
    "mpn": "RX-97TRGBBB9",
    "url": "https://www.ple.com.au/products/683076/xfx-mercury-radeon-rx-9070-xt-oc-gaming-edition-16gb-gddr6",
-   "price": 1639,
+   "price": 1699,
    "image": "https://plecom.imgix.net/iil-466220-683076.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1252,7 +1240,7 @@
    "brand": "XFX",
    "mpn": "RX-97TRGBBW9",
    "url": "https://www.ple.com.au/products/687037/xfx-mercury-radeon-rx-9070-xt-oc-gaming-edition-rgb-16gb-gddr6-white",
-   "price": 1649,
+   "price": 1709,
    "image": "https://plecom.imgix.net/iil-488304-687037.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1263,7 +1251,7 @@
    "brand": "XFX",
    "mpn": "RX-97TMARGB9",
    "url": "https://www.ple.com.au/products/678052/xfx-mercury-radeon-rx-9070-xt-oc-magnetic-air-edition-16gb-gddr6",
-   "price": 1649,
+   "price": 1709,
    "image": "https://plecom.imgix.net/iil-441694-678052.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1274,7 +1262,7 @@
    "brand": "XFX",
    "mpn": "RX-97TMARGW9",
    "url": "https://www.ple.com.au/products/678053/xfx-mercury-radeon-rx-9070-xt-oc-magnetic-air-edition-16gb-gddr6-white",
-   "price": 1659,
+   "price": 1719,
    "image": "https://plecom.imgix.net/iil-441698-678053.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1287,6 +1275,17 @@
    "url": "https://www.ple.com.au/products/680621/xfx-radeon-ai-pro-r9700-blower-32gb-gddr6",
    "price": 3099,
    "image": "https://plecom.imgix.net/iil-453616-680621.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "678055",
+   "title": "XFX Radeon RX 9070 XT Swift 16GB GDDR6 - White",
+   "brand": "XFX",
+   "mpn": "RX-97TSWF3W9",
+   "url": "https://www.ple.com.au/products/678055/xfx-radeon-rx-9070-xt-swift-16gb-gddr6-white",
+   "price": 1669,
+   "image": "https://plecom.imgix.net/iil-441705-678055.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -1307,7 +1306,7 @@
    "brand": "XFX",
    "mpn": "RX-95SWFT8BE",
    "url": "https://www.ple.com.au/products/687911/xfx-swift-radeon-rx-9050-gaming-edition-8gb-gddr6",
-   "price": 489,
+   "price": 509,
    "image": "https://plecom.imgix.net/iil-484366-687911.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1318,7 +1317,7 @@
    "brand": "XFX",
    "mpn": "RX-96TSW16BQ",
    "url": "https://www.ple.com.au/products/678058/xfx-swift-radeon-rx-9060-xt-oc-gaming-edition-16gb-gddr6",
-   "price": 909,
+   "price": 1009,
    "image": "https://plecom.imgix.net/iil-441509-678058.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1329,9 +1328,9 @@
    "brand": "XFX",
    "mpn": "RX-96TSW16WQ",
    "url": "https://www.ple.com.au/products/678059/xfx-swift-radeon-rx-9060-xt-oc-gaming-edition-16gb-gddr6-white",
-   "price": 919,
+   "price": 1019,
    "image": "https://plecom.imgix.net/iil-441516-678059.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1340,7 +1339,7 @@
    "brand": "XFX",
    "mpn": "RX-96TS316B7",
    "url": "https://www.ple.com.au/products/678060/xfx-swift-radeon-rx-9060-xt-oc-triple-fan-16gb-gddr6",
-   "price": 929,
+   "price": 1069,
    "image": "https://plecom.imgix.net/iil-441525-678060.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1351,7 +1350,7 @@
    "brand": "XFX",
    "mpn": "RX-96TS316W7",
    "url": "https://www.ple.com.au/products/678061/xfx-swift-radeon-rx-9060-xt-oc-triple-fan-16gb-gddr6-white",
-   "price": 939,
+   "price": 1079,
    "image": "https://plecom.imgix.net/iil-441676-678061.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1384,7 +1383,7 @@
    "brand": "XFX",
    "mpn": "RX-97TSWF3B9",
    "url": "https://www.ple.com.au/products/678054/xfx-swift-radeon-rx-9070-xt-triple-fan-gaming-edition-16gb-gddr6-",
-   "price": 1479,
+   "price": 1659,
    "image": "https://plecom.imgix.net/iil-441703-678054.jpg?w=600&h=600",
    "inStock": false
   },

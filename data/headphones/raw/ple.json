@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:20:19.503Z",
+ "scrapedAt": "2026-11-20T01:24:37.492Z",
  "offers": [
   {
    "retailer": "ple",
@@ -10,7 +10,7 @@
    "url": "https://www.ple.com.au/products/682508/asus-rog-cetra-open-wireless-in-ear-gaming-earphones",
    "price": 329,
    "image": "https://plecom.imgix.net/iil-460644-682508.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -21,7 +21,7 @@
    "url": "https://www.ple.com.au/products/689094/asus-rog-cetra-open-wireless-in-ear-gaming-earphones-pink",
    "price": 329,
    "image": "https://plecom.imgix.net/iil-489347-689094.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -44,7 +44,7 @@
    "url": "https://www.ple.com.au/products/689050/asus-rog-delta-ii-phantom-blade-zero-edition-wireless-gaming-headset",
    "price": 389,
    "image": "https://plecom.imgix.net/iil-489215-689050.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -748,8 +748,7 @@
    "brand": "HyperX",
    "mpn": "727A8AA",
    "url": "https://www.ple.com.au/products/658759/hyperx-cloud-iii-wired-gaming-headset-black",
-   "price": 109,
-   "wasPrice": 159,
+   "price": 159,
    "image": "https://plecom.imgix.net/iil-343880-658759.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1445,7 +1444,7 @@
    "url": "https://www.ple.com.au/products/685581/moondrop-rays-hybrid-driver-wired-usb-c-pro-gaming-iem-in-ear-monitor-headphones-with-mic",
    "price": 159,
    "image": "https://plecom.imgix.net/iil-473419-685581.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1480,7 +1479,7 @@
    "url": "https://www.ple.com.au/products/689247/msi-maestro-wireless-gaming-headset-draco-edition",
    "price": 119,
    "image": "https://plecom.imgix.net/iil-490117-689247.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1561,7 +1560,7 @@
    "brand": "Razer",
    "mpn": "RZ04-05220400",
    "url": "https://www.ple.com.au/products/680283/razer-barracuda-x-chroma-wireless-multi-platform-gaming-headset-phantom-white",
-   "price": 169,
+   "price": 161,
    "wasPrice": 239,
    "image": "https://plecom.imgix.net/iil-451977-680283.jpg?w=600&h=600",
    "inStock": true
@@ -2143,7 +2142,8 @@
    "brand": "Microsoft",
    "mpn": "8LI-00003",
    "url": "https://www.ple.com.au/products/683441/xbox-wired-stereo-headset",
-   "price": 89,
+   "price": 79,
+   "wasPrice": 89,
    "image": "https://plecom.imgix.net/iil-464643-683441.jpg?w=600&h=600",
    "inStock": true
   },

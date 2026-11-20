@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:34:50.764Z",
+ "scrapedAt": "2026-11-20T01:39:01.113Z",
  "offers": [
   {
    "retailer": "us-lg",
@@ -98,7 +98,7 @@
    "url": "https://www.lg.com/us/monitors/lg-25g523b-b-gaming-monitor",
    "price": 109.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/7151472d-2b61-4afd-9ac8-1882e74ad42d/Monitors_25G523B-B_gallery-1_5000x5000",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-lg",
@@ -250,7 +250,7 @@
    "brand": "LG",
    "title": "27 Inch UltraFine™ 4K UHD HDR10 IPS Monitor",
    "url": "https://www.lg.com/us/monitors/lg-27us500-w-4k-uhd-monitor",
-   "price": 249.99,
+   "price": 179.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/a492d3f2-0bf8-4050-900c-ed5c96568310/Monitor_27US500-W_gallery_01_5000x5000",
    "inStock": true
   },
@@ -426,20 +426,9 @@
    "brand": "LG",
    "title": "27 Inch UltraGear™ IPS QHD 1440p 300Hz 1ms NVIDIA G-Sync Compatible Gaming Monitor",
    "url": "https://www.lg.com/us/monitors/lg-27g640a-b-gaming-monitor",
-   "price": 239.99,
+   "price": 229.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/6912720d-47c7-4271-8827-d6a9640a49f5/Monitors_27G640A-B_gallery-01_5000x5000",
    "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "27GR95UM-B",
-   "mpn": "27GR95UM-B",
-   "brand": "LG",
-   "title": "27 Inch UltraGear™ MiniLED 4K UHD Nano IPS 144Hz Gaming Monitor with G-SYNC® Compatible & AMD FreeSync™ Premium Pro",
-   "url": "https://www.lg.com/us/monitors/lg-27gr95um-gaming-monitor",
-   "price": 599.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/46a9cbfd-f3b1-4880-bf51-4e155aa60fed/27GR95UM_gallery_01_3000x3000",
-   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -657,9 +646,9 @@
    "brand": "LG",
    "title": "32 Inch UltraFine™ 4K UHD HDR10 Monitor with Built-In Speakers",
    "url": "https://www.lg.com/us/monitors/lg-32ur500k-b-uhd-monitor",
-   "price": 299.99,
+   "price": 249.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/8af4c228-07fe-4ccd-af1d-bae7b372b412/Monitor_32UR500K-B_Gallery_01_5000x5000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -681,6 +670,17 @@
    "url": "https://www.lg.com/us/monitors/lg-32gn550-b-gaming-monitor",
    "price": 229.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/3da7fc14-22a4-47e8-b9f6-fc4c56d80ec1/md07519941-450-jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "32GN600-B",
+   "mpn": "32GN600-B",
+   "brand": "LG",
+   "title": "32 Inch UltraGear QHD 1440P 165Hz HDR10 Monitor with FreeSync™ Premium",
+   "url": "https://www.lg.com/us/monitors/lg-32gn600-b-gaming-monitor",
+   "price": 229,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/c8d68835-7550-415b-b64c-a2cf0211c213/md07519557-450-jpg",
    "inStock": false
   },
   {
@@ -789,7 +789,7 @@
    "brand": "LG",
    "title": "32 Inch UltraGear™ QHD IPS 300Hz 1ms G-Sync Compatible Gaming Monitor with USB-C PD15W",
    "url": "https://www.lg.com/us/monitors/lg-32g650b-b-gaming-monitor",
-   "price": 399.99,
+   "price": 299.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/00ee9591-ea2a-4c3a-bda0-15164a71ca75/Monitor_32G650B-B_gallery-1_5000x5000",
    "inStock": true
   },
@@ -824,7 +824,7 @@
    "url": "https://www.lg.com/us/monitors/lg-34wq60c-b-ultrawide-monitor",
    "price": 299.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/763ade63-a7c2-4a36-9223-2dbe5866cd8a/md08003261-450-jpg",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -866,7 +866,7 @@
    "brand": "LG",
    "title": "34 Inch UltraGear™ OLED WQHD 1440P 240Hz 0.03ms G-Sync Compatible 800R Curved Gaming Monitor - 34GS95QE-B",
    "url": "https://www.lg.com/us/monitors/lg-34gs95qe-b-gaming-monitor",
-   "price": 799.99,
+   "price": 699.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/ba03a636-a482-45b2-ae6a-7c209d803a7a/Monitor-34GS95QE-B-OLED-Gallery_3000x3000",
    "inStock": true
   },
@@ -1210,6 +1210,17 @@
    "price": 1499.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/e69815f4-d821-420b-9689-b8e1ad5f24ab/Monitors_52G930B-B_gallery-1_5000x5000",
    "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "27GL850-B",
+   "mpn": "27GL850-B",
+   "brand": "LG",
+   "title": "LG 27GL850 27 Inch UltraGear™ 1440P Nano IPS 1ms Gaming Monitor with G-Sync® Compatibility",
+   "url": "https://www.lg.com/us/monitors/lg-27gl850-b-gaming-monitor",
+   "price": 349.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/b6a7a845-3c4f-418c-b947-68a9fd82ceac/md06064916-450-jpg",
+   "inStock": false
   },
   {
    "retailer": "us-lg",

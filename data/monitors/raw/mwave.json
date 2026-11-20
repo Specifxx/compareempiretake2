@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T01:18:47.341Z",
+ "scrapedAt": "2026-11-20T01:24:04.022Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -706,9 +706,9 @@
    "sku": "AC96619",
    "title": "ASUS ROG Swift PG34WCDN 34\" 360Hz 3440x1440 0.03ms QD-OLED Gaming Monitor w/ 90W USB-C",
    "url": "https://www.mwave.com.au/products/asus-rog-swift-pg34wcdn-34-360hz-3440x1440-003ms-qdoled-gaming-monitor-w-90w-usbc-ac96619",
-   "price": 1899,
+   "price": 1936,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_rog_swift_pg34wcdn_34_360hz_3440x1440_003ms_qdoled_gaming_monitor_w_90w_usbc_ac96619_51863.jpg?v=1787744861",
-   "inStock": true,
+   "inStock": false,
    "mpn": "PG34WCDN",
    "brand": "Asus"
   },
@@ -890,7 +890,7 @@
    "url": "https://www.mwave.com.au/products/asus-zenscreen-mb16acv-156-full-hd-usb-typec-ips-portable-monitor-ac43822",
    "price": 407.58,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_zenscreen_mb16acv_156_60hz_fhd_5ms_ips_portable_usb_typec_monitor_ac43822.jpg?v=1787795512",
-   "inStock": true,
+   "inStock": false,
    "mpn": "MB16ACV",
    "brand": "Asus"
   },
@@ -1164,7 +1164,7 @@
    "url": "https://www.mwave.com.au/products/gigabyte-go27q24g-27-240hz-qhd-003ms-usbc-woled-gaming-monitor-ac97034",
    "price": 569,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_go27q24g_27_240hz_qhd_003ms_usbc_woled_gaming_monitor_ac97034_77051.jpg?v=1787796657",
-   "inStock": false,
+   "inStock": true,
    "mpn": "GO27Q24G",
    "brand": "Gigabyte"
   },
@@ -1228,7 +1228,7 @@
    "sku": "AC97721",
    "title": "Gigabyte GS32QA 32\" 180Hz QHD 1ms Adaptive Sync IPS Gaming Monitor",
    "url": "https://www.mwave.com.au/products/gigabyte-gs32qa-32-180hz-qhd-1ms-adaptive-sync-ips-gaming-monitor-ac97721",
-   "price": 329,
+   "price": 321.89,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_gs32qa_32_180hz_qhd_1ms_adaptive_sync_ips_gaming_monitor_ac97721_56559.jpg?v=1787796655",
    "inStock": false,
    "mpn": "GS32QA",
@@ -1250,7 +1250,7 @@
    "sku": "AC91022",
    "title": "Gigabyte M27Q2 QD 27\" 210Hz QHD G-Sync Compatible SuperSpeed IPS Gaming Monitor",
    "url": "https://www.mwave.com.au/products/gigabyte-m27q2-qd-27-210hz-qhd-gsync-compatible-superspeed-ips-gaming-monitor-ac91022",
-   "price": 259,
+   "price": 258,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_m27q2_qd_27_210hz_qhd_gsync_compatible_superspeed_ips_gaming_monitor_ac91022_20265.jpg?v=1787796661",
    "inStock": false,
    "mpn": "M27Q2",
@@ -2337,7 +2337,7 @@
    "url": "https://www.mwave.com.au/products/lg-ultragear-27gx790bb-27-dual-mode-720hz-hd540hz-qhd-002ms-gsync-oled-gaming-monitor-ac98945",
    "price": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lg_ultragear_27gx790bb_27_dual_mode_720hz_hd540hz_qhd_002ms_gsync_oled_gaming_monitor_ac98945_14085.jpg?v=1787797495",
-   "inStock": true,
+   "inStock": false,
    "mpn": "27GX790B-B",
    "brand": "LG"
   },
@@ -2462,7 +2462,7 @@
    "sku": "AC91760",
    "title": "LG UltraGear GX8 31.5\" Dual Mode 165Hz 4K UHD/330Hz FHD 0.03ms FreeSync Premium OLED Gaming Monitor",
    "url": "https://www.mwave.com.au/products/lg-ultragear-gx8-315-dual-mode-165hz-4k-uhd330hz-fhd-003ms-freesync-premium-oled-gaming-monitor-ac91760",
-   "price": 799,
+   "price": 789,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/lg_ultragear_gx8_315_165hz_4k330hz_full_hd_dualmode_003ms_freesync_premium_oled_gaming_monitor_ac91760_24513.jpg?v=1787797485",
    "inStock": true,
    "brand": "LG"
@@ -2550,7 +2550,7 @@
    "url": "https://www.mwave.com.au/products/msi-mag-275cf-x24-27-240hz-fhd-05ms-rapid-va-curved-gaming-monitor-ac96639",
    "price": 169,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_mag_275cf_x24_27_240hz_fhd_05ms_rapid_va_curved_gaming_monitor_ac96639_67982.jpg?v=1787797760",
-   "inStock": false,
+   "inStock": true,
    "mpn": "275CF",
    "brand": "MSI"
   },
@@ -2868,7 +2868,7 @@
    "sku": "AC92121",
    "title": "Philips Evnia 27\" 260Hz QHD 1ms G-Sync Compatible IPS Gaming Monitor",
    "url": "https://www.mwave.com.au/products/philips-evnia-27-260hz-qhd-1ms-gsync-compatible-ips-gaming-monitor-ac92121",
-   "price": 189,
+   "price": 188,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/evnia_27_ips_qhd_260hz_oc_gaming_monitor_ac92121_73339.jpg?v=1787798070",
    "inStock": false,
    "brand": "Philips"
@@ -3011,7 +3011,7 @@
    "sku": "AC92110",
    "title": "Philips Office Pro QHD 27\" 120Hz USB-C Docking Adaptive Sync IPS Monitor",
    "url": "https://www.mwave.com.au/products/philips-office-pro-qhd-27-120hz-usbc-docking-adaptive-sync-ips-monitor-ac92110",
-   "price": 329,
+   "price": 358.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/philips_office_pro_qhd_27_120hz_usbc_docking_adaptive_sync_ips_monitor_ac92110_15168.jpg?v=1787798075",
    "inStock": true,
    "brand": "Philips"
@@ -3102,9 +3102,9 @@
    "sku": "AC77043",
    "title": "QSM Q49CHB 49\" DQHD Ultra-Wide 240Hz 0.03ms HDR400 QD-OLED Curved Gaming Monitor",
    "url": "https://www.mwave.com.au/products/qsm-q49chb-49-dqhd-ultrawide-240hz-003ms-hdr400-qdoled-curved-gaming-monitor-ac77043",
-   "price": 999,
+   "price": 1749,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/qsm_q49chb_49_240hz_dqhd_ultrawide_003ms_hdr400_qdoled_curved_gaming_monitor_ac77043_1053.jpg?v=1787798183",
-   "inStock": true,
+   "inStock": false,
    "mpn": "Q49CHB",
    "brand": "QSM"
   },
@@ -3164,7 +3164,7 @@
    "sku": "AC77685",
    "title": "Samsung Odyssey G30D 32\" 180Hz Full HD 1ms FreeSync Gaming Monitor",
    "url": "https://www.mwave.com.au/products/samsung-odyssey-g30d-32-180hz-full-hd-1ms-freesync-gaming-monitor-ac77685",
-   "price": 253.58,
+   "price": 269,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/samsung_odyssey_g30d_32_180hz_full_hd_1ms_freesync_gaming_monitor_ac77685_25967.jpg?v=1787798276",
    "inStock": true,
    "brand": "Samsung"
@@ -3245,7 +3245,7 @@
    "sku": "AD00418",
    "title": "Samsung Odyssey G61SF 27\" 240Hz QHD OLED 0.03ms Gaming Monitor",
    "url": "https://www.mwave.com.au/products/samsung-odyssey-g61sf-27-240hz-qhd-oled-0-03ms-gaming-monitor",
-   "price": 499,
+   "price": 498,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/au-odyssey-oled-g6-27g61sh-ls27h.jpg?v=1790129434",
    "inStock": true,
    "mpn": "G61SF",
