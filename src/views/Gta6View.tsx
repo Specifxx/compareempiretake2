@@ -2,7 +2,7 @@ import Link from "next/link";
 import { catalogDay, getSummaries } from "@/lib/catalog";
 import { amazonLink, AMAZON_DISCLOSURE, AMAZON_REL } from "@/lib/amazon";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
-import { GTA6, GTA6_ACCESSORIES, GTA6_FAQ, gta6Consoles } from "@/lib/gta6";
+import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_FAQ, GTA6_PRICE_SOURCE, gta6Consoles } from "@/lib/gta6";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { sized } from "@/lib/image-size";
 
@@ -14,15 +14,18 @@ const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the U
 export function Gta6View({ region }: { region: RegionId }) {
   const consoles = gta6Consoles(getSummaries("consoles", region));
   const R = REGIONS[region];
-  const faq = GTA6_FAQ(IN[region]);
+  const ed = GTA6_EDITIONS[region as "au" | "us" | "uk"] ?? GTA6_EDITIONS.us;
+  const faq = GTA6_FAQ(IN[region], (region in GTA6_EDITIONS ? region : "us") as "au" | "us" | "uk");
   return (
     <div className="container-x pb-12 pt-6 sm:pt-10">
       <div className="max-w-2xl">
         <h1 className="page-title">GTA 6 consoles: PS5 and Xbox prices in {IN[region]}</h1>
         <p className="mt-2 text-ink-mute">
-          Grand Theft Auto VI launches on <b className="text-ink">{day(GTA6.releaseDate, region)}</b> for {GTA6.platforms}, according to{" "}
+          Grand Theft Auto VI is out now: it launched on <b className="text-ink">{day(GTA6.releaseDate, region)}</b> for {GTA6.platforms}, according to{" "}
           <a href={GTA6.source.url} rel="noopener" target="_blank" className="underline decoration-line underline-offset-2 hover:text-ink">{GTA6.source.label}</a>.
-          The game is the same price wherever you buy it; the console under it is not. Here is what {R.adjective} stores charge for each one today, checked {catalogDay(region)}.
+          The Standard Edition lists at <b className="text-ink">{ed.standard}</b> and the Ultimate Edition at <b className="text-ink">{ed.ultimate}</b> (as{" "}
+          <a href={GTA6_PRICE_SOURCE.url} rel="noopener" target="_blank" className="underline decoration-line underline-offset-2 hover:text-ink">{GTA6_PRICE_SOURCE.label}</a> reported),
+          the same wherever you buy it; the console under it is not. Here is what {R.adjective} stores charge for each one today, checked {catalogDay(region)}.
         </p>
       </div>
 
