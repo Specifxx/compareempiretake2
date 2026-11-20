@@ -395,3 +395,17 @@ html[data-bottomnav] [data-dock-stack] { translate: 0 calc(-1 * var(--bn-space) 
 .bn-tab { height: 52px; border-radius: 999px; }
 .bn-tab[aria-current="page"]::before { top: 4px; left: 32%; right: 32%; border-radius: 2px; }
 @media (prefers-reduced-motion: reduce) { html [data-dock-stack] { transition: none; } }
+
+/* GTA 6 hub only (views/Gta6View.tsx, owner 2026-11-20): a Vice City sunset banner, palm trees, a script wordmark and
+   neon headings. Nothing here touches cards, prices or buy buttons, which keep the site's tokens. */
+.gta .gta-hero { background: linear-gradient(180deg, #2a0a4a 0%, #7a1e78 45%, #ff5f8f 78%, #ffb347 100%); box-shadow: 0 0 0 1px rgba(255,62,165,.35), 0 18px 50px -20px rgba(255,62,165,.55); }
+.gta .gta-sun { position: absolute; right: 8%; bottom: -70px; width: 220px; height: 220px; border-radius: 9999px; background: repeating-linear-gradient(180deg, #ffe66d 0 14px, #ff8a5c 14px 26px, transparent 26px 30px); opacity: .9; }
+.gta .gta-palm { position: absolute; bottom: -4px; color: #1b0b2e; pointer-events: none; }
+.gta .gta-palm-l { right: 24%; width: 90px; height: 150px; }
+.gta .gta-palm-r { right: 1%; width: 130px; height: 210px; transform: scaleX(-1); }
+@media (max-width: 640px) { .gta .gta-palm-l { display: block; right: 46%; width: 60px; height: 100px; } .gta .gta-palm-r { width: 80px; height: 130px; } .gta .gta-sun { width: 150px; height: 150px; bottom: -70px; right: 18%; } }
+.gta .gta-script { font-family: var(--font-vice), cursive; line-height: 1.1; color: #fff; text-shadow: 0 0 14px #ff3ea5, 3px 3px 0 #2de2e6; }
+.gta .gta-h2 { background: linear-gradient(90deg, #ff3ea5, #9b5cff 55%, #2de2e6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gta .gta-facts > div { border-top: 3px solid #ff3ea5; }
+.gta .gta-facts > div:nth-child(even) { border-top-color: #2de2e6; }
+@media (prefers-reduced-motion: no-preference) { .gta .gta-hero { transition: box-shadow .3s; } }
