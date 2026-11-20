@@ -9,6 +9,7 @@ import { GuideCard } from "@/components/GuideCard";
 import { guidesForCategory } from "@/lib/guides";
 import { SITE } from "@/lib/site";
 import { GTA6_REGIONS } from "@/lib/gta6";
+import { LEGO_POKEMON_REGIONS } from "@/lib/lego-pokemon";
 import { HOME_PATH, money, withXDefault, REGION_IDS, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { categoryById, CATEGORIES, DEPARTMENTS } from "@/lib/categories";
 import type { CategoryId } from "@/lib/types";
@@ -108,10 +109,11 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
             {products.length.toLocaleString()} products across {stores.length} {REGIONS[region].adjective} stores. {c.blurb}
           </p>
         </div>
-        {siblings.length > 0 && (
+        {(siblings.length > 0 || (c.id === "lego" && LEGO_POKEMON_REGIONS.includes(region))) && (
           <div className="flex flex-wrap gap-2">
             <Link prefetch={false} href={withRegion(`/deals/${c.id}`, region)} className="chip text-xs font-semibold text-ink">{c.name} deals</Link>
             {c.id === "consoles" && GTA6_REGIONS.includes(region) && <Link prefetch={false} href={withRegion("/gta-6", region)} className="chip text-xs font-semibold text-ink">GTA 6 console prices</Link>}
+            {c.id === "lego" && LEGO_POKEMON_REGIONS.includes(region) && <Link prefetch={false} href={withRegion("/lego-pokemon", region)} className="chip text-xs font-semibold text-ink">LEGO Pokémon prices</Link>}
             {siblings.map((s) => (
               <Link prefetch={false} key={s.id} href={categoryHref(s.id, region)} className="chip text-xs">{s.name}</Link>
             ))}

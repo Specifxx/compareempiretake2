@@ -2552,3 +2552,20 @@ wordmark, gradient h2s and neon fact-card borders. Cards, price rows and buy but
 and click exactly as before (buy-click rate on /gta-6 is the metric to watch). Our own art only: no Rockstar logo, font
 or key art. `/og/gta-6` draws the same look with every console's cheapest in-stock price from the query string
 (`gta6OgImage`), like `/og`; an unpriced console says "check stores", never a number.
+
+## 2026-11-20 — A LEGO Pokémon hub, the first page of the weekly hype run (owner)
+
+The owner asked for an agent that rides what is hyped right now. The first weekly hype list ranked LEGO Pokémon first for
+this site: Christmas toy demand and the Pokémon 30th anniversary meet in it (a LEGO Pokémon set is on ConsumerAffairs'
+9 Nov hot-toy list), and our own LEGO import already shows a real comparison: set 72154 at 9 Australian and 10 UK stores,
+72152 at 9 UK stores. `/lego-pokemon`, `/us/lego-pokemon` and `/uk/lego-pokemon` (`lib/lego-pokemon.ts`,
+`views/LegoPokemonView.tsx`) list every LEGO set whose listing names Pokémon or Pikachu and carries a five-digit set number,
+in stock first, most stores first, each linking to its own comparison page, with labelled Amazon and eBay searches per set.
+
+- Facts only: set numbers and the stores' own prices. No release date, RRP, piece count or stock claim.
+- A region's hub is indexed and in the sitemap only while one set is in stock at three stores or more (the 2026-11-19 bar);
+  otherwise it is served noindexed. It is in IndexNow and linked once, from the LEGO category page's chips.
+- Click guard: paid clicks carry `data-buy-product="lego-pokemon-<set>"`. Read the hub's views and buy clicks at the
+  weekly hype run; under 50 views by 4 Dec, leave it alone and stop promoting it.
+- The other hyped items of that week are not built here: Pokémon 30th Celebration is DexCompare's (other side of the
+  network), the PS5 Pro is the GTA 6 hub's, and the Switch 2 Zelda edition has too few stores for a comparison yet.
