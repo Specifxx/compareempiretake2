@@ -87,3 +87,12 @@ test("the daily import runs the cull after the catalogues and before eBay, Amazo
   assert.ok(at("scripts/focus-catalog.ts") < at("scripts/ebay-prices.ts"));
   assert.match(readFileSync("scripts/scrape-categories.ts", "utf8"), /isRetired\(cat\)\) continue/);
 });
+
+test("hyped LEGO themes skip the budget floor, but still need stock and two stores", () => {
+  const lego = (name: string, o: Partial<Phone> & { inStock?: boolean } = {}) => product({ name, brand: "LEGO", bestPrice: 95, ...o });
+  assert.equal(focusReason(lego("LEGO KPop Demon Hunters Derpy Tiger and Sussie Bird 72537"), "lego", "au", none), "focus");
+  assert.equal(focusReason(lego("LEGO Pokémon Pikachu and Poké Ball 72152"), "lego", "au", none), "focus");
+  assert.equal(focusReason(lego("LEGO City Fire Truck 60999"), "lego", "au", none), null);
+  assert.equal(focusReason(lego("LEGO Pokemon Pikachu 72152", { inStock: false }), "lego", "au", none), null);
+  assert.equal(focusReason(lego("LEGO Pokemon Pikachu 72152", { retailerCount: 1 }), "lego", "au", none), null);
+});

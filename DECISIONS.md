@@ -2569,3 +2569,11 @@ in stock first, most stores first, each linking to its own comparison page, with
   weekly hype run; under 50 views by 4 Dec, leave it alone and stop promoting it.
 - The other hyped items of that week are not built here: Pokémon 30th Celebration is DexCompare's (other side of the
   network), the PS5 Pro is the GTA 6 hub's, and the Switch 2 Zelda edition has too few stores for a comparison yet.
+
+## 2026-11-20 — Hyped LEGO themes skip the budget floor
+
+The focus cull lists LEGO only from US$150 (A$225, £120). The weekly hype run found that this hid the cheaper sets of the
+two themes on every 2026 Christmas toy list: LEGO KPop Demon Hunters 72537 was in stock at 11 Australian toy shops
+(A$94.99 to A$149.99) and on no page, and the cheaper LEGO Pokémon sets were missing from the new LEGO Pokémon hub.
+`LEGO_HYPE_THEMES` (`lib/focus.ts`) lets a set in a hyped theme skip the floor, but nothing else: it still needs stock
+and two stores where we compare. The run reviews the list every week, and a theme comes off it once it cools.
