@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T22:42:08.224Z",
+ "scrapedAt": "2026-11-20T22:15:45.512Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -239,7 +239,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-15-inch-with-m5-chip-512gb-16gb-silver",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/673378-Product-0-I-639081655207522122.jpg?v=1790762985",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -329,7 +329,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-neo-13-inch-with-a18-pro-chip-512gb-8gb-indigo",
    "price": 1197,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890863-Product-0-I-639082503603198021.jpg?v=1772653625",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -884,7 +884,7 @@
    "url": "https://www.jbhifi.com.au/products/asus-tuf-gaming-16-fhd-144hz-gaming-laptop-intel-core-i7geforce-rtx-5050",
    "price": 3199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/asus-fx610jh-tu010w-tuf-16-920622-asus-tuf-gaming-16-fx610j-off-black-02-edited.jpg?v=1794881234",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -894,7 +894,7 @@
    "url": "https://www.jbhifi.com.au/products/asus-tuf-gaming-16-fhd-144hz-gaming-laptop-intel-core-i7geforce-rtx-5060",
    "price": 3399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/asus-fx610jm-tu006w-tuf-16-920623-asus-tuf-gaming-16-fx610j-off-black-06-l-1-ark-raiders.jpg?v=1794884526",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -904,7 +904,7 @@
    "url": "https://www.jbhifi.com.au/products/asus-tuf-gaming-a15-15-6-full-hd-gaming-laptop-ryzen-7-155geforce-rtx-3050",
    "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/asus-fa506ncg-hn705w-tuf-a15-920626-tuf-plastic-15-02.jpg?v=1795057961",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -931,22 +931,21 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "807745",
-   "title": "Asus UM3406 Zenbook 14\" WUXGA Touchscreen Laptop (Ryzen AI 5)[1TB/16GB]",
-   "url": "https://www.jbhifi.com.au/products/asus-um3406-zenbook-14-wuxga-touchscreen-laptop-ryzen-ai-51tb-16gb",
-   "price": 1739,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807745-Product-0-I-639144085204861348.jpg?v=1778811881",
+   "sku": "796160",
+   "title": "Asus TUF Gaming F16 16\" FHD+ 144Hz Gaming Laptop (Intel Core i7)[GeForce RTX 4050]",
+   "url": "https://www.jbhifi.com.au/products/asus-tuf-gaming-f16-16-fhd-144hz-gaming-laptop-intel-core-i7geforce-rtx-4050",
+   "price": 1499,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796160-Product-0-I-638773429811835835.jpg?v=1741746252",
    "inStock": true,
    "brand": "Asus"
   },
   {
    "retailer": "jbhifi",
-   "sku": "890866",
-   "title": "Asus Vivobook 14 Flip 14\" WUXGA 2-in-1 OLED Copilot+ AI PC Laptop (Intel Core Ultra 5 - 226V)[512GB/16GB]",
-   "url": "https://www.jbhifi.com.au/products/asus-vivobook-14-flip-14-wuxga-2-in-1-oled-copilot-ai-pc-laptop-intel-core-ultra-5-226v512gb-16gb",
-   "price": 1377,
-   "wasPrice": 2199,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890866-Product-0-I-639146734206120638.jpg?v=1779076688",
+   "sku": "807745",
+   "title": "Asus UM3406 Zenbook 14\" WUXGA Touchscreen Laptop (Ryzen AI 5)[1TB/16GB]",
+   "url": "https://www.jbhifi.com.au/products/asus-um3406-zenbook-14-wuxga-touchscreen-laptop-ryzen-ai-51tb-16gb",
+   "price": 1739,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807745-Product-0-I-639144085204861348.jpg?v=1778811881",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1138,7 +1137,7 @@
    "url": "https://www.jbhifi.com.au/products/asus-zenbook-14-wuxga-oled-pink-laptop-qualcomm-snapdragon-x-x1-26-100512gb-16gb",
    "price": 1288,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906684-Product-0-I-639297966002863853.jpg?v=1794200063",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -1171,16 +1170,6 @@
    "price": 4999,
    "wasPrice": 6399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890909-Product-0-I-639135458405756194.jpg?v=1777949106",
-   "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "669326",
-   "title": "Asus Zenbook Duo EVO 14\" 3K OLED Laptop (1TB) [Intel Ultra 9 185H]",
-   "url": "https://www.jbhifi.com.au/products/asus-zenbook-duo-evo-14-3k-oled-laptop-1tb-intel-ultra-9-185h",
-   "price": 2222,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/669326-Product-0-I-638387979007842392.jpg?v=1790763153",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1989,6 +1978,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "10105606",
+   "title": "HP ProBook X360 435 G10 13 - Laptops",
+   "url": "https://www.jbhifi.com.au/products/hp-probook-x360-435-g10-13-laptops",
+   "price": 2314.74,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/a514ab31698b441aacf3b59a804794bc.jpg?v=1795145711",
+   "inStock": true,
+   "brand": "Hp"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "897357",
    "title": "HP x360 14\" WQXGA Touch Chromebook (Intel N150)[128GB/8GB]",
    "url": "https://www.jbhifi.com.au/products/hp-x360-14-wqxga-touch-chromebook-intel-n150128gb-8gb",
@@ -2052,16 +2051,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "10102939",
-   "title": "INFINITY W16 | RTX 5070 Ti 12GB | Core i9-13900HX | 16GB RAM | Gaming Laptop",
-   "url": "https://www.jbhifi.com.au/products/infinity-w16-rtx-5070-ti-12gb-core-i9-13900hx-16gb-ram-gaming-laptop",
-   "price": 3595,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/c4b2fe7bc0134ea0ba7d845584108d79.jpg?v=1794196294",
-   "inStock": true,
-   "brand": "Aftershock Pc"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "907074",
    "title": "Lenovo 15M8910 15.3\" WUXGA Chromebook (MTK-540)[128GB/4GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-15m8910-15-3-wuxga-chromebook-mtk-540128gb-4gb",
@@ -2111,8 +2100,8 @@
    "sku": "791306",
    "title": "Lenovo Duet 11\" WUXGA Chromebook Laptop (MTK838)[128GB/4GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-duet-11-wuxga-chromebook-laptop-mtk838128gb-4gb",
-   "price": 527,
-   "wasPrice": 799,
+   "price": 497,
+   "wasPrice": 527,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/791306-Product-0-I-638700837028926828.jpg?v=1758165606",
    "inStock": true,
    "brand": "Lenovo"
@@ -2539,7 +2528,6 @@
    "title": "Lenovo Legion 7 16IAX11 16\" WQXGA 240Hz OLED AI-Powered Gaming PC Laptop (Intel Core Ultra 9)[GeForc",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-7-16iax11-16-wqxga-240hz-oled-ai-powered-gaming-pc-laptop-intel-core-ultra-9geforc",
    "price": 4299,
-   "wasPrice": 5499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913330-Product-0-I-639306556208292021.jpg?v=1795058885",
    "inStock": true,
    "brand": "Lenovo"
@@ -2660,17 +2648,6 @@
    "price": 2599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/722247-Product-0-I-638478722475692468.jpg?v=1791174810",
    "inStock": false,
-   "brand": "Lenovo"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "899169",
-   "title": "Lenovo LOQ 15.6\" Full HD 144Hz Gaming Laptop (AMD Ryzen 7-170)[GeForce RTX 3050]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-loq-15-6-full-hd-144hz-gaming-laptop-amd-ryzen-7-170geforce-rtx-3050",
-   "price": 1188,
-   "wasPrice": 1699,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899169-Product-0-I-639165796804934085.jpg?v=1780982946",
-   "inStock": true,
    "brand": "Lenovo"
   },
   {
@@ -2843,21 +2820,21 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "918173",
-   "title": "Lenovo Yoga Slim 7 14\" 2.8K WQXGA+ CoPilot+ PC Laptop (Intel Core Ultra 7)[512TB/32GB]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-slim-7-14-2-8k-wqxga-copilot-pc-laptop-intel-core-ultra-7512tb-32gb-1",
-   "price": 4699,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918173-Product-0-I-639306631206747073.jpg?v=1795066386",
-   "inStock": true,
-   "brand": "Lenovo - Yoga"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "918172",
    "title": "Lenovo Yoga Slim 7 14\" 2.8K WQXGA+ CoPilot+ PC Laptop (Intel Core Ultra 7)[512TB/32GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-slim-7-14-2-8k-wqxga-copilot-pc-laptop-intel-core-ultra-7512tb-32gb",
    "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918172-Product-0-I-639306620408341155.jpg?v=1795065306",
+   "inStock": true,
+   "brand": "Lenovo - Yoga"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "918173",
+   "title": "Lenovo Yoga Slim 7 14\" 2.8K WQXGA+ CoPilot+ PC Laptop (Intel Core Ultra 7)[512TB/32GB]",
+   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-slim-7-14-2-8k-wqxga-copilot-pc-laptop-intel-core-ultra-7512tb-32gb-1",
+   "price": 4699,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918173-Product-0-I-639306631206747073.jpg?v=1795066386",
    "inStock": true,
    "brand": "Lenovo - Yoga"
   },
@@ -3362,17 +3339,6 @@
    "url": "https://www.jbhifi.com.au/products/msi-prestige-n16-flip-ai-16-2-8k-120hz-oled-2-in-1-laptop-nvidia-rtx-spark-n1x-20-core1tb-32gb",
    "price": 5999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913082-Product-0-I-639268585205499169.jpg?v=1794972366",
-   "inStock": true,
-   "brand": "Msi"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "806001",
-   "title": "MSI Venture A14 AI+ 14\" 2.8K OLED 120Hz Next-Level Laptop (Ryzen AI 5)[512GB/16GB]",
-   "url": "https://www.jbhifi.com.au/products/msi-venture-a14-ai-14-2-8k-oled-120hz-next-level-laptop-ryzen-ai-5512gb-16gb",
-   "price": 1429,
-   "wasPrice": 1999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/806001-Product-0-I-639146646003568310.jpg?v=1779067866",
    "inStock": true,
    "brand": "Msi"
   },

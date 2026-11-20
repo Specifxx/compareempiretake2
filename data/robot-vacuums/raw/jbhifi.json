@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T22:43:39.023Z",
+ "scrapedAt": "2026-11-20T22:17:32.182Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -30,7 +30,7 @@
    "price": 1999,
    "wasPrice": 2899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913065-Product-0-I-639240096605070901.jpg?v=1788412925",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dji"
   },
   {
@@ -67,6 +67,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "840341",
+   "title": "Dreame Aqua10 Ultra Roller Robot Vacuum Cleaner",
+   "url": "https://www.jbhifi.com.au/products/dreame-aqua10-ultra-roller-robot-vacuum-cleaner",
+   "price": 1694,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840341-Product-0-I-638973746407014577.jpg?v=1761777910",
+   "inStock": true,
+   "brand": "Dreame"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "840342",
    "title": "Dreame Aqua10 Ultra Track S Robot Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/dreame-aqua10-ultra-track-s-robot-vacuum-cleaner",
@@ -83,6 +93,16 @@
    "url": "https://www.jbhifi.com.au/products/dreame-aqua20-ultra-roller-robot-vacuum",
    "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/916006-Product-0-I-639269301603221769.jpg?v=1791333512",
+   "inStock": true,
+   "brand": "Dreame"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "675138",
+   "title": "Dreame L10s Pro Ultra Heat Robot Vacuum and Mop with Auto Empty and Mop Self-Cleaning",
+   "url": "https://www.jbhifi.com.au/products/dreame-l10s-pro-ultra-heat-robot-vacuum-and-mop-with-auto-empty-and-mop-self-cleaning",
+   "price": 1078,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/675138-Product-0-I-638452819209344427_4df71b49-a21e-4dbc-b02f-cb9fbc68258a.jpg?v=1729200197",
    "inStock": true,
    "brand": "Dreame"
   },
@@ -189,8 +209,8 @@
    "sku": "906956",
    "title": "Dyson R2 Nurovi Wash+Dry Robot Vacuum",
    "url": "https://www.jbhifi.com.au/products/dyson-r2-nurovi-washdry-robot-vacuum",
-   "price": 988,
-   "wasPrice": 1449,
+   "price": 797,
+   "wasPrice": 988,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906956-Product-0-I-639249580807648474.jpg?v=1792788396",
    "inStock": true,
    "brand": "Dyson"
@@ -200,8 +220,8 @@
    "sku": "883629",
    "title": "Dyson Spot+Scrub™Ai Wet and Dry Robot Vacuum",
    "url": "https://www.jbhifi.com.au/products/dyson-spotscrubai-wet-and-dry-robot-vacuum",
-   "price": 1382,
-   "wasPrice": 1999,
+   "price": 1077,
+   "wasPrice": 1382,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/883629-Product-0-I-639040428008511882.jpg?v=1793565862",
    "inStock": true,
    "brand": "Dyson"
@@ -353,16 +373,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829967-Product-0-I-638906556002701153.jpg?v=1755140107",
    "inStock": false,
    "brand": "Irobot"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "668673",
-   "title": "LG CordZero R5T-AUTO Robot Vacuum with Auto-Emptying Tower",
-   "url": "https://www.jbhifi.com.au/products/lg-cordzero-r5t-auto-robot-vacuum-with-auto-emptying-tower",
-   "price": 448,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/668673-Product-0-I-638361171603930029.jpg?v=1700520425",
-   "inStock": true,
-   "brand": "Lg"
   },
   {
    "retailer": "jbhifi",
@@ -541,16 +551,6 @@
    "url": "https://www.jbhifi.com.au/products/roborock-qrevo-master-robotic-vacuum-cleaner-black",
    "price": 1170,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/787406-Product-0-I-638623330871393044.jpg?v=1726736502",
-   "inStock": true,
-   "brand": "Roborock"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "890015",
-   "title": "Roborock Saros 10R Robot Vacuum Cleaner",
-   "url": "https://www.jbhifi.com.au/products/roborock-saros-10r-robot-vacuum-cleaner",
-   "price": 1244,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890015-Product-0-I-639069615005139038.jpg?v=1771364828",
    "inStock": true,
    "brand": "Roborock"
   },

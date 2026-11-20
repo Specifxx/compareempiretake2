@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-19T22:42:53.292Z",
+ "scrapedAt": "2026-11-20T22:25:32.784Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -294,16 +294,6 @@
    "url": "https://www.jbhifi.com.au/products/apple-watch-series-10-46mm-natural-titanium-case-gps-cellular-sport-band-s-mstone-grey",
    "price": 1279,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/656218-Product-0-I-638615305803219225.jpg?v=1725937951",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "656216",
-   "title": "Apple Watch Series 10 46mm Rose Gold Aluminium Case GPS + Cellular Sport Band (M/L)[Light Blush]",
-   "url": "https://www.jbhifi.com.au/products/apple-watch-series-10-46mm-rose-gold-aluminium-case-gps-cellular-sport-band-m-llight-blush",
-   "price": 607,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/656216-Product-0-I-638615287204118708.jpg?v=1725938721",
    "inStock": true,
    "brand": "Apple"
   },
@@ -899,7 +889,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-watch-series-12-42mm-black-aluminium-case-sport-band-gps-cellular-m-l-black",
    "price": 669,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913719-Product-0-I-639246060005552629.jpg?v=1789009265",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1172,7 +1162,7 @@
    "price": 1329,
    "wasPrice": 1429,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913744-Product-0-I-639246088207027934.jpg?v=1789012088",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1192,6 +1182,16 @@
    "url": "https://www.jbhifi.com.au/products/apple-watch-series-12-46mm-space-grey-aluminium-case-gps-sport-band-s-m-navy-blue",
    "price": 609,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913708-Product-0-I-639245884807573021.jpg?v=1788991746",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "608357",
+   "title": "Apple Watch Series 8 41mm Silver Aluminium Case GPS",
+   "url": "https://www.jbhifi.com.au/products/apple-watch-series-8-41mm-silver-aluminium-case-gps",
+   "price": 429,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/608357-Product-0-I-637982347640706757.jpg?v=1791256141",
    "inStock": true,
    "brand": "Apple"
   },
@@ -1332,7 +1332,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-watch-ultra-4-49mm-black-titanium-case-gps-cellular-black-titanium-milanese-loop-m",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913770-Product-0-I-639246151803636643.jpg?v=1789018446",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -2532,17 +2532,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "829990",
-   "title": "Google Pixel Watch 4 LTE 45mm (Polished Silver Aluminium with Porcelain Active Band)",
-   "url": "https://www.jbhifi.com.au/products/google-pixel-watch-4-lte-45mm-polished-silver-aluminium-with-porcelain-active-band",
-   "price": 494,
-   "wasPrice": 849,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829990-Product-0-I-638913250222246910.jpg?v=1755751070",
-   "inStock": true,
-   "brand": "Google"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "829989",
    "title": "Google Pixel Watch 4 LTE 45mm (Satin Moonstone with Moonstone Active Band)",
    "url": "https://www.jbhifi.com.au/products/google-pixel-watch-4-lte-45mm-satin-moonstone-with-moonstone-active-band",
@@ -2714,7 +2703,7 @@
    "price": 719,
    "wasPrice": 879,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907349-Product-0-I-639216535804327112.jpg?v=1786056845",
-   "inStock": true,
+   "inStock": false,
    "brand": "Google"
   },
   {
@@ -2907,7 +2896,7 @@
    "price": 113,
    "wasPrice": 135,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/846901-Product-0-I-639008422203109540.jpg?v=1765245485",
-   "inStock": false,
+   "inStock": true,
    "brand": "Noise"
   },
   {
@@ -2940,7 +2929,7 @@
    "price": 245,
    "wasPrice": 289,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/846908-Product-0-I-639008395206036211.jpg?v=1765242845",
-   "inStock": false,
+   "inStock": true,
    "brand": "Noise"
   },
   {
@@ -3478,6 +3467,17 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "815296",
+   "title": "Samsung Galaxy Watch8  LTE 40mm (Silver)",
+   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-lte-40mm-silver",
+   "price": 374,
+   "wasPrice": 749,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815296-Product-0-I-638874471602255498.jpg?v=1751850431",
+   "inStock": true,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "815299",
    "title": "Samsung Galaxy Watch8  LTE 44mm (Graphite)",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch8-lte-44mm-graphite",
@@ -3698,16 +3698,6 @@
    "url": "https://www.jbhifi.com.au/products/withings-leather-wristband-18mm-brown",
    "price": 79,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/782031-Product-0-I-638587714203341794.jpg?v=1723174865",
-   "inStock": true,
-   "brand": "Withings"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "782029",
-   "title": "Withings Leather Wristband 20mm (Brown)",
-   "url": "https://www.jbhifi.com.au/products/withings-leather-wristband-20mm-brown",
-   "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/782029-Product-0-I-638587719604250656.jpg?v=1723175166",
    "inStock": true,
    "brand": "Withings"
   },
