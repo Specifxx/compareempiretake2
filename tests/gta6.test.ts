@@ -83,3 +83,15 @@ test("the hub states there is no PS6 and has FAQ structured data", () => {
   assert.ok(faq.some((f) => /no PS6/i.test(f.a)));
   assert.match(readFileSync("src/views/Gta6View.tsx", "utf8"), /FAQPage/);
 });
+
+test("the /gta-6 preview names no single country: each region's cheapest console, a region with none left out", async () => {
+  const { gta6WorldOgImage, GTA6_CONSOLE_MODELS } = await import("../src/lib/gta6");
+  const s = (name: string, bestPrice: number) => ({ name, model: name, category: "consoles", inStock: true, bestPrice, retailerCount: 2 }) as never;
+  const url = gta6WorldOgImage([
+    { region: "us", rows: [{ model: GTA6_CONSOLE_MODELS[4], product: s("Xbox Series S", 499.99) }, { model: GTA6_CONSOLE_MODELS[0], product: s("PS5", 549.99) }] },
+    { region: "uk", rows: [{ model: GTA6_CONSOLE_MODELS[0] }] },
+  ]);
+  const q = new URL(url, "https://x").searchParams;
+  assert.equal(q.get("w"), "1");
+  assert.equal(q.get("s"), "us~Xbox Series S~499.99");
+});
