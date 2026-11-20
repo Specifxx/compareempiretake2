@@ -52,7 +52,7 @@ export interface Gta6Accessory { key: string; title: string; note: string; query
 export const GTA6_ACCESSORIES: Gta6Accessory[] = [
   { key: "ps5-controller", title: "PS5 DualSense controller", note: "A second pad for the couch", query: "PS5 DualSense wireless controller" },
   { key: "gta6-dualsense", title: "GTA VI limited DualSense controller", note: "Sony's own GTA VI design, while it lasts", query: "GTA VI DualSense controller limited edition" },
-  { key: "collectors", title: "GTA VI Collector's Edition", note: "Sold out at launch: compare new resale listings", query: "GTA VI collector's edition Vice City collection" },
+  { key: "collectors", title: "GTA VI Collector's Edition", note: "Rockstar's boxed collection, from eBay sellers", query: "GTA VI collector's edition Vice City collection" },
   { key: "xbox-controller", title: "Xbox wireless controller", note: "Works with Xbox Series X|S", query: "Xbox wireless controller" },
   { key: "ps5-ssd", title: "PS5 internal SSD (M.2 NVMe)", note: "More room for a very large download", query: "PS5 M.2 NVMe SSD 2TB heatsink" },
   { key: "xbox-storage", title: "Xbox storage expansion card", note: "For Xbox Series X|S", query: "Xbox Series X|S storage expansion card" },
