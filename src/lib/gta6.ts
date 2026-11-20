@@ -56,7 +56,7 @@ export const GTA6_CONSOLE_MODELS: Gta6ConsoleModel[] = [
   { key: "ps5", name: "PlayStation 5 (disc)", storage: "1TB", note: "Plays the boxed copy or a download", match: /\b(ps5|playstation\s*5)\b/i, not: /\b(pro|digital|controller|dualsense)\b/i, query: "PlayStation 5 console disc edition" },
   { key: "ps5-digital", name: "PlayStation 5 Digital Edition", storage: "1TB", note: "Downloads only, no disc drive", match: /\b(ps5|playstation\s*5)\b.*\bdigital\b/i, not: /\b(pro|controller|dualsense)\b/i, query: "PlayStation 5 Digital Edition console" },
   { key: "ps5-pro", name: "PlayStation 5 Pro", storage: "2TB", note: "Sony's most powerful console; not required for GTA 6", match: /\b(ps5|playstation\s*5)\s*pro\b/i, not: /\b(controller|dualsense)\b/i, query: "PlayStation 5 Pro console" },
-  { key: "series-x", name: "Xbox Series X", storage: "1TB", note: "Microsoft's most powerful console", match: /\bxbox\s*series\s*x\b/i, not: /\b(controller|storage|expansion)\b/i, query: "Xbox Series X console" },
+  { key: "series-x", name: "Xbox Series X", storage: "1TB", note: "Microsoft's most powerful console", match: /\bxbox\s*series\s*x\b/i, not: /\b(digital|controller|storage|expansion)\b/i, query: "Xbox Series X console" },
   { key: "series-s", name: "Xbox Series S", storage: "512GB or 1TB", note: "The cheapest way in; downloads only", match: /\bxbox\s*series\s*s\b/i, not: /\b(controller|storage|expansion)\b/i, query: "Xbox Series S console" },
 ];
 
