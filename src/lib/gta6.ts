@@ -33,11 +33,26 @@ export function gta6Consoles(products: readonly PhoneSummary[], limit = 12): Pho
     .slice(0, limit);
 }
 
+/** The game runs at up to 4K on PS5 and Xbox Series X; a TV whose store listing states 4K and 120Hz or more, sold by 2+ stores,
+ *  most stores first, then cheapest. Only the refresh rate the listing itself gives: a TV without one is left out, never guessed. */
+export function gta6Tvs(products: readonly PhoneSummary[], limit = 6): PhoneSummary[] {
+  return products
+    .filter((p) => {
+      if (p.category !== "tvs" || !p.inStock || p.retailerCount < 2) return false;
+      const hz = parseInt(p.facets?.["Refresh rate"] ?? "", 10);
+      return /\b4K\b/i.test(p.facets?.Resolution ?? "") && hz >= 120;
+    })
+    .sort((a, b) => b.retailerCount - a.retailerCount || a.bestPrice - b.bestPrice)
+    .slice(0, limit);
+}
+
 export interface Gta6Accessory { key: string; title: string; note: string; query: string }
 
 /** What buyers add to a console: a search term for Amazon and for eBay's new listings. */
 export const GTA6_ACCESSORIES: Gta6Accessory[] = [
   { key: "ps5-controller", title: "PS5 DualSense controller", note: "A second pad for the couch", query: "PS5 DualSense wireless controller" },
+  { key: "gta6-dualsense", title: "GTA VI limited DualSense controller", note: "Sony's own GTA VI design, while it lasts", query: "GTA VI DualSense controller limited edition" },
+  { key: "collectors", title: "GTA VI Collector's Edition", note: "Rockstar's boxed collection, from eBay sellers", query: "GTA VI collector's edition Vice City collection" },
   { key: "xbox-controller", title: "Xbox wireless controller", note: "Works with Xbox Series X|S", query: "Xbox wireless controller" },
   { key: "ps5-ssd", title: "PS5 internal SSD (M.2 NVMe)", note: "More room for a very large download", query: "PS5 M.2 NVMe SSD 2TB heatsink" },
   { key: "xbox-storage", title: "Xbox storage expansion card", note: "For Xbox Series X|S", query: "Xbox Series X|S storage expansion card" },

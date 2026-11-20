@@ -2,7 +2,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_REGIONS, gta6Consoles } from "../src/lib/gta6";
+import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_REGIONS, gta6Consoles, gta6Tvs } from "../src/lib/gta6";
 import type { PhoneSummary } from "../src/lib/catalog";
 
 const c = (name: string, bestPrice: number, retailerCount: number, extra: Partial<PhoneSummary> = {}): PhoneSummary =>
@@ -42,4 +42,18 @@ test("after launch the hub says out now and gives both editions' list price in e
   }
   assert.match(readFileSync("src/views/Gta6View.tsx", "utf8"), /out now/);
   for (const r of ["", "us/", "uk/"]) assert.doesNotMatch(readFileSync(`src/app/${r}gta-6/page.tsx`, "utf8"), /launches 19 November/);
+});
+
+test("TVs: only 4K at 120Hz or more as the listing states, 2+ stores, in stock; no refresh rate means no row", () => {
+  const tv = (name: string, facets: Record<string, string>, retailerCount = 3, extra: Partial<PhoneSummary> = {}) => c(name, 1000, retailerCount, { category: "tvs", facets, ...extra } as Partial<PhoneSummary>);
+  const out = gta6Tvs([
+    tv("A 4K 144Hz", { Resolution: "4K UHD", "Refresh rate": "144Hz" }, 5),
+    tv("B 4K 120Hz", { Resolution: "4K UHD", "Refresh rate": "120Hz" }, 2),
+    tv("C 4K 60Hz", { Resolution: "4K UHD", "Refresh rate": "60Hz" }),
+    tv("D 4K no rate", { Resolution: "4K UHD" }),
+    tv("E 8K 120Hz", { Resolution: "8K", "Refresh rate": "120Hz" }),
+    tv("F one store", { Resolution: "4K UHD", "Refresh rate": "165Hz" }, 1),
+    tv("G out of stock", { Resolution: "4K UHD", "Refresh rate": "165Hz" }, 4, { inStock: false }),
+  ]);
+  assert.deepEqual(out.map((p) => p.name), ["A 4K 144Hz", "B 4K 120Hz"]);
 });

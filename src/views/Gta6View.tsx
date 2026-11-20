@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { catalogDay, getSummaries } from "@/lib/catalog";
+import { catalogDay, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import { amazonLink, AMAZON_DISCLOSURE, AMAZON_REL } from "@/lib/amazon";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
-import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_FAQ, GTA6_PRICE_SOURCE, gta6Consoles } from "@/lib/gta6";
+import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_FAQ, GTA6_PRICE_SOURCE, gta6Consoles, gta6Tvs } from "@/lib/gta6";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
 import { sized } from "@/lib/image-size";
 
@@ -11,8 +11,31 @@ const day = (iso: string, region: RegionId) =>
   new Date(`${iso}T12:00:00Z`).toLocaleDateString(REGIONS[region].locale, { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the UK", ca: "Canada", sg: "Singapore" };
 
+function ProductGrid({ items, region }: { items: PhoneSummary[]; region: RegionId }) {
+  return (
+    <ul className="grid gap-3 md:grid-cols-2">
+      {items.map((p) => (
+        <li key={p.href}>
+          <Link prefetch={false} href={p.href} className="card flex items-center gap-4 p-4 transition hover:shadow-lift">
+            <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-lg">
+              {p.image && <img src={sized(p.image, 220)} alt={p.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
+            </div>
+            <div className="min-w-0 flex-1">
+              <div className="text-xs font-medium text-ink-mute">{p.brand}</div>
+              <h3 className="line-clamp-2 font-display text-base font-bold leading-tight">{p.name}</h3>
+              <div className="mt-1 text-xs text-ink-mute">{p.subtitle ? `${p.subtitle} · ` : ""}{p.retailerCount} {p.retailerCount === 1 ? "store" : "stores"} · compare →</div>
+            </div>
+            <div className="shrink-0 text-right"><span className="block text-xs text-ink-mute">from</span><span className="price text-xl">{money(p.bestPrice, region)}</span></div>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export function Gta6View({ region }: { region: RegionId }) {
   const consoles = gta6Consoles(getSummaries("consoles", region));
+  const tvs = gta6Tvs(getSummaries("tvs", region));
   const R = REGIONS[region];
   const ed = GTA6_EDITIONS[region as "au" | "us" | "uk"] ?? GTA6_EDITIONS.us;
   const faq = GTA6_FAQ(IN[region], (region in GTA6_EDITIONS ? region : "us") as "au" | "us" | "uk");
@@ -34,25 +57,20 @@ export function Gta6View({ region }: { region: RegionId }) {
         {consoles.length === 0 ? (
           <p className="text-sm text-ink-mute">No {R.adjective} store lists one of these consoles in stock today. <Link prefetch={false} href={withRegion("/consoles", region)} className="underline">See all consoles</Link>.</p>
         ) : (
-          <ul className="grid gap-3 md:grid-cols-2">
-            {consoles.map((p) => (
-              <li key={p.href}>
-                <Link prefetch={false} href={p.href} className="card flex items-center gap-4 p-4 transition hover:shadow-lift">
-                  <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-lg">
-                    {p.image && <img src={sized(p.image, 220)} alt={p.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="text-xs font-medium text-ink-mute">{p.brand}</div>
-                    <h3 className="line-clamp-2 font-display text-base font-bold leading-tight">{p.name}</h3>
-                    <div className="mt-1 text-xs text-ink-mute">{p.retailerCount} {p.retailerCount === 1 ? "store" : "stores"} · compare →</div>
-                  </div>
-                  <div className="shrink-0 text-right"><span className="block text-xs text-ink-mute">from</span><span className="price text-xl">{money(p.bestPrice, region)}</span></div>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <ProductGrid items={consoles} region={region} />
         )}
-        <p className="mt-3 text-sm text-ink-mute">Also compare <Link prefetch={false} href={withRegion("/tvs", region)} className="underline">TVs</Link>, <Link prefetch={false} href={withRegion("/monitors", region)} className="underline">monitors</Link> and <Link prefetch={false} href={withRegion("/headphones", region)} className="underline">headphones</Link>.</p>
+      </section>
+
+      {tvs.length >= 3 && (
+        <section className="mt-10" aria-labelledby="gta6-tvs">
+          <h2 id="gta6-tvs" className="mb-1 font-display text-xl font-bold tracking-tight">TVs that show 4K at 120Hz or more</h2>
+          <p className="mb-3 text-sm text-ink-mute">The refresh rate each store&rsquo;s own listing states, sold by two or more stores. Check the TV has an HDMI 2.1 port for 120Hz from a console.</p>
+          <ProductGrid items={tvs} region={region} />
+        </section>
+      )}
+
+      <section className="mt-6">
+        <p className="text-sm text-ink-mute">Also compare <Link prefetch={false} href={withRegion("/tvs", region)} className="underline">TVs</Link>, <Link prefetch={false} href={withRegion("/monitors", region)} className="underline">monitors</Link> and <Link prefetch={false} href={withRegion("/headphones", region)} className="underline">headphones</Link>.</p>
       </section>
 
       <section className="mt-10" aria-labelledby="gta6-extras">
