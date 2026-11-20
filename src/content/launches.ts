@@ -83,4 +83,18 @@ export const LAUNCHES: Launch[] = [
     source: { label: "Samsung Newsroom, 6 August 2026", url: "https://news.samsung.com/global/samsung-officially-launches-galaxy-z-fold8-ultra-fold8-flip8-watch-ultra2-and-watch9" },
     checked: "2026-11-03",
   },
+  {
+    key: "switch-2-zelda-40th",
+    name: "Switch 2 Zelda 40th Anniversary Edition",
+    brand: "Nintendo",
+    category: "consoles",
+    // The console alone; a store's own bundle with the game or a memory card is a different product.
+    match: /\bswitch\s*2\b.*\bzelda\b.*\b40th\s*anniversary\b(?!.*\b(ocarina|micro\s*sd|card)\b)/i,
+    preorderFrom: null,
+    releaseDate: "2026-10-29",
+    featureUntil: "2027-01-31",
+    tagline: "Switch 2 with a Triforce design for Zelda's 40th anniversary; no game included",
+    source: { label: "Nintendo news release, 8 September 2026", url: "https://www.nintendo.co.jp/corporate/release/en/2026/260908_2.html" },
+    checked: "2026-11-20",
+  },
 ];

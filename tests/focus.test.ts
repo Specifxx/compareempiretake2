@@ -92,6 +92,7 @@ test("hyped LEGO themes skip the budget floor, but still need stock and two stor
   const lego = (name: string, o: Partial<Phone> & { inStock?: boolean } = {}) => product({ name, brand: "LEGO", bestPrice: 95, ...o });
   assert.equal(focusReason(lego("LEGO KPop Demon Hunters Derpy Tiger and Sussie Bird 72537"), "lego", "au", none), "focus");
   assert.equal(focusReason(lego("LEGO Pokémon Pikachu and Poké Ball 72152"), "lego", "au", none), "focus");
+  assert.equal(focusReason(lego("LEGO DUPLO Bluey's Family House 10459"), "lego", "au", none), "focus");
   assert.equal(focusReason(lego("LEGO City Fire Truck 60999"), "lego", "au", none), null);
   assert.equal(focusReason(lego("LEGO Pokemon Pikachu 72152", { inStock: false }), "lego", "au", none), null);
   assert.equal(focusReason(lego("LEGO Pokemon Pikachu 72152", { retailerCount: 1 }), "lego", "au", none), null);
