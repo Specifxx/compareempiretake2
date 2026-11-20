@@ -113,3 +113,20 @@ export function gta6OgImage(region: "au" | "us" | "uk", rows: { model: Gta6Conso
   q.set("e", `${GTA6_EDITIONS[region].standard}~${GTA6_EDITIONS[region].ultimate}`);
   return `/og/gta-6?${q}`;
 }
+
+/**
+ * The region-free link preview for /gta-6 (owner, 2026-11-20: "make the post region agnostic"). /gta-6 is the one link a
+ * post carries, and the boot script sends each visitor on to their own region's page, so its thumbnail names no single
+ * country: the console line-up (storage, disc drive), the cheapest in-stock console in each hub region today, and the
+ * game's list price in each currency. A region with no priced console is left out, never filled in.
+ *   /og/gta-6?w=1&s=us~Xbox+Series+S~499.99|uk~Xbox+Series+S~429.95|au~Xbox+Series+S~699
+ */
+export function gta6WorldOgImage(cheapest: { region: "au" | "us" | "uk"; rows: { model: Gta6ConsoleModel; product?: PhoneSummary }[] }[]): string {
+  const parts = cheapest.flatMap(({ region, rows }) => {
+    const best = rows.filter((r) => r.product).sort((a, b) => a.product!.bestPrice - b.product!.bestPrice)[0];
+    return best ? [`${region}~${best.model.name.replace(/[~|]/g, " ")}~${best.product!.bestPrice}`] : [];
+  });
+  const q = new URLSearchParams({ w: "1" });
+  if (parts.length) q.set("s", parts.join("|"));
+  return `/og/gta-6?${q}`;
+}
