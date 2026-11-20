@@ -2,7 +2,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_REGIONS, gta6Consoles, gta6Tvs } from "../src/lib/gta6";
+import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_FAQ, GTA6_REGIONS, gta6ConsoleRows, gta6Consoles, gta6Tvs } from "../src/lib/gta6";
 import type { PhoneSummary } from "../src/lib/catalog";
 
 const c = (name: string, bestPrice: number, retailerCount: number, extra: Partial<PhoneSummary> = {}): PhoneSummary =>
@@ -56,4 +56,29 @@ test("TVs: only 4K at 120Hz or more as the listing states, 2+ stores, in stock; 
     tv("G out of stock", { Resolution: "4K UHD", "Refresh rate": "165Hz" }, 4, { inStock: false }),
   ]);
   assert.deepEqual(out.map((p) => p.name), ["A 4K 144Hz", "B 4K 120Hz"]);
+});
+
+test("every console Rockstar names gets a row; the cheapest in-stock match wins, a Pro is never the plain PS5", () => {
+  const rows = gta6ConsoleRows([
+    c("Sony PS5 PlayStation 5 Pro Console", 1399, 1),
+    c("Sony PlayStation 5 Slim Console", 999, 1),
+    c("Sony PlayStation 5 Console", 899, 2),
+    c("Sony PlayStation 5 Console Digital Edition", 919, 1),
+    c("Microsoft Xbox Series X", 1099, 3),
+    c("Microsoft Xbox Series S", 699, 3, { inStock: false }),
+    c("PS5 DualSense Controller", 99, 8),
+  ]);
+  assert.deepEqual(rows.map((r) => [r.model.key, r.product?.name]), [
+    ["ps5", "Sony PlayStation 5 Console"],
+    ["ps5-digital", "Sony PlayStation 5 Console Digital Edition"],
+    ["ps5-pro", "Sony PS5 PlayStation 5 Pro Console"],
+    ["series-x", "Microsoft Xbox Series X"],
+    ["series-s", undefined],
+  ]);
+});
+
+test("the hub states there is no PS6 and has FAQ structured data", () => {
+  const faq = GTA6_FAQ("Australia", "au");
+  assert.ok(faq.some((f) => /no PS6/i.test(f.a)));
+  assert.match(readFileSync("src/views/Gta6View.tsx", "utf8"), /FAQPage/);
 });

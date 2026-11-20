@@ -2531,3 +2531,14 @@ asked for hats and lights by name, so they come back after the 2026-11-08 tone-d
   but two class names, so titles, metadata and structured data are untouched. Favicons and share images are unchanged.
 - Off switch: `CHRISTMAS_FESTIVE_LAYER` (`lib/season.ts`, the `data-festive` attribute on `<html>`); the Christmas window
   also ends it on 27 December by itself. Remove after New Year: delete the block and the two classes.
+
+## 2026-11-20 — GTA 6 hub becomes the full buying guide (owner)
+
+Bill, the day after launch: "a full GTA 6 themed page we can index", featuring the consoles people need, and "PS6". There is no
+PS6 (Sony's CEO: launch timing undecided), so the hub says so with its source and covers what plays the game. One rich page per
+region (`/gta-6`, `/us/gta-6`, `/uk/gta-6`), not a set of sub-pages: each sub-page would repeat the same few consoles and be thin
+under the 19 Nov quality rules. It holds: every console Rockstar names with the maker's storage and our cheapest in-stock price
+(labelled Amazon/eBay searches when we track none in stock), the tracked console grid, a PS6 answer, TVs and monitors whose own
+listing states 4K and 120Hz+ (2+ stores; a section shows only with 3+), labelled searches for the extras (GTA VI DualSense,
+Collector's Edition, PS Plus and Game Pass cards from retailers; never discounted key resellers), the Black Friday dates and
+link, an FAQ with FAQPage, ItemList and BreadcrumbList JSON-LD, and the one ad block below the content. URLs unchanged.
