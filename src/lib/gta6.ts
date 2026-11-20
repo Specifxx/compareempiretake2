@@ -103,3 +103,13 @@ export const GTA6_FAQ = (place: string, region: "au" | "us" | "uk"): { q: string
   { q: "Should I buy the Xbox Series S for GTA 6?", a: "It is the cheapest console Rockstar names, but it has no disc drive and the smallest storage (512GB or 1TB), so budget for a storage expansion card if you keep several big games." },
   { q: `Where can I compare PS5 and Xbox prices in ${place}?`, a: "On this page: each console Rockstar names, with the cheapest price we found at the region's stores today and a link to every store's price." },
 ];
+
+/** The hub's link-preview URL (src/app/og/gta-6/route.tsx): every console row, priced ones cheapest first, in the query. */
+export function gta6OgImage(region: "au" | "us" | "uk", rows: { model: Gta6ConsoleModel; product?: PhoneSummary }[]): string {
+  const sorted = [...rows].sort((a, b) => (a.product ? a.product.bestPrice : Infinity) - (b.product ? b.product.bestPrice : Infinity));
+  const q = new URLSearchParams();
+  if (region !== "au") q.set("r", region);
+  q.set("c", sorted.map((r) => `${r.model.name.replace(/[~|]/g, " ")}~${r.product ? r.product.bestPrice : ""}~${r.product ? r.product.retailerCount : 0}`).join("|"));
+  q.set("e", `${GTA6_EDITIONS[region].standard}~${GTA6_EDITIONS[region].ultimate}`);
+  return `/og/gta-6?${q}`;
+}

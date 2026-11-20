@@ -1,4 +1,5 @@
 import Link from "next/link";
+import localFont from "next/font/local";
 import { catalogDay, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import { amazonLink, AMAZON_DISCLOSURE, AMAZON_REL } from "@/lib/amazon";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
@@ -21,7 +22,20 @@ const day = (iso: string, region: RegionId) =>
 const IN: Record<RegionId, string> = { au: "Australia", us: "the US", uk: "the UK", ca: "Canada", sg: "Singapore" };
 type HubRegion = "au" | "us" | "uk";
 const hub = (r: RegionId): HubRegion => (r === "us" || r === "uk" ? r : "au");
-const h2 = "font-display text-xl font-bold tracking-tight";
+// Vice City look (owner, 2026-11-20: "very GTA themed ... palm trees and pearly fonts"), scoped to this page by `.gta` in
+// globals.css. Only the banner, headings and accents change: cards, prices and buy buttons keep the site's own tokens so
+// they read and click exactly as on every other page. Pacifico (OFL) loads on these pages only.
+const vice = localFont({ src: "../app/fonts/pacifico-latin-400-normal.woff2", variable: "--font-vice", display: "swap", weight: "400" });
+const h2 = "gta-h2 font-display text-xl font-bold tracking-tight";
+
+function Palm({ className }: { className: string }) {
+  return (
+    <svg viewBox="0 0 220 360" aria-hidden className={className}>
+      <path d="M112 360 C108 280 104 200 118 120" stroke="currentColor" strokeWidth="14" fill="none" />
+      <path d="M118 120 C80 90 40 100 6 130 C46 108 84 112 118 124 Z M118 120 C150 84 192 86 216 112 C180 98 148 104 120 126 Z M118 120 C104 76 70 52 30 52 C70 66 98 90 116 126 Z M118 120 C134 72 168 46 204 44 C170 62 142 88 122 126 Z M118 120 C116 80 120 40 136 8 C130 48 128 86 122 124 Z" fill="currentColor" />
+    </svg>
+  );
+}
 const btn = "rounded-xl border border-line bg-bg-card px-3 py-2 text-xs font-semibold hover:border-brand/40";
 const link = "underline decoration-line underline-offset-2 hover:text-ink";
 
@@ -85,18 +99,24 @@ export function Gta6View({ region }: { region: RegionId }) {
     },
   ];
   return (
-    <div className="container-x pb-12 pt-6 sm:pt-10">
+    <div className={`gta ${vice.variable} container-x pb-12 pt-6 sm:pt-10`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <div className="max-w-2xl">
-        <h1 className="page-title">GTA 6 buying guide: consoles, TVs and gear in {place}</h1>
-        <p className="mt-2 text-ink-mute">
-          Grand Theft Auto VI is out now: it launched on <b className="text-ink">{day(GTA6.releaseDate, region)}</b> for {GTA6.platforms}, according to{" "}
-          <a href={GTA6.source.url} rel="noopener" target="_blank" className={link}>{GTA6.source.label}</a>.
-          The game is the same price wherever you buy it; the console and screen under it are not. Here is what {R.adjective} stores charge today, checked {catalogDay(region)}.
-        </p>
-      </div>
+      <header className="gta-hero relative overflow-hidden rounded-3xl px-5 pb-28 pt-7 sm:px-10 sm:pb-12 sm:pt-10">
+        <div className="gta-sun" aria-hidden />
+        <Palm className="gta-palm gta-palm-l" />
+        <Palm className="gta-palm gta-palm-r" />
+        <div className="relative max-w-2xl">
+          <p className="gta-script text-4xl sm:text-6xl">GTA 6</p>
+          <h1 className="mt-2 text-[1.75rem] font-bold leading-[1.12] tracking-tight text-white sm:text-4xl" style={{ textWrap: "balance" }}>GTA 6 buying guide: consoles, TVs and gear in {place}</h1>
+          <p className="mt-3 text-[0.95rem] leading-relaxed text-white/90">
+            Grand Theft Auto VI is out now: it launched on <b className="text-white">{day(GTA6.releaseDate, region)}</b> for {GTA6.platforms}, according to{" "}
+            <a href={GTA6.source.url} rel="noopener" target="_blank" className="underline underline-offset-2">{GTA6.source.label}</a>.
+            The game is the same price wherever you buy it; the console and screen under it are not. Here is what {R.adjective} stores charge today, checked {catalogDay(region)}.
+          </p>
+        </div>
+      </header>
 
-      <dl className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <dl className="gta-facts mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <div className="card p-4"><dt className="text-xs text-ink-mute">Out</dt><dd className="font-display text-lg font-bold">{day(GTA6.releaseDate, region)}</dd></div>
         <div className="card p-4"><dt className="text-xs text-ink-mute">Plays on</dt><dd className="font-display text-lg font-bold">PS5 and Xbox Series X|S</dd></div>
         <div className="card p-4"><dt className="text-xs text-ink-mute">Standard / Ultimate</dt><dd className="font-display text-lg font-bold">{ed.standard} / {ed.ultimate}</dd></div>

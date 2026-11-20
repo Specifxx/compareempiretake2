@@ -2542,3 +2542,13 @@ under the 19 Nov quality rules. It holds: every console Rockstar names with the 
 listing states 4K and 120Hz+ (2+ stores; a section shows only with 3+), labelled searches for the extras (GTA VI DualSense,
 Collector's Edition, PS Plus and Game Pass cards from retailers; never discounted key resellers), the Black Friday dates and
 link, an FAQ with FAQPage, ItemList and BreadcrumbList JSON-LD, and the one ad block below the content. URLs unchanged.
+
+## 2026-11-20 — The GTA 6 hub's Vice City look and its own link preview (owner)
+
+Bill: "very GTA themed, like that Miami, Vice City colorway with the palm trees and pearly fonts", and a Reddit link post whose
+thumbnail carries the prices. Scoped to the hub only (`.gta` in globals.css, Pacifico loaded by `next/font/local` in
+Gta6View, so no other page downloads it): a sunset-gradient banner with our own drawn palms and striped sun, a neon script
+wordmark, gradient h2s and neon fact-card borders. Cards, price rows and buy buttons keep the site's tokens, so they read
+and click exactly as before (buy-click rate on /gta-6 is the metric to watch). Our own art only: no Rockstar logo, font
+or key art. `/og/gta-6` draws the same look with every console's cheapest in-stock price from the query string
+(`gta6OgImage`), like `/og`; an unpriced console says "check stores", never a number.
