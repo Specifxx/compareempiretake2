@@ -2577,3 +2577,17 @@ two themes on every 2026 Christmas toy list: LEGO KPop Demon Hunters 72537 was i
 (A$94.99 to A$149.99) and on no page, and the cheaper LEGO Pokémon sets were missing from the new LEGO Pokémon hub.
 `LEGO_HYPE_THEMES` (`lib/focus.ts`) lets a set in a hyped theme skip the floor, but nothing else: it still needs stock
 and two stores where we compare. The run reviews the list every week, and a theme comes off it once it cools.
+
+## 2026-11-20 — A hot toys page, Bluey added to the hyped LEGO themes, and the Switch 2 Zelda edition in launches
+
+Second build of the weekly hype run (owner: "build all of this out and get all of this indexed").
+
+- `/hot-toys` (+ `/us`, `/uk`; `lib/hot-toys.ts`, `HotToysView`): the LEGO sets of the three themes on the 2026 Christmas
+  lists (KPop Demon Hunters, Pokémon, Bluey) that are in stock at two or more stores, compared; then the list toys themselves
+  (HUNTR/X dolls, Elmo Giggle Max, furReal Gabby, Bluey Heeler House, PAW Patrol Megasaurus, Gui Gui slime) as labelled
+  Amazon and eBay searches only, each with the dated lists that named it. A store probe on 20 Nov found each of those toys at
+  one shop per country or none, so no store price is claimed for them. Indexed only while a hyped set is at three stores in
+  stock (the 2026-11-19 bar). Click guard: `data-buy-product="hot-toys-<key>"`; read at the weekly run, retire after Christmas.
+- Bluey joins `LEGO_HYPE_THEMES`: its DUPLO and LEGO sets were at 6-9 Australian shops, mostly under the A$225 floor.
+- The Switch 2 Zelda 40th Anniversary Edition (Nintendo, 8 Sep 2026) is a `LAUNCHES` entry rather than a page: one store
+  per region carries it, too few to compare, but the launches row lists it from its first store.

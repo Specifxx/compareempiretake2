@@ -111,10 +111,10 @@ const folded = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 /** A hype launch on the homepage calendar (content/launches.ts): listed in every region from its first store. */
 export const isLaunch = (p: Pick<Phone, "name">, category: CategoryId) => LAUNCHES.some((l) => l.category === category && l.match.test(folded(p.name)));
 
-/** LEGO themes riding a hype wave (the weekly hype run, 2026-11-20: Pokémon's 30th anniversary and KPop Demon Hunters top the
+/** LEGO themes riding a hype wave (the weekly hype run, 2026-11-20: Pokémon's 30th anniversary, KPop Demon Hunters and Bluey top the
  *  2026 Christmas toy lists). A set in one of them skips the budget floor, so the A$95 KPop Demon Hunters set at 11 stores
  *  is listed, but it still needs a store with it in stock and two stores where we compare. Remove a theme once it cools. */
-export const LEGO_HYPE_THEMES = /\b(pokemon|pikachu|k-?pop demon hunters)\b/;
+export const LEGO_HYPE_THEMES = /\b(pokemon|pikachu|k-?pop demon hunters|bluey)\b/;
 
 /** Why a product is kept, or null when it is culled. */
 export function focusReason(p: FocusProduct, category: CategoryId, region: RegionId, demand: ReadonlySet<string>): "demand" | "launch" | "focus" | null {

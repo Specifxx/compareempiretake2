@@ -22,7 +22,7 @@ test("every launch is sourced, dated and checked", () => {
 });
 
 test("featured from pre-order day to featureUntil, newest release first", () => {
-  assert.deepEqual(featuredLaunches("2026-11-03").map((l) => l.key), ["iphone-duo", "galaxy-z-fold8", "galaxy-z-fold8-ultra", "galaxy-z-flip8"]);
+  assert.deepEqual(featuredLaunches("2026-11-03").map((l) => l.key), ["switch-2-zelda-40th", "iphone-duo", "galaxy-z-fold8", "galaxy-z-fold8-ultra", "galaxy-z-flip8"]);
   assert.ok(!featuredLaunches("2026-10-01").some((l) => l.key === "iphone-duo"), "before pre-orders");
   assert.ok(featuredLaunches("2026-10-16").some((l) => l.key === "iphone-duo"), "pre-order day");
   assert.deepEqual(featuredLaunches("2027-06-01"), []);
@@ -65,7 +65,7 @@ test("the real catalogue: every region shows the iPhone Duo and the Fold8", () =
 
 test("the calendar: coming soon by date, out now newest first, every launch listed even with no store", () => {
   const cal = launchCalendar("uk", "2026-10-18", () => [p("apple-iphone-duo", "Apple iPhone Duo", 1, 1)]);
-  assert.deepEqual(cal.soon.map((r) => r.launch.key), ["iphone-duo"]);
+  assert.deepEqual(cal.soon.map((r) => r.launch.key), ["iphone-duo", "switch-2-zelda-40th"]);
   assert.deepEqual(cal.out.map((r) => [r.launch.key, r.product]), [["galaxy-z-fold8", null], ["galaxy-z-fold8-ultra", null], ["galaxy-z-flip8", null]]);
   assert.equal(launchCalendar("uk", "2027-06-01", () => []).out.every((r) => !r.current), true);
 });

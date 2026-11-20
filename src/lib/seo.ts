@@ -3,6 +3,7 @@ import { activeCategories, getBrands, getCatalog, getProducts, getSeries, getSum
 import { getGuides } from "./guides";
 import { GTA6_REGIONS } from "./gta6";
 import { LEGO_POKEMON_REGIONS, legoPokemonIndexable, legoPokemonSets } from "./lego-pokemon";
+import { HOT_TOYS_REGIONS, hotToysIndexable } from "./hot-toys";
 import { brandIndexable, latest, productInSitemap, productLastmod } from "./indexing";
 import { productFound } from "./search-found";
 import { HOME_PATH, PREFIXED_REGIONS, withRegion, type RegionId } from "./region";
@@ -32,12 +33,12 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
   const au = getCatalog();
   // Pages built from today's prices change with every import; the rest carry no lastmod.
   const lastmod = new Date(au.updatedAt).toISOString();
-  const priced = new Set([HOME_PATH.au, "/deals", "/launches", "/gta-6", "/lego-pokemon", "/black-friday", "/cyber-monday", "/boxing-day", "/january-sales", "/lunar-new-year", "/price-report"]);
+  const priced = new Set([HOME_PATH.au, "/deals", "/launches", "/gta-6", "/lego-pokemon", "/hot-toys", "/black-friday", "/cyber-monday", "/boxing-day", "/january-sales", "/lunar-new-year", "/price-report"]);
   const sections: { id: string; entries: () => SitemapEntry[] }[] = [
     {
       id: "pages",
       entries: () =>
-        [HOME_PATH.au, "/deals", "/launches", "/gta-6", ...(legoPokemonIndexable(legoPokemonSets(getSummaries("lego", "au"))) ? ["/lego-pokemon"] : []), "/black-friday", "/cyber-monday", ...withoutOffSeasonSales(["/boxing-day", "/january-sales"], new Date().toISOString().slice(0, 10)), "/embed", "/price-report", "/is-this-a-good-price", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/creators", "/network", "/contact", "/how-we-pick-stores", "/stores", "/list-your-store", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), ...(priced.has(p) ? { lastmod } : {}), priority: p === HOME_PATH.au ? 1 : 0.6 })),
+        [HOME_PATH.au, "/deals", "/launches", "/gta-6", ...(legoPokemonIndexable(legoPokemonSets(getSummaries("lego", "au"))) ? ["/lego-pokemon"] : []), ...(hotToysIndexable(getSummaries("lego", "au")) ? ["/hot-toys"] : []), "/black-friday", "/cyber-monday", ...withoutOffSeasonSales(["/boxing-day", "/january-sales"], new Date().toISOString().slice(0, 10)), "/embed", "/price-report", "/is-this-a-good-price", "/categories", "/browse", "/guides", "/brands", "/compare", "/about", "/creators", "/network", "/contact", "/how-we-pick-stores", "/stores", "/list-your-store", "/reviews", "/disclosure", "/affiliate-disclosure", "/privacy"].map((p) => ({ loc: abs(p), ...(priced.has(p) ? { lastmod } : {}), priority: p === HOME_PATH.au ? 1 : 0.6 })),
     },
     {
       id: "categories",
@@ -73,7 +74,7 @@ export function sitemapSections(): { id: string; entries: () => SitemapEntry[] }
       {
         id: `${r}-pages`,
         entries: () => [
-          ...["/", "/deals", "/launches", ...(GTA6_REGIONS.includes(r) ? ["/gta-6"] : []), ...(LEGO_POKEMON_REGIONS.includes(r) && legoPokemonIndexable(legoPokemonSets(getSummaries("lego", r))) ? ["/lego-pokemon"] : []), "/black-friday", "/cyber-monday", ...withoutOffSeasonSales(["/boxing-day", "/january-sales"], new Date().toISOString().slice(0, 10))].map((p) => ({ loc: abs(withRegion(p, r)), lastmod: lm, priority: p === "/" ? 1 : 0.6 })),
+          ...["/", "/deals", "/launches", ...(GTA6_REGIONS.includes(r) ? ["/gta-6"] : []), ...(LEGO_POKEMON_REGIONS.includes(r) && legoPokemonIndexable(legoPokemonSets(getSummaries("lego", r))) ? ["/lego-pokemon"] : []), ...(HOT_TOYS_REGIONS.includes(r) && hotToysIndexable(getSummaries("lego", r)) ? ["/hot-toys"] : []), "/black-friday", "/cyber-monday", ...withoutOffSeasonSales(["/boxing-day", "/january-sales"], new Date().toISOString().slice(0, 10))].map((p) => ({ loc: abs(withRegion(p, r)), lastmod: lm, priority: p === "/" ? 1 : 0.6 })),
           ...["/stores", "/browse"].map((p) => ({ loc: abs(withRegion(p, r)), priority: 0.6 })),
           // Only categories with at least one strong product (2026-11-06: Canada and Singapore start with a few stores,
           // and a category page listing only one-store products is as thin as those products' own pages).
