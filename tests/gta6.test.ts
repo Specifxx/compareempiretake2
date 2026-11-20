@@ -2,7 +2,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { GTA6, GTA6_ACCESSORIES, GTA6_REGIONS, gta6Consoles } from "../src/lib/gta6";
+import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_REGIONS, gta6Consoles } from "../src/lib/gta6";
 import type { PhoneSummary } from "../src/lib/catalog";
 
 const c = (name: string, bestPrice: number, retailerCount: number, extra: Partial<PhoneSummary> = {}): PhoneSummary =>
@@ -33,4 +33,13 @@ test("the hub is in the sitemap, IndexNow and the page routes", () => {
   assert.match(seo, /"\/gta-6"/);
   assert.match(readFileSync("scripts/indexnow.ts", "utf8"), /gta-6/);
   for (const r of ["", "us/", "uk/"]) assert.match(readFileSync(`src/app/${r}gta-6/page.tsx`, "utf8"), /Gta6View/);
+});
+
+test("after launch the hub says out now and gives both editions' list price in each region", () => {
+  for (const r of GTA6_REGIONS) {
+    const e = GTA6_EDITIONS[r as "au" | "us" | "uk"];
+    assert.ok(e && e.standard && e.ultimate, r);
+  }
+  assert.match(readFileSync("src/views/Gta6View.tsx", "utf8"), /out now/);
+  for (const r of ["", "us/", "uk/"]) assert.doesNotMatch(readFileSync(`src/app/${r}gta-6/page.tsx`, "utf8"), /launches 19 November/);
 });
