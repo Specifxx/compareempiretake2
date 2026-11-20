@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
   return (
-    <span className="relative inline-flex shrink-0">
+    <span className="relative inline-flex shrink-0 xmas-cap">
       <svg viewBox="0 0 64 64" className={className} aria-hidden>
         <defs>
           <linearGradient id="ce-g" x1="0" y1="0" x2="1" y2="1">
