@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:39:01.113Z",
+ "scrapedAt": "2026-11-21T01:14:56.652Z",
  "offers": [
   {
    "retailer": "us-lg",
@@ -245,17 +245,6 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "27US500-W",
-   "mpn": "27US500-W",
-   "brand": "LG",
-   "title": "27 Inch UltraFine™ 4K UHD HDR10 IPS Monitor",
-   "url": "https://www.lg.com/us/monitors/lg-27us500-w-4k-uhd-monitor",
-   "price": 179.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/a492d3f2-0bf8-4050-900c-ed5c96568310/Monitor_27US500-W_gallery_01_5000x5000",
-   "inStock": true
-  },
-  {
-   "retailer": "us-lg",
    "sku": "27US550-W",
    "mpn": "27US550-W",
    "brand": "LG",
@@ -264,6 +253,17 @@
    "price": 229.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/e7168b6b-f95e-4dc7-9385-29e753f556a8/Monitor-27US550-W-gallery-01_5000x5000",
    "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "27US500-W",
+   "mpn": "27US500-W",
+   "brand": "LG",
+   "title": "27 Inch UltraFine™ 4K UHD HDR10 IPS Monitor",
+   "url": "https://www.lg.com/us/monitors/lg-27us500-w-4k-uhd-monitor",
+   "price": 179.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/a492d3f2-0bf8-4050-900c-ed5c96568310/Monitor_27US500-W_gallery_01_5000x5000",
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -316,7 +316,7 @@
    "brand": "LG",
    "title": "27 Inch UltraGear™ G4, 144Hz FHD IPS Gaming Monitor",
    "url": "https://www.lg.com/us/monitors/lg-27g41wb-b-gaming-monitor",
-   "price": 94,
+   "price": 109.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/b81c948d-ba48-4ac1-9f1e-1b29dcb25b3b/Monitor_27G41WB-B_gallery-1_5000x5000",
    "inStock": true
   },
@@ -395,7 +395,7 @@
    "url": "https://www.lg.com/us/monitors/lg-27gx704a-b-gaming-monitor",
    "price": 349.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/c04d033e-7d76-46c6-9c7c-a60dde713186/Monitor-27GX704A-B-OLED-Gallery_3000x3000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -429,6 +429,17 @@
    "price": 229.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/6912720d-47c7-4271-8827-d6a9640a49f5/Monitors_27G640A-B_gallery-01_5000x5000",
    "inStock": true
+  },
+  {
+   "retailer": "us-lg",
+   "sku": "27GR95UM-B",
+   "mpn": "27GR95UM-B",
+   "brand": "LG",
+   "title": "27 Inch UltraGear™ MiniLED 4K UHD Nano IPS 144Hz Gaming Monitor with G-SYNC® Compatible & AMD FreeSync™ Premium Pro",
+   "url": "https://www.lg.com/us/monitors/lg-27gr95um-gaming-monitor",
+   "price": 599.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/46a9cbfd-f3b1-4880-bf51-4e155aa60fed/27GR95UM_gallery_01_3000x3000",
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -472,7 +483,7 @@
    "url": "https://www.lg.com/us/monitors/lg-27gx700a-b-gaming-monitor",
    "price": 399.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/ca9a5e3e-813a-46c8-8a48-e508d48bb1c7/Monitor-27GX700A-B-OLED-Gallery_3000x3000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -674,17 +685,6 @@
   },
   {
    "retailer": "us-lg",
-   "sku": "32GN600-B",
-   "mpn": "32GN600-B",
-   "brand": "LG",
-   "title": "32 Inch UltraGear QHD 1440P 165Hz HDR10 Monitor with FreeSync™ Premium",
-   "url": "https://www.lg.com/us/monitors/lg-32gn600-b-gaming-monitor",
-   "price": 229,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/c8d68835-7550-415b-b64c-a2cf0211c213/md07519557-450-jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "us-lg",
    "sku": "32G620B-B",
    "mpn": "32G620B-B",
    "brand": "LG",
@@ -780,7 +780,7 @@
    "url": "https://www.lg.com/us/monitors/lg-32g60wa-b-gaming-monitor",
    "price": 179.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/5b273d7e-1623-4c56-8c5a-ae682af0b2d7/Monitor-32G60WA-B-LG-Ultragear-gallery_01_5000x5000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -833,7 +833,7 @@
    "brand": "LG",
    "title": "34 Inch Smart Monitor WQHD 1440P Curved Screen 100Hz with webOS",
    "url": "https://www.lg.com/us/monitors/lg-34sr60qc-b-ultrawide-monitor",
-   "price": 349.99,
+   "price": 319.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/5a94498e-6480-4228-ad00-454cce9cb6a1/Monitors_34SR60QC-B_gallery_01_5000x5000",
    "inStock": false
   },
@@ -989,7 +989,7 @@
    "url": "https://www.lg.com/us/monitors/lg-34wr55qk-b-ultrawide-monitor",
    "price": 259.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/61998024-b390-4a3d-8034-dd5699967143/Monitors_34WR55QK-B_gallery_01_5000x5000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -1210,17 +1210,6 @@
    "price": 1499.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/e69815f4-d821-420b-9689-b8e1ad5f24ab/Monitors_52G930B-B_gallery-1_5000x5000",
    "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "27GL850-B",
-   "mpn": "27GL850-B",
-   "brand": "LG",
-   "title": "LG 27GL850 27 Inch UltraGear™ 1440P Nano IPS 1ms Gaming Monitor with G-Sync® Compatibility",
-   "url": "https://www.lg.com/us/monitors/lg-27gl850-b-gaming-monitor",
-   "price": 349.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/b6a7a845-3c4f-418c-b947-68a9fd82ceac/md06064916-450-jpg",
-   "inStock": false
   },
   {
    "retailer": "us-lg",

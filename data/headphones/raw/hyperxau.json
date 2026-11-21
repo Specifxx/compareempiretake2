@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:21:09.812Z",
+ "scrapedAt": "2026-11-21T00:56:17.305Z",
  "offers": [
   {
    "retailer": "hyperxau",
@@ -41,7 +41,7 @@
    "url": "https://au.hyperx.com/products/hyperx-cloud-alpha-wireless",
    "price": 319,
    "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hx_alpha_w_3_4_97f6f4ee-3358-4d10-868e-bc35285d9a88.jpg?v=1765420057",
-   "inStock": true,
+   "inStock": false,
    "brand": "HyperX",
    "mpn": "4P5D4AA"
   },
@@ -91,25 +91,25 @@
   },
   {
    "retailer": "hyperxau",
-   "sku": "705L8AA",
-   "title": "HyperX Cloud Earbuds II RED",
-   "url": "https://au.hyperx.com/products/hyperx-cloud-gaming-earbuds-ii?variant=46699621581120",
-   "price": 59,
-   "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloud_earbuds_ii_red_1_main_36006f53-1320-401e-b76c-85bb57997f98.jpg?v=1765419931",
-   "inStock": false,
-   "brand": "HyperX",
-   "mpn": "705L8AA"
-  },
-  {
-   "retailer": "hyperxau",
    "sku": "70N24AA",
-   "title": "HyperX Cloud Earbuds II RED Black",
+   "title": "HyperX Cloud Earbuds II Black",
    "url": "https://au.hyperx.com/products/hyperx-cloud-gaming-earbuds-ii?variant=46699621613888",
    "price": 59,
    "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloud_earbuds_ii_black_1_main_90fc1663-98d1-448a-9aad-92b21b141cfc.jpg?v=1765419931",
    "inStock": false,
    "brand": "HyperX",
    "mpn": "70N24AA"
+  },
+  {
+   "retailer": "hyperxau",
+   "sku": "705L8AA",
+   "title": "HyperX Cloud Earbuds II Black Red",
+   "url": "https://au.hyperx.com/products/hyperx-cloud-gaming-earbuds-ii?variant=46699621581120",
+   "price": 59,
+   "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloud_earbuds_ii_red_1_main_36006f53-1320-401e-b76c-85bb57997f98.jpg?v=1765419931",
+   "inStock": false,
+   "brand": "HyperX",
+   "mpn": "705L8AA"
   },
   {
    "retailer": "hyperxau",
@@ -206,7 +206,7 @@
    "url": "https://au.hyperx.com/products/hyperx-cloud-stinger-2-wired-gaming-headset",
    "price": 79,
    "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloud_stinger_2_1_main_195bb463-e675-4b9b-845e-ba899b398dde.jpg?v=1765420132",
-   "inStock": true,
+   "inStock": false,
    "brand": "HyperX",
    "mpn": "519T1AA"
   },
@@ -223,19 +223,8 @@
   },
   {
    "retailer": "hyperxau",
-   "sku": "6H9B5AA",
-   "title": "HyperX Cloud Stinger 2 Core Gaming Headsets PS White",
-   "url": "https://au.hyperx.com/products/hyperx-cloud-stinger-2-core-wired-gaming-headset-ps5?variant=46725102534976",
-   "price": 69,
-   "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloud_stinger_2_core_white_ps_1_main_0d3922eb-5d32-4f73-94f0-abd00dfbef13.jpg?v=1765420058",
-   "inStock": false,
-   "brand": "HyperX",
-   "mpn": "6H9B5AA"
-  },
-  {
-   "retailer": "hyperxau",
    "sku": "6H9B6AA",
-   "title": "HyperX Cloud Stinger 2 Core Gaming Headsets PS White Black",
+   "title": "HyperX Cloud Stinger 2 Core Gaming Headsets PS Black",
    "url": "https://au.hyperx.com/products/hyperx-cloud-stinger-2-core-wired-gaming-headset-ps5?variant=46725102567744",
    "price": 69,
    "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloud_stinger_2_core_black_ps_1_main_44a8eead-6525-4524-8a63-dfcf64d8a400.jpg?v=1765420058",
@@ -245,12 +234,23 @@
   },
   {
    "retailer": "hyperxau",
+   "sku": "6H9B5AA",
+   "title": "HyperX Cloud Stinger 2 Core Gaming Headsets PS Black White",
+   "url": "https://au.hyperx.com/products/hyperx-cloud-stinger-2-core-wired-gaming-headset-ps5?variant=46725102534976",
+   "price": 69,
+   "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloud_stinger_2_core_white_ps_1_main_0d3922eb-5d32-4f73-94f0-abd00dfbef13.jpg?v=1765420058",
+   "inStock": false,
+   "brand": "HyperX",
+   "mpn": "6H9B5AA"
+  },
+  {
+   "retailer": "hyperxau",
    "sku": "676A2AA",
    "title": "HyperX Cloud Stinger 2 wireless - Gaming Headset Black",
    "url": "https://au.hyperx.com/products/hyperx-cloud-stinger-2-wireless-gaming-headset",
    "price": 159,
    "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloud_stinger_2_wireless_1_main_b017672c-40ae-4344-a4cf-931e48c9abeb.jpg?v=1765420015",
-   "inStock": true,
+   "inStock": false,
    "brand": "HyperX",
    "mpn": "676A2AA"
   },
@@ -272,25 +272,14 @@
    "url": "https://au.hyperx.com/products/hyperx-cloud-stinger-2-wired-gaming-headset-playstation",
    "price": 89,
    "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_stinger_2_white_ps_75x29aa_main_1.jpg?v=1765420123",
-   "inStock": true,
+   "inStock": false,
    "brand": "HyperX",
    "mpn": "75X29AA"
   },
   {
    "retailer": "hyperxau",
-   "sku": "6H9B8AA",
-   "title": "HyperX CloudX Stinger 2 Core Gaming Headsets Xbox Black",
-   "url": "https://au.hyperx.com/products/hyperx-cloudx-stinger-2-core-wired-gaming-headset-xbox?variant=46725099356480",
-   "price": 69,
-   "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloudx_stinger_2_core_black_xbox_1_main_f092d2e9-dba2-43a5-b342-feaec437e684.jpg?v=1765420016",
-   "inStock": false,
-   "brand": "HyperX",
-   "mpn": "6H9B8AA"
-  },
-  {
-   "retailer": "hyperxau",
    "sku": "6H9B7AA",
-   "title": "HyperX CloudX Stinger 2 Core Gaming Headsets Xbox Black White",
+   "title": "HyperX CloudX Stinger 2 Core Gaming Headsets Xbox White",
    "url": "https://au.hyperx.com/products/hyperx-cloudx-stinger-2-core-wired-gaming-headset-xbox?variant=46725099323712",
    "price": 69,
    "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloudx_stinger_2_core_white_xbox_1_main_55719d86-349c-416c-aaef-2c6017c11cfe.jpg?v=1765420016",
@@ -300,12 +289,23 @@
   },
   {
    "retailer": "hyperxau",
+   "sku": "6H9B8AA",
+   "title": "HyperX CloudX Stinger 2 Core Gaming Headsets Xbox White Black",
+   "url": "https://au.hyperx.com/products/hyperx-cloudx-stinger-2-core-wired-gaming-headset-xbox?variant=46725099356480",
+   "price": 69,
+   "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_cloudx_stinger_2_core_black_xbox_1_main_f092d2e9-dba2-43a5-b342-feaec437e684.jpg?v=1765420016",
+   "inStock": false,
+   "brand": "HyperX",
+   "mpn": "6H9B8AA"
+  },
+  {
+   "retailer": "hyperxau",
    "sku": "75X28AA",
    "title": "HyperX CloudX Stinger II - Wired Headset - Xbox White",
    "url": "https://au.hyperx.com/products/hyperx-cloudx-stinger-2-wired-xbox-headset",
    "price": 89,
    "image": "https://cdn.shopify.com/s/files/1/0694/3329/5168/files/hyperx_stinger_2_white_xbox_75x28aa_main_1.jpg?v=1765420131",
-   "inStock": true,
+   "inStock": false,
    "brand": "HyperX",
    "mpn": "75X28AA"
   }

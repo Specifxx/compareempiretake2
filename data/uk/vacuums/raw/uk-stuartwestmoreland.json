@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T02:01:13.364Z",
+ "scrapedAt": "2026-11-21T01:36:20.432Z",
  "offers": [
   {
    "retailer": "uk-stuartwestmoreland",
@@ -261,7 +261,7 @@
    "sku": "V15DETABSOLUTE",
    "title": "Dyson V15 Detect Absolute Cordless Vacuum Cleaner - Yellow and Nickel",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v15-detect-absolute-cordless-vacuum-yellow-nickel-v15detabsolute",
-   "price": 468,
+   "price": 472.99,
    "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V15DETABSOLUTE-1_8634c4af-8525-457f-bf82-6e09f2938e0e.jpg?v=1793118865",
    "inStock": true,
@@ -307,7 +307,8 @@
    "sku": "V8CYCNEWKIT",
    "title": "Dyson V8 Cyclone Cordless Vacuum Cleaner with Furniture Cleaning Kit - V8CYCNEWKIT",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v8-cyclone-cordless-vacuum-cleaner-with-furniture-cleaning-kit-v8cycnewkit",
-   "price": 349,
+   "price": 219,
+   "wasPrice": 349,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/Dyson-V8-Cyclone-Kit-1.jpg?v=1780912136",
    "inStock": false,
    "brand": "Dyson",
@@ -318,8 +319,7 @@
    "sku": "V8CYCLONENEW",
    "title": "Dyson V8 Cyclone New Cordless Vacuum Cleaner – Black/Green",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v8-cyclone-new-cordless-vacuum-black-green-v8cyclonenew",
-   "price": 209,
-   "wasPrice": 349.99,
+   "price": 209.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V8CYCLONENEW-1.jpg?v=1779372984",
    "inStock": true,
    "brand": "Dyson",
@@ -643,7 +643,8 @@
    "sku": "912061",
    "title": "Numatic Henry XL Plus Cylinder Vacuum Cleaner in Red - 912061",
    "url": "https://www.stuartwestmoreland.co.uk/products/numatic-henry-xl-plus-cylinder-vacuum-cleaner-912061",
-   "price": 199.99,
+   "price": 180,
+   "wasPrice": 199.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/912061-1.jpg?v=1776155946",
    "inStock": true,
    "brand": "Numatic"
@@ -779,7 +780,7 @@
    "sku": "95005GB",
    "title": "Sebo Balance A1 Pro Cordless Vacuum Cleaner – Ocean Blue - 95005GB",
    "url": "https://www.stuartwestmoreland.co.uk/products/sebo-balance-a1-pro-cordless-vacuum-cleaner-95005gb",
-   "price": 399,
+   "price": 397,
    "wasPrice": 439,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/95005GB-1.jpg?v=1777385143",
    "inStock": true,
@@ -791,9 +792,9 @@
    "sku": "HZ500UK",
    "title": "Shark Anti Hair Wrap Corded Stick Vacuum Cleaner with Flexology – Purple | HZ500UK",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-anti-hair-wrap-corded-stick-vacuum-cleaner-flexology-hz500uk-purple",
-   "price": 189.99,
+   "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/HZ500UK-NEW-1.jpg?v=1781707622",
-   "inStock": true,
+   "inStock": false,
    "brand": "Shark",
    "mpn": "HZ500UK"
   },
@@ -807,6 +808,18 @@
    "inStock": false,
    "brand": "Shark",
    "mpn": "HZ500UKT"
+  },
+  {
+   "retailer": "uk-stuartwestmoreland",
+   "sku": "NZ780UKT",
+   "title": "Shark Anti Hair Wrap Plus Upright Pet Vacuum with Lift-Away - NZ780UKT",
+   "url": "https://www.stuartwestmoreland.co.uk/products/shark-anti-hair-wrap-plus-upright-pet-vacuum-with-lift-away-nz780ukt",
+   "price": 299,
+   "wasPrice": 319.99,
+   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/e0928697-NZ780UKT-1.jpg?v=1773833713",
+   "inStock": true,
+   "brand": "Shark",
+   "mpn": "NZ780UKT"
   },
   {
    "retailer": "uk-stuartwestmoreland",
@@ -1050,7 +1063,7 @@
    "title": "Shark PowerPro Pet Cordless Stick Vacuum Cleaner – IZ380UKT",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-powerpro-pet-cordless-stick-vacuum-cleaner-iz380ukt",
    "price": 299.99,
-   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/8db15f8e-IZ380UKT-1.jpg?v=1755271103",
+   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/IZ380UKT.jpg?v=1795170245",
    "inStock": false,
    "brand": "Shark",
    "mpn": "IZ380UKT"
@@ -1260,7 +1273,7 @@
    "url": "https://www.stuartwestmoreland.co.uk/products/vax-pace-cordless-vacuum-cleaner-clsv-paks",
    "price": 119.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/428b299d-CLSV-PAKS-1.jpg?v=1755271098",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-stuartwestmoreland",

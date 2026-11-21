@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:24:05.619Z",
+ "scrapedAt": "2026-11-21T00:57:58.202Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -18,7 +18,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-se-3-40mm-midnight-aluminium-case-gps-cellular-sport-band-s-m",
    "price": 484.19,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181650.jpg?v=1791864369",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -38,7 +38,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-se-3-40mm-midnight-aluminium-case-gps-navy-blue-sport-band-s-m",
    "price": 395.84,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181642.jpg?v=1791854541",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -68,7 +68,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-se-3-44mm-midnight-aluminium-case-gps-cellular-sport-band-m-l",
    "price": 533.67,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/WS4CA4MMBL_apple_watch_se_3_gps.jpg?v=1792977512",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -108,7 +108,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-se-3-44mm-starlight-aluminium-case-gps-sand-sport-band-m-l",
    "price": 445.32,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181645.jpg?v=1791857245",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -178,7 +178,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-series-12-42mm-light-gold-aluminium-case-gps-sand-sport-band-s-m",
    "price": 643.23,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181590.jpg?v=1791944494",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -198,7 +198,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-series-12-46mm-black-aluminium-case-gps-black-sport-band-m-l",
    "price": 731.59,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181597_1.png?v=1791511553",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -278,7 +278,7 @@
    "url": "https://www.mwave.com.au/products/apple-watch-series-12-46mm-natural-titanium-case-gps-cellular-sport-band-m-l",
    "price": 1281.94,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/181625_4.png?v=1792541360",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -362,15 +362,6 @@
   },
   {
    "retailer": "mwave",
-   "sku": "181570",
-   "title": "Apple Watch Ultra 4 49mm Natural Titanium Case GPS + Cellular Milanese Loop (L)",
-   "url": "https://www.mwave.com.au/products/apple-watch-ultra-4-49mm-natural-titanium-case-gps-cellular-milanese-loop-l",
-   "price": 1499,
-   "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "mwave",
    "sku": "181569",
    "title": "Apple Watch Ultra 4 49mm Natural Titanium Case GPS + Cellular Milanese Loop (M)",
    "url": "https://www.mwave.com.au/products/apple-watch-ultra-4-49mm-natural-titanium-case-gps-cellular-milanese-loop-m",
@@ -395,6 +386,15 @@
    "title": "Apple Watch Ultra 4 49mm Natural Titanium Case GPS + Cellular Ocean Band",
    "url": "https://www.mwave.com.au/products/apple-watch-ultra-4-49mm-natural-titanium-case-gps-cellular-ocean-band",
    "price": 1347,
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "mwave",
+   "sku": "181570",
+   "title": "Apple Watch Ultra 4 GPS + Cellular 49mm Natural Titanium Case with Natural Titanium Milanese Loop - L",
+   "url": "https://www.mwave.com.au/products/apple-watch-ultra-4-49mm-natural-titanium-case-gps-cellular-milanese-loop-l",
+   "price": 1499,
    "inStock": false,
    "brand": "Apple"
   },

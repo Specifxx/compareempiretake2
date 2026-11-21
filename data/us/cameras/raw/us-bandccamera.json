@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:35:17.912Z",
+ "scrapedAt": "2026-11-21T01:11:13.599Z",
  "offers": [
   {
    "retailer": "us-bandccamera",
@@ -162,7 +162,7 @@
    "url": "https://bandccamera.com/products/canon-eos-r1",
    "price": 6799,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/canon-eos-r1-283651.jpg?v=1721283371",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon",
    "mpn": "6577C002"
   },
@@ -221,7 +221,7 @@
    "price": 2599,
    "wasPrice": 3299,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/canon-eos-r5-body-395945.png?v=1645731892",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon",
    "mpn": "4147C002"
   },
@@ -1288,7 +1288,7 @@
    "url": "https://bandccamera.com/products/insta360-luna-ultra-standard-combo-stellar-white",
    "price": 769.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/xsqxnk3pimifvhmjiu7g.jpg?v=1786735027",
-   "inStock": false,
+   "inStock": true,
    "brand": "Insta360",
    "mpn": "CINSABTA-LUNA02"
   },
@@ -2147,7 +2147,7 @@
    "price": 4799.95,
    "wasPrice": 5899.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/nikon-z-9-mirrorless-digital-camera-body-only-956377.png?v=1645733286",
-   "inStock": false,
+   "inStock": true,
    "brand": "Nikon"
   },
   {
@@ -2305,7 +2305,7 @@
    "sku": "DC-FZ80DK",
    "title": "Panasonic Lumix FZ80D Digital Camera",
    "url": "https://bandccamera.com/products/panasonic-lumix-fz80d-compact-camera",
-   "price": 497.99,
+   "price": 447.99,
    "wasPrice": 547.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/panasonic-lumix-fz80d-compact-camera-993976.png?v=1719896042",
    "inStock": true,
@@ -2317,7 +2317,7 @@
    "sku": "DC-G9M2BODY",
    "title": "Panasonic Lumix G9 II Mirrorless Camera",
    "url": "https://bandccamera.com/products/panasonic-lumix-g9-ii-mrrorless-camera",
-   "price": 1497.99,
+   "price": 1397.99,
    "wasPrice": 1897.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/products/panasonic-lumix-g9-ii-mirrorless-camera-102457.jpg?v=1694612806",
    "inStock": true,
@@ -2762,7 +2762,8 @@
    "sku": "ILCE-1M2/B",
    "title": "Sony a1 II Mirrorless Camera",
    "url": "https://bandccamera.com/products/sony-a1-ii-mirrorless-camera",
-   "price": 6999.99,
+   "price": 6799.99,
+   "wasPrice": 6999.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/sony-a1-ii-mirrorless-camera-896221.jpg?v=1732148343",
    "inStock": true,
    "brand": "Sony",

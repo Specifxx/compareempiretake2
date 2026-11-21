@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T02:04:21.958Z",
+ "scrapedAt": "2026-11-21T01:39:13.787Z",
  "offers": [
   {
    "retailer": "ca-dreame",
@@ -160,7 +160,8 @@
    "sku": "010202AA000101",
    "title": "Dreame D20 Pro Plus Robot Vacuum Black",
    "url": "https://ca.dreametech.com/products/d20-pro-plus-robot-vacuum?variant=46639189295361",
-   "price": 749.99,
+   "price": 299.99,
+   "wasPrice": 749.99,
    "image": "https://cdn.shopify.com/s/files/1/0729/1997/4145/files/nav_d20_pro_plus.png?v=1764156367",
    "inStock": false,
    "brand": "Dreame",
@@ -171,9 +172,10 @@
    "sku": "010201AA000702",
    "title": "Dreame D20 Pro Plus Robot Vacuum White",
    "url": "https://ca.dreametech.com/products/d20-pro-plus-robot-vacuum?variant=46639189328129",
-   "price": 749.99,
+   "price": 299.99,
+   "wasPrice": 749.99,
    "image": "https://cdn.shopify.com/s/files/1/0729/1997/4145/files/D20_Pro_Plus_76210a26-2148-42a4-b281-4124b45781b8.jpg?v=1764156367",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dreame",
    "mpn": "010201AA000702"
   },

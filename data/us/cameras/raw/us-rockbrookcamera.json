@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:40:55.010Z",
+ "scrapedAt": "2026-11-21T01:16:32.894Z",
  "offers": [
   {
    "retailer": "us-rockbrookcamera",
@@ -127,7 +127,7 @@
    "price": 679.99,
    "wasPrice": 779.99,
    "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/products/Canon-EOSR50Body-FrontSide-211820_25e7a297-9bd3-4999-8eab-e051d9af3322.jpg?v=1676653761",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon"
   },
   {
@@ -286,7 +286,7 @@
    "url": "https://rockbrookcamera.com/products/canon-sx740-hs-silver",
    "price": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/products/9bcf9d50d4b01c6e25bc16e216d2a9bd.jpg?v=1581013745",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon"
   },
   {
@@ -369,6 +369,50 @@
    "price": 93.99,
    "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/files/Fujifilm-InstaxMini12PinkCamera-FrontSide-212048.jpg?v=1694728358",
    "inStock": false,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "us-rockbrookcamera",
+   "sku": "210619",
+   "title": "Fujifilm Instax Mini 13 Camera Clay White",
+   "url": "https://rockbrookcamera.com/products/fuji-instax-mini-11-sky-blue",
+   "price": 79.99,
+   "wasPrice": 89.99,
+   "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/files/FujifilmINSTAXMini13ClayWhite-FrontSide-210619.jpg?v=1795202075",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "us-rockbrookcamera",
+   "sku": "210618",
+   "title": "Fujifilm INSTAX Mini 13 Candy Pink",
+   "url": "https://rockbrookcamera.com/products/fuji-instax-mini-11-lilac-purp",
+   "price": 79.99,
+   "wasPrice": 89.99,
+   "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/files/FujifilmINSTAXMini13CandyPink-FrontSide-210618.jpg?v=1795203446",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "us-rockbrookcamera",
+   "sku": "210617",
+   "title": "Fujifilm INSTAX Mini 13 Dreamy Purple",
+   "url": "https://rockbrookcamera.com/products/fuji-instax-mini-11-ice-white",
+   "price": 79.99,
+   "wasPrice": 89.99,
+   "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/files/FujifilmINSTAXMini13DreamyPurple-FrontSide-210617_c7b30266-a018-41bb-af0a-a9b61cc95cb4.jpg?v=1795206690",
+   "inStock": true,
+   "brand": "Fujifilm"
+  },
+  {
+   "retailer": "us-rockbrookcamera",
+   "sku": "210616",
+   "title": "Fujifilm INSTAX Mini 13 Lagoon Green",
+   "url": "https://rockbrookcamera.com/products/fuji-instax-mini-11-charc-gray",
+   "price": 79.99,
+   "wasPrice": 89.99,
+   "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/files/FujifilmINSTAXMini13LagoonGreen-FrontSide-210616.jpg?v=1795204263",
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {

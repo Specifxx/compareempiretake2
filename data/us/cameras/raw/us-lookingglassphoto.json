@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:38:54.911Z",
+ "scrapedAt": "2026-11-21T01:14:57.504Z",
  "offers": [
   {
    "retailer": "us-lookingglassphoto",
@@ -334,7 +334,7 @@
    "url": "https://lookingglassphoto.com/products/canon-powershot-elph-360-diamond-outfit-silver-1",
    "price": 504.99,
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/elph_360_HS_A_silver_1.jpg?v=1762376720",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon",
    "mpn": "7283C001_OUTFIT"
   },
@@ -1416,7 +1416,8 @@
    "sku": "6485",
    "title": "WANDRD Pro + Camera Cube (for PRVKE 31L)",
    "url": "https://lookingglassphoto.com/products/wandrd-pro-camera-cube-for-prvke-31l",
-   "price": 114.99,
+   "price": 92.19,
+   "wasPrice": 114.99,
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/6485-2.jpg?v=1716578768",
    "inStock": false,
    "brand": "WANDRD"

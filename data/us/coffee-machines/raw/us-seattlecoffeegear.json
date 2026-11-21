@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:41:20.296Z",
+ "scrapedAt": "2026-11-21T01:16:40.287Z",
  "offers": [
   {
    "retailer": "us-seattlecoffeegear",
@@ -177,7 +177,7 @@
    "price": 2173.5,
    "wasPrice": 2415,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/AscasoSteelDuoPlusEspressoMachine3.0new.jpg?v=1790716945",
-   "inStock": true,
+   "inStock": false,
    "brand": "Ascaso",
    "mpn": "ESE929P1520"
   },
@@ -189,7 +189,7 @@
    "price": 2173.5,
    "wasPrice": 2415,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/AscasoSteelDuoPlusEspressoMachine3.0new-8.jpg?v=1790716944",
-   "inStock": true,
+   "inStock": false,
    "brand": "Ascaso",
    "mpn": "ESE929P1560"
   },
@@ -201,7 +201,7 @@
    "price": 2173.5,
    "wasPrice": 2415,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/AscasoSteelDuoPlusEspressoMachine3.0new-4.jpg?v=1790716944",
-   "inStock": false,
+   "inStock": true,
    "brand": "Ascaso",
    "mpn": "ESE929P1540"
   },
@@ -608,7 +608,7 @@
    "price": 549.95,
    "wasPrice": 899.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/231532_a5bb9712-0b90-4233-b54c-01b186772930.jpg?v=1735939300",
-   "inStock": true,
+   "inStock": false,
    "brand": "DeLonghi",
    "mpn": "ESU529N0620"
   },
@@ -1033,7 +1033,7 @@
    "url": "https://www.seattlecoffeegear.com/products/jura-e10-superautomatic-espresso-machine",
    "price": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/JuraE10SuperautomaticEspressoMachinenew-2.jpg?v=1793661871",
-   "inStock": true,
+   "inStock": false,
    "brand": "Jura",
    "mpn": "ESU451P2040"
   },
@@ -1154,7 +1154,7 @@
    "url": "https://www.seattlecoffeegear.com/products/jura-j10-twin-superautomatic-espresso-machine?variant=53975365353779",
    "price": 3799,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/JuraJ10TwinSuperautomaticEspressoMachinenew-10.jpg?v=1793662619",
-   "inStock": false,
+   "inStock": true,
    "brand": "Jura",
    "mpn": "ESU451P2000"
   },
@@ -1692,7 +1692,7 @@
    "url": "https://www.seattlecoffeegear.com/products/rancilio-silvia-pro-x-espresso-machine?variant=47157175779635",
    "price": 2195,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RANCILIOSILVIAPROXESPRESSOMACHINEnew-3.jpg?v=1711387171",
-   "inStock": true,
+   "inStock": false,
    "brand": "Rancilio",
    "mpn": "ESE487K0280"
   },
@@ -1703,7 +1703,7 @@
    "url": "https://www.seattlecoffeegear.com/products/rancilio-silvia-pro-x-espresso-machine?variant=47157175812403",
    "price": 2195,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RANCILIOSILVIAPROXESPRESSOMACHINEnew.jpg?v=1711387173",
-   "inStock": true,
+   "inStock": false,
    "brand": "Rancilio",
    "mpn": "ESE487K0220"
   },
@@ -1723,7 +1723,8 @@
    "sku": "CDR842N0140",
    "title": "Ratio Four Coffee Maker",
    "url": "https://www.seattlecoffeegear.com/products/ratio-four-coffee-maker",
-   "price": 299,
+   "price": 249,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RatioFourCoffeeMakernew.jpg?v=1734652659",
    "inStock": true,
    "brand": "Ratio",
@@ -1734,7 +1735,8 @@
    "sku": "CDR842M0120",
    "title": "Ratio Six Series 2 Coffee Maker Black",
    "url": "https://www.seattlecoffeegear.com/products/ratio-six-coffee-machine-series-2",
-   "price": 379,
+   "price": 319,
+   "wasPrice": 379,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/RATIOSIXDRIPCOFFEEMAKERnew-7_1a1bd12f-f610-4d37-a8cf-97046de7c608.jpg?v=1711777805",
    "inStock": true,
    "brand": "Ratio",

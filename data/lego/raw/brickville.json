@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:17:45.033Z",
+ "scrapedAt": "2026-11-21T00:53:00.295Z",
  "offers": [
   {
    "retailer": "brickville",
@@ -250,7 +250,7 @@
    "url": "https://www.brickville.com.au/products/lego-animal-ninjago-riyu-3215pb01",
    "price": 11.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l1200_9a44e2a7-089a-48c1-9d9c-4c9002a3e508.jpg?v=1787558033",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "3215"
   },
@@ -355,6 +355,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "6649pb01",
+   "title": "LEGO ANIMAL Wolf with Stud on Back with Black Eyes and Nose, Dark Bluish Gray Fur on Muzzle Pattern 6649pb01",
+   "url": "https://www.brickville.com.au/products/wolf-with-stud-on-back-with-black-eyes-and-nose-dark-bluish-gray-fur-on-muzzle-pattern-6649pb01",
+   "price": 9.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/https___img.bricklink.com_ItemImage_PN_86_6649pb01.avif?v=1792888118",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "6649"
+  },
+  {
+   "retailer": "brickville",
    "sku": "21036",
    "title": "LEGO Architecture Arc de Triomphe 21036",
    "url": "https://www.brickville.com.au/products/lego-architecture-arc-de-triomphe-21036",
@@ -382,7 +393,7 @@
    "url": "https://www.brickville.com.au/products/lego-architecture-london-21034",
    "price": 69.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/web2_e93eea12-35ac-4cd1-92c9-879e0e6da63f.webp?v=1787520469",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21034"
   },
@@ -501,12 +512,23 @@
   },
   {
    "retailer": "brickville",
+   "sku": "21042",
+   "title": "LEGO Architecture Statue of Liberty 21042",
+   "url": "https://www.brickville.com.au/products/lego-architecture-statue-of-liberty-21042",
+   "price": 179.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_3699f377-4648-4b12-8a7a-2f10eaf15fe9.jpg?v=1795213681",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21042"
+  },
+  {
+   "retailer": "brickville",
    "sku": "21045",
    "title": "LEGO Architecture Trafalgar Square 21045",
    "url": "https://www.brickville.com.au/products/lego-architecture-trafalgar-square-21045",
    "price": 169.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/products/BTKA_16852490933437939_18446c842671a76f7a53f20c713f23.jpg?v=1686267371",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21045"
   },
@@ -776,7 +798,7 @@
    "url": "https://www.brickville.com.au/products/lego-botanical-collection-cherry-blossoms-40725",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/1000x800p-2023-12-08T145312.989_600x_b5ee57ad-450f-4776-95a0-47f71b6bc332.webp?v=1720848296",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40725"
   },
@@ -920,7 +942,7 @@
    "price": 99.99,
    "wasPrice": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/40726_Prod.webp?v=1737026678",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40726"
   },
@@ -1772,7 +1794,7 @@
    "url": "https://www.brickville.com.au/products/lego-christmas-santas-workshop-40565",
    "price": 69.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/71Lz9cqbsrL.jpg?v=1787741775",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40565"
   },
@@ -2281,7 +2303,7 @@
    "url": "https://www.brickville.com.au/products/lego-creator-3-in-1-fierce-dinosaur-31379",
    "price": 39.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l1600_ebdbfb4b-d640-49e4-8372-de28d799c1d1.webp?v=1794295352",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31379"
   },
@@ -2535,7 +2557,7 @@
    "url": "https://www.brickville.com.au/products/lego-creator-botanical-collection-lotus-flowers-40647",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/CopyofPiano_1_ccd3d6fe-92ac-4098-bb19-ef411b807c3c.webp?v=1788267187",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40647"
   },
@@ -4188,7 +4210,7 @@
    "url": "https://www.brickville.com.au/products/lego-hot-chocolate-stand-40776",
    "price": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/40776.webp?v=1764758949",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40776"
   },
@@ -4594,6 +4616,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "10302",
+   "title": "LEGO Ideas Optimus Prime 10302",
+   "url": "https://www.brickville.com.au/products/lego-ideas-optimus-prime-10302",
+   "price": 279.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/10302_alt1_1200x_4b7cdb54-e596-49db-8076-61ef58a538cd.webp?v=1795216492",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "10302"
+  },
+  {
+   "retailer": "brickville",
    "sku": "21344",
    "title": "LEGO Ideas Orient Express 21344",
    "url": "https://www.brickville.com.au/products/lego-ideas-orient-express-21345",
@@ -4700,7 +4733,7 @@
    "url": "https://www.brickville.com.au/products/lego-ideas-typewriter-21328",
    "price": 479.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/LEGO-Ideas-Typewriter-21327-1.webp?v=1792582757",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21327"
   },
@@ -5169,7 +5202,7 @@
    "url": "https://www.brickville.com.au/products/lego-minecraft-the-bee-farm-21165",
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/21165_alt1.webp?v=1698745733",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21165"
   },
@@ -6868,7 +6901,7 @@
    "url": "https://www.brickville.com.au/products/lego-speed-champions-ford-mustang-dark-horse-76920",
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/47929971114014_ab8f7663-517a-4eb7-beb1-a81fe89630fa.jpg?v=1718885140",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76920"
   },
@@ -7181,6 +7214,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "75279"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "75307",
+   "title": "LEGO Star Wars Advent Calendar 2021 75307",
+   "url": "https://www.brickville.com.au/products/lego-star-wars-advent-calendar-2021-75307",
+   "price": 74.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/75307.jpg?v=1762654814",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "75307"
   },
   {
    "retailer": "brickville",
@@ -8903,7 +8947,7 @@
    "url": "https://www.brickville.com.au/products/lego-technic-dump-truck-42147",
    "price": 19.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/34805061386270.jpg?v=1695204770",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "42147"
   },
@@ -9341,6 +9385,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "42209"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76196",
+   "title": "LEGO The Avengers Advent Calendar 76196",
+   "url": "https://www.brickville.com.au/products/lego-the-avengers-advent-calendar-76196",
+   "price": 79.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/1113133653.avif?v=1795216321",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76196"
   },
   {
    "retailer": "brickville",

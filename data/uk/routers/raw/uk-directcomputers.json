@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:51:22.970Z",
+ "scrapedAt": "2026-11-21T01:26:49.009Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
@@ -120,6 +120,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "90IG0A80-MU9C00",
+   "title": "ASUS RT-BE55 wireless router 2.5 Gigabit Ethernet Dual-band (2.4 GHz / 5 GHz) Black",
+   "url": "https://directcomputers.co.uk/products/asus-w-l-aimesh-router-be3600-rt-be55",
+   "price": 105.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/ec73f6d72aa89c165573e65789fe877f.jpg?v=1774320145",
+   "inStock": true,
+   "brand": "ASUS",
+   "mpn": "90IG0A80-MU9C00"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "90IG08V0-MO3N0V",
    "title": "ASUS RT-BE88U wireless router 10 Gigabit Ethernet Dual-band (2.4 GHz / 5 GHz) Black, Grey",
    "url": "https://directcomputers.co.uk/products/asus-rt-be88u-be7200-dual-band-wi-fi-7-gigabit-router-2x-10g-ports-2-5g-ports-4k-qam-mlo-aimesh-34g-wan-lan-capacity",
@@ -176,6 +187,17 @@
    "inStock": true,
    "brand": "D-LINK",
    "mpn": "DBR-600-P/B"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "V2767-K",
+   "title": "DrayTek 2767 VDSL 2.5G wired router 2.5 Gigabit Ethernet White",
+   "url": "https://directcomputers.co.uk/products/draytek-vigor2767-35b-router",
+   "price": 193.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/ccbf3e3ebabdead4270db797b23843fd.jpg?v=1781280927",
+   "inStock": true,
+   "brand": "DRAYTEK",
+   "mpn": "V2767-K"
   },
   {
    "retailer": "uk-directcomputers",
@@ -568,11 +590,23 @@
    "title": "NETGEAR PR460X wired router 10 Gigabit Ethernet Black",
    "url": "https://directcomputers.co.uk/products/6pt-10g-mg-pro-router-w-4y",
    "price": 874.99,
-   "wasPrice": 880.99,
+   "wasPrice": 877.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/9ec6ef5d9c458871d0a9dc5b42b7f952.jpg?v=1782090092",
    "inStock": true,
    "brand": "NETGEAR",
    "mpn": "PR460X-111EUS"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "RBKE963B-100EUS",
+   "title": "NETGEAR RBKE963B wireless router 10 Gigabit Ethernet Quad-band (2.4 GHz / 5 GHz-1 / 5 GHz-2 / 6 GHz) Black",
+   "url": "https://directcomputers.co.uk/products/orbi-ax11000-1rou",
+   "price": 1881.99,
+   "wasPrice": 1892.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/13cf2db5ad6f5b8f73a119bf90af0f5a.jpg?v=1771815104",
+   "inStock": true,
+   "brand": "NETGEAR",
+   "mpn": "RBKE963B-100EUS"
   },
   {
    "retailer": "uk-directcomputers",
@@ -595,17 +629,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/ae8547cd6669f5b3ab1094bb57b9a9ae_eded93c4-a575-4851-85fc-a4a8eaa4c4da.jpg?v=1782343032",
    "inStock": true,
    "brand": "TPLINK",
-   "mpn": "ARCHER NX500"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "ARCHER NX500",
-   "title": "TP-Link Archer 5G AX3000 Wireless Dual-Band Gigabit Router",
-   "url": "https://directcomputers.co.uk/products/tp-link-archer-nx500-5g-ax3000-wireless-dual-band-gigabit-router-easymesh-compatible-gb-wan-lan",
-   "price": 353.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/ae8547cd6669f5b3ab1094bb57b9a9ae.jpg?v=1776819015",
-   "inStock": true,
-   "brand": "TP-LINK",
    "mpn": "ARCHER NX500"
   },
   {
@@ -656,16 +679,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "ARCHER C50",
-   "title": "TP-Link Archer C50 wireless router Fast Ethernet Dual-band (2.4 GHz / 5 GHz) Black",
-   "url": "https://directcomputers.co.uk/products/wireless-2-band-10-100-cable-router",
-   "price": 53.99,
-   "inStock": true,
-   "brand": "TPLINK",
-   "mpn": "ARCHER C50"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "ARCHER C6",
    "title": "TP-Link Archer C6 wireless router Fast Ethernet Dual-band (2.4 GHz / 5 GHz) White",
    "url": "https://directcomputers.co.uk/products/tp-link-archer-c6-ac1200-867-300-wireless-dual-band-gb-cable-router-4-port-mu-mimo-access-point-mode",
@@ -708,6 +721,28 @@
    "inStock": true,
    "brand": "TP-LINK",
    "mpn": "EX220"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "DECO X50-OUTDOOR(1-PACK)",
+   "title": "TP-Link AX3000 Outdoor/Indoor Mesh Wi-Fi 6 Unit",
+   "url": "https://directcomputers.co.uk/products/tp-link-deco-x50-outdoor-ax3000-outdoor-indoor-dual-band-mesh-wi-fi-6-system-w-poe-single-unit-multi-mount-options-tp-link-homeshield",
+   "price": 168.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/15cff33e21bcb8c555b44abe9b9ae8a7.jpg?v=1776309300",
+   "inStock": true,
+   "brand": "TP-LINK",
+   "mpn": "DECO X50-OUTDOOR(1-PACK)"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "DECO X50(1-PACK)",
+   "title": "TP-Link AX3000 Whole Home Mesh WiFi 6 Unit",
+   "url": "https://directcomputers.co.uk/products/tp-link-ax3000-whole-home-mesh-wi-fi-6",
+   "price": 116.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b677b342ee8b3297fc0fd835f5eb0126.jpg?v=1776818939",
+   "inStock": true,
+   "brand": "TP-LINK",
+   "mpn": "DECO X50(1-PACK)"
   },
   {
    "retailer": "uk-directcomputers",
@@ -755,6 +790,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "DR3650V",
+   "title": "TP-Link Omada AX3000 wireless router Gigabit Ethernet Dual-band (2.4 GHz / 5 GHz) Black",
+   "url": "https://directcomputers.co.uk/products/tp-link-dr3650v-omada-ax3000-wi-fi-6-gigabit-desktop-dsl-gateway-dual-band-vdsl2-35b-usb-3-0-voip-support-centralized-management-mesh-technology",
+   "price": 226.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/2fa3015121d8ebbd87b593e4dda35fa1.jpg?v=1776045251",
+   "inStock": true,
+   "brand": "TP-LINK",
+   "mpn": "DR3650V"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "ER706WP-4G",
    "title": "TP-Link Omada ER706WP-4G wireless router Gigabit Ethernet Dual-band (2.4 GHz / 5 GHz) Black",
    "url": "https://directcomputers.co.uk/products/tp-link-er706wp-4g-omada-4g-cat6-ax3000-gigabit-vpn-gateway-with-4-port-poe-5x-gb-ports-omada-mesh-high-security-vpn",
@@ -799,18 +845,6 @@
    "inStock": true,
    "brand": "TP-LINK",
    "mpn": "TD-W9960"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "TL-MR3020",
-   "title": "TP-Link TL-MR3020 wireless router Fast Ethernet Single-band (2.4 GHz) 4G Silver, White",
-   "url": "https://directcomputers.co.uk/products/tp-link-portable-3g-4g-wrlss-n-rtr-v3-2",
-   "price": 34.99,
-   "wasPrice": 35.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/3539fcbeb4c3c0419719739ec13c39aa26892b3b438cc698187bf4fb40e29f69.jpg?v=1791507463",
-   "inStock": true,
-   "brand": "TP-LINK",
-   "mpn": "TL-MR3020"
   },
   {
    "retailer": "uk-directcomputers",
@@ -865,16 +899,6 @@
    "url": "https://directcomputers.co.uk/products/wifi-7-be9300-tri-band-router-1",
    "price": 250.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/Coming-Soon_62c16be4-dea2-49bc-b0d3-ddca43d95bfb.jpg?v=1794152036",
-   "inStock": true,
-   "brand": "DEVOLO"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "7278",
-   "title": "WIFI 7 BE9300 TRI-BAND ROUTER",
-   "url": "https://directcomputers.co.uk/products/wifi-7-be9300-tri-band-router",
-   "price": 250.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/Coming-Soon_b7c5e69d-62e5-4bf8-acf3-7439605c8c1b.jpg?v=1794152023",
    "inStock": true,
    "brand": "DEVOLO"
   },

@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-11-20T01:20:25.919Z",
+ "scrapedAt": "2026-11-21T00:55:45.970Z",
  "offers": [
   {
    "retailer": "everydayhomeliving",
    "sku": "GeForce RTX 3050 VENTUS 2X E 6G OC",
    "title": "6GB MSI RTX 3050 VENTUS 2X E 6G OC GPU",
    "url": "https://www.everydayhomeliving.com.au/products/6gb-msi-rtx-3050-ventus-2x-e-6g-oc-gpu",
-   "price": 467,
+   "price": 469,
    "image": "https://cdn.shopify.com/s/files/1/0954/7333/6627/files/1024_zQxCFxD.png?v=1787615078",
    "inStock": true,
    "mpn": "GeForce RTX 3050 VENTUS 2X E 6G OC"
@@ -26,7 +26,7 @@
    "sku": "G5060-8V2CV1",
    "title": "8GB MSI RTX 5060 VENTUS 2X OC V1 GPU",
    "url": "https://www.everydayhomeliving.com.au/products/8gb-msi-rtx-5060-ventus-2x-oc-v1-gpu",
-   "price": 829,
+   "price": 994,
    "image": "https://cdn.shopify.com/s/files/1/0954/7333/6627/files/product_1777968525356edbd2fb5ac2b932258b1f917a9365.webp?v=1787615047",
    "inStock": true,
    "mpn": "G5060-8V2CV1"
@@ -242,14 +242,25 @@
   },
   {
    "retailer": "everydayhomeliving",
-   "sku": "GV-N5070WF3OC-12GD",
-   "title": "Gigabyte GeForce RTX 5070 WINDFORCE OC SFF 12G Graphics Card - GV-N5070WF3OC-12GD",
-   "url": "https://www.everydayhomeliving.com.au/products/gigabyte-geforce-rtx-5070-windforce-oc-sff-12g-2542-mhz-cuda-6144-28-gbps-gddr7-192-bit-pci-e-5-0-psu-750w-displayport-2-1b-3-hdmi-2-1b-1-gv-n5070wf3oc-12gd",
-   "price": 1664,
-   "image": "https://cdn.shopify.com/s/files/1/0954/7333/6627/files/VCG-GV-N5070WF3OC-12GD_3ede4129-26e1-492d-9a90-357cb3498830.jpg?v=1779514015",
+   "sku": "N506T2-16D7-191073N",
+   "title": "INNO3D GeForce RTX 5060 Ti TWIN X2 16GB GDDR7 Graphics Card, 2572MHz Boost, 3x DisplayPort 2.1b, 1x HDMI 2.1b",
+   "url": "https://www.everydayhomeliving.com.au/products/inno3d-nvidia-geforce-rtx-5060-ti-twin-x2-16gb-gddr7-2572mhz-boost-clock-ram-28gbps-3xdp-1xhdmi-250x116x41mm",
+   "price": 1489,
+   "image": "https://cdn.shopify.com/s/files/1/0954/7333/6627/files/VCI-RTX5060TI-TWX216.jpg?v=1779405760",
    "inStock": true,
-   "brand": "Gigabyte",
-   "mpn": "GV-N5070WF3OC-12GD"
+   "brand": "INNO3D",
+   "mpn": "N506T2-16D7-191073N"
+  },
+  {
+   "retailer": "everydayhomeliving",
+   "sku": "N506T2-16D7-191073N",
+   "title": "INNO3D nVidia GeForce RTX 5060 Ti TWIN X2 16GB GDDR7, 2572MHz Boost Clock, RAM 28Gbps, 3xDP, 1xHDMI 250x116x41mm, N506T2-16D7-191073N",
+   "url": "https://www.everydayhomeliving.com.au/products/inno3d-nvidia-geforce-rtx-5060-ti-twin-x2-16gb-gddr7-2572mhz-boost-clock-ram-28gbps-3xdp-1xhdmi-250x116x41mm-n506t2-16d7-191073n",
+   "price": 1489,
+   "image": "https://cdn.shopify.com/s/files/1/0954/7333/6627/files/VCI-RTX5060TI-TWX216_17111c46-ccd2-4650-88be-325102503bf6.jpg?v=1779514754",
+   "inStock": true,
+   "brand": "INNO3D",
+   "mpn": "N506T2-16D7-191073N"
   },
   {
    "retailer": "everydayhomeliving",
@@ -311,7 +322,7 @@
    "sku": "GeForce RTX 3050 VENTUS 2X E 6G OC",
    "title": "MSI nVidia GeForce RTX 3050 VENTUS 2X E 6G OC, Boost: 1492 MHz, CUDA 2304 Units, 6GB GDDR6, HDMI x 2",
    "url": "https://www.everydayhomeliving.com.au/products/msi-nvidia-geforce-rtx-3050-ventus-2x-e-6g-oc-boost-1492-mhz-cuda-2304-units-6gb-gddr6-hdmi-x-2",
-   "price": 467,
+   "price": 469,
    "image": "https://cdn.shopify.com/s/files/1/0954/7333/6627/files/VCM-RTX3050VE2XE6GOC.jpg?v=1779516810",
    "inStock": true,
    "mpn": "GeForce RTX 3050 VENTUS 2X E 6G OC"
@@ -366,17 +377,6 @@
    "inStock": true,
    "brand": "Palit",
    "mpn": "NE75070019K9-GB2050S"
-  },
-  {
-   "retailer": "everydayhomeliving",
-   "sku": "NE7506T019T1-GB2061S",
-   "title": "PALIT RTX5060Ti INFINITY 3 16GB GDDR7 128bit 3-DP HDMI NE7506T019T1-GB2061S",
-   "url": "https://www.everydayhomeliving.com.au/products/palit-rtx5060ti-infinity-3-16gb-gddr7-128bit-3-dp-hdmi-ne7506t019t1-gb2061s",
-   "price": 1306,
-   "image": "https://cdn.shopify.com/s/files/1/0954/7333/6627/files/VCPA-RTX5060TIINFINITY16G.jpg?v=1779514458",
-   "inStock": true,
-   "brand": "Palit",
-   "mpn": "NE7506T019T1-GB2061S"
   },
   {
    "retailer": "everydayhomeliving",

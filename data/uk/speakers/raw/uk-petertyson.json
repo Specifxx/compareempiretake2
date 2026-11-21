@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:58:43.775Z",
+ "scrapedAt": "2026-11-21T01:33:48.492Z",
  "offers": [
   {
    "retailer": "uk-petertyson",
@@ -66,7 +66,8 @@
    "sku": "52494",
    "title": "Audio Pro C10 MKII W Multiroom Speaker - Black",
    "url": "https://petertyson.co.uk/audio-pro-c10-mkii-w-multiroom-speaker-black",
-   "price": 389,
+   "price": 329,
+   "wasPrice": 389,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/c/1/c10mk2wblk_1_2025.webp",
    "inStock": true
   },
@@ -75,7 +76,8 @@
    "sku": "52495",
    "title": "Audio Pro C10 MKII W Multiroom Speaker - Grey",
    "url": "https://petertyson.co.uk/audio-pro-c10-mkii-w-multiroom-speaker-grey",
-   "price": 389,
+   "price": 329,
+   "wasPrice": 389,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/c/1/c10mk2wgry_1_2025.webp",
    "inStock": true
   },
@@ -84,7 +86,8 @@
    "sku": "52496",
    "title": "Audio Pro C10 MKII W Multiroom Speaker - White",
    "url": "https://petertyson.co.uk/audio-pro-c10-mkii-w-multiroom-speaker-white",
-   "price": 389,
+   "price": 329,
+   "wasPrice": 389,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/c/1/c10mk2wwhi_1_2025.webp",
    "inStock": true
   },
@@ -93,7 +96,7 @@
    "sku": "52498",
    "title": "Audio Pro C20 W Multiroom Speaker",
    "url": "https://petertyson.co.uk/audio-pro-c20-w-multiroom-speaker",
-   "price": 449,
+   "price": 435,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/c/2/c20wwal_1_2025_1.webp",
    "inStock": true
   },
@@ -161,7 +164,7 @@
    "sku": "50290",
    "title": "Bang & Olufsen Beosound A1 (3rd Gen)",
    "url": "https://petertyson.co.uk/bang-olufsen-beosound-a1-3rd-gen",
-   "price": 249,
+   "price": 235,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/b/s/bsa1mk3alu_2026_1.webp",
    "inStock": true
   },
@@ -170,7 +173,7 @@
    "sku": "39295",
    "title": "Bang & Olufsen Beosound A5",
    "url": "https://petertyson.co.uk/bang-olufsen-beosound-a5-wireless-speaker-config",
-   "price": 1050,
+   "price": 899,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/b/s/bsa5aluminiu_2026_1.webp",
    "inStock": true
   },
@@ -599,7 +602,8 @@
    "sku": "55797",
    "title": "LG Sound Suite M5 1.1.1-channel Wireless Speaker - Black",
    "url": "https://petertyson.co.uk/lg-sound-suite-m5-black",
-   "price": 249,
+   "price": 199,
+   "wasPrice": 249,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/m/5/m5agb_peter_tyson_main.webp",
    "inStock": true
   },
@@ -926,16 +930,6 @@
   },
   {
    "retailer": "uk-petertyson",
-   "sku": "54193",
-   "title": "WiiM Sound Lite Smart Speaker - White",
-   "url": "https://petertyson.co.uk/wiim-sound-lite-smart-speaker-white",
-   "price": 189,
-   "wasPrice": 229,
-   "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/w/i/wiimsndlitew_peter_tyson_av_main.webp",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-petertyson",
    "sku": "56570",
    "title": "WiiM Sound Lite Smart Speakers - Black",
    "url": "https://petertyson.co.uk/wiim-sound-lite-smart-speakers-black",
@@ -952,7 +946,7 @@
    "price": 399,
    "wasPrice": 458,
    "image": "https://petertyson.co.uk/media/converted/catalog/product/cache/1560f9f57c87298a85ac6f8f3352f5a7/w/i/wisndlitwiw_peter_tyson_main.webp",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-petertyson",

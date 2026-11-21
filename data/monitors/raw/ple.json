@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:24:18.483Z",
+ "scrapedAt": "2026-11-21T00:59:14.048Z",
  "offers": [
   {
    "retailer": "ple",
@@ -8,7 +8,8 @@
    "brand": "Acer",
    "mpn": "UM.KE1SA.601-RM0",
    "url": "https://www.ple.com.au/products/688676/acer-ek251q-p6-245-1080p-144hz-ips-monitor",
-   "price": 129,
+   "price": 99,
+   "wasPrice": 129,
    "image": "https://plecom.imgix.net/iil-487165-688676.jpg?w=600&h=600",
    "inStock": false
   },
@@ -17,7 +18,7 @@
    "sku": "683550",
    "title": "Acer EK271 P6 - 27\" 1080p 144Hz IPS Monitor",
    "brand": "Acer",
-   "mpn": "UM.HE1SA.602",
+   "mpn": "UM.HE1SA.602-RM0",
    "url": "https://www.ple.com.au/products/683550/acer-ek271-p6-27-1080p-144hz-ips-monitor",
    "price": 129,
    "wasPrice": 149,
@@ -65,7 +66,7 @@
    "sku": "679463",
    "title": "Acer Nitro EI491CUR X - 49\" Curved 1440p 240Hz VA Gaming Monitor",
    "brand": "Acer",
-   "mpn": "UM.SE1SA.X01",
+   "mpn": "UM.SE1SA.X01-RY0",
    "url": "https://www.ple.com.au/products/679463/acer-nitro-ei491cur-x-49-curved-1440p-240hz-va-gaming-monitor",
    "price": 1199,
    "wasPrice": 1499,
@@ -77,9 +78,9 @@
    "sku": "679978",
    "title": "Acer Nitro KG241YP6 - 23.8\" 1080p 144Hz IPS Gaming Monitor",
    "brand": "Acer",
-   "mpn": "UM.QX1SA.601",
+   "mpn": "UM.QX1SA.601-RY0",
    "url": "https://www.ple.com.au/products/679978/acer-nitro-kg241yp6-238-1080p-144hz-ips-gaming-monitor",
-   "price": 99,
+   "price": 97,
    "wasPrice": 129,
    "image": "https://plecom.imgix.net/iil-450880-679978.jpg?w=600&h=600",
    "inStock": true
@@ -89,9 +90,9 @@
    "sku": "679981",
    "title": "Acer Nitro XZ322QU V3 - 32\" Curved 1440p 180Hz VA Gaming Monitor",
    "brand": "Acer",
-   "mpn": "UM.JX0SA.306",
+   "mpn": "UM.JX0SA.306-RY0",
    "url": "https://www.ple.com.au/products/679981/acer-nitro-xz322qu-v3-32-curved-1440p-180hz-va-gaming-monitor",
-   "price": 284,
+   "price": 269,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-451188-679981.jpg?w=600&h=600",
    "inStock": false
@@ -101,7 +102,7 @@
    "sku": "686769",
    "title": "Acer Nitro XZ343CUR - 34\" Curved 200Hz VA Gaming Monitor",
    "brand": "Acer",
-   "mpn": "UM.CX3SA.001",
+   "mpn": "UM.CX3SA.001-RY0",
    "url": "https://www.ple.com.au/products/686769/acer-nitro-xz343cur-34-curved-200hz-va-gaming-monitor",
    "price": 369,
    "wasPrice": 429,
@@ -924,7 +925,7 @@
    "url": "https://www.ple.com.au/products/661224/asus-proart-pa279crv-27-4k-2160p-60hz-ips-professional-monitor",
    "price": 849,
    "image": "https://plecom.imgix.net/iil-347517-661224.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1071,10 +1072,9 @@
    "brand": "ASUS",
    "mpn": "XG27AQWMG",
    "url": "https://www.ple.com.au/products/681396/asus-rog-strix-oled-xg27aqwmg-27-1440p-280hz-003ms-gaming-monitor",
-   "price": 599,
-   "wasPrice": 1199,
+   "price": 1199,
    "image": "https://plecom.imgix.net/iil-459819-681396.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1955,7 +1955,7 @@
    "price": 399,
    "wasPrice": 499,
    "image": "https://plecom.imgix.net/iil-466486-683417.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2622,7 +2622,7 @@
    "price": 1599,
    "wasPrice": 1749,
    "image": "https://plecom.imgix.net/iil-429294-675522.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -3321,7 +3321,7 @@
    "brand": "Samsung",
    "mpn": "LC34G55TWWEXXY",
    "url": "https://www.ple.com.au/products/644738/samsung-odyssey-g55t-34-curved-1440p-ultrawide-165hz-va-gaming-monitor",
-   "price": 349,
+   "price": 328,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-254383-644738.jpg?w=600&h=600",
    "inStock": true

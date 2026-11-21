@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:35:47.123Z",
+ "scrapedAt": "2026-11-21T01:11:41.555Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -244,7 +244,7 @@
    "price": 79.95,
    "wasPrice": 93.95,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1167326_1.png?v=1790671550",
-   "inStock": true,
+   "inStock": false,
    "brand": "Fujifilm",
    "mpn": "FJMINI13PNK"
   },
@@ -313,7 +313,8 @@
    "sku": "FJXE5BXF23",
    "title": "Fujifilm X-E5 Body, Black with XF23mmF2.8 R WR Lens Kit",
    "url": "https://www.beachcamera.com/products/fujifilm-x-e5-body-black-with-xf23mmf2-8-r-wr-lens-kit",
-   "price": 1949,
+   "price": 1849,
+   "wasPrice": 1899.95,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1106272_1.jpg?v=1757698006",
    "inStock": true,
    "brand": "Fujifilm",
@@ -324,7 +325,8 @@
    "sku": "FJXE5SXF23",
    "title": "Fujifilm X-E5 Body, Silver with XF23mmF2.8 R WR Lens Kit",
    "url": "https://www.beachcamera.com/products/fujifilm-x-e5-body-silver-with-xf23mmf2-8-r-wr-lens-kit",
-   "price": 1949,
+   "price": 1849,
+   "wasPrice": 1899.95,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1106151_1.jpg?v=1757698053",
    "inStock": true,
    "brand": "Fujifilm",
@@ -665,7 +667,7 @@
    "price": 799.99,
    "wasPrice": 918.75,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1212362_1_4b0e3802-2582-409d-97ee-9e4f7d6de3db.jpg?v=1790670689",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon",
    "mpn": "E7NKD7500"
   },

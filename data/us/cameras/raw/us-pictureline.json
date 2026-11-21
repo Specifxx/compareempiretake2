@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:40:04.095Z",
+ "scrapedAt": "2026-11-21T01:15:52.753Z",
  "offers": [
   {
    "retailer": "us-pictureline",
@@ -309,18 +309,6 @@
   },
   {
    "retailer": "us-pictureline",
-   "sku": "1758C001",
-   "title": "Canon EOS Rain Cover Small ERC-E5S",
-   "url": "https://www.pictureline.com/products/canon-eos-rain-cover-small-erc-e5s",
-   "price": 134.99,
-   "wasPrice": 144.99,
-   "image": "https://cdn.shopify.com/s/files/1/0750/1017/products/Rain-Cover-ERC-E5S_1_xl.jpg?v=1610749301",
-   "inStock": false,
-   "brand": "Canon",
-   "mpn": "1758C001"
-  },
-  {
-   "retailer": "us-pictureline",
    "sku": "7280C001",
    "title": "Canon PowerShot ELPH 360 HS A Camera (Black)",
    "url": "https://www.pictureline.com/products/canon-powershot-elph-360-hs-a-camera-black",
@@ -592,7 +580,7 @@
    "price": 5099,
    "wasPrice": 5599,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Fujifilm-GFX100RF-Mirrorless-Camera-Body-Black-1.jpg?v=1742425173",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -990,7 +978,8 @@
    "sku": "CINSAAHA_X501",
    "title": "Insta360 X5 360 8K Camera",
    "url": "https://www.pictureline.com/products/insta360-x5-360-8k-camera",
-   "price": 549.99,
+   "price": 439.99,
+   "wasPrice": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Insta360-X5-360-8K-Camera-1.jpg?v=1746219791",
    "inStock": true,
    "brand": "Insta360",
@@ -1423,7 +1412,8 @@
    "sku": "BCC-L-BK-3",
    "title": "Peak Design Camera Cube v2 Large",
    "url": "https://www.pictureline.com/products/peak-design-camera-cube-v2-large",
-   "price": 119.95,
+   "price": 95.95,
+   "wasPrice": 119.95,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Camera-Cube-v2-Large-1.jpg?v=1699549572",
    "inStock": true,
    "brand": "Peak Design",
@@ -1434,7 +1424,8 @@
    "sku": "BCC-M-BK-3",
    "title": "Peak Design Camera Cube v2 Medium",
    "url": "https://www.pictureline.com/products/peak-design-camera-cube-v2-medium",
-   "price": 99.95,
+   "price": 79.95,
+   "wasPrice": 99.95,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Camera-Cube-v2-Medium-1.jpg?v=1699550801",
    "inStock": true,
    "brand": "Peak Design",
@@ -1442,21 +1433,11 @@
   },
   {
    "retailer": "us-pictureline",
-   "sku": "BCC-SM-BK-3",
-   "title": "Peak Design Camera Cube v2 Smedium",
-   "url": "https://www.pictureline.com/products/peak-design-camera-cube-v2-smedium",
-   "price": 69.95,
-   "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Camera-Cube-v2-Smedium-1.jpg?v=1699551378",
-   "inStock": true,
-   "brand": "Peak Design",
-   "mpn": "BCC-SM-BK-3"
-  },
-  {
-   "retailer": "us-pictureline",
    "sku": "BCC-XL-BK-3",
    "title": "Peak Design Camera Cube v2 X-Large",
    "url": "https://www.pictureline.com/products/peak-design-camera-cube-v2-x-large",
-   "price": 139.95,
+   "price": 111.95,
+   "wasPrice": 139.95,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Peak-Design-Camera-Cube-v2-X-Large-1.jpg?v=1750278318",
    "inStock": true,
    "brand": "Peak Design",

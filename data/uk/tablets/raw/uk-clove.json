@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:49:07.287Z",
+ "scrapedAt": "2026-11-21T01:24:53.445Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -1716,7 +1716,7 @@
    "url": "https://www.clove.co.uk/products/apple-ipad-air-5g-m4-lte-tdd-lte-fdd-128-gb-33-cm-13-12-gb-wi-fi-7-802-11be-ipados-26-grey",
    "price": 1116,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/63e08997-11af-4cf0-bdb6-da6b35e1a632.jpg?v=1791796039",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1806,6 +1806,16 @@
    "url": "https://www.clove.co.uk/products/apple-ipad-air-5g-m4-lte-tdd-lte-fdd-256-gb-33-cm-13-12-gb-wi-fi-7-802-11be-ipados-26-purple",
    "price": 1218,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/24fd9d89-ea8e-4b86-9316-8c931be63628.jpg?v=1791796080",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "103817946",
+   "title": "Apple iPad Air 5G M4 LTE-TDD & LTE-FDD 512 GB 27.9 cm (11\") 12 GB Wi-Fi 7 (802.11be) iPadOS 26 Beige",
+   "url": "https://www.clove.co.uk/products/apple-ipad-air-5g-m4-lte-tdd-lte-fdd-512-gb-27-9-cm-11-12-gb-wi-fi-7-802-11be-ipados-26-beige",
+   "price": 1218,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f67195f6-7bf0-492b-896c-04dc565abae3.jpg?v=1794326795",
    "inStock": false,
    "brand": "Apple"
   },
@@ -1904,7 +1914,7 @@
    "sku": "103819632",
    "title": "Apple iPad Air M4 128 GB 33 cm (13\") 12 GB Wi-Fi 7 (802.11be) iPadOS 26 Grey",
    "url": "https://www.clove.co.uk/products/apple-ipad-air-m4-128-gb-33-cm-13-12-gb-wi-fi-7-802-11be-ipados-26-grey",
-   "price": 964,
+   "price": 972,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/646f6d90-5f3b-4928-8806-ad8626c8f2d4.jpg?v=1791796041",
    "inStock": true,
    "brand": "Apple"
@@ -1926,7 +1936,7 @@
    "url": "https://www.clove.co.uk/products/apple-ipad-air-m4-256-gb-27-9-cm-11-12-gb-wi-fi-7-802-11be-ipados-26-beige",
    "price": 862,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/56536ce9-5df7-4858-a8e3-edbc85fbb3e3.jpg?v=1791796065",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -2454,6 +2464,136 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "106000599",
+   "title": "Apple iPad mini Wi‑Fi + Cellular 128GB with standard glass - Midnight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-cellular-128gb-with-standard-glass-midnight",
+   "price": 862,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3093246d-8015-49e7-b3e3-12636d8d42fd.jpg?v=1794326802",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "106003534",
+   "title": "Apple iPad mini Wi‑Fi + Cellular 128GB with standard glass - Starlight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-cellular-128gb-with-standard-glass-starlight",
+   "price": 862,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ceed73be-334f-44b8-ab10-fad976237afe.jpg?v=1794326809",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "106000158",
+   "title": "Apple iPad mini Wi‑Fi + Cellular 256GB with nano-texture glass - Midnight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-cellular-256gb-with-nano-texture-glass-midnight",
+   "price": 1065,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/95b3ead1-323a-4a7a-8ad9-2808c8be9051.jpg?v=1794326801",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "106002163",
+   "title": "Apple iPad mini Wi‑Fi + Cellular 256GB with standard glass - Midnight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-cellular-256gb-with-standard-glass-midnight",
+   "price": 964,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/cf72090b-823d-4077-a0bf-957342fd2e5d.jpg?v=1794326808",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "106003052",
+   "title": "Apple iPad mini Wi‑Fi + Cellular 512GB with standard glass - Midnight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-cellular-512gb-with-standard-glass-midnight",
+   "price": 1167,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ce14e83b-d88e-4f6a-ab61-c313e4997555.jpg?v=1794326796",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105998211",
+   "title": "Apple iPad mini Wi‑Fi 128GB with standard glass - Midnight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-128gb-with-standard-glass-midnight",
+   "price": 710,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/cf88f802-98e7-4678-b7ed-a16c2a91e045.jpg?v=1794326804",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "106000974",
+   "title": "Apple iPad mini Wi‑Fi 128GB with standard glass - Starlight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-128gb-with-standard-glass-starlight",
+   "price": 710,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c035b88b-0734-40c3-a79f-65e6d1ae2509.jpg?v=1794326799",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "106002518",
+   "title": "Apple iPad mini Wi‑Fi 256GB with nano-texture glass - Midnight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-256gb-with-nano-texture-glass-midnight",
+   "price": 920,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7f6329d1-ed2c-416a-9fc2-e74f5e49ac56.jpg?v=1794326800",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "106000477",
+   "title": "Apple iPad mini Wi‑Fi 256GB with nano-texture glass - Starlight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-256gb-with-nano-texture-glass-starlight",
+   "price": 920,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/a5b7925e-e857-4e06-8ce3-ecb7120cff92.jpg?v=1794326801",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "106002577",
+   "title": "Apple iPad mini Wi‑Fi 256GB with standard glass - Midnight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-256gb-with-standard-glass-midnight",
+   "price": 812,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2b6196d3-f753-449f-966f-5d20a86922e2.jpg?v=1794326807",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105998248",
+   "title": "Apple iPad mini Wi‑Fi 256GB with standard glass - Starlight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-256gb-with-standard-glass-starlight",
+   "price": 818,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/69fab20c-f885-406d-9552-83ef3b13429c.jpg?v=1794326798",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "106003236",
+   "title": "Apple iPad mini Wi‑Fi 512GB with nano-texture glass - Midnight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-512gb-with-nano-texture-glass-midnight",
+   "price": 1125,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c1fc2c2b-611f-49d6-9f69-994d972a9ceb.jpg?v=1794326803",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105996935",
+   "title": "Apple iPad mini Wi‑Fi 512GB with standard glass - Midnight",
+   "url": "https://www.clove.co.uk/products/apple-ipad-mini-wi-fi-512gb-with-standard-glass-midnight",
+   "price": 1022,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/28c9b770-0126-472c-9d93-f45ff646113f.jpg?v=1794326806",
+   "inStock": false,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "92967763",
    "title": "Apple iPad Pro (2024) - 27.9 cm (11\") - Apple M4 - 1 TB - Wi-Fi 6E - iPadOS 17 - Black",
    "url": "https://www.clove.co.uk/products/11-inch-ipad-pro-m4-wi-fi-1tb-with-standard-glass-space-black",
@@ -2965,6 +3105,17 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "104720015",
+   "title": "Capture CA-TAB-22213 tablet 128 GB 30.5 cm (12\") 6 GB",
+   "url": "https://www.clove.co.uk/products/capture-ca-tab-22213-tablet-128-gb-30-5-cm-12-6-gb",
+   "price": 253,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/8fb0c3d6-8505-47b8-ae6d-661ef615893a.jpg?v=1794326794",
+   "inStock": true,
+   "mpn": "CA-TAB-22213",
+   "brand": "CAPTURE"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "79666031",
    "title": "Doro Tablet 10.4\" Green 32GB Wi-Fi Tablet",
    "url": "https://www.clove.co.uk/products/doro-tablet-10-4-green-32gb-wi-fi-tablet",
@@ -3147,7 +3298,7 @@
    "sku": "100553736",
    "title": "Lenovo Tab K12 Mediatek 128 GB 30.7 cm (12.1\") 8 GB Wi-Fi 5 (802.11ac) Android 15 Grey",
    "url": "https://www.clove.co.uk/products/lenovo-tab-k12-mediatek-128-gb-30-7-cm-12-1-8-gb-wi-fi-5-802-11ac-android-15-grey",
-   "price": 341,
+   "price": 382,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/ff661a83-8075-4d65-b61a-fb18dcb45a4d.jpg?v=1791796049",
    "inStock": true,
    "brand": "Lenovo"
@@ -3347,7 +3498,7 @@
    "sku": "105653346",
    "title": "Lenovo Tab Mediatek 128 GB 25.6 cm (10.1\") 4 GB Wi-Fi 5 (802.11ac) Android 14 Grey",
    "url": "https://www.clove.co.uk/products/lenovo-tab-mediatek-128-gb-25-6-cm-10-1-4-gb-wi-fi-5-802-11ac-android-14-grey-3",
-   "price": 214,
+   "price": 244,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/5b7adf25-9ca1-407c-9fbc-fa9685aefdbf.jpg?v=1793789949",
    "inStock": true,
    "brand": "Lenovo"
@@ -3407,7 +3558,7 @@
    "sku": "102846278",
    "title": "Lenovo Tab One Mediatek 64 GB 22.1 cm (8.7\") 4 GB Wi-Fi 5 (802.11ac) Android 14 Grey",
    "url": "https://www.clove.co.uk/products/lenovo-tab-one-mediatek-64-gb-22-1-cm-8-7-4-gb-wi-fi-5-802-11ac-android-14-grey-2",
-   "price": 159,
+   "price": 158,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c41a6a82-5a5b-4cc1-a7a2-8f8e9b111ffb.jpg?v=1793353182",
    "inStock": true,
    "brand": "Lenovo"
@@ -3704,7 +3855,7 @@
    "sku": "93166676",
    "title": "Microsoft Surface Pro 11 Copilot+ PC 5G Qualcomm Snapdragon LTE 256 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-11-copilot-pc-5g-qualcomm-snapdragon-lte-256-gb-33-cm-13-16-gb-wi-fi-7-802-11be-windows-11-pro-platinum",
-   "price": 1774,
+   "price": 1721,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/54b40065-1da5-4c67-8541-5b6e053dcfb0.jpg?v=1791797308",
    "inStock": true,
    "brand": "Microsoft"
@@ -3744,7 +3895,7 @@
    "sku": "97020676",
    "title": "Microsoft Surface Pro 11 Copilot+ PC Intel Core Ultra 5 256 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-11-copilot-pc-intel-core-ultra-5-256-gb-33-cm-13-16-gb-wi-fi-7-802-11be-windows-11-pro-platinum-1",
-   "price": 1965,
+   "price": 1507,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7e822a77-a615-459a-901a-1c87eaf5e30e.jpg?v=1791795601",
    "inStock": true,
    "brand": "Microsoft"
@@ -3756,7 +3907,7 @@
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-11-copilot-pc-intel-core-ultra-5-256-gb-33-cm-13-16-gb-wi-fi-7-802-11be-windows-11-pro-platinum",
    "price": 1460,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/3fa40cbd-47f3-49ae-bbc6-72ab16c9ef00.jpg?v=1791794554",
-   "inStock": true,
+   "inStock": false,
    "brand": "Microsoft"
   },
   {
@@ -3956,7 +4107,7 @@
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-11-copilot-pc-qualcomm-snapdragon-512-gb-33-cm-13-16-gb-wi-fi-7-802-11be-windows-11-pro-black-1",
    "price": 1543,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/2a91377c-fdf0-424a-a60b-9d65df6c200b.jpg?v=1791797541",
-   "inStock": true,
+   "inStock": false,
    "brand": "Microsoft"
   },
   {
@@ -4054,7 +4205,7 @@
    "sku": "104810370",
    "title": "Microsoft Surface Pro 13-inch (12th Edition) Intel Core Ultra 7 256 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-13-inch-12th-edition-intel-core-ultra-7-256-gb-33-cm-13-16-gb-wi-fi-7-802-11be-windows-11-pro-platinum",
-   "price": 2628,
+   "price": 2629,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/81e01db5-4463-4c44-a3a4-1bd7040f351b.jpg?v=1793353183",
    "inStock": true,
    "brand": "Microsoft"
@@ -4064,7 +4215,7 @@
    "sku": "104781333",
    "title": "Microsoft Surface Pro 13\" 5G Intel Core Ultra 5 LTE-A 256 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-13-5g-intel-core-ultra-5-lte-a-256-gb-33-cm-13-16-gb-wi-fi-7-802-11be-windows-11-pro-platinum",
-   "price": 2487,
+   "price": 2488,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/25d5ff69-a373-4b91-afa5-7ec51001578b.jpg?v=1791794930",
    "inStock": true,
    "brand": "Microsoft"
@@ -4104,7 +4255,7 @@
    "sku": "104791504",
    "title": "Microsoft Surface Pro 13\" Intel Core Ultra 5 256 GB 33 cm (13\") 16 GB Wi-Fi 7 (802.11be) Windows 11 Pro Platinum",
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-13-intel-core-ultra-5-256-gb-33-cm-13-16-gb-wi-fi-7-802-11be-windows-11-pro-platinum",
-   "price": 2186,
+   "price": 2187,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4bf961ea-acc2-4b67-8e87-7acede38115f.jpg?v=1791795282",
    "inStock": true,
    "brand": "Microsoft"
@@ -4136,7 +4287,7 @@
    "url": "https://www.clove.co.uk/products/microsoft-surface-pro-13-intel-core-ultra-7-512-gb-33-cm-13-32-gb-wi-fi-7-802-11be-windows-11-pro-platinum",
    "price": 3211,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/48d09679-174b-44a4-b7f8-3cfad4be5bed.jpg?v=1791794935",
-   "inStock": true,
+   "inStock": false,
    "brand": "Microsoft"
   },
   {
@@ -4344,7 +4495,7 @@
    "sku": "100040732",
    "title": "Samsung Galaxy Tab A11 4G LTE-TDD & LTE-FDD SM-X130 64 GB 22.1 cm (8.7\") 4 GB Wi-Fi 5 (802.11ac) Grey",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-a11-4g-lte-tdd-lte-fdd-sm-x130-64-gb-22-1-cm-8-7-4-gb-wi-fi-5-802-11ac-grey",
-   "price": 188,
+   "price": 208,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/f22ae93a-5400-430b-94b7-40df9af4debc.jpg?v=1791796764",
    "inStock": true,
    "mpn": "SM-X130",
@@ -4722,9 +4873,9 @@
    "sku": "90787911",
    "title": "Samsung Galaxy Tab Active5 Wi-Fi Entreprise Edition Samsung Exynos 128 GB 20.3 cm (8\") 6 GB Wi-Fi 6 (802.11ax) Android 14 Green",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-active5-wi-fi-entreprise-edition-samsung-exynos-128-gb-20-3-cm-8-6-gb-wi-fi-6-802-11ax-android-14-green",
-   "price": 535,
+   "price": 536,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6c9a003b-e3e1-4ebe-aa0d-31c4e64b6d51.jpg?v=1791796368",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {
@@ -4734,7 +4885,7 @@
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-s10-fe-5g-entreprise-edition-samsung-exynos-lte-tdd-lte-fdd-128-gb-27-7-cm-10-9-8-gb-wi-fi-6-802-11ax-grey-2",
    "price": 663,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/af153a4f-9ff2-4c42-a915-203bb562a472.jpg?v=1793789948",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {
@@ -4774,7 +4925,7 @@
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-s10-fe-samsung-exynos-128-gb-27-7-cm-10-9-8-gb-wi-fi-6-802-11ax-android-15-grey",
    "price": 521,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/c61d457c-154d-45f0-806a-7bc9d37b944c.jpg?v=1791796719",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {
@@ -4852,7 +5003,7 @@
    "sku": "100032555",
    "title": "Samsung Galaxy Tab S10 Lite 5G LTE-TDD & LTE-FDD 128 GB 27.7 cm (10.9\") 6 GB Wi-Fi 6 (802.11ax) Silver",
    "url": "https://www.clove.co.uk/products/samsung-galaxy-tab-s10-lite-5g-lte-tdd-lte-fdd-128-gb-27-7-cm-10-9-6-gb-wi-fi-6-802-11ax-silver",
-   "price": 455,
+   "price": 481,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/d31873b3-de5b-4d1d-a33c-11f0afb89e94.jpg?v=1791796084",
    "inStock": true,
    "brand": "Samsung"
@@ -5530,7 +5681,7 @@
    "url": "https://www.clove.co.uk/products/tcl-nxtpaper-11-plus-mediatek-256-gb-29-2-cm-11-5-8-gb-wi-fi-5-802-11ac-android-15-grey",
    "price": 232,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/4b9161cc-9047-4bd6-9289-82b04e679a90.jpg?v=1791797175",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-clove",
