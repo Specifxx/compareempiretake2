@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T22:26:36.239Z",
+ "scrapedAt": "2026-11-21T21:13:57.383Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -250,7 +250,7 @@
    "price": 279,
    "wasPrice": 349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/473382-Product-0-I_2e4f0b3c-cc24-4ff5-afab-a4719d3a03af.jpg?v=1572287747",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audioengine"
   },
   {
@@ -975,7 +975,7 @@
    "url": "https://www.jbhifi.com.au/products/edifier-s360db-2-1-powered-bluetooth-speaker-system-brown",
    "price": 789,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904556-Product-0-I-639184626004307798.jpg?v=1782865866",
-   "inStock": true,
+   "inStock": false,
    "brand": "Edifier"
   },
   {
@@ -2132,7 +2132,7 @@
    "url": "https://www.jbhifi.com.au/products/pioneer-dj-dm-40d-bt-4-desktop-monitor-speaker-pair-with-bluetooth",
    "price": 399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895978-Product-0-I-639117280804295443.jpg?v=1776135665",
-   "inStock": true,
+   "inStock": false,
    "brand": "Pioneer Dj"
   },
   {
@@ -2181,7 +2181,8 @@
    "sku": "904660",
    "title": "QSC CB10 Compact Battery-Powered Loudspeaker System",
    "url": "https://www.jbhifi.com.au/products/qsc-cb10-compact-battery-powered-loudspeaker-system",
-   "price": 1599,
+   "price": 1349,
+   "wasPrice": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904660-Product-0-I-639195736206724560.jpg?v=1783976887",
    "inStock": false,
    "brand": "Qsc"
@@ -2974,46 +2975,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/992666-Product-0-I-638543453422345465.jpg?v=1719185596",
    "inStock": true,
    "brand": "Ultimate Ears"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "10100833",
-   "title": "Uniden Looop Ichi Portable Bluetooth Speaker with Magnetic Base",
-   "url": "https://www.jbhifi.com.au/products/uniden-looop-ichi-portable-bluetooth-speaker-with-magnetic-base",
-   "price": 49,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/b649322008de447680acae364bab545e.jpg?v=1793231486",
-   "inStock": true,
-   "brand": "Uniden"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "10100816",
-   "title": "Uniden Looop Ni 30W Portable Bluetooth Speaker",
-   "url": "https://www.jbhifi.com.au/products/uniden-looop-ni-30w-portable-bluetooth-speaker",
-   "price": 99,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/0724657d85ad4b529ba3c0321e6a7b76.jpg?v=1793231488",
-   "inStock": true,
-   "brand": "Uniden"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "10100796",
-   "title": "Uniden Looop San 50W Portable Bluetooth Speaker",
-   "url": "https://www.jbhifi.com.au/products/uniden-looop-san-50w-portable-bluetooth-speaker",
-   "price": 149,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/d40ebff74302407580e11c9c93e631e2.jpg?v=1793231486",
-   "inStock": true,
-   "brand": "Uniden"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "10100819",
-   "title": "Uniden Looop Yon 100W Portable Bluetooth Speaker",
-   "url": "https://www.jbhifi.com.au/products/uniden-looop-yon-100w-portable-bluetooth-speaker",
-   "price": 199,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/82e0aa8487064776a7ffb88642e18873.jpg?v=1793231486",
-   "inStock": true,
-   "brand": "Uniden"
   }
  ]
 }
