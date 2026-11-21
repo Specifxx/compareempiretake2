@@ -29,6 +29,19 @@ export function legoPokemonSets(products: readonly PhoneSummary[]): PhoneSummary
 export const legoPokemonIndexable = (sets: readonly PhoneSummary[]) => sets.some((p) => p.inStock && p.retailerCount >= 3);
 
 /** Clean display name: "LEGO Pokémon Pikachu and Poké Ball (72152)". Store names arrive in caps or without accents. */
+/** A LEGO set of any theme, the store's own words: "LEGO Duplo Ice Cream Trip with Bluey (10458)". Never adds a theme
+ *  word, so a Bluey or KPop set is not called Pokémon (hot-toys page, 2026-11-21). */
+export function legoName(p: Pick<PhoneSummary, "name" | "model">): string {
+  const n = setNumber(p);
+  let s = p.name.replace(/^LEGO\s*(®|\(R\))?\s+/i, "").replace(/\(?\b\d{5}\b\)?/, "").replace(/\s{2,}/g, " ").trim();
+  if (s === s.toUpperCase()) s = s.toLowerCase().replace(/\b\w/g, (m) => m.toUpperCase()).replace(/\b(And|Of|The|With)\b/g, (m) => m.toLowerCase());
+  return `LEGO ${s}${n ? ` (${n})` : ""}`.replace(/\s{2,}/g, " ");
+}
+
+/** The right name for a set on a page that mixes themes: Pokémon sets keep the hub's clean name, every other theme its own. */
+export const anyLegoName = (p: Pick<PhoneSummary, "name" | "model">): string =>
+  /\b(pok[eé]mon|pikachu)\b/i.test(`${p.name} ${p.model}`) ? displayName(p) : legoName(p);
+
 export function displayName(p: Pick<PhoneSummary, "name" | "model">): string {
   const n = setNumber(p);
   let s = p.name.replace(/^LEGO\s+/i, "").replace(/\b\d{5}\b/, "").replace(/\s{2,}/g, " ").trim();
