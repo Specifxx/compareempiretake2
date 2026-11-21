@@ -2,7 +2,7 @@ import Link from "next/link";
 import { catalogDay, getSummaries } from "@/lib/catalog";
 import { amazonLink, AMAZON_DISCLOSURE, AMAZON_REL } from "@/lib/amazon";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
-import { displayName, setNumber } from "@/lib/lego-pokemon";
+import { anyLegoName, setNumber } from "@/lib/lego-pokemon";
 import { HOT_LEGO_THEMES, hotLego, hotToysFaq, LIST_TOYS, SOURCES } from "@/lib/hot-toys";
 import { blackFriday, cyberMonday, longDate, seasonYear } from "@/lib/black-friday";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
@@ -23,7 +23,7 @@ export function HotToysView({ region }: { region: RegionId }) {
   const lego = getSummaries("lego", region);
   const themes = HOT_LEGO_THEMES.map((t) => ({ t, sets: hotLego(lego, t) }));
   const top = themes.flatMap((x) => x.sets).sort((a, b) => b.retailerCount - a.retailerCount || a.bestPrice - b.bestPrice)[0];
-  const faq = hotToysFaq(place, top && { ...top, name: displayName(top) }, (n) => money(n, region));
+  const faq = hotToysFaq(place, top && { ...top, name: anyLegoName(top) }, (n) => money(n, region));
   const bfYear = seasonYear(new Date().toISOString().slice(0, 10));
   const year = new Date().getUTCFullYear();
   const path = withRegion("/hot-toys", region);
@@ -44,7 +44,7 @@ export function HotToysView({ region }: { region: RegionId }) {
         <h1 className="font-display text-[1.75rem] font-bold leading-[1.12] tracking-tight sm:text-4xl" style={{ textWrap: "balance" }}>Hot toys for Christmas {year}: prices in {place}</h1>
         <p className="mt-3 text-[0.95rem] leading-relaxed text-ink-soft">
           The toys the big {year} lists picked, and the LEGO sets from the same crazes that {R.adjective} stores have in stock, compared store by store (checked {catalogDay(region)}).
-          {top ? <> {displayName(top)} is at the most stores: {top.retailerCount}, from <b>{money(top.bestPrice, region)}</b>.</> : null}
+          {top ? <> {anyLegoName(top)} is at the most stores: {top.retailerCount}, from <b>{money(top.bestPrice, region)}</b>.</> : null}
         </p>
       </header>
 
@@ -59,11 +59,11 @@ export function HotToysView({ region }: { region: RegionId }) {
                 <li key={p.href}>
                   <Link prefetch={false} href={p.href} className="card flex items-center gap-4 p-4 transition hover:shadow-lift">
                     <div className="img-tile grid h-16 w-16 shrink-0 sm:h-24 sm:w-24 place-items-center overflow-hidden rounded-lg">
-                      {p.image && <img src={sized(p.image, 220)} alt={displayName(p)} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
+                      {p.image && <img src={sized(p.image, 220)} alt={anyLegoName(p)} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
                     </div>
                     <div className="min-w-0 flex-1">
                       {setNumber(p) && <div className="text-xs font-medium text-ink-mute">Set {setNumber(p)}</div>}
-                      <h3 className="line-clamp-2 font-display text-base font-bold leading-tight">{displayName(p)}</h3>
+                      <h3 className="line-clamp-2 font-display text-base font-bold leading-tight">{anyLegoName(p)}</h3>
                       <div className="mt-1 text-xs text-ink-mute">{p.retailerCount} stores · compare →</div>
                     </div>
                     <div className="shrink-0 text-right"><span className="block text-xs text-ink-mute">from</span><span className="price text-xl">{money(p.bestPrice, region)}</span></div>

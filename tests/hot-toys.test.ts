@@ -48,3 +48,11 @@ test("the page is in the sitemap, IndexNow, the LEGO page and the routes", () =>
   assert.match(readFileSync("src/views/CategoryView.tsx", "utf8"), /\/hot-toys/);
   for (const r of ["", "us/", "uk/"]) assert.match(readFileSync(`src/app/${r}hot-toys/page.tsx`, "utf8"), /HotToysView/);
 });
+
+test("a Bluey or KPop set is never named Pokémon on the hot toys page; Pokémon sets keep their clean name", async () => {
+  const { anyLegoName } = await import("../src/lib/lego-pokemon");
+  assert.equal(anyLegoName({ name: "LEGO Duplo Ice Cream Trip with Bluey 10458", model: "10458" }), "LEGO Duplo Ice Cream Trip with Bluey (10458)");
+  assert.equal(anyLegoName({ name: "KPop Demon Hunters Derpy Tiger and Sussie Bird 72537", model: "72537" }), "LEGO KPop Demon Hunters Derpy Tiger and Sussie Bird (72537)");
+  assert.equal(anyLegoName({ name: "LEGO POKEMON EEVEE 72151", model: "72151" }), "LEGO Pokémon Eevee (72151)");
+  assert.doesNotMatch(readFileSync("src/views/HotToysView.tsx", "utf8"), /\bdisplayName\(/);
+});
