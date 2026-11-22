@@ -1,0 +1,26 @@
+name: DB ping (one-off, claude branch only)
+# Diagnosis 2026-11-22: is Compare Empire's Neon database the one Neon says hit its compute cap?
+# Prints only the endpoint id (not a credential) and whether a trivial query answers.
+on:
+  push:
+    branches: [claude/project-thread-kla08y]
+    paths: [.github/workflows/db-ping-once.yml]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: npm i --no-save @neondatabase/serverless@0.10.4 >/dev/null 2>&1
+      - env:
+          URL1: ${{ secrets.DATABASE_URL }}
+        run: |
+          node -e '
+          const { neon } = require("@neondatabase/serverless");
+          (async () => {
+            const u = process.env.URL1;
+            if (!u) { console.log("DATABASE_URL: not set"); return; }
+            const ep = (u.match(/@(ep-[a-z0-9-]+?)(-pooler)?\./) || [])[1];
+            console.log("endpoint:", ep);
+            try { const r = await neon(u)`SELECT 1 AS ok, (SELECT count(*) FROM alerts)::int AS alerts`; console.log("answers:", JSON.stringify(r)); }
+            catch (e) { console.log("ERROR:", String(e.message || e).slice(0, 300)); }
+          })();'
