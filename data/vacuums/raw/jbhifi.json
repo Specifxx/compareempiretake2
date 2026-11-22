@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T21:18:33.533Z",
+ "scrapedAt": "2026-11-22T21:29:50.748Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -85,7 +85,7 @@
    "price": 549,
    "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894948-Product-0-I-639222726003521240.jpg?v=1789739334",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dreame"
   },
   {
@@ -651,6 +651,16 @@
    "url": "https://www.jbhifi.com.au/products/roborock-f25-wet-and-dry-vacuum",
    "price": 397,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/802499-Product-0-I-638754441607577561.jpg?v=1739847428",
+   "inStock": true,
+   "brand": "Roborock"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "817543",
+   "title": "Roborock Q7B+ Vacuum Cleaner",
+   "url": "https://www.jbhifi.com.au/products/roborock-q7b-vacuum-cleaner",
+   "price": 394,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817543-Product-0-I-638908159838924509.jpg?v=1755219250",
    "inStock": true,
    "brand": "Roborock"
   },

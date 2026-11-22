@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T21:12:44.108Z",
+ "scrapedAt": "2026-11-22T21:20:49.705Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -42,7 +42,7 @@
    "price": 675,
    "wasPrice": 696,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803399-Product-0-I-638767377020490994.jpg?v=1741140971",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -104,7 +104,7 @@
    "price": 860,
    "wasPrice": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803403-Product-0-I-638767395677977568.jpg?v=1741143135",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -443,7 +443,7 @@
    "price": 1199,
    "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807682-Product-0-I-639080821918365724.jpg?v=1772485446",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -509,7 +509,7 @@
    "price": 1449,
    "wasPrice": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807713-Product-0-I-639080822052818087.jpg?v=1772485446",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -828,7 +828,7 @@
    "price": 1499,
    "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807699-Product-0-I-639080837409348342.jpg?v=1772487006",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -938,7 +938,7 @@
    "price": 2099,
    "wasPrice": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748021-Product-0-I-639080823604045102.jpg?v=1791174801",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -2189,6 +2189,16 @@
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s10-ultra-14-6-5g-1tb-grey",
    "price": 2598,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784341-Product-0-I-638640410404526268_2f356308-d52b-4b71-9dea-36fd93821f61.jpg?v=1728511996",
+   "inStock": true,
+   "brand": "Samsung S9"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "784339",
+   "title": "Samsung Galaxy Tab S10 Ultra 14.6\" 5G 256GB (Grey)",
+   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-tab-s10-ultra-14-6-5g-256gb-grey",
+   "price": 1548,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/784339-Product-0-I-638640413403428724.jpg?v=1728512002",
    "inStock": true,
    "brand": "Samsung S9"
   },

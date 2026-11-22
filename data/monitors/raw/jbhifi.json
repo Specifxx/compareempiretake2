@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T21:19:01.651Z",
+ "scrapedAt": "2026-11-22T21:29:44.631Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -33,7 +33,7 @@
    "price": 974,
    "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807429-Product-0-I-638820026401708297.jpg?v=1746405907",
-   "inStock": true,
+   "inStock": false,
    "mpn": "AW3425DW",
    "brand": "Alienware"
   },
@@ -1012,17 +1012,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "788740",
-   "title": "Lenovo Legion R32qc 31.5\" QHD 180Hz VA Curved Gaming Monitor",
-   "url": "https://www.jbhifi.com.au/products/lenovo-legion-r32qc-31-5-qhd-180hz-va-curved-gaming-monitor",
-   "price": 349,
-   "wasPrice": 429,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/788740-Product-0-I-638719830002537577.jpg?v=1736386221",
-   "inStock": true,
-   "brand": "Lenovo"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "797509",
    "title": "Lenovo Legion R34w-30 34\" WQHD 180Hz Curved Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-r34w-30-34-wqhd-180hz-curved-gaming-monitor",
@@ -1258,7 +1247,7 @@
    "price": 1399,
    "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899044-Product-0-I-639152758205767225.jpg?v=1779679086",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lg"
   },
   {
@@ -1278,7 +1267,8 @@
    "sku": "749935",
    "title": "LG UltraGear GS60QC 27\" QHD 180Hz Curved Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/lg-ultragear-gs60qc-27-qhd-180hz-curved-gaming-monitor",
-   "price": 449,
+   "price": 314,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749935-Product-0-I-638567646006410977.jpg?v=1721167871",
    "inStock": true,
    "mpn": "GS60QC",
@@ -1289,7 +1279,8 @@
    "sku": "749936",
    "title": "LG UltraGear GS60QC 31.5\" QHD 180Hz Curved Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/lg-ultragear-gs60qc-31-5-qhd-180hz-curved-gaming-monitor",
-   "price": 549,
+   "price": 384,
+   "wasPrice": 549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749936-Product-0-I-638567654406045203.jpg?v=1721168711",
    "inStock": true,
    "mpn": "GS60QC",

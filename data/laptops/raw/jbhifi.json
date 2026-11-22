@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T21:00:10.527Z",
+ "scrapedAt": "2026-11-22T21:10:14.205Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -139,7 +139,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-13-inch-with-m5-chip-512gb-16gb-starlight",
    "price": 1849,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748034-Product-0-I-639081654878962137.jpg?v=1790763184",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -267,7 +267,7 @@
    "sku": "890864",
    "title": "Apple MacBook Neo 13-inch with A18 Pro Chip, 256GB/8GB (Blush)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-neo-13-inch-with-a18-pro-chip-256gb-8gb-blush",
-   "price": 997,
+   "price": 1049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890864-Product-0-I-639082501205070625.jpg?v=1772653388",
    "inStock": true,
    "brand": "Apple"
@@ -277,7 +277,7 @@
    "sku": "890860",
    "title": "Apple MacBook Neo 13-inch with A18 Pro Chip, 256GB/8GB (Citrus)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-neo-13-inch-with-a18-pro-chip-256gb-8gb-citrus",
-   "price": 997,
+   "price": 1049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890860-Product-0-I-639082501805343204.jpg?v=1772653445",
    "inStock": true,
    "brand": "Apple"
@@ -287,7 +287,7 @@
    "sku": "890862",
    "title": "Apple MacBook Neo 13-inch with A18 Pro Chip, 256GB/8GB (Indigo)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-neo-13-inch-with-a18-pro-chip-256gb-8gb-indigo",
-   "price": 997,
+   "price": 1049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890862-Product-0-I-639082501804970747.jpg?v=1772653444",
    "inStock": true,
    "brand": "Apple"
@@ -297,7 +297,7 @@
    "sku": "890858",
    "title": "Apple MacBook Neo 13-inch with A18 Pro Chip, 256GB/8GB (Silver)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-neo-13-inch-with-a18-pro-chip-256gb-8gb-silver",
-   "price": 997,
+   "price": 1049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890858-Product-0-I-639082502402782322.jpg?v=1772653507",
    "inStock": true,
    "brand": "Apple"
@@ -307,7 +307,7 @@
    "sku": "890865",
    "title": "Apple MacBook Neo 13-inch with A18 Pro Chip, 512GB/8GB (Blush)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-neo-13-inch-with-a18-pro-chip-512gb-8gb-blush",
-   "price": 1197,
+   "price": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890865-Product-0-I-639082503005653090.jpg?v=1772653565",
    "inStock": true,
    "brand": "Apple"
@@ -317,7 +317,7 @@
    "sku": "890861",
    "title": "Apple MacBook Neo 13-inch with A18 Pro Chip, 512GB/8GB (Citrus)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-neo-13-inch-with-a18-pro-chip-512gb-8gb-citrus",
-   "price": 1197,
+   "price": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890861-Product-0-I-639082503005562784.jpg?v=1772653566",
    "inStock": true,
    "brand": "Apple"
@@ -327,7 +327,7 @@
    "sku": "890863",
    "title": "Apple MacBook Neo 13-inch with A18 Pro Chip, 512GB/8GB (Indigo)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-neo-13-inch-with-a18-pro-chip-512gb-8gb-indigo",
-   "price": 1197,
+   "price": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890863-Product-0-I-639082503603198021.jpg?v=1772653625",
    "inStock": false,
    "brand": "Apple"
@@ -337,7 +337,7 @@
    "sku": "890859",
    "title": "Apple MacBook Neo 13-inch with A18 Pro Chip, 512GB/8GB (Silver)",
    "url": "https://www.jbhifi.com.au/products/apple-macbook-neo-13-inch-with-a18-pro-chip-512gb-8gb-silver",
-   "price": 1197,
+   "price": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890859-Product-0-I-639082504202889983.jpg?v=1772653685",
    "inStock": true,
    "brand": "Apple"
@@ -410,6 +410,17 @@
    "price": 3097,
    "wasPrice": 3197,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/413895-Product-0-I-638961650489343232.jpg?v=1790763046",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "315024",
+   "title": "Apple MacBook Pro 14-inch with M5 Chip, 1TB/32GB (Silver)",
+   "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m5-chip-1tb-32gb-silver",
+   "price": 3397,
+   "wasPrice": 3497,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/315024-Product-0-I-639081756605995674.jpg?v=1790763024",
    "inStock": true,
    "brand": "Apple"
   },
@@ -697,17 +708,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "315019",
-   "title": "Apple MacBook Pro 16-inch with M5 Pro Chip, 1TB/48GB (Space Black)",
-   "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-16-inch-with-m5-pro-chip-1tb-48gb-space-black",
-   "price": 5297,
-   "wasPrice": 5699,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/315019-Product-0-I-639081762602930869.jpg?v=1790763024",
-   "inStock": true,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "807413",
    "title": "Asus CX14 14\" Full HD Chromebook (Intel Core 3)[128GB/8GB]",
    "url": "https://www.jbhifi.com.au/products/asus-cx14-14-full-hd-chromebook-intel-core-3128gb-8gb",
@@ -846,17 +846,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "896803",
-   "title": "Asus TUF F16 16\" WUXGA 144Hz Gaming Laptop (Intel Core i7 - 14650HX)[GeForce RTX 5050]",
-   "url": "https://www.jbhifi.com.au/products/asus-tuf-f16-16-wuxga-144hz-gaming-laptop-intel-core-i7-14650hxgeforce-rtx-5050",
-   "price": 1777,
-   "wasPrice": 3499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896803-Product-0-I-639153579003783637.jpg?v=1779761166",
-   "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "900332",
    "title": "Asus TUF F16 16\" WUXGA 144Hz Gaming Laptop (Intel Core i7-14650HX)[GeForce RTX 5060]",
    "url": "https://www.jbhifi.com.au/products/asus-tuf-f16-16-wuxga-144hz-gaming-laptop-intel-core-i7-14650hxgeforce-rtx-5060",
@@ -925,17 +914,6 @@
    "url": "https://www.jbhifi.com.au/products/asus-um3406-zenbook-14-wuxga-touchscreen-laptop-ryzen-ai-51tb-16gb",
    "price": 1739,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807745-Product-0-I-639144085204861348.jpg?v=1778811881",
-   "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "890867",
-   "title": "Asus Vivobook 14 Flip 14\" WUXGA Laptop (Intel Core Ultra 7 - 256V)[1TB/16GB]",
-   "url": "https://www.jbhifi.com.au/products/asus-vivobook-14-flip-14-wuxga-laptop-intel-core-ultra-7-256v1tb-16gb",
-   "price": 1527,
-   "wasPrice": 2499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890867-Product-0-I-639106024219541208.jpg?v=1775016709",
    "inStock": true,
    "brand": "Asus"
   },
@@ -2879,6 +2857,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897168-Product-0-I-639277051804671388.jpg?v=1792108454",
    "inStock": true,
    "brand": "Lenovo - Yoga"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "749928",
+   "title": "Microsoft Surface Laptop (7th Edition) Copilot+ AI PC 15\" Snapdragon X Elite 12 core/16GB/1TB (Platinum)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-laptop-7th-edition-copilot-ai-pc-15-snapdragon-x-elite-12-core-16gb-1tb-platinum",
+   "price": 2999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749928-Product-0-I-638518556429476604.jpg?v=1790763180",
+   "inStock": true,
+   "brand": "Microsoft"
   },
   {
    "retailer": "jbhifi",
