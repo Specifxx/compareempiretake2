@@ -41,16 +41,16 @@ const link = "underline decoration-line underline-offset-2 hover:text-ink";
 
 function ProductGrid({ items, region }: { items: PhoneSummary[]; region: RegionId }) {
   return (
-    <ul className="grid gap-3 md:grid-cols-2">
+    <ul className="grid grid-cols-1 gap-3 md:grid-cols-2">
       {items.map((p) => (
-        <li key={p.href}>
+        <li key={p.href} className="min-w-0">
           <Link prefetch={false} href={p.href} className="card flex items-center gap-4 p-4 transition hover:shadow-lift">
             <div className="img-tile grid h-20 w-20 shrink-0 place-items-center overflow-hidden rounded-lg">
               {p.image && <img src={sized(p.image, 220)} alt={p.name} loading="lazy" className="product-img h-full w-full object-contain p-2" />}
             </div>
             <div className="min-w-0 flex-1">
               <div className="text-xs font-medium text-ink-mute">{p.brand}</div>
-              <h3 className="line-clamp-2 font-display text-base font-bold leading-tight">{p.name}</h3>
+              <h3 className="line-clamp-2 font-display text-base font-bold leading-tight [overflow-wrap:anywhere]">{p.name}</h3>
               <div className="mt-1 text-xs text-ink-mute">{p.subtitle ? `${p.subtitle} · ` : ""}{p.retailerCount} {p.retailerCount === 1 ? "store" : "stores"} · compare →</div>
             </div>
             <div className="shrink-0 text-right"><span className="block text-xs text-ink-mute">from</span><span className="price text-xl">{money(p.bestPrice, region)}</span></div>
@@ -223,7 +223,7 @@ export function Gta6View({ region }: { region: RegionId }) {
           <h2 id="gta6-extras" className={h2}>Controllers, storage, collectibles and subscriptions</h2>
           <span className="text-[11px] uppercase tracking-wide text-ink-mute">Ad · affiliate links</span>
         </div>
-        <ul className="grid gap-3 md:grid-cols-2">
+        <ul className="grid grid-cols-1 gap-3 md:grid-cols-2">
           {GTA6_ACCESSORIES.map((a) => (
             <li key={a.key} className="card flex flex-wrap items-center gap-3 p-4">
               <div className="min-w-0 flex-1"><div className="font-semibold">{a.title}</div><div className="text-xs text-ink-mute">{a.note}</div></div>
