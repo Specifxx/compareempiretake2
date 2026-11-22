@@ -130,3 +130,20 @@ export function gta6WorldOgImage(cheapest: { region: "au" | "us" | "uk"; rows: {
   if (parts.length) q.set("s", parts.join("|"));
   return `/og/gta-6?${q}`;
 }
+
+/**
+ * The console price tracker (2026-11-22): each console's cheapest price a week before launch, on launch day and today,
+ * and its lowest since, read only from our own daily history (`series`: variant -> [date, best price][]). A day we have
+ * no price for is left blank, never filled in. Each region's table is its own stores' history, so no two hubs match.
+ */
+export const GTA6_TRACK_FROM = "2026-11-12";
+export interface Gta6Track { weekBefore?: number; launch?: number; today: number; low: number; lowOn: string }
+export function gta6Track(series: Record<string, [string, number][]>, today: number, todayIso: string, from = GTA6_TRACK_FROM): Gta6Track | undefined {
+  const best = new Map<string, number>();
+  for (const pts of Object.values(series)) for (const [d, p] of pts) if (d >= from && p > 0 && p < (best.get(d) ?? Infinity)) best.set(d, p);
+  best.set(todayIso, Math.min(today, best.get(todayIso) ?? Infinity));
+  const days = [...best.keys()].sort();
+  if (days.length < 2) return undefined;
+  const lowOn = days.reduce((a, d) => (best.get(d)! < best.get(a)! ? d : a));
+  return { weekBefore: best.get(from), launch: best.get(GTA6.releaseDate), today, low: best.get(lowOn)!, lowOn };
+}

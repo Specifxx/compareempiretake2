@@ -1,11 +1,11 @@
 import Link from "next/link";
 import localFont from "next/font/local";
-import { catalogDay, getSummaries, type PhoneSummary } from "@/lib/catalog";
+import { catalogDay, getProduct, getSeries, getSummaries, type PhoneSummary } from "@/lib/catalog";
 import { amazonLink, AMAZON_DISCLOSURE, AMAZON_REL } from "@/lib/amazon";
 import { ebaySearch, SPONSORED_REL } from "@/lib/ebay";
 import {
   GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_FAQ, GTA6_PRICE_SOURCE, PS6_SOURCE,
-  gta6ConsoleRows, gta6Consoles, gta6Monitors, gta6Tvs,
+  GTA6_TRACK_FROM, gta6ConsoleRows, gta6Consoles, gta6Monitors, gta6Track, gta6Tvs,
 } from "@/lib/gta6";
 import { blackFriday, cyberMonday, longDate, seasonYear } from "@/lib/black-friday";
 import { money, REGIONS, withRegion, type RegionId } from "@/lib/region";
@@ -84,6 +84,14 @@ export function Gta6View({ region }: { region: RegionId }) {
   const today = new Date().toISOString().slice(0, 10);
   const bfYear = seasonYear(today);
   const path = withRegion("/gta-6", region);
+  const checkedDay = catalogDay(region);
+  const short = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString(R.locale, { day: "numeric", month: "short", timeZone: "UTC" });
+  const tracked = consoleRows.flatMap(({ model, product }) => {
+    const p = product && getProduct(product.category, product.slug, region);
+    const t = p && gta6Track(getSeries(p), product.bestPrice, checkedDay);
+    return t ? [{ model, product: product!, t }] : [];
+  });
+  const cell = (n?: number) => (n === undefined ? <span className="text-ink-mute">–</span> : money(n, region));
   const ld = [
     { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) },
     {
@@ -148,6 +156,32 @@ export function Gta6View({ region }: { region: RegionId }) {
           </table>
         </div>
       </section>
+
+      {tracked.length > 0 && (
+        <section className="mt-10" aria-labelledby="gta6-tracker">
+          <h2 id="gta6-tracker" className={`mb-1 ${h2}`}>GTA 6 console price tracker: {R.adjective} prices since launch week</h2>
+          <p className="mb-3 text-sm text-ink-mute">
+            The cheapest price at the {R.adjective} stores we check, from our own daily record: a week before launch ({short(GTA6_TRACK_FROM)}), on launch day ({short(GTA6.releaseDate)}) and today ({short(checkedDay)}).
+            A dash means we have no price for that day. Updated every day.
+          </p>
+          <div className="card overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead className="text-left text-xs text-ink-mute"><tr><th className="p-3">Console</th><th className="p-3">{short(GTA6_TRACK_FROM)}</th><th className="p-3">Launch day</th><th className="p-3">Today</th><th className="p-3">Lowest since</th></tr></thead>
+              <tbody>
+                {tracked.map(({ model, product, t }) => (
+                  <tr key={model.key} className="border-t border-line">
+                    <td className="p-3 font-semibold"><Link prefetch={false} href={product.href} className="underline decoration-line underline-offset-2">{model.name}</Link></td>
+                    <td className="p-3 whitespace-nowrap">{cell(t.weekBefore)}</td>
+                    <td className="p-3 whitespace-nowrap">{cell(t.launch)}</td>
+                    <td className="p-3 whitespace-nowrap font-semibold">{money(t.today, region)}</td>
+                    <td className="p-3 whitespace-nowrap">{t.low < t.today ? <>{money(t.low, region)} <span className="text-xs text-ink-mute">({short(t.lowOn)})</span></> : <span className="text-ink-mute">Today&rsquo;s price</span>}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
 
       <section className="mt-10" aria-labelledby="gta6-consoles">
         <h2 id="gta6-consoles" className={`mb-3 ${h2}`}>PS5 and Xbox consoles at {R.adjective} stores</h2>

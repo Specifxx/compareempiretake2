@@ -2,7 +2,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_FAQ, GTA6_REGIONS, gta6ConsoleRows, gta6Consoles, gta6Tvs } from "../src/lib/gta6";
+import { GTA6, GTA6_ACCESSORIES, GTA6_EDITIONS, GTA6_FAQ, GTA6_REGIONS, gta6ConsoleRows, gta6Consoles, gta6Track, gta6Tvs } from "../src/lib/gta6";
 import type { PhoneSummary } from "../src/lib/catalog";
 
 const c = (name: string, bestPrice: number, retailerCount: number, extra: Partial<PhoneSummary> = {}): PhoneSummary =>
@@ -94,4 +94,11 @@ test("the /gta-6 preview names no single country: each region's cheapest console
   const q = new URL(url, "https://x").searchParams;
   assert.equal(q.get("w"), "1");
   assert.equal(q.get("s"), "us~Xbox Series S~499.99");
+});
+
+test("the price tracker reads only our own history: blank where we have no day, lowest since the week before launch", () => {
+  const t = gta6Track({ a: [["2026-11-10", 300], ["2026-11-12", 499], ["2026-11-19", 479], ["2026-11-20", 449]], b: [["2026-11-12", 520]] }, 469, "2026-11-22")!;
+  assert.deepEqual(t, { weekBefore: 499, launch: 479, today: 469, low: 449, lowOn: "2026-11-20" });
+  assert.equal(gta6Track({}, 400, "2026-11-22"), undefined);
+  assert.equal(gta6Track({ a: [["2026-11-13", 500]] }, 400, "2026-11-22")!.weekBefore, undefined);
 });
