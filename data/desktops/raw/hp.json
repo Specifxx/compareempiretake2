@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-20T01:23:47.087Z",
+ "scrapedAt": "2026-11-21T23:58:47.510Z",
  "offers": [
   {
    "retailer": "hp",
@@ -146,6 +146,17 @@
   },
   {
    "retailer": "hp",
+   "sku": "A41KBPT",
+   "mpn": "A41KBPT",
+   "brand": "HP",
+   "title": "HP Elite Small Form Factor 800 G9 Desktop PC",
+   "url": "https://www.hp.com/au-en/shop/hp-elite-sff-800-g9-desktop-pc-a41kbpt.html",
+   "price": 2279,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/A/4/A41KBPT-1_T1722926518.png",
+   "inStock": true
+  },
+  {
+   "retailer": "hp",
    "sku": "B42BRPT",
    "mpn": "B42BRPT",
    "brand": "HP",
@@ -154,17 +165,6 @@
    "price": 3819,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/4/B42BRPT-1_T1728268358.png",
    "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "A41KBPT",
-   "mpn": "A41KBPT",
-   "brand": "HP",
-   "title": "HP Elite Small Form Factor 800 G9 Desktop PC",
-   "url": "https://www.hp.com/au-en/shop/hp-elite-sff-800-g9-desktop-pc-a41kbpt.html",
-   "price": 2279,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/A/4/A41KBPT-1_T1722926518.png",
-   "inStock": false
   },
   {
    "retailer": "hp",
@@ -348,7 +348,7 @@
    "mpn": "C0WU0PT",
    "brand": "HP",
    "title": "HP EliteStudio 8 All-in-One G1i 23.8 inch Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-23-8-inch-desktop-ai-pc-c0wu0pt.html",
+   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-23-8-inch-desktop-ai-pc-c0wu0pt-4.html",
    "price": 3102,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/C/0/C0WU0PT-1_T1764205288.png",
    "inStock": false
@@ -472,7 +472,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-omnistudio-x-all-in-one-32-c0000a-desktop-pc-b0pn0pa.html",
    "price": 2999,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/0/B0PN0PA-1_T1738025818.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",

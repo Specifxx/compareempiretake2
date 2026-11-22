@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T01:14:57.504Z",
+ "scrapedAt": "2026-11-22T00:14:42.035Z",
  "offers": [
   {
    "retailer": "us-lookingglassphoto",
@@ -472,7 +472,8 @@
    "sku": "16963137",
    "title": "Fujifilm Instax Mini 13 Clay White",
    "url": "https://lookingglassphoto.com/products/fujifilm-instax-mini-13-clay-white",
-   "price": 89.95,
+   "price": 79.95,
+   "wasPrice": 89.95,
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/FUJIFILMINSTAXMINI13InstantFilmCamera_ClayWhite_1.jpg?v=1785993798",
    "inStock": true,
    "brand": "Fujifilm"
@@ -482,7 +483,8 @@
    "sku": "16963149",
    "title": "Fujifilm Instax Mini 13 Dreamy Purple",
    "url": "https://lookingglassphoto.com/products/fujifilm-instax-mini-13-dreamy-purple",
-   "price": 89.95,
+   "price": 79.95,
+   "wasPrice": 89.95,
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/FUJIFILMINSTAXMINI13InstantFilmCamera_DreamyPurple_1.jpg?v=1785994107",
    "inStock": true,
    "brand": "Fujifilm"
@@ -492,7 +494,8 @@
    "sku": "16963125",
    "title": "Fujifilm Instax Mini 13 Lagoon Green",
    "url": "https://lookingglassphoto.com/products/fujifilm-instax-mini-13-lagoon-green",
-   "price": 89.95,
+   "price": 79.95,
+   "wasPrice": 89.95,
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/FUJIFILMINSTAXMINI13InstantFilmCamera_LagoonGreen_1.jpg?v=1785994767",
    "inStock": true,
    "brand": "Fujifilm"
@@ -502,7 +505,8 @@
    "sku": "16823507",
    "title": "Fujifilm Instax Mini 99 Black",
    "url": "https://lookingglassphoto.com/products/fujifilm-instax-mini-99-black",
-   "price": 234.95,
+   "price": 179.95,
+   "wasPrice": 234.95,
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/FUJIFILMINSTAXMINI99InstantFilmCamera1.jpg?v=1758754451",
    "inStock": true,
    "brand": "Fujifilm"
@@ -512,8 +516,8 @@
    "sku": "5922",
    "title": "Fujifilm INSTAX MINI EVO Hybrid Instant Camera (Black)",
    "url": "https://lookingglassphoto.com/products/fuji-instax-mini-evo-black",
-   "price": 234.95,
-   "wasPrice": 234.99,
+   "price": 199.95,
+   "wasPrice": 234.95,
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/MiniEVOHybridInstantCamera_Black_1.jpg?v=1754693199",
    "inStock": false,
    "brand": "Fujifilm"
@@ -523,7 +527,8 @@
    "sku": "69362",
    "title": "Fujifilm Instax Mini EVO Hybrid Instant Camera (Brown)",
    "url": "https://lookingglassphoto.com/products/fuji-instax-mini-evo-brown",
-   "price": 239.95,
+   "price": 204.95,
+   "wasPrice": 239.95,
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/MiniEVOHybridInstantCamera_Brown_2.jpg?v=1754693245",
    "inStock": true,
    "brand": "Fujifilm"
@@ -714,7 +719,8 @@
    "sku": "16956043",
    "title": "Instax Mini Evo Cinema Hybrid Instant Camera",
    "url": "https://lookingglassphoto.com/products/instax-mini-evo-cinema-hybrid-instant-camera",
-   "price": 409.95,
+   "price": 389.95,
+   "wasPrice": 409.95,
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/FUJIFILMinstaxminiEvoCinemaHybridInstantCamera1.jpg?v=1776467089",
    "inStock": true,
    "brand": "Fujifilm"
@@ -1413,6 +1419,17 @@
   },
   {
    "retailer": "us-lookingglassphoto",
+   "sku": "8602",
+   "title": "WANDRD Essential+ Camera Cube (8.7L)",
+   "url": "https://lookingglassphoto.com/products/wandrd-camera-cube-essential-fits-prvke-31-and-hexad-45l",
+   "price": 60.19,
+   "wasPrice": 74.99,
+   "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/bvtww3zds1rdhqlop7vs.jpg?v=1780962681",
+   "inStock": false,
+   "brand": "WANDRD"
+  },
+  {
+   "retailer": "us-lookingglassphoto",
    "sku": "6485",
    "title": "WANDRD Pro + Camera Cube (for PRVKE 31L)",
    "url": "https://lookingglassphoto.com/products/wandrd-pro-camera-cube-for-prvke-31l",
@@ -1421,6 +1438,30 @@
    "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/6485-2.jpg?v=1716578768",
    "inStock": false,
    "brand": "WANDRD"
+  },
+  {
+   "retailer": "us-lookingglassphoto",
+   "sku": "CCP-BK-2",
+   "title": "WANDRD PRVKE Camera Cube Pro (10.5)",
+   "url": "https://lookingglassphoto.com/products/wandrd-new-camera-cube-pro-21-liter-prvke",
+   "price": 88.19,
+   "wasPrice": 109.99,
+   "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/WANDRDPRVKECameraCubePro_10.5_1.jpg?v=1795241012",
+   "inStock": true,
+   "brand": "WANDRD",
+   "mpn": "CCP-BK-2"
+  },
+  {
+   "retailer": "us-lookingglassphoto",
+   "sku": "CCPP-BK-2",
+   "title": "WANDRD PRVKE Camera Cube Pro+ (12.5L)",
+   "url": "https://lookingglassphoto.com/products/wandrd-new-camera-cube-pro-31-liter-prvke",
+   "price": 96.19,
+   "wasPrice": 119.99,
+   "image": "https://cdn.shopify.com/s/files/1/0854/6218/8352/files/WANDRDPRVKECameraCubePro_12.5L_1.jpg?v=1795240748",
+   "inStock": true,
+   "brand": "WANDRD",
+   "mpn": "CCPP-BK-2"
   }
  ]
 }

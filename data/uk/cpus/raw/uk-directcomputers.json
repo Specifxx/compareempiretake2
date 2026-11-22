@@ -1,12 +1,24 @@
 {
- "scrapedAt": "2026-11-21T01:26:49.008Z",
+ "scrapedAt": "2026-11-22T00:25:59.510Z",
  "offers": [
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "YD3200C5M4MFH",
+   "title": "AMD RYZEN 3 3200G AM4 TRAY",
+   "url": "https://directcomputers.co.uk/products/amd-ryzen-3-3200g-am4-tray",
+   "price": 52.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/Coming-Soon_d6a307a5-a061-4252-af15-977aa40d697e.jpg?v=1795266103",
+   "inStock": true,
+   "brand": "AMD BOXED",
+   "mpn": "YD3200C5M4MFH"
+  },
   {
    "retailer": "uk-directcomputers",
    "sku": "100-100000644BOX",
    "title": "AMD Ryzen 5 4500 processor 3.6 GHz 8 MB L3 Box",
    "url": "https://directcomputers.co.uk/products/pramd-4500",
-   "price": 84.99,
+   "price": 82.99,
+   "wasPrice": 84.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/76196761d7371b1e9e4d02c694a7957d_9e50931a-63fb-4eda-835b-619eecfba99b.jpg?v=1795223707",
    "inStock": true,
    "mpn": "100-100000644BOX"
@@ -59,7 +71,8 @@
    "sku": "100-100001585BOX",
    "title": "AMD Ryzen 5 5600XT processor 3.7 GHz 32 MB L3 Box",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-5-5600xt-am4-retail",
-   "price": 150.99,
+   "price": 144.99,
+   "wasPrice": 150.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/85eaac94fdc12a07f88fa5e08b70bd47.jpg?v=1782301883",
    "inStock": true,
    "brand": "AMD RETAIL",
@@ -111,7 +124,7 @@
    "title": "AMD Ryzen 5 9600X processor 3.9 GHz 38 MB L2 & L3 Box",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-5-9600x-with-radeon-graphics-6-core-am5-processor-12-threads-3-9ghz-up-to-5-4ghz-turbo-32mb-cache-65w-no-fan",
    "price": 283.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/AMD-RY5-9600X.jpg?v=1758991797",
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/e284fc8de12a0262b45a43022a42c7d2.jpg?v=1795224317",
    "inStock": true,
    "mpn": "100-100001405WOF"
   },
@@ -183,7 +196,8 @@
    "sku": "100-000001973",
    "title": "AMD Ryzen 7 9850X3D processor 4.7 GHz 96 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-7-9850x3d-am5-tray",
-   "price": 461.99,
+   "price": 445.99,
+   "wasPrice": 461.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/85a66712e36f9364be9042d4d93d21ad_c11fd11e-d250-49eb-a6e7-aa5e1fd52a05.jpg?v=1782346280",
    "inStock": true,
    "brand": "AMD BOXED"
@@ -193,7 +207,8 @@
    "sku": "100-000000589",
    "title": "AMD Ryzen 9 7900X processor 4.7 GHz 64 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-9-7900x-am5-tray",
-   "price": 340.99,
+   "price": 330.99,
+   "wasPrice": 340.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/4cc666432e5cd0aea92afaa7716cc7d9_f1e83cd9-d76f-4b1c-8268-65901e9d5529.jpg?v=1782336500",
    "inStock": true,
    "brand": "AMD BOXED"
@@ -203,8 +218,9 @@
    "sku": "100-100000662WOF",
    "title": "AMD Ryzen 9 9900X processor 4.4 GHz 76 MB L2 & L3 Box",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-9-9900x-with-radeon-graphics-12-core-am5-processor-24-threads-4-4ghz-up-to-5-6ghz-turbo-64mb-cache-120w-no-fan",
-   "price": 357.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/AMD-RY9-9900X_684e3c0e-fd65-4dce-bbe4-d0f21e0f17c8.jpg?v=1757177328",
+   "price": 338.99,
+   "wasPrice": 357.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a2bc32b869b3077fd309f8f68a2e088a.jpg?v=1795224320",
    "inStock": true,
    "mpn": "100-100000662WOF"
   },
@@ -224,7 +240,7 @@
    "title": "AMD Ryzen 9 9950X processor 4.3 GHz 80 MB L2 & L3 Box",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-9-9950x-with-radeon-graphics-16-core-am5-processor-32-threads-4-3ghz-up-to-5-7ghz-turbo-64mb-cache-170w-no-fan",
    "price": 513.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/AMD-RY9-9950X_38af3f48-5de4-4616-9e3b-db69377c996b.jpg?v=1757782200",
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a2bc32b869b3077fd309f8f68a2e088a_0de8ab7f-35b9-44dc-b70b-caa679b652ab.jpg?v=1795224324",
    "inStock": true,
    "mpn": "100-100001277WOF"
   },
@@ -325,6 +341,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/78b498fd7417e92693b8c9bf76dcf4b5.jpg?v=1782335566",
    "inStock": true,
    "brand": "AMD BOXED"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "P67092-B21",
+   "title": "INT XEON-S 4514Y CPU FOR HPE",
+   "url": "https://directcomputers.co.uk/products/int-xeon-s-4514y-cpu-for-hpe",
+   "price": 1197.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/Coming-Soon_a3d03805-2c76-47d5-95c9-1c39f9c07aa3.jpg?v=1795271663",
+   "inStock": true,
+   "brand": "HEWLETT PACKARD ENTERPRISE",
+   "mpn": "P67092-B21"
   },
   {
    "retailer": "uk-directcomputers",

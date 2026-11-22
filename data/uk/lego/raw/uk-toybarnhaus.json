@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T01:36:56.461Z",
+ "scrapedAt": "2026-11-22T00:36:03.084Z",
  "offers": [
   {
    "retailer": "uk-toybarnhaus",
@@ -243,7 +243,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-creator-fun-halloween-skeleton-30717",
    "price": 3.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/30717.jpg?v=1790938245",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "30717"
   },
@@ -461,7 +461,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-disney-winnie-the-pooh-43300",
    "price": 139.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43300_boxprod_v29_sha.png?v=1770048152",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "43300"
   },
@@ -876,7 +876,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-icons-golden-retriever-puppy-11384",
    "price": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/11384_boxprod_v29_sha.png?v=1771243434",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "11384"
   },
@@ -1031,7 +1031,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-marvel-epic-battle-spider-man-vs-sandman-76334",
    "price": 19.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76334_boxprod_v29_sha.png?v=1765539194",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "76334"
   },
@@ -1688,7 +1688,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-speed-champions-ken-blocks-65-ford-mustang-hoonicorn-v1-77262",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77262_boxprod_v29_sha.png?v=1778327340",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77262"
   },
@@ -1878,7 +1878,7 @@
    "price": 35.99,
    "wasPrice": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75439_boxprod_v29.png?v=1779115626",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75439"
   },
@@ -1970,6 +1970,18 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "75413"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "LEG75427",
+   "title": "LEGO Star Wars: SMART Play: Throne Room Duel & A-Wing (75427)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-star-wars-smart-play™-throne-room-duel-a-wing™-75427",
+   "price": 84.99,
+   "wasPrice": 139.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75427_3.png?v=1770560248",
+   "inStock": false,
+   "brand": "LEGO",
+   "mpn": "75427"
   },
   {
    "retailer": "uk-toybarnhaus",
@@ -2218,7 +2230,7 @@
    "price": 94.99,
    "wasPrice": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77093_boxprod_v29_sha.png?v=1768752230",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77093"
   },

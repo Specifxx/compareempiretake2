@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T01:36:20.432Z",
+ "scrapedAt": "2026-11-22T00:35:29.207Z",
  "offers": [
   {
    "retailer": "uk-stuartwestmoreland",
@@ -8,7 +8,7 @@
    "url": "https://www.stuartwestmoreland.co.uk/products/bosch-proaqua-cordless-vacuum-cleaner-bcs71hyggb",
    "price": 499.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/8e71b34b-BCS71HYGGB-1.jpg?v=1755271058",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bosch",
    "mpn": "BCS71HYGGB"
   },
@@ -170,7 +170,7 @@
    "sku": "CARBOAT",
    "title": "Dyson Car and Boat Handheld Vacuum Cleaner",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-car-and-boat-handheld-vacuum-cleaner",
-   "price": 199.99,
+   "price": 199,
    "wasPrice": 249.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/3df9f13f-CARBOAT-1.jpg?v=1755271083",
    "inStock": true,
@@ -261,7 +261,7 @@
    "sku": "V15DETABSOLUTE",
    "title": "Dyson V15 Detect Absolute Cordless Vacuum Cleaner - Yellow and Nickel",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v15-detect-absolute-cordless-vacuum-yellow-nickel-v15detabsolute",
-   "price": 472.99,
+   "price": 469.99,
    "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V15DETABSOLUTE-1_8634c4af-8525-457f-bf82-6e09f2938e0e.jpg?v=1793118865",
    "inStock": true,
@@ -319,7 +319,8 @@
    "sku": "V8CYCLONENEW",
    "title": "Dyson V8 Cyclone New Cordless Vacuum Cleaner – Black/Green",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v8-cyclone-new-cordless-vacuum-black-green-v8cyclonenew",
-   "price": 209.99,
+   "price": 199,
+   "wasPrice": 209,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V8CYCLONENEW-1.jpg?v=1779372984",
    "inStock": true,
    "brand": "Dyson",

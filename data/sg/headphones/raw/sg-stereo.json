@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T01:40:44.309Z",
+ "scrapedAt": "2026-11-22T00:39:37.835Z",
  "offers": [
   {
    "retailer": "sg-stereo",
@@ -713,7 +713,7 @@
    "price": 459,
    "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/QCUHIILE26-DesertGold_SF_PDP_E-Comm-Gallery_1_1632x1224_8d4de12a-a85f-4912-8cd9-cae1ef270c7e.avif?v=1761034217",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -724,7 +724,7 @@
    "price": 459,
    "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/QCUHIILE26-DriftwoodSand_E-Comm_Gallery_1_1632x1224_adb5bf17-e7fd-4bd4-b6c6-5a538476f126.avif?v=1767241772",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -874,7 +874,7 @@
    "price": 289,
    "wasPrice": 389,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/bw_pi8pdp_buy-stack_795104-4-min_1_1.png?v=1734063988",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bowers & Wilkins",
    "mpn": "714346345793-Storm Grey"
   },
@@ -1197,26 +1197,6 @@
   },
   {
    "retailer": "sg-stereo",
-   "sku": "40727215833123",
-   "title": "Dali IO-8 Noise Cancelling Audiophile Wireless Headphones Black",
-   "url": "https://www.stereo.com.sg/products/dali-io-8-noise-cancelling-audiophile-wireless-headphones?variant=40727215833123",
-   "price": 999,
-   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/DALI-IO-8_Iron-Black_01.webp?v=1739178395",
-   "inStock": true,
-   "brand": "Dali"
-  },
-  {
-   "retailer": "sg-stereo",
-   "sku": "40727215865891",
-   "title": "Dali IO-8 Noise Cancelling Audiophile Wireless Headphones White",
-   "url": "https://www.stereo.com.sg/products/dali-io-8-noise-cancelling-audiophile-wireless-headphones?variant=40727215865891",
-   "price": 999,
-   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/DALI-IO-8_Caramel_White_01.webp?v=1739178459",
-   "inStock": false,
-   "brand": "Dali"
-  },
-  {
-   "retailer": "sg-stereo",
    "sku": "43257117343779",
    "title": "Dan Clark Audio DCA Aeon Core Closed-Back Planar Magnetic Headphone",
    "url": "https://www.stereo.com.sg/products/dan-clark-audio-dca-aeon-core-closed-back-planar-magnetic-headphone",
@@ -1408,6 +1388,26 @@
   },
   {
    "retailer": "sg-stereo",
+   "sku": "44249607372835",
+   "title": "Edifier Evobuds Pro Noise Cancelling Earphones Black",
+   "url": "https://www.stereo.com.sg/products/edifier-evobuds-pro-noise-cancelling-earphones?variant=44249607372835",
+   "price": 129,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/5f72a629a161f307b7793425a532bdf1.webp?v=1795235984",
+   "inStock": true,
+   "brand": "Edifier"
+  },
+  {
+   "retailer": "sg-stereo",
+   "sku": "44249607340067",
+   "title": "Edifier Evobuds Pro Noise Cancelling Earphones Silver",
+   "url": "https://www.stereo.com.sg/products/edifier-evobuds-pro-noise-cancelling-earphones?variant=44249607340067",
+   "price": 129,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/8aa344619b0a0915a4a4517fcd8f4a30.webp?v=1795235984",
+   "inStock": true,
+   "brand": "Edifier"
+  },
+  {
+   "retailer": "sg-stereo",
    "sku": "40687791767587",
    "title": "Edifier W800BT Pro Wireless Noise Cancelling Headphone Black",
    "url": "https://www.stereo.com.sg/products/edifier-w800bt-pro-wireless-noise-cancelling-headphone?variant=40687791767587",
@@ -1447,6 +1447,46 @@
    "price": 59,
    "wasPrice": 99,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/4862dd949b36b3db8f8f58b12c124bea.png?v=1735811994",
+   "inStock": true,
+   "brand": "Edifier"
+  },
+  {
+   "retailer": "sg-stereo",
+   "sku": "44248891719715",
+   "title": "Edifier WH880NB Noise Cancelling Wireless Headphone Black",
+   "url": "https://www.stereo.com.sg/products/edifier-wh880nb-noise-cancelling-wireless-headphone?variant=44248891719715",
+   "price": 129,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/a01219c12baac865f2acacc50f60ad49.webp?v=1795235597",
+   "inStock": true,
+   "brand": "Edifier"
+  },
+  {
+   "retailer": "sg-stereo",
+   "sku": "44248891686947",
+   "title": "Edifier WH880NB Noise Cancelling Wireless Headphone Burgundy",
+   "url": "https://www.stereo.com.sg/products/edifier-wh880nb-noise-cancelling-wireless-headphone?variant=44248891686947",
+   "price": 129,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/99335a221d0a576e38dba1a980a33e40.webp?v=1795235597",
+   "inStock": true,
+   "brand": "Edifier"
+  },
+  {
+   "retailer": "sg-stereo",
+   "sku": "44248891785251",
+   "title": "Edifier WH880NB Noise Cancelling Wireless Headphone ivory",
+   "url": "https://www.stereo.com.sg/products/edifier-wh880nb-noise-cancelling-wireless-headphone?variant=44248891785251",
+   "price": 129,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/a0120aa96601d1d6d414d6564bd90a07.webp?v=1795235597",
+   "inStock": true,
+   "brand": "Edifier"
+  },
+  {
+   "retailer": "sg-stereo",
+   "sku": "44248891752483",
+   "title": "Edifier WH880NB Noise Cancelling Wireless Headphone Navy",
+   "url": "https://www.stereo.com.sg/products/edifier-wh880nb-noise-cancelling-wireless-headphone?variant=44248891752483",
+   "price": 129,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/c649f9165ce1357f5717538d6214d59c.webp?v=1795235597",
    "inStock": true,
    "brand": "Edifier"
   },
@@ -2870,6 +2910,16 @@
   },
   {
    "retailer": "sg-stereo",
+   "sku": "44248821923875",
+   "title": "Noble Audio Astrid Tribrid Wireless Earphones",
+   "url": "https://www.stereo.com.sg/products/noble-audio-astrid-tribrid-wireless-earphones",
+   "price": 799,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/NobleAudioAstrid-1_2048x_jpg.webp?v=1795233399",
+   "inStock": true,
+   "brand": "Noble Audio"
+  },
+  {
+   "retailer": "sg-stereo",
    "sku": "43954014748707",
    "title": "Noble Audio FoKus Artemis Hybrid Wireless 3 drivers Headphone",
    "url": "https://www.stereo.com.sg/products/noble-audio-fokus-artemis-hybrid-wireless-3-drivers-headphone",
@@ -3599,6 +3649,36 @@
    "price": 329.9,
    "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/Aviator900ANC_Black_1_png.webp?v=1770710337",
+   "inStock": true,
+   "brand": "Skullcandy"
+  },
+  {
+   "retailer": "sg-stereo",
+   "sku": "44248868880419",
+   "title": "Skullcandy Crusher 1080 ANC Wireless Headphone Cement",
+   "url": "https://www.stereo.com.sg/products/skullcandy-crusher-1080-anc-wireless-headphone?variant=44248868880419",
+   "price": 399,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/26B_Crusher_1080_ANC_Cement_S6CNW-U993_Web_Buy_Boxes_1_png.webp?v=1795234992",
+   "inStock": true,
+   "brand": "Skullcandy"
+  },
+  {
+   "retailer": "sg-stereo",
+   "sku": "44248868945955",
+   "title": "Skullcandy Crusher 1080 ANC Wireless Headphone Primer",
+   "url": "https://www.stereo.com.sg/products/skullcandy-crusher-1080-anc-wireless-headphone?variant=44248868945955",
+   "price": 399,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/26B_Crusher_1080_ANC_Primer_S6CNW-U987_Web_Buy_Boxes_1_png.webp?v=1795234992",
+   "inStock": true,
+   "brand": "Skullcandy"
+  },
+  {
+   "retailer": "sg-stereo",
+   "sku": "44248868913187",
+   "title": "Skullcandy Crusher 1080 ANC Wireless Headphone True Black",
+   "url": "https://www.stereo.com.sg/products/skullcandy-crusher-1080-anc-wireless-headphone?variant=44248868913187",
+   "price": 399,
+   "image": "https://cdn.shopify.com/s/files/1/0703/4830/8515/files/26B_Crusher_1080_ANC_True_Black_S6CNW-U740_Web_Buy_Boxes_1_0a0a7f82-516b-43f3-9b0b-69b228c1f3fc_png.webp?v=1795234992",
    "inStock": true,
    "brand": "Skullcandy"
   },

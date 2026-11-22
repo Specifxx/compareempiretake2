@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T01:14:56.652Z",
+ "scrapedAt": "2026-11-22T00:14:43.482Z",
  "offers": [
   {
    "retailer": "us-lg",
@@ -245,6 +245,17 @@
   },
   {
    "retailer": "us-lg",
+   "sku": "27US500-W",
+   "mpn": "27US500-W",
+   "brand": "LG",
+   "title": "27 Inch UltraFine™ 4K UHD HDR10 IPS Monitor",
+   "url": "https://www.lg.com/us/monitors/lg-27us500-w-4k-uhd-monitor",
+   "price": 179.99,
+   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/a492d3f2-0bf8-4050-900c-ed5c96568310/Monitor_27US500-W_gallery_01_5000x5000",
+   "inStock": true
+  },
+  {
+   "retailer": "us-lg",
    "sku": "27US550-W",
    "mpn": "27US550-W",
    "brand": "LG",
@@ -253,17 +264,6 @@
    "price": 229.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/e7168b6b-f95e-4dc7-9385-29e753f556a8/Monitor-27US550-W-gallery-01_5000x5000",
    "inStock": true
-  },
-  {
-   "retailer": "us-lg",
-   "sku": "27US500-W",
-   "mpn": "27US500-W",
-   "brand": "LG",
-   "title": "27 Inch UltraFine™ 4K UHD HDR10 IPS Monitor",
-   "url": "https://www.lg.com/us/monitors/lg-27us500-w-4k-uhd-monitor",
-   "price": 179.99,
-   "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/a492d3f2-0bf8-4050-900c-ed5c96568310/Monitor_27US500-W_gallery_01_5000x5000",
-   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -395,7 +395,7 @@
    "url": "https://www.lg.com/us/monitors/lg-27gx704a-b-gaming-monitor",
    "price": 349.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/c04d033e-7d76-46c6-9c7c-a60dde713186/Monitor-27GX704A-B-OLED-Gallery_3000x3000",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-lg",
@@ -483,7 +483,7 @@
    "url": "https://www.lg.com/us/monitors/lg-27gx700a-b-gaming-monitor",
    "price": 399.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/ca9a5e3e-813a-46c8-8a48-e508d48bb1c7/Monitor-27GX700A-B-OLED-Gallery_3000x3000",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-lg",
@@ -604,7 +604,7 @@
    "url": "https://www.lg.com/us/monitors/lg-32u701sb-b-smart-monitor",
    "price": 269.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/bdd56778-e375-41b7-8c53-86c09afef6aa/Monitor-32U701SB-B-gallery-01_5000x5000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
@@ -780,7 +780,7 @@
    "url": "https://www.lg.com/us/monitors/lg-32g60wa-b-gaming-monitor",
    "price": 179.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/5b273d7e-1623-4c56-8c5a-ae682af0b2d7/Monitor-32G60WA-B-LG-Ultragear-gallery_01_5000x5000",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-lg",
@@ -989,7 +989,7 @@
    "url": "https://www.lg.com/us/monitors/lg-34wr55qk-b-ultrawide-monitor",
    "price": 259.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/61998024-b390-4a3d-8034-dd5699967143/Monitors_34WR55QK-B_gallery_01_5000x5000",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-lg",
@@ -1099,7 +1099,7 @@
    "url": "https://www.lg.com/us/monitors/lg-39gx90sa-w-gaming-monitor",
    "price": 899.99,
    "image": "https://media.us.lg.com/transform/ecomm-PDPGalleryThumbnail-350x350/13c33702-de0e-4b1a-8294-5a9bd00fbf4b/Monitor-39GX90SA-W-OLED-Gallery_3000x3000",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-lg",
