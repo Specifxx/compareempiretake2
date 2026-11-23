@@ -4,23 +4,23 @@ Every Monday: a 20-second vertical video (1080×1920, with original music) of th
 RiftCompare, OP Compare and MTG Compare. Free to post on TikTok, Reels and Shorts, with or without your own voice-over. All we ask
 is that the site stays named in the video (it is on the last screen) or in your caption.
 
-Updated 16 Nov 2026.
+Updated 23 Nov 2026.
 
 ### DexCompare: Pokémon TCG
 
-9 Nov → 16 Nov 2026. [Download the video](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/dex/movers.mp4) · [cover](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/dex/cover.png) · [caption](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/dex/caption.txt) · [product links](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/dex/links.txt)
+16 Nov → 23 Nov 2026. [Download the video](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/dex/movers.mp4) · [cover](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/dex/cover.png) · [caption](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/dex/caption.txt) · [product links](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/dex/links.txt)
 
 ### MTG Compare: Magic: The Gathering
 
-9 Nov → 16 Nov 2026. [Download the video](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/mtg/movers.mp4) · [cover](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/mtg/cover.png) · [caption](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/mtg/caption.txt) · [product links](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/mtg/links.txt)
+16 Nov → 23 Nov 2026. [Download the video](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/mtg/movers.mp4) · [cover](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/mtg/cover.png) · [caption](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/mtg/caption.txt) · [product links](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/mtg/links.txt)
 
 ### RiftCompare: Riftbound
 
-9 Nov → 16 Nov 2026. [Download the video](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/rift/movers.mp4) · [cover](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/rift/cover.png) · [caption](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/rift/caption.txt) · [product links](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/rift/links.txt)
+16 Nov → 23 Nov 2026. [Download the video](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/rift/movers.mp4) · [cover](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/rift/cover.png) · [caption](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/rift/caption.txt) · [product links](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/rift/links.txt)
 
 ### OP Compare: One Piece Card Game
 
-8 Nov → 15 Nov 2026. [Download the video](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/op/movers.mp4) · [cover](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/op/cover.png) · [caption](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/op/caption.txt) · [product links](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-16/op/links.txt)
+16 Nov → 23 Nov 2026. [Download the video](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/op/movers.mp4) · [cover](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/op/cover.png) · [caption](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/op/caption.txt) · [product links](https://raw.githubusercontent.com/Specifxx/compareempiretake2/reels/movers/2026-11-23/op/links.txt)
 
 ## The numbers
 

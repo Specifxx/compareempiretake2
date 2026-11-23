@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "mtg",
+ "siteName": "MTG Compare",
+ "topic": "Magic: The Gathering",
+ "host": "mtgcompare.app",
+ "accent": "#e8743b",
+ "page": "mtgcompare.app/us",
+ "from": "2026-11-16",
+ "to": "2026-11-23",
+ "range": "16 Nov → 23 Nov",
+ "basis": "Cheapest in-stock US store price",
+ "cardsArt": false,
+ "up": [
+  {
+   "name": "Avatar: The Last Airbender Bundle",
+   "sub": "Bundle",
+   "before": 2500,
+   "after": 4999,
+   "pct": 100,
+   "stores": 19,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/648684_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/avatar-the-last-airbender-bundle",
+   "imgFile": "img/u0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "FINAL FANTASY Commander Deck - FINAL FANTASY VII Limit Break (Game Edition)",
+   "sub": "Commander Deck",
+   "before": 4878,
+   "after": 7999,
+   "pct": 64,
+   "stores": 10,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/656732_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/final-fantasy-commander-deck-final-fantasy-vii-limit-break-game-edition",
+   "imgFile": "img/u1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Edge of Eternities Commander Deck - World Shaper",
+   "sub": "Commander Deck",
+   "before": 2699,
+   "after": 4428,
+   "pct": 64,
+   "stores": 33,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/619676_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/edge-of-eternities-commander-deck-world-shaper",
+   "imgFile": "img/u2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "down": [
+  {
+   "name": "Murders at Karlov Manor Bundle",
+   "sub": "Bundle",
+   "before": 5999,
+   "after": 4499,
+   "pct": -25,
+   "stores": 4,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/529971_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/murders-at-karlov-manor-bundle",
+   "imgFile": "img/d0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "The Lord of the Rings: Tales of Middle-earth Commander Deck - Riders of Rohan",
+   "sub": "Commander Deck",
+   "before": 7205,
+   "after": 5499,
+   "pct": -24,
+   "stores": 13,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/488296_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/the-lord-of-the-rings-tales-of-middle-earth-commander-deck-riders-of-rohan",
+   "imgFile": "img/d1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "The Hobbit Scene Box - Treasures of Smaug",
+   "sub": "Scene Box",
+   "before": 3889,
+   "after": 3107,
+   "pct": -20,
+   "stores": 23,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/692969_in_1000x1000.jpg",
+   "link": "https://mtgcompare.app/us/p/the-hobbit-scene-box-treasures-of-smaug",
+   "imgFile": "img/d2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "fine": "Cheapest in-stock US store price, 16 Nov vs 23 Nov 2026. Prices change. Unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards."
+}

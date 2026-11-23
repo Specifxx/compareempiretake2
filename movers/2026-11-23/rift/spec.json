@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "rift",
+ "siteName": "RiftCompare",
+ "topic": "Riftbound",
+ "host": "riftcompare.com",
+ "accent": "#e0a23a",
+ "page": "riftcompare.com/movers",
+ "from": "2026-11-16",
+ "to": "2026-11-23",
+ "range": "16 Nov → 23 Nov",
+ "basis": "Cheapest in-stock store listing, in US$",
+ "cardsArt": true,
+ "up": [
+  {
+   "name": "Showstopper",
+   "sub": "Origins · 270/298",
+   "before": 930,
+   "after": 1725,
+   "pct": 85,
+   "image": "https://cdn.riftscribe.gg/cards/thumbnails/large/ogn-270-298-eefd4e651aa53b6f.webp",
+   "link": "https://riftcompare.com/card/showstopper-ogn-270-298",
+   "card": true,
+   "imgFile": "img/u0",
+   "imgType": "image/webp"
+  },
+  {
+   "name": "Arise!",
+   "sub": "Spirit Forged · 198/221",
+   "before": 1185,
+   "after": 2183,
+   "pct": 84,
+   "image": "https://cdn.riftscribe.gg/cards/thumbnails/large/sfd-198-221-cc1659567df0275e.webp",
+   "link": "https://riftcompare.com/card/arise-sfd-198-221",
+   "card": true,
+   "imgFile": "img/u1",
+   "imgType": "image/webp"
+  },
+  {
+   "name": "Diana, Scorn of the Moon · Overnumbered",
+   "sub": "Unleashed · 234/219",
+   "before": 9259,
+   "after": 15851,
+   "pct": 71,
+   "image": "https://cdn.riftscribe.gg/cards/thumbnails/large/unl-234-219-f8b74e6bd00cc7fa.webp",
+   "link": "https://riftcompare.com/card/diana-scorn-of-the-moon-unl-234-219",
+   "card": true,
+   "imgFile": "img/u2",
+   "imgType": "image/webp"
+  }
+ ],
+ "down": [
+  {
+   "name": "Irelia, Blade Dancer · Overnumbered",
+   "sub": "Spirit Forged · 246/221",
+   "before": 11902,
+   "after": 8244,
+   "pct": -31,
+   "image": "https://cdn.riftscribe.gg/cards/thumbnails/large/sfd-246-221-b20dcd9fe2da5fe9.webp",
+   "link": "https://riftcompare.com/card/irelia-blade-dancer-sfd-246-221",
+   "card": true,
+   "imgFile": "img/d0",
+   "imgType": "image/webp"
+  },
+  {
+   "name": "Seal of Discord",
+   "sub": "Origins · 204/298",
+   "before": 2566,
+   "after": 1773,
+   "pct": -31,
+   "image": "https://cdn.riftscribe.gg/cards/thumbnails/large/ogn-204-298-38bf9cf89c25af85.webp",
+   "link": "https://riftcompare.com/card/seal-of-discord-ogn-204-298",
+   "card": true,
+   "imgFile": "img/d1",
+   "imgType": "image/webp"
+  },
+  {
+   "name": "Seal of Rage",
+   "sub": "Origins · 040/298",
+   "before": 1962,
+   "after": 1367,
+   "pct": -30,
+   "image": "https://cdn.riftscribe.gg/cards/thumbnails/large/ogn-040-298-f28bc1f3ac99afb6.webp",
+   "link": "https://riftcompare.com/card/seal-of-rage-ogn-040-298",
+   "card": true,
+   "imgFile": "img/d2",
+   "imgType": "image/webp"
+  }
+ ],
+ "fine": "Cheapest in-stock store listing, in US$, 16 Nov vs 23 Nov 2026. Prices change. RiftCompare is fan-made and isn't endorsed by Riot Games."
+}

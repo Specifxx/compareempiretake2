@@ -1,0 +1,110 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "op",
+ "siteName": "OP Compare",
+ "topic": "One Piece Card Game",
+ "host": "opcompare.app",
+ "accent": "#e0454a",
+ "page": "opcompare.app/movers",
+ "from": "2026-11-16",
+ "to": "2026-11-23",
+ "range": "16 Nov → 23 Nov",
+ "basis": "TCGplayer market price",
+ "cardsArt": true,
+ "up": [
+  {
+   "name": "Mr.3 (Galdino)",
+   "sub": "The Time of Battle",
+   "before": 756,
+   "after": 1052,
+   "pct": 39,
+   "image": null,
+   "tile": {
+    "number": "OP16-056",
+    "rarity": "SR"
+   },
+   "link": "https://opcompare.app/card/mr-3-galdino-op16-056",
+   "card": true
+  },
+  {
+   "name": "Monkey.D.Luffy",
+   "sub": "Awakening of the New Era",
+   "before": 1388,
+   "after": 1890,
+   "pct": 36,
+   "image": null,
+   "tile": {
+    "number": "OP05-119",
+    "rarity": "SEC"
+   },
+   "link": "https://opcompare.app/card/monkey-d-luffy-op05-119",
+   "card": true
+  },
+  {
+   "name": "Alvida",
+   "sub": "Starter Deck 25: BLUE Buggy",
+   "before": 494,
+   "after": 652,
+   "pct": 32,
+   "image": null,
+   "tile": {
+    "number": "ST25-001",
+    "rarity": "C"
+   },
+   "link": "https://opcompare.app/card/alvida-st25-001",
+   "card": true
+  }
+ ],
+ "down": [
+  {
+   "name": "Perona · Alternate Art",
+   "sub": "Extra Booster: One Piece Heroines Edition Vol. 2",
+   "before": 1115,
+   "after": 621,
+   "pct": -44,
+   "image": null,
+   "tile": {
+    "number": "EB05-043",
+    "rarity": "R"
+   },
+   "link": "https://opcompare.app/card/perona-eb05-043-alternate-art",
+   "card": true
+  },
+  {
+   "name": "Lucky.Roux · Alternate Art",
+   "sub": "Premium Booster -The Best- Vol. 2",
+   "before": 4293,
+   "after": 2597,
+   "pct": -39,
+   "image": null,
+   "tile": {
+    "number": "PRB02-003",
+    "rarity": "R"
+   },
+   "link": "https://opcompare.app/card/lucky-roux-prb02-003-alternate-art",
+   "card": true
+  },
+  {
+   "name": "Sabo · Alternate Art",
+   "sub": "Kingdoms of Intrigue",
+   "before": 1187,
+   "after": 769,
+   "pct": -35,
+   "image": null,
+   "tile": {
+    "number": "OP04-083",
+    "rarity": "SR"
+   },
+   "link": "https://opcompare.app/card/sabo-op04-083-alternate-art",
+   "card": true
+  }
+ ],
+ "fine": "TCGplayer market price, 16 Nov vs 23 Nov 2026. Prices change. Not affiliated with Bandai or Toei Animation."
+}

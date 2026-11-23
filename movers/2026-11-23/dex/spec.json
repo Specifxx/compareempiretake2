@@ -1,0 +1,98 @@
+{
+ "stage": "movers/stage.html",
+ "coverAt": 2.2,
+ "stills": [
+  2.2,
+  6.5,
+  12.8,
+  18.5
+ ],
+ "site": "dex",
+ "siteName": "DexCompare",
+ "topic": "Pokémon TCG",
+ "host": "dexcompare.app",
+ "accent": "#ffcb05",
+ "page": "dexcompare.app/us/price-moves",
+ "from": "2026-11-16",
+ "to": "2026-11-23",
+ "range": "16 Nov → 23 Nov",
+ "basis": "Cheapest in-stock US store price",
+ "cardsArt": false,
+ "up": [
+  {
+   "name": "Delta Reign Booster Box",
+   "sub": "Booster Box",
+   "before": 8999,
+   "after": 16997,
+   "pct": 89,
+   "stores": 70,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/712094_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/delta-reign-booster-box",
+   "imgFile": "img/u0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Inferno X Japanese Booster Box (M2)",
+   "sub": "Japanese Booster Box",
+   "before": 10499,
+   "after": 13799,
+   "pct": 31,
+   "stores": 15,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/655968_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/inferno-x-m2-japanese-booster-box",
+   "imgFile": "img/u1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Lost Abyss Japanese Booster Box (S11)",
+   "sub": "Japanese Booster Box",
+   "before": 29499,
+   "after": 35000,
+   "pct": 19,
+   "stores": 3,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/574954_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/lost-abyss-s11-japanese-booster-box",
+   "imgFile": "img/u2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "down": [
+  {
+   "name": "First Partner Illustration Collection (Series 3)",
+   "sub": "Collection",
+   "before": 1495,
+   "after": 995,
+   "pct": -33,
+   "stores": 83,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/695400_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/first-partner-illustration-collection-series-3",
+   "imgFile": "img/d0",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "30th Celebration Pokémon Center Elite Trainer Box",
+   "sub": "Pokémon Center Elite Trainer Box",
+   "before": 24499,
+   "after": 17599,
+   "pct": -28,
+   "stores": 11,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/704144_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/30th-celebration-pokemon-center-elite-trainer-box",
+   "imgFile": "img/d1",
+   "imgType": "image/jpeg"
+  },
+  {
+   "name": "Prismatic Evolutions - Binder Collection",
+   "sub": "Collection",
+   "before": 10150,
+   "after": 7500,
+   "pct": -26,
+   "stores": 8,
+   "image": "https://tcgplayer-cdn.tcgplayer.com/product/593356_in_1000x1000.jpg",
+   "link": "https://dexcompare.app/us/p/prismatic-evolutions-binder-collection",
+   "imgFile": "img/d2",
+   "imgType": "image/jpeg"
+  }
+ ],
+ "fine": "Cheapest in-stock US store price, 16 Nov vs 23 Nov 2026. Prices change. Not affiliated with Nintendo, The Pokémon Company or Creatures."
+}
