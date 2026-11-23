@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-22T00:21:59.044Z",
+ "scrapedAt": "2026-11-23T00:49:59.214Z",
  "offers": [
   {
    "retailer": "uk-brickshack",
@@ -161,9 +161,8 @@
    "title": "LEGO 11024: Classic: Gray Baseplate 48x48",
    "url": "https://www.brickshack.co.uk/products/11024-classic-gray-baseplate-48x48",
    "price": 12.5,
-   "wasPrice": 12.99,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/products/1102401.png?v=1649520612",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "11024"
   },
@@ -416,7 +415,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-21582-minecraft-chicken-jockey",
    "price": 24.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/bltd9332c3bc0f557e7-21582_boxprod_v29.png?v=1794577394",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21582"
   },
@@ -427,7 +426,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-21584-minecraft-nether-end-portal-journey",
    "price": 12.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/21584_boxprod_v39_en-gb.webp?v=1770410546",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "21584"
   },
@@ -438,7 +437,7 @@
    "url": "https://www.brickshack.co.uk/products/minecraft-lego-chicken-farm-set",
    "price": 17.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/21585_boxprod_v39_en-gb.png?v=1773495749",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21585"
   },
@@ -543,6 +542,17 @@
   },
   {
    "retailer": "uk-brickshack",
+   "sku": "30680",
+   "title": "LEGO 30680: Star Wars: AAT polybag",
+   "url": "https://www.brickshack.co.uk/products/lego-30680-star-wars-aat-polybag",
+   "price": 5,
+   "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/30680_Box1_v39.webp?v=1715342166",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "30680"
+  },
+  {
+   "retailer": "uk-brickshack",
    "sku": "30693",
    "title": "LEGO 30693: City: Police Water Scooter polybag",
    "url": "https://www.brickshack.co.uk/products/lego-city-police-water-scooter",
@@ -625,7 +635,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-creator-3-in-1-magical-unicorn-31140",
    "price": 9.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/products/lego-creator-3-in-1-magical-unicorn-31140-145-pcs.jpg?v=1765014356",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31140"
   },
@@ -702,7 +712,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-creator-3-in-1-pink-flamingo-set",
    "price": 19.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-creator-3-in-1-pink-flamingo-set-flamingo-model-with-box.webp?v=1753636658",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31170"
   },
@@ -768,7 +778,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-31380-creator-3-in-1-retro-gaming-console",
    "price": 17.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/blt6d391b4e03cbe463-31380_boxprod_v29.png?v=1781360520",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31380"
   },
@@ -900,7 +910,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-40743-festive-centrepiece",
    "price": 39.75,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-40743-festive-centrepiece-christmas-table-decoration-box.webp?v=1764432132",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40743"
   },
@@ -1109,7 +1119,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-friends-cat-birthday-party-set-42666",
    "price": 24.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/lego-friends-cat-birthday-party-set-42666-assembled-products.webp?v=1766769652",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "42666"
   },
@@ -1593,7 +1603,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-60500-city-the-lego-van",
    "price": 24.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/60500_boxprod_v39_en-gb.png?v=1776607670",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "60500"
   },
@@ -1758,7 +1768,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-71863-ninjago-zilvar-and-grimtak-the-dragon-beast",
    "price": 17.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/blt3d7c15f7cd3fbd7b-71863_boxprod_v29.png?v=1788433342",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "71863"
   },
@@ -2088,7 +2098,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-76319-marvel-captain-america-vs-thanos",
    "price": 29.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/76319_boxprod_v39_en-gb.png?v=1781361412",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76319"
   },
@@ -2242,7 +2252,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-76461-harry-potter-cornish-pixie",
    "price": 24.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/76461_boxprod_v39_en-gb.png?v=1778521942",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76461"
   },
@@ -2539,7 +2549,7 @@
    "url": "https://www.brickshack.co.uk/products/lego-77262-speed-champions-ken-blocks-1965-ford-mustang-hoonicorn-rtr-v1",
    "price": 22.5,
    "image": "https://cdn.shopify.com/s/files/1/0466/8024/4377/files/blt2e5240070ad5f2ec-77262_boxprod_v29.png?v=1794574670",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77262"
   },

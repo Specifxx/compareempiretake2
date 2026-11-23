@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-22T00:16:48.504Z",
+ "scrapedAt": "2026-11-23T00:44:42.068Z",
  "offers": [
   {
    "retailer": "us-swiftronicsinc",
@@ -55,6 +55,28 @@
    "inStock": true,
    "brand": "Apple",
    "mpn": "APL-MWW53AM/A"
+  },
+  {
+   "retailer": "us-swiftronicsinc",
+   "sku": "BOS-905279-BLK",
+   "title": "Bose QuietComfort SC Over-Ear Wireless Headphones (2nd Gen) Black",
+   "url": "https://swiftronicsinc.com/products/bose-quietcomfort-sc-over-ear-wireless-headphones-2nd-gen?variant=68431652356462",
+   "price": 259.99,
+   "image": "https://cdn.shopify.com/s/files/1/0708/3566/7238/files/QCHII27-Blk_PDP_E-Comm_Gallery_1_1500x1120_b6958706-3f98-4840-9794-f4d779041371.avif?v=1795026897",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "BOS-905279-BLK"
+  },
+  {
+   "retailer": "us-swiftronicsinc",
+   "sku": "BOS-905279-WHT",
+   "title": "Bose QuietComfort SC Over-Ear Wireless Headphones (2nd Gen) White Smoke",
+   "url": "https://swiftronicsinc.com/products/bose-quietcomfort-sc-over-ear-wireless-headphones-2nd-gen?variant=68431652389230",
+   "price": 259.99,
+   "image": "https://cdn.shopify.com/s/files/1/0708/3566/7238/files/QCHII27-WhtSmk_PDP_E-Comm_Gallery_1_1500x1120_3eb9070d-26ce-48cc-afcf-1334ebc25a17.avif?v=1795026897",
+   "inStock": true,
+   "brand": "Bose",
+   "mpn": "BOS-905279-WHT"
   },
   {
    "retailer": "us-swiftronicsinc",
@@ -461,7 +483,7 @@
    "url": "https://swiftronicsinc.com/products/oneplus-buds-pro-4?variant=67999906791790",
    "price": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0708/3566/7238/files/nav1080_1080_purple.png?v=1793914403",
-   "inStock": true,
+   "inStock": false,
    "brand": "OnePlus",
    "mpn": "OP-E519A-GRY"
   },

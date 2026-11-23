@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-22T00:13:41.722Z",
+ "scrapedAt": "2026-11-23T00:41:43.571Z",
  "offers": [
   {
    "retailer": "us-glazers",
@@ -1135,7 +1135,7 @@
    "url": "https://www.glazerscamera.com/products/hasselblad-release-cord-x",
    "price": 80,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/31700_CP-HB-00000242-01_01_Hero.png?v=1762807706",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hasselblad"
   },
   {
@@ -2400,7 +2400,8 @@
    "sku": "22684",
    "title": "Polaroid Flip Instant Camera - Black",
    "url": "https://www.glazerscamera.com/products/polaroid-flip-black",
-   "price": 219.99,
+   "price": 179.99,
+   "wasPrice": 219.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/22684_009152_02_Hero.jpg?v=1744842061",
    "inStock": true,
    "brand": "Polaroid"
@@ -2410,7 +2411,8 @@
    "sku": "22677",
    "title": "Polaroid Flip Instant Camera - White",
    "url": "https://www.glazerscamera.com/products/polaroid-flip-white",
-   "price": 219.99,
+   "price": 179.99,
+   "wasPrice": 219.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/22677_009151_02_Hero.jpg?v=1744842073",
    "inStock": true,
    "brand": "Polaroid"
@@ -2430,7 +2432,8 @@
    "sku": "20741",
    "title": "Polaroid Now Generation 3 i-Type Instant Camera - Black",
    "url": "https://www.glazerscamera.com/products/polaroid-now-g3-camera-black-1",
-   "price": 129.99,
+   "price": 99.99,
+   "wasPrice": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/20741_9154_01.png?v=1742238478",
    "inStock": true,
    "brand": "Polaroid"
@@ -2440,7 +2443,8 @@
    "sku": "20748",
    "title": "Polaroid Now Generation 3 i-Type Instant Camera - Pebble White",
    "url": "https://www.glazerscamera.com/products/polaroid-now-g3-camera-white-1",
-   "price": 129.99,
+   "price": 99.99,
+   "wasPrice": 129.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/20748_9155_01_Hero.png?v=1742239492",
    "inStock": true,
    "brand": "Polaroid"
@@ -2450,7 +2454,8 @@
    "sku": "20755",
    "title": "Polaroid Now+ Generation 3 i-Type Instant Camera - Black",
    "url": "https://www.glazerscamera.com/products/polaroid-now-g3-camera-black",
-   "price": 149.99,
+   "price": 119.99,
+   "wasPrice": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/20755_9160_01_Hero.png?v=1742241506",
    "inStock": true,
    "brand": "Polaroid"
@@ -2460,7 +2465,8 @@
    "sku": "20762",
    "title": "Polaroid Now+ Generation 3 i-Type Instant Camera - White",
    "url": "https://www.glazerscamera.com/products/polaroid-now-g3-camera-white",
-   "price": 149.99,
+   "price": 119.99,
+   "wasPrice": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/20762_9161_01_Hero.png?v=1742241822",
    "inStock": true,
    "brand": "Polaroid"

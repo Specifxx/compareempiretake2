@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-22T00:25:59.510Z",
+ "scrapedAt": "2026-11-23T00:53:57.448Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
@@ -36,10 +36,10 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "90YV0PN1-M0NA00",
-   "title": "ASUS RX 9070 GRE 12GB PRIME EVO OC",
+   "title": "ASUS Prime -RX9070GRE-O12G-EVO AMD Radeon RX 9070 GRE 12 GB GDDR6",
    "url": "https://directcomputers.co.uk/products/asus-rx-9070-gre-12gb-prime-evo-oc",
    "price": 774.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/Coming-Soon_dcb3463e-1705-4be5-834a-c3cbb7c8f5a4.jpg?v=1795266133",
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/97d56939efe8b73b7727feee2f7b2903_da2be139-cb83-41dd-a394-79a7445a7675.jpg?v=1795312531",
    "inStock": true,
    "brand": "ASUS",
    "mpn": "90YV0PN1-M0NA00"
@@ -142,7 +142,7 @@
    "price": 1225,
    "wasPrice": 1399.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/2d570b0d9d44df8cb163b28a6822239f.jpg?v=1772073537",
-   "inStock": true,
+   "inStock": false,
    "brand": "GIGABYTE",
    "mpn": "GV-N507TWF3OC-16GD"
   },
@@ -301,16 +301,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "VCNRTXPRO5000-SB",
-   "title": "PNY RTX PRO 5000 NVIDIA 48 GB GDDR7",
-   "url": "https://directcomputers.co.uk/products/pny-rtx-pro-5000-blackwell-48gb",
-   "price": 8541.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/645627d84c4e78d622d873e4dbedd610.jpg?v=1786237828",
-   "inStock": true,
-   "mpn": "VCNRTXPRO5000-SB"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "VCNRTX2000ADA-SB",
    "title": "PNY RTX2000 Ada NVIDIA RTX 2000 Ada 16 GB GDDR6",
    "url": "https://directcomputers.co.uk/products/pny-rtx2000-ada-professional-graphics-card-16gb-ddr6-4-mini-dp-2816-cuda-cores-dual-slot-low-profile-oem-brown-box",
@@ -377,6 +367,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "RX9060XT 8G-A",
+   "title": "PowerColor Reaper Radeon RX 9060 XT GAMING OC 8G Graphics Card - 8GB GDDR6, 128bit, PCI-E 5.0, 3320 MHz Core Clock, 2 x DisplayPort, 1 x HDMI, GV-R9060XTGAMING OC-8GD",
+   "url": "https://directcomputers.co.uk/products/powercolor-rx-9060-xt-8gb-reaper-1",
+   "price": 589.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/58ae24547f4745db60c32ecedffcfa32_5f35ad47-83d2-4070-9ef1-7f8d89e514b1.jpg?v=1795312530",
+   "inStock": true,
+   "brand": "POWERCOLOR",
+   "mpn": "RX9060XT 8G-A"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "RX9060XT 16G-A",
    "title": "PowerColor Reaper Radeon RX 9060 XT GAMING OC 8G Graphics Card - 8GB GDDR6, 128bit, PCI-E 5.0, 3320 MHz Core Clock, 2 x DisplayPort, 1 x HDMI, GV-R9060XTGAMING OC-8GD",
    "url": "https://directcomputers.co.uk/products/powercolor-rx-9060-xt-16gb-reaper-1",
@@ -385,39 +386,6 @@
    "inStock": true,
    "brand": "POWERCOLOR",
    "mpn": "RX9060XT 16G-A"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "RX9070 16G-A",
-   "title": "PowerColor Reaper Radeon RX 9070 AMD 16 GB GDDR6",
-   "url": "https://directcomputers.co.uk/products/powercolor-rx-9070-16gb-reaper",
-   "price": 936.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/7c3cf52a589dca0a7a76debe0c77baff.jpg?v=1781278632",
-   "inStock": true,
-   "brand": "POWERCOLOR",
-   "mpn": "RX9070 16G-A"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "RX9070XT 16G-A",
-   "title": "PowerColor Reaper Radeon RX 9070 XT AMD 16 GB GDDR6",
-   "url": "https://directcomputers.co.uk/products/powercolor-rx-9070-xt-16gb-reaper",
-   "price": 1124.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/e1a4d5fd410403ee6acdfde418cd87e0.jpg?v=1781276386",
-   "inStock": true,
-   "brand": "POWERCOLOR",
-   "mpn": "RX9070XT 16G-A"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "RX9060XT 8G-A",
-   "title": "POWERCOLOR RX 9060 XT 8GB REAPER",
-   "url": "https://directcomputers.co.uk/products/powercolor-rx-9060-xt-8gb-reaper-1",
-   "price": 589.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/Coming-Soon_490e15e2-0459-4d83-8c93-0026083d4dd6.jpg?v=1795266116",
-   "inStock": true,
-   "brand": "POWERCOLOR",
-   "mpn": "RX9060XT 8G-A"
   },
   {
    "retailer": "uk-directcomputers",

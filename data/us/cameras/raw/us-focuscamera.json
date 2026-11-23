@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-22T00:12:48.428Z",
+ "scrapedAt": "2026-11-23T00:40:46.974Z",
  "offers": [
   {
    "retailer": "us-focuscamera",
@@ -1362,7 +1362,7 @@
    "price": 2199,
    "wasPrice": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3557816.jpg?v=1759778908",
-   "inStock": true,
+   "inStock": false,
    "brand": "FUJIFILM North America Corp.",
    "mpn": "16953895"
   },
@@ -2284,7 +2284,7 @@
    "price": 799.99,
    "wasPrice": 899.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/a3a9d93cf8b0fb7e0c4933d464724aaec9b804e331044951217860c0116e7824-9ab03d342fbe7050.jpg?v=1779900260",
-   "inStock": false,
+   "inStock": true,
    "brand": "PANASONIC CORPORATION OF N.A.",
    "mpn": "DCZS300K-32GB"
   },
@@ -2296,7 +2296,7 @@
    "price": 799.99,
    "wasPrice": 899.99,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/dc71128290cd636a073219ddfe1568d80fa8071f341dfe49a3ca873d2b4b63bb-5479096d4f27acad.jpg?v=1779900258",
-   "inStock": false,
+   "inStock": true,
    "brand": "PANASONIC CORPORATION OF N.A.",
    "mpn": "DCZS300S-32GB"
   },
@@ -2595,7 +2595,7 @@
    "price": 1946.95,
    "wasPrice": 2196.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3584626.jpg?v=1768418157",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon Inc.",
    "mpn": "2020-NIKON"
   },
@@ -3831,7 +3831,8 @@
    "sku": "42160357474352",
    "title": "RICOH THETA X 360-Degree Camera",
    "url": "https://www.focuscamera.com/products/ricoh-910844-video-cameras-action-cameras",
-   "price": 596.95,
+   "price": 496.95,
+   "wasPrice": 596.95,
    "image": "https://cdn.shopify.com/s/files/1/0622/3219/9216/files/3225595.jpg?v=1751946024",
    "inStock": true,
    "brand": "RICOH IMAGING AMERICAS CORPORATION",

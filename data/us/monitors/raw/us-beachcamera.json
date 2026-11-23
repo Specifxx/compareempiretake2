@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-22T00:11:43.678Z",
+ "scrapedAt": "2026-11-23T00:39:36.489Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -1224,7 +1224,7 @@
    "url": "https://www.beachcamera.com/products/lg-27gx704a-b-27-ultragear-qhd-2650x1440-nvidia-g-sync-oled-gaming-monitor",
    "price": 499.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1145744_1.jpg?v=1765283534",
-   "inStock": true,
+   "inStock": false,
    "mpn": "LG27GX704AB"
   },
   {
@@ -1674,9 +1674,10 @@
    "sku": "LG45GX900AB",
    "title": "LG 45 Inch UltraGear OLED WQHD 240Hz 0.03ms G-Sync Curved Gaming Monitor",
    "url": "https://www.beachcamera.com/products/lg-45-inch-ultragear-oled-wqhd-240hz-0-03ms-g-sync-curved-gaming-monitor",
-   "price": 1699.99,
+   "price": 999.99,
+   "wasPrice": 1699.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1120999_1.jpg?v=1757713158",
-   "inStock": false,
+   "inStock": true,
    "mpn": "LG45GX900AB"
   },
   {

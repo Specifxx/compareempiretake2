@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-22T00:39:31.141Z",
+ "scrapedAt": "2026-11-23T01:07:22.032Z",
  "offers": [
   {
    "retailer": "sg-mobilesquare",
@@ -66,7 +66,7 @@
    "sku": "44884578533465",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Black",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578533465",
-   "price": 2660,
+   "price": 2640,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E091FFF3-EE04-4EA0-A67B-3DAB82DCFE1C.jpg?v=1789322781",
    "inStock": true
@@ -76,7 +76,7 @@
    "sku": "44884578566233",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Burgundy",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578566233",
-   "price": 2660,
+   "price": 2640,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
    "inStock": false
@@ -86,7 +86,7 @@
    "sku": "44884578599001",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Glacier",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578599001",
-   "price": 2660,
+   "price": 2640,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E74008D2-F26A-4918-AEA3-856B7D9A9388.jpg?v=1789322781",
    "inStock": false
@@ -96,7 +96,7 @@
    "sku": "44884578500697",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Silver",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578500697",
-   "price": 2660,
+   "price": 2640,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/4D810AF8-2FD8-4800-9B18-4EF7E50D42A7.jpg?v=1789322781",
    "inStock": false
@@ -119,7 +119,7 @@
    "price": 2050,
    "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "sg-mobilesquare",
@@ -199,7 +199,7 @@
    "price": 1920,
    "wasPrice": 2099,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "sg-mobilesquare",
@@ -703,43 +703,23 @@
   },
   {
    "retailer": "sg-mobilesquare",
-   "sku": "43055922348121",
-   "title": "OPPO A6 Pro 5G (256GB/8+8GB) Agent Sealed Set Coral Pink",
-   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a5-pro-5g-br-256gb-8-8gb-br-font-color-red-instant-19-rebate-br-font-div?variant=43055922348121",
-   "price": 388,
-   "wasPrice": 439,
-   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/IMG-7124.png?v=1775240485",
-   "inStock": false
-  },
-  {
-   "retailer": "sg-mobilesquare",
-   "sku": "43055922380889",
-   "title": "OPPO A6 Pro 5G (256GB/8+8GB) Agent Sealed Set Stellar Blue",
-   "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a5-pro-5g-br-256gb-8-8gb-br-font-color-red-instant-19-rebate-br-font-div?variant=43055922380889",
-   "price": 388,
-   "wasPrice": 439,
-   "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/IMG-7123.png?v=1775240485",
-   "inStock": true
-  },
-  {
-   "retailer": "sg-mobilesquare",
    "sku": "43029249491033",
-   "title": "OPPO A6 Pro 5G (256GB/8+8GB) Telco Sealed Set Coral Pink",
+   "title": "OPPO A6 Pro 5G (256GB/8+8GB) Coral Pink",
    "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a5-pro-5g-br-256gb-8-8gb-br-font-color-red-instant-19-rebate-br-font-div?variant=43029249491033",
    "price": 388,
    "wasPrice": 439,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/IMG-7124.png?v=1775240485",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "sg-mobilesquare",
    "sku": "43029249523801",
-   "title": "OPPO A6 Pro 5G (256GB/8+8GB) Telco Sealed Set Stellar Blue",
+   "title": "OPPO A6 Pro 5G (256GB/8+8GB) Stellar Blue",
    "url": "https://www.mobilesquare.com.sg/products/div-style-font-size-80-oppo-a5-pro-5g-br-256gb-8-8gb-br-font-color-red-instant-19-rebate-br-font-div?variant=43029249523801",
    "price": 388,
    "wasPrice": 439,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/IMG-7123.png?v=1775240485",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "sg-mobilesquare",
@@ -749,7 +729,7 @@
    "price": 268,
    "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/35F0ADF1-00E9-44D1-9A37-94542A11502A.jpg?v=1766220664",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "sg-mobilesquare",
