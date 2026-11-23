@@ -1,6 +1,6 @@
 {
  "site": "wargame",
- "day": "2026-11-10",
+ "day": "2026-11-23",
  "region": "US",
  "hook": [
   "Same kit.",
@@ -8,6 +8,22 @@
  ],
  "sub": "3 real Wargames deals from today's US store prices",
  "deals": [
+  {
+   "siteName": "WargameCompare",
+   "topic": "Wargames",
+   "accent": "#d65c5c",
+   "title": "Blood Bowl: Chaos Dwarf Cards",
+   "cents": 1759,
+   "refCents": 3500,
+   "currency": "USD",
+   "refLabel": "RRP",
+   "refShort": "RRP",
+   "store": "Wargame Portal",
+   "savingPct": 50,
+   "imgFile": "img/0.jpg",
+   "url": "wargamecompare.com",
+   "link": "https://wargamecompare.com/us/p/blood-bowl-chaos-dwarf-cards"
+  },
   {
    "siteName": "WargameCompare",
    "topic": "Wargames",
@@ -20,7 +36,7 @@
    "refShort": "median store price",
    "store": "Game Realm",
    "savingPct": 50,
-   "imgFile": "img/0.jpg",
+   "imgFile": "img/1.jpg",
    "url": "wargamecompare.com",
    "link": "https://wargamecompare.com/us/p/broken-realms-kragnos"
   },
@@ -36,25 +52,9 @@
    "refShort": "median store price",
    "store": "Game Realm",
    "savingPct": 50,
-   "imgFile": "img/1.jpg",
-   "url": "wargamecompare.com",
-   "link": "https://wargamecompare.com/us/p/broken-realms-belakor"
-  },
-  {
-   "siteName": "WargameCompare",
-   "topic": "Wargames",
-   "accent": "#d65c5c",
-   "title": "Arks of Omen: Vashtorr",
-   "cents": 3000,
-   "refCents": 6000,
-   "currency": "USD",
-   "refLabel": "RRP",
-   "refShort": "RRP",
-   "store": "The Guardtower",
-   "savingPct": 50,
    "imgFile": "img/2.jpg",
    "url": "wargamecompare.com",
-   "link": "https://wargamecompare.com/us/p/arks-of-omen-vashtorr"
+   "link": "https://wargamecompare.com/us/p/broken-realms-belakor"
   }
  ],
  "endLine": "wargamecompare.com: every store, compared daily.",
@@ -71,5 +71,5 @@
   "Cameras",
   "Tech"
  ],
- "fine": "US store prices, 10 Nov 2026, before shipping. Prices change. Independent; not affiliated with any brand shown."
+ "fine": "US store prices, 23 Nov 2026, before shipping. Prices change. Independent; not affiliated with any brand shown."
 }
