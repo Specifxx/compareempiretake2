@@ -100,15 +100,16 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
         {/* Category bar: every department behind "All categories", the most visited aisles beside it. */}
         <div className="hidden border-t border-line/70 md:block">
           <nav className="container-x flex h-11 items-center gap-0.5 overflow-x-auto text-sm scrollbar-none" aria-label="Categories">
-            <button
-              onClick={() => setMega((m) => !m)}
-              onMouseEnter={() => window.matchMedia("(hover: hover)").matches && setMega(true)}
-              aria-expanded={mega}
-              aria-controls="mega-menu"
-              className={`mr-1 inline-flex shrink-0 items-center gap-2 rounded-md px-3 py-1.5 font-semibold transition ${mega ? "bg-ink text-bg-card" : "text-ink hover:bg-bg-sunk"}`}
-            >
-              <MenuIcon className="h-4 w-4" /> All categories
-            </button>
+            {/* The label is a link to the categories page (owner, 2026-11-23: "every time I click on the drop downs, I expect it to be a
+                link"); hover still opens the menu, and the chevron beside it is the button that toggles it. */}
+            <span className={`mr-1 inline-flex shrink-0 items-center rounded-md transition ${mega ? "bg-ink text-bg-card" : "text-ink hover:bg-bg-sunk"}`} onMouseEnter={() => window.matchMedia("(hover: hover)").matches && setMega(true)}>
+              <Link prefetch={false} href={region === "au" ? "/categories" : withRegion("/browse", region)} onClick={() => setMega(false)} className="inline-flex items-center gap-2 rounded-l-md py-1.5 pl-3 pr-1 font-semibold text-inherit">
+                <MenuIcon className="h-4 w-4" /> All categories
+              </Link>
+              <button onClick={() => setMega((m) => !m)} aria-expanded={mega} aria-controls="mega-menu" aria-label="All categories menu" className="inline-flex items-center self-stretch rounded-r-md pl-1 pr-2.5 text-inherit">
+                <svg viewBox="0 0 12 12" className={`h-3 w-3 transition-transform ${mega ? "rotate-180" : ""}`} aria-hidden fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M2.5 4.5 6 8l3.5-3.5" /></svg>
+              </button>
+            </span>
             {/* Deals (or Black Friday while it runs) next to the menu, so a narrow screen never scrolls it out of sight. */}
             <Link prefetch={false} href={NAV[0].href} className="shrink-0 rounded-md px-2.5 py-1.5 font-semibold text-hot transition hover:bg-hot/10">{NAV[0].label}</Link>
             {flat.filter((c) => c.featured).map((c) => (
