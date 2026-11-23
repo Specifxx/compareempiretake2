@@ -2591,3 +2591,10 @@ Second build of the weekly hype run (owner: "build all of this out and get all o
 - Bluey joins `LEGO_HYPE_THEMES`: its DUPLO and LEGO sets were at 6-9 Australian shops, mostly under the A$225 floor.
 - The Switch 2 Zelda 40th Anniversary Edition (Nintendo, 8 Sep 2026) is a `LAUNCHES` entry rather than a page: one store
   per region carries it, too few to compare, but the launches row lists it from its first store.
+
+## 2026-11-23: A header dropdown's label is a link
+
+Owner, 2026-11-23: "every time I click on the drop downs, I expect it to be a link and … take me somewhere … when I click on
+one of the drop downs, it doesn't do anything. It just drops it down." "All categories" in `Header.tsx` is now a `<Link>` to the categories page (`/categories` in Australia, the region's `/browse` elsewhere). Hover still opens the panel after the same
+intent delay; the chevron beside the label is now the button that toggles it (click, tap, Enter, Space, ArrowDown), with
+`aria-expanded` and its own label. The panels stay in the server HTML. `tests/nav.test.ts` pins it.

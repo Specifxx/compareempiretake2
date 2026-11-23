@@ -22,3 +22,9 @@ test("a category page's breadcrumb names the category, and top-brand chips are l
   assert.match(v, /<span aria-current="page">\{c\.name\}<\/span>/);
   assert.doesNotMatch(v, /<span key=\{b\} className="chip/);
 });
+
+test("the All categories label is a link; the chevron beside it is the menu button (owner, 2026-11-23)", () => {
+  const h = read("src/components/Header.tsx");
+  assert.match(h, /<Link prefetch=\{false\} href=\{region === "au" \? "\/categories" : withRegion\("\/browse", region\)\} onClick=\{\(\) => setMega\(false\)\}/);
+  assert.match(h, /aria-label="All categories menu"/);
+});
