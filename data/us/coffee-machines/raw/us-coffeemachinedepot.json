@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:39:41.144Z",
+ "scrapedAt": "2026-11-24T04:40:56.831Z",
  "offers": [
   {
    "retailer": "us-coffeemachinedepot",
@@ -46,7 +46,8 @@
    "sku": "7480",
    "title": "Breville - Oracle Jet Espresso Machine",
    "url": "https://coffeemachinedepot.com/products/breville-oracle-jet-espresso-machine",
-   "price": 1999.95,
+   "price": 1799.95,
+   "wasPrice": 1999.95,
    "image": "https://cdn.shopify.com/s/files/1/0687/5090/1493/files/Untitleddesign_90b73982-2a18-4721-b464-a12dbaa413db.png?v=1740722969",
    "inStock": true,
    "brand": "Breville"
@@ -100,7 +101,7 @@
    "url": "https://coffeemachinedepot.com/products/lelit-elizabeth-coffee-espresso-machine",
    "price": 1799.95,
    "image": "https://cdn.shopify.com/s/files/1/0687/5090/1493/files/Eliz_1200x_4b4111b2-50d7-476d-b6ff-d9442d3d9d0b.webp?v=1719603230",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lelit"
   },
   {
@@ -118,7 +119,7 @@
    "sku": "6713-B",
    "title": "Sanremo YOU Espresso Machine Black",
    "url": "https://coffeemachinedepot.com/products/sanremo-you-1-group-home-espresso-machine?variant=47958710288629",
-   "price": 7950,
+   "price": 7350,
    "wasPrice": 8950,
    "image": "https://cdn.shopify.com/s/files/1/0687/5090/1493/files/SanremoYOUEspressoMachine.png?v=1719602198",
    "inStock": true,
@@ -130,12 +131,24 @@
    "sku": "6713-W",
    "title": "Sanremo YOU Espresso Machine White",
    "url": "https://coffeemachinedepot.com/products/sanremo-you-1-group-home-espresso-machine?variant=47958710321397",
-   "price": 7950,
+   "price": 7350,
    "wasPrice": 8950,
    "image": "https://cdn.shopify.com/s/files/1/0687/5090/1493/files/SanremoYOUEspressoMachine_2.png?v=1719602201",
    "inStock": true,
    "brand": "Sanremo",
    "mpn": "6713-W"
+  },
+  {
+   "retailer": "us-coffeemachinedepot",
+   "sku": "6713-WB",
+   "title": "Sanremo YOU Espresso Machine White Black",
+   "url": "https://coffeemachinedepot.com/products/sanremo-you-1-group-home-espresso-machine?variant=68538345914613",
+   "price": 7350,
+   "wasPrice": 8950,
+   "image": "https://cdn.shopify.com/s/files/1/0687/5090/1493/files/SanremoYou_White_Black.jpg?v=1733783813",
+   "inStock": true,
+   "brand": "Sanremo",
+   "mpn": "6713-WB"
   },
   {
    "retailer": "us-coffeemachinedepot",

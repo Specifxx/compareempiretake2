@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:43:08.321Z",
+ "scrapedAt": "2026-11-24T04:44:29.348Z",
  "offers": [
   {
    "retailer": "us-normancamera",
@@ -152,7 +152,7 @@
    "price": 379,
    "wasPrice": 379.99,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2615790_1ac686c6-c731-4099-aa4b-a2eab1c40d10.jpg?v=1777394063",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -350,7 +350,7 @@
    "url": "https://normancamera.com/products/nikon-z6-iii-mirrorless-digital-camera-body-only",
    "price": 2696.95,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2508306.jpg?v=1753519255",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon"
   },
   {
@@ -838,7 +838,7 @@
    "url": "https://normancamera.com/products/om-system-tough-tg-7-digital-camera-red",
    "price": 649.99,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2510912.jpg?v=1753517953",
-   "inStock": true,
+   "inStock": false,
    "brand": "OM System"
   },
   {
@@ -928,7 +928,8 @@
    "sku": "9932296",
    "title": "Sony Alpha A6400 Mirrorless Digital Camera Body Only - Black",
    "url": "https://normancamera.com/products/sony-alpha-a6400-mirrorless-digital-camera-body-only-black",
-   "price": 1098,
+   "price": 898,
+   "wasPrice": 1098,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2508381.jpg?v=1753500710",
    "inStock": true,
    "brand": "Sony"
@@ -938,7 +939,8 @@
    "sku": "9935292",
    "title": "Sony Alpha a7 IV Mirrorless Digital Camera (Body Only)",
    "url": "https://normancamera.com/products/sony-alpha-a7-iv-mirrorless-digital-camera-body-only",
-   "price": 2498,
+   "price": 1998,
+   "wasPrice": 2498,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2510218.jpg?v=1767129839",
    "inStock": true,
    "brand": "Sony"
@@ -948,8 +950,8 @@
    "sku": "9937255",
    "title": "Sony Alpha a7 V Mirrorless Digital Camera (Body Only)",
    "url": "https://normancamera.com/products/sony-alpha-a7-v-mirrorless-digital-camera-body-only",
-   "price": 2898,
-   "wasPrice": 2899.99,
+   "price": 2698,
+   "wasPrice": 2898,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2626954.jpg?v=1767024155",
    "inStock": true,
    "brand": "Sony"
@@ -969,7 +971,8 @@
    "sku": "9936213",
    "title": "Sony Alpha a7C II Mirrorless Camera (Body Only, Silver)",
    "url": "https://normancamera.com/products/sony-alpha-a7c-ii-mirrorless-camera-body-only-silver",
-   "price": 2498,
+   "price": 2098,
+   "wasPrice": 2498,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/c1_ba49aae7-f0dd-49eb-9869-66b9c8f779ff.jpg?v=1786565404",
    "inStock": false,
    "brand": "Sony"
@@ -979,7 +982,8 @@
    "sku": "9936216",
    "title": "Sony Alpha a7CR Mirrorless Camera (Body Only, Black)",
    "url": "https://normancamera.com/products/sony-alpha-a7cr-mirrorless-camera-body-only-black",
-   "price": 3398,
+   "price": 2998,
+   "wasPrice": 3398,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/c1_4fa55ded-dd07-4121-8bf6-b6887407a8c8.jpg?v=1786564184",
    "inStock": false,
    "brand": "Sony"
@@ -989,7 +993,8 @@
    "sku": "9936217",
    "title": "Sony Alpha a7CR Mirrorless Camera (Body Only, Silver)",
    "url": "https://normancamera.com/products/sony-alpha-a7cr-mirrorless-camera-body-only-silver",
-   "price": 3398,
+   "price": 2998,
+   "wasPrice": 3398,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/c1_4b19fcb5-f7d7-41b7-bd8a-2df639599589.jpg?v=1786564001",
    "inStock": false,
    "brand": "Sony"
@@ -1009,7 +1014,8 @@
    "sku": "9935845",
    "title": "Sony Alpha a7R V Mirrorless Digital Camera (Body Only)",
    "url": "https://normancamera.com/products/sony-alpha-a7r-v-mirrorless-digital-camera-body-only",
-   "price": 3798,
+   "price": 3298,
+   "wasPrice": 3798,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2510566.jpg?v=1753514412",
    "inStock": false,
    "brand": "Sony"
@@ -1019,7 +1025,8 @@
    "sku": "9934344",
    "title": "Sony Alpha a7S III Mirrorless Digital Camera (Body Only)",
    "url": "https://normancamera.com/products/sony-alpha-a7s-iii-mirrorless-digital-camera-body-only",
-   "price": 3998,
+   "price": 3698,
+   "wasPrice": 3998,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2509614.jpg?v=1753507072",
    "inStock": false,
    "brand": "Sony"
@@ -1029,7 +1036,8 @@
    "sku": "9936296",
    "title": "Sony Alpha a9 III Mirrorless Digital Camera (Body Only)",
    "url": "https://normancamera.com/products/sony-alpha-a9-iii-mirrorless-digital-camera-body-only",
-   "price": 6798,
+   "price": 6398,
+   "wasPrice": 6798,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/9_29bf9b51-c29b-4ac2-863b-02f2e66a007a.jpg?v=1786563528",
    "inStock": false,
    "brand": "Sony"
@@ -1060,7 +1068,8 @@
    "sku": "9936163",
    "title": "Sony ZV-E1 Mirrorless Camera (Body Only, White)",
    "url": "https://normancamera.com/products/sony-zv-e1-mirrorless-camera-body-only-white",
-   "price": 2498,
+   "price": 2198,
+   "wasPrice": 2498,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2510782.jpg?v=1753517150",
    "inStock": false,
    "brand": "Sony"

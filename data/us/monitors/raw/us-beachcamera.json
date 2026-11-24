@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-11-23T00:39:36.489Z",
+ "scrapedAt": "2026-11-24T04:40:50.166Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
    "sku": "ACEFFR2CAA003",
    "title": "Acer ASV27-2P - 27\" SpatialLabs View Pro Widescreen LCD Monitor - FF.R2CAA.003",
    "url": "https://www.beachcamera.com/products/acer-asv27-2p-27-spatiallabs-view-pro-widescreen-lcd-monitor-ff-r2caa-003",
-   "price": 2899,
+   "price": 3416.99,
    "wasPrice": 3900.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1126838_1.jpg?v=1793611896",
    "inStock": true,
@@ -439,7 +439,7 @@
    "price": 479,
    "wasPrice": 598.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1108908_1.jpg?v=1755531990",
-   "inStock": false,
+   "inStock": true,
    "brand": "ASUS",
    "mpn": "ASUVA34VCPSR"
   },
@@ -594,7 +594,7 @@
    "url": "https://www.beachcamera.com/products/dell-p2725de-27-inch-qhd-usb-c-hub-monitor-100hz-ips",
    "price": 495,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1200280_1.jpg?v=1793614130",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dell",
    "mpn": "DELP2725DE"
   },
@@ -1734,6 +1734,17 @@
   },
   {
    "retailer": "us-beachcamera",
+   "sku": "LG27G810AB",
+   "title": "LG UltraGear 27\" 4K UHD IPS Gaming Monitor (27G810A-B)",
+   "url": "https://www.beachcamera.com/products/lg-ultragear-27-4k-uhd-ips-gaming-monitor-27g810a-b",
+   "price": 329.99,
+   "wasPrice": 599.99,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1230051_1.jpg?v=1795469456",
+   "inStock": true,
+   "mpn": "LG27G810AB"
+  },
+  {
+   "retailer": "us-beachcamera",
    "sku": "LG34GN850B",
    "title": "LG UltraGear 34\" QHD 3440x1440 21:9 Curved Gaming Monitor 34GN850-B",
    "url": "https://www.beachcamera.com/products/lg-ultragear-34-qhd-3440x1440-21-9-curved-gaming-monitor-34gn850-b",
@@ -2156,8 +2167,7 @@
    "sku": "SAMLU32J590UQ",
    "title": "Samsung 32\" ViewFinity UJ590 UHD Monitor - Dark Gray/Blue",
    "url": "https://www.beachcamera.com/products/samsung-32-viewfinity-uj590-uhd-monitor-dark-gray-blue",
-   "price": 339,
-   "wasPrice": 339.99,
+   "price": 349,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/978677_1.jpg?v=1753036939",
    "inStock": true,
    "brand": "Samsung",

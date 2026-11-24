@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:30:50.650Z",
+ "scrapedAt": "2026-11-24T04:33:35.779Z",
  "offers": [
   {
    "retailer": "thegoodguys",
@@ -33,22 +33,23 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "black-and-decker-108wh-lithium-ion-dustbuster-cordless-hand-vacuum-nvc215w-xe",
-   "title": "BLACK & DECKER 10.8Wh Lithium-ion Dustbuster Cordless Hand Vacuum",
-   "url": "https://www.thegoodguys.com.au/black-and-decker-108wh-lithium-ion-dustbuster-cordless-hand-vacuum-nvc215w-xe",
-   "price": 54,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50070017_679592.png?v=1776227328&width=284&height=284&quality=88",
-   "inStock": true,
-   "brand": "BLACK"
-  },
-  {
-   "retailer": "thegoodguys",
    "sku": "black-and-decker-162wh-wet-and-dry-lithium-ion-dustbuster-wda315j-xe",
    "title": "BLACK & DECKER 16.2Wh Wet and Dry Lithium-ion Dustbuster",
    "url": "https://www.thegoodguys.com.au/black-and-decker-162wh-wet-and-dry-lithium-ion-dustbuster-wda315j-xe",
    "price": 69,
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50050475_535771.png?v=1776229030&width=284&height=284&quality=88",
    "inStock": true,
+   "brand": "BLACK"
+  },
+  {
+   "retailer": "thegoodguys",
+   "sku": "black-and-decker-dusbuster-180v-flexi-handheld-vacuum-pd1820l",
+   "title": "BLACK & DECKER 18V Dusbuster Flexi Handheld Vacuum",
+   "url": "https://www.thegoodguys.com.au/black-and-decker-dusbuster-180v-flexi-handheld-vacuum-pd1820l",
+   "price": 149,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50026381_823250.png?v=1776232865&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "PD1820L",
    "brand": "BLACK"
   },
   {
@@ -63,13 +64,12 @@
   },
   {
    "retailer": "thegoodguys",
-   "sku": "black-and-decker-dusbuster-180v-flexi-handheld-vacuum-pd1820l",
-   "title": "BLACK & DECKER Dusbuster 18.0V Flexi Handheld Vacuum",
-   "url": "https://www.thegoodguys.com.au/black-and-decker-dusbuster-180v-flexi-handheld-vacuum-pd1820l",
-   "price": 149,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50026381_823250.png?v=1776232865&width=284&height=284&quality=88",
+   "sku": "black-and-decker-72v-lithium-ion-dustbuster-cordless-hand-vacuum-nvc215w-xe",
+   "title": "BLACK & DECKER 7.2V Lithium-ion Dustbuster Cordless Hand Vacuum",
+   "url": "https://www.thegoodguys.com.au/black-and-decker-72v-lithium-ion-dustbuster-cordless-hand-vacuum-nvc215w-xe",
+   "price": 54,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50070017_679592.png?v=1776227328&width=284&height=284&quality=88",
    "inStock": true,
-   "mpn": "PD1820L",
    "brand": "BLACK"
   },
   {
@@ -250,6 +250,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "dyson-v8-cyclone-cordless-vacuum-226890-01",
+   "title": "Dyson V8 Cyclone Cordless Vacuum",
+   "url": "https://www.thegoodguys.com.au/dyson-v8-cyclone-cordless-vacuum-226890-01",
+   "price": 374,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50096116_1011432.png?v=1776231994&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "226890-01",
+   "brand": "Dyson"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "dyson-v8-cyclone-cordless-vacuum-plus-wash-head-686702-01",
    "title": "Dyson V8 Cyclone Cordless Vacuum + Wash-Head",
    "url": "https://www.thegoodguys.com.au/dyson-v8-cyclone-cordless-vacuum-plus-wash-head-686702-01",
@@ -392,6 +403,17 @@
   },
   {
    "retailer": "thegoodguys",
+   "sku": "hoover-air-reach-upright-vacuum-facuv26i",
+   "title": "Hoover Air Reach Upright Vacuum",
+   "url": "https://www.thegoodguys.com.au/hoover-air-reach-upright-vacuum-facuv26i",
+   "price": 249,
+   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50100832_1094706.png?v=1795410923&width=284&height=284&quality=88",
+   "inStock": true,
+   "mpn": "FACUV26I",
+   "brand": "Hoover"
+  },
+  {
+   "retailer": "thegoodguys",
    "sku": "hoover-commercial-10l-bagged-canister-vacuum-facbg25m",
    "title": "Hoover Commercial 10L Bagged Canister Vacuum",
    "url": "https://www.thegoodguys.com.au/hoover-commercial-10l-bagged-canister-vacuum-facbg25m",
@@ -410,17 +432,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50098990_1058305.png?v=1782104118&width=284&height=284&quality=88",
    "inStock": true,
    "mpn": "FACBP25D",
-   "brand": "Hoover"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "hoover-onepwr-emerge-essentials-cordless-vacuum-f18opsv24h",
-   "title": "Hoover ONEPWR Emerge Essentials Cordless Vacuum",
-   "url": "https://www.thegoodguys.com.au/hoover-onepwr-emerge-essentials-cordless-vacuum-f18opsv24h",
-   "price": 399,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50092799_939786.png?v=1776232434&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "F18OPSV24H",
    "brand": "Hoover"
   },
   {
@@ -495,17 +506,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50089198_898129.png?v=1776228172&width=284&height=284&quality=88",
    "inStock": true,
    "brand": "Karcher"
-  },
-  {
-   "retailer": "thegoodguys",
-   "sku": "lg-a9x-auto2-cordzero-stick-vacuum-with-all-in-one-tower-a9x-auto2",
-   "title": "LG A9X-AUTO2 CordZero Stick Vacuum with All-in-One Tower",
-   "url": "https://www.thegoodguys.com.au/lg-a9x-auto2-cordzero-stick-vacuum-with-all-in-one-tower-a9x-auto2",
-   "price": 997,
-   "image": "https://cdn.shopify.com/s/files/1/0641/9388/8321/files/50094318_1042647.png?v=1776232350&width=284&height=284&quality=88",
-   "inStock": true,
-   "mpn": "AUTO2",
-   "brand": "LG"
   },
   {
    "retailer": "thegoodguys",

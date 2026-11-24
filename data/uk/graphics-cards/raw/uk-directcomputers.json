@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:53:57.448Z",
+ "scrapedAt": "2026-11-24T04:55:25.428Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
@@ -13,14 +13,14 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "90-GA5KZZ-00UANF",
+   "sku": "B570 CL 10GO",
    "title": "Asrock Challenger Intel Arc B570 10GB OC GDDR6",
-   "url": "https://directcomputers.co.uk/products/asrock-intel-arc-b570-challenger-10gb-oc-10gb-ddr6-hdmi-3-dp-2600mhz-clock-led-indicator-overclocked",
-   "price": 307.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/19441bf2d6b915d3ebaab70f1e4aa3e4_49dfde8a-b2f8-4bfd-94da-ef5fc0433e6e.jpg?v=1791076187",
+   "url": "https://directcomputers.co.uk/products/asrock-intel-arc-b570-challenger-10gb-oc-graphics-card-10gb-gddr6-2600-mhz-base-clock-dual-fan-3x-displayports-1x-hdmi-port",
+   "price": 311.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/19441bf2d6b915d3ebaab70f1e4aa3e4.jpg?v=1781248027",
    "inStock": true,
    "brand": "ASROCK",
-   "mpn": "90-GA5KZZ-00UANF"
+   "mpn": "B570 CL 10GO"
   },
   {
    "retailer": "uk-directcomputers",
@@ -32,6 +32,17 @@
    "inStock": true,
    "brand": "ASUS",
    "mpn": "90YV0LD0-M0NA00"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "90YV0AT0-M0NA00",
+   "title": "ASUS GT1030-SL-2G-BRK NVIDIA GeForce GT 1030 2 GB GDDR5",
+   "url": "https://directcomputers.co.uk/products/asus-geforce-gt1030-2gb-ddr5-pcie3-dvi-hdmi-1506mhz-clock-silent-low-profile-bracket-included",
+   "price": 130.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a58350f3e7710121c8f84812a5f8d297.jpg?v=1764726515",
+   "inStock": true,
+   "brand": "ASUS",
+   "mpn": "90YV0AT0-M0NA00"
   },
   {
    "retailer": "uk-directcomputers",
@@ -54,6 +65,17 @@
    "inStock": true,
    "brand": "ASUS",
    "mpn": "90YV0MN0-M0NA00"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N5060AORUS ARI-8GD",
+   "title": "GIGABYTE AORUS GeForce RTX 5060 ARI 8G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/aorus-rtx-5060-8gb-ari",
+   "price": 582.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/c4a3b0b7bd62ed3a0b1cb36f09118bfde4190c3c87472309d1832f4ba6b22ea1.jpg?v=1790472684",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N5060AORUS ARI-8GD"
   },
   {
    "retailer": "uk-directcomputers",
@@ -136,6 +158,29 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "GV-N506TWF2OC-8GD",
+   "title": "GIGABYTE GeForce RTX 5060 Ti WINDFORCE OC 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0, 2587MHz Core Clock, 3 x DisplayPort, 1 x HDMI, GV-N506TWF2OC-8GD",
+   "url": "https://directcomputers.co.uk/products/gigabyte-5060-ti-8gb-windforce-oc",
+   "price": 584.99,
+   "wasPrice": 590.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/aed284bba794599a3fcdf65d90efa770.jpg?v=1770901520",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N506TWF2OC-8GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N5060WF2MAX OCV2-8GD",
+   "title": "GIGABYTE GeForce RTX 5060 WINDFORCE MAX OC V2 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0, 2512MHz Core Clock, 3 x DP, 1 x HDMI, NVIDIA DLSS 4, GV-N5060WF2MAX OCV2-8GD",
+   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5060-windforce-max-oc-v2-8gb-gddr7-graphics-card-3840-cuda-cores-2512-mhz-core-clock-dual-fan-3x-displayports-1x-hdmi-port",
+   "price": 534.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/92b3f3bbf0690dfdbb71d2b6bd37af99d38ee6dcc378ed5e60542589adbbdd1a.jpg?v=1790472046",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N5060WF2MAX OCV2-8GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "GV-N507TWF3OC-16GD",
    "title": "GIGABYTE GeForce RTX 5070 Ti WINDFORCE OC SFF 16G Graphics Card",
    "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5070-ti-windforce-oc-sff-16g-graphics-card-16gb-gddr7-8960-cuda-cores-2497-mhz-core-clock-triple-fan-3x-displayports-1x-hdmi-port",
@@ -162,7 +207,8 @@
    "sku": "GV-R9060XTGAMING OC-16GD",
    "title": "GIGABYTE Radeon RX 9060 XT GAMING OC 16G Graphics Card",
    "url": "https://directcomputers.co.uk/products/gigabyte-rx-9060-xt-16gb-gaming-oc",
-   "price": 818.99,
+   "price": 799.99,
+   "wasPrice": 818.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/7a80e96867e149e301763f658b58de53.jpg?v=1755482323",
    "inStock": true,
    "brand": "GIGABYTE",
@@ -184,8 +230,7 @@
    "sku": "NE63050018JE-1072F",
    "title": "Palit GeForce RTX 3050 StormX 6GB NVIDIA GDDR6",
    "url": "https://directcomputers.co.uk/products/palit-rtx3050-stormx-6gb-ddr6-dvi-hdmi-dp-1470mhz-clock-compact-design",
-   "price": 278.99,
-   "wasPrice": 295.99,
+   "price": 295.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a1d2c7e155a0455fdec56e73a93a2664_02df6f5e-195d-4704-9b36-86e6d8228834.jpg?v=1781245603",
    "inStock": true,
    "brand": "PALIT",
@@ -271,6 +316,16 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "VCNRTX2000EADA-SB",
+   "title": "PNY NVIDIA RTX 2000E Ada RTX 2000 Ada 16 GB GDDR6",
+   "url": "https://directcomputers.co.uk/products/pny-nvidia-rtx-2000e-ada-generaton-lowprofile-pci-express-x16-gen-4-0-single-slot-50w-16-gb-gddr6-ecc-128-bit-hdcp-2-2-and-hdmi-2-0-support-with-opt-adapter",
+   "price": 1115.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/0a6ae6a06305fe39dfe8c92b5326c835.jpg?v=1781259866",
+   "inStock": true,
+   "mpn": "VCNRTX2000EADA-SB"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "VCNRTXPRO2000-PB",
    "title": "PNY RTX PRO 2000 Blackwell NVIDIA 16 GB GDDR7",
    "url": "https://directcomputers.co.uk/products/pny-rtx-pro-2000-blackwell-16gb",
@@ -298,16 +353,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b1ad26e509c722fc267c78ea1a808a9c_7dea0ba9-73eb-49f7-a204-3e32d66e985f.jpg?v=1793499093",
    "inStock": true,
    "mpn": "VCNRTXPRO4500-PB"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "VCNRTX2000ADA-SB",
-   "title": "PNY RTX2000 Ada NVIDIA RTX 2000 Ada 16 GB GDDR6",
-   "url": "https://directcomputers.co.uk/products/pny-rtx2000-ada-professional-graphics-card-16gb-ddr6-4-mini-dp-2816-cuda-cores-dual-slot-low-profile-oem-brown-box",
-   "price": 1067.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/2ca016c05a64c2d424a8fd129e1bb6c3.jpg?v=1781186412",
-   "inStock": true,
-   "mpn": "VCNRTX2000ADA-SB"
   },
   {
    "retailer": "uk-directcomputers",

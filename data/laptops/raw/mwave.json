@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:25:06.901Z",
+ "scrapedAt": "2026-11-24T04:29:09.776Z",
  "offers": [
   {
    "retailer": "mwave",
@@ -67,7 +67,7 @@
    "url": "https://www.mwave.com.au/products/asus-expertbook-b1-14-fhd-laptop-core-7150u-16gb-512gb-w11p-ac96613",
    "price": 1489,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_expertbook_b1_14_fhd_laptop_core_7150u_16gb_512gb_w11p_ac96613_39162.jpg?v=1787795363",
-   "inStock": false,
+   "inStock": true,
    "brand": "Asus"
   },
   {
@@ -284,7 +284,7 @@
    "url": "https://www.mwave.com.au/products/asus-expertbook-b9-14-wqxga-ai-laptop-intel-core-ultra-x7-358h-64gb-1tb-w11p-ac97335",
    "price": 6499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_expertbook_b9_14_wqxga_ai_laptop_intel_core_ultra_x7_358h_64gb_1tb_w11p_ac97335_87364.jpg?v=1787795363",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -373,7 +373,7 @@
    "url": "https://www.mwave.com.au/products/asus-proart-p16-16-3k-120hz-laptop-ryzen-ai-9-465-32gb-1tb-ssd-rtx-5070-w11p-ts-nano-black-ac99445",
    "price": 4599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_proart_p16_16_3k_120hz_laptop_ryzen_ai_9_465_32gb_1tb_ssd_rtx_5070_w11p_ts_nano_black_ac99445_32803.jpg?v=1787795418",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -723,16 +723,6 @@
    "price": 1514.84,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_vivobook_16_m1607ka_16_ryzen_ai_5_16gb_512gb_laptop_silver_ac91894_93035.jpg?v=1787795501",
    "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "mwave",
-   "sku": "AC98740",
-   "title": "ASUS Vivobook 16\" FHD OLED Laptop - Ryzen 7 170 16GB 512GB W11H",
-   "url": "https://www.mwave.com.au/products/asus-vivobook-16-fhd-oled-laptop-ryzen-7-170-16gb-512gb-w11h-ac98740",
-   "price": 1325.37,
-   "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/asus_vivobook_16_fhd_oled_laptop_ryzen_7_170_16gb_512gb_w11h_ac98740_34578.jpg?v=1787795515",
-   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -1092,7 +1082,7 @@
    "url": "https://www.mwave.com.au/products/dell-pro-13-plus-pb13250-133-fhd-ai-copilot-laptop-intel-ultra-7266v-vpro-16gb-512gb-w11-pro-ac85083",
    "price": 2678.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/dell_pro_13_plus_pb13250_133_fhd_ai_copilot_laptop_intel_ultra_7266v_vpro_16gb_512gb_w11_pro_ac85083_62100.jpg?v=1787796219",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dell"
   },
   {
@@ -1160,7 +1150,7 @@
    "sku": "AD00006",
    "title": "Dell Pro 14 Essential PV14260 14\" FHD+ AI Laptop - Core Ultra 5-235U 16GB 512GB W11P",
    "url": "https://www.mwave.com.au/products/dell-pro-14-essential-pv14260-14-fhd-ai-laptop-core-ultra-5235u-16gb-512gb-w11p-ad00006",
-   "price": 1618,
+   "price": 1599,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/dell_pro_14_essential_pv14260_14_fhd_ai_laptop_core_ultra_5235u_16gb_512gb_w11p_ad00006_70472.jpg?v=1790126441",
    "inStock": true,
    "brand": "Dell"
@@ -1431,7 +1421,7 @@
    "url": "https://www.mwave.com.au/products/dell-pro-16-plus-pb16250-16-fhd-ai-copilot-laptop-intel-ultra-7266v-vpro-16gb-512gb-w11-pro-ac85095",
    "price": 2572.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/dell_pro_16_plus_pb16250_16_fhd_ai_copilot_laptop_intel_ultra_7266v_vpro_16gb_512gb_w11_pro_ac85095_56898.jpg?v=1787796220",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dell"
   },
   {
@@ -2279,7 +2269,7 @@
    "sku": "AC98367",
    "title": "Gigabyte Aorus Master Gen 2 16\" 240Hz WQXGA Gaming Laptop R9 9955HX3D 32GB 1TB RTX 5080 W11H",
    "url": "https://www.mwave.com.au/products/gigabyte-aorus-master-gen-2-16-240hz-wqxga-gaming-laptop-r9-9955hx3d-32gb-1tb-rtx-5080-w11h-ac98367",
-   "price": 5499,
+   "price": 5199,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/gigabyte_aorus_master_16_6yjm5aue64sh_ac98367_76273.jpg?v=1787796621",
    "inStock": true,
    "brand": "Gigabyte"
@@ -2361,7 +2351,7 @@
    "url": "https://www.mwave.com.au/products/hp-elitebook-6-g1a-14-wuxga-ai-laptop-ryzen-5340-16gb-512gb-radeon-graphics-w11p-ac94371",
    "price": 2878.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hp_elitebook_6_g1a_14_wuxga_laptop_ryzen_5340_16gb_512gb_radeon_graphics_w11p_ac94371_11963.jpg?v=1787796853",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hp"
   },
   {
@@ -2421,7 +2411,7 @@
    "url": "https://www.mwave.com.au/products/hp-elitebook-6-g1i-13-wuxga-ai-laptop-core-ultra-7255u-16gb-512gb-touch-w11-pro-ac85263",
    "price": 2807.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hp_elitebook_6_g1i_13_wuxga_ai_laptop_core_ultra_7255u_16gb_512gb_touch_w11_pro_ac85263_12683.jpg?v=1787796858",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hp"
   },
   {
@@ -2600,7 +2590,7 @@
    "url": "https://www.mwave.com.au/products/hp-elitebook-6-g2i-14-wuxga-ai-laptop-intel-core-ultra-5-325-16gb-512gb-w11p-ac98395",
    "price": 2783.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hp_elitebook_6_g2i_14_wuxga_ai_laptop_intel_core_ultra_5_325_16gb_512gb_w11p_ac98395_60065.jpg?v=1787785632",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hp"
   },
   {
@@ -3060,7 +3050,7 @@
    "url": "https://www.mwave.com.au/products/hp-elitebook-8-g1i-16-wuxga-ai-laptop-core-ultra-7255u-32gb-1tb-lte-5g-w11-pro-ac85180",
    "price": 4913.95,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hp_elitebook_8_g1i_16_wuxga_ai_laptop_core_ultra_7255u_32gb_1tb_lte_5g_w11_pro_ac85180_78240.jpg?v=1787796869",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hp"
   },
   {
@@ -3088,7 +3078,7 @@
    "sku": "AC85196",
    "title": "HP EliteBook 8 G1i 16\" WUXGA AI Laptop - Core Ultra 7-256V 16GB 512GB W11 PRO",
    "url": "https://www.mwave.com.au/products/hp-elitebook-8-g1i-16-wuxga-ai-laptop-core-ultra-7256v-16gb-512gb-w11-pro-ac85196",
-   "price": 2599,
+   "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/hp_elitebook_8_g1i_16_wuxga_ai_laptop_core_ultra_7256v_16gb_512gb_w11_pro_ac85196_76804.jpg?v=1787746078",
    "inStock": true,
    "brand": "Hp"
@@ -4497,7 +4487,7 @@
    "sku": "AC87903",
    "title": "Infinity Cobra 16\" 180Hz WQXGA AI Gaming Laptop Ryzen 5 AI 7 350 16GB 1TB RTX5070P W11H",
    "url": "https://www.mwave.com.au/products/infinity-cobra-16-180hz-wqxga-ai-gaming-laptop-ryzen-5-ai-7-350-16gb-1tb-rtx5070p-w11h-ac87903",
-   "price": 2999,
+   "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/infinity_cobra_16_180hz_wqxga_ai_gaming_laptop_ryzen_5_ai_7_350_16gb_1tb_rtx5070p_w11h_ac87903_8188.jpg?v=1787797055",
    "inStock": true,
    "brand": "Infinity"
@@ -4507,7 +4497,7 @@
    "sku": "AC87905",
    "title": "Infinity Cobra 16\" 180Hz WQXGA Gaming Laptop Ryzen 9 8940HX 16GB 1TB RTX5060P W11H",
    "url": "https://www.mwave.com.au/products/infinity-cobra-16-180hz-wqxga-gaming-laptop-ryzen-9-8940hx-16gb-1tb-rtx5060p-w11h-ac87905",
-   "price": 2699,
+   "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/infinity_cobra_16_180hz_wqxga_gaming_laptop_ryzen_9_8940hx_16gb_1tb_rtx5060p_w11h_ac87905_78847.jpg?v=1787797056",
    "inStock": true,
    "brand": "Infinity"
@@ -4527,7 +4517,7 @@
    "sku": "AC87907",
    "title": "Infinity Fox 16\" 180Hz WUXGA Gaming Laptop Ryzen 7 H255 16GB 1TB RTX5060P W11H",
    "url": "https://www.mwave.com.au/products/infinity-fox-16-180hz-wuxga-gaming-laptop-ryzen-7-h255-16gb-1tb-rtx5060p-w11h-ac87907",
-   "price": 2299,
+   "price": 2099,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/infinity_fox_16_180hz_wuxga_gaming_laptop_ryzen_7_h255_16gb_1tb_rtx5060p_w11h_ac87907_56743.jpg?v=1787797059",
    "inStock": true,
    "brand": "Infinity"
@@ -4537,7 +4527,7 @@
    "sku": "AC83263",
    "title": "Infinity W16 Series 16\" 300Hz QHD+ Gaming Laptop i9-13900HX 16GB 1TB RTX5070Ti W11H",
    "url": "https://www.mwave.com.au/products/infinity-w16-series-16-300hz-qhd-gaming-laptop-i913900hx-16gb-1tb-rtx5070ti-w11h-ac83263",
-   "price": 3999,
+   "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/infinity_w16_series_16_300hz_qhd_gaming_laptop_i913900hx_16gb_1tb_rtx5070ti_w11h_ac83263_88092.jpg?v=1787785842",
    "inStock": true,
    "brand": "Infinity"
@@ -4547,7 +4537,7 @@
    "sku": "AC83261",
    "title": "Infinity Y16 Series 16\" 300Hz QHD+ Gaming Laptop R9-9955HX 16GB 1TB RTX5070Ti W11H",
    "url": "https://www.mwave.com.au/products/infinity-y16-series-16-300hz-qhd-gaming-laptop-r99955hx-16gb-1tb-rtx5070ti-w11h-ac83261",
-   "price": 4899,
+   "price": 3899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/infinity_y16_series_16_300hz_qhd_gaming_laptop_r99955hx_32gb_1tb_rtx5070ti_w11h_ac83261_53809.jpg?v=1787746246",
    "inStock": false,
    "brand": "Infinity"
@@ -4557,7 +4547,7 @@
    "sku": "AC87605",
    "title": "Infinity Y16 Series 16\" 300Hz QHD+ Gaming Laptop R9-9955HX3D 32GB 1TB RTX5080P W11H",
    "url": "https://www.mwave.com.au/products/infinity-y16-series-16-300hz-qhd-gaming-laptop-r99955hx3d-32gb-1tb-rtx5080p-w11h-ac87605",
-   "price": 5999,
+   "price": 5299,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/infinity_y16_series_16_300hz_qhd_gaming_laptop_r99955hx3d_32gb_1tb_rtx5080p_w11h_ac87605_15898.jpg?v=1787746240",
    "inStock": false,
    "brand": "Infinity"
@@ -5139,7 +5129,7 @@
    "url": "https://www.mwave.com.au/products/microsoft-surface-138-ai-laptop-core-ultra-7-32gb-256gb-w11p-5g-commercial-platinum-ac86514",
    "price": 4169,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/microsoft_surface_for_business_138_ai_laptop_core_ultra_7_32gb_256gb_w11p_5g_platinum_ac86514_43591.jpg?v=1787797652",
-   "inStock": false,
+   "inStock": true,
    "brand": "Microsoft"
   },
   {
@@ -5249,7 +5239,7 @@
    "url": "https://www.mwave.com.au/products/microsoft-surface-laptop-7-138-core-ultra-5-16gb-512gb-w11p-commercial-platinum-copilot-pc-ac84526",
    "price": 3029,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/surface_laptop_7_for_education_138_core_ultra_5_16gb_512gb_w11p_platinum_copilot_pc_ac84526_56559.jpg?v=1787797662",
-   "inStock": true,
+   "inStock": false,
    "brand": "Microsoft"
   },
   {
@@ -5499,7 +5489,7 @@
    "url": "https://www.mwave.com.au/products/microsoft-surface-laptop-8-138-core-ultra-5-32gb-512gb-w11p-touch-commercial-black-copilot-pc-ac98233",
    "price": 4718.38,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/microsoft_surface_laptop_8_138_core_ultra_5_32gb_512gb_w11p_touch_commercial_black_copilot_pc_ac98233_63830.jpg?v=1787786452",
-   "inStock": false,
+   "inStock": true,
    "brand": "Microsoft"
   },
   {
@@ -5729,7 +5719,7 @@
    "url": "https://www.mwave.com.au/products/msi-cyborg-15-156-144hz-gaming-laptop-intel-core-i713620h-16gb-512gb-rtx-5060-w11h-wifi-6e-ac98178",
    "price": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_cyborg_15_156_144hz_gaming_laptop_intel_core_i713620h_16gb_512gb_rtx_5060_w11h_wifi_6e_ac98178_5448.jpg?v=1787797735",
-   "inStock": true,
+   "inStock": false,
    "brand": "MSI"
   },
   {
@@ -5809,7 +5799,7 @@
    "url": "https://www.mwave.com.au/products/msi-modern-14s-ai-g3mg-14-fhd-120hz-laptop-intel-core-ultra-7-355-16gb-512gb-w11h-ac99434",
    "price": 1628,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_modern_14s_ai_g3mg_14_fhd_120hz_laptop_intel_core_ultra_7_355_16gb_512gb_w11h_ac99434_36678.jpg?v=1787797772",
-   "inStock": false,
+   "inStock": true,
    "brand": "MSI"
   },
   {
@@ -5939,7 +5929,7 @@
    "url": "https://www.mwave.com.au/products/msi-prestige-16-flip-ai-16-120hz-28k-laptop-intel-core-ultra-9-386h-32gb-1tb-intel-graphics-w11h-ts-ad00461",
    "price": 2899,
    "image": "https://cdn.shopify.com/s/files/1/0708/6633/7923/files/msi_prestige_16_flip_ai_16_120hz_28k_laptop_intel_core_ultra_9_386h_32gb_1tb_intel_graphics_w11h_ts_ad00461_67678.jpg?v=1790126477",
-   "inStock": true,
+   "inStock": false,
    "brand": "MSI"
   },
   {

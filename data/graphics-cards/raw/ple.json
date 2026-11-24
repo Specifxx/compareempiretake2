@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:26:38.046Z",
+ "scrapedAt": "2026-11-24T04:29:41.459Z",
  "offers": [
   {
    "retailer": "ple",
@@ -416,6 +416,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "689386",
+   "title": "ASUS Radeon RX 9070 XT TUF Gaming OC Onimusha Edition 16GB GDDR6",
+   "brand": "ASUS",
+   "mpn": "TUF-RX9070XT-O16G-ONIMUSHA",
+   "url": "https://www.ple.com.au/products/689386/asus-radeon-rx-9070-xt-tuf-gaming-oc-onimusha-edition-16gb-gddr6",
+   "price": 2049,
+   "image": "https://plecom.imgix.net/iil-490634-689386.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
    "sku": "674107",
    "title": "Gigabyte GeForce RTX 3050 Windforce OC V2 6GB GDDR6",
    "brand": "Gigabyte",
@@ -424,7 +435,7 @@
    "price": 399,
    "wasPrice": 449,
    "image": "https://plecom.imgix.net/iil-423173-674107.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -469,18 +480,6 @@
    "url": "https://www.ple.com.au/products/675227/gigabyte-geforce-rtx-5060-ti-aero-oc-16gb-gddr7-white",
    "price": 1419,
    "image": "https://plecom.imgix.net/iil-427531-675227.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
-   "sku": "675236",
-   "title": "Gigabyte GeForce RTX 5060 Ti Eagle OC 8GB GDDR7",
-   "brand": "Gigabyte",
-   "mpn": "GV-N506TEAGLE OC-8GD",
-   "url": "https://www.ple.com.au/products/675236/gigabyte-geforce-rtx-5060-ti-eagle-oc-8gb-gddr7",
-   "price": 749,
-   "wasPrice": 949,
-   "image": "https://plecom.imgix.net/iil-427636-675236.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -549,8 +548,7 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5060WF2MAXV2-8GD",
    "url": "https://www.ple.com.au/products/687971/gigabyte-geforce-rtx-5060-windforce-max-v2-8gb-gddr7",
-   "price": 666,
-   "wasPrice": 699,
+   "price": 699,
    "image": "https://plecom.imgix.net/iil-484715-687971.jpg?w=600&h=600",
    "inStock": true
   },
@@ -879,7 +877,7 @@
    "brand": "MSI",
    "mpn": "GeForce RTX 5070 12G VENTUS 2X OC",
    "url": "https://www.ple.com.au/products/673860/msi-geforce-rtx-5070-12gb-gddr7-ventus-2x-oc",
-   "price": 1499,
+   "price": 1599,
    "image": "https://plecom.imgix.net/iil-421963-673860.jpg?w=600&h=600",
    "inStock": false
   },
@@ -1117,19 +1115,9 @@
    "brand": "PNY",
    "mpn": "VCG5070T16TFXXPB1-O",
    "url": "https://www.ple.com.au/products/672777/pny-geforce-rtx-5070-ti-argb-oc-16gb",
-   "price": 2229,
+   "price": 2049,
+   "wasPrice": 2229,
    "image": "https://plecom.imgix.net/iil-418381-672777.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
-   "sku": "672776",
-   "title": "PNY GeForce RTX 5080 Triple Fan 16GB GDDR7",
-   "brand": "PNY",
-   "mpn": "VCG508016TFXPB1",
-   "url": "https://www.ple.com.au/products/672776/pny-geforce-rtx-5080-triple-fan-16gb-gddr7",
-   "price": 3379,
-   "image": "https://plecom.imgix.net/iil-415699-672776.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -1197,7 +1185,7 @@
    "url": "https://www.ple.com.au/products/676092/sapphire-pure-radeon-rx-9060-xt-16gb-gddr6-white",
    "price": 849,
    "image": "https://plecom.imgix.net/iil-433060-676092.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1252,7 +1240,7 @@
    "url": "https://www.ple.com.au/products/678053/xfx-mercury-radeon-rx-9070-xt-oc-magnetic-air-edition-16gb-gddr6-white",
    "price": 1719,
    "image": "https://plecom.imgix.net/iil-441698-678053.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1373,7 +1361,7 @@
    "url": "https://www.ple.com.au/products/678054/xfx-swift-radeon-rx-9070-xt-triple-fan-gaming-edition-16gb-gddr6-",
    "price": 1659,
    "image": "https://plecom.imgix.net/iil-441703-678054.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",

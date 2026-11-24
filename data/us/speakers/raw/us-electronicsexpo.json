@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:40:32.251Z",
+ "scrapedAt": "2026-11-24T04:41:49.573Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -86,6 +86,28 @@
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/bose-soundlink-micro-bluetooth-speaker-bose-black-2nd-gen-product-type-4184851.jpg?v=1787790503",
    "inStock": true,
    "brand": "Bose"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "BUMBBMBBLK.FBA",
+   "title": "Bumpboxx MicroBoom Wearable Bluetooth Speaker, Gunmetal Grey, 24\" Chain Black",
+   "url": "https://www.electronicsexpo.com/products/bumpboxx-microboom-wearable-necklace-bluetooth-speaker-boombox-bluetooth-portable-speaker-includes-24-chain-rechargeable-li-ion-battery-add-music-to-the-latest-fashion-trend-gunmetal-grey?variant=50940306620591",
+   "price": 39,
+   "wasPrice": 69,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/71zzQLkwGpL._AC_SL1500.avif?v=1795464952",
+   "inStock": true,
+   "brand": "Bumpboxx"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "BUMBGNMTLGRY.FBA",
+   "title": "Bumpboxx MicroBoom Wearable Bluetooth Speaker, Gunmetal Grey, 24\" Chain Gray",
+   "url": "https://www.electronicsexpo.com/products/bumpboxx-microboom-wearable-necklace-bluetooth-speaker-boombox-bluetooth-portable-speaker-includes-24-chain-rechargeable-li-ion-battery-add-music-to-the-latest-fashion-trend-gunmetal-grey?variant=50940306587823",
+   "price": 41.4,
+   "wasPrice": 69,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/81-i_zZk50L._AC_SL1500.avif?v=1795464931",
+   "inStock": true,
+   "brand": "Bumpboxx"
   },
   {
    "retailer": "us-electronicsexpo",
@@ -229,7 +251,7 @@
    "url": "https://www.electronicsexpo.com/products/denon-home-150-wireless-speaker-2020-model-heos-built-in-airplay-2-and-bluetooth-alexa-compatible-compact-design-white-denhome150wh",
    "price": 249,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/denon-home-150-white-wireless-speaker-white-6366583.jpg?v=1753293241",
-   "inStock": true,
+   "inStock": false,
    "brand": "Denon",
    "mpn": "DENHOME150WH.FBA"
   },
@@ -776,7 +798,8 @@
    "sku": "JBLGO5ORG.FBA",
    "title": "JBL Go 5 Portable Waterproof Bluetooth Speaker Orange",
    "url": "https://www.electronicsexpo.com/products/jbl-go-5-ultra-portable-waterproof-drop-proof-speaker-with-jbl-legendary-sound-ambient-edge-lighting-airtouch-instant-stereo-pairing-or-link-multiple-compatible-speakers-via-auracast?variant=47159054139567",
-   "price": 54.95,
+   "price": 49.95,
+   "wasPrice": 54.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-go-5-portable-waterproof-bluetooth-speaker-product-type-4837975.jpg?v=1783702689",
    "inStock": true,
    "mpn": "JBLGO5ORG.FBA"
@@ -1423,7 +1446,7 @@
    "url": "https://www.electronicsexpo.com/products/kanto-ora-100w-powered-reference-desktop-speakers-with-bluetooth-pair?variant=44928250380463",
    "price": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/kanto-oram-100w-powered-reference-desktop-speakers-with-bluetooth-1169472.jpg?v=1753291979",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kanto"
   },
   {
@@ -1473,8 +1496,7 @@
    "sku": "KANORAMGREEN.FBA",
    "title": "Kanto ORAM 100W Powered Reference Desktop Speakers with Bluetooth Moss",
    "url": "https://www.electronicsexpo.com/products/kanto-ora-100w-powered-reference-desktop-speakers-with-bluetooth-pair?variant=44928273449135",
-   "price": 259.99,
-   "wasPrice": 349.99,
+   "price": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/kanto-oram-100w-powered-reference-desktop-speakers-with-bluetooth-certified-refurbished-3008434.jpg?v=1753289034",
    "inStock": false,
    "brand": "Kanto"
@@ -1690,7 +1712,7 @@
    "price": 249.99,
    "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/klipsch-the-three-ii-bluetooth-stereo-speaker-matte-black-1997009.jpg?v=1753293239",
-   "inStock": true,
+   "inStock": false,
    "brand": "Klipsch",
    "mpn": "KLPTHE3IIBLK.FBA"
   },
@@ -1814,7 +1836,8 @@
    "sku": "POLR350BLACK.FBA",
    "title": "Polk Audio Reserve R350 Multi-Purpose Wall-Mountable Home Theater Speaker",
    "url": "https://www.electronicsexpo.com/products/polk-audio-reserve-series-r350-slim-center-channel-speaker-black",
-   "price": 649,
+   "price": 519,
+   "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/polk-audio-reserve-r350-multi-purpose-wall-mountable-home-theater-speaker-product-type-7970515.jpg?v=1794469757",
    "inStock": true,
    "brand": "Polk Audio",

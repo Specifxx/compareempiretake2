@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T01:07:02.052Z",
+ "scrapedAt": "2026-11-24T05:08:11.702Z",
  "offers": [
   {
    "retailer": "ca-thecamerastore",
@@ -300,7 +300,7 @@
    "url": "https://www.thecamerastore.com/products/canon-powershot-g7x-mark-iii-30th-anniversary-edition",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0343/5246/3917/files/Canon-PowerShot-G7X-III-Graphite.jpg?v=1794926249",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon",
    "mpn": "7563C018"
   },
@@ -3117,7 +3117,7 @@
    "sku": "P910844",
    "title": "Ricoh Theta X Camera",
    "url": "https://www.thecamerastore.com/products/ricoh-theta-x",
-   "price": 719.99,
+   "price": 699.99,
    "wasPrice": 799.99,
    "image": "https://cdn.shopify.com/s/files/1/0343/5246/3917/products/Ricoh-Theta-X.jpg?v=1779991778",
    "inStock": true,
@@ -3129,7 +3129,8 @@
    "sku": "ROD-WIMICROCKIT",
    "title": "Rode Wireless Micro Camera Kit",
    "url": "https://www.thecamerastore.com/products/rode-wireless-micro-camera-kit",
-   "price": 209,
+   "price": 189,
+   "wasPrice": 209,
    "image": "https://cdn.shopify.com/s/files/1/0343/5246/3917/files/Rode-Wirelesss-Micro-Camera-Kit.jpg?v=1779903017",
    "inStock": true,
    "brand": "RØDE"

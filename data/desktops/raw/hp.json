@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-21T23:58:47.510Z",
+ "scrapedAt": "2026-11-24T04:28:50.257Z",
  "offers": [
   {
    "retailer": "hp",
@@ -219,7 +219,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-elitedesk-8-mini-g1i-desktop-ai-pc-bp0f9pt.html",
    "price": 2799,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitedesk-8-mini-g1i-desktop-ai-pc-front.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -227,7 +227,7 @@
    "mpn": "BP0G1PT",
    "brand": "HP",
    "title": "HP EliteDesk 8 Mini G1i Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-elitedesk-8-mini-g1i-desktop-ai-pc-bp0g1pt-4.html",
+   "url": "https://www.hp.com/au-en/shop/hp-elitedesk-8-mini-g1i-desktop-ai-pc-bp0g1pt.html",
    "price": 3299,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitedesk-8-mini-g1i-desktop-ai-pc-front_1.png",
    "inStock": false
@@ -307,7 +307,7 @@
    "url": "https://www.hp.com/au-en/shop/hp-eliteone-840-g9-all-in-one-pc-a41jhpt.html",
    "price": 2459,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/c/0/c08174810_9.png",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "hp",
@@ -322,17 +322,6 @@
   },
   {
    "retailer": "hp",
-   "sku": "C0YD2PT",
-   "mpn": "C0YD2PT",
-   "brand": "HP",
-   "title": "HP EliteStudio 8 All-in-One G1i 23.8 inch Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-23-8-inch-desktop-ai-pc-c0yd2pt.html",
-   "price": 3299,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitestudio-8-aio-g1i-23.8-pc-front_2.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
    "sku": "C0XD9PT",
    "mpn": "C0XD9PT",
    "brand": "HP",
@@ -344,11 +333,22 @@
   },
   {
    "retailer": "hp",
+   "sku": "C0YD2PT",
+   "mpn": "C0YD2PT",
+   "brand": "HP",
+   "title": "HP EliteStudio 8 All-in-One G1i 23.8 inch Desktop AI PC",
+   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-23-8-inch-desktop-ai-pc-c0yd2pt.html",
+   "price": 3299,
+   "image": "https://au-media.apjonlinecdn.com/catalog/product/h/p/hp-elitestudio-8-aio-g1i-23.8-pc-front_2.png",
+   "inStock": false
+  },
+  {
+   "retailer": "hp",
    "sku": "C0WU0PT",
    "mpn": "C0WU0PT",
    "brand": "HP",
    "title": "HP EliteStudio 8 All-in-One G1i 23.8 inch Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-23-8-inch-desktop-ai-pc-c0wu0pt-4.html",
+   "url": "https://www.hp.com/au-en/shop/hp-elitestudio-8-all-in-one-g1i-23-8-inch-desktop-ai-pc-c0wu0pt.html",
    "price": 3102,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/C/0/C0WU0PT-1_T1764205288.png",
    "inStock": false
@@ -465,17 +465,6 @@
   },
   {
    "retailer": "hp",
-   "sku": "B0PN0PA",
-   "mpn": "B0PN0PA",
-   "brand": "HP",
-   "title": "HP OmniStudio X All-in-One 31.5 inch Desktop PC 32-c0000a",
-   "url": "https://www.hp.com/au-en/shop/hp-omnistudio-x-all-in-one-32-c0000a-desktop-pc-b0pn0pa.html",
-   "price": 2999,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/B/0/B0PN0PA-1_T1738025818.png",
-   "inStock": false
-  },
-  {
-   "retailer": "hp",
    "sku": "BD0R6PA",
    "mpn": "BD0R6PA",
    "brand": "HP",
@@ -557,7 +546,7 @@
    "mpn": "B29XLPT",
    "brand": "HP",
    "title": "HP Pro Small Form Factor 400 G9 Desktop PC",
-   "url": "https://www.hp.com/au-en/shop/hp-pro-small-form-factor-400-g9-desktop-pc-b29xlpt.html",
+   "url": "https://www.hp.com/au-en/shop/hp-pro-small-form-factor-400-g9-desktop-pc-b29xlpt-3.html",
    "price": 2149,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/B/2/B29XLPT-1_T1748419835.png",
    "inStock": false
@@ -601,7 +590,7 @@
    "mpn": "C3QQ7PT",
    "brand": "HP",
    "title": "HP ProStudio 4 All-in-One G1i 23.8 inch Desktop AI PC",
-   "url": "https://www.hp.com/au-en/shop/hp-prostudio-4-all-in-one-g1i-23-8-inch-desktop-ai-pc-c3qq7pt-4.html",
+   "url": "https://www.hp.com/au-en/shop/hp-prostudio-4-all-in-one-g1i-23-8-inch-desktop-ai-pc-c3qq7pt.html",
    "price": 2832,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/_1",
    "inStock": false
@@ -791,17 +780,6 @@
    "url": "https://www.hp.com/au-en/shop/omen-35l-gaming-desktop-gt16-0129a-pc-b94pcpa.html",
    "price": 7699,
    "image": "https://au-media.apjonlinecdn.com/catalog/product/2/4/24c2_omen_snowball_35l_glass_arctic_liquidcooling_rtx4090_4x8_kingstonfurye_argb_shadow_black_coreset_front_2_1.png",
-   "inStock": true
-  },
-  {
-   "retailer": "hp",
-   "sku": "B9FL9PA",
-   "mpn": "B9FL9PA",
-   "brand": "HP",
-   "title": "OMEN 35L Gaming Desktop PC GT16-0132a",
-   "url": "https://www.hp.com/au-en/shop/omen-35l-gaming-desktop-gt16-0132a-pc-b9fl9pa.html",
-   "price": 6299,
-   "image": "https://au-media.apjonlinecdn.com/catalog/product/2/4/24c2_omen_snowball_35l_glass_arctic_liquidcooling_rtx4090_4x8_kingstonfurye_argb_shadow_black_coreset_front_4.png",
    "inStock": true
   },
   {

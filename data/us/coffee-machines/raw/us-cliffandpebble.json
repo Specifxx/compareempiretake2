@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:39:37.244Z",
+ "scrapedAt": "2026-11-24T04:40:52.658Z",
  "offers": [
   {
    "retailer": "us-cliffandpebble",
@@ -174,7 +174,7 @@
    "price": 699,
    "wasPrice": 1699.95,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/5_2fafa184-fcea-4343-9860-4a122d8f0355.png?v=1738091116",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lelit"
   },
   {
@@ -195,7 +195,7 @@
    "url": "https://cliffandpebble.com/products/lelit-mara-x?variant=44833940635921",
    "price": 1699.95,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/lelit_mara_x_v2_black_espresso_machine.png?v=1775317749",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lelit",
    "mpn": "MARAX-2"
   },
@@ -445,7 +445,7 @@
    "sku": "68099173089553",
    "title": "LUCCA M58 Sunto Espresso Machine - Buyer's Remorse",
    "url": "https://cliffandpebble.com/products/lucca-m58-sunto-espresso-machine-buyers-remorse-1",
-   "price": 2499,
+   "price": 2399,
    "wasPrice": 2995,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/1_dcf4bf49-542d-43e6-99a3-5cdbb9dae0d9.png?v=1778782426",
    "inStock": true,
@@ -836,6 +836,17 @@
    "inStock": true,
    "brand": "Turin",
    "mpn": "sku-42369243676747"
+  },
+  {
+   "retailer": "us-cliffandpebble",
+   "sku": "68170256122129",
+   "title": "Turin Legato V2 Espresso Machine (Black) - Buyer's Remorse",
+   "url": "https://cliffandpebble.com/products/turin-legato-v2-espresso-machine-black-buyers-remorse",
+   "price": 319,
+   "wasPrice": 499,
+   "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/turin_legato_black.png?v=1759429549",
+   "inStock": false,
+   "brand": "Turin"
   },
   {
    "retailer": "us-cliffandpebble",

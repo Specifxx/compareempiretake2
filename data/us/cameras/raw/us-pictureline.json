@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:43:26.837Z",
+ "scrapedAt": "2026-11-24T04:44:52.401Z",
  "offers": [
   {
    "retailer": "us-pictureline",
@@ -223,7 +223,7 @@
    "price": 1999,
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/products/CanonR61.jpg?v=1704233885",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon",
    "mpn": "5666C002"
   },
@@ -787,7 +787,7 @@
    "url": "https://www.pictureline.com/products/fujifilm-x100vi-digital-camera-black-1",
    "price": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/X100VI-Digital-Camera-Black-1.jpg?v=1708368376",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -1224,7 +1224,8 @@
    "sku": "1784",
    "title": "Nikon Z50 II Mirrorless Camera",
    "url": "https://www.pictureline.com/products/nikon-z50-ii-mirrorless-camera",
-   "price": 1006.95,
+   "price": 956.95,
+   "wasPrice": 1006.95,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Z50-II-Mirrorless-Camera-1.jpg?v=1771436270",
    "inStock": true,
    "brand": "Nikon"
@@ -1344,7 +1345,7 @@
    "sku": "V110030BU000",
    "title": "Olympus Tough TG-7 Camera (Black)",
    "url": "https://www.pictureline.com/products/olympus-tough-tg-7-camera-black",
-   "price": 579.99,
+   "price": 549.99,
    "wasPrice": 649.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Tough-TG-7-Camera-Black-1.jpg?v=1705363198",
    "inStock": true,
@@ -1356,7 +1357,7 @@
    "sku": "V110030RU000",
    "title": "Olympus Tough TG-7 Camera (Red)",
    "url": "https://www.pictureline.com/products/olympus-tough-tg-7-camera-red",
-   "price": 579.99,
+   "price": 549.99,
    "wasPrice": 649.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Tough-TG-7-Camera-Red-1.jpg?v=1705336196",
    "inStock": true,
@@ -1491,7 +1492,7 @@
    "url": "https://www.pictureline.com/products/ricoh-gr-iv-hdf-compact-camera",
    "price": 1696.95,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/Ricoh-GR-IV-Compact-Camera-7.jpg?v=1756162146",
-   "inStock": true,
+   "inStock": false,
    "brand": "Ricoh"
   },
   {

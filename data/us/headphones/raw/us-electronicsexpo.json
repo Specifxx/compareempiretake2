@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:40:32.252Z",
+ "scrapedAt": "2026-11-24T04:41:49.574Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -31,7 +31,7 @@
    "url": "https://www.electronicsexpo.com/products/akg-pro-audio-k361-over-ear-closed-back-foldable-studio-headphones-akgk361",
    "price": 99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/akg-pro-audio-k361-over-ear-closed-back-foldable-studio-headphones-product-type-9728419.jpg?v=1762646733",
-   "inStock": false,
+   "inStock": true,
    "mpn": "AKGK361.FBA"
   },
   {
@@ -51,7 +51,7 @@
    "url": "https://www.electronicsexpo.com/products/akg-pro-audio-k371-over-ear-closed-back-foldable-studio-headphones-akgk371",
    "price": 149,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/akg-pro-audio-k371-over-ear-closed-back-foldable-studio-headphones-3719027.jpg?v=1753293149",
-   "inStock": true,
+   "inStock": false,
    "mpn": "AKGK371.FBA"
   },
   {
@@ -103,7 +103,7 @@
    "url": "https://www.electronicsexpo.com/products/audio-technica-ath-al5nc-wireless-open-back-headphones",
    "price": 279,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/audio-technica-ath-al5nc-wireless-open-back-headphones-product-type-7476646.jpg?v=1794902415",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audio-Technica",
    "mpn": "AUDATHAL5NC.FBA"
   },
@@ -417,7 +417,8 @@
    "sku": "BEYDT1770PROII",
    "title": "Beyerdynamic DT 1770 PRO MKII Premium Tesla Studio Headphones for Recording, Monitoring and Editing (closed-back)",
    "url": "https://www.electronicsexpo.com/products/beyerdynamic-nbsp-dt-1770-pro-mkii-premium-tesla-studio-headphones-for-recording-monitoring-and-editing-closed-back",
-   "price": 699.99,
+   "price": 439.99,
+   "wasPrice": 699.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/beyerdynamic-dt-1770-pro-mkii-premium-tesla-studio-headphones-for-recording-monitoring-and-editing-closed-back-6446874.webp?v=1753289437",
    "inStock": true,
    "brand": "Beyerdynamic",
@@ -428,7 +429,7 @@
    "sku": "BEYDT1990PRO.FBA",
    "title": "Beyerdynamic DT 1990 PRO MKII Premium Tesla Studio Headphones",
    "url": "https://www.electronicsexpo.com/products/beyerdynamic-dt-1990-pro-mkii-premium-tesla-studio-headphones-for-mixing-mastering-and-editing",
-   "price": 499.99,
+   "price": 449.99,
    "wasPrice": 699.99,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/beyerdynamic-dt-1990-pro-mkii-premium-tesla-studio-headphones-4005614.jpg?v=1753290028",
    "inStock": false,
@@ -931,7 +932,7 @@
    "url": "https://www.electronicsexpo.com/products/jbl-endurance-peak-3-dust-and-waterproof-true-wireless-active-earbuds?variant=42498808971439",
    "price": 109.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/jbl-endurance-peak-3-dust-and-waterproof-true-wireless-active-earbuds-4888436.jpg?v=1753292455",
-   "inStock": true,
+   "inStock": false,
    "mpn": "JBLENDURPE3WHT.FBA"
   },
   {
@@ -1154,6 +1155,50 @@
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-live-670nc-wireless-on-ear-noise-cancelling-headphones-6841211.jpg?v=1753291857",
    "inStock": false,
    "mpn": "JBLLIVE670NCWH.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "JBLLIVE680NCBK.FBA",
+   "title": "JBL Live 680NC (2026): Wireless on-ear Noise Cancelling Headphones Black",
+   "url": "https://www.electronicsexpo.com/products/jbl-live-680nc-wireless-on-ear-true-adaptive-noise-cancelling-headphones-jbl-signature-sound-with-hi-res-audio-2-mic-perfect-calls-2-0-with-ai-trained-algorithm-personi-fi-3-0-white?variant=50940585803951",
+   "price": 79.95,
+   "wasPrice": 159.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/710_4JPV6DL._AC_SL1500.avif?v=1795468879",
+   "inStock": true,
+   "mpn": "JBLLIVE680NCBK.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "JBLLIVE680NCCP.FBA",
+   "title": "JBL Live 680NC (2026): Wireless on-ear Noise Cancelling Headphones Champagne",
+   "url": "https://www.electronicsexpo.com/products/jbl-live-680nc-wireless-on-ear-true-adaptive-noise-cancelling-headphones-jbl-signature-sound-with-hi-res-audio-2-mic-perfect-calls-2-0-with-ai-trained-algorithm-personi-fi-3-0-white?variant=50940585869487",
+   "price": 79.95,
+   "wasPrice": 159.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/71D0Qc0o0rL._AC_SL1500.avif?v=1795468906",
+   "inStock": true,
+   "mpn": "JBLLIVE680NCCP.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "JBLLIVE680NCGN.FBA",
+   "title": "JBL Live 680NC (2026): Wireless on-ear Noise Cancelling Headphones Green",
+   "url": "https://www.electronicsexpo.com/products/jbl-live-680nc-wireless-on-ear-true-adaptive-noise-cancelling-headphones-jbl-signature-sound-with-hi-res-audio-2-mic-perfect-calls-2-0-with-ai-trained-algorithm-personi-fi-3-0-white?variant=50940585836719",
+   "price": 79.95,
+   "wasPrice": 159.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/71DlF99rFKL._AC_SL1500.avif?v=1795468860",
+   "inStock": true,
+   "mpn": "JBLLIVE680NCGN.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "JBLLIVE680NCWH.FBA",
+   "title": "JBL Live 680NC (2026): Wireless on-ear Noise Cancelling Headphones White",
+   "url": "https://www.electronicsexpo.com/products/jbl-live-680nc-wireless-on-ear-true-adaptive-noise-cancelling-headphones-jbl-signature-sound-with-hi-res-audio-2-mic-perfect-calls-2-0-with-ai-trained-algorithm-personi-fi-3-0-white?variant=50940585771183",
+   "price": 79.95,
+   "wasPrice": 159.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/61h8WVHMDYL._AC_SL1500.avif?v=1795468826",
+   "inStock": true,
+   "mpn": "JBLLIVE680NCWH.FBA"
   },
   {
    "retailer": "us-electronicsexpo",
@@ -1451,6 +1496,17 @@
   },
   {
    "retailer": "us-electronicsexpo",
+   "sku": "JBLQTUM650XBLK.FBA",
+   "title": "JBL Quantum 650X - Wireless Multiplatform Over-Ear Gaming Headset (Black)",
+   "url": "https://www.electronicsexpo.com/products/jbl-quantum-650x-wireless-multiplatform-gaming-headset-customizable-through-jbl-quantumengine-50mm-carbon-dynamic-drivers-spatial-sound-dual-wireless-connection-replaceable-components-black",
+   "price": 159.95,
+   "wasPrice": 199.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1747872.jpg?v=1774969359",
+   "inStock": true,
+   "mpn": "JBLQTUM650XBLK.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
    "sku": "JBLQUANTUM810.FBA",
    "title": "JBL Quantum 810 Wireless Gaming Headphones",
    "url": "https://www.electronicsexpo.com/products/jbl-quantum-810-wireless-over-ear-performance-gaming-headset-with-noise-cancelling",
@@ -1643,7 +1699,7 @@
    "price": 89.95,
    "wasPrice": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-soundgear-sense-true-wireless-open-ear-headphones-4100948.jpg?v=1753291910",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-electronicsexpo",
@@ -2507,7 +2563,8 @@
    "sku": "MEZPOET.FBA",
    "title": "Meze Audio Poet Open-Back Over-Ear Headphones",
    "url": "https://www.electronicsexpo.com/products/meze-audio-poet-wired-over-ear-planar-magnetic-open-back-headphones-for-audiophiles-acoustic-metamaterial-tuning-system-detachable-magnetic-earpads-premium-braided-cable-included",
-   "price": 2000,
+   "price": 1600,
+   "wasPrice": 2000,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/meze-audio-poet-open-back-over-ear-headphones-product-type-7034794.jpg?v=1794990609",
    "inStock": true,
    "brand": "MEZE AUDIO"
@@ -2814,7 +2871,7 @@
    "sku": "SENHD600.FBA",
    "title": "Sennheiser HD 600 Audiophile Hi-Res Open Back Over-Ear Headphone",
    "url": "https://www.electronicsexpo.com/products/sennheiser-hd-600-audiophile-hi-res-open-back-dynamic-headphone",
-   "price": 329.95,
+   "price": 294.95,
    "wasPrice": 499.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/sennheiser-hd-600-audiophile-hi-res-open-back-over-ear-headphone-4371405.jpg?v=1753292681",
    "inStock": true,
@@ -2994,7 +3051,8 @@
    "sku": "SENM5AEBTBK.FBA",
    "title": "Sennheiser Momentum 5 Wireless Over-Ear Noise-Canceling Bluetooth Headphones Black",
    "url": "https://www.electronicsexpo.com/products/sennheiser-momentum-5-wireless-headphones-anc-57-hr-battery-white?variant=50895223423151",
-   "price": 399.95,
+   "price": 339.95,
+   "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/Sennheiser_Momentum_5-black.avif?v=1794861550",
    "inStock": true,
    "brand": "Sennheiser",
@@ -3005,7 +3063,8 @@
    "sku": "SENM5AEBTBRZ.FBA",
    "title": "Sennheiser Momentum 5 Wireless Over-Ear Noise-Canceling Bluetooth Headphones Bronze",
    "url": "https://www.electronicsexpo.com/products/sennheiser-momentum-5-wireless-headphones-anc-57-hr-battery-white?variant=50895234203823",
-   "price": 399.95,
+   "price": 339.95,
+   "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/SENM5AEBTBRZ-bronze.avif?v=1794862015",
    "inStock": false,
    "brand": "Sennheiser",
@@ -3016,7 +3075,8 @@
    "sku": "SENM5AEBTLAV.FBA",
    "title": "Sennheiser Momentum 5 Wireless Over-Ear Noise-Canceling Bluetooth Headphones Lavender",
    "url": "https://www.electronicsexpo.com/products/sennheiser-momentum-5-wireless-headphones-anc-57-hr-battery-white?variant=50895226994863",
-   "price": 399.95,
+   "price": 339.95,
+   "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/Sennheiser_Momentum_5-1.avif?v=1794861722",
    "inStock": false,
    "brand": "Sennheiser",
@@ -3027,7 +3087,8 @@
    "sku": "SENM5AEBTWH.FBA",
    "title": "Sennheiser Momentum 5 Wireless Over-Ear Noise-Canceling Bluetooth Headphones White",
    "url": "https://www.electronicsexpo.com/products/sennheiser-momentum-5-wireless-headphones-anc-57-hr-battery-white?variant=50895216967855",
-   "price": 399.95,
+   "price": 339.95,
+   "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/sennheiser-momentum-5-wireless-over-ear-noise-canceling-bluetooth-headphones-product-type-1270531.jpg?v=1794902415",
    "inStock": true,
    "brand": "Sennheiser",

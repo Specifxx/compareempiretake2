@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T01:00:56.949Z",
+ "scrapedAt": "2026-11-24T05:01:54.871Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -27,7 +27,7 @@
    "brand": "ASUS",
    "title": "ASUS ProArt P16 NVIDIA RTX SPARK N1X 20-CORE CPU 16.0 OLED Touchscreen 3K 120Hz 32GB 1TB Pro AI Laptop",
    "url": "https://www.overclockers.co.uk/asus-proart-p16-nvidia-rtx-spark-n1x-20-core-cpu-16.0-oled-touchscreen-3k-120hz-32gb-1tb-pro-ai-laptop/LAP-ASU-09269.html",
-   "price": 3199.99,
+   "price": 3299.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw261a2af6/images/data/product/b5/83312d/03791f634035067a5cafd28fd94b27b7e98d5496.jpg?sw=500",
    "inStock": true
   },
@@ -43,16 +43,6 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "LAP-ASU-08428",
-   "brand": "ASUS",
-   "title": "ASUS ROG Strix G16 NVIDIA RTX 5060 16GB 16 WUXGA 165Hz AMD Ryzen R9-8940HX Gaming Laptop",
-   "url": "https://www.overclockers.co.uk/asus-rog-strix-g16-nvidia-rtx-5060-16gb-16-wuxga-165hz-amd-ryzen-r9-8940hx-gaming-laptop/LAP-ASU-08428.html",
-   "price": 1599.95,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw2c005a27/images/data/product/af/c4db5b/f6b7c9349e347525c600e25f19b2fb27ab539295.jpg?sw=500",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "LAP-ASU-05804",
    "brand": "ASUS",
    "title": "ASUS ROG Strix G16 NVIDIA RTX 5060 16GB 16 WUXGA 165Hz AMD Ryzen R9-8940HX Gaming Laptop",
@@ -60,6 +50,16 @@
    "price": 1499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwb14f2368/images/data/product/3f/4cbda0/b297c33b005d6372756cb4fab5bc4ee60bea3cb4.jpg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-ASU-08428",
+   "brand": "ASUS",
+   "title": "ASUS ROG Strix G16 NVIDIA RTX 5060 16GB 16 WUXGA 165Hz AMD Ryzen R9-8940HX Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/asus-rog-strix-g16-nvidia-rtx-5060-16gb-16-wuxga-165hz-amd-ryzen-r9-8940hx-gaming-laptop/LAP-ASU-08428.html",
+   "price": 1599.95,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw2c005a27/images/data/product/af/c4db5b/f6b7c9349e347525c600e25f19b2fb27ab539295.jpg?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -227,9 +227,9 @@
    "brand": "ASUS",
    "title": "ASUS TUF Gaming A16 NVIDIA RTX 5060 16GB 16 WUXGA 144Hz AMD Ryzen 7 260 Gaming Laptop",
    "url": "https://www.overclockers.co.uk/asus-tuf-gaming-a16-nvidia-rtx-5060-16gb-16-wuxga-144hz-amd-ryzen-7-260-gaming-laptop/LAP-ASU-07595.html",
-   "price": 1299.95,
+   "price": 1399.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw4e505307/images/data/product/09/498840/1493247fe8d1983de4942478569d1b8c5acfa5e8.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -247,9 +247,9 @@
    "brand": "ASUS",
    "title": "ASUS TUF Gaming A16 NVIDIA RTX 5070 16GB 16.0 FHD 144Hz AMD R9-8940HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/asus-tuf-gaming-a16-nvidia-rtx-5070-16gb-16.0-fhd-144hz-amd-r9-8940hx-gaming-laptop/LAP-ASU-08427.html",
-   "price": 1499.99,
+   "price": 1599.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwbf3bcf6b/images/data/product/c2/1e89e8/a42b6641281a7443f20107be6e4f2d41768c8205.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -287,7 +287,7 @@
    "brand": "ASUS",
    "title": "ASUS Vivobook 15 16GB 15.6\" FHD 512GB AMD Ryzen 9 7940HS Laptop",
    "url": "https://www.overclockers.co.uk/asus-vivobook-15-16gb-15.6-fhd-512gb-amd-ryzen-9-7940hs-laptop/LAP-ASU-09484.html",
-   "price": 1099.99,
+   "price": 899.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5249f443/images/data/product/62/1e9d95/7adf6fc8c8d831447b28409f8686582d62608047.jpg?sw=500",
    "inStock": true
   },
@@ -307,7 +307,7 @@
    "brand": "ASUS",
    "title": "ASUS Vivobook 17 8GB 17.3\" FHD 512GB Intel Core 5 120U Laptop",
    "url": "https://www.overclockers.co.uk/asus-vivobook-17-8gb-17.3-fhd-512gb-intel-core-5-120u-laptop/LAP-ASU-08728.html",
-   "price": 549.95,
+   "price": 499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwddcea39d/images/data/product/06/4c73b0/ebfbcdbfcb17ae88c9edd735c1f98796fc9a37cb.jpg?sw=500",
    "inStock": true
   },
@@ -337,7 +337,7 @@
    "brand": "ASUS",
    "title": "ASUS Vivobook S16 16GB 16\" WUXGA OLED 512GB AMD Ryzen AI 7 445 Laptop",
    "url": "https://www.overclockers.co.uk/asus-vivobook-s16-16gb-16-wuxga-oled-512gb-amd-ryzen-ai-7-445-laptop/LAP-ASU-09486.html",
-   "price": 1099.99,
+   "price": 899.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw4e56ed46/images/data/product/f0/0e4cfe/d7559c5c14217d6468869816110023a3740b5488.jpg?sw=500",
    "inStock": true
   },
@@ -487,7 +487,7 @@
    "brand": "Medion",
    "title": "Medion Erazer Defender 17 P10 NVIDIA RTX 5070 32GB 17.3 FHD 144Hz Intel Core i9-14900HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/medion-erazer-defender-17-p10-nvidia-rtx-5070-32gb-17.3-fhd-144hz-intel-core-i9-14900hx-gaming-laptop/LAP-MDN-08812.html",
-   "price": 2199.95,
+   "price": 1899.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw3ee31660/images/data/product/1e/3cef5d/45c95c790922b08e7b0684558035ca08ceb8558d.jpg?sw=500",
    "inStock": true
   },
@@ -497,7 +497,7 @@
    "brand": "Medion",
    "title": "Medion Erazer Defender 17 P10 RTX 5060 16GB 17.3\" FHD 144Hz Intel Core i9-14900HX Gaming Laptop",
    "url": "https://www.overclockers.co.uk/medion-erazer-defender-17-p10-rtx-5060-16gb-17.3-fhd-144hz-intel-core-i9-14900hx-gaming-laptop/LAP-MDN-08808.html",
-   "price": 1799.99,
+   "price": 1399.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw8936795b/images/data/product/ba/42feda/dbc2f986efe47caedac5350d58d91154ce092abf.jpg?sw=500",
    "inStock": true
   },
@@ -699,7 +699,7 @@
    "url": "https://www.overclockers.co.uk/msi-modern-14-14-fhd-16gb-512gb-intel-core-i5-1334u-laptop/LAP-MSI-08944.html",
    "price": 649.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwa311613e/images/data/product/bf/20f24d/aaaa756595ad1933a4fa447b0269d658bb6b7262.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -719,7 +719,7 @@
    "url": "https://www.overclockers.co.uk/msi-modern-15-15.6-fhd-16gb-512gb-intel-core-7-240h-laptop/LAP-MSI-08946.html",
    "price": 799.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw0be748b3/images/data/product/8a/6d2983/ef9f33b64972d1b7bbba47556e99ff8c869ad4f0.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",

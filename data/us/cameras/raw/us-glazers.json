@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:41:43.571Z",
+ "scrapedAt": "2026-11-24T04:43:03.483Z",
  "offers": [
   {
    "retailer": "us-glazers",
@@ -220,7 +220,7 @@
    "price": 649.99,
    "wasPrice": 829.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/25361_6052C111_01_Hero.png?v=1752517547",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon"
   },
   {
@@ -450,7 +450,7 @@
    "url": "https://www.glazerscamera.com/products/dji-osmo-action-5-advntr-combo",
    "price": 419,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/12816_22.png?v=1763002483",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-glazers",
@@ -528,7 +528,7 @@
    "price": 5099.95,
    "wasPrice": 5599.95,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/21725_16938039_01_Hero.png?v=1742336364",
-   "inStock": true,
+   "inStock": false,
    "brand": "Fujifilm"
   },
   {
@@ -539,7 +539,7 @@
    "price": 5099.95,
    "wasPrice": 5599.95,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/21732_16938065_01_Hero.png?v=1742336920",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -1210,20 +1210,11 @@
   },
   {
    "retailer": "us-glazers",
-   "sku": "15525",
-   "title": "Kondor Blue Talon Top Handle NATO Rail for Cameras, Monitors & Cages - Raven Black",
-   "url": "https://www.glazerscamera.com/products/kb-talon-top-handle-nato",
-   "price": 74.99,
-   "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/15525_KB-TALONTH-BK_01_Hero.png?v=1729879227",
-   "inStock": false,
-   "brand": "Kondor Blue"
-  },
-  {
-   "retailer": "us-glazers",
    "sku": "46326",
    "title": "Kondor Blue Talon XL Top Handle with Trigger REC for Cameras - Raven Black",
    "url": "https://www.glazerscamera.com/products/kb-talon-xl-top-handle-w-trgr",
-   "price": 99.99,
+   "price": 79.99,
+   "wasPrice": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/46326KB-TALONTHXL-BK05Hero.png?v=1794603183",
    "inStock": false,
    "brand": "Kondor Blue"
@@ -1305,7 +1296,7 @@
    "url": "https://www.glazerscamera.com/products/leica-d-lux-8-metal-gray",
    "price": 1915,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/384921931201Hero.png?v=1779919663",
-   "inStock": false,
+   "inStock": true,
    "brand": "Leica"
   },
   {
@@ -1325,7 +1316,7 @@
    "url": "https://www.glazerscamera.com/products/sl-extender-l-2-0x",
    "price": 1065,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/132811608201Hero.png?v=1780596306",
-   "inStock": false,
+   "inStock": true,
    "brand": "Leica"
   },
   {
@@ -1920,7 +1911,7 @@
    "sku": "75519",
    "title": "Matthews Centipede II Camera Support Dolly",
    "url": "https://www.glazerscamera.com/products/centipede-ii-camera-dolly",
-   "price": 4132.5,
+   "price": 4350,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/IMG_1358.png?v=1789161475",
    "inStock": false,
    "brand": "Matthews"
@@ -2586,7 +2577,8 @@
    "sku": "16136",
    "title": "Sennheiser Profile 2-Person Clip-On & Handheld Wireless Audio System/Recorder for Camera & Smartphone",
    "url": "https://www.glazerscamera.com/products/profile-wireless-2-channel-set",
-   "price": 329,
+   "price": 199,
+   "wasPrice": 329,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/16136_700266_01_Hero.png?v=1733332203",
    "inStock": true,
    "brand": "Sennheiser"
@@ -2861,7 +2853,7 @@
    "url": "https://www.glazerscamera.com/products/sony-rx1r-iii-full-frame-compact-digital-camera",
    "price": 4899.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/25760_DSCRX1RM3_01_Hero.png?v=1752602648",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony"
   },
   {

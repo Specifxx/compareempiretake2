@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:45:36.832Z",
+ "scrapedAt": "2026-11-24T04:46:57.643Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -118,7 +118,7 @@
    "url": "https://www.worldwidestereo.com/products/audeze-maxwell-2-anc-wireless-gaming-headset-for-playstation-pc-mac-switch-mobile",
    "price": 429,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Audeze-Maxwell-2-ANC-Wireless-Gaming-Headset-for-PlayStation_-PC_-Mac_-Switch_-Mobile-Image-01.jpg?v=1784315001",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audeze"
   },
   {
@@ -228,7 +228,7 @@
    "url": "https://www.worldwidestereo.com/products/audio-technica-ath-al5nc-wireless-on-ear-headphones",
    "price": 279,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Audio-Technica-ATH-AL5NC-Wireless-On-Ear-Headphones-Image-13.jpg?v=1788926653",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audio-Technica"
   },
   {
@@ -379,7 +379,7 @@
    "url": "https://www.worldwidestereo.com/products/audio-technica-ath-m50xsts-wl-wireless-streamset-streaming-headset",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Audio-Technica-ATH-M50xSTS-WL-Wireless-StreamSet-Streaming-Headset-Image-01.jpg?v=1793195937",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audio-Technica"
   },
   {
@@ -1008,7 +1008,7 @@
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-headphones-2nd-gen-dewdrop-mint",
    "price": 359,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Headphones-2nd-Gen_-Dewdrop-Mint-Image-08.jpg?v=1786593797",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -1018,7 +1018,7 @@
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-headphones-2nd-gen-eucalyptus-green",
    "price": 359,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Headphones-2nd-Gen_-Eucalyptus-Green-Image-04.jpg?v=1786593797",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -1354,7 +1354,8 @@
    "sku": "50641684169015",
    "title": "Bowers & Wilkins Px7 S3 Wireless Noise Canceling Bluetooth Headphones (Anthracite Black)",
    "url": "https://www.worldwidestereo.com/products/bowers-wilkins-px7-s3-wireless-noise-canceling-bluetooth-headphones-anthracite-black",
-   "price": 479,
+   "price": 379,
+   "wasPrice": 479,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bowers_Wilkins-Px7_20S3_20Wireless_20Noise_20Canceling_20Bluetooth_20Headphones_20_Anthracite_20Black_-001.jpg?v=1771015807",
    "inStock": false,
    "brand": "Bowers & Wilkins"
@@ -1364,7 +1365,8 @@
    "sku": "50641684234551",
    "title": "Bowers & Wilkins Px7 S3 Wireless Noise Canceling Bluetooth Headphones (Canvas White)",
    "url": "https://www.worldwidestereo.com/products/bowers-wilkins-px7-s3-wireless-noise-canceling-bluetooth-headphones-canvas-white",
-   "price": 479,
+   "price": 379,
+   "wasPrice": 479,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bowers_Wilkins-Px7_20S3_20Wireless_20Noise_20Canceling_20Bluetooth_20Headphones_20_Canvas_20White_-001.jpg?v=1776193077",
    "inStock": false,
    "brand": "Bowers & Wilkins"
@@ -1374,7 +1376,8 @@
    "sku": "50641684201783",
    "title": "Bowers & Wilkins Px7 S3 Wireless Noise Canceling Bluetooth Headphones (Indigo Blue)",
    "url": "https://www.worldwidestereo.com/products/bowers-wilkins-px7-s3-wireless-noise-canceling-bluetooth-headphones-indigo-blue",
-   "price": 479,
+   "price": 379,
+   "wasPrice": 479,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bowers_Wilkins-Px7_20S3_20Wireless_20Noise_20Canceling_20Bluetooth_20Headphones_20_Indigo_20Blue_-001.jpg?v=1776193077",
    "inStock": false,
    "brand": "Bowers & Wilkins"
@@ -1384,7 +1387,8 @@
    "sku": "51960818532663",
    "title": "Bowers & Wilkins Px7 S3 Wireless Noise Canceling Bluetooth Headphones (Vintage Maroon)",
    "url": "https://www.worldwidestereo.com/products/bowers-wilkins-px7-s3-wireless-noise-canceling-bluetooth-headphones-vintage-maroon",
-   "price": 479,
+   "price": 379,
+   "wasPrice": 479,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bowers-Wilkins-Px7-S3-Wireless-Noise-Canceling-Bluetooth-Headphones-Vintage-Maroon-Image-01.jpg?v=1776194616",
    "inStock": false,
    "brand": "Bowers & Wilkins"
@@ -1394,7 +1398,8 @@
    "sku": "52016297541943",
    "title": "Bowers & Wilkins Px8 S2 Wireless Noise Canceling Bluetooth Headphones (Midnight Blue)",
    "url": "https://www.worldwidestereo.com/products/bowers-wilkins-px8-s2-wireless-noise-canceling-bluetooth-headphones-midnight-blue",
-   "price": 799,
+   "price": 679,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bowers-Wilkins-Px8-S2-Wireless-Noise-Canceling-Bluetooth-Headphones-Midnight-Blue-Image-05.jpg?v=1776830600",
    "inStock": false,
    "brand": "Bowers & Wilkins"
@@ -1404,7 +1409,8 @@
    "sku": "51125902213431",
    "title": "Bowers & Wilkins Px8 S2 Wireless Noise Canceling Bluetooth Headphones (Onyx Black)",
    "url": "https://www.worldwidestereo.com/products/bowers-wilkins-px8-s2-wireless-noise-canceling-bluetooth-headphones-onyx-black",
-   "price": 799,
+   "price": 679,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bowers-Wilkins-Px8-S2-Wireless-Noise-Canceling-Bluetooth-Headphones-Onyx-Black-Image-03.jpg?v=1776195774",
    "inStock": false,
    "brand": "Bowers & Wilkins"
@@ -1414,7 +1420,8 @@
    "sku": "52016297836855",
    "title": "Bowers & Wilkins Px8 S2 Wireless Noise Canceling Bluetooth Headphones (Pearl Blue)",
    "url": "https://www.worldwidestereo.com/products/bowers-wilkins-px8-s2-wireless-noise-canceling-bluetooth-headphones-pearl-blue",
-   "price": 799,
+   "price": 679,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bowers-Wilkins-Px8-S2-Wireless-Noise-Canceling-Bluetooth-Headphones-Pearl-Blue-Image-08.jpg?v=1776830600",
    "inStock": false,
    "brand": "Bowers & Wilkins"
@@ -1424,7 +1431,8 @@
    "sku": "51125902246199",
    "title": "Bowers & Wilkins Px8 S2 Wireless Noise Canceling Bluetooth Headphones (Warm Stone)",
    "url": "https://www.worldwidestereo.com/products/bowers-wilkins-px8-s2-wireless-noise-canceling-bluetooth-headphones-warm-stone",
-   "price": 799,
+   "price": 679,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bowers-Wilkins-Px8-S2-Wireless-Noise-Canceling-Bluetooth-Headphones-Warm-Stone-Image-09.jpg?v=1776267378",
    "inStock": false,
    "brand": "Bowers & Wilkins"
@@ -1670,7 +1678,7 @@
    "price": 1199,
    "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_4ae35c23-33e8-45ab-b029-b82cc7e962c4.jpg?v=1762447660",
-   "inStock": false,
+   "inStock": true,
    "brand": "Focal"
   },
   {
@@ -1876,7 +1884,7 @@
    "price": 129.95,
    "wasPrice": 156,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_f9d41122-6bf5-4223-9f6c-cdc1b83e0d71.jpg?v=1726151166",
-   "inStock": true,
+   "inStock": false,
    "brand": "JBL"
   },
   {
@@ -2294,7 +2302,7 @@
    "price": 169.95,
    "wasPrice": 395,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/13_31b19d56-8dc2-4fc7-8e44-7e0f540a9f42.jpg?v=1762447819",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL"
   },
   {
@@ -2563,7 +2571,8 @@
    "sku": "50908022866231",
    "title": "Meze Audio 105 SILVA Over Ear Headphones (Walnut/Black)",
    "url": "https://www.worldwidestereo.com/products/meze-audio-105-silva-over-ear-headphones-walnut-black",
-   "price": 499,
+   "price": 375,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/MezeAudio-105-SILVA-Over-Ear-Headphones-Walnut-Black-Image-03.jpg?v=1762447636",
    "inStock": true,
    "brand": "Meze Audio"
@@ -2653,7 +2662,8 @@
    "sku": "50299954299191",
    "title": "Meze Audio Poet Open-Back Wired Headphones",
    "url": "https://www.worldwidestereo.com/products/meze-audio-poet-open-back-wired-headphones",
-   "price": 2000,
+   "price": 1600,
+   "wasPrice": 2000,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_37fa0997-bda0-4cb7-bde9-36a02203486f.jpg?v=1762447728",
    "inStock": false,
    "brand": "Meze Audio"
@@ -2742,7 +2752,7 @@
    "price": 249.95,
    "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/3_e1a6acc6-c11c-4105-a102-c2801f03d5ed.jpg?v=1762447694",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sennheiser"
   },
   {
@@ -2819,7 +2829,7 @@
    "price": 339.95,
    "wasPrice": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Sennheiser-Momentum-5-Adaptive-Noise-Cancelling-Bluetooth-Wireless-Headphone-Lavender-Image-01.jpg?v=1788408193",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sennheiser"
   },
   {
@@ -2995,7 +3005,7 @@
    "sku": "47437456933175",
    "title": "Sony INZONE Buds Truly Wireless Noise Cancelling Gaming Earbuds (Black)",
    "url": "https://www.worldwidestereo.com/products/sony-inzone-buds-truly-wireless-noise-cancelling-gaming-earbuds-black",
-   "price": 158,
+   "price": 148,
    "wasPrice": 239.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/180390_WWS1.jpg?v=1750882738",
    "inStock": false,
@@ -3017,7 +3027,7 @@
    "sku": "47437456965943",
    "title": "Sony INZONE Buds Truly Wireless Noise Cancelling Gaming Earbuds (White)",
    "url": "https://www.worldwidestereo.com/products/sony-inzone-buds-truly-wireless-noise-cancelling-gaming-earbuds-white",
-   "price": 158,
+   "price": 148,
    "wasPrice": 239.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/180391_WWS1.jpg?v=1704320717",
    "inStock": false,
@@ -3028,7 +3038,7 @@
    "sku": "52063102599479",
    "title": "Sony INZONE H6 Air Wired Open-back Gaming Headset",
    "url": "https://www.worldwidestereo.com/products/sony-inzone-h6-air-wired-open-back-gaming-headset",
-   "price": 168,
+   "price": 158,
    "wasPrice": 199.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Sony-INZONE-H6-Air-Wired-Open-back-Gaming-Headset-Image-01.jpg?v=1777407107",
    "inStock": false,
@@ -3039,7 +3049,7 @@
    "sku": "51298142322999",
    "title": "Sony INZONE H9 II Wireless Noise Cancelling Gaming Headset (Black)",
    "url": "https://www.worldwidestereo.com/products/sony-inzone-h9-ii-wireless-noise-cancelling-gaming-headset-black",
-   "price": 293,
+   "price": 288,
    "wasPrice": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Sony-INZONE-H9-II-Wireless-Noise-Cancelling-Gaming-Headset-Black-Image-01.jpg?v=1764953424",
    "inStock": true,
@@ -3050,7 +3060,7 @@
    "sku": "51298142355767",
    "title": "Sony INZONE H9 II Wireless Noise Cancelling Gaming Headset (White)",
    "url": "https://www.worldwidestereo.com/products/sony-inzone-h9-ii-wireless-noise-cancelling-gaming-headset-white",
-   "price": 293,
+   "price": 288,
    "wasPrice": 349.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Sony-INZONE-H9-II-Wireless-Noise-Cancelling-Gaming-Headset-White-Image-07.jpg?v=1764953424",
    "inStock": true,
@@ -3061,7 +3071,7 @@
    "sku": "47440561144119",
    "title": "Sony INZONE H9 Wireless Noise Cancelling Gaming Headset (White)",
    "url": "https://www.worldwidestereo.com/products/sony-inzone-h9-wireless-noise-cancelling-gaming-headset-white",
-   "price": 178,
+   "price": 138,
    "wasPrice": 329.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/180395_WWS1.jpg?v=1717683910",
    "inStock": false,

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T01:07:39.634Z",
+ "scrapedAt": "2026-11-24T05:08:49.818Z",
  "offers": [
   {
    "retailer": "sg-challenger",
@@ -78,7 +78,7 @@
    "url": "https://www.challenger.sg/products/mjrq4x-a-iphone-18-pro-256gb-silver",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_18_Pro_Silver_PDP_Image_Position_1__en-SG.jpg?v=1789096306",
-   "inStock": false,
+   "inStock": true,
    "brand": "APPLE"
   },
   {
@@ -138,7 +138,7 @@
    "url": "https://www.challenger.sg/products/mjrw4x-a-iphone-18-pro-512gb-burgundy",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_18_Pro_Burgundy_PDP_Image_Position_1__en-SG.jpg?v=1789095230",
-   "inStock": false,
+   "inStock": true,
    "brand": "APPLE"
   },
   {
@@ -188,7 +188,7 @@
    "url": "https://www.challenger.sg/products/mjy14x-a-iphone-18-pro-max-1tb-glacier",
    "price": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_18_Pro_Max_Glacier_PDP_Image_Position_1__en-SG.jpg?v=1789093538",
-   "inStock": false,
+   "inStock": true,
    "brand": "APPLE"
   },
   {
@@ -208,7 +208,7 @@
    "url": "https://www.challenger.sg/products/mjxn4x-a-iphone-18-pro-max-256gb-blk",
    "price": 2099,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_18_Pro_Max_Black_PDP_Image_Position_1__en-SG.jpg?v=1789093148",
-   "inStock": false,
+   "inStock": true,
    "brand": "APPLE"
   },
   {
@@ -1233,7 +1233,7 @@
    "price": 1599,
    "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Productimages____back-RGB.jpg?v=1792550139",
-   "inStock": true,
+   "inStock": false,
    "brand": "OPPO"
   },
   {
@@ -1454,7 +1454,7 @@
    "sku": "8806097679158",
    "title": "Samsung Galaxy A07 Black 4+128GB LTE (SM-A075FZKGXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a07-black-4-128gb-lte-sm-a075fzkgxsp",
-   "price": 198,
+   "price": 188,
    "wasPrice": 258,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A075_GalaxyA07_LTE_Black_Front.jpg?v=1757315639",
    "inStock": true,
@@ -1465,7 +1465,7 @@
    "sku": "8806097679103",
    "title": "Samsung Galaxy A07 Green 4+128GB LTE (SM-A075FZGGXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a07-green-4-128gb-lte-sm-a075fzggxsp",
-   "price": 198,
+   "price": 188,
    "wasPrice": 258,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A075_GalaxyA07_LTE_Green_Front.jpg?v=1757340194",
    "inStock": true,
@@ -1476,7 +1476,7 @@
    "sku": "8806097679134",
    "title": "Samsung Galaxy A07 Light Violet 4+128GB LTE (SM-A075FLVGXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a07-light-violet-4-128gb-lte-sm-a075flvgxsp",
-   "price": 198,
+   "price": 188,
    "wasPrice": 258,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A075_Galaxy_A07_LTE_Light_Violet_Front.jpg?v=1757317444",
    "inStock": true,
@@ -1583,24 +1583,13 @@
   },
   {
    "retailer": "sg-challenger",
-   "sku": "8806099467098",
-   "title": "Samsung Galaxy A18 Black 4+128GB LTE (SM-A185GZKKXSP)",
-   "url": "https://www.challenger.sg/products/samsung-galaxy-a18-black-4-128gb-lte-sm-a185gzkkxsp",
-   "price": 298,
-   "wasPrice": 328,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A185_GalaxyA18_LTE_Front_Black.jpg?v=1794466679",
-   "inStock": true,
-   "brand": "SAMSUNG"
-  },
-  {
-   "retailer": "sg-challenger",
    "sku": "8806099467272",
    "title": "Samsung Galaxy A18 Light Blue 4+128GB LTE (SM-A185GLBKXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a18-light-blue-4-128gb-lte-sm-a185glbkxsp",
    "price": 298,
    "wasPrice": 328,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A185_GalaxyA18_LTE_Front_LightBlue.jpg?v=1794466689",
-   "inStock": true,
+   "inStock": false,
    "brand": "SAMSUNG"
   },
   {
@@ -1706,7 +1695,7 @@
    "sku": "8806099048457",
    "title": "Samsung Galaxy A57 12+256GB 5G Gray (SM-A576BZATXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a57-gray-12-256gb-5g-sm-a576bzatxsp",
-   "price": 798,
+   "price": 768,
    "wasPrice": 868,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A576_GalaxyA57_5G_Front_AwesomeGray.jpg?v=1773802974",
    "inStock": true,
@@ -1717,7 +1706,7 @@
    "sku": "8806099048860",
    "title": "Samsung Galaxy A57 12+256GB 5G IcyBlue (SM-A576BLBTXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a57-icyblue-12-256gb-5g-sm-a576blbtxsp",
-   "price": 798,
+   "price": 768,
    "wasPrice": 868,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A576_GalaxyA57_5G_Front_AwesomeIcyblue.jpg?v=1773802975",
    "inStock": true,
@@ -1728,7 +1717,7 @@
    "sku": "8806099048037",
    "title": "Samsung Galaxy A57 12+256GB 5G Lilac (SM-A576BZVTXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a57-lilac-12-256gb-5g-sm-a576bzvtxsp",
-   "price": 798,
+   "price": 768,
    "wasPrice": 868,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A576_GalaxyA57_5G_Front_AwesomeLilac.jpg?v=1773802974",
    "inStock": false,
@@ -1739,7 +1728,7 @@
    "sku": "8806099047986",
    "title": "Samsung Galaxy A57 12+256GB 5G Navy (SM-A576BDBTXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a57-navy-12-256gb-5g-sm-a576bdbtxsp",
-   "price": 798,
+   "price": 768,
    "wasPrice": 868,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A576_GalaxyA57_5G_Front_AwesomeNavy.jpg?v=1773802975",
    "inStock": true,
@@ -2014,7 +2003,7 @@
    "sku": "8806097881155",
    "title": "Samsung Galaxy S26 Ultra 12+256GB 5G Black (SM-S948BZKBXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-ultra-black-12-256gb-5g-sm-s948bzkbxsp",
-   "price": 1628,
+   "price": 1528,
    "wasPrice": 2028,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_black_251120.jpg?v=1771905095",
    "inStock": true,
@@ -2025,7 +2014,7 @@
    "sku": "8806097881551",
    "title": "Samsung Galaxy S26 Ultra 12+256GB 5G Sky Blue (SM-S948BLBBXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-ultra-l-blue-12-256gb-5g-sm-s948blbbxsp",
-   "price": 1628,
+   "price": 1528,
    "wasPrice": 2028,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_skyblue_251114.jpg?v=1771905784",
    "inStock": true,
@@ -2036,7 +2025,7 @@
    "sku": "8806097882008",
    "title": "Samsung Galaxy S26 Ultra 12+256GB 5G Violet (SM-S948BZVBXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-ultra-violet-12-256gb-5g-sm-s948bzvbxsp",
-   "price": 1628,
+   "price": 1528,
    "wasPrice": 2028,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_cobaltviolet_251120.jpg?v=1771905125",
    "inStock": true,
@@ -2047,7 +2036,7 @@
    "sku": "8806097881698",
    "title": "Samsung Galaxy S26 Ultra 12+256GB 5G White (SM-S948BZWBXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-ultra-white-12-256gb-5g-sm-s948bzwbxsp",
-   "price": 1628,
+   "price": 1528,
    "wasPrice": 2028,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_white_251120.jpg?v=1771905111",
    "inStock": true,
@@ -2705,7 +2694,8 @@
    "sku": "6939093040621",
    "title": "Xiaomi 18 Pro Black 12+512GB 5G",
    "url": "https://www.challenger.sg/products/xiaomi-18-pro-black-12-512gb-5g",
-   "price": 1999,
+   "price": 1899,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Q5_Black_Back_2.jpg?v=1794886632",
    "inStock": true,
    "brand": "XIAOMI"
@@ -2715,7 +2705,8 @@
    "sku": "6939093040690",
    "title": "Xiaomi 18 Pro Cosmic Blue 12+512GB 5G",
    "url": "https://www.challenger.sg/products/xiaomi-18-pro-cosmic-blue-12-512gb-5g",
-   "price": 1999,
+   "price": 1899,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Q5_Blue_Back_2.jpg?v=1794886618",
    "inStock": true,
    "brand": "XIAOMI"
@@ -2725,7 +2716,8 @@
    "sku": "6939093047040",
    "title": "Xiaomi 18 Pro Max Black 12+512GB 5G",
    "url": "https://www.challenger.sg/products/xiaomi-18-pro-max-black-12-512gb-5g",
-   "price": 2299,
+   "price": 2199,
+   "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Q2_Black_Back_2.jpg?v=1794885988",
    "inStock": true,
    "brand": "XIAOMI"
@@ -2735,7 +2727,8 @@
    "sku": "6939093046999",
    "title": "Xiaomi 18 Pro Max Cosmic Blue 12+512GB 5G",
    "url": "https://www.challenger.sg/products/xiaomi-18-pro-max-cosmic-blue-12-512gb-5g",
-   "price": 2299,
+   "price": 2199,
+   "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Q2_Blue_Back_2.jpg?v=1794885979",
    "inStock": true,
    "brand": "XIAOMI"
@@ -2745,7 +2738,8 @@
    "sku": "6939093047019",
    "title": "Xiaomi 18 Pro Max Velvet Red 12+512GB 5G",
    "url": "https://www.challenger.sg/products/xiaomi-18-pro-max-velvet-red-12-512gb-5g",
-   "price": 2299,
+   "price": 2199,
+   "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Q2_Red_Back_R12s.jpg?v=1794885974",
    "inStock": true,
    "brand": "XIAOMI"
@@ -2755,7 +2749,8 @@
    "sku": "6939093047026",
    "title": "Xiaomi 18 Pro Max White 12+512GB 5G",
    "url": "https://www.challenger.sg/products/xiaomi-18-pro-max-white-12-512gb-5g",
-   "price": 2299,
+   "price": 2199,
+   "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Q2_White_Back_2.jpg?v=1794885983",
    "inStock": true,
    "brand": "XIAOMI"
@@ -2765,7 +2760,8 @@
    "sku": "6939093040553",
    "title": "Xiaomi 18 Pro Velvet Red 12+512GB 5G",
    "url": "https://www.challenger.sg/products/xiaomi-18-pro-velvet-red-12-512gb-5g",
-   "price": 1999,
+   "price": 1899,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Q5_Red_Back_R5s.jpg?v=1794886623",
    "inStock": true,
    "brand": "XIAOMI"
@@ -2775,7 +2771,8 @@
    "sku": "6939093040607",
    "title": "Xiaomi 18 Pro White 12+512GB 5G",
    "url": "https://www.challenger.sg/products/xiaomi-18-pro-white-12-512gb-5g",
-   "price": 1999,
+   "price": 1899,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Q5_White_Back_2.jpg?v=1794886628",
    "inStock": true,
    "brand": "XIAOMI"
@@ -2788,7 +2785,7 @@
    "price": 349,
    "wasPrice": 369,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/P17Black_Back_0916_01.png?v=1768187492",
-   "inStock": false,
+   "inStock": true,
    "brand": "XIAOMI"
   },
   {
@@ -2833,39 +2830,6 @@
    "wasPrice": 509,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/P16_Ti_back.png?v=1768189044",
    "inStock": false,
-   "brand": "XIAOMI"
-  },
-  {
-   "retailer": "sg-challenger",
-   "sku": "6932554468002",
-   "title": "Xiaomi Redmi Note 15 Pro+ 12+512GB Black 5G",
-   "url": "https://www.challenger.sg/products/xiaomi-redmi-note-15-pro-12-512gb-black-5g",
-   "price": 619,
-   "wasPrice": 699,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/P16U_Black_back.png?v=1768190835",
-   "inStock": true,
-   "brand": "XIAOMI"
-  },
-  {
-   "retailer": "sg-challenger",
-   "sku": "6932554481704",
-   "title": "Xiaomi Redmi Note 15 Pro+ 12+512GB Glacier Blue 5G",
-   "url": "https://www.challenger.sg/products/xiaomi-redmi-note-15-pro-12-512gb-glacier-blue-5g",
-   "price": 619,
-   "wasPrice": 699,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/P16U_Blue_back.png?v=1768190909",
-   "inStock": true,
-   "brand": "XIAOMI"
-  },
-  {
-   "retailer": "sg-challenger",
-   "sku": "6932554481834",
-   "title": "Xiaomi Redmi Note 15 Pro+ 12+512GB Mocha Brown 5G",
-   "url": "https://www.challenger.sg/products/xiaomi-redmi-note-15-pro-12-512gb-mocha-brown-5g",
-   "price": 619,
-   "wasPrice": 699,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/P16U_Brown_back.png?v=1768190964",
-   "inStock": true,
    "brand": "XIAOMI"
   },
   {

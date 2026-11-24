@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:50:55.881Z",
+ "scrapedAt": "2026-11-24T04:52:13.529Z",
  "offers": [
   {
    "retailer": "uk-carmarthencameras",
@@ -117,7 +117,7 @@
    "price": 379,
    "wasPrice": 559,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Canon-EOS-R100-APS-C-Mirrorless-Camera-Body-Product-Photo-1.webp?v=1787647006",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -592,7 +592,7 @@
    "url": "https://carmarthencameras.com/products/fujifilm-gfx100s-ii-with-gf35-70mm-kit",
    "price": 5299,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Fujifilm-GFX100S-II-with-GF35-70mm-Kit-Product-Photo-1.webp?v=1770649993",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -817,7 +817,8 @@
    "sku": "4547410520187",
    "title": "Fujifilm Instax Pal Camera Green",
    "url": "https://carmarthencameras.com/products/fujifilm-instax-pal-camera?variant=41033049473121",
-   "price": 89.99,
+   "price": 69.99,
+   "wasPrice": 89.99,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/tinywow_fujifilm-instax-pal-green-camera-only_36945118.jpg?v=1734443131",
    "inStock": false,
    "brand": "Fujifilm"
@@ -827,7 +828,7 @@
    "sku": "4547410520194",
    "title": "Fujifilm Instax Pal Camera Metalic",
    "url": "https://carmarthencameras.com/products/fujifilm-instax-pal-camera?variant=41033049604193",
-   "price": 94.99,
+   "price": 69.99,
    "wasPrice": 104.99,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/tinywow_fujifilm-instax-pal-metallic-camera-only_36945156.jpg?v=1734443131",
    "inStock": false,
@@ -1190,7 +1191,7 @@
    "price": 89,
    "wasPrice": 112,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak-FZ45-Compact-Camera-Pink-Product-Photo-11.webp?v=1785423962",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kodak"
   },
   {
@@ -1389,7 +1390,7 @@
    "price": 120,
    "wasPrice": 154,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/81a8ZMB-nNL._AC_SL1500.jpg?v=1682066154",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kodak"
   },
   {
@@ -2150,28 +2151,6 @@
   },
   {
    "retailer": "uk-carmarthencameras",
-   "sku": "V210080BE000",
-   "title": "OM-System PEN Mirrorless Camera - Black",
-   "url": "https://carmarthencameras.com/products/om-system-pen-mirrorless-camera-black",
-   "price": 849,
-   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OM_SYSTEM_PEN_C37_Black_Front.webp?v=1788963256",
-   "inStock": true,
-   "brand": "OM System",
-   "mpn": "V210080BE000"
-  },
-  {
-   "retailer": "uk-carmarthencameras",
-   "sku": "V210080SE000",
-   "title": "OM-System PEN Mirrorless Camera - Silver",
-   "url": "https://carmarthencameras.com/products/om-system-pen-mirrorless-camera-silver",
-   "price": 849,
-   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OM_SYSTEM_PEN_C01_Silver_Front.webp?v=1788963257",
-   "inStock": true,
-   "brand": "OM System",
-   "mpn": "V210080SE000"
-  },
-  {
-   "retailer": "uk-carmarthencameras",
    "sku": "5036422412850",
    "title": "Opticron MM4 62 GA ED VHD/45 Travelscope body",
    "url": "https://carmarthencameras.com/products/opticron-mm4-62-ga-ed-vhd-45-travelscope-body",
@@ -2310,7 +2289,7 @@
    "price": 1399,
    "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Panasonic-Lumix-S5II-Camera-with-20-60mm-_-50mm-Lens-Kit-product-photo-6.webp?v=1729590464",
-   "inStock": true,
+   "inStock": false,
    "brand": "Panasonic"
   },
   {

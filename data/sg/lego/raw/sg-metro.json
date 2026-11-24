@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T01:07:54.556Z",
+ "scrapedAt": "2026-11-24T05:09:06.725Z",
  "offers": [
   {
    "retailer": "sg-metro",
@@ -765,7 +765,7 @@
    "price": 35.12,
    "wasPrice": 43.9,
    "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-bugatti-centodieci-hyper-sports-car-77240-4291064.png?v=1776241274",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77240"
   },
@@ -1365,7 +1365,7 @@
    "price": 23.92,
    "wasPrice": 29.9,
    "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-dinosaur-spidey-rex-vs-green-goblin-10463-4329404.png?v=1776231979",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10463"
   },
@@ -1643,18 +1643,6 @@
    "inStock": false,
    "brand": "LEGO",
    "mpn": "60464"
-  },
-  {
-   "retailer": "sg-metro",
-   "sku": "4451035",
-   "title": "Lego Family House 10467",
-   "url": "https://metro.com.sg/products/family-house",
-   "price": 79.92,
-   "wasPrice": 99.9,
-   "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-family-house-10467-8426423.jpg?v=1776231973",
-   "inStock": false,
-   "brand": "LEGO",
-   "mpn": "10467"
   },
   {
    "retailer": "sg-metro",
@@ -2000,7 +1988,7 @@
    "price": 71.92,
    "wasPrice": 89.9,
    "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-gingerbread-at-at-walker-40806-7572737.png?v=1793581109",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40806"
   },
@@ -2996,7 +2984,7 @@
    "price": 30,
    "wasPrice": 109.9,
    "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-maleficents-and-cruella-de-vils-dresses-43262-2114891.jpg?v=1776241333",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "43262"
   },
@@ -3644,7 +3632,7 @@
    "price": 29.83,
    "wasPrice": 45.9,
    "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-party-at-toads-house-72041-9893926.png?v=1776240739",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "72041"
   },
@@ -3752,7 +3740,7 @@
    "price": 23.92,
    "wasPrice": 29.9,
    "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-police-prisoner-transport-van-60479-8202544.png?v=1776233474",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "60479"
   },
@@ -3956,7 +3944,7 @@
    "price": 11.92,
    "wasPrice": 14.9,
    "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-rides-police-truck-60481-6375164.png?v=1776233473",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "60481"
   },
@@ -4064,7 +4052,7 @@
    "price": 47.92,
    "wasPrice": 59.9,
    "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-silvers-car-vs-knuckles-monster-truck-77118-2469308.png?v=1776232929",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77118"
   },
@@ -5336,7 +5324,7 @@
    "price": 36.72,
    "wasPrice": 45.9,
    "image": "https://cdn.shopify.com/s/files/1/0925/4718/7009/files/lego-zombie-dungeon-21587-9264988.png?v=1776233414",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21587"
   }

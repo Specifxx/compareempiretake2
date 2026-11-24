@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-23T00:42:32.400Z",
+ "scrapedAt": "2026-11-24T04:43:52.637Z",
  "offers": [
   {
    "retailer": "us-kmcamera",
@@ -1118,7 +1118,7 @@
    "url": "https://kmcamera.com/products/kodwpz2bl",
    "price": 179,
    "image": "https://cdn.shopify.com/s/files/1/2657/1868/files/e58ebb27-f77f-4952-b09f-21c1b9056372.jpg?v=1794499356",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kodak",
    "mpn": "KODWPZ2BL-MAIN"
   },
@@ -1129,7 +1129,7 @@
    "url": "https://kmcamera.com/products/kodwpz2rd",
    "price": 179,
    "image": "https://cdn.shopify.com/s/files/1/2657/1868/files/dad20042-063b-44c9-82a3-e54f74b7b7c4.jpg?v=1794499405",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kodak",
    "mpn": "KODWPZ2RD-MAIN"
   },
@@ -1482,7 +1482,7 @@
    "price": 1046.95,
    "wasPrice": 1146.95,
    "image": "https://cdn.shopify.com/s/files/1/2657/1868/files/79ca8e08-4786-478c-9700-a68e8817376c.jpg?v=1758127864",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon",
    "mpn": "NIK26541-MAIN"
   },
@@ -2302,8 +2302,7 @@
    "sku": "SONILCE7M5B-MAIN",
    "title": "Sony a7 V Mirrorless Camera",
    "url": "https://kmcamera.com/products/sonilce7m5b",
-   "price": 2698,
-   "wasPrice": 2898,
+   "price": 2898,
    "image": "https://cdn.shopify.com/s/files/1/2657/1868/files/e7496788-fb7e-4fb5-9b04-e45b9e994f4b.jpg?v=1766507985",
    "inStock": true,
    "brand": "Sony",
