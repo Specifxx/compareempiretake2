@@ -1,16 +1,6 @@
 {
- "scrapedAt": "2026-11-22T21:27:06.532Z",
+ "scrapedAt": "2026-11-24T02:15:12.186Z",
  "offers": [
-  {
-   "retailer": "jbhifi",
-   "sku": "839355",
-   "title": "Blaupunkt 55\" 4K UHD LED Tizen Smart TV [2026]",
-   "url": "https://www.jbhifi.com.au/products/blaupunkt-55-4k-uhd-led-tizen-smart-tv-2026",
-   "price": 399,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/839355-Product-0-I-639214137006290314.jpg?v=1785816965",
-   "inStock": false,
-   "brand": "Blaupunkt"
-  },
   {
    "retailer": "jbhifi",
    "sku": "839356",
@@ -27,18 +17,7 @@
    "title": "FFalcon 32\" S55A HD Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/ffalcon-32-s55a-hd-smart-tv-2026",
    "price": 199,
-   "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895864-Product-0-I-639178790406614202.jpg?v=1782282609",
-   "inStock": true,
-   "brand": "Ffalcon"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "810886",
-   "title": "FFalcon 40\" S55 Full HD LED Smart TV [2025]",
-   "url": "https://www.jbhifi.com.au/products/ffalcon-40-s55-full-hd-led-smart-tv-2025",
-   "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/810886-Product-0-I-638967779406925961.jpg?v=1761181266",
    "inStock": true,
    "brand": "Ffalcon"
   },
@@ -451,7 +430,8 @@
    "sku": "894732",
    "title": "Hisense 85\" Q6SAU 4K Hi-QLED Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-85-q6sau-4k-hi-qled-smart-tv-2026",
-   "price": 1461,
+   "price": 1375,
+   "wasPrice": 1461,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894732-Product-0-I-639268377602961733.jpg?v=1791241028",
    "inStock": true,
    "brand": "Hisense"
@@ -960,7 +940,7 @@
    "url": "https://www.jbhifi.com.au/products/philips-32-hd-qled-smart-tv-with-google-tv-2026",
    "price": 395,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/916146-Product-0-I-639268546203437429.jpg?v=1791257886",
-   "inStock": false,
+   "inStock": true,
    "brand": "Philips"
   },
   {
@@ -970,7 +950,7 @@
    "url": "https://www.jbhifi.com.au/products/philips-40-full-hd-qled-smart-tv-with-google-tv-2026",
    "price": 495,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/916147-Product-0-I-639268547403805802.jpg?v=1791258006",
-   "inStock": false,
+   "inStock": true,
    "brand": "Philips"
   },
   {
@@ -980,7 +960,7 @@
    "url": "https://www.jbhifi.com.au/products/philips-43-4k-uhd-qled-smart-tv-with-google-tv-2026",
    "price": 595,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/916148-Product-0-I-639268548608407688.jpg?v=1791258126",
-   "inStock": false,
+   "inStock": true,
    "brand": "Philips"
   },
   {
@@ -990,7 +970,7 @@
    "url": "https://www.jbhifi.com.au/products/philips-50-4k-uhd-qled-smart-tv-with-google-tv-2026",
    "price": 695,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/916149-Product-0-I-639268549205613647.jpg?v=1791258188",
-   "inStock": false,
+   "inStock": true,
    "brand": "Philips"
   },
   {
@@ -1000,7 +980,7 @@
    "url": "https://www.jbhifi.com.au/products/philips-55-4k-uhd-qled-smart-tv-with-google-tv-2026",
    "price": 795,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/916150-Product-0-I-639268549802425955.jpg?v=1791258247",
-   "inStock": false,
+   "inStock": true,
    "brand": "Philips"
   },
   {
@@ -1875,8 +1855,7 @@
    "sku": "901056",
    "title": "Sony 75\" BRAVIA 3 II 4K LED AI Google TV [2026]",
    "url": "https://www.jbhifi.com.au/products/sony-75-bravia-3-ii-4k-led-ai-google-tv-2026",
-   "price": 1788,
-   "wasPrice": 2395,
+   "price": 1754,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/901056-Product-0-I-639257314802881847.jpg?v=1790134927",
    "inStock": true,
    "brand": "Sony"
@@ -2114,8 +2093,7 @@
    "sku": "896056",
    "title": "TCL 65\" C7L SQD-Mini LED 4K UHD Google TV with Gemini [2026]",
    "url": "https://www.jbhifi.com.au/products/tcl-65-c7l-sqd-mini-led-4k-uhd-google-tv-with-gemini-2026",
-   "price": 1475,
-   "wasPrice": 1895,
+   "price": 1445,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896056-Product-0-I-639131848202848810.jpg?v=1777588087",
    "inStock": true,
    "brand": "Tcl"
@@ -2167,8 +2145,7 @@
    "sku": "896053",
    "title": "TCL 75\" C6L QD-Mini LED 4K UHD Google TV with Gemini [2026]",
    "url": "https://www.jbhifi.com.au/products/tcl-75-c6l-qd-mini-led-4k-uhd-google-tv-with-gemini-2026",
-   "price": 1471,
-   "wasPrice": 1671,
+   "price": 1451,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896053-Product-0-I-639131847602407773.jpg?v=1777588567",
    "inStock": true,
    "brand": "Tcl"
@@ -2233,8 +2210,8 @@
    "sku": "896054",
    "title": "TCL 85\" C6L QD-Mini LED 4K UHD Google TV with Gemini [2026]",
    "url": "https://www.jbhifi.com.au/products/tcl-85-c6l-qd-mini-led-4k-uhd-google-tv-with-gemini-2026",
-   "price": 1984,
-   "wasPrice": 2155,
+   "price": 1864,
+   "wasPrice": 1984,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896054-Product-0-I-639131848202933766.jpg?v=1777588567",
    "inStock": true,
    "brand": "Tcl"
@@ -2320,7 +2297,8 @@
    "sku": "896050",
    "title": "TCL 98\" P8LS QD Mini-LED Google TV [2026]",
    "url": "https://www.jbhifi.com.au/products/tcl-98-p8ls-qd-mini-led-google-tv-2026",
-   "price": 4995,
+   "price": 2888,
+   "wasPrice": 3695,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896050-Product-0-I-639215083219888996.jpg?v=1785911586",
    "inStock": true,
    "brand": "Tcl"

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-22T21:38:11.041Z",
+ "scrapedAt": "2026-11-24T02:18:23.451Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -18,6 +18,17 @@
    "url": "https://www.jbhifi.com.au/products/breville-nespresso-creatista-pro-coffee-machine-black-truffle",
    "price": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/652907-Product-0-I-638252319606003025.jpg?v=1794980985",
+   "inStock": false,
+   "brand": "Nespresso"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "654369",
+   "title": "Breville Nespresso the Vertuo Creatista Coffee Machine (Sea Salt)",
+   "url": "https://www.jbhifi.com.au/products/breville-nespresso-the-vertuo-creatista-coffee-machine-sea-salt",
+   "price": 747,
+   "wasPrice": 899,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/654369-Product-0-I-638246403603603742.jpg?v=1794980991",
    "inStock": false,
    "brand": "Nespresso"
   },
@@ -247,7 +258,7 @@
    "url": "https://www.jbhifi.com.au/products/breville-the-barista-pro-coffee-machine-sea-salt",
    "price": 898,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/434085-Product-0-I-639207186608015065.jpg?v=1790718313",
-   "inStock": false,
+   "inStock": true,
    "brand": "Breville"
   },
   {
@@ -276,7 +287,8 @@
    "sku": "796357",
    "title": "Breville the Barista Touch™ Impress Coffee Machine (Black Truffle)",
    "url": "https://www.jbhifi.com.au/products/breville-the-barista-touch-impress-coffee-machine-black-truffle",
-   "price": 1944,
+   "price": 1898,
+   "wasPrice": 1944,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796357-Product-0-I-639305690404944242.jpg?v=1794972304",
    "inStock": true,
    "brand": "Breville"
@@ -286,7 +298,8 @@
    "sku": "909559",
    "title": "Breville the Barista Touch™ Impress Coffee Machine (Brushed Stainless Brass)",
    "url": "https://www.jbhifi.com.au/products/breville-the-barista-touch-impress-coffee-machine-brushed-stainless-brass",
-   "price": 1999,
+   "price": 1898,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/909559-Product-0-I-639255762005850654.jpg?v=1789979525",
    "inStock": true,
    "brand": "Breville"
@@ -296,7 +309,8 @@
    "sku": "796356",
    "title": "Breville the Barista Touch™ Impress Coffee Machine (Brushed Stainless Steel)",
    "url": "https://www.jbhifi.com.au/products/breville-the-barista-touch-impress-coffee-machine-brushed-stainless-steel",
-   "price": 1944,
+   "price": 1898,
+   "wasPrice": 1944,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796356-Product-0-I-639305689805648610.jpg?v=1794972250",
    "inStock": true,
    "brand": "Breville"
@@ -306,7 +320,8 @@
    "sku": "906444",
    "title": "Breville the Barista Touch™ Impress Coffee Machine (Noir)",
    "url": "https://www.jbhifi.com.au/products/breville-the-barista-touch-impress-coffee-machine-noir",
-   "price": 1999,
+   "price": 1898,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906444-Product-0-I-639209716805814518.jpg?v=1785374945",
    "inStock": true,
    "brand": "Breville"
@@ -316,7 +331,8 @@
    "sku": "796358",
    "title": "Breville the Barista Touch™ Impress Coffee Machine (Sea Salt)",
    "url": "https://www.jbhifi.com.au/products/breville-the-barista-touch-impress-coffee-machine-sea-salt",
-   "price": 1944,
+   "price": 1898,
+   "wasPrice": 1944,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796358-Product-0-I-639305691604376368.jpg?v=1794972425",
    "inStock": true,
    "brand": "Breville"
@@ -368,7 +384,7 @@
    "url": "https://www.jbhifi.com.au/products/breville-the-oracle-dual-boiler-sea-salt",
    "price": 4299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/816352-Product-0-I-639264087006033915.jpg?v=1790811965",
-   "inStock": false,
+   "inStock": true,
    "brand": "Breville"
   },
   {
@@ -464,7 +480,7 @@
    "url": "https://www.jbhifi.com.au/products/delonghi-clessidra-drip-coffee-maker",
    "price": 199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/427168-Product-0-I-637147794406339985.jpg?v=1794980908",
-   "inStock": true,
+   "inStock": false,
    "brand": "Delonghi"
   },
   {
@@ -549,16 +565,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906421-Product-0-I-639202747803508986.jpg?v=1784678320",
    "inStock": false,
    "mpn": "EC9255W2",
-   "brand": "Delonghi"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "754655",
-   "title": "De'Longhi EC9255WI La Specialista Arte Evo with Cold Brew Coffee Machine (White)",
-   "url": "https://www.jbhifi.com.au/products/delonghi-ec9255wi-la-specialista-arte-evo-with-cold-brew-coffee-machine-white",
-   "price": 597,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754655-Product-0-I-638620470005420558.jpg?v=1791334105",
-   "inStock": true,
    "brand": "Delonghi"
   },
   {
@@ -660,7 +666,7 @@
    "sku": "796717",
    "title": "De'Longhi La Specialista Touch Manual Coffee Machine",
    "url": "https://www.jbhifi.com.au/products/delonghi-la-specialista-touch-manual-coffee-machine",
-   "price": 1099,
+   "price": 1025,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/796717-Product-0-I-638742217804816838.jpg?v=1738625071",
    "inStock": true,
    "brand": "Delonghi"
@@ -735,16 +741,6 @@
    "price": 1949,
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/816392-Product-0-I-639094779002027712.jpg?v=1775015931",
-   "inStock": true,
-   "brand": "Delonghi"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "677020",
-   "title": "De'Longhi Rivelia Fully Automatic Coffee Machine (Onyx Black)",
-   "url": "https://www.jbhifi.com.au/products/delonghi-rivelia-fully-automatic-coffee-machine-onyx-black",
-   "price": 1144,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/677020-Product-0-I-638469280805136016.jpg?v=1790718331",
    "inStock": true,
    "brand": "Delonghi"
   },
@@ -960,7 +956,7 @@
    "url": "https://www.jbhifi.com.au/products/jura-z10-fully-automatic-coffee-machine-aluminium-black",
    "price": 4499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894682-Product-0-I-639118295405043339.jpg?v=1776232807",
-   "inStock": false,
+   "inStock": true,
    "brand": "Jura"
   },
   {
@@ -1058,7 +1054,7 @@
    "price": 948,
    "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907008-Product-0-I-639245290804127032.jpg?v=1788932646",
-   "inStock": true,
+   "inStock": false,
    "brand": "Ninja"
   },
   {
@@ -1133,6 +1129,17 @@
    "price": 1449,
    "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/916955-Product-0-I-639289176603892177.jpg?v=1793320926",
+   "inStock": true,
+   "brand": "Philips"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "886204",
+   "title": "Philips Baristina Compact Bean-to-Cup Espresso Coffee Machine (Cloud White)",
+   "url": "https://www.jbhifi.com.au/products/philips-baristina-compact-bean-to-cup-espresso-coffee-machine-cloud-white",
+   "price": 388,
+   "wasPrice": 494,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/886204-Product-0-I-639225363603503552.jpg?v=1786939628",
    "inStock": true,
    "brand": "Philips"
   },
