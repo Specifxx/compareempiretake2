@@ -1,10 +1,10 @@
 {
  "site": "ygo",
- "day": "2026-11-11",
+ "day": "2026-11-24",
  "region": "US",
  "hook": [
   "Same box.",
-  "Half the price."
+  "Up to 53% less."
  ],
  "sub": "3 real Yu-Gi-Oh! deals from today's US store prices",
  "deals": [
@@ -14,31 +14,15 @@
    "accent": "#a978ff",
    "title": "Rarity Collection 5 Booster Box",
    "cents": 5999,
-   "refCents": 12540,
+   "refCents": 12735,
    "currency": "USD",
    "refLabel": "TCGplayer market price",
    "refShort": "TCGplayer market price",
    "store": "Collectors Emporium NY",
-   "savingPct": 52,
+   "savingPct": 53,
    "imgFile": "img/0.jpg",
    "url": "ygocompare.com",
    "link": "https://ygocompare.com/card/rarity-collection-5-booster-box"
-  },
-  {
-   "siteName": "YGO Compare",
-   "topic": "Yu-Gi-Oh!",
-   "accent": "#a978ff",
-   "title": "Order of the Spellcasters Structure Deck",
-   "cents": 1999,
-   "refCents": 4033,
-   "currency": "USD",
-   "refLabel": "TCGplayer market price",
-   "refShort": "TCGplayer market price",
-   "store": "Collector Store LLC",
-   "savingPct": 50,
-   "imgFile": "img/1.jpg",
-   "url": "ygocompare.com",
-   "link": "https://ygocompare.com/card/order-of-the-spellcasters-structure-deck"
   },
   {
    "siteName": "YGO Compare",
@@ -52,9 +36,25 @@
    "refShort": "TCGplayer market price",
    "store": "On-Board Gaming",
    "savingPct": 46,
-   "imgFile": "img/2.jpg",
+   "imgFile": "img/1.jpg",
    "url": "ygocompare.com",
    "link": "https://ygocompare.com/card/fire-kings-structure-deck-display-1st-edition"
+  },
+  {
+   "siteName": "YGO Compare",
+   "topic": "Yu-Gi-Oh!",
+   "accent": "#a978ff",
+   "title": "Master of Pendulum Structure Deck",
+   "cents": 4449,
+   "refCents": 5999,
+   "currency": "USD",
+   "refLabel": "TCGplayer market price",
+   "refShort": "TCGplayer market price",
+   "store": "Realgoodeal",
+   "savingPct": 26,
+   "imgFile": "img/2.jpg",
+   "url": "ygocompare.com",
+   "link": "https://ygocompare.com/card/master-of-pendulum-structure-deck"
   }
  ],
  "endLine": "ygocompare.com: every store, compared daily.",
@@ -71,5 +71,5 @@
   "Cameras",
   "Tech"
  ],
- "fine": "US store prices, 11 Nov 2026, before shipping. Prices change. Independent; not affiliated with any brand shown."
+ "fine": "US store prices, 24 Nov 2026, before shipping. Prices change. Independent; not affiliated with any brand shown."
 }
