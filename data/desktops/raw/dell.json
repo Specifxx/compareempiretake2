@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:23:56.376Z",
+ "scrapedAt": "2026-11-25T03:08:23.278Z",
  "offers": [
   {
    "retailer": "dell",
@@ -9,6 +9,17 @@
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/alienwarearea51aat2250",
    "price": 8630.6,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/area-51-r8/media-gallery/240mm/desktop-alienware-area51-r8-240-silver-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=613&qlt=100,0&resMode=sharp2&size=613,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "alienwarearea51aat2265",
+   "brand": "Alienware",
+   "title": "Alienware Area-51 Gaming Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/alienwarearea51aat2265",
+   "price": 9836.2,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware/aat2265/media-gallery/desktop-alienware-aat2265-360mm-gy-gallery-hero.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=786&qlt=100,0&resMode=sharp2&size=786,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -79,6 +90,50 @@
   },
   {
    "retailer": "dell",
+   "sku": "precision7960tower",
+   "brand": "Dell",
+   "title": "Dell Precision 7960 Tower Workstation",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/precision7960tower",
+   "price": 10377.4,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/precision-t7690/media-gallery/tower/desktop-precision-7960-t-gray-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=595&qlt=100,0&resMode=sharp2&size=595,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellpro24allinone35wqc24251",
+   "brand": "Dell",
+   "title": "Dell Pro 24 All-in-One 35W Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellpro24allinone35wqc24251",
+   "price": 2318.8,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qb24250/media-gallery/desktop-aio-dell-pro-qb24250-wired-fixst-emza-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=963&qlt=100,0&resMode=sharp2&size=963,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellpro24allinoneplusqb24250",
+   "brand": "Dell",
+   "title": "Dell Pro 24 All-in-One Plus Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellpro24allinoneplusqb24250",
+   "price": 3406.7,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qb24250/media-gallery/desktop-aio-dell-pro-qb24250-wired-fixst-emza-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=963&qlt=100,0&resMode=sharp2&size=963,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellpromaxmicrofcm2250",
+   "brand": "Dell",
+   "title": "Dell Pro Max Micro Desktop",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellpromaxmicrofcm2250",
+   "price": 5342.7,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcm2250/media-gallery/desktop-dell-pro-max-fcm2250-micro-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=507&qlt=100,0&resMode=sharp2&size=507,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
    "sku": "dellpromicroqcm1250",
    "brand": "Dell",
    "title": "Dell Pro Micro Desktop",
@@ -90,12 +145,155 @@
   },
   {
    "retailer": "dell",
+   "sku": "dellpromicroqcm1255",
+   "brand": "Dell",
+   "title": "Dell Pro Micro Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellpromicroqcm1255",
+   "price": 3102,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/images/products/desktops-and-all-in-ones/dell-pro-desktop/qcm1255/dell-pro-qcm1255-micro-desktop-c-00015rf000-bk.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=560&qlt=100,0&resMode=sharp2&size=560,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellpromicroplusqbm1250",
+   "brand": "Dell",
+   "title": "Dell Pro Micro Plus Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellpromicroplusqbm1250",
+   "price": 3477.1,
+   "image": "https://i.dell.com/assetlink/img/global/desktop-pro-qbm1250-micro-black-gallery-1-dup11224216579468106-dl11bg12-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=354&qlt=100,0&resMode=sharp2&size=354,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproprecision71urackpw7r1260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 7 R1 Rack",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellproprecision71urackpw7r1260",
+   "price": 5233.8,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-7r1-rack-pw7r1260/media-gallery/server-precision-rack-pw7r1260-hdd-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1314&qlt=100,0&resMode=sharp2&size=1314,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproprecision9t2pw9t2260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T2 Desktop",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellproprecision9t2pw9t2260",
+   "price": 7365.6,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t2-pw9t2260/media-gallery/desktop-precision-pw9t2260-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=553&qlt=100,0&resMode=sharp2&size=553,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproprecision9t4pw9t4260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T4 Desktop",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellproprecision9t4pw9t4260",
+   "price": 11603.9,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t4-pw9t4260/media-gallery/desktop-dell-pro-precision-pw9t4260-premium-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=549&qlt=100,0&resMode=sharp2&size=549,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproprecision9t6pw9t6260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T6 Desktop",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellproprecision9t6pw9t6260",
+   "price": 22183.7,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t6-pw9t6260/media-gallery/desktop-precision-pw9t6260-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=617&qlt=100,0&resMode=sharp2&size=617,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellpromaxwithgb10fcm1253",
+   "brand": "Dell",
+   "title": "Dell Pro Precision with GB10",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellpromaxwithgb10fcm1253",
+   "price": 11693,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fcm1253/media-gallery/desktop-dell-pro-max-fcm1253-micro-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1592&qlt=100,0&resMode=sharp2&size=1592,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellpromaxwithgb300fct6263",
+   "brand": "Dell",
+   "title": "Dell Pro Precision with GB300",
+   "url": "https://www.dell.com/en-au/shop/workstation/spd/dellpromaxwithgb300fct6263",
+   "price": 257609,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro-max/fct6263/media-gallery/desktop-dell-pro-max-fct6263-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=566&qlt=100,0&resMode=sharp2&size=566,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproslimqcs1250",
+   "brand": "Dell",
+   "title": "Dell Pro Slim Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellproslimqcs1250",
+   "price": 2674.1,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qcs1250/media-gallery/non-odd/desktop-pro-qcs1250-slim-nonodd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=580&qlt=100,0&resMode=sharp2&size=580,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproslimqcs1255",
+   "brand": "Dell",
+   "title": "Dell Pro Slim Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellproslimqcs1255",
+   "price": 2962.3,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qcs1255/media-gallery/non-odd/desktop-pro-qcs1255-slim-amd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=577&qlt=100,0&resMode=sharp2&size=577,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
    "sku": "dellproessentialslimqvs1260",
    "brand": "Dell",
    "title": "Dell Pro Slim Essential Desktop",
    "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellproessentialslimqvs1260",
    "price": 2071.3,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qvs1260/media-gallery/without-reader/desktop-slim-tower-qvs1260-c-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=485&qlt=100,0&resMode=sharp2&size=485,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproslimplusqbs1250",
+   "brand": "Dell",
+   "title": "Dell Pro Slim Plus Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellproslimplusqbs1250",
+   "price": 3500.2,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qbs1250/media-gallery/non-odd/desktop-dell-pro-qbs1250-slim-plus-nonodd-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=640&qlt=100,0&resMode=sharp2&size=640,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellprotowerqct1250",
+   "brand": "Dell",
+   "title": "Dell Pro Tower Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellprotowerqct1250",
+   "price": 2658.7,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qct1250/media-gallery/desktop-dell-pro-qct1250-tower-nonodd-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=486&qlt=100,0&resMode=sharp2&size=486,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellprotowerqct1255",
+   "brand": "Dell",
+   "title": "Dell Pro Tower Desktop",
+   "url": "https://www.dell.com/en-au/shop/desktop-computers/spd/dellprotowerqct1255",
+   "price": 2348.5,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qct1255/media-gallery/desktop-dell-pro-qct1255-tower-nonodd-bk-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=486&qlt=100,0&resMode=sharp2&size=486,804",
    "inStock": true,
    "fromPrice": true
   },

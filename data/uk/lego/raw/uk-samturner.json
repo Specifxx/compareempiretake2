@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T05:03:52.806Z",
+ "scrapedAt": "2026-11-25T03:50:32.115Z",
  "offers": [
   {
    "retailer": "uk-samturner",
@@ -1281,7 +1281,7 @@
    "price": 74.99,
    "wasPrice": 78.95,
    "image": "https://cdn.shopify.com/s/files/1/0305/7713/1659/files/Lego_Duplo_3_in_1_Construction_Site_and_Vehicles_10476.png?v=1768113969",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10476"
   },
@@ -3315,6 +3315,17 @@
   },
   {
    "retailer": "uk-samturner",
+   "sku": "LG-72306",
+   "title": "LEGO PlayStation 72306",
+   "url": "https://www.sam-turner.co.uk/products/lego-playstation-72306",
+   "price": 138.95,
+   "image": "https://cdn.shopify.com/s/files/1/0305/7713/1659/files/LEGO_PlayStation_72306.png?v=1795518533",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "72306"
+  },
+  {
+   "retailer": "uk-samturner",
    "sku": "LG-72160",
    "title": "LEGO Pokémon Arcanine 72160",
    "url": "https://www.sam-turner.co.uk/products/lego-pokemon-arcanine-72160",
@@ -4041,7 +4052,7 @@
    "price": 22.99,
    "wasPrice": 23.99,
    "image": "https://cdn.shopify.com/s/files/1/0305/7713/1659/files/Lego_Technic_Monster_Jam_Grave_Digger_Fire_and_Ice_42219-1.png?v=1769336174",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "42219"
   },

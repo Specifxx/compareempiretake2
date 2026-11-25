@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:53:19.533Z",
+ "scrapedAt": "2026-11-25T03:39:23.127Z",
  "offers": [
   {
    "retailer": "uk-clove",
@@ -985,7 +985,7 @@
    "url": "https://www.clove.co.uk/products/asus-dual-rtx3050-o6g-nvidia-geforce-rtx-3050-6-gb-gddr6",
    "price": 290,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/e6397a5bcc1a725ed1f07834dc82a53e.jpg?v=1712939071",
-   "inStock": false,
+   "inStock": true,
    "brand": "ASUS"
   },
   {
@@ -2099,6 +2099,16 @@
    "price": 811,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/10494ea7-9cb4-40f1-8db4-ac74957ec8d5.jpg?v=1791552877",
    "inStock": false,
+   "brand": "ASUS"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105580127",
+   "title": "ASUS Prime -RX9070GRE-O12G-EVO AMD Radeon RX 9070 GRE 12 GB GDDR6",
+   "url": "https://www.clove.co.uk/products/asus-prime-rx9070gre-o12g-evo-amd-radeon-rx-9070-gre-12-gb-gddr6",
+   "price": 649,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/9160ea5a-acc1-4107-8ea0-9226773fe4b5.jpg?v=1795516527",
+   "inStock": true,
    "brand": "ASUS"
   },
   {
@@ -3334,6 +3344,16 @@
   },
   {
    "retailer": "uk-clove",
+   "sku": "105995678",
+   "title": "ASUS TUF Gaming TUF-RX9070XT-O16G-ONIMUSHA AMD Radeon RX 9070 XT 16 GB GDDR6",
+   "url": "https://www.clove.co.uk/products/asus-tuf-gaming-tuf-rx9070xt-o16g-onimusha-amd-radeon-rx-9070-xt-16-gb-gddr6",
+   "price": 1239,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/6669f71a-c1fe-4810-b63f-78fba20ce0c0.jpg?v=1795516526",
+   "inStock": true,
+   "brand": "ASUS"
+  },
+  {
+   "retailer": "uk-clove",
    "sku": "67301710",
    "title": "ASUS TUF Gaming V2 - NVIDIA 8 GB GDDR6 GeForce RTX 3060 Ti graphics card",
    "url": "https://www.clove.co.uk/products/asus-tuf-gaming-nvidia-geforce-rtx-3060-ti-8-gb-gddr6-graphics-card-1",
@@ -3543,6 +3563,17 @@
    "inStock": false,
    "mpn": "VA5515RF41",
    "brand": "Biostar"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "40055339",
+   "title": "DELL 490-BDZY graphics card NVIDIA Quadro P400 2 GB GDDR5",
+   "url": "https://www.clove.co.uk/products/dell-490-bdzy-graphics-card-nvidia-quadro-p400-2-gb-gddr5",
+   "price": 176,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/0baf3b4c-00e6-48ba-9f73-1bf017fd8c4d.jpg?v=1795516530",
+   "inStock": false,
+   "mpn": "490-BDZY",
+   "brand": "DELL"
   },
   {
    "retailer": "uk-clove",
@@ -5764,7 +5795,7 @@
    "url": "https://www.clove.co.uk/products/lenovo-nvidia-geforce-rtx-5070-12-gb-gddr7",
    "price": 852,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/7391c6d7-342a-40ea-a704-c4320ceb5620.jpg?v=1768218237",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lenovo"
   },
   {
@@ -7613,6 +7644,16 @@
    "url": "https://www.clove.co.uk/products/palit-geforce-rtx-3050-stormx-oc-6gb-nvidia-gddr6",
    "price": 252,
    "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/65089763-4d56-4700-ac8a-f66539c25634.jpg?v=1791552902",
+   "inStock": false,
+   "brand": "Palit"
+  },
+  {
+   "retailer": "uk-clove",
+   "sku": "105302245",
+   "title": "Palit GeForce RTX 3060 Infinity 2 OC NVIDIA 12 GB GDDR6",
+   "url": "https://www.clove.co.uk/products/palit-geforce-rtx-3060-infinity-2-oc-nvidia-12-gb-gddr6",
+   "price": 425,
+   "image": "https://cdn.shopify.com/s/files/1/0077/5513/7083/files/b708bf40-3de1-4242-a661-7a760574d7f1.jpg?v=1795516536",
    "inStock": false,
    "brand": "Palit"
   },

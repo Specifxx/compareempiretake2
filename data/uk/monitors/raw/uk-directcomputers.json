@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:55:25.427Z",
+ "scrapedAt": "2026-11-25T03:41:14.162Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
@@ -81,18 +81,6 @@
    "inStock": true,
    "brand": "ACER",
    "mpn": "UM.TX0EE.002"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "UM.JX0EE.307",
-   "title": "Acer NITRO XZ2 Nitro XZ322QUV3 curved gaming monitor - 31.5\", 1500R, Quad HD, 180Hz, 1ms, FreeSync, DisplayHDR 400, HDMI & DP",
-   "url": "https://directcomputers.co.uk/products/80cm-31-5in-curved-1500r-qhd-180hz",
-   "price": 209.99,
-   "wasPrice": 213.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/8fd4acd245d12a9958f7260f0047020b.jpg?v=1778644382",
-   "inStock": true,
-   "brand": "ACER",
-   "mpn": "UM.JX0EE.307"
   },
   {
    "retailer": "uk-directcomputers",
@@ -265,6 +253,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "U27B3A",
+   "title": "AOC B3 U27B3A computer monitor 68.6 cm (27\") 3840 x 2160 pixels 4K Ultra HD LCD Black",
+   "url": "https://directcomputers.co.uk/products/aoc-27-ips-monitor-spk-u27b3a",
+   "price": 204.99,
+   "wasPrice": 210.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/cc94579dd09b04537291c1f9ea2830cf.jpg?v=1775786687",
+   "inStock": true,
+   "mpn": "U27B3A"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "U27B3M",
    "title": "AOC B3 U27B3M computer monitor 68.6 cm (27\") 3840 x 2160 pixels 4K Ultra HD LCD Black",
    "url": "https://directcomputers.co.uk/products/aoc-27-va-monitor-spk-u27b3m-4k",
@@ -423,7 +422,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "AZ-NO-27T2K260-BK",
-   "title": "Arozzi Nova 27“ IPS 260Hz - Gaming Monitor computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED Black",
+   "title": "Arozzi Nova computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED Black",
    "url": "https://directcomputers.co.uk/products/arozzi-27-ips-monitor-nova-black",
    "price": 223.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/fefabb032e850aa6892e75762b3c308164a80de35f90f730ccd191c30b0f539c.jpg?v=1794102390",
@@ -434,7 +433,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "AZ-NO-27T2K260-FST",
-   "title": "Arozzi Nova 27“ IPS 260Hz - Gaming Monitor computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED Green",
+   "title": "Arozzi Nova computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED Green",
    "url": "https://directcomputers.co.uk/products/arozzi-nova-27-ips-260-hz-forest-gre",
    "price": 223.99,
    "wasPrice": 249.99,
@@ -446,7 +445,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "AZ-NO-27T2K260-PNK",
-   "title": "Arozzi Nova 27“ IPS 260Hz - Gaming Monitor computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED Pink",
+   "title": "Arozzi Nova computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED Pink",
    "url": "https://directcomputers.co.uk/products/arozzi-nova-27-ips-260-hz-pink",
    "price": 223.99,
    "wasPrice": 249.99,
@@ -458,7 +457,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "AZ-NO-27T2K260-WT",
-   "title": "Arozzi Nova 27“ IPS 260Hz - Gaming Monitor computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED White",
+   "title": "Arozzi Nova computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED White",
    "url": "https://directcomputers.co.uk/products/arozzi-nova-27-ips-260-hz-white",
    "price": 223.99,
    "wasPrice": 249.99,
@@ -470,7 +469,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "AZ-NO-32T2K180-BK",
-   "title": "Arozzi Nova 32″ computer monitor 80 cm (31.5\") 2560 x 1440 pixels LED Black",
+   "title": "Arozzi Nova computer monitor 80 cm (31.5\") 2560 x 1440 pixels LED Black",
    "url": "https://directcomputers.co.uk/products/arozzi-nova-32-ips-180hz-black",
    "price": 278.99,
    "wasPrice": 310.99,
@@ -482,7 +481,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "AZ-NO-32T2K180-FST",
-   "title": "Arozzi Nova 32″ computer monitor 80 cm (31.5\") 2560 x 1440 pixels Quad HD LED Green",
+   "title": "Arozzi Nova computer monitor 80 cm (31.5\") 2560 x 1440 pixels Quad HD LED Green",
    "url": "https://directcomputers.co.uk/products/arozzi-nova-32-ips-180hz-forest-gree",
    "price": 278.99,
    "wasPrice": 310.99,
@@ -494,7 +493,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "AZ-NO-32T2K180-PNK",
-   "title": "Arozzi Nova 32″ computer monitor 80 cm (31.5\") 2560 x 1440 pixels Quad HD LED Pink",
+   "title": "Arozzi Nova computer monitor 80 cm (31.5\") 2560 x 1440 pixels Quad HD LED Pink",
    "url": "https://directcomputers.co.uk/products/arozzi-nova-32-ips-180hz-pink",
    "price": 278.99,
    "wasPrice": 310.99,
@@ -506,7 +505,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "AZ-NO-32T2K180-WT",
-   "title": "Arozzi Nova 32″ computer monitor 80 cm (31.5\") 2560 x 1440 pixels Quad HD LED White",
+   "title": "Arozzi Nova computer monitor 80 cm (31.5\") 2560 x 1440 pixels Quad HD LED White",
    "url": "https://directcomputers.co.uk/products/arozzi-nova-32-ips-180hz-white",
    "price": 278.99,
    "wasPrice": 310.99,
@@ -597,6 +596,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "90LM0AN0-B01970",
+   "title": "ASUS ROG Strix OLED XG27ACDNG computer monitor 67.3 cm (26.5\") 2560 x 1440 pixels Quad HD QD-OLED Black",
+   "url": "https://directcomputers.co.uk/products/asus-26-5-qd-oled-mon-xg27acdng",
+   "price": 670.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/9d2ceb0deb4e9dccca3d56e8a8ff1bbbcf793d6c375ce0d7ed7cba0087c2e550_3a7019fa-d2c2-4eec-ac24-dfebd9a25318.jpg?v=1783732669",
+   "inStock": true,
+   "brand": "ASUS",
+   "mpn": "90LM0AN0-B01970"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "90LM0CH0-B01971",
    "title": "ASUS ROG Strix OLED XG27AQDNG computer monitor 67.3 cm (26.5\") 2560 x 1440 pixels Quad HD QD-OLED Black",
    "url": "https://directcomputers.co.uk/products/asus-26-5-oled-mon-rog-swift-xg27aqdng",
@@ -605,18 +615,6 @@
    "inStock": true,
    "brand": "ASUS",
    "mpn": "90LM0CH0-B01971"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "90LM0C50-B01971",
-   "title": "ASUS ROG Strix OLED XG27AQDPG computer monitor 67.3 cm (26.5\") 2560 x 1440 pixels Wide Quad HD QD-OLED Black",
-   "url": "https://directcomputers.co.uk/products/asus-24-5-ips-monitor-xg27aqdpg",
-   "price": 796.99,
-   "wasPrice": 929.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a80906855b2de9f192930374a7dc36eaff00211007bc16b88c8be6fc095237a1.jpg?v=1783645798",
-   "inStock": true,
-   "brand": "ASUS",
-   "mpn": "90LM0C50-B01971"
   },
   {
    "retailer": "uk-directcomputers",
@@ -689,6 +687,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "90LM0BW0-B01371",
+   "title": "ASUS ROG Strix XG32UCWMG computer monitor 80 cm (31.5\") 3840 x 2160 pixels 4K Ultra HD OLED Black",
+   "url": "https://directcomputers.co.uk/products/asus-31-5-woled-monitor-xg32ucwmg",
+   "price": 864.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/37cdbbb6a3a876ec519ef01e6086441ffea4f90407aa58afe3ebf800516bddb5.jpg?v=1783646051",
+   "inStock": true,
+   "brand": "ASUS",
+   "mpn": "90LM0BW0-B01371"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "90LM0CF0-B02971",
    "title": "ASUS ROG Swift OLED PG27AQWP-G EDITION 20 computer monitor 67.3 cm (26.5\") 2560 x 1440 pixels Wide Quad HD Black",
    "url": "https://directcomputers.co.uk/products/asus-26-5-oled-mon-rog-swift-pg27aqwp-g",
@@ -755,6 +764,17 @@
    "inStock": true,
    "brand": "ASUS",
    "mpn": "90LM0BT0-B01E71"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "90LM0D91-B01171",
+   "title": "ASUS TUF Gaming VG249QM5F computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LCD Black",
+   "url": "https://directcomputers.co.uk/products/asus-23-8-ips-monitor-spk-vg249qm5f",
+   "price": 149.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/df37deaba702b85a3233f92f63aa40b6.jpg?v=1790472715",
+   "inStock": true,
+   "brand": "ASUS",
+   "mpn": "90LM0D91-B01171"
   },
   {
    "retailer": "uk-directcomputers",
@@ -835,6 +855,17 @@
    "inStock": true,
    "brand": "ASUS",
    "mpn": "90LM0D81-B02171"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "90LM0D50-B01171",
+   "title": "ASUS TUF Gaming VG27AQ5F computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED Black",
+   "url": "https://directcomputers.co.uk/products/tuf-vg27aq5f-monitor-27inch",
+   "price": 194.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/5c82cc8ded5ccdfe35f51bfd26064fd3_6bcb3a5b-e470-453f-94e1-7dbf9a7871a1.jpg?v=1784425493",
+   "inStock": true,
+   "brand": "ASUS",
+   "mpn": "90LM0D50-B01171"
   },
   {
    "retailer": "uk-directcomputers",
@@ -955,8 +986,7 @@
    "sku": "90LM0AZ3-B01171",
    "title": "ASUS ZenScreen MB169CK computer monitor 39.6 cm (15.6\") 1920 x 1080 pixels Full HD LCD Black",
    "url": "https://directcomputers.co.uk/products/asus-15-6-ips-monitor-mb169ck",
-   "price": 109.99,
-   "wasPrice": 111.99,
+   "price": 111.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/ee7168b3af5283158ffd716c95825f77bc36f7e558efd52bfe4976e35a2f46d4.jpg?v=1783733002",
    "inStock": true,
    "brand": "ASUS",
@@ -1026,7 +1056,7 @@
    "sku": "9H.LMMLB.QBE",
    "title": "BenQ BL2486TC computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD Black",
    "url": "https://directcomputers.co.uk/products/benq-bl2486tc-ips-usb-c-hub",
-   "price": 179.99,
+   "price": 186.99,
    "wasPrice": 190.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/c56c9f54c752951dd212ef6c79dbc0d8.jpg?v=1776819188",
    "inStock": true,
@@ -1349,6 +1379,18 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "DELL-E2426HS",
+   "title": "DELL Pro E2426HS computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LCD Black",
+   "url": "https://directcomputers.co.uk/products/dell-pro-24-adjustable-stnd-e2426hs",
+   "price": 102.99,
+   "wasPrice": 115.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/1032ec0890759bddd0ba80e5226524ac7eec15933f6b11dd11e21ab658a18c53.jpg?v=1790473859",
+   "inStock": true,
+   "brand": "DELL",
+   "mpn": "DELL-E2426HS"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "DELL-E2726H",
    "title": "DELL Pro E2726H computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD LCD Black",
    "url": "https://directcomputers.co.uk/products/dell-pro-27-monitor-e2726h",
@@ -1406,6 +1448,18 @@
    "inStock": true,
    "brand": "DELL",
    "mpn": "DELL-P2425H"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "DELL-SE2225HM",
+   "title": "DELL SE2225HM computer monitor 54.6 cm (21.5\") 1920 x 1080 pixels Full HD LCD Black",
+   "url": "https://directcomputers.co.uk/products/dell-22-monitor-se2225hm",
+   "price": 74.99,
+   "wasPrice": 90.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/c2d9cae9e7f05b7a59bdf22387a5b67f.jpg?v=1776309053",
+   "inStock": true,
+   "brand": "DELL",
+   "mpn": "DELL-SE2225HM"
   },
   {
    "retailer": "uk-directcomputers",
@@ -1511,17 +1565,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "GS27FCA",
-   "title": "GIGABYTE GS27FCA 27\" FHD Curved Gaming Monitor",
-   "url": "https://directcomputers.co.uk/products/gigabyte-27-va-monitor-curved-gs27fca",
-   "price": 143.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/3efad056a2c190c4eb21b1d1270dd158.jpg?v=1774836501",
-   "inStock": true,
-   "brand": "GIGABYTE",
-   "mpn": "GS27FCA"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "M27Q2 ICE",
    "title": "GIGABYTE M27Q2 QD ICE 27” QHD Gaming Monitor - 2560 x 1440, 200Hz, 1ms, 350 cd/m², FreeSync Premium, Display HDR400, HDMI 2.0, Displayport 1.4",
    "url": "https://directcomputers.co.uk/products/gigabyte-27-ips-monitor-m27q2-ice",
@@ -1530,17 +1573,6 @@
    "inStock": true,
    "brand": "GIGABYTE",
    "mpn": "M27Q2 ICE"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "M27UP ICE-EK",
-   "title": "GIGABYTE M27UP ICE 27\" 4K UHD Gaming Monitor",
-   "url": "https://directcomputers.co.uk/products/gigabyte-27-ips-monitor-spk-m27up-ice-ek",
-   "price": 361.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/8f8bb5822950cb4bb396987b2aa9c4d2.jpg?v=1776481325",
-   "inStock": true,
-   "brand": "GIGABYTE",
-   "mpn": "M27UP ICE-EK"
   },
   {
    "retailer": "uk-directcomputers",
@@ -1574,18 +1606,6 @@
    "inStock": true,
    "brand": "GIGABYTE",
    "mpn": "MO27Q3-EK"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "MO32U2-EK",
-   "title": "GIGABYTE MO32U2 32\" OLED 4K UHD Gaming Monitor",
-   "url": "https://directcomputers.co.uk/products/gigabyte-31-5-qd-oled-monitor-spk-mo32u2",
-   "price": 750.99,
-   "wasPrice": 842.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/6d9b3207e4399480254c5f3802219363.jpg?v=1774836542",
-   "inStock": true,
-   "brand": "GIGABYTE",
-   "mpn": "MO32U2-EK"
   },
   {
    "retailer": "uk-directcomputers",
@@ -1661,6 +1681,18 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "8X530AA#ABU",
+   "title": "HP Series 7 Pro 23.8 inch FHD Monitor - 724pf",
+   "url": "https://directcomputers.co.uk/products/hp-s7-pro-724pf-fhd-monitor-1",
+   "price": 211.99,
+   "wasPrice": 301.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/Coming-Soon_167fce1b-b5b5-4a4e-94f0-e888924b29a8.jpg?v=1737201692",
+   "inStock": true,
+   "brand": "HEWLETT PACKARD INCORPORATED",
+   "mpn": "8X530AA#ABU"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "8Y2F7AA#ABU",
    "title": "HP Series 7 Pro 24 inch WUXGA USB-C Monitor - 724pu",
    "url": "https://directcomputers.co.uk/products/hp-s7-pro-724pu-wuxga-usb-c-monitor",
@@ -1694,18 +1726,6 @@
    "inStock": true,
    "brand": "HEWLETT PACKARD INCORPORATED",
    "mpn": "8K157UT#ABU"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "GB2441HSU-B1",
-   "title": "iiyama G-MASTER GB2441HSU-B1 computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LED Black",
-   "url": "https://directcomputers.co.uk/products/iiyama-g-master-black-hawk-gaming-monitor-gb2441hsu-b1-24-inch-black-ips-height-adjustable-ultra-slim-bezel-full-hd-144hz-1ms-freesync-hdmi-display-port-usb-hub",
-   "price": 121.99,
-   "wasPrice": 124.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/0039835cee113c433487dc4f475f6279.jpg?v=1776398977",
-   "inStock": true,
-   "brand": "IIYAMA",
-   "mpn": "GB2441HSU-B1"
   },
   {
    "retailer": "uk-directcomputers",
@@ -1852,18 +1872,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "XB2792QSU-B1",
-   "title": "iiyama ProLite XB2792QSU-B1 computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LED Black",
-   "url": "https://directcomputers.co.uk/products/xb2792qsu-b1-24in-eco-ips-lcd",
-   "price": 188.99,
-   "wasPrice": 198.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f4f5c32467cc6f50d359a63a1762a955.jpg?v=1776399689",
-   "inStock": true,
-   "brand": "IIYAMA",
-   "mpn": "XB2792QSU-B1"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "XB2797HSU-B1",
    "title": "iiyama ProLite XB2797HSU-B1 computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD LED Black",
    "url": "https://directcomputers.co.uk/products/27in-1920x1080-4ms-350cd-m-1",
@@ -1908,18 +1916,6 @@
    "inStock": true,
    "brand": "IIYAMA",
    "mpn": "XUB3297QSNP-B1"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "XUB3493WQSU-B6",
-   "title": "iiyama ProLite XUB3493WQSU-B6 computer monitor 86.4 cm (34\") 3440 x 1440 pixels UltraWide Quad HD LED Black",
-   "url": "https://directcomputers.co.uk/products/34in-uw-ips-3440x1440120hz",
-   "price": 287.99,
-   "wasPrice": 330.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/c86e3efa7ed15644031731c313d39852.jpg?v=1774407218",
-   "inStock": true,
-   "brand": "IIYAMA",
-   "mpn": "XUB3493WQSU-B6"
   },
   {
    "retailer": "uk-directcomputers",
@@ -1972,17 +1968,6 @@
    "price": 145.99,
    "wasPrice": 147.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/afede8cf0a4ef4a5dee8f03f66be8247.jpg?v=1776222054",
-   "inStock": true,
-   "brand": "KENSINGTON"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "627555",
-   "title": "Kensington Anti-Glare and Blue Light Reduction Filter for 21.5\" Monitors",
-   "url": "https://directcomputers.co.uk/products/ag-blue-light-red-filter-21-5in-mon",
-   "price": 52.99,
-   "wasPrice": 53.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/88dff1f5ac875d475896f2176f5abdba.jpg?v=1770010422",
    "inStock": true,
    "brand": "KENSINGTON"
   },
@@ -2103,6 +2088,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "27GX704A-B.AEK",
+   "title": "LG 27GX704A-B computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD OLED Black",
+   "url": "https://directcomputers.co.uk/products/27-inch-oled-qhd-240hz-gaming-monitor",
+   "price": 594.99,
+   "wasPrice": 601.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/fa7a7249aa3110debda2e7ef14abdb74.jpg?v=1770765164",
+   "inStock": true,
+   "mpn": "27GX704A-B.AEK"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "27U731SB-W.AEK",
    "title": "LG 27U731SB-W computer monitor 68.6 cm (27\") 3840 x 2160 pixels 4K Ultra HD LCD White",
    "url": "https://directcomputers.co.uk/products/lg-27-ips-monitor-spk-smart-27u731sb-w",
@@ -2128,7 +2124,6 @@
    "title": "LG 27UP850K-W computer monitor 68.6 cm (27\") 3840 x 2160 pixels 4K Ultra HD LED Silver, White",
    "url": "https://directcomputers.co.uk/products/ips-4k-uhd-27-inch-monitor",
    "price": 332.99,
-   "wasPrice": 370.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/920c1ac6f37ab1c76050d129865fc999.jpg?v=1770764445",
    "inStock": true,
    "mpn": "27UP850K-W.AEK"
@@ -2255,8 +2250,7 @@
    "sku": "9S6-3DE39T-003",
    "title": "MSI MAG 341CQP QD-OLED X28 computer monitor 86.4 cm (34\") 3440 x 1440 pixels UltraWide Quad HD Black",
    "url": "https://directcomputers.co.uk/products/msi-mag-341cqp-qd-oled-x28",
-   "price": 827.99,
-   "wasPrice": 838.99,
+   "price": 838.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/99b86b341973d360af029b40325fbb27.jpg?v=1786237638",
    "inStock": true,
    "mpn": "9S6-3DE39T-003"
@@ -2298,7 +2292,7 @@
    "sku": "9S6-3PF54H-003",
    "title": "MSI Pro MAX 271PHW E14 computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD White",
    "url": "https://directcomputers.co.uk/products/msi-pro-max-271phw-e14",
-   "price": 200.99,
+   "price": 203.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/5671c25bd53937cb8708e33a193f499274f68ebdf3bb9d59e9e5983a4233016b.jpg?v=1795138989",
    "inStock": true,
    "mpn": "9S6-3PF54H-003"
@@ -2336,16 +2330,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "9S6-3PD2CM-051",
-   "title": "MSI Pro MP251 E14L computer monitor 62.2 cm (24.5\") 1920 x 1080 pixels Full HD Black",
-   "url": "https://directcomputers.co.uk/products/msi-pro-mp251-e14l",
-   "price": 115.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/480a727cfb6337b58d47343e98ec31bf.jpg?v=1791682161",
-   "inStock": true,
-   "mpn": "9S6-3PD2CM-051"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "9S6-3PD4CM-002",
    "title": "MSI Pro MP251W E2 computer monitor 62.2 cm (24.5\") 1920 x 1080 pixels Full HD LED White",
    "url": "https://directcomputers.co.uk/products/msi-pro-mp251w-e2",
@@ -2357,13 +2341,13 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "9S6-3PE9CM-003",
-   "title": "MSI Pro MP271 E14A computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD LCD Black",
-   "url": "https://directcomputers.co.uk/products/msi-pro-mp271-e14a",
+   "sku": "9S6-3PD3CM-013",
+   "title": "MSI Pro MP275W E2 computer monitor 68.6 cm (27\") 1920 x 1080 pixels Full HD LED White",
+   "url": "https://directcomputers.co.uk/products/msi-pro-mp275w-e2",
    "price": 137.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/5bd1292fe43a624ab5b50fb057b3c0b5.jpg?v=1779588367",
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/59ce6f401f0a37fe19dea92d4af377f0.jpg?v=1770892796",
    "inStock": true,
-   "mpn": "9S6-3PE9CM-003"
+   "mpn": "9S6-3PD3CM-013"
   },
   {
    "retailer": "uk-directcomputers",
@@ -2709,6 +2693,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "24B2N2200/00",
+   "title": "Philips 2000 series 24B2N2200/00 computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LCD Black",
+   "url": "https://directcomputers.co.uk/products/23-8in-16-9-ips-wled-1920x1080",
+   "price": 125.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/1887e63c3811fa52a818eb243246a04c.jpg?v=1780279777",
+   "inStock": true,
+   "brand": "MMD - PHILIPS",
+   "mpn": "24B2N2200/00"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "27B2N3500J/00",
    "title": "Philips 27B2N3500J/00 computer monitor 68.6 cm (27\") 2560 x 1440 pixels 2K LCD Black",
    "url": "https://directcomputers.co.uk/products/27in-16-9-ips-wled-2560x1440",
@@ -2804,6 +2799,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "27B2U3601/00",
+   "title": "Philips 3000 series 27B2U3601/00 computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LCD Black",
+   "url": "https://directcomputers.co.uk/products/philips-27-inch-ips-qhd-120hz-hdmi-dp",
+   "price": 246.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/bf856d74fb52e2f99545cea8a6969e082ae8d4a3973f12e8c040e0e3d9b6bc4d_2b4b4627-009f-42f6-9a86-57adb4f19c76.jpg?v=1794879768",
+   "inStock": true,
+   "brand": "PHILIPS",
+   "mpn": "27B2U3601/00"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "32B1U3900/00",
    "title": "Philips 3000 series 32B1U3900/00 computer monitor 80 cm (31.5\") 3840 x 2160 pixels 4K Ultra HD LCD Black",
    "url": "https://directcomputers.co.uk/products/business-monitor-32b1u3900-4k-uhd-monitor-with-usb-c-docking",
@@ -2874,6 +2880,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "24B2G5301/00",
+   "title": "Philips 5000 series 24B2G5301/00 computer monitor 60.5 cm (23.8\") 1920 x 1080 pixels Full HD LCD Black",
+   "url": "https://directcomputers.co.uk/products/led-24-inch-5000-series-full-hd-1080p",
+   "price": 274.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/0d84e888c479084eaf4d8c5b6affa9960d4d18dc93e95ea50504fb1ced00c3bb_1551abf2-b01b-42cc-a0e0-ab7fb8383bcc.jpg?v=1794879754",
+   "inStock": true,
+   "brand": "PHILIPS",
+   "mpn": "24B2G5301/00"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "34B2U5600C/00",
    "title": "Philips 5000 series 34B2U5600C/00 computer monitor 86.4 cm (34\") 3440 x 1440 pixels Dual QHD LCD Grey",
    "url": "https://directcomputers.co.uk/products/34-inch-curved-3400x1440-100w-usb-c-2-hdmi-dp",
@@ -2894,6 +2911,17 @@
    "inStock": true,
    "brand": "PHILIPS",
    "mpn": "40B1U5601H/00"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "49B2U5900CH/00",
+   "title": "Philips 5000 series 49B2U5900CH/00 computer monitor 124 cm (48.8\") 5120 x 1440 pixels Dual QHD LCD Black",
+   "url": "https://directcomputers.co.uk/products/philips-49b2u5900ch-00-49-inch-curved-5120x1440-100w-usb-c-hbr3-5mp-webcam-monitor",
+   "price": 960.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/017e81801ac76fe4946f1d7698cc96bd3b2560949bae7fef87b3c729adf669e8_fbbc2ac4-bd74-4ced-97d4-7fce700b22c3.jpg?v=1794793290",
+   "inStock": true,
+   "brand": "PHILIPS",
+   "mpn": "49B2U5900CH/00"
   },
   {
    "retailer": "uk-directcomputers",
@@ -2978,6 +3006,30 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "27M2C5501/00",
+   "title": "Philips Evnia 5000 27M2C5501/00 computer monitor 68.6 cm (27\") 2560 x 1440 pixels Quad HD LCD White",
+   "url": "https://directcomputers.co.uk/products/philips-27-va-mon-curved-27m2c5501-00",
+   "price": 228.99,
+   "wasPrice": 234.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f7729351ff5451acd297024ddefd6caa1cb955db721363354f0e2e57bd9bbcac_17b9f711-9f21-40a4-a24c-06033334a324.jpg?v=1794793246",
+   "inStock": true,
+   "brand": "PHILIPS",
+   "mpn": "27M2C5501/00"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "32M2C5501/00",
+   "title": "Philips Evnia 5000 32M2C5501/00 computer monitor 80 cm (31.5\") 2560 x 1440 pixels Quad HD LCD White",
+   "url": "https://directcomputers.co.uk/products/philips-31-5-va-mon-curv-32m2c5501-00",
+   "price": 251.99,
+   "wasPrice": 257.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/cf2291425866d901d31a22f31612b6679d9ebafe79de08b0e03ef5325790f053_015b268c-2439-4ad4-a8a8-08cf75566ab1.jpg?v=1794793254",
+   "inStock": true,
+   "brand": "PHILIPS",
+   "mpn": "32M2C5501/00"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "34M2C5501A/00",
    "title": "Philips Evnia 5000 34M2C5501A/00 computer monitor 86.4 cm (34\") 3440 x 1440 pixels Wide Quad HD LCD White",
    "url": "https://directcomputers.co.uk/products/philips-34-va-mon-spk-cur-34m2c5501a-00",
@@ -2990,6 +3042,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "32M2N6901A/00",
+   "title": "Philips Evnia 6000 32M2N6901A/00 computer monitor 80 cm (31.5\") 3840 x 2160 pixels 4K Ultra HD QD-OLED White",
+   "url": "https://directcomputers.co.uk/products/philips-31-5-oled-mon-spk-32m2n6901a-00",
+   "price": 729.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f1ee2714337b3284ec8e13c5d2bd7aa852dab8e6f226b7d0079e0961e3aa54a5.jpg?v=1794879812",
+   "inStock": true,
+   "brand": "PHILIPS",
+   "mpn": "32M2N6901A/00"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "27M2N8500/00",
    "title": "Philips Evnia 8000 27M2N8500/00 computer monitor 67.3 cm (26.5\") 2560 x 1440 pixels Quad HD QD-OLED White",
    "url": "https://directcomputers.co.uk/products/philips-26-5-oled-mon-spk-27m2n8500-00",
@@ -2999,18 +3062,6 @@
    "inStock": true,
    "brand": "PHILIPS",
    "mpn": "27M2N8500/00"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "49M2C8900/00",
-   "title": "Philips Evnia 8000 49M2C8900/00 computer monitor 124.2 cm (48.9\") 5120 x 1440 pixels Dual QHD QD-OLED White",
-   "url": "https://directcomputers.co.uk/products/philips-48-9-oled-mon-cur-49m2c8900-00",
-   "price": 950.99,
-   "wasPrice": 975.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/6c29e321cbe2e65546984178850e7be2eb925d81e21b1a4861369e44e19c1159_7d26ac20-c3d0-46fb-b510-449f7b6474c3.jpg?v=1794793263",
-   "inStock": true,
-   "brand": "PHILIPS",
-   "mpn": "49M2C8900/00"
   },
   {
    "retailer": "uk-directcomputers",

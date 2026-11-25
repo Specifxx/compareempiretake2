@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:47:34.926Z",
+ "scrapedAt": "2026-11-25T03:33:06.997Z",
  "offers": [
   {
    "retailer": "uk-ajtoys",
@@ -1700,7 +1700,7 @@
    "sku": "21375",
    "title": "LEGO 21375 Godzilla",
    "url": "https://www.ajtoys.co.uk/products/lego-21375-godzilla",
-   "price": 349.99,
+   "price": 359,
    "image": "https://cdn.shopify.com/s/files/1/0079/4935/3041/files/Product-Image_a313825b-6586-4ffb-9af5-20783d82ddf4.jpg?v=1794562893",
    "inStock": true,
    "brand": "LEGO",
@@ -2381,9 +2381,10 @@
   {
    "retailer": "uk-ajtoys",
    "sku": "40809",
-   "title": "LEGO 40809 Festive Gingerbread House",
+   "title": "LEGO 40809 Festive",
    "url": "https://www.ajtoys.co.uk/products/lego-40809-festive-gingerbread-house",
-   "price": 38.99,
+   "price": 34.99,
+   "wasPrice": 39.99,
    "image": "https://cdn.shopify.com/s/files/1/0079/4935/3041/files/Product-Image_fa535110-561f-418c-9494-466ffb305058.jpg?v=1788436305",
    "inStock": true,
    "brand": "LEGO",
@@ -3813,6 +3814,18 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "43023"
+  },
+  {
+   "retailer": "uk-ajtoys",
+   "sku": "43024",
+   "title": "LEGO 43024 Ayrton Senna Helmet",
+   "url": "https://www.ajtoys.co.uk/products/lego-43024-ayrton-senna-helmet",
+   "price": 69.99,
+   "wasPrice": 79.99,
+   "image": "https://cdn.shopify.com/s/files/1/0079/4935/3041/files/Product-Image_54259859-2033-497e-a0be-e2746ce720c0.jpg?v=1795525396",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "43024"
   },
   {
    "retailer": "uk-ajtoys",
@@ -5259,7 +5272,8 @@
    "sku": "72051",
    "title": "LEGO 72051 Donkey Kong Arcade",
    "url": "https://www.ajtoys.co.uk/products/lego-72051-donkey-kong™-arcade",
-   "price": 149.99,
+   "price": 139,
+   "wasPrice": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0079/4935/3041/files/Product-Image_13d9e73a-7bca-4626-addd-39da1e92411a.jpg?v=1789376465",
    "inStock": true,
    "brand": "LEGO",

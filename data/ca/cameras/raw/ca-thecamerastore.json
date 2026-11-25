@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T05:08:11.702Z",
+ "scrapedAt": "2026-11-25T03:55:11.794Z",
  "offers": [
   {
    "retailer": "ca-thecamerastore",
@@ -295,17 +295,6 @@
   },
   {
    "retailer": "ca-thecamerastore",
-   "sku": "7563C018",
-   "title": "Canon Powershot G7X Mark III 30th Anniversary Edition",
-   "url": "https://www.thecamerastore.com/products/canon-powershot-g7x-mark-iii-30th-anniversary-edition",
-   "price": 1299,
-   "image": "https://cdn.shopify.com/s/files/1/0343/5246/3917/files/Canon-PowerShot-G7X-III-Graphite.jpg?v=1794926249",
-   "inStock": false,
-   "brand": "Canon",
-   "mpn": "7563C018"
-  },
-  {
-   "retailer": "ca-thecamerastore",
    "sku": "3637C001",
    "title": "Canon Powershot G7X Mark III Camera Black",
    "url": "https://www.thecamerastore.com/products/canon-powershot-g7x-mark-iii?variant=66713387434029",
@@ -377,7 +366,8 @@
    "sku": "CC779SSV0062",
    "title": "Cotton Carrier Camera Vest with Steady Shot",
    "url": "https://www.thecamerastore.com/products/cotton-carrier-camera-vest-with-steady-shot",
-   "price": 389,
+   "price": 350.1,
+   "wasPrice": 389,
    "image": "https://cdn.shopify.com/s/files/1/0343/5246/3917/products/Products10374-1000x1000-237767.jpg?v=1780077646",
    "inStock": true,
    "brand": "Cotton Carrier",
@@ -693,6 +683,26 @@
    "price": 99.99,
    "wasPrice": 109.99,
    "image": "https://cdn.shopify.com/s/files/1/0343/5246/3917/files/Fuji-instax-mini-13-blu.jpg?v=1779902266",
+   "inStock": true,
+   "brand": "FUJIFILM"
+  },
+  {
+   "retailer": "ca-thecamerastore",
+   "sku": "600025004",
+   "title": "FUJIFILM instax Mini 13 Gift Set Candy Pink",
+   "url": "https://www.thecamerastore.com/products/fujifilm-instax-mini-13-gift-set?variant=68226215018598",
+   "price": 139.99,
+   "image": "https://cdn.shopify.com/s/files/1/0343/5246/3917/files/Fuji-instax-Mini-13-Candy-Pink-gift-Set.jpg?v=1795533227",
+   "inStock": true,
+   "brand": "FUJIFILM"
+  },
+  {
+   "retailer": "ca-thecamerastore",
+   "sku": "600025006",
+   "title": "FUJIFILM instax Mini 13 Gift Set Dreamy Purple",
+   "url": "https://www.thecamerastore.com/products/fujifilm-instax-mini-13-gift-set?variant=68226215051366",
+   "price": 139.99,
+   "image": "https://cdn.shopify.com/s/files/1/0343/5246/3917/files/Fuji-instax-Mini-13-Dreamy-Purple-gift-Set.jpg?v=1795533227",
    "inStock": true,
    "brand": "FUJIFILM"
   },
@@ -2859,6 +2869,17 @@
    "inStock": true,
    "brand": "Pentax",
    "mpn": "P62001"
+  },
+  {
+   "retailer": "ca-thecamerastore",
+   "sku": "P61815",
+   "title": "Pentax UD 9x21 - Pink",
+   "url": "https://www.thecamerastore.com/products/pentax-ud-9x21-pink",
+   "price": 98.87,
+   "image": "https://cdn.shopify.com/s/files/1/0343/5246/3917/files/Pentax-UD-9x21-Pink.jpg?v=1795544348",
+   "inStock": true,
+   "brand": "Pentax",
+   "mpn": "P61815"
   },
   {
    "retailer": "ca-thecamerastore",

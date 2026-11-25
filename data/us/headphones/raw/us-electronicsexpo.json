@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:41:49.574Z",
+ "scrapedAt": "2026-11-25T03:26:59.648Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -103,7 +103,7 @@
    "url": "https://www.electronicsexpo.com/products/audio-technica-ath-al5nc-wireless-open-back-headphones",
    "price": 279,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/audio-technica-ath-al5nc-wireless-open-back-headphones-product-type-7476646.jpg?v=1794902415",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audio-Technica",
    "mpn": "AUDATHAL5NC.FBA"
   },
@@ -1334,7 +1334,8 @@
    "sku": "JBLLIVEPRO2BLU.FBA",
    "title": "JBL Live Pro 2 TWS True Wireless In-Ear Bluetooth Headphones with Adjustable Noise Canceling",
    "url": "https://www.electronicsexpo.com/products/jbl-live-pro-2-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling?variant=41444037296303",
-   "price": 169.95,
+   "price": 89.95,
+   "wasPrice": 169.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-live-pro-2-tws-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling-product-type-3108496.jpg?v=1776376089",
    "inStock": true,
    "mpn": "JBLLIVEPRO2BLU.FBA"
@@ -1344,7 +1345,8 @@
    "sku": "JBLLIVEPRO2BLK.FBA",
    "title": "JBL Live Pro 2 TWS True Wireless In-Ear Bluetooth Headphones with Adjustable Noise Canceling Black",
    "url": "https://www.electronicsexpo.com/products/jbl-live-pro-2-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling?variant=41444037263535",
-   "price": 169.95,
+   "price": 89.95,
+   "wasPrice": 169.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-live-pro-2-tws-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling-product-type-9617104.jpg?v=1776376088",
    "inStock": true,
    "mpn": "JBLLIVEPRO2BLK.FBA"
@@ -1365,7 +1367,8 @@
    "sku": "JBLLIVEPRO2SLV.FBA",
    "title": "JBL Live Pro 2 TWS True Wireless In-Ear Bluetooth Headphones with Adjustable Noise Canceling Silver",
    "url": "https://www.electronicsexpo.com/products/jbl-live-pro-2-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling?variant=41444037329071",
-   "price": 169.95,
+   "price": 89.95,
+   "wasPrice": 169.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-live-pro-2-tws-true-wireless-in-ear-bluetooth-headphones-with-adjustable-noise-canceling-product-type-7739231.jpg?v=1776376089",
    "inStock": true,
    "mpn": "JBLLIVEPRO2SLV.FBA"
@@ -1445,6 +1448,28 @@
   },
   {
    "retailer": "us-electronicsexpo",
+   "sku": "JBLQTUM250WHT.FBA",
+   "title": "JBL Quantum 250 - Wired Multiplatform Over-Ear Gaming Headset (White)",
+   "url": "https://www.electronicsexpo.com/products/jbl-quantum-250-wired-multiplatform-gaming-headset-50mm-carbon-dynamic-drivers-for-rich-jbl-quantum-spatial-sound-cardioid-noise-cancelling-boom-mic-ultra-light-comfortable-design-white?variant=50944889684143",
+   "price": 59.95,
+   "wasPrice": 79.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/71VwIXvv6aL._SL1500.avif?v=1795535867",
+   "inStock": true,
+   "mpn": "JBLQTUM250WHT.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "JBLQTUM250BLK.FBA",
+   "title": "JBL Quantum 250 - Wired Multiplatform Over-Ear Gaming Headset (White) Black",
+   "url": "https://www.electronicsexpo.com/products/jbl-quantum-250-wired-multiplatform-gaming-headset-50mm-carbon-dynamic-drivers-for-rich-jbl-quantum-spatial-sound-cardioid-noise-cancelling-boom-mic-ultra-light-comfortable-design-white?variant=50944889716911",
+   "price": 59.95,
+   "wasPrice": 79.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/718sq6SA5cL._SL1500.avif?v=1795535976",
+   "inStock": true,
+   "mpn": "JBLQTUM250BLK.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
    "sku": "JBLQUANTUM300.FBA",
    "title": "JBL Quantum 300 Wired Over-Ear Gaming Headphones (Black)",
    "url": "https://www.electronicsexpo.com/products/jbl-quantum-300-wired-over-ear-gaming-headphones-with-jbl-quantum-engine-software-black-jblquantum300",
@@ -1501,7 +1526,7 @@
    "url": "https://www.electronicsexpo.com/products/jbl-quantum-650x-wireless-multiplatform-gaming-headset-customizable-through-jbl-quantumengine-50mm-carbon-dynamic-drivers-spatial-sound-dual-wireless-connection-replaceable-components-black",
    "price": 159.95,
    "wasPrice": 199.95,
-   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1747872.jpg?v=1774969359",
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-quantum-650x-wireless-multiplatform-over-ear-gaming-headset-black-product-type-5729218.jpg?v=1795508551",
    "inStock": true,
    "mpn": "JBLQTUM650XBLK.FBA"
   },
@@ -2080,7 +2105,8 @@
    "sku": "JBLT770NCBLK.FBA",
    "title": "JBL Tune 770NC Adaptive Noise Cancelling with Smart Ambient Wireless Over-Ear Headphones Black",
    "url": "https://www.electronicsexpo.com/products/jbl-tune-770nc-adaptive-noise-cancelling-with-smart-ambient-wireless-over-ear-headphones?variant=43193719718063",
-   "price": 149.95,
+   "price": 99.95,
+   "wasPrice": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-tune-770nc-adaptive-noise-cancelling-with-smart-ambient-wireless-over-ear-headphones-2535792.jpg?v=1753291912",
    "inStock": false,
    "mpn": "JBLT770NCBLK.FBA"
@@ -2090,7 +2116,8 @@
    "sku": "JBLT770NCBLU.FBA",
    "title": "JBL Tune 770NC Adaptive Noise Cancelling with Smart Ambient Wireless Over-Ear Headphones Blue",
    "url": "https://www.electronicsexpo.com/products/jbl-tune-770nc-adaptive-noise-cancelling-with-smart-ambient-wireless-over-ear-headphones?variant=43193718145199",
-   "price": 149.95,
+   "price": 99.95,
+   "wasPrice": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-tune-770nc-adaptive-noise-cancelling-with-smart-ambient-wireless-over-ear-headphones-1836044.jpg?v=1753291912",
    "inStock": false,
    "mpn": "JBLT770NCBLU.FBA"
@@ -2120,7 +2147,8 @@
    "sku": "JBLT780NCBEG.FBA",
    "title": "JBL Tune 780NC Wireless Over-Ear Noise-Canceling Headphones Beige",
    "url": "https://www.electronicsexpo.com/products/jbl-tune-780nc-wireless-over-ear-noise-canceling-headphones?variant=47158877225135",
-   "price": 149.95,
+   "price": 79.95,
+   "wasPrice": 149.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-tune-780nc-wireless-over-ear-noise-canceling-headphones-product-type-5810476.jpg?v=1783616174",
    "inStock": true,
    "mpn": "JBLT780NCBEG.FBA"
@@ -2365,7 +2393,7 @@
    "price": 54.95,
    "wasPrice": 59.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/jbl-vibe-beam-true-wireless-headphones-3371723.jpg?v=1753292454",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "us-electronicsexpo",

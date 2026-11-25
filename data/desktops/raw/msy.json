@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:31:14.542Z",
+ "scrapedAt": "2026-11-25T03:15:56.656Z",
  "offers": [
   {
    "retailer": "msy",
@@ -104,7 +104,7 @@
    "title": "Customizable Gigabyte PC",
    "brand": "PC Configurator",
    "url": "https://www.msy.com.au/product/customizable-gigabyte-pc-72693",
-   "price": 1892,
+   "price": 1856,
    "image": "https://assets.msy.com.au/newsite/images/202511/thumb_img/Custom-PCs-Customizable-Gigabyte-PC-221.png",
    "inStock": true
   },
@@ -282,7 +282,7 @@
    "title": "G5 Intel i5 14600K GeForce RTX 5060 Ti 8G Gaming PC 62443",
    "brand": "Umart",
    "url": "https://www.msy.com.au/product/g5-intel-i5-14600k-geforce-rtx-5060-ti-8g-gaming-pc-62443-97361",
-   "price": 2499,
+   "price": 2199,
    "image": "https://assets.msy.com.au/newsite/images/202611/thumb_img/Gaming-PCs-Ready2Go-G5-Intel-i5-14600K-GeForce-RTX-5060-Ti-8G-Gaming-PC-62443-7.png",
    "inStock": true
   },
@@ -418,22 +418,22 @@
   },
   {
    "retailer": "msy",
+   "sku": "97445",
+   "title": "G5 Ryzen 5 7500F GeForce RTX 5060 Gaming PC 62516",
+   "brand": "Umart",
+   "url": "https://www.msy.com.au/product/g5-ryzen-5-7500f-geforce-rtx-5060-gaming-pc-62516-97445",
+   "price": 1849,
+   "image": "https://assets.msy.com.au/newsite/images/202611/thumb_img/Gaming-PCs-Ready2Go-G5-Ryzen-5-7500F-GeForce-RTX-5060-Gaming-PC-62516-12.png",
+   "inStock": true
+  },
+  {
+   "retailer": "msy",
    "sku": "94489",
    "title": "G5 Ryzen 5 7500F GeForce RTX 5060 Ti 16G Gaming PC 61154",
    "brand": "Umart",
    "url": "https://www.msy.com.au/product/g5-ryzen-5-7500f-geforce-rtx-5060-ti-16g-gaming-pc-61154-94489",
    "price": 2549,
    "image": "https://assets.msy.com.au/newsite/images/202606/thumb_img/Gaming-PCs-Ready2Go-G5-Ryzen-5-7500F-GeForce-RTX-5060-Ti-16G-Gaming-PC-61154-11.png",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
-   "sku": "96776",
-   "title": "G5 Ryzen 5 7500F Radeon RX 9060 XT 16G Gaming PC 62077",
-   "brand": "Umart",
-   "url": "https://www.msy.com.au/product/g5-ryzen-5-7500f-radeon-rx-9060-xt-16g-gaming-pc-62077-96776",
-   "price": 2299,
-   "image": "https://assets.msy.com.au/newsite/images/202610/thumb_img/Gaming-PCs-Ready2Go-G5-Ryzen-5-7500F-Radeon-RX-9060-XT-16G-Gaming-PC-62077-7.png",
    "inStock": true
   },
   {
@@ -472,7 +472,7 @@
    "title": "G5 Ryzen 5 7600X Radeon RX 9070 Gaming PC 61532",
    "brand": "Umart",
    "url": "https://www.msy.com.au/product/g5-ryzen-5-7600x-radeon-rx-9070-gaming-pc-61532-95447",
-   "price": 3199,
+   "price": 3099,
    "image": "https://assets.msy.com.au/newsite/images/202608/thumb_img/Gaming-PCs-Ready2Go-G5-Ryzen-5-7600X-Radeon-RX-9070-Gaming-PC-61532-10.png",
    "inStock": true
   },
@@ -651,7 +651,7 @@
    "brand": "Umart",
    "mpn": "7800X3D",
    "url": "https://www.msy.com.au/product/g7-ryzen-7-7800x3d-geforce-rtx-5070-gaming-pc-62160-96862",
-   "price": 3449,
+   "price": 3399,
    "image": "https://assets.msy.com.au/newsite/images/202611/thumb_img/Gaming-PCs-Ready2Go-G7-Ryzen-7-7800X3D-GeForce-RTX-5070-Gaming-PC-62160-8.png",
    "inStock": true
   },
@@ -944,7 +944,7 @@
    "title": "L5 Cubi NUC AI Intel Ultra 5 125H 480GB SSD 8GB RAM Windows 11 Home Mini PC for Office and Home 61948",
    "brand": "Umart",
    "url": "https://www.msy.com.au/product/l5-cubi-nuc-ai-intel-ultra-5-125h-480gb-ssd-8gb-ram-windows-11-home-mini-pc-for-office-and-home-61948-96444",
-   "price": 999,
+   "price": 969,
    "image": "https://assets.msy.com.au/newsite/images/202609/thumb_img/Office-Home-Mini-PC-L5-Cubi-NUC-AI-Intel-Ultra-5-125H-480GB-SSD-8GB-RAM-Windows-11-Home-Mini-PC-for-Office-and-Home-61948-7.png",
    "inStock": true
   },
@@ -1278,17 +1278,6 @@
    "url": "https://www.msy.com.au/product/thermaltake-genesis-v4-i5-12400f-rtx-3050-1tb-ssd-16gb-ram-w11h-gaming-desktop-pc-snow-edition-ca-4y1-00d6wa-02-81074",
    "price": 1399,
    "image": "https://assets.msy.com.au/newsite/images/202412/thumb_img/Branded-Gaming-PCs-Thermaltake-Genesis-V4-i5-12400F-RTX-3050-1TB-SSD-16GB-RAM-W11H-Gaming-Desktop-PC-Snow-Edition-CA-4Y1-00D6WA-02-4.jpg",
-   "inStock": true
-  },
-  {
-   "retailer": "msy",
-   "sku": "93389",
-   "title": "Thermaltake Genesis V5 Ryzen 5 5500 RTX 3050 1TB SSD 16GB RAM W11H Gaming Desktop PC - Black",
-   "brand": "Thermaltake",
-   "mpn": "CA-4Y2-00D1WA-A4",
-   "url": "https://www.msy.com.au/product/thermaltake-genesis-v5-ryzen-5-5500-rtx-3050-1tb-ssd-16gb-ram-w11h-gaming-desktop-pc-black-ca-4y2-00d1wa-a4-93389",
-   "price": 1399,
-   "image": "https://assets.msy.com.au/newsite/images/202604/thumb_img/Branded-Gaming-PCs-Thermaltake-Genesis-V5-Ryzen-5-5500-RTX-3050-1TB-SSD-16GB-RAM-W11H-Gaming-Desktop-PC-Black-CA-4Y2-00D1WA-A4-7.png",
    "inStock": true
   },
   {

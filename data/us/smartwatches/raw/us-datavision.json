@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:41:37.314Z",
+ "scrapedAt": "2026-11-25T03:26:44.745Z",
  "offers": [
   {
    "retailer": "us-datavision",
@@ -768,7 +768,7 @@
    "url": "https://datavision.com/products/apple-watch-series-12-gps-46mm-dark-bronze-aluminum-case-with-dark-bronze-milanese-loop-m-l-mkd84ls-a-2026",
    "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/04c15b77-b586-4e43-ad39-84d829ce830d.jpg?v=1789754340",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple",
    "mpn": "MKD84LS/A"
   },
@@ -2606,7 +2606,8 @@
    "sku": "010-02810-00",
    "title": "Garmin Forerunner 265 Running Smartwatch, Black and Powder Gray",
    "url": "https://datavision.com/products/garmin-forerunner-265-running-smartwatch-black-and-powder-gray",
-   "price": 449.99,
+   "price": 299.99,
+   "wasPrice": 449.99,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/products/9c32b6dd-7173-491d-b395-3d2356fe9455.jpg?v=1710541301",
    "inStock": true,
    "brand": "Garmin"
@@ -3073,7 +3074,7 @@
    "price": 429.99,
    "wasPrice": 449.99,
    "image": "https://cdn.shopify.com/s/files/1/1183/6364/files/a2f200f0-078a-438e-9718-16fb8c355c02.jpg?v=1786045921",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung",
    "mpn": "SM-L345UZEAXAA"
   },

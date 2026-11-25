@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:52:13.529Z",
+ "scrapedAt": "2026-11-25T03:38:13.248Z",
  "offers": [
   {
    "retailer": "uk-carmarthencameras",
@@ -117,7 +117,7 @@
    "price": 379,
    "wasPrice": 559,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Canon-EOS-R100-APS-C-Mirrorless-Camera-Body-Product-Photo-1.webp?v=1787647006",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon"
   },
   {
@@ -275,7 +275,7 @@
    "price": 1049,
    "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Canon-EOS-R7-Mirrorless-Camera-Body-Only-product-photo-4.webp?v=1730132985",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -1303,7 +1303,7 @@
    "url": "https://carmarthencameras.com/products/kodak-pixpro-c1-black",
    "price": 84.99,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak-Pixpro-C1-Black-product-photo-1.webp?v=1754037937",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kodak"
   },
   {
@@ -1313,7 +1313,7 @@
    "url": "https://carmarthencameras.com/products/kodak-pixpro-c1-brown",
    "price": 84.99,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak-Pixpro-C1-Brown-product-photo-8.webp?v=1754036954",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kodak"
   },
   {
@@ -1324,7 +1324,7 @@
    "price": 89,
    "wasPrice": 112,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/s-l1600_12.jpg?v=1676132501",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kodak"
   },
   {
@@ -1390,7 +1390,7 @@
    "price": 120,
    "wasPrice": 154,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/81a8ZMB-nNL._AC_SL1500.jpg?v=1682066154",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kodak"
   },
   {
@@ -1432,7 +1432,7 @@
    "url": "https://carmarthencameras.com/products/kodak-pixpro-wpz2-16mp-4x-zoom-tough-compact-camera-white",
    "price": 159,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Kodak_Pixpro_Compact_Camera_WPZ2WH_1.webp?v=1770803114",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kodak"
   },
   {
@@ -1735,6 +1735,26 @@
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Leica-Wireless-Charging-Handgrip-HG-DC-1-Monochrom-product-photo.webp?v=1763552162",
    "inStock": true,
    "brand": "Leica"
+  },
+  {
+   "retailer": "uk-carmarthencameras",
+   "sku": "5063872000955",
+   "title": "Lumix SHX1 Cine Camera Body Only",
+   "url": "https://carmarthencameras.com/products/lumix-shx1-cine-camera-body-only",
+   "price": 4399,
+   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/LUMIX-SHX1-Compact-Cinema-Camera-AU-SHX1-1.webp?v=1795511530",
+   "inStock": false,
+   "brand": "Lumix"
+  },
+  {
+   "retailer": "uk-carmarthencameras",
+   "sku": "5063872004335",
+   "title": "Lumix XLR Top Handle for SHX1 Cine Camera",
+   "url": "https://carmarthencameras.com/products/lumix-xlr-top-handle-for-shx1-cine-camera",
+   "price": 549,
+   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/Panasonic-LUMIX-AU-XHU1-XLR-Top-Handle-for-SHX1-Cinema-Camera-1.webp?v=1795520238",
+   "inStock": false,
+   "brand": "Lumix"
   },
   {
    "retailer": "uk-carmarthencameras",
@@ -2148,6 +2168,28 @@
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OM-System-TG-7-Tough-Compact-Camera-Product-Photo-8.jpg?v=1723471910",
    "inStock": false,
    "brand": "OM System"
+  },
+  {
+   "retailer": "uk-carmarthencameras",
+   "sku": "V210080BE000",
+   "title": "OM-System PEN Mirrorless Camera - Black",
+   "url": "https://carmarthencameras.com/products/om-system-pen-mirrorless-camera-black",
+   "price": 849,
+   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OM_SYSTEM_PEN_C37_Black_Front.webp?v=1788963256",
+   "inStock": true,
+   "brand": "OM System",
+   "mpn": "V210080BE000"
+  },
+  {
+   "retailer": "uk-carmarthencameras",
+   "sku": "V210080SE000",
+   "title": "OM-System PEN Mirrorless Camera - Silver",
+   "url": "https://carmarthencameras.com/products/om-system-pen-mirrorless-camera-silver",
+   "price": 849,
+   "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/files/OM_SYSTEM_PEN_C01_Silver_Front.webp?v=1788963257",
+   "inStock": true,
+   "brand": "OM System",
+   "mpn": "V210080SE000"
   },
   {
    "retailer": "uk-carmarthencameras",
@@ -2761,7 +2803,7 @@
    "sku": "4548736109018",
    "title": "Sony a6100 Mirrorless Digital Camera with 16-50mm and 55-210mm Lenses",
    "url": "https://carmarthencameras.com/products/sony-a6100-mirrorless-digital-camera-with-16-50mm-and-55-210mm-lenses",
-   "price": 699,
+   "price": 949,
    "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0554/9657/3025/products/1566990986_img_1242994_1__1_cf4546bb-ca6b-4b5f-bc0a-77a7e0620dd9.jpg?v=1692152808",
    "inStock": true,

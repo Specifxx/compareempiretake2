@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:23:45.925Z",
+ "scrapedAt": "2026-11-25T03:08:07.367Z",
  "offers": [
   {
    "retailer": "dell",
@@ -124,16 +124,6 @@
   },
   {
    "retailer": "dell",
-   "sku": "dc15250_so_7",
-   "brand": "Dell",
-   "title": "Dell 15 Laptop - Intel Core i5-1334U, 8 GB DDR5, 512 GB SSD, 15.6\" Non Touch FHD (1920x1080)",
-   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell15laptopdc15250/dc15250_so_7",
-   "price": 985.6,
-   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell/dell-15-intel-3530/media-gallery/laptop-dell-dc15250nt-sl-plastic-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1254&qlt=100,0&resMode=sharp2&size=1254,804",
-   "inStock": true
-  },
-  {
-   "retailer": "dell",
    "sku": "dell16laptopdc16251",
    "brand": "Dell",
    "title": "Dell 16 Laptop",
@@ -156,11 +146,11 @@
   },
   {
    "retailer": "dell",
-   "sku": "dc16251_fixed_10",
+   "sku": "dc16251_fixed_23",
    "brand": "Dell",
    "title": "Dell 16 Laptop - Intel Core 7 150U, 16 GB DDR5, 1 TB SSD, 16\" Non Touch FHD+ (1920x1200)",
-   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell16laptopdc16251/dc16251_fixed_10",
-   "price": 2299,
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell16laptopdc16251/dc16251_fixed_23",
+   "price": 2481.51,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell/16251/media-gallery/platinum-metal/fpr/notebook-dc16251-fpr-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1020&qlt=100,0&resMode=sharp2&size=1020,804",
    "inStock": true
   },
@@ -174,16 +164,6 @@
    "image": "https://i.dell.com/assetlink/img/en/notebook-db06250t-bl-gallery-5-dl1ezf5-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1216&qlt=100,0&resMode=sharp2&size=1216,804",
    "inStock": true,
    "fromPrice": true
-  },
-  {
-   "retailer": "dell",
-   "sku": "db06250_fixed_18",
-   "brand": "Dell",
-   "title": "Dell 16 Plus 2-in-1 Laptop - Intel Core Ultra 7 256V, 16 GB LPDDR5X, 1 TB SSD, 16\" Touch FHD+ (1920x1200)",
-   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dellplus162n1laptopdb06250/db06250_fixed_18",
-   "price": 2123,
-   "image": "https://i.dell.com/assetlink/img/en/notebook-db06250t-bl-gallery-5-dl1ezf5-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1216&qlt=100,0&resMode=sharp2&size=1216,804",
-   "inStock": true
   },
   {
    "retailer": "dell",
@@ -209,6 +189,16 @@
   },
   {
    "retailer": "dell",
+   "sku": "ds14270_cto_01",
+   "brand": "Dell",
+   "title": "Dell New Dell 14S Laptop - Intel Core 5 320, 8 GB LPDDR5X, 256 GB SSD, 14\" Non Touch FHD+ (1920x1200)",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dell14sds14270/ds14270_cto_01",
+   "price": 1226.5,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-dell-ds14270-row-pink-gallery-1-dl11i1w0-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1072&qlt=100,0&resMode=sharp2&size=1072,804",
+   "inStock": true
+  },
+  {
+   "retailer": "dell",
    "sku": "xps16dx16263",
    "brand": "Dell",
    "title": "Dell New XPS 16 Creator Edition Laptop",
@@ -226,6 +216,17 @@
    "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/xps13dx13267",
    "price": 4257,
    "image": "https://i.dell.com/assetlink/img/global/laptop-xps-dx13267-yl-gallery-1-dl12pn23-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1106&qlt=100,0&resMode=sharp2&size=1106,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dellproessential14pv14261",
+   "brand": "Dell",
+   "title": "Dell Pro Essential 14 Laptop",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/dellproessential14pv14261",
+   "price": 3374.71,
+   "image": "https://i.dell.com/assetlink/img/global/laptop-pro-essential-pv14261-platinum-hd-rgb-fpr-rj45-silver-gallery-1-dl117dxv-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1038&qlt=100,0&resMode=sharp2&size=1038,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -272,6 +273,16 @@
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-dx13260/media-gallery/sky/laptop-xps-13-sky-dx13260-silver-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1043&qlt=100,0&resMode=sharp2&size=1043,804",
    "inStock": true,
    "fromPrice": true
+  },
+  {
+   "retailer": "dell",
+   "sku": "dx13260_reg_03",
+   "brand": "Dell",
+   "title": "Dell XPS 13 Laptop (2026) - Intel Core 5 320, 8 GB LPDDR5X, 512 GB SSD, 13.4\" Touch QHD+ (2560x1600)",
+   "url": "https://www.dell.com/en-au/shop/laptop-computers/spd/xps13dx13260/dx13260_reg_03",
+   "price": 1600.41,
+   "image": "https://i.dell.com/assetlink/img/en/laptop-xps-13-storm-dx13260-gray-gallery-1-dl111nu1-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1042&qlt=100,0&resMode=sharp2&size=1042,804",
+   "inStock": true
   },
   {
    "retailer": "dell",

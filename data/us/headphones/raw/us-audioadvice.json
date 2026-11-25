@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:39:51.822Z",
+ "scrapedAt": "2026-11-25T03:24:52.115Z",
  "offers": [
   {
    "retailer": "us-audioadvice",
@@ -85,7 +85,7 @@
    "url": "https://www.audioadvice.com/products/audeze-lcd-x-leather-with-travel-case-and-adapter",
    "price": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0572/3281/8260/files/audeze_lcd-x.jpg?v=1718145586",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audeze",
    "mpn": "100-LX-1018-00"
   },
@@ -1197,6 +1197,28 @@
   },
   {
    "retailer": "us-audioadvice",
+   "sku": "48654212989012",
+   "title": "Meze Audio ALBA S Wired In-Ear Headphones",
+   "url": "https://www.audioadvice.com/products/meze-audio-alba-s-wired-in-ear-headphones",
+   "price": 129,
+   "image": "https://cdn.shopify.com/s/files/1/0572/3281/8260/files/MezeAudioALBASWiredIn-EarHeadphones_7.png?v=1795530236",
+   "inStock": true,
+   "brand": "Meze Audio",
+   "mpn": "ALBA-WUA"
+  },
+  {
+   "retailer": "us-audioadvice",
+   "sku": "48654093844564",
+   "title": "Meze Audio ALBA Wired In-Ear Headphones",
+   "url": "https://www.audioadvice.com/products/meze-audio-alba-wired-in-ear-headphones",
+   "price": 159,
+   "image": "https://cdn.shopify.com/s/files/1/0572/3281/8260/files/MezeAudioALBAWiredIn-EarHeadphones.png?v=1795529606",
+   "inStock": true,
+   "brand": "Meze Audio",
+   "mpn": "ALBA"
+  },
+  {
+   "retailer": "us-audioadvice",
    "sku": "47784440037460",
    "title": "Meze Audio Arta Planar Over-Ear Headphones",
    "url": "https://www.audioadvice.com/products/meze-audio-arta-planar-over-ear-headphones",
@@ -1230,6 +1252,17 @@
   },
   {
    "retailer": "us-audioadvice",
+   "sku": "48653607338068",
+   "title": "Meze Audio Empyrean II Open-Back Over-Ear Headphones",
+   "url": "https://www.audioadvice.com/products/meze-audio-empyrean-ii-open-back-over-ear-headphones",
+   "price": 2999,
+   "image": "https://cdn.shopify.com/s/files/1/0572/3281/8260/files/MezeAudioEmpyreanIIOpen-BackOver-EarHeadphones.png?v=1795528013",
+   "inStock": true,
+   "brand": "Meze Audio",
+   "mpn": "MEM-II-6.3C"
+  },
+  {
+   "retailer": "us-audioadvice",
    "sku": "41875084968020",
    "title": "Meze Audio Poet High-Performance Planar-Magnetic Headphones",
    "url": "https://www.audioadvice.com/products/meze-audio-poet-high-performance-planar-magnetic-headphones",
@@ -1239,6 +1272,17 @@
    "inStock": true,
    "brand": "Meze Audio",
    "mpn": "POET-SC"
+  },
+  {
+   "retailer": "us-audioadvice",
+   "sku": "48653909950548",
+   "title": "Meze Audio Strada Closed-Back Over-Ear Headphone",
+   "url": "https://www.audioadvice.com/products/meze-audio-strada-closed-back-over-ear-headphone",
+   "price": 799,
+   "image": "https://cdn.shopify.com/s/files/1/0572/3281/8260/files/MezeAudioStradaClosed-BackOver-EarHeadphone.png?v=1795529119",
+   "inStock": true,
+   "brand": "Meze Audio",
+   "mpn": " STR-GC"
   },
   {
    "retailer": "us-audioadvice",

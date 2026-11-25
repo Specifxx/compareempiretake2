@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:42:38.220Z",
+ "scrapedAt": "2026-11-25T03:27:46.459Z",
  "offers": [
   {
    "retailer": "us-headphonescom",
@@ -1270,6 +1270,17 @@
    "inStock": true,
    "brand": "HEDD Audio",
    "mpn": "HEDD-D1"
+  },
+  {
+   "retailer": "us-headphonescom",
+   "sku": "50197172977735",
+   "title": "HEDD Audio HEDDphone DX Headphones",
+   "url": "https://www.headphones.com/products/hedd-audio-heddphone-dx-headphones",
+   "price": 1199,
+   "image": "https://cdn.shopify.com/s/files/1/1791/0383/files/01-heddphone-dx-hero.jpg?v=1795137501",
+   "inStock": false,
+   "brand": "HEDD Audio",
+   "mpn": "HEDD-DX"
   },
   {
    "retailer": "us-headphonescom",
@@ -2939,7 +2950,7 @@
    "url": "https://www.headphones.com/products/thieaudio-monarch-mkiv-in-ear-headphones?variant=42634183835719",
    "price": 1149,
    "image": "https://cdn.shopify.com/s/files/1/1791/0383/files/THIEAUDIOMonarchMKIV_Hexagonal_5.jpg?v=1774387647",
-   "inStock": false,
+   "inStock": true,
    "brand": "Thieaudio",
    "mpn": "THIEAUDIO-MONARCH-MKIV-KG"
   },

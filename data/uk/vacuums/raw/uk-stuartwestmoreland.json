@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T05:04:29.119Z",
+ "scrapedAt": "2026-11-25T03:51:02.466Z",
  "offers": [
   {
    "retailer": "uk-stuartwestmoreland",
@@ -98,6 +98,7 @@
    "title": "Dyson Ball Animal Origin 2 Upright Vacuum Cleaner - Silver and Nickel",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-ball-animal-origin-2-upright-vacuum-ballanimalorig2",
    "price": 199.99,
+   "wasPrice": 279.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/Dyson-Ballanimalorig2-1.jpg?v=1790955197",
    "inStock": true,
    "brand": "Dyson",
@@ -310,7 +311,7 @@
    "price": 219,
    "wasPrice": 349,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/Dyson-V8-Cyclone-Kit-1.jpg?v=1780912136",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dyson",
    "mpn": "V8CYCNEWKIT"
   },
@@ -319,8 +320,8 @@
    "sku": "V8CYCLONENEW",
    "title": "Dyson V8 Cyclone New Cordless Vacuum Cleaner – Black/Green",
    "url": "https://www.stuartwestmoreland.co.uk/products/dyson-v8-cyclone-new-cordless-vacuum-black-green-v8cyclonenew",
-   "price": 199,
-   "wasPrice": 209.99,
+   "price": 198.37,
+   "wasPrice": 349,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/V8CYCLONENEW-1.jpg?v=1779372984",
    "inStock": true,
    "brand": "Dyson",
@@ -475,7 +476,7 @@
    "sku": "GUARDL1C_DFLEX",
    "title": "Miele Guard L1 Cat & Dog Flex Cylinder Vacuum Cleaner - Obsidian Black",
    "url": "https://www.stuartwestmoreland.co.uk/products/miele-guard-l1-cat-dog-flex-cylinder-vacuum-cleaner-obsidian-black",
-   "price": 299,
+   "price": 290,
    "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/f2540209-GUARDL1C_DFLEX-1.jpg?v=1755271098",
    "inStock": true,
@@ -700,7 +701,7 @@
    "sku": "VS20B75AGR1/EU",
    "title": "Samsung Jet 75E Pet Cordless Vacuum Cleaner 200W | VS20B75AGR1/EU",
    "url": "https://www.stuartwestmoreland.co.uk/products/samsung-jet-75e-pet-cordless-vacuum-cleaner-mint-vs20b75agr1-eu",
-   "price": 189,
+   "price": 219,
    "wasPrice": 249,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/VS20B75AGR1EU-1.jpg?v=1778593317",
    "inStock": true,
@@ -815,10 +816,9 @@
    "sku": "NZ780UKT",
    "title": "Shark Anti Hair Wrap Plus Upright Pet Vacuum with Lift-Away - NZ780UKT",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-anti-hair-wrap-plus-upright-pet-vacuum-with-lift-away-nz780ukt",
-   "price": 299,
-   "wasPrice": 319.99,
+   "price": 319.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/e0928697-NZ780UKT-1.jpg?v=1773833713",
-   "inStock": true,
+   "inStock": false,
    "brand": "Shark",
    "mpn": "NZ780UKT"
   },
@@ -864,7 +864,7 @@
    "price": 139.99,
    "wasPrice": 219.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/NV603UK-1.jpg?v=1788881531",
-   "inStock": false,
+   "inStock": true,
    "brand": "Shark",
    "mpn": "NV603UK"
   },
@@ -873,7 +873,7 @@
    "sku": "BU3621UKT",
    "title": "Shark Cordless Stick Vacuum Cleaner - Glacier Blue - BU3621UKT",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-cordless-stick-vacuum-glacier-blue-bu3621ukt",
-   "price": 199,
+   "price": 189,
    "wasPrice": 349,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/BU3621UKT-1.jpg?v=1776683126",
    "inStock": true,
@@ -971,17 +971,6 @@
   },
   {
    "retailer": "uk-stuartwestmoreland",
-   "sku": "BH102UK",
-   "title": "Shark PowerBoost Pet Cordless Handheld Vacuum Cleaner BH102UK",
-   "url": "https://www.stuartwestmoreland.co.uk/products/shark-powerboost-pet-cordless-handheld-vacuum-cleaner-bh102uk",
-   "price": 119.99,
-   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/BH102UK-1.jpg?v=1777374332",
-   "inStock": false,
-   "brand": "Shark",
-   "mpn": "BH102UK"
-  },
-  {
-   "retailer": "uk-stuartwestmoreland",
    "sku": "IP3251UKT",
    "title": "Shark PowerDetect Clean and Empty Cordless Pet Vacuum Cleaner - IP3251UKT",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-powerdetect-clean-empty-cordless-pet-vacuum-cleaner-ip3251ukt",
@@ -1051,23 +1040,12 @@
    "sku": "IZ380UK",
    "title": "Shark PowerPro Cordless Stick Vacuum Cleaner – IZ380UK",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-powerpro-cordless-stick-vacuum-cleaner-iz380uk",
-   "price": 199.99,
+   "price": 179.99,
    "wasPrice": 269.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/c28a7b0d-IZ380UK-1.jpg?v=1755271099",
    "inStock": true,
    "brand": "Shark",
    "mpn": "IZ380UK"
-  },
-  {
-   "retailer": "uk-stuartwestmoreland",
-   "sku": "IZ380UKT",
-   "title": "Shark PowerPro Pet Cordless Stick Vacuum Cleaner – IZ380UKT",
-   "url": "https://www.stuartwestmoreland.co.uk/products/shark-powerpro-pet-cordless-stick-vacuum-cleaner-iz380ukt",
-   "price": 299.99,
-   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/IZ380UKT.jpg?v=1795170245",
-   "inStock": false,
-   "brand": "Shark",
-   "mpn": "IZ380UKT"
   },
   {
    "retailer": "uk-stuartwestmoreland",
@@ -1098,7 +1076,7 @@
    "sku": "IZ420UKT",
    "title": "Shark Stratos Cordless Stick Vacuum Cleaner - 120 Minutes Run Time - Silver IZ420UKT",
    "url": "https://www.stuartwestmoreland.co.uk/products/shark-stratos-cordless-stick-vacuum-cleaner-iz420ukt",
-   "price": 319.99,
+   "price": 499.99,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/799c3029-IZ420UKT-1.jpg?v=1755270914",
    "inStock": true,
    "brand": "Shark",
@@ -1137,17 +1115,6 @@
    "inStock": true,
    "brand": "Shark",
    "mpn": "AZ3000UKT"
-  },
-  {
-   "retailer": "uk-stuartwestmoreland",
-   "sku": "VM200UK",
-   "title": "Shark VacMop 2-in-1 Cordless Vacuum Mop with Targeted Spray – VM200UK",
-   "url": "https://www.stuartwestmoreland.co.uk/products/shark-vacmop-2-in-1-cordless-vacuum-mop-with-targeted-spray-vm200uk-charcoal-grey",
-   "price": 99,
-   "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/VM200UK-1.jpg?v=1768297503",
-   "inStock": false,
-   "brand": "Shark",
-   "mpn": "VM200UK"
   },
   {
    "retailer": "uk-stuartwestmoreland",

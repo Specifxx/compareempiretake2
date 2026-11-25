@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:57:29.858Z",
+ "scrapedAt": "2026-11-25T03:43:46.610Z",
  "offers": [
   {
    "retailer": "uk-hp",
@@ -143,7 +143,7 @@
    "price": 1967.99,
    "wasPrice": 2356.85,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-6-g1a-16-naturalsilver-frontopen_1__cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -167,18 +167,6 @@
    "price": 1891.6,
    "wasPrice": 2264.7,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-6-g1i-16-wafer16-frontopen_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "D74RYAT#ABU",
-   "mpn": "D74RYAT#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 6 G1iR 14\" Business Laptop, Intel Core 5, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-6-g1ir-14-inch-notebook-pc-wolf-pro-security-edition-d74ryat-abu",
-   "price": 1343.99,
-   "wasPrice": 1607.06,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-6-14-inch-g1-ai-wafer14-wafer14r-waffle14-front_cus_1.png?store=gb-en&image-type=small_image",
    "inStock": false
   },
   {
@@ -219,18 +207,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "D74S0AT#ABU",
-   "mpn": "D74S0AT#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 6 G1q 14\" Business Laptop Next Gen AI PC, Snapdragon X, 32GB, 1TB, With 5G Connectivity",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-6-g1q-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-d74s0at-abu",
-   "price": 2039.99,
-   "wasPrice": 2442.16,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-6-g1q-14-inch-notebook-next-gen-ai-pc-divinity-pike-silver-front_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "DM3Y4EA#ABU",
    "mpn": "DM3Y4EA#ABU",
    "brand": "HP",
@@ -240,18 +216,6 @@
    "wasPrice": 2168.76,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/r/gruyere_14_naturalsilver_wwan_t_ircam_fpr_catalog_front_6479459_cus_1.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DM4A2EA#ABU",
-   "mpn": "DM4A2EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 6 G2a 14\" 2.5K Display Business Laptop Next Gen AI PC, AMD Ryzen AI 7, 32GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-6-g2a-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dm4a2ea-abu",
-   "price": 1983.77,
-   "wasPrice": 2375.39,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/r/gruyere_14_naturalsilver_wwan_t_ircam_fpr_catalog_front_6479459_cus_5.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -327,18 +291,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "E15NPEA#ABU",
-   "mpn": "E15NPEA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 6 G2a 14\" Business Laptop Next Gen AI PC, AMD Ryzen AI 7, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-6-g2a-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-e15npea-abu",
-   "price": 1483.19,
-   "wasPrice": 2305.92,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/r/gruyere_14_naturalsilver_wlan_t_ircam_fpr_catalog_win11_front_6478715_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "DM4A1EA#ABU",
    "mpn": "DM4A1EA#ABU",
    "brand": "HP",
@@ -347,7 +299,7 @@
    "price": 1663,
    "wasPrice": 1995.6,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/r/gruyere_14_naturalsilver_wwan_t_ircam_fpr_catalog_front_6479459_cus_7.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -471,6 +423,18 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "E15MNEA#ABU",
+   "mpn": "E15MNEA#ABU",
+   "brand": "HP",
+   "title": "HP EliteBook 6 G2i 14\" Business Laptop Next Gen AI PC, Intel Core Ultra 7, 24GB, 1TB",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-6-g2i-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-e15mnea-abu",
+   "price": 2291.99,
+   "wasPrice": 3108.89,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/o/gouda_14_naturalsilver_wlan_t_ircam_fpr_catalog_win11_front_6478654_cus_6.png?store=gb-en&image-type=small_image",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "E15MMEA#ABU",
    "mpn": "E15MMEA#ABU",
    "brand": "HP",
@@ -480,18 +444,6 @@
    "wasPrice": 3357.41,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/o/gouda_14_naturalsilver_wlan_t_ircam_fpr_catalog_win11_front_6478654_cus_7.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DM3Y8EA#ABU",
-   "mpn": "DM3Y8EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 6 G2i 16\" 2.5K Display Business Laptop Next Gen AI PC, Intel Core Ultra 7, 24GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-6-g2i-16-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dm3y8ea-abu",
-   "price": 2105.35,
-   "wasPrice": 2526.42,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/o/gouda_16g2_naturalsilver_wlan_t_ircam_fpr_catalog_front_6478212_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -515,18 +467,6 @@
    "price": 1636.15,
    "wasPrice": 1963.38,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/o/gouda_16g2_naturalsilver_wlan_t_ircam_fpr_catalog_front_6478212_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DM3Y9EA#ABU",
-   "mpn": "DM3Y9EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 6 G2i 16\" Business Laptop Next Gen AI PC, Intel Core Ultra 7, 16GB, 512GB, With 5G Connectivity",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-6-g2i-16-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dm3y9ea-abu",
-   "price": 1753.64,
-   "wasPrice": 2099.33,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/g/o/gouda_16g2_naturalsilver_wlan_t_ircam_fpr_catalog_front_6478212_cus_1.png?store=gb-en&image-type=small_image",
    "inStock": false
   },
   {
@@ -603,18 +543,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DD7V3EA#ABU",
-   "mpn": "DD7V3EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 630 G11 13.3\" Business Laptop, Intel Core Ultra 5, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-630-13-3-inch-g11-notebook-pc-wolf-pro-security-edition-dd7v3ea-abu",
-   "price": 1271.99,
-   "wasPrice": 1521.54,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/e/a/eaea76e7-7fa3-4800-b9ef-dac326b9e279.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "DD7V5EA#ABU",
    "mpn": "DD7V5EA#ABU",
    "brand": "HP",
@@ -647,7 +575,7 @@
    "price": 1643.87,
    "wasPrice": 1933.2,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/m/e/merino13x_hp_elitebook_8_flip_g2i_flip_g2i_glaciersilver_wlan_nonfpr_catalog_tent_6476762_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -675,30 +603,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DM4X1EA#ABU",
-   "mpn": "DM4X1EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 Flip G2i 13.3\" Touchscreen Business Laptop Next Gen AI PC, Intel Core Ultra 7, 32GB, 1TB, With 5G Connectivity",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-flip-g2i-13-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dm4x1ea-abu",
-   "price": 2640.89,
-   "wasPrice": 3169.06,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/m/e/merino13x_hp_elitebook_8_flip_g2i_flip_g2i_glaciersilver_wlan_nonfpr_catalog_tent_6476762_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DM4X3EA#ABU",
-   "mpn": "DM4X3EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 Flip G2i 13.3\" Touchscreen Business Laptop Next Gen AI PC, Intel Core Ultra 7, 32GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-flip-g2i-13-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dm4x3ea-abu",
-   "price": 2105.39,
-   "wasPrice": 2488.13,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/m/e/merino13x_hp_elitebook_8_flip_g2i_flip_g2i_glaciersilver_wlan_nonfpr_catalog_tent_6476762_cus_5.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "DM4X0EA#ABU",
    "mpn": "DM4X0EA#ABU",
    "brand": "HP",
@@ -723,42 +627,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "D74VQEA#ABU",
-   "mpn": "D74VQEA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G1a 14\" Business Laptop Next Gen AI PC, AMD Ryzen AI 7 PRO, 64GB, 1TB, With 5G Connectivity and HP Sure View Screen Protection",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g1a-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-d74vqea-abu",
-   "price": 2697.67,
-   "wasPrice": 3232.07,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_elitebook_8_14_g1a_lapaz14n_front_cus_14.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "A27BLEA#ABU",
-   "mpn": "A27BLEA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G1a 14\" Business Laptop Next Gen AI PC, AMD Ryzen AI 7 PRO, 64GB, with HP Sure View Screen Protection",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g1a-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-a27blea-abu",
-   "price": 2697.67,
-   "wasPrice": 3232.07,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_elitebook_8_14_g1a_lapaz14n_front_cus_10.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "D74VREA#ABU",
-   "mpn": "D74VREA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G1a 14\" Touchscreen Business Laptop Next Gen AI PC, AMD Ryzen AI 5, 16GB, 512GB, with HP Sure View Screen Protection",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g1a-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-d74vrea-abu",
-   "price": 1427.99,
-   "wasPrice": 1709.29,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_elitebook_8_14_g1a_lapaz14n_front_cus_13.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "D74VWEA#ABU",
    "mpn": "D74VWEA#ABU",
    "brand": "HP",
@@ -780,18 +648,6 @@
    "wasPrice": 2039.88,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_elitebook_8_14_g1_machu14_lapaz14_front_cus_17.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DM3X7EA#ABU",
-   "mpn": "DM3X7EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G1i 14\" Touchscreen Business Laptop AI PC, Intel Core Ultra 7, 16GB, 1TB, With 5G Connectivity",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g1i-14-inch-notebook-ai-pc-wolf-pro-security-edition-dm3x7ea-abu",
-   "price": 1991.99,
-   "wasPrice": 2385.53,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_elitebook_8_14_g1_machu14_lapaz14_front_cus_18.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1011,18 +867,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DK4Q5AT#ABU",
-   "mpn": "DK4Q5AT#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G2i 13.3\" Business Laptop Next Gen AI PC, Intel Core Ultra 7, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g2i-13-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dk4q5at-abu",
-   "price": 1739.99,
-   "wasPrice": 2050.5,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/3/f/3fc0734b-5bd0-43cf-93ce-58f2178e4ffd.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "DM4P5EA#ABU",
    "mpn": "DM4P5EA#ABU",
    "brand": "HP",
@@ -1056,30 +900,6 @@
    "wasPrice": 2347.94,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/m/e/merino_cs_g2i_glaciersilver_wwan_fpr_catalog_front_6477250_cus_2.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DM4P9EA#ABU",
-   "mpn": "DM4P9EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G2i 14\" Business Laptop Next Gen AI PC, Intel Core Ultra 5, 16GB, 256GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g2i-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dm4p9ea-abu",
-   "price": 1307.99,
-   "wasPrice": 1534.2,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/m/e/merino_14_hp_elitebook_8_g2i_glaciersilver_wwan_nonrj45_fpr_catalog_front_6488586_cus_2.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DM4Q4EA#ABU",
-   "mpn": "DM4Q4EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G2i 14\" Business Laptop Next Gen AI PC, Intel Core Ultra 5, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g2i-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dm4q4ea-abu",
-   "price": 1631.99,
-   "wasPrice": 1916.57,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/m/e/merino_14_hp_elitebook_8_g2i_glaciersilver_wwan_nonrj45_fpr_catalog_front_6488586_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1191,18 +1011,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DM4L1EA#ABU",
-   "mpn": "DM4L1EA#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G2i 16\" Business Laptop Next Gen AI PC, Intel Core Ultra 7, 16GB, 256GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g2i-16-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-dm4l1ea-abu",
-   "price": 1607.99,
-   "wasPrice": 1890.17,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/b/ab85d1e4-64be-4585-8700-21eda208fb35.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "E15CNAT#ABU",
    "mpn": "E15CNAT#ABU",
    "brand": "HP",
@@ -1236,18 +1044,6 @@
    "wasPrice": 3626.84,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/b/ab85d1e4-64be-4585-8700-21eda208fb35.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E15CPAT#ABU",
-   "mpn": "E15CPAT#ABU",
-   "brand": "HP",
-   "title": "HP EliteBook 8 G2i 16\" Business Laptop Next Gen AI PC, Intel Core Ultra 7, 32GB, 512GB, with HP Sure View Screen Protection",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-elitebook-8-g2i-16-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-e15cpat-abu",
-   "price": 2051.75,
-   "wasPrice": 3222.2,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/b/ab85d1e4-64be-4585-8700-21eda208fb35.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -1415,7 +1211,7 @@
    "price": 3347.99,
    "wasPrice": 3969.14,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-x-g2a-14-inch-notebook-next-gen-ai-pc-cashmereamd-glacier-silver-front_cus_2.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -1728,30 +1524,6 @@
    "wasPrice": 2526.25,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-elitebook-x-g2q-14-inch-notebook-next-gen-ai-pc-cashmereqcm-atmospheric-blue-front_cus_14.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DD7V0EA#ABU",
-   "mpn": "DD7V0EA#ABU",
-   "brand": "HP",
-   "title": "HP Fortis Flip G1m 11.6\" Chromebook, MediaTek MT8186, 8GB, 64GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-fortis-flip-g1m-11-inch-chromebook-dd7v0ea-abu",
-   "price": 455.99,
-   "wasPrice": 705.59,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/6/f/6fff3cca-37fb-4416-91e2-43335b2bd83c.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "5P9U6EA#ABU",
-   "mpn": "5P9U6EA#ABU",
-   "brand": "HP",
-   "title": "HP Fortis Flip G1m 11.6\" Chromebook, MediaTek MT8186, 8GB, 64GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-fortis-flip-g1m-11-inch-chromebook-5p9u6ea-abu",
-   "price": 455.99,
-   "wasPrice": 705.59,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/6/f/6fff3cca-37fb-4416-91e2-43335b2bd83c.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2139,7 +1911,7 @@
    "brand": "HP",
    "title": "HP Laptop 15\" Laptop, AMD Ryzen 5, 16GB, 512GB",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-laptop-15-fc1002na-d37hzea-abu",
-   "price": 599,
+   "price": 499,
    "wasPrice": 1000,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08434622_cus_2.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -2155,18 +1927,6 @@
    "wasPrice": 799.99,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08434622_cus_1.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "D37HYEA#ABU",
-   "mpn": "D37HYEA#ABU",
-   "brand": "HP",
-   "title": "HP Laptop 15\" Laptop, AMD Ryzen 7, 16GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-laptop-15-fc1000na-d37hyea-abu",
-   "price": 799,
-   "wasPrice": 849,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08434622_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2190,7 +1950,7 @@
    "price": 799,
    "wasPrice": 819,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/0/c08515077_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2325,17 +2085,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "D82NGEA#ABU",
-   "mpn": "D82NGEA#ABU",
-   "brand": "HP",
-   "title": "HP OmniBook 3 16\" Next Gen AI Laptop, AMD Ryzen 5, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-3-laptop-ai-16-bw0001nax-d82ngea-abu",
-   "price": 949,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-3-16-inch-laptop-pc-bantiea-glacier-silver-front_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "D8XD3EA#ABU",
    "mpn": "D8XD3EA#ABU",
    "brand": "HP",
@@ -2353,7 +2102,7 @@
    "brand": "HP",
    "title": "HP OmniBook 3 17\" Laptop, AMD Ryzen 3, 8GB, 512GB",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-3-laptop-17-dp0012nax-dw8n3ea-abu",
-   "price": 499,
+   "price": 459,
    "wasPrice": 799,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-17.3-inch-laptop-pc-costaa-glacier-silver-front_cus_2.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -2416,6 +2165,28 @@
    "price": 599,
    "wasPrice": 699,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-5-flip-14-inch-2-in-1-laptop-pc-salute-glacier-silver-tent_cus_5.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E7PE4EA#ABU",
+   "mpn": "E7PE4EA#ABU",
+   "brand": "HP",
+   "title": "HP OmniBook 5 14\" AI Laptop, Intel Core 5, 16GB, 512GB, OLED Display",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptopai-14-mh0043nax-e7pe4ea-abu",
+   "price": 1150,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/k/u/kudle_omnibook_14_cs_smokesilver_tnt_bl_win11_catalog_front_8099554_cus_1.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E7PE1EA#ABU",
+   "mpn": "E7PE1EA#ABU",
+   "brand": "HP",
+   "title": "HP OmniBook 5 14\" AI Laptop, Intel Core 5, 16GB, 512GB, OLED Display",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptopai-14-mh0040nax-e7pe1ea-abu",
+   "price": 1150,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/k/u/kudle_omnibook_14_cs_starlitblue_tnt_bl_win11_catalog_front_8099355_cus_1.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -2486,6 +2257,17 @@
   },
   {
    "retailer": "uk-hp",
+   "sku": "E7PR7EA#ABU",
+   "mpn": "E7PR7EA#ABU",
+   "brand": "HP",
+   "title": "HP OmniBook 5 14\" AI Laptop, Intel Core 5, 8GB, 256GB, OLED Display",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptopai-14-mh0067nax-e7pr7ea-abu",
+   "price": 880,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/k/u/kudle_omnibook_14_cs_smokesilver_tnt_bl_win11_catalog_front_8099554_cus_1_3.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
    "sku": "E7PR6EA#ABU",
    "mpn": "E7PR6EA#ABU",
    "brand": "HP",
@@ -2493,6 +2275,28 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptopai-14-mh0066nax-e7pr6ea-abu",
    "price": 880,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/k/u/kudle_omnibook_14_cs_peonypink_tnt_bl_win11_catalog_front_8110609_cus_4.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E7PR5EA#ABU",
+   "mpn": "E7PR5EA#ABU",
+   "brand": "HP",
+   "title": "HP OmniBook 5 14\" AI Laptop, Intel Core 5, 8GB, 256GB, OLED Display",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptopai-14-mh0065nax-e7pr5ea-abu",
+   "price": 880,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/k/u/kudle_omnibook_14_cs_starlitblue_tnt_bl_win11_catalog_front_8099355_cus_4.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "E7PR4EA#ABU",
+   "mpn": "E7PR4EA#ABU",
+   "brand": "HP",
+   "title": "HP OmniBook 5 14\" AI Laptop, Intel Core 5, 8GB, 256GB, OLED Display",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptopai-14-mh0064nax-e7pr4ea-abu",
+   "price": 880,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/k/u/kudle_omnibook_14_cs_softhoneydew_tnt_bl_win11_catalog_front_8103362_cus_4.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -2668,18 +2472,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DW9C9EA#ABU",
-   "mpn": "DW9C9EA#ABU",
-   "brand": "HP",
-   "title": "HP OmniBook 5 16\" Laptop, Intel Core 5, 16GB, 512GB, OLED Display",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptop-16-ba1009nax-dw9c9ea-abu",
-   "price": 649,
-   "wasPrice": 1099,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-5-14-inch-laptop-next-gen-ai-pc-canopyr-glacier-silver-front_cus_4_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "D77G6EA#ABU",
    "mpn": "D77G6EA#ABU",
    "brand": "HP",
@@ -2700,7 +2492,7 @@
    "price": 769,
    "wasPrice": 1399,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-5-14-inch-laptop-next-gen-ai-pc-canopyr-glacier-silver-front_cus_1_1.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -2774,30 +2566,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DQ8S5EA#ABU",
-   "mpn": "DQ8S5EA#ABU",
-   "brand": "HP",
-   "title": "HP OmniBook 5 16\" Next Gen AI Laptop, Intel Core Ultra 7, 16GB, 512GB, OLED, Touchscreen Display",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptop-next-gen-ai-16-bm0005nax-dq8s5ea-abu",
-   "price": 999,
-   "wasPrice": 1499,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-5-16-inch-laptop-next-gen-ai-pc-esa-glacier-silver-front_cus_1_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "D77GDEA#ABU",
-   "mpn": "D77GDEA#ABU",
-   "brand": "HP",
-   "title": "HP OmniBook 5 16\" Next Gen AI Laptop, Snapdragon X Plus, 32GB, 1TB, OLED Display",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptop-next-gen-ai-16-bf0003nax-d77gdea-abu",
-   "price": 899,
-   "wasPrice": 1329,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-5-16-inch-laptop-next-gen-ai-pc-coda-glacier-silver-front_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "D77GCEA#ABU",
    "mpn": "D77GCEA#ABU",
    "brand": "HP",
@@ -2817,6 +2585,18 @@
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptop-next-gen-ai-16-bf1015nax-d82q6ea-abu",
    "price": 1249,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-5-16-inch-laptop-next-gen-ai-pc-coda-starlit-blue-front_2__cus.png?store=gb-en&image-type=small_image",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hp",
+   "sku": "D96Z9EA#ABU",
+   "mpn": "D96Z9EA#ABU",
+   "brand": "HP",
+   "title": "HP OmniBook 5 Laptop Next Gen AI 16-bp0507sax",
+   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-5-laptop-next-gen-ai-16-bp0507sax-d96z9ea-abu",
+   "price": 819,
+   "wasPrice": 1099,
+   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/d/8/d8f99fe5-c102-41a7-81b0-44d0c73d6aee.png?store=gb-en&image-type=small_image",
    "inStock": true
   },
   {
@@ -2878,30 +2658,6 @@
    "wasPrice": 999,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-7-16-inch-laptop-ai-pc-trekker-glaciersilver-front_cus.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E45G7EA#ABU",
-   "mpn": "E45G7EA#ABU",
-   "brand": "HP",
-   "title": "HP OmniBook 7 16\" Next Gen AI Laptop, Intel Core Ultra 5, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-7-laptop-next-gen-ai-16-bh0006nax-e45g7ea-abu",
-   "price": 899,
-   "wasPrice": 1299,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-7-16-inch-laptop-ai-pc-trekker7-glaciersilver-front_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "D77L2EA#ABU",
-   "mpn": "D77L2EA#ABU",
-   "brand": "HP",
-   "title": "HP OmniBook 7 17\" Next Gen AI Laptop, Intel Core Ultra 7, 16GB, 1TB, Touchscreen Display",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-7-laptop-next-gen-ai-17-dc0002nax-d77l2ea-abu",
-   "price": 1049,
-   "wasPrice": 1099,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-7-17.3-inch-laptop-next-gen-ai-pc-turbine7-glaciersilver-front_cus_11.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -3088,18 +2844,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "E40NFEA#ABU",
-   "mpn": "E40NFEA#ABU",
-   "brand": "HP",
-   "title": "HP OmniBook X 14\" Next Gen AI Laptop, AMD Ryzen AI 7, 32GB, 1TB, OLED, Touchscreen Display",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-x-flip-2-in-1-laptop-next-gen-ai-14-kc0011nax-e40nfea-abu",
-   "price": 1249,
-   "wasPrice": 1999,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-x-flip-14-inch-2-in-1-laptop-next-gen-ai-pc-kentoa-atmospheric-blue-tent_cus.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "D43HKEA#ABU",
    "mpn": "D43HKEA#ABU",
    "brand": "HP",
@@ -3202,7 +2946,7 @@
    "price": 1099,
    "wasPrice": 1499,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-x-flip-14-inch-2-in-1-laptop-next-gen-ai-pc-kentoi-meteor-silver-tent-pen_cus_3.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -3314,24 +3058,12 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DW9F2EA#ABU",
-   "mpn": "DW9F2EA#ABU",
-   "brand": "HP",
-   "title": "HP OmniBook X 16\" Next Gen AI 2-in-1 Laptop, Intel Core Ultra 7, 32GB, 1TB, OLED, Touchscreen Display",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-x-flip-2-in-1-laptop-next-gen-ai-16-cb0011nax-dw9f2ea-abu",
-   "price": 1999,
-   "wasPrice": 2399.99,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-x-flip-16-inch-2-in-1-laptop-next-gen-ai-pc-kokii-eclipse-gray-tent-pen_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "DQ9H8EA#ABU",
    "mpn": "DQ9H8EA#ABU",
    "brand": "HP",
    "title": "HP OmniBook X 17\" Next Gen AI Laptop, Intel Core Ultra 5, 16GB, 1TB, Touchscreen Display",
    "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-omnibook-x-laptop-next-gen-ai-17-de0004nax-dq9h8ea-abu",
-   "price": 1249,
+   "price": 1049,
    "wasPrice": 1499,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-omnibook-x-17.3-inch-laptop-next-gen-ai-pc-viktor-glacier-silver-front_cus.png?store=gb-en&image-type=small_image",
    "inStock": true
@@ -3480,18 +3212,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "D74THEA#ABU",
-   "mpn": "D74THEA#ABU",
-   "brand": "HP",
-   "title": "HP ProBook 4 G1i 14\" Business Laptop AI PC, Intel Core Ultra 5, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-probook-4-g1i-14-inch-notebook-ai-pc-wolf-pro-security-edition-d74thea-abu",
-   "price": 1150.55,
-   "wasPrice": 1375.16,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_probook_4_14_inch_g1i_rainbowcake14_front_cus_1_8.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "CP7Q5ET#ABU",
    "mpn": "CP7Q5ET#ABU",
    "brand": "HP",
@@ -3516,18 +3236,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "D74TJEA#ABU",
-   "mpn": "D74TJEA#ABU",
-   "brand": "HP",
-   "title": "HP ProBook 4 G1i 14\" Business Laptop AI PC, Intel Core Ultra 7, 24GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-probook-4-g1i-14-inch-notebook-ai-pc-wolf-pro-security-edition-d74tjea-abu",
-   "price": 1346.39,
-   "wasPrice": 1610.76,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_probook_4_14_inch_g1i_rainbowcake14_front_cus_1_11.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "D74TKEA#ABU",
    "mpn": "D74TKEA#ABU",
    "brand": "HP",
@@ -3536,7 +3244,7 @@
    "price": 1591.19,
    "wasPrice": 1904.53,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_probook_4_14_inch_g1i_rainbowcake14_front_cus_1_7.png?store=gb-en&image-type=small_image",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-hp",
@@ -3552,30 +3260,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "D74TLEA#ABU",
-   "mpn": "D74TLEA#ABU",
-   "brand": "HP",
-   "title": "HP ProBook 4 G1i 16\" Business Laptop AI PC, Intel Core Ultra 5, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-probook-4-g1i-16-inch-notebook-ai-pc-wolf-pro-security-edition-d74tlea-abu",
-   "price": 1283.99,
-   "wasPrice": 1535.02,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_probook_4_g1i_16_inch_notebook_ai_pc-front_cus_10.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "D74TNEA#ABU",
-   "mpn": "D74TNEA#ABU",
-   "brand": "HP",
-   "title": "HP ProBook 4 G1i 16\" Business Laptop AI PC, Intel Core Ultra 7, 24GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-probook-4-g1i-16-inch-notebook-ai-pc-wolf-pro-security-edition-d74tnea-abu",
-   "price": 1556.86,
-   "wasPrice": 1863.16,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_probook_4_g1i_16_inch_notebook_ai_pc-front_cus_16.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "D74TREA#ABU",
    "mpn": "D74TREA#ABU",
    "brand": "HP",
@@ -3584,18 +3268,6 @@
    "price": 1967.51,
    "wasPrice": 2354.95,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_probook_4_g1i_16_inch_notebook_ai_pc-front_cus_9.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "D74TSEA#ABU",
-   "mpn": "D74TSEA#ABU",
-   "brand": "HP",
-   "title": "HP ProBook 4 G1i 16\" WQXGA Business Laptop AI PC, Intel Core Ultra 7, 32GB, 512GB, NVIDIA GeForce RTX 3050 4GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-probook-4-g1i-16-inch-notebook-ai-pc-wolf-pro-security-edition-d74tsea-abu",
-   "price": 2027.99,
-   "wasPrice": 2427.91,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_probook_4_g1i_16_inch_notebook_ai_pc-front_cus_17.png?store=gb-en&image-type=small_image",
    "inStock": false
   },
   {
@@ -3621,18 +3293,6 @@
    "wasPrice": 2298.23,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-probook-4-g1q-14-naturalsilve-frontopen_cus_6.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "B39WPAT#ABU",
-   "mpn": "B39WPAT#ABU",
-   "brand": "HP",
-   "title": "HP ProBook 4 G1q 14\" Business Laptop Next Gen AI PC, Snapdragon X, 32GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-probook-4-g1q-14-inch-notebook-next-gen-ai-pc-wolf-pro-security-edition-b39wpat-abu",
-   "price": 1763.56,
-   "wasPrice": 2110.48,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-probook-4-g1q-14-naturalsilve-frontopen_cus_5.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -4030,18 +3690,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DD7V9EA#ABU",
-   "mpn": "DD7V9EA#ABU",
-   "brand": "HP",
-   "title": "HP ProBook 440 G11 14\" WUXGA Business Laptop, Intel Core Ultra 5, 16GB, 512GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-probook-440-14-inch-g11-notebook-pc-wolf-pro-security-edition-dd7v9ea-abu",
-   "price": 1101.59,
-   "wasPrice": 1317,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_probook_440_g11_14_naturalsilver_wwan_t_ircam_fpr_coreset_ahs_whitebg_frontopen_m1547198_cus_10.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "DD7W1EA#ABU",
    "mpn": "DD7W1EA#ABU",
    "brand": "HP",
@@ -4050,7 +3698,7 @@
    "price": 1602.47,
    "wasPrice": 1917.68,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/a/0/a075a2f6-8de8-4dd2-b361-00d92755db66.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -4143,7 +3791,7 @@
    "price": 1599,
    "wasPrice": 1649,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/b/5/b5d15096-c009-4696-89f5-45702047b24b.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -4336,18 +3984,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "DM4G8EA#ABU",
-   "mpn": "DM4G8EA#ABU",
-   "brand": "HP",
-   "title": "HP ZBook 8 G2a 14\" Mobile Workstation, AMD Ryzen AI 7 PRO, 64GB, with HP Sure View Screen Protection",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-zbook-8-g2a-14-inch-mobile-workstation-pc-wolf-pro-security-edition-dm4g8ea-abu",
-   "price": 2603.99,
-   "wasPrice": 3697.2,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_zbook_lampas_14_g2a_wlan_fpr_nonrj45_nonai_meteorsilver_pdm_catalog_front_6644102_cus_1.jpg?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "E07HKEA#ABU",
    "mpn": "E07HKEA#ABU",
    "brand": "HP",
@@ -4369,18 +4005,6 @@
    "wasPrice": 3623.36,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_zbook_lampas_14_g2a_wlan_fpr_nonrj45_nonai_meteorsilver_pdm_catalog_front_6644102_cus_3.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E07HMEA#ABU",
-   "mpn": "E07HMEA#ABU",
-   "brand": "HP",
-   "title": "HP ZBook 8 G2a 14\" WQXGA Display Mobile Workstation, AMD Ryzen AI 9 HX PRO, 64GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-zbook-8-g2a-14-inch-mobile-workstation-pc-wolf-pro-security-edition-e07hmea-abu",
-   "price": 2939.99,
-   "wasPrice": 4055.58,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp_zbook_lampas_14_g2a_wlan_fpr_nonrj45_nonai_meteorsilver_pdm_catalog_front_6644102_cus_4.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -4528,18 +4152,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "E07H8EA#ABU",
-   "mpn": "E07H8EA#ABU",
-   "brand": "HP",
-   "title": "HP ZBook 8 G2i 14\" WQXGA Display Mobile Workstation, Intel Core Ultra 7, 32GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-zbook-8-g2i-14-inch-mobile-workstation-pc-wolf-pro-security-edition-data-science-e07h8ea-abu",
-   "price": 2267.99,
-   "wasPrice": 3058.92,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/9/e/9e8739f8-ece5-4320-a79e-47d29f942325.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "E07HCEA#ABU",
    "mpn": "E07HCEA#ABU",
    "brand": "HP",
@@ -4572,7 +4184,7 @@
    "price": 3983.99,
    "wasPrice": 4795.14,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/9/e/9e8739f8-ece5-4320-a79e-47d29f942325.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -4657,18 +4269,6 @@
    "wasPrice": 3481.2,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/5/5/5575dfd7-cce7-4bdc-ac18-c7f30e0ee811.jpg?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DM4F8EA#ABU",
-   "mpn": "DM4F8EA#ABU",
-   "brand": "HP",
-   "title": "HP ZBook 8 G2i 16\" WQUXGA Display Mobile Workstation, Intel Core Ultra X9, 64GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-zbook-8-g2i-16-inch-mobile-workstation-pc-wolf-pro-security-edition-dm4f8ea-abu",
-   "price": 3383.99,
-   "wasPrice": 3767.58,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/c/8/c8e182e3-5857-4920-a91d-e70f935e1862.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -4764,7 +4364,7 @@
    "price": 6476.39,
    "wasPrice": 7239.49,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/z/b/zbookfury_gemtree_16_meteorsilver_nonodd_nonfpr_ai_wwan_catalog_whitebg_transperant_frontopen_4513266_cus_1_1.png?store=gb-en&image-type=small_image",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -4840,30 +4440,6 @@
   },
   {
    "retailer": "uk-hp",
-   "sku": "A3ZH3ET#ABU",
-   "mpn": "A3ZH3ET#ABU",
-   "brand": "HP",
-   "title": "HP ZBook Ultra G1a 14\" 2.8K OLED Touchscreen Mobile Workstation, AMD Ryzen AI Max+, 64GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-zbook-ultra-14-inch-g1a-mobile-workstation-pc-wolf-pro-security-edition-data-science-a3zh3et-abu",
-   "price": 3311.99,
-   "wasPrice": 3707.24,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-zbook-ultra-g1a-14-chiron-meteorsilver-front_cus_1.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "DA5P3ET#ABU",
-   "mpn": "DA5P3ET#ABU",
-   "brand": "HP",
-   "title": "HP ZBook Ultra G1a 14\" 2.8K OLED Touchscreen Mobile Workstation, AMD Ryzen AI Max+, 64GB, 1TB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-zbook-ultra-14-inch-g1a-mobile-workstation-pc-wolf-pro-security-edition-data-science-da5p3et-abu",
-   "price": 3635.99,
-   "wasPrice": 4069.92,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/h/p/hp-zbook-ultra-g1a-14-chiron-meteorsilver-front_cus_5.png?store=gb-en&image-type=small_image",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hp",
    "sku": "E7DC9EA#ABU",
    "mpn": "E7DC9EA#ABU",
    "brand": "HP",
@@ -4885,18 +4461,6 @@
    "wasPrice": 5845.44,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/s/u/sundae_zbook_ultra_16_nb_eclipsegray_t_oled_fps_wlan_aec_coreset_front_7793123_cus_2.jpg?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E7KE9EA#ABU",
-   "mpn": "E7KE9EA#ABU",
-   "brand": "HP",
-   "title": "HP ZBook Ultra G3a 16\" 2.8K OLED Mobile Workstation PC, AMD Ryzen AI Max+ PRO 495, 192GB, 1TB, Data Science",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-zbook-ultra-g3a-16-inch-mobile-workstation-pc-wolf-pro-security-edition-data-science-e7ke9ea-abu",
-   "price": 6695.99,
-   "wasPrice": 9642.06,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/s/u/sundae_zbook_ultra_16_nb_eclipsegray_t_oled_fps_wlan_aec_coreset_front_7793123_cus_3.jpg?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",
@@ -5053,18 +4617,6 @@
    "wasPrice": 5227.25,
    "image": "https://www.hp.com/gb-en/shop/media/catalog/product/9/3/936fa5c4-8fa0-4a02-aa73-ad378c3f53b0.png?store=gb-en&image-type=small_image",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hp",
-   "sku": "E0EV9EA#ABU",
-   "mpn": "E0EV9EA#ABU",
-   "brand": "HP",
-   "title": "HP ZBook X G2i 16\" WQUXGA Display Mobile Workstation, Intel Core Ultra 9, 48GB, NVIDIA RTX PRO 2000 8GB",
-   "url": "https://www.hp.com/gb-en/shop/products/laptops/hp-zbook-x-g2i-16-inch-mobile-workstation-pc-wolf-pro-security-edition-e0ev9ea-abu",
-   "price": 3455.99,
-   "wasPrice": 5052.38,
-   "image": "https://www.hp.com/gb-en/shop/media/catalog/product/7/4/74bb923f-c9f7-4617-bfe8-dddb95c96ee0.png?store=gb-en&image-type=small_image",
-   "inStock": false
   },
   {
    "retailer": "uk-hp",

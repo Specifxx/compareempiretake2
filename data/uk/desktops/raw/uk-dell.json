@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:54:47.502Z",
+ "scrapedAt": "2026-11-25T03:41:01.131Z",
  "offers": [
   {
    "retailer": "uk-dell",
@@ -116,6 +116,28 @@
    "url": "https://www.dell.com/en-gb/shop/workstation/spd/precisiontower7875",
    "price": 4704.34,
    "image": "https://i.dell.com/assetlink/img/en/desktop-precison-7875-black-gallery-1-dl1e3an-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=503&qlt=100,0&resMode=sharp2&size=503,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "precision7960rack",
+   "brand": "Dell",
+   "title": "Dell Precision 7960 Rack",
+   "url": "https://www.dell.com/en-gb/shop/workstation/spd/precision7960rack",
+   "price": 7243.54,
+   "image": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/precision-t7690/media-gallery/rack/server-workstation-precision-r7960-bezel-black-gallery-4.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=3495&qlt=100,0&resMode=sharp2&size=3495,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "precision7960tower",
+   "brand": "Dell",
+   "title": "Dell Precision 7960 Tower Workstation",
+   "url": "https://www.dell.com/en-gb/shop/workstation/spd/precision7960tower",
+   "price": 5552.74,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/precision-t7690/media-gallery/tower/desktop-precision-7960-t-gray-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=595&qlt=100,0&resMode=sharp2&size=595,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -275,12 +297,56 @@
   },
   {
    "retailer": "uk-dell",
+   "sku": "dellproprecision71urackpw7r1260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 7 R1 Rack",
+   "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision71urackpw7r1260",
+   "price": 3096.34,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-7r1-rack-pw7r1260/media-gallery/server-precision-rack-pw7r1260-hdd-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=1314&qlt=100,0&resMode=sharp2&size=1314,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
    "sku": "dellproprecision7t1pw7t1260",
    "brand": "Dell",
    "title": "Dell Pro Precision 7 T1 Desktop",
    "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision7t1pw7t1260",
    "price": 1248.34,
    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-7-t1-pw7t1260/media-gallery/desktop-precision-pw7t1260-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=508&qlt=100,0&resMode=sharp2&size=508,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "dellproprecision9t2pw9t2260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T2 Desktop",
+   "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision9t2pw9t2260",
+   "price": 4304.74,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t2-pw9t2260/media-gallery/desktop-precision-pw9t2260-tower-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=553&qlt=100,0&resMode=sharp2&size=553,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "dellproprecision9t4pw9t4260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T4 Desktop",
+   "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision9t4pw9t4260",
+   "price": 5927.14,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t4-pw9t4260/media-gallery/desktop-dell-pro-precision-pw9t4260-premium-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=549&qlt=100,0&resMode=sharp2&size=549,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "dellproprecision9t6pw9t6260",
+   "brand": "Dell",
+   "title": "Dell Pro Precision 9 T6 Desktop",
+   "url": "https://www.dell.com/en-gb/shop/workstation/spd/dellproprecision9t6pw9t6260",
+   "price": 7422.65,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/fixed-workstations/precision/dell-pro-precision-9-t6-pw9t6260/media-gallery/desktop-precision-pw9t6260-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=617&qlt=100,0&resMode=sharp2&size=617,804",
    "inStock": true,
    "fromPrice": true
   },
@@ -303,6 +369,17 @@
    "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproslimqcs1250",
    "price": 1083.06,
    "image": "https://i.dell.com/assetlink/img/global/desktop-pro-qcs1250-slim-odd-black-gallery-1-dl1feup-large.png?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=509&qlt=100,0&resMode=sharp2&size=509,804",
+   "inStock": true,
+   "fromPrice": true
+  },
+  {
+   "retailer": "uk-dell",
+   "sku": "dellproslimqcs1255",
+   "brand": "Dell",
+   "title": "Dell Pro Slim Desktop",
+   "url": "https://www.dell.com/en-gb/shop/desktop-computers/spd/dellproslimqcs1255",
+   "price": 1326.66,
+   "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/dell-pro/qcs1255/media-gallery/odd/desktop-pro-qcs1255-slim-amd-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=414&qlt=100,0&resMode=sharp2&size=414,804",
    "inStock": true,
    "fromPrice": true
   },

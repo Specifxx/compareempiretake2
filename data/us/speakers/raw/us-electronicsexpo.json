@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:41:49.573Z",
+ "scrapedAt": "2026-11-25T03:26:59.646Z",
  "offers": [
   {
    "retailer": "us-electronicsexpo",
@@ -354,6 +354,28 @@
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/harman-kardon-enchant-speaker-wireless-powered-speaker-with-wi-fi-apple-airplay-2-and-bluetooth-product-type-6684000.webp?v=1784741892",
    "inStock": false,
    "brand": "Harman Kardon"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "HARLUNA2BLK.FBA",
+   "title": "Harman Kardon Luna 2 - Wireless Bluetooth Speaker Black",
+   "url": "https://www.electronicsexpo.com/products/harman-kardon-luna-2-wireless-bluetooth-speaker-with-ai-sound-boost-ambient-light-ip67-waterproof-dustproof-built-in-battery-for-12-hours-playtime-multi-speaker-connection-by-auracast-black?variant=50945124794543",
+   "price": 199.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/81NAKU56d4L._AC_SL1500.avif?v=1795545085",
+   "inStock": true,
+   "brand": "Harman Kardon",
+   "mpn": "HARLUNA2BLK.FBA"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "HARLUNA2WSD.FBA",
+   "title": "Harman Kardon Luna 2 - Wireless Bluetooth Speaker sand",
+   "url": "https://www.electronicsexpo.com/products/harman-kardon-luna-2-wireless-bluetooth-speaker-with-ai-sound-boost-ambient-light-ip67-waterproof-dustproof-built-in-battery-for-12-hours-playtime-multi-speaker-connection-by-auracast-black?variant=50945124827311",
+   "price": 199.95,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/81CkcDETz8L._AC_SL1500.avif?v=1795545074",
+   "inStock": true,
+   "brand": "Harman Kardon",
+   "mpn": "HARLUNA2WSD.FBA"
   },
   {
    "retailer": "us-electronicsexpo",
@@ -819,7 +841,8 @@
    "sku": "JBLGO5PUR.FBA",
    "title": "JBL Go 5 Portable Waterproof Bluetooth Speaker Purple",
    "url": "https://www.electronicsexpo.com/products/jbl-go-5-ultra-portable-waterproof-drop-proof-speaker-with-jbl-legendary-sound-ambient-edge-lighting-airtouch-instant-stereo-pairing-or-link-multiple-compatible-speakers-via-auracast?variant=46772851540143",
-   "price": 59.95,
+   "price": 49.95,
+   "wasPrice": 54.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-go-5-portable-waterproof-bluetooth-speaker-product-type-1310266.jpg?v=1776287775",
    "inStock": true,
    "mpn": "JBLGO5PUR.FBA"
@@ -839,7 +862,8 @@
    "sku": "JBLGO5TBLUE.FBA",
    "title": "JBL Go 5 Portable Waterproof Bluetooth Speaker Teal",
    "url": "https://www.electronicsexpo.com/products/jbl-go-5-ultra-portable-waterproof-drop-proof-speaker-with-jbl-legendary-sound-ambient-edge-lighting-airtouch-instant-stereo-pairing-or-link-multiple-compatible-speakers-via-auracast?variant=46772862419119",
-   "price": 54.95,
+   "price": 44.95,
+   "wasPrice": 54.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-go-5-portable-waterproof-bluetooth-speaker-product-type-1552515.jpg?v=1776287775",
    "inStock": true,
    "mpn": "JBLGO5TBLUE.FBA"
@@ -849,7 +873,8 @@
    "sku": "JBLGO5WHT.FBA",
    "title": "JBL Go 5 Portable Waterproof Bluetooth Speaker White",
    "url": "https://www.electronicsexpo.com/products/jbl-go-5-ultra-portable-waterproof-drop-proof-speaker-with-jbl-legendary-sound-ambient-edge-lighting-airtouch-instant-stereo-pairing-or-link-multiple-compatible-speakers-via-auracast?variant=46772807106735",
-   "price": 54.95,
+   "price": 44.95,
+   "wasPrice": 54.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-go-5-portable-waterproof-bluetooth-speaker-product-type-4496237.jpg?v=1776287774",
    "inStock": true,
    "mpn": "JBLGO5WHT.FBA"
@@ -1069,7 +1094,7 @@
    "url": "https://www.electronicsexpo.com/products/jbl-professional-control-25-1l-compact-8-ohm-indoor-outdoor-background-foreground-speaker",
    "price": 412,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/jbl-professional-control-25-1l-compact-8-ohm-indooroutdoor-speaker-3205338.jpg?v=1753289333",
-   "inStock": false,
+   "inStock": true,
    "brand": "JBL PRO",
    "mpn": "JBLCTL251LBK.FBA"
   },
@@ -1202,7 +1227,7 @@
    "url": "https://www.electronicsexpo.com/products/jbl-wind-3-fm-bluetooth-handlebar-speaker?variant=42755703308463",
    "price": 89.95,
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/products/jbl-wind-3-fm-bluetooth-handlebar-speaker-8780002.jpg?v=1753292683",
-   "inStock": true,
+   "inStock": false,
    "mpn": "JBLWIND3GRY.FBA"
   },
   {
@@ -1555,6 +1580,17 @@
    "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/kanto-ren-200w-powered-speaker-system-with-hdmi-arc-input-for-tv-home-theater-product-type-1808452.jpg?v=1759766830",
    "inStock": true,
    "brand": "Kanto"
+  },
+  {
+   "retailer": "us-electronicsexpo",
+   "sku": "KANYU6G2VMB.FBA",
+   "title": "Kanto Yu6 (2nd Gen) 200W Powered Speaker System with Bluetooth 5.3 and Phono Preamp (Black)",
+   "url": "https://www.electronicsexpo.com/products/kanto-yu6-2nd-gen-powered-bookshelf-speakers-200-w-class-d-amp-with-dsp-5-25-woofer-1-silk-dome-tweeter-bluetooth-5-3-usb-c-phono-preamp-for-turntable-subwoofer-output-pair-black",
+   "price": 549.99,
+   "image": "https://cdn.shopify.com/s/files/1/1162/4422/files/1773906.jpg?v=1793988036",
+   "inStock": true,
+   "brand": "Kanto",
+   "mpn": "KANYU6G2VMB.FBA"
   },
   {
    "retailer": "us-electronicsexpo",

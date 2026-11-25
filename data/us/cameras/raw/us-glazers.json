@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:43:03.483Z",
+ "scrapedAt": "2026-11-25T03:28:11.299Z",
  "offers": [
   {
    "retailer": "us-glazers",
@@ -307,7 +307,7 @@
    "url": "https://www.glazerscamera.com/products/canon-eos-r6-v-body",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/381597250C00201aHero_0d55ab2a-56c5-4aa3-be9a-8e6156b4ae43.png?v=1778626734",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon"
   },
   {
@@ -1032,7 +1032,8 @@
    "sku": "12959",
    "title": "GoPro HERO13 Black Creator Edition",
    "url": "https://www.glazerscamera.com/products/hero13-black-creator-edition",
-   "price": 649.99,
+   "price": 549.99,
+   "wasPrice": 649.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/12959_01_Hero.png?v=1725484910",
    "inStock": true,
    "brand": "GoPro"
@@ -1073,7 +1074,8 @@
    "sku": "38026",
    "title": "GoPro MISSION 1 PRO",
    "url": "https://www.glazerscamera.com/products/gopro-mission-1-pro",
-   "price": 699.99,
+   "price": 599.99,
+   "wasPrice": 699.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/38026CHDHW-011-MY01Hero_72c1655e-7841-4873-9b2b-3338cc26df42.png?v=1781899152",
    "inStock": true,
    "brand": "GoPro"
@@ -1216,7 +1218,7 @@
    "price": 79.99,
    "wasPrice": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/46326KB-TALONTHXL-BK05Hero.png?v=1794603183",
-   "inStock": false,
+   "inStock": true,
    "brand": "Kondor Blue"
   },
   {
@@ -1286,7 +1288,7 @@
    "url": "https://www.glazerscamera.com/products/leica-d-lux-8",
    "price": 1915,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/95361919101Hero.png?v=1779916174",
-   "inStock": true,
+   "inStock": false,
    "brand": "Leica"
   },
   {
@@ -1717,7 +1719,7 @@
    "url": "https://www.glazerscamera.com/products/panasonic-g9-ii-body",
    "price": 1899.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/96450DC-G9M2BODY901Hero.png?v=1782163812",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lumix"
   },
   {
@@ -2510,16 +2512,6 @@
    "price": 1349.95,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/7104_Hero.png?v=1711671381",
    "inStock": true,
-   "brand": "Ricoh"
-  },
-  {
-   "retailer": "us-glazers",
-   "sku": "1222",
-   "title": "Ricoh GR IIIx Urban Edition Digital Camera - Metallic Gray",
-   "url": "https://www.glazerscamera.com/products/ricoh-gr-iiix-urban-edition",
-   "price": 1299.95,
-   "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/1222_01_Hero.png?v=1708107755",
-   "inStock": false,
    "brand": "Ricoh"
   },
   {

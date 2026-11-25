@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T05:07:14.736Z",
+ "scrapedAt": "2026-11-25T03:54:08.843Z",
  "offers": [
   {
    "retailer": "ca-dreame",
@@ -205,9 +205,10 @@
    "sku": "011101AA000081",
    "title": "Dreame H14 Wet and Dry Vacuum",
    "url": "https://ca.dreametech.com/products/h14-wet-and-dry-vacuum",
-   "price": 479.99,
+   "price": 329.99,
+   "wasPrice": 479.99,
    "image": "https://cdn.shopify.com/s/files/1/0729/1997/4145/files/Dreame_H14_Wet_and_Dry_Vacuum_96b1d1b9-5c36-46c0-a908-968f00ee0309.png?v=1773814305",
-   "inStock": false,
+   "inStock": true,
    "brand": "Dreame",
    "mpn": "011101AA000081"
   },
@@ -252,10 +253,9 @@
    "sku": "011101AA000056",
    "title": "Dreame K10 Wet Dry Vacuum",
    "url": "https://ca.dreametech.com/products/k10-wet-and-dry-vacuum",
-   "price": 179.99,
-   "wasPrice": 379.99,
+   "price": 379.99,
    "image": "https://cdn.shopify.com/s/files/1/0729/1997/4145/files/K10WetandDryVacuum.jpg?v=1784710500",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dreame",
    "mpn": "011101AA000056"
   },

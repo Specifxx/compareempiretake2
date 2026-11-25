@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:29:41.459Z",
+ "scrapedAt": "2026-11-25T03:14:20.603Z",
  "offers": [
   {
    "retailer": "ple",
@@ -197,7 +197,8 @@
    "brand": "ASUS",
    "mpn": "PRIME-RTX5060TI-O8G",
    "url": "https://www.ple.com.au/products/674700/asus-geforce-rtx-5060-ti-prime-oc-8gb-gddr7",
-   "price": 1029,
+   "price": 999,
+   "wasPrice": 1029,
    "image": "https://plecom.imgix.net/iil-427734-674700.jpg?w=600&h=600",
    "inStock": true
   },
@@ -267,7 +268,7 @@
    "url": "https://www.ple.com.au/products/676585/asus-geforce-rtx-5070-ti-rog-strix-oc-16gb-gddr7",
    "price": 2489,
    "image": "https://plecom.imgix.net/iil-437378-676585.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -331,7 +332,8 @@
    "brand": "ASUS",
    "mpn": "ROG-ASTRAL-RTX5090-O32G-WHITE",
    "url": "https://www.ple.com.au/products/679013/asus-geforce-rtx-5090-rog-astral-oc-32gb-gddr7-white",
-   "price": 15999,
+   "price": 12345,
+   "wasPrice": 15999,
    "image": "https://plecom.imgix.net/iil-446158-679013.jpg?w=600&h=600",
    "inStock": true
   },
@@ -674,7 +676,8 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5090AORUS M-32GD",
    "url": "https://www.ple.com.au/products/672364/gigabyte-geforce-rtx-5090-aorus-master-32gb-gddr7",
-   "price": 16999,
+   "price": 13499,
+   "wasPrice": 16999,
    "image": "https://plecom.imgix.net/iil-416528-672364.jpg?w=600&h=600",
    "inStock": true
   },
@@ -685,7 +688,8 @@
    "brand": "Gigabyte",
    "mpn": "GV-N5090AORUSM ICE-32GD",
    "url": "https://www.ple.com.au/products/672363/gigabyte-geforce-rtx-5090-aorus-master-ice-32gb-gddr7-white",
-   "price": 16999,
+   "price": 13499,
+   "wasPrice": 16999,
    "image": "https://plecom.imgix.net/iil-416537-672363.jpg?w=600&h=600",
    "inStock": true
   },
@@ -786,7 +790,7 @@
    "brand": "MSI",
    "mpn": "GeForce RTX 5060 8G VENTUS 2X OC",
    "url": "https://www.ple.com.au/products/675855/msi-geforce-rtx-5060-8gb-gddr7-ventus-2x-oc",
-   "price": 719,
+   "price": 689,
    "wasPrice": 769,
    "image": "https://plecom.imgix.net/iil-430590-675855.jpg?w=600&h=600",
    "inStock": true
@@ -879,7 +883,7 @@
    "url": "https://www.ple.com.au/products/673860/msi-geforce-rtx-5070-12gb-gddr7-ventus-2x-oc",
    "price": 1599,
    "image": "https://plecom.imgix.net/iil-421963-673860.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -981,7 +985,7 @@
    "url": "https://www.ple.com.au/products/682958/nvidia-rtx-pro-4000-blackwell-sff-24gb-gddr7",
    "price": 4999,
    "image": "https://plecom.imgix.net/iil-462567-682958.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1095,7 +1099,7 @@
    "url": "https://www.ple.com.au/products/682830/pny-geforce-rtx-5060-dual-fan-oc-8gb-gddr7",
    "price": 769,
    "image": "https://plecom.imgix.net/iil-462857-682830.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1122,12 +1126,25 @@
   },
   {
    "retailer": "ple",
+   "sku": "683757",
+   "title": "PNY GeForce RTX 5080 Dual Fan Slim OC 16GB GDDR7",
+   "brand": "PNY",
+   "mpn": "VCG508016DFSXPB1-O",
+   "url": "https://www.ple.com.au/products/683757/pny-geforce-rtx-5080-dual-fan-slim-oc-16gb-gddr7",
+   "price": 2999,
+   "wasPrice": 9999,
+   "image": "https://plecom.imgix.net/iil-466928-683757.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "672771",
    "title": "PNY GeForce RTX 5090 Triple Fan OC 32GB GDDR7",
    "brand": "PNY",
    "mpn": "VCG509032TFXPB1-O",
    "url": "https://www.ple.com.au/products/672771/pny-geforce-rtx-5090-triple-fan-oc-32gb-gddr7",
-   "price": 14999,
+   "price": 12299,
+   "wasPrice": 14999,
    "image": "https://plecom.imgix.net/iil-415763-672771.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1469,7 +1486,8 @@
    "brand": "Zotac",
    "mpn": "ZT-B50800J2-10P",
    "url": "https://www.ple.com.au/products/674634/zotac-gaming-geforce-rtx-5080-solid-core-oc-16gb-gddr7",
-   "price": 3399,
+   "price": 3249,
+   "wasPrice": 3399,
    "image": "https://plecom.imgix.net/iil-425581-674634.jpg?w=600&h=600",
    "inStock": true
   },

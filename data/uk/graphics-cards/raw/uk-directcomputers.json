@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T04:55:25.428Z",
+ "scrapedAt": "2026-11-25T03:41:14.164Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
@@ -16,7 +16,7 @@
    "sku": "B570 CL 10GO",
    "title": "Asrock Challenger Intel Arc B570 10GB OC GDDR6",
    "url": "https://directcomputers.co.uk/products/asrock-intel-arc-b570-challenger-10gb-oc-graphics-card-10gb-gddr6-2600-mhz-base-clock-dual-fan-3x-displayports-1x-hdmi-port",
-   "price": 311.99,
+   "price": 316.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/19441bf2d6b915d3ebaab70f1e4aa3e4.jpg?v=1781248027",
    "inStock": true,
    "brand": "ASROCK",
@@ -136,6 +136,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "GV-N506TEAGLEMAX OC-16GD",
+   "title": "GIGABYTE GeForce RTX 5060 Ti EAGLE MAX OC 16G Graphics Card - 16GB GDDR7, 128bit, PCI-E 5.0, 2617MHz Core Clock, 3 x DP, 1 x HDMI, NVIDIA DLSS 4, GV-N506TEAGLEMAX OC-16GD",
+   "url": "https://directcomputers.co.uk/products/gigabyte-rtx-5060-ti-16gb-gaming-oc-1",
+   "price": 858.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/cd2f1bdbdd45509a2b178956562d58d3.jpg?v=1770748757",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N506TEAGLEMAX OC-16GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "GV-N506TEAGLE OC-16GD",
    "title": "GIGABYTE GeForce RTX 5060 Ti EAGLE OC 16G Graphics Card - 16GB GDDR7, 128bit, PCI-E 5.0, 2617MHz Core Clock, 3 x DisplayPort, 1 x HDMI, GV-N506TEAGLE OC-16GD",
    "url": "https://directcomputers.co.uk/products/gigabyte-rtx-5060-ti-16gb-eagle-oc",
@@ -204,18 +215,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "GV-R9060XTGAMING OC-16GD",
-   "title": "GIGABYTE Radeon RX 9060 XT GAMING OC 16G Graphics Card",
-   "url": "https://directcomputers.co.uk/products/gigabyte-rx-9060-xt-16gb-gaming-oc",
-   "price": 799.99,
-   "wasPrice": 818.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/7a80e96867e149e301763f658b58de53.jpg?v=1755482323",
-   "inStock": true,
-   "brand": "GIGABYTE",
-   "mpn": "GV-R9060XTGAMING OC-16GD"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "GV-R907GREGAMING OC-12GD",
    "title": "GIGABYTE Radeon RX 9070 GRE GAMING OC 12G Graphics Card",
    "url": "https://directcomputers.co.uk/products/gigabyte-rx-9070-gre-12gb-gaming-oc",
@@ -230,7 +229,8 @@
    "sku": "NE63050018JE-1072F",
    "title": "Palit GeForce RTX 3050 StormX 6GB NVIDIA GDDR6",
    "url": "https://directcomputers.co.uk/products/palit-rtx3050-stormx-6gb-ddr6-dvi-hdmi-dp-1470mhz-clock-compact-design",
-   "price": 295.99,
+   "price": 286.99,
+   "wasPrice": 295.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a1d2c7e155a0455fdec56e73a93a2664_02df6f5e-195d-4704-9b36-86e6d8228834.jpg?v=1781245603",
    "inStock": true,
    "brand": "PALIT",
@@ -272,14 +272,14 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "NE7506TS19T1-GB2061S",
-   "title": "Palit GeForce RTX 5060 Ti Infinity 3 OC NVIDIA 16 GB GDDR7",
-   "url": "https://directcomputers.co.uk/products/palit-5060-ti-16gb-infinity-3-oc",
-   "price": 917.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/8c4c416e808a3edd6ae33bbd559ffef7.jpg?v=1781261833",
+   "sku": "NE7507TS19T2-GB2031U",
+   "title": "Palit GeForce RTX 5070 Ti GamingPro-S OC NVIDIA 16 GB GDDR7",
+   "url": "https://directcomputers.co.uk/products/palit-rtx-5070-ti-16gb-gamingpro-s-oc",
+   "price": 1496.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/d5996f36fee976722c51fd6a9dd91d0a.jpg?v=1781279035",
    "inStock": true,
    "brand": "PALIT",
-   "mpn": "NE7506TS19T1-GB2061S"
+   "mpn": "NE7507TS19T2-GB2031U"
   },
   {
    "retailer": "uk-directcomputers",
@@ -353,6 +353,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b1ad26e509c722fc267c78ea1a808a9c_7dea0ba9-73eb-49f7-a204-3e32d66e985f.jpg?v=1793499093",
    "inStock": true,
    "mpn": "VCNRTXPRO4500-PB"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "VCNRTX2000ADA-SB",
+   "title": "PNY RTX2000 Ada NVIDIA RTX 2000 Ada 16 GB GDDR6",
+   "url": "https://directcomputers.co.uk/products/pny-rtx2000-ada-professional-graphics-card-16gb-ddr6-4-mini-dp-2816-cuda-cores-dual-slot-low-profile-oem-brown-box",
+   "price": 1067.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/2ca016c05a64c2d424a8fd129e1bb6c3.jpg?v=1781186412",
+   "inStock": true,
+   "mpn": "VCNRTX2000ADA-SB"
   },
   {
    "retailer": "uk-directcomputers",
