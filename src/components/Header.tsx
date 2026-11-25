@@ -69,7 +69,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
     <>
       {/* One white bar like a big comparison site's (owner, 2026-11-10): logo, a wide search in the middle, the
           visitor's lists and country on the right; the aisles below it. On a phone the search is its own row. */}
-      <header className="sticky top-0 z-40 border-b border-line bg-bg-card xmas-garland">
+      <header className="sticky top-0 z-40 border-b border-line bg-bg-card">
         <div className="container-x flex h-16 items-center gap-1.5 sm:gap-3">
           <Logo wordmark="hidden min-[480px]:inline" />
           <div className="mx-auto hidden max-w-2xl flex-1 px-4 md:block">
