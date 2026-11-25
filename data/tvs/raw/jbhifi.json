@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T02:15:12.186Z",
+ "scrapedAt": "2026-11-25T00:14:51.234Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -193,7 +193,8 @@
    "sku": "893048",
    "title": "Hisense 32\" A4SAU HD Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-32-a4sau-hd-smart-tv-2026",
-   "price": 295,
+   "price": 244,
+   "wasPrice": 295,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893048-Product-0-I-639268371602704058.jpg?v=1791240427",
    "inStock": true,
    "brand": "Hisense"
@@ -225,7 +226,8 @@
    "sku": "894742",
    "title": "Hisense 43\" Q6SAU 4K Hi-QLED Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-43-q6sau-4k-hi-qled-smart-tv-2026",
-   "price": 544,
+   "price": 498,
+   "wasPrice": 544,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894742-Product-0-I-639268379402385499.jpg?v=1791241208",
    "inStock": true,
    "brand": "Hisense"
@@ -466,7 +468,7 @@
    "price": 2977,
    "wasPrice": 4495,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896074-Product-0-I-639268399286684713.jpg?v=1791243187",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hisense"
   },
   {
@@ -603,7 +605,7 @@
    "url": "https://www.jbhifi.com.au/products/lg-55-oled-ai-b6-4k-smart-tv-2026",
    "price": 2495,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/891994-Product-0-I-639082690202996705.jpg?v=1790122207",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lg"
   },
   {
@@ -634,16 +636,6 @@
    "url": "https://www.jbhifi.com.au/products/lg-55-qned70b-ai-mini-led-4k-smart-tv-2026",
    "price": 995,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/891979-Product-0-I-639082720203144406.jpg?v=1790122631",
-   "inStock": true,
-   "brand": "Lg"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "891985",
-   "title": "LG 55\" QNED80B EVO AI Mini-LED 4K Smart TV [2026]",
-   "url": "https://www.jbhifi.com.au/products/lg-55-qned80b-evo-ai-mini-led-4k-smart-tv-2026",
-   "price": 945,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/891985-Product-0-I-639082715404892428_73a943fc-0e91-4e76-89cf-719f430fc78c.jpg?v=1786411388",
    "inStock": true,
    "brand": "Lg"
   },
@@ -1010,7 +1002,7 @@
    "url": "https://www.jbhifi.com.au/products/philips-65-4k-uhd-qled-smart-tv-with-google-tv-2026",
    "price": 995,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/916151-Product-0-I-639268549802886092.jpg?v=1791258247",
-   "inStock": false,
+   "inStock": true,
    "brand": "Philips"
   },
   {

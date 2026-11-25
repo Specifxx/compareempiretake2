@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T02:18:08.567Z",
+ "scrapedAt": "2026-11-25T00:18:03.630Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -235,6 +235,16 @@
    "price": 644,
    "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/797062-Product-0-I-638766397806065950.jpg?v=1741043057",
+   "inStock": true,
+   "brand": "Ecovacs"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "894674",
+   "title": "ECOVACS DEEBOT T80S OMNI Vacuum Cleaner",
+   "url": "https://www.jbhifi.com.au/products/ecovacs-deebot-t80s-omni-vacuum-cleaner",
+   "price": 1294,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894674-Product-0-I-639111982221807048.jpg?v=1775601486",
    "inStock": true,
    "brand": "Ecovacs"
   },
@@ -503,16 +513,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "844812",
-   "title": "Roborock Qrevo C Pro Robot Vacuum Cleaner",
-   "url": "https://www.jbhifi.com.au/products/roborock-qrevo-c-pro-robot-vacuum-cleaner",
-   "price": 794,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/844812-Product-0-I-638967708011591618.jpg?v=1761174073",
-   "inStock": true,
-   "brand": "Roborock"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "914317",
    "title": "Roborock Qrevo Edge 2 Flow Robot Vacuum",
    "url": "https://www.jbhifi.com.au/products/roborock-qrevo-edge-2-flow-robot-vacuum",
@@ -562,6 +562,16 @@
    "price": 1688,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/888259-Product-0-I-639106103409926210.jpg?v=1775013658",
+   "inStock": true,
+   "brand": "Roborock"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "808662",
+   "title": "Roborock Saros Z70 Robot Vacuum with OmniGrip Mechanical Arm (Black)",
+   "url": "https://www.jbhifi.com.au/products/roborock-saros-z70-robot-vacuum-with-omnigrip-mechanical-arm-black",
+   "price": 1798,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/808662-Product-0-I-638786375404057826.jpg?v=1743464482",
    "inStock": true,
    "brand": "Roborock"
   },

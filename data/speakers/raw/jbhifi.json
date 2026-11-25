@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-24T02:08:02.082Z",
+ "scrapedAt": "2026-11-25T00:13:44.060Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -338,7 +338,7 @@
    "price": 799,
    "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/495790-Product-0-I-637686118685835823.jpg?v=1632979140",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audioengine"
   },
   {
@@ -432,7 +432,8 @@
    "sku": "906873",
    "title": "Bose SoundLink Flex Portable Speaker 2nd Gen (Dewdrop Mint)",
    "url": "https://www.jbhifi.com.au/products/bose-soundlink-flex-portable-speaker-2nd-gen-dewdrop-mint",
-   "price": 169,
+   "price": 159,
+   "wasPrice": 169,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906873-Product-0-I-639213315608719328.jpg?v=1785735920",
    "inStock": true,
    "brand": "Bose"
@@ -452,7 +453,8 @@
    "sku": "885598",
    "title": "Bose SoundLink Flex Portable Speaker 2nd Gen (Peach)",
    "url": "https://www.jbhifi.com.au/products/bose-soundlink-flex-portable-speaker-2nd-gen-peach",
-   "price": 169,
+   "price": 159,
+   "wasPrice": 169,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/885598-Product-0-I-639093963005355574.jpg?v=1773799737",
    "inStock": true,
    "brand": "Bose"
@@ -462,7 +464,8 @@
    "sku": "906875",
    "title": "Bose SoundLink Flex Portable Speaker 2nd Gen (Rosewood Mauve)",
    "url": "https://www.jbhifi.com.au/products/bose-soundlink-flex-portable-speaker-2nd-gen-rosewood-mauve",
-   "price": 169,
+   "price": 159,
+   "wasPrice": 169,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906875-Product-0-I-639213322203644409.jpg?v=1785735486",
    "inStock": true,
    "brand": "Bose"
@@ -843,7 +846,7 @@
    "price": 151.2,
    "wasPrice": 189,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904522-Product-0-I-639184687201964104.jpg?v=1782874957",
-   "inStock": true,
+   "inStock": false,
    "brand": "Edifier"
   },
   {
@@ -925,7 +928,7 @@
    "url": "https://www.jbhifi.com.au/products/edifier-s2000mkiii-premium-bluetooth-speakers-brown",
    "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/904549-Product-0-I-639184598412995775.jpg?v=1782863113",
-   "inStock": false,
+   "inStock": true,
    "brand": "Edifier"
   },
   {
@@ -1630,7 +1633,7 @@
    "url": "https://www.jbhifi.com.au/products/kef-ls50w-ii-wireless-active-speakers-carbon-black",
    "price": 4000,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895678-Product-0-I-639297904803105825.jpg?v=1794193746",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kef"
   },
   {
