@@ -2604,3 +2604,26 @@ intent delay; the chevron beside the label is now the button that toggles it (cl
 Owner, 2026-11-26: "I don't really like the Christmas lights on the very top." The string of lights hanging under the header
 (2026-11-20) is removed on every Compare site: the `.xmas-garland::after` rule is gone from the `xmas-logo` block in `globals.css`
 and the class is off the header. The Santa hat on the logo stays, and nothing else of the Christmas layer changes.
+
+## 2026-11-26: the phone's home page, tidied (one path: the headline, the categories, the products)
+
+**Owner, 2026-11-26:** "we should still tidy up the landing page for our sites a little bit, because I think there's just too
+much going on, especially for mobile phone."
+
+**Measured at 390px before:** 9,559px tall. Above the first product: the sale strip, the creators pill, the Christmas line, the
+headline, a sub-paragraph, four lines of counts and sixteen category tiles in six rows. The first product began on the third
+screen, and seven sideways shelves followed.
+
+**Now, below 640px only:** the headline, the categories as ONE sideways row of chips, then three price drops (on the first
+screen), the phones, three launches, the laptop and TV shelves, the ad block, two guides, the partner offers and the footer.
+5,937px. Hidden on a phone: the creators pill and the Christmas line (the sale strip is the page's one promo; the Christmas line
+comes back by itself when the strip ends), the hero's sub-line, the strip of counts, the shelves' notes, price drops after the
+third, launches after the third, the category shelves after the second (headphones, tablets, monitors: the category chips reach
+them) and the third guide. Every region's home (`HomeView`) gets the same.
+
+**Unchanged:** the HTML is the same at every width, so a crawler, find-in-page and a desktop see every block; no URL, title,
+heading or JSON-LD changes; the ad block and the partner offers are not moved, restyled or reordered. CSS only, in one block at
+the end of `globals.css` ("The phone's home page, tidied"); the hooks are `home-hero`, `hero-sub`, `hero-meta`, `home-cats`,
+`home-deals`, `home-hot`, `home-cat-shelf`, `home-guides` and `sec-sub`.
+
+**Read:** phone bounce and store clickers per 100 on the home page, the week after release against the week before.

@@ -56,7 +56,7 @@ export function HomeView({ region }: { region: RegionId }) {
   // promos, strips or reviews between the visitor and the products.
   return (
     <>
-      <section className="relative z-20 border-b border-line bg-bg-card">
+      <section className="home-hero relative z-20 border-b border-line bg-bg-card">
         <div className="container-x relative pb-6 pt-6 sm:pb-10 sm:pt-16">
           <div className="mx-auto max-w-3xl text-center">
             {/* The creators hub, above the fold (owner, 2026-11-03): top-right corner from sm, a centred pill above the headline on a phone. */}
@@ -67,7 +67,7 @@ export function HomeView({ region }: { region: RegionId }) {
                   region or reason to trust it over a marketplace); the page title already names phones, laptops and TVs. */}
               Compare {R.adjective} tech prices: phones, laptops, TVs and more
             </h1>
-            <p className="mx-auto mt-3 max-w-xl text-sm text-ink-soft sm:text-lg">
+            <p className="hero-sub mx-auto mt-3 max-w-xl text-sm text-ink-soft sm:text-lg">
               {mature ? (
                 <>Is that sale actually real? We save the price of everything we compare at {stores} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.</>
               ) : (
@@ -84,7 +84,7 @@ export function HomeView({ region }: { region: RegionId }) {
           </div>
         </div>
         {/* What the site promises, in one line of facts (the trust strip). */}
-        <div className="border-t border-line/70 bg-bg-sunk/60">
+        <div className="hero-meta border-t border-line/70 bg-bg-sunk/60">
           <ul className="container-x flex flex-wrap items-center justify-center gap-x-6 gap-y-1.5 py-2.5 text-xs text-ink-soft sm:text-sm">
             <li className="flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-save" aria-hidden /> Prices checked {updated}
@@ -105,7 +105,7 @@ export function HomeView({ region }: { region: RegionId }) {
 
       <section className="container-x mt-8">
         <SectionHead title="Popular categories" href={to("/browse")} cta="All categories" />
-        <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+        <div className="home-cats grid grid-cols-3 gap-2.5 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
           {cats.map(({ c, count, image }) => (
             <Link prefetch={false} key={c.id} href={to(c.href)} className="card tile-hover group flex flex-col items-center px-2 pb-3 pt-3 text-center">
               <div className="img-tile relative h-16 w-16 overflow-hidden rounded-full border border-line/60 sm:h-20 sm:w-20">
@@ -121,7 +121,7 @@ export function HomeView({ region }: { region: RegionId }) {
       {deals.length > 0 && (
         <section className="container-x mt-10">
           <SectionHead title="Price drops today" sub={mature ? "Real savings: against other stores, a was price we recorded, or last week's price." : "The biggest gaps between stores today, and drops we recorded at the same store."} href={to("/deals")} cta="All deals" />
-          <div className="grid gap-2.5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="home-deals grid gap-2.5 md:grid-cols-2 lg:grid-cols-3">
             {deals.map((d, i) => <DealCard key={`${d.phone.category}/${d.phone.slug}`} d={d} rank={i} />)}
           </div>
         </section>
@@ -136,12 +136,12 @@ export function HomeView({ region }: { region: RegionId }) {
         </section>
       )}
 
-      <div className="mt-10">
+      <div className="home-hot mt-10">
         <HotLaunches items={hot} preorders={pre} region={region} />
       </div>
 
       {cats.filter(({ c, popular }) => c.id !== "phones" && FEATURED.slice(0, 7).includes(c.id) && popular.length >= 4).map(({ c, popular }) => (
-        <section key={c.id} className="container-x mt-10">
+        <section key={c.id} className="home-cat-shelf container-x mt-10">
           <SectionHead title={`Popular ${c.name.toLowerCase()}`} href={to(c.href)} cta={`All ${c.name.toLowerCase()}`} />
           <Row>
             {popular.map((p) => <PhoneCard key={p.href} p={p} />)}
@@ -155,7 +155,7 @@ export function HomeView({ region }: { region: RegionId }) {
       {/* The newest guides: what search engines and readers come back for. Every region since 2026-11-06. */}
       <section className="container-x mt-12">
         <SectionHead title="Buying guides" sub="The year's big launches, best picks and head-to-heads, with live prices." href="/guides" cta="All guides" />
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="home-guides grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {getGuides().slice(0, 3).map((g) => <GuideCard key={g.slug} g={g} />)}
         </div>
       </section>
@@ -183,7 +183,7 @@ function SectionHead({ title, sub, href, cta }: { title: string; sub?: string; h
     <div className="mb-3.5 flex items-end justify-between gap-4">
       <div>
         <h2 className="text-xl font-bold tracking-tight sm:text-2xl">{title}</h2>
-        {sub && <p className="mt-0.5 text-sm text-ink-mute">{sub}</p>}
+        {sub && <p className="sec-sub mt-0.5 text-sm text-ink-mute">{sub}</p>}
       </div>
       <Link prefetch={false} href={href} className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-brand hover:underline">
         {cta} <ArrowRight />
