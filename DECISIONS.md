@@ -2598,3 +2598,9 @@ Owner, 2026-11-23: "every time I click on the drop downs, I expect it to be a li
 one of the drop downs, it doesn't do anything. It just drops it down." "All categories" in `Header.tsx` is now a `<Link>` to the categories page (`/categories` in Australia, the region's `/browse` elsewhere). Hover still opens the panel after the same
 intent delay; the chevron beside the label is now the button that toggles it (click, tap, Enter, Space, ArrowDown), with
 `aria-expanded` and its own label. The panels stay in the server HTML. `tests/nav.test.ts` pins it.
+
+## 2026-11-26: The header's string of Christmas lights is removed (owner)
+
+Owner, 2026-11-26: "I don't really like the Christmas lights on the very top." The string of lights hanging under the header
+(2026-11-20) is removed on every Compare site: the `.xmas-garland::after` rule is gone from the `xmas-logo` block in `globals.css`
+and the class is off the header. The Santa hat on the logo stays, and nothing else of the Christmas layer changes.
