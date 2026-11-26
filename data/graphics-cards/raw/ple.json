@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:14:20.603Z",
+ "scrapedAt": "2026-11-26T02:22:36.446Z",
  "offers": [
   {
    "retailer": "ple",
@@ -261,6 +261,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "676588",
+   "title": "ASUS GeForce RTX 5070 Prime OC 12GB GDDR7 (White)",
+   "brand": "ASUS",
+   "mpn": "PRIME-RTX5070-O12G-WHITE",
+   "url": "https://www.ple.com.au/products/676588/asus-geforce-rtx-5070-prime-oc-12gb-gddr7-white",
+   "price": 1649,
+   "image": "https://plecom.imgix.net/iil-434519-676588.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "676585",
    "title": "ASUS GeForce RTX 5070 Ti ROG Strix OC 16GB GDDR7",
    "brand": "ASUS",
@@ -268,7 +279,7 @@
    "url": "https://www.ple.com.au/products/676585/asus-geforce-rtx-5070-ti-rog-strix-oc-16gb-gddr7",
    "price": 2489,
    "image": "https://plecom.imgix.net/iil-437378-676585.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -448,6 +459,18 @@
    "url": "https://www.ple.com.au/products/688735/gigabyte-geforce-rtx-5060-aorus-8gb-gddr7-ari-edition",
    "price": 779,
    "image": "https://plecom.imgix.net/iil-487543-688735.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "678238",
+   "title": "Gigabyte GeForce RTX 5060 Eagle Max OC 8GB GDDR7",
+   "brand": "Gigabyte",
+   "mpn": "GV-N5060EAGLEMAX OC-8GD",
+   "url": "https://www.ple.com.au/products/678238/gigabyte-geforce-rtx-5060-eagle-max-oc-8gb-gddr7",
+   "price": 749,
+   "wasPrice": 769,
+   "image": "https://plecom.imgix.net/iil-442586-678238.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -1114,6 +1137,18 @@
   },
   {
    "retailer": "ple",
+   "sku": "676644",
+   "title": "PNY GeForce RTX 5070 ARGB OC Triple Fan 12GB GDDR7",
+   "brand": "PNY",
+   "mpn": "VCG507012TFXXPB1-O",
+   "url": "https://www.ple.com.au/products/676644/pny-geforce-rtx-5070-argb-oc-triple-fan-12gb-gddr7",
+   "price": 1499,
+   "wasPrice": 1599,
+   "image": "https://plecom.imgix.net/iil-434775-676644.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "672777",
    "title": "PNY GeForce RTX 5070 Ti ARGB OC 16GB",
    "brand": "PNY",
@@ -1123,6 +1158,30 @@
    "wasPrice": 2229,
    "image": "https://plecom.imgix.net/iil-418381-672777.jpg?w=600&h=600",
    "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "672779",
+   "title": "PNY GeForce RTX 5070 Ti OC 16GB GDDR7",
+   "brand": "PNY",
+   "mpn": "VCG5070T16TFXPB1-O",
+   "url": "https://www.ple.com.au/products/672779/pny-geforce-rtx-5070-ti-oc-16gb-gddr7",
+   "price": 1999,
+   "wasPrice": 2179,
+   "image": "https://plecom.imgix.net/iil-415821-672779.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "676643",
+   "title": "PNY GeForce RTX 5070 Triple Fan OC 12GB GDDR7",
+   "brand": "PNY",
+   "mpn": "VCG507012TFXPB1-O",
+   "url": "https://www.ple.com.au/products/676643/pny-geforce-rtx-5070-triple-fan-oc-12gb-gddr7",
+   "price": 1459,
+   "wasPrice": 1569,
+   "image": "https://plecom.imgix.net/iil-434808-676643.jpg?w=600&h=600",
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1378,7 +1437,7 @@
    "url": "https://www.ple.com.au/products/678054/xfx-swift-radeon-rx-9070-xt-triple-fan-gaming-edition-16gb-gddr6-",
    "price": 1659,
    "image": "https://plecom.imgix.net/iil-441703-678054.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

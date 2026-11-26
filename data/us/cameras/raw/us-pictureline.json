@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:30:12.923Z",
+ "scrapedAt": "2026-11-26T02:38:21.856Z",
  "offers": [
   {
    "retailer": "us-pictureline",
@@ -1290,7 +1290,8 @@
    "sku": "PMLMCP-BLK-01",
    "title": "Nomatic LUMA Camera Pack (Black, 18L)",
    "url": "https://www.pictureline.com/products/nomatic-luma-camera-pack-black-18l",
-   "price": 229.99,
+   "price": 160.99,
+   "wasPrice": 229.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/LUMA-Camera-Pack-Black-18L-1.jpg?v=1710277978",
    "inStock": true,
    "brand": "Nomatic",
@@ -1301,7 +1302,8 @@
    "sku": "PMLMCP-RST-01",
    "title": "Nomatic LUMA Camera Pack (Rust, 18L)",
    "url": "https://www.pictureline.com/products/nomatic-luma-camera-pack-rust-18l",
-   "price": 229.99,
+   "price": 160.99,
+   "wasPrice": 229.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/LUMA-Camera-Pack-Rust-18L-1.jpg?v=1710275028",
    "inStock": true,
    "brand": "Nomatic",
@@ -1312,7 +1314,8 @@
    "sku": "PMLMCP-SGE-01",
    "title": "Nomatic LUMA Camera Pack (Sage, 18L)",
    "url": "https://www.pictureline.com/products/nomatic-luma-camera-pack-sage-18l",
-   "price": 229.99,
+   "price": 160.99,
+   "wasPrice": 229.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/LUMA-Camera-Pack-Stone-18L-1_fec17abd-8b7c-43dd-b5d5-0ad78caed6a8.jpg?v=1710278004",
    "inStock": true,
    "brand": "Nomatic",
@@ -1323,7 +1326,8 @@
    "sku": "PMLMCP-SHK-01",
    "title": "Nomatic LUMA Camera Pack (Stone, 18L)",
    "url": "https://www.pictureline.com/products/nomatic-luma-camera-pack-stone-18l",
-   "price": 229.99,
+   "price": 160.99,
+   "wasPrice": 229.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/LUMA-Camera-Pack-Stone-18L-1.jpg?v=1710277990",
    "inStock": true,
    "brand": "Nomatic",
@@ -1371,7 +1375,7 @@
    "url": "https://www.pictureline.com/products/panasonic-lumix-dc-zs99-digital-camera-black-1",
    "price": 697.99,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/TZ99_K_front.jpg?v=1785387872",
-   "inStock": true,
+   "inStock": false,
    "brand": "Panasonic",
    "mpn": "DC-ZS99K9"
   },
@@ -1863,7 +1867,7 @@
    "price": 95.2,
    "wasPrice": 119,
    "image": "https://cdn.shopify.com/s/files/1/0750/1017/files/wandrd-prvke-camera-cube-pro-31l-open-interior-view.jpg?v=1790195279",
-   "inStock": true,
+   "inStock": false,
    "brand": "WANDRD",
    "mpn": "CCPP-BK-2"
   }

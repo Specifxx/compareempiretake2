@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:54:37.971Z",
+ "scrapedAt": "2026-11-26T03:02:43.581Z",
  "offers": [
   {
    "retailer": "ca-idrinkcoffee",
@@ -349,7 +349,7 @@
    "price": 1899,
    "wasPrice": 2499,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/nini-de-white-front-final.webp?v=1795106846",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bezzera"
   },
   {
@@ -1281,8 +1281,7 @@
    "sku": "JUR-S8-NAB-C",
    "title": "Jura S8 Super Automatic Espresso Machine - Chrome",
    "url": "https://www.idrinkcoffee.com/products/jura-s8-chrome-super-automatic-espresso-machine",
-   "price": 3395,
-   "wasPrice": 3795,
+   "price": 3795,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/s8-chro-nab_01.jpg?v=1747082431",
    "inStock": true,
    "brand": "Jura",
@@ -1293,8 +1292,7 @@
    "sku": "JUR-S8-NAB-I",
    "title": "Jura S8 Super Automatic Espresso Machine - Dark Inox",
    "url": "https://www.idrinkcoffee.com/products/jura-s8-dark-inox-super-automatic-espresso-machine",
-   "price": 3395,
-   "wasPrice": 3795,
+   "price": 3795,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/s8-dainox-nab_01.jpg?v=1747079700",
    "inStock": true,
    "brand": "Jura",
@@ -2866,7 +2864,8 @@
    "sku": "SR-YOU-BCL",
    "title": "Sanremo YOU Espresso Machine - Black/Copper Limited Edition",
    "url": "https://www.idrinkcoffee.com/products/sanremo-you-espresso-machine-black-copper-limited-edition",
-   "price": 9990,
+   "price": 8490,
+   "wasPrice": 9990,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/yousplblack1.png?v=1725908154",
    "inStock": true,
    "brand": "Sanremo"
@@ -2876,7 +2875,8 @@
    "sku": "SR-YOU-BP",
    "title": "Sanremo YOU Espresso Machine - Black/Petrol",
    "url": "https://www.idrinkcoffee.com/products/sanremo-you-espresso-machine-black-petrol",
-   "price": 9990,
+   "price": 8490,
+   "wasPrice": 9990,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/SR_LP_YOU-B_Ottanio_a_b5b1a0a1-bb3b-4344-a2fb-0ae37eabaf29.webp?v=1793293852",
    "inStock": true,
    "brand": "Sanremo"
@@ -2886,7 +2886,8 @@
    "sku": "SR-YOU-F",
    "title": "Sanremo YOU Espresso Machine - Forest",
    "url": "https://www.idrinkcoffee.com/products/sanremo-you-espresso-machine-forest",
-   "price": 9990,
+   "price": 8490,
+   "wasPrice": 9990,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/SR_LP_YOU-Forest_29e135b1-5d88-4727-8580-70094ac5419e.webp?v=1793293858",
    "inStock": true,
    "brand": "Sanremo"
@@ -2918,7 +2919,8 @@
    "sku": "SR-YOU-WCL",
    "title": "Sanremo YOU Espresso Machine - White/Copper Limited Edition",
    "url": "https://www.idrinkcoffee.com/products/sanremo-you-espresso-machine-white-copper-limited-edition",
-   "price": 9990,
+   "price": 8490,
+   "wasPrice": 9990,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/yousplwhite_d0794396-0459-4a70-a520-1f405ff08ccc.png?v=1725905877",
    "inStock": true,
    "brand": "Sanremo"
@@ -2928,7 +2930,8 @@
    "sku": "SR-YOU-WS",
    "title": "Sanremo YOU Espresso Machine - White/Sage",
    "url": "https://www.idrinkcoffee.com/products/sanremo-you-espresso-machine-white-sage",
-   "price": 9990,
+   "price": 8490,
+   "wasPrice": 9990,
    "image": "https://cdn.shopify.com/s/files/1/1201/3604/files/SR_LP_YOU-W-Sage_a_b575de85-ad06-4f04-9624-c35552c5f478.webp?v=1793293847",
    "inStock": true,
    "brand": "Sanremo"

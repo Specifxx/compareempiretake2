@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:08:05.516Z",
+ "scrapedAt": "2026-11-26T02:16:49.383Z",
  "offers": [
   {
    "retailer": "digidirect",
@@ -96,7 +96,7 @@
    "url": "https://www.digidirect.com.au/products/apple-macbook-air-13-with-m5-chip-10c-cpu-10c-gpu-24gb-1tb-ssd-starlight",
    "price": 2629.92,
    "image": "https://cdn.shopify.com/s/files/1/0753/8897/7337/files/748034-product-0-i-6390816548789_2_a33142c4-c2bc-4b15-9ada-157ad99efd5f.jpg?v=1775429979",
-   "inStock": true,
+   "inStock": false,
    "mpn": "MDHD4X/A",
    "brand": "Apple"
   },
@@ -105,10 +105,21 @@
    "sku": "176613",
    "title": "Apple MacBook Air 13\" with M5 Chip, 10C CPU/8C GPU, 16GB, 512GB SSD (Midnight)",
    "url": "https://www.digidirect.com.au/products/apple-macbook-air-13-with-m5-chip-10c-cpu-8c-gpu-16gb-512gb-ssd-midnight",
-   "price": 1797,
+   "price": 1913.62,
    "image": "https://cdn.shopify.com/s/files/1/0753/8897/7337/files/511615-product-0-i-6390816548103_46244b73-5d18-4c88-bac4-fa489ece95f6.jpg?v=1775429983",
    "inStock": true,
    "mpn": "MDHE4X/A",
+   "brand": "Apple"
+  },
+  {
+   "retailer": "digidirect",
+   "sku": "176607",
+   "title": "Apple MacBook Air 13\" with M5 Chip, 10C CPU/8C GPU, 16GB, 512GB SSD (Silver)",
+   "url": "https://www.digidirect.com.au/products/apple-macbook-air-13-with-m5-chip-10c-cpu-8c-gpu-16gb-512gb-ssd-silver",
+   "price": 1936.38,
+   "image": "https://cdn.shopify.com/s/files/1/0753/8897/7337/files/748033-product-0-i-6390816548150.jpg?v=1775429977",
+   "inStock": true,
+   "mpn": "MDH74X/A",
    "brand": "Apple"
   },
   {
@@ -442,17 +453,6 @@
   },
   {
    "retailer": "digidirect",
-   "sku": "172850",
-   "title": "Apple MacBook Pro 14\" with M5 10C CPU/10C GPU, 24GB, 1TB SSD (Space Black)",
-   "url": "https://www.digidirect.com.au/products/apple-macbook-pro-14-with-m5-10c-cpu-10c-gpu-24gb-1tb-ssd-space-black",
-   "price": 3172.48,
-   "image": "https://cdn.shopify.com/s/files/1/0753/8897/7337/files/ezgif-21a7767d6807e2_fc017805-63a1-4f4a-801d-72cfac9d2107.jpg?v=1775430061",
-   "inStock": true,
-   "mpn": "MDE34X/A",
-   "brand": "Apple"
-  },
-  {
-   "retailer": "digidirect",
    "sku": "176636",
    "title": "Apple MacBook Pro 14\" with M5 Max, 18C CPU/32C GPU, 36GB, 2TB SSD (Space Black)",
    "url": "https://www.digidirect.com.au/products/apple-macbook-pro-14-with-m5-max-18c-cpu-32c-gpu-36gb-2tb-ssd-space-black",
@@ -678,7 +678,7 @@
    "url": "https://www.digidirect.com.au/products/apple-macbook-pro-16-with-m5-pro-18c-cpu-20c-gpu-24gb-1tb-ssd-space-black",
    "price": 4547,
    "image": "https://cdn.shopify.com/s/files/1/0753/8897/7337/files/apple_macbook_pro_16_with_m5_pro_18c_cpu20c_gpu_space_black_1__1_321cfb46-0e17-4469-a10e-2efa3ba35971.jpg?v=1775430075",
-   "inStock": true,
+   "inStock": false,
    "mpn": "MGEA4X/A",
    "brand": "Apple"
   },
@@ -872,7 +872,7 @@
    "sku": "169959",
    "title": "Microsoft Surface Laptop 13.8\" Snapdragon X Plus/16GB/512GB SSD (Platinum)",
    "url": "https://www.digidirect.com.au/products/microsoft-surface-laptop-13-8-snapdragon-x-plus-16gb-512gb-ssd-platinum",
-   "price": 1697,
+   "price": 1648,
    "image": "https://cdn.shopify.com/s/files/1/0753/8897/7337/files/1-66.jpg?v=1778113963",
    "inStock": true,
    "mpn": "ZGM-0016",

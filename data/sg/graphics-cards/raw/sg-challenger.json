@@ -1,12 +1,13 @@
 {
- "scrapedAt": "2026-11-25T03:55:51.058Z",
+ "scrapedAt": "2026-11-26T03:03:55.248Z",
  "offers": [
   {
    "retailer": "sg-challenger",
    "sku": "4711721064580",
    "title": "Acer Aspire 7 A715-59G-749N (Black) - C7 / 16GB / 512GB / RTX4050 / (144Hz) 45%NTSC",
    "url": "https://www.challenger.sg/products/acer-aspire-a715-59g-749n-c7-240h-16gb-512gb-4050-15-6-bk",
-   "price": 1699,
+   "price": 1619,
+   "wasPrice": 1699,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/acer-aspire-7-a715-59g-non-fingerprint-with-backlit-on-wp-logo-titanium-black-01.jpg?v=1787625258",
    "inStock": true,
    "brand": "ACER"
@@ -75,23 +76,23 @@
   },
   {
    "retailer": "sg-challenger",
-   "sku": "0199291289833",
-   "title": "Asus ROG Strix G16 G614PH-RV104W - R9-8940HX 16GB 512GB RTX5050 16\"",
-   "url": "https://www.challenger.sg/products/asus-rog-g614ph-rv104w-r9-8940hx-16gb-512gb-rtx5050-16egray",
-   "price": 2599,
-   "wasPrice": 3099,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/02_G_16.png?v=1767685489",
-   "inStock": true,
-   "brand": "ASUS"
-  },
-  {
-   "retailer": "sg-challenger",
    "sku": "0199291629936",
    "title": "Asus ROG Strix G16 G615JHR-RV184W - i5-14450HX 16GB 512GB RTX5050 16\"",
    "url": "https://www.challenger.sg/products/asus-rog-g615jhr-rv184w-i5-14450hx-16gb-512gb-rtx5050-16",
    "price": 2699,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/g615_01.jpg?v=1782271660",
-   "inStock": false,
+   "inStock": true,
+   "brand": "ASUS"
+  },
+  {
+   "retailer": "sg-challenger",
+   "sku": "0199291289833",
+   "title": "Asus ROG Strix G16 R9-8940HX 16GB 512GB RTX5050 16\"",
+   "url": "https://www.challenger.sg/products/asus-rog-strix-g16-r9-8940hx-16gb-512gb-rtx5050-16",
+   "price": 2469,
+   "wasPrice": 3099,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/02_G_16.png?v=1767685489",
+   "inStock": true,
    "brand": "ASUS"
   },
   {
@@ -119,9 +120,9 @@
   {
    "retailer": "sg-challenger",
    "sku": "0199291671027",
-   "title": "Asus TUF Gaming F16 FX610JH-TU044W - i5-14450HX 16GB 512GB RTX5050 16\"",
-   "url": "https://www.challenger.sg/products/asus-tuf-fx610jh-tu044w-i5-14450hx-16gb-512gb-rtx5050-16",
-   "price": 1999,
+   "title": "Asus TUF Gaming F16 i5-14450HX 16GB 512GB RTX5050 16\"",
+   "url": "https://www.challenger.sg/products/asus-tuf-gaming-f16-i5-14450hx-16gb-512gb-rtx5050-16",
+   "price": 1899,
    "wasPrice": 2599,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/TUF-Gaming-16_FX610_Off-Black_2.jpg?v=1783650033",
    "inStock": true,
@@ -141,9 +142,9 @@
   {
    "retailer": "sg-challenger",
    "sku": "0199276916617",
-   "title": "Lenovo Legion 5 15IRX10 83LY00WXSB - i9-14900HX 16GB 512GB RTX5070 16\"",
-   "url": "https://www.challenger.sg/products/lenovo-legi5-83ly00wxsb-i9-14900hx-16gb-512gb-rtx5070-16",
-   "price": 2999,
+   "title": "Lenovo Legion 5 i9-14900HX 16GB 512GB RTX5070 16\"",
+   "url": "https://www.challenger.sg/products/lenovo-legion-5-i9-14900hx-16gb-512gb-rtx5070-16",
+   "price": 2749,
    "wasPrice": 3099,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Legion_5_15IRX10_CT1_04.jpg?v=1785138962",
    "inStock": true,
@@ -168,7 +169,7 @@
    "price": 1899,
    "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/MSI_NB_Cyborg15Max_photo16.jpg?v=1779693709",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "sg-challenger",

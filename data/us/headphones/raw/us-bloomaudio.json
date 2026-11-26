@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:25:32.279Z",
+ "scrapedAt": "2026-11-26T02:33:49.790Z",
  "offers": [
   {
    "retailer": "us-bloomaudio",
@@ -474,7 +474,7 @@
    "url": "https://bloomaudio.com/products/audeze-lcd-5",
    "price": 4500,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/products/Audeze-LCD-5-Open-Back-Planar-Magnetic-Headphones.jpg?v=1632226776",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audeze",
    "mpn": "LCD5-XLR"
   },
@@ -756,7 +756,7 @@
    "url": "https://bloomaudio.com/products/audio-technica-ath-s120c?variant=40900650238027",
    "price": 32,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/audio-technica-ath-s120c-black-1-thumbnail.jpg?v=1720026663",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audio-Technica",
    "mpn": "ATH-S120C-BK"
   },
@@ -1006,7 +1006,8 @@
    "sku": "CFA-CHIMERA-BLK",
    "title": "Campfire Audio Chimera | Flagship Hybrid Universal IEMs Black",
    "url": "https://bloomaudio.com/products/campfire-audio-chimera?variant=42400022790219",
-   "price": 7500,
+   "price": 6375,
+   "wasPrice": 7500,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/cfa-0-chimera-thumb.webp?v=1778512387",
    "inStock": true,
    "brand": "Campfire Audio"
@@ -1016,7 +1017,8 @@
    "sku": "CFA-CHIMERA-G",
    "title": "Campfire Audio Chimera | Flagship Hybrid Universal IEMs Gold",
    "url": "https://bloomaudio.com/products/campfire-audio-chimera?variant=42400022757451",
-   "price": 7500,
+   "price": 6375,
+   "wasPrice": 7500,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/cfa-1-chimera-thumb.webp?v=1778512387",
    "inStock": true,
    "brand": "Campfire Audio"
@@ -1686,7 +1688,7 @@
    "price": 1147.99,
    "wasPrice": 1349,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/dunu-glacier-1-thumb.jpg?v=1719840528",
-   "inStock": true,
+   "inStock": false,
    "brand": "DUNU"
   },
   {
@@ -3723,7 +3725,7 @@
    "price": 84.99,
    "wasPrice": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/moondrop-aria-2-main.jpg?v=1703679845",
-   "inStock": false,
+   "inStock": true,
    "brand": "MoonDrop",
    "mpn": "MD-ARIA2"
   },
@@ -3826,7 +3828,7 @@
    "price": 50.99,
    "wasPrice": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/moondrop-1-lan2-thumb.webp?v=1758208772",
-   "inStock": false,
+   "inStock": true,
    "brand": "MoonDrop",
    "mpn": "MD-LAN2-POP"
   },
@@ -3838,7 +3840,7 @@
    "price": 50.99,
    "wasPrice": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/moondrop-1-lan2-thumb.webp?v=1758208772",
-   "inStock": false,
+   "inStock": true,
    "brand": "MoonDrop",
    "mpn": "MD-LAN2-REF"
   },
@@ -3850,7 +3852,7 @@
    "price": 33.99,
    "wasPrice": 39.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/moondrop-marigold-thumb-two.webp?v=1758129107",
-   "inStock": false,
+   "inStock": true,
    "brand": "MoonDrop"
   },
   {
@@ -3917,7 +3919,7 @@
    "price": 42.49,
    "wasPrice": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/moondrop-pudding-beige.webp?v=1791898456",
-   "inStock": false,
+   "inStock": true,
    "brand": "MoonDrop"
   },
   {
@@ -3928,7 +3930,7 @@
    "price": 42.49,
    "wasPrice": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/md-pudding-blk-thumb.webp?v=1779302024",
-   "inStock": false,
+   "inStock": true,
    "brand": "MoonDrop"
   },
   {
@@ -3984,7 +3986,7 @@
    "price": 127.49,
    "wasPrice": 149.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/starfield-3-thumb-one.webp?v=1792421661",
-   "inStock": true,
+   "inStock": false,
    "brand": "MoonDrop",
    "mpn": "MD-STARFIELD-3"
   },
@@ -5356,7 +5358,8 @@
    "sku": "XENNS-MANGIRD-TEA-PRO",
    "title": "XENNS Mangird Tea Pro | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/xenns-mangird-tea-pro?variant=42018892415051",
-   "price": 359,
+   "price": 305,
+   "wasPrice": 359,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/xenns-1-mangird-tea-pro-thumb.webp?v=1749048876",
    "inStock": true,
    "brand": "XENNS"
@@ -5366,7 +5369,8 @@
    "sku": "XENNS-TEA-PRO-SE",
    "title": "Xenns Mangird Tea Pro SE | Special Edition Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/xenns-mangird-tea-pro-se?variant=41962105339979",
-   "price": 449,
+   "price": 381,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/tea-pro-se-thumb-two.webp?v=1766068844",
    "inStock": true,
    "brand": "XENNS"
@@ -5386,7 +5390,8 @@
    "sku": "ZIG-ARCANIS",
    "title": "ZiiGaat Arcanis | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/ziigaat-arcanis?variant=42386450317387",
-   "price": 399,
+   "price": 339,
+   "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-2-arcanis-thumb.webp?v=1748962985",
    "inStock": true,
    "brand": "ZiiGaat"
@@ -5396,7 +5401,7 @@
    "sku": "ZIG-CINCOTRES-35",
    "title": "Ziigaat Cincotres | Hybrid Universal IEMs 3.5mm",
    "url": "https://bloomaudio.com/products/ziigaat-cincotres?variant=41180670754891",
-   "price": 229,
+   "price": 228,
    "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-cincotres-thumb-three.webp?v=1734721731",
    "inStock": true,
@@ -5408,7 +5413,7 @@
    "sku": "ZIG-CINCOTRES-44",
    "title": "Ziigaat Cincotres | Hybrid Universal IEMs 4.4mm",
    "url": "https://bloomaudio.com/products/ziigaat-cincotres?variant=41180670787659",
-   "price": 229,
+   "price": 228,
    "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-cincotres-thumb-three.webp?v=1734721731",
    "inStock": true,
@@ -5420,7 +5425,8 @@
    "sku": "ZIG-CRESCENT",
    "title": "ZiiGaat Crescent | Hybrid Universal IEMs",
    "url": "https://bloomaudio.com/products/ziigaat-crescent",
-   "price": 279,
+   "price": 237,
+   "wasPrice": 279,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-1-crescent-thumb.webp?v=1753131234",
    "inStock": true,
    "brand": "ZiiGaat"
@@ -5430,7 +5436,7 @@
    "sku": "ZIG-DOSCINCO-35",
    "title": "ZiiGaat Doscinco | Hybrid Universal IEMs 3.5mm",
    "url": "https://bloomaudio.com/products/ziigaat-doscinco?variant=41180596043851",
-   "price": 249,
+   "price": 228,
    "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-doscinco-thumb-four.webp?v=1734722397",
    "inStock": true,
@@ -5442,7 +5448,7 @@
    "sku": "ZIG-DOSCINCO-44",
    "title": "ZiiGaat Doscinco | Hybrid Universal IEMs 4.4mm",
    "url": "https://bloomaudio.com/products/ziigaat-doscinco?variant=41180596076619",
-   "price": 249,
+   "price": 228,
    "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-doscinco-thumb-four.webp?v=1734722397",
    "inStock": true,
@@ -5454,7 +5460,7 @@
    "sku": "ZIG-HORIZON",
    "title": "ZiiGaat Horizon | Tribrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/ziigaat-horizon",
-   "price": 299,
+   "price": 279,
    "wasPrice": 329,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-3-horizon-thumb.webp?v=1762801474",
    "inStock": true,
@@ -5465,7 +5471,8 @@
    "sku": "ZIG-LUNA",
    "title": "ZiiGaat Luna | Balanced Armature Universal IEMs New",
    "url": "https://bloomaudio.com/products/ziigaat-luna?variant=42298039992395",
-   "price": 379,
+   "price": 322,
+   "wasPrice": 379,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-0-luna-thumb.webp?v=1750883060",
    "inStock": true,
    "brand": "ZiiGaat"
@@ -5475,7 +5482,7 @@
    "sku": "ZIG-LUSH-BLUE",
    "title": "ZiiGaat Lush | Hybrid Universal IEMs Blue",
    "url": "https://bloomaudio.com/products/ziigaat-lush?variant=41522701860939",
-   "price": 159,
+   "price": 152,
    "wasPrice": 179,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-0-lush-blue-thumb.webp?v=1749483090",
    "inStock": true,
@@ -5486,7 +5493,7 @@
    "sku": "ZIG-LUSH-SLV",
    "title": "ZiiGaat Lush | Hybrid Universal IEMs Silver",
    "url": "https://bloomaudio.com/products/ziigaat-lush?variant=41522701828171",
-   "price": 159,
+   "price": 152,
    "wasPrice": 179,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-0-lush-thumb.webp?v=1748970428",
    "inStock": true,
@@ -5497,7 +5504,8 @@
    "sku": "ZIG-ODYSSEY",
    "title": "ZiiGaat Odyssey | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/ziigaat-odyssey?variant=41847293050955",
-   "price": 229,
+   "price": 194,
+   "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-odyssey-thumb-one.webp?v=1734729482",
    "inStock": true,
    "brand": "ZiiGaat"
@@ -5507,7 +5515,8 @@
    "sku": "ZIG-RUMBA-MIC",
    "title": "ZiiGaat RUMBA | Dynamic Universal IEMs 3.5mm",
    "url": "https://bloomaudio.com/products/ziigaat-rumba",
-   "price": 35.99,
+   "price": 30,
+   "wasPrice": 35.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/zig-rumba-thumb-one.webp?v=1790176660",
    "inStock": true,
    "brand": "ZiiGaat"
@@ -5527,7 +5536,8 @@
    "sku": "ZIG-FR-ARETE",
    "title": "ZiiGaat x Fresh Reviews Arete | Hybrid Universal IEMs",
    "url": "https://bloomaudio.com/products/ziigaat-x-fresh-reviews-arete",
-   "price": 249,
+   "price": 211,
+   "wasPrice": 249,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigat-fresh-arete-thumb.webp?v=1734723734",
    "inStock": true,
    "brand": "ZiiGaat"
@@ -5537,7 +5547,8 @@
    "sku": "ZIG-ARETE-2-B",
    "title": "ZiiGaat x Fresh Reviews Arete II | Hybrid Universal IEMs Blue",
    "url": "https://bloomaudio.com/products/ziigaat-x-fresh-reviews-arete2?variant=42035643809867",
-   "price": 279,
+   "price": 237,
+   "wasPrice": 279,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/zig-1-arete2-thumb.webp?v=1768253002",
    "inStock": true,
    "brand": "ZiiGaat",
@@ -5548,7 +5559,8 @@
    "sku": "ZIG-ARETE-2-R",
    "title": "ZiiGaat x Fresh Reviews Arete II | Hybrid Universal IEMs Red",
    "url": "https://bloomaudio.com/products/ziigaat-x-fresh-reviews-arete2?variant=42035643842635",
-   "price": 279,
+   "price": 237,
+   "wasPrice": 279,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/zig-2-arete2-thumb.webp?v=1768253002",
    "inStock": true,
    "brand": "ZiiGaat",
@@ -5559,7 +5571,8 @@
    "sku": "ZIG-HBB-ARCAD",
    "title": "ZiiGaat x HBB Arcadia | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/ziigaat-x-hbb-arcadia?variant=41802509418571",
-   "price": 199,
+   "price": 169,
+   "wasPrice": 199,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-hbb-arcadia-thumb-two.webp?v=1734730578",
    "inStock": true,
    "brand": "ZiiGaat"
@@ -5579,7 +5592,8 @@
    "sku": "ZIG-JA-ESTRELLA",
    "title": "ZiiGaat x Jay's Audio Estrella | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/ziigat-x-jays-audio-estrella?variant=43048018509899",
-   "price": 299,
+   "price": 254,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/ziigaat-jays-estrella-thumb.webp?v=1734719110",
    "inStock": true,
    "brand": "ZiiGaat"

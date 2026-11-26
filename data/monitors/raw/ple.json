@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:14:23.002Z",
+ "scrapedAt": "2026-11-26T02:22:40.462Z",
  "offers": [
   {
    "retailer": "ple",
@@ -83,6 +83,18 @@
    "price": 97,
    "wasPrice": 129,
    "image": "https://plecom.imgix.net/iil-450880-679978.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "679979",
+   "title": "Acer Nitro KG271P6 - 27\" 1080p 144Hz IPS Gaming Monitor",
+   "brand": "Acer",
+   "mpn": "UM.HX1SA.601-RY0",
+   "url": "https://www.ple.com.au/products/679979/acer-nitro-kg271p6-27-1080p-144hz-ips-gaming-monitor",
+   "price": 125,
+   "wasPrice": 169,
+   "image": "https://plecom.imgix.net/iil-450904-679979.jpg?w=600&h=600",
    "inStock": true
   },
   {
@@ -1211,7 +1223,7 @@
    "price": 459,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-464159-683204.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1245,7 +1257,7 @@
    "price": 1299,
    "wasPrice": 1499,
    "image": "https://plecom.imgix.net/iil-471319-684816.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1975,7 +1987,7 @@
    "brand": "Gigabyte",
    "mpn": "GO27Q24G",
    "url": "https://www.ple.com.au/products/684169/gigabyte-go27q24g-woled-27-1440p-240hz-003ms-gaming-monitor",
-   "price": 569,
+   "price": 599,
    "wasPrice": 699,
    "image": "https://plecom.imgix.net/iil-468217-684169.jpg?w=600&h=600",
    "inStock": false
@@ -2729,7 +2741,7 @@
    "price": 219,
    "wasPrice": 239,
    "image": "https://plecom.imgix.net/iil-435717-676862.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -3296,7 +3308,7 @@
    "brand": "Samsung",
    "mpn": "LC34G55TWWEXXY",
    "url": "https://www.ple.com.au/products/644738/samsung-odyssey-g55t-34-curved-1440p-ultrawide-165hz-va-gaming-monitor",
-   "price": 328,
+   "price": 489,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-254383-644738.jpg?w=600&h=600",
    "inStock": true
@@ -3379,7 +3391,7 @@
    "brand": "Samsung",
    "mpn": "LS34DG850SEXXY",
    "url": "https://www.ple.com.au/products/668738/samsung-odyssey-oled-g8-34-curved-1440p-175hz-gaming-monitor",
-   "price": 1399,
+   "price": 1099,
    "wasPrice": 1799,
    "image": "https://plecom.imgix.net/iil-409763-668738.jpg?w=600&h=600",
    "inStock": true
@@ -3391,7 +3403,7 @@
    "brand": "Samsung",
    "mpn": "LS49DG930SEXXY",
    "url": "https://www.ple.com.au/products/668739/samsung-odyssey-oled-g9-49-curved-1440p-240hz-gaming-monitor",
-   "price": 1599,
+   "price": 1399,
    "wasPrice": 2299,
    "image": "https://plecom.imgix.net/iil-409767-668739.jpg?w=600&h=600",
    "inStock": true
@@ -3550,7 +3562,7 @@
    "price": 1199,
    "wasPrice": 1899,
    "image": "https://plecom.imgix.net/iil-441378-678021.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   }
  ]
 }

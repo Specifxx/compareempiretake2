@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:25:28.669Z",
+ "scrapedAt": "2026-11-26T02:33:45.480Z",
  "offers": [
   {
    "retailer": "us-bandccamera",
@@ -926,7 +926,7 @@
    "price": 1599.95,
    "wasPrice": 1699.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/ogqebuqjyvr8gkeeapte.png?v=1749739375",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -1019,7 +1019,7 @@
    "url": "https://bandccamera.com/products/fujifilm-x-t5-body-silver-with-xf16-50mmf2-8-4-8-r-lm-wr-lens-kit",
    "price": 2399.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/fujifilm-x-t5-body-silver-with-xf16-50mmf28-48-r-lm-wr-lens-kit-665069.jpg?v=1719636006",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -1115,7 +1115,7 @@
    "price": 1499.95,
    "wasPrice": 1599.95,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/fujifilm-x-t50-silver-498038.jpg?v=1715919457",
-   "inStock": false,
+   "inStock": true,
    "brand": "Fujifilm"
   },
   {
@@ -2193,7 +2193,7 @@
    "url": "https://bandccamera.com/products/om-system-om-3-astro-body",
    "price": 2499.99,
    "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/nd49acfk24k5cpbe1xnc.jpg?v=1772151799",
-   "inStock": false,
+   "inStock": true,
    "brand": "OM System",
    "mpn": "V7921300U000"
   },
@@ -3157,17 +3157,6 @@
   },
   {
    "retailer": "us-bandccamera",
-   "sku": "YAS-DGC200-BK",
-   "title": "YASHICA City 200 Digital Camera (Black)",
-   "url": "https://bandccamera.com/products/yashica-city-200-digital-camera-black",
-   "price": 299.99,
-   "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/gqoexwdt4gphxgd6sujd.png?v=1746044845",
-   "inStock": false,
-   "brand": "Yashica",
-   "mpn": "YAS-DGC200-BK"
-  },
-  {
-   "retailer": "us-bandccamera",
    "sku": "YAS-DGC200-WH",
    "title": "YASHICA City 200 Digital Camera (White)",
    "url": "https://bandccamera.com/products/yashica-city-200-digital-camera-white",
@@ -3220,17 +3209,6 @@
    "inStock": true,
    "brand": "Yashica",
    "mpn": "YAS-DG100P-SV"
-  },
-  {
-   "retailer": "us-bandccamera",
-   "sku": "YAS-DG100P-WH",
-   "title": "YASHICA DigiPix 100 Digital Camera (White)",
-   "url": "https://bandccamera.com/products/yashica-digipix-100-digital-camera-white",
-   "price": 89.99,
-   "image": "https://cdn.shopify.com/s/files/1/1267/4771/files/yashica-digipix-100-digital-camera-white-700125.png?v=1737399238",
-   "inStock": false,
-   "brand": "Yashica",
-   "mpn": "YAS-DG100P-WH"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:32:29.677Z",
+ "scrapedAt": "2026-11-26T02:40:29.040Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -28,7 +28,7 @@
    "url": "https://www.worldwidestereo.com/products/audeze-lcd-3-planar-magnetic-over-ear-headphones-with-carrying-case-zebrano-leather-free",
    "price": 1945,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_bdd5b44f-7dbc-4a66-9921-6397e296d2a1.jpg?v=1762447710",
-   "inStock": false,
+   "inStock": true,
    "brand": "Audeze"
   },
   {
@@ -48,7 +48,7 @@
    "url": "https://www.worldwidestereo.com/products/audeze-lcd-5s-over-ear-planar-magnetic-headphones-tortoise-shell",
    "price": 4500,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Audeze-LCD-5s-Over-Ear-Planar-Magnetic-Headphones-Tortoise-Shell-Image-15.jpg?v=1769697063",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audeze"
   },
   {
@@ -196,7 +196,8 @@
    "sku": "49834033021239",
    "title": "Audio-Technica ATH-ADX3000 Open-Air Dynamic Headphones",
    "url": "https://www.worldwidestereo.com/products/audio-technica-ath-adx3000-open-air-dynamic-headphones",
-   "price": 1099,
+   "price": 949,
+   "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/10_228dd075-6ddd-4b0e-aeb6-afbbf33dd590.jpg?v=1769873100",
    "inStock": false,
    "brand": "Audio-Technica"
@@ -226,7 +227,8 @@
    "sku": "52965545705783",
    "title": "Audio-Technica ATH-AL5NC Wireless On-Ear Headphones",
    "url": "https://www.worldwidestereo.com/products/audio-technica-ath-al5nc-wireless-on-ear-headphones",
-   "price": 279,
+   "price": 209,
+   "wasPrice": 279,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Audio-Technica-ATH-AL5NC-Wireless-On-Ear-Headphones-Image-13.jpg?v=1788926653",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -296,7 +298,8 @@
    "sku": "47083030937911",
    "title": "Audio-Technica ATH-GDL3 High-Fidelity Open-Back Gaming Headset (Black)",
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-gdl3-high-fidelity-open-back-gaming-headset-black",
-   "price": 139,
+   "price": 119,
+   "wasPrice": 139,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/177579_WWS1.jpg?v=1706903391",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -306,7 +309,8 @@
    "sku": "47083030872375",
    "title": "Audio-Technica ATH-GL3 Closed-Back High-Fidelity Gaming Headset (White)",
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-gl3-closed-back-high-fidelity-gaming-headset-white",
-   "price": 109,
+   "price": 89,
+   "wasPrice": 109,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/177577_WWS1.jpg?v=1706903391",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -316,7 +320,8 @@
    "sku": "47083030741303",
    "title": "Audio-Technica ATH-M20xBT Wireless Over-Ear Headphones (Black)",
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-m20xbt-wireless-over-ear-headphones-black",
-   "price": 89,
+   "price": 79,
+   "wasPrice": 89,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/177564_WWS1.jpg?v=1704316299",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -326,7 +331,8 @@
    "sku": "47083030839607",
    "title": "Audio-Technica ATH-M20xBT Wireless Over-Ear Headphones (White)",
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-m20xbt-wireless-over-ear-headphones-white",
-   "price": 89,
+   "price": 79,
+   "wasPrice": 89,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/179230_WWS1.jpg?v=1704316299",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -336,7 +342,7 @@
    "sku": "52897126383927",
    "title": "Audio-Technica ATH-M20xSTS StreamSet Headphones",
    "url": "https://www.worldwidestereo.com/products/audio-technica-ath-m20xsts-streamset-headphones",
-   "price": 99,
+   "price": 94,
    "wasPrice": 119,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Audio-Technica-ATH-M20xSTS-StreamSet-Headphone-Image-01_1f8fee35-db02-4d6b-8cbb-69db2fa9c1ce.jpg?v=1787946487",
    "inStock": false,
@@ -347,7 +353,8 @@
    "sku": "46695749681463",
    "title": "Audio-Technica ATH-M50xBT2 Wireless Over-Ear Headphones with Bluetooth (Black)",
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-m50xbt2-wireless-over-ear-headphones-with-bluetooth-black",
-   "price": 219,
+   "price": 169,
+   "wasPrice": 219,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/177157_WWS1.jpg?v=1754254453",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -357,7 +364,8 @@
    "sku": "47082935746871",
    "title": "Audio-Technica ATH-M50xSTS StreamSet Closed-Back Streaming Headset",
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-m50xsts-streamset-closed-back-streaming-headset-with-attached-3-pin-xlr-m-to-3-5-mm-cable-6-5-mm-adapter",
-   "price": 219,
+   "price": 194,
+   "wasPrice": 219,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/179287_WWS1.jpg?v=1762447655",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -367,7 +375,8 @@
    "sku": "46681534988599",
    "title": "Audio-Technica ATH-M50xSTS-USB StreamSet USB Closed-Back Streaming Headset",
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-m50xsts-usb-streamset-usb-closed-back-streaming-headset-with-attached-usb-a-cable-and-usb-c-adapter",
-   "price": 249,
+   "price": 219,
+   "wasPrice": 249,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/179288_WWS1.jpg?v=1734366868",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -387,7 +396,8 @@
    "sku": "50227295256887",
    "title": "Audio-Technica ATH-R70xa Open-Back Reference Headphones",
    "url": "https://www.worldwidestereo.com/products/audio-technica-ath-r70xa-open-back-reference-headphones",
-   "price": 379,
+   "price": 319,
+   "wasPrice": 379,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/7_c6b39c35-e480-4863-9945-2f8237e355be.jpg?v=1769875253",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -417,7 +427,8 @@
    "sku": "47914685727031",
    "title": "Audio-Technica ATH-TWX7 Truly Wireless Earbuds (Black)",
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-twx7-truly-wireless-earbuds-black",
-   "price": 269,
+   "price": 209,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/4_d083f3f7-606a-4447-bf43-c16f5af8d3e2.jpg?v=1772460534",
    "inStock": false,
    "brand": "Audio-Technica"
@@ -427,7 +438,8 @@
    "sku": "47914685759799",
    "title": "Audio-Technica ATH-TWX7 Truly Wireless Earbuds (Gray)",
    "url": "https://www.worldwidestereo.com/products/audiotechnica-ath-twx7-truly-wireless-earbuds-gray",
-   "price": 269,
+   "price": 199,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/4_ff78c774-9620-438b-8d8c-f858232b7b16.jpg?v=1772460534",
    "inStock": false,
    "brand": "Audio-Technica"
@@ -437,7 +449,8 @@
    "sku": "50049648296247",
    "title": "Audio-Technica ATH-WP900 On-Ear Headphones (Flamed Maple)",
    "url": "https://www.worldwidestereo.com/products/audio-technica-ath-wp900-on-ear-headphones-flamed-maple",
-   "price": 699,
+   "price": 599,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/wp900-01.jpg?v=1769875778",
    "inStock": true,
    "brand": "Audio-Technica"
@@ -450,7 +463,7 @@
    "price": 149.99,
    "wasPrice": 299.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-200-Open-True-Wireless-Earphones-Black-Image-08.jpg?v=1793374267",
-   "inStock": false,
+   "inStock": true,
    "brand": "Beyerdynamic"
   },
   {
@@ -934,7 +947,7 @@
    "price": 299.99,
    "wasPrice": 499.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-330-Pro-Open-Back-Wired-Gaming-Headset-Image-01.jpg?v=1793375278",
-   "inStock": false,
+   "inStock": true,
    "brand": "Beyerdynamic"
   },
   {
@@ -967,7 +980,7 @@
    "price": 149.99,
    "wasPrice": 299.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-TYGR-300R-Open-Back-Gaming-Headphones-Image-01.jpg?v=1793375678",
-   "inStock": true,
+   "inStock": false,
    "brand": "Beyerdynamic"
   },
   {
@@ -1158,7 +1171,7 @@
    "price": 384,
    "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Headphones-2nd-Gen_-Sand-Image-07.jpg?v=1759765274",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose"
   },
   {
@@ -1199,7 +1212,7 @@
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-headphones-2nd-gen-white",
    "price": 449,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Headphones-2nd-Gen_-White-Image-07.jpg?v=1759765274",
-   "inStock": false,
+   "inStock": true,
    "brand": "Bose"
   },
   {
@@ -1712,7 +1725,7 @@
    "price": 639,
    "wasPrice": 849,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/1_1cd0850c-9ccf-4f2e-8da0-230d2be27940.jpg?v=1762447797",
-   "inStock": false,
+   "inStock": true,
    "brand": "Focal"
   },
   {
@@ -2635,7 +2648,7 @@
    "url": "https://www.worldwidestereo.com/products/meze-audio-astru-dynamic-in-ear-headphones",
    "price": 899,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/MezeAudio-ASTRU-Dynamic-In-Ear-Headphones-Image-01.jpg?v=1774363876",
-   "inStock": true,
+   "inStock": false,
    "brand": "Meze Audio"
   },
   {
@@ -2922,7 +2935,7 @@
    "sku": "46696555938103",
    "title": "Shure SRH840A Closed-back Professional Studio Headphones",
    "url": "https://www.worldwidestereo.com/products/shure-srh840a-closed-back-professional-studio-headphones",
-   "price": 169,
+   "price": 145,
    "wasPrice": 211,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/177601_WWS1.jpg?v=1769800555",
    "inStock": true,

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:50:21.848Z",
+ "scrapedAt": "2026-11-26T02:58:21.943Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -18,6 +18,7 @@
    "title": "ASUS GeForce RTX 3050 6GB GDDR6 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/asus-geforce-rtx-3050-6gb-gddr6-graphics-card-90yv0k60-m0na00/version.asp",
    "price": 282.97,
+   "wasPrice": 302.99,
    "image": "https://www.laptopsdirect.co.uk/Images/90YV0K60-M0NA00_1_Classic.png?v=5",
    "inStock": true
   },
@@ -49,9 +50,9 @@
    "mpn": "90YV0LV0-M0NA00",
    "title": "ASUS GeForce RTX 5080 16GB GDDR7 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/asus-geforce-rtx-5080-16gb-gddr7-graphics-card-90yv0lv0-m0na00/version.asp",
-   "price": 2575.97,
+   "price": 1541.97,
    "image": "https://www.laptopsdirect.co.uk/Images/90YV0LV0-M0NA00_1_Classic.jpg?v=5",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -132,7 +133,7 @@
    "mpn": "GV-N506TWF2OC-16GD",
    "title": "Gigabyte GeForce RTX 5060 Ti WINDFORCE OC 16GB GDDR7 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-5060-ti-windforce-oc-16gb-gddr7-graphics-card-gv-n506twf2oc-16gd/version.asp",
-   "price": 768.97,
+   "price": 780.97,
    "image": "https://www.laptopsdirect.co.uk/Images/GV-N506TWF2OC-16GD_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -144,7 +145,7 @@
    "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-5060-ti-windforce-oc-8gb-gddr7-graphics-card-gv-n506twf2oc-8gd/version.asp",
    "price": 536.97,
    "image": "https://www.laptopsdirect.co.uk/Images/GV-N506TWF2OC-8GD_1_Classic.jpg?v=1",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -154,7 +155,7 @@
    "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-5070-ti-windforce-oc-16gb-gddr7-graphics-card-gv-n507twf3oc-16gd/version.asp",
    "price": 1243.97,
    "image": "https://www.laptopsdirect.co.uk/Images/GV-N507TWF3OC-16GD_1_Classic.jpg?v=1",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -162,8 +163,7 @@
    "mpn": "GV-R76GAMING OC-8GD",
    "title": "Gigabyte Radeon RX 7600 OC 8GB GDDR6 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/gigabyte-radeon-rx-7600-8gb-gddr6-oc-graphics-card-gv-r76gaming-oc-8gd/version.asp",
-   "price": 442.97,
-   "wasPrice": 466.9,
+   "price": 452.97,
    "image": "https://www.laptopsdirect.co.uk/Images/GV-R76GAMING%20OC-8GD_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -217,7 +217,7 @@
    "url": "https://www.laptopsdirect.co.uk/palit-geforce-rtx-5060-ti-8gb-gddr7-graphics-card-ne7506t019p1-gb2062d/version.asp",
    "price": 556.97,
    "image": "https://www.laptopsdirect.co.uk/Images/NE7506TT19P1-GB2062D_1_16536357_Classic.jpg?v=5",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -236,9 +236,8 @@
    "title": "Palit GeForce RTX™ 5060 Ti Infinity 3 OC 16GB GDDR7 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/palit-geforce-rtx-5060-ti-infinity-3-oc-16gb-gddr7-graphics-card-ne7506ts19t1-gb2061s/version.asp",
    "price": 832.97,
-   "wasPrice": 949.99,
    "image": "https://www.laptopsdirect.co.uk/Images/NE7506TS19T1-GB2061S_1_Classic.jpg?v=5",
-   "inStock": true
+   "inStock": false
   }
  ]
 }

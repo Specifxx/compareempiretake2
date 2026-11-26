@@ -1,26 +1,15 @@
 {
- "scrapedAt": "2026-11-25T03:41:14.164Z",
+ "scrapedAt": "2026-11-26T02:50:25.686Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
    "sku": "100-506115",
    "title": "AMD Radeon Pro WX 3200 4 GB GDDR5",
    "url": "https://directcomputers.co.uk/products/radeon-pro-wx-3200-4gb",
-   "price": 171.99,
+   "price": 173.99,
    "wasPrice": 234.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/206fa56633fe7c3ba2300e0c2137a82a.jpg?v=1781341350",
    "inStock": true
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "B570 CL 10GO",
-   "title": "Asrock Challenger Intel Arc B570 10GB OC GDDR6",
-   "url": "https://directcomputers.co.uk/products/asrock-intel-arc-b570-challenger-10gb-oc-graphics-card-10gb-gddr6-2600-mhz-base-clock-dual-fan-3x-displayports-1x-hdmi-port",
-   "price": 316.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/19441bf2d6b915d3ebaab70f1e4aa3e4.jpg?v=1781248027",
-   "inStock": true,
-   "brand": "ASROCK",
-   "mpn": "B570 CL 10GO"
   },
   {
    "retailer": "uk-directcomputers",
@@ -57,25 +46,59 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "90YV0MN0-M0NA00",
-   "title": "ASUS Turbo -AI-PRO-R9700-32G AMD Radeon AI PRO R9700 32 GB GDDR6",
-   "url": "https://directcomputers.co.uk/products/turbo-ai-pro-r9700-32g",
-   "price": 2266.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/8eeeb76522884c0836b70ac0d019d369.jpg?v=1788658101",
-   "inStock": true,
-   "brand": "ASUS",
-   "mpn": "90YV0MN0-M0NA00"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "GV-N5060AORUS ARI-8GD",
    "title": "GIGABYTE AORUS GeForce RTX 5060 ARI 8G Graphics Card",
    "url": "https://directcomputers.co.uk/products/aorus-rtx-5060-8gb-ari",
-   "price": 582.99,
+   "price": 573.99,
+   "wasPrice": 582.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/c4a3b0b7bd62ed3a0b1cb36f09118bfde4190c3c87472309d1832f4ba6b22ea1.jpg?v=1790472684",
    "inStock": true,
    "brand": "GIGABYTE",
    "mpn": "GV-N5060AORUS ARI-8GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N5090AORUS M-32GD",
+   "title": "GIGABYTE AORUS GeForce RTX 5090 MASTER 32G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5090-aorus-master-32g-graphics-card-32gb-gddr7-21760-cuda-cores-2655-mhz-core-clock-triple-fan-rgb-3x-displayports-1x-hdmi-port",
+   "price": 9544.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/1b4baf8cb1a2192222b766a6066fb834.jpg?v=1772073220",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N5090AORUS M-32GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N5090AORUSM ICE-32GD",
+   "title": "GIGABYTE AORUS GeForce RTX 5090 MASTER ICE 32G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5090-aorus-master-ice-32g-graphics-card-32gb-gddr7-21760-cuda-cores-2655-mhz-core-clock-triple-fan-white-rgb-3x-displayports-1x-hdmi-port",
+   "price": 9555.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/eb2f95765f49df9e1af123c9dbf832ee.jpg?v=1770902159",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N5090AORUSM ICE-32GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N5090AORUSST ICE-32GD",
+   "title": "GIGABYTE AORUS GeForce RTX 5090 STEALTH ICE 32G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5090-aorus-stealth-ice-32g-graphics-card-32gb-gddr7-21760-cuda-cores-2655-mhz-core-clock-triple-fan-white-rgb-3x-displayports-1x-hdmi-port",
+   "price": 9567.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/bf4082221ed1ee1f15afed32eb22ec4d.jpg?v=1776819347",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N5090AORUSST ICE-32GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-R9070XTAORUS E-16GD",
+   "title": "GIGABYTE AORUS Radeon RX 9070 XT ELITE 16G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-amd-radeon-rx-9070-xt-elite-16g-graphics-card-16gb-gddr6-4096-streams-tbd-mhz-core-clock-triple-fan-rgb-2x-displayports-2x-hdmi-ports",
+   "price": 1139.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/d5f0f8a3e2935bb5bca6d836f832397b.jpg?v=1772073539",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-R9070XTAORUS E-16GD"
   },
   {
    "retailer": "uk-directcomputers",
@@ -93,11 +116,22 @@
    "sku": "GV-R76GAMING OC-8GD",
    "title": "GIGABYTE GAMING Radeon RX 7600 OC 8G AMD 8 GB GDDR6",
    "url": "https://directcomputers.co.uk/products/grgig-r76goc",
-   "price": 484.99,
+   "price": 495.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/254500a4e893d054d08e47d869183e9f.jpg?v=1770811563",
    "inStock": true,
    "brand": "GIGABYTE",
    "mpn": "GV-R76GAMING OC-8GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-R906XGAMINGOCICE-16GD",
+   "title": "GIGABYTE GAMING Radeon RX 9060 XT OC ICE 16G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-rx-9060-xt-16gb-gaming-oc-ice",
+   "price": 819.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/5c0aa247a92a2ac17c56577162cc31ab.jpg?v=1773195556",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-R906XGAMINGOCICE-16GD"
   },
   {
    "retailer": "uk-directcomputers",
@@ -136,10 +170,21 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "GV-N5060GAMING OCV2-8GD",
+   "title": "GIGABYTE GeForce RTX 5060 GAMING OC V2 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0, 2602 MHz Core Clock, 3 x DisplayPort, 1 x HDMI, DLSS 4, GV-N5060GAMING OC V2-8GD",
+   "url": "https://directcomputers.co.uk/products/gigabyte-5060-8gb-gaming-oc-v2",
+   "price": 567.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a74e7566752bd48257654aa6a0de49df5e4b319974443441ed4853ed1cfcc2e8.jpg?v=1791076840",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N5060GAMING OCV2-8GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "GV-N506TEAGLEMAX OC-16GD",
    "title": "GIGABYTE GeForce RTX 5060 Ti EAGLE MAX OC 16G Graphics Card - 16GB GDDR7, 128bit, PCI-E 5.0, 2617MHz Core Clock, 3 x DP, 1 x HDMI, NVIDIA DLSS 4, GV-N506TEAGLEMAX OC-16GD",
    "url": "https://directcomputers.co.uk/products/gigabyte-rtx-5060-ti-16gb-gaming-oc-1",
-   "price": 858.99,
+   "price": 867.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/cd2f1bdbdd45509a2b178956562d58d3.jpg?v=1770748757",
    "inStock": true,
    "brand": "GIGABYTE",
@@ -161,7 +206,7 @@
    "sku": "GV-N506TWF2OC-16GD",
    "title": "GIGABYTE GeForce RTX 5060 Ti WINDFORCE OC 16G Graphics Card",
    "url": "https://directcomputers.co.uk/products/gigabyte-rtx-5060-ti-16gb-windforce-oc",
-   "price": 833.99,
+   "price": 847.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/8040e26e94efad1d340328203e9c2ebc.jpg?v=1770901505",
    "inStock": true,
    "brand": "GIGABYTE",
@@ -169,26 +214,25 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "GV-N506TWF2OC-8GD",
-   "title": "GIGABYTE GeForce RTX 5060 Ti WINDFORCE OC 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0, 2587MHz Core Clock, 3 x DisplayPort, 1 x HDMI, GV-N506TWF2OC-8GD",
-   "url": "https://directcomputers.co.uk/products/gigabyte-5060-ti-8gb-windforce-oc",
-   "price": 584.99,
-   "wasPrice": 590.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/aed284bba794599a3fcdf65d90efa770.jpg?v=1770901520",
+   "sku": "GV-N5070AERO OC-12GD",
+   "title": "GIGABYTE GeForce RTX 5070 AERO OC 12G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5070-aero-oc-12g-graphics-card-12gb-gddr7-6144-cuda-cores-2625-mhz-core-clock-triple-fan-white-rgb-3x-displayports-1x-hdmi-port",
+   "price": 983.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a8c32ff99a08fd654efdd3000789c309.jpg?v=1763175765",
    "inStock": true,
    "brand": "GIGABYTE",
-   "mpn": "GV-N506TWF2OC-8GD"
+   "mpn": "GV-N5070AERO OC-12GD"
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "GV-N5060WF2MAX OCV2-8GD",
-   "title": "GIGABYTE GeForce RTX 5060 WINDFORCE MAX OC V2 8G Graphics Card - 8GB GDDR7, 128bit, PCI-E 5.0, 2512MHz Core Clock, 3 x DP, 1 x HDMI, NVIDIA DLSS 4, GV-N5060WF2MAX OCV2-8GD",
-   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5060-windforce-max-oc-v2-8gb-gddr7-graphics-card-3840-cuda-cores-2512-mhz-core-clock-dual-fan-3x-displayports-1x-hdmi-port",
-   "price": 534.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/92b3f3bbf0690dfdbb71d2b6bd37af99d38ee6dcc378ed5e60542589adbbdd1a.jpg?v=1790472046",
+   "sku": "GV-N5070EAGLE OC-12GD",
+   "title": "GIGABYTE GeForce RTX 5070 EAGLE OC SFF 12G Graphics Card - 12GB GDDR7, 192bit, PCI-E 5.0, 2587 MHz Core Clock, 3 x DP 2.1b, 1 x HDMI 2.1b, NVIDIA DLSS 4, GV-N5070EAGLE OC-12GD",
+   "url": "https://directcomputers.co.uk/products/gigabyte-rtx-5070-12gb-eagle-oc",
+   "price": 944.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/4902672f57bef6772bc7d26ba77ed8b8.jpg?v=1771987738",
    "inStock": true,
    "brand": "GIGABYTE",
-   "mpn": "GV-N5060WF2MAX OCV2-8GD"
+   "mpn": "GV-N5070EAGLE OC-12GD"
   },
   {
    "retailer": "uk-directcomputers",
@@ -215,6 +259,51 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "GV-N5090GAMING OC-32GD",
+   "title": "GIGABYTE GeForce RTX 5090 GAMING OC 32G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5090-gaming-oc-32g-graphics-card-32gb-gddr7-21760-cuda-cores-2550-mhz-core-clock-triple-fan-rgb-3x-displayports-1x-hdmi-port",
+   "price": 9431.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/0e86e24d14c864df45a0176fea0dacf3.jpg?v=1770902172",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N5090GAMING OC-32GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N5090WF3OC-32GD",
+   "title": "GIGABYTE GeForce RTX 5090 WINDFORCE OC 32G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-nvidia-geforce-rtx-5090-windforce-oc-32g-graphics-card-32gb-gddr7-21760-cuda-cores-2467-mhz-core-clock-triple-fan-3x-displayports-1x-hdmi-port",
+   "price": 9295.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/c21e4339e2eb8ff710146c6cca4f075f.jpg?v=1776818968",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N5090WF3OC-32GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-R9700AI TOP-32GD",
+   "title": "GIGABYTE Radeon AI PRO R9700 AI TOP 32G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-ai-pro-r9700-32gb-ai-top",
+   "price": 2245.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b2e9809225b0e062832fba2730ecae3e.jpg?v=1776819043",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-R9700AI TOP-32GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-R9060XTGAMING OC-16GD",
+   "title": "GIGABYTE Radeon RX 9060 XT GAMING OC 16G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-rx-9060-xt-16gb-gaming-oc",
+   "price": 799.99,
+   "wasPrice": 818.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/7a80e96867e149e301763f658b58de53.jpg?v=1755482323",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-R9060XTGAMING OC-16GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "GV-R907GREGAMING OC-12GD",
    "title": "GIGABYTE Radeon RX 9070 GRE GAMING OC 12G Graphics Card",
    "url": "https://directcomputers.co.uk/products/gigabyte-rx-9070-gre-12gb-gaming-oc",
@@ -223,6 +312,39 @@
    "inStock": true,
    "brand": "GIGABYTE",
    "mpn": "GV-R907GREGAMING OC-12GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-R9070XTGAMING OC-16GD",
+   "title": "GIGABYTE Radeon RX 9070 XT GAMING OC 16G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-rx-9070-xt-16gb-gaming-oc",
+   "price": 1117.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/995d8497b0dc2855f88921ce48dcbe5b.jpg?v=1772073538",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-R9070XTGAMING OC-16GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-R907XGAMINGOCICE-16GD",
+   "title": "GIGABYTE Radeon RX 9070 XT GAMING OC ICE 16G Graphics Card",
+   "url": "https://directcomputers.co.uk/products/gigabyte-rx-9070-xt-16gb-gaming-oc-ice",
+   "price": 1130.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f287ac0a739fd88db8b8c1bfc027dc71.jpg?v=1773195550",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-R907XGAMINGOCICE-16GD"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "GV-N3060WF2OC-12GD",
+   "title": "GIGABYTE RTX 3060 Windforce OC 12G NVIDIA GeForce RTX 3060 12 GB GDDR6",
+   "url": "https://directcomputers.co.uk/products/gigabyte-rtx-3060-12gb-windforce-oc",
+   "price": 484.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/54ebeacdf5842e9308de6bcbc0162805_bb04bd3d-8643-4279-9dc9-af95519793f9.jpg?v=1787879693",
+   "inStock": true,
+   "brand": "GIGABYTE",
+   "mpn": "GV-N3060WF2OC-12GD"
   },
   {
    "retailer": "uk-directcomputers",
@@ -280,18 +402,6 @@
    "inStock": true,
    "brand": "PALIT",
    "mpn": "NE7507TS19T2-GB2031U"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "NE75090S19R5-GB2020G",
-   "title": "Palit GeForce RTX 5090 GameRock OC NVIDIA 32 GB GDDR7",
-   "url": "https://directcomputers.co.uk/products/palit-5090-32gb-gamerock-oc",
-   "price": 8976.99,
-   "wasPrice": 9528.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/634587840ddd17f1ad738dc23d99d33b_f4a8bcac-b9c1-4381-83a0-32c07296a293.jpg?v=1781271065",
-   "inStock": true,
-   "brand": "PALIT",
-   "mpn": "NE75090S19R5-GB2020G"
   },
   {
    "retailer": "uk-directcomputers",

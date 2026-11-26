@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:25:58.771Z",
+ "scrapedAt": "2026-11-26T02:34:14.634Z",
  "offers": [
   {
    "retailer": "us-beachcamera",
@@ -21,7 +21,7 @@
    "price": 649,
    "wasPrice": 829.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1105102_1_8fc70d4a-76d4-4ff2-964e-e90ba0b2ecae.jpg?v=1790669487",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon",
    "mpn": "CNEOSR1002DZLK"
   },
@@ -36,6 +36,17 @@
    "inStock": true,
    "brand": "Canon",
    "mpn": "CNEOSR6M3"
+  },
+  {
+   "retailer": "us-beachcamera",
+   "sku": "CNEOSR6VBODY",
+   "title": "Canon EOS R6 V Body Mirrorless Camera",
+   "url": "https://www.beachcamera.com/products/canon-eos-r6-v-body-mirrorless-camera",
+   "price": 2499,
+   "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1185469_1.jpg?v=1779225370",
+   "inStock": true,
+   "brand": "Canon",
+   "mpn": "CNEOSR6VBODY"
   },
   {
    "retailer": "us-beachcamera",
@@ -1000,7 +1011,7 @@
    "price": 998,
    "wasPrice": 1258.99,
    "image": "https://cdn.shopify.com/s/files/1/0504/3555/5511/files/1048711_1.jpg?v=1752881268",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony",
    "mpn": "E7SNILCE6400LB"
   },

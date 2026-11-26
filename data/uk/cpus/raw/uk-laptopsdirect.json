@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T03:50:27.420Z",
+ "scrapedAt": "2026-11-26T02:58:27.828Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -32,6 +32,16 @@
    "price": 73.97,
    "wasPrice": 124.79,
    "image": "https://www.laptopsdirect.co.uk/Images/100-100000644BOX_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1901141",
+   "mpn": "100-100001489BOX",
+   "title": "AMD Ryzen 5 5500GT 6 Core AM4 Processor",
+   "url": "https://www.laptopsdirect.co.uk/amd-ryzen-5-5500gt-3.6ghz-6-core-am4-processor-12-threads-4.4ghz-boost-rade-100-100001489box/version.asp",
+   "price": 166.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/100-100001489BOX_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -244,11 +254,33 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1710591",
+   "mpn": "BX8071512100",
+   "title": "Intel Core i3 12100 4 Core LGA 1700 Alder Lake Processor",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-i3-12100-4-core-lga-1700-alder-lake-processor-bx8071512100/version.asp",
+   "price": 106.97,
+   "wasPrice": 175,
+   "image": "https://www.laptopsdirect.co.uk/Images/BX8071512100_1_Classic.jpg?v=6",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1708052",
+   "mpn": "BX8071512100F",
+   "title": "Intel Core i3 12100F 4 Core LGA 1700 Alder Lake-S Processor",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-i3-12100f-socket-1700-alder-lake-processor-bx8071512100f/version.asp",
+   "price": 86.97,
+   "wasPrice": 95.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/BX8071512100F_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1893615",
    "mpn": "BX8071514100",
    "title": "Intel Core i3 14100 4 Core LGA 1700 Raptor Lake Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-i3-14100-4-core-lga-1700-raptor-lake-processor-bx8071514100/version.asp",
-   "price": 125.97,
+   "price": 126.97,
    "wasPrice": 169.97,
    "image": "https://www.laptopsdirect.co.uk/Images/BX8071514100_1_Classic.png?v=5",
    "inStock": true
@@ -259,8 +291,8 @@
    "mpn": "BX8071514100F",
    "title": "Intel Core i3 14100F 4 Core LGA Raptor Lake Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-i3-14100f-8-core-lga-raptor-lake-processor-bx8071514100f/version.asp",
-   "price": 91.97,
-   "wasPrice": 100.75,
+   "price": 92.97,
+   "wasPrice": 101.71,
    "image": "https://www.laptopsdirect.co.uk/Images/BX8071514100F_1_Classic.png?v=5",
    "inStock": true
   },
@@ -292,7 +324,7 @@
    "mpn": "BX8071512500",
    "title": "Intel Core i5 12500 6 Core LGA 1700 Alder Lake-S Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-i5-12500-6-core-lga-1700-alder-lake-processor-bx8071512500/version.asp",
-   "price": 205.97,
+   "price": 206.97,
    "wasPrice": 224.39,
    "image": "https://www.laptopsdirect.co.uk/Images/BX8071512500_1_Classic.jpg?v=7",
    "inStock": true
@@ -315,7 +347,7 @@
    "title": "Intel Core i5 13400 10 Core LGA 1700 Raptor Lake-S Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-i5-13400-10-core-lga-1700-raptor-lake-processor-bx8071513400/version.asp",
    "price": 219.97,
-   "wasPrice": 259.99,
+   "wasPrice": 235,
    "image": "https://www.laptopsdirect.co.uk/Images/BX8071513400_1_Classic.png?v=5",
    "inStock": true
   },
@@ -337,7 +369,7 @@
    "title": "Intel Core i5 14400F 10 Core LGA 1700 Raptor Lake Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-i5-14400f-10-core-lga-1700-raptor-lake-processor-bx8071514400f/version.asp",
    "price": 137.97,
-   "wasPrice": 160.78,
+   "wasPrice": 160.08,
    "image": "https://www.laptopsdirect.co.uk/Images/BX8071514400F_1_Classic.png?v=5",
    "inStock": true
   },
@@ -347,7 +379,7 @@
    "mpn": "BX8071514600K",
    "title": "Intel Core i5 14600K 14 Core LGA 1700 Raptor Lake Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-i5-14600k-14-core-lga-1700-raptor-lake-processor-bx8071514600k/version.asp",
-   "price": 220.97,
+   "price": 222.97,
    "wasPrice": 266.98,
    "image": "https://www.laptopsdirect.co.uk/Images/BX8071514600K_1_Classic.png?v=9",
    "inStock": true
@@ -387,12 +419,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1698859",
+   "mpn": "BX8071512700F",
+   "title": "Intel Core i7 12700F 12 Core LGA 1700 Alder Lake-S Processor",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-i7-12700f-12-core-lga-1700-alder-lake-processor-bx8071512700f/version.asp",
+   "price": 246.97,
+   "wasPrice": 305.99,
+   "image": "https://www.laptopsdirect.co.uk/Images/BX8071512700F_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1671220",
    "mpn": "BX8071512700KF",
    "title": "Intel Core i7 12700KF 12 Core LGA 1700 Alder Lake Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-i7-12700kf-12-core-lga-1700-alder-lake-processor-bx8071512700kf/version.asp",
    "price": 238.97,
-   "wasPrice": 314.38,
+   "wasPrice": 315.58,
    "image": "https://www.laptopsdirect.co.uk/Images/BX8071512700KF_1_Classic.jpg?v=16",
    "inStock": true
   },
@@ -420,13 +463,35 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1894458",
+   "mpn": "BX8071514700",
+   "title": "Intel Core i7-14700 20 Core LGA 1700 Raptor Lake Processor",
+   "url": "https://www.laptopsdirect.co.uk/intel-cpu-core-i7-14700-5.4ghz-lga1700-box-bx8071514700/version.asp",
+   "price": 344.97,
+   "wasPrice": 405.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/BX8071514700_1_Classic.jpg?v=7",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1894459",
    "mpn": "BX8071514700F",
    "title": "Intel Core i7-14700F 20 Core LGA 1700 Raptor Lake Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-i7-14700f-20-core-lga-1700-raptor-lake-processor-bx8071514700f/version.asp",
-   "price": 272.97,
+   "price": 275.97,
    "wasPrice": 335.99,
    "image": "https://www.laptopsdirect.co.uk/Images/BX8071514700F_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1694577",
+   "mpn": "BX8071512900KF",
+   "title": "Intel Core i9 12900KF 16 Core LGA 1700 Alder Lake-S Processor",
+   "url": "https://www.laptopsdirect.co.uk/intel-core-i9-12900kf-16-core-lga-1700-alder-lake-processor-bx8071512900kf/version.asp",
+   "price": 272.97,
+   "wasPrice": 381.59,
+   "image": "https://www.laptopsdirect.co.uk/Images/BX8071512900KF_1_Classic.jpg?v=10",
    "inStock": true
   },
   {
@@ -453,11 +518,22 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "1671222",
+   "mpn": "BX8071512900K",
+   "title": "Intel Core i9-12900K 16 Core LGA 1700 Alder Lake Processor",
+   "url": "https://www.laptopsdirect.co.uk/intel-16-core-i9-12900k-alder-lake-cpu-processor-bx8071512900k/version.asp",
+   "price": 355.97,
+   "wasPrice": 399.32,
+   "image": "https://www.laptopsdirect.co.uk/Images/BX8071512900K_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "1986621",
    "mpn": "BX80768225",
    "title": "Intel Core Ultra 5 225 10 Core LGA 1851 Arrow Lake Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-5-225-10-core-lga-1851-arrow-lake-processor-bx80768225/version.asp",
-   "price": 155.97,
+   "price": 156.97,
    "wasPrice": 199.99,
    "image": "https://www.laptopsdirect.co.uk/Images/BX80768225_1_Classic.jpg?v=1",
    "inStock": true
@@ -489,7 +565,7 @@
    "mpn": "BX80768250K",
    "title": "Intel Core Ultra 5 250K Plus 18 Core LGA 1851 Arrow Lake Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-5-250k-plus-18-core-lga-1851-arrow-lake-processor-bx80768250k/version.asp",
-   "price": 193.97,
+   "price": 194.97,
    "wasPrice": 214.99,
    "image": "https://www.laptopsdirect.co.uk/Images/BX80768250K_1_Classic.jpg?v=1",
    "inStock": true
@@ -511,7 +587,7 @@
    "mpn": "BX80768270K",
    "title": "Intel Core Ultra 7 270K Plus 24 Core LGA 1851 Arrow Lake Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-7-270k-plus-24-core-lga-1851-arrow-lake-processor-bx80768270k/version.asp",
-   "price": 280.97,
+   "price": 282.97,
    "wasPrice": 309.98,
    "image": "https://www.laptopsdirect.co.uk/Images/BX80768270K_1_Classic.jpg?v=1",
    "inStock": true
@@ -523,8 +599,19 @@
    "title": "Intel Core Ultra 9 285K LGA 1851 Processor",
    "url": "https://www.laptopsdirect.co.uk/intel-core-ultra-9-285k-24-core-lga-1851-arrow-lake-processor-bx80768285k/version.asp",
    "price": 470.97,
-   "wasPrice": 545.38,
+   "wasPrice": 532.87,
    "image": "https://www.laptopsdirect.co.uk/Images/BX80768285K_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1710589",
+   "mpn": "BX80715G7400",
+   "title": "Intel Pentium Gold G7400 2 Core LGA 1700 Alder Lake-S Processor",
+   "url": "https://www.laptopsdirect.co.uk/intel-pentium-gold-g7400-socket-1700-alder-lake-processor-bx80715g7400/version.asp",
+   "price": 80.97,
+   "wasPrice": 111.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/BX80715G7400_1_Classic.jpg?v=13",
    "inStock": true
   }
  ]
