@@ -4,20 +4,11 @@ import Link from "next/link";
 // and then a really nice formatted creators page"). In the hero's top-right corner from sm up; on a phone, where a corner badge would
 // sit on the headline, a small centred pill above it instead. Server component, static: nothing to fetch, nothing to hydrate.
 export function CreatorsCornerBadge() {
+  // A quiet text link under the hero's search (2026-11-27, the shared design standard: no pill or pulsing dot above a headline).
   return (
-    <Link
-      href="/creators"
-      prefetch={false}
-      className="group relative z-20 mb-5 inline-flex min-h-9 items-center gap-2 rounded-full border border-brand/40 bg-bg-card py-1.5 pl-2 pr-3.5 text-xs font-bold text-ink shadow-sm transition hover:border-brand sm:absolute sm:right-4 sm:top-4 sm:mb-0 sm:text-sm lg:right-8"
-    >
-      <span className="relative flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-brand to-[#3D8BFF] text-[13px]" aria-hidden>
-        ✨
-        <span className="absolute -right-0.5 -top-0.5 h-2 w-2 animate-ping rounded-full bg-brand" />
-      </span>
-      <span>
-        Tech creators
-        <span className="ml-1.5 font-semibold text-brand group-hover:underline">Buy them a coffee →</span>
-      </span>
+    <Link href="/creators" prefetch={false} className="group inline-flex items-center gap-1.5 text-sm text-ink-soft hover:text-ink">
+      <span className="font-semibold text-ink">Tech creators</span>
+      <span className="font-semibold text-brand group-hover:underline">Buy them a coffee →</span>
     </Link>
   );
 }

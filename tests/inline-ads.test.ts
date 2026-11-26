@@ -5,7 +5,7 @@ import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import { DOCK_ARM, dockShows, type DockState } from "../src/components/AdDock";
 import { dockHref, MIN_WIDTH } from "../src/components/PhoneDock";
-import { blockTiles, BLOCK_TILES } from "../src/components/InlineAds";
+import { blockTiles, BLOCK_TILES, rowTiles, ROW_TILES } from "../src/components/InlineAds";
 
 const read = (p: string) => readFileSync(new URL(`../${p}`, import.meta.url), "utf8");
 
@@ -60,12 +60,33 @@ test("block: in the page, browser only, native, one per page, no side rails left
   assert.doesNotMatch(read("src/app/globals.css"), /calc\(100vw - 320px\)/, "the column keeps its whole width");
   assert.match(read("src/app/layout.tsx"), /<PhoneDock \/>/);
   assert.doesNotMatch(read("src/app/layout.tsx"), /<InlineAds/, "never in the layout: each page places its one block");
-  for (const [f, n] of [["src/views/HomeView.tsx", 1], ["src/views/ProductView.tsx", 1], ["src/views/CategoryView.tsx", 1], ["src/app/deals/page.tsx", 1]] as const) {
-    assert.equal((read(f).match(/<InlineAds \/>/g) ?? []).length, n, `${f}: one block`);
-  }
-  assert.doesNotMatch(read("src/components/QuickView.tsx"), /InlineAds/, "never in the quick view");
+  // Mid-page, not at the foot (owner, 2026-11-27): the home page's eBay row after the price drops and its Amazon row after the
+  // launches; a product page's rows under "Similar price range", above the specs; a category's eBay row inside the grid.
+  const home = read("src/views/HomeView.tsx");
+  assert.equal((home.match(/<InlineAds only="ebay"/g) ?? []).length, 1, "home: one eBay row");
+  assert.equal((home.match(/<InlineAds only="amazon"/g) ?? []).length, 1, "home: one Amazon row");
+  assert.ok(home.indexOf('<InlineAds only="ebay"') > home.indexOf("Price drops today") && home.indexOf('<InlineAds only="ebay"') < home.indexOf("Most compared phones"), "home: eBay after the drops");
+  assert.ok(home.indexOf('<InlineAds only="amazon"') > home.indexOf("<HotLaunches") && home.indexOf('<InlineAds only="amazon"') < home.indexOf("home-cat-shelf"), "home: Amazon after the launches");
   const pv = read("src/views/ProductView.tsx");
-  assert.ok(pv.indexOf("<InlineAds />") > pv.indexOf("Compare the {phone.model}"), "below the product's content");
+  assert.equal((pv.match(/<InlineAds /g) ?? []).length, 1, "product: one block");
+  assert.ok(pv.indexOf("<InlineAds ") > pv.indexOf("Similar price range") && pv.indexOf("<InlineAds ") < pv.indexOf("Key specs"), "product: under the similar products, above the specs");
+  const cv = read("src/views/CategoryView.tsx");
+  assert.match(cv, /midAd=\{<InlineAds only="ebay"/);
+  assert.equal((cv.match(/<InlineAds only="amazon"/g) ?? []).length, 1);
+  assert.equal((read("src/app/deals/page.tsx").match(/<InlineAds \/>/g) ?? []).length, 1, "deals: one block");
+  assert.doesNotMatch(read("src/components/QuickView.tsx"), /InlineAds/, "never in the quick view");
+  assert.ok(pv.indexOf("<InlineAds ") > pv.indexOf("<ReportPrice"), "never beside the buy buttons: after the price table");
+});
+
+test("rows: one partner each, at most ten, Amazon never priced, nothing under two", () => {
+  const t = (id: string, price: string | null) => ({ id, name: id, img: "x", price, href: "h" });
+  const ebay = { label: "ebay.com", more: "m", tiles: Array.from({ length: 12 }, (_, i) => t(`e${i}`, "$1")) };
+  const amazon = { label: "Amazon", tiles: Array.from({ length: 12 }, (_, i) => t(`a${i}`, null)) };
+  assert.equal(rowTiles({ ebay, amazon }, "ebay").length, ROW_TILES);
+  assert.ok(rowTiles({ ebay, amazon }, "ebay").every((x) => x.source === "ebay"));
+  assert.ok(rowTiles({ ebay, amazon }, "amazon").every((x) => x.source === "amazon" && x.price === null));
+  assert.deepEqual(rowTiles({ ebay, amazon: null }, "amazon"), []);
+  assert.deepEqual(rowTiles({ ebay: { ...ebay, tiles: [t("x", "$1")] }, amazon }, "ebay"), []);
 });
 
 test("the phone dock: narrow screens only, after a scroll, never beside another unit, a product page or a dialog; never Amazon", () => {

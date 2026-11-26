@@ -12,8 +12,8 @@ import { Flag } from "./Flag";
 export function HomeRegionPicker({ region, regions }: { region: RegionId; regions: RegionId[] }) {
   if (regions.length < 2) return null;
   return (
-    <nav aria-label="Choose your country" className="flex flex-wrap items-center justify-center gap-2">
-      <span className="text-sm font-medium text-ink-mute">Prices for</span>
+    <nav aria-label="Choose your country" className="flex flex-wrap items-center justify-center gap-1.5 sm:justify-start">
+      <span className="mr-1 text-sm font-medium text-ink-mute">Prices for</span>
       {regions.map((r) => {
         const on = r === region;
         return (
@@ -23,13 +23,13 @@ export function HomeRegionPicker({ region, regions }: { region: RegionId; region
             prefetch={false}
             onClick={() => rememberRegion(r)}
             aria-current={on ? "page" : undefined}
-            className={`inline-flex min-h-10 items-center gap-2 rounded-full border px-3.5 text-sm font-semibold transition ${
+            className={`inline-flex min-h-9 items-center gap-2 rounded-[6px] border px-3 text-sm lg:px-2.5 font-semibold transition ${
               on ? "border-brand bg-brand/10 text-brand" : "border-line bg-bg-card text-ink-soft hover:border-brand/50 hover:text-ink"
             }`}
           >
             <Flag code={r} />
             {REGIONS[r].name}
-            {on && <span className="text-xs font-medium text-ink-mute">{REGIONS[r].currency}</span>}
+            {on && <span className="text-xs font-medium text-ink-mute lg:hidden">{REGIONS[r].currency}</span>}
           </Link>
         );
       })}
