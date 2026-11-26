@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T00:19:54.767Z",
+ "scrapedAt": "2026-11-25T23:52:00.952Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -1096,7 +1096,7 @@
    "price": 2379,
    "wasPrice": 3399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/847705-Product-0-I-638974588270128329.jpg?v=1761869799",
-   "inStock": false,
+   "inStock": true,
    "mpn": "32U990A",
    "brand": "Lg"
   },
@@ -1158,18 +1158,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/806066-Product-0-I-638875492283164974.jpg?v=1751952496",
    "inStock": true,
    "mpn": "27GX700A",
-   "brand": "Lg"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "899020",
-   "title": "LG UltraGear 32G403B 32\" FHD 144Hz Gaming Monitor",
-   "url": "https://www.jbhifi.com.au/products/lg-ultragear-32g403b-32-fhd-144hz-gaming-monitor",
-   "price": 249,
-   "wasPrice": 359,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899020-Product-0-I-639183778809449939.jpg?v=1782781146",
-   "inStock": true,
-   "mpn": "32G403B",
    "brand": "Lg"
   },
   {
@@ -1344,7 +1332,7 @@
    "price": 1299,
    "wasPrice": 1829,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896085-Product-0-I-639123340204280339.jpg?v=1776737285",
-   "inStock": true,
+   "inStock": false,
    "mpn": "321UP",
    "brand": "Msi"
   },
@@ -1392,7 +1380,7 @@
    "price": 454,
    "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/791308-Product-0-I-638668906805058138.jpg?v=1731294971",
-   "inStock": true,
+   "inStock": false,
    "mpn": "MD342CQP",
    "brand": "Msi"
   },
@@ -1467,12 +1455,12 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "840546",
-   "title": "OMEN 34C G2 34\" WQHD 180Hz Curved Gaming Monitor",
-   "url": "https://www.jbhifi.com.au/products/omen-34c-g2-34-wqhd-180hz-curved-gaming-monitor",
-   "price": 449,
-   "wasPrice": 699,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840546-Product-0-I-639158890802729705.jpg?v=1780292405",
+   "sku": "840545",
+   "title": "OMEN G2 27\" QHD 180Hz Gaming Monitor",
+   "url": "https://www.jbhifi.com.au/products/omen-g2-27-qhd-180hz-gaming-monitor",
+   "price": 299,
+   "wasPrice": 499,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840545-Product-0-I-639158889006501679.jpg?v=1780292225",
    "inStock": true,
    "brand": "Hp Omen"
   },
@@ -1661,8 +1649,7 @@
    "sku": "782244",
    "title": "Samsung 49\" Odyssey OLED G95SD DQHD 240Hz Curved Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-49-odyssey-oled-g95sd-dqhd-240hz-curved-gaming-monitor",
-   "price": 1999,
-   "wasPrice": 2699,
+   "price": 2699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/782244-Product-0-I-638599647005355013.jpg?v=1724371213",
    "inStock": true,
    "mpn": "G95SD",
@@ -1752,7 +1739,7 @@
    "url": "https://www.jbhifi.com.au/products/samsung-m90sf-32-4k-ultra-hd-165hz-smart-monitor",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815055-Product-0-I-638905630216794669.jpg?v=1754966293",
-   "inStock": true,
+   "inStock": false,
    "mpn": "M90SF",
    "brand": "Samsung"
   },
@@ -1888,8 +1875,7 @@
    "sku": "675802",
    "title": "Samsung S65TC 34\" Ultra-wide Curved WQHD Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-s65tc-34-ultra-wide-curved-wqhd-monitor",
-   "price": 899,
-   "wasPrice": 1099,
+   "price": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/675802-Product-0-I-638433081605121403.jpg?v=1707711435",
    "inStock": false,
    "mpn": "S65TC",
@@ -1900,7 +1886,8 @@
    "sku": "907067",
    "title": "Samsung Viewfinity S8 S80UH 27\" 4K UHD Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-viewfinity-s8-s80uh-27-4k-uhd-monitor",
-   "price": 699,
+   "price": 549,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907067-Product-0-I-639225408606241525.jpg?v=1786944125",
    "inStock": true,
    "mpn": "S80UH",
@@ -1911,7 +1898,8 @@
    "sku": "907068",
    "title": "Samsung Viewfinity S8 S80UH 32\" 4K UHD Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-viewfinity-s8-s80uh-32-4k-uhd-monitor",
-   "price": 799,
+   "price": 649,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907068-Product-1-I-639225390007247218.jpg?v=1786944246",
    "inStock": true,
    "mpn": "S80UH",

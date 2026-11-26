@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T00:18:03.630Z",
+ "scrapedAt": "2026-11-25T23:58:26.487Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -72,6 +72,16 @@
    "url": "https://www.jbhifi.com.au/products/dreame-aqua20-ultra-roller-robot-vacuum",
    "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/916006-Product-0-I-639269301603221769.jpg?v=1791333512",
+   "inStock": true,
+   "brand": "Dreame"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "776359",
+   "title": "Dreame L10s Plus Robot Vacuum and Mop with Auto-Empty Station",
+   "url": "https://www.jbhifi.com.au/products/dreame-l10s-plus-robot-vacuum-and-mop-with-auto-empty-station",
+   "price": 538,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/776359-Product-0-I-638554878005630144_0eebaf72-f567-4d9f-a128-357191fdb2ca.jpg?v=1719891795",
    "inStock": true,
    "brand": "Dreame"
   },
@@ -253,7 +263,8 @@
    "sku": "890003",
    "title": "ECOVACS DEEBOT T90 Pro Omni Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/ecovacs-deebot-t90-pro-omni-vacuum-cleaner",
-   "price": 1999,
+   "price": 986,
+   "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890003-Product-0-I-639068995204885064.jpg?v=1771302786",
    "inStock": true,
    "brand": "Ecovacs"
@@ -273,7 +284,8 @@
    "sku": "910901",
    "title": "Ecovacs DEEBOT X12S OmniCyclone Robot Vacuum Cleaner",
    "url": "https://www.jbhifi.com.au/products/ecovacs-deebot-x12s-omnicyclone-robot-vacuum-cleaner",
-   "price": 2999,
+   "price": 1778,
+   "wasPrice": 1988,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/910901-Product-0-I-639251989804752418.jpg?v=1789602246",
    "inStock": true,
    "brand": "Ecovacs"
@@ -319,7 +331,7 @@
    "price": 497,
    "wasPrice": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/887483-Product-0-I-639069642009106846.jpg?v=1771367465",
-   "inStock": false,
+   "inStock": true,
    "brand": "Eufy"
   },
   {
@@ -332,26 +344,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/887484-Product-0-I-639064509009284458.jpg?v=1770854166",
    "inStock": false,
    "brand": "Eufy"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "829965",
-   "title": "iRobot Roomba® 105 Combo Robot Vacuum",
-   "url": "https://www.jbhifi.com.au/products/irobot-roomba-105-combo-robot-vacuum",
-   "price": 499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829965-Product-0-I-638906565006589971.jpg?v=1755059766",
-   "inStock": false,
-   "brand": "Irobot"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "829967",
-   "title": "iRobot Roomba® 205 DustCompactor Combo",
-   "url": "https://www.jbhifi.com.au/products/irobot-roomba-205-dustcompactor-combo",
-   "price": 699,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829967-Product-0-I-638906556002701153.jpg?v=1755140107",
-   "inStock": false,
-   "brand": "Irobot"
   },
   {
    "retailer": "jbhifi",

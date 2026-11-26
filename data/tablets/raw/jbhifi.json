@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T00:08:16.957Z",
+ "scrapedAt": "2026-11-25T23:50:08.743Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -93,7 +93,7 @@
    "price": 860,
    "wasPrice": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/803401-Product-0-I-638767395653699687.jpg?v=1741143137",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -278,7 +278,7 @@
    "price": 999,
    "wasPrice": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807680-Product-0-I-639080812803357965.jpg?v=1772484545",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -586,7 +586,7 @@
    "price": 1799,
    "wasPrice": 2049,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807722-Product-0-I-639080808601857889.jpg?v=1772484314",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1400,7 +1400,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-pro-11-inch-256gb-wi-fi-cellular-silverm5",
    "price": 2349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748006-Product-0-I-638961724205061372.jpg?v=1760575686",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1871,6 +1871,17 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "749797",
+   "title": "Microsoft Surface Pro (11th Edition) Copilot+ AI PC 13\" Snapdragon X Plus 10 core/16GB/512GB (Sapphire)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-11th-edition-copilot-ai-pc-13-snapdragon-x-plus-10-core-16gb-512gb-sapphire",
+   "price": 1447,
+   "wasPrice": 2199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749797-Product-0-I-638518540802551653.jpg?v=1791174814",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "914058",
    "title": "Microsoft Surface Pro 12-Inch Snapdragon X2 Plus 256GB/16GB Black (2nd Edition)",
    "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-12-inch-snapdragon-x2-plus-256gb-16gb-black-2nd-edition",
@@ -2168,7 +2179,7 @@
    "price": 659,
    "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/804638-Product-0-I-638791485002508025.jpg?v=1743551770",
-   "inStock": true,
+   "inStock": false,
    "brand": "Samsung"
   },
   {

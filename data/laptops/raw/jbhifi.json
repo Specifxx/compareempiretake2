@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T00:00:01.756Z",
+ "scrapedAt": "2026-11-25T23:37:06.184Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -119,7 +119,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-13-inch-with-m5-chip-512gb-16gb-silver",
    "price": 1797,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748033-Product-0-I-639081654815037755.jpg?v=1790763183",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -359,7 +359,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-proled-xdr-display-with-m5-max-chip-2tb-36gb-space-black",
    "price": 6999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890939-Product-0-I-639288161402636721.jpg?v=1793219407",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -697,17 +697,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "807413",
-   "title": "Asus CX14 14\" Full HD Chromebook (Intel Core 3)[128GB/8GB]",
-   "url": "https://www.jbhifi.com.au/products/asus-cx14-14-full-hd-chromebook-intel-core-3128gb-8gb",
-   "price": 398,
-   "wasPrice": 749,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807413-Product-0-I-639144090005337174.jpg?v=1778812267",
-   "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "807671",
    "title": "ASUS CX14 14\" Full HD Chromebook (Intel N50)[4GB/128GB]",
    "url": "https://www.jbhifi.com.au/products/asus-cx14-14-full-hd-chromebook-intel-n504gb-128gb",
@@ -744,7 +733,8 @@
    "sku": "906682",
    "title": "ASUS Googlebook 14\" 3K OLED Touch Laptop (Intel Core Ultra 5 - 325)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-googlebook-14-3k-oled-touch-laptop-intel-core-ultra-5-325512gb-16gb",
-   "price": 2799,
+   "price": 2239,
+   "wasPrice": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906682-Product-0-I-639261546603376893.jpg?v=1790633465",
    "inStock": true,
    "brand": "Asus"
@@ -754,7 +744,8 @@
    "sku": "906683",
    "title": "ASUS Googlebook 14\" 3K OLED Touch Laptop (Intel Core Ultra 7 - 355)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/asus-googlebook-14-3k-oled-touch-laptop-intel-core-ultra-7-355512gb-16gb",
-   "price": 2999,
+   "price": 2099,
+   "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906683-Product-0-I-639261546003443612.jpg?v=1790557912",
    "inStock": true,
    "brand": "Asus"
@@ -1062,7 +1053,7 @@
    "price": 2366,
    "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918220-Product-0-I-639298842603404728.jpg?v=1794287526",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -1083,17 +1074,6 @@
    "url": "https://www.jbhifi.com.au/products/asus-zenbook-14-wuxga-oled-pink-laptop-qualcomm-snapdragon-x-x1-26-100512gb-16gb",
    "price": 1288,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906684-Product-0-I-639297966002863853.jpg?v=1794200063",
-   "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "791838",
-   "title": "ASUS Zenbook A14 14\" OLED Copilot+ AI PC Laptop (Snapdragon X Plus)[512GB/16GB]",
-   "url": "https://www.jbhifi.com.au/products/asus-zenbook-a14-14-oled-copilot-ai-pc-laptop-snapdragon-x-plus512gb-16gb",
-   "price": 1277,
-   "wasPrice": 1999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/791838-Product-0-I-639144095401765313.jpg?v=1778812808",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1424,7 +1404,8 @@
    "sku": "909424",
    "title": "HP Googlebook 14\" 3K OLED Touch Laptop (Snapdragon X Elite)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/hp-googlebook-14-3k-oled-touch-laptop-snapdragon-x-elite512gb-16gb",
-   "price": 2299,
+   "price": 1699,
+   "wasPrice": 2299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/909424-Product-0-I-639252081604905221.jpg?v=1789611425",
    "inStock": true,
    "brand": "Hp"
@@ -1434,7 +1415,8 @@
    "sku": "909423",
    "title": "HP Googlebook 14\" 3K OLED Touch Laptop (Snapdragon X Elite)[512GB/32GB]",
    "url": "https://www.jbhifi.com.au/products/hp-googlebook-14-3k-oled-touch-laptop-snapdragon-x-elite512gb-32gb",
-   "price": 2999,
+   "price": 2399,
+   "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/909423-Product-0-I-639252107409472977.jpg?v=1789614125",
    "inStock": true,
    "brand": "Hp"
@@ -1810,16 +1792,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "840534",
-   "title": "HP OmniBook Ultra 14\" 3K OLED AI PC Laptop (Intel Core Ultra X9 - 388H)[1TB/64GB]",
-   "url": "https://www.jbhifi.com.au/products/hp-omnibook-ultra-14-3k-oled-ai-pc-laptop-intel-core-ultra-x9-388h1tb-64gb",
-   "price": 7499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840534-Product-0-I-639153689405683902.jpg?v=1779773115",
-   "inStock": true,
-   "brand": "Hp"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "840527",
    "title": "HP OmniBook Ultra 14\" 3K OLED AI PC Laptop (Snapdragon X2 Elite)[1TB/32GB]",
    "url": "https://www.jbhifi.com.au/products/hp-omnibook-ultra-14-3k-oled-ai-pc-laptop-snapdragon-x2-elite1tb-32gb",
@@ -1941,17 +1913,6 @@
    "price": 1789,
    "wasPrice": 3999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897196-Product-0-I-639165847203441657.jpg?v=1780987986",
-   "inStock": true,
-   "brand": "Hyperx"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "897197",
-   "title": "HyperX OMEN 15 15.3\" WUXGA Gaming Laptop (Intel Core i7-14650HX)[GeForce RTX 5060]",
-   "url": "https://www.jbhifi.com.au/products/hyperx-omen-15-15-3-wuxga-gaming-laptop-intel-core-i7-14650hxgeforce-rtx-5060",
-   "price": 1988,
-   "wasPrice": 4199,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897197-Product-0-I-639165844205557949.jpg?v=1780987686",
    "inStock": true,
    "brand": "Hyperx"
   },
@@ -2395,17 +2356,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "888309",
-   "title": "Lenovo Legion 5 15.3\" WUXGA 165Hz Gaming Laptop (Intel Core i7 - 13650HX)[GeForce RTX 5070]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-legion-5-15-3-wuxga-165hz-gaming-laptop-intel-core-i7-13650hxgeforce-rtx-5070",
-   "price": 2666,
-   "wasPrice": 3499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/888309-Product-0-I-639143977806260143.jpg?v=1778801046",
-   "inStock": true,
-   "brand": "Lenovo"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "844442",
    "title": "Lenovo Legion 5 15.3\" WUXGA 165Hz Gaming Laptop (Intel Core i7)[GeForce RTX 5070]",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-5-15-3-wuxga-165hz-gaming-laptop-intel-core-i7geforce-rtx-5070",
@@ -2442,7 +2392,8 @@
    "sku": "913323",
    "title": "Lenovo Legion 7 15.3\" WQXGA OLED 165Hz Gaming Laptop (AMD Ryzen AI Max+ 388)[Radeon 8060S]",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-7-15-3-wqxga-oled-165hz-gaming-laptop-amd-ryzen-ai-max-388radeon-8060s",
-   "price": 3999,
+   "price": 2999,
+   "wasPrice": 3999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913323-Product-0-I-639277180203656537.jpg?v=1792121286",
    "inStock": true,
    "brand": "Lenovo"
@@ -2452,7 +2403,8 @@
    "sku": "913324",
    "title": "Lenovo Legion 7 15.3\" WQXGA OLED 165Hz Gaming Laptop (AMD Ryzen AI Max+ 392)[Radeon 8060S]",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-7-15-3-wqxga-oled-165hz-gaming-laptop-amd-ryzen-ai-max-392radeon-8060s",
-   "price": 4999,
+   "price": 3999,
+   "wasPrice": 4999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913324-Product-0-I-639277193408744338.jpg?v=1792122606",
    "inStock": false,
    "brand": "Lenovo"
@@ -2729,17 +2681,6 @@
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-pro-9-15-3-wqxga-oled-touch-laptop-nvidia-rtx-spark-n1x-20-core1tb-64gb",
    "price": 7999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918162-Product-0-I-639271212004368077.jpg?v=1791524471",
-   "inStock": true,
-   "brand": "Lenovo - Yoga"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "888301",
-   "title": "Lenovo Yoga S7 14\" WUXGA OLED Copilot+ AI PC Laptop (Intel Core Ultra 5 - 226V)[512GB]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-s7-14-wuxga-oled-copilot-ai-pc-laptop-intel-core-ultra-5-226v512gb",
-   "price": 1296,
-   "wasPrice": 1399,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/888301-Product-0-I-639122408406231156.jpg?v=1776644107",
    "inStock": true,
    "brand": "Lenovo - Yoga"
   },
