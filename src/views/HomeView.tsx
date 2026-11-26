@@ -19,6 +19,7 @@ import { hotLaunches, storePreorders } from "@/lib/launches";
 import { ChristmasBanner } from "@/components/season/ChristmasBanner";
 import { CreatorsCornerBadge } from "@/components/creators/CreatorsCornerBadge";
 import { sized } from "@/lib/image-size";
+import { HeroBoard } from "@/components/HeroBoard";
 
 export function HomeView({ region }: { region: RegionId }) {
   const R = REGIONS[region];
@@ -57,17 +58,18 @@ export function HomeView({ region }: { region: RegionId }) {
   return (
     <>
       <section className="home-hero relative z-20 border-b border-line bg-bg-card">
-        <div className="container-x relative pb-6 pt-6 sm:pb-10 sm:pt-16">
-          <div className="mx-auto max-w-3xl text-center">
-            {/* The creators hub, above the fold (owner, 2026-11-03): top-right corner from sm, a centred pill above the headline on a phone. */}
-            <CreatorsCornerBadge />
-            <ChristmasBanner href={to("/deals")} />
-            <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
+        {/* A masthead, not a landing-page template (owner, 2026-11-27: "look less vibe coded"; the shared design standard,
+            /mnt/project-files/design-system): centred on a phone, left-aligned from 640px, and from 1024px today's real price gap
+            beside it as the one picture. No pill above the headline: the creators link and the Christmas line sit under the search. */}
+        <div className="container-x relative grid items-center gap-10 pb-6 pt-6 sm:pb-10 sm:pt-12 lg:grid-cols-[minmax(0,1fr)_420px]">
+          <div className="hero-copy mx-auto max-w-3xl text-center sm:mx-0 sm:text-left">
+            <p className="hero-kicker eyebrow mb-3 hidden sm:block">Price guide · {R.name}</p>
+            <h1 className="hero-h1 text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
               {/* Says what and where (review of 19 Nov 2026: the old "Every store's price, cheapest first." named no category,
                   region or reason to trust it over a marketplace); the page title already names phones, laptops and TVs. */}
               Compare {R.adjective} tech prices: phones, laptops, TVs and more
             </h1>
-            <p className="hero-sub mx-auto mt-3 max-w-xl text-sm text-ink-soft sm:text-lg">
+            <p className="hero-sub mt-3 max-w-xl text-sm text-ink-soft sm:text-lg">
               {mature ? (
                 <>Is that sale actually real? We save the price of everything we compare at {stores} {R.adjective} stores, every day. So when a store says &ldquo;was {$(1499)}&rdquo;, you can see if it ever was.</>
               ) : (
@@ -75,13 +77,19 @@ export function HomeView({ region }: { region: RegionId }) {
               )}
             </p>
             {/* Phones already have the search under the logo (Header) and the country flag beside it. */}
-            <div className="mx-auto mt-6 hidden max-w-2xl md:block">
+            <div className="hero-search mt-6 hidden max-w-2xl md:block">
               <SearchBox size="lg" />
             </div>
-            <div className="mt-5 hidden sm:block">
+            <div className="mt-4 hidden sm:block">
               <HomeRegionPicker region={region} regions={liveRegions()} />
             </div>
+            {/* The creators hub stays above the fold (owner, 2026-11-03), as a quiet link beside the season's one line. */}
+            <div className="hero-links mt-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 sm:justify-start">
+              <ChristmasBanner href={to("/deals")} />
+              <CreatorsCornerBadge />
+            </div>
           </div>
+          <HeroBoard deals={getDeals(30, undefined, region, { pricier: true })} updated={updated} />
         </div>
         {/* What the site promises, in one line of facts (the trust strip). */}
         <div className="hero-meta border-t border-line/70 bg-bg-sunk/60">
@@ -127,6 +135,9 @@ export function HomeView({ region }: { region: RegionId }) {
         </section>
       )}
 
+      {/* The eBay row, mid-page (owner, 2026-11-27: "not at the very end of the page"): after the drops, before the shelves. */}
+      <div className="container-x"><InlineAds only="ebay" pos="home-ebay" /></div>
+
       {popular.length >= 4 && (
         <section className="container-x mt-10">
           <SectionHead title="Most compared phones" sub="Stocked by the most stores, so the price gap is real." href={to("/phones")} cta="All phones" />
@@ -140,6 +151,9 @@ export function HomeView({ region }: { region: RegionId }) {
         <HotLaunches items={hot} preorders={pre} region={region} />
       </div>
 
+      {/* The Amazon row: after the launches, before the category shelves. */}
+      <div className="container-x"><InlineAds only="amazon" pos="home-amazon" /></div>
+
       {cats.filter(({ c, popular }) => c.id !== "phones" && FEATURED.slice(0, 7).includes(c.id) && popular.length >= 4).map(({ c, popular }) => (
         <section key={c.id} className="home-cat-shelf container-x mt-10">
           <SectionHead title={`Popular ${c.name.toLowerCase()}`} href={to(c.href)} cta={`All ${c.name.toLowerCase()}`} />
@@ -149,8 +163,6 @@ export function HomeView({ region }: { region: RegionId }) {
         </section>
       ))}
 
-      {/* The one ad block: below the popular rows, above the guides (never the hero). */}
-      <div className="container-x"><InlineAds /></div>
 
       {/* The newest guides: what search engines and readers come back for. Every region since 2026-11-06. */}
       <section className="container-x mt-12">

@@ -283,6 +283,10 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           </div>
         </section>
       )}
+
+      {/* The eBay and Amazon rows (owner, 2026-11-27: up where people see them): under the prices, the chart and the similar
+          products, before the specs and FAQ. Never beside the buy buttons or above the product's price. */}
+      <InlineAds pos="product" className="mt-12" />
       <section className="mt-12 grid gap-8 lg:grid-cols-2">
         <div>
           <h2 className="mb-3 text-xl font-bold tracking-tight sm:text-2xl">Key specs</h2>
@@ -385,9 +389,6 @@ export async function ProductView({ params, region }: { params: ProductParams; r
           </div>
         </section>
       )}
-
-      {/* The one ad block: below the whole page, never beside the buy buttons or above a price. */}
-      <InlineAds />
 
       <div className="mt-12"><NewsletterSignup compact /></div>
     </div>

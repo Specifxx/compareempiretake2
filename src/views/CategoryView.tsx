@@ -124,11 +124,11 @@ export async function CategoryView({ params, region }: { params: CategoryParams;
       </div>
       <div className="mt-6 sm:mt-8">
         {/* The first page only; the full list is a static file the browser loads (lib/browse.ts). */}
-        <PhoneBrowser key={`${region}/${id}`} {...gridProps(products, id, { brands: true, cats: false, src: gridSrc.category(region, id), version: gridVersion(region) })} category={id} />
+        <PhoneBrowser key={`${region}/${id}`} {...gridProps(products, id, { brands: true, cats: false, src: gridSrc.category(region, id), version: gridVersion(region) })} category={id} midAd={<InlineAds only="ebay" pos="category-ebay" className="my-2" />} />
       </div>
       <CategoryGuideSection id={id} name={c.name} region={region} products={products} />
       {region === "au" && <CategoryGuides id={id} name={c.name} />}
-      <InlineAds />
+      <InlineAds only="amazon" pos="category-amazon" />
     </div>
   );
 }

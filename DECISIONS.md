@@ -2627,3 +2627,33 @@ the end of `globals.css` ("The phone's home page, tidied"); the hooks are `home-
 `home-deals`, `home-hot`, `home-cat-shelf`, `home-guides` and `sec-sub`.
 
 **Read:** phone bounce and store clickers per 100 on the home page, the week after release against the week before.
+
+## 2026-11-27: The eBay and Amazon ads move up the page, and the look follows the shared design standard (owner)
+
+**Owner, 2026-11-27:** "we got to make Compare Empire look less vibe coded … I don't see these eBay ads anywhere … We need the
+eBay ads. We need the Amazon banner ads. Like, it needs to be in a position, not at the very end of the page." A visitor's note on
+/phones had asked us to "hire a graphic designer". This reverses the 2026-11-13 placement of the one block near the foot of a page.
+
+**Ads (`InlineAds.tsx`).** The block is now up to two rows, each one partner's own: "Today on eBay" (live listings, delivered price,
+"More on eBay") and "Shop these on Amazon" (tagged links, never a price), ten tiles each, scrolling sideways with arrows from 768px,
+the partner's colour only on a 3px top edge and a small name mark on each tile, and the "Ad" label. Where (measured at 1440px /
+390px, first ad row before → after): the home page's eBay row after today's price drops and its Amazon row after the launches
+(5,196 → 1,603px / 2,861 → 1,059px); a product page's two rows under "Similar price range", above the specs (4,393 → 3,021px /
+7,245 → 4,603px); a category grid's eBay row after its first eight cards and its Amazon row under the grid (5,609 → 1,180px /
+10,068 → 1,815px); deals and hub pages keep both rows after their list. Unchanged: browser only, height reserved (one row 388px
+on a phone, 356px from 640px; two rows 716 / 668: measured equal, CLS 0), never beside a buy button, above the product's price, in
+the quick view, a pop-up or the phone dock; nothing reacts to typing. Clicks carry `kind: inline-<pos>` (home-ebay, home-amazon,
+product, category-ebay, category-amazon, page) so each position can be read. The customids are the rails file's, unchanged; no new
+eBay API call (the tiles are the daily job's own matches). The display-ad test planned from 2 Dec is untouched (no AdSense code here).
+
+**Look (shared standard, /mnt/project-files/design-system).** The home hero is a masthead: a small-caps kicker, the headline
+left-aligned from 640px, no pill above it (the creators link and the Christmas line sit under the search as plain links), the
+country chips square-cornered on one line; and from 1024px one picture, `HeroBoard`: today's real store prices for the deal
+whose stores disagree most (3+ in stock, under 35% apart, so a listing error never headlines), drawn as bars, cheapest first.
+Product cards: one badge per photo (the saving, else "Lowest price yet"), "N stores compared" and "eBay $x" in muted ink instead
+of a blue and a green line, a photo plate inset in the card, an outline icon instead of "No image". Radii 10px for surfaces and
+6px for small marks; hover firms a border and nothing lifts; a hairline over each home section. No URL, title, h1 or JSON-LD
+changed. Tests: `tests/inline-ads.test.ts` (positions), `tests/hero-board.test.ts`.
+
+**Read:** eBay and Amazon clicks a day by `kind` from the release after this, against 19-26 Nov (block at the foot); store
+buy clicks per visitor must not fall (the rows sit after the prices on every page that has them).

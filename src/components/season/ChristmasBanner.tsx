@@ -8,7 +8,7 @@ import { CHRISTMAS_FESTIVE_LAYER } from "@/lib/season";
 export function ChristmasBanner({ href }: { href: string }) {
   if (!CHRISTMAS_FESTIVE_LAYER) return null;
   return (
-    <div className="mb-4 sm:mb-5">
+    <div>
       <Link prefetch={false} href={href} className="xmas-banner">
         <svg className="xmas-banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <rect x="3" y="8" width="18" height="4" rx="1" />

@@ -85,7 +85,10 @@ function loadList(src: string): Promise<GridItem[]> {
 
 type Params = Pick<URLSearchParams, "get" | "toString">;
 const NO_PARAMS: Params = new URLSearchParams();
-type Props = GridProps & { fixedBrand?: string; category?: string; showCategory?: boolean };
+type Props = GridProps & { fixedBrand?: string; category?: string; showCategory?: boolean; midAd?: React.ReactNode };
+
+/** The page's ad row (midAd) goes after this many cards. */
+export const MID_AD_AFTER = 8;
 
 /**
  * The product grid with its filters. A prerendered page can't know its query string, so
@@ -108,7 +111,7 @@ function WithParams(props: Props) {
   return <Browser {...props} params={params} />;
 }
 
-function Browser({ initial, total, options, src, fixedBrand, category = "phones", showCategory, params, fallback }: Props & { params: Params; fallback?: boolean }) {
+function Browser({ initial, total, options, src, fixedBrand, category = "phones", showCategory, midAd, params, fallback }: Props & { params: Params; fallback?: boolean }) {
   const router = useRouter();
   const pathname = usePathname();
   const [panel, setPanel] = useState(false);
@@ -300,7 +303,11 @@ function Browser({ initial, total, options, src, fixedBrand, category = "phones"
     ) : results.length ? (
       <>
         <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
-          {results.slice(0, limit).map((p, i) => <PhoneCard key={p.href} p={p} priority={i < 4} showCategory={showCategory} />)}
+          {results.slice(0, limit).flatMap((p, i) => {
+            const card = <PhoneCard key={p.href} p={p} priority={i < 4} showCategory={showCategory} />;
+            // The page's eBay row after the first eight cards (two rows on a desktop, four on a phone), when more follow.
+            return midAd && i === MID_AD_AFTER - 1 && results.length > MID_AD_AFTER ? [card, <div key="mid-ad" className="col-span-full">{midAd}</div>] : [card];
+          })}
         </div>
         {(count ?? 0) > limit && (
           <div className="mt-8 text-center">
