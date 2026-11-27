@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:59:35.636Z",
+ "scrapedAt": "2026-11-27T02:59:06.490Z",
  "offers": [
   {
    "retailer": "uk-stuartwestmoreland",
@@ -17,8 +17,7 @@
    "sku": "A1302",
    "title": "Aarke Filter Coffee Machine – Stainless Steel, 1.25L A1302",
    "url": "https://www.stuartwestmoreland.co.uk/products/aarke-a1302-filter-coffee-machine-steel",
-   "price": 249,
-   "wasPrice": 299,
+   "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/A1302.jpg?v=1791226154",
    "inStock": false,
    "brand": "Aarke",
@@ -64,7 +63,8 @@
    "sku": "EC9155GR",
    "title": "Delonghi La Specialista Arte Assisted Espresso Coffee Machine in Green EC9155.GR",
    "url": "https://www.stuartwestmoreland.co.uk/products/delonghi-la-specialista-arte-bean-to-cup-espresso-coffee-machine-green-ec9155gr",
-   "price": 699,
+   "price": 349,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/137bdf8f-EC9155GR-1.jpg?v=1755271018",
    "inStock": true,
    "brand": "Delonghi",
@@ -193,7 +193,7 @@
    "sku": "EN267BAE",
    "title": "Delonghi Nespresso Citiz Espresso Coffee Machine with Milk Frother in Black - EN267BAE",
    "url": "https://www.stuartwestmoreland.co.uk/products/delonghi-nespresso-citiz-capsule-espresso-coffee-machine-milk-frother-black-en267bae",
-   "price": 197.9,
+   "price": 198.95,
    "wasPrice": 225,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/22f92a03-EN267BAE-1.jpg?v=1755271074",
    "inStock": true,
@@ -326,7 +326,7 @@
    "price": 116.95,
    "wasPrice": 129,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/85190_COFFEEPODMACHINE-1.jpg?v=1768296162",
-   "inStock": true,
+   "inStock": false,
    "brand": "Dualit",
    "mpn": "85190_COFFEEPODMACHINE"
   },
@@ -381,8 +381,7 @@
    "sku": "ES701UK",
    "title": "Ninja Luxe Café Pro Series Espresso Machine – Black and Stainless Steel – ES701UK",
    "url": "https://www.stuartwestmoreland.co.uk/products/ninja-luxe-cafe-pro-series-espresso-machine-black-stainless-steel-es701uk",
-   "price": 699,
-   "wasPrice": 729,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/ES701UK-1.jpg?v=1778665614",
    "inStock": false,
    "brand": "Ninja",
@@ -448,10 +447,9 @@
    "sku": "ECF02PBUK",
    "title": "Smeg ECF02PBUK Espresso Coffee Machine – Pastel Blue",
    "url": "https://www.stuartwestmoreland.co.uk/products/smeg-ecf02pbuk-espresso-coffee-machine-pastel-blue",
-   "price": 239,
-   "wasPrice": 399.95,
+   "price": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/0971/0177/5189/files/85a9312d-ECF02PBUK.jpg?v=1755270983",
-   "inStock": true,
+   "inStock": false,
    "brand": "Smeg",
    "mpn": "ECF02PBUK"
   }

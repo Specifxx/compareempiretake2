@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T03:02:27.282Z",
+ "scrapedAt": "2026-11-27T03:01:55.615Z",
  "offers": [
   {
    "retailer": "ca-coffeeaddicts",
@@ -97,7 +97,7 @@
    "price": 449.99,
    "wasPrice": 649.99,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/Bambinoplusolive.jpg?v=1746151144",
-   "inStock": true,
+   "inStock": false,
    "brand": "Breville",
    "mpn": "BES500OLT1BNA1"
   },
@@ -229,7 +229,7 @@
    "price": 1199.99,
    "wasPrice": 1599.99,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/BrevilleBaristaTouch.jpg?v=1746151134",
-   "inStock": true,
+   "inStock": false,
    "brand": "Breville",
    "mpn": "BES880BSS1BCA1"
   },
@@ -421,7 +421,7 @@
    "price": 2199.99,
    "wasPrice": 2999.99,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/oraclejetblue.jpg?v=1746150858",
-   "inStock": true,
+   "inStock": false,
    "brand": "Breville",
    "mpn": "BES985DBL1BNA1"
   },
@@ -1321,7 +1321,7 @@
    "url": "https://coffeeaddicts.ca/products/profitec-move-espresso-machine",
    "price": 3149,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/profitecmove_d230fc40-a103-49ea-b6e3-5fcbc3f8943d.jpg?v=1774713015",
-   "inStock": true,
+   "inStock": false,
    "brand": "Profitec"
   },
   {
@@ -1439,7 +1439,7 @@
    "url": "https://coffeeaddicts.ca/products/rancilio-silvia?variant=42427493908732",
    "price": 1545,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/products/RancilioSilvia.jpg?v=1746152148",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rancilio",
    "mpn": "RAN-SILVIA-19"
   },
@@ -1502,7 +1502,8 @@
    "sku": "AppartTCA-BK+BK",
    "title": "Rocket Appartamento TCA Espresso Machine Black & Black",
    "url": "https://coffeeaddicts.ca/products/rocket-appartamento-tca-espresso-machine?variant=45224317911292",
-   "price": 3450,
+   "price": 2932.5,
+   "wasPrice": 3450,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/RocketAppartamentoTCAblack_black.jpg?v=1746151120",
    "inStock": true,
    "brand": "Rocket Espresso"
@@ -1512,7 +1513,8 @@
    "sku": "AppartTCA-BK+COP",
    "title": "Rocket Appartamento TCA Espresso Machine Black & Copper",
    "url": "https://coffeeaddicts.ca/products/rocket-appartamento-tca-espresso-machine?variant=45224317944060",
-   "price": 3450,
+   "price": 2932.5,
+   "wasPrice": 3450,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/RocketAppartamentoTCAblack_copper.jpg?v=1746151120",
    "inStock": true,
    "brand": "Rocket Espresso"
@@ -1522,7 +1524,8 @@
    "sku": "AppartTCA-SS+BK",
    "title": "Rocket Appartamento TCA Espresso Machine Stainless Steel & Black",
    "url": "https://coffeeaddicts.ca/products/rocket-appartamento-tca-espresso-machine?variant=45224317878524",
-   "price": 3350,
+   "price": 2847.5,
+   "wasPrice": 3350,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/RocketAppartamentoTCASS_black.jpg?v=1746151120",
    "inStock": false,
    "brand": "Rocket Espresso"
@@ -1532,7 +1535,8 @@
    "sku": "AppartTCA-SS+COP",
    "title": "Rocket Appartamento TCA Espresso Machine Stainless Steel & Copper",
    "url": "https://coffeeaddicts.ca/products/rocket-appartamento-tca-espresso-machine?variant=45224107147516",
-   "price": 3350,
+   "price": 2847.5,
+   "wasPrice": 3350,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/RocketAppartamentoTCASS_copper.jpg?v=1746151120",
    "inStock": false,
    "brand": "Rocket Espresso"
@@ -1542,7 +1546,8 @@
    "sku": "AppartTCA-SS+WH",
    "title": "Rocket Appartamento TCA Espresso Machine Stainless Steel & White",
    "url": "https://coffeeaddicts.ca/products/rocket-appartamento-tca-espresso-machine?variant=45224107114748",
-   "price": 3350,
+   "price": 2847.5,
+   "wasPrice": 3350,
    "image": "https://cdn.shopify.com/s/files/1/2275/9941/files/RocketAppartamentoTCASS_white.jpg?v=1746151119",
    "inStock": false,
    "brand": "Rocket Espresso"

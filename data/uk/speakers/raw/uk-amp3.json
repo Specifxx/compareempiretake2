@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:40:56.278Z",
+ "scrapedAt": "2026-11-27T02:40:41.017Z",
  "offers": [
   {
    "retailer": "uk-amp3",
@@ -122,7 +122,7 @@
    "url": "https://amp3.co.uk/products/fiio-sp3-bt-high-fidelity-active-desktop-speakers-with-bluetooth?variant=57117196157315",
    "price": 339,
    "image": "https://cdn.shopify.com/s/files/1/0960/3199/8339/files/img_proxy_fcdc95bb-c52c-4611-a296-9ef2a0619699.jpg?v=1767200253",
-   "inStock": true,
+   "inStock": false,
    "brand": "FiiO",
    "mpn": "FIIOSP3BT-BLACK"
   },
@@ -133,7 +133,7 @@
    "url": "https://amp3.co.uk/products/fiio-sp3-bt-high-fidelity-active-desktop-speakers-with-bluetooth?variant=57117196190083",
    "price": 339,
    "image": "https://cdn.shopify.com/s/files/1/0960/3199/8339/files/img_proxy_6d5e3184-0b34-4e9e-8d28-67c6cbfc4933.jpg?v=1767200253",
-   "inStock": true,
+   "inStock": false,
    "brand": "FiiO",
    "mpn": "FIIOSP3BT-WHITE"
   },
@@ -164,7 +164,8 @@
    "sku": "FIIOSP5-BLACK",
    "title": "FiiO SP5 High-Fidelity Active Desktop Speakers BLACK",
    "url": "https://amp3.co.uk/products/fiio-sp5-high-fidelity-active-desktop-speakers?variant=57117531636099",
-   "price": 709,
+   "price": 566.99,
+   "wasPrice": 709,
    "image": "https://cdn.shopify.com/s/files/1/0960/3199/8339/files/img_proxy_a0120e85-a295-477b-b453-dc577acfe3cb.jpg?v=1767221923",
    "inStock": true,
    "brand": "FiiO",
@@ -175,7 +176,8 @@
    "sku": "FIIOSP5-WHITE",
    "title": "FiiO SP5 High-Fidelity Active Desktop Speakers WHITE",
    "url": "https://amp3.co.uk/products/fiio-sp5-high-fidelity-active-desktop-speakers?variant=57117531668867",
-   "price": 709,
+   "price": 566.99,
+   "wasPrice": 709,
    "image": "https://cdn.shopify.com/s/files/1/0960/3199/8339/files/img_proxy_73a157d4-096f-4f42-8432-8eabf0327f34.jpg?v=1767221922",
    "inStock": true,
    "brand": "FiiO",

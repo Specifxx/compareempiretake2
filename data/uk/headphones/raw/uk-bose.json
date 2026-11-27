@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:44:16.324Z",
+ "scrapedAt": "2026-11-27T02:44:11.729Z",
  "offers": [
   {
    "retailer": "uk-bose",
@@ -43,7 +43,7 @@
    "url": "https://www.bose.co.uk/p/earbuds/bose-quietcomfort-headphones/QCEARB24-HEADPHONEIN.html?dwvar_QCEARB24-HEADPHONEIN_color=BLACK",
    "price": 99.95,
    "image": "https://assets.bosecreative.com/transform/4c800e67-2502-4cd9-ba55-2555de393b8a/SF_QCEB25_BLACK_PDP_ECOMM-GALLERY_IMG-1",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-bose",
@@ -288,7 +288,7 @@
    "mpn": "QCUE2-HEADPHONEIN-DPPLM-WW",
    "brand": "Bose",
    "title": "Bose QuietComfort Ultra Earbuds (2nd Gen) - Deep Plum",
-   "url": "https://www.bose.co.uk/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html",
+   "url": "https://www.bose.co.uk/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html?dwvar_QCUE2-HEADPHONEIN_color=DEEP%20PLUM",
    "price": 199.95,
    "image": "https://assets.bosecreative.com/transform/bb7b1552-1001-446f-bfd5-f7e2c4ee31ee/QCUEII_DeepPlum_Ecomm-Gallery-1-1634x1224?format=avif&quality=95",
    "inStock": true
@@ -299,7 +299,7 @@
    "mpn": "QCUE2-HEADPHONEIN-DSGLD-WW",
    "brand": "Bose",
    "title": "Bose QuietComfort Ultra Earbuds (2nd Gen) - Desert Gold",
-   "url": "https://www.bose.co.uk/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html?dwvar_QCUE2-HEADPHONEIN_color=DESERT%20GOLD",
+   "url": "https://www.bose.co.uk/p/earbuds/bose-quietcomfort-ultra-earbuds-2nd-gen/QCUE2-HEADPHONEIN.html",
    "price": 199.95,
    "image": "https://assets.bosecreative.com/transform/3bc18454-9326-4878-b4f4-c090f3fe0157/QCUEBIILE26-DesertGold_SF_PDP_E-Comm-Gallery_1_1632x1224?format=avif&quality=95",
    "inStock": true
@@ -328,52 +328,24 @@
   },
   {
    "retailer": "uk-bose",
-   "sku": "880066-0100",
-   "mpn": "880066-0100",
+   "sku": "QCUH-HEADPHONEARN-BLK-WW",
+   "mpn": "QCUH-HEADPHONEARN-BLK-WW",
    "brand": "Bose",
    "title": "Bose QuietComfort Ultra Headphones - Black",
    "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones/QCUH-HEADPHONEARN.html?dwvar_QCUH-HEADPHONEARN_color=BLACK",
    "price": 449.95,
-   "inStock": true
-  },
-  {
-   "retailer": "uk-bose",
-   "sku": "880066-1500",
-   "mpn": "880066-1500",
-   "brand": "Bose",
-   "title": "Bose QuietComfort Ultra Headphones - Deep Plum",
-   "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones/QCUH-HEADPHONEARN.html?dwvar_QCUH-HEADPHONEARN_color=DEEP%20PLUM",
-   "price": 449.95,
+   "image": "https://assets.bosecreative.com/transform/e78bbadf-cbee-443c-aeda-17b81dc71ec8/SF_PDP_GALLERY_BLACK-1?quality=90",
    "inStock": false
   },
   {
    "retailer": "uk-bose",
-   "sku": "880066-1200",
-   "mpn": "880066-1200",
-   "brand": "Bose",
-   "title": "Bose QuietComfort Ultra Headphones - Lunar Blue",
-   "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones/QCUH-HEADPHONEARN.html?dwvar_QCUH-HEADPHONEARN_color=LUNAR%20BLUE",
-   "price": 449.95,
-   "inStock": false
-  },
-  {
-   "retailer": "uk-bose",
-   "sku": "880066-0300",
-   "mpn": "880066-0300",
-   "brand": "Bose",
-   "title": "Bose QuietComfort Ultra Headphones - Sandstone",
-   "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones/QCUH-HEADPHONEARN.html?dwvar_QCUH-HEADPHONEARN_color=SANDSTONE",
-   "price": 449.95,
-   "inStock": false
-  },
-  {
-   "retailer": "uk-bose",
-   "sku": "880066-0200",
-   "mpn": "880066-0200",
+   "sku": "QCUH-HEADPHONEARN-WHTSM-WW",
+   "mpn": "QCUH-HEADPHONEARN-WHTSM-WW",
    "brand": "Bose",
    "title": "Bose QuietComfort Ultra Headphones - White Smoke",
-   "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones/QCUH-HEADPHONEARN.html?dwvar_QCUH-HEADPHONEARN_color=WHITE%20SMOKE",
+   "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones/QCUH-HEADPHONEARN.html",
    "price": 449.95,
+   "image": "https://assets.bosecreative.com/transform/13204ad8-30eb-4305-aa84-f6c74e3f2228/QCUH_SF_PDP_Gallery_WhiteSmoke_x2_1?quality=90",
    "inStock": true
   },
   {
@@ -393,7 +365,7 @@
    "mpn": "QCUH2-HEADPHONEARN-CHRCHO-WW",
    "brand": "Bose",
    "title": "Bose QuietComfort Ultra Headphones (2nd Gen) - Cherry Chocolate",
-   "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html",
+   "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html?dwvar_QCUH2-HEADPHONEARN_color=CHERRY%20CHOCOLATE",
    "price": 299.95,
    "image": "https://assets.bosecreative.com/transform/69de3d90-3cc5-4f7c-ac71-d03a030e4154/FY27_QCUHIILE27-ChryChoc_CREA-1174_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95",
    "inStock": true
@@ -437,7 +409,7 @@
    "mpn": "QCUH2-HEADPHONEARN-OLVGRN-WW",
    "brand": "Bose",
    "title": "Bose QuietComfort Ultra Headphones (2nd Gen) - Olive Green",
-   "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html?dwvar_QCUH2-HEADPHONEARN_color=OLIVE%20GREEN",
+   "url": "https://www.bose.co.uk/p/headphones/bose-quietcomfort-ultra-headphones-2nd-gen/QCUH2-HEADPHONEARN.html",
    "price": 299.95,
    "image": "https://assets.bosecreative.com/transform/739c40d2-12f4-41bb-932e-4c47a39eaeb4/FY27_QCUHIILE27-OlvGrn_CREA-1174_PDP_EcomGal1_Silo_1500x1120?format=avif&quality=95",
    "inStock": true
@@ -470,7 +442,7 @@
    "mpn": "SPORTOPN26-HEADPHONEOPN-CBLU-WW",
    "brand": "Bose",
    "title": "Bose Sport Open Earbuds - Coastal Blue",
-   "url": "https://www.bose.co.uk/p/earbuds/bose-open-earbuds/SPORTOPN26-HEADPHONEOPN.html?dwvar_SPORTOPN26-HEADPHONEOPN_color=COASTAL%20BLUE",
+   "url": "https://www.bose.co.uk/p/earbuds/bose-open-earbuds/SPORTOPN26-HEADPHONEOPN.html",
    "price": 149.95,
    "image": "https://assets.bosecreative.com/transform/7db9e01d-9412-4dd1-96e5-56f53905c1c8/FY27_OELE27-CoastBlu_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
    "inStock": true
@@ -481,7 +453,7 @@
    "mpn": "SPORTOPN26-HEADPHONEOPN-EUGRN-WW",
    "brand": "Bose",
    "title": "Bose Sport Open Earbuds - Eucalyptus Green",
-   "url": "https://www.bose.co.uk/p/earbuds/bose-open-earbuds/SPORTOPN26-HEADPHONEOPN.html",
+   "url": "https://www.bose.co.uk/p/earbuds/bose-open-earbuds/SPORTOPN26-HEADPHONEOPN.html?dwvar_SPORTOPN26-HEADPHONEOPN_color=EUCALYPTUS%20GREEN",
    "price": 149.95,
    "image": "https://assets.bosecreative.com/transform/03a2b5cd-f5ff-42e8-a757-957205e928b9/FY27_OELE27-EucaGrn_PDP_EcomGal1_Silo_D_1500x1120?format=avif&quality=95",
    "inStock": true
@@ -515,7 +487,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Black",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=BLACK",
-   "price": 299.95,
+   "price": 149.95,
    "inStock": true
   },
   {
@@ -545,7 +517,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Deep Plum",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=DEEP%20PLUM",
-   "price": 299.95,
+   "price": 149.95,
    "inStock": true
   },
   {
@@ -555,7 +527,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Desert Gold",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=DESERT%20GOLD",
-   "price": 299.95,
+   "price": 149.95,
    "inStock": true
   },
   {
@@ -585,7 +557,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Gold Filigree",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=GOLD%20FILIGREE",
-   "price": 199.95,
+   "price": 149.95,
    "inStock": false
   },
   {
@@ -595,7 +567,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Ivory Mother Of Pearl",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=IVORY%20MOTHER%20OF%20PEARL",
-   "price": 199.95,
+   "price": 149.95,
    "inStock": false
   },
   {
@@ -605,7 +577,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Lunar Blue",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=LUNAR%20BLUE",
-   "price": 299.95,
+   "price": 149.95,
    "inStock": true
   },
   {
@@ -615,7 +587,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Midnight Violet",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=MIDNIGHT%20VIOLET",
-   "price": 299.95,
+   "price": 149.95,
    "inStock": true
   },
   {
@@ -635,7 +607,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Moonstone Blue",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=MOONSTONE%20BLUE",
-   "price": 299.95,
+   "price": 149.95,
    "inStock": true
   },
   {
@@ -645,7 +617,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - Rhodium Filigree",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=RHODIUM%20FILIGREE",
-   "price": 199.95,
+   "price": 149.95,
    "inStock": false
   },
   {
@@ -675,7 +647,7 @@
    "brand": "Bose",
    "title": "Bose Ultra Open Earbuds - White Smoke",
    "url": "https://www.bose.co.uk/p/earbuds/bose-ultra-open-earbuds/ULT-HEADPHONEOPN.html?dwvar_ULT-HEADPHONEOPN_color=WHITE%20SMOKE",
-   "price": 199.95,
+   "price": 149.95,
    "inStock": true
   },
   {

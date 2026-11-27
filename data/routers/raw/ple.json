@@ -1,6 +1,17 @@
 {
- "scrapedAt": "2026-11-26T02:22:55.594Z",
+ "scrapedAt": "2026-11-27T02:22:40.900Z",
  "offers": [
+  {
+   "retailer": "ple",
+   "sku": "689408",
+   "title": "ASUS ProArt PRT-BE5000 BE5000 Dual-Band WiFi 7 Router",
+   "brand": "ASUS",
+   "mpn": "PRT-BE5000",
+   "url": "https://www.ple.com.au/products/689408/asus-proart-prt-be5000-be5000-dual-band-wifi-7-router",
+   "price": 399,
+   "image": "https://plecom.imgix.net/iil-490723-689408.jpg?w=600&h=600",
+   "inStock": true
+  },
   {
    "retailer": "ple",
    "sku": "680461",
@@ -8,7 +19,7 @@
    "brand": "ASUS",
    "mpn": "GT-BE19000AI",
    "url": "https://www.ple.com.au/products/680461/asus-rog-rapture-gt-be19000ai-tri-band-wifi-7-ai-gaming-router",
-   "price": 1199,
+   "price": 949,
    "wasPrice": 1399,
    "image": "https://plecom.imgix.net/iil-452671-680461.jpg?w=600&h=600",
    "inStock": true
@@ -54,7 +65,8 @@
    "brand": "ASUS",
    "mpn": "GS-BE18000",
    "url": "https://www.ple.com.au/products/676741/asus-rog-strix-gs-be18000-tri-band-wifi-7-router",
-   "price": 799,
+   "price": 499,
+   "wasPrice": 799,
    "image": "https://plecom.imgix.net/iil-436728-676741.jpg?w=600&h=600",
    "inStock": true
   },
@@ -65,7 +77,8 @@
    "brand": "ASUS",
    "mpn": "RT-BE3600HP",
    "url": "https://www.ple.com.au/products/685954/asus-rt-be3600hp-dual-band-wi-fi-7-aimesh-extendable-router",
-   "price": 269,
+   "price": 199,
+   "wasPrice": 269,
    "image": "https://plecom.imgix.net/iil-474554-685954.jpg?w=600&h=600",
    "inStock": true
   },
@@ -76,7 +89,8 @@
    "brand": "ASUS",
    "mpn": "RT-BE50",
    "url": "https://www.ple.com.au/products/685953/asus-rt-be50-dual-band-wi-fi-7-router",
-   "price": 179,
+   "price": 129,
+   "wasPrice": 179,
    "image": "https://plecom.imgix.net/iil-474548-685953.jpg?w=600&h=600",
    "inStock": true
   },
@@ -87,7 +101,8 @@
    "brand": "ASUS",
    "mpn": "RT-BE86U",
    "url": "https://www.ple.com.au/products/672718/asus-rt-be86u-dual-band-wifi-7-80211be-extendable-router",
-   "price": 549,
+   "price": 349,
+   "wasPrice": 549,
    "image": "https://plecom.imgix.net/iil-415048-672718.jpg?w=600&h=600",
    "inStock": true
   },
@@ -98,7 +113,8 @@
    "brand": "ASUS",
    "mpn": "RT-BE88U",
    "url": "https://www.ple.com.au/products/667790/asus-rt-be88u-dual-band-wi-fi-7-ai-mesh-router",
-   "price": 649,
+   "price": 549,
+   "wasPrice": 649,
    "image": "https://plecom.imgix.net/iil-398299-667790.jpg?w=600&h=600",
    "inStock": true
   },
@@ -120,7 +136,8 @@
    "brand": "ASUS",
    "mpn": "TUF-BE9400",
    "url": "https://www.ple.com.au/products/679358/asus-tuf-gaming-be9400-tri-band-wifi-7-gaming-router",
-   "price": 599,
+   "price": 349,
+   "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-447863-679358.jpg?w=600&h=600",
    "inStock": true
   },
@@ -131,7 +148,8 @@
    "brand": "ASUS",
    "mpn": "TUF-BE6500",
    "url": "https://www.ple.com.au/products/667843/asus-tuf-gaming-tuf-be6500-dual-band-wifi-7-80211be-gaming-router",
-   "price": 499,
+   "price": 219,
+   "wasPrice": 499,
    "image": "https://plecom.imgix.net/iil-402795-667843.jpg?w=600&h=600",
    "inStock": true
   },
@@ -142,8 +160,21 @@
    "brand": "ASUS",
    "mpn": "TUF-BE3600",
    "url": "https://www.ple.com.au/products/675265/asus-tuf-be3600-dual-band-wifi-7-gaming-router",
-   "price": 279,
+   "price": 169,
+   "wasPrice": 279,
    "image": "https://plecom.imgix.net/iil-428791-675265.jpg?w=600&h=600",
+   "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "677754",
+   "title": "ASUS ZenWiFi BD4 Dual-band WiFi 7 AiMesh Extendable Router",
+   "brand": "ASUS",
+   "mpn": "BD4 OUTDOOR (W-1-PK)",
+   "url": "https://www.ple.com.au/products/677754/asus-zenwifi-bd4-dual-band-wifi-7-aimesh-extendable-router",
+   "price": 149,
+   "wasPrice": 299,
+   "image": "https://plecom.imgix.net/iil-440449-677754.jpg?w=600&h=600",
    "inStock": false
   },
   {
@@ -153,9 +184,43 @@
    "brand": "ASUS",
    "mpn": "BT10(W-1-PK)",
    "url": "https://www.ple.com.au/products/676827/asus-zenwifi-bt10-tri-band-wifi-7-smart-aimesh-extendable-router",
-   "price": 799,
+   "price": 589,
+   "wasPrice": 799,
    "image": "https://plecom.imgix.net/iil-435261-676827.jpg?w=600&h=600",
    "inStock": false
+  },
+  {
+   "retailer": "ple",
+   "sku": "689410",
+   "title": "ASUS ZenWiFi BT8 BE14000 Tri-Band WiFi 7 Mesh System (1 Pack)",
+   "brand": "ASUS",
+   "mpn": "ZENWIFI-BT8-1PK",
+   "url": "https://www.ple.com.au/products/689410/asus-zenwifi-bt8-be14000-tri-band-wifi-7-mesh-system-1-pack",
+   "price": 544,
+   "image": "https://plecom.imgix.net/iil-490734-689410.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "689411",
+   "title": "ASUS ZenWiFi BT8 BE14000 Tri-Band WiFi 7 Mesh System (2 Pack)",
+   "brand": "ASUS",
+   "mpn": "ZENWIFI-BT8-2PK",
+   "url": "https://www.ple.com.au/products/689411/asus-zenwifi-bt8-be14000-tri-band-wifi-7-mesh-system-2-pack",
+   "price": 999,
+   "image": "https://plecom.imgix.net/iil-490737-689411.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "689412",
+   "title": "ASUS ZenWiFi BT8 BE14000 Tri-Band WiFi 7 Mesh System (3 Pack)",
+   "brand": "ASUS",
+   "mpn": "ZENWIFI-BT8-3PK",
+   "url": "https://www.ple.com.au/products/689412/asus-zenwifi-bt8-be14000-tri-band-wifi-7-mesh-system-3-pack",
+   "price": 1499,
+   "image": "https://plecom.imgix.net/iil-490951-689412.jpg?w=600&h=600",
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -164,7 +229,7 @@
    "brand": "ASUS",
    "mpn": "ZENWIFI-BD4-(B-3-pk)",
    "url": "https://www.ple.com.au/products/680915/asus-zenwifi-bd4-b-3-pk-dual-band-wifi-7-aimesh-extendable-router",
-   "price": 639,
+   "price": 379,
    "wasPrice": 679,
    "image": "https://plecom.imgix.net/iil-455308-680915.jpg?w=600&h=600",
    "inStock": true
@@ -400,7 +465,7 @@
    "brand": "TP-Link",
    "mpn": "Archer AX55",
    "url": "https://www.ple.com.au/products/647794/tp-link-archer-ax55-ax3000-dual-band-wi-fi-6-router",
-   "price": 159,
+   "price": 119,
    "wasPrice": 249,
    "image": "https://plecom.imgix.net/iil-263569-647794.jpg?w=600&h=600",
    "inStock": true
@@ -509,7 +574,7 @@
    "url": "https://www.ple.com.au/products/689245/tp-link-archer-bn800-bn19000-tri-band-wi-fi-8-router",
    "price": 1499,
    "image": "https://plecom.imgix.net/iil-490413-689245.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1038,7 +1103,7 @@
    "brand": "TP-Link",
    "mpn": "TL-WR3002X",
    "url": "https://www.ple.com.au/products/674343/tp-link-tl-wr3002x-ax3000-gigabit-wi-fi-6-portable-travel-router",
-   "price": 129,
+   "price": 109,
    "wasPrice": 179,
    "image": "https://plecom.imgix.net/iil-423966-674343.jpg?w=600&h=600",
    "inStock": true
@@ -1144,7 +1209,7 @@
    "brand": "Ubiquiti",
    "mpn": "UCG-Ultra",
    "url": "https://www.ple.com.au/products/665881/ubiquiti-unifi-cloud-gateway-ultra-router",
-   "price": 209,
+   "price": 157,
    "wasPrice": 222,
    "image": "https://plecom.imgix.net/iil-380693-665881.jpg?w=600&h=600",
    "inStock": true
@@ -1180,7 +1245,7 @@
    "brand": "Ubiquiti",
    "mpn": "UDR7",
    "url": "https://www.ple.com.au/products/674101/ubiquiti-unifi-dream-router-7",
-   "price": 589,
+   "price": 442,
    "wasPrice": 629,
    "image": "https://plecom.imgix.net/iil-422682-674101.jpg?w=600&h=600",
    "inStock": true

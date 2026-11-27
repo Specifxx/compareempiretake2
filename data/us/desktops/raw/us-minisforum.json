@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:37:22.005Z",
+ "scrapedAt": "2026-11-27T02:37:15.710Z",
  "offers": [
   {
    "retailer": "us-minisforum",
@@ -747,7 +747,7 @@
    "price": 1159,
    "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0401/1032/5921/files/Compressed_MS-A2.png?v=1783865715",
-   "inStock": true,
+   "inStock": false,
    "brand": "MINISFORUM",
    "mpn": "MS-A2-894531US"
   },
@@ -999,7 +999,7 @@
    "price": 529,
    "wasPrice": 759,
    "image": "https://cdn.shopify.com/s/files/1/0401/1032/5921/files/Compressed_UM760_Plus.png?v=1784442706",
-   "inStock": true,
+   "inStock": false,
    "brand": "MINISFORUM",
    "mpn": "UM760Plus15US"
   },
@@ -1087,7 +1087,7 @@
   {
    "retailer": "us-minisforum",
    "sku": "47368697479413",
-   "title": "MINISFORUM UM790 Pro AMD Ryzen™ 9 7940HS 16GB RAM+512GB SSD US",
+   "title": "MINISFORUM UM790 Pro AMD Ryzen™ 9 7940HS-UM790 PRO 16GB RAM+512GB SSD US",
    "url": "https://store.minisforum.com/products/minisforum-um790-pro-mini-pc?variant=47368697479413",
    "price": 671,
    "wasPrice": 839,
@@ -1099,7 +1099,7 @@
   {
    "retailer": "us-minisforum",
    "sku": "46713707888885",
-   "title": "MINISFORUM UM790 Pro AMD Ryzen™ 9 7940HS 32GB RAM+1TB SSD US",
+   "title": "MINISFORUM UM790 Pro AMD Ryzen™ 9 7940HS-UM790 PRO 32GB RAM+1TB SSD US",
    "url": "https://store.minisforum.com/products/minisforum-um790-pro-mini-pc?variant=46713707888885",
    "price": 879,
    "wasPrice": 1099,
@@ -1111,7 +1111,7 @@
   {
    "retailer": "us-minisforum",
    "sku": "46849737851125",
-   "title": "MINISFORUM UM790 Pro AMD Ryzen™ 9 7940HS 32GB RAM+512GB SSD US",
+   "title": "MINISFORUM UM790 Pro AMD Ryzen™ 9 7940HS-UM790 PRO 32GB RAM+512GB SSD US",
    "url": "https://store.minisforum.com/products/minisforum-um790-pro-mini-pc?variant=46849737851125",
    "price": 815,
    "wasPrice": 1019,
@@ -1123,7 +1123,7 @@
   {
    "retailer": "us-minisforum",
    "sku": "46713707921653",
-   "title": "MINISFORUM UM790 Pro AMD Ryzen™ 9 7940HS 64GB RAM+1TB SSD US",
+   "title": "MINISFORUM UM790 Pro AMD Ryzen™ 9 7940HS-UM790 PRO 64GB RAM+1TB SSD US",
    "url": "https://store.minisforum.com/products/minisforum-um790-pro-mini-pc?variant=46713707921653",
    "price": 1223,
    "wasPrice": 1529,
@@ -1191,6 +1191,17 @@
    "inStock": true,
    "brand": "MINISFORUM",
    "mpn": "UM880Plus31US"
+  },
+  {
+   "retailer": "us-minisforum",
+   "sku": "68575194579189",
+   "title": "MINISFORUM UM890 Pro AMD Ryzen™ 7 8845HS 16GB RAM+512 SSD US",
+   "url": "https://store.minisforum.com/products/minisforum-um890pro-mini-pc?variant=68575194579189",
+   "price": 599,
+   "image": "https://cdn.shopify.com/s/files/1/0401/1032/5921/files/Compressed_UM890_Pro.png?v=1783865886",
+   "inStock": false,
+   "brand": "MINISFORUM",
+   "mpn": "UM880Pro15US"
   },
   {
    "retailer": "us-minisforum",

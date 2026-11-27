@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T03:00:11.270Z",
+ "scrapedAt": "2026-11-27T02:59:38.646Z",
  "offers": [
   {
    "retailer": "uk-toybarnhaus",
@@ -383,7 +383,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-disney-advent-calendar-2026-43298",
    "price": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43298_boxprod_v29.png?v=1783679818",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "43298"
   },
@@ -417,7 +417,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-disney-moana-village-house-boat-43282",
    "price": 17.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43282_boxprod_v29.png?v=1787485726",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "43282"
   },
@@ -450,7 +450,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-disney-winnie-the-pooh-43300",
    "price": 139.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43300_boxprod_v29_sha.png?v=1770048152",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "43300"
   },
@@ -597,7 +597,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-friends-advent-calendar-2026-42698",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/42698_boxprod_v29.png?v=1783679265",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "42698"
   },
@@ -676,7 +676,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-harry-potter-cornish-pixie-building-toy-76461",
    "price": 24.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76461_boxprod_v29_sha.png?v=1765538721",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76461"
   },
@@ -860,6 +860,17 @@
   },
   {
    "retailer": "uk-toybarnhaus",
+   "sku": "LEG11376",
+   "title": "LEGO ICONS: Ford Model T (11376)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-icons-ford-model-t-11376",
+   "price": 119.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/11376_boxprod_v29_sha_aea71b7e-1287-41bb-951b-6d9d8448d600.png?v=1771243065",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "11376"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
    "sku": "LEG11382",
    "title": "LEGO Icons: Hubble Space Telescope (11382)",
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-icons-hubble-space-telescope-11382",
@@ -915,6 +926,28 @@
   },
   {
    "retailer": "uk-toybarnhaus",
+   "sku": "LEG10353",
+   "title": "LEGO ICONS: Williams Racing FW14B & Nigel Mansell (10353)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-icons-williams-racing-fw14b-nigel-mansell-10353",
+   "price": 69.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/10353_boxprod_v29.png?v=1739806992",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "10353"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "LEG21357",
+   "title": "LEGO Ideas | Disney Pixar Luxo Jr. (21357)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-ideas-ǀ-disney-pixar-luxo-jr-21357",
+   "price": 59.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/21357_boxprod_v39.png?v=1747318824",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21357"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
    "sku": "LEG21370",
    "title": "LEGO Ideas: E.T. the Extra-Terrestrial (21370)",
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-ideas-e-t-the-extra-terrestrial-21370",
@@ -923,6 +956,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "21370"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "LEG21366",
+   "title": "LEGO Ideas: Floating Sea Otters (21366)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-creator-floating-sea-otters-21366",
+   "price": 99.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/21366_boxprod_v29_sha_661fbff2-6d7b-4487-b914-be75364c0511.png?v=1771242936",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21366"
   },
   {
    "retailer": "uk-toybarnhaus",
@@ -1177,7 +1221,7 @@
    "price": 31.99,
    "wasPrice": 39.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/21594_boxprod_v29_sha.png?v=1778331333",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "21594"
   },
@@ -1554,7 +1598,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-speed-champions-ferrari-sf90-xx-stradale-sports-car-77254",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77254_boxprod_v29_sha.png?v=1765540633",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "77254"
   },
@@ -1609,7 +1653,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-speed-champions-time-machine-from-back-to-the-future-77256",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77256_boxprod_v29_sha.png?v=1765381119",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "77256"
   },
@@ -1798,7 +1842,7 @@
    "price": 29.99,
    "wasPrice": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75422_boxprod_v29_sha_de644507-6252-4fc2-bdd4-3b1e7eb33cba.png?v=1770048768",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75422"
   },
@@ -1989,6 +2033,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "72051"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "LEG42210",
+   "title": "LEGO Technic | 2 Fast 2 Furious | Nissan Skyline GT-R (R34) Car (42210)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-technic-2-fast-2-furious-nissan-skyline-gt-r-r34-car-42210",
+   "price": 129.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/42210_boxprod_v39_sha.png?v=1747319254",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "42210"
   },
   {
    "retailer": "uk-toybarnhaus",
@@ -2203,7 +2258,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-wednesday-nevermore-academy-76788",
    "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76788_boxprod_v29.png?v=1786369464",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "76788"
   },

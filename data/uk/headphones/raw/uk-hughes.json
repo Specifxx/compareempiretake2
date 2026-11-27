@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:53:29.070Z",
+ "scrapedAt": "2026-11-27T02:51:33.346Z",
  "offers": [
   {
    "retailer": "uk-hughes",
@@ -113,6 +113,16 @@
   },
   {
    "retailer": "uk-hughes",
+   "sku": "w820nb-plus",
+   "brand": "Edifier",
+   "title": "Edifier W820NB-PLUS Wireless Noise Cancellation Over-Ear Headphones",
+   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/edifier/w820nb-plus",
+   "price": 49.97,
+   "image": "https://cdn6.hughes.co.uk/media/3e/fe/2c/1750694974/EDI-W820NB-PLUS-A.jpg",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
    "sku": "w820nb-plus-gr",
    "brand": "Edifier",
    "title": "Edifier W820NB-PLUS-GR Wireless Noise Cancellation Over-Ear Headphones",
@@ -179,16 +189,6 @@
    "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/jbl/tourpro3-ltt",
    "price": 199.97,
    "image": "https://cdn6.hughes.co.uk/media/df/55/31/1761673289/JBL-TOURPRO3-LTT-A.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "t770ncwht",
-   "brand": "Jbl",
-   "title": "JBL Tune 770NC Bluetooth Headphones - White",
-   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/jbl/t770ncwht",
-   "price": 79.97,
-   "image": "https://cdn6.hughes.co.uk/media/48/e4/b7/1695216664/JBL-T770NCWHTa.jpg",
    "inStock": false
   },
   {
@@ -307,9 +307,19 @@
    "brand": "Sonos",
    "title": "Sonos ACE Ultra Over Ear Wireless Headphones Bluetooth - Black",
    "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/sonos/aceulww1blk",
-   "price": 399,
+   "price": 359,
    "image": "https://cdn6.hughes.co.uk/media/e9/6d/6b/1788278630/SNS-ACE-ULTRA-BLK-1.jpg",
    "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "aceulww1",
+   "brand": "Sonos",
+   "title": "Sonos ACE Ultra Over Ear Wireless Headphones Bluetooth - White",
+   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/sonos/aceulww1",
+   "price": 359,
+   "image": "https://cdn6.hughes.co.uk/media/a1/73/0e/1788278799/SNS-ACE-ULTRA-WHT-1.jpg",
+   "inStock": false
   },
   {
    "retailer": "uk-hughes",
@@ -327,7 +337,7 @@
    "brand": "Sony",
    "title": "Sony WF-C510B Truly Wireless Headphones with Ambient Sound Mode - Black",
    "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/sony/wfc510b",
-   "price": 30,
+   "price": 29.99,
    "image": "https://cdn6.hughes.co.uk/media/e7/81/70/1725974630/SON-WFC510B-A.jpg",
    "inStock": false
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:33:49.790Z",
+ "scrapedAt": "2026-11-27T02:33:26.964Z",
  "offers": [
   {
    "retailer": "us-bloomaudio",
@@ -3036,7 +3036,7 @@
    "url": "https://bloomaudio.com/products/hisenior-mega7?variant=42003933528139",
    "price": 449,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/hisenior-mega7-thumb-two.webp?v=1767196102",
-   "inStock": true,
+   "inStock": false,
    "brand": "Hisenior",
    "mpn": "HS-MEGA7"
   },
@@ -3908,7 +3908,7 @@
    "price": 29.74,
    "wasPrice": 34.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/moondrop-position-thumb.webp?v=1792427276",
-   "inStock": true,
+   "inStock": false,
    "brand": "MoonDrop"
   },
   {
@@ -4006,7 +4006,8 @@
    "sku": "NA-AGIS",
    "title": "Noble Audio AGIS II | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/noble-audio-agis-2?variant=42365243883595",
-   "price": 1799,
+   "price": 1439,
+   "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-audio-agis-ii-thumb.webp?v=1741965724",
    "inStock": true,
    "brand": "Noble"
@@ -4086,7 +4087,8 @@
    "sku": "NA-AMADEUS",
    "title": "Noble Audio FoKus Amadeus | True Wireless Hi-Fi Earphones New",
    "url": "https://bloomaudio.com/products/noble-audio-fokus-amadeus?variant=41614326071371",
-   "price": 320,
+   "price": 256,
+   "wasPrice": 320,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-3-fokus-amadeus-thumb.webp?v=1749572229",
    "inStock": true,
    "brand": "Noble"
@@ -4096,7 +4098,8 @@
    "sku": "NA-APOLLO",
    "title": "Noble Audio FoKus Apollo | Wireless Hi-Fi Over-Ear Headphones New",
    "url": "https://bloomaudio.com/products/noble-audio-fokus-apollo-wireless?variant=41334165471307",
-   "price": 649,
+   "price": 489,
+   "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-audio-apollo-0-wht-thumb.jpg?v=1722960315",
    "inStock": true,
    "brand": "Noble"
@@ -4106,7 +4109,8 @@
    "sku": "NA-APOLLO-PRO-BUR",
    "title": "Noble Audio FoKus Apollo Pro | Wireless Hi-Fi Over-Ear Headphones Burgundy",
    "url": "https://bloomaudio.com/products/noble-audio-fokus-apollo-pro?variant=42408364310603",
-   "price": 699,
+   "price": 559,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-7-apollo-pro-thumb.webp?v=1778686434",
    "inStock": true,
    "brand": "Noble"
@@ -4116,7 +4120,8 @@
    "sku": "NA-APOLLO-PRO-PEA",
    "title": "Noble Audio FoKus Apollo Pro | Wireless Hi-Fi Over-Ear Headphones Peacock",
    "url": "https://bloomaudio.com/products/noble-audio-fokus-apollo-pro?variant=42408364343371",
-   "price": 699,
+   "price": 559,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-0-apollo-pro-thumb.webp?v=1778686434",
    "inStock": true,
    "brand": "Noble"
@@ -4136,7 +4141,8 @@
    "sku": "NA-FOKUS-ENCORE-BLK",
    "title": "Noble Audio FoKus Prestige Encore | True-Wireless Hi-Fi Earphones Black",
    "url": "https://bloomaudio.com/products/noble-audio-fokus-prestige-encore?variant=42250369794123",
-   "price": 699,
+   "price": 559,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-encore-blk-thumb-two.webp?v=1774535207",
    "inStock": true,
    "brand": "Noble"
@@ -4146,7 +4152,8 @@
    "sku": "NA-FOKUS-ENCORE-BL",
    "title": "Noble Audio FoKus Prestige Encore | True-Wireless Hi-Fi Earphones Blue",
    "url": "https://bloomaudio.com/products/noble-audio-fokus-prestige-encore?variant=41844281606219",
-   "price": 699,
+   "price": 559,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-3-fokus-prestige-encore-thumb.webp?v=1761234400",
    "inStock": true,
    "brand": "Noble"
@@ -4176,7 +4183,8 @@
    "sku": "NA-REX5-BLK",
    "title": "Noble Audio FoKus Rex5 | True Wireless Hi-Fi Earphones Black",
    "url": "https://bloomaudio.com/products/noble-audio-fokus-rex5?variant=41641966207051",
-   "price": 449,
+   "price": 359,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-1-rex5-blk-thumb.webp?v=1753795608",
    "inStock": true,
    "brand": "Noble",
@@ -4187,7 +4195,8 @@
    "sku": "NA-REX5",
    "title": "Noble Audio FoKus Rex5 | True Wireless Hi-Fi Earphones Green",
    "url": "https://bloomaudio.com/products/noble-audio-fokus-rex5?variant=41641966174283",
-   "price": 449,
+   "price": 359,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-fokus-rex5-thumb-master.webp?v=1732636410",
    "inStock": true,
    "brand": "Noble",
@@ -4198,7 +4207,8 @@
    "sku": "NA-IRIS",
    "title": "Noble Audio Iris | Dynamic Universal IEMs New",
    "url": "https://bloomaudio.com/products/noble-audio-iris",
-   "price": 699,
+   "price": 559,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/na-iris-thumb.webp?v=1783517751",
    "inStock": true,
    "brand": "Noble"
@@ -4208,7 +4218,8 @@
    "sku": "NA-KNIGHT",
    "title": "Noble Audio Knight | Tribrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/noble-audio-knight?variant=42170934001739",
-   "price": 289,
+   "price": 231,
+   "wasPrice": 289,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-knight-thumb.webp?v=1735940103",
    "inStock": true,
    "brand": "Noble"
@@ -4218,7 +4229,8 @@
    "sku": "NA-KRONOS",
    "title": "Noble Audio Kronos | Flagship Quadbrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/noble-audio-kronos?variant=42101311176779",
-   "price": 4500,
+   "price": 3600,
+   "wasPrice": 4500,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-4-kronos-thumb.webp?v=1753807907",
    "inStock": true,
    "brand": "Noble"
@@ -4239,7 +4251,8 @@
    "sku": "NA-LU-BAN",
    "title": "Noble Audio Lu Ban | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/noble-audio-lu-ban?variant=42277183651915",
-   "price": 1399,
+   "price": 1119,
+   "wasPrice": 1399,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-3-lu-ban-thumb.webp?v=1775592438",
    "inStock": true,
    "brand": "Noble"
@@ -4259,7 +4272,8 @@
    "sku": "NA-OSPREY",
    "title": "Noble Audio Osprey | True Wireless Hi-Fi Earphones New",
    "url": "https://bloomaudio.com/products/noble-audio-osprey?variant=42446807695435",
-   "price": 199,
+   "price": 159,
+   "wasPrice": 199,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/na-1-osprey-thumb.webp?v=1779218141",
    "inStock": true,
    "brand": "Noble"
@@ -4279,7 +4293,8 @@
    "sku": "NA-RONIN",
    "title": "Noble Audio Ronin | 12 Driver BA and EST Flagship Tri-Hybrid IEMs",
    "url": "https://bloomaudio.com/products/noble-audio-ronin",
-   "price": 3900,
+   "price": 2999,
+   "wasPrice": 3900,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/products/noble-audio-ronin-thumbnail-front-wht.jpg?v=1676314009",
    "inStock": true,
    "brand": "Noble"
@@ -4289,7 +4304,8 @@
    "sku": "NA-SHOGUN",
    "title": "Noble Audio Shogun | 13-Driver Quadbrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/noble-audio-shogun?variant=42958689730635",
-   "price": 3900,
+   "price": 3120,
+   "wasPrice": 3900,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-audio-shogun-thumb_61098453-1023-4bf0-afc2-5cdc2d872c10.webp?v=1741964197",
    "inStock": true,
    "brand": "Noble"
@@ -4320,7 +4336,8 @@
    "sku": "NA-VANGOGH",
    "title": "Noble Audio Van Gogh | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/noble-audio-van-gogh?variant=42356437581899",
-   "price": 699,
+   "price": 559,
+   "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-0-van-gogh-thumb.webp?v=1749836149",
    "inStock": true,
    "brand": "Noble"
@@ -4330,7 +4347,8 @@
    "sku": "NA-VANGUARD",
    "title": "Noble Audio Vanguard | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/noble-audio-vanguard",
-   "price": 325,
+   "price": 260,
+   "wasPrice": 325,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/na-2-vanguard-thumb.webp?v=1783454132",
    "inStock": true,
    "brand": "Noble"
@@ -4340,7 +4358,8 @@
    "sku": "VIKINGRAGNAR",
    "title": "Noble Audio Viking Ragnar | Tribrid IEMs",
    "url": "https://bloomaudio.com/products/noble-viking-ragnar",
-   "price": 4000,
+   "price": 2999,
+   "wasPrice": 4000,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/products/VikingRagnar-11036.jpg?v=1663935620",
    "inStock": true,
    "brand": "Noble"
@@ -4361,7 +4380,8 @@
    "sku": "ZEPHYR",
    "title": "Noble Audio Zephyr | Hybrid Universal IEMs",
    "url": "https://bloomaudio.com/products/noble-audio-zephyr",
-   "price": 1450,
+   "price": 999,
+   "wasPrice": 1450,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/products/Noble-Audio-Zephyr-Hybrid-Universal-IEMs_10131d05-253b-4757-b9b3-32ff0b740108.jpg?v=1631831290",
    "inStock": true,
    "brand": "Noble"
@@ -5380,7 +5400,8 @@
    "sku": "XENNS-MANGIRD-TOP-PRO",
    "title": "XENNS Mangird Top Pro | 10-Driver Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/xenns-mangird-top-pro?variant=41802513449035",
-   "price": 499,
+   "price": 424.15,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/xenns-2-mangird-top-pro-thumb.webp?v=1748980904",
    "inStock": true,
    "brand": "XENNS"

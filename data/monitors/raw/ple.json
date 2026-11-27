@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:22:40.462Z",
+ "scrapedAt": "2026-11-27T02:22:27.412Z",
  "offers": [
   {
    "retailer": "ple",
@@ -104,7 +104,7 @@
    "brand": "Acer",
    "mpn": "UM.JX0SA.306-RY0",
    "url": "https://www.ple.com.au/products/679981/acer-nitro-xz322qu-v3-32-curved-1440p-180hz-va-gaming-monitor",
-   "price": 269,
+   "price": 259,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-451188-679981.jpg?w=600&h=600",
    "inStock": true
@@ -116,7 +116,7 @@
    "brand": "Acer",
    "mpn": "UM.CX3SA.001-RY0",
    "url": "https://www.ple.com.au/products/686769/acer-nitro-xz343cur-34-curved-200hz-va-gaming-monitor",
-   "price": 359,
+   "price": 329,
    "wasPrice": 429,
    "image": "https://plecom.imgix.net/iil-483354-686769.jpg?w=600&h=600",
    "inStock": true
@@ -572,7 +572,7 @@
    "price": 349,
    "wasPrice": 489,
    "image": "https://plecom.imgix.net/iil-429711-675612.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -957,7 +957,8 @@
    "brand": "ASUS",
    "mpn": "PA27UCDMR",
    "url": "https://www.ple.com.au/products/686682/asus-proart-pa27ucdmr-oled-265-4k-2160p-240hz-01ms-monitor",
-   "price": 2549,
+   "price": 2349,
+   "wasPrice": 2549,
    "image": "https://plecom.imgix.net/iil-478577-686682.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1140,7 +1141,7 @@
    "brand": "ASUS",
    "mpn": "XG259CS",
    "url": "https://www.ple.com.au/products/683138/asus-rog-strix-xg259cs-25-1080p-180hz-1ms-fast-ips-gaming-monitor",
-   "price": 389,
+   "price": 299,
    "wasPrice": 399,
    "image": "https://plecom.imgix.net/iil-463645-683138.jpg?w=600&h=600",
    "inStock": true
@@ -1152,7 +1153,8 @@
    "brand": "ASUS",
    "mpn": "XG27ACMES",
    "url": "https://www.ple.com.au/products/681399/asus-rog-strix-xg27acmes-27-1440p-255hz-03ms-fast-ips-gaming-monitor-black",
-   "price": 399,
+   "price": 369,
+   "wasPrice": 399,
    "image": "https://plecom.imgix.net/iil-460913-681399.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1208,7 +1210,7 @@
    "brand": "ASUS",
    "mpn": "XG27UCG",
    "url": "https://www.ple.com.au/products/666966/asus-rog-strix-xg27ucg-27-4k-2160p-160hz-1080p-320hz-dual-mode-fast-ips-gaming-monitor-",
-   "price": 724,
+   "price": 549,
    "wasPrice": 799,
    "image": "https://plecom.imgix.net/iil-391747-666966.jpg?w=600&h=600",
    "inStock": true
@@ -1359,7 +1361,7 @@
    "price": 169,
    "wasPrice": 249,
    "image": "https://plecom.imgix.net/iil-447866-679067.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1437,7 +1439,8 @@
    "brand": "ASUS",
    "mpn": "VG34WQL5A",
    "url": "https://www.ple.com.au/products/684820/asus-tuf-gaming-vg34wql5a-34-curved-1440p-200hz-720p-400hz-dual-mode-05ms-fast-va-gaming-monitor",
-   "price": 499,
+   "price": 349,
+   "wasPrice": 499,
    "image": "https://plecom.imgix.net/iil-483673-684820.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1460,7 +1463,8 @@
    "brand": "ASUS",
    "mpn": "VA249QGS",
    "url": "https://www.ple.com.au/products/687349/asus-va249qgs-238-1080p-120hz-1ms-ips-business-monitor",
-   "price": 249,
+   "price": 199,
+   "wasPrice": 249,
    "image": "https://plecom.imgix.net/iil-481026-687349.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1471,7 +1475,7 @@
    "brand": "ASUS",
    "mpn": "VA259HGA",
    "url": "https://www.ple.com.au/products/673816/asus-va259hga-25-1080p-120hz-ips-monitor",
-   "price": 139,
+   "price": 99,
    "wasPrice": 159,
    "image": "https://plecom.imgix.net/iil-421273-673816.jpg?w=600&h=600",
    "inStock": true
@@ -1609,7 +1613,7 @@
    "brand": "BenQ",
    "mpn": "PD3226G",
    "url": "https://www.ple.com.au/products/671745/benq-designer-pd3226g-32-4k-2160p-144hz-ips-professional-monitor",
-   "price": 1499,
+   "price": 1349,
    "wasPrice": 1899,
    "image": "https://plecom.imgix.net/iil-424439-671745.jpg?w=600&h=600",
    "inStock": true
@@ -1680,7 +1684,8 @@
    "brand": "BenQ",
    "mpn": "GW3290QT",
    "url": "https://www.ple.com.au/products/659244/benq-gw3290qt-315-1440p-75hz-ips-monitor",
-   "price": 599,
+   "price": 549,
+   "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-343999-659244.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1987,7 +1992,7 @@
    "brand": "Gigabyte",
    "mpn": "GO27Q24G",
    "url": "https://www.ple.com.au/products/684169/gigabyte-go27q24g-woled-27-1440p-240hz-003ms-gaming-monitor",
-   "price": 599,
+   "price": 519,
    "wasPrice": 699,
    "image": "https://plecom.imgix.net/iil-468217-684169.jpg?w=600&h=600",
    "inStock": false
@@ -2011,7 +2016,8 @@
    "brand": "Gigabyte",
    "mpn": "GS25F2A",
    "url": "https://www.ple.com.au/products/686067/gigabyte-gs25f2a-25-1080p-240hz-ips-gaming-monitor-",
-   "price": 179,
+   "price": 119,
+   "wasPrice": 179,
    "image": "https://plecom.imgix.net/iil-475008-686067.jpg?w=600&h=600",
    "inStock": true
   },
@@ -2244,18 +2250,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "683925",
-   "title": "LG 32MR50C-B - 31.5\" Curved 1080p 100Hz VA Monitor",
-   "brand": "LG",
-   "mpn": "32MR50C-B",
-   "url": "https://www.ple.com.au/products/683925/lg-32mr50c-b-315-curved-1080p-100hz-va-monitor",
-   "price": 249,
-   "wasPrice": 269,
-   "image": "https://plecom.imgix.net/iil-467505-683925.jpg?w=600&h=600",
-   "inStock": false
-  },
-  {
-   "retailer": "ple",
    "sku": "686254",
    "title": "LG 32U720SA-W - 32\"  4K 2160p 60Hz VA Smart Monitor with webOS",
    "brand": "LG",
@@ -2452,7 +2446,7 @@
    "brand": "LG",
    "mpn": "32G600A-B",
    "url": "https://www.ple.com.au/products/685087/lg-ultragear-32g600a-b-315-curved-1440p-180hz-va-gaming-monitor",
-   "price": 249,
+   "price": 339,
    "wasPrice": 399,
    "image": "https://plecom.imgix.net/iil-471846-685087.jpg?w=600&h=600",
    "inStock": false
@@ -2523,8 +2517,7 @@
    "brand": "LG",
    "mpn": "27GX704A-B",
    "url": "https://www.ple.com.au/products/683913/lg-ultragear-gx7-oled-27gx704a-b-27-1440p-240hz-003ms-gaming-monitor",
-   "price": 499,
-   "wasPrice": 749,
+   "price": 749,
    "image": "https://plecom.imgix.net/iil-466892-683913.jpg?w=600&h=600",
    "inStock": true
   },
@@ -2606,7 +2599,7 @@
    "brand": "LG",
    "mpn": "29U531A-W",
    "url": "https://www.ple.com.au/products/680683/lg-ultrawide-29u531a-w-29-1080p-ultrawide-100hz-ips-monitor",
-   "price": 309,
+   "price": 199,
    "wasPrice": 379,
    "image": "https://plecom.imgix.net/iil-453638-680683.jpg?w=600&h=600",
    "inStock": true
@@ -2633,7 +2626,7 @@
    "price": 2099,
    "wasPrice": 2299,
    "image": "https://plecom.imgix.net/iil-471120-685004.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2681,7 +2674,7 @@
    "price": 649,
    "wasPrice": 999,
    "image": "https://plecom.imgix.net/iil-440744-677904.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2741,7 +2734,7 @@
    "price": 219,
    "wasPrice": 239,
    "image": "https://plecom.imgix.net/iil-435717-676862.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2777,7 +2770,7 @@
    "price": 369,
    "wasPrice": 449,
    "image": "https://plecom.imgix.net/iil-440647-677775.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2789,7 +2782,7 @@
    "price": 309,
    "wasPrice": 393,
    "image": "https://plecom.imgix.net/iil-439386-677534.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2813,7 +2806,7 @@
    "price": 289,
    "wasPrice": 359,
    "image": "https://plecom.imgix.net/iil-448202-679435.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -2825,7 +2818,7 @@
    "price": 369,
    "wasPrice": 469,
    "image": "https://plecom.imgix.net/iil-459194-681568.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2849,7 +2842,7 @@
    "price": 799,
    "wasPrice": 899,
    "image": "https://plecom.imgix.net/iil-486745-688490.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2908,7 +2901,7 @@
    "price": 1499,
    "wasPrice": 1799,
    "image": "https://plecom.imgix.net/iil-473833-681567.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -3037,7 +3030,7 @@
    "brand": "MSI",
    "mpn": "PRO MP341CQ",
    "url": "https://www.ple.com.au/products/666103/msi-pro-mp341cq-34-curved-1440p-100hz-va-monitor",
-   "price": 289,
+   "price": 269,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-382241-666103.jpg?w=600&h=600",
    "inStock": true
@@ -3052,7 +3045,7 @@
    "price": 299,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-487837-688346.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -3061,7 +3054,7 @@
    "brand": "MSI",
    "mpn": "PRO MP341CQW",
    "url": "https://www.ple.com.au/products/666102/msi-pro-mp341cqw-34-curved-1440p-100hz-va-monitor-white",
-   "price": 289,
+   "price": 269,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-382245-666102.jpg?w=600&h=600",
    "inStock": true
@@ -3076,7 +3069,7 @@
    "price": 299,
    "wasPrice": 349,
    "image": "https://plecom.imgix.net/iil-487836-688345.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -3297,7 +3290,8 @@
    "brand": "Samsung",
    "mpn": "LS34HG552EEXXY",
    "url": "https://www.ple.com.au/products/688779/samsung-odyssey-g55h-34-curved-1440p-ultrawide-180hz-va-gaming-monitor",
-   "price": 429,
+   "price": 349,
+   "wasPrice": 429,
    "image": "https://plecom.imgix.net/iil-487918-688779.jpg?w=600&h=600",
    "inStock": true
   },
@@ -3391,7 +3385,7 @@
    "brand": "Samsung",
    "mpn": "LS34DG850SEXXY",
    "url": "https://www.ple.com.au/products/668738/samsung-odyssey-oled-g8-34-curved-1440p-175hz-gaming-monitor",
-   "price": 1099,
+   "price": 1029,
    "wasPrice": 1799,
    "image": "https://plecom.imgix.net/iil-409763-668738.jpg?w=600&h=600",
    "inStock": true
@@ -3403,7 +3397,7 @@
    "brand": "Samsung",
    "mpn": "LS49DG930SEXXY",
    "url": "https://www.ple.com.au/products/668739/samsung-odyssey-oled-g9-49-curved-1440p-240hz-gaming-monitor",
-   "price": 1399,
+   "price": 1249,
    "wasPrice": 2299,
    "image": "https://plecom.imgix.net/iil-409767-668739.jpg?w=600&h=600",
    "inStock": true
@@ -3442,6 +3436,18 @@
    "price": 499,
    "wasPrice": 539,
    "image": "https://plecom.imgix.net/iil-441403-677540.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
+   "sku": "687547",
+   "title": "Samsung ViewFinity S65TC - 34\" Curved UWQHD 100Hz VA Thunderbolt 4 Monitor",
+   "brand": "Samsung",
+   "mpn": "LS34C650TAEXXY",
+   "url": "https://www.ple.com.au/products/687547/samsung-viewfinity-s65tc-34-curved-uwqhd-100hz-va-thunderbolt-4-monitor",
+   "price": 857,
+   "wasPrice": 1099,
+   "image": "https://plecom.imgix.net/iil-482208-687547.jpg?w=600&h=600",
    "inStock": true
   },
   {

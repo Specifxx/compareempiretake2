@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:40:29.040Z",
+ "scrapedAt": "2026-11-27T02:40:12.312Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -452,7 +452,7 @@
    "price": 599,
    "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/wp900-01.jpg?v=1769875778",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audio-Technica"
   },
   {
@@ -518,7 +518,7 @@
    "price": 119.99,
    "wasPrice": 249.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-AMIRON-ZERO-Open-Ear-Clip-on-Earbuds-Black-Image-06.jpg?v=1793374269",
-   "inStock": true,
+   "inStock": false,
    "brand": "Beyerdynamic"
   },
   {
@@ -1453,16 +1453,6 @@
   },
   {
    "retailer": "us-worldwidestereo",
-   "sku": "47083059478839",
-   "title": "Bowers & Wilkins Px8 Wireless Bluetooth Over-Ear Headphones with Active Noise Cancellation (Tan)",
-   "url": "https://www.worldwidestereo.com/products/bowers-wilkins-px8-wireless-bluetooth-over-ear-headphones-with-active-noise-cancellation-tan",
-   "price": 749,
-   "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/178359_WWS1.jpg?v=1772728081",
-   "inStock": false,
-   "brand": "Bowers & Wilkins"
-  },
-  {
-   "retailer": "us-worldwidestereo",
    "sku": "51922398183735",
    "title": "Cambridge Audio Melomania A100 True Wireless Earbuds (Black)",
    "url": "https://www.worldwidestereo.com/products/cambridge-audio-melomania-a100-true-wireless-earbuds-black",
@@ -1476,7 +1466,8 @@
    "sku": "51925316403511",
    "title": "Cambridge Audio Melomania P100 SE Wireless Headphones (Black)",
    "url": "https://www.worldwidestereo.com/products/cambridge-audio-melomania-p100-se-wireless-headphones-black",
-   "price": 299,
+   "price": 249,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/CambridgeAudio-Melomania-P100-SE-Wireless-Headphones-Black-Image-03.jpg?v=1775677015",
    "inStock": true,
    "brand": "Cambridge Audio"
@@ -1486,7 +1477,8 @@
    "sku": "51925316698423",
    "title": "Cambridge Audio Melomania P100 SE Wireless Headphones (Blue)",
    "url": "https://www.worldwidestereo.com/products/cambridge-audio-melomania-p100-se-wireless-headphones-blue",
-   "price": 299,
+   "price": 249,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/CambridgeAudio-Melomania-P100-SE-Wireless-Headphones-Blue-Image-07.jpg?v=1775677015",
    "inStock": true,
    "brand": "Cambridge Audio"
@@ -1496,7 +1488,8 @@
    "sku": "51925316927799",
    "title": "Cambridge Audio Melomania P100 SE Wireless Headphones (White)",
    "url": "https://www.worldwidestereo.com/products/cambridge-audio-melomania-p100-se-wireless-headphones-white",
-   "price": 299,
+   "price": 249,
+   "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/CambridgeAudio-Melomania-P100-SE-Wireless-Headphones-White-Image-03.jpg?v=1775677015",
    "inStock": true,
    "brand": "Cambridge Audio"
@@ -2129,7 +2122,7 @@
    "price": 159.95,
    "wasPrice": 240,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Quantum-650-Bluetooth-Gaming-Headphones-Image-01_85c04c4c-3ea9-42ab-a37e-4d86c861786c.jpg?v=1778990723",
-   "inStock": true,
+   "inStock": false,
    "brand": "JBL"
   },
   {
@@ -2250,7 +2243,7 @@
    "price": 99.95,
    "wasPrice": 180,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Soundgear-Clips-Open-Ear-True-Wireless-Earbuds-Purple-Image-01.jpg?v=1773342843",
-   "inStock": true,
+   "inStock": false,
    "brand": "JBL"
   },
   {
@@ -2511,7 +2504,7 @@
    "sku": "52944374038839",
    "title": "JVC GLASS Core Pro True Wireless Noise Cancelling Earbuds",
    "url": "https://www.worldwidestereo.com/products/jvc-glass-core-pro-true-wireless-noise-cancelling-earbuds",
-   "price": 399.95,
+   "price": 299.95,
    "wasPrice": 429.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JVC-GLASS-Core-Pro-True-Wireless-Noise-Cancelling-Earbuds-Image-02.jpg?v=1788443896",
    "inStock": false,
@@ -2532,7 +2525,7 @@
    "sku": "52944322789687",
    "title": "JVC WOOD Masterpiece Wireless Noise Cancelling Earbuds (Black)",
    "url": "https://www.worldwidestereo.com/products/jvc-wood-masterpiece-wireless-noise-cancelling-earbuds-black",
-   "price": 299.95,
+   "price": 199.95,
    "wasPrice": 349.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JVC-WOOD-Masterpiece-Wireless-Noise-Cancelling-Earbuds-Black-Image-01.jpg?v=1788442327",
    "inStock": true,
@@ -2543,7 +2536,7 @@
    "sku": "52944322822455",
    "title": "JVC WOOD Masterpiece Wireless Noise Cancelling Earbuds (Sunburst Brown)",
    "url": "https://www.worldwidestereo.com/products/jvc-wood-masterpiece-wireless-noise-cancelling-earbuds-sunburst-brown",
-   "price": 299.95,
+   "price": 199.95,
    "wasPrice": 349.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JVC-WOOD-Masterpiece-Wireless-Noise-Cancelling-Earbuds-Sunburst-Brown-Image-01.jpg?v=1788442327",
    "inStock": true,

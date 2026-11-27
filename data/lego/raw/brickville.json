@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:16:03.088Z",
+ "scrapedAt": "2026-11-27T02:16:09.777Z",
  "offers": [
   {
    "retailer": "brickville",
@@ -755,7 +755,7 @@
    "url": "https://www.brickville.com.au/products/lego-brick-cross-train-station-910034",
    "price": 749.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l1200_b72b011a-1c9c-4473-9643-1dc6f1cd2cdd.jpg?v=1746063399",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "910034"
   },
@@ -766,7 +766,7 @@
    "url": "https://www.brickville.com.au/products/lego-brickheadz-bride-40383",
    "price": 39.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/61NI4iyJ8AL.jpg?v=1787534296",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40383"
   },
@@ -1246,7 +1246,7 @@
    "url": "https://www.brickville.com.au/products/lego-studgate-train-station-910002",
    "price": 1099.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l400_2a18381f-875b-46d2-991a-a3070c4f58ae.jpg?v=1749965807",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "910002"
   },
@@ -1678,7 +1678,7 @@
    "url": "https://www.brickville.com.au/products/lego-city-donut-truck-60452",
    "price": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/60452-1.jpg?v=1765107222",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "60452"
   },
@@ -1800,7 +1800,7 @@
    "url": "https://www.brickville.com.au/products/lego-city-space-command-rover-and-crane-loader-60432",
    "price": 139.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/1_6e4c9eeb-56b5-4759-babd-038b9d9a59ef.webp?v=1755175561",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "60432"
   },
@@ -2200,7 +2200,7 @@
    "url": "https://www.brickville.com.au/products/lego-creator-adorable-dogs-31137",
    "price": 49.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/35021428490270.jpg?v=1699437709",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31137"
   },
@@ -2280,6 +2280,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "31005"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "31083",
+   "title": "LEGO Creator Cruising Adventures 31083",
+   "url": "https://www.brickville.com.au/products/lego-creator-cruising-adventures-31083",
+   "price": 129.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/71AxSp-meML.jpg?v=1795692635",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "31083"
   },
   {
    "retailer": "brickville",
@@ -2599,7 +2610,7 @@
    "url": "https://www.brickville.com.au/products/lego-creator-riverside-houseboat-31093",
    "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/81gfOOlA5fL.jpg?v=1727411426",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31093"
   },
@@ -2798,9 +2809,9 @@
    "retailer": "brickville",
    "sku": "43179",
    "title": "LEGO Disney Mickey and Minnie Mouse 43179",
-   "url": "https://www.brickville.com.au/products/lego-disney-mickey-and-minnie-mouse-43179",
+   "url": "https://www.brickville.com.au/products/lego-disney-mickey-and-minnie-mouse-43180",
    "price": 349.99,
-   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/products/BTKA_16852487194576218_279e18c54395df1e7e73b4d75936e5.jpg?v=1686270728",
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_9a0e7188-dde2-4e0e-a83e-d67794654e2c.jpg?v=1795695612",
    "inStock": true,
    "brand": "LEGO",
    "mpn": "43179"
@@ -3411,7 +3422,7 @@
    "url": "https://www.brickville.com.au/products/lego-gear-salt-and-pepper-set-850705",
    "price": 9.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/850705.jpg?v=1775993258",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "850705"
   },
@@ -3501,7 +3512,7 @@
    "url": "https://www.brickville.com.au/products/lego-harry-potter-chamber-of-secrets-flying-ford-anglia-76424",
    "price": 24.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/47995845115934.jpg?v=1732014964",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76424"
   },
@@ -3782,7 +3793,7 @@
    "price": 59.99,
    "wasPrice": 74.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/40588_alt1.png?v=1689073845",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40588"
   },
@@ -3806,9 +3817,20 @@
    "price": 519.99,
    "wasPrice": 649.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/s-l1200_a905648e-0eda-45a8-9552-943b7520bfd8.png?v=1793792102",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10292"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "10273",
+   "title": "LEGO Icons Haunted House 10273",
+   "url": "https://www.brickville.com.au/products/lego-icons-haunted-house-10273",
+   "price": 479.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/5896381104277_2384.webp?v=1795697004",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "10273"
   },
   {
    "retailer": "brickville",
@@ -4067,6 +4089,17 @@
   },
   {
    "retailer": "brickville",
+   "sku": "21334",
+   "title": "LEGO Ideas Jazz Quartet 21334",
+   "url": "https://www.brickville.com.au/products/lego-ideas-jazz-quartet-21334",
+   "price": 249.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/LEGO-21334-1.jpg?v=1752063934",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21334"
+  },
+  {
+   "retailer": "brickville",
    "sku": "21325",
    "title": "LEGO Ideas Medieval Blacksmith 21325",
    "url": "https://www.brickville.com.au/products/lego-ideas-medieval-blacksmith-21325",
@@ -4107,7 +4140,7 @@
    "url": "https://www.brickville.com.au/products/lego-ideas-optimus-prime-10302",
    "price": 279.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/10302_alt1_1200x_4b7cdb54-e596-49db-8076-61ef58a538cd.webp?v=1795216492",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10302"
   },
@@ -4140,7 +4173,7 @@
    "url": "https://www.brickville.com.au/products/lego-ideas-seinfeld-21328",
    "price": 279.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/products/BTKA_16852498305394835_50163ebcebc71fe605aa51649cd0b0.jpg?v=1686116670",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21328"
   },
@@ -4212,6 +4245,29 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "40773"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "21318",
+   "title": "LEGO Ideas Tree House 21318",
+   "url": "https://www.brickville.com.au/products/lego-ideas-tree-house-21318",
+   "price": 359.99,
+   "wasPrice": 399.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/Screen-Shot-2019-11-04-at-6.11.34-pm.jpg?v=1688471866",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21318"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "21327",
+   "title": "LEGO Ideas Typewriter 21327",
+   "url": "https://www.brickville.com.au/products/lego-ideas-typewriter-21328",
+   "price": 479.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/LEGO-Ideas-Typewriter-21327-1.webp?v=1792582757",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "21327"
   },
   {
    "retailer": "brickville",
@@ -4382,6 +4438,94 @@
   },
   {
    "retailer": "brickville",
+   "sku": "76946",
+   "title": "LEGO Jurassic World Blue & Beta Velociraptor Capture 76946",
+   "url": "https://www.brickville.com.au/products/lego-jurassic-world-blue-beta-velociraptor-capture-76946",
+   "price": 74.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/76946_alt1.png?v=1795667769",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76946"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76942",
+   "title": "LEGO Jurassic World Camp Cretaceous Baryonyx Dinosaur Boat Escape 76942",
+   "url": "https://www.brickville.com.au/products/lego-jurassic-world-camp-cretaceous-baryonyx-dinosaur-boat-escape-76942",
+   "price": 179.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_61333480-9d20-4699-ad6f-c46746d80213.jpg?v=1795694683",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76942"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76941",
+   "title": "LEGO Jurassic World Camp Cretaceous Carnotaurus Dinosaur Chase 76941",
+   "url": "https://www.brickville.com.au/products/lego-jurassic-world-camp-cretaceous-carnotaurus-dinosaur-chase-76941",
+   "price": 129.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/web1_836c5a5a-e0ba-4b97-9e3d-139583844689.webp?v=1795694057",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76941"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76949",
+   "title": "LEGO Jurassic World Dominion Giganotosaurus & Therizinosaurus Attack 76949",
+   "url": "https://www.brickville.com.au/products/lego-jurassic-world-dominion-giganotosaurus-therizinosaurus-attack-76949",
+   "price": 359.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/WebsitePics_22_a87b941e-2f6c-491c-a0f2-d8310da1501c.webp?v=1795696094",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76949"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76947",
+   "title": "LEGO Jurassic World Dominion Quetzalcoatlus Plane Ambush 76947",
+   "url": "https://www.brickville.com.au/products/lego-jurassic-world-dominion-quetzalcoatlus-plane-ambush-76947",
+   "price": 129.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/1_c44af85e-e6ab-4966-beaf-5f53ee3f1a0e.webp?v=1795692880",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76947"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76944",
+   "title": "LEGO Jurassic World Dominion T. rex Dinosaur Breakout 76944",
+   "url": "https://www.brickville.com.au/products/lego-jurassic-world-dominion-t-rex-dinosaur-breakout-76944",
+   "price": 109.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/download_6c57ce94-3f96-47cc-bd65-fd537210563c.webp?v=1795693456",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76944"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76950",
+   "title": "LEGO Jurassic World Dominion Triceratops Pick-up Truck Ambush 76950",
+   "url": "https://www.brickville.com.au/products/lego-jurassic-world-dominion-triceratops-pick-up-truck-ambush-76950",
+   "price": 79.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/CopyofPiano_2_600x_1d87ff39-76cf-4782-b6be-3aef1a789492.webp?v=1740699828",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76950"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "75941",
+   "title": "LEGO Jurassic World Indominus rex vs. Ankylosaurus 75941",
+   "url": "https://www.brickville.com.au/products/lego-jurassic-world-indominus-rex-vs-ankylosaurus-75941",
+   "price": 469.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/91S33EDLx7L.jpg?v=1724408495",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "75941"
+  },
+  {
+   "retailer": "brickville",
    "sku": "75918",
    "title": "LEGO Jurassic World T-Rex Tracker 75918",
    "url": "https://www.brickville.com.au/products/lego-jurassic-world-t-rex-tracker-75918",
@@ -4442,7 +4586,7 @@
    "url": "https://www.brickville.com.au/products/lego-landmarks-eiffel-tower-10307",
    "price": 999.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_c84be568-8d52-4fb6-a85b-4a6e6dc54d21.jpg?v=1793015745",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10307"
   },
@@ -4510,7 +4654,7 @@
    "price": 199.99,
    "wasPrice": 249.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/71fYVynYfYL.jpg?v=1746685492",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40346"
   },
@@ -4570,6 +4714,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "76199"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "76178",
+   "title": "LEGO Marvel Super Heroes Daily Bugle 76178",
+   "url": "https://www.brickville.com.au/products/lego-marvel-super-heroes-daily-bugle-76178",
+   "price": 1049.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/76178_alt1.jpg?v=1774345890",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76178"
   },
   {
    "retailer": "brickville",
@@ -5042,6 +5197,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "71851"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "70669",
+   "title": "LEGO Ninjago Legacy Cole's Earth Driller 70669",
+   "url": "https://www.brickville.com.au/products/lego-ninjago-legacy-coles-earth-driller-70669",
+   "price": 349.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/70669_alt1.jpg?v=1758167600",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "70669"
   },
   {
    "retailer": "brickville",
@@ -6208,7 +6374,7 @@
    "url": "https://www.brickville.com.au/products/lego-speed-champions-ferrari-f40-supercar-76934",
    "price": 39.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/50337909407774.jpg?v=1725478905",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76934"
   },
@@ -6555,7 +6721,7 @@
    "price": 269.99,
    "wasPrice": 299.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/images_bb08fd15-4484-427d-b6e1-d72e56165f4d.jpg?v=1718885222",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75357"
   },
@@ -6600,7 +6766,7 @@
    "price": 359.99,
    "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/products/BTKA_16852565606506946_c7f340f9a9735df0b7f99ac14654bd.jpg?v=1685800329",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "6208"
   },
@@ -6942,7 +7108,7 @@
    "price": 249.99,
    "wasPrice": 499.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/91eGNP9s9LL._AC_UF894_1000_QL80.jpg?v=1688955961",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75190"
   },
@@ -7734,7 +7900,7 @@
    "url": "https://www.brickville.com.au/products/lego-star-wars-ucs-milennium-falcon-75192",
    "price": 1299.99,
    "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/files/BTKA_1685249482737885_481694fe2593eed239de2d076820bc.jpg?v=1737935571",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "75192"
   },
@@ -7970,6 +8136,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "40414"
+  },
+  {
+   "retailer": "brickville",
+   "sku": "71374",
+   "title": "LEGO Super Mario Nintendo Entertainment System 71374",
+   "url": "https://www.brickville.com.au/products/lego-super-mario-nintendo-entertainment-system-71374",
+   "price": 599.99,
+   "image": "https://cdn.shopify.com/s/files/1/0666/0230/3805/products/BTKA_1685249576755545_0b56f65d8c3c477dc0ae0a9916eeab.jpg?v=1686123435",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "71374"
   },
   {
    "retailer": "brickville",

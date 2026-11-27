@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:34:20.471Z",
+ "scrapedAt": "2026-11-27T02:33:57.204Z",
  "offers": [
   {
    "retailer": "us-brandsmart",
@@ -11,6 +11,17 @@
    "inStock": true,
    "brand": "Apple",
    "mpn": "MXP63LLA"
+  },
+  {
+   "retailer": "us-brandsmart",
+   "sku": "MXP93LLA",
+   "title": "AirPods 4 with Active Noise Cancellation",
+   "url": "https://www.brandsmartusa.com/products/audio-headphones-headphones-airpods-airpods-4-with-active-noise-cancellation",
+   "price": 179,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/79883aed-af5b-4cb0-be0d-d69d74003cb1.jpg?v=1790177427",
+   "inStock": true,
+   "brand": "Apple",
+   "mpn": "MXP93LLA"
   },
   {
    "retailer": "us-brandsmart",
@@ -77,17 +88,6 @@
    "inStock": true,
    "brand": "Sony",
    "mpn": "WHCH720NB"
-  },
-  {
-   "retailer": "us-brandsmart",
-   "sku": "939-002050",
-   "title": "Astro A10 Gen 2 Gaming Headset for Xbox in White",
-   "url": "https://www.brandsmartusa.com/products/electronics-computers-tablets-and-home-office-computer-accessories-astro-a10-gen-2-gaming-headset-for-xbox-in-white",
-   "price": 39.99,
-   "wasPrice": 69.99,
-   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/1edd90b7-d5ba-4183-b24e-0c5e14794431.jpg?v=1790178924",
-   "inStock": true,
-   "brand": "Logitech"
   },
   {
    "retailer": "us-brandsmart",
@@ -1097,7 +1097,8 @@
    "sku": "QCUH2DWSD",
    "title": "QuietComfort Ultra Headphones (2nd Gen) - Driftwood Sand",
    "url": "https://www.brandsmartusa.com/products/audio-headphones-headphones-wireless-headphones-quietcomfort-ultra-headphones-2nd-gen-driftwood-sand",
-   "price": 369,
+   "price": 349,
+   "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/7de17b48-9d01-464e-b61e-a8975e11a957.jpg?v=1790170250",
    "inStock": true,
    "brand": "Bose",
@@ -1389,17 +1390,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/25c5cdbb-abaa-4aad-a337-2055092d51e9.jpg?v=1790173829",
    "inStock": true,
    "mpn": "TOURONEM2CAM"
-  },
-  {
-   "retailer": "us-brandsmart",
-   "sku": "TOURPRO3BLK",
-   "title": "Tour Pro 3 True Wireless Noise-Canceling Earbuds - Black",
-   "url": "https://www.brandsmartusa.com/products/audio-headphones-headphones-earbuds-in-ear-headphones-tour-pro-3-true-wireless-noise-canceling-earbuds-black",
-   "price": 169.95,
-   "wasPrice": 395,
-   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/6f717f5f-b1e5-41f5-b212-4590eb288fca.jpg?v=1790179772",
-   "inStock": true,
-   "mpn": "TOURPRO3BLK"
   },
   {
    "retailer": "us-brandsmart",

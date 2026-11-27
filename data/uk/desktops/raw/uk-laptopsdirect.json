@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:57:12.215Z",
+ "scrapedAt": "2026-11-27T02:55:14.053Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -35,16 +35,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2088261",
-   "mpn": "DQ.BSAEK.001",
-   "title": "Acer Aspire S27-B Intel Core Ultra 5 226V 16GB RAM 512GB SSD 27 Inch Windows 11 All-in-One PC",
-   "url": "https://www.laptopsdirect.co.uk/acer-aspire-s27-b-intel-core-ultra-5-226v-16gb-ram-1tb-ssd-27-inch-windows-dq.bsaek.001/version.asp",
-   "price": 969.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/DQ.BSAEK.001_1_Classic.jpg?v=1",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2723231",
    "mpn": "DG.E5VEK.003",
    "title": "Acer Nitro 20 N20-101 Intel Core 5 210H 16GB RAM 512GB SSD RTX 5050 Windows 11 Gaming PC",
@@ -61,8 +51,18 @@
    "title": "Acer Nitro 20 N20-101 Intel Core 5 210H 16GB RAM 512GB SSD RTX 5060 Windows 11 Gaming PC",
    "url": "https://www.laptopsdirect.co.uk/acer-nitro-20-n20-101-intel-core-5-210h-16gb-ram-512gb-ssd-rtx-5060-windows-dg.e5vek.005/version.asp",
    "price": 899.97,
-   "wasPrice": 1049,
+   "wasPrice": 1599,
    "image": "https://www.laptopsdirect.co.uk/Images/DG.E5VEK.005_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2723128",
+   "mpn": "DG.E5AEK.002",
+   "title": "Acer Nitro 70 N70X3D-100 AMD Ryzen 7 9800X3D 32GB RAM 2TB SSD RTX 5080 Windows 11 Gaming PC",
+   "url": "https://www.laptopsdirect.co.uk/acer-nitro-70-n70x3d-100-amd-ryzen-7-9800x3d-32gb-ram-2tb-ssd-rtx-5080-wind-dg.e5aek.002/version.asp",
+   "price": 3899.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DG.E5AEK.002_1_Classic.jpg?v=26",
    "inStock": true
   },
   {
@@ -364,7 +364,7 @@
    "mpn": "LD22231",
    "title": "CyberPowerPC Ark AMD Ryzen 5 4500 16GB RAM 500GB SSD RTX 5060 Windows 11 Home Gaming PC",
    "url": "https://www.laptopsdirect.co.uk/cyberpowerpc-kira-amd-ryzen-5-4500-nvidia-geforce-rtx-4060-16gb-ram-500gb-m-ld22231/version.asp",
-   "price": 929,
+   "price": 899,
    "image": "https://www.laptopsdirect.co.uk/Images/LD22231_1_Classic.png?v=28",
    "inStock": true
   },
@@ -394,7 +394,8 @@
    "mpn": "LD22232",
    "title": "CyberPowerPC Ark Intel Core i5-12400F 16GB RAM 1TB SSD RTX 5060 Windows 11 Gaming PC",
    "url": "https://www.laptopsdirect.co.uk/cyberpower-12400f-4060-gaming-pc-ld22232/version.asp",
-   "price": 1099,
+   "price": 999,
+   "wasPrice": 1099,
    "image": "https://www.laptopsdirect.co.uk/Images/LD22232_1_Classic.png?v=17",
    "inStock": true
   },
@@ -404,7 +405,7 @@
    "mpn": "LD22250",
    "title": "CyberPowerPC Ark Intel Core i5-14400F 16GB RAM 1TB SSD RTX 5060 Windows 11 Gaming PC",
    "url": "https://www.laptopsdirect.co.uk/cyberpowerpc-ark-intel-core-i5-14400f-16gb-ram-1tb-ssd-rtx-5060-windows-11-ld22250/version.asp",
-   "price": 1229,
+   "price": 1199,
    "image": "https://www.laptopsdirect.co.uk/Images/LD22250_1_Classic.png?v=33",
    "inStock": true
   },
@@ -444,7 +445,7 @@
    "mpn": "LD22240",
    "title": "CyberPowerPC Blaze AMD Ryzen 5 5500 16GB RAM 500GB SSD RTX 5060 Windows 11 Gaming PC",
    "url": "https://www.laptopsdirect.co.uk/cyberpowerpc-amethyst-ryzen-5-5500-rtx-4060-16gb-ram-500gb-ssd-windows-11-g-ld22240/version.asp",
-   "price": 999,
+   "price": 899,
    "image": "https://www.laptopsdirect.co.uk/Images/LD22240_1_Classic.png?v=5",
    "inStock": true
   },
@@ -485,7 +486,7 @@
    "mpn": "LD22229",
    "title": "CyberPowerPC Sylph Intel Core i5-12400F 16GB RAM 1TB SSD RTX 5060 Ti Windows 11 Gaming PC",
    "url": "https://www.laptopsdirect.co.uk/cyberpowerpc-lc216-intel-core-i5-12400f-geforce-rtx-4060-ti-16gb-ram-1tb-ss-ld22229/version.asp",
-   "price": 1099,
+   "price": 1079,
    "image": "https://www.laptopsdirect.co.uk/Images/LD22229_1_Classic.png?v=3",
    "inStock": true
   },
@@ -879,7 +880,6 @@
    "title": "Dell Pro Slim QVS1260 Intel Core Ultra 5 225 8GB RAM 512GB SSD Windows 11 Pro Desktop PC",
    "url": "https://www.laptopsdirect.co.uk/dell-pro-slim-qvs1260-intel-core-ultra-5-225-8gb-ram-512gb-ssd-windows-11-p-68f0d/version.asp",
    "price": 629.97,
-   "wasPrice": 704.38,
    "image": "https://www.laptopsdirect.co.uk/Images/68F0D_1_Classic.jpg?v=5",
    "inStock": true
   },
@@ -937,6 +937,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2070044",
+   "mpn": "1730265171",
+   "title": "Entity Rampage Intel Core i7 14700F 32GB RAM 2TB SSD RTX 5070 Windows 11 Gaming PC",
+   "url": "https://www.laptopsdirect.co.uk/entity-intel-core-i7-14700f-32gb-ram-2tb-ssd-rtx-5070-windows-11-gaming-pc-1730265171/version.asp",
+   "price": 1799.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/1730265171_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2716583",
    "mpn": "AP3A7N6T-5110",
    "title": "GIGABYTE AORUS PRIME 3 AMD Ryzen 7 9700X 16GB RAM 1TB SSD RTX 5060 Ti Windows 11 Gaming PC",
@@ -959,12 +969,23 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2716580",
+   "mpn": "AP3A7N7-5100",
+   "title": "GIGABYTE AORUS PRIME 3 AMD Ryzen 7 9700X 32GB RAM 1TB SSD RTX 5070 Windows 11 Gaming PC",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-aorus-prime-3-amd-ryzen-7-9700x-32gb-ram-1tb-ssd-rtx-5070-windows-ap3a7n7-5100/version.asp",
+   "price": 1998.97,
+   "wasPrice": 2199.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/AP3A7N7-5100_1_Classic.png?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2716581",
    "mpn": "AP5A7N7T-5102",
    "title": "GIGABYTE AORUS PRIME 5 AMD Ryzen 7 9800X3D 32GB RAM 2TB SSD RTX 5070Ti Windows 11 Gaming PC",
    "url": "https://www.laptopsdirect.co.uk/gigabyte-aorus-prime-5-amd-ryzen-7-9800x3d-32gb-ram-2tb-ssd-rtx-5070ti-wind-ap5a7n7t-5102/version.asp",
-   "price": 2849.97,
-   "wasPrice": 2999.98,
+   "price": 2599.97,
+   "wasPrice": 2849.98,
    "image": "https://www.laptopsdirect.co.uk/Images/AP5A7N7T-5102_1_Classic.png?v=6",
    "inStock": true
   },
@@ -1220,6 +1241,7 @@
    "title": "HP EliteStudio 8 Intel Core Ultra 5 235 16GB RAM 512GB SSD 23.8 Inch Windows 11 Pro Touchscreen All-in-One PC",
    "url": "https://www.laptopsdirect.co.uk/elitestudio-8-all-in-one-g1i-23.8-inch-desktop-ai-pc-23.8-quot-touch-scr-ck4p2et/version.asp",
    "price": 1754.97,
+   "wasPrice": 1907.98,
    "image": "https://www.laptopsdirect.co.uk/Images/CK4P2ET_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1240,7 +1262,7 @@
    "title": "HP EliteStudio 8 Intel Core Ultra 7 265 24GB RAM 512GB SSD 23.8 Inch Windows 11 Pro All-in-One PC",
    "url": "https://www.laptopsdirect.co.uk/elitestudio-8-all-in-one-g1i-23.8-inch-desktop-ai-pc-23.8-quot-windows-1-ck4p9et/version.asp",
    "price": 1493.97,
-   "wasPrice": 1751.72,
+   "wasPrice": 2208.97,
    "image": "https://www.laptopsdirect.co.uk/Images/CK4P9ET_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1455,7 +1477,7 @@
    "mpn": "CJ1G0ET",
    "title": "HP ProDesk 4 G1i Intel Core Ultra 5 235T 8GB RAM 256GB SSD Windows 11 Pro Mini PC",
    "url": "https://www.laptopsdirect.co.uk/hp-prodesk-4-g1i-intel-core-ultra-5-235t-8gb-ram-256gb-ssd-windows-11-pro-m-cj1g0et/version.asp",
-   "price": 598.97,
+   "price": 599.97,
    "wasPrice": 908.39,
    "image": "https://www.laptopsdirect.co.uk/Images/CJ1G0ET_1_Classic.jpg?v=1",
    "inStock": true
@@ -1468,6 +1490,17 @@
    "url": "https://www.laptopsdirect.co.uk/hp-prodesk-4-g1i-mini-core-ultra-5-235t-16gb-ram-512gb-ssd-windows-11-pro-d-by6y1et/version.asp",
    "price": 899.97,
    "image": "https://www.laptopsdirect.co.uk/Images/BY6Y1ET_1_Classic.jpg?v=1",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2079681",
+   "mpn": "D43U4ET",
+   "title": "HP ProDesk 4 Mini G1i AI Intel Core Ultra 5 235T 24GB RAM 512GB SSD Windows 11 Pro Mini PC",
+   "url": "https://www.laptopsdirect.co.uk/hp-prodesk-4-mini-g1i-ai-intel-core-ultra-5-235t-24gb-ram-512gb-ssd-windows-d43u4et/version.asp",
+   "price": 949.97,
+   "wasPrice": 1117.58,
+   "image": "https://www.laptopsdirect.co.uk/Images/D43U4ET_1_Classic.jpg?v=8",
    "inStock": true
   },
   {
@@ -1498,6 +1531,17 @@
    "url": "https://www.laptopsdirect.co.uk/hp-prodesk-4-mini-g1i-intel-core-ultra-5-235t-16gb-ram-512gb-ssd-windows-11-de1w0es/version.asp",
    "price": 914.97,
    "image": "https://www.laptopsdirect.co.uk/Images/D44DZET_1_Classic.jpg?v=8",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2097329",
+   "mpn": "DZ4N1ET",
+   "title": "HP ProDesk 4 SFF G1i AI Intel Core Ultra 5 235 16GB RAM 512GB SSD Windows 11 Pro Desktop PC",
+   "url": "https://www.laptopsdirect.co.uk/hp-prodesk-4-sff-g1i-ai-intel-core-ultra-5-235-16gb-ram-512gb-ssd-windows-1-dz4n1et/version.asp",
+   "price": 849.97,
+   "wasPrice": 1674.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/DZ4N1ET_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -1580,7 +1624,6 @@
    "title": "HP ProStudio 4 G1i Intel Core Ultra 5 235 16GB RAM 512GB SSD 23.8 Inch Windows 11 Pro All-in-One PC",
    "url": "https://www.laptopsdirect.co.uk/prostudio-4-all-in-one-g1i-23.8-inch-desktop-ai-pc-windows-11-pro-intel-c-by6x3et/version.asp",
    "price": 1199.97,
-   "wasPrice": 1463.98,
    "image": "https://www.laptopsdirect.co.uk/Images/BY6X3ET_1_Classic.jpg?v=1",
    "inStock": true
   },
@@ -1716,6 +1759,16 @@
    "url": "https://www.laptopsdirect.co.uk/lenovo-thinkcentre-m70s-gen-5-sff-intel-core-i5-14400-16gb-ram-512gb-ssd-wi-12u8009kuk/version.asp",
    "price": 799.97,
    "image": "https://www.laptopsdirect.co.uk/Images/12U8009KUK_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2003399",
+   "mpn": "12U80003UK",
+   "title": "Lenovo ThinkCentre M70s Gen 5 SFF Intel Core i5-14400 16GB RAM 512GB SSD Windows 11 Pro Desktop PC",
+   "url": "https://www.laptopsdirect.co.uk/lenovo-thinkcentre-m70s-gen-5-sff-intel-core-i5-14400-16gb-ram-512gb-ssd-wi-12u80003uk/version.asp",
+   "price": 849.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/12U80003UK_1_Classic.jpg?v=1",
    "inStock": true
   },
   {
@@ -1971,6 +2024,16 @@
   },
   {
    "retailer": "uk-laptopsdirect",
+   "sku": "2736219",
+   "mpn": "10026309",
+   "title": "Medion ERAZER Bandit P20 Intel Core Ultra 7 265 32GB RAM 2TB SSD RTX 5060 Ti Windows 11 Gaming PC",
+   "url": "https://www.laptopsdirect.co.uk/medion-erazer-bandit-p20-intel-core-ultra-7-265-32gb-ram-2tb-ssd-rtx-5060-t-10026309/version.asp",
+   "price": 2263.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/A110026034_1_Classic.png?v=9",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
    "sku": "2736221",
    "mpn": "10026311",
    "title": "Medion ERAZER Bandit P20 Intel Core Ultra 7 265 32GB RAM 2TB SSD RTX 5070 Windows 11 Gaming PC",
@@ -2061,16 +2124,6 @@
    "url": "https://www.laptopsdirect.co.uk/medion-erazer-hunter-x35-amd-ryzen-7-9800x3d-32gb-ram-2tb-ssd-rtx-5080-wind-10026032/version.asp",
    "price": 3599.97,
    "image": "https://www.laptopsdirect.co.uk/Images/10025865_1_18449099_Classic.png?v=75",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2066082",
-   "mpn": "10025984",
-   "title": "Medion ERAZER Recon E45 AMD Ryzen 5 5500 32GB RAM 1TB SSD RTX 5060 Windows 11 Gaming PC",
-   "url": "https://www.laptopsdirect.co.uk/medion-erazer-recon-e45-amd-ryzen-55500-32gb-ram-1tb-ssd-rtx-5060-windows-1-10025984/version.asp",
-   "price": 1149.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/10025984_1_Classic.png?v=16",
    "inStock": true
   },
   {
@@ -2198,6 +2251,16 @@
    "price": 599.97,
    "wasPrice": 679.97,
    "image": "https://www.laptopsdirect.co.uk/Images/MP-V800-N125-16-512_1_Classic.png?v=3",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2734124",
+   "mpn": "51-0033",
+   "title": "Stormforce Carbon Intel Core i5 12400F 16GB RAM 1TB SSD RTX 3050 Windows 11 Gaming PC",
+   "url": "https://www.laptopsdirect.co.uk/stormforce-carbon-intel-core-i5-12400f-16gb-ram-1tb-ssd-rtx-3050-windows-11-51-0033/version.asp",
+   "price": 999.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/7873-1448_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -2346,7 +2409,7 @@
    "mpn": "71-0083",
    "title": "Stormforce Rogue AMD Ryzen 5 5500GT 16GB RAM 1TB SSD RTX 5060 Ti Windows 11 Gaming PC",
    "url": "https://www.laptopsdirect.co.uk/stormforce-rogue-amd-ryzen-5-5500gt-16gb-ram-1tb-ssd-rtx-5060-ti-windows-11-71-0083/version.asp",
-   "price": 1049.97,
+   "price": 1029.97,
    "image": "https://www.laptopsdirect.co.uk/Images/7873-1421_1_Classic.jpg?v=17",
    "inStock": true
   },

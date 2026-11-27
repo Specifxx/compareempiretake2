@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T03:03:55.245Z",
+ "scrapedAt": "2026-11-27T03:03:18.505Z",
  "offers": [
   {
    "retailer": "sg-challenger",
@@ -238,7 +238,7 @@
    "url": "https://www.challenger.sg/products/mjxp4x-a-iphone-18-pro-max-256gb-silver",
    "price": 2099,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_18_Pro_Max_Silver_PDP_Image_Position_1__en-SG.jpg?v=1789094315",
-   "inStock": false,
+   "inStock": true,
    "brand": "APPLE"
   },
   {
@@ -308,7 +308,7 @@
    "url": "https://www.challenger.sg/products/mjxw4x-a-iphone-18-pro-max-512gb-glacier",
    "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_18_Pro_Max_Glacier_PDP_Image_Position_1__en-SG.jpg?v=1789093538",
-   "inStock": false,
+   "inStock": true,
    "brand": "APPLE"
   },
   {
@@ -318,7 +318,7 @@
    "url": "https://www.challenger.sg/products/mjxu4x-a-iphone-18-pro-max-512gb-silver",
    "price": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_18_Pro_Max_Silver_PDP_Image_Position_1__en-SG.jpg?v=1789094315",
-   "inStock": false,
+   "inStock": true,
    "brand": "APPLE"
   },
   {
@@ -336,7 +336,7 @@
    "sku": "6936520898701",
    "title": "Honor 600 Black 12+256GB 5G",
    "url": "https://www.challenger.sg/products/honor-600-black-12-256gb-5g",
-   "price": 749,
+   "price": 739,
    "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Vicky_ID_STD_Black_Back_RGB_RGB_PNG_EN_HQ_1080.jpg?v=1776740404",
    "inStock": true,
@@ -347,7 +347,7 @@
    "sku": "6936520898718",
    "title": "Honor 600 Golden White 12+256GB 5G",
    "url": "https://www.challenger.sg/products/honor-600-golden-white-12-256gb-5g",
-   "price": 749,
+   "price": 739,
    "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Vicky_ID_STD_White_Back_RGB_RGB_PNG_EN_HQ_1080.jpg?v=1776740404",
    "inStock": true,
@@ -378,7 +378,7 @@
    "sku": "6936520898725",
    "title": "Honor 600 Orange 12+256GB 5G",
    "url": "https://www.challenger.sg/products/honor-600-orange-12-256gb-5g",
-   "price": 749,
+   "price": 739,
    "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Vicky_ID_STD_Orange_Back_RGB_RGB_PNG_EN_HQ_1080.jpg?v=1776740404",
    "inStock": true,
@@ -906,7 +906,8 @@
    "sku": "0195951030579",
    "title": "iPhone 17e 256GB Black",
    "url": "https://www.challenger.sg/products/mhrv4x-a-iphone-17e-256gb-black",
-   "price": 1099,
+   "price": 999,
+   "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/iPhone_17e_Black_PDP_Image_Position_1__SEA-EN.jpg?v=1772590052",
    "inStock": true,
    "brand": "APPLE"
@@ -1309,7 +1310,7 @@
    "price": 1949,
    "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/fx9u_umbr-2.jpg?v=1776650649",
-   "inStock": true,
+   "inStock": false,
    "brand": "OPPO"
   },
   {
@@ -1531,7 +1532,7 @@
    "sku": "8806097677239",
    "title": "Samsung Galaxy A17 Black 8+128GB LTE (SM-A175FZKDXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a17-black-8-128gb-lte-sm-a175fzkdxsp",
-   "price": 348,
+   "price": 299,
    "wasPrice": 378,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A175_GalaxyA17_LTE_Black_Front.jpg?v=1760336875",
    "inStock": true,
@@ -1564,20 +1565,9 @@
    "sku": "8806097677260",
    "title": "Samsung Galaxy A17 Gray 8+128GB LTE (SM-A175FZADXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-a17-gray-8-128gb-lte-sm-a175fzadxsp",
-   "price": 348,
+   "price": 299,
    "wasPrice": 378,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A175_GalaxyA17_LTE_Gray_Front.jpg?v=1759209178",
-   "inStock": true,
-   "brand": "SAMSUNG"
-  },
-  {
-   "retailer": "sg-challenger",
-   "sku": "8806097677291",
-   "title": "Samsung Galaxy A17 Light Blue 8+128GB LTE (SM-A175FLBDXSP)",
-   "url": "https://www.challenger.sg/products/samsung-galaxy-a17-light-blue-8-128gb-lte-sm-a175flbdxsp",
-   "price": 348,
-   "wasPrice": 378,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A175_GalaxyA17_LTE_LightBlue_Front.jpg?v=1759209479",
    "inStock": true,
    "brand": "SAMSUNG"
   },
@@ -1589,7 +1579,7 @@
    "price": 298,
    "wasPrice": 328,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A185_GalaxyA18_LTE_Front_LightBlue.jpg?v=1794466689",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -1600,7 +1590,7 @@
    "price": 298,
    "wasPrice": 328,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A185_GalaxyA18_LTE_Front_Silver.jpg?v=1794466698",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -1797,7 +1787,7 @@
    "price": 718,
    "wasPrice": 768,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A576_GalaxyA57_5G_Front_AwesomeIcyblue.jpg?v=1773802975",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -1819,7 +1809,7 @@
    "price": 718,
    "wasPrice": 768,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-A576_GalaxyA57_5G_Front_AwesomeNavy.jpg?v=1773802975",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -2061,7 +2051,7 @@
    "price": 1928,
    "wasPrice": 2328,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_cobaltviolet_251120.jpg?v=1771905125",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -2080,7 +2070,7 @@
    "sku": "8806097881070",
    "title": "Samsung Galaxy S26 Ultra 16GB+1TB 5G Black (SM-S948BZKQXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-ultra-black-16gb-1tb-5g-sm-s948bzkqxsp",
-   "price": 2528,
+   "price": 2428,
    "wasPrice": 2928,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_black_251120.jpg?v=1771905095",
    "inStock": true,
@@ -2091,7 +2081,7 @@
    "sku": "8806097881421",
    "title": "Samsung Galaxy S26 Ultra 16GB+1TB 5G Sky Blue (SM-S948BLBQXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-ultra-l-blue-16gb-1tb-5g-sm-s948blbqxsp",
-   "price": 2528,
+   "price": 2428,
    "wasPrice": 2928,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_skyblue_251114.jpg?v=1771905784",
    "inStock": true,
@@ -2102,7 +2092,7 @@
    "sku": "8806097881926",
    "title": "Samsung Galaxy S26 Ultra 16GB+1TB 5G Violet (SM-S948BZVQXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-ultra-violet-16gb-1tb-5g-sm-s948bzvqxsp",
-   "price": 2528,
+   "price": 2428,
    "wasPrice": 2928,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_cobaltviolet_251120.jpg?v=1771905125",
    "inStock": true,
@@ -2113,7 +2103,7 @@
    "sku": "8806097881490",
    "title": "Samsung Galaxy S26 Ultra 16GB+1TB 5G White (SM-S948BZWQXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-ultra-white-16gb-1tb-5g-sm-s948bzwqxsp",
-   "price": 2528,
+   "price": 2428,
    "wasPrice": 2928,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s948_galaxys26ultra_front_white_251120.jpg?v=1771905111",
    "inStock": false,
@@ -2168,7 +2158,7 @@
    "sku": "8806097997375",
    "title": "Samsung Galaxy S26+ 12+512GB 5G Black (SM-S947BZKCXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-black-12-512gb-5g-sm-s947bzkcxsp",
-   "price": 1678,
+   "price": 1628,
    "wasPrice": 2078,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s947_galaxys26plus_front_black_251128.jpg?v=1771905035",
    "inStock": true,
@@ -2179,7 +2169,7 @@
    "sku": "8806097997429",
    "title": "Samsung Galaxy S26+ 12+512GB 5G Sky Blue (SM-S947BLBCXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-light-blue-12-512gb-5g-sm-s947blbcxsp",
-   "price": 1678,
+   "price": 1628,
    "wasPrice": 2078,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s947_galaxys26plus_front_skyblue_251128.jpg?v=1771905060",
    "inStock": true,
@@ -2190,7 +2180,7 @@
    "sku": "8806097997559",
    "title": "Samsung Galaxy S26+ 12+512GB 5G Violet (SM-S947BZVCXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-violet-12-512gb-5g-sm-s947bzvcxsp",
-   "price": 1678,
+   "price": 1628,
    "wasPrice": 2078,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s947_galaxys26plus_front_cobaltviolet_251128.jpg?v=1771905050",
    "inStock": true,
@@ -2201,7 +2191,7 @@
    "sku": "8806097997481",
    "title": "Samsung Galaxy S26+ 12+512GB 5G White (SM-S947BZWCXSP)",
    "url": "https://www.challenger.sg/products/samsung-galaxy-s26-white-12-512gb-5g-sm-s947bzwcxsp",
-   "price": 1678,
+   "price": 1628,
    "wasPrice": 2078,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/sm-s947_galaxys26plus_front_white_251128.jpg?v=1771905070",
    "inStock": true,
@@ -2215,7 +2205,7 @@
    "price": 898,
    "wasPrice": 1168,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-S741_GalaxyS26FE_Front_Blueberry.jpg?v=1787882217",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -2226,7 +2216,7 @@
    "price": 898,
    "wasPrice": 1168,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-S741_GalaxyS26FE_Front_Graphite.jpg?v=1787882229",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -2259,7 +2249,7 @@
    "price": 1168,
    "wasPrice": 1468,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-S741_GalaxyS26FE_Front_Graphite.jpg?v=1787882229",
-   "inStock": false,
+   "inStock": true,
    "brand": "SAMSUNG"
   },
   {
@@ -2270,30 +2260,8 @@
    "price": 1168,
    "wasPrice": 1468,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/SM-S741_GalaxyS26FE_Front_Pistachio.jpg?v=1787882224",
-   "inStock": false,
-   "brand": "SAMSUNG"
-  },
-  {
-   "retailer": "sg-challenger",
-   "sku": "6932204522085",
-   "title": "Vivo V70 Alpine Grey 12+256GB 5G",
-   "url": "https://www.challenger.sg/products/vivo-v70-alpine-grey-12-256gb-5g",
-   "price": 767,
-   "wasPrice": 799,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/V70__Alpine_Gray_6_view_back.jpg?v=1773731454",
    "inStock": true,
-   "brand": "VIVO"
-  },
-  {
-   "retailer": "sg-challenger",
-   "sku": "6932204522092",
-   "title": "Vivo V70 Golden Hour 12+256GB 5G",
-   "url": "https://www.challenger.sg/products/vivo-v70-golden-hour-12-256gb-5g",
-   "price": 767,
-   "wasPrice": 799,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/V70__Golden_Hour_6_view_back.jpg?v=1773731454",
-   "inStock": false,
-   "brand": "VIVO"
+   "brand": "SAMSUNG"
   },
   {
    "retailer": "sg-challenger",
@@ -2359,6 +2327,26 @@
    "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/V80Lite_EmeraldGreen_back.jpg?v=1789537624",
    "inStock": true,
+   "brand": "VIVO"
+  },
+  {
+   "retailer": "sg-challenger",
+   "sku": "6932204546401",
+   "title": "Vivo V80 Starwish Purple 8+256GB 5G",
+   "url": "https://www.challenger.sg/products/vivo-v80-starwish-purple-8-256gb-5g",
+   "price": 899,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/V80_Purple_back.jpg?v=1795746644",
+   "inStock": false,
+   "brand": "VIVO"
+  },
+  {
+   "retailer": "sg-challenger",
+   "sku": "6932204546395",
+   "title": "Vivo V80 Vast Gray 8+256GB 5G",
+   "url": "https://www.challenger.sg/products/vivo-v80-vast-gray-8-256gb-5g",
+   "price": 899,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/V80_grey_back.jpg?v=1795746647",
+   "inStock": false,
    "brand": "VIVO"
   },
   {
@@ -2528,24 +2516,22 @@
   },
   {
    "retailer": "sg-challenger",
-   "sku": "6932204515025",
-   "title": "Vivo Y31 Green 8+256GB 5G",
-   "url": "https://www.challenger.sg/products/vivo-y31-green-8-256gb-5g",
-   "price": 441,
-   "wasPrice": 459,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Y31_GreenBack.jpg?v=1763087565",
-   "inStock": true,
+   "sku": "6932204545770",
+   "title": "Vivo Y32 Jet Black 6+128GB 5G",
+   "url": "https://www.challenger.sg/products/vivo-y32-jet-black-6-128gb-5g",
+   "price": 429,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Y32_JetBlack_back.jpg?v=1795746497",
+   "inStock": false,
    "brand": "VIVO"
   },
   {
    "retailer": "sg-challenger",
-   "sku": "6932204514639",
-   "title": "Vivo Y31 Red 8+256GB 5G",
-   "url": "https://www.challenger.sg/products/vivo-y31-red-8-256gb-5g",
-   "price": 441,
-   "wasPrice": 459,
-   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Y31_RedBack.jpg?v=1763087661",
-   "inStock": true,
+   "sku": "6932204545763",
+   "title": "Vivo Y32 Sunrise Gold 6+128GB 5G",
+   "url": "https://www.challenger.sg/products/vivo-y32-sunrise-gold-6-128gb-5g",
+   "price": 429,
+   "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/Y32_PearlGold_back.jpg?v=1795746556",
+   "inStock": false,
    "brand": "VIVO"
   },
   {
@@ -2804,7 +2790,7 @@
    "sku": "6932554470449",
    "title": "Xiaomi Redmi Note 15 Pro 12+256GB Mist Purple 5G",
    "url": "https://www.challenger.sg/products/xiaomi-redmi-note-15-pro-12-256gb-mist-purple-5g",
-   "price": 469,
+   "price": 459,
    "wasPrice": 509,
    "image": "https://cdn.shopify.com/s/files/1/0614/3180/8075/files/P16_Purple_back.png?v=1768189113",
    "inStock": true,

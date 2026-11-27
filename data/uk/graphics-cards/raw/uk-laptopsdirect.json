@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:58:21.943Z",
+ "scrapedAt": "2026-11-27T02:56:23.058Z",
  "offers": [
   {
    "retailer": "uk-laptopsdirect",
@@ -46,13 +46,14 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2004854",
-   "mpn": "90YV0LV0-M0NA00",
-   "title": "ASUS GeForce RTX 5080 16GB GDDR7 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/asus-geforce-rtx-5080-16gb-gddr7-graphics-card-90yv0lv0-m0na00/version.asp",
-   "price": 1541.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/90YV0LV0-M0NA00_1_Classic.jpg?v=5",
-   "inStock": false
+   "sku": "2017896",
+   "mpn": "90YV0M19-M0NA00",
+   "title": "ASUS GeForce RTX 5070 12GB GDDR7 Graphics Card",
+   "url": "https://www.laptopsdirect.co.uk/asus-geforce-rtx-5070-12gb-gddr7-graphics-card-90yv0m19-m0na00/version.asp",
+   "price": 865.97,
+   "wasPrice": 910.79,
+   "image": "https://www.laptopsdirect.co.uk/Images/90YV0M19-M0NA00_1_Classic.jpg?v=5",
+   "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
@@ -73,6 +74,26 @@
    "url": "https://www.laptopsdirect.co.uk/grade-a1-asus-geforce-rtx-5050-8gb-gddr7-graphics-card-a1-90yv0n72-m0na00/version.asp",
    "price": 379.97,
    "image": "https://www.laptopsdirect.co.uk/Images/90YV0N72-M0NA00_1_Classic.png?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "2032089",
+   "mpn": "GV-N5090AORUSST ICE-32GD",
+   "title": "GIGABYTE AORUS GeForce RTX 5090 STEALTH ICE 32GB GDDR7 Graphics Card",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-aorus-geforce-rtx-5090-stealth-ice-32gb-gddr7-graphics-card-gv-n5090aorusst-ice-32gd/version.asp",
+   "price": 9299,
+   "image": "https://www.laptopsdirect.co.uk/Images/GV-N5090AORUSST%20ICE-32GD_1_Classic.jpg?v=5",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-laptopsdirect",
+   "sku": "1999130",
+   "mpn": "GV-R9070XTAORUS E-16GD",
+   "title": "Gigabyte AORUS Radeon RX 9070 XT ELITE 16GB GDDR6 Graphics Card",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-aorus-radeon-rx-9070-xt-elite-16gb-gddr6-graphics-card-gv-r9070xtaorus-e-16gd/version.asp",
+   "price": 1052.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/GV-R9070XTAORUS%20E-16GD_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -113,7 +134,6 @@
    "title": "Gigabyte GeForce RTX 3060 Windforce 12GB GDDR6 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-3060-windforce-12gb-gddr6-oc-graphics-card-v2-gv-n3060wf2oc-12gd-v2/version.asp",
    "price": 441.97,
-   "wasPrice": 470.99,
    "image": "https://www.laptopsdirect.co.uk/Images/GV-N3060WF2OC-12GD%20V2_1_Classic.png?v=25",
    "inStock": true
   },
@@ -139,42 +159,24 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2010879",
-   "mpn": "GV-N506TWF2OC-8GD",
-   "title": "Gigabyte GeForce RTX 5060 Ti WINDFORCE OC 8GB GDDR7 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-5060-ti-windforce-oc-8gb-gddr7-graphics-card-gv-n506twf2oc-8gd/version.asp",
-   "price": 536.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/GV-N506TWF2OC-8GD_1_Classic.jpg?v=1",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-laptopsdirect",
-   "sku": "2016066",
-   "mpn": "GV-N507TWF3OC-16GD",
-   "title": "Gigabyte GeForce RTX 5070 Ti WINDFORCE OC 16GB GDDR7 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/gigabyte-geforce-rtx-5070-ti-windforce-oc-16gb-gddr7-graphics-card-gv-n507twf3oc-16gd/version.asp",
-   "price": 1243.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/GV-N507TWF3OC-16GD_1_Classic.jpg?v=1",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "1845261",
    "mpn": "GV-R76GAMING OC-8GD",
    "title": "Gigabyte Radeon RX 7600 OC 8GB GDDR6 Graphics Card",
    "url": "https://www.laptopsdirect.co.uk/gigabyte-radeon-rx-7600-8gb-gddr6-oc-graphics-card-gv-r76gaming-oc-8gd/version.asp",
    "price": 452.97,
+   "wasPrice": 477.46,
    "image": "https://www.laptopsdirect.co.uk/Images/GV-R76GAMING%20OC-8GD_1_Classic.jpg?v=5",
    "inStock": true
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2716548",
-   "mpn": "GV-R907GREGAMING OC-12GD",
-   "title": "GIGABYTE Radeon RX 9070 GRE 12GB GDDR6 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/gigabyte-radeon-rx-9070-gre-12gb-gddr6-graphics-card-gv-r907gregaming-oc-12gd/version.asp",
-   "price": 721.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/GV-R907GREGAMING%20OC-12GD_1_Classic.png?v=5",
+   "sku": "1999129",
+   "mpn": "GV-R9070XTGAMING OC-16GD",
+   "title": "Gigabyte Radeon RX 9070 XT GAMING OC 16GB GDDR6 Graphics Card",
+   "url": "https://www.laptopsdirect.co.uk/gigabyte-radeon-rx-9070-xt-gaming-oc-16gb-gddr6-graphics-card-gv-r9070xtgaming-oc-16gd/version.asp",
+   "price": 1031.97,
+   "wasPrice": 1138,
+   "image": "https://www.laptopsdirect.co.uk/Images/GV-R9070XTGAMING%20OC-16GD_1_Classic.png?v=5",
    "inStock": true
   },
   {
@@ -211,16 +213,6 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2038466",
-   "mpn": "NE7506T019P1-GB2062D",
-   "title": "Palit GeForce RTX™ 5060 Ti Dual 8GB GDDR7 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/palit-geforce-rtx-5060-ti-8gb-gddr7-graphics-card-ne7506t019p1-gb2062d/version.asp",
-   "price": 556.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NE7506TT19P1-GB2062D_1_16536357_Classic.jpg?v=5",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-laptopsdirect",
    "sku": "2038464",
    "mpn": "NE7506T019T1-GB2061S",
    "title": "Palit GeForce RTX™ 5060 Ti Infinity 3 16GB GDDR7 Graphics Card",
@@ -231,13 +223,13 @@
   },
   {
    "retailer": "uk-laptopsdirect",
-   "sku": "2038462",
-   "mpn": "NE7506TS19T1-GB2061S",
-   "title": "Palit GeForce RTX™ 5060 Ti Infinity 3 OC 16GB GDDR7 Graphics Card",
-   "url": "https://www.laptopsdirect.co.uk/palit-geforce-rtx-5060-ti-infinity-3-oc-16gb-gddr7-graphics-card-ne7506ts19t1-gb2061s/version.asp",
-   "price": 832.97,
-   "image": "https://www.laptopsdirect.co.uk/Images/NE7506TS19T1-GB2061S_1_Classic.jpg?v=5",
-   "inStock": false
+   "sku": "2038443",
+   "mpn": "NE7507TS19T2-GB2031U",
+   "title": "Palit GeForce RTX™ 5070 Ti GamingPro-S OC 16GB GDDR7 Graphics Card",
+   "url": "https://www.laptopsdirect.co.uk/palit-geforce-rtx-5070-ti-gamingpro-s-oc-16gb-gddr7-graphics-card-ne7507ts19t2-gb2031u/version.asp",
+   "price": 1362.97,
+   "image": "https://www.laptopsdirect.co.uk/Images/NE7507TS19T2-GB2031U_1_Classic.jpg?v=5",
+   "inStock": true
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T02:34:20.472Z",
+ "scrapedAt": "2026-11-27T02:33:57.205Z",
  "offers": [
   {
    "retailer": "us-brandsmart",
@@ -354,7 +354,8 @@
    "sku": "BNSPEAKERH02",
    "title": "Audio X Smart Wireless Speaker",
    "url": "https://www.brandsmartusa.com/products/audio-headphones-speakers-bluetooth-speakers-audio-x-smart-wireless-speaker",
-   "price": 549.99,
+   "price": 434,
+   "wasPrice": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/11432f40-dce0-49b0-a403-da219ab84eee.jpg?v=1790103421",
    "inStock": true,
    "brand": "BRANE",
@@ -1210,7 +1211,7 @@
    "sku": "PARTYBOX130BK",
    "title": "PartyBox 130 Portable Party Speaker - Black",
    "url": "https://www.brandsmartusa.com/products/audio-headphones-speakers-party-speakers-partybox-130-portable-party-speaker-black",
-   "price": 319.95,
+   "price": 319.99,
    "wasPrice": 550,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/099adb63-4ec7-461d-aa3d-10fd0681c604.jpg?v=1790165125",
    "inStock": true,
@@ -1221,7 +1222,7 @@
    "sku": "PARTYBOX130WH",
    "title": "PartyBox 130 Portable Party Speaker - White",
    "url": "https://www.brandsmartusa.com/products/audio-headphones-speakers-party-speakers-partybox-130-portable-party-speaker-white",
-   "price": 319.95,
+   "price": 319.99,
    "wasPrice": 550,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/4d0514f1-1a8a-4118-b705-7b17420d2a17.jpg?v=1790165124",
    "inStock": true,
@@ -1237,6 +1238,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/5289c848-c4ee-4cfa-a93a-249eecfc8469.jpg?v=1790103585",
    "inStock": true,
    "mpn": "PARTYBOX310"
+  },
+  {
+   "retailer": "us-brandsmart",
+   "sku": "PARTYBOX330BK",
+   "title": "PartyBox 330 Portable Party Speaker - Black",
+   "url": "https://www.brandsmartusa.com/products/audio-headphones-speakers-party-speakers-partybox-330-portable-party-speaker-black",
+   "price": 499.95,
+   "wasPrice": 754.95,
+   "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/adf3752e-c315-4881-b9d8-145cf7981325.jpg?v=1790165124",
+   "inStock": true,
+   "mpn": "PARTYBOX330BK"
   },
   {
    "retailer": "us-brandsmart",
@@ -1378,7 +1390,8 @@
    "sku": "HWLS60D",
    "title": "SAMSUNG Music Frame Dolby ATMOS Smart Speaker",
    "url": "https://www.brandsmartusa.com/products/tv-home-theater-home-theater-wireless-home-speakers-samsung-music-frame-dolby-atmos-smart-speaker",
-   "price": 399.99,
+   "price": 299.99,
+   "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0802/4332/7234/files/d07a65d6-8e93-49ca-ad0a-99f851b8bedd.jpg?v=1795054578",
    "inStock": true,
    "brand": "Samsung",
