@@ -5,13 +5,14 @@
 :root {
   /* A plain shop-window palette (owner, 2026-11-10: "look and feel like a big price comparison site"): light grey
      page, white cards, near-black text, one blue for links and buttons, green only for savings. */
-  --bg: 243 244 246;
+  /* Warm paper (design language v2 "Ledger", 2026-11-27). */
+  --bg: 247 246 242;
   --card: 255 255 255;
-  --sunk: 236 238 241;
-  --ink: 22 24 29;
-  --ink-soft: 60 64 72;
-  --ink-mute: 98 104 114; /* 4.8:1 on the sunk panel, 5.1:1 on the page (2026-11-14) */
-  --line: 222 225 230;
+  --sunk: 242 241 236;
+  --ink: 17 18 22;
+  --ink-soft: 58 60 66;
+  --ink-mute: 96 97 102; /* 5.6:1 on the sunk panel, 5.9:1 on the page */
+  --line: 226 224 217;
   --brand: 20 86 214;
   --brand-soft: 232 240 254;
   --brand-ink: 255 255 255;
@@ -22,13 +23,14 @@
 }
 
 .dark {
-  --bg: 16 18 22;
-  --card: 26 29 34;
-  --sunk: 21 23 28;
-  --ink: 236 238 242;
-  --ink-soft: 196 200 208;
-  --ink-mute: 142 148 158;
-  --line: 44 48 56;
+  /* Near-black, neutral greys (v2 "Ledger"). */
+  --bg: 9 10 12;
+  --card: 17 18 21;
+  --sunk: 13 14 17;
+  --ink: 237 237 239;
+  --ink-soft: 196 198 204;
+  --ink-mute: 156 159 168;
+  --line: 38 40 46;
   --brand: 110 160 255;
   --brand-soft: 26 38 64;
   --brand-ink: 10 14 22;
@@ -429,8 +431,8 @@ html[data-bottomnav] [data-dock-stack] { translate: 0 calc(-1 * var(--bn-space) 
    One radius for surfaces (10px) and one for small marks (6px); a hover firms the border, nothing lifts or glows; sections are
    divided by a hairline; the home hero is a masthead with one real picture (HeroBoard). No markup order, words, URL or heading
    changes here. DECISIONS.md, 2026-11-27. */
-.card { border-radius: 10px; }
-.btn { border-radius: 10px; }
+.card { border-radius: 12px; }
+.btn { border-radius: 8px; }
 .chip { border-radius: 6px; }
 .tile-hover:hover { border-color: rgb(var(--ink) / 0.4); box-shadow: none; }
 .dark .card { box-shadow: none; }
@@ -466,3 +468,53 @@ html[data-bottomnav] [data-dock-stack] { translate: 0 calc(-1 * var(--bn-space) 
 .ad-arrow:hover { border-color: rgb(var(--ink) / 0.4); color: rgb(var(--ink)); }
 .ad-scroll { scrollbar-width: thin; }
 .ad-tile .img-tile { border: 0; }
+
+/* empire-v2:start — "Ledger", the Empire design language v2 (2026-11-27; /mnt/project-files/design-system/README.md). Owner:
+   "state of the art … what like an expert would do." A price ledger: Geist for words, Geist Mono for every figure, near-black
+   in the dark and warm paper in the light (the tokens at the top of this file), hairlines instead of boxes, one blue used only
+   where you act, every product photo on the same paper plate, the price the loudest thing on a card or row. CSS and fonts only:
+   no word, order, URL, heading or ranking changes. The buy buttons keep their fill and colour until the 2 Dec A/B reads and the
+   end of Cyber Weekend: only their shape changes. Nothing blurs or rises in on scroll. */
+:root { --v2-paper: #f3f2ee; }
+body { letter-spacing: -0.006em; }
+h1 { letter-spacing: -0.035em; }
+h2 { letter-spacing: -0.025em; }
+.hero-h1 { font-weight: 600; letter-spacing: -0.05em; line-height: 1; }
+@media (min-width: 640px) { .hero-h1 { font-size: clamp(2.75rem, 4.6vw, 4rem); } }
+/* Figures in mono: prices, counts in the ledger line, the ad tiles' prices. Never sentences. */
+.price, .ad-tile .tabular-nums, .hero-meta b, .board-fig {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.price { font-weight: 600; }
+.price .text-xs, .price .text-\[11px\] { font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif; letter-spacing: 0; }
+.eyebrow, .hero-kicker, table thead th { font-family: var(--font-mono), ui-monospace, monospace; letter-spacing: 0.06em; }
+/* The ledger line: its figures in mono, its words in Geist (all-mono wrapped onto two lines at 1440px). */
+.hero-meta b { font-size: 0.95em; }
+.hero-meta b { font-weight: 600; }
+/* The header: one quiet row on the page's own ground, one hairline. */
+header.sticky { background: rgb(var(--bg) / 0.97); }
+/* Photos: one paper plate everywhere, multiplied so the store's white background melts into it, in both themes. */
+.img-tile, .dark .img-tile { background: var(--v2-paper); }
+.product-img, .dark .product-img { mix-blend-mode: multiply; }
+.pc-plate { border-radius: 8px; }
+.pc-badge { font-family: var(--font-mono), ui-monospace, monospace; letter-spacing: -0.01em; border-radius: 6px; }
+/* Cards: a hairline, a raised surface on hover, no shadow, no lift. */
+.card { box-shadow: none; }
+.tile-hover:hover { border-color: rgb(var(--ink-mute) / 0.55); background-color: rgb(var(--sunk)); }
+.dark .tile-hover:hover { background-color: rgb(24 26 30); }
+/* The country picker reads as one segmented control: the current one in solid ink. */
+.home-hero nav[aria-label="Choose your country"] a { font-weight: 500; background: transparent; }
+.home-hero nav[aria-label="Choose your country"] a[aria-current] { background: rgb(var(--ink)); color: rgb(var(--bg)); border-color: rgb(var(--ink)); }
+.home-hero nav[aria-label="Choose your country"] a[aria-current] span { color: rgb(var(--bg) / 0.7); }
+/* Tables: a ledger. Mono uppercase heads, hairline rows with a hover tint. */
+table thead th { font-size: 11px; font-weight: 500; text-transform: uppercase; color: rgb(var(--ink-mute)); }
+table tbody tr { transition: background-color 120ms ease; }
+table tbody tr:hover { background: rgb(var(--sunk) / 0.8); }
+/* Shape: 12 / 8 / 6. */
+.btn, .btn-primary, .btn-ghost { border-radius: 8px; }
+.tag, .chip { border-radius: 6px; }
+/* Content is simply there: nothing fades or rises into view. */
+.animate-fade-up { animation: none !important; }
+/* empire-v2:end */

@@ -28,7 +28,10 @@ import { BottomNav } from "@/components/BottomNav";
 import { BOTTOM_NAV } from "@/lib/bottom-nav";
 
 // Self-hosted (OFL, from Fontsource) so builds never depend on fetching Google Fonts.
-const sans = localFont({ src: "./fonts/inter-latin-wght-normal.woff2", variable: "--font-sans", display: "swap", weight: "100 900" });
+// Geist for words and Geist Mono for figures (design language v2 "Ledger", 2026-11-27; OFL, LICENSE-Geist.txt). "optional":
+// a slow first visit keeps the system face rather than shifting the page when the font lands.
+const sans = localFont({ src: "./fonts/Geist-Variable.woff2", variable: "--font-sans", display: "optional", weight: "100 900" });
+const mono = localFont({ src: "./fonts/GeistMono-Variable.woff2", variable: "--font-mono", display: "optional", weight: "100 900" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
@@ -104,7 +107,7 @@ const getChrome = () =>
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const { regions, nav } = getChrome();
   return (
-    <html lang="en" className={`${sans.variable} dark`} data-regions={regions.join(" ")} data-festive={CHRISTMAS_FESTIVE_LAYER ? "" : undefined} suppressHydrationWarning>
+    <html lang="en" className={`${sans.variable} ${mono.variable} dark`} data-regions={regions.join(" ")} data-festive={CHRISTMAS_FESTIVE_LAYER ? "" : undefined} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         {/* Christmas (1 November to Boxing Day): data-season on <html> from the visitor's own date. lib/season.ts. */}
