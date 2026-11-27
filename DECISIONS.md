@@ -2657,3 +2657,11 @@ changed. Tests: `tests/inline-ads.test.ts` (positions), `tests/hero-board.test.t
 
 **Read:** eBay and Amazon clicks a day by `kind` from the release after this, against 19-26 Nov (block at the foot); store
 buy clicks per visitor must not fall (the rows sit after the prices on every page that has them).
+
+## 2026-11-27 — Black Friday mode for one day (owner)
+
+Owner, 27 Nov: "for one day, have the site turn into Black Friday mode … advertising way more about products and links". For
+Black Friday in every time zone (00:00 UTC 27 Nov to 10:00 UTC 28 Nov, `lib/bf-mode.ts`) the promo line under the header becomes
+one bold Black Friday bar: the Black Friday deals page. Same
+place as the line, in the server HTML, never a pop-up, fixed or floating; ✕ hides it for the visit. The browser re-reads the
+clock, so a cached page reverts on time with no build; the files can go after Cyber Monday.
