@@ -2657,7 +2657,6 @@ changed. Tests: `tests/inline-ads.test.ts` (positions), `tests/hero-board.test.t
 
 **Read:** eBay and Amazon clicks a day by `kind` from the release after this, against 19-26 Nov (block at the foot); store
 buy clicks per visitor must not fall (the rows sit after the prices on every page that has them).
-<<<<<<< HEAD
 
 ## 2026-11-27: Design language v2, "Ledger" (owner)
 
@@ -2670,5 +2669,3 @@ words stay in Geist; kickers and table heads are mono uppercase; the country pic
 current market in solid ink; radii are 12 / 8 / 6; hover raises a surface, nothing lifts or fades in on scroll. One block,
 `empire-v2:start … end`, at the end of `globals.css`. The buy buttons keep their fill and colour (shape only) until the 2 Dec
 A/B reads and the end of Cyber Weekend. No word, order, URL, heading, ranking or ad placement changed.
-=======
->>>>>>> d42473d401a53eca33762b72067c2ee4a978177b
