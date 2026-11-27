@@ -2669,3 +2669,10 @@ words stay in Geist; kickers and table heads are mono uppercase; the country pic
 current market in solid ink; radii are 12 / 8 / 6; hover raises a surface, nothing lifts or fades in on scroll. One block,
 `empire-v2:start … end`, at the end of `globals.css`. The buy buttons keep their fill and colour (shape only) until the 2 Dec
 A/B reads and the end of Cyber Weekend. No word, order, URL, heading, ranking or ad placement changed.
+## 2026-11-27 — Black Friday mode for one day (owner)
+
+Owner, 27 Nov: "for one day, have the site turn into Black Friday mode … advertising way more about products and links". For
+Black Friday in every time zone (00:00 UTC 27 Nov to 10:00 UTC 28 Nov, `lib/bf-mode.ts`) the promo line under the header becomes
+one bold Black Friday bar: the Black Friday deals page. Same
+place as the line, in the server HTML, never a pop-up, fixed or floating; ✕ hides it for the visit. The browser re-reads the
+clock, so a cached page reverts on time with no build; the files can go after Cyber Monday.
