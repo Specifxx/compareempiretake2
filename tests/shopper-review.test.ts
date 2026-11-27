@@ -55,6 +55,15 @@ test("an eBay title must name every model word whole: an R100 is not an R10", ()
   assert.equal(ebayTitleMatches(a57, "Samsung Galaxy A57 5G 256GB Unlocked Awesome Gray"), true);
 });
 
+test("an eBay graphics card with another memory size is another card (AU report, 2026-11-26)", () => {
+  const ice16 = product("Gigabyte", "GeForce RTX 5060 Ti Eagle OC Ice 16G Graphics Card", "graphics-cards");
+  assert.equal(ebayTitleMatches(ice16, "Gigabyte GeForce RTX 5060 Ti EAGLE OC ICE 8G"), false);
+  assert.equal(ebayTitleMatches(ice16, "Gigabyte GeForce RTX 5060 Ti EAGLE OC ICE 16G GDDR7"), true);
+  assert.equal(ebayTitleMatches(ice16, "GIGABYTE GeForce RTX 5060 Ti Eagle OC ICE 16GB Graphics Card"), true);
+  assert.equal(ebayTitleMatches(ice16, "Gigabyte RTX 5060 Ti Eagle OC Ice"), false, "brand and model words still needed");
+  assert.equal(ebayTitleMatches(product("Gigabyte", "GeForce RTX 5060 Ti Eagle OC Ice 8G Graphics Card", "graphics-cards"), "Gigabyte GeForce RTX 5060 Ti EAGLE OC ICE 8G"), true);
+});
+
 test("a phone made for another market is not the local phone", () => {
   assert.equal(parseTitle("Samsung Galaxy A57 256GB (Latin America Version) Unlocked Cell Phone in Awesome Gray"), null);
   assert.equal(parseTitle("Google Pixel 10 128GB International Version - Obsidian"), null);
