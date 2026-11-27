@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T23:37:06.184Z",
+ "scrapedAt": "2026-11-26T23:35:40.826Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -119,7 +119,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-13-inch-with-m5-chip-512gb-16gb-silver",
    "price": 1797,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748033-Product-0-I-639081654815037755.jpg?v=1790763183",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -249,7 +249,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-15-inch-with-m5-chip-512gb-16gb-sky-blue",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807730-Product-0-I-639081657002250303.jpg?v=1772573479",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -259,7 +259,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-15-inch-with-m5-chip-512gb-16gb-starlight",
    "price": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/673382-Product-0-I-639081655303813456.jpg?v=1790762984",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -359,7 +359,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-proled-xdr-display-with-m5-max-chip-2tb-36gb-space-black",
    "price": 6999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890939-Product-0-I-639288161402636721.jpg?v=1793219407",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -400,17 +400,6 @@
    "price": 5799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913085-Product-0-I-639288175320320553.jpg?v=1793220787",
    "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "413895",
-   "title": "Apple MacBook Pro 14-inch with M5 Chip, 1TB/24GB (Silver)",
-   "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-with-m5-chip-1tb-24gb-silver",
-   "price": 3097,
-   "wasPrice": 3197,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/413895-Product-0-I-638961650489343232.jpg?v=1790763046",
-   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -560,7 +549,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-16-inch-proled-xdr-display-with-m5-max-chip-2tb-36gb-silver",
    "price": 7699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890941-Product-0-I-639288166202690755.jpg?v=1793219886",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -600,7 +589,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-16-inch-proled-xdr-display-with-m5-pro-chip-1tb-24gb-silver",
    "price": 5499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890940-Product-0-I-639288168007583643.jpg?v=1793220065",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -620,7 +609,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-16-inch-proled-xdr-display-with-m5-pro-chip-1tb-48gb-silver",
    "price": 6399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913086-Product-0-I-639288175803024779.jpg?v=1793220845",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -630,7 +619,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-16-inch-proled-xdr-display-with-m5-pro-chip-1tb-48gb-space-black",
    "price": 6399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913087-Product-0-I-639288175804277254.jpg?v=1793220846",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -808,19 +797,9 @@
    "sku": "914042",
    "title": "ASUS TUF F16 16\" WUXGA 144Hz Gaming Laptop (Intel Core 5 - 210H)[GeForce RTX 4050]",
    "url": "https://www.jbhifi.com.au/products/asus-tuf-f16-16-wuxga-144hz-gaming-laptop-intel-core-5-210hgeforce-rtx-4050",
-   "price": 2699,
+   "price": 1349,
+   "wasPrice": 2699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/914042-Product-0-I-639285705605745661.jpg?v=1792973826",
-   "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "896803",
-   "title": "Asus TUF F16 16\" WUXGA 144Hz Gaming Laptop (Intel Core i7 - 14650HX)[GeForce RTX 5050]",
-   "url": "https://www.jbhifi.com.au/products/asus-tuf-f16-16-wuxga-144hz-gaming-laptop-intel-core-i7-14650hxgeforce-rtx-5050",
-   "price": 1777,
-   "wasPrice": 3499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896803-Product-0-I-639153579003783637.jpg?v=1779761166",
    "inStock": true,
    "brand": "Asus"
   },
@@ -1042,7 +1021,7 @@
    "price": 2188,
    "wasPrice": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/asus-ux3480aa-su327w-zenbook-14-3k-pnk-918219-zenbook14-ux3480aa-product-photo-3p-komodo-coral-04.jpg?v=1794287409",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -1074,7 +1053,7 @@
    "url": "https://www.jbhifi.com.au/products/asus-zenbook-14-wuxga-oled-pink-laptop-qualcomm-snapdragon-x-x1-26-100512gb-16gb",
    "price": 1288,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906684-Product-0-I-639297966002863853.jpg?v=1794200063",
-   "inStock": true,
+   "inStock": false,
    "brand": "Asus"
   },
   {
@@ -1347,6 +1326,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "10106659",
+   "title": "Gigabyte Gaming A16 16in WUXGA 165Hz Ryzen 7 260 RTX 5060 512GB SSD 16GB RAM W11H Gaming Laptop (GAMING A16 3VHK3AU893SH)",
+   "url": "https://www.jbhifi.com.au/products/gigabyte-gaming-a16-16in-wuxga-165hz-ryzen-7-260-rtx-5060-512gb-ssd-16gb-ram-w11h-gaming-laptop-gaming-a16-3vhk3au893sh",
+   "price": 1799,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/bc5b1a5993b14103a882a03e95194071.jpg?v=1795663217",
+   "inStock": true,
+   "brand": "Gigabyte"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "659559",
    "title": "HP 14a-nf0005TU 14\" HD Touchscreen Chromebook Laptop (Intel N100/64GB/4GB)",
    "url": "https://www.jbhifi.com.au/products/hp-14a-nf0005tu-14-hd-touchscreen-chromebook-laptop-intel-n100-64gb-4gb",
@@ -1513,17 +1502,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/912935-Product-0-I-639252939603342717.jpg?v=1789697225",
    "inStock": true,
    "brand": "Hp"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "840502",
-   "title": "HP OMEN 16\" WQXGA 240Hz Gaming Laptop (Intel Core Ultra 7 - 255H)[GeForce RTX 5050]",
-   "url": "https://www.jbhifi.com.au/products/hp-omen-16-wqxga-240hz-gaming-laptop-intel-core-ultra-7-255hgeforce-rtx-5050",
-   "price": 2599,
-   "wasPrice": 3599,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840502-Product-0-I-639155310002136153.jpg?v=1779934307",
-   "inStock": true,
-   "brand": "Hp Omen"
   },
   {
    "retailer": "jbhifi",
@@ -2427,7 +2405,7 @@
    "price": 6499,
    "wasPrice": 7999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899165-Product-0-I-639197622620244378.jpg?v=1784165526",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lenovo"
   },
   {
@@ -2641,7 +2619,7 @@
    "price": 1248,
    "wasPrice": 2199,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/805517-Product-0-I-639144154202265204.jpg?v=1778818688",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lenovo - Yoga"
   },
   {
@@ -2709,7 +2687,8 @@
    "sku": "897413",
    "title": "Lenovo Yoga Slim 7 14\" 2.8K OLED Copilot+ AI PC Laptop (Intel Core Ultra 7-355)[1TB/32GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-slim-7-14-2-8k-oled-copilot-ai-pc-laptop-intel-core-ultra-7-3551tb-32gb",
-   "price": 2999,
+   "price": 1999,
+   "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897413-Product-0-I-639165753006427864.jpg?v=1780978594",
    "inStock": true,
    "brand": "Lenovo - Yoga"
@@ -2717,8 +2696,8 @@
   {
    "retailer": "jbhifi",
    "sku": "918172",
-   "title": "Lenovo Yoga Slim 7 14\" 2.8K WQXGA+ CoPilot+ PC Laptop (Intel Core Ultra 7)[512TB/32GB]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-slim-7-14-2-8k-wqxga-copilot-pc-laptop-intel-core-ultra-7512tb-32gb",
+   "title": "Lenovo Yoga Slim 7 14\" 2.8K WQXGA+ CoPilot+ PC Laptop (Intel Core Ultra 7)[512GB/32GB]",
+   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-slim-7-14-2-8k-wqxga-copilot-pc-laptop-intel-core-ultra-7512gb-32gb",
    "price": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918172-Product-0-I-639306620408341155.jpg?v=1795065306",
    "inStock": true,
@@ -2782,7 +2761,8 @@
    "sku": "897161",
    "title": "Lenovo Yoga Slim 7 14\" WUXGA OLED Copilot+ AI PC Laptop (Intel Core Ultra 7-355)[1TB/16GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-slim-7-14-wuxga-oled-copilot-ai-pc-laptop-intel-core-ultra-7-3551tb-16gb",
-   "price": 2799,
+   "price": 1799,
+   "wasPrice": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897161-Product-0-I-639165735006347741.jpg?v=1780976765",
    "inStock": true,
    "brand": "Lenovo - Yoga"
@@ -3149,6 +3129,17 @@
    "price": 1494,
    "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/900350-Product-0-I-639286523403733402.jpg?v=1793055606",
+   "inStock": true,
+   "brand": "Msi"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "749782",
+   "title": "MSI Modern 15 H AI 15.6\" FHD Lifestyle AI PC Laptop (Intel Core Ultra 7-155H) [512GB SSD]",
+   "url": "https://www.jbhifi.com.au/products/msi-modern-15-h-ai-15-6-fhd-lifestyle-ai-pc-laptop-intel-core-ultra-7-155h-512gb-ssd",
+   "price": 1349,
+   "wasPrice": 1799,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749782-Product-0-I-638521178416624475.jpg?v=1790763177",
    "inStock": true,
    "brand": "Msi"
   },

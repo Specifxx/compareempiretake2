@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T23:52:00.952Z",
+ "scrapedAt": "2026-11-26T23:54:06.486Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -943,7 +943,7 @@
    "price": 349,
    "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907054-Product-0-I-639226978215363334.jpg?v=1787101092",
-   "inStock": true,
+   "inStock": false,
    "mpn": "34W-2C",
    "brand": "Lenovo"
   },
@@ -1008,6 +1008,17 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660803-Product-0-I-638320638037538774.jpg?v=1696467073",
    "inStock": false,
    "mpn": "R45W-30",
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "660802",
+   "title": "Lenovo Legion Y27QF-30 27\" QHD 240Hz Gaming Monitor",
+   "url": "https://www.jbhifi.com.au/products/lenovo-legion-y27qf-30-27-qhd-240hz-gaming-monitor",
+   "price": 499,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/660802-Product-0-I-638719817403959734.jpg?v=1736385493",
+   "inStock": true,
+   "mpn": "Y27QF-30",
    "brand": "Lenovo"
   },
   {
@@ -1096,7 +1107,7 @@
    "price": 2379,
    "wasPrice": 3399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/847705-Product-0-I-638974588270128329.jpg?v=1761869799",
-   "inStock": true,
+   "inStock": false,
    "mpn": "32U990A",
    "brand": "Lg"
   },
@@ -1296,7 +1307,7 @@
    "price": 529,
    "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/831440-Product-0-I-638912510404488831.jpg?v=1755654311",
-   "inStock": true,
+   "inStock": false,
    "mpn": "272URDF",
    "brand": "Msi"
   },
@@ -1455,17 +1466,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "840545",
-   "title": "OMEN G2 27\" QHD 180Hz Gaming Monitor",
-   "url": "https://www.jbhifi.com.au/products/omen-g2-27-qhd-180hz-gaming-monitor",
-   "price": 299,
-   "wasPrice": 499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840545-Product-0-I-639158889006501679.jpg?v=1780292225",
-   "inStock": true,
-   "brand": "Hp Omen"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "816550",
    "title": "Philips 16B1P3320 15.6\" FHD Portable Business Monitor",
    "url": "https://www.jbhifi.com.au/products/philips-16b1p3320-15-6-fhd-portable-business-monitor",
@@ -1482,20 +1482,8 @@
    "url": "https://www.jbhifi.com.au/products/philips-242b9t-24-ips-smoothtouch-monitor",
    "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/633402-Product-0-I-638330060417048318.jpg?v=1697409317",
-   "inStock": true,
+   "inStock": false,
    "mpn": "242B9T",
-   "brand": "Philips"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "807574",
-   "title": "Philips 27M2N3500PF Evnia 27\" QHD 260Hz Gaming Monitor",
-   "url": "https://www.jbhifi.com.au/products/philips-27m2n3500pf-evnia-27-qhd-260hz-gaming-monitor",
-   "price": 189,
-   "wasPrice": 279,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807574-Product-0-I-638938619402741680.jpg?v=1758265206",
-   "inStock": true,
-   "mpn": "27M2N3500PF",
    "brand": "Philips"
   },
   {
@@ -1693,7 +1681,8 @@
    "sku": "780395",
    "title": "Samsung LS24GD 24\" FHD 100Hz Curved Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-ls24gd-24-fhd-100hz-curved-monitor",
-   "price": 229,
+   "price": 179,
+   "wasPrice": 229,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/780395-Product-0-I-638634466804506741.jpg?v=1727849950",
    "inStock": true,
    "mpn": "LS24GD",
@@ -1704,7 +1693,8 @@
    "sku": "780394",
    "title": "Samsung LS27D 27\" FHD 100Hz Curved Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-ls27d-27-fhd-100hz-curved-monitor",
-   "price": 269,
+   "price": 219,
+   "wasPrice": 269,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/780394-Product-0-I-638634457803288568.jpg?v=1727849051",
    "inStock": true,
    "mpn": "LS27D",
@@ -1745,21 +1735,23 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "777969",
-   "title": "Samsung Odyssey G3 24\" FHD 180Hz Gaming Monitor",
-   "url": "https://www.jbhifi.com.au/products/samsung-odyssey-g3-24-fhd-180hz-gaming-monitor",
-   "price": 269,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/777969-Product-0-I-638575677602141694.jpg?v=1722477131",
+   "sku": "777970",
+   "title": "Samsung Odyssey G3 27\" FHD 180Hz Gaming Monitor",
+   "url": "https://www.jbhifi.com.au/products/samsung-odyssey-g3-27-fhd-180hz-gaming-monitor",
+   "price": 259,
+   "wasPrice": 329,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/777970-Product-0-I-638575678804717949.jpg?v=1721971331",
    "inStock": true,
    "brand": "Samsung"
   },
   {
    "retailer": "jbhifi",
-   "sku": "777970",
-   "title": "Samsung Odyssey G3 27\" FHD 180Hz Gaming Monitor",
-   "url": "https://www.jbhifi.com.au/products/samsung-odyssey-g3-27-fhd-180hz-gaming-monitor",
-   "price": 329,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/777970-Product-0-I-638575678804717949.jpg?v=1721971331",
+   "sku": "777971",
+   "title": "Samsung Odyssey G3 32\" FHD 180Hz Gaming Monitor",
+   "url": "https://www.jbhifi.com.au/products/samsung-odyssey-g3-32-fhd-180hz-gaming-monitor",
+   "price": 299,
+   "wasPrice": 379,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/777971-Product-0-I-638724966005545273.jpg?v=1736899872",
    "inStock": true,
    "brand": "Samsung"
   },
@@ -1790,7 +1782,8 @@
    "sku": "829382",
    "title": "Samsung Odyssey G5 27\" QHD 180Hz Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-odyssey-g5-27-qhd-180hz-gaming-monitor",
-   "price": 499,
+   "price": 399,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829382-Product-0-I-638905643449670090.jpg?v=1754967612",
    "inStock": true,
    "brand": "Samsung"
@@ -1800,7 +1793,8 @@
    "sku": "829383",
    "title": "Samsung Odyssey G5 32\" QHD 180Hz Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-odyssey-g5-32-qhd-180hz-gaming-monitor",
-   "price": 599,
+   "price": 479,
+   "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/829383-Product-0-I-638905647625246020.jpg?v=1754968032",
    "inStock": true,
    "brand": "Samsung"
@@ -1810,7 +1804,8 @@
    "sku": "881648",
    "title": "Samsung Odyssey G5 G50SF 27” QHD 180Hz OLED Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-odyssey-g5-g50sf-27-qhd-180hz-oled-gaming-monitor",
-   "price": 799,
+   "price": 499,
+   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/881648-Product-0-I-639041208605417365.jpg?v=1768524125",
    "inStock": true,
    "mpn": "G50SF",
@@ -1821,8 +1816,20 @@
    "sku": "807238",
    "title": "Samsung Odyssey G55T 34\" UWQHD 165Hz Curved Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/samsung-odyssey-g55t-34-uwqhd-165hz-curved-gaming-monitor",
-   "price": 649,
+   "price": 519,
+   "wasPrice": 649,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807238-Product-0-I-638813991693375642.jpg?v=1745802434",
+   "inStock": true,
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "615137",
+   "title": "Samsung Odyssey G6 32\" Curved QHD Gaming Monitor",
+   "url": "https://www.jbhifi.com.au/products/samsung-odyssey-g6-32-curved-qhd-gaming-monitor",
+   "price": 719,
+   "wasPrice": 899,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/615137-Product-0-I-638047952241191772.jpg?v=1669159320",
    "inStock": true,
    "brand": "Samsung"
   },
@@ -1889,7 +1896,7 @@
    "price": 549,
    "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907067-Product-0-I-639225408606241525.jpg?v=1786944125",
-   "inStock": true,
+   "inStock": false,
    "mpn": "S80UH",
    "brand": "Samsung"
   },
@@ -1903,6 +1910,30 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907068-Product-1-I-639225390007247218.jpg?v=1786944246",
    "inStock": true,
    "mpn": "S80UH",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "750427",
+   "title": "Samsung ViewFinity S80UD 27\" UHD Monitor",
+   "url": "https://www.jbhifi.com.au/products/samsung-viewfinity-s80ud-27-uhd-monitor",
+   "price": 559,
+   "wasPrice": 699,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/750427-Product-0-I-638532306013445719.jpg?v=1717633874",
+   "inStock": true,
+   "mpn": "S80UD",
+   "brand": "Samsung"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "750428",
+   "title": "Samsung ViewFinity S80UD 32\" UHD Monitor",
+   "url": "https://www.jbhifi.com.au/products/samsung-viewfinity-s80ud-32-uhd-monitor",
+   "price": 639,
+   "wasPrice": 799,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/750428-Product-0-I-638532314433193020.jpg?v=1718762060",
+   "inStock": true,
+   "mpn": "S80UD",
    "brand": "Samsung"
   }
  ]

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T23:56:17.202Z",
+ "scrapedAt": "2026-11-26T23:54:18.000Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -23,31 +23,11 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "810886",
-   "title": "FFalcon 40\" S55 Full HD LED Smart TV [2025]",
-   "url": "https://www.jbhifi.com.au/products/ffalcon-40-s55-full-hd-led-smart-tv-2025",
-   "price": 299,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/810886-Product-0-I-638967779406925961.jpg?v=1761181266",
-   "inStock": true,
-   "brand": "Ffalcon"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "895865",
    "title": "FFalcon 40\" S55A Full HD Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/ffalcon-40-s55a-full-hd-smart-tv-2026",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895865-Product-0-I-639178790406400098.jpg?v=1782282545",
-   "inStock": true,
-   "brand": "Ffalcon"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "810881",
-   "title": "FFalcon 43\" U65 LED Google TV [2025]",
-   "url": "https://www.jbhifi.com.au/products/ffalcon-43-u65-led-google-tv-2025",
-   "price": 399,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/810881-Product-0-I-638803656604699252.jpg?v=1744768927",
    "inStock": true,
    "brand": "Ffalcon"
   },
@@ -108,7 +88,8 @@
    "sku": "810885",
    "title": "FFalcon 75\" U65 LED Google TV [2025]",
    "url": "https://www.jbhifi.com.au/products/ffalcon-75-u65-led-google-tv-2025",
-   "price": 885,
+   "price": 785,
+   "wasPrice": 885,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/810885-Product-0-I-638803657802502846_dc2a2d01-5d4f-4d79-b869-ce6892a11a9f.jpg?v=1744779488",
    "inStock": true,
    "brand": "Ffalcon"
@@ -118,7 +99,8 @@
    "sku": "895870",
    "title": "FFalcon 75\" U65A 4K LED Google TV [2026]",
    "url": "https://www.jbhifi.com.au/products/ffalcon-75-u65a-4k-led-google-tv-2026",
-   "price": 885,
+   "price": 785,
+   "wasPrice": 885,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895870-Product-0-I-639125221802189250.jpg?v=1776925445",
    "inStock": true,
    "brand": "Ffalcon"
@@ -171,8 +153,8 @@
    "sku": "896079",
    "title": "Hisense 100\" UR8SAU ULED 4K UHD RGB Mini-LED Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-100-ur8sau-uled-4k-uhd-rgb-mini-led-smart-tv-2026",
-   "price": 6761,
-   "wasPrice": 9995,
+   "price": 5911,
+   "wasPrice": 6761,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896079-Product-0-I-639268399803695641.jpg?v=1791243789",
    "inStock": true,
    "brand": "Hisense"
@@ -226,8 +208,8 @@
    "sku": "893049",
    "title": "Hisense 40\" A4SAU Full HD Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-40-a4sau-full-hd-smart-tv-2026",
-   "price": 345,
-   "wasPrice": 395,
+   "price": 298,
+   "wasPrice": 345,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893049-Product-0-I-639268376405663528.jpg?v=1791240907",
    "inStock": true,
    "brand": "Hisense"
@@ -309,8 +291,8 @@
    "sku": "895661",
    "title": "Hisense 58\" Q6SAU 4K Hi-QLED Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-58-q6sau-4k-hi-qled-smart-tv-2026",
-   "price": 675,
-   "wasPrice": 895,
+   "price": 612,
+   "wasPrice": 675,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895661-Product-0-I-639269168405406868.jpg?v=1791320105",
    "inStock": true,
    "brand": "Hisense"
@@ -320,7 +302,8 @@
    "sku": "894739",
    "title": "Hisense 65\" Q6SAU 4K Hi-QLED Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-65-q6sau-4k-hi-qled-smart-tv-2026",
-   "price": 895,
+   "price": 777,
+   "wasPrice": 888,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894739-Product-0-I-639268378803028414.jpg?v=1791241156",
    "inStock": true,
    "brand": "Hisense"
@@ -362,8 +345,8 @@
    "sku": "895161",
    "title": "Hisense 65\" UR9SAU ULED 4K UHD RGB Mini-LED Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-65-ur9sau-uled-4k-uhd-rgb-mini-led-smart-tv-2026",
-   "price": 2466,
-   "wasPrice": 3995,
+   "price": 1944,
+   "wasPrice": 2466,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895161-Product-0-I-639268380013595983.jpg?v=1791241266",
    "inStock": true,
    "brand": "Hisense"
@@ -373,7 +356,8 @@
    "sku": "894743",
    "title": "Hisense 75\" Q6SAU 4K Hi-QLED Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-75-q6sau-4k-hi-qled-smart-tv-2026",
-   "price": 945,
+   "price": 888,
+   "wasPrice": 945,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894743-Product-0-I-639268379405106115.jpg?v=1791241208",
    "inStock": true,
    "brand": "Hisense"
@@ -436,8 +420,7 @@
    "sku": "894732",
    "title": "Hisense 85\" Q6SAU 4K Hi-QLED Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/hisense-85-q6sau-4k-hi-qled-smart-tv-2026",
-   "price": 1375,
-   "wasPrice": 1461,
+   "price": 1292,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/894732-Product-0-I-639268377602961733.jpg?v=1791241028",
    "inStock": true,
    "brand": "Hisense"
@@ -563,8 +546,8 @@
    "sku": "891993",
    "title": "LG 48\" OLED AI B6 4K Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/lg-48-oled-ai-b6-4k-smart-tv-2026",
-   "price": 1312,
-   "wasPrice": 1675,
+   "price": 1148,
+   "wasPrice": 1312,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/891993-Product-0-I-639082690202569705.jpg?v=1790122267",
    "inStock": true,
    "brand": "Lg"
@@ -576,7 +559,7 @@
    "url": "https://www.jbhifi.com.au/products/lg-48-oled-evo-ai-c6-4k-smart-tv-2026",
    "price": 2395,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/891997-Product-0-I-639082669803033419.jpg?v=1790123048",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lg"
   },
   {
@@ -615,8 +598,7 @@
    "sku": "891998",
    "title": "LG 55\" OLED EVO AI C6 4K Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/lg-55-oled-evo-ai-c6-4k-smart-tv-2026",
-   "price": 1884,
-   "wasPrice": 2995,
+   "price": 1865,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/891998-Product-0-I-639082669803155711.jpg?v=1790123048",
    "inStock": true,
    "brand": "Lg"
@@ -707,6 +689,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "802798",
+   "title": "LG 65\" OLED EVO G5 AI 4K UHD Smart TV [2025]",
+   "url": "https://www.jbhifi.com.au/products/lg-65-oled-evo-g5-ai-4k-uhd-smart-tv-2025",
+   "price": 2488,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/802798-Product-0-I-638763151217034225.jpg?v=1782779118",
+   "inStock": true,
+   "brand": "Lg"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "891980",
    "title": "LG 65\" QNED70B AI Mini-LED 4K Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/lg-65-qned70b-ai-mini-led-4k-smart-tv-2026",
@@ -721,8 +713,8 @@
    "sku": "891990",
    "title": "LG 65\" QNED86B EVO AI Mini-LED 4K Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/lg-65-qned86b-evo-ai-mini-led-4k-smart-tv-2026",
-   "price": 1432,
-   "wasPrice": 1933,
+   "price": 985,
+   "wasPrice": 1432,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/891990-Product-0-I-639082693811591016.jpg?v=1790122987",
    "inStock": true,
    "brand": "Lg"
@@ -813,6 +805,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "802799",
+   "title": "LG 77\" OLED EVO G5 AI 4K UHD Smart TV [2025]",
+   "url": "https://www.jbhifi.com.au/products/lg-77-oled-evo-g5-ai-4k-uhd-smart-tv-2025",
+   "price": 3688,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/802799-Product-0-I-638763152446215461.jpg?v=1782779117",
+   "inStock": true,
+   "brand": "Lg"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "892015",
    "title": "LG 83\"  OLED EVO AI W6 Wallpaper 4K Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/lg-83-oled-evo-ai-w6-wallpaper-4k-smart-tv-2026",
@@ -837,9 +839,19 @@
    "sku": "892005",
    "title": "LG 83\" OLED EVO AI G6 4K Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/lg-83-oled-evo-ai-g6-4k-smart-tv-2026",
-   "price": 7512,
-   "wasPrice": 9995,
+   "price": 6844,
+   "wasPrice": 7512,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/892005-Product-0-I-639082656602565060.jpg?v=1790121847",
+   "inStock": true,
+   "brand": "Lg"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "802800",
+   "title": "LG 83\" OLED EVO G5 AI 4K UHD Smart TV [2025]",
+   "url": "https://www.jbhifi.com.au/products/lg-83-oled-evo-g5-ai-4k-uhd-smart-tv-2025",
+   "price": 5488,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/802800-Product-0-I-638763153016595265.jpg?v=1782779117",
    "inStock": true,
    "brand": "Lg"
   },
@@ -891,7 +903,6 @@
    "title": "LG 97\" OLED EVO AI G6 4K Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/lg-97-oled-evo-ai-g6-4k-smart-tv-2026",
    "price": 24112,
-   "wasPrice": 24995,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/892006-Product-0-I-639082656005194531.jpg?v=1790123050",
    "inStock": true,
    "brand": "Lg"
@@ -1094,8 +1105,8 @@
    "sku": "902841",
    "title": "Samsung 100\" R85H Micro RGB 4K Smart AI TV [2026]",
    "url": "https://www.jbhifi.com.au/products/samsung-100-r85h-micro-rgb-4k-smart-ai-tv-2026",
-   "price": 7991,
-   "wasPrice": 12995,
+   "price": 6991,
+   "wasPrice": 7991,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/902841-Product-0-I-639093062404412563.jpg?v=1779678051",
    "inStock": true,
    "brand": "Samsung"
@@ -1147,7 +1158,8 @@
    "sku": "902800",
    "title": "Samsung 40\" Q5F QLED Full HD Smart TV [2026]",
    "url": "https://www.jbhifi.com.au/products/samsung-40-q5f-qled-full-hd-smart-tv-2026",
-   "price": 378,
+   "price": 298,
+   "wasPrice": 378,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/902800-Product-0-I-639137293204037426.jpg?v=1778132586",
    "inStock": true,
    "brand": "Samsung"
@@ -1242,8 +1254,8 @@
    "sku": "902837",
    "title": "Samsung 55\" R85H Micro RGB 4K Smart AI TV [2026]",
    "url": "https://www.jbhifi.com.au/products/samsung-55-r85h-micro-rgb-4k-smart-ai-tv-2026",
-   "price": 1491,
-   "wasPrice": 2195,
+   "price": 1391,
+   "wasPrice": 1491,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/902837-Product-0-I-639117139812619718.jpg?v=1793739005",
    "inStock": true,
    "brand": "Samsung"
@@ -1337,8 +1349,8 @@
    "sku": "902838",
    "title": "Samsung 65\" R85H Micro RGB 4K Smart AI TV [2026]",
    "url": "https://www.jbhifi.com.au/products/samsung-65-r85h-micro-rgb-4k-smart-ai-tv-2026",
-   "price": 1977,
-   "wasPrice": 2795,
+   "price": 1781,
+   "wasPrice": 1977,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/902838-Product-0-I-639117139812973250.jpg?v=1793739005",
    "inStock": true,
    "brand": "Samsung"
@@ -1348,8 +1360,8 @@
    "sku": "902842",
    "title": "Samsung 65\" R95H Micro RGB 4K Smart AI TV [2026]",
    "url": "https://www.jbhifi.com.au/products/samsung-65-r95h-micro-rgb-4k-smart-ai-tv-2026",
-   "price": 2477,
-   "wasPrice": 5295,
+   "price": 1967,
+   "wasPrice": 2477,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/902842-Product-0-I-639117141603053457.jpg?v=1776117427",
    "inStock": true,
    "brand": "Samsung"
@@ -1674,8 +1686,7 @@
    "sku": "901061",
    "title": "Sony 100\" BRAVIA 3 II 4K LED AI Google TV [2026]",
    "url": "https://www.jbhifi.com.au/products/sony-100-bravia-3-ii-4k-led-ai-google-tv-2026",
-   "price": 4477,
-   "wasPrice": 5495,
+   "price": 3922,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/901061-Product-0-I-639257316004267677.jpg?v=1790134867",
    "inStock": true,
    "brand": "Sony"
@@ -1826,8 +1837,7 @@
    "sku": "909202",
    "title": "Sony 65\" BRAVIA 6 OLED 4K HDR Google TV with Gemini [2026]",
    "url": "https://www.jbhifi.com.au/products/sony-65-bravia-6-oled-4k-hdr-google-tv-with-gemini-2026",
-   "price": 2492,
-   "wasPrice": 3495,
+   "price": 2195,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/909202-Product-0-I-639257314205462044.jpg?v=1790134866",
    "inStock": true,
    "brand": "Sony"
@@ -1902,8 +1912,8 @@
    "sku": "897177",
    "title": "Sony 75\" BRAVIA 9 II True RGB Mini-LED AI 4K Google TV [2026]",
    "url": "https://www.jbhifi.com.au/products/sony-75-bravia-9-ii-true-rgb-mini-led-ai-4k-google-tv-2026",
-   "price": 6461,
-   "wasPrice": 7495,
+   "price": 5886,
+   "wasPrice": 6461,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897177-Product-0-I-639257301003826133.jpg?v=1790133666",
    "inStock": true,
    "brand": "Sony"
@@ -1913,8 +1923,8 @@
    "sku": "909203",
    "title": "Sony 77\" BRAVIA 6 OLED 4K HDR Google TV with Gemini [2026]",
    "url": "https://www.jbhifi.com.au/products/sony-77-bravia-6-oled-4k-hdr-google-tv-with-gemini-2026",
-   "price": 3587,
-   "wasPrice": 5295,
+   "price": 3145,
+   "wasPrice": 3587,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/909203-Product-0-I-639257314203947093.jpg?v=1790134866",
    "inStock": true,
    "brand": "Sony"
@@ -1924,8 +1934,8 @@
    "sku": "909204",
    "title": "Sony 83\" BRAVIA 6 OLED 4K HDR Google TV with Gemini [2026]",
    "url": "https://www.jbhifi.com.au/products/sony-83-bravia-6-oled-4k-hdr-google-tv-with-gemini-2026",
-   "price": 4866,
-   "wasPrice": 6995,
+   "price": 3866,
+   "wasPrice": 4866,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/909204-Product-0-I-639257314803329570.jpg?v=1790134867",
    "inStock": true,
    "brand": "Sony"
@@ -1992,7 +2002,7 @@
    "url": "https://www.jbhifi.com.au/products/tcl-115-c7k-4k-uhd-qd-mini-led-google-tv",
    "price": 14777,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/812476-Product-0-I-639092044814832540.jpg?v=1773607747",
-   "inStock": true,
+   "inStock": false,
    "brand": "Tcl"
   },
   {
@@ -2087,8 +2097,8 @@
    "sku": "918397",
    "title": "TCL 55\" P8LS 4K UHD QD Mini-LED Google TV [2026]",
    "url": "https://www.jbhifi.com.au/products/tcl-55-p8ls-4k-uhd-qd-mini-led-google-tv-2026",
-   "price": 777,
-   "wasPrice": 1295,
+   "price": 695,
+   "wasPrice": 777,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918397-Product-0-I-639279709803700838.jpg?v=1792374247",
    "inStock": true,
    "brand": "Tcl"
@@ -2140,8 +2150,8 @@
    "sku": "918398",
    "title": "TCL 65\" P8LS 4K UHD QD Mini-LED Google TV [2026]",
    "url": "https://www.jbhifi.com.au/products/tcl-65-p8ls-4k-uhd-qd-mini-led-google-tv-2026",
-   "price": 1017,
-   "wasPrice": 1695,
+   "price": 795,
+   "wasPrice": 1017,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/918398-Product-0-I-639279709802860422.jpg?v=1792374248",
    "inStock": true,
    "brand": "Tcl"
@@ -2172,8 +2182,8 @@
    "sku": "896057",
    "title": "TCL 75\" C7L SQD-Mini LED 4K UHD Google TV with Gemini [2026]",
    "url": "https://www.jbhifi.com.au/products/tcl-75-c7l-sqd-mini-led-4k-uhd-google-tv-with-gemini-2026",
-   "price": 1845,
-   "wasPrice": 1945,
+   "price": 1695,
+   "wasPrice": 1845,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896057-Product-0-I-639131848802404569.jpg?v=1777588582",
    "inStock": true,
    "brand": "Tcl"
@@ -2270,8 +2280,8 @@
    "sku": "896049",
    "title": "TCL 85\" P7LS QLED 4K UHD Google TV with Gemini [2026]",
    "url": "https://www.jbhifi.com.au/products/tcl-85-p7ls-qled-4k-uhd-google-tv-with-gemini-2026",
-   "price": 1695,
-   "wasPrice": 1795,
+   "price": 1475,
+   "wasPrice": 1695,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/896049-Product-0-I-639131847002639661.jpg?v=1777588567",
    "inStock": true,
    "brand": "Tcl"

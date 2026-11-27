@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-25T23:47:39.000Z",
+ "scrapedAt": "2026-11-26T23:48:12.112Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -75,7 +75,7 @@
    "price": 409,
    "wasPrice": 489,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/913693-Product-0-I-639246228005192993.jpg?v=1789026065",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -332,6 +332,16 @@
    "url": "https://www.jbhifi.com.au/products/apple-watch-series-11-42mm-natural-titanium-case-gps-cellular-sport-band-m-l-stone-grey",
    "price": 1059,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/835955-Product-0-I-638930669413485387.jpg?v=1757470206",
+   "inStock": true,
+   "brand": "Apple"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "835945",
+   "title": "Apple Watch Series 11 42mm Rose Gold Aluminium Case GPS + Cellular Sport Band (S/M) [Light Blush]",
+   "url": "https://www.jbhifi.com.au/products/apple-watch-series-11-42mm-rose-gold-aluminium-case-gps-cellular-sport-band-s-m-light-blush",
+   "price": 709,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/835945-Product-0-I-638930741402653542.jpg?v=1757477423",
    "inStock": true,
    "brand": "Apple"
   },
@@ -1448,16 +1458,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "572992",
-   "title": "Garmin epix ™ (Gen 2) Sports Watch (Slate Steel)",
-   "url": "https://www.jbhifi.com.au/products/garmin-epix-gen-2-sports-watch-slate-steel",
-   "price": 746,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/572992-Product-0-I-637781752361915819.jpg?v=1642538908",
-   "inStock": true,
-   "brand": "Garmin"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "652374",
    "title": "Garmin epix ™ Pro (Gen 2) Sapphire Edition 42mm Soft Gold with Light Sand Band",
    "url": "https://www.jbhifi.com.au/products/garmin-epix-pro-gen-2-sapphire-edition-42mm-soft-gold-with-light-sand-band",
@@ -1599,16 +1599,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "911657",
-   "title": "Garmin fenix 9 Pro 47mm Solar 51mm Titanium with Pebble Grey Silicone Band",
-   "url": "https://www.jbhifi.com.au/products/garmin-fenix-9-pro-47mm-solar-51mm-titanium-with-pebble-grey-silicone-band",
-   "price": 1899,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/911657-Product-0-I-639234708006442141.jpg?v=1787874065",
-   "inStock": true,
-   "brand": "Garmin"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "911656",
    "title": "Garmin fenix 9 Pro 47mm Solar Titanium Pebble Grey Silicone Band",
    "url": "https://www.jbhifi.com.au/products/garmin-fenix-9-pro-47mm-solar-titanium-pebble-grey-silicone-band",
@@ -1684,7 +1674,7 @@
    "url": "https://www.jbhifi.com.au/products/garmin-fenix-9-pro-inreach-47mm-titanium-with-autumn-orange-spark-orange-silicone-band",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/911650-Product-0-I-639234078609298868.jpg?v=1787811126",
-   "inStock": true,
+   "inStock": false,
    "brand": "Garmin"
   },
   {
@@ -1786,7 +1776,7 @@
    "price": 999,
    "wasPrice": 1849,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/781494-Product-0-I-638596418403232087.jpg?v=1724108284",
-   "inStock": true,
+   "inStock": false,
    "brand": "Garmin"
   },
   {
@@ -2100,8 +2090,7 @@
    "sku": "660816",
    "title": "Garmin Venu 3 Sports Watch (Black/Slate)",
    "url": "https://www.jbhifi.com.au/products/garmin-venu-3-sports-watch-black-slate",
-   "price": 549,
-   "wasPrice": 749,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660816-Product-0-I-638289644403754833.jpg?v=1693368315",
    "inStock": true,
    "brand": "Garmin"
@@ -2111,8 +2100,7 @@
    "sku": "660815",
    "title": "Garmin Venu 3 Sports Watch (Whitestone/Silver)",
    "url": "https://www.jbhifi.com.au/products/garmin-venu-3-sports-watch-whitestone-silver",
-   "price": 549,
-   "wasPrice": 749,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660815-Product-0-I-638289643807137568.jpg?v=1693367652",
    "inStock": false,
    "brand": "Garmin"
@@ -2122,8 +2110,7 @@
    "sku": "660820",
    "title": "Garmin Venu 3S Sports Watch (Dust Rose/Soft Gold)",
    "url": "https://www.jbhifi.com.au/products/garmin-venu-3s-sports-watch-dust-rose-soft-gold",
-   "price": 549,
-   "wasPrice": 749,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660820-Product-0-I-638289648004905037.jpg?v=1693368073",
    "inStock": false,
    "brand": "Garmin"
@@ -2133,8 +2120,7 @@
    "sku": "660819",
    "title": "Garmin Venu 3S Sports Watch (French Grey/Soft Gold)",
    "url": "https://www.jbhifi.com.au/products/garmin-venu-3s-sports-watch-french-grey-soft-gold",
-   "price": 549,
-   "wasPrice": 749,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660819-Product-0-I-638289648004927111.jpg?v=1693368073",
    "inStock": true,
    "brand": "Garmin"
@@ -2144,8 +2130,7 @@
    "sku": "660821",
    "title": "Garmin Venu 3S Sports Watch (Ivory/Soft Gold)",
    "url": "https://www.jbhifi.com.au/products/garmin-venu-3s-sports-watch-ivory-soft-gold",
-   "price": 549,
-   "wasPrice": 749,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660821-Product-0-I-638289649203221407.jpg?v=1693368195",
    "inStock": true,
    "brand": "Garmin"
@@ -2155,8 +2140,7 @@
    "sku": "660817",
    "title": "Garmin Venu 3S Sports Watch (Pebble Grey/Slate)",
    "url": "https://www.jbhifi.com.au/products/garmin-venu-3s-sports-watch-pebble-grey-slate",
-   "price": 549,
-   "wasPrice": 749,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660817-Product-0-I-638289645003566436.jpg?v=1693367773",
    "inStock": false,
    "brand": "Garmin"
@@ -2166,8 +2150,7 @@
    "sku": "660818",
    "title": "Garmin Venu 3S Sports Watch (Sage Grey/Silver)",
    "url": "https://www.jbhifi.com.au/products/garmin-venu-3s-sports-watch-sage-grey-silver",
-   "price": 549,
-   "wasPrice": 749,
+   "price": 749,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660818-Product-0-I-638289646807633048.jpg?v=1693367954",
    "inStock": true,
    "brand": "Garmin"
@@ -2281,8 +2264,7 @@
    "sku": "811065",
    "title": "Garmin VivoActive 6 GPS Smartwatch (Lunar Gold/Bone Band)",
    "url": "https://www.jbhifi.com.au/products/garmin-vivoactive-6-gps-smartwatch-lunar-gold-bone-band",
-   "price": 399,
-   "wasPrice": 549,
+   "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811065-Product-0-I-638791470002849494.jpg?v=1743550271",
    "inStock": true,
    "brand": "Garmin"
@@ -2292,8 +2274,7 @@
    "sku": "811066",
    "title": "Garmin VivoActive 6 GPS Smartwatch (Metallic Jasper Green/Jasper Green Band)",
    "url": "https://www.jbhifi.com.au/products/garmin-vivoactive-6-gps-smartwatch-metallic-jasper-green-jasper-green-band",
-   "price": 399,
-   "wasPrice": 549,
+   "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811066-Product-0-I-638791470603318226.jpg?v=1743550330",
    "inStock": false,
    "brand": "Garmin"
@@ -2303,8 +2284,7 @@
    "sku": "811067",
    "title": "Garmin VivoActive 6 GPS Smartwatch (Metallic Pink Dawn/Pink Dawn Band)",
    "url": "https://www.jbhifi.com.au/products/garmin-vivoactive-6-gps-smartwatch-metallic-pink-dawn-pink-dawn-band",
-   "price": 399,
-   "wasPrice": 549,
+   "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811067-Product-0-I-638791471204207623.jpg?v=1743550391",
    "inStock": false,
    "brand": "Garmin"
@@ -2314,8 +2294,7 @@
    "sku": "811064",
    "title": "Garmin VivoActive 6 GPS Smartwatch (Slate/Black Band)",
    "url": "https://www.jbhifi.com.au/products/garmin-vivoactive-6-gps-smartwatch-slate-black-band",
-   "price": 399,
-   "wasPrice": 549,
+   "price": 549,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/811064-Product-0-I-638791469407012188.jpg?v=1743550213",
    "inStock": true,
    "brand": "Garmin"
@@ -2551,7 +2530,7 @@
    "price": 498,
    "wasPrice": 544,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907344-Product-0-I-639216537003459654.jpg?v=1786056966",
-   "inStock": true,
+   "inStock": false,
    "brand": "Google"
   },
   {
@@ -2763,8 +2742,18 @@
    "sku": "895014",
    "title": "moto Smart Watch (Silicone Black)",
    "url": "https://www.jbhifi.com.au/products/moto-smart-watch-silicone-black",
-   "price": 199,
+   "price": 96,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895014-Product-0-I-639118120803793501.jpg?v=1776215345",
+   "inStock": true,
+   "brand": "Moto"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "895015",
+   "title": "moto Smart Watch (Stainless Steel Black)",
+   "url": "https://www.jbhifi.com.au/products/moto-smart-watch-stainless-steel-black",
+   "price": 96,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/895015-Product-0-I-639118121402276603.jpg?v=1776215406",
    "inStock": true,
    "brand": "Moto"
   },
@@ -3088,7 +3077,8 @@
    "sku": "893369",
    "title": "Ryze Elevate Gen2 Smart Watch (Black & Olive)",
    "url": "https://www.jbhifi.com.au/products/ryze-elevate-gen2-smart-watch-black-olive",
-   "price": 99,
+   "price": 78,
+   "wasPrice": 99,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893369-Product-0-I-639128481602714253.jpg?v=1777263009",
    "inStock": true,
    "brand": "Ryze"
@@ -3098,7 +3088,8 @@
    "sku": "893371",
    "title": "Ryze Elevate Gen2 Smart Watch (Cream & Red)",
    "url": "https://www.jbhifi.com.au/products/ryze-elevate-gen2-smart-watch-cream-red",
-   "price": 99,
+   "price": 78,
+   "wasPrice": 99,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893371-Product-0-I-639128593803103270.jpg?v=1777263009",
    "inStock": true,
    "brand": "Ryze"
@@ -3108,7 +3099,8 @@
    "sku": "893370",
    "title": "Ryze Elevate Gen2 Smart Watch (Pink & Hot Pink)",
    "url": "https://www.jbhifi.com.au/products/ryze-elevate-gen2-smart-watch-pink-hot-pink",
-   "price": 99,
+   "price": 78,
+   "wasPrice": 99,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893370-Product-0-I-639128593804149717.jpg?v=1777264086",
    "inStock": true,
    "brand": "Ryze"
@@ -3138,7 +3130,8 @@
    "sku": "893372",
    "title": "Ryze Flex Gen 2 Smart Watch (Black & Blue)",
    "url": "https://www.jbhifi.com.au/products/ryze-flex-gen-2-smart-watch-black-blue",
-   "price": 149,
+   "price": 117,
+   "wasPrice": 149,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893372-Product-0-I-639128594402879242.jpg?v=1777263017",
    "inStock": true,
    "brand": "Ryze"
@@ -3148,7 +3141,8 @@
    "sku": "893373",
    "title": "Ryze Flex Gen 2 Smart Watch (Pink & Stone)",
    "url": "https://www.jbhifi.com.au/products/ryze-flex-gen-2-smart-watch-pink-stone",
-   "price": 149,
+   "price": 117,
+   "wasPrice": 149,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893373-Product-0-I-639128594402690584.jpg?v=1777263009",
    "inStock": true,
    "brand": "Ryze"
@@ -3158,7 +3152,8 @@
    "sku": "893374",
    "title": "Ryze Flex Gen 2 Smart Watch (Slate Grey & Red)",
    "url": "https://www.jbhifi.com.au/products/ryze-flex-gen-2-smart-watch-slate-grey-red",
-   "price": 149,
+   "price": 117,
+   "wasPrice": 149,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893374-Product-0-I-639128595002520890.jpg?v=1777263016",
    "inStock": true,
    "brand": "Ryze"
@@ -3221,7 +3216,8 @@
    "sku": "815305",
    "title": "Samsung Galaxy Watch Ultra 47mm (Titanium Blue) [2025]",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch-ultra-47mm-titanium-blue-2025",
-   "price": 1299,
+   "price": 585,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815305-Product-0-I-638874463806533123.jpg?v=1751849649",
    "inStock": true,
    "brand": "Samsung"
@@ -3231,7 +3227,8 @@
    "sku": "815306",
    "title": "Samsung Galaxy Watch Ultra 47mm (Titanium Grey) [2025]",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch-ultra-47mm-titanium-grey-2025",
-   "price": 1299,
+   "price": 585,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815306-Product-0-I-638874464402942191.jpg?v=1751849708",
    "inStock": true,
    "brand": "Samsung"
@@ -3241,18 +3238,9 @@
    "sku": "815308",
    "title": "Samsung Galaxy Watch Ultra 47mm (Titanium Silver) [2025]",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch-ultra-47mm-titanium-silver-2025",
-   "price": 1299,
+   "price": 585,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/815308-Product-0-I-638874465003872031.jpg?v=1751849767",
-   "inStock": true,
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "754662",
-   "title": "Samsung Galaxy Watch Ultra LTE 47mm (Grey) [2024]",
-   "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch-ultra-lte-47mm-grey-2024",
-   "price": 1299,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754662-Product-0-I-638562496802805232.jpg?v=1791256442",
    "inStock": true,
    "brand": "Samsung"
   },
@@ -3261,7 +3249,8 @@
    "sku": "754663",
    "title": "Samsung Galaxy Watch Ultra LTE 47mm (White) [2024]",
    "url": "https://www.jbhifi.com.au/products/samsung-galaxy-watch-ultra-lte-47mm-white-2024",
-   "price": 1299,
+   "price": 585,
+   "wasPrice": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754663-Product-0-I-638562496803016503.jpg?v=1791256448",
    "inStock": true,
    "brand": "Samsung"
@@ -3622,7 +3611,7 @@
    "url": "https://www.jbhifi.com.au/products/withings-scanwatch-2-black-38mm",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/672419-Product-0-I-638380213805295950.jpg?v=1702424658",
-   "inStock": false,
+   "inStock": true,
    "brand": "Withings"
   },
   {
