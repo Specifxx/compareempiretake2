@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T23:33:15.220Z",
+ "scrapedAt": "2026-11-27T23:11:05.317Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -703,6 +703,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/846364-Product-0-I-639016937402794472.jpg?v=1766097004",
    "inStock": true,
    "brand": "Firefly"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "10103057",
+   "title": "Freewell Wide Angle Lens Kit for DJI Osmo Pocket 4P / Xtra Muse 2 Pro",
+   "url": "https://www.jbhifi.com.au/products/freewell-wide-angle-lens-kit-for-dji-osmo-pocket-4p-xtra-muse-2-pro",
+   "price": 75,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/ebf72cd80ac34a518bfdccdd9c114182.jpg?v=1794279047",
+   "inStock": true,
+   "brand": "Freewell"
   },
   {
    "retailer": "jbhifi",
@@ -1431,7 +1441,7 @@
    "price": 397,
    "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/653251-Product-0-I-638235147010918446.jpg?v=1687996117",
-   "inStock": true,
+   "inStock": false,
    "brand": "Kodak"
   },
   {
@@ -1439,8 +1449,8 @@
    "sku": "653247",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (Black)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-black",
-   "price": 178,
-   "wasPrice": 219,
+   "price": 148,
+   "wasPrice": 178,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/653247-Product-0-I-638235167437009563.jpg?v=1687996121",
    "inStock": true,
    "brand": "Kodak"
@@ -1450,8 +1460,8 @@
    "sku": "893388",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (Pink)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-pink",
-   "price": 178,
-   "wasPrice": 219,
+   "price": 148,
+   "wasPrice": 178,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893388-Product-0-I-639107014803789631.jpg?v=1775104749",
    "inStock": true,
    "brand": "Kodak"
@@ -1461,8 +1471,8 @@
    "sku": "662354",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (Red)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-red",
-   "price": 178,
-   "wasPrice": 219,
+   "price": 148,
+   "wasPrice": 178,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/662354-Product-0-I-638743226420433053.jpg?v=1749022243",
    "inStock": true,
    "brand": "Kodak"
@@ -1472,8 +1482,8 @@
    "sku": "893389",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (Silver)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-silver",
-   "price": 178,
-   "wasPrice": 219,
+   "price": 148,
+   "wasPrice": 178,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/893389-Product-0-I-639113974201661640.jpg?v=1775800685",
    "inStock": true,
    "brand": "Kodak"
@@ -1483,8 +1493,8 @@
    "sku": "675795",
    "title": "Kodak Pixpro FZ45 Digital Compact Camera (White)",
    "url": "https://www.jbhifi.com.au/products/kodak-pixpro-fz45-digital-compact-camera-white",
-   "price": 178,
-   "wasPrice": 219,
+   "price": 148,
+   "wasPrice": 178,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/675795-Product-0-I-638416603849262149.jpg?v=1706063660",
    "inStock": true,
    "brand": "Kodak"
@@ -2315,7 +2325,8 @@
    "sku": "795714",
    "title": "Sony Alpha A6400 Mirrorless Camera with 16-50mm II Lens (Black)",
    "url": "https://www.jbhifi.com.au/products/sony-alpha-a6400-mirrorless-camera-with-16-50mm-ii-lens-black",
-   "price": 1274,
+   "price": 1199,
+   "wasPrice": 1274,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/795714-Product-0-I-638759584312535177.jpg?v=1791256609",
    "inStock": true,
    "brand": "Sony"
@@ -2471,7 +2482,7 @@
    "sku": "840455",
    "title": "Sony ZV-E10 Mirrorless Vlog Camera with 16-50mm OSS II Lens Kit (Black)",
    "url": "https://www.jbhifi.com.au/products/sony-zv-e10-mirrorless-vlog-camera-with-16-50mm-oss-ii-lens-kit-black",
-   "price": 969,
+   "price": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840455-Product-0-I-638973720605197555.jpg?v=1791256698",
    "inStock": true,
    "brand": "Sony"
@@ -2481,7 +2492,7 @@
    "sku": "840456",
    "title": "Sony ZV-E10 Mirrorless Vlog Camera with 16-50mm OSS II Lens Kit (White)",
    "url": "https://www.jbhifi.com.au/products/sony-zv-e10-mirrorless-vlog-camera-with-16-50mm-oss-ii-lens-kit-white",
-   "price": 969,
+   "price": 949,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840456-Product-0-I-638996218804919291.jpg?v=1791256711",
    "inStock": false,
    "brand": "Sony"

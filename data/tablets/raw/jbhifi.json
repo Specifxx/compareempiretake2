@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T23:48:09.416Z",
+ "scrapedAt": "2026-11-27T23:26:03.810Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -274,7 +274,7 @@
    "price": 999,
    "wasPrice": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807680-Product-0-I-639080812803357965.jpg?v=1772484545",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -461,7 +461,7 @@
    "price": 1199,
    "wasPrice": 1449,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807681-Product-0-I-639080821988598392.jpg?v=1772485446",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -527,7 +527,7 @@
    "price": 1549,
    "wasPrice": 1799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807686-Product-0-I-639080822120531449.jpg?v=1772485447",
-   "inStock": false,
+   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -957,16 +957,6 @@
    "wasPrice": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748017-Product-0-I-639080835003253511.jpg?v=1791174801",
    "inStock": false,
-   "brand": "Apple"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "747993",
-   "title": "Apple iPad mini 8.3-inch Wi-Fi + Cellular 256GB (Blue)[A17 Pro Chip]",
-   "url": "https://www.jbhifi.com.au/products/apple-ipad-mini-8-3-inch-wi-fi-cellular-256gb-bluea17-pro-chip",
-   "price": 1399,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/747993-Product-0-I-638646297005376548.jpg?v=1744178692",
-   "inStock": true,
    "brand": "Apple"
   },
   {
@@ -1616,7 +1606,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-ipad-pro-13-inch-256gb-wi-fi-silverm5",
    "price": 2599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/747980-Product-0-I-638961727801684284.jpg?v=1760631368",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1778,6 +1768,26 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/9fc2f20b4b564179aa7a629b014dc7d3.jpg?v=1795049412",
    "inStock": true,
    "brand": "Laser"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "920740",
+   "title": "Legion Tab Gen 5 QC SD 8Elite 16GB 512GB 8.8\" 3K Gaming Tablet",
+   "url": "https://www.jbhifi.com.au/products/legion-tab-gen-5-qc-sd-8elite-16gb-512gb-8-8-3k-gaming-tablet",
+   "price": 1699,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/920740-Product-0-I-639313563003311425.jpg?v=1795759582",
+   "inStock": false,
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "920741",
+   "title": "Legion Tab Gen 5 QC SD 8Elite 8GB 256GB 8.8\" 3K Gaming Tablet",
+   "url": "https://www.jbhifi.com.au/products/legion-tab-gen-5-qc-sd-8elite-8gb-256gb-8-8-3k-gaming-tablet",
+   "price": 1499,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/920741-Product-0-I-639313563006483841.jpg?v=1795759581",
+   "inStock": false,
+   "brand": "Lenovo"
   },
   {
    "retailer": "jbhifi",
@@ -1961,6 +1971,26 @@
    "price": 2099,
    "wasPrice": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897350-Product-0-I-639172584499191819.jpg?v=1781661727",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "805987",
+   "title": "Microsoft Surface Pro Copilot+ AI PC 12\" Snapdragon X Plus 8 core/16GB/512GB (Ocean)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-copilot-ai-pc-12-snapdragon-x-plus-8-core-16gb-512gb-ocean",
+   "price": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/805987-Product-0-I-638821718407563700.jpg?v=1746576318",
+   "inStock": true,
+   "brand": "Microsoft"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "805986",
+   "title": "Microsoft Surface Pro Copilot+ AI PC 12\" Snapdragon X Plus 8 core/16GB/512GB (Violet)",
+   "url": "https://www.jbhifi.com.au/products/microsoft-surface-pro-copilot-ai-pc-12-snapdragon-x-plus-8-core-16gb-512gb-violet",
+   "price": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/805986-Product-0-I-638821709409037281.jpg?v=1746577162",
    "inStock": true,
    "brand": "Microsoft"
   },
@@ -2153,7 +2183,7 @@
    "price": 659,
    "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/804635-Product-0-I-638789904601880947.jpg?v=1743393731",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {
@@ -2164,7 +2194,7 @@
    "price": 659,
    "wasPrice": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/804638-Product-0-I-638791485002508025.jpg?v=1743551770",
-   "inStock": false,
+   "inStock": true,
    "brand": "Samsung"
   },
   {

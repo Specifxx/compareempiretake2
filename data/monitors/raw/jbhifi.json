@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T23:54:06.486Z",
+ "scrapedAt": "2026-11-27T23:33:03.733Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -516,34 +516,12 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "579798",
-   "title": "Asus VA24DCP 23.8\" FHD Type C Monitor with 65W Power Delivery",
-   "url": "https://www.jbhifi.com.au/products/asus-va24dcp-23-8-fhd-type-c-monitor-with-65w-power-delivery",
-   "price": 223,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/579798-Product-0-I-638047865246262256.jpg?v=1669150194",
-   "inStock": true,
-   "mpn": "VA24DCP",
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "807618",
    "title": "ASUS ZenScreen Duo Dual 14\" OLED 360° Portable Monitor",
    "url": "https://www.jbhifi.com.au/products/asus-zenscreen-duo-dual-14-oled-360-portable-monitor",
    "price": 999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/807618-Product-0-I-638947065623280855.jpg?v=1759198026",
    "inStock": true,
-   "brand": "Asus"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "791772",
-   "title": "ASUS ZenScreen MB166CR 16\" FHD Portable Monitor",
-   "url": "https://www.jbhifi.com.au/products/asus-zenscreen-mb166cr-16-fhd-portable-monitor",
-   "price": 269,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/791772-Product-0-I-638736184226970460.jpg?v=1738021691",
-   "inStock": true,
-   "mpn": "MB166CR",
    "brand": "Asus"
   },
   {
@@ -898,7 +876,7 @@
    "url": "https://www.jbhifi.com.au/products/lenovo-l27h-4a-27-qhd-100hz-ips-usb-c-monitor",
    "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/788735-Product-0-I-638719837201623338.jpg?v=1736387127",
-   "inStock": false,
+   "inStock": true,
    "brand": "Lenovo"
   },
   {
@@ -991,6 +969,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "817777",
+   "title": "Lenovo Legion R27s 27\" FHD 144Hz Gaming Monitor",
+   "url": "https://www.jbhifi.com.au/products/lenovo-legion-r27s-27-fhd-144hz-gaming-monitor",
+   "price": 199,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/817777-Product-0-I-638924968807046647.jpg?v=1756900146",
+   "inStock": true,
+   "brand": "Lenovo"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "797509",
    "title": "Lenovo Legion R34w-30 34\" WQHD 180Hz Curved Gaming Monitor",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-r34w-30-34-wqhd-180hz-curved-gaming-monitor",
@@ -1006,7 +994,7 @@
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-r45w-30-44-5-dual-qhd-170hz-gaming-monitor",
    "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/660803-Product-0-I-638320638037538774.jpg?v=1696467073",
-   "inStock": false,
+   "inStock": true,
    "mpn": "R45W-30",
    "brand": "Lenovo"
   },
@@ -1051,7 +1039,7 @@
    "price": 169,
    "wasPrice": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907049-Product-0-I-639226950607606161.jpg?v=1787098565",
-   "inStock": true,
+   "inStock": false,
    "mpn": "27Q-10",
    "brand": "Lenovo"
   },
@@ -1550,7 +1538,7 @@
    "price": 549,
    "wasPrice": 599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/633501-Product-0-I-638375766603245880.jpg?v=1701980539",
-   "inStock": true,
+   "inStock": false,
    "mpn": "34E1C5600HE",
    "brand": "Philips"
   },
@@ -1884,7 +1872,7 @@
    "url": "https://www.jbhifi.com.au/products/samsung-s65tc-34-ultra-wide-curved-wqhd-monitor",
    "price": 1099,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/products/675802-Product-0-I-638433081605121403.jpg?v=1707711435",
-   "inStock": false,
+   "inStock": true,
    "mpn": "S65TC",
    "brand": "Samsung"
   },
@@ -1910,18 +1898,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/907068-Product-1-I-639225390007247218.jpg?v=1786944246",
    "inStock": true,
    "mpn": "S80UH",
-   "brand": "Samsung"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "750427",
-   "title": "Samsung ViewFinity S80UD 27\" UHD Monitor",
-   "url": "https://www.jbhifi.com.au/products/samsung-viewfinity-s80ud-27-uhd-monitor",
-   "price": 559,
-   "wasPrice": 699,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/750427-Product-0-I-638532306013445719.jpg?v=1717633874",
-   "inStock": true,
-   "mpn": "S80UD",
    "brand": "Samsung"
   },
   {

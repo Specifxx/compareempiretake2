@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-26T23:35:40.826Z",
+ "scrapedAt": "2026-11-27T23:14:35.716Z",
  "offers": [
   {
    "retailer": "jbhifi",
@@ -139,7 +139,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-air-13-inch-with-m5-chip-512gb-16gb-starlight",
    "price": 1797,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/748034-Product-0-I-639081654878962137.jpg?v=1790763184",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -369,7 +369,7 @@
    "url": "https://www.jbhifi.com.au/products/apple-macbook-pro-14-inch-proled-xdr-display-with-m5-pro-chip-1tb-24gb-silver",
    "price": 4599,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/890936-Product-0-I-639288162006054555.jpg?v=1793219466",
-   "inStock": true,
+   "inStock": false,
    "brand": "Apple"
   },
   {
@@ -1464,17 +1464,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "840514",
-   "title": "HP Laptop 15-fd1539TU 15.6\" Full HD Laptop (Intel Core 5)[512GB/16GB]",
-   "url": "https://www.jbhifi.com.au/products/hp-laptop-15-fd1539tu-15-6-full-hd-laptop-intel-core-5512gb-16gb",
-   "price": 898,
-   "wasPrice": 1799,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/840514-Product-0-I-639093859808584090.jpg?v=1773789246",
-   "inStock": true,
-   "brand": "Hp"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "806057",
    "title": "HP Laptop 15-fd2080TU 15.6\" FHD Copilot+ AI PC Laptop (Intel Core Ultra 5-225U)[512GB/16GB]",
    "url": "https://www.jbhifi.com.au/products/hp-laptop-15-fd2080tu-15-6-fhd-copilot-ai-pc-laptop-intel-core-ultra-5-225u512gb-16gb",
@@ -1993,17 +1982,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "797401",
-   "title": "Lenovo IdeaPad 5 14\" 2K OLED 2-in-1 Copilot+ AI PC Laptop (Snapdragon X)[512GB/16GB]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-ideapad-5-14-2k-oled-2-in-1-copilot-ai-pc-laptop-snapdragon-x512gb-16gb",
-   "price": 997,
-   "wasPrice": 1999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/797401-Product-0-I-639144152404473945.jpg?v=1778818508",
-   "inStock": true,
-   "brand": "Lenovo"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "897406",
    "title": "Lenovo IdeaPad 5 14\" WUXGA 2-in-1 Cosmic Blue Laptop (Intel Core i5-13420H)[512GB/8GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-ideapad-5-14-wuxga-2-in-1-cosmic-blue-laptop-intel-core-i5-13420h512gb-8gb",
@@ -2452,17 +2430,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "899167",
-   "title": "Lenovo Legion Pro 7 16\" WQXGA 240Hz OLED Gaming Laptop (Intel Core Ultra 9-290HX)[GeForce RTX 5070 Ti]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-legion-pro-7-16-wqxga-240hz-oled-gaming-laptop-intel-core-ultra-9-290hxgeforce-rtx-5070-ti",
-   "price": 3989,
-   "wasPrice": 5499,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/899167-Product-0-I-639165790206670014.jpg?v=1780982285",
-   "inStock": true,
-   "brand": "Lenovo"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "899166",
    "title": "Lenovo Legion Pro 7 16\" WQXGA 240Hz OLED Gaming Laptop (Intel Core Ultra 9-290HX)[GeForce RTX 5080]",
    "url": "https://www.jbhifi.com.au/products/lenovo-legion-pro-7-16-wqxga-240hz-oled-gaming-laptop-intel-core-ultra-9-290hxgeforce-rtx-5080",
@@ -2624,16 +2591,6 @@
   },
   {
    "retailer": "jbhifi",
-   "sku": "897408",
-   "title": "Lenovo Yoga 9 14\" 2.8K OLED 2-in-1 Copilot+ AI PC Laptop (Intel Core Ultra 7-355)[1TB/32GB]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-9-14-2-8k-oled-2-in-1-copilot-ai-pc-laptop-intel-core-ultra-7-3551tb-32gb",
-   "price": 3224,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897408-Product-0-I-639165748810177727.jpg?v=1780978146",
-   "inStock": true,
-   "brand": "Lenovo - Yoga"
-  },
-  {
-   "retailer": "jbhifi",
    "sku": "918163",
    "title": "Lenovo Yoga 9 16\" WQXGA+ OLED 2-in-1 Laptop (Nvidia RTX Spark N1X - 18 core)[1TB/32GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-9-16-wqxga-oled-2-in-1-laptop-nvidia-rtx-spark-n1x-18-core1tb-32gb",
@@ -2664,6 +2621,17 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "888301",
+   "title": "Lenovo Yoga S7 14\" WUXGA OLED Copilot+ AI PC Laptop (Intel Core Ultra 5 - 226V)[512GB]",
+   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-s7-14-wuxga-oled-copilot-ai-pc-laptop-intel-core-ultra-5-226v512gb",
+   "price": 1296,
+   "wasPrice": 1399,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/888301-Product-0-I-639122408406231156.jpg?v=1776644107",
+   "inStock": true,
+   "brand": "Lenovo - Yoga"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "888302",
    "title": "Lenovo Yoga S7 14\" WUXGA OLED Copilot+ AI PC Laptop (Intel Core Ultra 7 - 256V)[1TB/16GB]",
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-s7-14-wuxga-oled-copilot-ai-pc-laptop-intel-core-ultra-7-256v1tb-16gb",
@@ -2679,17 +2647,6 @@
    "url": "https://www.jbhifi.com.au/products/lenovo-yoga-s7-14-wuxga-oled-copilot-ai-pc-laptop-ryzen-ai-51tb",
    "price": 1899,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/892024-Product-0-I-639143995804418980.jpg?v=1778802852",
-   "inStock": true,
-   "brand": "Lenovo - Yoga"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "897413",
-   "title": "Lenovo Yoga Slim 7 14\" 2.8K OLED Copilot+ AI PC Laptop (Intel Core Ultra 7-355)[1TB/32GB]",
-   "url": "https://www.jbhifi.com.au/products/lenovo-yoga-slim-7-14-2-8k-oled-copilot-ai-pc-laptop-intel-core-ultra-7-3551tb-32gb",
-   "price": 1999,
-   "wasPrice": 2999,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/897413-Product-0-I-639165753006427864.jpg?v=1780978594",
    "inStock": true,
    "brand": "Lenovo - Yoga"
   },
@@ -3129,17 +3086,6 @@
    "price": 1494,
    "wasPrice": 1999,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/900350-Product-0-I-639286523403733402.jpg?v=1793055606",
-   "inStock": true,
-   "brand": "Msi"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "749782",
-   "title": "MSI Modern 15 H AI 15.6\" FHD Lifestyle AI PC Laptop (Intel Core Ultra 7-155H) [512GB SSD]",
-   "url": "https://www.jbhifi.com.au/products/msi-modern-15-h-ai-15-6-fhd-lifestyle-ai-pc-laptop-intel-core-ultra-7-155h-512gb-ssd",
-   "price": 1349,
-   "wasPrice": 1799,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/749782-Product-0-I-638521178416624475.jpg?v=1790763177",
    "inStock": true,
    "brand": "Msi"
   },

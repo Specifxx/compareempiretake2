@@ -1,12 +1,12 @@
 {
- "scrapedAt": "2026-11-27T00:01:54.868Z",
+ "scrapedAt": "2026-11-27T23:39:16.465Z",
  "offers": [
   {
    "retailer": "jbhifi",
    "sku": "10104144",
    "title": "Beko Caffeexperto Automatic Espresso Coffee Maker With Milk Frother",
    "url": "https://www.jbhifi.com.au/products/beko-caffeexperto-automatic-espresso-coffee-maker-with-milk-frother",
-   "price": 329,
+   "price": 299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/9718c4df5ca9450a9f043e87210bcc51.jpg?v=1794535590",
    "inStock": true,
    "brand": "Beko"
@@ -155,17 +155,6 @@
    "price": 588,
    "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/909166-Product-0-I-639301288803346888.jpg?v=1794532103",
-   "inStock": true,
-   "brand": "Breville"
-  },
-  {
-   "retailer": "jbhifi",
-   "sku": "909555",
-   "title": "Breville the Barista Express™ Impress Coffee Machine  (Olive Tapenade)",
-   "url": "https://www.jbhifi.com.au/products/breville-the-barista-express-impress-coffee-machine-olive-tapenade",
-   "price": 688,
-   "wasPrice": 798,
-   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/909555-Product-0-I-639240106805656333.jpg?v=1788413947",
    "inStock": true,
    "brand": "Breville"
   },
@@ -382,7 +371,7 @@
    "price": 3795,
    "wasPrice": 4299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/906445-Product-0-I-639208978207471881.jpg?v=1785301086",
-   "inStock": true,
+   "inStock": false,
    "brand": "Breville"
   },
   {
@@ -640,6 +629,16 @@
   },
   {
    "retailer": "jbhifi",
+   "sku": "527446",
+   "title": "De'Longhi La Specialista Arte Manual Pump Coffee Machine",
+   "url": "https://www.jbhifi.com.au/products/delonghi-la-specialista-arte-manual-pump-coffee-machine",
+   "price": 497,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/527446-Product-0-I-637649820153229964.jpg?v=1791233158",
+   "inStock": true,
+   "brand": "Delonghi"
+  },
+  {
+   "retailer": "jbhifi",
    "sku": "902227",
    "title": "De'Longhi La Specialista Arte Manual Pump Coffee Machine (Black)",
    "url": "https://www.jbhifi.com.au/products/delonghi-la-specialista-arte-manual-pump-coffee-machine-black",
@@ -663,8 +662,7 @@
    "sku": "754654",
    "title": "De'Longhi La Specialista Maestro 2.0 Cold Brew Manual Coffee Machine",
    "url": "https://www.jbhifi.com.au/products/delonghi-la-specialista-maestro-2-0-cold-brew-manual-coffee-machine",
-   "price": 988,
-   "wasPrice": 1299,
+   "price": 1299,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/754654-Product-0-I-638645669416482038.jpg?v=1793091847",
    "inStock": true,
    "brand": "Delonghi"
@@ -706,8 +704,7 @@
    "sku": "665890",
    "title": "De'Longhi Magnifica Fully Automatic Coffee Machine (Black)",
    "url": "https://www.jbhifi.com.au/products/delonghi-magnifica-fully-automatic-coffee-machine-black",
-   "price": 386,
-   "wasPrice": 499,
+   "price": 499,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/665890-Product-0-I-638308496404660282.jpg?v=1791492311",
    "inStock": true,
    "brand": "Delonghi"
@@ -730,6 +727,16 @@
    "price": 328,
    "wasPrice": 349,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/976211-Product-0-I-637260074467624967.jpg?v=1794980829",
+   "inStock": true,
+   "brand": "Nespresso"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "629131",
+   "title": "De'Longhi Nespresso Vertuo Lattissima (Black)",
+   "url": "https://www.jbhifi.com.au/products/delonghi-nespresso-vertuo-lattissima-black",
+   "price": 358,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/629131-Product-0-I-638252344207044703.jpg?v=1794980977",
    "inStock": true,
    "brand": "Nespresso"
   },
@@ -1361,6 +1368,16 @@
    "price": 699,
    "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/802759-Product-0-I-638781254406058540.jpg?v=1742528714",
    "inStock": false,
+   "brand": "Sunbeam"
+  },
+  {
+   "retailer": "jbhifi",
+   "sku": "802757",
+   "title": "Sunbeam Origins Slimline Espresso Machine (Black)",
+   "url": "https://www.jbhifi.com.au/products/sunbeam-origins-slimline-espresso-machine-black",
+   "price": 244,
+   "image": "https://cdn.shopify.com/s/files/1/0024/9803/5810/files/802757-Product-0-I-638781234608435973.jpg?v=1742526732",
+   "inStock": true,
    "brand": "Sunbeam"
   }
  ]
