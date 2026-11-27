@@ -27,7 +27,9 @@ const esc = (s: string) => s.replace(/[.+]/g, "\\$&");
 /**
  * Each required word as a whole word: "r10" is not in "r100", "a5" is not in "a57" (the Canon EOS R10 was priced
  * from an R100 listing until 2026-11-06). Phones and tablets: a title naming two or more storage sizes is a
- * multi-listing ("512GB/256GB/128GB"), whose price is the smallest one's, so it is no match.
+ * multi-listing ("512GB/256GB/128GB"), whose price is the smallest one's, so it is no match. Graphics cards: a title
+ * naming a memory size other than the card's is another card (a "5060 Ti Eagle OC Ice 8G" listing was shown on the
+ * 16G card's page, AU wrong-price report 2026-11-26).
  */
 export function ebayTitleMatches(p: Pick<Phone, "category" | "slug" | "brand" | "model">, title: string): boolean {
   const t = norm(title);
@@ -37,5 +39,17 @@ export function ebayTitleMatches(p: Pick<Phone, "category" | "slug" | "brand" | 
     const sizes = new Set([...title.matchAll(/(\d+)\s?(GB|TB)\b/gi)].map((m) => Number(m[1]) * (m[2].toUpperCase() === "TB" ? 1024 : 1)).filter((g) => g >= 32));
     if (sizes.size >= 2) return false;
   }
+  if (p.category === "graphics-cards") {
+    const own = vramSizes(p.model);
+    if (own.size === 1) {
+      const listed = vramSizes(title);
+      if ([...listed].some((g) => !own.has(g))) return false;
+    }
+  }
   return true;
+}
+
+/** Memory sizes a graphics card title names: "16G", "8GB", "12 GB" (2-48 GB; "GDDR7" and "5G" are not sizes). */
+function vramSizes(s: string): Set<number> {
+  return new Set([...s.matchAll(/(?<![a-z0-9.])(\d{1,2})\s?GB?(?![a-z0-9])/gi)].map((m) => Number(m[1])).filter((g) => g >= 2 && g <= 48));
 }
