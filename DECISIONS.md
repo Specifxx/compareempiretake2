@@ -2676,3 +2676,11 @@ Black Friday in every time zone (00:00 UTC 27 Nov to 10:00 UTC 28 Nov, `lib/bf-m
 one bold Black Friday bar: the Black Friday deals page. Same
 place as the line, in the server HTML, never a pop-up, fixed or floating; ✕ hides it for the visit. The browser re-reads the
 clock, so a cached page reverts on time with no build; the files can go after Cyber Monday.
+
+## 2026-11-27 — Black Friday mode runs to the end of TCGplayer's sale (owner)
+
+The owner asked the same day for "a lot more effort this weekend into Black Friday and Cyber Monday … capture this
+opportunity with TCG Player", so the bar (`lib/bf-mode.ts`, `BfModeBar`) no longer stops at 10:00 UTC on 28 Nov: it runs
+until 04:00 UTC on 1 Dec, when TCGplayer's sale ends (11PM 30 Nov New York). Its label follows the weekend (Black Friday,
+Cyber Weekend from 28 Nov 10:00 UTC, Cyber Monday from 30 Nov 05:00 UTC), and on Cyber Monday it links the Cyber Monday page.
+Same place, same ✕, no pop-up; it still switches itself off with no build. Delete the files after the sale.

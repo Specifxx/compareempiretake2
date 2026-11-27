@@ -7,7 +7,7 @@ import Link from "next/link";
 import { withRegion } from "@/lib/region";
 import { useRegion } from "@/lib/use-region";
 import { BfModeBar } from "@/components/BfModeBar";
-import { bfModeOn } from "@/lib/bf-mode";
+import { bfModeOn, bfPhase } from "@/lib/bf-mode";
 
 export function HolidayStrip({ sale }: { sale: { path: string; name: string } | null }) {
   const region = useRegion();
@@ -24,7 +24,7 @@ export function HolidayStrip({ sale }: { sale: { path: string; name: string } | 
   const on = bfModeOn(Date.now());
   if (!on) return strip;
   return (
-    <BfModeBar on={on} href={withRegion("/black-friday", region)} title="Tech deals" line="real price drops we checked ourselves, no fake “was” prices">
+    <BfModeBar on={on} phase={bfPhase(Date.now())} href={withRegion("/black-friday", region)} title="Tech deals" line="real price drops we checked ourselves, no fake “was” prices">
       {strip}
     </BfModeBar>
   );
