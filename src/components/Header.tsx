@@ -11,6 +11,7 @@ import { HOME_PATH, isNeutralPath, REGIONS, withRegion, type RegionId } from "@/
 import { rememberRegion, useRegion } from "@/lib/use-region";
 import { Flag } from "./Flag";
 import { CartHeaderLink } from "./cart/CartHeaderLink";
+import { AccountHeaderLink } from "./account/AccountHeaderLink";
 
 const AU_NAV = [
   { href: "/deals", label: "Deals" },
@@ -84,6 +85,8 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
             </Link>
             {/* The cart list (components/cart, owner 2026-11-06): every width, with its count. */}
             <CartHeaderLink className="shrink-0 text-ink-soft hover:text-ink" />
+            {/* Accounts (owner, 2026-11-28): a quiet door to /account, never a prompt. */}
+            <AccountHeaderLink />
             {regions.length > 1 && <RegionSwitcher regions={regions} nav={nav} />}
             <ThemeToggle />
             <button className="grid h-10 w-10 shrink-0 place-items-center rounded-lg text-ink-soft hover:bg-bg-sunk md:hidden" onClick={() => setMenu((m) => !m)} aria-label="Menu" aria-expanded={menu} data-bn-menu>
@@ -178,6 +181,7 @@ export function Header({ nav, regions, sale = null }: { nav: Partial<Record<Regi
               {NAV.map((n) => (
                 <Link prefetch={false} key={n.href} href={n.href} onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">{n.label}</Link>
               ))}
+              <Link prefetch={false} href="/account" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">Your account and price alerts</Link>
               <Link prefetch={false} href="/about" onClick={() => setMenu(false)} className="block rounded-lg px-3 py-2.5 text-base font-medium hover:bg-bg-sunk">Who runs Compare Empire</Link>
             </div>
           </nav>

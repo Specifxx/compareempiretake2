@@ -33,6 +33,8 @@ function typingTarget(el: Element | null): boolean {
 
 function slotFree(): boolean {
   try {
+    // A Premium member sees no ads, this card included (owner, 2026-11-28; lib/premium-member.ts).
+    if (document.documentElement.hasAttribute("data-adfree")) return false;
     if (sessionStorage.getItem(SHOWN_KEY) === "1" || sessionStorage.getItem(RATE_SESSION_KEY) === "1") return false;
     const at = Number(localStorage.getItem(CLOSED_AT_KEY) || 0);
     if (at && Date.now() - at < (bfModeOn(Date.now()) ? 0 : OFFER_CLOSE_DAYS * 86_400_000)) return false;

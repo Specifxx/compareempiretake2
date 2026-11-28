@@ -3,6 +3,7 @@ import { emailConfigured, escapeHtml, sendEmail } from "@/lib/email";
 import { clip, ipHash, isEmail, json, token } from "@/lib/server-utils";
 import { SITE } from "@/lib/site";
 import { money, regionOf } from "@/lib/region";
+import { memberEmail } from "@/lib/member-token";
 
 export const dynamic = "force-dynamic";
 
@@ -10,6 +11,9 @@ export const dynamic = "force-dynamic";
  * Sign up for a price-drop alert. The alert only goes live after the person
  * clicks the link in the confirmation email (double opt-in), so nobody can
  * sign someone else up. Every email carries a one-click unsubscribe link.
+ *
+ * A signed-in member (2026-11-28) sends their account token instead of an address: the shared account already proved they own
+ * it (lib/member-token.ts), so the alert is live at once and no confirmation email is sent. The alert emails are the same.
  */
 export async function POST(req: Request) {
   const sql = await ensureSchema();
@@ -17,8 +21,10 @@ export async function POST(req: Request) {
   if (!emailConfigured()) return json({ ok: false, error: "Price alerts aren't switched on yet." }, 503);
   const body = await req.json().catch(() => ({}));
   if (body.website) return json({ ok: true });
-  if (!isEmail(body.email)) return json({ ok: false, error: "That email doesn't look right." }, 400);
-  const email = body.email.toLowerCase();
+  const member = body.token ? await memberEmail(body.token) : null;
+  if (body.token && !member) return json({ ok: false, error: "Please sign in again.", signIn: true }, 401);
+  if (!member && !isEmail(body.email)) return json({ ok: false, error: "That email doesn't look right." }, 400);
+  const email = member ?? String(body.email).toLowerCase();
   const product = clip(body.product, 200);
   if (!/^(\/(us|uk|ca|sg))?\/[a-z-]+\/[a-z0-9-]+$/.test(product)) return json({ ok: false, error: "Unknown product." }, 400);
   const productName = clip(body.productName, 160) || product;
@@ -39,6 +45,13 @@ export async function POST(req: Request) {
     return json({ ok: true, updated: true });
   }
   const t = existing[0]?.token ?? token();
+  if (member) {
+    if (existing[0]) await sql`UPDATE alerts SET target = ${target}, price_at_signup = ${price}, last_notified_price = NULL, confirmed_at = now() WHERE token = ${t}`;
+    else
+      await sql`INSERT INTO alerts (email, product, product_name, variant, variant_label, target, price_at_signup, token, ip_hash, confirmed_at)
+                VALUES (${email}, ${product}, ${productName}, ${variant}, ${variantLabel}, ${target}, ${price}, ${t}, ${ip}, now())`;
+    return json({ ok: true, active: true });
+  }
   if (!existing[0]) {
     await sql`INSERT INTO alerts (email, product, product_name, variant, variant_label, target, price_at_signup, token, ip_hash)
               VALUES (${email}, ${product}, ${productName}, ${variant}, ${variantLabel}, ${target}, ${price}, ${t}, ${ip})`;

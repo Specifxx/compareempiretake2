@@ -2727,3 +2727,19 @@ Prompt rules kept: once a visit, sharing the visit's one prompt slot with the ra
 nine seconds on the page, never while typing or over another dialog; ✕ and Escape close it (for the visit during Black
 Friday, for a week after). Premium members never see it where Premium exists. The rate card's "we don't run pop-ups" line
 became "We keep ads light", so it stays true. Released urgently on the owner's word.
+
+## 2026-11-28 — Accounts on Compare Empire: the shared sign-in, signed-in alerts, ad-free Premium
+
+Owner, 2026-11-28: "stores like Compare Empire should also have login, like the login feature and all the features that users
+have." Compare Empire now signs in through the family's shared account service (RiftCompare's `/api/sister-premium/*`, site key
+`ce`), white-labelled: no page or email names RiftCompare. `/account` (sign-in, then the hub: alerts, saved items, Premium) and
+`/premium` are noindex; the header gains one small account icon. Nothing prompts a visitor to sign in: the one-prompt-per-visit
+slot stays the deals card's and the rate card's.
+
+Alerts stay ours (2026-11-19: per-variant rows in our own Neon table). The server checks the session token itself
+(`lib/member-token.ts`: EdDSA against the service's public JWKS, issuer, audience `https://compareempire.com`, use, expiry) and
+takes the address from the token, never from the form, so a signed-in alert is live at once with no confirmation email.
+`/api/alerts/mine` lists and stops only that address's rows. Premium hides `[data-ad]` blocks and the deals card before first
+paint (`ADFREE_BOOT_SCRIPT`). Google and Discord sign-in open on the account service's own host until the owner registers
+`compareempire.com/account-service/oauth/*/callback` (owner step `ce-oauth-callbacks`); the rewrites are already in
+`next.config.mjs`. `tests/member-token.test.ts` pins the token check.

@@ -518,3 +518,7 @@ table tbody tr:hover { background: rgb(var(--sunk) / 0.8); }
 /* Content is simply there: nothing fades or rises into view. */
 .animate-fade-up { animation: none !important; }
 /* empire-v2:end */
+
+/* Premium members (owner, 2026-11-28): no banner ads. <html data-adfree> is set before first paint from the cached membership
+   (lib/premium-member.ts ADFREE_BOOT_SCRIPT) and kept in step by AdFreeSync. Price tables and their paid rows are untouched. */
+html[data-adfree] [data-ad] { display: none !important; }

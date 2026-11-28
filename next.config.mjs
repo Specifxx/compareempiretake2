@@ -142,6 +142,14 @@ const nextConfig = {
     const auPrefixed = { source: "/au/:path+", destination: "/:path+", permanent: true };
     return [www, { source: "/us", destination: "/", permanent: true }, auPrefixed, ...retiredRedirects(), ...[...merged, ...entity, ...retiredGuides].map(([source, destination]) => ({ source, destination, permanent: true }))];
   },
+  // The shared account's Google and Discord round trip through this site's own address (2026-11-28). Used once the owner registers
+  // compareempire.com's callbacks (components/account/OAuthButtons.tsx ON_SITE); harmless until then.
+  async rewrites() {
+    return [
+      { source: "/account-service/oauth/:provider(google|discord)", destination: "https://riftcompare.com/api/sister-premium/oauth/:provider" },
+      { source: "/account-service/oauth/:provider(google|discord)/callback", destination: "https://riftcompare.com/api/auth/oauth/:provider/callback" },
+    ];
+  },
   async headers() {
     // Never a bare "/:a/:b": that would CDN-cache GET /api/reviews, /api/alerts and the other API routes.
     return [
