@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:48:27.902Z",
+ "scrapedAt": "2026-11-28T02:33:58.526Z",
  "offers": [
   {
    "retailer": "uk-directcomputers",
@@ -11,6 +11,17 @@
    "inStock": true,
    "brand": "AMD BOXED",
    "mpn": "YD3200C5M4MFH"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "YD3400C5FHSBX",
+   "title": "AMD Ryzen 5 3400G processor 3.7 GHz 4 MB L3 Box",
+   "url": "https://directcomputers.co.uk/products/amd-ryzen-5-3400g-3-7ghz-4-core-am4-processor-8-threads-4-2ghz-boost-radeon-vega-11-graphics",
+   "price": 75.99,
+   "wasPrice": 85.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/ded6c51ae573e829b621aff98ca3ebf5.jpg?v=1781337812",
+   "inStock": true,
+   "mpn": "YD3400C5FHSBX"
   },
   {
    "retailer": "uk-directcomputers",
@@ -28,7 +39,7 @@
    "sku": "100-000001905",
    "title": "AMD Ryzen 5 5500F processor 3 GHz 19 MB L2 & L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-5-5500f-am4-tray",
-   "price": 92.99,
+   "price": 93.99,
    "wasPrice": 101.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/928cca1c7a67bbd7c7e345b2e8eb05301910d72a9391c89640011f47bc280763.jpg?v=1791076819",
    "inStock": true,
@@ -99,11 +110,30 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "100-000001904",
+   "title": "AMD Ryzen 5 7500X3D processor 4 GHz 96 MB L3 Tray",
+   "url": "https://directcomputers.co.uk/products/amd-ryzen-5-7500x3d-am5-tray-1",
+   "price": 244.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/82b0e41c524501fbc8f915dc08449c4d_0789107c-05cb-4b47-bb7b-5dd6207ff0a5.jpg?v=1782338610",
+   "inStock": true,
+   "brand": "AMD BOXED"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "100-000000931",
    "title": "AMD Ryzen 5 8500G processor 3.5 GHz 16 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/8500g-ryzen-5-tray",
    "price": 185.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/4cc666432e5cd0aea92afaa7716cc7d9.jpg?v=1781283098",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "100-000001405",
+   "title": "AMD Ryzen 5 9600X processor 3.9 GHz 38 MB L2 & L3 Tray",
+   "url": "https://directcomputers.co.uk/products/9600x-ryzen-5-tray",
+   "price": 286.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/16a400c90300fe841f039c95ca38d526.jpg?v=1781283170",
    "inStock": true
   },
   {
@@ -118,10 +148,21 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "100-100001236MPK",
+   "title": "AMD Ryzen 7 8700G processor 4.2 GHz 16 MB L3 Tray",
+   "url": "https://directcomputers.co.uk/products/8700g-ryzen-7-tray-with-cooler-1",
+   "price": 307.99,
+   "wasPrice": 330.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/4cc666432e5cd0aea92afaa7716cc7d9_c0cb5e61-8590-4e7a-9489-436445c19f26.jpg?v=1781435837",
+   "inStock": true,
+   "mpn": "100-100001236MPK"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "100-000001404",
    "title": "AMD Ryzen 7 9700X processor 3.8 GHz 40 MB L2 & L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-7-9700x-am5-tray",
-   "price": 293.99,
+   "price": 295.99,
    "wasPrice": 296.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/16a400c90300fe841f039c95ca38d526_1b7f2f11-6836-4504-a952-7369a2e80a17.jpg?v=1782296321",
    "inStock": true,
@@ -132,7 +173,8 @@
    "sku": "100-000001084",
    "title": "AMD Ryzen 7 9800X3D processor 4.7 GHz 96 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-7-9800x3d-tray",
-   "price": 437.99,
+   "price": 423.99,
+   "wasPrice": 437.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/39f461f352e84fdb304dc7ec62ec9021.jpg?v=1782302555",
    "inStock": true,
    "brand": "AMD BOXED"
@@ -142,7 +184,8 @@
    "sku": "100-000001973",
    "title": "AMD Ryzen 7 9850X3D processor 4.7 GHz 96 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-7-9850x3d-am5-tray",
-   "price": 461.99,
+   "price": 460.99,
+   "wasPrice": 461.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/85a66712e36f9364be9042d4d93d21ad_c11fd11e-d250-49eb-a6e7-aa5e1fd52a05.jpg?v=1782346280",
    "inStock": true,
    "brand": "AMD BOXED"
@@ -152,7 +195,8 @@
    "sku": "100-000000589",
    "title": "AMD Ryzen 9 7900X processor 4.7 GHz 64 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-9-7900x-am5-tray",
-   "price": 340.99,
+   "price": 336.99,
+   "wasPrice": 340.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/4cc666432e5cd0aea92afaa7716cc7d9_f1e83cd9-d76f-4b1c-8268-65901e9d5529.jpg?v=1782336500",
    "inStock": true,
    "brand": "AMD BOXED"
@@ -197,8 +241,20 @@
    "sku": "100-000001595",
    "title": "AMD Ryzen Threadripper 9960X processor 4.2 GHz 128 MB L3 Tray",
    "url": "https://directcomputers.co.uk/products/amd-ryzen-9-9960x-str5-tray",
-   "price": 1510.99,
+   "price": 1460.99,
+   "wasPrice": 1510.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b9d698766a623604d8f0e4246316f848_efbef11f-64e0-4f85-8549-a68860a138a4.jpg?v=1782338890",
+   "inStock": true,
+   "brand": "AMD BOXED"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "100-000001594",
+   "title": "AMD Ryzen Threadripper 9970X processor 4 GHz 128 MB L3 Tray",
+   "url": "https://directcomputers.co.uk/products/amd-ryzen-threadripper-9970x-tray-1",
+   "price": 2276.99,
+   "wasPrice": 2484.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b9d698766a623604d8f0e4246316f848_6b208bcc-2972-4336-97fd-4896ca0113bd.jpg?v=1782336531",
    "inStock": true,
    "brand": "AMD BOXED"
   },
@@ -261,7 +317,8 @@
    "sku": "CM8071504651012",
    "title": "Intel Core i3-12100 processor 12 MB Smart Cache Tray",
    "url": "https://directcomputers.co.uk/products/core-i3-12100-cpu-fc-lga16a-tray",
-   "price": 121.99,
+   "price": 113.99,
+   "wasPrice": 121.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/5a22c6c2c20f115ad2cac01199cb7da9_d6749628-0f6d-4111-92ae-5f2e7495f58c.jpg?v=1787448261",
    "inStock": true,
    "brand": "INTEL",
@@ -341,6 +398,18 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "CM8071504820721",
+   "title": "Intel Core i7-14700K processor 33 MB Smart Cache Tray",
+   "url": "https://directcomputers.co.uk/products/core-i7-cpu-14700k-fc-lga16a-tray",
+   "price": 392.99,
+   "wasPrice": 416.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/58c60870798939c1feb0e06f3b5045f72e89e87af56fa625e594dfd237814ca8_25524198-9528-4479-b58b-601a639139d3.jpg?v=1795052622",
+   "inStock": true,
+   "brand": "INTEL",
+   "mpn": "CM8071504820721"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "CM8071504549231",
    "title": "Intel Core i9-12900KF processor 30 MB Smart Cache Tray",
    "url": "https://directcomputers.co.uk/products/intel-core-i9-12900kf-cpu-tray",
@@ -396,6 +465,17 @@
    "inStock": true,
    "brand": "INTEL",
    "mpn": "AT807683B9B4887"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "BX80768265K",
+   "title": "Intel Core Ultra 7 265K processor 30 MB Smart Cache Box",
+   "url": "https://directcomputers.co.uk/products/intel-core-ultra-7-265k-cpu-1851-5-5ghz-turbo-20-core-125w-250w-turbo-30mb-cache-overclockable-arrow-lake-no-heatsink-fan",
+   "price": 346.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/4ae4f834b2cbca90a4f45e2c849015fe.jpg?v=1781239699",
+   "inStock": true,
+   "brand": "INTEL",
+   "mpn": "BX80768265K"
   },
   {
    "retailer": "uk-directcomputers",

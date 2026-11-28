@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:43:33.741Z",
+ "scrapedAt": "2026-11-28T02:28:08.375Z",
  "offers": [
   {
    "retailer": "uk-bellabarista",
@@ -107,7 +107,7 @@
    "url": "https://www.bellabarista.co.uk/products/gemilai-g3028a-semi-automatic-coffee-machine-with-pid-1?variant=56658308399490",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0617/5893/1117/files/Creammachine1_2e63dbef-771a-43cf-96f0-d5cf40d16f83.jpg?v=1779186371",
-   "inStock": false,
+   "inStock": true,
    "brand": "Gemilai",
    "mpn": "ESP-HYB-GEM-G3028AEL-CRM"
   },
@@ -118,7 +118,7 @@
    "url": "https://www.bellabarista.co.uk/products/gemilai-g3028a-semi-automatic-coffee-machine-with-pid-1?variant=56658308366722",
    "price": 599,
    "image": "https://cdn.shopify.com/s/files/1/0617/5893/1117/files/greymachine1_5e3b3042-79ff-475f-abc5-04543a092551.jpg?v=1779186372",
-   "inStock": false,
+   "inStock": true,
    "brand": "Gemilai",
    "mpn": "ESP-HYB-GEM-G3028AEL-DGRY"
   },
@@ -455,58 +455,6 @@
   },
   {
    "retailer": "uk-bellabarista",
-   "sku": "ESP-SB-PRF-GO-BLK",
-   "title": "Profitec GO Espresso Machine Black",
-   "url": "https://www.bellabarista.co.uk/products/profitec-go-espresso-machine-black?variant=41698179907757",
-   "price": 765,
-   "wasPrice": 849,
-   "image": "https://cdn.shopify.com/s/files/1/0617/5893/1117/files/download-1_95a580a4-146b-40be-bcfc-d86cb6c2d2c0.jpg?v=1739984650",
-   "inStock": false,
-   "brand": "Profitec"
-  },
-  {
-   "retailer": "uk-bellabarista",
-   "sku": "ESP-SB-PRF-GO-BLU",
-   "title": "Profitec GO Espresso Machine Blue",
-   "url": "https://www.bellabarista.co.uk/products/profitec-go-espresso-machine-black?variant=41698180006061",
-   "price": 849,
-   "image": "https://cdn.shopify.com/s/files/1/0617/5893/1117/files/download-4.jpg?v=1739984634",
-   "inStock": false,
-   "brand": "Profitec"
-  },
-  {
-   "retailer": "uk-bellabarista",
-   "sku": "ESP-SB-PRF-GO-BSS",
-   "title": "Profitec GO Espresso Machine Brushed Stainless Steel",
-   "url": "https://www.bellabarista.co.uk/products/profitec-go-espresso-machine-black?variant=43383208935597",
-   "price": 799,
-   "wasPrice": 899,
-   "image": "https://cdn.shopify.com/s/files/1/0617/5893/1117/files/download_f2c3d009-8c81-422b-becc-91bba96ebe37.jpg?v=1739984614",
-   "inStock": false,
-   "brand": "Profitec"
-  },
-  {
-   "retailer": "uk-bellabarista",
-   "sku": "ESP-SB-PRF-GO-RED",
-   "title": "Profitec GO Espresso Machine Red",
-   "url": "https://www.bellabarista.co.uk/products/profitec-go-espresso-machine-black?variant=41698179940525",
-   "price": 849,
-   "image": "https://cdn.shopify.com/s/files/1/0617/5893/1117/files/download-3.jpg?v=1739984611",
-   "inStock": false,
-   "brand": "Profitec"
-  },
-  {
-   "retailer": "uk-bellabarista",
-   "sku": "ESP-SB-PRF-GO-YLW",
-   "title": "Profitec GO Espresso Machine Yellow",
-   "url": "https://www.bellabarista.co.uk/products/profitec-go-espresso-machine-black?variant=41698179973293",
-   "price": 849,
-   "image": "https://cdn.shopify.com/s/files/1/0617/5893/1117/files/download-2_b2de49ae-2117-44b6-bb36-a4f52c8afd4d.jpg?v=1739984612",
-   "inStock": false,
-   "brand": "Profitec"
-  },
-  {
-   "retailer": "uk-bellabarista",
    "sku": "ESP-SB-PRF-GOII-BLK",
    "title": "Profitec GO II Espresso Machine Black",
    "url": "https://www.bellabarista.co.uk/products/profitec-go-ii-espresso-machine?variant=56706803892610",
@@ -630,7 +578,7 @@
    "price": 2430,
    "wasPrice": 2650,
    "image": "https://cdn.shopify.com/s/files/1/0617/5893/1117/files/pro_800_1.jpg?v=1772626541",
-   "inStock": true,
+   "inStock": false,
    "brand": "Profitec",
    "mpn": "ESP-LVR-PRF-PRO800"
   },

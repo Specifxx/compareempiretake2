@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:50:11.714Z",
+ "scrapedAt": "2026-11-28T02:35:37.421Z",
  "offers": [
   {
    "retailer": "uk-holburn",
@@ -129,7 +129,6 @@
    "title": "Meze 105 AER Headphones",
    "url": "https://www.holburnonline.co.uk/products/meze-105-aer",
    "price": 259,
-   "wasPrice": 369,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/elise-audio-105-aer-angled_1200x1200_png-Photoroom.png?v=1733239965",
    "inStock": true,
    "brand": "Meze Audio"
@@ -151,7 +150,6 @@
    "title": "Meze 109 Pro Dynamic Headphones",
    "url": "https://www.holburnonline.co.uk/products/meze-109-pro",
    "price": 699,
-   "wasPrice": 769,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/me_109pro_profile-ii.jpg?v=1701210916",
    "inStock": true,
    "brand": "Meze Audio"
@@ -162,18 +160,7 @@
    "title": "Meze 99 Classics 2nd Gen Headphones",
    "url": "https://www.holburnonline.co.uk/products/meze-99-classics-gen-2",
    "price": 299,
-   "wasPrice": 319,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/20564551_800-Photoroom.png?v=1761840839",
-   "inStock": true,
-   "brand": "Meze Audio"
-  },
-  {
-   "retailer": "uk-holburn",
-   "sku": "62938980548995",
-   "title": "Meze ARTA Isodynamic Hybrid Planar Magnetic Headphones",
-   "url": "https://www.holburnonline.co.uk/products/meze-arta",
-   "price": 5399,
-   "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/Untitled_3500x3500px_-2026-10-20T150556.592.png?v=1792505260",
    "inStock": true,
    "brand": "Meze Audio"
   },
@@ -183,7 +170,6 @@
    "title": "Meze Elite Hybrid Array Isodynamic Headphones Aluminium",
    "url": "https://www.holburnonline.co.uk/products/meze-elite?variant=62939090321795",
    "price": 3499,
-   "wasPrice": 3749,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/Untitled_3500_x_3500_px_-_2026-10-20T151610.000.png?v=1792505838",
    "inStock": true,
    "brand": "Meze Audio"
@@ -194,7 +180,6 @@
    "title": "Meze Elite Hybrid Array Isodynamic Headphones Tungsten",
    "url": "https://www.holburnonline.co.uk/products/meze-elite?variant=62939090289027",
    "price": 3499,
-   "wasPrice": 3749,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/me_tungsten_profile-11.jpg?v=1700829211",
    "inStock": true,
    "brand": "Meze Audio"
@@ -205,7 +190,6 @@
    "title": "Meze Empyrean II Planar Headphones",
    "url": "https://www.holburnonline.co.uk/products/meze-empyrean-ii",
    "price": 2599,
-   "wasPrice": 2749,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/Untitled_3500_x_3500_px_-_2026-10-20T152302.433.png?v=1792506381",
    "inStock": true,
    "brand": "Meze Audio"
@@ -227,7 +211,6 @@
    "title": "Meze STRADA Headphones",
    "url": "https://www.holburnonline.co.uk/products/meze-strada",
    "price": 699,
-   "wasPrice": 799,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/Meze-Audio-STRADA-headphone-01-Photoroom.png?v=1792506816",
    "inStock": true,
    "brand": "Meze Audio"
@@ -317,7 +300,8 @@
    "sku": "55261743710595",
    "title": "Sennheiser HD 800S Headphones",
    "url": "https://www.holburnonline.co.uk/products/sennheiser-hd-800s",
-   "price": 1499,
+   "price": 1099,
+   "wasPrice": 1199,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/Untitled_3500_x_3500_px_-_2026-05-06T112408.301.png?v=1778063209",
    "inStock": true,
    "brand": "Sennheiser"
@@ -358,7 +342,8 @@
    "sku": "57986974482819",
    "title": "Sennheiser IE 600 Premium In-Ear Headphones",
    "url": "https://www.holburnonline.co.uk/products/sennheiser-ie-600-in-ear-headphones",
-   "price": 699,
+   "price": 399,
+   "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/Untitled_3500x3500px_-2026-05-06T114146.273.png?v=1778064334",
    "inStock": true,
    "brand": "Sennheiser"
@@ -368,7 +353,8 @@
    "sku": "57986987131267",
    "title": "Sennheiser IE 900 Premium In-Ear Headphones",
    "url": "https://www.holburnonline.co.uk/products/sennheiser-ie-900-premium-in-ear-headphones",
-   "price": 1299,
+   "price": 849,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0160/4606/3670/files/Untitled_3500_x_3500_px_-_2026-05-06T114649.074.png?v=1778064614",
    "inStock": true,
    "brand": "Sennheiser"

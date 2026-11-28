@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:33:57.997Z",
+ "scrapedAt": "2026-11-28T02:18:58.963Z",
  "offers": [
   {
    "retailer": "us-cliffandpebble",
@@ -447,7 +447,7 @@
    "url": "https://cliffandpebble.com/products/lucca-m58-espresso-machine-1?variant=53419295179025",
    "price": 2995,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/5_4dfcdecf-258d-4339-a09a-2a4b74c5193a.png?v=1778782427",
-   "inStock": true,
+   "inStock": false,
    "brand": "LUCCA",
    "mpn": "SI4228"
   },
@@ -468,7 +468,7 @@
    "title": "LUCCA Solo Espresso Machine Black",
    "url": "https://cliffandpebble.com/products/lucca-solo-espresso-machine-1?variant=51278293041425",
    "price": 1395,
-   "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/Lucca-Solo-Espresso-Machine-Black-Hero-KO-by-Clive-Coffee_2.jpg?v=1741535614",
+   "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/lucca-solo-black-hero.png?v=1795810984",
    "inStock": true,
    "brand": "LUCCA",
    "mpn": "SI7713BK"
@@ -479,7 +479,7 @@
    "title": "LUCCA Solo Espresso Machine Stainless Steel",
    "url": "https://cliffandpebble.com/products/lucca-solo-espresso-machine-1?variant=51278293074193",
    "price": 1395,
-   "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/Lucca-Solo-Espresso-Machine-Stainless-KO-by-Clive-Coffee-Hero.jpg?v=1741535614",
+   "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/lucca-solo-stainless-hero.png?v=1795810984",
    "inStock": false,
    "brand": "LUCCA",
    "mpn": "SI7713SS"
@@ -537,7 +537,7 @@
    "url": "https://cliffandpebble.com/products/rocket-espresso-bicocca-espresso-machine?variant=53506056716561",
    "price": 5890,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/rocket-espresso-bicocca-stainless-hero.png?v=1795710396",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rocket Espresso"
   },
   {
@@ -577,7 +577,7 @@
    "url": "https://cliffandpebble.com/products/rocket-giotto-fast-r-espresso-machine?variant=53380610261265",
    "price": 3250,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/6_dfc1bba5-2678-48f8-95c6-baa606f12d8a.png?v=1775502280",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rocket Espresso",
    "mpn": "ESE353N1600"
   },
@@ -588,7 +588,7 @@
    "url": "https://cliffandpebble.com/products/rocket-giotto-fast-r-espresso-machine?variant=53380610228497",
    "price": 3250,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/1_ecc272c9-2212-44d2-80a4-48f76ccbfc71.png?v=1775502281",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rocket Espresso",
    "mpn": "ESE353N1580"
   },
@@ -599,7 +599,7 @@
    "url": "https://cliffandpebble.com/products/rocket-giotto-fast-v-espresso-machine?variant=53380432888081",
    "price": 2750,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/1_73412494-c918-4be3-94d8-a2f9db68aac8.png?v=1775497719",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rocket Espresso",
    "mpn": "ESE353N1520"
   },
@@ -610,7 +610,7 @@
    "url": "https://cliffandpebble.com/products/rocket-giotto-fast-v-espresso-machine?variant=53380432855313",
    "price": 2750,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/1_a07905d0-7a0f-44f0-a237-52f5a3267dca.png?v=1775497719",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rocket Espresso",
    "mpn": "ESE353N1500"
   },
@@ -621,7 +621,7 @@
    "url": "https://cliffandpebble.com/products/rocket-mozzafiato-fast-r-espresso-machine?variant=53380734320913",
    "price": 3250,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/1_d7431986-ab31-4a21-bb37-fae8c9303b60.png?v=1775504511",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rocket Espresso",
    "mpn": "ESE353N1560"
   },
@@ -632,7 +632,7 @@
    "url": "https://cliffandpebble.com/products/rocket-mozzafiato-fast-r-espresso-machine?variant=53380734288145",
    "price": 3250,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/5_79d6b21c-29fd-412c-850d-680998896498.png?v=1775504511",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rocket Espresso",
    "mpn": "ESE353N1540"
   },
@@ -643,7 +643,7 @@
    "url": "https://cliffandpebble.com/products/rocket-mozzafiato-fast-v-espresso-machine?variant=53380721770769",
    "price": 2750,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/7_a2907677-807d-4eef-a046-9e8f85e3a99e.png?v=1775503809",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rocket Espresso",
    "mpn": "ESE353N1480"
   },
@@ -654,7 +654,7 @@
    "url": "https://cliffandpebble.com/products/rocket-mozzafiato-fast-v-espresso-machine?variant=53380721738001",
    "price": 2750,
    "image": "https://cdn.shopify.com/s/files/1/1365/5333/files/4_ddbad593-2e72-4f77-80b6-d1e2713a4d76.png?v=1775503876",
-   "inStock": false,
+   "inStock": true,
    "brand": "Rocket Espresso",
    "mpn": "ESE353N1460"
   },

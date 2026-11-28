@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:40:12.312Z",
+ "scrapedAt": "2026-11-28T02:25:01.769Z",
  "offers": [
   {
    "retailer": "us-worldwidestereo",
@@ -240,7 +240,7 @@
    "url": "https://www.worldwidestereo.com/products/audio-technica-ath-awas-over-ear-headphones-with-asada-zakura-japanese-cherry",
    "price": 1499,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/25_da65fc9f-0b6c-433a-93b4-80142196bd77.jpg?v=1762447655",
-   "inStock": true,
+   "inStock": false,
    "brand": "Audio-Technica"
   },
   {
@@ -837,7 +837,7 @@
    "price": 569.99,
    "wasPrice": 649.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-DT-797-PV-Headset-with-Cardioid-Condenser-Microphone-Image-01.jpg?v=1793375273",
-   "inStock": false,
+   "inStock": true,
    "brand": "Beyerdynamic"
   },
   {
@@ -925,7 +925,7 @@
    "price": 199.99,
    "wasPrice": 399.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-230-Wireless-Gaming-Headset-with-Active-Noise-Cancellation-Black-Image-01.jpg?v=1793375284",
-   "inStock": true,
+   "inStock": false,
    "brand": "Beyerdynamic"
   },
   {
@@ -947,7 +947,7 @@
    "price": 299.99,
    "wasPrice": 499.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/beyerdynamic-MMX-330-Pro-Open-Back-Wired-Gaming-Headset-Image-01.jpg?v=1793375278",
-   "inStock": true,
+   "inStock": false,
    "brand": "Beyerdynamic"
   },
   {
@@ -1171,7 +1171,7 @@
    "price": 384,
    "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Headphones-2nd-Gen_-Sand-Image-07.jpg?v=1759765274",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -1212,7 +1212,7 @@
    "url": "https://www.worldwidestereo.com/products/bose-quietcomfort-ultra-wireless-noise-cancelling-headphones-2nd-gen-white",
    "price": 449,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Bose-QuietComfort-Ultra-Wireless-Noise-Cancelling-Headphones-2nd-Gen_-White-Image-07.jpg?v=1759765274",
-   "inStock": true,
+   "inStock": false,
    "brand": "Bose"
   },
   {
@@ -1456,7 +1456,8 @@
    "sku": "51922398183735",
    "title": "Cambridge Audio Melomania A100 True Wireless Earbuds (Black)",
    "url": "https://www.worldwidestereo.com/products/cambridge-audio-melomania-a100-true-wireless-earbuds-black",
-   "price": 149,
+   "price": 119,
+   "wasPrice": 149,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/CambridgeAudio-Melomania-A100-True-Wireless-Earbuds-Black-Image-07.jpg?v=1775660232",
    "inStock": true,
    "brand": "Cambridge Audio"
@@ -2100,7 +2101,7 @@
    "price": 114.95,
    "wasPrice": 180,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Quantum-360X-Over-Ear-Gaming-Headphones-Black-Image-01.jpg?v=1754109191",
-   "inStock": true,
+   "inStock": false,
    "brand": "JBL"
   },
   {
@@ -2111,7 +2112,7 @@
    "price": 109.95,
    "wasPrice": 156,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JBL-Quantum-520-X-Wireless-Over-Ear-Gaming-Headset-Black-Image-01.jpg?v=1792296517",
-   "inStock": true,
+   "inStock": false,
    "brand": "JBL"
   },
   {
@@ -2539,7 +2540,7 @@
    "price": 199.95,
    "wasPrice": 349.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/JVC-WOOD-Masterpiece-Wireless-Noise-Cancelling-Earbuds-Sunburst-Brown-Image-01.jpg?v=1788442327",
-   "inStock": true,
+   "inStock": false,
    "brand": "JVC"
   },
   {
@@ -2704,7 +2705,7 @@
    "price": 199.95,
    "wasPrice": 349.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Sennheiser-HD-550-Open-Over-Ear-Headphones-Image-01.jpg?v=1773342843",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sennheiser"
   },
   {
@@ -2909,7 +2910,7 @@
    "price": 219.95,
    "wasPrice": 299.95,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/Sennheiser-RS-275-Wireless-TV-Headphones-Transmitter-Image-09.jpg?v=1771304900",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sennheiser"
   },
   {
@@ -3222,7 +3223,7 @@
    "price": 128,
    "wasPrice": 159.99,
    "image": "https://cdn.shopify.com/s/files/1/0727/2860/9079/files/172909_WWS1.jpg?v=1726074835",
-   "inStock": false,
+   "inStock": true,
    "brand": "Sony"
   },
   {

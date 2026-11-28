@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:22:51.948Z",
+ "scrapedAt": "2026-11-28T02:07:56.927Z",
  "offers": [
   {
    "retailer": "sharkninja",
@@ -45,7 +45,7 @@
    "price": 699.99,
    "wasPrice": 849.99,
    "image": "https://cdn.shopify.com/s/files/1/0723/4204/4707/files/es601-main-unit-transparent_43070c7c-7e44-45ea-bced-792d3a466a0a.webp?v=1779243081",
-   "inStock": false,
+   "inStock": true,
    "mpn": "ES601CYANZ",
    "brand": "Ninja"
   },
@@ -69,7 +69,7 @@
    "price": 699.99,
    "wasPrice": 849.99,
    "image": "https://cdn.shopify.com/s/files/1/0723/4204/4707/files/es601-main-unit-transparent_43070c7c-7e44-45ea-bced-792d3a466a0a.webp?v=1779243081",
-   "inStock": false,
+   "inStock": true,
    "mpn": "ES601BKANZ",
    "brand": "Ninja"
   },
@@ -95,6 +95,16 @@
    "image": "https://cdn.shopify.com/s/files/1/0723/4204/4707/files/es601-main-unit-transparent_43070c7c-7e44-45ea-bced-792d3a466a0a.webp?v=1779243081",
    "inStock": true,
    "mpn": "ES601ANZ",
+   "brand": "Ninja"
+  },
+  {
+   "retailer": "sharkninja",
+   "sku": "ES701GDANZ",
+   "title": "Ninja Luxe Café Pro Espresso Machine",
+   "url": "https://sharkninja.com.au/products/ninja-luxe-cafe-pro-espresso-machine",
+   "price": 999.99,
+   "inStock": false,
+   "mpn": "ES701GDANZ",
    "brand": "Ninja"
   }
  ]

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:38:48.898Z",
+ "scrapedAt": "2026-11-28T02:23:35.207Z",
  "offers": [
   {
    "retailer": "us-rockbrookcamera",
@@ -58,7 +58,7 @@
    "sku": "212021",
    "title": "Canon EOS R100 Mirrorless Camera 18-45mm & 55-210mm Kit",
    "url": "https://rockbrookcamera.com/products/canon-eos-r100-18-45-55-210",
-   "price": 749.99,
+   "price": 699.99,
    "wasPrice": 929.99,
    "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/files/Canon-EOSR10018-45-55-210Kit-FrontSide-212021.jpg?v=1685048374",
    "inStock": true,
@@ -69,7 +69,7 @@
    "sku": "213354",
    "title": "Canon EOS R100 Mirrorless Camera 18-45mm & 75-300mm Kit",
    "url": "https://rockbrookcamera.com/products/canon-eos-r100-18-45-75-300",
-   "price": 649.99,
+   "price": 599.99,
    "wasPrice": 829.99,
    "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/files/Canon-R1002LensKit-Box-Contents-213354.jpg?v=1754514799",
    "inStock": true,
@@ -80,7 +80,7 @@
    "sku": "212020",
    "title": "Canon EOS R100 Mirrorless Camera 18-45mm Kit",
    "url": "https://rockbrookcamera.com/products/canon-eos-r100-18-45-kit",
-   "price": 499.99,
+   "price": 449.99,
    "wasPrice": 679.99,
    "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/files/Canon-EOSR10018-45Kit-FrontSide-212020.jpg?v=1755534381",
    "inStock": true,
@@ -91,7 +91,7 @@
    "sku": "212791",
    "title": "Canon EOS R5 Mark II Mirrorless Camera Body",
    "url": "https://rockbrookcamera.com/products/canon-eos-r5-ii-body",
-   "price": 3999.99,
+   "price": 3899.99,
    "wasPrice": 4399.99,
    "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/files/bf-canon-r5II-body.jpg?v=1795623133",
    "inStock": true,
@@ -127,7 +127,7 @@
    "price": 679.99,
    "wasPrice": 779.99,
    "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/products/Canon-EOSR50Body-FrontSide-211820_25e7a297-9bd3-4999-8eab-e051d9af3322.jpg?v=1676653761",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -854,16 +854,6 @@
   },
   {
    "retailer": "us-rockbrookcamera",
-   "sku": "210958",
-   "title": "Nikon Z9 Mirrorless Camera Body",
-   "url": "https://rockbrookcamera.com/products/nikon-z9-body-1",
-   "price": 5896.99,
-   "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/products/Nikon-Z9MirrorlessCameraBody-Front-210958_2f1416ee-feda-47e4-9733-7d870e26f6d2.jpg?v=1669053447",
-   "inStock": false,
-   "brand": "Nikon"
-  },
-  {
-   "retailer": "us-rockbrookcamera",
    "sku": "212191",
    "title": "Nikon Zf Mirrorless Camera Body",
    "url": "https://rockbrookcamera.com/products/nikon-zf-body",
@@ -1156,7 +1146,8 @@
    "sku": "209364",
    "title": "Sony Alpha A6100 Mirrorless Camera 16-50mm Kit Black",
    "url": "https://rockbrookcamera.com/products/sony-a6100-16-50-black",
-   "price": 948,
+   "price": 798,
+   "wasPrice": 948,
    "image": "https://cdn.shopify.com/s/files/1/0253/6459/4751/products/c448d07ca1792d1ee35911840a9299eb.jpg?v=1581020702",
    "inStock": true,
    "brand": "Sony"

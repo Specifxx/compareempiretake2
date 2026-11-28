@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:16:55.352Z",
+ "scrapedAt": "2026-11-28T02:01:49.211Z",
  "offers": [
   {
    "retailer": "cameraelectronic",
@@ -866,6 +866,26 @@
   },
   {
    "retailer": "cameraelectronic",
+   "sku": "86441",
+   "title": "FUJIFILM instax Wide 400 Camera Army Green",
+   "url": "https://www.cameraelectronic.com.au/products/fujifilm-instax-400-wide-camera?variant=49813775941909",
+   "price": 229,
+   "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/10.jpg?v=1773729308",
+   "inStock": true,
+   "brand": "FUJIFILM"
+  },
+  {
+   "retailer": "cameraelectronic",
+   "sku": "86443",
+   "title": "FUJIFILM instax Wide 400 Camera Black",
+   "url": "https://www.cameraelectronic.com.au/products/fujifilm-instax-400-wide-camera?variant=49813775974677",
+   "price": 229,
+   "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/Wide_400_Black.jpg?v=1773729273",
+   "inStock": true,
+   "brand": "FUJIFILM"
+  },
+  {
+   "retailer": "cameraelectronic",
    "sku": "85377",
    "title": "FUJIFILM Instax Wide Evo Camera",
    "url": "https://www.cameraelectronic.com.au/products/fujifilm-instax-wide-evo-camera",
@@ -1625,7 +1645,8 @@
    "sku": "97100",
    "title": "Leica Book “100 Leica Stories”",
    "url": "https://www.cameraelectronic.com.au/products/leica-book-100-leica-stories",
-   "price": 149,
+   "price": 141.99,
+   "wasPrice": 149,
    "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/97100.tag.0.webp?v=1795745402",
    "inStock": true,
    "brand": "Leica"
@@ -1680,6 +1701,17 @@
    "price": 2992.99,
    "wasPrice": 3150,
    "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/19213_Leica_D-Lux_8_metal_gray_front_LoRes.jpg?v=1779958215",
+   "inStock": true,
+   "brand": "Leica"
+  },
+  {
+   "retailer": "cameraelectronic",
+   "sku": "19687",
+   "title": "Leica D-Lux 8 Handgrip - Black",
+   "url": "https://www.cameraelectronic.com.au/products/leica-d-lux-8-handgrip-black",
+   "price": 256.99,
+   "wasPrice": 270,
+   "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/1719909988_1837884.jpg?v=1720061102",
    "inStock": true,
    "brand": "Leica"
   },
@@ -1979,7 +2011,7 @@
   },
   {
    "retailer": "cameraelectronic",
-   "sku": "98221",
+   "sku": "96398",
    "title": "Leica Umbrella",
    "url": "https://www.cameraelectronic.com.au/products/leica-umbrella",
    "price": 76.99,
@@ -2698,6 +2730,18 @@
   },
   {
    "retailer": "cameraelectronic",
+   "sku": "DC-FZ80DGN-K",
+   "title": "Panasonic LUMIX FZ80D 18.1MP 60x Zoom 4K Compact Digital Camera",
+   "url": "https://www.cameraelectronic.com.au/products/panasonic-lumix-18-1mp-60x-zoom-4k-compact-digital-camera",
+   "price": 596.99,
+   "wasPrice": 795,
+   "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/FZ80D_product_hero_front.jpg?v=1719992922",
+   "inStock": true,
+   "brand": "Panasonic",
+   "mpn": "DC-FZ80DGN-K"
+  },
+  {
+   "retailer": "cameraelectronic",
    "sku": "DC-L10GN-K",
    "title": "Panasonic LUMIX L10 Premium Compact Camera - Black",
    "url": "https://www.cameraelectronic.com.au/products/lumix-l10-premium-compact-camera-black",
@@ -2937,6 +2981,17 @@
   },
   {
    "retailer": "cameraelectronic",
+   "sku": "PGY-GM-223",
+   "title": "PGYTECH CapLock Action Camera Suction Cup",
+   "url": "https://www.cameraelectronic.com.au/products/pgytech-caplock-action-camera-suction-cup",
+   "price": 63,
+   "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/CapLock_Action_Camera_Suction_Cup_Mount_p-gm-223_2000x_d0d5b9f5-e0ca-4794-9e35-4010e9740ee1.webp?v=1719216692",
+   "inStock": true,
+   "brand": "PGYTECH",
+   "mpn": "PGY-GM-223"
+  },
+  {
+   "retailer": "cameraelectronic",
    "sku": "P-GM-149",
    "title": "PGYTECH CapLock MantisPod Power (Gopro Edition）",
    "url": "https://www.cameraelectronic.com.au/products/pgytech-caplock-mantispod-power-gopro-edition",
@@ -3023,7 +3078,8 @@
    "sku": "1587",
    "title": "RICOH GR IV Monochrome",
    "url": "https://www.cameraelectronic.com.au/products/ricoh-gr-iv-monochrome",
-   "price": 2989,
+   "price": 2690.99,
+   "wasPrice": 2989,
    "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/004_MONO_left_upper_surface.jpg?v=1768198182",
    "inStock": true,
    "brand": "Ricoh"
@@ -3212,18 +3268,6 @@
   },
   {
    "retailer": "cameraelectronic",
-   "sku": "ILCE7RM4A",
-   "title": "Sony A7R IV Mirrorless Camera Body",
-   "url": "https://www.cameraelectronic.com.au/products/sony-alpha-a7r-iv-mirrorless-camera-body",
-   "price": 3377.99,
-   "wasPrice": 4119,
-   "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/1563273968_1494679_2.webp?v=1686209432",
-   "inStock": true,
-   "brand": "Sony",
-   "mpn": "ILCE7RM4A"
-  },
-  {
-   "retailer": "cameraelectronic",
    "sku": "ILCE7RM6B",
    "title": "Sony Alpha A7R VI Compact System Camera Body Only",
    "url": "https://www.cameraelectronic.com.au/products/sony-alpha-a7r-vi-compact-system-camera-body-only",
@@ -3368,6 +3412,29 @@
    "inStock": true,
    "brand": "Sony",
    "mpn": "SRGX40UHW"
+  },
+  {
+   "retailer": "cameraelectronic",
+   "sku": "ZVE10M2B",
+   "title": "Sony ZV-E10 II Mirrorless Camera Body (Black)",
+   "url": "https://www.cameraelectronic.com.au/products/sony-zv-e10-ii-mirrorless-camera-body-black",
+   "price": 1549,
+   "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/CX89300_front_black-Large.jpg?v=1720572331",
+   "inStock": true,
+   "brand": "Sony",
+   "mpn": "ZVE10M2B"
+  },
+  {
+   "retailer": "cameraelectronic",
+   "sku": "ZVE10M2W",
+   "title": "Sony ZV-E10 II Mirrorless Camera Body (White)",
+   "url": "https://www.cameraelectronic.com.au/products/sony-zv-e10-ii-mirrorless-camera-body-white",
+   "price": 1474.99,
+   "wasPrice": 1569,
+   "image": "https://cdn.shopify.com/s/files/1/0685/0252/0085/files/CX89300_front_white-Large.jpg?v=1720572521",
+   "inStock": true,
+   "brand": "Sony",
+   "mpn": "ZVE10M2W"
   },
   {
    "retailer": "cameraelectronic",

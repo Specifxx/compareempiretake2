@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:36:17.531Z",
+ "scrapedAt": "2026-11-28T02:21:08.305Z",
  "offers": [
   {
    "retailer": "us-glazers",
@@ -217,7 +217,7 @@
    "sku": "25361",
    "title": "Canon EOS R100 Mirrorless Camera with Double Zoom Lens Kit",
    "url": "https://www.glazerscamera.com/products/canon-eos-r100-dbl-lens-zm-kit",
-   "price": 649.99,
+   "price": 599.99,
    "wasPrice": 829.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/25361_6052C111_01_Hero.png?v=1752517547",
    "inStock": true,
@@ -239,7 +239,7 @@
    "sku": "11325",
    "title": "Canon EOS R5 II Mirrorless Camera",
    "url": "https://www.glazerscamera.com/products/canon-eos-r5-ii-body",
-   "price": 3999,
+   "price": 3899,
    "wasPrice": 4399,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/113256536C00201Hero.png?v=1784236815",
    "inStock": true,
@@ -349,7 +349,7 @@
    "url": "https://www.glazerscamera.com/products/canon-powershot-elph-360-hs-a-camera-black",
    "price": 379.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/28242_7280C001AA_01_Hero.png?v=1757361096",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -359,6 +359,16 @@
    "url": "https://www.glazerscamera.com/products/canon-powershot-elph-360-hs-a-camera-silver",
    "price": 379.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/28249_7283C001AA_01_Hero.png?v=1757361275",
+   "inStock": false,
+   "brand": "Canon"
+  },
+  {
+   "retailer": "us-glazers",
+   "sku": "48663",
+   "title": "Canon PowerShot G7 X Mark III Camera - Black",
+   "url": "https://www.glazerscamera.com/products/canon-powershot-g7x-mkiii-blk",
+   "price": 929.99,
+   "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/products/icag7xm3b_3.jpg?v=1614038579",
    "inStock": false,
    "brand": "Canon"
   },
@@ -379,7 +389,7 @@
    "url": "https://www.glazerscamera.com/products/canon-powershot-sx740-hs-black",
    "price": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/products/hr_sx740hs_black_3q_cl.jpg?v=1614034492",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -1717,7 +1727,8 @@
    "sku": "96450",
    "title": "Lumix G9 II Mirrorless Camera",
    "url": "https://www.glazerscamera.com/products/panasonic-g9-ii-body",
-   "price": 1899.99,
+   "price": 1399.99,
+   "wasPrice": 1899.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/96450DC-G9M2BODY901Hero.png?v=1782163812",
    "inStock": true,
    "brand": "Lumix"
@@ -1804,7 +1815,7 @@
    "url": "https://www.glazerscamera.com/products/lumix-dc-s5iix-body",
    "price": 2199.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/products/88537_Hero.png?v=1672854200",
-   "inStock": true,
+   "inStock": false,
    "brand": "Lumix"
   },
   {
@@ -2709,7 +2720,7 @@
    "price": 2999.99,
    "wasPrice": 3399.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/95962_Hero.png?v=1701456935",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony"
   },
   {
@@ -2778,17 +2789,6 @@
   },
   {
    "retailer": "us-glazers",
-   "sku": "86449",
-   "title": "Sony Alpha ZV-1F Compact Vlogging Camera",
-   "url": "https://www.glazerscamera.com/products/sony-zv-1f-vlogging-camera",
-   "price": 549.99,
-   "wasPrice": 599.99,
-   "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/products/86449_Hero.png?v=1701460340",
-   "inStock": true,
-   "brand": "Sony"
-  },
-  {
-   "retailer": "us-glazers",
    "sku": "90594",
    "title": "Sony Alpha ZV-E1 Mirrorless Camera",
    "url": "https://www.glazerscamera.com/products/sony-alpha-zv-e1",
@@ -2824,7 +2824,7 @@
    "title": "Sony RX10 V Compact Camera",
    "url": "https://www.glazerscamera.com/products/sony-rx10-v-compact-camera",
    "price": 2299.99,
-   "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/39955DSC-RX10M5_B01Hero.png?v=1783611768",
+   "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/39955DSC-RX10M5_B03Hero.png?v=1783611770",
    "inStock": true,
    "brand": "Sony"
   },
@@ -2866,6 +2866,17 @@
    "price": 899.99,
    "wasPrice": 999.99,
    "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/files/93233_01_Hero.png?v=1701458375",
+   "inStock": true,
+   "brand": "Sony"
+  },
+  {
+   "retailer": "us-glazers",
+   "sku": "86449",
+   "title": "Sony ZV-1F Compact Vlogging Camera",
+   "url": "https://www.glazerscamera.com/products/sony-zv-1f-vlogging-camera",
+   "price": 549.99,
+   "wasPrice": 599.99,
+   "image": "https://cdn.shopify.com/s/files/1/0397/6167/4285/products/86449_Hero.png?v=1701460340",
    "inStock": true,
    "brand": "Sony"
   },

@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T03:02:33.592Z",
+ "scrapedAt": "2026-11-28T02:46:27.500Z",
  "offers": [
   {
    "retailer": "ca-gosselin",
@@ -7,7 +7,7 @@
    "title": "(Ne pas utiliser) Découverte de votre caméra – Pentax",
    "url": "https://www.gosselinphoto.ca/products/ne-pas-utiliser-decouverte-de-votre-camera-pentax-c900006",
    "price": 65,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C900006"
   },
@@ -51,7 +51,7 @@
    "url": "https://www.gosselinphoto.ca/products/panasonic-boite-ouverte-panasonic-lumix-s9-noir-8860517",
    "price": 1499,
    "wasPrice": 2149,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "brand": "PANASONIC"
   },
@@ -82,7 +82,8 @@
    "sku": "8841155",
    "title": "a6100",
    "url": "https://www.gosselinphoto.ca/products/sony-a6100-8841155",
-   "price": 999,
+   "price": 849,
+   "wasPrice": 999,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8841155_1_8841155-1.jpg?v=1789212172",
    "inStock": true,
    "brand": "SONY"
@@ -92,7 +93,8 @@
    "sku": "8856341",
    "title": "a6400 16-50mm II",
    "url": "https://www.gosselinphoto.ca/products/sony-a6400-20064230-a6400?variant=68110370472029",
-   "price": 1349,
+   "price": 1149,
+   "wasPrice": 1349,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8856341_1_sony-a6400-avec-16-50mm-ii.jpg?v=1795187140",
    "inStock": true,
    "brand": "SONY"
@@ -102,18 +104,29 @@
    "sku": "8840117",
    "title": "a6400 Boîtier seul",
    "url": "https://www.gosselinphoto.ca/products/sony-a6400-20064230-a6400?variant=68110370340957",
-   "price": 1249,
+   "price": 1049,
+   "wasPrice": 1249,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8840117_1_ilce6400b-1.jpg?v=1795187135",
    "inStock": true,
    "brand": "SONY"
   },
   {
    "retailer": "ca-gosselin",
+   "sku": "8858767",
+   "title": "a6700 16-50mm II",
+   "url": "https://www.gosselinphoto.ca/products/sony-a6700-20064713-a6700?variant=68213333164125",
+   "price": 1999,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8858767_1_sony-a6700-avec-16-50mm-ii.jpg?v=1795787105",
+   "inStock": true,
+   "brand": "SONY"
+  },
+  {
+   "retailer": "ca-gosselin",
    "sku": "8850780",
-   "title": "a6700",
-   "url": "https://www.gosselinphoto.ca/products/sony-a6700-8850780",
+   "title": "a6700 Boîtier seul",
+   "url": "https://www.gosselinphoto.ca/products/sony-a6700-20064713-a6700?variant=68213333000285",
    "price": 1899,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8850780_1_ilce6700.jpg?v=1789184482",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8850780_1_ilce6700.jpg?v=1795787084",
    "inStock": true,
    "brand": "SONY"
   },
@@ -122,7 +135,8 @@
    "sku": "8838687",
    "title": "a7 III",
    "url": "https://www.gosselinphoto.ca/products/sony-a7-iii-8838687",
-   "price": 2399,
+   "price": 1799,
+   "wasPrice": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8838687_1_a7iii_4_1.jpg?v=1789194569",
    "inStock": true,
    "brand": "SONY"
@@ -187,7 +201,8 @@
    "sku": "8851227",
    "title": "a7CR (Argent)",
    "url": "https://www.gosselinphoto.ca/products/sony-a7cr-argent-8851227",
-   "price": 4099,
+   "price": 3699,
+   "wasPrice": 4099,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8851227_1_ilce7crs.jpg?v=1789202345",
    "inStock": true,
    "brand": "SONY"
@@ -197,7 +212,8 @@
    "sku": "8851226",
    "title": "a7CR (Noir)",
    "url": "https://www.gosselinphoto.ca/products/sony-a7cr-noir-8851226",
-   "price": 4099,
+   "price": 3699,
+   "wasPrice": 4099,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8851226_1_ilce7crb.jpg?v=1789202329",
    "inStock": true,
    "brand": "SONY"
@@ -207,7 +223,8 @@
    "sku": "8845349",
    "title": "a7R IVA",
    "url": "https://www.gosselinphoto.ca/products/sony-a7r-iva-8845349",
-   "price": 4199,
+   "price": 3299,
+   "wasPrice": 4199,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8845349_1_ilce7rm4ab.jpg?v=1789174412",
    "inStock": true,
    "brand": "SONY"
@@ -217,7 +234,8 @@
    "sku": "8849012",
    "title": "a7R V",
    "url": "https://www.gosselinphoto.ca/products/sony-a7r-v-8849012",
-   "price": 4999,
+   "price": 4499,
+   "wasPrice": 4999,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8849012_1_ilce7rm5b.jpg?v=1789190274",
    "inStock": true,
    "brand": "SONY"
@@ -237,7 +255,8 @@
    "sku": "8843091",
    "title": "a7S III",
    "url": "https://www.gosselinphoto.ca/products/sony-a7s-iii-8843091",
-   "price": 4799,
+   "price": 4499,
+   "wasPrice": 4799,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8843091_1_ilce7sm3b_1.jpg?v=1787773767",
    "inStock": true,
    "brand": "SONY"
@@ -335,7 +354,7 @@
    "title": "Atelier pour appareils compacts - Canon PowerShot",
    "url": "https://www.gosselinphoto.ca/products/atelier-pour-appareils-compacts-canon-powershot-c100000",
    "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C100000"
   },
@@ -345,7 +364,7 @@
    "title": "Atelier pour appareils compacts - Panasonic Lumix",
    "url": "https://www.gosselinphoto.ca/products/atelier-pour-appareils-compacts-panasonic-lumix-c100002",
    "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C100002"
   },
@@ -355,7 +374,7 @@
    "title": "Atelier pour appareils compacts - Sony Cybershot",
    "url": "https://www.gosselinphoto.ca/products/atelier-pour-appareils-compacts-sony-cybershot-c100001",
    "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C100001"
   },
@@ -365,7 +384,7 @@
    "title": "Atelier pour reflex numériques Pentax",
    "url": "https://www.gosselinphoto.ca/products/atelier-pour-reflex-numeriques-pentax-c100011",
    "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C100011"
   },
@@ -632,7 +651,7 @@
    "title": "Découverte de votre caméra - Cine-Camera",
    "url": "https://www.gosselinphoto.ca/products/decouverte-de-votre-camera-cine-camera-c900040",
    "price": 65,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C900040"
   },
@@ -642,7 +661,7 @@
    "title": "Découverte de votre caméra - GoPro",
    "url": "https://www.gosselinphoto.ca/products/decouverte-de-votre-camera-gopro-c900038",
    "price": 65,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C900038"
   },
@@ -652,7 +671,7 @@
    "title": "Découverte de votre caméra - Pentax",
    "url": "https://www.gosselinphoto.ca/products/decouverte-de-votre-camera-pentax-c900037",
    "price": 65,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C900037"
   },
@@ -662,7 +681,7 @@
    "title": "Découverte de votre caméra – GoPro",
    "url": "https://www.gosselinphoto.ca/products/decouverte-de-votre-camera-gopro-c900007",
    "price": 65,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C900007"
   },
@@ -895,6 +914,28 @@
    "price": 2999,
    "wasPrice": 3199,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8862374_1_canon-eos-r6v-0z.jpg?v=1789387584",
+   "inStock": true,
+   "brand": "CANON"
+  },
+  {
+   "retailer": "ca-gosselin",
+   "sku": "8847783",
+   "title": "EOS R7 18-150mm",
+   "url": "https://www.gosselinphoto.ca/products/canon-eos-r7-20064708-r7?variant=68213316026461",
+   "price": 2099,
+   "wasPrice": 2599,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8847783_1_5137c009.jpg?v=1795784873",
+   "inStock": true,
+   "brand": "CANON"
+  },
+  {
+   "retailer": "ca-gosselin",
+   "sku": "8847782",
+   "title": "EOS R7 Boîtier seul",
+   "url": "https://www.gosselinphoto.ca/products/canon-eos-r7-20064708-r7?variant=68213315928157",
+   "price": 1599,
+   "wasPrice": 2099,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8847782_1_5137c002_1.jpg?v=1795784867",
    "inStock": true,
    "brand": "CANON"
   },
@@ -2349,7 +2390,7 @@
    "title": "Webinaire - Comprendre son appareil photo compact Panasonic Lumix",
    "url": "https://www.gosselinphoto.ca/products/webinaire-comprendre-son-appareil-photo-compact-panasonic-lumix-c140004",
    "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C140004"
   },
@@ -2359,7 +2400,7 @@
    "title": "Webinaire - Comprendre son appareil photo compact Sony Cybershot",
    "url": "https://www.gosselinphoto.ca/products/webinaire-comprendre-son-appareil-photo-compact-sony-cybershot-c140005",
    "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C140005"
   },
@@ -2369,7 +2410,7 @@
    "title": "Webinaire - Comprendre son appareil photo sans-miroir Sony (série A5000 et A6000)",
    "url": "https://www.gosselinphoto.ca/products/webinaire-comprendre-son-appareil-photo-sans-miroir-sony-serie-a5000-et-a6000-c140011",
    "price": 79,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795681903",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/camera.jpg?v=1795768413",
    "inStock": true,
    "mpn": "C140011"
   },
@@ -2437,31 +2478,61 @@
   },
   {
    "retailer": "ca-gosselin",
+   "sku": "8859684",
+   "title": "X-T30 III 13-33mm Argent",
+   "url": "https://www.gosselinphoto.ca/products/fujifilm-x-t30-iii-20064717-xt30iii?variant=68213901328477",
+   "price": 1449,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8859684_1_fujifilm-x-t30-iii-avec-xc-13-33mm-_argent.jpg?v=1795795133",
+   "inStock": true,
+   "brand": "FUJIFILM"
+  },
+  {
+   "retailer": "ca-gosselin",
+   "sku": "8859686",
+   "title": "X-T30 III 13-33mm Gris",
+   "url": "https://www.gosselinphoto.ca/products/fujifilm-x-t30-iii-20064717-xt30iii?variant=68213908865117",
+   "price": 1449,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8859686_1_fujifilm-x-t30-iii-avec-xc-13-33mm-_charbon.jpg?v=1795795147",
+   "inStock": true,
+   "brand": "FUJIFILM"
+  },
+  {
+   "retailer": "ca-gosselin",
+   "sku": "8859685",
+   "title": "X-T30 III 13-33mm Noir",
+   "url": "https://www.gosselinphoto.ca/products/fujifilm-x-t30-iii-20064717-xt30iii?variant=68213904769117",
+   "price": 1449,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8859685_1_fujifilm-x-t30-iii-avec-xc-13-33mm-_noir.jpg?v=1795795140",
+   "inStock": true,
+   "brand": "FUJIFILM"
+  },
+  {
+   "retailer": "ca-gosselin",
    "sku": "8859681",
-   "title": "X-T30 III (Argent)",
-   "url": "https://www.gosselinphoto.ca/products/fujifilm-x-t30-iii-argent-8859681",
+   "title": "X-T30 III Boîtier seul Argent",
+   "url": "https://www.gosselinphoto.ca/products/fujifilm-x-t30-iii-20064717-xt30iii?variant=68213892284509",
    "price": 1249,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8859681_1_fujifilm-x-t30-iii-_argent.jpg?v=1789173212",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8859681_1_fujifilm-x-t30-iii-_argent.jpg?v=1795795115",
    "inStock": true,
    "brand": "FUJIFILM"
   },
   {
    "retailer": "ca-gosselin",
    "sku": "8859683",
-   "title": "X-T30 III (Charbon)",
-   "url": "https://www.gosselinphoto.ca/products/fujifilm-x-t30-iii-charbon-8859683",
+   "title": "X-T30 III Boîtier seul Gris",
+   "url": "https://www.gosselinphoto.ca/products/fujifilm-x-t30-iii-20064717-xt30iii?variant=68213896577117",
    "price": 1249,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8859683_1_fujifilm-x-t30-iii-_charbon.jpg?v=1789173237",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8859683_1_fujifilm-x-t30-iii-_charbon.jpg?v=1795795126",
    "inStock": true,
    "brand": "FUJIFILM"
   },
   {
    "retailer": "ca-gosselin",
    "sku": "8859682",
-   "title": "X-T30 III (Noir)",
-   "url": "https://www.gosselinphoto.ca/products/fujifilm-x-t30-iii-noir-8859682",
+   "title": "X-T30 III Boîtier seul Noir",
+   "url": "https://www.gosselinphoto.ca/products/fujifilm-x-t30-iii-20064717-xt30iii?variant=68213893627997",
    "price": 1249,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8859682_1_fujifilm-x-t30-iii-_noir.jpg?v=1789173257",
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8859682_1_fujifilm-x-t30-iii-_noir.jpg?v=1795795120",
    "inStock": true,
    "brand": "FUJIFILM"
   },
@@ -2562,7 +2633,8 @@
    "sku": "8848107",
    "title": "Z30",
    "url": "https://www.gosselinphoto.ca/products/nikon-z30-8848107",
-   "price": 879,
+   "price": 779,
+   "wasPrice": 879,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8848107_1_z30_bfn1_front.jpg?v=1790692999",
    "inStock": true,
    "brand": "NIKON"
@@ -2582,7 +2654,8 @@
    "sku": "8857243",
    "title": "Z5 II",
    "url": "https://www.gosselinphoto.ca/products/nikon-z5-ii-8857243",
-   "price": 2399,
+   "price": 2249,
+   "wasPrice": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8857243_1_nikon-z5-ii.jpg?v=1789177746",
    "inStock": true,
    "brand": "NIKON"
@@ -2612,7 +2685,8 @@
    "sku": "8855581",
    "title": "Z50 II",
    "url": "https://www.gosselinphoto.ca/products/nikon-z50-ii-8855581",
-   "price": 1349,
+   "price": 1299,
+   "wasPrice": 1349,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8855581_1_nikon-z-50ii.jpg?v=1789224911",
    "inStock": true,
    "brand": "NIKON"
@@ -2622,7 +2696,8 @@
    "sku": "8843528",
    "title": "Z6 II",
    "url": "https://www.gosselinphoto.ca/products/nikon-z6-ii-8843528",
-   "price": 2399,
+   "price": 2049,
+   "wasPrice": 2399,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8843528_1_34307-5.jpg?v=1788201007",
    "inStock": true,
    "brand": "NIKON"
@@ -2632,7 +2707,8 @@
    "sku": "8853599",
    "title": "Z6 III 24-70mm",
    "url": "https://www.gosselinphoto.ca/products/nikon-z6-iii-20061739-z6iii?variant=67591794950237",
-   "price": 4299,
+   "price": 3299,
+   "wasPrice": 4299,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8853599_1_34315.jpg?v=1790780774",
    "inStock": true,
    "brand": "Nikon"
@@ -2642,7 +2718,8 @@
    "sku": "8853598",
    "title": "Z6 III Boîtier seul",
    "url": "https://www.gosselinphoto.ca/products/nikon-z6-iii-20061739-z6iii?variant=67591794917469",
-   "price": 3499,
+   "price": 2499,
+   "wasPrice": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8853598_1_34314.jpg?v=1790780768",
    "inStock": true,
    "brand": "Nikon"
@@ -2652,7 +2729,8 @@
    "sku": "8843526",
    "title": "Z7 II",
    "url": "https://www.gosselinphoto.ca/products/nikon-z7-ii-8843526",
-   "price": 3499,
+   "price": 2699,
+   "wasPrice": 3499,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8843526_1_34309-4.png?v=1789229515",
    "inStock": true,
    "brand": "NIKON"
@@ -2662,7 +2740,8 @@
    "sku": "8850265",
    "title": "Z8",
    "url": "https://www.gosselinphoto.ca/products/nikon-z8-8850265",
-   "price": 5499,
+   "price": 4399,
+   "wasPrice": 5499,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8850265_1_34312-1.jpg?v=1789204524",
    "inStock": true,
    "brand": "NIKON"
@@ -2672,7 +2751,8 @@
    "sku": "8846511",
    "title": "Z9",
    "url": "https://www.gosselinphoto.ca/products/nikon-z9-8846511",
-   "price": 7499,
+   "price": 6999,
+   "wasPrice": 7499,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8846511_1_34311_1.jpg?v=1789176930",
    "inStock": true,
    "brand": "NIKON"
@@ -2726,7 +2806,8 @@
    "sku": "8849922",
    "title": "ZV-E1 (Blanc)",
    "url": "https://www.gosselinphoto.ca/products/sony-zv-e1-blanc-8849922",
-   "price": 2999,
+   "price": 2699,
+   "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8849922_1_ilczv-e1w.jpg?v=1789169119",
    "inStock": true,
    "brand": "SONY"
@@ -2736,30 +2817,55 @@
    "sku": "8849921",
    "title": "ZV-E1 (Noir)",
    "url": "https://www.gosselinphoto.ca/products/sony-zv-e1-noir-8849921",
-   "price": 2999,
+   "price": 2699,
+   "wasPrice": 2999,
    "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8849921_1_ilczv-e1b.jpg?v=1789169059",
    "inStock": true,
    "brand": "SONY"
   },
   {
    "retailer": "ca-gosselin",
-   "sku": "8845572",
-   "title": "ZV-E10 (Blanc)",
-   "url": "https://www.gosselinphoto.ca/products/sony-zv-e10-blanc-8845572",
+   "sku": "8858769",
+   "title": "ZV-E10 16-50mm II Blanc",
+   "url": "https://www.gosselinphoto.ca/products/sony-zv-e10-20064709-zve10?variant=68213319762013",
    "price": 899,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8845572_1_ilczve10w-3.jpg?v=1789218099",
+   "wasPrice": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8858769_1_sony-zv-e10-avec-16-50mm-ii-_blanc.jpg?v=1795785635",
    "inStock": true,
-   "brand": "SONY"
+   "brand": "Sony"
+  },
+  {
+   "retailer": "ca-gosselin",
+   "sku": "8858768",
+   "title": "ZV-E10 16-50mm II Noir",
+   "url": "https://www.gosselinphoto.ca/products/sony-zv-e10-20064709-zve10?variant=68213319270493",
+   "price": 899,
+   "wasPrice": 999,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8858768_1_sony-zv-e10-avec-16-50mm-ii-_noir.jpg?v=1795785631",
+   "inStock": true,
+   "brand": "Sony"
+  },
+  {
+   "retailer": "ca-gosselin",
+   "sku": "8845572",
+   "title": "ZV-E10 Boîtier seul Blanc",
+   "url": "https://www.gosselinphoto.ca/products/sony-zv-e10-20064709-zve10?variant=68213319204957",
+   "price": 799,
+   "wasPrice": 899,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8845572_1_ilczve10w-3.jpg?v=1795785618",
+   "inStock": true,
+   "brand": "Sony"
   },
   {
    "retailer": "ca-gosselin",
    "sku": "8845569",
-   "title": "ZV-E10 (Noir)",
-   "url": "https://www.gosselinphoto.ca/products/sony-zv-e10-noir-8845569",
-   "price": 899,
-   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8845569_1_ilczve10b-3.jpg?v=1789218388",
+   "title": "ZV-E10 Boîtier seul Noir",
+   "url": "https://www.gosselinphoto.ca/products/sony-zv-e10-20064709-zve10?variant=68213319041117",
+   "price": 799,
+   "wasPrice": 899,
+   "image": "https://cdn.shopify.com/s/files/1/0685/8096/6493/files/8845569_1_ilczve10b-3.jpg?v=1795785604",
    "inStock": true,
-   "brand": "SONY"
+   "brand": "Sony"
   },
   {
    "retailer": "ca-gosselin",

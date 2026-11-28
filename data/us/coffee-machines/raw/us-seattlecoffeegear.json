@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:38:58.601Z",
+ "scrapedAt": "2026-11-28T02:23:40.317Z",
  "offers": [
   {
    "retailer": "us-seattlecoffeegear",
@@ -189,7 +189,7 @@
    "price": 2173.5,
    "wasPrice": 2415,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/AscasoSteelDuoPlusEspressoMachine3.0new-8.jpg?v=1790716944",
-   "inStock": true,
+   "inStock": false,
    "brand": "Ascaso",
    "mpn": "ESE929P1560"
   },
@@ -379,7 +379,7 @@
    "url": "https://www.seattlecoffeegear.com/products/breville-grind-control-coffee-maker",
    "price": 399.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/BREVILLEGRINDCONTROLCOFFEEMAKERnew.jpg?v=1711169962",
-   "inStock": false,
+   "inStock": true,
    "brand": "Breville",
    "mpn": "CDR986E0060"
   },
@@ -520,7 +520,7 @@
    "price": 1499.95,
    "wasPrice": 1999.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/DeLonghiElettaExploreEspressoMachinenew.jpg?v=1712610960",
-   "inStock": true,
+   "inStock": false,
    "brand": "DeLonghi",
    "mpn": "ESU529M0580"
   },
@@ -1187,30 +1187,6 @@
   },
   {
    "retailer": "us-seattlecoffeegear",
-   "sku": "ESU451N1780",
-   "title": "Jura J8 Twin Superautomatic Espresso Machine Black",
-   "url": "https://www.seattlecoffeegear.com/products/jura-j8-twin-superautomatic-espresso-machine?variant=50760410136883",
-   "price": 3299,
-   "wasPrice": 3799,
-   "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/JuraJ8TwinSuperautomaticEspressoMachinenew.jpg?v=1736900383",
-   "inStock": false,
-   "brand": "Jura",
-   "mpn": "ESU451N1780"
-  },
-  {
-   "retailer": "us-seattlecoffeegear",
-   "sku": "ESU451N1800",
-   "title": "Jura J8 Twin Superautomatic Espresso Machine White",
-   "url": "https://www.seattlecoffeegear.com/products/jura-j8-twin-superautomatic-espresso-machine?variant=50760410169651",
-   "price": 3299,
-   "wasPrice": 3799,
-   "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/JuraJ8TwinSuperautomaticEspressoMachinenew-1.jpg?v=1736900393",
-   "inStock": true,
-   "brand": "Jura",
-   "mpn": "ESU451N1800"
-  },
-  {
-   "retailer": "us-seattlecoffeegear",
    "sku": "ESU451N1820",
    "title": "Jura W8 Superautomatic Espresso Machine",
    "url": "https://www.seattlecoffeegear.com/products/jura-w8-superautomatic-espresso-machine",
@@ -1295,7 +1271,7 @@
    "url": "https://www.seattlecoffeegear.com/products/lelit-bianca-espresso-machine?variant=47157187019059",
    "price": 2999.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/LELITBIANCAESPRESSOMACHINEnew-9.jpg?v=1754587992",
-   "inStock": false,
+   "inStock": true,
    "brand": "LELIT",
    "mpn": "ESE558L0100"
   },
@@ -1306,7 +1282,7 @@
    "url": "https://www.seattlecoffeegear.com/products/lelit-bianca-espresso-machine?variant=47157187051827",
    "price": 2999.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/LELITBIANCAESPRESSOMACHINEnew-10.jpg?v=1754587992",
-   "inStock": false,
+   "inStock": true,
    "brand": "LELIT",
    "mpn": "ESE558L0140"
   },
@@ -1496,7 +1472,7 @@
    "price": 549.99,
    "wasPrice": 899.99,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/PHILIPS3300LATTEGOSUPERAUTOMATICESPRESSOMACHINEnew.jpg?v=1711470081",
-   "inStock": true,
+   "inStock": false,
    "brand": "Philips Saeco",
    "mpn": "ESU781M0260"
   },
@@ -2200,7 +2176,7 @@
    "price": 399.95,
    "wasPrice": 499.95,
    "image": "https://cdn.shopify.com/s/files/1/0831/7573/5603/files/SMEGECF02EspressoMachinenew-6.jpg?v=1785365689",
-   "inStock": true,
+   "inStock": false,
    "brand": "SMEG",
    "mpn": "ESE764P0240"
   },

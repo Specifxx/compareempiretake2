@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T03:02:59.589Z",
+ "scrapedAt": "2026-11-28T02:48:12.794Z",
  "offers": [
   {
    "retailer": "sg-mobilesquare",
@@ -49,7 +49,7 @@
    "price": 1740,
    "wasPrice": 1899,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "sg-mobilesquare",
@@ -76,7 +76,7 @@
    "sku": "44884578533465",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Black",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578533465",
-   "price": 2630,
+   "price": 2600,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E091FFF3-EE04-4EA0-A67B-3DAB82DCFE1C.jpg?v=1789322781",
    "inStock": true
@@ -86,17 +86,17 @@
    "sku": "44884578566233",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Burgundy",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578566233",
-   "price": 2630,
+   "price": 2600,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E1C77FC9-0C8F-49A5-A3C6-C5CB22855822.jpg?v=1789322781",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "sg-mobilesquare",
    "sku": "44884578599001",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Glacier",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578599001",
-   "price": 2630,
+   "price": 2600,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/E74008D2-F26A-4918-AEA3-856B7D9A9388.jpg?v=1789322781",
    "inStock": false
@@ -106,7 +106,7 @@
    "sku": "44884578500697",
    "title": "Apple iPhone 18 Pro (2TB/12GB) Silver",
    "url": "https://www.mobilesquare.com.sg/products/apple-iphone-18-pro-2tb-12gb?variant=44884578500697",
-   "price": 2630,
+   "price": 2600,
    "wasPrice": 3699,
    "image": "https://cdn.shopify.com/s/files/1/1902/5493/files/4D810AF8-2FD8-4800-9B18-4EF7E50D42A7.jpg?v=1789322781",
    "inStock": false
@@ -794,7 +794,7 @@
   {
    "retailer": "sg-mobilesquare",
    "sku": "44610744123481",
-   "title": "Xiaomi Redmi Note 17 Pro 5G (256GB/8GB) - Free Redmi Headphones Neo! Black Free Redmi Headphones Neo (worth $65.90)",
+   "title": "Xiaomi Redmi Note 17 Pro 5G (256GB/8GB) Black",
    "url": "https://www.mobilesquare.com.sg/products/xiaomi-redmi-note-17-pro-5g-256gb-8gb?variant=44610744123481",
    "price": 478,
    "wasPrice": 599,
@@ -804,7 +804,7 @@
   {
    "retailer": "sg-mobilesquare",
    "sku": "44610744156249",
-   "title": "Xiaomi Redmi Note 17 Pro 5G (256GB/8GB) - Free Redmi Headphones Neo! Purple Free Redmi Headphones Neo (worth $65.90)",
+   "title": "Xiaomi Redmi Note 17 Pro 5G (256GB/8GB) Purple",
    "url": "https://www.mobilesquare.com.sg/products/xiaomi-redmi-note-17-pro-5g-256gb-8gb?variant=44610744156249",
    "price": 478,
    "wasPrice": 599,
@@ -814,7 +814,7 @@
   {
    "retailer": "sg-mobilesquare",
    "sku": "44610744189017",
-   "title": "Xiaomi Redmi Note 17 Pro 5G (256GB/8GB) - Free Redmi Headphones Neo! Sky Blue Free Redmi Headphones Neo (worth $65.90)",
+   "title": "Xiaomi Redmi Note 17 Pro 5G (256GB/8GB) Sky Blue",
    "url": "https://www.mobilesquare.com.sg/products/xiaomi-redmi-note-17-pro-5g-256gb-8gb?variant=44610744189017",
    "price": 478,
    "wasPrice": 599,
@@ -824,7 +824,7 @@
   {
    "retailer": "sg-mobilesquare",
    "sku": "44610955280473",
-   "title": "Xiaomi Redmi Note 17 Pro Max 5G (256GB/8GB) - Free Redmi Headphones Neo! Black Free Redmi Headphones Neo (worth $65.90)",
+   "title": "Xiaomi Redmi Note 17 Pro Max 5G (256GB/8GB) Black",
    "url": "https://www.mobilesquare.com.sg/products/xiaomi-redmi-note-17-pro-max-5g-256gb-8gb?variant=44610955280473",
    "price": 608,
    "wasPrice": 749,
@@ -834,7 +834,7 @@
   {
    "retailer": "sg-mobilesquare",
    "sku": "44610955346009",
-   "title": "Xiaomi Redmi Note 17 Pro Max 5G (256GB/8GB) - Free Redmi Headphones Neo! Cloud Blush Free Redmi Headphones Neo (worth $65.90)",
+   "title": "Xiaomi Redmi Note 17 Pro Max 5G (256GB/8GB) Cloud Blush",
    "url": "https://www.mobilesquare.com.sg/products/xiaomi-redmi-note-17-pro-max-5g-256gb-8gb?variant=44610955346009",
    "price": 608,
    "wasPrice": 749,
@@ -844,7 +844,7 @@
   {
    "retailer": "sg-mobilesquare",
    "sku": "44610955313241",
-   "title": "Xiaomi Redmi Note 17 Pro Max 5G (256GB/8GB) - Free Redmi Headphones Neo! Purple Free Redmi Headphones Neo (worth $65.90)",
+   "title": "Xiaomi Redmi Note 17 Pro Max 5G (256GB/8GB) Purple",
    "url": "https://www.mobilesquare.com.sg/products/xiaomi-redmi-note-17-pro-max-5g-256gb-8gb?variant=44610955313241",
    "price": 608,
    "wasPrice": 749,

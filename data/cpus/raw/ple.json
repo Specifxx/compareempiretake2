@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:22:34.041Z",
+ "scrapedAt": "2026-11-28T02:07:05.641Z",
  "offers": [
   {
    "retailer": "ple",
@@ -362,18 +362,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "664054",
-   "title": "Intel Core i9 14900 Raptor Lake 24 Core 32 Thread Up To 5.8GHz LGA1700 - Retail Box",
-   "brand": "Intel",
-   "mpn": "BX8071514900",
-   "url": "https://www.ple.com.au/products/664054/intel-core-i9-14900-raptor-lake-24-core-32-thread-up-to-58ghz-lga1700-retail-box",
-   "price": 899,
-   "wasPrice": 999,
-   "image": "https://plecom.imgix.net/iil-369952-664054.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "664055",
    "title": "Intel Core i9 14900F Raptor Lake 24 Core 32 Thread Up To 6.0GHz LGA1700 - No iGPU Retail Box",
    "brand": "Intel",
@@ -382,7 +370,7 @@
    "price": 869,
    "wasPrice": 939,
    "image": "https://plecom.imgix.net/iil-369951-664055.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

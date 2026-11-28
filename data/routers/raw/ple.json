@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:22:40.900Z",
+ "scrapedAt": "2026-11-28T02:07:13.006Z",
  "offers": [
   {
    "retailer": "ple",
@@ -578,6 +578,17 @@
   },
   {
    "retailer": "ple",
+   "sku": "642509",
+   "title": "TP-Link Archer C54 - AC1200 Dual-Band Wi-Fi 5 Router",
+   "brand": "TP-Link",
+   "mpn": "Archer C54",
+   "url": "https://www.ple.com.au/products/642509/tp-link-archer-c54-ac1200-dual-band-wi-fi-5-router",
+   "price": 69,
+   "image": "https://plecom.imgix.net/iil-233097-642509.jpg?w=600&h=600",
+   "inStock": true
+  },
+  {
+   "retailer": "ple",
    "sku": "678731",
    "title": "TP-Link Archer GE400 - BE6500 Wi-Fi 7 Gaming Router",
    "brand": "TP-Link",
@@ -1024,7 +1035,7 @@
    "price": 109,
    "wasPrice": 149,
    "image": "https://plecom.imgix.net/iil-329154-641895.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
@@ -1057,8 +1068,7 @@
    "brand": "TP-Link",
    "mpn": "ER707-M2",
    "url": "https://www.ple.com.au/products/659527/tp-link-omada-er707-m2-multi-gigabit-vpn-router-with-25gbe",
-   "price": 239,
-   "wasPrice": 299,
+   "price": 299,
    "image": "https://plecom.imgix.net/iil-349210-659527.jpg?w=600&h=600",
    "inStock": true
   },
@@ -1209,7 +1219,7 @@
    "brand": "Ubiquiti",
    "mpn": "UCG-Ultra",
    "url": "https://www.ple.com.au/products/665881/ubiquiti-unifi-cloud-gateway-ultra-router",
-   "price": 157,
+   "price": 209,
    "wasPrice": 222,
    "image": "https://plecom.imgix.net/iil-380693-665881.jpg?w=600&h=600",
    "inStock": true
@@ -1245,10 +1255,10 @@
    "brand": "Ubiquiti",
    "mpn": "UDR7",
    "url": "https://www.ple.com.au/products/674101/ubiquiti-unifi-dream-router-7",
-   "price": 442,
+   "price": 589,
    "wasPrice": 629,
    "image": "https://plecom.imgix.net/iil-422682-674101.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",

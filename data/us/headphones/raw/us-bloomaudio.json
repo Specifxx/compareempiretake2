@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:33:26.964Z",
+ "scrapedAt": "2026-11-28T02:18:33.564Z",
  "offers": [
   {
    "retailer": "us-bloomaudio",
@@ -1688,7 +1688,7 @@
    "price": 1147.99,
    "wasPrice": 1349,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/dunu-glacier-1-thumb.jpg?v=1719840528",
-   "inStock": false,
+   "inStock": true,
    "brand": "DUNU"
   },
   {
@@ -2186,7 +2186,7 @@
    "url": "https://bloomaudio.com/products/final-d8000-pro-dc",
    "price": 4799,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/final-d8000-pro-dc-0-thumb.webp?v=1729692144",
-   "inStock": true,
+   "inStock": false,
    "brand": "Final Audio",
    "mpn": "FA-D8000-PRO-DC"
   },
@@ -3036,7 +3036,7 @@
    "url": "https://bloomaudio.com/products/hisenior-mega7?variant=42003933528139",
    "price": 449,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/hisenior-mega7-thumb-two.webp?v=1767196102",
-   "inStock": false,
+   "inStock": true,
    "brand": "Hisenior",
    "mpn": "HS-MEGA7"
   },
@@ -3473,7 +3473,8 @@
    "sku": "MW-JUPITER-BK",
    "title": "Melody Wings Jupiter | Dynamic Universal IEMs Black",
    "url": "https://bloomaudio.com/products/melody-wings-jupiter?variant=41973187149899",
-   "price": 78,
+   "price": 59,
+   "wasPrice": 78,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/mw-jupiter-thumb-two.webp?v=1767017341",
    "inStock": true,
    "brand": "Melody Wings"
@@ -3483,7 +3484,8 @@
    "sku": "MW-JUPITER-GN",
    "title": "Melody Wings Jupiter | Dynamic Universal IEMs Green",
    "url": "https://bloomaudio.com/products/melody-wings-jupiter?variant=41973187182667",
-   "price": 78,
+   "price": 59,
+   "wasPrice": 78,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/melody-wings-jupiter-green-thumb.webp?v=1767017341",
    "inStock": true,
    "brand": "Melody Wings"
@@ -3493,7 +3495,8 @@
    "sku": "MW-NEPTUNE",
    "title": "Melody Wings Neptune | Tribrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/melody-wings-neptune",
-   "price": 328,
+   "price": 259,
+   "wasPrice": 328,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/mw-neptune-thumb-one.webp?v=1778771545",
    "inStock": true,
    "brand": "Melody Wings"
@@ -3503,7 +3506,8 @@
    "sku": "MW-URANUS",
    "title": "Melody Wings Uranus | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/melody-wings-uranus",
-   "price": 188,
+   "price": 149,
+   "wasPrice": 188,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/mw-uranus-thumb.webp?v=1789664041",
    "inStock": true,
    "brand": "Melody Wings"
@@ -3513,7 +3517,8 @@
    "sku": "MW-VENUS",
    "title": "Melody Wings Venus | Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/melody-wings-venus?variant=41856532840523",
-   "price": 168,
+   "price": 135,
+   "wasPrice": 168,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/melody-wings-0-venus-thumb.webp?v=1761683986",
    "inStock": true,
    "brand": "Melody Wings"
@@ -3523,7 +3528,8 @@
    "sku": "MW-VENUS-LE",
    "title": "Melody Wings Venus Divine | Limited Edition Hybrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/melody-wings-venus-divine",
-   "price": 178,
+   "price": 139,
+   "wasPrice": 178,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/mw-venus-divine-thumb-one.webp?v=1787588211",
    "inStock": true,
    "brand": "Melody Wings"
@@ -3871,7 +3877,7 @@
    "sku": "MD-METEOR",
    "title": "Moondrop Meteor | Tribrid Universal IEMs New",
    "url": "https://bloomaudio.com/products/moondrop-meteor?variant=42067961774155",
-   "price": 467.49,
+   "price": 399.99,
    "wasPrice": 549.99,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/moondrop-meteor-thumb-one.webp?v=1737567399",
    "inStock": true,
@@ -4186,7 +4192,7 @@
    "price": 359,
    "wasPrice": 449,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/noble-1-rex5-blk-thumb.webp?v=1753795608",
-   "inStock": true,
+   "inStock": false,
    "brand": "Noble",
    "mpn": "NA-REX5-BLK"
   },
@@ -4207,7 +4213,7 @@
    "sku": "NA-IRIS",
    "title": "Noble Audio Iris | Dynamic Universal IEMs New",
    "url": "https://bloomaudio.com/products/noble-audio-iris",
-   "price": 559,
+   "price": 499,
    "wasPrice": 699,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/na-iris-thumb.webp?v=1783517751",
    "inStock": true,
@@ -4517,6 +4523,28 @@
   },
   {
    "retailer": "us-bloomaudio",
+   "sku": "R95-EVO1-DLX",
+   "title": "RAAL 1995 Magna EVO I | Open-Back True-Ribbon Headphones Deluxe",
+   "url": "https://bloomaudio.com/products/raal-1995-magna-evo-1?variant=43137401061451",
+   "price": 7925,
+   "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/raal-1995-magna-evo1-0-thumb.webp?v=1788447603",
+   "inStock": true,
+   "brand": "RAAL-requisite",
+   "mpn": "R95-EVO1-DLX"
+  },
+  {
+   "retailer": "us-bloomaudio",
+   "sku": "R95-EVO1-STD",
+   "title": "RAAL 1995 Magna EVO I | Open-Back True-Ribbon Headphones Standard",
+   "url": "https://bloomaudio.com/products/raal-1995-magna-evo-1?variant=43137401028683",
+   "price": 6900,
+   "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/raal-1995-magna-evo1-0-thumb.webp?v=1788447603",
+   "inStock": true,
+   "brand": "RAAL-requisite",
+   "mpn": "R95-EVO1-STD"
+  },
+  {
+   "retailer": "us-bloomaudio",
    "sku": "CA-1A-NAKED",
    "title": "RAAL-requisite CA-1a | Circumaural Ribbon Headphones Headphone Only",
    "url": "https://bloomaudio.com/products/raal-requisite-ca-1a?variant=39791207284811",
@@ -4800,7 +4828,7 @@
    "sku": "SH-MTW4-BLK",
    "title": "Sennheiser Momentum 4 | Wireless Hi-Fi Headphones Black",
    "url": "https://bloomaudio.com/products/sennheiser-momentum-4-wireless?variant=39898105839691",
-   "price": 189.95,
+   "price": 199.95,
    "wasPrice": 299.95,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/products/MTW4_isofront_v1_blk.jpg?v=1668082820",
    "inStock": true,
@@ -4812,7 +4840,7 @@
    "sku": "SH-MTW4-BRN",
    "title": "Sennheiser Momentum 4 | Wireless Hi-Fi Headphones Brown",
    "url": "https://bloomaudio.com/products/sennheiser-momentum-4-wireless?variant=41702648774731",
-   "price": 189.95,
+   "price": 199.95,
    "wasPrice": 299.95,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/sennheiser-mt4-brn-thumb.webp?v=1755787413",
    "inStock": true,
@@ -4824,7 +4852,7 @@
    "sku": "SH-MTW4-WH",
    "title": "Sennheiser Momentum 4 | Wireless Hi-Fi Headphones White",
    "url": "https://bloomaudio.com/products/sennheiser-momentum-4-wireless?variant=39898105872459",
-   "price": 189.95,
+   "price": 199.95,
    "wasPrice": 299.95,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/products/MTW4_isofront_v1_wht.jpg?v=1668082825",
    "inStock": true,
@@ -4969,7 +4997,7 @@
    "sku": "TA-CYPHER",
    "title": "Thieaudio Cypher | Flagship Open-Back Dynamic Headphones New",
    "url": "https://bloomaudio.com/products/thieaudio-cypher",
-   "price": 319.99,
+   "price": 299,
    "wasPrice": 399,
    "image": "https://cdn.shopify.com/s/files/1/0023/9255/5595/files/thieaudio-0-cypher-thumb.webp?v=1774971072",
    "inStock": true,

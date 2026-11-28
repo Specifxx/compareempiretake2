@@ -1,11 +1,23 @@
 {
- "scrapedAt": "2026-11-27T02:37:19.587Z",
+ "scrapedAt": "2026-11-28T02:22:07.835Z",
  "offers": [
   {
    "retailer": "us-moonaudio",
+   "sku": "109-pro-B-stock",
+   "title": "109 Pro Headphones B Stock",
+   "url": "https://www.moon-audio.com/products/meze-109-pro-headphones?variant=68121356239162",
+   "price": 599,
+   "wasPrice": 799,
+   "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/meze-109-pro-main-07__67854.1679930833.1280.1280.jpg?v=1719253830",
+   "inStock": true,
+   "brand": "Meze Audio",
+   "mpn": "109-pro-B-stock"
+  },
+  {
+   "retailer": "us-moonaudio",
    "sku": "109-pro-OR-3",
-   "title": "109 Pro Headphones",
-   "url": "https://www.moon-audio.com/products/meze-109-pro-headphones",
+   "title": "109 Pro Headphones New",
+   "url": "https://www.moon-audio.com/products/meze-109-pro-headphones?variant=68121355813178",
    "price": 799,
    "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/meze-109-pro-main-07__67854.1679930833.1280.1280.jpg?v=1719253830",
    "inStock": true,
@@ -256,7 +268,8 @@
    "sku": "chimera-iems-black",
    "title": "Campfire Audio Chimera – 9-Driver Flagship IEM Black",
    "url": "https://www.moon-audio.com/products/chimera-9-driver-flagship-iem?variant=53361586078010",
-   "price": 7500,
+   "price": 6375,
+   "wasPrice": 7500,
    "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/Chimera-black1_editedA.jpg?v=1777057227",
    "inStock": true,
    "brand": "Campfire Audio"
@@ -266,7 +279,8 @@
    "sku": "chimera-iems-gold",
    "title": "Campfire Audio Chimera – 9-Driver Flagship IEM Gold",
    "url": "https://www.moon-audio.com/products/chimera-9-driver-flagship-iem?variant=53361586045242",
-   "price": 7500,
+   "price": 6375,
+   "wasPrice": 7500,
    "image": "https://cdn.shopify.com/s/files/1/0834/0245/7402/files/Chimera-gold_No-BG_2A.jpg?v=1777058064",
    "inStock": true,
    "brand": "Campfire Audio"

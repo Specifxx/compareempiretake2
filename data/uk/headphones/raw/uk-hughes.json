@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:51:33.346Z",
+ "scrapedAt": "2026-11-28T02:37:01.854Z",
  "offers": [
   {
    "retailer": "uk-hughes",
@@ -39,16 +39,6 @@
    "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/audio-technica/ath-sq1twbk",
    "price": 39.97,
    "image": "https://cdn6.hughes.co.uk/media/3d/3d/9f/1708527456/AUD-ATH-SQ1TWBK-D.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "ath-sq1twwh",
-   "brand": "Audio Technica",
-   "title": "Audio Technica ATH-SQ1TWWH Bluetooth Wireless Earbuds - White",
-   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/audio-technica/ath-sq1twwh",
-   "price": 39.97,
-   "image": "https://cdn6.hughes.co.uk/media/45/30/e5/1708530150/AUD-ATH-SQ1TWWH-C.jpg",
    "inStock": false
   },
   {
@@ -113,16 +103,6 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "w820nb-plus",
-   "brand": "Edifier",
-   "title": "Edifier W820NB-PLUS Wireless Noise Cancellation Over-Ear Headphones",
-   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/edifier/w820nb-plus",
-   "price": 49.97,
-   "image": "https://cdn6.hughes.co.uk/media/3e/fe/2c/1750694974/EDI-W820NB-PLUS-A.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "w820nb-plus-gr",
    "brand": "Edifier",
    "title": "Edifier W820NB-PLUS-GR Wireless Noise Cancellation Over-Ear Headphones",
@@ -163,16 +143,6 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "livepro2twsblk",
-   "brand": "Jbl",
-   "title": "JBL Live Pro 2 TWS Bluetooth Earbuds - Black",
-   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/jbl/livepro2twsblk",
-   "price": 79.97,
-   "image": "https://cdn6.hughes.co.uk/media/22/e9/77/1695218839/JBL-LIVEPRO2TWSBLK.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "touronem3-ltt",
    "brand": "Jbl",
    "title": "JBL Tour One M3 Noise Cancelling Headphones - Latte",
@@ -193,6 +163,36 @@
   },
   {
    "retailer": "uk-hughes",
+   "sku": "520btblkeu",
+   "brand": "Jbl",
+   "title": "JBL Tune 520BT Bluetooth Headphones - Black",
+   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/jbl/520btblkeu",
+   "price": 24.97,
+   "image": "https://cdn6.hughes.co.uk/media/68/92/fd/1695053631/T520BTBLKEUA.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "t520btwhteu",
+   "brand": "Jbl",
+   "title": "JBL Tune 520BT Bluetooth Headphones - White",
+   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/jbl/t520btwhteu",
+   "price": 24.97,
+   "image": "https://cdn6.hughes.co.uk/media/a5/ac/7f/1695138303/T520BTWHTEUA.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "t770ncblk",
+   "brand": "Jbl",
+   "title": "JBL Tune 770NC Bluetooth Headphones - Black",
+   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/jbl/t770ncblk",
+   "price": 84.97,
+   "image": "https://cdn6.hughes.co.uk/media/90/20/68/1695213003/JBL-T770NCBLKe.jpg",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-hughes",
    "sku": "tbeam2blk",
    "brand": "Jbl",
    "title": "JBL Tune Beam 2 Wireless In-Ear Headphones Noise Cancelling - Black",
@@ -200,16 +200,6 @@
    "price": 69.97,
    "image": "https://cdn6.hughes.co.uk/media/50/2d/05/1761748162/JBL-TBEAM2BLK-A.jpg",
    "inStock": true
-  },
-  {
-   "retailer": "uk-hughes",
-   "sku": "tbeamblk",
-   "brand": "Jbl",
-   "title": "JBL TUNE BEAM Wireless In-Ear Headphones with Noise Cancelling - Black",
-   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/jbl/tbeamblk",
-   "price": 49.97,
-   "image": "https://cdn6.hughes.co.uk/media/e9/15/a5/1695055456/jbl-tbeamblk.jpg",
-   "inStock": false
   },
   {
    "retailer": "uk-hughes",
@@ -263,12 +253,12 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "wbeamwht",
+   "sku": "wbeamblk",
    "brand": "Jbl",
-   "title": "JBL WBEAMWHT Wave BEAM True Wireless Earbuds - White",
-   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/jbl/wbeamwht",
-   "price": 26.97,
-   "image": "https://cdn6.hughes.co.uk/media/e3/55/0d/1695287621/jbl-wbeamwht.jpg",
+   "title": "JBL WBEAMBLK Wave BEAM True Wireless Earbuds - Black",
+   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/jbl/wbeamblk",
+   "price": 35.97,
+   "image": "https://cdn6.hughes.co.uk/media/48/7b/e6/1695287525/jbl-wbeamblk.jpg",
    "inStock": false
   },
   {
@@ -283,22 +273,22 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "rs120w",
-   "brand": "Sennheiser",
-   "title": "Sennheiser RS120W On-Ear Wireless TV Headphones - Black",
-   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/sennheiser/rs120w",
-   "price": 104,
-   "image": "https://cdn6.hughes.co.uk/media/41/af/d6/1706098849/SEN-RS120W.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "ace-black",
    "brand": "Sonos",
    "title": "Sonos ACE Over Ear Wireless Headphones Bluetooth Ready - Black",
    "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/sonos/ace-black",
    "price": 199,
    "image": "https://cdn6.hughes.co.uk/media/9b/32/ba/1778745914/Sonos%20Ace_TimeBestInnovation2024_PDPCarousel.png",
+   "inStock": false
+  },
+  {
+   "retailer": "uk-hughes",
+   "sku": "ace-white",
+   "brand": "Sonos",
+   "title": "Sonos ACE Over Ear Wireless Headphones Bluetooth Ready - White",
+   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/sonos/ace-white",
+   "price": 164.97,
+   "image": "https://cdn6.hughes.co.uk/media/90/70/a1/1778746377/Sonos%20Ace_TimeBestInnovation2024_PDPCarousel_White-1.png",
    "inStock": false
   },
   {
@@ -313,21 +303,11 @@
   },
   {
    "retailer": "uk-hughes",
-   "sku": "aceulww1",
-   "brand": "Sonos",
-   "title": "Sonos ACE Ultra Over Ear Wireless Headphones Bluetooth - White",
-   "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/sonos/aceulww1",
-   "price": 359,
-   "image": "https://cdn6.hughes.co.uk/media/a1/73/0e/1788278799/SNS-ACE-ULTRA-WHT-1.jpg",
-   "inStock": false
-  },
-  {
-   "retailer": "uk-hughes",
    "sku": "whult900nw",
    "brand": "Sony",
    "title": "Sony ULT WEAR WH-ULT900NW Noise Cancelling Wireless Bluetooth Headphones - White",
    "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/sony/whult900nw",
-   "price": 91.99,
+   "price": 91,
    "image": "https://cdn6.hughes.co.uk/media/73/88/23/1714736525/WH-ULT900NW-A.jpg",
    "inStock": false
   },
@@ -377,7 +357,7 @@
    "brand": "Technics",
    "title": "Technics EAHAZ80EA Wireless Earbuds with Noise Cancelling",
    "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/technics/eahaz80ea",
-   "price": 139,
+   "price": 129,
    "image": "https://cdn6.hughes.co.uk/media/6f/01/57/1727169179/TEC-EAHAZ80EA-F.jpg",
    "inStock": true
   },
@@ -387,7 +367,7 @@
    "brand": "Technics",
    "title": "Technics EAHAZ80EK Wireless Earbuds with Noise Cancelling",
    "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/technics/eahaz80ek",
-   "price": 139,
+   "price": 129,
    "image": "https://cdn6.hughes.co.uk/media/4f/70/c6/1697794882/TEC-EAHAZ80EK-L.jpg",
    "inStock": true
   },
@@ -397,7 +377,7 @@
    "brand": "Technics",
    "title": "Technics EAHAZ80ES Wireless Earbuds with Noise Cancelling",
    "url": "https://www.hughes.co.uk/product/audio/headphones/all-headphones/technics/eahaz80es",
-   "price": 139,
+   "price": 129,
    "image": "https://cdn6.hughes.co.uk/media/27/3c/e6/1697795819/TEC-EAHAZ80ES-J.jpg",
    "inStock": false
   }

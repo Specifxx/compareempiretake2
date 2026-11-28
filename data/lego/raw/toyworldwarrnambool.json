@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:27:21.863Z",
+ "scrapedAt": "2026-11-28T02:12:35.214Z",
  "offers": [
   {
    "retailer": "toyworldwarrnambool",
@@ -435,7 +435,7 @@
    "url": "https://www.toyworldwarrnambool.com.au/products/lego-10479-duplo-colourful-creative-box",
    "price": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0315/3716/8428/files/image_7c914423-7139-4e37-b69e-d2f346a92a30.png?v=1780443507",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10479"
   },
@@ -1063,7 +1063,7 @@
    "url": "https://www.toyworldwarrnambool.com.au/products/lego-21592-minecraft-chicken-jockey-desert-attack",
    "price": 39.99,
    "image": "https://cdn.shopify.com/s/files/1/0315/3716/8428/files/bltc437cf308ebfec32-21592_boxprod_v29.png?v=1780275325",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21592"
   },
@@ -1223,24 +1223,13 @@
   },
   {
    "retailer": "toyworldwarrnambool",
-   "sku": "5702017814445",
-   "title": "Lego 31216 ART Keith Haring Dancing Figures",
-   "url": "https://www.toyworldwarrnambool.com.au/products/lego-31216-art-keith-haring-dancing-figures",
-   "price": 199.99,
-   "image": "https://cdn.shopify.com/s/files/1/0315/3716/8428/files/31216_boxprod_v39_en-gb.webp?v=1751430226",
-   "inStock": false,
-   "brand": "LEGO",
-   "mpn": "31216"
-  },
-  {
-   "retailer": "toyworldwarrnambool",
    "sku": "5702017814452",
    "title": "Lego 31217 ART The Fauna Collection Tiger",
    "url": "https://www.toyworldwarrnambool.com.au/products/lego-31217-art-the-fauna-collection-tiger",
    "price": 79.99,
    "wasPrice": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0315/3716/8428/files/31217_boxprod_v39_en-gb.webp?v=1751430266",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "31217"
   },
@@ -1767,17 +1756,6 @@
   },
   {
    "retailer": "toyworldwarrnambool",
-   "sku": "5702018060469",
-   "title": "Lego 42696 Friends Animal Vet Clinic",
-   "url": "https://www.toyworldwarrnambool.com.au/products/lego-42696-friends-animal-vet-clinic",
-   "price": 44.99,
-   "image": "https://cdn.shopify.com/s/files/1/0315/3716/8428/files/42696_boxprod_v39_en-gb.png?v=1781568718",
-   "inStock": false,
-   "brand": "LEGO",
-   "mpn": "42696"
-  },
-  {
-   "retailer": "toyworldwarrnambool",
    "sku": "5702018054697",
    "title": "Lego 42698 Friends Advent Calendar 2026",
    "url": "https://www.toyworldwarrnambool.com.au/products/lego-42698-friends-advent-calendar-2026",
@@ -2241,17 +2219,6 @@
   },
   {
    "retailer": "toyworldwarrnambool",
-   "sku": "5702017582894",
-   "title": "Lego 60407 City Red Double Decker Sightseeing Bus",
-   "url": "https://www.toyworldwarrnambool.com.au/products/lego-60407-city-red-double-decker-sightseeing-bus",
-   "price": 49.99,
-   "image": "https://cdn.shopify.com/s/files/1/0315/3716/8428/files/60407_boxprod_v39_sha.webp?v=1730934524",
-   "inStock": true,
-   "brand": "LEGO",
-   "mpn": "60407"
-  },
-  {
-   "retailer": "toyworldwarrnambool",
    "sku": "5702017582931",
    "title": "Lego 60411 City Fire Rescue Helicopter",
    "url": "https://www.toyworldwarrnambool.com.au/products/lego-60411-city-fire-rescue-helicopter",
@@ -2622,7 +2589,7 @@
    "price": 32.99,
    "wasPrice": 42.99,
    "image": "https://cdn.shopify.com/s/files/1/0315/3716/8428/files/71421_alt1.webp?v=1691112101",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "71421"
   },
@@ -3387,7 +3354,7 @@
    "url": "https://www.toyworldwarrnambool.com.au/products/lego-76308-marvel-spider-man-mech-vs-anti-venom",
    "price": 24.99,
    "image": "https://cdn.shopify.com/s/files/1/0315/3716/8428/files/76308_boxprod_v39_en-gb.png?v=1789621783",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76308"
   },
@@ -3422,7 +3389,7 @@
    "url": "https://www.toyworldwarrnambool.com.au/products/lego-76327-super-heros-marvel-iron-man-mk4-bust",
    "price": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0315/3716/8428/files/76327_boxprod_v29_en-gb.webp?v=1749014311",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76327"
   },

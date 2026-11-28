@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:22:27.412Z",
+ "scrapedAt": "2026-11-28T02:06:58.250Z",
  "offers": [
   {
    "retailer": "ple",
@@ -528,18 +528,6 @@
   },
   {
    "retailer": "ple",
-   "sku": "682430",
-   "title": "AOC Gaming CS25G - 25\" 1080p 310Hz Fast IPS Monitor - Counter Strike 2 Edition",
-   "brand": "AOC",
-   "mpn": "CS25G",
-   "url": "https://www.ple.com.au/products/682430/aoc-gaming-cs25g-25-1080p-310hz-fast-ips-monitor-counter-strike-2-edition",
-   "price": 249,
-   "wasPrice": 349,
-   "image": "https://plecom.imgix.net/iil-459712-682430.jpg?w=600&h=600",
-   "inStock": true
-  },
-  {
-   "retailer": "ple",
    "sku": "676550",
    "title": "AOC Gaming CU34G4 - 34\" Curved 1440p 180Hz 0.5ms Fast VA Monitor",
    "brand": "AOC",
@@ -632,7 +620,7 @@
    "price": 299,
    "wasPrice": 399,
    "image": "https://plecom.imgix.net/iil-449909-679813.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -1995,7 +1983,7 @@
    "price": 519,
    "wasPrice": 699,
    "image": "https://plecom.imgix.net/iil-468217-684169.jpg?w=600&h=600",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "ple",
@@ -2770,14 +2758,14 @@
    "price": 369,
    "wasPrice": 449,
    "image": "https://plecom.imgix.net/iil-440647-677775.jpg?w=600&h=600",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "ple",
    "sku": "677534",
    "title": "MSI MAG 321CQF E18 - 32\" Curved 1440p 180Hz 0.5ms Rapid VA Gaming Monitor",
    "brand": "MSI",
-   "mpn": "MAG 321CQF E18 ",
+   "mpn": "MAG 321CQF E18",
    "url": "https://www.ple.com.au/products/677534/msi-mag-321cqf-e18-32-curved-1440p-180hz-05ms-rapid-va-gaming-monitor",
    "price": 309,
    "wasPrice": 393,
@@ -3218,7 +3206,7 @@
    "sku": "683277",
    "title": "Samsung Odyssey G5 G50F - 27\" 1440p 180Hz 1ms Fast IPS Gaming Monitor",
    "brand": "Samsung",
-   "mpn": "LS27FG502EEXXY ",
+   "mpn": "LS27FG502EEXXY",
    "url": "https://www.ple.com.au/products/683277/samsung-odyssey-g5-g50f-27-1440p-180hz-1ms-fast-ips-gaming-monitor",
    "price": 279,
    "wasPrice": 359,
@@ -3290,8 +3278,7 @@
    "brand": "Samsung",
    "mpn": "LS34HG552EEXXY",
    "url": "https://www.ple.com.au/products/688779/samsung-odyssey-g55h-34-curved-1440p-ultrawide-180hz-va-gaming-monitor",
-   "price": 349,
-   "wasPrice": 429,
+   "price": 429,
    "image": "https://plecom.imgix.net/iil-487918-688779.jpg?w=600&h=600",
    "inStock": true
   },
@@ -3302,7 +3289,7 @@
    "brand": "Samsung",
    "mpn": "LC34G55TWWEXXY",
    "url": "https://www.ple.com.au/products/644738/samsung-odyssey-g55t-34-curved-1440p-ultrawide-165hz-va-gaming-monitor",
-   "price": 489,
+   "price": 449,
    "wasPrice": 599,
    "image": "https://plecom.imgix.net/iil-254383-644738.jpg?w=600&h=600",
    "inStock": true
@@ -3324,7 +3311,7 @@
    "sku": "685149",
    "title": "Samsung Odyssey G8 - 27\" 5K 180Hz / 1440p 360Hz Dual Mode Fast IPS Gaming Monitor",
    "brand": "Samsung",
-   "mpn": "LS27HG806EFXXY ",
+   "mpn": "LS27HG806EFXXY",
    "url": "https://www.ple.com.au/products/685149/samsung-odyssey-g8-27-5k-180hz-1440p-360hz-dual-mode-fast-ips-gaming-monitor",
    "price": 999,
    "wasPrice": 1299,
@@ -3457,7 +3444,7 @@
    "brand": "Samsung",
    "mpn": "LS34C650UEEXXY",
    "url": "https://www.ple.com.au/products/678022/samsung-viewfinity-s65uc-34-curved-1440p-100hz-va-business-monitor",
-   "price": 599,
+   "price": 699,
    "wasPrice": 939,
    "image": "https://plecom.imgix.net/iil-441411-678022.jpg?w=600&h=600",
    "inStock": true

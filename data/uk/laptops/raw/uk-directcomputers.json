@@ -1,18 +1,6 @@
 {
- "scrapedAt": "2026-11-27T02:48:27.899Z",
+ "scrapedAt": "2026-11-28T02:33:58.522Z",
  "offers": [
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "1D7410I516256W11-UK",
-   "title": "A2C Dell Latitude 7410 Intel Core i5 i5-10210U Laptop 35.6 cm (14\") Full HD 16 GB DDR4-SDRAM 256 GB SSD Wi-Fi 5 (802.11ac) Windows 11 Pro UK English Black, Silver",
-   "url": "https://directcomputers.co.uk/products/premium-refurbished-dell-latitude-7410-intel-core-i5-10210u-10th-gen-laptop-14-inch-full-hd-1080p-screen-16gb-ram-256gb-ssd-windows-11-pro",
-   "price": 348.99,
-   "wasPrice": 385.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/97d0652b8046ac4ca46fb07138997c2b.jpg?v=1782289619",
-   "inStock": true,
-   "brand": "DELL",
-   "mpn": "1D7410I516256W11-UK"
-  },
   {
    "retailer": "uk-directcomputers",
    "sku": "NX.JP3EK.003",
@@ -182,6 +170,18 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "NX.KYNEK.002",
+   "title": "Acer Chromebook CP714-1HN-5719 Intel Core Ultra 5 115U 35.6 cm (14\") Touchscreen WUXGA 8 GB LPDDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) ChromeOS Grey",
+   "url": "https://directcomputers.co.uk/products/acer-chromebook-plus-spin-714-cp714-1hn-convertible-chromebook-intel-core-ultra-5-processor-115u-8-gb-512gb-ssd-14-inch-wuxga-ips-tou-ch-pen-s",
+   "price": 853.99,
+   "wasPrice": 875.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/0738ab8c754dec1920330ea37c8c5290.jpg?v=1778643859",
+   "inStock": true,
+   "brand": "ACER",
+   "mpn": "NX.KYNEK.002"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "NX.KP4EK.004",
    "title": "Acer Chromebook Plus 514 CB514-3H - AMD Ryzen 5 7520C, 8GB, 256GB SSD, 14\" WUXGA, Google Chrome OS, Iron",
    "url": "https://directcomputers.co.uk/products/cb514-3h-r5-7520c-8gb-256gb-iron",
@@ -215,6 +215,18 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "NX.VZLEK.00A",
+   "title": "Acer TravelMate B3 laptop (TMB311-33-TCO) - 11.6\" HD IPS, Intel N200, 8GB, 128GB SSD, Windows 11 Pro Education",
+   "url": "https://directcomputers.co.uk/products/tmb311-33-n200-8gb-128gb-w11p-edu",
+   "price": 389.99,
+   "wasPrice": 399.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/72420491c297034eee9769b8be8fa8ec.jpg?v=1778642937",
+   "inStock": true,
+   "brand": "ACER",
+   "mpn": "NX.VZLEK.00A"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "MDHF4B/A",
    "title": "Apple MacBook Air 13-inch : M5 chip with 10‑core CPU and 10‑core GPU, 16GB, 1TB SSD - Midnight",
    "url": "https://directcomputers.co.uk/products/mb-air-13-m5-mdn-10c-10c-16gb-1tb",
@@ -224,18 +236,6 @@
    "inStock": true,
    "brand": "APPLE",
    "mpn": "MDHF4B/A"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "MDH84B/A",
-   "title": "Apple MacBook Air 13-inch : M5 chip with 10‑core CPU and 10‑core GPU, 16GB, 1TB SSD - Silver",
-   "url": "https://directcomputers.co.uk/products/mb-air-13-m5-slv-10c-10c-16gb-1tb",
-   "price": 1652.99,
-   "wasPrice": 1845.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/4eb01e20a19174f6c1d831fc2438c323.jpg?v=1781341726",
-   "inStock": true,
-   "brand": "APPLE",
-   "mpn": "MDH84B/A"
   },
   {
    "retailer": "uk-directcomputers",
@@ -332,6 +332,28 @@
    "inStock": true,
    "brand": "APPLE",
    "mpn": "MHFG4B/A"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "MHFC4B/A",
+   "title": "Apple MacBook Neo 13-inch : A18 Pro chip with 6‑core CPU and 5‑core GPU, 8GB, 512GB SSD, Touch ID - Silver",
+   "url": "https://directcomputers.co.uk/products/mb-neo-13-a18pro-silver-8gb-512gb",
+   "price": 829.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/66fe1a6c3f924c77cf3c93466e463a98.jpg?v=1781344448",
+   "inStock": true,
+   "brand": "APPLE",
+   "mpn": "MHFC4B/A"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "MJLV4B/A",
+   "title": "Apple MacBook Pro 14-inch : M5 Pro chip with 15‑core CPU and 16‑core GPU, 24GB, 2TB SSD - Silver",
+   "url": "https://directcomputers.co.uk/products/mbp14-m5-pro-sl-15c-16c-24gb-2tb",
+   "price": 3093.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/fb1c616385c29588c6eeedb99d62729a_b7b93e78-c93e-4f65-b778-6c973917be52.jpg?v=1781340630",
+   "inStock": true,
+   "brand": "APPLE",
+   "mpn": "MJLV4B/A"
   },
   {
    "retailer": "uk-directcomputers",
@@ -709,6 +731,18 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "PM640KA-BPC092X",
+   "title": "ASUS ExpertCenter P600 AiO PM640KA-BPC092X Copilot+ PC AMD Ryzen AI 5 330 60.5 cm (23.8\") 1920 x 1080 pixels All-in-One PC 16 GB DDR5-SDRAM 512 GB SSD Windows 11 Pro Wi-Fi 6 (802.11ax) Black",
+   "url": "https://directcomputers.co.uk/products/asus-aio-p600-r5330-16-512g-w11p",
+   "price": 896.99,
+   "wasPrice": 1065.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/d60d925ec5f1d87b752a61e073a21408.jpg?v=1787447395",
+   "inStock": true,
+   "brand": "ASUS",
+   "mpn": "PM640KA-BPC092X"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "PM700SK-0R7350022X",
    "title": "ASUS ExpertCenter PM700SK-0R7350022X Copilot+ PC AMD Ryzen AI 7 350 16 GB DDR5-SDRAM 512 GB SSD Windows 11 Pro SFF PC Black",
    "url": "https://directcomputers.co.uk/products/asus-expertcenter-pm700sk-0r7350022x-small-form-factor-copilot-pc-amd-ryzen-ai-7-350-16gb-ddr5-ram-512gb-ssd-windows-11-pro-with-keyboard-and-mouse",
@@ -777,6 +811,18 @@
    "inStock": true,
    "brand": "ASUS",
    "mpn": "G835LWG-TQ304W"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "G835LWG-TQ313W",
+   "title": "ASUS ROG Strix SCAR 18 G835LWG-TQ313W Intel Core Ultra 9 290HX Plus Laptop 45.7 cm (18\") WQUXGA 32 GB DDR5-SDRAM 2 TB SSD NVIDIA GeForce RTX 5080 Wi-Fi 7 (802.11be) Windows 11 Home Black QWERTY UK English",
+   "url": "https://directcomputers.co.uk/products/strix-18-u9-32gb-2tb-5080-w11h-blk",
+   "price": 4337.99,
+   "wasPrice": 4699.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/8c7681bdb5748f0ba27e75d6f2156e60ac76c378400c4dca221715f4e56f7e9e.jpg?v=1793843952",
+   "inStock": true,
+   "brand": "ASUS",
+   "mpn": "G835LWG-TQ313W"
   },
   {
    "retailer": "uk-directcomputers",
@@ -875,18 +921,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "E1504FA-BQ5513W",
-   "title": "ASUS Vivobook Go 15 E1504FA-BQ5513W AMD Ryzen 5 40 Laptop 39.6 cm (15.6\") Full HD 8 GB LPDDR5-SDRAM 256 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Home Silver",
-   "url": "https://directcomputers.co.uk/products/vivo-go-15-6-r5-40-8gb-256gb-silv",
-   "price": 429.99,
-   "wasPrice": 661.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/d04c702f12306617a9b566a03cacb1c555d7c857564d45286041bb86c54bbe75.jpg?v=1787447516",
-   "inStock": true,
-   "brand": "ASUS",
-   "mpn": "E1504FA-BQ5513W"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "S5408QA-TM197W",
    "title": "ASUS Vivobook S14 S5408QA-TM197W Copilot+ PC Snapdragon X1-26-101 Laptop 35.6 cm (14\") WUXGA 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Home Blue QWERTY UK English",
    "url": "https://directcomputers.co.uk/products/vivo-s-14-x1-26-101-16gb-512gb-w11h",
@@ -896,18 +930,6 @@
    "inStock": true,
    "brand": "ASUS",
    "mpn": "S5408QA-TM197W"
-  },
-  {
-   "retailer": "uk-directcomputers",
-   "sku": "S3607AA-SH004W",
-   "title": "ASUS Vivobook S16 S3607AA-SH004W Copilot+ PC Intel Core Ultra 9 386H Laptop 40.6 cm (16\") WUXGA 32 GB DDR5-SDRAM 1 TB SSD Wi-Fi 6 (802.11ax) Windows 11 Home Grey",
-   "url": "https://directcomputers.co.uk/products/vivo-s-16-u9-386h-32gb-1tb-w11h-gry",
-   "price": 1696.99,
-   "wasPrice": 1971.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/31c555d3950e930f0c0ea72288545fc9.jpg?v=1790385329",
-   "inStock": true,
-   "brand": "ASUS",
-   "mpn": "S3607AA-SH004W"
   },
   {
    "retailer": "uk-directcomputers",
@@ -1154,7 +1176,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "FNVDM",
-   "title": "DELL Latitude 5455 Copilot+ PC Snapdragon X1P-64-100 Laptop 35.6 cm (14\") Full HD+ 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro UK English Grey",
+   "title": "DELL Latitude 5455 Copilot+ PC Snapdragon X1P-64-100 Laptop 35.6 cm (14\") Full HD+ 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Grey UK English",
    "url": "https://directcomputers.co.uk/products/dell-l5455-x1p-16g-512g-w11p-npc",
    "price": 1388.99,
    "wasPrice": 1675.99,
@@ -1165,7 +1187,7 @@
   {
    "retailer": "uk-directcomputers",
    "sku": "X94W4",
-   "title": "DELL Pro 13 Premium PA13250 Copilot+ PC Intel Core Ultra 5 236V Laptop 33.8 cm (13.3\") Full HD+ 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro UK English Grey",
+   "title": "DELL Pro 13 Premium PA13250 Copilot+ PC Intel Core Ultra 5 236V Laptop 33.8 cm (13.3\") Full HD+ 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Grey UK English",
    "url": "https://directcomputers.co.uk/products/dellpa13250-u5236v-16g-512gb-w11pnpc",
    "price": 1705.99,
    "wasPrice": 2399.99,
@@ -1219,6 +1241,17 @@
    "inStock": true,
    "brand": "DELL",
    "mpn": "JYY3J-3YRPRO"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "9FC1P",
+   "title": "DELL Pro 14 PC14250 Intel Core Ultra 7 255U Laptop 35.6 cm (14\") Full HD+ 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro Black UK English",
+   "url": "https://directcomputers.co.uk/products/dellpc14250-u7255u-16g-512g-w11pnpc",
+   "price": 1695.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/fdf60ba5e638778b05e3bfe9ee855aa9_3eb8377c-1e6f-4042-8184-2c4a6dda6932.jpg?v=1791854637",
+   "inStock": true,
+   "brand": "DELL",
+   "mpn": "9FC1P"
   },
   {
    "retailer": "uk-directcomputers",
@@ -1316,6 +1349,7 @@
    "title": "Ergotron StyleView Laptop Cart, SV10 Aluminium, White Multimedia cart",
    "url": "https://directcomputers.co.uk/products/styleview-laptop-cart-sv10",
    "price": 640.99,
+   "wasPrice": 641.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b443fb52a35b537a03c971e593150616341898c8b87c8b313cb0663cfd3ede47.jpg?v=1794016547",
    "inStock": true,
    "brand": "ERGOTRON",
@@ -1930,7 +1964,8 @@
    "sku": "9M4H6AT#ABU",
    "title": "HP EliteBook 6 G1q Next Gen AI PC Copilot+ PC Qualcomm Snapdragon X1-26-100 Laptop 35.6 cm (14\") WUXGA 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Pro Silver",
    "url": "https://directcomputers.co.uk/products/hp-eb6-g1q-14-x126100-16-512-w11p",
-   "price": 1041.99,
+   "price": 866.99,
+   "wasPrice": 1041.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/a32aea6b94ed8be5d0286be567204753_fb7a63fa-57a3-4b76-bb54-3725679c543d.jpg?v=1768872840",
    "inStock": true,
    "brand": "HEWLETT PACKARD INCORPORATED",
@@ -1962,6 +1997,18 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "DW2A3ET#ABU",
+   "title": "HP EliteBook 6 G2i 14 inch Notebook AI PC Intel Core 7 350 Laptop 35.6 cm (14\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Silver",
+   "url": "https://directcomputers.co.uk/products/hp-eb6-g2i-14-u7-350-16-512-w11p",
+   "price": 1723.99,
+   "wasPrice": 2110.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/09f03695a9438e6a045b0acf2f7a9079_e4aecb02-a1f7-4906-b597-89d5c079da8d.jpg?v=1790472948",
+   "inStock": true,
+   "brand": "HEWLETT PACKARD INCORPORATED",
+   "mpn": "DW2A3ET#ABU"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "DW2C4ET#ABU",
    "title": "HP EliteBook 6 G2i 16 AI PC Intel Core 5 320 Laptop 40.6 cm (16\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Silver",
    "url": "https://directcomputers.co.uk/products/hp-eb6-g2i-16-u5-320-16-512-w11p-2",
@@ -1988,8 +2035,8 @@
    "sku": "CK7R0ET#ABU",
    "title": "HP EliteBook 8 G1i 14 inch Notebook Next Gen AI PC Wolf Pro Security Edition Intel Core Ultra 7 258V Laptop 35.6 cm (14\") WUXGA 32 GB LPDDR5x-SDRAM Wi-Fi 7 (802.11be) Windows 11 Pro",
    "url": "https://directcomputers.co.uk/products/hp-eb8-g1i-14-u7-258v-32-512-w11p",
-   "price": 2110.99,
-   "wasPrice": 2320.99,
+   "price": 2065.99,
+   "wasPrice": 2110.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/c9ef9bbd507882dac6479967aa196ce2_1be24b18-ca43-4e66-ae51-bce22c9ea10f.jpg?v=1760401897",
    "inStock": true,
    "brand": "HEWLETT PACKARD INCORPORATED",
@@ -2216,7 +2263,8 @@
    "sku": "AD2R2ET#ABU",
    "title": "HP ProBook 4 G1a AI PC AMD Ryzen 7 250 Laptop 40.6 cm (16\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Silver",
    "url": "https://directcomputers.co.uk/products/hp-probook-4-g1a-ad2r2et-abu-laptop-16-inch-1920-x-1200-ips-screen-amd-ryzen-7-250-16gb-ram-512gb-ssd-amd-radeon-780m-graphics-windows-11-pro",
-   "price": 1296.99,
+   "price": 1271.99,
+   "wasPrice": 1296.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/3349b243065d1b3f7c74c7776f22b8d7_d295179f-5efa-4a54-8796-e97748a22027.jpg?v=1794102373",
    "inStock": true,
    "brand": "HEWLETT PACKARD",
@@ -2250,7 +2298,8 @@
    "sku": "CJ9K9AT#ABU",
    "title": "HP ProBook 4 G1ah AMD Ryzen 5 220 Laptop 40.6 cm (16\") WUXGA 24 GB DDR5-SDRAM 256 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Pro AI PC Silver",
    "url": "https://directcomputers.co.uk/products/hp-probook-4-g1ah-cj9k9at-abu-laptop-16-inch-1920-x-1200-ips-screen-amd-ryzen-5-220-24gb-ram-256gb-ssd-amd-radeon-740m-graphics-windows-11-pro",
-   "price": 962.99,
+   "price": 958.99,
+   "wasPrice": 962.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/4625dc271549855168af706d6618ae4e_5ae6109a-040f-49df-b995-ba9286f9bfab.jpg?v=1795312474",
    "inStock": true,
    "brand": "HEWLETT PACKARD",
@@ -2304,7 +2353,8 @@
    "sku": "B3AC7AT#ABU",
    "title": "HP ProBook 4 G1iR Intel Core 5 120U Laptop 40.6 cm (16\") WUXGA 8 GB DDR5-SDRAM 256 GB SSD Wi-Fi 6E (802.11ax) Windows 11 Pro Silver",
    "url": "https://directcomputers.co.uk/products/hp-pb4-g1ir-16-u5-120u-8-256-w11p",
-   "price": 1013.99,
+   "price": 991.99,
+   "wasPrice": 1013.99,
    "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/3349b243065d1b3f7c74c7776f22b8d7_17282c49-5f5d-4679-8a21-d36b7445392c.jpg?v=1776818613",
    "inStock": true,
    "brand": "HEWLETT PACKARD INCORPORATED",
@@ -2461,6 +2511,18 @@
    "inStock": true,
    "brand": "HEWLETT PACKARD INCORPORATED",
    "mpn": "DH8G6ET#ABU"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "DM5S9ET#ABU",
+   "title": "HP ZBook 8 G2i 16 inch Mobile Workstation PC - Data Science Copilot+ PC Intel Core Ultra 7 356H 40.6 cm (16\") WUXGA 32 GB DDR5-SDRAM 1 TB SSD Wi-Fi 7 (802.11be) Windows 11 Pro AI Workstation, AI PC Silver",
+   "url": "https://directcomputers.co.uk/products/hp-zb8-g2i-16-u7-356h-32-1tb-w11p",
+   "price": 2644.99,
+   "wasPrice": 5901.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/25d24cf04d0c7d637e5eec4a0696ab22_55d6a972-ea97-4f6d-b2f8-eb19f9fa8013.jpg?v=1786237908",
+   "inStock": true,
+   "brand": "HEWLETT PACKARD INCORPORATED",
+   "mpn": "DM5S9ET#ABU"
   },
   {
    "retailer": "uk-directcomputers",
@@ -2637,6 +2699,18 @@
    "inStock": true,
    "brand": "LENOVO",
    "mpn": "82XM017FUK"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "83VA0007UK",
+   "title": "Lenovo LOQ Essential 15ARP11 AMD Ryzen 7 170 Laptop 39.6 cm (15.6\") Full HD 16 GB DDR5-SDRAM 1 TB SSD NVIDIA GeForce RTX 5050 Wi-Fi 6 (802.11ax) Windows 11 Home English Grey",
+   "url": "https://directcomputers.co.uk/products/loq-e-15-r7-16gb-1tb-w11h",
+   "price": 1354.99,
+   "wasPrice": 1389.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/0ba22ecbd53aca08eee330b891ff39a4.jpg?v=1781437005",
+   "inStock": true,
+   "brand": "LENOVO",
+   "mpn": "83VA0007UK"
   },
   {
    "retailer": "uk-directcomputers",
@@ -2835,18 +2909,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "21Y60044UK",
-   "title": "Lenovo ThinkPad E14 Gen 8 (Intel) Copilot+ PC Intel Core Ultra 5 325 Laptop 35.6 cm (14\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
-   "url": "https://directcomputers.co.uk/products/e14-g8-u5-325-16-512-w11p",
-   "price": 1108.99,
-   "wasPrice": 1441.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/feca36e0a2df4165ddb4ea6ee1ec4826727ed86004709318c13d9b4ae0a21b5b_fa848e85-49b1-41f1-a1b4-7dfadae0a550.jpg?v=1789262261",
-   "inStock": true,
-   "brand": "LENOVO",
-   "mpn": "21Y60044UK"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "21Y600B1UK",
    "title": "Lenovo ThinkPad E14 Gen 8 (Intel) Copilot+ PC Intel Core Ultra 5 325 Laptop 35.6 cm (14\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
    "url": "https://directcomputers.co.uk/products/lnv-tp-e14-g8-u5325-16-512g-w11p-s",
@@ -2925,6 +2987,28 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "21XC0027UK",
+   "title": "Lenovo ThinkPad L16 Gen 3 (AMD) Copilot+ PC AMD Ryzen AI 5 PRO PRO 435 Laptop 40.6 cm (16\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
+   "url": "https://directcomputers.co.uk/products/l16-g3-amd-r5-435-16-512-w11p",
+   "price": 1564.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/922ec8b79dd38e614783ff897571af7bf1b951681d97169ef2f8d0862bb6b581_6510cf63-1e7a-45a7-b8ad-ba1bd4f60b86.jpg?v=1795657852",
+   "inStock": true,
+   "brand": "LENOVO",
+   "mpn": "21XC0027UK"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "21XC0028UK",
+   "title": "Lenovo ThinkPad L16 Gen 3 (AMD) Copilot+ PC AMD Ryzen AI 7 PRO PRO 450 Laptop 40.6 cm (16\") WUXGA 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
+   "url": "https://directcomputers.co.uk/products/l16-g3-amd-r7p-450-16-512-w11p",
+   "price": 1673.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/922ec8b79dd38e614783ff897571af7bf1b951681d97169ef2f8d0862bb6b581_da430773-9cb1-4762-9fbb-42d95e278a05.jpg?v=1795657855",
+   "inStock": true,
+   "brand": "LENOVO",
+   "mpn": "21XC0028UK"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "21UE000LUK",
    "title": "Lenovo ThinkPad P1 Gen 9 Copilot+ PC Intel Core Ultra 7 356H Mobile workstation 40.6 cm (16\") WUXGA 32 GB LPDDR5x-SDRAM 1 TB SSD NVIDIA RTX PRO 1000 Blackwell Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
    "url": "https://directcomputers.co.uk/products/tp-p1-g9-u7356h-32-1tb-11p",
@@ -2942,7 +3026,7 @@
    "url": "https://directcomputers.co.uk/products/tp-p14s-g7-ux9-388h-32-1t-w11p",
    "price": 2758.99,
    "wasPrice": 3196.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/0e7d236cbeee0e3fc402cee661bf4078_a5ebd627-b557-4a2a-a5a9-d2e032d204c0.jpg?v=1792286640",
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/7c20d0f187500a40e5f5edf609f3a5647973056ecbf70a267eb1bcca381a8195_007701c6-b4d8-4a7c-a1dd-d16c678053ca.jpg?v=1795831947",
    "inStock": true,
    "brand": "LENOVO",
    "mpn": "21XJ001PUK"
@@ -2969,6 +3053,18 @@
    "inStock": true,
    "brand": "LENOVO",
    "mpn": "21RQ004AUK"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "21RQ0049UK",
+   "title": "Lenovo ThinkPad P16 Gen 3 Intel Core Ultra 9 275HX Laptop 40.6 cm (16\") WUXGA 64 GB DDR5-SDRAM 1 TB SSD NVIDIA RTX PRO 4000 Blackwell Wi-Fi 7 (802.11be) Windows 11 Pro English Black",
+   "url": "https://directcomputers.co.uk/products/tp-p16-g3-u9-275hx-64g-1t-11p",
+   "price": 5456.99,
+   "wasPrice": 5709.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/43de2aa4eb31809ff695ff8ce542272c_a0d9a441-bb36-45d1-9776-6ead282e16ef.jpg?v=1776308495",
+   "inStock": true,
+   "brand": "LENOVO",
+   "mpn": "21RQ0049UK"
   },
   {
    "retailer": "uk-directcomputers",
@@ -3028,6 +3124,17 @@
    "inStock": true,
    "brand": "LENOVO",
    "mpn": "21XE0022UK"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "21XE002YUK",
+   "title": "Lenovo ThinkPad P16s Gen 5 (Intel) Copilot+ PC Intel Core Ultra 7 356H Mobile workstation 40.6 cm (16\") WUXGA 64 GB LPDDR5x-SDRAM 1 TB SSD NVIDIA RTX PRO 1000 Blackwell Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
+   "url": "https://directcomputers.co.uk/products/tp-p16s-g5-u7-356h-64-1t-w11p",
+   "price": 4310.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/1892fb1aab1eff2867c3e9cfab814b61332977e4a4809313accc99cd67ef0f9c_318c1474-5dd6-47a1-b136-0f1041e714c3.jpg?v=1795657842",
+   "inStock": true,
+   "brand": "LENOVO",
+   "mpn": "21XE002YUK"
   },
   {
    "retailer": "uk-directcomputers",
@@ -3101,18 +3208,6 @@
   },
   {
    "retailer": "uk-directcomputers",
-   "sku": "21UG0001UK",
-   "title": "Lenovo ThinkPad T1g Gen 9 Copilot+ PC Intel Core Ultra 7 366H Laptop 40.6 cm (16\") WUXGA 32 GB LPDDR5x-SDRAM 1 TB SSD NVIDIA GeForce RTX 5070 Laptop GPU Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
-   "url": "https://directcomputers.co.uk/products/tp-t1g-g9-u7366h-32g-1t-nt-11p",
-   "price": 4095.99,
-   "wasPrice": 4652.99,
-   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b6733ebdcf95ef07cde7afa7709cf7b4f2de6990ff340147fdc24972003b1253_ccbe2a81-f28c-4818-958f-d76b23e3a176.jpg?v=1794102544",
-   "inStock": true,
-   "brand": "LENOVO",
-   "mpn": "21UG0001UK"
-  },
-  {
-   "retailer": "uk-directcomputers",
    "sku": "21YH0054UK",
    "title": "Lenovo ThinkPad X13 Gen 7 (Intel) Copilot+ PC Intel Core Ultra 5 325 Laptop 33.8 cm (13.3\") WUXGA 16 GB LPDDR5x-SDRAM 512 GB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black UK English",
    "url": "https://directcomputers.co.uk/products/lnv-tp-x13-g7-u5325-16-512g-w11p",
@@ -3121,6 +3216,18 @@
    "inStock": true,
    "brand": "LENOVO",
    "mpn": "21YH0054UK"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "21VV0033UK",
+   "title": "Lenovo ThinkPad X9-15p Gen 1 Aura Edition Copilot+ PC Intel Core Ultra X7 358H Laptop 38.9 cm (15.3\") 2.8K 32 GB LPDDR5x-SDRAM 1 TB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Grey UK English",
+   "url": "https://directcomputers.co.uk/products/tp-x9-15p-g1-ux7-358h-32g-1t-11p",
+   "price": 2603.99,
+   "wasPrice": 2642.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/b95941973f2d1bd9f61a7be66cc7fb1c.jpg?v=1792375561",
+   "inStock": true,
+   "brand": "LENOVO",
+   "mpn": "21VV0033UK"
   },
   {
    "retailer": "uk-directcomputers",
@@ -3240,6 +3347,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "83GW0081UK",
+   "title": "Lenovo V15 G5 IRL Intel Core i5 i5-13420H Laptop 39.6 cm (15.6\") Full HD 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro Black UK English",
+   "url": "https://directcomputers.co.uk/products/lnvv15-g5-i5-13420h-16-512g-w11p-s",
+   "price": 1113.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f723a97998b34aa33b6ac8f6280d44ca_6a3fcfb9-a0e1-4f79-a8b9-e8fafa9724c4.jpg?v=1793499132",
+   "inStock": true,
+   "brand": "LENOVO",
+   "mpn": "83GW0081UK"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "83GW007NUK",
    "title": "Lenovo V15 G5 IRL Intel Core i5 i5-13420H Laptop 39.6 cm (15.6\") Full HD 8 GB DDR5-SDRAM 256 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Home English Black",
    "url": "https://directcomputers.co.uk/products/lenovo-v15-g5-irl-83gw-laptop-15-6-fhd-i5-13420h-8gb-ddr5-256gb-ssd-no-optical-usb-c-windows-11-home",
@@ -3298,6 +3416,17 @@
   },
   {
    "retailer": "uk-directcomputers",
+   "sku": "83GW00Q5UK",
+   "title": "Lenovo V15 G5 IRL Intel Core i7 i7-13620H Laptop 39.6 cm (15.6\") Full HD 16 GB DDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro Black UK English",
+   "url": "https://directcomputers.co.uk/products/lnv-v15-g5-i7-13620h-16-512g-w11p-s",
+   "price": 1154.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/f723a97998b34aa33b6ac8f6280d44ca_140c6dcb-8304-4b95-9e90-cdcd25f8730a.jpg?v=1793499133",
+   "inStock": true,
+   "brand": "LENOVO",
+   "mpn": "83GW00Q5UK"
+  },
+  {
+   "retailer": "uk-directcomputers",
    "sku": "83VD0021UK",
    "title": "Lenovo V15 G6 AMN AMD Ryzen 5 40 Laptop 39.6 cm (15.6\") Full HD 16 GB LPDDR5-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro Black UK English",
    "url": "https://directcomputers.co.uk/products/lnv-v15-g6-r540-16-512g-w11p-s",
@@ -3352,6 +3481,18 @@
    "inStock": true,
    "brand": "MICROSOFT",
    "mpn": "EP2-77153"
+  },
+  {
+   "retailer": "uk-directcomputers",
+   "sku": "EP2-51183",
+   "title": "Microsoft Surface Laptop 15-inch (8th Edition) Copilot+ PC Intel Core Ultra X7 368H 38.1 cm (15\") Touchscreen 32 GB LPDDR5x-SDRAM 1 TB SSD Wi-Fi 7 (802.11be) Windows 11 Pro Black",
+   "url": "https://directcomputers.co.uk/products/lptp-8-15-cu7-32-1tb-blk-w11p",
+   "price": 4344.99,
+   "wasPrice": 4387.99,
+   "image": "https://cdn.shopify.com/s/files/1/0580/6886/1080/files/51643853aa4ec3c8e4783eb2bda01652_99cda0f5-ba1c-4068-b566-076d731427f9.jpg?v=1791077070",
+   "inStock": true,
+   "brand": "MICROSOFT",
+   "mpn": "EP2-51183"
   },
   {
    "retailer": "uk-directcomputers",

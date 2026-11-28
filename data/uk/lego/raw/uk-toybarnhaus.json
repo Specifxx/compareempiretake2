@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:59:38.646Z",
+ "scrapedAt": "2026-11-28T02:43:36.809Z",
  "offers": [
   {
    "retailer": "uk-toybarnhaus",
@@ -141,7 +141,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-botanicals-cosmos-flowers-11514",
    "price": 12.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/11514_boxprod_v29_sha.png?v=1778940378",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "11514"
   },
@@ -209,7 +209,7 @@
    "price": 34.99,
    "wasPrice": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/10698_boxprod_v29_3500x3500px.png?v=1736345279",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "10698"
   },
@@ -232,7 +232,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-creator-3-in-1-cute-animals-playful-puppy-dog-31382",
    "price": 24.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/31382_boxprod_v29_sha.png?v=1765538919",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "31382"
   },
@@ -383,7 +383,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-disney-advent-calendar-2026-43298",
    "price": 29.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43298_boxprod_v29.png?v=1783679818",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "43298"
   },
@@ -450,7 +450,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-disney-winnie-the-pooh-43300",
    "price": 139.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43300_boxprod_v29_sha.png?v=1770048152",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "43300"
   },
@@ -530,7 +530,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-editions-mclaren-mastercard-f1®-team-lando-norris-helmet-43023",
    "price": 79.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/43023_boxprod_v29_sha.png?v=1780578383",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "43023"
   },
@@ -676,7 +676,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-harry-potter-cornish-pixie-building-toy-76461",
    "price": 24.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76461_boxprod_v29_sha.png?v=1765538721",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "76461"
   },
@@ -723,6 +723,17 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "76467"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "LEG76466",
+   "title": "LEGO Harry Potter Philosopher’s Stone – Collectors’ Edition (76466)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-harry-potter-philosopher-s-stone-collectors-edition-76466",
+   "price": 139.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76466_boxprod_v29_sha.png?v=1765538615",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76466"
   },
   {
    "retailer": "uk-toybarnhaus",
@@ -798,7 +809,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-harry-potter-hogwarts™-house-crest-76462",
    "price": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76462_boxprod_v29_sha.png?v=1778331621",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76462"
   },
@@ -1136,6 +1147,17 @@
   },
   {
    "retailer": "uk-toybarnhaus",
+   "sku": "LEG76346",
+   "title": "LEGO Marvel: Spider-Man Hero Figure (76346)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-marvel-spider-man-hero-figure-76346",
+   "price": 89.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76346_boxprod_v29_sha.png?v=1778579184",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "76346"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
    "sku": "LEG76349",
    "title": "LEGO Marvel: Spider-Man Prison Transport Chase (76349)",
    "url": "https://www.toybarnhaus.co.uk/products/lego-marvel-spider-man-prison-transport-chase-76349",
@@ -1175,7 +1197,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-minecraft-the-parrot-houses-21282-exclusive",
    "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/21282_boxprod_v29_sha.png?v=1739796383",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "21282"
   },
@@ -1331,7 +1353,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-pokemon-arcanine-72160",
    "price": 89.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/72160_boxprod_v29.png?v=1783434970",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "72160"
   },
@@ -1398,7 +1420,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-pokemon-rayquaza-72168",
    "price": 119.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/72168_boxprod_v29_sha.png?v=1783435259",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "72168"
   },
@@ -1477,7 +1499,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-pokemon-smart-play™-mewtwos-lab-break-72163",
    "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/72163_boxprod_v29_sha.png?v=1781693586",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "72163"
   },
@@ -1488,7 +1510,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-pokemon-smart-play™-trainers-buggy-adventure-with-squirtle-72156",
    "price": 24.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/72156_boxprod_v29.png?v=1781696623",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "72156"
   },
@@ -1499,7 +1521,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-pokemon-smart-play™-training-house-with-pikachu-72164",
    "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/72164_boxprod_v29.png?v=1781693295",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "72164"
   },
@@ -1598,9 +1620,20 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-speed-champions-ferrari-sf90-xx-stradale-sports-car-77254",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77254_boxprod_v29_sha.png?v=1765540633",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77254"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "LEG77238",
+   "title": "LEGO Speed Champions Lamborghini Revuelto & Huracán STO (77238)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego®-speed-champions-lamborghini-revuelto-huracan-sto-77238",
+   "price": 44.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77238_boxprod_v29_sha.png?v=1751634990",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "77238"
   },
   {
    "retailer": "uk-toybarnhaus",
@@ -1719,7 +1752,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-speed-champions-the-fast-and-the-furious-toyota-supra-mk4-77260",
    "price": 22.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77260_boxprod_v29.png?v=1778331022",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77260"
   },
@@ -1842,7 +1875,7 @@
    "price": 29.99,
    "wasPrice": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75422_boxprod_v29_sha_de644507-6252-4fc2-bdd4-3b1e7eb33cba.png?v=1770048768",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "75422"
   },
@@ -1897,7 +1930,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/lego-star-wars-darth-vader™-bust-75439",
    "price": 44.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75439_boxprod_v29.png?v=1779115626",
-   "inStock": false,
+   "inStock": true,
    "brand": "LEGO",
    "mpn": "75439"
   },
@@ -1908,7 +1941,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-star-wars-gingerbread-at-at™-walker-40806",
    "price": 54.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/40806_boxprod_v29_sha.png?v=1786956056",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "40806"
   },
@@ -1981,6 +2014,17 @@
   },
   {
    "retailer": "uk-toybarnhaus",
+   "sku": "LEG75453",
+   "title": "LEGO Star Wars: Offworld Sandcrawler and Mudhorn (75453)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego-star-wars-offworld-sandcrawler™-and-mudhorn-75453",
+   "price": 169.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75453_boxprod_v29.png?v=1781361806",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "75453"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
    "sku": "LEG75413",
    "title": "LEGO Star Wars: Republic Juggernaut (75413)",
    "url": "https://www.toybarnhaus.co.uk/products/lego®-star-wars-the-clone-wars™-republic-juggernaut-set-75413",
@@ -2011,6 +2055,28 @@
    "inStock": true,
    "brand": "LEGO",
    "mpn": "75328"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "75417",
+   "title": "LEGO Star Wars: UCS AT-ST Walker (75417)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego®-star-wars™-at-st™-walker-building-set-for-adults-75417",
+   "price": 174.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75417_boxprod_v29_sha.png?v=1752071706",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "75417"
+  },
+  {
+   "retailer": "uk-toybarnhaus",
+   "sku": "LEG75432",
+   "title": "LEGO Star Wars: V-19 Torrent Starfighter (75432)",
+   "url": "https://www.toybarnhaus.co.uk/products/lego®-star-wars-the-clone-wars™-v-19-torrent-starfighter-set-75432",
+   "price": 59.99,
+   "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/75432_boxprod_v29_sha.png?v=1752071392",
+   "inStock": true,
+   "brand": "LEGO",
+   "mpn": "75432"
   },
   {
    "retailer": "uk-toybarnhaus",
@@ -2247,7 +2313,7 @@
    "price": 94.99,
    "wasPrice": 99.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/77093_boxprod_v29_sha.png?v=1768752230",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "77093"
   },
@@ -2258,7 +2324,7 @@
    "url": "https://www.toybarnhaus.co.uk/products/pre-order-lego-wednesday-nevermore-academy-76788",
    "price": 59.99,
    "image": "https://cdn.shopify.com/s/files/1/0867/4292/5638/files/76788_boxprod_v29.png?v=1786369464",
-   "inStock": true,
+   "inStock": false,
    "brand": "LEGO",
    "mpn": "76788"
   },

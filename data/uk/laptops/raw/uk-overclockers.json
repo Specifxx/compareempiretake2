@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:56:56.375Z",
+ "scrapedAt": "2026-11-28T02:40:48.263Z",
  "offers": [
   {
    "retailer": "uk-overclockers",
@@ -69,7 +69,7 @@
    "url": "https://www.overclockers.co.uk/asus-rog-strix-g16-nvidia-rtx-5070-16gb-16-wuxga-165hz-amd-ryzen-r9-8940hx-gaming-laptop/LAP-ASU-08184.html",
    "price": 1799.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw4027ac18/images/data/product/84/289dc8/cbe0e4c003b6b09ea40ae92b0a9af3268fe6a06e.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -219,7 +219,7 @@
    "url": "https://www.overclockers.co.uk/asus-tuf-gaming-a16-nvidia-rtx-5060-16gb-16-wuxga-144hz-amd-ryzen-7-260-gaming-laptop/LAP-ASU-07595.html",
    "price": 1499.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw4e505307/images/data/product/09/498840/1493247fe8d1983de4942478569d1b8c5acfa5e8.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -229,7 +229,7 @@
    "url": "https://www.overclockers.co.uk/asus-tuf-gaming-a18-nvidia-rtx-5060-16gb-18-wuxga-144hz-amd-ryzen-r9-8940hx-gaming-laptop/LAP-ASU-09469.html",
    "price": 1799.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw251cf6b1/images/data/product/3d/ba6218/c1ef08cade893a46403b21be66bdcc12b8a31e88.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -240,6 +240,16 @@
    "price": 1899.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw15641721/images/data/product/83/5b576a/c1ef08cade893a46403b21be66bdcc12b8a31e88.jpg?sw=500",
    "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-ASU-09751",
+   "brand": "ASUS",
+   "title": "ASUS TUF Gaming A18 NVIDIA RTX 5070 16GB 18 WUXGA 144Hz AMD Ryzen R9-8940HX Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/asus-tuf-gaming-a18-nvidia-rtx-5070-16gb-18-wuxga-144hz-amd-ryzen-r9-8940hx-gaming-laptop/LAP-ASU-09751.html",
+   "price": 1899.95,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwee861132/images/data/product/70/6f8649/c1ef08cade893a46403b21be66bdcc12b8a31e88.jpg?sw=500",
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -299,7 +309,7 @@
    "url": "https://www.overclockers.co.uk/asus-vivobook-18-16gb-18-wuxga-512gb-amd-ryzen-ai-5-430-laptop/LAP-ASU-09734.html",
    "price": 899.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw10941af8/images/data/product/fd/97474e/339ad7087e47a6b0eaabeb1fae57c1042ba08550.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -309,7 +319,7 @@
    "url": "https://www.overclockers.co.uk/asus-vivobook-18-16gb-18-wuxga-512gb-amd-ryzen-ai-7-445-laptop/LAP-ASU-09735.html",
    "price": 999.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw5b370d88/images/data/product/71/3aab50/d22391df27977dd025cefcc9db92fa6712bca895.jpg?sw=500",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "uk-overclockers",
@@ -633,22 +643,22 @@
   },
   {
    "retailer": "uk-overclockers",
-   "sku": "LAP-MSI-09339",
-   "brand": "MSI",
-   "title": "MSI Cyborg 15 NVIDIA RTX 5060 16GB 15.6 FHD 144Hz Intel Core 7 240H Gaming Laptop",
-   "url": "https://www.overclockers.co.uk/msi-cyborg-15-nvidia-rtx-5060-16gb-15.6-fhd-144hz-intel-core-7-240h-gaming-laptop/LAP-MSI-09339.html",
-   "price": 1199.99,
-   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwfdb10d0b/images/data/product/4e/7ad8b3/cf66156ee756d1c648c72350e6cbbc0cec9fd115.jpg?sw=500",
-   "inStock": true
-  },
-  {
-   "retailer": "uk-overclockers",
    "sku": "LAP-MSI-08493",
    "brand": "MSI",
    "title": "MSI Cyborg 15 NVIDIA RTX 5060 16GB 15.6 FHD 144Hz Intel Core 7 240H Gaming Laptop",
    "url": "https://www.overclockers.co.uk/msi-cyborg-15-nvidia-rtx-5060-16gb-15.6-fhd-144hz-intel-core-7-240h-gaming-laptop/LAP-MSI-08493.html",
    "price": 1249.99,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw597ec7b2/images/data/product/d2/ca6dc3/b7d6864e5e26baee8cad892371000a3883dc36f6.jpg?sw=500",
+   "inStock": true
+  },
+  {
+   "retailer": "uk-overclockers",
+   "sku": "LAP-MSI-09339",
+   "brand": "MSI",
+   "title": "MSI Cyborg 15 NVIDIA RTX 5060 16GB 15.6 FHD 144Hz Intel Core 7 240H Gaming Laptop",
+   "url": "https://www.overclockers.co.uk/msi-cyborg-15-nvidia-rtx-5060-16gb-15.6-fhd-144hz-intel-core-7-240h-gaming-laptop/LAP-MSI-09339.html",
+   "price": 1199.99,
+   "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwfdb10d0b/images/data/product/4e/7ad8b3/cf66156ee756d1c648c72350e6cbbc0cec9fd115.jpg?sw=500",
    "inStock": true
   },
   {
@@ -749,7 +759,7 @@
    "url": "https://www.overclockers.co.uk/msi-pulse-16-ai-nvidia-rtx-5060-16gb-16-qhd-240hz-amd-ryzen-9-hx370-gaming-laptop/LAP-MSI-06941.html",
    "price": 1449.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw7ca30e91/images/data/product/83/d56488/24f2677587e3b993128812340621aab965b64bd0.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -979,7 +989,7 @@
    "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5070-ti-32gb-16-qhd-300hz-2tb-intel-ultra-core-9-290hx-plus-gaming-laptop/LAP-PIN-08074.html",
    "price": 2499.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dw9a18d10e/images/data/product/7b/a8ebdc/dcf351775486b4a8c1fb1fffaf0b28499867f6dc.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",
@@ -1049,7 +1059,7 @@
    "url": "https://www.overclockers.co.uk/ocuk-pinnacle-rtx-5090-96gb-16-qhd-300hz-2tb-intel-core-ultra-9-290hx-plus-gaming-laptop/LAP-PIN-09099.html",
    "price": 4299.95,
    "image": "https://www.overclockers.co.uk/dw/image/v2/BLRM_PRD/on/demandware.static/-/Sites-master-catalog-ocuk/default/dwfe3e4355/images/data/product/62/01890e/dcf351775486b4a8c1fb1fffaf0b28499867f6dc.jpg?sw=500",
-   "inStock": true
+   "inStock": false
   },
   {
    "retailer": "uk-overclockers",

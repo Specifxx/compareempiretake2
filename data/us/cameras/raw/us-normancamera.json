@@ -1,5 +1,5 @@
 {
- "scrapedAt": "2026-11-27T02:37:47.610Z",
+ "scrapedAt": "2026-11-28T02:22:32.552Z",
  "offers": [
   {
    "retailer": "us-normancamera",
@@ -27,7 +27,8 @@
    "sku": "9936170",
    "title": "Canon EOS R100 Mirrorless Camera 2 lens kit with 18-45mm and 55-210mm Lenses",
    "url": "https://normancamera.com/products/canon-eos-r100-mirrorless-camera-2-lens-kit-with-18-45mm-and-55-210mm-lenses",
-   "price": 929.99,
+   "price": 699.99,
+   "wasPrice": 929.99,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2612889.jpg?v=1777393661",
    "inStock": true,
    "brand": "Canon"
@@ -37,7 +38,8 @@
    "sku": "9936547",
    "title": "Canon EOS R5 Mark II Mirrorless Camera (Body Only)",
    "url": "https://normancamera.com/products/canon-eos-r5-mark-ii-mirrorless-camera-body-only",
-   "price": 4399,
+   "price": 3899,
+   "wasPrice": 4399,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2508326.jpg?v=1777393741",
    "inStock": true,
    "brand": "Canon"
@@ -47,8 +49,7 @@
    "sku": "9934070",
    "title": "Canon EOS R5 Mirrorless Digital Camera (Body Only)",
    "url": "https://normancamera.com/products/canon-eos-r5-mirrorless-digital-camera-body-only",
-   "price": 2599,
-   "wasPrice": 3299,
+   "price": 3299,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2509411.jpg?v=1777392979",
    "inStock": false,
    "brand": "Canon"
@@ -58,10 +59,9 @@
    "sku": "9936057",
    "title": "Canon EOS R50 Mirrorless Camera -Black (Body Only)",
    "url": "https://normancamera.com/products/canon-eos-r50-mirrorless-camera-black-body-only",
-   "price": 679.99,
-   "wasPrice": 779.99,
+   "price": 779.99,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2510720.jpg?v=1777393596",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -81,7 +81,7 @@
    "url": "https://normancamera.com/products/canon-eos-r50-v-mirrorless-camera",
    "price": 719.99,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2563883.jpg?v=1777394010",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon"
   },
   {
@@ -101,7 +101,7 @@
    "url": "https://normancamera.com/products/canon-eos-r6-mark-iii-mirrorless-digital-camera-body-only",
    "price": 2799,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2653898.jpg?v=1777394079",
-   "inStock": false,
+   "inStock": true,
    "brand": "Canon"
   },
   {
@@ -111,7 +111,7 @@
    "url": "https://normancamera.com/products/canon-eos-r6-v-mirrorless-camera-body-only",
    "price": 2499,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2669927.jpg?v=1784510632",
-   "inStock": true,
+   "inStock": false,
    "brand": "Canon"
   },
   {
@@ -186,6 +186,17 @@
    "wasPrice": 499,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2510376.jpg?v=1777393500",
    "inStock": false,
+   "brand": "Canon"
+  },
+  {
+   "retailer": "us-normancamera",
+   "sku": "9936908",
+   "title": "Canon PowerShot V1 Digital Camera",
+   "url": "https://normancamera.com/products/canon-powershot-v1-digital-camera",
+   "price": 829,
+   "wasPrice": 1029,
+   "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2564007.jpg?v=1777394016",
+   "inStock": true,
    "brand": "Canon"
   },
   {
@@ -371,7 +382,7 @@
    "url": "https://normancamera.com/products/nikon-z8-mirrorless-camera-body-only",
    "price": 4296.95,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2510779.jpg?v=1753517137",
-   "inStock": true,
+   "inStock": false,
    "brand": "Nikon"
   },
   {
@@ -656,7 +667,7 @@
    "url": "https://normancamera.com/products/norman-70th-anniversary-vintage-crewneck-sweatshirt?variant=54113224524076",
    "price": 65,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/unisex-vintage-garment-dyed-easer-sweatshirt-g.-dyed-blue-grey-front-6ab5620c2c905.jpg?v=1790272029",
-   "inStock": false
+   "inStock": true
   },
   {
    "retailer": "us-normancamera",
@@ -950,10 +961,9 @@
    "sku": "9937255",
    "title": "Sony Alpha a7 V Mirrorless Digital Camera (Body Only)",
    "url": "https://normancamera.com/products/sony-alpha-a7-v-mirrorless-digital-camera-body-only",
-   "price": 2698,
-   "wasPrice": 2898,
+   "price": 2898,
    "image": "https://cdn.shopify.com/s/files/1/0937/3456/8236/files/2626954.jpg?v=1767024155",
-   "inStock": true,
+   "inStock": false,
    "brand": "Sony"
   },
   {
