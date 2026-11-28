@@ -8,6 +8,7 @@ import { withRegion } from "@/lib/region";
 import { useRegion } from "@/lib/use-region";
 import { BfModeBar } from "@/components/BfModeBar";
 import { bfModeOn, bfPhase } from "@/lib/bf-mode";
+import { ebayDeals, SPONSORED_REL } from "@/lib/ebay";
 
 export function HolidayStrip({ sale }: { sale: { path: string; name: string } | null }) {
   const region = useRegion();
@@ -24,11 +25,18 @@ export function HolidayStrip({ sale }: { sale: { path: string; name: string } | 
   const now = Date.now();
   const on = bfModeOn(now);
   // After the sale the bar keeps running with the offer calendar (lib/offer-calendar.ts, owner 2026-11-28): the season and our
-  // own deals pages, no paid claim (this site has no partner offer we can state as standing).
+  // own deals pages. Its paid link (owner, 2026-11-28: "for the other websites … something with eBay and Amazon") is eBay's own
+  // Deals page, tagged and labelled Ad, naming no price, discount or date: eBay runs that page every day, so it is always true.
+  // Never Amazon here (its 2 Nov Associates rule: no deals or category links); Amazon's channel is its row's own deal badge.
+  const ebayAd = (
+    <a href={ebayDeals("offer-bar", region)} rel={SPONSORED_REL} target="_blank" style={{ color: "#d4d4d8" }} className="underline-offset-2 hover:underline">
+      eBay Daily Deals · Ad
+    </a>
+  );
   return (
     <BfModeBar
       on={on} phase={bfPhase(now)} now={now} href={withRegion("/black-friday", region)} title="Tech deals" line="real price drops we checked ourselves, no fake “was” prices"
-      evergreen={{ title: "Tech deals", line: "real price drops we checked ourselves, no fake “was” prices", href: withRegion("/deals", region), hrefs: { afterChristmas: withRegion("/boxing-day", region), newYear: withRegion("/january-sales", region) } }}
+      evergreen={{ title: "Tech deals", line: "real price drops we checked ourselves, no fake “was” prices", href: withRegion("/deals", region), hrefs: { afterChristmas: withRegion("/boxing-day", region), newYear: withRegion("/january-sales", region) }, ad: ebayAd }}
     >
       {strip}
     </BfModeBar>

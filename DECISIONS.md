@@ -2697,3 +2697,13 @@ shipping on Direct orders over $50, help.tcgplayer.com "Buying from TCGplayer Di
 code, credit or countdown (`tests/offer-calendar.test.ts`). The card keeps its rules: once a visit, the visit's one prompt slot,
 never while typing; after the sale its ✕ keeps it away for 7 days instead of for good. Both re-read the clock in the browser, so the
 switch needs no build. Change a partner line only after reading its page again.
+
+## 2026-11-28 — eBay's Daily Deals link in the offer bar, after Cyber Weekend
+
+Owner, 2026-11-28: "for the other websites, we should think about doing something with eBay and Amazon, like the websites
+without TCG Player." The offer calendar's bar (lib/offer-calendar.ts) now carries ONE paid link on this site too: eBay's own
+Daily Deals page in the visitor's region, EPN-tagged (`offer-bar` placement), rel sponsored, labelled "Ad". It names no price,
+discount, code or date, because eBay runs that page every day and it is always true. It lives inside the one existing bar,
+so this is not a new strip, box or pop-up, and the no-pop-up rule stands. Amazon gets no bar link: the Associates rule of
+2 November bars deals and category links, and Amazon's channel stays its own live deal badge on the product's Amazon row.
+eBay was not contacted (owner's standing rule).
