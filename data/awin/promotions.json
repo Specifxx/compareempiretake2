@@ -1,6 +1,6 @@
 {
   "publisherId": 3144410,
-  "checkedAt": "2026-11-27T01:10:59.042Z",
+  "checkedAt": "2026-11-28T00:43:15.135Z",
   "promotions": [
     {
       "id": 4181232,
@@ -235,7 +235,7 @@
       "advertiserId": 3326,
       "type": "promotion",
       "title": "Black Friday Deal - Easy Karaoke Set",
-      "description": "Was £119.99 Now £109.99 Save £10",
+      "description": "Was £119.99 Now £89.99 Save £30",
       "start": "2026-11-25T08:20:00.000Z",
       "end": "2026-11-30T08:19:00.000Z",
       "regions": "all"
@@ -418,6 +418,16 @@
       "description": "Was £544.99 Now £399.99 Save £145",
       "start": "2026-11-11T14:17:00.000Z",
       "end": "2026-11-30T14:16:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4191104,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deal - PLAUD NOTE AI Voice Recorder with Case - 64GB",
+      "description": "Was £159.99 Now £134.99 Save £25",
+      "start": "2026-11-27T07:50:00.000Z",
+      "end": "2026-12-01T07:48:00.000Z",
       "regions": "all"
     },
     {
@@ -761,6 +771,46 @@
       "regions": "all"
     },
     {
+      "id": 4188532,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deal - Kaweco AC Sport Ballpoint Pen - Champagne",
+      "description": "Was £65.00 Now £49.99 Save £15.01",
+      "start": "2026-11-27T07:19:00.000Z",
+      "end": "2026-12-04T15:19:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4188568,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Tech Deals",
+      "description": "Greay Savings on Tech",
+      "start": "2026-11-27T07:31:00.000Z",
+      "end": "2026-12-04T15:31:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4188575,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Gifting Deals",
+      "description": "Great Saving on Gifting",
+      "start": "2026-11-27T07:33:00.000Z",
+      "end": "2026-12-04T15:33:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4188592,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deals",
+      "description": "Great Savings on Stationery, Gifts, Tech, Furniture, Gaming and much more!",
+      "start": "2026-11-27T08:41:00.000Z",
+      "end": "2026-12-04T15:41:00.000Z",
+      "regions": "all"
+    },
+    {
       "id": 4190035,
       "advertiserId": 3326,
       "type": "promotion",
@@ -848,6 +898,16 @@
       "description": "Was £39.99 Now £24.99 Save £15",
       "start": "2026-10-20T08:44:00.000Z",
       "end": "2026-12-24T09:44:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4191689,
+      "advertiserId": 3326,
+      "type": "promotion",
+      "title": "Black Friday Deal - RockJam 5 Piece Drum Set",
+      "description": "Was £229.99 Now £109.99 Save £120",
+      "start": "2026-11-27T11:39:00.000Z",
+      "end": "2026-12-24T11:38:00.000Z",
       "regions": "all"
     },
     {
@@ -941,6 +1001,18 @@
       "end": "2030-04-30T08:02:00.000Z",
       "regions": "all",
       "code": "FREEDELIVERY50"
+    },
+    {
+      "id": 4190958,
+      "advertiserId": 21605,
+      "type": "promotion",
+      "title": "Black Friday, up to 60% off selected perfume - Paco Perfumerias UK",
+      "description": "-",
+      "start": "2026-11-27T03:25:00.000Z",
+      "end": "2026-11-30T22:59:00.000Z",
+      "regions": [
+        "GB"
+      ]
     },
     {
       "id": 3672118,
@@ -1880,6 +1952,149 @@
       "regions": "all"
     },
     {
+      "id": 4178823,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "K-Beauty First - Saldi Black Friday",
+      "description": "Member Exclusive: -16% su ordini superiori $69+",
+      "start": "2026-11-27T06:34:00.000Z",
+      "end": "2026-11-29T06:34:00.000Z",
+      "regions": "all",
+      "code": "SVBFS"
+    },
+    {
+      "id": 4156361,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "ANUA Perks: Up to 14% OFF + FREE Gift",
+      "description": "Enjoy 14% OFF ANUA orders over €85 plus a FREE full-sized gift, or get 10% OFF sitewide on €85+",
+      "start": "2026-11-01T06:59:00.000Z",
+      "end": "2026-11-30T06:59:00.000Z",
+      "regions": "all",
+      "code": "AFFANU21"
+    },
+    {
+      "id": 4156363,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "Beauty of Joseon Perks: Up to 14% OFF + FREE Gift",
+      "description": "Unlock 14% OFF Beauty of Joseon and a FREE full-sized gift at €85+, or take 10% OFF sitewide on €85+",
+      "start": "2026-11-01T07:01:00.000Z",
+      "end": "2026-11-30T07:01:00.000Z",
+      "regions": "all",
+      "code": "AFFBOJ21"
+    },
+    {
+      "id": 4156364,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "Medicube Perks: Up to 14% OFF + FREE Gift",
+      "description": "Get 14% OFF Medicube with a FREE full-sized gift on €69+, plus 10% OFF sitewide on €69+",
+      "start": "2026-11-01T07:02:00.000Z",
+      "end": "2026-11-30T07:02:00.000Z",
+      "regions": "all",
+      "code": "AFFMEC21"
+    },
+    {
+      "id": 4156365,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "Round Lab Perks: Up to 14% OFF + FREE Gift",
+      "description": "Claim 14% OFF Round Lab + a FREE full-sized gift on €69+, or 10% OFF sitewide on €69+",
+      "start": "2026-11-01T07:03:00.000Z",
+      "end": "2026-11-30T07:03:00.000Z",
+      "regions": "all",
+      "code": "AFFRLA21"
+    },
+    {
+      "id": 4119299,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "Advent Calendar Sale",
+      "description": "Member Exclusive: 16% off on advent calendar (24 Sep onwards)",
+      "start": "2026-09-23T16:00:00.000Z",
+      "end": "2026-11-30T15:59:00.000Z",
+      "regions": "all",
+      "code": "AFFADV26"
+    },
+    {
+      "id": 4179183,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "2026 Black Friday Sale: up to 17% off",
+      "description": "Member Exclusive: 17% off on €85+ | 15% OFF with no minimum spend | Guest Checkout: 10% OFF no minimum spend",
+      "start": "2026-11-26T16:00:00.000Z",
+      "end": "2026-12-01T15:59:00.000Z",
+      "regions": "all",
+      "code": "AFF26BF"
+    },
+    {
+      "id": 4116955,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "Beauty of Joeson Sale: Extra 18% OFF",
+      "description": "Member Exclusive: 18% off on Beauty of Joeson items | 14% off on rest on €59+",
+      "start": "2026-09-17T03:58:00.000Z",
+      "end": "2026-12-31T03:57:00.000Z",
+      "regions": "all",
+      "code": "AFFBOJ25"
+    },
+    {
+      "id": 4180657,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "25% OFF on the entire order when purchasing SVending Machine",
+      "description": "Members excluisve: 25% OFF on the entire order when purchasing SVending Machine (Christmas set)",
+      "start": "2026-11-19T03:09:00.000Z",
+      "end": "2026-12-31T15:59:00.000Z",
+      "regions": "all",
+      "code": "AFFVM25"
+    },
+    {
+      "id": 3917867,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "Cream and Serum: 18% OFF",
+      "description": "Member Exclusive: 18%off on Cream and Serum | 14% off rest items on €59+",
+      "start": "2026-05-28T07:40:00.000Z",
+      "end": "2026-12-31T15:59:00.000Z",
+      "regions": "all",
+      "code": "AFFCOZY24"
+    },
+    {
+      "id": 3656632,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "Extra 18% off on Best Selling K-Beauty Brands",
+      "description": "Member exclusive: 18% off on on Beauty of Joseon, COSRX, Haruharu Wonder, Round Lab and Numbuz:n items |14% off on rest items on 59€+",
+      "start": "2026-01-02T09:13:00.000Z",
+      "end": "2026-12-31T15:59:00.000Z",
+      "regions": "all",
+      "code": "AFF24BDMIX"
+    },
+    {
+      "id": 4042191,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "New Customer Offer!",
+      "description": "New Customer Offer: 18% OFF on €59+",
+      "start": "2026-08-04T09:19:00.000Z",
+      "end": "2027-01-01T15:59:00.000Z",
+      "regions": "all",
+      "code": "AFFWELCOME"
+    },
+    {
+      "id": 3988379,
+      "advertiserId": 31533,
+      "type": "voucher",
+      "title": "Extra 18% off on Selected Brands",
+      "description": "Member exclusive: 18% off on SKIN1004, Beauty of Joseon, ANUA, iUNIK, Mary&May, Purito, Hince, Centenlian 24 | 14% off on rest brands on 59€+",
+      "start": "2026-07-06T03:08:00.000Z",
+      "end": "2027-01-01T15:59:00.000Z",
+      "regions": "all",
+      "code": "AFFJUL22B"
+    },
+    {
       "id": 4173894,
       "advertiserId": 35221,
       "type": "promotion",
@@ -1930,6 +2145,17 @@
       "end": "2027-12-31T22:59:00.000Z",
       "regions": "all",
       "code": "SAVE30"
+    },
+    {
+      "id": 4192042,
+      "advertiserId": 38962,
+      "type": "voucher",
+      "title": "Flash Sale | Buy 1 Get 1 Free For X1 Pro 1-Cam Kit",
+      "description": "Buy 1 eligible Baseus Security X1 Pro Outdoor Dual Camera (1-Cam Kit) and get 1 additional X1 Pro 1-Cam Kit free (99.9% off) when you enter code B1G1X1P at checkout. Valid on 32GB 1-Cam Kit and Without Card 1-Cam Kit only. Limit 1 use per o",
+      "start": "2026-11-27T15:24:00.000Z",
+      "end": "2026-12-28T15:59:00.000Z",
+      "regions": "all",
+      "code": "B1G1X1P"
     },
     {
       "id": 3398469,
@@ -2251,6 +2477,17 @@
       "code": "sum26"
     },
     {
+      "id": 4190971,
+      "advertiserId": 87957,
+      "type": "voucher",
+      "title": "Extra 10% off $50+",
+      "description": "Coupon code: CYBER26 for 10% off orders $50+",
+      "start": "2026-11-27T04:45:00.000Z",
+      "end": "2036-11-27T04:43:00.000Z",
+      "regions": "all",
+      "code": "CYBER26"
+    },
+    {
       "id": 3546216,
       "advertiserId": 87957,
       "type": "voucher",
@@ -2310,6 +2547,17 @@
         "US"
       ],
       "code": "S101"
+    },
+    {
+      "id": 4178828,
+      "advertiserId": 90791,
+      "type": "voucher",
+      "title": "K-Beauty First - Black Friday Sale",
+      "description": "Member Exclusive: -20% on $99+ | -16% on $59+",
+      "start": "2026-11-27T06:38:00.000Z",
+      "end": "2026-11-29T06:38:00.000Z",
+      "regions": "all",
+      "code": "SVBFS"
     },
     {
       "id": 4156340,
@@ -2432,6 +2680,16 @@
       "code": "AFFWELCOME"
     },
     {
+      "id": 4180533,
+      "advertiserId": 96403,
+      "type": "promotion",
+      "title": "Save Up to 75% For Black Friday",
+      "description": "Save Up to 75% For Black Friday",
+      "start": "2026-11-27T08:00:00.000Z",
+      "end": "2026-11-30T08:00:00.000Z",
+      "regions": "all"
+    },
+    {
       "id": 4164508,
       "advertiserId": 96403,
       "type": "promotion",
@@ -2489,6 +2747,16 @@
       "description": "Jessica Limited Gift Sets",
       "start": "2026-11-11T21:42:00.000Z",
       "end": "2026-11-30T21:41:00.000Z",
+      "regions": "all"
+    },
+    {
+      "id": 4190754,
+      "advertiserId": 124166,
+      "type": "promotion",
+      "title": "Black Friday, buy any 2 items and get 10% off cheapest - Fragrance Click UK",
+      "description": "-",
+      "start": "2026-11-27T03:14:00.000Z",
+      "end": "2026-11-30T22:59:00.000Z",
       "regions": "all"
     },
     {
@@ -2576,6 +2844,27 @@
       "regions": [
         "GB"
       ]
+    },
+    {
+      "id": 4141391,
+      "advertiserId": 127253,
+      "type": "voucher",
+      "title": "$150off for SKU E425",
+      "description": "$150off for SKU E425",
+      "start": "2026-10-15T08:39:00.000Z",
+      "end": "2027-01-01T08:34:00.000Z",
+      "regions": "all",
+      "code": "150OFFE425"
+    },
+    {
+      "id": 4141396,
+      "advertiserId": 127253,
+      "type": "promotion",
+      "title": "250OFFE405",
+      "description": "$250 off for SKU E405",
+      "start": "2026-10-15T08:41:00.000Z",
+      "end": "2027-01-01T08:40:00.000Z",
+      "regions": "all"
     }
   ]
 }
