@@ -86,7 +86,7 @@ test("the Creators API client stays script-side; only the product page reads liv
   for (const f of files) {
     const s = readFileSync(f, "utf8");
     if (f !== "src/lib/amazon-creators.ts") assert.ok(!/amazon-creators/.test(s), `${f} imports the Creators API client`);
-    if (/from "@\/lib\/amazon-live"|from "\.\/amazon-live"/.test(s)) assert.equal(f, "src/views/ProductView.tsx", `${f} reads live Amazon prices`);
+    if (/from "@\/lib\/amazon-live"|from "\.\/amazon-live"/.test(s)) assert.ok(["src/views/ProductView.tsx", "src/lib/deal-picks.ts"].includes(f), `${f} reads live Amazon prices`); // + the deals card (2026-11-28): price with its time, dropped after 24 h
     if (/process\.env\.AMAZON_CREATORS/.test(s)) assert.fail(`${f} reads Amazon credentials`);
   }
 });

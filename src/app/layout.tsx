@@ -11,6 +11,7 @@ import { QuickView } from "@/components/QuickView";
 import { FeedbackWidget } from "@/components/FeedbackWidget";
 import { RateCard } from "@/components/site-reviews/RateCard";
 import { PhoneDock } from "@/components/PhoneDock";
+import { DealsPopup } from "@/components/DealsPopup";
 import { RegionNotice } from "@/components/RegionNotice";
 import { activeCategories, categoryHref, getBrands, liveRegions } from "@/lib/catalog";
 import { REGION_BOOT_SCRIPT, type RegionId } from "@/lib/region";
@@ -152,6 +153,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <FeedbackWidget />
         {/* Rate us (owner, 2026-11-03): the corner card, asking only after real use; RiftCompare keeps the ratings. */}
         <RateCard />
+        {/* Black Friday and after: real Amazon and eBay products in a corner card, once a visit (owner, 2026-11-28). */}
+        <DealsPopup />
         {/* The eBay tiles in the phone dock below 1280px: browser only (components/PhoneDock.tsx). */}
         <PhoneDock />
         <SiteAnalytics />
