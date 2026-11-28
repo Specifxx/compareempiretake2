@@ -100,3 +100,11 @@ test("\"PS5\" finds the PlayStation 5 the stores spell out", async () => {
   const hits = search([{ name: "HyperX Cloud Stinger 2 Core Gaming Headset PS5-PS4" }, { name: "Sony PlayStation 5 Slim Console" }], "ps5");
   assert.equal(hits[0].name, "Sony PlayStation 5 Slim Console");
 });
+
+test("a graphics card listing with another memory size is not the card", () => {
+  const ice = product("Gigabyte", "GeForce RTX 5060 Ti Eagle OC Ice 16G Graphics Card", "graphics-cards");
+  assert.equal(ebayTitleMatches(ice, "Gigabyte GeForce RTX 5060 Ti EAGLE OC ICE 8G"), false, "the 8 GB card");
+  assert.equal(ebayTitleMatches(ice, "Gigabyte GeForce RTX 5060 Ti EAGLE OC ICE 8G/16G"), false, "two sizes");
+  assert.equal(ebayTitleMatches(ice, "Gigabyte GeForce RTX 5060 Ti Eagle OC Ice 16GB GDDR7 GV-N506TEAGLEOC ICE-16GD"), true);
+  assert.equal(ebayTitleMatches(ice, "Gigabyte GeForce RTX 5060 Ti Eagle OC Ice 16G Graphics Card"), true);
+});

@@ -29,6 +29,13 @@ const esc = (s: string) => s.replace(/[.+]/g, "\\$&");
  * from an R100 listing until 2026-11-06). Phones and tablets: a title naming two or more storage sizes is a
  * multi-listing ("512GB/256GB/128GB"), whose price is the smallest one's, so it is no match.
  */
+/** Graphics memory sizes a text names: "16G", "16GB", "16 GB", "OC-16GD" (Gigabyte's code), 2 to 48 GB. */
+function vram(text: string): Set<number> {
+  return new Set(
+    [...norm(text).matchAll(/(?<![a-z0-9.])(\d{1,2})\s?g(?:b|d)?(?![a-z0-9])/g)].map((m) => Number(m[1])).filter((g) => g >= 2 && g <= 48),
+  );
+}
+
 export function ebayTitleMatches(p: Pick<Phone, "category" | "slug" | "brand" | "model">, title: string): boolean {
   const t = norm(title);
   if (!mustHave(p).every((w) => new RegExp(`[^a-z0-9]${esc(w)}(?![a-z0-9])`).test(t))) return false;
@@ -36,6 +43,14 @@ export function ebayTitleMatches(p: Pick<Phone, "category" | "slug" | "brand" | 
     if (GREY_IMPORT.test(title)) return false;
     const sizes = new Set([...title.matchAll(/(\d+)\s?(GB|TB)\b/gi)].map((m) => Number(m[1]) * (m[2].toUpperCase() === "TB" ? 1024 : 1)).filter((g) => g >= 32));
     if (sizes.size >= 2) return false;
+  }
+  if (p.category === "graphics-cards") {
+    // The model's memory must be the listing's: "Eagle OC Ice 16G" was priced from an "EAGLE OC ICE 8G" listing
+    // (shopper report, 2026-11-28), because mustHave keeps only the first six words and "16g" is the seventh.
+    const want = vram(`${p.model}`);
+    const got = vram(title);
+    if (want.size === 1 && [...got].some((g) => !want.has(g))) return false;
+    if (got.size >= 2) return false;
   }
   return true;
 }
