@@ -16,9 +16,15 @@ export default function PrivacyPage() {
       <h1 className="mt-2 page-title">We collect as little as we can.</h1>
       <div className="mt-8 space-y-6 text-ink-soft [&_h2]:mt-8 [&_h2]:font-display [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-ink">
         <p>You can use every page of Compare Empire without an account and without giving us anything. This page covers the few things you can choose to send us.</p>
-        <h2>Price-drop alerts</h2>
+        <h2>Accounts (optional)</h2>
+      <p>
+        You can sign in with Google, Discord or a one-time email link. Sign-in runs on the shared account service of our sites, which keeps your email
+        address and, if you buy Premium, your subscription status. We use the address only to sign you in, to hold your price alerts and to email you about
+        them. A signed-in alert switches on straight away, without a confirmation email. Signing out removes the sign-in from this browser.
+      </p>
+      <h2>Price-drop alerts</h2>
         <p>
-          We store your email address, the product and your target price. We email you only after you confirm the alert, and only about the products you asked
+          We store your email address, the product and your target price. We email you only after you confirm the alert (or at once, if you set it while signed in), and only about the products you asked
           for. Every alert email has a one-click unsubscribe link for that alert or all of them, as required by the Spam Act 2003.
         </p>
         <h2>Feedback and reviews</h2>

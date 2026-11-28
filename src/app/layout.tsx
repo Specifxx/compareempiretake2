@@ -27,6 +27,8 @@ import "@/components/site-reviews/site-reviews.css";
 import { CHRISTMAS_FESTIVE_LAYER, SEASON_BOOT_SCRIPT } from "@/lib/season";
 import { BottomNav } from "@/components/BottomNav";
 import { BOTTOM_NAV } from "@/lib/bottom-nav";
+import { ADFREE_BOOT_SCRIPT } from "@/lib/premium-member";
+import { AdFreeSync } from "@/components/account/AdFreeSync";
 
 // Self-hosted (OFL, from Fontsource) so builds never depend on fetching Google Fonts.
 // Geist for words and Geist Mono for figures (design language v2 "Ledger", 2026-11-27; OFL, LICENSE-Geist.txt). "optional":
@@ -115,6 +117,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: SEASON_BOOT_SCRIPT }} />
         {/* The visitor's own region (owner, 2026-11-01): moves a person, never a crawler, to their region's copy of the page. lib/region.ts. */}
         <script dangerouslySetInnerHTML={{ __html: REGION_BOOT_SCRIPT }} />
+        {/* Premium members (owner, 2026-11-28): data-adfree before first paint, from this browser's cached membership. lib/premium-member.ts. */}
+        <script dangerouslySetInnerHTML={{ __html: ADFREE_BOOT_SCRIPT }} />
         <link rel="alternate" type="application/rss+xml" title="Compare Empire guides" href="/feed.xml" />
         {/* Impact reads the non-standard `value` attribute (compareempire.com, added 2026-11-17). */}
         <meta {...({ name: "impact-site-verification", value: "ac33b0a7-2d32-4f82-b333-5217684fa690" } as object)} />
@@ -157,6 +161,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <DealsPopup />
         {/* The eBay tiles in the phone dock below 1280px: browser only (components/PhoneDock.tsx). */}
         <PhoneDock />
+        <AdFreeSync />
         <SiteAnalytics />
         <ShareArrival />
         {/* The phone bottom nav (components/BottomNav.tsx, lib/bottom-nav.ts): browser only, phones only, BOTTOM_NAV is its switch. */}
