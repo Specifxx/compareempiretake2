@@ -1,0 +1,40 @@
+name: BrickCompare probe (temporary, branch only)
+on:
+  push:
+    branches: [claude/project-thread-rztsof]
+    paths: [.github/workflows/brick-probe.yml]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebrickable catalogue downloads
+        run: |
+          mkdir -p probe/rebrickable
+          for f in themes sets minifigs inventories inventory_minifigs; do
+            curl -sSL -A "BrickCompare data import" -o probe/rebrickable/$f.csv.gz "https://cdn.rebrickable.com/media/downloads/$f.csv.gz" || echo "fail $f"
+          done
+          ls -la probe/rebrickable
+      - name: Domains (RDAP)
+        run: |
+          mkdir -p probe/domains
+          for d in brickcompare.com legocompare.com brickcompare.app bricksprice.com brickprices.com brickprices.app brickcompare.io bricktracker.app brickcompare.net; do
+            tld=${d##*.}
+            case $tld in com|net) u=https://rdap.verisign.com/$tld/v1/domain/$d;; app) u=https://pubapi.registry.google/rdap/domain/$d;; *) u=https://rdap.org/domain/$d;; esac
+            curl -sL -o probe/domains/$d.json -w "$d %{http_code}\n" "$u" | tee -a probe/domains/status.txt
+          done
+      - name: Store and source reachability
+        run: |
+          mkdir -p probe/sites
+          UA="Mozilla/5.0 (compatible; BrickCompareBot/0.1; +https://compareempire.com)"
+          for u in https://www.lego.com/robots.txt https://www.lego.com/en-us/categories/retiring-soon https://www.lego.com/en-au/categories/retiring-soon https://brickset.com/robots.txt https://www.bricklink.com/robots.txt https://www.walmart.com/robots.txt https://www.target.com/robots.txt https://www.zavvi.com/robots.txt https://www.zavvi.com/lego.list https://rebrickable.com/api/v3/ ; do
+            n=$(echo "$u" | sed 's#https://##; s#[/?]#_#g')
+            curl -sL -m 25 -A "$UA" -o "probe/sites/$n" -w "$u %{http_code} %{size_download}\n" "$u" | tee -a probe/sites/status.txt || echo "$u fail" | tee -a probe/sites/status.txt
+          done
+      - name: Commit
+        run: |
+          git config user.name "github-actions"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add probe; git commit -m "probe: BrickCompare source and domain check (temporary)" && git push
